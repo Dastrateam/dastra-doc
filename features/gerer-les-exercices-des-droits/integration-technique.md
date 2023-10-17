@@ -113,13 +113,16 @@ https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
 
 ### Fermer le widget en cliquant en dehors de la fenêtre
 
-Vous pouvez mettre en place une option permettant de fermer le widget lorsque l'utilisateur clique en dehors du widget.&#x20;
+Si votre widget est configuré si vous êtes en **type d'affichage "Popup"**, nous n'avons pas mis en place le comportement de fermeture de la modal en cas de clic en dehors de la fenêtre, car les risques de perte de données saisies par l'utilisateur sont importants.
 
-Attention, cela aura pour effet de supprimer le widget ainsi que le contenu qui a été renseigné.
+Cependant, si vous souhaitez que le widget se ferme lorsque l'utilisateur clique en dehors du widget, il est possible de le mettre en place à l'aide du code suivant :&#x20;
 
-Pour cela, il faut suffit d'ajouter les paramètres suivants :&#x20;
-
+```javascript
+window.dastra.customerSubjectReady().then((form) => { 
+  form.closeOnBackdrop = true; 
+});
 ```
-dastra.customerSubjectReady().then(() => { dastra.customerSubject.closeOnBackdrop = true; });
 
-```
+{% hint style="warning" %}
+Attention, cela aura pour effet de supprimer l'intégralité du texte saisi par l'utilisateur sans aucun avertissement ! Si le formulaire est long, cela peut se produire facilement lors d'une sélection dépassant un champ textuel long.
+{% endhint %}
