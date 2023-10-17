@@ -11,7 +11,7 @@ En plus de création, suivi et export des tâches, DASTRA vous permets égalemen
 * De personnaliser le workflow des tâches en vous rendant dans "Réglages" / "Déroulement du processus"
 * D'assigner des tags à vos tâches pour pouvoir les trier plus simplement&#x20;
 
-![Personnalisation du workflow des tâches](<../../.gitbook/assets/image (111).png>)
+![Personnalisation du workflow des tâches](<../../.gitbook/assets/image (162).png>)
 
 
 

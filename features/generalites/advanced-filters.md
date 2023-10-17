@@ -13,11 +13,11 @@ Les filtres avancés permettent de filtrer vos données sur presque tous les cha
 * Allez dans un module de Dastra (par exemple, le module des exercices de droits
 * Cliquez sur le bouton "Filtres" en haut à droite de la table de données.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Une petite fenêtre s'affiche, elle vous présente une liste de filtres standards les plus utilisés, en appliquant un de ces filtres, le tableau se met à jour automatiquement.
 
-<figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption><p>Combo de filtres avancés des demandes d'exercices de droits</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption><p>Combo de filtres avancés des demandes d'exercices de droits</p></figcaption></figure>
 
 {% hint style="info" %}
 La combinaison de ces filtres est cumuliative.&#x20;
@@ -27,7 +27,7 @@ _Par exemple : si je filtre sur un ou deux tags "complexe" et "en attente" + je 
 
 * Si vous ne trouvez pas de filtres qui vous conviennent, vous pouvez cliquer sur le bouton "Ajouter un filtre". Là vous allez pouvoir éditer la combinaison de filtres qui correspondra le mieux à vos besoins
 
-<figure><img src="../../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 Par défaut, Dastra fait persister les filtres que vous sélectionnez, ce qui signifie que si vous changez de page ou que vous rafraîchissez votre navigateur, les filtres sont conservés. Ces filtres sont propre à votre navigateur et votre espace de travail (Ils sont stockés en **LocalStorage**).&#x20;
 
@@ -35,7 +35,7 @@ Par défaut, Dastra fait persister les filtres que vous sélectionnez, ce qui si
 
 Vous pouvez enregistrer et partager les filtres que vous appliquez à vos données avec tous vos collaborateurs. Cliquez sur le bouton enregistrer, pour sauvegarder le filtre dans votre espace de travail
 
-<figure><img src="../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Problèmes connues
 

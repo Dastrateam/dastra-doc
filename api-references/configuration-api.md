@@ -35,7 +35,7 @@ Dans Dastra, il est possible d'exposer dans l'API [des champs personnalisés](..
 
 Les champs personnalisés sont propre à chaque espace de travail. Pour les prendre en compte dans l'API Dastra, il faut d'abord définir le nom de leur variable dans la définition du champs personnalisé :&#x20;
 
-<figure><img src="../.gitbook/assets/image (439).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="../features/generalites/custom-fields.md" %}
 [custom-fields.md](../features/generalites/custom-fields.md)

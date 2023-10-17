@@ -30,7 +30,7 @@ Il y a 3 manières de faire pour renseigner une nouvelle demande d'exercice de d
 
 En cliquant sur le bouton "Créer une demande", une fenêtre apparaît où vous pouvez détailler la demande d'exercice de droits. Cliquez sur "Enregistrer et quitter". Ca y est, vous avez créé votre première demande d'exercice de droits manuellement !
 
-![Etape de documentation d'une demande](<../../.gitbook/assets/image (216).png>)
+![Etape de documentation d'une demande](<../../.gitbook/assets/image (174).png>)
 
 ### Import / export du registre de demandes d'exercices de droits
 
@@ -40,7 +40,7 @@ L'ensemble du registre des demandes est importable et exportable. Pour importer 
 
 Un fenêtre apparaît avec un bouton "import". Cliquez dessus, téléchargez le modèle de registre puis suivez les instructions pour importer les demandes dans Dastra. Une fois importée, la demande sera directement disponible dans le registre de demandes.
 
-![Fenêtre d'import de registre de demandes d'exercice de droits](<../../.gitbook/assets/image (78).png>)
+![Fenêtre d'import de registre de demandes d'exercice de droits](<../../.gitbook/assets/image (34).png>)
 
 ### Mise en place de widget de demande d'exercice de droits
 

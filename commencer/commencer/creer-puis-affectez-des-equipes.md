@@ -12,7 +12,7 @@ Dans Dastra, les utilisateurs sont regroupés par équipe, qui elles-mêmes sont
 
 Pour créer une nouvelle équipe ou assigner un nouvel utilisateur à une équipe existante, cliquer sur le bouton "Réglages" en bas à gauche de l'écran, puis le bouton "Equipes".
 
-![Les boutons d'accès aux équipes](<../../.gitbook/assets/image (91).png>)
+![Les boutons d'accès aux équipes](<../../.gitbook/assets/image (253) (1) (1) (1) (1).png>)
 
 
 

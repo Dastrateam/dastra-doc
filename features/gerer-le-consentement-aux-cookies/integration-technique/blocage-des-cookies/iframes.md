@@ -21,7 +21,7 @@ Lecteurs audios &#x20;
 
 Notre SDK vous permettra de bloquer toutes les iframes de la page en affichant  un message de blocage personnalisable :
 
-![](<../../../../.gitbook/assets/image (186).png>)
+![](<../../../../.gitbook/assets/image (184).png>)
 
 En cliquant sur "I accept" le consentement au service spécifique sera automatiquement dispatché. Le système permet également de capturer un refus des cookies dans la CMP Dastra.
 

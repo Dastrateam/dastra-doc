@@ -16,12 +16,12 @@ Ainsi, vous pouvez mettre un tag "prioritaire" ou "A vérifier" ou encore "trait
 
 Dans le formulaire de saisie des tags, commencez à taper le nom de n'importe quel tag, il y a deux possibilités, soit le tag existe déjà, dans ce cas vous pouvez le sélectionner. Si il n'existe pas, vous pouvez appuyer sur **la touche entrée de votre clavier**, ce qui va créer le nouveau tag automatiquement pour l'ajouter à la liste de sélection
 
-<figure><img src="../../.gitbook/assets/image (351).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 ## **Comment administrer tous les tags de l'application ?**
 
-* Allez dans > **Réglages de l'espace de travail** ![](<../../.gitbook/assets/image (417).png>)&#x20;
+* Allez dans > **Réglages de l'espace de travail** ![](<../../.gitbook/assets/image (11) (1) (2).png>)&#x20;
 * Cliquez sur le menu **Gestion des tags**
 

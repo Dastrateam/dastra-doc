@@ -14,11 +14,11 @@ La création ou la modification d'un modèle d'audit ou d'un PIA dans Dastra est
 
 Pour créer un modèle d'audit ou de PIA, cliquez sur le bouton "Créer un modèle" dans l'onglet "Audit". Ensuite vous pouvez sélectionner un des 3 types de modèles d'audit existant dans Dastra : audit automatisé, combiné ou personnalisé.
 
-<figure><img src="../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
 
 Vous arrivez sur l'interface de sélection des types de modèles :&#x20;
 
-![Choix des types de modèles](<../../.gitbook/assets/image (70).png>)
+![Choix des types de modèles](<../../.gitbook/assets/image (138).png>)
 
 * En cliquant sur l'onglet "**Audit automatisé**", vous choisirez un modèle d'audit prédéfini existant en piochant dans la bibliothèque d'audits de Dastra.
 * En cliquant sur "**Audit combiné**", vous rassemblez plusieurs audits dans un seul.
@@ -53,7 +53,7 @@ En effet, il est possible d'importer un PIA réalisé par l'outil de la CNIL. Il
 Une très grande partie des éléments sera reprise dans le PIA de Dastra.
 {% endhint %}
 
-![Les boutons ](<../../.gitbook/assets/image (155).png>)
+![Les boutons ](<../../.gitbook/assets/image (216).png>)
 
 ## Les modèles d'audit automatisés
 
@@ -73,7 +73,7 @@ Construisez le modèle d'audit que vous souhaitez et cliquer sur "Enregistrer et
 
 Vous pouvez lier des audits à des éléments dans Dastra. En choisissant le type d'élément audité, vous forcez toutes les réponses d'audit basées sur ce modèle à être liées à un objet du type choisi. Par exemple, vous pouvez choisir que ce modèle d'audit sera toujours lié à un traitement.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez choisir de ne pas lier d'audit à un objet particulier. Dans ce cas, la réponse sera toujours liée à une unité organisationnelle. Cela peut être le cas pour des audits de conformité globaux par exemple.&#x20;
 
@@ -81,7 +81,7 @@ Vous pouvez choisir de ne pas lier d'audit à un objet particulier. Dans ce cas,
 
 Lors de la création d'un modèle personnalisé, vous devrez choisir un type de modèle.
 
-<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 Ces types permettent une certaine personnalisation des modèles d'audit.
 

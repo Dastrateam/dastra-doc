@@ -10,13 +10,13 @@ Vous pouvez amener quelqu'un à collaborer sur vos espaces en l'invitant dans l'
 
 Vous pouvez inviter des utilisateurs à votre espace de travail en cliquant sur le bouton "réglages" en bas à gauche de l'écran, puis "gestion d'accès / utilisateurs" et enfin "inviter un utilisateur":
 
-<figure><img src="../../.gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
 Rentrez l'adresse email de la personne que vous souhaitez inviter dans votre espace Dastra. Si cette adresse n'est pas déjà rattachée à l'organisation, cliquez sur celle-ci pour lui envoyer un lien d'invitation.
 
-![](<../../.gitbook/assets/image (235).png>)
+![](<../../.gitbook/assets/image (130).png>)
 
 Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe puis cliquez sur le bouton "Envoyer une invitation". La personne invitée recevra un mail contenant un lien qui, une fois cliqué, permettra à cette personne d'accéder à l'espace.\
 \
@@ -26,13 +26,13 @@ Ca y est, l'utilisateur a été invité !
 
 Vous pouvez piloter les invitations en cours dans les réglages de l'espace de travail sur la section "Utilisateurs".&#x20;
 
-<figure><img src="../../.gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Renvoyer un lien d'invitation
 
 Si l'utilisateur invité n'a pas cliqué sur le lien d'invitation et que le lien a expiré (au bout de 10 jours), vous pouvez lui renvoyer le lien d'invitation en cliquant sur le bouton "Renvoyer l'invitation".&#x20;
 
-<figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Créer puis affectez des équipes
 
@@ -55,7 +55,7 @@ Vous pouvez demander l'import d'une grande liste d'utilisateurs dans la platefor
 * rendez vous sur ce lien : [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users)
 * Cliquez sur le bouton "contacter l'équipe de Dastra"
 
-<figure><img src="../../.gitbook/assets/image (374).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Créez un fichier par espace de travail au format CSV comprenant les colonnes suivantes séparées par des , (virgule) :&#x20;
 
@@ -73,7 +73,7 @@ De manière optionnelle :&#x20;
 
 Voici un modèle de fichier à télécharger et à remplir :&#x20;
 
-{% file src="../../.gitbook/assets/Template_import_users.csv" %}
+{% file src="../../.gitbook/assets/Template_import_users (1).csv" %}
 Modèle de fichier d'import
 {% endfile %}
 
@@ -101,7 +101,7 @@ Attention, les rôles doivent être créés préalablement.
 
 
 
-<figure><img src="../../.gitbook/assets/image (378).png" alt=""><figcaption><p>Ici l'identifiant du rôle est le numéro 115</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Ici l'identifiant du rôle est le numéro 115</p></figcaption></figure>
 
 
 
@@ -109,7 +109,7 @@ Attention, les rôles doivent être créés préalablement.
 
 Ceux ci sont paramétrables lors de l'ajout d'une équipe
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Attention, les équipes doivent être crées préalablement dans l'espace de travail
@@ -117,12 +117,12 @@ Attention, les équipes doivent être crées préalablement dans l'espace de tra
 
 Enregistrez votre fichier au format CSV UTF 8&#x20;
 
-<figure><img src="../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 Une fois votre fichier prêt, indiquez nous dans quel espace de travail vous souhaitez importer les utilisateurs et déposez le fichier via l'interface de dépôt :&#x20;
 
 
 
-<figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Nous recevrons la demande et nous reviendrons vers vous pour le suivi.

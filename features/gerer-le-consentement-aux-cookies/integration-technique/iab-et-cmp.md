@@ -8,11 +8,11 @@ Le [consent management platform (CMP) framework](https://github.com/InteractiveA
 
 Une fois la case cochée, vous pouvez observer les modifications dans l'interface du widget :
 
-![](<../../../.gitbook/assets/image (241).png>)
+![](<../../../.gitbook/assets/image (69).png>)
 
 Automatiquement, lors de l'optin de l'IAB, le cookie contenant les informations encodés sur le consentement de l'utilisateur aux vendeurs de l'IAB sont automatiquement créées dans le navigateur :
 
-![](<../../../.gitbook/assets/image (184).png>)
+![](<../../../.gitbook/assets/image (71).png>)
 
 {% hint style="info" %}
 Ce cookie a une durée de vie par défaut de 180 jours et est nommé "eupubconsent"

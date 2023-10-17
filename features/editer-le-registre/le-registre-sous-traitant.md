@@ -30,7 +30,7 @@ Celui-ci contient :&#x20;
 
 
 
-![Les différentes sections d'un traitement "sous-traitant" dans Dastra](<../../.gitbook/assets/image (25).png>)
+![Les différentes sections d'un traitement "sous-traitant" dans Dastra](<../../.gitbook/assets/image (195).png>)
 
 ## Aller plus loin
 

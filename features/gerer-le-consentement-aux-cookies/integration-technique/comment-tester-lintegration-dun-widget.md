@@ -6,7 +6,7 @@ description: Apprenez à tester l'intégration d'un widget de consentement.
 
 ## Activer le mode prévisualisation
 
-![](<../../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/image (68).png>)
 
 Le mode prévisualisation désactivera le cache du widget et vous permettra de visualiser vos modifications de configuration en live. Les domaines en localhost seront également autorisés.
 

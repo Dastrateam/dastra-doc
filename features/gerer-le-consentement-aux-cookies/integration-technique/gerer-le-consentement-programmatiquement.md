@@ -104,7 +104,7 @@ Pour manipuler les consentements par service, vous aurez besoin du nom simplifi�
 Rendez-vous dans l'interface de gestion des services, en éditant un service, le nom simplifié (slug) du service apparaît en dessous du nom du cookie.
 {% endhint %}
 
-![Emplacement du nom du cookies simplifié](<../../../.gitbook/assets/image (408).png>)
+![Emplacement du nom du cookies simplifié](<../../../.gitbook/assets/image (67).png>)
 
 ```javascript
 <script> 

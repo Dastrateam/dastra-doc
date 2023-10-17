@@ -12,7 +12,7 @@ Une activité de traitement est une opération ou un ensemble d'opérations effe
 
 Pour créer une activité de traitement, cliquez d'abord sur "Créer un traitement de données" dans la section Registre.
 
-![Choix du nouveau traitement](<../../.gitbook/assets/image (77).png>)
+![Choix du nouveau traitement](<../../.gitbook/assets/image (185).png>)
 
 Choisissez le type de traitement&#x20;
 
@@ -24,7 +24,7 @@ Remplissez la description de l'activité de traitement et vous serez amené à l
 
 Pour créer un traitement en tant que sous-traitant, c'est très simple. Il faut, au moment de la création d'un traitement, cocher la case&#x20;
 
-![](<../../.gitbook/assets/image (424).png>)
+![](<../../.gitbook/assets/image (186).png>)
 
 Vous arriverez ensuite automatiquement sur la phase de documentation d'un traitement en tant que sous-traitant et vous aurez la possibilité de déclarer vos responsables de traitements (généralement vos clients).
 
@@ -32,7 +32,7 @@ Vous arriverez ensuite automatiquement sur la phase de documentation d'un traite
 
 Pour modifier une activité de traitement existante, cliquez sur le bouton "Modifier" lié au traitement ou allez directement dans les étapes figurant sur la gauche de l'écran :
 
-![](<../../.gitbook/assets/image (67).png>)
+![](<../../.gitbook/assets/image (187).png>)
 
 Ensuite, suivez chaque étape du questionnaire en commençant par la section suivante:
 

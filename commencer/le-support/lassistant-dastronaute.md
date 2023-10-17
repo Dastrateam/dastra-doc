@@ -10,5 +10,5 @@ Dans votre espace de travail, vous disposez d'un assistant dastronaute présent 
 
 En cliquant sur cet assistant, une fenêtre apparait contenant des suggestions d'actions.&#x20;
 
-![Un exemple de suggestions d'actions](<../../.gitbook/assets/image (66).png>)
+![Un exemple de suggestions d'actions](<../../.gitbook/assets/image (147).png>)
 

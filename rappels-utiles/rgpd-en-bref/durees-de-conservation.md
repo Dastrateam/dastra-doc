@@ -12,7 +12,7 @@ Le principe de durée limitée de conservation consacre le droit à l’oubli de
 
 Une obligation issue de l’article 5 du RGPD :
 
-![Extrait de l'article 5 du RGPD](<../../.gitbook/assets/image (176).png>)
+![Extrait de l'article 5 du RGPD](<../../.gitbook/assets/image (189).png>)
 
 * **Une forme permettant l'identification**
   * Les données personnelles peuvent être conservées dans une certaine limite, sous une forme directement ou indirectement identifiante et de façon indéfinie par les organismes.
@@ -21,11 +21,11 @@ Une obligation issue de l’article 5 du RGPD :
 
 Une **obligation de documentation** dans le registre des activités de traitement prévu à l’article 30 du RPGD
 
-![Extrait de l'article 30 du RGPD](<../../.gitbook/assets/image (366).png>)
+![Extrait de l'article 30 du RGPD](<../../.gitbook/assets/image (190).png>)
 
 Une **obligation d’information** destinée aux personnes concernées prévue aux articles 13 et 14 du RGPD
 
-![Extrait des articles 13 et 14 du RGPD](<../../.gitbook/assets/image (133).png>)
+![Extrait des articles 13 et 14 du RGPD](<../../.gitbook/assets/image (191).png>)
 
 Il est ainsi nécessaire de déterminer :
 
@@ -36,7 +36,7 @@ Il est ainsi nécessaire de déterminer :
 
 Le cycle de vie de la donnée peut se décliner en trois étapes :
 
-![Le cycle de vie de la donnée](<../../.gitbook/assets/image (276).png>)
+![Le cycle de vie de la donnée](<../../.gitbook/assets/image (192).png>)
 
 {% hint style="info" %}
 Le [guide de la CNIL sur les durées de conservation](https://www.cnil.fr/sites/default/files/atoms/files/guide\_durees\_de\_conservation.pdf)  apporte des éclaircissements sur la documentation à apporter sur les durées de conservation :

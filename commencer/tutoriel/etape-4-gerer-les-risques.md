@@ -28,7 +28,7 @@ Pour vous aider à déterminer si votre traitement est susceptible d’engendrer
 
 Ces critères sont directement intégrés à notre workflow de création de traitement de données, et vous pouvez renseigner pour chacun de vos traitements s'il y a eu de réaliser un PIA sur celui-ci ou non.
 
-![Exemple de traitement nécessitant potentiellement un PIA.](<../../.gitbook/assets/image (118).png>)
+![Exemple de traitement nécessitant potentiellement un PIA.](<../../.gitbook/assets/image (23).png>)
 
 ### L'identification et l'évaluation des risques
 

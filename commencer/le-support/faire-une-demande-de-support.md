@@ -8,7 +8,7 @@ Parfois il est possible que le problème auquel vous êtes confronté ne puisse 
 
 Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers le bouton "Aide" en bas à gauche de l'écran, soit en accédant directement au questionnaire de demande de support en haut à droite de l'écran :
 
-![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/image (6).png>)
+![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/image (152).png>)
 
 ### Le questionnaire de demande de support
 
@@ -16,7 +16,7 @@ Après avoir cliqué sur le bouton support, une fenêtre apparait dans l'applica
 
 Choisissez une des cinq options possibles, détaillez votre réponse et cliquez sur le bouton "Envoyer la requête".&#x20;
 
-![Formulaire de demande de support](<../../.gitbook/assets/Capture web\_3-5-2022\_152923\_app.dastra.eu.jpeg>)
+![Formulaire de demande de support](<../../.gitbook/assets/Capture web\_3-5-2022\_152923\_app.dastra.eu (1).jpeg>)
 
 Ca y est, votre demande de support a été envoyé ! notre équipe vous répondra dans les meilleurs délais.
 

@@ -16,12 +16,12 @@ Les utilisateurs pourront ainsi se logger à la fois avec leur mot de passe habi
 * Télécharger une application d'authentification à 2 facteurs
 * **Scannez le qr code** avec l'appli que vous avez choisi
 
-![](<../.gitbook/assets/image (24).png>)
+![](<../.gitbook/assets/image (103).png>)
 
 * Stocker le code de récupération quelque part.&#x20;
 * Connectez vous en utilisant le code à 6 chiffres fourni par votre application d'authentification
 
-![Exemple d'application d'authentification](<../.gitbook/assets/image (75).png>)
+![Exemple d'application d'authentification](<../.gitbook/assets/image (104).png>)
 
 {% hint style="warning" %}
 Conservez précieusement le code de récupération ! Celui-ci vous permettra de récupérer votre compte si vous égarez votre application d'authentification. Votre compte sera verrouillé définitivement si vous ne pouvez fournir ce code. Il faudra alors vous rapprocher de le propriétaire de votre organisation pour qu'il réinitialise l'authentification à 2 facteurs de votre compte.

@@ -30,7 +30,7 @@ Dans Dastra, les AIPD sont considérées comme **un modèle d'audit** particulie
 
 &#x20;Pour accéder à la fonctionnalité "Audit", cliquer sur la fonctionnalité "Audit" à gauche de l'écran.
 
-<figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 ## Créer ou modifier un modèle d'audit ou de PIA
 

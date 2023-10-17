@@ -28,7 +28,7 @@ les catégories de **données personnelles**  sont des groupements de données p
 
 Il en existe de différentes natures : identité, situation familiale, économique ou financière, données bancaires, données de connexion, donnés de localisation, etc.
 
-![Les catégories de données personnelles ](<../../.gitbook/assets/image (135).png>)
+![Les catégories de données personnelles ](<../../.gitbook/assets/image (193).png>)
 
 ## Définition des données sensibles&#x20;
 

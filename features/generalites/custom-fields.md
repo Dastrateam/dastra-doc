@@ -20,11 +20,11 @@ Dastra vous permettra de créer des champs de formulaire personnalisés que vous
 
 Voici un exemple de configuration de champs pour l'acteur :
 
-<figure><img src="../../.gitbook/assets/image (415).png" alt=""><figcaption><p>Configuration des champs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (3) (1) (1).png" alt=""><figcaption><p>Configuration des champs</p></figcaption></figure>
 
 Et voici le résultat dans le formulaire :
 
-<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Fonctionnalités concernées
 
@@ -89,17 +89,17 @@ Vous pouvez :
 * Choisissez le module dans lequel vous voulez ajouter un champ personnalisé
 * Les champs doivent être créés dans des groupes. Ces groupes peuvent être positionnés d'une certaine façon dans le formulaire Cliquez sur "**Ajouter un groupe de champs**"
 
-<figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Renseignez le nom et l'emplacement** dans le formulaire que vous souhaitez
 
-<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Pour certains éléments, il est possible de définir l'emplacement que vous souhaitez dans le formulaire !
 
 * Une fois le groupe créé, vous pouvez désormais **effectuer un glisser-déposer des types de champs** que vous souhaitez mettre en place !
 
-<figure><img src="../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 Renseignez toutes les informations !
 

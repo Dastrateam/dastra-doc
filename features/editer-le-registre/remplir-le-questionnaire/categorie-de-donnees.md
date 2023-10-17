@@ -48,7 +48,7 @@ Dans chaque jeu de données, vous pouvez inscrire l'origine des données. Celle 
 
 Un champ vous permettant de décrire l'origine de la collecte permet d'apporter la précision nécessaire.
 
-<figure><img src="../../../.gitbook/assets/image (377).png" alt=""><figcaption><p>Source des données</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>Source des données</p></figcaption></figure>
 
 ### Associer un actif au jeu de données
 
@@ -56,7 +56,7 @@ Les jeux de données ont une vocation naturelle à être ajoutés à des [actifs
 
 Vous pouvez associer un actif à votre jeu de données lors de sa création.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (341).png" alt=""><figcaption><p>Sélecteur d'actif</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p>Sélecteur d'actif</p></figcaption></figure>
 
 Un jeu de données ne peut être associé qu'à un seul actif. En effet, en définissant les jeux de données d'un actif, ceux-ci sont uniques.&#x20;
 
@@ -68,7 +68,7 @@ Pour chaque jeu de données, vous pouvez associer une ou plusieurs catégories d
 
 Cela vous permet de mieux comprendre quelles sont les données associées aux personnes concernées. De plus, cela simplifie le travail de cartographie.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (384).png" alt=""><figcaption><p>Sélecteur de catégories de personnes concernées</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (3) (2).png" alt=""><figcaption><p>Sélecteur de catégories de personnes concernées</p></figcaption></figure>
 
 {% hint style="info" %}
 Indiquer les personnes concernées est utile dans la gestion des [demandes d'exercice des droits](../../gerer-les-exercices-des-droits/). En effet, vous pourrez retrouver facilement les données qui l'objet de la demande en identifiant rapidement les jeux de données concernés.
@@ -80,13 +80,13 @@ Chaque jeu de données a vocation à être complété par des champs de données
 
 Les champs qui s'affichent dans le sélecteur sont les champs disponibles dans le glossaire de données.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (419).png" alt=""><figcaption><p>Sélecteur de champs de données</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption><p>Sélecteur de champs de données</p></figcaption></figure>
 
 Si une donnée n'est pas présente, vous pouvez la créer directement depuis ce sélecteur pour l'ajouter au jeu de données.&#x20;
 
 Les champs peuvent être catégorisés selon des catégories prédéterminées. Il s'agit notamment des catégories préconisées par la CNIL.
 
-<figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption><p>Sélecteur de catégorie de données personnelles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>Sélecteur de catégorie de données personnelles</p></figcaption></figure>
 
 C'est également au niveau du champ que vous pouvez indiquer la présence d'une donnée sensible. Par exemple, une donnée de santé ou un autre type de donnée sensible.&#x20;
 
@@ -94,7 +94,7 @@ Dans ce cas, vous êtes invité à justifier de la collecte de cette donnée et 
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (427).png" alt=""><figcaption><p>Donnée sensible</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3) (2).png" alt=""><figcaption><p>Donnée sensible</p></figcaption></figure>
 
 {% hint style="info" %}
 Cette information sera analysée par l'application pour déclencher un critère intelligent [d'AIPD](analyse-dimpact.md).&#x20;
@@ -104,7 +104,7 @@ Cette information sera analysée par l'application pour déclencher un critère 
 
 Dans chaque jeu de données, vous pouvez associer une règle de conservation des données.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (367).png" alt=""><figcaption><p>Durées de conservation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Durées de conservation</p></figcaption></figure>
 
 Les durées de conservation sont considérées par défaut car elles peuvent être personnalisées au niveau du traitement (voir infra).
 
@@ -128,17 +128,17 @@ Les champs de données d'un jeu de données générique ne peuvent pas varier d'
 
 Pour cela, il est nécessaire d'ajouter le jeu de données au traitement. Sur la liste des jeux de données, il faut cliquer sur les boutons "base active/...".
 
-<figure><img src="../../../.gitbook/assets/image (409).png" alt=""><figcaption><p>Bouton "base active"</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (5).png" alt=""><figcaption><p>Bouton "base active"</p></figcaption></figure>
 
 Vous pourrez voir apparaitre la fenêtre de personnalisation.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (420).png" alt=""><figcaption><p>Fenêtre de personnalisation des durées de conservation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Fenêtre de personnalisation des durées de conservation</p></figcaption></figure>
 
 Lorsque la durée de conservation est personnalisée au niveau du traitement, un petit logo de stylo apparait sur le bouton concerné :&#x20;
 
 L'objectif à terme peut être de limiter l'utilisation de jeux de données génériques et de s'orienter vers une cartographie plus précise soit via les traitements de données (cas n°2) soit via les actifs (cas n°1).
 
-<figure><img src="../../../.gitbook/assets/image (372).png" alt=""><figcaption><p>Durée personnalisée au niveau du traitement</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (2) (4).png" alt=""><figcaption><p>Durée personnalisée au niveau du traitement</p></figcaption></figure>
 
 
 

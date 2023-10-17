@@ -15,7 +15,7 @@ Si une erreur indique que l'utilisateur ne peut pas accéder à l'application, a
 
 Vous rencontrez un message d'erreur de ce type  :
 
-<figure><img src="../../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Assurez d'avoir un certificat valide.
 2. Vérifiez que le copier/coller du certificat n'a pas inclus de saut de ligne ou de création d'espace

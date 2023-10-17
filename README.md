@@ -22,23 +22,23 @@ Pour plus d'informations, consultez notre [manifesto](https://www.dastra.eu/fr/m
 
 * **Cartographier vos données personnelles** en créant et en conservant votre dossier de traitement grâce à une interface souple et intuitive, des référentiels, des bibliothèques et un questionnaire, et **constituer, partager** et **exporter** votre registre de traitement.
 
-![](<.gitbook/assets/image (179).png>)
+![](<.gitbook/assets/image (3) (1) (1) (1).png>)
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 
-![](<.gitbook/assets/image (154).png>)
+![](<.gitbook/assets/image (135).png>)
 
 * **Générez un plan d'action, allouez des tâches** et **collaborer avec votre réseau,** pour mieux protéger réellement vos données.
 
-![](<.gitbook/assets/image (296).png>)
+![](<.gitbook/assets/image (5) (1) (1).png>)
 
 * **Implémentez les processus internes** tels que la mise en place de la gestion des exercices de droits, la gestion des consentements de cookie ou la tenue d'un registre des violations de données:
 
-![Le registre des demandes d'exercices de droit](<.gitbook/assets/image (250).png>)
+![Le registre des demandes d'exercices de droit](<.gitbook/assets/image (142).png>)
 
-![La création d'un widget de collecte des consentements cookies](<.gitbook/assets/image (138).png>)
+![La création d'un widget de collecte des consentements cookies](<.gitbook/assets/image (144).png>)
 
-![Le questionnaire de violation de données](<.gitbook/assets/image (353).png>)
+![Le questionnaire de violation de données](<.gitbook/assets/image (143).png>)
 
 * **Centralisez la documentation** permettant de répondre à la conformité RGPD.
 

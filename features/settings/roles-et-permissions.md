@@ -19,8 +19,8 @@ Pour créez vos propres rôles associés aux permissions, rendez-vous sur [cette
 
 Vous pouvez créer un "nouveau rôle" personnalisé en cliquant sur le bouton "Nouveau rôle"
 
-![](<../../.gitbook/assets/image (150).png>)
+![](<../../.gitbook/assets/image (89).png>)
 
-![](<../../.gitbook/assets/image (46).png>)
+![](<../../.gitbook/assets/image (90).png>)
 
 Une fois votre rôle personnalisé créé, vous pouvez l'affecter à n'importe quel utilisateur de l'entité ou de l'organisation.

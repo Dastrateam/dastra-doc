@@ -8,7 +8,7 @@ description: Apprenez à activer et à utiliser l'option de fraicheur des traite
 
 La fraicheur d'un traitement est un indicateur sur le dernier passage en revue du traitement d'un traitement. La fraicheur se dégradera au fur et à mesure que la date de péremption du traitement approchera. Cette fonctionnalité est un moyen simple et ludique pour garantir que les informations contenues dans votre registre des traitements sont révisées régulièrement.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (438).png" alt=""><figcaption><p>Schéma de fonctionnement de l'indicateur de fraîcheur du traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>Schéma de fonctionnement de l'indicateur de fraîcheur du traitement</p></figcaption></figure>
 
 ### Comment activer l'indicateur de fraicheur des traitements ?
 
@@ -54,26 +54,26 @@ Vous retrouverez l'indicateur de fraicheur en haut à droite de votre fiche de t
 
 Cet indicateur est composé d'un label prenant les valeurs "Frais", "Relativement frais" et "Périmé", d'une couleur (respectivement vers, jaune, rouge), d'une barre de progression diminuant à mesure que la date de péremption approche, d'un bouton pour marquer le traitement comme frais et du nombre de jours restants ou de retard par rapport à la date de péremption.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../.gitbook/assets/image (432).png" alt=""><figcaption><p>En vue mobile, vous retrouvez également cet indicateur dans la barre de navigation en haut de votre fiche de traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (269).png" alt=""><figcaption><p>En vue mobile, vous retrouvez également cet indicateur dans la barre de navigation en haut de votre fiche de traitement</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (434).png" alt=""><figcaption><p>Exemple de traitement périmé</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption><p>Exemple de traitement périmé</p></figcaption></figure>
 
 #### Dans la colonne fraicheur de votre registre de traitement
 
 En affichant la colonne fraicheur dans la vue liste de votre registre de traitements, vous retrouvez l'indicateur pour chaque fiche de traitement remplissant les conditions d'affichage (traitement publié disposant d'au moins une date à laquelle il a été identifié comme frais)\
 
 
-<figure><img src="../../.gitbook/assets/image (436).png" alt=""><figcaption><p>Colonne fraicheur dans un registre de traitements ou l'option fraicheur des traitements est active</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption><p>Colonne fraicheur dans un registre de traitements ou l'option fraicheur des traitements est active</p></figcaption></figure>
 
 ### Rafraichir un traitement
 
 Vous pouvez à tout moment, et sans forcément attendre la date de péremption, décider de rafraichir un traitement. Pour ce faire, cliquez sur "marquer comme frais" pour afficher la fenêtre de rafraichissement d'un traitement (en affichage mobile, cette fenêtre est accessible en cliquant sur l'icône de fraicheur feuille) :
 
-<figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption><p>fenêtre de rafraichissement d'un traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption><p>fenêtre de rafraichissement d'un traitement</p></figcaption></figure>
 
 En marquant le traitement comme frais, vous relancerez un cycle de fraicheur à partir de la date du jour et ce jusqu'à la prochaine date de péremption. La date de péremption est calculée par défaut en fonction de la politique de fraicheur de votre espace de travail (intervalle de fraicheur appliqué lors de l'activation de l'option fraicheur des traitement). Vous pouvez décider d'ignorer cette date par défaut et appliquer une date de péremption spécifique à ce traitement en cochant l'option "Changer la date de péremption" et en sélectionnant une nouvelle date (la date de péremption doit au minimum être fixé à J+1)
 

@@ -18,11 +18,11 @@ Chez Dastra, nous pensons que la tenue d'un plan d'action **clair**, **collabora
 
 Pour accéder au module planification, allez dans l'application et cliquez sur le module "planification" à gauche de l'écran
 
-![Bouton "planification"](<../../.gitbook/assets/image (161).png>)
+![Bouton "planification"](<../../.gitbook/assets/image (220).png>)
 
 Vous accéderez ainsi au module de planification :
 
-![Module de planification](<../../.gitbook/assets/image (246).png>)
+![Module de planification](<../../.gitbook/assets/image (221).png>)
 
 ## Aller plus loin
 

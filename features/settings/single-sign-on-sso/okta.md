@@ -53,7 +53,7 @@ Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastr
 
 
 
-![](<../../../.gitbook/assets/okta-dastra-settings (1).png>)
+![](../../../.gitbook/assets/okta-dastra-settings.png)
 
 **Etape 8** : Cliquez sur "**Enregistrer**" => Puis lancez un test en cliquant sur le bouton "Tester" ! Si vous êtes bien redirigé vers Dastra ! Vous avez réussi ! :tada:
 

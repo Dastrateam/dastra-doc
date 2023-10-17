@@ -28,7 +28,7 @@ Pour chaque traitement, le registre d'un responsable de traitement indique au mi
 7. les **délais prévus pour l'effacement** des différentes catégories de données, c’est-à-dire la durée de conservation, ou à défaut les critères permettant de la déterminer
 8. dans la mesure du possible, une **description générale des mesures de sécurité** techniques et organisationnelles que vous mettez en œuvre
 
-![Les différentes sections d'un traitement "responsable de traitement" dans Dastra](<../../.gitbook/assets/image (328).png>)
+![Les différentes sections d'un traitement "responsable de traitement" dans Dastra](<../../.gitbook/assets/image (194).png>)
 
 ### Les acteurs&#x20;
 

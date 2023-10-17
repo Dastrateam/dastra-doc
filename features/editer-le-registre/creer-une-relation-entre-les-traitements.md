@@ -12,17 +12,17 @@ Pour ce faire, il faut aller sur une fiche de traitement et sélectionner l'ongl
 
 
 
-![L'onglet "Relations"](<../../.gitbook/assets/image (171).png>)
+![L'onglet "Relations"](<../../.gitbook/assets/image (243).png>)
 
 
 
 Ensuite, il faudra sélectionner un type de relations.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (245).png>)
 
 Vous pouvez sélectionner le type de relation entre les traitements.
 
-![](<../../.gitbook/assets/image (52).png>)
+![](<../../.gitbook/assets/image (246).png>)
 
 
 

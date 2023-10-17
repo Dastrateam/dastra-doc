@@ -20,7 +20,7 @@ Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**u
 
 Pour commencer, vous devez **mettre en place le widget** dans[ le panel de gestion des widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) d'exercice de droits :&#x20;
 
-![](<../../.gitbook/assets/image (218).png>)
+![](<../../.gitbook/assets/image (250) (1) (1) (1).png>)
 
 Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d'ouverture) :
 
@@ -111,3 +111,15 @@ https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
 &...etc...
 ```
 
+### Fermer le widget en cliquant en dehors de la fenêtre
+
+Vous pouvez mettre en place une option permettant de fermer le widget lorsque l'utilisateur clique en dehors du widget.&#x20;
+
+Attention, cela aura pour effet de supprimer le widget ainsi que le contenu qui a été renseigné.
+
+Pour cela, il faut suffit d'ajouter les paramètres suivants :&#x20;
+
+```
+dastra.customerSubjectReady().then(() => { dastra.customerSubject.closeOnBackdrop = true; });
+
+```

@@ -49,7 +49,7 @@ Rendez-vous sur la [page de configuration du serveur SMTP](https://app.dastra.eu
 
 Remplissez les champs de formulaire à l'aide des données demandées en [prérequis](configuration-du-smtp.md#prerequis)
 
-![](<../../.gitbook/assets/image (335).png>)
+![](<../../.gitbook/assets/image (249) (1).png>)
 
 A noter que la connectivité au serveur est automatiquement testé pour s'assurer que les identifiants de connexion au serveurs sont correctes. Un email de test sera automatiquement envoyé à partir de nos serveurs.
 

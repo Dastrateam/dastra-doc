@@ -9,7 +9,7 @@ description: >-
 
 Dans le but de réduire les erreurs de saisies, le registre Dastra vous permet d'administrer un ou plusieurs référentiels de manière totalement autonomes et indépendamment du registre. Le schéma ci-dessous illustre ainsi la réutilisabilité du registre des traitements.
 
-![Schéma illustrant les relations entre traitements et référentiels (applicatifs et sous-traitance)](<../../.gitbook/assets/image (262).png>)
+![Schéma illustrant les relations entre traitements et référentiels (applicatifs et sous-traitance)](<../../.gitbook/assets/image (91).png>)
 
 ## Liste des référentiels proposés par Dastra
 

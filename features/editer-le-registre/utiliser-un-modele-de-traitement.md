@@ -10,17 +10,17 @@ Les modèles de traitement permettent de gagner du temps dans la saisie de trait
 
 Aller sur "créer un traitement de données"&#x20;
 
-<figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 et sélectionner "modèle prédéfini"
 
 
 
-<figure><img src="../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ensuite vous pourrez chercher des modèles de traitement à partir de la barre de recherche.
 
-<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 Les **tags** vous permettront de filtrer les modèles selon les secteurs d'activité.&#x20;
 
@@ -28,13 +28,13 @@ La **langue** vous permet de visualiser les modèles de traitements dans les aut
 
 Pour **visualiser le contenu du modèle** avant son import, vous pouvez cliquer sur l'oeil situé en haut à droite du modèle.
 
-<figure><img src="../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Suggérer un modèle de traitement
 
 Si vous ne trouvez pas un modèle, vous pouvez nous en suggérer la création.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Créer des modèles de traitement en masse
 
@@ -42,7 +42,7 @@ Vous pouvez sélectionner plusieurs modèles de traitement et les importer en un
 
 Rendez vous dans les options du bouton "Créer un traitement de données" puis "Créer à partir de la bibliothèque"
 
-<figure><img src="../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -50,7 +50,7 @@ Rendez vous dans les options du bouton "Créer un traitement de données" puis "
 
 Sélectionnez un ou plusieurs modèles, choisissez une unité organisationnelle et cliquez sur "ajouter"
 
-<figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Le bouton "**Détails**" permet de prévisualiser le modèle.&#x20;
 

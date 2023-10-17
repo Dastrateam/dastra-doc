@@ -50,11 +50,11 @@ Pour cela, allez dans la gestion de documents et cliquez sur "Ecrire un document
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (365).png" alt=""><figcaption><p>Ecrire un nouveau document</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption><p>Ecrire un nouveau document</p></figcaption></figure>
 
 Le nouveau document est enregistré au format markdown (.md)
 
-<figure><img src="../../.gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Créer un dossier
 
@@ -62,7 +62,7 @@ Vous pouvez ranger vos documents dans des dossiers pour les retrouver facilement
 
 Il est possible de créer des sous-dossiers.
 
-<figure><img src="../../.gitbook/assets/image (423).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Gestion des droits
 

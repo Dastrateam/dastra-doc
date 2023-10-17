@@ -13,7 +13,7 @@ Vous pouvez retrouver ce bout de code et le copier / coller ici : \
 Consentement cookie > Editer > Code
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (309).png>)
+![](<../../../../.gitbook/assets/image (79).png>)
 
 ## 2. Copier-coller dans l'éditeur Wordpress
 
@@ -23,7 +23,7 @@ Cliquez sur le bouton "Apparence" dans la bannière verticale à gauche de l'éc
 
 Sélectionner le fichier "Footer.php" à droite de l'écran qui s'affiche, puis insérez-vous le code préalablement récupéré de Dastra à la fin de la balise \<body> (juste avant \</body>).
 
-![](<../../../../.gitbook/assets/image (416).png>)
+![](<../../../../.gitbook/assets/image (80).png>)
 
 Sauvegardez en cliquant sur "Mettre à jour le fichier", puis rafraîchissez la page de votre site internet. Ca y est, la bannière apparaît !
 

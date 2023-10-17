@@ -14,7 +14,7 @@ Pour cela, cliquez sur votre profil en haut à droite une fois dans l'applicatio
 
 La gestion des notifications est personnelle à chaque utilisateur.&#x20;
 
-![Bouton "Notifications"](<../../.gitbook/assets/image (181).png>)
+![Bouton "Notifications"](<../../.gitbook/assets/image (242).png>)
 
 Une fois dans le centre, vous avez la possibilité d'activer ou de désactiver les notifications reçues.
 

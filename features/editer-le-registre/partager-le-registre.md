@@ -10,13 +10,13 @@ Depuis la section "Registre" de DASTRA, cliquez sur la flèche en haut à droite
 
 Une fois cliqué, une fenêtre apparaît sur l'écran vous demandant la date d'expiration du lien de partage, puis cliquez sur "créer un lien".
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (180).png>)
 
 
 
 Le partage prendra en compte l'ensemble des traitements avec le statut "publié". Les traitements en brouillon ne sont pas partagés avec cette fonction. Pour partager un traitement, en brouillon, il faut le partager de manière individuelle.&#x20;
 
-![Interface de configuration du partage](<../../.gitbook/assets/image (142).png>)
+![Interface de configuration du partage](<../../.gitbook/assets/image (178).png>)
 
 Les durées de vie des liens sont les suivantes :&#x20;
 
@@ -35,7 +35,7 @@ Reproduisez le processus décrit ci-dessus, mais en allant à l'intérieur du tr
 
 Les traitements sont partageables quelque soit le statut (publié ou brouillon).
 
-![](<../../.gitbook/assets/image (152).png>)
+![](<../../.gitbook/assets/image (18) (1).png>)
 
 Il est également possible de partager plusieurs traitements en les sélectionnant dans le menu Registre et choisissant l'action groupée "partager".&#x20;
 
@@ -47,7 +47,7 @@ L'ensemble des liens de partage créés sur votre espace de travail sont central
 
 Vous pourrez les visualiser et les supprimer le cas échéant.
 
-![Interface de gestion des liens de partage ](<../../.gitbook/assets/image (304).png>)
+![Interface de gestion des liens de partage ](<../../.gitbook/assets/image (179).png>)
 
 
 

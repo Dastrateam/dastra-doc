@@ -24,9 +24,9 @@ Avec DASTRA, vous pouvez classifier via simple "drag and drop" les cookies dépo
 
 Pour ce faire, il suffit de sélectionner le cookie à classifier depuis l'interface de Classification, puis de le déplacer par simple "cliquer - déposer" vers la catégorie de son choix.
 
-![Le cookie "Cookie à classer" en cours de classification](<../../../.gitbook/assets/image (301).png>)
+![Le cookie "Cookie à classer" en cours de classification](<../../../.gitbook/assets/image (52).png>)
 
-![Le cookie "Cookie à classer" classé dans la catégorie "Préférences"](<../../../.gitbook/assets/image (57).png>)
+![Le cookie "Cookie à classer" classé dans la catégorie "Préférences"](<../../../.gitbook/assets/image (53).png>)
 
 {% hint style="info" %}
 Vous pouvez définir s'il y a besoin de demander le consentement ou non pour chaque cookie au cas par cas.

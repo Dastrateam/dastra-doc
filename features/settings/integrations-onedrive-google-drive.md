@@ -8,7 +8,7 @@ description: Dastra s'intègre nativement à votre fournisseur de fichiers cloud
 
 Bien que très sécurisé et pratique dans la plupart des scénarios, le stockage des fichiers dans l'application Dastra peut faire doublon avec d'autres GED ou gestionnaire de fichiers cloud. Pour remédier à ce problème, Dastra s'intègre nativement aux principaux fournisseur de fichiers sur le cloud.
 
-![](<../../.gitbook/assets/image (280).png>)
+![](<../../.gitbook/assets/image (252) (1).png>)
 
 ### Configuration
 
@@ -22,7 +22,7 @@ Pour configurer votre gestionnaire de fichiers cloud, c'est hyper simple :
 * Cliquez sur **Gérez le stockage cloud**
 * Choisissez votre fournisseur (Google Drive ou OneDrive pour l'instant)
 
-![](<../../.gitbook/assets/image (244).png>)
+![](<../../.gitbook/assets/image (257) (1).png>)
 
 * Cliquez sur le bouton "Ajouter", vous allez être redirigé vers la page de login du fournisseur qui vous demandera les autorisations nécessaires à l'établissement de la connexion avec Dastra.
 
@@ -31,12 +31,12 @@ Pour configurer votre gestionnaire de fichiers cloud, c'est hyper simple :
 * **Editez n'importe quelle entité** : tâche, traitement, acteur...&#x20;
 * **Choisissez la source de donnée** en haut à gauche de la boîte permettant de charger les fichiers.
 
-![](<../../.gitbook/assets/image (343).png>)
+![](<../../.gitbook/assets/image (254) (1).png>)
 
 * Envoyez des fichiers directement sur votre Drive (Modifiez les, déplacez les)
 * Cliquez sur **sélectionnez dans le gestionnaire**. et choisissez le fichier à attacher
 
-![](<../../.gitbook/assets/image (76).png>)
+![](<../../.gitbook/assets/image (255).png>)
 
 
 

@@ -8,7 +8,7 @@ description: Intégrez des processus complexe à l'aide des Règles de workflow 
 
 Les Règles de workflow dans Dastra sont un ensemble d'actions (notifications par e-mail, planification d'un audit, tâches et mises à jour de champs) qui sont exécutées lorsque certaines conditions sont réunies. Ces règles automatisent le processus d'envoi des notifications par e-mail, d'attribution des tâches et de mise à jour de certains champs d'un enregistrement lorsqu'une règle est déclenchée.
 
-![Schéma du principe de base](<../../.gitbook/assets/image (299).png>)
+![Schéma du principe de base](<../../.gitbook/assets/image (258) (1).png>)
 
 ## Comment créer une règle de workflow dans Dastra ?
 

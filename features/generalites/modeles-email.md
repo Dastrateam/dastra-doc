@@ -16,13 +16,13 @@ Une fois enregistré, ils sont un moyen rapide pour communiquer avec les parties
 
 Pour sélectionner ou créer un modèle, cliquez sur "Sélectionner ou créer un modèle "
 
-<figure><img src="../../.gitbook/assets/image (350).png" alt=""><figcaption><p>Sélection du modèle dans un exercice de droit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Sélection du modèle dans un exercice de droit</p></figcaption></figure>
 
 Vous pouvez ensuite chercher un modèle existant dans la liste ou la fonction rechercher, ou regarder les modèles disponibles dans les espaces de travail auquel vous avec accès ou encore les modèles créés par Dastra).
 
 Si aucun modèle ne vous convient, cliquez sur "Créer modèle"
 
-<figure><img src="../../.gitbook/assets/image (397).png" alt=""><figcaption><p>Sélection ou création d'un modèle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Sélection ou création d'un modèle</p></figcaption></figure>
 
 L'interface de création de modèle comprend 4 éléments&#x20;
 
@@ -31,7 +31,7 @@ L'interface de création de modèle comprend 4 éléments&#x20;
 * Un onglet Aperçu : permet d'afficher le rendu du mail en temps réel
 * Un onglet Input Data : vous permet de voir les données de l'objet concerné par le modèle
 
-<figure><img src="../../.gitbook/assets/image (398).png" alt=""><figcaption><p>Interface de création de modèle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (3).png" alt=""><figcaption><p>Interface de création de modèle</p></figcaption></figure>
 
 ## Personnalisez le modèle
 
@@ -131,7 +131,7 @@ Le corps de texte ci-dessous utilise tous les éléments ci-dessus
 
 Pour la demande en cours de traitement, il sera transformé de la manière suivante :&#x20;
 
-<figure><img src="../../.gitbook/assets/image (255).png" alt=""><figcaption><p>Un exemple de modèle complet</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Un exemple de modèle complet</p></figcaption></figure>
 
 ### Vous avez encore des besoins ?
 

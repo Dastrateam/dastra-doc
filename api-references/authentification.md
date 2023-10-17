@@ -14,7 +14,7 @@ Votre clé d'API permet de faire beaucoup de chose, c'est pourquoi, vous devez l
 
 Si vous souhaitez utiliser l'authentification OAuth2 en mode "authorization\_code", il sera nécessaire de bien configurer le ou les urls de redirection ainsi que les origines CORs autorisées.
 
-![](<../.gitbook/assets/image (109).png>)
+![](<../.gitbook/assets/image (249) (1) (1) (1).png>)
 
 ## OAuth2 "Authorization code" flow
 

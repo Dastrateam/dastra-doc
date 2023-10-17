@@ -12,7 +12,7 @@ Pour tous les traitements, vous pouvez afficher l'historique des modifications a
 
 Il suffit de cliquer sur l'icone en haut de la page représentant une horloge.
 
-<figure><img src="../../.gitbook/assets/image (352).png" alt=""><figcaption><p>Bouton d'accès à l'historique</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p>Bouton d'accès à l'historique</p></figcaption></figure>
 
 Attention, les modifications d'unités organisationnelles ne sont pas tracées.&#x20;
 
@@ -28,15 +28,15 @@ Pour supprimer un traitement, il y a nécessairement un passage par l’archivag
 
 Pour archiver un traitement, il faut aller sur les trois petits points sur le traitement pour afficher le menu.
 
-<figure><img src="../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 Et enfin, afficher les archives
 
-<figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 et supprimer&#x20;
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Comment utiliser les jeux de données sans pouvoir modifier les données ?
 
@@ -53,7 +53,7 @@ Ensuite, créer un rôle personnalisé avec les permissions :&#x20;
 * Registre : lecture, écriture
 * Cartographie des données : lecture
 
-<figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption><p>Rôle permettant l'accès aux jeux de données sans pouvoir les modifier</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (3).png" alt=""><figcaption><p>Rôle permettant l'accès aux jeux de données sans pouvoir les modifier</p></figcaption></figure>
 
 Ensuite, il faut attribuer ce rôle aux utilisateurs concernés.&#x20;
 
@@ -75,7 +75,7 @@ Ensuite, vous verrez le bouton "Choisir des actions groupées" apparaitre.&#x20;
 
 Sélectionner l'option "Lier des acteurs" et ajoutez vos acteurs en tant que partie prenante.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Obtenir la liste des actifs par unité organisationnelle (UO) ?
 

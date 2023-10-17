@@ -14,7 +14,7 @@ Pour faire simple, les webhooks permettent de **déclencher une action** suite �
 
 Pour configurer vos webhooks, rendez-vous sur la page : [https://app.dastra.eu/general-settings/webhooks](https://app.dastra.eu/general-settings/webhooks)
 
-![](<../../.gitbook/assets/image (217).png>)
+![](<../../.gitbook/assets/image (252) (1) (1) (1).png>)
 
 * Cliquez sur créer une "url de webhook"
 * Renseignez l'url de réception de votre webhook. Pour en savoir plus consultez la section [Comment réceptionner le webhook](webhooks.md#undefined).
@@ -24,7 +24,7 @@ Pour configurer vos webhooks, rendez-vous sur la page : [https://app.dastra.eu/g
 
 Vous arrivez sur l'**écran de détail du webhook.**
 
-![](<../../.gitbook/assets/image (281).png>)
+![](<../../.gitbook/assets/image (254) (1) (1).png>)
 
 ### Comment réceptionner le webhook 🛬
 

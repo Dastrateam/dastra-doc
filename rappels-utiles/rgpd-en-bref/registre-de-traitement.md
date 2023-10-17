@@ -66,7 +66,7 @@ Pour chaque traitement, le registre d'un responsable de traitement indique au mi
 7. les **délais prévus pour l'effacement** des différentes catégories de données, c’est-à-dire la durée de conservation, ou à défaut les critères permettant de la déterminer
 8. dans la mesure du possible, une **description générale des mesures de sécurité** techniques et organisationnelles que vous mettez en œuvre
 
-![Un traitement "responsable de traitement" dans Dastra](<../../.gitbook/assets/image (328).png>)
+![Un traitement "responsable de traitement" dans Dastra](<../../.gitbook/assets/image (194).png>)
 
 ### Les acteurs&#x20;
 
@@ -123,7 +123,7 @@ Celui-ci contient :&#x20;
 
 
 
-![Un traitement "sous-traitant" dans Dastra](<../../.gitbook/assets/image (25).png>)
+![Un traitement "sous-traitant" dans Dastra](<../../.gitbook/assets/image (195).png>)
 
 ## Pour aller plus loin
 

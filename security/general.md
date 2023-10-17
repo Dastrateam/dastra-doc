@@ -76,7 +76,7 @@ Utilisation du modèle de gestion des accès [RBAC ](https://en.wikipedia.org/wi
 
 ## Authentification sécurisée basée sur OpenIdConnect pour l'ensemble de nos sites
 
-![](<../.gitbook/assets/image (64).png>)
+![](<../.gitbook/assets/image (22).png>)
 
 L'autorité d'authentification est [https://account.dastra.eu](https://account.dastra.eu) utilise la technologie [IdentityServer4 ](https://identityserver.io/)pour assurer l'authentification de tous nos utilisateurs.&#x20;
 

@@ -22,7 +22,7 @@ Celui-ci est composé de 3 sections principales :
 
 Dans la section contenant les tuiles, vous pouvez modifier l'ordre d'apparence de ces tuiles en cliquant sur le bouton glisser / déposer permettant de déplacer l'ordre d'apparence de la tuile.
 
-![Un exemple de tuile du tableau de bord](<../.gitbook/assets/image (245).png>)
+![Un exemple de tuile du tableau de bord](<../.gitbook/assets/image (160).png>)
 
 Il existe plusieurs **catégories de tuiles** disponible dans le tableau de bord :
 
@@ -39,7 +39,7 @@ Il existe plusieurs **catégories de tuiles** disponible dans le tableau de bord
 
 Vous pouvez également imprimer le tableau de bord ou invitez directement en utilisateur en cliquant sur l'un des boutons disponibles en haut à droite de la section réservée aux tuiles.
 
-![Les boutons imprimer et inviter un utilisateur](<../.gitbook/assets/image (124).png>)
+![Les boutons imprimer et inviter un utilisateur](<../.gitbook/assets/image (161).png>)
 
 ## Aller plus loin
 

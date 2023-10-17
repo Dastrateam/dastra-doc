@@ -50,11 +50,11 @@ N'hésitez pas à consulter également notre bibliothèque de modèles de traite
 
 Pour importer vos labels de traitements existants, il faut cliquer sur l'onglet "importer vos données" dans la section Registre, onglet Registre:
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (10) (1) (1).png>)
 
 Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran.
 
-![](<../../.gitbook/assets/image (267).png>)
+![](<../../.gitbook/assets/image (11) (1) (1).png>)
 
 
 
@@ -79,7 +79,7 @@ Ca y est, vos labels de traitements sont importés !
 
 Pour importer vos applications/actifs existantes, il faut cliquer sur l'onglet "importer" dans le module Référentiels, onglet Actifs :
 
-![](<../../.gitbook/assets/image (53).png>)
+![](<../../.gitbook/assets/image (92).png>)
 
 Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran. Remplissez le fichier  téléchargé avec vos applications en respectant l'ordre suivant :
 

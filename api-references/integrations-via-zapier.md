@@ -6,7 +6,7 @@ description: Dastra s'intègre avec la plateforme d'automatisation Zapier
 
 Mettez en place des connecteurs entre Dastra et vos autres applications favorites pour automatiser vos flux de travail et gagner du temps.
 
-![](../.gitbook/assets/connectors.svg)
+![](<../.gitbook/assets/connectors (1).svg>)
 
 {% hint style="info" %}
 [Accéder à la page Dastra du catalogue Zapier](https://zapier.com/apps/dastra/integrations)
