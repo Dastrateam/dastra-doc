@@ -113,7 +113,7 @@ https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
 
 ### Fermer le widget en cliquant en dehors de la fenêtre
 
-Si votre widget est configuré si vous êtes en **type d'affichage "Popup"**, nous n'avons pas mis en place le comportement de fermeture de la modal en cas de clic en dehors de la fenêtre, car les risques de perte de données saisies par l'utilisateur sont importants.
+Si votre widget est configuré avec un **type d'affichage "Popup"**, nous n'avons pas mis en place le comportement de fermeture de la modal en cas de clic en dehors de la fenêtre, car les risques de perte de données saisies par l'utilisateur sont trop importants.
 
 Cependant, si vous souhaitez que le widget se ferme lorsque l'utilisateur clique en dehors du widget, il est possible de le mettre en place à l'aide du code suivant :&#x20;
 
