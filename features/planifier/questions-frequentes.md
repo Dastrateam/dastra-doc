@@ -6,7 +6,7 @@ Pour attacher plusieurs à un projet en une seule action, vous devez passer par 
 
 Commencez par sélectionner les tâches que vous voulez attacher à un projet.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cliquez sur "Actions groupées"
 

@@ -1,10 +1,12 @@
 ---
-description: Inscrivez ici les finalités du traitement de données.
+description: Documentez les finalités de votre traitement et la base légale associée
 ---
 
 # Finalités
 
 {% embed url="https://www.youtube.com/watch?v=CnSRO2N-NOk&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=5" %}
+
+## Finalités d'un traitement
 
 Une **finalité** constitue l’objectif poursuivi par la mise en place  de votre fichier. Elle indique à quoi le traitement de données personnelles va servir, sa raison d’être. Cet objectif doit être clair et compréhensible.
 
@@ -27,7 +29,19 @@ Une activité de traitement peut avoir plusieurs finalités. Par exemple, l’ac
 \
 Pour chaque finalité, vous devez définir [**la base légale**](https://www.cnil.fr/fr/les-bases-legales) applicable. Il ne peut y avoir qu’une seule base légale par finalité. Le choix de cette base légale est à effectuer selon le contexte du traitement.
 
+## Ajouter une finalité dans Dastra&#x20;
 
+L'ajout des finalités est réalisé à la section 3 du traitement.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ajout de finalité</p></figcaption></figure>
+
+
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+L'intitulé de la finalité est limité à 120 caractères.&#x20;
+
+Vous pouvez ajouter plusieurs finalités à votre traitement.
 
 ## Bases légales&#x20;
 
@@ -93,4 +107,14 @@ Cette base légale ne pas peut être invoquée par les organismes publics dans l
 Une mise en balance doit être effectuée par exemple avec un test de proportionnalité.&#x20;
 
 Vous pouvez conserver les résultats de ce test en document à l'étape 11. Vous devrez également détailler les intérêts légitimes invoqués (par exemple, la sécurité du réseau informatique ou la lutte contre la fraude).
+
+## Ajouter la base légale à une finalité
+
+Dans chaque finalité, vous pouvez ajouter une base légale parmi les 6 fondements ci-dessus.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Sélecteur de base légale</p></figcaption></figure>
+
+Une fois la base sélectionnée, vous pouvez apporter une description. Par exemple, pour préciser les intérêts légitimes ou la disposition légale.&#x20;
+
+
 

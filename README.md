@@ -22,7 +22,7 @@ Pour plus d'informations, consultez notre [manifesto](https://www.dastra.eu/fr/m
 
 * **Cartographier vos données personnelles** en créant et en conservant votre dossier de traitement grâce à une interface souple et intuitive, des référentiels, des bibliothèques et un questionnaire, et **constituer, partager** et **exporter** votre registre de traitement.
 
-![](<.gitbook/assets/image (3) (1) (1) (1).png>)
+![](<.gitbook/assets/image (3) (1) (1) (1) (1).png>)
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 
