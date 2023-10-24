@@ -126,3 +126,68 @@ window.dastra.customerSubjectReady().then((form) => {
 {% hint style="warning" %}
 Attention, cela aura pour effet de supprimer l'intégralité du texte saisi par l'utilisateur sans aucun avertissement ! Si le formulaire est long, cela peut se produire facilement lors d'une sélection dépassant un champ textuel long.
 {% endhint %}
+
+### Intégrer plusieurs widgets dans une seule page
+
+Par défaut, Dastra ne permet pas l'intégration de plusieurs widgets au sein de la même page.&#x20;
+
+Cependant, il est possible de faire cette intégration avec la méthode suivante.&#x20;
+
+```html
+<html lang="en-GB">
+<body>
+  <h2>My first widget</h2>
+  <div id="widget-1"></div>
+  <h2>My second widget</h2>
+  <div id="widget-2"></div>
+  <script async src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR_PUBLIC_KEY}"></script>
+  <script>
+    dastra = dastra || [];
+    
+    // Widget 1 initialization
+    dastra.push(function () {
+      dastra.loadCustomerSubjectForm({
+        selector: "#widget-1",
+        widgetId: 991, // YOUR_WIDGET_ID_
+        onLoad: function (form) {
+          // Initialization
+        },
+      });
+    });
+
+    // Widget 2 initialization
+    dastra.push(function () {
+      dastra.loadCustomerSubjectForm({
+        selector: "#widget-2",
+        widgetId: 992, // the widget identifier for the second widget
+        onLoad: function (form) {
+          // Initialization
+        },
+      });
+    });
+  </script>
+</body>
+</html>
+```
+
+Pour intégrer les champs initiaux dans cette configuration, il faut utiliser le code suivant :&#x20;
+
+```html
+window.dastra.push(function () {
+  dastra.loadCustomerSubjectForm({
+    selector: "#customer-subject-form-custom",
+    widgetId: widgetId,
+    onLoad: function (form) {
+      form.initialData = {
+        givenName: "prénomTest"
+      };
+      document
+        .getElementById("customer-request-button")
+        .addEventListener("click", function () {
+          form.closeOnBackdrop = true;
+          form.open();
+        });
+    },
+  });
+});
+```
