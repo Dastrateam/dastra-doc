@@ -8,9 +8,9 @@ description: >-
 
 Dastra ne s'intégrant pas nativement à toutes les plateformes de développement, nous mettons à votre disposition une API Rest pour gérer vos demandes d'exercice de droits depuis vos applications.&#x20;
 
-### L'objet demande d'exercice de droits
+### Le JSON de l'objet demande d'exercice de droits
 
-Vous trouverez ci-dessous le modèle objet d'une demande d'exercice de droits dans Dastra
+Vous trouverez ci-dessous le modèle objet au format JSON d'une demande d'exercice de droits dans Dastra.
 
 <details>
 
@@ -18,258 +18,117 @@ Vous trouverez ci-dessous le modèle objet d'une demande d'exercice de droits da
 
 ```
 {
-  "closedByUser": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "area": {
-    "order": 0,
-    "children": [
-      "string"
+    "customFields": {
+      "13_long": "1234567891234",
+      "13_html": "1234567891234"
+    },
+    "closedByUser": null,
+    "area": {
+      "order": XXX,
+      "children": [],
+      "permissions": [],
+      "id": XXX,
+      "type": "Entity",
+      "parentId": null,
+      "ref": null,
+      "label": "Moulinsart",
+      "description": null,
+      "logoUrl": null,
+      "address": null,
+      "zipCode": null,
+      "city": null,
+      "countryCode": "BE",
+      "immatriculationNumber": null,
+      "phoneNumber": null,
+      "mailAddress": null,
+      "dpo": null,
+      "referent": null,
+      "representative": null,
+      "dataProtectionAuthority": null
+    },
+    "creator": null,
+    "operator": null,
+    "operatorId": null,
+    "attachments": [],
+    "messages": [],
+    "tags": [],
+    "id": XXX,
+    "title": "",
+    "locale": "fr",
+    "archived": false,
+    "archivedDate": null,
+    "subjectCategoryId": null,
+    "subjectCategory": null,
+    "complex": false,
+    "dateClosed": null,
+    "areaId": XX,
+    "state": "Open",
+    "description": null,
+    "message": null,
+    "resolutionMessage": null,
+    "email": "",
+    "phoneNumber": null,
+    "givenName": "",
+    "familyName": null,
+    "dateDemand": "2023-09-18T10:31:30.6882299",
+    "dateCreation": "2023-09-18T10:31:30.6882299",
+    "dateUpdate": null,
+    "workFlowStep": {
+      "id": 22290,
+      "label": "Nouveau",
+      "color": "#1E8EE1",
+      "order": 0,
+      "itemLimit": null,
+      "type": "DataSubjectRequest",
+      "finalStep": false,
+      "initialStep": true,
+      "authorizedRole": null,
+      "authorizedRoleId": null,
+      "descriptionHtml": null,
+      "mappedState": "Open"
+    },
+    "workFlowStepId": XX,
+    "channel": "Widget",
+    "refId": null,
+    "userId": null,
+    "purposes": [
+      "Rectification"
     ],
-    "teams": [
-      {
-        "id": 0,
-        "label": "string",
-        "ref": "string",
-        "areas": [
-          0
-        ],
-        "users": [
-          0
-        ]
-      }
-    ],
-    "id": 0,
-    "type": "Entity",
-    "parentId": 0,
-    "ref": "string",
-    "label": "string",
-    "description": "string",
-    "logoUrl": "string",
-    "address": "string",
-    "zipCode": "string",
-    "city": "string",
-    "countryCode": "str",
-    "immatriculationNumber": "string",
-    "phoneNumber": "string",
-    "mailAddress": "string",
-    "dpo": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-05T12:19:43.722Z",
-      "dateUpdate": "2022-08-05T12:19:43.722Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
+    "closedReason": "None",
+    "closedReasonDescription": null,
+    "expiryTime": "2023-10-18T10:31:30.68823",
+    "address": null,
+    "zipCode": null,
+    "city": null,
+    "countryCode": null,
+    "nbMessages": 0,
+    "nbMessagesNotViewed": 0,
+    "nbMessagesIncoming": 0,
+    "lastMessageDate": null,
+    "remainingDays": -6,
+    "closingTime": null,
+    "additionalDatas": {
+      "givenName": null,
+      "13_long": "XX",
+      "13_html": "XX"
     },
-    "referent": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-05T12:19:43.722Z",
-      "dateUpdate": "2022-08-05T12:19:43.722Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "representative": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-05T12:19:43.722Z",
-      "dateUpdate": "2022-08-05T12:19:43.722Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "dataProtectionAuthority": {
-      "id": 0,
-      "label": "string",
-      "siteURL": "string",
-      "phoneNumber": "string",
-      "email": "user@example.com",
-      "countryCode": "str",
-      "address": "string",
-      "city": "string",
-      "zipCode": "string"
-    }
-  },
-  "creator": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "operator": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "attachments": [
-    {
-      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "extension": "string",
-      "size": 0,
-      "nbDownload": 0,
-      "transmitted": true,
-      "fileName": "string",
-      "label": "string",
-      "userRequestMessageId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "userRequestId": 0,
-      "dateCreation": "2022-08-05T12:19:43.722Z",
-      "dateUpdate": "2022-08-05T12:19:43.722Z",
-      "creator": {
-        "id": 0,
-        "displayName": "string",
-        "familyName": "string",
-        "givenName": "string",
-        "email": "string",
-        "color": "string",
-        "avatarUrl": "string",
-        "tenantId": 0
-      },
-      "expiration": "2022-08-05T12:19:43.722Z",
-      "dateLastDownload": "2022-08-05T12:19:43.722Z",
-      "dateFileRemoved": "2022-08-05T12:19:43.722Z",
-      "deleted": true,
-      "expired": true,
-      "color": "string"
-    }
-  ],
-  "tags": [
-    {
-      "id": 0,
-      "label": "string",
-      "type": "DataProcessing",
-      "color": "string"
-    }
-  ],
-  "id": 0,
-  "title": "string",
-  "locale": "string",
-  "archived": true,
-  "archivedDate": "2022-08-05T12:19:43.722Z",
-  "personCategory": "Prospect",
-  "complex": true,
-  "dateClosed": "2022-08-05T12:19:43.722Z",
-  "areaId": 0,
-  "state": "Open",
-  "description": "string",
-  "message": "string",
-  "resolutionMessage": "string",
-  "email": "string",
-  "phoneNumber": "string",
-  "givenName": "string",
-  "familyName": "string",
-  "dateCreation": "2022-08-05T12:19:43.722Z",
-  "dateUpdate": "2022-08-05T12:19:43.722Z",
-  "workFlowStep": {
-    "id": 0,
-    "label": "string",
-    "color": "string",
-    "order": 0,
-    "itemLimit": 0,
-    "type": "DataSubject",
-    "finalStep": true,
-    "initialStep": true,
-    "descriptionHtml": "string",
-    "mappedState": "string"
-  },
-  "workFlowStepId": 0,
-  "channel": "Internal",
-  "refId": "string",
-  "userId": "string",
-  "purposes": [
-    "Unknown"
-  ],
-  "closedReason": "None",
-  "closedReasonDescription": "string",
-  "expiryTime": "2022-08-05T12:19:43.722Z",
-  "address": "string",
-  "zipCode": "string",
-  "city": "string",
-  "countryCode": "st",
-  "nbMessages": 0,
-  "nbMessagesNotViewed": 0,
-  "remainingDays": 0,
-  "closingTime": 0,
-  "additionalDatas": "string",
-  "userNotified": true,
-  "dateUserNotified": "2022-08-05T12:19:43.722Z",
-  "sendNotification": true,
-  "emailValidationDate": "2022-08-05T12:19:43.722Z",
-  "mailValidated": true,
-  "referrerUrl": "string",
-  "demandId": "string",
-  "identityValidated": true,
-  "dateIdentityValidated": "2022-08-05T12:19:43.722Z",
-  "widgetId": 0
-}
+    "userNotified": false,
+    "dateUserNotified": null,
+    "sendNotification": false,
+    "emailValidationDate": "2023-09-18T10:31:53.8554799",
+    "mailValidated": true,
+    "referrerUrl": "",
+    "demandId": "",
+    "identityValidated": false,
+    "dateIdentityValidated": null,
+    "widgetId": 0  
+  }
+]
 ```
 
 </details>
+
+Pour récupérer le format Objet de votre configurée avec des champs personnalisés, vous pouvez faire un export d'une demande au format JSON et obtenir ainsi le modèle JSON.&#x20;
 
 ### Les EndPoints de l'API
 
@@ -1296,7 +1155,3 @@ L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droit
 L'id de la demande d'exercice de droits que vous souhaitez restaurer
 {% endswagger-parameter %}
 {% endswagger %}
-
-
-
-### L'objet demande d'exercice de droits
