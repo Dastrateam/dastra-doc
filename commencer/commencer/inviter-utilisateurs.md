@@ -107,9 +107,9 @@ Attention, les rôles doivent être créés préalablement.
 
 **S'agissant des identifiants des équipes :**&#x20;
 
-Ceux ci sont paramétrables lors de l'ajout d'une équipe
+Il faut faire la démarche que pour les rôles.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
+NB : les équipes ne sont pas obligatoires dans Dastra.
 
 {% hint style="info" %}
 Attention, les équipes doivent être crées préalablement dans l'espace de travail
