@@ -28,6 +28,6 @@ Ensuite, ajouter le DPO dans le champ prévu.
 
 Le DPO est ajouté en tant qu'acteur. Ainsi, si le DPO est une personne physique, ajoutez le en personne physique. S'il s'agit d'une société (un DPO externe par exemple), ajoutez le en tant que personne morale.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption><p>Fenêtre d'ajout d'un acteur dans l'annuaire</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 N'oubliez pas d'enregistrer et le tour est joué !
