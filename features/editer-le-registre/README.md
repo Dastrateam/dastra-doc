@@ -56,9 +56,9 @@ La bonne nouvelle, c'est que Dastra gère parfaitement les deux approches ! Vous
 
 Voici un tutoriel vidéo vous permettant de créer le registre.
 
-{% embed url="https://www.youtube-nocookie.com/embed/YFIj6Syl1Fw" %}
-
 Si vous souhaitez apprendre à concevoir et gérer votre registre de traitement de données, commencez ici:
+
+{% embed url="https://www.youtube.com/watch?v=gqtAPok9ZuU" %}
 
 {% content-ref url="gerer-votre-registre.md" %}
 [gerer-votre-registre.md](gerer-votre-registre.md)
