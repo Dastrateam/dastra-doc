@@ -27,6 +27,7 @@ Avec Dastra, vous pourrez :
 
 Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi lesquels se trouve les éléments suivants : &#x20;
 
+* Unité organisationnelle
 * Traitement de donnée à caractère personnel
 * Acteur ou sous-traitant
 * Actif&#x20;
