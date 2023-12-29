@@ -4,7 +4,7 @@ description: Apprenez à gérer les risques avec Dastra.
 
 # Gestion des risques
 
-## Introduction
+Introduction
 
 Vie privée,  stratégiques, de non-conformité, opérationnels, financiers, sous-traitance... La gestion des risques est souvent complexe et peu efficiente. Supprimez la complexité et améliorez l’efficacité de vos plans de contrôle, d’audit et de conformité avec Dastra.
 
@@ -31,6 +31,8 @@ Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi 
 * Traitement de donnée à caractère personnel
 * Acteur ou sous-traitant
 * Actif&#x20;
+
+<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption><p>Exemple de visualiation consolidée des risques</p></figcaption></figure>
 
 ## Aller plus loin
 
