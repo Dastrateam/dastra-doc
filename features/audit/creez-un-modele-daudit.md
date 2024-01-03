@@ -2,17 +2,17 @@
 description: Apprenez à créer et modifier un modèle d'audit ou un PIA avec Dastra.
 ---
 
-# Créer ou modifier un modèle d'audit ou un PIA
+# Créer ou modifier un modèle de questionnaire ou un PIA
 
 ## Introduction
 
-La création ou la modification d'un modèle d'audit ou d'un PIA dans Dastra est un jeu d'enfant. Pour ce faire, accédez à la fonctionnalité "Audit".
+La création ou la modification d'un modèle d'audit ou d'un PIA dans Dastra est un jeu d'enfant. Pour ce faire, accédez à la fonctionnalité "Questionnaire".
 
 
 
-## Créer ou modifier un modèle d'audit / PIA
+## Créer ou modifier un modèle de questionnaire / PIA
 
-Pour créer un modèle d'audit ou de PIA, cliquez sur le bouton "Créer un modèle" dans l'onglet "Audit". Ensuite vous pouvez sélectionner un des 3 types de modèles d'audit existant dans Dastra : audit automatisé, combiné ou personnalisé.
+Pour créer un modèle d'audit ou de PIA, cliquez sur le bouton "Créer un modèle" dans l'onglet "Questionnaire". Ensuite vous pouvez sélectionner un des 3 types de modèles d'audit existant dans Dastra : questionnaire automatisé, combiné ou personnalisé.
 
 <figure><img src="../../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,9 +20,9 @@ Vous arrivez sur l'interface de sélection des types de modèles :&#x20;
 
 ![Choix des types de modèles](<../../.gitbook/assets/image (138).png>)
 
-* En cliquant sur l'onglet "**Audit automatisé**", vous choisirez un modèle d'audit prédéfini existant en piochant dans la bibliothèque d'audits de Dastra.
-* En cliquant sur "**Audit combiné**", vous rassemblez plusieurs audits dans un seul.
-* En cliquant sur "**Audit personnalisé**", vous pouvez construire votre propre modèle d'audit.
+* En cliquant sur l'onglet "**Questionnaire automatisé**", vous choisirez un modèle de questionnaire prédéfini existant en piochant dans la bibliothèque de Dastra.
+* En cliquant sur "**Questionnaire combiné**", vous rassemblez plusieurs audits dans un seul.
+* En cliquant sur "**Questionnaire personnalisé**", vous pouvez construire votre propre modèle de questionnaire.
 
 {% hint style="info" %}
 Contrairement aux audits automatisés, les audits personnalisés sont entièrement personnalisables. En fonction des réponses sélectionnées par les répondants, vous serez en mesure de générer automatiquement un plan d'actions ou de cartographier les risques associés au modèle.&#x20;
@@ -30,10 +30,10 @@ Contrairement aux audits automatisés, les audits personnalisés sont entièreme
 
 ## Créer une modèle d'AIPD
 
-Les modèles de AIPD sont inclus dans les modèles d'audits automatisés et sont librement accessibles depuis la bibliothèque Dastra.  Pour créer ou modifier un modèle PIA, cliquez sur "Audit automatisé", puis sélectionner "PIA (CNIL) - analyse d'impact sur la vie privée" avant de cliquer sur "enregistrer".
+Les modèles de AIPD sont inclus dans les modèles d'audits automatisés et sont librement accessibles depuis la bibliothèque Dastra.  Pour créer ou modifier un modèle PIA, cliquez sur "Questionnaire automatisé", puis sélectionner "PIA (CNIL) - analyse d'impact sur la vie privée" avant de cliquer sur "enregistrer".
 
 {% hint style="info" %}
-Dans Dastra, les PIA sont un **modèle parmi d'autres d'audit automatisé.**
+Dans Dastra, les PIA sont un **modèle parmi d'autres de questionnaire automatisé.**
 {% endhint %}
 
 ![Bouton de sélection de bibliothèque](<../../.gitbook/assets/Capture web\_6-5-2022\_103438\_app.dastra.eu.jpeg>)
@@ -43,7 +43,7 @@ Dans Dastra, les PIA sont un **modèle parmi d'autres d'audit automatisé.**
 Une fois le modèle sélectionné, vous accédez à l'écran de planification où vous pouvez réaliser l'une des 2 actions ci-dessous :
 
 * soit **modifier le modèle** en cliquant sur le bouton "Modifier le modèle"
-* soit planifier un audit en cliquant sur le bouton "Planifier un audit"&#x20;
+* soit planifier un audit en cliquant sur le bouton "Planifier un questionnaire"&#x20;
 
 {% hint style="info" %}
 Pour les PIA, une option complémentaire est possible, le cas échéant :  **importer votre PIA provenant de l'outil de la CNIL**. Pour faire cela, cliquer sur le bouton "Importer votre PIA CNIL".&#x20;
