@@ -10,7 +10,9 @@ description: >-
 
 L'application Dastra vous accompagne à chaque étape du processus de création d'un traitement, tout en restant autonome. Bénéficiez de conseils et devenez conforme aux exigences du RGPD.
 
+Suivez notre série de tutoriels vidéos à ce sujet :&#x20;
 
+{% embed url="https://www.youtube.com/embed/videoseries?list=PL-EvtNdEiDxEzGBBTfGHy25vS6COmcgeQ&si=q8iJKz0VjemfjzbO" %}
 
 ## Qu'est-ce que le questionnaire Dastra ?&#x20;
 
