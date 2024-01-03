@@ -6,6 +6,8 @@ description: Apprenez à exporter et importer un registre existant complet dans 
 
 ## L'export de registre
 
+{% embed url="https://www.youtube.com/watch?index=24&list=PL-EvtNdEiDxEzGBBTfGHy25vS6COmcgeQ&v=FZrIB6q76Mw" %}
+
 Pour exporter l'ensemble du registre, il vous suffit de vous rendre dans le module "Registre", de cliquer sur la flèche en haut à droite à côté de la création d'un traitement, puis de sélectionner "exporter le registre".
 
 ![Menu déroulant du registre comportant la fonctionnalité d'export](<../../.gitbook/assets/Capture web\_3-5-2022\_164438\_app.dastra.eu.jpeg>)
