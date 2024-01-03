@@ -4,6 +4,8 @@ description: Apprenez à partager votre registre.
 
 # Partager le registre
 
+{% embed url="https://www.youtube-nocookie.com/embed/FZrIB6q76Mw?si=w5J27ax2OmT5refp" %}
+
 ## Partage de l'intégralité du registre
 
 Depuis la section "Registre" de DASTRA, cliquez sur la flèche en haut à droite du registre à côté du bouton de création d'un traitement, puis dans le menu déroulant, sur "partager".

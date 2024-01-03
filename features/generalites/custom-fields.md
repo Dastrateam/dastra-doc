@@ -4,10 +4,6 @@ description: Dastra vous donne la possibilité de personnaliser à l'infini vos 
 
 # Champs personnalisés
 
-{% hint style="warning" %}
-Cette fonctionnalité est encore en beta. Il se peut qu'elle comporte encore quelques instabilités.
-{% endhint %}
-
 {% embed url="https://www.youtube-nocookie.com/embed/mDyJD-mnnL0" %}
 Comment utiliser les champs personnalisés dans Dastra
 {% endembed %}

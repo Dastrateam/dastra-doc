@@ -6,6 +6,8 @@ description: >-
 
 # Filtres avancés
 
+{% embed url="https://www.youtube-nocookie.com/embed/uLzd1as3QBo?si=yokS5cLZcNJ__V4z" %}
+
 ## Utilisation
 
 Les filtres avancés permettent de filtrer vos données sur presque tous les champs de vos entités.

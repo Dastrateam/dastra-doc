@@ -1,5 +1,7 @@
 # Importer vos données (Excel, Csv)
 
+{% embed url="https://www.youtube-nocookie.com/embed/XNcy3eudgZk?si=LadsT5mhFv-hubDT" %}
+
 ## L'import de données dans Dastra
 
 Dastra vous permet très facilement d'importer vos propres données sous format tableur directement dans l'application.

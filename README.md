@@ -18,6 +18,14 @@ Chez Dastra, nous pensons que la protection des données n'est pas uniquement un
 
 Pour plus d'informations, consultez notre [manifesto](https://www.dastra.eu/fr/mission).
 
+Ou regardez la vidéo de notre CEO :&#x20;
+
+{% embed url="https://www.youtube.com/watch?v=Aea2PscbEHU" fullWidth="false" %}
+Notre approche de la protection des données
+{% endembed %}
+
+
+
 ## Avec Dastra vous pouvez:
 
 * **Cartographier vos données personnelles** en créant et en conservant votre dossier de traitement grâce à une interface souple et intuitive, des référentiels, des bibliothèques et un questionnaire, et **constituer, partager** et **exporter** votre registre de traitement.

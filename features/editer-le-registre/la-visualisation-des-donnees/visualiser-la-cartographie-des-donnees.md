@@ -4,6 +4,8 @@ description: Apprenez à visualiser la cartographie des données dans Dastra.
 
 # Visualiser la cartographie des données du registre
 
+{% embed url="https://www.youtube-nocookie.com/embed/RuhOQL6j0PE?si=sAnjkCklIehTilrh" %}
+
 ## Introduction
 
 Dans Dastra, les données peuvent être visualisées de plusieurs manières. Une d'entre elle est la **cartographie des données du registre** de traitement.

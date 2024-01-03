@@ -25,6 +25,8 @@ Générez rapidement des actifs (de type logiciel par exemple) au format attendu
 
 Gagnez en rapidité et laissez l'IA préremplir ces informations pour vous.&#x20;
 
+{% embed url="https://www.youtube-nocookie.com/embed/6yBxTC2CrMY?si=3IFPJu3f9Ac3qDpK" %}
+
 ## Comment utiliser l'IA générative de Dastra ?
 
 Vous pouvez utiliser l'assistant IA pour générer des traitements de données ou des actifs. Pour cela cliquez sur le bouton "Créer un traitement" et sur "générer avec IA". L'assistant IA vous fera une proposition de modèle de données que vous pourrez ensuite adapter à vos besoins.
