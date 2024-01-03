@@ -6,6 +6,8 @@ description: >-
 
 # Rôles et permissions
 
+{% embed url="https://youtu.be/wNrj3Ru2wz8" %}
+
 ## Fonctionnement général
 
 Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont eux mêmes associés à une liste de permissions (Ex: écrire dans le registre, poster une demande d'exercice de droit...). Il existe deux manières d'administrer les rôles associés aux utilisateurs.&#x20;

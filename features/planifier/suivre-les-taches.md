@@ -50,13 +50,9 @@ Le diagramme de vélocité montre l'évolution du nombre de tâches fermés par 
 
 ![Exemple de diagramme de vélocité](<../../.gitbook/assets/image (236).png>)
 
-## Filtrer les tâches
-
 Il est possible de filtrer les tâches par ordre de priorité, tags, départements, types, utilisateurs ou itérations directement depuis les filtres disponible dans chaque onglet.
 
 ![Filtre des tâches](<../../.gitbook/assets/image (163).png>)
-
-## Export des tâches
 
 Pour exporter les tâches, allez dans l'onglet "colonne" ou "tableau" du module "planification", puis cliquez sur la flèche à droite de l'écran, puis sur le bouton "Exportez les données".
 

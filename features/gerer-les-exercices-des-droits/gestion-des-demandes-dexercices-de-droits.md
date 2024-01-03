@@ -8,6 +8,8 @@ description: >-
 
 ## Création d'une demande
 
+{% embed url="https://youtu.be/cZ-xr3f7b-Q" %}
+
 Cliquez sur le bouton "**Créer une demande**"
 
 ![](<../../.gitbook/assets/image (253) (1) (1).png>)
