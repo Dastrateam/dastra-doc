@@ -18,7 +18,11 @@ La gestion d'une demande d'exercice de droit peut être résumée à 4 grandes �
 
 <figure><img src="../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
+Pour plus de détail sur la gestion des demandes d'exercices de droits, voir la page suivante :&#x20;
 
+{% content-ref url="gestion-des-demandes-dexercices-de-droits.md" %}
+[gestion-des-demandes-dexercices-de-droits.md](gestion-des-demandes-dexercices-de-droits.md)
+{% endcontent-ref %}
 
 ## Le registre de demande d'exercice de droits
 
