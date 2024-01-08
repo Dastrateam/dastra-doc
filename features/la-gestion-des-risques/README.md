@@ -32,7 +32,7 @@ Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi 
 * Acteur ou sous-traitant
 * Actif&#x20;
 
-<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption><p>Exemple de visualiation consolidée des risques</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption><p>Exemple de visualisation consolidée des risques</p></figcaption></figure>
 
 ## Aller plus loin
 

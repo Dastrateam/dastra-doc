@@ -30,11 +30,13 @@ Les disques de données sur les serveurs hébergeant des données clients sur le
 
 Les fichiers physiques sont également encryptées statiquement dans le service Azure Storage avec uns système d'encryptage transparent 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard), un des algorithme les plus solide qui est FIPS 140-2 compliant.
 
+L'ensemble des clés de chiffrement est stocké dans un coffre de clés managé par Dastra (incluant de la rotation automatique).
+
 ## Test de pénétration&#x20;
 
 Nous faisons auditer régulièrement notre application par un auditeur tiers indépendant.&#x20;
 
-Le dernier test a été réalisé le 25 janvier 2022 et n'a révélé aucune vulnérabilité critique.
+Le dernier test a été réalisé en septembre 2023 et n'a révélé aucune vulnérabilité critique.
 
 ## **Journaux d'audit d'organisation**
 

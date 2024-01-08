@@ -12,6 +12,14 @@ Avec le RGPD, les citoyens européens sont en mesure de demander à une entrepri
 
 Pour faire cela, l'entreprise ou l'organisation doit mettre en place des procédures permettant de répondre aux demandes d'exercice des droits et d'en apporter la preuve. Cela passe notamment par des étapes à suivre et une documentation dans un registre.&#x20;
 
+## Le processus de gestion d'une demande d'exercice de droit
+
+La gestion d'une demande d'exercice de droit peut être résumée à 4 grandes étapes :
+
+<figure><img src="../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+
+
+
 ## Le registre de demande d'exercice de droits
 
 Dastra vous permet de constituer un registre de demandes d'exercice de droits centralisant toutes les demandes passées, présentes et à venir. Celui-ci est disponible en cliquant dans l'onglet "exercice des droits" dans le bandeau à gauche de l'écran.&#x20;
