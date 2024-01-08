@@ -30,7 +30,7 @@ Notre approche de la protection des données
 
 * **Cartographier vos données personnelles** en créant et en conservant votre dossier de traitement grâce à une interface souple et intuitive, des référentiels, des bibliothèques et un questionnaire, et **constituer, partager** et **exporter** votre registre de traitement.
 
-![](<.gitbook/assets/image (3) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 
@@ -38,7 +38,7 @@ Notre approche de la protection des données
 
 * **Générez un plan d'action, allouez des tâches** et **collaborer avec votre réseau,** pour mieux protéger réellement vos données.
 
-![](<.gitbook/assets/image (5) (1) (1).png>)
+![](<.gitbook/assets/image (5) (1) (1) (1).png>)
 
 * **Implémentez les processus internes** tels que la mise en place de la gestion des exercices de droits, la gestion des consentements de cookie ou la tenue d'un registre des violations de données:
 
