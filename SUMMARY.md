@@ -97,6 +97,7 @@
     * [2. Evaluer](features/la-gestion-des-risques/le-processus-de-gestion-des-risques/2.-evaluer.md)
     * [3. Maîtriser](features/la-gestion-des-risques/le-processus-de-gestion-des-risques/3.-maitriser.md)
     * [4. Contrôler](features/la-gestion-des-risques/le-processus-de-gestion-des-risques/4.-controler.md)
+    * [Récapitulons](features/la-gestion-des-risques/le-processus-de-gestion-des-risques/recapitulons.md)
   * [Comparaison Dastra / eBios RM](features/la-gestion-des-risques/comparaison-dastra-ebios-rm.md)
   * [Associer un risque à un traitement](features/la-gestion-des-risques/risques.md)
   * [Questions fréquentes](features/la-gestion-des-risques/questions-frequentes.md)
