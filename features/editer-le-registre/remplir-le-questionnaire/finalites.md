@@ -33,11 +33,11 @@ Pour chaque finalité, vous devez définir [**la base légale**](https://www.cni
 
 L'ajout des finalités est réalisé à la section 3 du traitement.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Ajout de finalité</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Ajout de finalité</p></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 L'intitulé de la finalité est limité à 120 caractères.&#x20;
 
@@ -112,7 +112,7 @@ Vous pouvez conserver les résultats de ce test en document à l'étape 11. Vous
 
 Dans chaque finalité, vous pouvez ajouter une base légale parmi les 6 fondements ci-dessus.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Sélecteur de base légale</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Sélecteur de base légale</p></figcaption></figure>
 
 Une fois la base sélectionnée, vous pouvez apporter une description. Par exemple, pour préciser les intérêts légitimes ou la disposition légale.&#x20;
 

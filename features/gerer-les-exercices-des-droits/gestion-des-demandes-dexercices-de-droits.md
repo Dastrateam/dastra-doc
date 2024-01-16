@@ -26,7 +26,7 @@ Pour créer une nouvelle demande manuellement directement depuis le registre des
 
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Le registre des demandes de droit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Le registre des demandes de droit</p></figcaption></figure>
 
 {% hint style="info" %}
 Vous pouvez également créer des demandes de droit automatiquement (voir suivant).
@@ -40,7 +40,7 @@ Pour créer une ou plieurs demandes d'exercice de droit via une adresse mail de 
 
 Pour cela, rendez-vous dans les **réglages** de l'espace de travail, puis dans la section "**intégrations**" et enfin cliquez sur "**Adresse mail de collecte**".
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>L'intégration "Adresse mail de collecte" dans Dastra.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>L'intégration "Adresse mail de collecte" dans Dastra.</p></figcaption></figure>
 
 {% hint style="info" %}
 Si cette intégration n'est pas encore installée, installez-la.
@@ -48,7 +48,7 @@ Si cette intégration n'est pas encore installée, installez-la.
 
 Ensuite, cliquez sur le cas d'usage pré-configuré "**Transforme un mail entrant en une demande d'exercice de droits avec les pièces jointes associées**". Une adresse mail sera générée automatiquement. .
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ainsi, chaque email envoyée à cette adresse se transformera automatiquement en une demande d'exercice de droit dans Dastra !
 

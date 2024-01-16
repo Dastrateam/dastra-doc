@@ -50,13 +50,13 @@ Dans ce cas, il est nécessaire d'effectuer certains paramétrages afin de **lir
 Nommez votre tag "DastraConsents" par exemple. Dans le champ nom du cookie (Cookie name), entrez le nom du cookie de consentement (par défaut : **consent-eu**).\
 Pensez à **sélectionner l'option "URI-decode cookie"**
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Configurez ensuite votre trigger de cette façon :&#x20;
 
 Dans ce cas, notre balise se déclenche si la profondeur de scroll dans la page est > 20%. Nous voulons que cette balise ne se déclenche que si le service google analytics a été autorisé par l'utilisateur. Voici comment configurer le déclencheur de la balise.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Dans la partie "Some Pages", si vous souhaitez activer la balise uniquement quand l'utilisation d'un service a été consenti, saisissez la formule **DastraConsents contains "{serviceName}":true** (exemple "crisp":true) sans espace
 
@@ -69,7 +69,7 @@ Si vous souhaitez déclencher la balise dans le cas d'un refus, mettez la formul
 Si vous avez de nombreux déclencheurs différents pour une même balise, il est également tout à fait possible de créer une exception de cette manière.\
 Exemple d'une balise avec plusieurs déclencheurs :&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dans ce cas nous souhaitons ajouter une exception, si la balise google ads (google-ads) n'est pas accepté, nous ne voulons pas que la balise se déclenche .
 
@@ -87,11 +87,11 @@ Si vous souhaitez également ne pas activer la balise par défaut y compris si l
 **DastraConsents Does not contain "google-ads":true**
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cliquez sur "Sauvegarder". Vous devriez avoir ceci :
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enregistrez vos changements et vous devriez constater que vos balises sont bien désactivées sur les pages en question si le consentement n'est pas donné.
 

@@ -9,12 +9,12 @@ description: Découvrez ce qu'est Dastra.
 Nous voulons aider les équipes de protection des données à **sensibiliser** toute leur entreprise et **améliorer l'expérience** du RGPD à l'aide d'une solution  épurée apportant une réponse unique aux différents besoins RGPD des organisations, à travers  :
 
 * Une **interface** rapide, intuitive et ergonomique&#x20;
-* Une **collaboration** fructueuse entre les différents acteurs concernés par la RGPD
+* Une **collaboration** fructueuse entre les différents acteurs concernés par le RGPD
 * Un **gain de temps** dans la gestion au quotidien de la conformité
 * De nouveaux **services** et fonctionnalités de mise en conformité et de pilotage
 * Une approche pédagogique **guidée** permettant de responsabiliser les non-experts pas à pas
 
-Chez Dastra, nous pensons que la protection des données n'est pas uniquement une affaire de juridique, c'est aussi **une affaire de code, d'expertise, de gestion de projet et d'opérationnel.**&#x20;
+Chez Dastra, nous pensons que la protection des données n'est pas uniquement une affaire juridique, c'est aussi **une affaire de code, d'expertise, de gestion de projet et d'opérationnel.**&#x20;
 
 Pour plus d'informations, consultez notre [manifesto](https://www.dastra.eu/fr/mission).
 
@@ -28,29 +28,29 @@ Notre approche de la protection des données
 
 ## Avec Dastra vous pouvez:
 
-* **Cartographier vos données personnelles** en créant et en conservant votre dossier de traitement grâce à une interface souple et intuitive, des référentiels, des bibliothèques et un questionnaire, et **constituer, partager** et **exporter** votre registre de traitement.
+* **Cartographier vos données personnelles** en créant et en conservant votre registre des traitements grâce à une interface souple et intuitive, des référentiels, des bibliothèques et des questionnaires, et **constituer, partager** et **exporter** votre registre de traitement.
 
-![](<.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Module du registre des traitements</p></figcaption></figure>
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 
-![](<.gitbook/assets/image (135).png>)
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Module de gestion des risques</p></figcaption></figure>
 
 * **Générez un plan d'action, allouez des tâches** et **collaborer avec votre réseau,** pour mieux protéger réellement vos données.
 
-![](<.gitbook/assets/image (5) (1) (1) (1).png>)
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Module de gestion des tâches</p></figcaption></figure>
 
-* **Implémentez les processus internes** tels que la mise en place de la gestion des exercices de droits, la gestion des consentements de cookie ou la tenue d'un registre des violations de données:
+* **Implémentez les processus internes** tels que la mise en place de la gestion des exercices de droits, la gestion des consentements aux cookies ou traceurs ou la tenue d'un registre des violations de donnée.
 
-![Le registre des demandes d'exercices de droit](<.gitbook/assets/image (142).png>)
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Module de gestion des droits des personnes</p></figcaption></figure>
 
-![La création d'un widget de collecte des consentements cookies](<.gitbook/assets/image (144).png>)
 
-![Le questionnaire de violation de données](<.gitbook/assets/image (143).png>)
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>Module de gestion des violations de données</p></figcaption></figure>
 
 * **Centralisez la documentation** permettant de répondre à la conformité RGPD.
 
-![Le module de Référentiels, regroupant toutes les données et fichiers de votre espace de travail ](<.gitbook/assets/Capture web\_3-5-2022\_17525\_app.dastra.eu.jpeg>)
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption><p>Module de gestion des fichiers</p></figcaption></figure>
 
 ## Comment faire pour découvrir Dastra ?
 

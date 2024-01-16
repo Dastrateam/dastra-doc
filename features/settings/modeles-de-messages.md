@@ -44,7 +44,7 @@ La création de modèle s'effectue soit à partir des réglages de l'espace de t
 
 Cliquez sur Créer modèle
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (2) (1).png" alt=""><figcaption><p>Interface de création d'un modèle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (2) (1) (1).png" alt=""><figcaption><p>Interface de création d'un modèle</p></figcaption></figure>
 
 N'oubliez pas d'enregistrer votre travail !
 
