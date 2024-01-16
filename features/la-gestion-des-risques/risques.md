@@ -11,7 +11,7 @@ description: >-
 
 Pour ajouter un risque sur un traitement, il faut aller dans l'onglet risques présent sur la page d'édition du traitement.
 
-![](<../../.gitbook/assets/image (252) (1) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -23,7 +23,7 @@ Vous arrivez sur une page d'édition du risque et vous pouvez commencer à rense
 
 Vous pouvez ensuite retrouver tous les risques de votre registre dans le référentiel des risques.
 
-![Détail de l'onglet Risques sur un traitement](<../../.gitbook/assets/image (251) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez aussi attacher un risque à un traitement directement depuis le module de gestion des risques.&#x20;
 
