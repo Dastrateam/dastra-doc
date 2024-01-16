@@ -24,7 +24,7 @@ Voici comment configurer le login Okta en SSO dans Dastra en utilisant le protoc
 
 **Etape 4** : Configurez l'application de la manière suivante en cochant bien la case "**Implicite**"
 
-Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastra.eu/images/logo-dastra-dark.png)
+Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastra.eu/img/press/logodastra.png)
 
 ![](../../../.gitbook/assets/okta-config.png)
 
