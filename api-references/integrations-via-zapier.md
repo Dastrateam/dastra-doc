@@ -75,7 +75,5 @@ Vous êtes maintenant prêt à vous lancer dans le monde de l'automatisation et 
 
 Suivez notre guide pas à pas pour automatiser vos demandes d'exercice de droits:&#x20;
 
-{% embed url="https://www.dastra.eu/fr/article/automatisation-exercice-de-droits/51571" %}
-
-
+{% embed url="https://www.dastra.eu/fr/guide/automatisation-exercice-de-droits/51571" %}
 
