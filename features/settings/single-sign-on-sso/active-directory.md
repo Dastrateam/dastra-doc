@@ -6,6 +6,10 @@ description: >-
 
 # Active Directory
 
+Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Microsoft Entra Id) pas à pas :
+
+{% embed url="https://www.youtube.com/embed/SUC_J489wjI?si=VPoD5nAxG_i1-AEp" %}
+
 ## **Configuration de l'application dans le portail azure**
 
 * Rendez-vous dans le portail Microsoft Azure : [https://portal.azure.com](https://portal.azure.com)
