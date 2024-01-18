@@ -4,9 +4,9 @@ description: >-
   l'Active Directory de Microsoft en utilisant le protocole Saml2P
 ---
 
-# Active Directory
+# Active Directory (MS Entra)
 
-Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Microsoft Entra Id) pas à pas :
+Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Microsoft Entra) pas à pas :
 
 {% embed url="https://www.youtube.com/embed/SUC_J489wjI?si=VPoD5nAxG_i1-AEp" %}
 
