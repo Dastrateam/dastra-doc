@@ -16,12 +16,12 @@ Cette solution de taggage est très efficace pour implémenter le consentement e
 
 Les évènements suivants sont automatiquement envoyés au dataLayer de google :
 
-| Nom                               | Signification                                                                              |
-| --------------------------------- | ------------------------------------------------------------------------------------------ |
-| dastra:consent:{your-vendor-name} | Cet évènement est envoyé quand l'utilisateur a accepté les cookies de ce vendeur           |
-| dastra:refused:{your-vendor-name} | Cet évènement est déclenché quand l'utilisateur n'a pas consenti aux cookies de ce vendeur |
+| Nom                               | Signification                                                                                  |
+| --------------------------------- | ---------------------------------------------------------------------------------------------- |
+| dastra:consent:{your-vendor-name} | Cet évènement est envoyé quand l'utilisateur a accepté les cookies de ce fournisseur           |
+| dastra:refused:{your-vendor-name} | Cet évènement est déclenché quand l'utilisateur n'a pas consenti aux cookies de ce fournisseur |
 
-Vous pouvez par conséquent déclencher les balises correspondant aux différents vendeurs configurés dans le widget en utilisant ces deux évènements
+Vous pouvez par conséquent déclencher les balises correspondant aux différents fournisseurs configurés dans le widget en utilisant ces deux évènements.
 
 ## Exemple
 
