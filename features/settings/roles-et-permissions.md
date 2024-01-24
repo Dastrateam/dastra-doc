@@ -19,10 +19,12 @@ Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont
 
 Pour créez vos propres rôles associés aux permissions, rendez-vous sur [cette page](https://app.dastra.eu/general-settings/roles) :
 
-Vous pouvez créer un "nouveau rôle" personnalisé en cliquant sur le bouton "Nouveau rôle"
+Vous pouvez créer un "nouveau rôle" personnalisé en cliquant sur le bouton "Ajouter un rôle"
 
-![](<../../.gitbook/assets/image (89).png>)
+<figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/image (90).png>)
+Il est possible de sélectionner les cases associées aux permissions.&#x20;
 
-Une fois votre rôle personnalisé créé, vous pouvez l'affecter à n'importe quel utilisateur de l'entité ou de l'organisation.
+<figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption><p>Création d'un rôle de gestion des tâches</p></figcaption></figure>
+
+Une fois votre rôle personnalisé créé, vous pouvez l'affecter à n'importe quel utilisateur de l'espace de travail au sein de votre organisation.
