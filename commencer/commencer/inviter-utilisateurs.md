@@ -107,7 +107,13 @@ Attention, les rôles doivent être créés préalablement.
 
 **S'agissant des identifiants des équipes :**&#x20;
 
-Il faut faire la démarche que pour les rôles.&#x20;
+Il faut faire la démarche que pour les rôles. Les équipes doivent être identifiées par des numéros d'identifiants qui sont récupérés dans la console de développement de votre navigateur en ouvrant une équipe dans Dastra (via le bouton "Modifier").
+
+<figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
+
+Dans l'image suivante, l'identifiant de l'équipe RH est 2126.
+
+<figure><img src="../../.gitbook/assets/image (288).png" alt=""><figcaption><p>Page de la console</p></figcaption></figure>
 
 NB : les équipes ne sont pas obligatoires dans Dastra.
 
