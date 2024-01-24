@@ -83,5 +83,10 @@ Vous pouvez obtenir la liste des actifs répartis par unité organisationnelle v
 
 Vous pouvez utiliser l'export des traitements au format excel pour cela. En filtrant les traitements par UO et en exportant les traitements sélectionnés, vous pouvez choisir d'exporter uniquement le champ Actifs dans l'export. Ainsi vous avez l'export des actifs par UO. Vous pouvez aussi choisir d'exporter les UO et les actifs uniquement pour avoir tous les actifs de toutes les UO. En utilisant la vue cartographie du registre, vous trouvez également cette information en visualisation graphique.
 
+## Comment dupliquer un registre dans un autre espace de travail ?
 
+Vous pouvez dupliquer un registre et les traitements associés de plusieurs façons :&#x20;
+
+* soit en[ exportant et réimportant](exporter-importer-le-registre.md) les traitements au format JSON
+* soit en allant dans l'espace de travail cible et créer les traitements à partir de la bibliothèque. Vous pourrez alors changer la source de la bibliothèque et choisir l'espace de travail d'origine du registre.
 
