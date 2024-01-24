@@ -10,10 +10,10 @@ description: >-
 
 ## Fonctionnement général
 
-Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont eux mêmes associés à une liste de permissions (Ex: écrire dans le registre, poster une demande d'exercice de droit...). Il existe deux manières d'administrer les rôles associés aux utilisateurs.&#x20;
+Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont eux mêmes associés à une liste de permissions (ex: écrire dans le registre, créer un questionnaire...). Il existe deux manières d'administrer les rôles associés aux utilisateurs.&#x20;
 
 * Si vous êtes propriétaire, vous pouvez utiliser[ cette interface de gestion de comptes](https://app.dastra.eu/general-settings/users)
-* Si vous avez le rôle d'administrateur d'entité, vous pouvez gérer les rôles et permissions des utilisateurs appartenant à votre entité en utilisant [cette interface](https://app.dastra.eu/general-settings/roles).&#x20;
+* Si vous avez le rôle d'administrateur d'espace de travail, vous pouvez gérer les rôles et permissions des utilisateurs appartenant à votre espace de travail en utilisant [cette interface](https://app.dastra.eu/workspace/573/settings/users).&#x20;
 
 ## Créez vos propres rôles
 
