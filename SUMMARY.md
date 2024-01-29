@@ -147,6 +147,8 @@
 * [Gestion de fichiers](features/gestion-de-fichiers/README.md)
   * [Guide d'utilisation](features/gestion-de-fichiers/guide-dutilisation.md)
   * [Permissions et droits d'accès](features/gestion-de-fichiers/permissions-et-droits-dacces.md)
+* [Rapports personnalisés](features/custom-reporting/README.md)
+  * [Intégration dans les outils d'analyse de données (BI)](features/custom-reporting/bi-tools.md)
 * [Configuration avancée](features/settings/README.md)
   * [Rôles et permissions](features/settings/roles-et-permissions.md)
   * [Single Sign On (SSO)](features/settings/single-sign-on-sso/README.md)
