@@ -6,7 +6,7 @@ description: Dastra s'intègre avec la plateforme d'automatisation Zapier
 
 Mettez en place des connecteurs entre Dastra et vos autres applications favorites pour automatiser vos flux de travail et gagner du temps.
 
-![](<../.gitbook/assets/connectors (1).svg>)
+![](<../../.gitbook/assets/connectors (1).svg>)
 
 {% hint style="info" %}
 [Accéder à la page Dastra du catalogue Zapier](https://zapier.com/apps/dastra/integrations)
@@ -76,4 +76,6 @@ Vous êtes maintenant prêt à vous lancer dans le monde de l'automatisation et 
 Suivez notre guide pas à pas pour automatiser vos demandes d'exercice de droits:&#x20;
 
 {% embed url="https://www.dastra.eu/fr/guide/automatisation-exercice-de-droits/51571" %}
+
+
 
