@@ -13,6 +13,8 @@ Nous externalisons l'hébergement des données de la plateforme auprès de Micro
 
 Les lieux de stockage des données sont situés à Paris et Marseille en France. Une redondance entre les données est effectuée entre les deux sites.&#x20;
 
+Une sauvegarde est réalisée dans le data center d'Amsterdam.&#x20;
+
 ## **Authentification à deux facteurs**
 
 Il est possible pour tous les propriétaires d'organisation de forcer l'utilisation de l'authentification à deux facteurs. L'authentification à 2 facteurs fonctionne en utilisant TOTP.\
