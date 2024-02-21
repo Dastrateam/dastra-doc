@@ -4,7 +4,7 @@ description: >-
   générer automatiquement des fiches de traitement
 ---
 
-# 😇 Assistant IA (beta)
+# Assistant IA
 
 ## Quels cas d'usage avec Dastra ?&#x20;
 

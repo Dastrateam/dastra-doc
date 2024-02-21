@@ -50,7 +50,7 @@
   * [Importer vos données (Excel, Csv)](features/generalites/importer-vos-donnees-excel-csv.md)
   * [Gestion des tags](features/generalites/tags.md)
   * [Champs personnalisés](features/generalites/custom-fields.md)
-  * [😇 Assistant IA (beta)](features/generalites/ai-assistant.md)
+  * [Assistant IA](features/generalites/ai-assistant.md)
   * [Modèles email](features/generalites/modeles-email.md)
 * [Cartographie des données](features/cartography/README.md)
   * [Référentiels](features/cartography/referentials.md)
