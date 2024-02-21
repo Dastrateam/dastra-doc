@@ -27,6 +27,20 @@ Gagnez en rapidité et laissez l'IA préremplir ces informations pour vous.&#x20
 
 {% embed url="https://www.youtube-nocookie.com/embed/6yBxTC2CrMY?si=3IFPJu3f9Ac3qDpK" %}
 
+### **Générer des jeux de données**
+
+Générez rapidement des jeux de données au format attendu par Dastra à partir d'une description simple.&#x20;
+
+Pour générer un jeu de données avec IA :&#x20;
+
+1. Allez sur [la page des jeux de données](https://app.dastra.eu/workspace/0/referentials/data-retention-rules)
+2. Cliquez sur **Créer un jeu de données > Créer avec assistant IA**
+3. Renseignez dans le champ texte une description courte de votre jeu de données
+4. Cliquez sur **Suivant,** patientez quelques instants le temps que votre jeu de données soit créé
+5. Sur l'écran de synthèse du jeu de données, appliquez les correctifs éventuels et cliquez sur **Créer**
+
+Une fois le jeu de données généré ? Editez le traitement une fois créé directement.
+
 ## Comment utiliser l'IA générative de Dastra ?
 
 Vous pouvez utiliser l'assistant IA pour générer des traitements de données ou des actifs. Pour cela cliquez sur le bouton "Créer un traitement" et sur "générer avec IA". L'assistant IA vous fera une proposition de modèle de données que vous pourrez ensuite adapter à vos besoins.
@@ -41,7 +55,7 @@ Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espa
 
 ## Comment ça marche ?
 
-Dastra utilise le modèle d'**IA OpenAI GPT 3.5 boost** (Modèle de [ChatGPT](https://chat.openai.com/)) fourni par [le service OpenAI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Le modèle utilisé est pré-entrainé. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.&#x20;
+Dastra utilise le modèle d'**IA OpenAI GPT 4.0** (Modèle de [ChatGPT](https://chat.openai.com/)) fourni par [le service OpenAI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Le modèle utilisé est pré-entrainé. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.&#x20;
 
 Dastra utilise simplement la puissance de l'IA générative de GPT pour générer du contenu à partir de simple requête textuelle. Dastra a simplement fourni le modèle de document attendu (JSON) et un exemple de traitement de données (issu de notre bibliothèque) que nous souhaitons avoir et le modèle d'IA s'occupe du reste.
 
