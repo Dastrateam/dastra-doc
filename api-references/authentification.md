@@ -16,6 +16,17 @@ Si vous souhaitez utiliser l'authentification OAuth2 en mode "authorization\_cod
 
 ![](<../.gitbook/assets/image (249) (1) (1) (1).png>)
 
+## Clé d'api (X-API-Key)&#x20;
+
+Pour vous authentifier, la manière la plus simple est d'utiliser une entête HTTP **X-API-Key** contenant la clé privée de votre clé d'API, comme dans l'exemple ci-dessous :
+
+```bash
+curl -X 'GET' \
+  'https://api.dastra.eu/me' \
+  -H 'accept: */*' \
+  -H 'X-API-Key: <your private key here>'
+```
+
 ## OAuth2 "Authorization code" flow
 
 ### Authorization
