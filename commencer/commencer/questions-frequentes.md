@@ -27,3 +27,9 @@ Oui il est possible de les importer en allant dans le menu sous le bouton créer
 Il n'est pas possible de modifier le logo de l'organisation puisqu'il n'y en a pas. Le logo qui s'affiche au dessus du nom de l'organisation en haut à droite est l'image associée au compte utilisateur qui se paramètre au niveau des paramètres du profil utilisateur.
 
 En plus de cette image, le logo de l'espace de travail est également modifiable dans les réglages de l'espace de travail.
+
+## Comment changer de DPO ?
+
+Pour changer de DPO, c'est très simple ! Il suffit de se rendre dans la gestion des unités organisationnelles et sélectionner l'entité pour laquelle on va changer le DPO.&#x20;
+
+Ensuite, [sélectionner ](designer-un-dpo.md#ajouter-un-dpo-dans-dastra)l'acteur qui sera désigné DPO.&#x20;

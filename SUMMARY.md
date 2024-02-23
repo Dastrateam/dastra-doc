@@ -41,6 +41,7 @@
   * [L'assistant dastronaute](commencer/le-support/lassistant-dastronaute.md)
   * [L'aide en ligne](commencer/le-support/laide-en-ligne.md)
   * [Faire une demande de support](commencer/le-support/faire-une-demande-de-support.md)
+* [Nos tutos vidéo](commencer/nos-tutos-video.md)
 
 ## ⚙ Les fonctionnalités <a href="#features" id="features"></a>
 
