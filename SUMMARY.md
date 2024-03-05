@@ -19,7 +19,7 @@
   * [Evaluation d'un risque](rappels-utiles/la-gestion-des-risques/evaluation-dun-risque.md)
   * [Risques sous-traitants](rappels-utiles/la-gestion-des-risques/risques-sous-traitants.md)
 
-## 👨💻 Bien commencer <a href="#commencer" id="commencer"></a>
+## 👨‍💻 Bien commencer <a href="#commencer" id="commencer"></a>
 
 * [Mise en place](commencer/commencer/README.md)
   * [Créer et paramétrer un espace de travail](commencer/commencer/espace-de-travail.md)
@@ -43,7 +43,7 @@
   * [Faire une demande de support](commencer/le-support/faire-une-demande-de-support.md)
 * [Nos tutos vidéo](commencer/nos-tutos-video.md)
 
-## ⚙ Les fonctionnalités <a href="#features" id="features"></a>
+## ⚙️ Les fonctionnalités <a href="#features" id="features"></a>
 
 * [Tableau de bord](features/le-tableau-de-bord.md)
 * [Généralités](features/generalites/README.md)
@@ -53,6 +53,7 @@
   * [Champs personnalisés](features/generalites/custom-fields.md)
   * [Assistant IA](features/generalites/ai-assistant.md)
   * [Modèles email](features/generalites/modeles-email.md)
+  * [😇 Foire aux questions](features/generalites/foire-aux-questions.md)
 * [Cartographie des données](features/cartography/README.md)
   * [Référentiels](features/cartography/referentials.md)
 * [Registre des traitements](features/editer-le-registre/README.md)
@@ -180,7 +181,7 @@
 * [Intégrations via Zapier](api-references/integrations-via-zapier/README.md)
   * [Questions fréquentes](api-references/integrations-via-zapier/questions-frequentes.md)
 
-## 🛡 La sécurité <a href="#security" id="security"></a>
+## 🛡️ La sécurité <a href="#security" id="security"></a>
 
 * [Sécurité chez Dastra](security/general.md)
 * [Authentification forte](security/mfa.md)
