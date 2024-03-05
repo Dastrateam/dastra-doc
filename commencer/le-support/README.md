@@ -4,6 +4,10 @@ description: Apprenez à utiliser le support proposé par Dastra.
 
 # Support
 
+{% embed url="https://youtu.be/IYzuJwCD9tw" %}
+
+
+
 Dans Dastra et au-delà de la présente documentation, le support est accessible de plusieurs manières différentes : l'assistant dastronaute, l'aide en ligne ou le formulaire de demande de support.
 
 ### L'assistant dastronaute

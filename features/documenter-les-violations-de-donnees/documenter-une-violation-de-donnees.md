@@ -17,6 +17,10 @@ En cliquant sur le bouton "Ajouter une violation de données", une fenêtre appa
 
 ![Les étapes de la documentation de la violation](<../../.gitbook/assets/image (172).png>)
 
+
+
+{% embed url="https://youtu.be/59bysJxvs5M" %}
+
 ### Import / export du registre des violations de données
 
 L'ensemble du registre des violations de données est importable et exportable. Pour importer une violation, cliquez sur l'icône de flèche à côté du bouton "ajouter une violation de données".
@@ -26,3 +30,9 @@ L'ensemble du registre des violations de données est importable et exportable. 
 Un fenêtre apparaît avec un bouton "import". Cliquez dessus, télécharger le modèle de registre puis suivez les instructions pour importer les violations dans Dastra. Une fois importée, la violation sera directement disponible dans le registre de violations de données.
 
 ![Fenêtre d'import de registre de violations de données](<../../.gitbook/assets/image (173).png>)
+
+### Comment faire une analyse de risque de la violation de données ?
+
+
+
+{% embed url="https://youtu.be/r47gMaPJJog" %}

@@ -4,6 +4,8 @@ description: Fonctionnement des modèles de messages
 
 # Modèles de messages
 
+{% embed url="https://youtu.be/3UtQuceFXqo" %}
+
 ## Personnalisation des modèles de messages
 
 

@@ -4,9 +4,7 @@ description: Apprenez à créer et paramétrer des entités et des départements
 
 # Créer et paramétrer les unités organisationnelles
 
-{% embed url="https://www.youtube.com/watch?v=RCLIWokRmAA" %}
-Gérer les droits d'accès par UO
-{% endembed %}
+{% embed url="https://youtu.be/WPSzbYtu3j4" %}
 
 ### Introduction
 

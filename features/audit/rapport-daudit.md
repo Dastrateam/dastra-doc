@@ -4,6 +4,12 @@ description: Apprenez à partager un rapport d'audit ou un PIA.
 
 # Partager un rapport d'audit ou PIA
 
+
+
+{% embed url="https://youtu.be/hCupYPRbf2U" %}
+
+
+
 Une fois les réponses obtenues, vous pouvez consulter, valider, publier, revoir exporter ou archiver votre rapport d'audit.
 
 ![Exemple de rapport d'audit](<../../.gitbook/assets/image (141).png>)

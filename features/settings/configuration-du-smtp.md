@@ -6,6 +6,10 @@ description: >-
 
 # Configuration du SMTP
 
+
+
+{% embed url="https://youtu.be/We93kT_KrJA" %}
+
 ## Principe de fonctionnement
 
 Par défaut, Dastra route un nombre important de notifications par email pour les services suivants :&#x20;

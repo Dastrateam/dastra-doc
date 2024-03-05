@@ -6,7 +6,7 @@ description: Apprenez à planifier un questionnaire avec Dastra.
 
 ## La Planification d'une campagne
 
-{% embed url="https://youtu.be/FIKogyIxHLU" %}
+{% embed url="https://youtu.be/YGU3yPRtQok" %}
 
 Une fois le modèle de questionnaire créé et personnalisé, lancez une campagne en cliquant sur le bouton "Planifier un questionnaire".&#x20;
 
@@ -36,3 +36,15 @@ Ensuite, lorsque vous planifierez votre audit, une nouvelle case "Objet lié à 
 {% hint style="info" %}
 Vous ne pouvez lier un questionnaire qu'à un seul objet dans Dastra. C'est une limitation connue
 {% endhint %}
+
+## Comment générer un plan d'action à partir d'un questionnaire ?
+
+
+
+{% embed url="https://youtu.be/hPeM4mHOzww" %}
+
+## Comment valider un questionnaire ?
+
+
+
+{% embed url="https://youtu.be/caEBTQTV2Yo" %}

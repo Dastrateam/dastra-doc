@@ -82,6 +82,14 @@ Si vous souhaitez apprendre à partager le registre, cliquez ici :
 [partager-le-registre.md](partager-le-registre.md)
 {% endcontent-ref %}
 
+##
+
+## Comment effectuer des actions sur plusieurs traitements ?
+
+
+
+{% embed url="https://youtu.be/0BQDHzyFl-Y" %}
+
 ## Pour aller plus loin
 
 Retrouvez notre webinar dédié au registre des traitements.&#x20;

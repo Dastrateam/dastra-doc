@@ -41,7 +41,6 @@
   * [L'assistant dastronaute](commencer/le-support/lassistant-dastronaute.md)
   * [L'aide en ligne](commencer/le-support/laide-en-ligne.md)
   * [Faire une demande de support](commencer/le-support/faire-une-demande-de-support.md)
-* [Nos tutos vidéo](commencer/nos-tutos-video.md)
 
 ## ⚙️ Les fonctionnalités <a href="#features" id="features"></a>
 
@@ -67,8 +66,8 @@
     * [Général](features/editer-le-registre/remplir-le-questionnaire/generalites.md)
     * [Parties prenantes](features/editer-le-registre/remplir-le-questionnaire/acteurs.md)
     * [Finalités](features/editer-le-registre/remplir-le-questionnaire/finalites.md)
-    * [Données et conservation](features/editer-le-registre/remplir-le-questionnaire/categorie-de-donnees.md)
     * [Actifs](features/editer-le-registre/remplir-le-questionnaire/applications.md)
+    * [Données et conservation](features/editer-le-registre/remplir-le-questionnaire/categorie-de-donnees.md)
     * [Personnes concernées](features/editer-le-registre/remplir-le-questionnaire/personnes-concernees.md)
     * [Droits des personnes](features/editer-le-registre/remplir-le-questionnaire/droits-des-personnes.md)
     * [Destinataires](features/editer-le-registre/remplir-le-questionnaire/destinataires/README.md)
@@ -76,6 +75,7 @@
     * [Mesures de sécurité](features/editer-le-registre/remplir-le-questionnaire/mesures-de-securite.md)
     * [Analyse d'impact](features/editer-le-registre/remplir-le-questionnaire/analyse-dimpact.md)
     * [Documents](features/editer-le-registre/remplir-le-questionnaire/documents.md)
+    * [Récapitulatif](features/editer-le-registre/remplir-le-questionnaire/recapitulatif.md)
   * [Créer une relation entre les traitements](features/editer-le-registre/creer-une-relation-entre-les-traitements.md)
   * [Fraicheur des traitements](features/editer-le-registre/fraicheur-des-traitements.md)
   * [Partager le registre](features/editer-le-registre/partager-le-registre.md)

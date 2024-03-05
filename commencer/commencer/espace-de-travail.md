@@ -6,6 +6,10 @@ description: Apprenez à créer votre premier espace de travail dans Dastra.
 
 
 
+{% embed url="https://youtu.be/a7sW-B_TeZ0" %}
+
+
+
 {% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=1" %}
 
 ## Connectez-vous à Dastra.eu&#x20;
@@ -29,6 +33,10 @@ Vous avez besoin d'un espace de travail pour gérer votre entité. Vous pouvez c
 ![](<../../.gitbook/assets/image (181).png>)
 
 Renseignez les champs, puis cliquez sur "Continuer".
+
+
+
+{% embed url="https://youtu.be/94K9ERenlo8" %}
 
 ### Invitez les premiers utilisateurs
 
@@ -87,6 +95,12 @@ Vous pouvez également rajouter des sous-départements, en cliquant sur le bouto
 ![La vision "Organigramme" générée dans Dastra.](<../../.gitbook/assets/image (128).png>)
 
 Bravo, votre espace de travail dans Dastra est créé et paramétré !&#x20;
+
+
+
+{% embed url="https://youtu.be/QbH80Xp5c90" %}
+
+
 
 Suivez le tutoriel ci-dessous ou commencez à explorer Dastra par vous-même.&#x20;
 

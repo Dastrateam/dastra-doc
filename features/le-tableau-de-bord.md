@@ -4,6 +4,8 @@ description: Apprenez à utiliser le tableau de bord de Dastra.
 
 # Tableau de bord
 
+{% embed url="https://youtu.be/PnPa70sRGF8" %}
+
 ## Introduction
 
 Le tableau de bord de Dastra est la première page auquel vous accédez au moment d'entrer dans votre espace de travail, et constitue une synthèse de votre conformité RGPD.

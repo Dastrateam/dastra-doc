@@ -12,6 +12,12 @@ Dans Dastra, une tâche correspond à un travail qui doit être exécuté.
 
 ## Création d'une tâche&#x20;
 
+
+
+{% embed url="https://youtu.be/ARvp9PGVnAE" %}
+
+
+
 Pour créer une tâche, vous avez deux possibilités :
 
 * Soit vous créez une tâche directement dans le plan d'action

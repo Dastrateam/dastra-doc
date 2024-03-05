@@ -1,6 +1,6 @@
 # Mesures de sécurité
 
-{% embed url="https://www.youtube.com/watch?v=Mopgrsn2uXo&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=10" %}
+{% embed url="https://youtu.be/r6QGbq1tZ20" %}
 
 L’[**article 30 1. g) du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4) exige d’inscrire dans le registre « _dans la mesure du possible, une description générale des mesures de sécurité techniques et organisationnelles visées à l'_[_**article 32, paragraphe 1**_](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article32) ».
 

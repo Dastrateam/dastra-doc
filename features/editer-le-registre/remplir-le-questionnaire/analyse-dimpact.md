@@ -1,6 +1,6 @@
 # Analyse d'impact
 
-{% embed url="https://www.youtube.com/watch?v=VUL2T_SILSg&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=11" %}
+{% embed url="https://youtu.be/We7jZ2DpmLk" %}
 
 Cette étape vous permettra d’évaluer de manière simple si votre traitement doit faire l’objet d’une analyse d’impact sur la protection des données (AIPD ou  PIA en anglais) prévue par l’[**article 35 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article35).&#x20;
 

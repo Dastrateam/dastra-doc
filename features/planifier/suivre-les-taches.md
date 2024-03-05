@@ -64,6 +64,10 @@ Une fenêtre apparaît avec un choix de formats possibles à l'export. Cliquez s
 
 Ca y est, vos tâches sont exportées!
 
+
+
+{% embed url="https://youtu.be/MVWJev04V8Y" %}
+
 ## Aller plus loin
 
 {% content-ref url="synchroniser-avec-dautres-calendriers.md" %}

@@ -6,7 +6,7 @@ description: >-
 
 # Gestion des demandes d'exercices de droits
 
-
+{% embed url="https://youtu.be/ZNY5oz9xJVo" %}
 
 ## Création d'une demande de droit&#x20;
 
@@ -20,7 +20,7 @@ La création d'une demande de droit peut être effectuée de 3 manières différ
 
 
 
-{% embed url="https://youtu.be/cZ-xr3f7b-Q" %}
+{% embed url="https://youtu.be/UsTkoYcqYkI" %}
 
 Pour créer une nouvelle demande manuellement directement depuis le registre des demandes d'exercice des droits, cliquez sur le module 'Exercices des droits" puis le bouton "**Créer une demande**"
 
@@ -35,6 +35,10 @@ Vous pouvez également créer des demandes de droit automatiquement (voir suivan
 
 
 ### Création d'une demande de doit via une adresse mail de collecte
+
+
+
+{% embed url="https://youtu.be/Lxhzm7wjFwk" %}
 
 Pour créer une ou plieurs demandes d'exercice de droit via une adresse mail de collecte dans Dastra, il faut d'abord activer l'intégration "adresse email de collecte".&#x20;
 
@@ -69,6 +73,10 @@ Pour créer une demande de droit automatiquement via un formulaire de collecte d
 
 
 ## Import / Export des demandes
+
+
+
+{% embed url="https://youtu.be/31AMZz-DMm8" %}
 
 Cliquez sur le menu en haut à droite et sur le bouton "Importer"
 

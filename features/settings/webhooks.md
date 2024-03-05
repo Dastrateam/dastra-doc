@@ -4,6 +4,10 @@ description: Vous saurez tout sur l'intégration de webhooks dans Dastra
 
 # Webhooks
 
+
+
+{% embed url="https://youtu.be/gqwGui1ua7Y" %}
+
 ## Concept 👓
 
 Pour faire simple, les webhooks permettent de **déclencher une action** suite à un événement. Ils sont généralement utilisés pour faire communiquer des systèmes. C’est la façon la plus simple de recevoir une alerte lorsque quelque chose se produit dans Dastra. L'objectif est de notifier des applications tierces (API, CRM, Fonctions serverless...) en temps réel.

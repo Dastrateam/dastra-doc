@@ -6,7 +6,7 @@ description: >-
 
 # Données et conservation
 
-{% embed url="https://www.youtube.com/watch?v=BJSynYF0aDw&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=6" %}
+{% embed url="https://youtu.be/VEeICwrm3pg" %}
 
 [**L’article 30 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4) exige également l’inscription des catégories de données traitées.
 

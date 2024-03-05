@@ -28,13 +28,11 @@ Pour en savoir plus sur comment implémenter un widget d'exercice des droits sur
 
 
 
-## Configurer un widget d'exercice des droits
+## Configurer un widget de collecte des demandes de droit.
 
 
 
-Voici un tutoriel vidéo vous permettant de suivre les étapes de configuration d'un widget d'exercice de droits.
+Voici un tutoriel vidéo vous permettant de suivre les étapes de mise en place d'un widget de collecte des demandes de droit.
 
-{% embed url="https://www.youtube-nocookie.com/embed/4B-ZtCuefgY" %}
-Tutoriel : configurer un widget d'exercice de droits
-{% endembed %}
+{% embed url="https://youtu.be/P1Z4hvmpbSw" %}
 

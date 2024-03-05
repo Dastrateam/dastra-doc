@@ -6,7 +6,9 @@ description: >-
 
 # Cartographie des données
 
-#### Tout commence par une cartographie des donnnées <a href="#0-label" id="0-label"></a>
+{% embed url="https://youtu.be/Cl8aBeX68s4" %}
+
+#### Tout commence par une cartographie des donnnées <a href="#id-0-label" id="id-0-label"></a>
 
 Avant de vous lancer dans la constitution de vos fiches de traitement, nous vous recommandons de cartographier le plus précisémment possible les données de l'entreprise. Le schéma ci-dessous vous présente la structure de la cartographie que vous pouvez mettre en place.
 
@@ -22,3 +24,13 @@ Pour inventorier l'ensemble des données personnelles de votre SI, voici la proc
 Cette cartographie rendra beaucoup plus aisée la constitution de fiches de traitement en partant de la réalité de vos données.
 
 Vous ne souhaitez pas faire cette inventaire ou vous estimez que les logiciels que vous utilisez sont standards ? Nous avons tout prévu, vous pouvez créer votre référentiel d'actif à l'aide de notre bibliothèque de modèles prédéfinis contenant les actifs standards du marché (Salesforce, Jira...).
+
+
+
+## Établissez votre liste de mesures de sécurité&#x20;
+
+{% embed url="https://youtu.be/5gHAl_8Tdv4" %}
+
+## Comment gérer ses sous-traitants ?
+
+{% embed url="https://youtu.be/VATg9fGMeU0" %}

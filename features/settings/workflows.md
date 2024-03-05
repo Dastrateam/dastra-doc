@@ -12,6 +12,12 @@ Ainsi, vous pouvez décliner votre procédure de manière très opérationnelle 
 
 ## Comment personnaliser les étapes de workflow ?
 
+
+
+{% embed url="https://youtu.be/rIPJUY3vylc" %}
+
+
+
 Cliquez dans "Réglages" puis "Déroulement du processus"&#x20;
 
 

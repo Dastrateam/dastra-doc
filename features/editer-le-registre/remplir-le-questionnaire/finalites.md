@@ -4,7 +4,7 @@ description: Documentez les finalités de votre traitement et la base légale as
 
 # Finalités
 
-{% embed url="https://www.youtube.com/watch?v=CnSRO2N-NOk&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=5" %}
+{% embed url="https://youtu.be/JFiY1ydSiDg" %}
 
 ## Finalités d'un traitement
 

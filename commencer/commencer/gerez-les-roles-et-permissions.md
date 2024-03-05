@@ -42,6 +42,12 @@ Il est néanmoins possible de créer des rôles sur mesure, potentiellement plus
 
 ### Créer un rôle personnalisé
 
+
+
+{% embed url="https://youtu.be/zdUm7SQ3mLY" %}
+
+
+
 Pour créer un rôle personnalisé, il faut être propriétaire de l'organisation. Il suffit de cliquer sur l'icône du profil en haut à droite de l'écran,  puis de cliquer sur l'onglet "Configuration" dans la liste déroulante.
 
 ![](<../../.gitbook/assets/image (133).png>)

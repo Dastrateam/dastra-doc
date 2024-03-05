@@ -7,7 +7,7 @@ description: >-
 
 # Actifs
 
-{% embed url="https://www.youtube.com/watch?v=T8ipK2jsVAw&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=7" %}
+{% embed url="https://youtu.be/cDB0qfqGaqU" %}
 
 Il s'agit ici de renseigner les applications, logiciels ou autre qui servent de **supports aux données personnelles**.
 

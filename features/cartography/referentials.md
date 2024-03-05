@@ -19,4 +19,12 @@ Dans le but de réduire les erreurs de saisies, le registre Dastra vous permet d
 * **Clients** (Registre en tant que sous traitant uniquement)
 * **Règles de conservation** des données (Avec le dataset et les types de données associé)
 * **Mesures de sécurité**
+*
 
+## Générer un référentiel de données avec Dastra
+
+{% embed url="https://youtu.be/7Ul_agu6wLc" %}
+
+## Comment filtrer les référentiels ?
+
+{% embed url="https://youtu.be/q3dvGcBr6ZA" %}

@@ -1,6 +1,6 @@
 # Documents
 
-{% embed url="https://www.youtube.com/watch?v=pAg5LlfWC5s&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=12" %}
+{% embed url="https://youtu.be/MoVRO4pSrkc" %}
 
 L’exigence de documentation découle du principe de responsabilité (accountability) rappelé à l’[**article 24 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4).&#x20;
 

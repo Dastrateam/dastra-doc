@@ -10,8 +10,6 @@ description: >-
 
 L'application Dastra vous accompagne à chaque étape du processus de création d'un traitement, tout en restant autonome. Bénéficiez de conseils et devenez conforme aux exigences du RGPD.
 
-Suivez notre série de tutoriels vidéos à ce sujet :&#x20;
-
 {% embed url="https://www.youtube.com/embed/videoseries?list=PL-EvtNdEiDxEzGBBTfGHy25vS6COmcgeQ&si=q8iJKz0VjemfjzbO" %}
 
 ## Qu'est-ce que le questionnaire Dastra ?&#x20;
@@ -92,6 +90,10 @@ Les 12 étapes sont:&#x20;
 
 * **Récapitulatif -** synthèse de ce qui précède.&#x20;
 
+{% content-ref url="recapitulatif.md" %}
+[recapitulatif.md](recapitulatif.md)
+{% endcontent-ref %}
+
 Une fois que vous avez saisi les informations dont vous disposez, vous pouvez commencer à faire le point sur ce qui vous reste à faire.
 
 {% content-ref url="../../planifier/" %}
@@ -100,7 +102,19 @@ Une fois que vous avez saisi les informations dont vous disposez, vous pouvez co
 
 
 
+## Collaborer efficacement sur les traitements
+
+
+
+{% embed url="https://youtu.be/pz61gKChilY" %}
+
 ## Les indices sur les fiches de traitement
+
+
+
+{% embed url="https://youtu.be/QAmXR4y2RYU" %}
+
+
 
 Le questionnaire n'est pas le seul élément de guide compris dans l'établissement des fiches de traitement.\
 Effectivement, vous retrouverez des indices vous permettant d'évaluer notamment l'avancée et la qualité de votre fiche.&#x20;

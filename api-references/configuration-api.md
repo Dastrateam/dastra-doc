@@ -1,5 +1,7 @@
 # Configuration API
 
+{% embed url="https://youtu.be/Bl-T-slTyiQ" %}
+
 ### Configurer des API dans Dastra&#x20;
 
 API signifie _**application programming interface**_ ou « interface de programmation d’application » en français.&#x20;
