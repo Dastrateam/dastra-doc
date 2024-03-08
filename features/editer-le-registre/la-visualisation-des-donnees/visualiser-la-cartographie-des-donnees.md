@@ -34,8 +34,6 @@ Une barre de recherche permet également des faire des filtres additionnels.
 
 
 
-{% embed url="https://youtu.be/tgYM6-wNKtc" %}
-
 ## Aller plus loin
 
 {% content-ref url="visualiser-la-carte-des-transferts.md" %}
