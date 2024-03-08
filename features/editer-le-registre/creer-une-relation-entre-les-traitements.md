@@ -1,32 +1,36 @@
-# Créer une relation entre les traitements
+# Créer des relation entre les traitements
 
 Dans Dastra vous avez la possibilité de créer des relations entre vos traitements afin de faciliter leur gestion.
 
 Ces relations sont possibles entre des traitements situés dans un même espace de travail mais également au sein d'espaces de travail différents.
 
+### Pourquoi faire des relations entre les traitements ?
 
+Les relations entre les traitements peuvent être utilisées pour matérialiser les relations de responsabilité entre les différentes entités responsables de traitement.&#x20;
+
+Par exemple, dans un groupe d'entreprise, vous pouvez mettre en place une relation entre un traitement réalisé par la maison mère avec les traitements réalisés par les filiales. C'est souvent le cas pour les traitements relatifs à l'administration générale du groupe, tel que la gestion des ressources humaines, la comptabilité, la gestion de fournisseurs etc.&#x20;
+
+> Une société mère X met en œuvre un traitement de gestion de la paie pour le compte de ses filiales Y et Z. Dans l'entité X, un traitement (ST1) "gestion de la paie" est créé en tant que sous-traitant. A partir de ce traitement, nous pouvons créer une relation d'héritage fort avec deux autres traitements (RT1 et RT2) situés dans Y et Z qui seront créés en tant que responsable de traitement.&#x20;
+>
+> Ainsi, la mise à jour du traitement ST1 sera automatiquement relayée dans les traitements RT1 et RT2.&#x20;
 
 ### Ajouter une relation
 
 Pour ce faire, il faut aller sur une fiche de traitement et sélectionner l'onglet "Relations" situé en haut de la fiche.
 
-
-
-![L'onglet "Relations"](<../../.gitbook/assets/image (243).png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Bouton de création des relations intertraitement</p></figcaption></figure>
 
 
 
 Ensuite, il faudra sélectionner un type de relations.
 
-![](<../../.gitbook/assets/image (245).png>)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Création de nouvelles relations</p></figcaption></figure>
 
-Vous pouvez sélectionner le type de relation entre les traitements.
+Vous pouvez créer des relations sur plusieurs traitements en seule fois. Pour cela, il faudra créer des nouveaux traitements et sélectionner les unités organisationnelles concernées.
 
-![](<../../.gitbook/assets/image (246).png>)
-
-
-
-
+{% hint style="info" %}
+Il est possible de créer des relations avec les traitements figurant le même espace de travail uniquement.&#x20;
+{% endhint %}
 
 ### Détail des relations
 
