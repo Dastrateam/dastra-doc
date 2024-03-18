@@ -26,7 +26,7 @@ Cliquez dans "Réglages" puis "Déroulement du processus"&#x20;
 
 
 
-Vous accéderez ainsi aux différentes étapes de workflow disponible par processus. Personnalisez-les à votre convenance puis cliquez sur "enregistrer".
+Vous accéderez ainsi aux différentes étapes et statuts ("brouillon" ou "publié") de workflow disponible par processus. Personnalisez-les à votre convenance puis cliquez sur "enregistrer".
 
 <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
