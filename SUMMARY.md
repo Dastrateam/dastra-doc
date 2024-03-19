@@ -149,6 +149,7 @@
       * [Applications hybrides](features/gerer-le-consentement-aux-cookies/integration-technique/applications-mobiles/applications-hybrides.md)
       * [Applications natives](features/gerer-le-consentement-aux-cookies/integration-technique/applications-mobiles/applications-natives.md)
     * [TCF 1.1/2.0](features/gerer-le-consentement-aux-cookies/integration-technique/iab-et-cmp.md)
+    * [Consent mode V2 (Google)](features/gerer-le-consentement-aux-cookies/integration-technique/consent-mode-v2-google.md)
   * [Conformité RGAA](features/gerer-le-consentement-aux-cookies/rgaa.md)
   * [Dépannage](features/gerer-le-consentement-aux-cookies/troubleshouting.md)
 * [Rapports personnalisés](features/custom-reporting/README.md)

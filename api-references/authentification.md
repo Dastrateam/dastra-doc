@@ -58,24 +58,25 @@ L'authentification de l'API s'effectue grâce à l'aide du [protocole OAuth2](ht
 
 ### Récupération du token
 
-{% swagger method="post" path="/connect/token" baseUrl="https://account.dastra.eu" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `https://account.dastra.eu/connect/token`
+
 Perform a token request using BASIC Headers
-{% endswagger-description %}
 
-{% swagger-parameter in="body" type="scope" required="true" %}
-api1
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" required="true" type="grant_type" %}
-client\_credentials
-{% endswagger-parameter %}
+| Name                               | Type          | Description                                |
+| ---------------------------------- | ------------- | ------------------------------------------ |
+| <mark style="color:red;">\*</mark> | Authorization | Basic {base64("{PublicKey}:{PrivateKey}")} |
 
-{% swagger-parameter in="header" type="Authorization" required="true" %}
-Basic {base64("{PublicKey}:{PrivateKey}")}
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="The access_token necessary to perform operations on the REST API" %}
+| Name                               | Type        | Description         |
+| ---------------------------------- | ----------- | ------------------- |
+| <mark style="color:red;">\*</mark> | grant\_type | client\_credentials |
+| <mark style="color:red;">\*</mark> | scope       | api1                |
+
+{% tabs %}
+{% tab title="200: OK The access_token necessary to perform operations on the REST API" %}
 ```javascript
 {
   "access_token":"tNQoqsSePv0DnSSNVJv1aDxzSFh9H2z3YBKtuBKqWAU",
@@ -84,23 +85,25 @@ Basic {base64("{PublicKey}:{PrivateKey}")}
   "scope":"api1"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 Une fois que vous avez récupéré un access\_token, vous pouvez ensuite appeler n'importe quel endpoint de l'API Rest à l'aide de ce jeton d'accès en le passant en "Bearer token".&#x20;
 
 Par exemple, pour récupérer la liste de vos espaces de travail :
 
-{% swagger method="get" path="" baseUrl="https://api.dastra.eu/v1/workspaces" summary="" %}
-{% swagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/workspaces`
+
 Récupérer la liste des espaces de travail de Dastra
-{% endswagger-description %}
 
-{% swagger-parameter in="header" type="Authorization" required="true" %}
-Bearer {access\_token}
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200: OK" description="" %}
+| Name                               | Type          | Description            |
+| ---------------------------------- | ------------- | ---------------------- |
+| <mark style="color:red;">\*</mark> | Authorization | Bearer {access\_token} |
+
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
   "items": [
@@ -138,8 +141,8 @@ Bearer {access\_token}
   "total": 3
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 
 

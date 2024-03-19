@@ -134,16 +134,18 @@ Pour récupérer le format Objet de votre configurée avec des champs personnali
 
 Voici les principaux Endpoints qui vous seront utiles pour intégrer vos applications avec le module exercice de droits de Dastra.
 
-{% swagger method="post" path="{workspaceId}​/DataSubjectRequests" baseUrl="/v1​/ws​/" summary="Créer une nouvelle demande d'exercice de droits dans Dastra" %}
-{% swagger-description %}
+## Créer une nouvelle demande d'exercice de droits dans Dastra
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests`
 
-{% swagger-parameter in="path" name="workspaceId" type="String" required="true" %}
-L'Id du workspace dans lequel vous souhaitez poster la demande d'exercice de droits
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-response status="200: OK" description="" %}
+| Name                                          | Type   | Description                                                                         |
+| --------------------------------------------- | ------ | ----------------------------------------------------------------------------------- |
+| workspaceId<mark style="color:red;">\*</mark> | String | L'Id du workspace dans lequel vous souhaitez poster la demande d'exercice de droits |
+
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
 {
   "id": 0,
@@ -208,23 +210,22 @@ L'Id du workspace dans lequel vous souhaitez poster la demande d'exercice de dro
   "widgetId": 0
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="{workspaceId}​/DataSubjectRequests​/{id}" baseUrl="​/v1​/ws​/" summary="Récupérer une demande d'exercice de droits existante via son id" %}
-{% swagger-description %}
+## Récupérer une demande d'exercice de droits existante via son id
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
 
-{% swagger-parameter in="path" type="Integer" required="true" %}
-L'id de la demande d'exercice de droits que vous souhaitez requêter
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="workspaceId" type="String" required="true" %}
-L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez requêter
-{% endswagger-parameter %}
+| Name                                          | Type    | Description                                                                                                   |
+| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| workspaceId<mark style="color:red;">\*</mark> | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez requêter |
+| <mark style="color:red;">\*</mark>            | Integer | L'id de la demande d'exercice de droits que vous souhaitez requêter                                           |
 
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```json
 {
   "closedByUser": {
@@ -478,71 +479,41 @@ L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droit
   "widgetId": 0
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="get" path="{workspaceId}​/DataSubjectRequests" baseUrl="​/v1​/ws​/" summary="Récupérer une liste paginée de demandes d'exercice de droits" %}
-{% swagger-description %}
+## Récupérer une liste paginée de demandes d'exercice de droits
+
+<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+
 Vous pouvez passer des paramètres de recherche optionnels à votre requête pour filtrer la réponse de l'API&#x20;
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="page" type="Integer" %}
-La page que vous souhaitez requêter&#x20;
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="query" name="size" type="Integer" %}
-Le nombre d'éléments retournés par page
-{% endswagger-parameter %}
+| Name                                          | Type   | Description                                 |
+| --------------------------------------------- | ------ | ------------------------------------------- |
+| workspaceId<mark style="color:red;">\*</mark> | String | Le workspace id que vous souhaitez requêter |
 
-{% swagger-parameter in="query" name="sortBy" type="String" %}
-Le champ sur lequel filtrer l'ordre des éléments
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="q" %}
-Recherche texte dans le titre de la demande
-{% endswagger-parameter %}
+| Name       | Type            | Description                                                                                                                                                      |
+| ---------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| overtaking | Boolean         | Rechercher les demandes dont le délai légal de réponse à a été dépassé                                                                                           |
+| archived   | Boolean         | Retourner les demandes archivées                                                                                                                                 |
+| q          | String          | Recherche texte dans le titre de la demande                                                                                                                      |
+| widgetId   | Integer         | filtrer les demandes issues d'un widget de collecte                                                                                                              |
+| states     | Array\[String]  | Filtrer les demandes par état (Open, IdentityValidation, Processing, Active, Closed)                                                                             |
+| purposes   | Array\[String]  | Filtrer les demandes par type (Unknown, Information, Access, Rectification, Erasure, Restriction, Opposition, Portability, AdvanceDirectives, AutomatedDecision) |
+| ids        | Array\[Integer] | Sélectionner une liste de demandes par leurs ids                                                                                                                 |
+| tags       | Array\[Integer] | Sélectionner les demandes ayant des tags spécifiques (passer un array de tagIds en query string)                                                                 |
+| page       | Integer         | La page que vous souhaitez requêter                                                                                                                              |
+| size       | Integer         | Le nombre d'éléments retournés par page                                                                                                                          |
+| skip       | Integer         |                                                                                                                                                                  |
+| sortBy     | String          | Le champ sur lequel filtrer l'ordre des éléments                                                                                                                 |
+| asc        | Boolean         | true pour ordonner de manière ascendante                                                                                                                         |
 
-{% swagger-parameter in="query" name="asc" type="Boolean" %}
-true pour ordonner de manière ascendante
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="skip" type="Integer" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="purposes" type="Array[String]" %}
-Filtrer les demandes par type (Unknown, Information, Access, Rectification, Erasure, Restriction, Opposition, Portability, AdvanceDirectives, AutomatedDecision)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="states" type="Array[String]" %}
-Filtrer les demandes par état (Open, IdentityValidation, Processing, Active, Closed)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="widgetId" type="Integer" %}
-filtrer les demandes issues d'un widget de collecte
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="archived" type="Boolean" %}
-Retourner les demandes archivées
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="overtaking" type="Boolean" %}
-Rechercher les demandes dont le délai légal de réponse à a été dépassé
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="ids" type="Array[Integer]" %}
-Sélectionner une liste de demandes par leurs ids
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="tags" type="Array[Integer]" %}
-Sélectionner les demandes ayant des tags spécifiques (passer un array de tagIds en query string)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="workspaceId" type="String" required="true" %}
-Le workspace id que vous souhaitez requêter
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Un objet contenant les demandes d'exercices de droits retournées (propriété items), la page, la taille de la requête et le nombre total d'éléments" %}
+{% tabs %}
+{% tab title="200: OK Un objet contenant les demandes d'exercices de droits retournées (propriété items), la page, la taille de la requête et le nombre total d'éléments" %}
 ```json
 {
   "items": [
@@ -803,27 +774,28 @@ Le workspace id que vous souhaitez requêter
   "page": 0
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="put" path="{workspaceId}​/DataSubjectRequests​/{id}" baseUrl="/v1/ws/" summary="Mettre à jour une demande d'exercice de droits" %}
-{% swagger-description %}
+## Mettre à jour une demande d'exercice de droits
 
-{% endswagger-description %}
+<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}​/DataSubjectRequests​/{id}`
 
-{% swagger-parameter in="path" name="workspaceId" type="String" required="true" %}
-L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="id" type="Integer" required="true" %}
-L'id de la demande d'exercice de droits existante que vous souhaitez supprimer
-{% endswagger-parameter %}
+| Name                                          | Type    | Description                                                                                                    |
+| --------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
+| workspaceId<mark style="color:red;">\*</mark> | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
+| id<mark style="color:red;">\*</mark>          | Integer | L'id de la demande d'exercice de droits existante que vous souhaitez supprimer                                 |
 
-{% swagger-parameter in="body" type="Object" name="dataSubjectRequest" %}
-Poster l'objet complet de la demande d'exercice de droits (voir plus haut ou notre [documentation d'api swagger](https://api.dastra.eu/swagger/index.html))
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="Success" %}
+| Name               | Type   | Description                                                                                                                                                 |
+| ------------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dataSubjectRequest | Object | Poster l'objet complet de la demande d'exercice de droits (voir plus haut ou notre [documentation d'api swagger](https://api.dastra.eu/swagger/index.html)) |
+
+{% tabs %}
+{% tab title="200: OK Success" %}
 ```json
 {
   "closedByUser": {
@@ -1077,81 +1049,79 @@ Poster l'objet complet de la demande d'exercice de droits (voir plus haut ou not
   "widgetId": 0
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="delete" path="{workspaceId}​/DataSubjectRequests​/{id}" baseUrl="​/v1​/ws​/" summary="Supprimer une demande d'exercice de droits via son id" %}
-{% swagger-description %}
+## Supprimer une demande d'exercice de droits via son id
+
+<mark style="color:red;">`DELETE`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+
 Attention, cette action est irréversible, la demande d'exercice de droit sera supprimée définitivement de nos bases de données
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="workspaceId" type="String" required="true" %}
-L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="id" type="Integer" required="true" %}
-L'id de la demande d'exercice de droits existante que vous souhaitez supprimer
-{% endswagger-parameter %}
+| Name                                          | Type    | Description                                                                                                    |
+| --------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
+| workspaceId<mark style="color:red;">\*</mark> | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
+| id<mark style="color:red;">\*</mark>          | Integer | L'id de la demande d'exercice de droits existante que vous souhaitez supprimer                                 |
 
-{% swagger-response status="200: OK" description="Success" %}
+{% tabs %}
+{% tab title="200: OK Success" %}
 ```javascript
 {
     // Response
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="{workspaceId}​/DataSubjectRequests​/workflow" baseUrl="/v1​/ws​/" summary="Changer l'étape de processus de la demande d'exercice de droits" %}
-{% swagger-description %}
+## Changer l'étape de processus de la demande d'exercice de droits
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/workflow`
 
-{% swagger-parameter in="path" name="workspaceId" type="String" required="true" %}
-L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="body" name="id" type="Integer" %}
-L'id de la demande d'exercice de droits dont vous souhaitez modifier l'étape de processus
-{% endswagger-parameter %}
+| Name                                          | Type   | Description                                                                                                    |
+| --------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
+| workspaceId<mark style="color:red;">\*</mark> | String | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
 
-{% swagger-parameter in="body" name="stepId" type="Integer" %}
-L'id de l'étape de processus que vous souhaitez appliquer à la demande d'exercice de droits
-{% endswagger-parameter %}
-{% endswagger %}
+#### Request Body
 
-{% swagger method="post" path="{workspaceId}​/DataSubjectRequests​/archive​/{id}" baseUrl="/v1​/ws​/" summary="Archiver une demande d'exercice de droit via son Id" %}
-{% swagger-description %}
+| Name   | Type    | Description                                                                                 |
+| ------ | ------- | ------------------------------------------------------------------------------------------- |
+| id     | Integer | L'id de la demande d'exercice de droits dont vous souhaitez modifier l'étape de processus   |
+| stepId | Integer | L'id de l'étape de processus que vous souhaitez appliquer à la demande d'exercice de droits |
+
+## Archiver une demande d'exercice de droit via son Id
+
+<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/archive​/{id}`
+
 Ce endpoint applique le state "Archived" à la demande d'exercice de droits
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="workspaceId" type="String" %}
-L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="id" type="Integer" %}
-L'id de la demande d'exercice de droits que vous souhaitez archiver
-{% endswagger-parameter %}
+| Name        | Type    | Description                                                                                                    |
+| ----------- | ------- | -------------------------------------------------------------------------------------------------------------- |
+| workspaceId | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
+| id          | Integer | L'id de la demande d'exercice de droits que vous souhaitez archiver                                            |
 
-{% swagger-response status="200: OK" description="Success" %}
+{% tabs %}
+{% tab title="200: OK Success" %}
 ```javascript
 {
     // Response
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="{workspaceId}​/DataSubjectRequests​/restore​/{id}" baseUrl="​/v1​/ws​/" summary="Retirer le statut archiver d'une demande d'exercice de droits" %}
-{% swagger-description %}
+## Retirer le statut archiver d'une demande d'exercice de droits
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/restore​/{id}`
 
-{% swagger-parameter in="path" name="workspaceId" type="String" %}
-L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="path" name="id" type="Integrer" %}
-L'id de la demande d'exercice de droits que vous souhaitez restaurer
-{% endswagger-parameter %}
-{% endswagger %}
+| Name        | Type     | Description                                                                                                    |
+| ----------- | -------- | -------------------------------------------------------------------------------------------------------------- |
+| workspaceId | String   | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
+| id          | Integrer | L'id de la demande d'exercice de droits que vous souhaitez restaurer                                           |
