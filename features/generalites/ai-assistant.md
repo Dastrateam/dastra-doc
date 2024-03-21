@@ -41,6 +41,28 @@ Pour générer un jeu de données avec IA :&#x20;
 
 Une fois le jeu de données généré ? Editez le traitement une fois créé directement.
 
+### **Générer des réponses aux demandes d'exercice de droits**
+
+Vous pouvez facilement générer des réponses aux demandes d'exercice de droit dans plusieurs langues à partir de l'étape de communication de la demande. Différentes options de personnalisation sont possibles pour adapter le texte à votre convenance (raccourcir ou allonger le texte, adopter un ton plus ou moins formel, etc...)
+
+Pour générer une réponse :&#x20;
+
+1. Allez sur un [exercice de droit ](../gerer-les-exercices-des-droits/gestion-des-demandes-dexercices-de-droits.md)en cours de réponse
+2. Remplissez les informations jusqu'à l'étape **Communication/Transmission**
+3. Cliquez sur **Générez avec IA** et patientez quelques instants que l'assistant génère une première réponse basée sur les informations suivantes&#x20;
+   1. nom et prénom du destinataire
+   2. message de la demande
+   3. langue à utiliser
+   4. nom de l'espace de travail
+   5. finalités
+   6. nom de l'opérateur de la demande
+   7. date de la demande et nombre de jours restants (en fonction de la complexité)
+   8. Etat et ID de la demande
+4. Vous pouvez alors éditer le texte proposer ou utiliser une des options de reformulation pour relancer la génération (attendez quelques instants pour voir le résultat)
+5. Cliquez enfin sur **valider ce message** et ajoutez les pièces jointes éventuelles avant de lancer l'envoi en cliquant sur **envoyer**
+
+A noter qu'une limitation du nombre d'essais par minute est en place pour cette fonctionnalité
+
 ## Comment utiliser l'IA générative de Dastra ?
 
 Vous pouvez utiliser l'assistant IA pour générer des traitements de données ou des actifs. Pour cela cliquez sur le bouton "Créer un traitement" et sur "générer avec IA". L'assistant IA vous fera une proposition de modèle de données que vous pourrez ensuite adapter à vos besoins.
@@ -55,11 +77,17 @@ Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espa
 
 ## Comment ça marche ?
 
-Dastra utilise le modèle d'**IA OpenAI GPT 4.0** (Modèle de [ChatGPT](https://chat.openai.com/)) fourni par [le service OpenAI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Le modèle utilisé est pré-entrainé. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.&#x20;
+Dastra utilise les modèles d'**IA OpenAI GPT 3.5** et **GPT 4.0** (Modèles de [ChatGPT](https://chat.openai.com/)) ainsi que le modèle **Mistral-Large** de [**MistralAI** ](https://mistral.ai/)fournis par [le service AI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Les modèles utilisés sont pré-entrainés. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.
 
-Dastra utilise simplement la puissance de l'IA générative de GPT pour générer du contenu à partir de simple requête textuelle. Dastra a simplement fourni le modèle de document attendu (JSON) et un exemple de traitement de données (issu de notre bibliothèque) que nous souhaitons avoir et le modèle d'IA s'occupe du reste.
+Dastra utilise simplement la puissance de l'IA générative pour générer du contenu à partir de simple requête textuelle. Dastra a simplement fourni le modèle de document attendu (JSON) et un exemple de traitement de données (issu de notre bibliothèque) que nous souhaitons avoir et le modèle d'IA s'occupe du reste.
 
-Nous transférons uniquement le texte du prompt que vous allez envoyer à l'IA
+Nous transférons uniquement le texte du prompt pour la génération d'objets dans Dastra. Pour la génération de message d'exercice de droits, le contexte du message est intégré à la demande de génération afin de proposer une réponse personnalisée à la demande ([voir le détail des champs transmis](ai-assistant.md#generer-des-reponses-aux-demandes-dexercice-de-droits))
+
+Nous avons fait le choix de vous proposer différents modèles d'IA génératives car nous avons trouvé des intérêts pour chaque version, vous pouvez trouver le tableau récapitulatif ci dessous afin de vous aider à choisir le modèle correspondant le mieux à votre besoin :
+
+<table><thead><tr><th width="106">Modèle</th><th width="112">Version</th><th width="177">Avantages</th><th width="194">Inconvénients</th><th>Cas d’usage</th></tr></thead><tbody><tr><td>GPT</td><td>3.5 Turbo</td><td><ul><li>Vitesse</li><li>Prix</li></ul></td><td><ul><li>Base de connaissance de l'IA vieillissante (avant 2022)</li><li>Réponses parfois "simplistes"</li><li>Editeur US</li></ul></td><td><ul><li>Génération d’objet</li><li><em>Chat Bot interne</em></li></ul></td></tr><tr><td>GPT</td><td>4.0</td><td><ul><li>Réponses complètes et pertinentes</li><li>Fonctionnalités avancées</li></ul></td><td><ul><li>Temps de génération</li><li>Hallucinations et réponses ne suivant pas toujours les instructions</li><li>Editeur US</li></ul></td><td>Génération de message et de reformulation pour les exercices de droits</td></tr><tr><td>Mistral</td><td>Large</td><td><ul><li>Qualité des réponses</li><li>Editeur français</li></ul></td><td><ul><li>Intégration dans Azure moins avancée</li><li>Certaines fonctionnalités sont encore expérimentales</li></ul></td><td><ul><li>Génération d’objets</li><li>Génération de messages</li></ul></td></tr></tbody></table>
+
+&#x20;
 
 {% hint style="warning" %}
 **Avertissement sur la qualité du contenu suggéré !**&#x20;
@@ -71,8 +99,8 @@ Dastra **ne réalise aucun transfert de données** présentes dans votre espace 
 
 Les requêtes textuelles et les résultats du service :
 
-* **ne sont PAS disponibles pour d'autres clients**. ne sont PAS à la disposition de l'OpenAI.
-* **ne sont PAS utilisés pour améliorer les modèles de l'OpenAI**&#x20;
+* **ne sont PAS disponibles pour d'autres clients** et ne sont PAS à la disposition d'OpenAI ou de MistralAI.
+* **ne sont PAS utilisés pour améliorer les modèles de l'OpenAI ou de MistralAI**&#x20;
 * **ne sont PAS utilisées pour améliorer automatiquement les modèles Azure OpenAI** pour votre utilisation dans votre ressource (les modèles sont sans état, sauf si vous affinez explicitement les modèles avec vos données d'entraînement).&#x20;
 
 Si vous souhaitez avoir plus d'informations sur le fonctionnement de ce modèle, [rendez-vous sur cette page ](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
