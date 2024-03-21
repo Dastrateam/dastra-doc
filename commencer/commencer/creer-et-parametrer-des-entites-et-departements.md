@@ -103,7 +103,9 @@ Le système est arborescent. Cela signifie que, pour qu'une équipe accède à u
 
 Voici une vidéo explicative :
 
-{% embed url="https://www.youtube-nocookie.com/embed/AQdTo_4wSZk" %}
+
+
+{% embed url="https://youtu.be/RCLIWokRmAA" %}
 
 ## Aller plus loin
 
