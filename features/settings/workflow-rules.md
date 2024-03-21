@@ -21,7 +21,7 @@ Les Règles de workflow dans Dastra sont un ensemble d'actions (notifications pa
 
 Vous pouvez déclencher une règle de workflow sur deux évènements :&#x20;
 
-* Lors d'**une action sur une entité concernée** : modification, suppression ou création&#x20;
+* Lors d'**une action sur une entité concernée** : création, modification, changement d'étape ou mise à la corbeille (seulement pour les objets pour lesquels la corbeille existe)
 * **Lorsqu'une date précise de l'entité est atteinte**. par exemple : envoyer une notification 10 jours après la date de publication.&#x20;
 
 Un seul trigger peut être défini par règle de workflow.
@@ -30,7 +30,7 @@ A noter que vous pouvez choisir si le workflow peut s'exécuter plus d'une fois 
 
 ### Définition de conditions
 
-Vous pouvez configurer une ou plusieurs conditions d'éxécution par règle.
+Vous pouvez configurer une ou plusieurs conditions d'exécution par règle.
 
 ### Définition des actions
 
