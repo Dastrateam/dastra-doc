@@ -169,7 +169,7 @@
   * [Etapes de workflow / déroulement du processus](features/settings/workflows.md)
   * [Webhooks](features/settings/webhooks.md)
   * [Configuration du SMTP](features/settings/configuration-du-smtp.md)
-  * [Règles de worfkows](features/settings/workflow-rules.md)
+  * [Règles de workflows](features/settings/workflow-rules.md)
   * [Modèles de messages](features/settings/modeles-de-messages.md)
   * [Domaines emails](features/settings/domaines-emails.md)
 
