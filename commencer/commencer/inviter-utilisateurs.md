@@ -18,11 +18,11 @@ Rentrez l'adresse email de la personne que vous souhaitez inviter dans votre esp
 
 ![](<../../.gitbook/assets/image (130).png>)
 
-Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe puis cliquez sur le bouton "Envoyer une invitation". La personne invitée recevra un mail contenant un lien qui, une fois cliqué, permettra à cette personne d'accéder à l'espace.\
+Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe puis cliquez sur le bouton "Envoyer une invitation". La personne invitée recevra un mail contenant un lien qui, une fois cliqué, permettra à cette personne d'accéder à l'espace.
+
+Un mail de notification vous sera envoyé lorsque la personne cliquera sur le lien.\
 \
 Ca y est, l'utilisateur a été invité !
-
-Un mail de notification vous sera envoyé lorsque la personne cliquera sur le lien.
 
 ### Retrouvez les invitations en cours
 
