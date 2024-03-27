@@ -22,6 +22,8 @@ Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe pui
 \
 Ca y est, l'utilisateur a été invité !
 
+Un mail de notification vous sera envoyé lorsque la personne cliquera sur le lien.
+
 ### Retrouvez les invitations en cours
 
 Vous pouvez piloter les invitations en cours dans les réglages de l'espace de travail sur la section "Utilisateurs".&#x20;
