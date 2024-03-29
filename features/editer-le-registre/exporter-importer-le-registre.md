@@ -40,6 +40,8 @@ Il est également possible de n'exporter qu'un ou plusieurs traitements du regis
 
 ## L'import de registre
 
+{% embed url="https://youtu.be/88e1j4v-fKQ" %}
+
 Pour éviter de remplir chaque traitement à la main et prendre en compte tous les formats possibles de registre, Dastra a conçu une méthodologie se reposant sur le principe de la **ségrégation du registre en domaines de données**. Ainsi, 7 étapes sont conseillées pour importer l’ensemble d’un registre existant dans Dastra.
 
 {% hint style="info" %}
