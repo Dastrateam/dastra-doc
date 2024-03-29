@@ -40,7 +40,29 @@ Il est également possible de n'exporter qu'un ou plusieurs traitements du regis
 
 ## L'import de registre
 
+#### L'import via le tableur Excel complexe
+
+L'import d'un registre existant peut représenter une tâche fastidieuse si vous avez un nombre important de traitements.
+
+Chez DASTRA, nous avons intégré un fichier Excel qui vous permettra d'importer vos traitements en masse et en une seule fois.
+
+Il offre également l'avantage d'importer et de créer directement dans notre plateforme **l'ensemble** de vos **référentiels** et ne se limite pas aux traitements.
+
+Vous pourrez ainsi renseigner vos _Actifs_, vos _Jeux de données_, vos _Acteurs_, vos _Mesures de sécurité_, etc.
+
+
+
 {% embed url="https://youtu.be/88e1j4v-fKQ" %}
+
+Vous pourrez télécharger [ici ](https://docs.google.com/spreadsheets/d/1u\_QLMbx9k4fFm7jBrpnt65i8fVfOzYz8/edit?usp=sharing\&ouid=117505938343554554786\&rtpof=true\&sd=true)le tableur Excel relatif au formatage des données, nécessaire pour un import sans erreurs!
+
+
+
+
+
+
+
+#### Import Standard
 
 Pour éviter de remplir chaque traitement à la main et prendre en compte tous les formats possibles de registre, Dastra a conçu une méthodologie se reposant sur le principe de la **ségrégation du registre en domaines de données**. Ainsi, 7 étapes sont conseillées pour importer l’ensemble d’un registre existant dans Dastra.
 
