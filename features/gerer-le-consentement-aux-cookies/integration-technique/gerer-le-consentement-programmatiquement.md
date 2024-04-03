@@ -90,7 +90,10 @@ dastra.push(['cookieReady',function(manager){
     // Get the complete consent services list
     let cookiePurpose = 2; // 2 = Analytic
     let consents = manager.consent.getPurposeConsent(cookiePurpose);
-    manager.consent.setPurposeConsent(cookiePurpose, false)
+    manager.consent.setPurposeConsent(cookiePurpose, false);
+
+    // persist consent in cookies
+    manager.consent.save();
 });
 </script>
 ```
@@ -112,8 +115,11 @@ dastra = dastra || []
 dastra.push(['cookieReady',function(manager){
     // Get the complete consent services list
     let cookiePurpose = 'google-analytics'; // 2 = Analytic
-    let consents = manager.consent.getServiceConsent(cookiePurpose );
-    manager.consent.setServicePurpose(cookiePurpose, false)
+    let consents = manager.consent.getServiceConsent(cookiePurpose);
+    manager.consent.setServiceConsent(cookiePurpose, false);
+    
+    // save consent in cookies
+    manager.consent.save();
 });
 </script>
 ```
