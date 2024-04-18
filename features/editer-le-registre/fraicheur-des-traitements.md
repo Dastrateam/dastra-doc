@@ -85,4 +85,4 @@ Veuillez noter que nous traitons indépendamment la date de mise à jour d'une f
 
 ### Notifications
 
-Le propriétaire d'un traitement qui passe à l'état périmé recevra un email d'avertissement pour lui rappeler que l'un de ses traitement n'a pas été révisé depuis longtemps et qu'il est temps de le rafraichir.
+Chaque utilisateur ajouté aux Parties prenantes d'un traitement qui passe à l'état périmé recevra un email d'avertissement pour lui rappeler que l'un de ses traitements n'a pas été révisé depuis longtemps et qu'il est temps de le rafraichir.
