@@ -189,6 +189,7 @@
 
 ## 🤖 DIVERS
 
+* [Webinaires](divers/webinaires.md)
 * [Foire aux questions](divers/faq-registre.md)
 * [Problèmes connus](divers/problemes-connus.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
