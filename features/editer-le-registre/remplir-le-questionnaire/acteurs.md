@@ -51,7 +51,7 @@ Dastra vous permet d'attacher des utilisateurs à un traitement.
 
 Les rôles ainsi définis permettront de structurer efficacement la gestion et la mise en œuvre de vos traitements dans Dastra.
 
-Voici une manière de définir les rôles de vos utilisateurs pour vos contrats :&#x20;
+Voici une manière de définir les rôles de vos utilisateurs pour vos traitements :&#x20;
 
 * **Validateur** : il s'agit de l'utilisateur dans Dastra qui est en charge de valider que le traitement et les éléments associés tels qu'ils sont indiqués dans Dastra sont valides selon les attendus de l'organisation. ll peut être différent du signataire du responsable du traitement. Par exemple, il peut s'agir d'un responsable de service, d'un DPO, ou d'un relais DPO.&#x20;
 * **Réalisateur** : c'est l'utilisateur qui a pour rôle de mettre en œuvre les actions nécessaires sur le traitement et le décrire. Il peut s'agir de la mise en place des mesures de sécurité des données, de la gestion des accès ou de toute autre tâche requise pour assurer la conformité du traitement. Il peut s'agir d'un chef de projet ou d'un responsable métier dédié.
