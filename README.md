@@ -30,7 +30,7 @@ Notre approche de la protection des données
 
 * **Cartographier vos données personnelles** en créant et en conservant votre registre des traitements grâce à une interface souple et intuitive, des référentiels, des bibliothèques et des questionnaires, et **constituer, partager** et **exporter** votre registre de traitement.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (3).png" alt=""><figcaption><p>Module du registre des traitements</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (3) (1).png" alt=""><figcaption><p>Module du registre des traitements</p></figcaption></figure>
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 

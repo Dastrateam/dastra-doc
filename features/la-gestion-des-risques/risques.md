@@ -23,7 +23,7 @@ Vous arrivez sur une page d'édition du risque et vous pouvez commencer à rense
 
 Vous pouvez ensuite retrouver tous les risques de votre registre dans le référentiel des risques.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez aussi attacher un risque à un traitement directement depuis le module de gestion des risques.&#x20;
 

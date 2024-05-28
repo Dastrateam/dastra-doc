@@ -18,13 +18,13 @@ Par exemple, dans un groupe d'entreprise, vous pouvez mettre en place une relati
 
 Pour ce faire, il faut aller sur une fiche de traitement et sélectionner l'onglet "Relations" situé en haut de la fiche.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Bouton de création des relations intertraitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Bouton de création des relations intertraitement</p></figcaption></figure>
 
 
 
 Ensuite, il faudra sélectionner un type de relations.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Création de nouvelles relations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Création de nouvelles relations</p></figcaption></figure>
 
 Vous pouvez créer des relations sur plusieurs traitements en seule fois. Pour cela, il faudra créer des nouveaux traitements et sélectionner les unités organisationnelles concernées.
 
