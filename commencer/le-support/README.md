@@ -4,6 +4,15 @@ description: Apprenez à utiliser le support proposé par Dastra.
 
 # Support
 
+Voici les différentes manières de contacter notre équipe de support :&#x20;
+
+* Le [formulaire de demande de support](https://app.dastra.eu/?modalId=modal-feedback)  ([plus d'informations](faire-une-demande-de-support.md))
+* Via [le chat en ligne](https://app.dastra.eu/?openChat=1)
+* Par email : [support@dastra.eu](mailto:support@dastra.eu)
+* Par téléphone : [+33 1 76 31 05 47](tel:+33176310547)
+
+
+
 {% embed url="https://youtu.be/IYzuJwCD9tw" %}
 
 

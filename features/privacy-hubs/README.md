@@ -18,19 +18,3 @@ Vous accédez aux privacy-hubs depuis la barre de navigation interne au module A
 
 
 
-###
-
-###
-
-####
-
-
-
-
-
-####
-
-###
-
-### Collecter un projet de traitement de données à partir d'une réponse à un questionnaire
-

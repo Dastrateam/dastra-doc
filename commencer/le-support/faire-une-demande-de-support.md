@@ -10,6 +10,8 @@ Dans ce cas, Dastra vous donne la possibilité de nous contacter directement dep
 
 ![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/image (152).png>)
 
+Accédez directement [au formulaire de demande de support](https://app.dastra.eu/?modalId=modal-feedback) (vous devez disposer d'un compte et être connecté à l'application)
+
 ### Le questionnaire de demande de support
 
 Après avoir cliqué sur le bouton support, une fenêtre apparait dans l'application vous permettant de sélectionner l'objet de votre demande.
