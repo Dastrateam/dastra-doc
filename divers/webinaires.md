@@ -22,6 +22,10 @@
 
 {% embed url="https://youtu.be/N8MZISZgmG8" %}
 
+## Les questionnaires d'audit :
+
+{% embed url="https://www.youtube.com/watch?t=1804s&v=IHevXHniVvk" %}
+
 
 
 ## Les étapes de processus :
