@@ -68,11 +68,11 @@ De manière obligatoire : &#x20;
 * Email (email de l'utilisateur)
 * GivenName (prénom de l'utilisateur)
 * FamilyName(nom de l'utilisateur)
+* Roles (séparé par des |) > cela correspond aux rôles dans Dastra
+* Teams (séparé par des |) > cela correspond aux équipes dans Dastra
 
 De manière optionnelle :&#x20;
 
-* Roles (séparé par des |) > cela correspond aux rôles dans Dastra
-* Teams (séparé par des |) > cela correspond aux équipes dans Dastra
 * SsoConfigurationId > cela correspond à l'identifiant de login SSO le cas échéant
 
 Voici un modèle de fichier à télécharger et à remplir :&#x20;
