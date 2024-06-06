@@ -50,7 +50,7 @@ Il existe plusieurs rôles proposés par défaut dans Dastra, représentant des 
 
 ## Importer une grande liste d'utilisateurs
 
-Vous pouvez demander l'import d'une grande liste d'utilisateurs dans la plateforme. Pour cela il faut passer par les équipes de Dastra.
+Si vous souhaitez importer une grande liste d'utilisateurs (minimum 50 utilisateurs), vous pouvez demander l'import d'une grande liste d'utilisateurs dans la plateforme. Pour cela il faut passer par les équipes de Dastra.
 
 Vous pouvez demander l'import d'une liste jusqu'à 200 utilisateurs, dans la limite des utilisateurs disponibles.
 
