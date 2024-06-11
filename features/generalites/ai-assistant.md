@@ -41,6 +41,27 @@ Pour générer un jeu de données avec IA :&#x20;
 
 Une fois le jeu de données généré ? Editez le traitement une fois créé directement.
 
+### **Générer des notices d'information sur le traitement**
+
+1. Rendez-vous dans la page de modification d'un traitement de données
+2. Dans la section 11. documentation, cliquez sur "Générer une notice d'information"
+3. Choisissez le format que vous souhaitez, vous pouvez même personnaliser les instructions de génération en cliquant sur "Personnalisée". Cliquez ensuite sur le bouton "Générer"
+4. Copier le texte généré ou insérez le dans votre documentation de traitement
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Générer une réponse à un questionnaire (PIA, Analyse de risque, ...)
+
+1. Aller dans la rubrique "Questionnaires", sélectionnez le modèle que vous souhaitez utiliser. Par exemple, le modèle du PIA de la CNIL
+2. Cliquez sur "Planifier un questionnaire"
+3. Sélectionnez "Réponse assistée par IA"
+4. Vous pouvez renseigner directement le traitement qui servira de source aux réponses du questionnaire ou saisissez des instructions personnalisées
+5. Une fois la réponse générée, il est possible d'y apporter des corrections.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+###
+
 ### **Générer des réponses aux demandes d'exercice de droits**
 
 Vous pouvez facilement générer des réponses aux demandes d'exercice de droit dans plusieurs langues à partir de l'étape de communication de la demande. Différentes options de personnalisation sont possibles pour adapter le texte à votre convenance (raccourcir ou allonger le texte, adopter un ton plus ou moins formel, etc...)
