@@ -76,7 +76,7 @@
     * [Analyse d'impact](features/editer-le-registre/remplir-le-questionnaire/analyse-dimpact.md)
     * [Documents](features/editer-le-registre/remplir-le-questionnaire/documents.md)
     * [Récapitulatif](features/editer-le-registre/remplir-le-questionnaire/recapitulatif.md)
-  * [Créer des relation entre les traitements](features/editer-le-registre/creer-une-relation-entre-les-traitements.md)
+  * [Créer des relations entre les traitements](features/editer-le-registre/creer-une-relation-entre-les-traitements.md)
   * [Fraicheur des traitements](features/editer-le-registre/fraicheur-des-traitements.md)
   * [Partager le registre](features/editer-le-registre/partager-le-registre.md)
   * [Visualisation des données](features/editer-le-registre/la-visualisation-des-donnees/README.md)
