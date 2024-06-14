@@ -26,3 +26,11 @@ N'hésitez pas à bien détailler la partie description en y ajoutant les foncti
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-05-21 174951.png" alt=""><figcaption></figcaption></figure>
 
 Vous allez également devoir sélectionner son type d'apprentissage. Le type d'apprentissage d'un modèle d'IA se réfère à la méthode par laquelle le modèle est formé pour accomplir ses tâches. Chaque type est adapté à des applications spécifiques et influence la manière dont le modèle généralise les connaissances acquises. Il y en a 4 et vous aurez une définition à côté de chacun afin de vous aider à choisir.
+
+## Liaison entre système et modèle
+
+Pour lier un système d'IA à un modèle, il faut se rendre sur le système d'IA concerné. Dans la deuxième section, intitulée "Modèles d'IA", vous retrouvez un sélecteur dans lequel vous pouvez choisir un ou plusieurs modèle(s) parmi ceux que vous avez enregistré dans votre référentiel de modèles.
+
+Sélectionnez les modèles concernés, puis renseignez le champs "description de l'utilisation". Celui-ci sert à expliquer comment le modèle est utilisé dans le cadre du système d'IA concerné.
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-06-14 144928.png" alt=""><figcaption><p>Lier un modèle et un système d'IA</p></figcaption></figure>
