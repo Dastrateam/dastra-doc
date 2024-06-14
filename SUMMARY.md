@@ -105,6 +105,7 @@
   * [Les signataires](features/contrats/les-signataires.md)
   * [Utilisateurs associés](features/contrats/utilisateurs-associes.md)
   * [Signer le contrat](features/contrats/signer-le-contrat.md)
+  * [Intégration avec Docusign](features/contrats/integration-avec-docusign.md)
   * [Versionner le contrat](features/contrats/versionner-le-contrat.md)
   * [Revue régulière du contrat](features/contrats/revue-reguliere-du-contrat.md)
 * [Gestion des risques](features/la-gestion-des-risques/README.md)
