@@ -15,6 +15,11 @@ Dans Dastra, le modèle par défaut de PIA est rattaché à un seul traitement. 
 
 Vous pouvez créer un modèle de mail qui pourra être utilisé dans les invitations aux audits. Il n'est pas possible de réaliser des actions automatisées via les workflow par exemple. En effet, les audits ne peuvent pas être utilisés comme éléments déclencheurs.&#x20;
 
-## En tant que répondant externe, est ce que je peux mettre des images dans les réponses ?&#x20;
+## En tant que répondant externe, est-ce que je peux mettre des images dans les réponses ?&#x20;
 
 &#x20;Non, ce n'est pas possible. Cette possibilité est offerte si vous êtes un répondant interne (utilisateur de Dastra).
+
+## Est-il possible de suggérer automatiquement une tâche à partir de  la réponse d'un questionnaire ?&#x20;
+
+Oui, c'est possible depuis le type de question "texte long" en cochant la case "Suggérer automatiquement une tâche(s) à partir de la réponse".
+
