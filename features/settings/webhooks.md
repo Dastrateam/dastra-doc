@@ -165,3 +165,27 @@ private static string GetRequestBody()
 ### Que se passe-t-il quand l'url répond autre chose que 200
 
 Le webhook sera automatiquement bloqué et considéré en erreur quand le seuil de 5 erreurs est dépassé.
+
+### &#x20;Comment mettre en place des webhooks avec les API
+
+Récupérer les webhooks liés à votre compte (dans tous les espaces de travail)
+
+{% swagger src="../../.gitbook/assets/dastra api.json" path="/v1/WebHookUrls" method="get" %}
+[dastra api.json](<../../.gitbook/assets/dastra api.json>)
+{% endswagger %}
+
+Créez une nouvelle url de webhook en utilisant le endpoint POST. Renseignez les évènements auxquels vous souhaitez abonner votre webhook avec le paramètre **subscribedEvents** webhooks.
+
+{% swagger src="../../.gitbook/assets/dastra api.json" path="/v1/WebHookUrls" method="post" %}
+[dastra api.json](<../../.gitbook/assets/dastra api.json>)
+{% endswagger %}
+
+Un identifiant de webhook vous sera retourné
+
+{% swagger src="../../.gitbook/assets/dastra api.json" path="/v1/WebHookUrls/{id}" method="get" %}
+[dastra api.json](<../../.gitbook/assets/dastra api.json>)
+{% endswagger %}
+
+{% swagger src="../../.gitbook/assets/dastra api.json" path="/v1/WebHookUrls/{id}" method="delete" %}
+[dastra api.json](<../../.gitbook/assets/dastra api.json>)
+{% endswagger %}

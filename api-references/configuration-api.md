@@ -1,5 +1,7 @@
 # Configuration API
 
+
+
 {% embed url="https://youtu.be/Bl-T-slTyiQ" %}
 
 ### Configurer des API dans Dastra&#x20;
@@ -72,17 +74,9 @@ Il sera possible de modifier ces informations de cette façon
 
 Pour exposer des tags dans l'API Dastra, il faut aller les chercher dans le endpoint tags avant de les ajouter : /v1/ws/{workspaceId}/Tags
 
-###
-
 {% hint style="info" %}
 **CONSEIL** : ne manipulez les API que si vous savez ce que vous faites !
 {% endhint %}
 
-
-
 Vous retrouvez l'interface de gestion des API dans Dastra à cette adresse : [https://app.dastra.eu/general-settings/api](https://app.dastra.eu/general-settings/api)
-
-
-
-
 
