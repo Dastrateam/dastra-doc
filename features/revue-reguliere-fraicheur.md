@@ -46,7 +46,7 @@ L'affichage de la fraicheur dans le cadre d'un traitement de données est un peu
 
 Vous retrouverez l'indicateur de fraicheur en haut à droite de votre fiche de traitement (dans la mesure ou le traitement a été publié et marqué comme étant frais au moins une fois)
 
-Cet indicateur est composé d'un label prenant les valeurs "Frais", "Relativement frais" et "Périmé", d'une couleur (respectivement vers, jaune, rouge), d'une barre de progression diminuant à mesure que la date de péremption approche, d'un bouton pour marquer le traitement comme frais et du nombre de jours restants ou de retard par rapport à la date de péremption.&#x20;
+Cet indicateur est composé d'un label prenant les valeurs "Frais", "E en attente" et "Dépassé", d'une couleur (respectivement vert, jaune, rouge), d'une barre de progression diminuant à mesure que la date de péremption approche, d'un bouton pour marquer le traitement comme frais et du nombre de jours restants ou de retard par rapport à la date de péremption.&#x20;
 
 <figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,6 +55,30 @@ Cet indicateur est composé d'un label prenant les valeurs "Frais", "Relativemen
 <figure><img src="../.gitbook/assets/image (269).png" alt=""><figcaption><p>En vue mobile, vous retrouvez également cet indicateur dans la barre de navigation en haut de votre fiche de traitement</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption><p>Exemple de traitement périmé</p></figcaption></figure>
+
+### Règles d'affichage des statuts de revue&#x20;
+
+Il y a 3 statuts possibles s'agissant de la fraîcheur d'un traitement : frais, en attente ou dépassé. Par défaut, les règles d'affichage suivantes s'appliquent :&#x20;
+
+<table><thead><tr><th width="167">Statut de revue</th><th>Règle d'affichage</th></tr></thead><tbody><tr><td>Frais (couleur verte)</td><td>S'affiche lorsque la différence (en jours) entre la date de revue future et la date du jour est supérieure à 10% de l'intervalle de revue (en jours) entre la date de revue future et la précédente date de revue</td></tr><tr><td>En attente (couleur orange)</td><td>S'affiche lorsque la différence (en jours) entre la date de revue future et la date du jour est inférieure ou égale à 10% de l'intervalle de revue (en jours) entre la date de revue future et la précédente date de revue</td></tr><tr><td>Dépassé (couleur rouge)</td><td>S'affiche lorsque la date de future revue est dépassée par rapport à la date d'aujourd'hui</td></tr></tbody></table>
+
+
+
+{% hint style="info" %}
+**Exemple  :**&#x20;
+
+Sur la base des hypothèses suivantes :
+
+* date de revue précédente : 24 Juin 2024
+* date de revue future : 24 Juin 2025&#x20;
+* Intervalle de revue = 1 an (365 jours)
+
+Alors la date de passage du statut "Frais" à "En attente" sera le **19 mai 2025**, soit 36,5 jours avant le 24 Juin 2025.
+{% endhint %}
+
+
+
+
 
 ### Rafraichir un élément
 
