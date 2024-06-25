@@ -60,20 +60,18 @@ Cet indicateur est composé d'un label prenant les valeurs "Frais", "E en attent
 
 Il y a 3 statuts possibles s'agissant de la fraîcheur d'un traitement : frais, en attente ou dépassé. Par défaut, les règles d'affichage suivantes s'appliquent :&#x20;
 
-<table><thead><tr><th width="258">Statut de revue</th><th>Règle d'affichage</th></tr></thead><tbody><tr><td>Frais (couleur verte)</td><td>S'affiche lorsque la différence (en jours) entre la date de revue future et la date du jour est supérieure à 10% de l'intervalle de revue (en jours) entre la date de revue future et la précédente date de revue</td></tr><tr><td>En attente (couleur orange)</td><td>S'affiche lorsque la différence (en jours) entre la date de revue future et la date du jour est inférieure ou égale à 10% de l'intervalle de revue (en jours) entre la date de revue future et la précédente date de revue</td></tr><tr><td>Dépassé (couleur rouge)</td><td>S'affiche lorsque la date de future revue est dépassée par rapport à la date d'aujourd'hui</td></tr></tbody></table>
+<table><thead><tr><th width="258">Statut de revue</th><th>Règle d'affichage</th></tr></thead><tbody><tr><td>Frais (couleur verte)</td><td><p>L'élément a été revu récemment et ne requière pas d'attention immédiate. </p><p><br>Ce statut s'affiche jusqu'à ce que la date de jour soit dans les 10 derniers pourcents de l'intervalle prévue par rapport à la dernière revue.</p></td></tr><tr><td>En attente (couleur orange)</td><td><p>L'élément doit être vérifié. <br></p><p>Ce statut s'affiche lors des dix derniers pourcents de l'intervalle prévue par rapport à la dernière revue.</p></td></tr><tr><td>Dépassé (couleur rouge)</td><td>L'élément n'est plus conforme à la politique de revue. <br><br>Ce statut s'affiche lorsque la date du jour est supérieure à la date de derniere revue + l'intervalle défini.</td></tr></tbody></table>
 
 
 
 {% hint style="info" %}
 **Exemple  :**&#x20;
 
-Sur la base des hypothèses suivantes :
+J'ai défini 1 an d'intervalle pour la revue des traitements. Pour un traitement revu le 1er janvier :
 
-* date de revue précédente : 24 Juin 2024
-* date de revue future : 24 Juin 2025&#x20;
-* Intervalle de revue = 1 an (365 jours)
-
-Alors la date de passage du statut "Frais" à "En attente" sera le **19 mai 2025**, soit 36,5 jours avant le 24 Juin 2025.
+* il sera affiché frais jusqu'au 25 novembre
+* il sera affiché en attente du 25 novembre
+* Au 31 décembre il sera ensuite affiché dépassé tant qu'il ne sera pas revu.
 {% endhint %}
 
 
