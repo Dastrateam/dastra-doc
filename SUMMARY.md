@@ -195,7 +195,7 @@
 
 * [Configuration API](api-references/configuration-api.md)
 * [Authentification](api-references/authentification.md)
-* [API References](https://api.dastra.eu/swagger)
+* [API References](https://dastra.readme.io)
 * [Intégrations via Zapier](api-references/integrations-via-zapier/README.md)
   * [Questions fréquentes](api-references/integrations-via-zapier/questions-frequentes.md)
 
