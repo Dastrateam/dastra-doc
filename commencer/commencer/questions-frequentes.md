@@ -33,3 +33,17 @@ En plus de cette image, le logo de l'espace de travail est également modifiable
 Pour changer de DPO, c'est très simple ! Il suffit de se rendre dans la gestion des unités organisationnelles et sélectionner l'entité pour laquelle on va changer le DPO.&#x20;
 
 Ensuite, [sélectionner ](designer-un-dpo.md#ajouter-un-dpo-dans-dastra)l'acteur qui sera désigné DPO.&#x20;
+
+
+
+## Comment ajouter un propriétaire d'organisation ?&#x20;
+
+Pour ajouter un propriétaire, vous devez vous-même être propriétaire d'organisation. Ensuite, allez dans la configuration de l'organisation ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) et cliquez sur "Nouveau propriétaire".&#x20;
+
+Vous pourrez sélectionner un utilisateur déjà invité dans votre organisation. Si celui ci n'est pas déjà votre organisation, vous ne pourrez pas l'ajouter.&#x20;
+
+
+
+## Comment supprimer un propriétaire d'organisation ?&#x20;
+
+Pour supprimer un propriétaire, vous devez également être propriétaire de l'organisation. Allez dans la configuration de l'organisation ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)), dans l'onglet "Général", puis cliquez sur le bouton de suppression à côté du propriétaire que vous souhaitez retirer. Confirmez votre choix pour finaliser l'opération.

@@ -22,6 +22,7 @@
 ## 👨‍💻 Bien commencer <a href="#commencer" id="commencer"></a>
 
 * [Mise en place](commencer/commencer/README.md)
+  * [Les notions importantes](commencer/commencer/les-notions-importantes.md)
   * [Créer et paramétrer un espace de travail](commencer/commencer/espace-de-travail.md)
   * [Créer et paramétrer les unités organisationnelles](commencer/commencer/creer-et-parametrer-des-entites-et-departements.md)
   * [Désigner un DPO](commencer/commencer/designer-un-dpo.md)
@@ -87,7 +88,8 @@
 * [Gestion de documents (GED)](features/gestion-de-documents-ged/README.md)
   * [Modèles de documents](features/gestion-de-documents-ged/modeles-de-documents.md)
 * [Questionnaires et PIA](features/audit/README.md)
-  * [Créer ou modifier un modèle de questionnaire ou un PIA](features/audit/creez-un-modele-daudit.md)
+  * [Créer ou modifier un modèle de questionnaire ou un PIA](features/audit/creez-un-modele-daudit/README.md)
+    * [Créer ou modifier un modèle de PIA](features/audit/creez-un-modele-daudit/creer-ou-modifier-un-modele-de-pia.md)
   * [Planifier un questionnaire ou un PIA](features/audit/planifier-un-audit.md)
   * [Partager un rapport d'audit ou PIA](features/audit/rapport-daudit.md)
   * [Supprimer un audit ou un modèle d'audit](features/audit/supprimer-un-audit-ou-un-modele-daudit.md)
@@ -193,6 +195,7 @@
 
 ## 📄 La documentation API <a href="#api-references" id="api-references"></a>
 
+* [Liste des endpoints d'API](api-references/liste-des-endpoints-dapi.md)
 * [Configuration API](api-references/configuration-api.md)
 * [Authentification](api-references/authentification.md)
 * [API References](https://dastra.readme.io)

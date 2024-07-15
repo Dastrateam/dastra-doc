@@ -2,7 +2,7 @@
 description: Apprenez à réaliser des audits et des PIA avec Dastra.
 ---
 
-# Audits et PIA
+# Questionnaires et PIA
 
 ## Introduction
 
@@ -34,8 +34,8 @@ Dans Dastra, les AIPD sont considérées comme **un modèle d'audit** particulie
 
 ## Créer ou modifier un modèle d'audit ou de PIA
 
-{% content-ref url="creez-un-modele-daudit.md" %}
-[creez-un-modele-daudit.md](creez-un-modele-daudit.md)
+{% content-ref url="creez-un-modele-daudit/" %}
+[creez-un-modele-daudit](creez-un-modele-daudit/)
 {% endcontent-ref %}
 
 ## Planifier un audit ou un PIA et lancer une campagne
