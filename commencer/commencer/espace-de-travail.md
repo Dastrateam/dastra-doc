@@ -4,14 +4,6 @@ description: Apprenez à créer votre premier espace de travail dans Dastra.
 
 # Créer et paramétrer un espace de travail
 
-
-
-{% embed url="https://youtu.be/a7sW-B_TeZ0" %}
-
-
-
-{% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=1" %}
-
 ## Connectez-vous à Dastra.eu&#x20;
 
 Commencez par vous connecter à [Dastra.eu](https://www.dastra.eu/). Si vous n'avez pas encore de compte, [inscrivez-vous](https://app.dastra.eu/signup) et créez-en un nouveau.
@@ -22,13 +14,39 @@ Vous pouvez accéder immédiatement à Dastra en ouvrant un compte "Essai gratui
 
 ## Espace de travail
 
-Un espace de travail est une organisation permettant d'accueillir un ou plusieurs registres des traitements. Vous pouvez créer un espace de travail par registre de traitement et/ou par entité légale ou succursale, selon votre choix.
+Un espace de travail est **une organisation permettant d'accueillir un ou plusieurs registres des traitements**. Vous pouvez créer un espace de travail par registre de traitement et/ou par entité légale ou succursale, selon votre choix.&#x20;
+
+{% hint style="warning" %}
+Un espace de travail est un environnement qui est **totalement cloisonné**. Il ne sera pas possible d'avoir une vision d'ensemble de l'intégralité de vos espaces de travail. Par exemple, il ne sera pas possible de consulter les statistiques du registre sur plusieurs espaces de travail combinés. Il sera cependant possible de dupliquer les éléments (traitements, actifs...) d'un espace de travail à l'autre.
+{% endhint %}
 
 ### Créez un espace de travail
 
-Vous avez besoin d'un espace de travail pour gérer votre entité. Vous pouvez créer un espace de travail en cliquant sur "Nouvel espace de travail" :
+Vous avez besoin d'un espace de travail pour gérer votre entité. Vous pouvez créer un espace de travail en cliquant sur "Nouvel espace de travail", remplissez ensuite le formulaire de création d'espaceds de travail.
 
-&#x20;
+### Accédez à un espace de travail
+
+Pour accéder à votre espace de travail :&#x20;
+
+1. **Connectez vous à l'application** avec votre compte utilisateur
+2. **Cliquez sur l'espace de travail** dans la liste qui s'affiche :
+
+<figure><img src="../../.gitbook/assets/Capture d’écran 2024-07-22 104031.png" alt=""><figcaption></figcaption></figure>
+
+3. Vous **accédez alors à votre espace de travail**
+
+Vous pouvez basculer à tout moment d'espace de travail en cliquant sur le sélecteur en haut à gauche de l'écran :\
+![](<../../.gitbook/assets/image (377).png>)
+
+
+
+
+
+Regardez la vidéo sur la configuration de base de vos espaces de travail :
+
+{% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=1" %}
+
+{% embed url="https://youtu.be/a7sW-B_TeZ0" %}
 
 ![](<../../.gitbook/assets/image (181).png>)
 

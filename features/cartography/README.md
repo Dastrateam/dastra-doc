@@ -27,6 +27,18 @@ Vous ne souhaitez pas faire cet inventaire ou vous estimez que les logiciels que
 
 
 
+### Comment accéder à la cartographie
+
+1. [Accédez à votre espace de travail](../../commencer/commencer/espace-de-travail.md#accedez-a-un-espace-de-travail)
+2. Cliquez dans la navigation sur l'icône "Cartographie des données"
+3. Vous arrivez sur cette page :
+
+<figure><img src="../../.gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure>
+
+Choisissez ensuite le référentiel auquel vous souhaitez accéder.
+
+
+
 ## Établissez votre liste de mesures de sécurité&#x20;
 
 {% embed url="https://youtu.be/5gHAl_8Tdv4" %}
