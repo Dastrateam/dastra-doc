@@ -1,3 +1,7 @@
+---
+description: Foire aux questions générales sur le produit
+---
+
 # Foire aux questions
 
 ## Comment afficher le nom des modules sous les icones dans Dastra ?
