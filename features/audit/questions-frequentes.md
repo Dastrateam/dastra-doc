@@ -23,3 +23,15 @@ Vous pouvez créer un modèle de mail qui pourra être utilisé dans les invitat
 
 Oui, c'est possible depuis le type de question "texte long" en cochant la case "Suggérer automatiquement une tâche(s) à partir de la réponse".
 
+## Est-il possible de publier un modèle de questionnaire pour tous les utilisateurs Dastra  ?&#x20;
+
+Oui, c'est possible depuis le modèle de questionnaire en cliquant sur contribuer :\
+
+
+
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-07-26 120018.png" alt=""><figcaption></figcaption></figure>
+
+</div>
