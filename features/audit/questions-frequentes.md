@@ -32,6 +32,6 @@ Oui, c'est possible depuis le modèle de questionnaire en cliquant sur contribue
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-07-26 120018.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-07-26 120545.png" alt=""><figcaption></figcaption></figure>
 
 </div>
