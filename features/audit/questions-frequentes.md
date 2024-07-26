@@ -25,7 +25,7 @@ Oui, c'est possible depuis le type de question "texte long" en cochant la case "
 
 ## Est-il possible de publier un modèle de questionnaire pour tous les utilisateurs Dastra  ?&#x20;
 
-Oui, c'est possible depuis le modèle de questionnaire en cliquant sur contribuer :\
+Oui, c'est possible depuis le modèle de questionnaire en cliquant sur "Contribuer" :\
 
 
 
