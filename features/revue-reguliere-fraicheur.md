@@ -30,11 +30,11 @@ Pour désactiver l'option, il vous suffit de décocher la case _Activer la revue
 
 ### Visualisation de l'indicateur de fraicheur
 
-Tous les objets disposant de la fonctionnalité disposent d'une colonne fraicheur que vous pouvez ajouter aux tableaux récapitulatifs. Cette colonne vous permettra de suivre l'état de fraicheur de chaque élément.&#x20;
+Tous les objets disposant de la fonctionnalité disposent d'une colonne "Date de dernière revue" que vous pouvez ajouter aux tableaux récapitulatifs. Cette colonne vous permettra de suivre l'état de fraicheur de chaque élément.&#x20;
 
 Veuillez noter que la fraicheur ne s'affiche que pour les **éléments publiés.**
 
-<figure><img src="../.gitbook/assets/image (349).png" alt=""><figcaption><p>La colonne fraicheur </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2024-07-26 154523.png" alt="La colonne &#x22;Date de dernière revue&#x22;"><figcaption><p>La colonne "Date de dernière revue"</p></figcaption></figure>
 
 Vous retrouvez également cet indicateur dans le menu de raccourcis des éléments.
 
@@ -44,7 +44,7 @@ Vous retrouvez également cet indicateur dans le menu de raccourcis des élémen
 
 L'affichage de la fraicheur dans le cadre d'un traitement de données est un peu plus poussé que sur les autres éléments disposant de la fonctionnalité.
 
-Vous retrouverez l'indicateur de fraicheur en haut à droite de votre fiche de traitement (dans la mesure ou le traitement a été publié et marqué comme étant frais au moins une fois)
+Vous retrouverez l'indicateur de fraicheur en haut à droite de votre fiche de traitement (dans la mesure où le traitement a été publié et marqué comme étant frais au moins une fois)
 
 Cet indicateur est composé d'un label prenant les valeurs "Frais", "E en attente" et "Dépassé", d'une couleur (respectivement vert, jaune, rouge), d'une barre de progression diminuant à mesure que la date de péremption approche, d'un bouton pour marquer le traitement comme frais et du nombre de jours restants ou de retard par rapport à la date de péremption.&#x20;
 
@@ -80,9 +80,9 @@ J'ai défini 1 an d'intervalle pour la revue des traitements. Pour un traitement
 
 ### Rafraichir un élément
 
-Vous pouvez à tout moment, et sans forcément attendre la date de prochaine revue, décider de passer en revue l'élément. Pour ce faire, cliquez sur la cellule de la colonne fraicheur d'un élément lorsque vous êtes dans une vue tableau. Il faut bien sur que la fonctionnalité soit active pour cet élément et que vous affichiez la colonne en question.
+Vous pouvez à tout moment, et sans forcément attendre la date de prochaine revue, décider de passer en revue l'élément. Pour ce faire, cliquez sur la cellule de la colonne "Date de dernière revue" d'un élément lorsque vous êtes dans une vue tableau. Il faut bien sur que la fonctionnalité soit active pour cet élément et que vous affichiez la colonne en question.
 
-<figure><img src="../.gitbook/assets/image (346).png" alt=""><figcaption><p>Accéder à la fenêtre de revue régulière de l'élément</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2024-07-26 154523 (1).png" alt=""><figcaption><p>Accéder à la fenêtre de revue régulière de l'élément</p></figcaption></figure>
 
 Vous pouvez également y accéder directement depuis la vue d'édition de l'élément que vous souhaitez passer en revue en cliquant sur l'icône fraicheur située dans le menu de raccourcis.
 
