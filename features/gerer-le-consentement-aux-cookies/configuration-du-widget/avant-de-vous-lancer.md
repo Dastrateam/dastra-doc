@@ -65,5 +65,9 @@ Pour bloquer les cookies par défaut, il existe plusieurs stratégies possibles 
 
 
 
+{% content-ref url="scannez-les-cookies-deposes-sur-votre-site-web.md" %}
+[scannez-les-cookies-deposes-sur-votre-site-web.md](scannez-les-cookies-deposes-sur-votre-site-web.md)
+{% endcontent-ref %}
+
 
 
