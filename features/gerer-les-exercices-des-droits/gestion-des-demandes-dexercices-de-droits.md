@@ -40,7 +40,7 @@ Vous pouvez également créer des demandes de droit automatiquement (voir suivan
 
 {% embed url="https://youtu.be/Lxhzm7wjFwk" %}
 
-Pour créer une ou plieurs demandes d'exercice de droit via une adresse mail de collecte dans Dastra, il faut d'abord activer l'intégration "adresse email de collecte".&#x20;
+Pour créer une ou plieurs demandes d'exercice de droit via une adresse mail de collecte dans Dastra, il faut d'abord activer [l'intégration "adresse email de collecte"](../settings/data-collection-mailboxes.md).
 
 Pour cela, rendez-vous dans les **réglages** de l'espace de travail, puis dans la section "**intégrations**" et enfin cliquez sur "**Adresse mail de collecte**".
 

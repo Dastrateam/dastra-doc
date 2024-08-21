@@ -185,7 +185,7 @@
   * [SCIM](features/settings/scim.md)
   * [Gestion des clés d'API](features/settings/gestion-des-cles-dapi.md)
   * [Notifications](features/settings/notifications.md)
-  * [Adresses emails de collecte](features/settings/adresses-emails-de-collecte.md)
+  * [Adresses emails de collecte](features/settings/data-collection-mailboxes.md)
   * [Intégrations OneDrive/Google Drive](features/settings/integrations-onedrive-google-drive.md)
   * [Etapes de workflow / déroulement du processus](features/settings/workflows.md)
   * [Webhooks](features/settings/webhooks.md)

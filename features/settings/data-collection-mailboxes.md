@@ -60,6 +60,6 @@ Tous les objets générés depuis une boite de collecte sont taggés email entra
 
 ### Notification de succès
 
-En cas de création réussie d'un objet suite à la réception d'un e-mail sur la boite de collecte, une notification par e-mail est automatiquement envoyée à l'adresse qui a déclenché l'intégration. Cette notification confirme que l'objet a été créé avec succès dans votre SaaS, fournissant ainsi une assurance immédiate que la demande ou l'action a bien été prise en compte.
+En cas de création réussie d'un objet suite à la réception d'un e-mail sur la boite de collecte, une notification par e-mail est automatiquement envoyée à l'adresse qui a déclenché l'intégration. Cette notification confirme que l'objet a été créé avec succès dans Dastra, fournissant ainsi une assurance immédiate que la demande ou l'action a bien été prise en compte.
 
 La langue de l'email de confirmation correspond à la langue par défaut de l'espace de travail dans lequel l'intégration est installée (paramètres de votre espace de travail > langue par défaut).
