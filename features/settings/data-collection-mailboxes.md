@@ -50,6 +50,9 @@ En cliquant sur "Créer", Dastra finalise l'installation de l'intégration et me
 Les pièces jointes de l'e-mail sont ajoutées en tant que pièces jointes de l'objet, sous réserve que:
 
 * **Les Extensions de fichiers sont valides** : seules les pièces jointes avec une extension de fichier valide seront conservées.
+
+Voici la liste des pièces jointes autorisées : `7z`, `csv`, `doc`, `docx`, `eml`, `epub`, `gif`, `htm`, `html`, `jpeg`, `jpg`, `json`, `md`, `msg`, `ods`, `odg`, `odp`, `odt`, `pdf`, `png`, `ppt`, `pptx`, `rar`, `rtf`, `svg`, `txt`, `xls`, `xlsm`, `xlsx`, `zip`.
+
 * **Les images respectent une taille minimale** : pour les fichiers de type image (jpg, png, gif, etc.), une taille minimale de 5 KB est requise. Cette contrainte permet d'éviter l'inclusion d'images non pertinentes comme celles des signatures d'e-mails.
 
 ### Retrouver les objets générés depuis une boite de collecte
