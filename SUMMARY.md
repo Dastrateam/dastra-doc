@@ -131,7 +131,7 @@
   * [Questions fréquentes](features/planifier/questions-frequentes.md)
 * [Exercices des droits](features/gerer-les-exercices-des-droits/README.md)
   * [Gestion des demandes d'exercices de droits](features/gerer-les-exercices-des-droits/gestion-des-demandes-dexercices-de-droits.md)
-  * [Widget de collecte de demandes](features/gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md)
+  * [Formulaire de collecte de demandes](features/gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md)
   * [Intégration technique](features/gerer-les-exercices-des-droits/integration-technique.md)
   * [Intégration de l'API](features/gerer-les-exercices-des-droits/integration-de-lapi.md)
 * [Violations de données](features/documenter-les-violations-de-donnees/README.md)
