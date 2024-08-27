@@ -1,8 +1,8 @@
-# Créer des relation entre les traitements
+# Créer des relations entre les traitements
 
 Dans Dastra vous avez la possibilité de créer des relations entre vos traitements afin de faciliter leur gestion.
 
-Ces relations sont possibles entre des traitements situés dans un même espace de travail mais également au sein d'espaces de travail différents.
+Ces relations sont possibles entre des traitements situés dans un même espace de travail.
 
 ### Pourquoi faire des relations entre les traitements ?
 
