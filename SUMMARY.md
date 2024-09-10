@@ -41,7 +41,8 @@
 * [Support](commencer/le-support/README.md)
   * [L'assistant dastronaute](commencer/le-support/lassistant-dastronaute.md)
   * [L'aide en ligne](commencer/le-support/laide-en-ligne.md)
-  * [Faire une demande de support](commencer/le-support/faire-une-demande-de-support.md)
+  * [Demande de support](commencer/le-support/faire-une-demande-de-support.md)
+  * [Le processus de support client](commencer/le-support/le-processus-de-support-client.md)
 
 ## ⚙️ Les fonctionnalités <a href="#features" id="features"></a>
 
