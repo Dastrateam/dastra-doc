@@ -198,6 +198,7 @@
 ## 📄 La documentation API <a href="#api-references" id="api-references"></a>
 
 * [Liste des endpoints d'API](api-references/liste-des-endpoints-dapi.md)
+* [Cas d'usage de l'API](api-references/cas-dusage-de-lapi.md)
 * [Configuration API](api-references/configuration-api.md)
 * [Authentification](api-references/authentification.md)
 * [API References](https://dastra.readme.io)

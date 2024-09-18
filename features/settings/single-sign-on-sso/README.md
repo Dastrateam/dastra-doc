@@ -44,9 +44,22 @@ Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml-2.md
 
 ## Comment activer le provisionnement automatique des utilisateurs ?
 
-Si vous souhaitez que les utilisateurs de votre fournisseur d'identité n'ait pas besoin de se créer des comptes pour accéder à l'entité, vous pouvez cocher la case "provisionnement automatique des utilisateurs". Si vous fournissez à vos utilisateurs une url de fournisseur SSO comme celle-ci : https://account.dastra.eu/account/loginexternal?provider={id de votre provider}\&returnUrl=https://www.dastra.eu&#x20;
+Si vous souhaitez que les utilisateurs de votre fournisseur d'identité n'ait pas besoin de se créer des comptes pour accéder à l'entité, vous pouvez cocher la case "provisionnement automatique des utilisateurs". Si vous fournissez à vos utilisateurs une url de fournisseur SSO comme celle-ci :&#x20;
 
-\=> dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra et un mail de notification vous sera envoyé quelques heures plus tard.
+```
+https://account.dastra.eu/account/loginexternal?
+provider={id de votre provider}&
+returnUrl=https://www.dastra.eu 
+```
+
+Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :\
+
+
+<figure><img src="../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+
+Dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra et un mail de notification vous sera envoyé quelques heures plus tard.
+
+Le provisionnement automatique ne fonctionne que si ils transmettent ce lien à leurs utilisateurs, ils ne peuvent pas le faire en passant par la page de login classique.
 
 {% hint style="warning" %}
 Si le compte de l'utilisateur est supprimé ou invalidé dans le fournisseur d'authentification, son compte ne sera pas effacé dans Dastra, il ne pourra en revanche plus se connecter. Vous avez la possibilité d'épurer ses comptes[ via le gestionnaire d'utilisateur de l'abonnement](https://app.dastra.eu/general-settings/users)
