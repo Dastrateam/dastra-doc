@@ -28,10 +28,28 @@ Oui, c'est possible depuis le type de question "texte long" en cochant la case "
 Oui, c'est possible depuis le modèle de questionnaire en cliquant sur "Contribuer" :\
 
 
-
-
 <div align="left">
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-07-26 120545.png" alt=""><figcaption></figcaption></figure>
 
 </div>
+
+## A quoi correspondent les couleurs dans les réponses aux questionnaires ?
+
+Dans les sections du questionnaire, des couleurs sont associées aux icones des questions.&#x20;
+
+Voici la correspondance des couleurs :&#x20;
+
+| Couleur                | Image                                                                         | Description                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Gris entouré de rouge  | ![](<../../.gitbook/assets/image (385).png>)                                  | Question obligatoire non répondue                                                       |
+| Noir entouré de rouge  | ![](<../../.gitbook/assets/image (387).png>)                                  | Question obligatoire répondue                                                           |
+| Gris                   | ![](<../../.gitbook/assets/image (388).png>)                                  | Question non obligatoire non répondue                                                   |
+| Vert                   | ![](<../../.gitbook/assets/image (389).png>)                                  | Toutes les questions de la section ont un réponse. Question non obligatoire répondue    |
+| Vert entouré de rouge  | <img src="../../.gitbook/assets/image (391).png" alt="" data-size="original"> | Toutes les questions de la section ont un réponse. Question obligatoire répondue        |
+| Noir                   | <img src="../../.gitbook/assets/image (390).png" alt="" data-size="original"> | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
+
+
+
+
+
