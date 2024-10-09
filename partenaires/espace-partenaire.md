@@ -1,4 +1,6 @@
-# Accéder à l'espace partenaire
+# Espace partenaire
+
+{% embed url="https://www.loom.com/share/8f62bea5c0f54ef3b3de3dc811f15a2d?sid=9540de7f-9501-4af1-8d2d-11250d859a0e" %}
 
 En tant que partenaire, vous pouvez accéder à un espace partenaire.&#x20;
 
@@ -16,6 +18,8 @@ Pour accéder à l'espace partenaire, vous devez vous rendre dans votre organisa
 {% hint style="info" %}
 Prérequis : vous devez avoir le rôle de propriétaire de l'organisation partenaire pour pouvoir afficher cet espace.&#x20;
 {% endhint %}
+
+
 
 
 
