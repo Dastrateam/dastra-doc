@@ -195,6 +195,11 @@
   * [Modèles de messages](features/settings/modeles-de-messages.md)
   * [Domaines emails](features/settings/domaines-emails.md)
 
+***
+
+* [PARTENAIRES](partenaires/README.md)
+  * [Accéder à l'espace partenaire](partenaires/acceder-a-lespace-partenaire.md)
+
 ## 📄 La documentation API <a href="#api-references" id="api-references"></a>
 
 * [Liste des endpoints d'API](api-references/liste-des-endpoints-dapi.md)
