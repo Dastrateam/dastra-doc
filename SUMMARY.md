@@ -197,7 +197,7 @@
 
 ## PARTENAIRES <a href="#partners" id="partners"></a>
 
-* [Espace partenaire](partners/portal.md)
+* [Portail partenaire](partners/portal.md)
 
 ## 📄 La documentation API <a href="#api-references" id="api-references"></a>
 
