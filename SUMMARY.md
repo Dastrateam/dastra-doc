@@ -195,9 +195,9 @@
   * [Modèles de messages](features/settings/modeles-de-messages.md)
   * [Domaines emails](features/settings/domaines-emails.md)
 
-## PARTENAIRES
+## PARTENAIRES <a href="#partners" id="partners"></a>
 
-* [Espace partenaire](partenaires/espace-partenaire.md)
+* [Espace partenaire](partners/portal.md)
 
 ## 📄 La documentation API <a href="#api-references" id="api-references"></a>
 
