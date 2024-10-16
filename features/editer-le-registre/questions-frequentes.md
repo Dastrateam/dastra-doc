@@ -90,3 +90,8 @@ Vous pouvez dupliquer un registre et les traitements associés de plusieurs faç
 * soit en[ exportant et réimportant](exporter-importer-le-registre.md) les traitements au format JSON
 * soit en allant dans l'espace de travail cible et créer les traitements à partir de la bibliothèque. Vous pourrez alors changer la source de la bibliothèque et choisir l'espace de travail d'origine du registre.
 
+## Comment changer de type de traitement (passer d'un traitement créer en tant que responsable de traitement a un traitement créé en tant que sous-traitant et vise versa) ?
+
+Vous pouvez changer de type de traitement en cliquant sur "Basculer en sous-traitant" ou "Basculer en responsable de traitement" :&#x20;
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-16 122037.png" alt=""><figcaption></figcaption></figure>
