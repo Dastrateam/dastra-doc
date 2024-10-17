@@ -31,7 +31,7 @@ puis afficher les options liées à l'utilisateur&#x20;
 
 
 
-![](<../../.gitbook/assets/image (251) (1) (1) (1).png>)
+![](<../../.gitbook/assets/Capture d'écran 2024-10-17 144942.png>)
 
 
 
