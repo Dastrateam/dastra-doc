@@ -10,7 +10,7 @@ Vous pouvez amener quelqu'un à collaborer sur vos espaces en l'invitant dans l'
 
 Vous pouvez inviter des utilisateurs à votre espace de travail en cliquant sur le bouton "réglages" en bas à gauche de l'écran, puis "gestion d'accès / utilisateurs" et enfin "inviter un utilisateur":
 
-<figure><img src="../../.gitbook/assets/image (12) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 143642.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -34,7 +34,7 @@ Vous pouvez piloter les invitations en cours dans les réglages de l'espace de t
 
 Si l'utilisateur invité n'a pas cliqué sur le lien d'invitation et que le lien a expiré (au bout de 10 jours), vous pouvez lui renvoyer le lien d'invitation en cliquant sur le bouton "Renvoyer l'invitation".&#x20;
 
-<figure><img src="../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 143758.png" alt=""><figcaption></figcaption></figure>
 
 ### Créer puis affectez des équipes
 
@@ -57,9 +57,9 @@ Vous pouvez demander l'import d'une liste jusqu'à 200 utilisateurs, dans la lim
 **Les étapes à suivre :**&#x20;
 
 * rendez vous sur ce lien : [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users)
-* Cliquez sur le bouton "contacter l'équipe de Dastra"
+* Cliquez sur le bouton "Importer"
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 143932.png" alt=""><figcaption></figcaption></figure>
 
 * Créez un fichier par espace de travail au format CSV comprenant les colonnes suivantes séparées par des , (virgule) :&#x20;
 
@@ -105,7 +105,7 @@ Attention, les rôles doivent être créés préalablement.
 
 
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Ici l'identifiant du rôle est le numéro 115</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 144450.png" alt=""><figcaption><p>Ici l'identifiant du rôle est le numéro 10</p></figcaption></figure>
 
 
 
