@@ -25,11 +25,11 @@ Rendez-vous dans "Réglages" à gauche de l'écran, puis cliquez sur "Unités or
 
 
 
-![Bouton d'accès aux réglages de l'espace de travail](<../../.gitbook/assets/image (252) (1) (1) (1) (1) (1).png>)
+![Bouton d'accès aux réglages de l'espace de travail](<../../.gitbook/assets/Capture d'écran 2024-10-17 123108.png>)
 
 
 
-![Accès aux paramètres des unités organisationnelles](<../../.gitbook/assets/image (247) (1).png>)
+![Accès aux paramètres des unités organisationnelles](<../../.gitbook/assets/Capture d'écran 2024-10-17 123327.png>)
 
 Vous accéderez ainsi à l'écran de **création et de paramétrage** des unités organisationnelles :
 
@@ -67,11 +67,11 @@ Pour modifier un département, il suffit de cliquer sur les 3 points à droite d
 
 Vous pouvez importer une liste d'unités organisationnelles via un fichier d'import. Ce fichier est à télécharger en cliquant sur le bouton "Importer" dans l'interface de gestion des unités organisationnelles.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123622.png" alt=""><figcaption></figcaption></figure>
 
 Cliquez ensuite "Télécharger le modèle de fichier"
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123723.png" alt=""><figcaption></figcaption></figure>
 
 Après avoir renseigné le fichier, déposez le dans le champ de dépôt et suivez les instructions.
 
