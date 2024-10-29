@@ -82,7 +82,7 @@ Ca fonctionne de la manière suivante :&#x20;
 {% for purpose in purposes %}
   {{ purpose }}
 {% endfor %}
-{% endraw %}i
+{% endraw %}
 ```
 
 Dans l'exemple ci dessus, je déclare vouloir faire une boucle sur la liste "purposes" et affecter la variable "_purpose_" à chaque élément que j'affiche directement.
