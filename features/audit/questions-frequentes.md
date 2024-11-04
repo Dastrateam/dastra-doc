@@ -51,5 +51,35 @@ Voici la correspondance des couleurs :&#x20;
 
 
 
+### &#x20;Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ?
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 170330.png" alt=""><figcaption></figcaption></figure>
 
 
+
+\
+Ce message signal qu'une ou plusieurs questions dans le questionnaire porte exactement le même "Nom de la variable"  ce qui crée l'erreur.&#x20;
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 163831.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+
+
+Les questions ayant le même "Nom de la variable" sont identifiables grâce au message d'erreur "Le nom de la variable est présent dans une autre question" s'affichant au-dessus d'elles.
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 164534.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+
+
+Pour résoudre ce problème, il faut donc modifier le "Nom de la variable" de chacune des questions ayant le même "Nom de la variable" de manière à la rendre unique pour chaque question, par exemple en ajoutant un \_ est un numéro incrémenté à la fin de chaque "Nom de la variable" .
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 165757.png" alt=""><figcaption></figcaption></figure>
+
+Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, il sera possible de l'enregistrer normalement.&#x20;
