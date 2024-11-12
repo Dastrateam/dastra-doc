@@ -7,6 +7,8 @@ description: >-
 
 # Sécurité chez Dastra
 
+Chez Dastra, nous prenons la sécurité très au sérieux. Voici quelques éléments que nous partageons concernant la mise en oeuvre de mesures de sécurité :&#x20;
+
 ## Hébergement sécurisé sur le Cloud
 
 Nous externalisons l'hébergement des données de la plateforme auprès de Microsoft Azure. Nous avons choisi cette plateforme car elle est très largement déployée chez nos clients (MS 365...) et celle-ci offre le niveau de sécurité [parmi les plus élevés du marché](https://learn.microsoft.com/fr-fr/azure/compliance/).
@@ -40,7 +42,7 @@ L'ensemble des clés de chiffrement est stocké **dans un coffre de clés manag�
 
 Nous faisons auditer tous les ans la sécurité de l'application par un auditeur tiers indépendant.&#x20;
 
-Le dernier test a été réalisé en septembre 2023 et n'a révélé aucune vulnérabilité critique.
+Le dernier test a été réalisé en septembre 2024 et n'a révélé aucune vulnérabilité critique.
 
 Notre méthodologie de test de sécurité suit les recommandations de l'**OWASP** et se compose de différentes phases, de la recherche d'informations de source ouverte (Reconnaissance) à l'exploitation des vulnérabilités découvertes.
 
