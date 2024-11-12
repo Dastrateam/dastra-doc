@@ -57,7 +57,5 @@ Par défaut Dastra va créer des fichiers dans le répertoire "**Applications\Da
 {% hint style="warning" %}
 Attention ! La mise en place de la connexion OneDrive **donne un accès à l'ensemble des fichiers de votre Drive personnel**. Il faut donc être très prudent, car le connecteur sera mis à disposition à l'ensemble des utilisateurs disposant du droit de lecture "Fichiers".
 
-Nous vous recommandons d'utiliser un compte de service ne pouvant pas contenir de fichiers personnels avec un dossier que vous pouvez éventuellement partager avec les autres utilisateurs.
+Il est recommandé de créer un lecteur OneDrive dédié, vous pouvez suivre ce [guide de création de site dédié dans sharepoint](https://learn.microsoft.com/en-us/sharepoint/create-site-collection).
 {% endhint %}
-
-Attention ! La mise en place de la connexion OneDrive **donne un accès à l'ensemble des fichiers de votre Drive personnel**. Il faut donc être très prudent, car le connecteur sera mis à disposition à l'ensemble des utilisateurs disposant du droit de lecture "Fichiers". Il est recommandé de créer un lecteur OneDrive dédié, vous pouvez suivre ce [guide de création de site dédié dans sharepoint](https://learn.microsoft.com/en-us/sharepoint/create-site-collection).
