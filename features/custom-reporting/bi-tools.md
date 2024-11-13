@@ -33,7 +33,7 @@ Attention ! Ne transférez à personne le lien généré. Celui-ci permet d'acc�
 
 ## Mise en place dans l'outil BI :&#x20;
 
-####
+#### Microsoft Power BI
 
 1. **Ouvrir Power BI Desktop :**
    * Lancez **Power BI Desktop** sur votre machine.
