@@ -51,7 +51,7 @@ Voici la correspondance des couleurs :&#x20;
 
 
 
-### &#x20;Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ?
+### &#x20;Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ? <a href="#slug-error" id="slug-error"></a>
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 170330.png" alt=""><figcaption></figcaption></figure>
 

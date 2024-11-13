@@ -94,7 +94,7 @@
   * [Planifier un questionnaire ou un PIA](features/audit/planifier-un-audit.md)
   * [Partager un rapport d'audit ou PIA](features/audit/rapport-daudit.md)
   * [Supprimer un audit ou un modèle d'audit](features/audit/supprimer-un-audit-ou-un-modele-daudit.md)
-  * [Questions fréquentes](features/audit/questions-frequentes.md)
+  * [Questions fréquentes](features/audit/faq.md)
 * [Privacy hubs](features/privacy-hubs/README.md)
   * [Créer ou modifier un privacy-hub](features/privacy-hubs/creer-ou-modifier-un-privacy-hub.md)
   * [Paramétrer votre Privacy-hub](features/privacy-hubs/parametrer-votre-privacy-hub.md)
