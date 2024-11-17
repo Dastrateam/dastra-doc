@@ -1,6 +1,6 @@
 # Collecter des projets de traitements, d'incidents, d'actifs ou de contrats
 
-Nous avons développé des modèles de questionnaires spécialement conçus pour fonctionner avec les Privacy-centers : les modèles pour la création de traitements, d'incidents de violation, d'actifs dans le référentiel et de contrats. Ces modèles fonctionnent de la même manière que nos autres modèles, mais une fois complétés, les réponses pourront être transformées en brouillons correspondants.
+Nous avons développé des modèles de questionnaires spécialement conçus pour fonctionner avec les Privacy hubs : les modèles pour la création de traitements, d'incidents de violation, d'actifs dans le référentiel et de contrats. Ces modèles fonctionnent de la même manière que nos autres modèles, mais une fois complétés, les réponses pourront être transformées en brouillons correspondants.
 
 #### Ajouter un modèle
 

@@ -1,5 +1,5 @@
 ---
-description: Apprenez à configurer les éléments de design de votre Privacy-center
+description: Apprenez à configurer les éléments de design de votre Privacy hub
 ---
 
 # Apparence et design
