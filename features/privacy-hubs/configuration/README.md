@@ -4,15 +4,15 @@ Personnalisez votre Privacy hub pour créer un portail de confidentialité adapt
 
 Le Privacy hub est modulaire et vous permet de choisir les fonctionnalités à utiliser dans ce dernier. Voici en détails les informations sur la configuration de chaque fonctionnalité du hub
 
-* [Page d'accueil et configuration générale](page-daccueil-et-configuration-generale.md)
+* [Page d'accueil et configuration générale](home.md)
 * [Questionnaires](questionnaires.md)
 * [Exercice des droits](data-subject-requests.md)
-* [Registre des traitements](registre-des-traitements.md)
-* [Documents](documents.md)
-* [Organigramme](organigramme.md)
+* [Registre des traitements](record-of-processing-activities.md)
+* [Documents](attachments.md)
+* [Organigramme](org-chart.md)
 * [Contacts](contacts.md)
-* [Sécurité](securite.md)
-* [Apparence et design](apparence-et-design.md)
+* [Sécurité](security.md)
+* [Apparence et design](design.md)
 
 ### Activer / Désactiver le hub
 

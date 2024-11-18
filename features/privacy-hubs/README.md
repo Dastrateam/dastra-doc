@@ -8,12 +8,12 @@ Le **Privacy Hub** permet aux organisations de créer et de personnaliser un **p
 
 Le Privacy hub offre une configuration modulaire et flexible, vous permettant de sélectionner et d'activer les fonctionnalités de votre choix parmi les options suivantes :
 
-* [Page d'accueil personnalisable](configuration/page-daccueil-et-configuration-generale.md) (obligatoire)
+* [Page d'accueil personnalisable](configuration/home.md) (obligatoire)
 * [Questionnaires](configuration/questionnaires.md) (optionnel - nécessite la fonctionnalité [Questionnaires](../audit/))
-* [Documents ](configuration/documents.md)(optionnel)
+* [Documents ](configuration/attachments.md)(optionnel)
 * [Exercice des droits](configuration/data-subject-requests.md) (optionnel - nécessite la fonctionnalité [Exercice des droits](../gerer-les-exercices-des-droits/))
-* [Organigramme](configuration/organigramme.md) (optionnel)
-* [Registre des traitements](configuration/registre-des-traitements.md) (optionnel - nécessite la fonctionnalité [registre des traitements](../editer-le-registre/))
+* [Organigramme](configuration/org-chart.md) (optionnel)
+* [Registre des traitements](configuration/record-of-processing-activities.md) (optionnel - nécessite la fonctionnalité [registre des traitements](../editer-le-registre/))
 
 ### Comment accéder à la fonctionnalité&#x20;
 
