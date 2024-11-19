@@ -42,6 +42,25 @@ Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml-2.md
 [adfs.md](adfs.md)
 {% endcontent-ref %}
 
+## Comment activer pour tous les utilisateurs de votre organisation le SSO ?
+
+### Mise en place :
+
+* Cliquez sur votre configuration SSO
+* Cocher la case "Forcer pour tous les utilisateurs"
+
+<figure><img src="../../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
+
+### Gestion des d'utilisateurs exemptés de login SSO
+
+Dans certains cas, vous souhaitez **désactiver le SSO pour certains utilisateurs** (par exemple un administrateur de sécurité, un compte de service, un utilisateur qui n'est pas dans votre Active Directory...), dans ce cas il est possible de renseigner des utilisateurs spécifiques qui ne seront pas rediriger vers le login SSO de votre organisation. Il est recommandé de nommer un utilisateur avec un compte de service local, ce qui permet de gérer les cas de dysfonctionnement du SSO dans le cas par exemple d'une panne du fournisseur d'identité.
+
+Ces utilisateurs pourront se connecter à l'application **en utilisant leur mot de passe**.
+
+Vous pouvez nommer des utilisateurs exemptés de SSO en sélectionnant les utilisateurs de votre organisation dans le champ suivant :
+
+<figure><img src="../../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
+
 ## Comment activer le provisionnement automatique des utilisateurs ?
 
 Si vous souhaitez que les utilisateurs de votre fournisseur d'identité n'ait pas besoin de se créer des comptes pour accéder à l'entité, vous pouvez cocher la case "provisionnement automatique des utilisateurs". Si vous fournissez à vos utilisateurs une url de fournisseur SSO comme celle-ci :&#x20;
