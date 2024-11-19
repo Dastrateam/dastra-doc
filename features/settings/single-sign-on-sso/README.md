@@ -53,7 +53,7 @@ Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml-2.md
 
 ### Gestion des d'utilisateurs exemptés de login SSO
 
-Dans certains cas, vous souhaitez **désactiver le SSO pour certains utilisateurs** (par exemple un administrateur de sécurité, un compte de service, un utilisateur qui n'est pas dans votre Active Directory...), dans ce cas il est possible de renseigner des utilisateurs spécifiques qui ne seront pas rediriger vers le login SSO de votre organisation. Il est recommandé de nommer un utilisateur avec un compte de service local, ce qui permet de gérer les cas de dysfonctionnement du SSO dans le cas par exemple d'une panne du fournisseur d'identité.
+Dans certains cas, vous souhaitez **désactiver le SSO pour certains utilisateurs** (par exemple un administrateur de sécurité, un compte de service, un utilisateur qui n'est pas dans votre Active Directory...), dans ce cas il est possible de renseigner des utilisateurs spécifiques qui ne seront pas redirigés vers le login SSO de votre organisation. Il est recommandé de nommer un utilisateur avec un compte de service local, ce qui permet de gérer les cas de dysfonctionnement du SSO dans le cas par exemple d'une panne du fournisseur d'identité ou un problème deconfiguration.
 
 Ces utilisateurs pourront se connecter à l'application **en utilisant leur mot de passe**.
 
@@ -109,3 +109,9 @@ Vous pouvez configurer le type de login des utilisateurs en vous rendant dans [l
 ![](<../../../.gitbook/assets/image (118).png>)
 
 Vous pourrez également définir le type de login lors de l'invitation de nouveaux utilisateurs.
+
+
+
+### Que faire si je ne parviens pas à me logger en SSO ?
+
+Contactez immédiatement [le support](../../../commencer/le-support/faire-une-demande-de-support.md)
