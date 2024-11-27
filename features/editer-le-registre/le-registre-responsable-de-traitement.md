@@ -64,7 +64,12 @@ Pour chaque traitement, le registre d'un responsable de traitement indique au mi
 ### Les mesures de sécurité
 
 * Mesures techniques et organisationnelles mises en place pour sécuriser chaque traitement de données&#x20;
-* Par exemple, chiffrement des données, pseudonymisation, limitation des accès
+*   Par exemple, chiffrement des données, pseudonymisation, limitation des accès\
+    \
+    \
+
+
+    ***
 
 {% hint style="info" %}
 Il est possible de passer d'un traitement créer en tant que responsable de traitement a un traitement créé en tant que sous-traitant et vise versa.\

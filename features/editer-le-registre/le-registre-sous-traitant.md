@@ -32,6 +32,8 @@ Celui-ci contient :&#x20;
 
 ![Les différentes sections d'un traitement "sous-traitant" dans Dastra](<../../.gitbook/assets/image (195).png>)
 
+***
+
 {% hint style="info" %}
 Il est possible de passer d'un traitement créer en tant que responsable de traitement a un traitement créé en tant que sous-traitant et vise versa.\
 [La procédure est disponible ici](https://doc.dastra.eu/features/editer-le-registre/questions-frequentes#comment-changer-de-type-de-traitement-passer-dun-traitement-creer-en-tant-que-responsable-de-traitem)
