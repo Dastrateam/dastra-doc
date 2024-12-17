@@ -8,7 +8,7 @@ description: Découvrez comment suivre les notifications de violation de donnée
 
 [L’article 4](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre1#Article4).12) du RGPD définit une violation de données à caractère personnel comme &#x20;
 
-_une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l'altération, la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou l'accès non autorisé à de telles donnée_s.
+_une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l'altération, la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou l'accès non autorisé à de telles donné&#x65;_&#x73;.
 
 Il s’agit de tout incident de sécurité, d’origine malveillante ou non et se produisant de manière intentionnelle ou non, ayant comme conséquence de compromettre l’intégrité, la confidentialité ou la disponibilité de données personnelles.
 

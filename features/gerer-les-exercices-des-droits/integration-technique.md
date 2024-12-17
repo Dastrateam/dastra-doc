@@ -14,7 +14,7 @@ Le widget est intégré au **SDK javascript** de dastra.
 
 ### Prérequis
 
-Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**une clé publique d'API** : [lire la documentation](https://doc.dastra.eu/\~/changes/OdM7a8W4pn3S8n18W72A/features/settings/gestion-des-cles-dapi) ou [accéder directement à la page de gestion des clés d'API](https://app.dastra.eu/general-settings/api)
+Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**une clé publique d'API** : [lire la documentation](https://doc.dastra.eu/~/changes/OdM7a8W4pn3S8n18W72A/features/settings/gestion-des-cles-dapi) ou [accéder directement à la page de gestion des clés d'API](https://app.dastra.eu/general-settings/api)
 
 ### Mise en place du widget dans l'interface dédiée
 
@@ -77,7 +77,7 @@ Vous pouvez remplacer le nom de la colonne **refId** par le nom de propriété s
 * address
 * phoneNumber
 * message
-* additionalDatas**\***
+* additionalData&#x73;**\***
 
 \*Pour le cas spécifique des champs personnalisés, vous devez faire référence au nom additionalDatas :
 

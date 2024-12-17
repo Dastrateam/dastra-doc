@@ -41,7 +41,7 @@ La configuration de votre login devrait ressembler à ceci :&#x20;
 
 **Etape 3** : Conservez les valeurs suivantes :&#x20;
 
-* **SP redirect URI (format : https://account.dastra.eu/xxxxx-xxxx-xxxx-xxxx/Acs) :**The SP redirect URI is Application Callback URL (SAML Token will be posted here). The encoding supported are SHA-256 and higher.&#x20;
+* **SP redirect URI (format : https://account.dastra.eu/xxxxx-xxxx-xxxx-xxxx/Acs) :**&#x54;he SP redirect URI is Application Callback URL (SAML Token will be posted here). The encoding supported are SHA-256 and higher.&#x20;
 * **Identity Provider's Entity id (issuer)**
 
 Ces deux valeurs vous serviront à configurer le serveur ADFS pour qu'il accepte les requêtes SSO de Dastra

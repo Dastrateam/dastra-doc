@@ -17,7 +17,7 @@ Cette fonctionnalité puissante vous permet de créer des rapports sur mesure, a
 
 * **Métrique** : une métrique est une valeur mesurable permettant de regrouper (agréger) les éléments _Exemple: Le nombre de traitement, la moyenne de durée de traitement d'une tâche..._
 * **Dimension** : par opposition à la métrique, la dimension ne permet pas d'agréger les données. Il s'agit d'une propriété (= une colonne) toute simple d'un élément. \
-  _Exemple: le nom du traitement, le statut du traitement, la référence, ..._
+  &#xNAN;_&#x45;xemple: le nom du traitement, le statut du traitement, la référence, ..._
 
 ## Construction du rapport
 

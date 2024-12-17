@@ -73,7 +73,39 @@ Cliquez ensuite "Télécharger le modèle de fichier"
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123723.png" alt=""><figcaption></figcaption></figure>
 
-Après avoir renseigné le fichier, déposez le dans le champ de dépôt et suivez les instructions.
+Vous pouvez aussi le télécharger directement ici&#x20;
+
+{% file src="../../.gitbook/assets/sample-Area.csv" %}
+&#x20;Fichier d'import des unités organisationnelles
+{% endfile %}
+
+
+
+
+
+Le fichier doit être renseigné avec les champs suivants de manière obligatoire :&#x20;
+
+* **Id** : L'identifiant unique de l'unité organisationnelle (nombre à 5 chiffres)
+* **Label** : Le nom de l'unité organisationnelle (chaine de caractère)
+* **CountryCode** : Le pays de l'unité organisationnelle (codes de pays sur 2 caractères [ISO 3166](https://documentation.abes.fr/sudoc/formats/CodesPays.htm) )
+* **Type** : Type d'unité organisationnelle ("Entity" pour entité et "Area" pour Départment)\
+  &#x20;
+
+Le champ **ParentId** n'est pas obligatoire, mais il permet d'identifier l'unité organisationnelle parente (si existante) via son ID (nombre à 5 chiffres).
+
+{% hint style="warning" %}
+il est essentiel de limiter le nombre d'étages hiérarchiques à 7 niveaux (relations parent-enfant) pour assurer un traitement correct des données.
+{% endhint %}
+
+
+
+Exemple :
+
+<table><thead><tr><th>Id</th><th>ParentId</th><th width="492">Label</th><th>CountryCode</th><th>Type</th></tr></thead><tbody><tr><td>20996</td><td></td><td>HOLDING</td><td>FR</td><td>Entity</td></tr><tr><td>21009</td><td>20996</td><td>Informatique</td><td>BE</td><td>Area</td></tr></tbody></table>
+
+Après avoir renseigné le fichier, déposez-le dans le champ de dépôt et suivez les instructions.
+
+
 
 ## Visualiser et paramétrer les entités et départements depuis l'organigramme
 
