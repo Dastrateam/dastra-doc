@@ -50,7 +50,7 @@ Pour cela, allez dans la gestion de documents et cliquez sur "Ecrire un document
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption><p>Ecrire un nouveau document</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-12-18 104431.png" alt=""><figcaption><p>Ecrire un nouveau document</p></figcaption></figure>
 
 Le nouveau document est enregistré au format markdown (.md)
 

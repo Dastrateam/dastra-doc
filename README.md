@@ -34,7 +34,7 @@ Notre approche de la protection des données
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Module de gestion des risques</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Module de gestion des risques</p></figcaption></figure>
 
 * **Générez un plan d'action, allouez des tâches** et **collaborer avec votre réseau,** pour mieux protéger réellement vos données.
 

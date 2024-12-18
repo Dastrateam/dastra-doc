@@ -4,7 +4,7 @@ Vous cherchez des modèles de documents ? C'est par ici ! :thumbsup:
 
 Pour accéder aux ressources documentaires, il faut se rendre dans le module "Veille et ressources" et cliquer sur "Ressources"
 
-<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption><p>Accès aux ressources</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-12-18 104530.png" alt=""><figcaption><p>Accès aux ressources</p></figcaption></figure>
 
 
 

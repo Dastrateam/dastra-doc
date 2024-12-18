@@ -43,7 +43,7 @@ Dastra supporte que les formats de données suivants :
 
 Pour accéder au menu d'import de données, cliquez sur le bouton "importer" sous chaque flèche du bouton de création.
 
-<figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-12-18 102227.png" alt=""><figcaption></figcaption></figure>
 
 Sélectionnez Excel si cela vous est demandé :&#x20;
 
@@ -53,7 +53,7 @@ Sélectionnez Excel si cela vous est demandé :&#x20;
 
 Ensuite, téléchargez un modèle de fichier en cliquant sur le bouton "Télécharger le modèle de fichier"
 
-<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-12-18 102637.png" alt=""><figcaption></figcaption></figure>
 
 Le modèle de fichier est **un fichier au format CSV** que vous pouvez facilement éditer avec un tableau Libre Office, Wordpad, Excel ou Google Sheet.
 

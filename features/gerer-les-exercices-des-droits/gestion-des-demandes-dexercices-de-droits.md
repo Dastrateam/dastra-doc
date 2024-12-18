@@ -44,7 +44,7 @@ Pour créer une ou plieurs demandes d'exercice de droit via une adresse mail de 
 
 Pour cela, rendez-vous dans les **réglages** de l'espace de travail, puis dans la section "**intégrations**" et enfin cliquez sur "**Adresse mail de collecte**".
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>L'intégration "Adresse mail de collecte" dans Dastra.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (5).png" alt=""><figcaption><p>L'intégration "Adresse mail de collecte" dans Dastra.</p></figcaption></figure>
 
 {% hint style="info" %}
 Si cette intégration n'est pas encore installée, installez-la.
