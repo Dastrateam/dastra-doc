@@ -2,7 +2,7 @@
 description: Intégrez des processus complexe à l'aide des Règles de workflow personnalisées
 ---
 
-# Règles de worfkows
+# Règles de workflows
 
 ## Le principe de fonctionnement
 
@@ -60,6 +60,42 @@ Très souvent, dans les notifications personnalisées par exemple, il sera inté
 En interne, Dastra utilise un moteur de templating basé sur [LiquidJS](https://shopify.github.io/liquid/basics/introduction/)
 
 **Pour accéder aux différentes variables de l'objet du trigger, tapez "\{{",** cela affichera une liste de propositions de variables que vous pouvez injecter dans le contenu
+
+
+
+\
+Exemple\
+Pour afficher une variable de type chaine de caractère (la référence d'un traitement)
+
+```
+{{ref}}
+```
+
+
+
+Pour afficher toutes les valeurs d'une variable de type tableau (les tags)
+
+```
+{% raw %}
+{% for tag in tags %}
+
+ {{ tag.label }}
+
+{% endfor %}
+{% endraw %}
+```
+
+
+
+Pour afficher uniquement la 1ere valeur d'une variable de type tableau : (1er approbateur d'un traitement)
+
+```
+{% raw %}
+{% assign accountable = accountables | first %}
+{% endraw %}
+
+{{accountable.displayName}}
+```
 
 
 
