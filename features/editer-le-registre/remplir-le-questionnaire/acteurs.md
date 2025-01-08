@@ -49,6 +49,10 @@ Dastra vous permet d'attacher des utilisateurs à un traitement.
 
 **Attention, il ne s'agit pas d'acteurs mais d'utilisateurs (personnes physiques qui disposent d'un compte d'accès à la plateforme Dastra).**&#x20;
 
+{% hint style="warning" %}
+Les comptes utilisateurs doivent être créés depuis au moins une heure avant de pouvoir être ajoutés en tant que parties prenantes.
+{% endhint %}
+
 Les rôles ainsi définis permettront de structurer efficacement la gestion et la mise en œuvre de vos traitements dans Dastra.
 
 Voici une manière de définir les rôles de vos utilisateurs pour vos traitements :&#x20;
