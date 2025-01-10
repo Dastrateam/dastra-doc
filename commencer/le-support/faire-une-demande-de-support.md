@@ -18,7 +18,7 @@ Après avoir cliqué sur le bouton support, une fenêtre apparait dans l'applica
 
 Choisissez une des cinq options possibles, détaillez votre réponse et cliquez sur le bouton "Envoyer la requête".&#x20;
 
-![Formulaire de demande de support](<../../.gitbook/assets/Capture web\_3-5-2022\_152923\_app.dastra.eu (1).jpeg>)
+![Formulaire de demande de support](<../../.gitbook/assets/Capture web_3-5-2022_152923_app.dastra.eu (1).jpeg>)
 
 Ca y est, votre demande de support a été envoyé ! notre équipe vous répondra dans les meilleurs délais.\
 Ce service est disponible **24h/24 et 7j/7** et nous permet d'historiser les demandes pour un suivi efficace.
@@ -34,7 +34,7 @@ Pour les problèmes d'accès à l'application ou les urgences majeures critiques
 
 ### Autres demandes
 
-Si vous souhaitez réaliser un autre type de demande ou si vous n'avez pas encore créé un compte dans Dastra, il vous est possible de nous faire parvenir votre demande directement à l'adresse [support@dastra.com](mailto:support@dastra.com)\
+Si vous souhaitez réaliser un autre type de demande ou si vous n'avez pas encore créé un compte dans Dastra, il vous est possible de nous faire parvenir votre demande directement à l'adresse [support@dastra.eu](mailto:support@dastra.com)\
 \
 
 
