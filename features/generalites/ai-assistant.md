@@ -48,7 +48,7 @@ Une fois le jeu de données généré ? Editez le traitement une fois créé dir
 3. Choisissez le format que vous souhaitez, vous pouvez même personnaliser les instructions de génération en cliquant sur "Personnalisée". Cliquez ensuite sur le bouton "Générer"
 4. Copier le texte généré ou insérez le dans votre documentation de traitement
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
 
 ### Générer une réponse à un questionnaire (PIA, Analyse de risque, ...)
 
@@ -58,7 +58,7 @@ Une fois le jeu de données généré ? Editez le traitement une fois créé dir
 4. Vous pouvez renseigner directement le traitement qui servira de source aux réponses du questionnaire ou saisissez des instructions personnalisées
 5. Une fois la réponse générée, il est possible d'y apporter des corrections.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 ###
 

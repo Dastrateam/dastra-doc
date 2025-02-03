@@ -28,7 +28,7 @@ La **langue** vous permet de visualiser les modèles de traitements dans les aut
 
 Pour **visualiser le contenu du modèle** avant son import, vous pouvez cliquer sur l'oeil situé en haut à droite du modèle.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Suggérer un modèle de traitement
 

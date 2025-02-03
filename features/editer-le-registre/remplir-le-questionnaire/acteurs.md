@@ -13,7 +13,7 @@ Vous pouvez indiquer les acteurs concernés par la mise en œuvre du traitement.
 
 Vous indiquez également l’identité du représentant du responsable du traitement, le cas échéant, du ou des responsables conjoints du traitement.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Ajouter un responsable conjoint (coresponsable de traitement)
 

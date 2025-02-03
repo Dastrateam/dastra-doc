@@ -34,19 +34,19 @@ Notre approche de la protection des données
 
 * **Identifiez vos risques, et réalisez des audits** pour évaluer les priorités.
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Module de gestion des risques</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (5).png" alt=""><figcaption><p>Module de gestion des risques</p></figcaption></figure>
 
 * **Générez un plan d'action, allouez des tâches** et **collaborer avec votre réseau,** pour mieux protéger réellement vos données.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Module de gestion des tâches</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption><p>Module de gestion des tâches</p></figcaption></figure>
 
 * **Implémentez les processus internes** tels que la mise en place de la gestion des exercices de droits, la gestion des consentements aux cookies ou traceurs ou la tenue d'un registre des violations de donnée.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Module de gestion des droits des personnes</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Module de gestion des droits des personnes</p></figcaption></figure>
 
 
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>Module de gestion des violations de données</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (3).png" alt=""><figcaption><p>Module de gestion des violations de données</p></figcaption></figure>
 
 * **Centralisez la documentation** permettant de répondre à la conformité RGPD.
 

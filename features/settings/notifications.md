@@ -6,15 +6,26 @@ description: Apprenez à gérer les notifications dans Dastra.
 
 ## Introduction
 
-Dans Dastra, il est possible de personnaliser les notifications que vous recevez de l'application sur votre boîte mail, selon leur catégorie ou leur nature.
+Dans Dastra, il existe deux types de notification :
 
-## Gérer les notifications
+## **Les notifications du centre de notification de Dastra**
 
-Pour cela, cliquez sur votre profil en haut à droite une fois dans l'application, puis sur le bouton "Notifications". Vous accéderez ainsi au centre des notifications.
+Elles sont accessibles grâce à la cloche en haut à droite de l'écran ![](<../../.gitbook/assets/image (2).png>)  et ne sont pas personnalisables :
 
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Centre de notifications</p></figcaption></figure>
+
+## Les notifications de Dastra que vous recevez sur votre boîte mail
+
+Il est possible de personnaliser les notifications que vous recevez de l'application sur votre boîte mail, selon leur catégorie ou leur nature.\
+
+
+Pour cela, cliquez sur votre profil en haut à droite une fois dans l'application, puis sur le bouton "Centre de notifications". Vous accéderez ainsi à la page de gestion de notification de votre profil utilisateur.
+
+{% hint style="info" %}
 La gestion des notifications est personnelle à chaque utilisateur.&#x20;
+{% endhint %}
 
-![Bouton "Notifications"](<../../.gitbook/assets/image (242).png>)
+![Bouton "Centre de notifications"](<../../.gitbook/assets/Capture d'écran 2025-01-29 104522.png>)
 
 Une fois dans le centre, vous avez la possibilité d'activer ou de désactiver les notifications reçues.
 
@@ -55,8 +66,10 @@ Par fonctionnalité, vous aurez la possibilité de choisir de laisser activer ou
 
 Dans le cadre des audits, certains types de notifications sont hors champ du centre de gestion des notifications.&#x20;
 
-En effet, lorsque vous planifiez un audit et sélectionnez "_envoyer les invitations immédiatement_", l'invitation à l'audit par e-mail sera reçue malgré avoir déselectionné la notification "_Invitation à répondre à l'audit_".&#x20;
+En effet, lorsque vous planifiez un audit et sélectionnez "_envoyer les invitations immédiatement_", l'invitation à l'audit par e-mail sera reçue malgré avoir désélectionné la notification "_Invitation à répondre à l'audit_".&#x20;
 
-Tout simplement car l'on vous **soumet explicitement cet audit**, ce qui **ne rentre pas dans les considérations du centre de gestion des notifications**.
+Tout simplement, car l'on vous **soumet explicitement cet audit**, ce qui **ne rentre pas dans les considérations du centre de gestion des notifications**.
 
-Le meme type d'exception existe en ce qui concerne les "_invitations à compléter le registre_", fonctionnalité que vous retrouvez dans vos fiches de traitement afin de **soumettre une invitation**, personnalisable, à un **utilisateur** pour lui demander de **remplir telle ou telle étape de la fiche de traitement**.
+Le même type d'exception existe en ce qui concerne les "_invitations à compléter le registre_", fonctionnalité que vous retrouvez dans vos fiches de traitement afin de **soumettre une invitation**, personnalisable, à un **utilisateur** pour lui demander de **remplir telle ou telle étape de la fiche de traitement**.\
+\
+Ce type d'exception s'applique aussi si un utilisateur vous assigne une tâche ou vous mentionne directement dans une discussion (grâce au symbole @).
