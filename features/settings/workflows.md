@@ -1,10 +1,10 @@
 ---
-description: Apprenez à personnaliser les workflows dans Dastra.
+description: Apprenez à personnaliser les étapes de workflows dans Dastra.
 ---
 
-# Etapes de workflow / déroulement du processus
+# Etapes de processus
 
-## A quoi servent les étapes de workflow ?
+## A quoi servent les étapes de processus ?
 
 Les étapes de workflow (flux de travail en français) permettent de matérialiser un processus de réalisation en passant d'une étape à l'autre.&#x20;
 
@@ -18,11 +18,11 @@ Ainsi, vous pouvez décliner votre procédure de manière très opérationnelle 
 
 
 
-Cliquez dans "Réglages" puis "Déroulement du processus"&#x20;
+Cliquez dans "Réglages" puis "Etapes de processus"&#x20;
 
 
 
-<figure><img src="../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/etapes-processus01.png" alt=""><figcaption></figcaption></figure>
 
 
 

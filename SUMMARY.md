@@ -198,7 +198,7 @@
   * [Notifications](features/settings/notifications.md)
   * [Adresses emails de collecte](features/settings/data-collection-mailboxes.md)
   * [Intégrations OneDrive/Google Drive](features/settings/integrations-onedrive-google-drive.md)
-  * [Etapes de workflow / déroulement du processus](features/settings/workflows.md)
+  * [Etapes de processus](features/settings/workflows.md)
   * [Webhooks](features/settings/webhooks.md)
   * [Configuration du SMTP](features/settings/configuration-du-smtp.md)
   * [Règles de workflows](features/settings/workflow-rules.md)
