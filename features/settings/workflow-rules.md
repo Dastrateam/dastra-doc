@@ -29,11 +29,9 @@ Vous pouvez déclencher une règle de workflow sur deux évènements :&#x20;
 
 <figure><img src="../../.gitbook/assets/timer_fr_01 (1).png" alt=""><figcaption><p>Création d'un déclencheur par date</p></figcaption></figure>
 
-Un seul trigger peut être défini par règle de workflow.
+Un seul déclencheur (ou trigger) peut être défini par règle de workflow.
 
 A noter que vous pouvez choisir si le workflow peut s'exécuter plus d'une fois par entité. **Il est fortement recommandé** **d'exécuter les workflows une seule fois par entité**, car l'exécution d'un workflow plusieurs fois peut conduire assez facilement à des problèmes de répétition de création de tâches ou de doublons de notifications.
-
-Les conditions peuvent être ajoutées à un groupe afin de permettre plus de&#x20;
 
 ### Définition de conditions
 
@@ -52,7 +50,7 @@ Voici les **différents types d'actions** que vous pouvez déclencher :&#x20;
 * Envoi d'une notification par email
 * Mise à jour d'un champ de l'entité concernée
 * Ajout d'un tag à l'entité
-* Planification automatique d'un réponse à un questionnaire
+* Planification automatique d'une réponse à un questionnaire
 * Définition de la personne assignée
 * Création automatique d'une tâche
 
@@ -71,7 +69,8 @@ Exemple : envoyer une notification à plusieurs personnes lors de la création d
 ### Variables personnalisées
 
 \
-Exemple\
+**Exemple**
+
 Pour afficher une variable de type chaine de caractère (la référence d'un traitement)
 
 Très souvent, dans les notifications personnalisées par exemple, il sera intéressant d'y injecter des informations provenant de l'objet qui est entré dans le workflow : le nom du traitement, sa date de publication... sont autant de variables que vous pourrez facilement injecter dans le texte de vos notifications grâce au système d'injection de variables.
@@ -121,18 +120,6 @@ Cet exemple permet de voir l'utilisation d'un workflow par action permettant de 
 Cet exemple permet de voir l'utilisation d'un workflow par date permettant de nettoyer automatiquement les demandes de droits dont l'identité de l'utilisateur n'aurait pas été validé un mois après la création.
 
 <figure><img src="../../.gitbook/assets/workflow_anon01-fr.png" alt=""><figcaption><p><strong>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</strong></p></figcaption></figure>
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Tutoriel vidéo : les règles de workflow
 

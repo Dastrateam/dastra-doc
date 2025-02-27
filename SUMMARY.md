@@ -85,7 +85,6 @@
     * [Visualiser l'arborescence des traitements](features/editer-le-registre/la-visualisation-des-donnees/visualiser-larborescence-des-traitements.md)
     * [Visualiser la cartographie des données du registre](features/editer-le-registre/la-visualisation-des-donnees/visualiser-la-cartographie-des-donnees.md)
     * [Visualiser la carte des transferts](features/editer-le-registre/la-visualisation-des-donnees/visualiser-la-carte-des-transferts.md)
-  * [Page](features/editer-le-registre/page.md)
   * [Questions fréquentes](features/editer-le-registre/questions-frequentes.md)
 * [Gestion de documents (GED)](features/gestion-de-documents-ged/README.md)
   * [Modèles de documents](features/gestion-de-documents-ged/modeles-de-documents.md)
