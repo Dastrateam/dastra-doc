@@ -4,7 +4,7 @@ description: Dans cette page, retrouvez la résolution des principaux problèmes
 
 # Problèmes connus
 
-### L'utilisateur invité ne reçoit pas les e-mails d'invitations
+## L'utilisateur invité ne reçoit pas les e-mails d'invitations
 
 **Vérifiez que l'adresse email de l'utilisateur (domaine, nom...)** est correct. Si celle-ci est incorrecte, l'interface ne remontera pas d'erreur
 
@@ -61,3 +61,17 @@ Aperçu de la page :\
 2. **Utilisez cette adresse pour accéder à Dastra: https://app.dastra.eu** . Vous pouvez l'enregistrer dans vos favoris. Ce problème peut se produire lorsque vous tentez d'accéder à Dastra par les urls avec le domaine account.dastra.eu (souvent enregistrées automatiquement dans les suggestions d'url de votre navigateur)
 3. **Nettoyez les données du site et les cookies de votre navigateur**
 
+
+
+## Message d'erreur : Attention, du contenu HTML interdit est présent dans un champ !
+
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 163623.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
+
+\
+Ce message signifie que du code HTML (généralement contenu entre les balises <>) est présent dans un champ ou le HTML est interdit (pour raison de sécurité).\
+
+
+\
+Le message suivant permet d'identifier facilement le champ concerné :
+
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 164132.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ </p></figcaption></figure>
