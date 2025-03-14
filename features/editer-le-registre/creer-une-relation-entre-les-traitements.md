@@ -26,7 +26,7 @@ Ensuite, il faudra sélectionner un type de relations.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Création de nouvelles relations</p></figcaption></figure>
 
-Vous pouvez créer des relations sur plusieurs traitements en seule fois. Pour cela, il faudra créer des nouveaux traitements et sélectionner les unités organisationnelles concernées.
+Vous pouvez créer des relations sur plusieurs traitements en une seule fois. Pour cela, il faudra créer des nouveaux traitements et sélectionner les unités organisationnelles concernées.
 
 {% hint style="info" %}
 Il est possible de créer des relations avec les traitements figurant le même espace de travail uniquement.&#x20;
