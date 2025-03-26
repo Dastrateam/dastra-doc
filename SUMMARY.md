@@ -224,6 +224,10 @@
 * [Authentification forte](security/mfa.md)
 * [Qualité de nos services](security/qualite-de-nos-services.md)
 
+***
+
+* [Certifications](certifications.md)
+
 ## 🤖 DIVERS
 
 * [Foire aux questions](divers/faq-registre.md)
