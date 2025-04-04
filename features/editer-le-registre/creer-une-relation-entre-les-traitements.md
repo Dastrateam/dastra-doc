@@ -36,13 +36,13 @@ Il est possible de créer des relations avec les traitements figurant le même e
 
 #### Est l'enfant de :&#x20;
 
-Relation hiérarchique permettant la visualisation graphique. Pas d’asservissement entre les champs.
+Relation hiérarchique permettant une lecture structurée. Pas d’asservissement entre les champs.
 
 Le traitement A est hiérarchiquement sous le traitement B.
 
 #### Est le parent de :&#x20;
 
-Relation hiérarchique permettant la visualisation graphique. Pas d’asservissement entre les champs.
+Relation hiérarchique permettant une lecture structurée. Pas d’asservissement entre les champs.
 
 Le traitement A est hiérarchiquement au dessus du traitement B.
 
