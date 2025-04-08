@@ -32,7 +32,7 @@ Pour ce qui concerne les pièces jointes de votre contrat, vous pouvez décider 
 
 La nouvelle version est générée à partir de la version en cours d'affichage lorsque vous cliquez sur _Créer une nouvelle version._ Il est donc important de se placer dans la version à partir de laquelle vous souhaitez partir pour votre nouvelle version.
 
-La version nouvellement crée devient par défaut la version active de votre contrat (la version visible dans la vue tableau récapitulative des contrats)
+La version nouvellement créée devient par défaut la version active de votre contrat (la version visible dans la vue tableau récapitulative des contrats)
 
 ### Afficher une version
 
