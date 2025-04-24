@@ -1,20 +1,31 @@
-# Fonctionnement du widget
+# Fonctionnement de la bannière
+
+### Fonctionnement de la licence&#x20;
+
+Contrairement à d'autres solutions qui commercialisent les bannières de consentement au domaine. La licence Dastra est basée sur deux critères:&#x20;
+
+* **Le trafic Mensuel maximal** : le nombre total de session utilisateur (ou visites) sur vos sites web pendant 1 mois.
+* **Le nombre de bannières** : vous pouvez configurer une bannière avec un certain nombre de cookies/services qui peut être réutilisé sur plusieurs sites web ou sous-domaines. Le cookie de consentement peut fonctionner sur plusieurs sous-domaines (ex: \*.sousdomaine.com).
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Fonctionnement global :
 
-Globalement, le widget de consentement fonctionne en 3 grandes étapes :
+Globalement, la bannière de consentement fonctionne en 3 grandes étapes :
 
 1. La **proposition** de la fenêtre de consentement
 2. La **collecte** du consentement (stockage des preuves)
 3. **L'exécution** réelle du consentement de l'utilisateur
 
 {% hint style="info" %}
-Le widget Dastra permet de couvrir les deux premières étapes de manière partiellement automatique. Pour la troisième étape consistant à appliquer réellement les préférences de l'utilisateur en matière de cookies, vous allez avoir besoin d'intégrer techniquement le système de consentement aux services tiers pouvant potentiellement poser des cookies. Consultez le [guide de blocage des cookies](blocage-des-cookies/) pour plus d'informations/
+La bannière Dastra permet de couvrir les deux premières étapes de manière partiellement automatique. Pour la troisième étape consistant à appliquer réellement les préférences de l'utilisateur en matière de cookies, vous allez avoir besoin d'intégrer techniquement le système de consentement aux services tiers pouvant potentiellement poser des cookies. Consultez le [guide de blocage des cookies](blocage-des-cookies/) pour plus d'informations/
 {% endhint %}
 
 Le SDK javascript du widget doit être appelé sur toutes les pages du site utilisant les cookies.
 
 ![Schéma de fonctionnement global du widget de consentement des cookies](../../../.gitbook/assets/cookie-consent.png)
+
+
 
 ### 1. Visite sur le site du client
 
@@ -30,7 +41,7 @@ Si le client n'a pas correctement renseigné son domaine dans l'éditeur de widg
 
 ### 4. Demande du consentement à l'utilisateur
 
-Si le cookie "euconsent" (vous pouvez choisir le nom du cookie si vous le souhaitez) est absent, la fenêtre de consentement s'affichera. Pour tester le bon affichage du widget, vous pouvez supprimer ce cookie de votre navigateur.&#x20;
+Si le cookie "eu-consent" (vous pouvez choisir le nom du cookie si vous le souhaitez) est absent, la fenêtre de consentement s'affichera. Pour tester le bon affichage du widget, vous pouvez supprimer ce cookie de votre navigateur.&#x20;
 
 ### 5. La collecte du consentement
 

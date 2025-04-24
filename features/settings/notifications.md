@@ -10,7 +10,7 @@ Dans Dastra, il existe deux types de notification :
 
 ## **Les notifications du centre de notification de Dastra**
 
-Elles sont accessibles grâce à la cloche en haut à droite de l'écran ![](<../../.gitbook/assets/image (2).png>)  et ne sont pas personnalisables :
+Elles sont accessibles grâce à la cloche en haut à droite de l'écran ![](<../../.gitbook/assets/image (2) (5).png>)  et ne sont pas personnalisables :
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Centre de notifications</p></figcaption></figure>
 
