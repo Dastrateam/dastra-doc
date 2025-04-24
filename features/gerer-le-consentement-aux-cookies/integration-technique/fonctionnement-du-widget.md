@@ -7,6 +7,8 @@ Contrairement à d'autres solutions qui commercialisent les bannières de consen
 * **Le trafic Mensuel maximal** : le nombre total de session utilisateur (ou visites) sur vos sites web pendant 1 mois.
 * **Le nombre de bannières** : vous pouvez configurer une bannière avec un certain nombre de cookies/services qui peut être réutilisé sur plusieurs sites web ou sous-domaines. Le cookie de consentement peut fonctionner sur plusieurs sous-domaines (ex: \*.sousdomaine.com).
 
+Le nombre de **domaines et sous-domaines est donc illimité** par widget.
+
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Fonctionnement global :
