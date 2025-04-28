@@ -55,7 +55,7 @@
   * [Assistant IA](features/generalites/ai-assistant.md)
   * [Modèles email](features/generalites/modeles-email.md)
   * [😇 Foire aux questions](features/generalites/foire-aux-questions.md)
-  * [Discussions internes](features/generalites/discussions-internes.md)
+  * [Discussions internes](features/generalites/chat.md)
 * [Cartographie des données](features/cartography/README.md)
   * [Référentiels](features/cartography/referentials.md)
 * [Registre des traitements](features/editer-le-registre/README.md)
