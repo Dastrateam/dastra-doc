@@ -63,7 +63,7 @@ Aperçu de la page :\
 
 
 
-## Message d'erreur : Attention, du contenu HTML interdit est présent dans un champ !
+## Message d'erreur : "Attention, du contenu HTML interdit est présent dans un champ !"
 
 <figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 163623.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
 
@@ -75,3 +75,15 @@ Ce message signifie que du code HTML (généralement contenu entre les balises <
 Le message suivant permet d'identifier facilement le champ concerné :
 
 <figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 164132.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ </p></figcaption></figure>
+
+
+
+## Message d'erreur : "L'identifiant de l'utilisateur n'existe pas dans votre organisation." à l'enregistrement d'un traitement
+
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-05-15 102250.png" alt=""><figcaption><p>L'identifiant de l'utilisateur n'existe pas dans votre organisation.</p></figcaption></figure>
+
+Ce message signifie qu'un utilisateur ayant été supprimé de votre espace de travail est toujours défini comme approbateur dans les parties prenantes du traitement :
+
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-05-15 102626.png" alt=""><figcaption><p>Utilisateur supprimé définit en tant que partie prenante du traitement</p></figcaption></figure>
+
+Il faut retirer l'utilisateur supprimé des parties prenantes du traitement pour résoudre le problème.
