@@ -20,7 +20,18 @@ Choisissez une des cinq options possibles, détaillez votre réponse et cliquez 
 
 ![Formulaire de demande de support](<../../.gitbook/assets/Capture web_3-5-2022_152923_app.dastra.eu (1).jpeg>)
 
-Ca y est, votre demande de support a été envoyé ! notre équipe vous répondra dans les meilleurs délais.\
+
+
+Lors de la création de votre ticket, vous pouvez nous donner une autorisation préalable à effectuer des tests sur votre espace de travail en laissant cochée la case suivante :\
+
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2025-05-15 100836.png" alt=""><figcaption><p>Case d'autorisation préalable de test</p></figcaption></figure>
+
+Cela nous permet de répondre plus rapidement et plus efficacement à votre demande.\
+\
+
+
+Ça y est, votre demande de support a été envoyée ! notre équipe vous répondra dans les meilleurs délais.\
 Ce service est disponible **24h/24 et 7j/7** et nous permet d'historiser les demandes pour un suivi efficace.
 
 ### Le Chat

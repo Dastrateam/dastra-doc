@@ -33,7 +33,7 @@ Pour chaque finalité, vous devez définir [**la base légale**](https://www.cni
 
 L'ajout des finalités est réalisé à la section 3 du traitement.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ajout de finalité</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ajout de finalité</p></figcaption></figure>
 
 
 
