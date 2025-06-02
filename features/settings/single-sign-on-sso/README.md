@@ -74,7 +74,9 @@ returnUrl=https://www.dastra.eu
 Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :\
 
 
-<figure><img src="../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/sso_config-sample.png" alt=""><figcaption></figcaption></figure>
 
 Dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra et un mail de notification vous sera envoyé quelques heures plus tard.
 
