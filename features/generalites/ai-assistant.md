@@ -98,17 +98,11 @@ Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espa
 
 ## Comment ça marche ?
 
-Dastra utilise les modèles d'**IA OpenAI GPT 3.5** et **GPT 4.0** (Modèles de [ChatGPT](https://chat.openai.com/)) ainsi que le modèle **Mistral-Large** de [**MistralAI** ](https://mistral.ai/)fournis par [le service AI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Les modèles utilisés sont pré-entrainés. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.
+Dastra utilise les modèles d'**IA OpenAI GPT 4o-mini** et **GPT 4-1mini** (Modèles de [ChatGPT](https://chat.openai.com/)) fournis par [le service AI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Les modèles utilisés sont pré-entrainés. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.
 
 Dastra utilise simplement la puissance de l'IA générative pour générer du contenu à partir de simple requête textuelle. Dastra a simplement fourni le modèle de document attendu (JSON) et un exemple de traitement de données (issu de notre bibliothèque) que nous souhaitons avoir et le modèle d'IA s'occupe du reste.
 
 Nous transférons uniquement le texte du prompt pour la génération d'objets dans Dastra. Pour la génération de message d'exercice de droits, le contexte du message est intégré à la demande de génération afin de proposer une réponse personnalisée à la demande ([voir le détail des champs transmis](ai-assistant.md#generer-des-reponses-aux-demandes-dexercice-de-droits))
-
-Nous avons fait le choix de vous proposer différents modèles d'IA génératives car nous avons trouvé des intérêts pour chaque version, vous pouvez trouver le tableau récapitulatif ci dessous afin de vous aider à choisir le modèle correspondant le mieux à votre besoin :
-
-<table><thead><tr><th width="106">Modèle</th><th width="112">Version</th><th width="177">Avantages</th><th width="194">Inconvénients</th><th>Cas d’usage</th></tr></thead><tbody><tr><td>GPT</td><td>3.5 Turbo</td><td><ul><li>Vitesse</li><li>Prix</li></ul></td><td><ul><li>Base de connaissance de l'IA vieillissante (avant 2022)</li><li>Réponses parfois "simplistes"</li><li>Editeur US</li></ul></td><td><ul><li>Génération d’objet</li><li><em>Chat Bot interne</em></li></ul></td></tr><tr><td>GPT</td><td>4.0</td><td><ul><li>Réponses complètes et pertinentes</li><li>Fonctionnalités avancées</li></ul></td><td><ul><li>Temps de génération</li><li>Hallucinations et réponses ne suivant pas toujours les instructions</li><li>Editeur US</li></ul></td><td>Génération de message et de reformulation pour les exercices de droits</td></tr><tr><td>Mistral</td><td>Large</td><td><ul><li>Qualité des réponses</li><li>Editeur français</li></ul></td><td><ul><li>Intégration dans Azure moins avancée</li><li>Certaines fonctionnalités sont encore expérimentales</li></ul></td><td><ul><li>Génération d’objets</li><li>Génération de messages</li></ul></td></tr></tbody></table>
-
-&#x20;
 
 {% hint style="warning" %}
 **Avertissement sur la qualité du contenu suggéré !**&#x20;
