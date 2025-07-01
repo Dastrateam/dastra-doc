@@ -14,7 +14,7 @@ Cliquez sur "Modifier les champs"
 
 Sélectionnez "Projet" et le projet souhaité.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Validez les changements en enregistrant.
 

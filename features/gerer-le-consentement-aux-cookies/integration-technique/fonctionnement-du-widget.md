@@ -9,7 +9,7 @@ Contrairement à d'autres solutions qui commercialisent les bannières de consen
 
 Le nombre de **domaines et sous-domaines est donc illimité** par widget.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Fonctionnement global :
 

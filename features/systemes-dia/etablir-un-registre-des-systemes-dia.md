@@ -23,11 +23,12 @@ Pour ajouter un système d'IA, cliquez d'abord sur "Créer un nouveau système d
 
 Une fois les informations obligatoires enregistrées, vous êtes redirigé sur un formulaire comprenant 10 étapes. Ce formulaire va vous permettre de détailler au maximum le système d'IA.
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-05-21 174615.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Les 10 étapes sont :&#x20;
+Les 11 étapes sont :&#x20;
 
 * **Général** - Cette section permet de renseigner les informations générales du système d'IA, telles que son nom et sa description.
+* **Responsabilités** - Définissez vos responsabilités au sens du règlement européen sur l'IA. Par exemple, [fournisseur ](https://www.dastra.eu/fr/guide/fournisseur-ia/58854)ou [déployeur](https://www.dastra.eu/fr/guide/deployeur-ia/58853).
 * **Modèles d'IA** - Indiquez ici le modèle d'IA utilisé pour traiter des données. Si vous souhaitez en savoir plus sur les modèles d'IA, dirigez vous vers [Le référentiel des modèles d'IA](le-referentiel-des-modeles-dia.md).
 * **Parties prenantes** - Indiquez ici qui sont les utilisateurs en charge de la mise en œuvre de ce système d'IA, et quels sont leurs rôles.
 * **Actifs** - Ajoutez les actifs qui supportent ce système d'IA.
