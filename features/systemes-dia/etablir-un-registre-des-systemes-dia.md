@@ -21,7 +21,7 @@ Nous vous recommandons de suivre les étapes de la page [Importer vos données (
 
 Pour ajouter un système d'IA, cliquez d'abord sur "Créer un nouveau système d'IA". Une fenêtre apparait alors, vous devez y entrer le nom du système et l'assigner à une unité organisationnelle.
 
-Une fois les informations obligatoires enregistrées, vous êtes redirigé sur un formulaire comprenant 10 étapes. Ce formulaire va vous permettre de détailler au maximum le système d'IA.
+Une fois les informations obligatoires enregistrées, vous êtes redirigé sur un formulaire comprenant 11 étapes. Ce formulaire va vous permettre de détailler au maximum le système d'IA.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
