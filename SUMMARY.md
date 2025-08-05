@@ -18,7 +18,6 @@
   * [Définition des risques](rappels-utiles/la-gestion-des-risques/definition-des-risques.md)
   * [Evaluation d'un risque](rappels-utiles/la-gestion-des-risques/evaluation-dun-risque.md)
   * [Risques sous-traitants](rappels-utiles/la-gestion-des-risques/risques-sous-traitants.md)
-* [Guide AIPD](rappels-utiles/guide-aipd.md)
 
 ## 👨‍💻 Bien commencer <a href="#commencer" id="commencer"></a>
 
@@ -233,6 +232,7 @@
 ## 🤖 DIVERS
 
 * [Foire aux questions](divers/faq-registre.md)
+* [Guide AIPD - par pays](divers/guide-aipd-par-pays.md)
 * [Problèmes connus](divers/problemes-connus.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
 * [Webinaires](https://www.dastra.eu/fr/guide/categories/webinar/26)
