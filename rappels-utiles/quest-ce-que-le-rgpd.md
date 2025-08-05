@@ -1,8 +1,10 @@
 ---
-description: Apprenez ce qu'est le Règlement Général de la Protection des Données.
+description: >-
+  Apprenez ce qu'est la Privacy à travers l'exemple du Règlement Général de la
+  Protection des Données (RGPD).
 ---
 
-# Introduction au RGPD
+# Introduction à la Privacy
 
 Le Règlement Général sur la Protection des Données (RGPD) est le règlement de l'Union européenne sur la protection des données et de la vie privée. Toutes les entreprises et administrations traitant des données personnelles de résidents européens sont concernées. Il est applicable depuis le 25 mai 2018.
 

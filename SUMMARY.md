@@ -2,9 +2,9 @@
 
 * [Introduction à Dastra](README.md)
 
-## 🇪🇺 Rappels utiles
+## 💁‍♂️ Rappels utiles
 
-* [Introduction au RGPD](rappels-utiles/quest-ce-que-le-rgpd.md)
+* [Introduction à la Privacy](rappels-utiles/quest-ce-que-le-rgpd.md)
 * [Notions clefs du RGPD](rappels-utiles/rgpd-en-bref/README.md)
   * [Donnée personnelle](rappels-utiles/rgpd-en-bref/donnee-personnelle.md)
   * [Registre des traitements](rappels-utiles/rgpd-en-bref/registre-de-traitement.md)
@@ -18,6 +18,7 @@
   * [Définition des risques](rappels-utiles/la-gestion-des-risques/definition-des-risques.md)
   * [Evaluation d'un risque](rappels-utiles/la-gestion-des-risques/evaluation-dun-risque.md)
   * [Risques sous-traitants](rappels-utiles/la-gestion-des-risques/risques-sous-traitants.md)
+* [Guide AIPD](rappels-utiles/guide-aipd.md)
 
 ## 👨‍💻 Bien commencer <a href="#commencer" id="commencer"></a>
 
