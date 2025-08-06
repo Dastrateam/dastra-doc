@@ -4,13 +4,21 @@ description: >-
   d’Impact sur la Protection des Données)
 ---
 
-# Guide AIPD
+# Guide AIPD - par pays
 
 Cette page de documentation fournit des ressources officielles et des références des autorités de protection des données (APD) qui permettent de déterminer si une **Analyse d'Impact sur la Protection des Données (AIPD)** est requise. La liste est organisée par pays.
 
 ## Europe
 
-#### 🇬🇧 **Royaume-Uni (UK)**
+### France
+
+**Autorité de contrôle :** Commission Nationale de l’Informatique et des Libertés (CNIL)
+
+* [Liste des traitements nécessitant une AIPD](https://www.cnil.fr/fr/listes-des-traitements-pour-lesquels-une-aipd-est-requise-ou-non)
+* [Liste des traitements exemptés (PDF)](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-aipd-non-requise.pdf)
+* [Cadre et guide AIPD – CNIL](https://www.cnil.fr/fr/guides-aipd)
+
+### Royaume-Uni (UK)
 
 **Autorité de contrôle :** Information Commissioner’s Office (ICO)\
 **Principales ressources :**
@@ -21,7 +29,7 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * **Exemples de traitements probablement à haut risque :**\
   [Exemples de traitements à haut risque – ICO](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/examples-of-processing-likely-to-result-in-high-risk/)
 
-#### 🇮🇪 **Irlande**
+### Irlande
 
 **Autorité de contrôle :** Data Protection Commission (DPC)\
 **Principales ressources :**
@@ -32,15 +40,7 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * **Guide général AIPD :**\
   [Guide AIPD – DPC](https://www.dataprotection.ie/en/dpc-guidance/guide-data-protection-impact-assessments)
 
-#### 🇫🇷 **France**
-
-**Autorité de contrôle :** Commission Nationale de l’Informatique et des Libertés (CNIL)
-
-* [Liste des traitements nécessitant une AIPD](https://www.cnil.fr/fr/listes-des-traitements-pour-lesquels-une-aipd-est-requise-ou-non)
-* [Liste des traitements exemptés (PDF)](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-aipd-non-requise.pdf)
-* Cadre et guide AIPD – CNIL
-
-#### 🇩🇪 **Allemagne**
+### Allemagne
 
 **Autorité de contrôle :** Chaque Land dispose de sa propre APD (ex. : BfDI au niveau fédéral)
 
@@ -51,7 +51,7 @@ Cette page de documentation fournit des ressources officielles et des référenc
 
 > 🛑 Les critères AIPD peuvent varier légèrement selon le **Land** en raison du fédéralisme allemand.
 
-#### 🇪🇸 **Espagne**
+### Espagne
 
 **Autorité de contrôle :** Agencia Española de Protección de Datos (AEPD)
 
@@ -60,14 +60,14 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * [Liste des traitements ne nécessitant pas d’AIPD – AEPD](https://www.aepd.es/documento/listadpia-35-5-ingles.pdf)
 * [Modèle de rapport d’AIPD – AEPD](https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/la-aepd-publica-un-modelo-de-informe-para-ayudar-las-empresas)
 
-#### 🇳🇱 **Pays-Bas**
+### Pays-Bas
 
 **Autorité de contrôle :** Autoriteit Persoonsgegevens (AP)
 
 * [Guide AIPD – AP](https://www.autoriteitpersoonsgegevens.nl/en/themes/basic-gdpr/gdpr-in-practice/data-protection-impact-assessment-dpia)
 * [Liste des types de traitements nécessitant une AIPD (en néerlandais)](https://wetten.overheid.nl/BWBR0042812/2019-11-27)
 
-#### 🇧🇪 **Belgique**
+### Belgique
 
 **Autorité de contrôle :** Autorité de protection des données (APD)
 
@@ -77,14 +77,14 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * [Liste des traitements soumis à AIPD (PDF – NL)](https://www.gegevensbeschermingsautoriteit.be/publications/beslissing-nr.-01-2019-van-16-januari-2019.pdf)
 * [Liste des critères GEB/DPIA VTC (en néerlandais)](https://www.vlaanderen.be/vlaamse-toezichtcommissie/machtigingen-en-adviezen-vlaamse-toezichtcommissie/lijst-vtc-criteria-geb-dpia)
 
-#### 🇮🇹 **Italie**
+### Italie
 
 **Autorité de contrôle :** Garante per la Protezione dei Dati Personali (GPDP)
 
 * [Page AIPD – GPDP](https://www.garanteprivacy.it/valutazione-d-impatto-della-protezione-dei-dati-dpia-)
 * [Liste des traitements soumis à AIPD](https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9058979)
 
-#### 🇸🇪 **Suède**
+### Suède
 
 **Autorité de contrôle :** Integritetsskyddsmyndigheten (IMY)
 
@@ -92,7 +92,7 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * [Guide pratique – AIPD (PDF – suédois)](https://www.imy.se/globalassets/dokument/vagledningar/en-praktisk-guide.pdf)
 * [Liste des types de traitements soumis à AIPD (PDF – suédois)](https://www.imy.se/globalassets/dokument/ovrigt/forteckning---konsekvensbedomningar.pdf)
 
-#### 🇩🇰 **Danemark**
+### Danemark
 
 **Autorité de contrôle :** Datatilsynet
 
@@ -101,40 +101,43 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * [Liste des traitements soumis à AIPD (PDF – danois)](https://www.datatilsynet.dk/Media/4/1/Datatilsynets%20liste%20over%20behandlinger%20der%20altid%20er%20underlagt%20kravet%20om%20en%20konsekvensanalyse%20\(2\).pdf)
 * [Liste des traitements soumis à consultation préalable (section 26 Loi sur l’application des lois)](https://app.gitbook.com/o/uWrGLDLDipyYq3GpIuW2/s/1i0NSpf8ID0PXTpIyycA/)
 
-#### 🇫🇮 **Finlande**
+### Finlande
 
 **Autorité de contrôle :** Office of the Data Protection Ombudsman
 
 * [Guide AIPD – Finlande (en anglais)](https://tietosuoja.fi/vaikutustenarviointi)
 * [Liste des traitements nécessitant une AIPD](https://tietosuoja.fi/luettelo-vaikutustenarviointia-edellyttavista-kasittelytoimista)
 
-#### 🇦🇹 **Autriche**
+### Autriche
 
 **Autorité de contrôle :** Datenschutzbehörde (DSB)
 
-* Guide AIPD – DSB (en allemand)
-* Liste des traitements nécessitant une AIPD – DSB (PDF)
+* [Guide AIPD – WKO (en allemand)](https://ratgeber.wko.at/dsfa/)
+* [Liste des traitements nécessitant une AIPD – DSB (PDF)](https://www.ris.bka.gv.at/eli/bgbl/II/2018/278/20181109)
+* [Exceptions à l'analyse d'impact relative à la protection des données (AIPD) - DSB (PDF)](https://www.ris.bka.gv.at/eli/bgbl/II/2018/108/20180525)
 
-#### 🇨🇿 **République tchèque**
+### République tchèque
 
 **Autorité de contrôle :** Úřad pro ochranu osobních údajů (UOOU)
 
-* Guide AIPD – UOOU (en tchèque)
-* FAQ sur les AIPD – UOOU (en anglais)
+* [Guide sur l'AIPD - UOOU (en tchèque)](https://uoou.gov.cz/profesional/metodiky-a-doporuceni-pro-spravce/posouzeni-vlivu-na-ochranu-osobnich-udaju)
+* [Méthodologie générale d'analyse d'impact relative à la protection des données (document PDF) – UOOU (en tchèque)](https://app.gitbook.com/o/uWrGLDLDipyYq3GpIuW2/s/1i0NSpf8ID0PXTpIyycA/)
+* [Liste des types d'opérations de traitement (non) soumises à l'obligation d'analyse d'impact relative à la protection des données (AIPD) (document PDF) - UOOU (en tchèque)](https://uoou.gov.cz/media/profesional/seznam-operaci-zpracovani-nepodlehajicich-pozadavku-na-dpia.pdf)
 
-#### 🇵🇱 **Pologne**
+### Pologne
 
 **Autorité de contrôle :** Urząd Ochrony Danych Osobowych (UODO)
 
-* Guide AIPD – UODO (en polonais)
-* Matériel d'aide à la mise en œuvre d'une AIPD – UODO
+* [Guide AIPD – UODO (en polonais)](https://uodo.gov.pl/pl/598/3617?mkt_tok=MTM4LUVaTS0wNDIAAAGZm5Te7KF5c_87ovOvFSvFlk8TT1HkKjhhYeegH3TbE8QJRvBLS2CpCfzokPMEBeuc49OMBxEHR-wUHla56YileVIl8xBAGkhX55NXHMT_LCc8)
+* [liste des catégories d'opérations de traitement de données à caractère personnel nécessitant une évaluation des risques pour la protection des données - UODO (en polonais)](https://monitorpolski.gov.pl/MP/2019/666)
+* [Vidéo de la conférence « Évaluation des risques et protection des données à caractère personnel » - UODO (en polonais)](https://uodo.gov.pl/pl/138/3507)
 
-#### 🇵🇹 **Portugal**
+### Portugal
 
 **Autorité de contrôle :** Comissão Nacional de Proteção de Dados (CNPD)
 
-* Guide AIPD – CNPD (en portugais)
-* Liste des traitements nécessitant une AIPD (PDF)
+* [Guide AIPD – CNPD (en portugais)](https://www.cnpd.pt/organizacoes/outras-obrigacoes/avaliacao-de-impacto/)
+* [Liste des types de traitements nécessitant une AIPD (PDF) - CNPD (en portugais)](https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/121818)
 
 #### 🇭🇷 **Croatie**
 
