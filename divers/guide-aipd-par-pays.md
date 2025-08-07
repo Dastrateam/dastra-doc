@@ -47,7 +47,10 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * [Critères AIPD au niveau fédéral – BfDI](https://www.bfdi.bund.de/DE/Fachthemen/Inhalte/Technik/Datenschutz-Folgenabschaetzungen.html)
   * [Liste des traitements soumis à l’article 35(4) RGPD pour les autorités fédérales](https://www.bfdi.bund.de/SharedDocs/Downloads/DE/Muster/Liste_VerarbeitungsvorgaengeArt35.pdf?__blob=publicationFile\&v=7)
   * [Liste des traitements nécessitant une AIPD (DSK)](https://www.bfdi.bund.de/SharedDocs/Downloads/DE/Muster/Liste_VerarbeitungsvorgaengeDSK.pdf?__blob=publicationFile\&v=7)
-* [Liste des traitements nécessitant une AIPD (Bade-Wurtemberg) – en allemand](https://www.baden-wuerttemberg.datenschutz.de/wp-content/uploads/2018/05/Liste-von-Verarbeitungsvorg%C3%A4ngen-nach-Art.-35-Abs.-4-DS-GVO-LfDI-BW.pdf)
+* Par Land
+  *   [Liste des activités de traitement nécessitant une AIPD (autorité de protection des données du Bade-Wurtemberg)](https://www.baden-wuerttemberg.datenschutz.de/wp-content/uploads/2018/05/Liste-von-Verarbeitungsvorg%C3%A4ngen-nach-Art.-35-Abs.-4-DS-GVO-LfDI-BW.pdf) (en allemand)
+
+      [Évaluation de l'impact sur la protection des données – liste noire bavaroise (en allemand)](https://www.datenschutz-bayern.de/nav/1801.html)
 
 > 🛑 Les critères AIPD peuvent varier légèrement selon le **Land** en raison du fédéralisme allemand.
 
