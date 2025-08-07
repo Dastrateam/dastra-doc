@@ -139,82 +139,76 @@ Cette page de documentation fournit des ressources officielles et des référenc
 * [Guide AIPD – CNPD (en portugais)](https://www.cnpd.pt/organizacoes/outras-obrigacoes/avaliacao-de-impacto/)
 * [Liste des types de traitements nécessitant une AIPD (PDF) - CNPD (en portugais)](https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/121818)
 
-#### 🇭🇷 **Croatie**
+### Croatie
 
 **Autorité de contrôle :** Agencija za zaštitu osobnih podataka (AZOP)
 
-* Guide AIPD – AZOP (en croate)
-* Support pour l’élaboration d’une AIPD – AZOP
+* [Lignes directrices relatives à l'AIPD – AZOP (en croate)](https://azop.hr/provodenje-procjene-ucinka-na-zastitu-podataka-dpia-postupci-obrade-koji-predstavljaju-mogucnost-visokog-rizika/)
+* [Liste des types d'opérations de traitement soumises à l'obligation d'effectuer une analyse d'impact relative à la protection des données - AZOP (en croate)](https://azop.hr/odluka-o-uspostavi-i-javnoj-objavi-popisa-vrsta-postupaka-obrade-koje-podlijezu-zahtjevu-za-procjenu-ucinka-na-zastitu-podataka/)
 
-#### 🇸🇰 **Slovaquie**
+### Slovaquie
 
 **Autorité de contrôle :** Úrad na ochranu osobných údajov Slovenskej republiky (UOOU SR)
 
-* Guide AIPD – UOOU SR (en slovaque)
-* Exemples de traitements à haut risque
+* [Protection des données à caractère personnel en République slovaque - UOOU SR (PDF) (en slovaque)](https://dataprotection.gov.sk/files/metod-urad/3/zoznam_spracovatelskych_operacii_ktore_podliehaju_posudeniu_vplyvu.pdf)
+* [Lignes directrices relatives à l'analyse d'impact relative à la protection des données - UOOU SR (en slovaque)](https://dataprotection.gov.sk/sk/aktuality/zoznam-spracovatelskych-operacii-ktore-podliehaju-poziadavke-posudenie-vplyvu.html)
 
-#### 🇭🇺 **Hongrie**
+### Hongrie
 
 **Autorité de contrôle :** Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)
 
-* Guide DPIA – NAIH (en hongrois)
-* Chapitre sur les AIPD : pages 89 à 97
+*   [Lignes directrices relatives à l'AIPD – NAIH (en hongrois)](https://www.naih.hu/az-adatvedelmi-hatasvizsgalat-es-elozetes-konzultacioja)
 
-#### 🇷🇴 **Roumanie**
+    [Liste des opérations de traitement soumises à une analyse d'impact – NAIH (en hongrois)](https://www.naih.hu/hatasvizsgalati-lista)
+
+### Roumanie
 
 **Autorité de contrôle :** Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)
 
-* Guide DPIA – ANSPDCP (en roumain)
-* FAQ AIPD – ANSPDCP
+*   [Liste des traitements soumis à une analyse d'impact - ANSPDCP (PDF) (en roumain)](https://www.dataprotection.ro/servlet/ViewDocument?id=1556)
 
-#### 🇧🇬 **Bulgarie**
+    [Décision n° 174 du 18 octobre 2018 relative à la liste des types de traitements soumis à l'obligation d'analyse d'impact relative à la protection des données (PDF) (en anglais)](https://www.dataprotection.ro/servlet/ViewDocument?id=1870)
+
+### Bulgarie
 
 **Autorité de contrôle :** Commission for Personal Data Protection (CPDP)
 
-* AIPD Guidelines – CPDP (en bulgare)
-* Formulaire modèle d’AIPD – CPDP
+* [Liste des types d'opérations de traitement des données à caractère personnel pour lesquelles une évaluation de l'impact sur la protection des données est requise (en bulgare)](https://cpdp.bg/home-default/%D0%BD%D0%B0%D1%81%D0%BE%D0%BA%D0%B8/%D1%81%D0%BF%D0%B8%D1%81%D1%8A%D0%BA-%D0%BD%D0%B0-%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B5%D1%82%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D0%BE-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE/)
 
 #### 🇱🇹 **Lituanie**
 
 **Autorité de contrôle :** Valstybinė duomenų apsaugos inspekcija (VDAI)
 
-* Guide sur les AIPD – VDAI (en lituanien
+* [Liste des opérations de traitement des données soumises à une analyse d'impact relative à la protection des données - VDAI (PDF) (en lituanien)](https://vdai.lrv.lt/uploads/vdai/documents/files/06%20Poveikio%20duomen%C5%B3%20apsaugai%20vertinimas%202019-03-18.pdf)
 
 #### 🇱🇻 **Lettonie**
 
 **Autorité de contrôle :** Datu valsts inspekcija (DVI)
 
-* Guide DPIA – DVI (en letton)
+* [Types d'activités de traitement pour lesquelles une analyse d'impact relative à la protection des données doit être effectuée – DVI (en letton)](https://www.dvi.gov.lv/lv/media/92/download?attachment)
 
-#### 🇱🇺 **Luxembourg**
+### Luxembourg
 
 **Autorité de contrôle :** Commission Nationale pour la Protection des Données (CNPD)
 
-* **Guide AIPD – CNPD**
-* **Liste des traitements nécessitant une AIPD – CNPD (PDF)**
-* **FAQ AIPD – CNPD**
+* [Guide sur l'AIPD – CNPD](https://cnpd.public.lu/fr/professionnels/obligations/AIPD.html)
+* [Liste des traitements nécessitant une AIPD – CNPD (en français)](https://cnpd.public.lu/fr/professionnels/obligations/AIPD/liste-dpia.html)
+* [Infographie sur l'AIPD - CNPD](https://cnpd.public.lu/dam-assets/fr/professionnels/aipd/Infographie-AIPD.pdf)
 
-#### 🇬🇷 **Grèce**
+### Grèce
 
 **Autorité de contrôle :** Hellenic Data Protection Authority (HDPA) – Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα
 
-* **Guide AIPD (en grec) :**\
-  \[Guide AIPD – HDPA]\
-  Publié sous la décision n° 65/2018, ce guide inclut une interprétation de l’article 35 du RGPD dans le contexte juridique grec.
-* **Liste des traitements nécessitant une AIPD (liste noire) :**\
-  \[Liste noire AIPD – HDPA (PDF, en grec)]\
-  Couvre des scénarios à haut risque tels que le traitement biométrique, la surveillance à grande échelle et la prise de décision automatisée.
-* **Modèle d’AIPD (en grec) :**\
-  \[Modèle de rapport AIPD – HDPA (DOCX)]\
-  Propose un document structuré pour accompagner la conformité et l’analyse d’impact selon le droit grec.
+* [Lignes directrices relatives à l'EIPD – HDPA](https://www.dpa.gr/el/foreis/ektimisi_adiktipou_kai_diavouleush/ektimisi_adiktipou)
+* [Liste des traitements nécessitant une EIPD (liste noire) – HDPA (PDF, anglais)](https://www.deepl.com/o/uWrGLDLDipyYq3GpIuW2/s/1i0NSpf8ID0PXTpIyycA/)
 
-#### 🇨🇭 **Suisse**
+### Suisse
 
 **Autorité de contrôle :** Préposé fédéral à la protection des données et à la transparence (PFPDT / FDPIC)
 
 Bien que la Suisse ne fasse pas partie de l’UE, elle impose des exigences similaires à l’AIPD dans sa **loi fédérale révisée sur la protection des données (nLPD, 2023)** :
 
-* **Évaluation d’impact sur la protection des données – PFPDT**
-* **Guide sur l’AIPD selon la nLPD suisse révisée**
+* [Aide-mémoire concernant l’analyse d’impact relative à la protection des données personnelles (AIPD) au sens des art. 22 et 23 LPD](https://backend.edoeb.admin.ch/fileservice/sdweb-docs-prod-edoebch-files/files/2024/11/05/eb84f377-103e-4e7f-9896-62ec970f2290.pdf)
+* [Guide de mise en œuvre de l’AIPD ](https://www.bj.admin.ch/bj/fr/home/staat/datenschutz/info-bundesbehoerden.html)
 
 ✅ Requise lorsqu’un traitement de données est susceptible d’entraîner un **risque élevé pour la personnalité ou les droits fondamentaux**. La structure est similaire à celle de l’article 35 du RGPD.
