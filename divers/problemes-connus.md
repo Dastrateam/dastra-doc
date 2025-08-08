@@ -61,6 +61,40 @@ Aperçu de la page :\
 2. **Utilisez cette adresse pour accéder à Dastra: https://app.dastra.eu** . Vous pouvez l'enregistrer dans vos favoris. Ce problème peut se produire lorsque vous tentez d'accéder à Dastra par les urls avec le domaine account.dastra.eu (souvent enregistrées automatiquement dans les suggestions d'url de votre navigateur)
 3. **Nettoyez les données du site et les cookies de votre navigateur**
 
+## Erreur 403 : Accès Refusé
+
+Le message d'erreur "Erreur 403 accès refusé" indique que vous tentez d'accéder à une partie du système Dastra sans avoir l'autorisation nécessaire. Cela se produit lorsque l'accès à certains éléments ou modules a été restreint par un administrateur dans votre espace de travail, en fonction des autorisations de votre rôle ou de votre équipe.
+
+**Comment Résoudre**
+
+* **Vérifiez les Permissions** : Assurez-vous d'avoir les autorisations nécessaires pour le module ou l'élément souhaité.
+* **Contactez l'un des administrateurs de votre espace de travail** : En cas de doute, contactez l'un des administrateurs de votre espace de travail pour vérifier ou mettre à jour vos droits d'accès.
+
+## Erreur 404 : Élément introuvable
+
+Le message d'erreur "Erreur 404 élément introuvable" indique que vous tentez d'accéder à un élément introuvable sur Dastra. Cela peut se produire lorsque l'élément en question a été modifier, déplacé ou supprimé (par un autre utilisateur ou par vous-même).
+
+**Comment Résoudre**
+
+* **Vérifiez l'URL**
+* **Cherchez l'élément à partir d'un moteur de recherche**
+
+## Erreur 500
+
+Cette erreur peut survenir de façon ponctuelle, elle est souvent causée par :\
+-Des problèmes de connexion\
+-Des problèmes liés à votre environnement (navigateur, extension, etc)\
+-Le fait que plusieurs personne travaille en simultané sur le même élément\
+-L'exécution d'une action nécessitant beaucoup de ressource de la part du serveur.
+
+Dans la plupart des cas, il s’agit d’un incident temporaire et nous vous recommandons d’attendre quelques minutes avant de réessayer.\
+\
+Si le problème se reproduit, n'hésitez pas à remonter un rapport de bug depuis le porte-voix dans Dastra afin que nos équipes puissent étudier le problème.\
+
+
+## Message d'erreur : "Le champ Label est requis."
+
+Ce message apparait généralement quand un élément a été laissé vide lors de la réponse à un questionnaire.\
 
 
 ## Message d'erreur : "Attention, du contenu HTML interdit est présent dans un champ !"
