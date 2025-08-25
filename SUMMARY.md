@@ -146,6 +146,7 @@
   * [Formulaire de collecte de demandes](features/gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md)
   * [Intégration technique](features/gerer-les-exercices-des-droits/integration-technique.md)
   * [Intégration de l'API](features/gerer-les-exercices-des-droits/integration-de-lapi.md)
+  * [Questions fréquentes](features/gerer-les-exercices-des-droits/questions-frequentes.md)
 * [Violations de données](features/documenter-les-violations-de-donnees/README.md)
   * [Documenter une nouvelle violation de données](features/documenter-les-violations-de-donnees/documenter-une-violation-de-donnees.md)
   * [Exportez vos violations de données](features/documenter-les-violations-de-donnees/exportez-vos-violations-de-donnees.md)
