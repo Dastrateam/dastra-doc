@@ -12,7 +12,7 @@ Dans Dastra, il existe deux types de notification :
 
 Tous les utilisateurs reçoivent les mêmes notifications concernant l'espace de travail, elles sont accessibles grâce à la cloche en haut à droite de l'écran ![](<../../.gitbook/assets/image (2) (5).png>)  et ne sont pas personnalisables :
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Centre de notifications</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>Centre de notifications</p></figcaption></figure>
 
 ## Les notifications de Dastra que vous recevez sur votre boîte mail
 

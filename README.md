@@ -38,7 +38,7 @@ Notre approche de la protection des données
 
 * **Générez un plan d'action, allouez des tâches** et **collaborer avec votre réseau,** pour mieux protéger réellement vos données.
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption><p>Module de gestion des tâches</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption><p>Module de gestion des tâches</p></figcaption></figure>
 
 * **Implémentez les processus internes** tels que la mise en place de la gestion des exercices de droits, la gestion des consentements aux cookies ou traceurs ou la tenue d'un registre des violations de donnée.
 

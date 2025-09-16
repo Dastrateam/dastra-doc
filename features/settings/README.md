@@ -48,8 +48,8 @@ Apprenez à mettre en place des intégrations :
 
 Apprenez à configurer le SMTP :
 
-{% content-ref url="configuration-du-smtp.md" %}
-[configuration-du-smtp.md](configuration-du-smtp.md)
+{% content-ref url="configuration-du-smtp/" %}
+[configuration-du-smtp](configuration-du-smtp/)
 {% endcontent-ref %}
 
 Apprenez à synchroniser vos données et utiliser les webhooks :

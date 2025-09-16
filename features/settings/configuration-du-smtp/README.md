@@ -14,10 +14,10 @@ description: >-
 
 Par défaut, Dastra route un nombre important de notifications par email pour les services suivants :&#x20;
 
-* [Notifications ](notifications.md)en temps réel (Nouveaux commentaires, tâches, ...)
-* Emails d'échanges dans le cadre d'[une demande d'exercice de droits](../gerer-les-exercices-des-droits/)
-* Invitation aux [audits](../audit/) pour les répondants
-* [Invitations ](../../commencer/commencer/inviter-utilisateurs.md)de nouveaux utilisateurs
+* [Notifications ](../notifications.md)en temps réel (Nouveaux commentaires, tâches, ...)
+* Emails d'échanges dans le cadre d'[une demande d'exercice de droits](../../gerer-les-exercices-des-droits/)
+* Invitation aux [audits](../../audit/) pour les répondants
+* [Invitations ](../../../commencer/commencer/inviter-utilisateurs.md)de nouveaux utilisateurs
 
 Par défaut, Dastra utilise son propre service SMTP.
 
@@ -51,9 +51,9 @@ Attention, votre serveur SMTP doit obligatoirement supporter une connexion sécu
 
 Rendez-vous sur la [page de configuration du serveur SMTP](https://app.dastra.eu/general-settings/smtp)
 
-Remplissez les champs de formulaire à l'aide des données demandées en [prérequis](configuration-du-smtp.md#prerequis)
+Remplissez les champs de formulaire à l'aide des données demandées en [prérequis](./#prerequis)
 
-![](<../../.gitbook/assets/image (249) (1).png>)
+![](<../../../.gitbook/assets/image (249) (1).png>)
 
 A noter que la connectivité au serveur est automatiquement testé pour s'assurer que les identifiants de connexion au serveurs sont correctes. Un email de test sera automatiquement envoyé à partir de nos serveurs.
 

@@ -23,7 +23,7 @@ Pour ajouter un système d'IA, cliquez d'abord sur "Créer un nouveau système d
 
 Une fois les informations obligatoires enregistrées, vous êtes redirigé sur un formulaire comprenant 11 étapes. Ce formulaire va vous permettre de détailler au maximum le système d'IA.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
 
 ## Les 11 étapes du formulaire Système d'IA
 

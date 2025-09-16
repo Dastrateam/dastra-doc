@@ -29,7 +29,7 @@ L'outil de fusion peut être utilisé sur :
 
 Il vous suffit de sélectionner les éléments à fusionner :
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (416).png" alt=""><figcaption><p><br></p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (416) (1).png" alt=""><figcaption><p><br></p></figcaption></figure></div>
 
 Puis de cliquer sur "Choisir une action groupée" et "fusionner les données" :&#x20;
 
