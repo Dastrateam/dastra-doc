@@ -1,8 +1,10 @@
 ---
-description: Dastra s'intègre avec la plateforme d'automatisation Zapier
+description: >-
+  Dastra s'intègre avec la plateforme d'automatisation Zapier et autres
+  applications.
 ---
 
-# Intégrations via Zapier
+# Intégrations
 
 Mettez en place des connecteurs entre Dastra et vos autres applications favorites pour automatiser vos flux de travail et gagner du temps.
 

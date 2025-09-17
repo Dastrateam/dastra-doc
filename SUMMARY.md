@@ -219,8 +219,9 @@
 * [Configuration API](api-references/configuration-api.md)
 * [Authentification](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
-* [Intégrations via Zapier](api-references/integrations-via-zapier/README.md)
-  * [Questions fréquentes](api-references/integrations-via-zapier/questions-frequentes.md)
+* [Intégrations](api-references/integrations/README.md)
+  * [Intégrer Dastra avec des Outils Externes](api-references/integrations/integrer-dastra-avec-des-outils-externes.md)
+  * [Questions fréquentes](api-references/integrations/questions-frequentes.md)
 
 ## 🛡️ La sécurité <a href="#security" id="security"></a>
 
