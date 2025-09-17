@@ -78,7 +78,7 @@ Ce guide présente trois modèles d’intégration (du plus léger au plus robus
 
 ### 📘 Cas d’usage & Endpoints API
 
-Voici quelques scénarios fréquents, leur objectif et les **endpoints Dastra** à utiliser ([documentation API](https://doc.dastra.eu/api-references/liste-des-endpoints-dapi?utm_source=chatgpt.com)) :
+Voici quelques scénarios fréquents, leur objectif et les **endpoints Dastra** à utiliser ([documentation API](https://dastra.readme.io/reference/rate-limiting)) :
 
 #### 1. Orchestration des droits des personnes (DSAR) avec des outils externes
 
