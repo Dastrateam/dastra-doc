@@ -39,7 +39,7 @@ Vous pouvez :
 {% hint style="info" %}
 Veuillez faire attention à la présence éventuelle de balise (ici : `{{data.code}}`) : cela signifie que des données seront insérées lors de la génération du message et sont nécessaires au bon fonctionnement !&#x20;
 
-Vous pouvez bien entendu ajouter d'autres informations dans le texte (tapez `{{` pour ouvrir la lise des variables disponibles)
+Vous pouvez bien entendu ajouter d'autres informations dans le texte (tapez `{{` pour ouvrir la liste des variables disponibles)
 {% endhint %}
 
 ***
