@@ -23,7 +23,7 @@ Ce guide présente trois modèles d’intégration (du plus léger au plus robus
 
 **Idéal pour :** des automatisations simples avec de faibles ou moyens volumes de données.
 
-**Workflow :**
+**Exemple de workflow :**
 
 1. **Déclencheur dans Dastra** → un DSAR ou un événement envoie un webhook.
 2. **Zapier reçoit le webhook** → appelle l’API d’un outil externe.
@@ -39,7 +39,7 @@ Ce guide présente trois modèles d’intégration (du plus léger au plus robus
 
 **Idéal pour :** des workflows de taille moyenne nécessitant plus de flexibilité que Zapier seul.
 
-**Workflow :**
+**Exemple de workflow :**
 
 1. **Déclencheur dans Dastra → Zapier.**
 2. **Zapier appelle un microservice** (AWS Lambda, Azure Function, GCP Cloud Run).
@@ -54,7 +54,7 @@ Ce guide présente trois modèles d’intégration (du plus léger au plus robus
 
 **Idéal pour :** des déploiements à l’échelle entreprise, avec SLA stricts, volumes importants et exigences de sécurité avancées.
 
-**Workflow :**
+**Exemple de workflow :**
 
 1. **Dastra appelle directement l’API externe** lorsqu’un déclencheur survient.
 2. **Le système externe exécute le traitement** (découverte, classification, redaction, etc.).
