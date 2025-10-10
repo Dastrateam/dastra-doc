@@ -1,7 +1,5 @@
 ---
-description: >-
-  Apprenez ce qu'est la Privacy à travers l'exemple du Règlement Général de la
-  Protection des Données (RGPD).
+description: Apprenez ce qu'est le Règlement Général de la Protection des Données.
 ---
 
 # Introduction à la Privacy
