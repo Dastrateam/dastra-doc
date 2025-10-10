@@ -35,7 +35,7 @@ Cette configuration concerne **tous les emails de notification envoyés par Dast
 
 Vous pouvez également accéder à la configuration depuis cette URL : [https://app.dastra.eu/general-settings/smtp](https://app.dastra.eu/general-settings/smtp)
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 * Choisissez le fournisseur que vous souhaitez utiliser :
   * **Microsoft 365 (Office 365)**
@@ -67,7 +67,7 @@ Une fois complété, cliquez sur **Enregistrer et tester** pour valider la confi
 
 Le message ressemble à celui-ci :&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 
 

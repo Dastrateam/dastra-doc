@@ -15,7 +15,7 @@ Vous pouvez vous connecter avec vos identifiants Dastra, un compte tiers (SSO), 
 2. Saisissez votre **adresse e-mail** et **mot de passe**
 3. Cliquez sur **Se connecter**
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (7).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Cochez l’option **Se souvenir de mon mot de passe** si vous utilisez un appareil personnel pour éviter de ressaisir vos identifiants à chaque visite.

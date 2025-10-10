@@ -12,8 +12,8 @@ Apprenez à mettre en place le SSO :
 
 Apprenez à gérer les référentiels :
 
-{% content-ref url="../cartography/referentials.md" %}
-[referentials.md](../cartography/referentials.md)
+{% content-ref url="../cartography/referentials/" %}
+[referentials](../cartography/referentials/)
 {% endcontent-ref %}
 
 Apprenez-en davantage sur les rôles et permissions:&#x20;
