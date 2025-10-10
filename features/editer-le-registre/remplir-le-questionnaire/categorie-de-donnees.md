@@ -48,7 +48,7 @@ Dans chaque jeu de données, vous pouvez inscrire l'origine des données. Celle 
 
 Un champ vous permettant de décrire l'origine de la collecte permet d'apporter la précision nécessaire.
 
-<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>Source des données</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (2) (1).png" alt=""><figcaption><p>Source des données</p></figcaption></figure>
 
 ### Associer un actif au jeu de données
 
@@ -86,7 +86,7 @@ Si une donnée n'est pas présente, vous pouvez la créer directement depuis ce 
 
 Les champs peuvent être catégorisés selon des catégories prédéterminées. Il s'agit notamment des catégories préconisées par la CNIL.
 
-<figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>Sélecteur de catégorie de données personnelles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (2) (3).png" alt=""><figcaption><p>Sélecteur de catégorie de données personnelles</p></figcaption></figure>
 
 C'est également au niveau du champ que vous pouvez indiquer la présence d'une donnée sensible. Par exemple, une donnée de santé ou un autre type de donnée sensible.&#x20;
 
@@ -132,7 +132,7 @@ Pour cela, il est nécessaire d'ajouter le jeu de données au traitement. Sur la
 
 Vous pourrez voir apparaitre la fenêtre de personnalisation.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Fenêtre de personnalisation des durées de conservation</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (4).png" alt=""><figcaption><p>Fenêtre de personnalisation des durées de conservation</p></figcaption></figure>
 
 Lorsque la durée de conservation est personnalisée au niveau du traitement, un petit logo de stylo apparait sur le bouton concerné :&#x20;
 

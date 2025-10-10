@@ -4,118 +4,163 @@ description: Apprenez ce que sont les durées de conservation.
 
 # Durées de conservation
 
-## Définition des durées de conservation
+### 📖 Définition
 
-Les durées de conservation font partie des principes fondamentaux de la protection des données personnelles.
+Les **durées de conservation** font partie des principes fondamentaux de la protection des données.\
+Elles découlent du principe de **limitation de la conservation** (article 5.1.e RGPD) et participent au **droit à l’oubli**.
 
-Le principe de durée limitée de conservation consacre le droit à l’oubli des personnes.
+> 🔗 Articles clés :\
+> – **Art. 5 RGPD** (limitation de conservation)\
+> – **Art. 30 RGPD** (documentation dans le registre)\
+> – **Art. 13–14 RGPD** (information des personnes)
 
-Une obligation issue de l’article 5 du RGPD :
+Concrètement, vous devez déterminer pour chaque traitement :
 
-![Extrait de l'article 5 du RGPD](<../../.gitbook/assets/image (189).png>)
+* une **durée fixe** (ou un ensemble de durées par phase),
+* et/ou un **critère objectif** permettant de la calculer (ex. “+3 ans après le dernier contact actif”).
 
-* **Une forme permettant l'identification**
-  * Les données personnelles peuvent être conservées dans une certaine limite, sous une forme directement ou indirectement identifiante et de façon indéfinie par les organismes.
-* **Nécessaire au regard des finalités**
-  * Les données doivent être traitées pendant une durée limitée, de façon cohérente avec l’objectif poursuivi (autrement dit de la finalité).
+***
 
-Une **obligation de documentation** dans le registre des activités de traitement prévu à l’article 30 du RPGD
+### 🔄 Le cycle de vie de la donnée
 
-![Extrait de l'article 30 du RGPD](<../../.gitbook/assets/image (190).png>)
+La conservation s’organise en **phases successives**. C’est ce cycle qui détermine vos règles.
 
-Une **obligation d’information** destinée aux personnes concernées prévue aux articles 13 et 14 du RGPD
-
-![Extrait des articles 13 et 14 du RGPD](<../../.gitbook/assets/image (191).png>)
-
-Il est ainsi nécessaire de déterminer :
-
-* Une durée fixe de conservation, selon le cycle de vie de la vie de la donnée.
-* Un critère objectif utilisé pour déterminer cette durée.
-
-## Le cycle de vie de la donnée
-
-Le cycle de vie de la donnée peut se décliner en trois étapes :
-
-![Le cycle de vie de la donnée](<../../.gitbook/assets/image (192).png>)
+| Phase                            | Finalité                    | Accès                     | Exemple de durée                |
+| -------------------------------- | --------------------------- | ------------------------- | ------------------------------- |
+| **Usage courant**                | Exploitation opérationnelle | Étendu (équipe métier)    | Durée du contrat + exécution    |
+| **Archivage intermédiaire**      | Preuve / défense d’un droit | Restreint (need-to-know)  | Prescription légale (ex. 5 ans) |
+| **Archivage définitif** (public) | Intérêt historique          | Très restreint            | Versement / tri par SIAF        |
+| **Anonymisation**                | Statistiques / recherche    | Données non identifiantes | Illimitée si irréversible       |
+| **Suppression**                  | Fin du cycle                | —                         | Au terme des phases             |
 
 {% hint style="info" %}
-Le [guide de la CNIL sur les durées de conservation](https://www.cnil.fr/sites/default/files/atoms/files/guide\_durees\_de\_conservation.pdf)  apporte des éclaircissements sur la documentation à apporter sur les durées de conservation :
-
-* Le **registre** dans lequel doivent figurer les activités de traitements et les durées de conservation afférentes ;
-* Un **document de référence** centralisant, par exemple sous forme de tableau, les durées des différentes phases de vie des données pour chaque traitement (les préconisations du SIAF peuvent être reprises le cas échéant dans les tableaux de gestion des archives internes à la structure) ;
-* Les **différentes actions entreprises**, y compris si ces actions sont toujours en cours ;
-* Les **instructions écrites** transmises au sous-traitant en matière de durées.
-* Les **éventuelles procédures pour l’archivage des données**, et notamment en cas de versement obligatoire pour l’archivage définitif des archives publiques (bordereau de versement, etc.) ;
-* La **procédure de destruction des données**, le cas échéant (par exemple : bordereau d’élimination, etc.) ;
-* La **politique de gestion des habilitations** et la **matrice d’habilitation** en cas d’archivage, etc.
+📄 Le [guide CNIL “Durées de conservation”](https://www.cnil.fr/sites/default/files/atoms/files/guide_durees_de_conservation.pdf) détaille : registre, document de référence, procédures d’archivage/d’élimination, instructions aux sous-traitants, etc.
 {% endhint %}
 
-Avec Dastra, renseignez les différents cycles de vie de la donnée et adaptez les durées de conservation à chaque jeu de données créé.&#x20;
+***
 
-## Comment les déterminer ?
+### 🧭 Comment les déterminer (méthode)
 
-En appliquant le principe de protection des données dès la conception :
-
-* **Définir avec précision la finalité poursuivie**, c’est-à-dire ce à quoi les données personnelles vont servir ;
-* Les **différents cycles de la vie de ces données**, les durées applicables, ainsi que les données concernées ;
-* **Identifier les personnes qui auront besoin de traiter les données** lors de l’utilisation courante, et celles en cas d’archivage intermédiaire ; assurer la traçabilité des accès aux données archivées ;
-* **Prévoir une procédure de purge automatique** et sélective des données (pour les archives publiques, cette purge est soumise à l’autorisation d’élimination du responsable du contrôle scientifique et technique) ;
-* Si un **processus d’anonymisation** est envisagé, vérifier que les données ne permettront pas de « réidentifier » les personnes concernées à l’issue du processus.
-
-### **Où trouver les références ?**
-
-* S’appuyer sur les dispositions légales ou réglementaires
-* Les délibérations de la CNIL
-* Pour les archives publiques, les préconisations des archives de France
-* Les références sectorielles
+1. **Clarifier la finalité**\
+   → que faites-vous réellement des données ? À quoi servent-elles ?
+2. **Cartographier les phases**\
+   → usage courant → archivage intermédiaire → anonymisation/suppression
+3. **Identifier les bases juridiques et références**\
+   → lois & règlements sectoriels, délibérations CNIL, référentiels, **SIAF** (public), pratiques métier
+4. **Fixer une règle claire**\
+   → “**X ans après \[événement]**, puis **archivage Y ans**, puis **suppression**”\
+   → ou “**tant que…**, puis **Z ans après** / **critère**”
+5. **Organiser la mise en œuvre**\
+   → purge **automatique** ou **pilotée**, journalisation, preuves d’exécution
+6. **Informer et documenter**\
+   → notice d’information (Art. 13–14), registre (Art. 30), politique interne
 
 {% hint style="info" %}
-Si aucun texte ou norme n’apporte de solutions, il est nécessaire de déterminer la durée la plus adaptée à la réalisation de la finalité du traitement conformément au principe de responsabilité.
+S’il n’existe **aucune référence claire**, choisissez une durée **proportionnée à la finalité** et documentez l’analyse (accountability).
 {% endhint %}
 
-## Qui est impliqué ?
+***
 
-* Le **service chargé de la mise en œuvre du traitement** (qui peut être un sous-traitant) apportera tous les éléments permettant de comprendre ses besoins et, ainsi, de déterminer la durée d’utilisation courante des données visées ;
-* Le **délégué à la protection des données (DPO)** est l’interlocuteur privilégié lorsqu’il a été désigné ; il est en effet chargé de veiller à la conformité des traitements mis en œuvre au sein de la structure, ainsi que de conseiller le responsable de traitement ;
-* Le **service interne d’archives à la structure ou à la collectivité**, le cas échéant, peut éclairer les pratiques en matière de conservation des données pour le traitement concerné (gestion du cycle de vie de la donnée, etc.) ;
-* Un **conseil**, qu’il soit interne à la structure (par exemple : direction juridique d’une entreprise), ou externe (ex : avocat, entreprise de services du numérique, etc.). Ce dernier peut, en particulier, aider à cibler les éventuelles dispositions législatives ou réglementaires applicables ;
-* La **fédération professionnelle** à laquelle le responsable de traitement est adhérent, peut fournir un support à son réseau dans la détermination des durées de conservation.
+### 🧪 Exemples de règles (à adapter)
 
-Dans le secteur public (pour les structures publiques et pour les organismes privés chargés d’une mission de service public), les interlocuteurs à privilégier sont le **service d’archives départemental territorialement compétent** (pour les services déconcentrés et les collectivités territoriales et leurs groupements), ou la mission des archives du ministère de tutelle (pour les services de l’administration centrale). Ces interlocuteurs pourront renseigner la structure sur les obligations qui lui sont applicables, et la guider dans leur mise en œuvre (détermination de la DUA et du sort final).
+| Contexte          | Données                           | Règle synthétique                                                 |
+| ----------------- | --------------------------------- | ----------------------------------------------------------------- |
+| Prospects B2B     | Identité, contact, trace d’opt-in | **3 ans** après dernier contact actif, puis **suppression**       |
+| RH – Candidats    | CV, lettres, entretiens           | **2 ans** après dernier contact avec le candidat, sauf opposition |
+| Clients           | Contrat, facturation              | Contrat + **5 ans** (preuve), puis **archivage**/**suppression**  |
+| Vidéosurveillance | Images                            | **30 jours max**, sauf incident (procédure probatoire)            |
+| Cookies           | Identifiants, préférences         | Durée conforme au bandeau et à la **preuve du consentement**      |
 
-## Comment contrôler ?
+> Ces valeurs varient selon les textes applicables, votre secteur et vos risques : **documentez vos choix**.
 
-L’implémentation pratique des durées de conservation doit être régulièrement vérifiée. Il y a donc nécessité de **réaliser des audits réguliers**. Le DPO dispose de cette mission de contrôle des traitements incluant les durées de conservation.
+***
 
-Pour cela, la fonctionnalité Audit de Dastra est idéale :&#x20;
+### 👥 Qui impliquer ?
 
-{% content-ref url="../../features/audit/" %}
-[audit](../../features/audit/)
-{% endcontent-ref %}
+* **Métier porteur du traitement** : besoin opérationnel, événements déclencheurs
+* **DPO / Juridique** : conformité, textes applicables, équilibre droits/libertés
+* **Archives / SIAF (public)** : DUA, tri, versements, sort final
+* **RSSI / IT** : purge, anonymisation, restriction d’accès, journaux
+* **Sous-traitants** : exécution conforme aux **instructions écrites**
 
-## Pour aller plus loin
+***
+
+### ✅ Contrôler l’application (audits)
+
+* Vérifier périodiquement : pertinence des durées, exécution des purges, accès en archivage, anonymisation
+* Tracer les opérations : bordereaux d’élimination, rapports de purge, logs
+* Revoir à chaque **évolution de finalité, base légale, prestataire**…
+
+***
+
+### 🧰 Mettre en œuvre dans Dastra
+
+#### 1) Dans le **registre**
+
+* Renseignez **une règle lisible** par jeu de données :\
+  “_3 ans après dernier contact actif (prospect), puis suppression_”
+* Ajoutez **le critère déclencheur** (ex. “date de dernière activité CRM”, “fin de contrat”)
+* Liez **les références** (texte légal, référentiel interne)
+
+#### 2) **Automatiser/piloter** la purge
+
+* Planifiez des **tâches récurrentes** (revues, purges, extractions de preuves)
+* Utilisez les **workflows** et **rappels** pour les échéances
+
+#### 3) **Preuves**
+
+* Déposez bordereaux d’élimination, comptes rendus de purge, scripts, tickets d’exécution dans la **GED** du traitement
+
+***
+
+### 🔐 Archivage intermédiaire & sécurité
+
+* Restreindre l’accès (RBAC, cloisonnement)
+* Journaliser les consultations
+* Séparer logiquement (coffre/zone d’archive)
+* Chiffrer quand c’est pertinent
+* Prévoir la **réversibilité** chez les sous-traitants
+
+***
+
+### 🧪 Anonymisation vs pseudonymisation
+
+* **Anonymisation** : irréversible → **hors RGPD** si véritablement non ré-identifiable
+* **Pseudonymisation** : réversible avec clé → **toujours donnée personnelle**\
+  → Documentez la méthode, testez la **ré-identifiabilité**, tenez compte des **données auxiliaires**.
+
+***
+
+### 🤖 IA & durées de conservation
+
+Pour les **systèmes d’IA**, définissez des durées distinctes pour :
+
+* **Entraînement** (datasets, versions),
+* **Validation / test**,
+* **Logs d’inférence** (traçabilité, transparence),
+* **Jeux d’évaluation** (biais, robustesse).
+
+Liez ces durées à votre **registre des systèmes d’IA** pour assurer la cohérence **RGPD / AI Act**.
+
+***
+
+### 📚 Références utiles
+
+* **CNIL** – Guide durées de conservation (documentation, preuves, archivage)
+* **SIAF** – Tableau de gestion (secteur public)
+* Référentiels sectoriels, codes de conduite, conventions collectives
+
+***
+
+### ▶️ Ressources & suites
 
 {% embed url="https://www.youtube.com/watch?v=BK8A3L9P7T0" %}
-Webinar "Durées de conservation : comment les déterminer ?"
+Webinar “Durées de conservation : comment les déterminer ?”
 {% endembed %}
 
-{% content-ref url="../../features/editer-le-registre/remplir-le-questionnaire/categorie-de-donnees.md" %}
-[categorie-de-donnees.md](../../features/editer-le-registre/remplir-le-questionnaire/categorie-de-donnees.md)
-{% endcontent-ref %}
+***
 
-{% content-ref url="../../features/audit/" %}
-[audit](../../features/audit/)
-{% endcontent-ref %}
-
-{% content-ref url="../../features/planifier/" %}
-[planifier](../../features/planifier/)
-{% endcontent-ref %}
-
-
-
-
-
-
-
-
-
+{% hint style="success" %}
+**Bon réflexe :** écrivez des règles _actionnables_ (“**X ans après \[événement]** → **purge** / **anonymisation**”), testez-les sur un périmètre réduit, puis généralisez.\
+Dastra vous aide à **documenter**, **planifier** et **prouver** l’exécution.
+{% endhint %}

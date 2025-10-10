@@ -4,88 +4,177 @@ description: Découvrez les différents droits introduits par le RGPD.
 
 # Droits des personnes
 
-Le RGPD réaffirme les droits des individus, introduit le droit à la portabilité des données et renforce les obligations incombant au responsable du traitement. Les personnes concernées ont le droit de garder le contrôle de leurs données. Le responsable du traitement doit leur expliquer comment les exercer. Lorsqu'ils exercent leurs droits, les personnes demandeuses doivent obtenir une réponse avant un mois (allongé de deux mois en cas de demandes complexes).
+Le RGPD réaffirme les droits des individus, introduit la **portabilité** et renforce les obligations du **responsable du traitement** (RT).\
+Les personnes doivent **garder le contrôle** de leurs données, et le RT doit **expliquer clairement** comment exercer ces droits.
 
-## Deux obligations majeures pour le responsable de traitement:
+* **Délai de réponse** : 1 mois à compter de la réception (prolongeable **2 mois** pour demandes complexes ou nombreuses — notifier la prolongation dans le mois).
+* **Gratuit** : pas de frais, sauf demandes manifestement **infondées** ou **excessives** (motiver alors le refus ou facturer des frais raisonnables).
+* **Traçabilité** : consigner les demandes et réponses (preuve de conformité).
 
-* &#x20;Informer les personnes concernées sur l'utilisation de leurs données (finalité, durée d'archivage etc.) et sur les modalités d'exercice de leurs droits&#x20;
-* Informer les personnes concernées de l'exécution d'opérations conformes à l'exercice des droits de rectification, d'effacement ou de limitation
+***
 
-## 3 règles opérationnelles communes pour les droits des personnes:&#x20;
+### ✅ Deux obligations majeures du responsable de traitement
 
-* Délai de réponse d'un mois à compter de la demande (allongé de 2 mois en cas de demande complexe)&#x20;
-* Pas de frais pour l'exercice des droits, sauf en cas de réclamations manifestement infondées ou excessives&#x20;
-* Traçabilité des demandes et des réponses
+1. **Informer** les personnes (finalités, bases légales, durées, destinataires, droits, transferts, contact DPO, etc.).
+2. **Notifier l’exécution** d’opérations conformes à l’exercice des droits (rectification, effacement, limitation) ou **motiver** un refus.
 
-## Le droit d'accès à l'information
+***
 
-Pour être licite, la collecte de données personnelles doit être accompagnée d'informations claires et précises des personnes sur:&#x20;
+### 🧭 Règles opérationnelles communes (tous droits)
 
-* l'identité de la personne responsable du traitement ;
-* la finalité du traitement ;&#x20;
-* le caractère obligatoire ou facultatif des réponses et les conséquences d'un défaut de réponse ;&#x20;
-* les destinataires des données ;&#x20;
-* leurs droits (droit d'accès, de rectification, d'opposition etc.) ;&#x20;
-* transferts de données possibles vers des pays tiers.&#x20;
+* **Délai** : 1 mois (jusqu’à +2 mois si nécessaire, avec information sous 1 mois).
+* **Vérification d’identité** proportionnée au risque (éviter d’exiger plus que nécessaire).
+* **Canaux d’entrée** : email dédié, formulaire, portail en ligne, courrier.
+* **Journalisation** : date de réception, identité vérifiée, périmètre, décision, date de clôture.
+* **Exemptions / limites** : droits des tiers, secrets d’affaires, obligations légales de conservation, sécurité, prévention des fraudes… (documenter).
 
-L'information est préalable à la collecte de données en cas de collecte directe. En cas de collecte indirecte, elle doit être donnée dans un délai d'un mois. Le support de ces informations varie selon les caractéristiques du traitement des données (exemple, panneau d'information pour la vidéosurveillance, mention d'informations sur un formulaire, lecture de ces informations en cas de collecte de données par téléphone.)
+***
 
-### Le droit d'accès peut être exercé:
+### 📜 Droit à l’information (Arts. 13 & 14)
 
-* Par écrit : courrier postal, accompagné d'une copie d'une pièce d'identité en cas de suspicion de fraude. Idéalement, par courrier recommandé avec accusé de réception. La demande peut être faite par courriel également.
-* Sur place : avec présentation d'une pièce d'identité en cas de doute sur la personne. Il est possible d'être accompagné de la personne de son choix. La consultation devrait durer suffisamment longtemps pour en prendre note de manière pratique et complète. Il est possible de demander une copie des données.&#x20;
-* En ligne : directement depuis la plateforme en mode connecté.&#x20;
+À fournir **au moment de la collecte** (directe) ou **sous 1 mois** (indirecte) : identité du RT, finalités, bases légales, destinataires, transferts, durées, droits, contact DPO, source (si indirect), décision automatisée/profilage le cas échéant.
 
-Le responsable de traitement dispose d'un délai de réponse maximum d'un mois à compter de la date de réception de la demande. Si la demande est incomplète (absence de la pièce d'identité par exemple), le responsable peut demander des compléments : le délai est alors suspendu et recommence une fois ces éléments fournis.
+> Support : mentions sur formulaire, politique de confidentialité, bandeau cookies, affichage (vidéosurveillance), scripts de centre d’appels, etc.
 
-### Comment restituer les données ?
+***
 
-Les éléments communiqués doivent être facilement compréhensibles. Les codes, acronymes et abréviations utilisés doivent être expliqués (éventuellement par le biais d'un lexique). Par exemple, "Segmentation: A +" signifie que vous êtes considéré comme un client VIP.
+### 🔎 Droit d’accès (Art. 15)
 
-### Les limites du droit d'accès
+La personne peut obtenir :
 
-Le responsable du traitement peut:&#x20;
+* la **confirmation** que des données sont traitées,
+* **l’accès** aux données et informations associées (finalités, catégories, destinataires, durées…),
+* une **copie** des données (gratuite pour la première copie).
 
-* refuser la demande d'accès: dans ce cas, il doit justifier sa décision.&#x20;
-* Ne pas répondre aux demandes manifestement déraisonnables en termes de nombre, de nature répétitive ou systématique (par exemple, demander une copie complète d'un enregistrement chaque semaine).
+**Modalités** :
 
-Lorsque le responsable du traitement ne dispose d'aucune donnée sur la personne exerçant le droit d'accès (par exemple, les données ont été supprimées ou que l'organisation ne dispose d'aucune donnée sur la personne), il doit répondre au demandeur dans un délai d'un mois. Le droit d'accès doit être exercé dans le respect des droits des tiers: un salarié d'une entreprise ne peut pas obtenir de données relatives à un autre salarié.
+* **Écrit** (postal ou email), **sur place** (si adapté), ou **en ligne** (espace sécurisé).
+* Les réponses doivent être **compréhensibles** (explication des codes, acronymes, scores).
 
-## La collecte du consentement
+**Limites / refus** : demandes abusives, atteinte aux droits de tiers, absence de données → répondre quand même pour le signifier.
 
-Le consentement est une action active, explicite et de préférence écrite de l'utilisateur qui doit être libre, spécifique et informée. Dans un formulaire en ligne, cela peut se produire, par exemple, par une case à cocher non cochée par défaut. Le consentement est «préalable» à la collecte de données.&#x20;
+***
 
-Le consentement préalable de la personne concernée est requis, en particulier:&#x20;
+### 🧯 Droit de rectification (Art. 16)
 
-* En cas de collecte de données sensibles&#x20;
-* Réutilisation des données à d'autres fins&#x20;
-* Utilisation de cookies à certaines fins&#x20;
-* Utilisation des données pour la prospection commerciale électronique
+Corriger sans délai les **données inexactes** et compléter les **données incomplètes** (via déclaration complémentaire).\
+Informer, le cas échéant, les destinataires des rectifications.
 
-## Le droit à l'opposition
+***
 
-Les personnes doivent pouvoir s'opposer à la réutilisation par le responsable du dossier de leurs coordonnées à des fins de sollicitations, notamment commerciales, lors d'une commande ou de la signature d'un contrat. Une case à cocher, non cochée par défaut, doit leur permettre d'exprimer leur choix directement sur le formulaire ou le bon de commande à compléter. La simple mention de l'existence de ce droit dans les conditions générales ne suffit pas. Toute personne a le droit de s'opposer, pour des motifs légitimes, au traitement de ses données, sauf si celui-ci répond à une obligation légale (ex: dossiers fiscaux).
+### 🗑️ Droit à l’effacement (Art. 17)
 
-## Le droit d'accès et de rectification
+Effacer les données lorsque :
 
-Tout le monde peut, l'accès à toutes les informations le concernant, connaître l'origine des informations le concernant, accéder aux informations sur lesquelles le responsable du dossier s'est appuyé pour prendre une décision le concernant (par exemple, les éléments qui auraient été utilisés pour ne pas vous accorder de promotion ou le score attribué par une banque ayant conduit au rejet de votre crédit) application), obtenir une copie (des frais ne dépassant pas le coût de reproduction peuvent être demandés) exiger que ses données soient, selon le cas, rectifiées, complétées, mises à jour ou supprimées.
+* elles ne sont plus nécessaires,
+* retrait du consentement,
+* opposition fondée et pas de motif impérieux,
+* traitement illicite,
+* obligation légale d’effacement,
+* données collectées auprès d’enfants (services de la société de l’information).
 
-### Le droit de portabilité
+**Exceptions** : obligation légale de conservation, exercice/défense de droits en justice, intérêt public (santé, recherche), liberté d’expression et d’information.\
+Informer les destinataires lorsque c’est applicable.
 
-* Les personnes concernées peuvent demander à recevoir, dans un format structuré, couramment utilisé et lisible par machine, les données les concernant qu'elles ont fournies à un responsable de traitement.&#x20;
-* Lorsque cela est techniquement possible, ils peuvent également demander que ces données soient transmises directement d'un responsable de traitement à un autre.
+***
 
-## Pour aller plus loin
+### 🚦 Droit à la limitation (Art. 18)
 
-{% content-ref url="../../features/gerer-les-exercices-des-droits/" %}
-[gerer-les-exercices-des-droits](../../features/gerer-les-exercices-des-droits/)
-{% endcontent-ref %}
+Suspendre temporairement le traitement (hors conservation) si :
 
-{% content-ref url="../../features/editer-le-registre/remplir-le-questionnaire/droits-des-personnes.md" %}
-[droits-des-personnes.md](../../features/editer-le-registre/remplir-le-questionnaire/droits-des-personnes.md)
-{% endcontent-ref %}
+* exactitude contestée,
+* traitement illicite (la personne demande la limitation plutôt que l’effacement),
+* données nécessaires à **l’exercice/défense de droits**,
+* vérification d’une opposition en cours.
+
+***
+
+### 🔁 Droit d’opposition (Art. 21)
+
+La personne peut s’opposer :
+
+* **à tout moment** au marketing direct (y compris profilage lié au marketing) → **obligation de cesser** sans délai ;
+* pour des raisons tenant à sa situation particulière, à un traitement fondé sur l’**intérêt légitime** → accepter si aucun motif légitime impérieux contraire.
+
+> Prévoir des **mécanismes simples** d’opt-out (lien en bas d’email, préférence compte, case à cocher…).
+
+***
+
+### 📦 Droit à la portabilité (Art. 20)
+
+* Recevoir les **données fournies** au RT **dans un format structuré, couramment utilisé et lisible par machine**,
+* et les **transmettre à un autre RT** (lorsque techniquement possible).\
+  S’applique lorsque le traitement est fondé sur le **consentement** ou le **contrat** et réalisé **par moyens automatisés**.
+
+***
+
+### 🤖 Décision individuelle automatisée & profilage (Art. 22)
+
+Droit **de ne pas faire l’objet** d’une décision **entièrement automatisée** produisant **des effets juridiques** ou similaires significatifs (exclusion : contrat nécessaire, autorisation légale, consentement explicite — sous **garanties**).\
+Obligations : **information claire**, **intervention humaine**, **possibilité de contester** et d’exprimer son point de vue.
+
+***
+
+### 🧪 Consentement (Arts. 6, 7)
+
+Le consentement doit être **libre, spécifique, éclairé et univoque** (action positive, **non pré-coché**).\
+Retrait **aussi facile que l’octroi**.\
+Exemples : données sensibles, prospection électronique, cookies (selon finalités).
+
+***
+
+### 🧰 Playbook opérationnel (modèle)
+
+#### Canaux d’entrée
+
+* Formulaire web (authentifié si possible), email dédié (privacy@…), portail client, courrier.
+
+#### Vérification d’identité
+
+* Proportionnée (email de confirmation, code à usage unique, pièce si risque avéré).
+* Éviter d’augmenter le risque (ne pas demander plus que nécessaire).
+
+#### SLA & workflow
+
+1. **Accusé de réception** (72h) avec N° de dossier et délai cible,
+2. **Qualification** du droit demandé et périmètre (systèmes, filiales, sous-traitants),
+3. **Collecte** et revue interne (métier/IT/juridique/DPO),
+4. **Réponse** dans le mois (+ notification si prolongation),
+5. **Preuve** : consigner pièces et décision, notifier les destinataires concernés (rectif/effacement/limitation).
+
+#### Preuves à conserver
+
+* Demande, identité vérifiée, recherches effectuées, décision motivée, date d’envoi, logs de notification, éléments transmis à la personne.
+
+***
+
+### 🧩 Gérer les droits dans Dastra
+
+* **Collecte & suivi** : créez un dossier DSR, assignez, fixez l’échéance, suivez le statut (en attente d’infos, en traitement, clôturé).
+* **Vérification & preuve** : journalisez identités, recherches et décisions ; stockez pièces justificatives dans la **GED**.
+* **Automatisation** : modèles de réponses, tâches récurrentes, rappels, notifications, intégrations (helpdesk/CRM).
+* **Reporting** : temps de réponse, volumétrie, motifs de refus, tendances par droit.
 
 
 
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
+***
 
+### 🧭 Modèles de réponses (exemples rapides)
+
+* **Accusé de réception** :\
+  « Nous avons bien reçu votre demande le JJ/MM/AAAA. Elle porte sur le droit d’\_\_\_\_\_\_. Nous y répondrons au plus tard le JJ/MM/AAAA. »
+* **Prolongation** :\
+  « Compte tenu de la complexité/du nombre de demandes, le délai est prolongé de deux mois. Vous recevrez une réponse au plus tard le JJ/MM/AAAA. »
+* **Refus motivé** :\
+  « Votre demande ne peut être satisfaite car \_\_\_\_\_\_ (motif RGPD). Vous pouvez introduire une réclamation auprès de l’autorité compétente. »
+
+***
+
+### 📌 À retenir
+
+* Délai **1 mois** (jusqu’à +2), **gratuit** sauf abus, **traçabilité** obligatoire.
+* Mettre en place des **processus et preuves** standardisés.
+* Prévoir des **mécanismes simples** d’opt-out et de portabilité.
+* Centraliser le traitement des demandes dans **Dastra** pour sécuriser, prouver et piloter.

@@ -6,91 +6,129 @@ description: >-
 
 # Confidentialité dès la conception et par défaut
 
-## Introduction
+### 🌍 Introduction
 
-La **confidentialité dès la conception** ("_privacy by design_") et la **confidentialité par défaut** ("_privacy by default_") sont deux concepts clés dans la mise en œuvre de la protection des données personnelles, issus de l'[article 25 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article25).
+Les principes de **confidentialité dès la conception** (_privacy by design_) et **confidentialité par défaut** (_privacy by default_) sont au cœur du **RGPD**, posés par [l’article 25](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article25).\
+Ils visent à garantir que la **protection des données personnelles** est intégrée **dès la conception d’un projet**, et que **les paramètres par défaut** respectent le niveau de confidentialité le plus élevé possible.
 
-&#x20;Le principe de protection des données dès la conception signifie que l’entreprise doit intégrer la protection des données à caractère personnel, **dès la conception de projets rattachés au traitement des données d’une entreprise**. L'objectif est alors de minimiser les risques d’un non-respect du traitement des données au RGPD, dès la conception d'un projet et par défaut.
+> 🎯 Objectif : prévenir les risques avant qu’ils ne surviennent et démontrer la conformité à chaque étape du cycle de vie des données.
 
-{% hint style="info" %}
-Le principe de privacy by design s’applique lors de la conception d’un produit ou d’un service, ce qui nécessite de l’**anticipation** de la part des entreprises.
+***
 
-&#x20;Toutefois, l’application de mesures protégeant les données personnelles ne s’arrête pas à la conception, et doit se dérouler tout au long du cycle de vie du traitement sur les données.
+### 🧩 Définitions essentielles
+
+#### 🧠 Privacy by Design — "Confidentialité dès la conception"
+
+Le responsable de traitement anticipe la protection des données **dès la conception** d’un produit, d’un service ou d’un traitement.\
+➡️ On agit **en amont**, avant toute collecte ou mise en production.
+
+#### 🛡️ Privacy by Default — "Confidentialité par défaut"
+
+Les réglages par défaut doivent garantir le **plus haut niveau de protection possible** : seules les données **strictement nécessaires** sont traitées, et les options de partage ou de visibilité doivent être **désactivées par défaut**.
+
+#### ⚖️ Minimisation
+
+Ne traiter que les données **adéquates, pertinentes et limitées** à la finalité visée.
+
+#### 🔐 Intégrité et sécurité
+
+Restreindre les accès, assurer la **confidentialité, intégrité et disponibilité** des données, et tracer toute action.
+
+#### ⏳ Limitation de la conservation
+
+Planifier **dès la conception** la suppression, l’anonymisation ou l’archivage des données au terme de leur durée utile.
+
+***
+
+### 🧭 Mise en œuvre du Privacy by Design
+
+La démarche doit être **continue** et intégrée au **cycle de vie du traitement** :
+
+#### Étapes clés :
+
+1. **Identifier le projet**
+   * Tout nouveau traitement, outil ou changement de processus.
+   * Alerter le DPO dès la phase d’étude.
+2. **Évaluer les impacts**
+   * Cartographier les données et finalités.
+   * Identifier les risques pour les droits et libertés.
+   * Lancer une **analyse d’impact (PIA/DPIA)** si nécessaire.
+3. **Concevoir des mesures adaptées**
+   * Minimisation, cloisonnement, chiffrement, pseudonymisation, journalisation.
+   * Définir les durées de conservation, les rôles et habilitations.
+   * Prévoir les mécanismes d’exercice des droits.
+4. **Documenter la conformité**
+   * Mentionner les mesures dans le **registre de traitement**.
+   * Archiver les preuves dans la **piste d’audit**.
+   * Justifier les arbitrages (proportionnalité, choix technologiques, etc.).
+5. **Contrôler et améliorer**
+   * Auditer régulièrement les traitements.
+   * Mettre à jour les registres et plans d’action.
+
+***
+
+### 🧱 Mesures typiques à intégrer
+
+| Objectif                 | Mesure technique ou organisationnelle                        |
+| ------------------------ | ------------------------------------------------------------ |
+| Minimiser les données    | Collecte sélective, masquage, suppression automatique        |
+| Sécuriser les flux       | Chiffrement, TLS, authentification forte, gestion des accès  |
+| Préserver les droits     | Portail de gestion des droits (DSR), procédures d’opposition |
+| Garantir la transparence | Mentions d’information, logs d’accès, documentation claire   |
+| Assurer la traçabilité   | Journalisation des traitements, audits réguliers             |
+| Maîtriser la durée       | Purge, anonymisation, archivage intermédiaire sécurisé       |
+
+***
+
+### 🧠 Lien avec l’Accountability (responsabilité démontrée)
+
+Le **Privacy by Design** découle directement du [principe d’accountability (article 5 RGPD)](https://www.cnil.fr/fr/definition/accountability).\
+Le responsable de traitement doit pouvoir **prouver à tout moment** la conformité de ses traitements.
+
+> 💬 Cela signifie : _“Ne pas seulement être conforme, mais être capable de le démontrer.”_
+
+***
+
+### ⚙️ Privacy by Design dans Dastra
+
+Dastra facilite la mise en œuvre concrète du **privacy by design** et du **privacy by default** à travers ses modules intégrés :
+
+#### 🔍 1. Identifier les risques
+
+Créez des **audits ciblés** ou des **modèles d’analyse** pour chaque nouveau projet.
+
+***
+
+#### 🧮 2. Évaluer et documenter les risques
+
+Réalisez des **analyses d’impact (PIA)** ou **évaluations de risques** pour chaque traitement.
+
+***
+
+#### 📋 3. Planifier les actions de conformité
+
+Attribuez des **tâches de remédiation**, suivez leur avancement et automatisez les relances.
+
+***
+
+#### 🗂️ 4. Documenter dans le registre
+
+Intégrez les mesures de sécurité et de gouvernance dans vos **fiches de traitement**, avec preuve et journalisation.
+
+***
+
+### 🤖 Extension : Privacy by Design et IA responsable
+
+Le **Privacy by Design** s’applique aussi à la **gouvernance des systèmes d’IA** (AI Act).\
+Dastra permet de relier vos **modèles d’IA** à leurs **traitements de données**, d’évaluer la conformité et de documenter les **mesures de maîtrise du risque**.
+
+***
+
+### 📘 Pour aller plus loin
+
+***
+
+{% hint style="success" %}
+💡 **Bon réflexe :** Anticipez la conformité dès la phase de conception : impliquer le DPO, documenter les choix, évaluer les risques et intégrer des garanties par défaut.\
+Dastra vous aide à structurer cette démarche et à la démontrer facilement.
 {% endhint %}
-
-## Définitions
-
-#### Confidentialité dès la conception ("privacy by design")
-
-Prise en compte des enjeux liés à la protection des données privées dès la conception du traitement. Empêcher en amont toute atteinte aux droits de la personne concernée.
-
-#### Confidentialité par défaut ("privacy by default")
-
-Les mesures de protection et de sécurité des données doivent être actives par défaut pour toute opération sur des données.
-
-#### Minimisation des données personnelles
-
-Traiter uniquement les données adéquates, pertinentes et nécessaires au regard des finalités pour lesquelles elles sont collectées.
-
-#### Intégrité et confidentialité
-
-Réglementer strictement l'accessibilité aux données personnelles via une autorisation d'accès à la politique et les mesures de sécurité ad hoc.
-
-#### Limitation de la durée de conservation des données
-
-Fournir dès le début du traitement un dispositif de purge des données à la date d'expiration de leur durée de conservation.
-
-## Comment mettre en œuvre la confidentialité dès la conception et par défaut ?
-
-Afin de mettre en place le privacy by design, la protection des données personnelles doit être prise en compte **à chaque étape du processus de création de nouveaux projets**. Cela signifie que les  entreprises doivent, a minima et ce **avant la mise en production des projets** :
-
-* **Informer** le DPO ou équivalent de l'existence de ces projets
-* **Analyser les risque**s associés à la vie privée dans ces projets&#x20;
-* **Identifier** et **mettre en œuvre** dans le projet **les mesures** intégrant la protection des données à caractère personnel
-* **Documenter** l'ensemble des éléments afin de constituer des preuves de respect des principes de privacy by design & by default.
-
-{% hint style="info" %}
-Le principe de privacy by design est issu directement du [principe d’accountability posé par le RGPD](https://www.cnil.fr/fr/definition/accountability) au sein de son [article 5](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article5). En effet, les responsables de traitement ont l’obligation de :
-
-* **s’interroger sur la conformité de leurs traitements** des données avec le RGPD
-* **être en mesure de prouver cette conformité**
-
-Ils sont donc tenus **responsables du respect des règles** imposées par le RGPD. C’est pourquoi, ils doivent mettre en œuvre et actualiser les mesures garantissant le respect du traitement des données personnelles.
-{% endhint %}
-
-Les principes de Privacy by Design peuvent être appliqués de différentes manières dans Dastra :
-
-* **Créer des formulaires d'audit spécifiques** permettant de collecter les informations nécessaires
-
-{% content-ref url="../../features/audit/" %}
-[audit](../../features/audit/)
-{% endcontent-ref %}
-
-* **Identifier et analyser les risques** pour évaluer les mesures à mettre en œuvre afin de répondre aux enjeux&#x20;
-
-{% content-ref url="../../features/la-gestion-des-risques/" %}
-[la-gestion-des-risques](../../features/la-gestion-des-risques/)
-{% endcontent-ref %}
-
-* &#x20;**Identifier, assigner et faire le suivi** **des tâches** de remédiation
-
-{% content-ref url="../../features/planifier/" %}
-[planifier](../../features/planifier/)
-{% endcontent-ref %}
-
-* **Documenter** **le registre** en indiquant dans les fiches de traitement les mesures mises en œuvre et ainsi constituer la piste d'audit
-
-{% content-ref url="../../features/editer-le-registre/" %}
-[editer-le-registre](../../features/editer-le-registre/)
-{% endcontent-ref %}
-
-## Pour aller plus loin
-
-{% content-ref url="../la-gestion-des-risques/" %}
-[la-gestion-des-risques](../la-gestion-des-risques/)
-{% endcontent-ref %}
-
-{% content-ref url="mesures-de-securite.md" %}
-[mesures-de-securite.md](mesures-de-securite.md)
-{% endcontent-ref %}
-

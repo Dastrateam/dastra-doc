@@ -17,7 +17,7 @@ Par défaut, Dastra route un nombre important de notifications par email pour le
 * [Notifications ](../notifications.md)en temps réel (Nouveaux commentaires, tâches, ...)
 * Emails d'échanges dans le cadre d'[une demande d'exercice de droits](../../gerer-les-exercices-des-droits/)
 * Invitation aux [audits](../../audit/) pour les répondants
-* [Invitations ](../../../commencer/commencer/inviter-utilisateurs.md)de nouveaux utilisateurs
+* [Invitations ](../../../getting-started/setup/inviter-utilisateurs.md)de nouveaux utilisateurs
 
 Par défaut, Dastra utilise son propre service SMTP.
 

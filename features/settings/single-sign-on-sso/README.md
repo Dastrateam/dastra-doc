@@ -116,4 +116,4 @@ Vous pourrez également définir le type de login lors de l'invitation de nouvea
 
 ### Que faire si je ne parviens pas à me logger en SSO ?
 
-Contactez immédiatement [le support](../../../commencer/le-support/faire-une-demande-de-support.md)
+Contactez immédiatement [le support](../../../getting-started/le-support/faire-une-demande-de-support.md)

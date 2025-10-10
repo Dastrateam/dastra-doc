@@ -22,7 +22,13 @@ Un espace de travail est un environnement qui est **totalement cloisonné**. Il 
 
 ### Créez un espace de travail
 
-Vous avez besoin d'un espace de travail pour gérer votre entité. Vous pouvez créer un espace de travail en cliquant sur "Nouvel espace de travail", remplissez ensuite le formulaire de création d'espaceds de travail.
+1. Cliquez sur **“Nouvel espace de travail”**
+2. Remplissez le formulaire (nom, description, logo éventuel)
+3. Validez pour lancer la création
+
+{% hint style="success" %}
+Une fois créé, vous pourrez configurer les unités, entités et inviter des utilisateurs.
+{% endhint %}
 
 ### Accédez à un espace de travail
 

@@ -26,7 +26,7 @@ Pour créer une nouvelle demande manuellement directement depuis le registre des
 
 
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Le registre des demandes de droit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (4).png" alt=""><figcaption><p>Le registre des demandes de droit</p></figcaption></figure>
 
 {% hint style="info" %}
 Vous pouvez également créer des demandes de droit automatiquement (voir suivant).

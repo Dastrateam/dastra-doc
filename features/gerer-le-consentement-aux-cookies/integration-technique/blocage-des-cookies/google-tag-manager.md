@@ -87,7 +87,7 @@ Si vous souhaitez également ne pas activer la balise par défaut y compris si l
 **DastraConsents Does not contain "google-ads":true**
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cliquez sur "Sauvegarder". Vous devriez avoir ceci :
 

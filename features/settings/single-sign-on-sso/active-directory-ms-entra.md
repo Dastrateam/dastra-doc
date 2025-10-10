@@ -42,7 +42,7 @@ Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Micr
 * **Cliquez sur le bouton "Edit"** de la première partie.
 * Saisissez les informations de connexion (**Entity ID et Url ACS**) de la manière suivante :
 
-![](<../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>)
 
 * Cliquez sur **Enregistrer**
 * Allez directement dans la partie 3 afin de **télécharger le certificat au format base64**

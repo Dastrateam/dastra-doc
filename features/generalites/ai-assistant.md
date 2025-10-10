@@ -93,7 +93,7 @@ Vous pouvez utiliser l'assistant IA pour générer des traitements de données o
 {% hint style="warning" %}
 **Que faire si je ne souhaite pas avoir cette fonctionnalité sur mon compte ?**
 
-Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espace de travail, vous pouvez [nous contacter ](../../commencer/le-support/faire-une-demande-de-support.md)afin que nous désactivions la fonctionnalité au niveau de votre organisation.
+Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espace de travail, vous pouvez [nous contacter ](../../getting-started/le-support/faire-une-demande-de-support.md)afin que nous désactivions la fonctionnalité au niveau de votre organisation.
 {% endhint %}
 
 ## Comment ça marche ?

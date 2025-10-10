@@ -4,72 +4,118 @@ description: Apprenez à gérer les notifications dans Dastra.
 
 # Notifications
 
-## Introduction
+### 🧭 Vue d’ensemble
 
-Dans Dastra, il existe deux types de notification :
+Dans Dastra, les notifications vous permettent de rester informé des activités importantes liées à vos traitements, audits, tâches ou demandes d’exercice de droits.
 
-## **Les notifications du centre de notification de Dastra**
+Il existe **deux types de notifications** :
 
-Tous les utilisateurs reçoivent les mêmes notifications concernant l'espace de travail, elles sont accessibles grâce à la cloche en haut à droite de l'écran ![](<../../.gitbook/assets/image (2) (5).png>)  et ne sont pas personnalisables :
+1. **Le centre de notifications** — intégré directement dans l’application
+2. **Les notifications par e-mail** — personnalisables selon vos préférences
 
-<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>Centre de notifications</p></figcaption></figure>
+***
 
-## Les notifications de Dastra que vous recevez sur votre boîte mail
+### 🔔 Centre de notifications (dans l’application)
 
-Il est possible de personnaliser les notifications que vous recevez de l'application sur votre boîte mail, selon leur catégorie ou leur nature.\
+Le centre de notifications regroupe les alertes visibles via l’icône **cloche** en haut à droite de votre écran.
 
+* Accessible à tous les utilisateurs du workspace
+* Non personnalisable (commune à l’ensemble du workspace)
+* Contient les notifications générales sur les activités récentes : création, modification ou suppression d’éléments
 
-Pour cela, cliquez sur votre profil en haut à droite une fois dans l'application, puis sur le bouton "Centre de notifications". Vous accéderez ainsi à la page de gestion de notification de votre profil utilisateur.
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-La gestion des notifications est personnelle à chaque utilisateur.&#x20;
+&#x20;Exemple : "Un nouveau traitement de données a été créé dans votre workspace."
 {% endhint %}
 
-![Bouton "Centre de notifications"](<../../.gitbook/assets/Capture d'écran 2025-02-10 143122.png>)
+***
 
-Une fois dans le centre, vous avez la possibilité d'activer ou de désactiver les notifications reçues.
+### ✉️ Notifications par e-mail (personnalisables)
 
-Les différentes catégories de notifications possibles sont les suivantes :
+Chaque utilisateur peut choisir les notifications à recevoir par e-mail depuis son profil utilisateur.
 
-* Notifications push
-* Marketing
-* Activités sur les traitements de données
-* Activités sur les demandes d'exercice de droits
-* Activités sur les violation de données
-* Activités sur les tâches
-* Activités sur le consentement des cookies
-* Activités sur les commentaires
-* Activités sur les audits
-* Activités sur les modèles d'audit
-* Activités sur les rapports d'analyse
+#### 🔧 Comment personnaliser vos notifications
 
-Par fonctionnalité, vous aurez la possibilité de choisir de laisser activer ou non différents types de notifications :&#x20;
+1. Cliquez sur votre **avatar** en haut à droite de Dastra
+2. Sélectionnez **Centre de notifications**
+3. Activez ou désactivez les catégories selon vos besoins
+4. Enregistrez vos préférences
 
-#### Dans le cadre des traitements par exemple :
+{% hint style="info" %}
+Les notifications e-mail sont idéales pour être alerté des actions nécessitant une réponse rapide (audits, demandes, violations de données, etc.)
+{% endhint %}
 
-* Modification d'un traitement
-* Changement de statut d'un traitement
-* Suppression d'une relation à un traitement
+***
 
-<figure><img src="../../.gitbook/assets/Capture d’écran 2022-11-10 à 15.11.24.png" alt=""><figcaption></figcaption></figure>
+### 📚 Catégories de notifications
 
-#### En ce qui concerne les audits :&#x20;
+Les notifications par e-mail sont organisées par **catégories**.\
+Chaque catégorie contient plusieurs sous-types d’événements activables individuellement.
 
-* Réponse à un audit refusée
-* Réponse à un audit validée
-* Invitation à répondre à l'audit
-* Annotation de l'audit ajouté
+| Catégorie                               | Exemple de notification                       | Personnalisable ? |
+| --------------------------------------- | --------------------------------------------- | ----------------- |
+| **Traitements de données**              | Un traitement a été modifié ou supprimé       | ✅                 |
+| **Demandes d’exercice de droits (DSR)** | Une nouvelle demande a été assignée           | ✅                 |
+| **Violations de données**               | Une violation a été signalée ou clôturée      | ✅                 |
+| **Tâches**                              | Vous avez été assigné à une tâche             | ✅                 |
+| **Audits**                              | Une réponse a été validée/refusée             | ✅                 |
+| **Modèles d’audit**                     | Un modèle a été mis à jour                    | ✅                 |
+| **Commentaires**                        | Quelqu’un vous a mentionné (@)                | ✅                 |
+| **Consentement / cookies**              | Une modification a été apportée à la bannière | ✅                 |
+| **Rapports / analyses**                 | Un nouveau rapport est disponible             | ✅                 |
+| **Marketing / Push**                    | Communications produit ou nouveautés Dastra   | ✅                 |
 
-<figure><img src="../../.gitbook/assets/Capture d’écran 2022-11-10 à 15.11.59.png" alt=""><figcaption></figcaption></figure>
+***
 
-## Les notifications hors champ du centre de gestion&#x20;
+### ⚠️ Notifications automatiques
 
-Dans le cadre des audits, certains types de notifications sont hors champ du centre de gestion des notifications.&#x20;
+Certaines notifications sont considérées comme **systémiques** : elles sont envoyées automatiquement, même si vous avez désactivé la catégorie correspondante.
 
-En effet, lorsque vous planifiez un audit et sélectionnez "_envoyer les invitations immédiatement_", l'invitation à l'audit par e-mail sera reçue malgré avoir désélectionné la notification "_Invitation à répondre à l'audit_".&#x20;
+Ces notifications sont jugées essentielles à la collaboration :
 
-Tout simplement, car l'on vous **soumet explicitement cet audit**, ce qui **ne rentre pas dans les considérations du centre de gestion des notifications**.
+* Invitation à un **audit**
+* **Assignation** à une tâche ou à une demande
+* **Mention directe** dans un commentaire (@votre-nom)
+* Invitation à compléter le **registre des traitements**
+* Envoi immédiat d’une **invitation planifiée** (si option activée)
 
-Le même type d'exception existe en ce qui concerne les "_invitations à compléter le registre_", fonctionnalité que vous retrouvez dans vos fiches de traitement afin de **soumettre une invitation**, personnalisable, à un **utilisateur** pour lui demander de **remplir telle ou telle étape de la fiche de traitement**.\
-\
-Ce type d'exception s'applique aussi si un utilisateur vous assigne une tâche ou vous mentionne directement dans une discussion (grâce au symbole @).
+***
+
+### 💬 Bonnes pratiques
+
+Bon à savoir
+
+* Activez les e-mails pour les activités nécessitant une action de votre part (audits, DSR, violations).
+* Consultez régulièrement la **cloche** pour le suivi global du workspace.
+* Vérifiez votre **dossier “Notifications”** dans votre boîte mail si vous pensez ne plus recevoir certains messages.
+* Pour un DPO : activer toutes les catégories.
+* Pour un contributeur : privilégier les tâches, commentaires et audits.
+
+***
+
+### ❓FAQ
+
+#### Je ne reçois plus mes notifications, que faire ?
+
+Vérifiez vos préférences dans votre **profil utilisateur → Centre de notifications**.\
+Assurez-vous également que les e-mails de Dastra ne sont pas redirigés vers le dossier “Promotions” ou “Spam”.
+
+{% hint style="info" %}
+Attention, vous ne recevez pas de notification pour des éléments qui vous concernent.&#x20;
+{% endhint %}
+
+#### Pui  s-je recevoir un résumé mensuel ?
+
+Vous pouvez revevoir un résumé mensuel des activités de votre espace de travail. Cliquez sur la notification : **Préférences : inscription au rapport mensuel**
+
+
+
+***
+
+### 🔗 Voir aussi
+
+* [Paramétrer votre profil utilisateur](../../getting-started/setup/parametrer-votre-profil-utilisateur.md)
+* [Configurer les rôles et permissions](roles-et-permissions.md)
+* [Suivre vos audits](../audit/)
+

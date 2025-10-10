@@ -26,7 +26,7 @@ Pour **supprimer définitivement** un audit, il faut afficher les archives et pr
 
 Ensuite, il faut suffit de supprimer l'audit via le menu de l'audit
 
-<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption><p>Vous pouvez également restaurer votre audit si besoin</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2) (2).png" alt=""><figcaption><p>Vous pouvez également restaurer votre audit si besoin</p></figcaption></figure>
 
 ## Supprimer un modèle d'audit
 

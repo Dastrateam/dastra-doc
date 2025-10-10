@@ -60,7 +60,7 @@ Ensuite, il faut attribuer ce rôle aux utilisateurs concernés.&#x20;
 Ils ne pourront pas modifier les éléments de la cartographie.
 
 {% hint style="info" %}
-Si vous ne trouvez la réponse dans ce guide, vous pouvez nous [contacter via le support](../../commencer/le-support/faire-une-demande-de-support.md)
+Si vous ne trouvez la réponse dans ce guide, vous pouvez nous [contacter via le support](../../getting-started/le-support/faire-une-demande-de-support.md)
 
 
 {% endhint %}

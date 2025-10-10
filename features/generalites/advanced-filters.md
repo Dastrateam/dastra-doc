@@ -49,4 +49,4 @@ Se vous rencontrez des difficultés avec les filtres : vous perdez l'affichage d
 
 Ils se peut que techniquement, il ne soit pas possible de mettre en place ces filtres pour diverses raison. Nous vous recommandons dans ce cas, soit d'exporter de manière brute les données, et effectuer le rapport dans des outils comme Excel.
 
-Si c'est un filtre qui est essentiel à votre activité, n'hésitez pas à nous faire une demande de nouvelle fonctionnalité [via la communauté Dastra ou le système de demandes](../../commencer/le-support/faire-une-demande-de-support.md)
+Si c'est un filtre qui est essentiel à votre activité, n'hésitez pas à nous faire une demande de nouvelle fonctionnalité [via la communauté Dastra ou le système de demandes](../../getting-started/le-support/faire-une-demande-de-support.md)

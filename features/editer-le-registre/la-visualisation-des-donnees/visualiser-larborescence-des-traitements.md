@@ -16,7 +16,7 @@ Pour visualiser l'arborescence des traitements, cliquer sur le module "Registres
 
 ![Module "Registres"](<../../../.gitbook/assets/image (199).png>)
 
-![Flèche à droite du bouton & menu déroulant](<../../../.gitbook/assets/Capture web\_4-5-2022\_95947\_app.dastra.eu.jpeg>)
+![Flèche à droite du bouton & menu déroulant](<../../../.gitbook/assets/Capture web_4-5-2022_95947_app.dastra.eu.jpeg>)
 
 Ainsi, vous pourrez visualiser l'**arborescence des traitements**.
 
@@ -28,6 +28,6 @@ Les filtres et le bouton paramétrage vous permettront de modifier la visualisat
 
 ## Aller plus loin
 
-{% content-ref url="../../../commencer/commencer/creer-et-parametrer-des-entites-et-departements.md" %}
-[creer-et-parametrer-des-entites-et-departements.md](../../../commencer/commencer/creer-et-parametrer-des-entites-et-departements.md)
+{% content-ref url="../../../getting-started/setup/creer-et-parametrer-des-entites-et-departements.md" %}
+[creer-et-parametrer-des-entites-et-departements.md](../../../getting-started/setup/creer-et-parametrer-des-entites-et-departements.md)
 {% endcontent-ref %}

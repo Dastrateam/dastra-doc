@@ -4,36 +4,132 @@ description: Découvrez comment suivre les notifications de violation de donnée
 
 # Violations de données
 
-## Qu'est-ce qu'une violation de données ?
+### 📖 Définition
 
-[L’article 4](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre1#Article4).12) du RGPD définit une violation de données à caractère personnel comme &#x20;
+Selon [l’article 4.12 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre1#Article4),\
+une **violation de données à caractère personnel** est :
 
-_une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l'altération, la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou l'accès non autorisé à de telles donné&#x65;_&#x73;.
+> _Une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l'altération, la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou l'accès non autorisé à de telles données._
 
-Il s’agit de tout incident de sécurité, d’origine malveillante ou non et se produisant de manière intentionnelle ou non, ayant comme conséquence de compromettre l’intégrité, la confidentialité ou la disponibilité de données personnelles.
+Autrement dit, il s’agit de tout **incident de sécurité**, qu’il soit **intentionnel ou accidentel**, qui compromet :
 
-Exemples :
+* la **confidentialité** (accès non autorisé, divulgation),
+* l’**intégrité** (altération, falsification),
+* la **disponibilité** (perte, effacement, indisponibilité).
 
-* suppression accidentelle de données médicales conservées par un établissement de santé et non sauvegardées par ailleurs ;
-* perte d’une clef USB non sécurisée contenant une copie de la base clients d’une société ;
-* introduction malveillante dans une base de données scolaires et modification des résultats obtenus par les élèves.
+***
 
-Les obligations des responsables du traitement concernant les violations de données personnelles, et notamment leur notification à la CNIL et aux personnes concernées, sont définies aux [articles 33 et 34 ](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article33)du RGPD.
+### ⚠️ Exemples de violations typiques
 
-## Quelles obligations pour les entreprises ?
+* Suppression accidentelle de données médicales non sauvegardées.
+* Perte d’une clé USB non chiffrée contenant la base clients.
+* Piratage d’un serveur exposant des adresses e-mail et mots de passe.
+* Envoi d’un e-mail contenant des données personnelles au mauvais destinataire.
+* Fuite d’informations RH sur un espace partagé non sécurisé.
 
-Le RGPD introduit des notifications de violation de données personnelles.
+***
 
-Une violation de données personnelles est une violation de la sécurité qui provoque accidentellement ou illégalement la destruction, la perte, la falsification, la divulgation non autorisée de données personnelles transmises, stockées ou autrement traitées, l'accès non autorisé à ces données qui, si elles ne sont pas correctement affectées en cas de violation de données personnelles , et à moins que la violation ne soit pas susceptible de créer un risque pour les droits et la liberté des personnes, le responsable du traitement a l'obligation de:&#x20;
+### 🧩 Les trois grands types de violations
 
-* Signaler dans les 72 heures la violation en question à l'autorité locale de protection des données
-* Informer au plus vite toutes les personnes concernées par la violation de données (clients, prospects, collaborateurs, ...)&#x20;
+| Type                | Description                                 | Exemple                            |
+| ------------------- | ------------------------------------------- | ---------------------------------- |
+| **Confidentialité** | Accès ou divulgation non autorisée          | Fuite de données par phishing      |
+| **Intégrité**       | Modification ou falsification non autorisée | Altération d’un fichier médical    |
+| **Disponibilité**   | Perte ou destruction accidentelle           | Données supprimées sans sauvegarde |
 
-Toute violation de cette obligation est sanctionnée par les autorités de protection des données.
+***
 
-## Pour aller plus loin
+### 🕓 Les obligations légales du responsable de traitement
 
-{% content-ref url="../../features/documenter-les-violations-de-donnees/" %}
-[documenter-les-violations-de-donnees](../../features/documenter-les-violations-de-donnees/)
-{% endcontent-ref %}
+Lorsqu’une violation survient, le **responsable du traitement** doit réagir **sans délai**.
 
+#### 1️⃣ Notification à l’autorité de protection (CNIL)
+
+* **Délai** : 72 heures après en avoir eu connaissance.
+* **Contenu** :
+  * nature de la violation,
+  * catégories et volume de données concernées,
+  * conséquences probables,
+  * mesures prises ou envisagées pour y remédier.
+
+> Si la notification n’est pas transmise dans les 72h, il faut **justifier le retard**.
+
+📚 Référence : [Article 33 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article33)
+
+***
+
+#### 2️⃣ Information des personnes concernées
+
+Si la violation **présente un risque élevé pour les droits et libertés**,\
+les personnes concernées doivent être informées **dans les meilleurs délais** :
+
+* Nature de la violation,
+* Données impactées,
+* Mesures prises,
+* Recommandations pour limiter les effets (ex. : changement de mot de passe).
+
+📚 Référence : [Article 34 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article34)
+
+***
+
+#### 3️⃣ Documentation interne obligatoire
+
+Même lorsqu’aucune notification n’est requise,\
+**chaque violation doit être enregistrée** dans un registre interne comprenant :
+
+* les faits relatifs à la violation,
+* ses effets,
+* les mesures correctives prises.
+
+> Ce registre permet de **démontrer la conformité** (principe d’accountability).
+
+***
+
+### 🔁 Le cycle de gestion d’une violation
+
+1. **Détection** → Identification d’un incident ou d’un comportement anormal.
+2. **Qualification** → Vérifier si les données personnelles sont concernées.
+3. **Évaluation du risque** → Impact sur la vie privée des personnes.
+4. **Notification (si nécessaire)** → CNIL sous 72h, personnes concernées si risque élevé.
+5. **Remédiation** → Mesures correctrices et préventives.
+6. **Documentation** → Enregistrement dans le registre des violations.
+7. **Retour d’expérience** → Ajustements organisationnels ou techniques.
+
+***
+
+### 🧠 Bonnes pratiques de sécurité
+
+* Préparer un **plan de gestion des incidents** et le tester régulièrement.
+* Former les équipes à la **détection et la remontée rapide** d’incidents.
+* Mettre en place des **mesures préventives** (MFA, segmentation réseau, sauvegardes).
+* Utiliser un **registre centralisé** pour tracer chaque violation et sa résolution.
+* Évaluer la gravité via une **grille de risque** standardisée (ex. CNIL ou ISO 27005).
+
+***
+
+### 🧾 Gestion des violations dans Dastra
+
+Dastra permet de **documenter et piloter les violations de données** de manière centralisée :
+
+| Étape        | Fonctionnalité Dastra                                              |
+| ------------ | ------------------------------------------------------------------ |
+| Déclaration  | Formulaire de signalement personnalisable                          |
+| Évaluation   | Calcul automatique du risque sur les droits des personnes          |
+| Notification | Génération de rapports pour la CNIL et communication aux personnes |
+| Suivi        | Journal d’actions et plan de remédiation                           |
+| Reporting    | Tableaux de bord et indicateurs de conformité                      |
+
+***
+
+### 📚 Ressources utiles
+
+* [CNIL – Déclarer une violation de données personnelles](https://www.cnil.fr/fr/violation-de-donnees-personnelles)
+* [ENISA – Data Breach Notification Guidelines](https://www.enisa.europa.eu/)
+* [ISO/IEC 27035 – Gestion des incidents de sécurité de l’information](https://www.iso.org/standard/60803.html)
+
+***
+
+{% hint style="success" %}
+💡 **Bon réflexe :** Un incident signalé rapidement limite l’impact, renforce la transparence et démontre la maîtrise de la conformité.\
+Dastra vous aide à structurer et documenter chaque étape du processus.
+{% endhint %}

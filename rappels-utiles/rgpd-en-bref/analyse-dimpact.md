@@ -2,144 +2,172 @@
 description: Apprenez ce qu'est une analyse d'impact.
 ---
 
-# Analyse d'impact
+# Analyse d'impact (PIA / DPIA)
 
-## Qu'est-ce qu'un PIA ?
+### 📖 Qu’est-ce qu’un PIA ?
 
-**L’analyse d’impact sur la protection des données** est un mécanisme de conformité prévu par l’**article 35 du RGPD**.
+L’**analyse d’impact sur la protection des données (PIA)**, prévue par l’[article 35 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article35), est un **mécanisme de conformité** qui vise à :
 
-Elle vise à assurer la conformité au RGPD et à en apporter la preuve !
+* **Identifier et minimiser les risques** d’atteinte aux droits et libertés des personnes,
+* **Prouver la conformité** au RGPD,
+* Et **intégrer la privacy dès la conception** (_Privacy by design_).
 
-L’analyse consiste à **identifier et minimiser les risques** d'atteinte aux droits et libertés des personnes concernées dans un traitement de données à caractère personnel.
+> ⚖️ Le PIA porte sur les **risques pour les personnes**, et non sur les risques pour l’organisation.
 
-Il s'agit principalement d'une **étude des risques pour les personnes et non pour l’organisation** !
+**PIA = Privacy Impact Assessment = DPIA = AIPD = EIVP**
 
-**PIA** = Privacy Impact Assessment = DPIA =AIPD = EIVP
+***
 
-Le PIA est un document décomposé en trois parties :
+### 🧩 Les trois composantes d’un PIA
 
-* Une **description détaillée** du [traitement](https://www.dastra.eu/fr/article/traitement-donnees-personnelles/386) mis en œuvre, comprenant tant les aspects techniques qu’opérationnels ;
-* L’**évaluation**, de nature plus juridique, **de la nécessité et de la proportionnalité** concernant les principes et droits fondamentaux (finalité, données et durées de conservation, information et droits des personnes, etc.) non négociables, qui sont fixés par la loi et doivent être respectés, quels que soient les risques ;
-* L’**étude**, de nature plus technique, des **risques sur la sécurité des données** (confidentialité, intégrité et disponibilité) ainsi que leurs impacts potentiels sur la vie privée, qui permet de déterminer les mesures techniques et organisationnelles nécessaires pour protéger les données.
+Un PIA est structuré en trois grandes étapes :
 
-## Périmètre du PIA
+1. 📝 **Description du traitement**\
+   → Objectifs, contexte, acteurs, technologies, données concernées.
+2. ⚖️ **Évaluation de la nécessité et de la proportionnalité**\
+   → Analyse de la conformité juridique : finalités, bases légales, droits des personnes, durées, etc.
+3. 🔐 **Étude des risques et des mesures de sécurité**\
+   → Identification des risques pour la vie privée et détermination des mesures de maîtrise (techniques et organisationnelles).
 
-Le PIA peut porter sur :
+> 📘 Le PIA est à la fois **juridique**, **technique** et **organisationnel** : il engage toute l’équipe projet.
 
-* **Un traitement unique**
-* **Des traitements similaires**
-* Traitements identiques mis en œuvre par plusieurs responsables de traitements
-* Traitements partagés par plusieurs responsables de traitement
-* Traitements similaires en termes de finalités, fonctionnalités, risques, technologies, etc.
-* **Un produit technologique (matériel ou logiciel)**
+***
 
-Une analyse d’impact doit être obligatoirement réalisée lors que le traitement entraine un **risque élevé** pour les droits et libertés des personnes concernées.&#x20;
+### 🎯 Objectif du PIA
 
-Par droits et libertés, il faut entendre non seulement le droit au respect de la vie privée mais également les autres droits fondamentaux, tels que la liberté de circulation, la non-discrimination, le droit à la vie etc.
+Le PIA permet à une organisation de :
+
+* **Démontrer sa conformité** (principe d’accountability),
+* **Anticiper les risques** et les coûts de mise en conformité,
+* **Documenter les choix** et arbitrages de conception,
+* **Garantir la confiance** des usagers, clients ou salariés.
+
+***
+
+### 🔍 Quand faut-il réaliser un PIA ?
+
+Un PIA est **obligatoire** lorsqu’un traitement **entraîne un risque élevé** pour les droits et libertés des personnes.
+
+#### Exemples de traitements concernés :
+
+* Surveillance vidéo intelligente,
+* Notation automatique de profils (scoring),
+* Collecte massive de données de santé,
+* Utilisation de biométrie ou d’IA sur données personnelles.
 
 {% hint style="info" %}
-Les traitements à risques élevés peuvent être identifiés si ceux-ci correspondent à au moins 2 de ces critères ci-dessous (source : EDPD) :
+Les traitements présentant au moins **2 des critères suivants** (EDPB) sont réputés à risque élevé :
 
-* &#x20;Évaluation/notation (scoring)
-* Décision automatique avec effet juridique ou similaire
-* Surveillance systématique
-* [Données sensibles](https://www.dastra.eu/fr/article/donnee-sensible/401)
-* Large échelle
-* Croisement de données
-* Personnes vulnérables
-* Usage innovant
-* Blocage d’un droit/contrat
-* Transfert hors UE
+* Évaluation ou scoring,
+* Décision automatisée avec effet juridique,
+* Surveillance systématique,
+* Données sensibles,
+* Large échelle,
+* Croisement de données,
+* Personnes vulnérables,
+* Usage innovant (IA, IoT, big data),
+* Blocage d’un droit ou d’un service,
+* Transferts hors UE.
 {% endhint %}
 
-## Quand dois-je faire un PIA ?
+***
 
-* Avant la mise en œuvre du traitement
-* Principe de Privacy by design
-* Outil d’aide à la décision sur la mise en œuvre du traitement
-* Permet d’anticiper les coûts de mise en conformité
-* Doit être fait pour les traitements existants
+### 🕐 Quand le réaliser ?
 
-Le PIA est un processus continu :
+Le PIA doit être mené **avant la mise en œuvre du traitement**, idéalement dès la phase de conception.\
+Il constitue une application concrète du principe de **Privacy by Design**.
 
-* Les PIA doivent être révisés régulièrement
-* Une bonne pratique est de la mettre à jour tous les 3 à 5 ans
-* Dans tous les cas, dès lors qu’une modification intervient sur le traitement
+Il doit aussi être :
 
-![Un processus itératif](<../../.gitbook/assets/image (188).png>)
+* **Mis à jour régulièrement** (tous les 3 à 5 ans),
+* **Révisé en cas de modification** importante du traitement,
+* **Rattaché à votre registre** dans Dastra pour un suivi continu.
 
-## Comment faire un PIA ?
+![Un processus itératif](https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LvBxs22wUMicv9uWp6C%2F-MhI-vvGMYAjSpi9Gdmd%2F-MhI2gnfh_tui7vgUFpG%2Fimage.png?alt=media\&token=5fe8ef16-b671-435f-8202-e5ce62ee184b)
 
-#### En évaluant d'abord les **mesures de nécessité et de proportionnalité**. Il s'agit d'un examen en profondeur du traitement sous toutes ses coutures !
+> 🔁 Le PIA est un **processus itératif** : il accompagne tout le cycle de vie du traitement.
 
-Il faut se poser les questions et expliquer ses choix sur les aspects suivants du traitement :
+***
 
-* [Finalités](https://www.dastra.eu/fr/article/finalit%C3%A9-traitement-de-donn%C3%A9es/358) : déterminée, explicite et légitime
-* Fondement : licéité du traitement, interdiction du détournement de finalité
-* Minimisation des données : adéquates, pertinentes et limitées
-* Qualité des données : exactes et tenues à jour
-* [Durées de conservation](https://www.dastra.eu/fr/article/dur%C3%A9e-de-conservation-des-donn%C3%A9es-personnelles/364) : limitées
+### ⚙️ Comment réaliser un PIA ?
 
-#### Ensuite en détaillant les **mesures protectrices des droits des personnes :**
+#### 1. Évaluer la nécessité et la proportionnalité du traitement
 
-* Information des personnes concernées
-* recueil du consentement, le cas échéant
-* exercice des droits d’accès et à la portabilité
-* exercice des droits de rectification et d’effacement
-* exercice des droits de limitation du traitement et d’opposition
-* relations avec les [sous-traitants](https://www.dastra.eu/fr/article/sous-traitant/388)
-* garanties entourant le ou les [transferts internationaux](https://www.dastra.eu/fr/article/transfert-de-donnees-a-caractere-personnel/410)
+Posez-vous les bonnes questions :
 
-Il faut s’aider des référentiels sectoriels, des codes de conduite, des labels et marques.
+* Les **finalités** sont-elles déterminées et légitimes ?
+* Le **fondement juridique** est-il clair ?
+* Les données sont-elles **minimisées**, exactes et à jour ?
+* Les **durées de conservation** sont-elles limitées ?
+* Les **personnes concernées** sont-elles correctement informées ?
 
-#### Et enfin **analyser les risques pour les personnes concernées** : les atteintes potentielles à la vie privée
+#### 2. Examiner la protection des droits des personnes
 
-Pour chaque **événement redouté** (accès illégitime à des données, modification non désirée de données et disparition de données) :
+* Information transparente, consentement clair, droit d’accès, d’effacement, d’opposition.
+* Contrats avec les sous-traitants.
+* Garanties sur les transferts internationaux.
+* Mesures correctives prévues en cas de violation.
 
-* déterminer les **impacts** potentiels sur la vie privée des personnes concernées s’ils survenaient
-* estimer sa **gravité**, notamment en fonction du caractère préjudiciable des impacts potentiels et, le cas échéant, des mesures susceptibles de les modifier ;
-* identifier les **menaces** sur les supports des données qui pourraient mener à cet événement redouté et les sources de risques qui pourraient en être à l’origine ;
-* estimer sa **vraisemblance**, notamment en fonction des vulnérabilités des supports de données, des capacités des sources de risques à les exploiter et des mesures susceptibles de les modifier.
+#### 3. Analyser les risques sur la vie privée
 
-Déterminer si les **risques initiaux** peuvent être jugés acceptables compte tenu des mesures existantes ou prévues.
+Pour chaque **événement redouté** :
 
-Dans le cas contraire, proposer des **mesures complémentaires** et réévaluer le niveau des risques en tenant compte de celles-ci, afin de déterminer les **risques résiduels**.
+* Identifier les **impacts possibles** sur les personnes (atteinte à la vie privée, réputation, discrimination…).
+* Estimer la **gravité** et la **vraisemblance** du risque.
+* Déterminer les **mesures de protection existantes ou prévues**.
+* Évaluer le **risque résiduel** et, le cas échéant, proposer des **mesures complémentaires**.
 
-## Qui est impliqué ?
+{% hint style="success" %}
+💡 Objectif final : atteindre un **niveau de risque résiduel acceptable**, documenté et justifié.
+{% endhint %}
 
-* **Le** [**responsable du traitement**](https://www.dastra.eu/fr/article/responsable-de-traitement/392) (RT)
-  * Les équipes du RT dont les équipes du métier concerné (MOA, MOE), les responsables de la conformité, les équipes juridiques
-  * Le RT peut déléguer à des conseils extérieurs mais cela reste sous sa responsabilité
-* **Le DPO**
-  * Conseil et vérification d’exécution, évaluation des mesures et risques résiduels, suggère les PIA
-* **Les personnes concernées (ou leurs représentants), le cas échéant**
-  * Leur avis peut être pris et documenté
-* **Les** [**sous-traitants**](https://www.dastra.eu/fr/article/sous-traitant/388)
-  * Assistance et fourniture d’informations
-* **Le RSSI ou la direction informatique**
-  * Proposition de mener un DPIA, assistance
+***
 
+### 🧠 Qui doit être impliqué ?
 
+| Acteur                        | Rôle dans le PIA                                                  |
+| ----------------------------- | ----------------------------------------------------------------- |
+| **Responsable du traitement** | Porte la responsabilité du PIA et pilote sa réalisation           |
+| **DPO**                       | Conseille, valide la méthodologie et évalue les risques résiduels |
+| **RSSI / Direction IT**       | Apporte l’expertise technique et les mesures de sécurité          |
+| **Équipes métiers**           | Fournissent les détails opérationnels du traitement               |
+| **Sous-traitants**            | Communiquent les informations nécessaires à l’évaluation          |
+| **Personnes concernées**      | Peuvent être consultées ou représentées dans certains cas         |
 
-## Pour aller plus loin
+> 👥 Le PIA est une démarche collaborative — il engage autant les juristes que les opérationnels.
+
+***
+
+### 🤖 PIA et intelligence artificielle
+
+L’**AI Act** introduit une obligation spécifique de **documentation et d’évaluation des systèmes d’IA** à risque.\
+Les organisations doivent y inclure :
+
+* L’origine des données d’entraînement,
+* Les tests de robustesse et biais,
+* Les contrôles humains prévus,
+* Les mesures de transparence.
+
+Dastra permet de relier chaque **PIA** à un **système d’IA** pour assurer une **conformité croisée RGPD / AI Act**.
+
+***
+
+### 🧰 Bonnes pratiques Dastra
+
+* Centralisez tous vos PIA dans **le module “Registre des traitements”**,
+* Utilisez les **modèles de risques prédéfinis** (EDPB, CNIL, ISO 29134),
+* Collaborez avec les équipes via **commentaires et workflows**,
+* Exportez vos PIA en **PDF** pour les audits,
+* Planifiez des **rappels automatiques de révision**.
+
+{% hint style="success" %}
+💡 Dastra vous guide pas à pas dans la réalisation du PIA, grâce à un modèle interactif et des bibliothèques de menaces et mesures déjà intégrées.
+{% endhint %}
+
+***
+
+### 📘 Pour aller plus loin
 
 {% embed url="https://www.youtube.com/watch?v=yfaJC-YESPk" %}
-Webinar "Comment aborder l'étape PIA avec un outil ?"
+🎥 Webinar “Comment aborder l’étape PIA avec un outil ?”
 {% endembed %}
-
-{% content-ref url="../../features/editer-le-registre/remplir-le-questionnaire/analyse-dimpact.md" %}
-[analyse-dimpact.md](../../features/editer-le-registre/remplir-le-questionnaire/analyse-dimpact.md)
-{% endcontent-ref %}
-
-{% content-ref url="../../features/audit/" %}
-[audit](../../features/audit/)
-{% endcontent-ref %}
-
-{% content-ref url="../../features/la-gestion-des-risques/risques.md" %}
-[risques.md](../../features/la-gestion-des-risques/risques.md)
-{% endcontent-ref %}
-
-
-
-
-

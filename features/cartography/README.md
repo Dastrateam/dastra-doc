@@ -29,7 +29,7 @@ Vous ne souhaitez pas faire cet inventaire ou vous estimez que les logiciels que
 
 ### Comment accéder à la cartographie
 
-1. [Accédez à votre espace de travail](../../commencer/commencer/espace-de-travail.md#accedez-a-un-espace-de-travail)
+1. [Accédez à votre espace de travail](../../getting-started/setup/espace-de-travail.md#accedez-a-un-espace-de-travail)
 2. Cliquez dans la navigation sur l'icône "Cartographie des données"
 3. Vous arrivez sur cette page :
 

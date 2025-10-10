@@ -16,7 +16,7 @@ Une fois enregistré, ils sont un moyen rapide pour communiquer avec les parties
 
 Pour sélectionner ou créer un modèle, cliquez sur "Sélectionner ou créer un modèle "
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Sélection du modèle dans un exercice de droit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p>Sélection du modèle dans un exercice de droit</p></figcaption></figure>
 
 Vous pouvez ensuite chercher un modèle existant dans la liste ou la fonction rechercher, ou regarder les modèles disponibles dans les espaces de travail auquel vous avec accès ou encore les modèles créés par Dastra).
 

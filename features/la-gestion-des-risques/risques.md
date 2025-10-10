@@ -11,7 +11,7 @@ description: >-
 
 Pour ajouter un risque sur un traitement, il faut aller dans l'onglet risques présent sur la page d'édition du traitement.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

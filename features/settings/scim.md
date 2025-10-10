@@ -80,13 +80,13 @@ Cliquez sur **Enregistrer**
 Aujourd'hui, Dastra vous permet de synchroniser en SCIM (équipes + utilisateurs) **un seul espace de travail par organisation**.&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
 
-Cliquez sur "**Tester la connection**" et "**Enregistrer**". Si vous rencontrez une erreur lors du test de connexion, cela peut provenir d'une absence de fonctionnalité activé au niveau de votre souscription. [Contactez alors le support](../../commencer/le-support/faire-une-demande-de-support.md)
+Cliquez sur "**Tester la connection**" et "**Enregistrer**". Si vous rencontrez une erreur lors du test de connexion, cela peut provenir d'une absence de fonctionnalité activé au niveau de votre souscription. [Contactez alors le support](../../getting-started/le-support/faire-une-demande-de-support.md)
 
 #### 9. Activez le provisioning de l'application
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 10. Ajoutez des utilisateurs et/ou des groupes à l'application créée&#x20;
 

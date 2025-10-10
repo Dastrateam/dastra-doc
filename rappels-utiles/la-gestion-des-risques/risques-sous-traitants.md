@@ -32,8 +32,8 @@ Le sous-traitant n'est pas responsable des dommages matériels ou moraux causés
 [risques.md](../../features/la-gestion-des-risques/risques.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../commencer/tutoriel/etape-4-gerer-les-risques.md" %}
-[etape-4-gerer-les-risques.md](../../commencer/tutoriel/etape-4-gerer-les-risques.md)
+{% content-ref url="../../getting-started/tutoriel/etape-4-gerer-les-risques.md" %}
+[etape-4-gerer-les-risques.md](../../getting-started/tutoriel/etape-4-gerer-les-risques.md)
 {% endcontent-ref %}
 
 
