@@ -1,7 +1,3 @@
----
-description: Apprenez ce qu'est le Règlement Général de la Protection des Données.
----
-
 # Introduction à la Privacy
 
 ## Introduction à la Privacy
