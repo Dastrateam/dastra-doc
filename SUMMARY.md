@@ -194,6 +194,7 @@
 * [Rapports personnalisés](features/custom-reporting/README.md)
   * [Intégration dans les outils d'analyse de données (BI)](features/custom-reporting/bi-tools.md)
 * [Systèmes d'IA](features/systemes-dia/README.md)
+  * [Importer vos systèmes d'IA](features/systemes-dia/importer-vos-systemes-dia.md)
   * [Etablir un registre des Systèmes d'IA](features/systemes-dia/etablir-un-registre-des-systemes-dia.md)
   * [Analyse de risque et valeur ajoutée](features/systemes-dia/analyse-de-risque-et-valeur-ajoutee.md)
   * [Notice de transparence](features/systemes-dia/notice-de-transparence.md)

@@ -2,20 +2,8 @@
 
 Pour établir le registre des vos systèmes d'IA, vous avez deux options :
 
-* Soit vous disposez déjà d'un registre que vous pourrez importer directement dans Dastra (dirigez vous vers la prochaine section : [**Importer vos systèmes d'IA**](etablir-un-registre-des-systemes-dia.md#importez-vos-systemes-dia))
+* Soit vous disposez déjà d'un registre que vous pourrez importer directement dans Dastra (dirigez vous vers la prochaine section : [**Importer vos systèmes d'IA**](importer-vos-systemes-dia.md))
 * Soit vous n'en avez pas. Dans ce cas, il vous faudra le créer vous-même
-
-## Importer vos systèmes d'IA
-
-Si vous ne disposez pas déjà d'un registre de systèmes d'IA, passez directement à la section suivante : [Créer un registre des systèmes d'IA](etablir-un-registre-des-systemes-dia.md#creer-un-registre-des-systemes-dia).
-
-Vous pouvez facilement télécharger votre registre existant directement dans Dastra. Cela vous évitera de tout remplir vous-même à la main.
-
-Pour cela, accéder à la vue liste, intitulée "Systèmes d'IA". en haut à droite, ouvrez le menu déroulant à côté du bouton "Créer un nouveau système d'IA" puis cliquez sur "Importer". Une nouvelle page apparait, vous pouvez ajouter votre registre existant en bas de celle-ci.
-
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-05-21 174417.png" alt=""><figcaption></figcaption></figure>
-
-Nous vous recommandons de suivre les étapes de la page [Importer vos données (Excel, Csv, JSON)](../generalites/importer-vos-donnees-excel-csv.md) pour plus de détails.
 
 ## Créer un registre des systèmes d'IA
 
