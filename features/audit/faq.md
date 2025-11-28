@@ -25,14 +25,9 @@ Oui, c'est possible depuis le type de question "texte long" en cochant la case "
 
 ## Est-il possible de publier un modèle de questionnaire pour tous les utilisateurs Dastra  ?&#x20;
 
-Oui, c'est possible depuis le modèle de questionnaire en cliquant sur "Contribuer" :\
+Oui, c'est possible depuis le modèle de questionnaire en cliquant sur "Contribuer" :<br>
 
-
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-07-26 120545.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-07-26 120545.png" alt=""><figcaption></figcaption></figure></div>
 
 ## A quoi correspondent les couleurs dans les réponses aux questionnaires ?
 
@@ -60,21 +55,13 @@ Voici la correspondance des couleurs :&#x20;
 \
 Ce message signal qu'une ou plusieurs questions dans le questionnaire porte exactement le même "Nom de la variable"  ce qui crée l'erreur.&#x20;
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 163831.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 163831.png" alt=""><figcaption></figcaption></figure></div>
 
 
 
 Les questions ayant le même "Nom de la variable" sont identifiables grâce au message d'erreur "Le nom de la variable est présent dans une autre question" s'affichant au-dessus d'elles.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 164534.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 164534.png" alt=""><figcaption></figcaption></figure></div>
 
 
 

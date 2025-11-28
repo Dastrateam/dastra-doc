@@ -8,8 +8,7 @@ Le module **Contrats** de Dastra est une fonctionnalité conçue pour faciliter 
 
 ### Accéder au module contrat
 
-Il est nécessaire de disposer d'une souscription contenant la fonctionnalité "Contrats" afin de pouvoir accéder au module. \
-
+Il est nécessaire de disposer d'une souscription contenant la fonctionnalité "Contrats" afin de pouvoir accéder au module. <br>
 
 Si la fonctionnalité est active dans votre plan, vous pouvez accéder au module en cliquant sur l'icône contrat de la navigation.
 

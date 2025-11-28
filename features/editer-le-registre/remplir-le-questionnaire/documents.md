@@ -17,4 +17,4 @@ Cette documentation se traduit en pratique en premier lieu par le registre des a
 * réalisation d’évaluations d’impact sur la vie privée dans certaines circonstances
 * mise en œuvre et supervision de procédures de vérification afin de s’assurer que toutes les mesures n’existent pas seulement sur papier, mais qu’elles sont aussi mises en œuvre et fonctionnent dans la pratique (audits internes ou externes, etc.).
 
-Vous pouvez également dans cet espace stocker tout document utile à la compréhension du traitement, les notes de formation ainsi que les contrats encadrant le traitement le cas échéant.\
+Vous pouvez également dans cet espace stocker tout document utile à la compréhension du traitement, les notes de formation ainsi que les contrats encadrant le traitement le cas échéant.<br>

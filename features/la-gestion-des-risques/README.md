@@ -18,8 +18,7 @@ Avec Dastra, vous pourrez :
 
 * **Visualiser vos risques** par traitement, actif ou acteur ;
 * **Rationaliser vos opérations** d’évaluation, de contrôle, de reporting et de suivi des tâches de remédiation ;
-* Vous assurer de la **mise à jour,** de la **qualité** et de la **disponibilité** des données risques.\
-
+* Vous assurer de la **mise à jour,** de la **qualité** et de la **disponibilité** des données risques.<br>
 
 ![Tuile de synthèse des risques](<../../.gitbook/assets/Capture d’écran 2022-03-15 140621.png>)
 

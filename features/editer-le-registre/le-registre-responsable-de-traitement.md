@@ -66,8 +66,7 @@ Pour chaque traitement, le registre d'un responsable de traitement indique au mi
 * Mesures techniques et organisationnelles mises en place pour sécuriser chaque traitement de données&#x20;
 *   Par exemple, chiffrement des données, pseudonymisation, limitation des accès\
     \
-    \
-
+    <br>
 
     ***
 

@@ -12,4 +12,4 @@ Pour chaque traitement de données personnelles, il est nécessaire de prendre l
 
 Garantir la sécurité, c’est garantir la confidentialité, l’intégrité et la disponibilité des données. Les mesures de sécurité doivent ainsi prévenir les accès illégitimes à des données, la modification non désirée de données et la disparition de données.&#x20;
 
-Pour que les mesures soient adaptées au risque, il convient d’apprécier ces risques. Pour cela, il convient d’identifier les impacts potentiels sur la sécurité des données, les sources des risques, les menaces réalisables et évaluer si les mesures existantes sont suffisantes.  Sinon, il faut les augmenter.\
+Pour que les mesures soient adaptées au risque, il convient d’apprécier ces risques. Pour cela, il convient d’identifier les impacts potentiels sur la sécurité des données, les sources des risques, les menaces réalisables et évaluer si les mesures existantes sont suffisantes.  Sinon, il faut les augmenter.<br>

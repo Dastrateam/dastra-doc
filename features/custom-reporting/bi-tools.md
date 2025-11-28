@@ -12,8 +12,7 @@ description: >-
 Pour utiliser cette fonctionnalité, vous devez avoir dans votre souscription un abonnement avec le plan **Entreprise**
 {% endhint %}
 
-Dastra vous permettra très simplement d'importer [des rapports personnalisés](./) dans votre outil de BI préféré (Power BI, Google Looker, Tableau Software...). L'avantage d'utiliser cette fonctionnalité est que vous pouvez bénéficier de la puissance des outils de BI afin d'analyser en profondeur les données, tout en ayant des rapports qui se rafraîchissent automatiquement.\
-
+Dastra vous permettra très simplement d'importer [des rapports personnalisés](./) dans votre outil de BI préféré (Power BI, Google Looker, Tableau Software...). L'avantage d'utiliser cette fonctionnalité est que vous pouvez bénéficier de la puissance des outils de BI afin d'analyser en profondeur les données, tout en ayant des rapports qui se rafraîchissent automatiquement.<br>
 
 ### Mise en place dans Dastra
 
@@ -118,7 +117,7 @@ Si vous avez besoin d'automatiser l'intégration de données JSON depuis une API
 * Tableau peut automatiquement détecter la structure des données JSON, mais dans certains cas, si le fichier est très complexe ou imbriqué, vous devrez peut-être effectuer des ajustements dans **l'éditeur de données** pour aplatir ou transformer les données dans un format approprié.
 
 {% hint style="info" %}
-* **Limites du fichier JSON :** Si votre fichier JSON est volumineux ou très imbriqué, Tableau peut avoir des difficultés à l'analyser correctement. Parfois, il peut être nécessaire de le transformer ou de le simplifier avant de l'intégrer.
-* **Authentification et sécurité :** Si votre lien JSON nécessite une clé API, assurez-vous de bien gérer les autorisations et les informations d'identification. Certaines API peuvent avoir des limitations sur le nombre de requêtes ou nécessiter des autorisations spécifiques.
-* **Rafraîchissement des données :** Si les données JSON changent régulièrement (par exemple, via une API qui fournit des mises à jour en temps réel), vous pouvez configurer Tableau pour **rafraîchir automatiquement les données** à intervalles réguliers, afin de garder vos rapports à jour.
+- **Limites du fichier JSON :** Si votre fichier JSON est volumineux ou très imbriqué, Tableau peut avoir des difficultés à l'analyser correctement. Parfois, il peut être nécessaire de le transformer ou de le simplifier avant de l'intégrer.
+- **Authentification et sécurité :** Si votre lien JSON nécessite une clé API, assurez-vous de bien gérer les autorisations et les informations d'identification. Certaines API peuvent avoir des limitations sur le nombre de requêtes ou nécessiter des autorisations spécifiques.
+- **Rafraîchissement des données :** Si les données JSON changent régulièrement (par exemple, via une API qui fournit des mises à jour en temps réel), vous pouvez configurer Tableau pour **rafraîchir automatiquement les données** à intervalles réguliers, afin de garder vos rapports à jour.
 {% endhint %}

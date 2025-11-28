@@ -71,8 +71,7 @@ provider={id de votre provider}&
 returnUrl=https://www.dastra.eu 
 ```
 
-Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :\
-
+Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :<br>
 
 <figure><img src="../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
 

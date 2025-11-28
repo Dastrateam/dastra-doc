@@ -31,4 +31,4 @@ La CNIL en France a publié ces deux listes accessibles ici :&#x20;
 
 [**Liste des types de traitement avec PIA obligatoire**](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-aipd-requise.pdf)
 
-Notons que l’[**article 30 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article30) n’exige pas de préciser si un PIA a été réalisé sur le traitement.\
+Notons que l’[**article 30 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article30) n’exige pas de préciser si un PIA a été réalisé sur le traitement.<br>

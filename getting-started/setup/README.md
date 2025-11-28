@@ -10,8 +10,7 @@ Cette section vous guide pas à pas pour créer votre premier espace de travail,
 
 ### 🏁 Démarrer un projet
 
-Commencez par créer votre espace de travail :\
-
+Commencez par créer votre espace de travail :<br>
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
@@ -23,8 +22,7 @@ Commencez par créer votre espace de travail :\
 
 ### 👥 Inviter des utilisateurs
 
-Si vous souhaitez rejoindre un projet existant sur Dastra ou inviter un membre de votre équipe, commencez ici :\
-
+Si vous souhaitez rejoindre un projet existant sur Dastra ou inviter un membre de votre équipe, commencez ici :<br>
 
 {% content-ref url="inviter-utilisateurs.md" %}
 [inviter-utilisateurs.md](inviter-utilisateurs.md)
@@ -34,8 +32,7 @@ Si vous souhaitez rejoindre un projet existant sur Dastra ou inviter un membre d
 
 ### ⚙️ Gérer les rôles et permissions
 
-Apprenez à gérer les rôles et permissions, ou à créer de nouveaux rôles personnalisés selon votre organisation :\
-
+Apprenez à gérer les rôles et permissions, ou à créer de nouveaux rôles personnalisés selon votre organisation :<br>
 
 {% content-ref url="gerez-les-roles-et-permissions.md" %}
 [gerez-les-roles-et-permissions.md](gerez-les-roles-et-permissions.md)
@@ -45,8 +42,7 @@ Apprenez à gérer les rôles et permissions, ou à créer de nouveaux rôles pe
 
 ### 🧩 Créer et affecter des équipes
 
-Constituez vos équipes et affectez-les aux bons départements ou unités organisationnelles :\
-
+Constituez vos équipes et affectez-les aux bons départements ou unités organisationnelles :<br>
 
 {% content-ref url="creer-puis-affectez-des-equipes.md" %}
 [creer-puis-affectez-des-equipes.md](creer-puis-affectez-des-equipes.md)
@@ -57,8 +53,7 @@ Constituez vos équipes et affectez-les aux bons départements ou unités organi
 ### 🎓 Tutoriel
 
 Ça y est ! Vous êtes prêt à commencer à utiliser Dastra.\
-Vous pouvez explorer librement les fonctionnalités de la plateforme, ou suivre un cas concret à travers le tutoriel suivant :\
-
+Vous pouvez explorer librement les fonctionnalités de la plateforme, ou suivre un cas concret à travers le tutoriel suivant :<br>
 
 {% content-ref url="../tutoriel/" %}
 [tutoriel](../tutoriel/)

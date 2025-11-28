@@ -6,4 +6,4 @@ Chaque personne concernée par un traitement de données dispose de droits sur l
 
 Pour chaque droit, il vous est demandé de préciser comment celui-ci s’exerce. Il peut être automatisé, par exemple, dans le cas où la personne exerce directement son droit au sein d’un environnement connecté. Il sera sinon manuel ou la demande.&#x20;
 
-Cette section vous permet de préciser comment l’exercice des droits s’applique sur le traitement. Dans le cadre de la responsabilisation, il est nécessaire de définir le processus permettant d’assurer l’exercice effectif des droits des personnes. A titre de bonnes pratiques, une procédure spécifique peut être rédigée. Dans ce cas, n’hésitez pas à en référer dans cette section.\
+Cette section vous permet de préciser comment l’exercice des droits s’applique sur le traitement. Dans le cadre de la responsabilisation, il est nécessaire de définir le processus permettant d’assurer l’exercice effectif des droits des personnes. A titre de bonnes pratiques, une procédure spécifique peut être rédigée. Dans ce cas, n’hésitez pas à en référer dans cette section.<br>

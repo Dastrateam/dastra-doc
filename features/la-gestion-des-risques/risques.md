@@ -43,22 +43,17 @@ Vous devez vous rendre sur l'onglet "Risques" et vous aurez une visualisation de
 
 Le niveau de risque est calculé selon la formule suivante :
 
-`Niveau de risque = valeur de probabilité X valeur d'impact` \
-
+`Niveau de risque = valeur de probabilité X valeur d'impact` <br>
 
 Dans le tableau de bord, un module de risque présente le nombre de risques, les traitements avec les risques les plus élevés, le risque global et le niveau du traitement ayant le plus de risques.&#x20;
 
-Le risque global est calculé selon la formule suivante :\
+Le risque global est calculé selon la formule suivante :<br>
 
+`somme (probabilité* impact ) / nombre de risques`<br>
 
-`somme (probabilité* impact ) / nombre de risques`\
+Le niveau du traitement ayant le plus de risque est calculé selon la formule suivante :<br>
 
-
-Le niveau du traitement ayant le plus de risque est calculé selon la formule suivante :\
-
-
-`((impact x probabilité) / 25)`\
-
+`((impact x probabilité) / 25)`<br>
 
 ## **Aller plus loin**
 

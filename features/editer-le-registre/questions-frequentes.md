@@ -32,7 +32,7 @@ Pour déplacer un traitement dans la corbeille, il faut aller sur les trois peti
 
 Et enfin, afficher les archives
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/s7vwCi0AIWNpdnAy9d1E" alt=""><figcaption></figcaption></figure>
 
 et supprimer&#x20;
 

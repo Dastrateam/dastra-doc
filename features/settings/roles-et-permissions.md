@@ -23,8 +23,24 @@ Vous pouvez créer un "nouveau rôle" personnalisé en cliquant sur le bouton "A
 
 <figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
-Il est possible de sélectionner les cases associées aux permissions.&#x20;
+Il est ensuite possible de sélectionner les cases associées aux permissions :
 
-<figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption><p>Création d'un rôle de gestion des tâches</p></figcaption></figure>
 
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2025-11-24 153151.png" alt=""><figcaption><p>Création d'un rôle de gestion des tâches</p></figcaption></figure>
+
+<br>
+
+* **Lecture/Écriture de ses propres éléments :** Permet aux utilisateurs de voir et modifier uniquement les éléments qui leur sont attribués dans le module.
+* **Lecture :** Permet aux utilisateurs de voir tous les éléments du module.
+* **Écriture :** Permet aux utilisateurs de modifier tous les éléments du module.
+* **Export :** Permet aux utilisateurs d'exporter tous les éléments du module.
+* **Import :** Permet aux utilisateurs d'importer tous les éléments dans le module.
+* **Notification :** Les utilisateurs reçoivent des notifications pour tous les éléments du module.
+
+{% hint style="info" %}
+Il n'est pas possible de sélectionner à la fois "Lecture/Écriture de ses propres éléments" et les permissions sur tous les élements pour le même rôle dans un module. Les utilisateurs peuvent accéder soit uniquement à leurs éléments, soit à tous les éléments.
+{% endhint %}
+
+\
 Une fois votre rôle personnalisé créé, vous pouvez l'affecter à n'importe quel utilisateur de l'espace de travail au sein de votre organisation.

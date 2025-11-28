@@ -15,4 +15,4 @@ Les [**articles 44 à 49 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-pr
 * un mécanisme de certification approuvé (comportant l’engagement contraignant et exécutoire pris par les destinataires hors UE d’appliquer les garanties appropriées),
 * un arrangement administratif ou un texte juridiquement contraignant et exécutoire pris pour permettre la coopération entre autorités publiques (Mémorandum of Understanding dit MOU ou MMOU, convention internationale…).
 
-Des dérogations sont prévues à l’[**article 49 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre5). Si une dérogation justifie le transfert, il faut indiquer la nature de celle-ci et le cas échéant, détailler l’évaluation des circonstances du transfert et des garanties appropriées.\
+Des dérogations sont prévues à l’[**article 49 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre5). Si une dérogation justifie le transfert, il faut indiquer la nature de celle-ci et le cas échéant, détailler l’évaluation des circonstances du transfert et des garanties appropriées.<br>

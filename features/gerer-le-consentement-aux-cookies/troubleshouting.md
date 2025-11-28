@@ -4,8 +4,7 @@ Dans certain cas, le widget de Cookies ne s'affiche pas, voici les solutions à 
 
 1.  Vérifier les domaines associés au widget. Pour cela, se rendre dans **Cookies** > **Sélectionnez un widget** > **Configuration** \
     Modifiez les domaines autorisés de cette façon, en respectant le format _https://monurl.com_ : \
-    \
-
+    <br>
 
     <figure><img src="../../.gitbook/assets/image (11) (3).png" alt=""><figcaption></figcaption></figure>
 2. **Vérifiez la validité de votre clé d'API publique** (Ne pas utiliser la clé privée !). Pour cela, aller dans **Configuration de l'organisation (Le bouton en haut à droite**![](<../../.gitbook/assets/image (1) (4) (2).png>)) > **Développement / Clés d'API .** Vérifiez ensuite que la clé d'API existe bien et qu'elle est bien valide.\

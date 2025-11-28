@@ -26,8 +26,7 @@ Attention, une validation de l'adresse mail sera nécessaire pour que l'utilisat
 
 ## Résoudre les problèmes liés au cache de votre navigateur
 
-Lorsque vous utilisez un navigateur, celui-ci utilise le cache et les cookies pour enregistrer des informations provenant des sites Web. Les supprimer corrige certains problèmes, comme ceux liés au chargement des applications comme Dastra.\
-
+Lorsque vous utilisez un navigateur, celui-ci utilise le cache et les cookies pour enregistrer des informations provenant des sites Web. Les supprimer corrige certains problèmes, comme ceux liés au chargement des applications comme Dastra.<br>
 
 Pour résoudre ces problèmes, nous vous mettons à disposition plusieurs solutions : &#x20;
 
@@ -89,21 +88,18 @@ Cette erreur peut survenir de façon ponctuelle, elle est souvent causée par :
 
 Dans la plupart des cas, il s’agit d’un incident temporaire et nous vous recommandons d’attendre quelques minutes avant de réessayer.\
 \
-Si le problème se reproduit, n'hésitez pas à remonter un rapport de bug depuis le porte-voix dans Dastra afin que nos équipes puissent étudier le problème.\
-
+Si le problème se reproduit, n'hésitez pas à remonter un rapport de bug depuis le porte-voix dans Dastra afin que nos équipes puissent étudier le problème.<br>
 
 ## Message d'erreur : "Le champ Label est requis."
 
-Ce message apparait généralement quand un élément a été laissé vide lors de la réponse à un questionnaire.\
-
+Ce message apparait généralement quand un élément a été laissé vide lors de la réponse à un questionnaire.<br>
 
 ## Message d'erreur : "Attention, du contenu HTML interdit est présent dans un champ !"
 
 <figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 163623.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
 
 \
-Ce message signifie que du code HTML (généralement contenu entre les balises <>) est présent dans un champ ou le HTML est interdit (pour raison de sécurité).\
-
+Ce message signifie que du code HTML (généralement contenu entre les balises <>) est présent dans un champ ou le HTML est interdit (pour raison de sécurité).<br>
 
 \
 Le message suivant permet d'identifier facilement le champ concerné :
