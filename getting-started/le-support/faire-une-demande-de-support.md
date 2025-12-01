@@ -4,16 +4,30 @@ description: Apprenez à faire une demande de support dans Dastra.
 
 # Demande de support
 
-Parfois il est possible que le problème auquel vous êtes confronté ne puisse être résolu à travers cette documentation, l'assistant dastronaute ou l'aide en ligne.
+Parfois, il est possible que le problème auquel vous êtes confronté ne puisse être résolu à travers cette documentation, l'assistant dastronaute ou l'aide en ligne.
 
-Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers le bouton "Aide" en bas à gauche de l'écran, soit en accédant directement au questionnaire de demande de support en haut à droite de l'écran :
+Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers **le chat** en bas à droite de l'écran pour poser **des questions fonctionnelles directement à votre conseiller PSM dédié**, soit en accédant directement au questionnaire de **demande de support** en haut à droite de l'écran **pour les problèmes techniques** :\
+<br>
+
+<figure><img src="../../.gitbook/assets/image (423).png" alt=""><figcaption><p>Le bouton chat en bas à droite de l'écran</p></figcaption></figure>
 
 ![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/image (152).png>)
 
-Accédez directement [au formulaire de demande de support](https://app.dastra.eu/?modalId=modal-feedback) (vous devez disposer d'un compte et être connecté à l'application)
+{% hint style="info" %}
+Pour accéder directement au formulaire de demande de support ou au chat, vous devez disposer d'un compte et être connecté à l'application.
+{% endhint %}
+
+### Le chat
+
+\
+Il vous permet d'échanger directement avec votre **conseiller PSM dédié** **sur l’usage de la plateforme, vos besoins en conformité RGPD, ou pour être accompagné dans la compréhension des fonctionnalités.**<br>
 
 ### Le questionnaire de demande de support
 
+
+
+Il vous permet de remonter des bugs, des idées de fonctionnalités ou de poser des questions techniques à notre équipe support technique.\
+\
 Après avoir cliqué sur le bouton support, une fenêtre apparait dans l'application vous permettant de sélectionner l'objet de votre demande.
 
 Choisissez une des cinq options possibles, détaillez votre réponse et cliquez sur le bouton "Envoyer la requête".&#x20;
@@ -32,9 +46,7 @@ Cela nous permet de répondre plus rapidement et plus efficacement à votre dema
 Ça y est, votre demande de support a été envoyée ! notre équipe vous répondra dans les meilleurs délais.\
 Ce service est disponible **24h/24 et 7j/7** et nous permet d'historiser les demandes pour un suivi efficace.
 
-### Le Chat
 
-Intégré à notre site web, il est destiné aux questions rapides qui n'ont pas besoin d'être historisées. Le délai de réponse est d'environ 1h en moyenne, pendant les heures de disponibilité de l'équipe de support.
 
 ### Le téléphone
 
