@@ -6,7 +6,7 @@ description: Apprenez à faire une demande de support dans Dastra.
 
 Parfois, il est possible que le problème auquel vous êtes confronté ne puisse être résolu à travers cette documentation, l'assistant dastronaute ou l'aide en ligne.
 
-Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers **le chat** en bas à droite de l'écran pour poser **des questions fonctionnelles directement à votre conseiller PSM dédié**, soit en accédant directement au questionnaire de **demande de support** en haut à droite de l'écran **pour les problèmes techniques** :\
+Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers **le chat** en bas à droite de l'écran pour poser **des questions fonctionnelles directement à votre  Privacy Succes Manager dédié**, soit en accédant directement au questionnaire de **demande de support** en haut à droite de l'écran **pour les problèmes techniques** :\
 <br>
 
 <figure><img src="../../.gitbook/assets/image (423).png" alt=""><figcaption><p>Le bouton chat en bas à droite de l'écran</p></figcaption></figure>
@@ -20,7 +20,7 @@ Pour accéder directement au formulaire de demande de support ou au chat, vous d
 ### Le chat
 
 \
-Il vous permet d'échanger directement avec votre **conseiller PSM dédié** **sur l’usage de la plateforme, vos besoins en conformité RGPD, ou pour être accompagné dans la compréhension des fonctionnalités.**<br>
+Il vous permet d'échanger directement avec votre **Privacy Succes Manager dédié** **sur l’usage de la plateforme ou pour être accompagné dans la compréhension des fonctionnalités.**<br>
 
 ### Le questionnaire de demande de support
 
