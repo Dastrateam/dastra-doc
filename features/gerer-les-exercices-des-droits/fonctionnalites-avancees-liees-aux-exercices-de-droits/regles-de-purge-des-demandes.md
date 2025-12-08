@@ -60,7 +60,7 @@ Concrètement :
 
 > 💡 **Objectif :** permettre le suivi statistique tout en garantissant la suppression de toute information identifiable.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

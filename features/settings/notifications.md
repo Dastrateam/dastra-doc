@@ -23,7 +23,7 @@ Le centre de notifications regroupe les alertes visibles via l’icône **cloche
 * Non personnalisable (commune à l’ensemble du workspace)
 * Contient les notifications générales sur les activités récentes : création, modification ou suppression d’éléments
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (5).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 &#x20;Exemple : "Un nouveau traitement de données a été créé dans votre workspace."

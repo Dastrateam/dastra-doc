@@ -233,9 +233,12 @@
 * [Authentification](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
 * [Intégrations](api-references/integrations/README.md)
-  * [Intégrer Dastra avec des Outils Externes](api-references/integrations/integrer-dastra-avec-des-outils-externes.md)
   * [Mappage des Fact Sheets de SAP LeanIX vers Dastra](api-references/integrations/mappage-des-fact-sheets-de-sap-leanix-vers-dastra.md)
-  * [Questions fréquentes](api-references/integrations/questions-frequentes.md)
+  * [Zapier](api-references/integrations/zapier/README.md)
+    * [Intégrer Dastra avec des Outils Externes](api-references/integrations/zapier/integrer-dastra-avec-des-outils-externes.md)
+    * [Questions fréquentes](api-references/integrations/zapier/questions-frequentes.md)
+  * [Filerskeepers](api-references/integrations/filerskeepers.md)
+  * [ServiceNow](api-references/integrations/servicenow.md)
 
 ## 🛡️ La sécurité <a href="#security" id="security"></a>
 

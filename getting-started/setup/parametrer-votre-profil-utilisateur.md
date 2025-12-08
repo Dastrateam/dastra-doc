@@ -16,7 +16,7 @@ Vous pouvez ajouter un logo ou une photo de profil visible dans vos espaces de t
 * **Formats acceptés :** PNG, JPG ou WebP
 * **Recadrage automatique :** Dastra ajuste automatiquement le format carré
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Choisissez une image simple et reconnaissable (par exemple, votre photo ou le logo de votre organisation).
@@ -87,7 +87,7 @@ Suppression définitive Une fois validée, **la suppression est irréversible**.
 Aucune récupération n’est possible.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

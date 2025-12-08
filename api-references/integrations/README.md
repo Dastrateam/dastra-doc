@@ -1,83 +1,95 @@
 ---
-description: >-
-  Dastra s'intègre avec la plateforme d'automatisation Zapier et autres
-  applications.
+description: Dastra s'intègre à tous vos outils
 ---
 
 # Intégrations
 
-Mettez en place des connecteurs entre Dastra et vos autres applications favorites pour automatiser vos flux de travail et gagner du temps.
+Google Drive
 
-![](<../../.gitbook/assets/connectors (1).svg>)
+### Introduction
 
-{% hint style="info" %}
-[Accéder à la page Dastra du catalogue Zapier](https://zapier.com/apps/dastra/integrations)
-{% endhint %}
+Le **Marketplace des Intégrations Dastra** regroupe l’ensemble des connecteurs permettant de synchroniser vos données et d’automatiser vos processus entre Dastra et les applications que vous utilisez au quotidien.\
+Ces intégrations facilitent l’interopérabilité, réduisent les manipulations manuelles et assurent une meilleure cohérence entre vos systèmes internes.
 
-### Présentation de Zapier
+Vous trouverez plus d’une quinzaine de connecteurs prêts à l’emploi sur la page dédiée :\
+[https://www.dastra.eu/fr/integrations](https://www.dastra.eu/fr/integrations?utm_source=chatgpt.com)
 
-Zapier est un outil d'automatisation en ligne qui connecte vos applications et services. Vous pouvez connecter deux ou plusieurs applications pour automatiser des tâches répétitives sans avoir à coder ou à faire appel à des développeurs pour réaliser l'intégration.&#x20;
+### Avantages principaux
 
-Avec Zapier, vous allez mettre en place des Zaps (ou intégrations).
+* **Réduction des silos** : Faites circuler les données clés entre vos outils (CRM, suites bureautiques, outils de gestion…).
+* **Automatisation des workflows** : Créez des processus déclenchés par des événements (nouveau contact, signature d’un document, demande entrante…).
+* **Déploiement rapide** : Les connecteurs sont préconfigurés pour limiter l’effort d’intégration technique.
+* **Alignement conformité & gouvernance** : Les flux et champs proposés respectent la logique des modules Dastra.
+* **Évolutivité** : Enrichissez progressivement votre environnement sans contrainte d’architecture.
 
-Un Zap est un flux de travail automatisé qui relie vos applications et services entre eux. Chaque Zap se compose d'un déclencheur et d'une ou plusieurs actions. Lorsque vous activez votre Zap, il exécute les étapes de l'action chaque fois que l'événement déclencheur se produit.
+### Fonctionnement général
 
-### Les trois notions clés à retenir: <a href="#chapter-1" id="chapter-1"></a>
+1. **Sélectionnez le connecteur** dans le Marketplace Dastra.
+2. **Configurez les mappings** entre les objets de l’application externe et ceux de Dastra.
+3. **Définissez les règles de synchronisation** (import, export ou bidirectionnel).
+4. **Autorisez l’accès** via OAuth ou clés sécurisées.
+5. **Activez et surveillez** les synchronisations depuis votre tableau de bord des intégrations.
 
-* **Déclencheurs:**\
-  Un événement qui lance un Zap. Par exemple, si vous souhaitez envoyer un SMS à chaque fois que vous recevez un e-mail, le déclencheur est "nouvel e-mail dans la boîte de réception".
-* **Action:**\
-  Un événement qu'un Zap exécute après avoir été déclenché. Par exemple, si vous souhaitez envoyer un SMS à chaque fois que vous recevez un e-mail, l'action est "envoyer un message texte".
-* **Zap:**\
-  Un déclencheur et un ensemble d'actions, le tout représentant un flux de travail automatisé. Par exemple, envoyer un SMS à chaque fois que vous recevez un e-mail.
+### Connecteurs disponibles (exemples)
 
-### Des modèles pour une configuration éclair
+Voici quelques intégrations actuellement proposées :
 
-Nous avons préconfiguré des modèles de flux de travail automatisés que vous pouvez mettre en place en quelques clics. Une dizaine de modèles sont déjà disponibles et accessibles depuis notre [page intégrations](https://www.dastra.eu/fr/integrations) ou directement dans la [section intégrations](https://app.dastra.eu/workspace/0/settings/integrations) de l'application web Dastra.
+* **DocuSign** : Envoi de documents à signature et récupération automatique dans Dastra.
+* **Adresse email de collecte** : Conversion automatique des emails en demandes ou en tâches dans Dastra.
+* **Zapier** : Création de workflows personnalisés avec plus de 3 000 applications.
+* **Salesforce** : Synchronisation des comptes, contacts et entités pertinentes avec Dastra.
+* **Google Sheets / Microsoft Excel** : Import/export de listes et données structurées.
+* **Slack** : Notifications et alertes directement dans vos canaux collaboratifs.
 
-Nous mettrons régulièrement en ligne de nouveaux modèles pour répondre à vos besoins d'automatisation et vous faire gagner un temps précieux. N'hésitez pas également à nous soumettre vos idées de flux de travail automatisés pour que nous puissions les proposer en modèles.
+> Ceci est un extrait. De nouveaux connecteurs sont ajoutés régulièrement.
 
-### Un éditeur d'intégrations entièrement customisable <a href="#chapter-3" id="chapter-3"></a>
+### Démarrage rapide
 
-Si vous souhaitez automatiser un flux de travail pour lequel nous ne proposons pas encore de modèle (ou customiser légèrement un modèle existant pour l'adapter à votre cas de figure), vous pouvez passer par [l'éditeur de Zap de Zapier.](https://zapier.com/apps/dastra/integrations)
+#### 1 — Accéder au Marketplace
 
-L'éditeur de Zap vous permet de créer un Zap à partir de zéro, sans avoir à taper une seule ligne de code.
+Dans Dastra, ouvrez **Paramètres → Intégrations** pour afficher la liste des connecteurs.
 
-Choisissez l'application que vous souhaitez connecter avec Dastra dans le [catalogue de Zapier](https://zapier.com/apps), configurez un déclencheur puis sélectionner l'action à effectuer. Vous pouvez déclencher des actions dans une application tierce à partir d'un évènement se produisant sur Dastra, ou bien déclencher une action dans Dastra suite à un événement dans une application tierce. Avec plus de 4000 applications compatibles avec Zapier, les possibilités d'automatisation sont infinies.
+#### 2 — Installer et configurer
 
-### Quelles fonctionnalités de Dastra sont actuellement automatisables dans Dastra via Zapier ? <a href="#chapter-4" id="chapter-4"></a>
+Sélectionnez le connecteur souhaité puis suivez l’assistant de configuration : authentification, mapping, règles de synchronisation.
 
-Vous l'avez compris, une intégration se compose d'un élement déclencheur et d'une ou plusieurs actions. A ce jour, nous avons mis en place 2 déclencheurs et 6 actions côté Dastra (Il est important de comprendre que vous êtes limité en terme de déclencheurs et d'actions à ce que les éditeurs d'applications compatibles Zapier mettent à votre disposition). Nous viendrons étoffer cette liste dans le futur afin de vous permettre d'automatiser un maximum des fonctionnalités de Dastra.
+#### 3 — Tester la synchronisation
 
-* **Les déclencheurs existants:**
+Validez le fonctionnement avec une synchronisation d’essai avant la mise en production.
 
-1. Nouvelle demande d'exercice de droits créée
-2. Nouvelle tâche créée
+#### 4 — Mise en service et suivi
 
-* **les actions existantes:**
+Activez la synchronisation permanente et consultez les journaux pour vérifier l’état, les erreurs ou les données traitées.
 
-1. Créer une tâche
-2. Créer un acteur
-3. Créer une demande d'exercice de droit
-4. Attacher un acteur à un traitement existant
-5. Rechercher un acteur
-6. Trouver un acteur ou le créer si non existant
+#### 5 — Mise à jour et extensions
 
-Vous pouvez partir d'un des deux déclencheurs côté Dastra pour effectuer des tâches dans des applications tierces, ou bien partir d'un déclencheur d'une application tierce pour effectuer une des six actions possibles dans Dastra.
+Ajustez les mappings au fil de l’évolution de vos processus internes.
 
-{% hint style="info" %}
-[Consulter l'ensemble du catalogue d'applications Zapier ici.](https://zapier.com/apps)
-{% endhint %}
+### Bonnes pratiques
 
-{% hint style="info" %}
-Consulter la [documentation Zapier](https://zapier.com/help) pour plus d'informations sur la mise en place d'un connecteur&#x20;
-{% endhint %}
+* **Définir une correspondance claire des champs** entre Dastra et les systèmes externes.
+* **Sélectionner le mode de synchronisation adapté** (horaire, quotidien, événement déclencheur).
+* **Sécuriser les identifiants** et renouveler les clés périodiquement.
+* **Documenter les flux de données** pour répondre aux besoins internes et aux audits.
+* **Contrôler les journaux** de manière régulière.
 
-Vous êtes maintenant prêt à vous lancer dans le monde de l'automatisation et à mettre en place votre premier connecteur.&#x20;
+### Cas d’usage typiquesc
 
-Suivez notre guide pas à pas pour automatiser vos demandes d'exercice de droits:&#x20;
+* Création automatique de demandes d’exercice de droits à partir d’un CRM ou d’une boîte mail dédiée.
+* Génération d’actions Dastra depuis un outil de gestion de projet.
+* Enregistrement automatique des incidents signalés par email.
 
-{% embed url="https://www.dastra.eu/fr/guide/automatisation-exercice-de-droits/51571" %}
+### Aller plus loin
 
+Si aucune intégration ne correspond à votre besoin :
 
+* Vous pouvez utiliser l’**API REST Dastra** pour développer vos propres scripts.
+* Vous pouvez solliciter l’équipe Dastra pour un connecteur spécifique.
+* Vous trouverez plus d’informations techniques sur [https://doc.dastra.eu](https://doc.dastra.eu).
 
+***
+
+Si tu veux, je peux maintenant :\
+• enrichir cette page avec un tableau détaillé des connecteurs,\
+• rédiger des sous-pages de documentation par connecteur,\
+• produire une version plus concise ou orientée marketing.
