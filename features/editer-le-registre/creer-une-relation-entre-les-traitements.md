@@ -85,5 +85,5 @@ Il est possible d'ajouter, de supprimer ou modifier des nouveaux champs dans le 
 
 
 {% hint style="info" %}
-Pour les héritage et les transmition, tous les champs sont hérité (ou transmis) à part les champs de l'onglet 1 "Général" et les documents associé au traitement de l'onglet 11 "Documentation".
+Pour les héritages et les transmissions, tous les champs sont hérités (ou transmis) à part les champs de l'onglet 1 "Général" et les documents associés au traitement de l'onglet 11 "Documentation".
 {% endhint %}
