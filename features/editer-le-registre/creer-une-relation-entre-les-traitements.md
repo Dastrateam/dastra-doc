@@ -32,58 +32,114 @@ Vous pouvez créer des relations sur plusieurs traitements en une seule fois. Po
 Il est possible de créer des relations avec les traitements figurant le même espace de travail uniquement.&#x20;
 {% endhint %}
 
-### Détail des relations
+### Types de relation
 
-#### Est l'enfant de :&#x20;
+Il existe deux types de relations :&#x20;
 
-Relation hiérarchique permettant une lecture structurée. Pas d’asservissement entre les champs.
+1. **Relations déclaratives :** Utilisées pour établir un lien simple entre deux traitements (sans dépendance fonctionnelle).
+2. **Relations fonctionnelles :** Permettent de transmettre ou d'hériter des champs d'un traitement à un autre.
 
-Le traitement A est hiérarchiquement sous le traitement B.
+
+
+### Relations déclaratives :
+
+#### **Est l'enfant de :**&#x20;
+
+Relation hiérarchique permettant une lecture structurée des traitements, **sans dépendance fonctionnelle** entre les champs.
+
+> Le traitement A est hiérarchiquement rattaché au traitement B.
 
 #### Est le parent de :&#x20;
 
-Relation hiérarchique permettant une lecture structurée. Pas d’asservissement entre les champs.
+Relation hiérarchique permettant une lecture structurée des traitements, **sans dépendance fonctionnelle** entre les champs.
 
-Le traitement A est hiérarchiquement au dessus du traitement B.
+> Le traitement A est hiérarchiquement au dessus du traitement B.
 
 #### Est relatif à :&#x20;
 
-Simple lien logique entre 2 traitements, aucun asservissement entre les deux ni de règle de contrôle.&#x20;
+Lien logique simple entre deux traitements, **sans asservissement ni dépendance fonctionnelle** entre les champs.
+
+> Le traitement A est lié au traitement B.<br>
 
 #### Est copié par :
 
-Cette relation permet de garder une trace des éléments dupliqués à partir de ce traitement. Un lien relationnel est créé automatiquement lorsqu’un traitement est dupliqué.&#x20;
+Cette relation permet de garder une trace des éléments dupliqués à partir de ce traitement. Cette relation est créée automatiquement lors de la duplication d'un traitement.
+
+> Le traitement A est la source (de la duplication) du traitement B.
 
 #### Est une copie de :&#x20;
 
-Cette relation permet de garder une trace de la source de duplication du traitement. Un lien relationnel est créé automatiquement lorsqu’un traitement est dupliqué.&#x20;
+Cette relation permet de garder une trace de la source de duplication du traitement. Cette relation est créée automatiquement lors de la duplication d'un traitement.
+
+> Le traitement A est un duplicata du traitement B.
+
+###
+
+### **Relations fonctionnelles** :
 
 #### Transmet strictement (Héritage fort) :
 
-Les champs du traitement d'origine (A) remplacent les champs du traitement cible (B).&#x20;
+Les champs du traitement cible **A** remplacent intégralement ceux du traitement d’origine **B.**
 
-Asservissement strict entre le traitement A et le traitement B. Les champs du traitement B préexistants sont supprimés au moment où le lien est mis en place. Les champs du traitement B asservis au traitement A ne sont pas modifiables dans le traitement B, et aucun nouveau champ ne peut être ajouté, supprimé ou modifié. Dans la mesure où les éléments de référentiels sont conservés, les champs préexistants au traitement B sont rétablis lorsque le lien est révoqué.
+{% hint style="warning" %}
+à l’exception des champs de l’onglet **1 « Général »** et des documents associés au traitement dans l’onglet **11 « Documentation »**.
+{% endhint %}
+
+* Asservissement strict entre A et B.
+* Les champs préexistants dans B sont supprimés lors de la création du lien.
+* Les champs hérités depuis A ne sont **ni modifiables, ni supprimables**, et aucun nouveau champ ne peut être ajouté dans B.
+* En cas de suppression du lien, les champs initiaux de B sont restaurés (les éléments de référentiel étant conservés).
 
 #### Hérite strictement de (Héritage fort) :&#x20;
 
-Les champs du traitement cible (B) remplacent les champs du traitement d'origine (A).&#x20;
+Les champs du traitement cible **B** remplacent intégralement ceux du traitement d’origine **A**.
 
-Asservissement strict entre le traitement B et le traitement A. Les champs de A préexistants sont supprimés au moment où le lien est mis en place. Les champs de A asservis à B ne sont pas modifiables dans A, et aucun nouveau champ ne peut être ajouté, supprimé ou modifié. Dans la mesure où les éléments de référentiels sont conservés, les champs préexistants au traitement B sont rétablis lorsque le lien est révoqué.
+{% hint style="warning" %}
+à l’exception des champs de l’onglet **1 « Général »** et des documents associés au traitement dans l’onglet **11 « Documentation »**.
+{% endhint %}
+
+* Asservissement strict entre B et A.
+* Les champs préexistants dans A sont supprimés lors de la création du lien.
+* Les champs hérités depuis B ne sont **ni modifiables, ni supprimables**, et aucun nouveau champ ne peut être ajouté dans A.
+* En cas de suppression du lien, les champs initiaux de B sont restaurés.
 
 #### Transmet (Héritage faible) :&#x20;
 
-Le traitement d'origine (A) transmet automatiquement ses champs au traitement cible (B).&#x20;
+Le traitement d’origine **A** transmet automatiquement ses champs au traitement cible **B**.
 
-Le traitement cible B hérite automatiquement des champs du traitement d'origine A. Le traitement cible B peut ajouter, supprimer ou modifier des nouveaux champs, mais ne peut pas modifier les champs hérités du traitement A. Toute modification dans les champs du traitement A est automatiquement répercutée dans les champs hérités du traitement B. Lorsque le lien est révoqué, les champs hérités redeviennent modifiables dans le traitement B. Les champs préexistant à B avant la mise en place du lien sont conservés une fois le lien créé.
-
-#### Hérite de (Héritage faible) :&#x20;
-
-Le traitement cible (B) hérite automatiquement des champs du traitement d'origine (A).&#x20;
-
-Il est possible d'ajouter, de supprimer ou modifier des nouveaux champs dans le traitement B, mais ne peut pas modifier les champs hérités du traitement A. Toute modification dans les champs du traitement A est automatiquement répercutée dans les champs hérités du traitement B . Lorsque le lien est révoqué, les champs hérités du traitement A redeviennent modifiables dans le traitement B. Les champs préexistant dans le traitement B avant la mise en place du lien sont conservés une fois le lien créé.
-
-
-
-{% hint style="info" %}
-Pour les héritages et les transmissions, tous les champs sont hérités (ou transmis) à part les champs de l'onglet 1 "Général" et les documents associés au traitement de l'onglet 11 "Documentation".
+{% hint style="warning" %}
+à l’exception des champs de l’onglet **1 « Général »** et des documents associés au traitement dans l’onglet **11 « Documentation »**.
 {% endhint %}
+
+* B hérite des champs de A.
+* Les champs hérités ne sont pas modifiables dans B.
+* B peut ajouter, modifier ou supprimer ses propres champs.
+* Toute modification des champs de A est automatiquement répercutée dans B.
+* En cas de suppression du lien, les champs hérités redeviennent modifiables.
+* Les champs préexistants dans B sont conservés.
+
+#### Hérite de (Héritage faible) :  &#x20;
+
+Le traitement cible **B** hérite automatiquement des champs du traitement d’origine **A**.
+
+{% hint style="warning" %}
+à l’exception des champs de l’onglet **1 « Général »** et des documents associés au traitement dans l’onglet **11 « Documentation »**.
+{% endhint %}
+
+* Les champs hérités ne sont pas modifiables dans B.
+* B peut ajouter, modifier ou supprimer ses propres champs.
+* Toute modification des champs de A est automatiquement répercutée dans B.
+* En cas de suppression du lien, les champs hérités redeviennent modifiables.
+* Les champs préexistants dans B sont conservés.&#x20;
+
+
+
+### Tableau de synthèse des relations :&#x20;
+
+| **Type de relation**                                                                       | **Onglet 1 – "Général"** | **Onglets 2 à 10 (champs métier)** | **Documentation uploadée** dans l’onglet 11 – "**Documentation"** | **Modifiabilité des champs propres au traitement cible** |
+| ------------------------------------------------------------------------------------------ | ------------------------ | ---------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------- |
+| **Relations hiérarchiques / logiques**(Parent / Enfant / Relatif à / Copié par / Copie de) | Sans impact              | Sans impact                        | Sans impact                                                       | Sans impact                                              |
+| **Transmet strictement (Héritage fort)**                                                   | ❌ Non transmis           | ✅ Transmis                         | ❌ Non transmise                                                   | ❌ Impossible d’ajouter / modifier / supprimer            |
+| **Hérite strictement de (Héritage fort)**                                                  | ❌ Non hérité             | ✅ Hérité                           | ❌ Non héritée                                                     | ❌ Impossible d’ajouter / modifier / supprimer            |
+| **Transmet (Héritage faible)**                                                             | ❌ Non transmis           | ✅ Transmis                         | ❌ Non transmise                                                   | ✅ Ajout / modification / suppression possibles           |
+| **Hérite de (Héritage faible)**                                                            | ❌ Non hérité             | ✅ Hérité                           | ❌ Non héritée                                                     | ✅ Ajout / modification / suppression possibles           |
