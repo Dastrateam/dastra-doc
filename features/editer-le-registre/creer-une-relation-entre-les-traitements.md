@@ -111,7 +111,7 @@ Le traitement d’origine **A** transmet automatiquement ses champs au traitemen
 à l’exception des champs de l’onglet **1 « Général »** et des documents associés au traitement dans l’onglet **11 « Documentation »**.
 {% endhint %}
 
-* B hérite des champs de A.
+* **A** transmet ses champs à **B**.
 * Les champs hérités ne sont pas modifiables dans B.
 * B peut ajouter, modifier ou supprimer ses propres champs.
 * Toute modification des champs de A est automatiquement répercutée dans B.
@@ -126,6 +126,7 @@ Le traitement cible **B** hérite automatiquement des champs du traitement d’o
 à l’exception des champs de l’onglet **1 « Général »** et des documents associés au traitement dans l’onglet **11 « Documentation »**.
 {% endhint %}
 
+* **B** hérite des champs de **A**.
 * Les champs hérités ne sont pas modifiables dans B.
 * B peut ajouter, modifier ou supprimer ses propres champs.
 * Toute modification des champs de A est automatiquement répercutée dans B.
