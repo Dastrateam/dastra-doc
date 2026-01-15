@@ -103,6 +103,10 @@ Les champs du traitement cible **B** remplacent intégralement ceux du traitemen
 * Les champs hérités depuis B ne sont **ni modifiables, ni supprimables**, et aucun nouveau champ ne peut être ajouté dans A.
 * En cas de suppression du lien, les champs initiaux de B sont restaurés.
 
+{% hint style="danger" %}
+Un traitement ne peut pas hériter de plusieurs traitements à la fois.
+{% endhint %}
+
 #### Transmet (Héritage faible) :&#x20;
 
 Le traitement d’origine **A** transmet automatiquement ses champs au traitement cible **B**.
@@ -133,7 +137,9 @@ Le traitement cible **B** hérite automatiquement des champs du traitement d’o
 * En cas de suppression du lien, les champs hérités redeviennent modifiables.
 * Les champs préexistants dans B sont conservés.&#x20;
 
-
+{% hint style="danger" %}
+Un traitement ne peut pas hériter de plusieurs traitements à la fois.
+{% endhint %}
 
 ### Tableau de synthèse des relations :&#x20;
 
