@@ -4,10 +4,6 @@ description: Intégration ServiceNow pour synchroniser les actifs (assets) dans 
 
 # ServiceNow
 
-{% hint style="info" %}
-Fonctionnalité en cours de développement
-{% endhint %}
-
 ### Qu'est ce que c'est ServiceNow ?
 
 L’intégration [ServiceNow](https://www.servicenow.com/) permet de **synchroniser automatiquement les applications métiers** issus du CMDB de ServiceNow directement dans Dastra.
