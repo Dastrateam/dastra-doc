@@ -61,7 +61,7 @@ Dastra vous propose plusieurs types de champs personnalisés possibles
 * Case à cocher (réponse multiple) (**non filtrable**)
 * Case à cocher (réponse unique)
 * Sélecteur simple
-* Sélecteur multiple
+* Sélecteur multiple (**non filtrable**)
 * Case à cocher (Oui/Non)
 
 ## Utilisation des champs personnalisés
