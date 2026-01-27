@@ -12,4 +12,3 @@ La seconde brique est la gestion de périmètres : ceux ci vous permettent de d�
 
 Enfin la brique projets vous permet de gérer votre conformité au sein de projets, regroupement fonctionnels permettant l'articulation entre les contrôles et les frameworks.
 
-_a completer (pas trop d'idées de comment tourner le truc)_&#x20;
