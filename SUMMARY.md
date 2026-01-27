@@ -204,6 +204,7 @@
     * [Conception du projet](features/compliance/projects/design.md)
     * [Implémentation du projet](features/compliance/projects/implement.md)
     * [Surveillance de la conformité](features/compliance/projects/monitoring.md)
+    * [Audits](features/compliance/projects/audits.md)
 * [Revue régulière (fraicheur)](features/revue-reguliere-fraicheur.md)
 * [Rapports personnalisés](features/custom-reporting/README.md)
   * [Intégration dans les outils d'analyse de données (BI)](features/custom-reporting/bi-tools.md)
