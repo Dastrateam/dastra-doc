@@ -95,7 +95,7 @@ L'ensemble des objets contenus dans votre framework seront créés dans votre bi
 
 &#x20;Une fois importé, le framework :
 
-* Est disponible dans la Librairie
+* Est disponible dans la bibliothèque
 * Peut être enrichi ou adapté
 * Sert de base pour :
   * Des **projets de conformité**

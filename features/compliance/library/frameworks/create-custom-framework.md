@@ -119,8 +119,12 @@ Lors de la création d’un chapitre :
 * **Référence** : identifiant interne du chapitre
 * **Nom** : intitulé fonctionnel du chapitre
 
-💡 _Bonne pratique_ : utiliser les chapitres pour structurer par grands thèmes\
+&#x20;
+
+{% hint style="info" %}
+_Bonne pratique_ : utiliser les chapitres pour structurer par grands thèmes\
 (ex. gouvernance, sécurité, exploitation, usages…).
+{% endhint %}
 
 ***
 
