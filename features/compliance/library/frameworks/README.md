@@ -7,16 +7,16 @@ description: >-
 # Frameworks
 
 La page **Frameworks** de la Librairie constitue le point d’entrée de la démarche de conformité dans Dastra.\
-Un framework représente un **référentiel de conformité structuré** (ex. RGPD, E-Privacy, PSSI-IA), regroupant des exigences, des contrôles, des risques et des menaces.\
+Un framework représente un **référentiel de conformité structuré** (ex. RGPD, E-Privacy, RIA), regroupant des exigences, des contrôles, des risques et des menaces.\
 Ces frameworks servent de **socle commun** pour construire vos projets de conformité, harmoniser vos pratiques et assurer une traçabilité complète entre obligations réglementaires, contrôles opérationnels et gestion des risques.
 
 ***
 
-#### 1. Navigation latérale – Librairie de conformité
+#### 1. Navigation latérale – Bibliothèque de conformité
 
 <div align="center"><figure><img src="../../../../.gitbook/assets/image (425).png" alt="library view"><figcaption></figcaption></figure></div>
 
-Le menu latéral permet d’accéder aux différents objets de la Librairie :
+Le menu latéral permet d’accéder aux différents objets de la bibliothèque :
 
 * **Frameworks** : référentiels de conformité (bibliothèque centrale)
 * **Exigences** : chapitres et exigences qui structurent un framework
@@ -40,3 +40,6 @@ Lorsque aucun framework n’est présent, Dastra propose directement :
 * [**Importer un framework**](import-et-modeles-dastra.md)
 * [**Créer un framework**](create-custom-framework.md)
 
+{% hint style="info" %}
+N'oubliez pas que le quota est partagé entre l'ensemble de l'organisation, et pas seulement l'espace de travail. Soyez attentif à votre utilisation afin d'éviter les limites.
+{% endhint %}
