@@ -26,10 +26,10 @@ Le processus de mise en place est très simple :&#x20;
 * Cliquer sur le bouton **"Installer"**.
 *   **Saisir vos informations de connexion** à votre compte utilisateur administrateur de Filerskeepers (e-mail + mot de passe). Ces informations d'identification nous permettrons de générer un jeton d'accès à l'API de Filerskeepers.<br>
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 * Une fenêtre de configuration va s'afficher. Cette configuration est obligatoire afin de finaliser l'installation. Dans ce formulaire, sélectionnez le "Schedule" que vous souhaitez configurer avec Dastra.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 

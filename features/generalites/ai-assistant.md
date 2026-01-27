@@ -1,14 +1,32 @@
 ---
 description: >-
-  L'assistant IA de Dastra utilise la puissance de l'IA OpenAI GPT-4 pour
-  générer automatiquement des fiches de traitement
+  L'assistant IA de Dastra utilise la puissance de l'IA pour générer rapidement
+  des éléments dans Dastra
 ---
 
 # Assistant IA
 
 ## Quels cas d'usage avec Dastra ?&#x20;
 
-Avec Dastra, vous pouvez utiliser l'IA pour deux cas d'usages principaux :&#x20;
+Avec Dastra, vous pouvez utiliser l'IA pour :&#x20;
+
+* générer des traitements
+* générer des rapports personnalisés
+* générer un jeu de données
+* générer une mesure de sécurité
+* générer une partie prenante
+* générer un système d'IA
+* générer un modèle de questionnaire
+* générer des documents
+* générer des descriptions
+* générer une analyse sur un traitement, une réponse à un questionnaire, un système d'IA, un contrat, un actif ou une violation
+* générer une analyse de risque sur un système d'IA
+* générer une notice d'information pour un traitement ou un système d'IA
+* générer une réponse à un questionnaire
+* proposer des tags
+* proposer des messages de réponses à une demande de droit
+* générer un post-mortem pour une violation
+* extraire les méta-données d'un document
 
 ### **Générer des traitements de données**
 
@@ -60,8 +78,6 @@ Une fois le jeu de données généré ? Editez le traitement une fois créé dir
 
 <figure><img src="../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
-###
-
 ### **Générer des réponses aux demandes d'exercice de droits**
 
 Vous pouvez facilement générer des réponses aux demandes d'exercice de droit dans plusieurs langues à partir de l'étape de communication de la demande. Différentes options de personnalisation sont possibles pour adapter le texte à votre convenance (raccourcir ou allonger le texte, adopter un ton plus ou moins formel, etc...)
@@ -98,7 +114,7 @@ Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espa
 
 ## Comment ça marche ?
 
-Dastra utilise les modèles d'**IA OpenAI GPT 4o-mini** et **GPT 4-1mini** (Modèles de [ChatGPT](https://chat.openai.com/)) fournis par [le service AI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Les modèles utilisés sont pré-entrainés. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.
+Dastra utilise par défaut les modèles d'**IA OpenAI GPT 4-1mini, GPT 5 mini  et GPT 5 nano**  (Modèles de [ChatGPT](https://chat.openai.com/)) fournis par [le service AI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Les modèles utilisés sont pré-entrainés. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.
 
 Dastra utilise simplement la puissance de l'IA générative pour générer du contenu à partir de simple requête textuelle. Dastra a simplement fourni le modèle de document attendu (JSON) et un exemple de traitement de données (issu de notre bibliothèque) que nous souhaitons avoir et le modèle d'IA s'occupe du reste.
 
@@ -119,3 +135,18 @@ Les requêtes textuelles et les résultats du service :
 * **ne sont PAS utilisées pour améliorer automatiquement les modèles Azure OpenAI** pour votre utilisation dans votre ressource (les modèles sont sans état, sauf si vous affinez explicitement les modèles avec vos données d'entraînement).&#x20;
 
 Si vous souhaitez avoir plus d'informations sur le fonctionnement de ce modèle, [rendez-vous sur cette page ](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
+
+### Configurer la famille de modèles d'IA utilisée
+
+Dastra vous propose le choix entre trois "familles" de modèle d'IA : OpenAI, MistralAI ou une séléction de modèles OpenSource. **Tous ces modèles sont hébérgés sur Azure, en France.**
+
+La configuration se retrouve dans les paramètres de votre compte, dans la section Assistant IA.\
+Vous trouverez le choix de la famille ainsi que le détail des modèles utilisés.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Pour chaque famille, trois modèles différents sont utilisés en fonction des cas d'usages
+
+* Fast : des actions simples comme la génération d'une description ou la proposition de tags
+* Smart : les actions nécessitant une reflexion plus poussée comme la génération d'éléments dans Dastra
+* Contexte étendu : les actions qui vont traiter un nombre de données important comme la réponse à un questionnaire
