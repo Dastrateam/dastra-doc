@@ -90,7 +90,11 @@ Ces informations servent de guide opérationnel lors de l’exécution du test d
 
 ***
 
+
+
 ### Tests automatisés avec les connecteurs Dastra
+
+Dastra propose plusieurs types de connecteurs prêts à l’emploi (questionnaires, registres, politiques, etc.), ainsi qu’un connecteur générique. Ces connecteurs sont utilisés directement dans les **tests automatisés** du module Compliance.
 
 <figure><img src="../../../.gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
 
@@ -114,7 +118,61 @@ Les connecteurs peuvent notamment permettre de :
 📌 Exemple :\
 Un test automatisé peut vérifier que chaque système d’IA dispose d’une documentation conforme et à jour, sans intervention manuelle.
 
-***
+
+
+### Ajout d'un connecteur personnalisé
+
+En complément des connecteurs standards, Dastra permet de créer des **connecteurs personnalisés** afin d’automatiser la collecte de preuves dans les tests de conformité.
+
+
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Un connecteur personnalisé permet :
+
+* d’exécuter une requête technique (ex. requête HTTP),
+* d’interroger une source interne ou externe,
+* de collecter automatiquement des éléments factuels,
+* de produire des preuves exploitables dans les audits.
+
+Le connecteur devient ainsi une **source de preuve récurrente et traçable**.
+
+#### Requête HTTP
+
+Le connecteur **Requête HTTP** permet d’interroger n’importe quelle API ou endpoint exposé.
+
+Il est particulièrement adapté pour :
+
+* interroger des outils tiers,
+* vérifier l’existence ou l’état d’une ressource,
+* automatiser des contrôles techniques ou documentaires.
+
+### Configuration d’un connecteur personnalisé
+
+Lors de la création d’un connecteur HTTP, les paramètres suivants peuvent être définis :
+
+#### Fréquence du test
+
+* Détermine la périodicité d’exécution du test (ex. mensuelle).
+* Adaptée aux contrôles récurrents.
+
+#### URL (obligatoire)
+
+* Endpoint à interroger.
+* Peut correspondre à une API interne ou externe.
+
+#### Méthode HTTP (optionnelle)
+
+* GET, POST, etc.
+* À sélectionner selon le type d’interrogation.
+
+#### En-têtes HTTP (optionnel)
+
+* Permet notamment de gérer l’authentification (tokens, clés API, headers personnalisés).
+
+#### Corps de requête (optionnel)
+
+* Utile pour les requêtes POST ou les appels nécessitant un payload spécifique.
 
 ### Avantages des tests automatisés
 

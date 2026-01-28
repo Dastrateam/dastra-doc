@@ -29,7 +29,7 @@ Le processus de mise en place est très simple :&#x20;
     <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 * Une fenêtre de configuration va s'afficher. Cette configuration est obligatoire afin de finaliser l'installation. Dans ce formulaire, sélectionnez le "Schedule" que vous souhaitez configurer avec Dastra.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 

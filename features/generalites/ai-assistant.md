@@ -143,7 +143,7 @@ Dastra vous propose le choix entre trois "familles" de modèle d'IA : OpenAI, Mi
 La configuration se retrouve dans les paramètres de votre compte, dans la section Assistant IA.\
 Vous trouverez le choix de la famille ainsi que le détail des modèles utilisés.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Pour chaque famille, trois modèles différents sont utilisés en fonction des cas d'usages
 
