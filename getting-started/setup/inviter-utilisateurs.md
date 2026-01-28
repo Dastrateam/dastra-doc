@@ -77,7 +77,7 @@ De manière optionnelle :&#x20;
 
 Voici un modèle de fichier à télécharger et à remplir :&#x20;
 
-{% file src="../../.gitbook/assets/Template_import_users (2).csv" %}
+{% file src="../../.gitbook/assets/sample-admin-users_import.csv" %}
 Modèle de fichier d'import
 {% endfile %}
 
