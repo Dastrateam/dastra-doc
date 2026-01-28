@@ -47,7 +47,7 @@ Si vous ne retrouvez pas un élément auquel vous devriez avoir accès, il se pe
 1.  Un filtre est présent et restreint l'affichage comme ci-dessous avec le "(1)". Cliquez sur Effacez les filtres \
     <br>
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. L'objet est lié à une unité organisationnelle à laquelle vous n'avez pas accès ou pour laquelle vous n'avez pas les droits nécessaires. Contactez le gestionnaire de votre espace de travail.
 3.  L'objet est archivé et ne s'affiche donc plus dans la liste par défaut. Vous pouvez choisir d'afficher les archives dans le menu de sélection des filtres.<br>
 

@@ -37,7 +37,7 @@ L'ajout des finalités est réalisé à la section 3 du traitement.
 
 
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 L'intitulé de la finalité est limité à 120 caractères.&#x20;
 

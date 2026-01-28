@@ -15,11 +15,11 @@ Une relation générique est une relation simple entre deux éléments. Elle se 
 
 **A noter :** un élément peut être lié à plusieurs autres éléments.&#x20;
 
-Pour ajouter une relation générique,  il faut cliquer sur l'icône ![](<../../.gitbook/assets/image (1) (1) (1).png>)correspondant aux éléments liés.
+Pour ajouter une relation générique,  il faut cliquer sur l'icône ![](<../../.gitbook/assets/image (1) (1) (1) (4).png>)correspondant aux éléments liés.
 
 Ensuite, ajouter une relation et choisir le type d'objet à lier :&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 La relation peut être réalisée avec un objet déjà existant ou alors un objet qui sera créé.&#x20;
 

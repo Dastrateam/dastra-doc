@@ -124,3 +124,38 @@ Le module Compliance de Dastra permet ainsi de :
 * prouver la conformité par des contrôles testés et documentés,
 * préparer efficacement les audits et certifications.
 
+### Principe multi-framework dans Dastra
+
+Le module Compliance de Dastra est **nativement multi-framework**.
+
+Cela signifie que :
+
+* un même **framework** (RGPD, ISO, AI Act…) contient ses propres exigences,
+* une **exigence** appartient à **un framework**,
+* un **contrôle peut répondre à plusieurs exigences**, y compris issues de **frameworks différents**,
+* les **tests et preuves** sont mutualisés et réutilisables.
+
+Objectif : **éviter les doublons** et piloter la conformité de manière transverse.
+
+***
+
+### Relations clés entre les objets
+
+* **Framework → Exigences** : 1 → N
+* **Exigences ↔ Contrôles** : N ↔ N
+* **Contrôles ↔ Tests** : N ↔ N
+* **Tests → Preuves** : 1 → N
+* **Contrôles → Scénarios de risque** : N ↔ N
+
+Un même contrôle (ex. revue des accès) peut ainsi :
+
+* satisfaire une exigence RGPD,
+* satisfaire une exigence ISO 27001,
+* réduire plusieurs scénarios de risque.
+
+
+
+**Schéma explicatif**
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+

@@ -64,7 +64,7 @@ Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Micr
   **Azure AD Identifier => Identity provider's Entity Id** \
   **Logout Url => Identity provider Signout url**
 * Votre formulaire de configuration du SSO dans Dastra devrait ressembler à ceci :
-* ![](<../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png>)
+* ![](<../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png>)
 * Vous pouvez cocher la case "Utilisateur créé si l'utilisateur n'a jamais été invité dans Dastra" . Si vous activez cette option, les comptes de votre organisation AD qui ne sont pas présents dans Dastra seront provisionnés à la volée au moment du login si ils n'existent pas localement dans Dastra.
 
 ![](<../../../.gitbook/assets/image (6) (1).png>)

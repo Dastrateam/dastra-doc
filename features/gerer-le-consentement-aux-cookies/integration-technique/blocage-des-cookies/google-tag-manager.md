@@ -69,7 +69,7 @@ Si vous souhaitez déclencher la balise dans le cas d'un refus, mettez la formul
 Si vous avez de nombreux déclencheurs différents pour une même balise, il est également tout à fait possible de créer une exception de cette manière.\
 Exemple d'une balise avec plusieurs déclencheurs :&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dans ce cas nous souhaitons ajouter une exception, si la balise google ads (google-ads) n'est pas accepté, nous ne voulons pas que la balise se déclenche .
 
