@@ -39,6 +39,8 @@ La création d'une mission est le point de départ de votre évaluation. Depuis 
 
 <figure><img src="../../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
 
+L'audit actif signifie que cet audit est en cours. Cet audit sera utilisé dans le tableau de bord pour afficher le taux de conformité.
+
 #### 2. Phase de l'audit et Calendrier
 
 Le choix de la phase permet de segmenter votre mission et de filtrer vos tableaux de bord de gouvernance.
