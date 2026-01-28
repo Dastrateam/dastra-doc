@@ -35,11 +35,11 @@ La création d'une mission est le point de départ de votre évaluation. Depuis 
 
 * Nom (obligatoire) : Titre clair de la mission (ex: "Audit de conformité annuel"), limité à 80 caractères.
 * Description (optionnel) : Précisez le contexte ou le périmètre spécifique (jusqu'à 500 caractères).
-* Auditeurs (obligatoire) : Sélectionnez les utilisateurs responsables de la réalisation de l'évaluation.
+* Auditeurs (obligatoire) : Sélectionnez les utilisateurs responsables de la réalisation de l'évaluation. Si vous ne figurez pas dans cette liste, vous ne pourrez pas répondre aux questions de l'audit (même si vous êtes propriétaire de l'organisation).&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
 
-L'audit actif signifie que cet audit est en cours. Cet audit sera utilisé dans le tableau de bord pour afficher le taux de conformité.
+
 
 #### 2. Phase de l'audit et Calendrier
 
@@ -56,8 +56,8 @@ Le choix de la phase permet de segmenter votre mission et de filtrer vos tableau
 
 #### 3. Options avancées et automatisation
 
-* Préserver les résultats d'un précédent audit : Permet de repartir d'une base existante pour les audits récurrents.
-* Définir comme audit actif : Intègre immédiatement l'audit dans vos indicateurs de suivi en temps réel.
+* Préserver les résultats d'un précédent audit : Permet de repartir d'une base existante pour les audits récurrents. Cela peut être utile pour refaire un audit à la suite d'un audit dont les contrôles n'ont pas été satisfaisants.
+* Définir comme audit actif : Intègre immédiatement l'audit dans vos indicateurs de suivi en temps réel. Cet audit sera utilisé dans le tableau de bord pour afficher le taux de conformité.
 * Notifier l'auditeur par email : Automatise l'envoi d'une invitation aux collaborateurs désignés.
 
 ***
