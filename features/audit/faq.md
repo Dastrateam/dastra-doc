@@ -69,4 +69,15 @@ Pour résoudre ce problème, il faut donc modifier le "Nom de la variable" de ch
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 165757.png" alt=""><figcaption></figcaption></figure>
 
-Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, il sera possible de l'enregistrer normalement.&#x20;
+Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, il sera possible de l'enregistrer normalement. <br>
+
+### &#x20;Que faire lorsque l'on rencontre le message "Bloqué car trop d'invitations" lors de l'envoi d'invitations par email aux répondants du questionnaire ?
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-05 091717.png" alt=""><figcaption></figcaption></figure>
+
+\
+Ce message apparait si 5 invitations par email ont déjà été envoyées à un répondant depuis le même questionnaire.\
+\
+Lorsque ce message apparait, vous pouvez encore inviter le répondant en lui transmettant le lien d'invitation au questionnaire disponible ici :&#x20;
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-05 092802.png" alt=""><figcaption></figcaption></figure>
