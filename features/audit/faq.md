@@ -76,7 +76,7 @@ Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-05 091717.png" alt=""><figcaption></figcaption></figure>
 
 \
-Ce message apparait si 5 invitations par email ont déjà été envoyées à un répondant depuis le même questionnaire.\
+Ce message apparaît si 5 invitations par email ont déjà été envoyées à un répondant depuis le même questionnaire.\
 \
 Lorsque ce message apparait, vous pouvez encore inviter le répondant en lui transmettant le lien d'invitation au questionnaire disponible ici :&#x20;
 
