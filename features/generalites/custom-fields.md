@@ -35,11 +35,14 @@ Vous pouvez personnaliser les formulaires suivants :&#x20;
 * [Tâches](../planifier/gerer-vos-taches.md)
 * [Actifs](../editer-le-registre/remplir-le-questionnaire/applications.md)
 * [Acteurs](../cartography/referentials/)
-* Mesures
-* Jeux de données
+* [Mesures](../editer-le-registre/remplir-le-questionnaire/mesures-de-securite.md)
+* [Jeux de données](../editer-le-registre/remplir-le-questionnaire/categorie-de-donnees.md)
 * Champs de données
 * [Violations](../../rappels-utiles/rgpd-en-bref/violations-de-donnees.md)
 * [Evaluations de risques](../la-gestion-des-risques/risques.md)
+* [Systèmes d'IA](../systemes-dia/)
+* [Contrats](../contrats/)
+* [Points de contrôles](../compliance/library/risks.md#association-des-controles)
 
 {% hint style="danger" %}
 ### Limitations du nombre de champs
@@ -69,7 +72,7 @@ Dastra vous propose plusieurs types de champs personnalisés possibles
 Vous pouvez :
 
 * Afficher et modifier les données des champs personnalisés dans les formulaires de chaque module
-* Les champs personnalsiés peuvent s'afficher dans tous les tableaux de visualisation de l'application. Pour les afficher, cliquer sur le bouton de paramétrage des colonnes du tableau.
+* Les champs personnalisés peuvent s'afficher dans tous les tableaux de visualisation de l'application. Pour les afficher, cliquer sur le bouton de paramétrage des colonnes du tableau.
 * Les champs personnalisés sont **présents dans tous les exports Excel** de données. Pour plus d'informations sur les exports, [consultez la page sur les exports](../editer-le-registre/exporter-importer-le-registre.md)
 * Les champs personnalisés peuvent être présents dans les exports HTML, Word et PDF sur option (en cochant la case "Exportable dans les rapports" sur le champ en question)
 * **A l'exception des champs à réponses multiples**, les champs personnalisés sont tous filtrables via le système de [filtres avancés](advanced-filters.md).&#x20;
