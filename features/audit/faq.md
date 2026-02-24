@@ -44,8 +44,6 @@ Voici la correspondance des couleurs :&#x20;
 | Vert entouré de rouge  | <img src="../../.gitbook/assets/image (391).png" alt="" data-size="original"> | Toutes les questions de la section ont un réponse. Question obligatoire répondue        |
 | Noir                   | <img src="../../.gitbook/assets/image (390).png" alt="" data-size="original"> | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
 
-
-
 ### &#x20;Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ? <a href="#slug-error" id="slug-error"></a>
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-11-04 170330.png" alt=""><figcaption></figcaption></figure>
@@ -71,7 +69,7 @@ Pour résoudre ce problème, il faut donc modifier le "Nom de la variable" de ch
 
 Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, il sera possible de l'enregistrer normalement. <br>
 
-### &#x20;Que faire lorsque l'on rencontre le message "Bloqué car trop d'invitations" lors de l'envoi d'invitations par email aux répondants du questionnaire ?
+### Que faire lorsque l'on rencontre le message "Bloqué car trop d'invitations" lors de l'envoi d'invitations par email aux répondants du questionnaire ?
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-05 091717.png" alt=""><figcaption></figcaption></figure>
 
@@ -81,3 +79,11 @@ Ce message apparaît si 5 invitations par email ont déjà été envoyées à un
 Lorsque ce message apparait, vous pouvez encore inviter le répondant en lui transmettant le lien d'invitation au questionnaire disponible ici :&#x20;
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-05 092802.png" alt=""><figcaption></figcaption></figure>
+
+### Que faire lorsque je ne peux pas "Revoir et valider le questionnaire" alors que je suis bien responsable ?
+
+Cela peut arriver lorsque le répondant n'a pas encore finalisé son questionnaire en cliquant sur le bouton "Finaliser" après y avoir répondu.\
+\
+Dans ce cas, en tant que responsable, vous avez la possibilité de vérifier où en est le questionnaire du côté du répondant en utilisant le lien d'accès du répondant disponible ici :&#x20;
+
+<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-24 164321.png" alt=""><figcaption></figcaption></figure>

@@ -90,30 +90,4 @@ Dans la plupart des cas, il s’agit d’un incident temporaire et nous vous rec
 \
 Si le problème se reproduit, n'hésitez pas à remonter un rapport de bug depuis le porte-voix dans Dastra afin que nos équipes puissent étudier le problème.<br>
 
-## Message d'erreur : "Le champ Label est requis."
-
-Ce message apparait généralement quand un élément a été laissé vide lors de la réponse à un questionnaire.<br>
-
-## Message d'erreur : "Attention, du contenu HTML interdit est présent dans un champ !"
-
-<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 163623.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
-
-\
-Ce message signifie que du code HTML (généralement contenu entre les balises <>) est présent dans un champ ou le HTML est interdit (pour raison de sécurité).<br>
-
-\
-Le message suivant permet d'identifier facilement le champ concerné :
-
-<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-03-04 164132.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ </p></figcaption></figure>
-
-
-
-## Message d'erreur : "L'identifiant de l'utilisateur n'existe pas dans votre organisation." à l'enregistrement d'un traitement
-
-<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-05-15 102250.png" alt=""><figcaption><p>L'identifiant de l'utilisateur n'existe pas dans votre organisation.</p></figcaption></figure>
-
-Ce message signifie qu'un utilisateur ayant été supprimé de votre espace de travail est toujours défini comme approbateur dans les parties prenantes du traitement :
-
-<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2025-05-15 102626.png" alt=""><figcaption><p>Utilisateur supprimé définit en tant que partie prenante du traitement</p></figcaption></figure>
-
-Il faut retirer l'utilisateur supprimé des parties prenantes du traitement pour résoudre le problème.
+##
