@@ -212,6 +212,7 @@
   * [Importer vos systèmes d'IA](features/systemes-dia/importer-vos-systemes-dia.md)
   * [Etablir un registre des Systèmes d'IA](features/systemes-dia/etablir-un-registre-des-systemes-dia.md)
   * [Analyse de risque et valeur ajoutée](features/systemes-dia/analyse-de-risque-et-valeur-ajoutee.md)
+  * [Analyse d’impact sur les droits fondamentaux (FRIA)](features/systemes-dia/analyse-dimpact-sur-les-droits-fondamentaux-fria.md)
   * [Notice de transparence](features/systemes-dia/notice-de-transparence.md)
   * [Le référentiel des modèles d'IA](features/systemes-dia/le-referentiel-des-modeles-dia.md)
 * [Configuration avancée](features/settings/README.md)
