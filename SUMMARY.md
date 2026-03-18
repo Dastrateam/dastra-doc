@@ -261,14 +261,12 @@
 * [Sécurité chez Dastra](security/general.md)
 * [Authentification forte](security/mfa.md)
 * [Qualité de nos services](security/qualite-de-nos-services.md)
-
-***
-
-* [Certifications](certifications.md)
+* [Certifications](security/certifications.md)
 
 ## 🤖 DIVERS
 
 * [Foire aux questions](divers/faq-registre.md)
+* [Accessibilité](divers/accessibilite.md)
 * [Guide AIPD - par pays](divers/guide-aipd-par-pays.md)
 * [Problèmes connus](divers/problemes-connus.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
