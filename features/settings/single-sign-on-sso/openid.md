@@ -30,7 +30,7 @@ Voici les informations dont vous avez besoin pour configurer le service provider
 
 * **Authority/domain (ex: https://account.oauth.sso.com)**
 * **Id du client : ClientId**&#x20;
-* **Secret key**
+* **Secret key (facultatif)**
 * **Response Type, par défaut id\_token**
 * **Scope : par défaut "openid profile email"**
 
@@ -44,9 +44,14 @@ Dans dastra.eu, rendez-vous su[r la page d'administration du SSO](https://app.da
 
 ![](<../../../.gitbook/assets/image (116).png>)
 
-Renseignez les champs du formulaire à l'aide des infos de la configuration de l'entité :
+Renseignez les champs du formulaire à l'aide des infos de la configuration de l'entité&#x20;
 
-![](<../../../.gitbook/assets/image (123).png>)
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+À partir du **30/03/2026,** Dastra autorisera l'authentification via le système JWT à clé privée. Vous n'aurez donc plus besoin de spécifier une clé secrète dans votre configuration SSO. Dastra récupérera automatiquement les clés publiques pour générer les JWT à clé privée. \
+Pour cela, sélectionnez la deuxième option "JWT private key" dans le formulaire.
+{% endhint %}
 
 {% hint style="danger" %}
 Il est possible de forcer tous les utilisateurs du compte d'abonnement à utiliser un SSO particulier (en cochant la case "forcer les utilisateurs à utiliser ce SSO"). Il faut faire attention avant d'activer cette option. Car si le SSO dysfonctionne, vous ne pourrez plus accéder à votre compte en tant qu'administrateur. Il est préférable de gérer le SSO par utilisateur.
