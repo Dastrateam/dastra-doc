@@ -100,3 +100,92 @@ Vous devriez voir les comptes utilisateurs de votre AD se synchroniser automatiq
 
 
 
+### Comportements et limitations de la synchronisation SCIM
+
+#### Gestion du cycle de vie des utilisateurs
+
+**Désactivation dans Entra ID**
+
+Lorsqu’un utilisateur est désactivé dans Entra ID :
+
+* Son profil est **anonymisé dans Dastra**
+* S’il est réactivé par la suite :
+  * **Un nouveau compte utilisateur est créé**
+  * L’ancien compte anonymisé n’est pas restauré
+
+***
+
+**Suppression complète dans Entra ID**
+
+Lorsqu’un utilisateur est supprimé définitivement dans Entra ID :
+
+* Son profil est **entièrement anonymisé dans Dastra**
+* Toutes les actions réalisées sont **conservées**
+* L’utilisateur apparaît comme **"deleted user"**
+
+**Impact sur les données associées :**
+
+* Les objets liés (ex : traitements, risques, demandes, etc.) **ne sont pas supprimés**
+* Les relations (ex : propriétaire, assignation) **sont conservées**
+* Seule l’identité de l’utilisateur est anonymisée
+
+***
+
+#### Gestion des groupes (teams)
+
+**Suppression d’un groupe dans Entra ID**
+
+Si un groupe est supprimé dans Entra ID :
+
+* L'équipe **correspondante est supprimée dans Dastra**
+* Les **utilisateurs ne sont pas supprimés**
+* Aucun impact sur leurs comptes individuels
+
+***
+
+#### Mapping et périmètre de synchronisation
+
+**Groupes et workspaces**
+
+* SCIM permet de synchroniser **plusieurs groupes**
+* Limitation actuelle :
+  * Synchronisation possible vers **un seul workspace par organisation**
+  * Le multi-workspace n’est **pas supporté**
+
+***
+
+**Attributs synchronisés**
+
+Actuellement, Dastra synchronise :
+
+* Le **nom des groupes (`displayName`)**
+
+Non supporté à ce jour :
+
+* Mapping vers des **unités organisationnelles**
+* Synchronisation d’attributs comme :
+  * organisation
+  * pays
+
+> Une évolution est possible via l’ajout d’un attribut spécifique contenant un identifiant exploitable côté Dastra.
+
+***
+
+#### Gestion locale après synchronisation
+
+Après synchronisation SCIM :
+
+* Les administrateurs peuvent toujours :
+  * **modifier les rôles**
+  * **ajuster les permissions**
+* La gestion fine des accès reste **possible localement dans Dastra**
+
+***
+
+#### Impact sur la licence
+
+* La synchronisation SCIM est limitée par :
+  * le **nombre d’utilisateurs inclus dans votre abonnement**
+* Si le quota est dépassé :
+  * Le serveur SCIM retourne une **erreur**
+  * Les utilisateurs supplémentaires ne sont **pas provisionnés**
