@@ -48,6 +48,16 @@ Les notifications e-mail sont idéales pour être alerté des actions nécessita
 
 ***
 
+**🔐 Prérequis : la permission "Notification" dans le rôle**
+
+La personnalisation des notifications par e-mail ne fonctionne que si le rôle de l'utilisateur l'y autorise.
+
+Dans la configuration d'un rôle (**Paramètres → Rôles**), chaque module dispose d'une case **Notification**. Si cette case n'est pas cochée, les utilisateurs ayant ce rôle ne recevront aucune notification e-mail sur ce module — quelles que soient leurs préférences personnelles.
+
+{% hint style="info" %}
+Le rôle ouvre ou ferme le droit à la notification. L'utilisateur peut ensuite affiner ses préférences — mais uniquement dans la limite de ce que son rôle autorise.
+{% endhint %}
+
 ### 📚 Catégories de notifications
 
 Les notifications par e-mail sont organisées par **catégories**.\
