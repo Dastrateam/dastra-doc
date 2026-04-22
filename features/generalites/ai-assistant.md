@@ -41,7 +41,7 @@ Vous pouvez configurer la famille de modèles utilisée dans les **Paramètres d
 
 Dastra vous permet de connecter votre propre fournisseur d'IA via une clé API, à condition que celui-ci soit compatible avec le standard OpenAI API. Les fournisseurs supportés incluent notamment OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ainsi que tout LLM auto-hébergé compatible.
 
-Pour configurer un fournisseur personnalisé, rendez-vous dans **Paramètres > Assistant IA > Custom AI provider**, puis renseignez vos identifiants et associez-les aux trois niveaux de modèle (Fast, Smart, Large context).
+Pour configurer un fournisseur personnalisé, rendez-vous dans **Paramètres > Assistant IA >** [**Custom AI provider**](https://app.dastra.eu/general-settings/ai), puis renseignez vos identifiants et associez-les aux trois niveaux de modèle (Fast, Smart, Large context).
 
 {% hint style="warning" %}
 Lorsque vous utilisez un Custom AI provider, les données transmises au modèle sont soumises à la politique de confidentialité de **votre fournisseur**, et non aux garanties Azure décrites dans cette page. Vérifiez les conditions de votre fournisseur avant d'activer cette option, notamment si vos prompts peuvent contenir des données à caractère personnel.
