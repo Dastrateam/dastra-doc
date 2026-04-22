@@ -6,147 +6,189 @@ description: >-
 
 # Assistant IA
 
-## Quels cas d'usage avec Dastra ?&#x20;
+L'assistant IA de Dastra vous permet de générer et d'enrichir des éléments de votre workspace à partir de simples descriptions textuelles. Il s'appuie sur des modèles d'IA générative hébergés sur Azure, en France et dans l'Espace Économique Européen, sans qu'aucune donnée de votre organisation ne soit utilisée pour entraîner ces modèles.
 
-Avec Dastra, vous pouvez utiliser l'IA pour :&#x20;
+{% hint style="info" %}
+L'assistant IA est disponible sur tous les espaces de travail Dastra. Si vous souhaitez le désactiver pour votre organisation, [contactez notre support](https://app.dastra.eu/general-settings/support/list).
+{% endhint %}
 
-* générer des traitements
-* générer des rapports personnalisés
-* générer un jeu de données
-* générer une mesure de sécurité
-* générer une partie prenante
-* générer un système d'IA
-* générer un modèle de questionnaire
-* générer des documents
-* générer des descriptions
-* générer une analyse sur un traitement, une réponse à un questionnaire, un système d'IA, un contrat, un actif ou une violation
-* générer une analyse de risque sur un système d'IA
-* générer une notice d'information pour un traitement ou un système d'IA
-* générer une réponse à un questionnaire
-* proposer des tags
-* proposer des messages de réponses à une demande de droit
-* générer un post-mortem pour une violation
-* extraire les méta-données d'un document
+***
 
-### **Générer des traitements de données**
+### Comment ça marche ?
 
-Générez rapidement des traitements de données au format attendu par Dastra à partir d'une description rapide de votre traitement.&#x20;
+#### Modèles et hébergement
 
-A partir de l'usage décrit des données, Dastra vous proposera un modèle de traitement incluant un nom, un ou des jeux de données incluant des champs, une durée de conservation, des mesures de sécurité, des destinataires et une description du traitement. \
-En un rien de temps, vous pourrez créer votre traitement.&#x20;
+Dastra utilise des modèles d'IA générative pré-entraînés, fournis par quatre familles au choix :
 
-Vous avez une modification à apporter sur ce qui est proposé ? Editez le traitement une fois créé directement.
+| Famille                              | Modèles configurés                                                                   | Hébergement               |
+| ------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------- |
+| **OpenAI** _(recommandé par défaut)_ | Fast: gpt-4o-nano · Smart: gpt-5-mini · Large context: gpt-4.1-mini                  | Azure, France / EEE       |
+| **Mistral**                          | Fast: mistral-small-2503 · Smart: Mistral-Large-3 · Large context: Mistral-Large-3   | Azure, France / EEE       |
+| **Open source**                      | Fast: Ministral-3B · Smart: DeepSeek-V3.2 · Large context: Llama-4-Maverick-17B-128K | Azure, France / EEE       |
+| **Custom AI provider**               | Votre propre fournisseur via clé API _(voir ci-dessous)_                             | Selon votre configuration |
 
-### **Générer des actifs**
+Pour les trois premières familles, les modèles sont hébergés sur l'infrastructure Azure de Microsoft, en France. Ils ne sont pas opérés directement par OpenAI ou Mistral : Dastra utilise les services managés Azure, ce qui signifie que **vos données ne transitent pas vers les infrastructures propres d'OpenAI ou de Mistral**.
 
-Générez rapidement des actifs (de type logiciel par exemple) au format attendu par Dastra. L'IA vous proposera un nom, des liens vers la politique de confidentialité de l'acteur, créera un acteur en tant qu'éditeur.&#x20;
+Pour chaque famille, trois niveaux de modèle sont utilisés selon la complexité de la tâche :
 
-Gagnez en rapidité et laissez l'IA préremplir ces informations pour vous.&#x20;
+* **Fast** — actions simples : génération de descriptions, proposition de tags
+* **Smart** — actions nécessitant plus de raisonnement : génération d'éléments structurés dans Dastra
+* **Contexte étendu** — actions traitant un volume important de données : réponse à un questionnaire, analyse de traitement
 
-{% embed url="https://www.youtube-nocookie.com/embed/6yBxTC2CrMY?si=3IFPJu3f9Ac3qDpK" %}
+Vous pouvez configurer la famille de modèles utilisée dans les **Paramètres de votre compte >** [**Assistant IA**](https://app.dastra.eu/general-settings/ai).
 
-### **Générer des jeux de données**
+#### Custom AI provider
 
-Générez rapidement des jeux de données au format attendu par Dastra à partir d'une description simple.&#x20;
+Dastra vous permet de connecter votre propre fournisseur d'IA via une clé API, à condition que celui-ci soit compatible avec le standard OpenAI API. Les fournisseurs supportés incluent notamment OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ainsi que tout LLM auto-hébergé compatible.
 
-Pour générer un jeu de données avec IA :&#x20;
+Pour configurer un fournisseur personnalisé, rendez-vous dans **Paramètres > Assistant IA > Custom AI provider**, puis renseignez vos identifiants et associez-les aux trois niveaux de modèle (Fast, Smart, Large context).
+
+{% hint style="warning" %}
+Lorsque vous utilisez un Custom AI provider, les données transmises au modèle sont soumises à la politique de confidentialité de **votre fournisseur**, et non aux garanties Azure décrites dans cette page. Vérifiez les conditions de votre fournisseur avant d'activer cette option, notamment si vos prompts peuvent contenir des données à caractère personnel.
+{% endhint %}
+
+#### Ce que Dastra envoie au modèle
+
+Dastra transmet uniquement les informations nécessaires à la génération demandée : le texte saisi par l'utilisateur, et le cas échéant les champs structurés de l'objet concerné (traitement, système IA, demande de droit, etc.).&#x20;
+
+#### Ce que Dastra ne fait pas
+
+{% hint style="success" %}
+Les points suivants sont garantis contractuellement par Microsoft Azure pour tous les modèles des familles OpenAI, Mistral et Open source :
+
+* Vos prompts et résultats **ne sont pas disponibles** pour d'autres clients Azure
+* Vos données **ne sont pas transmises** à OpenAI, Mistral ou tout autre tiers
+* Vos données **ne sont pas utilisées** pour entraîner ou améliorer les modèles de base
+* Les modèles sont **sans état (stateless)** : aucun prompt n'est stocké dans le modèle entre deux requêtes
+{% endhint %}
+
+#### Surveillance des abus et revue humaine
+
+Microsoft Azure maintient un mécanisme automatisé de détection des contenus potentiellement abusifs. Dans les cas exceptionnels où un contenu est signalé, un échantillon de prompts peut être conservé temporairement dans un espace de stockage isolé par client, aux fins de revue. Pour les ressources déployées dans l'EEE (ce qui est le cas de Dastra), les réviseurs humains éventuels sont également situés dans l'EEE.
+
+Cette conservation reste exceptionnelle et ne concerne pas les usages normaux de la plateforme. Pour plus de détails, consultez la [documentation Microsoft sur la confidentialité des données Azure Direct Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).
+
+#### Logs d'invocation IA
+
+Dastra conserve un historique des appels à l'assistant IA sur les **90 derniers jours**, accessible depuis **Paramètres > Assistant IA > AI invocation logs**. Pour chaque appel, les informations suivantes sont enregistrées :
+
+| Champ           | Description                                       |
+| --------------- | ------------------------------------------------- |
+| **Date**        | Horodatage de l'appel                             |
+| **Statut**      | Succès ou échec de la génération                  |
+| **Opération**   | Type de prompt utilisé                            |
+| **Modèle**      | Nom du modèle sollicité                           |
+| **Durée**       | Temps de traitement de la requête                 |
+| **Utilisateur** | Membre du workspace ayant déclenché la génération |
+
+{% hint style="info" %}
+Ces logs constituent un outil de traçabilité et d'audit interne. Ils vous permettent d'identifier qui a utilisé l'assistant IA, quand et avec quel modèle — utile notamment dans le cadre d'un audit de conformité ou d'une revue des usages IA au sein de votre organisation.
+{% endhint %}
+
+***
+
+### Quelles données sont transmises au modèle IA ?
+
+{% hint style="info" %}
+Dastra ne transmet **aucune donnée de votre workspace** au modèle IA sans que vous en soyez à l'origine. Seules les informations listées ci-dessous, selon la fonctionnalité utilisée, sont incluses dans la requête envoyée au modèle.
+{% endhint %}
+
+| Fonctionnalité                                             | Données transmises au modèle                                                                                                                                         | Données personnelles potentielles                                       |
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Générer un traitement**                                  | Texte libre saisi par l'utilisateur                                                                                                                                  | Non — sauf si l'utilisateur mentionne des personnes dans sa description |
+| **Générer un actif**                                       | Texte libre + URL de la politique de confidentialité fournie                                                                                                         | Non                                                                     |
+| **Générer un acteur**                                      | Texte libre + URL ou pièce jointe fournie                                                                                                                            | Non                                                                     |
+| **Générer un jeu de données**                              | Texte libre saisi par l'utilisateur                                                                                                                                  | Non                                                                     |
+| **Générer une mesure de sécurité**                         | Texte libre saisi par l'utilisateur                                                                                                                                  | Non                                                                     |
+| **Générer une notice d'information**                       | Champs structurés du traitement (finalités, base légale, durées, destinataires, droits)                                                                              | Potentiellement — si les champs contiennent des références nominatives  |
+| **Générer une description**                                | Texte libre saisi par l'utilisateur                                                                                                                                  | Non                                                                     |
+| **Proposer des tags**                                      | Contenu textuel de l'objet (nom, description)                                                                                                                        | Non                                                                     |
+| **Générer un modèle de questionnaire**                     | Texte libre saisi par l'utilisateur                                                                                                                                  | Non                                                                     |
+| **Répondre à un questionnaire (PIA, analyse de risque…)**  | Champs structurés du traitement lié + instructions personnalisées éventuelles                                                                                        | Potentiellement — selon le contenu du traitement                        |
+| **Générer une réponse à une demande d'exercice de droits** | Nom et prénom du demandeur, message de la demande, langue, nom du workspace, finalités, nom de l'opérateur, date et délai restant, état et identifiant de la demande | **Oui** — nom, prénom et contenu de la demande                          |
+| **Générer un post-mortem de violation**                    | Champs structurés de la violation (description, données affectées, mesures prises)                                                                                   | Potentiellement — selon le contenu de la fiche violation                |
+| **Extraire les métadonnées d'un contrat**                  | Contenu textuel du document transmis (pièce jointe ou URL)                                                                                                           | Potentiellement — selon le contenu du contrat                           |
+| **Générer un document personnalisé**                       | Instructions saisies par l'utilisateur + contenu source éventuel                                                                                                     | Potentiellement — selon les instructions fournies                       |
+| **Générer un rapport personnalisé**                        | Instructions saisies par l'utilisateur                                                                                                                               | Non — sauf si l'utilisateur inclut des données dans ses instructions    |
+| **Analyse de risque (système IA)**                         | Champs structurés du système d'IA (description, finalités, données traitées, parties prenantes)                                                                      | Potentiellement — selon le contenu du système d'IA                      |
+| **Générer une description de système IA**                  | Texte libre + URL ou pièce jointe fournie                                                                                                                            | Non                                                                     |
+| **Générer une notice système IA**                          | Champs structurés du système d'IA concerné                                                                                                                           | Potentiellement                                                         |
+| **Suggestions de contrôles / exigences / tests**           | Contexte de l'objet concerné (nom, description, référentiel)                                                                                                         | Non                                                                     |
+
+{% hint style="warning" %}
+**Bonne pratique** : évitez d'inclure des données à caractère personnel directement dans les champs de texte libre (descriptions, instructions personnalisées). Utilisez des identifiants ou des termes génériques lorsque c'est possible.
+{% endhint %}
+
+#### Données qui ne sont jamais transmises
+
+Les éléments suivants ne font **jamais** partie des requêtes envoyées au modèle IA :
+
+* Les identifiants et mots de passe des utilisateurs Dastra
+* Les données des autres enregistrements de votre workspace (seul l'objet sur lequel vous travaillez est concerné)
+* Les métadonnées de session (nom de l'utilisateur connecté, adresse IP, etc.)
+* Les pièces jointes non explicitement fournies dans la fonctionnalité concernée
+
+#### Durée de conservation des requêtes
+
+Les modèles Azure utilisés par Dastra sont **sans état (stateless)** : les prompts et les résultats ne sont pas stockés dans le modèle et ne sont pas utilisés pour réentraîner ou améliorer les modèles de base.
+
+{% hint style="info" %}
+**Exception — détection des abus** : Microsoft Azure maintient un mécanisme automatisé de surveillance des contenus potentiellement abusifs. Si un prompt est signalé, un échantillon peut être conservé temporairement dans un espace de stockage isolé par client, aux fins de revue. Pour les ressources déployées dans l'Espace Économique Européen (ce qui est le cas de Dastra), les éventuels réviseurs humains sont également situés dans l'EEE. Cette conservation reste exceptionnelle et ne concerne pas les usages normaux de la plateforme.
+{% endhint %}
+
+Pour plus d'informations, consultez la [documentation Microsoft sur la confidentialité des données Azure Direct Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).
+
+***
+
+### Cas d'usage
+
+{% hint style="warning" %}
+**Avertissement sur la qualité du contenu généré** : les données générées par l'assistant sont uniquement des propositions. Il est nécessaire de les relire et de les mettre à jour avant tout usage. Dastra ne s'engage pas sur la qualité des informations proposées.
+{% endhint %}
+
+#### Générer des traitements de données
+
+Générez rapidement des traitements de données au format attendu par Dastra à partir d'une description rapide de votre traitement.
+
+À partir de l'usage décrit des données, Dastra vous proposera un modèle de traitement incluant un nom, un ou des jeux de données avec leurs champs, une durée de conservation, des mesures de sécurité, des destinataires et une description. Éditez le traitement une fois créé pour y apporter vos corrections.
+
+#### Générer des actifs
+
+Générez rapidement des actifs (logiciels, outils, etc.) au format attendu par Dastra. L'IA vous proposera un nom, des liens vers la politique de confidentialité de l'acteur et créera un acteur en tant qu'éditeur.
+
+#### Générer des jeux de données
 
 1. Allez sur [la page des jeux de données](https://app.dastra.eu/workspace/0/referentials/data-retention-rules)
 2. Cliquez sur **Créer un jeu de données > Créer avec assistant IA**
-3. Renseignez dans le champ texte une description courte de votre jeu de données
-4. Cliquez sur **Suivant,** patientez quelques instants le temps que votre jeu de données soit créé
-5. Sur l'écran de synthèse du jeu de données, appliquez les correctifs éventuels et cliquez sur **Créer**
+3. Renseignez une description courte de votre jeu de données
+4. Cliquez sur **Suivant** et patientez quelques instants
+5. Sur l'écran de synthèse, appliquez les correctifs éventuels et cliquez sur **Créer**
 
-Une fois le jeu de données généré ? Editez le traitement une fois créé directement.
-
-### **Générer des notices d'information sur le traitement**
+#### Générer des notices d'information sur le traitement
 
 1. Rendez-vous dans la page de modification d'un traitement de données
-2. Dans la section 11. documentation, cliquez sur "Générer une notice d'information"
-3. Choisissez le format que vous souhaitez, vous pouvez même personnaliser les instructions de génération en cliquant sur "Personnalisée". Cliquez ensuite sur le bouton "Générer"
-4. Copier le texte généré ou insérez le dans votre documentation de traitement
+2. Dans la section **11. Documentation**, cliquez sur **Générer une notice d'information**
+3. Choisissez le format souhaité, ou personnalisez les instructions en cliquant sur **Personnalisée**
+4. Cliquez sur **Générer**, puis copiez ou insérez le texte dans votre documentation
 
-<figure><img src="../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+#### Générer une réponse à un questionnaire (PIA, analyse de risque…)
 
-### Générer une réponse à un questionnaire (PIA, Analyse de risque, ...)
+1. Allez dans la rubrique **Questionnaires** et sélectionnez le modèle souhaité
+2. Cliquez sur **Planifier un questionnaire**
+3. Sélectionnez **Réponse assistée par IA**
+4. Renseignez le traitement source ou saisissez des instructions personnalisées
+5. Une fois la réponse générée, apportez vos corrections directement
 
-1. Aller dans la rubrique "Questionnaires", sélectionnez le modèle que vous souhaitez utiliser. Par exemple, le modèle du PIA de la CNIL
-2. Cliquez sur "Planifier un questionnaire"
-3. Sélectionnez "Réponse assistée par IA"
-4. Vous pouvez renseigner directement le traitement qui servira de source aux réponses du questionnaire ou saisissez des instructions personnalisées
-5. Une fois la réponse générée, il est possible d'y apporter des corrections.
+#### Générer des réponses aux demandes d'exercice de droits
 
-<figure><img src="../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
+Générez des réponses aux demandes d'exercice de droits dans plusieurs langues, avec des options de personnalisation (longueur, ton formel ou informel, etc.).
 
-### **Générer des réponses aux demandes d'exercice de droits**
-
-Vous pouvez facilement générer des réponses aux demandes d'exercice de droit dans plusieurs langues à partir de l'étape de communication de la demande. Différentes options de personnalisation sont possibles pour adapter le texte à votre convenance (raccourcir ou allonger le texte, adopter un ton plus ou moins formel, etc...)
-
-Pour générer une réponse :&#x20;
-
-1. Allez sur un [exercice de droit ](../gerer-les-exercices-des-droits/gestion-des-demandes-dexercices-de-droits.md)en cours de réponse
+1. Allez sur un exercice de droit en cours de traitement
 2. Remplissez les informations jusqu'à l'étape **Communication/Transmission**
-3. Cliquez sur **Générez avec IA** et patientez quelques instants que l'assistant génère une première réponse basée sur les informations suivantes&#x20;
-   1. nom et prénom du destinataire
-   2. message de la demande
-   3. langue à utiliser
-   4. nom de l'espace de travail
-   5. finalités
-   6. nom de l'opérateur de la demande
-   7. date de la demande et nombre de jours restants (en fonction de la complexité)
-   8. Etat et ID de la demande
-4. Vous pouvez alors éditer le texte proposer ou utiliser une des options de reformulation pour relancer la génération (attendez quelques instants pour voir le résultat)
-5. Cliquez enfin sur **valider ce message** et ajoutez les pièces jointes éventuelles avant de lancer l'envoi en cliquant sur **envoyer**
+3. Cliquez sur **Générer avec IA** — la réponse est générée à partir des champs suivants : nom et prénom du destinataire, message de la demande, langue, nom du workspace, finalités, nom de l'opérateur, date et délai restant, état et identifiant de la demande
+4. Éditez le texte proposé ou utilisez les options de reformulation
+5. Cliquez sur **Valider ce message**, ajoutez les pièces jointes éventuelles, puis cliquez sur **Envoyer**
 
-A noter qu'une limitation du nombre d'essais par minute est en place pour cette fonctionnalité
-
-## Comment utiliser l'IA générative de Dastra ?
-
-Vous pouvez utiliser l'assistant IA pour générer des traitements de données ou des actifs. Pour cela cliquez sur le bouton "Créer un traitement" et sur "générer avec IA". L'assistant IA vous fera une proposition de modèle de données que vous pourrez ensuite adapter à vos besoins.
-
-{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2F3LnwYaR0wxVm1itxA4XH%2Fia-gpt-dastra.mp4?alt=media&token=ba3d66f4-e290-4215-83ec-7a2f91641d39" %}
-
-{% hint style="warning" %}
-**Que faire si je ne souhaite pas avoir cette fonctionnalité sur mon compte ?**
-
-Si jamais vous ne souhaitez pas que cette option soit disponible dans votre espace de travail, vous pouvez [nous contacter ](../../getting-started/le-support/faire-une-demande-de-support.md)afin que nous désactivions la fonctionnalité au niveau de votre organisation.
+{% hint style="info" %}
+Une limitation du nombre d'appels par minute est en place pour cette fonctionnalité.
 {% endhint %}
-
-## Comment ça marche ?
-
-Dastra utilise par défaut les modèles d'**IA OpenAI GPT 4-1mini, GPT 5 mini  et GPT 5 nano**  (Modèles de [ChatGPT](https://chat.openai.com/)) fournis par [le service AI hébergé sur Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Les modèles utilisés sont pré-entrainés. **Nous ne transférons absolument aucune donnée de votre organisation** dans le but d'entraîner cette intelligence artificielle.
-
-Dastra utilise simplement la puissance de l'IA générative pour générer du contenu à partir de simple requête textuelle. Dastra a simplement fourni le modèle de document attendu (JSON) et un exemple de traitement de données (issu de notre bibliothèque) que nous souhaitons avoir et le modèle d'IA s'occupe du reste.
-
-Nous transférons uniquement le texte du prompt pour la génération d'objets dans Dastra. Pour la génération de message d'exercice de droits, le contexte du message est intégré à la demande de génération afin de proposer une réponse personnalisée à la demande ([voir le détail des champs transmis](ai-assistant.md#generer-des-reponses-aux-demandes-dexercice-de-droits))
-
-{% hint style="warning" %}
-**Avertissement sur la qualité du contenu suggéré !**&#x20;
-
-Les données générées par l'assistant **sont uniquement des propositions**. Il est nécessaires de bien relire et mettre à jour les informations générées automatiquement par l'assistant. Dastra ne s'engage pas sur la qualité des informations proposées.
-{% endhint %}
-
-Dastra **ne réalise aucun transfert de données** présentes dans votre espace de travail vers le service d'IA.
-
-Les requêtes textuelles et les résultats du service :
-
-* **ne sont PAS disponibles pour d'autres clients** et ne sont PAS à la disposition d'OpenAI ou de MistralAI.
-* **ne sont PAS utilisés pour améliorer les modèles de l'OpenAI ou de MistralAI**&#x20;
-* **ne sont PAS utilisées pour améliorer automatiquement les modèles Azure OpenAI** pour votre utilisation dans votre ressource (les modèles sont sans état, sauf si vous affinez explicitement les modèles avec vos données d'entraînement).&#x20;
-
-Si vous souhaitez avoir plus d'informations sur le fonctionnement de ce modèle, [rendez-vous sur cette page ](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
-
-### Configurer la famille de modèles d'IA utilisée
-
-Dastra vous propose le choix entre trois "familles" de modèle d'IA : OpenAI, MistralAI ou une séléction de modèles OpenSource. **Tous ces modèles sont hébérgés sur Azure, en France.**
-
-La configuration se retrouve dans les paramètres de votre compte, dans la section Assistant IA.\
-Vous trouverez le choix de la famille ainsi que le détail des modèles utilisés.
-
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Pour chaque famille, trois modèles différents sont utilisés en fonction des cas d'usages
-
-* Fast : des actions simples comme la génération d'une description ou la proposition de tags
-* Smart : les actions nécessitant une reflexion plus poussée comme la génération d'éléments dans Dastra
-* Contexte étendu : les actions qui vont traiter un nombre de données important comme la réponse à un questionnaire
