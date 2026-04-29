@@ -55,50 +55,38 @@ _Dans cet exemple, la langue italienne sera sélectionnée par défaut (si elle 
 <div id="customer-subject-popup" data-lang="it"></div>
 ```
 
+#### Comment envoyer automatiquement des valeurs de formulaire au widget ?
 
+Il est possible de préremplir les champs du formulaire depuis le contexte d'authentification de l'utilisateur. Les champs préremplis s'affichent en **lecture seule** (grisés) côté utilisateur.
 
-### Comment envoyer automatiquement des valeurs de formulaire au widget ?
+**Champs standards disponibles :**
 
-```html
-<script>
-  dastra.push(['set','dsr:refId','{your custom userId}'])
-</script>
+```javascript
+dastra.push(['set', 'dsr:refId',       '{identifiant_unique_utilisateur}']);
+dastra.push(['set', 'dsr:email',        '{email}']);
+dastra.push(['set', 'dsr:givenName',    '{prénom}']);
+dastra.push(['set', 'dsr:familyName',   '{nom}']);
+dastra.push(['set', 'dsr:address',      '{adresse}']);
+dastra.push(['set', 'dsr:zipCode',      '{code_postal}']);
+dastra.push(['set', 'dsr:city',         '{ville}']);
+dastra.push(['set', 'dsr:countryCode',  '{code_pays}']); // ex : "FR"
+dastra.push(['set', 'dsr:phoneNumber',  '{téléphone}']);
+dastra.push(['set', 'dsr:message',      '{message}']);
 ```
 
-Vous pouvez remplacer le nom de la colonne **refId** par le nom de propriété suivante :&#x20;
+**Champs personnalisés :**
 
-* refId : the unique identifier of the user
-* familyName&#x20;
-* givenName
-* email
-* city
-* zipCode
-* countryCode
-* address
-* phoneNumber
-* message
-* additionalData&#x73;**\***
+```javascript
+// Passer un objet complet
+var payload = {
+  customFieldSlug1: 'valeur1',
+  customFieldSlug2: 'valeur2'
+};
+dastra.push(['set', 'dsr:additionalDatas', payload]);
 
-\*Pour le cas spécifique des champs personnalisés, vous devez faire référence au nom additionalDatas :
-
-```html
-<script>
-  var payload = {
-    customFieldSlug1: 'test', 
-    customFieldSlug2: 'test'
-  };
-  
-  // You can use this synthax for setting global custom fields as an object
-  dastra.push(['set','dsr:additionalDatas', payload]);
-  
-   // Or directly for a single field, use the prefix @
-   dastra.push(['set','dsr:@customFieldSlug1', 'test']);
-</script>
+// Ou champ par champ (préfixe @)
+dastra.push(['set', 'dsr:@customFieldSlug1', 'valeur1']);
 ```
-
-Les champs additionnels seront automatiquement fusionnés.
-
-Dans cette configuration, les champs prérenseignés apparaitront en lecture seule sous une forme grisée.&#x20;
 
 
 
