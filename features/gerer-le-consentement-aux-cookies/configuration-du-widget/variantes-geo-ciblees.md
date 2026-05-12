@@ -54,6 +54,24 @@ Une fois la variante créée, vous pouvez la configurer de manière **entièreme
 * **Services exposés** : vous pouvez restreindre ou étendre la liste des traceurs présentés
 * **Déclencheurs** : conditions d'affichage spécifiques
 
+
+
+#### 5. Désactiver l'affichage de la bannière (optionnel)
+
+Une option permet de **ne pas afficher de bannière** pour les utilisateurs de la zone ciblée.
+
+Lorsqu'elle est activée, aucune fenêtre de consentement ne s'affiche pour les visiteurs concernés. Tous les cookies sont alors déclenchés avec leur **consentement par défaut**, tel que configuré au niveau de chaque service dans le widget.
+
+{% hint style="warning" %}
+**Réservé aux zones sans obligation de consentement préalable**
+
+Cette option est pertinente pour des pays où la réglementation locale n'impose pas de recueil actif du consentement avant le dépôt de cookies (ex. : certains pays hors EEE sans législation ePrivacy équivalente). Elle ne doit **jamais** être utilisée pour des utilisateurs situés dans l'UE/EEE, au Royaume-Uni ou dans toute autre juridiction imposant un opt-in.
+{% endhint %}
+
+{% hint style="info" %}
+Le "consentement par défaut" de chaque service est paramétrable dans la configuration du widget, dans la section **Services**. Vérifiez ces valeurs avant d'activer cette option.
+{% endhint %}
+
 ***
 
 ### Cas d'usage typiques
