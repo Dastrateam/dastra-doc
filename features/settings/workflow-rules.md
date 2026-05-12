@@ -27,7 +27,7 @@ Vous pouvez déclencher une règle de workflow sur deux évènements :&#x20;
 
 * **Lorsqu'une date précise de l'entité est atteinte**. par exemple : envoyer une notification 10 jours après la date de publication. Dans ce cas, la date choisie sera vérifiée tous les jours à l'heure choisie pour le contrôle. Si la date a été dépassée, les actions seront déclenchées suite au contrôle. Dans le cas où un délai devait être ajouté ou retiré à la date des options supplémentaires sont disponibles en cliquant le modificateur de date (par exemple : 10 jours après la création ou 10 jours avant la date de revue)
 
-<figure><img src="../../.gitbook/assets/timer_fr_01 (1).png" alt=""><figcaption><p>Création d'un déclencheur par date</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 
 Un seul déclencheur (ou trigger) peut être défini par règle de workflow.
 
