@@ -117,9 +117,22 @@ Cet exemple permet de voir l'utilisation d'un workflow par date permettant de ne
 
 <figure><img src="../../.gitbook/assets/workflow_anon01-fr.png" alt=""><figcaption><p><strong>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</strong></p></figcaption></figure>
 
+### Bibliothèque de modèles de règles
+
+Dastra propose une **bibliothèque de modèles de règles de workflow**. Vous pouvez enregistrer n'importe quelle règle existante comme modèle, la retrouver dans la bibliothèque et la réutiliser à volonté (traitements, actifs, systèmes d'IA, violations de données…).
+
+Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation, sans reconfigurer manuellement des workflows identiques sur chaque objet.
+
+Pour enregistrer un modèle, ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Le modèle sera alors disponible dans la bibliothèque, réutilisable sur tout type d'entité compatible.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## Tutoriel vidéo : les règles de workflow
 
 {% embed url="https://www.youtube-nocookie.com/embed/FqPmGdk2nTI" %}
-
-
-

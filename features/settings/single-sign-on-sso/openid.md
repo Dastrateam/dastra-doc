@@ -46,7 +46,7 @@ Dans dastra.eu, rendez-vous su[r la page d'administration du SSO](https://app.da
 
 Renseignez les champs du formulaire à l'aide des infos de la configuration de l'entité&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 À partir du **30/03/2026,** Dastra autorisera l'authentification via le système JWT à clé privée. Vous n'aurez donc plus besoin de spécifier une clé secrète dans votre configuration SSO. Dastra récupérera automatiquement les clés publiques pour générer les JWT à clé privée. \
