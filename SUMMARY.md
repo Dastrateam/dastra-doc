@@ -173,6 +173,7 @@
     * [Les finalités des cookies](features/gerer-le-consentement-aux-cookies/configuration-du-widget/les-finalites-des-cookies.md)
     * [Configurez un widget de consentement aux cookies](features/gerer-le-consentement-aux-cookies/configuration-du-widget/implementez-un-widget-de-consentement-aux-cookies.md)
     * [Collectez les preuves de consentement cookies](features/gerer-le-consentement-aux-cookies/configuration-du-widget/collectez-les-preuves-de-consentement-cookies.md)
+    * [Variantes géo-ciblées](features/gerer-le-consentement-aux-cookies/configuration-du-widget/variantes-geo-ciblees.md)
     * [Allez plus loin sur le consentement des cookies](features/gerer-le-consentement-aux-cookies/configuration-du-widget/allez-plus-loin-sur-le-consentement-des-cookies.md)
     * [En cas d'indisponibilité](features/gerer-le-consentement-aux-cookies/configuration-du-widget/en-cas-dindisponibilite.md)
   * [Intégration technique](features/gerer-le-consentement-aux-cookies/integration-technique/README.md)
@@ -274,3 +275,7 @@
 * [Problèmes connus](divers/problemes-connus.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
 * [Webinaires](https://www.dastra.eu/fr/guide/categories/webinar/26)
+
+***
+
+* [variantes geociblées](variantes-geociblees.md)
