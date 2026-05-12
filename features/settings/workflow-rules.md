@@ -37,7 +37,7 @@ A noter que vous pouvez choisir si le workflow peut s'exécuter plus d'une fois 
 
 Vous pouvez configurer une ou plusieurs conditions d'exécution par règle.
 
-Les conditions peuvent s'appliquer à l'ensemble des champs de l'objet (à l'exception des champs personnalisés de type "sélection multiple") et peuvent être assemblées au sein de groupes pour vous permettre de mettre en place l'ensemble des scénarios possibles (avec la possibilité de changer l'association "Et" ou "Ou").
+Les conditions peuvent s'appliquer à l'ensemble des champs de l'objet et peuvent être assemblées au sein de groupes pour vous permettre de mettre en place l'ensemble des scénarios possibles (avec la possibilité de changer l'association "Et" ou "Ou").
 
 <figure><img src="../../.gitbook/assets/action_fr_01 (2).png" alt=""><figcaption><p>Ici l'action sera lancée si l'étape est "validation de l'identité" ou "nouveau" ET que la date de validation de l'email est remplie</p></figcaption></figure>
 
