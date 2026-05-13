@@ -16,7 +16,7 @@
   * [Violations de données](rappels-utiles/rgpd-en-bref/violations-de-donnees.md)
 * [Gestion des risques](rappels-utiles/la-gestion-des-risques/README.md)
   * [Définition des risques](rappels-utiles/la-gestion-des-risques/definition-des-risques.md)
-  * [Evaluation d'un risque](rappels-utiles/la-gestion-des-risques/evaluation-dun-risque.md)
+  * [Évaluation d'un risque](rappels-utiles/la-gestion-des-risques/evaluation-dun-risque.md)
   * [Risques sous-traitants](rappels-utiles/la-gestion-des-risques/risques-sous-traitants.md)
 
 ## 👨‍💻 Bien commencer <a href="#getting-started" id="getting-started"></a>

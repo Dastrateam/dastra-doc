@@ -2,9 +2,9 @@
 description: Apprenez à évaluer le niveau d'un risque avec Dastra.
 ---
 
-# Evaluation d'un risque
+# Évaluation d'un risque
 
-## Evaluation d'un risque
+## Évaluation d'un risque
 
 Un risque peut être évalué avec la formule suivante :
 
@@ -12,7 +12,7 @@ $$
 Risque = Probabilité * Impact
 $$
 
-Où la **probabilité** est la fréquence d'occurence d'un évènement rédouté et/ou d'un élément dangereux,
+Où la **probabilité** est la fréquence d'occurrence d'un évènement redouté et/ou d'un élément dangereux,
 
 et l'**impact** est la gravité des effets et/ou la sévérité des conséquences de cet évènement redouté.
 
@@ -40,7 +40,7 @@ Selon leur niveau de probabilité et d'impact, les risques peuvent être classé
 
 * Les risques intolérables.
 * Les risques qui doivent être limités autant que possible.
-* Les risques acceptables soit parce que la probabilité et/ou la sévérité du risque est/sont négligeables en comparaisons d'autres risques.
+* Les risques acceptables soit parce que la probabilité et/ou la sévérité du risque est/sont négligeables en comparaison d'autres risques.
 
 Les risques intolérables sont représentés en **rouge** dans Dastra.
 
