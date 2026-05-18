@@ -12,7 +12,7 @@ La création ou la modification d'un modèle de questionnaire dans Dastra est un
 
 {% embed url="https://youtu.be/bESwC6iMcI8" %}
 
-Pour créer un modèle de questionnaire, cliquez sur le bouton "Créer un modèle" dans l'onglet "Questionnaires". Ensuite vous pouvez sélectionner un des 3 types de modèles de questionnaires existant dans Dastra : questionnaire automatisé, combiné ou personnalisé.
+Pour créer un modèle de questionnaire, cliquez sur le bouton "Créer un modèle" dans l'onglet "Questionnaires". Ensuite vous pouvez sélectionner un des types de modèles disponibles dans Dastra : questionnaire automatisé, personnalisé ou importé depuis un fichier.
 
 <figure><img src="../../../.gitbook/assets/image (16) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,7 +21,6 @@ Vous arrivez sur l'interface de sélection des types de modèles :
 ![Choix des types de modèles](<../../../.gitbook/assets/image (138).png>)
 
 * En cliquant sur l'onglet "**Questionnaire automatisé**", vous choisirez un modèle de questionnaire prédéfini existant en piochant dans la bibliothèque de Dastra.
-* En cliquant sur "**Questionnaire combiné**", vous rassemblez plusieurs questionnaires en un seul.
 * En cliquant sur "**Questionnaire personnalisé**", vous pouvez construire votre propre modèle de questionnaire.
 
 {% hint style="info" %}
@@ -30,7 +29,7 @@ Contrairement aux questionnaires automatisés, les questionnaires personnalisés
 
 ## Les modèles de questionnaires automatisés
 
-Dastra propose de nombreux modèles de questionnaires automatisés permettant de documenter la conformité et de piloter les processus. Ces modèles incluent notamment des AIPD, des PIA (CNIL, ICO, EDPB), des TIA, des LIA et des questionnaires sous-traitants.
+Dastra propose de nombreux modèles de questionnaires automatisés permettant de documenter la conformité et de piloter les processus. Ces modèles incluent notamment des AIPD/PIA, des TIA, des LIA, des questionnaires sous-traitants, et bien d'autres.
 
 ![Bouton de sélection de bibliothèque](<../../../.gitbook/assets/Capture web\_6-5-2022\_103438\_app.dastra.eu.jpeg>)
 
@@ -40,7 +39,7 @@ Une fois le modèle sélectionné, vous accédez à l'écran de planification o�
 * soit planifier un questionnaire en cliquant sur le bouton "Planifier un questionnaire"
 
 {% hint style="info" %}
-Pour les PIA, une option complémentaire est disponible : **importer votre PIA depuis l'outil de la CNIL** en cliquant sur "Importer votre PIA CNIL". Le PIA CNIL doit être exporté au format .json — une très grande partie des éléments sera reprise automatiquement dans Dastra.
+Certains types de questionnaires (AIPD, TIA, LIA) peuvent également être lancés directement depuis un traitement — par exemple depuis les onglets "Analyse d'impact", "Destinataires" ou "Finalités". Consultez les pages dédiées ci-dessous pour plus de détails.
 {% endhint %}
 
 ## Les modèles de questionnaires personnalisés
@@ -75,10 +74,6 @@ Ces types permettent une certaine personnalisation des modèles de questionnaire
 * **Analyse de la base légale (LIA)** : questionnaire de la base légale des intérêts légitimes pour s'assurer que les intérêts n'outrepassent pas les droits et libertés des personnes
 * **Questionnaire de formation** : questionnaire permettant de réaliser des quiz de formation. Ce type de questionnaire permet de sélectionner une bonne réponse parmi les réponses et d'afficher les bonnes réponses en fin de questionnaire.
 
-## Les modèles de questionnaires combinés
-
-Dans Dastra, vous pouvez combiner plusieurs modèles de questionnaires existants pour n'en former plus qu'un. Pour faire cela, sélectionnez l'option "Questionnaire combiné" et suivez les étapes.
-
 ## Charger un modèle de questionnaire que vous possédez
 
 Il est enfin possible d'importer un de vos modèles de questionnaires, au format json. Pour cela, à la création du questionnaire, sélectionnez l'option "Charger un modèle".
@@ -95,4 +90,16 @@ Il est enfin possible d'importer un de vos modèles de questionnaires, au format
 
 {% content-ref url="../rapport-daudit.md" %}
 [rapport-daudit.md](../rapport-daudit.md)
+{% endcontent-ref %}
+
+{% content-ref url="../pia-aipd.md" %}
+[pia-aipd.md](../pia-aipd.md)
+{% endcontent-ref %}
+
+{% content-ref url="../tia.md" %}
+[tia.md](../tia.md)
+{% endcontent-ref %}
+
+{% content-ref url="../lia.md" %}
+[lia.md](../lia.md)
 {% endcontent-ref %}
