@@ -11,9 +11,9 @@ Par exemple :&#x20;
 
 Dans Dastra, le modèle par défaut de PIA est rattaché à un seul traitement. **Il est possible de modifier le modèle que le PIA ne soit pas attaché à un traitement**. Dans ce cas, vous pouvez réaliser le PIA, l'exporter et le placer dans la documentation des traitements concernés. &#x20;
 
-## Peut-on mettre en place un modèle de mail automatiquement à la création d'un audit ?
+## Peut-on mettre en place un modèle de mail automatiquement à la création d'un questionnaire ?
 
-Vous pouvez créer un modèle de mail qui pourra être utilisé dans les invitations aux audits. Il n'est pas possible de réaliser des actions automatisées via les workflow par exemple. En effet, les audits ne peuvent pas être utilisés comme éléments déclencheurs.&#x20;
+Vous pouvez créer un modèle de mail qui pourra être utilisé dans les invitations aux questionnaires. Il n'est pas possible de réaliser des actions automatisées via les workflow par exemple. En effet, les questionnaires ne peuvent pas être utilisés comme éléments déclencheurs.&#x20;
 
 ## En tant que répondant externe, est-ce que je peux mettre des images dans les réponses ?&#x20;
 
