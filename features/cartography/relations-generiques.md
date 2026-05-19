@@ -1,35 +1,65 @@
+---
+description: Apprenez à créer des relations génériques entre les éléments dans Dastra.
+---
+
 # Relations génériques
 
-Des relations génériques peuvent être ajoutées entre les éléments suivants dans Dastra :&#x20;
+## Qu'est-ce qu'une relation générique ?
 
-* Acteurs
-* Mesures de sécurité
-* Violations de données
-* Actifs
-* Jeux de données
-* Risques
+Une **relation générique** est un lien simple et étiqueté entre deux éléments dans Dastra. Elle permet de documenter des connexions entre objets qui ne sont pas automatiquement inférées par la plateforme — par exemple, lier un actif à un acteur, ou un risque à une violation de données.
 
+Une relation se caractérise par :
 
+* un **objet source** et un **objet cible**,
+* un **libellé de relation** (optionnel, ex. "Responsable", "Géré par"),
+* un **résumé** (optionnel, pour apporter du contexte),
+* une **direction** — qui peut être inversée si nécessaire.
 
-Une relation générique est une relation simple entre deux éléments. Elle se caractérise par un label, une description et une direction de relation entre les deux éléments.
+{% hint style="info" %}
+Un élément peut être lié à plusieurs autres éléments de types différents.
+{% endhint %}
 
-**A noter :** un élément peut être lié à plusieurs autres éléments.&#x20;
+## Où les relations génériques sont-elles disponibles ?
 
-Pour ajouter une relation générique,  il faut cliquer sur l'icône ![](<../../.gitbook/assets/image (1) (1) (1) (4).png>)correspondant aux éléments liés.
+Des relations génériques peuvent être créées depuis les éléments suivants :
 
-Ensuite, ajouter une relation et choisir le type d'objet à lier :&#x20;
+* **Actifs**
+* **Acteurs**
+* **Mesures de sécurité**
+* **Violations de données**
+* **Jeux de données**
+* **Risques**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+Elles sont principalement utilisées dans le module **Actifs** et les **référentiels** (cartographie), où le graphe de relations est visualisé.
 
-La relation peut être réalisée avec un objet déjà existant ou alors un objet qui sera créé.&#x20;
+## Comment ajouter une relation générique
+
+1. Ouvrez un élément (ex. un actif).
+2. Cliquez sur l'icône **"Éléments liés"** dans la barre d'outils — elle affiche le nombre de liens existants.
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (4).png" alt=""><figcaption></figcaption></figure>
+
+3. Cliquez sur **"Ajouter une relation"** et sélectionnez le type d'objet à lier (Acteur, Mesure de sécurité, Violation de données, Actif, Jeu de données ou Risque).
+4. Dans la fenêtre de dialogue :
+   * Activez **"Relation inverse"** si la direction doit être inversée.
+   * Choisissez **"Élément existant"** pour lier à un élément déjà dans Dastra, ou **"Créer un élément"** pour en créer un à la volée.
+   * Sélectionnez l'objet cible dans le menu déroulant.
+   * Ajoutez optionnellement un **Libellé de relation** et un **Résumé**.
+5. Cliquez sur **"Ajouter"** pour enregistrer la relation.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
-Complétez les informations et cliquez sur Ajouter.
+## Visualiser les relations
 
-Une fois la relation créée, vous pourrez la retrouver dans le graphique de nœuds de la cartographie.&#x20;
+Une fois les relations créées, elles apparaissent dans :
 
-<figure><img src="../../.gitbook/assets/image (4) (7).png" alt=""><figcaption><p>Exemple de visulation graphique de la relation générique</p></figcaption></figure>
+* Le panneau **"Éléments liés"** de chaque élément, affichant tous les liens directs.
+* Le **graphe de nœuds** dans la vue cartographie, où toutes les relations sont représentées sous forme de réseau connecté.
 
+<figure><img src="../../.gitbook/assets/image (4) (7).png" alt=""><figcaption><p>Exemple de visualisation graphique d'une relation générique dans la cartographie</p></figcaption></figure>
 
+## Pour aller plus loin
 
+{% content-ref url="../cartography/README.md" %}
+[cartography](../cartography/README.md)
+{% endcontent-ref %}
