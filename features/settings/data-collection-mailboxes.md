@@ -66,3 +66,33 @@ Tous les objets générés depuis une boite de collecte sont taggés email entra
 En cas de création réussie d'un objet suite à la réception d'un e-mail sur la boite de collecte, une notification par e-mail est automatiquement envoyée à l'adresse qui a déclenché l'intégration. Cette notification confirme que l'objet a été créé avec succès dans Dastra, fournissant ainsi une assurance immédiate que la demande ou l'action a bien été prise en compte.
 
 La langue de l'email de confirmation correspond à la langue par défaut de l'espace de travail dans lequel l'intégration est installée (paramètres de votre espace de travail > langue par défaut).
+
+***
+
+### Rediriger automatiquement vos emails existants vers Dastra
+
+Si vous disposez déjà d'une adresse email dédiée aux demandes d'exercice de droits (par exemple `privacy@votreentreprise.com`), vous n'avez pas besoin de la remplacer. Vous pouvez configurer une **règle de redirection** dans votre serveur de messagerie pour transférer automatiquement les emails entrants vers la boite de collecte Dastra.
+
+Les emails arriveront ainsi directement dans Dastra sans intervention manuelle, tout en conservant votre adresse habituelle pour vos contacts.
+
+#### Avec Microsoft Exchange / Office 365
+
+Rendez-vous dans le **Centre d'administration Exchange** > **Flux de messagerie** > **Règles**, puis cliquez sur **"+ Ajouter une règle"**.
+
+Configurez la règle comme suit :
+
+1. **Conditions** : "L'expéditeur est situé" > "En dehors de l'organisation" — et optionnellement filtrez par mots-clés dans l'objet pour ne rediriger que les demandes pertinentes (ex. : l'objet contient "demande" ou "droits").
+2. **Action** : "Rediriger le message vers" > saisissez l'adresse de collecte Dastra générée à l'étape précédente.
+3. **Mode** : Appliquer (Enforce).
+
+{% hint style="info" %}
+Vous pouvez ajouter des filtres sur l'objet de l'email pour ne rediriger que certains types de demandes (effacement, accès, portabilité…) vers la boite Dastra correspondante, et conserver les autres dans votre boite habituelle.
+{% endhint %}
+
+{% hint style="warning" %}
+Vérifiez que votre règle ne crée pas de boucle de redirection si votre adresse Dastra redirige elle-même des emails. Configurez la condition "Reçu de l'extérieur de l'organisation" pour éviter les boucles.
+{% endhint %}
+
+#### Avec Google Workspace (Gmail)
+
+Dans la **Console d'administration Google** > **Applications** > **Google Workspace** > **Gmail** > **Routage**, ajoutez une règle de routage entrant avec l'action "Modifier les destinataires" et saisissez l'adresse de collecte Dastra.
