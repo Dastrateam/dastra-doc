@@ -34,8 +34,9 @@ dans manager.consent, vous disposez des méthodes suivantes :
 * open() : ouvre le widget de consentement
 * close() : ferme le widget de consentement
 * getAllConsents() : récupère tous les consentements
-* getPurposeConsent(purposeId:number) : récupère le consentement d'une catégorie de cookies
-* setPurposeConsent(purposeId:number, consent:bool): définit le consentement pour une catégorie
+* hasConsented() : retourne `true` si l'utilisateur a déjà enregistré un consentement explicite
+* getPurposeConsent(purposeLabel:string) : récupère le consentement d'une catégorie de cookies
+* setPurposeConsent(purposeLabel:string, consent:bool): définit le consentement pour une catégorie
 * getServiceConsent(serviceShortName:string): récupère le consentement d'un service particulier.
 * setServiceConsent(serviceShortName:string, consent:bool): définit le consentement d'un élément particulier
 
@@ -73,24 +74,27 @@ La méthode ci-dessus renvoie la liste de tous les consentements de l'utilisateu
 
 ### Interroger les consentements par catégorie (getPurposeConsent/setPurposeConsent)
 
-Les catégories de cookies sont représentés par les ids suivants :
+Les catégories de cookies sont identifiées par les labels suivants :
 
-| Type        | Id |
-| ----------- | -- |
-| Nécessaires | 0  |
-| Préférences | 1  |
-| Analytique  | 2  |
-| Marketing   | 3  |
-| Autre       | 4  |
+| Catégorie   | Label          |
+| ----------- | -------------- |
+| Nécessaires | `Necessary`    |
+| Préférences | `Preference`   |
+| Analytique  | `Analytical`   |
+| Marketing   | `Marketing`    |
+| Autre       | `Other`        |
+| Non classé  | `Unclassified` |
+
+{% hint style="warning" %}
+Utilisez bien les **labels en chaîne de caractères** (ex. `'Analytical'`) et non les valeurs numériques, qui ne sont pas supportées par l'API.
+{% endhint %}
 
 ```javascript
 <script>
 dastra = dastra || []
 dastra.push(['cookieReady',function(manager){
-    // Get the complete consent services list
-    let cookiePurpose = 2; // 2 = Analytic
-    let consents = manager.consent.getPurposeConsent(cookiePurpose);
-    manager.consent.setPurposeConsent(cookiePurpose, false);
+    let consents = manager.consent.getPurposeConsent('Analytical');
+    manager.consent.setPurposeConsent('Analytical', false);
 
     // persist consent in cookies
     manager.consent.save();
