@@ -64,12 +64,19 @@ if (isOptOut) {
     if (!manager.consent.hasConsented()) {
       manager.consent.setPurposeConsent('Analytical', false);
       manager.consent.setPurposeConsent('Marketing', false);
-      manager.consent.save();
+      manager.consent.dispatchEvent(); // applique les choix sans les persister
     }
   }]);
 }
 </script>
 ```
+
+{% hint style="info" %}
+**`dispatchEvent()` vs `save()` — quelle différence ?**
+
+- **`dispatchEvent()`** applique les choix pour la session en cours **sans rien écrire** dans le localStorage du navigateur. Le signal GPC ou DNT est re-détecté à chaque chargement de page. Si l'utilisateur désactive GPC dans son navigateur, le comportement normal reprend automatiquement. C'est l'approche recommandée pour honorer ces signaux.
+- **`save()`** enregistre le consentement de façon persistante dans le localStorage, comme si l'utilisateur avait fait un choix explicite via le widget. À utiliser uniquement lorsque vous souhaitez mémoriser un choix entre les sessions.
+{% endhint %}
 
 {% hint style="info" %}
 **À quoi sert `hasConsented()` ?**
