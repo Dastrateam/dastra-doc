@@ -117,13 +117,54 @@ Rendez-vous dans l'interface de gestion des services, en éditant un service, le
 <script> 
 dastra = dastra || []
 dastra.push(['cookieReady',function(manager){
-    // Get the complete consent services list
-    let cookiePurpose = 'google-analytics'; // 2 = Analytic
-    let consents = manager.consent.getServiceConsent(cookiePurpose);
-    manager.consent.setServiceConsent(cookiePurpose, false);
+    let cookieService = 'google-analytics';
+    let consents = manager.consent.getServiceConsent(cookieService);
+    manager.consent.setServiceConsent(cookieService, false);
     
-    // save consent in cookies
+    // sauvegarder le consentement
     manager.consent.save();
 });
+</script>
+```
+
+### Exemple complet
+
+L'exemple suivant montre comment appliquer un refus global par programmation — par exemple lorsque l'utilisateur clique sur un bouton "Tout refuser" personnalisé, ou pour honorer un signal de confidentialité navigateur.
+
+```javascript
+<script>
+dastra = dastra || [];
+dastra.push(['cookieReady', function(manager) {
+
+  // N'agir que si l'utilisateur n'a pas encore fait de choix explicite
+  if (!manager.consent.hasConsented()) {
+
+    // Refuser toutes les catégories non essentielles
+    manager.consent.setPurposeConsent('Preference',   false);
+    manager.consent.setPurposeConsent('Analytical',   false);
+    manager.consent.setPurposeConsent('Marketing',    false);
+    manager.consent.setPurposeConsent('Other',        false);
+    manager.consent.setPurposeConsent('Unclassified', false);
+
+    // Sauvegarder le choix dans le navigateur
+    manager.consent.save();
+  }
+
+}]);
+</script>
+```
+
+Il est également possible d'accepter sélectivement certaines catégories — par exemple accepter uniquement l'analytique :
+
+```javascript
+<script>
+dastra = dastra || [];
+dastra.push(['cookieReady', function(manager) {
+
+  manager.consent.setPurposeConsent('Analytical', true);
+  manager.consent.setPurposeConsent('Marketing',  false);
+  manager.consent.save();
+
+}]);
 </script>
 ```
