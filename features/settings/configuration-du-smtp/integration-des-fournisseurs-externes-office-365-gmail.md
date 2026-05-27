@@ -99,3 +99,45 @@ Le message ressemble à celui-ci :&#x20;
 ***
 
 👉 Une fois l’intégration activée, **Dastra n’utilisera plus `no-reply@dastra.eu`** : tous vos mails de notifications transiteront par votre fournisseur configuré.
+
+***
+
+### 🔧 Questions techniques pour les administrateurs IT
+
+Cette section répond aux questions fréquentes posées par les équipes IT et sécurité lors de la mise en place de l’intégration Office 365.
+
+#### Quel modèle d’authentification est utilisé ?
+
+L’intégration Office 365 utilise un consentement de type **application** (consentement administrateur global), et non un consentement délégué au nom d’un utilisateur. Aucune licence Exchange active par utilisateur n’est requise pour le fonctionnement de l’intégration.
+
+#### Quels sont les scopes Microsoft Graph demandés ?
+
+Dastra demande les permissions suivantes lors du consentement OAuth :
+
+| Permission           | Usage                                                              |
+| -------------------- | ------------------------------------------------------------------ |
+| `Mail.Send`          | Envoi d’emails depuis la boîte configurée                          |
+| `Mail.Send.Shared`   | Envoi depuis une boîte aux lettres partagée (BAL partagée)         |
+
+#### Les boîtes aux lettres partagées sont-elles supportées ?
+
+Oui. Pour utiliser une BAL partagée (ex. `privacy@votreentreprise.com`) :
+
+1. Connectez-vous avec votre **compte personnel** disposant des droits d’envoi sur la boîte partagée.
+2. Dans le champ **Email du sender**, saisissez l’adresse de la boîte partagée.
+
+Aucune modification de politique Exchange (ApplicationAccessPolicy) n’est requise pour ce mode de fonctionnement.
+
+{% hint style="info" %}
+Assurez-vous que votre compte personnel dispose bien du droit **"Envoyer en tant que"** ou **"Envoyer de la part de"** sur la boîte partagée dans Active Directory / Exchange.
+{% endhint %}
+
+#### Faut-il filtrer les IP sources de Dastra ?
+
+Dastra utilise **Microsoft Graph API** pour l’envoi des emails, et non un serveur SMTP classique. Les appels transitent par l’infrastructure Azure de Microsoft, dont les plages d’IP sont nombreuses (~100 plages) et susceptibles d’évoluer dans le temps.
+
+**La restriction par IP n’est pas recommandée** pour cette intégration : elle serait difficile à maintenir et pourrait provoquer des interruptions de service lors des mises à jour des plages Azure. La sécurité est assurée par le protocole OAuth 2.0 et le consentement administrateur.
+
+{% hint style="info" %}
+Si votre politique de sécurité exige une restriction par IP, vous pouvez consulter les plages IP publiées par Microsoft pour les services Azure : [https://www.microsoft.com/en-us/download/details.aspx?id=56519](https://www.microsoft.com/en-us/download/details.aspx?id=56519). Notez que cette liste est mise à jour régulièrement.
+{% endhint %}
