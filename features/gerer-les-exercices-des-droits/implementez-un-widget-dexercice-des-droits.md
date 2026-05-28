@@ -83,7 +83,7 @@ Vous pouvez choisir les champs qui apparaissent dans le formulaire.
 
 ***
 
-#### Logique conditionnelle (skip logic)
+### Logique conditionnelle (skip logic)
 
 Il est possible de définir des **règles d'affichage conditionnel** directement sur les champs du modèle de widget DSR : un champ apparaît uniquement si la réponse à une question précédente remplit une condition définie.
 
