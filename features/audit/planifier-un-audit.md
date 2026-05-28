@@ -35,6 +35,24 @@ Ensuite, lorsque vous planifierez votre questionnaire, une nouvelle case "Objet 
 Vous ne pouvez lier un questionnaire qu'à un seul objet dans Dastra.
 {% endhint %}
 
+## Fusionner les réponses avec l'objet attaché
+
+Après avoir complété un questionnaire lié à un objet Dastra (traitement, actif, acteur, etc.), il est possible de **fusionner les réponses collectées avec les données de cet objet**.
+
+Cette action met à jour directement les champs correspondants de l'objet à partir des informations saisies dans le formulaire, sans nouvelle saisie manuelle.
+
+Pour lancer la fusion  :
+
+1. Ouvrez la réponse complétée au questionnaire.
+2. Cliquez sur **"Fusionner les réponses avec l'objet"**.
+3. Confirmez les champs à mettre à jour dans l'objet cible.
+
+Cette fonctionnalité est particulièrement utile dans les scénarios de collecte externe via les Privacy hubs, où des tiers (fournisseurs, sous-traitants) renseignent des informations qui doivent ensuite être reflétées dans vos registres internes.
+
+<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+
 ## Comment générer un plan d'actions à partir d'un questionnaire ?
 
 {% embed url="https://youtu.be/hPeM4mHOzww" %}
