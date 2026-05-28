@@ -25,7 +25,23 @@ N'hésitez pas à bien détailler la partie description en y ajoutant les foncti
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-05-21 174951.png" alt=""><figcaption></figcaption></figure>
 
-Vous allez également devoir sélectionner son type d'apprentissage. Le type d'apprentissage d'un modèle d'IA se réfère à la méthode par laquelle le modèle est formé pour accomplir ses tâches. Chaque type est adapté à des applications spécifiques et influence la manière dont le modèle généralise les connaissances acquises. Il y en a 4 et vous aurez une définition à côté de chacun afin de vous aider à choisir.
+### Génération automatique avec l'assistant IA
+
+Depuis la liste des modèles d'IA, il est possible de **générer automatiquement une fiche de modèle d'IA** grâce à l'assistant IA. Cette fonctionnalité permet de créer en quelques secondes des fiches pour les modèles les plus courants, à partir d'un simple nom de modèle ou d'une description.
+
+Pour utiliser cette option  :
+
+1. Cliquez sur le bouton **"Générer avec l'IA"** dans la liste des modèles d'IA.
+2. Saisissez le nom ou une description du modèle cible.
+3. Vérifiez et complétez la fiche générée avant de l'enregistrer.
+
+Le contenu généré est une proposition — vérifiez et complétez les informations avant de valider.
+
+<figure><img src="../../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
 
 ## Liaison entre système et modèle
 
