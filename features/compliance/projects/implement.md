@@ -62,13 +62,9 @@ Les tests peuvent être :
 {% endcolumn %}
 
 {% column %}
-
-
-<figure><img src="../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ***
 

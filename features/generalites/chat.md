@@ -14,16 +14,14 @@ Vous pouvez discuter, à la manière d'un chat, au sujet de tous les éléments 
 ### Comment faire ?
 
 * **Accédez à une fiche traitement, actif ou autres**
-* **Cliquez sur ce bouton :**&#x20;
+* **Cliquez sur ce bouton :**
 
-<figure><img src="../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
-* **Saisissez votre message** en y incluant d'éventuelles pièces jointes&#x20;
+* **Saisissez votre message** en y incluant d'éventuelles pièces jointes
 * **Cliquez sur le bouton envoyer**
 
-
-
-Voici le schéma du fonctionnement du workflow des discussions internes : &#x20;
+Voici le schéma du fonctionnement du workflow des discussions internes :
 
 <figure><img src="../../.gitbook/assets/DiscussionsInternes.drawio.png" alt=""><figcaption></figcaption></figure>
 

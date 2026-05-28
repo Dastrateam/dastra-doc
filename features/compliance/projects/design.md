@@ -75,7 +75,7 @@ Lorsque plusieurs frameworks sont ajoutés au projet, Dastra détecte automatiqu
 * Sa mise en œuvre couvre simultanément l’ensemble des exigences associées.
 * Cela permet d’augmenter la couverture de conformité sans multiplier les actions.
 
-<figure><img src="../../../.gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -95,8 +95,6 @@ Cette flexibilité permet d’adapter le projet à la maturité de l’organisat
 
 ### 6. Initialisation des contrôles et des tests
 
-
-
 {% columns %}
 {% column %}
 Une fois les frameworks importés :
@@ -112,15 +110,9 @@ Une fois les frameworks importés :
 {% endcolumn %}
 
 {% column %}
-<p align="center"></p>
-
-<p align="center"></p>
-
-<p align="center"><img src="../../../.gitbook/assets/image (438).png" alt=""></p>
+<div align="center"><img src="../../../.gitbook/assets/image (438).png" alt=""></div>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ***
 

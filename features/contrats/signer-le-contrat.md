@@ -1,6 +1,6 @@
 # Signer le contrat
 
-Une fois que vous avez ajouté au moins un signataire  à votre contrat (voir [les-signataires.md](les-signataires.md "mention")), vous pouvez gérer la signature de votre contrat. Veuillez noter qu'il est **impératif de sauvegarder votre contrat afin de pouvoir signer**. Toute modification en attende de sauvegarde entrainera un verrouillage du bouton signer.
+Une fois que vous avez ajouté au moins un signataire à votre contrat (voir [les-signataires.md](les-signataires.md "mention")), vous pouvez gérer la signature de votre contrat. Veuillez noter qu'il est **impératif de sauvegarder votre contrat afin de pouvoir signer**. Toute modification en attende de sauvegarde entrainera un verrouillage du bouton signer.
 
 Vous pouvez déclarer des signatures manuellement, ou bien mettre en place notre [intégration avec Docusign](integration-avec-docusign.md) pour gérer tout le processus de signature électroniquement.
 
@@ -20,11 +20,11 @@ Vous pouvez signer simultanément plusieurs signataires en cliquant sur la flèc
 
 Vous pouvez signer un contrat directement depuis la vue tableau récapitulative
 
-<figure><img src="../../.gitbook/assets/image (359).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
 ### Le bouton signer de la zone d'actions principales
 
-Dans la zone d'actions principales de votre contrat (voir [structure-dun-contrat.md](structure-dun-contrat.md "mention")), vous retrouvez un bouton faisant référence aux signatures.&#x20;
+Dans la zone d'actions principales de votre contrat (voir [structure-dun-contrat.md](structure-dun-contrat.md "mention")), vous retrouvez un bouton faisant référence aux signatures.
 
 Selon le nombre de signataires renseignés, et le nombre de signatures reçues, ce bouton changera de statut
 
@@ -38,7 +38,7 @@ Déclarez des signataires afin de pouvoir interagir avec ce bouton
 
 En cliquant sur cet état, vous pourrez déclarer les signatures manquantes
 
-<figure><img src="../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
 
 #### 3) Contrat signé par tous les signataires
 

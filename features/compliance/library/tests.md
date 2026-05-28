@@ -69,8 +69,6 @@ Lorsqu’un test manuel est ajouté à un projet :
 
 {% columns %}
 {% column %}
-
-
 Lors de la création ou de l’édition d’un test, l’utilisateur définit :
 
 * **le nom et la référence du test** (avec générateur de référence)
@@ -82,15 +80,13 @@ Lors de la création ou de l’édition d’un test, l’utilisateur définit :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (496).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (493).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 Ces informations servent de guide opérationnel lors de l’exécution du test dans un projet.
 
 ***
-
-
 
 ### Tests automatisés avec les connecteurs Dastra
 
@@ -118,13 +114,9 @@ Les connecteurs peuvent notamment permettre de :
 📌 Exemple :\
 Un test automatisé peut vérifier que chaque système d’IA dispose d’une documentation conforme et à jour, sans intervention manuelle.
 
-
-
 ### Ajout d'un connecteur personnalisé
 
 En complément des connecteurs standards, Dastra permet de créer des **connecteurs personnalisés** afin d’automatiser la collecte de preuves dans les tests de conformité.
-
-
 
 <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

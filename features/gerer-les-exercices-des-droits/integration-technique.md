@@ -18,9 +18,9 @@ Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**u
 
 ### Mise en place du widget dans l'interface dédiée
 
-Pour commencer, vous devez **mettre en place le widget** dans[ le panel de gestion des widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) d'exercice de droits :&#x20;
+Pour commencer, vous devez **mettre en place le widget** dans[ le panel de gestion des widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) d'exercice de droits :
 
-![](<../../.gitbook/assets/image (250) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (247) (1) (1).png>)
 
 Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d'ouverture) :
 
@@ -88,11 +88,9 @@ dastra.push(['set', 'dsr:additionalDatas', payload]);
 dastra.push(['set', 'dsr:@customFieldSlug1', 'valeur1']);
 ```
 
-
-
 ### Envoi des paramètres en utilisant le mode page
 
-Il est également possible de passer ces paramètres en utilisant les paramètres querystring, il suffit de préfixer le nom du paramètre par dsr\_ :&#x20;
+Il est également possible de passer ces paramètres en utilisant les paramètres querystring, il suffit de préfixer le nom du paramètre par dsr\_ :
 
 ```url
 https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
@@ -107,7 +105,7 @@ https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
 
 Si votre widget est configuré avec un **type d'affichage "Popup"**, nous n'avons pas mis en place le comportement de fermeture de la modal en cas de clic en dehors de la fenêtre, car les risques de perte de données saisies par l'utilisateur sont trop importants.
 
-Cependant, si vous souhaitez que le widget se ferme lorsque l'utilisateur clique en dehors du widget, il est possible de le mettre en place à l'aide du code suivant :&#x20;
+Cependant, si vous souhaitez que le widget se ferme lorsque l'utilisateur clique en dehors du widget, il est possible de le mettre en place à l'aide du code suivant :
 
 ```javascript
 window.dastra.customerSubjectReady().then((form) => { 
@@ -121,9 +119,9 @@ Attention, cela aura pour effet de supprimer l'intégralité du texte saisi par 
 
 ### Intégrer plusieurs widgets dans une seule page
 
-Par défaut, Dastra ne permet pas l'intégration de plusieurs widgets au sein de la même page.&#x20;
+Par défaut, Dastra ne permet pas l'intégration de plusieurs widgets au sein de la même page.
 
-Cependant, il est possible de faire cette intégration avec la méthode suivante.&#x20;
+Cependant, il est possible de faire cette intégration avec la méthode suivante.
 
 ```html
 <html lang="en-GB">
@@ -162,7 +160,7 @@ Cependant, il est possible de faire cette intégration avec la méthode suivante
 </html>
 ```
 
-Pour intégrer les champs initiaux dans cette configuration, il faut utiliser le code suivant :&#x20;
+Pour intégrer les champs initiaux dans cette configuration, il faut utiliser le code suivant :
 
 ```html
 window.dastra.push(function () {

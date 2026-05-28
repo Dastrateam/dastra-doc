@@ -59,8 +59,6 @@ La bibliothèque des risques offre une vision globale des risques identifiés, a
 {% endcolumn %}
 
 {% column %}
-
-
 Lors de la création ou de l’édition d’un risque, l’utilisateur renseigne :
 
 * **le nom et la référence du risque**
@@ -106,8 +104,6 @@ Le **risque résiduel** correspond au niveau de risque **après application des 
 
 {% columns %}
 {% column %}
-
-
 Un risque doit être associé à un ou plusieurs **contrôles**, qui représentent les mesures mises en œuvre pour le maîtriser.
 
 L’association permet :
@@ -118,11 +114,9 @@ L’association permet :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (500).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (499).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ***
 

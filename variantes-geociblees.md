@@ -18,7 +18,7 @@ La bannière conforme en France n'est pas nécessairement conforme pour un utili
 
 {% stepper %}
 {% step %}
-### Accéder à la configuration
+#### Accéder à la configuration
 
 Depuis le module **Cookies**, sélectionnez votre widget, puis rendez-vous dans l'onglet **Variantes**.
 
@@ -26,13 +26,13 @@ Cliquez sur **"Créer une variante géo-ciblée"**.
 {% endstep %}
 
 {% step %}
-### Nommer la variante
+#### Nommer la variante
 
 Renseignez un **label** descriptif (80 caractères max). Choisissez un nom explicite pour faciliter la gestion, par exemple : `Bannière – Californie (CCPA)` ou `Bannière – Zone EEE`.
 {% endstep %}
 
 {% step %}
-### Sélectionner les zones géographiques ciblées
+#### Sélectionner les zones géographiques ciblées
 
 Choisissez les **pays ou régions** pour lesquels cette variante s'appliquera. La recherche est disponible dans la liste.
 
@@ -51,7 +51,7 @@ Si plusieurs variantes peuvent s'appliquer à un même utilisateur (ex. un utili
 {% endstep %}
 
 {% step %}
-### Personnaliser la variante
+#### Personnaliser la variante
 
 Une fois la variante créée, vous pouvez la configurer de manière **entièrement indépendante** du widget principal :
 

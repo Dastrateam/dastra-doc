@@ -16,9 +16,7 @@ Depuis cette page, vous pouvez :
 {% endcolumn %}
 
 {% column %}
-<p align="center"><img src="../../../../.gitbook/assets/image (426).png" alt="create framework options"></p>
-
-
+<div align="center"><img src="../../../../.gitbook/assets/image (426).png" alt="create framework options"></div>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -45,8 +43,6 @@ Ils peuvent ensuite être **personnalisés** selon votre contexte.
 
 {% columns %}
 {% column %}
-
-
 * Cliquez sur **Créer un framework**
 * Sélectionnez **À partir d’un modèle**
 * Accédez à la bibliothèque de modèles Dastra
@@ -65,13 +61,9 @@ Ils peuvent ensuite être **personnalisés** selon votre contexte.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
-<figure><img src="../../../../.gitbook/assets/image (446).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -87,13 +79,13 @@ Ils peuvent ensuite être **personnalisés** selon votre contexte.
 {% endcolumn %}
 
 {% column %}
-Vous pourrez ensuite vérifier les éléments avant la création.&#x20;
+Vous pourrez ensuite vérifier les éléments avant la création.
 
 L'ensemble des objets contenus dans votre framework seront créés dans votre bibliothèque.
 {% endcolumn %}
 {% endcolumns %}
 
-&#x20;Une fois importé, le framework :
+Une fois importé, le framework :
 
 * Est disponible dans la bibliothèque
 * Peut être enrichi ou adapté

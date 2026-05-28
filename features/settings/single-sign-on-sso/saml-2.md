@@ -4,13 +4,13 @@ description: Détails de la configuration de SAML 2
 
 # SAML 2
 
-La configuration du SSO avec SAML 2 se fait en trois étapes&#x20;
+La configuration du SSO avec SAML 2 se fait en trois étapes
 
 * Configuration du fournisseur d'authentification (**Identity Provider - IdP**) : Active Directory, Google Workspace...
 * Configuration du fournisseur de service (**Service Provider - SP**) : Dastra
 * Tests de l'authentification
 
-Dans le cas spécifique **des serveurs ADFS**, consultez notre documentation spécifique :&#x20;
+Dans le cas spécifique **des serveurs ADFS**, consultez notre documentation spécifique :
 
 {% content-ref url="adfs.md" %}
 [adfs.md](adfs.md)
@@ -26,9 +26,9 @@ Pour Azure AD : [https://docs.microsoft.com/fr-fr/powerapps/maker/portals/config
 
 Pour Google : [https://support.google.com/a/answer/6087519?hl=fr](https://support.google.com/a/answer/6087519?hl=fr)
 
-Pour faire le rapprochement entre les comptes locaux (ceux hébergés dans Dastra), vous avez besoin de fournir une propriété contenant l'email de l'utilisateur (par défaut, Dastra va chercher la propriété nommée  [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)).
+Pour faire le rapprochement entre les comptes locaux (ceux hébergés dans Dastra), vous avez besoin de fournir une propriété contenant l'email de l'utilisateur (par défaut, Dastra va chercher la propriété nommée [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)).
 
-Voici les informations dont vous avez besoin pour configurer le service provider :&#x20;
+Voici les informations dont vous avez besoin pour configurer le service provider :
 
 * **Identity Provider's Entity id** (issuer)
 * **Single sign on url**
@@ -62,4 +62,4 @@ Seuls les comptes qui sont internes à un abonnement seront soumis au SSO. Les c
 
 Une fois que la configuration est terminée, vous pouvez tester l'authentification en cliquant sur le bouton tester en bas à droite. Si vous rencontrez un problème lors de la configuration du SSO, n'hésitez pas à vous rapprocher du support en vous rendant sur la page de [gestion des tickets support](https://app.dastra.eu/general-settings/support).
 
-![](<../../../.gitbook/assets/image (121).png>)
+![](<../../../.gitbook/assets/image (120).png>)

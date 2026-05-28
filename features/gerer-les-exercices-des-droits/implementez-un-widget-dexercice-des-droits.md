@@ -83,6 +83,20 @@ Vous pouvez choisir les champs qui apparaissent dans le formulaire.
 
 ***
 
+#### Logique conditionnelle (skip logic)
+
+Il est possible de définir des **règles d'affichage conditionnel** directement sur les champs du modèle de widget DSR : un champ apparaît uniquement si la réponse à une question précédente remplit une condition définie.
+
+Ces règles sont interprétées dynamiquement côté répondant — le formulaire s'adapte en temps réel à mesure que les réponses sont saisies.
+
+Cela vous permet de :
+
+* Afficher ou masquer des champs selon le type de droit exercé, la nature de la demande ou toute réponse antérieure
+* Gérer plusieurs scénarios au sein d'un **widget unique**, sans créer et maintenir un formulaire distinct par variante
+* Réduire la charge de maintenance lors des évolutions de contenu ou des exigences de conformité
+
+***
+
 ### Installation du widget
 
 Le widget peut être intégré de différentes manières :

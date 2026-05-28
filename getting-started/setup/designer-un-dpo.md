@@ -2,7 +2,7 @@
 
 ## Désigner un DPO
 
-Le délégué à la protection des données (ou data protection officer) est le chef d'orchestre de la conformité au RGPD.&#x20;
+Le délégué à la protection des données (ou data protection officer) est le chef d'orchestre de la conformité au RGPD.
 
 L’article 37.1 du RGPD (règlement général sur la protection des données) **impose la désignation d’un DPO** dans 3 situations :
 
@@ -14,20 +14,18 @@ Pour en savoir plus sur la désignation du DPO, rendez-vous sur l'article "[Dans
 
 Consultez également notre [article sur les modalités de désignation d'un DPO ](https://www.dastra.eu/fr/guide/les-modalites-de-designation-dun-delegue-a-la-protection-des-donnees/42392)pour vous assurer de désigner la bonne personne.
 
-
-
 ## Ajouter un DPO dans Dastra
 
 Pour ajouter un DPO, il faut se rendre dans la gestion de l'entité.
 
-_**A noter** : un seul DPO est attaché à une entité._&#x20;
+_**A noter** : un seul DPO est attaché à une entité._
 
 Ensuite, ajouter le DPO dans le champ prévu.
 
 <figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123923.png" alt=""><figcaption><p>Fenêtre de modification d'une entité</p></figcaption></figure>
 
-Le DPO est ajouté en tant qu'acteur. Ainsi, si le DPO est une personne physique, ajoutez le en personne physique. S'il s'agit d'une société (un DPO externe par exemple), ajoutez le en tant que personne morale.&#x20;
+Le DPO est ajouté en tant qu'acteur. Ainsi, si le DPO est une personne physique, ajoutez le en personne physique. S'il s'agit d'une société (un DPO externe par exemple), ajoutez le en tant que personne morale.
 
-<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 N'oubliez pas d'enregistrer et le tour est joué !

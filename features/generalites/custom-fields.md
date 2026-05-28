@@ -28,7 +28,7 @@ Et voici le résultat dans le formulaire :
 Attention ! Toutes les fonctionnalités ne sont pas concernées par les champs personnalisés
 {% endhint %}
 
-Vous pouvez personnaliser les formulaires suivants :&#x20;
+Vous pouvez personnaliser les formulaires suivants :
 
 * [Fiches de traitement](../editer-le-registre/)
 * [Exercice de droits](../gerer-les-exercices-des-droits/)
@@ -45,7 +45,7 @@ Vous pouvez personnaliser les formulaires suivants :&#x20;
 * [Points de contrôles](../compliance/library/risks.md#association-des-controles)
 
 {% hint style="danger" %}
-### Limitations du nombre de champs
+#### Limitations du nombre de champs
 
 La quantité de champs personnalisés est limitée selon de plan que vous utilisez. Nous vous invitons à consulter l[a page des tarifs de l'application](https://www.dastra.eu/fr/pricing) pour plus d'informations à ce sujet
 {% endhint %}
@@ -75,7 +75,7 @@ Vous pouvez :
 * Les champs personnalisés peuvent s'afficher dans tous les tableaux de visualisation de l'application. Pour les afficher, cliquer sur le bouton de paramétrage des colonnes du tableau.
 * Les champs personnalisés sont **présents dans tous les exports Excel** de données. Pour plus d'informations sur les exports, [consultez la page sur les exports](../editer-le-registre/exporter-importer-le-registre.md)
 * Les champs personnalisés peuvent être présents dans les exports HTML, Word et PDF sur option (en cochant la case "Exportable dans les rapports" sur le champ en question)
-* **A l'exception des champs à réponses multiples**, les champs personnalisés sont tous filtrables via le système de [filtres avancés](advanced-filters.md).&#x20;
+* **A l'exception des champs à réponses multiples**, les champs personnalisés sont tous filtrables via le système de [filtres avancés](advanced-filters.md).
 * Les champs personnalisés peuvent être mis à jour en masse dans les tableaux de données
 * Les champs personnalisés peuvent être importés via fichiers plats [en utilisant le système d'import](importer-vos-donnees-excel-csv.md)
 * Les champs personnalisés sont **accessibles et modifiables via toutes les API**. Pour cela, il faudra utiliser le nom de variable attribué à chaque colonne. [Consultez la rubrique concernant les modifications via API des champs personnalisés](custom-fields.md#manipuler-les-champs-personnalises-dans-les-api).
@@ -138,7 +138,4 @@ Si un champ n'est pas valide (par exemple, si il n'est pas renseigné alors qu'i
 
 ## Limitations
 
-Vous ne pouvez **pas filtrer les champs personnalisés du type multiple (case à cocher (Multiple) et sélecteur (Multiple))**. C'est une limitation connue sur laquelle nous travaillons.&#x20;
-
-
-
+Vous ne pouvez **pas filtrer les champs personnalisés du type multiple (case à cocher (Multiple) et sélecteur (Multiple))**. C'est une limitation connue sur laquelle nous travaillons.
