@@ -4,11 +4,21 @@ description: Intégrez des processus complexe à l'aide des Règles de workflow 
 
 # Règles de workflows
 
+{% hint style="info" %}
+**Étapes de processus vs règles de workflow**
+
+Les [étapes de processus](etapes-de-processus.md) définissent les statuts que traversent les objets (ex. Nouveau → En cours → Fait). Les **règles de workflow** automatisent des actions lorsque ces étapes ou d'autres événements surviennent. Les deux fonctionnalités sont complémentaires.
+{% endhint %}
+
 ## Le principe de fonctionnement
 
 Les Règles de workflow dans Dastra sont un ensemble d'actions (notifications par e-mail, planification d'un audit, tâches et mises à jour de champs) qui sont exécutées lorsque certaines conditions sont réunies. Ces règles automatisent le processus d'envoi des notifications par e-mail, d'attribution des tâches et de mise à jour de certains champs d'un enregistrement lorsqu'une règle est déclenchée.
 
 ![Schéma du principe de base](<../../.gitbook/assets/image (258) (1).png>)
+
+{% hint style="info" %}
+Le nombre de règles de workflow disponibles dépend de votre plan, de **25 à 100 règles**. Une capacité supplémentaire peut être achetée si nécessaire. Contactez votre account manager pour plus de détails.
+{% endhint %}
 
 ## Comment créer une règle de workflow dans Dastra ?
 
@@ -25,7 +35,16 @@ Vous pouvez déclencher une règle de workflow sur deux évènements :&#x20;
 
 <figure><img src="../../.gitbook/assets/action_fr_01 (1).png" alt=""><figcaption><p>Création d'un déclencheur par action</p></figcaption></figure>
 
-* **Lorsqu'une date précise de l'entité est atteinte**. par exemple : envoyer une notification 10 jours après la date de publication. Dans ce cas, la date choisie sera vérifiée tous les jours à l'heure choisie pour le contrôle. Si la date a été dépassée, les actions seront déclenchées suite au contrôle. Dans le cas où un délai devait être ajouté ou retiré à la date des options supplémentaires sont disponibles en cliquant le modificateur de date (par exemple : 10 jours après la création ou 10 jours avant la date de revue)
+* **Contrôle de date récurrent** — la règle est évaluée chaque jour à une heure configurée et se déclenche en fonction d'un champ date de l'objet. Configurez les paramètres suivants :
+  * **Exécuter tous les jours à** — l'heure du contrôle quotidien (avec gestion du fuseau horaire, ex. 00:00 Europe/Paris).
+  * **Champ date à vérifier** — le champ date à évaluer (ex. date de clôture, date de création, date de révision…).
+  * **Condition sur la date** — choisissez parmi :
+    * **A été dépassée** — se déclenche le jour où la date est atteinte.
+    * **Modificateurs de date** — ajoutez un décalage par rapport à la date :
+      * **Surviendra dans** — se déclenche N heures / jours / mois / ans *avant* la date (ex. 30 jours avant l'expiration d'un contrat).
+      * **A été dépassée depuis** — se déclenche N heures / jours / mois / ans *après* la date (ex. 1 jour après la clôture).
+
+  Le bouton **"Voir les éléments comme si c'était aujourd'hui"** permet de prévisualiser les objets qui correspondraient actuellement à la règle, utile pour tester avant activation.
 
 <figure><img src="../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 
@@ -119,11 +138,18 @@ Cet exemple permet de voir l'utilisation d'un workflow par date permettant de ne
 
 ### Bibliothèque de modèles de règles
 
-Dastra propose une **bibliothèque de modèles de règles de workflow**. Vous pouvez enregistrer n'importe quelle règle existante comme modèle, la retrouver dans la bibliothèque et la réutiliser à volonté (traitements, actifs, systèmes d'IA, violations de données…).
+La bibliothèque de modèles de règles de workflow regroupe deux sources :
 
-Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation, sans reconfigurer manuellement des workflows identiques sur chaque objet.
+* **La bibliothèque par défaut de Dastra** — des règles prêtes à l'emploi couvrant les scénarios d'automatisation les plus courants : gestion des violations de données, expiration de contrats, révision des fournisseurs, cycle de vie des demandes d'exercice de droits… Maintenue et enrichie par Dastra.
+* **Les modèles personnalisés de votre organisation** — toute règle que votre équipe a enregistrée comme modèle. Ces modèles sont accessibles dans la même bibliothèque et réutilisables par tous les utilisateurs de l'espace de travail.
 
-Pour enregistrer un modèle, ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Le modèle sera alors disponible dans la bibliothèque, réutilisable sur tout type d'entité compatible.
+Les modèles peuvent être filtrés par type d'objet et par langue.
+
+**Enregistrer une règle comme modèle**
+
+Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable sur tout type d'entité compatible — sans reconfiguration manuelle.
+
+Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 

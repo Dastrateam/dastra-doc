@@ -4,6 +4,12 @@ description: Apprenez à personnaliser les étapes de workflows dans Dastra.
 
 # Etapes de processus
 
+{% hint style="info" %}
+**Étapes de processus vs règles de workflow**
+
+Les étapes de processus définissent les statuts que traversent les objets. Pour automatiser des actions lors des changements d'étape (envoyer une notification, créer une tâche…), consultez les [Règles de workflows](workflow-rules.md).
+{% endhint %}
+
 ## A quoi servent les étapes de processus ?
 
 Les étapes de workflow (flux de travail en français) permettent de matérialiser un processus de réalisation en passant d'une étape à l'autre.&#x20;
@@ -12,19 +18,11 @@ Ainsi, vous pouvez décliner votre procédure de manière très opérationnelle 
 
 ## Comment personnaliser les étapes de workflow ?
 
-
-
 {% embed url="https://youtu.be/rIPJUY3vylc" %}
-
-
 
 Cliquez dans "Réglages" puis "Etapes de processus"&#x20;
 
-
-
 <figure><img src="../../.gitbook/assets/etapes-processus01.png" alt=""><figcaption></figcaption></figure>
-
-
 
 Vous accéderez ainsi aux différentes étapes et statuts ("brouillon" ou "publié") de workflow disponible par processus. Personnalisez-les à votre convenance puis cliquez sur "enregistrer".
 
@@ -34,17 +32,12 @@ Vous accéderez ainsi aux différentes étapes et statuts ("brouillon" ou "publi
 
 Pour supprimer les étapes, il faut cliquer sur la corbeille.&#x20;
 
-Les éléments attachés à l'étape supprimés seront automatiquement rattachés à l'étape de premier niveau dans le même statut.&#x20;
+Les éléments attachés à l'étape supprimée seront automatiquement rattachés à l'étape de premier niveau dans le même statut.&#x20;
 
-Par exemple, si vous supprimez l'étape "En cours" dans les workflow de tâches&#x20;
+Par exemple, si vous supprimez l'étape "En cours" dans les workflow de tâches :
 
 <figure><img src="../../.gitbook/assets/image (9) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
-Les objets attachés passeront à l'étape "Besoins d'infos"
+Les objets attachés passeront à l'étape "Besoins d'infos" :
 
 <figure><img src="../../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
