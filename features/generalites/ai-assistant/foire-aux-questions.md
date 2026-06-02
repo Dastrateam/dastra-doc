@@ -104,7 +104,17 @@ Oui. L'assistant IA de Dastra entre dans la définition d'un système d'IA au se
 
 **Dois-je informer les personnes concernées que j'utilise l'IA pour répondre à leurs demandes ?**
 
-Oui, dans la plupart des cas. Lorsqu'une réponse à une demande d'exercice de droits est générée par l'assistant IA, la personne concernée doit être informée que le contenu a été produit ou assisté par un système d'IA, sauf si cela est évident au vu du contexte (art. 50 du Règlement IA). Dastra ne génère pas automatiquement cette mention. C'est à votre organisation de l'ajouter avant l'envoi.
+Pas au titre d'une obligation stricte, mais c'est fortement recommandé à titre de bonne pratique.
+
+L'article 50(1) du Règlement IA vise les systèmes d'IA **qui interagissent directement** avec des personnes physiques. Dans Dastra, ce n'est pas le cas : c'est un utilisateur humain (DPO, juriste) qui génère le texte, le relit, le valide et l'envoie lui-même à la personne concernée. Il n'y a pas d'interaction directe entre le système d'IA et le destinataire final — l'obligation stricte de l'art. 50(1) ne s'applique donc pas.
+
+{% hint style="info" %}
+Les guidelines draft de l'AI Office (publiées en consultation en 2025) confirment explicitement cette interprétation : *"l'interaction directe exclut les interactions humaines indirectes ou médiées [...] **par exemple si des agents du service client utilisent des outils d'assistance IA pour communiquer avec des personnes physiques** ou si le résultat de l'IA n'est pas mis à la disposition de la personne par le système d'IA lui-même, mais par une autre personne qui diffuse le contenu."* (Section 3.1.1). Le cas d'usage Dastra correspond exactement à ce schéma.
+
+À noter : les obligations de l'article 50 entrent en vigueur le **2 août 2026**. Les guidelines définitives pourront apporter des précisions complémentaires.
+{% endhint %}
+
+En revanche, informer la personne concernée qu'une réponse a été assistée par IA reste une **bonne pratique** au titre du principe de loyauté et de transparence du RGPD (art. 5(1)(a)). Dastra ne génère pas automatiquement cette mention : si votre organisation souhaite l'inclure, c'est à vous de l'ajouter avant l'envoi.
 
 ***
 
