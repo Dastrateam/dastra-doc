@@ -84,8 +84,8 @@ Générez des réponses dans plusieurs langues, avec des options de personnalisa
 Une limitation du nombre d'appels par minute est en place pour cette fonctionnalité.
 {% endhint %}
 
-{% hint style="warning" %}
-Lorsqu'une réponse à une demande est générée par l'assistant IA et envoyée à la personne concernée, celle-ci doit être informée que le contenu a été produit ou assisté par un système d'IA, sauf si cela est évident au vu du contexte (art. 50 du Règlement IA).
+{% hint style="info" %}
+**Règlement IA — Article 50** : lorsqu'une réponse est générée par l'assistant IA, l'obligation stricte de l'art. 50(1) (informer la personne qu'elle interagit avec un système d'IA) ne s'applique **pas**, car il n'y a pas d'interaction directe entre le système d'IA et la personne concernée — c'est un utilisateur humain qui relit, valide et envoie la réponse. Il reste toutefois recommandé d'informer la personne concernée à titre de bonne pratique RGPD (art. 5(1)(a) loyauté). Consultez la [FAQ](foire-aux-questions.md) pour l'analyse complète.
 {% endhint %}
 
 ***
