@@ -12,7 +12,7 @@ Cette étape pose les fondations du projet et conditionne la qualité du suivi d
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-432.png" alt=""><figcaption></figcaption></figure>
 
 ### 1. Création du projet et définition du périmètre
 
@@ -25,7 +25,7 @@ Une fois le projet créé, le périmètre est affiché dans l’en-tête du proj
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (490).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-490.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -35,7 +35,7 @@ Une fois le projet créé, le périmètre est affiché dans l’en-tête du proj
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (491).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-491.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -48,7 +48,7 @@ La phase de conception permet également de **désigner les utilisateurs autoris
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-433.png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Ajout des frameworks de conformité
 
@@ -61,7 +61,7 @@ L’ajout d’un framework permet d’importer :
 * les **tests**,
 * et les **risques** associés.
 
-<figure><img src="../../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-434.png" alt=""><figcaption></figcaption></figure>
 
 Il est possible d’ajouter plusieurs frameworks successivement au même projet.
 
@@ -75,7 +75,7 @@ Lorsque plusieurs frameworks sont ajoutés au projet, Dastra détecte automatiqu
 * Sa mise en œuvre couvre simultanément l’ensemble des exigences associées.
 * Cela permet d’augmenter la couverture de conformité sans multiplier les actions.
 
-<figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-435.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -87,7 +87,7 @@ Lors de l’ajout d’un framework, plusieurs options sont proposées :
 * importer **uniquement certains contrôles**,
 * ou **ne pas importer de contrôles** afin de les implémenter manuellement.
 
-<figure><img src="../../../.gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-437.png" alt=""><figcaption></figcaption></figure>
 
 Cette flexibilité permet d’adapter le projet à la maturité de l’organisation.
 
@@ -110,7 +110,7 @@ Une fois les frameworks importés :
 {% endcolumn %}
 
 {% column %}
-<div align="center"><img src="../../../.gitbook/assets/image (438).png" alt=""></div>
+<div align="center"><img src="../../../.gitbook/assets/image-438.png" alt=""></div>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -125,7 +125,7 @@ Ils constituent :
 * la base de l’**évaluation du risque initial**,
 * le point de référence pour le calcul du **risque résiduel** après application des contrôles.
 
-<figure><img src="../../../.gitbook/assets/image (439).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-439.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -25,21 +25,21 @@ Rendez-vous dans "Réglages" à gauche de l'écran, puis cliquez sur "Unités or
 
 
 
-![Bouton d'accès aux réglages de l'espace de travail](<../../.gitbook/assets/Capture d'écran 2024-10-17 123108.png>)
+![Bouton d'accès aux réglages de l'espace de travail](<../../.gitbook/assets/screenshot-2024-10-17-123108.png>)
 
 
 
-![Accès aux paramètres des unités organisationnelles](<../../.gitbook/assets/Capture d'écran 2024-10-17 123327.png>)
+![Accès aux paramètres des unités organisationnelles](<../../.gitbook/assets/screenshot-2024-10-17-123327.png>)
 
 Vous accéderez ainsi à l'écran de **création et de paramétrage** des unités organisationnelles :
 
-![Interface de gestion des unités organisationnelles](<../../.gitbook/assets/image (250) (1).png>)
+![Interface de gestion des unités organisationnelles](<../../.gitbook/assets/image-250-1.png>)
 
 ## Créer ou modifier une entité
 
 Pour créer une entité juridique, il vous suffit de cliquer sur le bouton "Créer une entité (responsable de traitement)" depuis le module "Entités et départements".
 
-![Bouton "Créer une entité"](<../../.gitbook/assets/image (207).png>)
+![Bouton "Créer une entité"](<../../.gitbook/assets/image-207.png>)
 
 Renseignez les champs demandés : le nom et le pays sont obligatoires. Vous pouvez renseigner le le nom du ou de la responsable (le représentant légal), ainsi que le ou la délégué(e) à la protection des données (le cas échéant) et le représentant au sein de l'UE (le cas échéant).
 
@@ -49,7 +49,7 @@ Contrairement aux départements, le nombre d'entités (responsables de traitemen
 
 Pour modifier une entité, cliquez sur les 3 points à droite de l'entité concernée, puis sur "Modifier"
 
-![Menu déroulant lié à une entité.](<../../.gitbook/assets/image (208).png>)
+![Menu déroulant lié à une entité.](<../../.gitbook/assets/image-208.png>)
 
 Réalisez les modifications souhaitées et cliquez sur "enregistrer".
 
@@ -57,25 +57,25 @@ Réalisez les modifications souhaitées et cliquez sur "enregistrer".
 
 Pour créer un département, il vous suffit de cliquer sur le bouton "Créer un département" depuis le module "Unités organisationnelles" et remplir les champs demandés.
 
-![Bouton "Créer un département"](<../../.gitbook/assets/image (209).png>)
+![Bouton "Créer un département"](<../../.gitbook/assets/image-209.png>)
 
 Pour modifier un département, il suffit de cliquer sur les 3 points à droite du département que vous souhaitez modifier, cliquer sur "Modifier" et remplir les champs demandés, avant de cliquer sur "enregistrer".
 
-![Menu déroulant lié à un département](<../../.gitbook/assets/image (210).png>)
+![Menu déroulant lié à un département](<../../.gitbook/assets/image-210.png>)
 
 ## Importer des unités organisationnelles
 
 Vous pouvez importer une liste d'unités organisationnelles via un fichier d'import. Ce fichier est à télécharger en cliquant sur le bouton "Importer" dans l'interface de gestion des unités organisationnelles.&#x20;
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123622.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-123622.png" alt=""><figcaption></figcaption></figure>
 
 Cliquez ensuite "Télécharger le modèle de fichier"
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123723.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-123723.png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez aussi le télécharger directement ici&#x20;
 
-{% file src="../../.gitbook/assets/sample-Area.csv" %}
+{% file src="../../.gitbook/assets/sample-area.csv" %}
 &#x20;Fichier d'import des unités organisationnelles
 {% endfile %}
 
@@ -113,11 +113,11 @@ Dans Dastra, vous pouvez également visualiser de manière graphique  les entit�
 
 Pour cela, cliquez sur la vue "Organigramme" depuis le module "Entités et départements".
 
-![Vue "Organigramme"](<../../.gitbook/assets/image (205).png>)
+![Vue "Organigramme"](<../../.gitbook/assets/image-205.png>)
 
 Ainsi, vous pourrez visualiser le schéma organisationnel de votre groupement de manière graphique :
 
-![Exemple d'organigramme dans Dastra](<../../.gitbook/assets/image (206).png>)
+![Exemple d'organigramme dans Dastra](<../../.gitbook/assets/image-206.png>)
 
 {% hint style="info" %}
 Vous pouvez réaliser dans la vue "Organigramme" la plupart des opérations disponibles dans la vue "Entités / départements"

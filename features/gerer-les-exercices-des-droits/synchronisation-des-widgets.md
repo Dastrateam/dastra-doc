@@ -10,8 +10,8 @@ Pour configurer la synchronisation :
 
 Cette fonctionnalité est particulièrement utile pour les organisations qui gèrent plusieurs variantes d'un même widget (par exemple, un widget de suppression de compte décliné par application ou par marché géographique).
 
-<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-159.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-115.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-121.png" alt=""><figcaption></figcaption></figure>

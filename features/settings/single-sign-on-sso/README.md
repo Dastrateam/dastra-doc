@@ -16,7 +16,7 @@ Un utilisateur (**User Agent**) va solliciter une connexion au fournisseur de se
 
 Dans notre cas, le User Agent est le **navigateur d'un utilisateur de Dastra**. Le Service Provider est **Dastra** et l'Identity Provider est votre **fournisseur d'authentification favori** (par exemple : Active Directory).
 
-![Principe de fonctionnement du SSO en utilisant le protocole SAML 2](<../../../.gitbook/assets/image (114).png>)
+![Principe de fonctionnement du SSO en utilisant le protocole SAML 2](<../../../.gitbook/assets/image-114.png>)
 
 ## Mise en place
 
@@ -47,7 +47,7 @@ Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml-2.md
 * Cliquez sur votre configuration SSO
 * Cocher la case "Forcer pour tous les utilisateurs"
 
-<figure><img src="../../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-405.png" alt=""><figcaption></figcaption></figure>
 
 ### Gestion des d'utilisateurs exemptés de login SSO
 
@@ -57,7 +57,7 @@ Ces utilisateurs pourront se connecter à l'application **en utilisant leur mot 
 
 Vous pouvez nommer des utilisateurs exemptés de SSO en sélectionnant les utilisateurs de votre organisation dans le champ suivant :
 
-<figure><img src="../../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-406.png" alt=""><figcaption></figcaption></figure>
 
 ## Comment activer le provisionnement automatique des utilisateurs ?
 
@@ -71,9 +71,9 @@ returnUrl=https://www.dastra.eu
 
 Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :<br>
 
-<figure><img src="../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-415.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/sso_config-sample.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/sso-config-sample.png" alt=""><figcaption></figcaption></figure>
 
 Dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra et un mail de notification vous sera envoyé quelques heures plus tard.
 
@@ -85,7 +85,7 @@ Si le compte de l'utilisateur est supprimé ou invalidé dans le fournisseur d'a
 
 Vous pouvez choisir **le rôle assigné par défaut** sur toutes les organisations associées à votre abonnement.
 
-![](<../../../.gitbook/assets/image (124).png>)
+![](<../../../.gitbook/assets/image-124.png>)
 
 {% hint style="info" %}
 Pour l'instant, Dastra ne supporte pas le binding des rôles via les propriétés du serveur d'authentification. Si cette fonctionnalité est importante, vous pouvez nous le remonter via la [page de support](https://app.dastra.eu/general-settings/support).
@@ -95,13 +95,13 @@ Pour l'instant, Dastra ne supporte pas le binding des rôles via les propriété
 
 Il est possible de binder les équipes d'un espace de travail sur une propriété (Claim) renvoyé par votre serveurs d'authentification.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-1-1-2-1-1.png" alt=""><figcaption></figcaption></figure>
 
 ## Comment administrer les logins des utilisateurs ?
 
 Vous pouvez configurer le type de login des utilisateurs en vous rendant dans [la page de gestion des utilisateurs de l'abonnement](https://app.dastra.eu/general-settings/users) . En vous rendant dans un profil utilisateur, il sera possible de choisir le login SSO privilégié. Dès lors, l'utilisateur qui se connecte à Dastra avec son adresse email, sera automatiquement redirigé vers la page de login du fournisseur d'authentification que vous avez mis en place.
 
-![](<../../../.gitbook/assets/image (118).png>)
+![](<../../../.gitbook/assets/image-118.png>)
 
 Vous pourrez également définir le type de login lors de l'invitation de nouveaux utilisateurs.
 

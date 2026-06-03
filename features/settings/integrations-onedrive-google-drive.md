@@ -13,7 +13,7 @@ Par défaut, la [GED de Dastra](../gestion-de-documents-ged/) s'appuie sur un sy
 
 Bien que très sécurisé et pratique dans la plupart des scénarios, le stockage des fichiers dans l'application Dastra peut faire doublon avec d'autres GED ou gestionnaire de fichiers cloud. Pour remédier à ce problème, Dastra s'intègre nativement aux principaux fournisseur de fichiers sur le cloud.
 
-<figure><img src="../../.gitbook/assets/image (252) (1).png" alt=""><figcaption><p>Les fichiers de la GED de Dastra peuvent être stockés dans plusieurs sites de stockage différents</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-252-1.png" alt=""><figcaption><p>Les fichiers de la GED de Dastra peuvent être stockés dans plusieurs sites de stockage différents</p></figcaption></figure>
 
 ### Configurer un stockage cloud personnalisé
 
@@ -27,7 +27,7 @@ Pour configurer votre gestionnaire de fichiers cloud, c'est très simple :
 * Cliquez sur **Gérez le stockage cloud**
 * Choisissez votre fournisseur (Google Drive ou OneDrive)
 
-![](<../../.gitbook/assets/image (257) (1).png>)
+![](<../../.gitbook/assets/image-257-1.png>)
 
 * **Cliquez sur le bouton "Ajouter"**, vous allez être redirigé vers la page de login du fournisseur qui vous demandera les autorisations nécessaires à l'établissement de la connexion avec Dastra.&#x20;
 * A la fin du processus, vous allez choisir le disque du drive que vous souhaitez utiliser (Un drive google ou un disque sharepoint pour OneDrive)
@@ -37,12 +37,12 @@ Pour configurer votre gestionnaire de fichiers cloud, c'est très simple :
 * **Editez n'importe quelle entité** : tâche, traitement, acteur...&#x20;
 * **Choisissez la source de donnée** en haut à gauche de la boîte permettant de charger les fichiers.
 
-![](<../../.gitbook/assets/image (254) (1).png>)
+![](<../../.gitbook/assets/image-254-1.png>)
 
 * Envoyez des fichiers directement sur votre Drive (Modifiez les, déplacez les)
 * Cliquez sur **sélectionnez dans le gestionnaire**. et choisissez le fichier à attacher
 
-![](<../../.gitbook/assets/image (255).png>)
+![](<../../.gitbook/assets/image-255.png>)
 
 
 

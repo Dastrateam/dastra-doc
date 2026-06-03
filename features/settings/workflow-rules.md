@@ -14,7 +14,7 @@ Les [étapes de processus](etapes-de-processus.md) définissent les statuts que 
 
 Les Règles de workflow dans Dastra sont un ensemble d'actions (notifications par e-mail, planification d'un audit, tâches et mises à jour de champs) qui sont exécutées lorsque certaines conditions sont réunies. Ces règles automatisent le processus d'envoi des notifications par e-mail, d'attribution des tâches et de mise à jour de certains champs d'un enregistrement lorsqu'une règle est déclenchée.
 
-![Schéma du principe de base](<../../.gitbook/assets/image (258) (1).png>)
+![Schéma du principe de base](<../../.gitbook/assets/image-258-1.png>)
 
 {% hint style="info" %}
 Le nombre de règles de workflow disponibles dépend de votre plan, de **25 à 100 règles**. Une capacité supplémentaire peut être achetée si nécessaire. Contactez votre account manager pour plus de détails.
@@ -33,7 +33,7 @@ Vous pouvez déclencher une règle de workflow sur deux évènements :&#x20;
 
 * Lors d'**une action sur une entité concernée** : création, modification, changement d'étape ou mise à la corbeille (seulement pour les objets pour lesquels la corbeille existe)
 
-<figure><img src="../../.gitbook/assets/action_fr_01 (1).png" alt=""><figcaption><p>Création d'un déclencheur par action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/action-fr-01-1.png" alt=""><figcaption><p>Création d'un déclencheur par action</p></figcaption></figure>
 
 * **Contrôle de date récurrent** — la règle est évaluée chaque jour à une heure configurée et se déclenche en fonction d'un champ date de l'objet. Configurez les paramètres suivants :
   * **Exécuter tous les jours à** — l'heure du contrôle quotidien (avec gestion du fuseau horaire, ex. 00:00 Europe/Paris).
@@ -46,7 +46,7 @@ Vous pouvez déclencher une règle de workflow sur deux évènements :&#x20;
 
   Le bouton **"Voir les éléments comme si c'était aujourd'hui"** permet de prévisualiser les objets qui correspondraient actuellement à la règle, utile pour tester avant activation.
 
-<figure><img src="../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-513.png" alt=""><figcaption></figcaption></figure>
 
 Un seul déclencheur (ou trigger) peut être défini par règle de workflow.
 
@@ -58,7 +58,7 @@ Vous pouvez configurer une ou plusieurs conditions d'exécution par règle.
 
 Les conditions peuvent s'appliquer à l'ensemble des champs de l'objet et peuvent être assemblées au sein de groupes pour vous permettre de mettre en place l'ensemble des scénarios possibles (avec la possibilité de changer l'association "Et" ou "Ou").
 
-<figure><img src="../../.gitbook/assets/action_fr_01 (2).png" alt=""><figcaption><p>Ici l'action sera lancée si l'étape est "validation de l'identité" ou "nouveau" ET que la date de validation de l'email est remplie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/action-fr-01-2.png" alt=""><figcaption><p>Ici l'action sera lancée si l'étape est "validation de l'identité" ou "nouveau" ET que la date de validation de l'email est remplie</p></figcaption></figure>
 
 ### Définition des actions
 
@@ -128,13 +128,13 @@ Pour afficher uniquement la 1ere valeur d'une variable de type tableau : (1er ap
 
 Cet exemple permet de voir l'utilisation d'un workflow par action permettant de notifier les approbateurs d'un traitement lors d'un changement d'étape si l'étape courante est différente de "Nouveau"
 
-<figure><img src="../../.gitbook/assets/workflow_stateChange01-fr (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-statechange01-fr-1.png" alt=""><figcaption></figcaption></figure>
 
 **Exemple de workflow "complexe" basé sur une date :**
 
 Cet exemple permet de voir l'utilisation d'un workflow par date permettant de nettoyer automatiquement les demandes de droits dont l'identité de l'utilisateur n'aurait pas été validé un mois après la création.
 
-<figure><img src="../../.gitbook/assets/workflow_anon01-fr.png" alt=""><figcaption><p><strong>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-anon01-fr.png" alt=""><figcaption><p><strong>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</strong></p></figcaption></figure>
 
 ### Bibliothèque de modèles de règles
 
@@ -151,11 +151,11 @@ Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme mod�
 
 Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-1.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-512.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

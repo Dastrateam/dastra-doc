@@ -21,13 +21,13 @@ Pour créez vos propres rôles associés aux permissions, rendez-vous sur [cette
 
 Vous pouvez créer un "nouveau rôle" personnalisé en cliquant sur le bouton "Ajouter un rôle"
 
-<figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-284.png" alt=""><figcaption></figcaption></figure>
 
 Il est ensuite possible de sélectionner les cases associées aux permissions :
 
 
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2025-11-24 153151.png" alt=""><figcaption><p>Création d'un rôle de gestion des tâches</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2025-11-24-153151.png" alt=""><figcaption><p>Création d'un rôle de gestion des tâches</p></figcaption></figure>
 
 <br>
 

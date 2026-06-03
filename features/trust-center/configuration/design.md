@@ -4,7 +4,7 @@ description: Apprenez à configurer les éléments de design de votre Trust cent
 
 # Apparence et design
 
-<figure><img src="../../../.gitbook/assets/image (401).png" alt=""><figcaption><p>L'onglet vous permettant de configurer les éléments de design de votre Trust center </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-401.png" alt=""><figcaption><p>L'onglet vous permettant de configurer les éléments de design de votre Trust center </p></figcaption></figure>
 
 #### Logo (optionnelle)
 

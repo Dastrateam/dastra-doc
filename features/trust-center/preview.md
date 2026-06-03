@@ -12,10 +12,10 @@ Une fois la configuration terminée, vous pouvez partager l'url de votre Trust c
 
 Pour ce faire, vous pouvez directement copier l'url de la fenêtre de prévisualisation, ou bien cliquer sur l'option _**Copier lien**_ du menu d'un Trust center
 
-<figure><img src="../../.gitbook/assets/image (402).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-402.png" alt=""><figcaption></figcaption></figure>
 
 #### Intégrer votre Trust center dans une iframe
 
 Vous pouvez également intégrer votre Trust center dans une iframe. Vous pouvez récupérer le code de l'iframe en cliquant sur l'option _**Intégrer**_ du menu de votre Trust center.
 
-<figure><img src="../../.gitbook/assets/image (403).png" alt=""><figcaption><p>Intégrer le Trust center en mode iframe</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-403.png" alt=""><figcaption><p>Intégrer le Trust center en mode iframe</p></figcaption></figure>

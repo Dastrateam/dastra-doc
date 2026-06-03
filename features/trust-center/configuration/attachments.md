@@ -8,7 +8,7 @@ description: Apprenez à mettre des documents à disposition dans votre Trust ce
 
 Pour activer la fonctionnalité '**Documents** dans votre Trust center, consultez la section de configuration générale qui permet d'activer ou de désactiver cette option. Une fois activée, une nouvelle page publique intitulée 'Documents' sera ajoutée à votre Trust center.
 
-<figure><img src="../../../.gitbook/assets/image (398).png" alt=""><figcaption><p>L'onglet de configuration des documents</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-398.png" alt=""><figcaption><p>L'onglet de configuration des documents</p></figcaption></figure>
 
 #### Ajouter des documents à votre Trust center
 

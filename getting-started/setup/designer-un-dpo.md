@@ -22,10 +22,10 @@ _**A noter** : un seul DPO est attaché à une entité._
 
 Ensuite, ajouter le DPO dans le champ prévu.
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2024-10-17 123923.png" alt=""><figcaption><p>Fenêtre de modification d'une entité</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-123923.png" alt=""><figcaption><p>Fenêtre de modification d'une entité</p></figcaption></figure>
 
 Le DPO est ajouté en tant qu'acteur. Ainsi, si le DPO est une personne physique, ajoutez le en personne physique. S'il s'agit d'une société (un DPO externe par exemple), ajoutez le en tant que personne morale.
 
-<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-277.png" alt=""><figcaption></figcaption></figure>
 
 N'oubliez pas d'enregistrer et le tour est joué !

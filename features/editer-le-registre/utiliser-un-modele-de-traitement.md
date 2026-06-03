@@ -8,15 +8,15 @@ Les modèles de traitement permettent de gagner du temps dans la saisie de trait
 
 Aller sur "créer un traitement de données"
 
-<figure><img src="../../.gitbook/assets/image (12) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-12-2-1.png" alt=""><figcaption></figcaption></figure>
 
 et sélectionner "modèle prédéfini"
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-17-1.png" alt=""><figcaption></figcaption></figure>
 
 Ensuite vous pourrez chercher des modèles de traitement à partir de la barre de recherche.
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-33.png" alt=""><figcaption></figcaption></figure>
 
 Les **tags** vous permettront de filtrer les modèles selon les secteurs d'activité.
 
@@ -24,13 +24,13 @@ La **langue** vous permet de visualiser les modèles de traitements dans les aut
 
 Pour **visualiser le contenu du modèle** avant son import, vous pouvez cliquer sur l'oeil situé en haut à droite du modèle.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-3-1-1.png" alt=""><figcaption></figcaption></figure>
 
 ## Suggérer un modèle de traitement
 
 Si vous ne trouvez pas un modèle, vous pouvez nous en suggérer la création.
 
-<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-44-1.png" alt=""><figcaption></figcaption></figure>
 
 ## Créer des modèles de traitement en masse
 
@@ -38,11 +38,11 @@ Vous pouvez sélectionner plusieurs modèles de traitement et les importer en un
 
 Rendez vous dans les options du bouton "Créer un traitement de données" puis "Créer à partir de la bibliothèque"
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-40.png" alt=""><figcaption></figcaption></figure>
 
 Sélectionnez un ou plusieurs modèles, choisissez une unité organisationnelle et cliquez sur "ajouter"
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-13-1-1.png" alt=""><figcaption></figcaption></figure>
 
 Le bouton "**Détails**" permet de prévisualiser le modèle.
 

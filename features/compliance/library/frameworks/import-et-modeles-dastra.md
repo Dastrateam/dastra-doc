@@ -16,7 +16,7 @@ Depuis cette page, vous pouvez :
 {% endcolumn %}
 
 {% column %}
-<div align="center"><img src="../../../../.gitbook/assets/image (426).png" alt="create framework options"></div>
+<div align="center"><img src="../../../../.gitbook/assets/image-426.png" alt="create framework options"></div>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -61,9 +61,9 @@ Ils peuvent ensuite être **personnalisés** selon votre contexte.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-427.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-429.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -75,7 +75,7 @@ Ils peuvent ensuite être **personnalisés** selon votre contexte.
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image (447).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-447.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}

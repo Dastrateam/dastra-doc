@@ -26,7 +26,7 @@ Chaque test est :
 
 ### Vue bibliothèque des tests
 
-<figure><img src="../../../.gitbook/assets/image (492).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-492.png" alt=""><figcaption></figcaption></figure>
 
 La bibliothèque des tests offre une vision transverse de tous les tests disponibles, avec notamment :
 
@@ -80,7 +80,7 @@ Lors de la création ou de l’édition d’un test, l’utilisateur définit :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (493).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-493.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -92,7 +92,7 @@ Ces informations servent de guide opérationnel lors de l’exécution du test d
 
 Dastra propose plusieurs types de connecteurs prêts à l’emploi (questionnaires, registres, politiques, etc.), ainsi qu’un connecteur générique. Ces connecteurs sont utilisés directement dans les **tests automatisés** du module Compliance.
 
-<figure><img src="../../../.gitbook/assets/image (494).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-494.png" alt=""><figcaption></figcaption></figure>
 
 En complément des tests manuels, Dastra permet de configurer des **tests automatisés** à l’aide de **connecteurs**.
 
@@ -118,7 +118,7 @@ Un test automatisé peut vérifier que chaque système d’IA dispose d’une do
 
 En complément des connecteurs standards, Dastra permet de créer des **connecteurs personnalisés** afin d’automatiser la collecte de preuves dans les tests de conformité.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-1-1.png" alt=""><figcaption></figcaption></figure>
 
 Un connecteur personnalisé permet :
 

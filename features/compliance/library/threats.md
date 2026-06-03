@@ -35,7 +35,7 @@ Le modèle Dastra repose sur une chaîne simple et lisible :
 
 ### Vue bibliothèque des menaces
 
-<figure><img src="../../../.gitbook/assets/image (501).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-501.png" alt=""><figcaption></figcaption></figure>
 
 La bibliothèque des menaces centralise l’ensemble des menaces identifiées, avec :
 
@@ -65,7 +65,7 @@ Lors de la création ou de l’édition d’une menace, l’utilisateur renseign
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (502).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-502.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

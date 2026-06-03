@@ -10,7 +10,7 @@ description: Apprenez à exporter et importer un registre existant complet dans 
 
 Pour exporter l'ensemble du registre, il vous suffit de vous rendre dans le module "Registre", de cliquer sur la flèche en haut à droite à côté de la création d'un traitement, puis de sélectionner "exporter le registre".
 
-![Menu déroulant du registre comportant la fonctionnalité d'export](<../../.gitbook/assets/Capture web\_3-5-2022\_164438\_app.dastra.eu.jpeg>)
+![Menu déroulant du registre comportant la fonctionnalité d'export](<../../.gitbook/assets/capture-web-3-5-2022-164438-app-dastra-eu.jpeg>)
 
 Choisissez ensuite le format d'export ainsi que le type d'export désiré (complet ou format article 30), et cliquez sur "Télécharger le fichier". Ca y est, votre registre est exporté !
 
@@ -76,11 +76,11 @@ N'hésitez pas à consulter également notre bibliothèque de modèles de traite
 
 Pour importer vos labels de traitements existants, il faut cliquer sur l'onglet "importer vos données" dans la section Registre, onglet Registre:
 
-![](<../../.gitbook/assets/image (10) (1) (1).png>)
+![](<../../.gitbook/assets/image-10-1-1.png>)
 
 Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran.
 
-![](<../../.gitbook/assets/image (11) (1) (1).png>)
+![](<../../.gitbook/assets/image-11-1-1.png>)
 
 
 
@@ -95,7 +95,7 @@ Remplissez le fichier  téléchargé avec vos labels de traitements en respectan
 
 Ci-dessous un exemple de fichier respectant le format demandé disponible à l'import et pouvant être importé en "glisser-déposer" dans Dastra :
 
-{% file src="../../.gitbook/assets/sample-DataProcessing (18).csv" %}
+{% file src="../../.gitbook/assets/sample-dataprocessing-18.csv" %}
 
 Importez-le directement dans notre interface par glisser-déposer, puis cliquez sur Continuez.&#x20;
 
@@ -105,7 +105,7 @@ Ca y est, vos labels de traitements sont importés !
 
 Pour importer vos applications/actifs existantes, il faut cliquer sur l'onglet "importer" dans le module Référentiels, onglet Actifs :
 
-![](<../../.gitbook/assets/image (92).png>)
+![](<../../.gitbook/assets/image-92.png>)
 
 Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran. Remplissez le fichier  téléchargé avec vos applications en respectant l'ordre suivant :
 
@@ -123,7 +123,7 @@ Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'
 
 Ci-dessous un exemple de fichier respectant le format demandé disponible à l'import et pouvant être importé en "glisser-déposer" dans Dastra :
 
-{% file src="../../.gitbook/assets/sample-applications - EXAMPLE.xlsx" %}
+{% file src="../../.gitbook/assets/sample-applications-example.xlsx" %}
 
 Importez-le directement dans notre interface par glisser-déposer, puis cliquez sur Continuez.&#x20;
 
@@ -133,7 +133,7 @@ Ca y est, vos applications sont importées !
 
 Recommencez la procédure similaire aux précédentes depuis le module Référentiels, onglet Acteurs. Ci-dessous un exemple:
 
-{% file src="../../.gitbook/assets/sample-Asset.csv" %}
+{% file src="../../.gitbook/assets/sample-asset.csv" %}
 
 Votre référentiel des acteurs référence l'ensemble des parties prenantes à un traitement. Personnes morales telles que les sous-traitants, les clients ou les responsables conjoints ou les personnes physiques telles que les interlocuteurs des traitements.&#x20;
 

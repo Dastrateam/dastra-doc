@@ -27,7 +27,7 @@ L’analyse d’impact sur les droits fondamentaux vise à :
 
 Dans Dastra, lorsque vous définissez un système d'IA comme étant à **haut risque**, vous verrez apparaitre une alerte vous indiquant d'effectuer une **analyse d'impact**.
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-23 104949.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2026-02-23-104949.png" alt=""><figcaption></figcaption></figure>
 
 Si vous disposez du module **Questionnaires** de Dastra, ce bandeau d'alerte vous proposera le bouton "**Effectuer une analyse d'impact**". Cliquez dessus, cela vous ouvrira une fenêtre contenant des questionnaires.
 
@@ -40,6 +40,6 @@ Vous pouvez désormais :
 
 Pour importer notre modèle prêt à l'emploi, cliquez sur **Créer modèle,** puis **A partir d'un modèle**, cela vous enverra vers une liste de modèles. Dans les filtres, choisissez **Modèles créés par Dastra** et sélectionnez le type **Analyse d'impact (PIA)**. Vous pouvez également taper "Analyse d'impact appliquée à un système d'IA" dans la barre de recherche.
 
-<figure><img src="../../.gitbook/assets/Capture d&#x27;écran 2026-02-23 113208.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2026-02-23-113208.png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez désormais effectuer votre analyse d'impact.

@@ -157,7 +157,7 @@ Exemples : données sensibles, prospection électronique, cookies (selon finalit
 
 
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-12.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

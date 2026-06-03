@@ -39,13 +39,13 @@ Le processus de mise en place est très simple :
     Ces informations permettront à Dastra de générer un jeton d’accès sécurisé pour communiquer avec votre instance ServiceNow.
 4.
 
-    <figure><img src="../../.gitbook/assets/SetupServiceNowAccount.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/setupservicenowaccount.png" alt=""><figcaption></figcaption></figure>
 
 
 
 4. Après validation, une fenêtre de configuration s’affichera. Cette étape est **obligatoire** pour finaliser l’installation.
 
-<figure><img src="../../.gitbook/assets/SettingsServiceNow.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settingsservicenow.png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 

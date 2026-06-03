@@ -15,11 +15,11 @@ Les filtres avancés permettent de filtrer vos données sur presque tous les cha
 * Allez dans un module de Dastra (par exemple, le module des exercices de droits
 * Cliquez sur le bouton "Filtres" en haut à droite de la table de données.
 
-<figure><img src="../../.gitbook/assets/filters_01_ok.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/filters-01-ok.png" alt=""><figcaption></figcaption></figure>
 
 * Une petite fenêtre s'affiche, elle vous présente une liste de filtres standards les plus utilisés, en appliquant un de ces filtres, le tableau se met à jour automatiquement.
 
-<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-100.png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><sub><mark style="color:$info;">Combo de filtres avancés des demandes d'exercices de droits</mark></sub></p>
 
@@ -31,7 +31,7 @@ _Par exemple : si je filtre sur un ou deux tags "complexe" et "en attente" + je 
 
 * Si vous ne trouvez pas de filtres qui vous conviennent, vous pouvez cliquer sur le bouton "Ajouter un filtre". Là vous allez pouvoir éditer la combinaison de filtres qui correspondra le mieux à vos besoins
 
-<figure><img src="../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-111.png" alt=""><figcaption></figcaption></figure>
 
 Par défaut, Dastra fait persister les filtres que vous sélectionnez, ce qui signifie que si vous changez de page ou que vous rafraîchissez votre navigateur, les filtres sont conservés. Ces filtres sont propre à votre navigateur et votre espace de travail (Ils sont stockés en **LocalStorage**).
 
@@ -47,13 +47,13 @@ Pour créer une vue :
 
 La vue apparaît alors directement dans la barre d'outils de la section concernée — accessible en un clic, sans repasser par le panneau "Filtres".
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-22.png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez **partager une vue** avec les autres utilisateurs de votre espace de travail. Les vues partagées apparaissent sous la rubrique **"Vues partagées"** dans la barre d'outils.
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-37.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-70.png" alt=""><figcaption></figcaption></figure>
 
 Cette fonctionnalité est disponible dans toutes les sections listant des objets : demandes d'exercice de droits, registre des traitements, actifs, contrats, systèmes d'IA, violations de données…
 
