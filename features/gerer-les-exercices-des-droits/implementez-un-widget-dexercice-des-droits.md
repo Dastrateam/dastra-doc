@@ -23,8 +23,6 @@ Il est totalement personnalisable et offre :
 
 Voici le schéma général du fonctionnement d’un widget d’exercice de droits dans Dastra :
 
-![Schéma du processus de gestion des exercices de droit](../../.gitbook/assets/diapositive1.svg)
-
 Ce diagramme illustre le processus :
 
 1. La personne concernée soumet une demande via le widget.

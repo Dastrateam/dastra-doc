@@ -39,20 +39,18 @@ Le processus de mise en place est très simple :
     Ces informations permettront à Dastra de générer un jeton d’accès sécurisé pour communiquer avec votre instance ServiceNow.
 4.
 
-    <figure><img src="../../.gitbook/assets/setupservicenowaccount.png" alt=""><figcaption></figcaption></figure>
-
-
+```
+<figure><img src="../../.gitbook/assets/setupservicenowaccount.png" alt=""><figcaption></figcaption></figure>
+```
 
 4. Après validation, une fenêtre de configuration s’affichera. Cette étape est **obligatoire** pour finaliser l’installation.
-
-<figure><img src="../../.gitbook/assets/settingsservicenow.png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 
 * Renseignez l’**URL de votre instance** ServiceNow
 * Choisissez si vous souhaitez mettre en place la synchronisation des actifs. (Les actifs synchronisés avec ServiceNow seront maintenues à jour toutes les nuit à 00:00 UTC)
 * Sélectionnez les personnes à notifier dans le cas de modification/création des actifs. La personne recevra un email de notification contenant les informations sur les actifs qui ont été mis à jour.
-* Cochez "Create new assets if not exists" aura pour conséquence de créer un actif s'il n'existe pas dans Dastra en se basant sur la référence externe.&#x20;
+* Cochez "Create new assets if not exists" aura pour conséquence de créer un actif s'il n'existe pas dans Dastra en se basant sur la référence externe.
 
 {% hint style="info" %}
 Attention : si vous cochez cette case, un grand nombre d’actifs seront automatiquement créés dans votre espace de travail. Veillez à bien renseigner les références externes.
