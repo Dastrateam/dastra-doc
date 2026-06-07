@@ -23,7 +23,7 @@ Les principales réglementations à connaître :
 Depuis la CPRA (2023), les entreprises doivent honorer le signal **Global Privacy Control (GPC)** comme une demande d'opt-out de la vente et du partage de données personnelles.
 {% endhint %}
 
-***
+---
 
 ## Approche recommandée avec Dastra
 
@@ -39,35 +39,39 @@ Pour les **autres États américains** sans obligation de bannière, vous pouvez
 [variantes-geo-ciblees.md](variantes-geo-ciblees.md)
 {% endcontent-ref %}
 
-***
+---
 
 ### 2. Honorer les signaux GPC et DoNotTrack
 
 Deux signaux navigateur permettent à un utilisateur d'indiquer son refus de suivi sans interagir avec une bannière :
 
-| Signal                          | Standard | Légalement contraignant (CA) | Description                                                    |
-| ------------------------------- | -------- | ---------------------------- | -------------------------------------------------------------- |
-| **GPC** (`globalPrivacyControl`) | W3C      | ✅ Oui (CPRA)                | Signal opt-out de la vente/partage des données                 |
+| Signal                           | Standard | Légalement contraignant (CA) | Description                                                        |
+| -------------------------------- | -------- | ---------------------------- | ------------------------------------------------------------------ |
+| **GPC** (`globalPrivacyControl`) | W3C      | ✅ Oui (CPRA)                | Signal opt-out de la vente/partage des données                     |
 | **DNT** (`doNotTrack`)           | W3C      | ❌ Non                       | Signal de préférence "ne pas pister" (non contraignant légalement) |
 
 Dastra ne détecte pas ces signaux nativement. Le snippet suivant les intercepte **avant la première interaction de l'utilisateur** et applique automatiquement l'opt-out sur les catégories analytique et marketing — à condition que l'utilisateur n'ait pas déjà enregistré un consentement explicite dans son navigateur.
 
 ```html
 <script>
-var isOptOut = navigator.globalPrivacyControl === true
-            || navigator.doNotTrack === "1"
-            || window.doNotTrack === "1";
+  var isOptOut =
+    navigator.globalPrivacyControl === true ||
+    navigator.doNotTrack === '1' ||
+    window.doNotTrack === '1'
 
-if (isOptOut) {
-  dastra = dastra || [];
-  dastra.push(['cookieReady', function(manager) {
-    if (!manager.consent.hasConsented()) {
-      manager.consent.setPurposeConsent('Analytical', false);
-      manager.consent.setPurposeConsent('Marketing', false);
-      manager.consent.dispatchEvent(); // applique les choix sans les persister
-    }
-  }]);
-}
+  if (isOptOut) {
+    window.dastra = window.dastra || []
+    window.dastra.push([
+      'cookieReady',
+      function (manager) {
+        if (!manager.consent.hasConsented()) {
+          manager.consent.setPurposeConsent('Analytical', false)
+          manager.consent.setPurposeConsent('Marketing', false)
+          manager.consent.dispatchEvent() // applique les choix sans les persister
+        }
+      }
+    ])
+  }
 </script>
 ```
 
@@ -76,7 +80,7 @@ if (isOptOut) {
 
 - **`dispatchEvent()`** applique les choix pour la session en cours **sans rien écrire** dans le localStorage du navigateur. Le signal GPC ou DNT est re-détecté à chaque chargement de page. Si l'utilisateur désactive GPC dans son navigateur, le comportement normal reprend automatiquement. C'est l'approche recommandée pour honorer ces signaux.
 - **`save()`** enregistre le consentement de façon persistante dans le localStorage, comme si l'utilisateur avait fait un choix explicite via le widget. À utiliser uniquement lorsque vous souhaitez mémoriser un choix entre les sessions.
-{% endhint %}
+  {% endhint %}
 
 {% hint style="info" %}
 **À quoi sert `hasConsented()` ?**
@@ -99,12 +103,12 @@ Les labels de catégories à utiliser avec `setPurposeConsent` :
 | Autre       | `Other`        |
 | Non classé  | `Unclassified` |
 
-***
+---
 
 ## Récapitulatif
 
-| Mécanisme                  | Implémentation        | Légalement requis (CA) |
-| -------------------------- | --------------------- | ---------------------- |
-| Variante géo-ciblée CCPA   | Interface Dastra      | ✅ Oui                 |
-| Détection GPC              | Snippet JS ci-dessus  | ✅ Oui (CPRA)          |
-| Détection DNT              | Snippet JS ci-dessus  | ❌ Recommandé          |
+| Mécanisme                | Implémentation       | Légalement requis (CA) |
+| ------------------------ | -------------------- | ---------------------- |
+| Variante géo-ciblée CCPA | Interface Dastra     | ✅ Oui                 |
+| Détection GPC            | Snippet JS ci-dessus | ✅ Oui (CPRA)          |
+| Détection DNT            | Snippet JS ci-dessus | ❌ Recommandé          |

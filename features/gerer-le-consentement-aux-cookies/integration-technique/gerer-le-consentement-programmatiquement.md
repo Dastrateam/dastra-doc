@@ -20,10 +20,8 @@ Le service de consentement de dastra est accessible de cette façon
 
 ```javascript
 <script>
-dastra = dastra || []
-dastra.push(['cookieReady',function(manager){
-    console.log(manager.consent)
-});
+  dastra = dastra || [] dastra.push(['cookieReady',function(manager)
+  {console.log(manager.consent)});
 </script>
 ```
 
@@ -31,14 +29,14 @@ dastra.push(['cookieReady',function(manager){
 
 dans manager.consent, vous disposez des méthodes suivantes :
 
-* open() : ouvre le widget de consentement
-* close() : ferme le widget de consentement
-* getAllConsents() : récupère tous les consentements
-* hasConsented() : retourne `true` si l'utilisateur a déjà enregistré un consentement explicite
-* getPurposeConsent(purposeLabel:string) : récupère le consentement d'une catégorie de cookies
-* setPurposeConsent(purposeLabel:string, consent:bool): définit le consentement pour une catégorie
-* getServiceConsent(serviceShortName:string): récupère le consentement d'un service particulier.
-* setServiceConsent(serviceShortName:string, consent:bool): définit le consentement d'un élément particulier
+- open() : ouvre le widget de consentement
+- close() : ferme le widget de consentement
+- getAllConsents() : récupère tous les consentements
+- hasConsented() : retourne `true` si l'utilisateur a déjà enregistré un consentement explicite
+- getPurposeConsent(purposeLabel:string) : récupère le consentement d'une catégorie de cookies
+- setPurposeConsent(purposeLabel:string, consent:bool): définit le consentement pour une catégorie
+- getServiceConsent(serviceShortName:string): récupère le consentement d'un service particulier.
+- setServiceConsent(serviceShortName:string, consent:bool): définit le consentement d'un élément particulier
 
 ### Récupérer la liste des consentements de l'utilisateur (getAllConsents)
 
@@ -111,16 +109,16 @@ Pour manipuler les consentements par service, vous aurez besoin du nom simplifi�
 Rendez-vous dans l'interface de gestion des services, en éditant un service, le nom simplifié (slug) du service apparaît en dessous du nom du cookie.
 {% endhint %}
 
-![Emplacement du nom du cookies simplifié](<../../../.gitbook/assets/image-67.png>)
+![Emplacement du nom du cookies simplifié](../../../.gitbook/assets/image-67.png)
 
 ```javascript
-<script> 
+<script>
 dastra = dastra || []
 dastra.push(['cookieReady',function(manager){
     let cookieService = 'google-analytics';
     let consents = manager.consent.getServiceConsent(cookieService);
     manager.consent.setServiceConsent(cookieService, false);
-    
+
     // sauvegarder le consentement
     manager.consent.save();
 });
@@ -133,8 +131,8 @@ L'exemple suivant montre comment appliquer un refus global par programmation —
 
 ```javascript
 <script>
-dastra = dastra || [];
-dastra.push(['cookieReady', function(manager) {
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady', function(manager) {
 
   // N'agir que si l'utilisateur n'a pas encore fait de choix explicite
   if (!manager.consent.hasConsented()) {
@@ -158,8 +156,8 @@ Il est également possible d'accepter sélectivement certaines catégories — p
 
 ```javascript
 <script>
-dastra = dastra || [];
-dastra.push(['cookieReady', function(manager) {
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady', function(manager) {
 
   manager.consent.setPurposeConsent('Analytical', true);
   manager.consent.setPurposeConsent('Marketing',  false);

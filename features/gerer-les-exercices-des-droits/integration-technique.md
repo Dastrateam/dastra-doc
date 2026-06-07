@@ -20,14 +20,17 @@ Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**u
 
 Pour commencer, vous devez **mettre en place le widget** dans[ le panel de gestion des widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) d'exercice de droits :
 
-![](<../../.gitbook/assets/image-247-1-1.png>)
+![](../../.gitbook/assets/image-247-1-1.png)
 
 Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d'ouverture) :
 
 ```html
-<div id="customer-subject-form-custom" ></div>
+<div id="customer-subject-form-custom"></div>
 <button id="customer-request-button">Open the widget</button>
-<script src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY}" async></script>
+<script
+  src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY}"
+  async
+></script>
 <script>
   window.dastra = window.dastra || [];
   dastra.debug = true;
@@ -62,16 +65,16 @@ Il est possible de préremplir les champs du formulaire depuis le contexte d'aut
 **Champs standards disponibles :**
 
 ```javascript
-dastra.push(['set', 'dsr:refId',       '{identifiant_unique_utilisateur}']);
-dastra.push(['set', 'dsr:email',        '{email}']);
-dastra.push(['set', 'dsr:givenName',    '{prénom}']);
-dastra.push(['set', 'dsr:familyName',   '{nom}']);
-dastra.push(['set', 'dsr:address',      '{adresse}']);
-dastra.push(['set', 'dsr:zipCode',      '{code_postal}']);
-dastra.push(['set', 'dsr:city',         '{ville}']);
-dastra.push(['set', 'dsr:countryCode',  '{code_pays}']); // ex : "FR"
-dastra.push(['set', 'dsr:phoneNumber',  '{téléphone}']);
-dastra.push(['set', 'dsr:message',      '{message}']);
+dastra.push(['set', 'dsr:refId', '{identifiant_unique_utilisateur}'])
+dastra.push(['set', 'dsr:email', '{email}'])
+dastra.push(['set', 'dsr:givenName', '{prénom}'])
+dastra.push(['set', 'dsr:familyName', '{nom}'])
+dastra.push(['set', 'dsr:address', '{adresse}'])
+dastra.push(['set', 'dsr:zipCode', '{code_postal}'])
+dastra.push(['set', 'dsr:city', '{ville}'])
+dastra.push(['set', 'dsr:countryCode', '{code_pays}']) // ex : "FR"
+dastra.push(['set', 'dsr:phoneNumber', '{téléphone}'])
+dastra.push(['set', 'dsr:message', '{message}'])
 ```
 
 **Champs personnalisés :**
@@ -81,11 +84,11 @@ dastra.push(['set', 'dsr:message',      '{message}']);
 var payload = {
   customFieldSlug1: 'valeur1',
   customFieldSlug2: 'valeur2'
-};
-dastra.push(['set', 'dsr:additionalDatas', payload]);
+}
+dastra.push(['set', 'dsr:additionalDatas', payload])
 
 // Ou champ par champ (préfixe @)
-dastra.push(['set', 'dsr:@customFieldSlug1', 'valeur1']);
+dastra.push(['set', 'dsr:@customFieldSlug1', 'valeur1'])
 ```
 
 ### Envoi des paramètres en utilisant le mode page
@@ -108,9 +111,9 @@ Si votre widget est configuré avec un **type d'affichage "Popup"**, nous n'avon
 Cependant, si vous souhaitez que le widget se ferme lorsque l'utilisateur clique en dehors du widget, il est possible de le mettre en place à l'aide du code suivant :
 
 ```javascript
-window.dastra.customerSubjectReady().then((form) => { 
-  form.closeOnBackdrop = true; 
-});
+window.dastra.customerSubjectReady().then((form) => {
+  form.closeOnBackdrop = true
+})
 ```
 
 {% hint style="warning" %}
@@ -125,59 +128,53 @@ Cependant, il est possible de faire cette intégration avec la méthode suivante
 
 ```html
 <html lang="en-GB">
-<body>
-  <h2>My first widget</h2>
-  <div id="widget-1"></div>
-  <h2>My second widget</h2>
-  <div id="widget-2"></div>
-  <script async src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR_PUBLIC_KEY}"></script>
-  <script>
-    dastra = dastra || [];
-    
-    // Widget 1 initialization
-    dastra.push(function () {
-      dastra.loadCustomerSubjectForm({
-        selector: "#widget-1",
-        widgetId: 991, // YOUR_WIDGET_ID_
-        onLoad: function (form) {
-          // Initialization
-        },
-      });
-    });
+  <body>
+    <h2>My first widget</h2>
+    <div id="widget-1"></div>
+    <h2>My second widget</h2>
+    <div id="widget-2"></div>
+    <script
+      async
+      src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR_PUBLIC_KEY}"
+    ></script>
+    <script>
+      window.dastra = window.dastra || []
 
-    // Widget 2 initialization
-    dastra.push(function () {
-      dastra.loadCustomerSubjectForm({
-        selector: "#widget-2",
-        widgetId: 992, // the widget identifier for the second widget
-        onLoad: function (form) {
-          // Initialization
-        },
-      });
-    });
-  </script>
-</body>
+      // Widget 1 initialization
+      window.dastra.push(function () {
+        window.dastra.loadCustomerSubjectForm({
+          selector: '#widget-1',
+          widgetId: 991, // YOUR_WIDGET_ID_
+          onLoad: function (form) {
+            // Initialization
+          }
+        })
+      })
+
+      // Widget 2 initialization
+      window.dastra.push(function () {
+        window.dastra.loadCustomerSubjectForm({
+          selector: '#widget-2',
+          widgetId: 992, // the widget identifier for the second widget
+          onLoad: function (form) {
+            // Initialization
+          }
+        })
+      })
+    </script>
+  </body>
 </html>
 ```
 
 Pour intégrer les champs initiaux dans cette configuration, il faut utiliser le code suivant :
 
 ```html
-window.dastra.push(function () {
-  dastra.loadCustomerSubjectForm({
-    selector: "#customer-subject-form-custom",
-    widgetId: widgetId,
-    onLoad: function (form) {
-      form.initialData = {
-        givenName: "prénomTest"
-      };
-      document
+window.dastra.push(function () {   dastra.loadCustomerSubjectForm({
+    selector: "#customer-subject-form-custom",     widgetId: widgetId,
+    onLoad: function (form) {       form.initialData = {
+        givenName: "prénomTest"       };       document
         .getElementById("customer-request-button")
         .addEventListener("click", function () {
-          form.closeOnBackdrop = true;
-          form.open();
-        });
-    },
-  });
-});
+          form.closeOnBackdrop = true;           form.open();         });     },
+  }); });
 ```
