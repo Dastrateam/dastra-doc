@@ -20,8 +20,9 @@ Le service de consentement de dastra est accessible de cette façon
 
 ```javascript
 <script>
-  dastra = dastra || [] dastra.push(['cookieReady',function(manager)
-  {console.log(manager.consent)});
+  window.dastra = window.dastra || [];
+  window.dastra.push(['cookieReady',function(manager)
+  {console.log(manager.consent)}]);
 </script>
 ```
 
@@ -48,7 +49,7 @@ dastra = dastra || []
 dastra.push(['cookieReady', function(manager){
     // Get the complete consent services list
     var consents = manager.consent.getAllConsents()
-});
+}]);
 </script>
 ```
 
@@ -89,14 +90,14 @@ Utilisez bien les **labels en chaîne de caractères** (ex. `'Analytical'`) et n
 
 ```javascript
 <script>
-dastra = dastra || []
-dastra.push(['cookieReady',function(manager){
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady',function(manager){
     let consents = manager.consent.getPurposeConsent('Analytical');
     manager.consent.setPurposeConsent('Analytical', false);
 
     // persist consent in cookies
     manager.consent.save();
-});
+}]);
 </script>
 ```
 
@@ -113,15 +114,15 @@ Rendez-vous dans l'interface de gestion des services, en éditant un service, le
 
 ```javascript
 <script>
-dastra = dastra || []
-dastra.push(['cookieReady',function(manager){
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady',function(manager){
     let cookieService = 'google-analytics';
     let consents = manager.consent.getServiceConsent(cookieService);
     manager.consent.setServiceConsent(cookieService, false);
 
     // sauvegarder le consentement
     manager.consent.save();
-});
+}]);
 </script>
 ```
 
