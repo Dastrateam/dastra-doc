@@ -10,15 +10,13 @@ description: Apprenez à exporter et importer un registre existant complet dans 
 
 Pour exporter l'ensemble du registre, il vous suffit de vous rendre dans le module "Registre", de cliquer sur la flèche en haut à droite à côté de la création d'un traitement, puis de sélectionner "exporter le registre".
 
-![Menu déroulant du registre comportant la fonctionnalité d'export](<../../.gitbook/assets/capture-web-3-5-2022-164438-app-dastra-eu.jpeg>)
+![Menu déroulant du registre comportant la fonctionnalité d'export](../../.gitbook/assets/capture-web-3-5-2022-164438-app-dastra-eu.jpeg)
 
 Choisissez ensuite le format d'export ainsi que le type d'export désiré (complet ou format article 30), et cliquez sur "Télécharger le fichier". Ca y est, votre registre est exporté !
 
-
-
 ### Format article 30/CNIL
 
-Le format dit article 30 correspond à ce qui est exigé par le RGPD. L'export prendra en compte les champs obligatoires au sens du RGPD. En effet, le RGPD oblige à la création du registre des activités de traitement. Les informations contenues sont :&#x20;
+Le format dit article 30 correspond à ce qui est exigé par le RGPD. L'export prendra en compte les champs obligatoires au sens du RGPD. En effet, le RGPD oblige à la création du registre des activités de traitement. Les informations contenues sont :
 
 * Nom du traitement
 * Finalités (sans les bases légales)
@@ -26,13 +24,9 @@ Le format dit article 30 correspond à ce qui est exigé par le RGPD. L'export p
 * Destinataires et transferts éventuels
 * Mesures de sécurité
 
-
-
 ### Format complet
 
-Le format complet est le format natif de Dastra. Vous exportez l'ensemble des champs composant la fiche de traitement.&#x20;
-
-
+Le format complet est le format natif de Dastra. Vous exportez l'ensemble des champs composant la fiche de traitement.
 
 {% hint style="info" %}
 Il est également possible de n'exporter qu'un ou plusieurs traitements du registre, au lieu du registre entier. Pour cela, sélectionnez les traitements concernés manuellement en cochant les cases à gauche du registre, puis "Choisir une action groupée" et "Exporter".
@@ -50,17 +44,9 @@ Il offre également l'avantage d'importer et de créer directement dans notre pl
 
 Vous pourrez ainsi renseigner vos _Actifs_, vos _Jeux de données_, vos _Acteurs_, vos _Mesures de sécurité_, etc.
 
-
-
 {% embed url="https://youtu.be/88e1j4v-fKQ" %}
 
-Vous pourrez télécharger [ici ](https://docs.google.com/spreadsheets/d/1u\_QLMbx9k4fFm7jBrpnt65i8fVfOzYz8/edit?usp=sharing\&ouid=117505938343554554786\&rtpof=true\&sd=true)le tableur Excel relatif au formatage des données, nécessaire pour un import sans erreurs!
-
-
-
-
-
-
+Vous pourrez télécharger [ici ](https://docs.google.com/spreadsheets/d/1u_QLMbx9k4fFm7jBrpnt65i8fVfOzYz8/edit?usp=sharing\&ouid=117505938343554554786\&rtpof=true\&sd=true)le tableur Excel relatif au formatage des données, nécessaire pour un import sans erreurs!
 
 #### Import Standard
 
@@ -76,15 +62,13 @@ N'hésitez pas à consulter également notre bibliothèque de modèles de traite
 
 Pour importer vos labels de traitements existants, il faut cliquer sur l'onglet "importer vos données" dans la section Registre, onglet Registre:
 
-![](<../../.gitbook/assets/image-10-1-1.png>)
+![](../../.gitbook/assets/image-10-1-1.png)
 
 Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran.
 
-![](<../../.gitbook/assets/image-11-1-1.png>)
+![](../../.gitbook/assets/image-11-1-1.png)
 
-
-
-Remplissez le fichier  téléchargé avec vos labels de traitements en respectant l'ordre suivant :
+Remplissez le fichier téléchargé avec vos labels de traitements en respectant l'ordre suivant :
 
 | Colonne          | Description                           | Valeurs possibles                                   |
 | ---------------- | ------------------------------------- | --------------------------------------------------- |
@@ -97,7 +81,7 @@ Ci-dessous un exemple de fichier respectant le format demandé disponible à l'i
 
 {% file src="../../.gitbook/assets/sample-dataprocessing-18.csv" %}
 
-Importez-le directement dans notre interface par glisser-déposer, puis cliquez sur Continuez.&#x20;
+Importez-le directement dans notre interface par glisser-déposer, puis cliquez sur Continuez.
 
 Ca y est, vos labels de traitements sont importés !
 
@@ -105,9 +89,9 @@ Ca y est, vos labels de traitements sont importés !
 
 Pour importer vos applications/actifs existantes, il faut cliquer sur l'onglet "importer" dans le module Référentiels, onglet Actifs :
 
-![](<../../.gitbook/assets/image-92.png>)
+![](../../.gitbook/assets/image-92.png)
 
-Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran. Remplissez le fichier  téléchargé avec vos applications en respectant l'ordre suivant :
+Ensuite, téléchargez un échantillon de notre fichier tel que présenté à l'écran. Remplissez le fichier téléchargé avec vos applications en respectant l'ordre suivant :
 
 | Colonne                    | Description                             | Valeurs possibles                       |
 | -------------------------- | --------------------------------------- | --------------------------------------- |
@@ -125,7 +109,7 @@ Ci-dessous un exemple de fichier respectant le format demandé disponible à l'i
 
 {% file src="../../.gitbook/assets/sample-applications-example.xlsx" %}
 
-Importez-le directement dans notre interface par glisser-déposer, puis cliquez sur Continuez.&#x20;
+Importez-le directement dans notre interface par glisser-déposer, puis cliquez sur Continuez.
 
 Ca y est, vos applications sont importées !
 
@@ -133,25 +117,23 @@ Ca y est, vos applications sont importées !
 
 Recommencez la procédure similaire aux précédentes depuis le module Référentiels, onglet Acteurs. Ci-dessous un exemple:
 
-{% file src="../../.gitbook/assets/sample-asset.csv" %}
+Votre référentiel des acteurs référence l'ensemble des parties prenantes à un traitement. Personnes morales telles que les sous-traitants, les clients ou les responsables conjoints ou les personnes physiques telles que les interlocuteurs des traitements.
 
-Votre référentiel des acteurs référence l'ensemble des parties prenantes à un traitement. Personnes morales telles que les sous-traitants, les clients ou les responsables conjoints ou les personnes physiques telles que les interlocuteurs des traitements.&#x20;
-
-Ce référentiel sert d'annuaire interne dans l'espace de travail. Pour chaque acteur, vous pourrez définir un type le caractérisant. Par exemple, si vous souhaitez ajouter votre référentiel de sous-traitants, vous ajoutez tous les acteurs et chaque sous-traitant devra être associé à un traitement.&#x20;
+Ce référentiel sert d'annuaire interne dans l'espace de travail. Pour chaque acteur, vous pourrez définir un type le caractérisant. Par exemple, si vous souhaitez ajouter votre référentiel de sous-traitants, vous ajoutez tous les acteurs et chaque sous-traitant devra être associé à un traitement.
 
 ## Etape 4 : import du référentiel des mesures de sécurité
 
 Recommencez la procédure similaire aux précédentes depuis le module Référentiels, onglet Mesures.
 
-## Etape 5 : import du glossaire de données&#x20;
+## Etape 5 : import du glossaire de données
 
 Recommencez la procédure similaire aux précédentes depuis le module Référentiels, onglet Glossaire de données.
 
-## Etape 6 : import du référentiel des jeux de données&#x20;
+## Etape 6 : import du référentiel des jeux de données
 
-Recommencez la procédure similaire aux précédentes depuis  la section Registre, onglet Règles de conservation.
+Recommencez la procédure similaire aux précédentes depuis la section Registre, onglet Règles de conservation.
 
-## Etape 7 : Construction des liaisons&#x20;
+## Etape 7 : Construction des liaisons
 
 Maintenant que les référentiels ont tous été importés, éditez chacun des traitements et remplissez les informations sur la bases des informations importées en suivant le guide ci-dessous:
 
@@ -160,4 +142,3 @@ Maintenant que les référentiels ont tous été importés, éditez chacun des t
 {% endcontent-ref %}
 
 Ca y est, les liaisons sont construites !
-

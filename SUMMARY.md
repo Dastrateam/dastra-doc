@@ -283,7 +283,3 @@
 * [Problèmes connus](divers/problemes-connus.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
 * [Webinaires](https://www.dastra.eu/fr/guide/categories/webinar/26)
-
-***
-
-* [variantes geociblées](variantes-geociblees.md)

@@ -23,8 +23,6 @@ Vous pouvez discuter, à la manière d'un chat, au sujet de tous les éléments 
 
 Voici le schéma du fonctionnement du workflow des discussions internes :
 
-<figure><img src="../../.gitbook/assets/discussionsinternes.drawio.png" alt=""><figcaption></figcaption></figure>
-
 ## Mentions
 
 Vous pouvez **mentionner** les utilisateurs concernés en utilisant le raccourci « @ » de votre clavier. Une liste d’utilisateurs vous sera alors proposée. Vous pouvez effectuer une recherche parmi l’ensemble des utilisateurs de votre espace de travail.
@@ -58,6 +56,6 @@ Une fois la conversation terminée, si vous possédez le droit de fermeture des 
 ### Hub des conversations
 
 Afin de centraliser l'ensemble des conversations ouvertes dans Dastra, vous pouvez accéder [au hub centralisé des conversations ](https://app.dastra.eu/workspace/0/comments). Vous y accédez en cliquant sur ce lien dans la barre de navigation.\
-![](<../../.gitbook/assets/image-413.png>)
+![](../../.gitbook/assets/image-413.png)
 
 Celui-ci regroupe toutes les conversations de votre espace de travail. Vous pouvez ainsi répondre à toutes les questions de vos utilisateurs tout en accédant aux fiches des éléments concernés.
