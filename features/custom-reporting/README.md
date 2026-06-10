@@ -9,7 +9,7 @@ Cette fonctionnalité puissante vous permet de créer des rapports sur mesure, a
 ### Démarrage rapide
 
 1. Cliquez sur le menu à gauche "Rapports personnalisés"\
-   &#x20;![](<../../.gitbook/assets/image (292).png>)
+   &#x20;![](<../../.gitbook/assets/image-292.png>)
 2. Les rapports sont organisés dans un système de catégorie. Avant de créer votre premier rapport, vous devez **créer une première catégorie**
 3. **Cliquez sur créer un rapport** et choisissez une des deux options : créer nouveau rapport ou créer à partir d'un modèle
 
@@ -34,7 +34,7 @@ Cette fonctionnalité puissante vous permet de créer des rapports sur mesure, a
 
 Sélectionnez les différentes tables de données que vous souhaitez requêter : les traitements, les étapes du traitement, finalité, tags... Vous pouvez requêter **jusque 6 tables différentes dans chaque rapport**.
 
-<figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-293.png" alt=""><figcaption></figcaption></figure>
 
 Cliquez sur "Suivant" quand vous avez choisi les tables
 
@@ -46,7 +46,7 @@ Attention, une fois les tables sélectionnées, vous ne pourrez plus revenir en 
 
 Construisez votre rapport en sélectionnant les métriques et dimensions que vous souhaitez afficher.
 
-<figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-291.png" alt=""><figcaption></figcaption></figure>
 
 Cliquez sur le bouton "Enregistrer" en bas à droite de la page
 
@@ -67,14 +67,14 @@ Exemple : Vous sélectionnez la variable "Nb Traitements de données" et "Statut
 
 Une fois le rapport créé, vous serez redirigé sur la page suivante :&#x20;
 
-<figure><img src="../../.gitbook/assets/image (290).png" alt=""><figcaption><p>Capture du résultat des rapports personnalisés</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-290.png" alt=""><figcaption><p>Capture du résultat des rapports personnalisés</p></figcaption></figure>
 
 
 
 Pour ajouter un graphique, cliquez sur "**Ajouter un graphique**".
 
 Vous pouvez alors définir plusieurs catégories de graphique.\
-![](<../../.gitbook/assets/image (289).png>)
+![](<../../.gitbook/assets/image-289.png>)
 
 
 

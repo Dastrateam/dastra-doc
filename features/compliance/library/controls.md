@@ -16,7 +16,7 @@ Un contrôle peut :
 
 ### Suivi et gestion des contrôles
 
-<figure><img src="../../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-480.png" alt=""><figcaption></figcaption></figure>
 
 Les contrôles peuvent être suivis depuis deux points d’entrée complémentaires.
 
@@ -41,7 +41,7 @@ Dans l’onglet **Contrôles** d’un framework, l’utilisateur visualise :
 
 #### 2. Depuis la bibliothèque de contrôles
 
-<figure><img src="../../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-481.png" alt=""><figcaption></figcaption></figure>
 
 La **bibliothèque de contrôles** centralise l’ensemble des contrôles de l’organisation, tous frameworks confondus.
 
@@ -63,7 +63,7 @@ La fenêtre d’édition permet de définir précisément le rôle du contrôle 
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-440.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -88,7 +88,7 @@ L’utilisateur peut ajuster librement la référence proposée.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (441).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-441.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -131,7 +131,7 @@ Les [**tests**](tests.md) permettent de vérifier l’existence, l’application
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-442.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -167,7 +167,7 @@ Un contrôle peut être associé à :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-443.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -177,7 +177,7 @@ Un contrôle peut être associé à :
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-444.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}

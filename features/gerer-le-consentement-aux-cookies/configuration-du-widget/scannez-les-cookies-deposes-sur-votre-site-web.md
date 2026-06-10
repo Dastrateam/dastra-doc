@@ -16,19 +16,19 @@ Vous devez tout d'abord vous connecter à votre votre espace de travail Dastra. 
 
 Ensuite, vous devez vous rendre dans le module "Cookies", et cliquer sur le bouton "Créer un widget".
 
-![Icône du module "Cookies"](<../../../.gitbook/assets/Capture web_5-5-2022_165656_app.dastra.eu.jpeg>)
+![Icône du module "Cookies"](<../../../.gitbook/assets/capture-web-5-5-2022-165656-app-dastra-eu.jpeg>)
 
-![Cliquer sur le bouton "Créer un widget"](<../../../.gitbook/assets/Capture web_5-5-2022_165746_app.dastra.eu.jpeg>)
+![Cliquer sur le bouton "Créer un widget"](<../../../.gitbook/assets/capture-web-5-5-2022-165746-app-dastra-eu.jpeg>)
 
 Un nouvel écran s'affiche. Vous vous trouvez dans la section "Scan des cookies".
 
-![](<../../../.gitbook/assets/Capture web_5-5-2022_165823_app.dastra.eu.jpeg>)
+![](<../../../.gitbook/assets/capture-web-5-5-2022-165823-app-dastra-eu.jpeg>)
 
 ## Scannez les cookies déposés sur votre site web&#x20;
 
 Une fois dans la section "Scan des cookies", il vous suffit de saisir le nom de domaine de votre site internet dans l'espace réservé, et de cliquer sur "Valider".
 
-![Section "Scan des cookies"](<../../../.gitbook/assets/Capture web_5-5-2022_165912_app.dastra.eu.jpeg>)
+![Section "Scan des cookies"](<../../../.gitbook/assets/capture-web-5-5-2022-165912-app-dastra-eu.jpeg>)
 
 {% hint style="info" %}
 Votre nom de domaine doit inclure l'intégralité du préfixe "https://www." pour être pris en compte par notre moteur.
@@ -36,9 +36,9 @@ Votre nom de domaine doit inclure l'intégralité du préfixe "https://www." pou
 
 &#x20;Attendez quelques secondes, et ça y est, les cookies déposés sur votre site web sont identifiés !
 
-![Le scan est en cours](<../../../.gitbook/assets/Capture web_5-5-2022_17030_app.dastra.eu.jpeg>)
+![Le scan est en cours](<../../../.gitbook/assets/capture-web-5-5-2022-17030-app-dastra-eu.jpeg>)
 
-![Ecran d'affichage des cookies](<../../../.gitbook/assets/image (51).png>)
+![Ecran d'affichage des cookies](<../../../.gitbook/assets/image-51.png>)
 
 Une fois les cookies déposés sur votre site web scannés, vous pouvez procéder à leur classification.
 

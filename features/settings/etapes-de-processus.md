@@ -26,7 +26,7 @@ Cliquez dans "Réglages" puis "Etapes de processus"&#x20;
 
 Vous accéderez ainsi aux différentes étapes et statuts ("brouillon" ou "publié") de workflow disponible par processus. Personnalisez-les à votre convenance puis cliquez sur "enregistrer".
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-10-1.png" alt=""><figcaption></figcaption></figure>
 
 ## Peut-on supprimer une étape de workflow ?
 
@@ -36,8 +36,8 @@ Les éléments attachés à l'étape supprimée seront automatiquement rattaché
 
 Par exemple, si vous supprimez l'étape "En cours" dans les workflow de tâches :
 
-<figure><img src="../../.gitbook/assets/image (9) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-9-2-2.png" alt=""><figcaption></figcaption></figure>
 
 Les objets attachés passeront à l'étape "Besoins d'infos" :
 
-<figure><img src="../../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-11-2.png" alt=""><figcaption></figcaption></figure>

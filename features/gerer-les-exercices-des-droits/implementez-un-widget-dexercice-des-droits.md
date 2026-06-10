@@ -23,8 +23,6 @@ Il est totalement personnalisable et offre :
 
 Voici le schéma général du fonctionnement d’un widget d’exercice de droits dans Dastra :
 
-![Schéma du processus de gestion des exercices de droit](../../.gitbook/assets/Diapositive1.SVG)
-
 Ce diagramme illustre le processus :
 
 1. La personne concernée soumet une demande via le widget.
@@ -49,7 +47,7 @@ Lors de la création d’un widget, vous définissez :
 * Les **types de droits disponibles** (information, rectification, effacement, etc.).
 * Les liens de redirection (succès, erreur, politique de confidentialité).
 
-<figure><img src="../../.gitbook/assets/widget_config.png" alt=""><figcaption><p>Configuration du widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/widget-config.png" alt=""><figcaption><p>Configuration du widget</p></figcaption></figure>
 
 ***
 
@@ -67,7 +65,7 @@ Options disponibles :
 * Affichage de la barre de progression.
 * CSS personnalisé (pour les "experts")
 
-<figure><img src="../../.gitbook/assets/widget_apparence_fr.png" alt=""><figcaption><p>Adaptez l'apparence du widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/widget-apparence-fr.png" alt=""><figcaption><p>Adaptez l'apparence du widget</p></figcaption></figure>
 
 ***
 
@@ -79,7 +77,21 @@ Vous pouvez choisir les champs qui apparaissent dans le formulaire.
 * Vous pouvez ajouter des champs facultatifs (téléphone, adresse, code postal, ville, pays, etc.).
 * Possibilité d’ajouter vos propres **champs personnalisés**.
 
-<figure><img src="../../.gitbook/assets/widget_customization_field-config_fr.png" alt=""><figcaption><p>Personnalisez les champs disponibles dans le widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/widget-customization-field-config-fr.png" alt=""><figcaption><p>Personnalisez les champs disponibles dans le widget</p></figcaption></figure>
+
+***
+
+### Logique conditionnelle (skip logic)
+
+Il est possible de définir des **règles d'affichage conditionnel** directement sur les champs du modèle de widget DSR : un champ apparaît uniquement si la réponse à une question précédente remplit une condition définie.
+
+Ces règles sont interprétées dynamiquement côté répondant — le formulaire s'adapte en temps réel à mesure que les réponses sont saisies.
+
+Cela vous permet de :
+
+* Afficher ou masquer des champs selon le type de droit exercé, la nature de la demande ou toute réponse antérieure
+* Gérer plusieurs scénarios au sein d'un **widget unique**, sans créer et maintenir un formulaire distinct par variante
+* Réduire la charge de maintenance lors des évolutions de contenu ou des exigences de conformité
 
 ***
 
@@ -94,7 +106,7 @@ Le widget peut être intégré de différentes manières :
 
 Le code fourni est un snippet HTML + script JavaScript à insérer sur votre site ou dans un gestionnaire de tag (par exemple Google Tag Manager).
 
-<figure><img src="../../.gitbook/assets/widget_installation_fr.png" alt=""><figcaption><p>Guide d'installation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/widget-installation-fr.png" alt=""><figcaption><p>Guide d'installation</p></figcaption></figure>
 
 ***
 
@@ -103,7 +115,7 @@ Le code fourni est un snippet HTML + script JavaScript à insérer sur votre sit
 Le widget est multilingue : vous pouvez ajouter plusieurs langues et personnaliser les traductions.\
 La première langue de la liste sera affichée par défaut.
 
-<figure><img src="../../.gitbook/assets/widget_langues.png" alt=""><figcaption><p>Personnalisation des textes du widget</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/widget-langues.png" alt=""><figcaption><p>Personnalisation des textes du widget</p></figcaption></figure>
 
 Pour chaque langue, vous pouvez modifier les textes affichés :
 
@@ -111,7 +123,7 @@ Pour chaque langue, vous pouvez modifier les textes affichés :
 * Messages avant les liens de politique de confidentialité.
 * Textes de boutons ou d’instructions.
 
-<figure><img src="../../.gitbook/assets/widget_langues_surcharge-traduction.png" alt=""><figcaption><p>Changez facilement une partie du texte</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/widget-langues-surcharge-traduction.png" alt=""><figcaption><p>Changez facilement une partie du texte</p></figcaption></figure>
 
 ***
 

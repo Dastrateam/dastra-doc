@@ -20,7 +20,7 @@ Une fois le widget implémenté, DASTRA collecte automatiquement pour vous les p
 
 Pour les consulter, il suffit de se rendre dans l'interface "Consentement" du module de Consentement aux cookies DASTRA.
 
-![Interface "Consentement"](<../../../.gitbook/assets/Capture web\_6-5-2022\_95747\_app.dastra.eu.jpeg>)
+![Interface "Consentement"](<../../../.gitbook/assets/capture-web-6-5-2022-95747-app-dastra-eu.jpeg>)
 
 {% hint style="info" %}
 A partir de cette interface, vous pouvez également personnaliser les preuves de consentement collectées, exporter les données, filtrer par date ou widget de cookies, notamment.

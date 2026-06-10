@@ -38,7 +38,7 @@
   * [Etape 2 : Cartographier vos traitements de données à caractère personnel et établir le registre](getting-started/tutoriel/etape-2-cartographier-vos-traitements-de-donnees-a-caractere-personnel-et-etablir-le-registre.md)
   * [Etape 3 : Gérer les risques](getting-started/tutoriel/etape-4-gerer-les-risques.md)
   * [Etape 4 : Prioriser les actions à mener](getting-started/tutoriel/etape-3-prioriser-les-actions-a-mener.md)
-  * [Etape 5 :  Implémenter les processus internes](getting-started/tutoriel/etape-5-implementer-les-processus-internes.md)
+  * [Etape 5 : Implémenter les processus internes](getting-started/tutoriel/etape-5-implementer-les-processus-internes.md)
   * [Etape 6 : Documenter la conformité](getting-started/tutoriel/etape-6-documenter-la-conformite.md)
 * [Support](getting-started/le-support/README.md)
   * [L'assistant dastronaute](getting-started/le-support/lassistant-dastronaute.md)
@@ -108,6 +108,7 @@
     * [AIPD / PIA](features/audit/types-de-questionnaires/pia-aipd.md)
     * [Analyse d'impact sur les transferts (TIA)](features/audit/types-de-questionnaires/tia.md)
     * [Test d'équilibre des intérêts légitimes (LIA)](features/audit/types-de-questionnaires/lia.md)
+  * [Traduire un formulaire avec l'IA](features/audit/traduire-un-formulaire-avec-lia.md)
   * [Supprimer un questionnaire ou un modèle](features/audit/supprimer-un-audit-ou-un-modele-daudit.md)
   * [Questions fréquentes](features/audit/faq.md)
 * [Trust center](features/trust-center/README.md)
@@ -164,6 +165,7 @@
     * [Personnalisation des emails envoyés aux demandeurs](features/gerer-les-exercices-des-droits/fonctionnalites-avancees-liees-aux-exercices-de-droits/personnalisation-des-emails-envoyes-aux-demandeurs.md)
     * [Règles de purge des demandes](features/gerer-les-exercices-des-droits/fonctionnalites-avancees-liees-aux-exercices-de-droits/regles-de-purge-des-demandes.md)
   * [Implémenter un widget d’exercice des droits](features/gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md)
+  * [Synchronisation des widgets](features/gerer-les-exercices-des-droits/synchronisation-des-widgets.md)
   * [Intégration technique](features/gerer-les-exercices-des-droits/integration-technique.md)
   * [Intégration de l'API](features/gerer-les-exercices-des-droits/integration-de-lapi.md)
   * [Questions fréquentes](features/gerer-les-exercices-des-droits/questions-frequentes.md)
@@ -281,7 +283,3 @@
 * [Problèmes connus](divers/problemes-connus.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
 * [Webinaires](https://www.dastra.eu/fr/guide/categories/webinar/26)
-
-***
-
-* [variantes geociblées](variantes-geociblees.md)

@@ -39,7 +39,7 @@ Cela signifie que :
 
 👉 Tant que le projet n’est pas en phase de **surveillance**, la modification ou la validation des preuves n’est pas recommandée.
 
-<figure><img src="../../../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-458.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -62,13 +62,9 @@ Les tests peuvent être :
 {% endcolumn %}
 
 {% column %}
-
-
-<figure><img src="../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-459.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
-
-
 
 ***
 
@@ -84,7 +80,7 @@ Pour chaque risque, vous pouvez :
 
 Cette approche permet de visualiser concrètement l’effet des contrôles sur la posture de risque.
 
-<figure><img src="../../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-461.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -118,7 +114,7 @@ Chaque connecteur est configuré avec :
 * une **fréquence d’exécution**,
 * des **paramètres de collecte** adaptés au test.
 
-<figure><img src="../../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-462.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

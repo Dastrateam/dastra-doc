@@ -20,7 +20,7 @@ Avec Dastra, vous pourrez :
 * **Rationaliser vos opérations** d’évaluation, de contrôle, de reporting et de suivi des tâches de remédiation ;
 * Vous assurer de la **mise à jour,** de la **qualité** et de la **disponibilité** des données risques.<br>
 
-![Tuile de synthèse des risques](<../../.gitbook/assets/Capture d’écran 2022-03-15 140621.png>)
+![Tuile de synthèse des risques](<../../.gitbook/assets/screenshot-2022-03-15-140621.png>)
 
 ## Associer un risque&#x20;
 
@@ -31,7 +31,7 @@ Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi 
 * Acteur ou sous-traitant
 * Actif&#x20;
 
-<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption><p>Exemple de visualisation consolidée des risques</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-282.png" alt=""><figcaption><p>Exemple de visualisation consolidée des risques</p></figcaption></figure>
 
 ## Aller plus loin
 

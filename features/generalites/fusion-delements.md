@@ -29,12 +29,12 @@ L'outil de fusion peut être utilisé sur :
 
 Il vous suffit de sélectionner les éléments à fusionner :
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (416) (1).png" alt=""><figcaption><p><br></p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image-416-1.png" alt=""><figcaption><p><br></p></figcaption></figure></div>
 
 Puis de cliquer sur "Choisir une action groupée" et "fusionner les données" :&#x20;
 
 \
-![](<../../.gitbook/assets/image (417).png>)
+![](<../../.gitbook/assets/image-417.png>)
 
 
 
@@ -43,7 +43,7 @@ Vous accéderez alors à une page dédiée qui vous permettra de :
 Sélectionner l’élément principal à conserver après fusion.
 
 Choisir les champs des éléments à supprimer que vous souhaitez récupérer dans l’élément principal.\
-![](<../../.gitbook/assets/image (418).png>)
+![](<../../.gitbook/assets/image-418.png>)
 
 Si des champs n'apparaissent pas sur cette page, ce seront les valeurs des champs de l'élément conservé qui seront automatiquement conservées.\
 \

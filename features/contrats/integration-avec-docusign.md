@@ -4,13 +4,13 @@ Nous avons mis en place une intégration native entre Dastra et DocuSign, leader
 
 Rendez vous dans [les réglages de votre espace de travail, onglet intégrations](https://app.dastra.eu/workspace/2/settings/integrations), pour mettre en place l'intégration et y avoir accès dans la partie signature d'un contrat.
 
-<figure><img src="../../.gitbook/assets/image (360).png" alt=""><figcaption><p>Sélectionnez Docusign dans les intégrations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-360.png" alt=""><figcaption><p>Sélectionnez Docusign dans les intégrations</p></figcaption></figure>
 
 Une fois l'intégration Docusign ouverte, veuillez cliquer sur "Ajouter l'intégration", vous serez alors redirigé vers l'authentification Docusign pour associer votre compte Docusign à Dastra.
 
 Une fois la connexion établie, il vous faudra renseigner dans Dastra votre Docusign  AccountId et votre Docusign Account Base URI que vous[ retrouvez ici](https://apps.docusign.com/admin/apps-and-keys).&#x20;
 
-<figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption><p>Les clés à renseigner dans Dastra provenant de votre compte Docusign</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-361.png" alt=""><figcaption><p>Les clés à renseigner dans Dastra provenant de votre compte Docusign</p></figcaption></figure>
 
 Une fois ces champs renseignés, vous avez terminé le paramétrage de l'intégration. Vous pouvez désormais vous rendre dans le module contrat et gérer les signature de vos contrat de manière électronique.&#x20;
 
@@ -22,8 +22,8 @@ Pour pouvoir valider cette page, il vous faut impérativement un acteur (signata
 
 Vous pouvez ajouter des instructions détaillées pour la signature du document, ces dernières seront incluses au mail d'invitation à signer et seront également visibles par le signataire dans l'interface Docusign lorsqu'il accèdera au document à signer.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption><p>Interface d'envoi de signature par Docusign via Dastra</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-362.png" alt=""><figcaption><p>Interface d'envoi de signature par Docusign via Dastra</p></figcaption></figure>
 
 Une fois la signature envoyée, son statut est automatiquement synchronisé sur votre contrat et sera mis à jour à chaque changement de statut de la signature côté Docusign.
 
-<figure><img src="../../.gitbook/assets/image (363).png" alt=""><figcaption><p>Une signature en attente</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-363.png" alt=""><figcaption><p>Une signature en attente</p></figcaption></figure>

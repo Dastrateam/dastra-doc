@@ -6,7 +6,7 @@ La phase d'Audit permet de valider officiellement l'état de conformité à un i
 
 Préparer et réaliser l'ensemble des audits de conformité de manière centralisée, collaborer avec les parties prenantes et assurer le suivi des corrections suite aux écarts détectés.
 
-<figure><img src="../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-509.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -23,7 +23,7 @@ Le module Audit transforme la conformité théorique en une réalité mesurable 
 
 Dastra offre une gestion multi-utilisateurs pour piloter la conformité à l'échelle d'un groupe, ainsi qu'une interopérabilité totale via des APIs et des exports multi-formats.
 
-<figure><img src="../../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-508.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -37,7 +37,7 @@ La création d'une mission est le point de départ de votre évaluation. Depuis 
 * Description (optionnel) : Précisez le contexte ou le périmètre spécifique (jusqu'à 500 caractères).
 * Auditeurs (obligatoire) : Sélectionnez les utilisateurs responsables de la réalisation de l'évaluation. Si vous ne figurez pas dans cette liste, vous ne pourrez pas répondre aux questions de l'audit (même si vous êtes propriétaire de l'organisation).&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-510.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -118,7 +118,7 @@ L'interface d'évaluation est conçue pour offrir une visibilité complète sur 
 * Zone centrale de travail : Présente l'objectif de l'exigence sélectionnée et la liste exhaustive des contrôles et tests associés.
 * Panneau de décision (droite) : Regroupe les outils de notation, la saisie des commentaires et l'historique des modifications.
 
-<figure><img src="../../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-507.png" alt=""><figcaption></figcaption></figure>
 
 #### Vérification des preuves (Contrôles et Tests)
 
@@ -177,7 +177,7 @@ L'audit finalisé alimente instantanément la gouvernance de l'organisation grâ
 
 Les résultats sont consolidés dans une vue d'ensemble affichant le pourcentage de conformité par audit (ex: 75% pour le NIST, 57% pour le RGPD). Ces indicateurs permettent de comparer le niveau de sécurité entre différentes entités ou projets.
 
-<figure><img src="../../../.gitbook/assets/image (506).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-506.png" alt=""><figcaption></figcaption></figure>
 
 **Export et Archivage**
 

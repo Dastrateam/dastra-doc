@@ -24,11 +24,11 @@ Au delà de l'obligation règlementaire, le stockage et l’analyse des rapports
 
 DASTRA vous permet de constituer un registre des violations de données. Pour cela, rendez-vous dans l'application DASTRA, puis cliquez sur le module **Violations** disponible dans le bandeau à gauche de l'écran :
 
-![Bouton du module de gestion des violations](<../../.gitbook/assets/Capture web\_5-5-2022\_163811\_app.dastra.eu.jpeg>)
+![Bouton du module de gestion des violations](<../../.gitbook/assets/capture-web-5-5-2022-163811-app-dastra-eu.jpeg>)
 
 Le registre des violations de données apparaît.
 
-![L'espace de gestion des violations](<../../.gitbook/assets/Capture web\_5-5-2022\_163922\_app.dastra.eu.jpeg>)
+![L'espace de gestion des violations](<../../.gitbook/assets/capture-web-5-5-2022-163922-app-dastra-eu.jpeg>)
 
 ## Aller plus loin
 

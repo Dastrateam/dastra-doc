@@ -16,7 +16,7 @@ En utilisant par exemple notre modèle de clauses types, vous garantissez que vo
 
 
 
-<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption><p>Sélectionnez le modèle de contrat que vous souhaitez utiliser</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-367.png" alt=""><figcaption><p>Sélectionnez le modèle de contrat que vous souhaitez utiliser</p></figcaption></figure>
 
 
 
@@ -26,17 +26,17 @@ Pour reprendre l'exemple du DPA, il vous sera par exemple demandé de choisir le
 
 
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption><p>Répondez à quelques questions pour nous permettre de compléter le modèle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-368.png" alt=""><figcaption><p>Répondez à quelques questions pour nous permettre de compléter le modèle</p></figcaption></figure>
 
 Une fois ces questions répondues, votre contrat est généré automatiquement et peuplé dynamiquement avec toutes les informations nécessaires (plus votre registre et vos référentiels seront complets, plus les informations insérées dans le modèle de contrat seront pertinentes).
 
 Vous avez alors la possiblité de modifier ou de remettre en page le document que nous vous proposons  dans une vue aperçu.
 
-<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption><p>Vous pouvez vérifier et modifier le document que nous générons automatiquement avant validation finale</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-369.png" alt=""><figcaption><p>Vous pouvez vérifier et modifier le document que nous générons automatiquement avant validation finale</p></figcaption></figure>
 
 Une fois que vous êtes satisfait de votre document, il ne vous reste plus qu'à donner un titre à votre contrat, sélectionner le format de génération (.docx ou .pdf), l'emplacement de stockage et cliquer sur 'Créer un contrat'
 
-<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption><p>Le document est généré et inséré directement dans notre module de gestion contractuelle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-370.png" alt=""><figcaption><p>Le document est généré et inséré directement dans notre module de gestion contractuelle</p></figcaption></figure>
 
 ### Cas d'usage: générer un DPA depuis une fiche de traitement
 
@@ -44,7 +44,7 @@ Plutôt que de partir de votre module de contrat, sélectionner le modèle DPA e
 
 Pour se faire, sélectionnez la fiche de traitement pour laquelle vous souhaitez établir un DPA et rendez vous dans l'étape destinataire. Sélectionnez le destinataire de type sous-traitant avec qui vous souhaitez établir le DPA et cliquez sur "Générer un DPA"
 
-<figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption><p>Générer un DPA avec un sous traitant directement depuis une fiche de traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-371.png" alt=""><figcaption><p>Générer un DPA avec un sous traitant directement depuis une fiche de traitement</p></figcaption></figure>
 
 Vous serez alors redirigé vers notre génération de contrat avec le modèle DPA automatiquement sélectionné et paramétré avec le traitement et le sous-traitant sur lequel vous avez cliqué.
 

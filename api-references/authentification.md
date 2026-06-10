@@ -14,7 +14,7 @@ Votre clé d'API permet de faire beaucoup de chose, c'est pourquoi, vous devez l
 
 Si vous souhaitez utiliser l'authentification OAuth2 en mode "authorization\_code", il sera nécessaire de bien configurer le ou les urls de redirection ainsi que les origines CORs autorisées.
 
-![](<../.gitbook/assets/image (249) (1) (1) (1).png>)
+![](<../.gitbook/assets/image-249-1-1-1.png>)
 
 ## Clé d'api (X-API-Key)&#x20;
 
@@ -54,7 +54,7 @@ https://account.dastra.eu/connect/authorize?
 
 L'authentification de l'API s'effectue grâce à l'aide du [protocole OAuth2](https://oauth.net/2/) utilisant le flow "Client credential". Ce mode d'authentification doit être utilisé uniquement pour des requêtes de serveur à serveur et ne doit en aucun cas être utilisé côté navigateur (SPA en javascript par exemple).
 
-![](<../.gitbook/assets/API authentication scheam.svg>)
+![](<../.gitbook/assets/api-authentication-scheam.svg>)
 
 ### Récupération du token
 

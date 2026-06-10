@@ -6,6 +6,6 @@ description: >-
 
 # Conformité RGAA
 
-{% file src="../../.gitbook/assets/Audit RGAA.zip" %}
+{% file src="../../.gitbook/assets/audit-rgaa.zip" %}
 Téléchargez le rapport d'audit RGAA
 {% endfile %}

@@ -2,7 +2,7 @@
 
 Mettez en place des connecteurs entre Dastra et vos autres applications favorites pour automatiser vos flux de travail et gagner du temps.
 
-![](<../../../.gitbook/assets/connectors (1).svg>)
+![](../../../.gitbook/assets/connectors.svg)
 
 {% hint style="info" %}
 [Accéder à la page Dastra du catalogue Zapier](https://zapier.com/apps/dastra/integrations)
@@ -10,7 +10,7 @@ Mettez en place des connecteurs entre Dastra et vos autres applications favorite
 
 ### Présentation de Zapier
 
-Zapier est un outil d'automatisation en ligne qui connecte vos applications et services. Vous pouvez connecter deux ou plusieurs applications pour automatiser des tâches répétitives sans avoir à coder ou à faire appel à des développeurs pour réaliser l'intégration.&#x20;
+Zapier est un outil d'automatisation en ligne qui connecte vos applications et services. Vous pouvez connecter deux ou plusieurs applications pour automatiser des tâches répétitives sans avoir à coder ou à faire appel à des développeurs pour réaliser l'intégration.
 
 Avec Zapier, vous allez mettre en place des Zaps (ou intégrations).
 
@@ -64,14 +64,11 @@ Vous pouvez partir d'un des deux déclencheurs côté Dastra pour effectuer des 
 {% endhint %}
 
 {% hint style="info" %}
-Consulter la [documentation Zapier](https://zapier.com/help) pour plus d'informations sur la mise en place d'un connecteur&#x20;
+Consulter la [documentation Zapier](https://zapier.com/help) pour plus d'informations sur la mise en place d'un connecteur
 {% endhint %}
 
-Vous êtes maintenant prêt à vous lancer dans le monde de l'automatisation et à mettre en place votre premier connecteur.&#x20;
+Vous êtes maintenant prêt à vous lancer dans le monde de l'automatisation et à mettre en place votre premier connecteur.
 
-Suivez notre guide pas à pas pour automatiser vos demandes d'exercice de droits:&#x20;
+Suivez notre guide pas à pas pour automatiser vos demandes d'exercice de droits:
 
 {% embed url="https://www.dastra.eu/fr/guide/automatisation-exercice-de-droits/51571" %}
-
-
-

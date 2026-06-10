@@ -14,7 +14,7 @@ Dans Dastra, il est possible de synchroniser toutes les actions créées dans d'
 
 Pour cela, rendez-vous sur l'onglet "Colonnes" ou "Tableau" dans le module "Planification", puis cliquez sur la flèche en haut à droite de l'écran, à côté du bouton "nouvelle tâche". Cliquez ensuite sur "Synchronisez avec mon calendrier (Outlook...).
 
-![Le menu déroulant des tâches](<../../.gitbook/assets/Capture web\_4-5-2022\_152356\_app.dastra.eu.jpeg>)
+![Le menu déroulant des tâches](<../../.gitbook/assets/capture-web-4-5-2022-152356-app-dastra-eu.jpeg>)
 
 Cela permettra de générer un **lien** et/ou de télécharger un **fichier .ics** avec lequel il sera possible de synchroniser le calendrier des tâches qui vous sont assignées avec n'importe quelle application de calendrier (Outlook, Google…).
 

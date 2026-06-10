@@ -21,5 +21,5 @@ Il est nécessaire pour accéder à la fonctionnalité de disposer dans votre ab
 
 Vous accédez aux Trust center depuis la barre de navigation latérale de l'application
 
-<figure><img src="../../.gitbook/assets/image (404).png" alt=""><figcaption><p>Aperçu d'unTrust center de démonstration avec tous les modules activés</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-404.png" alt=""><figcaption><p>Aperçu d'unTrust center de démonstration avec tous les modules activés</p></figcaption></figure>
 

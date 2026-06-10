@@ -21,7 +21,7 @@ Il est possible de relancer les personnes qui n'ont pas répondu au questionnair
 
 Il est possible de rattacher le questionnaire à un autre module spécifique. Pour ce faire, à la configuration de votre modèle de questionnaire, après lui avoir donné un nom et une description, attachez-lui un élément qui sera l'objet du questionnaire.
 
-![Sélecteur de l'élément évalué dans la configuration](<../../.gitbook/assets/Capture web\_6-5-2022\_111340\_app.dastra.eu.jpeg>)
+![Sélecteur de l'élément évalué dans la configuration](<../../.gitbook/assets/capture-web-6-5-2022-111340-app-dastra-eu.jpeg>)
 
 Lorsque votre questionnaire a déjà été créé, il est tout de même possible a posteriori de lui attacher un élément. Allez dans le questionnaire, cliquez sur le bouton "Modifier le modèle", puis sur le bouton "Configurer" situé en dessous du bouton "Enregistrer". Vous reviendrez alors sur l'onglet initial de configuration du modèle.
 
@@ -29,10 +29,10 @@ Ces objets peuvent être des acteurs, actifs, applications, traitements de donn�
 
 Ensuite, lorsque vous planifierez votre questionnaire, une nouvelle case "Objet lié au questionnaire" apparaîtra. Le sélecteur vous permettra de choisir plus précisément à quel objet vous lierez le questionnaire.
 
-![Un exemple d'élément attaché : un traitement de données](<../../.gitbook/assets/Capture web\_6-5-2022\_11277\_app.dastra.eu.jpeg>)
+![Un exemple d'élément attaché : un traitement de données](<../../.gitbook/assets/capture-web-6-5-2022-11277-app-dastra-eu.jpeg>)
 
 {% hint style="info" %}
-Vous ne pouvez lier un questionnaire qu'à un seul objet dans Dastra. C'est une limitation connue.
+Vous ne pouvez lier un questionnaire qu'à un seul objet dans Dastra.
 {% endhint %}
 
 ## Comment générer un plan d'actions à partir d'un questionnaire ?

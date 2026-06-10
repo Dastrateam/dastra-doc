@@ -50,7 +50,7 @@ Lors de la création d’un périmètre, l’utilisateur renseigne :
 * une **description optionnelle**
 * les **unités organisationnelles** incluses dans le périmètre (obligatoire)
 
-<figure><img src="../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-456.png" alt=""><figcaption></figcaption></figure>
 
 👉 Un périmètre doit toujours contenir **au moins une unité organisationnelle**.
 

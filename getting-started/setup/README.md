@@ -12,7 +12,7 @@ Cette section vous guide pas à pas pour créer votre premier espace de travail,
 
 Commencez par créer votre espace de travail :<br>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-9.png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="espace-de-travail.md" %}
 [espace-de-travail.md](espace-de-travail.md)

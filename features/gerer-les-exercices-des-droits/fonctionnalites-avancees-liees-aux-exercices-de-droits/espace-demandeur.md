@@ -9,6 +9,6 @@ Depuis cet espace, le demandeur peut :
 * Répondre et échanger directement avec le responsable.
 * Télécharger ou déposer des documents justificatifs.
 
-<figure><img src="../../../.gitbook/assets/espace_discussion_demandeur.png" alt=""><figcaption><p>L'espace d'échange avec le demandeur</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/espace-discussion-demandeur.png" alt=""><figcaption><p>L'espace d'échange avec le demandeur</p></figcaption></figure>
 
 Cet espace permet d’assurer la traçabilité, le suivi et la transparence des échanges, tout en évitant les envois non sécurisés par email classique.
