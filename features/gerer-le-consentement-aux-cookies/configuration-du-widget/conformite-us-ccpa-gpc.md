@@ -59,8 +59,8 @@ var isOptOut = navigator.globalPrivacyControl === true
             || window.doNotTrack === "1";
 
 if (isOptOut) {
-  dastra = dastra || [];
-  dastra.push(['cookieReady', function(manager) {
+  window.dastra = window.dastra || [];
+  window.dastra.push(['cookieReady', function(manager) {
     if (!manager.consent.hasConsented()) {
       manager.consent.setPurposeConsent('Analytical', false);
       manager.consent.setPurposeConsent('Marketing', false);
@@ -98,6 +98,77 @@ Les labels de catégories à utiliser avec `setPurposeConsent` :
 | Marketing   | `Marketing`    |
 | Autre       | `Other`        |
 | Non classé  | `Unclassified` |
+
+### 3. Afficher un message d'acquittement ("Opt-Out Request Honored")
+
+Lorsqu'un signal GPC ou DNT est détecté, les réglementations comme la CPRA recommandent d'informer l'utilisateur que sa demande a bien été prise en compte. Dastra ne génère pas ce message nativement — vous devez l'injecter dans la page.
+
+Deux approches sont possibles selon l'expérience utilisateur souhaitée.
+
+#### Option A — Toast éphémère
+
+Un message qui apparaît quelques secondes puis disparaît automatiquement. Simple à intégrer, mais l'utilisateur peut le manquer s'il ne regarde pas la page au bon moment.
+
+```html
+<script>
+var isOptOut = navigator.globalPrivacyControl === true
+            || navigator.doNotTrack === "1"
+            || window.doNotTrack === "1";
+
+if (isOptOut) {
+  window.dastra = window.dastra || [];
+  window.dastra.push(['cookieReady', function(manager) {
+    if (!manager.consent.hasConsented()) {
+      manager.consent.setPurposeConsent('Analytical', false);
+      manager.consent.setPurposeConsent('Marketing', false);
+      manager.consent.dispatchEvent();
+
+      var notice = document.createElement('div');
+      notice.setAttribute('role', 'status');
+      notice.style.cssText = 'position:fixed;bottom:16px;left:16px;background:#222;color:#fff;padding:12px 18px;border-radius:6px;font-size:14px;z-index:9999;max-width:320px;';
+      notice.textContent = 'Demande de confidentialité prise en compte : les cookies analytiques et marketing ont été désactivés.';
+      document.body.appendChild(notice);
+      setTimeout(function() { notice.remove(); }, 6000);
+    }
+  }]);
+}
+</script>
+```
+
+#### Option B — Bandeau persistant (recommandé)
+
+Un bandeau fixe en bas de page, visible tant que GPC est actif dans le navigateur. Plus robuste pour la conformité : l'indication est permanente, pas seulement visible au premier chargement. Un bouton "Dismiss" permet à l'utilisateur de le fermer.
+
+```html
+<script>
+var isOptOut = navigator.globalPrivacyControl === true
+            || navigator.doNotTrack === "1"
+            || window.doNotTrack === "1";
+
+if (isOptOut) {
+  window.dastra = window.dastra || [];
+  window.dastra.push(['cookieReady', function(manager) {
+    if (!manager.consent.hasConsented()) {
+      manager.consent.setPurposeConsent('Analytical', false);
+      manager.consent.setPurposeConsent('Marketing', false);
+      manager.consent.dispatchEvent();
+
+      var bar = document.createElement('div');
+      bar.setAttribute('role', 'status');
+      bar.setAttribute('aria-live', 'polite');
+      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;font-size:13px;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;z-index:9999;border-top:1px solid #333';
+      bar.innerHTML = '<span>🔒 Demande de confidentialité prise en compte — les cookies analytiques et marketing sont désactivés.</span>'
+        + '<button onclick="this.parentNode.remove()" style="background:none;border:1px solid #555;color:#fff;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:16px">Fermer</button>';
+      document.body.appendChild(bar);
+    }
+  }]);
+}
+</script>
+```
+
+{% hint style="info" %}
+Adaptez le texte à votre charte éditoriale et à la langue de vos utilisateurs. Pour les sites multilingues, conditionnez le texte en fonction de la locale de la page.
+{% endhint %}
 
 ***
 

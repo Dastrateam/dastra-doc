@@ -108,3 +108,23 @@ Par défaut, le widget émet plusieurs évènements sur l'élément window de la
 | dastra:consents:updated           | Se déclenche si les consentements ont été mis à jour par l'utilisateur (accepté, refusé ou configuré)                                                                                                                            |
 | dastra:consents:any\_refused      | Se déclenche si au moins un cookie a été refusé explicitement par l'utilisateur via la modal                                                                                                                                     |
 | dastra:consents:all\_accepted     | Se déclenche si tous les services ont été acceptés par l'utilisateur via la modal                                                                                                                                                |
+
+***
+
+### Foire aux questions
+
+**Peut-on bloquer un script par catégorie plutôt que par service ? (ex. `data-consent="analytics"`)**
+
+Non. L'attribut `data-consent` attend un **slug de service**, pas un slug de catégorie. Il n'est pas possible d'écrire `<script data-consent="analytics" type="dastra/script">` pour bloquer tous les services d'une catégorie en une seule directive.
+
+La raison : un utilisateur peut accepter certains services d'une catégorie tout en en refusant d'autres au sein de cette même catégorie. Le widget gère le consentement au niveau du service, pas de la catégorie.
+
+Si vous souhaitez conditionner le chargement d'un script à l'acceptation d'une catégorie entière, utilisez l'API programmatique :
+
+```javascript
+window.addEventListener('dastra:consents:updated', function() {
+  if (window.dastra.cookieConsent.consent.getPurposeConsent('Analytical')) {
+    // charger vos scripts analytics ici
+  }
+});
+```
