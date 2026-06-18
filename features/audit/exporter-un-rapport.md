@@ -9,7 +9,7 @@ Une fois les réponses collectées et le questionnaire validé, vous pouvez expo
 Depuis la vue de la réponse, les actions suivantes sont disponibles :
 
 * **Consulter** : revoir toutes les réponses et les scores directement dans Dastra
-* **Valider** : approuver la réponse et la passer au statut "Publié"
+* **Valider** : approuver la réponse et la passer au statut "Validé"
 * **Exporter** : télécharger le rapport au format PDF ou autre
 * **Archiver** : archiver la réponse pour garder votre espace de travail propre sans supprimer les données
 

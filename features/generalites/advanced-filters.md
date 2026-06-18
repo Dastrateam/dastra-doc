@@ -57,6 +57,39 @@ Vous pouvez **partager une vue** avec les autres utilisateurs de votre espace de
 
 Cette fonctionnalité est disponible dans toutes les sections listant des objets : demandes d'exercice de droits, registre des traitements, actifs, contrats, systèmes d'IA, violations de données…
 
+## Groupes de conditions
+
+Les filtres avancés supportent désormais les **groupes de conditions**, ce qui permet de construire des logiques de filtrage complexes combinant des opérateurs **ET** et **OU** au sein d'une même vue.
+
+### Principe
+
+Sans groupes, toutes les conditions d'un filtre sont combinées avec un **ET** implicite : le résultat doit satisfaire _toutes_ les conditions simultanément.
+
+Avec les groupes de conditions, vous pouvez créer des blocs indépendants. Au sein d'un groupe, les conditions sont liées par **ET**. Entre les groupes, la logique est **OU** : le résultat doit satisfaire les conditions d'_au moins un_ groupe.
+
+Exemple :
+
+```
+Groupe 1 : statut = "En cours" ET priorité = "Haute"
+OU
+Groupe 2 : statut = "En retard"
+```
+
+Ce filtre affiche toutes les demandes en cours et prioritaires, **et aussi** toutes celles en retard — quelle que soit leur priorité.
+
+### Créer un groupe de conditions
+
+1. Ouvrez le panneau de filtres et cliquez sur **"Ajouter un filtre"**.
+2. Dans l'éditeur de filtres, cliquez sur **"Ajouter un groupe"**.
+3. Ajoutez vos conditions dans chaque groupe.
+4. Enregistrez la vue pour réutiliser ce filtre ultérieurement.
+
+<figure><img src="../../.gitbook/assets/advanced-filters-condition-groups.png" alt="Panneau de filtres avancés avec deux groupes de conditions reliés par un opérateur OU"><figcaption><p>Exemple de filtres à groupes de conditions : deux blocs ET reliés par OU, avec les boutons « Ajouter une condition » et « Ajouter un groupe »</p></figcaption></figure>
+
+{% hint style="info" %}
+Les groupes de conditions sont disponibles dans toutes les listes Dastra : registre des traitements, demandes d'exercice de droits, actifs, contrats, systèmes d'IA, violations de données, etc.
+{% endhint %}
+
 ## Problèmes connus
 
 ### Mes données ne s'affichent plus ?

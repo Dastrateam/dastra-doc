@@ -133,6 +133,31 @@ Recommencez la procédure similaire aux précédentes depuis le module Référen
 
 Recommencez la procédure similaire aux précédentes depuis la section Registre, onglet Règles de conservation.
 
+### Export / import des jeux de données avec leurs champs
+
+Il est désormais possible d'exporter et d'importer vos jeux de données **en incluant les champs de données associés**. Cette fonctionnalité facilite la migration d'une cartographie existante ou la mise à jour en masse de votre glossaire de données.
+
+#### Exporter les jeux de données avec leurs champs
+
+Depuis le module **Cartographie > Jeux de données** :
+
+1. Sélectionnez les jeux de données à exporter (ou exportez la liste complète)
+2. Cliquez sur **Exporter**
+3. Choisissez le format **Complet (avec champs de données)**
+
+Le fichier exporté inclut, pour chaque jeu de données : son nom, sa description, ses catégories de personnes concernées, sa règle de conservation — et la liste des champs de données associés avec leur catégorie RGPD et leur indicateur de sensibilité.
+
+#### Importer des jeux de données avec leurs champs
+
+Le fichier d'import suit le même format que l'export. Pour chaque jeu de données, vous pouvez renseigner les champs de données directement dans les colonnes dédiées du tableur. Lors de l'import :
+
+* Les champs inexistants dans le glossaire de données sont **créés automatiquement**
+* Les champs déjà présents sont **associés** au jeu de données sans duplication
+
+{% hint style="info" %}
+Cette fonctionnalité est particulièrement utile pour harmoniser la cartographie des données entre plusieurs workspaces ou pour initialiser un nouveau workspace depuis une cartographie existante.
+{% endhint %}
+
 ## Etape 7 : Construction des liaisons
 
 Maintenant que les référentiels ont tous été importés, éditez chacun des traitements et remplissez les informations sur la bases des informations importées en suivant le guide ci-dessous:

@@ -94,6 +94,28 @@ Oui, l'assistant IA est disponible sur tous les plans de Dastra. Certaines fonct
 
 ***
 
+**Qu'est-ce que les crédits IA ?**
+
+Les crédits IA sont l'unité de mesure de la consommation de l'assistant IA au sein de votre organisation. Chaque appel à une fonctionnalité IA consomme un certain nombre de crédits, variable selon le modèle sollicité (Fast, Smart ou Contexte étendu) et la quantité de données traitées.
+
+Les administrateurs peuvent consulter la consommation en cours et le solde restant depuis **Paramètres > Assistant IA > Crédits IA**.
+
+***
+
+**Que se passe-t-il si mon organisation atteint son quota de crédits ?**
+
+Lorsque le quota est atteint, les fonctionnalités IA sont temporairement suspendues jusqu'au prochain renouvellement. Votre workspace et vos données restent entièrement accessibles ; seule la génération IA est désactivée.
+
+Pour augmenter votre quota ou anticiper un renouvellement, contactez notre équipe.
+
+***
+
+**Le décompte de crédits s'applique-t-il avec un Custom AI provider ?**
+
+Non. Lorsque votre organisation configure un **fournisseur IA personnalisé** (Custom AI provider), le système de crédits Dastra est désactivé — aucun crédit n'est décompté. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation.
+
+***
+
 ### Règlement IA (AI Act)
 
 **L'assistant IA de Dastra est-il concerné par l'AI Act ?**

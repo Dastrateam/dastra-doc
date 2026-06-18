@@ -10,7 +10,7 @@ description: >-
 
 Depuis l'onglet **"Voir les questionnaires"**, sélectionnez un modèle pour accéder à son tableau de bord de réponses. Il propose quatre vues :
 
-* **Réponses** : liste de toutes les réponses avec leur statut (en attente, publié, en retard), leur score et l'objet lié
+* **Réponses** : liste de toutes les réponses avec leur statut (en attente, validé, en retard), leur score et l'objet lié
 * **Tableau détaillé** : comparaison côte à côte de toutes les réponses par catégorie et score — utile pour benchmarker plusieurs entités ou traitements
 * **Stats** : statistiques agrégées sur l'ensemble des réponses du modèle
 * **Détails** : configuration et métadonnées du questionnaire
@@ -19,7 +19,7 @@ Depuis l'onglet **"Voir les questionnaires"**, sélectionnez un modèle pour acc
 
 En ouvrant une réponse, vous accédez à une vue de reporting détaillée :
 
-* **Statut** : progression de "En attente de répondants" → "Démarré" → "En attente de validation" → "Publié"
+* **Statut** : progression de "En attente de répondants" → "Démarré" → "En attente de validation" → "Validé"
 * **Score** : score total sur le maximum de points
 * **Complétion** : nombre de questions répondues sur le total
 * **Temps de réponse** : durée de complétion du questionnaire
@@ -42,7 +42,7 @@ L'analyse IA est une fonctionnalité bêta. Les résultats doivent être interpr
 
 ## Valider et publier une réponse
 
-Une fois la réponse examinée, cliquez sur **"Revoir et valider le questionnaire"** pour la passer au statut "Publié". Cette action est disponible pour les responsables du questionnaire.
+Une fois la réponse examinée, cliquez sur **"Revoir et valider le questionnaire"** pour la passer au statut "Validé". Cette action est disponible pour les responsables du questionnaire.
 
 {% hint style="info" %}
 Si vous ne pouvez pas valider une réponse, vérifiez que le répondant a bien cliqué sur le bouton **"Finaliser"**. Sans cette étape, la réponse reste en "En attente de validation".
