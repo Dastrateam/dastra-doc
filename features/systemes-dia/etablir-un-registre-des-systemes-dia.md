@@ -7,7 +7,27 @@ Pour établir le registre des vos systèmes d'IA, vous avez deux options :
 
 ## Créer un registre des systèmes d'IA
 
-Pour ajouter un système d'IA, cliquez d'abord sur "Créer un nouveau système d'IA". Une fenêtre apparait alors, vous devez y entrer le nom du système et l'assigner à une unité organisationnelle.
+Pour ajouter un système d'IA, cliquez sur **"Créer un nouveau système d'IA"**. Une fenêtre vous propose trois modes de création :
+
+<figure><img src="../../.gitbook/assets/ai-system-create-modal.png" alt="Fenêtre de création d'un système d'IA avec trois options : Générer avec l'IA, Modèle intégré, Personnalisé"><figcaption><p>Trois modes de création : génération par IA, modèle intégré ou fiche vierge</p></figcaption></figure>
+
+* **Générer avec l'IA** — L'assistant IA génère automatiquement une fiche complète à partir d'une courte description du système (nom, éditeur, URL…). Il utilise la navigation web pour enrichir les informations.
+* **Modèle intégré** — Choisissez depuis la bibliothèque de systèmes d'IA Dastra ou depuis un autre workspace.
+* **Personnalisé** — Créez une fiche vierge et renseignez chaque champ manuellement.
+
+### Générer un système d'IA avec l'assistant IA
+
+Sélectionnez **"Générer avec l'IA"**, puis décrivez le système à documenter (nom, éditeur…). Vous pouvez ajouter une pièce jointe ou une URL pour enrichir la génération.
+
+<figure><img src="../../.gitbook/assets/ai-system-generate-form.png" alt="Formulaire de génération d'un système d'IA avec champ de description et options d'URL"><figcaption><p>Décrivez le système à générer — l'assistant utilise la navigation web pour compléter les informations</p></figcaption></figure>
+
+L'assistant produit une fiche pré-remplie (nom, description, type d'apprentissage, risque systémique, éditeur…) que vous pouvez relire et valider avant enregistrement.
+
+<figure><img src="../../.gitbook/assets/ai-system-generate-result.png" alt="Résultat de génération IA pour le système Gemini 3.1 Pro"><figcaption><p>La fiche générée est à relire avant validation — l'IA peut faire des erreurs</p></figcaption></figure>
+
+{% hint style="warning" %}
+Les données générées automatiquement par l'IA peuvent contenir des erreurs. Relisez et corrigez la fiche proposée avant de l'enregistrer dans votre registre.
+{% endhint %}
 
 Une fois les informations obligatoires enregistrées, vous êtes redirigé sur un formulaire comprenant 11 étapes. Ce formulaire va vous permettre de détailler au maximum le système d'IA.
 
@@ -81,53 +101,34 @@ Ajoutez les **actifs soutenant ce système d’IA**, tels que :
 Listez les **jeux de données associés** à ce système d’IA. Indiquez leur utilisation parmi les phases suivantes :
 
 * **Entraînement (Training)** : jeu de données utilisé pour **entraîner le modèle d’IA**, lui permettant d’apprendre des motifs, relations ou classifications à partir de données historiques.
-* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**. Il sert à évaluer la performance du modèle pendant l’entraînement et à guider les ajustements pour des résultats optimaux.
-* **Test (Testing)** : autre jeu de données indépendant utilisé pour **évaluer la performance finale** du modèle entraîné et validé avant son déploiement. Il fournit une mesure impartiale des performances sur de nouvelles données non vues.
-* **Inférence en production (Production inference)** : données traitées par le système d’IA **lors de son utilisation en conditions réelles**, où le modèle génère des prédictions, classifications ou décisions.
+* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**. Il sert à évaluer la performance du modèle pen* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**.
+* **Test (Testing)** : jeu de données indépendant utilisé pour **évaluer la performance finale** du modèle avant déploiement.
+* **Inférence en production (Production inference)** : données traitées par le système d'IA lors de son utilisation en conditions réelles.
+
+Assurez-vous de documenter clairement pour chaque jeu de données sa **finalité, sa composition et son lien avec ce système d'IA**.
 
 ***
 
-Assurez-vous de documenter clairement pour chaque jeu de données sa **finalité, sa composition et son lien avec ce système d’IA**, afin de garantir la transparence et la conformité.
+### Traitements liés et synchronisation des données
 
-***
+L'onglet **Traitements** de la fiche système d'IA permet d'associer un ou plusieurs traitements de données du registre RGPD à ce système. Cette liaison garantit la cohérence entre votre registre des traitements et votre registre des systèmes d'IA.
 
-### 7. Personnes concernées
+<figure><img src="../../.gitbook/assets/ai-system-data-processings-sync.png" alt="Onglet Traitements dans la fiche système d'IA avec le bouton Sync. data"><figcaption><p>L'onglet "Traitements" liste les traitements RGPD associés à ce système d'IA</p></figcaption></figure>
 
-Spécifiez les **catégories de personnes concernées** dont les données personnelles sont utilisées par le système d’IA (ex. clients, salariés, usagers).
+#### Synchroniser les données d'un traitement
 
-***
+Pour chaque traitement lié, le bouton **"Sync. data"** permet d'importer automatiquement dans la fiche système d'IA les éléments du traitement sélectionné : actifs, jeux de données et catégories de personnes concernées.
 
-### 8. Analyse des risques
+<figure><img src="../../.gitbook/assets/ai-system-data-processings-sync-button.png" alt="Bouton Sync. data mis en évidence dans la liste des traitements liés"><figcaption><p>Le bouton "Sync. data" déclenche la synchronisation des données du traitement vers la fiche système d'IA</p></figcaption></figure>
 
-Évaluez le **niveau de risque** associé au système d’IA, en fonction :
+Une fenêtre liste les éléments à importer, avec la possibilité de sélectionner précisément ceux à ajouter.
 
-* Des types de données traitées
-* Des traitements réalisés
-* Des impacts potentiels sur les droits et libertés des personnes concernées
+<figure><img src="../../.gitbook/assets/ai-system-sync-processing-dialog.png" alt="Fenêtre de synchronisation affichant les actifs, jeux de données et catégories de personnes à importer"><figcaption><p>Sélection des éléments à synchroniser depuis le traitement vers le système d'IA</p></figcaption></figure>
 
-***
+#### Voir les systèmes d'IA liés depuis un traitement
 
-### 9. Valeur métier
+Réciproquement, depuis la fiche d'un traitement de données, un panneau latéral **"Systèmes d'IA liés"** liste tous les systèmes d'IA qui lui sont associés.
 
-Déterminez un **score de valeur métier** reflétant la contribution du système d’IA à votre organisation. Cela permet de :
+<figure><img src="../../.gitbook/assets/processing-linked-ai-systems-panel.png" alt="Panneau Systèmes d'IA liés dans la fiche traitement"><figcaption><p>Le panneau latéral "Systèmes d'IA liés" est accessible depuis la fiche de n'importe quel traitement</p></figcaption></figure>
 
-* **Prioriser** les projets à forte valeur ajoutée
-* Aligner les initiatives IA avec vos objectifs stratégiques
-
-***
-
-### 10. Documentation
-
-Ajoutez les **documents et fiches d’information** pertinents, tels que :
-
-* Notices d’information
-* Guides techniques
-* Évaluations de conformité (ex. AIPIA, DPIA)
-
-***
-
-### 11. Résumé
-
-Consultez un **récapitulatif complet** de toutes les informations saisies pour ce système d’IA avant validation et enregistrement final.
-
-***
+Cette liaison bidirectionnelle facilite les audits et la documentation de la conformité AI Act depuis le registre RGPD.

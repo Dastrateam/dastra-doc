@@ -54,17 +54,28 @@ Après avoir complété un questionnaire lié à un objet Dastra (traitement, ac
 
 Cette action met à jour directement les champs correspondants de l'objet à partir des informations saisies dans le formulaire, sans nouvelle saisie manuelle.
 
-Pour lancer la fusion  :
+Pour lancer la fusion, ouvrez la réponse complétée et cliquez sur **"Fusionner la demande (Traitement)"** — une fenêtre de confirmation liste les champs qui seront mis à jour dans l'objet cible.
 
-1. Ouvrez la réponse complétée au questionnaire.
-2. Cliquez sur **"Fusionner les réponses avec l'objet"**.
-3. Confirmez les champs à mettre à jour dans l'objet cible.
+<figure><img src="../../.gitbook/assets/questionnaire-merge-processing-button.png" alt="Vue de reporting d'une réponse avec le bouton Fusionner la demande (Traitement)"><figcaption><p>Le bouton "Fusionner la demande" permet de répercuter les réponses dans l'objet Dastra lié</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/questionnaire-merge-processing-dialog.png" alt="Confirmation de la fusion avec les détails du traitement cible"><figcaption><p>Confirmation de la fusion et création du traitement depuis les réponses collectées</p></figcaption></figure>
 
 Cette fonctionnalité est particulièrement utile dans les scénarios de collecte externe via les Privacy hubs, où des tiers (fournisseurs, sous-traitants) renseignent des informations qui doivent ensuite être reflétées dans vos registres internes.
 
-<figure><img src="../../.gitbook/assets/image-275.png" alt=""><figcaption></figcaption></figure>
+## Traduire un modèle de questionnaire avec l'IA
 
-<figure><img src="../../.gitbook/assets/image-278.png" alt=""><figcaption></figcaption></figure>
+Dastra permet de traduire automatiquement toutes les sections et questions d'un modèle de questionnaire dans une autre langue, grâce à l'assistant IA.
+
+Pour lancer la traduction, ouvrez un modèle de questionnaire et cliquez sur **"Traduire le questionnaire"**.
+
+<figure><img src="../../.gitbook/assets/questionnaire-translate-button.png" alt="Bouton Traduire le questionnaire dans l'éditeur de modèle"><figcaption><p>Le bouton "Traduire le questionnaire" est disponible depuis l'éditeur de modèle</p></figcaption></figure>
+
+Choisissez la langue cible et le mode d'enregistrement :
+
+* **Nouvelle version** — remplace la version actuelle du modèle par la traduction
+* **Nouveau modèle indépendant** — crée un modèle séparé, sans lien avec l'original
+
+<figure><img src="../../.gitbook/assets/questionnaire-translate-dialog.png" alt="Dialogue de traduction IA avec choix de la langue cible et du mode d'enregistrement"><figcaption><p>Sélection de la langue cible et du mode d'enregistrement de la traduction</p></figcaption></figure>
 
 ## Générer un plan d'actions
 

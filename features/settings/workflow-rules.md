@@ -145,17 +145,21 @@ La bibliothèque de modèles de règles de workflow regroupe deux sources :
 
 Les modèles peuvent être filtrés par type d'objet et par langue.
 
+**Créer une règle depuis un modèle**
+
+Lors de la création d'une nouvelle règle, choisissez **"Depuis un modèle"** pour démarrer depuis une configuration préétablie plutôt que depuis une page blanche.
+
+<figure><img src="../../.gitbook/assets/workflow-rule-create-from-template.png" alt="Dialogue de création de règle — Depuis zéro ou Depuis un modèle"><figcaption><p>Choisir de créer une règle depuis un modèle existant</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/workflow-rule-select-template.png" alt="Bibliothèque de modèles de règles avec le modèle DSR assign from tags"><figcaption><p>Sélection du modèle souhaité dans la bibliothèque</p></figcaption></figure>
+
 **Enregistrer une règle comme modèle**
 
-Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable sur tout type d'entité compatible — sans reconfiguration manuelle.
+Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Donnez-lui un nom, une description, puis confirmez. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable par tous les utilisateurs de l'espace de travail.
+
+<figure><img src="../../.gitbook/assets/workflow-rule-save-as-template.png" alt="Dialogue Enregistrer comme modèle avec nom et description"><figcaption><p>Enregistrement d'une règle de workflow comme modèle réutilisable</p></figcaption></figure>
 
 Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
-
-<figure><img src="../../.gitbook/assets/image-1.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image-512.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
