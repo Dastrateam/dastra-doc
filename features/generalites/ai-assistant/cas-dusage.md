@@ -38,6 +38,8 @@ L'assistant peut analyser un traitement existant et produire une évaluation de 
 **Fonctionnalité en bêta** : les résultats peuvent être moins constants qu'une fonctionnalité stable et doivent être traités avec une vigilance accrue. Cette analyse est une aide à la décision, non un avis juridique.
 {% endhint %}
 
+Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF ou l'envoyer directement à l'impression. Ce document peut servir de pièce jointe dans votre dossier de conformité.
+
 ***
 
 ### Questionnaires (PIA, analyse de risque…)
@@ -154,6 +156,10 @@ L'assistant analyse les champs renseignés dans la fiche du système d'IA et pro
 {% hint style="info" %}
 **Fonctionnalité en bêta** : à traiter avec une vigilance accrue et à valider par un expert avant toute décision.
 {% endhint %}
+
+Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de conformité AI Act.
+
+<figure><img src="../../../.gitbook/assets/ai-analysis-result-print.png" alt="Panneau d'analyse IA avec les boutons Imprimer l'analyse et Relancer l'analyse"><figcaption><p>Le bouton « Print analysis » permet d'exporter le résultat de l'analyse au format PDF</p></figcaption></figure>
 
 ***
 

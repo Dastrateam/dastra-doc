@@ -68,6 +68,30 @@ Ca y est, vos tâches sont exportées!
 
 {% embed url="https://youtu.be/MVWJev04V8Y" %}
 
+## Vues personnalisées
+
+Le module Planification supporte les **vues personnalisées** : vous pouvez enregistrer une combinaison de filtres et de colonnes sous un nom, puis basculer entre vos vues en un seul clic depuis la barre d'outils.
+
+<figure><img src="../../.gitbook/assets/tasks-custom-view-selector.png" alt="Sélecteur de vues personnalisées dans le module Planification — vue Kanban"><figcaption><p>Le sélecteur de vues apparaît dans la barre d'outils — passez d'une vue enregistrée à l'autre en un clic</p></figcaption></figure>
+
+### Créer une vue
+
+1. Appliquez les filtres et la sélection de colonnes souhaités dans l'onglet **Tableau** ou **Colonnes**.
+2. Cliquez sur **Enregistrer la vue** dans la barre d'outils.
+3. Donnez un nom à votre vue et confirmez.
+
+La vue apparaît directement dans la barre d'outils pour un accès rapide.
+
+### Partager une vue
+
+Vous pouvez **partager une vue** avec les autres utilisateurs de votre espace de travail. Les vues partagées sont visibles sous la rubrique **Vues partagées** dans la barre d'outils — pratique pour standardiser le suivi d'un plan d'action au sein d'une équipe.
+
+### Exemples d'usage
+
+* Vue "Tâches en retard" : filtre sur les tâches dont la date d'échéance est dépassée et le statut ≠ Fermé
+* Vue "Mon backlog" : filtre sur l'utilisateur connecté, statut = À faire, triées par priorité décroissante
+* Vue "Sprint Q3" : filtre sur l'itération en cours, toutes colonnes affichées
+
 ## Aller plus loin
 
 {% content-ref url="synchroniser-avec-dautres-calendriers.md" %}

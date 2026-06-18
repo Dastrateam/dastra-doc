@@ -114,11 +114,9 @@ Les connecteurs peuvent notamment permettre de :
 📌 Exemple :\
 Un test automatisé peut vérifier que chaque système d’IA dispose d’une documentation conforme et à jour, sans intervention manuelle.
 
-### Ajout d'un connecteur personnalisé
+### Ajout d’un connecteur personnalisé
 
 En complément des connecteurs standards, Dastra permet de créer des **connecteurs personnalisés** afin d’automatiser la collecte de preuves dans les tests de conformité.
-
-<figure><img src="../../../.gitbook/assets/image-1-1.png" alt=""><figcaption></figcaption></figure>
 
 Un connecteur personnalisé permet :
 
@@ -139,32 +137,31 @@ Il est particulièrement adapté pour :
 * vérifier l’existence ou l’état d’une ressource,
 * automatiser des contrôles techniques ou documentaires.
 
-### Configuration d’un connecteur personnalisé
+### Configuration du connecteur HTTP
 
-Lors de la création d’un connecteur HTTP, les paramètres suivants peuvent être définis :
+<figure><img src="../../../.gitbook/assets/compliance-test-http-connector-form.png" alt="Fenêtre d’ajout d’un connecteur HTTP avec les champs URL, méthode HTTP, Auth, Headers, Query parameters, Body"><figcaption><p>Interface de configuration du connecteur HTTP avec ses onglets Auth, Headers, Query parameters et Body</p></figcaption></figure>
 
-#### Fréquence du test
+L’interface de configuration du connecteur HTTP a été repensée pour faciliter la construction et le test des requêtes directement depuis Dastra.
 
-* Détermine la périodicité d’exécution du test (ex. mensuelle).
-* Adaptée aux contrôles récurrents.
+#### Constructeur de requête
 
-#### URL (obligatoire)
+Un éditeur visuel permet de configurer chaque composante de la requête :
 
-* Endpoint à interroger.
-* Peut correspondre à une API interne ou externe.
+| Champ | Description |
+| ----- | ----------- |
+| **URL** | Endpoint à interroger (obligatoire). Supporte les variables entre accolades `{{variable}}`. |
+| **Méthode HTTP** | GET, POST, PUT, PATCH, DELETE. |
+| **En-têtes** | Ajout de headers clé/valeur — gestion de l’authentification par token, clé API, ou header personnalisé. |
+| **Corps de requête** | Payload JSON ou texte libre (pour les méthodes POST/PUT/PATCH). |
+| **Variables** | Déclarez des variables réutilisables dans l’URL et le corps de requête, valorisées à l’exécution. |
 
-#### Méthode HTTP (optionnelle)
+#### Test de la requête
 
-* GET, POST, etc.
-* À sélectionner selon le type d’interrogation.
+Un bouton **Tester la requête** permet d’exécuter la requête en direct depuis l’interface de configuration et d’afficher la réponse brute. Cela facilite le débogage avant de lier le connecteur à un test de conformité.
 
-#### En-têtes HTTP (optionnel)
+#### Analyse de la réponse
 
-* Permet notamment de gérer l’authentification (tokens, clés API, headers personnalisés).
-
-#### Corps de requête (optionnel)
-
-* Utile pour les requêtes POST ou les appels nécessitant un payload spécifique.
+Définissez les **critères de succès** : code HTTP attendu, présence d’un champ dans la réponse JSON, valeur cible d’un attribut. Le résultat de l’analyse est enregistré comme preuve dans le projet de conformité.
 
 ### Avantages des tests automatisés
 
@@ -176,6 +173,99 @@ Les tests automatisés permettent :
 * une détection plus rapide des écarts
 
 Ils sont particulièrement adaptés aux contrôles récurrents ou structurés.
+
+***
+
+### Analyse IA des preuves
+
+Dastra peut analyser automatiquement les preuves jointes à un test et indiquer si elles correspondent à ce que la procédure attendait. Cette fonctionnalité est une **aide à la décision pour l'auditeur** — elle ne remplace jamais le jugement humain et n'accepte ni ne rejette une preuve à la place du client.
+
+#### Comment ça fonctionne
+
+Lorsqu'une preuve est ajoutée à une procédure de test, l'IA reçoit deux éléments :
+
+1. La **description de la procédure** — ce que le test attend comme preuve
+2. Le **contenu de la preuve** fournie — analysé selon son type (voir ci-dessous)
+
+Elle compare les deux et renvoie quatre informations, affichées dans le tableau des preuves sous forme d'un **badge coloré accompagné d'une infobulle** :
+
+<figure><img src="../../../.gitbook/assets/compliance-test-evidence-ai-badge.png" alt="Tableau des preuves avec colonne Appréciation IA — badge coloré indiquant le verdict de l'IA"><figcaption><p>Le badge d'appréciation IA s'affiche dans la colonne dédiée du tableau des preuves</p></figcaption></figure>
+
+| Information            | Description                                                            |
+| ---------------------- | ---------------------------------------------------------------------- |
+| **Appréciation**       | `Correct` · `ProbablementCorrect` · `NonConforme` · `Inconnu`         |
+| **Score de confiance** | De 0 à 100 % — reflète la certitude de l'IA sur son verdict           |
+| **Description**        | Résumé court du document analysé                                       |
+| **Justification**      | Explication du verdict au regard des critères de la procédure          |
+
+#### Types de preuves supportés
+
+L'analyse s'adapte automatiquement au type de preuve fournie :
+
+| Type de preuve              | Méthode d'analyse                                    |
+| --------------------------- | ---------------------------------------------------- |
+| Capture d'écran / image     | Analyse visuelle du contenu                          |
+| Document (PDF, Word, texte) | Lecture et extraction du contenu textuel             |
+| URL / page web              | Récupération de la page via l'URL fournie            |
+| Aucune preuve jointe        | Résultat automatiquement `Indéterminé`               |
+
+#### Activation et paramétrage
+
+La fonctionnalité est **optionnelle** et désactivée par défaut. Pour l'activer, rendez-vous dans **Paramètres → Conformité** et activez l'option **"Analyse IA automatique des preuves"**.
+
+<figure><img src="../../../.gitbook/assets/compliance-settings-ai-evidence-scan.png" alt="Paramètre Analyse IA automatique des preuves dans les réglages Conformité"><figcaption><p>Activation depuis Paramètres → Conformité (EN : <em>Settings → Compliance → "AI evidence auto-scan"</em>)</p></figcaption></figure>
+
+{% hint style="info" %}
+Tant que la fonctionnalité n'est pas activée, **aucune donnée de preuve n'est envoyée au modèle d'IA**.
+{% endhint %}
+
+Le modèle d'IA utilisé pour l'analyse des preuves peut être configuré selon le choix de votre organisation, via les paramètres de l'assistant IA (famille de modèles ou Custom AI provider).
+
+#### Ce que l'analyse ne fait pas
+
+* Elle **n'accepte ni ne rejette** une preuve automatiquement — la décision finale appartient toujours à l'auditeur.
+* Elle ne modifie pas le statut du test.
+* Elle est non contraignante : un score de confiance faible (`Indéterminé` ou `Probablement correct`) signale simplement qu'une vérification humaine est recommandée.
+
+***
+
+### Fusion de tests
+
+Tout comme pour les contrôles, la bibliothèque de tests peut accumuler des tests redondants — notamment après l'import de plusieurs frameworks. La fonctionnalité de **fusion de tests** permet de consolider ces doublons en un seul test de référence.
+
+#### Comment fonctionne la fusion
+
+Depuis la bibliothèque de tests, sélectionnez les tests à fusionner puis cliquez sur **Fusionner**. Choisissez le test **cible** à conserver : les associations des tests sources (contrôles liés, résultats d'exécution, fréquence) sont reportées sur le test cible, puis les tests sources sont supprimés.
+
+{% hint style="warning" %}
+La fusion est irréversible. Vérifiez les associations de chaque test source avant de confirmer.
+{% endhint %}
+
+#### Cas d'usage typiques
+
+* **Déduplication** : deux imports de frameworks ont créé un test "Vérification de la politique de confidentialité" en double — la fusion les consolide.
+* **Rationalisation** : plusieurs tests manuels très proches peuvent être regroupés en un seul test plus complet.
+* **Nettoyage avant audit** : réduire le nombre de tests orphelins améliore la lisibilité du tableau de bord.
+
+***
+
+### Lier un test à un document
+
+Un test de conformité peut être associé à un ou plusieurs **documents du gestionnaire de fichiers** Dastra — contrats, politiques, preuves documentaires, accords de sous-traitance. Cette liaison permet de retrouver facilement les tests associés à chaque document, et inversement.
+
+#### Depuis la vue d'un document
+
+Lorsqu'un test est lié à un document, un panneau **Tests** apparaît dans la vue d'édition du document ou du contrat concerné, affichant la référence, le nom et le statut de chaque test associé.
+
+<figure><img src="../../../.gitbook/assets/compliance-test-linked-document.png" alt="Vue d'un contrat avec le panneau Tests listant les tests de conformité associés"><figcaption><p>Un test lié apparaît dans le panneau Tests à droite du document (ici : G-T2 Lawful Basis Spot Check — Done / Pass)</p></figcaption></figure>
+
+#### Depuis le gestionnaire de fichiers
+
+Dans le gestionnaire de fichiers, la fiche détail d'un document affiche dans la colonne latérale toutes les entités Dastra auxquelles il est rattaché : traitements, contrats, et tests de conformité.
+
+<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnaire de fichiers affiche les tests associés à chaque document dans la colonne de détail</p></figcaption></figure>
+
+Cette traçabilité bidirectionnelle permet d'auditer facilement quels tests s'appuient sur quel document, et de retrouver l'ensemble des preuves documentaires depuis le gestionnaire de fichiers.
 
 ***
 

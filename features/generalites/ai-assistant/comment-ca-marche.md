@@ -2,6 +2,8 @@
 
 ### Modèles et hébergement
 
+<figure><img src="../../../.gitbook/assets/ai-assistant-settings-models.png" alt="Page Paramètres de l'assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
+
 Dastra utilise des modèles d'IA générative pré-entraînés, disponibles en quatre familles au choix :
 
 | Famille                              | Modèles configurés                                                                      | Hébergement               |
@@ -75,6 +77,32 @@ Dastra conserve un historique des appels à l'assistant IA sur les **90 derniers
 | **Durée**       | Temps de traitement de la requête                 |
 | **Utilisateur** | Membre du workspace ayant déclenché la génération |
 
+### Crédits et quotas IA
+
+Dastra suit la consommation de l'assistant IA via un système de **crédits IA**. Chaque appel à une fonctionnalité IA consomme des crédits proportionnellement au modèle utilisé et au volume de données traité.
+
+| Niveau de modèle    | Consommation relative |
+| ------------------- | --------------------- |
+| **Fast**            | Faible                |
+| **Smart**           | Moyenne               |
+| **Contexte étendu** | Élevée                |
+
+Les administrateurs accèdent au tableau de bord de consommation depuis **Paramètres > Assistant IA > Crédits IA** : solde disponible, historique de consommation et date de renouvellement.
+
+{% hint style="info" %}
+Lorsque le quota est atteint, les fonctionnalités IA sont désactivées jusqu'au prochain renouvellement. Le reste de la plateforme (données, workflows, exports) continue de fonctionner normalement.
+{% endhint %}
+
+{% hint style="info" %}
+**Custom AI provider — décompte désactivé**
+
+Lorsque votre organisation utilise un **Custom AI provider** (fournisseur IA personnalisé), le système de crédits Dastra ne s'applique pas : le décompte est désactivé. La consommation est alors gérée directement par votre propre fournisseur selon ses propres conditions de facturation.
+{% endhint %}
+
+Pour augmenter votre quota, contactez l'équipe Dastra.
+
+***
+
 ### Quelles données sont transmises au modèle ?
 
 {% hint style="info" %}
@@ -102,6 +130,7 @@ Dastra ne transmet **aucune donnée de votre workspace** au modèle IA sans que 
 | **Générer une description de système d'IA**                | Texte libre + URL ou pièce jointe fournie                                                                                                                            | Non                                                                     |
 | **Générer une notice système d'IA**                        | Champs structurés du système d'IA concerné                                                                                                                           | Potentiellement                                                         |
 | **Suggestions de contrôles / exigences / tests**           | Contexte de l'objet concerné (nom, description, référentiel)                                                                                                         | Non                                                                     |
+| **Analyse IA d'une preuve de test (Conformité)**           | Description de la procédure de test + contenu de la preuve (texte extrait, image ou URL récupérée)                                                                   | Potentiellement — selon le contenu de la preuve                         |
 
 {% hint style="warning" %}
 **Bonne pratique** : évitez d'inclure des données à caractère personnel directement dans les champs de texte libre (descriptions, instructions personnalisées). Utilisez des identifiants ou des termes génériques lorsque c'est possible.

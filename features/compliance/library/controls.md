@@ -196,6 +196,32 @@ L’association permet :
 
 ***
 
+### Fusion de contrôles
+
+La bibliothèque de contrôles peut, au fil du temps, contenir des contrôles redondants ou quasi-identiques issus de frameworks différents. La fonctionnalité de **fusion** permet de les consolider en un seul contrôle de référence.
+
+#### Comment fonctionne la fusion
+
+Depuis la bibliothèque de contrôles, sélectionnez les contrôles à fusionner, puis cliquez sur **Fusionner**. Un assistant vous invite à choisir le contrôle **cible** (celui qui sera conservé) : les associations des contrôles sources (exigences, tests, risques) sont reportées sur le contrôle cible, puis les contrôles sources sont supprimés.
+
+<figure><img src="../../../.gitbook/assets/compliance-controls-merge-action.png" alt="Menu d'action en lot avec l'option Fusionner dans la bibliothèque de contrôles"><figcaption><p>Sélectionnez plusieurs contrôles puis choisissez Fusionner dans le menu d'actions</p></figcaption></figure>
+
+L'assistant de fusion présente les deux contrôles côte à côte : **Conservé** (contrôle cible) à gauche, **À supprimer** (contrôle source) à droite. Pour chaque champ multi-valué (scénarios de risque, exigences, tests), vous choisissez les valeurs à reporter sur le contrôle cible.
+
+<figure><img src="../../../.gitbook/assets/compliance-controls-merge-dialog.png" alt="Outil de fusion des contrôles — sélection des champs à conserver"><figcaption><p>L'outil de fusion permet de choisir champ par champ ce qui est conservé ou supprimé</p></figcaption></figure>
+
+{% hint style="warning" %}
+La fusion est irréversible. Vérifiez les associations de chaque contrôle source avant de confirmer l'opération.
+{% endhint %}
+
+#### Cas d'usage typiques
+
+* **Déduplication** : plusieurs importations de frameworks ont créé des contrôles équivalents — la fusion les consolide sans perte d'information.
+* **Mutualisation transverse** : un contrôle couvrant à la fois ISO 27001 et le référentiel IA Act peut être obtenu en fusionnant les contrôles issus de chaque framework.
+* **Nettoyage de la bibliothèque** : avant un audit, supprimer les contrôles orphelins ou redondants améliore la lisibilité du tableau de bord de conformité.
+
+***
+
 ### Synthèse : pourquoi les contrôles sont centraux
 
 Dans Dastra, les contrôles sont le **point de convergence** entre :

@@ -12,6 +12,7 @@ Le Trust center est modulaire et vous permet de choisir les fonctionnalités à 
 * [Organigramme](org-chart.md)
 * [Contacts](contacts.md)
 * [Sécurité](security.md)
+* [Systèmes d'IA](ai-systems.md)
 * [Apparence et design](design.md)
 
 ### Activer / Désactiver le Trust center
