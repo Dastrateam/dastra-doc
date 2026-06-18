@@ -176,6 +176,14 @@ Ils sont particulièrement adaptés aux contrôles récurrents ou structurés.
 
 ***
 
+### Joindre une preuve depuis le gestionnaire de fichiers
+
+Lors de l'ajout d'une preuve à un test, il est possible de sélectionner un fichier directement depuis le **gestionnaire de fichiers** Dastra, sans avoir à le réimporter. Cliquez sur **"Explorateur de fichiers"** dans la fenêtre d'ajout de preuve.
+
+<figure><img src="../../../.gitbook/assets/compliance-test-evidence-file-explorer.png" alt="Fenêtre Ajouter une preuve avec le bouton Explorateur de fichiers"><figcaption><p>Le bouton "Explorateur de fichiers" permet de sélectionner une preuve déjà présente dans le gestionnaire de fichiers Dastra</p></figcaption></figure>
+
+***
+
 ### Analyse IA des preuves
 
 Dastra peut analyser automatiquement les preuves jointes à un test et indiquer si elles correspondent à ce que la procédure attendait. Cette fonctionnalité est une **aide à la décision pour l'auditeur** — elle ne remplace jamais le jugement humain et n'accepte ni ne rejette une preuve à la place du client.
