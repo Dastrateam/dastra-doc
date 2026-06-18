@@ -2,7 +2,7 @@
 
 ### Modèles et hébergement
 
-<figure><img src="../../../.gitbook/assets/ai-assistant-settings-models.png" alt="Page Paramètres de l'assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-assistant-settings-models.png" alt="Page Paramètres de l'assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres de l'organisation > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
 
 Dastra utilise des modèles d'IA générative pré-entraînés, disponibles en quatre familles au choix :
 
@@ -29,7 +29,7 @@ Vous pouvez configurer la famille de modèles utilisée dans les **Paramètres d
 
 Dastra vous permet de connecter votre propre fournisseur d'IA via une clé API, à condition que celui-ci soit compatible avec le standard OpenAI API. Les fournisseurs supportés incluent notamment OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ainsi que tout LLM auto-hébergé compatible.
 
-Pour configurer un fournisseur personnalisé, rendez-vous dans **Paramètres > Assistant IA > Custom AI provider**, puis renseignez vos identifiants et associez-les aux trois niveaux de modèle (Fast, Smart, Contexte étendu).
+Pour configurer un fournisseur personnalisé, rendez-vous dans **Paramètres de l'organisation > Assistant IA > Custom AI provider**, puis renseignez vos identifiants et associez-les aux trois niveaux de modèle (Fast, Smart, Contexte étendu).
 
 {% hint style="warning" %}
 Lorsque vous utilisez un Custom AI provider, les données transmises au modèle sont soumises à la politique de confidentialité de **votre fournisseur**, et non aux garanties Azure décrites sur cette page. Vérifiez les conditions de votre fournisseur avant d'activer cette option, notamment si vos prompts peuvent contenir des données à caractère personnel.
@@ -66,7 +66,7 @@ Cette conservation reste exceptionnelle et ne concerne pas les usages normaux de
 
 ### Logs d'invocation IA
 
-Dastra conserve un historique des appels à l'assistant IA sur les **90 derniers jours**, accessible depuis **Paramètres > Assistant IA > Logs d'invocation IA**. Pour chaque appel, les informations suivantes sont enregistrées :
+Dastra conserve un historique des appels à l'assistant IA sur les **90 derniers jours**, accessible depuis **Paramètres de l'organisation > Assistant IA > Logs d'invocation IA**. Pour chaque appel, les informations suivantes sont enregistrées :
 
 | Champ           | Description                                       |
 | --------------- | ------------------------------------------------- |
@@ -87,7 +87,7 @@ Dastra suit la consommation de l'assistant IA via un système de **crédits IA**
 | **Smart**           | Moyenne               |
 | **Contexte étendu** | Élevée                |
 
-Les administrateurs accèdent au tableau de bord de consommation depuis **Paramètres > Assistant IA > Crédits IA** : solde disponible, historique de consommation et date de renouvellement.
+Les administrateurs accèdent au tableau de bord de consommation depuis **Paramètres de l'organisation > Assistant IA** ([accès direct](https://app.dastra.eu/general-settings/ai)) : solde disponible, historique de consommation et date de renouvellement.
 
 {% hint style="info" %}
 Lorsque le quota est atteint, les fonctionnalités IA sont désactivées jusqu'au prochain renouvellement. Le reste de la plateforme (données, workflows, exports) continue de fonctionner normalement.

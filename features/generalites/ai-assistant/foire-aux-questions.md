@@ -32,7 +32,7 @@ Les modèles Azure sont sans état (_stateless_) : les prompts et résultats ne 
 
 **Qui peut voir les appels effectués à l'assistant IA dans mon organisation ?**
 
-Les administrateurs de votre workspace ont accès aux **logs d'invocation IA** (90 jours d'historique) depuis **Paramètres > Assistant IA > Logs d'invocation IA**. Ces logs indiquent la date, le statut, le type d'opération, le modèle utilisé, la durée et l'utilisateur ayant déclenché la génération. Le contenu des prompts et des réponses n'y est pas affiché.
+Les administrateurs de votre workspace ont accès aux **logs d'invocation IA** (90 jours d'historique) depuis **Paramètres de l'organisation > Assistant IA > Logs d'invocation IA**. Ces logs indiquent la date, le statut, le type d'opération, le modèle utilisé, la durée et l'utilisateur ayant déclenché la génération. Le contenu des prompts et des réponses n'y est pas affiché.
 
 ***
 
@@ -68,13 +68,13 @@ Oui. L'assistant IA n'est pas un juriste. Les contenus générés, analyses de c
 
 **Comment choisir le modèle d'IA utilisé ?**
 
-Rendez-vous dans **Paramètres > Assistant IA** pour sélectionner la famille de modèles : OpenAI (par défaut), Mistral, Open source ou un fournisseur personnalisé (Custom AI provider). Pour chaque famille, trois niveaux de modèle sont utilisés automatiquement selon la complexité de la tâche (Fast, Smart, Contexte étendu).
+Rendez-vous dans **Paramètres de l'organisation > Assistant IA** pour sélectionner la famille de modèles : OpenAI (par défaut), Mistral, Open source ou un fournisseur personnalisé (Custom AI provider). Pour chaque famille, trois niveaux de modèle sont utilisés automatiquement selon la complexité de la tâche (Fast, Smart, Contexte étendu).
 
 ***
 
 **Puis-je connecter mon propre fournisseur d'IA ?**
 
-Oui, via la fonctionnalité **Custom AI provider**. Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres > Assistant IA > Custom AI provider**.
+Oui, via la fonctionnalité **Custom AI provider**. Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation > Assistant IA > Custom AI provider**.
 
 {% hint style="warning" %}
 Avec un Custom AI provider, les garanties Azure décrites dans cette documentation ne s'appliquent plus. Les données sont soumises à la politique de votre fournisseur.
@@ -98,7 +98,7 @@ Oui, l'assistant IA est disponible sur tous les plans de Dastra. Certaines fonct
 
 Les crédits IA sont l'unité de mesure de la consommation de l'assistant IA au sein de votre organisation. Chaque appel à une fonctionnalité IA consomme un certain nombre de crédits, variable selon le modèle sollicité (Fast, Smart ou Contexte étendu) et la quantité de données traitées.
 
-Les administrateurs peuvent consulter la consommation en cours et le solde restant depuis **Paramètres > Assistant IA > Crédits IA**.
+Les administrateurs peuvent consulter la consommation en cours et le solde restant depuis **Paramètres de l'organisation > Assistant IA** ([accès direct](https://app.dastra.eu/general-settings/ai)).
 
 ***
 
