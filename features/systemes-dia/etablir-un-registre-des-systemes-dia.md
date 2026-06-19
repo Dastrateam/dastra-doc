@@ -9,7 +9,7 @@ Pour établir le registre des vos systèmes d'IA, vous avez deux options :
 
 Pour ajouter un système d'IA, cliquez sur **"Créer un nouveau système d'IA"**. Une fenêtre vous propose trois modes de création :
 
-<figure><img src="../../.gitbook/assets/ai-system-create-modal.png" alt="Fenêtre de création d'un système d'IA avec trois options : Générer avec l'IA, Modèle intégré, Personnalisé"><figcaption><p>Trois modes de création : génération par IA, modèle intégré ou fiche vierge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-system-create-modal.png" alt="Fenêtre de création d&#x27;un système d&#x27;IA avec trois options : Générer avec l&#x27;IA, Modèle intégré, Personnalisé"><figcaption><p>Trois modes de création : génération par IA, modèle intégré ou fiche vierge</p></figcaption></figure>
 
 * **Générer avec l'IA** — L'assistant IA génère automatiquement une fiche complète à partir d'une courte description du système (nom, éditeur, URL…). Il utilise la navigation web pour enrichir les informations.
 * **Modèle intégré** — Choisissez depuis la bibliothèque de systèmes d'IA Dastra ou depuis un autre workspace.
@@ -19,11 +19,11 @@ Pour ajouter un système d'IA, cliquez sur **"Créer un nouveau système d'IA"**
 
 Sélectionnez **"Générer avec l'IA"**, puis décrivez le système à documenter (nom, éditeur…). Vous pouvez ajouter une pièce jointe ou une URL pour enrichir la génération.
 
-<figure><img src="../../.gitbook/assets/ai-system-generate-form.png" alt="Formulaire de génération d'un système d'IA avec champ de description et options d'URL"><figcaption><p>Décrivez le système à générer — l'assistant utilise la navigation web pour compléter les informations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-system-generate-form.png" alt="Formulaire de génération d&#x27;un système d&#x27;IA avec champ de description et options d&#x27;URL"><figcaption><p>Décrivez le système à générer — l'assistant utilise la navigation web pour compléter les informations</p></figcaption></figure>
 
 L'assistant produit une fiche pré-remplie (nom, description, type d'apprentissage, risque systémique, éditeur…) que vous pouvez relire et valider avant enregistrement.
 
-<figure><img src="../../.gitbook/assets/ai-system-generate-result.png" alt="Résultat de génération IA pour le système Gemini 3.1 Pro"><figcaption><p>La fiche générée est à relire avant validation — l'IA peut faire des erreurs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-337.png" alt="Résultat de génération IA pour le système Gemini 3.1 Pro"><figcaption><p>La fiche générée est à relire avant validation — l'IA peut faire des erreurs</p></figcaption></figure>
 
 {% hint style="warning" %}
 Les données générées automatiquement par l'IA peuvent contenir des erreurs. Relisez et corrigez la fiche proposée avant de l'enregistrer dans votre registre.
@@ -101,7 +101,7 @@ Ajoutez les **actifs soutenant ce système d’IA**, tels que :
 Listez les **jeux de données associés** à ce système d’IA. Indiquez leur utilisation parmi les phases suivantes :
 
 * **Entraînement (Training)** : jeu de données utilisé pour **entraîner le modèle d’IA**, lui permettant d’apprendre des motifs, relations ou classifications à partir de données historiques.
-* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**. Il sert à évaluer la performance du modèle pen* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**.
+* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**. Il sert à évaluer la performance du modèle pen\* **Validation (Validation)** : jeu de données distinct utilisé pour **ajuster les paramètres du modèle et éviter le surapprentissage (overfitting)**.
 * **Test (Testing)** : jeu de données indépendant utilisé pour **évaluer la performance finale** du modèle avant déploiement.
 * **Inférence en production (Production inference)** : données traitées par le système d'IA lors de son utilisation en conditions réelles.
 
@@ -113,7 +113,7 @@ Assurez-vous de documenter clairement pour chaque jeu de données sa **finalité
 
 L'onglet **Traitements** de la fiche système d'IA permet d'associer un ou plusieurs traitements de données du registre RGPD à ce système. Cette liaison garantit la cohérence entre votre registre des traitements et votre registre des systèmes d'IA.
 
-<figure><img src="../../.gitbook/assets/ai-system-data-processings-sync.png" alt="Onglet Traitements dans la fiche système d'IA avec le bouton Sync. data"><figcaption><p>L'onglet "Traitements" liste les traitements RGPD associés à ce système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-system-data-processings-sync.png" alt="Onglet Traitements dans la fiche système d&#x27;IA avec le bouton Sync. data"><figcaption><p>L'onglet "Traitements" liste les traitements RGPD associés à ce système d'IA</p></figcaption></figure>
 
 #### Synchroniser les données d'un traitement
 
@@ -129,6 +129,6 @@ Une fenêtre liste les éléments à importer, avec la possibilité de sélectio
 
 Réciproquement, depuis la fiche d'un traitement de données, un panneau latéral **"Systèmes d'IA liés"** liste tous les systèmes d'IA qui lui sont associés.
 
-<figure><img src="../../.gitbook/assets/processing-linked-ai-systems-panel.png" alt="Panneau Systèmes d'IA liés dans la fiche traitement"><figcaption><p>Le panneau latéral "Systèmes d'IA liés" est accessible depuis la fiche de n'importe quel traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-linked-ai-systems-panel.png" alt="Panneau Systèmes d&#x27;IA liés dans la fiche traitement"><figcaption><p>Le panneau latéral "Systèmes d'IA liés" est accessible depuis la fiche de n'importe quel traitement</p></figcaption></figure>
 
 Cette liaison bidirectionnelle facilite les audits et la documentation de la conformité AI Act depuis le registre RGPD.

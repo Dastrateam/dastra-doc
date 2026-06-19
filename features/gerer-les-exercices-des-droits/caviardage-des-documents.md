@@ -1,5 +1,7 @@
 ---
-description: Cavardez les documents joints à une demande d'exercice de droits directement depuis Dastra, avec ou sans assistance IA.
+description: >-
+  Cavardez les documents joints à une demande d'exercice de droits directement
+  depuis Dastra, avec ou sans assistance IA.
 ---
 
 # Caviardage des documents
@@ -47,8 +49,6 @@ Pour les équipes qui préfèrent conserver un contrôle total sans assistance I
 ## Génération du document caviardé
 
 Une fois la revue terminée, cliquez sur **Générer le document caviardé**. Le document produit est :
-
-<figure><img src="../../.gitbook/assets/dsr-request-processing-redacted.png" alt="Document caviardé généré — Invoice-redacted.pdf avec 6 zones masquées"><figcaption><p>Le document caviardé est automatiquement renommé et joint à la demande (ici : 6 zones masquées)</p></figcaption></figure>
 
 * **Rasterisé** — le texte sous-jacent n'est pas simplement masqué visuellement mais rendu définitivement inaccessible. Il n'est pas possible d'extraire le contenu caviardé du fichier final.
 * **Enregistré dans la demande** — le document caviardé est attaché à la demande et disponible pour envoi.
