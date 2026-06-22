@@ -14,11 +14,11 @@ La création ou la modification d'un modèle de questionnaire dans Dastra est un
 
 Pour créer un modèle de questionnaire, cliquez sur le bouton "Créer un modèle" dans l'onglet "Questionnaires". Ensuite vous pouvez sélectionner un des types de modèles disponibles dans Dastra : questionnaire automatisé, personnalisé ou importé depuis un fichier.
 
-<figure><img src="../../../.gitbook/assets/image-16-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/audit-template-list-toolbar.png" alt=""><figcaption></figcaption></figure>
 
 Vous arrivez sur l'interface de sélection des types de modèles :
 
-![Choix des types de modèles](<../../../.gitbook/assets/image-138.png>)
+![Choix des types de modèles](<../../../.gitbook/assets/audit-create-type-picker.png>)
 
 * En cliquant sur l'onglet "**Questionnaire automatisé**", vous choisirez un modèle de questionnaire prédéfini existant en piochant dans la bibliothèque de Dastra.
 * En cliquant sur "**Questionnaire personnalisé**", vous pouvez construire votre propre modèle de questionnaire.
@@ -54,7 +54,7 @@ Construisez le modèle de questionnaire que vous souhaitez et cliquez sur "Enreg
 
 Vous pouvez lier des questionnaires à des éléments dans Dastra. En choisissant le type d'élément évalué, vous forcez toutes les réponses basées sur ce modèle à être liées à un objet du type choisi. Par exemple, vous pouvez choisir que ce modèle de questionnaire sera toujours lié à un traitement.
 
-<figure><img src="../../../.gitbook/assets/image-267.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/audit-create-audited-element-dropdown.png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez choisir de ne pas lier un questionnaire à un objet particulier. Dans ce cas, la réponse sera toujours liée à une unité organisationnelle. Cela peut être le cas pour des questionnaires de conformité globaux par exemple.
 
@@ -62,7 +62,7 @@ Vous pouvez choisir de ne pas lier un questionnaire à un objet particulier. Dan
 
 Lors de la création d'un modèle personnalisé, vous devrez choisir un type de modèle.
 
-<figure><img src="../../../.gitbook/assets/image-262.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/audit-create-type-dropdown.png" alt=""><figcaption></figcaption></figure>
 
 Ces types permettent une certaine personnalisation des modèles de questionnaires.
 

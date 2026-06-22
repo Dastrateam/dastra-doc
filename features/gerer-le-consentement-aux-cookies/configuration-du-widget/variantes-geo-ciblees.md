@@ -22,7 +22,7 @@ Depuis le module **Cookies**, sélectionnez votre widget, puis rendez-vous dans 
 
 Cliquez sur **"Créer une variante géo-ciblée"**.
 
-<figure><img src="../../../.gitbook/assets/image-514.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookies-widget-geo-variant-dropdown.png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Nommer la variante
 

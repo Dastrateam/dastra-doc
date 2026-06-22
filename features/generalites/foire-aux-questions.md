@@ -10,7 +10,7 @@ Dans le sous-menu du bouton "Créer un jeu de données", cliquez sur importer.&#
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image-317.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/referentiel-datasets-create-dropdown.png" alt=""><figcaption></figcaption></figure>
 
 Vous pourrez ensuite télécharger le modèle de fichier et voir le format des colonnes attendu dans le modèle de fichier d'import. Il ne vous suffira ensuite plus qu'à déposer le fichier d'import pour que l'import soit réalisé.&#x20;
 

@@ -15,25 +15,25 @@ Dans Dastra,
 
 Depuis le module "planification", cliquez sur l'onglet "Projets"
 
-![Onglet projets](<../../.gitbook/assets/image-225.png>)
+![Onglet projets](<../../.gitbook/assets/planning-projects-tab-button.png>)
 
 Vous accéderez ainsi à l'interface projets où vous pourrez créer de nouveau projet en cliquant sur "créer un projet", ou en modifier un existant en cliquant sur les trois points à droite du projet, puis "modifier".
 
-![Bouton "créer un projet"](<../../.gitbook/assets/image-226.png>)
+![Bouton "créer un projet"](<../../.gitbook/assets/planning-create-project-button.png>)
 
-![Menu déroulant d'un projet](<../../.gitbook/assets/image-227.png>)
+![Menu déroulant d'un projet](<../../.gitbook/assets/planning-project-context-menu.png>)
 
 ## Créer ou modifier une itération
 
 Depuis le module "planification", cliquez sur l'onglet "Itérations"
 
-![Onglet "Itérations"](<../../.gitbook/assets/image-228.png>)
+![Onglet "Itérations"](<../../.gitbook/assets/planning-iterations-tab-button.png>)
 
 Vous accéderez ainsi à l'interface des itérations où vous pourrez créer de nouvelles itérations en cliquant sur "créer une itération", ou en modifier un existant en cliquant sur les trois points à droite de l'itération, puis "modifier".
 
-![Bouton " créer une itération"](<../../.gitbook/assets/image-229.png>)
+![Bouton " créer une itération"](<../../.gitbook/assets/planning-create-iteration-button.png>)
 
-![Menu déroulant d'une itération](<../../.gitbook/assets/image-230.png>)
+![Menu déroulant d'une itération](<../../.gitbook/assets/planning-iteration-context-menu.png>)
 
 Un second onglet, "itérations courantes", vous permet de voir toutes les tâches qui sont situées dans l'itération en cours.
 

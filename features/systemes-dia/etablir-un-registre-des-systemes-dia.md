@@ -9,7 +9,7 @@ Pour établir le registre des vos systèmes d'IA, vous avez deux options :
 
 Pour ajouter un système d'IA, cliquez sur **"Créer un nouveau système d'IA"**. Une fenêtre vous propose trois modes de création :
 
-<figure><img src="../../.gitbook/assets/ai-system-create-modal.png" alt="Fenêtre de création d'un système d'IA avec trois options : Générer avec l'IA, Modèle intégré, Personnalisé"><figcaption><p>Trois modes de création : génération par IA, modèle intégré ou fiche vierge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-create-modal.png" alt="Fenêtre de création d'un système d'IA avec trois options : Générer avec l'IA, Modèle intégré, Personnalisé"><figcaption><p>Trois modes de création : génération par IA, modèle intégré ou fiche vierge</p></figcaption></figure>
 
 * **Générer avec l'IA** — L'assistant IA génère automatiquement une fiche complète à partir d'une courte description du système (nom, éditeur, URL…). Il utilise la navigation web pour enrichir les informations.
 * **Modèle intégré** — Choisissez depuis la bibliothèque de systèmes d'IA Dastra ou depuis un autre workspace.
@@ -19,7 +19,7 @@ Pour ajouter un système d'IA, cliquez sur **"Créer un nouveau système d'IA"**
 
 Sélectionnez **"Générer avec l'IA"**, puis décrivez le système à documenter (nom, éditeur…). Vous pouvez ajouter une pièce jointe ou une URL pour enrichir la génération.
 
-<figure><img src="../../.gitbook/assets/ai-system-generate-form.png" alt="Formulaire de génération d'un système d'IA avec champ de description et options d'URL"><figcaption><p>Décrivez le système à générer — l'assistant utilise la navigation web pour compléter les informations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-generate-form.png" alt="Formulaire de génération d'un système d'IA avec champ de description et options d'URL"><figcaption><p>Décrivez le système à générer — l'assistant utilise la navigation web pour compléter les informations</p></figcaption></figure>
 
 L'assistant produit une fiche pré-remplie (nom, description, type d'apprentissage, risque systémique, éditeur…) que vous pouvez relire et valider avant enregistrement.
 
@@ -31,7 +31,7 @@ Les données générées automatiquement par l'IA peuvent contenir des erreurs. 
 
 Une fois les informations obligatoires enregistrées, vous êtes redirigé sur un formulaire comprenant 11 étapes. Ce formulaire va vous permettre de détailler au maximum le système d'IA.
 
-<figure><img src="../../.gitbook/assets/image-416.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-questionnaire-general-form.png" alt=""><figcaption></figcaption></figure>
 
 ## Les 11 étapes du formulaire Système d'IA
 
@@ -113,13 +113,13 @@ Assurez-vous de documenter clairement pour chaque jeu de données sa **finalité
 
 L'onglet **Traitements** de la fiche système d'IA permet d'associer un ou plusieurs traitements de données du registre RGPD à ce système. Cette liaison garantit la cohérence entre votre registre des traitements et votre registre des systèmes d'IA.
 
-<figure><img src="../../.gitbook/assets/ai-system-data-processings-sync.png" alt="Onglet Traitements dans la fiche système d'IA avec le bouton Sync. data"><figcaption><p>L'onglet "Traitements" liste les traitements RGPD associés à ce système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-data-processings-sync.png" alt="Onglet Traitements dans la fiche système d'IA avec le bouton Sync. data"><figcaption><p>L'onglet "Traitements" liste les traitements RGPD associés à ce système d'IA</p></figcaption></figure>
 
 #### Synchroniser les données d'un traitement
 
 Pour chaque traitement lié, le bouton **"Sync. data"** permet d'importer automatiquement dans la fiche système d'IA les éléments du traitement sélectionné : actifs, jeux de données et catégories de personnes concernées.
 
-<figure><img src="../../.gitbook/assets/ai-system-data-processings-sync-button.png" alt="Bouton Sync. data mis en évidence dans la liste des traitements liés"><figcaption><p>Le bouton "Sync. data" déclenche la synchronisation des données du traitement vers la fiche système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-data-processings-sync-button.png" alt="Bouton Sync. data mis en évidence dans la liste des traitements liés"><figcaption><p>Le bouton "Sync. data" déclenche la synchronisation des données du traitement vers la fiche système d'IA</p></figcaption></figure>
 
 Une fenêtre liste les éléments à importer, avec la possibilité de sélectionner précisément ceux à ajouter.
 

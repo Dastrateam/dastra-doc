@@ -16,7 +16,7 @@ Vous pouvez inviter des utilisateurs à votre espace de travail en cliquant sur 
 
 Rentrez l'adresse email de la personne que vous souhaitez inviter dans votre espace Dastra. Si cette adresse n'est pas déjà rattachée à l'organisation, cliquez sur celle-ci pour lui envoyer un lien d'invitation.
 
-![](<../../.gitbook/assets/image-130.png>)
+![](<../../.gitbook/assets/settings-users-invite-dialog.png>)
 
 Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe puis cliquez sur le bouton "Envoyer une invitation". La personne invitée recevra un mail contenant un lien qui, une fois cliqué, permettra à cette personne d'accéder à l'espace.
 
@@ -28,7 +28,7 @@ Ca y est, l'utilisateur a été invité !
 
 Vous pouvez piloter les invitations en cours dans les réglages de l'espace de travail sur la section "Utilisateurs".&#x20;
 
-<figure><img src="../../.gitbook/assets/image-12-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-users-nav-menu.png" alt=""><figcaption></figcaption></figure>
 
 ### Renvoyer un lien d'invitation
 
@@ -113,7 +113,7 @@ Attention, les rôles doivent être créés préalablement.
 
 Les équipes doivent être identifiées par des numéros d'identifiants qui sont récupérés en ouvrant une équipe dans Dastra (via le bouton "Modifier").
 
-<figure><img src="../../.gitbook/assets/image-384.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-teams-edit-dialog.png" alt=""><figcaption></figcaption></figure>
 
 Dans l'image suivante, l'identifiant de l'équipe Test est 8019.
 
@@ -125,12 +125,12 @@ Attention, les équipes doivent être crées préalablement dans l'espace de tra
 
 Enregistrez votre fichier au format CSV UTF 8&#x20;
 
-<figure><img src="../../.gitbook/assets/image-11-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-users-invite-csv-format.png" alt=""><figcaption></figcaption></figure>
 
 Une fois votre fichier prêt, indiquez nous dans quel espace de travail vous souhaitez importer les utilisateurs et déposez le fichier via l'interface de dépôt :&#x20;
 
 
 
-<figure><img src="../../.gitbook/assets/image-2-3-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-users-bulk-invite-upload.png" alt=""><figcaption></figcaption></figure>
 
 Nous recevrons la demande et nous reviendrons vers vous pour le suivi.

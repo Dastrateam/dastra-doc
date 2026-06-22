@@ -16,7 +16,7 @@ La fonctionnalité de registres des activités de traitements Dastra répond à 
 
 Les traitements sont duplicables et des modèles de traitement sont disponibles dans une bibliothèque librement accessible à tous nos utilisateurs. Un workflow est intégré, une fonction de recherche est présente nativement et il est possible d’importer / exporter des fiches de traitements sous différent formats ( pdf , word , html, excel , csv, json ). Il est possible d'attacher des pièces jointes, des violations ou encore des risques à ces traitements.&#x20;
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-01-24-151137.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-registre-liste.png" alt=""><figcaption></figcaption></figure>
 
 ## Registre "Responsable de traitement" versus "Sous-traitant"
 

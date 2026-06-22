@@ -2,7 +2,7 @@
 
 L'aide en ligne de Dastra est accessible à tout moment dans votre espace de travail en cliquant sur le bouton "Aide" en bas à gauche de l'écran.
 
-![](<../../.gitbook/assets/image-148.png>)
+![](<../../.gitbook/assets/getting-started-help-button.png>)
 
 Une fenêtre s'affiche, avec toutes les possibilités :
 
@@ -14,7 +14,7 @@ A la première connexion dans votre espace de travail, Dastra vous propose un tu
 
 Si vous souhaitez relancer ce guide, il vous suffit de cliquer sur le bouton "Aide" en bas à gauche de l'écran, puis de sélectionner l'option "**afficher le guide**" :&#x20;
 
-![](<../../.gitbook/assets/image-149.png>)
+![](<../../.gitbook/assets/getting-started-show-guide-link.png>)
 
 Le guide de démarrage se relance alors et vous n'aurez plus qu'à suivre les étapes.
 

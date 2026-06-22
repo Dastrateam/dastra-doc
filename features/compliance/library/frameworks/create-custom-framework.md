@@ -30,7 +30,7 @@ Une fois créé, le framework est ajouté à la Librairie, dans un état **broui
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-448.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-dialog.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -72,7 +72,7 @@ En mode édition, l’utilisateur peut :
 {% column %}
 
 
-<figure><img src="../../../../.gitbook/assets/image-449.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-empty-library.png" alt=""><figcaption></figcaption></figure>
 
 
 {% endcolumn %}
@@ -91,7 +91,7 @@ Cette étape permet de traduire un cadre réglementaire, normatif ou interne en 
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-450.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-chapter-dialog.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -137,7 +137,7 @@ Elles constituent le lien direct entre le référentiel et les contrôles opéra
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-451.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-requirement-dialog.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -156,7 +156,7 @@ Elles constituent le lien direct entre le référentiel et les contrôles opéra
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-452.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-requirement-ai-reference.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -182,7 +182,7 @@ L’utilisateur reste libre de modifier la référence proposée.
 
 ### Organisation et gestion des exigences
 
-<figure><img src="../../../../.gitbook/assets/image-476.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-requirement-move-menu.png" alt=""><figcaption></figcaption></figure>
 
 Une fois créées, les exigences peuvent être :
 
@@ -204,7 +204,7 @@ Pour associer des contrôles à une exigence, deux approches sont possibles.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-453.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-associate-controls-choice.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -222,7 +222,7 @@ L’utilisateur peut sélectionner un ou plusieurs contrôles déjà présents d
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-454.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-associate-controls-list.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -238,7 +238,7 @@ L’utilisateur peut sélectionner un ou plusieurs contrôles déjà présents d
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-455.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-associate-ai-controls.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}

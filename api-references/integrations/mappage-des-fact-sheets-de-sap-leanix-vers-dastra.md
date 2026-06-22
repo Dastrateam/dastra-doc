@@ -44,7 +44,7 @@ Lors de l’import, certains champs issus des Fact Sheets LeanIX sont directemen
 
 
 
-<figure><img src="../../.gitbook/assets/image-dastra-sap-leanix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integration-sap-leanix-sync-diagram.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

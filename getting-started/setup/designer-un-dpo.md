@@ -26,6 +26,6 @@ Ensuite, ajouter le DPO dans le champ prévu.
 
 Le DPO est ajouté en tant qu'acteur. Ainsi, si le DPO est une personne physique, ajoutez le en personne physique. S'il s'agit d'une société (un DPO externe par exemple), ajoutez le en tant que personne morale.
 
-<figure><img src="../../.gitbook/assets/image-277.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/referentiel-actor-create-form.png" alt=""><figcaption></figcaption></figure>
 
 N'oubliez pas d'enregistrer et le tour est joué !

@@ -22,19 +22,19 @@ Cette intégration permet de créer automatiquement des objets dans Dastra à pa
 
 Pour mettre en place une boite de collecte pour l'un des objets listés ci-dessus, rendez-vous dans les réglages de votre espace de travail, onglet intégrations et sélectionnez la carte "Adresse mail de collecte"
 
-<figure><img src="../../.gitbook/assets/image-379.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-integrations-mailbox-list.png" alt=""><figcaption></figcaption></figure>
 
 Sélectionnez ensuite le type d'objet pour lequel vous souhaitez mettre en place l'intégration en cliquant sur "ajouter l'intégration". Il est important de noter que vous ne pouvez disposer que d'une seule boite mail de collecte par type d'objet et par espace de travail.
 
-<figure><img src="../../.gitbook/assets/image-380.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-mailbox-integration-detail.png" alt=""><figcaption></figcaption></figure>
 
 Vous avez la possiblité de renseigner l'unité organisationnelle de destination des objets créés via cette boite de collecte lors de l'installation de l'intégration. En laissant ce champ vide, les objets seront créés dans l'unité organisationnelle defaut.
 
-<figure><img src="../../.gitbook/assets/image-381.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-mailbox-configure-modal.png" alt=""><figcaption></figcaption></figure>
 
 En cliquant sur "Créer", Dastra finalise l'installation de l'intégration et met à votre disposition l'adresse email à utiliser.
 
-<figure><img src="../../.gitbook/assets/image-382.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-mailbox-params-modal.png" alt=""><figcaption></figcaption></figure>
 
 ### Fonctionnalités principales
 

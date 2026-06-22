@@ -12,11 +12,11 @@ Vérifiez que la boîte mail de la personne n'est pas pleine
 
 Dans de très rares cas, Dastra peut être bloqué par le filtre anti-spam du serveur. Dans ce cas, vous pouvez générer un lien d'invitation en créant de nouveau une invitation en **cliquant sur "Inviter un utilisateur**" > **Suivre les étapes > Sélectionnez "Générer un lien".**&#x20;
 
-<figure><img src="../.gitbook/assets/image-9-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/settings-users-invite-generate-link.png" alt=""><figcaption></figcaption></figure>
 
 **Cliquez sur "Générer lien" > Copiez le lien présent dans la page**
 
-<figure><img src="../.gitbook/assets/image-2-2-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/settings-users-invite-link-generated.png" alt=""><figcaption></figcaption></figure>
 
 Vous pouvez ainsi transmettre le lien d'invitation à l'utilisateur via un chat d'entreprise, un envoi depuis votre boîte mail...
 
@@ -35,7 +35,7 @@ Pour résoudre ces problèmes, nous vous mettons à disposition plusieurs soluti
 
 Pour l'actionner, rendez-vous dans l'onglet "profil" au sein de vos paramètres personnels :&#x20;
 
-![](<../.gitbook/assets/image-3-1-4.png>)
+![](<../.gitbook/assets/settings-profile-reset-preferences.png>)
 
 {% hint style="info" %}
 En sélectionnant cette option, vous perdrez vos réglages de colonnes dans tous les tableaux de Dastra et vous redéclencherez l'affichage des tutoriels dans tous les modules.&#x20;
@@ -50,7 +50,7 @@ Ces deux actions n'ont pas permis de résoudre votre problème ? Contactez le su
 **Scénario** : vous vous connecter à Dastra via l'url https://app.dastra.eu, vous saisissez vos identifiants et vous arrivez sur une page d'erreur "**Accès refusé (401)**" .
 
 Aperçu de la page :\
-![](<../.gitbook/assets/image-1-1-1-2-4-1.png>)
+![](<../.gitbook/assets/error-401-access-denied.png>)
 
 **Solutions** :&#x20;
 

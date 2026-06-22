@@ -12,11 +12,11 @@ Il est possible de parcourir les différentes versions d'un contrat depuis le ge
 
 Lorsque vous créez un contrat, nous créons par défaut la version 1 de ce contrat, visible dans le menu d'actions principales du contrat
 
-<figure><img src="../../.gitbook/assets/image-351.png" alt=""><figcaption><p>le bouton d'accès au gestionnaire de versions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-version-indicator-highlight.png" alt=""><figcaption><p>le bouton d'accès au gestionnaire de versions</p></figcaption></figure>
 
 En cliquant sur ce bouton, vous accédez au gestionnaire de versions
 
-<figure><img src="../../.gitbook/assets/image-353.png" alt=""><figcaption><p>Le gestionnaire de versions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-version-manager-panel.png" alt=""><figcaption><p>Le gestionnaire de versions</p></figcaption></figure>
 
 Ce menu vous permet de voir et de gérer l'ensemble des versions de votre contrat et d'en créer de nouvelles en cliquant sur _Créer une nouvelle version._
 
@@ -24,7 +24,7 @@ Ce menu vous permet de voir et de gérer l'ensemble des versions de votre contra
 
 En cliquant sur _Créer une nouvelle version_, vous pourrez créer une nouvelle version en renseignant les informations suivantes
 
-<figure><img src="../../.gitbook/assets/image-354.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-create-version-modal.png" alt=""><figcaption></figcaption></figure>
 
 Il est important de noter que le nom du contrat, la description, l'unité organisationnelle, les actifs, signataires et utilisateurs seront conservés dans la nouvelle versions. La date de début et de fin de contrat vous est demandé à la création de la version (vous pourrez la modifier par la suite), et il vous est possible d'ajouter une description à cette nouvelle version.
 
@@ -44,7 +44,7 @@ Il est important de différencier la version active (unique), version qui fait r
 
 Les versions inactives du contrat sont matérialisées par un point rouge dans le gestionnaire de contrats.
 
-<figure><img src="../../.gitbook/assets/image-341.png" alt=""><figcaption><p>Bien que ma version 4 soit la version active, je peux tout à fait afficher et travailler sur la version 2</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-version-manager-multiple.png" alt=""><figcaption><p>Bien que ma version 4 soit la version active, je peux tout à fait afficher et travailler sur la version 2</p></figcaption></figure>
 
 ### Rendre une version active
 
@@ -52,13 +52,13 @@ Lors de la création d'une version, cette dernière devient automatiquement la v
 
 Vous pouvez manuellement rendre une version active en vous rendant dans le gestionnaire de version et en cliquant sur l'option Activer d'une version.
 
-<figure><img src="../../.gitbook/assets/image-342.png" alt=""><figcaption><p>Définir la version 3 du contrat comme la version active / principale.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-version-context-menu-activate.png" alt=""><figcaption><p>Définir la version 3 du contrat comme la version active / principale.</p></figcaption></figure>
 
 ### Suppression
 
 Vous pouvez à tout moment supprimer une version inactive du contrat en cliquant sur Supprimer dans le menu d'une version
 
-<figure><img src="../../.gitbook/assets/image-343.png" alt=""><figcaption><p>Supprimer la version 1 du contrat</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-version-context-menu-delete.png" alt=""><figcaption><p>Supprimer la version 1 du contrat</p></figcaption></figure>
 
 Il n'est pas possible de supprimer la version active du contrat.
 

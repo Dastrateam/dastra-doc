@@ -10,6 +10,6 @@ Dans votre espace de travail, vous disposez d'un assistant dastronaute présent 
 
 En cliquant sur cet assistant, une fenêtre apparait contenant des suggestions d'actions.&#x20;
 
-![Un exemple de suggestions d'actions](<../../.gitbook/assets/image-147.png>)
+![Un exemple de suggestions d'actions](<../../.gitbook/assets/getting-started-checklist-panel.png>)
 
 Tout au long de votre parcours dans Dastra, l'assistant vous donnera des indications sur des actions à réaliser utiliser au mieux la plateforme.

@@ -38,7 +38,7 @@ Votre nom de domaine doit inclure l'intégralité du préfixe "https://www." pou
 
 ![Le scan est en cours](<../../../.gitbook/assets/capture-web-5-5-2022-17030-app-dastra-eu.jpeg>)
 
-![Ecran d'affichage des cookies](<../../../.gitbook/assets/image-51.png>)
+![Ecran d'affichage des cookies](<../../../.gitbook/assets/cookies-categories-list-overview.png>)
 
 Une fois les cookies déposés sur votre site web scannés, vous pouvez procéder à leur classification.
 

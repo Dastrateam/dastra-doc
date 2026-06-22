@@ -2,7 +2,7 @@
 
 Pour chaque système d'IA que vous allez enregistrer, il faudra renseigner le ou les modèle(s) d'IA utilisé(s).
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-05-21-175521.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-modeles-dia-liste.png" alt=""><figcaption></figcaption></figure>
 
 ## Définition
 
@@ -17,13 +17,13 @@ Un modèle d'intelligence artificielle peut être défini comme un programme inf
 
 Pour créer un référentiel, dirigez vous vers l'onglet "Modèles d'IA".
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-05-21-174750.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-onglet-modeles-dia.png" alt=""><figcaption></figcaption></figure>
 
 Puis cliquez sur le bouton "Créer un modèle d'IA". Une fenêtre s'ouvre, vous pouvez y renseigner les informations demandées.
 
 N'hésitez pas à bien détailler la partie description en y ajoutant les fonctionnalités et les informations dont vous disposez sur le modèle.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-05-21-174951.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-modele-dia-edit-modal.png" alt=""><figcaption></figcaption></figure>
 
 ### Génération automatique avec l'assistant IA
 
@@ -37,11 +37,11 @@ Pour utiliser cette option  :
 
 Le contenu généré est une proposition — vérifiez et complétez les informations avant de valider.
 
-<figure><img src="../../.gitbook/assets/image-281.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-create-type-picker.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image-296.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-create-generate-form.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image-337.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-create-ai-generated-preview.png" alt=""><figcaption></figcaption></figure>
 
 ## Liaison entre système et modèle
 
@@ -49,4 +49,4 @@ Pour lier un système d'IA à un modèle, il faut se rendre sur le système d'IA
 
 Sélectionnez les modèles concernés, puis renseignez le champs "description de l'utilisation". Celui-ci sert à expliquer comment le modèle est utilisé dans le cadre du système d'IA concerné.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-144928.png" alt=""><figcaption><p>Lier un modèle et un système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-fiche-etape-modeles-dia.png" alt=""><figcaption><p>Lier un modèle et un système d'IA</p></figcaption></figure>

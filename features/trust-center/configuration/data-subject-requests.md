@@ -8,7 +8,7 @@ description: Apprenez à paramétrer un widget d'exercice des droits dans votre 
 
 Pour activer la fonctionnalité '**Exercice des droits**' dans votre Trust center, consultez la section de configuration générale qui permet d'activer ou de désactiver cette option. Une fois activée, une nouvelle page publique intitulée 'Exercice des droits' sera ajoutée à votre Trust center.
 
-<figure><img src="../../../.gitbook/assets/image-397.png" alt=""><figcaption><p>L'onglet de configuration de la fonctionnalité Exercice des droits dans votre Trust center</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/trust-center-dsr-widget-config.png" alt=""><figcaption><p>L'onglet de configuration de la fonctionnalité Exercice des droits dans votre Trust center</p></figcaption></figure>
 
 #### Prérequis
 

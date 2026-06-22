@@ -4,7 +4,7 @@ Une fois que vous avez ajouté au moins un signataire à votre contrat (voir [le
 
 Vous pouvez déclarer des signatures manuellement, ou bien mettre en place notre [intégration avec Docusign](integration-avec-docusign.md) pour gérer tout le processus de signature électroniquement.
 
-<figure><img src="../../.gitbook/assets/image-356.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-add-signature-modal.png" alt=""><figcaption></figcaption></figure>
 
 Il existe plusieurs manières d'accéder à ce menu de signature:
 
@@ -14,13 +14,13 @@ Il existe plusieurs manières d'accéder à ce menu de signature:
 
 Vous pouvez signer simultanément plusieurs signataires en cliquant sur la flèche à droite du bouton ajouter un signataire. Il vous sera alors proposé de sélectionner tous les signataires pour lesquels vous voulez signer.
 
-<figure><img src="../../.gitbook/assets/image-357.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-add-signatory-dropdown.png" alt=""><figcaption></figcaption></figure>
 
 #### 3) Signer depuis la vue tableau
 
 Vous pouvez signer un contrat directement depuis la vue tableau récapitulative
 
-<figure><img src="../../.gitbook/assets/image-358.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-list-signature-tooltip.png" alt=""><figcaption></figcaption></figure>
 
 ### Le bouton signer de la zone d'actions principales
 
@@ -32,16 +32,16 @@ Selon le nombre de signataires renseignés, et le nombre de signatures reçues, 
 
 Déclarez des signataires afin de pouvoir interagir avec ce bouton
 
-<figure><img src="../../.gitbook/assets/image-339.png" alt=""><figcaption><p>Pas de signataires</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-no-signatories-badge.png" alt=""><figcaption><p>Pas de signataires</p></figcaption></figure>
 
 #### 2) Des signatures sont manquantes
 
 En cliquant sur cet état, vous pourrez déclarer les signatures manquantes
 
-<figure><img src="../../.gitbook/assets/image-336.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-sign-for-all-button.png" alt=""><figcaption></figcaption></figure>
 
 #### 3) Contrat signé par tous les signataires
 
 En cliquant sur cet état, vous pourrez supprimer des signatures
 
-<figure><img src="../../.gitbook/assets/image-338.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-signed-badge.png" alt=""><figcaption></figcaption></figure>

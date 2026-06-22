@@ -27,7 +27,7 @@ Oui, c'est possible depuis le type de question "texte long" en cochant la case "
 
 Oui, c'est possible depuis le modèle de questionnaire en cliquant sur "Contribuer" :<br>
 
-<div align="left"><figure><img src="../../.gitbook/assets/screenshot-2024-07-26-120545.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/audit-questionnaire-menu-actions.png" alt=""><figcaption></figcaption></figure></div>
 
 ## A quoi correspondent les couleurs dans les réponses aux questionnaires ?
 
@@ -37,42 +37,42 @@ Voici la correspondance des couleurs :
 
 | Couleur               | Image                                                                         | Description                                                                             |
 | --------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Gris entouré de rouge | ![](<../../.gitbook/assets/image-385.png>)                                  | Question obligatoire non répondue                                                       |
-| Noir entouré de rouge | ![](<../../.gitbook/assets/image-386.png>)                                  | Question obligatoire répondue                                                           |
-| Gris                  | ![](<../../.gitbook/assets/image-388.png>)                                  | Question non obligatoire non répondue                                                   |
-| Vert                  | ![](<../../.gitbook/assets/image-389.png>)                                  | Toutes les questions de la section ont un réponse. Question non obligatoire répondue    |
-| Vert entouré de rouge | <img src="../../.gitbook/assets/image-391.png" alt="" data-size="original"> | Toutes les questions de la section ont un réponse. Question obligatoire répondue        |
-| Noir                  | <img src="../../.gitbook/assets/image-390.png" alt="" data-size="original"> | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
+| Gris entouré de rouge | ![](<../../.gitbook/assets/audit-questionnaire-icone-oblig-non-repondue.png>)                                  | Question obligatoire non répondue                                                       |
+| Noir entouré de rouge | ![](<../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue.png>)                                  | Question obligatoire répondue                                                           |
+| Gris                  | ![](<../../.gitbook/assets/audit-questionnaire-icone-non-oblig-non-repondue.png>)                                  | Question non obligatoire non répondue                                                   |
+| Vert                  | ![](<../../.gitbook/assets/audit-questionnaire-icone-repondue-vert.png>)                                  | Toutes les questions de la section ont un réponse. Question non obligatoire répondue    |
+| Vert entouré de rouge | <img src="../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue-section-complete.png" alt="" data-size="original"> | Toutes les questions de la section ont un réponse. Question obligatoire répondue        |
+| Noir                  | <img src="../../.gitbook/assets/audit-questionnaire-icone-repondue-section-incomplete.png" alt="" data-size="original"> | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
 
 ### Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ? <a href="#slug-error" id="slug-error"></a>
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-11-04-170330.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-questionnaire-erreur-duplicate-slug.png" alt=""><figcaption></figcaption></figure>
 
 \
 Ce message signal qu'une ou plusieurs questions dans le questionnaire porte exactement le même "Nom de la variable" ce qui crée l'erreur.
 
-<div align="left"><figure><img src="../../.gitbook/assets/screenshot-2024-11-04-163831.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/audit-questionnaire-variable-nom.png" alt=""><figcaption></figcaption></figure></div>
 
 Les questions ayant le même "Nom de la variable" sont identifiables grâce au message d'erreur "Le nom de la variable est présent dans une autre question" s'affichant au-dessus d'elles.
 
-<div align="left"><figure><img src="../../.gitbook/assets/screenshot-2024-11-04-164534.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/audit-questionnaire-variable-doublon-erreurs.png" alt=""><figcaption></figcaption></figure></div>
 
 Pour résoudre ce problème, il faut donc modifier le "Nom de la variable" de chacune des questions ayant le même "Nom de la variable" de manière à la rendre unique pour chaque question, par exemple en ajoutant un \_ est un numéro incrémenté à la fin de chaque "Nom de la variable" .
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-11-04-165757.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-questionnaire-proprietes-slug.png" alt=""><figcaption></figcaption></figure>
 
 Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, il sera possible de l'enregistrer normalement.<br>
 
 ### Que faire lorsque l'on rencontre le message "Bloqué car trop d'invitations" lors de l'envoi d'invitations par email aux répondants du questionnaire ?
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-05-091717.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-questionnaire-invitation-bloquee.png" alt=""><figcaption></figcaption></figure>
 
 \
 Ce message apparaît si 5 invitations par email ont déjà été envoyées à un répondant depuis le même questionnaire.\
 \
 Lorsque ce message apparait, vous pouvez encore inviter le répondant en lui transmettant le lien d'invitation au questionnaire disponible ici :
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-05-092802.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-questionnaire-repondants-copier-lien.png" alt=""><figcaption></figcaption></figure>
 
 ### Que faire lorsque je ne peux pas "Revoir et valider le questionnaire" alors que je suis bien responsable ?
 
@@ -80,4 +80,4 @@ Cela peut arriver lorsque le répondant n'a pas encore finalisé son questionnai
 \
 Dans ce cas, en tant que responsable, vous avez la possibilité de vérifier où en est le questionnaire du côté du répondant en utilisant le lien d'accès du répondant disponible ici :
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-24-164321.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-questionnaire-repondant-externe-copier-lien.png" alt=""><figcaption></figcaption></figure>

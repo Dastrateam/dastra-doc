@@ -12,7 +12,7 @@ Pour tous les traitements, vous pouvez afficher l'historique des modifications a
 
 Il suffit de cliquer sur l'icone en haut de la page représentant une horloge.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-12-18-103715.png" alt=""><figcaption><p>Bouton d'accès à l'historique</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-fiche-icone-historique.png" alt=""><figcaption><p>Bouton d'accès à l'historique</p></figcaption></figure>
 
 Attention, les modifications d'unités organisationnelles ne sont pas tracées.
 
@@ -28,7 +28,7 @@ Pour supprimer un traitement, il y a nécessairement un passage par la corbeille
 
 Pour déplacer un traitement dans la corbeille, il faut aller sur les trois petits points sur le traitement pour afficher le menu.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-12-18-103935.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-fiche-menu-corbeille.png" alt=""><figcaption></figcaption></figure>
 
 Et enfin, afficher les archives
 
@@ -36,7 +36,7 @@ Et enfin, afficher les archives
 
 et supprimer
 
-<figure><img src="../../.gitbook/assets/image-4-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/register-processing-context-menu-full.png" alt=""><figcaption></figcaption></figure>
 
 ## Comment utiliser les jeux de données sans pouvoir modifier les données ?
 
@@ -53,7 +53,7 @@ Ensuite, créer un rôle personnalisé avec les permissions :
 * Registre : lecture, écriture
 * Cartographie des données : lecture
 
-<figure><img src="../../.gitbook/assets/image-2-2-3.png" alt=""><figcaption><p>Rôle permettant l'accès aux jeux de données sans pouvoir les modifier</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-roles-permissions-grid.png" alt=""><figcaption><p>Rôle permettant l'accès aux jeux de données sans pouvoir les modifier</p></figcaption></figure>
 
 Ensuite, il faut attribuer ce rôle aux utilisateurs concernés.
 
@@ -73,7 +73,7 @@ Ensuite, vous verrez le bouton "Choisir des actions groupées" apparaitre.
 
 Sélectionner l'option "Lier des acteurs" et ajoutez vos acteurs en tant que partie prenante.
 
-<figure><img src="../../.gitbook/assets/image-17-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/register-bulk-link-actors-modal.png" alt=""><figcaption></figcaption></figure>
 
 ## Obtenir la liste des actifs par unité organisationnelle (UO) ?
 
@@ -92,7 +92,7 @@ Vous pouvez dupliquer un registre et les traitements associés de plusieurs faç
 
 Vous pouvez changer de type de traitement en cliquant sur "Basculer en sous-traitant" ou "Basculer en responsable de traitement" :
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-10-16-122037.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-fiche-menu-basculer-sous-traitant.png" alt=""><figcaption></figcaption></figure>
 
 ## Message d'erreur : "Le champ Label est requis."
 
@@ -100,7 +100,7 @@ Ce message apparait généralement quand un élément a été laissé vide lors 
 
 ## Message d'erreur : "Attention, du contenu HTML interdit est présent dans un champ !"
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-03-04-163623.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-import-warning-html.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
 
 \
 Ce message signifie que du code HTML (généralement contenu entre les balises <>) est présent dans un champ ou le HTML est interdit (pour raison de sécurité).<br>
@@ -108,14 +108,14 @@ Ce message signifie que du code HTML (généralement contenu entre les balises <
 \
 Le message suivant permet d'identifier facilement le champ concerné :
 
-<figure><img src="../../.gitbook/assets/image-2-1-1-1-1.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/register-html-error-banner.png" alt=""><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ</p></figcaption></figure>
 
 ## Message d'erreur : "L'identifiant de l'utilisateur n'existe pas dans votre organisation." à l'enregistrement d'un traitement
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-05-15-102250.png" alt=""><figcaption><p>L'identifiant de l'utilisateur n'existe pas dans votre organisation.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-import-error-utilisateur.png" alt=""><figcaption><p>L'identifiant de l'utilisateur n'existe pas dans votre organisation.</p></figcaption></figure>
 
 Ce message signifie qu'un utilisateur ayant été supprimé de votre espace de travail est toujours défini comme approbateur dans les parties prenantes du traitement :
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-05-15-102626.png" alt=""><figcaption><p>Utilisateur supprimé définit en tant que partie prenante du traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/processing-fiche-parties-prenantes-deleted-user.png" alt=""><figcaption><p>Utilisateur supprimé définit en tant que partie prenante du traitement</p></figcaption></figure>
 
 Il faut retirer l'utilisateur supprimé des parties prenantes du traitement pour résoudre le problème.

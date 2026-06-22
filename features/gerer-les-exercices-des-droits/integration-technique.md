@@ -20,7 +20,7 @@ Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**u
 
 Pour commencer, vous devez **mettre en place le widget** dans[ le panel de gestion des widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) d'exercice de droits :
 
-![](../../.gitbook/assets/image-247-1-1.png)
+![](../../.gitbook/assets/dsr-collection-widgets-list.png)
 
 Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d'ouverture) :
 
