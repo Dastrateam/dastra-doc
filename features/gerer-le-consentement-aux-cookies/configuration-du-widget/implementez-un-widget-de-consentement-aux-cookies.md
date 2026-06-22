@@ -14,9 +14,9 @@ Ce widget se compose de plusieurs éléments:
 
 ![Un symbole "cookies" apparaissant en bas à gauche de l'écran](<../../../.gitbook/assets/capture-web-6-5-2022-93427-www-dastra-eu.jpeg>)
 
-![Une fenêtre d'introduction dépliable](<../../../.gitbook/assets/image-42.png>)
+![Une fenêtre d'introduction dépliable](<../../../.gitbook/assets/cookies-widget-banner-preview.png>)
 
-![La liste des cookies par finalité utilisées par le site ](<../../../.gitbook/assets/image-40-1.png>)
+![La liste des cookies par finalité utilisées par le site ](<../../../.gitbook/assets/cookies-widget-preferences-panel.png>)
 
 ## Prérequis&#x20;
 
@@ -60,7 +60,7 @@ Une fois votre widget de consentement aux cookies cible défini, vous pouvez l'i
 \
 Pour cela, rendez-vous dans l'onglet "Installation" une fois que vous avez sélectionné votre widget dans le menu du module de Cookies, et insérez le code généré automatiquement avant la fin de la balise html \<body> de votre site internet.
 
-![Génération de code html du widget](<../../../.gitbook/assets/image-58.png>)
+![Génération de code html du widget](<../../../.gitbook/assets/cookies-widget-embed-code.png>)
 
 {% hint style="info" %}
 Vous pouvez utiliser le Google tag manager pour insérer dynamiquement ce code sur chaque page.

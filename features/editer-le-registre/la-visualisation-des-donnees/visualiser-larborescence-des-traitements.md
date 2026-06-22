@@ -14,13 +14,13 @@ Cette visualisation permet en particulier de comprendre à quelles entités et/o
 
 Pour visualiser l'arborescence des traitements, cliquer sur le module "Registres" puis  cliquez sur la flèche à droite du bouton, pour sélectionner l'option "**Arborescence**".
 
-![Module "Registres"](<../../../.gitbook/assets/image-199.png>)
+![Module "Registres"](<../../../.gitbook/assets/generalites-tile-registres.png>)
 
 ![Flèche à droite du bouton & menu déroulant](<../../../.gitbook/assets/capture-web-4-5-2022-95947-app-dastra-eu.jpeg>)
 
 Ainsi, vous pourrez visualiser l'**arborescence des traitements**.
 
-![L'arborescence des traitements dans Dastra](<../../../.gitbook/assets/image-211.png>)
+![L'arborescence des traitements dans Dastra](<../../../.gitbook/assets/register-tree-view.png>)
 
 {% hint style="info" %}
 Les filtres et le bouton paramétrage vous permettront de modifier la visualisation de l'arborescence à votre convenance.

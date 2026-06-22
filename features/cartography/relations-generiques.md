@@ -37,7 +37,7 @@ Elles sont principalement utilisées dans le module **Actifs** et les **référe
 1. Ouvrez un élément (ex. un actif).
 2. Cliquez sur l'icône **"Éléments liés"** dans la barre d'outils — elle affiche le nombre de liens existants.
 
-<figure><img src="../../.gitbook/assets/image-1-1-1-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cartography-relation-icon.png" alt=""><figcaption></figcaption></figure>
 
 3. Cliquez sur **"Ajouter une relation"** et sélectionnez le type d'objet à lier (Acteur, Mesure de sécurité, Violation de données, Actif, Jeu de données ou Risque).
 4. Dans la fenêtre de dialogue :
@@ -47,7 +47,7 @@ Elles sont principalement utilisées dans le module **Actifs** et les **référe
    * Ajoutez optionnellement un **Libellé de relation** et un **Résumé**.
 5. Cliquez sur **"Ajouter"** pour enregistrer la relation.
 
-<figure><img src="../../.gitbook/assets/image-2-1-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cartography-add-relation-modal.png" alt=""><figcaption></figcaption></figure>
 
 ## Visualiser les relations
 
@@ -56,7 +56,7 @@ Une fois les relations créées, elles apparaissent dans :
 * Le panneau **"Éléments liés"** de chaque élément, affichant tous les liens directs.
 * Le **graphe de nœuds** dans la vue cartographie, où toutes les relations sont représentées sous forme de réseau connecté.
 
-<figure><img src="../../.gitbook/assets/image-4-7.png" alt=""><figcaption><p>Exemple de visualisation graphique d'une relation générique dans la cartographie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cartography-relation-graph-view.png" alt=""><figcaption><p>Exemple de visualisation graphique d'une relation générique dans la cartographie</p></figcaption></figure>
 
 ## Pour aller plus loin
 

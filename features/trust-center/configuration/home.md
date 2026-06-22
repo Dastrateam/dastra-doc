@@ -2,7 +2,7 @@
 
 L'onglet 'Configuration' de la page d'édition d'un Trust center vous permet de configurer les options essentielles de votre Trust center.
 
-<figure><img src="../../../.gitbook/assets/image-392.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/trust-center-create-config-form.png" alt=""><figcaption></figcaption></figure>
 
 #### Nom du Trust center
 

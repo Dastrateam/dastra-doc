@@ -46,7 +46,7 @@ Vous définissez des groupes dans votre Azure Directory et Dastra peut synchroni
 
 #### 5. Nommez votre application
 
-<figure><img src="../../.gitbook/assets/image-19-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-create-app-dialog.png" alt=""><figcaption></figcaption></figure>
 
 #### 6. Dans l'application nouvellement créée, cliquez sur le bouton "Provision User Accounts"
 
@@ -60,13 +60,13 @@ Vous définissez des groupes dans votre Azure Directory et Dastra peut synchroni
 
 **Connectez vous à Dastra** en tant qu'administrateur. **Allez dans la configuration de l'organisation** > **cliquez sur Sécurité / SCIM**
 
-![](<../../.gitbook/assets/image-14-1.png>)
+![](<../../.gitbook/assets/settings-scim-azure-app-menu-scim.png>)
 
 
 
 Cliquez sur le bouton **configurer**
 
-<figure><img src="../../.gitbook/assets/image-18-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-dastra-new-config-modal.png" alt=""><figcaption></figcaption></figure>
 
 Configurez votre SCIM. Sélectionnez l'espace de travail que vous souhaitez synchroniser (les équipes et utilisateurs seront automatiquement provisionés dans cet espace).
 
@@ -80,17 +80,17 @@ Cliquez sur **Enregistrer**
 Aujourd'hui, Dastra vous permet de synchroniser en SCIM (équipes + utilisateurs) **un seul espace de travail par organisation**.&#x20;
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image-12-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-provisioning-credentials.png" alt=""><figcaption></figcaption></figure>
 
 Cliquez sur "**Tester la connection**" et "**Enregistrer**". Si vous rencontrez une erreur lors du test de connexion, cela peut provenir d'une absence de fonctionnalité activé au niveau de votre souscription. [Contactez alors le support](../../getting-started/le-support/faire-une-demande-de-support.md)
 
 #### 9. Activez le provisioning de l'application
 
-<figure><img src="../../.gitbook/assets/image-10-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-provisioning-toolbar.png" alt=""><figcaption></figcaption></figure>
 
 #### 10. Ajoutez des utilisateurs et/ou des groupes à l'application créée&#x20;
 
-<figure><img src="../../.gitbook/assets/image-9-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-users-groups.png" alt=""><figcaption></figcaption></figure>
 
 
 

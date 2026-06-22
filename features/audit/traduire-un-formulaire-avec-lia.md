@@ -11,9 +11,9 @@ Pour lancer une traduction :
    1. **Créer un nouveau modèle** à partir du formulaire courant dans la langue cible
    2. **Créer une nouvelle version** du formulaire courant directement dans la langue cible
 
-<figure><img src="../../.gitbook/assets/image-245.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-translate-questionnaire-button.png" alt=""><figcaption></figcaption></figure>
 
 La traduction couvre les questions, sections, réponses et textes d'accompagnement. La disponibilité des langues dépend du modèle de LLM configuré dans votre espace de travail.
 
-<figure><img src="../../.gitbook/assets/image-253.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/audit-translate-questionnaire-modal.png" alt=""><figcaption></figcaption></figure>
 

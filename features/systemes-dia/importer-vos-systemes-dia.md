@@ -4,7 +4,7 @@ Vous pouvez facilement télécharger votre registre existant directement dans Da
 
 Pour cela, accéder à la vue liste, intitulée "Systèmes d'IA". en haut à droite, ouvrez le menu déroulant à côté du bouton "Créer un nouveau système d'IA" puis cliquez sur "Importer". Une nouvelle page apparait, vous pouvez ajouter votre registre existant en bas de celle-ci.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-05-21-174417.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-menu-importer.png" alt=""><figcaption></figcaption></figure>
 
 Nous vous recommandons de suivre les étapes de la page [Importer vos données (Excel, Csv, JSON)](../generalites/importer-vos-donnees-excel-csv.md) pour plus de détails.
 

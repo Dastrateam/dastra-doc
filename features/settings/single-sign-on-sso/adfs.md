@@ -25,11 +25,11 @@ Les services de fédération Active Directory (généralement désignés sous l'
 * Allez dans le répertoire "**Certificates**" du serveur ADFS
 * Récupérez le certificat .CER de votre serveur ADFS en utilisant le certificat "**Token-Signing**".&#x20;
 
-![](<../../../.gitbook/assets/image-259.png>)
+![](<../../../.gitbook/assets/settings-sso-adfs-certificates-view.png>)
 
 * Cliquez sur "**View Certificates**"
 
-![](<../../../.gitbook/assets/image-250.png>)
+![](<../../../.gitbook/assets/settings-sso-adfs-certificate-export-wizard.png>)
 
 Copiez le code du certificat X509 Certificate en ouvrant le fichier CER avec un éditeur de texte.&#x20;
 
@@ -37,7 +37,7 @@ Insérez le code du certificat dans le champ du certificat qui commence par "---
 
 La configuration de votre login devrait ressembler à ceci :&#x20;
 
-![](<../../../.gitbook/assets/image-257.png>)
+![](<../../../.gitbook/assets/settings-sso-adfs-dastra-idp-configuration.png>)
 
 **Etape 3** : Conservez les valeurs suivantes :&#x20;
 
@@ -56,13 +56,13 @@ Voici comment configurer le SSO Dastra avec ADFS SSO SAML2P
 
 
 
-&#x20;![](<../../../.gitbook/assets/image-248.png>)
+&#x20;![](<../../../.gitbook/assets/settings-sso-adfs-relying-party-trust-menu.png>)
 
 **Etape 3 :**  Dans l'écran _**Select Data Source**_ choisissez _**Enter data about the relying party manually**_.&#x20;
 
 
 
-&#x20;![](<../../../.gitbook/assets/image-254.png>)
+&#x20;![](<../../../.gitbook/assets/settings-sso-adfs-select-data-source.png>)
 
 **Etape 4 :**  Entrez un _**Display name** , par exemple **"Dastra"**_ _puis cliquez sur **"Next"**_
 
@@ -72,7 +72,7 @@ Voici comment configurer le SSO Dastra avec ADFS SSO SAML2P
 
 **Etape 7 :** Sélectionnez "_**Enable support for the SAML 2.0 SSO Web SSO protocol**_."
 
-![](<../../../.gitbook/assets/image-252.png>)&#x20;
+![](<../../../.gitbook/assets/settings-sso-adfs-configure-url-saml.png>)&#x20;
 
 Dans le champ "Relying party SAML 2.0 SSO service URL: mettre l'url de "**SP redirect URI "** présente dans la Dastra. Cette url est de la forme : https://account.dastra.eu/xxxx-xxxx-xxxx-xxxx/Acs
 
@@ -82,22 +82,22 @@ Dans le champ "Relying party SAML 2.0 SSO service URL: mettre l'url de "**SP red
 
 **Etape 10** : Cochez la case _**Open the Edit Claim Rules dialog**_ avant de cliquer sur "terminer". Une fenêtre "_**Edit Claim Rules"**_ va alors s'afficher.&#x20;
 
-![](<../../../.gitbook/assets/image-251.png>)
+![](<../../../.gitbook/assets/settings-sso-adfs-relying-party-trust-finish.png>)
 
 \
 **Etape 11** : Cliquez sur _**Add Rule**_ et choisissez la "Claim Rule" : "_**Send LDAP Attributes as Claims"**_.
 
-![](<../../../.gitbook/assets/image-256.png>)
+![](<../../../.gitbook/assets/settings-sso-adfs-claim-rule-template-ldap.png>)
 
 **Etape 12** : Mappez les claims de la façon suivante, les noms des claims peuvent varier selon la configuration de votre serveur. Dastra a besoin de trois attributs pour fonctionner : Email (Obligatoire), Nom et Prénom de l'utilisateur :
 
-&#x20;![](<../../../.gitbook/assets/image-258.png>)
+&#x20;![](<../../../.gitbook/assets/settings-sso-adfs-claim-rule-configure-ldap.png>)
 
 **Etape 13** : Cliquez sur "**Finish**" et cliquez de nouveau sur "**Add Rule**". Cette fois-ci, choisissez le type "_**Transform an Incoming Claim"** et cliquez sur suivant._
 
 **Etape 14 :**  Configurez la règle suivante **:  Email Address => Name ID => Email**
 
-![](<../../../.gitbook/assets/image-249.png>)
+![](<../../../.gitbook/assets/settings-sso-adfs-claim-rule-configure-nameid.png>)
 
 Appliquez ensuite les changements en cliquant sur "Apply"
 

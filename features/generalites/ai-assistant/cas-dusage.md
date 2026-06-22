@@ -161,14 +161,4 @@ L'assistant analyse les champs renseignés dans la fiche du système d'IA et pro
 **Fonctionnalité en bêta** : à traiter avec une vigilance accrue et à valider par un expert avant toute décision.
 {% endhint %}
 
-Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de conformité AI Act.
-
-<figure><img src="../../../.gitbook/assets/impression-analyse-ia.png" alt="Panneau d'analyse IA avec les boutons Imprimer l'analyse et Relancer l'analyse"><figcaption><p>Le bouton « Imprimer l'analyse » permet d'exporter le résultat de l'analyse au format PDF</p></figcaption></figure>
-
-***
-
-### Référentiels et contrôles
-
-#### Suggestions de contrôles, exigences et tests
-
-Depuis un référentiel de conformité dans le module compliance, l'assistant peut suggérer des contrôles, exigences ou tests pertinents en fonction du contexte de l'objet concerné (nom, description, référentiel associé).
+Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de 

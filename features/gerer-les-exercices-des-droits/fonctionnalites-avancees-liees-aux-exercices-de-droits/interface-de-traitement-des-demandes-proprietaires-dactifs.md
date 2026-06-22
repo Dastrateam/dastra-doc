@@ -9,8 +9,8 @@ Fonctionnalités disponibles :
 * Fournir les preuves, copier ou supprimer les données demandées.
 * Marquer la demande comme traitée ou non recevable avec un commentaire.
 
-<figure><img src="../../../.gitbook/assets/interface-traitement-demandes-liste-fr.png" alt=""><figcaption><p>Liste des demandes à traiter</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dsr-interface-traitement-liste.png" alt=""><figcaption><p>Liste des demandes à traiter</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/interface-traitement-demandes-demandes-en-attente-fr.png" alt=""><figcaption><p>Demandes en attente de traitement</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dsr-interface-traitement-demandes-en-attente.png" alt=""><figcaption><p>Demandes en attente de traitement</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/interface-traitement-demandes-traite-fr.png" alt=""><figcaption><p>Exemple de demande traitée</p></figcaption></figure>

@@ -93,7 +93,7 @@ Ce registre vous permet de :
 
 
 
-<figure><img src=".gitbook/assets/image-11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/ai-systems-list-empty-state.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2Fplaceholder-ai-register.png?alt=media" alt=""><figcaption><p>Module du registre des systèmes d’IA</p></figcaption></figure>
 

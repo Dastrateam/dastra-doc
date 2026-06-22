@@ -95,7 +95,7 @@ Attribuer le bon niveau de risque à vos systèmes d’IA vous permettra de :
 
 
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-142759.png" alt=""><figcaption><p>Analyse de risque d'un système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-fiche-niveau-de-risque.png" alt=""><figcaption><p>Analyse de risque d'un système d'IA</p></figcaption></figure>
 
 #### **Valeur ajoutée d’un système d’IA**
 
@@ -108,7 +108,7 @@ Vous devez sélectionner **l’un des trois niveaux de valeur**, allant de **fai
 
 
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-143019.png" alt=""><figcaption><p>Valeur ajoutée d'un système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-fiche-valeur-ajoutee.png" alt=""><figcaption><p>Valeur ajoutée d'un système d'IA</p></figcaption></figure>
 
 #### **Pourquoi remplir ces deux parties ?**
 

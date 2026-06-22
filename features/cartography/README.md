@@ -33,7 +33,7 @@ Vous ne souhaitez pas faire cet inventaire ou vous estimez que les logiciels que
 2. Cliquez dans la navigation sur l'icône "Cartographie des données"
 3. Vous arrivez sur cette page :
 
-<figure><img src="../../.gitbook/assets/image-378.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/referentiel-stats-overview.png" alt=""><figcaption></figcaption></figure>
 
 Choisissez ensuite le référentiel auquel vous souhaitez accéder.
 

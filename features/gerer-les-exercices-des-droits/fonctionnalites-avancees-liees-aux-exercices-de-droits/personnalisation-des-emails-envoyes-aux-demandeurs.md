@@ -7,9 +7,9 @@ Vous pouvez :
 * Gérer les **traductions multilingues** afin d’envoyer des emails dans la langue choisie par le demandeur.
 * Ajouter des langues supplémentaires (par défaut, les emails seront envoyés en anglais si aucune traduction n’est définie).
 
-<figure><img src="../../../.gitbook/assets/workspace-settings-lang01-fr.png" alt=""><figcaption><p>Personnalisation des langues</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-workspace-langues.png" alt=""><figcaption><p>Personnalisation des langues</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/workspace-settings-lang-surcharge-fr.png" alt=""><figcaption><p>Personnalisation d'un message</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-workspace-langues-surcharge.png" alt=""><figcaption><p>Personnalisation d'un message</p></figcaption></figure>
 
 {% hint style="info" %}
 Veuillez faire attention à la présence éventuelle de balise (ici : `{{data.code}}`) : cela signifie que des données seront insérées lors de la génération du message et sont nécessaires au bon fonctionnement !&#x20;

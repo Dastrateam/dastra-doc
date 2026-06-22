@@ -10,7 +10,7 @@ description: >-
 
 pour récupérer une clé publique du SDK Dastra, rendez-vous sur cette page : [https://app.dastra.eu/general-settings/api](https://app.dastra.eu/general-settings/api)&#x20;
 
-![](<../../../../.gitbook/assets/image-88.png>)
+![](<../../../../.gitbook/assets/settings-api-key-create-modal.png>)
 
 ## Configurez votre widget
 

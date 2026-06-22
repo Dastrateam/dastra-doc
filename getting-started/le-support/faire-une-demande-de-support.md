@@ -9,9 +9,9 @@ Parfois, il est possible que le problème auquel vous êtes confronté ne puisse
 Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers **le chat** en bas à droite de l'écran pour poser **des questions fonctionnelles directement à votre Privacy Success Manager dédié**, soit en accédant directement au questionnaire de **demande de support** en haut à droite de l'écran **pour les problèmes techniques** :\
 <br>
 
-<figure><img src="../../.gitbook/assets/image-423.png" alt=""><figcaption><p>Le bouton chat en bas à droite de l'écran</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/support-chat-button.png" alt=""><figcaption><p>Le bouton chat en bas à droite de l'écran</p></figcaption></figure>
 
-![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/image-152.png>)
+![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/support-contact-icon.png>)
 
 {% hint style="info" %}
 Pour accéder directement au formulaire de demande de support ou au chat, vous devez disposer d'un compte et être connecté à l'application.
@@ -34,7 +34,7 @@ Choisissez une des cinq options possibles, détaillez votre réponse et cliquez 
 
 Lors de la création de votre ticket, vous pouvez nous donner une autorisation préalable à effectuer des tests sur votre espace de travail en laissant cochée la case suivante :<br>
 
-<figure><img src="../../.gitbook/assets/image-1-1-1-4-1-1.png" alt=""><figcaption><p>Case d'autorisation préalable de test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/support-authorize-access-checkbox.png" alt=""><figcaption><p>Case d'autorisation préalable de test</p></figcaption></figure>
 
 Cela nous permet de répondre plus rapidement et plus efficacement à votre demande.\
 <br>

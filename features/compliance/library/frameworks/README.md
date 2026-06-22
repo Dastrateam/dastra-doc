@@ -14,7 +14,7 @@ Ces frameworks servent de **socle commun** pour construire vos projets de confor
 
 #### 1. Navigation latérale – Bibliothèque de conformité
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/image-425.png" alt="library view"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/compliance-library-frameworks-empty.png" alt="library view"><figcaption></figcaption></figure></div>
 
 Le menu latéral permet d’accéder aux différents objets de la bibliothèque :
 

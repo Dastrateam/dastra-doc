@@ -34,7 +34,7 @@ Cette relation permet de passer d’une approche déclarative à une **gestion o
 
 ### Vue bibliothèque des risques
 
-<figure><img src="../../../.gitbook/assets/image-497.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-risks-list.png" alt=""><figcaption></figcaption></figure>
 
 La bibliothèque des risques offre une vision globale des risques identifiés, avec notamment :
 
@@ -55,7 +55,7 @@ La bibliothèque des risques offre une vision globale des risques identifiés, a
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-498.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-risk-edit-form.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -114,7 +114,7 @@ L’association permet :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-499.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-risk-controls-search.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

@@ -20,7 +20,7 @@ Dans cette phase, le projet bascule d’une logique de préparation à une logiq
 * les preuves sont collectées, mises à jour et évaluées,
 * les indicateurs de conformité deviennent exploitables.
 
-<figure><img src="../../../.gitbook/assets/image-464.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-monitoring-overview.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -39,7 +39,7 @@ La page de surveillance offre une vision synthétique de l’état du projet :
 
 Ces indicateurs permettent d’identifier rapidement les points de vigilance et de prioriser les actions correctives.
 
-<figure><img src="../../../.gitbook/assets/image-465.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-controls-list.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -62,7 +62,7 @@ Chaque preuve peut être documentée afin de faciliter les audits ultérieurs.
 {% column %}
 
 
-<figure><img src="../../../.gitbook/assets/image-466.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-add-evidence-modal.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -81,7 +81,7 @@ Une campagne permet de :
 
 Lors de la création d’une campagne, il est possible de **pré-sélectionner automatiquement tous les tests en attente de preuves**, afin de faciliter le lancement.
 
-<figure><img src="../../../.gitbook/assets/image-467.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-test-campaign-content.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -101,7 +101,7 @@ L’avancement global de la campagne est visible en temps réel, permettant au r
 {% column %}
 
 
-<figure><img src="../../../.gitbook/assets/image-468.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-test-campaign-send-invitations.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -117,7 +117,7 @@ Chaque test dispose d’un cycle de vie clair :
 
 Une fois validé, le test contribue automatiquement à l’amélioration du statut du contrôle associé et aux indicateurs globaux du projet. L'invitation envoie l'utilisateur vers un tableau de suivi personnalisé dans lequel il peut renseigner les preuves des tests pour lesquels il est propriétaire.
 
-<figure><img src="../../../.gitbook/assets/image-469.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-test-campaign-user-view.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -26,7 +26,7 @@ Chaque test est :
 
 ### Vue bibliothèque des tests
 
-<figure><img src="../../../.gitbook/assets/image-492.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-tests-list.png" alt=""><figcaption></figcaption></figure>
 
 La bibliothèque des tests offre une vision transverse de tous les tests disponibles, avec notamment :
 
@@ -80,7 +80,7 @@ Lors de la création ou de l’édition d’un test, l’utilisateur définit :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-493.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-test-edit-form.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -92,7 +92,7 @@ Ces informations servent de guide opérationnel lors de l’exécution du test d
 
 Dastra propose plusieurs types de connecteurs prêts à l’emploi (questionnaires, registres, politiques, etc.), ainsi qu’un connecteur générique. Ces connecteurs sont utilisés directement dans les **tests automatisés** du module Compliance.
 
-<figure><img src="../../../.gitbook/assets/image-494.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-test-install-connector.png" alt=""><figcaption></figcaption></figure>
 
 En complément des tests manuels, Dastra permet de configurer des **tests automatisés** à l’aide de **connecteurs**.
 
@@ -278,17 +278,4 @@ Lorsqu'un test est lié à un document, un panneau **Tests** apparaît dans la v
 
 Dans le gestionnaire de fichiers, la fiche détail d'un document affiche dans la colonne latérale toutes les entités Dastra auxquelles il est rattaché : traitements, contrats, et tests de conformité.
 
-<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnaire de fichiers affiche les tests associés à chaque document dans la colonne de détail</p></figcaption></figure>
-
-Cette traçabilité bidirectionnelle permet d'auditer facilement quels tests s'appuient sur quel document, et de retrouver l'ensemble des preuves documentaires depuis le gestionnaire de fichiers.
-
-***
-
-### Complémentarité des approches
-
-Dastra permet de combiner :
-
-* des **tests manuels** pour les contrôles nécessitant analyse ou jugement humain
-* des **tests automatisés** pour les vérifications objectives et répétitives
-
-👉 Cette complémentarité offre un équilibre entre rigueur, efficacité et pragmatisme.
+<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnair

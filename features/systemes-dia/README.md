@@ -10,7 +10,7 @@ Dans cette section, vous apprendrez à utiliser la fonctionnalité **Systèmes d
 
 
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-05-21-174301.png" alt=""><figcaption><p>Interface du module</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-liste.png" alt=""><figcaption><p>Interface du module</p></figcaption></figure>
 
 ***
 

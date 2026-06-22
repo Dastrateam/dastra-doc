@@ -47,14 +47,4 @@ En mode Sous-traitant, une section dédiée remplace la communication standard. 
 
 <figure><img src="../../.gitbook/assets/violation-sous-traitant-clients.png" alt="Section Communication aux responsables de traitement dans un incident sous-traitant"><figcaption><p>L'onglet Responsables de traitement liste les RT clients à notifier, avec les actions Joindre, Synchroniser et Exporter</p></figcaption></figure>
 
-### Synchronisation automatique des RT depuis les traitements liés
-
-Si des traitements de données sont associés à l'incident, Dastra peut identifier automatiquement les responsables de traitement clients concernés à partir de ces traitements et les ajouter à la liste de notification. Cliquez sur **Synchroniser les RT** dans la section dédiée pour déclencher cette synchronisation.
-
-***
-
-## Bonnes pratiques
-
-* Notifiez vos RT clients **sans délai injustifié** dès que vous avez connaissance de l'incident — le RGPD n'impose pas de délai fixe au ST (contrairement aux 72h imposées au RT vis-à-vis de l'autorité), mais la réactivité est essentielle.
-* Documentez la date et l'heure de chaque notification envoyée aux RT dans la section dédiée.
-* Conservez une trace des accusés de réception ou réponses des RT dans les pièces jointes de l'incident.
+### Synchronisation automatique des RT depuis les traitements l

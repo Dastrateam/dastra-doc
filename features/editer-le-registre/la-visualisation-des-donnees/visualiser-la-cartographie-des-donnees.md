@@ -18,13 +18,13 @@ Pour visualiser la cartographie des données du registre, cliquer sur le module 
 
 
 
-![Module "Registres"](<../../../.gitbook/assets/image-199.png>)
+![Module "Registres"](<../../../.gitbook/assets/generalites-tile-registres.png>)
 
 ![Onglet cartographie au dessus des traitements](<../../../.gitbook/assets/capture-web-4-5-2022-101143-app-dastra-eu.jpeg>)
 
 Ainsi, vous pourrez **visualiser la cartographie des données du registre**.
 
-![Exemple de cartographie](<../../../.gitbook/assets/image-168.png>)
+![Exemple de cartographie](<../../../.gitbook/assets/cartography-graph-node-detail.png>)
 
 {% hint style="info" %}
 Une fois la cartographie affichée, il est possible de la modifier en **double cliquant** sur les éléments pour ajouter des filtres.

@@ -15,7 +15,7 @@ Vous pouvez vous connecter avec vos identifiants Dastra, un compte tiers (SSO), 
 2. Saisissez votre **adresse e-mail** et **mot de passe**
 3. Cliquez sur **Se connecter**
 
-<figure><img src="../../.gitbook/assets/image-4-7-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-login-page.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Cochez l’option **Se souvenir de mon mot de passe** si vous utilisez un appareil personnel pour éviter de ressaisir vos identifiants à chaque visite.
@@ -32,7 +32,7 @@ Si votre organisation a configuré un **SSO (Single Sign-On)**, vous pouvez vous
 3. Suivez la procédure d’authentification propre à votre organisation
 4. Vous serez automatiquement redirigé vers votre espace Dastra
 
-<figure><img src="../../.gitbook/assets/image-6-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-login-sso-page.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 
@@ -50,7 +50,7 @@ En cas d’oubli de votre mot de passe :
 3. Consultez votre boîte mail et suivez le lien de réinitialisation
 4. Choisissez un nouveau mot de passe conforme aux critères de sécurité
 
-<figure><img src="../../.gitbook/assets/image-7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-login-password-page.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Les liens de réinitialisation expirent après un court délai pour des raisons de sécurité.\
@@ -71,7 +71,7 @@ Elle ajoute une étape supplémentaire lors de la connexion : la saisie d’un *
 3. Scannez le QR code avec une application d’authentification (Google Authenticator, Authy, 1Password, etc.)
 4. Entrez le code généré pour confirmer l’activation
 
-<figure><img src="../../.gitbook/assets/image-8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-login-2fa-settings.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Conservez le **code de récupération** affiché lors de l’activation.\

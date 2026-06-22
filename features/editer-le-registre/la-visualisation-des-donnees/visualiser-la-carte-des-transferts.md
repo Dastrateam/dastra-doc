@@ -18,13 +18,13 @@ Pour visualiser la carte des transferts, cliquer sur le module "Registres" puis 
 
 
 
-![Module "Registres"](<../../../.gitbook/assets/image-199.png>)
+![Module "Registres"](<../../../.gitbook/assets/generalites-tile-registres.png>)
 
 ![Onglet transfert au dessus des traitements](<../../../.gitbook/assets/capture-web-4-5-2022-101533-app-dastra-eu.jpeg>)
 
 Ainsi, vous pourrez **visualiser la carte des transferts.**
 
-![Exemple de transfert de données](<../../../.gitbook/assets/image-212.png>)
+![Exemple de transfert de données](<../../../.gitbook/assets/register-processing-transfers-map.png>)
 
 {% hint style="info" %}
 Il est possible d'accéder aux détails des transferts en cliquant sur les points correspondant à chaque pays.

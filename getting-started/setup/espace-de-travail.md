@@ -42,7 +42,7 @@ Pour accéder à votre espace de travail :&#x20;
 3. Vous **accédez alors à votre espace de travail**
 
 Vous pouvez basculer à tout moment d'espace de travail en cliquant sur le sélecteur en haut à gauche de l'écran :\
-![](<../../.gitbook/assets/image-377.png>)
+![](<../../.gitbook/assets/getting-started-workspace-switcher-dropdown.png>)
 
 
 
@@ -54,7 +54,7 @@ Regardez la vidéo sur la configuration de base de vos espaces de travail :
 
 {% embed url="https://youtu.be/a7sW-B_TeZ0" %}
 
-![](<../../.gitbook/assets/image-181.png>)
+![](<../../.gitbook/assets/getting-started-workspace-create-form.png>)
 
 Renseignez les champs, puis cliquez sur "Continuer".
 
@@ -66,7 +66,7 @@ Renseignez les champs, puis cliquez sur "Continuer".
 
 Une fois l'espace de travail créé, vous pouvez inviter directement vos collaborateurs dans votre espace.&#x20;
 
-![](<../../.gitbook/assets/image-129.png>)
+![](<../../.gitbook/assets/getting-started-workspace-invite-users-step.png>)
 
 {% hint style="info" %}
 Vous pouvez ajouter des utilisateurs existants à cet espace ou bien inviter des nouveaux utilisateurs, en cliquant sur le bouton "Inviter un utilisateur".
@@ -98,7 +98,7 @@ Voici un rappel des définitions des termes dans Dastra :&#x20;
 
 Pour créer la première entité juridique, il vous suffit d'indiquer son nom et d'y associer son responsable (le représentant légal) et s'il a été nommé, le délégué à la protection des données ou d'autres acteurs. Seul le nom de l'entité juridique est obligatoire.
 
-![](<../../.gitbook/assets/image-126.png>)
+![](<../../.gitbook/assets/getting-started-workspace-create-entity-form.png>)
 
 Renseignez les champs, puis cliquez sur "Continuer", pour entrer sur votre espace.
 
@@ -108,7 +108,7 @@ Une fois votre espace ouvert, il est une bonne pratique de **renseigner immédia
 
 Pour cela, cliquez sur le nom de votre entité en haut à gauche de l'écran (dans ce cas, le bouton "Test") pour afficher le menu déroulant puis, cliquez sur le bouton "Gérer votre espace de travail".
 
-![](<../../.gitbook/assets/image-182.png>)
+![](<../../.gitbook/assets/getting-started-workspace-manage-menu.png>)
 
 Vous arriverez ainsi dans l'écran de configuration des entités et départements. Créez des départements en cliquant sur le bouton "Créer un département" ou une nouvelle entité juridique en cliquant sur le bouton "Créer une entité (responsable de traitement"), jusqu'à ce que le schéma organisationnel de votre structure soit représenté dans Dastra.
 
@@ -116,7 +116,7 @@ Vous arriverez ainsi dans l'écran de configuration des entités et département
 Vous pouvez également rajouter des sous-départements, en cliquant sur le bouton "ajouter un département enfant".
 {% endhint %}
 
-![La vision "Organigramme" générée dans Dastra.](<../../.gitbook/assets/image-128.png>)
+![La vision "Organigramme" générée dans Dastra.](<../../.gitbook/assets/getting-started-workspace-org-chart.png>)
 
 Bravo, votre espace de travail dans Dastra est créé et paramétré !&#x20;
 

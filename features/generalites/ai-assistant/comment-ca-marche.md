@@ -2,7 +2,7 @@
 
 ### Modèles et hébergement
 
-<figure><img src="../../../.gitbook/assets/ai-assistant-settings-models.png" alt="Page Paramètres de l'assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres de l'organisation > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-settings-models.png" alt="Page Paramètres de l'assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres de l'organisation > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
 
 Dastra utilise des modèles d'IA générative pré-entraînés, disponibles en quatre familles au choix :
 

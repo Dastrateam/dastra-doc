@@ -26,10 +26,10 @@ Le processus de mise en place est très simple :&#x20;
 * Cliquer sur le bouton **"Installer"**.
 *   **Saisir vos informations de connexion** à votre compte utilisateur administrateur de Filerskeepers (e-mail + mot de passe). Ces informations d'identification nous permettrons de générer un jeton d'accès à l'API de Filerskeepers.<br>
 
-    <figure><img src="../../.gitbook/assets/image-2-1-1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/integration-filerskeepers-setup-account.png" alt=""><figcaption></figcaption></figure>
 * Une fenêtre de configuration va s'afficher. Cette configuration est obligatoire afin de finaliser l'installation. Dans ce formulaire, sélectionnez le "Schedule" que vous souhaitez configurer avec Dastra.
 
-<figure><img src="../../.gitbook/assets/image-1-1-1-1-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-settings.png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 
@@ -50,17 +50,17 @@ Le connecteur Filerskeepers a plusieurs modes de fonctionnement :&#x20;
 
 Désormais, quand vous vous rendez dans un jeu de données, dans la section "politiques de conservation", un bouton de sélection de la politique de conservation s'affichera
 
-<figure><img src="../../.gitbook/assets/image-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-retention-pick.png" alt=""><figcaption></figcaption></figure>
 
 En cliquant sur ce bouton, vous allez pouvoir directement sélectionner un jeu de données depuis votre référentiel Filerskeepers. **Cette durée de conservation sera automatiquement synchronisée** avec Dastra, si vous avez activé cette option dans la configuration du connection.
 
-<figure><img src="../../.gitbook/assets/image-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-schedule-table.png" alt=""><figcaption></figcaption></figure>
 
 Sélectionnez un jeu de données, en cliquant sur  le bouton "Select"
 
 Une fois que vous avez sélectionné la durée de conservation, la fenêtre se fermera, et les informations suivantes s'afficheront : <br>
 
-<figure><img src="../../.gitbook/assets/image-5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-synced.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Seul les durées conservation en base active seront synchronisées

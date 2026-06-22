@@ -12,4 +12,4 @@ Voici une manière de définir les rôles de vos utilisateurs pour vos contrats 
 
 ***
 
-<figure><img src="../../.gitbook/assets/image-331.png" alt=""><figcaption><p>Associez des utilisateurs à votre contrat</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-detail-users-tab.png" alt=""><figcaption><p>Associez des utilisateurs à votre contrat</p></figcaption></figure>
