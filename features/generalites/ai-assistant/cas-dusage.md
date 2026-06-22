@@ -52,6 +52,10 @@ Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter 
 4. Renseignez le traitement qui servira de source, ou saisissez des instructions personnalisées
 5. Une fois la réponse générée, apportez vos corrections directement dans le questionnaire
 
+{% hint style="info" %}
+Lorsqu'une analyse IA a été réalisée sur une réponse de questionnaire ou une PIA, un bouton **Imprimer l'analyse** apparaît dans l'en-tête du panneau d'analyse dès qu'un résultat est disponible. Le document structuré reprend la note globale (A à F), l'appréciation générale, les critères évalués avec leur note et leur justification, ainsi que les tâches suggérées classées par priorité — sans recourir à des captures d'écran.
+{% endhint %}
+
 #### Générer un modèle de questionnaire&#x20;
 
 1. Allez dans la rubrique **Questionnaires** et cliquez sur créer un modèle de questionnaire.
@@ -157,14 +161,4 @@ L'assistant analyse les champs renseignés dans la fiche du système d'IA et pro
 **Fonctionnalité en bêta** : à traiter avec une vigilance accrue et à valider par un expert avant toute décision.
 {% endhint %}
 
-Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de conformité AI Act.
-
-<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="Panneau d'analyse IA avec les boutons Imprimer l'analyse et Relancer l'analyse"><figcaption><p>Le bouton « Print analysis » permet d'exporter le résultat de l'analyse au format PDF</p></figcaption></figure>
-
-***
-
-### Référentiels et contrôles
-
-#### Suggestions de contrôles, exigences et tests
-
-Depuis un référentiel de conformité dans le module compliance, l'assistant peut suggérer des contrôles, exigences ou tests pertinents en fonction du contexte de l'objet concerné (nom, description, référentiel associé).
+Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de 

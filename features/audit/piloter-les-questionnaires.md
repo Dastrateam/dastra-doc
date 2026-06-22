@@ -40,7 +40,7 @@ Depuis la vue de reporting d'une réponse, déclenchez une **analyse IA** pour o
 L'analyse IA est une fonctionnalité bêta. Les résultats doivent être interprétés avec prudence et revus par un professionnel qualifié.
 {% endhint %}
 
-## Valider et publier une réponse
+## Valider une réponse
 
 Une fois la réponse examinée, cliquez sur **"Revoir et valider le questionnaire"** pour la passer au statut "Validé". Cette action est disponible pour les responsables du questionnaire.
 

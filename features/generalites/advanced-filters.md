@@ -81,23 +81,16 @@ Ce filtre affiche toutes les demandes en cours et prioritaires, **et aussi** tou
 
 1. Ouvrez le panneau de filtres et cliquez sur **"Ajouter un filtre"**.
 2. Dans l'éditeur de filtres, cliquez sur **"Ajouter un groupe"**.
-3. Ajoutez vos conditions dans chaque groupe.
-4. Enregistrez la vue pour réutiliser ce filtre ultérieurement.
+3. Choisissez l'opérateur du groupe (**ET** ou **OU**) puis ajoutez vos conditions.
+4. Pour des règles plus complexes, imbriquez des **sous-groupes** de conditions à l'intérieur d'un groupe (par exemple : _(Étape = « En cours » ET Adresse renseignée) OU (Canal de collecte = « Email entrant »)_).
+5. Réorganisez ou supprimez individuellement chaque condition ou groupe à l'aide des contrôles dédiés.
+6. Enregistrez la vue pour réutiliser ce filtre ultérieurement.
+
+{% hint style="info" %}
+Les filtres et vues personnalisées existants restent fonctionnels : ils sont convertis automatiquement vers l'éditeur structuré.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/generalites-advanced-filters-condition-groups.png" alt="Panneau de filtres avancés avec deux groupes de conditions reliés par un opérateur OU"><figcaption><p>Exemple de filtres à groupes de conditions : deux blocs ET reliés par OU, avec les boutons « Ajouter une condition » et « Ajouter un groupe »</p></figcaption></figure>
 
 {% hint style="info" %}
-Les groupes de conditions sont disponibles dans toutes les listes Dastra : registre des traitements, demandes d'exercice de droits, actifs, contrats, systèmes d'IA, violations de données, etc.
-{% endhint %}
-
-## Problèmes connus
-
-### Mes données ne s'affichent plus ?
-
-Se vous rencontrez des difficultés avec les filtres : vous perdez l'affichage de vos données, nous vous recommandons de vider les données du navigateur (cookies, localstorage...). Cela réinitialisera le statut de vos filtres dans votre espace de travail.
-
-### Certaines colonnes ne sont pas présentes dans les filtres avancées ?
-
-Ils se peut que techniquement, il ne soit pas possible de mettre en place ces filtres pour diverses raison. Nous vous recommandons dans ce cas, soit d'exporter de manière brute les données, et effectuer le rapport dans des outils comme Excel.
-
-Si c'est un filtre qui est essentiel à votre activité, n'hésitez pas à nous faire une demande de nouvelle fonctionnalité [via la communauté Dastra ou le système de demandes](../../getting-started/le-support/faire-une-demande-de-support.md)
+Les groupes de conditions sont disponibles dans toutes les listes

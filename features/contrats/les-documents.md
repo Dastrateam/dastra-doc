@@ -19,3 +19,11 @@ La fenêtre de prévisualisation reste active quel que soit l'onglet du contrat 
 Dans cette section, vous pouvez également modifier l'unité organisationnelle rattachée au contrat, ajouter des tags, renseigner les dates de début et fin du contrat et ajouter une description et une référence interne.&#x20;
 
 La date de fin du contrat s'avère précieuse pour le pilotage de vos contrats car vous retrouverez dans l'onglet statistiques tous les contrats ayant dépassé leur échéance.
+
+
+### Tests de conformité liés
+
+Lorsqu'un document ou un contrat est utilisé comme **preuve** pour un test du module Conformité, ce lien est visible directement depuis le contrat. Une icône indique le **nombre de tests de conformité liés** ; en cliquant dessus, vous ouvrez la liste de ces tests. Un clic sur un test affiche son détail sans quitter la page du contrat.
+
+<figure><img src="../../.gitbook/assets/conformite-liens-preuve-contrats.png" alt="Icône indiquant le nombre de tests de conformité liés à un contrat"><figcaption><p>L'icône affiche le nombre de tests de conformité liés ; un clic ouvre la liste puis le détail du test sans quitter le contrat</p></figcaption></figure>
+

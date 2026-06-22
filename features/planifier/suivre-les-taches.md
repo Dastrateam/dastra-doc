@@ -88,12 +88,4 @@ Vous pouvez **partager une vue** avec les autres utilisateurs de votre espace de
 
 ### Exemples d'usage
 
-* Vue "Tâches en retard" : filtre sur les tâches dont la date d'échéance est dépassée et le statut ≠ Fermé
-* Vue "Mon backlog" : filtre sur l'utilisateur connecté, statut = À faire, triées par priorité décroissante
-* Vue "Sprint Q3" : filtre sur l'itération en cours, toutes colonnes affichées
-
-## Aller plus loin
-
-{% content-ref url="synchroniser-avec-dautres-calendriers.md" %}
-[synchroniser-avec-dautres-calendriers.md](synchroniser-avec-dautres-calendriers.md)
-{% endcontent-ref %}
+* Vue "Tâches en retard" : filtre sur les tâches 

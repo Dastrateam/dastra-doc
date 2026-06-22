@@ -14,6 +14,7 @@ Le Trust center offre une configuration modulaire et flexible, vous permettant d
 * [Exercice des droits](configuration/data-subject-requests.md) (optionnel - nécessite la fonctionnalité [Exercice des droits](../gerer-les-exercices-des-droits/))
 * [Organigramme](configuration/org-chart.md) (optionnel)
 * [Registre des traitements](configuration/record-of-processing-activities.md) (optionnel - nécessite la fonctionnalité [registre des traitements](../editer-le-registre/))
+* [Systèmes d'IA](configuration/ai-systems.md) (optionnel - nécessite le module Systèmes d'IA dans votre abonnement)
 
 ### Comment accéder à la fonctionnalité&#x20;
 

@@ -79,6 +79,21 @@ Par exemple, dans l'import du registre, le champ "processing state" correspond a
 
 Le champ "State" correspond au statut du traitement ("brouillon" pour "Draft" ou "publié" pour "Active").&#x20;
 
+
+
+### Jeux de données : import des champs associés
+
+L'export et l'import des jeux de données incluent leurs **champs de données** associés. Le fichier exporté liste, pour chaque jeu de données, l'ensemble des champs liés (libellé, classification de sensibilité, catégorie de données personnelles) et peut être réimporté directement pour rétablir ces associations, sans étape supplémentaire.
+
+Lors d'un import en mode **écrasement** (mise à jour des données existantes), les associations de champs sont alignées sur le contenu du fichier :
+
+* les champs absents du fichier sont **dissociés** du jeu de données ;
+* les champs qui n'existent pas encore dans l'espace de travail sont **créés automatiquement**.
+
+{% hint style="info" %}
+Vérifiez le contenu de votre fichier avant un import en mode écrasement : tout champ non listé sera retiré du jeu de données correspondant.
+{% endhint %}
+
 ### 2. Charger le fichier
 
 Une fois votre fichier de données prêt, vous devrez dans certains cas indiquer une unité organisationnelle. Tous les fichiers importés seront placés dans cette unité organisationnelle.&#x20;

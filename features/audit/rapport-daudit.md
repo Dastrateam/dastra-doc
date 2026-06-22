@@ -6,7 +6,7 @@ description: Apprenez à partager un rapport de questionnaire.
 
 {% embed url="https://youtu.be/hCupYPRbf2U" %}
 
-Une fois les réponses obtenues, vous pouvez consulter, valider, publier, revoir, exporter ou archiver votre rapport de questionnaire.
+Une fois les réponses obtenues, vous pouvez consulter, valider, revoir, exporter ou archiver votre rapport de questionnaire.
 
 ![Exemple de rapport de questionnaire](<../../.gitbook/assets/audit-detail-report-radar.png>)
 

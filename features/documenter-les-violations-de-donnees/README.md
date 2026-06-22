@@ -36,6 +36,12 @@ Le registre des violations de données apparaît.
 [documenter-une-violation-de-donnees.md](documenter-une-violation-de-donnees.md)
 {% endcontent-ref %}
 
+
+
+{% content-ref url="incidents-en-tant-que-sous-traitant.md" %}
+[incidents-en-tant-que-sous-traitant.md](incidents-en-tant-que-sous-traitant.md)
+{% endcontent-ref %}
+
 {% content-ref url="exportez-vos-violations-de-donnees.md" %}
 [exportez-vos-violations-de-donnees.md](exportez-vos-violations-de-donnees.md)
 {% endcontent-ref %}

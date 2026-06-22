@@ -1,5 +1,7 @@
 ---
-description: Cavardez les documents joints à une demande d'exercice de droits directement depuis Dastra, avec ou sans assistance IA.
+description: >-
+  Caviardez les documents joints à une demande d'exercice de droits directement
+  depuis Dastra, avec ou sans assistance IA.
 ---
 
 # Caviardage des documents
@@ -32,6 +34,10 @@ Ces zones sont pré-sélectionnées et affichées sur le document. Votre équipe
 * **Supprime les faux positifs** d'un clic (zones détectées à tort)
 * **Ajoute manuellement** toute zone que l'IA aurait manquée
 
+
+
+<figure><img src="../../.gitbook/assets/caviardage-analyse-ia.gif" alt="Analyse IA d'un document et détection automatique des zones contenant des identifiants de tiers"><figcaption><p>L'IA analyse le document et place automatiquement les zones de caviardage à valider</p></figcaption></figure>
+
 {% hint style="warning" %}
 Le résultat de l'IA est une proposition de départ, pas une décision finale. Toute zone de caviardage doit être revue et validée par une personne qualifiée avant transmission.
 {% endhint %}
@@ -42,13 +48,17 @@ Le résultat de l'IA est une proposition de départ, pas une décision finale. T
 
 Pour les équipes qui préfèrent conserver un contrôle total sans assistance IA, le **caviardage entièrement manuel** est disponible dans la même interface. Sélectionnez les zones à masquer directement sur le document.
 
+Pour les équipes qui préfèrent conserver un contrôle total sans assistance IA, le **caviardage entièrement manuel** est disponible dans la même interface. Sélectionnez les zones à masquer directement sur le document.
+
+<figure><img src="../../.gitbook/assets/caviardage-manuel.gif" alt="Sélection manuelle des zones à masquer sur un document"><figcaption><p>Tracez vous-même les zones à caviarder directement sur le document</p></figcaption></figure>
+
+
+
 ***
 
 ## Génération du document caviardé
 
 Une fois la revue terminée, cliquez sur **Générer le document caviardé**. Le document produit est :
-
-<figure><img src="../../.gitbook/assets/dsr-request-processing-redacted.png" alt="Document caviardé généré — Invoice-redacted.pdf avec 6 zones masquées"><figcaption><p>Le document caviardé est automatiquement renommé et joint à la demande (ici : 6 zones masquées)</p></figcaption></figure>
 
 * **Rasterisé** — le texte sous-jacent n'est pas simplement masqué visuellement mais rendu définitivement inaccessible. Il n'est pas possible d'extraire le contenu caviardé du fichier final.
 * **Enregistré dans la demande** — le document caviardé est attaché à la demande et disponible pour envoi.
