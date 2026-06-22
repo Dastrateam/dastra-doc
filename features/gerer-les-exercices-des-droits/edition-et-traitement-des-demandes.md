@@ -69,7 +69,18 @@ Chaque jeu de données doit être traité individuellement.
 * Statuts disponibles : **En attente** / **Traité**.
 * Affichage de l’avancement global (progression en pourcentage).
 
+L'onglet **Jeux de données** affiche l'ensemble des jeux de données pertinents selon un **modèle cumulatif** : ceux rattachés à l'unité organisationnelle assignée à la demande, ceux de **toutes ses unités parentes** (jusqu'à la racine de la hiérarchie) et ceux de **toutes ses unités descendantes**. Cette vue garantit qu'aucun jeu de données hérité n'est oublié lors du traitement.
+
 <figure><img src="../../.gitbook/assets/edit-traitement02-liste-fr.png" alt=""><figcaption><p>Traitement avancé par jeu de données</p></figcaption></figure>
+
+{% hint style="info" %}
+Une demande ne peut pas être déclarée traitée à 100 % tant que des jeux de données hérités n'ont pas été traités ou explicitement marqués comme **Non applicable**.
+{% endhint %}
+
+Si l'opérateur en charge de la demande ne dispose pas des droits d'accès à certains jeux de données affichés, une **indication visuelle** l'invite à contacter les responsables concernés.
+
+<figure><img src="../../.gitbook/assets/exercice-droits-datasets-herites.png" alt="Onglet Jeux de données affichant les jeux hérités des unités parentes et descendantes"><figcaption><p>Les jeux de données hérités des unités parentes et descendantes sont affichés selon un modèle cumulatif</p></figcaption></figure>
+
 
 ***
 

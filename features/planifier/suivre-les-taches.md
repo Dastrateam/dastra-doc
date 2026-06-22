@@ -72,7 +72,7 @@ Ca y est, vos tâches sont exportées!
 
 Le module Planification supporte les **vues personnalisées** : vous pouvez enregistrer une combinaison de filtres et de colonnes sous un nom, puis basculer entre vos vues en un seul clic depuis la barre d'outils.
 
-<figure><img src="../../.gitbook/assets/tasks-custom-view-selector.png" alt="Sélecteur de vues personnalisées dans le module Planification — vue Kanban"><figcaption><p>Le sélecteur de vues apparaît dans la barre d'outils — passez d'une vue enregistrée à l'autre en un clic</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/planification-vues-personnalisees.png" alt="Sélecteur de vues personnalisées dans le module Planification — vue Kanban"><figcaption><p>Le sélecteur de vues apparaît dans la barre d'outils — passez d'une vue enregistrée à l'autre en un clic</p></figcaption></figure>
 
 ### Créer une vue
 

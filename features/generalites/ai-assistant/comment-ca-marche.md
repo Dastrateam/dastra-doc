@@ -87,7 +87,17 @@ Dastra suit la consommation de l'assistant IA via un système de **crédits IA**
 | **Smart**           | Moyenne               |
 | **Contexte étendu** | Élevée                |
 
-Les administrateurs accèdent au tableau de bord de consommation depuis **Paramètres de l'organisation > Assistant IA** ([accès direct](https://app.dastra.eu/general-settings/ai)) : solde disponible, historique de consommation et date de renouvellement.
+Les administrateurs accèdent au tableau de bord de consommation depuis **Paramètres de l'organisation > Assistant IA** ([accès direct](https://app.dastra.eu/general-settings/ai)) : consommation de crédits IA du mois en cours, solde disponible et date de renouvellement.
+
+Le niveau d'utilisation est représenté par une **barre de progression colorée** qui évolue selon la part du quota consommée :
+
+* **Vert** — consommation modérée, quota largement disponible
+* **Orange** — consommation élevée, quota bientôt atteint
+* **Rouge** — quota atteint ou sur le point de l'être
+
+Lorsque le quota mensuel est atteint, un message explicite vous en informe et propose un lien vers les options d'augmentation de quota.
+
+<figure><img src="../../../.gitbook/assets/credits-ia-quota.png" alt="Barre de progression colorée du quota de crédits IA dans les paramètres du workspace"><figcaption><p>Suivi de la consommation de crédits IA du mois en cours avec barre de progression colorée (vert, orange, rouge)</p></figcaption></figure>
 
 {% hint style="info" %}
 Lorsque le quota est atteint, les fonctionnalités IA sont désactivées jusqu'au prochain renouvellement. Le reste de la plateforme (données, workflows, exports) continue de fonctionner normalement.

@@ -24,6 +24,12 @@ L'outil de fusion peut être utilisé sur :
 * Les mesures
 * Les catégories de personnes concernées
 * Les tâches
+* Les contrôles de conformité (contrôles appliqués et contrôles de référence)
+* Les tests de conformité (tests opérationnels et tests de référence)
+
+{% hint style="info" %}
+La fusion des contrôles et des tests de conformité s'effectue depuis la bibliothèque ou le projet du module Conformité, via les actions groupées. Vous pouvez sélectionner jusqu'à 30 éléments à fusionner. Pour le détail de cette opération, consultez les pages [Contrôles](../compliance/library/controls.md) et [Tests](../compliance/library/tests.md).
+{% endhint %}
 
 ## Comment fusionner les éléments ?
 

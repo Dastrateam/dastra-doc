@@ -143,6 +143,13 @@ Il est particulièrement adapté pour :
 
 L’interface de configuration du connecteur HTTP a été repensée pour faciliter la construction et le test des requêtes directement depuis Dastra.
 
+L’interface de configuration du connecteur HTTP permet de construire une requête sans connaître la syntaxe JSON :
+
+* **Sélecteur de méthode d'authentification** : choisissez directement entre **Clé API (API Key)**, **Jeton d'autorisation (Authorization Token Bearer)** ou **Authentification basique (Basic Authentication)**, sans saisir manuellement les en-têtes au format JSON.
+* **Identifiants masqués** : les champs sensibles (jeton, mot de passe) sont masqués par défaut. Une icône en forme d'œil permet de les révéler ponctuellement ; ces valeurs n'apparaissent jamais en clair dans les journaux.
+* **Éditeurs clé/valeur (de type Postman)** : configurez facilement les en-têtes personnalisés et les paramètres de requête (query parameters) sous forme de paires clé/valeur, sans rédiger de JSON.
+* **Aperçu en lecture seule** : un aperçu affiche les en-têtes qui seront réellement envoyés lors de l'exécution, les valeurs sensibles restant masquées.
+
 #### Constructeur de requête
 
 Un éditeur visuel permet de configurer chaque composante de la requête :
@@ -214,6 +221,10 @@ L'analyse s'adapte automatiquement au type de preuve fournie :
 | Document (PDF, Word, texte) | Lecture et extraction du contenu textuel  |
 | URL / page web              | Récupération de la page via l'URL fournie |
 | Aucune preuve jointe        | Résultat automatiquement `Indéterminé`    |
+
+{% hint style="info" %}
+Une **infobulle** accessible depuis le résultat de l'analyse explique la **méthode utilisée** par l'IA pour la preuve concernée (OCR, lecture du libellé, confrontation à la procédure de test…). Elle contient également un lien vers cette documentation pour approfondir le fonctionnement de l'analyse.
+{% endhint %}
 
 #### Activation et paramétrage
 

@@ -15,7 +15,7 @@ Lors de la création d'un nouvel incident, un sélecteur permet de choisir entre
 * **Responsable de traitement** — flux standard : notification CNIL, communication aux personnes concernées, analyse de risque.
 * **Sous-traitant** — flux adapté : l'obligation de notification directe à l'autorité de contrôle ne s'applique pas ; c'est au responsable de traitement de notifier.
 
-<figure><img src="../../.gitbook/assets/breach-create-subprocessor.png" alt="Fenêtre de création d'un incident avec le sélecteur Sous-traitant (Oui/Non)"><figcaption><p>Lors de la création, indiquez si votre organisation intervient en tant que sous-traitant</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/violation-selecteur-role.png" alt="Fenêtre de création d'un incident avec le sélecteur de rôle Responsable de traitement / Sous-traitant"><figcaption><p>Lors de la création, indiquez le rôle de votre organisation dans l'incident : Responsable de traitement ou Sous-traitant</p></figcaption></figure>
 
 {% hint style="info" %}
 **Base réglementaire — Art. 33(2) RGPD**
@@ -45,7 +45,7 @@ En mode Sous-traitant, une section dédiée remplace la communication standard. 
 * **Suivre le statut de notification** de chaque RT (notifié / en attente)
 * **Exporter la liste** des RT impliqués pour votre dossier de conformité
 
-<figure><img src="../../.gitbook/assets/breach-subprocessor-communication-dc.png" alt="Section Communication aux responsables de traitement dans un incident sous-traitant"><figcaption><p>L'onglet Responsables de traitement liste les RT à notifier, avec les boutons Joindre, Synchroniser et Exporter</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/violation-sous-traitant-clients.png" alt="Section Communication aux responsables de traitement dans un incident sous-traitant"><figcaption><p>L'onglet Responsables de traitement liste les RT clients à notifier, avec les actions Joindre, Synchroniser et Exporter</p></figcaption></figure>
 
 ### Synchronisation automatique des RT depuis les traitements liés
 

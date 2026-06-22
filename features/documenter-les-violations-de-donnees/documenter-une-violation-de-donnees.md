@@ -45,16 +45,20 @@ Lorsqu'une violation de données implique un système d'IA — qu'il en soit la 
 
 Depuis la page d'édition de la violation, dans la section **Informations complémentaires**, utilisez le champ **Systèmes d'IA liés** pour rechercher et associer un ou plusieurs systèmes d'IA déclarés dans votre workspace.
 
-<figure><img src="../../.gitbook/assets/breach-ai-systems-link-dropdown.png" alt="Section Systèmes d'IA dans la fiche violation avec liste déroulante de sélection des systèmes"><figcaption><p>Onglet « Systèmes d'IA » dans la fiche violation — recherchez et sélectionnez les systèmes impliqués</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/violation-systemes-ia-section.png" alt="Section Systèmes d'IA dans la fiche violation avec liste déroulante de sélection des systèmes"><figcaption><p>Section « Systèmes d'IA » du formulaire de violation — recherchez et sélectionnez les systèmes impliqués</p></figcaption></figure>
 
 Cette association vous permet de :
 
 * Identifier rapidement les systèmes d'IA impliqués dans des incidents
 * Relier la violation à la documentation de conformité AI Act du système concerné
 * Centraliser le suivi des incidents par système d'IA dans votre registre
+* Filtrer et afficher les incidents par système d'IA grâce à la colonne **Systèmes d'IA liés** et à son filtre dédié dans le registre des violations
+* Tenir compte automatiquement des systèmes d'IA liés dans le rapport post-mortem généré par l'IA
+
+Cette association répond à la convergence des obligations du RGPD et du règlement européen sur l'intelligence artificielle (AI Act).
 
 #### Indicateur "Avec un système d'IA" dans le registre des incidents
 
-Le registre des violations de données affiche désormais un indicateur **Avec un système d'IA** dans la barre de statistiques en haut de la liste. Ce compteur permet de piloter d'un coup d'œil la part des incidents impliquant un système d'IA dans votre organisation.
+Le registre des violations de données affiche un indicateur **Avec un système d'IA** dans la barre de statistiques en haut de la liste. Le tableau de bord des violations de données présente également un indicateur du nombre d'incidents impliquant au moins un système d'IA. Ces compteurs permettent de piloter d'un coup d'œil la part des incidents impliquant un système d'IA dans votre organisation.
 
-<figure><img src="../../.gitbook/assets/breach-incidents-ai-kpi.png" alt="Barre de statistiques du registre des incidents avec le compteur Avec un système d'IA"><figcaption><p>Indicateur « Avec un système d'IA » dans le registre des violations de données</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/violation-systemes-ia-tableau.png" alt="Registre des violations avec la colonne Systèmes d'IA liés et l'indicateur du tableau de bord"><figcaption><p>Colonne « Systèmes d'IA liés » du registre et indicateur du nombre d'incidents impliquant au moins un système d'IA</p></figcaption></figure>

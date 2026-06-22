@@ -202,13 +202,17 @@ La bibliothèque de contrôles peut, au fil du temps, contenir des contrôles re
 
 #### Comment fonctionne la fusion
 
-Depuis la bibliothèque de contrôles, sélectionnez les contrôles à fusionner, puis cliquez sur **Fusionner**. Un assistant vous invite à choisir le contrôle **cible** (celui qui sera conservé) : les associations des contrôles sources (exigences, tests, risques) sont reportées sur le contrôle cible, puis les contrôles sources sont supprimés.
+Depuis la bibliothèque de contrôles ou un projet, sélectionnez les contrôles à fusionner (jusqu'à 30) puis déclenchez la fusion via les **actions groupées**. Un assistant vous invite à choisir le contrôle **cible** (celui qui sera conservé) : toutes les associations des contrôles sources — preuves, exigences, scénarios de risque, contrôles couverts — sont automatiquement consolidées sur le contrôle cible, sans perte de données, puis les contrôles sources sont supprimés.
 
-<figure><img src="../../../.gitbook/assets/compliance-controls-merge-action.png" alt="Menu d'action en lot avec l'option Fusionner dans la bibliothèque de contrôles"><figcaption><p>Sélectionnez plusieurs contrôles puis choisissez Fusionner dans le menu d'actions</p></figcaption></figure>
+{% hint style="info" %}
+Le rapprochement est **entièrement manuel** : Dastra ne détecte pas automatiquement les doublons. C'est à vous de sélectionner les contrôles similaires à consolider.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/fusion-controles-selection.png" alt="Sélection de plusieurs contrôles et menu d'actions groupées avec l'option Fusionner"><figcaption><p>Sélectionnez jusqu'à 30 contrôles puis déclenchez la fusion via les actions groupées</p></figcaption></figure>
 
 L'assistant de fusion présente les deux contrôles côte à côte : **Conservé** (contrôle cible) à gauche, **À supprimer** (contrôle source) à droite. Pour chaque champ multi-valué (scénarios de risque, exigences, tests), vous choisissez les valeurs à reporter sur le contrôle cible.
 
-<figure><img src="../../../.gitbook/assets/compliance-controls-merge-dialog.png" alt="Outil de fusion des contrôles — sélection des champs à conserver"><figcaption><p>L'outil de fusion permet de choisir champ par champ ce qui est conservé ou supprimé</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fusion-controles-comparaison.png" alt="Tableau de comparaison côte à côte des contrôles avec sélection des valeurs à conserver"><figcaption><p>Comparez les contrôles côte à côte et choisissez, champ par champ, les valeurs à conserver — preuves, exigences, scénarios de risque et contrôles couverts sont consolidés sur le contrôle conservé</p></figcaption></figure>
 
 {% hint style="warning" %}
 La fusion est irréversible. Vérifiez les associations de chaque contrôle source avant de confirmer l'opération.
