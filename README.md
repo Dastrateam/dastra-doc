@@ -91,14 +91,12 @@ Ce registre vous permet de :
 * **Assurer la conformité continue** des modèles via des audits périodiques et des plans d’action.
 * **Relier IA et traitements de données** : cartographie unifiée RGPD / AI Act.
 
-
-
 <figure><img src=".gitbook/assets/ai-systems-list-empty-state.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2Fplaceholder-ai-register.png?alt=media" alt=""><figcaption><p>Module du registre des systèmes d’IA</p></figcaption></figure>
 
 {% hint style="warning" %}
-Dastra vous aide à anticiper la mise en conformité à l’**AI Act**, en centralisant la documentation exigée (fiches systèmes, logs, évaluations de risques, notices d’utilisation, contrôles de biais, etc.).&#x20;
+Dastra vous aide à anticiper la mise en conformité à l’**AI Act**, en centralisant la documentation exigée (fiches systèmes, logs, évaluations de risques, notices d’utilisation, contrôles de biais, etc.).
 {% endhint %}
 
 ***
@@ -150,20 +148,6 @@ Tableaux de bord dynamiques, filtres et exports (PDF, Excel, CSV).
 * Journalisation des activités et audit trail complet
 * Hébergement 100 % européen (RGPD, ISO 27001)
 * Confidentialité “by design” et “by default”
-
-***
-
-### 🧭 Découvrir Dastra
-
-Commencez à explorer Dastra dès maintenant :
-
-***
-
-{% hint style="info" %}
-💡 **Essai gratuit**\
-Dastra peut être testé gratuitement pendant 30 jours, sans carte bleue :\
-👉 [https://app.dastra.eu/signup](https://app.dastra.eu/signup)
-{% endhint %}
 
 ***
 
