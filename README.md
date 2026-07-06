@@ -64,6 +64,34 @@ description: Bienvenue dans la documentation de Dastra.
 [Configuration avancée (SSO, SCIM, API…)](features/settings/README.md)
 {% endcontent-ref %}
 
+{% content-ref url="features/cartography/README.md" %}
+[Cartographie des données](features/cartography/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/audit/README.md" %}
+[Questionnaires et audits](features/audit/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/contrats/README.md" %}
+[Contrats](features/contrats/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/gestion-de-documents-ged/README.md" %}
+[Gestion de documents (GED)](features/gestion-de-documents-ged/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/trust-center/README.md" %}
+[Trust Center](features/trust-center/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/compliance/README.md" %}
+[Conformité](features/compliance/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/custom-reporting/README.md" %}
+[Rapports personnalisés](features/custom-reporting/README.md)
+{% endcontent-ref %}
+
 ***
 
 ### 📄 API & Intégrations
