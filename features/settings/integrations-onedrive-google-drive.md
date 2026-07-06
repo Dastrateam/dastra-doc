@@ -1,61 +1,82 @@
 ---
 description: >-
-  Cette page de documentation explique comment Dastra s'intègre nativement à
-  votre fournisseur de fichiers cloud préféré pour le stockage des fichiers de
-  la GED
+  Cette page explique comment connecter Dastra à OneDrive ou Google Drive pour
+  utiliser votre stockage cloud comme GED principale de l'espace de travail.
 ---
 
-# Intégrations OneDrive/Google Drive
+# Intégrations OneDrive / Google Drive
 
-### Intérêt du stockage cloud personnalisé
+## Pourquoi utiliser un stockage cloud personnalisé ?
 
-Par défaut, la [GED de Dastra](../gestion-de-documents-ged/) s'appuie sur un système de stockage standard sécurisé basé sur Azure Blob Storage. Les fichiers sont chiffrés et analysés par un antivirus. Les fichiers sont redondés sur un autre serveur. Pour en savoir plus, consultez [notre documentation sur la sécurité de Dastra](../../security/general.md)
+Par défaut, la [GED de Dastra](../gestion-de-documents-ged/) repose sur Azure Blob Storage : fichiers chiffrés, analysés par antivirus, et redondés sur un second serveur. Pour en savoir plus, consultez [la documentation sécurité](../../security/general.md).
 
-Bien que très sécurisé et pratique dans la plupart des scénarios, le stockage des fichiers dans l'application Dastra peut faire doublon avec d'autres GED ou gestionnaire de fichiers cloud. Pour remédier à ce problème, Dastra s'intègre nativement aux principaux fournisseur de fichiers sur le cloud.
+Dans certaines organisations, ce stockage fait doublon avec un système de fichiers cloud déjà en place (SharePoint/OneDrive, Google Drive). Dastra s'intègre nativement avec ces deux fournisseurs afin d'éviter cette duplication.
 
-<figure><img src="../../.gitbook/assets/settings-files-attachment-panel.png" alt=""><figcaption><p>Les fichiers de la GED de Dastra peuvent être stockés dans plusieurs sites de stockage différents</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-files-attachment-panel.png" alt="Sélecteur de source de fichiers dans la GED Dastra"><figcaption><p>Les fichiers peuvent être stockés dans Dastra, OneDrive ou Google Drive</p></figcaption></figure>
 
-### Configurer un stockage cloud personnalisé
+## Type de connexion : OAuth utilisateur
 
-Pour configurer votre gestionnaire de fichiers cloud, c'est très simple :
+{% hint style="warning" %}
+Cette intégration repose sur une **authentification OAuth avec les credentials d'un compte utilisateur**. Ce n'est pas une connexion applicative via l'API Microsoft Graph ou l'API Google.
 
-* Rendez-vous dans le [gestionnaire de fichier](https://app.dastra.eu/workspace/0/referentials/folders)
-* Cliquez sur le **sélecteur en haut à gauche des fichiers** :&#x20;
+Cela signifie concrètement :
 
-![image.png](https://static.dastra.eu/richtextbackoffice/511cd52b-858d-482b-805f-e0ed97f018a7/image.png)
+* La connexion est établie **au nom de l'utilisateur** qui configure l'intégration
+* L'accès aux fichiers dépend des **permissions de ce compte**
+* Si ce compte est désactivé ou ses tokens révoqués, l'intégration cesse de fonctionner jusqu'à reconnexion
+* Il est recommandé d'utiliser un **compte de service dédié** (non personnel) pour configurer cette intégration
+{% endhint %}
 
-* Cliquez sur **Gérez le stockage cloud**
-* Choisissez votre fournisseur (Google Drive ou OneDrive)
+## Configurer l'intégration
 
-![](<../../.gitbook/assets/settings-files-integration-picker.png>)
+Rendez-vous dans **Paramètres de l'espace de travail > Intégrations**, puis cliquez sur **OneDrive** ou **Google Drive**.
 
-* **Cliquez sur le bouton "Ajouter"**, vous allez être redirigé vers la page de login du fournisseur qui vous demandera les autorisations nécessaires à l'établissement de la connexion avec Dastra.&#x20;
-* A la fin du processus, vous allez choisir le disque du drive que vous souhaitez utiliser (Un drive google ou un disque sharepoint pour OneDrive)
+<figure><img src="../../.gitbook/assets/settings-integrations-onedrive-page.png" alt="Page d'intégration OneDrive dans les paramètres Dastra avec le bouton Ajouter une intégration"><figcaption><p>Cliquez sur « Ajouter une intégration » pour démarrer la connexion</p></figcaption></figure>
 
-### Attacher des fichiers de votre cloud à Dastra
+Cliquez sur **Ajouter une intégration**. Vous êtes redirigé vers la page de connexion du fournisseur, qui vous demandera d'autoriser l'accès à votre stockage.
 
-* **Editez n'importe quelle entité** : tâche, traitement, acteur...&#x20;
-* **Choisissez la source de donnée** en haut à gauche de la boîte permettant de charger les fichiers.
+### Choisir le drive racine (OneDrive uniquement)
+
+Après authentification, Dastra vous demande de choisir le disque à utiliser comme racine :
+
+<figure><img src="../../.gitbook/assets/settings-integrations-onedrive-drive-selector.png" alt="Sélecteur de drive racine OneDrive avec les options Root site et drive personnel"><figcaption><p>Choisissez entre le site SharePoint ou votre drive personnel</p></figcaption></figure>
+
+| Option | Description | Recommandation |
+|---|---|---|
+| **Root site / Dastra** | Site SharePoint de l'organisation | ✅ Recommandé en entreprise — espace partagé, non lié au compte personnel |
+| **Your personal drive** | OneDrive personnel du compte connecté | ⚠️ À éviter en production — donne accès à l'ensemble du drive personnel |
+
+{% hint style="info" %}
+Si vous optez pour le drive personnel, il est fortement recommandé d'utiliser un compte de service dédié ne contenant pas de fichiers personnels. Vous pouvez aussi créer un [site SharePoint dédié](https://learn.microsoft.com/fr-fr/sharepoint/create-site-collection) pour isoler les fichiers Dastra.
+{% endhint %}
+
+Dastra crée automatiquement un répertoire **Applications\DastraOneDrive** sur le drive choisi, qu'il utilise comme racine pour tous les fichiers.
+
+## Attacher des fichiers cloud à une entité Dastra
+
+Depuis n'importe quelle entité (traitement, tâche, acteur…), vous pouvez attacher des fichiers stockés dans votre cloud :
+
+1. Ouvrez le panneau de fichiers de l'entité
+2. Sélectionnez la **source de données** en haut à gauche du panneau
 
 ![](<../../.gitbook/assets/settings-files-manager-header.png>)
 
-* Envoyez des fichiers directement sur votre Drive (Modifiez les, déplacez les)
-* Cliquez sur **sélectionnez dans le gestionnaire**. et choisissez le fichier à attacher
+3. Naviguez dans votre drive via le gestionnaire de fichiers
+4. Cliquez sur **Sélectionner dans le gestionnaire** pour attacher le fichier
 
 ![](<../../.gitbook/assets/settings-files-select-from-manager.png>)
 
+Vous pouvez également envoyer de nouveaux fichiers directement depuis Dastra vers votre Drive.
 
+## Limitations
 
-### Limitations
+### OneDrive
 
-**Google Drive** : attention, uniquement les fichiers créés depuis votre espace Dastra pourront être ajoutés ou modifiés à votre Google Drive. Dastra n'a pas les droits d'accès pour accéder à des fichiers créés de votre côté dans le Drive. C'est une limitation de ce connecteur. Vous pouvez partager les fichiers créés dans Dastra avec d'autres collaborateurs sans problème.
+* La connexion repose sur OAuth utilisateur — pas sur Microsoft Graph API. Si le compte ayant configuré l'intégration est désactivé, la connexion est interrompue.
+* Dastra n'a accès qu'au répertoire **Applications\DastraOneDrive** sur le drive choisi
+* Pour les environnements entreprise, préférez le site SharePoint ("Root site / Dastra") plutôt que le drive personnel
 
-**One Drive :** le système n'a été testé que sur la version personnelle de OneDrive.  Si vous rencontrez des problèmes avec les versions entreprise, n'hésitez pas à [contacter le support](https://www.dastra.eu/fr/contact?type=support)
+### Google Drive
 
-Par défaut Dastra va créer des fichiers dans le répertoire "**Applications\DastraOneDrive**" qu'il considèrera comme sa racine
-
-{% hint style="warning" %}
-Attention ! La mise en place de la connexion OneDrive **donne un accès à l'ensemble des fichiers de votre Drive personnel**. Il faut donc être très prudent, car le connecteur sera mis à disposition à l'ensemble des utilisateurs disposant du droit de lecture "Fichiers".
-
-Il est recommandé de créer un lecteur OneDrive dédié, vous pouvez suivre ce [guide de création de site dédié dans sharepoint](https://learn.microsoft.com/en-us/sharepoint/create-site-collection).
-{% endhint %}
+* Seuls les fichiers **créés depuis Dastra** peuvent être ajoutés ou modifiés dans Google Drive. Dastra n'a pas les droits d'accès aux fichiers existants créés directement dans Drive — c'est une limitation du connecteur OAuth.
+* Les fichiers créés dans Dastra peuvent être partagés sans restriction avec d'autres collaborateurs.

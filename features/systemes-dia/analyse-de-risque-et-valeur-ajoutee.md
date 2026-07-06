@@ -106,9 +106,13 @@ Vous devez sélectionner **l’un des trois niveaux de valeur**, allant de **fai
 * Une **amélioration de la qualité des services**
 * Une **réduction des risques ou des coûts**
 
+{% hint style="info" %}
+**Génération automatique de la valeur ajoutée**
 
+L’assistant IA peut **générer automatiquement une évaluation et une justification de la valeur ajoutée** de votre système d’IA. Cliquez sur le bouton d’assistance IA dans la section Valeur ajoutée pour lancer la génération à partir des informations déjà renseignées dans la fiche.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/systemes-dia-fiche-valeur-ajoutee.png" alt=""><figcaption><p>Valeur ajoutée d'un système d'IA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-fiche-valeur-ajoutee.png" alt=""><figcaption><p>Valeur ajoutée d’un système d’IA</p></figcaption></figure>
 
 #### **Pourquoi remplir ces deux parties ?**
 

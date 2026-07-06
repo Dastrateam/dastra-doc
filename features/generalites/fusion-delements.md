@@ -58,3 +58,27 @@ Vous pouvez ensuite cliquer sur le bouton "Enregistrer" pour lancer la fusion.
 {% hint style="info" %}
 Les entités (traitements, analyses, etc.) associées aux éléments supprimés seront automatiquement rattachées à l’élément conservé, évitant toute perte ou déconnexion dans votre registre.
 {% endhint %}
+
+## Outil qualité des données — détection automatique des doublons
+
+Dastra dispose d’un **outil de qualité des données** qui analyse automatiquement votre référentiel pour détecter les éléments potentiellement en doublon, sans nécessiter de sélection manuelle préalable.
+
+### Comment fonctionne la détection automatique
+
+L’algorithme utilise un **scoring expliqué** : pour chaque paire de doublons potentiels, il analyse plusieurs dimensions (nom, éditeur, unité organisationnelle, URL, catégorie) et attribue un **score de confiance**. Ce score vous permet de valider en connaissance de cause avant toute opération de fusion ou de suppression.
+
+### Modules couverts
+
+L’outil qualité des données est disponible pour :
+
+* les actifs
+* les mesures
+* les acteurs
+* les jeux de données
+* les glossaires de données
+* les traitements
+* les catégories de personnes concernées
+
+### Comment accéder à l’outil
+
+Dans chacun de ces modules, cliquez sur le **bouton de menu principal** (⋮ ou "Actions") puis sélectionnez **"Outil qualité des données"**. Tous les doublons détectés sont présentés avec leur score de confiance. Vous pouvez ensuite choisir de **fusionner** ou de **supprimer** chaque doublon identifié.

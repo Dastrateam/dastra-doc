@@ -56,6 +56,16 @@ Le nouveau document est enregistré au format markdown (.md)
 
 <figure><img src="../../.gitbook/assets/contracts-write-document-modal.png" alt=""><figcaption></figcaption></figure>
 
+### Générer un document avec l'IA
+
+L'assistant IA peut **générer automatiquement un document** à partir d'un prompt et, si nécessaire, de fichiers supplémentaires fournis en contexte.
+
+Pour l'utiliser, cliquez sur **"Générer avec l'IA"** depuis le module de gestion de documents, décrivez le document souhaité dans le champ de saisie (type de document, objectif, contenu attendu) et joignez éventuellement des fichiers existants pour enrichir le contexte. L'assistant génère le document dans Dastra, que vous pouvez ensuite relire, modifier et enregistrer.
+
+{% hint style="info" %}
+Cette fonctionnalité est particulièrement utile pour rédiger rapidement des politiques de protection des données, des procédures internes ou tout autre document de conformité RGPD.
+{% endhint %}
+
 ### Créer un dossier
 
 Vous pouvez ranger vos documents dans des dossiers pour les retrouver facilement.&#x20;

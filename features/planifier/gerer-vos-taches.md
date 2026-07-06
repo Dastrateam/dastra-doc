@@ -46,6 +46,12 @@ Chaque tâche dans Dastra peut être affectée à un élément présent dans l'a
 Une fois ces tâches créées et associées, vous pourrez les retrouver directement dans la fiche de chacun de ces éléments sous l'onglet "Tâches".
 {% endhint %}
 
+{% hint style="info" %}
+**Liaison à plusieurs objets simultanément**
+
+Il est possible de lier une tâche à **plusieurs objets en même temps** : traitements, actifs, contrats ou tout autre élément de l'application. Il est également possible de lier une tâche à une **réponse à un questionnaire**. Cette fonctionnalité facilite le suivi des actions transversales qui concernent plusieurs périmètres.
+{% endhint %}
+
 #### Créer une tâche directement depuis un autre module de Dastra
 
 Dastra vous permet de créer une tâche au moment où vous en avez besoin, directement au sein des processus opérationnels :

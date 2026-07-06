@@ -44,3 +44,9 @@ Il n'est pas possible de sélectionner à la fois "Lecture/Écriture de ses prop
 
 \
 Une fois votre rôle personnalisé créé, vous pouvez l'affecter à n'importe quel utilisateur de l'espace de travail au sein de votre organisation.
+
+## Cloner un rôle existant
+
+Pour gagner du temps lors de la création d'un nouveau rôle à partir d'une configuration existante, vous pouvez **cloner un rôle** en un seul clic. Ouvrez le rôle à dupliquer, puis cliquez sur **"Cloner"**. Un nouveau rôle reprenant l'intégralité des permissions du rôle source est créé immédiatement — il ne reste plus qu'à le renommer et à ajuster les permissions souhaitées.
+
+Cette fonctionnalité est particulièrement utile pour décliner des variantes d'un rôle (ex. un rôle "Contributeur DPO" légèrement différent du rôle "Contributeur") sans repartir d'une page blanche.

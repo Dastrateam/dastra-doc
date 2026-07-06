@@ -121,6 +121,21 @@ Une fois validé, le test contribue automatiquement à l’amélioration du stat
 
 ***
 
+### Export de la Déclaration d’Applicabilité (SOA)
+
+Le projet de conformité permet d’exporter la **Déclaration d’Applicabilité (SOA — Statement of Applicability)**. Ce document de référence regroupe l’ensemble des contrôles du projet avec, pour chacun :
+
+* son **statut d’applicabilité** (applicable / non applicable),
+* la **justification** de l’inclusion ou de l’exclusion,
+* le **niveau de mise en œuvre** mesuré,
+* les références aux preuves collectées.
+
+Le SOA est un livrable clé pour les audits de certification (ex. ISO 27001, RGPD) et pour démontrer la couverture des exigences réglementaires à votre direction ou à vos auditeurs.
+
+Pour l’exporter, accédez à votre projet de conformité et utilisez le menu d’export disponible dans la page de surveillance.
+
+***
+
 ### Résultat attendu de la phase de surveillance
 
 À l’issue de cette phase, le projet dispose :

@@ -82,6 +82,21 @@ Cette approche permet de visualiser concrètement l’effet des contrôles sur l
 
 <figure><img src="../../../.gitbook/assets/compliance-project-risk-detail.png" alt=""><figcaption></figcaption></figure>
 
+#### Visualisation en carte de risques (heatmap)
+
+Depuis la vue des risques associés à un contrôle, vous pouvez basculer entre :
+
+* une **vue tableau** — liste détaillée de chaque risque avec ses scores ;
+* une **vue carte (heatmap)** — représentation visuelle des risques sur une matrice probabilité × impact.
+
+La vue heatmap permet de choisir le type de risque à afficher :
+
+* **Risque initial** — avant mise en place des contrôles
+* **Risque courant** — état actuel
+* **Risque résiduel** — après application de tous les contrôles planifiés
+
+Cette double lecture (tableau + carte) facilite l’arbitrage et la communication des risques prioritaires auprès des parties prenantes.
+
 ***
 
 ### 4. Lier menaces, risques et contrôles

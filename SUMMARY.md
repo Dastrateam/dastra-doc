@@ -21,6 +21,7 @@
 
 ## 👨‍💻 Bien commencer <a href="#getting-started" id="getting-started"></a>
 
+* [🚀 Démarrer en 5 minutes](getting-started/demarrer-en-5-minutes.md)
 * [Mise en place](getting-started/setup/README.md)
   * [Les notions importantes](getting-started/setup/key-concepts.md)
   * [Se connecter et gérer l’authentification](getting-started/setup/se-connecter-et-gerer-lauthentification.md)
