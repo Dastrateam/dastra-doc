@@ -13,8 +13,6 @@ Le processus de gestion des risques dans Dastra est une **version simplifiée** 
 
 La gestion des risques s'effectue selon un processus en quatre grandes étapes.
 
-![4 étapes de gestion des risques + archivage](https://static.dastra.eu/richtextbackoffice/ebc257ad-6e50-4768-8f26-cf4ea98eba38/image.png)
-
 **1. L'identification**\
 L'objectif de l'identification du risque est de déterminer les événements susceptibles de se produire causant un évènement redouté (tel qu'une perte) et de donner un aperçu de comment, où, et quand cet évènement pourrait survenir.
 

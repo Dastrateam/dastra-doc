@@ -69,6 +69,19 @@ Définissez votre **rôle et vos responsabilités** au regard du Règlement euro
 
 Assurez-vous d’identifier votre ou vos rôles avec précision pour déterminer vos **obligations de conformité** et responsabilités légales au titre de l’AI Act.
 
+{% hint style="info" %}
+**Questionnaire guidé de responsabilité**
+
+Si aucune responsabilité n’a encore été définie pour ce système, Dastra vous propose un **questionnaire de 10 questions** pour vous aider à déterminer le ou les rôles qui vous correspondent. Une fois les responsabilités identifiées, l’assistant IA peut **générer automatiquement une justification** adaptée.
+{% endhint %}
+
+#### Alertes contextuelles liées au rôle déclaré
+
+Lors de la déclaration du rôle de **déployeur**, Dastra affiche des alertes contextuelles selon le niveau de risque du système :
+
+* **Risque inacceptable** — Si vous déclarez être déployeur d’un système à risque inacceptable, une alerte vous rappelle que le déploiement d’un tel système est **interdit par l’AI Act**.
+* **Risque élevé** — Si vous déclarez être déployeur d’un système à haut risque, une alerte vous informe que des situations impliquent l’obligation de réaliser une [**analyse d’impact sur les droits fondamentaux (FRIA)**](analyse-dimpact-sur-les-droits-fondamentaux-fria.md) et vous redirige vers le questionnaire correspondant.
+
 ***
 
 ### 3. Modèles d’IA

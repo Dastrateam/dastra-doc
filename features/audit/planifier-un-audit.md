@@ -10,6 +10,20 @@ description: Apprenez à planifier un questionnaire avec Dastra.
 
 Une fois le modèle de questionnaire créé et personnalisé, lancez une campagne en cliquant sur le bouton "Planifier un questionnaire".
 
+### Page d'accueil repensée
+
+La page d'accueil des questionnaires propose désormais le démarrage d'une planification directement depuis l'interface principale, sans passer par la configuration du modèle. Les modèles disponibles sont présentés avec leurs statistiques (réponses reçues, taux de complétion) pour vous aider à choisir rapidement.
+
+### Création rapide (auto-répondant)
+
+Une option de **création rapide** est disponible lorsque vous êtes vous-même le seul répondant. Dans ce mode, l'étape de correction/validation par un tiers est supprimée, ce qui simplifie le flux pour les auto-évaluations internes.
+
+### Accès direct à la PIA depuis le registre des traitements
+
+Pour les questionnaires de type **PIA/DPIA**, il est désormais possible de lancer une analyse d'impact directement depuis la fiche d'un traitement dans le registre. Un bouton dédié dans l'onglet "PIA" du traitement permet d'ouvrir le questionnaire correspondant sans quitter le contexte du traitement.
+
+### Modes d'envoi
+
 Deux possibilités pour soumettre une campagne de questionnaire :
 
 1. Par mail : renseignez le nom de la campagne et les répondants, invitez les répondants internes comme externes et ensuite attendez les réponses. Ceux-ci recevront un mail contenant un lien vers un espace en ligne où ils pourront renseigner leurs réponses.

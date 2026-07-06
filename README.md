@@ -1,161 +1,88 @@
 ---
-description: Découvrez ce qu'est Dastra.
+description: Bienvenue dans la documentation de Dastra.
 ---
 
 # Introduction à Dastra
 
-## Introduction à Dastra
+**Dastra** est une plateforme de gestion de la conformité et de la gouvernance des données et de l'intelligence artificielle. Elle permet aux équipes DPO, juridiques, techniques et métiers de piloter l'ensemble de leurs obligations RGPD et AI Act dans un environnement collaboratif et guidé.
 
-**Dastra** est une plateforme complète de gestion de la conformité et de la gouvernance des données et de l’intelligence artificielle.\
-Elle permet aux équipes de protection des données, juridiques, techniques et métiers de **piloter l’ensemble des obligations du RGPD et de l’AI Act**, dans un environnement collaboratif, ergonomique et guidé.
+> Pour en savoir plus sur notre approche, consultez notre [manifesto](https://www.dastra.eu/fr/mission).
 
-***
-
-### 🎯 Notre mission
-
-Nous aidons les organisations à :
-
-* **Sensibiliser** toute l’entreprise à la protection des données et à la gouvernance de l’IA,
-* **Améliorer l’expérience** de la conformité au RGPD et à l’AI Act,
-* **Automatiser** les processus de gouvernance et d’audit,
-* **Centraliser** la conformité dans une solution unique et intégrée.
-
-Notre objectif : **rendre la conformité et la gouvernance des données et de l’IA simples, utiles et opérationnelles.**
+{% content-ref url="getting-started/demarrer-en-5-minutes.md" %}
+[🚀 Démarrer en 5 minutes — créez votre premier traitement maintenant](getting-started/demarrer-en-5-minutes.md)
+{% endcontent-ref %}
 
 ***
 
-### 💡 Notre approche
+### 🚀 Bien commencer
 
-* Une **interface intuitive**, adaptée aux DPO, juristes, RSSI, data managers et AI officers.
-* Une **collaboration fluide** entre métiers, IT et gouvernance.
-* Une **vision unifiée** de la conformité : données, IA, sécurité et risques.
-* Une **approche guidée** permettant d’accompagner les non-experts pas à pas.
-* Une **plateforme ouverte** (API, connecteurs, webhooks) pour s’intégrer à vos outils existants.
+{% content-ref url="getting-started/setup/README.md" %}
+[Mise en place](getting-started/setup/README.md)
+{% endcontent-ref %}
 
-> Chez Dastra, nous pensons que la conformité n’est pas qu’une contrainte réglementaire :\
-> c’est un levier de **transparence, de confiance et d’innovation responsable.**
+{% content-ref url="getting-started/tutoriel/README.md" %}
+[Tutoriel pas à pas](getting-started/tutoriel/README.md)
+{% endcontent-ref %}
 
-Pour en savoir plus, consultez notre [manifesto](https://www.dastra.eu/fr/mission)\
-ou regardez la vidéo de notre CEO :
-
-{% embed url="https://www.youtube.com/watch?v=Aea2PscbEHU" fullWidth="false" %}
-Notre approche de la protection des données
-{% endembed %}
+{% content-ref url="getting-started/le-support/README.md" %}
+[Support](getting-started/le-support/README.md)
+{% endcontent-ref %}
 
 ***
 
-### ⚙️ Avec Dastra, vous pouvez :
+### ⚙️ Fonctionnalités
 
-#### 🧭 1. **Cartographier vos données personnelles**
+{% content-ref url="features/editer-le-registre/README.md" %}
+[Registre des traitements (RGPD)](features/editer-le-registre/README.md)
+{% endcontent-ref %}
 
-Créez et maintenez votre **registre des traitements** à l’aide :
+{% content-ref url="features/systemes-dia/README.md" %}
+[Systèmes d'IA (AI Act)](features/systemes-dia/README.md)
+{% endcontent-ref %}
 
-* d’une interface souple et intuitive,
-* de référentiels et bibliothèques réutilisables,
-* de questionnaires et modèles configurables,
-* d’exports automatiques (Excel, JSON, PDF).
+{% content-ref url="features/la-gestion-des-risques/README.md" %}
+[Gestion des risques et audits](features/la-gestion-des-risques/README.md)
+{% endcontent-ref %}
 
-<figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2FWXgKYDZQ3FSAIy8cacj2%2Fimage.png?alt=media" alt=""><figcaption><p>Module du registre des traitements</p></figcaption></figure>
+{% content-ref url="features/gerer-les-exercices-des-droits/README.md" %}
+[Exercice des droits (DSR)](features/gerer-les-exercices-des-droits/README.md)
+{% endcontent-ref %}
 
-***
+{% content-ref url="features/documenter-les-violations-de-donnees/README.md" %}
+[Violations de données](features/documenter-les-violations-de-donnees/README.md)
+{% endcontent-ref %}
 
-#### 🧮 2. **Évaluer vos risques et réaliser vos audits**
+{% content-ref url="features/gerer-le-consentement-aux-cookies/README.md" %}
+[Consentement aux cookies](features/gerer-le-consentement-aux-cookies/README.md)
+{% endcontent-ref %}
 
-Identifiez, évaluez et priorisez les risques liés aux traitements de données ou aux systèmes d’IA.\
-Menez des audits internes, externes ou automatisés, et suivez les plans d’action associés.
+{% content-ref url="features/planifier/README.md" %}
+[Planification et tâches](features/planifier/README.md)
+{% endcontent-ref %}
 
-<figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2FQqByGKHiKZnpWaQlZQ1N%2Fimage.png?alt=media" alt=""><figcaption><p>Module de gestion des risques et audits</p></figcaption></figure>
-
-***
-
-#### 🧱 3. **Mettre en œuvre vos processus de conformité RGPD**
-
-Implémentez les processus réglementaires :
-
-* **Exercice des droits (DSR)** : gestion complète du cycle de vie des demandes,
-* **Violations de données** : enregistrement, qualification, notification CNIL,
-* **Consentement cookies** : bannière configurable, preuve du consentement, conformité TCF.
-
-<figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2FZGuiJyC2vsyDE5hHihqN%2Fimage.png?alt=media" alt=""><figcaption><p>Module de gestion des droits des personnes</p></figcaption></figure>
-
-***
-
-#### 🤖 4. **Gouverner vos systèmes d’intelligence artificielle**
-
-Dastra intègre un **registre des systèmes d’IA** conforme à l’AI Act européen.\
-Ce registre vous permet de :
-
-* **Recenser tous vos systèmes d’IA**, qu’ils soient développés en interne ou intégrés depuis des tiers (fournisseurs, APIs, modèles open source).
-* **Qualifier leur niveau de risque** (systèmes à risque minimal, limité, élevé ou prohibé).
-* **Documenter les finalités, sources de données, évaluations de risques et mesures de contrôle.**
-* **Assurer la conformité continue** des modèles via des audits périodiques et des plans d’action.
-* **Relier IA et traitements de données** : cartographie unifiée RGPD / AI Act.
-
-
-
-<figure><img src=".gitbook/assets/ai-systems-list-empty-state.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2Fplaceholder-ai-register.png?alt=media" alt=""><figcaption><p>Module du registre des systèmes d’IA</p></figcaption></figure>
-
-{% hint style="warning" %}
-Dastra vous aide à anticiper la mise en conformité à l’**AI Act**, en centralisant la documentation exigée (fiches systèmes, logs, évaluations de risques, notices d’utilisation, contrôles de biais, etc.).&#x20;
-{% endhint %}
+{% content-ref url="features/settings/README.md" %}
+[Configuration avancée (SSO, SCIM, API…)](features/settings/README.md)
+{% endcontent-ref %}
 
 ***
 
-#### 📋 5. **Créer et suivre vos plans d’action**
+### 📄 API & Intégrations
 
-Créez des plans de mise en conformité, assignez des tâches, fixez des échéances et suivez leur progression.\
-Visualisez les dépendances entre traitements, systèmes d’IA, et actions correctives.
+{% content-ref url="api-references/liste-des-endpoints-dapi.md" %}
+[Endpoints API](api-references/liste-des-endpoints-dapi.md)
+{% endcontent-ref %}
 
-<figure><img src="https://1301193153-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2FirsRP5lhUtu66JPBaLUU%2Fimage.png?alt=media" alt=""><figcaption><p>Module de gestion des tâches et plans d’action</p></figcaption></figure>
-
-***
-
-#### 🧩 6. **Structurer votre gouvernance**
-
-* Gérez vos **entités**, **départements** et **équipes**.
-* Assignez les **rôles et permissions** selon les périmètres (organisation, workspace, unité).
-* Suivez la responsabilité des traitements, des systèmes d’IA et des risques associés.
+{% content-ref url="api-references/integrations/README.md" %}
+[Intégrations tierces](api-references/integrations/README.md)
+{% endcontent-ref %}
 
 ***
 
-#### 📁 7. **Centraliser votre documentation**
+### 🛡️ Sécurité
 
-Stockez et reliez vos documents de conformité (politiques, contrats, preuves, rapports, évaluations).\
-Chaque fichier peut être attaché à un traitement, un risque, une tâche ou un système d’IA.
-
-***
-
-#### 📊 8. **Analyser et piloter la conformité**
-
-Créez des rapports sur mesure : avancement RGPD, gouvernance IA, risques, plans d’action, audits.\
-Tableaux de bord dynamiques, filtres et exports (PDF, Excel, CSV).
-
-***
-
-#### ⚙️ 9. **Automatiser et intégrer vos processus**
-
-* **Workflows automatisés** : déclencheurs, rappels, relances, actions en masse.
-* **API REST & Webhooks** pour connecter Dastra à vos outils internes.
-* **Connecteurs natifs** : Slack, Microsoft Teams, Zapier, etc.
-* **IA intégrée** : génération de fiches, suggestion de risques, classification automatique.
-
-***
-
-#### 🔐 10. **Assurer la sécurité et la conformité**
-
-* Authentification forte (2FA), SSO, SCIM
-* Gestion fine des rôles et accès
-* Journalisation des activités et audit trail complet
-* Hébergement 100 % européen (RGPD, ISO 27001)
-* Confidentialité “by design” et “by default”
-
-***
-
-### 🧭 Découvrir Dastra
-
-Commencez à explorer Dastra dès maintenant :
+{% content-ref url="security/general.md" %}
+[Sécurité chez Dastra](security/general.md)
+{% endcontent-ref %}
 
 ***
 
@@ -164,7 +91,3 @@ Commencez à explorer Dastra dès maintenant :
 Dastra peut être testé gratuitement pendant 30 jours, sans carte bleue :\
 👉 [https://app.dastra.eu/signup](https://app.dastra.eu/signup)
 {% endhint %}
-
-***
-
-### 📚 Aller plus loin

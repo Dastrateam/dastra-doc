@@ -22,5 +22,11 @@ Pour ajouter un nouvel actif, vous pouvez :&#x20;
 * importer un actif depuis un fichier csv/excel ou JSON
 * créer un actif depuis un questionnaire : Pour cela il faut avoir un questionnaire de type création d'actifs dans les modèles
 
+### Rattacher un actif à une unité organisationnelle
+
+Par défaut, un actif créé dans Dastra est accessible à l'ensemble de l'organisation (portée globale). Il est possible de **rattacher un actif à une unité organisationnelle spécifique** afin de limiter sa visibilité aux utilisateurs de cette entité ou de ce département.
+
+Pour cela, lors de la création ou de la modification de l'actif, sélectionnez l'unité organisationnelle souhaitée dans le champ dédié. L'actif ne sera alors visible que pour les utilisateurs ayant accès à cette unité organisationnelle.
+
 
 

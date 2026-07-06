@@ -118,6 +118,18 @@ Voici une vidéo explicative :
 
 {% embed url="https://youtu.be/RCLIWokRmAA" %}
 
+### Accès restreint à une entité enfant uniquement
+
+Il est désormais possible d'ajouter un utilisateur ou une équipe **uniquement sur une entité enfant**, sans leur donner accès aux entités parentes. L'utilisateur ou l'équipe accède alors **exclusivement aux données de cette entité** — ni aux entités parentes, ni aux autres entités sœurs.
+
+Ce mode d'accès restreint est utile lorsque vous souhaitez déléguer la gestion d'une entité filiale ou d'un département spécifique à des utilisateurs locaux, sans leur exposer les données du groupe.
+
+Pour configurer un accès restreint à une entité enfant, rendez-vous dans les paramètres de l'entité concernée et ajoutez l'utilisateur ou l'équipe directement sur cette entité, sans les rattacher à l'entité parente.
+
+{% hint style="info" %}
+Contrairement au mode standard (accès arborescent), l'accès restreint à une entité enfant ne donne pas accès aux données des entités parentes.
+{% endhint %}
+
 ## Aller plus loin
 
 {% content-ref url="creer-puis-affectez-des-equipes.md" %}
