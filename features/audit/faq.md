@@ -81,3 +81,23 @@ Cela peut arriver lorsque le répondant n'a pas encore finalisé son questionnai
 Dans ce cas, en tant que responsable, vous avez la possibilité de vérifier où en est le questionnaire du côté du répondant en utilisant le lien d'accès du répondant disponible ici :
 
 <figure><img src="../../.gitbook/assets/audit-questionnaire-repondant-externe-copier-lien.png" alt=""><figcaption></figcaption></figure>
+
+## Y a-t-il une limite sur le nombre de modèles de questionnaires ?
+
+Oui, le nombre de modèles disponibles dépend de votre souscription. Ce quota est **partagé entre tous les espaces de travail** de votre organisation. La **corbeille des modèles compte dans ce quota** : les modèles supprimés mais non vidés de la corbeille occupent toujours un emplacement. Si vous atteignez la limite, videz la corbeille des modèles inutilisés depuis l'interface de gestion des modèles.
+
+## Est-il possible de partager le lien d'accès d'un questionnaire avec plusieurs personnes ?
+
+Oui. Lorsqu'un répondant reçoit un lien d'invitation par email, le **premier accès via ce lien ne nécessite pas de code PIN**. En revanche, si le répondant transfère le lien à un collègue, cette personne devra valider son accès via un **code PIN reçu par email**. Cette mécanique garantit la sécurité de l'accès tout en permettant la collaboration au sein d'une même équipe externe, sans qu'il soit nécessaire de créer un compte Dastra.
+
+## Un répondant externe peut-il ajouter lui-même d'autres répondants ?
+
+Non, seul le **responsable (owner) du questionnaire** peut ajouter de nouveaux répondants depuis l'interface Dastra. Si un répondant externe souhaite impliquer un collègue, deux options existent : le responsable peut ajouter directement la nouvelle adresse email depuis la gestion du questionnaire, ou le répondant peut partager son lien d'invitation — le collègue devra alors valider son accès par un code PIN reçu par email.
+
+## Y a-t-il un rappel automatique lorsqu'un questionnaire est en attente de validation ?
+
+Aujourd'hui, le responsable reçoit une **notification** (dans Dastra et par email) lors de la finalisation du questionnaire par le répondant, mais il n'existe pas de système de relance automatique périodique. Pour ne manquer aucun questionnaire en attente, deux alternatives existent : consulter régulièrement la vue **"Mes réponses"** dans le module Questionnaires, ou configurer une **règle de workflow** pour automatiser l'envoi d'un questionnaire ou d'une notification à intervalles réguliers.
+
+## Les questions à sélection dynamique nécessitent-elles des droits particuliers pour les répondants ?
+
+Oui. Les types de questions **"Sélection dynamique simple"** et **"Sélection dynamique multiple"** affichent des listes d'objets issus directement de Dastra (actifs, traitements, parties prenantes, etc.). Pour que cette liste s'affiche, le répondant doit disposer des **droits de lecture** sur les objets correspondants dans Dastra. Un répondant externe sans compte Dastra ou sans les bonnes permissions ne pourra pas voir la liste.

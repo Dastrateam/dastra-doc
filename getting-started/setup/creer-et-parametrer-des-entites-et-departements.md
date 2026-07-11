@@ -114,10 +114,6 @@ Pour cela, il faut attacher des équipes à des unités organisationnelles.
 
 Le système est arborescent. Cela signifie que, pour qu'une équipe accède à une UO enfant, elle doit accéder à l'UO parent.
 
-Voici une vidéo explicative :
-
-{% embed url="https://youtu.be/RCLIWokRmAA" %}
-
 ### Accès restreint à une entité enfant uniquement
 
 Il est désormais possible d'ajouter un utilisateur ou une équipe **uniquement sur une entité enfant**, sans leur donner accès aux entités parentes. L'utilisateur ou l'équipe accède alors **exclusivement aux données de cette entité** — ni aux entités parentes, ni aux autres entités sœurs.
