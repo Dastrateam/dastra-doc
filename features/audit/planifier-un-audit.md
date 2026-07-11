@@ -31,6 +31,23 @@ Deux possibilités pour soumettre une campagne de questionnaire :
 
 Il est possible de relancer les personnes qui n'ont pas répondu au questionnaire.
 
+### Questionnaire individuel ou collaboratif
+
+Lors de la planification, vous choisissez entre deux modes de réponse :
+
+- **Questionnaire individuel** : si vous ajoutez plusieurs répondants, Dastra génère un questionnaire distinct pour chacun d'eux. Ce mode est idéal pour collecter des informations comparables auprès de plusieurs personnes ou entités (ex. : audit fournisseurs, évaluation par département) et pour générer un reporting consolidé des réponses.
+- **Questionnaire collaboratif** : un seul questionnaire est partagé entre tous les répondants désignés, qui répondent ensemble aux mêmes questions. Ce mode convient aux questionnaires longs ou multi-domaines impliquant plusieurs équipes (ex. : PIA nécessitant les contributions des équipes juridique, IT et métier).
+
+### Réponse assistée par IA
+
+Dans un questionnaire en cours de réponse, l'**assistant IA** peut vous aider à renseigner les questions automatiquement. En cliquant sur **"Réponse assistée par IA"**, vous pouvez fournir des documents en contexte (notes de projet, politique de sécurité, DPA, analyse existante, etc.) : l'IA analyse ces documents et propose des réponses pour chaque question, que vous pouvez ensuite relire, ajuster et valider avant de soumettre.
+
+Cette fonctionnalité est particulièrement utile pour les questionnaires longs ou complexes comme les PIA, TIA ou LIA, lorsque vous disposez déjà d'une documentation existante.
+
+{% hint style="info" %}
+L'utilisation de la réponse assistée par IA consomme des crédits IA. Consultez la page [Assistant IA](../generalites/ai-assistant/) pour connaître votre quota et les modalités de consommation.
+{% endhint %}
+
 ## Lier le questionnaire à d'autres objets dans Dastra
 
 Il est possible de rattacher le questionnaire à un autre module spécifique. Pour ce faire, à la configuration de votre modèle de questionnaire, après lui avoir donné un nom et une description, attachez-lui un élément qui sera l'objet du questionnaire.

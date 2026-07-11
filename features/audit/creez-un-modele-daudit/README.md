@@ -78,6 +78,29 @@ Ces types permettent une certaine personnalisation des modèles de questionnaire
 
 Il est enfin possible d'importer un de vos modèles de questionnaires, au format json. Pour cela, à la création du questionnaire, sélectionnez l'option "Charger un modèle".
 
+## Questions à sélection dynamique
+
+Parmi les types de questions disponibles dans l'éditeur de modèle, deux types permettent de connecter une question directement aux données de votre espace de travail Dastra : **"Sélection dynamique simple"** et **"Sélection dynamique multiple"**.
+
+Ces types de questions affichent au répondant une liste d'objets issus de Dastra : actifs, traitements, parties prenantes, mesures de sécurité, jeux de données, champs de données, systèmes d'IA, contrats, etc. Le répondant sélectionne un ou plusieurs éléments de sa bibliothèque comme réponse à la question.
+
+{% hint style="warning" %}
+Pour que la liste s'affiche correctement, le répondant doit disposer des **droits de lecture** sur les objets correspondants dans Dastra. Un répondant externe sans compte Dastra ou sans les permissions appropriées ne pourra pas voir la liste.
+{% endhint %}
+
+## Gestion des versions du modèle
+
+Lorsque vous modifiez un modèle déjà utilisé dans des questionnaires existants, Dastra vous propose deux options :
+
+- **Écraser la version actuelle** : les modifications s'appliquent immédiatement au modèle. Les questionnaires déjà générés ne sont pas affectés, mais les nouvelles planifications utiliseront la version mise à jour.
+- **Créer une nouvelle version** : une nouvelle version du modèle est créée. Vous pouvez la laisser en **brouillon** le temps de la préparer, puis la promouvoir en **version principale** lorsqu'elle est prête. Les questionnaires existants continuent d'utiliser l'ancienne version principale jusqu'à ce que vous changiez explicitement de version.
+
+Pour naviguer entre les versions, utilisez le sélecteur de version disponible dans l'interface du modèle. La version marquée comme principale est celle qui sera utilisée pour toutes les nouvelles planifications.
+
+{% hint style="info" %}
+Le nombre de modèles disponibles dépend de votre souscription. Ce quota est partagé entre tous les espaces de travail de votre organisation. La corbeille des modèles compte dans ce quota — pensez à vider régulièrement les modèles inutilisés pour libérer des emplacements.
+{% endhint %}
+
 ## Les blocs d'analyse
 
 {% embed url="https://youtu.be/Ot4OmgTKtrg" %}

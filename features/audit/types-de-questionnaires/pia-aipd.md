@@ -58,7 +58,7 @@ Le modèle PIA (CNIL) est structuré en trois grandes parties :
 3. **Risques liés à la sécurité des données** — évaluer les risques selon quatre catégories de menaces : mesures de sécurité mises en place, accès illégitime aux données, modification non désirée des données, disparition des données
 
 {% hint style="info" %}
-Le questionnaire PIA (CNIL) propose deux modes de réponse : **Mode simplifié** pour une expérience allégée, et **Mode expert** pour une analyse plus détaillée. Vous pouvez basculer entre les deux modes à tout moment.
+Le questionnaire PIA (CNIL) propose deux modes de réponse. La différence entre les deux modes porte uniquement sur l'affichage des champs complémentaires par question : en **Mode expert**, les champs **Justification de la réponse**, **Pièces jointes** et **Annotations** sont affichés pour chaque question. En **Mode simplifié**, ces champs sont masqués. Vous pouvez basculer entre les deux modes à tout moment.
 {% endhint %}
 
 ## Lier une AIPD à un traitement
