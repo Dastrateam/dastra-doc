@@ -17,7 +17,7 @@ Vous pouvez accéder immédiatement à Dastra en ouvrant un compte "Essai gratui
 Un espace de travail est **une organisation permettant d'accueillir un ou plusieurs registres des traitements**. Vous pouvez créer un espace de travail par registre de traitement et/ou par entité légale ou succursale, selon votre choix.&#x20;
 
 {% hint style="warning" %}
-Un espace de travail est un environnement qui est **totalement cloisonné**. Il ne sera pas possible d'avoir une vision d'ensemble de l'intégralité de vos espaces de travail. Par exemple, il ne sera pas possible de consulter les statistiques du registre sur plusieurs espaces de travail combinés. Il sera cependant possible de dupliquer les éléments (traitements, actifs...) d'un espace de travail à l'autre.
+Un espace de travail est un environnement dont les **données sont totalement cloisonnées** : les enregistrements d'un espace (traitements, actifs, demandes…) ne sont jamais accessibles depuis le contexte d'un autre espace. Vous pouvez toutefois consulter des **statistiques consolidées** couvrant l'ensemble de vos espaces de travail depuis le tableau de bord inter-espaces (voir « Statistiques inter-espaces de travail »), et dupliquer des éléments (traitements, actifs…) d'un espace à l'autre.
 {% endhint %}
 
 ### Créez un espace de travail
@@ -47,6 +47,20 @@ Vous pouvez basculer à tout moment d'espace de travail en cliquant sur le séle
 
 
 
+
+
+
+## Statistiques inter-espaces de travail
+
+Le tableau de bord inter-espaces réunit sur une seule vue les indicateurs clés de tous vos espaces de travail. Vous y accédez via le bouton **« Reporting »** depuis la liste de vos espaces de travail.
+
+<figure><img src="../../.gitbook/assets/workspaces-reporting-button.png" alt="Bouton Reporting dans la liste des espaces de travail"><figcaption><p>Le bouton « Reporting » ouvre le tableau de bord inter-espaces depuis la liste des espaces de travail</p></figcaption></figure>
+
+Il consolide les indicateurs des principaux modules : registre des traitements (ROPA), demandes d'exercice de droits, violations de données, questionnaires, systèmes d'IA et tâches. Les données sont présentées sous forme de widgets et de graphiques.
+
+<figure><img src="../../.gitbook/assets/cross-workspace-statistics-dashboard.png" alt="Tableau de bord de statistiques consolidées inter-espaces"><figcaption><p>Indicateurs consolidés du registre des traitements et des demandes d'exercice de droits pour tous les espaces de travail</p></figcaption></figure>
+
+Des filtres dynamiques permettent d'affiner l'analyse par espace de travail, par unité organisationnelle et par type. Le tableau de bord peut être imprimé et exporté.
 
 Regardez la vidéo sur la configuration de base de vos espaces de travail :
 

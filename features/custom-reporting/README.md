@@ -50,6 +50,16 @@ Construisez votre rapport en sélectionnant les métriques et dimensions que vou
 
 Cliquez sur le bouton "Enregistrer" en bas à droite de la page
 
+#### Lien vers la fiche de l'objet
+
+Pour les tables d'objets dotés d'une fiche — traitements, exercices des droits, violations de données, actifs, acteurs, audits, mesures de sécurité, contrats, systèmes d'IA et tâches — la dimension **« Lien vers la ressource (url) »** ajoute à chaque ligne un lien cliquable **« Détails »**. Ce lien ouvre la fiche de l'objet dans le bon module, dans un nouvel onglet et en tenant compte de l'espace de travail courant. La colonne est également incluse dans les exports, sous forme d'URL.
+
+<figure><img src="../../.gitbook/assets/custom-report-record-url-dimension.png" alt="Dimension Lien vers la ressource (url) dans la construction du rapport"><figcaption><p>Ajout de la dimension « Lien vers la ressource (url) » au rapport</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/custom-report-details-link.png" alt="Lien Détails cliquable dans un rapport personnalisé"><figcaption><p>Chaque ligne affiche un lien « Détails » ouvrant la fiche de l'objet</p></figcaption></figure>
+
+
+
 {% hint style="info" %}
 Automatiquement les données seront agrégées par dimension afin de calculer les métriques sélectionnées.&#x20;
 {% endhint %}

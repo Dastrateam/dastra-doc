@@ -27,9 +27,21 @@ Vous pouvez configurer la famille de modèles utilisée dans les **Paramètres d
 
 ### Custom AI provider
 
-Dastra vous permet de connecter votre propre fournisseur d'IA via une clé API, à condition que celui-ci soit compatible avec le standard OpenAI API. Les fournisseurs supportés incluent notamment OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ainsi que tout LLM auto-hébergé compatible.
+<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Familles de modèles de l'assistant IA, dont le Custom AI provider"><figcaption><p>Le Fournisseur d'IA personnalisé (Custom AI provider) parmi les familles de modèles</p></figcaption></figure>
+
+Dastra vous permet de connecter votre propre fournisseur d'IA via une clé API, à condition que celui-ci soit compatible avec le standard OpenAI API. Les fournisseurs supportés incluent notamment OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Microsoft Foundry, ainsi que tout LLM auto-hébergé compatible.
 
 Pour configurer un fournisseur personnalisé, rendez-vous dans **Paramètres de l'organisation > Assistant IA > Custom AI provider**, puis renseignez vos identifiants et associez-les aux trois niveaux de modèle (Fast, Smart, Contexte étendu).
+
+Pour les fournisseurs reconnus, le **point d'accès (Base URL)** est pré-rempli automatiquement — pour Anthropic, il s'agit de `https://api.anthropic.com/v1/`. Il ne reste qu'à renseigner votre **clé d'API**.
+
+* Un bouton **« Tester la connexion »** vérifie la validité des identifiants avant l'enregistrement.
+* Vous désignez le modèle à utiliser pour chaque type d'opération — rapide, avancé et grand contexte — un modèle recommandé étant proposé par défaut.
+* La clé d'API n'est jamais réaffichée en clair, et la gestion des identifiants est réservée aux utilisateurs disposant des droits sur les intégrations.
+
+<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenêtre d'identifiants du fournisseur personnalisé avec Anthropic et le bouton Tester la connexion"><figcaption><p>Configuration d'Anthropic : Base URL pré-remplie, clé d'API et bouton « Tester la connexion »</p></figcaption></figure>
+
+
 
 {% hint style="warning" %}
 Lorsque vous utilisez un Custom AI provider, les données transmises au modèle sont soumises à la politique de confidentialité de **votre fournisseur**, et non aux garanties Azure décrites sur cette page. Vérifiez les conditions de votre fournisseur avant d'activer cette option, notamment si vos prompts peuvent contenir des données à caractère personnel.
