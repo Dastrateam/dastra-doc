@@ -10,10 +10,12 @@ description: >-
 
 Depuis l'onglet **"Voir les questionnaires"**, sélectionnez un modèle pour accéder à son tableau de bord de réponses. Il propose quatre vues :
 
-* **Réponses** : liste de toutes les réponses avec leur statut (en attente, validé, en retard), leur score et l'objet lié
+* **Réponses** : liste de toutes les réponses avec leur statut (en attente de validation, validé, non validé, annulé, délai dépassé), leur score et l'objet lié
 * **Tableau détaillé** : comparaison côte à côte de toutes les réponses par catégorie et score — utile pour benchmarker plusieurs entités ou traitements
 * **Stats** : statistiques agrégées sur l'ensemble des réponses du modèle
 * **Détails** : configuration et métadonnées du questionnaire
+
+<figure><img src="../../.gitbook/assets/questionnaire-state-badges.png" alt="Badges de statut des réponses aux questionnaires"><figcaption><p>Les statuts des réponses, dont « Annulé » (badge rouge)</p></figcaption></figure>
 
 ## Reporting d'une réponse individuelle
 
@@ -47,6 +49,18 @@ Une fois la réponse examinée, cliquez sur **"Revoir et valider le questionnair
 {% hint style="info" %}
 Si vous ne pouvez pas valider une réponse, vérifiez que le répondant a bien cliqué sur le bouton **"Finaliser"**. Sans cette étape, la réponse reste en "En attente de validation".
 {% endhint %}
+
+
+
+## Annuler un questionnaire
+
+Depuis une réponse **en attente de validation**, le responsable peut annuler le questionnaire sans repasser par la liste des questionnaires. L'action **« Annuler le questionnaire »** est proposée à l'étape de validation, à côté de **« Valider le questionnaire »** et de **« Demander une révision »**.
+
+<figure><img src="../../.gitbook/assets/questionnaire-cancel-button.png" alt="Actions de validation d'une réponse : Valider, Demander une révision, Annuler le questionnaire"><figcaption><p>L'action « Annuler le questionnaire » est proposée à l'étape de validation</p></figcaption></figure>
+
+L'annulation demande une confirmation et accepte un commentaire facultatif. Le motif saisi est conservé dans l'historique et reste visible par le répondant.
+
+Une réponse annulée prend le statut **« Annulé »**, affiché sous forme de badge rouge dans la liste, les filtres, le reporting et les exports. Elle n'est plus modifiable par le répondant et n'est pas compilée dans les résultats.
 
 ## Fusionner les réponses avec l'objet attaché
 

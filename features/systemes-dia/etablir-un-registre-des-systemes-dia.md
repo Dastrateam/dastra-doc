@@ -23,7 +23,7 @@ Sélectionnez **"Générer avec l'IA"**, puis décrivez le système à documente
 
 L'assistant produit une fiche pré-remplie (nom, description, type d'apprentissage, risque systémique, éditeur…) que vous pouvez relire et valider avant enregistrement.
 
-<figure><img src="../../.gitbook/assets/image-337.png" alt="Résultat de génération IA pour le système Gemini 3.1 Pro"><figcaption><p>La fiche générée est à relire avant validation — l'IA peut faire des erreurs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-create-ai-generated-preview.png" alt="Résultat de génération IA pour le système Gemini 3.1 Pro"><figcaption><p>La fiche générée est à relire avant validation — l'IA peut faire des erreurs</p></figcaption></figure>
 
 {% hint style="warning" %}
 Les données générées automatiquement par l'IA peuvent contenir des erreurs. Relisez et corrigez la fiche proposée avant de l'enregistrer dans votre registre.
@@ -132,4 +132,27 @@ L'onglet **Traitements** de la fiche système d'IA permet d'associer un ou plusi
 
 Pour chaque traitement lié, le bouton **"Sync. data"** permet d'importer automatiquement dans la fiche système d'IA les éléments du traitement sélectionné : actifs, jeux de données et catégories de personnes concernées.
 
-<figure><img src="../../.gitbook/assets/systemes-dia-registre-data-processings-sync-button.png" alt="Bouton Sync. data mis en évidence dans la liste des traitements liés"><figcaption><p>Le bouton "Sync.
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-data-processings-sync-button.png" alt="Bouton Sync. data mis en évidence dans la liste des traitements liés"><figcaption><p>Le bouton "Sync. data" déclenche la synchronisation des données du traitement vers la fiche système d'IA</p></figcaption></figure>
+
+Une fenêtre liste les éléments à importer, avec la possibilité de sélectionner précisément ceux à ajouter.
+
+<figure><img src="../../.gitbook/assets/ai-system-sync-processing-dialog.png" alt="Fenêtre de synchronisation affichant les actifs, jeux de données et catégories de personnes à importer"><figcaption><p>Sélection des éléments à synchroniser depuis le traitement vers le système d'IA</p></figcaption></figure>
+
+#### Voir les systèmes d'IA liés depuis un traitement
+
+Réciproquement, depuis la fiche d'un traitement de données, un panneau latéral **"Systèmes d'IA liés"** liste tous les systèmes d'IA qui lui sont associés.
+
+<figure><img src="../../.gitbook/assets/processing-linked-ai-systems-panel.png" alt="Panneau Systèmes d&#x27;IA liés dans la fiche traitement"><figcaption><p>Le panneau latéral "Systèmes d'IA liés" est accessible depuis la fiche de n'importe quel traitement</p></figcaption></figure>
+
+Cette liaison bidirectionnelle facilite les audits et la documentation de la conformité AI Act depuis le registre RGPD.
+
+
+## Restaurer une version antérieure
+
+Le panneau **Historique d'activité** de la fiche d'un système d'IA conserve chaque création et modification. Vous pouvez restaurer une version passée directement depuis ce panneau.
+
+<figure><img src="../../.gitbook/assets/ai-system-restore-change-details.png" alt="Détail d'une version dans l'Historique d'activité avec le bouton Restaurer"><figcaption><p>Chaque version de l'Historique d'activité propose un bouton de restauration</p></figcaption></figure>
+
+Chaque entrée de l'historique affiche un bouton de restauration, visible pour les utilisateurs disposant du droit d'écriture. Après confirmation, Dastra crée un **nouveau système d'IA** à partir des données de la version choisie ; son nom reçoit le suffixe « - version restaurée - [date] » et vous êtes redirigé vers cette nouvelle fiche. Le système d'IA d'origine reste inchangé.
+
+<figure><img src="../../.gitbook/assets/ai-system-restored-version-list.png" alt="Système d'IA restauré suffixé « version restaurée » dans la liste"><figcaption><p>La version restaurée apparaît comme un nouveau système d'IA suffixé « - version restaurée - [date] »</p></figcaption></figure>

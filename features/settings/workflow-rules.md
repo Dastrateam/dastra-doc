@@ -79,11 +79,31 @@ Pour les demandes d'exercices de droit, des actions supplémentaires sont dispon
 * Mise à la corbeille de la demande
 * Anonymisation de la demande (uniquement possible si la demande est clôturée)
 
-Il est possible de chaîner les conditions. Vous pouvez ajouter plusieurs actions par condition en cliquant de nouveau sur "ajouter une action".
+Il est possible de chaîner les conditions. Vous pouvez ajouter plusieurs actions par condition en cliquant de nouveau sur "ajouter une action", jusqu'à un maximum de **20 actions par règle**. Au-delà, le bouton d'ajout se désactive et un message indique que le maximum est atteint.
+
+<figure><img src="../../.gitbook/assets/workflow-rule-20-actions.png" alt="Règle de workflow comportant jusqu'à 20 actions"><figcaption><p>Une règle peut comporter jusqu'à 20 actions</p></figcaption></figure>
 
 {% hint style="info" %}
 Exemple : envoyer une notification à plusieurs personnes lors de la création d'une tâche. Pour cela, sélectionner le déclencheur "taches" et selon les conditions de la tache (par exemple, l'ajout d'un tag), ajouter une action "notification"
 {% endhint %}
+
+
+
+### Lier un modèle de message à une action
+
+Pour les règles liées aux **demandes d'exercice de droits**, l'action **« Envoyer un message au demandeur »** peut s'appuyer sur un **modèle de message** existant plutôt que sur un contenu saisi manuellement.
+
+<figure><img src="../../.gitbook/assets/workflow-action-select-template.png" alt="Action Envoyer un message au demandeur avec le bouton Sélectionner un modèle"><figcaption><p>L'action « Envoyer un message au demandeur » propose « Sélectionner un modèle »</p></figcaption></figure>
+
+Dans l'action, cliquez sur **« Sélectionner un modèle »**, puis choisissez un modèle de type **« Message de demande »** de votre espace de travail. Au déclenchement de la règle, le contenu du modèle est récupéré et les variables personnalisées (par exemple `{{ givenName }}`, `{{ refId }}`) sont substituées automatiquement.
+
+<figure><img src="../../.gitbook/assets/workflow-select-template-dialog.png" alt="Fenêtre de sélection d'un modèle de message"><figcaption><p>Choix d'un modèle « Message de demande » de l'espace de travail</p></figcaption></figure>
+
+* Le message envoyé utilise toujours la version à jour du modèle, même si celui-ci est modifié après la création de la règle.
+* Si le modèle lié est supprimé, l'exécution échoue explicitement : le message n'est pas envoyé silencieusement.
+* Les règles utilisant un contenu manuel ne sont pas affectées. Vous pouvez repasser d'un modèle lié à un contenu manuel à tout moment en cliquant sur **« Retirer »**.
+
+<figure><img src="../../.gitbook/assets/workflow-action-linked-template.png" alt="Action avec un modèle de message lié et les boutons Changer de modèle et Retirer"><figcaption><p>Une fois lié, le modèle peut être changé ou retiré ; les variables sont substituées à l'exécution</p></figcaption></figure>
 
 ### Variables personnalisées
 
