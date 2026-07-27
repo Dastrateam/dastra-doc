@@ -1,8 +1,8 @@
 # Fonctionnement de la bannière
 
-### Fonctionnement de la licence&#x20;
+### Fonctionnement de la licence
 
-Contrairement à d'autres solutions qui commercialisent les bannières de consentement au domaine. La licence Dastra est basée sur deux critères:&#x20;
+Contrairement à d'autres solutions qui commercialisent les bannières de consentement au domaine. La licence Dastra est basée sur deux critères:
 
 * **Le trafic Mensuel maximal** : le nombre total de session utilisateur (ou visites) sur vos sites web pendant 1 mois.
 * **Le nombre de bannières** : vous pouvez configurer une bannière avec un certain nombre de cookies/services qui peut être réutilisé sur plusieurs sites web ou sous-domaines. Le cookie de consentement peut fonctionner sur plusieurs sous-domaines (ex: \*.sousdomaine.com).
@@ -27,8 +27,6 @@ Le SDK javascript du widget doit être appelé sur toutes les pages du site util
 
 ![Schéma de fonctionnement global du widget de consentement des cookies](../../../.gitbook/assets/cookie-consent.png)
 
-
-
 ### 1. Visite sur le site du client
 
 L'internaute visite le site web où le snippet de code js est installé. De manière à ne pas impacter les performances et le SEO des pages webs, le SDK est chargé de manière totalement asynchrone avec une durée de mise en cache d'une journée.
@@ -43,11 +41,11 @@ Si le client n'a pas correctement renseigné son domaine dans l'éditeur de widg
 
 ### 4. Demande du consentement à l'utilisateur
 
-Si le cookie "eu-consent" (vous pouvez choisir le nom du cookie si vous le souhaitez) est absent, la fenêtre de consentement s'affichera. Pour tester le bon affichage du widget, vous pouvez supprimer ce cookie de votre navigateur.&#x20;
+Si le cookie "consent-eu" (vous pouvez choisir le nom du cookie si vous le souhaitez) est absent, la fenêtre de consentement s'affichera. Pour tester le bon affichage du widget, vous pouvez supprimer ce cookie de votre navigateur.
 
 ### 5. La collecte du consentement
 
-Les consentements seront automatiquement collectés par l'API de Dastra via une requête POST en json.&#x20;
+Les consentements seront automatiquement collectés par l'API de Dastra via une requête POST en json.
 
 Bien que dans l'interface du widget, l'expression du consentement s'effectue par finalité, le stockage quant à lui, s'effectue par service.
 
@@ -92,7 +90,7 @@ Voici à quoi ressemble la preuve de consentement telle qu'elle est stockée dan
 }
 ```
 
-&#x20;En retour, l'api renverra une chaîne nommée "consentId" qui sera ensuite stockée dans le navigateur dans le localStorage pour une durée de 180 jours max. Cette chaîne est l'identifiant unique de la preuve de consentement. Dans le cas d'un litige, c'est cet identifiant qu'il faudra chercher dans le navigateur du client.
+En retour, l'api renverra une chaîne nommée "consentId" qui sera ensuite stockée dans le navigateur dans le localStorage pour une durée de 180 jours max. Cette chaîne est l'identifiant unique de la preuve de consentement. Dans le cas d'un litige, c'est cet identifiant qu'il faudra chercher dans le navigateur du client.
 
 ### 6. L'exécution du consentement
 
@@ -104,10 +102,8 @@ Pour cette phase, nous vous invitons à consulter le guide sur le blocage des co
 [blocage-des-cookies](blocage-des-cookies/)
 {% endcontent-ref %}
 
-
-
 {% hint style="info" %}
-A l'exception des cookies strictement nécessaires, l'intégralité des services tiers effectuant du traçage doivent être bloqués par défaut.&#x20;
+A l'exception des cookies strictement nécessaires, l'intégralité des services tiers effectuant du traçage doivent être bloqués par défaut.
 {% endhint %}
 
 Bravo, vous êtes prêt à démarrer l'intégration technique du widget:
@@ -115,4 +111,3 @@ Bravo, vous êtes prêt à démarrer l'intégration technique du widget:
 {% content-ref url="integration-dans-les-cms/" %}
 [integration-dans-les-cms](integration-dans-les-cms/)
 {% endcontent-ref %}
-
