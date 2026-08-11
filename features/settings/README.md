@@ -16,7 +16,7 @@ Apprenez à gérer les référentiels :
 [referentials](../cartography/referentials/)
 {% endcontent-ref %}
 
-Apprenez-en davantage sur les rôles et permissions:&#x20;
+Apprenez-en davantage sur les rôles et permissions:
 
 {% content-ref url="roles-et-permissions.md" %}
 [roles-et-permissions.md](roles-et-permissions.md)
@@ -36,8 +36,8 @@ Apprenez à gérer les notifications dans Dastra :
 
 Apprenez à mettre en place des workflows dans Dastra :
 
-{% content-ref url="workflows.md" %}
-[workflows.md](workflows.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc/blob/main/features/settings/workflows.md" %}
+[https://github.com/Dastrateam/dastra-doc/blob/main/features/settings/workflows.md](https://github.com/Dastrateam/dastra-doc/blob/main/features/settings/workflows.md)
 {% endcontent-ref %}
 
 Apprenez à mettre en place des intégrations :

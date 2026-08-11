@@ -6,7 +6,7 @@ description: >-
 
 # Intégration de l'API
 
-Dastra ne s'intégrant pas nativement à toutes les plateformes de développement, nous mettons à votre disposition une API Rest pour gérer vos demandes d'exercice de droits depuis vos applications.&#x20;
+Dastra ne s'intégrant pas nativement à toutes les plateformes de développement, nous mettons à votre disposition une API Rest pour gérer vos demandes d'exercice de droits depuis vos applications.
 
 ### Le JSON de l'objet demande d'exercice de droits
 
@@ -128,7 +128,7 @@ Vous trouverez ci-dessous le modèle objet au format JSON d'une demande d'exerci
 
 </details>
 
-Pour récupérer le format Objet de votre configurée avec des champs personnalisés, vous pouvez faire un export d'une demande au format JSON et obtenir ainsi le modèle JSON.&#x20;
+Pour récupérer le format Objet de votre configurée avec des champs personnalisés, vous pouvez faire un export d'une demande au format JSON et obtenir ainsi le modèle JSON.
 
 ### Les EndPoints de l'API
 
@@ -486,7 +486,7 @@ Voici les principaux Endpoints qui vous seront utiles pour intégrer vos applica
 
 <mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests`
 
-Vous pouvez passer des paramètres de recherche optionnels à votre requête pour filtrer la réponse de l'API&#x20;
+Vous pouvez passer des paramètres de recherche optionnels à votre requête pour filtrer la réponse de l'API
 
 #### Path Parameters
 
@@ -513,7 +513,7 @@ Vous pouvez passer des paramètres de recherche optionnels à votre requête pou
 | asc        | Boolean         | true pour ordonner de manière ascendante                                                                                                                         |
 
 {% tabs %}
-{% tab title="200: OK Un objet contenant les demandes d'exercices de droits retournées (propriété items), la page, la taille de la requête et le nombre total d'éléments" %}
+{% tab title="200: OK Un objet contenant les demandes d" %}
 ```json
 {
   "items": [

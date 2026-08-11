@@ -17,7 +17,7 @@ La fonctionnalité de SCIM est réservée aux clients avec un **plan Entreprise.
 {% endhint %}
 
 {% hint style="info" %}
-Nous vous recommandons fortement d'effectuer préalablement [la mise en place du SSO ](single-sign-on-sso/)**avec l'option "Forcer pour tous les utilisateurs" activée**.&#x20;
+Nous vous recommandons fortement d'effectuer préalablement [la mise en place du SSO ](single-sign-on-sso/)**avec l'option "Forcer pour tous les utilisateurs" activée**.
 {% endhint %}
 
 ### Comment configurer SCIM avec Microsoft Entra ID ?
@@ -40,8 +40,6 @@ En haut de la liste des applications, cliquez sur **New application**.
 
 Sur la page "Browse Microsoft Entra App Gallery", cliquez sur **+ Create your own application**.
 
-<figure><img src="../../.gitbook/assets/settings-scim-entra-app-gallery.png" alt="Page Browse Microsoft Entra App Gallery avec le bouton Create your own application"><figcaption><p>Cliquez sur « Create your own application » en haut de la galerie</p></figcaption></figure>
-
 #### 5. Nommez et configurez votre application
 
 Dans le panneau qui s'ouvre :
@@ -50,13 +48,9 @@ Dans le panneau qui s'ouvre :
 2. Sélectionnez l'option **"Integrate any other application you don't find in the gallery (Non-gallery)"**
 3. Cliquez sur **Create**
 
-<figure><img src="../../.gitbook/assets/settings-scim-entra-create-app-dialog.png" alt="Boîte de dialogue Create your own application avec le champ nom et l'option Non-gallery sélectionnée"><figcaption><p>Sélectionnez « Non-gallery » et donnez un nom à votre application</p></figcaption></figure>
-
 #### 6. Accédez à la configuration du provisioning
 
 Dans la page **Overview** de l'application nouvellement créée, cliquez sur **"3. Provision User Accounts"** ou sur **Provisioning** dans le menu de navigation gauche.
-
-<figure><img src="../../.gitbook/assets/settings-scim-entra-app-overview-provision.png" alt="Page Overview de l'application Entra avec la tuile Provision User Accounts et le menu Provisioning en surbrillance"><figcaption><p>Cliquez sur « Provision User Accounts » ou sur « Provisioning » dans le menu gauche</p></figcaption></figure>
 
 #### 7. Récupérez l'URL SCIM et le jeton depuis Dastra
 
@@ -64,11 +58,11 @@ Avant de configurer Entra, récupérez vos credentials SCIM dans Dastra.
 
 **Connectez-vous à Dastra** en tant qu'administrateur. Allez dans **Paramètres de l'organisation** > **Sécurité** > **SCIM**
 
-![](<../../.gitbook/assets/settings-scim-azure-app-menu-scim.png>)
+![](../../.gitbook/assets/settings-scim-azure-app-menu-scim.png)
 
 Cliquez sur le bouton **Configurer** pour créer une nouvelle configuration SCIM.
 
-<figure><img src="../../.gitbook/assets/settings-scim-dastra-new-config-modal.png" alt="Modale de création d'une configuration SCIM dans Dastra"><figcaption><p>Sélectionnez l'espace de travail cible et le rôle par défaut</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-dastra-new-config-modal.png" alt="Modale de création d&#x27;une configuration SCIM dans Dastra"><figcaption><p>Sélectionnez l'espace de travail cible et le rôle par défaut</p></figcaption></figure>
 
 Sélectionnez l'**espace de travail** à synchroniser (équipes et utilisateurs y seront automatiquement provisionnés) et le **rôle par défaut** attribué aux nouveaux utilisateurs. Les rôles restent modifiables localement par les administrateurs Dastra.
 
@@ -78,7 +72,7 @@ Cliquez sur **Enregistrer**, puis **copiez l'URL SCIM et le jeton d'authentifica
 Dastra permet de synchroniser **un seul espace de travail par organisation** via SCIM.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/settings-scim-azure-provisioning-credentials.png" alt="Page de credentials SCIM dans Dastra affichant l'URL et le jeton"><figcaption><p>Copiez l'URL SCIM et le jeton secret — vous en aurez besoin à l'étape suivante</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-provisioning-credentials.png" alt="Page de credentials SCIM dans Dastra affichant l&#x27;URL et le jeton"><figcaption><p>Copiez l'URL SCIM et le jeton secret — vous en aurez besoin à l'étape suivante</p></figcaption></figure>
 
 #### 8. Configurez le provisioning automatique dans Entra
 
@@ -97,19 +91,17 @@ Si vous rencontrez une erreur lors du test de connexion, vérifiez que la foncti
 
 Une fois la configuration sauvegardée, activez le provisioning en réglant le statut sur **On** et en cliquant sur **Save**.
 
-<figure><img src="../../.gitbook/assets/settings-scim-azure-provisioning-toolbar.png" alt="Barre d'état du provisioning Entra avec le bouton On/Off"><figcaption><p>Activez le provisioning en passant le statut sur « On »</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-provisioning-toolbar.png" alt="Barre d&#x27;état du provisioning Entra avec le bouton On/Off"><figcaption><p>Activez le provisioning en passant le statut sur « On »</p></figcaption></figure>
 
 #### 10. Ajoutez des utilisateurs et/ou des groupes
 
 Dans le menu de navigation de l'application, cliquez sur **Users and groups**, puis assignez les utilisateurs ou groupes Entra que vous souhaitez synchroniser avec Dastra.
 
-<figure><img src="../../.gitbook/assets/settings-scim-azure-users-groups.png" alt="Page Users and groups de l'application Entra"><figcaption><p>Assignez les utilisateurs et groupes à synchroniser avec Dastra</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-scim-azure-users-groups.png" alt="Page Users and groups de l&#x27;application Entra"><figcaption><p>Assignez les utilisateurs et groupes à synchroniser avec Dastra</p></figcaption></figure>
 
 ### Laissez vos utilisateurs se connecter
 
 Vous devriez voir les comptes utilisateurs de votre annuaire Entra se synchroniser automatiquement dans Dastra. Si le SSO n'est pas configuré et forcé, les utilisateurs devront effectuer une réinitialisation de mot de passe pour leur première connexion. Si le SSO est actif et forcé pour tous les utilisateurs, ils seront automatiquement redirigés vers le formulaire de connexion de votre fournisseur d'identité (Microsoft Entra ID, Google Workspace, Okta…)
-
-
 
 ### Comportements et limitations de la synchronisation SCIM
 
@@ -209,12 +201,12 @@ Après synchronisation SCIM :
 
 SCIM est le canal de **provisioning automatisé** entre votre annuaire d’entreprise (Entra ID, Okta, Google Workspace…) et Dastra. Son rôle est complémentaire — et distinct — de celui du SSO :
 
-| | SSO | SCIM |
-|---|---|---|
-| **Rôle** | Authentification (connexion) | Gestion du cycle de vie des comptes |
-| **Déclencheur** | Connexion de l’utilisateur | Action dans l’IdP (ajout, modification, suppression) |
-| **Ce qu’il fait** | Vérifie l’identité | Crée, met à jour, désactive les comptes |
-| **Protocole** | SAML 2 / OpenID Connect | SCIM 2.0 (HTTP REST + JSON) |
+|                   | SSO                          | SCIM                                                 |
+| ----------------- | ---------------------------- | ---------------------------------------------------- |
+| **Rôle**          | Authentification (connexion) | Gestion du cycle de vie des comptes                  |
+| **Déclencheur**   | Connexion de l’utilisateur   | Action dans l’IdP (ajout, modification, suppression) |
+| **Ce qu’il fait** | Vérifie l’identité           | Crée, met à jour, désactive les comptes              |
+| **Protocole**     | SAML 2 / OpenID Connect      | SCIM 2.0 (HTTP REST + JSON)                          |
 
 Grâce au SCIM, vous n’avez pas à créer manuellement les comptes dans Dastra ni à les révoquer en cas de départ : votre annuaire reste la **source de vérité** pour la gestion des identités.
 
@@ -241,11 +233,11 @@ Toute modification du profil dans l’IdP (nom, email, groupes) déclenche une r
 
 #### Déprovisioning (désactivation / suppression)
 
-| Action dans l’IdP | Requête SCIM | Effet dans Dastra |
-|---|---|---|
-| Désactivation de l’utilisateur | `PATCH` (`active: false`) | Profil **anonymisé** |
-| Suppression définitive | `DELETE /scim/v2/Users/{id}` | Profil **entièrement anonymisé**, données conservées |
-| Suppression d’un groupe | `DELETE /scim/v2/Groups/{id}` | Équipe supprimée, utilisateurs inchangés |
+| Action dans l’IdP              | Requête SCIM                  | Effet dans Dastra                                    |
+| ------------------------------ | ----------------------------- | ---------------------------------------------------- |
+| Désactivation de l’utilisateur | `PATCH` (`active: false`)     | Profil **anonymisé**                                 |
+| Suppression définitive         | `DELETE /scim/v2/Users/{id}`  | Profil **entièrement anonymisé**, données conservées |
+| Suppression d’un groupe        | `DELETE /scim/v2/Groups/{id}` | Équipe supprimée, utilisateurs inchangés             |
 
 {% hint style="warning" %}
 La réactivation d’un utilisateur précédemment anonymisé crée un **nouveau compte** — l’historique de l’ancien compte n’est pas restauré.
@@ -259,24 +251,24 @@ La réactivation d’un utilisateur précédemment anonymisé crée un **nouveau
 
 Lors de la synchronisation, Dastra lit les attributs SCIM 2.0 suivants :
 
-| Attribut SCIM | Champ dans Dastra | Obligatoire |
-|---|---|---|
-| `userName` | Email (identifiant unique) | ✅ Oui |
-| `name.givenName` | Prénom | Recommandé |
-| `name.familyName` | Nom | Recommandé |
-| `displayName` | Nom d’affichage | Recommandé |
-| `emails[0].value` | Adresse email | ✅ Oui |
-| `active` | Statut actif / inactif | ✅ Oui |
-| `externalId` | Identifiant IdP | Recommandé |
-| `groups[].display` | Nom de l’équipe (team) | Pour la synchro des groupes |
+| Attribut SCIM      | Champ dans Dastra          | Obligatoire                 |
+| ------------------ | -------------------------- | --------------------------- |
+| `userName`         | Email (identifiant unique) | ✅ Oui                       |
+| `name.givenName`   | Prénom                     | Recommandé                  |
+| `name.familyName`  | Nom                        | Recommandé                  |
+| `displayName`      | Nom d’affichage            | Recommandé                  |
+| `emails[0].value`  | Adresse email              | ✅ Oui                       |
+| `active`           | Statut actif / inactif     | ✅ Oui                       |
+| `externalId`       | Identifiant IdP            | Recommandé                  |
+| `groups[].display` | Nom de l’équipe (team)     | Pour la synchro des groupes |
 
 #### Claims SSO exploités lors de la connexion
 
 Lors de la connexion, Dastra identifie l’utilisateur via le claim email transmis par l’IdP. Les deux protocoles SSO supportés utilisent la même propriété :
 
-| Protocole | Claim email utilisé | Scope requis |
-|---|---|---|
-| SAML 2 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` | — |
+| Protocole      | Claim email utilisé                                                  | Scope requis           |
+| -------------- | -------------------------------------------------------------------- | ---------------------- |
+| SAML 2         | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` | —                      |
 | OpenID Connect | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` | `openid profile email` |
 
 {% hint style="warning" %}

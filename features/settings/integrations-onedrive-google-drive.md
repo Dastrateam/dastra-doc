@@ -4,7 +4,7 @@ description: >-
   utiliser votre stockage cloud comme GED principale de l'espace de travail.
 ---
 
-# Intégrations OneDrive / Google Drive
+# Intégrations OneDrive/Google Drive
 
 ## Pourquoi utiliser un stockage cloud personnalisé ?
 
@@ -31,20 +31,16 @@ Cela signifie concrètement :
 
 Rendez-vous dans **Paramètres de l'espace de travail > Intégrations**, puis cliquez sur **OneDrive** ou **Google Drive**.
 
-<figure><img src="../../.gitbook/assets/settings-integrations-onedrive-page.png" alt="Page d'intégration OneDrive dans les paramètres Dastra avec le bouton Ajouter une intégration"><figcaption><p>Cliquez sur « Ajouter une intégration » pour démarrer la connexion</p></figcaption></figure>
-
 Cliquez sur **Ajouter une intégration**. Vous êtes redirigé vers la page de connexion du fournisseur, qui vous demandera d'autoriser l'accès à votre stockage.
 
 ### Choisir le drive racine (OneDrive uniquement)
 
 Après authentification, Dastra vous demande de choisir le disque à utiliser comme racine :
 
-<figure><img src="../../.gitbook/assets/settings-integrations-onedrive-drive-selector.png" alt="Sélecteur de drive racine OneDrive avec les options Root site et drive personnel"><figcaption><p>Choisissez entre le site SharePoint ou votre drive personnel</p></figcaption></figure>
-
-| Option | Description | Recommandation |
-|---|---|---|
-| **Root site / Dastra** | Site SharePoint de l'organisation | ✅ Recommandé en entreprise — espace partagé, non lié au compte personnel |
-| **Your personal drive** | OneDrive personnel du compte connecté | ⚠️ À éviter en production — donne accès à l'ensemble du drive personnel |
+| Option                  | Description                           | Recommandation                                                           |
+| ----------------------- | ------------------------------------- | ------------------------------------------------------------------------ |
+| **Root site / Dastra**  | Site SharePoint de l'organisation     | ✅ Recommandé en entreprise — espace partagé, non lié au compte personnel |
+| **Your personal drive** | OneDrive personnel du compte connecté | ⚠️ À éviter en production — donne accès à l'ensemble du drive personnel  |
 
 {% hint style="info" %}
 Si vous optez pour le drive personnel, il est fortement recommandé d'utiliser un compte de service dédié ne contenant pas de fichiers personnels. Vous pouvez aussi créer un [site SharePoint dédié](https://learn.microsoft.com/fr-fr/sharepoint/create-site-collection) pour isoler les fichiers Dastra.
@@ -59,12 +55,12 @@ Depuis n'importe quelle entité (traitement, tâche, acteur…), vous pouvez att
 1. Ouvrez le panneau de fichiers de l'entité
 2. Sélectionnez la **source de données** en haut à gauche du panneau
 
-![](<../../.gitbook/assets/settings-files-manager-header.png>)
+![](../../.gitbook/assets/settings-files-manager-header.png)
 
 3. Naviguez dans votre drive via le gestionnaire de fichiers
 4. Cliquez sur **Sélectionner dans le gestionnaire** pour attacher le fichier
 
-![](<../../.gitbook/assets/settings-files-select-from-manager.png>)
+![](../../.gitbook/assets/settings-files-select-from-manager.png)
 
 Vous pouvez également envoyer de nouveaux fichiers directement depuis Dastra vers votre Drive.
 

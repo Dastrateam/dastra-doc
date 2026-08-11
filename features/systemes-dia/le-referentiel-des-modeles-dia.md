@@ -29,7 +29,7 @@ N'hésitez pas à bien détailler la partie description en y ajoutant les foncti
 
 Depuis la liste des modèles d'IA, il est possible de **générer automatiquement une fiche de modèle d'IA** grâce à l'assistant IA. Cette fonctionnalité permet de créer en quelques secondes des fiches pour les modèles les plus courants, à partir d'un simple nom de modèle ou d'une description.
 
-Pour utiliser cette option  :
+Pour utiliser cette option :
 
 1. Cliquez sur le bouton **"Générer avec l'IA"** dans la liste des modèles d'IA.
 2. Saisissez le nom ou une description du modèle cible.
@@ -41,7 +41,7 @@ Le contenu généré est une proposition — vérifiez et complétez les informa
 
 <figure><img src="../../.gitbook/assets/ai-systems-create-generate-form.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/ai-systems-create-ai-generated-preview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-system-generate-result.png" alt=""><figcaption></figcaption></figure>
 
 ## Liaison entre système et modèle
 

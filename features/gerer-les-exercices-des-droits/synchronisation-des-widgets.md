@@ -12,8 +12,6 @@ Pour récupérer la configuration d'un widget existant vers le widget courant, u
 
 Une fenêtre s'ouvre pour choisir le widget source et sélectionner les éléments à synchroniser : textes et traductions, champs de formulaire, design et gabarit.
 
-<figure><img src="../../.gitbook/assets/image-115.png" alt="Dialogue Sync content from another form"><figcaption><p>Sélection du widget source et des éléments à importer</p></figcaption></figure>
-
 ## Propager les modifications vers les widgets enfants
 
 Une fois vos modifications effectuées sur le widget source, propagez-les en un clic à tous les widgets liés via **"Propager vers les widgets liés"**.
