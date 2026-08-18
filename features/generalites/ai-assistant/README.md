@@ -55,3 +55,17 @@ Lors de l'utilisation d'une fonctionnalité bêta :
     <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une décision de conformité. Elles sont conçues pour accompagner une revue humaine approfondie, non pour la remplacer.</p></div>
 
 **Actuellement en bêta** : analyse de conformité des traitements de données et analyse de conformité des systèmes d'IA.
+
+***
+
+{% content-ref url="comment-ca-marche.md" %}
+[comment-ca-marche.md](comment-ca-marche.md)
+{% endcontent-ref %}
+
+{% content-ref url="cas-dusage.md" %}
+[cas-dusage.md](cas-dusage.md)
+{% endcontent-ref %}
+
+{% content-ref url="foire-aux-questions.md" %}
+[foire-aux-questions.md](foire-aux-questions.md)
+{% endcontent-ref %}
