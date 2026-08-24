@@ -1,0 +1,15 @@
+﻿Label;Ref;ProcessingState;Description;DescriptionHtml;State;DateDeployment;DpiaExemption;DpiaExemptionJustification
+Gestion du recrutement;1;InProduction;Gestion du recrutement;Gestion du recrutement;Active;12/07/2022;False;
+Gestion de la paie;2;InProduction;Gestion de la paie;;Active;13/07/2022;False;
+Gestion du personnel;3;InProduction;Gestion du personnel;;Active;14/07/2022;False;
+Gestion des données du Syndicat;4;InProduction;Gestion des données du Syndicat;;Active;15/07/2022;False;
+Gestion de la qualité;5;InProduction;Gestion de la qualité;;Active;16/07/2022;False;
+Gestion des clients;6;InProduction;Gestion des clients;;Active;17/07/2022;False;
+Envoi d’emails promotionnels;7;InProduction;Envoi d’emails promotionnels;;Active;18/07/2022;True;
+Profilage de prospect;8;InProduction;Profilage de prospect;;Active;19/07/2022;False;
+Gestion des entrées / sorties;9;InProduction;Gestion des entrées / sorties;;Active;20/07/2022;False;
+Control d’antériorité;10;InProduction;Control d’antériorité;;Active;21/07/2022;False;
+Développement d’application;11;InProduction;Développement d’application;;Active;22/07/2022;False;
+Maintenance d’applications;12;InProduction;Maintenance d’applications;;Active;23/07/2022;False;
+Gestion des contrats;13;InProduction;Gestion des contrats;;Active;24/07/2022;False;
+Gestion des commandes;14;InProduction;Gestion des commandes;;Active;25/07/2022;False;

@@ -1,0 +1,154 @@
+---
+description: >-
+  Gérez le cycle complet d’une demande d’exercice de droits (DSAR) :
+  qualification, vérification d’identité, traitement des données associées et
+  réponse conforme au demandeur.
+---
+
+# Édition et traitement des demandes
+
+Dastra vous permet de gérer l’ensemble du cycle de vie d’une demande d’exercice de droits (DSAR).\
+Depuis l’interface, vous pouvez :
+
+* **Qualifier la demande** : type de droit concerné, unité organisationnelle, gestion des délais.
+* **Vérifier l’identité** du demandeur en complétant ou adaptant les informations collectées.
+* **Traiter les données associées** en consultant les jeux de données liés, en téléversant des preuves et en notifiant les responsables.
+* **Répondre directement** au demandeur grâce à l’assistant IA, avec traçabilité complète des échanges.
+
+Chaque étape est documentée et historisée, garantissant la conformité légale et une réponse claire aux personnes concernées.
+
+***
+
+### Qualification de la demande
+
+Lorsqu’une demande est enregistrée, elle apparaît dans le registre des demandes.\
+Depuis l’écran de **qualification**, vous pouvez :
+
+1. Définir le **type de droit** concerné (accès, rectification, suppression, opposition, etc.).
+2. Assigner la demande à une **unité organisationnelle**.
+3. Gérer les **délais de traitement** :
+   * Délai légal de 30 jours.
+   * Possibilité de marquer la demande comme complexe (90 jours).
+   * Suspendre temporairement le délai si nécessaire.
+
+<figure><img src="../../.gitbook/assets/dsr-edit-qualification.png" alt=""><figcaption><p>L'interface de gestion d'une demande</p></figcaption></figure>
+
+***
+
+### Vérification de l’identité
+
+Dastra permet de vérifier l’identité de la personne à l’origine de la demande.\
+Vous pouvez compléter ou modifier les informations collectées via le formulaire initial :
+
+* Adresse email, prénom, nom.
+* Données complémentaires : pays, adresse postale, téléphone, identifiant utilisateur, etc.
+* Catégorie de personne concernée (ex. abonnés newsletter, clients, salariés).
+
+<figure><img src="../../.gitbook/assets/dsr-edit-identity.png" alt=""><figcaption><p>Section sur l'identité du demandeur</p></figcaption></figure>
+
+***
+
+### Traitement de la demande
+
+L’onglet **Traitement de la demande** regroupe toutes les actions liées à l’exécution.
+
+#### Pièces jointes
+
+Vous pouvez téléverser des fichiers de preuve ou des exports contenant les données du demandeur.\
+Ces fichiers pourront ensuite être joints lors de la réponse.
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-liste-actions.png" alt=""><figcaption><p>Ajout de fichiers à la demande</p></figcaption></figure>
+
+***
+
+#### Traitements de données liés
+
+Dastra identifie automatiquement les jeux de données associés à la **catégorie de personnes concernées**.\
+Chaque jeu de données doit être traité individuellement.
+
+* Statuts disponibles : **En attente** / **Traité**.
+* Affichage de l’avancement global (progression en pourcentage).
+
+L'onglet **Jeux de données** affiche l'ensemble des jeux de données pertinents selon un **modèle cumulatif** : ceux rattachés à l'unité organisationnelle assignée à la demande, ceux de **toutes ses unités parentes** (jusqu'à la racine de la hiérarchie) et ceux de **toutes ses unités descendantes**. Cette vue garantit qu'aucun jeu de données hérité n'est oublié lors du traitement.
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-liste.png" alt=""><figcaption><p>Traitement avancé par jeu de données</p></figcaption></figure>
+
+{% hint style="info" %}
+Une demande ne peut pas être déclarée traitée à 100 % tant que des jeux de données hérités n'ont pas été traités ou explicitement marqués comme **Non applicable**.
+{% endhint %}
+
+Si l'opérateur en charge de la demande ne dispose pas des droits d'accès à certains jeux de données affichés, une **indication visuelle** l'invite à contacter les responsables concernés.
+
+<figure><img src="../../.gitbook/assets/exercice-droits-datasets-herites.png" alt="Onglet Jeux de données affichant les jeux hérités des unités parentes et descendantes"><figcaption><p>Les jeux de données hérités des unités parentes et descendantes sont affichés selon un modèle cumulatif</p></figcaption></figure>
+
+***
+
+**Détails d’un jeu de données**
+
+Vous pouvez visualisez directement les liens entre le jeu de données et les actifs en cliquant sur le bouton **Cartographie**
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-cartography.png" alt=""><figcaption><p>Visualisez le lien entre la catégorie de personne et le responsable à contacter</p></figcaption></figure>
+
+En cliquant sur **Traiter**, vous accédez aux informations détaillées :
+
+* Catégories de données concernées (vie professionnelle, vie personnelle, identité, etc.).
+* Base légale et durée de conservation.
+* Modalités de suppression après la période de conservation.
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-liste-details.png" alt=""><figcaption><p>Accès rapide au detail de l'actif</p></figcaption></figure>
+
+***
+
+**Marquer un traitement comme traité**
+
+Pour chaque jeu de données :
+
+1. Consultez les informations.
+2. Justifiez le traitement effectué (ex. suppression, rectification).
+3. Ajoutez, si nécessaire, des fichiers de preuve.
+4. Cliquez sur **Marquer comme traité**.
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-liste-traiter.png" alt=""><figcaption><p>Interface de traitement de la demande spécifique à l'actif</p></figcaption></figure>
+
+Une fois marqué comme traité, le statut est mis à jour et un commentaire peut être ajouté.
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-avancement.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### Collaboration et notifications
+
+Vous pouvez notifier automatiquement les responsables des actifs concernés.\
+Une fenêtre permet de sélectionner les personnes à avertir par email.
+
+<figure><img src="../../.gitbook/assets/dsr-traitement-notifier-responsable.png" alt=""><figcaption><p>Notifiez rapidement les propriétaires des actifs</p></figcaption></figure>
+
+***
+
+### Réponse à la demande
+
+Une fois le traitement terminé, il est possible de répondre directement au demandeur.
+
+* L’**Assistant IA** vous propose un message conforme et personnalisable.
+* Vous pouvez ajuster le ton : plus formel, plus court, plus long, avec emojis.
+* Le message final peut être envoyé directement depuis Dastra.
+
+<figure><img src="../../.gitbook/assets/dsr-edit-response-ai-generated.png" alt=""><figcaption><p>Echangez des messages avec le demandeur, en utilisant l'IA si vous le souhaitez</p></figcaption></figure>
+
+***
+
+### Actions supplémentaires sur une demande
+
+En plus des étapes principales (qualification, vérification, traitement et réponse), Dastra propose un menu **Actions** qui permet d’effectuer des opérations avancées sur une demande.
+
+<figure><img src="../../.gitbook/assets/dsr-demande-actions-possibles.png" alt=""><figcaption><p>Accèdez rapidement aux nombreuses actions supplémentaires disponibles</p></figcaption></figure>
+
+Les actions disponibles incluent notamment :
+
+* **Champs personnalisés** : ajouter ou modifier des champs spécifiques pour enrichir la demande.
+* **Copier le lien d’accès au portail demandeur** : partager un lien direct avec la personne concernée.
+* **Envoyer un mail** : envoyer un message lié à la demande directement depuis la plateforme.
+* **Exporter** : exporter les informations de la demande.
+* **Règles de workflow** : appliquer ou déclencher une règle d’automatisation.
+* **Suspendre la demande** : mettre en pause le délai légal de traitement (voir ci-dessous).
+* **Fermer la demande** : marquer manuelle

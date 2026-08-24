@@ -1,0 +1,7 @@
+# Rechten van betrokkenen
+
+Elke persoon op wie de gegevensverwerking betrekking heeft, heeft rechten met betrekking tot de gegevens die hem of haar betreffen. Deze rechten, die zijn gedefinieerd in [**artikel 15 e.v.**](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679) van de GDPR, zijn van toepassing op basis van de rechtsgrondslag die is gekozen om de Verwerking uit te voeren of op basis van het toepasselijke wettelijke regime. Het recht op gegevensoverdraagbaarheid is bijvoorbeeld alleen van toepassing op Verwerkingen die zijn gebaseerd op toestemming of die noodzakelijk zijn voor de uitvoering van een overeenkomst&#x20;
+
+Voor elk recht wordt u gevraagd aan te geven hoe het wordt uitgeoefend. Het kan geautomatiseerd zijn, bijvoorbeeld wanneer de persoon zijn recht rechtstreeks uitoefent in een verbonden omgeving. Anders is het handmatig of op verzoek &#x20;
+
+In dit gedeelte kunt u aangeven hoe de uitoefening van rechten van toepassing is op de Verwerking. In de context van verantwoordingsplicht is het noodzakelijk om het proces te definiëren dat ervoor zorgt dat de rechten van betrokkenen effectief worden uitgeoefend. Als een kwestie van best practice kan een specifieke procedure worden opgesteld. Als dat het geval is, aarzel dan niet om ernaar te verwijzen in deze sectie.
