@@ -1,0 +1,9 @@
+# Ontvangers
+
+{% embed url="https://www.youtube.com/watch?v=No_O-fasXGM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=9" %}
+
+[**Artikel 30 1. d) van de AVG**](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679) vereist dat het register informatie bevat over "_de categorieën ontvangers aan wie persoonsgegevens zijn of zullen worden verstrekt, Begrepen ontvangers in derde landen of internationale organisaties_".
+
+[**Artikel 4 van de AVG**](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679) definieert een ontvanger als "_de natuurlijke of rechtspersoon, de overheidsinstantie, de dienst of enig ander lichaam aan wie, respectievelijk waaraan persoonsgegevens worden verstrekt, ongeacht of het al dan niet een derde betreft. Overheidsinstanties die persoonsgegevens kunnen ontvangen in het kader van een specifieke onderzoekstaak overeenkomstig het recht van de Unie of het recht van een lidstaat, worden echter niet als ontvangers beschouwd; de Verwerking van dergelijke gegevens door de betrokken overheidsinstanties moet voldoen aan de toepasselijke gegevensbeschermingsregels, afhankelijk van de doeleinden van de verwerking". &#x20;
+
+Met andere woorden, de term "ontvangers" verwijst naar alle entiteiten die toegang zullen hebben tot de gegevens, behalve de overheidsinstanties (gemachtigde derden zoals de CNIL, de recherche of de belastingdienst, bijvoorbeeld). Hieronder vallen interne afdelingen van de Verwerkingsverantwoordelijke (bijv. de HR-afdeling), onderaannemers, gezamenlijke verwerkingsverantwoordelijken en andere Verwerkingsverantwoordelijken (bijv. commerciële partners).

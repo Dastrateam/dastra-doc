@@ -1,0 +1,7 @@
+# Empfänger
+
+[**Artikel 30 Abs. 1 Buchst. d) der DSGVO**](https://dsgvo-gesetz.de/art-30-dsgvo/) verlangt, dass das Verzeichnis die Information über "_die Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, einschließlich Empfänger in Drittländern oder internationalen Organisationen_" enthält.
+
+[**Artikel 4 der DSGVO**](https://dsgvo-gesetz.de/art-4-dsgvo/) definiert den Empfänger als "_eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, der personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen eines bestimmten Untersuchungsauftrags nach dem Unionsrecht oder dem Recht der Mitgliedstaaten möglicherweise personenbezogene Daten erhalten, gelten jedoch nicht als Empfänger; die Verarbeitung dieser Daten durch die genannten Behörden erfolgt im Einklang mit den geltenden Datenschutzvorschriften gemäß den Zwecken der Verarbeitung_".
+
+Mit anderen Worten sind unter dem Begriff Empfänger alle Stellen zu verstehen, die auf die Daten zugreifen, außer den Behörden (berechtigte Dritte wie die CNIL, die Kriminalpolizei im Rahmen einer strafrechtlichen Untersuchung oder die Finanzverwaltung). Dazu gehören die internen Abteilungen des Verantwortlichen (z. B. die Personalabteilung), die Auftragsverarbeiter, die gemeinsamen Verantwortlichen und andere Verantwortliche (z. B. Geschäftspartner).
