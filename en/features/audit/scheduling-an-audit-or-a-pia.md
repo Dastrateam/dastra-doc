@@ -30,8 +30,8 @@ It is possible to re-invite those who did not respond to the questionnaire.
 
 When scheduling a questionnaire, you choose between two response modes:
 
-- **Individual questionnaire**: if you add multiple respondents, Dastra generates a separate questionnaire for each of them. This mode is ideal for collecting comparable information from several people or entities (e.g. vendor assessments, department-by-department evaluations) and for generating consolidated reporting across responses.
-- **Collaborative questionnaire**: a single questionnaire is shared among all designated respondents, who answer the same questions together. This mode suits long or multi-domain questionnaires involving several teams (e.g. a DPIA requiring input from legal, IT and business teams).
+* **Individual questionnaire**: if you add multiple respondents, Dastra generates a separate questionnaire for each of them. This mode is ideal for collecting comparable information from several people or entities (e.g. vendor assessments, department-by-department evaluations) and for generating consolidated reporting across responses.
+* **Collaborative questionnaire**: a single questionnaire is shared among all designated respondents, who answer the same questions together. This mode suits long or multi-domain questionnaires involving several teams (e.g. a DPIA requiring input from legal, IT and business teams).
 
 ### AI-assisted response
 
@@ -40,7 +40,7 @@ Within an active questionnaire, the **AI assistant** can help you fill in answer
 This feature is particularly useful for long or complex questionnaires such as DPIAs, TIAs or LIAs, when you already have existing documentation available.
 
 {% hint style="info" %}
-Using the AI-assisted response feature consumes AI credits. See the [AI Assistant](../generalites/ai-assistant/) page for details on your quota and usage.
+Using the AI-assisted response feature consumes AI credits. See the [AI Assistant](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/generalites/ai-assistant/README.md) page for details on your quota and usage.
 {% endhint %}
 
 ## Linking the questionnaire to other objects in Dastra

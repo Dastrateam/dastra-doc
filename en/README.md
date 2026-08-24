@@ -2,102 +2,102 @@
 description: Welcome to the Dastra documentation.
 ---
 
-# Introduction to Dastra
+# What is Dastra
 
 **Dastra** is a compliance management and data & AI governance platform. It enables DPO, legal, technical and business teams to manage all their GDPR and AI Act obligations in a collaborative, guided environment.
 
 > For more information about our approach, see our [manifesto](https://www.dastra.eu/en/mission).
 
 {% content-ref url="commencer/get-started-in-5-minutes.md" %}
-[🚀 Get started in 5 minutes — create your first processing activity now](commencer/get-started-in-5-minutes.md)
+[get-started-in-5-minutes.md](commencer/get-started-in-5-minutes.md)
 {% endcontent-ref %}
 
 ***
 
 ### 🚀 Getting started
 
-{% content-ref url="commencer/commencer/README.md" %}
-[Setting up](commencer/commencer/README.md)
+{% content-ref url="commencer/commencer/" %}
+[commencer](commencer/commencer/)
 {% endcontent-ref %}
 
-{% content-ref url="commencer/tutorial/README.md" %}
-[Step-by-step tutorial](commencer/tutorial/README.md)
+{% content-ref url="commencer/tutorial/" %}
+[tutorial](commencer/tutorial/)
 {% endcontent-ref %}
 
-{% content-ref url="commencer/support/README.md" %}
-[Support](commencer/support/README.md)
+{% content-ref url="commencer/support/" %}
+[support](commencer/support/)
 {% endcontent-ref %}
 
 ***
 
 ### ⚙️ Features
 
-{% content-ref url="features/editer-le-registre/README.md" %}
-[Record of processing activities (GDPR)](features/editer-le-registre/README.md)
+{% content-ref url="features/editer-le-registre/" %}
+[editer-le-registre](features/editer-le-registre/)
 {% endcontent-ref %}
 
-{% content-ref url="features/systemes-dia/README.md" %}
-[AI systems (AI Act)](features/systemes-dia/README.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md" %}
+[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/la-gestion-des-risques/README.md" %}
-[Risk management and audits](features/la-gestion-des-risques/README.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/la-gestion-des-risques/README.md" %}
+[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/la-gestion-des-risques/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/la-gestion-des-risques/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/gerer-les-exercices-des-droits/README.md" %}
-[Data Subject Rights (DSR)](features/gerer-les-exercices-des-droits/README.md)
+{% content-ref url="features/gerer-les-exercices-des-droits/" %}
+[gerer-les-exercices-des-droits](features/gerer-les-exercices-des-droits/)
 {% endcontent-ref %}
 
-{% content-ref url="features/documenter-les-violations-de-donnees/README.md" %}
-[Data breaches](features/documenter-les-violations-de-donnees/README.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/documenter-les-violations-de-donnees/README.md" %}
+[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/documenter-les-violations-de-donnees/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/documenter-les-violations-de-donnees/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/gerer-le-consentement-aux-cookies/README.md" %}
-[Cookie consent](features/gerer-le-consentement-aux-cookies/README.md)
+{% content-ref url="features/gerer-le-consentement-aux-cookies/" %}
+[gerer-le-consentement-aux-cookies](features/gerer-le-consentement-aux-cookies/)
 {% endcontent-ref %}
 
-{% content-ref url="features/planifier/README.md" %}
-[Planning and tasks](features/planifier/README.md)
+{% content-ref url="features/planifier/" %}
+[planifier](features/planifier/)
 {% endcontent-ref %}
 
-{% content-ref url="features/settings/README.md" %}
-[Advanced configuration (SSO, SCIM, API…)](features/settings/README.md)
+{% content-ref url="features/settings/" %}
+[settings](features/settings/)
 {% endcontent-ref %}
 
-{% content-ref url="features/cartography.md" %}
-[Data mapping](features/cartography.md)
+{% content-ref url="features/cartography/" %}
+[cartography](features/cartography/)
 {% endcontent-ref %}
 
-{% content-ref url="features/audit/README.md" %}
-[Questionnaires and audits](features/audit/README.md)
+{% content-ref url="features/audit/" %}
+[audit](features/audit/)
 {% endcontent-ref %}
 
-{% content-ref url="features/contrats/README.md" %}
-[Contracts](features/contrats/README.md)
+{% content-ref url="features/contrats/" %}
+[contrats](features/contrats/)
 {% endcontent-ref %}
 
-{% content-ref url="features/document-management/README.md" %}
-[Document management](features/document-management/README.md)
+{% content-ref url="features/document-management/" %}
+[document-management](features/document-management/)
 {% endcontent-ref %}
 
-{% content-ref url="features/privacy-hubs/README.md" %}
-[Privacy Hub](features/privacy-hubs/README.md)
+{% content-ref url="features/privacy-hubs/" %}
+[privacy-hubs](features/privacy-hubs/)
 {% endcontent-ref %}
 
-{% content-ref url="features/custom-reporting/README.md" %}
-[Custom reporting](features/custom-reporting/README.md)
+{% content-ref url="features/custom-reporting/" %}
+[custom-reporting](features/custom-reporting/)
 {% endcontent-ref %}
 
 ***
 
 ### 📄 API & Integrations
 
-{% content-ref url="api-references/liste-des-endpoints-dapi.md" %}
-[API endpoints](api-references/liste-des-endpoints-dapi.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md" %}
+[https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md)
 {% endcontent-ref %}
 
-{% content-ref url="api-references/integrations/README.md" %}
-[Third-party integrations](api-references/integrations/README.md)
+{% content-ref url="api-references/integrations/" %}
+[integrations](api-references/integrations/)
 {% endcontent-ref %}
 
 ***
@@ -105,7 +105,7 @@ description: Welcome to the Dastra documentation.
 ### 🛡️ Security
 
 {% content-ref url="security/general.md" %}
-[Security at Dastra](security/general.md)
+[general.md](security/general.md)
 {% endcontent-ref %}
 
 ***

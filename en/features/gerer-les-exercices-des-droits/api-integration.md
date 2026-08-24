@@ -10,7 +10,7 @@ As Dastra does not integrate natively with all development platforms, we provide
 
 ## The object of the data subject right request
 
-Below is the template for a data subject right request in Dastra&#x20;
+Below is the template for a data subject right request in Dastra
 
 <details>
 
@@ -656,7 +656,7 @@ You can pass optional search parameters to your query to filter the API response
 | asc        | Boolean         | true pour ordonner de manière ascendante                                                                                                                         |
 
 {% tabs %}
-{% tab title="200: OK Un objet contenant les demandes d'exercices de droits retournées (propriété items), la page, la taille de la requête et le nombre total d'éléments" %}
+{% tab title="200: OK Un objet contenant les demandes d" %}
 ```json
 {
   "items": [

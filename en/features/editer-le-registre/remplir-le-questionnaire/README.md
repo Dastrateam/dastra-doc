@@ -54,8 +54,8 @@ The 12 steps are:
 
 * **Data subjects rights (DSR)** - Detail the methods available to the data subjects to exercise each of their rights.
 
-{% content-ref url="data-subject-rights.md" %}
-[data-subject-rights.md](data-subject-rights.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/blob/main/features/editer-le-registre/remplir-le-questionnaire/data-subject-rights.md" %}
+[https://github.com/Dastrateam/dastra-doc-en/blob/main/features/editer-le-registre/remplir-le-questionnaire/data-subject-rights.md](https://github.com/Dastrateam/dastra-doc-en/blob/main/features/editer-le-registre/remplir-le-questionnaire/data-subject-rights.md)
 {% endcontent-ref %}
 
 * **Recipients** - This section lists the recipients of the processing data. This is where you can declare a data transfer outside the EU.
@@ -74,7 +74,7 @@ The 12 steps are:
 [security-measures.md](security-measures.md)
 {% endcontent-ref %}
 
-* **High risk processing assessment**  - Assess the risk of the processing. If it's a high risk, you need a Privacy Impact Assessment (PIA).
+* **High risk processing assessment** - Assess the risk of the processing. If it's a high risk, you need a Privacy Impact Assessment (PIA).
 
 {% content-ref url="analyse-dimpact.md" %}
 [analyse-dimpact.md](analyse-dimpact.md)
@@ -93,4 +93,3 @@ Once you have entered the information you have, you can start identifying what r
 {% content-ref url="../../planifier/" %}
 [planifier](../../planifier/)
 {% endcontent-ref %}
-

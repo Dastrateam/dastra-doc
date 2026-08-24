@@ -92,7 +92,7 @@ Back in Entra, on your application's provisioning page:
 3. Click **Test Connection** to verify the connection
 4. Click **Save**
 
-If you encounter an error during the connection test, check that the SCIM feature is enabled on your subscription. [Contact support if needed](../../getting-started/support/make-a-support-request.md)
+If you encounter an error during the connection test, check that the SCIM feature is enabled on your subscription. [Contact support if needed](https://github.com/Dastrateam/dastra-doc-en/blob/main/getting-started/support/make-a-support-request.md)
 
 #### 9. Activate provisioning
 

@@ -153,8 +153,4 @@ A single control (e.g. access review) can thus:
 * satisfy an ISO 27001 requirement,
 * reduce several risk scenarios.
 
-
-
 **Explanatory diagram**
-
-<figure><img src="../../.gitbook/assets/image-1-1-1-1.png" alt=""><figcaption></figcaption></figure>

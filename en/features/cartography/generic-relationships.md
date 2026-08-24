@@ -53,6 +53,6 @@ Once relationships are created, they appear in:
 
 ## Go further
 
-{% content-ref url="../cartography.md" %}
-[cartography.md](../cartography.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}

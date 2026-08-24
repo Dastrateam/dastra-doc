@@ -4,11 +4,11 @@ description: >-
   your cloud storage as the main document management system for the workspace.
 ---
 
-# OneDrive / Google Drive integrations
+# OneDrive/Google Drive integrations
 
 ## Why use custom cloud storage?
 
-By default, Dastra's [document management system](../gestion-de-documents-ged/) relies on Azure Blob Storage: files are encrypted, scanned for viruses, and redundantly stored on a secondary server. For more details, see the [security documentation](../../security/general.md).
+By default, Dastra's [document management system](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/gestion-de-documents-ged/README.md) relies on Azure Blob Storage: files are encrypted, scanned for viruses, and redundantly stored on a secondary server. For more details, see the [security documentation](../../security/general.md).
 
 In some organizations, this storage duplicates an existing cloud file system (SharePoint/OneDrive, Google Drive). Dastra integrates natively with both providers to avoid this duplication.
 
@@ -31,20 +31,16 @@ In practice, this means:
 
 Go to **Workspace Settings > Integrations**, then click on **OneDrive** or **Google Drive**.
 
-<figure><img src="../../.gitbook/assets/settings-integrations-onedrive-page.png" alt="OneDrive integration page in Dastra settings with the Add integration button"><figcaption><p>Click "Add integration" to start the connection</p></figcaption></figure>
-
 Click **Add integration**. You will be redirected to the provider's login page, where you will be asked to authorize access to your storage.
 
 ### Choosing the root drive (OneDrive only)
 
 After authentication, Dastra asks you to choose which drive to use as the root:
 
-<figure><img src="../../.gitbook/assets/settings-integrations-onedrive-drive-selector.png" alt="OneDrive root drive selector with Root site and personal drive options"><figcaption><p>Choose between the SharePoint site or your personal drive</p></figcaption></figure>
-
-| Option | Description | Recommendation |
-|---|---|---|
-| **Root site / Dastra** | Organization's SharePoint site | ✅ Recommended for enterprise use — shared space, not tied to a personal account |
-| **Your personal drive** | Personal OneDrive of the connected account | ⚠️ Avoid in production — grants access to all personal drive files |
+| Option                  | Description                                | Recommendation                                                                  |
+| ----------------------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
+| **Root site / Dastra**  | Organization's SharePoint site             | ✅ Recommended for enterprise use — shared space, not tied to a personal account |
+| **Your personal drive** | Personal OneDrive of the connected account | ⚠️ Avoid in production — grants access to all personal drive files              |
 
 {% hint style="info" %}
 If you use a personal drive, it is strongly recommended to use a dedicated service account that does not contain personal files. You can also create a [dedicated SharePoint site](https://learn.microsoft.com/en-us/sharepoint/create-site-collection) to isolate Dastra files.
@@ -59,12 +55,12 @@ From any entity (processing activity, task, actor…), you can attach files stor
 1. Open the file panel of the entity
 2. Select the **data source** at the top left of the panel
 
-![](<../../.gitbook/assets/settings-files-manager-header.png>)
+![](../../.gitbook/assets/settings-files-manager-header.png)
 
 3. Browse your drive via the file manager
 4. Click **Select from manager** to attach the file
 
-![](<../../.gitbook/assets/settings-files-select-from-manager.png>)
+![](../../.gitbook/assets/settings-files-select-from-manager.png)
 
 You can also upload new files directly from Dastra to your Drive.
 
