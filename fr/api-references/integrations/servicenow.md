@@ -33,9 +33,7 @@ Le processus de mise en place suit le parcours commun des intégrations (voir [C
 3. Ajoutez une connexion et choisissez la **Méthode d'authentification** (voir ci-dessous).
 4. Complétez l’étape de **Configuration**. Elle est **obligatoire** pour finaliser l’installation.
 
-<!-- 📸 Capture à refaire : la modale de connexion ServiceNow avec le sélecteur Méthode d'authentification (Basic / OAuth) -->
-
-<figure><img src="../../.gitbook/assets/setupservicenowaccount.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Création de la connexion ServiceNow</p></figcaption></figure>
 
 ### Méthodes d'authentification
 
@@ -63,7 +61,7 @@ Les instances ServiceNow récentes restreignent l’authentification Basic sur l
 Attention : si vous activez l’option de création, un grand nombre d’actifs seront automatiquement créés dans votre espace de travail. Veillez à bien renseigner les références externes.
 {% endhint %}
 
-<!-- 📸 Capture à refaire : le panneau de configuration ServiceNow avec les options et l'éditeur de mapping des champs -->
+<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt=""><figcaption><p>La configuration ServiceNow : options et mapping des champs</p></figcaption></figure>
 
 ### Comment sont synchronisées les données entre Dastra et ServiceNow ?
 

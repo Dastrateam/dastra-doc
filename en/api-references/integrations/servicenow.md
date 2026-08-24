@@ -33,9 +33,7 @@ The setup process follows the common integration flow (see [Connections, use cas
 3. Add a connection and pick the **Authentication method** (see below).
 4. Complete the **Configuration** step. It is mandatory to finalize the installation.
 
-<!-- 📸 Screenshot to retake: the ServiceNow connection modal with the Authentication method select (Basic / OAuth) -->
-
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Creating the ServiceNow connection</p></figcaption></figure>
 
 **Authentication methods**
 
@@ -63,9 +61,7 @@ Recent ServiceNow instances restrict Basic authentication on the REST API at the
 Warning: if you enable the creation option, a large number of assets may be automatically created in your workspace. Make sure to properly configure external references.
 {% endhint %}
 
-<!-- 📸 Screenshot to retake: the ServiceNow configuration panel with the options and the field mapping editor -->
-
-<figure><img src="../../.gitbook/assets/settings-workflow-rule-create-type-picker.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt=""><figcaption><p>The ServiceNow configuration: options and field mapping</p></figcaption></figure>
 
 **How is data synchronized between Dastra and ServiceNow?**\
 \
