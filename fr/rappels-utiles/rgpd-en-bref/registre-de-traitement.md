@@ -147,8 +147,6 @@ Dastra intègre dès à présent un **registre des systèmes d’IA** pour :
 * Évaluer les risques et mesures de maîtrise,
 * Suivre la conformité AI Act et RGPD dans un même espace.
 
-
-
 ***
 
 ### 📘 Pour aller plus loin

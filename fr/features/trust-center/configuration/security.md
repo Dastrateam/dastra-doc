@@ -12,7 +12,7 @@ L'onglet Sécurité regroupe trois types de configuration : la gestion des propr
 
 Il est possible de désigner **un ou plusieurs propriétaires** du Trust center. Les propriétaires reçoivent les demandes d'accès aux documents et peuvent les valider ou les refuser depuis un écran dédié dans le module Trust center.
 
-<figure><img src="../../../.gitbook/assets/trust-center-security-ip-filter.png" alt="Section Sécurité du Trust center — propriétaires et contrôle d'accès"><figcaption><p>Paramétrage des propriétaires et du contrôle d'accès dans l'onglet Sécurité</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/trust-center-security-ip-filter.png" alt="Section Sécurité du Trust center — propriétaires et contrôle d&#x27;accès"><figcaption><p>Paramétrage des propriétaires et du contrôle d'accès dans l'onglet Sécurité</p></figcaption></figure>
 
 ## Contrôle d'accès aux documents
 

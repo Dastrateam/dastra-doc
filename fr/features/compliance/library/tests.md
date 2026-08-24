@@ -278,4 +278,4 @@ Lorsqu'un test est lié à un document, un panneau **Tests** apparaît dans la v
 
 Dans le gestionnaire de fichiers, la fiche détail d'un document affiche dans la colonne latérale toutes les entités Dastra auxquelles il est rattaché : traitements, contrats, et tests de conformité.
 
-<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnair
+<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnair</p></figcaption></figure>

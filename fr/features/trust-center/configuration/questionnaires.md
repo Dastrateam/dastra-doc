@@ -10,8 +10,6 @@ Pour activer la fonctionnalité 'Questionnaires' dans votre Trust center, consul
 
 <figure><img src="../../../.gitbook/assets/trust-center-questionnaires-config-empty.png" alt=""><figcaption><p>L'onglet de configuration des questionnaires de votre Trust center</p></figcaption></figure>
 
-
-
 #### Ajout d'un questionnaire à votre Trust center
 
 Pour ajouter un questionnaire, sélectionnez les questionnaires à partager dans votre Trust center en cliquant sur **Ajouter des questionnaires**. Une fenêtre de sélection s'ouvrira, vous permettant de choisir un ou plusieurs questionnaires à ajouter. Une fois votre sélection effectuée, cliquez sur **Ajouter** pour valider. Les questionnaires disponibles correspondent à ceux que vous avez installés dans le module Questionnaires de cet espace de travail.

@@ -2,7 +2,7 @@
 
 Vous pouvez créer un Trust center depuis la page d'accueil de la fonctionnalité Trust center en cliquant sur "Créer un Trust center". Cette option peut potentiellement être verrouillée si vous avez déjà atteint le quota de Trust center de votre plan.
 
-<figure><img src="../../.gitbook/assets/trust-center-create-hub.png" alt=""><figcaption><p>Créer un privacy hub en cliquant sur 'créer un privacy-hub' </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/trust-center-create-hub.png" alt=""><figcaption><p>Créer un privacy hub en cliquant sur 'créer un privacy-hub'</p></figcaption></figure>
 
 Vous devez renseigner un nom et une unité organisationnelle afin de finaliser la création de votre Trust center
 

@@ -153,9 +153,6 @@ Un même contrôle (ex. revue des accès) peut ainsi :
 * satisfaire une exigence ISO 27001,
 * réduire plusieurs scénarios de risque.
 
-
-
 **Schéma explicatif**
 
 <figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt=""><figcaption></figcaption></figure>
-

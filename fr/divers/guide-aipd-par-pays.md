@@ -212,6 +212,6 @@ Cette page de documentation fournit des ressources officielles et des référenc
 Bien que la Suisse ne fasse pas partie de l’UE, elle impose des exigences similaires à l’AIPD dans sa **loi fédérale révisée sur la protection des données (nLPD, 2023)** :
 
 * [Aide-mémoire concernant l’analyse d’impact relative à la protection des données personnelles (AIPD) au sens des art. 22 et 23 LPD](https://backend.edoeb.admin.ch/fileservice/sdweb-docs-prod-edoebch-files/files/2024/11/05/eb84f377-103e-4e7f-9896-62ec970f2290.pdf)
-* [Guide de mise en œuvre de l’AIPD ](https://www.bj.admin.ch/bj/fr/home/staat/datenschutz/info-bundesbehoerden.html)
+* [Guide de mise en œuvre de l’AIPD](https://www.bj.admin.ch/bj/fr/home/staat/datenschutz/info-bundesbehoerden.html)
 
 ✅ Requise lorsqu’un traitement de données est susceptible d’entraîner un **risque élevé pour la personnalité ou les droits fondamentaux**. La structure est similaire à celle de l’article 35 du RGPD.

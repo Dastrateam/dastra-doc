@@ -21,6 +21,3 @@ Notre objectif est d'assurer un taux de disponibilité de 99.5% et un temps de r
 ## Support
 
 Notre équipe support s'engage à répondre à tous les tickets en moins de 48h.
-
-
-

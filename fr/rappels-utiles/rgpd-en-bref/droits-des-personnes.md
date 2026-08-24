@@ -155,8 +155,6 @@ Exemples : données sensibles, prospection électronique, cookies (selon finalit
 * **Automatisation** : modèles de réponses, tâches récurrentes, rappels, notifications, intégrations (helpdesk/CRM).
 * **Reporting** : temps de réponse, volumétrie, motifs de refus, tendances par droit.
 
-
-
 <figure><img src="../../.gitbook/assets/dsr-workflow-steps-diagram.png" alt=""><figcaption></figcaption></figure>
 
 ***

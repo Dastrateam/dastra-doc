@@ -32,8 +32,6 @@ Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastr
 
 <figure><img src="../../../.gitbook/assets/settings-sso-openid-redirect-uri.png" alt=""><figcaption></figcaption></figure>
 
-
-
 **Etape 6** : Retournez dans Okta, et collez l'url de redirection dans le champ approprié, sélectionnez les utilisateurs Okta à qui vous souhaitez octroyer l'accès à Dastra (par défaut, vous pouvez cocher "Allow everyone") puis cliquez sur "**Save**"
 
 ![](../../../.gitbook/assets/settings-sso-okta-redirecturi-config.png)
@@ -44,18 +42,15 @@ Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastr
 
 ![Attention de prendre le domaine avec le protocole https://](../../../.gitbook/assets/settings-sso-okta-domain.png)
 
-**Etape 8** : Retournez dans **Dastra**, vous pouvez ainsi renseigner les champs de formulaire de la façon suivante :&#x20;
+**Etape 8** : Retournez dans **Dastra**, vous pouvez ainsi renseigner les champs de formulaire de la façon suivante :
 
-* **Id du client** : copier l'id du client de Okta&#x20;
+* **Id du client** : copier l'id du client de Okta
 * **Authority/Domain** : **Attention !** mettre le domaine avec le protocole (https://\*\*\*.okta.com).
-* **Issuer** : laisser vide !&#x20;
+* **Issuer** : laisser vide !
 * **Clé secrète** : Copier la clé secrète de Okta
-* **Scope** : openid profile email &#x20;
+* **Scope** : openid profile email
 * **Type de réponse** : id\_token
-
-
 
 ![](../../../.gitbook/assets/settings-sso-okta-dastra-settings.png)
 
 **Etape 8** : Cliquez sur "**Enregistrer**" => Puis lancez un test en cliquant sur le bouton "Tester" ! Si vous êtes bien redirigé vers Dastra ! Vous avez réussi ! :tada:
-

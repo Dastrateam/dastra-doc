@@ -12,13 +12,13 @@ L'application Dastra vous accompagne à chaque étape du processus de création 
 
 {% embed url="https://www.youtube.com/embed/videoseries?list=PL-EvtNdEiDxEzGBBTfGHy25vS6COmcgeQ&si=q8iJKz0VjemfjzbO" %}
 
-## Qu'est-ce que le questionnaire Dastra ?&#x20;
+## Qu'est-ce que le questionnaire Dastra ?
 
 Le questionnaire Dastra est là pour vous aider à fournir toutes les informations nécessaires à une activité de traitement de données donnée de la manière la plus fluide et la plus rapide possible. Il consiste en 12 étapes à suivre pour remplir l'intégralité des informations relatives à un traitement de données.
 
-Les 12 étapes sont:&#x20;
+Les 12 étapes sont:
 
-* **Général** - Cette section vous permet de saisir des informations générales sur le traitement de données à caractère personnel, telles que son nom et sa description.&#x20;
+* **Général** - Cette section vous permet de saisir des informations générales sur le traitement de données à caractère personnel, telles que son nom et sa description.
 
 {% content-ref url="generalites.md" %}
 [generalites.md](generalites.md)
@@ -36,31 +36,31 @@ Les 12 étapes sont:&#x20;
 [categorie-de-donnees.md](categorie-de-donnees.md)
 {% endcontent-ref %}
 
-* **Finalité** - description des finalités du traitement de données à caractère personnel&#x20;
+* **Finalité** - description des finalités du traitement de données à caractère personnel
 
 {% content-ref url="finalites.md" %}
 [finalites.md](finalites.md)
 {% endcontent-ref %}
 
-* **Actifs** - Cette section vous permet de répertorier tout ce qui peut être lié avec votre traitements : des applications, des personnes, des objets etc.&#x20;
+* **Actifs** - Cette section vous permet de répertorier tout ce qui peut être lié avec votre traitements : des applications, des personnes, des objets etc.
 
 {% content-ref url="applications.md" %}
 [applications.md](applications.md)
 {% endcontent-ref %}
 
-* **Personnes concernées** - contient la liste des personnes concernées par le traitement des données à caractère personnel.&#x20;
+* **Personnes concernées** - contient la liste des personnes concernées par le traitement des données à caractère personnel.
 
 {% content-ref url="personnes-concernees.md" %}
 [personnes-concernees.md](personnes-concernees.md)
 {% endcontent-ref %}
 
-* **Droits des personnes -** Détaillez les modalités à la disposition des personnes concernées pour exercer chacun de leurs droits.&#x20;
+* **Droits des personnes -** Détaillez les modalités à la disposition des personnes concernées pour exercer chacun de leurs droits.
 
 {% content-ref url="droits-des-personnes.md" %}
 [droits-des-personnes.md](droits-des-personnes.md)
 {% endcontent-ref %}
 
-* **Destinataires** - Cette section répertorie les destinataires des données de traitement. C'est à cette étape que vous pouvez déclarer un transfert de données hors UE.&#x20;
+* **Destinataires** - Cette section répertorie les destinataires des données de traitement. C'est à cette étape que vous pouvez déclarer un transfert de données hors UE.
 
 {% content-ref url="destinataires/" %}
 [destinataires](destinataires/)
@@ -70,13 +70,13 @@ Les 12 étapes sont:&#x20;
 [transferts-de-donnees-hors-ue.md](destinataires/transferts-de-donnees-hors-ue.md)
 {% endcontent-ref %}
 
-* **Mesures de sécurité** - décrit les mesures de sécurité organisationnelles et techniques prévues pour préserver la confidentialité des données.&#x20;
+* **Mesures de sécurité** - décrit les mesures de sécurité organisationnelles et techniques prévues pour préserver la confidentialité des données.
 
 {% content-ref url="mesures-de-securite.md" %}
 [mesures-de-securite.md](mesures-de-securite.md)
 {% endcontent-ref %}
 
-* **Analyse d'impact** - décrit l'impact de ce traitement&#x20;
+* **Analyse d'impact** - décrit l'impact de ce traitement
 
 {% content-ref url="analyse-dimpact.md" %}
 [analyse-dimpact.md](analyse-dimpact.md)
@@ -88,7 +88,7 @@ Les 12 étapes sont:&#x20;
 [documents.md](documents.md)
 {% endcontent-ref %}
 
-* **Récapitulatif -** synthèse de ce qui précède.&#x20;
+* **Récapitulatif -** synthèse de ce qui précède.
 
 {% content-ref url="recapitulatif.md" %}
 [recapitulatif.md](recapitulatif.md)
@@ -100,26 +100,18 @@ Une fois que vous avez saisi les informations dont vous disposez, vous pouvez co
 [planifier](../../planifier/)
 {% endcontent-ref %}
 
-
-
 ## Collaborer efficacement sur les traitements
-
-
 
 {% embed url="https://youtu.be/pz61gKChilY" %}
 
 ## Les indices sur les fiches de traitement
 
-
-
 {% embed url="https://youtu.be/QAmXR4y2RYU" %}
 
-
-
 Le questionnaire n'est pas le seul élément de guide compris dans l'établissement des fiches de traitement.\
-Effectivement, vous retrouverez des indices vous permettant d'évaluer notamment l'avancée et la qualité de votre fiche.&#x20;
+Effectivement, vous retrouverez des indices vous permettant d'évaluer notamment l'avancée et la qualité de votre fiche.
 
-Ces indices sont au nombre de 3 :&#x20;
+Ces indices sont au nombre de 3 :
 
 * L'indice de progression
 * L'indice de qualité
@@ -135,13 +127,13 @@ Cet indice fait référence aux informations à nécessairement renseigner au se
 
 Ce pourcentage de qualité est calculé à partir d'une série de contrôles de vos traitements qui vérifient la qualité des éléments que vous avez saisis dans le formulaire.
 
-Il s'agit notamment de renseigner la présence d'actifs, de détailler la mise en oeuvre des droits des personnes concernées ou encore de remplir l'étape relative à la vérification des critères conditionnant la réalisation d'une analyse d'impact sur le traitement...&#x20;
+Il s'agit notamment de renseigner la présence d'actifs, de détailler la mise en oeuvre des droits des personnes concernées ou encore de remplir l'étape relative à la vérification des critères conditionnant la réalisation d'une analyse d'impact sur le traitement...
 
 Ce faisant, vous augmentez la qualité des éléments renseignés dans votre fiche de traitement.
 
-Ces critères non visés directement par l'article 30 du RGPD vont vous permettre d'anticiper d'autres éventualités comme par exemple :&#x20;
+Ces critères non visés directement par l'article 30 du RGPD vont vous permettre d'anticiper d'autres éventualités comme par exemple :
 
-* le respect de l'obligation de réalisation d'une AIPD sur un traitement qui en nécessite une&#x20;
+* le respect de l'obligation de réalisation d'une AIPD sur un traitement qui en nécessite une
 * ou encore le fait d'identifier l'utilisation d'un logiciel comme support de votre activité de traitement vous renseignera sur l'éditeur de celui-ci, ce faisant, vous identifiez le sous-traitant et les éventuels transferts...
 
 #### L'indice de sensibilité

@@ -97,8 +97,6 @@ Dastra permet de **lier les données personnelles à leurs usages dans les syst�
 [systemes-dia](../../features/systemes-dia/)
 {% endcontent-ref %}
 
-
-
 ***
 
 ### 🔍 Pour aller plus loin

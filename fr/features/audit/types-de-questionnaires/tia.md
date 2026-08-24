@@ -40,10 +40,10 @@ La réponse TIA est automatiquement liée au transfert et au destinataire concer
 
 ## Pour aller plus loin
 
-{% content-ref url="../types-de-questionnaires/pia-aipd.md" %}
-[pia-aipd.md](../types-de-questionnaires/pia-aipd.md)
+{% content-ref url="pia-aipd.md" %}
+[pia-aipd.md](pia-aipd.md)
 {% endcontent-ref %}
 
-{% content-ref url="../types-de-questionnaires/lia.md" %}
-[lia.md](../types-de-questionnaires/lia.md)
+{% content-ref url="lia.md" %}
+[lia.md](lia.md)
 {% endcontent-ref %}

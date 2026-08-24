@@ -100,10 +100,10 @@ Chaque contrôle doit être associé à un **type de remédiation**, qui précis
 
 * **Préventif**\
   Le contrôle vise à **éviter** la survenue d’un risque\
-  &#xNAN;_(ex. formation, règles d’accès, validation avant mise en production)_
+  \&#xNAN;_(ex. formation, règles d’accès, validation avant mise en production)_
 * **Atténuation**\
   Le contrôle vise à **réduire l’impact ou la probabilité** d’un risque déjà existant\
-  &#xNAN;_(ex. supervision, détection, plan de mitigation)_
+  \&#xNAN;_(ex. supervision, détection, plan de mitigation)_
 
 👉 Cette distinction est essentielle pour :
 
@@ -208,7 +208,7 @@ Depuis la bibliothèque de contrôles ou un projet, sélectionnez les contrôles
 Le rapprochement est **entièrement manuel** : Dastra ne détecte pas automatiquement les doublons. C'est à vous de sélectionner les contrôles similaires à consolider.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/fusion-controles-selection.png" alt="Sélection de plusieurs contrôles et menu d'actions groupées avec l'option Fusionner"><figcaption><p>Sélectionnez jusqu'à 30 contrôles puis déclenchez la fusion via les actions groupées</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fusion-controles-selection.png" alt="Sélection de plusieurs contrôles et menu d&#x27;actions groupées avec l&#x27;option Fusionner"><figcaption><p>Sélectionnez jusqu'à 30 contrôles puis déclenchez la fusion via les actions groupées</p></figcaption></figure>
 
 L'assistant de fusion présente les deux contrôles côte à côte : **Conservé** (contrôle cible) à gauche, **À supprimer** (contrôle source) à droite. Pour chaque champ multi-valué (scénarios de risque, exigences, tests), vous choisissez les valeurs à reporter sur le contrôle cible.
 

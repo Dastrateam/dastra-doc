@@ -81,7 +81,6 @@ Si l'opérateur en charge de la demande ne dispose pas des droits d'accès à ce
 
 <figure><img src="../../.gitbook/assets/exercice-droits-datasets-herites.png" alt="Onglet Jeux de données affichant les jeux hérités des unités parentes et descendantes"><figcaption><p>Les jeux de données hérités des unités parentes et descendantes sont affichés selon un modèle cumulatif</p></figcaption></figure>
 
-
 ***
 
 **Détails d’un jeu de données**

@@ -6,13 +6,13 @@ description: Apprenez à gérer les risques avec Dastra.
 
 Introduction
 
-Vie privée,  stratégiques, de non-conformité, opérationnels, financiers, sous-traitance... La gestion des risques est souvent complexe et peu efficiente. Supprimez la complexité et améliorez l’efficacité de vos plans de contrôle, d’audit et de conformité avec Dastra.
+Vie privée, stratégiques, de non-conformité, opérationnels, financiers, sous-traitance... La gestion des risques est souvent complexe et peu efficiente. Supprimez la complexité et améliorez l’efficacité de vos plans de contrôle, d’audit et de conformité avec Dastra.
 
 Obtenez une vision globale de vos risques pour alimenter vos plans de remédiation, étendre votre couverture et réduire votre exposition. Rationalisez vos opérations d’évaluation, de contrôle, de reporting et de suivi des tâches de remédiation. Assurez vous de la mise à jour, de la qualité et de la disponibilité des données risques.
 
 ## La gestion des risques dans Dastra en quelques mots
 
-La fonctionnalité de gestion des risques de la solution Dastra permet d'identifier, évaluer, atténuer et piloter tous vos risques de manière visuelle & intégrée, et d'obtenir une vision globale de vos risques pour alimenter vos plans de remédiation, étendre votre couverture et réduire votre exposition.&#x20;
+La fonctionnalité de gestion des risques de la solution Dastra permet d'identifier, évaluer, atténuer et piloter tous vos risques de manière visuelle & intégrée, et d'obtenir une vision globale de vos risques pour alimenter vos plans de remédiation, étendre votre couverture et réduire votre exposition.
 
 Avec Dastra, vous pourrez :
 
@@ -20,16 +20,16 @@ Avec Dastra, vous pourrez :
 * **Rationaliser vos opérations** d’évaluation, de contrôle, de reporting et de suivi des tâches de remédiation ;
 * Vous assurer de la **mise à jour,** de la **qualité** et de la **disponibilité** des données risques.<br>
 
-![Tuile de synthèse des risques](<../../.gitbook/assets/risques-dashboard-vue-ensemble.png>)
+![Tuile de synthèse des risques](../../.gitbook/assets/risques-dashboard-vue-ensemble.png)
 
-## Associer un risque&#x20;
+## Associer un risque
 
-Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi lesquels se trouve les éléments suivants : &#x20;
+Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi lesquels se trouve les éléments suivants :
 
 * Unité organisationnelle
 * Traitement de donnée à caractère personnel
 * Acteur ou sous-traitant
-* Actif&#x20;
+* Actif
 
 <figure><img src="../../.gitbook/assets/risks-list-table.png" alt=""><figcaption><p>Exemple de visualisation consolidée des risques</p></figcaption></figure>
 
@@ -46,6 +46,3 @@ Dans Dastra, un risque peut être associé à **un ou plusieurs objets**, parmi 
 {% content-ref url="risques.md" %}
 [risques.md](risques.md)
 {% endcontent-ref %}
-
-
-

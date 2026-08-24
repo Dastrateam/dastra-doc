@@ -71,7 +71,7 @@ Dans votre container GTM, créez un déclencheur sur évènement du dataLayer po
 
 La balise Google Optimize ne se déclenchera alors que sur cet évènement. Voici ce que ça donne dans l'interface de GTM :
 
-![](<../../../../.gitbook/assets/cookies-gtm-tag-google-optimize.png>)
+![](../../../../.gitbook/assets/cookies-gtm-tag-google-optimize.png)
 
 ## Cas spécifique des "blocking triggers"
 
@@ -92,7 +92,7 @@ Pensez à **sélectionner l'option "URI-decode cookie"**
 
 <figure><img src="../../../../.gitbook/assets/cookies-gtm-variable-consent-cookie.png" alt=""><figcaption></figcaption></figure>
 
-#### Configurez ensuite votre trigger de cette façon :&#x20;
+#### Configurez ensuite votre trigger de cette façon :
 
 Dans ce cas, notre balise se déclenche si la profondeur de scroll dans la page est > 20%. Nous voulons que cette balise ne se déclenche que si le service google analytics a été autorisé par l'utilisateur. Voici comment configurer le déclencheur de la balise.
 
@@ -107,7 +107,7 @@ Si vous souhaitez déclencher la balise dans le cas d'un refus, mettez la formul
 #### Cas de plusieurs déclencheurs du même type avec une exception
 
 Si vous avez de nombreux déclencheurs différents pour une même balise, il est également tout à fait possible de créer une exception de cette manière.\
-Exemple d'une balise avec plusieurs déclencheurs :&#x20;
+Exemple d'une balise avec plusieurs déclencheurs :
 
 <figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-google-ads-conversion.png" alt=""><figcaption></figcaption></figure>
 
@@ -119,10 +119,10 @@ Cliquez sur "**Ajouter une exception**" (Add Exception)
 Attention les exceptions ne fonctionnent bien que quand elles sont du même type. Si vos triggers sont du type "Page view", l'exception doit être également de type page view
 {% endhint %}
 
-Créez un déclencheur du même type avec pour nom par exemple "Pages vues avec le service Google Ads refusé explicitement".&#x20;
+Créez un déclencheur du même type avec pour nom par exemple "Pages vues avec le service Google Ads refusé explicitement".
 
 {% hint style="info" %}
-Si vous souhaitez également ne pas activer la balise par défaut y compris si l'utilisateur n'a pas cliqué sur la modal de consentement (et donc n'a pas de cookies stockant les préférences). Dans ce cas vous pouvez utiliser un trigger avec une négation du type :&#x20;
+Si vous souhaitez également ne pas activer la balise par défaut y compris si l'utilisateur n'a pas cliqué sur la modal de consentement (et donc n'a pas de cookies stockant les préférences). Dans ce cas vous pouvez utiliser un trigger avec une négation du type :
 
 **DastraConsents Does not contain "google-ads":true**
 {% endhint %}
@@ -139,7 +139,7 @@ Enregistrez vos changements et vous devriez constater que vos balises sont bien 
 
 #### Refus des cookies suite à acceptation :
 
-Dans certain cas, certaines balises ne sont pas correctement nettoyés suite au refus des cookies. Cela se produit notamment dans le cas où un utilisateur décide d'accepter les cookies puis clique de nouveau sur le widget et décide de revenir sur son consentement. Dans la plupart des cas cela ne pose aucun problème car les marqueurs ne sont de toute façon par exécutés plusieurs fois dans la page et donc il n'est plus nécessaire de supprimer les balises scripts insérées dans la page.&#x20;
+Dans certain cas, certaines balises ne sont pas correctement nettoyés suite au refus des cookies. Cela se produit notamment dans le cas où un utilisateur décide d'accepter les cookies puis clique de nouveau sur le widget et décide de revenir sur son consentement. Dans la plupart des cas cela ne pose aucun problème car les marqueurs ne sont de toute façon par exécutés plusieurs fois dans la page et donc il n'est plus nécessaire de supprimer les balises scripts insérées dans la page.
 
 Dans certaines situations, il est possible que les balises soient toujours actives.
 
@@ -159,7 +159,7 @@ window.addEventListener('dastra:consents:any_refused', function(){
 
 #### Mise à jour du consentement :
 
-Pour recharger la page quand n'importe quel consentement change d'une façon ou d'une autre, utilisez la fonction _updated_ avec le code suivant :&#x20;
+Pour recharger la page quand n'importe quel consentement change d'une façon ou d'une autre, utilisez la fonction _updated_ avec le code suivant :
 
 ```markup
 <script>
@@ -172,7 +172,7 @@ window.addEventListener('dastra:consents:updated', function(){
 
 #### Acceptation totale des traceurs :
 
-Pour recharger la page lors de l'acceptation totale des traceurs (bouton "tout accepter") :&#x20;
+Pour recharger la page lors de l'acceptation totale des traceurs (bouton "tout accepter") :
 
 ```markup
 <script>
@@ -183,9 +183,9 @@ window.addEventListener('dastra:consents:all_accepted', function(){
 </script>
 ```
 
-#### &#x20;Acceptation d'un service spécifique :
+#### Acceptation d'un service spécifique :
 
-Pour recharger la page lors de l'acceptation d'un service spécifique :&#x20;
+Pour recharger la page lors de l'acceptation d'un service spécifique :
 
 ```markup
 <script>
@@ -195,6 +195,3 @@ window.addEventListener('dastra:consent:<slug du service>', function(){
 })
 </script>
 ```
-
-
-

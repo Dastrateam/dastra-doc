@@ -37,19 +37,17 @@ Il vous suffit de sélectionner les éléments à fusionner :
 
 <div align="left"><figure><img src="../../.gitbook/assets/generalites-bulk-selection-action-menu.png" alt=""><figcaption><p><br></p></figcaption></figure></div>
 
-Puis de cliquer sur "Choisir une action groupée" et "fusionner les données" :&#x20;
+Puis de cliquer sur "Choisir une action groupée" et "fusionner les données" :
 
 \
-![](<../../.gitbook/assets/generalites-bulk-action-dropdown.png>)
-
-
+![](../../.gitbook/assets/generalites-bulk-action-dropdown.png)
 
 Vous accéderez alors à une page dédiée qui vous permettra de :
 
 Sélectionner l’élément principal à conserver après fusion.
 
 Choisir les champs des éléments à supprimer que vous souhaitez récupérer dans l’élément principal.\
-![](<../../.gitbook/assets/generalites-fusion-tool-panel.png>)
+![](../../.gitbook/assets/generalites-fusion-tool-panel.png)
 
 Si des champs n'apparaissent pas sur cette page, ce seront les valeurs des champs de l'élément conservé qui seront automatiquement conservées.\
 \

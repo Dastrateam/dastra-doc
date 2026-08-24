@@ -8,9 +8,9 @@ description: >-
 
 {% embed url="https://youtu.be/ZNY5oz9xJVo" %}
 
-## Création d'une demande de droit&#x20;
+## Création d'une demande de droit
 
-La création d'une demande de droit peut être effectuée de 3 manières différentes dans Dastra :&#x20;
+La création d'une demande de droit peut être effectuée de 3 manières différentes dans Dastra :
 
 1. Création d'une demande manuellement
 2. Automatiquement via une adresse email de collecte
@@ -18,13 +18,9 @@ La création d'une demande de droit peut être effectuée de 3 manières différ
 
 ### Création d'une demande manuellement
 
-
-
 {% embed url="https://youtu.be/UsTkoYcqYkI" %}
 
 Pour créer une nouvelle demande manuellement directement depuis le registre des demandes d'exercice des droits, cliquez sur le module 'Exercices des droits" puis le bouton "**Créer une demande**"
-
-
 
 <figure><img src="../../.gitbook/assets/dsr-requests-list-create-button.png" alt=""><figcaption><p>Le registre des demandes de droit</p></figcaption></figure>
 
@@ -32,11 +28,7 @@ Pour créer une nouvelle demande manuellement directement depuis le registre des
 Vous pouvez également créer des demandes de droit automatiquement (voir suivant).
 {% endhint %}
 
-
-
 ### Création d'une demande de doit via une adresse mail de collecte
-
-
 
 {% embed url="https://youtu.be/Lxhzm7wjFwk" %}
 
@@ -56,25 +48,15 @@ Ensuite, cliquez sur le cas d'usage pré-configuré "**Transforme un mail entran
 
 Ainsi, chaque email envoyée à cette adresse se transformera automatiquement en une demande d'exercice de droit dans Dastra !
 
-
-
 ### Création d'une demande de droit automatiquement via un formulaire de collecte des demandes de droits
 
 Pour créer une demande de droit automatiquement via un formulaire de collecte des demandes de droits, voir la page "Widget de collecte de demandes" ci-dessous :
-
-
 
 {% content-ref url="implementez-un-widget-dexercice-des-droits.md" %}
 [implementez-un-widget-dexercice-des-droits.md](implementez-un-widget-dexercice-des-droits.md)
 {% endcontent-ref %}
 
-
-
-
-
 ## Import / Export des demandes
-
-
 
 {% embed url="https://youtu.be/31AMZz-DMm8" %}
 

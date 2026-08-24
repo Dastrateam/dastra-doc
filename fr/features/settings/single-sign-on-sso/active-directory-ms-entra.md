@@ -23,9 +23,7 @@ Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Micr
 * Cliquez sur **Single-Sign-On** et sélectionnez **SAML**
 * **Vous arrivez sur cette page**
 
-![](<../../../.gitbook/assets/settings-sso-entra-saml-configuration.png>)
-
-
+![](../../../.gitbook/assets/settings-sso-entra-saml-configuration.png)
 
 ## **Configuration du client SSO dans Dastra**
 
@@ -42,13 +40,13 @@ Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Micr
 * **Cliquez sur le bouton "Edit"** de la première partie.
 * Saisissez les informations de connexion (**Entity ID et Url ACS**) de la manière suivante :
 
-![](<../../../.gitbook/assets/settings-sso-entra-saml-basic-config.png>)
+![](../../../.gitbook/assets/settings-sso-entra-saml-basic-config.png)
 
 * Cliquez sur **Enregistrer**
 * Allez directement dans la partie 3 afin de **télécharger le certificat au format base64**
-* ![](<../../../.gitbook/assets/settings-sso-entra-saml-certificate-download.png>)
+* ![](../../../.gitbook/assets/settings-sso-entra-saml-certificate-download.png)
 * **Ouvrez le fichier CER avec votre éditeur de texte préféré** (par exemple le bloc note) et copiez le contenu (CTRL + C)
-* ![](<../../../.gitbook/assets/settings-sso-entra-certificate-content.png>)
+* ![](../../../.gitbook/assets/settings-sso-entra-certificate-content.png)
 
 **Etape 3 : Ajouter le certificat au client Dastra**
 
@@ -58,16 +56,16 @@ Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Micr
 **Etape 4 : Configurez les url de l'IdP dans Dastra**
 
 * Copiez les 3 liens Entity Id, SSO Url et Logout Url depuis l'étape 4 de Active Directory
-* ![](<../../../.gitbook/assets/settings-sso-entra-app-urls.png>)
+* ![](../../../.gitbook/assets/settings-sso-entra-app-urls.png)
 * Copiez les urls en respectant le schéma suivant :\
-  **Login URL => Single sign on url** \
-  **Azure AD Identifier => Identity provider's Entity Id** \
+  **Login URL => Single sign on url**\
+  **Azure AD Identifier => Identity provider's Entity Id**\
   **Logout Url => Identity provider Signout url**
 * Votre formulaire de configuration du SSO dans Dastra devrait ressembler à ceci :
-* ![](<../../../.gitbook/assets/settings-sso-entra-dastra-idp-configuration.png>)
+* ![](../../../.gitbook/assets/settings-sso-entra-dastra-idp-configuration.png)
 * Vous pouvez cocher la case "Utilisateur créé si l'utilisateur n'a jamais été invité dans Dastra" . Si vous activez cette option, les comptes de votre organisation AD qui ne sont pas présents dans Dastra seront provisionnés à la volée au moment du login si ils n'existent pas localement dans Dastra.
 
-![](<../../../.gitbook/assets/settings-sso-entra-auto-create-user-option.png>)
+![](../../../.gitbook/assets/settings-sso-entra-auto-create-user-option.png)
 
 * **Enregistrez vos changements** dans Dastra
 
@@ -77,7 +75,7 @@ Avant de lancer le test de la connexion assurez vous qu'un utilisateur est bien 
 
 ### Testez votre connexion SSO
 
-Cliquez ensuite sur le bouton "Test" au pied du formulaire dans l'active directory. Si tout fonctionne correctement vous devriez être redirigé vers l'application Dastra.&#x20;
+Cliquez ensuite sur le bouton "Test" au pied du formulaire dans l'active directory. Si tout fonctionne correctement vous devriez être redirigé vers l'application Dastra.
 
 {% hint style="info" %}
 Si vous n'avez pas activé **le provisionnement automatique** des comptes, l'accès sera refusé du côté de Dastra si le compte local n'a pas été créé via une invitation

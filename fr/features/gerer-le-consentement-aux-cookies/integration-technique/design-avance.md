@@ -49,8 +49,5 @@ Exemple basique :
 ```
 
 {% hint style="info" %}
-&#x20;Attention, certaines modifications sur le container du widget peut engendrer des effets indésirables.
+Attention, certaines modifications sur le container du widget peut engendrer des effets indésirables.
 {% endhint %}
-
-
-

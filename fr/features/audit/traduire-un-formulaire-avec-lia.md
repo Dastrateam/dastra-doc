@@ -16,4 +16,3 @@ Pour lancer une traduction :
 La traduction couvre les questions, sections, réponses et textes d'accompagnement. La disponibilité des langues dépend du modèle de LLM configuré dans votre espace de travail.
 
 <figure><img src="../../.gitbook/assets/audit-translate-questionnaire-modal.png" alt=""><figcaption></figcaption></figure>
-

@@ -1,5 +1,7 @@
 ---
-description: Apprenez à réaliser un test d'équilibre des intérêts légitimes (LIA) avec Dastra.
+description: >-
+  Apprenez à réaliser un test d'équilibre des intérêts légitimes (LIA) avec
+  Dastra.
 ---
 
 # Test d'équilibre des intérêts légitimes (LIA)
@@ -38,10 +40,10 @@ La réponse LIA est automatiquement liée à la finalité concernée.
 
 ## Pour aller plus loin
 
-{% content-ref url="../types-de-questionnaires/pia-aipd.md" %}
-[pia-aipd.md](../types-de-questionnaires/pia-aipd.md)
+{% content-ref url="pia-aipd.md" %}
+[pia-aipd.md](pia-aipd.md)
 {% endcontent-ref %}
 
-{% content-ref url="../types-de-questionnaires/tia.md" %}
-[tia.md](../types-de-questionnaires/tia.md)
+{% content-ref url="tia.md" %}
+[tia.md](tia.md)
 {% endcontent-ref %}

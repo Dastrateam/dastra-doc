@@ -12,7 +12,7 @@ description: >-
 
 Avant de vous lancer dans la constitution de vos fiches de traitement, nous vous recommandons de cartographier le plus précisément possible les données de l'entreprise. Le schéma ci-dessous vous présente la structure de la cartographie que vous pouvez mettre en place.
 
-<figure><img src="../../.gitbook/assets/assets-schema.png" alt=""><figcaption><p>Schéma de la cartographie de données </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/assets-schema.png" alt=""><figcaption><p>Schéma de la cartographie de données</p></figcaption></figure>
 
 Pour inventorier l'ensemble des données personnelles de votre SI, voici la procédure à suivre :
 
@@ -25,8 +25,6 @@ Cette cartographie rendra beaucoup plus aisée la constitution de fiches de trai
 
 Vous ne souhaitez pas faire cet inventaire ou vous estimez que les logiciels que vous utilisez sont standards ? Nous avons tout prévu, vous pouvez créer votre référentiel d'actif à l'aide de notre bibliothèque de modèles prédéfinis contenant les actifs standards du marché (Salesforce, Jira...).
 
-
-
 ### Comment accéder à la cartographie
 
 1. [Accédez à votre espace de travail](../../getting-started/setup/espace-de-travail.md#accedez-a-un-espace-de-travail)
@@ -37,9 +35,7 @@ Vous ne souhaitez pas faire cet inventaire ou vous estimez que les logiciels que
 
 Choisissez ensuite le référentiel auquel vous souhaitez accéder.
 
-
-
-## Établissez votre liste de mesures de sécurité&#x20;
+## Établissez votre liste de mesures de sécurité
 
 {% embed url="https://youtu.be/5gHAl_8Tdv4" %}
 

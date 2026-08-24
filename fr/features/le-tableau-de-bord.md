@@ -16,20 +16,20 @@ Celui-ci est composé de 3 sections principales :
 * L'onglet de la communauté à droite de l'écran,
 * La section au centre contenant les tuiles synthétisant l'actualité et la veille de votre espace, et les différentes fonctionnalités.
 
-![La barre de fonctionnalités à gauche de l'écran](<../.gitbook/assets/capture-web-3-5-2022-154256-app-dastra-eu.jpeg>)
+![La barre de fonctionnalités à gauche de l'écran](../.gitbook/assets/capture-web-3-5-2022-154256-app-dastra-eu.jpeg)
 
-![L'onglet de la communauté à droite de l'écran](<../.gitbook/assets/capture-web-3-5-2022-154626-app-dastra-eu.jpeg>)
+![L'onglet de la communauté à droite de l'écran](../.gitbook/assets/capture-web-3-5-2022-154626-app-dastra-eu.jpeg)
 
 ### Les tuiles du tableau de bord
 
 Dans la section contenant les tuiles, vous pouvez modifier l'ordre d'apparence de ces tuiles en cliquant sur le bouton glisser / déposer permettant de déplacer l'ordre d'apparence de la tuile.
 
-![Un exemple de tuile du tableau de bord](<../.gitbook/assets/dashboard-processing-widget.png>)
+![Un exemple de tuile du tableau de bord](../.gitbook/assets/dashboard-processing-widget.png)
 
 Il existe plusieurs **catégories de tuiles** disponible dans le tableau de bord :
 
 * **Actualité et veille**
-* **Traitements de données**&#x20;
+* **Traitements de données**
 * **Analyse de risque**
 * **Vos audits**
 * **Tâches à échéance**
@@ -41,7 +41,7 @@ Il existe plusieurs **catégories de tuiles** disponible dans le tableau de bord
 
 Vous pouvez également imprimer le tableau de bord ou invitez directement en utilisateur en cliquant sur l'un des boutons disponibles en haut à droite de la section réservée aux tuiles.
 
-![Les boutons imprimer et inviter un utilisateur](<../.gitbook/assets/dashboard-print-invite-buttons.png>)
+![Les boutons imprimer et inviter un utilisateur](../.gitbook/assets/dashboard-print-invite-buttons.png)
 
 ## Aller plus loin
 
@@ -82,8 +82,3 @@ Explorez dès maintenant les fonctionnalités :
 {% content-ref url="settings/" %}
 [settings](settings/)
 {% endcontent-ref %}
-
-
-
-
-

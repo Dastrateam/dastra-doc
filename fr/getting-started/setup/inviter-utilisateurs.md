@@ -6,17 +6,15 @@ description: Découvrez comment le système d'invitation de Dastra fonctionne.
 
 ## Invitez un utilisateur
 
-Vous pouvez amener quelqu'un à collaborer sur vos espaces en l'invitant dans l'organisation à laquelle appartient l'espace.&#x20;
+Vous pouvez amener quelqu'un à collaborer sur vos espaces en l'invitant dans l'organisation à laquelle appartient l'espace.
 
 Vous pouvez inviter des utilisateurs à votre espace de travail en cliquant sur le bouton "réglages" en bas à gauche de l'écran, puis "gestion d'accès / utilisateurs" et enfin "inviter un utilisateur":
 
 <figure><img src="../../.gitbook/assets/screenshot-2024-10-17-143642.png" alt=""><figcaption></figcaption></figure>
 
-
-
 Rentrez l'adresse email de la personne que vous souhaitez inviter dans votre espace Dastra. Si cette adresse n'est pas déjà rattachée à l'organisation, cliquez sur celle-ci pour lui envoyer un lien d'invitation.
 
-![](<../../.gitbook/assets/settings-users-invite-dialog.png>)
+![](../../.gitbook/assets/settings-users-invite-dialog.png)
 
 Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe puis cliquez sur le bouton "Envoyer une invitation". La personne invitée recevra un mail contenant un lien qui, une fois cliqué, permettra à cette personne d'accéder à l'espace.
 
@@ -26,13 +24,13 @@ Ca y est, l'utilisateur a été invité !
 
 ### Retrouvez les invitations en cours
 
-Vous pouvez piloter les invitations en cours dans les réglages de l'espace de travail sur la section "Utilisateurs".&#x20;
+Vous pouvez piloter les invitations en cours dans les réglages de l'espace de travail sur la section "Utilisateurs".
 
 <figure><img src="../../.gitbook/assets/settings-users-nav-menu.png" alt=""><figcaption></figcaption></figure>
 
 ### Renvoyer un lien d'invitation
 
-Si l'utilisateur invité n'a pas cliqué sur le lien d'invitation et que le lien a expiré (au bout de 10 jours), vous pouvez lui renvoyer le lien d'invitation en cliquant sur le bouton "Renvoyer l'invitation".&#x20;
+Si l'utilisateur invité n'a pas cliqué sur le lien d'invitation et que le lien a expiré (au bout de 10 jours), vous pouvez lui renvoyer le lien d'invitation en cliquant sur le bouton "Renvoyer l'invitation".
 
 <figure><img src="../../.gitbook/assets/screenshot-2024-10-17-143758.png" alt=""><figcaption></figcaption></figure>
 
@@ -54,16 +52,16 @@ Si vous souhaitez importer une grande liste d'utilisateurs (minimum 50 utilisate
 
 Vous pouvez demander l'import d'une liste jusqu'à 200 utilisateurs, dans la limite des utilisateurs disponibles.
 
-**Les étapes à suivre :**&#x20;
+**Les étapes à suivre :**
 
 * rendez vous sur ce lien : [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users)
 * Cliquez sur le bouton "Importer"
 
 <figure><img src="../../.gitbook/assets/screenshot-2024-10-17-143932.png" alt=""><figcaption></figcaption></figure>
 
-* Créez un fichier par espace de travail au format CSV comprenant les colonnes suivantes séparées par des , (virgule) :&#x20;
+* Créez un fichier par espace de travail au format CSV comprenant les colonnes suivantes séparées par des , (virgule) :
 
-De manière obligatoire : &#x20;
+De manière obligatoire :
 
 * Email (email de l'utilisateur)
 * GivenName (prénom de l'utilisateur)
@@ -71,25 +69,25 @@ De manière obligatoire : &#x20;
 * Roles (séparé par des |) > cela correspond aux rôles dans Dastra
 * Teams (séparé par des |) > cela correspond aux équipes dans Dastra
 
-De manière optionnelle :&#x20;
+De manière optionnelle :
 
 * SsoConfigurationId > cela correspond à l'identifiant de login SSO le cas échéant
 
-Voici un modèle de fichier à télécharger et à remplir :&#x20;
+Voici un modèle de fichier à télécharger et à remplir :
 
 {% file src="../../.gitbook/assets/sample-admin-users-import.csv" %}
 Modèle de fichier d'import
 {% endfile %}
 
-**S'agissant des identifiants de rôles :**&#x20;
+**S'agissant des identifiants de rôles :**
 
-Par défaut : les rôles de base ont les identifiants suivants :&#x20;
+Par défaut : les rôles de base ont les identifiants suivants :
 
 * Administrateur = 1
 * Contributeur = 2
 * Lecteur = 3
 
-Pour les rôles personnalisés que vous avez créé, l'identifiant est visible depuis la console de développement de votre navigateur via l'onglet réseau.&#x20;
+Pour les rôles personnalisés que vous avez créé, l'identifiant est visible depuis la console de développement de votre navigateur via l'onglet réseau.
 
 {% hint style="info" %}
 Pour ouvrir la console sur Chrome, utilisez le raccourci clavier suivant : Cmd + Option + C (sur Mac) ou Ctrl + Maj + J (sous Windows)
@@ -103,13 +101,9 @@ Pour ouvrir la console sur Microsoft Edge, vous pouvez utiliser le raccourci sui
 
 Attention, les rôles doivent être créés préalablement.
 
-
-
 <figure><img src="../../.gitbook/assets/screenshot-2024-10-17-144450.png" alt=""><figcaption><p>Ici l'identifiant du rôle est le numéro 10</p></figcaption></figure>
 
-
-
-**S'agissant des identifiants des équipes :**&#x20;
+**S'agissant des identifiants des équipes :**
 
 Les équipes doivent être identifiées par des numéros d'identifiants qui sont récupérés en ouvrant une équipe dans Dastra (via le bouton "Modifier").
 
@@ -123,13 +117,11 @@ NB : les équipes ne sont pas obligatoires dans Dastra.
 Attention, les équipes doivent être crées préalablement dans l'espace de travail
 {% endhint %}
 
-Enregistrez votre fichier au format CSV UTF 8&#x20;
+Enregistrez votre fichier au format CSV UTF 8
 
 <figure><img src="../../.gitbook/assets/settings-users-invite-csv-format.png" alt=""><figcaption></figcaption></figure>
 
-Une fois votre fichier prêt, indiquez nous dans quel espace de travail vous souhaitez importer les utilisateurs et déposez le fichier via l'interface de dépôt :&#x20;
-
-
+Une fois votre fichier prêt, indiquez nous dans quel espace de travail vous souhaitez importer les utilisateurs et déposez le fichier via l'interface de dépôt :
 
 <figure><img src="../../.gitbook/assets/settings-users-bulk-invite-upload.png" alt=""><figcaption></figcaption></figure>
 

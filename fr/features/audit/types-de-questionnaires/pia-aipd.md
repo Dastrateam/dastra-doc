@@ -1,8 +1,10 @@
 ---
-description: Apprenez à réaliser une analyse d'impact relative à la protection des données (AIPD/PIA) avec Dastra.
+description: >-
+  Apprenez à réaliser une analyse d'impact relative à la protection des données
+  (AIPD/PIA) avec Dastra.
 ---
 
-# Analyse d'impact (AIPD / PIA)
+# AIPD / PIA
 
 ## Qu'est-ce qu'une AIPD / PIA ?
 
@@ -86,10 +88,10 @@ Une seule et même AIPD peut couvrir plusieurs traitements similaires en termes 
 
 ## Pour aller plus loin
 
-{% content-ref url="../types-de-questionnaires/tia.md" %}
-[tia.md](../types-de-questionnaires/tia.md)
+{% content-ref url="tia.md" %}
+[tia.md](tia.md)
 {% endcontent-ref %}
 
-{% content-ref url="../types-de-questionnaires/lia.md" %}
-[lia.md](../types-de-questionnaires/lia.md)
+{% content-ref url="lia.md" %}
+[lia.md](lia.md)
 {% endcontent-ref %}

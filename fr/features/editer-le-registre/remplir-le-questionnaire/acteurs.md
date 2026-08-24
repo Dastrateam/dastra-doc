@@ -6,11 +6,11 @@ description: Définissez les acteurs intervenant dans le traitement de données.
 
 {% embed url="https://youtu.be/ReWH4-vYkcU" %}
 
-## Ajouter des utilisateurs sur un traitement&#x20;
+## Ajouter des utilisateurs sur un traitement
 
 Dastra vous permet d'attacher des utilisateurs à un traitement.
 
-**Attention, il ne s'agit pas d'acteurs mais d'utilisateurs (personnes physiques qui disposent d'un compte d'accès à la plateforme Dastra).**&#x20;
+**Attention, il ne s'agit pas d'acteurs mais d'utilisateurs (personnes physiques qui disposent d'un compte d'accès à la plateforme Dastra).**
 
 {% hint style="warning" %}
 Les comptes utilisateurs doivent être créés depuis au moins une heure avant de pouvoir être ajoutés en tant que parties prenantes.
@@ -18,47 +18,39 @@ Les comptes utilisateurs doivent être créés depuis au moins une heure avant d
 
 Les rôles ainsi définis permettront de structurer efficacement la gestion et la mise en œuvre de vos traitements dans Dastra.
 
-Voici une manière de définir les rôles de vos utilisateurs pour vos traitements :&#x20;
+Voici une manière de définir les rôles de vos utilisateurs pour vos traitements :
 
-* **Approbateur** : il s'agit de l'utilisateur dans Dastra qui est en charge de valider que le traitement et les éléments associés tels qu'ils sont indiqués dans Dastra sont valides selon les attendus de l'organisation. ll peut être différent du signataire du responsable du traitement. Par exemple, il peut s'agir d'un responsable de service, d'un DPO, ou d'un relais DPO.&#x20;
+* **Approbateur** : il s'agit de l'utilisateur dans Dastra qui est en charge de valider que le traitement et les éléments associés tels qu'ils sont indiqués dans Dastra sont valides selon les attendus de l'organisation. ll peut être différent du signataire du responsable du traitement. Par exemple, il peut s'agir d'un responsable de service, d'un DPO, ou d'un relais DPO.
 * **Réalisateur** : c'est l'utilisateur qui a pour rôle de mettre en œuvre les actions nécessaires sur le traitement et le décrire. Il peut s'agir de la mise en place des mesures de sécurité des données, de la gestion des accès ou de toute autre tâche requise pour assurer la conformité du traitement. Il peut s'agir d'un chef de projet ou d'un responsable métier dédié.
 * **Informé** : cette catégorie regroupe les utilisateurs qui doivent être tenus informés de l'avancement et de l'état du traitement, sans avoir de rôle actif dans sa validation ou sa réalisation. Cela peut inclure des membres de l'équipe de direction, des gestionnaires de projet, ou d'autres parties prenantes qui ont un intérêt sur le traitement.
 
-## Identifiez les acteurs principaux sur le traitement&#x20;
+## Identifiez les acteurs principaux sur le traitement
 
-Vous pouvez indiquer les acteurs concernés par la mise en œuvre du traitement. Cela peut par exemple être un service ou un département d’une entreprise (comme le service des ressources humaines par exemple) mais également une personne dédiée s’il s’agit d’un projet (chef de projet par exemple). <br>
+Vous pouvez indiquer les acteurs concernés par la mise en œuvre du traitement. Cela peut par exemple être un service ou un département d’une entreprise (comme le service des ressources humaines par exemple) mais également une personne dédiée s’il s’agit d’un projet (chef de projet par exemple).<br>
 
-Vous indiquez également l’identité du représentant du responsable du traitement, le cas échéant, du ou des responsables conjoints du traitement.&#x20;
+Vous indiquez également l’identité du représentant du responsable du traitement, le cas échéant, du ou des responsables conjoints du traitement.
 
 <figure><img src="../../../.gitbook/assets/register-processing-actors-role-dropdown.png" alt=""><figcaption></figcaption></figure>
 
 ## Ajouter un responsable conjoint (coresponsable de traitement)
 
-Pour ajouter un responsable conjoint, il faut ajouter une nouvelle partie prenante et sélectionner "Responsable conjoint".&#x20;
+Pour ajouter un responsable conjoint, il faut ajouter une nouvelle partie prenante et sélectionner "Responsable conjoint".
 
-Vous serez invité à ajouter un acteur en tant que responsable conjoint.&#x20;
+Vous serez invité à ajouter un acteur en tant que responsable conjoint.
 
 <figure><img src="../../../.gitbook/assets/register-processing-actors-add-modal.png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 ## Ajouter un chargé de la mise en oeuvre du traitement
 
-Le chargé de la mise en oeuvre correspond au service qui est responsable opérationnel du traitement. Il s'agit généralement du service qui utilise les données et met en oeuvre l'activité de traitement.&#x20;
+Le chargé de la mise en oeuvre correspond au service qui est responsable opérationnel du traitement. Il s'agit généralement du service qui utilise les données et met en oeuvre l'activité de traitement.
 
-Il peut s'agir d'un service ou d'une personne physique.&#x20;
+Il peut s'agir d'un service ou d'une personne physique.
 
-Dans Dastra, vous devrez ajouter un acteur.&#x20;
-
-
+Dans Dastra, vous devrez ajouter un acteur.
 
 ## Ajouter un représentant du responsable du traitement
 
 Le représentant du responsable du traitement correspond au représentant opérationnel du responsable du traitement (RT). Par exemple, il peut s'agir d'un membre du COMEX ou encore d'un conseiller municipal (le RT étant représenté par le maire).
-
-
 
 ## Ajouter un responsable de traitement opérationnel
 
@@ -91,4 +83,3 @@ Le **RTO** (Responsable de Traitement Opérationnel) n’est pas une notion déf
 | **Décisions**             | Décide du pourquoi et du comment des traitements            | Applique les décisions et gère l'exécution       |
 | **Responsabilité légale** | Engage la responsabilité juridique en cas de non-conformité | Opère sous la responsabilité du RT               |
 | **Lien avec le DPO**      | Interagit avec le DPO pour définir les politiques           | Exécute les recommandations du DPO               |
-

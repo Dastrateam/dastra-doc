@@ -65,11 +65,9 @@ Une fois complété, cliquez sur **Enregistrer et tester** pour valider la confi
 * Dastra effectuera un test d’envoi pour confirmer la validité de l’adresse configurée.
 * Vérifiez dans votre boîte de réception et vos journaux Office 365 / Gmail que le message test a bien été délivré.
 
-Le message ressemble à celui-ci :&#x20;
+Le message ressemble à celui-ci :
 
 <figure><img src="../../../.gitbook/assets/settings-smtp-test-email-received.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -114,10 +112,10 @@ L’intégration Office 365 utilise un consentement de type **application** (con
 
 Dastra demande les permissions suivantes lors du consentement OAuth :
 
-| Permission           | Usage                                                              |
-| -------------------- | ------------------------------------------------------------------ |
-| `Mail.Send`          | Envoi d’emails depuis la boîte configurée                          |
-| `Mail.Send.Shared`   | Envoi depuis une boîte aux lettres partagée (BAL partagée)         |
+| Permission         | Usage                                                      |
+| ------------------ | ---------------------------------------------------------- |
+| `Mail.Send`        | Envoi d’emails depuis la boîte configurée                  |
+| `Mail.Send.Shared` | Envoi depuis une boîte aux lettres partagée (BAL partagée) |
 
 #### Les boîtes aux lettres partagées sont-elles supportées ?
 
@@ -134,7 +132,7 @@ Assurez-vous que votre compte personnel dispose bien du droit **"Envoyer en tant
 
 #### Faut-il filtrer les IP sources de Dastra ?
 
-Dastra utilise **Microsoft Graph API** pour l’envoi des emails, et non un serveur SMTP classique. Les appels transitent par l’infrastructure Azure de Microsoft, dont les plages d’IP sont nombreuses (~100 plages) et susceptibles d’évoluer dans le temps.
+Dastra utilise **Microsoft Graph API** pour l’envoi des emails, et non un serveur SMTP classique. Les appels transitent par l’infrastructure Azure de Microsoft, dont les plages d’IP sont nombreuses (\~100 plages) et susceptibles d’évoluer dans le temps.
 
 **La restriction par IP n’est pas recommandée** pour cette intégration : elle serait difficile à maintenir et pourrait provoquer des interruptions de service lors des mises à jour des plages Azure. La sécurité est assurée par le protocole OAuth 2.0 et le consentement administrateur.
 

@@ -8,13 +8,9 @@ description: Fonctionnement des modèles de messages
 
 ## Personnalisation des modèles de messages
 
-
-
 Pour optimiser votre temps et gagner en efficacité, vous pouvez paramétrer des modèles de messages à réutiliser dans les modules de Dastra.
 
-
-
-### Types de modèles de messages accessibles&#x20;
+### Types de modèles de messages accessibles
 
 <figure><img src="../../.gitbook/assets/settings-message-templates-tabs.png" alt=""><figcaption></figcaption></figure>
 
@@ -25,22 +21,20 @@ Les types de modèles sont les suivants :
     Lors des échanges avec les demandeurs, vous pouvez enregistrer des modèles pour gagner du temps. Par exemple, un modèle d'accusé réception de la demande.
 *   **Tâche**
 
-    Vous pouvez personnaliser le contenu de la description d'une tâche. Idéal pour gagner du temps sur des tâches répétitives. Par exemple, quand vous demandez à quelqu'un de renseigner des éléments sur un traitement de données, vous pouvez réutiliser le même modèle de message.&#x20;
+    Vous pouvez personnaliser le contenu de la description d'une tâche. Idéal pour gagner du temps sur des tâches répétitives. Par exemple, quand vous demandez à quelqu'un de renseigner des éléments sur un traitement de données, vous pouvez réutiliser le même modèle de message.
 *   **Audits**
 
     Vous pouvez personnaliser les invitations à répondre à un audit. Utilisez ici un modèle pour inscrire le même message pour tous vos répondants. Par exemple, vous pouvez inviter vos sous-traitants à renseigner un audit de vérification de la bonne application du contrat de sous-traitance à partir d'un modèle créé à l'image de votre organisation.
 *   **Compléter un traitement**
 
-    Vous pouvez inviter un utilisateur de Dastra à compléter un traitement de données à partir d'une étape. Ecrivez une fois le modèle ou sélectionnez un modèle en fonction de la qualité du destinataire (juriste, DSI etc.) pour gagner du temps.&#x20;
+    Vous pouvez inviter un utilisateur de Dastra à compléter un traitement de données à partir d'une étape. Ecrivez une fois le modèle ou sélectionnez un modèle en fonction de la qualité du destinataire (juriste, DSI etc.) pour gagner du temps.
 *   **Compléter une violation de données**
 
-    Vous pouvez inviter un utilisateur de Dastra à compléter une violation de données à partir d'une étape. Ecrivez une fois le modèle ou sélectionnez un modèle en fonction de la qualité du destinataire (juriste, DSI etc.) pour gagner du temps.&#x20;
-
-
+    Vous pouvez inviter un utilisateur de Dastra à compléter une violation de données à partir d'une étape. Ecrivez une fois le modèle ou sélectionnez un modèle en fonction de la qualité du destinataire (juriste, DSI etc.) pour gagner du temps.
 
 ### Création du modèle
 
-La création de modèle s'effectue soit à partir des réglages de l'espace de travail, soit à partir du lieu du message.&#x20;
+La création de modèle s'effectue soit à partir des réglages de l'espace de travail, soit à partir du lieu du message.
 
 <figure><img src="../../.gitbook/assets/settings-message-templates-dsr-tab.png" alt=""><figcaption><p>Création depuis les réglages de l'espace de travail</p></figcaption></figure>
 
@@ -52,243 +46,235 @@ N'oubliez pas d'enregistrer votre travail !
 
 ### Variables personnalisées dans les modèles
 
-Dastra vous permet de **remplir automatiquement le modèle avec des variables personnalisées**.&#x20;
+Dastra vous permet de **remplir automatiquement le modèle avec des variables personnalisées**.
 
-Cela signifie que vous pouvez inclure automatiquement des informations concernant l'objet lié au modèle dans le texte du modèle de message.&#x20;
+Cela signifie que vous pouvez inclure automatiquement des informations concernant l'objet lié au modèle dans le texte du modèle de message.
 
-Par exemple, dans l'invitation à répondre à un audit, il sera possible de reprendre automatiquement la date d'échéance d'un audit.&#x20;
+Par exemple, dans l'invitation à répondre à un audit, il sera possible de reprendre automatiquement la date d'échéance d'un audit.
 
 <figure><img src="../../.gitbook/assets/settings-message-templates-custom-fields-dropdown.png" alt=""><figcaption><p>Les champs personnalisés du message d'invitation à répondre à un audit</p></figcaption></figure>
 
+Vous pouvez ainsi ajouter facilement des champs dynamiques directement dans le modèle. En tant que langage de création de modèles, nous utilisons la synthax liquidJS.
 
-
-Vous pouvez ainsi ajouter facilement des champs dynamiques directement dans le modèle. En tant que langage de création de modèles, nous utilisons la synthax liquidJS.&#x20;
-
-Voici le guide complet ici : [les tags ](https://liquidjs.com/tags/overview.html)et [les filtres](https://liquidjs.com/filters/overview.html).&#x20;
+Voici le guide complet ici : [les tags ](https://liquidjs.com/tags/overview.html)et [les filtres](https://liquidjs.com/filters/overview.html).
 
 Pour traduire les statuts, vous pouvez utiliser le filtre personnalisé getTranslation de cette manière \{{data | getTranslation: ''\}}. Exemple : \{{data | getTranslation: 'dataSubjectRequestStates'\}}
 
-### Détail des champs variables :&#x20;
+### Détail des champs variables :
 
-#### Message de demande d'exercice des droits :&#x20;
+#### Message de demande d'exercice des droits :
 
-•             Titre de la demande (title)
+• Titre de la demande (title)
 
-•             Fermée par (closedByUser)
+• Fermée par (closedByUser)
 
-•             Unité organisationnelle (area)
+• Unité organisationnelle (area)
 
-•             Créé par (creator)
+• Créé par (creator)
 
-•             Opérateur (operator)
+• Opérateur (operator)
 
-•             Langue (locale)
+• Langue (locale)
 
-•             Archivé (archived)
+• Archivé (archived)
 
-•             Archivé le (archivedDate)
+• Archivé le (archivedDate)
 
-•             Catégorie de personne (subjectCategory)
+• Catégorie de personne (subjectCategory)
 
-•             Demande complexe (complex)
+• Demande complexe (complex)
 
-•             Date de fermeture (dateClosed)
+• Date de fermeture (dateClosed)
 
-•             Informations complémentaires (interne) (description)
+• Informations complémentaires (interne) (description)
 
-•             Message de la demande (message)
+• Message de la demande (message)
 
-•             Email (email)
+• Email (email)
 
-•             N° de téléphone (phoneNumber)
+• N° de téléphone (phoneNumber)
 
-•             Prénom (givenName)
+• Prénom (givenName)
 
-•             Nom (familyName)
+• Nom (familyName)
 
-•             Mis à jour le (dateUpdate)
+• Mis à jour le (dateUpdate)
 
-•             Ref. Id (refId)
+• Ref. Id (refId)
 
-•             Identifiant utilisateur (userId)
+• Identifiant utilisateur (userId)
 
-•             Raison de la fermeture (closedReason)
+• Raison de la fermeture (closedReason)
 
-•             Description de la fermeture (closedReasonDescription)
+• Description de la fermeture (closedReasonDescription)
 
-•             Date d'expiration (expiryTime)
+• Date d'expiration (expiryTime)
 
-•             Address (address)
+• Address (address)
 
-•             Code postal (zipCode)
+• Code postal (zipCode)
 
-•             Ville (city)
+• Ville (city)
 
-•             Pays (countryCode)
+• Pays (countryCode)
 
-•             Date de validation de l'email (emailValidationDate)
+• Date de validation de l'email (emailValidationDate)
 
-•             Email validé (mailValidated)
+• Email validé (mailValidated)
 
-•             Url source (referrerUrl)
+• Url source (referrerUrl)
 
-•             Identité validée (identityValidated)
+• Identité validée (identityValidated)
 
-•             Date de validation de l'identité (dateIdentityValidated)
+• Date de validation de l'identité (dateIdentityValidated)
 
-•             Id de la demande (demandId)
+• Id de la demande (demandId)
 
-•             Statut (state)
+• Statut (state)
 
-•             Date (dateCreation)
+• Date (dateCreation)
 
-•             Etape (workFlowStep)
+• Etape (workFlowStep)
 
-•             Canal de collecte (channel)
+• Canal de collecte (channel)
 
-•             Types de droits (purposes)
+• Types de droits (purposes)
 
-•             Messages (nbMessages)
+• Messages (nbMessages)
 
-•             Jours restants (remainingDays)
+• Jours restants (remainingDays)
 
-•             Délai de fermeture (jours) (closingTime)
+• Délai de fermeture (jours) (closingTime)
 
-•             Tags (tags)
+• Tags (tags)
 
+#### Description d'une tâche :
 
+• Projet (project)
 
-#### Description d'une tâche :&#x20;
+• Iteration (iteration)
 
-•             Projet (project)
+• Ordre (order)
 
-•             Iteration (iteration)
+• Propriétaire (owner)
 
-•             Ordre (order)
+• Unité organisationnelle (area)
 
-•             Propriétaire (owner)
+• Créé par (creator)
 
-•             Unité organisationnelle (area)
+• Jours restants (remainingDays)
 
-•             Créé par (creator)
+• Délai de fermeture (jours) (closingTime)
 
-•             Jours restants (remainingDays)
+• Nombre de sous-tâches (nbSubTasks)
 
-•             Délai de fermeture (jours) (closingTime)
+• Nombre de sous-tâches fermées (nbSubTasksClosed)
 
-•             Nombre de sous-tâches (nbSubTasks)
+• Id (id)
 
-•             Nombre de sous-tâches fermées (nbSubTasksClosed)
+• Référence interne (ref)
 
-•             Id (id)
+• Archivé (archived)
 
-•             Référence interne (ref)
+• Nom (label)
 
-•             Archivé (archived)
+• Description (descriptionHtml)
 
-•             Nom (label)
+• Associée à (objectType)
 
-•             Description (descriptionHtml)
+• Statut (state)
 
-•             Associée à (objectType)
+• Date limite (deadline)
 
-•             Statut (state)
+• Date de début (startDate)
 
-•             Date limite (deadline)
+• Fermée le (dateClosed)
 
-•             Date de début (startDate)
+• Activée le (dateActivated)
 
-•             Fermée le (dateClosed)
+• Créé le (dateCreation)
 
-•             Activée le (dateActivated)
+• Mis à jour le (dateUpdate)
 
-•             Créé le (dateCreation)
+• Source (source)
 
-•             Mis à jour le (dateUpdate)
+• test (customFields.test)
 
-•             Source (source)
+• LIste (customFields.liste)
 
-•             test (customFields.test)
+• Case à cocher simple (customFields.case\_a\_cocher\_simple)
 
-•             LIste (customFields.liste)
+• Tags (tags)
 
-•             Case à cocher simple (customFields.case\_a\_cocher\_simple)
+• Etape (workFlowStep)
 
-•             Tags (tags)
+• Priorité (priority)
 
-•             Etape (workFlowStep)
+• Assignée à (assignedToUser)
 
-•             Priorité (priority)
+#### Invitations à répondre à un questionnaire d'audit :
 
-•             Assignée à (assignedToUser)
+• Modèle (template)
 
+• Date du prochain audit (dateNextAudit)
 
+• Durée de l'audit (auditDurationDays)
 
-#### Invitations à répondre à un questionnaire d'audit :&#x20;
+• Nb. corrections (nbCorrections)
 
-•             Modèle (template)
+• Nb validations (nbValidations)
 
-•             Date du prochain audit (dateNextAudit)
+• Jours avant le prochain audit (nextAuditDaysRemaining)
 
-•             Durée de l'audit (auditDurationDays)
+• Id (id)
 
-•             Nb. corrections (nbCorrections)
+• Nom (label)
 
-•             Nb validations (nbValidations)
+• Version ancienne (isRevision)
 
-•             Jours avant le prochain audit (nextAuditDaysRemaining)
+• Version name (revisionDescription)
 
-•             Id (id)
+• Archivé (archived)
 
-•             Nom (label)
+• Dépassé (isOverdue)
 
-•             Version ancienne (isRevision)
+• Unité organisationnelle (area)
 
-•             Version name (revisionDescription)
+• Mis à jour le (dateUpdate)
 
-•             Archivé (archived)
+• Archivé le (archivedDate)
 
-•             Dépassé (isOverdue)
+• Score (readiness)
 
-•             Unité organisationnelle (area)
+• Points (score)
 
-•             Mis à jour le (dateUpdate)
+• Taux de completion (%) (completionRate)
 
-•             Archivé le (archivedDate)
+• Nb. réponses (nbAnswers)
 
-•             Score (readiness)
+• Nb. de questions (nbQuestions)
 
-•             Points (score)
+• Responsables (owners)
 
-•             Taux de completion (%) (completionRate)
+• Répondants (respondants)
 
-•             Nb. réponses (nbAnswers)
+• Plan d'action généré le (actionPlanDate)
 
-•             Nb. de questions (nbQuestions)
+• Statut (state)
 
-•             Responsables (owners)
+• Date de début (startDate)
 
-•             Répondants (respondants)
+• Finalisé le (responseDate)
 
-•             Plan d'action généré le (actionPlanDate)
+• Date de publication (publishedDate)
 
-•             Statut (state)
+• Créé le (dateCreation)
 
-•             Date de début (startDate)
+• Objet attaché (objectLabel)
 
-•             Finalisé le (responseDate)
+• Date limite (deadline)
 
-•             Date de publication (publishedDate)
-
-•             Créé le (dateCreation)
-
-•             Objet attaché (objectLabel)
-
-•             Date limite (deadline)
-
-
-
-#### Invitations à compléter un traitement :&#x20;
+#### Invitations à compléter un traitement :
 
 Unité organisationnelle (area)
 
@@ -364,9 +350,7 @@ Dernière modification (dateUpdate)
 
 Description (description)
 
-
-
-#### Invitation à compléter une violation :&#x20;
+#### Invitation à compléter une violation :
 
 Nom (label)
 

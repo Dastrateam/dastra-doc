@@ -70,7 +70,7 @@ Les correctifs sont intégrés progressivement dans les cycles de développement
 
 ### Signaler un problème d’accessibilité
 
-Si vous rencontrez une difficulté d’accès à un contenu ou à une fonctionnalité, vous pouvez nous contacter à :&#x20;
+Si vous rencontrez une difficulté d’accès à un contenu ou à une fonctionnalité, vous pouvez nous contacter à :
 
 contact@dastra.eu
 

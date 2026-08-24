@@ -13,4 +13,3 @@ En dehors de l'activation, le registre des traitements ne nécessite pas de conf
 #### Affichage du registre et impact du choix de l'unité organisationnelle
 
 Dès que la fonctionnalité est activée, les traitements ayant le statut 'publié' et appartenant à la même unité organisationnelle que votre Trust center seront accessibles publiquement pour consultation par tous les visiteurs de votre Trust center.
-

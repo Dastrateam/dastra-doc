@@ -12,15 +12,15 @@ Cliquez sur "Actions groupées"
 
 Cliquez sur "Modifier les champs"
 
-Sélectionnez "Projet" et le projet souhaité.&#x20;
+Sélectionnez "Projet" et le projet souhaité.
 
 <figure><img src="../../.gitbook/assets/planning-tasks-bulk-edit-dialog.png" alt=""><figcaption></figcaption></figure>
 
 Validez les changements en enregistrant.
 
-## Comment supprimer une tache ?&#x20;
+## Comment supprimer une tache ?
 
-Pour supprimer une tache, vous devez d'abord l'archiver puis la supprimer des archives.&#x20;
+Pour supprimer une tache, vous devez d'abord l'archiver puis la supprimer des archives.
 
 <figure><img src="../../.gitbook/assets/planning-task-actions-archive.png" alt=""><figcaption><p>Bouton Archiver</p></figcaption></figure>
 
@@ -38,11 +38,9 @@ Vous pouvez également supprimer la tache directement depuis la vue tableau
 
 ## Indiquer la charge de travail sur la tâche
 
-Vous pouvez indiquer la charge de travail estimée et réalisée sur Dastra. Cela peut être utile pour identifier dans votre bilan le temps passé à la réalisation des tâches.&#x20;
+Vous pouvez indiquer la charge de travail estimée et réalisée sur Dastra. Cela peut être utile pour identifier dans votre bilan le temps passé à la réalisation des tâches.
 
-Pour ajouter la charge de travail, vous devrez ajouter des champs personnalisés sur les tâches.&#x20;
-
-&#x20;
+Pour ajouter la charge de travail, vous devrez ajouter des champs personnalisés sur les tâches.
 
 <figure><img src="../../.gitbook/assets/planning-custom-fields-workload-group.png" alt=""><figcaption></figcaption></figure>
 
@@ -50,9 +48,6 @@ Vous pourrez ensuite exporter ces valeurs dans un classeur ou les retrouver via 
 
 <figure><img src="../../.gitbook/assets/planning-task-form-workload.png" alt=""><figcaption><p>Exemple de champs de charge de travail</p></figcaption></figure>
 
-
-
 ## Comment relancer une tache ?
 
-Vous pouvez renvoyer une notification de tache à un utilisateur en le mentionnant dans une discussion.&#x20;
-
+Vous pouvez renvoyer une notification de tache à un utilisateur en le mentionnant dans une discussion.

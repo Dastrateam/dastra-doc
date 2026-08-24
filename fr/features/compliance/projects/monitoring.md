@@ -60,8 +60,6 @@ Chaque preuve peut être documentée afin de faciliter les audits ultérieurs.
 {% endcolumn %}
 
 {% column %}
-
-
 <figure><img src="../../../.gitbook/assets/compliance-project-add-evidence-modal.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
@@ -99,8 +97,6 @@ L’avancement global de la campagne est visible en temps réel, permettant au r
 {% endcolumn %}
 
 {% column %}
-
-
 <figure><img src="../../../.gitbook/assets/compliance-project-test-campaign-send-invitations.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}

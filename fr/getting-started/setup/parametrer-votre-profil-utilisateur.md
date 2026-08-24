@@ -43,10 +43,10 @@ Les champs suivants peuvent être complétés ou mis à jour à tout moment :
 
 Vous pouvez personnaliser l’affichage de Dastra selon votre langue et votre zone horaire.
 
-| Paramètre                 | Description                                                                                            |
-| ------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Langue de l’interface** | Langue utilisée dans l’application (Français, Anglais, etc.). Par défaut, 9 langues sont disponibles.  |
-| **Fuseau horaire**        | Par défaut, (UTC+01:00) heure d’Europe centrale (Paris)                                                |
+| Paramètre                 | Description                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Langue de l’interface** | Langue utilisée dans l’application (Français, Anglais, etc.). Par défaut, 9 langues sont disponibles. |
+| **Fuseau horaire**        | Par défaut, (UTC+01:00) heure d’Europe centrale (Paris)                                               |
 
 {% hint style="info" %}
 Ces préférences influencent uniquement **votre affichage personnel**.\
@@ -93,11 +93,9 @@ Aucune récupération n’est possible.
 
 ### 💡 Bonnes pratiques
 
-
-
 * Tenez vos coordonnées à jour pour assurer la continuité des communications.
 * Utilisez un pseudonyme professionnel si vous pour la communauté Dastra.
-* Avant de supprimer votre compte, informez votre administrateur pour éviter toute perte de données.&#x20;
+* Avant de supprimer votre compte, informez votre administrateur pour éviter toute perte de données.
 
 ***
 

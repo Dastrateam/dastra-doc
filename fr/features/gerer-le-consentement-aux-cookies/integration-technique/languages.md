@@ -8,7 +8,7 @@ description: Cette page explique comment gérer les langues du widget de consent
 
 Rendez-vous sur la page de réglages du widget souhaité, puis dans l'onglet "Textes et traductions". Vous pouvez ajouter une ou plusieurs langues.
 
-![](<../../../.gitbook/assets/capture-web-6-5-2022-102131-app-dastra-eu.jpeg>)
+![](../../../.gitbook/assets/capture-web-6-5-2022-102131-app-dastra-eu.jpeg)
 
 ## Comment est détectée la langue du widget ?
 
@@ -21,4 +21,3 @@ Pour forcer la langue du widget, il suffit d'ajouter un attribut data-lang="" à
 ```markup
 <div id="cookie-consent" data-lang="fr"></div>
 ```
-

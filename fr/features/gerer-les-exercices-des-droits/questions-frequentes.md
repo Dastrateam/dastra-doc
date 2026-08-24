@@ -14,7 +14,7 @@ Pensez à cocher cette option systématiquement lorsque vous souhaitez informer 
 
 Une fois la demande clôturée, le demandeur conserve un accès à son espace sécurisé (historique des échanges, documents transmis) pendant **60 jours**.
 
-Cet accès lui permet également de délivrer un message au gestionnaire de la demande via l'interface de conversation.&#x20;
+Cet accès lui permet également de délivrer un message au gestionnaire de la demande via l'interface de conversation.
 
 Au-delà de cette période, l'accès est révoqué automatiquement.<br>
 
@@ -48,4 +48,3 @@ Oui, par souci d'exhaustivité documentaire, même s'il est exempté de consente
 | Émetteur            | Dastra (sous-traitant)                          |
 | Base légale         | Exemption ePrivacy — strictement nécessaire     |
 | Consentement requis | Non                                             |
-

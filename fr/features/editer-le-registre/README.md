@@ -6,7 +6,7 @@ description: Apprenez à éditer votre registre de traitement avec Dastra.
 
 ## Introduction
 
-Le registre de traitement vous permet de faire la cartographie de vos **traitements de données** et d'avoir une **vue d'ensemble** de ce que vous faites avec les données personnelles concernées. Disposer d'un registre complété est une **obligation** de l’article 30 du RGPD, mais au delà de l'aspect contraignant, c'est surtout un **outil pour mieux connaître ses données** et **maîtriser la chaîne de valeur** associée - depuis leur production jusqu'à l'usage qui en est fait. &#x20;
+Le registre de traitement vous permet de faire la cartographie de vos **traitements de données** et d'avoir une **vue d'ensemble** de ce que vous faites avec les données personnelles concernées. Disposer d'un registre complété est une **obligation** de l’article 30 du RGPD, mais au delà de l'aspect contraignant, c'est surtout un **outil pour mieux connaître ses données** et **maîtriser la chaîne de valeur** associée - depuis leur production jusqu'à l'usage qui en est fait.
 
 Chez Dastra, nous pensons que notre rôle est de vous **faciliter le travail** de cartographie des traitements, pour vous permettre de vous concentrer sur votre métier. Pour cela, nous vous accompagnons à travers un registre **intelligent** et des **questionnaires** qui vous guident étape par étape dans la constitution de votre registre.
 
@@ -14,7 +14,7 @@ Chez Dastra, nous pensons que notre rôle est de vous **faciliter le travail** d
 
 La fonctionnalité de registres des activités de traitements Dastra répond à tous les attendus de la règlementation. Les registres, à la fois Responsable de Traitement et Sous traitant, reposent sur des référentiels (acteurs, actifs, jeux de données, données, risques et mesures de sécurité) permettant de **cartographier vos traitements** et **gagner du temps** dans la gestion au quotidien.
 
-Les traitements sont duplicables et des modèles de traitement sont disponibles dans une bibliothèque librement accessible à tous nos utilisateurs. Un workflow est intégré, une fonction de recherche est présente nativement et il est possible d’importer / exporter des fiches de traitements sous différent formats ( pdf , word , html, excel , csv, json ). Il est possible d'attacher des pièces jointes, des violations ou encore des risques à ces traitements.&#x20;
+Les traitements sont duplicables et des modèles de traitement sont disponibles dans une bibliothèque librement accessible à tous nos utilisateurs. Un workflow est intégré, une fonction de recherche est présente nativement et il est possible d’importer / exporter des fiches de traitements sous différent formats ( pdf , word , html, excel , csv, json ). Il est possible d'attacher des pièces jointes, des violations ou encore des risques à ces traitements.
 
 <figure><img src="../../.gitbook/assets/processing-registre-liste.png" alt=""><figcaption></figcaption></figure>
 
@@ -37,9 +37,9 @@ L’article 30 du RGPD prévoit des obligations spécifiques pour le _registre d
 
 ## Les différentes méthodologies pour mettre en place le registre des traitements
 
-Il existe deux méthodologies pour créer une fiche de traitement :&#x20;
+Il existe deux méthodologies pour créer une fiche de traitement :
 
-* **La conception en Top-Down (Descendante)** : on démarre le projet en établissant l'inventaire des traitements de données, et on collecte ensuite les informations propres à chaque traitement (les données, les sous-traitants...etc...).&#x20;
+* **La conception en Top-Down (Descendante)** : on démarre le projet en établissant l'inventaire des traitements de données, et on collecte ensuite les informations propres à chaque traitement (les données, les sous-traitants...etc...).
 * **La conception en Bottom-Up (Ascendante)** : on commence par faire l'inventaire des données (les logiciels, jeux de données et champs de données personnelles) et on créé les traitements à partir de celui-ci.
 
 ### Quelle méthodologie de mise en place de registre choisir ?
@@ -86,13 +86,11 @@ Si vous souhaitez apprendre à partager le registre, cliquez ici :
 
 ## Comment effectuer des actions sur plusieurs traitements ?
 
-
-
 {% embed url="https://youtu.be/0BQDHzyFl-Y" %}
 
 ## Pour aller plus loin
 
-Retrouvez notre webinar dédié au registre des traitements.&#x20;
+Retrouvez notre webinar dédié au registre des traitements.
 
 {% embed url="https://www.youtube.com/watch?v=R_Z2m4sb-44" %}
 Comment passer en mode run sur la gestion des registres de traitements
@@ -109,4 +107,3 @@ Comment passer en mode run sur la gestion des registres de traitements
 {% content-ref url="../planifier/" %}
 [planifier](../planifier/)
 {% endcontent-ref %}
-

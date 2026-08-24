@@ -54,8 +54,6 @@ Une fois la variante créée, vous pouvez la configurer de manière **entièreme
 * **Services exposés** : vous pouvez restreindre ou étendre la liste des traceurs présentés
 * **Déclencheurs** : conditions d'affichage spécifiques
 
-
-
 #### 5. Désactiver l'affichage de la bannière (optionnel)
 
 Une option permet de **ne pas afficher de bannière** pour les utilisateurs de la zone ciblée.

@@ -60,6 +60,6 @@ Une fois les relations créées, elles apparaissent dans :
 
 ## Pour aller plus loin
 
-{% content-ref url="../cartography/README.md" %}
-[cartography](../cartography/README.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}

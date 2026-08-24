@@ -93,8 +93,6 @@ Attribuer le bon niveau de risque à vos systèmes d’IA vous permettra de :
 
 ***
 
-
-
 <figure><img src="../../.gitbook/assets/systemes-dia-fiche-niveau-de-risque.png" alt=""><figcaption><p>Analyse de risque d'un système d'IA</p></figcaption></figure>
 
 #### **Valeur ajoutée d’un système d’IA**

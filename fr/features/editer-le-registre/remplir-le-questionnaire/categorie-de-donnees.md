@@ -10,9 +10,9 @@ description: >-
 
 [**L’article 30 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4) exige également l’inscription des catégories de données traitées.
 
-Il s’agit ici de définir les catégories de données traitées. Celles-ci peuvent être dites courantes ou sensibles. On distingue en effet les données qui présentent un risque plus important sur les personnes physiques tel que les données relatives à la santé des personnes, les données relatives aux opinions politiques ou à l’activité syndicale. Les données relatives à des infractions ou autres mesures d’exécution de peines constituent également des données particulièrement protégées.&#x20;
+Il s’agit ici de définir les catégories de données traitées. Celles-ci peuvent être dites courantes ou sensibles. On distingue en effet les données qui présentent un risque plus important sur les personnes physiques tel que les données relatives à la santé des personnes, les données relatives aux opinions politiques ou à l’activité syndicale. Les données relatives à des infractions ou autres mesures d’exécution de peines constituent également des données particulièrement protégées.
 
-De même, le numéro d’inscription au répertoire (NIR) ou numéro de sécurité sociale peut être assimilé à une donnée sensible.&#x20;
+De même, le numéro d’inscription au répertoire (NIR) ou numéro de sécurité sociale peut être assimilé à une donnée sensible.
 
 La collecte de données sensibles est par principe interdite. Seules les exceptions prévues à l’[**article 9 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2) permettent de les collecter.
 
@@ -44,7 +44,7 @@ Selon les traitements, vous pouvez avoir des approches différentes, en fonction
 
 ### Associer la source des données dans le jeu de données
 
-Dans chaque jeu de données, vous pouvez inscrire l'origine des données. Celle est soit directe, soit indirecte, soit les deux.&#x20;
+Dans chaque jeu de données, vous pouvez inscrire l'origine des données. Celle est soit directe, soit indirecte, soit les deux.
 
 Un champ vous permettant de décrire l'origine de la collecte permet d'apporter la précision nécessaire.
 
@@ -52,21 +52,21 @@ Un champ vous permettant de décrire l'origine de la collecte permet d'apporter 
 
 ### Associer un actif au jeu de données
 
-Les jeux de données ont une vocation naturelle à être ajoutés à des [actifs](applications.md).&#x20;
+Les jeux de données ont une vocation naturelle à être ajoutés à des [actifs](applications.md).
 
-Vous pouvez associer un actif à votre jeu de données lors de sa création.&#x20;
+Vous pouvez associer un actif à votre jeu de données lors de sa création.
 
 <figure><img src="../../../.gitbook/assets/register-dataset-linked-asset-field.png" alt=""><figcaption><p>Sélecteur d'actif</p></figcaption></figure>
 
-Un jeu de données ne peut être associé qu'à un seul actif. En effet, en définissant les jeux de données d'un actif, ceux-ci sont uniques.&#x20;
+Un jeu de données ne peut être associé qu'à un seul actif. En effet, en définissant les jeux de données d'un actif, ceux-ci sont uniques.
 
 Par exemple, en considérant un logiciel de comptabilité comme un actif, plusieurs jeux de données pourraient être associés à cet actif, tels que "données de facturation" comprenant les données relatives au module suivi des factures ou encore "données des clients" comprenant les données relatives aux comptes clients.
 
 ### Associer une catégorie de personnes concernées
 
-Pour chaque jeu de données, vous pouvez associer une ou plusieurs catégories de personnes concernées.&#x20;
+Pour chaque jeu de données, vous pouvez associer une ou plusieurs catégories de personnes concernées.
 
-Cela vous permet de mieux comprendre quelles sont les données associées aux personnes concernées. De plus, cela simplifie le travail de cartographie.&#x20;
+Cela vous permet de mieux comprendre quelles sont les données associées aux personnes concernées. De plus, cela simplifie le travail de cartographie.
 
 <figure><img src="../../../.gitbook/assets/register-dataset-data-subject-categories-field.png" alt=""><figcaption><p>Sélecteur de catégories de personnes concernées</p></figcaption></figure>
 
@@ -76,33 +76,31 @@ Indiquer les personnes concernées est utile dans la gestion des [demandes d'exe
 
 ### Associer des champs de données
 
-Chaque jeu de données a vocation à être complété par des champs de données. Ces champs sont les données en tant que tel.&#x20;
+Chaque jeu de données a vocation à être complété par des champs de données. Ces champs sont les données en tant que tel.
 
-Les champs qui s'affichent dans le sélecteur sont les champs disponibles dans le glossaire de données.&#x20;
+Les champs qui s'affichent dans le sélecteur sont les champs disponibles dans le glossaire de données.
 
 <figure><img src="../../../.gitbook/assets/register-dataset-data-details-list.png" alt=""><figcaption><p>Sélecteur de champs de données</p></figcaption></figure>
 
-Si une donnée n'est pas présente, vous pouvez la créer directement depuis ce sélecteur pour l'ajouter au jeu de données.&#x20;
+Si une donnée n'est pas présente, vous pouvez la créer directement depuis ce sélecteur pour l'ajouter au jeu de données.
 
 Les champs peuvent être catégorisés selon des catégories prédéterminées. Il s'agit notamment des catégories préconisées par la CNIL.
 
 <figure><img src="../../../.gitbook/assets/register-dataset-personal-data-category-dropdown.png" alt=""><figcaption><p>Sélecteur de catégorie de données personnelles</p></figcaption></figure>
 
-C'est également au niveau du champ que vous pouvez indiquer la présence d'une donnée sensible. Par exemple, une donnée de santé ou un autre type de donnée sensible.&#x20;
+C'est également au niveau du champ que vous pouvez indiquer la présence d'une donnée sensible. Par exemple, une donnée de santé ou un autre type de donnée sensible.
 
 Dans ce cas, vous êtes invité à justifier de la collecte de cette donnée et en particulier du fondement juridique la permettant.
-
-&#x20;
 
 <figure><img src="../../../.gitbook/assets/register-dataset-sensitive-data-justification.png" alt=""><figcaption><p>Donnée sensible</p></figcaption></figure>
 
 {% hint style="info" %}
-Cette information sera analysée par l'application pour déclencher un critère intelligent [d'AIPD](analyse-dimpact.md).&#x20;
+Cette information sera analysée par l'application pour déclencher un critère intelligent [d'AIPD](analyse-dimpact.md).
 {% endhint %}
 
 ### Associer une règle de conservation des données
 
-Dans chaque jeu de données, vous pouvez associer une règle de conservation des données.&#x20;
+Dans chaque jeu de données, vous pouvez associer une règle de conservation des données.
 
 <figure><img src="../../../.gitbook/assets/register-dataset-retention-periods-tabs.png" alt=""><figcaption><p>Durées de conservation</p></figcaption></figure>
 
@@ -116,31 +114,29 @@ La base active est la base courante du traitement. L'archivage intermédiaire es
 
 La conservation limitée des données fait partie des principes généraux du droit des données à caractère personnel et est rappelée à l’[**article 5 1. e) du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2). Celui-ci prévoit en effet que « _conservées sous une forme permettant l'identification des personnes concernées pendant une durée n'excédant pas celle nécessaire au regard des finalités pour lesquelles elles sont traitées_ ».
 
-Concrètement, cela signifie que lors de la mise en œuvre d’un traitement de données, il faut penser à son devenir lorsque la finalité aura été accomplie. La donnée devra être soit détruite de manière définitive, soit anonymisée, soit traitée pour une nouvelle finalité compatible.&#x20;
+Concrètement, cela signifie que lors de la mise en œuvre d’un traitement de données, il faut penser à son devenir lorsque la finalité aura été accomplie. La donnée devra être soit détruite de manière définitive, soit anonymisée, soit traitée pour une nouvelle finalité compatible.
 
-La durée de conservation dépend de la finalité du traitement et de la nature des données. Les durées de conservation peuvent être définies en fonction des types de données. Par exemple, pour la gestion de la paie, les données relatives au bulletin de salaire sont conservées 1 mois en base active et 5 ans en archivage intermédiaire tandis que les données relatives à l’ordre de virement pour paiement sont conservées le temps nécessaire à l’émission du bulletin de paie en base active et 10 ans à compter de la clôture en archive intermédiaire.&#x20;
+La durée de conservation dépend de la finalité du traitement et de la nature des données. Les durées de conservation peuvent être définies en fonction des types de données. Par exemple, pour la gestion de la paie, les données relatives au bulletin de salaire sont conservées 1 mois en base active et 5 ans en archivage intermédiaire tandis que les données relatives à l’ordre de virement pour paiement sont conservées le temps nécessaire à l’émission du bulletin de paie en base active et 10 ans à compter de la clôture en archive intermédiaire.
 
 La durée peut être exprimée en valeur ou, si ce n’est pas possible, les critères utilisés pour définir la période de conservation (jusqu’à la désinscription par exemple). Il est recommandé, en particulier par la CNIL dans sa [**recommandation du 11 octobre 2005 sur l’archivage électronique dans le secteur privé**](https://www.legifrance.gouv.fr/affichCnil.do?id=CNILTEXT000017651957), de mettre en place des procédures permettant de gérer les durées de conservation au niveau de la catégorie de données et en particulier, de gérer les purges ou destructions de données.
 
 #### Personnaliser les règles de conservation d'un jeu de données
 
-Les champs de données d'un jeu de données générique ne peuvent pas varier d'un traitement à l'autre. Cependant, la durée de conservation peut être différente. En effet, il est possible de personnaliser la durée de conservation d'un jeu de données en fonction du traitement. Ainsi, la durée de conservation du jeu de données ne sera plus prise en compte.&#x20;
+Les champs de données d'un jeu de données générique ne peuvent pas varier d'un traitement à l'autre. Cependant, la durée de conservation peut être différente. En effet, il est possible de personnaliser la durée de conservation d'un jeu de données en fonction du traitement. Ainsi, la durée de conservation du jeu de données ne sera plus prise en compte.
 
 Pour cela, il est nécessaire d'ajouter le jeu de données au traitement. Sur la liste des jeux de données, il faut cliquer sur les boutons "base active/...".
 
 <figure><img src="../../../.gitbook/assets/register-dataset-retention-periods-display.png" alt=""><figcaption><p>Bouton "base active"</p></figcaption></figure>
 
-Vous pourrez voir apparaitre la fenêtre de personnalisation.&#x20;
+Vous pourrez voir apparaitre la fenêtre de personnalisation.
 
 <figure><img src="../../../.gitbook/assets/register-dataset-retention-customize-panel.png" alt=""><figcaption><p>Fenêtre de personnalisation des durées de conservation</p></figcaption></figure>
 
-Lorsque la durée de conservation est personnalisée au niveau du traitement, un petit logo de stylo apparait sur le bouton concerné :&#x20;
+Lorsque la durée de conservation est personnalisée au niveau du traitement, un petit logo de stylo apparait sur le bouton concerné :
 
 L'objectif à terme peut être de limiter l'utilisation de jeux de données génériques et de s'orienter vers une cartographie plus précise soit via les traitements de données (cas n°2) soit via les actifs (cas n°1).
 
 <figure><img src="../../../.gitbook/assets/register-dataset-retention-base-active-edit.png" alt=""><figcaption><p>Durée personnalisée au niveau du traitement</p></figcaption></figure>
-
-
 
 ####
 

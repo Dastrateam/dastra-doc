@@ -10,13 +10,9 @@ La création et le suivi d'une tâche de protection des données n'a jamais ét�
 
 Dans Dastra, une tâche correspond à un travail qui doit être exécuté.
 
-## Création d'une tâche&#x20;
-
-
+## Création d'une tâche
 
 {% embed url="https://youtu.be/ARvp9PGVnAE" %}
-
-
 
 Pour créer une tâche, vous avez deux possibilités :
 
@@ -27,12 +23,12 @@ Pour créer une tâche, vous avez deux possibilités :
 
 Dans la page principale du module "planification", cliquez sur "Nouvelle tâche". Une nouvelle fenêtre "Nouvelle tâche" apparaît à droite de l'écran vous permettant de décrire la tâche désirée. Une fois décrite, cliquez sur "Enregistrer".
 
-![Bouton de création d'une nouvelle tâche](<../../.gitbook/assets/planning-new-task-button.png>)
+![Bouton de création d'une nouvelle tâche](../../.gitbook/assets/planning-new-task-button.png)
 
-![Interface de documentation de la tâche](<../../.gitbook/assets/capture-web-4-5-2022-14206-app-dastra-eu.jpeg>)
+![Interface de documentation de la tâche](../../.gitbook/assets/capture-web-4-5-2022-14206-app-dastra-eu.jpeg)
 
 {% hint style="info" %}
-Chaque tâche dans Dastra peut être affectée à un élément présent dans l'application,  par exemple :
+Chaque tâche dans Dastra peut être affectée à un élément présent dans l'application, par exemple :
 
 * Un traitement
 * Une application
@@ -41,7 +37,7 @@ Chaque tâche dans Dastra peut être affectée à un élément présent dans l'a
 * Une mesure de sécurité
 * Un audit / PIA
 * Un exercice de droit
-* Un incident&#x20;
+* Un incident
 
 Une fois ces tâches créées et associées, vous pourrez les retrouver directement dans la fiche de chacun de ces éléments sous l'onglet "Tâches".
 {% endhint %}
@@ -58,15 +54,15 @@ Dastra vous permet de créer une tâche au moment où vous en avez besoin, direc
 
 * Edition d'un traitement de données
 
-![Tâches attachées à des traitements de données](<../../.gitbook/assets/planning-task-tabs-register-view.png>)
+![Tâches attachées à des traitements de données](../../.gitbook/assets/planning-task-tabs-register-view.png)
 
 * Gestion d'une demande d'exercice de droits
 
-![Tâches attachées à des demandes d'exercice de droits](<../../.gitbook/assets/planning-task-tabs-panel-view.png>)
+![Tâches attachées à des demandes d'exercice de droits](../../.gitbook/assets/planning-task-tabs-panel-view.png)
 
 * Violation de données
 
-![Tâches attachées à une notification de violation de données](<../../.gitbook/assets/planning-task-tab-panel.png>)
+![Tâches attachées à une notification de violation de données](../../.gitbook/assets/planning-task-tab-panel.png)
 
 * Génération de tâches depuis un audit
 
@@ -78,7 +74,7 @@ Un plan d'action peut également être généré automatiquement suite à la ré
 
 Il est possible de créer une liste de sous-tâches à chaque tâche dans Dastra. Pour cela, modifiez une tâche et cliquez sur le bouton "ajouter une sous-tâche".
 
-![Bouton "ajouter une sous-tâche"](<../../.gitbook/assets/planning-add-subtask-button.png>)
+![Bouton "ajouter une sous-tâche"](../../.gitbook/assets/planning-add-subtask-button.png)
 
 ## Allouer une tâche
 
@@ -90,10 +86,10 @@ Ces personnes seront notifiées par mail dès la modification d'une tâche.
 
 Pour modifier une tâche, il suffit de cliquer sur les trois points à droite d'une tâche, et de sélectionner "Modifier".
 
-![Menu déroulant d'une tâche](<../../.gitbook/assets/planning-task-context-menu.png>)
+![Menu déroulant d'une tâche](../../.gitbook/assets/planning-task-context-menu.png)
 
 {% hint style="info" %}
-Pour modifier le statut d'une tâche encore plus simplement, vous pouvez "cliquer - déposer" celle-ci depuis l'onglet "tableau", qui permet une répartition des tâches entre 4 colonnes de statut : "nouveau", informations complémentaires requises", "en cours", "fait". Vous pouvez également personnaliser les colonnes de statut.&#x20;
+Pour modifier le statut d'une tâche encore plus simplement, vous pouvez "cliquer - déposer" celle-ci depuis l'onglet "tableau", qui permet une répartition des tâches entre 4 colonnes de statut : "nouveau", informations complémentaires requises", "en cours", "fait". Vous pouvez également personnaliser les colonnes de statut.
 {% endhint %}
 
 ## Archiver ou supprimer une tâche
@@ -102,7 +98,7 @@ Dans Dastra, il est possible d'archiver ou de supprimer une tâche depuis le men
 
 Contrairement à la suppression, l'archivage d'une tâche ne la supprime pas dans Dastra. Une mention "archivée" apparaît dans la tâche. Pour faire disparaître de la visualisation une tâche, il suffit de désactiver le filtre "voir les tâches archivées
 
-![Filtre "voir les tâches archivées" désactivé](<../../.gitbook/assets/planning-view-archived-tasks-toggle.png>)
+![Filtre "voir les tâches archivées" désactivé](../../.gitbook/assets/planning-view-archived-tasks-toggle.png)
 
 ## Aller plus loin
 

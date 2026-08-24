@@ -2,7 +2,7 @@
 description: Apprenez à exporter et partager un rapport de questionnaire dans Dastra.
 ---
 
-# Exporter un rapport de questionnaire
+# Exporter un rapport
 
 Une fois les réponses collectées et le questionnaire validé, vous pouvez exporter ou partager le rapport de plusieurs façons.
 

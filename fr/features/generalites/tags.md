@@ -8,7 +8,7 @@ description: >-
 
 ## A quoi servent les tags
 
-Les tags servent à classifier les informations selon votre propre méthodologie. Ils permettent de relever des traitements ou autre élément dans Dastra afin de les faire sortir du lot.&#x20;
+Les tags servent à classifier les informations selon votre propre méthodologie. Ils permettent de relever des traitements ou autre élément dans Dastra afin de les faire sortir du lot.
 
 Ainsi, vous pouvez mettre un tag "prioritaire" ou "A vérifier" ou encore "traitement sensible" pour vous permettre de retrouver facilement les traitements ou autres éléments concernés. La liste de tags n'est pas limitée. Vous pouvez en mettre plusieurs sur un traitement par exemple. En cliquant sur un tag, vous allez filtrer automatiquement les traitements qui portent ce tag
 
@@ -18,10 +18,7 @@ Dans le formulaire de saisie des tags, commencez à taper le nom de n'importe qu
 
 <figure><img src="../../.gitbook/assets/generalites-tags-create-dropdown.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## **Comment administrer tous les tags de l'application ?**
 
-* Allez dans > **Réglages de l'espace de travail** ![](<../../.gitbook/assets/generalites-tags-manage-icon.png>)&#x20;
+* Allez dans > **Réglages de l'espace de travail** ![](../../.gitbook/assets/generalites-tags-manage-icon.png)
 * Cliquez sur le menu **Gestion des tags**
-

@@ -28,15 +28,15 @@ Pour vous aider à déterminer si votre traitement est susceptible d’engendrer
 
 Ces critères sont directement intégrés à notre workflow de création de traitement de données, et vous pouvez renseigner pour chacun de vos traitements s'il y a eu de réaliser un PIA sur celui-ci ou non.
 
-![Exemple de traitement nécessitant potentiellement un PIA.](<../../.gitbook/assets/register-processing-impact-analysis-step.png>)
+![Exemple de traitement nécessitant potentiellement un PIA.](../../.gitbook/assets/register-processing-impact-analysis-step.png)
 
 ### L'identification et l'évaluation des risques
 
-Le module Risques dans Dastra vous permet de gérer les risques au niveau de vos traitements, de vos acteurs (par exemple, les sous-traitants) et de vos actifs.&#x20;
+Le module Risques dans Dastra vous permet de gérer les risques au niveau de vos traitements, de vos acteurs (par exemple, les sous-traitants) et de vos actifs.
 
-La méthodologie de gestion des risques répond aux exigences standard de gestion des risques sur les systèmes d'information.&#x20;
+La méthodologie de gestion des risques répond aux exigences standard de gestion des risques sur les systèmes d'information.
 
-4 étapes sont ainsi à suivre :&#x20;
+4 étapes sont ainsi à suivre :
 
 1 : identification du risque
 
@@ -46,9 +46,7 @@ La méthodologie de gestion des risques répond aux exigences standard de gestio
 
 4 : surveillance du risque
 
-
-
-Le risque d'une manière générale se mesure de la façon suivante :&#x20;
+Le risque d'une manière générale se mesure de la façon suivante :
 
 $$
 Risque  = Probabilité  * Impact
@@ -71,4 +69,3 @@ Ca y est, vos risques sont identifiés et évalués ! Passez ensuite à l'étape
 {% content-ref url="etape-3-prioriser-les-actions-a-mener.md" %}
 [etape-3-prioriser-les-actions-a-mener.md](etape-3-prioriser-les-actions-a-mener.md)
 {% endcontent-ref %}
-

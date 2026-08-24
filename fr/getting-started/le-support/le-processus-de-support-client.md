@@ -19,7 +19,7 @@ Notre équipe de support est disponible du lundi au vendredi, de 9h à 18h (GMT 
 * **Rapports de Bugs :** Les rapports de bugs sont considérés comme urgents, ils sont traités en priorité.
 * **Autres Demandes :** Les suggestions de nouvelles fonctionnalités, les problèmes d'utilisation, les questions du chat, et autres demandes ne sont pas prioritaires et sont traitées par ordre d'arrivée.
 
-### &#x20;Traitement des Demandes
+### Traitement des Demandes
 
 * **Rapports de Bugs :** Les rapports de bugs sont d'abord testés par l'équipe support. Si le bug est reproduit, il est alors remonté à l'équipe de développement pour correction. Une fois le correctif déployé, le support technique recontacte le client pour l'informer du déploiement du correctif et s'assurer que le problème est résolu de son côté.
 * **Autres Demandes :** Les problèmes d'utilisation, les questions du chat, et autres demandes sont analysées et traitées directement par l'équipe support.
@@ -36,6 +36,3 @@ Une enquête de satisfaction est envoyée 7 jours après la fermeture d'une dema
 Le processus de support client chez Dastra est conçu pour être efficace et centré sur le client. Notre objectif est de résoudre les problèmes rapidement tout en assurant une communication transparente avec nos clients. En suivant ce processus, nous garantissons un support de qualité et renforçons la satisfaction et la fidélité de nos clients.
 
 De plus, grâce à un engagement constant dans l'amélioration continue, nous analysons régulièrement les retours et les tendances pour adapter et optimiser notre service ainsi que notre produit. Cela nous permet non seulement de répondre aux besoins actuels de nos clients, mais aussi d'anticiper leurs futures attentes et de prévenir les problèmes avant qu'ils ne surviennent.
-
-
-

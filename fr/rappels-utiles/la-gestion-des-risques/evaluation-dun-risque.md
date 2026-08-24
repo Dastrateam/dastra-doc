@@ -16,9 +16,9 @@ Où la **probabilité** est la fréquence d'occurrence d'un évènement redouté
 
 et l'**impact** est la gravité des effets et/ou la sévérité des conséquences de cet évènement redouté.
 
-L'impact d'un risque est classé par défaut en 4 catégories :&#x20;
+L'impact d'un risque est classé par défaut en 4 catégories :
 
-* Catastrophique,&#x20;
+* Catastrophique,
 * Important,
 * Moyen,
 * Faible.
@@ -50,17 +50,13 @@ Les risques acceptables sont représentés en **vert** dans Dastra.
 
 ## Risque brut vs. risque net (ou résiduel)
 
-Un risque « **brut** » est considéré sans l’ensemble des dispositifs de maîtrise et de contrôle qui l’entoure – organisation, contrôles divers, documentation, etc.&#x20;
+Un risque « **brut** » est considéré sans l’ensemble des dispositifs de maîtrise et de contrôle qui l’entoure – organisation, contrôles divers, documentation, etc.
 
 Un risque « **net** » (ou résiduel) est, au contraire, évalué en prenant compte l’ensemble des dispositifs déjà en place et effectifs.
 
-
-
 ## Visualisation d'un risque
 
-
-
-![Exemple de visualisation de risques dans Dastra.](<../../.gitbook/assets/risks-matrix-treatment-arrows.png>)
+![Exemple de visualisation de risques dans Dastra.](../../.gitbook/assets/risks-matrix-treatment-arrows.png)
 
 Aller plus loin
 

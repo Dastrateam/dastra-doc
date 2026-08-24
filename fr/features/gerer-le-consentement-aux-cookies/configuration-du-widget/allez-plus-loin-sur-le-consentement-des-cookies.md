@@ -20,6 +20,3 @@ Pour en savoir plus, n'hésitez pas à [nous contacter directement](https://www.
 {% content-ref url="../integration-technique/" %}
 [integration-technique](../integration-technique/)
 {% endcontent-ref %}
-
-
-

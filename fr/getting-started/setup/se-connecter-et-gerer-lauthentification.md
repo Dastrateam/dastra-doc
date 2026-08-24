@@ -35,7 +35,6 @@ Si votre organisation a configuré un **SSO (Single Sign-On)**, vous pouvez vous
 <figure><img src="../../.gitbook/assets/getting-started-login-sso-page.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-
 Le SSO simplifie la gestion des accès et renforce la sécurité : vos identifiants ne sont jamais partagés avec Dastra.
 {% endhint %}
 

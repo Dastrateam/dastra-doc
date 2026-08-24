@@ -8,9 +8,9 @@ description: >-
 
 ## Prérequis : récupération d'une clé publique d'API
 
-pour récupérer une clé publique du SDK Dastra, rendez-vous sur cette page : [https://app.dastra.eu/general-settings/api](https://app.dastra.eu/general-settings/api)&#x20;
+pour récupérer une clé publique du SDK Dastra, rendez-vous sur cette page : [https://app.dastra.eu/general-settings/api](https://app.dastra.eu/general-settings/api)
 
-![](<../../../../.gitbook/assets/settings-api-key-create-modal.png>)
+![](../../../../.gitbook/assets/settings-api-key-create-modal.png)
 
 ## Configurez votre widget
 
@@ -52,11 +52,8 @@ Si vous utilisez Wordpress, vous trouverez dans le lien ci-dessous plus d'inform
 [wordpress.md](wordpress.md)
 {% endcontent-ref %}
 
-
-
 Une fois le widget intégré, passez à la phase de test.
 
 {% content-ref url="../comment-tester-lintegration-dun-widget.md" %}
 [comment-tester-lintegration-dun-widget.md](../comment-tester-lintegration-dun-widget.md)
 {% endcontent-ref %}
-

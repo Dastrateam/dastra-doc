@@ -1,7 +1,5 @@
 # Glossaire
 
-
-
 Avant de commencer, voici quelques définitions importantes :
 
 * **La probabilité:** correspond à l'évaluation de la fréquence d'occurrences d'un risque. C'est un score évalué de manière empirique (note sur 5 traditionnellement). Chaque niveau de risque correspond à une fréquence d'apparition du risque.

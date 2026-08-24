@@ -2,7 +2,7 @@
 description: Apprenez à créer et modifier un modèle de questionnaire avec Dastra.
 ---
 
-# Créer ou modifier un modèle de questionnaire
+# Créer un modèle de questionnaire
 
 ## Introduction
 
@@ -18,7 +18,7 @@ Pour créer un modèle de questionnaire, cliquez sur le bouton "Créer un modèl
 
 Vous arrivez sur l'interface de sélection des types de modèles :
 
-![Choix des types de modèles](<../../../.gitbook/assets/audit-create-type-picker.png>)
+![Choix des types de modèles](../../../.gitbook/assets/audit-create-type-picker.png)
 
 * En cliquant sur l'onglet "**Questionnaire automatisé**", vous choisirez un modèle de questionnaire prédéfini existant en piochant dans la bibliothèque de Dastra.
 * En cliquant sur "**Questionnaire personnalisé**", vous pouvez construire votre propre modèle de questionnaire.
@@ -31,7 +31,7 @@ Contrairement aux questionnaires automatisés, les questionnaires personnalisés
 
 Dastra propose de nombreux modèles de questionnaires automatisés permettant de documenter la conformité et de piloter les processus. Ces modèles incluent notamment des AIPD/PIA, des TIA, des LIA, des questionnaires sous-traitants, et bien d'autres.
 
-![Bouton de sélection de bibliothèque](<../../../.gitbook/assets/capture-web-6-5-2022-103438-app-dastra-eu.jpeg>)
+![Bouton de sélection de bibliothèque](../../../.gitbook/assets/capture-web-6-5-2022-103438-app-dastra-eu.jpeg)
 
 Une fois le modèle sélectionné, vous accédez à l'écran de planification où vous pouvez :
 
@@ -48,7 +48,7 @@ Dans Dastra, il vous est possible de créer votre propre modèle de questionnair
 
 Construisez le modèle de questionnaire que vous souhaitez et cliquez sur "Enregistrer et continuer".
 
-![Exemple de modèle de questionnaire personnalisable.](<../../../.gitbook/assets/capture-web-6-5-2022-103818-app-dastra-eu.jpeg>)
+![Exemple de modèle de questionnaire personnalisable.](../../../.gitbook/assets/capture-web-6-5-2022-103818-app-dastra-eu.jpeg)
 
 ### Éléments évalués
 
@@ -92,8 +92,8 @@ Pour que la liste s'affiche correctement, le répondant doit disposer des **droi
 
 Lorsque vous modifiez un modèle déjà utilisé dans des questionnaires existants, Dastra vous propose deux options :
 
-- **Écraser la version actuelle** : les modifications s'appliquent immédiatement au modèle. Les questionnaires déjà générés ne sont pas affectés, mais les nouvelles planifications utiliseront la version mise à jour.
-- **Créer une nouvelle version** : une nouvelle version du modèle est créée. Vous pouvez la laisser en **brouillon** le temps de la préparer, puis la promouvoir en **version principale** lorsqu'elle est prête. Les questionnaires existants continuent d'utiliser l'ancienne version principale jusqu'à ce que vous changiez explicitement de version.
+* **Écraser la version actuelle** : les modifications s'appliquent immédiatement au modèle. Les questionnaires déjà générés ne sont pas affectés, mais les nouvelles planifications utiliseront la version mise à jour.
+* **Créer une nouvelle version** : une nouvelle version du modèle est créée. Vous pouvez la laisser en **brouillon** le temps de la préparer, puis la promouvoir en **version principale** lorsqu'elle est prête. Les questionnaires existants continuent d'utiliser l'ancienne version principale jusqu'à ce que vous changiez explicitement de version.
 
 Pour naviguer entre les versions, utilisez le sélecteur de version disponible dans l'interface du modèle. La version marquée comme principale est celle qui sera utilisée pour toutes les nouvelles planifications.
 
@@ -111,18 +111,18 @@ Le nombre de modèles disponibles dépend de votre souscription. Ce quota est pa
 [planifier-un-audit.md](../planifier-un-audit.md)
 {% endcontent-ref %}
 
-{% content-ref url="../rapport-daudit.md" %}
-[rapport-daudit.md](../rapport-daudit.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/rapport-daudit.md" %}
+[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/rapport-daudit.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/rapport-daudit.md)
 {% endcontent-ref %}
 
-{% content-ref url="../pia-aipd.md" %}
-[pia-aipd.md](../pia-aipd.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/pia-aipd.md" %}
+[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/pia-aipd.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/pia-aipd.md)
 {% endcontent-ref %}
 
-{% content-ref url="../tia.md" %}
-[tia.md](../tia.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/tia.md" %}
+[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/tia.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/tia.md)
 {% endcontent-ref %}
 
-{% content-ref url="../lia.md" %}
-[lia.md](../lia.md)
+{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/lia.md" %}
+[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/lia.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/lia.md)
 {% endcontent-ref %}

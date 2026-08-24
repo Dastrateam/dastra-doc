@@ -6,8 +6,6 @@ description: >-
 
 # Intégration dans les outils d'analyse de données (BI)
 
-
-
 {% hint style="info" %}
 Pour utiliser cette fonctionnalité, vous devez avoir dans votre souscription un abonnement avec le plan **Entreprise**
 {% endhint %}
@@ -16,21 +14,17 @@ Dastra vous permettra très simplement d'importer [des rapports personnalisés](
 
 ### Mise en place dans Dastra
 
-Rendez-vous dans le module des rapports personnalisés, accédez à l'un d'eux et cliquez sur le bouton "Intégrer à un outil BI".&#x20;
-
-
+Rendez-vous dans le module des rapports personnalisés, accédez à l'un d'eux et cliquez sur le bouton "Intégrer à un outil BI".
 
 Une fenêtre modale s'ouvre, cliquez alors sur "Créer lien d'intégration".
 
 **Copier alors le lien généré**
 
-
-
 {% hint style="info" %}
-Attention ! Ne transférez à personne le lien généré. Celui-ci permet d'accéder aux données brutes du rapport.&#x20;
+Attention ! Ne transférez à personne le lien généré. Celui-ci permet d'accéder aux données brutes du rapport.
 {% endhint %}
 
-## Mise en place dans l'outil BI :&#x20;
+## Mise en place dans l'outil BI :
 
 #### Microsoft Power BI
 
@@ -54,8 +48,6 @@ Attention ! Ne transférez à personne le lien généré. Celui-ci permet d'acc�
 * **Performance** : Si votre fichier JSON est volumineux ou contient des hiérarchies profondes, Power BI peut prendre un certain temps pour charger et transformer les données.
 * **Rafraîchissement des données** : Si les données JSON sont mises à jour régulièrement (par exemple, par une API), vous pouvez configurer un **rafraîchissement des données** dans Power BI Service pour récupérer les dernières données automatiquement.
 {% endhint %}
-
-
 
 ### Google Looker
 
@@ -87,8 +79,6 @@ Si vous avez besoin d'automatiser l'intégration de données JSON depuis une API
 2. **Transformez les données** pour qu'elles correspondent aux exigences de votre entrepôt de données.
 3. **Chargez les données dans l'entrepôt** (par exemple, BigQuery).
 4. **Connectez Looker à cet entrepôt de données** pour commencer à interroger et visualiser les données.
-
-
 
 ### Tableau Software
 

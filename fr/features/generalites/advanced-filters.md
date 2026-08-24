@@ -92,5 +92,4 @@ Les filtres et vues personnalisées existants restent fonctionnels : ils sont co
 
 <figure><img src="../../.gitbook/assets/generalites-advanced-filters-condition-groups.png" alt="Panneau de filtres avancés avec deux groupes de conditions reliés par un opérateur OU"><figcaption><p>Exemple de filtres à groupes de conditions : deux blocs ET reliés par OU, avec les boutons « Ajouter une condition » et « Ajouter un groupe »</p></figcaption></figure>
 
-{% hint style="info" %}
 Les groupes de conditions sont disponibles dans toutes les listes

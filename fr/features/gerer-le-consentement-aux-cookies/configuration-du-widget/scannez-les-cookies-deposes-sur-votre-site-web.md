@@ -16,29 +16,29 @@ Vous devez tout d'abord vous connecter à votre votre espace de travail Dastra. 
 
 Ensuite, vous devez vous rendre dans le module "Cookies", et cliquer sur le bouton "Créer un widget".
 
-![Icône du module "Cookies"](<../../../.gitbook/assets/capture-web-5-5-2022-165656-app-dastra-eu.jpeg>)
+![Icône du module "Cookies"](../../../.gitbook/assets/capture-web-5-5-2022-165656-app-dastra-eu.jpeg)
 
-![Cliquer sur le bouton "Créer un widget"](<../../../.gitbook/assets/capture-web-5-5-2022-165746-app-dastra-eu.jpeg>)
+![Cliquer sur le bouton "Créer un widget"](../../../.gitbook/assets/capture-web-5-5-2022-165746-app-dastra-eu.jpeg)
 
 Un nouvel écran s'affiche. Vous vous trouvez dans la section "Scan des cookies".
 
-![](<../../../.gitbook/assets/capture-web-5-5-2022-165823-app-dastra-eu.jpeg>)
+![](../../../.gitbook/assets/capture-web-5-5-2022-165823-app-dastra-eu.jpeg)
 
-## Scannez les cookies déposés sur votre site web&#x20;
+## Scannez les cookies déposés sur votre site web
 
 Une fois dans la section "Scan des cookies", il vous suffit de saisir le nom de domaine de votre site internet dans l'espace réservé, et de cliquer sur "Valider".
 
-![Section "Scan des cookies"](<../../../.gitbook/assets/capture-web-5-5-2022-165912-app-dastra-eu.jpeg>)
+![Section "Scan des cookies"](../../../.gitbook/assets/capture-web-5-5-2022-165912-app-dastra-eu.jpeg)
 
 {% hint style="info" %}
 Votre nom de domaine doit inclure l'intégralité du préfixe "https://www." pour être pris en compte par notre moteur.
 {% endhint %}
 
-&#x20;Attendez quelques secondes, et ça y est, les cookies déposés sur votre site web sont identifiés !
+Attendez quelques secondes, et ça y est, les cookies déposés sur votre site web sont identifiés !
 
-![Le scan est en cours](<../../../.gitbook/assets/capture-web-5-5-2022-17030-app-dastra-eu.jpeg>)
+![Le scan est en cours](../../../.gitbook/assets/capture-web-5-5-2022-17030-app-dastra-eu.jpeg)
 
-![Ecran d'affichage des cookies](<../../../.gitbook/assets/cookies-categories-list-overview.png>)
+![Ecran d'affichage des cookies](../../../.gitbook/assets/cookies-categories-list-overview.png)
 
 Une fois les cookies déposés sur votre site web scannés, vous pouvez procéder à leur classification.
 
@@ -60,15 +60,8 @@ Si le SDK Dastra n'est pas encore en place sur le site scanné, les services opt
 
 ### Services ajoutés manuellement — cookies en excès
 
-Lorsque vous ajoutez un service depuis la bibliothèque Dastra (ex. Google Analytics, Meta Pixel), Dastra importe la liste complète des cookies que ce service *peut* déposer dans toutes ses configurations possibles. Votre implémentation n'en utilise probablement qu'une partie.
+Lorsque vous ajoutez un service depuis la bibliothèque Dastra (ex. Google Analytics, Meta Pixel), Dastra importe la liste complète des cookies que ce service _peut_ déposer dans toutes ses configurations possibles. Votre implémentation n'en utilise probablement qu'une partie.
 
 Il est recommandé de **supprimer les cookies que votre implémentation spécifique ne dépose pas réellement**. Déclarer des cookies non utilisés est trompeur pour les visiteurs et peut poser problème lors d'un audit de conformité.
 
 Pour identifier les cookies à conserver, croisez les résultats du scan automatique (qui détecte ce qui est effectivement déposé) avec la liste importée depuis la bibliothèque, et supprimez les entrées qui n'apparaissent pas dans le scan.
-
-
-
-
-
-
-

@@ -4,9 +4,9 @@ description: Que se passe-t-il si Dastra est indisponible ?
 
 # En cas d'indisponibilité
 
-Dans ce cas, le CDN ne fonctionnera plus. Le widget ne s‘affichera plus et le script de gestion des consentements ne se chargera pas. Le navigateur renverra une erreur 404 invisible pour l'internaute.&#x20;
+Dans ce cas, le CDN ne fonctionnera plus. Le widget ne s‘affichera plus et le script de gestion des consentements ne se chargera pas. Le navigateur renverra une erreur 404 invisible pour l'internaute.
 
-Cependant, l'indisponibilité n'aura pas d'implication pour l'internaute autre que celle de ne pas pouvoir gérer ses choix relatifs aux cookies. En conséquence, le stockage du consentement ne pourra pas être lu et aucun consentement ne sera autorisé sur le navigateur de l'internaute. En effet, les actions de consentement sont déclenchées par le widget sur le navigateur.&#x20;
+Cependant, l'indisponibilité n'aura pas d'implication pour l'internaute autre que celle de ne pas pouvoir gérer ses choix relatifs aux cookies. En conséquence, le stockage du consentement ne pourra pas être lu et aucun consentement ne sera autorisé sur le navigateur de l'internaute. En effet, les actions de consentement sont déclenchées par le widget sur le navigateur.
 
 Par ailleurs, les consentements déjà enregistrés dans l'application Dastra ne seront pas perdus mais restaurés au moment du rétablissement du service.
 

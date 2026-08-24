@@ -16,7 +16,7 @@ Pour plus d'informations sur ce qu'est une violation de données et les obligati
 
 ## Pourquoi mettre en œuvre un registre des violations de données ?
 
-L'article 33.5 du RGPD impose à chaque organisme de tenir une documentation des violations de données.&#x20;
+L'article 33.5 du RGPD impose à chaque organisme de tenir une documentation des violations de données.
 
 Au delà de l'obligation règlementaire, le stockage et l’analyse des rapports d’incidents sont essentiels pour respecter les obligations de notifications et identifier des mesures de prévention à mettre en place. Voir : [https://www.dastra.eu/fr/data-breach](https://www.dastra.eu/fr/data-breach)
 
@@ -24,19 +24,17 @@ Au delà de l'obligation règlementaire, le stockage et l’analyse des rapports
 
 DASTRA vous permet de constituer un registre des violations de données. Pour cela, rendez-vous dans l'application DASTRA, puis cliquez sur le module **Violations** disponible dans le bandeau à gauche de l'écran :
 
-![Bouton du module de gestion des violations](<../../.gitbook/assets/capture-web-5-5-2022-163811-app-dastra-eu.jpeg>)
+![Bouton du module de gestion des violations](../../.gitbook/assets/capture-web-5-5-2022-163811-app-dastra-eu.jpeg)
 
 Le registre des violations de données apparaît.
 
-![L'espace de gestion des violations](<../../.gitbook/assets/capture-web-5-5-2022-163922-app-dastra-eu.jpeg>)
+![L'espace de gestion des violations](../../.gitbook/assets/capture-web-5-5-2022-163922-app-dastra-eu.jpeg)
 
 ## Aller plus loin
 
 {% content-ref url="documenter-une-violation-de-donnees.md" %}
 [documenter-une-violation-de-donnees.md](documenter-une-violation-de-donnees.md)
 {% endcontent-ref %}
-
-
 
 {% content-ref url="incidents-en-tant-que-sous-traitant.md" %}
 [incidents-en-tant-que-sous-traitant.md](incidents-en-tant-que-sous-traitant.md)

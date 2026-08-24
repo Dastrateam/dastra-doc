@@ -35,8 +35,8 @@ Il est possible de relancer les personnes qui n'ont pas répondu au questionnair
 
 Lors de la planification, vous choisissez entre deux modes de réponse :
 
-- **Questionnaire individuel** : si vous ajoutez plusieurs répondants, Dastra génère un questionnaire distinct pour chacun d'eux. Ce mode est idéal pour collecter des informations comparables auprès de plusieurs personnes ou entités (ex. : audit fournisseurs, évaluation par département) et pour générer un reporting consolidé des réponses.
-- **Questionnaire collaboratif** : un seul questionnaire est partagé entre tous les répondants désignés, qui répondent ensemble aux mêmes questions. Ce mode convient aux questionnaires longs ou multi-domaines impliquant plusieurs équipes (ex. : PIA nécessitant les contributions des équipes juridique, IT et métier).
+* **Questionnaire individuel** : si vous ajoutez plusieurs répondants, Dastra génère un questionnaire distinct pour chacun d'eux. Ce mode est idéal pour collecter des informations comparables auprès de plusieurs personnes ou entités (ex. : audit fournisseurs, évaluation par département) et pour générer un reporting consolidé des réponses.
+* **Questionnaire collaboratif** : un seul questionnaire est partagé entre tous les répondants désignés, qui répondent ensemble aux mêmes questions. Ce mode convient aux questionnaires longs ou multi-domaines impliquant plusieurs équipes (ex. : PIA nécessitant les contributions des équipes juridique, IT et métier).
 
 ### Réponse assistée par IA
 
@@ -52,7 +52,7 @@ L'utilisation de la réponse assistée par IA consomme des crédits IA. Consulte
 
 Il est possible de rattacher le questionnaire à un autre module spécifique. Pour ce faire, à la configuration de votre modèle de questionnaire, après lui avoir donné un nom et une description, attachez-lui un élément qui sera l'objet du questionnaire.
 
-![Sélecteur de l'élément évalué dans la configuration](<../../.gitbook/assets/capture-web-6-5-2022-111340-app-dastra-eu.jpeg>)
+![Sélecteur de l'élément évalué dans la configuration](../../.gitbook/assets/capture-web-6-5-2022-111340-app-dastra-eu.jpeg)
 
 Lorsque votre questionnaire a déjà été créé, il est tout de même possible a posteriori de lui attacher un élément. Allez dans le questionnaire, cliquez sur le bouton "Modifier le modèle", puis sur le bouton "Configurer" situé en dessous du bouton "Enregistrer". Vous reviendrez alors sur l'onglet initial de configuration du modèle.
 
@@ -60,7 +60,7 @@ Ces objets peuvent être des acteurs, actifs, applications, traitements de donn�
 
 Ensuite, lorsque vous planifierez votre questionnaire, une nouvelle case "Objet lié au questionnaire" apparaîtra. Le sélecteur vous permettra de choisir plus précisément à quel objet vous lierez le questionnaire.
 
-![Un exemple d'élément attaché : un traitement de données](<../../.gitbook/assets/capture-web-6-5-2022-11277-app-dastra-eu.jpeg>)
+![Un exemple d'élément attaché : un traitement de données](../../.gitbook/assets/capture-web-6-5-2022-11277-app-dastra-eu.jpeg)
 
 {% hint style="info" %}
 Vous ne pouvez lier un questionnaire qu'à un seul objet dans Dastra.

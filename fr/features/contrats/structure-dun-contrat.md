@@ -40,6 +40,6 @@ Un contrat est actuellement composé de 4 sections (Documents, Actifs, Signatair
 
 #### La prévisualisation des pièces jointes
 
-Une zone vous permettant de prévisualiser les documents de votre contrat (le contrat et éventuelles annexes).&#x20;
+Une zone vous permettant de prévisualiser les documents de votre contrat (le contrat et éventuelles annexes).
 
 <figure><img src="../../.gitbook/assets/contracts-contract-document-panel-highlight.png" alt=""><figcaption><p>La zone de prévisualisation des documents</p></figcaption></figure>

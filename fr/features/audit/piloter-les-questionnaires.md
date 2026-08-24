@@ -50,13 +50,11 @@ Une fois la réponse examinée, cliquez sur **"Revoir et valider le questionnair
 Si vous ne pouvez pas valider une réponse, vérifiez que le répondant a bien cliqué sur le bouton **"Finaliser"**. Sans cette étape, la réponse reste en "En attente de validation".
 {% endhint %}
 
-
-
 ## Annuler un questionnaire
 
 Depuis une réponse **en attente de validation**, le responsable peut annuler le questionnaire sans repasser par la liste des questionnaires. L'action **« Annuler le questionnaire »** est proposée à l'étape de validation, à côté de **« Valider le questionnaire »** et de **« Demander une révision »**.
 
-<figure><img src="../../.gitbook/assets/questionnaire-cancel-button.png" alt="Actions de validation d'une réponse : Valider, Demander une révision, Annuler le questionnaire"><figcaption><p>L'action « Annuler le questionnaire » est proposée à l'étape de validation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/questionnaire-cancel-button.png" alt="Actions de validation d&#x27;une réponse : Valider, Demander une révision, Annuler le questionnaire"><figcaption><p>L'action « Annuler le questionnaire » est proposée à l'étape de validation</p></figcaption></figure>
 
 L'annulation demande une confirmation et accepte un commentaire facultatif. Le motif saisi est conservé dans l'historique et reste visible par le répondant.
 
@@ -70,7 +68,7 @@ Cette action met à jour directement les champs correspondants de l'objet à par
 
 Pour lancer la fusion, ouvrez la réponse complétée et cliquez sur **"Fusionner la demande (Traitement)"** — une fenêtre de confirmation liste les champs qui seront mis à jour dans l'objet cible.
 
-<figure><img src="../../.gitbook/assets/questionnaire-merge-processing-button.png" alt="Vue de reporting d'une réponse avec le bouton Fusionner la demande (Traitement)"><figcaption><p>Le bouton "Fusionner la demande" permet de répercuter les réponses dans l'objet Dastra lié</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/questionnaire-merge-processing-button.png" alt="Vue de reporting d&#x27;une réponse avec le bouton Fusionner la demande (Traitement)"><figcaption><p>Le bouton "Fusionner la demande" permet de répercuter les réponses dans l'objet Dastra lié</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/questionnaire-merge-processing-dialog.png" alt="Confirmation de la fusion avec les détails du traitement cible"><figcaption><p>Confirmation de la fusion et création du traitement depuis les réponses collectées</p></figcaption></figure>
 
@@ -82,14 +80,14 @@ Dastra permet de traduire automatiquement toutes les sections et questions d'un 
 
 Pour lancer la traduction, ouvrez un modèle de questionnaire et cliquez sur **"Traduire le questionnaire"**.
 
-<figure><img src="../../.gitbook/assets/questionnaire-translate-button.png" alt="Bouton Traduire le questionnaire dans l'éditeur de modèle"><figcaption><p>Le bouton "Traduire le questionnaire" est disponible depuis l'éditeur de modèle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/questionnaire-translate-button.png" alt="Bouton Traduire le questionnaire dans l&#x27;éditeur de modèle"><figcaption><p>Le bouton "Traduire le questionnaire" est disponible depuis l'éditeur de modèle</p></figcaption></figure>
 
 Choisissez la langue cible et le mode d'enregistrement :
 
 * **Nouvelle version** — remplace la version actuelle du modèle par la traduction
 * **Nouveau modèle indépendant** — crée un modèle séparé, sans lien avec l'original
 
-<figure><img src="../../.gitbook/assets/questionnaire-translate-dialog.png" alt="Dialogue de traduction IA avec choix de la langue cible et du mode d'enregistrement"><figcaption><p>Sélection de la langue cible et du mode d'enregistrement de la traduction</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/questionnaire-translate-dialog.png" alt="Dialogue de traduction IA avec choix de la langue cible et du mode d&#x27;enregistrement"><figcaption><p>Sélection de la langue cible et du mode d'enregistrement de la traduction</p></figcaption></figure>
 
 ## Générer un plan d'actions
 

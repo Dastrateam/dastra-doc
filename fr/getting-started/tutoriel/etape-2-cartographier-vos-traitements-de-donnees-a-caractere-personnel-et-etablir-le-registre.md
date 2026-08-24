@@ -35,7 +35,7 @@ Remplissez ensuite toutes les informations nécessaires à un traitement en suiv
 [gerer-votre-traitement.md](../../features/editer-le-registre/gerer-votre-traitement.md)
 {% endcontent-ref %}
 
-Vous partagez le registre avec l'ensemble des responsables de traitement ainsi que votre réseau de correspondants RGPD et demandez validation de toutes les parties prenantes.&#x20;
+Vous partagez le registre avec l'ensemble des responsables de traitement ainsi que votre réseau de correspondants RGPD et demandez validation de toutes les parties prenantes.
 
 {% content-ref url="../../features/editer-le-registre/partager-le-registre.md" %}
 [partager-le-registre.md](../../features/editer-le-registre/partager-le-registre.md)

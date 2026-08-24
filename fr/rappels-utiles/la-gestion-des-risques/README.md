@@ -21,4 +21,3 @@ description: Résumé des notions clefs de gestion des risques
 {% content-ref url="../../features/la-gestion-des-risques/" %}
 [la-gestion-des-risques](../../features/la-gestion-des-risques/)
 {% endcontent-ref %}
-

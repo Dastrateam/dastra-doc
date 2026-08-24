@@ -56,7 +56,7 @@ Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter 
 Lorsqu'une analyse IA a été réalisée sur une réponse de questionnaire ou une PIA, un bouton **Imprimer l'analyse** apparaît dans l'en-tête du panneau d'analyse dès qu'un résultat est disponible. Le document structuré reprend la note globale (A à F), l'appréciation générale, les critères évalués avec leur note et leur justification, ainsi que les tâches suggérées classées par priorité — sans recourir à des captures d'écran.
 {% endhint %}
 
-#### Générer un modèle de questionnaire&#x20;
+#### Générer un modèle de questionnaire
 
 1. Allez dans la rubrique **Questionnaires** et cliquez sur créer un modèle de questionnaire.
 2. Sélectionner **Créer à partir de l'IA**
@@ -161,4 +161,4 @@ L'assistant analyse les champs renseignés dans la fiche du système d'IA et pro
 **Fonctionnalité en bêta** : à traiter avec une vigilance accrue et à valider par un expert avant toute décision.
 {% endhint %}
 
-Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de 
+Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de

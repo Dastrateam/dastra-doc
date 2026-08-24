@@ -11,7 +11,7 @@ Dans ce cas, Dastra vous donne la possibilité de nous contacter directement dep
 
 <figure><img src="../../.gitbook/assets/support-chat-button.png" alt=""><figcaption><p>Le bouton chat en bas à droite de l'écran</p></figcaption></figure>
 
-![Le bouton support en haut à droite de l'écran](<../../.gitbook/assets/support-contact-icon.png>)
+![Le bouton support en haut à droite de l'écran](../../.gitbook/assets/support-contact-icon.png)
 
 {% hint style="info" %}
 Pour accéder directement au formulaire de demande de support ou au chat, vous devez disposer d'un compte et être connecté à l'application.
@@ -30,7 +30,7 @@ Après avoir cliqué sur le bouton support, une fenêtre apparait dans l'applica
 
 Choisissez une des cinq options possibles, détaillez votre réponse et cliquez sur le bouton "Envoyer la requête".
 
-![Formulaire de demande de support](<../../.gitbook/assets/capture-web-3-5-2022-152923-app-dastra-eu.jpeg>)
+![Formulaire de demande de support](../../.gitbook/assets/capture-web-3-5-2022-152923-app-dastra-eu.jpeg)
 
 Lors de la création de votre ticket, vous pouvez nous donner une autorisation préalable à effectuer des tests sur votre espace de travail en laissant cochée la case suivante :<br>
 

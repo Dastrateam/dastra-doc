@@ -11,7 +11,7 @@ description: >-
 L'intégralité de la preuve du consentement de l'utilisateur est stocké dans le localStorage du navigateur (La clé de stockage est nommée dastra-consents) au format json. La propagation des consentements en dépend, c'est pourquoi, il n'est pas recommandé de modifier directement les données de cette clé
 
 {% hint style="info" %}
-&#x20;Il n'est pas recommandé de modifier directement les données se trouvant dans le localStorage. Utilisez de préférence le SDK Javascript de dastra.
+Il n'est pas recommandé de modifier directement les données se trouvant dans le localStorage. Utilisez de préférence le SDK Javascript de dastra.
 {% endhint %}
 
 ### Accès au service de consentement
@@ -30,14 +30,14 @@ Le service de consentement de dastra est accessible de cette façon
 
 dans manager.consent, vous disposez des méthodes suivantes :
 
-- open() : ouvre le widget de consentement
-- close() : ferme le widget de consentement
-- getAllConsents() : récupère tous les consentements
-- hasConsented() : retourne `true` si l'utilisateur a déjà enregistré un consentement explicite
-- getPurposeConsent(purposeLabel:string) : récupère le consentement d'une catégorie de cookies
-- setPurposeConsent(purposeLabel:string, consent:bool): définit le consentement pour une catégorie
-- getServiceConsent(serviceShortName:string): récupère le consentement d'un service particulier.
-- setServiceConsent(serviceShortName:string, consent:bool): définit le consentement d'un élément particulier
+* open() : ouvre le widget de consentement
+* close() : ferme le widget de consentement
+* getAllConsents() : récupère tous les consentements
+* hasConsented() : retourne `true` si l'utilisateur a déjà enregistré un consentement explicite
+* getPurposeConsent(purposeLabel:string) : récupère le consentement d'une catégorie de cookies
+* setPurposeConsent(purposeLabel:string, consent:bool): définit le consentement pour une catégorie
+* getServiceConsent(serviceShortName:string): récupère le consentement d'un service particulier.
+* setServiceConsent(serviceShortName:string, consent:bool): définit le consentement d'un élément particulier
 
 ### Récupérer la liste des consentements de l'utilisateur (getAllConsents)
 

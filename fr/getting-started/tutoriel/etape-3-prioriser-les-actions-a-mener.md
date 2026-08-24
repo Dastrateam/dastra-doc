@@ -8,11 +8,10 @@ Vous ne savez pas par quelles actions commencer ? Consultez le [guide de la séc
 
 Une fois les actions nécessaires pour réaliser votre projet de mise en conformité identifiées, vous créez les tâches associées et les allouez aux collaborateurs associés directement dans l'onglet "Planification" de l'outil Dastra :
 
-![Exemple de plan d'action](<../../.gitbook/assets/planning-tasks-kanban-board.png>)
+![Exemple de plan d'action](../../.gitbook/assets/planning-tasks-kanban-board.png)
 
 Pour en savoir plus sur la fonctionnalité "Planification" de Dastra :
 
 {% content-ref url="../../features/planifier/" %}
 [planifier](../../features/planifier/)
 {% endcontent-ref %}
-

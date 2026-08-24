@@ -55,8 +55,6 @@ La bibliothèque des menaces centralise l’ensemble des menaces identifiées, a
 
 {% columns %}
 {% column %}
-
-
 Lors de la création ou de l’édition d’une menace, l’utilisateur renseigne :
 
 * **le nom de la menace**

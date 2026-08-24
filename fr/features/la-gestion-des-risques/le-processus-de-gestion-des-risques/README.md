@@ -34,9 +34,6 @@ Dès lors qu'une réponse a été apportée au risque, le risque est alors sous 
 
 Enfin, **archivez** vos risques une fois qu'ils ont disparu afin de garder une trace.
 
-
-
 {% hint style="info" %}
 La particularité du processus de gestion des risques Dastra est de permettre une mise à jour quasi-temps réel de l'évaluation du risque, en fonction des résultats des points de contrôle.
 {% endhint %}
-

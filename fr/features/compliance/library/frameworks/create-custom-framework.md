@@ -70,11 +70,7 @@ En mode édition, l’utilisateur peut :
 {% endcolumn %}
 
 {% column %}
-
-
 <figure><img src="../../../../.gitbook/assets/compliance-framework-empty-library.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -118,8 +114,6 @@ Lors de la création d’un chapitre :
 
 * **Référence** : identifiant interne du chapitre
 * **Nom** : intitulé fonctionnel du chapitre
-
-&#x20;
 
 {% hint style="info" %}
 _Bonne pratique_ : utiliser les chapitres pour structurer par grands thèmes\
@@ -165,8 +159,6 @@ Lors de la création d’une exigence, Dastra propose une **assistance IA** pour
 * le nom de l’exigence
 * le chapitre parent
 * le contexte du framework
-
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -214,11 +206,7 @@ Pour associer des contrôles à une exigence, deux approches sont possibles.
 
 {% columns %}
 {% column %}
-
-
 L’utilisateur peut sélectionner un ou plusieurs contrôles déjà présents dans la Librairie et les rattacher à l’exigence.
-
-
 {% endcolumn %}
 
 {% column %}

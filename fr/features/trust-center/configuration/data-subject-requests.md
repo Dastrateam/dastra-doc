@@ -17,4 +17,3 @@ Afin de pouvoir afficher un widget d'exercice des droits dans votre Trust center
 **Widget de collecte de demande de droits**
 
 Ce champ vous permet de sélectionner le formulaire de collecte de demandes à afficher dans votre Trust center. A noter qu'il n'est possible d'affiche qu'un seul formulaire de collecte par Trust center.
-

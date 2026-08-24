@@ -6,7 +6,7 @@ description: Apprenez à tester l'intégration d'un widget de consentement.
 
 ## Activer le mode prévisualisation
 
-![](<../../../.gitbook/assets/cookies-widget-preview-mode-toggle.png>)
+![](../../../.gitbook/assets/cookies-widget-preview-mode-toggle.png)
 
 Le mode prévisualisation désactivera le cache du widget et vous permettra de visualiser vos modifications de configuration en live. Les domaines en localhost seront également autorisés.
 
@@ -17,5 +17,5 @@ dastra00-0testing1-key
 ```
 
 {% hint style="info" %}
-&#x20;Cette clé affichera un exemple de widget de consentement. Il n'est pas possible de modifier la configuration de celui-ci. La finalité de cette clé est d'effectuer des tests d'intégrations ( par exemple dans un jsFiddle).
+Cette clé affichera un exemple de widget de consentement. Il n'est pas possible de modifier la configuration de celui-ci. La finalité de cette clé est d'effectuer des tests d'intégrations ( par exemple dans un jsFiddle).
 {% endhint %}

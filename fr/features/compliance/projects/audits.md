@@ -2,7 +2,7 @@
 
 La phase d'Audit permet de valider officiellement l'état de conformité à un instant T. Elle s’appuie sur le travail de préparation et de surveillance effectué en amont pour offrir une évaluation structurée, qu'elle soit réalisée en interne ou par des auditeurs externes.
 
-**🎯 Objectif de la phase**&#x20;
+**🎯 Objectif de la phase**
 
 Préparer et réaliser l'ensemble des audits de conformité de manière centralisée, collaborer avec les parties prenantes et assurer le suivi des corrections suite aux écarts détectés.
 
@@ -35,11 +35,9 @@ La création d'une mission est le point de départ de votre évaluation. Depuis 
 
 * Nom (obligatoire) : Titre clair de la mission (ex: "Audit de conformité annuel"), limité à 80 caractères.
 * Description (optionnel) : Précisez le contexte ou le périmètre spécifique (jusqu'à 500 caractères).
-* Auditeurs (obligatoire) : Sélectionnez les utilisateurs responsables de la réalisation de l'évaluation. Si vous ne figurez pas dans cette liste, vous ne pourrez pas répondre aux questions de l'audit (même si vous êtes propriétaire de l'organisation).&#x20;
+* Auditeurs (obligatoire) : Sélectionnez les utilisateurs responsables de la réalisation de l'évaluation. Si vous ne figurez pas dans cette liste, vous ne pourrez pas répondre aux questions de l'audit (même si vous êtes propriétaire de l'organisation).
 
 <figure><img src="../../../.gitbook/assets/compliance-project-create-audit-modal.png" alt=""><figcaption></figcaption></figure>
-
-
 
 #### 2. Phase de l'audit et Calendrier
 
@@ -104,8 +102,6 @@ Le dashboard sert également de hub collaboratif pour l'équipe d'audit :
 
 Résultat de cette étape : L'audit est maintenant en cours d'exécution. Chaque saisie met à jour dynamiquement les indicateurs de conformité globale du projet.
 
-
-
 ### 3. Évaluation des exigences et vérification des contrôles
 
 Une fois l'audit lancé, la phase d'évaluation consiste à passer en revue chaque exigence du référentiel pour valider la conformité réelle sur la base des contrôles et tests existants.
@@ -148,8 +144,6 @@ Pendant l'évaluation, le système met à jour dynamiquement les indicateurs de 
 ***
 
 Résultat attendu : Chaque exigence est désormais documentée avec un avis d'expert et des preuves vérifiées, garantissant une piste d'audit inaltérable pour les régulateurs ou la direction.
-
-
 
 ### 4. Finalisation et clôture de l'audit
 

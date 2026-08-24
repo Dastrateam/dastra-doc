@@ -2,7 +2,7 @@
 
 ### Prévisualiser votre Trust center
 
-Vous pouvez prévisualiser votre Trust center à tout moment en cliquant sur le bouton _**Apercu**_ situé en haut à droite de la page de configuration (dans la mesure ou votre Trust center est activé).&#x20;
+Vous pouvez prévisualiser votre Trust center à tout moment en cliquant sur le bouton _**Apercu**_ situé en haut à droite de la page de configuration (dans la mesure ou votre Trust center est activé).
 
 Si vous effectuez des changements sur la page de configuration, il vous faudra rafraichir la page de prévisualisation (ou la réouvrir) pour prévisualiser vos modifications
 

@@ -1,7 +1,5 @@
 # Les signataires
 
-
-
 {% hint style="info" %}
 Le signataire d'un contrat est en général une personne physique ou morale qui est **référencée an tant qu'acteur dans Dastra**.
 {% endhint %}

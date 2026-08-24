@@ -9,16 +9,16 @@ description: >-
 
 Dans le but de réduire les erreurs de saisies, le registre Dastra vous permet d'administrer un ou plusieurs référentiels de manière totalement autonomes et indépendamment du registre. Le schéma ci-dessous illustre ainsi la réutilisabilité du registre des traitements.
 
-![Schéma illustrant les relations entre traitements et référentiels (applicatifs et sous-traitance)](<../../../.gitbook/assets/register-referentiel-architecture-diagram.png>)
+![Schéma illustrant les relations entre traitements et référentiels (applicatifs et sous-traitance)](../../../.gitbook/assets/register-referentiel-architecture-diagram.png)
 
 ## Liste des référentiels proposés par Dastra
 
-* **Actifs** : les actifs regroupent les éléments utiles au pilotage des données (tels que les supports des données, les locaux, les éléments matériels ou immatériels). &#x20;
+* **Actifs** : les actifs regroupent les éléments utiles au pilotage des données (tels que les supports des données, les locaux, les éléments matériels ou immatériels).
 * **Acteurs** : les acteurs sont différenciés des utilisateurs car ils n'ont pas nécessairement besoin de venir se connecter à la plateforme.
-* **Jeux de données** : les jeux de données sont des groupes de données formant des ensembles cohérents.&#x20;
+* **Jeux de données** : les jeux de données sont des groupes de données formant des ensembles cohérents.
 * **Données** : les données sont les informations. Elles constituent le niveau le plus atomique dans Dastra.
 * **Mesures** : les mesures de sécurité sont les dispositions techniques ou organisationnelles
-* **Catégories de personnes concernées** : elles regroupent des catégories d'individus&#x20;
+* **Catégories de personnes concernées** : elles regroupent des catégories d'individus
 
 ## Générer un référentiel de données avec Dastra
 

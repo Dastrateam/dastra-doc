@@ -8,8 +8,6 @@ Pour cela, accéder à la vue liste, intitulée "Systèmes d'IA". en haut à dro
 
 Nous vous recommandons de suivre les étapes de la page [Importer vos données (Excel, Csv, JSON)](../generalites/importer-vos-donnees-excel-csv.md) pour plus de détails.
 
-
-
 ## Format d’import des systèmes d’IA dans Dastra
 
 Ce guide décrit le format attendu pour le fichier CSV permettant d’importer des systèmes d’IA dans Dastra.
@@ -64,4 +62,3 @@ Tous les champs sont optionnels sauf **Label**.
 ```
 Label,Ref,Description,State,RiskLevel,RiskLevelJustification,BenefitLevel,BenefitLevelJustification,Date
 ```
-

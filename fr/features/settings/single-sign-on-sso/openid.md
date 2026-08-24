@@ -8,11 +8,9 @@ description: Configuration d'une connexion SSO utilisant le protocole OpenId
 
 Les spécification de OpenId se trouve [ici](https://openid.net/connect/)
 
-![](<../../../.gitbook/assets/settings-sso-openid-flow-diagram.png>)
+![](../../../.gitbook/assets/settings-sso-openid-flow-diagram.png)
 
-
-
-La configuration du SSO avec OpenID se fait en trois étapes&#x20;
+La configuration du SSO avec OpenID se fait en trois étapes
 
 * Configuration du fournisseur d'authentification : Active Directory, Google Workspace...
 * Configuration du fournisseur de service : Dastra
@@ -24,12 +22,12 @@ Vous devez mettre en place une configuration OpenId dans votre fournisseur d'aut
 
 Pour active directory : [https://docs.microsoft.com/fr-fr/azure/active-directory/develop/v2-protocols-oidc](https://docs.microsoft.com/fr-fr/azure/active-directory/develop/v2-protocols-oidc)
 
-Pour faire le rapprochement entre les comptes locaux (ceux hébergés dans Dastra), vous avez besoin de fournir une propriété contenant l'email de l'utilisateur (par défaut, Dastra va chercher la propriété nommée  [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)).
+Pour faire le rapprochement entre les comptes locaux (ceux hébergés dans Dastra), vous avez besoin de fournir une propriété contenant l'email de l'utilisateur (par défaut, Dastra va chercher la propriété nommée [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)).
 
-Voici les informations dont vous avez besoin pour configurer le service provider :&#x20;
+Voici les informations dont vous avez besoin pour configurer le service provider :
 
 * **Authority/domain (ex: https://account.oauth.sso.com)**
-* **Id du client : ClientId**&#x20;
+* **Id du client : ClientId**
 * **Secret key (facultatif)**
 * **Response Type, par défaut id\_token**
 * **Scope : par défaut "openid profile email"**
@@ -42,14 +40,14 @@ Pour configurer votre fournisseur d'authentification, vous allez avoir besoin de
 
 Dans dastra.eu, rendez-vous su[r la page d'administration du SSO](https://app.dastra.eu/general-settings/sso) et cliquez sur "ajouter un login SSO"
 
-![](<../../../.gitbook/assets/settings-sso-liste-logins.png>)
+![](../../../.gitbook/assets/settings-sso-liste-logins.png)
 
-Renseignez les champs du formulaire à l'aide des infos de la configuration de l'entité&#x20;
+Renseignez les champs du formulaire à l'aide des infos de la configuration de l'entité
 
 <figure><img src="../../../.gitbook/assets/settings-sso-openid-config-modal.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-À partir du **30/03/2026,** Dastra autorisera l'authentification via le système JWT à clé privée. Vous n'aurez donc plus besoin de spécifier une clé secrète dans votre configuration SSO. Dastra récupérera automatiquement les clés publiques pour générer les JWT à clé privée. \
+À partir du **30/03/2026,** Dastra autorisera l'authentification via le système JWT à clé privée. Vous n'aurez donc plus besoin de spécifier une clé secrète dans votre configuration SSO. Dastra récupérera automatiquement les clés publiques pour générer les JWT à clé privée.\
 Pour cela, sélectionnez la deuxième option "JWT private key" dans le formulaire.
 {% endhint %}
 
@@ -66,4 +64,4 @@ Seuls les comptes qui sont internes à un abonnement seront soumis au SSO. Les c
 
 Une fois que la configuration est terminée, vous pouvez tester l'authentification en cliquant sur le bouton tester en bas à droite. Si vous rencontrez un problème lors de la configuration du SSO, n'hésitez pas à vous rapprocher du support en vous rendant sur la page de [gestion des tickets support](https://app.dastra.eu/general-settings/support).
 
-![](<../../../.gitbook/assets/settings-sso-openid-card-status.png>)
+![](../../../.gitbook/assets/settings-sso-openid-card-status.png)

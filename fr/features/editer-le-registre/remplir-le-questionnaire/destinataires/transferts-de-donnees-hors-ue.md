@@ -2,7 +2,7 @@
 
 Le transfert peut être défini comme toute communication, copie ou déplacement de données personnelles ayant vocation à être traitées dans un pays tiers à l’Union européenne.
 
-Les transferts de données hors de l’Union européenne sont par principe interdits.&#x20;
+Les transferts de données hors de l’Union européenne sont par principe interdits.
 
 Les [**articles 44 à 49 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre5) prévoient des exceptions à cette interdiction. Ils prévoient l’utilisation d’outils permettant d’encadrer ce transfert :
 

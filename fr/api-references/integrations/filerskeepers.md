@@ -15,12 +15,12 @@ Il aide les entreprises à **déterminer combien de temps conserver ou supprimer
 ### Prérequis
 
 * Avoir une licence payante Dastra
-* Avoir un compte Filerskeepers, si vous n'en avez pas, et si vous êtes déjà client Dastra, vous pouvez en [discuter avec notre équipe commerciale](https://meetings-eu1.hubspot.com/yann-forveille/rendez-vous-avec-un-expert?message=Filerskeepers+Integration) qui vous proposera des tarifs avantageux&#x20;
+* Avoir un compte Filerskeepers, si vous n'en avez pas, et si vous êtes déjà client Dastra, vous pouvez en [discuter avec notre équipe commerciale](https://meetings-eu1.hubspot.com/yann-forveille/rendez-vous-avec-un-expert?message=Filerskeepers+Integration) qui vous proposera des tarifs avantageux
 * Avoir mis en place un référentiel de durées de conservation (Schedule) dans le logiciel Filerskeepers. L'intégration aura besoin de ce référentiel pour accéder aux données du catalogue.
 
 ### Installation
 
-Le processus de mise en place est très simple :&#x20;
+Le processus de mise en place est très simple :
 
 * **Accéder à la page de l'intégration Filerskeepers dans la marketplace** d'intégrations Dastra : [https://app.dastra.eu/workspace/0/settings/integrations/filerskeepers](https://app.dastra.eu/workspace/0/settings/integrations/filerskeepers)
 * Cliquer sur le bouton **"Installer"**.
@@ -36,7 +36,7 @@ Le processus de mise en place est très simple :&#x20;
 * Sélectionnez le référentiel Filerskeepers que vous souhaitez synchroniser avec Dastra
 * Choisissez si vous souhaitez mettre en place la synchronisation des durées de conservation. (Les jeux de données synchronisés avec Filerskeepers seront maintenues à jour toutes les nuit à 00:00 UTC)
 * Sélectionnez les personnes à notifier dans le cas de modification/création des durées de conservation dans les jeux de données. La personne recevra un email de notification contenant les informations sur les jeux de données qui ont été mis à jour.
-* Cochez "Create new datasets if not exists" aura pour conséquence de créer un jeu de données pour chaque type de données déclérées dans votre compte Filerskeepers.&#x20;
+* Cochez "Create new datasets if not exists" aura pour conséquence de créer un jeu de données pour chaque type de données déclérées dans votre compte Filerskeepers.
 
 {% hint style="info" %}
 Attention, si vous cochez cette case, un grand nombre de jeux de données vont être créés automatiquement dans votre espace de travail.
@@ -44,9 +44,9 @@ Attention, si vous cochez cette case, un grand nombre de jeux de données vont �
 
 ### Sélection de la politique de durée de conservation
 
-Le connecteur Filerskeepers a plusieurs modes de fonctionnement :&#x20;
+Le connecteur Filerskeepers a plusieurs modes de fonctionnement :
 
-* Affichage du sélecteur de durée de conservation depuis votre référentiel de durées de conservation. Appelées "Schedule" dans le logiciel&#x20;
+* Affichage du sélecteur de durée de conservation depuis votre référentiel de durées de conservation. Appelées "Schedule" dans le logiciel
 
 Désormais, quand vous vous rendez dans un jeu de données, dans la section "politiques de conservation", un bouton de sélection de la politique de conservation s'affichera
 
@@ -56,9 +56,9 @@ En cliquant sur ce bouton, vous allez pouvoir directement sélectionner un jeu d
 
 <figure><img src="../../.gitbook/assets/integration-filerskeepers-schedule-table.png" alt=""><figcaption></figcaption></figure>
 
-Sélectionnez un jeu de données, en cliquant sur  le bouton "Select"
+Sélectionnez un jeu de données, en cliquant sur le bouton "Select"
 
-Une fois que vous avez sélectionné la durée de conservation, la fenêtre se fermera, et les informations suivantes s'afficheront : <br>
+Une fois que vous avez sélectionné la durée de conservation, la fenêtre se fermera, et les informations suivantes s'afficheront :<br>
 
 <figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-synced.png" alt=""><figcaption></figcaption></figure>
 
@@ -68,7 +68,7 @@ Seul les durées conservation en base active seront synchronisées
 
 ### Comment sont synchronisées les données entre Dastra et Filerskeepers ?
 
-Un certain nombre de champs issues de Filerskeepers seront automatiquement mappés sur votre durée de conservation :&#x20;
+Un certain nombre de champs issues de Filerskeepers seront automatiquement mappés sur votre durée de conservation :
 
 * **La durée de conservation** (from)
 * **La description de la règle de conservation**

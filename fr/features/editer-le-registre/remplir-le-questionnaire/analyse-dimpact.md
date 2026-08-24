@@ -2,11 +2,11 @@
 
 {% embed url="https://youtu.be/We7jZ2DpmLk" %}
 
-Cette étape vous permettra d’évaluer de manière simple si votre traitement doit faire l’objet d’une analyse d’impact sur la protection des données (AIPD ou  PIA en anglais) prévue par l’[**article 35 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article35).&#x20;
+Cette étape vous permettra d’évaluer de manière simple si votre traitement doit faire l’objet d’une analyse d’impact sur la protection des données (AIPD ou PIA en anglais) prévue par l’[**article 35 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article35).
 
-Un PIA c’est quoi ? Un processus pour évaluer la nécessité et la proportionnalité et de gérer les risques.&#x20;
+Un PIA c’est quoi ? Un processus pour évaluer la nécessité et la proportionnalité et de gérer les risques.
 
-Dans quelles conditions dois-je mener un PIA ? Si les risques pour les droits et libertés des personnes concernées sont élevées. Le  CEPD a apporté des éclaircissements pour préciser le champ d’application de cette exigence. Concrètement, si le traitement répond à au moins deux des critères suivants, la réalisation d’un PIA s’imposera :&#x20;
+Dans quelles conditions dois-je mener un PIA ? Si les risques pour les droits et libertés des personnes concernées sont élevées. Le CEPD a apporté des éclaircissements pour préciser le champ d’application de cette exigence. Concrètement, si le traitement répond à au moins deux des critères suivants, la réalisation d’un PIA s’imposera :
 
 * Évaluation/scoring
 * Décision automatique avec effet légal
@@ -19,13 +19,13 @@ Dans quelles conditions dois-je mener un PIA ? Si les risques pour les droits et
 * Transfert hors UE
 * Blocage d’un droit/contrat
 
-Le critère des transferts hors UE ne fait pas partie de la liste établie par le CEPD mais constitue un risque important compte tenu des garanties nécessaires pour effectuer un transfert.&#x20;
+Le critère des transferts hors UE ne fait pas partie de la liste établie par le CEPD mais constitue un risque important compte tenu des garanties nécessaires pour effectuer un transfert.
 
-Parfois, en cas de traitement particulièrement sensible pour les personnes concernées, seul un critère pourra être retenu.&#x20;
+Parfois, en cas de traitement particulièrement sensible pour les personnes concernées, seul un critère pourra être retenu.
 
-Par ailleurs, les autorités de contrôle publient une liste des types de traitement dont la réalisation d’un PIA est obligatoire et peuvent publier une liste des types de traitement dont la réalisation d’un PIA n’est pas obligatoire.&#x20;
+Par ailleurs, les autorités de contrôle publient une liste des types de traitement dont la réalisation d’un PIA est obligatoire et peuvent publier une liste des types de traitement dont la réalisation d’un PIA n’est pas obligatoire.
 
-La CNIL en France a publié ces deux listes accessibles ici :&#x20;
+La CNIL en France a publié ces deux listes accessibles ici :
 
 [**Liste des types de traitement avec PIA non obligatoire**](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-aipd-non-requise.pdf)
 

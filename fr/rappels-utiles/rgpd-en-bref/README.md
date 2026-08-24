@@ -101,8 +101,6 @@ L’**AI Act**, à venir, vient compléter ce cadre en encadrant les **systèmes
 [systemes-dia](../../features/systemes-dia/)
 {% endcontent-ref %}
 
-
-
 ***
 
 {% hint style="warning" %}

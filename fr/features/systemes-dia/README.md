@@ -8,8 +8,6 @@ description: Vous apprendrez ici à utiliser la fonctionnalité des Systèmes d'
 
 Dans cette section, vous apprendrez à utiliser la fonctionnalité **Systèmes d'IA** de Dastra et à comprendre son intérêt pour votre organisation.
 
-
-
 <figure><img src="../../.gitbook/assets/systemes-dia-registre-liste.png" alt=""><figcaption><p>Interface du module</p></figcaption></figure>
 
 ***
@@ -111,8 +109,3 @@ Utiliser la fonctionnalité **Systèmes d’IA** dans Dastra vous permettra de :
 Accédez aux sections suivantes pour découvrir **pas à pas** comment utiliser chaque fonctionnalité du module et construire un registre IA conforme, utile et aligné sur vos enjeux stratégiques.
 
 ***
-
-
-
-
-

@@ -24,7 +24,7 @@ Si aucun modèle ne vous convient, cliquez sur "Créer modèle"
 
 <figure><img src="../../.gitbook/assets/dsr-message-template-selection.png" alt=""><figcaption><p>Sélection ou création d'un modèle</p></figcaption></figure>
 
-L'interface de création de modèle comprend 4 éléments&#x20;
+L'interface de création de modèle comprend 4 éléments
 
 * Le nom (permettra de retrouver le modèle plus tard)
 * La zone de saisie (Corps du modèle, encadrée en vert)
@@ -45,7 +45,7 @@ Comme vous pouvez le voir sur l'animation ci-dessus, les champs entourés par de
 
 ### Créez de nouveau champs personnalisés à partir de l'Input Data
 
-En cliquant sur l'onglet "Input Data", vous aurez accès à la liste des propriétés de l'objet lié. Dans l'exemple ci-dessous, je décide d'afficher le message lié la demande :&#x20;
+En cliquant sur l'onglet "Input Data", vous aurez accès à la liste des propriétés de l'objet lié. Dans l'exemple ci-dessous, je décide d'afficher le message lié la demande :
 
 * Je cherche le champ dans "Input Data"
 * Je saisie le nom du champ dans le Corps du message avec la syntaxe \{{message\}}
@@ -61,7 +61,7 @@ Il est également possible de créer des blocs conditionnels qi ne s'afficheront
 
 Pour cela, il faut utiliser le système de balise conditionnelle qui commence avec \{% if qqch == true %\} et finit avec \{% endif %\}
 
-&#x20;Ainsi, je peux écrire la condition suivante :&#x20;
+Ainsi, je peux écrire la condition suivante :
 
 > \{% if attachments != blank %\}
 >
@@ -75,7 +75,7 @@ Le bloc ne s'affichera que si une pièce jointe est présente dans la demande
 
 Les boucles fonctionnent de la même manière, sauf que cette fois on va générer une variable interne à la boucle.
 
-Ca fonctionne de la manière suivante :&#x20;
+Ca fonctionne de la manière suivante :
 
 ```liquid
 {% for purpose in purposes %}
@@ -127,7 +127,7 @@ Le corps de texte ci-dessous utilise tous les éléments ci-dessus
 >
 > \{{operator.displayName\}}
 
-Pour la demande en cours de traitement, il sera transformé de la manière suivante :&#x20;
+Pour la demande en cours de traitement, il sera transformé de la manière suivante :
 
 <figure><img src="../../.gitbook/assets/dsr-message-template-preview.png" alt=""><figcaption><p>Un exemple de modèle complet</p></figcaption></figure>
 

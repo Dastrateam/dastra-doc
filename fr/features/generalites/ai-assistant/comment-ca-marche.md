@@ -2,7 +2,7 @@
 
 ### Modèles et hébergement
 
-<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-settings-models.png" alt="Page Paramètres de l'assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres de l'organisation > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-settings-models.png" alt="Page Paramètres de l&#x27;assistant IA avec les familles de modèles et le quota de crédits"><figcaption><p>Paramètres de l'organisation > Assistant IA — choix de la famille de modèles et suivi du quota de crédits</p></figcaption></figure>
 
 Dastra utilise des modèles d'IA générative pré-entraînés, disponibles en quatre familles au choix :
 
@@ -17,7 +17,7 @@ Pour les trois premières familles, les modèles sont hébergés sur l'infrastru
 
 Pour chaque famille, trois niveaux de modèle sont utilisés selon la complexité de la tâche :
 
-* **Fast**  (actions simples) : génération de descriptions, proposition de tags
+* **Fast** (actions simples) : génération de descriptions, proposition de tags
 * **Smart** (actions nécessitant plus de raisonnement) : génération d'éléments structurés dans Dastra
 * **Contexte étendu** (actions traitant un volume important de données) : réponse à un questionnaire, analyse de conformité
 
@@ -27,7 +27,7 @@ Vous pouvez configurer la famille de modèles utilisée dans les **Paramètres d
 
 ### Custom AI provider
 
-<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Familles de modèles de l'assistant IA, dont le Custom AI provider"><figcaption><p>Le Fournisseur d'IA personnalisé (Custom AI provider) parmi les familles de modèles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Familles de modèles de l&#x27;assistant IA, dont le Custom AI provider"><figcaption><p>Le Fournisseur d'IA personnalisé (Custom AI provider) parmi les familles de modèles</p></figcaption></figure>
 
 Dastra vous permet de connecter votre propre fournisseur d'IA via une clé API, à condition que celui-ci soit compatible avec le standard OpenAI API. Les fournisseurs supportés incluent notamment OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Microsoft Foundry, ainsi que tout LLM auto-hébergé compatible.
 
@@ -39,9 +39,7 @@ Pour les fournisseurs reconnus, le **point d'accès (Base URL)** est pré-rempli
 * Vous désignez le modèle à utiliser pour chaque type d'opération — rapide, avancé et grand contexte — un modèle recommandé étant proposé par défaut.
 * La clé d'API n'est jamais réaffichée en clair, et la gestion des identifiants est réservée aux utilisateurs disposant des droits sur les intégrations.
 
-<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenêtre d'identifiants du fournisseur personnalisé avec Anthropic et le bouton Tester la connexion"><figcaption><p>Configuration d'Anthropic : Base URL pré-remplie, clé d'API et bouton « Tester la connexion »</p></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenêtre d&#x27;identifiants du fournisseur personnalisé avec Anthropic et le bouton Tester la connexion"><figcaption><p>Configuration d'Anthropic : Base URL pré-remplie, clé d'API et bouton « Tester la connexion »</p></figcaption></figure>
 
 {% hint style="warning" %}
 Lorsque vous utilisez un Custom AI provider, les données transmises au modèle sont soumises à la politique de confidentialité de **votre fournisseur**, et non aux garanties Azure décrites sur cette page. Vérifiez les conditions de votre fournisseur avant d'activer cette option, notamment si vos prompts peuvent contenir des données à caractère personnel.

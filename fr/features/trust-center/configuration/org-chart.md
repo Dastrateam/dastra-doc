@@ -13,4 +13,3 @@ En dehors de l'activation, l'organigramme ne nécessite pas de configuration add
 #### Affichage de l'organigramme et impact du choix de l'unité organisationnelle
 
 Une fois la fonctionnalité activée, l'organigramme de l'unité organisationnelle de votre Trust center (cette unité et tous ses sous-ensembles) sera affiché sur la page 'Organigramme' de votre Trust center.
-

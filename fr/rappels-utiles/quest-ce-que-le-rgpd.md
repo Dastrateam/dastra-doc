@@ -91,7 +91,7 @@ D’un point de vue pratique, le RGPD et les textes associés imposent aux organ
 * La **sensibilisation et la formation** des équipes.
 
 {% hint style="success" %}
-&#x20;_Les organisations qui adoptent une approche proactive et intégrée de la conformité gagnent en efficacité, en confiance et en crédibilité auprès de leurs clients et partenaires._
+_Les organisations qui adoptent une approche proactive et intégrée de la conformité gagnent en efficacité, en confiance et en crédibilité auprès de leurs clients et partenaires._
 {% endhint %}
 
 ***

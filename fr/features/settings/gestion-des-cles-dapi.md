@@ -13,7 +13,7 @@ description: Cette page vous explique comment créer des clés d'APIs dans Dastr
 ### Comment générer une clé d'API ?
 
 1. [Accédez au gestionnaire](https://app.dastra.eu/general-settings/api) de clé de Dastra (Seuls les propriétaires de compte ont accès à cette partie)
-2. Cliquez sur "**créer une clé d'API**"&#x20;
+2. Cliquez sur "**créer une clé d'API**"
 3. Renseignez le nom de la clé et les urls de redirection et cors (si vous souhaitez utiliser l'API en javascript en OAuth2)
 4. Cliquez sur "**enregistrer**"
 5. Une fois votre clé d'API créée, vous pouvez la copier et la coller directement depuis le gestionnaire (clé privée ou publique)

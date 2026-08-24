@@ -7,18 +7,18 @@ description: >-
 
 # Sécurité chez Dastra
 
-Chez Dastra, nous prenons la sécurité très au sérieux. Voici quelques éléments que nous partageons concernant la mise en oeuvre de mesures de sécurité :&#x20;
+Chez Dastra, nous prenons la sécurité très au sérieux. Voici quelques éléments que nous partageons concernant la mise en oeuvre de mesures de sécurité :
 
 ## Hébergement sécurisé sur le Cloud
 
 Nous externalisons l'hébergement des données de la plateforme auprès de Microsoft Azure. Nous avons choisi cette plateforme car elle est très largement déployée chez nos clients (MS 365...) et celle-ci offre le niveau de sécurité [parmi les plus élevés du marché](https://learn.microsoft.com/fr-fr/azure/compliance/).
 
-Les lieux de stockage des données sont situés à Paris (données de production) et Marseille (les sauvegardes) en France. Une redondance des données est réalisée dans le data center d'Amsterdam.&#x20;
+Les lieux de stockage des données sont situés à Paris (données de production) et Marseille (les sauvegardes) en France. Une redondance des données est réalisée dans le data center d'Amsterdam.
 
 ## **Authentification à deux facteurs**
 
-L'authentification à 2 facteurs fonctionne en utilisant le protocole TOTP. \
-Chaque utilisateur peut individuellement activer la fonctionnalité d'authentification à 2 facteurs. Il est possible pour tous les propriétaires d'organisation de forcer l'utilisation de l'authentification à deux facteurs.&#x20;
+L'authentification à 2 facteurs fonctionne en utilisant le protocole TOTP.\
+Chaque utilisateur peut individuellement activer la fonctionnalité d'authentification à 2 facteurs. Il est possible pour tous les propriétaires d'organisation de forcer l'utilisation de l'authentification à deux facteurs.
 
 [En savoir plus sur l'authentification forte](mfa.md)
 
@@ -34,13 +34,13 @@ Toutes les données échangées entre nos clients et applications sont chiffrée
 
 Les disques de données sur les serveurs hébergeant des données clients sur le cloud Azure sont toutes encodées au repos à l'aide de la technologie "[Transparent data encryption](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver16)".
 
-Les fichiers physiques sont également encryptées statiquement dans le service Azure Storage avec uns système d'encryptage transparent 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard), un des algorithme les plus solide qui est FIPS 140-2 compliant.
+Les fichiers physiques sont également encryptées statiquement dans le service Azure Storage avec uns système d'encryptage transparent 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard), un des algorithme les plus solide qui est FIPS 140-2 compliant.
 
 L'ensemble des clés de chiffrement est stocké **dans un coffre de clés managé par Dastra** (incluant de la rotation automatique).
 
-## Tests de pénétration (Pentests)&#x20;
+## Tests de pénétration (Pentests)
 
-Nous faisons auditer tous les ans la sécurité de l'application par un auditeur tiers indépendant.&#x20;
+Nous faisons auditer tous les ans la sécurité de l'application par un auditeur tiers indépendant.
 
 Le dernier test a été réalisé en septembre 2024 et n'a révélé aucune vulnérabilité critique.
 
@@ -64,7 +64,7 @@ Dans le cas d'une suppression d'un compte. Les données sont conservées 1 mois 
 
 ## **Politique de mot de passe**
 
-Au moins **10 caractères** comportant **4 types de caractères** (majuscules, minuscules, chiffres, caractères spéciaux)&#x20;
+Au moins **10 caractères** comportant **4 types de caractères** (majuscules, minuscules, chiffres, caractères spéciaux)
 
 Temporisation d’accès au compte après plusieurs échecs.
 
@@ -80,13 +80,13 @@ Affichez et gérez l'ensemble des [clés d'API](../features/settings/gestion-des
 
 ## Contrôle des accès total
 
-Utilisation du modèle de gestion des accès [RBAC ](https://en.wikipedia.org/wiki/Role-based\_access\_control)(Role-base-access-control). Le responsable de l'organisation est en mesure de choisir les [rôles et permissions](../features/settings/roles-et-permissions.md) de chaque utilisateur de manière extrêmement souple.
+Utilisation du modèle de gestion des accès [RBAC ](https://en.wikipedia.org/wiki/Role-based_access_control)(Role-base-access-control). Le responsable de l'organisation est en mesure de choisir les [rôles et permissions](../features/settings/roles-et-permissions.md) de chaque utilisateur de manière extrêmement souple.
 
 ## Authentification sécurisée basée sur OpenIdConnect pour l'ensemble de nos sites
 
-L'autorité d'authentification est [https://account.dastra.eu](https://account.dastra.eu) utilise OpenId afin d'assurer l'authentification de tous nos utilisateurs.&#x20;
+L'autorité d'authentification est [https://account.dastra.eu](https://account.dastra.eu) utilise OpenId afin d'assurer l'authentification de tous nos utilisateurs.
 
-**OpenID** est un système d’[authentification](https://fr.wikipedia.org/wiki/Authentification) décentralisé qui permet l’[authentification unique](https://fr.wikipedia.org/wiki/Authentification\_unique), ainsi que le partage d’attributs. Il permet à un utilisateur de s’authentifier auprès de plusieurs sites (devant prendre en charge cette technologie) sans avoir à retenir un identifiant pour chacun d’eux mais en utilisant à chaque fois un unique identifiant OpenID.
+**OpenID** est un système d’[authentification](https://fr.wikipedia.org/wiki/Authentification) décentralisé qui permet l’[authentification unique](https://fr.wikipedia.org/wiki/Authentification_unique), ainsi que le partage d’attributs. Il permet à un utilisateur de s’authentifier auprès de plusieurs sites (devant prendre en charge cette technologie) sans avoir à retenir un identifiant pour chacun d’eux mais en utilisant à chaque fois un unique identifiant OpenID.
 
 ## **Liste d'autorisation des adresses IPs**
 
@@ -98,9 +98,8 @@ Les administrateurs peuvent définit une liste blanche de domaines d'emails auto
 
 ## Isolation stricte entre les environnements de production et de développement
 
-Hors mis quelques personnes habilitées, les développeurs de l'application n'utilisent et n'accèdent jamais aux données de l'environnement de production. Cette isolation est stricte et ne peut être contournée.&#x20;
+Hors mis quelques personnes habilitées, les développeurs de l'application n'utilisent et n'accèdent jamais aux données de l'environnement de production. Cette isolation est stricte et ne peut être contournée.
 
 Dans les environnement de tests ou de pré-production, nous n'utilisons que des jeux de données de tests que nous avons produit.
 
 ##
-

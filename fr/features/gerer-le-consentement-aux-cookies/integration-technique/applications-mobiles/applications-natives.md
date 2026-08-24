@@ -7,24 +7,27 @@ description: >-
 
 # Applications natives
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/client/cookie-widget-settings/:id?key=:key" method="get" summary="Récupérer la configuration du widget" expanded="false" %}
-{% swagger-description %}
+## Récupérer la configuration du widget
+
+<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/client/cookie-widget-settings/:id?key=:key`
+
 Cet endpoint permet de récupérer l'intégralité de la configuration du widget
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="id" type="number" %}
-ID of the widget configuration
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="query" name="culture" type="string" %}
-The locale of the widget configuration (en, fr...)
-{% endswagger-parameter %}
+| Name | Type   | Description                    |
+| ---- | ------ | ------------------------------ |
+| id   | number | ID of the widget configuration |
 
-{% swagger-parameter in="query" name="key" type="string" %}
-The public api key provided
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-response status="200" description="Cake successfully retrieved." %}
+| Name    | Type   | Description                                        |
+| ------- | ------ | -------------------------------------------------- |
+| culture | string | The locale of the widget configuration (en, fr...) |
+| key     | string | The public api key provided                        |
+
+{% tabs %}
+{% tab title="200 Cake successfully retrieved." %}
 ```
 {
   "translation": {
@@ -141,68 +144,40 @@ The public api key provided
   "tenantId": 1
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/client/collect/:id?key=:key" method="post" summary="Enregistrement des consentements" %}
-{% swagger-description %}
+## Enregistrement des consentements
+
+<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/client/collect/:id?key=:key`
+
 Cette méthode permet de collecter les consentements aux cookies
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="id" type="string" %}
-ID of the widget configuration
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="query" name="key" type="string" %}
-The public api key
-{% endswagger-parameter %}
+| Name | Type   | Description                    |
+| ---- | ------ | ------------------------------ |
+| id   | string | ID of the widget configuration |
 
-{% swagger-parameter in="body" name="consents" type="object" %}
-&#x20;La liste des consentements de l'utilisateur\
-\
-`{`\
-`"cookieConsents":`\
-`[`\
-&#x20; `{`\
-&#x20;   `"consent":true, // True if consented, false if refused`\
-&#x20;   `"id":"e213aca4-79b7-4b93-2bad-08d897969898", // Cookies id`\
-&#x20;   `"date":"2021-03-15T14:00:04.133Z",`\
-&#x20;   `"name":"yrdy",`\
-&#x20;   `"slug":"yrdy",`\
-&#x20;   `"purpose":3`\
-&#x20; `}`\
-`],`\
-`"lang":"fr-FR",`\
-`"consentId":"6f47576e-5a0c-4219-8efe-331e72bab73a",`\
-`"date":1615809009744`\
-`}`\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-&#x20;
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="body" name="type" type="string" %}
-CookieEventType Visit,Quit,Consents
-{% endswagger-parameter %}
+| Name | Type   | Description        |
+| ---- | ------ | ------------------ |
+| key  | string | The public api key |
 
-{% swagger-parameter in="body" name="consentId" type="string" %}
-The current consent Id (If any collected before)
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="userId" type="string" %}
-Custom user id (
-{% endswagger-parameter %}
+| Name      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| consents  | object | <p>La liste des consentements de l'utilisateur<br><br><code>{</code><br><code>"cookieConsents":</code><br><code>[</code><br><code>{</code><br><code>"consent":true, // True if consented, false if refused</code><br><code>"id":"e213aca4-79b7-4b93-2bad-08d897969898", // Cookies id</code><br><code>"date":"2021-03-15T14:00:04.133Z",</code><br><code>"name":"yrdy",</code><br><code>"slug":"yrdy",</code><br><code>"purpose":3</code><br><code>}</code><br><code>],</code><br><code>"lang":"fr-FR",</code><br><code>"consentId":"6f47576e-5a0c-4219-8efe-331e72bab73a",</code><br><code>"date":1615809009744</code><br><code>}</code><br><br><br><br><br><br><br><br><br><br></p> |
+| type      | string | CookieEventType Visit,Quit,Consents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| consentId | string | The current consent Id (If any collected before)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| userId    | string | Custom user id (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-{% swagger-response status="200" description="Return the id of the consent collected" %}
+{% tabs %}
+{% tab title="200 Return the id of the consent collected" %}
 ```
 140f213b-de17-4572-99a7-5075ccbcbbec
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}

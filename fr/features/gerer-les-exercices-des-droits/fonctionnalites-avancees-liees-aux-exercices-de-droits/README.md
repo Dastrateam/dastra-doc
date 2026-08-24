@@ -29,6 +29,3 @@ Les paramètres globaux de l’espace de travail permettent de configurer deux f
 {% content-ref url="regles-de-purge-des-demandes.md" %}
 [regles-de-purge-des-demandes.md](regles-de-purge-des-demandes.md)
 {% endcontent-ref %}
-
-
-

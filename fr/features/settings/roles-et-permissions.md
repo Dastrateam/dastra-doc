@@ -10,10 +10,10 @@ description: >-
 
 ## Fonctionnement général
 
-Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont eux mêmes associés à une liste de permissions (ex: écrire dans le registre, créer un questionnaire...). Il existe deux manières d'administrer les rôles associés aux utilisateurs.&#x20;
+Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont eux mêmes associés à une liste de permissions (ex: écrire dans le registre, créer un questionnaire...). Il existe deux manières d'administrer les rôles associés aux utilisateurs.
 
 * Si vous êtes propriétaire, vous pouvez utiliser[ cette interface de gestion de comptes](https://app.dastra.eu/general-settings/users)
-* Si vous avez le rôle d'administrateur d'espace de travail, vous pouvez gérer les rôles et permissions des utilisateurs appartenant à votre espace de travail en utilisant [cette interface](https://app.dastra.eu/workspace/573/settings/users).&#x20;
+* Si vous avez le rôle d'administrateur d'espace de travail, vous pouvez gérer les rôles et permissions des utilisateurs appartenant à votre espace de travail en utilisant [cette interface](https://app.dastra.eu/workspace/573/settings/users).
 
 ## Créez vos propres rôles
 
@@ -24,8 +24,6 @@ Vous pouvez créer un "nouveau rôle" personnalisé en cliquant sur le bouton "A
 <figure><img src="../../.gitbook/assets/settings-roles-base-list.png" alt=""><figcaption></figcaption></figure>
 
 Il est ensuite possible de sélectionner les cases associées aux permissions :
-
-
 
 <figure><img src="../../.gitbook/assets/settings-roles-edit-permissions.png" alt=""><figcaption><p>Création d'un rôle de gestion des tâches</p></figcaption></figure>
 

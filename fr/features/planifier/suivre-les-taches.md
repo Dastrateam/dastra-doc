@@ -6,29 +6,29 @@ description: Apprenez à suivre vos tâches
 
 ## Introduction
 
-Dans Dastra,  l'ensemble des tâches du plan d'action peuvent faire l'objet d'un suivi depuis l'onglet "Statistiques", accessible dans le module "planification", et être exportées.
+Dans Dastra, l'ensemble des tâches du plan d'action peuvent faire l'objet d'un suivi depuis l'onglet "Statistiques", accessible dans le module "planification", et être exportées.
 
-![L'onglet "Statistiques"](<../../.gitbook/assets/capture-web-4-5-2022-15757-app-dastra-eu.jpeg>)
+![L'onglet "Statistiques"](../../.gitbook/assets/capture-web-4-5-2022-15757-app-dastra-eu.jpeg)
 
-Cela permet notamment de piloter vos processus et réaliser des statistiques à l'aide de KPI dans un mode agile, pour _in fine_ démontrer la responsabilisation ("accountability") de votre entreprise vis-à-vis du RGPD.&#x20;
+Cela permet notamment de piloter vos processus et réaliser des statistiques à l'aide de KPI dans un mode agile, pour _in fine_ démontrer la responsabilisation ("accountability") de votre entreprise vis-à-vis du RGPD.
 
 ## Suivi des tâches
 
 #### Onglet tableau
 
-L'onglet colonnes permet d'afficher une liste de l'ensemble des tâches.&#x20;
+L'onglet colonnes permet d'afficher une liste de l'ensemble des tâches.
 
-![Onglet tableau du module Planification](<../../.gitbook/assets/capture-web-4-5-2022-151055-app-dastra-eu.jpeg>)
+![Onglet tableau du module Planification](../../.gitbook/assets/capture-web-4-5-2022-151055-app-dastra-eu.jpeg)
 
 La visualisation peut être personnalisée grâce à l'interface de configuration dédiée (boutons "filtres" et "colonnes").
 
-![Ecran de personnalisation de l'onglet tableau](<../../.gitbook/assets/planning-tasks-columns-management.png>)
+![Ecran de personnalisation de l'onglet tableau](../../.gitbook/assets/planning-tasks-columns-management.png)
 
-#### Onglet colonnes&#x20;
+#### Onglet colonnes
 
 L'onglet colonne permet d'accéder à une synthèse des tâches, qui vous permet de visualiser l'ensemble des tâches par statut de manière graphique.
 
-![Exemple de tableau de synthèse des tâches](<../../.gitbook/assets/planning-tasks-kanban-view.png>)
+![Exemple de tableau de synthèse des tâches](../../.gitbook/assets/planning-tasks-kanban-view.png)
 
 #### Graphique d'avancement
 
@@ -36,35 +36,33 @@ Le graphique d'avancement synthèse l'ensemble des informations concernant les p
 
 Ce graphique représente l’évolution de la quantité de travail restante pour une période donnée (correspondant à une itération).
 
-![Exemple de graphique d'avancement](<../../.gitbook/assets/planning-tasks-burnup-chart.png>)
+![Exemple de graphique d'avancement](../../.gitbook/assets/planning-tasks-burnup-chart.png)
 
 #### Diagramme de flux cumulatif
 
 Ce graphique montre dans le temps la répartition des tâches dans les différents stades de vie d'une tâche.
 
-![Exemple de diagramme de flux cumulatif](<../../.gitbook/assets/planning-tasks-cumulative-flow-chart.png>)
+![Exemple de diagramme de flux cumulatif](../../.gitbook/assets/planning-tasks-cumulative-flow-chart.png)
 
 #### Diagramme de vélocité
 
 Le diagramme de vélocité montre l'évolution du nombre de tâches fermés par itération.
 
-![Exemple de diagramme de vélocité](<../../.gitbook/assets/planning-tasks-velocity-chart.png>)
+![Exemple de diagramme de vélocité](../../.gitbook/assets/planning-tasks-velocity-chart.png)
 
 Il est possible de filtrer les tâches par ordre de priorité, tags, départements, types, utilisateurs ou itérations directement depuis les filtres disponible dans chaque onglet.
 
-![Filtre des tâches](<../../.gitbook/assets/planning-tasks-filter-bar.png>)
+![Filtre des tâches](../../.gitbook/assets/planning-tasks-filter-bar.png)
 
 Pour exporter les tâches, allez dans l'onglet "colonne" ou "tableau" du module "planification", puis cliquez sur la flèche à droite de l'écran, puis sur le bouton "Exportez les données".
 
-![](<../../.gitbook/assets/planning-tasks-import-export-menu.png>)
+![](../../.gitbook/assets/planning-tasks-import-export-menu.png)
 
 Une fenêtre apparaît avec un choix de formats possibles à l'export. Cliquez sur le format de votre choix puis sur le bouton "Télécharger le fichier".
 
-![](<../../.gitbook/assets/generalites-bouton-telecharger-fichier.png>)
+![](../../.gitbook/assets/generalites-bouton-telecharger-fichier.png)
 
 Ca y est, vos tâches sont exportées!
-
-
 
 {% embed url="https://youtu.be/MVWJev04V8Y" %}
 
@@ -88,4 +86,4 @@ Vous pouvez **partager une vue** avec les autres utilisateurs de votre espace de
 
 ### Exemples d'usage
 
-* Vue "Tâches en retard" : filtre sur les tâches 
+* Vue "Tâches en retard" : filtre sur les tâches

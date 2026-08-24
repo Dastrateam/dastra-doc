@@ -10,15 +10,15 @@ description: >-
 
 Les domaines emails permettent à vos collaborateurs futurs la possibilité d'être affectés directement à un espace de travail avec le rôle choisi sans action de votre part.
 
-## Comment les utiliser  ?
+## Comment les utiliser ?
 
-Vous trouverez la configuration des domaines emails dans la configuration générale de votre organisation, partie **sécurité**&#x20;
+Vous trouverez la configuration des domaines emails dans la configuration générale de votre organisation, partie **sécurité**
 
 <figure><img src="../../.gitbook/assets/settings-email-domains-config.png" alt="Accès à la configuration des domaines email"><figcaption><p>domaines emails configuration</p></figcaption></figure>
 
 Activez ou désactivez la fonctionnalité en cliquant sur le bouton "_Permettre aux utilisateurs_..."
 
-Puis choisissez le rôle et l'espace de travail qui seront affectés aux futurs utilisateurs :&#x20;
+Puis choisissez le rôle et l'espace de travail qui seront affectés aux futurs utilisateurs :
 
 <figure><img src="../../.gitbook/assets/settings-email-domains-default-role.png" alt=""><figcaption><p>affectation du rôle et de l'espace de travail</p></figcaption></figure>
 
@@ -27,7 +27,7 @@ Enfin, sauvegardez la configuration en cliquant sur le bouton _Enregistrer_ !
 {% hint style="warning" %}
 **Restrictions** :
 
-Vous n'êtes autorisés à ajouter que des domaines emails préalablement autorisés (c'est à dire pour lesquels un utilisateur de votre organisation a validé une adresse mail).&#x20;
+Vous n'êtes autorisés à ajouter que des domaines emails préalablement autorisés (c'est à dire pour lesquels un utilisateur de votre organisation a validé une adresse mail).
 
 Les domaines de type personnels (gmail, hotmail, etc...) ou identifiés comme "jetables" sont interdits !
 {% endhint %}

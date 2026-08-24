@@ -18,8 +18,6 @@ Depuis la bibliothèque, vous pouvez créer, structurer et maintenir :
 
 {% column %}
 <figure><img src="../../../.gitbook/assets/compliance-library-nav-menu.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 {% endcolumns %}
 

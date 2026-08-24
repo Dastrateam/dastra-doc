@@ -12,6 +12,6 @@ Pour activer la fonctionnalité '**Documents** dans votre Trust center, consulte
 
 #### Ajouter des documents à votre Trust center
 
-Ajoutez des fichiers dans cet onglet (en les envoyant ou en les sélectionnant dans vos fichiers existants de la gestion documentaire)  afin de les mettre à disposition publiquement dans l'onglet documents de votre Trust center (pour consultation et téléchargement).
+Ajoutez des fichiers dans cet onglet (en les envoyant ou en les sélectionnant dans vos fichiers existants de la gestion documentaire) afin de les mettre à disposition publiquement dans l'onglet documents de votre Trust center (pour consultation et téléchargement).
 
 [Plus d'information sur la gestion des documents dans Dastra.](../../gestion-de-documents-ged/)

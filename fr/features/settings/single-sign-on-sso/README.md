@@ -16,7 +16,7 @@ Un utilisateur (**User Agent**) va solliciter une connexion au fournisseur de se
 
 Dans notre cas, le User Agent est le **navigateur d'un utilisateur de Dastra**. Le Service Provider est **Dastra** et l'Identity Provider est votre **fournisseur d'authentification favori** (par exemple : Active Directory).
 
-![Principe de fonctionnement du SSO en utilisant le protocole SAML 2](<../../../.gitbook/assets/settings-sso-saml-flow-diagram.png>)
+![Principe de fonctionnement du SSO en utilisant le protocole SAML 2](../../../.gitbook/assets/settings-sso-saml-flow-diagram.png)
 
 ## Mise en place
 
@@ -85,7 +85,7 @@ Si le compte de l'utilisateur est supprimé ou invalidé dans le fournisseur d'a
 
 Vous pouvez choisir **le rôle assigné par défaut** sur toutes les organisations associées à votre abonnement.
 
-![](<../../../.gitbook/assets/settings-sso-user-creation-options.png>)
+![](../../../.gitbook/assets/settings-sso-user-creation-options.png)
 
 {% hint style="info" %}
 Pour l'instant, Dastra ne supporte pas le binding des rôles via les propriétés du serveur d'authentification. Si cette fonctionnalité est importante, vous pouvez nous le remonter via la [page de support](https://app.dastra.eu/general-settings/support).
@@ -101,7 +101,7 @@ Il est possible de binder les équipes d'un espace de travail sur une propriét�
 
 Vous pouvez configurer le type de login des utilisateurs en vous rendant dans [la page de gestion des utilisateurs de l'abonnement](https://app.dastra.eu/general-settings/users) . En vous rendant dans un profil utilisateur, il sera possible de choisir le login SSO privilégié. Dès lors, l'utilisateur qui se connecte à Dastra avec son adresse email, sera automatiquement redirigé vers la page de login du fournisseur d'authentification que vous avez mis en place.
 
-![](<../../../.gitbook/assets/settings-sso-default-login-mode.png>)
+![](../../../.gitbook/assets/settings-sso-default-login-mode.png)
 
 Vous pourrez également définir le type de login lors de l'invitation de nouveaux utilisateurs.
 

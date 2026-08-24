@@ -36,7 +36,7 @@ Une fois que vous avez la liste des services associés à votre site, vous allez
 
 ### Définition des finalités
 
-Chaque service identifié devra être classé dans l'une de ces catégories :&#x20;
+Chaque service identifié devra être classé dans l'une de ces catégories :
 
 | Type                    | Id |
 | ----------------------- | -- |
@@ -53,7 +53,7 @@ Pour chaque service, vous allez devoir identifier la manière avec laquelle le t
 * Tag javascript direct dans la page
 * Intégration dans le code js de la page (Développement interne)
 * Intégration dans un outil de taggage (Google Tag Manager)
-* Autres:  iframe, ...
+* Autres: iframe, ...
 
 ### Définition de la stratégie de blocage à adopter
 
@@ -63,11 +63,6 @@ Pour bloquer les cookies par défaut, il existe plusieurs stratégies possibles 
 * **Bloquer complètement** : L'exécution de la balise est totalement bloquée tant que l'utilisateur n'a pas accepté les cookies ;
 * **Blocage partiel** : Seules les fonctionnalités de traçage sont bloquées (si la librairie le permet). Certaines librairies peuvent en effet fonctionner avec un mode complètement dégradé sans aucune dégradation de performance.
 
-
-
 {% content-ref url="scannez-les-cookies-deposes-sur-votre-site-web.md" %}
 [scannez-les-cookies-deposes-sur-votre-site-web.md](scannez-les-cookies-deposes-sur-votre-site-web.md)
 {% endcontent-ref %}
-
-
-

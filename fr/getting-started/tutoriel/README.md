@@ -19,7 +19,7 @@ Dans ce scénario, vous êtes chef d'entreprise de SHIPBUILDER, une organisation
 * RH
 * Secrétariat Général
 * Production
-* Marketing & ventes&#x20;
+* Marketing & ventes
 * Sécurité
 * Informatique
 * Juridique
@@ -63,8 +63,6 @@ Enfin, centralisez la documentation de votre conformité notamment pour faire fa
 [etape-6-documenter-la-conformite.md](etape-6-documenter-la-conformite.md)
 {% endcontent-ref %}
 
-
-
 Bravo, vous avez réalisé le tutoriel !
 
 N'hésitez pas à aller explorer ensuite les fonctionnalités de Dastra, en commençant par exemple par le registre des traitements:
@@ -72,18 +70,3 @@ N'hésitez pas à aller explorer ensuite les fonctionnalités de Dastra, en comm
 {% content-ref url="../../rappels-utiles/rgpd-en-bref/registre-de-traitement.md" %}
 [registre-de-traitement.md](../../rappels-utiles/rgpd-en-bref/registre-de-traitement.md)
 {% endcontent-ref %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

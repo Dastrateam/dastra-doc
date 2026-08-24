@@ -6,7 +6,7 @@
 
 Dastra vous permet très facilement d'importer vos propres données sous format tableur directement dans l'application.
 
-Les imports sont possibles dans les modules suivants :&#x20;
+Les imports sont possibles dans les modules suivants :
 
 * import du registre
 * import des acteurs
@@ -22,16 +22,14 @@ Les imports sont possibles dans les modules suivants :&#x20;
 * import des violations de données
 * import des tâches
 
-Dans chaque import, le processus est le même.&#x20;
+Dans chaque import, le processus est le même.
 
-Il s'effectue en 4 étapes :&#x20;
+Il s'effectue en 4 étapes :
 
 1. [Préparation du fichier de données](importer-vos-donnees-excel-csv.md#1.-preparation-du-fichier-de-donnees)
 2. [Téléchargement du fichier](importer-vos-donnees-excel-csv.md#2.-charger-le-fichier)
 3. [Vérification des données avant import](importer-vos-donnees-excel-csv.md#3.-verifiez-vos-donnees)
 4. [Import des données](importer-vos-donnees-excel-csv.md#4.-importez-les-donnees)
-
-
 
 ### 1. Préparation du fichier de données
 
@@ -45,7 +43,7 @@ Pour accéder au menu d'import de données, cliquez sur le bouton "importer" sou
 
 <figure><img src="../../.gitbook/assets/processing-registre-menu-importer.png" alt=""><figcaption></figcaption></figure>
 
-Sélectionnez Excel si cela vous est demandé :&#x20;
+Sélectionnez Excel si cela vous est demandé :
 
 <figure><img src="../../.gitbook/assets/import-processing-format-modal.png" alt=""><figcaption></figcaption></figure>
 
@@ -59,7 +57,7 @@ Le modèle de fichier est **un fichier au format CSV** que vous pouvez facilemen
 
 Celui-ci contiendra toutes les colonnes nécessaires avec des exemples de données.
 
-Exemple de fichier (pour le registre) : &#x20;
+Exemple de fichier (pour le registre) :
 
 <figure><img src="../../.gitbook/assets/import-processing-excel-template.png" alt=""><figcaption><p>La ligne 2 contient des données d'exemple qu'il faut remplacer</p></figcaption></figure>
 
@@ -67,19 +65,17 @@ Exemple de fichier (pour le registre) : &#x20;
 
 Remplissez le fichier téléchargé avec vos données.
 
-Pour chaque fichier de données, vous pourrez afficher les valeurs attendues sur les colonnes :&#x20;
+Pour chaque fichier de données, vous pourrez afficher les valeurs attendues sur les colonnes :
 
 <figure><img src="../../.gitbook/assets/import-processing-columns-format-modal.png" alt=""><figcaption><p>Valeurs attendues pour le fichier d'import du registre</p></figcaption></figure>
 
-Les imports contiennent des valeurs attendues en anglais. C'est tout à fait normal. En effet, il s'agit d'un import technique en base de données.&#x20;
+Les imports contiennent des valeurs attendues en anglais. C'est tout à fait normal. En effet, il s'agit d'un import technique en base de données.
 
-Les valeurs en anglais correspondent aux listes déroulantes des boutons de sélection.&#x20;
+Les valeurs en anglais correspondent aux listes déroulantes des boutons de sélection.
 
 Par exemple, dans l'import du registre, le champ "processing state" correspond au champ "état du traitement" dans Dastra. Il s'agit du champ indiqué dans la première étape "Généralités".
 
-Le champ "State" correspond au statut du traitement ("brouillon" pour "Draft" ou "publié" pour "Active").&#x20;
-
-
+Le champ "State" correspond au statut du traitement ("brouillon" pour "Draft" ou "publié" pour "Active").
 
 ### Jeux de données : import des champs associés
 
@@ -96,7 +92,7 @@ Vérifiez le contenu de votre fichier avant un import en mode écrasement : tout
 
 ### 2. Charger le fichier
 
-Une fois votre fichier de données prêt, vous devrez dans certains cas indiquer une unité organisationnelle. Tous les fichiers importés seront placés dans cette unité organisationnelle.&#x20;
+Une fois votre fichier de données prêt, vous devrez dans certains cas indiquer une unité organisationnelle. Tous les fichiers importés seront placés dans cette unité organisationnelle.
 
 {% hint style="info" %}
 Seuls les imports d'objets qui peuvent être attachés à des unités organisationnelles sont concernés. Par exemple, le registre des traitements ou les violations de données. Les acteurs, mesures ou jeux de données ne sont pas concernés.
@@ -104,15 +100,15 @@ Seuls les imports d'objets qui peuvent être attachés à des unités organisati
 
 #### Mettre à jour les données via l'import
 
-Il est proposé de cocher une case permettant de mettre à jour les données existantes.&#x20;
+Il est proposé de cocher une case permettant de mettre à jour les données existantes.
 
-Cette fonctionnalité permet de mettre à jour les données dans Dastra à partir des données du fichier Excel.&#x20;
+Cette fonctionnalité permet de mettre à jour les données dans Dastra à partir des données du fichier Excel.
 
-Par défaut, l'import va créer des nouveaux objets. Si l'objet existe déjà (un acteur par exemple), l'import ne créera pas de nouvel objet.&#x20;
+Par défaut, l'import va créer des nouveaux objets. Si l'objet existe déjà (un acteur par exemple), l'import ne créera pas de nouvel objet.
 
-Il est possible de mettre à jour un objet existant (par exemple un acteur).&#x20;
+Il est possible de mettre à jour un objet existant (par exemple un acteur).
 
-Dans ce cas, il faut sélectionner la case "Mettre à jour à les données existantes" et choisir le champ de correspondance. Ce champ sera la clé permettant d'identifier les champs à mettre à jour.&#x20;
+Dans ce cas, il faut sélectionner la case "Mettre à jour à les données existantes" et choisir le champ de correspondance. Ce champ sera la clé permettant d'identifier les champs à mettre à jour.
 
 <figure><img src="../../.gitbook/assets/import-update-existing-data-option.png" alt=""><figcaption><p>Mise à jour des données</p></figcaption></figure>
 
@@ -142,19 +138,6 @@ Lancez l'import des données en cliquant sur le bouton continuer. Le processus d
 
 <figure><img src="../../.gitbook/assets/import-actor-wizard-step2-mapping.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### 5. C'est fini !
 
 Bravo ! vous êtes arrivé au bout de ce guide ! Nous vous recommandons de vérifier que les données ont bien été importés dans l'outil.
-
-
-
-
-
-
-
-
-
-
-

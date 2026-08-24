@@ -26,7 +26,7 @@ Le centre de notifications regroupe les alertes visibles via l’icône **cloche
 <figure><img src="../../.gitbook/assets/generalites-notification-center.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;Exemple : "Un nouveau traitement de données a été créé dans votre workspace."
+Exemple : "Un nouveau traitement de données a été créé dans votre workspace."
 {% endhint %}
 
 ***
@@ -112,14 +112,12 @@ Vérifiez vos préférences dans votre **profil utilisateur → Centre de notifi
 Assurez-vous également que les e-mails de Dastra ne sont pas redirigés vers le dossier “Promotions” ou “Spam”.
 
 {% hint style="info" %}
-Attention, vous ne recevez pas de notification pour des éléments qui vous concernent.&#x20;
+Attention, vous ne recevez pas de notification pour des éléments qui vous concernent.
 {% endhint %}
 
-#### Pui  s-je recevoir un résumé mensuel ?
+#### Pui s-je recevoir un résumé mensuel ?
 
 Vous pouvez revevoir un résumé mensuel des activités de votre espace de travail. Cliquez sur la notification : **Préférences : inscription au rapport mensuel**
-
-
 
 ***
 
@@ -128,4 +126,3 @@ Vous pouvez revevoir un résumé mensuel des activités de votre espace de trava
 * [Paramétrer votre profil utilisateur](../../getting-started/setup/parametrer-votre-profil-utilisateur.md)
 * [Configurer les rôles et permissions](roles-et-permissions.md)
 * [Suivre vos audits](../audit/)
-

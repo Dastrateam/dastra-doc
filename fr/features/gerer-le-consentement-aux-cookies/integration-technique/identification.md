@@ -12,10 +12,10 @@ Le principe est le suivant : vous envoyez l'**identifiant unique de l'utilisateu
 
 ## Etape 1 : Choisir l'identifiant de l'utilisateur
 
-Pour faire ce rapprochement, il vous faudra choisir une variable à transférer au widget. Vous pouvez utiliser l'adresse email hashée en base64 de l'utilisateur, un identifiant client interne ou de CRM. Cette variable doit être disponible dans la page web et sera passée en clair. Elle ne doit pas mentionner d'information personnelle sur l'utilisateur (nom, prénom, email en clair). &#x20;
+Pour faire ce rapprochement, il vous faudra choisir une variable à transférer au widget. Vous pouvez utiliser l'adresse email hashée en base64 de l'utilisateur, un identifiant client interne ou de CRM. Cette variable doit être disponible dans la page web et sera passée en clair. Elle ne doit pas mentionner d'information personnelle sur l'utilisateur (nom, prénom, email en clair).
 
 {% hint style="info" %}
-&#x20;Si vous envoyez une chaîne encodée en base64, celle-ci sera automatiquement décodée à la réception des consentements de l'utilisateur dans la base Dastra
+Si vous envoyez une chaîne encodée en base64, celle-ci sera automatiquement décodée à la réception des consentements de l'utilisateur dans la base Dastra
 {% endhint %}
 
 ## Etape 2 : Adapter le code d'intégration

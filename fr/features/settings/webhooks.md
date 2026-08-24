@@ -4,21 +4,17 @@ description: Vous saurez tout sur l'intégration de webhooks dans Dastra
 
 # Webhooks
 
-
-
 {% embed url="https://youtu.be/gqwGui1ua7Y" %}
 
 ## Concept 👓
 
 Pour faire simple, les webhooks permettent de **déclencher une action** suite à un événement. Ils sont généralement utilisés pour faire communiquer des systèmes. C’est la façon la plus simple de recevoir une alerte lorsque quelque chose se produit dans Dastra. L'objectif est de notifier des applications tierces (API, CRM, Fonctions serverless...) en temps réel.
 
-
-
 ## Configuration 🛠️
 
 Pour configurer vos webhooks, rendez-vous sur la page : [https://app.dastra.eu/general-settings/webhooks](https://app.dastra.eu/general-settings/webhooks)
 
-![](<../../.gitbook/assets/settings-webhooks-list.png>)
+![](../../.gitbook/assets/settings-webhooks-list.png)
 
 * Cliquez sur créer une "url de webhook"
 * Renseignez l'url de réception de votre webhook. Pour en savoir plus consultez la section [Comment réceptionner le webhook](webhooks.md#undefined).
@@ -28,13 +24,13 @@ Pour configurer vos webhooks, rendez-vous sur la page : [https://app.dastra.eu/g
 
 Vous arrivez sur l'**écran de détail du webhook.**
 
-![](<../../.gitbook/assets/settings-webhook-detail.png>)
+![](../../.gitbook/assets/settings-webhook-detail.png)
 
 ### Comment réceptionner le webhook 🛬
 
 Pour réceptionner les requêtes du webhook, vous devez créer un endpoint d'API de captation de l'évènement. La requête effectuée est en **POST** et sera toujours structurée de cette façon. Le body de la requête contient un json avec le détail de l'évènement déclenché.
 
-Voici la structure générale de la réponse envoyée :&#x20;
+Voici la structure générale de la réponse envoyée :
 
 ```json
 {
@@ -48,7 +44,7 @@ Voici la structure générale de la réponse envoyée :&#x20;
 } 
 ```
 
-Un timeout de 10 secondes est appliqué sur la requête, au delà de ce temps la requête sera en erreur. Il est nécessaire que le code de réponse soit 200.&#x20;
+Un timeout de 10 secondes est appliqué sur la requête, au delà de ce temps la requête sera en erreur. Il est nécessaire que le code de réponse soit 200.
 
 Il peut y avoir un petit délai entre le moment où l'évènement a lieu dans l'application et le déclenchement du webhooks (ce délai est lié à la nature asynchrone de l'exécution du webhook dans notre infrastructure). Ce délai est plus ou moins important selon la charge de notre infrastructure et peut aller jusque 60-120 secondes maximum.
 
@@ -60,15 +56,13 @@ Il n'existe pour l'instant aucun système permettant de rejouer les webhooks qui
 
 Vous allez pouvoir tester votre webhook en condition réelle **en cliquant sur le bouton "Tester".**
 
-
-
 ### Comment sécuriser le webhook ? 🛡️
 
 {% hint style="info" %}
 Même si ce n'est pas une obligation, il est **recommandé de valider la requête entrante** du webhook pour éviter les attaques potentielles d'un hackeur qui aurait sniffé le réseau et serait ainsi en capacité de poster n'importe quoi sur votre url de webhook et ainsi déclencher ou spammer la création d'éléments dans votre système.
 {% endhint %}
 
-Chaque fois qu'une requête de modification, suppression d'un élément de Dastra est effectuée, nous allons poster un objet sur toutes les urls que vous avez configurés sur l'évènement voulu. Dans chaque requête POST figurera une entête **Dastra-Signature**, cette entête peut être récupérée côté serveur.&#x20;
+Chaque fois qu'une requête de modification, suppression d'un élément de Dastra est effectuée, nous allons poster un objet sur toutes les urls que vous avez configurés sur l'évènement voulu. Dans chaque requête POST figurera une entête **Dastra-Signature**, cette entête peut être récupérée côté serveur.
 
 Cette entête correspond à l'intégralité du JSON posté **est hashé à l'aide de l'algorithme HMAC-Sha256** à l'aide de la clé de validation du webhook.
 
@@ -166,26 +160,26 @@ private static string GetRequestBody()
 
 Le webhook sera automatiquement bloqué et considéré en erreur quand le seuil de 5 erreurs est dépassé.
 
-### &#x20;Comment mettre en place des webhooks avec les API
+### Comment mettre en place des webhooks avec les API
 
 Récupérer les webhooks liés à votre compte (dans tous les espaces de travail)
 
-{% swagger src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls" method="get" %}
-[dastra api.json](<../../.gitbook/assets/dastra-api.json>)
-{% endswagger %}
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls" method="get" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
 
 Créez une nouvelle url de webhook en utilisant le endpoint POST. Renseignez les évènements auxquels vous souhaitez abonner votre webhook avec le paramètre **subscribedEvents** webhooks.
 
-{% swagger src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls" method="post" %}
-[dastra api.json](<../../.gitbook/assets/dastra-api.json>)
-{% endswagger %}
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls" method="post" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
 
 Un identifiant de webhook vous sera retourné
 
-{% swagger src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="get" %}
-[dastra api.json](<../../.gitbook/assets/dastra-api.json>)
-{% endswagger %}
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="get" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
 
-{% swagger src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="delete" %}
-[dastra api.json](<../../.gitbook/assets/dastra-api.json>)
-{% endswagger %}
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="delete" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}

@@ -9,15 +9,15 @@ Cette fonctionnalité puissante vous permet de créer des rapports sur mesure, a
 ### Démarrage rapide
 
 1. Cliquez sur le menu à gauche "Rapports personnalisés"\
-   &#x20;![](<../../.gitbook/assets/custom-reporting-nav-icon.png>)
+   ![](../../.gitbook/assets/custom-reporting-nav-icon.png)
 2. Les rapports sont organisés dans un système de catégorie. Avant de créer votre premier rapport, vous devez **créer une première catégorie**
 3. **Cliquez sur créer un rapport** et choisissez une des deux options : créer nouveau rapport ou créer à partir d'un modèle
 
 ## Glossaire
 
 * **Métrique** : une métrique est une valeur mesurable permettant de regrouper (agréger) les éléments _Exemple: Le nombre de traitement, la moyenne de durée de traitement d'une tâche..._
-* **Dimension** : par opposition à la métrique, la dimension ne permet pas d'agréger les données. Il s'agit d'une propriété (= une colonne) toute simple d'un élément. \
-  &#xNAN;_&#x45;xemple: le nom du traitement, le statut du traitement, la référence, ..._
+* **Dimension** : par opposition à la métrique, la dimension ne permet pas d'agréger les données. Il s'agit d'une propriété (= une colonne) toute simple d'un élément.\
+  \&#xNAN;_Exemple: le nom du traitement, le statut du traitement, la référence, ..._
 
 ## Construction du rapport
 
@@ -58,33 +58,24 @@ Pour les tables d'objets dotés d'une fiche — traitements, exercices des droit
 
 <figure><img src="../../.gitbook/assets/custom-report-details-link.png" alt="Lien Détails cliquable dans un rapport personnalisé"><figcaption><p>Chaque ligne affiche un lien « Détails » ouvrant la fiche de l'objet</p></figcaption></figure>
 
-
-
 {% hint style="info" %}
-Automatiquement les données seront agrégées par dimension afin de calculer les métriques sélectionnées.&#x20;
+Automatiquement les données seront agrégées par dimension afin de calculer les métriques sélectionnées.
 {% endhint %}
 
-Exemple : Vous sélectionnez la variable "Nb Traitements de données" et "Statut", vous obtenez un rapport regroupé sous cette forme &#x20;
+Exemple : Vous sélectionnez la variable "Nb Traitements de données" et "Statut", vous obtenez un rapport regroupé sous cette forme
 
 | Statut    | Nb Traitements de données |
 | --------- | ------------------------- |
 | Brouillon | 12                        |
 | Actif     | 560                       |
 
-
-
 ## Affichage et visualisation graphique du rapport personnalisé
 
-Une fois le rapport créé, vous serez redirigé sur la page suivante :&#x20;
+Une fois le rapport créé, vous serez redirigé sur la page suivante :
 
 <figure><img src="../../.gitbook/assets/custom-reporting-bar-chart-result.png" alt=""><figcaption><p>Capture du résultat des rapports personnalisés</p></figcaption></figure>
-
-
 
 Pour ajouter un graphique, cliquez sur "**Ajouter un graphique**".
 
 Vous pouvez alors définir plusieurs catégories de graphique.\
-![](<../../.gitbook/assets/custom-reporting-add-chart-modal.png>)
-
-
-
+![](../../.gitbook/assets/custom-reporting-add-chart-modal.png)

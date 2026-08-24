@@ -20,19 +20,18 @@ Une fois le widget implémenté, DASTRA collecte automatiquement pour vous les p
 
 Pour les consulter, il suffit de se rendre dans l'interface "Consentement" du module de Consentement aux cookies DASTRA.
 
-![Interface "Consentement"](<../../../.gitbook/assets/capture-web-6-5-2022-95747-app-dastra-eu.jpeg>)
+![Interface "Consentement"](../../../.gitbook/assets/capture-web-6-5-2022-95747-app-dastra-eu.jpeg)
 
 {% hint style="info" %}
 A partir de cette interface, vous pouvez également personnaliser les preuves de consentement collectées, exporter les données, filtrer par date ou widget de cookies, notamment.
 {% endhint %}
 
-Bravo, vous collectez maintenant les preuves de consentement cookies !&#x20;
+Bravo, vous collectez maintenant les preuves de consentement cookies !
 
-La durée de vie des preuves de consentement est d'un an.&#x20;
+La durée de vie des preuves de consentement est d'un an.
 
 Pour rendre votre site dynamique et prendre en compte véritablement le consentement de l'internaute, rendez-vous à la prochaine rubrique "aller plus loin":
 
 {% content-ref url="allez-plus-loin-sur-le-consentement-des-cookies.md" %}
 [allez-plus-loin-sur-le-consentement-des-cookies.md](allez-plus-loin-sur-le-consentement-des-cookies.md)
 {% endcontent-ref %}
-

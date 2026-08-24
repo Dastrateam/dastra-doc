@@ -9,19 +9,19 @@ description: >-
 
 ## Exemples de services utilisant des iframes
 
-Lecteurs vidéos :  Youtube, Vimeo, DailyMotion...
+Lecteurs vidéos : Youtube, Vimeo, DailyMotion...
 
 Réseaux sociaux : Twitter, Facebook,...
 
-Lecteurs de podcasts&#x20;
+Lecteurs de podcasts
 
-Lecteurs audios &#x20;
+Lecteurs audios
 
 ## Méthode 1 : En utilisant le SDK
 
-Notre SDK vous permettra de bloquer toutes les iframes de la page en affichant  un message de blocage personnalisable :
+Notre SDK vous permettra de bloquer toutes les iframes de la page en affichant un message de blocage personnalisable :
 
-![](<../../../../.gitbook/assets/cookies-video-consent-overlay.png>)
+![](../../../../.gitbook/assets/cookies-video-consent-overlay.png)
 
 En cliquant sur "I accept" le consentement au service spécifique sera automatiquement dispatché. Le système permet également de capturer un refus des cookies dans la CMP Dastra.
 
@@ -42,10 +42,10 @@ Un exemple simple avec les iframes de lecteurs de vidéo youtube :
 ```
 
 {% hint style="info" %}
-Il sera possible de personnaliser l'apparence du message (fond, polices...) avec votre feuille css. Le message de blocage est intégré au DOM de la page avec une classe ".datra-blocking-iframe".&#x20;
+Il sera possible de personnaliser l'apparence du message (fond, polices...) avec votre feuille css. Le message de blocage est intégré au DOM de la page avec une classe ".datra-blocking-iframe".
 {% endhint %}
 
-## Méthode 2 : Implémentation manuelle&#x20;
+## Méthode 2 : Implémentation manuelle
 
 vous pouvez également implémenter votre propre logique
 

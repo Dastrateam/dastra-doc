@@ -89,4 +89,3 @@ Chaque nuit à minuit (UTC), Dastra récupère les demandes concernées et exéc
 * Utilisez la **suppression** pour un effacement complet.
 * Utilisez **l’anonymisation** si vous souhaitez conserver des statistiques d’activité.
 * Vérifiez que la purge automatique est **activée** pour que le traitement s’exécute chaque nuit.
-

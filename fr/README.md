@@ -9,87 +9,87 @@ description: Bienvenue dans la documentation de Dastra.
 > Pour en savoir plus sur notre approche, consultez notre [manifesto](https://www.dastra.eu/fr/mission).
 
 {% content-ref url="getting-started/demarrer-en-5-minutes.md" %}
-[🚀 Démarrer en 5 minutes — créez votre premier traitement maintenant](getting-started/demarrer-en-5-minutes.md)
+[demarrer-en-5-minutes.md](getting-started/demarrer-en-5-minutes.md)
 {% endcontent-ref %}
 
 ***
 
 ### 🚀 Bien commencer
 
-{% content-ref url="getting-started/setup/README.md" %}
-[Mise en place](getting-started/setup/README.md)
+{% content-ref url="getting-started/setup/" %}
+[setup](getting-started/setup/)
 {% endcontent-ref %}
 
-{% content-ref url="getting-started/tutoriel/README.md" %}
-[Tutoriel pas à pas](getting-started/tutoriel/README.md)
+{% content-ref url="getting-started/tutoriel/" %}
+[tutoriel](getting-started/tutoriel/)
 {% endcontent-ref %}
 
-{% content-ref url="getting-started/le-support/README.md" %}
-[Support](getting-started/le-support/README.md)
+{% content-ref url="getting-started/le-support/" %}
+[le-support](getting-started/le-support/)
 {% endcontent-ref %}
 
 ***
 
 ### ⚙️ Fonctionnalités
 
-{% content-ref url="features/editer-le-registre/README.md" %}
-[Registre des traitements (RGPD)](features/editer-le-registre/README.md)
+{% content-ref url="features/editer-le-registre/" %}
+[editer-le-registre](features/editer-le-registre/)
 {% endcontent-ref %}
 
-{% content-ref url="features/systemes-dia/README.md" %}
-[Systèmes d'IA (AI Act)](features/systemes-dia/README.md)
+{% content-ref url="features/systemes-dia/" %}
+[systemes-dia](features/systemes-dia/)
 {% endcontent-ref %}
 
-{% content-ref url="features/la-gestion-des-risques/README.md" %}
-[Gestion des risques et audits](features/la-gestion-des-risques/README.md)
+{% content-ref url="features/la-gestion-des-risques/" %}
+[la-gestion-des-risques](features/la-gestion-des-risques/)
 {% endcontent-ref %}
 
-{% content-ref url="features/gerer-les-exercices-des-droits/README.md" %}
-[Exercice des droits (DSR)](features/gerer-les-exercices-des-droits/README.md)
+{% content-ref url="features/gerer-les-exercices-des-droits/" %}
+[gerer-les-exercices-des-droits](features/gerer-les-exercices-des-droits/)
 {% endcontent-ref %}
 
-{% content-ref url="features/documenter-les-violations-de-donnees/README.md" %}
-[Violations de données](features/documenter-les-violations-de-donnees/README.md)
+{% content-ref url="features/documenter-les-violations-de-donnees/" %}
+[documenter-les-violations-de-donnees](features/documenter-les-violations-de-donnees/)
 {% endcontent-ref %}
 
-{% content-ref url="features/gerer-le-consentement-aux-cookies/README.md" %}
-[Consentement aux cookies](features/gerer-le-consentement-aux-cookies/README.md)
+{% content-ref url="features/gerer-le-consentement-aux-cookies/" %}
+[gerer-le-consentement-aux-cookies](features/gerer-le-consentement-aux-cookies/)
 {% endcontent-ref %}
 
-{% content-ref url="features/planifier/README.md" %}
-[Planification et tâches](features/planifier/README.md)
+{% content-ref url="features/planifier/" %}
+[planifier](features/planifier/)
 {% endcontent-ref %}
 
-{% content-ref url="features/settings/README.md" %}
-[Configuration avancée (SSO, SCIM, API…)](features/settings/README.md)
+{% content-ref url="features/settings/" %}
+[settings](features/settings/)
 {% endcontent-ref %}
 
-{% content-ref url="features/cartography/README.md" %}
-[Cartographie des données](features/cartography/README.md)
+{% content-ref url="features/cartography/" %}
+[cartography](features/cartography/)
 {% endcontent-ref %}
 
-{% content-ref url="features/audit/README.md" %}
-[Questionnaires et audits](features/audit/README.md)
+{% content-ref url="features/audit/" %}
+[audit](features/audit/)
 {% endcontent-ref %}
 
-{% content-ref url="features/contrats/README.md" %}
-[Contrats](features/contrats/README.md)
+{% content-ref url="features/contrats/" %}
+[contrats](features/contrats/)
 {% endcontent-ref %}
 
-{% content-ref url="features/gestion-de-documents-ged/README.md" %}
-[Gestion de documents (GED)](features/gestion-de-documents-ged/README.md)
+{% content-ref url="features/gestion-de-documents-ged/" %}
+[gestion-de-documents-ged](features/gestion-de-documents-ged/)
 {% endcontent-ref %}
 
-{% content-ref url="features/trust-center/README.md" %}
-[Trust Center](features/trust-center/README.md)
+{% content-ref url="features/trust-center/" %}
+[trust-center](features/trust-center/)
 {% endcontent-ref %}
 
-{% content-ref url="features/compliance/README.md" %}
-[Conformité](features/compliance/README.md)
+{% content-ref url="features/compliance/" %}
+[compliance](features/compliance/)
 {% endcontent-ref %}
 
-{% content-ref url="features/custom-reporting/README.md" %}
-[Rapports personnalisés](features/custom-reporting/README.md)
+{% content-ref url="features/custom-reporting/" %}
+[custom-reporting](features/custom-reporting/)
 {% endcontent-ref %}
 
 ***
@@ -97,11 +97,11 @@ description: Bienvenue dans la documentation de Dastra.
 ### 📄 API & Intégrations
 
 {% content-ref url="api-references/liste-des-endpoints-dapi.md" %}
-[Endpoints API](api-references/liste-des-endpoints-dapi.md)
+[liste-des-endpoints-dapi.md](api-references/liste-des-endpoints-dapi.md)
 {% endcontent-ref %}
 
-{% content-ref url="api-references/integrations/README.md" %}
-[Intégrations tierces](api-references/integrations/README.md)
+{% content-ref url="api-references/integrations/" %}
+[integrations](api-references/integrations/)
 {% endcontent-ref %}
 
 ***
@@ -109,7 +109,7 @@ description: Bienvenue dans la documentation de Dastra.
 ### 🛡️ Sécurité
 
 {% content-ref url="security/general.md" %}
-[Sécurité chez Dastra](security/general.md)
+[general.md](security/general.md)
 {% endcontent-ref %}
 
 ***

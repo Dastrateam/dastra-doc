@@ -35,14 +35,14 @@ Dans les sections du questionnaire, des couleurs sont associées aux icones des 
 
 Voici la correspondance des couleurs :
 
-| Couleur               | Image                                                                         | Description                                                                             |
-| --------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Gris entouré de rouge | ![](<../../.gitbook/assets/audit-questionnaire-icone-oblig-non-repondue.png>)                                  | Question obligatoire non répondue                                                       |
-| Noir entouré de rouge | ![](<../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue.png>)                                  | Question obligatoire répondue                                                           |
-| Gris                  | ![](<../../.gitbook/assets/audit-questionnaire-icone-non-oblig-non-repondue.png>)                                  | Question non obligatoire non répondue                                                   |
-| Vert                  | ![](<../../.gitbook/assets/audit-questionnaire-icone-repondue-vert.png>)                                  | Toutes les questions de la section ont un réponse. Question non obligatoire répondue    |
+| Couleur               | Image                                                                                                                       | Description                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Gris entouré de rouge | ![](../../.gitbook/assets/audit-questionnaire-icone-oblig-non-repondue.png)                                                 | Question obligatoire non répondue                                                       |
+| Noir entouré de rouge | ![](../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue.png)                                                     | Question obligatoire répondue                                                           |
+| Gris                  | ![](../../.gitbook/assets/audit-questionnaire-icone-non-oblig-non-repondue.png)                                             | Question non obligatoire non répondue                                                   |
+| Vert                  | ![](../../.gitbook/assets/audit-questionnaire-icone-repondue-vert.png)                                                      | Toutes les questions de la section ont un réponse. Question non obligatoire répondue    |
 | Vert entouré de rouge | <img src="../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue-section-complete.png" alt="" data-size="original"> | Toutes les questions de la section ont un réponse. Question obligatoire répondue        |
-| Noir                  | <img src="../../.gitbook/assets/audit-questionnaire-icone-repondue-section-incomplete.png" alt="" data-size="original"> | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
+| Noir                  | <img src="../../.gitbook/assets/audit-questionnaire-icone-repondue-section-incomplete.png" alt="" data-size="original">     | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
 
 ### Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ? <a href="#slug-error" id="slug-error"></a>
 

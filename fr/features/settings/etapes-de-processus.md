@@ -12,7 +12,7 @@ Les étapes de processus définissent les statuts que traversent les objets. Pou
 
 ## A quoi servent les étapes de processus ?
 
-Les étapes de workflow (flux de travail en français) permettent de matérialiser un processus de réalisation en passant d'une étape à l'autre.&#x20;
+Les étapes de workflow (flux de travail en français) permettent de matérialiser un processus de réalisation en passant d'une étape à l'autre.
 
 Ainsi, vous pouvez décliner votre procédure de manière très opérationnelle en indiquant quelles sont les étapes à suivre directement dans Dastra.
 
@@ -20,7 +20,7 @@ Ainsi, vous pouvez décliner votre procédure de manière très opérationnelle 
 
 {% embed url="https://youtu.be/rIPJUY3vylc" %}
 
-Cliquez dans "Réglages" puis "Etapes de processus"&#x20;
+Cliquez dans "Réglages" puis "Etapes de processus"
 
 <figure><img src="../../.gitbook/assets/settings-etapes-processus.png" alt=""><figcaption></figcaption></figure>
 
@@ -30,9 +30,9 @@ Vous accéderez ainsi aux différentes étapes et statuts ("brouillon" ou "publi
 
 ## Peut-on supprimer une étape de workflow ?
 
-Pour supprimer les étapes, il faut cliquer sur la corbeille.&#x20;
+Pour supprimer les étapes, il faut cliquer sur la corbeille.
 
-Les éléments attachés à l'étape supprimée seront automatiquement rattachés à l'étape de premier niveau dans le même statut.&#x20;
+Les éléments attachés à l'étape supprimée seront automatiquement rattachés à l'étape de premier niveau dans le même statut.
 
 Par exemple, si vous supprimez l'étape "En cours" dans les workflow de tâches :
 

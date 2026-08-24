@@ -28,9 +28,9 @@ Pour chaque traitement, le registre d'un responsable de traitement indique au mi
 7. les **délais prévus pour l'effacement** des différentes catégories de données, c’est-à-dire la durée de conservation, ou à défaut les critères permettant de la déterminer
 8. dans la mesure du possible, une **description générale des mesures de sécurité** techniques et organisationnelles que vous mettez en œuvre
 
-![Les différentes sections d'un traitement "responsable de traitement" dans Dastra](<../../.gitbook/assets/register-processing-questionnaire-steps.png>)
+![Les différentes sections d'un traitement "responsable de traitement" dans Dastra](../../.gitbook/assets/register-processing-questionnaire-steps.png)
 
-### Les acteurs&#x20;
+### Les acteurs
 
 * L'identité et les informations de contacts du responsable du traitement
 * L'identité et les informations de contacts du DPO le cas échéant
@@ -43,39 +43,37 @@ Pour chaque traitement, le registre d'un responsable de traitement indique au mi
 
 ### La base légale
 
-* Respect d'une obligation légale&#x20;
+* Respect d'une obligation légale
 * Exécution d'un contrat
 * Intérêt légitime de l'entreprise ou d'un tiers
 * Intérêt public
-* Consentement&#x20;
+* Consentement
 * Sauvegarde des intérêts vitaux de la personne concernée ou d'une autre personne
 
 ### L'inventaire des données et des personnes concernées
 
 * Type de personnes concernées
-* Catégories de données&#x20;
+* Catégories de données
 * Délais de suppression des données ou règle applicable
 
-### Les destinataires et les transferts de données hors EEE&#x20;
+### Les destinataires et les transferts de données hors EEE
 
-* &#x20;Identification des destinataires comprenant les destinataires internes (service concerné par le traitement) ; organismes externes (partenaires commerciaux ou institutionnels) ; sous-traitants (hébergeur, fournisseur de solutions) ; personne concernée le cas échéant et responsables conjoints&#x20;
+* Identification des destinataires comprenant les destinataires internes (service concerné par le traitement) ; organismes externes (partenaires commerciaux ou institutionnels) ; sous-traitants (hébergeur, fournisseur de solutions) ; personne concernée le cas échéant et responsables conjoints
 * Pour chaque destinataire, identification des transferts en dehors de l'Espace économique européen (EEE) et les outils juridiques utilisés (Règles d'entreprise contraignantes en cas de transferts hors UE avec les filiales, clauses contractuelles types, pays reconnu adéquat...)
 
 ### Les mesures de sécurité
 
-* Mesures techniques et organisationnelles mises en place pour sécuriser chaque traitement de données&#x20;
-*   Par exemple, chiffrement des données, pseudonymisation, limitation des accès\
-    \
-    <br>
-
-    ***
+* Mesures techniques et organisationnelles mises en place pour sécuriser chaque traitement de données
+* Par exemple, chiffrement des données, pseudonymisation, limitation des accès\
+  \
+  <br>
 
 {% hint style="info" %}
 Il est possible de passer d'un traitement créer en tant que responsable de traitement a un traitement créé en tant que sous-traitant et vise versa.\
 [La procédure est disponible ici](https://doc.dastra.eu/features/editer-le-registre/questions-frequentes#comment-changer-de-type-de-traitement-passer-dun-traitement-creer-en-tant-que-responsable-de-traitem)
 {% endhint %}
 
-## Aller plus loin&#x20;
+## Aller plus loin
 
 {% content-ref url="gerer-votre-registre.md" %}
 [gerer-votre-registre.md](gerer-votre-registre.md)

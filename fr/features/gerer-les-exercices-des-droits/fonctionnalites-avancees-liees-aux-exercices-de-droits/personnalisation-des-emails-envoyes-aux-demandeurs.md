@@ -12,7 +12,7 @@ Vous pouvez :
 <figure><img src="../../../.gitbook/assets/settings-workspace-langues-surcharge.png" alt=""><figcaption><p>Personnalisation d'un message</p></figcaption></figure>
 
 {% hint style="info" %}
-Veuillez faire attention à la présence éventuelle de balise (ici : `{{data.code}}`) : cela signifie que des données seront insérées lors de la génération du message et sont nécessaires au bon fonctionnement !&#x20;
+Veuillez faire attention à la présence éventuelle de balise (ici : `{{data.code}}`) : cela signifie que des données seront insérées lors de la génération du message et sont nécessaires au bon fonctionnement !
 
 Vous pouvez bien entendu ajouter d'autres informations dans le texte (tapez `{{` pour ouvrir la liste des variables disponibles)
 {% endhint %}
