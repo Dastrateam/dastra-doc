@@ -92,6 +92,10 @@ Chaque ligne dispose d'un panneau **Avancé** avec deux options :
 
 <figure><img src="../../.gitbook/assets/field-mapping-advanced.png" alt=""><figcaption><p>Valeur par défaut et transcodage des valeurs</p></figcaption></figure>
 
+Pour les champs de type date, la valeur par défaut peut être dynamique — résolue au moment de la création de l'enregistrement :
+
+<figure><img src="../../.gitbook/assets/field-mapping-default-date.png" alt=""><figcaption><p>Une date par défaut relative (ici : dans 30 jours) sur l'échéance de la demande</p></figcaption></figure>
+
 #### Suggestions par IA
 
 Si l'assistant IA est activé sur votre compte, le bouton **Suggérer par IA** propose un mapping complet (et chaque ligne a son propre bouton de suggestion). Les suggestions n'écrasent jamais les champs déjà mappés et vous sont toujours soumises pour relecture avant l'enregistrement.

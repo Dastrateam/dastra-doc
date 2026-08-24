@@ -92,6 +92,10 @@ Each row has an **Advanced** panel with two options:
 
 <figure><img src="../../.gitbook/assets/field-mapping-advanced.png" alt=""><figcaption><p>Default value and value transcoding</p></figcaption></figure>
 
+For date fields, the default value can be dynamic — resolved when the record is created:
+
+<figure><img src="../../.gitbook/assets/field-mapping-default-date.png" alt=""><figcaption><p>A relative default date (here: in 30 days) on the request deadline</p></figcaption></figure>
+
 #### AI suggestions
 
 If the AI assistant is enabled on your account, the **Suggest with AI** button proposes a full mapping (and each row has its own suggestion button). Suggestions never overwrite fields you already mapped, and are always submitted for your review before saving.
