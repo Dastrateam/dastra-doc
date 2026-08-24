@@ -13,12 +13,12 @@ Indépendamment du streaming, les journaux d'audit peuvent aussi être **export�
 ### Prérequis
 
 * Le **plan Enterprise** (fonctionnalité Sécurité avancée).
-* Être **propriétaire** du compte : la configuration se trouve dans **Paramètres généraux > Streaming SIEM**, juste sous le Single sign-on (SSO).
+* Être **propriétaire** du compte : la configuration se trouve dans le **Centre de sécurité**, en bas de la page **Sécurité** (section **Streaming d'événements SIEM**).
 * Côté SIEM : un endpoint de collecteur d'événements HTTP joignable en HTTPS (ex. un endpoint Splunk HEC) et son jeton ou sa clé API.
 
-<!-- 📸 Capture : le menu des Paramètres généraux avec l'entrée « Streaming SIEM », et le portlet Streaming d'événements SIEM -->
+<!-- 📸 Capture : la page Centre de sécurité > Sécurité, défilée jusqu'à la section Streaming d'événements SIEM -->
 
-<figure><img src="../../.gitbook/assets/siem-menu.png" alt=""><figcaption><p>Paramètres généraux > Streaming SIEM</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/siem-menu.png" alt=""><figcaption><p>La section Streaming d'événements SIEM, dans Centre de sécurité > Sécurité</p></figcaption></figure>
 
 ### Configuration
 
@@ -79,15 +79,17 @@ Les événements contiennent le nom et l'adresse e-mail de l'auteur de l'action 
 
 Vous pouvez exporter la piste d'audit de sécurité à la demande, dans les mêmes formats, sans configurer le streaming :
 
-1. Ouvrez **Paramètres généraux > Journaux d'audit**.
+1. Ouvrez **Centre de sécurité > Journaux de sécurité**.
 2. Réglez les filtres (période, workspace…) selon vos besoins.
 3. Ouvrez le menu **Exporter (SIEM)** à côté du bouton d'export habituel et choisissez **CEF (Common Event Format)**, **Syslog (RFC 5424)** ou **Splunk HEC (JSON)**.
 
 Le fichier (`dastra-security-logs-<date>`) contient les événements d'audit correspondants, jusqu'à 100 000, prêts à être ingérés par votre SIEM.
 
-<!-- 📸 Capture : la page des journaux d'audit avec le menu « Exporter (SIEM) » ouvert montrant les trois formats -->
+Le même menu propose aussi **Configurer le streaming temps réel**, un raccourci vers la configuration du streaming décrite ci-dessus.
 
-<figure><img src="../../.gitbook/assets/audit-logs-export-siem.png" alt=""><figcaption><p>Export SIEM ponctuel depuis les journaux d'audit</p></figcaption></figure>
+<!-- 📸 Capture : la page Journaux de sécurité avec le menu « Exporter (SIEM) » ouvert montrant les trois formats -->
+
+<figure><img src="../../.gitbook/assets/audit-logs-export-siem.png" alt=""><figcaption><p>Export SIEM ponctuel depuis les journaux de sécurité</p></figcaption></figure>
 
 ### Dépannage
 

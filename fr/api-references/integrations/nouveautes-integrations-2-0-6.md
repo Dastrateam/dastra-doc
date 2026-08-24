@@ -39,7 +39,7 @@ Diffusez les événements d'audit de sécurité de votre compte (connexions, cha
 En savoir plus : [Streaming SIEM](../../features/settings/streaming-siem.md).
 
 {% hint style="info" %}
-Le streaming SIEM est disponible avec le plan Enterprise et se configure par le propriétaire du compte dans les **Paramètres généraux**.
+Le streaming SIEM est disponible avec le plan Enterprise et se configure par le propriétaire du compte dans le **Centre de sécurité**.
 {% endhint %}
 
 ### Connecteurs améliorés

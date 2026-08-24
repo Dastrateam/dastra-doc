@@ -56,7 +56,7 @@ Cliquez sur **Ajouter l'intégration** sur la carte d'un cas d'usage. Le panneau
 Une fois installé, la carte du cas d'usage vous donne :
 
 * un interrupteur **Activer**,
-* une entrée **Paramètres** pour rouvrir la configuration,
+* une entrée **Configuration** pour rouvrir la configuration,
 * **Lancer la synchronisation** (connecteurs d'import uniquement) pour déclencher une synchro immédiate,
 * **Afficher les journaux** pour consulter les exécutions passées,
 * **Désinstaller**.

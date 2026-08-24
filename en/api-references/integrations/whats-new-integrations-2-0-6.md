@@ -39,7 +39,7 @@ Stream your account's security audit events (logins, permission changes, API key
 Read more: [SIEM streaming](../../features/settings/siem-streaming.md).
 
 {% hint style="info" %}
-SIEM streaming is available on the Enterprise plan and is configured by the account owner under **General settings**.
+SIEM streaming is available on the Enterprise plan and is configured by the account owner in the **Security center**.
 {% endhint %}
 
 ### Improved connectors

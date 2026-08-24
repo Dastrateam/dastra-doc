@@ -13,12 +13,12 @@ Independently of streaming, the audit logs can also be **exported manually** in 
 ### Prerequisites
 
 * The **Enterprise plan** (Advanced security feature).
-* You must be an **owner** of the account: the configuration lives in **General settings > SIEM streaming**, right below Single sign-on (SSO).
+* You must be an **owner** of the account: the configuration lives in the **Security center**, at the bottom of the **Security** page (**SIEM event streaming** section).
 * On the SIEM side: an HTTP event collector endpoint reachable over HTTPS (e.g. a Splunk HEC endpoint) and its token or API key.
 
-<!-- 📸 Screenshot: the General settings menu with the "SIEM streaming" entry, and the SIEM event streaming portlet -->
+<!-- 📸 Screenshot: the Security center > Security page scrolled to the SIEM event streaming section -->
 
-<figure><img src="../../.gitbook/assets/siem-menu.png" alt=""><figcaption><p>General settings > SIEM streaming</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/siem-menu.png" alt=""><figcaption><p>The SIEM event streaming section, in Security center > Security</p></figcaption></figure>
 
 ### Configuration
 
@@ -79,15 +79,17 @@ Events contain the actor's name and e-mail address — the information already s
 
 You can export the security audit trail on demand, in the same formats, without configuring streaming:
 
-1. Open **General settings > Audit logs**.
+1. Open **Security center > Security logs**.
 2. Set the filters (period, workspace…) as needed.
 3. Open the **Export (SIEM)** dropdown next to the regular Export button and pick **CEF (Common Event Format)**, **Syslog (RFC 5424)** or **Splunk HEC (JSON)**.
 
 The file (`dastra-security-logs-<date>`) contains the matching audit events, up to 100 000, ready to be ingested by your SIEM.
 
-<!-- 📸 Screenshot: the Audit logs page with the "Export (SIEM)" dropdown open showing the three formats -->
+The same dropdown also offers **Configure real-time streaming**, a shortcut to the streaming configuration described above.
 
-<figure><img src="../../.gitbook/assets/audit-logs-export-siem.png" alt=""><figcaption><p>One-off SIEM export from the audit logs</p></figcaption></figure>
+<!-- 📸 Screenshot: the Security logs page with the "Export (SIEM)" dropdown open showing the three formats -->
+
+<figure><img src="../../.gitbook/assets/audit-logs-export-siem.png" alt=""><figcaption><p>One-off SIEM export from the security logs</p></figcaption></figure>
 
 ### Troubleshooting
 

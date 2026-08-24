@@ -56,7 +56,7 @@ Click **Add integration** on a use case card. The setup panel walks you through 
 Once installed, the use case card gives you:
 
 * an **Enable** switch,
-* a **Settings** entry to reopen the configuration,
+* a **Project configuration** entry to reopen the configuration,
 * **Run synchronization now** (import connectors only) to trigger an immediate sync,
 * **View logs** to inspect past executions,
 * **Uninstall**.
