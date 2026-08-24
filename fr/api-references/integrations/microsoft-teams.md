@@ -16,14 +16,21 @@ L'intégration Microsoft Teams publie **les notifications de workflow Dastra sou
 
 Vous avez besoin d'un canal Microsoft Teams avec un **webhook entrant créé via l'application Workflows** (Power Automate) :
 
-1. Dans Teams, ouvrez le canal, cliquez sur **⋯ > Workflows** (ou ouvrez l'application Workflows).
-2. Choisissez le modèle **« Publier dans un canal lorsqu'une demande de webhook est reçue »**.
-3. Sélectionnez l'équipe et le canal, puis créez le flux.
-4. Copiez l'URL de webhook fournie à la dernière étape (de la forme `https://prod-XX.westeurope.logic.azure.com/workflows/...`).
+1. Dans Teams, ouvrez le canal et cliquez sur **⋯ > Workflows**.
 
-<!-- 📸 Capture : le modèle Workflows de Teams « Publier dans un canal lorsqu'une demande de webhook est reçue » avec l'URL de webhook obtenue -->
+<figure><img src="../../.gitbook/assets/teams-workflows-menu.png" alt=""><figcaption><p>L'entrée Workflows dans le menu du canal</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/teams-workflows-app.png" alt=""><figcaption><p>Création du webhook avec l'application Workflows</p></figcaption></figure>
+2. Recherchez « webhook » et choisissez le modèle **Envoyer des alertes webhook à un canal** (*Send webhook alerts to a channel*).
+
+<figure><img src="../../.gitbook/assets/teams-workflows-template.png" alt=""><figcaption><p>Choix du modèle de webhook</p></figcaption></figure>
+
+3. Sélectionnez l'équipe et le canal, puis cliquez sur **Enregistrer**.
+
+<figure><img src="../../.gitbook/assets/teams-workflows-config.png" alt=""><figcaption><p>Rattachement du flux au canal</p></figcaption></figure>
+
+4. Sur l'écran de confirmation, cliquez sur **Copier le lien du webhook** — c'est l'URL à coller dans Dastra (de la forme `https://prod-XX.westeurope.logic.azure.com/workflows/...`).
+
+<figure><img src="../../.gitbook/assets/teams-workflows-link.png" alt=""><figcaption><p>Copie de l'URL du webhook</p></figcaption></figure>
 
 {% hint style="info" %}
 Microsoft a retiré les webhooks entrants Office 365 classiques (connecteurs de canal) en avril 2026. L'application Workflows est le remplacement proposé par Microsoft, et c'est sur elle que repose cette intégration.

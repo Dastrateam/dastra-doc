@@ -16,14 +16,21 @@ The Microsoft Teams integration posts **Dastra workflow notifications as cards i
 
 You need a Microsoft Teams channel with an **incoming webhook created through the Workflows app** (Power Automate):
 
-1. In Teams, open the channel, click **⋯ > Workflows** (or open the Workflows app).
-2. Choose the template **"Post to a channel when a webhook request is received"**.
-3. Select the team and the channel, then create the flow.
-4. Copy the webhook URL provided at the last step (it looks like `https://prod-XX.westeurope.logic.azure.com/workflows/...`).
+1. In Teams, open the channel and click **⋯ > Workflows**.
 
-<!-- 📸 Screenshot: the Teams Workflows template "Post to a channel when a webhook request is received" with the resulting webhook URL -->
+<figure><img src="../../.gitbook/assets/teams-workflows-menu.png" alt=""><figcaption><p>The Workflows entry in the channel menu</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/teams-workflows-app.png" alt=""><figcaption><p>Creating the webhook with the Workflows app</p></figcaption></figure>
+2. Search for "webhook" and choose the template **Send webhook alerts to a channel**.
+
+<figure><img src="../../.gitbook/assets/teams-workflows-template.png" alt=""><figcaption><p>Choosing the webhook template</p></figcaption></figure>
+
+3. Select the team and the channel, then click **Save**.
+
+<figure><img src="../../.gitbook/assets/teams-workflows-config.png" alt=""><figcaption><p>Binding the workflow to the channel</p></figcaption></figure>
+
+4. On the confirmation screen, click **Copy webhook link** — this is the URL you will paste into Dastra (it looks like `https://prod-XX.westeurope.logic.azure.com/workflows/...`).
+
+<figure><img src="../../.gitbook/assets/teams-workflows-link.png" alt=""><figcaption><p>Copying the webhook URL</p></figcaption></figure>
 
 {% hint style="info" %}
 Microsoft retired the classic Office 365 incoming webhooks (channel connectors) in April 2026. The Workflows app is Microsoft's replacement, and it is what this integration relies on.
