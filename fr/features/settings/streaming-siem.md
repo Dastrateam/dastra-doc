@@ -38,7 +38,7 @@ Remplissez le formulaire puis cliquez sur **Enregistrer** :
   * **Dynatrace (Log Monitoring v2)** — le format natif de l'API d'ingestion de logs Dynatrace.
   * **CEF (Common Event Format)** — pour ArcSight, Sumo Logic et la plupart des SIEM qui ingèrent du CEF.
   * **Syslog (RFC 5424)** — lignes syslog structurées.
-* **Sévérité minimale** — le niveau le moins sévère encore transmis : **Tous les événements**, **Notice et plus**, **Warning et plus (événements de sécurité)** ou **Error et plus**. Gardez *Tous les événements* pour une piste d'audit complète, ou restreignez le flux aux événements de sécurité.
+* **Sévérité minimale** — le niveau le moins sévère encore transmis (par défaut : *Tous les événements*) : **Tous les événements**, **Notice et plus**, **Warning et plus (événements de sécurité)** ou **Error et plus**. Nous recommandons **Warning et plus** : vous conservez le signal pertinent pour la sécurité (échecs de connexion, changements de permissions et SSO/MFA, clés API, suppressions…) sans inonder votre SIEM d'activité courante. Ne choisissez *Tous les événements* que si votre SIEM doit ingérer la piste d'audit complète.
 * **Vérifier le certificat TLS** — laissez-le activé ; ne le désactivez que pour un collecteur de développement auto-signé.
 
 Activez ensuite **Activer le streaming temps réel**.
@@ -76,7 +76,7 @@ Chaque événement d'audit est délivré individuellement, au fil de l'eau, avec
 | `tenantId` / `workspaceId` / `workspaceName` / `areaId` | Où cela s'est produit |
 | `url` | Lien profond vers l'enregistrement dans Dastra |
 
-Les événements sensibles pour la sécurité sont remontés en sévérité indépendamment de leur priorité d'affichage dans Dastra : les échecs de connexion répétés sont envoyés en **Error** (avec `outcome: failure`) ; les changements de permissions, la création/suppression de clés API, les changements MFA et SSO, les révocations et suppressions d'utilisateurs et les suppressions de workspaces sont envoyés en **Warning**. C'est aussi sur cette sévérité que porte le réglage **Sévérité minimale** — *Warning et plus* restreint le flux à ces événements de sécurité.
+Les événements sensibles pour la sécurité sont remontés en sévérité indépendamment de leur priorité d'affichage dans Dastra : les échecs de connexion répétés sont envoyés en **Error** (avec `outcome: failure`) ; les changements de permissions, la création/suppression de clés API, les changements MFA et SSO, les révocations et suppressions d'utilisateurs et les suppressions de workspaces sont envoyés en **Warning**. C'est aussi sur cette sévérité que porte le réglage **Sévérité minimale** — *Warning et plus* (le réglage recommandé) restreint le flux à ces événements de sécurité.
 
 {% hint style="info" %}
 Les événements contiennent le nom et l'adresse e-mail de l'auteur de l'action — les informations déjà affichées dans le journal d'audit Dastra. Aucun contenu d'enregistrement (données personnelles des personnes concernées, contenu de documents…) n'est diffusé.
