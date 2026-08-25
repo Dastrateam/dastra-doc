@@ -195,6 +195,31 @@ Après synchronisation SCIM :
 
 ***
 
+### Endpoints SCIM et découverte
+
+L'API SCIM de Dastra expose les endpoints standard SCIM 2.0, tous servis sous votre URL SCIM et authentifiés par le jeton SCIM (les requêtes sans jeton valide reçoivent un `401`) :
+
+| Endpoint | Rôle |
+| --- | --- |
+| `/v2/Users` | Créer, lire, mettre à jour (PATCH) et supprimer les utilisateurs |
+| `/v2/Groups` | Créer, lire, mettre à jour (PATCH) et supprimer les groupes (équipes Dastra) |
+| `/v2/ServiceProviderConfig` | Déclare les capacités du service SCIM |
+| `/v2/ResourceTypes` | Liste les types de ressources (User, Group) et leurs extensions de schéma |
+| `/v2/Schemas` | Définition attribut par attribut de chaque schéma pris en charge |
+
+Les trois **endpoints de découverte** (RFC 7644 §4) sont en lecture seule. Les fournisseurs d'identité et connecteurs SCIM (Microsoft Entra ID, Okta, connecteurs sur mesure…) les interrogent pour construire automatiquement le schéma d'attributs — sans fichier de schéma manuel. `/v2/Schemas` décrit exactement les attributs que Dastra lit et écrit : c'est la liste de référence, et un attribut qui n'y figure pas est ignoré par la synchronisation. `ServiceProviderConfig` répond aussi sur les alias courants `/v2/ServiceProviderConfigs` et `/v2/ServiceProviderConfiguration`, les connecteurs divergeant sur son nom.
+
+Capacités déclarées par `ServiceProviderConfig`, conformes au comportement réel de l'API :
+
+* **Pris en charge** : opérations PATCH, filtrage (voir la limite ci-dessous).
+* **Non pris en charge** : opérations bulk, tri, etags, changement de mot de passe.
+
+{% hint style="info" %}
+Le filtrage n'est pris en charge qu'en **égalité stricte**, sur `userName` pour les utilisateurs et `displayName` pour les groupes (ex. `filter=userName eq "jane.doe@entreprise.com"`). Les expressions de filtre plus complexes ne sont pas prises en charge.
+{% endhint %}
+
+***
+
 ## Foire aux questions
 
 ### Quel est le rôle du SCIM dans Dastra ?
