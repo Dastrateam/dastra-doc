@@ -56,7 +56,7 @@ Dans la page **Overview** de l'application nouvellement créée, cliquez sur **"
 
 Avant de configurer Entra, récupérez vos credentials SCIM dans Dastra.
 
-**Connectez-vous à Dastra** en tant qu'administrateur. Allez dans **Paramètres de l'organisation** > **Sécurité** > **SCIM**
+**Connectez-vous à Dastra** en tant qu'administrateur. Allez dans **Paramètres de l'organisation** > [**Single Sign On**](https://app.dastra.eu/general-settings/sso) > **SCIM**
 
 ![](../../.gitbook/assets/settings-scim-azure-app-menu-scim.png)
 
