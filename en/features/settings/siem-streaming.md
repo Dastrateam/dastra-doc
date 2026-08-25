@@ -38,7 +38,7 @@ Fill in the form and click **Save**:
   * **Dynatrace (Log Monitoring v2)** — the native payload of the Dynatrace log ingest API.
   * **CEF (Common Event Format)** — for ArcSight, Sumo Logic, and most SIEMs that ingest CEF.
   * **Syslog (RFC 5424)** — structured syslog lines.
-* **Minimum severity** — the least severe level that is still streamed (default: *All events*): **All events**, **Notice and above**, **Warning and above (security events)** or **Error and above**. We recommend **Warning and above**: it keeps the security-relevant signal (failed logins, permission and SSO/MFA changes, API keys, deletions…) without flooding your SIEM with routine activity. Pick *All events* only if your SIEM must ingest the complete audit trail.
+* **Minimum severity** — the least severe level that is still streamed: **All events**, **Notice and above**, **Warning and above (security events)** or **Error and above**. The default — and recommended — level is **Warning and above**: it keeps the security-relevant signal (failed logins, permission and SSO/MFA changes, API keys, deletions…) without flooding your SIEM with routine activity. Pick *All events* only if your SIEM must ingest the complete audit trail.
 * **Verify TLS certificate** — keep it enabled; disable it only for a self-signed development collector.
 
 Then switch on **Enable real-time streaming**.

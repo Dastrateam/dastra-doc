@@ -38,7 +38,7 @@ Remplissez le formulaire puis cliquez sur **Enregistrer** :
   * **Dynatrace (Log Monitoring v2)** — le format natif de l'API d'ingestion de logs Dynatrace.
   * **CEF (Common Event Format)** — pour ArcSight, Sumo Logic et la plupart des SIEM qui ingèrent du CEF.
   * **Syslog (RFC 5424)** — lignes syslog structurées.
-* **Sévérité minimale** — le niveau le moins sévère encore transmis (par défaut : *Tous les événements*) : **Tous les événements**, **Notice et plus**, **Warning et plus (événements de sécurité)** ou **Error et plus**. Nous recommandons **Warning et plus** : vous conservez le signal pertinent pour la sécurité (échecs de connexion, changements de permissions et SSO/MFA, clés API, suppressions…) sans inonder votre SIEM d'activité courante. Ne choisissez *Tous les événements* que si votre SIEM doit ingérer la piste d'audit complète.
+* **Sévérité minimale** — le niveau le moins sévère encore transmis : **Tous les événements**, **Notice et plus**, **Warning et plus (événements de sécurité)** ou **Error et plus**. Le niveau par défaut — et recommandé — est **Warning et plus** : vous conservez le signal pertinent pour la sécurité (échecs de connexion, changements de permissions et SSO/MFA, clés API, suppressions…) sans inonder votre SIEM d'activité courante. Ne choisissez *Tous les événements* que si votre SIEM doit ingérer la piste d'audit complète.
 * **Vérifier le certificat TLS** — laissez-le activé ; ne le désactivez que pour un collecteur de développement auto-signé.
 
 Activez ensuite **Activer le streaming temps réel**.
