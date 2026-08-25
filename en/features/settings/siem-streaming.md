@@ -28,17 +28,24 @@ Fill in the form and click **Save**:
 * **Authentication** — how the token is sent with each event:
   * **Bearer** — `Authorization: Bearer <token>` (default),
   * **API Key** — `Authorization: ApiKey <token>`,
+  * **Authorization with custom scheme** — `Authorization: <scheme> <token>`, where you provide the **Authorization scheme** word (e.g. `Splunk` for a Splunk HEC input, `Api-Token` for Dynatrace),
   * **Custom header** — the token is sent in the header you name in **Header name** (e.g. `X-API-Key`),
   * **None** — no authentication header (e.g. when the token is part of the URL).
 * **Token / API key** — the collector token. It is stored encrypted and never displayed again; leave the field empty later to keep the current one.
 * **Custom headers (optional)** — extra HTTP headers sent with every event, as key/value pairs.
 * **Event format**:
   * **Splunk HEC (JSON)** — the native Splunk HTTP Event Collector envelope. Two extra optional fields appear: **Source type** (default `dastra:audit`) and **Index**.
+  * **Dynatrace (Log Monitoring v2)** — the native payload of the Dynatrace log ingest API.
   * **CEF (Common Event Format)** — for ArcSight, Sumo Logic, and most SIEMs that ingest CEF.
   * **Syslog (RFC 5424)** — structured syslog lines.
+* **Minimum severity** — the least severe level that is still streamed: **All events**, **Notice and above**, **Warning and above (security events)** or **Error and above**. Keep *All events* for a complete audit trail, or restrict the stream to the security-relevant events.
 * **Verify TLS certificate** — keep it enabled; disable it only for a self-signed development collector.
 
 Then switch on **Enable real-time streaming**.
+
+{% hint style="info" %}
+**Common recipes** — Splunk HEC: endpoint `https://<host>:8088/services/collector/event`, format *Splunk HEC (JSON)*, authentication *Bearer* (or *Authorization with custom scheme* + `Splunk` for classic HEC inputs). Dynatrace: endpoint `https://<environment>.live.dynatrace.com/api/v2/logs/ingest`, format *Dynatrace (Log Monitoring v2)*, authentication *Authorization with custom scheme* + `Api-Token`.
+{% endhint %}
 
 <!-- 📸 Screenshot: the SIEM form filled with a Splunk HEC endpoint, Bearer auth and the format select open -->
 
@@ -69,7 +76,7 @@ Each audit event is delivered individually, as it happens, with the following co
 | `tenantId` / `workspaceId` / `workspaceName` / `areaId` | Where it happened |
 | `url` | Deep link back to the record in Dastra |
 
-Security-sensitive events are elevated in severity regardless of their display priority in Dastra: repeated failed logins are sent as **Error** (with `outcome: failure`); permission changes, API key creation/removal, MFA and SSO changes, user revocations and deletions, and workspace deletions are sent as **Warning**.
+Security-sensitive events are elevated in severity regardless of their display priority in Dastra: repeated failed logins are sent as **Error** (with `outcome: failure`); permission changes, API key creation/removal, MFA and SSO changes, user revocations and deletions, and workspace deletions are sent as **Warning**. This severity is also what the **Minimum severity** setting filters on — *Warning and above* restricts the stream to these security events.
 
 {% hint style="info" %}
 Events contain the actor's name and e-mail address — the information already shown in the Dastra audit log. No record content (personal data of data subjects, document contents…) is streamed.

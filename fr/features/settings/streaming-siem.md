@@ -28,17 +28,24 @@ Remplissez le formulaire puis cliquez sur **Enregistrer** :
 * **Authentification** — la façon dont le jeton est envoyé avec chaque événement :
   * **Bearer** — `Authorization: Bearer <jeton>` (par défaut),
   * **API Key** — `Authorization: ApiKey <jeton>`,
+  * **Authorization avec schéma personnalisé** — `Authorization: <schéma> <jeton>`, où vous renseignez le mot du **Schéma d'autorisation** (ex. `Splunk` pour une entrée Splunk HEC, `Api-Token` pour Dynatrace),
   * **Custom header** — le jeton est envoyé dans l'en-tête que vous nommez dans **Nom de l'en-tête** (ex. `X-API-Key`),
   * **None** — aucun en-tête d'authentification (ex. quand le jeton fait partie de l'URL).
 * **Jeton / clé API** — le jeton du collecteur. Il est stocké chiffré et n'est jamais réaffiché ; laissez le champ vide par la suite pour conserver l'actuel.
 * **En-têtes personnalisés (optionnel)** — en-têtes HTTP supplémentaires envoyés avec chaque événement, sous forme de paires clé/valeur.
 * **Format des événements** :
   * **Splunk HEC (JSON)** — l'enveloppe native du HTTP Event Collector de Splunk. Deux champs optionnels supplémentaires apparaissent : **Source type** (par défaut `dastra:audit`) et **Index**.
+  * **Dynatrace (Log Monitoring v2)** — le format natif de l'API d'ingestion de logs Dynatrace.
   * **CEF (Common Event Format)** — pour ArcSight, Sumo Logic et la plupart des SIEM qui ingèrent du CEF.
   * **Syslog (RFC 5424)** — lignes syslog structurées.
+* **Sévérité minimale** — le niveau le moins sévère encore transmis : **Tous les événements**, **Notice et plus**, **Warning et plus (événements de sécurité)** ou **Error et plus**. Gardez *Tous les événements* pour une piste d'audit complète, ou restreignez le flux aux événements de sécurité.
 * **Vérifier le certificat TLS** — laissez-le activé ; ne le désactivez que pour un collecteur de développement auto-signé.
 
 Activez ensuite **Activer le streaming temps réel**.
+
+{% hint style="info" %}
+**Recettes courantes** — Splunk HEC : endpoint `https://<hôte>:8088/services/collector/event`, format *Splunk HEC (JSON)*, authentification *Bearer* (ou *Authorization avec schéma personnalisé* + `Splunk` pour les entrées HEC classiques). Dynatrace : endpoint `https://<environnement>.live.dynatrace.com/api/v2/logs/ingest`, format *Dynatrace (Log Monitoring v2)*, authentification *Authorization avec schéma personnalisé* + `Api-Token`.
+{% endhint %}
 
 <!-- 📸 Capture : le formulaire SIEM rempli avec un endpoint Splunk HEC, l'authentification Bearer et le sélecteur de format ouvert -->
 
@@ -69,7 +76,7 @@ Chaque événement d'audit est délivré individuellement, au fil de l'eau, avec
 | `tenantId` / `workspaceId` / `workspaceName` / `areaId` | Où cela s'est produit |
 | `url` | Lien profond vers l'enregistrement dans Dastra |
 
-Les événements sensibles pour la sécurité sont remontés en sévérité indépendamment de leur priorité d'affichage dans Dastra : les échecs de connexion répétés sont envoyés en **Error** (avec `outcome: failure`) ; les changements de permissions, la création/suppression de clés API, les changements MFA et SSO, les révocations et suppressions d'utilisateurs et les suppressions de workspaces sont envoyés en **Warning**.
+Les événements sensibles pour la sécurité sont remontés en sévérité indépendamment de leur priorité d'affichage dans Dastra : les échecs de connexion répétés sont envoyés en **Error** (avec `outcome: failure`) ; les changements de permissions, la création/suppression de clés API, les changements MFA et SSO, les révocations et suppressions d'utilisateurs et les suppressions de workspaces sont envoyés en **Warning**. C'est aussi sur cette sévérité que porte le réglage **Sévérité minimale** — *Warning et plus* restreint le flux à ces événements de sécurité.
 
 {% hint style="info" %}
 Les événements contiennent le nom et l'adresse e-mail de l'auteur de l'action — les informations déjà affichées dans le journal d'audit Dastra. Aucun contenu d'enregistrement (données personnelles des personnes concernées, contenu de documents…) n'est diffusé.

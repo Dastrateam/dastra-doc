@@ -34,7 +34,7 @@ En savoir plus : [SAP LeanIX](sap-leanix.md).
 
 ### Nouveau : streaming SIEM
 
-Diffusez les événements d'audit de sécurité de votre compte (connexions, changements de permissions, clés API, SSO, suppressions…) vers votre SIEM en temps réel — Splunk HEC (JSON), CEF ou Syslog RFC 5424 — ou exportez-les manuellement depuis la page des journaux d'audit dans les mêmes formats.
+Diffusez les événements d'audit de sécurité de votre compte (connexions, changements de permissions, clés API, SSO, suppressions…) vers votre SIEM en temps réel — Splunk HEC (JSON), Dynatrace, CEF ou Syslog RFC 5424 — ou exportez-les manuellement depuis la page des journaux d'audit dans les mêmes formats.
 
 En savoir plus : [Streaming SIEM](../../features/settings/streaming-siem.md).
 
