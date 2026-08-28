@@ -176,6 +176,7 @@
 
 * [Beveiliging bij Dastra](security/general.md)
 * [Sterke authenticatie](security/mfa.md)
+* [Passkeys](security/passkey.md)
 * [Kwaliteit van onze diensten](security/qualite-de-nos-services.md)
 
 ## 🤖 DIVERSEN

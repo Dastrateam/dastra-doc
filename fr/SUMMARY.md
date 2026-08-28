@@ -104,6 +104,7 @@
     * [Créer ou modifier un modèle de PIA](features/audit/creez-un-modele-daudit/creer-ou-modifier-un-modele-de-pia.md)
   * [Planifier un questionnaire](features/audit/planifier-un-audit.md)
   * [Piloter les questionnaires](features/audit/piloter-les-questionnaires.md)
+  * [Valider un questionnaire](features/audit/questionnaire-validation.md)
   * [Exporter un rapport](features/audit/exporter-un-rapport.md)
   * [Types de questionnaires](features/audit/types-de-questionnaires/README.md)
     * [AIPD / PIA](features/audit/types-de-questionnaires/pia-aipd.md)
@@ -275,6 +276,7 @@
 
 * [Sécurité chez Dastra](security/general.md)
 * [Authentification forte](security/mfa.md)
+* [Clés d'accès (passkeys)](security/passkey.md)
 * [Qualité de nos services](security/qualite-de-nos-services.md)
 * [Certifications](security/certifications.md)
 
