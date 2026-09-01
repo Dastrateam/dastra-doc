@@ -138,4 +138,4 @@ Si un champ n'est pas valide (par exemple, si il n'est pas renseigné alors qu'i
 
 ## Limitations
 
-Vous ne pouvez **pas filtrer les champs personnalisés du type multiple (case à cocher (Multiple) et sélecteur (Multiple))**. C'est une limitation connue sur laquelle nous travaillons.
+Vous ne pouvez **pas filtrer les champs personnalisés du type multiple (case à cocher (Multiple) et sélecteur (Multiple)**.
