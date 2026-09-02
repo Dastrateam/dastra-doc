@@ -100,8 +100,8 @@ description: Bienvenue dans la documentation de Dastra.
 [liste-des-endpoints-dapi.md](api-references/liste-des-endpoints-dapi.md)
 {% endcontent-ref %}
 
-{% content-ref url="api-references/integrations/" %}
-[integrations](api-references/integrations/)
+{% content-ref url="features/integrations/" %}
+[integrations](features/integrations/)
 {% endcontent-ref %}
 
 ***
