@@ -96,8 +96,8 @@ description: Welcome to the Dastra documentation.
 [https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md)
 {% endcontent-ref %}
 
-{% content-ref url="api-references/integrations/" %}
-[integrations](api-references/integrations/)
+{% content-ref url="features/integrations/" %}
+[integrations](features/integrations/)
 {% endcontent-ref %}
 
 ***
