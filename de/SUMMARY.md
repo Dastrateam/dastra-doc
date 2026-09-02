@@ -103,6 +103,7 @@
     * [Eine DSFA-Vorlage erstellen oder bearbeiten](features/audit/creez-un-modele-daudit/creer-ou-modifier-un-modele-de-pia.md)
   * [Einen Fragebogen planen](features/audit/planifier-un-audit.md)
   * [Fragebögen steuern](features/audit/piloter-les-questionnaires.md)
+  * [Einen Fragebogen validieren](features/audit/questionnaire-validation.md)
   * [Einen Bericht exportieren](features/audit/exporter-un-rapport.md)
   * [Fragebogentypen](features/audit/types-de-questionnaires/README.md)
     * [DSFA / PIA](features/audit/types-de-questionnaires/pia-aipd.md)
@@ -272,6 +273,7 @@
 
 * [Sicherheit bei Dastra](security/general.md)
 * [Zwei-Faktor-Authentifizierung](security/mfa.md)
+* [Passkeys](security/passkey.md)
 * [Qualität unserer Dienste](security/qualite-de-nos-services.md)
 * [Zertifizierungen](security/certifications.md)
 

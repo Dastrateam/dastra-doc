@@ -95,6 +95,7 @@
   * [Create a questionnaire template](features/audit/create-or-modify-an-audit-template-or-dpia.md)
   * [Schedule a questionnaire](features/audit/scheduling-an-audit-or-a-pia.md)
   * [Monitor questionnaires](features/audit/monitor-questionnaires.md)
+  * [Validate a questionnaire](features/audit/questionnaire-validation.md)
   * [Export a report](features/audit/export-questionnaire-report.md)
   * [Questionnaire types](features/audit/questionnaire-types/README.md)
     * [PIA / DPIA](features/audit/questionnaire-types/pia-dpia.md)
@@ -263,6 +264,7 @@
 ## 🛡️ Security
 
 * [Security at Dastra](security/general.md)
+* [Passkeys](security/passkey.md)
 * [Security roadmap](security/feuille-de-route.md)
 * [Quality of Service](security/qualite-de-nos-services.md)
 

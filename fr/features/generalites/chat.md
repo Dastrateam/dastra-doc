@@ -31,6 +31,27 @@ Vous pouvez **mentionner** les utilisateurs concernés en utilisant le raccourci
 
 L’objectif de la mention est d’envoyer automatiquement une notification par e-mail à l’utilisateur concerné.
 
+## Citations (réponse à un message)
+
+Vous pouvez **répondre directement à un message précis** de la conversation, afin de garder le contexte lisible dans les fils de discussion longs.
+
+### Comment faire ?
+
+* **Survolez le message** auquel vous souhaitez répondre et cliquez sur le bouton « **Répondre** ». Ce bouton est disponible sur les messages des autres utilisateurs.
+* Le formulaire de saisie s’ouvre et affiche, au-dessus de la zone de texte, un **encart de citation** intitulé « Réponse à {nom de l’auteur} » avec un aperçu du message cité.
+* Si votre brouillon est vide, l’auteur du message cité est **automatiquement mentionné** dans votre réponse (voir la section Mentions), ce qui déclenche sa notification.
+* **Saisissez votre message**, ajoutez d’éventuelles pièces jointes, puis cliquez sur **Envoyer**.
+
+Pour retirer la citation tout en conservant votre message en cours de rédaction, cliquez sur l’**icône corbeille** située à droite de l’encart de citation. Vous pouvez aussi retirer la mention ajoutée automatiquement si vous ne souhaitez pas notifier l’auteur.
+
+{% hint style="info" %}
+Un message ne peut citer **qu’un seul message** à la fois. La citation est conservée si vous modifiez ensuite votre message.
+{% endhint %}
+
+### Affichage dans la conversation
+
+Une fois le message publié, le message cité s’affiche dans un encart au-dessus du contenu de votre réponse, avec le nom de son auteur et un aperçu de son contenu. Si le message cité est supprimé par la suite, l’encart affiche la mention « Ce message a été supprimé » : votre réponse reste visible et l’historique du fil n’est pas rompu.
+
 ## Notifications
 
 Les notifications de message sont envoyées automatiquement dès qu’un message est posté sur l’objet concerné. Deux types de notifications sont générées automatiquement :

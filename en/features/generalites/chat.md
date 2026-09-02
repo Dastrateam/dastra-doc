@@ -29,6 +29,29 @@ The purpose of a mention is to automatically send an email notification to the m
 
 ***
 
+### Quotes (replying to a message)
+
+You can **reply directly to a specific message** in the conversation, which keeps the context readable in long discussion threads.
+
+#### How to Use It
+
+1. Hover over the message you want to reply to and click the “**Reply**” button. This button is available on messages posted by other users.
+2. The message form opens and displays a **quote block** above the text area, titled “Replying to {author name}”, with a preview of the quoted message.
+3. If your draft is empty, the author of the quoted message is **automatically mentioned** in your reply (see the Mentions section), which triggers their notification.
+4. **Enter your message**, attach any files, then click **Send**.
+
+To remove the quote while keeping the message you are writing, click the **trash icon** on the right-hand side of the quote block. You can also remove the automatically added mention if you do not want to notify the author.
+
+{% hint style="info" %}
+A message can quote **only one message** at a time. The quote is kept if you later edit your message.
+{% endhint %}
+
+#### Display in the conversation
+
+Once the message is posted, the quoted message appears in a block above your reply, showing its author’s name and a preview of its content. If the quoted message is later deleted, the block displays “This message has been deleted”: your reply remains visible and the thread history is not broken.
+
+***
+
 ### Notifications
 
 Message notifications are automatically sent whenever a message is posted on the relevant item. There are two types of notifications sent automatically:
