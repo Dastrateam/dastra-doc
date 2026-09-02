@@ -200,6 +200,31 @@ After SCIM synchronization:
 
 ***
 
+### SCIM endpoints and discovery
+
+The Dastra SCIM API exposes the standard SCIM 2.0 endpoints, all served under your SCIM URL and authenticated with the SCIM token (requests without a valid token receive a `401`):
+
+| Endpoint | Purpose |
+| --- | --- |
+| `/v2/Users` | Create, read, update (PATCH) and delete users |
+| `/v2/Groups` | Create, read, update (PATCH) and delete groups (Dastra teams) |
+| `/v2/ServiceProviderConfig` | Declares the capabilities of the SCIM service |
+| `/v2/ResourceTypes` | Lists the resource types (User, Group) and their schema extensions |
+| `/v2/Schemas` | Attribute-level definition of each supported schema |
+
+The three **discovery endpoints** (RFC 7644 §4) are read-only. Identity providers and SCIM connectors (Microsoft Entra ID, Okta, custom connectors…) probe them to build the attribute schema automatically — no manual schema file needed. `/v2/Schemas` describes exactly the attributes Dastra reads and writes: it is the authoritative list, and an attribute absent from it is ignored by the synchronization. `ServiceProviderConfig` also answers on the common aliases `/v2/ServiceProviderConfigs` and `/v2/ServiceProviderConfiguration`, since connectors disagree on its name.
+
+Capabilities declared by `ServiceProviderConfig`, matching the actual behavior of the API:
+
+* **Supported**: PATCH operations, filtering (see the limitation below).
+* **Not supported**: bulk operations, sorting, etags, password change.
+
+{% hint style="info" %}
+Filtering is supported for **equality only**, on `userName` for users and `displayName` for groups (e.g. `filter=userName eq "jane.doe@company.com"`). More complex filter expressions are not supported.
+{% endhint %}
+
+***
+
 ## Frequently Asked Questions
 
 ### What is the role of SCIM in Dastra?

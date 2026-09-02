@@ -240,6 +240,7 @@
     * [Active Directory (MS Entra)](features/settings/single-sign-on-sso/active-directory-ms-entra.md)
     * [Okta](features/settings/single-sign-on-sso/okta.md)
     * [Problèmes connus](features/settings/single-sign-on-sso/problemes-connus.md)
+  * [Streaming SIEM](features/settings/streaming-siem.md)
   * [SCIM](features/settings/scim.md)
   * [Gestion des clés d'API](features/settings/gestion-des-cles-dapi.md)
   * [Notifications](features/settings/notifications.md)
@@ -265,11 +266,16 @@
 * [Authentification](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
 * [Intégrations](api-references/integrations/README.md)
+  * [Nouveautés de la 2.0.6](api-references/integrations/nouveautes-integrations-2-0-6.md)
+  * [Connexions, cas d'usage et mapping des champs](api-references/integrations/connexions-et-mapping-des-champs.md)
   * [Zapier](api-references/integrations/zapier/README.md)
     * [Intégrer Dastra avec des Outils Externes](api-references/integrations/zapier/integrer-dastra-avec-des-outils-externes.md)
     * [Questions fréquentes](api-references/integrations/zapier/questions-frequentes.md)
   * [Filerskeepers](api-references/integrations/filerskeepers.md)
   * [ServiceNow](api-references/integrations/servicenow.md)
+  * [SAP LeanIX](api-references/integrations/sap-leanix.md)
+  * [Jira](api-references/integrations/jira.md)
+  * [Microsoft Teams](api-references/integrations/microsoft-teams.md)
 
 ## 🛡️ La sécurité <a href="#security" id="security"></a>
 

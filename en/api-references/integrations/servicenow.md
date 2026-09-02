@@ -18,46 +18,54 @@ It allows you to:
 **Prerequisites**
 
 * Have a paid Dastra license including access to the Integrations / Connectors module.
-* Have a ServiceNow account with:
-  * An accessible instance (e.g. https://your-instance.service-now.com)
-  * An API user with read access to `cmdb_ci_business_app`.
-* Ensure that your ServiceNow instance allows REST API calls from external sources.
+* Have a ServiceNow instance (e.g. `https://your-instance.service-now.com`) that allows REST API calls from external sources, and depending on the authentication method:
+  * **OAuth 2.0 (recommended)** — the ability to register an OAuth application in your instance,
+  * **Basic** — a service account with read access to `cmdb_ci_business_app`.
 
 **Installation**\
 \
-The setup process is very simple:
+The setup process follows the common integration flow (see [Connections, use cases and field mapping](connections-and-field-mapping.md)):
 
 1. Go to the ServiceNow integration page in the Dastra integrations marketplace.\
    Example:\
    [https://app.dastra.eu/workspace/0/settings/integrations/servicenow](https://app.dastra.eu/workspace/0/settings/integrations/servicenow)
-2. Click on the "Install" button.
-3. Enter your ServiceNow account credentials:
+2. On the asset import use case, click **Add integration**.
+3. Add a connection and pick the **Authentication method** (see below).
+4. Complete the **Configuration** step. It is mandatory to finalize the installation.
 
-* Username
-* Password
+<figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Creating the ServiceNow connection</p></figcaption></figure>
 
-This information will allow Dastra to generate a secure access token to communicate with your ServiceNow instance.
+**Authentication methods**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+**OAuth 2.0 (recommended)** — Dastra never stores a password; ServiceNow issues short-lived tokens that Dastra refreshes automatically.
 
-4. After validation, a configuration window will appear. This step is mandatory to complete the installation.
+1. In ServiceNow, create an OAuth app for Dastra: **All > Application Registry** (on recent releases: *Inbound integrations > Authorization code grant*), type *OAuth API endpoint for external clients*.
+2. Set the redirect URL to: `https://api.dastra.eu/v1/integrationaccounts/callback/servicenow`
+3. Make sure the app's scope restriction is **Broadly scoped** (or declare the `useraccount` scope): a *securely scoped* app without scopes will reject the token exchange.
+4. In Dastra, create the connection with the method **OAuth**, enter the **Instance URL**, the **OAuth client ID** and the **OAuth client secret**, then click **Save and connect** and authorize Dastra in ServiceNow.
 
-<figure><img src="../../.gitbook/assets/settings-workflow-rule-create-type-picker.png" alt=""><figcaption></figcaption></figure>
+**Basic authentication** — username/password of a ServiceNow account, stored encrypted by Dastra.
+
+{% hint style="warning" %}
+Recent ServiceNow instances restrict Basic authentication on the REST API at the account level. If you use Basic authentication, create a **dedicated service account with "Web service access only" checked** — never a named user or an admin account. Symptom of the restriction: a `401 User is not authenticated` response even with valid credentials.
+{% endhint %}
 
 **Configuration**
 
-* Enter your ServiceNow instance URL
-* Choose whether you want to enable asset synchronization (Assets synchronized with ServiceNow will be updated every night at 00:00 UTC)
-* Select the people to notify in case of asset modification/creation. They will receive an email notification containing information about the updated assets.
-* Checking "Create new assets if not exists" will result in creating an asset if it does not exist in Dastra, based on the external reference.
+* Select the **users to notify on error** (required). They will receive an email notification when a synchronization fails, containing information about the updated assets.
+* **Create the Dastra record if it does not exist** — when enabled, an asset is created if it does not exist in Dastra, based on the external reference.
+* **Deduplicate synced items** — match incoming applications against existing assets on a **Matching field** (**Label** or **Reference**) to update them instead of creating duplicates.
+* **Field mapping** — choose which ServiceNow field (from `cmdb_ci_business_app`) fills each Dastra field. The choice lists are read live from your instance's data dictionary, so choice values can be transcoded to Dastra values. See [Connections, use cases and field mapping](connections-and-field-mapping.md).
 
 {% hint style="info" %}
-Warning: if you check this option, a large number of assets may be automatically created in your workspace. Make sure to properly configure external references.
+Warning: if you enable the creation option, a large number of assets may be automatically created in your workspace. Make sure to properly configure external references.
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt=""><figcaption><p>The ServiceNow configuration: options and field mapping</p></figcaption></figure>
 
 **How is data synchronized between Dastra and ServiceNow?**\
 \
-During each synchronization, several fields from ServiceNow are automatically mapped into your Dastra asset repository. The following information is retrieved and updated:
+The synchronization runs automatically **once a day**, and can be triggered at any time with **Run synchronization now** on the use case card. During each synchronization, fields from ServiceNow are mapped into your Dastra asset repository. By default, the following information is retrieved and updated:
 
 * Asset **label**
 * **Description** (ServiceNow Short Description)
@@ -71,16 +79,18 @@ During each synchronization, several fields from ServiceNow are automatically ma
 * **Last synchronization date**
 * Asset **owner**
 
-All this data ensures a reliable and up-to-date link between your ServiceNow CMDB and your Dastra repository.
+Each of these default behaviours can be overridden per field in the **Field mapping** editor. All this data ensures a reliable and up-to-date link between your ServiceNow CMDB and your Dastra repository.
 
 **Management of assets deleted in ServiceNow**\
 \
 When Dastra detects that an asset previously synchronized no longer exists in ServiceNow, it is not automatically deleted in Dastra.
 
-Instead, Dastra adds an automatic tag to the asset indicating that it has been deleted in ServiceNow.
+Instead, Dastra adds an automatic tag (`To-delete-servicenow`) to the asset indicating that it has been deleted in ServiceNow. If the application reappears in ServiceNow later, the tag is removed automatically.
 
 This behavior allows:
 
 * keeping history in Dastra,
 * avoiding unintentional deletions,
 * facilitating manual review of obsolete assets.
+
+When deduplication finds **several** matching assets for one incoming application, the candidates are tagged `To-merge-servicenow` for a manual merge decision.

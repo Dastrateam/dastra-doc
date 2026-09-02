@@ -225,6 +225,7 @@
     * [Active Directory](features/settings/single-sign-on-sso/active-directory.md)
     * [Okta](features/settings/single-sign-on-sso/okta.md)
     * [Known problems](features/settings/single-sign-on-sso/known-problems.md)
+  * [SIEM streaming](features/settings/siem-streaming.md)
   * [References](features/settings/references.md)
   * [API key management](features/settings/api-key-management.md)
   * [Notifications](features/settings/notifications.md)
@@ -248,11 +249,16 @@
 * [Authentication](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
 * [Integrations](api-references/integrations/README.md)
+  * [What's new in 2.0.6](api-references/integrations/whats-new-integrations-2-0-6.md)
+  * [Connections, use cases and field mapping](api-references/integrations/connections-and-field-mapping.md)
   * [Integrating Dastra with External Tools](api-references/integrations/integrating-dastra-with-external-tools.md)
   * [Fact Sheet Mapping from SAP LeanIX to Dastra](api-references/integrations/fact-sheet-mapping-from-sap-leanix-to-dastra.md)
   * [Frequently asked questions](api-references/integrations/frequently-asked-questions.md)
   * [Filerskeepers](api-references/integrations/filerskeepers.md)
   * [ServiceNow](api-references/integrations/servicenow.md)
+  * [SAP LeanIX](api-references/integrations/sap-leanix.md)
+  * [Jira](api-references/integrations/jira.md)
+  * [Microsoft Teams](api-references/integrations/microsoft-teams.md)
 
 ## 🛡️ Security
 
