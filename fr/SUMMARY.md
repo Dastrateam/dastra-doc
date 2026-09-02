@@ -267,7 +267,6 @@
 * [Authentification](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
 * [Intégrations](api-references/integrations/README.md)
-  * [Nouveautés de la 2.0.6](api-references/integrations/nouveautes-integrations-2-0-6.md)
   * [Connexions, cas d'usage et mapping des champs](api-references/integrations/connexions-et-mapping-des-champs.md)
   * [Zapier](api-references/integrations/zapier/README.md)
     * [Intégrer Dastra avec des Outils Externes](api-references/integrations/zapier/integrer-dastra-avec-des-outils-externes.md)

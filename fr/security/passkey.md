@@ -43,9 +43,6 @@ Après une connexion par mot de passe, Dastra vous propose de créer une clé d'
 
 * Saisissez votre adresse e-mail sur la page de connexion
 * Sur l'écran suivant, cliquez sur **Se connecter avec une clé d'accès**
-
-<figure><img src="../.gitbook/assets/security-passkey-login-button.png" alt="Bouton « Se connecter avec une clé d&#x27;accès » sur la page de connexion"><figcaption><p>Le bouton « Se connecter avec une clé d'accès » s'affiche si une clé est enregistrée pour votre compte</p></figcaption></figure>
-
 * Validez avec votre empreinte, votre visage, votre code PIN ou votre clé de sécurité
 
 {% hint style="info" %}
