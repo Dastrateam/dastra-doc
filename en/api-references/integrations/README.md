@@ -4,81 +4,63 @@ description: Dastra integrates with Zapier automation platform and many other to
 
 # Integrations
 
-Set up connectors between Dastra and your other favorite applications to automate your workflows and save time.
+## Integrations
 
-![](../../.gitbook/assets/connectors.svg)
+Dastra connects to the tools your teams already use: import your application inventory from your ITAM or CMDB, synchronize data subject requests with your ticketing tool, post notifications in your collaboration channels, stream your security audit logs to your SIEM, or attach files from your cloud drives. Native connectors cover the most common tools; Zapier covers everything else.
 
-{% hint style="info" %}
-[Go to the Dastra page of the Zapier catalog](https://zapier.com/apps/dastra/integrations)
-{% endhint %}
+The integration store is available in **Settings > Integrations** of your workspace. It lists every available integration, filterable by category and by the Dastra object it targets, with an **All / Installed** switch.
 
-### Introduction to Zapier&#x20;
+#### How native integrations work
 
-Zapier is an online automation tool that connects your applications and services.&#x20;
+Every native integration is built on three concepts:
 
-You can connect two or more applications to automate repetitive tasks without having to code or hire developers to do the integration.&#x20;
+* **Use cases** — each integration exposes one or more use cases (for example _import applications as assets_ or _synchronize data subject requests_). Use cases are installed, enabled, configured and uninstalled independently.
+* **Connections** — a connection stores how Dastra authenticates against the external tool: credentials stored encrypted by Dastra, or a delegated OAuth authorization. You can create several connections to the same tool (a production and a sandbox instance, for instance) and choose which one each use case relies on. Connections display their health and can be tested at any time.
+* **Field mapping** — import use cases let you choose, for each Dastra field, the external field that fills it, with default values, value transcoding for closed lists (statuses, lifecycle stages…) and AI-assisted suggestions.
 
-With Zapier, you will set up Zaps (or integrations).&#x20;
+Import connectors synchronize once a day and on demand with **Run synchronization now**. Every execution is traced in the integration logs, with the number of created, updated, flagged and in-error items.
 
-A Zap is an automated workflow that links your applications and services together. Each Zap consists of a trigger and one or more actions. When you activate your Zap, it executes the action steps whenever the trigger event occurs.
+<figure><img src="../../.gitbook/assets/integrations-catalog.png" alt=""><figcaption></figcaption></figure>
 
-### The three key concepts to remember:
+Read the details in [Connections, use cases and field mapping](https://doc.dastra.eu/v/en/api-references/integrations/connections-and-field-mapping).
 
-* **Trigger:**\
-  An event that triggers a Zap. For example, if you want to send an SMS every time you receive an email, the trigger is "new email in inbox".
-* **Action:**\
-  An event that a Zap executes after being triggered. For example, if you want to send a text message every time you receive an email, the action is "send a text message".
-* **Zap:**\
-  A trigger and a set of actions, all representing an automated workflow. For example, send an SMS every time you receive an email.
+#### Available integrations
 
-### Models for a quick setup
+| Integration                 | What it does                                                                                                                               | Documentation                                                                                                                           |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **ServiceNow**              | Imports the business applications of your CMDB as assets and keeps them in sync daily                                                      | [ServiceNow](https://doc.dastra.eu/v/en/api-references/integrations/servicenow)                                                         |
+| **SAP LeanIX**              | Imports your Application fact sheets as assets and keeps them in sync daily                                                                | [SAP LeanIX](https://doc.dastra.eu/v/en/api-references/integrations/sap-leanix)                                                         |
+| **Jira**                    | Creates and tracks data subject requests from your Jira project, and transitions the linked issues as requests move through their workflow | [Jira](https://doc.dastra.eu/v/en/api-references/integrations/jira)                                                                     |
+| **Filerskeepers**           | Integrates your Filerskeepers retention policies with Dastra                                                                               | [Filerskeepers](https://doc.dastra.eu/v/en/api-references/integrations/filerskeepers)                                                   |
+| **Microsoft Teams**         | Posts your workflow rule notifications as cards in a Teams channel                                                                         | [Microsoft Teams](https://doc.dastra.eu/v/en/api-references/integrations/microsoft-teams)                                               |
+| **Slack**                   | Delivers Dastra notifications in your Slack workspace                                                                                      | —                                                                                                                                       |
+| **Docusign**                | Sends your contracts to your subcontractors for electronic signature                                                                       | [Docusign integration](https://doc.dastra.eu/v/en/features/contrats/integration-avec-docusign)                                          |
+| **OneDrive / Google Drive** | Attaches files from your drives to your actors, security measures, processing activities, tasks, incidents…                                | [OneDrive/Google Drive integrations](https://doc.dastra.eu/v/en/features/settings/integrations-onedrive-google-drive)                   |
+| **Office 365 / Gmail**      | Sends Dastra emails from your own mailbox                                                                                                  | [SMTP configuration](https://doc.dastra.eu/v/en/features/settings/configuration-du-smtp)                                                |
+| **Incoming mail**           | Turns the emails sent to a dedicated collection address into tasks, requests, data breaches, contracts or processing activities            | [Incoming mail data collection](https://doc.dastra.eu/v/en/features/settings/data-collection-mailboxes)                                 |
+| **SIRENE (INSEE)**          | Fills in your stakeholders' details from the French company registry                                                                       | —                                                                                                                                       |
+| **AI provider**             | Connects any OpenAI-compatible AI provider to the Dastra assistant                                                                         | —                                                                                                                                       |
+| **Single sign-on (SSO)**    | Lets your users sign in with your own identity provider                                                                                    | [Single Sign On (SSO)](https://doc.dastra.eu/v/en/features/settings/single-sign-on-sso)                                                 |
+| **SIEM streaming**          | Streams your security audit events to your SIEM in real time                                                                               | [SIEM streaming](https://doc.dastra.eu/v/en/features/settings/siem-streaming)                                                           |
+| **Zapier**                  | Connects Dastra to more than 3,000 applications through automated workflows                                                                | [Integrating Dastra with external tools](https://doc.dastra.eu/v/en/api-references/integrations/integrating-dastra-with-external-tools) |
 
-We have pre-configured automated workflow templates that you can set up in a few clicks.&#x20;
+Some integrations apply to your whole organization rather than to a workspace — single sign-on, SIEM streaming, Office 365 / Gmail and the AI provider. Their tile in the store takes you to the corresponding organization settings, where they are configured by an account owner.
 
-A dozen templates are already available and can be accessed from our [integrations page](https://www.dastra.eu/en/integrations) or directly from the [integrations section](https://app.dastra.eu/workspace/0/settings/integrations) of the Dastra web application.&#x20;
+#### Zapier: connect everything else
 
-We will regularly put new templates online to meet your automation needs and save you precious time. Please feel free to submit your ideas for automated workflows so that we can propose them as templates.
+Zapier is an online automation tool that connects your applications and services without code. A **Zap** is an automated workflow made of a **trigger** and one or more **actions**: when the trigger event occurs, the actions run.
 
-### A fully customizable zap editor
+On the Dastra side, Zapier can react to two triggers — _new data subject request created_ and _new task created_ — and perform six actions: create a task, create an actor, create a data subject request, link an actor to an existing processing activity, search an actor, and find or create an actor. You can therefore start from a Dastra event to act in a third-party application, or start from a third-party event to act in Dastra.
 
-If you want to automate a workflow for which we don't yet offer a template (or slightly customize an existing template to fit your situation), you can use [Zapier's Zap Editor](https://zapier.com/apps/dastra/integrations).&#x20;
+Pre-configured templates (Salesforce, Zoho, Trello, Google Sheets, Excel, Outlook, Azure DevOps…) are available from the [Dastra page of the Zapier catalog](https://zapier.com/apps/dastra/integrations), and the Zap editor lets you build your own workflow from scratch. See [Integrating Dastra with external tools](https://doc.dastra.eu/v/en/api-references/integrations/integrating-dastra-with-external-tools) and the [Zapier FAQ](https://doc.dastra.eu/v/en/api-references/integrations/frequently-asked-questions).
 
-The Zap Editor allows you to create a Zap from scratch, without having to type a single line of code. Choose the application you want to connect with Dastra from the [Zapier catalog](https://zapier.com/apps), set up a trigger and then select the action you want to perform.&#x20;
+#### Security and data protection
 
-You can trigger actions in a third-party application from an event occurring in Dastra, or trigger an action in Dastra from an event in a third-party application.&#x20;
+* Integration credentials and tokens are stored encrypted, are never returned by the API, and are erased when you uninstall an integration or delete a workspace.
+* OAuth flows strictly validate their callbacks, and the inbound webhook endpoints are rate-limited.
+* Integrations are scoped to a workspace: data from one workspace is never visible from another.
+* Records created by an integration (assets, requests…) belong to your workspace and are kept when the integration is uninstalled.
 
-With over 4,000 Zapier-enabled applications, the automation possibilities are endless.
+#### Need something else?
 
-### What Dastra features are currently automatable in Dastra ?
-
-As you can see, an integration is composed of a trigger and one or more actions. To date, we have set up 2 triggers and 6 actions on the Dastra side (It is important to understand that you are limited in terms of triggers and actions to what the Zapier compatible application editors make available to you). We will expand this list in the future to allow you to automate as many of Dastra's features as possible.
-
-* **Available triggers:**
-
-1. New Data subject request created
-2. New task created
-
-* **Available Actions:**
-
-1. Create a taks
-2. Create an actor
-3. Create a data subject request
-4. Link an actor to an existing data processing
-5. Search an actor
-6. Find or create an actor
-
-You can start from one of the two triggers on the Dastra side to perform tasks in third-party applications, or start from a trigger in a third-party application to perform one of the six possible actions in Dastra.
-
-{% hint style="info" %}
-[View the entire Zapier application library here.](https://zapier.com/apps)
-{% endhint %}
-
-{% hint style="info" %}
-View the [Zapier documentation](https://zapier.com/help) for more information on setting up a connector
-{% endhint %}
-
-Now you're ready to jump into the world of automation and set up your first connector.&#x20;
-
-Follow our step-by-step guide to automating your data subject requests:
-
-{% embed url="https://www.dastra.eu/en/guide/automate-data-subject-requests/51588" %}
+If no integration matches your need, the [Dastra REST API](https://doc.dastra.eu/v/en/api-references/configuration) lets you build your own scripts and connectors, and you can submit a connector request to the Dastra team through the support.

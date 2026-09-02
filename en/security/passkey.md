@@ -43,9 +43,6 @@ After a password login, Dastra invites you to create a passkey if you do not hav
 
 * Enter your email address on the login page
 * On the next screen, click **Sign in with a passkey**
-
-<figure><img src="../.gitbook/assets/security-passkey-login-button.png" alt="Sign in with a passkey button on the login page"><figcaption><p>The "Sign in with a passkey" button appears when a passkey is registered for your account</p></figcaption></figure>
-
 * Confirm with your fingerprint, face, PIN or security key
 
 {% hint style="info" %}

@@ -250,7 +250,6 @@
 * [Authentication](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
 * [Integrations](api-references/integrations/README.md)
-  * [What's new in 2.0.6](api-references/integrations/whats-new-integrations-2-0-6.md)
   * [Connections, use cases and field mapping](api-references/integrations/connections-and-field-mapping.md)
   * [Integrating Dastra with External Tools](api-references/integrations/integrating-dastra-with-external-tools.md)
   * [Fact Sheet Mapping from SAP LeanIX to Dastra](api-references/integrations/fact-sheet-mapping-from-sap-leanix-to-dastra.md)
