@@ -133,6 +133,7 @@
     * [Blokkeer cookies](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/README.md)
       * [Blokkeer iframes (twitter/youtube...)](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/iframes.md)
       * [Google Tag Manager](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/google-tag-manager.md)
+      * [Google Consent Mode V2](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/google-consent-mode-v2.md)
     * [Geavanceerd ontwerp](features/gerer-le-consentement-aux-cookies/integration-technique/design-avance.md)
     * [Toestemming programmatisch beheren](features/gerer-le-consentement-aux-cookies/integration-technique/gerer-le-consentement-programmatiquement.md)
     * [Gebruikersidentificatie](features/gerer-le-consentement-aux-cookies/integration-technique/identification.md)

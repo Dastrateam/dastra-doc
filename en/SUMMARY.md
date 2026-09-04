@@ -182,6 +182,7 @@
     * [Blocking cookies](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/README.md)
       * [Blocking iframes (twitter/youtube...)](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/blocking-iframes-twitter-youtube....md)
       * [Google Tag Manager](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/google-tag-manager.md)
+      * [Google Consent Mode V2](features/gerer-le-consentement-aux-cookies/integration-technique/blocage-des-cookies/google-consent-mode-v2.md)
     * [Advanced Design](features/gerer-le-consentement-aux-cookies/integration-technique/design-avance.md)
     * [Manage consent programmatically](features/gerer-le-consentement-aux-cookies/integration-technique/gerer-le-consentement-programmatiquement.md)
     * [User identification](features/gerer-le-consentement-aux-cookies/integration-technique/user-identification.md)
