@@ -16,9 +16,27 @@ Cette solution de taggage est très efficace pour implémenter le consentement e
 
 Dastra supporte nativement le **Google Consent Mode V2**. Cette intégration permet d'envoyer un signal `consent_update` à GTM dès qu'un utilisateur exprime son consentement, afin que les tags Google respectent ce choix avant de déclencher le tracking.
 
+### Prérequis
+
+* Le snippet de consentement par défaut (voir étape 2) doit être inséré dans le `<head>` de votre site, **avant** le chargement de Google Tag Manager.
+* Dans Google Tag Manager, configurez une balise **« Google Tag »** déclenchée sur toutes les pages.
+* L'intégration fonctionne avec **Google Ads** (sans personnalisation) et **Google Analytics**.
+* Si vous utilisez des balises de conversion ou de remarketing Google Ads, assurez-vous qu'elles ne se déclenchent qu'après consentement, à l'aide d'un évènement personnalisé du type `dastra:consent:{slug-du-service}` (exemple : `dastra:consent:googleleads`).
+
 ### Étape 1 — Activer le Consent Mode V2 sur le service
 
-Dans la configuration du service concerné (ex. Google Analytics, Google Ads), cochez l'option **"Google Consent Mode V2"**. Une fois activée, la bannière Dastra enverra automatiquement le signal `consent_update` à GTM lors de chaque interaction de l'utilisateur avec le bandeau.
+Depuis l'intégration du widget cookies, éditez le service concerné (ex. Google Analytics, Google Ads) et activez l'interrupteur **« Consent mode V2 »**. Une fois activée, la bannière Dastra enverra automatiquement le signal `consent_update` à GTM lors de chaque interaction de l'utilisateur avec le bandeau.
+
+Sélectionnez ensuite les **types de consentement** à piloter pour ce service (tous cochés par défaut) :
+
+* `ad_storage`
+* `analytics_storage`
+* `ad_user_data`
+* `ad_personalization`
+
+<figure><img src="../../../../.gitbook/assets/cookies-service-consent-mode-v2.png" alt=""><figcaption><p>Activation du Consent Mode V2 sur un service du widget cookies</p></figcaption></figure>
+
+Le snippet de consentement par défaut à insérer dans votre site est affiché directement dans l'interface : utilisez le bouton **Copier** pour le récupérer, puis suivez l'étape 2.
 
 ### Étape 2 — Placer le code de consentement par défaut avant GTM
 

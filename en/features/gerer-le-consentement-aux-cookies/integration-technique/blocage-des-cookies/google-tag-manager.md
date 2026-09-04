@@ -16,9 +16,27 @@ This tagging solution is very effective for implementing effective cookie consen
 
 Dastra natively supports **Google Consent Mode V2**. This integration sends a `consent_update` signal to GTM as soon as a user expresses their consent, allowing Google tags to respect that choice before triggering any tracking.
 
+### Prerequisites
+
+* The default consent snippet (see step 2) must be inserted in the `<head>` of your website, **before** Google Tag Manager is loaded.
+* In Google Tag Manager, configure a **"Google Tag"** fired on all pages.
+* The integration works with **Google Ads** (without personalization) and **Google Analytics**.
+* If you use Google Ads conversion tracking or remarketing tags, make sure those tags are triggered only after consent, using a custom event such as `dastra:consent:{service-slug}` (example: `dastra:consent:googleleads`).
+
 ### Step 1 — Enable Consent Mode V2 on the service
 
-In the configuration of the relevant service (e.g. Google Analytics, Google Ads), check the **"Google Consent Mode V2"** option. Once enabled, the Dastra banner will automatically send the `consent_update` signal to GTM each time a user interacts with the consent banner.
+From the cookie widget integration, edit the relevant service (e.g. Google Analytics, Google Ads) and enable the **"Consent mode V2"** toggle. Once enabled, the Dastra banner will automatically send the `consent_update` signal to GTM each time a user interacts with the consent banner.
+
+Then select the **types of consent** to be toggled for this service (all checked by default):
+
+* `ad_storage`
+* `analytics_storage`
+* `ad_user_data`
+* `ad_personalization`
+
+<figure><img src="../../../../.gitbook/assets/cookies-service-consent-mode-v2.png" alt=""><figcaption><p>Enabling Consent Mode V2 on a cookie widget service</p></figcaption></figure>
+
+The default consent snippet to insert in your website is displayed directly in the interface: use the **Copy** button to grab it, then follow step 2.
 
 ### Step 2 — Place the default consent code before GTM
 
