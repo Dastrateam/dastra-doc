@@ -71,7 +71,7 @@ De manière obligatoire :
 
 De manière optionnelle :
 
-* SsoConfigurationId > cela correspond à l'identifiant de login SSO le cas échéant
+* SSOConfigurationId > cela correspond à l'identifiant de login SSO le cas échéant
 
 Voici un modèle de fichier à télécharger et à remplir :
 
@@ -115,6 +115,21 @@ NB : les équipes ne sont pas obligatoires dans Dastra.
 
 {% hint style="info" %}
 Attention, les équipes doivent être crées préalablement dans l'espace de travail
+{% endhint %}
+
+**S'agissant de l'identifiant de configuration SSO :**
+
+La colonne `SSOConfigurationId` est **optionnelle** : renseignez-la uniquement si vous souhaitez rattacher les utilisateurs importés à un login SSO déjà configuré dans votre organisation. Laissez-la vide pour une connexion classique par email et mot de passe.
+
+Comme pour les rôles personnalisés, cet identifiant se récupère depuis la **console de développement** de votre navigateur, via l'onglet **Réseau** :
+
+1. Ouvrez [la page de configuration des logins SSO](https://app.dastra.eu/general-settings/sso) (vous devez être propriétaire de l'organisation).
+2. Ouvrez la console de développement (voir les raccourcis clavier ci-dessus) et placez-vous sur l'onglet **Réseau**.
+3. Cliquez sur l'icône crayon du login SSO concerné pour ouvrir la fenêtre **Modifier le login SSO**. Il s'agit d'une fenêtre modale : l'URL de la page reste `https://app.dastra.eu/general-settings/sso`.
+4. Dans l'onglet **Réseau**, ouvrez la requête déclenchée à l'ouverture de la fenêtre et relevez la valeur du champ `id` : c'est cette valeur à reporter dans la colonne `SSOConfigurationId`.
+
+{% hint style="info" %}
+Le login SSO doit avoir été configuré préalablement. Voir la page [Single Sign On (SSO)](../../features/settings/single-sign-on-sso/README.md).
 {% endhint %}
 
 Enregistrez votre fichier au format CSV UTF 8

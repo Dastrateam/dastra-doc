@@ -68,7 +68,7 @@ Optioneel: &#x20;
 
 * Rollen (gescheiden door |) > dit komt overeen met de rollen in Dastra
 * Teams (gescheiden door |) > dit komt overeen met de teams in Dastra
-* SsoConfigurationId > dit komt overeen met de SSO login identifier indien van toepassing.
+* SSOConfigurationId > dit komt overeen met de SSO login identifier indien van toepassing.
 
 Hier is een voorbeeldbestand om te downloaden en in te vullen:&#x20;
 
@@ -112,6 +112,21 @@ Deze kunnen worden ingesteld bij het toevoegen van een team
 
 {% hint style="info" %}
 Houd er rekening mee dat teams eerst moeten worden gemaakt in de werkruimte.
+{% endhint %}
+
+**De SSO-configuratie-ID:**
+
+De kolom `SSOConfigurationId` is **optioneel**: vul deze alleen in als je de geïmporteerde gebruikers wilt koppelen aan een SSO-login die al in je organisatie is geconfigureerd. Laat de kolom leeg voor een klassieke login met e-mail en wachtwoord.
+
+Net als bij aangepaste rollen haal je deze ID op via de **ontwikkelaarsconsole** van je browser, op het tabblad **Netwerk**:
+
+1. Open [de configuratiepagina van de SSO-logins](https://app.dastra.eu/general-settings/sso) (je moet eigenaar van de organisatie zijn).
+2. Open de ontwikkelaarsconsole (zie de sneltoetsen hierboven) en ga naar het tabblad **Netwerk**.
+3. Klik op het potloodpictogram van de betreffende SSO-login om het venster **SSO-login bewerken** te openen. Dit is een modaal venster: de URL van de pagina blijft `https://app.dastra.eu/general-settings/sso`.
+4. Open op het tabblad **Netwerk** het verzoek dat wordt geactiveerd bij het openen van het venster en noteer de waarde van het veld `id`: die waarde vul je in in de kolom `SSOConfigurationId`.
+
+{% hint style="info" %}
+De SSO-login moet vooraf geconfigureerd zijn. Zie de pagina [Single Sign On (SSO)](../../features/settings/single-sign-on-sso/README.md).
 {% endhint %}
 
 Sla je bestand op in CSV UTF 8&#x20 formaat;

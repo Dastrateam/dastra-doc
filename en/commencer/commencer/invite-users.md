@@ -69,7 +69,7 @@ Mandatory fields:
 
 Optional:&#x20;
 
-* SsoConfigurationId > this corresponds to the SSO login identifier, if applicable
+* SSOConfigurationId > this corresponds to the SSO login identifier, if applicable
 
 Here is a sample file for you to download and fill in:
 
@@ -109,6 +109,21 @@ These can be set when adding a team.
 
 {% hint style="info" %}
 Please note that teams must first be created in the workspace.
+{% endhint %}
+
+**For the SSO configuration identifier:**
+
+The `SSOConfigurationId` column is **optional**: fill it in only if you want the imported users to be attached to an SSO login already configured in your organisation. Leave it empty for a standard email and password login.
+
+As for custom roles, this identifier is retrieved from your browser's **development console**, via the **Network** tab:
+
+1. Open [the SSO logins configuration page](https://app.dastra.eu/general-settings/sso) (you must be the owner of the organisation).
+2. Open the development console (see the keyboard shortcuts above) and go to the **Network** tab.
+3. Click the pencil icon of the relevant SSO login to open the **Edit SSO login** window. This is a modal window: the page URL stays `https://app.dastra.eu/general-settings/sso`.
+4. In the **Network** tab, open the request triggered when the window opens and note the value of the `id` field: this is the value to enter in the `SSOConfigurationId` column.
+
+{% hint style="info" %}
+The SSO login must have been configured beforehand. See the [Single Sign On (SSO)](../../features/settings/single-sign-on-sso/README.md) page.
 {% endhint %}
 
 Save your file in CSV UTF 8 format.
