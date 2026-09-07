@@ -43,9 +43,6 @@ Nach einer Anmeldung mit Passwort schlägt Dastra Ihnen vor, einen Passkey zu er
 
 * Geben Sie Ihre E-Mail-Adresse auf der Anmeldeseite ein
 * Klicken Sie im nächsten Schritt auf **Mit einem Passkey anmelden**
-
-<figure><img src="../.gitbook/assets/security-passkey-login-button.png" alt="Schaltfläche Mit einem Passkey anmelden auf der Anmeldeseite"><figcaption><p>Die Schaltfläche „Mit einem Passkey anmelden“ erscheint, sobald für Ihr Konto ein Passkey registriert ist</p></figcaption></figure>
-
 * Bestätigen Sie mit Fingerabdruck, Gesicht, PIN oder Sicherheitsschlüssel
 
 {% hint style="info" %}

@@ -33,7 +33,7 @@ Sie können eine Workflow-Regel durch zwei Ereignisse auslösen:
 
 * Bei **einer Aktion auf eine betroffene Entität**: Erstellung, Änderung, Schrittänderung oder Verschiebung in den Papierkorb (nur für Objekte, bei denen der Papierkorb existiert)
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration10.png" alt=""><figcaption><p>Erstellung eines aktionsbasierten Auslösers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration10 (1).png" alt=""><figcaption><p>Erstellung eines aktionsbasierten Auslösers</p></figcaption></figure>
 
 *   **Wiederkehrende Datumsprüfung** — die Regel wird täglich zu einer konfigurierten Uhrzeit ausgewertet und wird in Abhängigkeit eines Datumsfeldes des Objekts ausgelöst. Konfigurieren Sie die folgenden Parameter:
 

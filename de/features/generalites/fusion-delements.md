@@ -33,7 +33,7 @@ Wählen Sie einfach die zusammenzuführenden Elemente aus:
 
 Klicken Sie dann auf "**Bitte wählen Sie eine Sammelaktion aus**" und "**Zusammenführen**":
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sie gelangen dann zu einer speziellen Seite, auf der Sie:
 

@@ -1,9 +1,8 @@
 ---
-description: (Geplante Veröffentlichung 2026)
 hidden: true
 ---
 
-# Zuordnung der SAP LeanIX Fact Sheets zu Dastra
+# Mapping von SAP LeanIX Fact Sheets nach Dastra
 
 ### **Überblick**
 
@@ -42,7 +41,7 @@ SAP LeanIX (Pathfinder API)
 
 Beim Import werden bestimmte Felder aus den LeanIX Fact Sheets direkt auf die Eigenschaften der Dastra Assets gemappt.
 
-<figure><img src="../../.gitbook/assets/image-dastra-sap-leanix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-dastra-sap-leanix.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -94,14 +93,14 @@ Zusätzliche Trigger können je nach Systemkonfiguration hinzugefügt werden.
 
 Die folgende Tabelle listet alle aus LeanIX importierten Felder und ihr Ziel in Dastra auf:
 
-| LeanIX-Feld     | Dastra Asset-Feld  | Beschreibung                                                 |
-| ---------------- | ------------------ | ------------------------------------------------------------ |
-| displayName      | name               | Name der LeanIX-Anwendung                                   |
-| description      | description        | Textbeschreibung der Anwendung                               |
-| tags\[]          | tags               | LeanIX-Tags werden nach Dastra kopiert                       |
-| user (wenn zugeordnet) | user         | Verknüpfter Nutzer in Dastra, nur wenn bereits vorhanden     |
-| id               | ref                | Eindeutige Kennung des LeanIX Fact Sheets                   |
-| (N/A)            | type               | Wird für importierte Assets immer auf "Software" gesetzt     |
+| LeanIX-Feld            | Dastra Asset-Feld | Beschreibung                                             |
+| ---------------------- | ----------------- | -------------------------------------------------------- |
+| displayName            | name              | Name der LeanIX-Anwendung                                |
+| description            | description       | Textbeschreibung der Anwendung                           |
+| tags\[]                | tags              | LeanIX-Tags werden nach Dastra kopiert                   |
+| user (wenn zugeordnet) | user              | Verknüpfter Nutzer in Dastra, nur wenn bereits vorhanden |
+| id                     | ref               | Eindeutige Kennung des LeanIX Fact Sheets                |
+| (N/A)                  | type              | Wird für importierte Assets immer auf "Software" gesetzt |
 
 ***
 
@@ -161,7 +160,7 @@ Alle importierten Anwendungen verwenden einen einheitlichen Asset-Typ ("Software
 
 ***
 
-## **Zukünftige Verbesserungen**&#x20;
+## **Zukünftige Verbesserungen**
 
 In Prüfung befindliche potenzielle Erweiterungen:
 

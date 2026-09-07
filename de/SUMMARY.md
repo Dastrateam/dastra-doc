@@ -263,12 +263,16 @@
 * [Authentifizierung](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
 * [Integrationen](api-references/integrations/README.md)
-  * [Mapping von SAP LeanIX Fact Sheets nach Dastra](api-references/integrations/mappage-des-fact-sheets-de-sap-leanix-vers-dastra.md)
+  * [Verbindungen, Anwendungsfälle und Feld-Mapping](api-references/integrations/verbindungen-anwendungsfalle-und-feld-mapping.md)
+  * [SAP LeanIX](api-references/integrations/sap-leanix/README.md)
+    * [Mapping von SAP LeanIX Fact Sheets nach Dastra](api-references/integrations/sap-leanix/mappage-des-fact-sheets-de-sap-leanix-vers-dastra.md)
   * [Zapier](api-references/integrations/zapier/README.md)
     * [Dastra mit externen Tools integrieren](api-references/integrations/zapier/integrer-dastra-avec-des-outils-externes.md)
     * [Häufig gestellte Fragen](api-references/integrations/zapier/questions-frequentes.md)
   * [Filerskeepers](api-references/integrations/filerskeepers.md)
   * [ServiceNow](api-references/integrations/servicenow.md)
+  * [Jira](api-references/integrations/jira.md)
+  * [Microsoft Teams](api-references/integrations/microsoft-teams.md)
 
 ## 🛡️ Sicherheit <a href="#security" id="security"></a>
 

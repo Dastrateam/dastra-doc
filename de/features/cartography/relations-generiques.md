@@ -58,8 +58,6 @@ Sobald die Beziehungen erstellt sind, erscheinen sie in:
 * Dem Panel **"Verknüpfte Elemente"** jedes Elements, das alle direkten Verknüpfungen anzeigt.
 * Dem **Knotengraph** in der Datenkartierungsansicht, in dem alle Beziehungen als verbundenes Netzwerk dargestellt werden.
 
-<figure><img src="../../.gitbook/assets/Data Mapping.png" alt=""><figcaption><p>Beispiele einer grafischen Visualisierung generischer Beziehungen im Data Mapping</p></figcaption></figure>
-
 ## Weiterführende Informationen
 
 {% content-ref url="./" %}

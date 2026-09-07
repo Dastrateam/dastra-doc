@@ -25,7 +25,7 @@ Im nächsten Fenster Datenschutzvorfall detailliert beschreiben können. Folgen 
 
 Das gesamte Verzeichnis der Datenschutzvorfälle kann importiert und exportiert werden. Um einen Datenschutzvorfall zu importieren, klicken Sie auf das **Pfeilsymbol** neben der Schaltfläche „**Einen Vorfall hinzufügen**".
 
-![](../../.gitbook/assets/Vorfall4.png)
+![](<../../.gitbook/assets/Vorfall4 (1).png>)
 
 Ein Fenster erscheint mit einer Schaltfläche „**Importieren**". Klicken Sie darauf, laden Sie die Verzeichnisvorlage herunter und folgen Sie den Anweisungen, um die Datenschutzvorfälle in Dastra zu importieren. Nach dem Import ist der Datenschutzvorfall direkt im Verzeichnis der Datenschutzvorfälle verfügbar.
 
