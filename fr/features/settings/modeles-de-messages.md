@@ -278,7 +278,7 @@ Pour traduire les statuts, vous pouvez utiliser le filtre personnalisé getTrans
 
 Unité organisationnelle (area)
 
-Etape (workflowStep)
+Etape (workflowStep.label)
 
 Id (id)
 
