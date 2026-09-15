@@ -270,6 +270,7 @@
 ***
 
 * [Certifications](certifications.md)
+* [Dastra on Bleu (sovereign cloud)](security/bleu.md)
 
 ## 🤖 Other
 

@@ -179,6 +179,7 @@
 * [Sterke authenticatie](security/mfa.md)
 * [Passkeys](security/passkey.md)
 * [Kwaliteit van onze diensten](security/qualite-de-nos-services.md)
+* [Dastra op Bleu (soevereine cloud)](security/bleu.md)
 
 ## 🤖 DIVERSEN
 

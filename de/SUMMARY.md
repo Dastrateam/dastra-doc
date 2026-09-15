@@ -277,6 +277,7 @@
 * [Passkeys](security/passkey.md)
 * [Qualität unserer Dienste](security/qualite-de-nos-services.md)
 * [Zertifizierungen](security/certifications.md)
+* [Dastra auf Bleu (souveräne Cloud)](security/bleu.md)
 
 ## 🤖 VERSCHIEDENES
 
