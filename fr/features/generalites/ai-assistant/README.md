@@ -69,3 +69,11 @@ Lors de l'utilisation d'une fonctionnalité bêta :
 {% content-ref url="foire-aux-questions.md" %}
 [foire-aux-questions.md](foire-aux-questions.md)
 {% endcontent-ref %}
+
+{% content-ref url="agents/README.md" %}
+[README.md](agents/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="serveur-mcp.md" %}
+[serveur-mcp.md](serveur-mcp.md)
+{% endcontent-ref %}
