@@ -235,7 +235,7 @@
     * [ADFS](features/settings/single-sign-on-sso/adfs.md)
     * [Active Directory](features/settings/single-sign-on-sso/active-directory.md)
     * [Okta](features/settings/single-sign-on-sso/okta.md)
-    * [Known problems](features/settings/single-sign-on-sso/known-problems.md)
+    * [Known problems](features/settings/single-sign-on-sso/problemes-connus.md)
   * [SIEM streaming](features/settings/siem-streaming.md)
   * [References](features/settings/references.md)
   * [API key management](features/settings/api-key-management.md)
