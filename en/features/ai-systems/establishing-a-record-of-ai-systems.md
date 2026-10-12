@@ -19,7 +19,7 @@ To add an AI system, click **"Create a new AI system"**. A window offers three c
 
 Select **"Generate with AI"**, then describe the system to document (name, publisher…). You can attach a file or provide a URL to help the generation.
 
-<figure><img src="../../.gitbook/assets/systemes-dia-registre-generate-form.png" alt="AI system generation form with description field and URL option"><figcaption><p>Describe the system to generate — the assistant uses web browsing to complete the information</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-generate-form.png" alt="AI system generation window with input field, language selector and samples"><figcaption><p>Describe the AI system to generate (name, AI model used...)</p></figcaption></figure>
 
 The assistant produces a pre-filled record (name, description, learning type, systemic risk, publisher…) which you can review and validate before saving.
 

@@ -26,6 +26,10 @@ In Dastra, the **Impact assessment** tab of each processing activity helps you d
 
 For each criterion, select "Yes", "No" or "Not applicable". **Two "Yes" answers are generally sufficient** to trigger a DPIA requirement, though a single criterion may be sufficient depending on context.
 
+To save time, click **Generate assessment**, next to the **Assessment of the 9 criteria for the DPIA (EDPB)** title: the AI assistant suggests an answer for each criterion, with a justification, based on the information already entered in the processing activity. You review the proposal before applying it to the form, and every answer remains editable. For the detailed procedure, see the [Impact analysis](../../editer-le-registre/remplir-le-questionnaire/analyse-dimpact.md) page.
+
+
+
 {% hint style="info" %}
 The list of processing activities requiring a DPIA depends on your national supervisory authority's recommendations. Dastra provides a DPIA Guide with country-specific recommendations to help you identify your obligations.
 {% endhint %}
@@ -67,10 +71,32 @@ The PIA (CNIL) questionnaire offers two response modes. The difference between t
 To get the most out of the PIA functionality in Dastra, configure your PIA template as follows:
 
 1. Set the **template type** to "Impact analysis" — this enables the risk heat map in the questionnaire dashboard and integrates data from the linked processing activity.
-2. In the **Assessed element** section, select "Processing activity" — this links each PIA response to a specific processing activity and automatically updates the last DPIA date upon validation.
+2. In the **Assessed element** section, select "Processing activity" — this links each PIA response to a specific processing activity and automatically updates the processing activity's **Last DPIA Date** when the DPIA is published (see "Updating the last DPIA date" below).
 
 {% hint style="info" %}
 Once a PIA is linked to a processing activity, you can access it directly from the **"Impact assessment"** tab within that processing activity, and launch it with the "Create a DPIA" button when the threshold is met.
+{% endhint %}
+
+
+
+### Updating the last DPIA date
+
+When a DPIA linked to a processing activity is published, Dastra copies its publication date into the **Last DPIA Date** field of the processing activity's **Impact assessment** step. This update applies whatever the origin of the DPIA (launched from the processing activity or scheduled from the Questionnaires module), provided the template type is "Impact analysis" and the assessed element is a processing activity.
+
+Publication happens:
+
+* when the last required respondent finalises the questionnaire, if the validation step is disabled;
+* when the reviewers validate the questionnaire, in all other cases.
+
+An information message flags it at publication time:
+
+* in the **Finalize questionnaire** window: "The date of the last DPIA of the linked data processing record will be updated.", or "The date of the last DPIA of the linked data processing record will be updated once this questionnaire is validated." when a validation is expected;
+* in the questionnaire validation window: "The date of the last DPIA of the linked data processing record will be updated."
+
+When the processing activity requires a DPIA, the **Impact assessment** step then displays the message "A DPIA has been done".
+
+{% hint style="info" %}
+The publication date overwrites any value already entered in the **Last DPIA Date** field.
 {% endhint %}
 
 ## Importing a PIA from the CNIL tool

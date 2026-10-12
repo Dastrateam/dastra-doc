@@ -10,7 +10,7 @@ To export the entire record, simply go to the "Record of processing activities" 
 
 <figure><img src="../../.gitbook/assets/screenshot-2023-01-30-111233.png" alt=""><figcaption><p>Register drop-down menu with export functionality</p></figcaption></figure>
 
-Then choose the export format as well as the type of export desired (complete or article 30 format), and click on "Download file". That's it, your record is exported !
+Then choose the export format (PDF, Word, HTML, CSV, Excel, JSON or Markdown) as well as the type of export desired (complete or article 30 format), and click on "Download file". That's it, your record is exported!
 
 ### Article 30/CNIL format
 

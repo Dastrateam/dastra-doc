@@ -132,11 +132,13 @@ Dastra transmits **no data from your workspace** to the AI model unless you init
 | Feature                                           | Data transmitted to the model                                                                                                                                    | Potential personal data                                      |
 | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | **Generate a processing activity**                | Free text entered by the user                                                                                                                                    | No — unless the user mentions individuals in the description |
+| **Generate a processing activity with the Use existing elements option** | Free text entered by the user + labels of the existing security measures, assets and data fields in the workspace | No, unless existing labels contain named references |
 | **Generate an asset**                             | Free text + the privacy policy URL provided                                                                                                                      | No                                                           |
 | **Generate an actor**                             | Free text + URL or attachment provided                                                                                                                           | No                                                           |
 | **Generate a dataset**                            | Free text entered by the user                                                                                                                                    | No                                                           |
 | **Generate a security measure**                   | Free text entered by the user                                                                                                                                    | No                                                           |
 | **Generate a privacy notice**                     | Structured fields of the processing activity (purposes, legal basis, retention periods, recipients, rights)                                                      | Potentially — if the fields contain named references         |
+| **Generate the DPIA criteria assessment** | Name, description, purposes, data subject categories (with vulnerability indication and maximum volume), datasets and their fields (including sensitive fields), assets and recipients of the processing activity | Potentially, depending on the processing activity content |
 | **Generate a description**                        | Free text entered by the user                                                                                                                                    | No                                                           |
 | **Suggest tags**                                  | Text content of the object (name, description)                                                                                                                   | No                                                           |
 | **Generate a questionnaire template**             | Free text entered by the user                                                                                                                                    | No                                                           |
@@ -161,7 +163,7 @@ Dastra transmits **no data from your workspace** to the AI model unless you init
 The following are **never** part of the requests sent to the AI model:
 
 * Dastra user credentials and passwords
-* Data from other records in your workspace (only the object you are working on is in scope)
+* Data from other records in your workspace (only the object you are working on is in scope), except the labels of existing security measures, assets and data fields when you enable the **Use existing elements** option while generating a processing activity
 * Session metadata (logged-in user name, IP address, etc.)
 * Attachments not explicitly provided in the relevant feature
 

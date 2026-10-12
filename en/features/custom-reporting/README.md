@@ -28,7 +28,7 @@ This powerful feature lets you create customized reports, tailored to your speci
 1. Data Selection: Choose the data you wish to include in your report. Our user-friendly interface lets you easily browse your datasets and select the relevant variables (metrics and dimensions) from the various Dastra tables.
 2. Advanced filters: Refine your results using advanced filters. Create specific criteria to extract only the data relevant to your analysis.
 3. Graph customization: Bring your reports to life by customizing graphs and tables. Modify the chart styles that best suit your needs.
-4. Multiple export: Export your reports in various formats such as PDF, Excel or CSV. Easily share your results with colleagues, customers or partners. Easily integrate your data with tools such as PowerBI.
+4. Multiple export: Export your reports in various formats: PDF, Word, HTML, Excel, CSV, JSON or Markdown. Easily share your results with colleagues, customers or partners. Easily integrate your data with tools such as PowerBI.
 
 ## Data selection
 
@@ -86,3 +86,18 @@ Once the report has been created, you will be redirected to the report view page
 To add a graph, click on "Add a graph".
 
 You can then define several chart categories (bar chart, pie chart, line chart, etc.).
+
+
+## Recycle bin
+
+A deleted report or category first goes to the recycle bin: you can restore it as long as it has not been permanently deleted.
+
+* **Move an item to the recycle bin**: in the actions menu of a report, click **"Move to recycle bin"** and confirm. The actions menu of a category, in the left panel, offers the same action: the category and all its reports are moved to the recycle bin.
+* **View the recycle bin**: enable the **"View recycle bin"** option above the list of reports, or from the menu of the categories panel.
+* **Restore**: from the recycle bin, **"Restore"** puts the item back in the active list. Restoring a category also restores the reports moved to the recycle bin with it; restoring a report whose category is in the recycle bin also restores that category.
+* **Permanently delete**: from the recycle bin, **"Delete"** erases the item after confirmation. Deleting a category also deletes all its reports. This action cannot be undone.
+
+{% hint style="info" %}
+Recycle bin actions require the permission to edit custom reports.
+{% endhint %}
+

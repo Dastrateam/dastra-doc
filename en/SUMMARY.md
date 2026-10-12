@@ -197,6 +197,7 @@
     * [Frameworks](features/compliance/library/frameworks/README.md)
       * [Dastra import and templates](features/compliance/library/frameworks/import-et-modeles-dastra.md)
       * [Create a custom framework](features/compliance/library/frameworks/create-custom-framework.md)
+      * [Framework versions](features/compliance/library/frameworks/versions-de-framework.md)
     * [Controls](features/compliance/library/controls.md)
     * [Tests](features/compliance/library/tests.md)
     * [Risks](features/compliance/library/risks.md)

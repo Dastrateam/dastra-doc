@@ -67,6 +67,12 @@ In edit mode, the user can:
 * Create **chapters**
 * Add **requirements**
 * Progressively structure the framework
+
+{% hint style="warning" %}
+Edit mode is only available for a draft version. The requirements of a published version are locked and the **Edit** button is disabled: create a version of the framework to evolve them (see [Framework versions](versions-de-framework.md)). The name, logo and description remain editable.
+{% endhint %}
+
+
 {% endcolumn %}
 
 {% column %}

@@ -14,7 +14,7 @@ At Dastra, we believe that our role is to **make it easier** for you to map your
 
 Dastra's record of processing activities log functionality meets all regulatory requirements. The records, both Processor and Subcontractor, are based on repositories (actors, assets, datasets, data, risks and security measures) allowing you **to map your processing activities** and **save time** in the daily management.
 
-processing activities can be duplicated and processing activities models are available in a library freely accessible to all our users. A workflow is integrated, a search function is natively present and it's possible to import / export treatment sheets in different formats (pdf, word, html, excel, csv, json). It's possible to attach attachments, violations or risks to these treatments.
+processing activities can be duplicated and processing activities models are available in a library freely accessible to all our users. A workflow is integrated, a search function is natively present and it's possible to import / export treatment sheets in different formats (PDF, Word, HTML, Excel, CSV, JSON, Markdown). It's possible to attach attachments, violations or risks to these treatments.
 
 <figure><img src="../../.gitbook/assets/screenshot-2023-01-24-173945.png" alt=""><figcaption></figcaption></figure>
 

@@ -46,6 +46,60 @@ Once the cookies placed on your website are scanned, you can proceed to their cl
 
 ***
 
+
+
+## Handle unclassified cookies
+
+The scan compares the detected cookies with the Dastra service library. A cookie that matches no service is an unclassified cookie: it is not linked to any service, it is never displayed in the public banner, and visitors therefore cannot consent to it.
+
+In the scan results, a warning badge shows the number of unclassified cookies (for example "3 unclassified cookies") next to the scan summary. These cookies are grouped in the **Unclassified cookies** tab, next to the **Services**, **Found cookies** and **Cookies breakdown** tabs.
+
+<figure><img src="../../../.gitbook/assets/cookies-scan-unclassified-cookies-tab.png" alt="Unclassified cookies tab in the scan results"><figcaption><p>The "Unclassified cookies" tab of the scan results, with the badge showing their number</p></figcaption></figure>
+
+Select one or more cookies using the checkboxes (the header checkbox selects the whole list), then choose one of the available actions.
+
+### Add cookies to an existing service
+
+1. Select the cookies, then click **Add to an existing service**.
+2. In the **Target service** field, choose the service to link the cookies to.
+3. Confirm.
+
+All selected cookies are added to the service at once. A cookie already present in the service (same name and same domain) is not added a second time.
+
+### Create a service from a selection
+
+1. Select the cookies, then click **Create a new service**.
+2. The service form opens, pre-filled from the most frequent domain among the selected cookies (service name, domain and logo) and containing the selected cookies.
+3. Review the suggested information, in particular the purpose of the service, then save.
+
+Only the cookies kept in the service leave the list of unclassified cookies.
+
+### Delete cookies
+
+Select the cookies, click **Delete**, then confirm. The cookies are removed from the list of unclassified cookies.
+
+### Remove a cookie from a service
+
+In the **Services** tab of the scan results, expand the cookie list of a service, then click the trash icon next to the cookie (tooltip "Remove from this service"). The cookie is detached from the service and moves to the **Unclassified cookies** tab.
+
+After each action, the tab counters, the badge and the breakdown chart are updated immediately.
+
+### Handle unclassified cookies from the banner editor
+
+You do not need to handle every cookie before creating the banner: unhandled cookies remain attached to the banner and can be handled later. In the banner editor, the title of the **Services** section shows the number of unclassified cookies, and the **Unclassified cookies** tab of this section offers the same actions: **Delete**, **Add to an existing service** and **Create a new service**.
+
+When all cookies are linked to a service, the tab displays the message "All cookies are classified".
+
+### Rescan an existing banner
+
+In the **Services** tab of the banner editor, click **Website scanning** to scan the site again. In the results, a green check mark (tooltip "Already in your configuration") flags the services already declared in the banner. Detected cookies that match the cookies of a service already declared, including a custom service, are linked to that service and do not appear among the unclassified cookies.
+
+{% hint style="warning" %}
+Unclassified cookies are never displayed in the public banner. Link every cookie actually placed by your website to a service so that visitors can consent to it.
+{% endhint %}
+
+***
+
 ## Limitations and best practices
 
 ### Cookies set after consent (opt-in services)
