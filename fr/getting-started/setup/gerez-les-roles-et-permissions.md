@@ -48,7 +48,7 @@ Une fois dans le panneau de configuration, cliquez sur le bouton "Rôles et perm
 Seuls les propriétaires de l'organisation peuvent avoir accès à l'écran de gestion des rôles et permissions.
 {% endhint %}
 
-Pour créer un nouveau rôle, cliquez sur "Nouveau rôle", donnez lui un nom puis cochez les options "Lecture", "Modification", "Import" et "Export" liées à chaque fonctionnalité. Une fois terminé, cliquez sur le bouton "Enregistrer" en bas de l'écran.
+Pour créer un nouveau rôle, cliquez sur "Ajouter un rôle", donnez-lui un nom puis cochez les permissions liées à chaque fonctionnalité ("Lecture", "Écriture", "Création", "Import", "Export"...). Dans les modules qui la proposent, la permission "Création" autorise la création de nouveaux éléments, indépendamment de la permission "Écriture" qui autorise leur modification (voir [Rôles et permissions](../../features/settings/roles-et-permissions.md)). Une fois terminé, cliquez sur le bouton "Enregistrer" en bas de l'écran.
 
 {% hint style="info" %}
 Pour qu'il soit effectif, le nouveau rôle doit être assigné à un ou des utilisateurs. Pour faire cela, rendez-vous dans la section "Utilisateur", puis cliquer sur le bouton "rôle" correspondant à l'utilisateur en question.

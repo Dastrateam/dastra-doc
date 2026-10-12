@@ -19,7 +19,7 @@ Pour ajouter un système d'IA, cliquez sur **"Créer un nouveau système d'IA"**
 
 Sélectionnez **"Générer avec l'IA"**, puis décrivez le système à documenter (nom, éditeur…). Vous pouvez ajouter une pièce jointe ou une URL pour enrichir la génération.
 
-<figure><img src="../../.gitbook/assets/systemes-dia-registre-generate-form.png" alt="Formulaire de génération d&#x27;un système d&#x27;IA avec champ de description et options d&#x27;URL"><figcaption><p>Décrivez le système à générer — l'assistant utilise la navigation web pour compléter les informations</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/systemes-dia-registre-generate-form.png" alt="Fenêtre de génération d&#x27;un système d&#x27;IA avec champ de saisie, sélecteur de langue et exemples"><figcaption><p>Décrivez le système d'IA à générer (nom, modèle d'IA utilisé...)</p></figcaption></figure>
 
 L'assistant produit une fiche pré-remplie (nom, description, type d'apprentissage, risque systémique, éditeur…) que vous pouvez relire et valider avant enregistrement.
 

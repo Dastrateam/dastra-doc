@@ -32,6 +32,12 @@ Pour ce faire, il suffit de sélectionner le cookie à classifier depuis l'inter
 Vous pouvez définir s'il y a besoin de demander le consentement ou non pour chaque cookie au cas par cas.
 {% endhint %}
 
+
+
+{% hint style="warning" %}
+Un cookie détecté par le scan mais rattaché à aucun service (cookie non classé) n'est jamais affiché dans la bannière publique. Rattachez-le à un service existant ou créez un service à partir de celui-ci : voir [Traitez les cookies non classés](scannez-les-cookies-deposes-sur-votre-site-web.md#traitez-les-cookies-non-classes).
+{% endhint %}
+
 Une fois tous vos cookies classifiés par catégorie, vous pouvez implémenter le widget de consentement correspondant.
 
 {% content-ref url="implementez-un-widget-de-consentement-aux-cookies.md" %}

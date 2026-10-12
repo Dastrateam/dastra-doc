@@ -26,7 +26,7 @@ Vous devez choisir les options suivantes pour profiter pleinement des fonctionna
 Le type de questionnaire PIA permet d'afficher les éléments spécifiques au PIA, en particulier, la carte de chaleur dans le tableau de bord du questionnaire mais également, l'intégration des données du traitement lors de la génération du PIA. Il permet également de reprendre des PIA au format JSON depuis l'outil PIA CNIL.
 {% endhint %}
 
-* Dans la partie Element audité, vous pouvez associer "traitement de données" : cela permet d'associer votre questionnaire de PIA à un traitement et de retrouver le PIA depuis le traitement. De plus, cela vous permettra de mettre à jour la date du dernier PIA lors de la validation de celui ci.
+* Dans la partie Element audité, vous pouvez associer "traitement de données" : cela permet d'associer votre questionnaire de PIA à un traitement et de retrouver le PIA depuis le traitement. De plus, la **Date du dernier PIA** du traitement est mise à jour automatiquement à la publication du PIA : à la finalisation du questionnaire si l'étape de validation est désactivée, sinon à sa validation.
 
 <figure><img src="../../../.gitbook/assets/audit-questionnaire-audited-element-dropdown.png" alt=""><figcaption></figcaption></figure>
 

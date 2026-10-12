@@ -28,6 +28,10 @@ Dans Dastra, l'onglet **Analyse d'impact** de chaque traitement vous aide à dé
 
 Pour chaque critère, sélectionnez "Oui", "Non" ou "Non applicable". **Deux réponses "Oui" suffisent généralement** à déclencher l'obligation de réaliser une AIPD, bien qu'un seul critère puisse être suffisant selon le contexte.
 
+Pour gagner du temps, cliquez sur **Générer l'évaluation**, à côté du titre **Évaluation des 9 critères de l'AIPD (CEPD)** : l'assistant IA propose une réponse pour chaque critère, accompagnée d'une justification, à partir des informations déjà renseignées dans le traitement. Vous examinez la proposition avant de l'appliquer au formulaire, et chaque réponse reste modifiable. Pour le détail de la procédure, consultez la page [Analyse d'impact](../../editer-le-registre/remplir-le-questionnaire/analyse-dimpact.md).
+
+
+
 {% hint style="info" %}
 La liste des traitements nécessitant une AIPD dépend des recommandations de votre autorité de contrôle nationale. Dastra propose un guide AIPD avec des recommandations par pays pour vous aider à identifier vos obligations.
 {% endhint %}
@@ -68,10 +72,32 @@ Le questionnaire PIA (CNIL) propose deux modes de réponse. La différence entre
 Pour tirer pleinement parti des fonctionnalités AIPD dans Dastra, configurez votre modèle comme suit :
 
 1. Définissez le **type de modèle** sur "Analyse d'impact" — cela active la carte de chaleur des risques dans le tableau de bord du questionnaire et intègre les données du traitement lié.
-2. Dans la section **Élément évalué**, sélectionnez "Traitement de données" — cela lie chaque réponse à un traitement spécifique et met automatiquement à jour la date de la dernière AIPD lors de la validation.
+2. Dans la section **Élément évalué**, sélectionnez "Traitement de données" — cela lie chaque réponse à un traitement spécifique et met automatiquement à jour la **Date du dernier PIA** du traitement lors de la publication de l'AIPD (voir « Mise à jour de la date du dernier PIA » ci-dessous).
 
 {% hint style="info" %}
 Une fois l'AIPD liée à un traitement, vous pouvez y accéder directement depuis l'onglet **"Analyse d'impact"** de ce traitement, et la lancer via le bouton "Créer une AIPD" lorsque le seuil est atteint.
+{% endhint %}
+
+
+
+### Mise à jour de la date du dernier PIA
+
+Lorsqu'une AIPD liée à un traitement est publiée, Dastra reporte sa date de publication dans le champ **Date du dernier PIA** de l'étape **Analyse d'impact** du traitement. Cette mise à jour s'applique quelle que soit l'origine de l'AIPD (lancée depuis le traitement ou planifiée depuis le module Questionnaires), dès lors que le modèle est de type « Analyse d'impact » et que l'élément évalué est un traitement de données.
+
+La publication intervient :
+
+* à la finalisation du questionnaire par le dernier répondant requis, lorsque l'étape de validation est désactivée ;
+* à la validation du questionnaire par ses responsables, dans les autres cas.
+
+Un message d'information le signale au moment de la publication :
+
+* dans la fenêtre **Finaliser le questionnaire** : « La date du dernier PIA du traitement rattaché sera mise à jour. », ou « La date du dernier PIA du traitement rattaché sera mise à jour à la validation de ce questionnaire. » lorsqu'une validation est attendue ;
+* dans la fenêtre de validation du questionnaire : « La date du dernier PIA du traitement rattaché sera mise à jour. »
+
+Lorsque le traitement requiert une AIPD, l'étape **Analyse d'impact** affiche alors le message « Un PIA a été effectué ».
+
+{% hint style="info" %}
+La date de publication remplace la valeur précédemment saisie dans le champ **Date du dernier PIA**.
 {% endhint %}
 
 ## Importer une PIA depuis l'outil CNIL

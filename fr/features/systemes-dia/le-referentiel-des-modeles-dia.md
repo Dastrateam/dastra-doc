@@ -39,7 +39,7 @@ Le contenu généré est une proposition — vérifiez et complétez les informa
 
 <figure><img src="../../.gitbook/assets/ai-systems-create-type-picker.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/ai-systems-create-generate-form.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-create-generate-form.png" alt="Fenêtre de génération d&#x27;un modèle d&#x27;IA avec champ de saisie, sélecteur de langue et exemples"><figcaption><p>Décrivez le modèle d'IA à générer (nom, éditeur...) : la recherche sur le Web est utilisée pour compléter les informations</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/ai-system-generate-result.png" alt=""><figcaption></figcaption></figure>
 

@@ -4,16 +4,27 @@
 **Avertissement sur la qualité du contenu généré** : tout contenu généré par l'assistant est une proposition uniquement. Il doit être relu et mis à jour par une personne qualifiée avant tout usage. Dastra ne s'engage pas sur la qualité des informations proposées.
 {% endhint %}
 
+
+
+Toutes les fonctionnalités de génération utilisent la même fenêtre : décrivez l'élément à générer (ou partez de l'un des **Exemples** proposés), choisissez si besoin la langue de génération, puis cliquez sur **Générer**. La proposition s'affiche dans un écran de synthèse, à relire avant validation.
+
+***
+
 ### Traitements de données
 
 #### Générer un traitement
 
 Générez rapidement un traitement de données au format attendu par Dastra à partir d'une description courte. L'assistant vous proposera un nom, un ou plusieurs jeux de données avec leurs champs, une durée de conservation, des mesures de sécurité, des destinataires et une description.
 
-1. Cliquez sur **Créer un traitement** > **Générer avec l'assistant IA**
-2. Saisissez une description courte de votre traitement
-3. Cliquez sur **Suivant** et patientez quelques instants
-4. Sur l'écran de synthèse, appliquez vos corrections et cliquez sur **Créer**
+1. Cliquez sur **Créer un traitement de données**, puis sélectionnez **Créer avec assistant IA**
+2. Saisissez une description courte de votre traitement, ou cliquez sur l'un des **Exemples** proposés sous le champ de saisie pour pré-remplir la demande
+3. Si besoin, choisissez la langue de génération et activez les options souhaitées :
+   * **Activité en tant que sous-traitant** : génère la fiche pour le registre sous-traitant
+   * **Utiliser des éléments existants** : fournit à l'assistant les libellés des mesures de sécurité, actifs et champs de données existants de votre workspace, afin qu'il les réutilise dans la fiche générée plutôt que de créer des doublons. Les référentiels concernés s'affichent sous l'option
+4. Cliquez sur **Générer** et patientez quelques instants
+5. Sur l'écran de synthèse, vérifiez la proposition et cliquez sur **Valider**
+
+<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="Fenêtre de génération d&#x27;un traitement avec l&#x27;IA : champ de saisie, sélecteur de langue, exemples et option Utiliser des éléments existants"><figcaption><p>Génération d'un traitement avec l'assistant IA : exemples, langue de génération et réutilisation des éléments existants</p></figcaption></figure>
 
 #### Générer un jeu de données
 

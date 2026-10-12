@@ -29,19 +29,40 @@ Il est ensuite possible de sélectionner les cases associées aux permissions :
 
 <br>
 
-* **Lecture/Écriture de ses propres éléments :** Permet aux utilisateurs de voir et modifier uniquement les éléments qui leur sont attribués dans le module.
+* **Lecture/Modification de ses propres éléments :** Permet aux utilisateurs de voir et modifier uniquement les éléments qui leur sont attribués dans le module.
 * **Lecture :** Permet aux utilisateurs de voir tous les éléments du module.
-* **Écriture :** Permet aux utilisateurs de modifier tous les éléments du module.
+* **Écriture :** Permet aux utilisateurs de modifier tous les éléments existants du module. Dans les modules qui proposent la permission **Création**, l'écriture ne donne pas le droit de créer de nouveaux éléments.
+* **Création :** Permet aux utilisateurs de créer de nouveaux éléments dans le module. Cette permission est indépendante de la permission **Écriture**.
 * **Export :** Permet aux utilisateurs d'exporter tous les éléments du module.
 * **Import :** Permet aux utilisateurs d'importer tous les éléments dans le module.
 * **Notification :** Les utilisateurs reçoivent des notifications pour tous les éléments du module.
 
 {% hint style="info" %}
-Il n'est pas possible de sélectionner à la fois "Lecture/Écriture de ses propres éléments" et les permissions sur tous les élements pour le même rôle dans un module. Les utilisateurs peuvent accéder soit uniquement à leurs éléments, soit à tous les éléments.
+Il n'est pas possible de sélectionner à la fois "Lecture/Modification de ses propres éléments" et les permissions sur tous les éléments pour le même rôle dans un module, à l'exception de la permission "Création". Les utilisateurs accèdent soit uniquement à leurs éléments, soit à tous les éléments ; la permission "Création" leur permet en plus de créer de nouveaux éléments.
 {% endhint %}
 
 \
 Une fois votre rôle personnalisé créé, vous pouvez l'affecter à n'importe quel utilisateur de l'espace de travail au sein de votre organisation.
+
+
+
+### Permission Création
+
+Les modules suivants proposent une permission **Création** distincte de la permission **Écriture** :
+
+* Tâches et planification
+* Registre et traitements de données
+* Exercices des droits
+* Violation de données
+* Cartographie des données et référentiels
+* Gestion des contrats
+* Gestion des systèmes d'IA
+
+Dans ces modules, la permission **Création** est cochable avec **Lecture** ou avec **Lecture/Modification de ses propres éléments**. Un rôle qui combine **Lecture/Modification de ses propres éléments** et **Création** permet à l'utilisateur de créer de nouveaux éléments et de modifier uniquement les éléments qui lui sont attribués. Pour qu'un rôle puisse modifier les éléments existants sans en créer, cochez **Écriture** sans cocher **Création**.
+
+Les rôles par défaut **Administrateur** et **Contributeur** incluent la permission **Création** dans ces modules.
+
+<figure><img src="../../.gitbook/assets/settings-roles-create-permission.png" alt="Permission Création cochée avec la permission Lecture/Modification de ses propres éléments dans le module Violation de données"><figcaption><p>Permission Création combinée à la modification de ses propres éléments</p></figcaption></figure>
 
 ## Cloner un rôle existant
 

@@ -54,7 +54,7 @@ Il consolide les indicateurs des principaux modules : registre des traitements (
 
 <figure><img src="../../.gitbook/assets/cross-workspace-statistics-dashboard.png" alt="Tableau de bord de statistiques consolidées inter-espaces"><figcaption><p>Indicateurs consolidés du registre des traitements et des demandes d'exercice de droits pour tous les espaces de travail</p></figcaption></figure>
 
-Des filtres dynamiques permettent d'affiner l'analyse par espace de travail, par unité organisationnelle et par type. Le tableau de bord peut être imprimé et exporté.
+Des filtres dynamiques permettent d'affiner l'analyse par espace de travail, par unité organisationnelle et par type. Le bouton **« Choisir une période »** restreint les indicateurs à une période : sélectionnez une période prédéfinie (Aujourd'hui, Semaine en cours, Mois en cours, Année en cours, etc.) ou une date de début et une date de fin dans le calendrier, puis cliquez sur **« Appliquer »**. Sans période sélectionnée, les indicateurs portent sur l'ensemble des données ; le bouton **« Réinitialiser »** retire la période choisie. Le tableau de bord peut être imprimé et exporté.
 
 Regardez la vidéo sur la configuration de base de vos espaces de travail :
 
