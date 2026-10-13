@@ -29,6 +29,16 @@ En ouvrant une réponse, vous accédez à une vue de reporting détaillée :
 * **Analyse des résultats** : blocs d'analyse générés automatiquement (niveau de conformité, évaluation des risques, etc.)
 * **Score par catégories** : visualisé sous forme de radar ou de graphique en barres
 
+Les réponses aux questions à choix sont présentées sous une forme condensée :
+
+* seules les options sélectionnées par le répondant sont affichées ;
+* le lien **« Afficher toutes les options »**, sous chaque question, fait apparaître les options non sélectionnées de cette question ; le lien **« Masquer les options »** revient à l'affichage condensé ;
+* une question sans réponse est signalée par un tiret (-), sans liste d'options.
+
+<figure><img src="../../.gitbook/assets/audit-questionnaire-response-condensed-view.png" alt="Réponses d'un questionnaire en affichage condensé"><figcaption><p>Seules les options sélectionnées sont affichées ; les autres options restent accessibles question par question</p></figcaption></figure>
+
+
+
 ## Analyse IA (bêta)
 
 Depuis la vue de reporting d'une réponse, déclenchez une **analyse IA** pour obtenir :

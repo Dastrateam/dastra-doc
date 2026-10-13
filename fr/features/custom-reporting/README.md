@@ -26,7 +26,7 @@ Cette fonctionnalité puissante vous permet de créer des rapports sur mesure, a
 1. **Sélection des Données :** Choisissez les données que vous souhaitez inclure dans votre rapport. Notre interface conviviale vous permet de parcourir facilement vos ensembles de données et de sélectionner les variables (métriques et dimensions) pertinentes des différentes tables de Dastra.
 2. **Filtres Avancés :** Affinez vos résultats en utilisant des filtres avancés. Créez des critères spécifiques pour extraire uniquement les données pertinentes à votre analyse.
 3. **Personnalisation Graphique :** Donnez vie à vos rapports en personnalisant les graphiques et les tableaux. Modifiez les styles de graphiques qui répondent le mieux à vos besoins.
-4. **Exportation Multiple :** Exportez vos rapports dans divers formats tels que PDF, Excel, ou CSV. Partagez facilement vos résultats avec vos collègues, clients ou partenaires. Intégrez vos données simplement à des outils comme PowerBI.
+4. **Exportation Multiple :** Exportez vos rapports dans divers formats : PDF, Word, HTML, Excel, CSV, JSON ou Markdown. Partagez facilement vos résultats avec vos collègues, clients ou partenaires. Intégrez vos données simplement à des outils comme PowerBI.
 
 ### Sélection des données
 
@@ -79,3 +79,18 @@ Pour ajouter un graphique, cliquez sur "**Ajouter un graphique**".
 
 Vous pouvez alors définir plusieurs catégories de graphique.\
 ![](../../.gitbook/assets/custom-reporting-add-chart-modal.png)
+
+
+## Corbeille
+
+Un rapport ou une catégorie supprimé passe d'abord par la corbeille : vous pouvez le restaurer tant qu'il n'a pas été supprimé définitivement.
+
+* **Placer un élément dans la corbeille** : dans le menu d'actions d'un rapport, cliquez sur **« Déplacer dans la corbeille »** puis confirmez. Le menu d'actions d'une catégorie, dans le panneau de gauche, propose la même action : la catégorie et tous ses rapports sont placés dans la corbeille.
+* **Consulter la corbeille** : activez l'option **« Voir la corbeille »** au-dessus de la liste des rapports, ou depuis le menu du panneau des catégories.
+* **Restaurer** : depuis la corbeille, **« Restaurer »** remet l'élément dans la liste active. Restaurer une catégorie restaure aussi les rapports placés dans la corbeille avec elle ; restaurer un rapport dont la catégorie est dans la corbeille restaure aussi cette catégorie.
+* **Supprimer définitivement** : depuis la corbeille, **« Supprimer »** efface l'élément après confirmation. La suppression d'une catégorie supprime aussi tous ses rapports. Cette action est irréversible.
+
+{% hint style="info" %}
+Les actions de la corbeille nécessitent le droit de modification des rapports personnalisés.
+{% endhint %}
+

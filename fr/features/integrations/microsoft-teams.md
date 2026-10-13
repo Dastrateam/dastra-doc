@@ -55,7 +55,7 @@ Pour notifier **plusieurs canaux**, créez une connexion par canal (chaque webho
 
 ### Envoyer des notifications depuis une règle de workflow
 
-Une fois l'intégration installée et activée, le designer de règles de workflow propose une nouvelle action : **Envoyer une notification Teams**.
+Une fois l'intégration installée et activée, le designer de [règles de workflow](../settings/workflow-rules.md) propose l'action **Envoyer une notification Teams**.
 
 Configurez-la comme l'action de notification par e-mail :
 

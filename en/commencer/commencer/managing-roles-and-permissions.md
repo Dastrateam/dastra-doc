@@ -46,7 +46,7 @@ To create a custom role, you must be the owner of the organization. Simply go to
 Only the organization's owners can access the roles and permissions management screen.
 {% endhint %}
 
-To create a new role, click on "Creat new role", give it a name and then tick the "Read", "Modify", "Import" and "Export" options linked to each functionality. Once finished, click on the "Save" button at the bottom of the screen.
+To create a new role, click on "Create new role", give it a name and then tick the permissions linked to each functionality ("Read", "Write", "Create", "Import", "Export", etc.). In modules that offer it, the "Create" permission allows the creation of new items, independently of the "Write" permission, which allows their modification (see [Roles and permissions](../../features/settings/roles-et-permissions.md)). Once finished, click on the "Save" button at the bottom of the screen.
 
 {% hint style="info" %}
 To be effective, the new role must be assigned to one or more users. To do this, go to the "User" section, then click on the "Role" button corresponding to the user in question.

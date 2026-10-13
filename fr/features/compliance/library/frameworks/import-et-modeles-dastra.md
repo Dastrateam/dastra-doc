@@ -69,6 +69,10 @@ Ils peuvent ensuite être **personnalisés** selon votre contexte.
 
 ⚠️ La création d’un nouveau framework consomme un **crédit de framework** sur votre compte.
 
+ Les versions ultérieures du framework (créées, importées ou issues d'une mise à jour du référentiel source) ne consomment pas de crédit supplémentaire.
+
+
+
 ***
 
 ### Résultat après import
@@ -93,3 +97,13 @@ Une fois importé, le framework :
   * Des **projets de conformité**
   * L’évaluation des contrôles
   * La gestion des risques
+
+
+***
+
+### Mise à jour depuis le référentiel source
+
+Lorsqu'une version plus récente du modèle d'origine est disponible, la carte du framework affiche le badge **Mise à jour disponible** et sa fiche affiche le bandeau _Une version plus récente du référentiel source est disponible_ avec le lien **mettre à jour**.
+
+Ce lien ouvre un aperçu des changements (contrôles, tests, scénarios de risque et menaces). Après validation, une version publiée du framework est créée à partir de la source et devient la version actuelle ; les versions antérieures et les projets qui les utilisent ne sont pas modifiés. Voir [Versions de framework](versions-de-framework.md).
+

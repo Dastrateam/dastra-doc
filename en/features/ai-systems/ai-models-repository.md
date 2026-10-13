@@ -31,6 +31,10 @@ From the AI models list, you can **automatically generate an AI model record** u
 
 To use it, click **"Generate with AI"** from the model creation dialog, enter the model name or a brief description, and confirm. Review the generated record before saving, as AI-generated content may contain errors.
 
+<figure><img src="../../.gitbook/assets/ai-systems-create-generate-form.png" alt="AI model generation window with input field, language selector and samples"><figcaption><p>Describe the AI model to generate (name, publisher...): web browsing is used to complete the information</p></figcaption></figure>
+
+
+
 ## Link between AI Systems et Models
 
 To link an AI system to a model, go to the AI system concerned. In the second section, entitled "AI Models", you'll find a selector from which you can choose one or more models from those you have saved in your model repository.

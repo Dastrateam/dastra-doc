@@ -14,7 +14,7 @@ Chez Dastra, nous pensons que notre rôle est de vous **faciliter le travail** d
 
 La fonctionnalité de registres des activités de traitements Dastra répond à tous les attendus de la règlementation. Les registres, à la fois Responsable de Traitement et Sous traitant, reposent sur des référentiels (acteurs, actifs, jeux de données, données, risques et mesures de sécurité) permettant de **cartographier vos traitements** et **gagner du temps** dans la gestion au quotidien.
 
-Les traitements sont duplicables et des modèles de traitement sont disponibles dans une bibliothèque librement accessible à tous nos utilisateurs. Un workflow est intégré, une fonction de recherche est présente nativement et il est possible d’importer / exporter des fiches de traitements sous différent formats ( pdf , word , html, excel , csv, json ). Il est possible d'attacher des pièces jointes, des violations ou encore des risques à ces traitements.
+Les traitements sont duplicables et des modèles de traitement sont disponibles dans une bibliothèque librement accessible à tous nos utilisateurs. Un workflow est intégré, une fonction de recherche est présente nativement et il est possible d’importer / exporter des fiches de traitements sous différents formats (PDF, Word, HTML, Excel, CSV, JSON, Markdown). Il est possible d'attacher des pièces jointes, des violations ou encore des risques à ces traitements.
 
 <figure><img src="../../.gitbook/assets/processing-registre-liste.png" alt=""><figcaption></figcaption></figure>
 

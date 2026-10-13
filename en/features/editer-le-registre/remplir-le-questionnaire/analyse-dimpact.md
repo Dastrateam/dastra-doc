@@ -18,12 +18,25 @@ Under what conditions should I conduct a PIA? If the risks to the rights and fre
 * Cross-referencing of data&#x20;
 * Vulnerable persons&#x20;
 * Innovative use&#x20;
-* Transfer outside the EU&#x20;
 * Blocking a right/contract
 
-The criterion of transfers outside the EU is not part of the list established by the EDPS, but it constitutes a significant risk in view of the safeguards necessary to carry out a transfer.&#x20;
-
 Sometimes, in case of a processing operation that is particularly sensitive for the data subjects, only one criterion may be retained.&#x20;
+
+## Generate the assessment with the AI assistant
+
+The AI assistant can suggest an answer for each of the 9 criteria based on the information already entered in the processing activity record: name, description, purposes, data subject categories, personal data categories, assets and recipients.
+
+<figure><img src="../../../.gitbook/assets/register-processing-impact-analysis-generate-assessment-button.png" alt="Generate assessment button next to the Assessment of the 9 criteria for the DPIA (EDPB) title in the Impact assessment step"><figcaption><p>The Generate assessment button starts the analysis of the 9 criteria by the AI assistant</p></figcaption></figure>
+
+1. In the **Impact assessment** step of the processing activity, click **Generate assessment**, next to the **Assessment of the 9 criteria for the DPIA (EDPB)** title.
+2. Check the **Data shared with the AI model** section: it lists the information from the processing activity that is sent to the assistant.
+3. Click **Generate**.
+4. Review the proposal: for each criterion, the assistant gives an answer (Yes, No or Not applicable) with a justification, along with a confidence score for the analysis. Where relevant, the **Missing information that could change the assessment** section lists the items to complete in the record to make the result more reliable.
+5. Click **Apply to the form** to copy the answers into the step, or **Back** to return to the previous screen.
+
+You stay in control of every answer: once applied, each criterion can still be edited individually. The assistant's proposal supports your analysis and does not replace your own assessment.
+
+
 
 In addition, supervisory authorities publish a list of types of processing for which an AIP is mandatory and may publish a list of types of processing for which an AIP is not mandatory.&#x20;
 

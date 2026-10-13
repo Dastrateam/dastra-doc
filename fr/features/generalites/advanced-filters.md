@@ -35,6 +35,16 @@ _Par exemple : si je filtre sur un ou deux tags "complexe" et "en attente" + je 
 
 Par défaut, Dastra fait persister les filtres que vous sélectionnez, ce qui signifie que si vous changez de page ou que vous rafraîchissez votre navigateur, les filtres sont conservés. Ces filtres sont propre à votre navigateur et votre espace de travail (Ils sont stockés en **LocalStorage**).
 
+
+
+## Personnaliser les colonnes
+
+Le bouton **« Personnaliser les colonnes »**, situé à droite de l'en-tête de chaque liste, permet de choisir les colonnes affichées (**Colonnes visibles** et **Colonnes cachées**), y compris les champs personnalisés, et de définir leur ordre.
+
+Vous pouvez aussi réordonner les colonnes directement depuis l'en-tête de la liste : au survol d'un en-tête, une poignée de glisser-déposer apparaît à gauche du nom de la colonne. Faites glisser la colonne jusqu'à l'emplacement souhaité : le nouvel ordre s'applique immédiatement et est conservé dans vos préférences d'affichage. Certaines colonnes fixes ne peuvent pas être déplacées.
+
+Le survol d'un en-tête de colonne affiche l'explication complémentaire de la colonne, lorsqu'elle existe.
+
 ## Vues personnalisées
 
 Vous pouvez enregistrer l'état courant de vos filtres (et votre sélection de colonnes) sous forme de **vue nommée**, puis basculer entre vos vues en un seul clic depuis la barre d'outils de chaque liste.

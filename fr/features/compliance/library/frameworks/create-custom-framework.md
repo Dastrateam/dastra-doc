@@ -67,6 +67,12 @@ En mode édition, l’utilisateur peut :
 * Créer des **chapitres**
 * Ajouter des **exigences**
 * Structurer progressivement le référentiel
+
+{% hint style="warning" %}
+Le mode édition n'est disponible que pour une version en brouillon. Les exigences d'une version publiée sont verrouillées et le bouton **Modifier** est désactivé : créez une version du framework pour les faire évoluer (voir [Versions de framework](versions-de-framework.md)). Le nom, le logo et la description restent modifiables.
+{% endhint %}
+
+
 {% endcolumn %}
 
 {% column %}

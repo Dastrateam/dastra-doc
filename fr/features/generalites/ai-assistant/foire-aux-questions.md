@@ -10,7 +10,7 @@ Non. Les modèles utilisés par Dastra sont pré-entraînés et hébergés sur M
 
 **Les données de mon workspace sont-elles transmises au modèle à mon insu ?**
 
-Non. Dastra ne transmet que les informations strictement nécessaires à la génération demandée : le texte que vous saisissez, et le cas échéant les champs de l'objet sur lequel vous travaillez (traitement, système d'IA, demande de droit, etc.). Les autres enregistrements de votre workspace, vos identifiants et les métadonnées de session ne sont jamais inclus. Pour le détail par fonctionnalité, consultez la page Comment ça marche ?.
+Non. Dastra ne transmet que les informations strictement nécessaires à la génération demandée : le texte que vous saisissez, et le cas échéant les champs de l'objet sur lequel vous travaillez (traitement, système d'IA, demande de droit, etc.). Les autres enregistrements de votre workspace, vos identifiants et les métadonnées de session ne sont jamais inclus. Seule exception : lorsque vous activez l'option **Utiliser des éléments existants** à la génération d'un traitement, les libellés des mesures de sécurité, actifs et champs de données existants sont transmis afin que l'assistant les réutilise. Pour le détail par fonctionnalité, consultez la page Comment ça marche ?.
 
 ***
 

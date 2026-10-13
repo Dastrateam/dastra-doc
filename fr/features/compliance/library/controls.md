@@ -159,6 +159,10 @@ Un contrôle peut être associé à :
 * plusieurs exigences d’un même framework
 * des exigences provenant de **frameworks différents**
 
+Dans la section **Exigences associées** de la fenêtre d'édition, les exigences sont regroupées par framework ; le numéro de version du framework source (ex. _Version 2_) s'affiche à côté de son nom.
+
+
+
 👉 Cela permet :
 
 * de mutualiser les contrôles

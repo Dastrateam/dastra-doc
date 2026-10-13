@@ -80,7 +80,7 @@ Le bouton **« Valider le questionnaire »** n’est actif que lorsque **tous le
 
 * le rappel du nombre de questions validées sur le total ;
 * l’état des approbations ;
-* pour un **PIA / AIPD**, l’option de **reporter la date de l’analyse d’impact sur le traitement lié** ;
+* pour un **PIA / AIPD** lié à un traitement, le message « La date du dernier PIA du traitement rattaché sera mise à jour. » : la **Date du dernier PIA** du traitement est mise à jour automatiquement à la validation ;
 * l’option d’envoyer une **notification** aux parties prenantes.
 
 La réponse passe alors au statut **« Validé »** avec sa date de publication, et vous êtes redirigé vers son rapport. Vous pouvez ensuite [exporter le rapport](exporter-un-rapport.md), générer un plan d’actions ou fusionner les réponses avec l’objet lié (voir [Piloter les questionnaires](piloter-les-questionnaires.md)).

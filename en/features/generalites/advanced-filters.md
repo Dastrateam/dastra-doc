@@ -33,6 +33,16 @@ _For example: if I filter on one or two tags "complex" and "pending" + I select 
 
 By default, Dastra persists the filters you select, which means that if you change pages or refresh your browser, the filters are retained. These filters are specific to your browser and your workspace (they are stored in **LocalStorage**).
 
+
+
+## Customize columns
+
+The **"Customize columns"** button, on the right of each list header, lets you choose which columns are displayed (**Visible columns** and **Hidden columns**), including custom fields, and set their order.
+
+You can also reorder columns directly from the list header: when you hover over a column header, a drag handle appears to the left of the column name. Drag the column to the desired position: the column order is updated immediately and is saved in your display preferences. Some fixed columns cannot be moved.
+
+Hovering over a column header shows the additional explanation of the column, when one exists.
+
 ## Custom views
 
 You can save the current state of your filters (and your column selection) as a **named view**, then switch between your views with a single click from the toolbar of each list.

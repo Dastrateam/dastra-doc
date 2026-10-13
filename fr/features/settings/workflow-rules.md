@@ -74,6 +74,10 @@ Voici les **différents types d'actions** que vous pouvez déclencher :
 * Définition de la personne assignée
 * Création automatique d'une tâche
 
+* Envoi d'une notification dans un canal Microsoft Teams (si l'intégration Microsoft Teams est installée)
+
+
+
 Pour les demandes d'exercices de droit, des actions supplémentaires sont disponibles :
 
 * Clôturer la demande
@@ -87,6 +91,19 @@ Il est possible de chaîner les conditions. Vous pouvez ajouter plusieurs action
 {% hint style="info" %}
 Exemple : envoyer une notification à plusieurs personnes lors de la création d'une tâche. Pour cela, sélectionner le déclencheur "taches" et selon les conditions de la tache (par exemple, l'ajout d'un tag), ajouter une action "notification"
 {% endhint %}
+
+
+
+### Unité organisationnelle d'une tâche créée
+
+L'action **« Ajouter une tâche »** comporte un champ **Unité organisationnelle** qui détermine l'unité de rattachement de la tâche créée :
+
+* **Par défaut (hérité de l'objet)** : la tâche est rattachée à l'unité organisationnelle de l'objet déclencheur, s'il en a une. C'est la valeur appliquée lorsque le champ reste vide.
+* **Une unité précise** : sélectionnez une unité dans l'arborescence ; la tâche est rattachée à cette unité, quelle que soit l'unité de l'objet déclencheur.
+
+Pour les règles portant sur les objets des référentiels (**Actif**, **Données**, **Mesure de sécurité**, **Acteur**, **Catégorie de personne concernée**), qui n'ont pas d'unité organisationnelle, le champ est obligatoire.
+
+<figure><img src="../../.gitbook/assets/settings-workflow-rule-add-task-area.png" alt="Action Ajouter une tâche avec le champ Unité organisationnelle renseigné"><figcaption><p>Choix de l'unité organisationnelle de la tâche créée par la règle</p></figcaption></figure>
 
 ### Lier un modèle de message à une action
 
@@ -103,6 +120,24 @@ Dans l'action, cliquez sur **« Sélectionner un modèle »**, puis choisissez u
 * Les règles utilisant un contenu manuel ne sont pas affectées. Vous pouvez repasser d'un modèle lié à un contenu manuel à tout moment en cliquant sur **« Retirer »**.
 
 <figure><img src="../../.gitbook/assets/workflow-action-linked-template.png" alt="Action avec un modèle de message lié et les boutons Changer de modèle et Retirer"><figcaption><p>Une fois lié, le modèle peut être changé ou retiré ; les variables sont substituées à l'exécution</p></figcaption></figure>
+
+
+
+### Envoyer une notification Teams
+
+Lorsque l'[intégration Microsoft Teams](../integrations/microsoft-teams.md) est installée et activée sur l'espace de travail, l'action **« Envoyer une notification Teams »** publie une carte dans le canal Teams relié au webhook. Il n'y a pas de destinataire à choisir.
+
+Renseignez les champs suivants :
+
+* **Titre de la carte** (obligatoire, 150 caractères au maximum).
+* **Message** : texte riche affiché dans la carte.
+* **Inclure un lien vers l'objet dans la carte** : ajoute à la carte un lien direct vers l'objet déclencheur dans Dastra. L'option est activée par défaut.
+
+Le titre et le message acceptent les variables personnalisées de l'objet déclencheur : tapez `{{` pour afficher la liste des variables disponibles (voir [Variables personnalisées](#variables-personnalisees)).
+
+{% hint style="info" %}
+L'action n'apparaît dans la liste des actions que si l'intégration Microsoft Teams est installée et activée. Si l'intégration est désinstallée ou désactivée, le formulaire de l'action affiche un avertissement : l'action échoue tant que l'intégration n'est pas configurée.
+{% endhint %}
 
 ### Variables personnalisées
 

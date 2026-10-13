@@ -79,7 +79,7 @@ The **"Validate questionnaire"** button only becomes active once **all required 
 
 * the number of validated questions out of the total;
 * the state of the approvals;
-* for a **PIA / DPIA**, the option to **apply the assessment date to the linked processing activity**;
+* for a **PIA / DPIA** linked to a processing activity, the message "The date of the last DPIA of the linked data processing record will be updated.": the processing activity's **Last DPIA Date** is updated automatically upon validation;
 * the option to send a **notification** to the stakeholders.
 
 The response then moves to the **"Validated"** status with its publication date, and you are redirected to its report. You can then [export the report](export-questionnaire-report.md), generate an action plan or merge the answers into the linked object (see [Monitor questionnaires](monitor-questionnaires.md)).

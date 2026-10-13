@@ -12,7 +12,7 @@ Pour exporter l'ensemble du registre, il vous suffit de vous rendre dans le modu
 
 ![Menu déroulant du registre comportant la fonctionnalité d'export](../../.gitbook/assets/capture-web-3-5-2022-164438-app-dastra-eu.jpeg)
 
-Choisissez ensuite le format d'export ainsi que le type d'export désiré (complet ou format article 30), et cliquez sur "Télécharger le fichier". Ca y est, votre registre est exporté !
+Choisissez ensuite le format d'export (PDF, Word, HTML, CSV, Excel, JSON ou Markdown) ainsi que le type d'export désiré (complet ou format article 30), et cliquez sur "Télécharger le fichier". Ca y est, votre registre est exporté !
 
 ### Format article 30/CNIL
 

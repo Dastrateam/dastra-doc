@@ -16,12 +16,25 @@ Dans quelles conditions dois-je mener un PIA ? Si les risques pour les droits et
 * Croisement de données
 * Personnes vulnérables
 * Usage innovant
-* Transfert hors UE
 * Blocage d’un droit/contrat
 
-Le critère des transferts hors UE ne fait pas partie de la liste établie par le CEPD mais constitue un risque important compte tenu des garanties nécessaires pour effectuer un transfert.
-
 Parfois, en cas de traitement particulièrement sensible pour les personnes concernées, seul un critère pourra être retenu.
+
+## Générer l'évaluation avec l'assistant IA
+
+L'assistant IA peut proposer une réponse pour chacun des 9 critères à partir des informations déjà renseignées dans la fiche du traitement : nom, description, finalités, catégories de personnes concernées, catégories de données personnelles, actifs et destinataires.
+
+<figure><img src="../../../.gitbook/assets/register-processing-impact-analysis-generate-assessment-button.png" alt="Bouton Générer l&#x27;évaluation à côté du titre Évaluation des 9 critères de l&#x27;AIPD (CEPD) dans l&#x27;étape Analyse d&#x27;impact"><figcaption><p>Le bouton Générer l'évaluation lance l'analyse des 9 critères par l'assistant IA</p></figcaption></figure>
+
+1. Dans l'étape **Analyse d'impact** du traitement, cliquez sur **Générer l'évaluation**, à côté du titre **Évaluation des 9 critères de l'AIPD (CEPD)**.
+2. Vérifiez la rubrique **Données partagées avec le modèle d'IA** : elle liste les informations du traitement transmises à l'assistant.
+3. Cliquez sur **Générer**.
+4. Examinez la proposition : pour chaque critère, l'assistant indique une réponse (Oui, Non ou Non applicable) accompagnée d'une justification, ainsi qu'un score de confiance de l'analyse. Le cas échéant, la rubrique **Informations manquantes qui pourraient changer l'évaluation** liste les éléments à compléter dans la fiche pour fiabiliser le résultat.
+5. Cliquez sur **Appliquer au formulaire** pour reporter les réponses dans l'étape, ou sur **Retour** pour revenir à l'écran précédent.
+
+Vous gardez la main sur chaque réponse : après application, chaque critère reste modifiable individuellement. La proposition de l'assistant est une aide à l'analyse et ne remplace pas votre propre évaluation.
+
+
 
 Par ailleurs, les autorités de contrôle publient une liste des types de traitement dont la réalisation d’un PIA est obligatoire et peuvent publier une liste des types de traitement dont la réalisation d’un PIA n’est pas obligatoire.
 

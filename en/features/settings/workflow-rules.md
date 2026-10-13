@@ -131,6 +131,7 @@ Actions define what happens when the trigger fires and conditions are met. You c
 | Send notification                   | Send an email notification to one or more recipients   |
 | Add tag(s)                          | Apply one or more tags to the object                   |
 | Schedule a response to a questionnaire | Assign a questionnaire to the object automatically  |
+| Send a Teams notification           | Post a card in a Microsoft Teams channel (if the Microsoft Teams integration is installed) |
 
 **Additional actions for Requests (DSR) only:**
 
@@ -140,6 +141,19 @@ Actions define what happens when the trigger fires and conditions are met. You c
 | Close the request           | Automatically close the DSR                                    |
 | Move to recycle bin         | Move the request to the recycle bin                            |
 | Anonymise the request       | Anonymise the request (only available if the request is closed)|
+
+
+
+#### Organizational unit of a created task
+
+The **"Add a task"** action includes an **Organizational unit** field that determines the unit to which the created task is attached:
+
+* **Default (inherited from object)**: the task is attached to the organizational unit of the trigger object, if it has one. This value applies when the field is left empty.
+* **A specific unit**: select a unit in the tree; the task is attached to this unit, regardless of the unit of the trigger object.
+
+For rules on repository objects (**Asset**, **Data field**, **Security measure**, **Stakeholder**, **Category of data subjects**), which have no organizational unit, the field is required.
+
+<figure><img src="../../.gitbook/assets/settings-workflow-rule-add-task-area.png" alt="Add a task action with the Organizational unit field filled in"><figcaption><p>Choosing the organizational unit of the task created by the rule</p></figcaption></figure>
 
 #### Linking a message template to an action
 
@@ -156,6 +170,24 @@ In the action, click **"Select a template"**, then choose a **"Request message"*
 * Rules using manual content are not affected. You can switch back from a linked template to manual content at any time by clicking **"Unlink"**.
 
 <figure><img src="../../.gitbook/assets/workflow-action-linked-template.png" alt="Action with a linked message template and the Change template and Unlink buttons"><figcaption><p>Once linked, the template can be changed or unlinked; variables are substituted at execution time</p></figcaption></figure>
+
+#### Sending a Teams notification
+
+When the [Microsoft Teams integration](../integrations/microsoft-teams.md) is installed and enabled on the workspace, the **"Send a Teams notification"** action posts a card to the Teams channel linked to the webhook. There is no recipient to pick.
+
+Fill in the following fields:
+
+* **Card title** (required, 150 characters maximum).
+* **Message** (required): rich text displayed in the card.
+* **Include a link to the object in the card**: adds a direct link to the trigger object in Dastra to the card. This option is enabled by default.
+
+The title and the message accept custom variables from the trigger object: type `{{` to display the list of available variables (see [Custom variables in notifications](#custom-variables-in-notifications)).
+
+{% hint style="info" %}
+The action only appears in the list of actions when the Microsoft Teams integration is installed and enabled. If the integration is uninstalled or disabled, the action form displays a warning: the action fails until the integration is configured.
+{% endhint %}
+
+
 
 
 

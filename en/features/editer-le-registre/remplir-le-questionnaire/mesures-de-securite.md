@@ -15,3 +15,11 @@ For each processing of personal data, it's necessary to take appropriate measure
 Guaranteeing security means guaranteeing the confidentiality, integrity and availability of data. Security measures must therefore prevent illegitimate access to data, unwanted modification of data and the disappearance of data.&#x20;
 
 To ensure that the measures are adapted to the risk, these risks must be assessed. For this purpose, the potential impacts on data security, the sources of the risks, the feasible threats and whether the existing measures are sufficient must be identified. If not, they must be increased.
+
+
+## Deployment status of measures
+
+Each security measure linked to the processing activity has a deployment status: **Non applicable**, **To be done**, **Planned**, **Being deployed** or **Deployed**. A measure added to the processing activity takes the **Deployed** status by default.
+
+Change the status of a measure from its row in the processing activity's list of measures, or apply the same status to all the measures of the processing activity at once with the **Status** selector in the list header.
+

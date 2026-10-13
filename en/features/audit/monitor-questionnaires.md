@@ -23,6 +23,16 @@ Opening a response gives access to a detailed reporting view:
 * **Result analysis**: automatic analysis blocks generated from the responses (compliance level, risk assessment, etc.)
 * **Scoring by categories**: visualised as a radar chart or bar chart
 
+Answers to multiple-choice questions are displayed in a condensed form:
+
+* only the options selected by the respondent are shown;
+* the **"Show all options"** link, below each question, displays the unselected options of that question; the **"Hide options"** link returns to the condensed display;
+* an unanswered question is flagged with a hyphen (-), without any list of options.
+
+<figure><img src="../../.gitbook/assets/audit-questionnaire-response-condensed-view.png" alt="Questionnaire answers in condensed display"><figcaption><p>Only the selected options are shown; the other options remain available question by question</p></figcaption></figure>
+
+
+
 ## AI analysis (beta)
 
 From a response's reporting view, trigger an **AI analysis** to get:

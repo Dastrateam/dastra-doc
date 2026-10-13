@@ -26,6 +26,12 @@ To do this, simply select the cookie to be classified from the Classification in
 You can define whether or not consent is required for each cookie on a case-by-case basis.
 {% endhint %}
 
+
+
+{% hint style="warning" %}
+A cookie detected by the scan but not linked to any service (unclassified cookie) is never displayed in the public banner. Add it to an existing service or create a service from it: see [Handle unclassified cookies](scannez-les-cookies-deposes-sur-votre-site-web.md#handle-unclassified-cookies).
+{% endhint %}
+
 Once you have categorized all your cookies, you can implement the corresponding consent widget.
 
 {% content-ref url="implementez-un-widget-de-consentement-aux-cookies.md" %}
