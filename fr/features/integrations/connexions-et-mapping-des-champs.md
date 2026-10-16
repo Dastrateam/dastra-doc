@@ -45,6 +45,10 @@ Pour créer une connexion, cliquez sur **Ajouter une connexion** :
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Création d'une connexion</p></figcaption></figure>
 
+{% hint style="info" %}
+**Connexions utilisées par des règles de workflow.** Pour l'intégration [HTTP / Custom API](custom-http.md), une connexion n'est pas rattachée à un cas d'usage : chaque action **Envoyer une requête HTTP** d'une règle de workflow choisit directement la connexion à utiliser, et plusieurs règles peuvent partager la même. Le panneau des connexions indique combien de règles utilisent chacune d'elles. Supprimer une connexion désactive les règles qui en dépendent. Voir aussi [Envoyer une requête HTTP](../settings/workflow-rules.md#envoyer-une-requete-http) dans les règles de workflow.
+{% endhint %}
+
 ### Installer un cas d'usage
 
 Cliquez sur **Ajouter l'intégration** sur la carte d'un cas d'usage. Le panneau d'installation vous guide en trois étapes maximum :
