@@ -82,6 +82,40 @@ These question types display a list of objects from Dastra to the respondent: as
 For the list to display correctly, the respondent must have **read access** to the corresponding objects in Dastra. An external respondent without a Dastra account, or without the appropriate permissions, will not be able to see the list.
 {% endhint %}
 
+## Populate custom fields from a questionnaire
+
+You can use a questionnaire to automatically populate custom fields in Dastra registers. Configure the question variable with the `custom_` prefix, followed by the field’s technical name.
+
+{% stepper %}
+{% step %}
+### Configure the template question
+
+In **Questionnaires**, open the relevant template and add the question that should populate the custom field. Choose a question type that is compatible with the field type.
+
+Open the question properties, then enable **Do you want to customize the variable name?**. In **Variable name**, enter `custom_` followed by the field’s technical name.
+
+For a field with the technical name `business_owner`, use:
+
+```
+custom_business_owner
+```
+
+Then save the template changes.
+{% endstep %}
+{% endstepper %}
+
+### Variable syntax
+
+The variable name must follow the `custom_variable_name` format. Use the field’s technical name exactly as written after the prefix.
+
+{% hint style="info" %}
+The custom field does not need to appear under **Select a variable to map**. Enter the full variable name directly.
+{% endhint %}
+
+{% hint style="warning" %}
+The `custom_` prefix is required. For the `business_owner` field, use `custom_business_owner`, not `business_owner`.
+{% endhint %}
+
 ## Template version management
 
 When modifying a template that is already in use, Dastra offers two options:
