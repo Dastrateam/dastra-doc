@@ -151,4 +151,37 @@ Les actions disponibles incluent notamment :
 * **Exporter** : exporter les informations de la demande.
 * **Règles de workflow** : appliquer ou déclencher une règle d’automatisation.
 * **Suspendre la demande** : mettre en pause le délai légal de traitement (voir ci-dessous).
-* **Fermer la demande** : marquer manuelle
+* **Fermer la demande** : marquer manuellement la demande comme terminée.
+* **Réinitialiser le jeton d’accès** : recréer un lien sécurisé pour le demandeur.
+* **Anonymiser** : effacer les données identifiantes liées à la demande.
+* **Déplacer dans la corbeille** : archiver ou supprimer la demande.
+
+***
+
+#### Suspension d’une demande
+
+Dans certains cas, il est nécessaire de **suspendre temporairement** une demande (par exemple en attente d’une vérification d’identité).\
+La suspension interrompt le délai légal et celui-ci ne reprend qu’une fois la suspension levée.
+
+<figure><img src="../../.gitbook/assets/dsr-demande-suspension.png" alt=""><figcaption><p>Suspendez une demande dans l'attente d'une réponse du demander par exemple</p></figcaption></figure>
+
+* **Date de la suspension** : obligatoire.
+* **Justification** : champ libre pour documenter la raison (ex. en attente de pièces justificatives).
+
+Une fois la demande suspendue, l’interface affiche clairement l’état et propose un bouton pour lever la suspension.
+
+<figure><img src="../../.gitbook/assets/dsr-demande-suspension-visibilite.png" alt=""><figcaption></figcaption></figure>
+
+Le compteur de jours restants est automatiquement recalculé, en prenant en compte la période de suspension.
+
+***
+
+### Suivi global
+
+Chaque demande conserve l’historique complet :
+
+* Messages échangés.
+* Pièces jointes ajoutées.
+* Statut et avancement du traitement.
+
+Cela permet de garantir la traçabilité et la conformité en cas de contrôle.
