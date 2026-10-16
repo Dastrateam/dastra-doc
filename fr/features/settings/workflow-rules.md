@@ -207,4 +207,14 @@ Lors de la création d'une nouvelle règle, choisissez **"Depuis un modèle"** p
 
 **Enregistrer une règle comme modèle**
 
-Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Donnez-lui un nom, une description,
+Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Donnez-lui un nom, une description, puis confirmez. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable par tous les utilisateurs de l'espace de travail.
+
+<figure><img src="../../.gitbook/assets/workflow-rule-save-as-template.png" alt="Dialogue Enregistrer comme modèle avec nom et description"><figcaption><p>Enregistrement d'une règle de workflow comme modèle réutilisable</p></figcaption></figure>
+
+Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
+
+***
+
+## Tutoriel vidéo : les règles de workflow
+
+{% embed url="https://www.youtube-nocookie.com/embed/FqPmGdk2nTI" %}
