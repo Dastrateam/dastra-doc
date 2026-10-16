@@ -88,6 +88,49 @@ Ces types de questions affichent au répondant une liste d'objets issus de Dastr
 Pour que la liste s'affiche correctement, le répondant doit disposer des **droits de lecture** sur les objets correspondants dans Dastra. Un répondant externe sans compte Dastra ou sans les permissions appropriées ne pourra pas voir la liste.
 {% endhint %}
 
+## Renseigner des champs personnalisés depuis un questionnaire
+
+Vous pouvez utiliser un questionnaire pour renseigner automatiquement des champs personnalisés dans les registres Dastra. Configurez la variable de la question avec le préfixe `custom_`, suivi du nom technique du champ.
+
+{% stepper %}
+{% step %}
+### Configurez la question du modèle
+
+Dans **Questionnaires**, ouvrez le modèle concerné et ajoutez la question qui doit renseigner le champ personnalisé. Choisissez un type de question compatible avec le type du champ. &#x20;
+
+Ouvrez les propriétés de la question, puis activez "**Souhaitez-vous personnaliser le nom de la variable ?"**. Dans **Nom de la variable**, saisissez `custom_` suivi du nom technique du champ.
+
+Pour un champ dont le nom technique est `business_owner`, utilisez :
+
+```
+custom_business_owner
+```
+
+Enregistrez ensuite les modifications du modèle.
+{% endstep %}
+{% endstepper %}
+
+### Syntaxe des variables
+
+Le nom de variable doit respecter le format `custom_nom_de_la_variable`. Reprenez le nom technique du champ à l’identique après le préfixe.
+
+{% hint style="info" %}
+Le champ personnalisé n’a pas besoin d’apparaître dans **Sélectionnez une variable à mapper**. Saisissez directement le nom complet de la variable.
+{% endhint %}
+
+{% hint style="warning" %}
+Le préfixe `custom_` est obligatoire. Pour le champ `business_owner`, utilisez `custom_business_owner`, et non `business_owner`.
+{% endhint %}
+
+### Résoudre un problème de mapping
+
+Si la valeur n’apparaît pas dans le registre, vérifiez les points suivants :
+
+* Le champ existe dans le module concerné.
+* La variable commence par `custom_` et reprend exactement le slug du champ.
+* Le type de question est compatible avec le type du champ.
+* Les modifications du modèle sont enregistrées.
+
 ## Gestion des versions du modèle
 
 Lorsque vous modifiez un modèle déjà utilisé dans des questionnaires existants, Dastra vous propose deux options :
@@ -111,18 +154,18 @@ Le nombre de modèles disponibles dépend de votre souscription. Ce quota est pa
 [planifier-un-audit.md](../planifier-un-audit.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/rapport-daudit.md" %}
-[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/rapport-daudit.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/rapport-daudit.md)
+{% content-ref url="../../../../features/audit/rapport-daudit.md" %}
+[rapport-daudit.md](../../../../features/audit/rapport-daudit.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/pia-aipd.md" %}
-[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/pia-aipd.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/pia-aipd.md)
+{% content-ref url="../../../../features/audit/pia-aipd.md" %}
+[pia-aipd.md](../../../../features/audit/pia-aipd.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/tia.md" %}
-[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/tia.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/tia.md)
+{% content-ref url="../../../../features/audit/tia.md" %}
+[tia.md](../../../../features/audit/tia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/lia.md" %}
-[https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/lia.md](https://github.com/Dastrateam/dastra-doc/tree/main/features/audit/lia.md)
+{% content-ref url="../../../../features/audit/lia.md" %}
+[lia.md](../../../../features/audit/lia.md)
 {% endcontent-ref %}
