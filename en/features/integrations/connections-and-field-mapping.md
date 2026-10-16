@@ -45,6 +45,10 @@ To create a connection, click **Add a connection**:
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Creating a connection</p></figcaption></figure>
 
+{% hint style="info" %}
+**Connections used by workflow rules.** For the [HTTP / Custom API](custom-http.md) integration, a connection is not bound to a use case: each **Send an HTTP request** action of a workflow rule picks the connection to use directly, and several rules can share the same one. The connections panel shows how many rules use each connection. Deleting a connection disables the rules that depend on it. See also [Sending an HTTP request](../settings/workflow-rules.md#sending-an-http-request) in workflow rules.
+{% endhint %}
+
 ### Installing a use case
 
 Click **Add integration** on a use case card. The setup panel walks you through up to three steps:
