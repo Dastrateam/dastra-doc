@@ -25,7 +25,7 @@ Avec Dastra, il est possible de configurer plusieurs API. La liste des API est a
 
 Une limite de requête http est fixée à 500/min ou 10000/10min.
 
-Les options de sécurité (notamment filtrage IP) ne s'appliquent pas aux API.
+Les options de sécurité (notamment [filtrage IP](../features/settings/filtrage-ip.md)) ne s'appliquent pas aux API.
 
 ### Exposition des champs personnalisés dans l'API Dastra
 

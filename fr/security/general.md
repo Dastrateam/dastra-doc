@@ -90,7 +90,7 @@ L'autorité d'authentification est [https://account.dastra.eu](https://account.d
 
 ## **Liste d'autorisation des adresses IPs**
 
-Il est possible de filtrer les utilisateurs à la connexion en fonction de leurs adresses IP
+Il est possible de restreindre l'accès à l'organisation à des plages d'adresses IP autorisées. Le filtrage s'applique à tous les utilisateurs (administrateurs compris) et à tous les modes de connexion (mot de passe, SSO, passkey, lien magique), à la connexion puis à chaque renouvellement du jeton. Il ne s'applique pas aux API, au SCIM ni au streaming SIEM. Pour le détail, consultez la page [Filtrage IP](../features/settings/filtrage-ip.md).
 
 ## Liste d'autorisation des domaines des emails
 

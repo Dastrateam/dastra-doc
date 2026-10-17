@@ -239,6 +239,7 @@
     * [Okta](features/settings/single-sign-on-sso/okta.md)
     * [Bekannte Probleme](features/settings/single-sign-on-sso/problemes-connus.md)
   * [SCIM](features/settings/scim.md)
+  * [IP-Filterung](features/settings/ip-filterung.md)
   * [API-Schlüssel verwalten](features/settings/gestion-des-cles-dapi.md)
   * [Benachrichtigungen](features/settings/notifications.md)
   * [Prozessschritte](features/settings/etapes-de-processus.md)

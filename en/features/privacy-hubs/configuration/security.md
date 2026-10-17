@@ -29,3 +29,7 @@ If no owner is designated, access requests cannot be processed. Make sure at lea
 ## IP address filtering
 
 This section also allows you to define rules that limit access to your Trust center to specific IP ranges. By default, without any IP filtering added by you, your Trust center will be accessible to anyone with the access link, provided that the Trust center is activated.
+
+{% hint style="info" %}
+This filtering is **separate** from the organisation-wide [IP filtering](../../settings/ip-filtering.md), which does not apply to the Trust center.
+{% endhint %}

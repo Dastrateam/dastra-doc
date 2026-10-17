@@ -156,6 +156,7 @@
     * [Okta](features/settings/single-sign-on-sso/okta.md)
     * [Bekende problemen](features/settings/single-sign-on-sso/problemes-connus.md)
   * [SCIM](features/settings/scim.md)
+  * [IP-filtering](features/settings/ip-filtering.md)
   * [API-sleutelbeheer](features/settings/gestion-des-cles-dapi.md)
   * [Meldingen](features/settings/notifications.md)
   * [OneDrive/Google Drive-integraties](features/settings/integrations-onedrive-google-drive.md)

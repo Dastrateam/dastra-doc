@@ -90,7 +90,7 @@ Die Authentifizierungsinstanz ist [https://account.dastra.eu](https://account.da
 
 ## **IP-Adressen-Zulassungsliste**
 
-Es ist möglich, Nutzer bei der Anmeldung anhand ihrer IP-Adressen zu filtern
+Der Zugriff auf die Organisation kann auf zugelassene IP-Adressbereiche beschränkt werden. Die Filterung gilt für alle Nutzer (einschließlich Administratoren) und alle Anmeldemethoden (Passwort, SSO, Passkey, Magic Link), bei der Anmeldung und bei jeder Token-Erneuerung. Sie gilt nicht für APIs, SCIM oder SIEM-Streaming. Details finden Sie auf der Seite [IP-Filterung](../features/settings/ip-filterung.md).
 
 ## E-Mail-Domain-Zulassungsliste
 

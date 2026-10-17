@@ -23,7 +23,7 @@ With Dastra, you can configure several APIs. The list of APIs is available here:
 
 An http request limit is set at 500/min or 10000/10min.&#x20;
 
-Security options (such as IP filtering) do not apply to APIs.
+Security options (such as [IP filtering](../features/settings/ip-filtering.md)) do not apply to APIs.
 
 {% hint style="info" %}
 **TIP**: Only use APIs if you know what you're doing!

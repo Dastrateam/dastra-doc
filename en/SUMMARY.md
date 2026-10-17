@@ -239,6 +239,7 @@
     * [Known problems](features/settings/single-sign-on-sso/problemes-connus.md)
   * [SIEM streaming](features/settings/siem-streaming.md)
   * [References](features/settings/references.md)
+  * [IP filtering](features/settings/ip-filtering.md)
   * [API key management](features/settings/api-key-management.md)
   * [Notifications](features/settings/notifications.md)
   * [Workflow stages](features/settings/workflow-stages.md)

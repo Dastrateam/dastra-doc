@@ -255,6 +255,7 @@
     * [Problèmes connus](features/settings/single-sign-on-sso/problemes-connus.md)
   * [Streaming SIEM](features/settings/streaming-siem.md)
   * [SCIM](features/settings/scim.md)
+  * [Filtrage IP](features/settings/filtrage-ip.md)
   * [Gestion des clés d'API](features/settings/gestion-des-cles-dapi.md)
   * [Notifications](features/settings/notifications.md)
   * [Etapes de processus](features/settings/etapes-de-processus.md)
