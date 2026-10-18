@@ -8,7 +8,7 @@ description: >-
 
 ## Why use custom cloud storage?
 
-By default, Dastra's [document management system](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/gestion-de-documents-ged/README.md) relies on Azure Blob Storage: files are encrypted, scanned for viruses, and redundantly stored on a secondary server. For more details, see the [security documentation](../../security/general.md).
+By default, Dastra's [document management system](../document-management/README.md) relies on Azure Blob Storage: files are encrypted, scanned for viruses, and redundantly stored on a secondary server. For more details, see the [security documentation](../../security/general.md).
 
 In some organizations, this storage duplicates an existing cloud file system (SharePoint/OneDrive, Google Drive). Dastra integrates natively with both providers to avoid this duplication.
 

@@ -40,7 +40,7 @@ Within an active questionnaire, the **AI assistant** can help you fill in answer
 This feature is particularly useful for long or complex questionnaires such as DPIAs, TIAs or LIAs, when you already have existing documentation available.
 
 {% hint style="info" %}
-Using the AI-assisted response feature consumes AI credits. See the [AI Assistant](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/generalites/ai-assistant/README.md) page for details on your quota and usage.
+Using the AI-assisted response feature consumes AI credits. See the [AI Assistant](../generalites/ai-assistant/README.md) page for details on your quota and usage.
 {% endhint %}
 
 ## Linking the questionnaire to other objects in Dastra

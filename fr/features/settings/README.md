@@ -36,8 +36,8 @@ Apprenez à gérer les notifications dans Dastra :
 
 Apprenez à mettre en place des workflows dans Dastra :
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc/blob/main/features/settings/workflows.md" %}
-[https://github.com/Dastrateam/dastra-doc/blob/main/features/settings/workflows.md](https://github.com/Dastrateam/dastra-doc/blob/main/features/settings/workflows.md)
+{% content-ref url="workflow-rules.md" %}
+[workflow-rules.md](workflow-rules.md)
 {% endcontent-ref %}
 
 Apprenez à mettre en place des intégrations :

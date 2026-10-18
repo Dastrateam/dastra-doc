@@ -139,18 +139,18 @@ Finally, it is possible to import one of your questionnaire templates, in json f
 [scheduling-an-audit-or-a-pia.md](scheduling-an-audit-or-a-pia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/share-an-audit-report-or-pia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/share-an-audit-report-or-pia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/share-an-audit-report-or-pia.md)
+{% content-ref url="share-an-audit-report-or-pia.md" %}
+[share-an-audit-report-or-pia.md](share-an-audit-report-or-pia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/pia-dpia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/pia-dpia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/pia-dpia.md)
+{% content-ref url="questionnaire-types/pia-dpia.md" %}
+[questionnaire-types/pia-dpia.md](questionnaire-types/pia-dpia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/tia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/tia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/tia.md)
+{% content-ref url="questionnaire-types/tia.md" %}
+[questionnaire-types/tia.md](questionnaire-types/tia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/lia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/lia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/lia.md)
+{% content-ref url="questionnaire-types/lia.md" %}
+[questionnaire-types/lia.md](questionnaire-types/lia.md)
 {% endcontent-ref %}

@@ -36,20 +36,20 @@ description: Welcome to the Dastra documentation.
 [editer-le-registre](features/editer-le-registre/)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md)
+{% content-ref url="features/ai-systems/" %}
+[features/ai-systems/](features/ai-systems/)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/la-gestion-des-risques/README.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/la-gestion-des-risques/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/la-gestion-des-risques/README.md)
+{% content-ref url="features/risk-management/" %}
+[features/risk-management/](features/risk-management/)
 {% endcontent-ref %}
 
 {% content-ref url="features/gerer-les-exercices-des-droits/" %}
 [gerer-les-exercices-des-droits](features/gerer-les-exercices-des-droits/)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/documenter-les-violations-de-donnees/README.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/documenter-les-violations-de-donnees/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/documenter-les-violations-de-donnees/README.md)
+{% content-ref url="features/notifier-les-violations-de-donnees/" %}
+[features/notifier-les-violations-de-donnees/](features/notifier-les-violations-de-donnees/)
 {% endcontent-ref %}
 
 {% content-ref url="features/gerer-le-consentement-aux-cookies/" %}
@@ -92,8 +92,8 @@ description: Welcome to the Dastra documentation.
 
 ### 📄 API & Integrations
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/api-references/liste-des-endpoints-dapi.md)
+{% content-ref url="api-references/liste-des-endpoints-dapi.md" %}
+[liste-des-endpoints-dapi.md](api-references/liste-des-endpoints-dapi.md)
 {% endcontent-ref %}
 
 {% content-ref url="features/integrations/" %}

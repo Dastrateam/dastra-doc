@@ -54,8 +54,8 @@ The 12 steps are:
 
 * **Data subjects rights (DSR)** - Detail the methods available to the data subjects to exercise each of their rights.
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/blob/main/features/editer-le-registre/remplir-le-questionnaire/data-subject-rights.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/blob/main/features/editer-le-registre/remplir-le-questionnaire/data-subject-rights.md](https://github.com/Dastrateam/dastra-doc-en/blob/main/features/editer-le-registre/remplir-le-questionnaire/data-subject-rights.md)
+{% content-ref url="data-subjects-rights-dsr.md" %}
+[data-subjects-rights-dsr.md](data-subjects-rights-dsr.md)
 {% endcontent-ref %}
 
 * **Recipients** - This section lists the recipients of the processing data. This is where you can declare a data transfer outside the EU.
