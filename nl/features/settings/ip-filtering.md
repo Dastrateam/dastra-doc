@@ -59,7 +59,7 @@ De gebruiker wordt doorgestuurd naar een foutpagina met de melding:
 > IP Address not allowed — Your IP address is not allowed by your organization. Please contact your account's administrator.
 
 {% hint style="warning" %}
-Blokkeringen worden **niet** vastgelegd in het auditlogboek en niet naar SIEM-streaming gestuurd.
+Blokkeringen worden **niet** vastgelegd in het auditlogboek en niet naar [SIEM-streaming](siem-streaming.md) gestuurd.
 {% endhint %}
 
 ## Wat de filtering niet dekt
@@ -68,9 +68,9 @@ Blokkeringen worden **niet** vastgelegd in het auditlogboek en niet naar SIEM-st
 |---|---|
 | API-aanroepen met een [API-sleutel](gestion-des-cles-dapi.md) | Nee |
 | [SCIM](scim.md) | Nee |
-| SIEM-streaming en BI-connectoren | Nee |
+| [SIEM-streaming](siem-streaming.md) en BI-connectoren | Nee |
 | Externe respondenten van vragenlijsten (openbare link) | Nee |
-| Portaal voor rechtenverzoeken en Trust Center | Nee, ze hebben hun eigen instellingen |
+| Portaal voor rechtenverzoeken en Trust Center | Nee, ze hebben hun eigen instellingen (zie [Trust Center - Beveiliging](../trust-center/configuration/security.md)) |
 
 ## Dastra-support
 

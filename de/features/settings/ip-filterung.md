@@ -59,7 +59,7 @@ Der Nutzer wird auf eine Fehlerseite weitergeleitet mit der Meldung:
 > IP Address not allowed — Your IP address is not allowed by your organization. Please contact your account's administrator.
 
 {% hint style="warning" %}
-Sperrungen werden **nicht** im Audit-Protokoll erfasst und nicht an das SIEM-Streaming gesendet.
+Sperrungen werden **nicht** im Audit-Protokoll erfasst und nicht an das [SIEM-Streaming](siem-streaming.md) gesendet.
 {% endhint %}
 
 ## Was die Filterung nicht abdeckt
@@ -68,7 +68,7 @@ Sperrungen werden **nicht** im Audit-Protokoll erfasst und nicht an das SIEM-Str
 |---|---|
 | API-Aufrufe mit einem [API-Schlüssel](gestion-des-cles-dapi.md) | Nein |
 | [SCIM](scim.md) | Nein |
-| SIEM-Streaming und BI-Konnektoren | Nein |
+| [SIEM-Streaming](siem-streaming.md) und BI-Konnektoren | Nein |
 | Externe Fragebogen-Teilnehmer (öffentlicher Link) | Nein |
 | Portal für Betroffenenanfragen und Trust Center | Nein, sie haben eigene Einstellungen (siehe [Trust Center – Sicherheit](../trust-center/configuration/security.md)) |
 
