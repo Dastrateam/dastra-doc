@@ -12,3 +12,7 @@ Depuis cet espace, le demandeur peut :
 <figure><img src="../../../.gitbook/assets/dsr-espace-discussion-demandeur.png" alt=""><figcaption><p>L'espace d'échange avec le demandeur</p></figcaption></figure>
 
 Cet espace permet d’assurer la traçabilité, le suivi et la transparence des échanges, tout en évitant les envois non sécurisés par email classique.
+
+{% hint style="warning" %}
+**Données de santé** : Dastra n'est pas certifié HDS (Hébergeur de Données de Santé). En revanche, notre hébergeur, Microsoft Azure, l'est. Si des documents transmis via l'interface (par le demandeur ou par votre organisation) contiennent des données de santé, assurez-vous que cet usage est compatible avec vos propres obligations en la matière.
+{% endhint %}

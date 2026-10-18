@@ -59,6 +59,10 @@ Ces fichiers pourront ensuite être joints lors de la réponse.
 
 <figure><img src="../../.gitbook/assets/dsr-traitement-liste-actions.png" alt=""><figcaption><p>Ajout de fichiers à la demande</p></figcaption></figure>
 
+{% hint style="warning" %}
+**Données de santé** : Dastra n'est pas certifié HDS (Hébergeur de Données de Santé). En revanche, notre hébergeur, Microsoft Azure, l'est. Tenez-en compte avant de transmettre, via l'interface, des documents contenant des données de santé.
+{% endhint %}
+
 ***
 
 #### Traitements de données liés
