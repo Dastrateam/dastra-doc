@@ -15,6 +15,10 @@ Chaque utilisateur peut être associé à 1 ou plusieurs rôles. Les rôles sont
 * Si vous êtes propriétaire, vous pouvez utiliser[ cette interface de gestion de comptes](https://app.dastra.eu/general-settings/users)
 * Si vous avez le rôle d'administrateur d'espace de travail, vous pouvez gérer les rôles et permissions des utilisateurs appartenant à votre espace de travail en utilisant [cette interface](https://app.dastra.eu/workspace/573/settings/users).
 
+{% hint style="info" %}
+Un rôle ne suffit pas toujours pour voir un élément : l'accès aux **unités organisationnelles** et les **équipes** de l'utilisateur comptent aussi. Voir [Pourquoi un utilisateur ne voit-il pas un traitement ?](../../getting-started/setup/pourquoi-un-utilisateur-ne-voit-pas-un-element.md)
+{% endhint %}
+
 ## Créez vos propres rôles
 
 Pour créez vos propres rôles associés aux permissions, rendez-vous sur [cette page](https://app.dastra.eu/general-settings/roles) :

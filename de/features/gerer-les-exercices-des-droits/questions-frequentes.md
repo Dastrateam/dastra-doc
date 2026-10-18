@@ -20,6 +20,22 @@ Nach Ablauf dieses Zeitraums wird der Zugang automatisch widerrufen.<br>
 
 ***
 
+### Wie funktioniert die Überprüfung der E-Mail-Adresse des Antragstellers?
+
+Wird eine Anfrage über das öffentliche Formular eingereicht, erhält der Antragsteller eine Bestätigungs-E-Mail mit einem **Bestätigungslink** und einem **6-stelligen Code**. Die Anfrage wird erst berücksichtigt, wenn die Adresse bestätigt wurde.
+
+* Link und Code sind **24 Stunden** gültig. Diese Dauer ist nicht konfigurierbar.
+* Nach mehreren falschen Code-Eingaben (4) werden weitere Versuche **30 Minuten lang gesperrt**.
+* Wird die Frist überschritten, muss der Antragsteller eine neue Anfrage einreichen.
+
+### Warum kann ein Antragsteller keine neue Anfrage einreichen?
+
+Derselbe Antragsteller (dieselbe E-Mail-Adresse) kann im selben Arbeitsbereich keine zweite Anfrage **desselben Typs** einreichen, solange die vorherige, vor weniger als 24 Stunden eingereichte Anfrage nicht abgeschlossen ist.
+
+### Wie lang darf eine Nachricht in einer Anfrage höchstens sein?
+
+Nachrichten an den Antragsteller, die Nachricht im öffentlichen Formular und Abschlussgründe sind auf **3.000 Zeichen** begrenzt. Eine Nachricht kann bis zu **20 Anhänge** enthalten.
+
 ### Setzt die Seite zur Erfassung von Anfragen Cookies? Ist ein Einwilligungsbanner erforderlich?
 
 Nein. Die Dastra-Widget-Seite (URL vom Typ `https://api.dastra.eu/v1/client/data-subject-request/page?id=…`) setzt **nur einen einzigen Cookie**: `acaAffinity`.

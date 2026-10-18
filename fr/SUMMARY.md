@@ -31,6 +31,7 @@
   * [Ajouter une autorité chef de file](getting-started/setup/ajouter-une-autorite-chef-de-file.md)
   * [Inviter des utilisateurs](getting-started/setup/inviter-utilisateurs.md)
   * [Gérer les rôles et permissions](getting-started/setup/gerez-les-roles-et-permissions.md)
+  * [Pourquoi un utilisateur ne voit-il pas un traitement ?](getting-started/setup/pourquoi-un-utilisateur-ne-voit-pas-un-element.md)
   * [Créer puis affecter des équipes](getting-started/setup/creer-puis-affectez-des-equipes.md)
   * [Questions fréquentes](getting-started/setup/questions-frequentes.md)
   * [Paramétrer votre profil utilisateur](getting-started/setup/parametrer-votre-profil-utilisateur.md)

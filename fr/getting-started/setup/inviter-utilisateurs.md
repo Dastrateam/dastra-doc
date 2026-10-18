@@ -46,6 +46,10 @@ Il existe plusieurs rôles proposés par défaut dans Dastra, représentant des 
 * **Lecteur**: peuvent uniquement visiter les espaces publiés dans l'organisation. Ils ne peuvent pas éditer et ne peuvent pas voir les modifications qui ne sont pas encore publiées.
 {% endhint %}
 
+{% hint style="info" %}
+**Propriétaire de l'organisation, DPO : ce ne sont pas des rôles.** Pour donner à un utilisateur déjà invité le statut de **propriétaire** de l'organisation, voir [Comment ajouter un propriétaire d'organisation ?](questions-frequentes.md#comment-ajouter-un-proprietaire-dorganisation). Pour **changer de DPO**, voir [Comment changer de DPO ?](questions-frequentes.md#comment-changer-de-dpo).
+{% endhint %}
+
 ## Importer une grande liste d'utilisateurs
 
 Si vous souhaitez importer une grande liste d'utilisateurs (minimum 50 utilisateurs), vous pouvez demander l'import d'une grande liste d'utilisateurs dans la plateforme. Pour cela il faut passer par les équipes de Dastra.

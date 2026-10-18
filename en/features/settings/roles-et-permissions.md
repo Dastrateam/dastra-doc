@@ -13,6 +13,10 @@ Each user can be associated with 1 or more roles. The roles are themselves assoc
 * If you are an owner, you can use [this account management interface](https://app.dastra.eu/general-settings/users?q=\&page=1\&size=20)
 * If you have the role of entity administrator, you can manage the roles and permissions of users belonging to your entity using [this interface](https://app.dastra.eu/general-settings/roles).
 
+{% hint style="info" %}
+A role is not always enough to see an item: access to **organisational units** and the user's **teams** also matter. See [Why can't a user see a processing activity?](../../commencer/commencer/why-a-user-cannot-see-an-item.md)
+{% endhint %}
+
 ## Create your own roles
 
 To create your own roles associated with permissions, go to [this page](https://app.dastra.eu/general-settings/roles).&#x20;

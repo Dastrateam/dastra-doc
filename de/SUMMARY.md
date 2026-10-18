@@ -30,6 +30,7 @@
   * [Eine federführende Aufsichtsbehörde hinzufügen](getting-started/setup/ajouter-une-autorite-chef-de-file.md)
   * [Nutzer einladen](getting-started/setup/inviter-utilisateurs.md)
   * [Rollen und Berechtigungen verwalten](getting-started/setup/gerez-les-roles-et-permissions.md)
+  * [Warum sieht ein Nutzer eine Verarbeitung nicht?](getting-started/setup/warum-sieht-ein-nutzer-eine-verarbeitung-nicht.md)
   * [Teams erstellen und zuweisen](getting-started/setup/creer-puis-affectez-des-equipes.md)
   * [Häufig gestellte Fragen](getting-started/setup/questions-frequentes.md)
   * [Ihr Nutzerprofil konfigurieren](getting-started/setup/parametrer-votre-profil-utilisateur.md)

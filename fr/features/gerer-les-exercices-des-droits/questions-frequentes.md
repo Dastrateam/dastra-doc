@@ -16,6 +16,22 @@ Une fois la demande clôturée, le demandeur conserve un accès à son espace s�
 
 Cet accès lui permet également de délivrer un message au gestionnaire de la demande via l'interface de conversation.
 
+### Comment fonctionne la vérification de l'adresse e-mail du demandeur ?
+
+Lorsqu'une demande est déposée depuis le formulaire public, le demandeur reçoit un e-mail de confirmation contenant un **lien de validation** et un **code à 6 chiffres**. La demande n'est prise en compte qu'une fois l'adresse validée.
+
+* Le lien et le code sont valables **24 heures**. Cette durée n'est pas paramétrable.
+* Après plusieurs saisies de code incorrectes (4), les nouvelles tentatives sont **bloquées pendant 30 minutes**.
+* Si le délai est dépassé, le demandeur doit déposer une nouvelle demande.
+
+### Pourquoi un demandeur ne peut-il pas déposer une nouvelle demande ?
+
+Un même demandeur (même adresse e-mail) ne peut pas déposer une deuxième demande **du même type** dans le même espace de travail tant que la précédente, déposée il y a moins de 24 heures, n'est pas clôturée.
+
+### Quelle est la longueur maximale d'un message dans une demande ?
+
+Les messages échangés avec le demandeur, le message du formulaire public et les motifs de clôture sont limités à **3 000 caractères**. Un message peut contenir jusqu'à **20 pièces jointes**.
+
 Au-delà de cette période, l'accès est révoqué automatiquement.<br>
 
 ***

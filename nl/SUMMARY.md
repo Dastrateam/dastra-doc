@@ -28,6 +28,7 @@
   * [Een leidende autoriteit toevoegen](commencer/commencer/ajouter-une-autorite-chef-de-file.md)
   * [Gebruikers uitnodigen](commencer/commencer/inviter-utilisateurs.md)
   * [Beheer rollen en rechten](commencer/commencer/gerez-les-roles-et-permissions.md)
+  * [Waarom ziet een gebruiker een verwerking niet?](commencer/commencer/waarom-ziet-een-gebruiker-een-verwerking-niet.md)
   * [Teams maken en toewijzen](commencer/commencer/creer-puis-affectez-des-equipes.md)
   * [Veelgestelde vragen](commencer/commencer/questions-frequentes.md)
 * [Handleiding](commencer/tutoriel/README.md)

@@ -29,6 +29,7 @@
   * [Add a lead authority](commencer/commencer/add-a-lead-authority.md)
   * [Invite users](commencer/commencer/invite-users.md)
   * [Managing roles and permissions](commencer/commencer/managing-roles-and-permissions.md)
+  * [Why can't a user see a processing activity?](commencer/commencer/why-a-user-cannot-see-an-item.md)
   * [Create and assign teams](commencer/commencer/create-and-assign-teams.md)
   * [Frequently asked questions](commencer/commencer/frequently-asked-questions.md)
 * [Tutorial](commencer/tutorial/README.md)
