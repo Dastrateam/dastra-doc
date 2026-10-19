@@ -75,7 +75,7 @@ Voici les **différents types d'actions** que vous pouvez déclencher :
 * Création automatique d'une tâche
 
 * Envoi d'une notification dans un canal Microsoft Teams (si l'intégration Microsoft Teams est installée)
-
+* Envoi d'une requête HTTP vers une plateforme externe (si l'intégration HTTP / Custom API est activée)
 
 
 Pour les demandes d'exercices de droit, des actions supplémentaires sont disponibles :
@@ -137,6 +137,30 @@ Le titre et le message acceptent les variables personnalisées de l'objet décle
 
 {% hint style="info" %}
 L'action n'apparaît dans la liste des actions que si l'intégration Microsoft Teams est installée et activée. Si l'intégration est désinstallée ou désactivée, le formulaire de l'action affiche un avertissement : l'action échoue tant que l'intégration n'est pas configurée.
+{% endhint %}
+
+### Envoyer une requête HTTP
+
+L'action **« Envoyer une requête HTTP »** appelle l'API d'une plateforme externe au déclenchement de la règle : outil de ticketing, ITSM, service interne, hub d'automatisation. Elle sert lorsqu'aucun connecteur natif n'existe pour votre outil.
+
+**Prérequis** : l'intégration [HTTP / Custom API](../integrations/custom-http.md) est activée dans **Paramètres > Intégrations**, avec une connexion pour la plateforme cible (clé d'API, identifiants Basic ou OAuth 2.0). Ajouter ou modifier cette action demande la permission **Intégrations** sur l'espace de travail.
+
+Renseignez les champs suivants :
+
+* **Méthode** (GET, POST, PUT, PATCH ou DELETE) et **URL** absolue (`https://…`). L'hôte est fixe ; le chemin et les paramètres peuvent contenir des variables.
+* Onglet **Authentification** : la connexion à utiliser, ou **Sans authentification** pour un point d'accès public. Les identifiants restent sur la connexion, jamais dans la règle.
+* Onglet **En-têtes** : jusqu'à 20 en-têtes, dont les valeurs acceptent des variables.
+* Onglet **Corps** (POST, PUT et PATCH) : un corps **JSON** ou **XML** rédigé comme un modèle.
+
+Tapez `{{` dans l'URL, un en-tête ou le corps pour insérer les champs de l'objet déclencheur (voir [Variables personnalisées](#variables-personnalisees)). Le corps rendu doit être un JSON ou un XML bien formé, sinon rien n'est envoyé et l'exécution est journalisée en erreur.
+
+* **Tester la requête** rend la requête avec un objet réel de l'espace de travail. **Aperçu** n'envoie rien ; **Envoyer la requête** fait l'appel réel et affiche la réponse de la cible.
+* **Générer avec l'IA** rédige la requête à partir d'une consigne et du payload attendu par la cible. Seuls les noms et types des champs sont transmis à l'assistant, jamais vos données ni vos identifiants.
+
+<figure><img src="../../.gitbook/assets/custom-http-action.png" alt="Action Envoyer une requête HTTP dans une règle de workflow"><figcaption><p>L'action « Envoyer une requête HTTP »</p></figcaption></figure>
+
+{% hint style="warning" %}
+Désactiver ou désinstaller l'intégration HTTP / Custom API, ou supprimer une connexion, désactive automatiquement les règles qui en dépendent. Réactivez-les une fois la dépendance rétablie. Chaque envoi est tracé dans les journaux de l'intégration.
 {% endhint %}
 
 ### Variables personnalisées
