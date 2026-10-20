@@ -33,33 +33,31 @@ Merging compliance controls and tests is done from the library or the project of
 
 ## How do I merge elements?
 
-Simply select the items you wish to merge:
+1. In the list, select the elements to merge.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image-416-1.png" alt=""><figcaption><p><br></p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image-416-1.png" alt="Two elements selected in a list"><figcaption></figcaption></figure></div>
 
-Then click on "Choose a grouped action" and "Merge data":&#x20;
+2. Click **Select a batch action**, then **Merge**.
 
-\
-![](<../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue.png>)
+![Batch actions menu with Merge](<../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue.png>)
 
+3. In the **Merging tool** window, tick the element to keep in the header of its column: it becomes the **Reference version**. The other columns show the **Keep selected fields** badge: those elements are deleted once the merge is confirmed, and only the fields you select in them are carried over to the reference version.
+4. For each field that differs, select the value to keep.
+5. Click **Merge**.
 
+<figure><img src="../../.gitbook/assets/generalites-fusion-tool-differences.png" alt="Merging tool window with the reference version and the differing fields"><figcaption><p>The Merging tool window</p></figcaption></figure>
 
-You will then be taken to a dedicated page that lets you:
+To make choosing the values easier:
 
-Select the main element to be retained after merging.
-
-Choose the fields of the elements to be deleted that you wish to retrieve into the main element.\
-![](<../../.gitbook/assets/image-418.png>)
-
-<figure><img src="../../.gitbook/assets/processing-merge-tool-field-comparison.png" alt=""><figcaption></figcaption></figure>
-
-If fields do not appear on this page, the values of the fields in the retained element are automatically retained.\
-\
-You can then click the "Save" button to launch the merge.
+* each field whose value differs from one element to another is marked **Different**, and a counter shows the number of rows concerned;
+* the table only shows the rows that differ; turn on **View all fields** to show all the comparable fields. Hidden identical fields keep the value of the reference version;
+* the **Select all** button, under a column header, keeps its values on all the rows that differ; **Undo selection** reverts it. An empty value never replaces a filled-in value, and the number of rows updated is shown.
 
 {% hint style="info" %}
-The entities (processing activities, analyses, etc.) associated with the deleted elements are automatically re-attached to the retained element, avoiding any loss or disconnection in your record.
+The entities (processing activities, analyses, etc.) associated with the deleted elements are automatically re-attached to the reference version, avoiding any loss or disconnection in your record. The **Linked objects kept** section of the window shows how many there are.
 {% endhint %}
+
+When an object is updated from the answers to a questionnaire, the same window opens with a **Questionnaire’s responses** column. The existing object always remains the reference version: it keeps its identifier, its history and its links.
 
 ## Data quality tool — automatic duplicate detection
 

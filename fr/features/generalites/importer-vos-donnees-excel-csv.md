@@ -114,6 +114,10 @@ Dans ce cas, il faut sélectionner la case "Mettre à jour à les données exist
 
 En cliquant sur le bouton "Ecraser les données des lignes qui matchent", les données correspondantes seront remplacées par les données de l'import.
 
+{% hint style="info" %}
+Pour les **actifs**, la mise à jour porte aussi sur les **champs personnalisés**, quel que soit leur type. Comme pour les colonnes natives, une cellule vide laisse la valeur enregistrée inchangée, et une liste à réponses multiples remplace intégralement la liste existante. En cas de valeur refusée, l'import s'interrompt sans rien modifier et indique la ligne en cause.
+{% endhint %}
+
 #### Envoi du fichier
 
 Envoyez le fichier en cliquant dans la zone

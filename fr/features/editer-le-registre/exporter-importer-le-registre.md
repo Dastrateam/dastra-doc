@@ -14,6 +14,8 @@ Pour exporter l'ensemble du registre, il vous suffit de vous rendre dans le modu
 
 Choisissez ensuite le format d'export (PDF, Word, HTML, CSV, Excel, JSON ou Markdown) ainsi que le type d'export désiré (complet ou format article 30), et cliquez sur "Télécharger le fichier". Ca y est, votre registre est exporté !
 
+Pour un registre volumineux, l'export JSON est préparé en arrière-plan : vous pouvez continuer à travailler, une notification vous informe de son avancement et le fichier se télécharge dès qu'il est prêt.
+
 ### Format article 30/CNIL
 
 Le format dit article 30 correspond à ce qui est exigé par le RGPD. L'export prendra en compte les champs obligatoires au sens du RGPD. En effet, le RGPD oblige à la création du registre des activités de traitement. Les informations contenues sont :

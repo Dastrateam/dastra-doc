@@ -38,8 +38,13 @@ Quickly generate a processing activity in the format expected by Dastra from a s
 
 1. Go to the editing page of a processing activity
 2. In section **11. Documentation**, click **Generate a privacy notice**
-3. Choose the desired format — you can customise the instructions by selecting **Custom**
-4. Click **Generate**, then copy or insert the text into your documentation
+3. Choose the desired format (you can customise the instructions by selecting **Custom**) and the **Notice language**; the interface language is offered by default
+4. Click **Generate**: the preview lets you copy the text of each tab, or click **Export** to get a PDF, Word, HTML or Markdown file
+5. In the **Export information notice** window, the **Add this file to the attachments of this data processing** option, enabled by default, adds the exported file to the attachments of the processing activity; each export creates a new attachment
+
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Privacy notice preview with the Export action"><figcaption><p>Exporting the AI-generated privacy notice</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Export information notice window with the option to add the file to the attachments"><figcaption><p>Adding the exported notice to the attachments of the processing activity</p></figcaption></figure>
 
 #### Generate a compliance analysis for a processing activity
 

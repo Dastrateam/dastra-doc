@@ -85,6 +85,8 @@ Le bouton **« Valider le questionnaire »** n’est actif que lorsque **tous le
 
 La réponse passe alors au statut **« Validé »** avec sa date de publication, et vous êtes redirigé vers son rapport. Vous pouvez ensuite [exporter le rapport](exporter-un-rapport.md), générer un plan d’actions ou fusionner les réponses avec l’objet lié (voir [Piloter les questionnaires](piloter-les-questionnaires.md)).
 
+À la validation, chaque répondant, interne ou externe, reçoit un e-mail de notification qui précise le questionnaire, l'espace de travail et la date de validation, avec un lien vers son écran de fin. Sur cet écran, l'action **Exporter en PDF** lui permet de télécharger ses questions et ses réponses, sans compte Dastra. L'export n'est ouvert qu'une fois le questionnaire validé, et chaque répondant n'exporte que le questionnaire auquel il a répondu. Pour valider sans notifier, décochez l'option de notification de la fenêtre de validation.
+
 ## Demander une révision
 
 L’action **« Demander révision »** renvoie le questionnaire aux répondants :

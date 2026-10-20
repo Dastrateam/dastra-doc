@@ -28,6 +28,15 @@ For more information on how to implement a rights exercise widget on your websit
 
 It is now possible to define **conditional display rules** on the fields of your DSR widget template: a field appears only if the answer to a previous question meets a defined condition.
 
+The operators offered depend on the field type, as in workflow rules:
+
+* comparisons (less than, greater than and their inclusive variants) for numbers and dates;
+* "is in" and "is not in" for drop-down lists and radio buttons;
+* "contains all", "excludes all", "is empty" and "is not empty" for checkboxes;
+* presence or absence of a value for optional fields.
+
+The form preview applies these rules.
+
 These rules are interpreted dynamically on the respondent side — the form adjusts in real time as answers are entered.
 
 This allows you to  :

@@ -27,7 +27,7 @@ Pour les questionnaires de type **PIA/DPIA**, il est désormais possible de lanc
 Deux possibilités pour soumettre une campagne de questionnaire :
 
 1. Par mail : renseignez le nom de la campagne et les répondants, invitez les répondants internes comme externes et ensuite attendez les réponses. Ceux-ci recevront un mail contenant un lien vers un espace en ligne où ils pourront renseigner leurs réponses.
-2. Via un lien de partage : n'importe quelle personne disposant du lien de partage pourra accéder et devenir répondant du questionnaire ; à chaque accès un questionnaire sera généré. Le lien de partage reste disponible jusqu'à sa désactivation.
+2. Via un lien de partage : n'importe quelle personne disposant du lien de partage pourra accéder et devenir répondant du questionnaire ; à chaque accès un questionnaire sera généré. Le lien de partage reste disponible jusqu'à sa désactivation. Lorsque l'adresse e-mail saisie par le répondant correspond à un compte Dastra, elle est reprise automatiquement à l'étape de connexion, et le répondant est orienté directement vers le fournisseur d'identité de son organisation si le SSO est en place.
 
 Il est possible de relancer les personnes qui n'ont pas répondu au questionnaire.
 
@@ -41,6 +41,8 @@ Lors de la planification, vous choisissez entre deux modes de réponse :
 ### Réponse assistée par IA
 
 Dans un questionnaire en cours de réponse, l'**assistant IA** peut vous aider à renseigner les questions automatiquement. En cliquant sur **"Réponse assistée par IA"**, vous pouvez fournir des documents en contexte (notes de projet, politique de sécurité, DPA, analyse existante, etc.) : l'IA analyse ces documents et propose des réponses pour chaque question, que vous pouvez ensuite relire, ajuster et valider avant de soumettre.
+
+La fenêtre propose un sélecteur de langue de génération : les réponses sont rédigées dans la langue choisie, indépendamment de la langue de l'interface, et ce choix est mémorisé d'une génération à la suivante.
 
 Cette fonctionnalité est particulièrement utile pour les questionnaires longs ou complexes comme les PIA, TIA ou LIA, lorsque vous disposez déjà d'une documentation existante.
 

@@ -80,7 +80,7 @@ Vous pouvez également y accéder directement depuis la vue d'édition de l'él�
 
 <figure><img src="../.gitbook/assets/revue-fraicheur-fiche-badge.png" alt=""><figcaption><p>L'icône fraicheur à cliquer pour accéder à la revue d'un élément.</p></figcaption></figure>
 
-Vous accéderez alors à la fenêtre de passage en revue de l'élément. A noter qu'il est possible de consulter les anciennes revues depuis cette fenêtre.
+Vous accéderez alors à la fenêtre de passage en revue de l'élément. A noter qu'il est possible de consulter les anciennes revues depuis cette fenêtre. L'onglet « Anciennes revues » propose aussi le bouton **Supprimer toutes les revues**, qui efface l'historique des revues de l'élément ; une confirmation en détaille les conséquences, car l'action est irréversible.
 
 <figure><img src="../.gitbook/assets/revue-fraicheur-modal-passer-en-revue.png" alt=""><figcaption><p>La fenêtre de passage en revue d'un élément</p></figcaption></figure>
 

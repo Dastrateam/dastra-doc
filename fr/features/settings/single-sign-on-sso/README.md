@@ -75,7 +75,7 @@ Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :<br>
 
 <figure><img src="../../../.gitbook/assets/sso-config-sample.png" alt=""><figcaption></figcaption></figure>
 
-Dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra et un mail de notification vous sera envoyé quelques heures plus tard.
+Dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra. Les propriétaires de l'organisation reçoivent alors un e-mail qui indique le nom et l'adresse du compte créé, la date et l'heure, la connexion SSO à l'origine de la création, l'espace de travail concerné le cas échéant, et un lien vers la page « Utilisateurs », pour attribuer sans délai les droits attendus.
 
 Le provisionnement automatique ne fonctionne que si ils transmettent ce lien à leurs utilisateurs, ils ne peuvent pas le faire en passant par la page de login classique.
 

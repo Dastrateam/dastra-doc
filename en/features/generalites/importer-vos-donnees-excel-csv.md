@@ -118,6 +118,10 @@ In this case, tick the "Update existing data" box and choose the matching field.
 
 By clicking the "Overwrite the data of matching rows" button, the corresponding data is replaced by the data from the import.
 
+{% hint style="info" %}
+For **assets**, the update also covers **custom fields**, whatever their type. As for native columns, an empty cell leaves the stored value unchanged, and a multiple-answer list fully replaces the existing list. If a value is rejected, the import stops without changing anything and states the row concerned.
+{% endhint %}
+
 #### Sending the file
 
 Send the file by clicking in the zone.

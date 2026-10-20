@@ -84,6 +84,8 @@ The **"Validate questionnaire"** button only becomes active once **all required 
 
 The response then moves to the **"Validated"** status with its publication date, and you are redirected to its report. You can then [export the report](export-questionnaire-report.md), generate an action plan or merge the answers into the linked object (see [Monitor questionnaires](monitor-questionnaires.md)).
 
+Upon validation, each respondent, internal or external, receives a notification email stating the questionnaire, the workspace and the validation date, with a link to their end screen. On that screen, the **Export to PDF** action lets them download their questions and answers, without a Dastra account. The export is only available once the questionnaire is validated, and each respondent can only export the questionnaire they answered. To validate without notifying, untick the notification option in the validation window.
+
 ## Request revisions
 
 The **"Request revisions"** action sends the questionnaire back to the respondents:

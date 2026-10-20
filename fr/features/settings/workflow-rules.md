@@ -105,6 +105,12 @@ Pour les règles portant sur les objets des référentiels (**Actif**, **Donnée
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rule-add-task-area.png" alt="Action Ajouter une tâche avec le champ Unité organisationnelle renseigné"><figcaption><p>Choix de l'unité organisationnelle de la tâche créée par la règle</p></figcaption></figure>
 
+### Personne assignée et propriétaire d'une tâche créée
+
+L'action **« Ajouter une tâche »** comporte les champs **Assignée à** et **Propriétaire**. Chacun accepte une variable de l'objet déclencheur (son créateur, son propriétaire, son responsable, etc.) ou un utilisateur nommé. Si la variable n'est pas renseignée sur l'objet, la tâche est tout de même créée.
+
+La variable **Responsable de l'UO** confie la tâche au responsable de l'unité organisationnelle de l'objet déclencheur. Si cette unité n'a pas de responsable, celui de l'unité parente la plus proche est retenu. Si l'objet n'a pas d'unité organisationnelle, l'action utilise l'**Unité organisationnelle par défaut** sélectionnée dans l'action, avec la même règle. Si aucun responsable n'est trouvé, la tâche est créée sans assigné, sans bloquer la règle.
+
 ### Lier un modèle de message à une action
 
 Pour les règles liées aux **demandes d'exercice de droits**, l'action **« Envoyer un message au demandeur »** peut s'appuyer sur un **modèle de message** existant plutôt que sur un contenu saisi manuellement.
