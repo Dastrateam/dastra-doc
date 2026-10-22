@@ -71,3 +71,11 @@ Beta features should never be the sole basis for a compliance decision. They are
 {% content-ref url="ai-assistant-faq.md" %}
 [ai-assistant-faq.md](ai-assistant-faq.md)
 {% endcontent-ref %}
+
+{% content-ref url="agents/README.md" %}
+[README.md](agents/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="serveur-mcp.md" %}
+[serveur-mcp.md](serveur-mcp.md)
+{% endcontent-ref %}
