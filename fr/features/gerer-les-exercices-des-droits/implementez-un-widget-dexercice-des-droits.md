@@ -85,6 +85,15 @@ Vous pouvez choisir les champs qui apparaissent dans le formulaire.
 
 Il est possible de définir des **règles d'affichage conditionnel** directement sur les champs du modèle de widget DSR : un champ apparaît uniquement si la réponse à une question précédente remplit une condition définie.
 
+Les opérateurs proposés dépendent du type du champ, comme dans les règles de workflow :
+
+* comparaisons (inférieur à, supérieur à et leurs variantes inclusives) pour les nombres et les dates ;
+* « appartient à » et « n'appartient pas à » pour les listes déroulantes et les boutons radio ;
+* « contient tous », « exclut tous », « est vide » et « n'est pas vide » pour les cases à cocher ;
+* présence ou absence de valeur pour les champs facultatifs.
+
+L'aperçu du formulaire applique ces règles.
+
 Ces règles sont interprétées dynamiquement côté répondant — le formulaire s'adapte en temps réel à mesure que les réponses sont saisies.
 
 Cela vous permet de :

@@ -156,6 +156,12 @@ For rules on repository objects (**Asset**, **Data field**, **Security measure**
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rule-add-task-area.png" alt="Add a task action with the Organizational unit field filled in"><figcaption><p>Choosing the organizational unit of the task created by the rule</p></figcaption></figure>
 
+#### Assignee and owner of a created task
+
+The **"Add a task"** action includes the **Assigned to** and **Task owner** fields. Each accepts a variable of the trigger object (its creator, its owner, its accountable person, etc.) or a named user. If the variable is not filled in on the object, the task is still created.
+
+The **OU Owner** variable gives the task to the owner of the trigger object's organizational unit. If that unit has no owner, the owner of the closest parent unit is used. If the object has no organizational unit, the action uses the **Default organizational unit** selected in the action, with the same rule. If no owner is found, the task is created without an assignee, without blocking the rule.
+
 #### Linking a message template to an action
 
 For rules linked to **rights requests (DSR)**, the **"Send a message to the requester"** action can rely on an existing **message template** rather than manually entered content.

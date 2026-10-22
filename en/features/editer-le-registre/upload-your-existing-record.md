@@ -12,6 +12,8 @@ To export the entire record, simply go to the "Record of processing activities" 
 
 Then choose the export format (PDF, Word, HTML, CSV, Excel, JSON or Markdown) as well as the type of export desired (complete or article 30 format), and click on "Download file". That's it, your record is exported!
 
+For a large record, the JSON export is prepared in the background: you can keep working, a notification keeps you informed of its progress and the file downloads as soon as it is ready.
+
 ### Article 30/CNIL format
 
 The so-called article 30 format corresponds to what is required by the GDPR. The export will take into account the mandatory fields according to the GDPR. Indeed, the GDPR requires the creation of the record of processing activities. The information contained is:

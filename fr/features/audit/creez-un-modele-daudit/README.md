@@ -22,6 +22,9 @@ Vous arrivez sur l'interface de sélection des types de modèles :
 
 * En cliquant sur l'onglet "**Questionnaire automatisé**", vous choisirez un modèle de questionnaire prédéfini existant en piochant dans la bibliothèque de Dastra.
 * En cliquant sur "**Questionnaire personnalisé**", vous pouvez construire votre propre modèle de questionnaire.
+* En cliquant sur "**Créer à partir de l'IA**", l'assistant IA génère le modèle à partir de votre description. Vous pouvez joindre des documents avec le bouton **+** (grille d'audit Word, questionnaire de sécurité en PDF, etc.) : l'assistant transpose le questionnaire fourni en sections, questions, types de questions et propositions de réponse. Le type de questionnaire, la langue de génération et les options avancées s'appliquent comme pour toute génération, et vous prévisualisez le résultat avant de créer le modèle.
+
+<figure><img src="../../../.gitbook/assets/audit-create-ai-template-attachments.png" alt="Fenêtre de création d'un modèle de questionnaire avec l'IA et documents joints"><figcaption><p>Créer un modèle de questionnaire avec l'IA à partir d'un document</p></figcaption></figure>
 
 {% hint style="info" %}
 Contrairement aux questionnaires automatisés, les questionnaires personnalisés sont entièrement personnalisables. En fonction des réponses sélectionnées par les répondants, vous serez en mesure de générer automatiquement un plan d'actions ou de cartographier les risques associés au modèle.
@@ -49,6 +52,17 @@ Dans Dastra, il vous est possible de créer votre propre modèle de questionnair
 Construisez le modèle de questionnaire que vous souhaitez et cliquez sur "Enregistrer et continuer".
 
 ![Exemple de modèle de questionnaire personnalisable.](../../../.gitbook/assets/capture-web-6-5-2022-103818-app-dastra-eu.jpeg)
+
+### Règle de calcul du score des questions à choix multiples
+
+Pour une question à choix multiples dont les réponses portent un score, le champ **Règle de calcul du score** détermine le score retenu :
+
+* **Somme des valeurs** (par défaut) : additionne les scores de toutes les réponses sélectionnées ;
+* **Valeur maximale** : retient uniquement le score le plus élevé parmi les réponses sélectionnées. Par exemple, dans une AIPD, le niveau de risque d'une question « Catégories de données » reflète alors la catégorie la plus sensible, et non le cumul des catégories cochées.
+
+Le **Score maximum** de la question s'affiche sous le sélecteur. La règle s'applique au score global, au score en pourcentage et au score par catégories, et elle est enregistrée avec le modèle.
+
+<figure><img src="../../../.gitbook/assets/audit-template-question-scoring-rule.gif" alt="Choix de la règle de calcul du score d'une question à choix multiples"><figcaption><p>Règle de calcul du score d'une question à choix multiples</p></figcaption></figure>
 
 ### Éléments évalués
 
@@ -135,10 +149,14 @@ Si la valeur n’apparaît pas dans le registre, vérifiez les points suivants :
 
 Lorsque vous modifiez un modèle déjà utilisé dans des questionnaires existants, Dastra vous propose deux options :
 
-* **Écraser la version actuelle** : les modifications s'appliquent immédiatement au modèle. Les questionnaires déjà générés ne sont pas affectés, mais les nouvelles planifications utiliseront la version mise à jour.
+* **Écraser la version actuelle** : les modifications remplacent le modèle en place, sans historique de version. Les réponses existantes sont conservées, mais celles portant sur des questions supprimées ou restructurées peuvent ne plus être affichées ni comptabilisées. Avant la validation, un comparatif entre la version enregistrée et vos modifications s'affiche, et vous pouvez encore annuler.
 * **Créer une nouvelle version** : une nouvelle version du modèle est créée. Vous pouvez la laisser en **brouillon** le temps de la préparer, puis la promouvoir en **version principale** lorsqu'elle est prête. Les questionnaires existants continuent d'utiliser l'ancienne version principale jusqu'à ce que vous changiez explicitement de version.
 
 Pour naviguer entre les versions, utilisez le sélecteur de version disponible dans l'interface du modèle. La version marquée comme principale est celle qui sera utilisée pour toutes les nouvelles planifications.
+
+L'action **Comparez les versions** présente deux versions côte à côte. Chaque section et chaque question porte un statut : **Inchangé**, **Modifié**, **Supprimé**, **Ajouté** ou **Déplacé** ; un élément simplement déplacé n'est pas signalé comme supprimé puis ajouté. Un rappel de l'impact sur les réponses déjà collectées accompagne la comparaison.
+
+<figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Comparaison de deux versions d'un modèle de questionnaire"><figcaption><p>Comparer deux versions d'un modèle de questionnaire</p></figcaption></figure>
 
 {% hint style="info" %}
 Le nombre de modèles disponibles dépend de votre souscription. Ce quota est partagé entre tous les espaces de travail de votre organisation. La corbeille des modèles compte dans ce quota — pensez à vider régulièrement les modèles inutilisés pour libérer des emplacements.

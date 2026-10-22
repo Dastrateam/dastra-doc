@@ -1,21 +1,23 @@
 ---
 description: >-
   Dastra est disponible sur Bleu, le cloud souverain opéré en France par
-  Capgemini et Orange : une instance dédiée, isolée de notre plateforme SaaS
+  Orange et Capgemini : une instance dédiée, isolée de notre plateforme SaaS
   standard, dont les données ne quittent pas le périmètre Bleu.
 ---
 
 # Dastra sur Bleu (cloud souverain)
 
-Certaines organisations ne peuvent pas héberger leurs données de conformité sur une infrastructure exposée aux lois extraterritoriales non européennes. Dastra est pour cela également disponible sur **Bleu** : une instance dédiée, distincte de notre plateforme SaaS standard, dont les données ne quittent pas le périmètre Bleu.
+## À qui s'adresse cette offre ?
+
+Certaines organisations ne peuvent pas ou ne souhaitent pas héberger leurs données de conformité sur une infrastructure exposée aux lois extraterritoriales non européennes. Dastra permet de répondre à ces exigences à travers **Bleu** : une instance dédiée, distincte de notre plateforme SaaS standard, dont les données ne quittent pas le périmètre Bleu.
 
 ## Qu'est-ce que Bleu ?
 
-Bleu est une société française détenue par **Capgemini et Orange**, qui distribue Microsoft Azure et Microsoft 365 dans un environnement isolé de l'infrastructure mondiale de Microsoft. Les services sont hébergés dans des datacenters situés en France (Île-de-France et sud de la France) et opérés exclusivement par des équipes françaises. L'offre vise l'État, les collectivités, les établissements de santé, les OIV et les OSE, et apporte une protection juridique contre les lois d'accès extraterritoriales (Cloud Act, FISA).
+Bleu est une société française détenue par **Orange et Capgemini**, qui distribue Microsoft Azure et Microsoft 365 dans un environnement isolé de l'infrastructure mondiale de Microsoft. Les services sont hébergés dans des datacenters situés en France (Île-de-France et sud de la France) et opérés exclusivement par des équipes françaises. L'offre vise l'État, les collectivités, les établissements de santé, les OIV et les OSE, et apporte une protection juridique contre les lois d'accès extraterritoriales (Cloud Act, FISA).
 
 ## Qualification SecNumCloud : où en est-on ?
 
-La qualification **SecNumCloud 3.2** est délivrée par l'ANSSI à l'issue de quatre jalons. Pour son périmètre IaaS, PaaS et CaaS, Bleu a franchi **J0** (avril 2025, dossier accepté) et **J1** (septembre 2025, stratégie d'évaluation acceptée). L'évaluation sur site (**J2**) est en cours ; la décision de qualification (**J3**) n'est pas encore rendue.
+La qualification **SecNumCloud 3.2** est délivrée par l'ANSSI à l'issue de quatre jalons. Pour son périmètre IaaS, PaaS et CaaS, Bleu a franchi **J0** (avril 2025, dossier accepté) et **J1** (novembre 2025, stratégie d'évaluation acceptée). Bleu figure sur la liste des prestataires SecNumCloud en cours de qualification publiée par l'ANSSI. Les étapes suivantes, l'évaluation sur site (**J2**) puis la décision de qualification (**J3**), ne sont pas encore annoncées comme franchies ; Bleu estime finaliser le processus d'ici la fin de l'année 2026.
 
 {% hint style="warning" %}
 Nous ne présentons donc pas Dastra sur Bleu comme une offre « SecNumCloud qualifiée » tant que l'ANSSI n'a pas publié sa décision.
@@ -25,21 +27,21 @@ Nous ne présentons donc pas Dastra sur Bleu comme une offre « SecNumCloud qual
 
 | | Offre standard | Offre Bleu |
 | --- | --- | --- |
-| Application | `app.dastra.eu` | `app-bleu.dastra.eu` |
-| API | `api.dastra.eu` | `api-bleu.dastra.eu` |
-| Authentification | `account.dastra.eu` | `account-bleu.dastra.eu` — annuaire d'utilisateurs, comptes et clés de signature distincts |
-| Provisioning SCIM | `scim.dastra.eu` | `scim-bleu.dastra.eu` |
+| Application | app.dastra.eu | app-bleu.dastra.eu |
+| API | api.dastra.eu | api-bleu.dastra.eu |
+| Authentification | account.dastra.eu | <p>account-bleu.dastra.eu<br>(annuaire d'utilisateurs, comptes et clés de signature distincts)</p> |
+| Provisioning SCIM | scim.dastra.eu | scim-bleu.dastra.eu |
 | Hébergement | Microsoft Azure France (Paris, Marseille) | Bleu France Central (Île-de-France) |
 | Fonctionnalités d'IA | Disponibles | Disponibles, exécutées par **Mistral AI** (société française, hors périmètre Bleu) et non par Azure OpenAI |
 | Recherche plein texte | Disponible | Disponible, index hébergé sur Bleu |
-| Connecteurs (Jira, ServiceNow, LeanIX, DocuSign, Zapier…) et clés d'API | Disponibles | Disponibles |
+| Connecteurs (Jira, ServiceNow, SAP LeanIX, DocuSign, Zapier, etc.) et clés d'API | Disponibles | Disponibles |
 | SSO (SAML, OpenID Connect) | Disponible | Disponible |
 | Contenus éditoriaux dans l'application (actualités, webinaires) | Servis par la plateforme standard | Idem, en lecture seule, sans aucune donnée client |
 | Rythme de mise à jour | Continu | Mêmes versions, déployées après la plateforme standard |
 
 ## Localisation des données et sauvegardes
 
-Toutes les ressources de production (bases de données, fichiers, journaux d'audit, index de recherche, cache, coffre de secrets, supervision) sont hébergées dans la région **Bleu France Central**. Elles ne sont répliquées ni hors de Bleu.
+Toutes les ressources de production (bases de données, fichiers, journaux d'audit, index de recherche, cache, coffre de secrets, supervision) sont hébergées dans la région **Bleu France Central**. Elles ne sont pas répliquées hors de Bleu.
 
 Les seuls flux sortants sont les appels aux services tiers que l'offre standard utilise déjà : Mistral AI pour l'IA (données traitées à la demande) et Brevo (société française) pour l'envoi des e-mails.
 

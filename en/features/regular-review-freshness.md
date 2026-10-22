@@ -66,7 +66,7 @@ Example: I have defined 1 year interval for reviewing data processing activities
 
 You can decide to review an item at any time, without necessarily waiting for the next review date. To do this, click on the cell in the fresh column of an item when you are in a table view. Of course, the functionality must be active for this element and you must be displaying the column in question.
 
-This takes you to the item review window. Note that it is possible to consult old reviews from this window.
+This takes you to the item review window. Note that it is possible to consult old reviews from this window. The "Previous reviews" tab also offers the **Delete all reviews** button, which clears the review history of the item; a confirmation details its consequences, as the action cannot be undone.
 
 <figure><img src="../.gitbook/assets/contracts-dpa-generated-contract.png" alt=""><figcaption><p>The item review window</p></figcaption></figure>
 

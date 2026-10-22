@@ -38,8 +38,13 @@ Générez rapidement un traitement de données au format attendu par Dastra à p
 
 1. Rendez-vous dans la page de modification d'un traitement
 2. Dans la section **11. Documentation**, cliquez sur **Générer une notice d'information**
-3. Choisissez le format souhaité — vous pouvez personnaliser les instructions en sélectionnant **Personnalisée**
-4. Cliquez sur **Générer**, puis copiez ou insérez le texte dans votre documentation
+3. Choisissez le format souhaité (vous pouvez personnaliser les instructions en sélectionnant **Personnalisée**) et la **Langue de la notice** ; la langue de l'interface est proposée par défaut
+4. Cliquez sur **Générer** : l'aperçu permet de copier le texte de chaque onglet, ou de cliquer sur **Exporter** pour obtenir un fichier PDF, Word, HTML ou Markdown
+5. Dans la fenêtre **Exporter la notice d'information**, l'option **Ajouter ce fichier aux pièces jointes du traitement**, activée par défaut, ajoute le fichier exporté aux pièces jointes du traitement ; chaque export crée une nouvelle pièce jointe
+
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Aperçu de la notice d'information avec l'action Exporter"><figcaption><p>Exporter la notice d'information générée par l'IA</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Fenêtre Exporter la notice d'information avec l'option d'ajout aux pièces jointes"><figcaption><p>Ajouter la notice exportée aux pièces jointes du traitement</p></figcaption></figure>
 
 #### Générer une analyse de conformité d'un traitement
 

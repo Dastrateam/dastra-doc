@@ -1,21 +1,23 @@
 ---
 description: >-
   Dastra is available on Bleu, the sovereign cloud operated in France by
-  Capgemini and Orange: a dedicated instance, isolated from our standard SaaS
+  Orange and Capgemini: a dedicated instance, isolated from our standard SaaS
   platform, whose data never leaves the Bleu perimeter.
 ---
 
 # Dastra on Bleu (sovereign cloud)
 
-Some organisations cannot host their compliance data on infrastructure exposed to non-European extraterritorial laws. This is why Dastra is also available on **Bleu**: a dedicated instance, separate from our standard SaaS platform, whose data never leaves the Bleu perimeter.
+## Who is this offering for?
+
+Some organisations cannot or do not wish to host their compliance data on infrastructure exposed to non-European extraterritorial laws. Dastra meets these requirements through **Bleu**: a dedicated instance, separate from our standard SaaS platform, whose data never leaves the Bleu perimeter.
 
 ## What is Bleu?
 
-Bleu is a French company owned by **Capgemini and Orange** that distributes Microsoft Azure and Microsoft 365 in an environment isolated from Microsoft's global infrastructure. The services are hosted in datacenters located in France (Île-de-France and southern France) and operated exclusively by French teams. The offering targets the French State, local authorities, healthcare institutions, operators of vital importance (OIV) and essential service operators (OSE), and provides legal protection against extraterritorial access laws (Cloud Act, FISA).
+Bleu is a French company owned by **Orange and Capgemini** that distributes Microsoft Azure and Microsoft 365 in an environment isolated from Microsoft's global infrastructure. The services are hosted in datacenters located in France (Île-de-France and southern France) and operated exclusively by French teams. The offering targets the French State, local authorities, healthcare institutions, operators of vital importance (OIV) and essential service operators (OSE), and provides legal protection against extraterritorial access laws (Cloud Act, FISA).
 
 ## SecNumCloud qualification: where do things stand?
 
-The **SecNumCloud 3.2** qualification is issued by ANSSI at the end of a four-milestone process. For its IaaS, PaaS and CaaS scope, Bleu has passed **J0** (April 2025, application accepted) and **J1** (September 2025, evaluation strategy accepted). The on-site evaluation (**J2**) is under way; the qualification decision (**J3**) has not been issued yet.
+The **SecNumCloud 3.2** qualification is issued by ANSSI at the end of a four-milestone process. For its IaaS, PaaS and CaaS scope, Bleu has passed **J0** (April 2025, application accepted) and **J1** (November 2025, evaluation strategy accepted). Bleu appears on the list of SecNumCloud providers in the course of qualification published by ANSSI. The next steps, the on-site evaluation (**J2**) and then the qualification decision (**J3**), have not yet been announced as completed; Bleu expects to complete the process by the end of 2026.
 
 {% hint style="warning" %}
 We therefore do not present Dastra on Bleu as a "SecNumCloud qualified" offering until ANSSI has published its decision.
@@ -25,14 +27,14 @@ We therefore do not present Dastra on Bleu as a "SecNumCloud qualified" offering
 
 | | Standard offering | Bleu offering |
 | --- | --- | --- |
-| Application | `app.dastra.eu` | `app-bleu.dastra.eu` |
-| API | `api.dastra.eu` | `api-bleu.dastra.eu` |
-| Authentication | `account.dastra.eu` | `account-bleu.dastra.eu` — separate user directory, accounts and signing keys |
-| SCIM provisioning | `scim.dastra.eu` | `scim-bleu.dastra.eu` |
+| Application | app.dastra.eu | app-bleu.dastra.eu |
+| API | api.dastra.eu | api-bleu.dastra.eu |
+| Authentication | account.dastra.eu | <p>account-bleu.dastra.eu<br>(separate user directory, accounts and signing keys)</p> |
+| SCIM provisioning | scim.dastra.eu | scim-bleu.dastra.eu |
 | Hosting | Microsoft Azure France (Paris, Marseille) | Bleu France Central (Île-de-France) |
 | AI features | Available | Available, run by **Mistral AI** (a French company, outside the Bleu perimeter) rather than Azure OpenAI |
 | Full-text search | Available | Available, index hosted on Bleu |
-| Connectors (Jira, ServiceNow, LeanIX, DocuSign, Zapier…) and API keys | Available | Available |
+| Connectors (Jira, ServiceNow, SAP LeanIX, DocuSign, Zapier, etc.) and API keys | Available | Available |
 | SSO (SAML, OpenID Connect) | Available | Available |
 | Editorial content inside the application (news, webinars) | Served by the standard platform | Same, read-only, with no customer data involved |
 | Release cadence | Continuous | Same versions, deployed after the standard platform |

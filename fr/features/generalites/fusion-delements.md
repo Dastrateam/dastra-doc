@@ -33,29 +33,31 @@ La fusion des contrôles et des tests de conformité s'effectue depuis la biblio
 
 ## Comment fusionner les éléments ?
 
-Il vous suffit de sélectionner les éléments à fusionner :
+1. Dans la liste, sélectionnez les éléments à fusionner.
 
-<div align="left"><figure><img src="../../.gitbook/assets/generalites-bulk-selection-action-menu.png" alt=""><figcaption><p><br></p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/generalites-bulk-selection-action-menu.png" alt="Deux éléments sélectionnés dans une liste"><figcaption></figcaption></figure></div>
 
-Puis de cliquer sur "Choisir une action groupée" et "fusionner les données" :
+2. Cliquez sur **Choisir une action groupée**, puis sur **Fusionner les données**.
 
-\
-![](../../.gitbook/assets/generalites-bulk-action-dropdown.png)
+![Menu des actions groupées avec Fusionner les données](../../.gitbook/assets/generalites-bulk-action-dropdown.png)
 
-Vous accéderez alors à une page dédiée qui vous permettra de :
+3. Dans la fenêtre **Outil de fusion**, cochez dans l'en-tête de sa colonne l'élément à conserver : il devient la **Version de référence**. Les autres colonnes portent le badge **Conserver sélection** : ces éléments sont supprimés une fois la fusion validée, et seuls les champs que vous y sélectionnez sont reportés sur la version de référence.
+4. Pour chaque champ qui diffère, sélectionnez la valeur à conserver.
+5. Cliquez sur **Fusionner**.
 
-Sélectionner l’élément principal à conserver après fusion.
+<figure><img src="../../.gitbook/assets/generalites-fusion-tool-differences.png" alt="Fenêtre Outil de fusion avec la version de référence et les champs différents"><figcaption><p>La fenêtre Outil de fusion</p></figcaption></figure>
 
-Choisir les champs des éléments à supprimer que vous souhaitez récupérer dans l’élément principal.\
-![](../../.gitbook/assets/generalites-fusion-tool-panel.png)
+Pour faciliter le choix des valeurs :
 
-Si des champs n'apparaissent pas sur cette page, ce seront les valeurs des champs de l'élément conservé qui seront automatiquement conservées.\
-\
-Vous pouvez ensuite cliquer sur le bouton "Enregistrer" pour lancer la fusion.
+* chaque champ dont la valeur diffère d'un élément à l'autre porte la mention **Différent**, et un compteur indique le nombre de lignes concernées ;
+* le tableau n'affiche que les lignes qui diffèrent ; activez **Voir tous les champs** pour afficher l'ensemble des champs comparables. Les champs identiques masqués conservent la valeur de la version de référence ;
+* le bouton **Sélectionner tout**, sous l'en-tête d'une colonne, retient ses valeurs sur toutes les lignes qui diffèrent ; **Annuler la sélection** revient en arrière. Une valeur vide ne remplace jamais une valeur renseignée, et le nombre de lignes mises à jour est indiqué.
 
 {% hint style="info" %}
-Les entités (traitements, analyses, etc.) associées aux éléments supprimés seront automatiquement rattachées à l’élément conservé, évitant toute perte ou déconnexion dans votre registre.
+Les entités (traitements, analyses, etc.) associées aux éléments supprimés sont automatiquement rattachées à la version de référence, évitant toute perte ou déconnexion dans votre registre. La section **Objets liés conservés** de la fenêtre en donne le décompte.
 {% endhint %}
+
+Lors de la mise à jour d'un objet depuis les réponses d'un questionnaire, la même fenêtre s'ouvre avec une colonne **Réponses au questionnaire**. L'objet existant reste toujours la version de référence : il conserve son identifiant, son historique et ses rattachements.
 
 ## Outil qualité des données — détection automatique des doublons
 
