@@ -209,7 +209,7 @@
     * [Project implementation](features/compliance/projects/implement.md)
     * [Compliance monitoring](features/compliance/projects/monitoring.md)
     * [Audits](features/compliance/projects/audits.md)
-* [Regular review (freshness)](features/regular-review-freshness.md)
+* [Regular review (freshness)](features/regular-review.md)
 * [Custom Reporting](features/custom-reporting/README.md)
   * [Integration with data analysis tools (BI)](features/custom-reporting/bi-tools.md)
 * [AI Systems](features/ai-systems/README.md)
