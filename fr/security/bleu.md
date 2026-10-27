@@ -1,8 +1,8 @@
 ---
 description: >-
-  Dastra est disponible sur Bleu, le cloud souverain opéré en France par
-  Orange et Capgemini : une instance dédiée, isolée de notre plateforme SaaS
-  standard, dont les données ne quittent pas le périmètre Bleu.
+  Dastra est également disponible sur Bleu : une instance dédiée, isolée de
+  notre plateforme SaaS standard, dont les données ne quittent pas le
+  périmètre Bleu.
 ---
 
 # Dastra sur Bleu (cloud souverain)

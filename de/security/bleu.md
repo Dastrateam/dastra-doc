@@ -1,8 +1,8 @@
 ---
 description: >-
-  Dastra ist auch auf Bleu verfügbar, der von Capgemini und Orange in Frankreich
-  betriebenen souveränen Cloud: eine dedizierte, von unserer Standard-SaaS-
-  Plattform isolierte Instanz, deren Daten den Bleu-Perimeter nicht verlassen.
+  Dastra ist auch auf Bleu verfügbar: eine dedizierte, von unserer
+  Standard-SaaS-Plattform isolierte Instanz, deren Daten den Bleu-Perimeter
+  nicht verlassen.
 ---
 
 # Dastra auf Bleu (souveräne Cloud)

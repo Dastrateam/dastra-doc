@@ -1,8 +1,7 @@
 ---
 description: >-
-  Dastra is available on Bleu, the sovereign cloud operated in France by
-  Orange and Capgemini: a dedicated instance, isolated from our standard SaaS
-  platform, whose data never leaves the Bleu perimeter.
+  Dastra is also available on Bleu: a dedicated instance, isolated from our
+  standard SaaS platform, whose data never leaves the Bleu perimeter.
 ---
 
 # Dastra on Bleu (sovereign cloud)

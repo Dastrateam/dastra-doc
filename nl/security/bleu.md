@@ -1,8 +1,8 @@
 ---
 description: >-
-  Dastra is ook beschikbaar op Bleu, de soevereine cloud die in Frankrijk wordt
-  geëxploiteerd door Capgemini en Orange: een dedicated instantie, geïsoleerd van
-  ons standaard SaaS-platform, waarvan de gegevens de Bleu-perimeter niet verlaten.
+  Dastra is ook beschikbaar op Bleu: een dedicated instantie, geïsoleerd van
+  ons standaard SaaS-platform, waarvan de gegevens de Bleu-perimeter niet
+  verlaten.
 ---
 
 # Dastra op Bleu (soevereine cloud)
