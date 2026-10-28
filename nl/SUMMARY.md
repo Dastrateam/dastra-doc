@@ -2,7 +2,7 @@
 
 * [Inleiding tot Dastra](README.md)
 
-## 🇪🇺 Nuttige herinneringen
+## 🇪🇺 Nuttige herinneringen <a href="#gdpr" id="gdpr"></a>
 
 * [Inleiding tot de AVG](gdpr/introduction.md)
 * [AVG kernbegrippen](gdpr/concepts/README.md)
