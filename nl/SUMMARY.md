@@ -19,7 +19,7 @@
   * [Risicobeoordeling](gdpr/risks/assessment.md)
   * [Risico's verwerker](gdpr/risks/processors.md)
 
-## 👨‍💻 Aan de slag <a href="#commencer" id="commencer"></a>
+## 👨‍💻 Aan de slag <a href="#getting-started" id="getting-started"></a>
 
 * [Opzetten](getting-started/setup/README.md)
   * [Werkruimte aanmaken en instellen](getting-started/setup/workspace.md)
@@ -181,7 +181,7 @@
   * [Berichtsjablonen](features/settings/message-templates.md)
   * [E-mail domeinen](features/settings/email-domains.md)
 
-## 📄 API-documentatie <a href="#api-references" id="api-references"></a>
+## 📄 API-documentatie <a href="#api" id="api"></a>
 
 * [API-configuratie](api/configuration.md)
 * [Authenticatie](api/authentication.md)
@@ -196,7 +196,7 @@
 * [Kwaliteit van onze diensten](security/quality-of-service.md)
 * [Dastra op Bleu (soevereine cloud)](security/bleu.md)
 
-## 🤖 DIVERSEN
+## 🤖 DIVERSEN <a href="#other" id="other"></a>
 
 * [Veelgestelde vragen](other/faq.md)
 * [Bekende problemen](other/known-problems.md)
