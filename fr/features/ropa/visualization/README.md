@@ -6,33 +6,31 @@ description: Apprenez à visualiser les données dans Dastra.
 
 ## Introduction
 
-Dans Dastra, les **données** peuvent être **visualisées** de plusieurs manières :
+Dans Dastra, les **données** de votre registre des traitements peuvent être **visualisées** de plusieurs manières :
 
-* L'**arborescence** organisationnelle des traitements,
-* La **cartographie** des données du registre de traitement,
-* Les **transferts** de données.
+* sous forme de tableau, de cartes ou d'**arborescence** organisée par entités et départements,
+* sous forme de **cartographie** des données du registre,
+* sous forme de carte des **transferts** de données.
 
-## Modifiez la visualisation du Registre
+## Modifier la vue du registre
 
-Pour modifier la manière dont les traitements s'affichent dans votre registre, allez dans le module "Registres" dans le bandeau à gauche de l'écran. Par défaut, les traitements s'affichent en mode tableau. Cliquez sur la **flèche à droite** du bouton "Tableau".
+Pour modifier la manière dont les traitements s'affichent dans votre registre, allez dans le module **Registre des traitements** depuis le menu de gauche. Par défaut, les traitements s'affichent dans la vue **Tableau**. Dans la barre d'outils, cliquez sur la **flèche à droite** du bouton **Tableau** et choisissez une autre vue.
 
-![Module "Registres"](../../../.gitbook/assets/generalites-tile-registres.png)
+<figure><img src="../../../.gitbook/assets/ropa-visualization-1.png" alt="Bouton Tableau et son menu déroulant"><figcaption><p>Les vues disponibles pour le registre</p></figcaption></figure>
 
-![Flèche à droite du bouton "Tableau" & menu déroulant](../../../.gitbook/assets/capture-web-4-5-2022-95947-app-dastra-eu.jpeg)
+Trois vues sont disponibles :
 
-{% hint style="info" %}
-Le premier choix "Tableau" fait référence à la visualisation standard du **registre des traitements**.
-{% endhint %}
-
-Outre la vue tableau, une vue liste et une vue arborescence sont également disponibles.
+* **Tableau** : la vue standard du registre des traitements, sous forme de tableau dont vous pouvez ajuster les colonnes, le tri et les filtres ;
+* **Cartes** : une carte par traitement, avec ses principales informations et ses indicateurs ;
+* **Arborescence** : les traitements organisés par entités et départements.
 
 {% content-ref url="tree.md" %}
 [visualiser-larborescence-des-traitements.md](tree.md)
 {% endcontent-ref %}
 
-## Visualisez la cartographie de votre registre et les transferts
+## Visualiser la cartographie de votre registre et les transferts
 
-La cartographie des données du registre et la carte des transferts sont quant à elles disponibles dans les onglets en haut de votre écran, au dessus de votre liste
+La cartographie des données du registre et la carte des transferts sont disponibles dans les onglets **Cartographie** et **Transferts**, en haut du module **Registre des traitements**, au-dessus de votre liste.
 
 {% content-ref url="data-map.md" %}
 [visualiser-la-cartographie-des-donnees.md](data-map.md)

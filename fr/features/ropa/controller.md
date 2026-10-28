@@ -6,7 +6,7 @@ description: Apprenez à utiliser le registre "Responsable de traitement" de Das
 
 ## Introduction
 
-L’article 30 du RGPD prévoit des obligations spécifiques pour le _registre du responsable de traitement_ de données personnelles et pour le _registre du sous-traitant_. Si votre organisme agit à la fois en tant que sous-traitant et responsable de traitement, votre registre doit donc clairement distinguer les deux catégories d’activités.
+L'article 30 du RGPD prévoit des obligations spécifiques pour le _registre du responsable de traitement_ de données personnelles et pour le _registre du sous-traitant_. Si votre organisme agit à la fois en tant que sous-traitant et en tant que responsable de traitement, votre registre doit donc clairement distinguer les deux catégories d'activités.
 
 **En pratique, dans cette hypothèse, la CNIL vous recommande de tenir 2 registres :**
 
@@ -17,63 +17,77 @@ La suite de cette page traite uniquement du registre "Responsable de traitement"
 
 ## Le registre "Responsable de traitement"
 
-Pour chaque traitement, le registre d'un responsable de traitement indique au minima :
+Pour chaque traitement, le registre d'un responsable de traitement indique au minimum :
 
-1. le cas échéant, **le nom et les coordonnées** du [responsable conjoint du traitement](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article26) mis en œuvre
-2. les **finalités** du traitement, l’objectif en vue duquel vous avez collecté ces données
-3. les catégories **de personnes concernées** (client, prospect, employé, etc.)
-4. les catégories de **données personnelles** (exemples : identité, situation familiale, économique ou financière, données bancaires, données de connexion, donnés de localisation, etc.)
-5. **les catégories de destinataires** auxquels les données à caractère personnel ont été ou seront communiquées, y compris les sous-traitants auxquels vous recourez
-6. les **transferts** de données à caractère personnel vers un pays tiers ou à une organisation internationale et, dans certains cas très particuliers, les garanties prévues pour ces transferts ;
-7. les **délais prévus pour l'effacement** des différentes catégories de données, c’est-à-dire la durée de conservation, ou à défaut les critères permettant de la déterminer
-8. dans la mesure du possible, une **description générale des mesures de sécurité** techniques et organisationnelles que vous mettez en œuvre
+1. le cas échéant, **le nom et les coordonnées** du [responsable conjoint du traitement](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article26)
+2. les **finalités** du traitement, c'est-à-dire l'objectif pour lequel vous avez collecté les données
+3. les catégories de **personnes concernées** (client, prospect, salarié, etc.)
+4. les catégories de **données personnelles** (par exemple : identité, situation familiale, économique ou financière, données bancaires, données de connexion, données de localisation, etc.)
+5. les catégories de **destinataires** auxquels les données personnelles ont été ou seront communiquées, y compris les sous-traitants auxquels vous faites appel
+6. les **transferts** de données personnelles vers un pays tiers ou une organisation internationale et, dans certains cas très particuliers, les garanties prévues pour ces transferts ;
+7. les **délais prévus pour l'effacement** des différentes catégories de données, c'est-à-dire la durée de conservation, ou à défaut les critères permettant de la déterminer
+8. dans la mesure du possible, **une description générale des mesures de sécurité techniques et organisationnelles** que vous mettez en œuvre
 
-![Les différentes sections d'un traitement "responsable de traitement" dans Dastra](../../.gitbook/assets/register-processing-questionnaire-steps.png)
+Dans Dastra, un traitement créé en tant que responsable de traitement est documenté en 12 sections : **Général**, **Parties prenantes**, **Finalités**, **Actifs**, **Données**, **Personnes concernées**, **Droits des personnes**, **Destinataires**, **Mesures**, **Analyse d'impact**, **Documentation** et **Récapitulatif**. Les paragraphes ci-dessous indiquent dans quelle section est documentée chaque information exigée par l'article 30.
 
-### Les acteurs
+<figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Navigation entre les sections d'un traitement en tant que responsable de traitement"><figcaption><p>Les différentes sections d'un traitement "responsable de traitement" dans Dastra</p></figcaption></figure>
 
-* L'identité et les informations de contacts du responsable du traitement
-* L'identité et les informations de contacts du DPO le cas échéant
-* L'identité et les informations de contacts du représentant le cas échéant
-* Le ou les responsables de traitement conjoints, le cas échéant
+## Les acteurs
 
-### Les finalités
+Documentés dans la section **Parties prenantes** :
 
-* Toutes les finalités liées à l'activité impliquant le traitement
+* L'identité et les coordonnées du responsable de traitement&#x20;
+* L'identité et les coordonnées du DPO, le cas échéant&#x20;
+* L'identité et les coordonnées du représentant, le cas échéant&#x20;
+* Le ou les responsables conjoints du traitement, le cas échéant
 
-### La base légale
+## Les finalités
 
-* Respect d'une obligation légale
-* Exécution d'un contrat
-* Intérêt légitime de l'entreprise ou d'un tiers
-* Intérêt public
-* Consentement
+Documentées dans la section **Finalités** :
+
+* Toutes les finalités liées à l'activité qui implique le traitement
+
+## La base légale
+
+Chaque finalité est associée à sa base légale, également dans la section **Finalités** :
+
+* Respect d'une obligation légale&#x20;
+* Exécution d'un contrat&#x20;
+* Intérêt légitime de l'entreprise ou d'un tiers&#x20;
+* Intérêt public&#x20;
+* Consentement&#x20;
 * Sauvegarde des intérêts vitaux de la personne concernée ou d'une autre personne
 
-### L'inventaire des données et des personnes concernées
+## L'inventaire des données et des personnes concernées
 
-* Type de personnes concernées
-* Catégories de données
+Documenté dans les sections **Personnes concernées** et **Données** :
+
+* Types de personnes concernées&#x20;
+* Catégories de données&#x20;
 * Délais de suppression des données ou règle applicable
 
-### Les destinataires et les transferts de données hors EEE
+## Les destinataires et les transferts de données hors EEE
 
-* Identification des destinataires comprenant les destinataires internes (service concerné par le traitement) ; organismes externes (partenaires commerciaux ou institutionnels) ; sous-traitants (hébergeur, fournisseur de solutions) ; personne concernée le cas échéant et responsables conjoints
-* Pour chaque destinataire, identification des transferts en dehors de l'Espace économique européen (EEE) et les outils juridiques utilisés (Règles d'entreprise contraignantes en cas de transferts hors UE avec les filiales, clauses contractuelles types, pays reconnu adéquat...)
+Documentés dans la section **Destinataires** :
 
-### Les mesures de sécurité
+* Identification des destinataires, dont les destinataires internes (service concerné par le traitement), les organismes externes (partenaires commerciaux ou institutionnels), les sous-traitants (hébergeur, fournisseur de solution), la personne concernée le cas échéant et les responsables conjoints&#x20;
+* Pour chaque destinataire, identification des transferts hors de l'Espace économique européen (EEE) et des outils juridiques utilisés (règles d'entreprise contraignantes pour les transferts hors UE avec des filiales, clauses contractuelles types, pays reconnu comme adéquat, etc.)
 
-* Mesures techniques et organisationnelles mises en place pour sécuriser chaque traitement de données
-* Par exemple, chiffrement des données, pseudonymisation, limitation des accès\
-  \
-  <br>
+## Les mesures de sécurité
+
+Documentées dans la section **Mesures** :
+
+* Mesures techniques et organisationnelles mises en place pour sécuriser chaque traitement&#x20;
+* Par exemple, chiffrement des données, pseudonymisation, limitation des accès
+
+***
 
 {% hint style="info" %}
-Il est possible de passer d'un traitement créer en tant que responsable de traitement a un traitement créé en tant que sous-traitant et vise versa.\
-[La procédure est disponible ici](https://doc.dastra.eu/features/ropa/faq#comment-changer-de-type-de-traitement-passer-dun-traitement-creer-en-tant-que-responsable-de-traitem)
+Vous pouvez changer le type d'un traitement (passer d'un traitement créé en tant que responsable de traitement à un traitement créé en tant que sous-traitant, et inversement).\
+[La procédure est disponible ici](https://doc.dastra.eu/features/ropa/faq#comment-changer-le-type-dun-traitement-passer-dun-traitement-cree-en-tant-que-responsable-de-traitem)
 {% endhint %}
 
-## Aller plus loin
+## Pour aller plus loin
 
 {% content-ref url="establish.md" %}
 [gerer-votre-registre.md](establish.md)

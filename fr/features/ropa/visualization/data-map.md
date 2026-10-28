@@ -8,26 +8,31 @@ description: Apprenez à visualiser la cartographie des données dans Dastra.
 
 ## Introduction
 
-Dans Dastra, les données peuvent être visualisées de plusieurs manières. Une d'entre elle est la **cartographie des données du registre** de traitement.
+Dans Dastra, les données peuvent être visualisées de plusieurs manières. L'une d'elles est la **cartographie des données** du registre des traitements.
 
-Cette visualisation permet en particulier d'explorer, analyser et de comprendre les liens entre les données du registre.
+Cette vue permet d'explorer, d'analyser et de comprendre les liens entre les éléments de votre registre : traitements, unités organisationnelles, acteurs, actifs, jeux de données, mesures de sécurité, transferts, etc.
 
 ## Visualiser la cartographie des données du registre
 
-Pour visualiser la cartographie des données du registre, cliquer sur le module "Registres" puis cliquez sur le bouton "**Cartographie**" au dessus de votre liste de traitements.
+Pour visualiser la cartographie de votre registre, allez dans le module **Registre des traitements**, puis cliquez sur l'onglet **Cartographie** au-dessus de votre liste de traitements.
 
-![Module "Registres"](../../../.gitbook/assets/generalites-tile-registres.png)
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Onglet Cartographie du module Registre des traitements"><figcaption><p>Onglet Cartographie au-dessus des traitements</p></figcaption></figure>
 
-![Onglet cartographie au dessus des traitements](../../../.gitbook/assets/capture-web-4-5-2022-101143-app-dastra-eu.jpeg)
+Vous pouvez alors **visualiser la cartographie des données de votre registre**.
 
-Ainsi, vous pourrez **visualiser la cartographie des données du registre**.
+<figure><img src="../../../.gitbook/assets/cartography-graph-node-detail.png" alt="Exemple de cartographie des données du registre"><figcaption><p>Exemple de cartographie</p></figcaption></figure>
 
-![Exemple de cartographie](../../../.gitbook/assets/cartography-graph-node-detail.png)
+La barre d'outils au-dessus de la cartographie permet :
+
+* de zoomer et dézoomer ;
+* de limiter la cartographie à certains traitements, à une unité organisationnelle ou à l'aide de filtres ;
+* de choisir les **Types** d'éléments à afficher ;
+* dans le menu **Actions**, de réinitialiser le zoom, de passer en plein écran, d'imprimer la cartographie et d'activer le **Fond sombre**, la **Légende des noeuds** ou la **Légende des liens**.
+
+Cliquez sur un élément de la cartographie pour afficher ses **Détails du noeud** dans le panneau de droite, avec un bouton **Modifier** pour l'ouvrir.
 
 {% hint style="info" %}
-Une fois la cartographie affichée, il est possible de la modifier en **double cliquant** sur les éléments pour ajouter des filtres.
-
-Une barre de recherche permet également des faire des filtres additionnels.
+Une fois la cartographie affichée, **double-cliquez** sur un élément pour l'ajouter aux **Noeuds filtrés** et centrer la cartographie sur lui. La barre de recherche du panneau **Noeuds filtrés** permet aussi de trouver un élément et de l'ajouter comme filtre. Cliquez sur **Effacer les filtres** pour afficher de nouveau toute la cartographie.
 {% endhint %}
 
 ## Aller plus loin
