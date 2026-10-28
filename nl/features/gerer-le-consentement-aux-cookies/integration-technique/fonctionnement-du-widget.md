@@ -14,8 +14,6 @@ De Dastra-widget maakt het mogelijk om de eerste twee stappen gedeeltelijk autom
 
 De javascript SDK van de widget moet worden aangeroepen op alle pagina's van de site die cookies gebruiken.
 
-![Globaal bewerkingsdiagram cookie-toestemming widget](https://github.com/Dastrateam/dastra-doc-nl/blob/main/.gitbook/assets/cookie-toestemming.png)
-
 ### 1. Bezoek aan de site van de klant
 
 De gebruiker bezoekt de website waar het js codefragment is geïnstalleerd. Om de prestaties en SEO van de webpagina's niet te beïnvloeden, wordt de SDK volledig asynchroon geladen met een cachingperiode van één dag.

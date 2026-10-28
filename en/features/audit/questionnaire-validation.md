@@ -79,10 +79,12 @@ The **"Validate questionnaire"** button only becomes active once **all required 
 
 * the number of validated questions out of the total;
 * the state of the approvals;
-* for a **PIA / DPIA**, the option to **apply the assessment date to the linked processing activity**;
+* for a **PIA / DPIA** linked to a processing activity, the message "The date of the last DPIA of the linked data processing record will be updated.": the processing activity's **Last DPIA Date** is updated automatically upon validation;
 * the option to send a **notification** to the stakeholders.
 
 The response then moves to the **"Validated"** status with its publication date, and you are redirected to its report. You can then [export the report](export-questionnaire-report.md), generate an action plan or merge the answers into the linked object (see [Monitor questionnaires](monitor-questionnaires.md)).
+
+Upon validation, each respondent, internal or external, receives a notification email stating the questionnaire, the workspace and the validation date, with a link to their end screen. On that screen, the **Export to PDF** action lets them download their questions and answers, without a Dastra account. The export is only available once the questionnaire is validated, and each respondent can only export the questionnaire they answered. To validate without notifying, untick the notification option in the validation window.
 
 ## Request revisions
 

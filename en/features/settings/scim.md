@@ -92,7 +92,7 @@ Back in Entra, on your application's provisioning page:
 3. Click **Test Connection** to verify the connection
 4. Click **Save**
 
-If you encounter an error during the connection test, check that the SCIM feature is enabled on your subscription. [Contact support if needed](https://github.com/Dastrateam/dastra-doc-en/blob/main/getting-started/support/make-a-support-request.md)
+If you encounter an error during the connection test, check that the SCIM feature is enabled on your subscription. [Contact support if needed](../../commencer/support/request-support.md)
 
 #### 9. Activate provisioning
 
@@ -166,14 +166,13 @@ If a group is removed in Entra ID:
 
 Currently, Dastra synchronizes:
 
-* Group **name (`displayName`)**
+* for users: login identifier, first and last name, e-mail address, active status, language and postal address (country, city, postal code, region) — see [Which attributes and claims are supported?](#which-attributes-and-claims-are-supported) for the full list;
+* for groups: the **name (`displayName`)**, the group identifier (`externalId`) and the **members**.
 
 Not supported at this stage:
 
 * Mapping to **organizational units**
-* Synchronization of attributes such as:
-  * organization
-  * country
+* The attributes of the enterprise extension (organization, department, employee number, manager…): identity providers send them by default, Dastra accepts them without storing them.
 
 > This could be supported in the future via a specific attribute containing a reference identifier compatible with Dastra.
 
@@ -195,7 +194,7 @@ After SCIM synchronization:
 * SCIM synchronization is limited by:
   * the **number of users included in your subscription**
 * If the quota is exceeded:
-  * The SCIM server returns an **error**
+  * The SCIM server returns a **`403` error** with the `limitExceeded` type
   * Additional users are **not provisioned**
 
 ***
@@ -209,8 +208,10 @@ The Dastra SCIM API exposes the standard SCIM 2.0 endpoints, all served under yo
 | `/v2/Users` | Create, read, update (PATCH) and delete users |
 | `/v2/Groups` | Create, read, update (PATCH) and delete groups (Dastra teams) |
 | `/v2/ServiceProviderConfig` | Declares the capabilities of the SCIM service |
-| `/v2/ResourceTypes` | Lists the resource types (User, Group) and their schema extensions |
+| `/v2/ResourceTypes` | Lists the resource types (User, Group) |
 | `/v2/Schemas` | Attribute-level definition of each supported schema |
+
+Updates go through `PATCH`; replacing a whole resource with `PUT` is not supported. A successful creation (`POST`) returns `201` with a `Location` header and a `meta.location` attribute giving the URL of the new resource.
 
 The three **discovery endpoints** (RFC 7644 §4) are read-only. Identity providers and SCIM connectors (Microsoft Entra ID, Okta, custom connectors…) probe them to build the attribute schema automatically — no manual schema file needed. `/v2/Schemas` describes exactly the attributes Dastra reads and writes: it is the authoritative list, and an attribute absent from it is ignored by the synchronization. `ServiceProviderConfig` also answers on the common aliases `/v2/ServiceProviderConfigs` and `/v2/ServiceProviderConfiguration`, since connectors disagree on its name.
 
@@ -219,9 +220,41 @@ Capabilities declared by `ServiceProviderConfig`, matching the actual behavior o
 * **Supported**: PATCH operations, filtering (see the limitation below).
 * **Not supported**: bulk operations, sorting, etags, password change.
 
+#### Filtering
+
+A filter holds **a single condition**, with the `eq` (equal) or `ne` (not equal) operator, on one of these attributes:
+
+| Resource | Filterable attributes |
+| --- | --- |
+| Users | `userName`, `externalId`, `emails.value` |
+| Groups | `displayName`, `externalId` |
+
+Example: `filter=userName eq "jane.doe@company.com"`. Attribute names are case-insensitive.
+
 {% hint style="info" %}
-Filtering is supported for **equality only**, on `userName` for users and `displayName` for groups (e.g. `filter=userName eq "jane.doe@company.com"`). More complex filter expressions are not supported.
+Dastra never answers a filter it cannot evaluate exactly. Another operator (`co`, `sw`, `gt`…), another attribute, or several conditions combined with `and` / `or` return a `400` error of type `invalidFilter` that names the problem.
 {% endhint %}
+
+#### PATCH operations
+
+`PATCH` accepts the three forms sent by identity providers: an operation with a `path` and a simple value, an operation with a `path` and an object value, and an operation without `path` whose value lists the attributes to change. The `add`, `replace` and `remove` operations are supported.
+
+* **Users** — the attributes listed by `/v2/Schemas` are applied. Attributes Dastra does not store (enterprise extension, phone numbers, title…) are accepted and ignored, so that the default mappings of Microsoft Entra ID and Okta work without changes. `userName` and the e-mail address cannot be removed. Setting `active` to `false` deactivates the user, as described above.
+* **Groups** — `displayName` and `externalId` can be changed. Members can be added (`add`), replaced as a whole (`replace`) or removed (`remove`), either all at once or one by one with the path `members[value eq "<user id>"]`.
+
+A user that does not belong to your organization is reported as not found (`404`).
+
+#### Errors
+
+Errors follow the SCIM format (RFC 7644 §3.12): a JSON body with `status`, `scimType` and a `detail` message that says what was refused.
+
+| Code | When |
+| --- | --- |
+| `400` | Invalid request: missing or malformed value (`invalidValue`), unsupported filter (`invalidFilter`), unknown path (`invalidPath`), attribute that cannot be removed (`mutability`)… |
+| `401` | Missing or invalid SCIM token |
+| `403` | User quota of your subscription reached (`limitExceeded`) |
+| `404` | Resource not found, or not part of your organization |
+| `409` | A user or group with the same identifier already exists (`uniqueness`) |
 
 ***
 
@@ -259,7 +292,7 @@ When a user or group is assigned to the Dastra application in your IdP:
 
 #### Updates
 
-Any profile change in the IdP (name, email, group membership) triggers a **`PATCH /scim/v2/Users/{id}`** request that updates the corresponding account in Dastra.
+Any profile change in the IdP (name, email, language, address) triggers a **`PATCH /scim/v2/Users/{id}`** request that updates the corresponding account in Dastra. A change of group membership triggers a **`PATCH /scim/v2/Groups/{id}`** request that adds or removes the members of the corresponding team.
 
 #### Deprovisioning (deactivation / deletion)
 
@@ -279,18 +312,33 @@ Re-enabling a previously anonymized user creates a **new account** — the histo
 
 #### SCIM attributes synchronized (provisioning)
 
-During synchronization, Dastra reads the following SCIM 2.0 attributes:
+During synchronization, Dastra reads the following SCIM 2.0 attributes. `/v2/Schemas` returns the same list.
 
-| SCIM attribute     | Field in Dastra           | Required                  |
-| ------------------ | ------------------------- | ------------------------- |
-| `userName`         | Email (unique identifier) | ✅ Yes                     |
-| `name.givenName`   | First name                | Recommended               |
-| `name.familyName`  | Last name                 | Recommended               |
-| `displayName`      | Display name              | Recommended               |
-| `emails[0].value`  | Email address             | ✅ Yes                     |
-| `active`           | Active / inactive status  | ✅ Yes                     |
-| `externalId`       | IdP identifier            | Recommended               |
-| `groups[].display` | Team name                 | For group synchronization |
+**Users**
+
+| SCIM attribute | Field in Dastra | Required |
+| --- | --- | --- |
+| `userName` | Login identifier, unique in your organization (usually the e-mail address) | ✅ Yes |
+| `emails` | E-mail address — Dastra keeps one address: the entry flagged `primary`, otherwise the first one | ✅ Yes |
+| `name.givenName` | First name | Recommended |
+| `name.familyName` | Last name | Recommended |
+| `active` | Active / inactive status | ✅ Yes |
+| `locale` | Language (e.g. `en`, `fr-FR`) | Optional |
+| `address` | Country (two-letter code), city, postal code, region — a single address | Optional |
+| `externalId` | Read-only: always returns the same value as `userName`. It can be used in a filter; a value sent by the identity provider is ignored | — |
+| `nickName` | Accepted at creation, never returned | Optional |
+
+**Groups**
+
+| SCIM attribute | Field in Dastra | Required |
+| --- | --- | --- |
+| `displayName` | Team name (30 characters maximum) | ✅ Yes |
+| `externalId` | Group identifier in the identity provider | Optional |
+| `members` | Team members (Dastra user identifiers) | Optional |
+
+{% hint style="info" %}
+Dastra keeps a single provisioning identifier per user, `userName`. Changing a user's `userName` in the identity provider updates it in Dastra; when the account was provisioned with its e-mail address as `userName`, the e-mail address follows the change.
+{% endhint %}
 
 #### SSO claims used at login
 

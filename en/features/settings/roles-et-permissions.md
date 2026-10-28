@@ -13,6 +13,10 @@ Each user can be associated with 1 or more roles. The roles are themselves assoc
 * If you are an owner, you can use [this account management interface](https://app.dastra.eu/general-settings/users?q=\&page=1\&size=20)
 * If you have the role of entity administrator, you can manage the roles and permissions of users belonging to your entity using [this interface](https://app.dastra.eu/general-settings/roles).
 
+{% hint style="info" %}
+A role is not always enough to see an item: access to **organisational units** and the user's **teams** also matter. See [Why can't a user see a processing activity?](../../commencer/commencer/why-a-user-cannot-see-an-item.md)
+{% endhint %}
+
 ## Create your own roles
 
 To create your own roles associated with permissions, go to [this page](https://app.dastra.eu/general-settings/roles).&#x20;
@@ -31,7 +35,9 @@ It is possible to select the boxes associated with permissions
 
 **Read:** Users can view all items in the module.
 
-**Writing:** Allows modification of all items in the module.
+**Write:** Allows modification of all existing items in the module. In modules that offer the **Create** permission, Write does not grant the right to create new items.
+
+**Create:** Allows users to create new items in the module. This permission is independent of the **Write** permission.
 
 **Export:** Permits exporting all items.
 
@@ -42,11 +48,31 @@ It is possible to select the boxes associated with permissions
 
 
 {% hint style="info" %}
-It is not possible to select both “Read/Write own elements” and permissions on all items for the same role in a module. Users can access either only their own items or all items.
+It is not possible to select both “Read/Write own elements” and permissions on all items for the same role in a module, except for the “Create” permission. Users access either only their own items or all items; the “Create” permission additionally lets them create new items.
 {% endhint %}
 
 \
 Once you've created your custom role, you can assign it to any workspace user within your organization.
+
+
+
+### Create permission
+
+The following modules offer a **Create** permission that is separate from the **Write** permission:
+
+* Task management
+* Data processing records
+* Data protection right request
+* Data breach
+* Data mapping and repositories
+* Contracts management
+* AI systems management
+
+In these modules, **Create** can be checked together with **Read** or with **Read/Write own elements**. A role that combines **Read/Write own elements** and **Create** lets the user create new items and edit only the items assigned to them. For a role to edit existing items without creating new ones, check **Write** without checking **Create**.
+
+The default **Administrator** and **Contributor** roles include the **Create** permission in these modules.
+
+<figure><img src="../../.gitbook/assets/settings-roles-create-permission.png" alt="Create permission checked together with the Read/Write own elements permission in the Data breach module"><figcaption><p>Create permission combined with editing own elements</p></figcaption></figure>
 
 ## Clone an existing role
 

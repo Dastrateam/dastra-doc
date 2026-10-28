@@ -16,7 +16,7 @@ No. The models used by Dastra are pre-trained and hosted on Microsoft Azure. You
 
 **Is my workspace data sent to the model without my knowledge?**
 
-No. Dastra only transmits the information strictly necessary for the requested generation: the text you enter, and where applicable the fields of the object you are working on (processing activity, AI system, rights request, etc.). Other records in your workspace, your credentials, and session metadata are never included. For a breakdown by feature, see the How it works page.
+No. Dastra only transmits the information strictly necessary for the requested generation: the text you enter, and where applicable the fields of the object you are working on (processing activity, AI system, rights request, etc.). Other records in your workspace, your credentials, and session metadata are never included. The only exception: when you enable the **Use existing elements** option while generating a processing activity, the labels of existing security measures, assets and data fields are sent so that the assistant can reuse them. For a breakdown by feature, see the How it works page.
 
 ***
 

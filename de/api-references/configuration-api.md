@@ -23,7 +23,7 @@ Mit Dastra ist es möglich, mehrere APIs zu konfigurieren. Die Liste der APIs is
 
 Ein HTTP-Anfragelimit ist auf 500/Min. oder 10.000/10 Min. festgelegt.
 
-Die Sicherheitsoptionen (insbesondere IP-Filterung) gelten nicht für APIs.
+Die Sicherheitsoptionen (insbesondere [IP-Filterung](../features/settings/ip-filterung.md)) gelten nicht für APIs.
 
 ### Bereitstellung benutzerdefinierter Felder in der Dastra-API
 

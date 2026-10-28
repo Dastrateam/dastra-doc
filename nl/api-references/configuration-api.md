@@ -27,7 +27,7 @@ Verschillende API's kunnen worden geconfigureerd met Dastra. De lijst met API's 
 
 Een http-verzoeklimiet is ingesteld op 500/min of 10000/10min.
 
-Beveiligingsopties (met name IP-filtering) zijn niet van toepassing op API's &#x20;
+Beveiligingsopties (met name [IP-filtering](../features/settings/ip-filtering.md)) zijn niet van toepassing op API's &#x20;
 
 ### Blootstelling van aangepaste velden in de Dastra API&#x20;
 

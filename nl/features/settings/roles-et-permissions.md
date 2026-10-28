@@ -12,6 +12,10 @@ Elke gebruiker kan 1 of meer rollen toegewezen krijgen. Rollen zijn zelf geassoc
 * Als je een eigenaar bent, kun je [deze accountbeheerinterface] gebruiken (https://app.dastra.eu/general-settings/users)
 * Als u de rol van entiteitsbeheerder heeft, kunt u de rollen en rechten van gebruikers die bij uw entiteit horen beheren met [deze interface](https://app.dastra.eu/general-settings/roles). &#x20;
 
+{% hint style="info" %}
+Een rol volstaat niet altijd om een item te zien: ook de toegang tot **organisatorische eenheden** en de **teams** van de gebruiker tellen mee. Zie [Waarom ziet een gebruiker een verwerking niet?](../../commencer/commencer/waarom-ziet-een-gebruiker-een-verwerking-niet.md)
+{% endhint %}
+
 ## Uw eigen rollen maken
 
 Ga naar [deze pagina](https://app.dastra.eu/general-settings/roles) om uw eigen rollen met machtigingen te maken:

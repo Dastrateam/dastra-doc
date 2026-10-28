@@ -37,10 +37,12 @@ When scheduling a questionnaire, you choose between two response modes:
 
 Within an active questionnaire, the **AI assistant** can help you fill in answers automatically. By clicking **"AI-assisted response"**, you can provide documents as context (project notes, security policy, DPA, existing analysis, etc.): the AI analyses these documents and suggests answers for each question, which you can then review, adjust and validate before submitting.
 
+The window offers a generation language selector: answers are written in the chosen language, regardless of the interface language, and the choice is remembered from one generation to the next.
+
 This feature is particularly useful for long or complex questionnaires such as DPIAs, TIAs or LIAs, when you already have existing documentation available.
 
 {% hint style="info" %}
-Using the AI-assisted response feature consumes AI credits. See the [AI Assistant](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/generalites/ai-assistant/README.md) page for details on your quota and usage.
+Using the AI-assisted response feature consumes AI credits. See the [AI Assistant](../generalites/ai-assistant/README.md) page for details on your quota and usage.
 {% endhint %}
 
 ## Linking the questionnaire to other objects in Dastra

@@ -109,6 +109,6 @@ You've laid the foundations. To go further:
 [editer-le-registre](../features/editer-le-registre/)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/systemes-dia/README.md)
+{% content-ref url="../features/ai-systems/README.md" %}
+[../features/ai-systems/README.md](../features/ai-systems/README.md)
 {% endcontent-ref %}

@@ -14,8 +14,8 @@ Commencez par créer votre espace de travail :<br>
 
 <figure><img src="../../.gitbook/assets/getting-started-workspace-setup-name-logo.png" alt=""><figcaption></figcaption></figure>
 
-{% content-ref url="espace-de-travail.md" %}
-[espace-de-travail.md](espace-de-travail.md)
+{% content-ref url="workspace.md" %}
+[espace-de-travail.md](workspace.md)
 {% endcontent-ref %}
 
 ***
@@ -24,8 +24,8 @@ Commencez par créer votre espace de travail :<br>
 
 Si vous souhaitez rejoindre un projet existant sur Dastra ou inviter un membre de votre équipe, commencez ici :<br>
 
-{% content-ref url="inviter-utilisateurs.md" %}
-[inviter-utilisateurs.md](inviter-utilisateurs.md)
+{% content-ref url="users.md" %}
+[inviter-utilisateurs.md](users.md)
 {% endcontent-ref %}
 
 ***
@@ -34,8 +34,8 @@ Si vous souhaitez rejoindre un projet existant sur Dastra ou inviter un membre d
 
 Apprenez à gérer les rôles et permissions, ou à créer de nouveaux rôles personnalisés selon votre organisation :<br>
 
-{% content-ref url="gerez-les-roles-et-permissions.md" %}
-[gerez-les-roles-et-permissions.md](gerez-les-roles-et-permissions.md)
+{% content-ref url="roles.md" %}
+[gerez-les-roles-et-permissions.md](roles.md)
 {% endcontent-ref %}
 
 ***
@@ -44,8 +44,8 @@ Apprenez à gérer les rôles et permissions, ou à créer de nouveaux rôles pe
 
 Constituez vos équipes et affectez-les aux bons départements ou unités organisationnelles :<br>
 
-{% content-ref url="creer-puis-affectez-des-equipes.md" %}
-[creer-puis-affectez-des-equipes.md](creer-puis-affectez-des-equipes.md)
+{% content-ref url="teams.md" %}
+[creer-puis-affectez-des-equipes.md](teams.md)
 {% endcontent-ref %}
 
 ***
@@ -55,8 +55,8 @@ Constituez vos équipes et affectez-les aux bons départements ou unités organi
 Ça y est ! Vous êtes prêt à commencer à utiliser Dastra.\
 Vous pouvez explorer librement les fonctionnalités de la plateforme, ou suivre un cas concret à travers le tutoriel suivant :<br>
 
-{% content-ref url="../tutoriel/" %}
-[tutoriel](../tutoriel/)
+{% content-ref url="../tutorial/README.md" %}
+[tutoriel](../tutorial/README.md)
 {% endcontent-ref %}
 
 ***

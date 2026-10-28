@@ -29,6 +29,7 @@
   * [Add a lead authority](commencer/commencer/add-a-lead-authority.md)
   * [Invite users](commencer/commencer/invite-users.md)
   * [Managing roles and permissions](commencer/commencer/managing-roles-and-permissions.md)
+  * [Why can't a user see a processing activity?](commencer/commencer/why-a-user-cannot-see-an-item.md)
   * [Create and assign teams](commencer/commencer/create-and-assign-teams.md)
   * [Frequently asked questions](commencer/commencer/frequently-asked-questions.md)
 * [Tutorial](commencer/tutorial/README.md)
@@ -203,6 +204,7 @@
     * [Frameworks](features/compliance/library/frameworks/README.md)
       * [Dastra import and templates](features/compliance/library/frameworks/import-et-modeles-dastra.md)
       * [Create a custom framework](features/compliance/library/frameworks/create-custom-framework.md)
+      * [Framework versions](features/compliance/library/frameworks/versions-de-framework.md)
     * [Controls](features/compliance/library/controls.md)
     * [Tests](features/compliance/library/tests.md)
     * [Risks](features/compliance/library/risks.md)
@@ -213,7 +215,7 @@
     * [Project implementation](features/compliance/projects/implement.md)
     * [Compliance monitoring](features/compliance/projects/monitoring.md)
     * [Audits](features/compliance/projects/audits.md)
-* [Regular review (freshness)](features/regular-review-freshness.md)
+* [Regular review (freshness)](features/regular-review.md)
 * [Custom Reporting](features/custom-reporting/README.md)
   * [Integration with data analysis tools (BI)](features/custom-reporting/bi-tools.md)
 * [AI Systems](features/ai-systems/README.md)
@@ -230,6 +232,7 @@
   * [SAP LeanIX](features/integrations/sap-leanix.md)
   * [Jira](features/integrations/jira.md)
   * [Microsoft Teams](features/integrations/microsoft-teams.md)
+  * [HTTP / Custom API](features/integrations/custom-http.md)
   * [Integrating Dastra with External Tools](features/integrations/integrating-dastra-with-external-tools.md)
   * [Frequently asked questions](features/integrations/frequently-asked-questions.md)
 * [Advanced configuration](features/settings/README.md)
@@ -241,15 +244,16 @@
     * [ADFS](features/settings/single-sign-on-sso/adfs.md)
     * [Active Directory](features/settings/single-sign-on-sso/active-directory.md)
     * [Okta](features/settings/single-sign-on-sso/okta.md)
-    * [Known problems](features/settings/single-sign-on-sso/known-problems.md)
+    * [Known problems](features/settings/single-sign-on-sso/problemes-connus.md)
   * [SIEM streaming](features/settings/siem-streaming.md)
   * [References](features/settings/references.md)
+  * [IP filtering](features/settings/ip-filtering.md)
   * [API key management](features/settings/api-key-management.md)
   * [Notifications](features/settings/notifications.md)
   * [Workflow stages](features/settings/workflow-stages.md)
   * [Workflow rules](features/settings/workflow-rules.md)
   * [Incoming mail data collection](features/settings/data-collection-mailboxes.md)
-  * [OneDrive/Google Drive integrations](features/settings/integrations-onedrive-google-drive.md)
+  * [OneDrive & SharePoint / Google Drive integrations](features/settings/integrations-onedrive-google-drive.md)
   * [Webhooks](features/settings/webhooks.md)
   * [SMTP configuration](features/settings/configuration-du-smtp/README.md)
     * [Integration of external providers (Office 365 / Gmail)](features/settings/configuration-du-smtp/integration-of-external-providers-office-365-gmail.md)
@@ -262,6 +266,8 @@
 
 ## 📄 API documentation <a href="#api-references" id="api-references"></a>
 
+* [List of API endpoints](api-references/liste-des-endpoints-dapi.md)
+* [API use cases](api-references/api-use-cases.md)
 * [Configuration](api-references/configuration.md)
 * [Authentication](api-references/authentification.md)
 * [API References](https://dastra.readme.io)
@@ -276,6 +282,7 @@
 ***
 
 * [Certifications](certifications.md)
+* [Dastra on Bleu (sovereign cloud)](security/bleu.md)
 
 ## 🤖 Other
 

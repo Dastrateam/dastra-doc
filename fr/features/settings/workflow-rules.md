@@ -7,7 +7,7 @@ description: Intégrez des processus complexe à l'aide des Règles de workflow 
 {% hint style="info" %}
 **Étapes de processus vs règles de workflow**
 
-Les [étapes de processus](etapes-de-processus.md) définissent les statuts que traversent les objets (ex. Nouveau → En cours → Fait). Les **règles de workflow** automatisent des actions lorsque ces étapes ou d'autres événements surviennent. Les deux fonctionnalités sont complémentaires.
+Les [étapes de processus](workflow-stages.md) définissent les statuts que traversent les objets (ex. Nouveau → En cours → Fait). Les **règles de workflow** automatisent des actions lorsque ces étapes ou d'autres événements surviennent. Les deux fonctionnalités sont complémentaires.
 {% endhint %}
 
 ## Le principe de fonctionnement
@@ -74,6 +74,10 @@ Voici les **différents types d'actions** que vous pouvez déclencher :
 * Définition de la personne assignée
 * Création automatique d'une tâche
 
+* Envoi d'une notification dans un canal Microsoft Teams (si l'intégration Microsoft Teams est installée)
+* Envoi d'une requête HTTP vers une plateforme externe (si l'intégration HTTP / Custom API est activée)
+
+
 Pour les demandes d'exercices de droit, des actions supplémentaires sont disponibles :
 
 * Clôturer la demande
@@ -87,6 +91,25 @@ Il est possible de chaîner les conditions. Vous pouvez ajouter plusieurs action
 {% hint style="info" %}
 Exemple : envoyer une notification à plusieurs personnes lors de la création d'une tâche. Pour cela, sélectionner le déclencheur "taches" et selon les conditions de la tache (par exemple, l'ajout d'un tag), ajouter une action "notification"
 {% endhint %}
+
+
+
+### Unité organisationnelle d'une tâche créée
+
+L'action **« Ajouter une tâche »** comporte un champ **Unité organisationnelle** qui détermine l'unité de rattachement de la tâche créée :
+
+* **Par défaut (hérité de l'objet)** : la tâche est rattachée à l'unité organisationnelle de l'objet déclencheur, s'il en a une. C'est la valeur appliquée lorsque le champ reste vide.
+* **Une unité précise** : sélectionnez une unité dans l'arborescence ; la tâche est rattachée à cette unité, quelle que soit l'unité de l'objet déclencheur.
+
+Pour les règles portant sur les objets des référentiels (**Actif**, **Données**, **Mesure de sécurité**, **Acteur**, **Catégorie de personne concernée**), qui n'ont pas d'unité organisationnelle, le champ est obligatoire.
+
+<figure><img src="../../.gitbook/assets/settings-workflow-rule-add-task-area.png" alt="Action Ajouter une tâche avec le champ Unité organisationnelle renseigné"><figcaption><p>Choix de l'unité organisationnelle de la tâche créée par la règle</p></figcaption></figure>
+
+### Personne assignée et propriétaire d'une tâche créée
+
+L'action **« Ajouter une tâche »** comporte les champs **Assignée à** et **Propriétaire**. Chacun accepte une variable de l'objet déclencheur (son créateur, son propriétaire, son responsable, etc.) ou un utilisateur nommé. Si la variable n'est pas renseignée sur l'objet, la tâche est tout de même créée.
+
+La variable **Responsable de l'UO** confie la tâche au responsable de l'unité organisationnelle de l'objet déclencheur. Si cette unité n'a pas de responsable, celui de l'unité parente la plus proche est retenu. Si l'objet n'a pas d'unité organisationnelle, l'action utilise l'**Unité organisationnelle par défaut** sélectionnée dans l'action, avec la même règle. Si aucun responsable n'est trouvé, la tâche est créée sans assigné, sans bloquer la règle.
 
 ### Lier un modèle de message à une action
 
@@ -103,6 +126,48 @@ Dans l'action, cliquez sur **« Sélectionner un modèle »**, puis choisissez u
 * Les règles utilisant un contenu manuel ne sont pas affectées. Vous pouvez repasser d'un modèle lié à un contenu manuel à tout moment en cliquant sur **« Retirer »**.
 
 <figure><img src="../../.gitbook/assets/workflow-action-linked-template.png" alt="Action avec un modèle de message lié et les boutons Changer de modèle et Retirer"><figcaption><p>Une fois lié, le modèle peut être changé ou retiré ; les variables sont substituées à l'exécution</p></figcaption></figure>
+
+
+
+### Envoyer une notification Teams
+
+Lorsque l'[intégration Microsoft Teams](../integrations/microsoft-teams.md) est installée et activée sur l'espace de travail, l'action **« Envoyer une notification Teams »** publie une carte dans le canal Teams relié au webhook. Il n'y a pas de destinataire à choisir.
+
+Renseignez les champs suivants :
+
+* **Titre de la carte** (obligatoire, 150 caractères au maximum).
+* **Message** : texte riche affiché dans la carte.
+* **Inclure un lien vers l'objet dans la carte** : ajoute à la carte un lien direct vers l'objet déclencheur dans Dastra. L'option est activée par défaut.
+
+Le titre et le message acceptent les variables personnalisées de l'objet déclencheur : tapez `{{` pour afficher la liste des variables disponibles (voir [Variables personnalisées](#variables-personnalisees)).
+
+{% hint style="info" %}
+L'action n'apparaît dans la liste des actions que si l'intégration Microsoft Teams est installée et activée. Si l'intégration est désinstallée ou désactivée, le formulaire de l'action affiche un avertissement : l'action échoue tant que l'intégration n'est pas configurée.
+{% endhint %}
+
+### Envoyer une requête HTTP
+
+L'action **« Envoyer une requête HTTP »** appelle l'API d'une plateforme externe au déclenchement de la règle : outil de ticketing, ITSM, service interne, hub d'automatisation. Elle sert lorsqu'aucun connecteur natif n'existe pour votre outil.
+
+**Prérequis** : l'intégration [HTTP / Custom API](../integrations/custom-http.md) est activée dans **Paramètres > Intégrations**, avec une connexion pour la plateforme cible (clé d'API, identifiants Basic ou OAuth 2.0). Ajouter ou modifier cette action demande la permission **Intégrations** sur l'espace de travail.
+
+Renseignez les champs suivants :
+
+* **Méthode** (GET, POST, PUT, PATCH ou DELETE) et **URL** absolue (`https://…`). L'hôte est fixe ; le chemin et les paramètres peuvent contenir des variables.
+* Onglet **Authentification** : la connexion à utiliser, ou **Sans authentification** pour un point d'accès public. Les identifiants restent sur la connexion, jamais dans la règle.
+* Onglet **En-têtes** : jusqu'à 20 en-têtes, dont les valeurs acceptent des variables.
+* Onglet **Corps** (POST, PUT et PATCH) : un corps **JSON** ou **XML** rédigé comme un modèle.
+
+Tapez `{{` dans l'URL, un en-tête ou le corps pour insérer les champs de l'objet déclencheur (voir [Variables personnalisées](#variables-personnalisees)). Le corps rendu doit être un JSON ou un XML bien formé, sinon rien n'est envoyé et l'exécution est journalisée en erreur.
+
+* **Tester la requête** rend la requête avec un objet réel de l'espace de travail. **Aperçu** n'envoie rien ; **Envoyer la requête** fait l'appel réel et affiche la réponse de la cible.
+* **Générer avec l'IA** rédige la requête à partir d'une consigne et du payload attendu par la cible. Seuls les noms et types des champs sont transmis à l'assistant, jamais vos données ni vos identifiants.
+
+<figure><img src="../../.gitbook/assets/custom-http-action.png" alt="Action Envoyer une requête HTTP dans une règle de workflow"><figcaption><p>L'action « Envoyer une requête HTTP »</p></figcaption></figure>
+
+{% hint style="warning" %}
+Désactiver ou désinstaller l'intégration HTTP / Custom API, ou supprimer une connexion, désactive automatiquement les règles qui en dépendent. Réactivez-les une fois la dépendance rétablie. Chaque envoi est tracé dans les journaux de l'intégration.
+{% endhint %}
 
 ### Variables personnalisées
 
@@ -172,4 +237,14 @@ Lors de la création d'une nouvelle règle, choisissez **"Depuis un modèle"** p
 
 **Enregistrer une règle comme modèle**
 
-Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Donnez-lui un nom, une description,
+Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Donnez-lui un nom, une description, puis confirmez. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable par tous les utilisateurs de l'espace de travail.
+
+<figure><img src="../../.gitbook/assets/workflow-rule-save-as-template.png" alt="Dialogue Enregistrer comme modèle avec nom et description"><figcaption><p>Enregistrement d'une règle de workflow comme modèle réutilisable</p></figcaption></figure>
+
+Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
+
+***
+
+## Tutoriel vidéo : les règles de workflow
+
+{% embed url="https://www.youtube-nocookie.com/embed/FqPmGdk2nTI" %}

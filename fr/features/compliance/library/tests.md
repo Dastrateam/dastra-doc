@@ -278,4 +278,17 @@ Lorsqu'un test est lié à un document, un panneau **Tests** apparaît dans la v
 
 Dans le gestionnaire de fichiers, la fiche détail d'un document affiche dans la colonne latérale toutes les entités Dastra auxquelles il est rattaché : traitements, contrats, et tests de conformité.
 
-<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnair</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Fiche document dans le gestionnaire de fichiers avec la section Tests dans la colonne latérale"><figcaption><p>Le gestionnaire de fichiers affiche les tests associés à chaque document dans la colonne de détail</p></figcaption></figure>
+
+Cette traçabilité bidirectionnelle permet d'auditer facilement quels tests s'appuient sur quel document, et de retrouver l'ensemble des preuves documentaires depuis le gestionnaire de fichiers.
+
+***
+
+### Complémentarité des approches
+
+Dastra permet de combiner :
+
+* des **tests manuels** pour les contrôles nécessitant analyse ou jugement humain
+* des **tests automatisés** pour les vérifications objectives et répétitives
+
+👉 Cette complémentarité offre un équilibre entre rigueur, efficacité et pragmatisme.

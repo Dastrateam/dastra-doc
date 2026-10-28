@@ -13,6 +13,10 @@ Jeder Nutzer kann einer oder mehreren Rollen zugeordnet werden. Die Rollen sind 
 * Wenn Sie Inhaber sind, können Sie [diese Kontoverwaltungsoberfläche](https://app.dastra.eu/general-settings/users) verwenden
 * Wenn Sie die Rolle eines Mandanten-Administrators haben, können Sie die Rollen und Berechtigungen der Nutzer Ihres Mandanten über [diese Oberfläche](https://app.dastra.eu/workspace/573/settings/users) verwalten.
 
+{% hint style="info" %}
+Eine Rolle reicht nicht immer aus, um ein Element zu sehen: Auch der Zugriff auf **Organisationseinheiten** und die **Teams** des Nutzers zählen. Siehe [Warum sieht ein Nutzer eine Verarbeitung nicht?](../../getting-started/setup/warum-sieht-ein-nutzer-eine-verarbeitung-nicht.md)
+{% endhint %}
+
 ## Erstellen Sie Ihre eigenen Rollen
 
 Um Ihre eigenen Rollen mit zugehörigen Berechtigungen zu erstellen, gehen Sie auf [diese Seite](https://app.dastra.eu/general-settings/roles):

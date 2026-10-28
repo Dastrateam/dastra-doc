@@ -31,3 +31,7 @@ Si aucun propriétaire n'est désigné, les demandes d'accès ne peuvent pas êt
 ## Filtrage par adresse IP
 
 Cet onglet vous permet également de définir des règles pour limiter l'accès à votre Trust center à certaines plages d'IP. Par défaut, sans ajout de filtrage IP de votre part, votre Trust center sera accessible à toute personne disposant du lien d'accès, sous réserve que le Trust center soit activé.
+
+{% hint style="info" %}
+Ce filtrage est **distinct** du [filtrage IP de l'organisation](../../settings/ip-filtering.md), qui ne s'applique pas au Trust center.
+{% endhint %}

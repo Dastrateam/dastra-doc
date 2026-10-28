@@ -82,7 +82,7 @@ De authenticatie autoriteit is [https://account.dastra.eu](https://account.dastr
 
 ## IP-adres autorisatielijst
 
-Gebruikers kunnen bij het inloggen worden gefilterd op basis van hun IP-adres.
+De toegang tot de organisatie kan worden beperkt tot toegestane IP-adresbereiken. De filtering geldt voor alle gebruikers (beheerders inbegrepen) en alle inlogmethoden (wachtwoord, SSO, passkey, magische link), bij het inloggen en bij elke vernieuwing van het token. Ze geldt niet voor API's, SCIM of SIEM-streaming. Zie de pagina [IP-filtering](../features/settings/ip-filtering.md) voor details.
 
 ## Machtigingslijst e-maildomein
 

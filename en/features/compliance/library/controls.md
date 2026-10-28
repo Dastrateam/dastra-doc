@@ -157,6 +157,10 @@ A control can be associated with:
 * several requirements of the same framework
 * requirements from **different frameworks**
 
+In the **Linked requirements** section of the edit window, requirements are grouped by framework; the version number of the source framework (e.g. _Version 2_) is displayed next to its name.
+
+
+
 👉 This makes it possible:
 
 * to share controls

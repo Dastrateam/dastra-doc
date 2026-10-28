@@ -55,7 +55,7 @@ To notify **several channels**, create one connection per channel (each Workflow
 
 ### Sending notifications from a workflow rule
 
-Once the integration is installed and enabled, the workflow rule designer offers a new action: **Send a Teams notification**.
+Once the integration is installed and enabled, the [workflow rule](../settings/workflow-rules.md) designer offers the **Send a Teams notification** action.
 
 Configure it like the e-mail notification action:
 

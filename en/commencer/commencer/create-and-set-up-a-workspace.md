@@ -44,7 +44,7 @@ It consolidates the indicators of the main modules: record of processing activit
 
 <figure><img src="../../.gitbook/assets/cross-workspace-statistics-dashboard.png" alt="Consolidated cross-workspace statistics dashboard"><figcaption><p>Consolidated indicators of the record of processing activities and rights requests across all workspaces</p></figcaption></figure>
 
-Dynamic filters let you refine the analysis by workspace, by organizational unit and by type. The dashboard can be printed and exported.
+Dynamic filters let you refine the analysis by workspace, by organizational unit and by type. The **"Select a period"** button restricts the indicators to a period: select a predefined period (Today, Current week, Current month, Current year, etc.) or a start date and an end date in the calendar, then click **"Apply"**. When no period is selected, the indicators cover all the data; the **"Reset"** button removes the selected period. The dashboard can be printed and exported.
 
 ## Invite first-time users
 

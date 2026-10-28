@@ -35,11 +35,15 @@ La zone centrale affiche la liste des frameworks disponibles dans votre environn
 * Nombre de frameworks dans votre quota (attention le quotat est commun au compte et non à l'espace de travail)
 * Filtres par statut (brouillon, publié, etc.)
 
+* Numéro de la version actuelle de chaque framework et, pour un framework créé à partir d'un modèle, le badge **Mise à jour disponible** lorsqu'une version plus récente du référentiel source existe (voir [Versions de framework](versions.md))
+
+
+
 Lorsque aucun framework n’est présent, Dastra propose directement :
 
-* [**Importer un framework**](import-et-modeles-dastra.md)
-* [**Créer un framework**](create-custom-framework.md)
+* [**Importer un framework**](import.md)
+* [**Créer un framework**](custom.md)
 
 {% hint style="info" %}
-N'oubliez pas que le quota est partagé entre l'ensemble de l'organisation, et pas seulement l'espace de travail. Soyez attentif à votre utilisation afin d'éviter les limites.
+N'oubliez pas que le quota est partagé entre l'ensemble de l'organisation, et pas seulement l'espace de travail. Soyez attentif à votre utilisation afin d'éviter les limites. Les versions d'un même framework ne sont pas décomptées séparément : créer ou importer une version ne consomme pas de crédit de framework.
 {% endhint %}

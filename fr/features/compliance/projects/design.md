@@ -63,6 +63,12 @@ L’ajout d’un framework permet d’importer :
 
 <figure><img src="../../../.gitbook/assets/compliance-project-add-framework-selection.png" alt=""><figcaption></figcaption></figure>
 
+
+
+Seules les versions publiées d'un framework sont proposées. Lorsque plusieurs versions publiées existent, choisissez la version dans la liste **Version à installer** affichée à côté du nom du framework ; la version actuelle est présélectionnée.
+
+Le projet reste rattaché à la version installée. Lorsqu'elle n'est plus la version actuelle, la carte du framework dans la vue d'ensemble du projet affiche le badge **Mise à jour disponible**. Le passage à une autre version se fait manuellement avec l'action **Mettre à jour la version du framework**, impossible tant qu'un audit est en cours dans le projet (voir [Versions de framework](../library/frameworks/versions.md)).
+
 Il est possible d’ajouter plusieurs frameworks successivement au même projet.
 
 ***

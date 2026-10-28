@@ -13,7 +13,7 @@ All organization owners have the ability to force the use of two-factor authenti
 
 ## Authorization list of IP addresses
 
-Organization's owner are able to secure the application's connection using Ip whitelisting
+Access to the organization can be restricted to allowed IP address ranges. Filtering applies to all users (administrators included) and to every sign-in method (password, SSO, passkey, magic link), at sign-in and at every token renewal. It does not apply to APIs, SCIM or SIEM streaming. For details, see the [IP filtering](../features/settings/ip-filtering.md) page.
 
 ## Secure cloud hosting
 

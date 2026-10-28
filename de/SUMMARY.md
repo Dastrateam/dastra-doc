@@ -30,6 +30,7 @@
   * [Eine federführende Aufsichtsbehörde hinzufügen](getting-started/setup/ajouter-une-autorite-chef-de-file.md)
   * [Nutzer einladen](getting-started/setup/inviter-utilisateurs.md)
   * [Rollen und Berechtigungen verwalten](getting-started/setup/gerez-les-roles-et-permissions.md)
+  * [Warum sieht ein Nutzer eine Verarbeitung nicht?](getting-started/setup/warum-sieht-ein-nutzer-eine-verarbeitung-nicht.md)
   * [Teams erstellen und zuweisen](getting-started/setup/creer-puis-affectez-des-equipes.md)
   * [Häufig gestellte Fragen](getting-started/setup/questions-frequentes.md)
   * [Ihr Nutzerprofil konfigurieren](getting-started/setup/parametrer-votre-profil-utilisateur.md)
@@ -123,6 +124,7 @@
     * [Organigramm](features/trust-center/configuration/org-chart.md)
     * [Kontakte](features/trust-center/configuration/contacts.md)
     * [Sicherheit](features/trust-center/configuration/security.md)
+    * [KI-Systeme](features/trust-center/configuration/ai-systems.md)
     * [Erscheinungsbild und Design](features/trust-center/configuration/design.md)
   * [Ihr Trust Center in der Vorschau anzeigen und teilen](features/trust-center/preview.md)
   * [Verarbeitungs-, Vorfalls-, Asset- oder Vertragsprojekte erfassen](features/trust-center/creation-questionnaires.md)
@@ -239,6 +241,8 @@
     * [Okta](features/settings/single-sign-on-sso/okta.md)
     * [Bekannte Probleme](features/settings/single-sign-on-sso/problemes-connus.md)
   * [SCIM](features/settings/scim.md)
+  * [SIEM-Streaming](features/settings/siem-streaming.md)
+  * [IP-Filterung](features/settings/ip-filterung.md)
   * [API-Schlüssel verwalten](features/settings/gestion-des-cles-dapi.md)
   * [Benachrichtigungen](features/settings/notifications.md)
   * [Prozessschritte](features/settings/etapes-de-processus.md)
@@ -281,6 +285,7 @@
 * [Passkeys](security/passkey.md)
 * [Qualität unserer Dienste](security/qualite-de-nos-services.md)
 * [Zertifizierungen](security/certifications.md)
+* [Dastra auf Bleu (souveräne Cloud)](security/bleu.md)
 
 ## 🤖 VERSCHIEDENES
 

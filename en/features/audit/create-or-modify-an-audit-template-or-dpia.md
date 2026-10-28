@@ -20,6 +20,9 @@ This brings you to the template type selection interface:
 
 * By clicking on the "Automated Questionnaire" tab, you will choose an existing predefined questionnaire template from the Dastra Questionnaire Library.
 * By clicking on "Custom Questionnaire" you can build your own questionnaire template.
+* By clicking on "**Create from AI**", the AI assistant generates the template from your description. You can attach documents with the **+** button (an internal audit grid in Word, a security questionnaire in PDF, etc.): the assistant transposes the questionnaire provided into sections, questions, question types and answer options. The questionnaire type, the generation language and the advanced options apply as for any generation, and you preview the result before creating the template.
+
+<figure><img src="../../.gitbook/assets/audit-create-ai-template-attachments.png" alt="Window for creating a questionnaire template with AI, with attached documents"><figcaption><p>Creating a questionnaire template with AI from a document</p></figcaption></figure>
 
 {% hint style="info" %}
 Unlike automated questionnaires, custom questionnaires are fully customisable. Based on the answers selected by respondents, you will be able to automatically generate an action plan or map the risks associated with the model.
@@ -47,6 +50,17 @@ In Dastra, you can create your own custom questionnaire template. To do this, cl
 Build the questionnaire template you want and click on "Save and Continue".
 
 <figure><img src="../../.gitbook/assets/creation-assessement-template-2.png" alt=""><figcaption></figcaption></figure>
+
+### Scoring calculation rule for multiple-choice questions
+
+For a multiple-choice question whose answers carry a score, the **Scoring calculation rule** field determines the score kept:
+
+* **Sum of values** (default): adds the scores of all selected answers;
+* **Maximum value**: keeps only the highest score among the selected answers. For example, in a DPIA, the risk level of a "Data categories" question then reflects the most sensitive category, not the total of the categories ticked.
+
+The question's **Score max** is shown under the selector. The rule applies to the overall score, the percentage score and the score by category, and it is saved with the template.
+
+<figure><img src="../../.gitbook/assets/audit-template-question-scoring-rule.gif" alt="Choosing the scoring calculation rule of a multiple-choice question"><figcaption><p>Scoring calculation rule of a multiple-choice question</p></figcaption></figure>
 
 ## Items assessed
 
@@ -82,14 +96,52 @@ These question types display a list of objects from Dastra to the respondent: as
 For the list to display correctly, the respondent must have **read access** to the corresponding objects in Dastra. An external respondent without a Dastra account, or without the appropriate permissions, will not be able to see the list.
 {% endhint %}
 
+## Populate custom fields from a questionnaire
+
+You can use a questionnaire to automatically populate custom fields in Dastra registers. Configure the question variable with the `custom_` prefix, followed by the field’s technical name.
+
+{% stepper %}
+{% step %}
+### Configure the template question
+
+In **Questionnaires**, open the relevant template and add the question that should populate the custom field. Choose a question type that is compatible with the field type.
+
+Open the question properties, then enable **Do you want to customize the variable name?**. In **Variable name**, enter `custom_` followed by the field’s technical name.
+
+For a field with the technical name `business_owner`, use:
+
+```
+custom_business_owner
+```
+
+Then save the template changes.
+{% endstep %}
+{% endstepper %}
+
+### Variable syntax
+
+The variable name must follow the `custom_variable_name` format. Use the field’s technical name exactly as written after the prefix.
+
+{% hint style="info" %}
+The custom field does not need to appear under **Select a variable to map**. Enter the full variable name directly.
+{% endhint %}
+
+{% hint style="warning" %}
+The `custom_` prefix is required. For the `business_owner` field, use `custom_business_owner`, not `business_owner`.
+{% endhint %}
+
 ## Template version management
 
 When modifying a template that is already in use, Dastra offers two options:
 
-* **Overwrite the current version**: the changes apply immediately to the template. Existing questionnaires are not affected, but new campaigns will use the updated version.
+* **Overwrite the current version**: the changes replace the template in place, with no version history. Existing answers are kept, but answers to questions that were removed or restructured may no longer be shown or counted. Before you confirm, a comparison between the saved version and your changes is shown, and you can still cancel.
 * **Create a new version**: a new version of the template is created. You can leave it as a **draft** while preparing it, then promote it to **main version** when it is ready. Existing questionnaires continue to use the previous main version until you explicitly switch.
 
 To navigate between versions, use the version selector available in the template interface. The version marked as main is the one used for all new campaigns.
+
+The **Compare versions** action shows two versions side by side. Each section and each question has a status: **Unchanged**, **Modified**, **Removed**, **Added** or **Moved**; an item that was only moved is not reported as removed and then added. A reminder of the impact on the answers already collected comes with the comparison.
+
+<figure><img src="../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Comparison of two versions of a questionnaire template"><figcaption><p>Comparing two versions of a questionnaire template</p></figcaption></figure>
 
 {% hint style="info" %}
 The number of available templates depends on your subscription plan. This quota is shared across all workspaces in your organisation. The template recycle bin counts towards the quota — remember to empty it regularly to free up slots.
@@ -105,18 +157,18 @@ Finally, it is possible to import one of your questionnaire templates, in json f
 [scheduling-an-audit-or-a-pia.md](scheduling-an-audit-or-a-pia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/share-an-audit-report-or-pia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/share-an-audit-report-or-pia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/share-an-audit-report-or-pia.md)
+{% content-ref url="share-an-audit-report-or-pia.md" %}
+[share-an-audit-report-or-pia.md](share-an-audit-report-or-pia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/pia-dpia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/pia-dpia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/pia-dpia.md)
+{% content-ref url="questionnaire-types/pia-dpia.md" %}
+[questionnaire-types/pia-dpia.md](questionnaire-types/pia-dpia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/tia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/tia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/tia.md)
+{% content-ref url="questionnaire-types/tia.md" %}
+[questionnaire-types/tia.md](questionnaire-types/tia.md)
 {% endcontent-ref %}
 
-{% content-ref url="https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/lia.md" %}
-[https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/lia.md](https://github.com/Dastrateam/dastra-doc-en/tree/main/features/audit/lia.md)
+{% content-ref url="questionnaire-types/lia.md" %}
+[questionnaire-types/lia.md](questionnaire-types/lia.md)
 {% endcontent-ref %}
