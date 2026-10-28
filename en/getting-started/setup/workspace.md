@@ -8,11 +8,7 @@ description: Learn how to create your first workspace in Dastra.
 
 ## Log in to Dastra.eu
 
-Start by logging in to [Dastra.eu](https://www.dastra.eu/en). If you don't have an account yet, register and [create a new one](https://app.dastra.eu/signup).
-
-{% hint style="info" %}
-You can get immediate access to Dastra by opening a "Free Trial" account valid for 30 days. If you wish to subscribe to a long-term offer, please [contact us](https://www.dastra.eu/en/contact).
-{% endhint %}
+Start by logging in to [app.dastra.eu](https://app.dastra.eu). If you don't have an account yet, ask an administrator of your organization to invite you. If your organization does not use Dastra yet, [ask for a demo](https://www.dastra.eu/en/contacts/demo).
 
 ## Workspace
 

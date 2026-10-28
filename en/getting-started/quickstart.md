@@ -1,32 +1,36 @@
 ---
 description: >-
-  Create your account, set up your workspace and add your first processing
-  activity in under 5 minutes.
+  Log in, set up your workspace and add your first processing activity.
 ---
 
 # 🚀 Get started in 5 minutes
 
-This guide takes you from zero to your first documented processing activity in the Dastra register. No advanced configuration — just the essentials to get going.
+This guide takes you from your first login to your first documented processing activity in the Dastra record.
 
 ***
 
-## Step 1 — Create your account (1 min)
+## Step 1: get access to Dastra
 
-Go to [https://app.dastra.eu/signup](https://app.dastra.eu/signup) and create an account.
+To use Dastra, your organization needs a subscription.
 
-{% hint style="info" %}
-The free trial lasts 30 days, no credit card required. You have access to all features.
-{% endhint %}
+* If your organization already uses Dastra, ask an administrator to invite you. You will receive an invitation by email.
+* Otherwise, contact the Dastra team through the [demo request form](https://www.dastra.eu/en/contacts/demo).
+
+Then log in at [https://app.dastra.eu](https://app.dastra.eu).
 
 ***
 
-## Step 2 — Create your workspace (1 min)
+## Step 2: create your workspace
 
-A **workspace** is the environment in which you will document your processing activities. In general, one workspace corresponds to one legal entity or one compliance scope.
+A **workspace** is the environment in which you document your processing activities. One workspace usually corresponds to one legal entity or one compliance scope.
 
-1. After logging in, click **"New workspace"**
-2. Give it a name (e.g. _GDPR Compliance – Company X_)
-3. Click **Continue**
+If you are joining an existing workspace, go to step 3. Only account owners can create a workspace.
+
+1. On the workspaces page, click **Create Workspace**.
+2. Enter a name in **Choose a label for your workspace** (for example, the name of the legal entity).
+3. Click **Continue**.
+
+Dastra then opens the users page of the new workspace, where you can add its members.
 
 <figure><img src="../.gitbook/assets/getting-started-workspace-create-form.png" alt="Workspace creation form in Dastra"><figcaption><p>Give your workspace a name</p></figcaption></figure>
 
@@ -36,39 +40,39 @@ A **workspace** is the environment in which you will document your processing ac
 
 ***
 
-## Step 3 — Add your first processing activity (2 min)
+## Step 3: add your first processing activity
 
-The core of Dastra is the **record of processing activities (ROPA)**. Start by documenting a simple activity — for example payroll management or email communications.
+The **record of processing activities** is at the heart of Dastra. Start with a simple activity, such as payroll or business email.
 
-1. In the left menu, click **Record of processing activities**
-2. Click **Create data processing**
-3. Choose your creation mode:
+1. In the left menu, click **Record of processing activities**.
+2. Click **Create data processing**.
+3. Choose how to create it:
 
 <figure><img src="../.gitbook/assets/register-processing-create-mode-picker.png" alt="Processing activity creation mode picker: AI Generated, Built-in template, From an asset, Personalized"><figcaption><p>Choose how to create your first processing activity</p></figcaption></figure>
 
-| Mode                  | Description                                                                 |
-| --------------------- | --------------------------------------------------------------------------- |
-| **AI Generated**      | The AI Assistant generates a pre-filled record from a name or description   |
-| **Built-in template** | Start from a Dastra template (payroll, recruitment, CCTV…)                  |
-| **From an asset**     | Create a processing activity from an existing asset and its associated data |
-| **Personalized**      | Create a blank record from scratch                                          |
+| Mode                  | Description                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **AI Generated**      | Describe the activity in a few words and the AI Assistant writes a first version (if it is enabled in your workspace) |
+| **Built-in template** | Start from a Dastra template (payroll, recruitment, CCTV, etc.)                                                     |
+| **From an asset**     | Create the processing activity from an asset and its associated data                                                |
+| **Personalized**      | Start from a blank processing activity                                                                              |
 
-To get started quickly, choose **Personalized** or **Built-in template**.
+For a first activity, choose **Personalized** or **Built-in template**.
 
-4. Fill in the two required fields:
+4. With **Personalized**, fill in the two required fields:
 
 <figure><img src="../.gitbook/assets/register-processing-create-name-form.png" alt="Processing activity creation form with name field and organizational unit"><figcaption><p>Name and organizational unit are the only required fields at creation</p></figcaption></figure>
 
-* **Name** of the processing activity (e.g. _Payroll management_)
-* **Organizational unit** — select the relevant entity
+* **Name of this processing activity** (for example, _Payroll management_)
+* **Organizational unit**: the entity or department the activity belongs to
 
 {% hint style="info" %}
-The organizational unit of type **entity** automatically sets the data controller. No need to fill it in separately.
+The data controller, its data protection officer and its representative are taken from the entity of the selected organizational unit.
 {% endhint %}
 
-5. Click **Create data processing**
+5. Click **Create data processing**.
 
-Your first processing activity is now in the register. You can enrich it progressively (purpose, legal basis, data processed, processors, security measures…).
+The processing activity is added to the record. You can then complete its questionnaire: purposes, datasets, recipients, security measures, etc.
 
 {% content-ref url="../features/ropa/README.md" %}
 [editer-le-registre](../features/ropa/README.md)
@@ -76,16 +80,16 @@ Your first processing activity is now in the register. You can enrich it progres
 
 ***
 
-## Step 4 — Invite a colleague (1 min)
+## Step 4: invite a colleague
 
-Compliance is a team effort. Invite a first colleague to start delegating.
+Invite the people who will work with you in the workspace.
 
-1. Go to **Workspace Settings > Users**
-2. Click **Invite a user**
-3. Enter their email address and choose their role
-4. Click **Send invitation**
+1. Go to **Workspace settings > Users**.
+2. Click **Invite user**.
+3. Enter their email address and select their roles.
+4. Click **Send invitation**.
 
-They will receive an access link by email.
+The invited person receives an access link by email.
 
 {% content-ref url="setup/users.md" %}
 [invite-users.md](setup/users.md)
@@ -95,7 +99,7 @@ They will receive an access link by email.
 
 ## What's next?
 
-You've laid the foundations. To go further:
+To go further:
 
 {% content-ref url="tutorial/README.md" %}
 [tutorial](tutorial/README.md)

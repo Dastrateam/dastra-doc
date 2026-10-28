@@ -1,32 +1,37 @@
 ---
 description: >-
-  Créez votre compte, configurez votre espace de travail et ajoutez votre
-  premier traitement en moins de 5 minutes.
+  Connectez-vous, configurez votre espace de travail et ajoutez votre premier
+  traitement.
 ---
 
 # 🚀 Démarrer en 5 minutes
 
-Ce guide vous emmène de zéro à votre premier traitement documenté dans le registre Dastra. Pas de configuration avancée — juste l'essentiel pour démarrer.
+Ce guide vous accompagne de votre première connexion à votre premier traitement documenté dans le registre Dastra.
 
 ***
 
-## Étape 1 — Créer votre compte (1 min)
+## Étape 1 : accéder à Dastra
 
-Rendez-vous sur [https://app.dastra.eu/signup](https://app.dastra.eu/signup) et créez un compte.
+Pour utiliser Dastra, votre organisation doit disposer d'un abonnement.
 
-{% hint style="info" %}
-L'essai gratuit dure 30 jours, sans carte bleue. Vous avez accès à toutes les fonctionnalités.
-{% endhint %}
+* Si votre organisation utilise déjà Dastra, demandez à un administrateur de vous inviter. Vous recevrez une invitation par e-mail.
+* Sinon, contactez l'équipe Dastra via le [formulaire de demande de démo](https://www.dastra.eu/fr/contacts/demo).
+
+Connectez-vous ensuite sur [https://app.dastra.eu](https://app.dastra.eu).
 
 ***
 
-## Étape 2 — Créer votre espace de travail (1 min)
+## Étape 2 : créer votre espace de travail
 
-Un **espace de travail** est l'environnement dans lequel vous allez documenter vos traitements. En général, un espace correspond à une entité légale ou un périmètre de conformité.
+Un **espace de travail** est l'environnement dans lequel vous documentez vos traitements. En général, un espace correspond à une entité juridique ou à un périmètre de conformité.
 
-1. Après connexion, cliquez sur **"Nouvel espace de travail"**
-2. Donnez-lui un nom (ex. : _Conformité RGPD – Société X_)
-3. Cliquez sur **Continuer**
+Si vous rejoignez un espace existant, passez à l'étape 3. Seuls les propriétaires du compte peuvent créer un espace de travail.
+
+1. Sur la page des espaces de travail, cliquez sur **Créer espace de travail**.
+2. Saisissez le **Nom de l'espace de travail** (par exemple le nom de l'entité juridique).
+3. Cliquez sur **Continuer**.
+
+Dastra ouvre ensuite la page des utilisateurs du nouvel espace, où vous pouvez ajouter ses membres.
 
 <figure><img src="../.gitbook/assets/getting-started-workspace-create-form.png" alt="Formulaire de création d&#x27;un espace de travail Dastra"><figcaption><p>Donnez un nom à votre espace de travail</p></figcaption></figure>
 
@@ -36,39 +41,39 @@ Un **espace de travail** est l'environnement dans lequel vous allez documenter v
 
 ***
 
-## Étape 3 — Ajouter votre premier traitement (2 min)
+## Étape 3 : ajouter votre premier traitement
 
-Le cœur de Dastra est le **registre des traitements**. Commencez par documenter une activité simple — par exemple la gestion de votre messagerie professionnelle ou la paie.
+Le **registre des traitements** est au cœur de Dastra. Commencez par une activité simple, par exemple la paie ou la messagerie professionnelle.
 
-1. Dans le menu gauche, cliquez sur **Registre des traitements**
-2. Cliquez sur **Créer un traitement**
+1. Dans le menu de gauche, cliquez sur **Registre des traitements**.
+2. Cliquez sur **Créer un traitement de données**.
 3. Choisissez le mode de création :
 
-<figure><img src="../.gitbook/assets/register-processing-create-mode-picker.png" alt="Sélecteur du mode de création d&#x27;un traitement dans Dastra : IA, modèle, actif ou personnalisé"><figcaption><p>Choisissez comment créer votre premier traitement</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/register-processing-create-mode-picker.png" alt="Sélecteur du mode de création d&#x27;un traitement dans Dastra : assistant IA, modèle, actif ou à partir de zéro"><figcaption><p>Choisissez comment créer votre premier traitement</p></figcaption></figure>
 
-| Mode                 | Description                                                                        |
-| -------------------- | ---------------------------------------------------------------------------------- |
-| **Généré par IA**    | L'assistant IA génère une fiche pré-remplie à partir d'un nom ou d'une description |
-| **Modèle prédéfini** | Partez d'un modèle Dastra (paie, recrutement, vidéosurveillance…)                  |
-| **Depuis un actif**  | Créez un traitement à partir d'un actif existant et de ses données associées       |
-| **Personnalisé**     | Créez une fiche vierge de zéro                                                     |
+| Mode                        | Description                                                                                                        |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Créer avec assistant IA** | Décrivez le traitement en quelques mots, l'assistant IA en rédige une première version (s'il est activé dans votre espace) |
+| **À partir d'un modèle**    | Partez d'un modèle Dastra (paie, recrutement, vidéosurveillance, etc.)                                             |
+| **À partir d'un actif**     | Créez le traitement à partir d'un actif et de ses données associées                                                |
+| **À partir de zéro**        | Partez d'une fiche vierge                                                                                          |
 
-Pour démarrer rapidement, choisissez **Personnalisé** ou **Modèle prédéfini**.
+Pour un premier traitement, choisissez **À partir de zéro** ou **À partir d'un modèle**.
 
-4. Renseignez les deux champs obligatoires :
+4. Avec **À partir de zéro**, renseignez les deux champs obligatoires :
 
 <figure><img src="../.gitbook/assets/register-processing-create-name-form.png" alt="Formulaire de création d&#x27;un traitement avec le champ nom et l&#x27;unité organisationnelle"><figcaption><p>Le nom et l'unité organisationnelle sont les seuls champs obligatoires à la création</p></figcaption></figure>
 
-* **Nom** du traitement (ex. : _Gestion de la paie_)
-* **Unité organisationnelle** — sélectionnez l'entité concernée
+* **Nom du traitement de données** (par exemple _Gestion de la paie_)
+* **Unité organisationnelle** : l'entité ou le département dont relève le traitement
 
 {% hint style="info" %}
-L'unité organisationnelle de type **entité** définit automatiquement le responsable de traitement. Pas besoin de le renseigner séparément.
+Le responsable du traitement, son délégué à la protection des données et son représentant sont repris de l'entité de l'unité organisationnelle choisie.
 {% endhint %}
 
-5. Cliquez sur **Créer le traitement**
+5. Cliquez sur **Créer un traitement de données**.
 
-Votre premier traitement est dans le registre. Vous pouvez l'enrichir progressivement (finalité, base légale, données traitées, sous-traitants, mesures de sécurité…).
+Le traitement est ajouté au registre. Vous pouvez ensuite compléter son questionnaire : finalités, jeux de données, destinataires, mesures de sécurité, etc.
 
 {% content-ref url="../features/ropa/README.md" %}
 [editer-le-registre](../features/ropa/README.md)
@@ -76,16 +81,16 @@ Votre premier traitement est dans le registre. Vous pouvez l'enrichir progressiv
 
 ***
 
-## Étape 4 — Inviter un collaborateur (1 min)
+## Étape 4 : inviter un collaborateur
 
-La conformité se construit en équipe. Invitez un premier collaborateur pour commencer à déléguer.
+Invitez les personnes qui travailleront avec vous dans l'espace.
 
-1. Allez dans **Paramètres de l'espace de travail > Utilisateurs**
-2. Cliquez sur **Inviter un utilisateur**
-3. Saisissez son adresse e-mail et choisissez son rôle
-4. Cliquez sur **Envoyer l'invitation**
+1. Allez dans **Réglages espace de travail > Utilisateurs**.
+2. Cliquez sur **Inviter un utilisateur**.
+3. Saisissez son adresse e-mail et sélectionnez ses rôles.
+4. Cliquez sur **Envoyer une invitation**.
 
-Il recevra un lien d'accès par e-mail.
+La personne invitée reçoit un lien d'accès par e-mail.
 
 {% content-ref url="setup/users.md" %}
 [inviter-utilisateurs.md](setup/users.md)
@@ -95,7 +100,7 @@ Il recevra un lien d'accès par e-mail.
 
 ## Et ensuite ?
 
-Vous avez posé les bases. Pour aller plus loin :
+Pour aller plus loin :
 
 {% content-ref url="tutorial/README.md" %}
 [tutoriel](tutorial/README.md)
