@@ -6,11 +6,11 @@ description: Leer hoe je de Dastra cookie-widget integreert in een Wordpress-sit
 
 ## 1 De SDK ophalen
 
-Zodra u klaar bent met de configuratie en het ontwerp van de Dastra cookie toestemmingswidget, kunt u de SDK ophalen in de "Code" sectie.
+Zodra u klaar bent met de configuratie en het ontwerp van de Dastra cookie toestemmingswidget, kunt u de SDK ophalen in de "Installatie" sectie.
 
 {% hint style="info" %}
 U kunt dit stukje code vinden en het hier kopiëren/plakken: \
-Cookie toestemming > Bewerken > Code
+Cookie toestemming > Bewerken > Installatie
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (79).png>)

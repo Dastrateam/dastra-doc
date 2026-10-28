@@ -8,10 +8,14 @@ description: >-
 
 ## Waar worden de toestemmingen opgeslagen?
 
-Het volledige bewijs van de toestemming van de gebruiker wordt opgeslagen in de localStorage van de browser (de opslagsleutel heet dastra-consents) in json-formaat. De propagatie van toestemmingen hangt hiervan af, daarom wordt het niet aangeraden om de gegevens in deze sleutel direct te wijzigen.
+Standaard worden de toestemmingen 180 dagen lang opgeslagen in een browsercookie met de naam `consent-eu`, als geserialiseerde JSON. In de configuratie van de banner kun je:
+
+* de naam van deze cookie wijzigen;
+* de levensduur en het domein ervan wijzigen;
+* de toestemmingen in plaats daarvan in de localStorage opslaan. De sleutel is dan `dastra-consents`, of de naam die voor de cookie is gekozen.
 
 {% hint style="info" %}
-&#x20;Het wordt niet aanbevolen om de gegevens in de localStorage rechtstreeks te wijzigen. Gebruik bij voorkeur de dastra Javascript SDK.
+De verspreiding van de toestemmingen hangt af van deze gegevens: wijzig ze niet rechtstreeks. Gebruik de JavaScript-SDK van Dastra.
 {% endhint %}
 
 ### Toegang tot de toestemmingsservice
@@ -31,13 +35,15 @@ dastra.push(['cookieReady',function(manager){
 
 In manager.consent zijn de volgende methoden beschikbaar:
 
-* open(): opent de toestemmingswidget.
-* close(): Sluit de toestemmingswidget.
 * getAllConsents(): Alle toestemmingen ophalen.
-* getPurposeConsent(purposeId:number): vraagt toestemming op voor een categorie cookies
-* setPurposeConsent(purposeId:number, consent:bool): stelt de toestemming voor een categorie in
+* getPurposeConsent(purposeLabel:string): vraagt toestemming op voor een categorie cookies
+* setPurposeConsent(purposeLabel:string, consent:bool): stelt de toestemming voor een categorie in
 * getServiceConsent(serviceShortName:string): hiermee wordt de toestemming voor een bepaalde dienst opgehaald.
 * setServiceConsent(serviceShortName:string, consent:bool): stelt de toestemming voor een bepaald item in.
+* save(): slaat de toestemmingen op en activeert de events
+* dispatchEvents(): past de huidige toestemmingen toe (events, Google Consent Mode, scripts) zonder ze op te slaan
+
+Gebruik `manager.open()` en `manager.close()` om de widget te openen of te sluiten. Buiten de callback `cookieReady` gebruik je `dastra.push(['openCookieConsent'])` en `dastra.push(['closeCookieConsent'])`.
 
 ### De lijst met gebruikerstoestemmingen ophalen (getAllConsents)
 
@@ -58,14 +64,13 @@ De bovenstaande methode retourneert een lijst met alle toestemmingen van de gebr
 ```javascript
 [
   {
-    "id":"000000-0000000-000000",
-    "name": "Service name",
-    "purpose": 1,
-    "logoUrl": "https://logo-url/img.jpg",
-    "privacyPolicyUrl":"",
-    "description": "Short description",
-    "defaultConsent": true,
-    "requiredConsent":true
+    "id": "000000-0000000-000000",
+    "name": "Google Analytics",
+    "slug": "google-analytics",
+    "consent": true,
+    "version": "1",
+    "date": "2026-10-28T10:00:00.000Z",
+    "purpose": "Analytical"
   },
   ...
 ]
@@ -73,25 +78,31 @@ De bovenstaande methode retourneert een lijst met alle toestemmingen van de gebr
 
 ### Toestemmingen per categorie opvragen (getPurposeConsent/setPurposeConsent)
 
-Cookiecategorieën worden vertegenwoordigd door de volgende id's:
+Cookiecategorieën worden aangeduid met de volgende labels:
 
-| Type        | Id |
-| ----------- | -- |
-| Noodzakelijk | 0  |
-| Voorkeuren | 1  |
-| Analytisch | 2  |
-| Marketing   | 3  |
-| Andere     | 4  |
+| Categorie    | Label          |
+| ------------ | -------------- |
+| Noodzakelijk | `Necessary`    |
+| Voorkeuren   | `Preference`   |
+| Analytisch   | `Analytical`   |
+| Marketing    | `Marketing`    |
+| Andere       | `Other`        |
+| Niet geclassificeerd | `Unclassified` |
 
-```Javascript
+{% hint style="warning" %}
+Gebruik de **labels als tekenreeks** (bijv. `'Analytical'`) en niet de numerieke waarden: die worden niet ondersteund.
+{% endhint %}
+
+```javascript
 <script>
-dastra = dastra || []
-dastra.push(['cookieReady',function(manager){
-    // De volledige lijst met toestemmingsservices ophalen
-    laat cookiePurpose = 2; // 2 = Analytisch
-    laat toestemmingen = manager.consent.getPurposeConsent(cookiePurpose);
-    manager.consent.setPurposeConsent(cookiePurpose, false)
-});
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady', function(manager){
+    let consent = manager.consent.getPurposeConsent('Analytical');
+    manager.consent.setPurposeConsent('Analytical', false);
+
+    // persist consent in cookies
+    manager.consent.save();
+}]);
 </script>
 ```
 
@@ -100,20 +111,22 @@ dastra.push(['cookieReady',function(manager){
 Om toestemmingen per service te manipuleren, heb je de vereenvoudigde servicenaam nodig die beschikbaar is in de servicebeheerinterface van je widget.
 
 {% hint style="info" %}
-**Hoe vind ik de vereenvoudigde servicenaam?
+**Hoe vind ik de vereenvoudigde servicenaam?**\
 Ga naar de servicebeheerinterface en bewerk een service. De vereenvoudigde naam (slug) van de service verschijnt onder de naam van de cookie.
 {% endhint %}
 
 ![Locatie van vereenvoudigde cookienaam](<../../../.gitbook/assets/image (67).png>)
 
 ```javascript
-<script> 
-dastra = dastra || []
-dastra.push(['cookieReady',function(manager){
-    // De volledige lijst met toestemmingsservices ophalen
-    laat cookiePurpose = 'google-analytics'; // 2 = Analytic
-    laat toestemmingen = manager.consent.getServiceConsent(cookiePurpose );
-    manager.consent.setServicePurpose(cookiePurpose, false)
-});
+<script>
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady', function(manager){
+    let cookieService = 'google-analytics';
+    let consent = manager.consent.getServiceConsent(cookieService);
+    manager.consent.setServiceConsent(cookieService, false);
+
+    // persist consent in cookies
+    manager.consent.save();
+}]);
 </script>
 ```

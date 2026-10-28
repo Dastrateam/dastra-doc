@@ -8,11 +8,11 @@ description: >-
 
 ## 1. Abruf des SDK
 
-Sobald Sie die Konfiguration und das Design des Dastra Cookie-Einwilligungs-Widgets abgeschlossen haben, können Sie das SDK im Bereich „Code" abrufen.
+Sobald Sie die Konfiguration und das Design des Dastra Cookie-Einwilligungs-Widgets abgeschlossen haben, können Sie das SDK im Bereich „Installation" abrufen.
 
 {% hint style="info" %}
 Sie können dieses Code-Snippet hier finden und kopieren/einfügen:\
-Cookie-Einwilligung > Bearbeiten > Code
+Cookie-Einwilligung > Bearbeiten > Installation
 {% endhint %}
 
 ![](../../../../.gitbook/assets/Cookie14.png)

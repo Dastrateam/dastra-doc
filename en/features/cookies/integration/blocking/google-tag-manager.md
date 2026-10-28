@@ -104,6 +104,10 @@ Save your changes and you should see that your tags are disabled on the relevant
 
 ### Specific case: refreshing the page if the consent configuration changes
 
+{% hint style="warning" %}
+The `dastra:consents:*` and `dastra:consent:<slug>` events also fire on every page load, when the widget applies the choices already saved. A `location.reload()` attached directly to these events reloads the page in a loop. Always register the listener inside `dastra:consents:ready`, as in the examples below: only the choices made by the visitor then trigger the reload.
+{% endhint %}
+
 #### Rejection of cookies after acceptance:
 
 In some cases, certain tags are not properly cleaned up after cookies are rejected. This occurs in particular when a user decides to accept cookies, then clicks on the widget again and decides to withdraw their consent. In most cases, this does not pose a problem because the markers are not executed multiple times on the page anyway, so it is no longer necessary to delete the script tags inserted into the page.
@@ -117,9 +121,12 @@ Simply insert the following code (below the Dastra widget initialization tag if 
 ```markup
 <script>
 // If any service is refused explicitely in the modal
-window.addEventListener('dastra:consents:any_refused', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:any_refused', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -130,9 +137,12 @@ To reload the page when any consent changes in any way, use the updated function
 
 ```markup
 <script>
-window.addEventListener('dastra:consents:updated', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:updated', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -143,9 +153,12 @@ To reload the page when all trackers are accepted (“accept all” button):
 
 ```markup
 <script>
-window.addEventListener('dastra:consents:all_accepted', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:all_accepted', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -156,9 +169,12 @@ To reload the page when accepting a specific service:
 
 ```markup
 <script>
-window.addEventListener('dastra:consent:<slug du service>', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consent:<service-slug>', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```

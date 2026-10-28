@@ -212,7 +212,7 @@
     * [Applications mobiles](features/cookies/integration/mobile/README.md)
       * [Applications hybrides](features/cookies/integration/mobile/hybrid.md)
       * [Applications natives](features/cookies/integration/mobile/native.md)
-    * [TCF 1.1/2.0](features/cookies/integration/tcf.md)
+    * [IAB TCF](features/cookies/integration/tcf.md)
   * [Conformité RGAA](features/cookies/accessibility.md)
   * [Dépannage](features/cookies/troubleshooting.md)
 * [Conformité](features/compliance/README.md)

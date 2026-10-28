@@ -50,7 +50,15 @@ Zwei Browser-Signale ermöglichen es einem Nutzer, seine Ablehnung der Nachverfo
 | **GPC** (`globalPrivacyControl`) | W3C      | ✅ Ja (CPRA)           | Opt-out-Signal für den Verkauf/die Weitergabe von Daten     |
 | **DNT** (`doNotTrack`)           | W3C      | ❌ Nein                | „Nicht verfolgen"-Präferenzsignal (rechtlich nicht bindend) |
 
-Dastra erkennt diese Signale nicht nativ. Das folgende Snippet fängt sie **vor der ersten Nutzerinteraktion** ab und wendet automatisch das Opt-out für die Kategorien Analytisch und Marketing an – vorausgesetzt, der Nutzer hat noch keine explizite Einwilligung in seinem Browser gespeichert.
+#### Native Aktivierung (empfohlen)
+
+Dastra unterstützt diese Signale **nativ**. Aktivieren Sie im Bereich „Konfiguration“ des Banners die Option **„Aktivieren Sie die Global Privacy Control (GPC)“**. Derselbe Schalter existiert in jeder **Geografisch ausgerichteten Variation**: Aktivieren Sie ihn in der Variante, die Kalifornien abdeckt.
+
+Ist die Option aktiviert und hat der Besucher noch keine Auswahl getroffen, lehnt das Widget automatisch alle Cookie-Kategorien außer den notwendigen ab (Präferenzen, Analyse, Marketing, Sonstige und Nicht klassifiziert), sobald der Browser ein GPC- oder DoNotTrack-Signal sendet. Das Banner wird diesem Besucher nicht angezeigt. Stattdessen zeigt das Widget 6 Sekunden lang eine Bestätigung an, deren Text Sie im Reiter „Texte und Übersetzungen“ anpassen können, und löst das Ereignis `dastra:gpc:applied` auf `window` aus.
+
+#### Erweiterte Option – eigenes JS-Snippet
+
+Das folgende Snippet fängt die Signale **vor der ersten Nutzerinteraktion** ab und wendet automatisch das Opt-out für die Kategorien Analytisch und Marketing an – vorausgesetzt, der Nutzer hat noch keine explizite Einwilligung in seinem Browser gespeichert.
 
 ```html
 <script>
@@ -67,7 +75,7 @@ Dastra erkennt diese Signale nicht nativ. Das folgende Snippet fängt sie **vor 
         if (!manager.consent.hasConsented()) {
           manager.consent.setPurposeConsent('Analytical', false)
           manager.consent.setPurposeConsent('Marketing', false)
-          manager.consent.dispatchEvent() // applique les choix sans les persister
+          manager.consent.dispatchEvents() // wendet die Auswahl an, ohne sie zu speichern
         }
       }
     ])
@@ -76,10 +84,10 @@ Dastra erkennt diese Signale nicht nativ. Das folgende Snippet fängt sie **vor 
 ```
 
 {% hint style="info" %}
-**`dispatchEvent()` vs `save()` – was ist der Unterschied?**
+**`dispatchEvents()` vs `save()` – was ist der Unterschied?**
 
-- **`dispatchEvent()`** wendet die Auswahl für die aktuelle Sitzung an, **ohne etwas** im localStorage des Browsers zu speichern. Das GPC- oder DNT-Signal wird bei jedem Seitenladen erneut erkannt. Wenn der Nutzer GPC in seinem Browser deaktiviert, wird das normale Verhalten automatisch fortgesetzt. Dies ist der empfohlene Ansatz zur Beachtung dieser Signale.
-- **`save()`** speichert die Einwilligung dauerhaft im localStorage, als hätte der Nutzer eine explizite Auswahl über das Widget getroffen. Verwenden Sie dies nur, wenn Sie eine sitzungsübergreifende Auswahl speichern möchten.
+- **`dispatchEvents()`** wendet die Auswahl für die aktuelle Sitzung an, **ohne etwas** im Einwilligungsspeicher abzulegen (standardmäßig das Cookie `consent-eu`, oder localStorage, wenn diese Option aktiviert ist). Das GPC- oder DNT-Signal wird bei jedem Seitenladen erneut erkannt. Wenn der Nutzer GPC in seinem Browser deaktiviert, wird das normale Verhalten automatisch fortgesetzt. Dies ist der empfohlene Ansatz zur Beachtung dieser Signale.
+- **`save()`** speichert die Einwilligung dauerhaft in diesem Speicher, als hätte der Nutzer eine explizite Auswahl über das Widget getroffen. Verwenden Sie dies nur, wenn Sie eine sitzungsübergreifende Auswahl speichern möchten.
   {% endhint %}
 
 {% hint style="info" %}
@@ -110,5 +118,5 @@ Die Kategorie-Labels zur Verwendung mit `setPurposeConsent`:
 | Mechanismus                      | Implementierung   | Rechtlich erforderlich (CA) |
 | -------------------------------- | ----------------- | --------------------------- |
 | Geo-zielgerichtete CCPA-Variante | Dastra-Oberfläche | ✅ Ja                       |
-| GPC-Erkennung                    | JS-Snippet oben   | ✅ Ja (CPRA)                |
-| DNT-Erkennung                    | JS-Snippet oben   | ❌ Empfohlen                |
+| GPC-Erkennung                    | Nativer Schalter (empfohlen) oder JS-Snippet | ✅ Ja (CPRA)                |
+| DNT-Erkennung                    | Nativer Schalter (empfohlen) oder JS-Snippet | ❌ Empfohlen                |

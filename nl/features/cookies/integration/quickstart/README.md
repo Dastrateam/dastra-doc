@@ -21,7 +21,7 @@ Configureer je widget door de onderstaande gids te volgen
 
 ## De html-integratiecode invoegen
 
-Voeg de HTML-code die beschikbaar is in de "Code" sectie van de Dastra Cookie toestemmingsmodule **voor het einde van de tag<BODY>** in op je website, op alle pagina's. Je kunt Google tag manager gebruiken om de code dynamisch te maken. U kunt Google tag manager gebruiken om deze code dynamisch op elke pagina in te voegen.
+Voeg de HTML-code die beschikbaar is in de "Installatie" sectie van de Dastra Cookie toestemmingsmodule **voor het einde van de tag<BODY>** in op je website, op alle pagina's. Je kunt Google tag manager gebruiken om de code dynamisch te maken. U kunt Google tag manager gebruiken om deze code dynamisch op elke pagina in te voegen.
 
 {% hint style="info" %}
 Om de code correct te laten werken, moet je ervoor zorgen dat de publieke sleutel van je API vooraf correct is geconfigureerd.
@@ -31,7 +31,7 @@ De widgetintegratiecode ziet er als volgt uit
 
 ```markup
 <div id="dastra-cookie-consent" data-widgetid="{your_widget_id}"></div>
-<script src="https://app.dastra.eu/sdk/dastra.js?key={your_public_key}" async>
+<script src="https://cdn.dastra.eu/sdk/dastra.js?key={your_public_key}" async>
 </script>
 ```
 

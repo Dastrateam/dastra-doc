@@ -9,7 +9,7 @@ description: >-
 
 ## Récupérer la configuration du widget
 
-<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/client/cookie-widget-settings/:id?key=:key`
+<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/cookies/public/cookies-widget-settings/:id?key=:key`
 
 Cet endpoint permet de récupérer l'intégralité de la configuration du widget
 
@@ -27,7 +27,7 @@ Cet endpoint permet de récupérer l'intégralité de la configuration du widget
 | key     | string | The public api key provided                        |
 
 {% tabs %}
-{% tab title="200 Cake successfully retrieved." %}
+{% tab title="200 Configuration du widget récupérée" %}
 ```
 {
   "translation": {
@@ -149,7 +149,7 @@ Cet endpoint permet de récupérer l'intégralité de la configuration du widget
 
 ## Enregistrement des consentements
 
-<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/client/collect/:id?key=:key`
+<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/cookies/public/collect/:id?key=:key`
 
 Cette méthode permet de collecter les consentements aux cookies
 
@@ -172,7 +172,7 @@ Cette méthode permet de collecter les consentements aux cookies
 | consents  | object | <p>La liste des consentements de l'utilisateur<br><br><code>{</code><br><code>"cookieConsents":</code><br><code>[</code><br><code>{</code><br><code>"consent":true, // True if consented, false if refused</code><br><code>"id":"e213aca4-79b7-4b93-2bad-08d897969898", // Cookies id</code><br><code>"date":"2021-03-15T14:00:04.133Z",</code><br><code>"name":"yrdy",</code><br><code>"slug":"yrdy",</code><br><code>"purpose":3</code><br><code>}</code><br><code>],</code><br><code>"lang":"fr-FR",</code><br><code>"consentId":"6f47576e-5a0c-4219-8efe-331e72bab73a",</code><br><code>"date":1615809009744</code><br><code>}</code><br><br><br><br><br><br><br><br><br><br></p> |
 | type      | string | CookieEventType Visit,Quit,Consents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | consentId | string | The current consent Id (If any collected before)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| userId    | string | Custom user id (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| userId    | string | Identifiant pseudonyme de l'utilisateur dans vos systèmes (facultatif), voir [Identification des utilisateurs](../identification.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 {% tabs %}
 {% tab title="200 Return the id of the consent collected" %}

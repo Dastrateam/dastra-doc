@@ -12,12 +12,22 @@ Gehen Sie auf die Einstellungsseite des gewünschten Widgets und dann auf den Ta
 
 ## Wie wird die Sprache des Widgets erkannt?
 
-Standardmäßig wird die Sprache automatisch anhand der Browsersprache erkannt
+Standardmäßig verwendet das Widget die Sprache aus dem Attribut `lang` des `<html>`-Tags der Seite. Fehlt dieses Attribut, wird die Browsersprache verwendet.
 
 ## Wie erzwingt man die Sprache des Widgets?
 
-Um die Sprache des Widgets zu erzwingen, fügen Sie einfach ein Attribut data-lang="" zum Widget-div hinzu
+Um die Sprache des Widgets zu erzwingen, fügen Sie dem Widget-div das Attribut `data-lang` hinzu:
 
-```markup
-<div id="cookie-consent" data-lang="fr"></div>
+```html
+<div id="dastra-cookie-consent" data-widgetid="{your_widget_id}" data-lang="fr"></div>
+```
+
+Wenn Sie das Widget mit der Methode `loadCookieConsent` laden, übergeben Sie stattdessen die Option `lang`:
+
+```javascript
+dastra.push(['loadCookieConsent', {
+    widgetId: {your_widget_id},
+    selector: '#cookie-consent',
+    lang: 'fr'
+}]);
 ```
