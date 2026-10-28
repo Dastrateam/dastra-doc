@@ -7,7 +7,7 @@ Het Trust Center is modulair en laat u kiezen welke functies u erin wilt gebruik
 * [Startpagina en algemene configuratie](home.md)
 * [Vragenlijsten](questionnaires.md)
 * [Uitoefening van rechten](data-subject-requests.md)
-* [Register van verwerkingen](record-of-processing-activities.md)
+* [Register van verwerkingen](ropa.md)
 * [Documenten](attachments.md)
 * [Organigram](org-chart.md)
 * [Contacten](contacts.md)

@@ -1,2 +1,0 @@
-# Machtigingen en toegangsrechten
-

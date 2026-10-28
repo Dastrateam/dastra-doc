@@ -12,7 +12,7 @@ Om de functie **Uitoefening van rechten** in uw Trust Center te activeren, raadp
 
 #### Vereisten
 
-Om een widget voor de uitoefening van rechten in uw Trust Center te kunnen weergeven, moet de module "Uitoefening van rechten" deel uitmaken van uw abonnement en moet u eerst [een verzamelwidget hebben geconfigureerd en gepubliceerd](../../gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md).
+Om een widget voor de uitoefening van rechten in uw Trust Center te kunnen weergeven, moet de module "Uitoefening van rechten" deel uitmaken van uw abonnement en moet u eerst [een verzamelwidget hebben geconfigureerd en gepubliceerd](../../requests/widget.md).
 
 **Widget voor het verzamelen van verzoeken om rechten uit te oefenen**
 

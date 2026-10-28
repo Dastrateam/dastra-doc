@@ -17,7 +17,7 @@ De SCIM-functionaliteit is voorbehouden aan klanten met een **Enterprise plan**.
 {% endhint %}
 
 {% hint style="info" %}
-We raden sterk aan dat u eerst [SSO instelt](single-sign-on-sso/)**met de optie "Forceer voor alle gebruikers" geactiveerd**.
+We raden sterk aan dat u eerst [SSO instelt](sso/README.md)**met de optie "Forceer voor alle gebruikers" geactiveerd**.
 {% endhint %}
 
 ### Hoe configureer ik SCIM met Azure Active Directory?
