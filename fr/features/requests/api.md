@@ -136,7 +136,7 @@ Voici les principaux Endpoints qui vous seront utiles pour intégrer vos applica
 
 ## Créer une nouvelle demande d'exercice de droits dans Dastra
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
 #### Path Parameters
 
@@ -215,7 +215,7 @@ Voici les principaux Endpoints qui vous seront utiles pour intégrer vos applica
 
 ## Récupérer une demande d'exercice de droits existante via son id
 
-<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 #### Path Parameters
 
@@ -484,7 +484,7 @@ Voici les principaux Endpoints qui vous seront utiles pour intégrer vos applica
 
 ## Récupérer une liste paginée de demandes d'exercice de droits
 
-<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+<mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
 Vous pouvez passer des paramètres de recherche optionnels à votre requête pour filtrer la réponse de l'API
 
@@ -779,7 +779,7 @@ Vous pouvez passer des paramètres de recherche optionnels à votre requête pou
 
 ## Mettre à jour une demande d'exercice de droits
 
-<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 #### Path Parameters
 
@@ -1054,7 +1054,7 @@ Vous pouvez passer des paramètres de recherche optionnels à votre requête pou
 
 ## Supprimer une demande d'exercice de droits via son id
 
-<mark style="color:red;">`DELETE`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:red;">`DELETE`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 Attention, cette action est irréversible, la demande d'exercice de droit sera supprimée définitivement de nos bases de données
 
@@ -1077,7 +1077,7 @@ Attention, cette action est irréversible, la demande d'exercice de droit sera s
 
 ## Changer l'étape de processus de la demande d'exercice de droits
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/workflow`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/workflow`
 
 #### Path Parameters
 
@@ -1094,7 +1094,7 @@ Attention, cette action est irréversible, la demande d'exercice de droit sera s
 
 ## Archiver une demande d'exercice de droit via son Id
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/archive​/{id}`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/archive/{id}`
 
 Ce endpoint applique le state "Archived" à la demande d'exercice de droits
 
@@ -1117,7 +1117,7 @@ Ce endpoint applique le state "Archived" à la demande d'exercice de droits
 
 ## Retirer le statut archiver d'une demande d'exercice de droits
 
-<mark style="color:green;">`POST`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/restore​/{id}`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/restore/{id}`
 
 #### Path Parameters
 

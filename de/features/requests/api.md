@@ -136,7 +136,7 @@ Hier sind die wichtigsten Endpunkte, die Ihnen für die Integration Ihrer Anwend
 
 ## Eine neue Betroffenenanfrage in Dastra erstellen
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
 #### Path Parameters
 
@@ -215,7 +215,7 @@ Hier sind die wichtigsten Endpunkte, die Ihnen für die Integration Ihrer Anwend
 
 ## Eine bestehende Betroffenenanfrage über ihre ID abrufen
 
-<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 #### Path Parameters
 
@@ -484,7 +484,7 @@ Hier sind die wichtigsten Endpunkte, die Ihnen für die Integration Ihrer Anwend
 
 ## Eine paginierte Liste von Betroffenenanfragen abrufen
 
-<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+<mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
 Sie können optionale Suchparameter an Ihre Anfrage übergeben, um die API-Antwort zu filtern&#x20;
 
@@ -779,7 +779,7 @@ Sie können optionale Suchparameter an Ihre Anfrage übergeben, um die API-Antwo
 
 ## Eine Betroffenenanfrage aktualisieren
 
-<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 #### Path Parameters
 
@@ -1054,7 +1054,7 @@ Sie können optionale Suchparameter an Ihre Anfrage übergeben, um die API-Antwo
 
 ## Eine Betroffenenanfrage über ihre ID löschen
 
-<mark style="color:red;">`DELETE`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:red;">`DELETE`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 Achtung, diese Aktion ist unwiderruflich. Die Betroffenenanfrage wird endgültig aus unseren Datenbanken gelöscht.
 
@@ -1077,7 +1077,7 @@ Achtung, diese Aktion ist unwiderruflich. Die Betroffenenanfrage wird endgültig
 
 ## Den Prozessschritt der Betroffenenanfrage ändern
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/workflow`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/workflow`
 
 #### Path Parameters
 
@@ -1094,7 +1094,7 @@ Achtung, diese Aktion ist unwiderruflich. Die Betroffenenanfrage wird endgültig
 
 ## Eine Betroffenenanfrage über ihre ID archivieren
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/archive​/{id}`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/archive/{id}`
 
 Dieser Endpunkt wendet den Status "Archived" auf die Betroffenenanfrage an.
 
@@ -1117,7 +1117,7 @@ Dieser Endpunkt wendet den Status "Archived" auf die Betroffenenanfrage an.
 
 ## Den Archivierungsstatus einer Betroffenenanfrage aufheben
 
-<mark style="color:green;">`POST`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/restore​/{id}`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/restore/{id}`
 
 #### Path Parameters
 

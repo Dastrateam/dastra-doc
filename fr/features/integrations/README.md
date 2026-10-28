@@ -22,28 +22,28 @@ Les connecteurs d'import synchronisent une fois par jour et à la demande avec *
 
 <figure><img src="../../.gitbook/assets/integrations-catalog.png" alt=""><figcaption></figcaption></figure>
 
-Le détail dans [Connexions, cas d'usage et mapping des champs](https://doc.dastra.eu/api-references/integrations/connexions-et-mapping-des-champs).
+Le détail dans [Connexions, cas d'usage et mapping des champs](connections.md).
 
 #### Intégrations disponibles
 
 | Intégration                     | Ce qu'elle fait                                                                                                                           | Documentation                                                                                                    |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **ServiceNow**                  | Importe les applications métier de votre CMDB comme actifs et les garde synchronisées quotidiennement                                     | [ServiceNow](https://doc.dastra.eu/api-references/integrations/servicenow)                                       |
-| **SAP LeanIX**                  | Importe vos fact sheets Application comme actifs et les garde synchronisées quotidiennement                                               | [SAP LeanIX](https://doc.dastra.eu/api-references/integrations/sap-leanix)                                       |
-| **Jira**                        | Crée et suit les demandes d'exercice de droits depuis votre projet Jira, et envoie vos tâches vers Jira sous forme de tickets synchronisés (statut, assigné, champs mappés) | [Jira](https://doc.dastra.eu/features/integrations/jira)                                                   |
-| **Filerskeepers**               | Intègre vos politiques de durées de conservation Filerskeepers à Dastra                                                                   | [Filerskeepers](https://doc.dastra.eu/api-references/integrations/filerskeepers)                                 |
-| **Microsoft Teams**             | Publie les notifications de vos règles de workflow sous forme de cartes dans un canal Teams                                               | [Microsoft Teams](https://doc.dastra.eu/api-references/integrations/microsoft-teams)                             |
-| **HTTP / Custom API**           | Appelle n'importe quelle API externe depuis vos règles de workflow avec une requête HTTP personnalisée — méthode, URL, en-têtes et corps JSON ou XML construit depuis l'objet | [HTTP / Custom API](https://doc.dastra.eu/features/integrations/custom-http) |
+| **ServiceNow**                  | Importe les applications métier de votre CMDB comme actifs et les garde synchronisées quotidiennement                                     | [ServiceNow](servicenow.md)                                       |
+| **SAP LeanIX**                  | Importe vos fact sheets Application comme actifs et les garde synchronisées quotidiennement                                               | [SAP LeanIX](sap-leanix.md)                                       |
+| **Jira**                        | Crée et suit les demandes d'exercice de droits depuis votre projet Jira, et envoie vos tâches vers Jira sous forme de tickets synchronisés (statut, assigné, champs mappés) | [Jira](jira.md)                                                   |
+| **Filerskeepers**               | Intègre vos politiques de durées de conservation Filerskeepers à Dastra                                                                   | [Filerskeepers](filerskeepers.md)                                 |
+| **Microsoft Teams**             | Publie les notifications de vos règles de workflow sous forme de cartes dans un canal Teams                                               | [Microsoft Teams](microsoft-teams.md)                             |
+| **HTTP / Custom API**           | Appelle n'importe quelle API externe depuis vos règles de workflow avec une requête HTTP personnalisée — méthode, URL, en-têtes et corps JSON ou XML construit depuis l'objet | [HTTP / Custom API](custom-http.md) |
 | **Slack**                       | Délivre les notifications Dastra dans votre espace Slack                                                                                  | —                                                                                                                |
-| **Docusign**                    | Envoie vos contrats à vos sous-traitants pour signature électronique                                                                      | [Intégration avec Docusign](https://doc.dastra.eu/features/contracts/docusign)                   |
-| **OneDrive & SharePoint / Google Drive** | Joint des fichiers de votre OneDrive, de vos bibliothèques SharePoint ou de Google Drive à vos acteurs, mesures de sécurité, traitements, tâches, incidents… | [Intégrations OneDrive & SharePoint / Google Drive](https://doc.dastra.eu/features/settings/cloud-storage) |
-| **Office 365 / Gmail**          | Envoie les e-mails de Dastra depuis votre propre boîte mail                                                                               | [Configuration du SMTP](https://doc.dastra.eu/features/settings/smtp)                           |
-| **Adresses e-mail de collecte** | Transforme les e-mails envoyés à une adresse de collecte dédiée en tâches, demandes, violations de données, contrats ou traitements       | [Adresses emails de collecte](https://doc.dastra.eu/features/settings/mailboxes)                 |
+| **Docusign**                    | Envoie vos contrats à vos sous-traitants pour signature électronique                                                                      | [Intégration avec Docusign](../contracts/docusign.md)                   |
+| **OneDrive & SharePoint / Google Drive** | Joint des fichiers de votre OneDrive, de vos bibliothèques SharePoint ou de Google Drive à vos acteurs, mesures de sécurité, traitements, tâches, incidents… | [Intégrations OneDrive & SharePoint / Google Drive](../settings/cloud-storage.md) |
+| **Office 365 / Gmail**          | Envoie les e-mails de Dastra depuis votre propre boîte mail                                                                               | [Configuration du SMTP](../settings/smtp/README.md)                           |
+| **Adresses e-mail de collecte** | Transforme les e-mails envoyés à une adresse de collecte dédiée en tâches, demandes, violations de données, contrats ou traitements       | [Adresses emails de collecte](../settings/mailboxes.md)                 |
 | **SIRENE (INSEE)**              | Complète la fiche de vos parties prenantes à partir du répertoire des entreprises                                                         | —                                                                                                                |
 | **Fournisseur IA**              | Connecte n'importe quel fournisseur IA compatible OpenAI à l'assistant Dastra                                                             | —                                                                                                                |
-| **Single sign-on (SSO)**        | Laisse vos utilisateurs se connecter avec votre propre fournisseur d'identité                                                             | [Single Sign On (SSO)](https://doc.dastra.eu/features/settings/sso)                               |
-| **Streaming SIEM**              | Diffuse vos événements d'audit de sécurité vers votre SIEM en temps réel                                                                  | [Streaming SIEM](https://doc.dastra.eu/features/settings/siem)                                         |
-| **Zapier**                      | Connecte Dastra à plus de 3 000 applications via des workflows automatisés                                                                | [Zapier](https://doc.dastra.eu/api-references/integrations/zapier)                                               |
+| **Single sign-on (SSO)**        | Laisse vos utilisateurs se connecter avec votre propre fournisseur d'identité                                                             | [Single Sign On (SSO)](../settings/sso/README.md)                               |
+| **Streaming SIEM**              | Diffuse vos événements d'audit de sécurité vers votre SIEM en temps réel                                                                  | [Streaming SIEM](../settings/siem.md)                                         |
+| **Zapier**                      | Connecte Dastra à plus de 3 000 applications via des workflows automatisés                                                                | [Zapier](zapier/README.md)                                               |
 
 Certaines intégrations s'appliquent à l'ensemble de votre organisation plutôt qu'à un workspace — le single sign-on, le streaming SIEM, Office 365 / Gmail et le fournisseur IA. Leur tuile dans le magasin vous renvoie vers les paramètres de l'organisation correspondants, où elles se configurent par un propriétaire du compte.
 
@@ -53,7 +53,7 @@ Zapier est un outil d'automatisation en ligne qui relie vos applications et serv
 
 Côté Dastra, Zapier peut réagir à deux déclencheurs — _nouvelle demande d'exercice de droits créée_ et _nouvelle tâche créée_ — et réaliser six actions : créer une tâche, créer un acteur, créer une demande d'exercice de droits, lier un acteur à un traitement existant, rechercher un acteur, et trouver ou créer un acteur. Vous pouvez donc partir d'un événement Dastra pour agir dans une application tierce, ou partir d'un événement tiers pour agir dans Dastra.
 
-Des modèles préconfigurés (Salesforce, Zoho, Trello, Google Sheets, Excel, Outlook, Azure DevOps…) sont disponibles depuis la [page Dastra du catalogue Zapier](https://zapier.com/apps/dastra/integrations), et l'éditeur de Zap vous permet de construire votre propre workflow de zéro. Voir la page [Zapier](https://doc.dastra.eu/api-references/integrations/zapier) et ses [questions fréquentes](https://doc.dastra.eu/api-references/integrations/zapier/questions-frequentes).
+Des modèles préconfigurés (Salesforce, Zoho, Trello, Google Sheets, Excel, Outlook, Azure DevOps…) sont disponibles depuis la [page Dastra du catalogue Zapier](https://zapier.com/apps/dastra/integrations), et l'éditeur de Zap vous permet de construire votre propre workflow de zéro. Voir la page [Zapier](zapier/README.md) et ses [questions fréquentes](zapier/faq.md).
 
 #### Sécurité et protection des données
 
@@ -64,4 +64,4 @@ Des modèles préconfigurés (Salesforce, Zoho, Trello, Google Sheets, Excel, Ou
 
 #### Un besoin non couvert ?
 
-Si aucune intégration ne correspond à votre besoin, l'[API REST Dastra](https://doc.dastra.eu/api/endpoints) vous permet de développer vos propres scripts et connecteurs, et vous pouvez soumettre une demande de connecteur à l'équipe Dastra via le support.
+Si aucune intégration ne correspond à votre besoin, l'[API REST Dastra](../../api/endpoints.md) vous permet de développer vos propres scripts et connecteurs, et vous pouvez soumettre une demande de connecteur à l'équipe Dastra via le support.

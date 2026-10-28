@@ -279,7 +279,7 @@ Here are the main Endpoints that you will need to integrate your applications wi
 
 ## Create a new data subject rights request in Dastra
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
 #### Path Parameters
 
@@ -358,7 +358,7 @@ Here are the main Endpoints that you will need to integrate your applications wi
 
 ## Retrieve an existing data subject rights request via its ID
 
-<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 #### Path Parameters
 
@@ -627,7 +627,7 @@ Here are the main Endpoints that you will need to integrate your applications wi
 
 ## Retrieve a paginated list of data subject rights requests
 
-<mark style="color:blue;">`GET`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests`
+<mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
 You can pass optional search parameters to your query to filter the API response
 
@@ -922,7 +922,7 @@ You can pass optional search parameters to your query to filter the API response
 
 ## Update a data subject rights request
 
-<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 #### Path Parameters
 
@@ -1197,7 +1197,7 @@ You can pass optional search parameters to your query to filter the API response
 
 ## Delete a data subject rights request via its ID
 
-<mark style="color:red;">`DELETE`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/{id}`
+<mark style="color:red;">`DELETE`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
 Please note that this action is irreversible, and your request will be permanently deleted from our databases.
 
@@ -1220,7 +1220,7 @@ Please note that this action is irreversible, and your request will be permanent
 
 ## Change the process step of the data subject right request
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/workflow`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/workflow`
 
 #### Path Parameters
 
@@ -1237,7 +1237,7 @@ Please note that this action is irreversible, and your request will be permanent
 
 ## Archive a data subject right request via its ID
 
-<mark style="color:green;">`POST`</mark> `/v1​/ws​/{workspaceId}​/DataSubjectRequests​/archive​/{id}`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/archive/{id}`
 
 This endpoint applies the "Archived" state to the DSR request
 
@@ -1260,7 +1260,7 @@ This endpoint applies the "Archived" state to the DSR request
 
 ## Remove archived status from a DSR request
 
-<mark style="color:green;">`POST`</mark> `​/v1​/ws​/{workspaceId}​/DataSubjectRequests​/restore​/{id}`
+<mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/restore/{id}`
 
 #### Path Parameters
 

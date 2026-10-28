@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie den von Dastra angebotenen Support nutzen.
 # Support
 
 {% hint style="info" %}
-Wenn Sie Probleme beim Zugriff auf die Anwendung haben, können Sie das Dastra-Support-Team direkt per E-Mail unter [support@dastra.eu](mailto:support@dastra.eu) oder telefonisch unter [+33 1 76 31 05 47](telto:+33176310547) kontaktieren (Erreichbarkeit: 9:00 / 18:00 GMT+2)&#x20;
+Wenn Sie Probleme beim Zugriff auf die Anwendung haben, können Sie das Dastra-Support-Team direkt per E-Mail unter [support@dastra.eu](mailto:support@dastra.eu) oder telefonisch unter [+33 1 76 31 05 47](tel:+33176310547) kontaktieren (Erreichbarkeit: 9:00 / 18:00 GMT+2)&#x20;
 {% endhint %}
 
 In Dastra und über diese Dokumentation hinaus ist der Support auf verschiedene Weisen erreichbar: der Dastronauten-Assistent, die Online-Hilfe oder das Support-Anfrage-Formular.

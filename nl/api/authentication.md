@@ -1,5 +1,5 @@
 ---
-description: Om u te authenticeren bij de Dastra API moet u gebruik maken van
+description: Leer hoe u zich authenticeert bij de Dastra API.
 ---
 
 # Authenticatie
