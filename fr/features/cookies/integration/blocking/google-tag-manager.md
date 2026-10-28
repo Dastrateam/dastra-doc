@@ -105,6 +105,10 @@ Enregistrez vos changements et vous devriez constater que vos balises sont bien 
 
 ### Cas spécifique : rafraîchissement de la page si changement de la configuration des consentements
 
+{% hint style="warning" %}
+Les événements `dastra:consents:*` et `dastra:consent:<slug>` sont aussi déclenchés à chaque chargement de page, lorsque le widget applique les choix déjà enregistrés. Un `location.reload()` branché directement sur ces événements recharge la page en boucle. Enregistrez toujours l'écouteur dans `dastra:consents:ready`, comme dans les exemples ci-dessous : seuls les choix faits par le visiteur déclenchent alors le rechargement.
+{% endhint %}
+
 #### Refus des cookies suite à acceptation :
 
 Dans certain cas, certaines balises ne sont pas correctement nettoyés suite au refus des cookies. Cela se produit notamment dans le cas où un utilisateur décide d'accepter les cookies puis clique de nouveau sur le widget et décide de revenir sur son consentement. Dans la plupart des cas cela ne pose aucun problème car les marqueurs ne sont de toute façon par exécutés plusieurs fois dans la page et donc il n'est plus nécessaire de supprimer les balises scripts insérées dans la page.
@@ -118,9 +122,12 @@ Il suffit d'insérer le code suivant (en dessous de la balise d'initialisation d
 ```html
 <script>
 // If any service is refused explicitely in the modal
-window.addEventListener('dastra:consents:any_refused', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:any_refused', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -131,9 +138,12 @@ Pour recharger la page quand n'importe quel consentement change d'une façon ou 
 
 ```markup
 <script>
-window.addEventListener('dastra:consents:updated', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:updated', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -144,9 +154,12 @@ Pour recharger la page lors de l'acceptation totale des traceurs (bouton "tout a
 
 ```markup
 <script>
-window.addEventListener('dastra:consents:all_accepted', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:all_accepted', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -157,9 +170,12 @@ Pour recharger la page lors de l'acceptation d'un service spécifique :
 
 ```markup
 <script>
-window.addEventListener('dastra:consent:<slug du service>', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consent:<slug du service>', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```

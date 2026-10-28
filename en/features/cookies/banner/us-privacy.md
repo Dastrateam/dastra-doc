@@ -56,7 +56,9 @@ Dastra now supports these signals **natively** via a toggle in the widget config
 
 <figure><img src="../../../.gitbook/assets/cookie-widget-gpc-toggle.png" alt="Enable Global Privacy Control (GPC) toggle in the widget advanced settings"><figcaption><p>GPC option in the cookie consent widget advanced settings</p></figcaption></figure>
 
-When this option is enabled, the widget automatically refuses analytics and marketing cookies for any visitor whose browser sends a GPC or DoNotTrack signal — with no additional code required.
+When this option is enabled and the visitor has not made any choice yet, the widget automatically refuses every cookie category other than necessary cookies (preference, analytical, marketing, other and unclassified) as soon as the browser sends a GPC or DoNotTrack signal, with no additional code. The banner is not displayed to this visitor.
+
+The same toggle exists in each **Geo-target variation**: enable it on the variation that covers California.
 
 {% hint style="info" %}
 Native activation is available from the current version of the Dastra widget. It covers both the `globalPrivacyControl` and the `doNotTrack` signals.
@@ -119,9 +121,13 @@ Category labels to use with `setPurposeConsent`:
 
 ### 3. Displaying an "Opt-Out Request Honored" acknowledgment message
 
-When a GPC or DNT signal is detected, regulations such as CPRA recommend informing the user that their opt-out request has been acknowledged. Dastra does not generate this message natively — you need to inject it into the page yourself.
+When a GPC or DNT signal is detected, regulations such as CPRA recommend informing the user that their opt-out request has been acknowledged.
 
-Two approaches are available depending on the user experience you want.
+With native activation, the widget displays this message for 6 seconds instead of the banner. Default text: "Global Privacy Control detected: analytics and marketing cookies have been disabled." To change it, open the banner's **Texts and translations** tab, **Home page** section, in the field described as "Message displayed when the browser sends a Global Privacy Control or Do Not Track signal".
+
+The widget also dispatches the `dastra:gpc:applied` event on `window`, which you can listen to for your own processing.
+
+If you do not use native activation, or if you want a different display, two snippet-based approaches are available.
 
 #### Option A — Ephemeral toast
 
@@ -153,7 +159,7 @@ if (isOptOut) {
 </script>
 ```
 
-#### Option B — Persistent banner (recommended)
+#### Option B — Persistent banner
 
 A fixed bar at the bottom of the page, visible as long as GPC is active in the browser. More robust for compliance: the indication is permanent, not only visible on first load. A Dismiss button lets the user close it.
 
@@ -197,4 +203,4 @@ Adapt the message text to your editorial style and your users' language. For mul
 | CCPA geo-targeted variant    | Dastra interface                            | ✅ Yes                |
 | GPC detection                | Native toggle (widget config) — recommended | ✅ Yes (CPRA)         |
 | DNT detection                | Native toggle (widget config) — recommended | ❌ Recommended        |
-| Acknowledgment message       | JS snippet (advanced option)                | ❌ Recommended        |
+| Acknowledgment message       | Native (editable text) or JS snippet        | ❌ Recommended        |
