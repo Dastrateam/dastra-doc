@@ -1,29 +1,9 @@
-# TCF 1.1/2.0
+# IAB TCF
 
-{% hint style="danger" %}
-For the moment, this functionality is still in an experimental phase. Any implementation of TCF will not be effective
-{% endhint %}
+The Dastra consent widget does not support the IAB Transparency and Consent Framework (TCF) at the moment. No banner option enables it, and the widget does not generate a TCF consent string.
 
-The [consent management platform (CMP)](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) framework is currently supported by the Dastra widget. To enable the IAB vendor opt-in, you just need to go to the "services" part of the widget configuration and enable the corresponding checkbox.&#x20;
+To pass visitors' choices on to Google services, use Google Consent Mode V2:
 
-Once the box is checked, you can see the changes in the widget interface:
-
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-28-154917.png" alt=""><figcaption></figcaption></figure>
-
-Automatically, when the IAB opt-in, the cookie containing the encoded information about the user's consent to the IAB vendors is automatically created in the browser:
-
-<figure><img src="../../../.gitbook/assets/cookies-browser-cookie-table.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-This cookie has a default lifetime of 180 days and is named "eupubconsent"
-{% endhint %}
-
-### Capture the IAB chain of consent&#x20;
-
-When the user applies consent, it is possible to capture the consent string directly using the following event listener:
-
-```javascript
-document.addEventListener('dastra:consentstring',function(consentString){
-    console.log(consentString); // BOybBVKOybbNhABABBENCoAAAAAq6AAA
-});
-```
+{% content-ref url="blocking/google-consent-mode.md" %}
+[google-consent-mode.md](blocking/google-consent-mode.md)
+{% endcontent-ref %}

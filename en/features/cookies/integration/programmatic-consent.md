@@ -8,10 +8,14 @@ description: >-
 
 ## Where are the consents stored?
 
-The entire proof of user consent is stored in the browser's localStorage (the storage key is named dastra-consents) in json format. The propagation of consents depends on it, that's why it's not recommended to directly modify the data of this key
+By default, consents are stored in a browser cookie named `consent-eu`, as serialised JSON, for 180 days. In the banner configuration, you can:
+
+* change the name of this cookie (**Cookie consent name**);
+* change its lifetime (**Consent expiry time**) and its domain (**Consent cookie domain**);
+* store consents in localStorage instead (**Enable localStorage store for consent cookies**). The key is then `dastra-consents`, or the name chosen for the cookie.
 
 {% hint style="info" %}
-It's not recommended to directly modify the data in the localStorage. Preferably use the Javascript SDK of dastra.
+The propagation of consents depends on this data: do not modify it directly. Use the Dastra JavaScript SDK.
 {% endhint %}
 
 ### Access to the consent service
@@ -30,14 +34,16 @@ The dastra consent service can be accessed in this way:
 
 In manager.consent, you have the following methods:
 
-- open(): opens the consent widget
-- close(): closes the consent widget
 - getAllConsents(): retrieve all consents
 - hasConsented(): returns `true` if the user has already recorded an explicit consent
 - getPurposeConsent(purposeLabel:string): get consent for a cookie category
 - setPurposeConsent(purposeLabel:string, consent:bool): set the consent for a category
 - getServiceConsent(serviceShortName:string): retrieves consent for a particular service
 - setServiceConsent(serviceShortName:string, consent:bool): sets the consent for a particular service
+- save(): stores the consents and dispatches the events
+- dispatchEvents(): applies the current consents (events, Google Consent Mode, scripts) without storing them
+
+To open or close the widget, use `manager.open()` and `manager.close()`. Outside the `cookieReady` callback, use `dastra.push(['openCookieConsent'])` and `dastra.push(['closeCookieConsent'])`.
 
 ### Get the list of user's consents (getAllConsents)
 
@@ -68,14 +74,13 @@ The above method returns a list of all the user's consents
 ```javascript
 [
   {
-    "id":"000000-0000000-000000",
-    "name": "Service name",
-    "purpose": 1,
-    "logoUrl": "https://logo-url/img.jpg",
-    "privacyPolicyUrl":"",
-    "description": "Short description",
-    "defaultConsent": true,
-    "requiredConsent":true
+    "id": "000000-0000000-000000",
+    "name": "Google Analytics",
+    "slug": "google-analytics",
+    "consent": true,
+    "version": "1",
+    "date": "2026-10-28T10:00:00.000Z",
+    "purpose": "Analytical"
   },
   ...
 ]
@@ -126,10 +131,12 @@ Go to the service management interface, when editing a service, the simplified n
 <script>
 window.dastra = window.dastra || [];
 window.dastra.push(['cookieReady',function(manager){
-    // Get the complete consent services list
-    let cookiePurpose = 'google-analytics'; // 2 = Analytic
-    let consents = manager.consent.getServiceConsent(cookiePurpose );
-    manager.consent.setServicePurpose(cookiePurpose, false)
+    let cookieService = 'google-analytics';
+    let consents = manager.consent.getServiceConsent(cookieService);
+    manager.consent.setServiceConsent(cookieService, false);
+
+    // persist consent in cookies
+    manager.consent.save();
 }]);
 </script>
 ```
@@ -163,6 +170,19 @@ window.dastra.push(['cookieReady', function(manager) {
 
 You can equally opt-in selectively — for example to accept analytics only:
 
+```javascript
+<script>
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady', function(manager) {
+
+  manager.consent.setPurposeConsent('Analytical', true);
+  manager.consent.setPurposeConsent('Marketing',  false);
+  manager.consent.save();
+
+}]);
+</script>
+```
+
 ### Reacting to consent updates (the `dastra:consents:updated` event)
 
 Every time a user changes their consent choices — through the widget or programmatically via `save()` — Dastra dispatches a `dastra:consents:updated` event on `window`. You can subscribe to it to trigger your own logic: loading third-party scripts, updating the UI, firing an analytics event, etc.
@@ -180,18 +200,5 @@ window.addEventListener('dastra:consents:updated', function(event) {
 ```
 
 {% hint style="info" %}
-This event fires only when `save()` is called — it does **not** fire after `dispatchEvent()` (session-only application without persistence).
+This event fires on every call to `save()` or `dispatchEvents()`, and also on every page load, when the widget applies the saved choices. To react only to changes made by the visitor, register the listener inside `dastra:consents:ready` (see [Google Tag Manager](blocking/google-tag-manager.md)).
 {% endhint %}
-
-```javascript
-<script>
-window.dastra = window.dastra || [];
-window.dastra.push(['cookieReady', function(manager) {
-
-  manager.consent.setPurposeConsent('Analytical', true);
-  manager.consent.setPurposeConsent('Marketing',  false);
-  manager.consent.save();
-
-}]);
-</script>
-```

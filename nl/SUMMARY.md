@@ -157,7 +157,7 @@
     * [Mobiele toepassingen](features/cookies/integration/mobile/README.md)
       * [Hybride toepassingen](features/cookies/integration/mobile/hybrid.md)
       * [Native-applicaties](features/cookies/integration/mobile/native.md)
-    * [TCF 1.1/2.0](features/cookies/integration/tcf.md)
+    * [IAB TCF](features/cookies/integration/tcf.md)
   * [RGAA-naleving](features/cookies/accessibility.md)
   * [Problemen oplossen](features/cookies/troubleshooting.md)
 * [Geavanceerde configuratie](features/settings/README.md)

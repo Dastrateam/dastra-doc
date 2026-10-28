@@ -105,6 +105,10 @@ Sla je wijzigingen op en je zou moeten zien dat je tags zijn uitgeschakeld op de
 
 ### Specifiek geval: vernieuw de pagina als de toestemmingsconfiguratie is gewijzigd.
 
+{% hint style="warning" %}
+De events `dastra:consents:*` en `dastra:consent:<slug>` worden ook bij elke paginalading geactiveerd, wanneer de widget de al opgeslagen keuzes toepast. Een `location.reload()` die rechtstreeks aan deze events is gekoppeld, laadt de pagina eindeloos opnieuw. Registreer de listener daarom altijd binnen `dastra:consents:ready`, zoals in de voorbeelden hieronder: alleen de keuzes van de bezoeker activeren dan het herladen.
+{% endhint %}
+
 #### Weigering van cookies na acceptatie:
 
 In sommige gevallen worden bepaalde tags niet correct opgeschoond na weigering van cookies. Dit gebeurt met name wanneer een gebruiker besluit cookies te accepteren en vervolgens opnieuw op de widget klikt en besluit zijn toestemming in te trekken. In de meeste gevallen vormt dit geen probleem, omdat de markers toch niet meerdere keren in de pagina worden uitgevoerd en het dus niet meer nodig is om de scripttags die in de pagina zijn ingevoegd te verwijderen &#x20;
@@ -118,9 +122,12 @@ Voeg eenvoudig de volgende code in (indien mogelijk onder de Dastra widget initi
 ```html
 <script>
 // If any service is refused explicitely in the modal
-window.addEventListener('dastra:consents:any_refused', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:any_refused', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -131,9 +138,12 @@ Gebruik de functie _updated_ met de volgende code om de pagina opnieuw te laden 
 
 ```markup
 <script>
-window.addEventListener('dastra:consents:updated', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:updated', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -144,9 +154,12 @@ Om de pagina opnieuw te laden wanneer trackers volledig zijn geaccepteerd ("acce
 
 ```markup
 <script>
-window.addEventListener('dastra:consents:all_accepted', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consents:all_accepted', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```
@@ -157,9 +170,12 @@ De pagina herladen wanneer een specifieke service wordt geaccepteerd:&#x20;
 
 ```markup
 <script>
-window.addEventListener('dastra:consent:<slug du service>', function(){
-    // Refresh the current page
-    location.reload();
+// Consent events also fire on every page load: listen only once the widget is ready
+window.addEventListener('dastra:consents:ready', function(){
+    window.addEventListener('dastra:consent:<service-slug>', function(){
+        // Refresh the current page
+        location.reload();
+    })
 })
 </script>
 ```

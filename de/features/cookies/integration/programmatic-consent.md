@@ -8,10 +8,14 @@ description: >-
 
 ## Wo werden die Einwilligungen gespeichert?
 
-Der vollständige Einwilligungsnachweis des Nutzers wird im localStorage des Browsers gespeichert (der Speicherschlüssel heißt dastra-consents) im JSON-Format. Die Weiterleitung der Einwilligungen hängt davon ab, weshalb es nicht empfohlen wird, die Daten dieses Schlüssels direkt zu ändern
+Standardmäßig werden die Einwilligungen in einem Browser-Cookie namens `consent-eu` als serialisiertes JSON für 180 Tage gespeichert. In der Konfiguration des Banners können Sie:
+
+* den Namen dieses Cookies ändern;
+* seine Lebensdauer und seine Domain ändern;
+* die Einwilligungen stattdessen im localStorage speichern. Der Schlüssel lautet dann `dastra-consents` oder der für das Cookie gewählte Name.
 
 {% hint style="info" %}
-&#x20;Es wird nicht empfohlen, die Daten im localStorage direkt zu ändern. Verwenden Sie vorzugsweise das Dastra JavaScript-SDK.
+Die Weitergabe der Einwilligungen hängt von diesen Daten ab: Ändern Sie sie nicht direkt. Verwenden Sie das JavaScript-SDK von Dastra.
 {% endhint %}
 
 ### Zugriff auf den Einwilligungsdienst
@@ -30,14 +34,16 @@ Der Dastra-Einwilligungsdienst ist folgendermaßen zugänglich
 
 In manager.consent stehen Ihnen folgende Methoden zur Verfügung:
 
-- open() : öffnet das Einwilligungs-Widget
-- close() : schließt das Einwilligungs-Widget
 - getAllConsents() : ruft alle Einwilligungen ab
 - hasConsented() : gibt `true` zurück, wenn der Nutzer bereits eine explizite Einwilligung gespeichert hat
 - getPurposeConsent(purposeLabel:string) : ruft die Einwilligung einer Cookie-Kategorie ab
 - setPurposeConsent(purposeLabel:string, consent:bool): legt die Einwilligung für eine Kategorie fest
 - getServiceConsent(serviceShortName:string): ruft die Einwilligung eines bestimmten Dienstes ab.
 - setServiceConsent(serviceShortName:string, consent:bool): legt die Einwilligung eines bestimmten Elements fest
+- save(): speichert die Einwilligungen und löst die Ereignisse aus
+- dispatchEvents(): wendet die aktuellen Einwilligungen an (Ereignisse, Google Consent Mode, Skripte), ohne sie zu speichern
+
+Um das Widget zu öffnen oder zu schließen, verwenden Sie `manager.open()` und `manager.close()`. Außerhalb des Callbacks `cookieReady` verwenden Sie `dastra.push(['openCookieConsent'])` und `dastra.push(['closeCookieConsent'])`.
 
 ### Liste der Nutzer-Einwilligungen abrufen (getAllConsents)
 
@@ -58,14 +64,13 @@ Die obige Methode gibt die Liste aller Nutzer-Einwilligungen zurück
 ```javascript
 [
   {
-    "id":"000000-0000000-000000",
-    "name": "Service name",
-    "purpose": 1,
-    "logoUrl": "https://logo-url/img.jpg",
-    "privacyPolicyUrl":"",
-    "description": "Short description",
-    "defaultConsent": true,
-    "requiredConsent":true
+    "id": "000000-0000000-000000",
+    "name": "Google Analytics",
+    "slug": "google-analytics",
+    "consent": true,
+    "version": "1",
+    "date": "2026-10-28T10:00:00.000Z",
+    "purpose": "Analytical"
   },
   ...
 ]
