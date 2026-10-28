@@ -6,7 +6,7 @@ Voordat we beginnen, volgen hier enkele belangrijke definities:
 
 * **Waarschijnlijkheid:** komt overeen met de evaluatie van de frequentie waarmee een risico zich voordoet. Het is een score die empirisch wordt geëvalueerd (traditioneel een score op 5). Elk risiconiveau komt overeen met een frequentie van optreden.
 * **Impact:** komt overeen met de evaluatie van het gevolg van een gevreesde gebeurtenis voor het bedrijf.
-* **Huidig risico:** het risiconiveau zoals het is op een bepaald moment T, afhankelijk van het niveau van herstel van uw controlepunten. Het wordt als volgt berekend: {Current risk} = {Residual risk} + ({Initial risk} - {Residual risk}) * {Risk remediation rate}.
+* **Huidig risico:** het risiconiveau zoals het is op een bepaald moment T, afhankelijk van het niveau van herstel van uw controlepunten. Het wordt als volgt berekend: {Current risk} = {Initial risk} - ({Initial risk} - {Residual risk}) * {Risk remediation rate}.
 **Residueel risico:** dit is het risico dat overblijft na de implementatie van controlemaatregelen (interne controle).
 * **Initieel (of inherent) risico:** dit is het theoretische risico verbonden aan de activiteit. Het kan ook worden gedefinieerd als het oorspronkelijke risico, vóór controlemaatregelen (interne controle). Het wordt berekend door de bruto impact x te vermenigvuldigen met de bruto waarschijnlijkheid.
 * **Gevreesde gebeurtenis:** verwijst naar de onzekere gebeurtenis die zal worden gekarakteriseerd in termen van frequentie en ernst.

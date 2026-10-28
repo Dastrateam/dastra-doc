@@ -1,5 +1,5 @@
 ---
-description: Pour s'authentifier sur l'API Dastra vous devez utiliser
+description: Apprenez à vous authentifier sur l'API Dastra.
 ---
 
 # Authentification

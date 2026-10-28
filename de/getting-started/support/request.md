@@ -45,11 +45,11 @@ Dieser Service ist **24 Stunden am Tag, 7 Tage die Woche** verfügbar und ermög
 ### Telefon
 
 Bei Problemen mit dem Zugriff auf die Anwendung oder kritischen Notfällen:\
-[+33 1 76 31 05 47](telto:+33176310547) (Erreichbarkeit: 9:00 / 18:00 GMT+2)
+[+33 1 76 31 05 47](tel:+33176310547) (Erreichbarkeit: 9:00 / 18:00 GMT+2)
 
 ### Sonstige Anfragen
 
-Wenn Sie eine andere Art von Anfrage stellen möchten oder noch kein Konto bei Dastra erstellt haben, können Sie Ihre Anfrage direkt an die Adresse [support@dastra.eu](mailto:support@dastra.com) senden.\
+Wenn Sie eine andere Art von Anfrage stellen möchten oder noch kein Konto bei Dastra erstellt haben, können Sie Ihre Anfrage direkt an die Adresse [support@dastra.eu](mailto:support@dastra.eu) senden.\
 <br>
 
 \

@@ -45,11 +45,11 @@ Ce service est disponible **24h/24 et 7j/7** et nous permet d'historiser les dem
 ### Le téléphone
 
 Pour les problèmes d'accès à l'application ou les urgences majeures critiques :\
-[+33 1 76 31 05 47](telto:+33176310547) (Disponibilité : 9:00 / 18:00 GMT+2)
+[+33 1 76 31 05 47](tel:+33176310547) (Disponibilité : 9:00 / 18:00 GMT+2)
 
 ### Autres demandes
 
-Si vous souhaitez réaliser un autre type de demande ou si vous n'avez pas encore créé un compte dans Dastra, il vous est possible de nous faire parvenir votre demande directement à l'adresse [support@dastra.eu](mailto:support@dastra.com)\
+Si vous souhaitez réaliser un autre type de demande ou si vous n'avez pas encore créé un compte dans Dastra, il vous est possible de nous faire parvenir votre demande directement à l'adresse [support@dastra.eu](mailto:support@dastra.eu)\
 <br>
 
 \

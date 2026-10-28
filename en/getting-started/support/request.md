@@ -37,11 +37,11 @@ Integrated into our website, it is designed for quick questions that don't need 
 ## Phone
 
 &#x20;For application access problems or major critical emergencies :\
-[+33 1 76 31 05 47](telto:+33176310547) (Availability: 9:00 / 18:00 GMT+2)
+[+33 1 76 31 05 47](tel:+33176310547) (Availability: 9:00 / 18:00 GMT+2)
 
 ## Other requests&#x20;
 
-If you wish to make another type of request, or if you have not yet created an account in Dastra, you can send your request directly to us at [support@dastra.eu](mailto:support@dastra.com).
+If you wish to make another type of request, or if you have not yet created an account in Dastra, you can send your request directly to us at [support@dastra.eu](mailto:support@dastra.eu).
 
 
 
