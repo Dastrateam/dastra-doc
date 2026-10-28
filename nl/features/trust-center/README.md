@@ -9,11 +9,11 @@ Met het **Trust Center** kunnen organisaties een volledig configureerbaar **open
 Het Trust Center heeft een modulaire en flexibele configuratie, waarmee u de functies van uw keuze kunt selecteren en activeren uit de volgende opties:
 
 * [Aanpasbare startpagina](configuration/home.md) (verplicht)
-* [Vragenlijsten](configuration/questionnaires.md) (optioneel - vereist de functie [Vragenlijsten](../audit/))
+* [Vragenlijsten](configuration/questionnaires.md) (optioneel - vereist de functie [Vragenlijsten](../questionnaires/README.md))
 * [Documenten](configuration/attachments.md) (optioneel)
-* [Uitoefening van rechten](configuration/data-subject-requests.md) (optioneel - vereist de functie [Uitoefening van rechten](../gerer-les-exercices-des-droits/))
+* [Uitoefening van rechten](configuration/data-subject-requests.md) (optioneel - vereist de functie [Uitoefening van rechten](../requests/README.md))
 * [Organigram](configuration/org-chart.md) (optioneel)
-* [Register van verwerkingen](configuration/record-of-processing-activities.md) (optioneel - vereist de functie [Register van verwerkingen](../editer-le-registre/))
+* [Register van verwerkingen](configuration/ropa.md) (optioneel - vereist de functie [Register van verwerkingen](../ropa/README.md))
 * [AI-systemen](configuration/ai-systems.md) (optioneel - vereist de module AI-systemen in uw abonnement)
 
 ### Toegang tot de functie

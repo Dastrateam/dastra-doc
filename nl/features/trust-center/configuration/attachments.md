@@ -14,4 +14,4 @@ Om de functie **Documenten** in uw Trust Center te activeren, raadpleegt u de se
 
 Voeg bestanden toe in dit tabblad (door ze te uploaden of te selecteren uit uw bestaande bestanden in het documentbeheer) om ze openbaar beschikbaar te stellen in het tabblad Documenten van uw Trust Center (voor raadpleging en download).
 
-[Meer informatie over documentbeheer in Dastra.](../../gestion-de-documents-ged/)
+[Meer informatie over documentbeheer in Dastra.](../../files/README.md)
