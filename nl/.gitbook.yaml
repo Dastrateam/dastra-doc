@@ -1,7 +1,10 @@
 redirects:
+  api-references/authentication: api/authentication.md
   api-references/authentification: api/authentication.md
+  api-references/configuration: api/configuration.md
   api-references/configuration-api: api/configuration.md
   api-references/integrations-via-zapier: features/integrations/zapier/README.md
+  api-references/zapier: features/integrations/zapier/README.md
   commencer/commencer: getting-started/setup/README.md
   commencer/commencer/ajouter-une-autorite-chef-de-file: getting-started/setup/lead-authority.md
   commencer/commencer/creer-et-parametrer-des-entites-et-departements: getting-started/setup/organizational-units.md
@@ -16,6 +19,27 @@ redirects:
   commencer/le-support/faire-une-demande-de-support: getting-started/support/request.md
   commencer/le-support/laide-en-ligne: getting-started/support/online-help.md
   commencer/le-support/lassistant-dastronaute: getting-started/support/dastronaut.md
+  commencer/setup: getting-started/setup/README.md
+  commencer/setup/dpo: getting-started/setup/dpo.md
+  commencer/setup/faq: getting-started/setup/faq.md
+  commencer/setup/lead-authority: getting-started/setup/lead-authority.md
+  commencer/setup/organizational-units: getting-started/setup/organizational-units.md
+  commencer/setup/roles: getting-started/setup/roles.md
+  commencer/setup/teams: getting-started/setup/teams.md
+  commencer/setup/users: getting-started/setup/users.md
+  commencer/setup/visibility: getting-started/setup/visibility.md
+  commencer/setup/workspace: getting-started/setup/workspace.md
+  commencer/support: getting-started/support/README.md
+  commencer/support/dastronaut: getting-started/support/dastronaut.md
+  commencer/support/online-help: getting-started/support/online-help.md
+  commencer/support/request: getting-started/support/request.md
+  commencer/tutorial: getting-started/tutorial/README.md
+  commencer/tutorial/step-1: getting-started/tutorial/step-1.md
+  commencer/tutorial/step-2: getting-started/tutorial/step-2.md
+  commencer/tutorial/step-3: getting-started/tutorial/step-3.md
+  commencer/tutorial/step-4: getting-started/tutorial/step-4.md
+  commencer/tutorial/step-5: getting-started/tutorial/step-5.md
+  commencer/tutorial/step-6: getting-started/tutorial/step-6.md
   commencer/tutoriel: getting-started/tutorial/README.md
   commencer/tutoriel/etape-1-la-mise-en-place: getting-started/tutorial/step-1.md
   commencer/tutoriel/etape-2-cartographier-vos-traitements-de-donnees-a-caractere-personnel-et-etablir-le-registre: getting-started/tutorial/step-2.md
@@ -25,6 +49,8 @@ redirects:
   commencer/tutoriel/etape-6-documenter-la-conformite: getting-started/tutorial/step-6.md
   divers/faq-registre: other/faq.md
   divers/problemes-connus: other/known-problems.md
+  diversen/faq: other/faq.md
+  diversen/known-problems: other/known-problems.md
   features/audit: features/questionnaires/README.md
   features/audit/creez-un-modele-daudit: features/questionnaires/templates/README.md
   features/audit/planifier-un-audit: features/questionnaires/schedule.md
@@ -144,6 +170,8 @@ redirects:
   features/settings/single-sign-on-sso/saml-2: features/settings/sso/saml.md
   features/settings/workflows: features/settings/workflow-stages.md
   features/trust-center/configuration/record-of-processing-activities: features/trust-center/configuration/ropa.md
+  nuttige-herinneringen/la-gestion-des-risques: gdpr/risks/README.md
+  nuttige-herinneringen/rgpd-en-bref/registre-de-traitement: gdpr/concepts/ropa.md
   rappels-utiles/la-gestion-des-risques: gdpr/risks/README.md
   rappels-utiles/la-gestion-des-risques/definition-des-risques: gdpr/risks/definition.md
   rappels-utiles/la-gestion-des-risques/evaluation-dun-risque: gdpr/risks/assessment.md
