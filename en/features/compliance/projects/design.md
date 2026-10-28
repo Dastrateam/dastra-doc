@@ -66,7 +66,7 @@ Adding a framework allows you to import:
 
 Only the published versions of a framework are offered. When several published versions exist, choose the version in the **Version to install** list displayed next to the framework name; the current version is preselected.
 
-The project remains attached to the installed version. When it is no longer the current version, the framework card in the project overview displays the **Update available** badge. Moving to another version is done manually with the **Update the framework version** action, which is not possible while an audit is in progress in the project (see [Framework versions](../library/frameworks/versions-de-framework.md)).
+The project remains attached to the installed version. When it is no longer the current version, the framework card in the project overview displays the **Update available** badge. Moving to another version is done manually with the **Update the framework version** action, which is not possible while an audit is in progress in the project (see [Framework versions](../library/frameworks/versions.md)).
 
 Several frameworks can be added successively to the same project.
 

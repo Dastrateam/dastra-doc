@@ -17,7 +17,7 @@ The SCIM feature is reserved for customers on an **Enterprise plan.**
 {% endhint %}
 
 {% hint style="info" %}
-We strongly recommend that you first [set up SSO](single-sign-on-sso/) with the **"Force for all users" option enabled**.
+We strongly recommend that you first [set up SSO](sso/README.md) with the **"Force for all users" option enabled**.
 {% endhint %}
 
 ### How do I configure SCIM with Microsoft Entra ID?
@@ -92,7 +92,7 @@ Back in Entra, on your application's provisioning page:
 3. Click **Test Connection** to verify the connection
 4. Click **Save**
 
-If you encounter an error during the connection test, check that the SCIM feature is enabled on your subscription. [Contact support if needed](../../commencer/support/request-support.md)
+If you encounter an error during the connection test, check that the SCIM feature is enabled on your subscription. [Contact support if needed](../../getting-started/support/request.md)
 
 #### 9. Activate provisioning
 
@@ -353,4 +353,4 @@ When logging in, Dastra identifies the user via the email claim sent by the IdP.
 The email address is the **linking key** between SCIM and SSO: the `userName` provisioned via SCIM must be **identical** to the email claim returned at SSO login. Any discrepancy will prevent account matching.
 {% endhint %}
 
-For the full SSO claim configuration, see the [Single Sign On (SSO)](single-sign-on-sso/) page.
+For the full SSO claim configuration, see the [Single Sign On (SSO)](sso/README.md) page.

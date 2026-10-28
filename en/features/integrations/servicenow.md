@@ -24,7 +24,7 @@ It allows you to:
 
 **Installation**\
 \
-The setup process follows the common integration flow (see [Connections, use cases and field mapping](connections-and-field-mapping.md)):
+The setup process follows the common integration flow (see [Connections, use cases and field mapping](connections.md)):
 
 1. Go to the ServiceNow integration page in the Dastra integrations marketplace.\
    Example:\
@@ -55,7 +55,7 @@ Recent ServiceNow instances restrict Basic authentication on the REST API at the
 * Select the **users to notify on error** (required). They will receive an email notification when a synchronization fails, containing information about the updated assets.
 * **Create the Dastra record if it does not exist** — when enabled, an asset is created if it does not exist in Dastra, based on the external reference.
 * **Deduplicate synced items** — match incoming applications against existing assets on a **Matching field** (**Label** or **Reference**) to update them instead of creating duplicates.
-* **Field mapping** — choose which ServiceNow field (from `cmdb_ci_business_app`) fills each Dastra field. The choice lists are read live from your instance's data dictionary, so choice values can be transcoded to Dastra values. See [Connections, use cases and field mapping](connections-and-field-mapping.md).
+* **Field mapping** — choose which ServiceNow field (from `cmdb_ci_business_app`) fills each Dastra field. The choice lists are read live from your instance's data dictionary, so choice values can be transcoded to Dastra values. See [Connections, use cases and field mapping](connections.md).
 
 {% hint style="info" %}
 Warning: if you enable the creation option, a large number of assets may be automatically created in your workspace. Make sure to properly configure external references.

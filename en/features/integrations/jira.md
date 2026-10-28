@@ -75,7 +75,7 @@ Some Dastra fields only accept a fixed list of values, such as **Rights of the d
 * associate each Jira value with a Dastra value, and/or
 * set a **default value**, used when the Jira value has no match.
 
-The configuration cannot be saved while a row is incomplete. Jira fields with closed values (statuses, select lists) offer their possible values in the same **Advanced** panel. See [Connections and field mapping](connections-and-field-mapping.md) for the details of the mapping editor.
+The configuration cannot be saved while a row is incomplete. Jira fields with closed values (statuses, select lists) offer their possible values in the same **Advanced** panel. See [Connections and field mapping](connections.md) for the details of the mapping editor.
 
 <!-- 📸 Screenshot: the Advanced panel of the "Rights of the data subject" row, with two Jira values associated with rights and a default value -->
 

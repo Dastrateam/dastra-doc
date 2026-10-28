@@ -46,38 +46,38 @@ You can also print the dashboard or invite a user directly by clicking on one of
 
 Explore the features now:
 
-{% content-ref url="editer-le-registre/" %}
-[editer-le-registre](editer-le-registre/)
+{% content-ref url="ropa/README.md" %}
+[editer-le-registre](ropa/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="editer-le-registre/data-visualization/" %}
-[data-visualization](editer-le-registre/data-visualization/)
+{% content-ref url="ropa/visualization/README.md" %}
+[data-visualization](ropa/visualization/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="risk-management/" %}
-[risk-management](risk-management/)
+{% content-ref url="risks/README.md" %}
+[risk-management](risks/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="planifier/" %}
-[planifier](planifier/)
+{% content-ref url="tasks/README.md" %}
+[planifier](tasks/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="gerer-les-exercices-des-droits/" %}
-[gerer-les-exercices-des-droits](gerer-les-exercices-des-droits/)
+{% content-ref url="requests/README.md" %}
+[gerer-les-exercices-des-droits](requests/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="notifier-les-violations-de-donnees/" %}
-[notifier-les-violations-de-donnees](notifier-les-violations-de-donnees/)
+{% content-ref url="incidents/README.md" %}
+[notifier-les-violations-de-donnees](incidents/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="gerer-le-consentement-aux-cookies/" %}
-[gerer-le-consentement-aux-cookies](gerer-le-consentement-aux-cookies/)
+{% content-ref url="cookies/README.md" %}
+[gerer-le-consentement-aux-cookies](cookies/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="audit/" %}
-[audit](audit/)
+{% content-ref url="questionnaires/README.md" %}
+[audit](questionnaires/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="settings/" %}
-[settings](settings/)
+{% content-ref url="settings/README.md" %}
+[settings](settings/README.md)
 {% endcontent-ref %}
