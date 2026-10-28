@@ -109,7 +109,7 @@ Le provisionnement automatique **ne se déclenche que si l'utilisateur arrive pa
 Diffusez à vos utilisateurs le lien de votre connexion SSO, de la forme :
 
 ```
-https://account.dastra.eu/account/loginexternal?provider={id de votre provider}&returnUrl=https://app.dastra.eu
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={id de votre provider}
 ```
 
 Vous le récupérez avec le bouton **Copier le lien** sur la carte de la connexion SSO :

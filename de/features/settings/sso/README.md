@@ -64,9 +64,7 @@ Sie können vom SSO befreite Nutzer benennen, indem Sie die Nutzer Ihrer Organis
 Wenn Sie möchten, dass die Nutzer Ihres Identitätsanbieters keine Konten erstellen müssen, um auf die Einheit zuzugreifen, können Sie das Kontrollkästchen „Automatische Nutzerbereitstellung" aktivieren. Wenn Sie Ihren Nutzern eine SSO-Anbieter-URL wie diese bereitstellen:
 
 ```
-https://account.dastra.eu/account/loginexternal?
-provider={id de votre provider}&
-returnUrl=https://www.dastra.eu 
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={ID Ihres Providers}
 ```
 
 Sie können diesen Link abrufen, indem Sie auf diese Schaltfläche klicken:<br>

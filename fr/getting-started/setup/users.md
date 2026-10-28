@@ -130,7 +130,7 @@ Comme pour les rôles personnalisés, cet identifiant se récupère depuis la **
 1. Ouvrez [la page de configuration des logins SSO](https://app.dastra.eu/general-settings/sso) (vous devez être propriétaire de l'organisation).
 2. Ouvrez la console de développement (voir les raccourcis clavier ci-dessus) et placez-vous sur l'onglet **Réseau**.
 3. Cliquez sur l'icône crayon du login SSO concerné pour ouvrir la fenêtre **Modifier le login SSO**. Il s'agit d'une fenêtre modale : l'URL de la page reste `https://app.dastra.eu/general-settings/sso`.
-4. Dans l'onglet **Réseau**, ouvrez la requête déclenchée à l'ouverture de la fenêtre et relevez la valeur du champ `id` : c'est cette valeur à reporter dans la colonne `SSOConfigurationId`.
+4. Dans l'onglet **Réseau**, ouvrez la requête déclenchée à l'ouverture de la fenêtre et relevez la valeur du champ `scheme` (c'est aussi la fin de l'URL de la requête, après `ssoConfiguration/`) : c'est cette valeur à reporter dans la colonne `SSOConfigurationId`.
 
 {% hint style="info" %}
 Le login SSO doit avoir été configuré préalablement. Voir la page [Single Sign On (SSO)](../../features/settings/sso/README.md).

@@ -37,7 +37,7 @@ Here are the details you need to configure the service provider:
 To configure your authentication provider, you will need the following information:
 
 * Issuer: by default "[https://www.dastra.eu](https://www.dastra.eu/)"
-* SP Redirect URI: by default [https://account.dastra.eu/Saml2/Acs](https://account.dastra.eu/Saml2/Acs)
+* SP Redirect URI (ACS): `https://account.dastra.eu/{connection identifier}/Acs`. This URL is specific to each connection: copy it from the top of the SAML form when you add the SSO login in Dastra (step 2), then save that login.
 
 2. **Configuration of the Service Provider**
 

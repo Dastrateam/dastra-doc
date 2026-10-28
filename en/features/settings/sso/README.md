@@ -50,7 +50,9 @@ Dastra offers two single sign-on authentication protocols, [SAML 2](https://app.
 
 If you want users from your identity provider not to need to create accounts to access the entity, you can check the box "automatic user provisioning." If you provide your users with an SSO provider URL like this one:
 
-https://account.dastra.eu/account/loginexternal?provider={your provider id}\&returnUrl=https://www.dastra.eu
+```
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={your provider id}
+```
 
 Once authentication is validated, users automatically have an account created in Dastra. The organization owners then receive an email stating the name and address of the account created, the date and time, the SSO connection that created it, the workspace concerned where applicable, and a link to the "Users" page, so that the expected rights can be granted without delay.
 
