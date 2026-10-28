@@ -4,68 +4,104 @@ description: Learn how to activate and use the processing freshness option
 
 # Processing freshness
 
-The freshness of a processing is an indicator of when it was last updated. Freshness will decrease as the expiry date of the processing approaches. This feature is a simple and fun way of ensuring that the information in your record of processings is always up to date.
+The freshness of a processing activity shows when it was last reviewed. Once regular reviews are enabled, each review sets a next review date, and the freshness decreases as that date approaches. It is a simple way to make sure the information in your record of processing activities is reviewed regularly and stays up to date.
+
+{% hint style="info" %}
+Regular reviews are also available for other items, such as stakeholders, assets, contracts or AI systems. The common mechanism is described in [Regular review (freshness)](../regular-review.md); this page details how it works for processing activities.
+{% endhint %}
 
 ### Activate the processing freshness option
 
-Processing freshness is optional and deactivated by default.&#x20;
+Processing freshness is optional and deactivated by default. It is set up for the whole workspace, in the workspace settings, under **Regular reviews**.
 
-To activate the option, go to your record of processings, click on the action selector for the "New data processing" button and then on "Enable processings freshness".&#x20;
+To open this setting from your record, click the arrow next to the **Create data processing** button, then **Set up regular review**. The menu item also shows whether the option is currently **Enabled** or **Disabled**.
 
-This action is reserved for your workspace administrators.
+<figure><img src="../../.gitbook/assets/ropa-freshness-1.png" alt="Set up regular review in the Create data processing menu"><figcaption><p>The Set up regular review entry of the Create data processing menu</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/processing-list-enable-freshness-menu.png" alt=""><figcaption></figcaption></figure>
+In the **Regular reviews** settings:
 
-The following window appears, giving you the option of setting the expiry interval for your processing. The freshness of a processing corresponds to the number of days between the last date on which the processing was marked as fresh and the expiry date of the processing.&#x20;
+1. Select **Processing activity** in the item type selector.
+2. Turn on **Enable regular reviews**.
+3. In **Define the desired frequency for each review**, enter the interval between two reviews, in years, months or days.
+4. Click **Save changes**.
 
-The expiry date is a date in the future calculated from the last date on which the processing was marked as fresh, to which we add the expiry interval. Please note that this expiry interval will be the same for all processing in your register.&#x20;
+Only users with the **Advanced configuration** permission can change this setting.
 
-A second option allows you to mark all the processing in your register as fresh when you activate the option (this will start a freshness cycle for all the processing in the register immediately).
+<figure><img src="../../.gitbook/assets/ropa-freshness-2.png" alt="Regular reviews settings for processing activities"><figcaption><p>The Regular reviews settings for processing activities</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-list-empty.png" alt=""><figcaption></figcaption></figure>
+The interval applies to all the processing activities of the workspace. The next review date of a processing activity is the date of its last review plus this interval, unless a specific date was chosen during the review (see [Review a processing activity](#review-a-processing-activity)).
 
-_Example: Today is 04/07/2023, I activate the freshness of processing option in my record of processings and set an expiry interval of 1 month. I tick the option "set all of your processings as fresh as of today" and validate. The expiry date for my processing is calculated as 04/08/2023 (last date on which my processing was marked fresh, 04/07/2023, to which we add the expiry interval, 1 month). I reconnect on 15/07/2023, and my processing still has 20 days of freshness left (the difference between the expiry date and today's date)._
+When you save a new interval, Dastra asks whether it should apply to the reviews already recorded:
 
-### Disable the processing freshness option&#x20;
+* **Apply to all existing reviews**: the review dates already scheduled are recalculated with the new interval, which overwrites them;
+* **Apply only to future reviews**: the review dates already scheduled are kept, and the new interval is used from the next review onwards.
 
-To deactivate the option, go to your record of processings, click on the action selector for the "New data processing" button and then on "Disable processing freshness option".&#x20;
+<figure><img src="../../.gitbook/assets/ropa-freshness-3.png" alt="Apply the new interval confirmation"><figcaption><p>Choose whether the new interval applies to existing reviews</p></figcaption></figure>
 
-This action is reserved for your workspace administrators. Each processing will retain the last date on which it was marked as fresh if you decide to reactivate the option in the future.
+{% hint style="info" %}
+**Example:** you set an interval of 1 year. A processing activity reviewed on 15 January 2026 has a next review date of 15 January 2027. It is displayed **Fresh** for most of the year, **Soon out of date** during the last 10% of the interval (a little over a month), then **Outdated** once its next review date has passed, until it is reviewed again.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/referentiel-datasets-create-dropdown.png" alt=""><figcaption></figcaption></figure>
+### Disable the processing freshness option
 
-### Freshness indicators&#x20;
+To deactivate the option, go back to the **Regular reviews** settings, select **Processing activity**, turn off **Enable regular reviews** and click **Save changes**.
 
-Once the option has been activated, you will find freshness indicators for your processing in several places. Please note that freshness is only displayed for **published processings** that have been **marked as fresh at least once** (either when the option is activated via the "mark all your processings as fresh as of today" selector, or manually in a processing record).
+The freshness indicators are then no longer displayed. Each processing activity keeps its review history and its last review date, which are used again if you reactivate the option later.
 
-#### In the right-hand menu of your processing record&#x20;
+### Freshness indicators
 
-You will find the freshness indicator in the top right-hand corner of your processing record (provided that the processing has been published and marked as fresh at least once). This indicator consists of a label with the values "Fresh", "Relatively fresh" and "Expired", a colour (green, yellow and red respectively), a progress bar that decreases as the expiry date approaches, a button for marking the processing as fresh and the number of days remaining or overdue in relation to the expiry date.
+Freshness is only displayed for **published** processing activities that have been **reviewed at least once**. A processing activity can be in one of the following states:
 
-<figure><img src="../../.gitbook/assets/contracts-contract-page-overview.png" alt=""><figcaption></figcaption></figure>
+| State                     | Meaning                                                                                              |
+| ------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Fresh (green)             | The processing activity was reviewed recently and does not need immediate attention.                |
+| Soon out of date (orange) | The last 10% of the interval between two reviews has started: the review should be planned.         |
+| Outdated (red)            | The next review date has passed: the processing activity no longer complies with the review policy. |
+| Pending review            | The processing activity is published but has never been reviewed.                                   |
 
-<figure><img src="../../.gitbook/assets/processing-record-freshness-quality-indicators.png" alt=""><figcaption><p>In mobile view, you will also find this indicator in the navigation bar at the top of your processing record.</p></figcaption></figure>
+A processing activity still in draft is shown as **not published** in the list, and as **Awaiting publication** on its record.
 
-#### In the freshness column of your processing register
+#### On the processing activity record
 
-&#x20;By displaying the freshness column in the list view of your processing register, you can find the indicator for each processing record that meets the display conditions (published processing with at least one date on which it was identified as fresh).
+On a wide screen, the freshness indicator is at the top of the right-hand panel of the processing activity record. It shows the **Freshness** bar, which shrinks as the next review date approaches, the state and its colour, a **Review** link and the number of days remaining or late.
 
-<figure><img src="../../.gitbook/assets/processing-list-freshness-column.png" alt=""><figcaption></figcaption></figure>
 
-### Mark as fresh
+On a smaller screen, the right-hand panel is hidden: the state (for example **Fresh**) is displayed in the header of the record, next to the **Overall progression**, **Quality** and **Sensitivity** indicators. Click it to open the **Review** window.
 
-You can decide to refresh a processing at any time, without necessarily waiting for the expiry date.&#x20;
+<figure><img src="../../.gitbook/assets/ropa-freshness-5.png" alt="Freshness indicator in the header of a processing activity"><figcaption><p>On a smaller screen, the freshness indicator is displayed in the header of the record</p></figcaption></figure>
 
-To do this, click on "mark as fresh" to display the window for refreshing a processing (in mobile display, this window can be accessed by clicking on the leaf freshness icon):
+#### In the list of your record
 
-<figure><img src="../../.gitbook/assets/processing-mark-as-fresh-dialog.png" alt=""><figcaption></figcaption></figure>
+The **Last review date** column shows the freshness state of each processing activity and the date of its last review. Hover over the state to see the number of days remaining or late. This column is added to your list view when you activate the option; you can also add it to the displayed columns at any time.
 
-By marking the processing as fresh, you will restart a freshness cycle from today's date until the next expiry date. The expiry date is calculated by default according to the freshness policy of your workspace (freshness interval applied when the processing freshness option is activated). You can decide to ignore this default date and apply a specific expiry date to this processing by ticking the "Change expiry date" option and selecting a new date (the expiry date must be at least D+1).
+<figure><img src="../../.gitbook/assets/processing-list-freshness-column.png" alt="Last review date column in the record list"><figcaption><p>The Last review date column</p></figcaption></figure>
 
-### Important information about how freshness works&#x20;
+You can also display the **Future review date** column, which shows the next review date recorded for each processing activity, and filter your record with the **Freshness** filter (available under **Filters**), using the values **Fresh**, **Pending** (published but never reviewed) or **Outdated**.
 
-Please note that we treat the date on which a processing record is updated (when the record is saved, for example) independently of the date on which a processing was identified as fresh. It is therefore necessary to click on "mark as fresh" to (re)initialise the freshness date of a processing record.&#x20;
+### Review a processing activity
 
-### Notifications&#x20;
+You can review a processing activity at any time, without waiting for its next review date. Reviewing requires write access to the record of processing activities. Open the **Review** window:
 
-The owner of a processing that has become outdated will receive a warning email to remind them that one of their processing activities has not been reviewed for a long time and that it is time to refresh it.
+* from the processing activity record: click the freshness indicator, the **Review** link of the right-hand panel, or **Review** in the menu next to the **Save changes** button;
+* from the list: click the cell of the **Last review date** column.
+
+To review several processing activities at once, select them in the list, then choose **Review** in **Select a batch action**.
+
+<figure><img src="../../.gitbook/assets/ropa-freshness-7.png" alt="The Review window"><figcaption><p>The Review window</p></figcaption></figure>
+
+In the **New review** tab, fill in:
+
+* **Reviewer** (required): the user who carried out the review, yourself by default;
+* **Review date** (required): today by default;
+* **Description of the version** (optional): a short description of what was checked or changed;
+* **Date before next review**: calculated from the review date and the interval set for the workspace. To apply a specific date to this processing activity, turn on **Change the date of the next review** and select a new date (at the earliest, the next day).
+
+Click **Review** to save. A new freshness cycle starts from the review date until the next review date.
+
+When the window is opened for a single processing activity, the **Previous reviews** tab lists its past reviews. This tab also offers the **Delete all reviews** button, which clears the review history: once confirmed, the last and next review dates are cleared and the freshness indicator is no longer displayed. This action cannot be undone.
+
+### Important information about how freshness works
+
+Saving a processing activity does not count as a review: the date of the last review is independent of the date on which the record was last updated. To (re)start the freshness cycle of a processing activity, you must review it.
+
+Moving a processing activity to the final step of its workflow can also record a review: the step change window then shows a **Review** switch, enabled by default.

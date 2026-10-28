@@ -28,9 +28,13 @@ For each processing operation, the record of a controller shall indicate at leas
 7. the **time limits for the erasure** of the various categories of data, i.e. the retention period, or failing that the criteria for determining it
 8. to the extent possible, **a general description of the technical and organizational security measures** that you implement
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-01-24-165625.png" alt=""><figcaption><p>The different sections of a "data controller" processing activity in Dastra</p></figcaption></figure>
+In Dastra, a processing activity created as a data controller is documented in 12 sections: **General**, **Parties involved**, **Purposes**, **Assets**, **Datasets**, **Data subject**, **Subject's rights**, **Recipients**, **Measures**, **Impact assessment**, **Documentation** and **Summary**. The sections below show where each piece of information required by Article 30 is documented.
+
+<figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Section navigation of a data controller processing activity"><figcaption><p>The different sections of a "data controller" processing activity in Dastra</p></figcaption></figure>
 
 ## Actors
+
+Documented in the **Parties involved** section:
 
 * The identity and contact information of the data controller&#x20;
 * The identity and contact information of the DPO, if applicable&#x20;
@@ -39,9 +43,13 @@ For each processing operation, the record of a controller shall indicate at leas
 
 ## Purposes
 
+Documented in the **Purposes** section:
+
 * All purposes related to the activity involving the processing
 
 ## Legal basis
+
+Each purpose is associated with its legal basis, also in the **Purposes** section:
 
 * Compliance with a legal obligation&#x20;
 * Fulfillment of a contract&#x20;
@@ -52,22 +60,25 @@ For each processing operation, the record of a controller shall indicate at leas
 
 ## Inventory of data and data subjects
 
+Documented in the **Data subject** and **Datasets** sections:
+
 * Type of data subjects&#x20;
 * Categories of data&#x20;
 * Time limits for deleting data or applicable rule
 
 ## Recipients and transfers of data outside the EEA
 
+Documented in the **Recipients** section:
+
 * Identification of recipients including internal recipients (department concerned by the processing); external bodies (commercial or institutional partners); data processors (host, solution provider); data subject where applicable and joint data controllers&#x20;
 * For each recipient, identification of transfers outside the European Economic Area (EEA) and the legal tools used (Binding corporate rules in the case of transfers outside the EU with subsidiaries, standard contractual clauses, country recognized as adequate, etc.)
 
 ## Security measures
 
+Documented in the **Measures** section:
+
 * Technical and organizational measures implemented to secure each data processing&#x20;
-* For example, data encryption, pseudonymization, access limitation\
-  <br>
-
-
+* For example, data encryption, pseudonymization, access limitation
 
 ***
 

@@ -17,9 +17,9 @@ The rest of this page deals only with the "Data processor" record.
 
 ## The "Data processor" record
 
-Each data processor is required to fill out a less extensive record.&#x20;
+Each data processor is required to keep a less extensive record.&#x20;
 
-This record contains :&#x20;
+This record contains:&#x20;
 
 * the **contact details of the data processor**, its representative, if applicable, and its DPO&#x20;
 * the **contact details of all data controllers on whose behalf the data processor acts** (usually the clients)&#x20;
@@ -28,15 +28,19 @@ This record contains :&#x20;
 * the **transfers** outside the EEA&#x20;
 * the **security measures**
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-04-25-154507.png" alt=""><figcaption><p>The different sections of a "data processor" processing activity in Dastra</p></figcaption></figure>
+In Dastra, a processing activity created as a data processor is documented in 12 sections: **General**, **Parties involved**, **Purposes**, **Assets**, **Datasets**, **Controllers**, **Data subject**, **Subject's rights**, **Recipients**, **Measures**, **Documentation** and **Summary**.
 
+Compared with a data controller activity, the **Controllers** section lets you declare the data controllers on whose behalf you act (usually your clients), and there is no **Impact assessment** section.
 
+<figure><img src="../../.gitbook/assets/ropa-processor-1.png" alt="Section navigation of a data processor processing activity"><figcaption><p>The different sections of a "data processor" processing activity in Dastra</p></figcaption></figure>
 
 ***
 
 {% hint style="info" %}
 You can change the type of processing activity (from one created as a data controller to one created as a processor, and vice versa)\
 [The procedure is available here](https://doc.dastra.eu/en/features/ropa/faq#how-can-i-change-my-type-of-processing-activity-from-one-created-as-a-data-controller-to-one-created)
+
+When you switch a processor activity back to a data controller activity, the clients linked to it are removed.
 {% endhint %}
 
 ## For more information
