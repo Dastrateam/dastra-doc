@@ -1,137 +1,96 @@
 # API-Anwendungsfälle
 
-Basierend auf den Spezifikationen der Dastra-API-Dokumentation finden Sie hier einen Leitfaden für drei Anwendungsfälle sowie Beispiele in Python mit AIOHTTP zur Durchführung der Anfragen:
-
-#### Voraussetzungen
-
-Stellen Sie sicher, dass AIOHTTP in Ihrer Umgebung installiert ist:
+Diese Seite zeigt drei Python-Beispiele zu Betroffenenanfragen: eine Datei an eine Anfrage anhängen, der anfragenden Person eine Nachricht mit dieser Datei senden und die neuen Anfragen auflisten. Die Beispiele verwenden die Bibliothek `requests` und authentifizieren sich mit dem Header `X-API-Key` (siehe [Authentifizierung](authentication.md)).
 
 ```sh
-pip install aiohttp
+pip install requests
 ```
 
-#### 1. Einen Anhang für einen Betroffenenanfrage erstellen
-
-**Endpunkt**: `/datasubjectattachments`
-
-**Methode**: POST
-
-**Beschreibung**: Dieser Endpunkt wird verwendet, um einen Anhang zu erstellen, der mit einer Betroffenenanfrage verknüpft ist.
-
-**Beispiel-Anfrage**:
+Alle Beispiele verwenden diese Einstellungen:
 
 ```python
-import aiohttp
-import asyncio
+import os
+import requests
 
-async def create_attachment(workspace_id, api_key, attachment_data):
-    url = f"https://api.dastra.eu/v1/ws/{workspace_id}/datasubjectattachments"
-    
-    headers = {
-        "Content-Type": "application/json",
-        "X-Api-Key": api_key
-    }
-
-    async with aiohttp.ClientSession() as session:
-        async with session.post(url, json=attachment_data, headers=headers) as response:
-            return await response.json()
-
-# Beispiel-Verwendung
-workspace_id = "votre_workspace_id"
-api_key = "votre_api_key"
-attachment_data = {
-    # Füllen Sie die Daten Ihres Anhangs aus
-    "dataSubjectRequestId": "id_de_la_demande",
-    "fileName": "exemple.pdf",
-    "fileContent": "contenu_encodé_base64"
-}
-
-response = asyncio.run(create_attachment(workspace_id, api_key, attachment_data))
-print(response)
+API_URL = "https://api.dastra.eu"
+WORKSPACE_ID = 123  # Kennung Ihres Arbeitsbereichs
+HEADERS = {"X-API-Key": "<Ihr privater Schlüssel>"}
 ```
 
-#### 2. Eine Nachricht mit Anhang in einer Betroffenenanfrage senden
+## 1. Eine Datei an eine Anfrage anhängen
 
-**Endpunkt**: `/datasubjectmessages`
+`POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`
 
-**Methode**: POST
-
-**Beschreibung**: Dieser Endpunkt wird verwendet, um eine Nachricht mit einem Anhang in einer Betroffenenanfrage zu senden.
-
-**Beispiel-Anfrage**:
+Die Datei wird als `multipart/form-data` im Feld `file` gesendet. Die Antwort enthält die Kennung des Anhangs (`id`), die im nächsten Beispiel verwendet wird.
 
 ```python
-import aiohttp
-import asyncio
+def upload_attachment(request_id, path):
+    with open(path, "rb") as f:
+        response = requests.post(
+            f"{API_URL}/v1/ws/{WORKSPACE_ID}/DataSubjectAttachments/{request_id}",
+            headers=HEADERS,
+            files={"file": (os.path.basename(path), f, "application/pdf")},
+        )
+    response.raise_for_status()
+    return response.json()
 
-async def send_message_with_attachment(workspace_id, api_key, message_data):
-    url = f"https://api.dastra.eu/v1/ws/{workspace_id}/datasubjectmessages"
-    
-    headers = {
-        "Content-Type": "application/json",
-        "X-Api-Key": api_key
-    }
-
-    async with aiohttp.ClientSession() as session:
-        async with session.post(url, json=message_data, headers=headers) as response:
-            return await response.json()
-
-# Beispiel-Verwendung
-workspace_id = "votre_workspace_id"
-api_key = "votre_api_key"
-message_data = {
-    # Füllen Sie die Daten Ihrer Nachricht aus
-    "requestId": "id_de_la_demande",
-    "subject": "Betreff der Nachricht",
-    "body": "Inhalt der Nachricht",
-    "attachmentId": "id_de_la_pièce_jointe"  # ID des zuvor erstellten Anhangs
-}
-
-response = asyncio.run(send_message_with_attachment(workspace_id, api_key, message_data))
-print(response)
+attachment = upload_attachment("<ID der Anfrage>", "auskunft-export.pdf")
+print(attachment["id"], attachment["fileName"])
 ```
 
-#### 3. Neue Anfragen nach Filtern abrufen
+## 2. Eine Nachricht mit dem Anhang senden
 
-**Endpunkt**: `/DataSubjectRequests`
+`POST /v1/ws/{workspaceId}/DataSubjectMessages`
 
-**Methode**: GET
+Der JSON-Body enthält die Kennung der Anfrage, den Nachrichtentext (höchstens 3.000 Zeichen) und die Liste der Anhänge (höchstens 20). Wenn die Anfrage eine E-Mail-Adresse hat, wird die anfragende Person per E-Mail benachrichtigt.
 
-**Beschreibung**: Dieser Endpunkt wird verwendet, um neue Betroffenenanfragen anhand bestimmter Filter abzurufen.
+```python
+def send_message(request_id, text, attachment_ids):
+    response = requests.post(
+        f"{API_URL}/v1/ws/{WORKSPACE_ID}/DataSubjectMessages",
+        headers=HEADERS,
+        json={
+            "dataSubjectRequestId": request_id,
+            "message": text,
+            "attachments": [{"id": attachment_id} for attachment_id in attachment_ids],
+        },
+    )
+    response.raise_for_status()
+    return response.json()
 
-**Beispiel-Anfrage**:
-
-```
-import aiohttp
-import asyncio
-
-async def get_new_requests(workspace_id, api_key, filters):
-    url = f"https://api.dastra.eu/v1/ws/{workspace_id}/DataSubjectRequests"
-    
-    headers = {
-        "Content-Type": "application/json",
-        "X-Api-Key": api_key
-    }
-
-    params = {
-        "filters": filters  # Die Filter müssen ein JSON-String sein
-    }
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, headers=headers, params=params) as response:
-            return await response.json()
-
-# Beispiel-Verwendung
-workspace_id = "votre_workspace_id"
-api_key = "votre_api_key"
-filters = '{"field":"status","operator":"equal","value":"new"}'  # Beispiel-Filter
-
-response = asyncio.run(get_new_requests(workspace_id, api_key, filters))
-print(response)
+message = send_message("<ID der Anfrage>", "Guten Tag, anbei erhalten Sie den Export Ihrer Daten.", [attachment["id"]])
+print(message["id"])
 ```
 
-#### Fazit
+## 3. Die neuen Anfragen auflisten
 
-Dieser Leitfaden bietet eine schrittweise Anleitung zur Interaktion mit der Dastra-API unter Verwendung von Python und AIOHTTP. Ersetzen Sie die Platzhalter wie `workspace_id`, `api_key` und die Anfragedaten durch Ihre tatsächlichen Daten.
+`GET /v1/ws/{workspaceId}/DataSubjectRequests`
 
-Passen Sie die Filterkriterien und Anfrage-Payloads gerne an Ihre Bedürfnisse an.
+Die Filter werden als Query-Parameter übergeben:
+
+| Parameter       | Wirkung                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------- |
+| `states`        | Status der Anfrage: `Open`, `IdentityValidation`, `Processing`, `Active`, `Closed`. Wiederholbar. |
+| `purposes`      | Art des Rechts: `Access`, `Rectification`, `Erasure`, `Opposition`, `Portability` usw. Wiederholbar. |
+| `q`             | Textsuche                                                                                   |
+| `areaId`        | Organisationseinheit                                                                        |
+| `sortBy`, `asc` | Sortierung, zum Beispiel `sortBy=dateCreation&asc=false` für die neuesten zuerst            |
+| `page`, `size`  | Seitenaufteilung (standardmäßig 20 Ergebnisse pro Seite)                                    |
+
+Archivierte Anfragen sind ausgeschlossen. Die Antwort enthält die Ergebnisse in `items` sowie die Felder `page`, `size` und `total`.
+
+```python
+def list_new_requests():
+    response = requests.get(
+        f"{API_URL}/v1/ws/{WORKSPACE_ID}/DataSubjectRequests",
+        headers=HEADERS,
+        params={"states": "Open", "sortBy": "dateCreation", "asc": "false", "size": 50},
+    )
+    response.raise_for_status()
+    return response.json()["items"]
+
+for request in list_new_requests():
+    print(request["id"], request["title"])
+```
+
+Die vollständige Liste der Endpunkte und Parameter finden Sie in der [API-Referenz](https://api.dastra.eu/swagger/index.html).
