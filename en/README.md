@@ -111,7 +111,5 @@ description: Welcome to the Dastra documentation.
 ***
 
 {% hint style="info" %}
-💡 **Free trial**\
-Dastra can be tested free of charge for 30 days, no credit card required:\
-👉 [https://app.dastra.eu/signup](https://app.dastra.eu/signup)
+To discover Dastra, [ask for a demo](https://www.dastra.eu/en/contacts/demo).
 {% endhint %}

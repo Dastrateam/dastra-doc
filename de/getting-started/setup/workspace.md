@@ -6,11 +6,7 @@ description: Erfahren Sie, wie Sie Ihren ersten Mandanten in Dastra erstellen.
 
 ## Bei Dastra.eu anmelden
 
-Melden Sie sich zunächst bei [Dastra.eu](https://www.dastra.eu/) an. Wenn Sie noch kein Konto haben, [registrieren Sie sich](https://app.dastra.eu/signup) und erstellen Sie ein neues.
-
-{% hint style="info" %}
-Sie können sofort auf Dastra zugreifen, indem Sie ein kostenloses Testkonto eröffnen, das 30 Tage gültig ist. Wenn Sie ein langfristiges Angebot abonnieren möchten, [kontaktieren Sie uns bitte](https://www.dastra.eu/fr/contact?type=quote).
-{% endhint %}
+Melden Sie sich zunächst bei [app.dastra.eu](https://app.dastra.eu) an. Wenn Sie noch kein Konto haben, bitten Sie einen Administrator Ihrer Organisation, Sie einzuladen. Wenn Ihre Organisation Dastra noch nicht nutzt, [fordern Sie eine Demo an](https://www.dastra.eu/de/contacts/demo).
 
 ## Mandant
 

@@ -115,7 +115,5 @@ description: Bienvenue dans la documentation de Dastra.
 ***
 
 {% hint style="info" %}
-💡 **Essai gratuit**\
-Dastra peut être testé gratuitement pendant 30 jours, sans carte bleue :\
-👉 [https://app.dastra.eu/signup](https://app.dastra.eu/signup)
+Pour découvrir Dastra, [demandez une démo](https://www.dastra.eu/fr/contacts/demo).
 {% endhint %}

@@ -10,11 +10,7 @@ description: Leer hoe je je eerste werkruimte maakt in Dastra.
 
 ## Inloggen op Dastra.eu&#x20;
 
-Begin met een verbinding met [Dastra.eu](https://www.dastra.eu/). Als je nog geen account hebt, [registreer](https://app.dastra.eu/signup) en maak een nieuwe aan.
-
-{% hint style="info" %}
-Je kunt direct toegang krijgen tot Dastra door een "Gratis Proef" account te openen die 30 dagen geldig is. Als u zich wilt abonneren op een lange termijn aanbieding, neem dan [contact met ons op](https://www.dastra.eu/fr/contact?type=quote).
-{% endhint %}
+Log eerst in op [app.dastra.eu](https://app.dastra.eu). Heb je nog geen account, vraag dan een beheerder van je organisatie om je uit te nodigen. Gebruikt je organisatie Dastra nog niet, [vraag dan een demo aan](https://www.dastra.eu/en/contacts/demo).
 
 ## Werkruimte
 

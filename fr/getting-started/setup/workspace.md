@@ -6,11 +6,7 @@ description: Apprenez à créer votre premier espace de travail dans Dastra.
 
 ## Connectez-vous à Dastra.eu
 
-Commencez par vous connecter à [Dastra.eu](https://www.dastra.eu/). Si vous n'avez pas encore de compte, [inscrivez-vous](https://app.dastra.eu/signup) et créez-en un nouveau.
-
-{% hint style="info" %}
-Vous pouvez accéder immédiatement à Dastra en ouvrant un compte "Essai gratuit" valide sur une période de 30 jours. Si vous souhaitez souscrire à une offre long terme, merci de [nous contacter](https://www.dastra.eu/fr/contact?type=quote).
-{% endhint %}
+Commencez par vous connecter sur [app.dastra.eu](https://app.dastra.eu). Si vous n'avez pas encore de compte, demandez à un administrateur de votre organisation de vous inviter. Si votre organisation n'utilise pas encore Dastra, [demandez une démo](https://www.dastra.eu/fr/contacts/demo).
 
 ## Espace de travail
 
