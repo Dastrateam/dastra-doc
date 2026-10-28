@@ -67,7 +67,7 @@ Dastra erkennt diese Signale nicht nativ. Das folgende Snippet fängt sie **vor 
         if (!manager.consent.hasConsented()) {
           manager.consent.setPurposeConsent('Analytical', false)
           manager.consent.setPurposeConsent('Marketing', false)
-          manager.consent.dispatchEvent() // applique les choix sans les persister
+          manager.consent.dispatchEvents() // wendet die Auswahl an, ohne sie zu speichern
         }
       }
     ])
@@ -76,10 +76,10 @@ Dastra erkennt diese Signale nicht nativ. Das folgende Snippet fängt sie **vor 
 ```
 
 {% hint style="info" %}
-**`dispatchEvent()` vs `save()` – was ist der Unterschied?**
+**`dispatchEvents()` vs `save()` – was ist der Unterschied?**
 
-- **`dispatchEvent()`** wendet die Auswahl für die aktuelle Sitzung an, **ohne etwas** im localStorage des Browsers zu speichern. Das GPC- oder DNT-Signal wird bei jedem Seitenladen erneut erkannt. Wenn der Nutzer GPC in seinem Browser deaktiviert, wird das normale Verhalten automatisch fortgesetzt. Dies ist der empfohlene Ansatz zur Beachtung dieser Signale.
-- **`save()`** speichert die Einwilligung dauerhaft im localStorage, als hätte der Nutzer eine explizite Auswahl über das Widget getroffen. Verwenden Sie dies nur, wenn Sie eine sitzungsübergreifende Auswahl speichern möchten.
+- **`dispatchEvents()`** wendet die Auswahl für die aktuelle Sitzung an, **ohne etwas** im Einwilligungsspeicher abzulegen (standardmäßig das Cookie `consent-eu`, oder localStorage, wenn diese Option aktiviert ist). Das GPC- oder DNT-Signal wird bei jedem Seitenladen erneut erkannt. Wenn der Nutzer GPC in seinem Browser deaktiviert, wird das normale Verhalten automatisch fortgesetzt. Dies ist der empfohlene Ansatz zur Beachtung dieser Signale.
+- **`save()`** speichert die Einwilligung dauerhaft in diesem Speicher, als hätte der Nutzer eine explizite Auswahl über das Widget getroffen. Verwenden Sie dies nur, wenn Sie eine sitzungsübergreifende Auswahl speichern möchten.
   {% endhint %}
 
 {% hint style="info" %}

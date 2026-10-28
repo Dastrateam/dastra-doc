@@ -7,7 +7,7 @@ description: >-
 
 # Native toepassingen
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/client/cookie-widget-settings/:id?key=:key" method="get" summary="Haal widgetconfiguratie op" expanded="false" %}
+{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/cookies-widget-settings/:id?key=:key" method="get" summary="Haal widgetconfiguratie op" expanded="false" %}
 {% swagger-description %}
 Dit endpoint wordt gebruikt om de volledige configuratie van de widget op te halen
 {% endswagger-description %}
@@ -24,7 +24,7 @@ De locale van de widgetconfiguratie (en, fr...)
 De geleverde openbare api-sleutel
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Cake succesvol opgehaald." %}
+{% swagger-response status="200" description="Widgetconfiguratie opgehaald" %}
 ```
 {
   "translation": {
@@ -144,7 +144,7 @@ De geleverde openbare api-sleutel
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/client/collect/:id?key=:key" method="post" summary="Toestemming registratie" %}
+{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/collect/:id?key=:key" method="post" summary="Toestemming registratie" %}
 {% swagger-description %}
 Deze methode wordt gebruikt om toestemming voor cookies te verzamelen
 {% endswagger-description %}
@@ -197,7 +197,7 @@ De huidige toestemmings-id (indien eerder verzameld)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="userId" type="string" %}
-Aangepaste gebruikers-id (
+Gepseudonimiseerde ID van de gebruiker in je systemen (optioneel), zie [Identificatie van gebruikers](../identification.md)
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Geef de id van de verzamelde toestemming terug" %}

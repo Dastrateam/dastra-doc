@@ -80,7 +80,7 @@ In reinem JavaScript können Sie die auf dem Window ausgelösten Ereignisse verw
          console.log('{your-service-slug} cookies refused')
        });
       
-  });
+  })();
   </script>
 ```
 

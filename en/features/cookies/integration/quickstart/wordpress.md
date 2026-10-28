@@ -6,10 +6,10 @@ description: Learn how to integrate the cookie widget on your Wordpress website.
 
 ## 1. Retrieve the SDK
 
-Once you have finished configuring and designing the Dastra cookie consent widget, you can retrieve the SDK in the "Code" section.
+Once you have finished configuring and designing the Dastra cookie consent widget, you can retrieve the SDK in the "Installation" section.
 
 {% hint style="info" %}
-You can find this piece of code and copy / paste it here: Cookie consent> Edit> Code
+You can find this piece of code and copy / paste it here: Cookie consent> Edit> Installation
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/cookies-widget-integration-code-step.png>)

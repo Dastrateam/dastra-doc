@@ -6,11 +6,11 @@ description: Apprenez à intégrer le widget de cookie Dastra sur un site Wordpr
 
 ## 1. Récupération du SDK
 
-Une fois que vous avez fini la configuration et le design du widget de consentement cookie Dastra, vous pouvez récupérez le SDK dans la partie "Code".
+Une fois que vous avez fini la configuration et le design du widget de consentement cookie Dastra, vous pouvez récupérez le SDK dans la partie "Installation".
 
 {% hint style="info" %}
 Vous pouvez retrouver ce bout de code et le copier / coller ici :\
-Consentement cookie > Editer > Code
+Consentement cookie > Editer > Installation
 {% endhint %}
 
 ![](../../../../.gitbook/assets/cookies-widget-integration-code-step.png)

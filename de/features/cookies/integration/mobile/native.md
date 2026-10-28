@@ -6,7 +6,7 @@ description: >-
 
 # Native Anwendungen
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/client/cookie-widget-settings/:id?key=:key" method="get" summary="Widget-Konfiguration abrufen" expanded="false" %}
+{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/cookies-widget-settings/:id?key=:key" method="get" summary="Widget-Konfiguration abrufen" expanded="false" %}
 {% swagger-description %}
 Dieser Endpunkt ermöglicht es, die vollständige Konfiguration des Widgets abzurufen
 {% endswagger-description %}
@@ -23,7 +23,7 @@ The locale of the widget configuration (en, fr...)
 The public api key provided
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Cake successfully retrieved." %}
+{% swagger-response status="200" description="Widget-Konfiguration abgerufen" %}
 ```
 {
   "translation": {
@@ -143,7 +143,7 @@ The public api key provided
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/client/collect/:id?key=:key" method="post" summary="Einwilligungen erfassen" %}
+{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/collect/:id?key=:key" method="post" summary="Einwilligungen erfassen" %}
 {% swagger-description %}
 Diese Methode ermöglicht die Erfassung von Cookie-Einwilligungen
 {% endswagger-description %}
@@ -196,7 +196,7 @@ The current consent Id (If any collected before)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="userId" type="string" %}
-Custom user id (
+Pseudonyme Kennung des Nutzers in Ihren Systemen (optional), siehe [Identifizierung der Nutzer](../identification.md)
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Return the id of the consent collected" %}

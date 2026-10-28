@@ -80,7 +80,7 @@ In pure javascript kun je gebeurtenissen gebruiken die op het venster worden get
          console.log('{uw-service-slug} cookies geweigerd')
        });
       
-  });
+  })();
   </script>
 ```
 

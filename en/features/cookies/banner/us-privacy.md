@@ -81,7 +81,7 @@ If you need finer control (for example displaying an acknowledgment message or a
         if (!manager.consent.hasConsented()) {
           manager.consent.setPurposeConsent('Analytical', false)
           manager.consent.setPurposeConsent('Marketing', false)
-          manager.consent.dispatchEvent() // apply choices without persisting them
+          manager.consent.dispatchEvents() // apply choices without persisting them
         }
       }
     ])
@@ -90,10 +90,10 @@ If you need finer control (for example displaying an acknowledgment message or a
 ```
 
 {% hint style="info" %}
-**`dispatchEvent()` vs `save()` — what's the difference?**
+**`dispatchEvents()` vs `save()` — what's the difference?**
 
-- **`dispatchEvent()`** applies the consent choices for the current session **without writing anything** to the browser's localStorage. The GPC or DNT signal is re-evaluated on every page load. If the user later disables GPC in their browser, normal behaviour resumes automatically. This is the recommended approach for honouring these signals.
-- **`save()`** persists the consent in localStorage, as if the user had made an explicit choice through the widget. Use this only when you want to remember a choice across sessions.
+- **`dispatchEvents()`** applies the consent choices for the current session **without writing anything** to the consent storage (the `consent-eu` cookie by default, or localStorage if that option is enabled). The GPC or DNT signal is re-evaluated on every page load. If the user later disables GPC in their browser, normal behaviour resumes automatically. This is the recommended approach for honouring these signals.
+- **`save()`** persists the consent in that storage, as if the user had made an explicit choice through the widget. Use this only when you want to remember a choice across sessions.
 {% endhint %}
 
 {% hint style="info" %}
@@ -139,7 +139,7 @@ if (isOptOut) {
     if (!manager.consent.hasConsented()) {
       manager.consent.setPurposeConsent('Analytical', false);
       manager.consent.setPurposeConsent('Marketing', false);
-      manager.consent.dispatchEvent();
+      manager.consent.dispatchEvents();
 
       var notice = document.createElement('div');
       notice.setAttribute('role', 'status');
@@ -169,7 +169,7 @@ if (isOptOut) {
     if (!manager.consent.hasConsented()) {
       manager.consent.setPurposeConsent('Analytical', false);
       manager.consent.setPurposeConsent('Marketing', false);
-      manager.consent.dispatchEvent();
+      manager.consent.dispatchEvents();
 
       var bar = document.createElement('div');
       bar.setAttribute('role', 'status');

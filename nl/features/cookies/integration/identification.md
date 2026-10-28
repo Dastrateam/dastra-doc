@@ -12,11 +12,8 @@ Het principe is als volgt: u stuurt de **unieke identifier van de geauthenticeer
 
 ## Stap 1: Kies de gebruikers-ID
 
-Hiervoor moet je een variabele kiezen die je naar de widget wilt overbrengen. Je kunt het base64 gehashte e-mailadres van de gebruiker, een interne klant-ID of een CRM ID gebruiken. Deze variabele moet beschikbaar zijn op de webpagina en wordt in duidelijke tekst doorgegeven. Het mag geen persoonlijke informatie over de gebruiker bevatten (achternaam, voornaam, ongecodeerd e-mailadres). &#x20;
+Kies hiervoor een gepseudonimiseerde ID om aan de widget door te geven, bijvoorbeeld de interne klant-ID of de CRM-ID. Deze variabele moet beschikbaar zijn op de webpagina en wordt als platte tekst verzonden: ze mag geen directe persoonsgegevens bevatten (achternaam, voornaam, e-mailadres), ook niet base64-gecodeerd, omdat base64 omkeerbaar is.
 
-{% hint style="info" %}
-&#x20;Als u een base64 gecodeerde string verstuurt, wordt deze automatisch gedecodeerd wanneer de toestemming van de gebruiker wordt ontvangen in de Dastra database.
-{% endhint %}
 
 ## Stap 2: Pas de integratiecode aan
 
@@ -32,29 +29,7 @@ window.dastra = window.dastra || [];
 dastra.push(['loadCookieConsent', {
     widgetId: {Paste your widgetId here (digit)},
     selector: '#cookie-consent',
-    userId: {The userId's variable (email 64bits hash or whatever...)}
+    userId: {your user's pseudonymous id}
 }]);
-</script>
-```
-
-Je kunt ook de "set"-methode gebruiken
-
-```markup
-<div id="cookie-consent"></div>
-<script src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY HERE}" async></script>
-<script>
-
-// Dastra's array's initialization
-window.dastra = window.dastra || [];
-
-// Load the cookie consent in page
-dastra.push(['loadCookieConsent', {
-    widgetId: {Paste your widgetId here (digit)},
-    selector: '#cookie-consent'
-}]);
-
-// Push the userId to dastra's cookies
-// It must be pushed after the loadCookieConsent method
-dastra.push(['set','cookie:userId',{The userId's variable (email 64bits hash or whatever...)}])
 </script>
 ```

@@ -16,12 +16,22 @@ Houd er rekening mee dat momenteel alleen Frans en Engels worden ondersteund.
 
 ## Hoe wordt de taal van de widget gedetecteerd?
 
-Standaard wordt de taal automatisch gedetecteerd op basis van de browsertaal.
+Standaard gebruikt de widget de taal uit het attribuut `lang` van de `<html>`-tag van de pagina. Ontbreekt dit attribuut, dan wordt de taal van de browser gebruikt.
 
 ## Hoe forceer ik de taal van de widget?
 
-Om de taal van de widget te forceren, voeg je gewoon een data-lang="" attribuut toe aan de widget div
+Om de taal van de widget te forceren, voeg je het attribuut `data-lang` toe aan de div van de widget:
 
-``opmerking
-<div id="cookie-consent" data-lang="en"></div>
+```html
+<div id="dastra-cookie-consent" data-widgetid="{your_widget_id}" data-lang="fr"></div>
+```
+
+Laad je de widget met de methode `loadCookieConsent`, geef dan de optie `lang` mee:
+
+```javascript
+dastra.push(['loadCookieConsent', {
+    widgetId: {your_widget_id},
+    selector: '#cookie-consent',
+    lang: 'fr'
+}]);
 ```

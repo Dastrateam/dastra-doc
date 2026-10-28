@@ -12,11 +12,8 @@ The principle is the following: you send the **unique identifier of the authenti
 
 ### Step 1: Choose the user ID&#x20;
 
-To make this match, you will need to choose a variable to transfer to the widget. You can use the user's base64 hashed email address, an internal customer ID or a CRM ID. This variable must be available in the web page and will be passed in plain text. It must not mention any personal information about the user (name, first name, email in clear text).
+To make this match, choose a pseudonymous identifier to pass to the widget, such as the customer's internal ID or CRM ID. This variable must be available in the web page and is sent in plain text: it must not contain any direct personal data (last name, first name, email address), not even base64-encoded, since base64 can be reversed.
 
-{% hint style="info" %}
-If you send a base64 encoded string, it will be automatically decoded when the user consents are received in the Dastra database
-{% endhint %}
 
 ### Step 2: Adapt the integration code
 
@@ -32,29 +29,7 @@ window.dastra = window.dastra || [];
 dastra.push(['loadCookieConsent', {
     widgetId: {Paste your widgetId here (digit)},
     selector: '#cookie-consent',
-    userId: {The userId's variable (email 64bits hash or whatever...)}
+    userId: {your user's pseudonymous id}
 }]);
-</script>
-```
-
-You can also use the "set" method
-
-```ssml
-<div id="cookie-consent"></div>
-<script src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY HERE}" async></script>
-<script>
-
-// Dastra's array's initialization
-window.dastra = window.dastra || [];
-
-// Load the cookie consent in page
-dastra.push(['loadCookieConsent', {
-    widgetId: {Paste your widgetId here (digit)},
-    selector: '#cookie-consent'
-}]);
-
-// Push the userId to dastra's cookies
-// It must be pushed after the loadCookieConsent method
-dastra.push(['set','cookie:userId',{The userId's variable (email 64bits hash or whatever...)}])
 </script>
 ```

@@ -80,7 +80,7 @@ En pur javascript, vous pouvez utiliser les évènements déclenchés sur le win
          console.log('{your-service-slug} cookies refused')
        });
       
-  });
+  })();
   </script>
 ```
 
