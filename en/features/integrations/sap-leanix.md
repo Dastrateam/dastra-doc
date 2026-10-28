@@ -43,7 +43,7 @@ The configuration step lets you control how applications are imported:
 * **Users to notify on error** (required) — these users receive an e-mail when a synchronization fails.
 * **Create the Dastra record if it does not exist** — when disabled, only existing assets are updated.
 * **Deduplicate synced items** — match incoming applications against existing assets on a **Matching field** (**Label** or **Reference**) to update them instead of creating duplicates.
-* **Field mapping** — choose which LeanIX field fills each Dastra field (see [Connections, use cases and field mapping](connections-and-field-mapping.md)).
+* **Field mapping** — choose which LeanIX field fills each Dastra field (see [Connections, use cases and field mapping](connections.md)).
 
 <!-- 📸 Screenshot: the SAP LeanIX configuration panel with the sync options and the field mapping -->
 

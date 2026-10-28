@@ -138,5 +138,5 @@ You can receive a monthly summary of your workspace activity. Click on the notif
 
 ### 🔗 See also
 
-* [Manage roles and permissions](roles-et-permissions.md)
-* [Monitor your questionnaires](../audit/)
+* [Manage roles and permissions](roles.md)
+* [Monitor your questionnaires](../questionnaires/README.md)

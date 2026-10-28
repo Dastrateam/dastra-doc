@@ -8,96 +8,96 @@ description: Welcome to the Dastra documentation.
 
 > For more information about our approach, see our [manifesto](https://www.dastra.eu/en/mission).
 
-{% content-ref url="commencer/get-started-in-5-minutes.md" %}
-[get-started-in-5-minutes.md](commencer/get-started-in-5-minutes.md)
+{% content-ref url="getting-started/quickstart.md" %}
+[get-started-in-5-minutes.md](getting-started/quickstart.md)
 {% endcontent-ref %}
 
 ***
 
 ### 🚀 Getting started
 
-{% content-ref url="commencer/commencer/" %}
-[commencer](commencer/commencer/)
+{% content-ref url="getting-started/setup/README.md" %}
+[commencer](getting-started/setup/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="commencer/tutorial/" %}
-[tutorial](commencer/tutorial/)
+{% content-ref url="getting-started/tutorial/README.md" %}
+[tutorial](getting-started/tutorial/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="commencer/support/" %}
-[support](commencer/support/)
+{% content-ref url="getting-started/support/README.md" %}
+[support](getting-started/support/README.md)
 {% endcontent-ref %}
 
 ***
 
 ### ⚙️ Features
 
-{% content-ref url="features/editer-le-registre/" %}
-[editer-le-registre](features/editer-le-registre/)
+{% content-ref url="features/ropa/README.md" %}
+[editer-le-registre](features/ropa/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/ai-systems/" %}
-[features/ai-systems/](features/ai-systems/)
+{% content-ref url="features/ai-systems/README.md" %}
+[features/ai-systems/](features/ai-systems/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/risk-management/" %}
-[features/risk-management/](features/risk-management/)
+{% content-ref url="features/risks/README.md" %}
+[features/risk-management/](features/risks/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/gerer-les-exercices-des-droits/" %}
-[gerer-les-exercices-des-droits](features/gerer-les-exercices-des-droits/)
+{% content-ref url="features/requests/README.md" %}
+[gerer-les-exercices-des-droits](features/requests/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/notifier-les-violations-de-donnees/" %}
-[features/notifier-les-violations-de-donnees/](features/notifier-les-violations-de-donnees/)
+{% content-ref url="features/incidents/README.md" %}
+[features/notifier-les-violations-de-donnees/](features/incidents/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/gerer-le-consentement-aux-cookies/" %}
-[gerer-le-consentement-aux-cookies](features/gerer-le-consentement-aux-cookies/)
+{% content-ref url="features/cookies/README.md" %}
+[gerer-le-consentement-aux-cookies](features/cookies/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/planifier/" %}
-[planifier](features/planifier/)
+{% content-ref url="features/tasks/README.md" %}
+[planifier](features/tasks/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/settings/" %}
-[settings](features/settings/)
+{% content-ref url="features/settings/README.md" %}
+[settings](features/settings/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/cartography/" %}
-[cartography](features/cartography/)
+{% content-ref url="features/mapping/README.md" %}
+[cartography](features/mapping/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/audit/" %}
-[audit](features/audit/)
+{% content-ref url="features/questionnaires/README.md" %}
+[audit](features/questionnaires/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/contrats/" %}
-[contrats](features/contrats/)
+{% content-ref url="features/contracts/README.md" %}
+[contrats](features/contracts/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/document-management/" %}
-[document-management](features/document-management/)
+{% content-ref url="features/files/README.md" %}
+[document-management](features/files/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/privacy-hubs/" %}
-[privacy-hubs](features/privacy-hubs/)
+{% content-ref url="features/trust-center/README.md" %}
+[privacy-hubs](features/trust-center/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/custom-reporting/" %}
-[custom-reporting](features/custom-reporting/)
+{% content-ref url="features/reports/README.md" %}
+[custom-reporting](features/reports/README.md)
 {% endcontent-ref %}
 
 ***
 
 ### 📄 API & Integrations
 
-{% content-ref url="api-references/liste-des-endpoints-dapi.md" %}
-[liste-des-endpoints-dapi.md](api-references/liste-des-endpoints-dapi.md)
+{% content-ref url="api/endpoints.md" %}
+[liste-des-endpoints-dapi.md](api/endpoints.md)
 {% endcontent-ref %}
 
-{% content-ref url="features/integrations/" %}
-[integrations](features/integrations/)
+{% content-ref url="features/integrations/README.md" %}
+[integrations](features/integrations/README.md)
 {% endcontent-ref %}
 
 ***

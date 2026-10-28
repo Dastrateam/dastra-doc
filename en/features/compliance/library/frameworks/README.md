@@ -34,14 +34,14 @@ The central area displays the list of frameworks available in your environment:
 * Number of frameworks in your quota (note that the quota is shared at the account level, not the workspace level)
 * Filters by status (draft, published, etc.)
 
-* Number of the current version of each framework and, for a framework created from a template, the **Update available** badge when a newer version of the source referential exists (see [Framework versions](versions-de-framework.md))
+* Number of the current version of each framework and, for a framework created from a template, the **Update available** badge when a newer version of the source referential exists (see [Framework versions](versions.md))
 
 
 
 When no framework is present, Dastra directly offers:
 
-* [**Import a framework**](import-et-modeles-dastra.md)
-* [**Create a framework**](create-custom-framework.md)
+* [**Import a framework**](import.md)
+* [**Create a framework**](custom.md)
 
 {% hint style="info" %}
 Remember that the quota is shared across the entire organization, and not only the workspace. Keep an eye on your usage to avoid hitting the limits. The versions of a framework are not counted separately: creating or importing a version does not consume a framework credit.
