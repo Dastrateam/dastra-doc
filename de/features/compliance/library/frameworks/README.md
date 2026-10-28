@@ -37,8 +37,8 @@ Der zentrale Bereich zeigt die Liste der in Ihrer Umgebung verfügbaren Framewor
 
 Wenn kein Framework vorhanden ist, schlägt Dastra direkt vor:
 
-* [**Ein Framework importieren**](import-et-modeles-dastra.md)
-* [**Ein Framework erstellen**](create-custom-framework.md)
+* [**Ein Framework importieren**](import.md)
+* [**Ein Framework erstellen**](custom.md)
 
 {% hint style="info" %}
 Vergessen Sie nicht, dass das Kontingent zwischen der gesamten Organisation geteilt wird und nicht nur dem Mandanten vorbehalten ist. Achten Sie auf Ihre Nutzung, um Limitierungen zu vermeiden.
