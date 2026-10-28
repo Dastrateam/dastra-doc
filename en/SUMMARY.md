@@ -2,7 +2,7 @@
 
 * [What is Dastra](README.md)
 
-## 💁‍♂️ USEFUL REMINDERS
+## 💁‍♂️ USEFUL REMINDERS <a href="#gdpr" id="gdpr"></a>
 
 * [What is GDPR ?](gdpr/introduction.md)
 * [GDPR key concepts](gdpr/concepts/README.md)
@@ -19,7 +19,7 @@
   * [Risk assessment](gdpr/risks/assessment.md)
   * [Vendor risk management](gdpr/risks/processors.md)
 
-## 🧑‍🎓 GETTING STARTED <a href="#commencer" id="commencer"></a>
+## 🧑‍🎓 GETTING STARTED
 
 * [🚀 Get started in 5 minutes](getting-started/quickstart.md)
 * [Setting up](getting-started/setup/README.md)
@@ -261,7 +261,7 @@
 
 * [Portal](partners/portal.md)
 
-## 📄 API documentation <a href="#api-references" id="api-references"></a>
+## 📄 API documentation <a href="#api" id="api"></a>
 
 * [List of API endpoints](api/endpoints.md)
 * [API use cases](api/use-cases.md)
@@ -289,6 +289,6 @@
 * [Known problems](other/known-problems.md)
 * [Changelog](https://www.dastra.eu/en/category/release/10)
 
-## Referentials
+## Referentials <a href="#frameworks" id="frameworks"></a>
 
-  * [HR referential from CNIL](frameworks/cnil-hr.md)
+* [HR referential from CNIL](frameworks/cnil-hr.md)
