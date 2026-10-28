@@ -98,6 +98,6 @@ Every answer can be rated thumbs up or thumbs down, with a comment. That feedbac
 
 ***
 
-{% content-ref url="agent-autonome.md" %}
-[agent-autonome.md](agent-autonome.md)
+{% content-ref url="autonomous.md" %}
+[agent-autonome.md](autonomous.md)
 {% endcontent-ref %}

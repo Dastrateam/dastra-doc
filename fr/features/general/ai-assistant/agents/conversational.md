@@ -99,6 +99,6 @@ Chaque réponse peut être notée d'un pouce vers le haut ou vers le bas, avec u
 
 ***
 
-{% content-ref url="agent-autonome.md" %}
-[agent-autonome.md](agent-autonome.md)
+{% content-ref url="autonomous.md" %}
+[agent-autonome.md](autonomous.md)
 {% endcontent-ref %}

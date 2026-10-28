@@ -13,7 +13,7 @@ Les agents se configurent depuis **Réglages espace de travail > Agents IA** ([a
 <figure><img src="../../../../.gitbook/assets/ai-agents-liste.png" alt="Liste des agents Dastra AI d&#x27;un espace de travail"><figcaption><p>Réglages espace de travail &#x3E; Agents IA — la liste des agents configurés</p></figcaption></figure>
 
 {% hint style="warning" %}
-**Ne confondez pas avec le registre des systèmes d'IA.** La rubrique [Systèmes d'IA](../../../systemes-dia/README.md) sert à documenter **vos propres** systèmes d'IA au titre de l'AI Act. Les agents décrits ici sont une fonctionnalité de Dastra que vous utilisez pour travailler sur vos données.
+**Ne confondez pas avec le registre des systèmes d'IA.** La rubrique [Systèmes d'IA](../../../ai-systems/README.md) sert à documenter **vos propres** systèmes d'IA au titre de l'AI Act. Les agents décrits ici sont une fonctionnalité de Dastra que vous utilisez pour travailler sur vos données.
 {% endhint %}
 
 ***
@@ -37,8 +37,8 @@ Cliquez sur **Créer un agent**. Cinq points de départ vous sont proposés :
 <figure><img src="../../../../.gitbook/assets/ai-agents-creation-modal.png" alt="Modale de création d&#x27;un agent avec les cinq points de départ"><figcaption><p>Les cinq façons de créer un agent</p></figcaption></figure>
 
 * **Générer avec Dastra AI** — décrivez la mission en quelques mots, l'assistant construit l'agent avec vous et l'enregistre après votre validation. C'est la compétence intégrée `/scaffold_agent`.
-* **Agent conversationnel** — repartez d'une page blanche pour un assistant de chat. Voir [Créer un agent conversationnel](agent-conversationnel.md).
-* **Agent autonome** — repartez d'une page blanche pour une exécution outillée. Voir [Créer un agent autonome](agent-autonome.md).
+* **Agent conversationnel** — repartez d'une page blanche pour un assistant de chat. Voir [Créer un agent conversationnel](conversational.md).
+* **Agent autonome** — repartez d'une page blanche pour une exécution outillée. Voir [Créer un agent autonome](autonomous.md).
 * **Bibliothèque Dastra** — partez d'un modèle prêt à l'emploi conçu par l'équipe Dastra. Le modèle est importé **en brouillon** : relisez ses instructions et ses outils avant de le publier.
 * **Importer un agent** — déposez un fichier de définition précédemment exporté depuis Dastra.
 
@@ -75,7 +75,7 @@ L'accès aux agents dépend à la fois de votre **offre** et de vos **permission
 | **Exécution des agents IA personnalisés** | Voir les agents de l'espace de travail et les exécuter |
 | **Gestion des agents IA personnalisés** | Créer, modifier et supprimer les agents de l'espace de travail |
 
-Les permissions se règlent dans **Paramètres de l'organisation > Rôles et permissions**. Le [serveur MCP](../serveur-mcp.md) fait l'objet d'une offre distincte.
+Les permissions se règlent dans **Paramètres de l'organisation > Rôles et permissions**. Le [serveur MCP](../mcp.md) fait l'objet d'une offre distincte.
 
 {% hint style="info" %}
 **Un agent n'a jamais plus de droits que la personne qui le déclenche.** Ses outils s'exécutent avec vos propres permissions : s'il n'a pas accès à une fiche, l'agent n'y a pas accès non plus.
@@ -89,22 +89,22 @@ Chaque **message que vous envoyez** à un agent consomme **1 crédit Dastra AI**
 
 Le quota mensuel de votre organisation et son état de consommation se suivent dans **Paramètres de l'organisation > Assistant IA**. Lorsque le quota est atteint, les conversations et les exécutions sont refusées, et le bouton **Exécuter** d'un agent autonome est désactivé.
 
-Le détail des familles de modèles, de l'hébergement et des données transmises est documenté dans [Comment ça marche ?](../comment-ca-marche.md).
+Le détail des familles de modèles, de l'hébergement et des données transmises est documenté dans [Comment ça marche ?](../how-it-works.md).
 
 ***
 
-{% content-ref url="agent-conversationnel.md" %}
-[agent-conversationnel.md](agent-conversationnel.md)
+{% content-ref url="conversational.md" %}
+[agent-conversationnel.md](conversational.md)
 {% endcontent-ref %}
 
-{% content-ref url="agent-autonome.md" %}
-[agent-autonome.md](agent-autonome.md)
+{% content-ref url="autonomous.md" %}
+[agent-autonome.md](autonomous.md)
 {% endcontent-ref %}
 
-{% content-ref url="competences.md" %}
-[competences.md](competences.md)
+{% content-ref url="skills.md" %}
+[competences.md](skills.md)
 {% endcontent-ref %}
 
-{% content-ref url="boite-de-reception.md" %}
-[boite-de-reception.md](boite-de-reception.md)
+{% content-ref url="inbox.md" %}
+[boite-de-reception.md](inbox.md)
 {% endcontent-ref %}

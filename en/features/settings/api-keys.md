@@ -5,7 +5,7 @@
 * **Create a Dastra API client** to retrieve or modify data outside the application. This client can be server-to-server (Client credential) or javascript (Authorization code). To find out more, please [read the Dastra API authentication documentation](../requests/api.md).
 * **Configure a data subject right request form** (public key only). Read the[ documentation about DSR forms](../requests/widget.md).
 * **Configure a cookie widget** (public key only). Read the [documentation related to cookies](../cookies/banner/configure.md).
-* **Connect an AI tool to the Dastra MCP server**. Read the [MCP server documentation](../generalites/ai-assistant/serveur-mcp.md).
+* **Connect an AI tool to the Dastra MCP server**. Read the [MCP server documentation](../general/ai-assistant/mcp.md).
 
 ### How generate an API key?
 

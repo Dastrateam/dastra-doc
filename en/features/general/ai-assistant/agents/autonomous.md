@@ -72,7 +72,7 @@ The **form preview**, on the right of the editor, shows exactly what your users 
 
 ### Tools
 
-This works exactly like a [conversational agent](agent-conversationnel.md#tools): all tools are available by default, and you can restrict the list.
+This works exactly like a [conversational agent](conversational.md#tools): all tools are available by default, and you can restrict the list.
 
 The stakes are higher here, though, since nobody reviews the agent while it works. Give it the read-only tools it needs, and **only the editing tools its mission requires**.
 
@@ -125,10 +125,10 @@ There you pick the agent, a message, and the values of its input fields. Those v
 | **10,000 characters** of input | A longer message is refused |
 | **Credit quota** | A run is refused when the monthly quota is reached |
 
-These statuses, and the others, are detailed in [Tracking runs](boite-de-reception.md).
+These statuses, and the others, are detailed in [Tracking runs](inbox.md).
 
 ***
 
-{% content-ref url="boite-de-reception.md" %}
-[boite-de-reception.md](boite-de-reception.md)
+{% content-ref url="inbox.md" %}
+[boite-de-reception.md](inbox.md)
 {% endcontent-ref %}

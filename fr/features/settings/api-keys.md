@@ -9,7 +9,7 @@ description: Cette page vous explique comment créer des clés d'APIs dans Dastr
 * **Créer un client de l'API** de Dastra pour récupérer ou modifier les données en dehors de l'application. Ce client peut être de serveur à serveur (Client credential) ou javascript (Authorization code). Pour en savoir plus, vous pouvez [lire la documentation relative à l'authentification de l'API Dastra](../../api/authentication.md).
 * **Configurer un widget d'exercice de droit** (clé publique uniquement). [Lire la documentation relative à la mise en place du widget d'exercice de droit](../requests/widget.md)
 * **Configurer un widget de consentement cookies** (clé publique uniquement). [Lire la documentation de mise en place du consentement aux cookies](../cookies/README.md)
-* **Connecter un outil d'IA au serveur MCP** de Dastra. [Lire la documentation du serveur MCP](../generalites/ai-assistant/serveur-mcp.md)
+* **Connecter un outil d'IA au serveur MCP** de Dastra. [Lire la documentation du serveur MCP](../general/ai-assistant/mcp.md)
 
 ### Comment générer une clé d'API ?
 

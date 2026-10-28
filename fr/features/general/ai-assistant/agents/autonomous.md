@@ -72,7 +72,7 @@ L'**aperçu du formulaire**, à droite de l'éditeur, montre exactement ce que v
 
 ### Outils
 
-Le fonctionnement est identique à celui d'un [agent conversationnel](agent-conversationnel.md#outils) : par défaut tous les outils sont disponibles, et vous pouvez restreindre la liste.
+Le fonctionnement est identique à celui d'un [agent conversationnel](conversational.md#outils) : par défaut tous les outils sont disponibles, et vous pouvez restreindre la liste.
 
 L'enjeu est cependant plus important ici, puisque personne ne relit l'agent pendant qu'il travaille. Accordez-lui les outils de lecture dont il a besoin, et **uniquement les outils de modification que sa mission exige**.
 
@@ -125,10 +125,10 @@ Vous y choisissez l'agent, un message, et les valeurs de ses champs de saisie. C
 | **10 000 caractères** en entrée | Un message plus long est refusé |
 | **Quota de crédits** | Une exécution est refusée si le quota mensuel est atteint |
 
-Ces statuts, et les autres, sont détaillés dans [Suivre les exécutions](boite-de-reception.md).
+Ces statuts, et les autres, sont détaillés dans [Suivre les exécutions](inbox.md).
 
 ***
 
-{% content-ref url="boite-de-reception.md" %}
-[boite-de-reception.md](boite-de-reception.md)
+{% content-ref url="inbox.md" %}
+[boite-de-reception.md](inbox.md)
 {% endcontent-ref %}

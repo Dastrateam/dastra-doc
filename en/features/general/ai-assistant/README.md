@@ -76,6 +76,6 @@ Beta features should never be the sole basis for a compliance decision. They are
 [README.md](agents/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="serveur-mcp.md" %}
-[serveur-mcp.md](serveur-mcp.md)
+{% content-ref url="mcp.md" %}
+[serveur-mcp.md](mcp.md)
 {% endcontent-ref %}

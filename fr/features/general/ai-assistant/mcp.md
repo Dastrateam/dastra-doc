@@ -66,7 +66,7 @@ Réservée à l'automatisation et aux environnements sans navigateur. Vous ajout
 
 <figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Création d&#x27;une clé d&#x27;API avec le sélecteur d&#x27;espace de travail"><figcaption><p>C'est le champ « Sélection d'un espace de travail spécifique » qui rend une clé utilisable pour MCP</p></figcaption></figure>
 
-La procédure générale de création d'une clé est décrite dans [Gestion des clés d'API](../../settings/gestion-des-cles-dapi.md).
+La procédure générale de création d'une clé est décrite dans [Gestion des clés d'API](../../settings/api-keys.md).
 
 ***
 

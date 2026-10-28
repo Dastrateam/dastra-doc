@@ -37,8 +37,8 @@ Click **Create agent**. Five starting points are offered:
 <figure><img src="../../../../.gitbook/assets/ai-agents-creation-modal.png" alt="Agent creation dialog with the five starting points"><figcaption><p>The five ways to create an agent</p></figcaption></figure>
 
 * **Generate with Dastra AI** — describe the mission in a few words and the assistant builds the agent with you, saving it once you approve. This is the built-in `/scaffold_agent` skill.
-* **Conversational Agent** — start from a blank page for a chat assistant. See [Creating a conversational agent](agent-conversationnel.md).
-* **Auto Agent** — start from a blank page for a tool-driven run. See [Creating an autonomous agent](agent-autonome.md).
+* **Conversational Agent** — start from a blank page for a chat assistant. See [Creating a conversational agent](conversational.md).
+* **Auto Agent** — start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md).
 * **Dastra library** — start from a ready-made template built by the Dastra team. The template is imported **as a draft**: review its instructions and its tools before publishing it.
 * **Import an agent** — drop in a definition file previously exported from Dastra.
 
@@ -75,7 +75,7 @@ Access to agents depends both on your **plan** and on your **permissions**.
 | **Custom AI agents execution** | See the agents of the workspace and run them |
 | **Custom AI agents management** | Create, update and delete the agents of the workspace |
 
-Permissions are set in **Organization settings > Roles and permissions**. The [MCP server](../serveur-mcp.md) is covered by a separate plan.
+Permissions are set in **Organization settings > Roles and permissions**. The [MCP server](../mcp.md) is covered by a separate plan.
 
 {% hint style="info" %}
 **An agent never has more rights than the person who triggers it.** Its tools run with your own permissions: if it cannot access a record, neither can the agent.
@@ -89,22 +89,22 @@ Each **message you send** to an agent costs **1 Dastra AI credit**, whatever the
 
 Your organization's monthly quota and its consumption are tracked in **Organization settings > Dastra AI**. Once the quota is reached, conversations and runs are refused, and the **Run** button of an autonomous agent is disabled.
 
-Model families, hosting and the data sent to the models are documented in [How it works](../ai-assistant-how-it-works.md).
+Model families, hosting and the data sent to the models are documented in [How it works](../how-it-works.md).
 
 ***
 
-{% content-ref url="agent-conversationnel.md" %}
-[agent-conversationnel.md](agent-conversationnel.md)
+{% content-ref url="conversational.md" %}
+[agent-conversationnel.md](conversational.md)
 {% endcontent-ref %}
 
-{% content-ref url="agent-autonome.md" %}
-[agent-autonome.md](agent-autonome.md)
+{% content-ref url="autonomous.md" %}
+[agent-autonome.md](autonomous.md)
 {% endcontent-ref %}
 
-{% content-ref url="competences.md" %}
-[competences.md](competences.md)
+{% content-ref url="skills.md" %}
+[competences.md](skills.md)
 {% endcontent-ref %}
 
-{% content-ref url="boite-de-reception.md" %}
-[boite-de-reception.md](boite-de-reception.md)
+{% content-ref url="inbox.md" %}
+[boite-de-reception.md](inbox.md)
 {% endcontent-ref %}

@@ -66,7 +66,7 @@ Reserved for automation and environments without a browser. You add an HTTP head
 
 <figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="API key creation with the workspace selector"><figcaption><p>The “Select a specific workspace” field is what makes a key usable for MCP</p></figcaption></figure>
 
-The general procedure for creating a key is described in [API key management](../../settings/api-key-management.md).
+The general procedure for creating a key is described in [API key management](../../settings/api-keys.md).
 
 ***
 
