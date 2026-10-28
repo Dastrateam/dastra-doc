@@ -4,86 +4,113 @@ description: Identify the key parties involved in data processing.
 
 # Stakeholders
 
-## Add Users to a Processing
+The **Parties involved** section (formerly called **Stakeholders**) is the second section of a processing activity. It brings together two lists:
 
-Dastra allows you to attach users to a processing.
+* the **users**: people who have an account on the Dastra platform and who are assigned to the processing activity;
+* the **stakeholders**: the organizations, departments or people involved in the processing, such as the data controller, its data protection officer, joint controllers or the processing implementation manager.
+
+## Add users to a processing activity
+
+Dastra allows you to attach users to a processing activity.
 
 Note that these are not stakeholders but users (individuals who have an account on the Dastra platform).
 
+1. In the **Parties involved** section, click **Add users**.
+2. In **Data processing user**, select one or more users.
+3. In **Assign roles**, choose the role of these users.
+4. Click **Add**.
+
+The users appear in the table with their **Assignment**, which you can change at any time from the table.
+
+The roles defined this way help you organize the management and implementation of your processing activities in Dastra:
+
+* **Accountable**: the user in Dastra who is in charge of validating that the processing activity and its associated elements, as described in Dastra, meet the organization's expectations. This person may be different from the data controller's signatory. For example, it could be a department manager, a DPO, or a DPO relay.
+* **Responsible**: the user who carries out the necessary actions on the processing activity and describes it. This could involve implementing data security measures, managing access, or any other task required to ensure the compliance of the processing. This could be a project manager or a dedicated business manager.
+* **Informed**: users who need to be kept informed of the progress and status of the processing activity without having an active role in its validation or implementation. This may include members of the management team, project managers, or other stakeholders who have an interest in the processing.
+
+Assigned users are notified of the actions taken on the processing activity and are the default recipients of the related tasks and notifications.
+
 {% hint style="info" %}
-User accounts must be created at least one hour before they can be added as stakeholders.
+Assigning a user does not restrict access to the processing activity. To limit access, use the roles and permissions system.
 {% endhint %}
 
-The roles thus defined will allow for efficient management and implementation of your processing in Dastra.
+## Identify the main stakeholders of the processing activity
 
-Here is a way to define user roles for your data processing activities:
+You can indicate the stakeholders involved in the implementation of the processing. This can be, for example, a department of a company (such as the human resources department) but also a dedicated person in the case of a project (a project manager, for example).
 
-* **Accountable**: This is the user in Dastra who is responsible for validating that the processing and associated elements as indicated in Dastra are valid according to the organization's expectations. This person may be different from the data controller's signatory. For example, it could be a service manager, a DPO, or a DPO relay.
-* **Responsible**: This is the user who is responsible for carrying out the necessary actions on the processing and describing it. This could involve implementing data security measures, managing access, or any other task required to ensure the compliance of the processing. This could be a project manager or a dedicated business manager.
-* **Informed**: This category includes users who need to be kept informed of the progress and status of the processing without having an active role in its validation or implementation. This may include members of the management team, project managers, or other stakeholders who have an interest in the processing.
+You also indicate, where applicable, the representative of the data controller and the joint controller(s).
 
-## Add a processing implementation manager
+The first rows of the stakeholders table are inherited from the entity of the organizational unit selected in the **General** section, and are marked with a lock icon:
 
-You can indicate the stakeholders involved in the implementation of the processing. This can for example be a service or a department of a company (such as the human resources department for example) but also a dedicated person if it's a project (project manager for example).
+* the **Data controller** (or **Current entity (Data processor)** for a data processor activity),
+* its **Data protection officer**,
+* its **Representative**.
 
-You also indicate the identity of the representative of the controller, if applicable, of the joint controller(s).
+To change them, edit the entity in the management of organizational units.
+
+## Add a specific stakeholder
+
+1. In the **Parties involved** section, click **Add a specific stakeholder**.
+2. In **Select a stakeholder**, search the stakeholder directory, or click **Create stakeholder** to add a new one.
+3. In **Choose a category**, select the role of this stakeholder: **Joint controller**, **Data controller representative**, **Processing implementation manager**, **Operational Data Controller** or **Other**. If you choose **Other**, enter the role in **Category label**.
+4. Click **Add**.
+
+<figure><img src="../../../.gitbook/assets/ropa-stakeholders-1.png" alt="Choose a category list open in the Add a specific stakeholder window"><figcaption><p>Categories available for a specific stakeholder</p></figcaption></figure>
 
 ## Add a joint controller (co-controller)
 
-To add a joint controller, add a new stakeholder and select "Joint controller".&#x20;
+To add a joint controller, add a new stakeholder and select **Joint controller** in **Choose a category**.
 
-You will be prompted to add a stakeholder as a joint controller.
+<figure><img src="../../../.gitbook/assets/ropa-stakeholders-2.png" alt="Add a specific stakeholder window with the Joint controller category selected"><figcaption><p>Adding a joint controller to the processing activity</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/processing-add-stakeholder-joint-controller-dialog.png" alt=""><figcaption></figcaption></figure>
+## Add a processing implementation manager
 
-## Add a Person in Charge of Implementing the Processing
+The processing implementation manager is the department that is operationally responsible for the processing. This is generally the department that uses the data and carries out the processing activity.
 
-The person in charge of implementing corresponds to the service that is operationally responsible for the processing. This is generally the service that uses the data and carries out the processing activity.
+It can be either a department or an individual.
 
-This can be either a service or an individual.
+In Dastra, add it as a stakeholder with the **Processing implementation manager** category.
 
-In Dastra, you will need to add an actor.
+## Add a data controller representative
 
+The data controller representative is the operational representative of the data controller (DC). For example, this could be a member of the executive committee or a municipal councilor (with the DC being represented by the mayor).
 
+In Dastra, add it as a stakeholder with the **Data controller representative** category.
 
-## Add a Representative of the Data Controller
+## Add an Operational Data Controller (ODC)
 
-The representative of the data controller corresponds to the operational representative of the data controller (DC). For example, this could be a member of the executive committee or a municipal councilor (with the DC being represented by the mayor).
+The **Operational Data Controller (ODC)** is a concept used internally by some organizations to designate a person with specific responsibilities in the **operational management of personal data processing**.
 
+In Dastra, add it as a stakeholder with the **Operational Data Controller** category.
 
+📌 **Role of the ODC in GDPR governance**\
+The **ODC** is not a concept defined by the GDPR, but some organizations use it internally to designate a person with specific **operational responsibilities** in managing data processing activities.
 
-## **Add an Operational Data Controller (ODC)**&#x20;
-
-The **Operational Data Controller (ODC)** is a concept that can be used in GDPR governance to designate a person or entity with a key role in the **operational implementation of personal data processing**.
-
-📌 **Role of the ODC in GDPR Governance**\
-The **ODC (Operational Data Controller)** is not a concept explicitly defined by the GDPR, but it can be used internally by some organizations to designate a person with specific **operational responsibilities** in managing data processing activities.
-
-#### **Implementation of Data Processing**
+#### **Implementation of data processing**
 
 * The ODC often serves as an **operational relay for the Data Controller (DC)** within a business unit (e.g., HR, Marketing, IT, etc.).
-* They are responsible for executing data processing activities on a daily basis, in accordance with the **instructions of the Data Controller** and in compliance with GDPR principles.
+* They are responsible for carrying out data processing activities on a daily basis, in accordance with the **instructions of the Data Controller** and in compliance with data protection principles.
 
-#### **Application of Compliance Measures**
+#### **Application of compliance measures**
 
-* The ODC ensures that processing activities are carried out in accordance with **internal compliance policies** and GDPR obligations.
-* They apply **technical and organizational measures** defined by the company to ensure the **security and confidentiality** of personal data.
+* The ODC ensures that processing activities are carried out in accordance with **internal compliance policies** and data protection obligations.
+* They apply the **technical and organizational measures** defined by the company to ensure the **security and confidentiality** of personal data.
 
 #### **Collaboration with the DPO and the Data Controller**
 
-* The ODC  works closely with the **Data Protection Officer (DPO)** to ensure that data processing activities comply with data protection rules.
-* They can act as a key contact for the **DPO**, particularly in handling **data subject requests** (e.g., access, rectification, deletion).
+* The ODC works closely with the **Data Protection Officer (DPO)** to ensure that data processing activities comply with data protection rules.
+* They can act as a key contact for the **DPO**, particularly when handling **data subject requests** (e.g., access, rectification, deletion).
 
-#### **Incident and Data Breach Management**
+#### **Incident and data breach management**
 
 * The ODC may be involved in **detecting and managing data breaches**, applying internal procedures to **react quickly and notify** incidents if necessary.
-* They monitor incidents and assist in implementing **corrective actions**.
+* They monitor incidents and help implement **corrective actions**.
 
-#### **Documentation and Maintenance of the Processing Register**
+#### **Documentation and maintenance of the record of processing activities**
 
-* The RTO contributes to updating the **register of processing activities**, documenting the processing under their responsibility and ensuring that relevant information is properly reported to the **Data Controller or DPO**.
+* The ODC contributes to updating the **record of processing activities**, documenting the processing under their responsibility and ensuring that relevant information is properly reported to the **Data Controller or DPO**.
 
-🎯 **Difference Between Data Controller and Operational Data Controller**
+🎯 **Difference between the Data Controller and the Operational Data Controller**
 
 | **Criteria**                 | **Data Controller (DC)**                                 | **Operational Data Controller (ODC)**        |
 | ---------------------------- | -------------------------------------------------------- | -------------------------------------------- |

@@ -6,23 +6,32 @@ description: Learn how to view the data transfer map in Dastra.
 
 ## Introduction
 
-In Dastra, data can be visualized in several ways. One of them is **the** **data transfers map**.&#x20;
+In Dastra, data can be visualized in several ways. One of them is the **data transfers map**.
 
-This visualization allows in particular to explore, analyze and understand geographic data transfers.
+This view lets you explore, analyze and understand the geographic transfers of the data of your record.
 
 ## View the transfers map
 
-To view the transfer map, click on the "Record of processing activities" module and then click on the "**Transfers**" button above your processing activity list.
+To view the transfers map, go to the **Record of processing activities** module, then click the **Transfers** tab above your list of processing activities.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-10-145949.png" alt=""><figcaption><p>Transfers tab above the processing activities</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Transfers tab of the Record of processing activities module"><figcaption><p>Transfers tab above the processing activities</p></figcaption></figure>
 
-Thus, you will be able **to visualize the transfers map**.
+You can then **view the transfers map**. Three views are available from the buttons of the toolbar:
 
-<figure><img src="../../../.gitbook/assets/audit-detail-report-radar.png" alt=""><figcaption><p>Example of data transfers</p></figcaption></figure>
+* **Globe view** (default): the transfers on a globe;
+* **Map view**: the transfers on a flat world map;
+* **List view**: the transfers as a table.
+
+In the map views, the list of transfers is displayed next to the map; use the arrow button at the edge of the map to hide or show it. The filters of the toolbar let you narrow down the transfers displayed, and the menu next to the **Create a transfer** button lets you print the map or export the transfers.
+
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-2.png" alt="Example of a data transfers map"><figcaption><p>Example of data transfers</p></figcaption></figure>
 
 {% hint style="info" %}
-It's possible to access the details of the transfers by clicking on the points corresponding to each country.
+Click the point corresponding to a country to access the details of its transfers.
 {% endhint %}
+
+The **Details of incoming/outgoing transfers from this country** window shows the status of the country (European country, adequate country, partially adequate country or not adequate country) and lists its **Input** and **Output** transfers.
+
 
 ## Go further
 
