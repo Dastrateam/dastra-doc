@@ -2,7 +2,7 @@
 
 * [Einführung in Dastra](README.md)
 
-## 💁‍♂️ Nützliche Hinweise
+## 💁‍♂️ Nützliche Hinweise <a href="#gdpr" id="gdpr"></a>
 
 * [Einführung in den Datenschutz](gdpr/introduction.md)
 * [Grundbegriffe der DSGVO](gdpr/concepts/README.md)
@@ -259,7 +259,7 @@
 
 * [Partnerportal](partners/portal.md)
 
-## 📄 API-Dokumentation <a href="#api-references" id="api-references"></a>
+## 📄 API-Dokumentation <a href="#api" id="api"></a>
 
 * [Liste der API-Endpunkte](api/endpoints.md)
 * [API-Anwendungsfälle](api/use-cases.md)
@@ -286,7 +286,7 @@
 * [Zertifizierungen](security/certifications.md)
 * [Dastra auf Bleu (souveräne Cloud)](security/bleu.md)
 
-## 🤖 VERSCHIEDENES
+## 🤖 VERSCHIEDENES <a href="#other" id="other"></a>
 
 * [Häufig gestellte Fragen](other/faq.md)
 * [Barrierefreiheit](other/accessibility.md)

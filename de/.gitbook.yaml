@@ -215,6 +215,20 @@ redirects:
   getting-started/tutoriel/etape-4-gerer-les-risques: getting-started/tutorial/step-3.md
   getting-started/tutoriel/etape-5-implementer-les-processus-internes: getting-started/tutorial/step-5.md
   getting-started/tutoriel/etape-6-documenter-la-conformite: getting-started/tutorial/step-6.md
+  nutzliche-hinweise/la-gestion-des-risques: gdpr/risks/README.md
+  nutzliche-hinweise/la-gestion-des-risques/definition-des-risques: gdpr/risks/definition.md
+  nutzliche-hinweise/la-gestion-des-risques/evaluation-dun-risque: gdpr/risks/assessment.md
+  nutzliche-hinweise/la-gestion-des-risques/risques-sous-traitants: gdpr/risks/processors.md
+  nutzliche-hinweise/quest-ce-que-le-rgpd: gdpr/introduction.md
+  nutzliche-hinweise/rgpd-en-bref: gdpr/concepts/README.md
+  nutzliche-hinweise/rgpd-en-bref/analyse-dimpact: gdpr/concepts/dpia.md
+  nutzliche-hinweise/rgpd-en-bref/confidentialite-des-la-conception-et-par-defaut: gdpr/concepts/privacy-by-design.md
+  nutzliche-hinweise/rgpd-en-bref/donnee-personnelle: gdpr/concepts/personal-data.md
+  nutzliche-hinweise/rgpd-en-bref/droits-des-personnes: gdpr/concepts/rights.md
+  nutzliche-hinweise/rgpd-en-bref/durees-de-conservation: gdpr/concepts/retention.md
+  nutzliche-hinweise/rgpd-en-bref/mesures-de-securite: gdpr/concepts/security.md
+  nutzliche-hinweise/rgpd-en-bref/registre-de-traitement: gdpr/concepts/ropa.md
+  nutzliche-hinweise/rgpd-en-bref/violations-de-donnees: gdpr/concepts/breaches.md
   rappels-utiles/la-gestion-des-risques: gdpr/risks/README.md
   rappels-utiles/la-gestion-des-risques/definition-des-risques: gdpr/risks/definition.md
   rappels-utiles/la-gestion-des-risques/evaluation-dun-risque: gdpr/risks/assessment.md
@@ -231,3 +245,8 @@ redirects:
   rappels-utiles/rgpd-en-bref/violations-de-donnees: gdpr/concepts/breaches.md
   security/qualite-de-nos-services: security/quality-of-service.md
   variantes-geociblees: features/cookies/banner/geo-targeting.md
+  verschiedenes/accessibilite: other/accessibility.md
+  verschiedenes/faq-registre: other/faq.md
+  verschiedenes/guide-aipd-par-pays: other/dpia-by-country.md
+  verschiedenes/problemes-connus: other/known-problems.md
+  verschiedenes/variantes-geociblees: features/cookies/banner/geo-targeting.md
