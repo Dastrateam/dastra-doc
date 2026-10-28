@@ -107,7 +107,7 @@ Automatic provisioning **only triggers when the user arrives through the SSO lin
 Distribute your SSO connection link to your users, in the form:
 
 ```
-https://account.dastra.eu/account/loginexternal?provider={your provider id}&returnUrl=https://app.dastra.eu
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={your provider id}
 ```
 
 You can retrieve it with the **Copy link** button on the SSO connection card.

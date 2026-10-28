@@ -123,7 +123,7 @@ Net als bij aangepaste rollen haal je deze ID op via de **ontwikkelaarsconsole**
 1. Open [de configuratiepagina van de SSO-logins](https://app.dastra.eu/general-settings/sso) (je moet eigenaar van de organisatie zijn).
 2. Open de ontwikkelaarsconsole (zie de sneltoetsen hierboven) en ga naar het tabblad **Netwerk**.
 3. Klik op het potloodpictogram van de betreffende SSO-login om het venster **SSO-login bewerken** te openen. Dit is een modaal venster: de URL van de pagina blijft `https://app.dastra.eu/general-settings/sso`.
-4. Open op het tabblad **Netwerk** het verzoek dat wordt geactiveerd bij het openen van het venster en noteer de waarde van het veld `id`: die waarde vul je in in de kolom `SSOConfigurationId`.
+4. Open op het tabblad **Netwerk** het verzoek dat wordt geactiveerd bij het openen van het venster en noteer de waarde van het veld `scheme` (die staat ook aan het einde van de URL van het verzoek, na `ssoConfiguration/`): die waarde vul je in in de kolom `SSOConfigurationId`.
 
 {% hint style="info" %}
 De SSO-login moet vooraf geconfigureerd zijn. Zie de pagina [Single Sign On (SSO)](../../features/settings/sso/README.md).

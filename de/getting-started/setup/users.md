@@ -126,7 +126,7 @@ Wie bei den benutzerdefinierten Rollen wird diese Kennung über die **Entwickler
 1. Öffnen Sie [die Konfigurationsseite der SSO-Logins](https://app.dastra.eu/general-settings/sso) (Sie müssen Eigentümer der Organisation sein).
 2. Öffnen Sie die Entwicklerkonsole (siehe Tastenkürzel oben) und wechseln Sie zum Tab **Netzwerk**.
 3. Klicken Sie auf das Stiftsymbol des betreffenden SSO-Logins, um das Fenster **SSO-Login bearbeiten** zu öffnen. Es handelt sich um ein modales Fenster: Die URL der Seite bleibt `https://app.dastra.eu/general-settings/sso`.
-4. Öffnen Sie im Tab **Netzwerk** die beim Öffnen des Fensters ausgelöste Anfrage und notieren Sie den Wert des Feldes `id`: Dieser Wert wird in die Spalte `SSOConfigurationId` eingetragen.
+4. Öffnen Sie im Tab **Netzwerk** die beim Öffnen des Fensters ausgelöste Anfrage und notieren Sie den Wert des Feldes `scheme` (er steht auch am Ende der URL der Anfrage, nach `ssoConfiguration/`): Dieser Wert wird in die Spalte `SSOConfigurationId` eingetragen.
 
 {% hint style="info" %}
 Das SSO-Login muss zuvor konfiguriert worden sein. Siehe die Seite [Single Sign On (SSO)](../../features/settings/sso/README.md).

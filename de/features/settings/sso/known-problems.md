@@ -105,7 +105,7 @@ Das automatische Provisioning **wird nur ausgelöst, wenn der Nutzer über den S
 Verteilen Sie den Link Ihrer SSO-Verbindung an Ihre Nutzer, in dieser Form:
 
 ```
-https://account.dastra.eu/account/loginexternal?provider={ID Ihres Providers}&returnUrl=https://app.dastra.eu
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={ID Ihres Providers}
 ```
 
 Sie erhalten ihn über die Schaltfläche **Link kopieren** auf der Karte der SSO-Verbindung.

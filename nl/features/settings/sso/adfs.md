@@ -17,8 +17,8 @@ Active Directory Federation Services (meestal ADFS genoemd) is een single sign-o
 * Ga naar de [Dastra SSO-configuratiepagina](https://app.dastra.eu/general-settings/sso)
 * Klik op "Een SSO-login toevoegen".
 * Selecteer **SAML** als het type "**SSO Protocol**".
-* Voer in het veld "Identity Provider's Entity id (issuer)" de volgende url in: [**http**://<adfs server url>/adfs/services/trust](http://fs.saur.fr/adfs/services/trust)
-* Voer in het veld "**Identity Provider single sign on url**" de volgende url in: [**https**://<adfs server url>](http://fs.saur.fr/adfs/services/trust)/adfs/ls
+* Voer in het veld "Identity Provider's Entity id (issuer)" de volgende url in: `http://<adfs server url>/adfs/services/trust`
+* Voer in het veld "**Identity Provider single sign on url**" de volgende url in: `https://<adfs server url>/adfs/ls`
 
 **Stap 2: Het ADFS-certificaat ophalen**".
 

@@ -17,8 +17,8 @@ Die Active Directory Federation Services (allgemein unter dem Akronym ADFS bekan
 * Gehen Sie auf die [SSO-Konfigurationsseite von Dastra](https://app.dastra.eu/general-settings/sso)
 * Klicken Sie auf „SSO-Login hinzufügen"
 * Wählen Sie **SAML** als „**SSO-Protokoll**"-Typ
-* Im Feld „Identity Provider's Entity id (issuer)" geben Sie die folgende URL ein: [**http**://\<adfs server url>/adfs/services/trust](http://fs.saur.fr/adfs/services/trust)&#x20;
-* Im Feld „**Identity Provider single sign on url**": [**https**://\<adfs server url>](http://fs.saur.fr/adfs/services/trust)/adfs/ls
+* Im Feld „Identity Provider's Entity id (issuer)" geben Sie die folgende URL ein: `http://<adfs server url>/adfs/services/trust`&#x20;
+* Im Feld „**Identity Provider single sign on url**": `https://<adfs server url>/adfs/ls`
 
 **Schritt 2: Abrufen des ADFS-Zertifikats**&#x20;
 

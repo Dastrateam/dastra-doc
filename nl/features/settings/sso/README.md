@@ -44,7 +44,7 @@ Dastra biedt twee eenmalige aanmeldprotocollen, [**SAML 2**](saml.md) en [**Open
 
 ## Hoe schakel ik automatische gebruikers provisioning in?
 
-Als u niet wilt dat de gebruikers van uw identity provider accounts moeten aanmaken om toegang te krijgen tot de entiteit, kunt u het vakje "automatic user provisioning" aanvinken. Als je je gebruikers voorziet van een SSO provider url zoals deze: https://account.dastra.eu/account/loginexternal?provider={id van je provider}&returnUrl=https://www.dastra.eu&#x20;
+Als u niet wilt dat de gebruikers van uw identity provider accounts moeten aanmaken om toegang te krijgen tot de entiteit, kunt u het vakje "automatic user provisioning" aanvinken. Als je je gebruikers voorziet van een SSO provider url zoals deze: `https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={id van je provider}`
 
 \=> zullen ze in het geval van een gevalideerde authenticatie automatisch een account aanmaken in Dastra.
 

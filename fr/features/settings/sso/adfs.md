@@ -17,8 +17,8 @@ Les services de fédération Active Directory (généralement désignés sous l'
 * Allez sur la [page de configuration du SSO de Dastra](https://app.dastra.eu/general-settings/sso)
 * Cliquez sur "Ajouter un login SSO"
 * Sélectionnez **SAML** en type de "**Protocole du SSO**"
-* Dans le champ "Identity Provider's Entity id (issuer)", renseignez l'url suivante : [**http**://\<adfs server url>/adfs/services/trust](http://fs.saur.fr/adfs/services/trust)
-* Dans le champ "**Fournisseur d'identité (Identity Provider) single sign on url**" "[**https**://\<adfs server url>](http://fs.saur.fr/adfs/services/trust)/adfs/ls
+* Dans le champ "Identity Provider's Entity id (issuer)", renseignez l'url suivante : `http://<adfs server url>/adfs/services/trust`
+* Dans le champ "**Fournisseur d'identité (Identity Provider) single sign on url**" : `https://<adfs server url>/adfs/ls`
 
 **Etape 2 : Récupérez le certificat ADFS**
 

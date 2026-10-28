@@ -64,9 +64,7 @@ Vous pouvez nommer des utilisateurs exemptés de SSO en sélectionnant les utili
 Si vous souhaitez que les utilisateurs de votre fournisseur d'identité n'ait pas besoin de se créer des comptes pour accéder à l'entité, vous pouvez cocher la case "provisionnement automatique des utilisateurs". Si vous fournissez à vos utilisateurs une url de fournisseur SSO comme celle-ci :
 
 ```
-https://account.dastra.eu/account/loginexternal?
-provider={id de votre provider}&
-returnUrl=https://www.dastra.eu 
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={id de votre provider}
 ```
 
 Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :<br>
