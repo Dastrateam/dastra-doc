@@ -2,7 +2,7 @@
 
 * [Introduction à Dastra](README.md)
 
-## 💁‍♂️ Rappels utiles
+## 💁‍♂️ Rappels utiles <a href="#gdpr" id="gdpr"></a>
 
 * [Introduction à la Privacy](gdpr/introduction.md)
 * [Notions clefs du RGPD](gdpr/concepts/README.md)
@@ -280,7 +280,7 @@
 
 * [Portail partenaire](partners/portal.md)
 
-## 📄 La documentation API <a href="#api-references" id="api-references"></a>
+## 📄 La documentation API <a href="#api" id="api"></a>
 
 * [Liste des endpoints d'API](api/endpoints.md)
 * [Cas d'usage de l'API](api/use-cases.md)
@@ -297,7 +297,7 @@
 * [Certifications](security/certifications.md)
 * [Dastra sur Bleu (cloud souverain)](security/bleu.md)
 
-## 🤖 DIVERS
+## 🤖 DIVERS <a href="#other" id="other"></a>
 
 * [Foire aux questions](other/faq.md)
 * [Accessibilité](other/accessibility.md)
