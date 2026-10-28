@@ -24,7 +24,7 @@ Elle permet :
 
 ### Installation
 
-Le processus de mise en place suit le parcours commun des intégrations (voir [Connexions, cas d'usage et mapping des champs](connexions-et-mapping-des-champs.md)) :
+Le processus de mise en place suit le parcours commun des intégrations (voir [Connexions, cas d'usage et mapping des champs](connections.md)) :
 
 1. Accédez à la page de l’intégration **ServiceNow** dans la marketplace d’intégrations Dastra.\
    Exemple :\
@@ -55,7 +55,7 @@ Les instances ServiceNow récentes restreignent l’authentification Basic sur l
 * Sélectionnez les **utilisateurs à notifier en cas d'erreur** (obligatoire). Ils recevront un email de notification en cas d’échec de synchronisation, contenant les informations sur les actifs qui ont été mis à jour.
 * **Créer l'enregistrement Dastra s'il n'existe pas** — activé, un actif est créé s’il n’existe pas dans Dastra, en se basant sur la référence externe.
 * **Dédoublonner les éléments synchronisés** — fait correspondre les applications entrantes aux actifs existants via un **Champ de correspondance** (**Label** ou **Référence**) pour les mettre à jour au lieu de créer des doublons.
-* **Mapping des champs** — choisissez quel champ ServiceNow (de `cmdb_ci_business_app`) alimente chaque champ Dastra. Les listes de choix sont lues en direct depuis le dictionnaire de données de votre instance : leurs valeurs peuvent donc être transcodées en valeurs Dastra. Voir [Connexions, cas d'usage et mapping des champs](connexions-et-mapping-des-champs.md).
+* **Mapping des champs** — choisissez quel champ ServiceNow (de `cmdb_ci_business_app`) alimente chaque champ Dastra. Les listes de choix sont lues en direct depuis le dictionnaire de données de votre instance : leurs valeurs peuvent donc être transcodées en valeurs Dastra. Voir [Connexions, cas d'usage et mapping des champs](connections.md).
 
 {% hint style="info" %}
 Attention : si vous activez l’option de création, un grand nombre d’actifs seront automatiquement créés dans votre espace de travail. Veillez à bien renseigner les références externes.

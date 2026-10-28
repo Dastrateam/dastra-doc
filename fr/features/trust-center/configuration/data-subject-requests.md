@@ -12,7 +12,7 @@ Pour activer la fonctionnalité '**Exercice des droits**' dans votre Trust cente
 
 #### Prérequis
 
-Afin de pouvoir afficher un widget d'exercice des droits dans votre Trust center, vous devez disposer du module 'Exercice des droits' dans votre abonnement et avoir au préalable [configuré et publié un widget de collect](../../gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md)[e](../../gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md).
+Afin de pouvoir afficher un widget d'exercice des droits dans votre Trust center, vous devez disposer du module 'Exercice des droits' dans votre abonnement et avoir au préalable [configuré et publié un widget de collect](../../requests/widget.md)[e](../../requests/widget.md).
 
 **Widget de collecte de demande de droits**
 

@@ -76,7 +76,7 @@ Certains champs Dastra n'acceptent qu'une liste fixe de valeurs, comme les **Typ
 * associez chaque valeur Jira à une valeur Dastra, et/ou
 * renseignez une **valeur par défaut**, utilisée quand la valeur Jira n'a pas de correspondance.
 
-La configuration ne peut pas être enregistrée tant qu'une ligne est incomplète. Les champs Jira à valeurs fermées (statuts, listes de choix) proposent leurs valeurs possibles dans ce même panneau **Avancé**. Voir [Connexions et mapping des champs](connexions-et-mapping-des-champs.md) pour le détail de l'éditeur de mapping.
+La configuration ne peut pas être enregistrée tant qu'une ligne est incomplète. Les champs Jira à valeurs fermées (statuts, listes de choix) proposent leurs valeurs possibles dans ce même panneau **Avancé**. Voir [Connexions et mapping des champs](connections.md) pour le détail de l'éditeur de mapping.
 
 <!-- 📸 Capture : le panneau Avancé de la ligne « Types de droits », avec deux valeurs Jira associées à des types de droits et une valeur par défaut -->
 
