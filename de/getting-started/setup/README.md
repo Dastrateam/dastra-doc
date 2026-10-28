@@ -14,8 +14,8 @@ Beginnen Sie mit der Erstellung Ihres Mandanten:<br>
 
 <figure><img src="../../.gitbook/assets/Erstellen Sie Ihren Mandant.png" alt=""><figcaption></figcaption></figure>
 
-{% content-ref url="espace-de-travail.md" %}
-[espace-de-travail.md](espace-de-travail.md)
+{% content-ref url="workspace.md" %}
+[espace-de-travail.md](workspace.md)
 {% endcontent-ref %}
 
 ***
@@ -24,8 +24,8 @@ Beginnen Sie mit der Erstellung Ihres Mandanten:<br>
 
 Wenn Sie einem bestehenden Projekt auf Dastra beitreten oder ein Teammitglied einladen möchten, beginnen Sie hier:<br>
 
-{% content-ref url="inviter-utilisateurs.md" %}
-[inviter-utilisateurs.md](inviter-utilisateurs.md)
+{% content-ref url="users.md" %}
+[inviter-utilisateurs.md](users.md)
 {% endcontent-ref %}
 
 ***
@@ -34,8 +34,8 @@ Wenn Sie einem bestehenden Projekt auf Dastra beitreten oder ein Teammitglied ei
 
 Erfahren Sie, wie Sie Rollen und Berechtigungen verwalten oder neue benutzerdefinierte Rollen entsprechend Ihrer Organisation erstellen:<br>
 
-{% content-ref url="gerez-les-roles-et-permissions.md" %}
-[gerez-les-roles-et-permissions.md](gerez-les-roles-et-permissions.md)
+{% content-ref url="roles.md" %}
+[gerez-les-roles-et-permissions.md](roles.md)
 {% endcontent-ref %}
 
 ***
@@ -44,8 +44,8 @@ Erfahren Sie, wie Sie Rollen und Berechtigungen verwalten oder neue benutzerdefi
 
 Stellen Sie Ihre Teams zusammen und weisen Sie diese den passenden Abteilungen oder Organisationseinheiten zu:<br>
 
-{% content-ref url="creer-puis-affectez-des-equipes.md" %}
-[creer-puis-affectez-des-equipes.md](creer-puis-affectez-des-equipes.md)
+{% content-ref url="teams.md" %}
+[creer-puis-affectez-des-equipes.md](teams.md)
 {% endcontent-ref %}
 
 ***
@@ -55,8 +55,8 @@ Stellen Sie Ihre Teams zusammen und weisen Sie diese den passenden Abteilungen o
 Das war's! Sie sind bereit, Dastra zu nutzen.\
 Sie können die Funktionen der Plattform frei erkunden oder einem konkreten Anwendungsfall im folgenden Tutorial folgen:<br>
 
-{% content-ref url="../tutoriel/" %}
-[tutoriel](../tutoriel/)
+{% content-ref url="../tutorial/README.md" %}
+[tutoriel](../tutorial/README.md)
 {% endcontent-ref %}
 
 ***

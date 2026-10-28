@@ -123,6 +123,6 @@ Sie können eine monatliche Zusammenfassung der Aktivitäten Ihres Mandanten erh
 
 ### 🔗 Siehe auch
 
-* [Ihr Nutzerprofil einrichten](../../getting-started/setup/parametrer-votre-profil-utilisateur.md)
-* [Rollen und Berechtigungen konfigurieren](roles-et-permissions.md)
-* [Ihre Audits verfolgen](../audit/)
+* [Ihr Nutzerprofil einrichten](../../getting-started/setup/profile.md)
+* [Rollen und Berechtigungen konfigurieren](roles.md)
+* [Ihre Audits verfolgen](../questionnaires/README.md)

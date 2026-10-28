@@ -7,7 +7,7 @@ description: Integrieren Sie komplexe Prozesse mit benutzerdefinierten Workflow-
 {% hint style="info" %}
 **Prozessschritte vs. Workflow-Regeln**
 
-Die [Prozessschritte](etapes-de-processus.md) definieren die Status, die Objekte durchlaufen (z. B. Neu → In Bearbeitung → Erledigt). Die **Workflow-Regeln** automatisieren Aktionen, wenn diese Schritte oder andere Ereignisse eintreten. Beide Funktionen ergänzen sich.
+Die [Prozessschritte](workflow-stages.md) definieren die Status, die Objekte durchlaufen (z. B. Neu → In Bearbeitung → Erledigt). Die **Workflow-Regeln** automatisieren Aktionen, wenn diese Schritte oder andere Ereignisse eintreten. Beide Funktionen ergänzen sich.
 {% endhint %}
 
 ## Das Funktionsprinzip

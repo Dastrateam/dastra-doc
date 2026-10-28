@@ -17,7 +17,7 @@ Die SCIM-Funktionalität ist Kunden mit einem **Enterprise-Plan** vorbehalten.
 {% endhint %}
 
 {% hint style="info" %}
-Wir empfehlen Ihnen dringend, vorab [die SSO-Einrichtung](single-sign-on-sso/) **mit aktivierter Option „Für alle Nutzer erzwingen"** durchzuführen.&#x20;
+Wir empfehlen Ihnen dringend, vorab [die SSO-Einrichtung](sso/README.md) **mit aktivierter Option „Für alle Nutzer erzwingen"** durchzuführen.&#x20;
 {% endhint %}
 
 ### Wie konfiguriere ich SCIM mit Azure Active Directory?
@@ -78,7 +78,7 @@ Derzeit ermöglicht Dastra die SCIM-Synchronisation (Teams + Nutzer) von **nur e
 
 <figure><img src="../../.gitbook/assets/image-12-2.png" alt=""><figcaption></figcaption></figure>
 
-Klicken Sie auf „**Verbindung testen**" und „**Speichern**". Wenn beim Verbindungstest ein Fehler auftritt, kann dies an einer nicht aktivierten Funktion in Ihrem Abonnement liegen. [Kontaktieren Sie dann den Support](../../getting-started/le-support/faire-une-demande-de-support.md)
+Klicken Sie auf „**Verbindung testen**" und „**Speichern**". Wenn beim Verbindungstest ein Fehler auftritt, kann dies an einer nicht aktivierten Funktion in Ihrem Abonnement liegen. [Kontaktieren Sie dann den Support](../../getting-started/support/request.md)
 
 #### 9. Aktivieren Sie die Bereitstellung der Anwendung
 

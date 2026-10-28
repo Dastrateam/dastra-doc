@@ -7,7 +7,7 @@ Das Trust Center ist modular aufgebaut und ermöglicht es Ihnen, die zu verwende
 * [Startseite und allgemeine Konfiguration](home.md)
 * [Fragebögen](questionnaires.md)
 * [Betroffenenanfragen](data-subject-requests.md)
-* [Verarbeitungsverzeichnis](record-of-processing-activities.md)
+* [Verarbeitungsverzeichnis](ropa.md)
 * [Dokumente](attachments.md)
 * [Organigramm](org-chart.md)
 * [Kontakte](contacts.md)

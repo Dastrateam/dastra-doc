@@ -14,7 +14,7 @@ Um die Funktion '**Betroffenenanfragen**' in Ihrem Trust Center zu aktivieren, b
 
 #### Voraussetzungen
 
-Um ein Widget für Betroffenenanfragen in Ihrem Trust Center anzeigen zu können, müssen Sie über das Modul 'Betroffenenanfragen' in Ihrem Abonnement verfügen und zuvor [ein Erfassungswidget konfiguriert und veröffentlicht](../../gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits.md) haben.
+Um ein Widget für Betroffenenanfragen in Ihrem Trust Center anzeigen zu können, müssen Sie über das Modul 'Betroffenenanfragen' in Ihrem Abonnement verfügen und zuvor [ein Erfassungswidget konfiguriert und veröffentlicht](../../requests/widget.md) haben.
 
 **Widget zur Erfassung von Betroffenenanfragen**
 

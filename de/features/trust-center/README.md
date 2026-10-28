@@ -9,15 +9,15 @@ Das **Trust Center** ermöglicht es Organisationen, ein vollständig konfigurier
 Das Trust Center bietet eine modulare und flexible Konfiguration, mit der Sie die gewünschten Funktionen aus den folgenden Optionen auswählen und aktivieren können:
 
 * [Anpassbare Startseite](configuration/home.md) (pflichtfeld)
-* [Fragebögen](configuration/questionnaires.md) (optional - erfordert die Funktion [Fragebögen](../audit/))
+* [Fragebögen](configuration/questionnaires.md) (optional - erfordert die Funktion [Fragebögen](../questionnaires/README.md))
 * [Dokumente](configuration/attachments.md) (optional)
-* [Betroffenenanfragen](configuration/data-subject-requests.md) (optional - erfordert die Funktion [Betroffenenanfragen](../gerer-les-exercices-des-droits/))
+* [Betroffenenanfragen](configuration/data-subject-requests.md) (optional - erfordert die Funktion [Betroffenenanfragen](../requests/README.md))
 * [Organigramm](configuration/org-chart.md) (optional)
-* [Verarbeitungsverzeichnis](configuration/record-of-processing-activities.md) (optional - erfordert die Funktion [Verarbeitungsverzeichnis](../editer-le-registre/))
+* [Verarbeitungsverzeichnis](configuration/ropa.md) (optional - erfordert die Funktion [Verarbeitungsverzeichnis](../ropa/README.md))
 
 ### Zugang zur Funktion
 
-Um auf die Funktion zugreifen zu können, muss Ihr Abonnement unsere Funktion [.](./ "mention") enthalten.
+Um auf die Funktion zugreifen zu können, muss Ihr Abonnement unsere Funktion [.](README.md "mention") enthalten.
 
 Sie greifen auf die Trust Center über die seitliche Navigationsleiste der Anwendung zu
 

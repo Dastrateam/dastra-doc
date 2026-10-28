@@ -24,7 +24,7 @@ Jeder Nutzer kann die Zwei-Faktor-Authentifizierung individuell aktivieren. Es i
 
 ## Single Sign On (SSO) und SCIM
 
-Dastra bietet optional oder je nach gewähltem Plan ein [Self-Service-SSO](../features/settings/single-sign-on-sso/) an, das einfach und gut dokumentiert ist. Wir unterstützen die Protokolle SAML2P oder OpenID, die mit jedem Unternehmensverzeichnis kompatibel sind. Ergänzend ist es möglich, die Nutzer Ihres Verzeichnisses automatisch über unseren [SCIM](../features/settings/scim.md)-Server zu provisionieren.
+Dastra bietet optional oder je nach gewähltem Plan ein [Self-Service-SSO](../features/settings/sso/README.md) an, das einfach und gut dokumentiert ist. Wir unterstützen die Protokolle SAML2P oder OpenID, die mit jedem Unternehmensverzeichnis kompatibel sind. Ergänzend ist es möglich, die Nutzer Ihres Verzeichnisses automatisch über unseren [SCIM](../features/settings/scim.md)-Server zu provisionieren.
 
 ## Verschlüsselung der Daten während der Übertragung
 
@@ -76,11 +76,11 @@ Dastra ermöglicht es dem Kontoadministrator über [die Seite zur Sicherheitsver
 
 ## **API-Token-Kontrollen**
 
-Zeigen Sie alle [API-Schlüssel](../features/settings/gestion-des-cles-dapi.md) an und verwalten Sie diese, die von den Entwicklern Ihrer Organisation verwendet werden. Sie können deren Geltungsbereich auch auf bestimmte Mandanten oder bestimmte Berechtigungen beschränken.
+Zeigen Sie alle [API-Schlüssel](../features/settings/api-keys.md) an und verwalten Sie diese, die von den Entwicklern Ihrer Organisation verwendet werden. Sie können deren Geltungsbereich auch auf bestimmte Mandanten oder bestimmte Berechtigungen beschränken.
 
 ## Vollständige Zugriffskontrolle
 
-Verwendung des Zugriffsverwaltungsmodells [RBAC](https://de.wikipedia.org/wiki/Role_Based_Access_Control) (Role-Based-Access-Control). Der Organisationsverantwortliche kann die [Rollen und Berechtigungen](../features/settings/roles-et-permissions.md) jedes Nutzers äußerst flexibel festlegen.
+Verwendung des Zugriffsverwaltungsmodells [RBAC](https://de.wikipedia.org/wiki/Role_Based_Access_Control) (Role-Based-Access-Control). Der Organisationsverantwortliche kann die [Rollen und Berechtigungen](../features/settings/roles.md) jedes Nutzers äußerst flexibel festlegen.
 
 ## Sichere Authentifizierung basierend auf OpenIdConnect für alle unsere Websites
 
@@ -90,7 +90,7 @@ Die Authentifizierungsinstanz ist [https://account.dastra.eu](https://account.da
 
 ## **IP-Adressen-Zulassungsliste**
 
-Der Zugriff auf die Organisation kann auf zugelassene IP-Adressbereiche beschränkt werden. Die Filterung gilt für alle Nutzer (einschließlich Administratoren) und alle Anmeldemethoden (Passwort, SSO, Passkey, Magic Link), bei der Anmeldung und bei jeder Token-Erneuerung. Sie gilt nicht für APIs, SCIM oder SIEM-Streaming. Details finden Sie auf der Seite [IP-Filterung](../features/settings/ip-filterung.md).
+Der Zugriff auf die Organisation kann auf zugelassene IP-Adressbereiche beschränkt werden. Die Filterung gilt für alle Nutzer (einschließlich Administratoren) und alle Anmeldemethoden (Passwort, SSO, Passkey, Magic Link), bei der Anmeldung und bei jeder Token-Erneuerung. Sie gilt nicht für APIs, SCIM oder SIEM-Streaming. Details finden Sie auf der Seite [IP-Filterung](../features/settings/ip-filtering.md).
 
 ## E-Mail-Domain-Zulassungsliste
 

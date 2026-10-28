@@ -14,4 +14,4 @@ Um die Funktion '**Dokumente**' in Ihrem Trust Center zu aktivieren, besuchen Si
 
 Fügen Sie in dieser Registerkarte Dateien hinzu (durch Hochladen oder Auswahl aus Ihren bestehenden Dateien der Dokumentenverwaltung), um sie öffentlich in der Registerkarte Dokumente Ihres Trust Centers bereitzustellen (zur Einsicht und zum Download).
 
-[Mehr Informationen zur Dokumentenverwaltung in Dastra.](../../gestion-de-documents-ged/)
+[Mehr Informationen zur Dokumentenverwaltung in Dastra.](../../files/README.md)
