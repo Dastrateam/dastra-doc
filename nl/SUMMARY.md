@@ -69,6 +69,7 @@
     * [Gegevens en retentie](features/ropa/activity/datasets.md)
     * [Activa](features/ropa/activity/assets.md)
     * [Betrokken personen](features/ropa/activity/data-subjects.md)
+    * [Rechten van betrokkenen](features/ropa/activity/rights.md)
     * [Ontvangers](features/ropa/activity/recipients/README.md)
       * [Doorgifte van gegevens buiten de EU](features/ropa/activity/recipients/transfers.md)
     * [Beveiligingsmaatregelen](features/ropa/activity/security.md)
