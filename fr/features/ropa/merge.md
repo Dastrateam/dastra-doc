@@ -1,97 +1,79 @@
+---
+description: Apprenez à fusionner des traitements en doublon ou similaires en un seul traitement.
+---
+
 # Fusion des traitements
 
-### 🧠 Introduction
+## Introduction
 
-La **fusion des traitements** permet de **regrouper plusieurs traitements de données en un seul**, tout en **conservant les informations essentielles** et l’historique associé.\
-Cette fonctionnalité est particulièrement utile pour **rationaliser le registre des traitements**, éviter les doublons et améliorer la **cohérence documentaire**.
+La fusion des traitements vous permet de **regrouper plusieurs traitements en un seul**, en conservant les informations que vous choisissez et les éléments qui leur sont liés. Elle est particulièrement utile pour **rationaliser votre registre des traitements**, supprimer les doublons et garder une documentation cohérente.
 
-> 🎯 Objectif : simplifier la gouvernance du registre en consolidant les traitements similaires ou redondants.
+Un des traitements est conservé comme **version de référence**. Vous choisissez, champ par champ, les valeurs à reprendre des autres traitements, puis ces autres traitements sont supprimés.
 
-***
+La fusion nécessite un accès en écriture au registre des traitements. Quand la gestion des tâches, la gestion des risques ou les questionnaires sont activés dans votre espace de travail, vous avez aussi besoin d'un accès en écriture à ces modules, pour que les éléments liés puissent être rattachés à la version de référence.
 
-### ⚙️ Activer la fonctionnalité
+## Lancer une fusion
 
-La fusion des traitements est disponible pour les **administrateurs** et **contributeurs** disposant des droits d’édition sur le registre.
+Vous pouvez lancer une fusion depuis trois endroits :
 
-#### Pour l’activer :
+* **Depuis la liste, pour plusieurs traitements** : sélectionnez les traitements à fusionner (moins de 30), cliquez sur **Choisir une action groupée**, puis sur **Fusionner**. La comparaison s'ouvre directement.
+* **Depuis la liste, pour un traitement** : ouvrez le menu d'actions en bout de ligne et cliquez sur **Fusionner**.
+* **Depuis la fiche d'un traitement** : cliquez sur la flèche à côté du bouton **Enregistrer**, puis sur **Fusionner**.
 
-1. Rendez-vous dans le module **Registre des traitements**.
-2. Sélectionnez **plusieurs traitements** à fusionner.
-3. Cliquez sur **Fusionner**.
-4. Choisissez :
-   * Le **traitement principal** (celui qui sera conservé),
-   * Les champs à **prioriser** ou **combiner** (ex. : finalités, catégories de données, bases légales).
-5. Validez la fusion pour créer le **nouveau traitement consolidé**.
+<figure><img src="../../.gitbook/assets/ropa-merge-1.png" alt="Entrée Fusionner dans le menu d'actions d'un traitement"><figcaption><p>L'entrée Fusionner du menu d'actions d'un traitement</p></figcaption></figure>
 
-> 💡 Les traitements fusionnés sont archivés automatiquement pour garantir la traçabilité et la réversibilité de l’opération.
+Quand vous partez d'un seul traitement, la fenêtre **Outil de fusion** vous demande d'abord de choisir les traitements avec lesquels le fusionner. Sélectionnez-les dans **Sélectionnez les objets avec lesquels vous souhaitez fusionner les données**, puis cliquez sur **Suivant**.
 
-***
+<figure><img src="../../.gitbook/assets/ropa-merge-2.png" alt="Sélection des traitements à fusionner"><figcaption><p>Sélection des traitements avec lesquels fusionner</p></figcaption></figure>
 
-### 🚀 Fonctionnalités principales
+## Choisir les valeurs à conserver
 
-#### 🔍 1. Fusion et analyse de données
+La fenêtre **Outil de fusion** compare les traitements côte à côte, avec une colonne par traitement.
 
-Dastra permet de **combiner différents traitements** et leurs **contenus associés** (catégories de données, durées de conservation, mesures de sécurité, sous-traitants, etc.).\
-L’outil détecte automatiquement :
+1. Cochez, dans l'en-tête de sa colonne, le traitement à conserver. Il devient la **Version de référence** et garde son identifiant et son historique. Les autres colonnes affichent le badge **Conserver sélection** : ces traitements sont supprimés une fois la fusion confirmée, et seuls les champs que vous y sélectionnez sont reportés sur la version de référence.
+2. Pour chaque champ à valeur unique, sélectionnez la colonne dont vous voulez conserver la valeur.
+3. Pour chaque champ qui contient une liste (finalités, jeux de données, destinataires, mesures de sécurité, etc.), cochez les éléments à conserver, quel que soit le traitement d'origine. Ils sont regroupés dans la version de référence.
+4. Cliquez sur **Fusionner**.
 
-* les **champs similaires** à fusionner,
-* les **valeurs divergentes** à arbitrer manuellement,
-* et les **incohérences potentielles** entre traitements.
+<figure><img src="../../.gitbook/assets/ropa-merge-3.png" alt="Fenêtre Outil de fusion qui compare deux traitements"><figcaption><p>La fenêtre Outil de fusion</p></figcaption></figure>
 
-> Cela facilite l’analyse, la consolidation et la **cartographie cohérente** de votre registre RGPD.
+Pour faciliter la comparaison :
 
-***
+* chaque champ dont la valeur diffère d'un traitement à l'autre est marqué **Différent**, et un compteur indique le nombre de lignes concernées ;
+* le tableau affiche uniquement les lignes qui diffèrent. Activez **Voir tous les champs** pour afficher tous les champs comparables. Les champs identiques masqués conservent la valeur de la version de référence ;
+* le bouton **Sélectionner tout**, sous l'en-tête d'une colonne, retient les valeurs de cette colonne sur toutes les lignes qui diffèrent. **Annuler la sélection** revient en arrière. Une valeur vide ne remplace jamais une valeur renseignée.
 
-#### 🧩 2. Gestion intégrée et centralisée
+La section **Objets liés conservés** indique combien d'analyses de risques, de tâches et de réponses aux questionnaires sont liées aux traitements fusionnés. Ces éléments sont rattachés automatiquement à la version de référence, si bien qu'aucun élément lié aux traitements supprimés n'est perdu.
 
-Toutes les informations issues des traitements fusionnés sont regroupées dans une **fiche unifiée**, incluant :
+Une fois la fusion effectuée, un message la confirme avec un lien **Afficher l'élément** qui ouvre la version de référence.
 
-* Les **finalités consolidées**,
-* Les **bases légales** associées,
-* Les **catégories de personnes et de données**,
-* Les **transferts et sous-traitants**,
-* Les **mesures de sécurité**,
-* Les **documents liés** (DPIA, politiques, preuves…).
+{% hint style="warning" %}
+Les traitements autres que la version de référence sont supprimés à la confirmation de la fusion, et cette opération est irréversible. Vérifiez vos choix avant de cliquer sur **Fusionner**, et exportez les traitements au préalable si vous souhaitez garder une copie de leur contenu.
+{% endhint %}
 
-> 🎯 Cette centralisation simplifie la gestion du registre et garantit la cohérence entre les services ou entités.
+## Détecter automatiquement les doublons
 
-***
+Pour repérer les traitements qui sont probablement des doublons, cliquez sur la flèche à côté du bouton **Créer un traitement de données**, puis sur **Outil de qualité de données**. Les doublons détectés sont listés avec un score de confiance, et vous pouvez les fusionner depuis cet écran.
 
-#### ⚙️ 3. Automatisation des processus
+{% content-ref url="../general/merge.md" %}
+[merge.md](../general/merge.md)
+{% endcontent-ref %}
 
-La fusion s’appuie sur les capacités d’automatisation de Dastra :
+## Cas d'usage courants
 
-* Détection automatique des doublons et des traitements similaires,
-* Suggestions de fusion basées sur les **métadonnées communes** (finalité, responsable, domaine, etc.),
-* Mises à jour automatiques des **références croisées** (liens avec audits, risques, IA, violations, etc.),
-* Journalisation complète des actions (traçabilité, auteur, date et justification).
+| Cas                                  | Exemple                                                                      | Bénéfice                                           |
+| ------------------------------------ | ---------------------------------------------------------------------------- | -------------------------------------------------- |
+| **Rationalisation**                  | Deux traitements "Gestion RH" et "Gestion du personnel"                      | Éviter les doublons et simplifier la maintenance   |
+| **Réorganisation**                   | Traitements similaires créés dans plusieurs unités organisationnelles        | Garder un seul traitement, à jour                  |
+| **Harmonisation entre entités**      | Traitements équivalents documentés séparément par plusieurs filiales         | Faciliter la gouvernance et le reporting global    |
+| **Nettoyage du registre**            | Doublons créés lors d'un import initial                                      | Améliorer la clarté et la fiabilité du registre    |
 
-> 🔁 Résultat : un registre propre, cohérent et aligné avec la réalité opérationnelle — sans tâches manuelles répétitives.
+## Bonnes pratiques
 
-***
-
-### 🧠 Cas d’usage typiques
-
-| Cas                             | Exemple                                                       | Bénéfice                                           |
-| ------------------------------- | ------------------------------------------------------------- | -------------------------------------------------- |
-| **Rationalisation**             | Deux traitements “Gestion RH” et “Gestion du personnel”       | Éviter la duplication et simplifier la maintenance |
-| **Refonte organisationnelle**   | Fusion des registres après une restructuration ou acquisition | Créer un registre unique d’entreprise              |
-| **Harmonisation multi-entités** | Traitements similaires entre filiales                         | Faciliter la gouvernance et le reporting global    |
-| **Nettoyage du registre**       | Suppression des redondances créées lors des imports initiaux  | Améliorer la clarté et la fiabilité du registre    |
-
-***
-
-### 🪄 Bonnes pratiques
-
-1. **Vérifiez les compatibilités** : fusionnez uniquement des traitements ayant des finalités proches ou identiques.
-2. **Conservez la cohérence juridique** : évitez de fusionner des traitements reposant sur des bases légales différentes.
-3. **Documentez les décisions** : mentionnez la justification dans le champ de commentaires ou dans la piste d’audit.
-4. **Testez sur un environnement restreint** avant de généraliser à tout le registre.
-
-***
+1. **Vérifiez la compatibilité** : fusionnez uniquement des traitements dont les finalités sont identiques ou très proches.
+2. **Gardez une analyse juridique cohérente** : évitez de fusionner des traitements qui reposent sur des bases légales différentes.
+3. **Documentez votre décision** : expliquez les raisons de la fusion dans une discussion interne sur la version de référence.
 
 {% hint style="success" %}
-💡 **Astuce :**\
-La fusion de traitements vous aide à maintenir un registre propre et à jour, tout en réduisant la charge administrative.\
-Dastra automatise la consolidation et vous permet de garder le contrôle sur chaque fusion.
+La fusion des traitements vous aide à garder un registre propre et à jour tout en réduisant la charge administrative. Vous gardez la main sur chaque valeur reportée.
 {% endhint %}

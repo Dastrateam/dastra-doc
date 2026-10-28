@@ -8,25 +8,31 @@ description: Apprenez à visualiser la carte des transferts de données dans Das
 
 ## Introduction
 
-Dans Dastra, les données peuvent être visualisées de plusieurs manières. Une d'entre elle est la **carte des transferts** de données.
+Dans Dastra, les données peuvent être visualisées de plusieurs manières. L'une d'elles est la **carte des transferts** de données.
 
-Cette visualisation permet en particulier d'explorer, analyser et de comprendre les transferts géographiques de données.
+Cette vue permet d'explorer, d'analyser et de comprendre les transferts géographiques des données de votre registre.
 
 ## Visualiser la carte des transferts
 
-Pour visualiser la carte des transferts, cliquer sur le module "Registres" puis cliquez sur le bouton "**Transferts**" au dessus de votre liste de traitements.
+Pour visualiser la carte des transferts, allez dans le module **Registre des traitements**, puis cliquez sur l'onglet **Transferts** au-dessus de votre liste de traitements.
 
-![Module "Registres"](../../../.gitbook/assets/generalites-tile-registres.png)
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Onglet Transferts du module Registre des traitements"><figcaption><p>Onglet Transferts au-dessus des traitements</p></figcaption></figure>
 
-![Onglet transfert au dessus des traitements](../../../.gitbook/assets/capture-web-4-5-2022-101533-app-dastra-eu.jpeg)
+Vous pouvez alors **visualiser la carte des transferts**. Trois vues sont disponibles depuis les boutons de la barre d'outils :
 
-Ainsi, vous pourrez **visualiser la carte des transferts.**
+* **Vue globe** (par défaut) : les transferts sur un globe ;
+* **Vue carte** : les transferts sur une carte du monde à plat ;
+* **Tableau** : les transferts sous forme de tableau.
 
-![Exemple de transfert de données](../../../.gitbook/assets/register-processing-transfers-map.png)
+Dans les vues cartographiques, la liste des transferts s'affiche à côté de la carte. Utilisez le bouton fléché au bord de la carte pour la masquer ou l'afficher. Les filtres de la barre d'outils permettent de restreindre les transferts affichés, et le menu à côté du bouton **Ajouter un transfert de données** permet d'imprimer la carte ou d'exporter les transferts.
+
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-2.png" alt="Exemple de carte des transferts de données"><figcaption><p>Exemple de transferts de données</p></figcaption></figure>
 
 {% hint style="info" %}
-Il est possible d'accéder aux détails des transferts en cliquant sur les points correspondant à chaque pays.
+Cliquez sur le point correspondant à un pays pour accéder au détail de ses transferts.
 {% endhint %}
+
+La fenêtre **Détails des transferts entrants/sortants de ce pays** indique le statut du pays (pays européen, pays adéquat, pays partiellement adéquat ou pays non adéquat) et liste ses transferts en **Entrée** et en **Sortie**.
 
 ## Aller plus loin
 

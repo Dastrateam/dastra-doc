@@ -1,49 +1,56 @@
 # Utiliser un modèle de traitement
 
-Dastra vous permet de créer votre registre des activités de traitement à partir de modèles conçus par nos experts.
+Dastra vous permet de constituer votre registre des traitements à partir de modèles conçus par nos experts.
 
-Les modèles de traitement permettent de gagner du temps dans la saisie de traitements courants.
+Les modèles de traitement vous font gagner du temps dans la saisie des traitements courants.
 
 ## Créer un traitement à partir d'un modèle
 
-Aller sur "créer un traitement de données"
+Cliquez sur **Créer un traitement de données**
 
-<figure><img src="../../.gitbook/assets/register-create-processing-button.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-1.png" alt="Bouton Créer un traitement de données dans le registre des traitements"><figcaption><p>Le bouton Créer un traitement de données</p></figcaption></figure>
 
-et sélectionner "modèle prédéfini"
+et sélectionnez **À partir d'un modèle**.
 
-<figure><img src="../../.gitbook/assets/register-create-processing-modal-options.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-2.png" alt="Fenêtre Création d'un traitement de données avec l'option À partir d'un modèle"><figcaption><p>L'option À partir d'un modèle</p></figcaption></figure>
 
-Ensuite vous pourrez chercher des modèles de traitement à partir de la barre de recherche.
+Vous pouvez ensuite rechercher des modèles de traitement avec la barre de recherche.
 
-<figure><img src="../../.gitbook/assets/register-create-from-template-library.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-3.png" alt="Navigateur de modèles avec sa barre de recherche et ses filtres"><figcaption><p>Recherche dans la bibliothèque de modèles</p></figcaption></figure>
 
-Les **tags** vous permettront de filtrer les modèles selon les secteurs d'activité.
+Plusieurs filtres vous aident à trouver le bon modèle :
 
-La **langue** vous permet de visualiser les modèles de traitements dans les autres langues.
+* **Source de données de la bibliothèque** vous permet de choisir la bibliothèque à parcourir : les **Modèles créés par Dastra**, ou la bibliothèque de votre partenaire si votre organisation en a une.
+* Le sélecteur de **langue** affiche les modèles de la bibliothèque Dastra dans d'autres langues.
+* Les **Tags** vous permettent de filtrer les modèles par secteur d'activité.
+* **Statut** et **Trier par** (**Le plus récent**, **Plus populaires**, **Ordre alphabétique**) affinent et ordonnent les résultats.
 
-Pour **visualiser le contenu du modèle** avant son import, vous pouvez cliquer sur l'oeil situé en haut à droite du modèle.
+Vous pouvez afficher les résultats sous forme de liste ou de cartes.
 
-<figure><img src="../../.gitbook/assets/register-template-card-preview-button.png" alt=""><figcaption></figcaption></figure>
+Pour **consulter le contenu d'un modèle** avant de l'utiliser, cliquez sur son bouton **Aperçu**.
+
+<figure><img src="../../.gitbook/assets/ropa-templates-4.png" alt="Modèle avec son bouton Aperçu"><figcaption><p>Aperçu d'un modèle avant de l'utiliser</p></figcaption></figure>
+
+Cliquez sur le modèle que vous voulez utiliser, vérifiez le **Nom du traitement de données**, choisissez l'**Unité organisationnelle**, puis cliquez sur **Créer un traitement de données**. Vous arrivez sur le nouveau traitement, que vous pouvez adapter à votre organisation.
 
 ## Suggérer un modèle de traitement
 
-Si vous ne trouvez pas un modèle, vous pouvez nous en suggérer la création.
+Si votre recherche ne renvoie aucun modèle de la bibliothèque Dastra, vous pouvez cliquer sur **Demander un modèle** pour le suggérer à notre équipe. Saisissez le **Nom du modèle souhaité**, ajoutez si besoin des **Informations complémentaires**, puis cliquez sur **Envoyer**. Vous pouvez aussi cliquer sur **Essayez avec l'IA** pour générer le traitement avec notre Assistant IA.
 
-<figure><img src="../../.gitbook/assets/register-template-search-empty-state.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-5.png" alt="Résultat de recherche vide avec les boutons Demander un modèle et Essayez avec l'IA"><figcaption><p>Suggestion d'un nouveau modèle</p></figcaption></figure>
 
-## Créer des modèles de traitement en masse
+## Créer plusieurs traitements à partir de modèles en une seule fois
 
-Vous pouvez sélectionner plusieurs modèles de traitement et les importer en une seule fois en passant par la bibliothèque.
+Vous pouvez sélectionner plusieurs modèles de traitement et les importer en une seule fois depuis la bibliothèque.
 
-Rendez vous dans les options du bouton "Créer un traitement de données" puis "Créer à partir de la bibliothèque"
+Ouvrez le menu du bouton **Créer un traitement de données** (la flèche à sa droite), puis choisissez **Créer à partir de modèles**.
 
-<figure><img src="../../.gitbook/assets/register-create-processing-dropdown-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-6.png" alt="Menu Créer un traitement de données avec l'entrée Créer à partir de modèles"><figcaption><p>L'entrée Créer à partir de modèles</p></figcaption></figure>
 
-Sélectionnez un ou plusieurs modèles, choisissez une unité organisationnelle et cliquez sur "ajouter"
+Dans le panneau qui s'ouvre, renseignez **Source de données de la bibliothèque** et **Choisissez l'unité organisationnelle de destination**, puis cochez un ou plusieurs modèles et cliquez sur **Ajouter**.
 
-<figure><img src="../../.gitbook/assets/register-create-from-library-selection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/register-create-from-library-selection.png" alt="Panneau Créer à partir de modèles avec plusieurs modèles sélectionnés"><figcaption><p>Sélection de plusieurs modèles dans la bibliothèque</p></figcaption></figure>
 
-Le bouton "**Détails**" permet de prévisualiser le modèle.
+Le bouton **Détails** vous permet de prévisualiser un modèle.&#x20;
 
-Ensuite vos modèles seront importés en tâche de fonds
+Vos traitements sont ensuite créés en arrière-plan.
