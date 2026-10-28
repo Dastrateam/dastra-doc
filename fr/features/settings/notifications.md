@@ -123,6 +123,6 @@ Vous pouvez revevoir un résumé mensuel des activités de votre espace de trava
 
 ### 🔗 Voir aussi
 
-* [Paramétrer votre profil utilisateur](../../getting-started/setup/parametrer-votre-profil-utilisateur.md)
-* [Configurer les rôles et permissions](roles-et-permissions.md)
-* [Suivre vos audits](../audit/)
+* [Paramétrer votre profil utilisateur](../../getting-started/setup/profile.md)
+* [Configurer les rôles et permissions](roles.md)
+* [Suivre vos audits](../questionnaires/README.md)

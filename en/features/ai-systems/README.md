@@ -56,13 +56,13 @@ This feature is the s of all AI regulations such as the EU AI Act. It will enabl
 
 In the following links, you'll learn how to set up a record of AI systems and create your own repository of AI models :
 
-[ai-models-repository.md](ai-models-repository.md "mention")\
+[ai-models-repository.md](models.md "mention")\
 \
-[establishing-a-record-of-ai-systems.md](establishing-a-record-of-ai-systems.md "mention")\
+[establishing-a-record-of-ai-systems.md](record.md "mention")\
 \
-[import-your-ai-systems.md](import-your-ai-systems.md "mention")\
+[import-your-ai-systems.md](import.md "mention")\
 \
-[risk-analysis-and-business-value.md](risk-analysis-and-business-value.md "mention")
+[risk-analysis-and-business-value.md](risk-analysis.md "mention")
 
 [transparency-notice.md](transparency-notice.md "mention")
 

@@ -43,7 +43,7 @@ L'étape de configuration vous permet de contrôler la façon dont les applicati
 * **Utilisateurs à notifier en cas d'erreur** (obligatoire) — ces utilisateurs reçoivent un e-mail quand une synchronisation échoue.
 * **Créer l'enregistrement Dastra s'il n'existe pas** — désactivé, seuls les actifs existants sont mis à jour.
 * **Dédoublonner les éléments synchronisés** — fait correspondre les applications entrantes aux actifs existants via un **Champ de correspondance** (**Label** ou **Référence**) pour les mettre à jour au lieu de créer des doublons.
-* **Mapping des champs** — choisissez quel champ LeanIX alimente chaque champ Dastra (voir [Connexions, cas d'usage et mapping des champs](connexions-et-mapping-des-champs.md)).
+* **Mapping des champs** — choisissez quel champ LeanIX alimente chaque champ Dastra (voir [Connexions, cas d'usage et mapping des champs](connections.md)).
 
 <!-- 📸 Capture : le panneau de configuration SAP LeanIX avec les options de synchronisation et le mapping des champs -->
 

@@ -7,7 +7,7 @@ Le Trust center est modulaire et vous permet de choisir les fonctionnalités à 
 * [Page d'accueil et configuration générale](home.md)
 * [Questionnaires](questionnaires.md)
 * [Exercice des droits](data-subject-requests.md)
-* [Registre des traitements](record-of-processing-activities.md)
+* [Registre des traitements](ropa.md)
 * [Documents](attachments.md)
 * [Organigramme](org-chart.md)
 * [Contacts](contacts.md)

@@ -59,18 +59,18 @@ The user is redirected to an error page displaying:
 > IP Address not allowed — Your IP address is not allowed by your organization. Please contact your account's administrator.
 
 {% hint style="warning" %}
-Blocked attempts are **not** recorded in the audit log and are not sent to [SIEM streaming](siem-streaming.md).
+Blocked attempts are **not** recorded in the audit log and are not sent to [SIEM streaming](siem.md).
 {% endhint %}
 
 ## What filtering does not cover
 
 | Access | Filtered? |
 |---|---|
-| API calls using an [API key](api-key-management.md) | No |
+| API calls using an [API key](api-keys.md) | No |
 | [SCIM](scim.md) | No |
-| [SIEM streaming](siem-streaming.md) and BI connectors | No |
+| [SIEM streaming](siem.md) and BI connectors | No |
 | External questionnaire respondents (public link) | No |
-| Data subject rights portal and Privacy Hub | No, they have their own settings (see [Privacy Hub - Security](../privacy-hubs/configuration/security.md)) |
+| Data subject rights portal and Privacy Hub | No, they have their own settings (see [Privacy Hub - Security](../trust-center/configuration/security.md)) |
 
 ## Dastra support
 

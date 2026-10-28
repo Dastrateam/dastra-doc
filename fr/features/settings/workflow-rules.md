@@ -7,7 +7,7 @@ description: Intégrez des processus complexe à l'aide des Règles de workflow 
 {% hint style="info" %}
 **Étapes de processus vs règles de workflow**
 
-Les [étapes de processus](etapes-de-processus.md) définissent les statuts que traversent les objets (ex. Nouveau → En cours → Fait). Les **règles de workflow** automatisent des actions lorsque ces étapes ou d'autres événements surviennent. Les deux fonctionnalités sont complémentaires.
+Les [étapes de processus](workflow-stages.md) définissent les statuts que traversent les objets (ex. Nouveau → En cours → Fait). Les **règles de workflow** automatisent des actions lorsque ces étapes ou d'autres événements surviennent. Les deux fonctionnalités sont complémentaires.
 {% endhint %}
 
 ## Le principe de fonctionnement
