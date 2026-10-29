@@ -1,17 +1,23 @@
 ---
-description: Learn how to configure the design of your Trust center
+description: >-
+  Learn how to configure the logo, cover image and accent color of your Trust
+  Center.
 ---
 
 # Appearance and design
 
-<figure><img src="../../../.gitbook/assets/screenshot-2024-11-18-235339.png" alt=""><figcaption></figcaption></figure>
+The **Design** section of the editing page gathers the visual elements of your Trust Center: the logo, the accent color and the cover image. All three are optional.
 
+<figure><img src="../../../.gitbook/assets/trust-center-design-1.png" alt="Design section of a Trust Center with the logo, the accent color and the cover image"><figcaption><p>The Design section of a Trust Center</p></figcaption></figure>
 
+## Logo
 
-#### Logo (Optional)
+Add the logo of your choice, in square format. It appears in the header of the Trust Center, next to its name. Without a logo, only the name of the Trust Center is displayed.
 
-You can add your chosen logo (square format) to your Trust center. This logo will appear in the header of your Trust center, next to its name. In the absence of a logo, only the name of your Trust center will be displayed.
+## Accent color
 
-#### Cover Image (Optional)
+The **Accent color** field colors the interactive elements of the public portal: links, the active tab, primary buttons and the active page of lists. Without a color, the portal uses its default color.
 
-You can add a cover image of your choice (rectangular format) to your Trust center. If provided, this image will appear in the header of your Trust center, above the logo and the title.
+## Cover image
+
+Add a cover image, in rectangular format (2:1 proportions). It appears at the top of the Trust Center header, above the logo and the name.

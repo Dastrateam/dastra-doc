@@ -1,36 +1,52 @@
+---
+description: >-
+  Learn how to configure questionnaires in your Trust Center.
+---
+
 # Questionnaires
 
-#### Activating the 'Questionnaires' Feature in Your Trust center&#x20;
+This page explains how to make questionnaires available to the visitors of your Trust Center.
 
-To activate the 'Questionnaires' feature in your Trust center, refer to the general configuration section where you can enable or disable this option. Once enabled, a new public page titled 'Questionnaires' will be added to your Trust center.
+## Enable the feature
 
-<figure><img src="../../../.gitbook/assets/screenshot-2024-11-18-232946.png" alt=""><figcaption><p>The Questionnaires configuration accordion</p></figcaption></figure>
+Check **Questionnaires** in the **Configuration** section, as explained in [Homepage and general configuration](home.md). A public **Questionnaires** page is then added to your Trust Center, and the **Questionnaires** section unlocks on the editing page.
 
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-1.png" alt="Questionnaires section of the editing page with two questionnaires added"><figcaption><p>The questionnaires configuration section of your Trust Center</p></figcaption></figure>
 
+## Add a questionnaire
 
-#### Adding a Questionnaire to Your Trust center&#x20;
+1. In the **Questionnaires** section, click **Add questionnaires**.
+2. In the selection window, choose one or more questionnaires. They are the ones you installed in the Questionnaires module of this workspace.
+3. Click **Add** to confirm.
 
-To add a questionnaire, select the questionnaires to share in your Trust center by clicking Add Questionnaires. A selection window will appear, allowing you to choose one or more questionnaires to add. After making your selection, click Add to confirm. The available questionnaires correspond to those installed in the Questionnaires module within this workspace.
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-2.png" alt="Selection window for questionnaire templates"><figcaption><p>The questionnaire selection window</p></figcaption></figure>
 
-You can remove or add additional questionnaires to your Trust center at any time. Added questionnaires will be displayed on the 'Questionnaires' page of your Trust center.
+You can remove or add other questionnaires at any time. The added questionnaires are visible on the public **Questionnaires** page.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2024-11-18-233109.png" alt=""><figcaption></figcaption></figure>
+## Questionnaires instructions
 
-#### Instructions for Questionnaires&#x20;
+The **Questionnaires instructions** field is a rich text editor. It lets you format the text and include images or videos. The message appears on the public **Questionnaires** page, above the list of questionnaires.
 
-This rich text (HTML) field lets you customize a message with formatting options and include images or videos. This message will appear on the public 'Questionnaires' page of your Trust center, above the list of questionnaires available in your portal.
+## Rename questionnaires
 
-#### Renaming Questionnaires&#x20;
+By default, a questionnaire has the name of the installed template in the Trust Center. To change the name and description displayed in the portal without changing the original template, open the questionnaire's menu and click **Edit questionnaire label and description**.
 
-By default, the questionnaires displayed in your Trust center use the same name as their original template. However, you can change the name displayed in the portal without affecting the original template name by clicking Edit Name and Description.
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-3.png" alt="Menu of a questionnaire with the Edit questionnaire label and description option"><figcaption><p>Edit the name and description displayed in the Trust Center</p></figcaption></figure>
 
-#### Modifying the Display Order of Questionnaires&#x20;
+## Change the display order
 
-Once you’ve selected your questionnaires, you can reorder their display using the drag-and-drop function. The display order on your public Trust center will match the order defined on this configuration page.
+Reorder the questionnaires by drag and drop. The order of the public portal follows the order of this configuration page.
 
-#### Pinning Questionnaires&#x20;
+## Pin questionnaires
 
-To highlight specific questionnaires, click the pin icon. Pinned questionnaires will always appear at the top of the list, regardless of their configuration order. Additionally, they will also be accessible from the homepage sidebar of your hub, as well as from the 'Questionnaires' page.
+To highlight a questionnaire, click its pin icon. Pinned questionnaires always appear at the top of the list, regardless of their configuration order. They also appear in the sidebar of the homepage, when the homepage is enabled.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2024-11-18-233515.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-4.png" alt="A pinned questionnaire in the Questionnaires section"><figcaption><p>Pin a questionnaire</p></figcaption></figure>
 
+## Impact of the organizational unit on responses
+
+Visitors of your Trust Center can answer all the questionnaires made available to them. Responses are saved in the Questionnaires module and attached to the Trust Center's organizational unit (see [Homepage and general configuration](home.md)).
+
+{% hint style="info" %}
+To work in a Trust Center, a questionnaire must have link sharing enabled. If it does not, link sharing is enabled automatically when you add the questionnaire. It can no longer be disabled while the questionnaire is in a Trust Center.
+{% endhint %}

@@ -1,17 +1,22 @@
 ---
-description: Apprenez à mettre des documents à disposition dans votre Trust center
+description: >-
+  Apprenez à mettre des documents à disposition dans votre Trust Center.
 ---
 
 # Documents
 
-**Activation de la fonctionnalité 'Documents' dans votre Trust center**
+Cette page explique comment mettre des documents à disposition des visiteurs de votre Trust Center.
 
-Pour activer la fonctionnalité '**Documents** dans votre Trust center, consultez la section de configuration générale qui permet d'activer ou de désactiver cette option. Une fois activée, une nouvelle page publique intitulée 'Documents' sera ajoutée à votre Trust center.
+## Activer la fonctionnalité
 
-<figure><img src="../../../.gitbook/assets/trust-center-documents-config.png" alt=""><figcaption><p>L'onglet de configuration des documents</p></figcaption></figure>
+Cochez **Documents** dans la section **Configuration**, comme l'explique [Page d'accueil et configuration générale](home.md). Une page publique **Documents** est alors ajoutée à votre Trust Center, et la section **Documents** se débloque dans la page d'édition.
 
-#### Ajouter des documents à votre Trust center
+<figure><img src="../../../.gitbook/assets/trust-center-attachments-1.png" alt="Section Documents de la page d'édition avec la liste des fichiers mis à disposition"><figcaption><p>La section de configuration des documents</p></figcaption></figure>
 
-Ajoutez des fichiers dans cet onglet (en les envoyant ou en les sélectionnant dans vos fichiers existants de la gestion documentaire) afin de les mettre à disposition publiquement dans l'onglet documents de votre Trust center (pour consultation et téléchargement).
+## Ajouter des documents à votre Trust Center
 
-[Plus d'information sur la gestion des documents dans Dastra.](../../files/README.md)
+Dans la section **Documents**, ajoutez des fichiers en les important ou en les sélectionnant parmi les fichiers existants de la gestion documentaire. Ils sont alors listés sur la page publique **Documents** de votre Trust Center. Les fichiers importés depuis cette section sont enregistrés dans le dossier **Trust Centers** de la gestion documentaire.
+
+Par défaut, un visiteur doit demander l'accès à un document avant de pouvoir le télécharger. Pour modifier ce comportement, lisez [Sécurité](security.md).
+
+[Plus d'informations sur la gestion des documents dans Dastra.](../../files/README.md)

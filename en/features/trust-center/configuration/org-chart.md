@@ -1,15 +1,16 @@
 ---
-description: Learn how to display your organizational chart in your Trust center
+description: >-
+  Learn how to display your organizational chart in your Trust Center.
 ---
 
 # Organizational chart
 
-#### Activating the 'Organizational chart' Feature in your Trust center
+## Enable the feature
 
-&#x20;To activate the 'Organizational Chart' feature in your Trust center, refer to the general configuration section where you can enable or disable this option. Once activated, a new public page titled 'Organizational chart' will be added to your Trust center.
+Check **Organizational chart** in the **Configuration** section, as explained in [Homepage and general configuration](home.md). A public **Organizational chart** page is then added to your Trust Center.
 
-#### Displaying the Organizational chart and impact of organizational unit selection&#x20;
+Apart from enabling it, the organizational chart requires no additional configuration.
 
-Once the feature is activated, the organizational chart of the organizational unit associated with your Trust center (including this unit and all its sub-units) will be displayed on the 'Organizational hart' page of your Trust center.
+## Organizational chart display and impact of the organizational unit
 
-Outside of activation, no additional configuration is required for the organizational chart to be displayed in your Trust center.
+The chart displayed on the **Organizational chart** page is that of the organizational unit of your Trust Center: this unit and all its child units.

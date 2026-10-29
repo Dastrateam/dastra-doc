@@ -1,15 +1,17 @@
 ---
-description: Apprenez à configurer un Organigramme dans votre Trust center
+description: >-
+  Apprenez à afficher l'organigramme de votre organisation dans votre Trust
+  Center.
 ---
 
 # Organigramme
 
-**Activation de la fonctionnalité 'Organigramme' dans votre Trust center**
+## Activer la fonctionnalité
 
-Pour activer la fonctionnalité '**Organigramme'** dans votre Trust center, consultez la section de configuration générale qui permet d'activer ou de désactiver cette option. Une fois activée, une nouvelle page publique intitulée '**Organigramme**' sera ajoutée à votre Trust center.
+Cochez **Organigramme** dans la section **Configuration**, comme l'explique [Page d'accueil et configuration générale](home.md). Une page publique **Organigramme** est alors ajoutée à votre Trust Center.
 
-En dehors de l'activation, l'organigramme ne nécessite pas de configuration additionnelle pour s'afficher dans votre Trust center.
+En dehors de l'activation, l'organigramme ne nécessite aucune configuration supplémentaire.
 
-#### Affichage de l'organigramme et impact du choix de l'unité organisationnelle
+## Affichage de l'organigramme et impact de l'unité organisationnelle
 
-Une fois la fonctionnalité activée, l'organigramme de l'unité organisationnelle de votre Trust center (cette unité et tous ses sous-ensembles) sera affiché sur la page 'Organigramme' de votre Trust center.
+L'organigramme affiché sur la page **Organigramme** est celui de l'unité organisationnelle de votre Trust Center : cette unité et toutes ses unités enfants.

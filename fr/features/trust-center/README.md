@@ -1,25 +1,31 @@
 ---
-description: Apprenez à créer et configurer des Trust center
+description: >-
+  Apprenez à créer et à configurer un Trust Center, le portail public de
+  transparence de votre organisation.
 ---
 
-# Trust center
+# Trust Center
 
-Le **Trust center** permet aux organisations de créer et de personnaliser un **portail web public** entièrement configurable, conçu pour la gestion de la conformité en matière de protection des données personnelles. le Trust center offre une solution simple et intuitive pour mettre en place un espace de transparence et d'interaction avec les parties prenantes de l'organisation, qu'il s'agisse de clients, de sous-traitants ou de collaborateurs.
+Le Trust Center est un portail web public que vous configurez pour présenter la conformité de votre organisation en matière de protection des données personnelles. Il s'adresse à vos clients, à vos sous-traitants et à vos collaborateurs.
 
-Le Trust center offre une configuration modulaire et flexible, vous permettant de sélectionner et d'activer les fonctionnalités de votre choix parmi les options suivantes :
+Vous choisissez les fonctionnalités à afficher parmi les suivantes :
 
-* [Page d'accueil personnalisable](configuration/home.md) (obligatoire)
-* [Questionnaires](configuration/questionnaires.md) (optionnel - nécessite la fonctionnalité [Questionnaires](../questionnaires/README.md))
-* [Documents ](configuration/attachments.md)(optionnel)
-* [Exercice des droits](configuration/data-subject-requests.md) (optionnel - nécessite la fonctionnalité [Exercice des droits](../requests/README.md))
+* [Page d'accueil](configuration/home.md) (optionnelle)
+* [Questionnaires](configuration/questionnaires.md) (optionnel, nécessite la fonctionnalité [Questionnaires](../questionnaires/README.md))
+* [Documents](configuration/attachments.md) (optionnel)
+* [Exercice des droits](configuration/data-subject-requests.md) (optionnel, nécessite la fonctionnalité [Exercice des droits](../requests/README.md))
 * [Organigramme](configuration/org-chart.md) (optionnel)
-* [Registre des traitements](configuration/ropa.md) (optionnel - nécessite la fonctionnalité [registre des traitements](../ropa/README.md))
-* [Systèmes d'IA](configuration/ai-systems.md) (optionnel - nécessite le module Systèmes d'IA dans votre abonnement)
+* [Contacts](configuration/contacts.md) (optionnel)
+* [Registre des traitements](configuration/ropa.md) (optionnel, nécessite la fonctionnalité [Registre des traitements](../ropa/README.md))
+* [Systèmes d'IA](configuration/ai-systems.md) (optionnel, nécessite le module Systèmes d'IA dans votre abonnement)
+* [Affichage du projet de conformité](configuration/README.md#affichage-du-projet-de-conformite) (optionnel, nécessite la fonctionnalité [Conformité](../compliance/README.md))
 
-### Comment accéder à la fonctionnalité
+La page d'accueil est facultative. Les liens rapides, le message d'accueil et la section Contacts s'affichent sur cette page : sans elle, ils n'apparaissent pas dans le portail.
 
-Il est nécessaire pour accéder à la fonctionnalité de disposer dans votre abonnement de notre fonctionnalité [.](README.md "mention").
+## Comment accéder à la fonctionnalité
 
-Vous accédez aux Trust center depuis la barre de navigation latérale de l'application
+Votre abonnement doit inclure la fonctionnalité Trust Center.
 
-<figure><img src="../../.gitbook/assets/trust-center-demo-homepage.png" alt=""><figcaption><p>Aperçu d'unTrust center de démonstration avec tous les modules activés</p></figcaption></figure>
+Vous accédez aux Trust Centers depuis l'entrée **Trust Center** de la barre de navigation latérale de l'application.
+
+<figure><img src="../../.gitbook/assets/trust-center-overview-1.png" alt="Portail public d'un Trust Center avec ses onglets"><figcaption><p>Aperçu d'un Trust Center dont toutes les fonctionnalités sont activées</p></figcaption></figure>

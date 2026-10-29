@@ -1,19 +1,16 @@
 ---
-description: Learn how to display Contacts in your Trust center
+description: >-
+  Learn how to display contacts in your Trust Center.
 ---
 
 # Contacts
 
-#### Activating the 'Contacts' Feature in your trust center
+## Enable the feature
 
-To activate the 'Contacts' feature in your Trust center, refer to the general configuration section where you can enable or disable this option. Once activated, a new **'Contacts'** section in the sidebar of the homepage of your Trust center will be displayed.
+Check **Contacts** in the **Configuration** section, as explained in [Homepage and general configuration](home.md). A **Contacts** section is then displayed in the sidebar of your Trust Center's homepage. It therefore only appears when the homepage is enabled.
 
-***
+Apart from enabling it, contacts require no additional configuration.
 
-#### Displaying Contacts and Impact of Organizational Unit Selection
+## Contacts display and impact of the organizational unit
 
-The contacts shown in the sidebar include Data Protection Officers (DPOs), representatives within the European Union, and legal representatives entered in the organizational unit associated with your Trust center (see "[Set Up Organizational Units](../../../getting-started/setup/organizational-units.md)").&#x20;
-
-Additionally, if applicable, the DPOs, representatives within the European Union, and legal representatives from any child organizational units of this unit will also be included.
-
-Outside of activation, no additional configuration is required for the contacts to appear in your Trust center.
+The contacts shown in the sidebar include the DPOs, representatives within the European Union and legal representatives entered in the organizational unit associated with your Trust Center (see [Set up organizational units](../../../getting-started/setup/organizational-units.md)). If there are any, they also include those of all child units of this unit.

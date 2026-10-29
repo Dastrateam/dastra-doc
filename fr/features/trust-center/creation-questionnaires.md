@@ -1,21 +1,44 @@
-# Collecter des projets de traitements, d'incidents, d'actifs ou de contrats
+---
+description: >-
+  Collectez des projets de traitements, d'incidents, d'actifs, de contrats, de
+  systèmes d'IA ou d'acteurs depuis un Trust Center avec des modèles de
+  questionnaires de création.
+---
 
-Nous avons développé des modèles de questionnaires spécialement conçus pour fonctionner avec les Privacy hubs : les modèles pour la création de traitements, d'incidents de violation, d'actifs dans le référentiel et de contrats. Ces modèles fonctionnent de la même manière que nos autres modèles, mais une fois complétés, les réponses pourront être transformées en brouillons correspondants.
+# Collecter des projets de traitements, d'incidents, d'actifs, de contrats, de systèmes d'IA ou d'acteurs
 
-#### Ajouter un modèle
+Des modèles de questionnaires sont conçus pour fonctionner avec un Trust Center. Ils fonctionnent comme les autres modèles, mais une fois la réponse validée, ses données peuvent être transformées en un objet de Dastra. Six types de modèles existent :
 
-Pour commencer à utiliser ces modèles, rendez-vous dans votre module Questionnaires de l'application Dastra et cliquez sur **Créer modèle**. Choisissez l'option **Questionnaire automatisé**, puis sélectionnez comme source la bibliothèque de modèles Dastra. Recherchez le modèle souhaité (Création de traitement, Incidents de violation, Actifs dans le référentiel, ou Contrats) et sélectionnez-le en cliquant dessus.
+* **Collecte de projet de traitement** : un traitement ;
+* **Création de violations de données** : une violation de données ;
+* **Création d'actif** : un actif du référentiel ;
+* **Création de contrat** : un contrat ;
+* **Création d'un système d'IA** : un système d'IA ;
+* **Création d'acteur** : un acteur.
 
-Le modèle sera ajouté à votre espace de travail et vous serez redirigé vers la page de gestion de ce questionnaire.
+## Ajouter un modèle
 
-#### Contenu du modèle
+1. Dans le module Questionnaires, ouvrez la liste **Modèles de questionnaires** et cliquez sur **Créer modèle**.
+2. Dans la fenêtre **Choisir le type de questionnaire**, choisissez **A partir d'un modèle**.
+3. Dans la bibliothèque, filtrez par **Types** ou recherchez le modèle souhaité, puis cliquez dessus.
 
-Chaque modèle comprend une liste de questions visant à couvrir tous les champs nécessaires pour la création des éléments correspondants dans Dastra.
+Le modèle est ajouté à votre espace de travail et vous êtes redirigé vers sa page de gestion. Pour le proposer aux visiteurs, ajoutez-le ensuite à votre Trust Center : voir [Questionnaires](configuration/questionnaires.md). Pour le détail de la création d'un modèle, voir [Créer un modèle de questionnaire](../questionnaires/templates/README.md).
 
-#### Transformer une réponse en projet
+## Contenu du modèle
 
-Une fois une réponse à ce questionnaire collectée, une option sera disponible sur la page de révision de la réponse pour transformer celle-ci en un projet correspondant (chaque réponse sera liée au champ pertinent dans le traitement, l'incident, l’actif ou le contrat).
+Chaque modèle comprend une liste de questions qui couvrent les champs nécessaires pour créer l'objet correspondant dans Dastra.
 
-#### Modification du modèle
+## Transformer une réponse en objet
 
-Étant donné que chaque question est liée à un champ dans le futur élément à créer, des modifications sur le modèle pourraient entraîner des dysfonctionnements lors de la transformation des réponses. Nous vous recommandons donc d'utiliser le modèle tel que proposé dans la bibliothèque pour garantir son bon fonctionnement.
+Les réponses données depuis le Trust Center arrivent dans le module Questionnaires, dans l'unité organisationnelle du Trust Center. Le bouton de transformation n'apparaît que lorsque la réponse est validée. Il est actif pour les approbateurs de la réponse.
+
+Sur la page de la réponse validée, le bouton s'intitule :
+
+* **Création d'objet** suivi du type d'objet, par exemple **Création d'objet (Traitement de données)**, tant que la réponse n'est liée à aucun objet ;
+* **Fusionner les données** suivi du type d'objet, lorsque la réponse est déjà liée à un objet.
+
+Chaque réponse est reliée au champ correspondant de l'objet. Pour la procédure complète, voir [Fusionner les réponses avec l'objet attaché](../questionnaires/monitor.md#fusionner-les-reponses-avec-lobjet-attache).
+
+## Modifier le modèle
+
+Chaque question est liée à un champ de l'objet à créer : modifier le modèle peut donc empêcher la transformation des réponses. Nous vous recommandons d'utiliser le modèle tel qu'il est proposé dans la bibliothèque.
