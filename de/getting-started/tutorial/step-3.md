@@ -2,70 +2,65 @@
 
 Das Risikomanagement in Dastra kann verschiedene Formen annehmen:
 
-* Die Datenschutz-Folgenabschätzung (DSFA / DPIA),
-* Die Identifizierung und Bewertung von Risiken (über das Risiko-Modul),
+* die Datenschutz-Folgenabschätzung (DSFA),
+* die Identifizierung und Bewertung von Risiken (mit dem Modul Risiken),
 * Audits.
 
-### Die Datenschutz-Folgenabschätzung
+## Die Datenschutz-Folgenabschätzung
 
-Wenn Sie Verarbeitungen personenbezogener Daten identifiziert haben, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten der betroffenen Personen mit sich bringen, müssen Sie für jede dieser Verarbeitungen eine [Datenschutz-Folgenabschätzung](https://dsgvo-gesetz.de/themen/datenschutz-folgenabschaetzung/) (DSFA) durchführen.
+Wenn Sie Verarbeitungstätigkeiten identifiziert haben, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten der betroffenen Personen mit sich bringen, müssen Sie für jede davon eine [Datenschutz-Folgenabschätzung](https://dsgvo-gesetz.de/themen/datenschutz-folgenabschaetzung/) (DSFA) durchführen.
 
 {% hint style="info" %}
-Die Durchführung einer DSFA ist obligatorisch für jede Verarbeitung, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten der betroffenen Personen mit sich bringt (Artikel 35 der DSGVO).
+Die Durchführung einer DSFA ist für jede Verarbeitung verpflichtend, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten der betroffenen Personen mit sich bringt (Artikel 35 der DSGVO).
 {% endhint %}
 
-Um Ihnen bei der Bestimmung zu helfen, ob Ihre Verarbeitung voraussichtlich ein hohes Risiko mit sich bringt, sind die folgenden 9 Kriterien in den Leitlinien des G29 definiert:
+Um Ihnen bei der Beurteilung zu helfen, ob Ihre Verarbeitung voraussichtlich ein hohes Risiko mit sich bringt, definieren die Leitlinien der Artikel-29-Datenschutzgruppe die folgenden 9 Kriterien:
 
 1. Bewertung oder Scoring;
-2. Automatisierte Entscheidungsfindung mit rechtlicher oder ähnlich erheblicher Wirkung;
-3. Systematische Überwachung;
-4. Sensible Daten oder Daten mit hohem persönlichem Bezug;
+2. automatisierte Entscheidungsfindung mit Rechtswirkung oder ähnlich erheblicher Wirkung;
+3. systematische Überwachung;
+4. sensible Daten oder Daten höchstpersönlicher Natur;
 5. Verarbeitung personenbezogener Daten in großem Umfang;
-6. Abgleich von Datensätzen;
-7. Daten schutzbedürftiger Personen;
-8. Innovativer Einsatz oder Anwendung neuer technologischer oder organisatorischer Lösungen;
-9. Ausschluss von einem Recht, einem Dienst oder einem Vertrag.
+6. Abgleichen oder Kombinieren von Datensätzen;
+7. Daten zu schutzbedürftigen betroffenen Personen;
+8. innovative Nutzung oder Anwendung neuer technologischer oder organisatorischer Lösungen;
+9. Ausschluss von einem Recht, einer Dienstleistung oder einem Vertrag.
 
-Diese Kriterien sind direkt in unseren Workflow zur Erstellung einer Datenverarbeitung integriert, und Sie können für jede Ihrer Verarbeitungen angeben, ob eine DSFA dafür durchzuführen ist oder nicht.
+Diese Kriterien sind in den Workflow zur Erstellung einer Verarbeitungstätigkeit integriert: Für jedes Kriterium geben Sie an, ob eine DSFA durchgeführt werden muss.
 
-![Beispiel einer Verarbeitung, die potenziell eine DSFA erfordert.](<../../.gitbook/assets/dsfa verarbeitung.png>)
+<figure><img src="../../.gitbook/assets/getting-started-tutorial-1.png" alt="Schritt Folgenabschätzung einer Verarbeitungstätigkeit mit den 9 Kriterien und der Schaltfläche zum Erstellen der Bewertung"><figcaption><p>Beispiel einer Verarbeitungstätigkeit, die potenziell eine DSFA erfordert</p></figcaption></figure>
 
-### Die Identifizierung und Bewertung von Risiken
+## Identifizierung und Bewertung von Risiken
 
-Das Risiko-Modul in Dastra ermöglicht es Ihnen, Risiken auf Ebene Ihrer Verarbeitungen, Ihrer Stakeholder (z. B. Auftragsverarbeiter) und Ihrer Assets zu managen.
+Mit dem Modul Risiken von Dastra verwalten Sie Risiken auf der Ebene Ihrer Verarbeitungstätigkeiten, Ihrer Stakeholder (zum Beispiel Auftragsverarbeiter) und Ihrer Assets.
 
-Die Methodik des Risikomanagements entspricht den Standardanforderungen des Risikomanagements für Informationssysteme.
+Die Methodik des Risikomanagements entspricht den Standardanforderungen an das Risikomanagement von Informationssystemen. Sie umfasst vier Schritte:
 
-4 Schritte sind zu befolgen:
+1. Risikoidentifizierung;
+2. Risikobewertung;
+3. Risikobehandlung;
+4. Risikoüberwachung.
 
-1: Risikoidentifizierung
-
-2: Risikobewertung
-
-3: Risikoreaktion
-
-4: Risikoüberwachung
-
-Das Risiko wird allgemein wie folgt gemessen:
+Allgemein wird das Risiko wie folgt gemessen:
 
 $$
-Risiko  = Wahrscheinlichkeit  * Auswirkung
+Risiko = Wahrscheinlichkeit * Auswirkung
 $$
 
 {% content-ref url="../../features/risks/README.md" %}
-[la-gestion-des-risques](../../features/risks/README.md)
+[Risikomanagement](../../features/risks/README.md)
 {% endcontent-ref %}
 
-### Audits
+## Audits
 
-Um im Risikomanagement noch weiter zu gehen, bietet Ihnen Dastra auch die Möglichkeit, Audits zu konzipieren, Kampagnen durchzuführen und die Ergebnisse in Form eines exportierbaren Auditberichts zu sammeln.
+Um beim Risikomanagement weiterzugehen, können Sie in Dastra außerdem Audits entwerfen, Kampagnen durchführen und die Ergebnisse als exportierbaren Auditbericht erfassen.
 
 {% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
+[Fragebögen](../../features/questionnaires/README.md)
 {% endcontent-ref %}
 
-Das war's, Ihre Risiken sind identifiziert und bewertet! Fahren Sie anschließend mit Schritt 4, der Priorisierung der Aufgaben, fort:
+Ihre Risiken sind identifiziert und bewertet. Weiter geht es mit Schritt 4, der Priorisierung der Aufgaben:
 
 {% content-ref url="step-4.md" %}
-[etape-3-prioriser-les-actions-a-mener.md](step-4.md)
+[Schritt 4: Maßnahmen priorisieren](step-4.md)
 {% endcontent-ref %}

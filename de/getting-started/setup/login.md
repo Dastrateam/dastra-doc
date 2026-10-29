@@ -1,125 +1,111 @@
+---
+description: "Melden Sie sich bei Dastra mit Passwort, Passkey, E-Mail-Link oder SSO an und sichern Sie Ihr Konto."
+---
+
 # Anmelden und Authentifizierung verwalten
 
-### 🧭 Überblick
+Diese Seite erklärt, wie Sie sich bei Dastra anmelden, wie Sie Ihr Passwort zurücksetzen und wie Sie die Sicherheit Ihres Kontos erhöhen: starke Authentifizierung, Passkeys und aktive Sitzungen.
 
-Der Zugang zu Dastra ist durch ein Authentifizierungssystem gesichert, das den besten Datenschutzpraktiken entspricht.\
-Sie können sich mit Ihren Dastra-Zugangsdaten, einem Drittanbieter-Konto (SSO) anmelden und die Sicherheit Ihres Kontos durch die **Zwei-Faktor-Authentifizierung (2FA)** verstärken.
+## Bei Dastra anmelden
 
-***
+Die Anmeldung erfolgt in zwei Schritten: Sie geben zuerst Ihre E-Mail-Adresse ein und wählen dann, wie Sie sich authentifizieren.
 
-### 🚪 Bei Dastra anmelden
+### Mit E-Mail-Adresse und Passwort
 
-#### 🔑 Mit Dastra-Zugangsdaten
+1. Rufen Sie [app.dastra.eu](https://app.dastra.eu) auf.
+2. Geben Sie Ihre **Geschäftliche E-Mail-Adresse** ein und klicken Sie auf **Weiter**.
+3. Geben Sie **Ihr Passwort** ein und klicken Sie auf **Anmelden**.
 
-1. Besuchen Sie [https://app.dastra.eu](https://app.dastra.eu)
-2. Geben Sie Ihre **E-Mail-Adresse** und Ihr **Passwort** ein
-3. Klicken Sie auf **Anmelden**
+<figure><img src="../../.gitbook/assets/getting-started-login-1.png" alt="Erster Schritt der Anmeldung: geschäftliche E-Mail-Adresse und Schaltfläche Weiter"><figcaption><p>Erster Schritt: die E-Mail-Adresse</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Anmeldung bei Dastra.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Aktivieren Sie die Option **Passwort merken**, wenn Sie ein persönliches Gerät verwenden, um Ihre Zugangsdaten nicht bei jedem Besuch erneut eingeben zu müssen.
-{% endhint %}
-
-***
-
-#### 🌐 Über einen Identitätsanbieter (SSO)
-
-Wenn Ihre Organisation ein **SSO (Single Sign-On)** konfiguriert hat, können Sie sich über Ihren Identitätsanbieter anmelden (z. B. Microsoft, Google, Okta…).
-
-1. Klicken Sie auf der Anmeldeseite auf **Mit SSO anmelden**
-2. Geben Sie Ihre E-Mail-Adresse ein
-3. Folgen Sie dem Authentifizierungsverfahren Ihrer Organisation
-4. Sie werden automatisch zu Ihrem Dastra-Bereich weitergeleitet
-
-<figure><img src="../../.gitbook/assets/Mit SSO anmelden.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-login-2.png" alt="Zweiter Schritt der Anmeldung: Passwort und weitere Anmeldeoptionen"><figcaption><p>Zweiter Schritt: das Passwort und die weiteren Anmeldeoptionen</p></figcaption></figure>
 
 {% hint style="info" %}
-SSO vereinfacht die Zugriffsverwaltung und verstärkt die Sicherheit: Ihre Zugangsdaten werden niemals mit Dastra geteilt.
+Setzen Sie ein Häkchen bei **Passwort speichern** nur auf einem persönlichen Gerät.
 {% endhint %}
 
-***
+### Mit einem Google- oder Microsoft-Konto
 
-### 🔄 Ihr Passwort zurücksetzen
+Klicken Sie im ersten Schritt unter **Oder** auf die Schaltfläche für Google oder Microsoft und folgen Sie dann dem Verfahren des Anbieters. Ein externes Konto können Sie unter **Kontosicherheit** > **Externe Anmeldungen** mit Ihrem Dastra-Konto verknüpfen.
 
-Falls Sie Ihr Passwort vergessen haben:
+### Mit SSO
 
-1. Klicken Sie auf **Passwort vergessen?** auf der Anmeldeseite
-2. Geben Sie die mit Ihrem Konto verknüpfte E-Mail-Adresse ein
-3. Prüfen Sie Ihr Postfach und folgen Sie dem Link zum Zurücksetzen
-4. Wählen Sie ein neues Passwort gemäß den Sicherheitskriterien
+Hat Ihre Organisation [Single Sign-On (SSO)](../../features/settings/sso/README.md) eingerichtet, melden Sie sich mit Ihrem Identitätsanbieter an.
 
-<figure><img src="../../.gitbook/assets/Passwort zurücksetzen.png" alt=""><figcaption></figcaption></figure>
+1. Klicken Sie im ersten Schritt auf **Mit SSO anmelden**.
+2. Geben Sie **SSO-Anmeldeinformationen (E-Mail oder Nutzer)** ein und klicken Sie auf **Weiter**.
+3. Folgen Sie dem Authentifizierungsverfahren Ihrer Organisation. Dastra leitet Sie anschließend zu Ihrem Mandanten weiter.
 
-{% hint style="info" %}
-Die Links zum Zurücksetzen laufen aus Sicherheitsgründen nach kurzer Zeit ab.\
-Falls der Link nicht mehr funktioniert, starten Sie den Vorgang erneut.
+<figure><img src="../../.gitbook/assets/getting-started-login-3.png" alt="Anmeldeseite für SSO: Feld für die SSO-Kennung und Schaltfläche Weiter"><figcaption><p>Anmeldung mit SSO</p></figcaption></figure>
+
+Bei SSO bleiben Ihre Zugangsdaten bei Ihrem Identitätsanbieter: Dastra erhält Ihr Passwort nicht.
+
+### Mit einem Passkey
+
+Ein Passkey ersetzt das Passwort durch Ihren Fingerabdruck, Ihr Gesicht oder die PIN Ihres Geräts. Klicken Sie im zweiten Schritt auf **Mit einem Passkey anmelden**.
+
+Ihre Passkeys registrieren Sie unter **Kontosicherheit** > **Meine Passkeys verwalten**. Siehe [Passkeys](../../security/passkey.md).
+
+### Mit einem Anmeldelink per E-Mail
+
+Klicken Sie im zweiten Schritt auf **Bitte senden Sie den Zugangslink per E-Mail.** Dastra sendet einen Link an Ihre E-Mail-Adresse, mit dem Sie sich ohne Passwort anmelden.
+
+## Ihr Passwort zurücksetzen
+
+1. Klicken Sie im zweiten Anmeldeschritt auf **Haben Sie Ihr Passwort vergessen?**.
+2. Geben Sie die mit Ihrem Konto verknüpfte E-Mail-Adresse ein.
+3. Öffnen Sie die E-Mail, die Sie erhalten, und folgen Sie dem Link zum Zurücksetzen.
+4. Wählen Sie ein neues Passwort.
+
+<figure><img src="../../.gitbook/assets/getting-started-login-4.png" alt="Seite zum Zurücksetzen des Passworts"><figcaption><p>Die Seite zum Zurücksetzen des Passworts</p></figcaption></figure>
+
+Funktioniert der Link nicht mehr, beginnen Sie von vorn. Nach der Anmeldung können Sie auch unter **Kontosicherheit** auf **Passwort ändern** klicken: Dastra sendet Ihnen eine E-Mail mit einem Link zum Zurücksetzen.
+
+## Die Sicherheit Ihres Kontos verwalten
+
+Öffnen Sie das Profilmenü oben rechts, klicken Sie auf **Nutzerprofil** und dann im linken Menü auf **Kontosicherheit**. Die Seite fasst zusammen:
+
+* **Passwort**: die Schaltfläche **Passwort ändern**;
+* die starke Authentifizierung, auch Zwei-Faktor-Authentifizierung genannt;
+* Passkeys;
+* **Externe Anmeldungen**;
+* **Aktive Sitzungen**;
+* Ihren **Aktivitätsverlauf**.
+
+<figure><img src="../../.gitbook/assets/getting-started-login-5.png" alt="Seite Kontosicherheit mit den Bereichen Passwort, starke Authentifizierung und Passkeys"><figcaption><p>Die Seite Kontosicherheit</p></figcaption></figure>
+
+### Die starke Authentifizierung aktivieren
+
+Die starke Authentifizierung fügt der Anmeldung einen Schritt hinzu: einen 6-stelligen Code, den eine Authentifizierungs-App auf Ihrem Telefon erzeugt.
+
+1. Klicken Sie unter **Kontosicherheit** auf **Zwei-Faktor-Authentifizierung aktivieren**.
+2. Scannen Sie den QR-Code mit einer Authentifizierungs-App (Microsoft Authenticator, Google Authenticator, 1Password usw.).
+3. Geben Sie den erzeugten Code ein, um die Aktivierung zu bestätigen.
+4. Bewahren Sie den Wiederherstellungscode auf, der bei der Aktivierung angezeigt wird.
+
+{% hint style="warning" %}
+Der Wiederherstellungscode verschafft Ihnen wieder Zugang zu Ihrem Konto, wenn Sie Ihre Authentifizierungs-App verlieren. Ohne ihn müssen Sie den Inhaber der Organisation bitten, die starke Authentifizierung Ihres Kontos zurückzusetzen.
 {% endhint %}
 
-***
+Ist die starke Authentifizierung aktiviert, geben Sie Ihr Passwort und anschließend den 6-stelligen Code aus Ihrer App ein.
 
-### 🔒 Zwei-Faktor-Authentifizierung (2FA) aktivieren
+### Aktive Sitzungen verwalten
 
-Die **Zwei-Faktor-Authentifizierung** verstärkt die Sicherheit Ihres Dastra-Kontos.\
-Sie fügt bei der Anmeldung einen zusätzlichen Schritt hinzu: die Eingabe eines **einmaligen Codes, der auf Ihrem Telefon generiert wird**.
+1. Suchen Sie unter **Kontosicherheit** den Bereich **Aktive Sitzungen**: Er listet die Geräte und Browser auf, die mit Ihrem Konto verbunden sind.
+2. Klicken Sie neben der Sitzung, die Sie beenden möchten, auf **Abmelden**.
 
-#### ⚙️ Aktivierung
+Beenden Sie jede Sitzung, die Sie nicht kennen, sofort.
 
-1. Gehen Sie zu **Nutzerprofil → Kontosicherheit**
-2. Klicken Sie auf **Zwei-Faktor-Authentifizierung aktivieren**
-3. Scannen Sie den QR-Code mit einer Authentifizierungs-App (Google Authenticator, Authy, 1Password usw.)
-4. Geben Sie den generierten Code ein, um die Aktivierung zu bestätigen
+## Bewährte Vorgehensweisen zur Sicherheit
 
-<figure><img src="../../.gitbook/assets/Schützen Sie Ihr Konto mit einer Zwei-Faktor-Authentifizierung.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Bewahren Sie den bei der Aktivierung angezeigten **Wiederherstellungscode** auf.\
-Er ermöglicht Ihnen den Zugang zu Ihrem Konto, falls Sie Ihr Gerät verlieren.
-{% endhint %}
-
-Erfahren Sie mehr über die [Zwei-Faktor-Authentifizierung](../../security/mfa.md).
-
-***
-
-### 📱 Anmeldung mit aktivierter 2FA
-
-Sobald die 2FA aktiviert ist, verläuft die Anmeldung in zwei Schritten:
-
-1. Geben Sie Ihren **Benutzernamen und Ihr Passwort** ein
-2. Geben Sie den **6-stelligen Validierungscode** ein, der von Ihrer Authentifizierungs-App generiert wird
-
-{% hint style="info" %}
-Gut zu wissen: Der 2FA-Code wechselt alle 30 Sekunden und kann nur einmal verwendet werden.
-{% endhint %}
-
-***
-
-### 🧹 Aktive Sitzungen verwalten
-
-Dastra ermöglicht es Ihnen, die mit Ihrem Konto verknüpften **aktiven Sitzungen** einzusehen und zu beenden.
-
-1. Gehen Sie zu **Profil → Kontosicherheit → Aktive Sitzungen**
-2. Sehen Sie die Liste der verbundenen Geräte und Browser ein
-3. Klicken Sie auf **Entfernen**, um ein bestimmtes Gerät abzumelden
-
-{% hint style="info" %}
-Beenden Sie unbekannte Sitzungen sofort, um unbefugten Zugriff auf Ihre Daten zu vermeiden.
-{% endhint %}
-
-***
-
-### 🧰 Bewährte Sicherheitspraktiken
-
-* Verwenden Sie ein **einzigartiges und starkes Passwort** (mindestens 12 Zeichen, mit Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen).
-* Teilen Sie niemals Ihre Zugangsdaten, auch nicht intern.
-* Aktivieren Sie die **Zwei-Faktor-Authentifizierung** für alle Ihre beruflichen Konten.
+* Verwenden Sie für Dastra ein langes, einmaliges Passwort.
+* Geben Sie Ihre Zugangsdaten nie weiter, auch nicht intern.
+* Aktivieren Sie die starke Authentifizierung oder registrieren Sie einen Passkey.
 * Melden Sie sich auf gemeinsam genutzten oder öffentlichen Geräten ab.
-* Überprüfen Sie regelmäßig Ihre aktiven Sitzungen.
+* Prüfen Sie regelmäßig Ihre aktiven Sitzungen.
 
-***
+## Siehe auch
 
-### 🔗 Siehe auch
-
-* [Ihr Nutzerprofil einrichten](profile.md)
-* [Benachrichtigungen konfigurieren](../../features/settings/notifications.md)
-* [Sicherheits- und Datenschutzrichtlinie von Dastra](../../security/general.md)
+* [Ihr Nutzerprofil konfigurieren](profile.md)
+* [Benachrichtigungen](../../features/settings/notifications.md)
+* [Sicherheit bei Dastra](../../security/general.md)

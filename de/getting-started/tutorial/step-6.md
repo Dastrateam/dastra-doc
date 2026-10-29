@@ -1,19 +1,25 @@
 # Schritt 6: Die Compliance dokumentieren
 
-Um Ihre Compliance mit der Verordnung nachzuweisen, müssen Sie die erforderliche Dokumentation zusammenstellen und bündeln. Die bei jedem Schritt durchgeführten Maßnahmen und erstellten Dokumente müssen regelmäßig überprüft und aktualisiert werden, um einen kontinuierlichen Datenschutz zu gewährleisten.
+Um Ihre Einhaltung der Verordnung nachzuweisen, müssen Sie die erforderliche Dokumentation zusammenstellen und bündeln. Die bei jedem Schritt durchgeführten Maßnahmen und erstellten Dokumente müssen regelmäßig überprüft und aktualisiert werden, damit der Datenschutz dauerhaft gewährleistet bleibt.
 
-#### Ihre Akte sollte insbesondere folgende Elemente enthalten:
+## Ihre Compliance-Akte muss insbesondere Folgendes enthalten
 
-| Kategorie                                                                   | Dokumentation                                                                                                                                                                                                                                     |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DIE DOKUMENTATION IHRER VERARBEITUNGEN PERSONENBEZOGENER DATEN              | [**Das Verarbeitungsverzeichnis**](https://dsgvo-gesetz.de/themen/verzeichnis-von-verarbeitungstaetigkeiten/) (für Verantwortliche) oder der Kategorien von Verarbeitungstätigkeiten (für Auftragsverarbeiter)                                    |
-| DIE DOKUMENTATION IHRER VERARBEITUNGEN PERSONENBEZOGENER DATEN              | [**Die Datenschutz-Folgenabschätzungen**](https://dsgvo-gesetz.de/themen/datenschutz-folgenabschaetzung/) (DSFA) für Verarbeitungen, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten der betroffenen Personen mit sich bringen |
-| DIE DOKUMENTATION IHRER VERARBEITUNGEN PERSONENBEZOGENER DATEN              | [**Die Regelung von Datenübermittlungen**](https://dsgvo-gesetz.de/kapitel-5/) außerhalb der Europäischen Union (insbesondere Standardvertragsklauseln, BCR und Zertifizierungen)                                                                 |
-| DIE INFORMATION DER BETROFFENEN PERSONEN                                    | [**Die Datenschutzhinweise**](https://dsgvo-gesetz.de/art-13-dsgvo/)                                                                                                                                                                              |
-| DIE INFORMATION DER BETROFFENEN PERSONEN                                    | Die Vorlagen zur **Einholung der Einwilligung der betroffenen Personen**                                                                                                                                                                          |
-| DIE INFORMATION DER BETROFFENEN PERSONEN                                    | Die Verfahren zur **Ausübung der Betroffenenrechte**                                                                                                                                                                                              |
-| DIE VERTRÄGE, DIE ROLLEN UND VERANTWORTLICHKEITEN DER STAKEHOLDER FESTLEGEN | **Die Auftragsverarbeitungsverträge**                                                                                                                                                                                                             |
-| DIE VERTRÄGE, DIE ROLLEN UND VERANTWORTLICHKEITEN DER STAKEHOLDER FESTLEGEN | Die internen Verfahren **im Falle von Datenschutzvorfällen**                                                                                                                                                                                      |
-| DIE RECHTE DER BETROFFENEN PERSONEN UND DIE AUSÜBUNG IHRER RECHTE           | Die Nachweise, dass die betroffenen Personen **ihre Einwilligung erteilt haben**, wenn die Verarbeitung ihrer Daten auf dieser Grundlage beruht.                                                                                                  |
+| Kategorie | Dokumentation |
+| --- | --- |
+| Dokumentation Ihrer Verarbeitungen personenbezogener Daten | [**Verzeichnis von Verarbeitungstätigkeiten**](https://dsgvo-gesetz.de/themen/verzeichnis-von-verarbeitungstaetigkeiten/) (für Verantwortliche) bzw. von Kategorien von Verarbeitungstätigkeiten (für Auftragsverarbeiter) |
+| Dokumentation Ihrer Verarbeitungen personenbezogener Daten | [**Datenschutz-Folgenabschätzungen (DSFA)**](https://dsgvo-gesetz.de/themen/datenschutz-folgenabschaetzung/) für Verarbeitungen, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen mit sich bringen |
+| Dokumentation Ihrer Verarbeitungen personenbezogener Daten | [**Der Rahmen für Datenübermittlungen**](https://dsgvo-gesetz.de/kapitel-5/) außerhalb der Europäischen Union (insbesondere Standardvertragsklauseln, verbindliche interne Datenschutzvorschriften und Zertifizierungen) |
+| Information der betroffenen Personen | [**Datenschutzhinweise**](https://dsgvo-gesetz.de/art-13-dsgvo/) |
+| Information der betroffenen Personen | Vorlagen zur **Einholung der Einwilligung der betroffenen Personen** |
+| Information der betroffenen Personen | Verfahren zur **Ausübung der Betroffenenrechte** |
+| Verträge, die die Rollen und Verantwortlichkeiten der Parteien festlegen | **Verträge mit Auftragsverarbeitern** |
+| Verträge, die die Rollen und Verantwortlichkeiten der Parteien festlegen | Interne Verfahren **im Falle eines Datenschutzvorfalls** |
+| Die Rechte der betroffenen Personen und die Ausübung ihrer Rechte | Nachweis, dass die betroffenen Personen **ihre Einwilligung erteilt haben**, wenn die Verarbeitung ihrer Daten darauf beruht |
 
-Wenn Ihre Dokumentation nachweist, dass Sie die in der europäischen Verordnung vorgesehenen Verpflichtungen einhalten, dann haben Sie diesen Schritt erfolgreich abgeschlossen. Herzlichen Glückwunsch!
+Wenn Ihre Dokumentation belegt, dass Sie die in der europäischen Verordnung festgelegten Pflichten erfüllen, haben Sie diesen Schritt abgeschlossen.
+
+## Diese Dokumentation in Dastra bündeln
+
+* Das [Dokumentenmanagement](../../features/files/README.md) fasst die Dokumente zusammen, die Ihren Objekten in Dastra zugeordnet sind.
+* Mit den [Verträgen](../../features/contracts/README.md) erfassen und verfolgen Sie Ihre Verträge.
+* Das [Trust Center](../../features/trust-center/README.md) erstellt ein öffentliches Transparenzportal für Ihre Kunden, Auftragsverarbeiter und Mitarbeiter.

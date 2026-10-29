@@ -1,28 +1,28 @@
 ---
 description: >-
   Dieser Artikel zeigt Ihnen, wie Sie das Widget für Betroffenenanfragen in eine
-  Webseite integrieren
+  Webseite integrieren.
 ---
 
 # Technische Integration
 
-### Ziele
+## Zweck
 
-Das Widget für Betroffenenanfragen ermöglicht es Ihnen, **automatisch von einer Seite Ihrer Website Betroffenenanfragen** verschiedener Typen zu erfassen (Löschungen, Änderungen, Berichtigungen...)
+Das Widget für Betroffenenanfragen erfasst automatisch Betroffenenanfragen verschiedener Typen (Löschungen, Änderungen, Berichtigungen ...) von einer Seite Ihrer Website.
 
-Das Widget ist in das **JavaScript-SDK** von Dastra integriert.
+Das Widget ist Teil des Dastra-JavaScript-SDK.
 
-### Voraussetzungen
+## Voraussetzungen
 
-Um das Widget für Betroffenenanfragen einzurichten, benötigen Sie einen **öffentlichen API-Schlüssel**: [Dokumentation lesen](https://doc.dastra.eu/~/changes/OdM7a8W4pn3S8n18W72A/features/settings/gestion-des-cles-dapi) oder [direkt zur API-Schlüsselverwaltung navigieren](https://app.dastra.eu/general-settings/api)
+Um das Widget für Betroffenenanfragen einzurichten, benötigen Sie einen öffentlichen API-Schlüssel: Lesen Sie [Verwaltung der API-Schlüssel](../settings/api-keys.md) oder [gehen Sie direkt zur Verwaltung der API-Schlüssel](https://app.dastra.eu/general-settings/api).
 
-### Einrichtung des Widgets in der dedizierten Oberfläche
+## Das Widget in der dedizierten Oberfläche einrichten
 
-Zunächst müssen Sie **das Widget einrichten** im [Verwaltungspanel für Widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) für Betroffenenanfragen:
+Richten Sie zunächst das Widget in der Liste der Formulare ein: Klicken Sie im Menü **Anfragen** auf **Formulare zur Datenerfassung**.
 
-![](../../.gitbook/assets/Betroffenenanfrage29.png)
+<figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Liste der Formulare mit der Schaltfläche zum Erstellen eines Formulars"><figcaption><p>Die Liste der Formulare</p></figcaption></figure>
 
-Hier ist ein einfaches Integrationsbeispiel des Widgets (im Popup-Modus mit einer Öffnungsschaltfläche):
+Hier ist ein einfaches Beispiel für die Integration des Widgets (im Popup-Modus mit einer Schaltfläche zum Öffnen):
 
 ```html
 <div id="customer-subject-form-custom"></div>
@@ -48,55 +48,57 @@ Hier ist ein einfaches Integrationsbeispiel des Widgets (im Popup-Modus mit eine
 </script>
 ```
 
-### Wie erzwingt man die Sprache des Formulars?
+## Die Sprache des Formulars erzwingen
 
-Standardmäßig wird die **Browsersprache** verwendet. Wenn die Sprache in den Widget-Übersetzungen nicht verfügbar ist, wird automatisch die Standardsprache ausgewählt. Sie können die aktuelle Sprache des Widgets erzwingen, indem Sie die Eigenschaft **data-lang** zum div hinzufügen, in dem das Formular angezeigt wird.
+Standardmäßig wird die Sprache des Browsers verwendet. Ist die Sprache in den Übersetzungen des Widgets nicht verfügbar, wird automatisch die Standardsprache gewählt. Sie können die Sprache des Widgets erzwingen, indem Sie die Eigenschaft **data-lang** zum div hinzufügen, in dem das Formular angezeigt wird.
 
-_In diesem Beispiel wird standardmäßig Italienisch ausgewählt (wenn verfügbar)_
+_In diesem Beispiel ist standardmäßig Italienisch ausgewählt (sofern verfügbar)_
 
 ```html
 <div id="customer-subject-popup" data-lang="it"></div>
 ```
 
-#### Wie sendet man automatisch Formularwerte an das Widget?
+## Die Formularfelder vorausfüllen
 
-Es ist möglich, die Formularfelder aus dem Authentifizierungskontext des Nutzers vorauszufüllen. Die vorausgefüllten Felder werden auf Nutzerseite **schreibgeschützt** (ausgegraut) angezeigt.
+Sie können die Formularfelder aus dem Authentifizierungskontext des Nutzers vorausfüllen. Vorausgefüllte Felder werden dem Nutzer **schreibgeschützt** (ausgegraut) angezeigt.
 
 **Verfügbare Standardfelder:**
 
 ```javascript
-dastra.push(['set', 'dsr:refId', '{identifiant_unique_utilisateur}'])
+dastra.push(['set', 'dsr:refId', '{unique_user_id}'])
 dastra.push(['set', 'dsr:email', '{email}'])
-dastra.push(['set', 'dsr:givenName', '{prénom}'])
-dastra.push(['set', 'dsr:familyName', '{nom}'])
-dastra.push(['set', 'dsr:address', '{adresse}'])
-dastra.push(['set', 'dsr:zipCode', '{code_postal}'])
-dastra.push(['set', 'dsr:city', '{ville}'])
-dastra.push(['set', 'dsr:countryCode', '{code_pays}']) // ex : "FR"
-dastra.push(['set', 'dsr:phoneNumber', '{téléphone}'])
+dastra.push(['set', 'dsr:givenName', '{first_name}'])
+dastra.push(['set', 'dsr:familyName', '{last_name}'])
+dastra.push(['set', 'dsr:address', '{address}'])
+dastra.push(['set', 'dsr:zipCode', '{postcode}'])
+dastra.push(['set', 'dsr:city', '{city}'])
+dastra.push(['set', 'dsr:countryCode', '{country_code}']) // z. B. "FR"
+dastra.push(['set', 'dsr:phoneNumber', '{phone}'])
 dastra.push(['set', 'dsr:message', '{message}'])
 ```
+
+Die Eigenschaft `refId` ist die eindeutige Kennung der Person in Ihrem System (Kundennummer, Sitzungs-ID ...). Sie wird nur dann schreibgeschützt angezeigt, wenn das Feld **Referenznummer der Anfrage** zu den aktiven Feldern des Formulars gehört.
 
 **Benutzerdefinierte Felder:**
 
 ```javascript
-// Passer un objet complet
+// Ein vollständiges Objekt übergeben
 var payload = {
-  customFieldSlug1: 'valeur1',
-  customFieldSlug2: 'valeur2'
+  customFieldSlug1: 'value1',
+  customFieldSlug2: 'value2'
 }
 dastra.push(['set', 'dsr:additionalDatas', payload])
 
-// Ou champ par champ (préfixe @)
-dastra.push(['set', 'dsr:@customFieldSlug1', 'valeur1'])
+// Oder Feld für Feld (Präfix @)
+dastra.push(['set', 'dsr:@customFieldSlug1', 'value1'])
 ```
 
-### Senden von Parametern im Seitenmodus
+## Parameter im Seitenmodus senden
 
-Es ist auch möglich, diese Parameter über Querystring-Parameter zu übergeben. Dazu muss dem Parameternamen das Präfix dsr\_ vorangestellt werden:
+Sie können diese Parameter auch in der Query-String übergeben: Stellen Sie dem Parameternamen das Präfix `dsr_` voran.
 
 ```url
-https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
+https://api.dastra.eu/v1/client/data-subject-request/page?id=<Your widget id>
 &key=<your public key>
 &dsr_email=test@github.org
 &dsr_givenName=Dastonaute
@@ -104,11 +106,11 @@ https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
 &...etc...
 ```
 
-### Widget durch Klicken außerhalb des Fensters schließen
+## Das Widget durch einen Klick außerhalb des Fensters schließen
 
-Wenn Ihr Widget mit dem **Anzeigetyp "Popup"** konfiguriert ist, haben wir das Schließverhalten des Modals bei Klick außerhalb des Fensters nicht implementiert, da das Risiko des Verlusts der vom Nutzer eingegebenen Daten zu hoch ist.
+Verwendet Ihr Widget das Layout **Modales Fenster (Popup)**, schließt sich das Fenster nicht, wenn der Nutzer außerhalb davon klickt. Das ist so gewollt: Das Risiko, die vom Nutzer eingegebenen Daten zu verlieren, ist zu hoch.
 
-Wenn Sie jedoch möchten, dass sich das Widget schließt, wenn der Nutzer außerhalb des Widgets klickt, können Sie dies mit folgendem Code umsetzen:
+Möchten Sie dennoch, dass sich das Widget bei einem Klick außerhalb des Fensters schließt, verwenden Sie den folgenden Code:
 
 ```javascript
 window.dastra.customerSubjectReady().then((form) => {
@@ -117,14 +119,14 @@ window.dastra.customerSubjectReady().then((form) => {
 ```
 
 {% hint style="warning" %}
-Achtung, dies hat zur Folge, dass der gesamte vom Nutzer eingegebene Text ohne jegliche Warnung gelöscht wird! Wenn das Formular lang ist, kann dies leicht bei einer Auswahl auftreten, die über ein langes Textfeld hinausgeht.
+Dadurch wird der gesamte vom Nutzer eingegebene Text ohne jede Warnung gelöscht. Bei einem langen Formular kann das passieren, wenn sich eine Textauswahl über ein langes Textfeld hinaus erstreckt.
 {% endhint %}
 
-### Mehrere Widgets in einer einzelnen Seite integrieren
+## Mehrere Widgets in eine Seite einbetten
 
-Standardmäßig erlaubt Dastra nicht die Integration mehrerer Widgets innerhalb derselben Seite.
+Standardmäßig unterstützt Dastra nicht mehrere Widgets auf derselben Seite.
 
-Es ist jedoch möglich, diese Integration mit der folgenden Methode durchzuführen.
+Sie können es dennoch mit zwei Aufrufen von `loadCustomerSubjectForm` umsetzen, einem pro Widget, mit unterschiedlichen Selektoren und Widget-IDs.
 
 ```html
 <html lang="en-GB">
@@ -140,24 +142,24 @@ Es ist jedoch möglich, diese Integration mit der folgenden Methode durchzuführ
     <script>
       window.dastra = window.dastra || []
 
-      // Widget 1 initialization
+      // Initialisierung von Widget 1
       window.dastra.push(function () {
         window.dastra.loadCustomerSubjectForm({
           selector: '#widget-1',
           widgetId: 991, // YOUR_WIDGET_ID_
           onLoad: function (form) {
-            // Initialization
+            // Initialisierung
           }
         })
       })
 
-      // Widget 2 initialization
+      // Initialisierung von Widget 2
       window.dastra.push(function () {
         window.dastra.loadCustomerSubjectForm({
           selector: '#widget-2',
-          widgetId: 992, // the widget identifier for the second widget
+          widgetId: 992, // die Widget-Kennung des zweiten Widgets
           onLoad: function (form) {
-            // Initialization
+            // Initialisierung
           }
         })
       })
@@ -166,12 +168,24 @@ Es ist jedoch möglich, diese Integration mit der folgenden Methode durchzuführ
 </html>
 ```
 
-Um die Anfangsfelder in dieser Konfiguration zu integrieren, verwenden Sie folgenden Code:
+Um in dieser Konstellation die Anfangswerte der Felder eines Widgets festzulegen, verwenden Sie die Eigenschaft `form.initialData` in `onLoad`:
 
-```html
-window.dastra.push(function () { dastra.loadCustomerSubjectForm({ selector:
-"#customer-subject-form-custom", widgetId: widgetId, onLoad: function (form) {
-form.initialData = { givenName: "prénomTest" }; document
-.getElementById("customer-request-button") .addEventListener("click", function
-() { form.closeOnBackdrop = true; form.open(); }); }, }); });
+```javascript
+window.dastra.push(function () {
+  dastra.loadCustomerSubjectForm({
+    selector: '#customer-subject-form-custom',
+    widgetId: widgetId,
+    onLoad: function (form) {
+      form.initialData = {
+        givenName: 'testFirstName'
+      }
+      document
+        .getElementById('customer-request-button')
+        .addEventListener('click', function () {
+          form.closeOnBackdrop = true
+          form.open()
+        })
+    }
+  })
+})
 ```

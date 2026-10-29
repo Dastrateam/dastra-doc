@@ -1,32 +1,29 @@
 ---
 description: >-
-  Ergänzend zu den Hauptfunktionen bietet Dastra erweiterte Tools zur
-  Anpassung und Absicherung der Anfragenverwaltung.
+  Ergänzend zu den Hauptfunktionen bietet Dastra erweiterte Tools, um die
+  Bearbeitung von Betroffenenanfragen anzupassen und abzusichern.
 ---
 
 # Erweiterte Funktionen für Betroffenenanfragen
 
-### Erweiterte Einstellungen im Mandanten
-
-Die globalen Einstellungen des Mandanten ermöglichen die Konfiguration von zwei Schlüsselfunktionen.
+Diese erweiterten Funktionen ergänzen die Bearbeitung von Anfragen: Sie ermöglichen es, Aktionen zu automatisieren, die Bearbeitung an Asset-Inhaber zu delegieren, den Austausch mit Antragstellern abzusichern, die versendeten E-Mails anzupassen und zu steuern, wie lange Anfragen aufbewahrt werden.
 
 {% content-ref url="workflow-actions.md" %}
-[actions-supplementaires-dans-les-workflows-automatiques.md](workflow-actions.md)
+[Zusätzliche Aktionen in automatischen Workflows](workflow-actions.md)
 {% endcontent-ref %}
 
 {% content-ref url="asset-owners.md" %}
-[interface-de-traitement-des-demandes-proprietaires-dactifs.md](asset-owners.md)
+[Bearbeitungsoberfläche für Anfragen (Asset-Inhaber)](asset-owners.md)
 {% endcontent-ref %}
 
 {% content-ref url="requester-space.md" %}
-[espace-demandeur.md](requester-space.md)
+[Antragstellerbereich](requester-space.md)
 {% endcontent-ref %}
 
 {% content-ref url="emails.md" %}
-[personnalisation-des-emails-envoyes-aux-demandeurs.md](emails.md)
+[Anpassung der E-Mails an Antragsteller](emails.md)
 {% endcontent-ref %}
 
 {% content-ref url="purge.md" %}
-[regles-de-purge-des-demandes.md](purge.md)
+[Löschregeln für Anfragen](purge.md)
 {% endcontent-ref %}
-

@@ -4,106 +4,95 @@ description: Erfahren Sie, wie Sie Ihren ersten Mandanten in Dastra erstellen.
 
 # Einen Mandanten erstellen und konfigurieren
 
-## Bei Dastra.eu anmelden
+Diese Seite erklärt, wie Sie einen Mandanten erstellen, seine ersten Nutzer einladen, Ihre erste Entität erfassen und zwischen Ihren Mandanten wechseln.
 
-Melden Sie sich zunächst bei [app.dastra.eu](https://app.dastra.eu) an. Wenn Sie noch kein Konto haben, bitten Sie einen Administrator Ihrer Organisation, Sie einzuladen. Wenn Ihre Organisation Dastra noch nicht nutzt, [fordern Sie eine Demo an](https://www.dastra.eu/de/contacts/demo).
+## Bei Dastra anmelden
+
+Melden Sie sich zunächst unter [app.dastra.eu](https://app.dastra.eu) an. Wenn Sie noch kein Konto haben, bitten Sie einen Administrator Ihrer Organisation, Sie einzuladen. Wenn Ihre Organisation Dastra noch nicht nutzt, [fordern Sie eine Demo an](https://www.dastra.eu/de/contacts/demo).
 
 ## Mandant
 
-Ein Mandant ist **eine Organisation, die ein oder mehrere Verarbeitungsverzeichnisse aufnehmen kann**. Sie können einen Mandanten pro Verarbeitungsverzeichnis und/oder pro juristische Entität oder Niederlassung erstellen, je nach Ihrer Wahl.
+Ein Mandant ist **eine Organisation, die ein oder mehrere Verarbeitungsverzeichnisse enthält**. Sie können je nach Wunsch einen Mandanten pro Verzeichnis, pro juristischer Entität oder pro Niederlassung erstellen. Die Definitionen der übrigen Begriffe (Organisation, Organisationseinheit, Entität, Abteilung) finden Sie unter [Wichtige Begriffe](key-concepts.md).
 
 {% hint style="warning" %}
-Ein Mandant ist eine Umgebung, die **vollständig abgeschottet** ist. Es ist nicht möglich, eine Gesamtübersicht über alle Ihre Mandanten zu erhalten. Zum Beispiel ist es nicht möglich, die Statistiken des Verarbeitungsverzeichnisses über mehrere kombinierte Mandanten einzusehen. Es ist jedoch möglich, Elemente (Verarbeitungen, Assets...) von einem Mandanten in einen anderen zu duplizieren.
+Ein Mandant ist eine Umgebung, deren **Daten vollständig voneinander getrennt sind**: Die Datensätze eines Mandanten (Verarbeitungstätigkeiten, Assets, Anfragen usw.) sind aus dem Kontext eines anderen Mandanten niemals zugänglich. Sie können jedoch im mandantenübergreifenden Dashboard **konsolidierte Statistiken** über alle Ihre Mandanten hinweg ansehen (siehe [Mandantenübergreifende Statistiken](workspace.md#mandantenubergreifende-statistiken)) und Elemente (Verarbeitungstätigkeiten, Assets usw.) von einem Mandanten in einen anderen duplizieren.
 {% endhint %}
 
-### Einen Mandanten erstellen
+## Einen Mandanten erstellen
 
-1. Klicken Sie auf **"Neuer Mandant"**
-2. Füllen Sie das Formular aus (Name, Beschreibung, ggf. Logo)
-3. Bestätigen Sie, um die Erstellung zu starten
+Nur Inhaber der Organisation können einen Mandanten erstellen.
 
-<figure><img src="../../.gitbook/assets/Erstellen Sie Ihren Mandant (1).png" alt=""><figcaption></figcaption></figure>
+1. Klicken Sie auf der Seite, die Ihre Mandanten auflistet, auf **Mandant erstellen**.
+2. Füllen Sie das Pflichtfeld **Name des Mandanten** aus.
+3. Fügen Sie optional das **Logo des Mandanten** hinzu: ein quadratisches Bild von mindestens 200 x 200 px, das automatisch zugeschnitten wird.
+4. Wählen Sie die Sprache in der Liste **Bitte wählen Sie die Sprache aus, die in diesem Mandant verwendet werden soll.** aus.
+5. Klicken Sie auf **Weiter**.
 
-Füllen Sie die Felder aus und klicken Sie dann auf "**Weiter**".
+<figure><img src="../../.gitbook/assets/getting-started-workspace-3.png" alt="Formular zum Erstellen eines Mandanten"><figcaption><p>Das Formular zum Erstellen eines Mandanten</p></figcaption></figure>
 
-{% hint style="success" %}
-Einmal erstellt, können Sie die Organisationseinheiten und Entitäten konfigurieren und Nutzer einladen.
+Um von der Konfiguration eines bestehenden Mandanten auszugehen, aktivieren Sie **Die Einstellungen eines anderen Mandanten kopieren**, wählen Sie im Feld **Quell-Mandant** den gewünschten Mandanten aus und aktivieren Sie bei Bedarf **Nutzer und Teams einbeziehen**. Die Sprachauswahl entfällt: Der neue Mandant verwendet die Sprache des Quell-Mandanten.
+
+{% hint style="info" %}
+Sobald der Mandant erstellt ist, können Sie seine Organisationseinheiten einrichten und Nutzer einladen.
 {% endhint %}
-
-### Auf einen Mandanten zugreifen
-
-Um auf Ihren Mandanten zuzugreifen:
-
-1. **Melden Sie sich bei der Anwendung an** mit Ihrem Nutzerkonto
-2. **Klicken Sie auf den Mandanten** in der angezeigten Liste:
-3. Sie **gelangen dann zu Ihrem Mandanten**
-
-Sie können jederzeit den Mandanten wechseln, indem Sie auf den Selektor oben links auf dem Bildschirm klicken:
-
-<figure><img src="../../.gitbook/assets/Mandanten wechseln.png" alt=""><figcaption></figcaption></figure>
 
 ### Die ersten Nutzer einladen
 
-Sobald der Mandant erstellt ist, können Sie Ihre Kollegen direkt in Ihren Bereich einladen.
+Nach der Erstellung öffnet Dastra die Nutzerseite des neuen Mandanten. Sie können bestehende Nutzer der Organisation hinzufügen oder mit **Einen Nutzer einladen** neue Nutzer einladen.
 
-Unter **"Konfiguration der Organisation" -> "Nutzer" können Sie weitere Nutzer hinzufügen:**
+<figure><img src="../../.gitbook/assets/getting-started-workspace-4.png" alt="Schritt zum Einladen der ersten Nutzer eines Mandanten"><figcaption><p>Der Schritt zum Einladen von Nutzern</p></figcaption></figure>
 
-![](<../../.gitbook/assets/Nutzer einladen.png>)
-
-![](<../../.gitbook/assets/Nutzer einladen2.png>)
-
-![](<../../.gitbook/assets/Nutzer einladen3.png>)
-
-{% hint style="info" %}
-Sie können bestehende Nutzer zu diesem Bereich hinzufügen oder neue Nutzer einladen, indem Sie auf die Schaltfläche "Nutzer einladen" klicken.
-{% endhint %}
-
-Weisen Sie ihnen die gewünschte Rolle zu und klicken Sie auf "Weiter".
+Weisen Sie jedem Nutzer die gewünschte Rolle zu und klicken Sie dann auf **Weiter**. Die Details der Einladungsfelder finden Sie unter [Nutzer einladen](users.md).
 
 ### Die erste Entität erstellen
 
-In Dastra ist der Begriff des Mandanten von dem der juristischen Entität getrennt. So kann ein Mandant auf mehrere verschiedene juristische Entitäten verweisen (wie z. B. in einem Konzern). Es kann jedoch nur einen einzigen gesetzlichen Vertreter pro juristische Entität geben.
+In Dastra ist ein Mandant keine juristische Entität: Er kann mehrere davon zusammenfassen, wie in einem Konzern. Jede Entität entspricht einem Verantwortlichen, und eine Entität hat nur einen gesetzlichen Vertreter.
 
-Jede Entität gilt als ein Verantwortlicher.
+Um die erste Entität zu erstellen, füllen Sie den **Namen der Entität** und das **Land** aus: Das sind die beiden Pflichtfelder. Sie können auch ihre Vertreter angeben (die verantwortliche Person und den gesetzlichen Vertreter) sowie, falls einer benannt wurde, ihren Datenschutzbeauftragten.
 
-{% hint style="info" %}
-Achten Sie darauf, Entitäten und Mandanten klar zu unterscheiden.
+<figure><img src="../../.gitbook/assets/getting-started-workspace-5.png" alt="Formular zum Erstellen der ersten Entität des Mandanten"><figcaption><p>Das Formular zum Erstellen der ersten Entität</p></figcaption></figure>
 
-Hier eine Erinnerung an die Begriffsdefinitionen in Dastra:
+Klicken Sie auf **Weiter**, um in Ihren Mandanten zu gelangen. Sie können auch auf **Überspringen** klicken und Ihre Entitäten später erstellen.
 
-* Eine **Organisation** ist das mit Ihrem Abonnement verknüpfte Konto. Sie sehen den Namen Ihrer Organisation unterhalb Ihres Nutzernamens (oben rechts). Die Organisation enthält einen oder mehrere Mandanten.
-* Ein **Mandant** ist eine technische Umgebung, die die Zusammenarbeit und Arbeit mit den Funktionen von Dastra ermöglicht. Der Mandant wird durch die Kachel dargestellt, die Sie bei der Anmeldung bei Dastra auswählen. Dieser Mandant enthält Organisationseinheiten.
-* Eine **Organisationseinheit** ist ein Strukturelement im Mandanten. Man kann daran Verarbeitungen, Aufgaben, Betroffenenanfragen, Datenschutzvorfälle, Risiken anhängen. Man kann auch Nutzerrechte zuordnen. Die Organisationseinheiten unterteilen sich in Entitäten und Abteilungen.
-* Eine **Entität** entspricht einem Verantwortlichen. Es handelt sich um eine juristische Entität, deren Kontaktdaten angegeben werden. Ein Datenschutzbeauftragter sowie ein Verantwortlicher können dieser Entität zugeordnet werden. Ebenso kann eine federführende Aufsichtsbehörde zugeordnet werden. Diese Entität kann in Abteilungen untergliedert werden.
-* Eine **Abteilung** ist eine Organisationseinheit, die unter einer Entität positioniert ist. Diese Abteilung ermöglicht die Organisation der Entität und die Verteilung der angehängten Elemente in verschiedene Zweige. Es ist möglich, für jede Abteilung Unterabteilungen hinzuzufügen. Abteilungen können beispielsweise verwendet werden, um das Organigramm des Unternehmens abzubilden.
-{% endhint %}
+### Weitere Entitäten und Abteilungen erstellen
 
-Um die erste juristische Entität zu erstellen, geben Sie einfach ihren Namen an und ordnen Sie ihr den Verantwortlichen (den gesetzlichen Vertreter) und, falls benannt, den Datenschutzbeauftragten oder andere Stakeholder zu. Nur der Name der juristischen Entität ist obligatorisch.
+Sobald Ihr Mandant geöffnet ist, erfassen Sie möglichst bald die übrigen juristischen Entitäten und die Abteilungen. Das vereinfacht später die Verwaltung der Verarbeitungstätigkeiten und die Vergabe von Nutzerrechten.
 
-![](<../../.gitbook/assets/Eine Entität erstellen.png>)
+1. Klicken Sie im linken Menü auf **Mandanteneinstellungen** und dann auf **Organisationseinheiten**.
+2. Klicken Sie auf **Eine Entität erstellen**, um eine juristische Entität hinzuzufügen, oder öffnen Sie das Menü der Schaltfläche und wählen Sie **Eine Abteilung erstellen**.
+3. Wiederholen Sie dies, bis das Organigramm Ihrer Struktur in Dastra abgebildet ist.
 
-Füllen Sie die Felder aus und klicken Sie dann auf "Weiter", um Ihren Bereich zu betreten.
+<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigramm-Ansicht der Organisationseinheiten in Dastra"><figcaption><p>Die Ansicht Organigramm</p></figcaption></figure>
 
-### Weitere Entitäten und Abteilungen erstellen (optional)
+Informationen zu untergeordneten Abteilungen, untergeordneten Entitäten, Import und Löschung finden Sie unter [Organisationseinheiten erstellen und konfigurieren](organizational-units.md).
 
-Sobald Ihr Bereich eröffnet ist, empfiehlt es sich, **sofort alle weiteren juristischen Entitäten sowie die eventuellen Abteilungen** einzutragen, um anschließend die Verwaltung der Verarbeitungen und die Zuweisung von Nutzerrechten zu vereinfachen.
+## Auf einen Mandanten zugreifen
 
-Klicken Sie dazu auf den Namen Ihrer Entität oben links auf dem Bildschirm (in diesem Fall die Schaltfläche "Test"), um das Dropdown-Menü anzuzeigen, und klicken Sie dann auf die Schaltfläche "Ihren Mandanten verwalten".
+1. Melden Sie sich mit Ihrem Nutzerkonto bei der Anwendung an.
+2. Klicken Sie in der angezeigten Liste auf die Kachel Ihres Mandanten.
 
-![](<../../.gitbook/assets/Entitäten und Abteilungen.png>)
+<figure><img src="../../.gitbook/assets/getting-started-workspace-1.png" alt="Liste der Mandanten, dargestellt als Kacheln"><figcaption><p>Die Liste der Mandanten</p></figcaption></figure>
 
-Sie gelangen so zur Konfigurationsansicht der Entitäten und Abteilungen. Erstellen Sie Abteilungen, indem Sie auf die Schaltfläche "Abteilung erstellen" klicken, oder eine neue juristische Entität, indem Sie auf die Schaltfläche "Entität erstellen (Verantwortlicher)" klicken, bis das Organisationsschema Ihrer Struktur in Dastra abgebildet ist.
+Sie befinden sich jetzt in Ihrem Mandanten. Um jederzeit den Mandanten zu wechseln, klicken Sie oben in der linken Seitenleiste auf die Mandantenauswahl.
 
-{% hint style="info" %}
-Sie können auch Unterabteilungen hinzufügen, indem Sie auf die Schaltfläche "Unterabteilung hinzufügen" klicken.
-{% endhint %}
+<figure><img src="../../.gitbook/assets/getting-started-workspace-2.png" alt="Geöffnete Mandantenauswahl oben in der linken Seitenleiste"><figcaption><p>Die Mandantenauswahl</p></figcaption></figure>
 
-![Die in Dastra generierte Organigramm-Ansicht.](../../.gitbook/assets/image-128.png)
+## Mandantenübergreifende Statistiken
 
-Herzlichen Glückwunsch, Ihr Mandant in Dastra ist erstellt und eingerichtet!
+Das mandantenübergreifende Dashboard bündelt die Kennzahlen aller Ihrer Mandanten in einer einzigen Ansicht. Inhaber rufen es über die Schaltfläche **Statistiken** in der Liste der Mandanten auf.
 
-Folgen Sie dem untenstehenden Tutorial oder beginnen Sie, Dastra selbst zu erkunden.
+<figure><img src="../../.gitbook/assets/workspaces-reporting-button.png" alt="Schaltfläche Statistiken in der Liste der Mandanten"><figcaption><p>Die Schaltfläche Statistiken öffnet das mandantenübergreifende Dashboard aus der Liste der Mandanten</p></figcaption></figure>
+
+Es konsolidiert die Kennzahlen der wichtigsten Module: Verarbeitungsverzeichnis, Betroffenenanfragen, Datenschutzvorfälle, Fragebögen, KI-Systeme und Aufgaben. Die Daten werden als Widgets und Diagramme dargestellt.
+
+<figure><img src="../../.gitbook/assets/cross-workspace-statistics-dashboard.png" alt="Konsolidiertes mandantenübergreifendes Statistik-Dashboard"><figcaption><p>Konsolidierte Kennzahlen des Verarbeitungsverzeichnisses und der Betroffenenanfragen über alle Mandanten hinweg</p></figcaption></figure>
+
+Mit dynamischen Filtern können Sie die Analyse nach Mandant, nach Organisationseinheit und nach Typ eingrenzen. Die Schaltfläche **Bitte wählen Sie einen Zeitraum aus** beschränkt die Kennzahlen auf einen Zeitraum: Wählen Sie einen vordefinierten Zeitraum (Heute, Aktuelle Woche, Aktueller Monat, Laufendes Jahr usw.) oder ein Start- und ein Enddatum im Kalender und klicken Sie dann auf **Anwenden**. Ist kein Zeitraum ausgewählt, umfassen die Kennzahlen alle Daten. Die Schaltfläche **Zurücksetzen** entfernt den ausgewählten Zeitraum. Das Dashboard kann gedruckt und exportiert werden.
+
+## Weiterführende Informationen
+
+Folgen Sie dem nachstehenden Tutorial oder erkunden Sie Dastra auf eigene Faust.
 
 {% content-ref url="../tutorial/README.md" %}
-[tutoriel](../tutorial/README.md)
+[Tutorial](../tutorial/README.md)
 {% endcontent-ref %}

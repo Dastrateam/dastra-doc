@@ -1,19 +1,28 @@
+---
+description: Legen Sie die federführende Aufsichtsbehörde einer Entität in Dastra fest.
+---
+
 # Eine federführende Aufsichtsbehörde hinzufügen
 
-In der Organisationseinheit können Sie eine federführende Aufsichtsbehörde hinzufügen.
+Führt Ihre Organisation grenzüberschreitende Datenverarbeitungen durch, können Sie den Mechanismus des "**One-Stop-Shop**" für alle Verarbeitungstätigkeiten in der Europäischen Union nutzen. Ihr Ansprechpartner ist dann die "**federführende**" Aufsichtsbehörde.
 
-Wenn Sie eine Organisation sind, die grenzüberschreitende Datenverarbeitungen durchführt, können Sie den Mechanismus des "**One-Stop-Shop**" für alle Verarbeitungstätigkeiten auf europäischem Territorium nutzen.
+**Zum Beispiel ist die CNIL federführende Aufsichtsbehörde für grenzüberschreitende Verarbeitungen von Organisationen:**
 
-Dieser Ansprechpartner ist die "**federführende**" Aufsichtsbehörde.
+* die über mehrere Niederlassungen in der Europäischen Union verfügen und deren Hauptsitz in Frankreich liegt, wenn diese Niederlassung über die Zwecke und Mittel der grenzüberschreitenden Verarbeitung entscheidet;
+* die über mehrere Niederlassungen in der Europäischen Union verfügen, deren Hauptsitz nicht über die Zwecke und Mittel der grenzüberschreitenden Verarbeitung entscheidet, deren Niederlassung, die diese Entscheidungen trifft, aber in Frankreich ansässig ist;
+* die nur eine einzige Niederlassung in der Europäischen Union haben, die sich in Frankreich befindet.
 
-**Zum Beispiel ist die CNIL federführende Aufsichtsbehörde für grenzüberschreitende Verarbeitungen, die von Organisationen durchgeführt werden:**
+## Die federführende Aufsichtsbehörde in Dastra festlegen
 
-* die über mehrere Niederlassungen in der Europäischen Union verfügen und deren Hauptsitz in Frankreich liegt, wenn dieser Sitz über die Zwecke und Mittel der grenzüberschreitenden Verarbeitung entscheidet;
-* die über mehrere Niederlassungen in der Europäischen Union verfügen, deren Hauptsitz nicht über die Zwecke und Mittel der grenzüberschreitenden Verarbeitung entscheidet, aber die Niederlassung, die diese Entscheidungen trifft, in Frankreich ansässig ist;
-* die über eine einzige Niederlassung in der Europäischen Union verfügen, die in Frankreich ansässig ist.
+Die federführende Aufsichtsbehörde wird auf Ebene der Entität festgelegt.
 
-### Ist es obligatorisch?
+1. Klicken Sie im linken Menü auf **Mandanteneinstellungen** und dann auf **Organisationseinheiten**.
+2. Klicken Sie rechts neben der Entität auf die drei Punkte und dann auf **Bearbeiten**.
+3. Wählen Sie im Feld **Leitende Aufsichtsbehörde** die Behörde aus.
+4. Klicken Sie auf **Speichern**.
 
-Nein, es ist nicht obligatorisch, eine federführende Aufsichtsbehörde zu benennen oder sich bei ihr zu registrieren. Es ist jedoch sehr nützlich für die Steuerung Ihrer Compliance.
+<figure><img src="../../.gitbook/assets/getting-started-dpo-1.png" alt="Fenster zum Bearbeiten einer Entität mit dem Feld Leitende Aufsichtsbehörde"><figcaption><p>Das Fenster zum Bearbeiten einer Entität</p></figcaption></figure>
 
-Wir empfehlen Ihnen, sie zu identifizieren. Dies ist insbesondere nützlich, um die zuständige Behörde für eine Meldung eines Datenschutzvorfalls bei grenzüberschreitender Verarbeitung zu kennen.
+## Eine optionale Benennung
+
+Die Benennung einer federführenden Aufsichtsbehörde oder die Anmeldung bei einer solchen ist nicht verpflichtend. Sie ist dennoch nützlich für die Steuerung Ihrer Compliance: Sie zeigt Ihnen insbesondere, welche Behörde bei grenzüberschreitenden Verarbeitungen die Meldung eines Datenschutzvorfalls erhält.

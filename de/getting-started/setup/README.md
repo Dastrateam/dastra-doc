@@ -4,64 +4,115 @@ description: Erfahren Sie, wie Sie mit Dastra richtig starten.
 
 # Einrichtung
 
-Dieser Abschnitt führt Sie Schritt für Schritt durch die Erstellung Ihres ersten Mandanten, die Einladung von Nutzern und die Konfiguration von Rollen, Berechtigungen und Teams.
+Dieser Abschnitt führt Sie durch die Erstellung Ihres ersten Mandanten, die Einladung von Nutzern und die Konfiguration von Rollen, Berechtigungen und Teams.
 
 ***
 
-### 🏁 Ein Projekt starten
+## Die wichtigen Begriffe verstehen
+
+Organisation, Mandant, Organisationseinheit, Entität, Abteilung: Lesen Sie die Definitionen, bevor Sie Ihr Konto strukturieren.
+
+{% content-ref url="key-concepts.md" %}
+[key-concepts.md](key-concepts.md)
+{% endcontent-ref %}
+
+***
+
+## Anmelden
+
+Melden Sie sich bei Dastra an, sichern Sie Ihr Konto und verwalten Sie Ihre Sitzungen.
+
+{% content-ref url="login.md" %}
+[login.md](login.md)
+{% endcontent-ref %}
+
+***
+
+## Ein Projekt starten
 
 Beginnen Sie mit der Erstellung Ihres Mandanten:<br>
 
-<figure><img src="../../.gitbook/assets/Erstellen Sie Ihren Mandant.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-workspace-3.png" alt="Formular zum Erstellen eines Mandanten mit Name und Logo"><figcaption><p>Das Formular zum Erstellen eines Mandanten</p></figcaption></figure>
 
 {% content-ref url="workspace.md" %}
-[espace-de-travail.md](workspace.md)
+[workspace.md](workspace.md)
+{% endcontent-ref %}
+
+Strukturieren Sie den Mandanten anschließend mit Entitäten und Abteilungen und benennen Sie den Datenschutzbeauftragten und die federführende Aufsichtsbehörde:
+
+{% content-ref url="organizational-units.md" %}
+[organizational-units.md](organizational-units.md)
+{% endcontent-ref %}
+
+{% content-ref url="dpo.md" %}
+[dpo.md](dpo.md)
+{% endcontent-ref %}
+
+{% content-ref url="lead-authority.md" %}
+[lead-authority.md](lead-authority.md)
 {% endcontent-ref %}
 
 ***
 
-### 👥 Nutzer einladen
+## Nutzer einladen
 
-Wenn Sie einem bestehenden Projekt auf Dastra beitreten oder ein Teammitglied einladen möchten, beginnen Sie hier:<br>
+Um einem bestehenden Projekt in Dastra beizutreten oder ein Mitglied Ihres Teams einzuladen, beginnen Sie hier:<br>
 
 {% content-ref url="users.md" %}
-[inviter-utilisateurs.md](users.md)
+[users.md](users.md)
 {% endcontent-ref %}
 
 ***
 
-### ⚙️ Rollen und Berechtigungen verwalten
+## Rollen und Berechtigungen verwalten
 
-Erfahren Sie, wie Sie Rollen und Berechtigungen verwalten oder neue benutzerdefinierte Rollen entsprechend Ihrer Organisation erstellen:<br>
+Erfahren Sie, wie Sie Rollen und Berechtigungen verwalten oder angepasste Rollen erstellen, die zu Ihrer Organisation passen:<br>
 
 {% content-ref url="roles.md" %}
-[gerez-les-roles-et-permissions.md](roles.md)
+[roles.md](roles.md)
+{% endcontent-ref %}
+
+Wenn ein Nutzer ein Element nicht sieht, obwohl er die richtige Rolle hat, lesen Sie die folgende Seite:
+
+{% content-ref url="visibility.md" %}
+[visibility.md](visibility.md)
 {% endcontent-ref %}
 
 ***
 
-### 🧩 Teams erstellen und zuweisen
+## Teams erstellen und zuweisen
 
-Stellen Sie Ihre Teams zusammen und weisen Sie diese den passenden Abteilungen oder Organisationseinheiten zu:<br>
+Richten Sie Teams ein und weisen Sie sie den richtigen Abteilungen oder Organisationseinheiten zu:<br>
 
 {% content-ref url="teams.md" %}
-[creer-puis-affectez-des-equipes.md](teams.md)
+[teams.md](teams.md)
 {% endcontent-ref %}
 
 ***
 
-### 🎓 Tutorial
+## Ihr Profil einrichten und Antworten finden
 
-Das war's! Sie sind bereit, Dastra zu nutzen.\
-Sie können die Funktionen der Plattform frei erkunden oder einem konkreten Anwendungsfall im folgenden Tutorial folgen:<br>
+{% content-ref url="profile.md" %}
+[profile.md](profile.md)
+{% endcontent-ref %}
+
+{% content-ref url="faq.md" %}
+[faq.md](faq.md)
+{% endcontent-ref %}
+
+***
+
+## Tutorial
+
+Sie sind bereit, Dastra zu nutzen.\
+Sie können die Funktionen selbst erkunden oder einem konkreten Fall im Tutorial folgen:<br>
 
 {% content-ref url="../tutorial/README.md" %}
-[tutoriel](../tutorial/README.md)
+[README.md](../tutorial/README.md)
 {% endcontent-ref %}
 
 ***
 
 {% hint style="info" %}
-💡 **Tipp:** Sie können Rollen, Teams und Organisationseinheiten jederzeit in Ihrem Workspace ändern.\
-Alle diese Einstellungen bleiben vollständig an Ihre Organisation anpassbar.
+Sie können Rollen, Teams und Organisationseinheiten in Ihrem Mandanten jederzeit ändern. Diese Einstellungen bleiben vollständig anpassbar, damit sie zu Ihrer Organisation passen.
 {% endhint %}

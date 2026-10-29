@@ -1,106 +1,84 @@
+---
+description: Bearbeiten Sie Ihre persönlichen Angaben, Sprache und Zeitzone und löschen Sie Ihr Nutzerkonto.
+---
+
 # Ihr Nutzerprofil konfigurieren
 
-### 🧭 Überblick
+Jeder Dastra-Nutzer hat ein persönliches Profil: Identifikationsdaten, Sprache und Zeitzone sowie Optionen zum Datenschutz des Kontos. Öffnen Sie das Profilmenü oben rechts auf dem Bildschirm und klicken Sie dann auf **Nutzerprofil**.
 
-Jeder Dastra-Nutzer verfügt über ein **persönliches Profil** mit seinen Identifikationsdaten, Sprach- und Anzeigeeinstellungen sowie Optionen zur Kontosicherheit.
+## Profilbild
 
-Diese Seite erklärt, wie Sie diese Informationen über das Menü **Nutzerprofil** ändern können, das über Ihren Avatar oben rechts auf dem Bildschirm zugänglich ist.
+Sie können ein Logo oder ein Profilfoto hinzufügen, das in Dastra neben Ihrem Namen angezeigt wird. Klicken Sie auf **Bitte senden Sie uns Ihr Logo** und wählen Sie ein quadratisches Bild von mindestens 200 x 200 px. Dastra schneidet es automatisch zu.
 
-***
+<figure><img src="../../.gitbook/assets/getting-started-profile-1.png" alt="Seite Nutzerprofil mit dem Logo-Feld und den persönlichen Angaben"><figcaption><p>Die Seite Nutzerprofil</p></figcaption></figure>
 
-### 🖼️ Profilbild
+## Persönliche Angaben
 
-Sie können ein Logo oder Profilbild hinzufügen, das in Ihren Mandanten und in Ihren Kommentaren sichtbar ist.
+Sie können die folgenden Felder jederzeit ausfüllen oder aktualisieren. Die Felder für Adresse, Website und Biografie sind standardmäßig ausgeblendet: Klicken Sie auf **Mehr anzeigen**, um sie anzuzeigen. Klicken Sie auf **Speichern**, um zu bestätigen.
 
-* **Format:** quadratisches Bild mit mindestens **200 x 200 px**
-* **Akzeptierte Formate:** PNG, JPG oder WebP
-* **Automatischer Zuschnitt:** Dastra passt das quadratische Format automatisch an
+| Feld | Beschreibung | Pflichtfeld |
+| --- | --- | --- |
+| **Vorname** | Ihr Vorname, wie er in Dastra erscheint | Ja |
+| **Name** | Ihr Familienname | Ja |
+| **Öffentliches Pseudonym** | Pseudonym, das im Forum der Nutzer (der Community) und in Nachrichten zu Betroffenenanfragen verwendet wird, die außerhalb Ihrer Organisation versendet werden. Mindestens 4 Zeichen: Buchstaben, Ziffern und Unterstriche | Nein |
+| **Telefonnummer** | Ihre berufliche Telefonnummer | Nein |
+| **Postanschrift**, **Postleitzahl**, **Stadt**, **Region**, **Land** | Ihre Kontaktdaten | Nein |
+| **URL des Blogs/der Website** | Link zu Ihrer Website oder Ihrem beruflichen Profil | Nein |
+| **Biografie** | Kurze Beschreibung Ihrer Rolle oder Position | Nein |
 
-<figure><img src="../../.gitbook/assets/image-2-1-4-1.png" alt=""><figcaption></figcaption></figure>
+## Ihre E-Mail-Adresse ändern
 
-{% hint style="info" %}
-Wählen Sie ein einfaches und wiedererkennbares Bild (z. B. Ihr Foto oder das Logo Ihrer Organisation).
-{% endhint %}
+Der Bereich **E-Mail-Adresse des Profils** zeigt die mit Ihrem Konto verknüpfte Adresse.
 
-***
+1. Klicken Sie auf **Ändern Sie Ihre E-Mail-Adresse**.
+2. Geben Sie Ihre neue E-Mail-Adresse unter **Bitte geben Sie Ihre neue E-Mail-Adresse ein.** ein und klicken Sie auf **Bitte senden Sie einen Bestätigungslink**.
+3. Öffnen Sie die E-Mail, die an die neue Adresse gesendet wurde, und klicken Sie auf den Bestätigungslink.
 
-### 🧾 Persönliche Informationen
+## Sprache und Zeitzone
 
-Die folgenden Felder können jederzeit ausgefüllt oder aktualisiert werden:
+Im Bereich **Sprache und Zeitzone** passen Sie die Darstellung von Dastra an.
 
-| Feld                                                     | Beschreibung                                                              | Pflicht       |
-| -------------------------------------------------------- | ------------------------------------------------------------------------- | ------------- |
-| **Vorname**                                              | Ihr Vorname, wie er in Dastra angezeigt wird                              | ✅ Pflichtfeld |
-| **Nachname**                                             | Ihr Nachname                                                              | ✅ Pflichtfeld |
-| **Öffentlicher Spitzname**                               | Angezeigter Spitzname in Kommentaren oder bei externen Freigaben          | Optional      |
-| **Telefonnummer**                                        | Verwendet für bestimmte Benachrichtigungen oder Zwei-Faktor-Validierungen |               |
-| **Postanschrift / Postleitzahl / Stadt / Region / Land** | Berufliche oder persönliche Kontaktdaten je nach Kontext                  | Optional      |
-| **Blog / Website**                                       | Link zu Ihrer beruflichen Website oder LinkedIn                           | Optional      |
-| **Biografie**                                            | Kurze Beschreibung Ihrer Rolle oder Funktion                              | Optional      |
-| **Profil-E-Mail**                                        | Mit Ihrem Dastra-Konto verknüpfte Adresse                                 | ✅ Pflichtfeld |
+| Einstellung | Beschreibung |
+| --- | --- |
+| **Sprache der Benutzeroberfläche** | Sprache der Anwendung. Zehn Einträge stehen zur Auswahl: English (US), English (UK), Français, Deutsch, Español, Italiano, Nederlands, Ελληνικά, Polski und Português |
+| **Zeitzone** | Zeitzone, in der Datum und Uhrzeit angezeigt werden |
 
-### 🌐 Sprache und Zeitzone
+Diese Einstellungen ändern nur Ihre persönliche Darstellung. Die Sprache der übrigen Mitglieder des Mandanten bleibt unverändert.
 
-Sie können die Anzeige von Dastra nach Ihrer Sprache und Zeitzone anpassen.
+<figure><img src="../../.gitbook/assets/getting-started-profile-2.png" alt="Bereiche E-Mail-Adresse des Profils, Sprache und Zeitzone sowie Präferenzdaten zurücksetzen"><figcaption><p>Die Bereiche für E-Mail-Adresse, Sprache und Einstellungen</p></figcaption></figure>
 
-| Einstellung                | Beschreibung                                                                                           |
-| -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Sprache der Oberfläche** | In der Anwendung verwendete Sprache (Deutsch, Englisch usw.). Standardmäßig sind 9 Sprachen verfügbar. |
-| **Zeitzone**               | Standardmäßig (UTC+01:00) Mitteleuropäische Zeit (Paris)                                               |
+## Präferenzdaten zurücksetzen
 
-{% hint style="info" %}
-Diese Einstellungen beeinflussen nur **Ihre persönliche Anzeige**.\
-Sie ändern nicht die Standardsprache der anderen Mitglieder des Workspace.
-{% endhint %}
+Die Schaltfläche **Präferenzdaten zurücksetzen** setzt die in Ihrem Browser gespeicherten Einstellungen zurück. Sie löscht:
 
-***
+* die von Dastra gesetzten Cookies;
+* die im lokalen Speicher des Browsers abgelegten Elemente;
+* Ihre Anzeigeeinstellungen, einschließlich der Spalteneinstellungen in Tabellen;
+* den Verlauf der bereits gesehenen Tutorials: Sie werden in allen Modulen erneut angezeigt.
 
-### ♻️ Einstellungsdaten zurücksetzen
-
-Diese Option ermöglicht es, die in Ihrem Browser gespeicherten **lokalen Einstellungen** zurückzusetzen.
-
-> Dies löscht:
->
-> * die von Dastra gesetzten Cookies,
-> * die lokal gespeicherten Daten (localStorage),
-> * die Anzeige- und Spalteneinstellungen in Tabellen,
-> * die als "bereits gesehen" markierten Tutorials in den Modulen.
+Diese Aktion kann helfen, einige Anzeigeprobleme zu beheben.
 
 {% hint style="info" %}
-Diese Aktion ist **unwiderruflich**: Ihre Einstellungen gehen verloren und die Anzeige einiger Module wird wie bei Ihrer ersten Anmeldung zurückgesetzt.
+Ihre Einstellungen gehen verloren, und die Anzeige einiger Module entspricht wieder dem, was Sie bei Ihrer ersten Anmeldung gesehen haben.
 {% endhint %}
 
-***
+## Löschung des Kontos
 
-### 🗑️ Nutzerkonto löschen
+Wenn Sie Dastra endgültig verlassen möchten, können Sie Ihr Nutzerkonto im Bereich **Löschung des Kontos** löschen. Diese Aktion löscht Ihr Profil, Ihre Zugriffsrechte und Ihre Teams dauerhaft. Sie meldet Sie ab und leitet Sie zur Startseite weiter.
 
-Wenn Sie Dastra endgültig verlassen möchten, können Sie **Ihr Nutzerkonto löschen**.
+<figure><img src="../../.gitbook/assets/getting-started-profile-3.png" alt="Bereich Löschung des Kontos mit der Bestätigung der Löschung"><figcaption><p>Die Bestätigung der Kontolöschung</p></figcaption></figure>
 
-> Diese Aktion bewirkt:
->
-> * Die endgültige Löschung Ihres **Profils**
-> * Den Verlust Ihrer **Zugriffsrechte** und Ihrer **zugeordneten Teams**
-> * Die vollständige Löschung Ihrer **personenbezogenen Daten**
-
-{% hint style="info" %}
-Endgültige Löschung: Nach der Bestätigung ist **die Löschung unwiderruflich**.\
-Eine Wiederherstellung ist nicht möglich.
+{% hint style="danger" %}
+Die Löschung ist unumkehrbar. Eine Wiederherstellung ist nicht möglich. Informieren Sie vor der Löschung Ihres Kontos den Administrator Ihrer Organisation, um Datenverlust zu vermeiden.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Konto löschen.png" alt=""><figcaption></figcaption></figure>
+## Bewährte Vorgehensweisen
 
-***
+* Halten Sie Ihre Kontaktdaten aktuell, um die Erreichbarkeit sicherzustellen.
+* Wählen Sie ein berufliches Pseudonym: Es kann von der Dastra-Community und von externen Personen gelesen werden, die sich in einer Betroffenenanfrage mit Ihnen austauschen.
 
-### 💡 Bewährte Praktiken
+## Siehe auch
 
-* Halten Sie Ihre Kontaktdaten aktuell, um die Kontinuität der Kommunikation sicherzustellen.
-* Verwenden Sie einen professionellen Spitznamen für die Dastra-Community.
-* Informieren Sie vor der Löschung Ihres Kontos Ihren Administrator, um Datenverlust zu vermeiden.
-
-***
-
-### 🔗 Siehe auch
-
-* [Ihre Benachrichtigungen einrichten](../../features/settings/notifications.md)
-* [Rollen und Berechtigungen konfigurieren](../../features/settings/roles.md)
-* Anmelden und Authentifizierung verwalten
+* [Anmelden und Authentifizierung verwalten](login.md)
+* [Benachrichtigungen](../../features/settings/notifications.md)
+* [Rollen und Berechtigungen](../../features/settings/roles.md)

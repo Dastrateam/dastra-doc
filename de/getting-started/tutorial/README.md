@@ -6,17 +6,17 @@ description: >-
 
 # Tutorial
 
-In diesem Tutorial versetzt Dastra Sie in die Rolle eines Verantwortlichen, der für die DSGVO-Compliance seiner Organisation zuständig ist. Schritt für Schritt und auf Basis dieses Szenarios lernen Sie die verschiedenen Funktionen von Dastra kennen.
+In diesem Tutorial versetzt Dastra Sie in die Rolle eines Verantwortlichen, der für die Einhaltung der Datenschutz-Grundverordnung (DSGVO) in seiner Organisation zuständig ist. Schritt für Schritt und auf Basis dieses Szenarios lernen Sie die verschiedenen Funktionen von Dastra kennen.
 
-Wenn Sie unterwegs Hilfe benötigen, zögern Sie nicht, den Support zu kontaktieren:
+Wenn Sie unterwegs Hilfe benötigen, wenden Sie sich an das Supportteam:
 
 {% content-ref url="../support/README.md" %}
-[le-support](../support/README.md)
+[Support](../support/README.md)
 {% endcontent-ref %}
 
-## Fallstudie: Das Unternehmen SHIPBUILDER (fiktiver Fall)
+## Fallstudie (fiktiv): das Unternehmen SHIPBUILDER
 
-In diesem Szenario sind Sie Geschäftsführer von SHIPBUILDER, einer Organisation, die Schiffe baut. Diese besteht aus 2 juristischen Entitäten und 8 Abteilungen:
+In diesem Szenario sind Sie Geschäftsführer von SHIPBUILDER, einer Organisation, die Schiffe baut. Sie besteht aus 2 juristischen Entitäten und 8 Abteilungen:
 
 * HR
 * Generalsekretariat
@@ -27,48 +27,46 @@ In diesem Szenario sind Sie Geschäftsführer von SHIPBUILDER, einer Organisatio
 * Recht
 * Einkauf
 
-Sie haben beschlossen, Ihr Unternehmen in Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) zu bringen.
+Sie haben beschlossen, Ihr Unternehmen in Einklang mit der DSGVO zu bringen. Nachdem Sie sich über den [Ansatz der CNIL zur DSGVO-Konformität](https://www.cnil.fr/en/sheet-ndeg0-develop-compliance-gdpr) (auf Englisch) informiert haben, legen Sie ohne Verzögerung los.
 
 Beginnen Sie mit der Einrichtung Ihres Mandanten in Dastra:
 
 {% content-ref url="step-1.md" %}
-[etape-1-la-mise-en-place.md](step-1.md)
+[Schritt 1: Die Einrichtung](step-1.md)
 {% endcontent-ref %}
 
-Erstellen Sie dann das Verarbeitungsverzeichnis und kartieren Sie Ihre Daten:
+Erstellen Sie dann das Verzeichnis und kartieren Sie Ihre Daten:
 
 {% content-ref url="step-2.md" %}
-[etape-2-cartographier-vos-traitements-de-donnees-a-caractere-personnel-et-etablir-le-registre.md](step-2.md)
+[Schritt 2: Ihre Verarbeitungen personenbezogener Daten mappen und das Verzeichnis erstellen](step-2.md)
 {% endcontent-ref %}
 
 Verwalten Sie anschließend Ihre Risiken:
 
 {% content-ref url="step-3.md" %}
-[etape-4-gerer-les-risques.md](step-3.md)
+[Schritt 3: Risiken verwalten](step-3.md)
 {% endcontent-ref %}
 
-Dann priorisieren Sie die durchzuführenden Abhilfemaßnahmen:
+Priorisieren Sie dann die zu ergreifenden Abhilfemaßnahmen:
 
 {% content-ref url="step-4.md" %}
-[etape-3-prioriser-les-actions-a-mener.md](step-4.md)
+[Schritt 4: Maßnahmen priorisieren](step-4.md)
 {% endcontent-ref %}
 
-Implementieren Sie die im Sinne der DSGVO obligatorischen Prozesse:
+Setzen Sie die von der DSGVO geforderten Prozesse um:
 
 {% content-ref url="step-5.md" %}
-[etape-5-implementer-les-processus-internes.md](step-5.md)
+[Schritt 5: Interne Prozesse implementieren](step-5.md)
 {% endcontent-ref %}
 
-Zentralisieren Sie schließlich die Dokumentation Ihrer Compliance, insbesondere um möglichen Kontrollen durch die Aufsichtsbehörde standzuhalten, und liefern Sie den operativen Teams ergänzende Informationen:
+Bündeln Sie schließlich Ihre Compliance-Dokumentation, insbesondere für den Fall einer Prüfung durch die Aufsichtsbehörde (wie die französische CNIL), und liefern Sie den operativen Mitarbeitern ergänzende Informationen:
 
 {% content-ref url="step-6.md" %}
-[etape-6-documenter-la-conformite.md](step-6.md)
+[Schritt 6: Die Compliance dokumentieren](step-6.md)
 {% endcontent-ref %}
 
-Herzlichen Glückwunsch, Sie haben das Tutorial abgeschlossen!
+Sie haben das Tutorial abgeschlossen. Erkunden Sie weiter die übrigen Funktionen von Dastra, zum Beispiel mit dem Verarbeitungsverzeichnis:
 
-Zögern Sie nicht, anschließend die Funktionen von Dastra zu erkunden, beginnend beispielsweise mit dem Verarbeitungsverzeichnis:
-
-{% content-ref url="../../gdpr/concepts/ropa.md" %}
-[registre-de-traitement.md](../../gdpr/concepts/ropa.md)
+{% content-ref url="../../features/ropa/README.md" %}
+[Verarbeitungsverzeichnis](../../features/ropa/README.md)
 {% endcontent-ref %}

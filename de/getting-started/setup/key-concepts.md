@@ -1,121 +1,97 @@
-# Die wichtigen Begriffe
+---
+description: "Definitionen der Begriffe, die Dastra strukturieren: Organisation, Mandant, Organisationseinheit, Entität, Abteilung und Inhaber."
+---
 
-Bevor Sie Dastra nutzen, ist es wichtig, die grundlegenden Begriffe zu verstehen, die die Plattform strukturieren.\
-Sie ermöglichen es Ihnen, Ihre Verarbeitungen, Teams und Verantwortlichkeiten effizient zu organisieren.
+# Wichtige Begriffe
+
+Bevor Sie Dastra nutzen, sollten Sie sich die Zeit nehmen, die Begriffe zu verstehen, die die Plattform strukturieren. Sie helfen Ihnen, Ihre Verarbeitungstätigkeiten, Ihre Teams und Ihre Verantwortlichkeiten zu organisieren.
 
 ***
 
-### 📚 Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
 * [Organisation](key-concepts.md#organisation)
-* [Mandant](key-concepts.md#espace-de-travail)
-* [Organisationseinheit](key-concepts.md#unite-organisationnelle)
-* [Entität](key-concepts.md#entite)
-* [Abteilung](key-concepts.md#departement)
-* [Inhaber der Organisation](key-concepts.md#proprietaire-de-lorganisation)
+* [Mandant](key-concepts.md#mandant)
+* [Organisationseinheit](key-concepts.md#organisationseinheit)
+* [Entität](key-concepts.md#entitat)
+* [Abteilung](key-concepts.md#abteilung)
+* [Inhaber der Organisation](key-concepts.md#inhaber-der-organisation)
 
 ***
 
-### 🏢 Organisation
+## Organisation
 
-Eine **Organisation** fasst die Konten und Nutzer zusammen, die mit Ihrem Dastra-Abonnement verknüpft sind.\
-Sie ist die "Wurzel"-Struktur, die alle Ihre Mandanten, Ihre Abrechnungseinstellungen und Ihre API-Schlüssel enthält.
+Eine **Organisation** fasst die Konten und Nutzer zusammen, die mit Ihrem Dastra-Abonnement verknüpft sind. Sie ist die Wurzelstruktur: Sie enthält alle Ihre Mandanten.
 
-Sie können den Namen Ihrer Organisation oben rechts in der Benutzeroberfläche unter Ihrem Nutzerprofil sehen.
+Den Namen Ihrer Organisation sehen Sie oben rechts in der Benutzeroberfläche, unter dem Namen Ihres Nutzerkontos.
 
 {% hint style="info" %}
-Eine Organisation kann mehrere **Mandanten** enthalten, die jeweils einem anderen Projekt, einer anderen Entität oder einem anderen Team gewidmet sind.\
-Ein Nutzer kann mehreren Organisationen angehören.
+Eine Organisation kann mehrere Mandanten enthalten, die jeweils einem anderen Projekt, einer anderen Entität oder einem anderen Team gewidmet sind. Ein Nutzer kann mehreren Organisationen angehören.
 {% endhint %}
 
 ***
 
-### 🧰 Mandant
+## Mandant
 
-Ein **Mandant** (Workspace) ist die Umgebung, in der Sie mit Ihrem Team zusammenarbeiten.\
-Er bündelt die Module und Daten Ihrer Entitäten: Verarbeitungen, Audits, Risiken, Datenschutzvorfälle, Betroffenenanfragen usw.
+Ein **Mandant** ist die Umgebung, in der Sie mit Ihrem Team zusammenarbeiten. Er bündelt die Module und Daten Ihrer Entitäten: Verarbeitungstätigkeiten, Audits, Risiken, Datenschutzvorfälle, Betroffenenanfragen usw. Die Daten eines Mandanten sind aus einem anderen Mandanten nie zugänglich.
 
-Sie wählen Ihren Mandanten bei der Anmeldung über die **Zugangs-Kacheln** auf Ihrem Dashboard aus.
+Sie wählen Ihren Mandanten bei der Anmeldung, indem Sie in der Liste Ihrer Mandanten auf seine Kachel klicken.
+
+Geben Sie Ihren Mandanten aussagekräftige Namen (zum Beispiel "Compliance Konzern" oder "Entitäten Deutschland"). Das erleichtert die Navigation, wenn die Organisation mehrere Mandanten hat.
+
+***
+
+## Organisationseinheit
+
+**Organisationseinheiten** strukturieren einen Mandanten entsprechend Ihrer internen Organisation. Es gibt zwei Arten: Entitäten und Abteilungen.
+
+Sie ordnen Verarbeitungstätigkeiten, Aufgaben, Betroffenenanfragen, Datenschutzvorfälle und Risiken einer Organisationseinheit zu. Außerdem können Sie ihr Zugriffsrechte für Nutzer oder Teams zuordnen.
 
 {% hint style="info" %}
-Benennen Sie Ihre Mandanten klar und verständlich (z. B. "Compliance Konzern", "Entitäten Deutschland").\
-Dies erleichtert die Navigation und die Verwaltung mehrerer Entitäten.
+Organisationseinheiten sind die Referenz für Berichte und für Zugriffsberechtigungen. Siehe [Organisationseinheiten erstellen und konfigurieren](organizational-units.md).
 {% endhint %}
 
 ***
 
-### 🧩 Organisationseinheit
+## Entität
 
-Die **Organisationseinheiten** ermöglichen es Ihnen, Ihren Workspace entsprechend Ihrer internen Organisation zu strukturieren.\
-Sie dienen dazu, Entitäten, Abteilungen, Nutzer und Verarbeitungen in einer hierarchischen Logik zu gruppieren.
+Eine **Entität** entspricht einer juristischen Person, also einem **Verantwortlichen**: einem Unternehmen, einer Tochtergesellschaft, einem Verein. Auf dieser Ebene ordnen Sie Verarbeitungstätigkeiten und die wichtigsten rechtlichen Informationen zu.
 
-Jede Einheit kann enthalten:
+Eine Entität enthält:
 
-* **Entitäten** (juristische Strukturen),
-* **Abteilungen** (interne Teams),
-* **Nutzer**,
-* **Verarbeitungen** oder **Aufgaben**.
-
-{% hint style="info" %}
-Organisationseinheiten erleichtern die Delegation, Governance und Rückverfolgbarkeit in Compliance-Projekten.\
-Sie dienen häufig als Referenz für Berichte oder Zugriffsberechtigungen.
-{% endhint %}
-
-***
-
-### 🏛️ Entität
-
-Eine **Entität** entspricht in der Regel einer **juristischen Person** oder einem **Verantwortlichen** (z. B. eine Gesellschaft, eine Tochtergesellschaft, ein Verein).\
-Auf dieser Ebene ordnen Sie die Verarbeitungen und die wichtigsten rechtlichen Informationen zu.
-
-Jede Entität kann enthalten:
-
-* die Kontaktdaten des **Verantwortlichen**,
-* den **Datenschutzbeauftragten** (DSB),
-* die zuständigen **Aufsichtsbehörden**,
-* und die zugehörigen **Abteilungen**.
+* die Kontaktdaten des Verantwortlichen,
+* den **DSB** (Datenschutzbeauftragten),
+* die **federführende Aufsichtsbehörde**,
+* die ihr zugeordneten Abteilungen und untergeordneten Entitäten.
 
 Beispiel:
 
 > Entität: _Dastra Deutschland GmbH_\
 > Abteilung: _Marketing_\
-> DSB: _Max Mustermann_ :::
+> DSB: _Max Mustermann_
 
 ***
 
-### 🧭 Abteilung
+## Abteilung
 
-Eine **Abteilung** repräsentiert einen Bereich oder eine Abteilung einer Entität (z. B. HR, IT, Marketing, Recht).\
-Sie ermöglicht eine feinere Verteilung der Aktivitäten innerhalb einer Entität und die Nachverfolgung der Verantwortlichkeiten pro Team.
+Eine **Abteilung** repräsentiert einen Bereich einer Entität (zum Beispiel Personal, IT, Marketing, Recht). Sie verfeinert die Verteilung der Tätigkeiten innerhalb einer Entität.
 
-Abteilungen dienen insbesondere dazu:
+Abteilungen dienen dazu:
 
-* Verarbeitungen oder Audits nach Bereich zu filtern,
+* Verarbeitungstätigkeiten oder Audits nach Bereich zu filtern,
 * Aufgaben oder Anfragen einer gezielten Gruppe zuzuweisen,
-* interne Informationsflüsse besser zu visualisieren.
+* einem Team Zugriffsrechte auf einen genau abgegrenzten Bereich zu geben.
+
+Eine Abteilung kann untergeordnete Abteilungen haben. Eine Entität kann ebenfalls untergeordnete Entitäten haben, zum Beispiel um die Tochtergesellschaften eines Konzerns abzubilden.
 
 {% hint style="info" %}
-Abteilungen sind optional, werden aber für mittlere bis große Organisationen dringend empfohlen.\
-Sie erleichtern die Verwaltung der Verantwortlichkeiten und die operative Nachverfolgung.
+Abteilungen sind optional. Sie sind nützlich, sobald die Organisation mehrere Bereiche hat, deren Verarbeitungstätigkeiten Sie getrennt verfolgen möchten.
 {% endhint %}
 
 ***
 
-### 👑 Inhaber der Organisation
+## Inhaber der Organisation
 
-Der **Inhaber** (Owner) ist der Hauptadministrator der Dastra-Organisation.\
-Er verfügt über sämtliche Verwaltungsrechte, einschließlich der Erstellung und Löschung von Mandanten, der Konfiguration von API-Schlüsseln und der Rollenverwaltung.
+Der **Inhaber** ist der Hauptadministrator der Organisation. Nur Inhaber können Mandanten erstellen, die Einstellungen der Organisation ändern, angepasste Rollen erstellen und andere Inhaber hinzufügen oder entfernen.
 
-Seine Hauptverantwortlichkeiten:
-
-* **Nutzer und Teams** auf globaler Ebene verwalten,
-* Die **Mandanten** beaufsichtigen,
-* Auf **erweiterte Einstellungen** zugreifen (API, Sicherheit, Abrechnung),
-* Ein Konto oder eine Organisation löschen.
-
-{% hint style="info" %}
-Beschränken Sie die Anzahl der Inhaber, um die Sicherheit und Konsistenz der Governance zu gewährleisten.\
-Anderen Nutzern können angepasste Rollen zugewiesen werden (Admin, Mitwirkender, Leser usw.).
-{% endhint %}
-
-***
+Beschränken Sie die Anzahl der Inhaber, damit die Governance klar bleibt. Andere Nutzer erhalten Rollen, die zu ihren Anforderungen passen: siehe [Rollen und Berechtigungen verwalten](roles.md).

@@ -1,121 +1,125 @@
 ---
-description: >-
-  Erfahren Sie, wie Sie Entitäten und Abteilungen in Dastra erstellen und
-  einrichten.
+description: Erfahren Sie, wie Sie Entitäten und Abteilungen in Dastra erstellen und einrichten.
 ---
 
 # Organisationseinheiten erstellen und konfigurieren
 
-### Einführung
+## Einführung
 
-Die Organisationseinheiten ermöglichen es, Ihren Mandanten zu strukturieren. Zwei Arten von Organisationseinheiten können erstellt werden:
+Organisationseinheiten strukturieren Ihren Mandanten. Es können zwei Arten von Organisationseinheiten erstellt werden:
 
-* die **Entitäten**, die juristischen Personen entsprechen und einen Verantwortlichen repräsentieren,
-* die **Abteilungen**, die die Organisation der Entitäten ermöglichen.
+* **Entitäten**, die juristischen Personen entsprechen und einen Verantwortlichen darstellen;
+* **Abteilungen**, die die Entitäten untergliedern.
 
-In Dastra ist der Begriff des Mandanten von dem der juristischen Entität getrennt. So kann **ein Mandant auf mehrere verschiedene juristische Entitäten** verweisen (wie z. B. in einem Konzern). Es kann jedoch nur einen einzigen gesetzlichen Vertreter pro juristische Entität geben.
+In Dastra ist ein Mandant keine juristische Person: **Ein Mandant kann sich auf mehrere verschiedene juristische Personen beziehen**, wie in einem Konzern. Pro juristischer Person kann es jedoch nur einen gesetzlichen Vertreter geben.
 
 {% hint style="info" %}
-Jede Entität in Dastra gilt als ein Verantwortlicher.
+Jede Entität in Dastra gilt als Verantwortlicher.
 {% endhint %}
 
-### Auf das Modul "Organisationseinheiten" in Dastra zugreifen
+## Die Organisationseinheiten aufrufen
 
-Navigieren Sie zu "Einstellungen" auf der linken Seite des Bildschirms und klicken Sie dann auf "Organisationseinheiten".
+Klicken Sie im linken Menü auf **Mandanteneinstellungen** und dann auf **Organisationseinheiten**.
 
-![Schaltfläche zum Zugriff auf die Mandanten-Einstellungen](../../.gitbook/assets/screenshot-2024-10-17-123108.png)
+<figure><img src="../../.gitbook/assets/getting-started-org-units-1.png" alt="Menü Mandanteneinstellungen mit dem Eintrag Organisationseinheiten"><figcaption><p>Das Menü Mandanteneinstellungen</p></figcaption></figure>
 
-![Zugriff auf die Einstellungen der Organisationseinheiten](<../../.gitbook/assets/Zugriffsverwaltung - Organsiationseinheiten.png>)
+Es öffnet sich der Bildschirm zum **Erstellen und Konfigurieren** der Organisationseinheiten. Er hat zwei Tabs: **Organisationseinheiten** (die Liste) und **Organigramm**.
 
-Sie gelangen so zur Ansicht für die **Erstellung und Einrichtung** der Organisationseinheiten:
-
-![Verwaltungsoberfläche der Organisationseinheiten](<../../.gitbook/assets/Verwaltung von Organisationseinheiten.png>)
+<figure><img src="../../.gitbook/assets/getting-started-org-units-2.png" alt="Liste der Organisationseinheiten mit der Schaltfläche Eine Entität erstellen und ihrem Menü"><figcaption><p>Die Liste der Organisationseinheiten</p></figcaption></figure>
 
 ## Eine Entität erstellen oder bearbeiten
 
-Um eine juristische Entität zu erstellen, klicken Sie einfach auf die Schaltfläche "Entität erstellen (Verantwortlicher)" im Modul "Entitäten und Abteilungen".
+1. Klicken Sie auf **Eine Entität erstellen**.
+2. Füllen Sie den **Namen der Entität** und das **Land** aus, die Pflichtfelder sind. Sie können außerdem die verantwortliche Person (den gesetzlichen Vertreter), den Datenschutzbeauftragten und gegebenenfalls den Vertreter in der Europäischen Union angeben.
+3. Klicken Sie auf **Speichern**.
 
-![Schaltfläche "Entität erstellen"](<../../.gitbook/assets/Schaltfläche - Entität erstellen.png>)
-
-Füllen Sie die angeforderten Felder aus: Name und Land sind Pflichtfelder. Sie können den Namen des oder der Verantwortlichen (des gesetzlichen Vertreters) sowie den oder die Datenschutzbeauftragte(n) (falls vorhanden) und den Vertreter in der EU (falls zutreffend) angeben.
+<figure><img src="../../.gitbook/assets/getting-started-org-units-3.png" alt="Formular zum Erstellen einer Entität"><figcaption><p>Das Formular zum Erstellen einer Entität</p></figcaption></figure>
 
 {% hint style="info" %}
-Im Gegensatz zu Abteilungen ist die Anzahl der Entitäten (Verantwortliche), die in Dastra eingetragen werden können, durch ein Kontingent begrenzt, das von Ihrem Abonnement abhängt. Wenn Sie dieses Kontingent erhöhen möchten, [kontaktieren Sie den Vertrieb](https://www.dastra.eu/de/contacts).
+Anders als bei Abteilungen hängt die Anzahl der Entitäten (Verantwortlichen), die Sie erstellen können, von einem Kontingent Ihres Abonnements ab. Um es zu erhöhen, [wenden Sie sich an das Vertriebsteam](https://www.dastra.eu/de/contacts).
 {% endhint %}
 
-Um eine Entität zu bearbeiten, klicken Sie auf die 3 Punkte rechts neben der betreffenden Entität und dann auf "Bearbeiten"
+Um eine Entität zu bearbeiten, klicken Sie rechts neben der Entität auf die drei Punkte und dann auf **Bearbeiten**. Nehmen Sie Ihre Änderungen vor und klicken Sie auf **Speichern**.
 
-![Dropdown-Menü einer Entität.](<../../.gitbook/assets/Entität bearbeiten.png>)
-
-Nehmen Sie die gewünschten Änderungen vor und klicken Sie auf "Speichern".
+<figure><img src="../../.gitbook/assets/getting-started-org-units-4.png" alt="Kontextmenü einer Organisationseinheit"><figcaption><p>Das Menü mit den drei Punkten einer Organisationseinheit</p></figcaption></figure>
 
 ## Eine Abteilung erstellen oder bearbeiten
 
-Um eine Abteilung zu erstellen, klicken Sie einfach auf die Schaltfläche "Abteilung erstellen" im Modul "Organisationseinheiten" und füllen Sie die angeforderten Felder aus.
+Um eine Abteilung zu erstellen, öffnen Sie das Menü der Schaltfläche **Eine Entität erstellen**, klicken Sie auf **Eine Abteilung erstellen** und füllen Sie die Felder aus.
 
-![Schaltfläche "Abteilung erstellen"](<../../.gitbook/assets/Abteilung erstellen.png>)
+Um sie zu bearbeiten, klicken Sie rechts neben der Abteilung auf die drei Punkte und dann auf **Bearbeiten**, nehmen Sie Ihre Änderungen vor und klicken Sie auf **Speichern**.
 
-Um eine Abteilung zu bearbeiten, klicken Sie auf die 3 Punkte rechts neben der zu bearbeitenden Abteilung, klicken Sie auf "Bearbeiten" und füllen Sie die angeforderten Felder aus, bevor Sie auf "Speichern" klicken.
+## Untergeordnete Einheiten hinzufügen
 
-![Dropdown-Menü einer Abteilung](<../../.gitbook/assets/Abteilung bearbeiten.png>)
+Das Menü mit den drei Punkten einer Einheit bietet außerdem:
 
-## Organisationseinheiten importieren
+* **Eine Unterabteilung hinzufügen**: erstellt eine Abteilung unterhalb der Einheit;
+* **Eine untergeordnete Entität hinzufügen**: erstellt eine Entität unterhalb der Einheit, zum Beispiel um die Tochtergesellschaft einer Tochtergesellschaft abzubilden.
 
-Sie können eine Liste von Organisationseinheiten über eine Importdatei importieren. Diese Datei kann heruntergeladen werden, indem Sie auf die Schaltfläche "Importieren" in der Verwaltungsoberfläche der Organisationseinheiten klicken.
+## Eine Organisationseinheit löschen und ihre Daten übertragen
 
-<figure><img src="../../.gitbook/assets/Org import.png" alt=""><figcaption></figcaption></figure>
+Eine Organisationseinheit kann nicht gelöscht werden, solange ihr Elemente zugeordnet sind. Klicken Sie im Menü mit den drei Punkten auf **Löschen**, klicken Sie dann auf die aufgelisteten Elemente und weisen Sie sie einer anderen Einheit zu. Mit **Daten übertragen** können Sie auch die Objekttypen Ihrer Wahl in eine andere Einheit verschieben, ohne die Einheit zu löschen.
 
-Klicken Sie dann auf "**Laden Sie die Dateivorlage herunter**"
+<figure><img src="../../.gitbook/assets/getting-started-org-units-7.png" alt="Bildschirm zum Löschen einer Organisationseinheit mit der Liste der zu übertragenden Elemente"><figcaption><p>Eine Organisationseinheit löschen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Organisationseinheiten importieren.png" alt=""><figcaption></figcaption></figure>
+{% hint style="danger" %}
+Das Löschen einer Organisationseinheit ist endgültig. Die zugehörigen Daten werden in die Einheit übertragen, die Sie auswählen.
+{% endhint %}
 
-Sie können sie auch direkt hier herunterladen
+## Organisationseinheiten importieren und exportieren
 
-Die Datei muss mit folgenden Pflichtfeldern ausgefüllt werden:
+Öffnen Sie das Menü der Schaltfläche **Eine Entität erstellen**: Es bietet **Importieren** und **Exportieren**.
 
-* **Id**: Die eindeutige Kennung der Organisationseinheit (5-stellige Zahl)
-* **Label**: Der Name der Organisationseinheit (Zeichenkette)
-* **CountryCode**: Das Land der Organisationseinheit (2-stellige Ländercodes gemäß [ISO 3166](https://www.ble.de/SharedDocs/Downloads/EN/Climate-Energy/Information-Nabisy/CountryCodes.pdf?__blob=publicationFile\&v=1))
-* **Type**: Art der Organisationseinheit ("Entity" für Entität und "Area" für Abteilung)<br>
+Um zu importieren, klicken Sie auf **Importieren** und dann auf **Laden Sie die Dateivorlage herunter**. Füllen Sie die Datei aus und legen Sie sie im Ablagebereich ab. Die Datei kann im Format CSV (Kodierung UTF-8, Trennzeichen `;`), TXT oder XLSX vorliegen.
 
-Das Feld **ParentId** ist nicht obligatorisch, ermöglicht aber die Identifizierung der übergeordneten Organisationseinheit (falls vorhanden) über deren ID (5-stellige Zahl).
+<figure><img src="../../.gitbook/assets/getting-started-org-units-5.png" alt="Importfenster für Organisationseinheiten mit der Schaltfläche zum Herunterladen der Dateivorlage"><figcaption><p>Das Importfenster</p></figcaption></figure>
+
+Zwei Spalten sind erforderlich:
+
+* `Id`: die Kennung der Einheit, ein Text, der innerhalb der Datei eindeutig ist (höchstens 80 Zeichen);
+* `Label`: der Name der Einheit (höchstens 80 Zeichen).
+
+Die übrigen Spalten sind optional:
+
+* `ParentId`: die `Id` der übergeordneten Einheit, falls es eine gibt;
+* `CountryCode`: das Land als 2-stelliger Code ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). Der Standardwert ist `FR`;
+* `Type`: `Entity` für eine Entität oder `Area` für eine Abteilung. Der Standardwert ist `Entity`;
+* `City`, `Address`, `ZipCode`, `MailAddress`, `PhoneNumber` und `ImmatriculationNumber`: die Kontaktdaten der Einheit;
+* `RepresentativeName` und `RepresentativeType`, `DpoName` und `DpoType`, `ReferentName` und `ReferentType`: Name und Typ des Stakeholders, der als Vertreter, Datenschutzbeauftragter oder verantwortliche Person zugeordnet ist;
+* `OwnerEmail`: die E-Mail-Adresse des Inhabers der Einheit.
 
 {% hint style="warning" %}
-Es ist wichtig, die Anzahl der Hierarchieebenen auf 7 Stufen (Eltern-Kind-Beziehungen) zu begrenzen, um eine korrekte Datenverarbeitung sicherzustellen.
+Beschränken Sie die Hierarchie auf 7 Ebenen (Beziehungen zwischen übergeordneten und untergeordneten Einheiten), damit der Import korrekt verarbeitet wird.
 {% endhint %}
 
 Beispiel:
 
-<table><thead><tr><th>Id</th><th>ParentId</th><th width="492">Label</th><th>CountryCode</th><th>Type</th></tr></thead><tbody><tr><td>20996</td><td></td><td>HOLDING</td><td>FR</td><td>Entity</td></tr><tr><td>21009</td><td>20996</td><td>Informatique</td><td>BE</td><td>Area</td></tr></tbody></table>
+<table><thead><tr><th>Id</th><th>ParentId</th><th width="492">Label</th><th>CountryCode</th><th>Type</th></tr></thead><tbody><tr><td>20996</td><td></td><td>HOLDING</td><td>FR</td><td>Entity</td></tr><tr><td>21009</td><td>20996</td><td>IT</td><td>BE</td><td>Area</td></tr></tbody></table>
 
-Nachdem Sie die Datei ausgefüllt haben, laden Sie sie im Upload-Bereich hoch und folgen Sie den Anweisungen.
+## Einheiten im Organigramm anzeigen und konfigurieren
 
-## Entitäten und Abteilungen über das Organigramm visualisieren und einrichten
+Der Tab **Organigramm** zeigt Ihre Entitäten und Abteilungen grafisch. Die meisten Vorgänge der Liste können Sie auch dort ausführen.
 
-In Dastra können Sie Entitäten und Abteilungen auch grafisch visualisieren und direkt über das Organigramm einrichten.
+<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigramm-Ansicht der Organisationseinheiten"><figcaption><p>Die Ansicht Organigramm</p></figcaption></figure>
 
-Klicken Sie dazu auf die Ansicht "**Organigramm**" im Modul "Organisationseinheiten".
+## Zugriff auf den Inhalt einer Organisationseinheit einschränken
 
-![Ansicht "Organigramm"](../../.gitbook/assets/Organigramm.png)
+Mit Teams von Nutzern können Sie den Zugriff auf die Inhalte einschränken, die einer Organisationseinheit zugeordnet sind. Ordnen Sie dazu der Einheit Teams zu: Klicken Sie im Menü mit den drei Punkten auf **Festlegen der Berechtigungen für** und fügen Sie die zugelassenen Nutzer oder Teams hinzu.
 
-So können Sie das Organisationsschema Ihrer Struktur grafisch visualisieren:
+Standardmäßig erbt eine untergeordnete Einheit die Berechtigungen ihrer übergeordneten Einheit. Sobald Sie der untergeordneten Einheit Berechtigungen hinzufügen, ersetzen diese die geerbten.
 
-![Beispiel eines Organigramms in Dastra](<../../.gitbook/assets/Organigramm Beispiel.png>)
+### Eingeschränkter Zugriff nur auf eine untergeordnete Entität
+
+Sie können einen Nutzer oder ein Team **nur zu einer untergeordneten Entität** hinzufügen, ohne ihm Zugriff auf die übergeordneten Entitäten zu geben. Er hat dann **ausschließlich Zugriff auf die Daten dieser Entität**, weder auf die der übergeordneten noch auf die der gleichrangigen Entitäten.
+
+Dieser Modus ist nützlich, um die Verwaltung einer Tochtergesellschaft oder einer Abteilung an lokale Nutzer zu delegieren, ohne Konzerndaten offenzulegen. Um ihn einzurichten, öffnen Sie die Berechtigungen der Entität und fügen Sie den Nutzer oder das Team direkt zu dieser Entität hinzu, ohne ihn oder es der übergeordneten Entität zuzuordnen.
 
 {% hint style="info" %}
-In der Ansicht "Organigramm" können Sie die meisten Operationen durchführen, die auch in der Ansicht "Organisationseinheiten" verfügbar sind.
+Anders als im Standardmodus gibt der eingeschränkte Zugriff auf eine untergeordnete Entität keinen Zugriff auf die Daten der übergeordneten Entitäten.
 {% endhint %}
-
-## Den Zugriff auf den Inhalt einer Organisationseinheit einschränken
-
-Mithilfe des Nutzer-Teams-Systems können Sie den Zugriff auf den Inhalt einer Organisationseinheit einschränken.
-
-Dazu müssen Teams den Organisationseinheiten zugeordnet werden.
-
-Das System ist hierarchisch aufgebaut. Das bedeutet, dass ein Team, um auf eine untergeordnete Organisationseinheit zugreifen zu können, auch Zugriff auf die übergeordnete Organisationseinheit haben muss.
 
 ## Weiterführende Informationen
 
 {% content-ref url="teams.md" %}
-[creer-puis-affectez-des-equipes.md](teams.md)
+[teams.md](teams.md)
 {% endcontent-ref %}
