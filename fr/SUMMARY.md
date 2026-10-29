@@ -236,7 +236,7 @@
   * [Intégration dans les outils d'analyse de données (BI)](features/reports/bi-tools.md)
 * [Systèmes d'IA](features/ai-systems/README.md)
   * [Importer vos systèmes d'IA](features/ai-systems/import.md)
-  * [Etablir un registre des Systèmes d'IA](features/ai-systems/record.md)
+  * [Établir un registre des systèmes d'IA](features/ai-systems/record.md)
   * [Analyse de risque et valeur ajoutée](features/ai-systems/risk-analysis.md)
   * [Analyse d’impact sur les droits fondamentaux (FRIA)](features/ai-systems/fria.md)
   * [Notice de transparence](features/ai-systems/transparency-notice.md)

@@ -12,13 +12,13 @@ Dastra unterstützt nativ den **Google Consent Mode V2**. Diese Integration send
 ## Voraussetzungen
 
 * Das Standard-Einwilligungs-Snippet (siehe Schritt 2) muss im `<head>` Ihrer Website eingefügt werden, **bevor** Google Tag Manager geladen wird.
-* Konfigurieren Sie in Google Tag Manager ein **„Google Tag"**, das auf allen Seiten ausgelöst wird.
+* Konfigurieren Sie in Google Tag Manager ein **„Google Tag“**, das auf allen Seiten ausgelöst wird.
 * Die Integration funktioniert mit **Google Ads** (ohne Personalisierung) und **Google Analytics**.
-* Wenn Sie Google Ads Conversion-Tracking- oder Remarketing-Tags verwenden, stellen Sie sicher, dass diese Tags erst nach der Einwilligung ausgelöst werden, mithilfe eines benutzerdefinierten Ereignisses wie `dastra:consent:{service-slug}` (Beispiel: `dastra:consent:googleleads`).
+* Wenn Sie Google Ads Conversion-Tracking- oder Remarketing-Tags verwenden, stellen Sie sicher, dass diese Tags erst nach der Einwilligung ausgelöst werden, mithilfe eines benutzerdefinierten Ereignisses wie `dastra:consent:{service-slug}` (Beispiel: `dastra:consent:google-ads`).
 
-## Schritt 1 — Consent Mode V2 für den Dienst aktivieren
+## Schritt 1: Consent Mode V2 für den Dienst aktivieren
 
-Bearbeiten Sie in der Widget-Integration den betreffenden Dienst (z. B. Google Analytics, Google Ads) und aktivieren Sie den Schalter **„Consent mode V2"**. Nach der Aktivierung sendet das Dastra-Banner automatisch das `consent_update`-Signal an GTM, sobald ein Nutzer mit dem Einwilligungsbanner interagiert.
+Klicken Sie im Abschnitt **Dienstleistungen** des Banners auf den betreffenden Dienst (z. B. Google Analytics oder Google Ads) und aktivieren Sie den Schalter **Einwilligung v2 (Beta)**. Nach der Aktivierung sendet das Dastra-Banner automatisch das `consent_update`-Signal an GTM, sobald ein Nutzer mit dem Einwilligungsbanner interagiert.
 
 Wählen Sie anschließend die **Einwilligungstypen** aus, die für diesen Dienst gesteuert werden sollen (standardmäßig alle aktiviert):
 
@@ -27,11 +27,11 @@ Wählen Sie anschließend die **Einwilligungstypen** aus, die für diesen Dienst
 * `ad_user_data`
 * `ad_personalization`
 
-<figure><img src="../../../../.gitbook/assets/cookies-service-consent-mode-v2.png" alt=""><figcaption><p>Aktivierung des Consent Mode V2 für einen Dienst des Cookie-Widgets</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-service-consent-mode-v2.png" alt="Der Schalter Einwilligung v2 (Beta) in den Einstellungen eines Dienstes"><figcaption><p>Aktivierung des Consent Mode V2 für einen Dienst des Cookie-Widgets</p></figcaption></figure>
 
 Das einzufügende Standard-Einwilligungs-Snippet wird direkt in der Oberfläche angezeigt: Verwenden Sie die Schaltfläche **Kopieren**, um es zu übernehmen, und folgen Sie dann Schritt 2.
 
-## Schritt 2 — Den Standard-Einwilligungscode vor GTM platzieren
+## Schritt 2: Den Standard-Einwilligungscode vor GTM platzieren
 
 Damit die Google-Tags auf das Einwilligungssignal warten, bevor sie ausgelöst werden, fügen Sie das folgende Snippet **vor** dem GTM-Initialisierungscode in Ihre Seite ein:
 
@@ -54,6 +54,18 @@ Dieses Snippet weist die Google-Tags an, maximal 500 ms auf das `consent_update`
 {% hint style="warning" %}
 Dieses Snippet muss unbedingt **vor** der GTM-Initialisierung platziert werden. Wird es danach geladen, können die Google-Tags ausgelöst werden, ohne auf die Einwilligung zu warten.
 {% endhint %}
+
+{% hint style="info" %}
+Das Dastra-SDK ruft die globale Funktion `gtag` auf, die das obige Snippet definiert. Entfernen Sie die Definition von `gtag()` nicht aus diesem Snippet: Ohne sie kann das SDK die Aktualisierung der Einwilligung nicht senden.
+{% endhint %}
+
+## Installationsart: fest eingebunden oder über GTM
+
+Das Dastra-CMP-Skript kann direkt in den Seitenquelltext eingebunden (hard-coded) oder über GTM geladen werden. Beide Methoden sind gültig. Die feste Einbindung wird jedoch empfohlen, da sie sicherstellt, dass das Standard-Einwilligungs-Snippet (oben) vor GTM ausgeführt wird. Das ist eine Voraussetzung dafür, dass der Consent Mode V2 korrekt funktioniert.
+
+## Neue Dienste hinzufügen und die Einwilligung zurücksetzen
+
+Dastra zeigt das Einwilligungsbanner Besuchern, die bereits eine Auswahl getroffen haben, nicht automatisch erneut an, wenn der Konfiguration neue Dienste hinzugefügt werden. Wenn Sie ein neues Tool (z. B. einen neuen Analysedienst) hinzufügen und die Einwilligung bestehender Besucher für diesen Dienst einholen müssen, müssen Sie die **Einwilligung in der Dastra-Oberfläche zurücksetzen**. Die Aktion **Zurücksetzen der Erfassung von Einwilligungsnachweisen** im Menü **Aktionen** des Banners erzwingt, dass das Banner allen Besuchern bei ihrem nächsten Besuch erneut angezeigt wird, auch denen, die bereits eine Auswahl getroffen hatten. Siehe [Das Cookie-Einwilligungsbanner einrichten](../../banner/configure.md#zurucksetzen-der-erfassung-von-einwilligungsnachweisen).
 
 ## Weiterführende Informationen
 

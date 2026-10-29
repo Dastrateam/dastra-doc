@@ -1,21 +1,24 @@
 ---
-description: Erfahren Sie, wie Sie eine gute Cookie-Einwilligungsverwaltung einrichten.
+description: >-
+  Erfahren Sie, wie Sie die Einwilligung in Cookies sauber verwalten.
 ---
 
-# Cookies
+# Cookie-Einwilligung verwalten
 
-## Was sind Cookies?
+## Was Cookies sind
 
-[Cookies](https://de.wikipedia.org/wiki/HTTP-Cookie) sind kleine Dateien, die es ermöglichen, Informationen über einen Internetnutzer zu speichern, der eine Website besucht, beispielsweise seinen Browserverlauf, die Seiteneinstellungen usw.
+[Cookies](https://de.wikipedia.org/wiki/HTTP-Cookie) sind kleine Dateien, die Informationen über einen Nutzer speichern, der eine Website besucht, zum Beispiel seinen Navigationsverlauf oder die Einstellungen der Website.
 
-Die vollständigere Definition eines Cookies durch die CNIL lautet wie folgt:
+Die französische Datenschutzbehörde (CNIL) definiert ein Cookie wie folgt:
 
-> Ein Cookie ist eine Reihe von Informationen, in der Regel von geringer Größe und durch einen Namen identifiziert, die von einer Website, mit der Sie sich verbinden, an Ihren Browser übermittelt werden kann. Ihr Webbrowser speichert es für eine bestimmte Dauer und sendet es bei jeder erneuten Verbindung an den Webserver zurück.
+> Ein Cookie ist eine meist kleine, mit einem Namen gekennzeichnete Folge von Informationen, die eine Website, die Sie besuchen, an Ihren Browser senden kann. Ihr Webbrowser speichert sie für eine bestimmte Zeit und sendet sie bei jedem erneuten Besuch an den Webserver zurück.
 
-Das Inkrafttreten der Datenschutz-Grundverordnung (DSGVO) am 25. Mai 2018 hat die Anforderungen an die Gültigkeit der Einwilligung verschärft, die insbesondere in [Artikel 82 des Gesetzes](https://dsgvo-gesetz.de/art-82-dsgvo/) „Informatik und Freiheiten" (Umsetzung der Richtlinie 2002/58/EG „Privatsphäre und elektronische Kommunikation") beschrieben sind. Dieses sieht insbesondere die Pflicht vor, vorbehaltlich Ausnahmen, die Einwilligung der Nutzer einzuholen, bevor _Cookies_ und andere Tracker geschrieben oder gelesen werden.
+Die Datenschutz-Grundverordnung (DSGVO), die seit dem 25. Mai 2018 gilt, hat die Anforderungen an eine gültige Einwilligung verschärft, die in [Artikel 82 des französischen Gesetzes „Informatique et Libertés“](https://www.cnil.fr/fr/la-loi-informatique-et-libertes#article82) (auf Französisch) festgelegt sind. Dieser Artikel setzt die Richtlinie 2002/58/EG über den Datenschutz in der elektronischen Kommunikation („ePrivacy“) um. Außer in besonderen Fällen müssen Sie die Einwilligung der Nutzer einholen, bevor Cookies und andere Tracker geschrieben oder gelesen werden.
 
-Die Compliance der Cookie-Einwilligung kann durch ein Cookie-Einwilligungs-Widget sichergestellt werden.
+Anfang 2020 hat die CNIL [Empfehlungen zu Cookies und anderen Trackern](https://www.dastra.eu/fr/article/recommendations-CNIL-cookies-expliquees-a-votre-boss/104) veröffentlicht (Artikel auf Französisch).
+
+Die Einhaltung der Vorgaben zur Cookie-Einwilligung lässt sich mit einem Cookie-Banner sicherstellen.
 
 {% content-ref url="banner/configure.md" %}
-[implementez-un-widget-de-consentement-aux-cookies.md](banner/configure.md)
+[Das Cookie-Einwilligungsbanner einrichten](banner/configure.md)
 {% endcontent-ref %}

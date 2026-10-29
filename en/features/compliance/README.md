@@ -1,5 +1,5 @@
 ---
-description: Manage your compliance with the various frameworks in Dastra!
+description: Manage your compliance with the various frameworks in Dastra.
 ---
 
 # Compliance
@@ -8,13 +8,24 @@ The **Compliance** module of Dastra makes it possible to manage regulatory compl
 
 ***
 
-### Architecture of the Compliance module
+## Navigate the module
+
+In the menu, **Compliance** gives access to four entries:
+
+* **Projects**: the compliance projects, their phases, their audits and your tasks. See [Projects](projects/README.md).
+* **Library**: the reusable frameworks, controls, tests, risks and threats. See [Library](library/README.md).
+* **Scopes**: the organizational units covered by a project. See [Scopes](scopes.md).
+* **Statistics**: the compliance dashboard of the workspace (see below).
+
+***
+
+## Architecture of the Compliance module
 
 The module is based on a logical chain of objects, from regulatory frameworks through to compliance evidence.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Chain of objects of the module: framework, requirements, controls, risk scenarios, tests, evidence and audits"><figcaption></figcaption></figure>
 
-#### Frameworks
+### Frameworks
 
 Examples: GDPR, ISO 27701, ISO 27001, AI Act.
 
@@ -25,7 +36,7 @@ A framework:
 
 ***
 
-#### Requirements
+### Requirements
 
 Requirements represent the obligations arising from a framework.\
 Examples: access control, authorization management, logging.
@@ -38,7 +49,7 @@ Each requirement:
 
 ***
 
-#### Controls
+### Controls
 
 Controls describe **how** a requirement is applied concretely.\
 Examples: periodic access review, authorization procedure.
@@ -51,9 +62,9 @@ A control:
 
 ***
 
-#### Risk scenarios
+### Risk scenarios
 
-Risk scenarios describe the feared events.\
+Risk scenarios describe the feared events. They appear as **Risks** in the application.\
 Example: unauthorized access to sensitive data.
 
 Controls make it possible:
@@ -63,7 +74,7 @@ Controls make it possible:
 
 ***
 
-#### Tests
+### Tests
 
 Tests are used to verify the effectiveness of controls.\
 Examples: recurring access review, validation delegation.
@@ -76,7 +87,7 @@ A test:
 
 ***
 
-#### Test campaigns
+### Test campaigns
 
 Campaigns make it possible to orchestrate tests at scale:
 
@@ -86,7 +97,7 @@ Campaigns make it possible to orchestrate tests at scale:
 
 ***
 
-#### Evidence
+### Evidence
 
 Evidence demonstrates compliance.\
 Examples: policies, procedures, access review reports.
@@ -99,7 +110,7 @@ A piece of evidence:
 
 ***
 
-#### Compliance audits
+### Compliance audits
 
 Audits make it possible to assess the level of compliance:
 
@@ -141,11 +152,11 @@ Objective: **avoid duplication** and steer compliance in a cross-cutting way.
 
 ### Key relationships between objects
 
-* **Framework → Requirements**: 1 → N
-* **Requirements ↔ Controls**: N ↔ N
-* **Controls ↔ Tests**: N ↔ N
-* **Tests → Evidence**: 1 → N
-* **Controls → Risk scenarios**: N ↔ N
+* a **framework** contains several **requirements** (1 to N),
+* **requirements** and **controls**: N to N relationship,
+* **controls** and **tests**: N to N relationship,
+* a **test** is supported by several pieces of **evidence** (1 to N),
+* **controls** and **risk scenarios**: N to N relationship.
 
 A single control (e.g. access review) can thus:
 
@@ -153,4 +164,21 @@ A single control (e.g. access review) can thus:
 * satisfy an ISO 27001 requirement,
 * reduce several risk scenarios.
 
-**Explanatory diagram**
+Explanatory diagram:
+
+<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Relationships between frameworks, requirements, controls, tests, evidence and risk scenarios"><figcaption></figcaption></figure>
+
+***
+
+## Statistics
+
+**Compliance** > **Statistics** opens the **Compliance Dashboard**, which consolidates all the projects of the workspace. Filter it by **Status** (project phase), **Organizational units** and **Scopes**.
+
+The dashboard contains:
+
+* global indicators. Controls: **Total Controls**, **Passing Controls**, **Not Implemented** and **Orphan Controls** (with no associated requirement). Tests: **Total Tests**, **Passing Tests**, **Failing Tests** and **Missing Evidence**. Audits: **Total Audits**, **Completed Audits** and **Average Readiness**, with the distribution of requirements between **Compliant**, **Partially Compliant**, **Not Compliant** and **Not Applicable**;
+* **Framework Progression**: for each framework, the number of projects and the progress of controls, tests, requirements and risks;
+* **Projects by Status**: the distribution of projects by phase;
+* **Compliance by Scope**: the compliance level of each scope.
+
+<figure><img src="../../.gitbook/assets/compliance-statistics-1.png" alt="Compliance dashboard with the global indicators, the framework progression and the compliance by scope"><figcaption></figcaption></figure>

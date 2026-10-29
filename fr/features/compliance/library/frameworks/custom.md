@@ -6,7 +6,7 @@ description: >-
 
 # Création de framework personnalisé
 
-#### Introduction
+## Introduction
 
 La création d’un framework personnalisé permet de construire un référentiel de conformité **adapté au contexte spécifique de l’organisation** : politique interne, référentiel sectoriel, démarche IA, sécurité, qualité ou gouvernance.
 
@@ -17,43 +17,43 @@ Un framework personnalisé peut être :
 
 ***
 
-### Étape 1 – Création du framework
+## Étape 1 : Création du framework
 
 {% columns %}
 {% column %}
 Lors de la création d’un framework personnalisé, l’utilisateur définit :
 
-* **Le nom du framework** (ex. _Custom IA_, _PSSI-IA – Démo_)
+* **Le nom du framework** (ex. _Custom IA_, _PSSI-IA, Démo_)
 * **La langue du framework**, qui déterminera la langue par défaut des exigences et contrôles
 
 Une fois créé, le framework est ajouté à la Librairie, dans un état **brouillon**.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-create-dialog.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-dialog.png" alt="Fenêtre de création d'un framework avec le nom, la langue et le logo"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Étape 2 – Consultation et actions disponibles
+## Étape 2 : Consultation et actions disponibles
 
 Par défaut, un framework nouvellement créé est :
 
 * **vide**
 * **en lecture seule**
 
-#### Actions disponibles tant que le framework n’est pas modifié
+### Actions disponibles tant que le framework n’est pas modifié
 
 * **Exporter** : récupérer le framework au format JSON / Excel
 * **Dupliquer** : créer une copie du framework
-* **Déplacer dans la corbeille** : supprimer le framework
+* **Déplacer dans la corbeille** : retirer le framework de la bibliothèque (**Restaurer** le rétablit, **Supprimer** l’efface définitivement)
 
-👉 **Aucun ajout ou modification n’est possible tant que le framework n’est pas en mode édition.**
+**Aucun ajout ou modification n’est possible tant que le framework n’est pas en mode édition.**
 
 ***
 
-### Étape 3 – Passer en mode édition
+## Étape 3 : Passer en mode édition
 
 {% columns %}
 {% column %}
@@ -76,7 +76,7 @@ Le mode édition n'est disponible que pour une version en brouillon. Les exigenc
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-empty-library.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-empty-library.png" alt="Fiche d'un framework nouvellement créé, vide et en lecture seule"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -93,7 +93,7 @@ Cette étape permet de traduire un cadre réglementaire, normatif ou interne en 
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-create-chapter-dialog.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-chapter-dialog.png" alt="Fenêtre de création d'un chapitre"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -108,7 +108,7 @@ Dastra autorise :
 * des **chapitres racine**
 * des **sous-chapitres**
 
-👉 La profondeur est volontairement limitée à **deux niveaux maximum** afin de :
+La profondeur est volontairement limitée à **deux niveaux maximum** afin de :
 
 * garantir la lisibilité du référentiel
 * éviter des structures trop complexes
@@ -137,7 +137,7 @@ Elles constituent le lien direct entre le référentiel et les contrôles opéra
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-create-requirement-dialog.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-requirement-dialog.png" alt="Fenêtre de création d'une exigence"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -156,7 +156,7 @@ Elles constituent le lien direct entre le référentiel et les contrôles opéra
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-create-requirement-ai-reference.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-requirement-ai-reference.png" alt="Fenêtre de création d'une exigence avec la référence proposée par l'IA"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -168,7 +168,7 @@ Lors de la création d’une exigence, Dastra propose une **assistance IA** pour
 {% endcolumn %}
 {% endcolumns %}
 
-👉 Cette fonctionnalité permet :
+Cette fonctionnalité permet :
 
 * d’harmoniser les conventions de nommage
 * d’éviter les incohérences ou doublons
@@ -180,7 +180,7 @@ L’utilisateur reste libre de modifier la référence proposée.
 
 ### Organisation et gestion des exigences
 
-<figure><img src="../../../../.gitbook/assets/compliance-framework-requirement-move-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-requirement-move-menu.png" alt="Menu de déplacement d'une exigence dans l'arborescence du framework"><figcaption></figcaption></figure>
 
 Une fois créées, les exigences peuvent être :
 
@@ -202,13 +202,13 @@ Pour associer des contrôles à une exigence, deux approches sont possibles.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-associate-controls-choice.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-associate-controls-choice.png" alt="Choix entre associer des contrôles existants ou créer des contrôles avec l'IA"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-#### Option 1 – Associer des contrôles existants
+#### Option 1 : Associer des contrôles existants
 
 {% columns %}
 {% column %}
@@ -216,11 +216,11 @@ L’utilisateur peut sélectionner un ou plusieurs contrôles déjà présents d
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-associate-controls-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-associate-controls-list.png" alt="Liste des contrôles existants à associer à une exigence"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
-👉 Un même contrôle peut être associé à **plusieurs exigences**, favorisant :
+Un même contrôle peut être associé à **plusieurs exigences**, favorisant :
 
 * la mutualisation
 * la cohérence du référentiel
@@ -228,11 +228,11 @@ L’utilisateur peut sélectionner un ou plusieurs contrôles déjà présents d
 
 ***
 
-#### Option 2 – Créer ou associer des contrôles avec l’IA
+#### Option 2 : Créer ou associer des contrôles avec l’IA
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/compliance-framework-create-associate-ai-controls.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/compliance-framework-create-associate-ai-controls.png" alt="Création ou association de contrôles avec l'IA pour une exigence"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -249,7 +249,7 @@ L’IA s’appuie sur :
 {% endcolumn %}
 {% endcolumns %}
 
-👉 Les contrôles créés via l’IA peuvent inclure automatiquement :
+Les contrôles créés via l’IA peuvent inclure automatiquement :
 
 * leur description
 * leur rattachement à l’exigence

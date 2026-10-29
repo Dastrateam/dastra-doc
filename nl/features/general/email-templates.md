@@ -1,139 +1,126 @@
 ---
 description: >-
-  Leer hoe u e-mailsjablonen gebruikt en e-mails met dynamische inhoud genereert
-  inhoud om te communiceren met uw klanten of collega's
+  Leer hoe u berichtsjablonen opstelt met dynamische velden, voorwaarden en
+  lussen om met uw klanten of collega's te communiceren.
 ---
 
 # E-mailsjablonen
 
 ## Algemeen
 
-E-mailsjablonen zijn een functie van wetoefeningen, aangepaste workflows en audits.
+Berichtsjablonen zijn beschikbaar bij verzoeken van betrokkenen, taken, uitnodigingen voor vragenlijsten, uitnodigingen om een verwerkingsactiviteit of een datalek in te vullen, en workflowregels die een bericht versturen. Eenmaal opgeslagen zijn ze een snelle manier om met stakeholders te communiceren. De gegevens van het betreffende object kunnen in de tekst worden ingevoegd, met voorwaarden en lussen om meer informatie op te halen.
 
-Eenmaal opgeslagen zijn ze een snelle manier om met belanghebbenden te communiceren. De gegevensset van een object kan erin worden opgenomen en het is zelfs mogelijk om voorwaarden en lussen in te stellen om meer informatie op te halen.
+Deze pagina legt uit hoe u een sjabloon opstelt. Voor de sjabloontypen, het delen, het importeren en het exporteren, zie de pagina [Berichtsjablonen](../settings/message-templates.md).
 
 ## Gebruik
 
-Om een model te selecteren of te maken, klik je op "Selecteer of maak een model".
+Om een sjabloon te gebruiken, klikt u naast het veld voor het opstellen van het bericht op **Selecteer een sjabloon**.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Het sjabloon selecteren in een rechter oefening</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-email-templates-1.png" alt="Berichtveld van een verzoek van een betrokkene met de knop Selecteer een sjabloon"><figcaption><p>De knop Selecteer een sjabloon bij een verzoek van een betrokkene</p></figcaption></figure>
 
-Je kunt vervolgens een bestaand sjabloon zoeken in de lijst of de zoekfunctie, of kijken naar de sjablonen die beschikbaar zijn in de werkruimten waartoe je toegang hebt of de sjablonen die door Dastra zijn gemaakt.
+Het paneel **Selectie van het model** opent. Zoek in de lijst een sjabloon, open de sjablonen onder **Gedeeld** of **Privé** van elk type, of kies een andere werkruimte waartoe u toegang hebt. Klik naast het gewenste sjabloon op **Selecteer**.
 
-Als er geen sjabloon voor u geschikt is, klikt u op "Sjabloon maken".
+<figure><img src="../../.gitbook/assets/general-email-templates-2.png" alt="Paneel voor het selecteren van een sjabloon met de zoekfunctie, de tabbladen per type en de knop Maak een sjabloon"><figcaption><p>Het paneel om een sjabloon te selecteren</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Een sjabloon selecteren of maken</p></figcaption></figure>
+Past geen enkel sjabloon, klik dan op **Maak een sjabloon**. Het aanmaakvenster bevat:
 
-De interface voor het maken van sjablonen bestaat uit 4 elementen&#x20;
+* de naam van het sjabloon, zodat u het later terugvindt;
+* de **Body van de template**, het invoerveld;
+* de optie om het sjabloon te delen met alle gebruikers van de werkruimte;
+* het tabblad **Overzicht**, dat de weergave van het bericht in real time toont;
+* het tabblad **Input Data**, dat de gegevens toont van het object waarop het sjabloon betrekking heeft.
 
-* De naam (zodat de sjabloon later kan worden gevonden)
-* Het invoergebied (de body van het sjabloon, groen omkaderd)
-* Een voorbeeldtabblad: hiermee kunt u zien hoe de e-mail er in realtime uit komt te zien
-* Een tabblad Invoergegevens: hiermee kunt u de gegevens bekijken voor het object waarop de sjabloon betrekking heeft.
+De tabbladen **Overzicht** en **Input Data** verschijnen alleen als u het sjabloon aanmaakt vanaf de plaats waar u het bericht schrijft, niet vanuit de instellingen.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (3).png" alt=""><figcaption><p>Interface voor het maken van sjablonen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-email-templates-3.png" alt="Aanmaakvenster van een sjabloon met de naam, de body, het overzicht en het tabblad Input Data"><figcaption><p>Het aanmaakvenster van een sjabloon</p></figcaption></figure>
 
-## De sjabloon aanpassen
+## Het sjabloon aanpassen
 
-Je kunt de sjabloon bewerken en naar wens stijlen toepassen, afbeeldingen of tabellen invoegen. Het resultaat zie je op het tabblad Voorbeeld. Als je op "Aangepaste velden" klikt, krijg je toegang tot een lijst met velden die je kunt invoegen. De waarde van het veld wordt ingevoegd ter hoogte van de muiscursor. Natuurlijk kun je de tekst opmaken zoals je wilt.
+In de body van het sjabloon past u stijlen toe en voegt u afbeeldingen of tabellen in. Het resultaat verschijnt in het tabblad **Overzicht**.
 
-<figure><img src="../../.gitbook/assets/select-field.gif" alt=""><figcaption><p>Gebruik aangepaste velden</p></figcaption></figure>
+Om een gegeven van het object in te voegen, klikt u op het pictogram met accolades in de werkbalk (**Dynamische velden invoegen**) en kiest u een veld in de lijst. De waarde van het veld wordt op de cursor ingevoegd.
 
-## Verder gaan met aangepaste velden
+<figure><img src="../../.gitbook/assets/general-email-templates-4.png" alt="Lijst met dynamische velden die vanuit de werkbalk van de sjabloonbewerker is geopend"><figcaption><p>Een dynamisch veld invoegen</p></figcaption></figure>
 
-Zoals je in de bovenstaande animatie kunt zien, zijn de velden met dubbele accolades "variabelen". Met andere woorden, ze worden vervangen door de waarden van het overeenkomstige object (in dit geval een verzoek voor het uitoefenen van rechten).
+## Dynamische velden
 
-### Nieuwe aangepaste velden maken van invoergegevens
+Velden tussen dubbele accolades zijn variabelen: ze worden vervangen door de waarden van het bijbehorende object (hier een verzoek van een betrokkene).
 
-Door op het tabblad 'Invoergegevens' te klikken, krijg je toegang tot de lijst met eigenschappen van het gekoppelde object. In het onderstaande voorbeeld besluit ik het bericht weer te geven dat gekoppeld is aan de aanvraag:&#x20;
+### Een veld uit de Input Data gebruiken
 
-* Ik zoek het veld in "Invoergegevens".
-* Ik voer de naam van het veld in de body van het bericht in met de syntax {{message}}.
-* Ik controleer het resultaat met behulp van het tabblad "Voorbeeld".
+Het tabblad **Input Data** toont de eigenschappen van het gekoppelde object. Om bijvoorbeeld het bericht van het verzoek weer te geven:
 
-<figure><img src="../../.gitbook/assets/select-field-messsage.gif" alt=""><figcaption><p>Een aangepast veld maken van invoergegevens</p></figcaption></figure>
+1. Zoek het veld in het tabblad **Input Data**.
+2. Voer de naam ervan in de body van het sjabloon in met de syntaxis `{{message}}`.
+3. Controleer het resultaat in het tabblad **Overzicht**.
 
-Dat is het! Je kunt nu je eigen aangepaste velden maken. Maar dat is nog niet alles! Je kunt ook nog verder gaan door lussen en voorwaarden te maken en indelingen toe te passen om datums leesbaarder te maken!
+U kunt verder gaan met lussen, voorwaarden en datumnotaties.
 
 ### Voorwaarden
 
-Je kunt ook voorwaardelijke blokken maken die alleen onder bepaalde voorwaarden worden weergegeven.
+Een voorwaardelijk blok wordt alleen onder bepaalde voorwaarden weergegeven. Het begint met een tag `if` en eindigt met een tag `endif`. Bijvoorbeeld:
 
-Om dit te doen, moet je het voorwaardelijke labelsysteem gebruiken dat begint met {% if qqch == true %\} en eindigt met {% endif %\}.
+```liquid
+{% if attachments != blank %}
+  You have an attachment
+{% endif %}
+```
 
-&#x20;Dus ik kan de volgende voorwaarde schrijven:&#x20;
-
-> \{% if attachments != blank %\}
->
-> Je hebt een bijlage
->
-> \{% endif %\}
-
-Het blok wordt alleen weergegeven als er een bijlage aanwezig is in het verzoek.
+Het blok wordt alleen weergegeven als het verzoek een bijlage bevat.
 
 ### Lussen
 
-Lussen werken op dezelfde manier, behalve dat we deze keer een variabele intern in de lus genereren.
+Lussen werken op dezelfde manier, met een variabele die binnen de lus blijft:
 
-Het werkt als volgt:&#x20;
-
-```vloeistof
-{% raw %}
+```liquid
 {% for purpose in purposes %}
   {{ purpose }}
 {% endfor %}
-{% endraw %}i
 ```
 
-In het bovenstaande voorbeeld verklaar ik dat ik door de lijst "purposes" wil lussen en de variabele "_purposes_" wil toewijzen aan elk item dat ik direct weergeef.
+In dit voorbeeld doorloopt de lus de lijst `purposes` en toont elk item in de variabele `purpose`.
 
 ### Datumnotatie
 
-Je zult snel zien dat de datums die je uit Invoergegevens haalt, niet presenteerbaar zijn zoals ze zijn. Geen probleem, je kunt een formaat aan de datum toekennen.
+De datums van de Input Data zijn zo niet presentabel. Pas er een notatie op toe:
 
-> \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}}
->
-> Wordt omgezet in 15-03-2023 om 15:40
+```liquid
+{{ dateCreation | date: "%d-%m-%Y at %H:%M" }}
+```
 
-### Een complexer voorbeeld
+Dit sjabloon geeft bijvoorbeeld 15-03-2023 at 15:40.
 
-De onderstaande tekst gebruikt alle bovenstaande elementen
+### Een completer voorbeeld
 
-> Goedemorgen,
->
-> Wij hebben uw verzoek ontvangen om uw rechten uit te oefenen op \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}} betreffende de heer of mevrouw \{{givenName\}} \{{familyName\}}.
->
-> Het verzoek heeft betrekking op de volgende doeleinden:
->
-> \{% for purpose in purposes %\}
->
-> * \{{ purpose \}}
->
-> \{% endfor %\}
->
-> \{% if attachments != blank %\}
->
->
-> Wij hebben de volgende documenten ontvangen:
->
-> \{% for attachment in attachments %\}
->
-> * \{{ attachment.fileName \}}
->
-> \{% endfor %\}
->
-> \{% endif %\}
->
-> Ik zal u op de hoogte houden van de voortgang van uw verzoek.
->
-> Hoogachtend
->
-> \{{operator.displayName\}}
+De onderstaande tekst gebruikt alle bovenstaande elementen:
 
-Het verzoek dat momenteel in Verwerking is, wordt als volgt omgezet:&#x20;
+```liquid
+Hello,
 
-<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>Een voorbeeld van een compleet sjabloon</p></figcaption></figure>
+We have received your data subject request on {{ dateCreation | date: "%d-%m-%Y at %H:%M" }} concerning {{ givenName }} {{ familyName }}.
 
-### Hebt u nog vereisten?
+The request relates to the following purposes:
+{% for purpose in purposes %}
+* {{ purpose }}
+{% endfor %}
 
-U kunt de documentatie raadplegen op het volgende adres: [https://shopify.github.io/liquid/](https://shopify.github.io/liquid/)
+{% if attachments != blank %}
+We have received the following attachments:
+{% for attachment in attachments %}
+* {{ attachment.fileName }}
+{% endfor %}
+{% endif %}
+
+We will keep you informed of the progress of your request.
+
+Kind regards,
+{{ operator.displayName }}
+```
+
+Voor het verzoek dat op dat moment wordt behandeld, wordt het bericht als volgt omgezet:
+
+<figure><img src="../../.gitbook/assets/general-email-templates-5.png" alt="Overzicht van het bericht dat uit het volledige sjabloon is gegenereerd voor een verzoek van een betrokkene"><figcaption><p>De weergave van een volledig sjabloon</p></figcaption></figure>
+
+## Verder gaan
+
+Sjablonen gebruiken de Liquid-syntaxis. Zie de [Liquid-documentatie](https://shopify.github.io/liquid/) voor de lijst met tags en filters.

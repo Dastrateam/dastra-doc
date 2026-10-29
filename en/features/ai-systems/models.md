@@ -1,44 +1,107 @@
-# AI Models repository
+---
+description: >-
+  Build your organization's repository of AI models, import it or generate it
+  with the AI assistant, then link the models to your AI systems.
+---
 
-For each AI system you register, you'll need to enter the AI model(s) used.
+# AI models repository
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-174553.png" alt=""><figcaption><p>AI Models repository</p></figcaption></figure>
+For each AI system you register, you enter the AI model or models it uses. You describe each model once, in a repository, then link it to the systems that use it.
 
 ## Definition
 
-An artificial intelligence model can be defined as a computer program designed to perform specific tasks using machine learning and data analysis techniques. Here's a more detailed definition:
+An artificial intelligence model is a computer program designed to perform specific tasks using machine learning and data analysis techniques.
 
-* **Foundations** : An AI model is based on specific algorithms and architectures (such as neural networks for deep learning) that enable learning from data.
-* **Learning**: This is trained by processing large data sets to identify patterns and relationships.This enables the model to make predictions or generate content based on the new data it receives.
-* **Functionality**: This is the purpose for which the model is used.For example: image generation for the MidJourney model.
-* **Use**: These models are deployed in a wide range of applications, from chatbots and virtual assistants to data analysis and content creation, providing advanced, automated solutions in a variety of fields.
+* Foundations: an AI model is based on specific algorithms and architectures, such as the neural networks of deep learning, which let it learn from data.
+* Learning: the model is trained on large data sets to identify patterns and relationships. It can then make predictions or generate content from new data.
+* Functionality: this is the purpose for which the model is used, for example image generation for the Midjourney model.
+* Use: these models are deployed in a wide range of applications, from chatbots and virtual assistants to data analysis and content creation.
 
-## Create your AI models repository with Dastra
+## Open the repository
 
-To create a repository, go to the "AI Models" tab.
+Click **AI governance** in the sidebar, then **AI models**.
 
-Then click on the "Create an AI model" button. A window opens in which you can enter the required information.
+<figure><img src="../../.gitbook/assets/ai-systems-models-1.png" alt="List of AI models with the Creating a new AI model button and its menu"><figcaption><p>The AI models repository</p></figcaption></figure>
 
-Don't be afraid to go into great detail in the description section, adding the features and information you have on the model.
+The **Creating a new AI model** button opens the creation window. Its menu also offers:
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-175214.png" alt=""><figcaption><p>Register a new AI Model</p></figcaption></figure>
+* **Create from library...**: choose a model from the Dastra library;
+* **Import**: import a list of models from a file, see below;
+* **Export**: export the list as CSV, Excel, JSON or Markdown.
 
-You will also need to select its training type. The learning type of an AI model refers to the method by which the model is trained to perform its tasks. Each type is adapted to specific applications and influences the way the model generalizes the knowledge acquired. There are 4 of them, and you'll find a definition next to each one to help you choose.
+## Create an AI model
 
-### Generate an AI model record with the AI assistant
+Click **Creating a new AI model**. The window offers three options:
 
-From the AI models list, you can **automatically generate an AI model record** using the AI assistant. This feature creates a complete record in just a few seconds from a simple model name or description — the assistant uses web browsing to look up and fill in the relevant information (architecture, training type, provider, capabilities, etc.).
+* **Generate with AI**: the AI assistant fills in the record from a name or a description, see the next section;
+* **Built-in template**: create the record from our library or from another workspace;
+* **Personalized**: enter the record yourself.
 
-To use it, click **"Generate with AI"** from the model creation dialog, enter the model name or a brief description, and confirm. Review the generated record before saving, as AI-generated content may contain errors.
+<figure><img src="../../.gitbook/assets/ai-systems-models-2.png" alt="Creating a new AI model window with the three options Generate with AI, Built-in template and Personalized"><figcaption><p>The three options to create an AI model</p></figcaption></figure>
+
+With **Personalized**, enter the model name, then complete the record in the **AI model** panel:
+
+| Field | Content |
+| --- | --- |
+| **Model name** | Required, 120 characters at most. Example: GPT 4, Mistral AI, MidJourney. |
+| **Version** | The exact version of the model, 30 characters at most. Example: gpt-4o-2024-05-13. |
+| **Reference** | Your own reference for the model, 120 characters at most. |
+| **Publisher** | The publisher of the model, chosen among the stakeholders of your workspace. You can create one from the list. |
+| **Tags** | The tags that classify the model. |
+| **Describe the AI model** | The description, 3,000 characters at most. Detail the features and the information you have. |
+| **Learning type of the AI** | The method used to train the model, see below. |
+| **Is this model a General Purpose AI ?** | Yes or no. A general purpose AI (GPAI) model is versatile and can be integrated into many downstream systems. A tooltip recalls the AI Act definition. |
+| **Does this model present a systemic risk?** | Yes or no. The question only appears if the model is general purpose. A tooltip recalls the definition of systemic risk. |
+| **Documentation** | A text editor for the documentation of the model. |
+
+<figure><img src="../../.gitbook/assets/ai-systems-models-3.png" alt="AI model panel with the name, version, publisher, learning type fields and the questions on general purpose and systemic risk"><figcaption><p>The record of an AI model</p></figcaption></figure>
+
+The learning type describes how the model was trained to perform its tasks. It influences how the model generalizes what it has learned. Dastra offers four, each with its definition in the list:
+
+* Supervised Learning: learning with labeled data to make predictions;
+* Unsupervised Learning: learning without labeled data to find patterns;
+* Reinforcement Learning: learning through rewards and punishments to optimize actions;
+* Transfer Learning: using knowledge from one domain to improve learning in another.
+
+### Generate the record with the AI assistant
+
+The **Generate with AI** option of the creation window generates an AI model record from a simple name or description. It is available if your plan includes the matching AI features. The assistant uses web browsing to look up and fill in the relevant information.
+
+1. Click **Creating a new AI model**, then **Generate with AI**.
+2. Enter the model name or a short description, for example "GPT-4o by OpenAI".
+3. Review and complete the generated record before you validate it.
+
+The generated content is a suggestion. Check and complete the information before you validate, as AI-generated content may contain errors.
 
 <figure><img src="../../.gitbook/assets/ai-systems-create-generate-form.png" alt="AI model generation window with input field, language selector and samples"><figcaption><p>Describe the AI model to generate (name, publisher...): web browsing is used to complete the information</p></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/ai-system-generate-result.png" alt="AI model record generated by the assistant, to review before validation"><figcaption><p>The generated record should be reviewed before validation</p></figcaption></figure>
 
+### Import and export models
 
-## Link between AI Systems et Models
+To import several models, open the menu of the **Creating a new AI model** button and click **Import**. The procedure is the same as in the other modules: see [Import your data (Excel, Csv, JSON)](../general/import.md). The file can contain the following columns:
 
-To link an AI system to a model, go to the AI system concerned. In the second section, entitled "AI Models", you'll find a selector from which you can choose one or more models from those you have saved in your model repository.
+| Column | Description |
+| --- | --- |
+| `Label` | Model name, required. |
+| `Ref` | Your reference for the model. |
+| `Description` | Description of the model. |
+| `VersionName` | Version of the model. |
+| `LearningType` | `SupervisedLearning`, `UnSupervisedLearning`, `ReinforcedLearning` or `TransferLearning`. |
+| `IsGeneralPurposeAi` | `true` if the model is general purpose, otherwise `false`. |
+| `SystemicRisk` | `true` if the model presents a systemic risk, otherwise `false`. |
+| `DocumentationHtml` | Documentation of the model, as HTML. |
 
-elect the models concerned, then fill in the "description of use" field. This explains how the model is used in the AI system concerned.
+The **Export** action produces a CSV, Excel, JSON or Markdown file of the list.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-175356.png" alt=""><figcaption><p>Link an AI system to a model</p></figcaption></figure>
+## Link a model to an AI system
+
+Open the record of the AI system concerned. The **AI models** step is the third one, after **General** and **Responsibility**.
+
+1. In the **Select AI models** selector, choose one or more models from your repository. You can also create one from the selector.
+2. For each model, fill in the **Usage description**. This field explains how the model is used in this AI system.
+3. Save the record.
+
+An alert icon flags the models that present a systemic risk.
+
+<figure><img src="../../.gitbook/assets/ai-systems-models-4.png" alt="AI models step of an AI system with one model selected and its usage description"><figcaption><p>Linking a model to an AI system</p></figcaption></figure>

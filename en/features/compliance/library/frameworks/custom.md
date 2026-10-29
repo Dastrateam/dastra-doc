@@ -6,7 +6,7 @@ description: >-
 
 # Create a custom framework
 
-#### Introduction
+## Introduction
 
 Creating a custom framework makes it possible to build a compliance framework **adapted to the organization's specific context**: internal policy, sector-specific framework, AI initiative, security, quality or governance.
 
@@ -17,43 +17,43 @@ A custom framework can be:
 
 ***
 
-### Step 1 – Creating the framework
+## Step 1: Creating the framework
 
 {% columns %}
 {% column %}
 When creating a custom framework, the user defines:
 
-* **The framework name** (e.g. _Custom AI_, _AI ISSP – Demo_)
+* **The framework name** (e.g. _Custom AI_, _AI ISSP, Demo_)
 * **The framework language**, which will determine the default language of the requirements and controls
 
 Once created, the framework is added to the Library, in a **draft** state.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-448.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-448.png" alt="Framework creation window with the name, the language and the logo"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Step 2 – Viewing and available actions
+## Step 2: Viewing and available actions
 
 By default, a newly created framework is:
 
 * **empty**
 * **read-only**
 
-#### Actions available as long as the framework has not been modified
+### Actions available as long as the framework has not been modified
 
 * **Export**: retrieve the framework in JSON / Excel format
-* **Duplicate**: create a copy of the framework
-* **Move to trash**: delete the framework
+* **Create a copy**: duplicate the framework
+* **Move to recycle bin**: remove the framework from the library (**Restore** brings it back, **Delete** removes it permanently)
 
-👉 **No addition or modification is possible until the framework is in edit mode.**
+**No addition or modification is possible until the framework is in edit mode.**
 
 ***
 
-### Step 3 – Switching to edit mode
+## Step 3: Switching to edit mode
 
 {% columns %}
 {% column %}
@@ -78,7 +78,7 @@ Edit mode is only available for a draft version. The requirements of a published
 {% column %}
 
 
-<figure><img src="../../../../.gitbook/assets/image-449.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-449.png" alt="Page of a newly created framework, empty and read-only"><figcaption></figcaption></figure>
 
 
 {% endcolumn %}
@@ -97,7 +97,7 @@ This step makes it possible to translate a regulatory, normative or internal fra
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-450.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-450.png" alt="Chapter creation window"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -112,7 +112,7 @@ Dastra allows:
 * **root chapters**
 * **sub-chapters**
 
-👉 The depth is intentionally limited to a **maximum of two levels** in order to:
+The depth is intentionally limited to a **maximum of two levels** in order to:
 
 * guarantee the readability of the framework
 * avoid overly complex structures
@@ -143,7 +143,7 @@ They constitute the direct link between the framework and the operational contro
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-451.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-451.png" alt="Requirement creation window"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -162,7 +162,7 @@ They constitute the direct link between the framework and the operational contro
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-452.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-452.png" alt="Requirement creation window with the reference suggested by the AI"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -176,7 +176,7 @@ When creating a requirement, Dastra offers **AI assistance** to automatically ge
 {% endcolumn %}
 {% endcolumns %}
 
-👉 This feature makes it possible:
+This feature makes it possible:
 
 * to harmonize naming conventions
 * to avoid inconsistencies or duplicates
@@ -188,7 +188,7 @@ The user remains free to modify the proposed reference.
 
 ### Organizing and managing requirements
 
-<figure><img src="../../../../.gitbook/assets/image-476.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-476.png" alt="Menu to move a requirement in the framework tree"><figcaption></figcaption></figure>
 
 Once created, requirements can be:
 
@@ -210,13 +210,13 @@ To associate controls with a requirement, two approaches are possible.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-453.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-453.png" alt="Choice between associating existing controls or creating controls with the AI"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-#### Option 1 – Associate existing controls
+#### Option 1: Associate existing controls
 
 {% columns %}
 {% column %}
@@ -228,11 +228,11 @@ The user can select one or more controls already present in the Library and atta
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-454.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-454.png" alt="List of existing controls to associate with a requirement"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
-👉 A single control can be associated with **several requirements**, promoting:
+A single control can be associated with **several requirements**, promoting:
 
 * sharing
 * consistency of the framework
@@ -240,11 +240,11 @@ The user can select one or more controls already present in the Library and atta
 
 ***
 
-#### Option 2 – Create or associate controls with AI
+#### Option 2: Create or associate controls with AI
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-455.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-455.png" alt="Creating or associating controls with the AI for a requirement"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -261,7 +261,7 @@ The AI relies on:
 {% endcolumn %}
 {% endcolumns %}
 
-👉 Controls created via AI can automatically include:
+Controls created via AI can automatically include:
 
 * their description
 * their attachment to the requirement

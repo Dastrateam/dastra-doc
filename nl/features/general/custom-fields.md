@@ -1,116 +1,114 @@
 ---
-beschrijving: Dastra geeft u oneindig veel mogelijkheden om uw formulieren aan te passen
+description: >-
+  Voeg de velden die specifiek zijn voor uw activiteit toe aan uw formulieren
+  met aangepaste velden: veldtypen, opties, gebruik en API.
 ---
 
 # Aangepaste velden
 
-{% hint style="warning" %}
-Deze functie is nog in bèta. Er kunnen nog enkele instabiliteiten zijn.
-{% endhint %}
+## Wanneer u aangepaste velden gebruikt
 
-{% embed url="https://www.youtube-nocookie.com/embed/mDyJD-mnnL0" %}
-Hoe aangepaste velden gebruiken in Dastra
-{% endembed %}
+Sommige informatie die specifiek is voor uw sector, zit niet in de standaardvelden van het verwerkingsregister, de verzoeken van betrokkenen, de taken enzovoort. Met aangepaste velden maakt u uw eigen formuliervelden aan om de gegevens die u invoert aan te vullen.
 
-## Wanneer moeten aangepaste velden gebruikt worden?
+Dit is een voorbeeld van de configuratie van velden voor een stakeholder:
 
-Het is mogelijk dat bepaalde informatie die specifiek is voor uw sector niet aanwezig is in de standaardvelden van het Verwerkingsregister, de uitoefening van rechten, taken, enz.
+<figure><img src="../../.gitbook/assets/general-custom-fields-1.png" alt="Pagina Aangepaste velden van de stakeholder met een veldgroep en de bijbehorende velden"><figcaption><p>Veldconfiguratie van een stakeholder</p></figcaption></figure>
 
-Met Dastra kunt u aangepaste formuliervelden maken die u eenvoudig kunt toevoegen om de ingevoerde gegevens te verrijken.
+En dit is het resultaat in het formulier:
 
-Hier is een voorbeeld van een veldconfiguratie voor de acteur:
-
-<figure><img src="../../.gitbook/assets/image (2) (1) (3) (1) (1).png" alt=""><figcaption><p>Veldconfiguratie</p></figcaption></figure>
-
-En hier is het resultaat in het formulier:
-
-<figure><img src="../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-2.png" alt="Formulier van een stakeholder met de groep aangepaste velden"><figcaption><p>De aangepaste velden in het formulier van een stakeholder</p></figcaption></figure>
 
 ## Betrokken functies
 
-{% hint style="info" %}
-Let op! Niet alle functies worden beïnvloed door aangepaste velden
-{% endhint %}
+Aangepaste velden zijn niet in elke module beschikbaar. U kunt de volgende formulieren aanpassen:
 
-Je kunt de volgende formulieren aanpassen:
-
-* [Verwerking](../ropa/README.md)
-* [Rechten van betrokkenen](../requests/README.md)
-* [Taken](../tasks/create.md)
+* [Verwerkingsactiviteiten](../ropa/README.md)
+* [Verzoeken van betrokkenen](../requests/README.md)
+* [Taken](../tasks/README.md)
 * [Activa](../ropa/activity/assets.md)
-* [Actoren](../mapping/repositories/README.md)
-* Metingen
-* Gegevenssets
+* [Stakeholders](../ropa/activity/stakeholders.md)
+* [Beveiligingsmaatregelen](../ropa/activity/security.md)
+* [Datasets](../ropa/activity/datasets.md)
 * Gegevensvelden
-* [Inbreuken](../../gdpr/concepts/breaches.md)
+* [Datalekken](../incidents/README.md)
 * [Risicobeoordelingen](../risks/attach-to-processing.md)
+* [AI-systemen](../ai-systems/README.md)
+* [Contracten en beleidslijnen](../contracts/README.md)
+* [Controlepunten](../risks/process/monitor.md)
 
-{% hint style="danger" %}
-#### Beperkingen op het aantal velden
-
-Het aantal aangepaste velden is beperkt, afhankelijk van het abonnement dat u gebruikt. Raadpleeg de prijspagina van de applicatie (https://www.dastra.eu/en/pricing) voor meer informatie over dit onderwerp.
+{% hint style="warning" %}
+Het aantal velden is beperkt. Het aantal aangepaste velden hangt af van het abonnement van uw organisatie. Op de configuratiepagina staat een quota-indicator. Zie voor meer informatie de [pagina met de tarieven](https://www.dastra.eu/en/pricing).
 {% endhint %}
 
-## Beschikbare veldtypes
+## Beschikbare veldtypen
 
-Dastra biedt verschillende soorten aangepaste velden
+Dastra biedt de volgende veldtypen:
 
-* Eenvoudige tekst
-* Lange tekst
-* Rijke tekst
-* Geheel getal
-* Decimaal getal
-* Datum en tijd
-* Datum en tijd
-* Aankruisvakje (meerdere antwoorden) (**niet filtreerbaar**)
-* Aankruisvakje (één antwoord)
-* Eenvoudige selector
-* Meervoudige selector
-* Aankruisvakje (Ja/Nee)
+| Type | Gebruik |
+| --- | --- |
+| Tekst | Eén regel tekst |
+| Tekstzone | Tekst op meerdere regels |
+| Opgemaakte tekst | Tekst met opmaak |
+| Aantal (geheel getal) | Een getal zonder decimalen |
+| Aantal (decimaal) | Een getal met decimalen |
+| Datum | Een datum |
+| Datum en tijd | Een datum en een tijdstip |
+| Selectievakje | Meerdere antwoorden mogelijk uit een lijst met keuzes |
+| Radio | Eén enkel antwoord uit een lijst met keuzes |
+| Eenvoudige selector | Eén waarde gekozen in een keuzelijst |
+| Meervoudige selector | Meerdere waarden gekozen in een keuzelijst |
+| Booleaans | Een antwoord Ja of Nee |
 
 ## Aangepaste velden gebruiken
 
-Je kunt :
+Eenmaal aangemaakt werken aangepaste velden zoals de standaardvelden:
 
-* Aangepaste veldgegevens weergeven en wijzigen in de formulieren van elke module.
-* Aangepaste velden kunnen worden weergegeven in alle weergavetabellen van de toepassing. Klik op de knop Instellingen tabelkolommen om ze weer te geven.
-* Aangepaste velden zijn **aanwezig in alle Excel** data-exports. Voor meer informatie over exports, [raadpleeg de pagina over exports](../editer-le-registre/export-import-le-registre.md)
-* Aangepaste velden kunnen optioneel worden opgenomen in HTML-, Word- en PDF-exports (door het vakje "Exporteerbaar in rapporten" aan te vinken bij het veld in kwestie).
-* Met uitzondering van meervoudige antwoordvelden\*\*, kunnen alle aangepaste velden gefilterd worden met behulp van het \[geavanceerde filters] systeem (geavanceerde-filters.md).
-* Aangepaste velden kunnen massaal worden bijgewerkt in gegevenstabellen.
-* Aangepaste velden kunnen worden geïmporteerd via platte bestanden \[met behulp van het importsysteem] (import-uw-gegevens-excel-csv.md)
-* Aangepaste velden zijn **toegankelijk en aanpasbaar via alle API's**. Gebruik hiervoor de variabelenaam die aan elke kolom is toegewezen. [Zie de sectie over het wijzigen van aangepaste velden via API](custom-fields.md#manipulate-custom-fields-in-api).
+* Ze worden weergegeven en bewerkt in de formulieren van elke module.
+* Ze kunnen in alle tabellen van de toepassing worden weergegeven: klik op de knop **Kolommen aanpassen** van de tabel. Standaard zijn ze verborgen.
+* Ze zijn aanwezig in alle Excel-exports van gegevens. Zie voor meer informatie over exports [de pagina over exports](../ropa/export-import.md).
+* Ze zijn aanwezig in PDF- en Word-rapporten wanneer bij het veld **Inbegrepen in PDF- of Word-rapporten?** is aangevinkt (standaard aangevinkt).
+* Ze kunnen worden gefilterd met de [geavanceerde filters](filters.md). Velden van het type **Selectievakje** en **Meervoudige selector** kunnen echter niet worden gebruikt om een lijst te sorteren.
+* Ze kunnen in gegevenstabellen in bulk worden bijgewerkt.
+* Ze kunnen met het [importsysteem](import.md) uit platte bestanden worden geïmporteerd.
+* Ze zijn toegankelijk en bewerkbaar via alle API's, met de variabelenaam die aan het veld is toegekend. Zie [Aangepaste velden in API's gebruiken](custom-fields.md#aangepaste-velden-in-apis-gebruiken).
 
 ## Aangepaste velden instellen
 
-* Ga naar uw **Workspace**.
-* Klik links op het menu **Workspace-instellingen**.
-* Klik op het **Aangepaste velden** menu
-* Kies de module waarin je een aangepast veld wilt toevoegen.
-* Velden moeten in groepen worden gemaakt. Deze groepen kunnen op een bepaalde manier in het formulier worden geplaatst Klik op "**Een veldgroep toevoegen**".
+1. Klik in de zijbalk op **Instellingen voor werkruimte** en daarna op **Aangepaste velden**.
+2. Kies in de lijst links de module waaraan u een aangepast veld wilt toevoegen.
+3. Velden worden in groepen aangemaakt. Klik op **Een veldtype maken**.
+4. Vul het label van de groep in (het veld **Tekst**) en de **Locatie in het formulier**. Bij sommige modules, zoals de verwerkingsactiviteit, kiest u de stap van het formulier waarin de groep wordt weergegeven.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-3.png" alt="Venster voor het aanmaken van een groep velden met het label en de positie in het formulier"><figcaption><p>Een veldgroep aanmaken</p></figcaption></figure>
 
-* **Vul de naam en locatie** in de gewenste vorm in
+5. Sleep nadat de groep is aangemaakt een veldtype uit de lijst **Aangepaste velden** naar de groep. Het veldvenster opent.
+6. Vul de opties van het veld in (zie hieronder) en sla op.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-4.png" alt="Venster voor het aanmaken van een aangepast veld met de bijbehorende opties"><figcaption><p>De opties van een aangepast veld</p></figcaption></figure>
 
-Voor sommige elementen kun je de gewenste locatie in het formulier definiëren!
+U herschikt velden, of verplaatst ze van de ene groep naar de andere, door te slepen. Een groep kan pas worden verwijderd als ze geen velden meer bevat. Een verwijderd veld gaat naar de prullenbak: schakel **Bekijk prullenbak** in om het te herstellen.
 
-* Zodra de groep is gemaakt, kun je de veldtypen\*\* die je wilt instellen \*\*slepen en neerzetten!
+### Veldopties
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2) (3).png" alt=""><figcaption></figcaption></figure>
+| Optie | Beschrijving |
+| --- | --- |
+| **Tekst** (label van het aangepaste veld) | De naam van het veld zoals die in formulieren staat. Verplicht. |
+| **Naam van de variabele (slug)** | De identificatie van het veld voor API's en imports. Ze wordt voorgesteld op basis van het label en kan niet meer worden gewijzigd nadat het veld is aangemaakt. |
+| **Tooltip-tekst** | Een hulptekst naast het veld. |
+| **Verplicht veld** | Maakt de invoer verplicht. |
+| **Inbegrepen in PDF- of Word-rapporten?** | Voegt het veld toe aan de gegenereerde rapporten. Standaard aangevinkt. |
+| **Validatieregel** | Voor tekstvelden: controleert of de invoer een syntaxis volgt (e-mail, URL) of een **Aangepaste reguliere expressie (Javascript-formaat)**. |
+| **Minimale grootte** en **Maximale grootte** | Lengte van de invoer voor tekstvelden. |
+| **Minimumwaarde** en **Maximale waarde** | Grenzen voor numerieke velden. |
+| **Antwoordkeuze** | Voor types met een lijst met keuzes: één rij per keuze, met een kleur. Met **Voeg een mogelijke keuze toe** voegt u een rij toe; als u tekst plakt met één optie per regel, wordt er per regel een antwoord aangemaakt. |
 
-Vul alle informatie in!
+Het label en de variabelenaam van een veld moeten binnen een module uniek zijn.
 
-* Klik op Opslaan en dat is het! Je eerste persoonlijke gegevensveld is klaar!
-* Je kunt slepen en neerzetten om de volgorde van de velden aan te passen.
+## Aangepaste velden in API's gebruiken
 
-## Omgaan met aangepaste velden in API's
+Met Dastra haalt u via de [REST API](../../api/configuration.md) alle waarden op van entiteiten die aangepaste velden bevatten, en wijzigt of maakt u ze aan.
 
-Met Dastra kun je via de [API Rest](../../api/configuration.md) alle waarden van entiteiten met aangepaste velden ophalen, wijzigen en aanmaken.
-
-Een "**customFields**" eigenschap zal beschikbaar zijn in alle entiteiten die u ophaalt in get in Dastra.c
+Een eigenschap `customFields` is aanwezig in elke entiteit die u met een `GET` ophaalt:
 
 ```json
  {
@@ -118,25 +116,19 @@ Een "**customFields**" eigenschap zal beschikbaar zijn in alle entiteiten die u 
    "label": "Test asset",
    etc...
    "customFields": {
-     "dpo_name": "jean-marc le dpo",
-     "dpo_email": "dpo@github.com",
-     "dpo_habilitations": ["Expert", "Consulting", "Data Mapping"],
+     "dpo_name":"jean-marc le dpo",
+     "dpo_email":"dpo@github.com",
+     "dpo_habilitations": ["Expert","Consulting","Data Mapping"],
      "has_large_dataset":false,
      etc...
    }
  }
 ```
 
-Als je deze eigenschap wilt wijzigen, post (POST) of wijzig (PUT) je gewoon het element en werk je de elementen in de verzameling bij.
-
-Om de namen van aangepaste variabelen te verzamelen, moet je naar de configuratiepagina voor aangepaste velden gaan.
+Om deze eigenschap te wijzigen, verstuurt u het element met `POST` of `PUT` en werkt u de elementen van de verzameling bij. De te gebruiken variabelenamen staan op de configuratiepagina voor aangepaste velden.
 
 {% hint style="info" %}
-Houd er rekening mee dat alle **aangepaste velden worden gevalideerd door de server**. Als een colonen niet aanwezig is in de configuratie, wordt het automatisch verwijderd.
+Alle aangepaste velden worden door de server gevalideerd. Als een kolom niet in de configuratie voorkomt, wordt ze automatisch verwijderd.
 
-Als een veld ongeldig is (bijvoorbeeld als het niet is ingevuld hoewel het is gemarkeerd als verplicht), zal dit een uitzondering opleveren met code 400
+Als een veld niet geldig is (bijvoorbeeld als het leeg is terwijl het als verplicht is aangemerkt), geeft de API een fout met de code 400.
 {% endhint %}
-
-## Beperkingen
-
-Je kunt **niet filteren op aangepaste velden van het meervoudige type (selectievakje (Meervoudig) en selector (Meervoudig))**. Dit is een bekende beperking waar we aan werken

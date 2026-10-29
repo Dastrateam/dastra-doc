@@ -1,123 +1,153 @@
+---
+description: >-
+  Häufig gestellte Fragen zum KI-Assistenten von Dastra: Datenschutz,
+  Zuverlässigkeit, Konfiguration und Konformität mit dem KI-Verordnung.
+---
+
 # Häufig gestellte Fragen
 
-### Vertraulichkeit und Daten
+## Datenschutz und Daten
 
-**Werden meine Daten zum Trainieren der KI-Modelle verwendet?**
+**Werden meine Daten zum Trainieren von KI-Modellen verwendet?**
 
-Nein. Die von Dastra verwendeten Modelle sind vortrainiert und werden auf Microsoft Azure gehostet. Ihre Daten werden niemals zum Trainieren, Feintuning oder Verbessern der Basismodelle verwendet, weder von Microsoft, OpenAI, Mistral noch von Dritten. Diese Garantie ist vertraglich festgelegt.
+Nein. Die von Dastra verwendeten Modelle sind vortrainiert und werden auf Microsoft Azure gehostet. Ihre Daten werden niemals zum Trainieren, Feinabstimmen oder Verbessern der Basismodelle verwendet, weder von Microsoft, OpenAI, Mistral noch von Dritten. Diese Garantie ist vertraglich festgelegt.
 
 ***
 
-**Werden die Daten meines Workspace ohne mein Wissen an das Modell übermittelt?**
+**Werden die Daten meines Mandanten ohne mein Wissen an das Modell gesendet?**
 
-Nein. Dastra übermittelt nur die für die angeforderte Generierung strikt erforderlichen Informationen: den von Ihnen eingegebenen Text und gegebenenfalls die Felder des Objekts, an dem Sie arbeiten (Verarbeitung, KI-System, Betroffenenanfrage usw.). Andere Datensätze Ihres Workspace, Ihre Anmeldedaten und Sitzungsmetadaten werden niemals einbezogen. Für Details nach Funktion konsultieren Sie die Seite Wie funktioniert es?.
+Nein. Dastra übermittelt nur die Informationen, die für die angeforderte Erstellung unbedingt erforderlich sind: den von Ihnen eingegebenen Text und gegebenenfalls die Felder des Objekts, an dem Sie arbeiten (Verarbeitungstätigkeit, KI-System, Anfrage zur Ausübung von Rechten usw.). Andere Einträge Ihres Mandanten, Ihre Zugangsdaten und Sitzungsmetadaten sind niemals enthalten. Die einzige Ausnahme: Wenn Sie beim Erstellen einer Verarbeitungstätigkeit die Option **Vorhandene Komponenten nutzen** aktivieren, werden die Bezeichnungen vorhandener Sicherheitsmaßnahmen, Assets und Datenfelder gesendet, damit der Assistent sie wiederverwenden kann. Eine Aufschlüsselung nach Funktion finden Sie auf der Seite [Funktionsweise](how-it-works.md).
 
 ***
 
 **Wo werden die von Dastra verwendeten KI-Modelle gehostet?**
 
-Für die Familien OpenAI, Mistral und Open Source werden die Modelle auf der Microsoft Azure-Infrastruktur in Frankreich gehostet. Ihre Daten werden nicht an die eigenen Server von OpenAI oder Mistral übertragen. Dastra nutzt ausschließlich die verwalteten Azure-Dienste.
+Für die Familien OpenAI, Mistral und Open Source werden die Modelle auf der Infrastruktur von Microsoft Azure in Frankreich gehostet. Ihre Daten laufen nicht über die eigenen Server von OpenAI oder Mistral. Dastra nutzt ausschließlich verwaltete Azure-Dienste.
 
-Wenn Sie einen **Custom AI Provider** mit Ihrem eigenen API-Schlüssel konfigurieren, hängt das Hosting vom gewählten Anbieter ab.
-
-***
-
-**Werden meine Prompts nach der Generierung aufbewahrt?**
-
-Die Azure-Modelle sind zustandslos (_stateless_): Die Prompts und Ergebnisse werden nicht zwischen zwei Anfragen im Modell gespeichert. Sie werden auch nicht zu kommerziellen Wiederverwendungszwecken protokolliert.
-
-**Ausnahme:** Azure unterhält einen automatisierten Missbrauchserkennungsmechanismus. Wenn ein Inhalt gemeldet wird, kann eine Stichprobe vorübergehend in einem kundenspezifisch isolierten Bereich zur Überprüfung aufbewahrt werden. Für Ressourcen, die im EWR bereitgestellt werden (was bei Dastra der Fall ist), befinden sich die menschlichen Prüfer ebenfalls im EWR. Diese Aufbewahrung ist außergewöhnlich.
+Wenn Sie einen **benutzerdefinierten KI-Anbieter** mit Ihrem eigenen API-Schlüssel konfigurieren, hängt das Hosting vom gewählten Anbieter ab.
 
 ***
 
-**Wer kann die an den KI-Assistenten gerichteten Aufrufe in meiner Organisation sehen?**
+**Werden meine Prompts nach der Erstellung aufbewahrt?**
 
-Die Administratoren Ihres Workspace haben Zugriff auf die **KI-Aufrufprotokolle** (90 Tage Verlauf) über **Einstellungen > KI-Assistent > KI-Aufrufprotokolle**. Diese Protokolle zeigen Datum, Status, Operationstyp, verwendetes Modell, Dauer und den Nutzer, der die Generierung ausgelöst hat. Der Inhalt der Prompts und Antworten wird dort nicht angezeigt.
+Azure-Modelle sind zustandslos: Prompts und Ergebnisse werden zwischen zwei Anfragen nicht im Modell gespeichert. Sie werden auch nicht für eine kommerzielle Wiederverwendung protokolliert.
 
-***
-
-**Wird der KI-Assistent vom DPA (Auftragsverarbeitungsvertrag) von Dastra abgedeckt?**
-
-Ja. Die Nutzung des KI-Assistenten erfolgt im Rahmen des bestehenden Vertrags zwischen Ihrer Organisation und Dastra. Microsoft Azure ist Auftragsverarbeiter zweiten Grades, gebunden durch die vertraglichen Verpflichtungen von Azure in Bezug auf den Datenschutz. Für weitere Details verweisen wir auf Ihren Dastra-DPA oder kontaktieren Sie unser Team.
+**Ausnahme:** Azure unterhält einen automatisierten Mechanismus zur Erkennung von Missbrauch. Wird ein Inhalt gemeldet, kann eine Stichprobe zu Prüfzwecken vorübergehend in einer kundenspezifisch isolierten Umgebung aufbewahrt werden. Für Ressourcen, die im EWR bereitgestellt werden (was bei Dastra der Fall ist), befinden sich auch die beteiligten menschlichen Prüfer im EWR. Diese Aufbewahrung bleibt die Ausnahme.
 
 ***
 
-### Qualität und Zuverlässigkeit
+**Wer kann die KI-Aufrufe in meiner Organisation einsehen?**
 
-**Kann man den von der KI generierten Ergebnissen vertrauen?**
-
-Die generierten Ergebnisse sind Ausgangspunkte, keine endgültigen Antworten. Sie beschleunigen Ihre Dokumentationsarbeit, ersetzen aber nicht das Urteil eines Experten. Alle generierten Inhalte müssen von einer qualifizierten Person überprüft und validiert werden, bevor sie verwendet werden, insbesondere für Compliance-Analysen, Datenschutzerklärungen und Antworten auf Betroffenenanfragen.
+Die Inhaber der Organisation können das Nutzungsprotokoll der KI (Verlauf von 90 Tagen) unter **Organisationseinstellungen** > **KI-Assistent**, Karte **AI usage**, Tab **Logs (90 days)** einsehen. Es zeigt Datum, Status, Art des Vorgangs, Modellname, verbrauchte Credits, Dauer und den Nutzer, der die Erstellung ausgelöst hat. Der Inhalt der Prompts und der Antworten wird nicht angezeigt.
 
 ***
 
-**Was ist eine Funktion in der Beta-Phase?**
+**Ist der KI-Assistent durch den AVV (Auftragsverarbeitungsvertrag) von Dastra abgedeckt?**
 
-Einige KI-Funktionen werden als Beta-Version veröffentlicht: Sie sind funktionsfähig, werden aber weiterhin verbessert. Die Ergebnisse können weniger konstant sein als bei stabilen Funktionen und sollten mit erhöhter Aufmerksamkeit behandelt werden.
-
-Aktuell in der Beta-Phase: die Compliance-Analyse der Verarbeitungen und die Compliance-Analyse der KI-Systeme.
+Ja. Die Nutzung des KI-Assistenten fällt unter den bestehenden Vertragsrahmen zwischen Ihrer Organisation und Dastra. Microsoft Azure handelt als Unterauftragsverarbeiter und ist an die vertraglichen Datenschutzverpflichtungen von Azure gebunden. Weitere Einzelheiten finden Sie in Ihrem Dastra-AVV, oder wenden Sie sich an unser Team.
 
 ***
 
-**Kann die KI bei rechtlichen Fragen falsch liegen?**
+## Qualität und Zuverlässigkeit
 
-Ja. Der KI-Assistent ist kein Jurist. Die generierten Inhalte, Compliance-Analysen, Hinweise, Risikobewertungen, sind Denkhilfen basierend auf den in Ihrem Workspace gespeicherten Informationen. Sie stellen keine Rechtsberatung dar und können die Expertise eines Datenschutzbeauftragten oder eines spezialisierten Beraters nicht ersetzen.
+**Kann man den von der KI erstellten Ergebnissen vertrauen?**
 
-***
-
-### Konfiguration und Zugriff
-
-**Wie wähle ich das verwendete KI-Modell?**
-
-Gehen Sie zu **Einstellungen > KI-Assistent**, um die Modellfamilie auszuwählen: OpenAI (Standard), Mistral, Open Source oder einen benutzerdefinierten Anbieter (Custom AI Provider). Für jede Familie werden drei Modellstufen automatisch je nach Aufgabenkomplexität verwendet (Fast, Smart, Erweiterter Kontext).
+Die erstellten Ergebnisse sind Ausgangsvorschläge, keine endgültigen Antworten. Sie beschleunigen Ihre Dokumentationsarbeit, ersetzen aber nicht das Urteil von Fachleuten. Alle erstellten Inhalte müssen vor der Verwendung von einer qualifizierten Person geprüft und bestätigt werden, insbesondere Compliance-Analysen, Datenschutzerklärungen und Antworten auf Anfragen betroffener Personen.
 
 ***
 
-**Kann ich meinen eigenen KI-Anbieter verbinden?**
+**Was ist eine Beta-Funktion?**
 
-Ja, über die Funktion **Custom AI Provider**. Jeder mit dem OpenAI-API-Standard kompatible Anbieter kann verbunden werden: OpenAI, Google (Gemini), Mistral, Microsoft Foundry oder ein selbst gehostetes LLM. Konfigurieren Sie Ihre Anmeldedaten unter **Einstellungen > KI-Assistent > Custom AI Provider**.
+Einige KI-Funktionen werden als Beta veröffentlicht: Sie sind einsatzbereit, werden aber weiter verfeinert. Die Ergebnisse können weniger konsistent sein als bei stabilen Funktionen und sollten mit besonderer Sorgfalt behandelt werden.
+
+Derzeit in der Beta: die Compliance-Analyse von Verarbeitungstätigkeiten und die Compliance-Analyse von KI-Systemen.
+
+***
+
+**Kann die KI bei rechtlichen Fragen Fehler machen?**
+
+Ja. Der KI-Assistent ist kein Rechtsanwalt. Erstellte Inhalte wie Compliance-Analysen, Hinweise und Risikobewertungen sind eine Entscheidungshilfe auf Grundlage der in Ihrem Mandanten erfassten Informationen. Sie stellen keine Rechtsberatung dar und können die Expertise eines Datenschutzbeauftragten oder einer spezialisierten Rechtsberatung nicht ersetzen.
+
+***
+
+## Konfiguration und Zugriff
+
+**Wie wähle ich das verwendete KI-Modell aus?**
+
+Der Inhaber der Organisation öffnet **Organisationseinstellungen** > **KI-Assistent** und wählt die **Familie von KI-Modellen**: OpenAI (Standard), Mistral, Open Source oder den benutzerdefinierten KI-Anbieter (im Feld **Maßgeschneiderte KI-Modelle**). Für jede Familie werden je nach Komplexität der Aufgabe automatisch drei Modellstufen verwendet (Fast, Smart, Large context).
+
+***
+
+**Kann ich meinen eigenen KI-Anbieter anbinden?**
+
+Ja, mit der Familie des benutzerdefinierten KI-Anbieters. Jeder Anbieter, der mit dem OpenAI-API-Standard kompatibel ist, kann angebunden werden: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry oder ein selbst gehostetes LLM. Konfigurieren Sie Ihre Zugangsdaten unter **Organisationseinstellungen** > **KI-Assistent** im Block **Anmeldedaten des KI-Anbieters**.
 
 {% hint style="warning" %}
-Bei einem Custom AI Provider gelten die in dieser Dokumentation beschriebenen Azure-Garantien nicht mehr. Die Daten unterliegen der Richtlinie Ihres Anbieters.
+Bei einem benutzerdefinierten KI-Anbieter gelten die in dieser Dokumentation beschriebenen Azure-Garantien nicht mehr. Die Daten unterliegen der Richtlinie Ihres Anbieters.
 {% endhint %}
 
 ***
 
 **Kann ich den KI-Assistenten für meine Organisation deaktivieren?**
 
-Ja. Kontaktieren Sie unser Support-Team, um die Funktion auf Organisationsebene zu deaktivieren. Die Deaktivierung ist global: Es ist nicht möglich, nur bestimmte Prompts zu deaktivieren und andere aktiv zu lassen.
+Die Anwendung hat keinen Schalter, um den KI-Assistenten zu deaktivieren: Seine Verfügbarkeit hängt vom Tarif Ihrer Organisation ab. Die KI-Funktionen werden Modul für Modul freigeschaltet (Verarbeitungstätigkeiten und Referenzdaten, Compliance, Risiken, Datenschutzvorfälle, Fragebögen, Verträge, Betroffenenanfragen, Analysen). In einem Modul, das Ihr Tarif nicht enthält, sind die KI-Schaltflächen ausgegraut. Um diesen Umfang zu ändern, wenden Sie sich an unser Team.
+
+Eine Einstellung liegt in der Hand der Administratoren: die **Automatische KI-Analyse von Beweismitteln**, standardmäßig aktiviert, die Sie pro Mandant unter **Mandanteneinstellungen** > **Compliance** ausschalten.
 
 ***
 
-**Ist der KI-Assistent in allen Dastra-Plänen verfügbar?**
+**Ist der KI-Assistent in allen Dastra-Tarifen verfügbar?**
 
-Ja, der KI-Assistent ist in allen Dastra-Plänen verfügbar. Einige erweiterte Funktionen können bestimmten Bedingungen unterliegen. Kontaktieren Sie unser Team bei Fragen zu Ihrem Plan.
-
-***
-
-### KI-Verordnung (AI Act)
-
-**Unterliegt der KI-Assistent von Dastra der KI-Verordnung?**
-
-Ja. Der KI-Assistent von Dastra fällt unter die Definition eines KI-Systems im Sinne der KI-Verordnung (EU 2024/1689). Je nach verwendeter Funktion fällt er hauptsächlich in die Kategorie **begrenztes Risiko**, was Transparenzpflichten (Art. 50) impliziert, wenn der generierte Inhalt für natürliche Personen bestimmt ist.
+Nein. Der KI-Assistent, jede seiner Funktionen pro Modul, KI-Agenten und der MCP-Server sind Tarifoptionen. Wenden Sie sich an unser Team, um den Umfang Ihres Tarifs zu erfahren.
 
 ***
 
-**Muss ich die betroffenen Personen darüber informieren, dass ich KI verwende, um auf ihre Anfragen zu antworten?**
+**Was sind KI-Credits?**
 
-Nicht als strenge Verpflichtung, aber es wird als bewährte Praxis dringend empfohlen.
+KI-Credits sind die Maßeinheit für den Verbrauch des KI-Assistenten in Ihrer Organisation. Jeder Aufruf einer KI-Funktion verbraucht eine bestimmte Anzahl Credits, die von der verwendeten Modellstufe (Fast, Smart oder Large context) und der Menge der verarbeiteten Daten abhängt.
 
-Artikel 50(1) der KI-Verordnung zielt auf KI-Systeme ab, **die direkt mit natürlichen Personen interagieren**. Bei Dastra ist dies nicht der Fall: Es ist ein menschlicher Nutzer (Datenschutzbeauftragter, Jurist), der den Text generiert, ihn überprüft, validiert und selbst an die betroffene Person sendet. Es gibt keine direkte Interaktion zwischen dem KI-System und dem Endempfänger — die strenge Verpflichtung des Art. 50(1) gilt daher nicht.
+Die Inhaber der Organisation sehen den aktuellen Verbrauch und das verbleibende Guthaben unter **Organisationseinstellungen** > **KI-Assistent**, Karte **Anwendung** ([direkter Link](https://app.dastra.eu/general-settings/ai)).
+
+***
+
+**Was passiert, wenn meine Organisation ihr Credit-Kontingent erreicht?**
+
+Wenn das Kontingent erreicht ist, werden die KI-Funktionen bis zur nächsten Erneuerung vorübergehend ausgesetzt. Ihr Mandant und Ihre Daten bleiben vollständig zugänglich: Nur die KI-Erstellung ist deaktiviert.
+
+Um Ihr Kontingent zu erhöhen oder eine vorzeitige Erneuerung zu beantragen, wenden Sie sich an unser Team.
+
+***
+
+**Gilt das Credit-System auch bei einem benutzerdefinierten KI-Anbieter?**
+
+Nein. Wenn Ihre Organisation einen **benutzerdefinierten KI-Anbieter** konfiguriert, ist das Credit-System von Dastra deaktiviert: Es werden keine Credits gezählt. Der Verbrauch wird direkt von Ihrem Anbieter nach dessen eigenen Abrechnungsbedingungen verwaltet.
+
+***
+
+## KI-Verordnung (EU-Verordnung 2024/1689)
+
+**Unterliegt der KI-Assistent von Dastra dem KI-Verordnung?**
+
+Ja. Der KI-Assistent von Dastra fällt unter die Definition eines KI-Systems im Sinne des KI-Verordnunges (EU 2024/1689). Je nach genutzten Funktionen wird er überwiegend als **System mit begrenztem Risiko** eingestuft, was Transparenzpflichten (Art. 50) nach sich zieht, wenn erstellte Inhalte für natürliche Personen bestimmt sind.
+
+***
+
+**Muss ich betroffene Personen darüber informieren, dass ich KI für die Beantwortung ihrer Anfragen genutzt habe?**
+
+Nicht aufgrund einer strikten Pflicht des KI-Verordnunges, aber es wird als bewährte Vorgehensweise dringend empfohlen.
+
+Artikel 50 Absatz 1 des KI-Verordnunges betrifft KI-Systeme, die **direkt mit** natürlichen Personen **interagieren**. In Dastra ist das nicht der Fall: Ein menschlicher Nutzer (Datenschutzbeauftragter, Rechtsberatung) erstellt den Text, prüft ihn, bestätigt ihn und sendet ihn selbst an die betroffene Person. Es gibt keine direkte Interaktion zwischen dem KI-System und dem Endempfänger, sodass die strikte Pflicht aus Art. 50 Abs. 1 nicht gilt.
 
 {% hint style="info" %}
-Die Entwurfsrichtlinien des AI Office (2025 zur Konsultation veröffentlicht) bestätigen ausdrücklich diese Interpretation: *"die direkte Interaktion schließt indirekte oder vermittelte menschliche Interaktionen aus [...] **zum Beispiel wenn Kundendienstmitarbeiter KI-Assistenztools verwenden, um mit natürlichen Personen zu kommunizieren** oder wenn das Ergebnis der KI nicht vom KI-System selbst, sondern von einer anderen Person, die den Inhalt verbreitet, der Person zur Verfügung gestellt wird."* (Abschnitt 3.1.1). Der Anwendungsfall von Dastra entspricht genau diesem Schema.
+Die Entwurfsleitlinien des KI-Büros (2025 zur Konsultation der Beteiligten veröffentlicht) bestätigen diese Auslegung ausdrücklich: _„Direct interaction excludes indirect or mediated human interaction where the person is exposed to AI outputs without directly interacting with the system, **for example if customer service representatives use AI assistance tools to help them communicate with natural persons** or if the AI output is not made available to the person by the AI system itself, but by another person disseminating the content.“_ (Abschnitt 3.1.1). Der Anwendungsfall von Dastra entspricht genau diesem Szenario.
 
-Hinweis: Die Verpflichtungen aus Artikel 50 treten am **2. August 2026** in Kraft. Die endgültigen Richtlinien können ergänzende Präzisierungen enthalten.
+Hinweis: Die Pflichten aus Artikel 50 gelten seit dem **2. August 2026**. Die Europäische Kommission hat im Juli 2026 endgültige Leitlinien verabschiedet, die diese Analyse ergänzen können.
 {% endhint %}
 
-Dennoch bleibt es eine **bewährte Praxis**, die betroffene Person darüber zu informieren, dass eine Antwort KI-gestützt erstellt wurde, gemäß dem Grundsatz der Fairness und Transparenz der DSGVO (Art. 5(1)(a)). Dastra generiert diesen Hinweis nicht automatisch: Wenn Ihre Organisation ihn einfügen möchte, müssen Sie ihn vor dem Versand selbst hinzufügen.
+Dennoch bleibt die Information der betroffenen Person darüber, dass eine Antwort KI-gestützt erstellt wurde, eine **bewährte Vorgehensweise** nach dem Grundsatz von Treu und Glauben und Transparenz der DSGVO (Art. 5 Abs. 1 Buchst. a). Dastra fügt diesen Hinweis nicht automatisch hinzu: Wenn Ihre Organisation ihn aufnehmen möchte, liegt es an Ihnen, dies vor dem Versand zu tun.
 
 ***
 
-**Ist Dastra Anbieter oder Betreiber im Sinne der KI-Verordnung?**
+**Ist Dastra Anbieter oder Betreiber im Sinne des KI-Verordnunges?**
 
-Beides, je nach Anwendungsfall. Wenn Sie die Standardmodelle verwenden (OpenAI, Mistral, Open Source via Azure), ist Dastra **Anbieter** des KI-Systems und Ihre Organisation ist der **Betreiber**. Wenn Sie Ihren eigenen Anbieter über Custom AI Provider verbinden, fungiert Dastra lediglich als Compliance-Tool. Ihre Organisation übernimmt dann die Rolle des Anbieters und/oder Betreibers in Bezug auf ihr eigenes Modell.
+Beides, je nach Anwendungsfall. Wenn Sie die Standardmodelle verwenden (OpenAI, Mistral, Open Source über Azure), ist Dastra der **Anbieter** des KI-Systems und Ihre Organisation der **Betreiber**. Wenn Sie über die Familie des benutzerdefinierten KI-Anbieters Ihren eigenen Anbieter anbinden, handelt Dastra ausschließlich als Compliance-Werkzeug. Ihre Organisation übernimmt dann in Bezug auf ihr eigenes Modell die Rolle des Anbieters und/oder Betreibers.

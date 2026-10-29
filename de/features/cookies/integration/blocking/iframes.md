@@ -1,102 +1,104 @@
 ---
 description: >-
-  Viele Websites verwenden iframes, um Videos, Tweets usw. anzuzeigen. Es ist daher
-  notwendig, die Einwilligung der Nutzer einzuholen, bevor der Iframe-Inhalt geladen wird.
+  Viele Websites nutzen Iframes, um Videos, Tweets usw. anzuzeigen. Deshalb müssen Sie die Nutzer um ihre Einwilligung bitten, bevor der Inhalt des Iframes geladen wird.
 ---
 
-# Blockierung von iframes (Twitter/YouTube...)
+# Iframe-Blockierung (Twitter/YouTube...)
 
-## Beispiele für Dienste, die iframes verwenden
+## Beispiele für Dienste, die Iframes nutzen
 
-Videoplayer: YouTube, Vimeo, DailyMotion...
+* Videoplayer: YouTube, Vimeo, Dailymotion usw.
+* Soziale Netzwerke: Twitter, Facebook usw.
+* Podcast-Player.
+* Audioplayer.
 
-Soziale Netzwerke: Twitter, Facebook,...
+## Methode 1: Das SDK verwenden
 
-Podcast-Player&#x20;
+Das SDK blockiert die Iframes der Seite, die einem Selektor entsprechen, und zeigt stattdessen eine anpassbare Blockierungsmeldung an:
 
-Audio-Player&#x20;
+<figure><img src="../../../../.gitbook/assets/cookies-video-consent-overlay.png" alt="Eine Blockierungsmeldung anstelle eines YouTube-Videos, mit der Schaltfläche I accept"><figcaption><p>Die Blockierungsmeldung anstelle des Videos</p></figcaption></figure>
 
-## Methode 1: Verwendung des SDK
+Ein Klick auf die Schaltfläche der Meldung erfasst automatisch die Einwilligung in den Dienst und lädt das Iframe. Zieht der Besucher seine Einwilligung in diesen Dienst später zurück, wird das Iframe erneut blockiert. Die Meldung bietet nur eine Schaltfläche zum Akzeptieren.
 
-Unser SDK ermöglicht es Ihnen, alle iframes auf der Seite zu blockieren und eine anpassbare Blockierungsnachricht anzuzeigen:
+Ein Beispiel mit Iframes des YouTube-Videoplayers:
 
-![](<../../../../.gitbook/assets/image-184.png>)
-
-Durch Klicken auf „I accept" wird die Einwilligung für den spezifischen Dienst automatisch übermittelt. Das System ermöglicht auch die Erfassung einer Cookie-Ablehnung in der Dastra-CMP.
-
-Ein einfaches Beispiel mit YouTube-Videoplayer-iframes:
-
-```markup
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aJ1qDx8lv2Y" allowfullscreen></iframe>
 <script>
   // Set up youtube iframe blocking
   dastra.push(['iframeBlock', {
     selector: 'iframe[src*="youtube.com"]',
-    service: 'youtube', // service slug (Check your Dastra cmp config)
-    body:'<p>By clicking on "I accept" the trackers will be deposited and you will be able to view the video. You can withdraw your consent at any time :</p>',
-    buttonLabel:'I accept',
-    buttonClass: 'btn btn-primary'
+    service: 'youtube', // service slug (check your banner configuration)
+    body: '<p>By clicking on "I accept" the trackers will be deposited and you will be able to view the video. You can withdraw your consent at any time :</p>',
+    buttonLabel: 'I accept',
+    buttonClass: 'btn btn-primary',
+    footer: '<p>Consents provided by <a href="https://www.dastra.eu">Dastra</a></p>'
   }])
 </script>
 ```
 
+Die Optionen von `iframeBlock` sind:
+
+| Option | Zweck |
+| --- | --- |
+| `selector` | CSS-Selektor der zu blockierenden Iframes. |
+| `service` | Kennung (Slug) des Dienstes, dessen Einwilligung das Iframe freigibt. |
+| `body` | HTML-Text der Blockierungsmeldung. |
+| `buttonLabel` | Beschriftung der Schaltfläche zum Akzeptieren. |
+| `buttonClass` | CSS-Klassen der Schaltfläche. |
+| `footer` | HTML-Text unterhalb der Schaltfläche. |
+
 {% hint style="info" %}
-Es ist möglich, das Erscheinungsbild der Nachricht (Hintergrund, Schriftarten...) mit Ihrem CSS-Stylesheet anzupassen. Die Blockierungsnachricht wird im DOM der Seite mit der Klasse „.datra-blocking-iframe" integriert.&#x20;
+Sie können das Aussehen der Meldung (Hintergrund, Schriftarten usw.) mit Ihrem CSS-Stylesheet anpassen. Die Blockierungsmeldung wird der Seite mit der Klasse `.datra-blocking-iframe` hinzugefügt.
 {% endhint %}
 
-## Methode 2: Manuelle Implementierung&#x20;
+## Methode 2: Manuelle Umsetzung
 
-Sie können auch Ihre eigene Logik implementieren
+Sie können auch Ihre eigene Logik umsetzen:
 
-```markup
+```html
 <script>
-  // Select all youtube iframes 
+  // Select all youtube iframes
   var iframes = document.querySelectorAll('iframe[src*="youtube.com"]');
 
-  // Foreach iframe disable the iframe by transforming "src" attribute to "data-blocked-src"
-  iframes.forEach(function(iframe){
+  // For each iframe, disable it by moving the "src" attribute to "data-blocked-src"
+  iframes.forEach(function (iframe) {
     var iframeSrc = iframe.getAttribute('src');
-    iframe.setAttribute('data-blocked-src', iframeSrc );
-    iframe.setAttribute('src','about:blank');
+    iframe.setAttribute('data-blocked-src', iframeSrc);
+    iframe.setAttribute('src', 'about:blank');
     var divAlert = document.createElement('div');
-    divAlert.classList.add('alert-iframe-cookie')
-    divAlert.innerHTML = '<p>En cliquant sur « j'autorise » les traceurs seront déposés et vous pourrez visualiser la vidéo. Vous gardez la possibilité de retirer votre consentement à tout moment. En cliquant sur « je refuse », vous ne pourrez pas accéder à la vidéo. : </p><div class="button-container"><button type="button" onclick="SetConsent(\'youtube\', true)" href="#" class="btn btn-success" >Accept the cookies</button></div><p>Consentements fournis par <a href="https://www.dastra.eu">Dastra</a></p>';
+    divAlert.classList.add('alert-iframe-cookie');
+    divAlert.innerHTML = '<p>By clicking on "I accept" the trackers will be deposited and you will be able to view the video. You can withdraw your consent at any time.</p><div class="button-container"><button type="button" onclick="SetConsent(\'youtube\', true)" class="btn btn-success">I accept</button></div><p>Consents provided by <a href="https://www.dastra.eu">Dastra</a></p>';
     iframe.after(divAlert);
   });
 
-  // On cookie consent, 
-  window.addEventListener('dastra:consent:youtube', function() {
-    // Load iframe when accepted
-    document.querySelectorAll('iframe[data-blocked-src*="youtube.com"]').forEach(function(iframe){
+  // On consent, load the iframes and hide the message
+  window.addEventListener('dastra:consent:youtube', function () {
+    document.querySelectorAll('iframe[data-blocked-src*="youtube.com"]').forEach(function (iframe) {
       iframe.setAttribute('src', iframe.getAttribute('data-blocked-src'));
       iframe.removeAttribute('data-blocked-src');
     });
-    
-    // Delete message when accepted
-    document.querySelectorAll('.alert-iframe-cookie').forEach(function(alert){
-      alert.style.display = "none";
+
+    document.querySelectorAll('.alert-iframe-cookie').forEach(function (alert) {
+      alert.style.display = 'none';
     });
   });
 
-  function SetConsent(service, consent){
-    dastra.cookieConsent.consent.setServiceConsent(service, true);
+  function SetConsent(service, consent) {
+    dastra.cookieConsent.consent.setServiceConsent(service, consent);
     dastra.cookieConsent.consent.save();
-  };
-
+  }
 </script>
 <style>
-  .alert-iframe-cookie{
-    background-color:#CCC;
-    padding: 20px 20px;
-    color:#fff;
-    text-align:center;
+  .alert-iframe-cookie {
+    background-color: #ccc;
+    padding: 20px;
+    color: #333;
+    text-align: center;
   }
-  
-  .button-container{
-    margin: 10px auto; 
+
+  .button-container {
+    margin: 10px auto;
   }
-  
 </style>
 ```
-
-Fertig

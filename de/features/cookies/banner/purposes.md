@@ -1,15 +1,13 @@
 ---
-description: >-
-  Diese Seite listet alle Verarbeitungszwecke von Cookies auf, die vom
-  Dastra-Einwilligungs-Widget berücksichtigt werden
+description: Diese Seite listet alle Cookie-Zwecke auf, die das Dastra-Einwilligungs-Widget unterstützt
 ---
 
-# Die Verarbeitungszwecke der Cookies
+# Cookie-Zwecke
 
-| Typ                    | Id |
-| ---------------------- | -- |
-| Erforderlich           | 0  |
-| Präferenzen            | 1  |
-| Analytisch             | 2  |
-| Marketing              | 3  |
-| Sonstige               | 4  |
+| Typ                              | Id |
+| -------------------------------- | -- |
+| Unbedingt erforderlich           | 0  |
+| Einstellungen                    | 1  |
+| Analyse der Besucherzahlen       | 2  |
+| Marketing und Nutzererfahrung    | 3  |
+| Sonstiges                        | 4  |

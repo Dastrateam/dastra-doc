@@ -4,32 +4,48 @@ description: Erfahren Sie, wie Sie Cookies nach Einwilligungskategorien klassifi
 
 # Cookies nach Einwilligungskategorien klassifizieren
 
-Die Aufsichtsbehörde empfiehlt die Cookies auf der eigenen Website zu erfassen und zu kategorisieren, je nachdem ob sie eine Einwilligung erfordern oder nicht.
-
-Mit DASTRA können Sie die auf Ihrer Website gesetzten Cookies per einfachem „Drag and Drop" nach den großen Verarbeitungszweck-Kategorien klassifizieren:
-
-* Die **„unbedingt erforderlichen"** Cookies: Es handelt sich um Cookies, die aufgrund ihrer Natur von der Einwilligung ausgenommen sind (z. B. Sitzungs- oder Einwilligungs-Cookies)
-* Die Cookies vom Typ **„Präferenzen"**
-* Die Cookies vom Typ **„Zielgruppenanalyse"**
-* Die Cookies vom Typ **„Marketing und Nutzererfahrung"**
-* Sonstige.
-
-{% content-ref url="purposes.md" %}
-[les-finalites-des-cookies.md](purposes.md)
-{% endcontent-ref %}
-
-Wählen Sie dazu einfach den zu klassifizierenden Cookie über die Klassifizierungsoberfläche aus und verschieben Sie ihn per „Klicken und Ablegen" in die gewünschte Kategorie.
-
-![Der Cookie „Zu klassifizierender Cookie" wird gerade klassifiziert](../../../.gitbook/assets/image-52.png)
-
-![Der Cookie „Zu klassifizierender Cookie" wurde in die Kategorie „Präferenzen" eingeordnet](../../../.gitbook/assets/image-53.png)
+In ihrem [Empfehlungsentwurf](https://www.cnil.fr/fr/la-cnil-lance-une-consultation-publique-sur-son-projet-de-recommandation-cookies-et-autres-traceurs) zu Cookies und anderen Trackern (auf Französisch) empfiehlt die CNIL, die Cookies Ihrer Website aufzulisten und danach zu kategorisieren, ob sie eine Einwilligung erfordern oder nicht.
 
 {% hint style="info" %}
-Sie können für jeden Cookie einzeln festlegen, ob eine Einwilligung eingeholt werden muss oder nicht.
+Weitere Informationen zu den CNIL-Empfehlungen zu Cookies finden Sie im Artikel „[Die Cookie-Empfehlungen der CNIL, erklärt für Ihren Chef](https://www.dastra.eu/fr/article/recommendations-CNIL-cookies-expliquees-a-votre-boss/104)“ (auf Französisch).
 {% endhint %}
 
-Sobald alle Ihre Cookies nach Kategorien klassifiziert sind, können Sie das entsprechende Einwilligungs-Widget implementieren.
+In Dastra ist die Kategorie eines Cookies die Kategorie des Dienstes, zu dem es gehört: Sie wählen den **Zweck** jedes Dienstes, und alle seine Cookies übernehmen ihn. Folgende Kategorien stehen zur Verfügung:
+
+* **Unbedingt erforderlich**: Cookies, die ihrer Natur nach von der Einwilligung ausgenommen sind, zum Beispiel Sitzungs- oder Einwilligungs-Cookies;
+* **Einstellungen**;
+* **Analyse der Besucherzahlen**;
+* **Marketing und Nutzererfahrung**;
+* **Soziale Netzwerke**;
+* **Sonstiges**.
+
+{% content-ref url="purposes.md" %}
+[Cookie-Zwecke](purposes.md)
+{% endcontent-ref %}
+
+## Den Zweck eines Dienstes festlegen
+
+1. Öffnen Sie das Banner: **Cookie-Banner** > **Banner**, dann klicken Sie auf das Banner.
+2. Klappen Sie den Abschnitt **Dienstleistungen** auf.
+3. Klicken Sie auf den Dienst, den Sie klassifizieren möchten. Wählen Sie im Tab **Grundlegende Informationen** im Feld **Zweck dieses Dienstes** einen Wert aus.
+4. Bestätigen Sie und klicken Sie dann auf **Speichern**.
+
+<figure><img src="../../../.gitbook/assets/cookies-classify-1.png" alt="Der Abschnitt Dienstleistungen des Banner-Editors, mit dem Zweck unter dem Namen jedes Dienstes"><figcaption><p>Der Zweck jedes Dienstes steht unter seinem Namen</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/cookies-classify-2.png" alt="Das Formular eines Dienstes mit dem Feld Zweck dieses Dienstes"><figcaption><p>Das Feld „Zweck dieses Dienstes“ im Formular des Dienstes</p></figcaption></figure>
+
+Ein Dienst kann nicht mit dem Zweck **Unkategorisiert** gespeichert werden: Wählen Sie eine der oben genannten Kategorien.
+
+{% hint style="info" %}
+Ob für einen Dienst eine Einwilligung eingeholt werden muss, entscheiden Sie im Einzelfall mit der Option **Möchten Sie die Einwilligung für diese Cookies einholen? (Anzeige der Schaltflächen)**. Sie ist für die Kategorie **Unbedingt erforderlich** deaktiviert.
+{% endhint %}
+
+{% hint style="warning" %}
+Ein vom Scan erkanntes Cookie, das mit keinem Dienst verknüpft ist (nicht klassifiziertes Cookie), wird im öffentlichen Banner nie angezeigt. Fügen Sie es einem bestehenden Dienst hinzu oder legen Sie daraus einen Dienst an: siehe [Nicht klassifizierte Cookies behandeln](scan.md#nicht-klassifizierte-cookies-behandeln).
+{% endhint %}
+
+Sobald alle Ihre Cookies zu einem nach Kategorie klassifizierten Dienst gehören, können Sie das Banner konfigurieren.
 
 {% content-ref url="configure.md" %}
-[implementez-un-widget-de-consentement-aux-cookies.md](configure.md)
+[Das Cookie-Einwilligungsbanner einrichten](configure.md)
 {% endcontent-ref %}

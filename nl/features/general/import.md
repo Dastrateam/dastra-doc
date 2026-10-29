@@ -1,140 +1,138 @@
-# Gegevens importeren (Excel, Csv)
+---
+description: >-
+  Importeer uw gegevens uit een Excel- of CSV-bestand in Dastra: importeerbare
+  objecten, conflictbeheer, kolomkoppeling en resultaat.
+---
+
+# Uw gegevens importeren (Excel, CSV)
 
 ## Gegevens importeren in Dastra
 
-Met Dastra is het heel eenvoudig om uw eigen gegevens in spreadsheetformaat rechtstreeks in de toepassing te importeren.
+Dastra importeert uw eigen gegevens uit een spreadsheetbestand. Start de import in elke lijst die dit ondersteunt via de pijl van de aanmaakknop en kies daarna **Importeren**.
 
-Importeren is mogelijk in de volgende modules:&#x20;
+<figure><img src="../../.gitbook/assets/general-import-1.png" alt="Lijst met datasets en het menu van de aanmaakknop met de optie Importeren"><figcaption><p>De optie Importeren in het menu van de aanmaakknop</p></figcaption></figure>
 
-* register importeren
-* actor importeren
-* Activa importeren
-* importeren van datasets
-* importeren van velden
-* invoer van beveiligingsmaatregelen
-* invoer van categorieën van betrokken personen
-* importeren van auditreacties
-* importeren van auditmodellen (binnenkort beschikbaar)
-* importeren van risicotypen
-* importeren van verzoeken om rechten uit te oefenen
-* importeren van datalekken
-* importeren van taken
+U kunt de volgende objecten importeren:
 
-Het proces is hetzelfde voor elke import &#x20;
+| Object | Waar importeren | Opmerking |
+| --- | --- | --- |
+| Verwerkingsactiviteiten | Data inventory > Gegevensverwerking > Register voor gegevensverwerking | Plat bestand (CSV), complexe Excel-werkmap (bèta) of JSON |
+| Activa | Data inventory > Referenties > Activa | Excel of CSV, of JSON |
+| Stakeholders | Data inventory > Referenties > Actoren | |
+| Datasets | Data inventory > Referenties > Gegevenssets | |
+| Gegevensvelden | Data inventory > Referenties > Verklarende woordenlijst voor gegevens | |
+| Beveiligingsmaatregelen | Data inventory > Referenties > Maatregelen | |
+| Categorieën van betrokkenen | Data inventory > Referenties > Categorie van betrokken personen | |
+| AI-systemen en AI-modellen | Data inventory > AI-wet | |
+| Verzoeken van betrokkenen | Operations > Verzoeken > Register van verzoeken | |
+| Datalekken | Operations > Incidenten > Incidentenregister | |
+| Taken | Operations > Planning > Taken | Projecten importeert u in JSON via **Projecten** |
+| Contracten en beleidslijnen | Operations > Contracten en beleidslijnen > Register van contracten en beleidslijnen | |
+| Risicotypen, bedreigingen, bronnen, controlepunten en gebeurtenissen | Governance > Risicobeheer | |
+| Vragenlijstsjablonen | Governance > Vragenlijsten > Vraagmodellen > **Maak een sjabloon** > **Upload een sjabloon** | Excel- of JSON-bestand |
+| Antwoorden op vragenlijsten | Lijst met antwoorden van een sjabloon > **Plan een audit** > **Antwoorden importeren** | |
+| Kaders, controles, tests, bedreigingen en risico's van de bibliotheek | Governance > Conformiteit > Bibliotheek | Zie [Importeren en sjablonen van Dastra](../compliance/library/frameworks/import.md) voor de kaders |
+| Labels | Instellingen voor werkruimte > Proces > Labels | |
+| Berichtsjablonen | Instellingen voor werkruimte > Modellen | |
+| Organisatorische eenheden | Instellingen voor werkruimte > Toegangsbeheer > Organisatorische eenheden | CSV-bestand |
 
-Er zijn 4 stappen:&#x20;
+De namen van de menugroepen Data inventory, Operations en Governance hebben geen Nederlandse waarde in de app en staan zoals ze op het scherm verschijnen.
 
-1. [Bereid het gegevensbestand voor](import.md#1.-preparation-du-fichier-de-donnees)
-2. [Bestand uploaden](import.md#2.-charger-le-fichier)
-3. [Controleer de gegevens voor het importeren](import.md#3.-verifiez-vos-donnees)
-4. [Gegevens importeren](import.md#4.-importez-les-donnees)
+Bij elke import is het proces hetzelfde. Het verloopt in 4 stappen:
+
+1. [Het gegevensbestand voorbereiden](import.md#1.-het-gegevensbestand-voorbereiden)
+2. [Het bestand laden](import.md#2.-het-bestand-laden)
+3. [Uw gegevens controleren](import.md#3.-uw-gegevens-controleren)
+4. [De gegevens importeren](import.md#4.-de-gegevens-importeren)
 
 ### 1. Het gegevensbestand voorbereiden
 
 Dastra ondersteunt de volgende gegevensindelingen:
 
-* Excel** (.xlsx)
-* Platte bestanden** (.csv, .txt) met scheidingsteken ; en UTF-8 codering (codering is belangrijk voor accenten)
-* JSON** (alleen voor het importeren van het volledige register en de modellen voor Verwerking)
+* Excel (.xlsx)
+* Platte bestanden (.csv, .txt) met het scheidingsteken ; en UTF-8-codering (de codering is nodig om accenten te behouden)
+* JSON, voor het volledige register, de activa, de projecten, de vragenlijstsjablonen en de conformiteitskaders
 
-Om het menu voor het importeren van gegevens te openen, klikt u op de knop "importeren" onder elke pijl van de knop Maken.
-
-<figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
-
-Selecteer Excel als daarom wordt gevraagd:&#x20;
-
-<figure><img src="../../.gitbook/assets/image (83) (1).png" alt=""><figcaption></figcaption></figure>
+Bij sommige lijsten kiest u de indeling voordat de importwizard opent. Voor het verwerkingsregister opent de optie voor CSV-bestanden (in de app **Excel** genoemd) de hieronder beschreven wizard.
 
 #### Het bestandssjabloon downloaden
 
-Download vervolgens een bestandssjabloon door op de knop "Bestandssjabloon downloaden" te klikken
+Klik in de importwizard op **Het bestandssjabloon downloaden**. Het sjabloon is een CSV-bestand dat u kunt bewerken met Excel, LibreOffice of Google Sheets. Het bevat alle kolommen van de import met één rij voorbeeldgegevens, die u door uw eigen gegevens vervangt.
 
-<figure><img src="../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+#### Het bestandssjabloon invullen
 
-Het bestandssjabloon is **een CSV formaat bestand** dat je gemakkelijk kunt bewerken met een Libre Office, Wordpad, Excel of Google Sheet spreadsheet.
+Vul het gedownloade bestand met uw gegevens. De knop **Zie kolomindeling** toont voor elke import de verwachte kolommen, hun regels en hun mogelijke waarden.
 
-Het bevat alle benodigde kolommen met voorbeeldgegevens.
+<figure><img src="../../.gitbook/assets/general-import-3.png" alt="Venster met de kolomindeling voor de import, met het type, de regels en de mogelijke waarden van elke kolom"><figcaption><p>De kolomindeling die de import verwacht</p></figcaption></figure>
 
-Voorbeeldbestand (voor het register) : &#x20;
+De mogelijke waarden staan in het Engels: het gaat om een technische import in de database. Ze komen overeen met de keuzelijsten van de toepassing.
 
-<figure><img src="../../.gitbook/assets/image (265).png" alt=""><figcaption><p>Regel 2 bevat voorbeeldgegevens die vervangen moeten worden</p></figcaption></figure>
+Bij de import van het register zijn bijvoorbeeld:
 
-#### Vul de bestandssjabloon in
+* de kolom `State` de status van de verwerkingsactiviteit: `Draft` voor **Concept** en `Active` voor **Gepubliceerd**. Als de cel leeg is, wordt de verwerkingsactiviteit aangemaakt met de status **Gepubliceerd**;
+* de kolom `ProcessingState` het veld **Status gegevensverwerking** van de stap **Algemeen**: `Study` voor **Om te bestuderen**, `BeingDeployed` voor **Wordt geïmplementeerd**, `InProduction` voor **In productie** en `Stopped` voor **Gestopt**.
 
-Vul het gedownloade bestand in met je gegevens.
+Een waarde die bij geen enkele mogelijke keuze past, blokkeert de import niet: ze wordt vervangen door de standaardwaarde van de kolom. Controleer uw waarden voordat u het bestand verstuurt.
 
-Voor elk gegevensbestand kun je de verwachte waarden in de kolommen weergeven:&#x20;
+### Datasets: import van gekoppelde velden
 
-<figure><img src="../../.gitbook/assets/image (262) (1).png" alt=""><figcaption><p>Verwachte waarden voor het registerimportbestand</p></figcaption></figure>
+De export van datasets bevat een kolom **Velden voor persoonlijke gegevens** met de gekoppelde gegevensvelden. Elk veld wordt geschreven als `label#gevoeligheidsclassificatie#categorie persoonsgegevens` en de velden worden gescheiden door `|`. Voor de import geldt dezelfde indeling.
 
-De imports bevatten verwachte waarden in het Engels. Dit is volkomen normaal. In feite is dit een technische database-import &#x20;
+Tijdens de import geldt voor elke nieuwe dataset:
 
-De waarden in het Engels komen overeen met de vervolgkeuzelijsten voor de selectieknoppen &#x20;
+* een veld waarvan het label al in de werkruimte bestaat, wordt ongewijzigd gekoppeld: de classificatie en de categorie in het bestand wijzigen het niet;
+* een veld waarvan het label niet bestaat, wordt automatisch aangemaakt.
 
-Bijvoorbeeld, in de import van het register komt het veld "Verwerkingsstatus" overeen met het veld "Verwerkingsstatus" in Dastra. Dit is het veld dat wordt aangegeven in de eerste stap "Algemeen".
+{% hint style="info" %}
+Gekoppelde velden worden alleen gelezen voor datasets die door de import zijn aangemaakt. In de modus **Samenvoegen** worden de velden van een bestaande dataset niet gewijzigd.
+{% endhint %}
 
-Het veld "Verwerkingsstatus" komt overeen met de status van de Verwerking ("Concept" voor "Concept" of "Gepubliceerd" voor "Actief") &#x20;
+Om datasets te importeren opent u **Data inventory** > **Referenties** > **Gegevenssets**, klikt u op de pijl van de knop **Nieuwe dataset** en kiest u **Importeren**.
 
 ### 2. Het bestand laden
 
-Als uw gegevensbestand klaar is, moet u mogelijk een organisatorische eenheid opgeven. Alle geïmporteerde bestanden worden in deze organisatorische eenheid geplaatst &#x20;
+Bij sommige objecten vraagt de importwizard eerst om een organisatorische eenheid: alle geïmporteerde items worden eraan gekoppeld. Dit geldt voor verwerkingsactiviteiten, verzoeken, datalekken, taken, contracten en AI-systemen.
 
-{% hint style="info" %}
-Dit geldt alleen voor import van objecten die aan organisatorische eenheden gekoppeld kunnen worden. Bijvoorbeeld het verwerkingsregister of datalekken. Actoren, maatregelen of datasets vallen hier niet onder.
+<figure><img src="../../.gitbook/assets/general-import-2.png" alt="Stap Het bestand verzenden van de importwizard met conflictbeheer op Samenvoegen, het matchingveld en de zone om bestanden neer te zetten"><figcaption><p>De stap Het bestand verzenden, met het conflictbeheer</p></figcaption></figure>
+
+#### Conflictbeheer
+
+Voor objecten met een matchingsleutel (bijvoorbeeld het label of de referentie) bepaalt de groep **Conflictbeheer** wat er gebeurt wanneer een rij van het bestand overeenkomt met een bestaand item. Er zijn drie modi:
+
+* **Geen: maak een registratie voor elke regel bestand** (standaard): elke rij maakt een nieuw item aan, ook als er al een identiek item bestaat;
+* **Samenvoegen: Overschrijven van gegevens van overeenkomende rijen (gevaarlijk!)**: rijen die overeenkomen met een bestaand item werken dat bij, en de andere rijen maken nieuwe items aan;
+* **Behoud: wijzig de gegevens die aan een voorwaarde voldoen niet**: rijen die overeenkomen met een bestaand item worden overgeslagen en dat item blijft ongewijzigd, en de andere rijen maken nieuwe items aan.
+
+Kies bij **Samenvoegen** of **Behoud** het veld dat u wilt gebruiken voor het matchen van gegevens (**Kies het veld dat u wilt gebruiken voor het matchen van gegevens**). Een rij komt overeen met een item wanneer de waarde van dit veld in het bestand en in de werkruimte strikt identiek is, hoofdletters en kleine letters inbegrepen.
+
+{% hint style="warning" %}
+De modus **Samenvoegen** vervangt de opgeslagen waarden door die van het bestand. Een lege cel laat de bestaande waarde ongewijzigd, behalve in kolommen met een verplichte keuze (bijvoorbeeld het type of de status van een activum): die krijgen dan hun standaardwaarde, dus vul ze altijd in. Controleer uw bestand voordat u de import start, want de bewerking kan niet ongedaan worden gemaakt.
 {% endhint %}
 
-#### Gegevens bijwerken via import
-
-Er wordt voorgesteld om een vakje aan te vinken waarmee bestaande gegevens kunnen worden bijgewerkt &#x20;
-
-Met deze functie kunt u de gegevens in Dastra bijwerken vanuit de gegevens in het Excel-bestand &#x20;
-
-Het importeren maakt standaard nieuwe objecten aan. Als het object al bestaat (bijvoorbeeld een acteur), wordt er geen nieuw object gemaakt &#x20;
-
-Het is mogelijk om een bestaand object (bijvoorbeeld een actor) te updaten &#x20;
-
-Selecteer in dit geval het vakje "Bestaande gegevens bijwerken" en kies het overeenkomende veld. Dit veld wordt de sleutel die wordt gebruikt om de bij te werken velden te identificeren.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (263).png" alt=""><figcaption><p>Gegevens bijwerken</p></figcaption></figure>
-
-Door op de knop "Overschrijf gegevens van overeenkomende regels" te klikken, worden de corresponderende gegevens vervangen door de gegevens van de import.
-
-#### Het bestand verzenden
-
-Verzend het bestand door te klikken op de knop
-
-<figure><img src="../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+Objecten zonder matchingsleutel, zoals labels, berichtsjablonen, verzoeken of risicotypen, tonen deze groep niet. Bij datalekken wordt de groep wel getoond, maar elke rij maakt altijd een item aan. Bij imports in de conformiteitsbibliotheek worden rijen overgeslagen waarvan de referentie al bestaat, ongeacht de modus.
 
 {% hint style="info" %}
-Je kunt je bestanden ook uploaden door ze te slepen en neer te zetten in het gebied voor het uploaden van bestanden
+Voor activa werkt de modus **Samenvoegen** ook **aangepaste velden** bij, ongeacht hun type. Net als bij de standaardkolommen laat een lege cel de opgeslagen waarde ongewijzigd, en een lijst met meerdere antwoorden vervangt de bestaande lijst volledig. Als een waarde wordt geweigerd, stopt de import zonder iets te wijzigen en geeft hij de betrokken rij aan.
 {% endhint %}
 
-### 3. Controleer uw gegevens
+#### Het bestand versturen
 
-Met het volgende hulpprogramma kunt u de kolommen in uw Excel-bestand valideren en eventueel selecteren op de kolommen die worden verwacht in het importformaat.
+Klik op de zone **Verstuur/verplaats hier bestanden** om uw bestand te kiezen, of zet het rechtstreeks in de zone neer. Dastra leest de eerste rijen om de kolomkoppeling voor te bereiden.
 
-<figure><img src="../../.gitbook/assets/image (248) (1).png" alt=""><figcaption></figcaption></figure>
+### 3. Uw gegevens controleren
 
-Als alles er goed uitziet, kun je beginnen met het importeren van de gegevens.
+De stap **Correspondentie** koppelt de kolommen van uw bestand aan de kolommen die de import verwacht. Dastra koppelt ze automatisch wanneer de kop gelijk is aan de naam of het label van de kolom. De tabbladen **Alle kolommen**, **Geen overeenkomst** en **Correspondentie (geïmporteerd bestand)** filteren de lijst, en de kolom **Bestandsgegevens** toont een voorbeeld van uw gegevens.
 
-### 4. de gegevens importeren
+<figure><img src="../../.gitbook/assets/general-import-4.png" alt="Stap Correspondentie met de Dastra-kolommen, de gekoppelde kolom van het bestand en een voorbeeld van de gegevens"><figcaption><p>De stap Correspondentie</p></figcaption></figure>
 
-Start het importeren van de gegevens door op de knop Doorgaan te klikken. Het importproces wordt dan gestart.
+De knop **Ga verder** blijft uitgeschakeld zolang een verplichte kolom geen overeenkomst heeft.
 
-<figure><img src="../../.gitbook/assets/image (252) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### 4. De gegevens importeren
 
+Klik op **Ga verder** om de import te starten. Het scherm **Resultaat** toont het aantal verwerkte rijen en het aantal aangemaakte, bijgewerkte en overgeslagen objecten. Klik op **Tonen** om de lijst te openen.
 
+<figure><img src="../../.gitbook/assets/general-import-5.png" alt="Resultaatscherm van de import met het aantal verwerkte rijen en aangemaakte, bijgewerkte en overgeslagen objecten"><figcaption><p>Het resultaat van de import</p></figcaption></figure>
 
-### 5. Je bent klaar!
+Als een rij de validatie niet doorstaat (bijvoorbeeld een leeg verplicht veld of een te lange waarde), wordt de hele import gestopt en wordt niets opgeslagen. Het bericht geeft het nummer van de betrokken rij, waarbij de kop van het bestand als rij 1 telt. Corrigeer het bestand en start de import opnieuw.
 
-Je hebt het einde van deze handleiding bereikt! We raden je aan om te controleren of de gegevens in de tool zijn geïmporteerd.
-
-
-
-
-
-
-
-
-
-
+Controleer daarna of de gegevens correct in de toepassing zijn geïmporteerd.

@@ -12,21 +12,25 @@ Ces frameworks servent de **socle commun** pour construire vos projets de confor
 
 ***
 
-#### 1. Navigation latérale – Bibliothèque de conformité
+## 1. Navigation latérale de la bibliothèque de conformité
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/compliance-library-frameworks-empty.png" alt="library view"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/compliance-library-frameworks-1.png" alt="Liste des frameworks de la bibliothèque avec le menu latéral et la jauge des frameworks utilisés"><figcaption></figcaption></figure></div>
 
-Le menu latéral permet d’accéder aux différents objets de la bibliothèque :
+Le menu latéral regroupe les objets de la bibliothèque en deux groupes, avec le nombre d'éléments de chaque entrée :
 
-* **Frameworks** : référentiels de conformité (bibliothèque centrale)
-* **Exigences** : chapitres et exigences qui structurent un framework
-* **Contrôles** : élément central reliant exigences, tests et risques
-* **Risques** : supports de l’évaluation et du suivi du risque
-* **Menaces** : événements ou scénarios pouvant matérialiser un risque
+* Groupe **Conformité** :
+  * **Frameworks** : référentiels de conformité (bibliothèque centrale). Les chapitres et les exigences qui structurent un framework se consultent dans la fiche du framework
+  * **Contrôles** : élément central reliant exigences, tests et risques
+  * **Tests** : vérifications qui démontrent l'efficacité d'un contrôle
+* Groupe **Risques** :
+  * **Risques** : supports de l’évaluation et du suivi du risque
+  * **Menaces** : événements ou scénarios pouvant matérialiser un risque
+
+Au bas du menu, la jauge **frameworks utilisés** indique votre consommation de crédits de frameworks.
 
 ***
 
-#### 2. Liste des frameworks
+## 2. Liste des frameworks
 
 La zone centrale affiche la liste des frameworks disponibles dans votre environnement :
 

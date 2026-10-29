@@ -1,35 +1,38 @@
 ---
 description: >-
-  Diese Seite erklärt, wie Sie interne Kennungen der Organisation in die
-  Einwilligungsnachweise übertragen
+  Diese Seite erklärt, wie Sie die internen Kennungen der Organisation im
+  Einwilligungsnachweis nachvollziehbar machen.
 ---
 
-# Identifikation der Nutzer
+# Nutzeridentifizierung
 
-## Funktionsprinzip
+## So funktioniert es
 
-Das Prinzip ist folgendes: Sie senden die **eindeutige Kennung des authentifizierten Nutzers** in Ihrem Intranet an das Dastra-Widget, und dieses sendet diese ID bei der Erfassung der Nutzereinwilligung mit. So ist es möglich, die Einwilligungsnachweise mit der Kundendatenbank abzugleichen (CRM, Kundendatenbank, Kundenverzeichnis oder andere...). Im Bereich zur Anzeige der Einwilligungsnachweise wird die übermittelte Nutzerkennung angezeigt.
+Sie senden die **eindeutige Kennung des authentifizierten Nutzers** Ihres Intranets an das Dastra-Banner, das diese Kennung bei der Erfassung der Einwilligung des Nutzers mitgibt. Anschließend können Sie den Einwilligungsnachweis Ihrem Kundenbestand zuordnen (CRM, Kundenverzeichnis usw.). Die von Ihnen übergebene Kennung wird in dem Bereich angezeigt, in dem Sie die Einwilligungsnachweise einsehen.
 
-## Schritt 1: Die Nutzerkennung auswählen
+## Schritt 1: Die Nutzerkennung wählen
 
-Für diesen Abgleich wählen Sie eine pseudonyme Kennung, die an das Widget übertragen wird, zum Beispiel die interne Kundennummer oder die CRM-Kennung. Diese Variable muss auf der Webseite verfügbar sein und wird im Klartext übertragen: Sie darf keine direkten personenbezogenen Daten enthalten (Name, Vorname, E-Mail-Adresse), auch nicht base64-kodiert, da sich base64 umkehren lässt.
-
+Wählen Sie für diese Zuordnung eine pseudonyme Kennung, die Sie an das Banner übergeben, etwa die interne Kunden-ID oder die CRM-ID. Diese Variable muss auf der Webseite verfügbar sein und wird im Klartext gesendet: Sie darf keine direkten personenbezogenen Daten enthalten (Nachname, Vorname, E-Mail-Adresse), auch nicht Base64-kodiert, da sich Base64 umkehren lässt.
 
 ## Schritt 2: Den Integrationscode anpassen
 
-```markup
+```html
 <div id="cookie-consent"></div>
 <script src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY HERE}" async></script>
 <script>
 
-// Dastra's array's initialization
+// Dastra's array initialization
 window.dastra = window.dastra || [];
 
 // Load the cookie consent in page
 dastra.push(['loadCookieConsent', {
     widgetId: {Paste your widgetId here (digit)},
     selector: '#cookie-consent',
-    userId: {your user's pseudonymous id}
+    userId: '{your user pseudonymous id}'
 }]);
 </script>
 ```
+
+{% hint style="info" %}
+Je nach Hosting-Region Ihrer Organisation ändert sich die Adresse des Skripts (`cdn-bleu.dastra.eu` statt `cdn.dastra.eu`). Verwenden Sie die Adresse des Codes, den Sie aus dem Abschnitt **Installation** des Banners kopiert haben.
+{% endhint %}

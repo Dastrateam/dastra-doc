@@ -1,5 +1,6 @@
 ---
-description: Beheer de privacyconformiteit voor uw Amerikaanse gebruikers (CCPA/CPRA, GPC, DoNotTrack) met de cookietoestemmingswidget van Dastra.
+description: >-
+  Beheer de privacyconformiteit voor uw Amerikaanse gebruikers (CCPA/CPRA, GPC, DoNotTrack) met de cookietoestemmingswidget van Dastra.
 ---
 
 # US Privacy: CCPA, GPC en DoNotTrack
@@ -29,7 +30,7 @@ Sinds de CPRA (2023) moeten bedrijven het signaal Global Privacy Control (GPC) r
 
 ### 1. Een geogerichte variant voor de Verenigde Staten aanmaken
 
-Uw Amerikaanse gebruikers behandelt u door in het keuzemenu van uw widget een geogerichte variant aan te maken.
+Het snelst behandelt u uw Amerikaanse gebruikers door een geogerichte variant aan te maken in het keuzemenu voor varianten rechtsboven in uw bannereditor (zie [Geogerichte varianten](geo-targeting.md)).
 
 Configureer voor Californië (CCPA/CPRA) de variant met een opt-outmodel: niet-essentiële cookies zijn standaard actief en gebruikers kunnen zich afmelden. Overweeg ook een link "Do Not Sell or Share My Personal Information" in de voettekst van uw site, die de widget rechtstreeks opent.
 
@@ -116,7 +117,7 @@ Categorielabels voor `setPurposeConsent`:
 | Voorkeuren | `Preference` |
 | Analytisch | `Analytical` |
 | Marketing | `Marketing` |
-| Overig | `Other` |
+| Andere | `Other` |
 | Niet geclassificeerd | `Unclassified` |
 
 ### 3. Een bevestigingsbericht "Opt-Out Request Honored" tonen
@@ -161,7 +162,7 @@ if (isOptOut) {
 
 #### Optie B: permanente balk
 
-Een vaste balk onderaan de pagina, zichtbaar zolang GPC in de browser actief is. Dit is robuuster voor de conformiteit: de melding blijft ook na de eerste lading zichtbaar. Met een knop Dismiss kan de gebruiker de balk sluiten.
+Een vaste balk onderaan de pagina, zichtbaar zolang GPC in de browser actief is. Dit is beter voor de conformiteit: de melding is permanent en blijft ook na de eerste lading zichtbaar. Met een knop Dismiss kan de gebruiker de balk sluiten.
 
 ```html
 <script>
@@ -181,7 +182,7 @@ if (isOptOut) {
       bar.setAttribute('role', 'status');
       bar.setAttribute('aria-live', 'polite');
       bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;font-size:13px;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;z-index:9999;border-top:1px solid #333';
-      bar.innerHTML = '<span>🔒 Opt-Out Request Honored — analytics and marketing cookies are disabled.</span>'
+      bar.innerHTML = '<span>🔒 Opt-Out Request Honored, analytics and marketing cookies are disabled.</span>'
         + '<button onclick="this.parentNode.remove()" style="background:none;border:1px solid #555;color:#fff;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:16px">Dismiss</button>';
       document.body.appendChild(bar);
     }

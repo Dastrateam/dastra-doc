@@ -9,22 +9,22 @@ description: >-
 Dans Dastra, une menace représente le **facteur déclencheur** d’un risque :\
 elle décrit _comment_ ou _pourquoi_ un risque peut se matérialiser.
 
-👉 Les menaces viennent enrichir l’analyse des risques, sans complexifier leur évaluation.
+Les menaces viennent enrichir l’analyse des risques, sans complexifier leur évaluation.
 
 ***
 
-### Menaces, risques et contrôles : logique causale
+## Menaces, risques et contrôles : logique causale
 
 Le modèle Dastra repose sur une chaîne simple et lisible :
 
-> **Menace → Risque → Contrôles → Tests**
+> **Menace** > **Risque** > **Contrôles** > **Tests**
 
 * Une **menace** décrit une situation, un comportement ou un événement
 * Un **risque** décrit l’impact potentiel pour l’organisation
 * Les **contrôles** visent à limiter la survenue ou les effets du risque
 * Les **tests** permettent de vérifier l’efficacité des contrôles
 
-📌 Exemple :
+Exemple :
 
 * **Menace** : absence de supervision des logs IA
 * **Risque** : fuite d’informations via requêtes IA
@@ -33,9 +33,9 @@ Le modèle Dastra repose sur une chaîne simple et lisible :
 
 ***
 
-### Vue bibliothèque des menaces
+## Vue bibliothèque des menaces
 
-<figure><img src="../../../.gitbook/assets/compliance-library-threats-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-threats-list.png" alt="Bibliothèque de menaces avec la liste des menaces"><figcaption></figcaption></figure>
 
 La bibliothèque des menaces centralise l’ensemble des menaces identifiées, avec :
 
@@ -43,7 +43,7 @@ La bibliothèque des menaces centralise l’ensemble des menaces identifiées, a
 * leur date de création,
 * des filtres pour faciliter la navigation.
 
-👉 Cette vue permet de :
+Cette vue permet de :
 
 * réutiliser des menaces existantes,
 * garantir une terminologie homogène,
@@ -51,7 +51,7 @@ La bibliothèque des menaces centralise l’ensemble des menaces identifiées, a
 
 ***
 
-### Création et gestion d’une menace
+## Création et gestion d’une menace
 
 {% columns %}
 {% column %}
@@ -63,7 +63,7 @@ Lors de la création ou de l’édition d’une menace, l’utilisateur renseign
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-library-threat-edit-form.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-threat-edit-form.png" alt="Fenêtre d'édition d'une menace"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -72,7 +72,7 @@ les menaces ne portent pas d’évaluation chiffrée et ne sont pas liées direc
 
 ***
 
-### Association aux risques
+## Association aux risques
 
 Une menace est associée à **un ou plusieurs risques**.
 
@@ -82,11 +82,11 @@ Cette association permet :
 * d’améliorer la compréhension des causes,
 * de renforcer la cohérence de l’analyse globale.
 
-👉 Une même menace peut contribuer à plusieurs risques, et inversement.
+Une même menace peut contribuer à plusieurs risques, et inversement.
 
 ***
 
-### Pourquoi utiliser les menaces
+## Pourquoi utiliser les menaces
 
 L’utilisation des menaces permet :
 
@@ -98,7 +98,13 @@ Les menaces complètent l’analyse sans alourdir la gestion opérationnelle.
 
 ***
 
-### Synthèse
+## Fusion de menaces
+
+La bibliothèque de menaces se fusionne comme celle des risques : sélectionnez au moins deux menaces, puis cliquez sur **Fusionner** dans les actions groupées, ou dans la fenêtre d’édition d’une menace. Choisissez la **version de référence** et les champs à reporter (voir [Contrôles](controls.md)). La fusion est irréversible.
+
+***
+
+## Synthèse
 
 Les menaces sont un **outil de clarification**.\
 Elles permettent de mieux comprendre **l’origine des risques**, et donc de mieux justifier les contrôles mis en place.

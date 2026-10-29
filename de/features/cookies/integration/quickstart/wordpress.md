@@ -1,30 +1,32 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie das Dastra-Cookie-Widget auf einer WordPress-Website
+  Erfahren Sie, wie Sie das Dastra-Cookie-Banner auf einer WordPress-Website
   integrieren.
 ---
 
 # Wordpress
 
-## 1. Abruf des SDK
+## Das Dastra-Plugin installieren
 
-Sobald Sie die Konfiguration und das Design des Dastra Cookie-Einwilligungs-Widgets abgeschlossen haben, können Sie das SDK im Bereich „Installation" abrufen.
+Das Dastra-Plugin ist die empfohlene Methode: Theme-Updates überschreiben es nicht.
 
-{% hint style="info" %}
-Sie können dieses Code-Snippet hier finden und kopieren/einfügen:\
-Cookie-Einwilligung > Bearbeiten > Installation
-{% endhint %}
+1. Öffnen Sie im Banner den Abschnitt **Installation** und klicken Sie auf die Karte **Wordpress**.
+2. Klicken Sie auf **Bitte besuchen Sie die Plugin-Seite** oder suchen Sie in der Plugin-Liste Ihrer WordPress-Verwaltung nach dem Plugin „Dastra“. Sie können das Plugin auch in diesem Fenster herunterladen und manuell installieren.
+3. Installieren und aktivieren Sie das Plugin.
+4. Öffnen Sie in WordPress **Settings** > **Dastra** und klicken Sie auf **Link with Dastra**, um das Plugin mit Ihrem Banner zu verknüpfen.
 
-![](../../../../.gitbook/assets/Cookie14.png)
+<figure><img src="../../../../.gitbook/assets/cookies-wordpress-1.png" alt="Das WordPress-Fenster im Abschnitt Installation mit dem Link zum Plugin"><figcaption><p>Die Karte „Wordpress“ im Abschnitt Installation</p></figcaption></figure>
 
-## 2. Kopieren und Einfügen im WordPress-Editor
+## Oder den Code im Theme einfügen
 
-Sobald der Code abgerufen ist, gehen Sie in die Administrationskonsole Ihrer WordPress-Website.
+Wenn Sie kein Plugin installieren können, fügen Sie den Code des Banners im Theme ein. Ein Theme-Update überschreibt diese Änderung: Nehmen Sie sie stattdessen in einem Child-Theme vor.
 
-Klicken Sie auf die Schaltfläche „Design" in der vertikalen Seitenleiste links und dann auf die Schaltfläche „Theme-Editor".
+1. Klicken Sie im Abschnitt **Installation** des Banners auf die Karte **Javascript** und kopieren Sie den Code.
+2. Klicken Sie in der Verwaltung Ihrer WordPress-Website auf **Appearance** und dann auf **Theme Editor**.
+3. Wählen Sie die Datei `footer.php` aus und fügen Sie den Code unmittelbar vor dem `</body>`-Tag ein.
 
-Wählen Sie die Datei „Footer.php" auf der rechten Seite des angezeigten Bildschirms aus und fügen Sie den zuvor abgerufenen Dastra-Code am Ende des \<body>-Tags ein (direkt vor \</body>).
+![Der WordPress-Theme-Editor mit geöffneter Datei footer.php](../../../../.gitbook/assets/cookies-wordpress-theme-editor.png)
 
-![](../../../../.gitbook/assets/image-80.png)
+4. Klicken Sie auf **Update File** und aktualisieren Sie dann die Seite Ihrer Website. Das Banner erscheint.
 
-Speichern Sie, indem Sie auf „Datei aktualisieren" klicken, und aktualisieren Sie dann die Seite Ihrer Website. Fertig – das Banner erscheint!
+Fügen Sie außerdem eine Schaltfläche hinzu, die das Banner erneut öffnet, wie unter [Schnellstart](README.md#das-banner-uber-eine-schaltflache-erneut-offnen) beschrieben.

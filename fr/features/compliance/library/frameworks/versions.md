@@ -13,7 +13,7 @@ Chaque framework de la Bibliothèque est versionné. Une version porte un numér
 
 ***
 
-### Numéro de version et version actuelle
+## Numéro de version et version actuelle
 
 Le numéro de version s'affiche sous le nom du framework, sur sa carte dans la liste des frameworks et dans l'onglet **Détails** (carte **Informations de version**, avec la note de version).
 
@@ -23,7 +23,7 @@ La liste des frameworks de la Bibliothèque affiche la version actuelle de chaqu
 
 ***
 
-### Consulter l'historique des versions
+## Consulter l'historique des versions
 
 L'onglet **Versions** d'un framework liste toutes ses versions, de la plus récente à la plus ancienne. Chaque ligne indique :
 
@@ -45,7 +45,7 @@ Le menu d'actions de chaque version propose, selon son statut :
 
 ***
 
-### Créer une version
+## Créer une version
 
 1. Ouvrez le framework, puis l'onglet **Versions**.
 2. Cliquez sur **Créer une nouvelle version**.
@@ -64,7 +64,7 @@ Les versions d'un framework ne sont pas décomptées séparément dans le quota 
 
 ***
 
-### Publier, annuler la publication ou supprimer une version
+## Publier, annuler la publication ou supprimer une version
 
 * **Publier** : depuis le menu d'actions de la version, ou avec le bouton **Publier** en haut de la fiche du framework. Une version publiée est proposée lors de l'ajout du framework à un projet. Plusieurs versions publiées d'un même framework peuvent coexister.
 * **Annuler publication** : la version repasse à l'état brouillon et n'est plus proposée lors de l'ajout du framework à un projet. La version actuelle ne peut pas être dépubliée : définissez d'abord une autre version comme version actuelle.
@@ -76,7 +76,7 @@ Les exigences d'une version publiée sont verrouillées : le bouton **Modifier**
 
 ***
 
-### Définir la version actuelle
+## Définir la version actuelle
 
 Dans l'onglet **Versions**, ouvrez le menu d'actions d'une version publiée et cliquez sur **Définir comme version actuelle**.
 
@@ -84,12 +84,12 @@ Cette version devient celle proposée et installée par défaut lorsque le frame
 
 ***
 
-### Mettre à jour depuis le référentiel source
+## Mettre à jour depuis le référentiel source
 
 Lorsqu'un framework a été créé à partir d'un modèle et qu'une version plus récente de ce référentiel source est disponible :
 
 * la carte du framework, dans la liste, affiche le badge **Mise à jour disponible**,
-* la fiche du framework affiche le bandeau _Une version plus récente du référentiel source est disponible_, suivi du lien **mettre à jour**.
+* la fiche du framework affiche le message _Une version plus récente du référentiel source est disponible_, suivi du lien **mettre à jour**.
 
 Cliquez sur **mettre à jour** pour ouvrir la fenêtre **Mettre à jour depuis le référentiel source**. Elle présente un aperçu des changements sur les contrôles, les tests, les scénarios de risque et les menaces ; les éléments retirés du référentiel source sont signalés par la mention **Absent de la source**.
 
@@ -97,19 +97,19 @@ Cliquez sur **Valider** : une version publiée du framework est créée à parti
 
 ***
 
-### Versions et projets de conformité
+## Versions et projets de conformité
 
-#### Choisir la version à installer
+### Choisir la version à installer
 
 Lors de l'ajout d'un framework à un projet (**Ajouter un framework au projet**), seules les versions publiées sont proposées. Lorsque plusieurs versions publiées existent, une liste déroulante (**Version à installer**) apparaît à côté du nom du framework ; la version actuelle y est présélectionnée. Le projet est ensuite rattaché à la version installée.
 
-#### Repérer un projet à mettre à jour
+### Repérer un projet à mettre à jour
 
 Dans la vue d'ensemble du projet, la carte de chaque framework affiche le numéro de la version utilisée. Le badge **Mise à jour disponible** signale que le projet utilise une version qui n'est plus la version actuelle du framework.
 
 <figure><img src="../../../../.gitbook/assets/compliance-project-overview-framework-update-available.png" alt="Carte d'un framework dans un projet avec le numéro de version et le badge Mise à jour disponible"><figcaption><p>Le badge Mise à jour disponible signale un projet rattaché à une version antérieure du framework</p></figcaption></figure>
 
-#### Migrer un projet vers une autre version
+### Migrer un projet vers une autre version
 
 1. Dans la vue d'ensemble du projet, ouvrez le menu d'actions de la carte du framework et cliquez sur **Mettre à jour la version du framework**.
 2. Choisissez la **Version cible** parmi les autres versions publiées. Sa note de version et un aperçu des éléments ajoutés au projet s'affichent.
