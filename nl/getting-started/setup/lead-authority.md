@@ -1,19 +1,29 @@
+---
+description: >-
+  Stel de leidende toezichthoudende autoriteit van een entiteit in Dastra in.
+---
+
 # Een leidende autoriteit toevoegen
 
-In de entiteit kunt u een leidende autoriteit toevoegen &#x20;
+Voert uw organisatie grensoverschrijdende gegevensverwerkingen uit, dan kunt u voor alle verwerkingsactiviteiten in de Europese Unie gebruikmaken van het mechanisme van het "one-stop-shop". Uw aanspreekpunt is dan de "leidende" toezichthoudende autoriteit.
 
-Als u een organisatie bent die grensoverschrijdende gegevensverwerking uitvoert, kunt u profiteren van het "one-stop shop"-mechanisme voor alle verwerkingsactiviteiten op Europees grondgebied.
+Een voorbeeld: de CNIL is de leidende autoriteit voor grensoverschrijdende verwerkingen van organisaties:
 
-Dit contact is de "leidende" toezichthoudende autoriteit.
+* die meerdere vestigingen in de Europese Unie hebben en waarvan het hoofdkantoor in Frankrijk is gevestigd, als die vestiging beslist over de doeleinden en de middelen van de grensoverschrijdende verwerking;
+* die meerdere vestigingen in de Europese Unie hebben, waarvan het hoofdkantoor niet beslist over de doeleinden en de middelen van de grensoverschrijdende verwerking, maar waarvan de vestiging die deze beslissingen neemt in Frankrijk is gevestigd;
+* die één enkele vestiging in de Europese Unie hebben, gelegen in Frankrijk.
 
-**De CNIL is bijvoorbeeld de leidende autoriteit in Frankrijk voor grensoverschrijdende Verwerkingen die worden uitgevoerd door organisaties:** * die meerdere vestigingen hebben in de Europese Unie.
+## De leidende autoriteit instellen in Dastra
 
-* die meerdere vestigingen in de Europese Unie hebben en waarvan de maatschappelijke zetel in Frankrijk is gevestigd, indien deze vestiging beslist over de doeleinden en middelen van de grensoverschrijdende verwerking;
-* die beschikken over meerdere vestigingen in de Europese Unie waarvan het hoofdkantoor niet beslist over de doeleinden en middelen van de grensoverschrijdende Verwerking, maar waarvan de vestiging die deze beslissingen neemt in Frankrijk is gevestigd;
-* die één vestiging in de Europese Unie hebben, gevestigd in Frankrijk.
+De leidende autoriteit stelt u in op het niveau van de entiteit.
 
-### Is het verplicht? &#x20;
+1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Organisatorische eenheden**.
+2. Klik op de drie puntjes rechts van de entiteit en daarna op **Bewerken**.
+3. Selecteer de autoriteit in het veld **Leidende toezichthoudende autoriteit**.
+4. Klik op **Opslaan**.
 
-Nee, het is niet verplicht om een leidende autoriteit aan te wijzen of om zichzelf aan te wijzen. Het is echter zeer nuttig voor het beheer van uw naleving &#x20;
+<figure><img src="../../.gitbook/assets/getting-started-dpo-1.png" alt="Venster voor het bewerken van een entiteit met het veld Leidende toezichthoudende autoriteit"><figcaption><p>Het venster voor het bewerken van een entiteit</p></figcaption></figure>
 
-We raden u aan het aan te wijzen. Het is met name nuttig om te weten aan welke autoriteit een melding van een datalek moet worden gericht in geval van grensoverschrijdende verwerking.
+## Een optionele aanwijzing
+
+U bent niet verplicht een leidende autoriteit aan te wijzen of u bij een autoriteit te registreren. Het is wel nuttig voor het beheer van uw naleving: u ziet er onder meer mee welke autoriteit bij grensoverschrijdende verwerking een melding van een datalek ontvangt.

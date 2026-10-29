@@ -1,109 +1,126 @@
 ---
-description: Leer entiteiten en afdelingen maken en instellen in Dastra.
+description: >-
+  Leer hoe u entiteiten en afdelingen in Dastra aanmaakt en instelt.
 ---
 
 # Organisatorische eenheden aanmaken en instellen
 
+## Inleiding
 
+Organisatorische eenheden structureren uw werkruimte. U kunt twee soorten organisatorische eenheden aanmaken:
 
-{% embed url="https://www.youtube.com/watch?v=QyEliXjoMJ0&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=2" %}
+* entiteiten, die overeenkomen met juridische entiteiten en een verwerkingsverantwoordelijke vertegenwoordigen;
+* afdelingen, die de entiteiten indelen.
 
-### Inleiding
-
-Organisatorische eenheden worden gebruikt om uw werkruimte te structureren. Er kunnen twee soorten organisatorische eenheden worden gemaakt:&#x20;
-
-* entiteiten**, die overeenkomen met juridische entiteiten en een Verwerkingsverantwoordelijke vertegenwoordigen,
-* afdelingen**, die worden gebruikt om entiteiten te organiseren.
-
-In Dastra is het begrip werkruimte losgekoppeld van het begrip juridische entiteit. Dus **een werkruimte kan verwijzen naar verschillende juridische entiteiten** (zoals in een groep, bijvoorbeeld). Anderzijds kan er slechts één wettelijke vertegenwoordiger per juridische entiteit zijn.
+In Dastra is een werkruimte geen juridische entiteit: een werkruimte kan verwijzen naar meerdere afzonderlijke juridische entiteiten, zoals in een bedrijvengroep. Per juridische entiteit kan er echter maar één wettelijke vertegenwoordiger zijn.
 
 {% hint style="info" %}
-Elke entiteit in Dastra wordt beschouwd als een Verwerkingsverantwoordelijke &#x20;
+Elke entiteit in Dastra geldt als verwerkingsverantwoordelijke.
 {% endhint %}
 
-### Ga naar de module "Organisatorische eenheden" in Dastra.
+## Naar de organisatorische eenheden gaan
 
-Ga naar "Instellingen" aan de linkerkant van het scherm en klik vervolgens op "Organisatorische eenheden".
+Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Organisatorische eenheden**.
 
+<figure><img src="../../.gitbook/assets/getting-started-org-units-1.png" alt="Menu Instellingen voor werkruimte met de optie Organisatorische eenheden"><figcaption><p>Het menu Instellingen voor werkruimte</p></figcaption></figure>
 
+Het scherm voor het aanmaken en instellen van organisatorische eenheden opent. Het heeft twee tabbladen: **Organisatorische eenheden** (de lijst) en **Organigram**.
 
-Toegangsknop werkruimte-instellingen
+<figure><img src="../../.gitbook/assets/getting-started-org-units-2.png" alt="Lijst van organisatorische eenheden met de knop Maak een entiteit (verwerkingsverantwoordelijke) en het bijbehorende menu"><figcaption><p>De lijst van organisatorische eenheden</p></figcaption></figure>
 
+## Een entiteit aanmaken of bewerken
 
-Toegang tot organisatorische eenheidsparameters
+1. Klik op **Maak een entiteit (verwerkingsverantwoordelijke)**.
+2. Vul de **Naam van de entiteit** en het **Land** in. Dat zijn verplichte velden. U kunt ook de verantwoordelijke (de wettelijke vertegenwoordiger), de functionaris voor gegevensbescherming en, indien van toepassing, de vertegenwoordiger in de Europese Unie opgeven.
+3. Klik op **Opslaan**.
 
-Dit brengt je naar het **creatie en instellingen** scherm voor organisatorische eenheden:
-
-Beheersinterface organisatorische eenheden
-
-## Een entiteit creëren of wijzigen
-
-Om een juridische entiteit aan te maken, klik je gewoon op de knop "Een entiteit aanmaken (gegevensbeheerder)" in de module "Entiteiten en afdelingen".
-
-Creëer een entiteit" knop
-
-Vul de verplichte velden in: de naam en het land zijn verplicht. Je kunt de naam van de verantwoordelijke (de wettelijke vertegenwoordiger) invoeren, evenals de functionaris voor gegevensbescherming (indien van toepassing) en de vertegenwoordiger binnen de EU (indien van toepassing).
+<figure><img src="../../.gitbook/assets/getting-started-org-units-3.png" alt="Formulier voor het aanmaken van een entiteit"><figcaption><p>Het formulier voor het aanmaken van een entiteit</p></figcaption></figure>
 
 {% hint style="info" %}
-In tegenstelling tot afdelingen is het aantal entiteiten (Verwerkingsverantwoordelijken) dat kan worden ingevoerd in Dastra beperkt door een quotum dat afhankelijk is van uw abonnement. Als u dit quotum wilt verhogen, [neem contact op met verkoop](https://www.dastra.eu/en/contacts).
+Anders dan bij afdelingen hangt het aantal entiteiten (verwerkingsverantwoordelijken) dat u kunt aanmaken af van een quotum dat aan uw abonnement is gekoppeld. Om het te verhogen, [neemt u contact op met het verkoopteam](https://www.dastra.eu/en/contacts).
 {% endhint %}
 
-Om een entiteit te wijzigen, klikt u op de 3 puntjes rechts van de betreffende entiteit en vervolgens op "Wijzigen".
+Om een entiteit te bewerken, klikt u op de drie puntjes rechts van de entiteit en daarna op **Bewerken**. Breng uw wijzigingen aan en klik op **Opslaan**.
 
-Uitrolmenu gekoppeld aan een entiteit
+<figure><img src="../../.gitbook/assets/getting-started-org-units-4.png" alt="Contextmenu van een organisatorische eenheid"><figcaption><p>Het menu met drie puntjes van een organisatorische eenheid</p></figcaption></figure>
 
-Breng de gewenste wijzigingen aan en klik op "Opslaan".
+## Een afdeling aanmaken of bewerken
 
-## Afdeling aanmaken of wijzigen
+Om een afdeling aan te maken, opent u het menu van de knop **Maak een entiteit (verwerkingsverantwoordelijke)**, klikt u op **Maak een afdeling** en vult u de velden in.
 
-Om een afdeling aan te maken, klik je op de knop "Afdeling aanmaken" in de module "Organisatorische eenheden" en vul je de verplichte velden in.
+Om een afdeling te bewerken, klikt u op de drie puntjes rechts van de afdeling en daarna op **Bewerken**, brengt u uw wijzigingen aan en klikt u op **Opslaan**.
 
-Maak een afdeling aan" knop
+## Onderliggende eenheden toevoegen
 
-Om een afdeling te wijzigen, klik je op de 3 stippen rechts van de afdeling die je wilt wijzigen, klik je op "Wijzigen" en vul je de gevraagde velden in, voordat je op "Opslaan" klikt.
+Het menu met drie puntjes van een eenheid biedt ook:
 
-Drop-down menu gekoppeld aan een afdeling
+* **Een onderliggende afdeling toevoegen**: maakt een afdeling onder de eenheid aan;
+* **Een onderliggende entiteit toevoegen**: maakt een entiteit onder de eenheid aan, bijvoorbeeld om de dochteronderneming van een dochteronderneming weer te geven.
 
-## Organisatorische eenheden importeren
+## Een organisatorische eenheid verwijderen en de gegevens overdragen
 
-Je kunt een lijst van organisatorische eenheden importeren via een importbestand. Dit bestand kun je downloaden door op de knop "Importeren" te klikken in de interface voor het beheer van organisatorische eenheden.&#x20;
+Een organisatorische eenheid kan niet worden verwijderd zolang er items aan gekoppeld zijn. Klik in het menu met drie puntjes op **Verwijderen**, klik daarna op de vermelde items en wijs ze toe aan een andere eenheid. U kunt ook op **Gegevens overdragen** klikken om de objecttypen van uw keuze naar een andere eenheid te verplaatsen zonder de eenheid te verwijderen.
 
-Klik vervolgens op "Het sjabloonbestand downloaden".
+<figure><img src="../../.gitbook/assets/getting-started-org-units-7.png" alt="Scherm voor het verwijderen van een organisatorische eenheid met de lijst van over te dragen items"><figcaption><p>Een organisatorische eenheid verwijderen</p></figcaption></figure>
 
-Na het invullen van het bestand, drop het in de dropbox en volg de instructies.
-
-## Entiteiten en afdelingen bekijken en configureren vanuit het organigram
-
-In Dastra kunt u entiteiten en afdelingen ook grafisch weergeven en hun parameters direct vanuit het organigram instellen.
-
-Klik hiervoor op de weergave "Organogram" in de module "Entiteiten en afdelingen".
-
-Organogram-view
-
-Hiermee kun je het organigram van je groep grafisch bekijken:
-
-Voorbeeld van een organigram in Dastra
-
-{% hint style="info" %}
-Je kunt de meeste bewerkingen die beschikbaar zijn in de "Entiteiten / Afdelingen" view uitvoeren in de "Organogram" view.
+{% hint style="danger" %}
+Het verwijderen van een organisatorische eenheid is definitief. De bijbehorende gegevens worden overgedragen aan de eenheid die u kiest.
 {% endhint %}
+
+## Organisatorische eenheden importeren en exporteren
+
+Open het menu van de knop **Maak een entiteit (verwerkingsverantwoordelijke)**: het biedt **Importeren** en **Exporteren**.
+
+Om te importeren klikt u op **Importeren** en daarna op **Het bestandssjabloon downloaden**. Vul het bestand in en sleep het naar het uploadvak. Het bestand kan de indeling CSV (UTF-8-codering, scheidingsteken `;`), TXT of XLSX hebben.
+
+<figure><img src="../../.gitbook/assets/getting-started-org-units-5.png" alt="Importvenster voor organisatorische eenheden met de knop Het bestandssjabloon downloaden"><figcaption><p>Het importvenster</p></figcaption></figure>
+
+Twee kolommen zijn verplicht:
+
+* `Id`: de identificatie van de eenheid, een tekst die uniek is binnen het bestand (maximaal 80 tekens);
+* `Label`: de naam van de eenheid (maximaal 80 tekens).
+
+De andere kolommen zijn optioneel:
+
+* `ParentId`: de `Id` van de bovenliggende eenheid, als die er is;
+* `CountryCode`: het land, als code van 2 letters ([ISO 3166](https://www.iso.org/iso-3166-country-codes.html)). De standaardwaarde is `FR`;
+* `Type`: `Entity` voor een entiteit of `Area` voor een afdeling. De standaardwaarde is `Entity`;
+* `City`, `Address`, `ZipCode`, `MailAddress`, `PhoneNumber` en `ImmatriculationNumber`: de contactgegevens van de eenheid;
+* `RepresentativeName` en `RepresentativeType`, `DpoName` en `DpoType`, `ReferentName` en `ReferentType`: de naam en het type van de stakeholder die als vertegenwoordiger, DPO of verantwoordelijke is gekoppeld;
+* `OwnerEmail`: het e-mailadres van de eigenaar van de eenheid.
+
+{% hint style="warning" %}
+Beperk de hiërarchie tot 7 niveaus (relaties tussen bovenliggende en onderliggende eenheden), zodat de import correct wordt verwerkt.
+{% endhint %}
+
+Voorbeeld:
+
+<table><thead><tr><th>Id</th><th>ParentId</th><th width="492">Label</th><th>CountryCode</th><th>Type</th></tr></thead><tbody><tr><td>20996</td><td></td><td>HOLDING</td><td>FR</td><td>Entity</td></tr><tr><td>21009</td><td>20996</td><td>IT</td><td>BE</td><td>Area</td></tr></tbody></table>
+
+## Eenheden bekijken en instellen via het organigram
+
+Het tabblad **Organigram** toont uw entiteiten en afdelingen in een grafiek. U kunt daar de meeste handelingen uitvoeren die ook in de lijst beschikbaar zijn.
+
+<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigramweergave van de organisatorische eenheden"><figcaption><p>De weergave Organigram</p></figcaption></figure>
 
 ## Toegang tot de inhoud van een organisatorische eenheid beperken
 
-Je kunt het gebruikersteamsysteem gebruiken om de toegang te beperken tot inhoud die aan een organisatorische eenheid &#x20 is gekoppeld;
+U kunt teams van gebruikers gebruiken om de toegang tot de inhoud van een organisatorische eenheid te beperken. Koppel daarvoor teams aan de eenheid: klik in het menu met drie puntjes op **Machtigingen instellen voor** en voeg de gemachtigde gebruikers of teams toe.
 
-Om dit te doen, moet je teams aan organisatorische eenheden koppelen &#x20;
+Standaard erft een onderliggende eenheid de machtigingen van de bovenliggende eenheid. Zodra u machtigingen aan de onderliggende eenheid toevoegt, vervangen die de geërfde machtigingen.
 
-Het systeem is boomstructuur. Dit betekent dat als een team toegang wil krijgen tot een kind UO, het toegang moet krijgen tot de bovenliggende UO &#x20;
+### Beperkte toegang tot alleen een onderliggende entiteit
 
+U kunt een gebruiker of een team alleen aan een onderliggende entiteit toevoegen, zonder toegang te geven tot de bovenliggende entiteiten. Ze hebben dan uitsluitend toegang tot de gegevens van die entiteit, niet tot de bovenliggende entiteiten en ook niet tot de entiteiten op hetzelfde niveau.
 
+Deze modus is nuttig om het beheer van een dochteronderneming of een afdeling te delegeren aan lokale gebruikers zonder groepsgegevens bloot te stellen. Om dit in te stellen, opent u de machtigingen van de entiteit en voegt u de gebruiker of het team rechtstreeks aan die entiteit toe, zonder ze aan de bovenliggende entiteit te koppelen.
 
-Hier is een video met uitleg:
+{% hint style="info" %}
+Anders dan in de standaardmodus geeft beperkte toegang tot een onderliggende entiteit geen toegang tot de gegevens van de bovenliggende entiteiten.
+{% endhint %}
 
-{% embed url="https://www.youtube-nocookie.com/embed/AQdTo_4wSZk" %}
-
-## Verder gaan
+## Verder lezen
 
 {% content-ref url="teams.md" %}
-[maak-de-toewijzings-teams.md](teams.md)
+[Teams aanmaken en toewijzen](teams.md)
 {% endcontent-ref %}

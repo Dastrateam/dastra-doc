@@ -1,142 +1,137 @@
 ---
-description: Ontdek hoe het Dastra-uitnodigingssysteem werkt.
+description: >-
+  Ontdek hoe het uitnodigingssysteem van Dastra werkt.
 ---
 
 # Gebruikers uitnodigen
 
 ## Een gebruiker uitnodigen
 
-U kunt iemand uitnodigen om samen te werken aan uw werkruimten door hem uit te nodigen voor de organisatie waartoe de werkruimte behoort &#x20;
+U kunt iemand uitnodigen om samen te werken in uw werkruimten door die persoon uit te nodigen voor de organisatie waartoe de werkruimte behoort.
 
-Je kunt gebruikers uitnodigen voor je werkruimte door te klikken op de knop "instellingen" linksonder in het scherm, vervolgens op "toegangsbeheer / gebruikers" en ten slotte op "een gebruiker uitnodigen":
+1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Gebruikers**.
+2. Klik op **Een gebruiker uitnodigen**.
+3. Voer het e-mailadres van de persoon in. Is dit adres nog niet aan de organisatie gekoppeld, klik er dan op om verder te gaan.
+4. Vul het uitnodigingsformulier in (zie de onderstaande tabel) en klik op **Verstuur een uitnodiging per e-mail**.
 
-<figure><img src="../../.gitbook/assets/image (12) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-1.png" alt="Lijst van de gebruikers van de werkruimte met de knop Een gebruiker uitnodigen"><figcaption><p>De pagina Gebruikers in de werkruimte-instellingen</p></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/getting-started-users-2.png" alt="Formulier voor het uitnodigen van een gebruiker"><figcaption><p>Het uitnodigingsformulier</p></figcaption></figure>
 
+| Veld | Beschrijving |
+| --- | --- |
+| **Voornaam** en **Naam** | Identiteit van de uitgenodigde persoon |
+| **Taal van de interface** | Taal waarin de persoon Dastra ziet |
+| **Uitnodigen voor alle werkruimten** | Schakelaar: zonder deze optie kiest u de betrokken werkruimte |
+| **Selecteer gebruikersrol(len)** | Zie [Rollen en machtigingen beheren](roles.md) |
+| **Selecteer gebruikersteams** | Zie [Teams aanmaken en toewijzen](teams.md) |
+| **Standaard verbindingsmodus** | Lokaal account (aanmeldnaam en wachtwoord) of SSO, wanneer een SSO is geconfigureerd |
+| **Welkomstbericht** | Tekst die aan de uitnodigingsmail wordt toegevoegd |
 
-Voer het e-mailadres in van de persoon die je wilt uitnodigen voor jouw Dastra ruimte. Als dit adres nog niet is gekoppeld aan de organisatie, klik er dan op om hem of haar een uitnodigingslink te sturen.
+U kunt ook onderaan de linkerzijbalk op **Invite a member** klikken: dat opent hetzelfde formulier.
 
+De uitgenodigde persoon ontvangt een e-mail met een link die toegang geeft tot de werkruimte. U ontvangt een melding per e-mail wanneer de persoon op de link klikt. De uitnodigingslink verloopt na 10 dagen.
 
-Een formulier verschijnt. Voer je achternaam, voornaam, rol en team in en klik dan op de "Stuur een uitnodiging" knop. De uitgenodigde persoon zal een e-mail ontvangen met een link die, eenmaal geklikt, deze persoon toegang geeft tot de ruimte.
-\
-Dat is het, de gebruiker is uitgenodigd!
+In plaats van de e-mail te versturen, kunt u op **Een uitnodigingslink genereren** klikken: Dastra toont een link die u zelf aan de persoon doorgeeft.
 
-### Huidige uitnodigingen bekijken
+### De openstaande uitnodigingen vinden
 
-Je kunt de huidige uitnodigingen controleren in de werkruimte-instellingen in de sectie "Gebruikers".&#x20;
+U beheert openstaande uitnodigingen op het tabblad **Uitnodigingen** van de pagina **Gebruikers**.
 
-<figure><img src="../../.gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Tabblad Uitnodigingen met een openstaande uitnodiging"><figcaption><p>Het tabblad Uitnodigingen</p></figcaption></figure>
 
 ### Een uitnodigingslink opnieuw versturen
 
-Als de uitgenodigde gebruiker niet op de uitnodigingslink heeft geklikt en de link is verlopen (na 10 dagen), kun je de uitnodigingslink opnieuw verzenden door op de knop "Uitnodiging opnieuw verzenden" te klikken.&#x20;
+Heeft de uitgenodigde persoon niet op de link geklikt en is die verlopen, klik dan naast de uitnodiging op **Opnieuw verzenden** en bevestig.
 
-<figure><img src="../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
+### Teams aanmaken en toewijzen
 
-### Teams maken en toewijzen
+In Dastra worden gebruikers in teams gegroepeerd. Teams worden daarna toegewezen aan entiteiten of afdelingen, zodat u rollen en verantwoordelijkheden nauwkeurig beheert. Zie [Teams aanmaken en toewijzen](teams.md).
 
-In Dastra worden gebruikers gegroepeerd in teams, die op hun beurt worden toegewezen aan rechtspersonen of afdelingen. Op deze manier kunnen rollen en verantwoordelijkheden nauwkeurig worden beheerd.
+### Standaardrollen
+
+Dastra biedt vijf basisrollen. Hun gedetailleerde machtigingen worden beschreven in [Rollen en machtigingen beheren](roles.md).
+
+| Rol | Identificatie |
+| --- | --- |
+| Administrator | 1 |
+| Bijdrager | 2 |
+| Lezer | 3 |
+| Auditor | 11000 |
+| Conformiteitstester | 11500 |
 
 {% hint style="info" %}
-Er zijn verschillende standaardrollen in Dastra, die verschillende autorisatieniveaus vertegenwoordigen:
-
-** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **: Zij kunnen alles doen wat auteurs kunnen doen, maar ook organisatie- en ruimte-instellingen wijzigen.
-*Bijdrager**: Zij kunnen ruimtes lezen en bewerken. Ze kunnen concepten en wijzigingen zien die nog niet gepubliceerd zijn. Ze kunnen wijzigingen publiceren. Ze kunnen geen organisatie- of ruimteparameters wijzigen.
-* Lezer**: kan alleen gepubliceerde ruimtes in de organisatie bezoeken. Ze kunnen niet bewerken en geen wijzigingen zien die nog niet gepubliceerd zijn.
+Eigenaar van de organisatie en FG zijn geen rollen. Om een al uitgenodigde gebruiker de status van eigenaar van de organisatie te geven, zie [Hoe voegt u een eigenaar van de organisatie toe?](faq.md#hoe-voegt-u-een-eigenaar-van-de-organisatie-toe). Om de FG te wijzigen, zie [Hoe wijzigt u de FG?](faq.md#hoe-wijzigt-u-de-fg).
 {% endhint %}
 
-## Een grote lijst met gebruikers importeren
+## Een grote lijst gebruikers importeren
 
-Je kunt het importeren van een grote lijst gebruikers in het platform aanvragen. Om dit te doen moet je de Dastra teams &#x20;
+Voor het importeren van een grote lijst gebruikers (50 of meer) gaat u via het Dastra-team. U kunt de import van een lijst van maximaal 200 gebruikers aanvragen, binnen de grens van de beschikbare gebruikers.
 
-**De te volgen stappen:**&#x20;
+Te volgen stappen:
 
-* ga naar deze link: [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users)
-* klik op de knop "contact opnemen met het Dastra-team
+1. Open [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users), klik op de pijl rechts van de knop **Een gebruiker uitnodigen** en daarna op **Importeren**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-4.png" alt="Menu van de knop Een gebruiker uitnodigen met de opties Exporteren en Importeren"><figcaption><p>Het importmenu in de instellingen van de organisatie</p></figcaption></figure>
 
-* Maak een bestand per werkruimte in CSV-formaat met de volgende kolommen, gescheiden door , (komma):&#x20;
+2. Maak per werkruimte een bestand in CSV-indeling met de volgende kolommen, gescheiden door komma's.
 
-Verplicht: &#x20;
+Verplicht:
 
-* E-mail (e-mailadres van de gebruiker)
-* Voornaam (voornaam van de gebruiker)
-* FamilyName (achternaam gebruiker)
+* `Email`: het e-mailadres van de gebruiker;
+* `GivenName`: de voornaam;
+* `FamilyName`: de achternaam;
+* `Roles`: de identificaties van de rollen in Dastra, gescheiden door `|`;
+* `Teams`: de identificaties van de teams in Dastra, gescheiden door `|`.
 
-Optioneel: &#x20;
+Optioneel:
 
-* Rollen (gescheiden door |) > dit komt overeen met de rollen in Dastra
-* Teams (gescheiden door |) > dit komt overeen met de teams in Dastra
-* SSOConfigurationId > dit komt overeen met de SSO login identifier indien van toepassing.
+* `SSOConfigurationId`: de identificatie van de SSO-aanmelding, indien van toepassing.
 
-Hier is een voorbeeldbestand om te downloaden en in te vullen:&#x20;
+Hier is een voorbeeldbestand om te downloaden en in te vullen:
 
-{% file src="../../.gitbook/assets/Template_import_users (1).csv" %}
-Sjabloon importbestand
+{% file src="../../.gitbook/assets/sample-admin-users-import.csv" %}
+Sjabloon van het importbestand
 {% endfile %}
 
-**Voor rolidentificaties:**&#x20;
+### Identificaties van rollen
 
-Standaard: de basisrollen hebben de volgende identifiers:&#x20;
-
-* Beheerder = 1
-* Medewerker = 2
-* Lezer = 3
-
-Voor aangepaste rollen die u hebt gemaakt, is de identifier zichtbaar in de ontwikkelconsole van uw browser via de netwerktab &#x20;
+De basisrollen hebben de identificaties uit de bovenstaande tabel. Voor de aangepaste rollen die u hebt aangemaakt, ziet u de identificatie in de ontwikkelaarsconsole van uw browser, op het tabblad Network. Rollen moeten vóór de import zijn aangemaakt.
 
 {% hint style="info" %}
-Gebruik de volgende sneltoets om de console in Chrome te openen: Cmd + Option + C (op Mac) of Ctrl + Shift + J (op Windows).
+De console openen in Chrome: Cmd + Option + C (Mac) of Ctrl + Shift + J (Windows).
 
-Als u de console in Firefox wilt openen, gebruikt u de volgende sneltoets: Cmd + Option + K (op Mac) of Ctrl + Shift + J (onder Windows).
+De console openen in Firefox: Cmd + Option + K (Mac) of Ctrl + Shift + J (Windows).
 
-Gebruik de volgende sneltoets om de console te openen Cmd + Optie + C
-
-Als je de console wilt openen in Microsoft Edge, gebruik je de volgende sneltoets: Ctrl + Shift + I
+De console openen in Microsoft Edge: Ctrl + Shift + I.
 {% endhint %}
 
-Houd er rekening mee dat de rollen vooraf moeten worden aangemaakt.
+### Identificaties van teams
 
+Teams worden geïdentificeerd met hun identificatienummer. Om dat te vinden, opent u het team in Dastra met de knop **Bewerken**: het nummer staat in de titel van het venster.
 
+<figure><img src="../../.gitbook/assets/getting-started-users-7.png" alt="Venster voor het bewerken van een team waarvan de titel de identificatie toont"><figcaption><p>In dit voorbeeld is de identificatie van het team Test 8019</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>Hier is de rol identifier nummer 115</p></figcaption></figure>
+Teams zijn in Dastra niet verplicht. De teams die u in het bestand gebruikt, moeten vooraf in de werkruimte zijn aangemaakt.
 
+### Identificatie van de SSO-configuratie
 
+De kolom `SSOConfigurationId` is optioneel: vul die alleen in als u wilt dat de geïmporteerde gebruikers worden gekoppeld aan een SSO-aanmelding die al in uw organisatie is geconfigureerd. Laat de kolom leeg voor een standaardaanmelding met e-mailadres en wachtwoord.
 
-**Team ID's:**&#x20;
+Net als bij aangepaste rollen haalt u deze identificatie op in de ontwikkelaarsconsole van uw browser, op het tabblad Network:
 
-Deze kunnen worden ingesteld bij het toevoegen van een team
-
-<figure><img src="../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
+1. Open [de configuratiepagina van de SSO-aanmeldingen](https://app.dastra.eu/general-settings/sso) (u moet eigenaar van de organisatie zijn).
+2. Open de ontwikkelaarsconsole (zie de sneltoetsen hierboven) en ga naar het tabblad Network.
+3. Klik op het potloodpictogram van de betreffende SSO-aanmelding om het venster **SSO-login bewerken** te openen. Dit is een modaal venster: de URL van de pagina blijft `https://app.dastra.eu/general-settings/sso`.
+4. Open op het tabblad Network het verzoek dat wordt geactiveerd wanneer het venster opent en noteer de waarde van het veld `scheme` (het is ook het einde van de URL van het verzoek, na `ssoConfiguration/`): dat is de waarde die u invoert in de kolom `SSOConfigurationId`.
 
 {% hint style="info" %}
-Houd er rekening mee dat teams eerst moeten worden gemaakt in de werkruimte.
+De SSO-aanmelding moet vooraf zijn geconfigureerd. Zie [Single Sign On (SSO)](../../features/settings/sso/README.md).
 {% endhint %}
 
-**De SSO-configuratie-ID:**
+3. Sla uw bestand op in de indeling CSV UTF-8. Kies in Excel het bestandstype CSV UTF-8 (door komma's gescheiden).
+4. Laat ons weten in welke werkruimte u de gebruikers wilt importeren en sleep het bestand naar de uploadinterface.
 
-De kolom `SSOConfigurationId` is **optioneel**: vul deze alleen in als je de geïmporteerde gebruikers wilt koppelen aan een SSO-login die al in je organisatie is geconfigureerd. Laat de kolom leeg voor een klassieke login met e-mail en wachtwoord.
+<figure><img src="../../.gitbook/assets/getting-started-users-6.png" alt="Uploadinterface voor het importbestand van gebruikers"><figcaption><p>De uploadinterface voor het bestand</p></figcaption></figure>
 
-Net als bij aangepaste rollen haal je deze ID op via de **ontwikkelaarsconsole** van je browser, op het tabblad **Netwerk**:
-
-1. Open [de configuratiepagina van de SSO-logins](https://app.dastra.eu/general-settings/sso) (je moet eigenaar van de organisatie zijn).
-2. Open de ontwikkelaarsconsole (zie de sneltoetsen hierboven) en ga naar het tabblad **Netwerk**.
-3. Klik op het potloodpictogram van de betreffende SSO-login om het venster **SSO-login bewerken** te openen. Dit is een modaal venster: de URL van de pagina blijft `https://app.dastra.eu/general-settings/sso`.
-4. Open op het tabblad **Netwerk** het verzoek dat wordt geactiveerd bij het openen van het venster en noteer de waarde van het veld `scheme` (die staat ook aan het einde van de URL van het verzoek, na `ssoConfiguration/`): die waarde vul je in in de kolom `SSOConfigurationId`.
-
-{% hint style="info" %}
-De SSO-login moet vooraf geconfigureerd zijn. Zie de pagina [Single Sign On (SSO)](../../features/settings/sso/README.md).
-{% endhint %}
-
-Sla je bestand op in CSV UTF 8&#x20 formaat;
-
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
-
-Als je bestand klaar is, vertel je ons in welke workspace je de gebruikers wilt importeren en upload je het bestand via de upload interface:&#x20;
-
-
-
-<figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-We zullen het verzoek ontvangen en contact met je opnemen voor een vervolg.
+Het Dastra-team ontvangt uw aanvraag en neemt contact met u op.

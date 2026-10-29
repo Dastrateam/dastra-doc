@@ -1,29 +1,44 @@
 ---
-description: De antwoorden op je vragen ⁉️
+description: >-
+  Antwoorden op veelgestelde vragen over het instellen van Dastra.
 ---
 
 # Veelgestelde vragen
 
-## Kan ik de teams als acteur gebruiken?
+## Kan ik teams als stakeholders gebruiken?
 
-Nee, dit zijn twee verschillende databases. Teams zijn groepen gebruikers en kunnen worden gekoppeld aan organisatorische eenheden &#x20;
+Nee, het zijn twee verschillende databanken. Teams zijn groepen gebruikers en kunnen aan organisatorische eenheden worden gekoppeld.
 
-Actors maken deel uit van een data mapping repository. Dit is een puur declaratieve map die kan worden gekoppeld aan andere Dastra-objecten &#x20;
+Stakeholders maken deel uit van een repository voor het in kaart brengen van gegevens. Het is een puur declaratief adresboek dat aan andere Dastra-objecten kan worden gekoppeld.
 
-## Kan ik organisatorische eenheden als actor gebruiken?
+## Kan ik organisatorische eenheden als stakeholders gebruiken?
 
-Nee, het is niet mogelijk om ze als actor te gebruiken om dezelfde redenen als teams. Het is echter wel mogelijk om organisatorische eenheden als ontvangers te gebruiken. Hierdoor hoef je geen actoren opnieuw aan te maken in naam van organisatorische eenheden &#x20;
+Nee, om dezelfde redenen als bij teams. U kunt organisatorische eenheden wel als ontvangers gebruiken, zodat u geen stakeholders hoeft aan te maken voor organisatorische eenheden.
 
-## Kunnen organisatorische eenheden worden geëxporteerd?
+## Kan ik organisatorische eenheden exporteren?
 
-Ja, het is momenteel mogelijk om ze in spreadsheetformaat te exporteren &#x20;
+Ja, u exporteert ze als spreadsheet via **Instellingen voor werkruimte** > **Organisatorische eenheden**, met de optie **Exporteren** in het menu van de knop **Maak een entiteit (verwerkingsverantwoordelijke)**.
 
 ## Kan ik organisatorische eenheden importeren?
 
-Ja, het is mogelijk om ze te importeren via het menu onder de knop Organisatorische eenheid maken.
+Ja, met de optie **Importeren** in hetzelfde menu. Zie [Organisatorische eenheden importeren en exporteren](organizational-units.md#organisatorische-eenheden-importeren-en-exporteren).
 
-## Hoe verander ik het logo van de organisatie in Dastra?
+## Hoe wijzig ik het logo van de organisatie in Dastra?
 
-U kunt het logo van de organisatie niet wijzigen omdat er geen logo is. Het logo dat rechtsboven de naam van de organisatie wordt weergegeven, is de afbeelding die is gekoppeld aan het gebruikersaccount, dat is ingesteld in de gebruikersprofielparameters.
+U kunt het logo van de organisatie niet wijzigen, omdat die geen logo heeft. De afbeelding boven de naam van de organisatie rechtsboven is die van het gebruikersaccount: u stelt die in via het gebruikersprofiel.
 
-Naast deze afbeelding kan ook het werkruimte-logo worden gewijzigd in de werkruimte-instellingen.
+Het logo van de werkruimte kunt u wijzigen in de instellingen van de werkruimte.
+
+## Hoe wijzigt u de FG?
+
+Open het beheer van de organisatorische eenheden en selecteer de entiteit waarvan u de FG wijzigt. Selecteer daarna de stakeholder die de FG wordt, zoals beschreven in [Een FG toevoegen aan Dastra](dpo.md#een-fg-toevoegen-aan-dastra).
+
+## Hoe voegt u een eigenaar van de organisatie toe?
+
+Om een eigenaar toe te voegen, moet u zelf eigenaar van de organisatie zijn. Open de instellingen van de organisatie ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) en klik op **Een eigenaar toevoegen**.
+
+U kunt een gebruiker selecteren die al voor uw organisatie is uitgenodigd. Een gebruiker die er nog geen deel van uitmaakt, kunt u niet toevoegen.
+
+## Hoe verwijdert u een eigenaar van de organisatie?
+
+U moet ook hiervoor eigenaar van de organisatie zijn. Open de instellingen van de organisatie ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)), op het tabblad **Algemeen**, en klik op de verwijderknop naast de eigenaar die u wilt verwijderen. Bevestig om de handeling te voltooien.

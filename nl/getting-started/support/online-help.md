@@ -1,23 +1,30 @@
+---
+description: >-
+  Vind ondersteuning, documentatie en opleidingen in het menu Hulpmiddelen en start de rondleidingen opnieuw.
+---
+
 # Online help
 
-Dastra's online help kan op elk moment in je werkruimte geopend worden door op de "Help" knop linksonder in het scherm te klikken.
+De online help van Dastra is op elk moment beschikbaar in uw werkruimte via het profielmenu: klik rechtsboven op uw naam en daarna op **Hulpmiddelen**. Er opent een submenu met alle opties.
 
-![](<../../.gitbook/assets/image (148).png>)
+<figure><img src="../../.gitbook/assets/getting-started-roles-2.png" alt="Profielmenu met het item Hulpmiddelen"><figcaption><p>Het profielmenu, met het item Hulpmiddelen</p></figcaption></figure>
 
-Een venster verschijnt, met alle opties:
+| Item | Wat het opent |
+| --- | --- |
+| **Contact opnemen met support** | Het formulier voor ondersteuningsverzoeken (zie [Ondersteuning aanvragen](request.md)) |
+| **Praat met ons in de chat** | De ondersteuningschat |
+| **Documentatie** | Deze documentatie |
+| **Kennisbank** | De bronnen en gidsen op de website van Dastra |
+| **Dastra Academy** | De opleidingen van Dastra |
+| **Webinars** | De webinars van Dastra |
+| **Mijn abonnement** | De pagina van uw abonnement |
+| **Kaartjes** | De geschiedenis van uw ondersteuningsverzoeken |
 
-![Het Help paneel openen](<../../.gitbook/assets/Capture web\_3-5-2022\_153323\_app.dastra.eu.jpeg>)
+Onderaan het submenu vindt u de pagina's **Over**, **Pricing**, **Privacybeleid** en **Algemene gebruiksvoorwaarden**.
 
-### De eerste verbindingsgids
+## De rondleidingen
 
-De eerste keer dat u inlogt op uw werkruimte, biedt Dastra een handleiding die u in een paar pagina's door de belangrijkste functies van Dastra leidt.
+Dastra biedt rondleidingen die een functie in enkele stappen voorstellen. U kunt ze op elk moment opnieuw starten:
 
-Als u deze handleiding opnieuw wilt starten, klikt u op de knop "Help" linksonder in het scherm en selecteert u de optie "**handleiding tonen**":&#x20;
-
-![](<../../.gitbook/assets/image (149).png>)
-
-De opstartgids zal dan opnieuw starten en alles wat je hoeft te doen is de stappen te volgen.
-
-{% content-ref url="online-help.md" %}
-[laide-en-ligne.md](online-help.md)
-{% endcontent-ref %}
+* Rondleiding van Dastra AI: klik in het paneel van Dastra AI bovenaan op het informatiepictogram (**Gids tonen**). Op het dashboard klikt u ook op de badge **Dastra AI** boven het invoerveld. De AI-functie moet beschikbaar zijn in uw organisatie.
+* Rondleiding van een module: klik op de pagina's met een rondleiding op de informatieknop (**Gids tonen**) om die opnieuw te starten.

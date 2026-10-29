@@ -1,33 +1,35 @@
 ---
-beschrijving: >-
-  Dit artikel laat zien hoe je de widget voor het uitoefenen van rechten kunt integreren in
-  een webpagina
+description: >-
+  Dit artikel laat zien hoe u de widget voor verzoeken van betrokkenen in een webpagina integreert.
 ---
 
 # Technische integratie
 
-### Doelstellingen
+## Doel
 
-Met de widget voor de uitoefening van rechten kunt u **automatisch vanaf een pagina op uw site verzoeken om de uitoefening van rechten** van verschillende typen (verwijderingen, wijzigingen, rectificaties, enz.) verzamelen.
+De widget voor verzoeken van betrokkenen verzamelt automatisch verzoeken van betrokkenen van uiteenlopende typen (verwijdering, wijziging, rectificatie enzovoort) vanaf een pagina van uw site.
 
-De widget is geïntegreerd in de dastra **SDK javascript**.
+De widget maakt deel uit van de Dastra JavaScript-SDK.
 
-### Vereisten
+## Vereisten
 
-Om de widget voor het uitoefenen van rechten in te stellen, moet u een **openbare API-sleutel** hebben: [lees de documentatie](../settings/api-keys.md) of [ga direct naar de pagina voor het beheer van API-sleutels](https://app.dasta.eu/general-settings/api).
+Om de widget voor verzoeken van betrokkenen in te stellen hebt u een openbare API-sleutel nodig: lees [Beheer van API-sleutels](../settings/api-keys.md) of [ga rechtstreeks naar de pagina voor het beheer van API-sleutels](https://app.dastra.eu/general-settings/api).
 
-### De widget instellen in de speciale interface
+## De widget instellen in de speciale interface
 
-Om te beginnen moet je de **widget** instellen in **het widgetbeheerpaneel**:&#x20;
+U stelt de widget eerst in via de lijst met formulieren: klik in het menu **Verzoeken** op **Collectie-widgets**.
 
-![](<../../.gitbook/assets/image (250) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Lijst van formulieren met de knop Nieuwe widget"><figcaption><p>De lijst van formulieren</p></figcaption></figure>
 
-Hier is een eenvoudig voorbeeld van widget integratie (in popup mode met een open knop):
+Hier is een voorbeeld van een integratie van de widget (in pop-upmodus met een openingsknop):
 
 ```html
-<div id="customer-subject-form-custom" ></div>
+<div id="customer-subject-form-custom"></div>
 <button id="customer-request-button">Open the widget</button>
-<script src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY}" async></script>
+<script
+  src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR PUBLIC KEY}"
+  async
+></script>
 <script>
   window.dastra = window.dastra || [];
   dastra.debug = true;
@@ -45,84 +47,144 @@ Hier is een eenvoudig voorbeeld van widget integratie (in popup mode met een ope
 </script>
 ```
 
-### Hoe forceer ik de taal van het formulier?
+## De taal van het formulier afdwingen
 
-Standaard wordt **de browsertaal** gebruikt. Als de taal niet beschikbaar is in de widgetvertalingen, wordt automatisch de standaardtaal geselecteerd. Je kunt de huidige taal van de widget afdwingen door de eigenschap **data-lang** toe te voegen aan de div waarin het formulier wordt weergegeven.
+Standaard wordt de taal van de browser gebruikt. Is die taal niet beschikbaar in de vertalingen van de widget, dan wordt automatisch de standaardtaal gekozen. U kunt de taal van de widget afdwingen door de eigenschap `data-lang` toe te voegen aan de div waarin het formulier wordt weergegeven.
 
-In dit voorbeeld wordt standaard de Italiaanse taal geselecteerd (indien beschikbaar)_
+_In dit voorbeeld is standaard Italiaans geselecteerd (indien beschikbaar)_
 
 ```html
 <div id="customer-subject-popup" data-lang="it"></div>
 ```
 
+## De velden van het formulier vooraf invullen
 
+U kunt de velden van het formulier vooraf invullen vanuit de authenticatiecontext van de gebruiker. Vooraf ingevulde velden worden voor de gebruiker alleen-lezen weergegeven (grijs).
 
-### Hoe stuur ik formulierwaarden automatisch naar de widget?
+Beschikbare standaardvelden:
 
-```html
-<script>
-  dastra.push(['set','dsr:refId','{your custom userId}'])
-</script>
+```javascript
+dastra.push(['set', 'dsr:refId', '{unique_user_id}'])
+dastra.push(['set', 'dsr:email', '{email}'])
+dastra.push(['set', 'dsr:givenName', '{first_name}'])
+dastra.push(['set', 'dsr:familyName', '{last_name}'])
+dastra.push(['set', 'dsr:address', '{address}'])
+dastra.push(['set', 'dsr:zipCode', '{postcode}'])
+dastra.push(['set', 'dsr:city', '{city}'])
+dastra.push(['set', 'dsr:countryCode', '{country_code}']) // e.g. "FR"
+dastra.push(['set', 'dsr:phoneNumber', '{phone}'])
+dastra.push(['set', 'dsr:message', '{message}'])
 ```
 
-U kunt de kolomnaam **refId** vervangen door de volgende eigenschapsnaam:&#x20;
+De eigenschap `refId` is de unieke identificatie van de persoon in uw systeem (klant-ID, sessie-ID enzovoort). Ze wordt alleen-lezen weergegeven, en alleen als het veld **Persoonsreferentie** tot de actieve velden van het formulier behoort.
 
-* refId : de unieke identifier van de gebruiker
-* familyName&#x20;
-* givenName
-* email
-* stad
-* postcode
-* landcode
-* adres
-* telefoonnummer
-* bericht
-* additionalDatas**\***
+Aangepaste velden:
 
-\*In het specifieke geval van aangepaste velden, moet je verwijzen naar de naam additionalDatas :
+```javascript
+// Pass a complete object
+var payload = {
+  customFieldSlug1: 'value1',
+  customFieldSlug2: 'value2'
+}
+dastra.push(['set', 'dsr:additionalDatas', payload])
 
-```html
-<script>
-  var payload = {
-    customFieldSlug1: 'test', 
-    customFieldSlug2: 'test'.
-  };
-  
-  // U kunt deze synthax gebruiken voor het instellen van globale aangepaste velden als een object
-  dastra.push(['set','dsr:additionalDatas', payload]);
-  
-   // Of direct voor een enkel veld, gebruik het voorvoegsel @
-   dastra.push(['set','dsr:@customFieldSlug1', 'test']);
-</script>
+// Or field by field (@ prefix)
+dastra.push(['set', 'dsr:@customFieldSlug1', 'value1'])
 ```
 
-Extra velden worden automatisch samengevoegd.
+## Parameters meesturen in paginamodus
 
-### Parameters verzenden met paginamodus
-
-Het is ook mogelijk om deze parameters door te geven met querystringparameters. Zet voor de parameternaam dsr_ :&#x20;
+U kunt deze parameters ook in de querystring meegeven: zet `dsr_` voor de naam van de parameter.
 
 ```url
-https://api.dastra.eu/v1/client/customer-subject-form?id=<uw widget id>
-&key=<uw publieke sleutel>
+https://api.dastra.eu/v1/client/data-subject-request/page?id=<Your widget id>
+&key=<your public key>
 &dsr_email=test@github.org
 &dsr_givenName=Dastonaute
 &dsr_refId=123456
 &...etc...
 ```
 
-### Sluit de widget door buiten het venster te klikken
+## De widget sluiten door buiten het venster te klikken
 
-Als je widget is geconfigureerd met een **"Popup"** weergavetype, hebben we het gedrag van het sluiten van het modale venster in het geval van een klik buiten het venster niet geïmplementeerd, omdat de risico's van het verlies van door de gebruiker ingevoerde gegevens te groot zijn.
+Gebruikt uw widget de opmaak **Modaal venster (pop-up)**, dan sluit het venster niet wanneer de gebruiker erbuiten klikt. Dat is bewust zo: het risico dat de ingevoerde gegevens verloren gaan, is te groot.
 
-Als je echter wilt dat de widget wordt gesloten wanneer de gebruiker buiten de widget klikt, kan dit worden geïmplementeerd met de volgende code:&#x20;
+Wilt u toch dat de widget sluit wanneer de gebruiker buiten het venster klikt, gebruik dan de volgende code:
 
 ```javascript
-window.dastra.customerSubjectReady().then((form) => { 
-  form.closeOnBackdrop = true; 
-});
+window.dastra.customerSubjectReady().then((form) => {
+  form.closeOnBackdrop = true
+})
 ```
 
 {% hint style="warning" %}
-Waarschuwing: hierdoor wordt alle door de gebruiker ingevoerde tekst verwijderd zonder waarschuwing! Als het formulier lang is, kan dit gemakkelijk gebeuren als een selectie verder gaat dan een lang tekstveld.
+Hierdoor wordt alle tekst die de gebruiker heeft ingetypt zonder waarschuwing gewist. Bij een lang formulier kan dat gebeuren wanneer een tekstselectie verder reikt dan een lang tekstveld.
 {% endhint %}
+
+## Meerdere widgets in één pagina integreren
+
+Standaard ondersteunt Dastra geen meerdere widgets in dezelfde pagina.
+
+U kunt dat toch doen met twee aanroepen van `loadCustomerSubjectForm`, één per widget, met verschillende selectors en widget-ID's.
+
+```html
+<html lang="en-GB">
+  <body>
+    <h2>My first widget</h2>
+    <div id="widget-1"></div>
+    <h2>My second widget</h2>
+    <div id="widget-2"></div>
+    <script
+      async
+      src="https://cdn.dastra.eu/sdk/dastra.js?key={YOUR_PUBLIC_KEY}"
+    ></script>
+    <script>
+      window.dastra = window.dastra || []
+
+      // Widget 1 initialization
+      window.dastra.push(function () {
+        window.dastra.loadCustomerSubjectForm({
+          selector: '#widget-1',
+          widgetId: 991, // YOUR_WIDGET_ID_
+          onLoad: function (form) {
+            // Initialization
+          }
+        })
+      })
+
+      // Widget 2 initialization
+      window.dastra.push(function () {
+        window.dastra.loadCustomerSubjectForm({
+          selector: '#widget-2',
+          widgetId: 992, // the widget identifier for the second widget
+          onLoad: function (form) {
+            // Initialization
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
+```
+
+Om in deze opzet de beginwaarden van de velden van een widget in te stellen, gebruikt u de eigenschap `form.initialData` in `onLoad`:
+
+```javascript
+window.dastra.push(function () {
+  dastra.loadCustomerSubjectForm({
+    selector: '#customer-subject-form-custom',
+    widgetId: widgetId,
+    onLoad: function (form) {
+      form.initialData = {
+        givenName: 'testFirstName'
+      }
+      document
+        .getElementById('customer-request-button')
+        .addEventListener('click', function () {
+          form.closeOnBackdrop = true
+          form.open()
+        })
+    }
+  })
+})
+```

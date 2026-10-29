@@ -1,67 +1,75 @@
 ---
-beschrijving: Ontdek hoe je rollen en rechten beheert in Dastra.
+description: >-
+  Ontdek hoe u rollen en machtigingen in Dastra beheert.
 ---
 
-# Rollen en rechten beheren
+# Rollen en machtigingen beheren
 
-Bij het uitnodigen van een gebruiker biedt Dastra standaard **drie mogelijke** rollen:
+Wanneer u een gebruiker uitnodigt, biedt Dastra standaard vijf rollen:
 
-* **Beheerder** : Beheerders hebben rechten als bijdrager en kunnen werkruimte-instellingen beheren. Administrators zijn de enigen die een Verwerking op de status "gepubliceerd" kunnen zetten, organisatorische eenheden kunnen creëren, nieuwe gebruikers kunnen uitnodigen voor de werkruimte, etc. 20;
-* **Contributor** : Contributors kunnen de inhoud van de werkruimte lezen en bewerken. Ze kunnen items maken en concepten wijzigen die nog niet zijn gepubliceerd. Ze kunnen de instellingen van de werkruimte niet wijzigen.
-* **Lezers** kunnen alleen werkruimte-inhoud bekijken. Ze kunnen geen inhoud bewerken of werkruimte-instellingen wijzigen.
-
-
-
-{% hint style="info" %}
-Alleen **eigenaars** kunnen de accountinstellingen van de organisatie wijzigen en workspaces aanmaken.
-{% endhint %}
-
-### Een rol toewijzen aan een gebruiker
-
-In Dastra kan een gebruiker verschillende rollen hebben. Om meerdere rollen aan een gebruiker toe te wijzen, gaat u naar de sectie "Gebruikers" van de instellingen,&#x20;
+* Administrator: administrators hebben de rechten van een bijdrager en kunnen de instellingen van de werkruimte beheren. Alleen administrators kunnen een verwerkingsactiviteit de status "gepubliceerd" geven, organisatorische eenheden aanmaken en nieuwe gebruikers voor de werkruimte uitnodigen.
+* Bijdrager: bijdragers kunnen de inhoud van de werkruimte lezen en bewerken. Ze kunnen items aanmaken en concepten wijzigen die nog niet zijn gepubliceerd. Ze kunnen de instellingen van de werkruimte niet wijzigen.
+* Lezer: lezers kunnen de inhoud van de werkruimte alleen bekijken. Ze kunnen de inhoud niet bewerken en de instellingen van de werkruimte niet wijzigen.
+* Auditor: rol van de module Conformiteit. Ze geeft leestoegang tot bestanden en bijlagen en laat u uw eigen items van de conformiteitsaudit bewerken.
+* Conformiteitstester: rol van de module Conformiteit. Ze geeft lees- en schrijftoegang tot bestanden en bijlagen en laat u uw eigen operationele conformiteitsitems bewerken.
 
 {% hint style="info" %}
-<img src="../../.gitbook/assets/image (248) (1) (1).png" alt="" data-size="original">
-
-
-
-toon dan de opties gekoppeld aan de gebruiker&#x20;
-
-
-
-![](<../../.gitbook/assets/image (251) (1) (1) (1).png>)
-
-
-
-en selecteer de "rol" die overeenkomt met de gebruiker in kwestie.
+Alleen eigenaars kunnen de instellingen van het organisatieaccount wijzigen en werkruimten aanmaken.
 {% endhint %}
 
+## Een rol aan een gebruiker toewijzen
 
+In Dastra kan een gebruiker meerdere rollen hebben. U wijst ze toe vanaf twee plaatsen.
 
-Het is echter mogelijk om aangepaste rollen aan te maken die meer geschikt zijn voor jouw organisatie.
+### In de huidige werkruimte
 
-### Een aangepaste rol maken
+1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Gebruikers**.
+2. Open het menu van de rij van de gebruiker en klik op **Rollen toewijzen**. Het getal tussen haakjes is het aantal rollen dat de gebruiker al heeft.
+3. Selecteer de rol of rollen die u wilt toewijzen.
 
-Om een aangepaste rol te maken, moet u de eigenaar van de organisatie zijn. Klik gewoon op het profielpictogram rechtsboven in het scherm en klik vervolgens op het tabblad 'Configuratie' in de vervolgkeuzelijst.
+### In meerdere werkruimten tegelijk
 
-![](<../../.gitbook/assets/image (133).png>)
+Alleen de eigenaars van de organisatie kunnen deze methode gebruiken.
 
-Eenmaal in het configuratiescherm, klik je op de "Rollen en rechten" knop in de "Organisatie" sectie. De lijst met rollen en rechten wordt weergegeven:
+1. Klik rechtsboven op het scherm op uw profielpictogram, daarna op **Instelling van de organisatie** en vervolgens op **Gebruikers**.
+2. Open het menu van de rij van de gebruiker en klik op **Rollen en werkplekken**.
+3. Klik op **Toewijzen**, selecteer de rol en kies het bereik: **Alle werkplekken van organisatie** of **Specifieke workspaces**.
 
-[De rollen "HR Registry Operator" en "Assistant" zijn aangepaste rollen](<../../.gitbook/assets/image (134).png>)
+<figure><img src="../../.gitbook/assets/getting-started-roles-1.png" alt="Venster voor het toewijzen van een rol met de lijst van rollen en de keuze van werkruimten"><figcaption><p>Een rol toewijzen aan alle werkruimten of aan een selectie</p></figcaption></figure>
+
+U kunt ook aangepaste rollen aanmaken, die mogelijk beter bij uw organisatie passen.
+
+## Een aangepaste rol aanmaken
+
+Om een aangepaste rol aan te maken, moet u eigenaar van de organisatie zijn.
+
+1. Klik rechtsboven op het scherm op uw profielpictogram en daarna op **Instelling van de organisatie**.
+2. Klik in het configuratiepaneel op **Rollen en machtigingen**.
+
+<figure><img src="../../.gitbook/assets/getting-started-roles-2.png" alt="Profielmenu met de optie Instelling van de organisatie"><figcaption><p>Het profielmenu</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/getting-started-roles-3.png" alt="Configuratiepaneel van de organisatie met de knop Rollen en machtigingen"><figcaption><p>Het configuratiepaneel van de organisatie</p></figcaption></figure>
+
+De lijst van rollen en machtigingen verschijnt.
+
+<figure><img src="../../.gitbook/assets/getting-started-roles-4.png" alt="Lijst van basisrollen en aangepaste rollen"><figcaption><p>De lijst van rollen, met voorbeelden van aangepaste rollen</p></figcaption></figure>
 
 {% hint style="info" %}
-Alleen eigenaren van de organisatie hebben toegang tot het rollen en rechten beheerscherm.
+Alleen de eigenaars van de organisatie hebben toegang tot het scherm voor het beheer van rollen en machtigingen.
 {% endhint %}
 
-Om een nieuwe rol aan te maken, klik je op "Nieuwe rol", geef je hem een naam en vink je voor elke functie de opties "Lezen", "Bewerken", "Importeren" en "Exporteren" aan. Als je klaar bent, klik je op de knop "Opslaan" onderaan het scherm.
+3. Klik op **Nieuwe rol** en geef de rol een naam.
+4. Vink de machtigingen aan die bij elke functie horen (**Lezing**, **Schrijven**, **Create**, **Importeren**, **Exporteren** enzovoort). In de modules die het aanbieden, staat de machtiging **Create** het aanmaken van nieuwe items toe, los van de machtiging **Schrijven**, die het wijzigen ervan toestaat (zie [Rollen en machtigingen](../../features/settings/roles.md)).
+5. Klik onderaan het scherm op **Opslaan**.
+
+Om van een bestaande rol te vertrekken, klikt u ernaast op **Klonen**. **Bekijk de machtigingen** toont de machtigingen van een rol zonder die te wijzigen.
 
 {% hint style="info" %}
-Om effectief te zijn, moet de nieuwe rol worden toegewezen aan een of meer gebruikers. Ga hiervoor naar de sectie "Gebruiker" en klik op de knop "rol" die bij de gebruiker in kwestie hoort.
+Om van kracht te worden, moet de nieuwe rol aan een of meer gebruikers worden toegewezen, vanaf de hierboven beschreven pagina **Gebruikers**.
 {% endhint %}
 
-Dat is het, de rollen en rechten zijn ingesteld! U kunt nu de tutorial bekijken of de mogelijkheden van Dastra zelf gaan verkennen.
+U kunt nu de handleiding volgen of de functies van Dastra zelf verkennen.
 
 {% content-ref url="../tutorial/README.md" %}
-[handleiding](../tutorial/README.md)
+[Handleiding](../tutorial/README.md)
 {% endcontent-ref %}
