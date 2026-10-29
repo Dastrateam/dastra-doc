@@ -69,6 +69,7 @@
     * [The MCP server](features/general/ai-assistant/mcp.md)
   * [Email templates](features/general/email-templates.md)
   * [Internal discussions](features/general/discussions.md)
+  * [Frequently asked questions](features/general/faq.md)
 * [Data Mapping](features/mapping/README.md)
   * [Generic relationships](features/mapping/relationships.md)
 * [Document management](features/files/README.md)

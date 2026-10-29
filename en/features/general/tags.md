@@ -1,23 +1,42 @@
 ---
-description: Tags allow you to classify information in Dastra in a simple and intuitive way
+description: >-
+  Tags classify the information in Dastra according to your own method:
+  creation, management, import and export.
 ---
 
 # Tag management
 
-## What are tags for?
+## Purpose of tags
 
-Tags are used to classify information according to your own methodology. They allow you to identify treatments or other elements in Dastra in order to make them stand out.&#x20;
+Tags classify information according to your own methodology. They let you flag processing activities or other elements in Dastra to make them stand out.
 
-Thus, you can put a "priority" or "To be checked" or "sensitive treatment" tag to allow you to easily find the treatments or other elements concerned. The list of tags is not limited. You can put several tags on a treatment for example. By clicking on a tag, you will automatically filter the treatments that have this tag.
+For example, you can add a "priority", "to be checked" or "sensitive processing" tag to find the elements concerned. The list of tags is not limited and you can put several tags on a processing activity. Clicking a tag filters the elements that carry it.
 
-## How to create tags?
+A tag belongs to one object type: tags of processing activities, requests, data breaches, tasks, stakeholders, measures, assets, risks, datasets, questionnaire templates, AI systems, AI models, contracts, controls and risk scenarios are managed separately. Each tag has a color.
 
-In the tag entry form, start typing the name of any tag, there are two possibilities, either the tag already exists, in which case you can select it. If it doesn't exist, you can press **the enter key on your keyboard**, which will create the new tag automatically to add it to the selection list.
+## Create tags
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-17-112707.png" alt=""><figcaption></figcaption></figure>
+In a **Tags** field, start typing the name of a tag. If it exists, select it. If it does not exist, press the **Enter** key: Dastra creates the tag and adds it to the selection. Only users with the advanced write permission can create a tag this way.
 
-## How to manage all the tags in the application?
+<figure><img src="../../.gitbook/assets/general-tags-1.png" alt="Tags field with a typed name, the list of existing tags and the Tags management link at the bottom of the list"><figcaption><p>Typing a tag in a form</p></figcaption></figure>
 
-Go to > **Workspace Settings** ![](<../../.gitbook/assets/settings-roles-configuration-card.png>)
+When the field is empty, an AI assistant button can suggest tags from the name and description of the object. See [Use cases](ai-assistant/use-cases.md).
 
-Click on the **Tag** menu in "Process"
+## Manage the tags of the workspace
+
+1. In the sidebar, click **Workspace settings**.
+2. In the **Process** section, click **Tags**.
+3. Choose the object type whose tags you want to manage.
+
+<figure><img src="../../.gitbook/assets/general-tags-2.png" alt="Tags page of the workspace settings with the type selector, the list of tags and the Create a tag button"><figcaption><p>The list of tags of an object type</p></figcaption></figure>
+
+From this page, you can:
+
+* click **Create a tag**, enter its **Tag label** and choose its **Color**;
+* click the arrow of the button to **Create from library...**, **Import** tags from a file (see [Import your data](import.md)) or **Export** the list as CSV, XLSX, JSON or Markdown;
+* open the menu of a tag to **Edit tag**, **Delete** the tag or click **Related objects**, which opens the list of the elements that carry this tag;
+* select several tags, then **Select a batch action** > **Delete**.
+
+From a **Tags** field, the **Tags management** link at the bottom of the list opens the same list, limited to the object type of the form.
+
+The **Process** section is only visible to users with the advanced write permission.
