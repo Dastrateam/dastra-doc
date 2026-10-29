@@ -1,8 +1,10 @@
+---
+description: Controls are the central element of the Dastra compliance model.
+---
+
 # Controls
 
-Controls are the central element of the Dastra compliance model.
-
-They translate the requirements of a framework into **concrete measures** that are measurable and auditable, making it possible to demonstrate the effectiveness of compliance over time.
+Controls translate the requirements of a framework into **concrete measures** that are measurable and auditable, making it possible to demonstrate the effectiveness of compliance over time.
 
 A control can:
 
@@ -12,15 +14,15 @@ A control can:
 
 ***
 
-### Tracking and managing controls
+## Tracking and managing controls
 
-<figure><img src="../../../.gitbook/assets/image-480.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-480.png" alt="Controls tab of a framework with the list of controls and their remediation type"><figcaption></figcaption></figure>
 
 Controls can be tracked from two complementary entry points.
 
 ***
 
-#### 1. From the framework
+### 1. From the framework
 
 In the **Controls** tab of a framework, the user can view:
 
@@ -29,7 +31,7 @@ In the **Controls** tab of a framework, the user can view:
 * the requirements covered
 * the associated tests and risks
 
-👉 This view is ideal for:
+This view is useful for:
 
 * understanding the coverage of a framework
 * identifying key controls
@@ -37,9 +39,9 @@ In the **Controls** tab of a framework, the user can view:
 
 ***
 
-#### 2. From the control library
+### 2. From the control library
 
-<figure><img src="../../../.gitbook/assets/image-481.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-481.png" alt="Control library with the filters and the list of all controls"><figcaption></figcaption></figure>
 
 The **control library** centralizes all of the organization's controls, across every framework.
 
@@ -49,11 +51,10 @@ This view makes it possible to:
 * identify controls reused across several frameworks
 * improve the **quality and consistency** of the control library
 
-👉 It is a key tool for governance and for industrializing compliance.
 
 ***
 
-### Control editing window
+## Control editing window
 
 {% columns %}
 {% column %}
@@ -61,13 +62,13 @@ The editing window makes it possible to precisely define the role of the control
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-440.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-440.png" alt="Control edit window with the name, the reference and the remediation type"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-#### Control label and reference
+### Control label and reference
 
 * **Control label**\
   Clearly describes the action or measure being implemented.
@@ -76,7 +77,7 @@ The editing window makes it possible to precisely define the role of the control
 
 {% columns %}
 {% column %}
-📌 A **reference generator** is available to automatically suggest a reference that is consistent with:
+A **reference generator** is available to automatically suggest a reference that is consistent with:
 
 * the context of the control
 * the naming conventions
@@ -86,24 +87,24 @@ The user can freely adjust the proposed reference.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-441.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-441.png" alt="Reference generator suggesting a consistent reference for the control"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-#### Remediation type
+### Remediation type
 
 Each control must be associated with a **remediation type**, which specifies its nature:
 
 * **Preventive**\
   The control aims to **prevent** a risk from occurring\
-  &#xNAN;_(e.g. training, access rules, validation before going to production)_
+  _(e.g. training, access rules, validation before going to production)_
 * **Mitigation**\
   The control aims to **reduce the impact or likelihood** of a risk that already exists\
-  &#xNAN;_(e.g. monitoring, detection, mitigation plan)_
+  _(e.g. monitoring, detection, mitigation plan)_
 
-👉 This distinction is essential in order to:
+This distinction is used to:
 
 * analyze the risk management strategy
 * balance prevention and detection
@@ -111,7 +112,7 @@ Each control must be associated with a **remediation type**, which specifies its
 
 ***
 
-#### Tags
+### Tags
 
 Tags make it possible to:
 
@@ -121,15 +122,15 @@ Tags make it possible to:
 
 ***
 
-### Associating tests
+## Associating tests
 
 [**Tests**](tests.md) make it possible to verify the existence, application and effectiveness of a control.
 
-#### AI-assisted association
+### AI-assisted association
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-442.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-442.png" alt="List of the tests associated with a control"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -138,7 +139,7 @@ The AI assistance suggests:
 * **existing tests** in the library that are relevant to the control
 * the **creation of new tests** when necessary
 
-👉 This approach ensures:
+This approach ensures:
 
 * consistency between controls and tests
 * time savings
@@ -148,7 +149,7 @@ The AI assistance suggests:
 
 ***
 
-### Associating requirements
+## Associating requirements
 
 {% columns %}
 {% column %}
@@ -161,7 +162,7 @@ In the **Linked requirements** section of the edit window, requirements are grou
 
 
 
-👉 This makes it possible:
+This makes it possible:
 
 * to share controls
 * to link an internal control to a regulatory framework
@@ -169,17 +170,17 @@ In the **Linked requirements** section of the edit window, requirements are grou
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-443.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-443.png" alt="Window to associate a control with requirements"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Associating risks
+## Associating risks
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-444.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-444.png" alt="Control window with the associated risks"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -198,13 +199,13 @@ The association makes it possible:
 
 ***
 
-### Merging controls
+## Merging controls
 
 Over time, the control library may contain redundant or nearly identical controls coming from different frameworks. The **merge** feature makes it possible to consolidate them into a single reference control.
 
-#### How the merge works
+### How the merge works
 
-From the control library or a project, select the controls to merge (up to 30), then trigger the merge via the **bulk actions**. A wizard prompts you to choose the **target** control (the one that will be kept): all the associations of the source controls — evidence, requirements, risk scenarios, covered controls — are automatically consolidated onto the target control, without data loss, and then the source controls are deleted.
+From the control library or a project, select the controls to merge (up to 30), then trigger the merge via the **bulk actions**. A wizard prompts you to choose the **reference version**, that is, the control that will be kept. The associations of the other controls (evidence, requirements, risk scenarios, covered controls) are consolidated onto it, without data loss, and then the other controls are deleted.
 
 {% hint style="info" %}
 The matching is **entirely manual**: Dastra does not automatically detect duplicates. It is up to you to select the similar controls to consolidate.
@@ -212,23 +213,23 @@ The matching is **entirely manual**: Dastra does not automatically detect duplic
 
 <figure><img src="../../../.gitbook/assets/fusion-controles-selection.png" alt="Selection of several controls and the bulk actions menu with the Merge option"><figcaption><p>Select up to 30 controls, then trigger the merge via the bulk actions</p></figcaption></figure>
 
-The merge wizard displays the two controls side by side: **Kept** (target control) on the left, **To be deleted** (source control) on the right. For each multi-valued field (risk scenarios, requirements, tests), you choose the values to carry over to the target control.
+The comparison table displays the controls side by side, one column per control. Choose the control to keep with the radio button of its column: it carries the **Reference version** label. The other columns carry the **Keep selected fields** label: only the fields you tick there are carried over to the reference version (**Select all** ticks the whole column).
 
-<figure><img src="../../../.gitbook/assets/fusion-controles-comparaison.png" alt="Side-by-side comparison table of the controls with selection of the values to keep"><figcaption><p>Compare the controls side by side and choose, field by field, the values to keep — evidence, requirements, risk scenarios and covered controls are consolidated onto the kept control</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fusion-controles-comparaison.png" alt="Side-by-side comparison table of the controls with selection of the values to keep"><figcaption><p>Compare the controls side by side and choose, field by field, the values to keep: evidence, requirements, risk scenarios and covered controls are consolidated onto the kept control</p></figcaption></figure>
 
 {% hint style="warning" %}
-The merge is irreversible. Check the associations of each source control before confirming the operation.
+The merge is irreversible. Check the associations of each control before confirming the operation.
 {% endhint %}
 
-#### Typical use cases
+### Typical use cases
 
-* **Deduplication**: several framework imports have created equivalent controls — the merge consolidates them without loss of information.
+* **Deduplication**: several framework imports have created equivalent controls: the merge consolidates them without loss of information.
 * **Cross-cutting sharing**: a control covering both ISO 27001 and the AI Act framework can be obtained by merging the controls from each framework.
 * **Library cleanup**: before an audit, removing orphaned or redundant controls improves the readability of the compliance dashboard.
 
 ***
 
-### Summary: why controls are central
+## Summary: why controls are central
 
 In Dastra, controls are the **point of convergence** between:
 
@@ -240,4 +241,4 @@ This approach enables:
 
 * operational and measurable compliance
 * cross-cutting governance
-* smart reuse of compliance efforts
+* reuse of compliance efforts

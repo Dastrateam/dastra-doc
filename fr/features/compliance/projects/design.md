@@ -6,15 +6,15 @@ description: >-
 
 # Conception du projet
 
-Elle permet de définir le **cadre organisationnel**, de sélectionner les **référentiels applicables** et d’initialiser automatiquement les contrôles, tests et risques associés.
+La phase de conception, nommée **Exigences** dans l'application, permet de définir le **cadre organisationnel** du projet, de sélectionner les **référentiels applicables** et d’initialiser automatiquement les contrôles, tests et risques associés.
 
-Cette étape pose les fondations du projet et conditionne la qualité du suivi dans les phases suivantes.
+Cette étape pose les fondations du projet et conditionne la qualité du suivi dans les phases suivantes. Pour une vue d'ensemble des phases, voir [Projets](README.md).
 
 ***
 
-<figure><img src="../../../.gitbook/assets/compliance-project-steps-perimeter.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-steps-perimeter.png" alt="Les phases du projet de conformité, avec la phase Périmètre en cours"><figcaption></figcaption></figure>
 
-### 1. Création du projet et définition du périmètre
+## 1. Création du projet et définition du périmètre
 
 Lors de la création du projet, un **périmètre organisationnel** doit être sélectionné.\
 Le périmètre (scope) regroupe une ou plusieurs unités organisationnelles et détermine **le champ d’application du projet de conformité**.
@@ -25,32 +25,32 @@ Une fois le projet créé, le périmètre est affiché dans l’en-tête du proj
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-project-create-dialog-step1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-create-dialog-step1.png" alt="Fenêtre de création d'un projet avec l'intitulé et le périmètre"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### 2. Affectation des utilisateurs au projet
+## 2. Affectation des utilisateurs au projet
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-project-create-dialog-step2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-create-dialog-step2.png" alt="Fenêtre de création d'un projet avec l'affectation des utilisateurs"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
 La phase de conception permet également de **désigner les utilisateurs autorisés à gérer le projet**.
 
-* Chaque utilisateur peut se voir attribuer un rôle (ex. : responsable).
+* Chaque utilisateur peut se voir attribuer un rôle : **Responsable** ou **Informé**.
 * Ces utilisateurs seront habilités à piloter les contrôles, les tests et les audits du projet.
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-<figure><img src="../../../.gitbook/assets/compliance-project-steps-requirements.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-steps-requirements.png" alt="Les phases du projet de conformité, avec la phase Exigences"><figcaption></figcaption></figure>
 
-### 3. Ajout des frameworks de conformité
+## 3. Ajout des frameworks de conformité
 
 Un projet de conformité repose sur un ou plusieurs **frameworks** (standards, référentiels internes ou personnalisés).
 
@@ -61,7 +61,7 @@ L’ajout d’un framework permet d’importer :
 * les **tests**,
 * et les **risques** associés.
 
-<figure><img src="../../../.gitbook/assets/compliance-project-add-framework-selection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-add-framework-selection.png" alt="Sélection d'un framework à ajouter au projet"><figcaption></figcaption></figure>
 
 
 
@@ -73,7 +73,7 @@ Il est possible d’ajouter plusieurs frameworks successivement au même projet.
 
 ***
 
-### 4. Mutualisation des contrôles entre frameworks
+## 4. Mutualisation des contrôles entre frameworks
 
 Lorsque plusieurs frameworks sont ajoutés au projet, Dastra détecte automatiquement les **contrôles communs**.
 
@@ -81,11 +81,11 @@ Lorsque plusieurs frameworks sont ajoutés au projet, Dastra détecte automatiqu
 * Sa mise en œuvre couvre simultanément l’ensemble des exigences associées.
 * Cela permet d’augmenter la couverture de conformité sans multiplier les actions.
 
-<figure><img src="../../../.gitbook/assets/compliance-project-add-framework-controls-import.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-add-framework-controls-import.png" alt="Import des contrôles communs à plusieurs frameworks"><figcaption></figcaption></figure>
 
 ***
 
-### 5. Sélection des contrôles à importer
+## 5. Sélection des contrôles à importer
 
 Lors de l’ajout d’un framework, plusieurs options sont proposées :
 
@@ -93,13 +93,13 @@ Lors de l’ajout d’un framework, plusieurs options sont proposées :
 * importer **uniquement certains contrôles**,
 * ou **ne pas importer de contrôles** afin de les implémenter manuellement.
 
-<figure><img src="../../../.gitbook/assets/compliance-project-add-framework-controls-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-add-framework-controls-list.png" alt="Choix des contrôles à importer avec le framework"><figcaption></figcaption></figure>
 
 Cette flexibilité permet d’adapter le projet à la maturité de l’organisation.
 
 ***
 
-### 6. Initialisation des contrôles et des tests
+## 6. Initialisation des contrôles et des tests
 
 {% columns %}
 {% column %}
@@ -116,13 +116,13 @@ Une fois les frameworks importés :
 {% endcolumn %}
 
 {% column %}
-<div align="center"><img src="../../../.gitbook/assets/compliance-project-requirements-frameworks-overview.png" alt=""></div>
+<div align="center"><img src="../../../.gitbook/assets/compliance-project-requirements-frameworks-overview.png" alt="Vue d'ensemble du projet avec les frameworks importés"></div>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### 7. Préparation de l’analyse des risques
+## 7. Préparation de l’analyse des risques
 
 Les **risques issus des frameworks** peuvent être sélectionnés lors de l’import.
 
@@ -131,11 +131,19 @@ Ils constituent :
 * la base de l’**évaluation du risque initial**,
 * le point de référence pour le calcul du **risque résiduel** après application des contrôles.
 
-<figure><img src="../../../.gitbook/assets/compliance-project-risks-matrix.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-project-risks-matrix.png" alt="Matrice de risques du projet"><figcaption></figcaption></figure>
 
 ***
 
-### Résultat de la phase Conception
+## Retirer un framework du projet
+
+Sur la **Vue d’ensemble** du projet, le menu **⋯** de la carte d’un framework propose **Retirer le framework**. Dastra supprime alors du projet les contrôles, tests, risques et menaces rattachés uniquement à ce framework. Un contrôle que le projet applique encore par un autre framework est conservé.
+
+Le retrait est impossible tant qu’un audit de ce framework n’est pas archivé (voir [Audits](audits.md)).
+
+***
+
+## Résultat de la phase Conception
 
 À l’issue de la phase de conception, le projet dispose :
 

@@ -1,110 +1,149 @@
 ---
-description: Dieser Leitfaden erklärt Ihnen, wie Sie Cookies tatsächlich blockieren.
+description: Dieser Leitfaden erklärt, wie Sie Cookies wirksam blockieren.
 ---
 
 # Cookie-Blockierung
 
-Um eine effektive Cookie-Blockierung zu realisieren, gibt es mehrere mögliche Methoden: das Löschen von Cookies, das Blockieren eines Snippets, benutzerdefiniertes JavaScript oder Google Tag Manager.
+Um Cookies wirksam zu blockieren, gibt es mehrere Methoden: das Löschen von Cookies, das Blockieren eines Snippets, eigenes JavaScript oder Google Tag Manager.
 
-## Löschen von Cookies
+## Cookies löschen
 
-Diese Methode ist die schnellste in der Umsetzung, aber auch die am wenigsten zuverlässige. Im Konfigurationspanel des Dastra-Widgets können Sie, wenn Sie die Namen der mit jedem Dienst verbundenen Cookies angeben, die betreffenden Cookies bei jedem Seitenaufruf automatisch löschen.&#x20;
+Diese Methode ist am schnellsten einzurichten, aber auch am wenigsten zuverlässig. Wenn Sie im Abschnitt **Dienstleistungen** des Banners bei jedem Dienst die Namen der zugehörigen Cookies eintragen (Tab **Verbundene Cookies** des Dienstes), löscht das SDK diese Cookies automatisch, sobald für den Dienst eine Ablehnung erfasst wird.
 
-![](<../../../../.gitbook/assets/image-85.png>)
+<figure><img src="../../../../.gitbook/assets/cookies-blocking-1.png" alt="Der Tab Verbundene Cookies eines Dienstes mit der Liste seiner Cookies"><figcaption><p>Die mit einem Dienst verbundenen Cookies</p></figcaption></figure>
 
-Diese Funktionsweise kann in bestimmten Fällen wirksam sein, birgt aber das Risiko, die Zuverlässigkeit der verwendeten Drittanbieter-Tools erheblich zu beeinträchtigen (insbesondere Web-Analyse-Tools). Es ist sehr oft vorzuziehen, ergänzend eine der folgenden Methoden zu verwenden.
+Diese Methode funktioniert in manchen Fällen, kann aber die Zuverlässigkeit von Drittanbieter-Tools beeinträchtigen, insbesondere von Web-Analyse-Tools. Verwenden Sie sie zusätzlich zu einer der folgenden Methoden.
 
-## Ein Code-Snippet auf der Seite blockieren
+## Ein Code-Snippet in der Seite blockieren
 
-Diese Methode ermöglicht es, ein Tracking-Code-Snippet auf der Seite vollständig zu deaktivieren.
+Mit dieser Methode deaktivieren Sie ein Tracking-Code-Snippet vollständig.
 
-Ersetzen Sie dazu im HTML-Code Ihrer Seite das folgende Code-Snippet:
+Ersetzen Sie im HTML-Code Ihrer Seite das folgende Snippet:
 
-```markup
-<script >
+```html
+<script>
   alert("hello, I'm a tracking javascript tag");
 </script>
 ```
 
-Durch:
+durch:
 
-```markup
+```html
 <script data-consent="{your-service-slug}" type="dastra/script">
-   alert("hello, I'm a tracking javascript tag");
+  alert("hello, I'm a tracking javascript tag");
 </script>
 ```
 
-Ersetzen Sie „{your-service-slug}" durch die Kennung Ihres Dienstes, die bei der Konfiguration Ihres Widgets eingegeben wurde:
+Ersetzen Sie `{your-service-slug}` durch die Kennung des Dienstes. Sie finden sie im Feld **Name der Variablen (wichtig für die Einbindung der Einwilligung)** des Dienstformulars:
 
-![](<../../../../.gitbook/assets/image-86.png>)
+<figure><img src="../../../../.gitbook/assets/cookies-blocking-2.png" alt="Das Feld Name der Variablen eines Dienstformulars"><figcaption><p>Die Kennung des Dienstes</p></figcaption></figure>
 
-Wenn der Client die Cookies akzeptiert hat, wird der Inhalt des Skripts automatisch ausgeführt.
+Hat der Besucher den Dienst akzeptiert, wird der Inhalt des Skripts automatisch ausgeführt.
 
-{% hint style="info" %}
-Diese Funktionsweise kann mehrere Nebeneffekte haben: insbesondere Probleme mit der Syntaxhervorhebung in den meisten IDEs.&#x20;
+Um ein externes Skript zu laden, fügen Sie das Attribut `src` hinzu: Der Browser lädt es erst nach der Einwilligung herunter.
 
-Das Skript-Snippet wird im Falle eines Implementierungsfehlers des Dastra-Widgets überhaupt nicht ausgeführt.
-{% endhint %}
-
-### Blockierung in reinem JavaScript
-
-In reinem JavaScript können Sie die auf dem Window ausgelösten Ereignisse verwenden, um die Einwilligung zu erfassen und je nach Akzeptanz oder Ablehnung der Cookies ein bestimmtes Verhalten zu steuern. Diese Funktionsweise bietet Ihnen mehr Flexibilität:
-
-```javascript
-<script>
-  (function(){
-
-      /* 
-      * Trigger  a custom servicve tag with expected cookies
-      */
-      function customTagsTrigger () {
-        /* If the vendor provide a specific function for making the service work cookie-less, pull it here.
-        * Else copy the default code snippet provided by the tag vendors*/
-      }
-
-      /*
-      * Handle the global scope consent event
-      * If the user has consented to custom vendor's tag cookies, this event will be fired on each page load where the cookie consent widget is installed
-      */
-      window.addEventListener('dastra:consent:{your-service-slug}', function () {
-        /* The client is optin to the custom vendor's cookies here */
-        customTagsTrigger();
-        console.log('{your-service-slug} accepted')
-      });
-
-      /* Uncomment this if you want to handle the refused event
-      *  Handle global scope refused event event (Optional) 
-      */
-        window.addEventListener('dastra:refused:{your-service-slug}', function () {
-         // The custom's services cookies are refused 
-         console.log('{your-service-slug} cookies refused')
-       });
-      
-  })();
-  </script>
+```html
+<script data-consent="{your-service-slug}" type="dastra/script" src="https://example.com/tracker.js"></script>
 ```
 
-### Google Tag Manager
+{% hint style="info" %}
+Diese Methode hat Nebenwirkungen: Die Syntaxhervorhebung der meisten Code-Editoren erkennt den Typ `dastra/script` nicht. Das Skript wird nie ausgeführt, wenn das Dastra-Banner nicht geladen werden kann.
+{% endhint %}
 
-Siehe nächste Seite:
+### Die von der Anwendung erzeugten Snippets verwenden
+
+Für jeden Dienst erzeugt der Abschnitt **Integration der Einwilligung** des Banners fertig kopierbare Snippets und eine Checkliste. Es stehen drei Tabs zur Verfügung: **Html integration** (das Snippet oben), **Custom javascript** (die unten beschriebene Blockierung in reinem JavaScript) und **Google tag manager** (die Ereignisse, die Sie in Google Tag Manager verbinden).
+
+## Blockierung in reinem JavaScript
+
+In JavaScript können Sie auf die Ereignisse hören, die auf `window` ausgelöst werden, um die Einwilligung zu erfassen und je nachdem, ob Cookies akzeptiert oder abgelehnt werden, ein bestimmtes Verhalten umzusetzen. Diese Methode bietet Ihnen mehr Flexibilität:
+
+```html
+<script>
+  (function () {
+
+    /*
+     * Trigger a custom service tag with the expected cookies
+     */
+    function customTagsTrigger() {
+      /* If the vendor provides a specific function to make the service work without cookies, call it here.
+       * Otherwise, copy the default code snippet provided by the vendor. */
+    }
+
+    /*
+     * Handle the global scope consent event.
+     * If the user consented to the vendor's cookies, this event is fired on each page load
+     * where the cookie consent banner is installed.
+     */
+    window.addEventListener('dastra:consent:{your-service-slug}', function () {
+      /* The visitor opted in to the vendor's cookies */
+      customTagsTrigger();
+    });
+
+    /*
+     * Handle the global scope refused event (optional)
+     */
+    window.addEventListener('dastra:refused:{your-service-slug}', function () {
+      /* The vendor's cookies are refused */
+    });
+
+  })();
+</script>
+```
+
+## Google Tag Manager
+
+Siehe die folgende Seite:
 
 {% content-ref url="google-tag-manager.md" %}
-[google-tag-manager.md](google-tag-manager.md)
+[Google Tag Manager](google-tag-manager.md)
 {% endcontent-ref %}
 
-### Erinnerung an den Lebenszyklus der Einwilligung:&#x20;
+## Erinnerung an den Lebenszyklus der Einwilligung
 
-<figure><img src="../../../../.gitbook/assets/cookies-lifecycle.drawio.png" alt=""><figcaption><p>Lebenszyklus des Cookie-Widgets</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-lifecycle.drawio.png" alt="Diagramm des Lebenszyklus der Einwilligung, vom Laden der Seite bis zum Speichern des Cookies consent-eu"><figcaption><p>Lebenszyklus der Einwilligung</p></figcaption></figure>
 
-### JavaScript-Ereignisse
+## JavaScript-Ereignisse
 
-Standardmäßig sendet das Widget mehrere Ereignisse an das Window-Element der Seite:&#x20;
+Das Banner löst mehrere Ereignisse auf dem Element `window` der Seite aus. Die Einwilligungsereignisse werden bei jedem Laden der Seite ausgelöst, wenn das Banner die bereits gespeicherten Entscheidungen anwendet, und anschließend bei jedem Speichern einer Entscheidung.
 
-| Ereignisname                      | Anmerkungen                                                                                                                                                                                                                     |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dastra:consent:\<Dienst-Slug>     | Wird ausgelöst, wenn der Dienst vom Nutzer akzeptiert wurde (erforderliche Cookies sind nicht betroffen). Wenn der Dienst im Modus „standardmäßig eingewilligt" ist, wird dieses Ereignis beim ersten Laden der Seite ausgelöst |
-| dastra:refused:\<Dienst-Slug>     | Wird ausgelöst, wenn der Dienst vom Nutzer nicht aktiviert wurde (standardmäßig, wenn keine Einwilligung erteilt wird) oder wenn eine explizite Ablehnung erfolgt ist.                                                          |
-| dastra:consents:ready             | Wird ausgelöst, wenn das Einwilligungs-Cookie (consent-eu) gelesen und decodiert wurde.                                                                                                                                         |
-| dastra:consents:updated           | Wird ausgelöst, wenn die Einwilligungen vom Nutzer aktualisiert wurden (akzeptiert, abgelehnt oder konfiguriert)                                                                                                                |
-| dastra:consents:any\_refused      | Wird ausgelöst, wenn mindestens ein Cookie vom Nutzer über das Modal explizit abgelehnt wurde                                                                                                                                    |
-| dastra:consents:all\_accepted     | Wird ausgelöst, wenn alle Dienste vom Nutzer über das Modal akzeptiert wurden                                                                                                                                                    |
+| Ereignisname | Hinweise |
+| --- | --- |
+| `dastra:consent:<service slug>` | Wird ausgelöst, wenn der Dienst akzeptiert wird, durch den Besucher oder standardmäßig (unbedingt notwendige Dienste sind nicht betroffen). Ist der Dienst auf „standardmäßig akzeptiert“ eingestellt, wird das Ereignis ab dem ersten Laden der Seite ausgelöst. |
+| `dastra:refused:<service slug>` | Wird ausgelöst, wenn der Dienst nicht akzeptiert wird: standardmäßig, wenn keine Einwilligung erteilt wurde, oder nach einer ausdrücklichen Ablehnung. |
+| `dastra:consents:ready` | Wird ausgelöst, wenn die gespeicherte Einwilligung (standardmäßig das Cookie `consent-eu`) gelesen und die ersten Ereignisse ausgelöst wurden. |
+| `dastra:consents:updated` | Wird bei jedem Laden der Seite und bei jedem Speichern von Entscheidungen ausgelöst (akzeptiert, abgelehnt oder angepasst). Das Ereignisdetail enthält die Liste der Einwilligungen. |
+| `dastra:consents:any_refused` | Wird ausgelöst, wenn mindestens eine gespeicherte Einwilligung eine Ablehnung ist, bei jedem Laden der Seite und bei jedem Speichern von Entscheidungen. |
+| `dastra:consents:all_accepted` | Wird ausgelöst, wenn keine gespeicherte Einwilligung eine Ablehnung ist, bei jedem Laden der Seite und bei jedem Speichern von Entscheidungen. |
+| `dastra:consents:closed` | Wird ausgelöst, wenn der Besucher das Banner mit dem Schließen-Kreuz schließt. |
+| `dastra:gpc:applied` | Wird ausgelöst, wenn das Banner nicht notwendige Cookies automatisch ablehnt, weil ein Signal Global Privacy Control oder Do Not Track vorliegt. Siehe [US-Compliance](../../banner/us-privacy.md). |
+
+{% hint style="info" %}
+Da die Ereignisse `dastra:consent:*` und `dastra:consents:*` auch beim Laden der Seite ausgelöst werden, registrieren Sie Ihre Listener für das erneute Laden innerhalb von `dastra:consents:ready`. Siehe [Google Tag Manager](google-tag-manager.md).
+{% endhint %}
+
+Um auf jede Aktualisierung der Einwilligung zu reagieren, können Sie auch `dastra.addConsentDastraListener(callback)` verwenden: Die Funktion wird bei jedem Ereignis `dastra:consents:updated` aufgerufen.
+
+---
+
+## Häufig gestellte Fragen
+
+**Kann ich ein Skript nach Kategorie statt nach Dienst blockieren? (z. B. `data-consent="analytics"`)**
+
+Nein. Das Attribut `data-consent` erwartet einen **Dienst-Slug**, keinen Kategorie-Slug. Die Schreibweise `<script data-consent="analytics" type="dastra/script">`, um alle Dienste einer Kategorie mit einer einzigen Anweisung zu blockieren, wird nicht unterstützt.
+
+Der Grund: Ein Nutzer kann einige Dienste einer Kategorie akzeptieren und andere derselben Kategorie ablehnen. Das Banner verwaltet die Einwilligung auf Ebene der Dienste, nicht der Kategorien.
+
+Um ein Skript zu laden, je nachdem, ob eine ganze Kategorie akzeptiert wurde, verwenden Sie die programmatische API:
+
+```javascript
+window.addEventListener('dastra:consents:updated', function () {
+  if (window.dastra.cookieConsent.consent.getPurposeConsent('Analytical')) {
+    // load your analytics scripts here
+  }
+});
+```
+
+{% hint style="warning" %}
+`getPurposeConsent` gibt nur dann `true` zurück, wenn **alle** Dienste der Kategorie akzeptiert sind. Hat das Banner in dieser Kategorie keinen Dienst, löst der Aufruf einen Fehler aus: Sichern Sie ihn ab, zum Beispiel mit einem `try ... catch`.
+{% endhint %}

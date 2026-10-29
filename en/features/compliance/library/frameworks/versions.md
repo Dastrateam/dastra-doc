@@ -12,7 +12,7 @@ Every framework in the Library is versioned. A version has an automatically assi
 
 ***
 
-### Version number and current version
+## Version number and current version
 
 The version number is displayed under the framework name, on its card in the list of frameworks and in the **Detail** tab (**Version information** card, together with the version note).
 
@@ -22,7 +22,7 @@ The list of frameworks in the Library shows the current version of each framewor
 
 ***
 
-### Viewing the version history
+## Viewing the version history
 
 The **Versions** tab of a framework lists all its versions, from the most recent to the oldest. Each row shows:
 
@@ -44,7 +44,7 @@ Depending on its status, the actions menu of each version offers:
 
 ***
 
-### Creating a version
+## Creating a version
 
 1. Open the framework, then the **Versions** tab.
 2. Click **Create a new version**.
@@ -63,7 +63,7 @@ The versions of a framework are not counted separately in the framework quota: c
 
 ***
 
-### Publishing, unpublishing or deleting a version
+## Publishing, unpublishing or deleting a version
 
 * **Publish**: from the version's actions menu, or with the **Publish** button at the top of the framework page. A published version is offered when the framework is added to a project. Several published versions of the same framework can coexist.
 * **Cancel publication**: the version goes back to draft and is no longer offered when the framework is added to a project. The current version cannot be unpublished: set another version as the current version first.
@@ -75,7 +75,7 @@ The requirements of a published version are locked: the **Edit** button is disab
 
 ***
 
-### Setting the current version
+## Setting the current version
 
 In the **Versions** tab, open the actions menu of a published version and click **Set as current version**.
 
@@ -83,7 +83,7 @@ This version becomes the one offered and installed by default when the framework
 
 ***
 
-### Updating from the source referential
+## Updating from the source referential
 
 When a framework was created from a template and a newer version of this source referential is available:
 
@@ -96,19 +96,19 @@ Click **Validate**: a published version of the framework is created from the sou
 
 ***
 
-### Versions and compliance projects
+## Versions and compliance projects
 
-#### Choosing the version to install
+### Choosing the version to install
 
 When a framework is added to a project (**Add a framework to project**), only published versions are offered. When several published versions exist, a drop-down list (**Version to install**) appears next to the framework name, with the current version preselected. The project is then attached to the installed version.
 
-#### Spotting a project to update
+### Spotting a project to update
 
 In the project overview, the card of each framework shows the number of the version in use. The **Update available** badge indicates that the project uses a version that is no longer the current version of the framework.
 
 <figure><img src="../../../../.gitbook/assets/compliance-project-overview-framework-update-available.png" alt="Framework card in a project showing the version number and the Update available badge"><figcaption><p>The Update available badge flags a project attached to an earlier version of the framework</p></figcaption></figure>
 
-#### Moving a project to another version
+### Moving a project to another version
 
 1. In the project overview, open the actions menu of the framework card and click **Update the framework version**.
 2. Choose the **Target version** among the other published versions. Its version note and a preview of the items added to the project are displayed.

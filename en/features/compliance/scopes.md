@@ -14,7 +14,7 @@ A scope answers a simple question:
 
 ***
 
-### Role of scopes in Dastra
+## Role of scopes in Dastra
 
 In Dastra, scopes are used exclusively in **compliance projects**.\
 They make it possible to:
@@ -23,12 +23,12 @@ They make it possible to:
 * adapt the requirements, controls and tests to the right level,
 * structure compliance according to the organizational reality.
 
-👉 A scope does not modify the frameworks:\
+A scope does not modify the frameworks:\
 it **determines where** compliance applies, not **what** applies.
 
 ***
 
-### A flexible organizational breakdown
+## A flexible organizational breakdown
 
 A scope is defined from the **organizational units** that exist in the workspace.
 
@@ -42,7 +42,7 @@ Organizational units can be selected individually or in groups, respecting their
 
 ***
 
-### Creating a scope
+## Creating a scope
 
 When creating a scope, the user provides:
 
@@ -50,15 +50,15 @@ When creating a scope, the user provides:
 * an **optional description**
 * the **organizational units** included in the scope (mandatory)
 
-<figure><img src="../../.gitbook/assets/image-456.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-456.png" alt="Scope creation window"><figcaption></figcaption></figure>
 
-👉 A scope must always contain **at least one organizational unit**.
+A scope must always contain **at least one organizational unit**.
 
 ***
 
-### Example of a scope
+## Example of a scope
 
-📌 Example:
+Example:
 
 * **Name**: Global
 * **Description**: The entire company
@@ -73,7 +73,7 @@ This scope can then be selected in a compliance project to indicate that it appl
 
 ***
 
-### Best practices
+## Best practices
 
 * Create a **global scope** for cross-cutting approaches
 * Create **more restricted scopes** for targeted projects
@@ -82,7 +82,7 @@ This scope can then be selected in a compliance project to indicate that it appl
 
 ***
 
-### Link with compliance projects
+## Link with compliance projects
 
 Scopes are selected **when creating a compliance project**.
 
@@ -94,7 +94,7 @@ They make it possible to:
 
 ***
 
-### Summary
+## Summary
 
 Scopes are an **organizational framing tool**.\
 They make it possible to align compliance with the actual structure of the company, without adding complexity to the referentials.

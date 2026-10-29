@@ -1,70 +1,100 @@
 ---
-description: Here you'll learn how to use the AI Systems feature.
+description: >-
+  Discover the AI systems module of Dastra: the register, the AI Act risk
+  levels, AI models and compliance documentation.
 ---
 
-# AI Systems
+# AI systems
 
-## Introduction
+The **AI governance** module of Dastra lists the AI systems your organization uses or develops, assesses their risk level under the AI Act and keeps the documentation that proves your compliance. This page is for data protection officers, legal teams and project teams who manage AI.
 
-An AI system represents the use of personal data using software developed with one or more of the techniques and approaches of artificial intelligence. This use can generate results such as content, predictions, recommendations or decisions influencing the environments with which it interacts.
+<figure><img src="../../.gitbook/assets/ai-systems-overview-1.png" alt="Record of AI systems with the list of systems, their risk level and their state"><figcaption><p>The record of AI systems</p></figcaption></figure>
 
+The module is available if your subscription plan includes it.
 
+## What is an AI system under the AI Act
 
-> The[ OECD AI System definition](https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/03/explanatory-memorandum-on-the-updated-oecd-definition-of-an-ai-system_3c815e51/623da898-en.pdf) states that "An AI system is a machine-based system that, for explicit or implicit objectives, infers, from
-> &#x20;the input it receives, how to generate outputs such as predictions, content,
-> &#x20;recommendations, or decisions that can influence physical or virtual environments.
-> &#x20;Different AI systems vary in their levels of autonomy and adaptiveness after deployment."
+The European Artificial Intelligence Act (**AI Act**, Regulation (EU) 2024/1689) defines an AI system in Article 3(1) as a machine-based system designed to operate with varying levels of autonomy, which may exhibit adaptiveness after deployment and which, for explicit or implicit objectives, infers from the input it receives how to generate outputs such as:
 
-This definition aims to frame and regulate the development and use of artificial intelligence to ensure that it is used in a way that is safe, ethical and respects the fundamental rights of individuals.
+* content (generated text, images, sounds);
+* predictions (buying behavior, credit risk);
+* recommendations (products, marketing actions, security measures);
+* decisions (accepting or refusing a loan, sorting job applications).
 
-Please note that to use this Dastra feature, you must have subscribed to it in your subscription plan.
+These outputs can influence the physical or virtual environment the system interacts with.
 
-## The AI Governance in the world
+## Why keep a record of AI systems
 
-\
-They are currently multiple AI governance frameworks in the world, such as:
+### Meet regulatory obligations
 
-* **EU AI Act**
-* **ISO/IEC 42001 – AI Management System**
-* **NIST AI RMF (USA)**
-* **China Algorithmic Regulation & Generative AI Measures**
-* **PIPL (China)**
-* **CPRA ADMT (California)**
-* **Colorado AI Act**
-* **Brazil PL 2338/2023**
-* **Singapore Model AI Governance Framework**
-* **OECD AI Principles**
-* **UNESCO AI Ethics Recommendation**
-* **Canada voluntary AI Code**
-* **Japan / Korea / India AI Guidelines**
+The AI Act asks organizations to know their AI systems, to classify them by risk level and to document them. The record helps you:
 
-Each framework has its specificities. In the European Union, the **AI Act** categorizes for example AI systems according to their level of potential risk, ranging from minimal-risk to high-risk systems, imposing transparency obligations and strict security and data management requirements for the most critical systems.&#x20;
+* identify high-risk systems, which are subject to strict obligations (risk management, data governance, technical documentation, human oversight, transparency);
+* keep a trace of each system to demonstrate compliance during an inspection or an audit;
+* spot prohibited practices, such as social scoring, in time.
 
-In addition to the AI Act, Dastra now covers most international frameworks dedicated to AI governance: Chinese regulations (Algorithmic Recommendation Regulation, Generative AI Measures), Colorado AI Act, ADMT requirements in California, as well as the main non-binding national frameworks (UK, Japan, Korea, India, Singapore) and global standards such as ISO/IEC 42001, OECD, and NIST AI RMF.
+### Strengthen governance and transparency
 
-{% hint style="info" %}
-Several countries (UK AI Bill, Canada AIDA, Australia, Brazil, etc.) are still finalizing their future AI laws. Even if they have not yet been adopted, their requirements are based on a common foundation that Dastra already natively covers (governance, transparency, human oversight, risk management, documentation). We are committed to quickly integrating any new legislation once it is official.
-{% endhint %}
+A record lets you:
 
-In case you are wondering which AI governance framework applies to your organization, feel free to answer this [Global AI Regulatory Eligibility Questionnaire](https://www.dastra.eu/en/audit/referential/af0d4dcd-2f0a-47be-7337-08de2357ae70).
+* centralize the information on all your AI systems;
+* identify the responsible stakeholders (data scientists, DPO, business teams);
+* share the same information internally, which builds trust among users and employees;
+* update the documentation when a system changes (new version, new dataset, change of use).
 
-## AI Systems in Dastra
+### Secure AI projects and prioritize investments
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-171006.png" alt=""><figcaption><p>Dastra AI Systems record</p></figcaption></figure>
+The record helps you:
 
-This feature is the s of all AI regulations such as the EU AI Act. It will enable you to draw up a **list of all AI systems present within your organization**. We've designed it so that every use of  data with AI is well defined, evaluated, analyzed and documented.
+* assess the business value of each system (productivity, performance, risk reduction);
+* weigh that value against the risk level to prioritize your projects;
+* decide whether to continue, change or abandon a system whose balance between risk and benefit is not favorable.
 
-In the following links, you'll learn how to set up a record of AI systems and create your own repository of AI models :
+## Risk levels
 
-[ai-models-repository.md](models.md "mention")\
-\
-[establishing-a-record-of-ai-systems.md](record.md "mention")\
-\
-[import-your-ai-systems.md](import.md "mention")\
-\
-[risk-analysis-and-business-value.md](risk-analysis.md "mention")
+The AI Act sorts AI systems into four categories:
 
-[transparency-notice.md](transparency-notice.md "mention")
+1. **Minimal risk**: no significant impact, for example a spam filter.
+2. **Limited risk**: transparency obligations, for example a chatbot or generated content that must be disclosed as such.
+3. **High risk**: impact on health, safety or fundamental rights, which requires strict compliance, for example automated sorting of job applications or credit scoring.
+4. **Unacceptable risk**: prohibited practices, for example social scoring or subliminal manipulation of people.
 
-\
-<br>
+For the detail of each level, see [Risk analysis and business value](risk-analysis.md).
+
+## What the module does
+
+In Dastra, you can:
+
+* list the AI systems used or developed in your organization;
+* assess their risk level in line with the AI Act;
+* document each system with its assets, datasets, AI models, linked processing activities and stakeholders;
+* analyze the business value of each system to align your AI projects with your objectives.
+
+## What you will learn in this section
+
+The following pages show you how to:
+
+* build a record of your AI systems;
+* create and manage a repository of AI models;
+* document each system to demonstrate compliance during an audit;
+* bring AI risk assessment into your data governance and compliance processes.
+
+## Value for your organization
+
+The module helps you reduce your regulatory risk, structure your AI projects and account for your choices to customers, partners and teams.
+
+## Navigate the module
+
+Click **AI governance** in the sidebar. The menu has the following entries:
+
+* **Record of AI systems**: the list of your systems, from which you create, import, export and open records. See [Establishing a record of AI systems](record.md) and [Import your AI systems](import.md).
+* **Graphs**: the graph of AI systems and the items they are linked to.
+* **Reporting**: the indicators of the record, namely systems by risk level, by business value, by workflow stage, by organizational unit and by tag, and new systems.
+* **AI models**: the repository of the models your systems use. See [AI models repository](models.md).
+* **Impact analysis**: the impact assessment questionnaires linked to your AI systems. The entry appears if your plan includes the **Questionnaires** module and you have access to questionnaires. See [Fundamental rights impact assessment (FRIA)](fria.md).
+
+To write the information notice of a system, see [Transparency notice](transparency-notice.md). To publish your AI systems on your public portal, see [AI systems in the Trust center](../trust-center/configuration/ai-systems.md).
+
+## Get started
+
+Start with [Establishing a record of AI systems](record.md), or with [Import your AI systems](import.md) if you already have a list.

@@ -1,37 +1,60 @@
 ---
-description: Erfahren Sie, wie Sie Cookie-Einwilligungsnachweise mit Dastra erfassen.
+description: Erfahren Sie, wie Sie mit Dastra Nachweise der Cookie-Einwilligung erfassen, anzeigen und exportieren und wie Sie die Statistiken des Banners verfolgen.
 ---
 
 # Nachweise der Cookie-Einwilligung sammeln
 
-Sobald das DASTRA Cookie-Einwilligungs-Widget auf Ihrer Website implementiert ist, ermöglicht Ihnen das DASTRA Cookie-Einwilligungsmodul außerdem, die **Cookie-Einwilligungsnachweise** zu **erfassen** und zu **exportieren**.
+Sobald das Cookie-Einwilligungsbanner auf Ihrer Website installiert ist, erfasst, speichert und exportiert das Modul **Cookie-Banner** **Einwilligungsnachweise**. Es zeigt außerdem die **Statistiken** des Banners an.
 
 ## Voraussetzungen
 
-Dazu müssen Sie zuvor ein DASTRA Cookie-Einwilligungs-Widget auf Ihrer Website implementiert haben.
+Sie müssen das Banner auf Ihrer Website installiert haben.
 
 {% content-ref url="configure.md" %}
-[implementez-un-widget-de-consentement-aux-cookies.md](configure.md)
+[Das Cookie-Einwilligungsbanner einrichten](configure.md)
 {% endcontent-ref %}
 
-## Erfassen Sie die Cookie-Einwilligungsnachweise
+## Die Einwilligungsnachweise anzeigen
 
-Sobald das Widget implementiert ist, erfasst DASTRA automatisch für Sie die Einwilligungsnachweise der Besucher Ihrer Website.
+Sobald das Banner installiert ist, erfasst Dastra automatisch Einwilligungsnachweise der Besucher Ihrer Website. So zeigen Sie sie an:
 
-Um diese einzusehen, navigieren Sie einfach zur Oberfläche „**Einwilligungen**" des DASTRA Cookie-Einwilligungsmoduls.
+1. Klicken Sie im Menü auf **Cookie-Banner** > **Einwilligungen**.
+2. Verwenden Sie die Filter über der Liste: den Zeitraum (standardmäßig die letzten 7 Tage), das Banner (**Alle Banner**) und, sobald ein Banner gewählt ist, die eingewilligten Dienste.
+3. Klicken Sie auf eine Zeile, um den Nachweis zu öffnen.
 
-![Oberfläche „Einwilligungen"](../../../.gitbook/assets/Cookie10.png)
+<figure><img src="../../../.gitbook/assets/cookies-consent-proof-1.png" alt="Die Liste der Einwilligungen mit den Filtern für Zeitraum und Banner"><figcaption><p>Die Liste der Einwilligungen</p></figcaption></figure>
+
+Der Nachweis der Cookie-Einwilligung zeigt das Datum, das Land, den Fingerabdruck der Einwilligung und die Liste der Dienste, jeweils mit dem Vermerk **Consenti** (Einwilligung erteilt) oder **Ablehnung**. Sie können ihn drucken oder löschen.
+
+<figure><img src="../../../.gitbook/assets/cookies-consent-proof-2.png" alt="Das Detail eines Einwilligungsnachweises"><figcaption><p>Das Detail eines Einwilligungsnachweises</p></figcaption></figure>
+
+In der Liste lädt die Schaltfläche **Exportieren** den Nachweis für den gewählten Zeitraum und das gewählte Banner herunter. Um Nachweise zu löschen, verwenden Sie das Zeilenmenü oder die Sammelaktion **Löschen**.
+
+Die Aufbewahrungsdauer des Einwilligungsnachweises beträgt ein Jahr.
 
 {% hint style="info" %}
-Von dieser Oberfläche aus können Sie auch die erfassten Einwilligungsnachweise anpassen, die Daten exportieren und insbesondere nach Datum oder Cookie-Widget filtern.
+Die Erfassung der Nachweise hängt von der Option **Speicherung der Einwilligung** im Abschnitt **Konfiguration** des Banners ab. Ist sie deaktiviert, wird kein Nachweis gespeichert. Um einen Nachweis einem Nutzer Ihres Systems zuzuordnen, siehe [Nutzeridentifikation](../integration/identification.md).
 {% endhint %}
 
-Herzlichen Glückwunsch, Sie erfassen jetzt die Cookie-Einwilligungsnachweise!
+## Die Statistiken anzeigen
 
-Die Aufbewahrungsdauer der Einwilligungsnachweise beträgt ein Jahr.
+Die Seite **Statistiken** verfolgt die Aktivität Ihrer Banner.
 
-Um Ihre Website dynamisch zu gestalten und die Einwilligung des Besuchers wirklich zu berücksichtigen, besuchen Sie den nächsten Abschnitt „Weiterführende Informationen":
+1. Klicken Sie im Menü auf **Cookie-Banner** > **Statistiken**. Sie können auch das Menü eines Banners in der Liste der Banner öffnen und **Statistiken** wählen.
+2. Wählen Sie den Zeitraum (standardmäßig die letzten 7 Tage) und bei Bedarf ein Banner unter **Alle Banner**.
+
+Es werden drei Diagramme angezeigt, jeweils im Vergleich zum vorherigen Zeitraum:
+
+* **Eingeholte Einwilligungen**: das Volumen der erfassten Entscheidungen, mit den Indikatoren **Gesamt**, **Vollständige Akzeptanz**, **Teilweise Zustimmung** und **Vollständige Ablehnung**;
+* **Anzahl der Widget-Anzeigen**: die Anzahl der Sitzungen, in denen das Banner angezeigt wurde. Der Zähler erhöht sich einmal pro Besuchersitzung, und eine Sitzung dauert mindestens eine Stunde;
+* ein drittes Diagramm zählt, wie oft ein Besucher das Banner mit dem Schließen-Kreuz geschlossen hat (**Schließungen des Banners**).
+
+{% hint style="info" %}
+Im Vorschau-Modus werden keine Statistiken erfasst. Anzeigen werden auch nicht gezählt, wenn die Option **Speicherung der Einwilligung** deaktiviert ist.
+{% endhint %}
+
+Um die Entscheidungen der Besucher auf Ihrer Website tatsächlich anzuwenden, gehen Sie zur nächsten Seite:
 
 {% content-ref url="go-further.md" %}
-[allez-plus-loin-sur-le-consentement-des-cookies.md](go-further.md)
+[Weiterführende Cookie-Einwilligung](go-further.md)
 {% endcontent-ref %}

@@ -1,26 +1,26 @@
 ---
 description: >-
-  Dieses Kapitel zeigt Ihnen, wie Sie die Einwilligungen unseres Cookie-Widgets
-  programmatisch verwalten.
+  In diesem Kapitel erfahren Sie, wie Sie die Einwilligungen unseres
+  Cookie-Widgets programmatisch verwalten.
 ---
 
 # Einwilligung programmatisch verwalten
 
-## Wo werden die Einwilligungen gespeichert?
+## Speicherort der Einwilligungen
 
-Standardmäßig werden die Einwilligungen in einem Browser-Cookie namens `consent-eu` als serialisiertes JSON für 180 Tage gespeichert. In der Konfiguration des Banners können Sie:
+Standardmäßig werden die Einwilligungen 180 Tage lang als serialisiertes JSON in einem Browser-Cookie mit dem Namen `consent-eu` gespeichert. In der Konfiguration des Banners können Sie:
 
-* den Namen dieses Cookies ändern;
-* seine Lebensdauer und seine Domain ändern;
-* die Einwilligungen stattdessen im localStorage speichern. Der Schlüssel lautet dann `dastra-consents` oder der für das Cookie gewählte Name.
+* den Namen dieses Cookies ändern (**Name des Cookies zur Speicherung der Einwilligung**);
+* seine Lebensdauer (**Lebensdauer des Einwilligungs-Cookies**) und seine Domäne (**Cookie-Domäne**) ändern;
+* die Einwilligungen stattdessen im localStorage speichern (**Aktivieren Sie den localStorage-Speicher für Einwilligung-Cookies**). Der Schlüssel lautet dann `dastra-consents` oder entspricht dem für das Cookie gewählten Namen.
 
 {% hint style="info" %}
-Die Weitergabe der Einwilligungen hängt von diesen Daten ab: Ändern Sie sie nicht direkt. Verwenden Sie das JavaScript-SDK von Dastra.
+Die Weitergabe der Einwilligungen hängt von diesen Daten ab: Ändern Sie sie nicht direkt. Verwenden Sie das Dastra-JavaScript-SDK.
 {% endhint %}
 
 ### Zugriff auf den Einwilligungsdienst
 
-Der Dastra-Einwilligungsdienst ist folgendermaßen zugänglich
+Auf den Dastra-Einwilligungsdienst können Sie wie folgt zugreifen:
 
 ```javascript
 <script>
@@ -30,36 +30,46 @@ Der Dastra-Einwilligungsdienst ist folgendermaßen zugänglich
 </script>
 ```
 
-### Liste der verfügbaren Methoden im Einwilligungsmanager
+### Liste der im Einwilligungs-Manager verfügbaren Methoden
 
-In manager.consent stehen Ihnen folgende Methoden zur Verfügung:
+In `manager.consent` stehen Ihnen die folgenden Methoden zur Verfügung:
 
-- getAllConsents() : ruft alle Einwilligungen ab
-- hasConsented() : gibt `true` zurück, wenn der Nutzer bereits eine explizite Einwilligung gespeichert hat
-- getPurposeConsent(purposeLabel:string) : ruft die Einwilligung einer Cookie-Kategorie ab
-- setPurposeConsent(purposeLabel:string, consent:bool): legt die Einwilligung für eine Kategorie fest
-- getServiceConsent(serviceShortName:string): ruft die Einwilligung eines bestimmten Dienstes ab.
-- setServiceConsent(serviceShortName:string, consent:bool): legt die Einwilligung eines bestimmten Elements fest
+- getAllConsents(): alle Einwilligungen abrufen
+- hasConsented(): gibt `true` zurück, wenn der Nutzer bereits eine ausdrückliche Einwilligung erteilt hat
+- getPurposeConsent(purposeLabel:string): die Einwilligung für eine Cookie-Kategorie abrufen
+- setPurposeConsent(purposeLabel:string, consent:bool): die Einwilligung für eine Kategorie festlegen
+- getServiceConsent(serviceShortName:string): die Einwilligung für einen bestimmten Dienst abrufen
+- setServiceConsent(serviceShortName:string, consent:bool): die Einwilligung für einen bestimmten Dienst festlegen
 - save(): speichert die Einwilligungen und löst die Ereignisse aus
 - dispatchEvents(): wendet die aktuellen Einwilligungen an (Ereignisse, Google Consent Mode, Skripte), ohne sie zu speichern
 
-Um das Widget zu öffnen oder zu schließen, verwenden Sie `manager.open()` und `manager.close()`. Außerhalb des Callbacks `cookieReady` verwenden Sie `dastra.push(['openCookieConsent'])` und `dastra.push(['closeCookieConsent'])`.
+Um das Widget zu öffnen oder zu schließen, verwenden Sie `manager.open()` und `manager.close()`. Außerhalb des `cookieReady`-Callbacks verwenden Sie `dastra.push(['openCookieConsent'])` und `dastra.push(['closeCookieConsent'])`.
 
-### Liste der Nutzer-Einwilligungen abrufen (getAllConsents)
+### Die Einwilligungen des Nutzers abrufen (getAllConsents)
 
-Sobald Sie auf den Einwilligungsmanager zugreifen, ist es sehr einfach, die Einwilligungen des aktuellen Nutzers abzurufen:
+Sobald Sie Zugriff auf den Einwilligungs-Manager haben, lassen sich die Einwilligungen des aktuellen Nutzers abrufen:
 
 ```javascript
 <script>
-dastra = dastra || []
-dastra.push(['cookieReady', function(manager){
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady', function(manager){
     // Get the complete consent services list
     var consents = manager.consent.getAllConsents()
-});
+}]);
 </script>
 ```
 
-Die obige Methode gibt die Liste aller Nutzer-Einwilligungen zurück
+{% hint style="warning" %}
+Um `getAllConsents()` **außerhalb des `cookieReady`-Callbacks** aufzurufen (zum Beispiel aus Ihrem eigenen Code, nachdem das Widget geladen wurde), verwenden Sie den vollständigen Pfad:
+
+```javascript
+var consents = window.dastra.cookieConsent.consent.getAllConsents();
+```
+
+Die alte Syntax auf oberster Ebene `dastra.getAllConsents()` wird nicht mehr unterstützt.
+{% endhint %}
+
+Die obige Methode gibt eine Liste aller Einwilligungen des Nutzers zurück:
 
 ```javascript
 [
@@ -78,19 +88,19 @@ Die obige Methode gibt die Liste aller Nutzer-Einwilligungen zurück
 
 ### Einwilligungen nach Kategorie abfragen (getPurposeConsent/setPurposeConsent)
 
-Die Cookie-Kategorien werden durch folgende Labels identifiziert:
+Die Cookie-Kategorien werden durch die folgenden Zeichenketten identifiziert:
 
-| Kategorie           | Label          |
-| ------------------- | -------------- |
-| Erforderlich        | `Necessary`    |
-| Präferenzen         | `Preference`   |
-| Analytisch          | `Analytical`   |
-| Marketing           | `Marketing`    |
-| Sonstige            | `Other`        |
-| Nicht klassifiziert | `Unclassified` |
+| Kategorie             | Label          |
+| --------------------- | -------------- |
+| Erforderliche Cookies | `Necessary`    |
+| Einstellungen         | `Preference`   |
+| Statistiken           | `Analytical`   |
+| Marketing             | `Marketing`    |
+| Weitere Cookies       | `Other`        |
+| Unkategorisiert       | `Unclassified` |
 
 {% hint style="warning" %}
-Verwenden Sie die **Labels als Zeichenketten** (z. B. `'Analytical'`) und nicht die numerischen Werte, die von der API nicht unterstützt werden.
+Verwenden Sie immer die **Zeichenketten-Labels** (zum Beispiel `'Analytical'`): Zahlenwerte werden von der API nicht unterstützt.
 {% endhint %}
 
 ```javascript
@@ -100,57 +110,57 @@ window.dastra.push(['cookieReady',function(manager){
     let consents = manager.consent.getPurposeConsent('Analytical');
     manager.consent.setPurposeConsent('Analytical', false);
 
-    // persist consent in cookies
+    // persist consent
     manager.consent.save();
-});
+}]);
 </script>
 ```
 
 ### Einwilligungen nach Dienst verwalten
 
-Um die Einwilligungen nach Dienst zu verwalten, benötigen Sie den vereinfachten Namen des Dienstes, der in der Dienstverwaltungsoberfläche Ihres Widgets verfügbar ist.
+Um die Einwilligungen nach Dienst zu verwalten, benötigen Sie den vereinfachten Namen des Dienstes, den Sie in der Dienstverwaltung Ihres Widgets finden.
 
 {% hint style="info" %}
-**Wie finden Sie den vereinfachten Dienstnamen?**\
-Gehen Sie zur Dienstverwaltungsoberfläche. Beim Bearbeiten eines Dienstes erscheint der vereinfachte Name (Slug) des Dienstes unterhalb des Cookie-Namens.
+**Wie finde ich den vereinfachten Namen des Dienstes?**\
+Öffnen Sie die Dienstverwaltung und bearbeiten Sie einen Dienst: Der vereinfachte Name (Slug) des Dienstes steht unter dem Namen des Cookies.
 {% endhint %}
 
-![Position des vereinfachten Cookie-Namens](../../../.gitbook/assets/image-67.png)
+![Position des vereinfachten Cookie-Namens](../../../.gitbook/assets/cookies-service-cookie-name-field.png)
 
 ```javascript
 <script>
-dastra = dastra || []
-dastra.push(['cookieReady',function(manager){
+window.dastra = window.dastra || [];
+window.dastra.push(['cookieReady',function(manager){
     let cookieService = 'google-analytics';
     let consents = manager.consent.getServiceConsent(cookieService);
     manager.consent.setServiceConsent(cookieService, false);
 
-    // sauvegarder le consentement
+    // persist consent in cookies
     manager.consent.save();
-});
+}]);
 </script>
 ```
 
-### Vollständiges Beispiel
+### Anwendungsbeispiel
 
-Das folgende Beispiel zeigt, wie eine globale Ablehnung programmatisch angewendet wird – zum Beispiel wenn der Nutzer auf eine benutzerdefinierte Schaltfläche „Alle ablehnen" klickt oder um ein Browser-Datenschutzsignal zu beachten.
+Das folgende Beispiel zeigt, wie Sie programmatisch eine vollständige Ablehnung anwenden, zum Beispiel wenn der Nutzer auf eine von Ihnen erstellte Schaltfläche „Alle ablehnen“ klickt oder wenn Sie ein Datenschutzsignal des Browsers berücksichtigen.
 
 ```javascript
 <script>
 window.dastra = window.dastra || [];
 window.dastra.push(['cookieReady', function(manager) {
 
-  // N'agir que si l'utilisateur n'a pas encore fait de choix explicite
+  // Only act if the user hasn't already made an explicit choice
   if (!manager.consent.hasConsented()) {
 
-    // Refuser toutes les catégories non essentielles
+    // Opt out of all non-essential categories
     manager.consent.setPurposeConsent('Preference',   false);
     manager.consent.setPurposeConsent('Analytical',   false);
     manager.consent.setPurposeConsent('Marketing',    false);
     manager.consent.setPurposeConsent('Other',        false);
     manager.consent.setPurposeConsent('Unclassified', false);
 
-    // Sauvegarder le choix dans le navigateur
+    // Persist the choice in the browser
     manager.consent.save();
   }
 
@@ -158,7 +168,7 @@ window.dastra.push(['cookieReady', function(manager) {
 </script>
 ```
 
-Es ist auch möglich, selektiv bestimmte Kategorien zu akzeptieren – zum Beispiel nur Analytik akzeptieren:
+Sie können ebenso gezielt zustimmen, zum Beispiel um nur Statistik-Cookies zu akzeptieren:
 
 ```javascript
 <script>
@@ -172,3 +182,23 @@ window.dastra.push(['cookieReady', function(manager) {
 }]);
 </script>
 ```
+
+### Auf Änderungen der Einwilligung reagieren (das Ereignis `dastra:consents:updated`)
+
+Jedes Mal, wenn ein Nutzer seine Einwilligungsauswahl ändert, über das Widget oder programmatisch mit `save()`, löst Dastra ein Ereignis `dastra:consents:updated` auf `window` aus. Sie können es abonnieren, um Ihre eigene Logik auszuführen: Skripte von Drittanbietern laden, die Oberfläche aktualisieren, ein Analyse-Ereignis senden usw.
+
+```javascript
+window.addEventListener('dastra:consents:updated', function(event) {
+  // event.detail contains the updated consents
+  console.log('Consents updated', event.detail);
+
+  // Example: reload Google Analytics if the user just accepted analytics
+  if (window.dastra.cookieConsent.consent.getPurposeConsent('Analytical')) {
+    // load or re-enable your analytics scripts here
+  }
+});
+```
+
+{% hint style="info" %}
+Dieses Ereignis wird bei jedem Aufruf von `save()` oder `dispatchEvents()` ausgelöst und außerdem bei jedem Laden der Seite, wenn das Widget die gespeicherte Auswahl anwendet. Um nur auf Änderungen des Besuchers zu reagieren, registrieren Sie den Listener innerhalb von `dastra:consents:ready` (siehe [Google Tag Manager](blocking/google-tag-manager.md)).
+{% endhint %}

@@ -1,110 +1,148 @@
 ---
-description: In deze handleiding wordt uitgelegd hoe u cookies kunt blokkeren.
+description: >-
+  Deze handleiding legt uit hoe u cookies daadwerkelijk blokkeert.
 ---
 
 # Cookies blokkeren
 
-Er zijn verschillende methoden om cookies effectief te blokkeren: cookies verwijderen, een snippet blokkeren, gepersonaliseerd javascript of Google Tag Manager.
+Om cookies effectief te blokkeren zijn er verschillende methoden: cookies verwijderen, een codefragment blokkeren, aangepast JavaScript of Google Tag Manager.
 
 ## Cookies verwijderen
 
-Deze methode is het snelst te implementeren, maar ook het minst betrouwbaar. Als je in het configuratiescherm van de Dastra widget de naam van de cookies invoert die aan elke service zijn gekoppeld, worden de betreffende cookies automatisch verwijderd telkens wanneer de pagina wordt weergegeven. &#x20;
+Deze methode is het snelst in te stellen, maar ook het minst betrouwbaar. Voert u in de sectie **Diensten** van de banner de namen in van de cookies die bij elke dienst horen (tabblad **Bijbehorende cookies** van de dienst), dan verwijdert de SDK deze cookies automatisch zodra een weigering voor de dienst wordt vastgelegd.
 
-![](<../../../../.gitbook/assets/image (85).png>)
+<figure><img src="../../../../.gitbook/assets/cookies-blocking-1.png" alt="Het tabblad Bijbehorende cookies van een dienst met de lijst van de cookies"><figcaption><p>De cookies die aan een dienst zijn gekoppeld</p></figcaption></figure>
 
-Dit kan in sommige gevallen effectief zijn, maar het riskeert de betrouwbaarheid van de gebruikte gereedschappen van derden (webanalyse gereedschappen in het bijzonder) aanzienlijk te verstoren. Het is vaak beter om een van de andere onderstaande methoden te gebruiken.
+Deze methode werkt in sommige gevallen, maar kan de betrouwbaarheid van hulpmiddelen van derden verstoren, vooral van webanalysehulpmiddelen. Gebruik haar naast een van de onderstaande methoden.
 
 ## Een codefragment in de pagina blokkeren
 
-Met deze methode kun je een stukje trackingcode op de pagina volledig uitschakelen.
+Met deze methode schakelt u een trackingcodefragment volledig uit.
 
-Vervang hiervoor het volgende codefragment in de html-code van je pagina:
+Vervang in de HTML-code van uw pagina het volgende fragment:
 
-```markup
-<script >
-  alert("hallo, ik ben een tracking javascript tag");
+```html
+<script>
+  alert("hello, I'm a tracking javascript tag");
 </script>
 ```
 
-Van :
+Door:
 
-```markup
-<script data-consent="{uw-service-slug}" type="dastra/script">
-   alert("hallo, ik ben een tracking javascript tag");
+```html
+<script data-consent="{your-service-slug}" type="dastra/script">
+  alert("hello, I'm a tracking javascript tag");
 </script>
 ```
 
-Vervang de "{your-service-slug}" door de service-identifier die je hebt ingevoerd bij het configureren van je widget:
+Vervang `{your-service-slug}` door de identificatie van de dienst, die u vindt in het veld **Naam van de variabele (belangrijk voor integratie van toestemming)** van het dienstformulier:
 
-![](<../../../../.gitbook/assets/image (86).png>)
+<figure><img src="../../../../.gitbook/assets/cookies-blocking-2.png" alt="Het veld Naam van de variabele van een dienstformulier"><figcaption><p>De identificatie van de dienst</p></figcaption></figure>
 
-Als de client de cookies geaccepteerd heeft, zal de inhoud van het script automatisch uitgevoerd worden.
+Heeft de bezoeker de dienst geaccepteerd, dan wordt de inhoud van het script automatisch uitgevoerd.
+
+Om een extern script te laden voegt u het attribuut `src` toe: de browser downloadt het pas na toestemming.
+
+```html
+<script data-consent="{your-service-slug}" type="dastra/script" src="https://example.com/tracker.js"></script>
+```
 
 {% hint style="info" %}
-Dit kan een aantal neveneffecten hebben, waaronder problemen met het markeren van de synthaxis in de meeste IDE's &#x20;
-
-Het scriptfragment wordt helemaal niet uitgevoerd in het geval van een implementatiefout van een Dastra-widget.
+Deze methode heeft neveneffecten: de syntaxiskleuring van de meeste code-editors herkent het type `dastra/script` niet. Het script wordt nooit uitgevoerd als de Dastra-banner niet laadt.
 {% endhint %}
 
-### Blokkeren in puur javascript
+### De door de toepassing gegenereerde codefragmenten gebruiken
 
-In pure javascript kun je gebeurtenissen gebruiken die op het venster worden getriggerd om toestemming te verzamelen en specifiek gedrag te beheren, afhankelijk van of cookies worden geaccepteerd of geweigerd. Dit geeft je meer flexibiliteit:
+Voor elke dienst genereert de sectie **Integratie van toestemming** van de banner kant-en-klare codefragmenten en een checklist. Er zijn drie tabbladen: **Html integration** (het fragment hierboven), **Custom javascript** (het blokkeren in pure JavaScript, hieronder) en **Google tag manager** (de gebeurtenissen die u in Google Tag Manager koppelt).
 
-```javascript
+## Blokkeren in pure JavaScript
+
+In JavaScript kunt u luisteren naar de gebeurtenissen die op `window` worden afgevuurd om toestemming te verzamelen en specifiek gedrag af te handelen, afhankelijk van of cookies worden geaccepteerd of geweigerd. Deze methode geeft u meer flexibiliteit:
+
+```html
 <script>
-  (functie(){
+  (function () {
 
-      /* 
-      * Trigger een aangepaste servicetag met verwachte cookies
-      */
-      functie customTagsTrigger () {
-        /* Als de leverancier een specifieke functie biedt om de service cookie-loos te laten werken, haal die dan hierheen.
-        * Anders kopieer je het standaardcodefragment dat wordt geleverd door de tagverkopers*/
-      }
+    /*
+     * Trigger a custom service tag with the expected cookies
+     */
+    function customTagsTrigger() {
+      /* If the vendor provides a specific function to make the service work without cookies, call it here.
+       * Otherwise, copy the default code snippet provided by the vendor. */
+    }
 
-      /*
-      * Behandel het toestemmingsgebeurtenis met globale reikwijdte
-      * Als de gebruiker toestemming heeft gegeven voor de tag-cookies van de aangepaste leverancier, wordt deze gebeurtenis geactiveerd bij elke pagina waarop de cookie-toestemmingswidget is geïnstalleerd.
-      */
-      window.addEventListener('dastra:consent:{uw-service-slug}', functie () {
-        /* De klant geeft hier toestemming voor de cookies van de aangepaste leverancier */
-        customTagsTrigger();
-        console.log('{uw-service-slug} geaccepteerd')
-      });
+    /*
+     * Handle the global scope consent event.
+     * If the user consented to the vendor's cookies, this event is fired on each page load
+     * where the cookie consent banner is installed.
+     */
+    window.addEventListener('dastra:consent:{your-service-slug}', function () {
+      /* The visitor opted in to the vendor's cookies */
+      customTagsTrigger();
+    });
 
-      /* Vink dit aan als je de geweigerde gebeurtenis wilt afhandelen
-      * Behandel geweigerde gebeurtenis met globale reikwijdte (optioneel) 
-      */
-        window.addEventListener('dastra:geweigerd:{uw-service-slug}', functie () {
-         // De cookies van de aangepaste services worden geweigerd 
-         console.log('{uw-service-slug} cookies geweigerd')
-       });
-      
+    /*
+     * Handle the global scope refused event (optional)
+     */
+    window.addEventListener('dastra:refused:{your-service-slug}', function () {
+      /* The vendor's cookies are refused */
+    });
+
   })();
-  </script>
+</script>
 ```
 
-### Google Tag Manager
+## Google Tag Manager
 
-Zie volgende pagina:
+Zie de volgende pagina:
 
 {% content-ref url="google-tag-manager.md" %}
-[google-tag-manager.md](google-tag-manager.md)
+[Google Tag Manager](google-tag-manager.md)
 {% endcontent-ref %}
 
-### Herinnering aan levenscyclus van toestemming:&#x20;
+## Herinnering: de levenscyclus van toestemming
 
-<figure><img src="../../../../.gitbook/assets/cookies-lifecycle.drawio.png" alt=""><figcaption><p>Cookie widget levenscyclus</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-lifecycle.drawio.png" alt="Diagram van de levenscyclus van toestemming, van het laden van de pagina tot het opslaan van de cookie consent-eu"><figcaption><p>Levenscyclus van toestemming</p></figcaption></figure>
 
-### Javascript gebeurtenissen
+## JavaScript-gebeurtenissen
 
-Standaard verzendt de widget verschillende gebeurtenissen op het vensterelement van de pagina:&#x20;
+De banner vuurt verschillende gebeurtenissen af op het element `window` van de pagina. De toestemmingsgebeurtenissen worden bij elke paginalading afgevuurd, wanneer de banner de reeds opgeslagen keuzes toepast, en daarna telkens wanneer een keuze wordt opgeslagen.
 
-| Naam gebeurtenis | Opmerkingen |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Triggered wanneer de service is geaccepteerd door de gebruiker (noodzakelijke cookies worden niet beïnvloed). Als de service in de standaard toestemmingsmodus staat, wordt deze gebeurtenis geactiveerd wanneer de pagina voor het eerst wordt geladen.
-| dastra:refused:ß<slug du service> | Wordt geactiveerd als de service niet is geactiveerd door de gebruiker (standaard als er geen toestemming is gegeven) of als deze expliciet is geweigerd.
-| dastra:consents:ready | Wordt geactiveerd als de cookie voor toestemming (consent-eu) is gelezen en gedecodeerd. |
-| dastra:consents:updated | Triggers als toestemmingen zijn bijgewerkt door de gebruiker (geaccepteerd, geweigerd of ingesteld) |
-| dastra:consents:any_refused | Treedt op als ten minste één cookie expliciet door de gebruiker is geweigerd via het modale venster.
-| dastra:consents:all_accepted | Triggers als alle diensten door de gebruiker zijn geaccepteerd via het modale venster |
+| Naam van de gebeurtenis | Opmerkingen |
+| --- | --- |
+| `dastra:consent:<service slug>` | Wordt afgevuurd wanneer de dienst wordt geaccepteerd, door de bezoeker of standaard (strikt noodzakelijke diensten worden niet geraakt). Staat de dienst op "standaard toegestaan", dan wordt de gebeurtenis afgevuurd vanaf de eerste paginalading. |
+| `dastra:refused:<service slug>` | Wordt afgevuurd wanneer de dienst niet wordt geaccepteerd: standaard als er geen toestemming is gegeven, of na een uitdrukkelijke weigering. |
+| `dastra:consents:ready` | Wordt afgevuurd wanneer de opgeslagen toestemming (standaard de cookie `consent-eu`) is gelezen en de eerste gebeurtenissen zijn afgevuurd. |
+| `dastra:consents:updated` | Wordt afgevuurd bij elke paginalading en telkens wanneer keuzes worden opgeslagen (geaccepteerd, geweigerd of aangepast). Het detail van de gebeurtenis bevat de lijst met toestemmingen. |
+| `dastra:consents:any_refused` | Wordt afgevuurd wanneer ten minste één opgeslagen toestemming een weigering is, bij elke paginalading en telkens wanneer keuzes worden opgeslagen. |
+| `dastra:consents:all_accepted` | Wordt afgevuurd wanneer geen enkele opgeslagen toestemming een weigering is, bij elke paginalading en telkens wanneer keuzes worden opgeslagen. |
+| `dastra:consents:closed` | Wordt afgevuurd wanneer de bezoeker de banner sluit met het sluitkruisje. |
+| `dastra:gpc:applied` | Wordt afgevuurd wanneer de banner niet-essentiële cookies automatisch weigert vanwege een signaal van Global Privacy Control of Do Not Track. Zie [US Privacy: CCPA, GPC en DoNotTrack](../../banner/us-privacy.md). |
+
+{% hint style="info" %}
+Omdat de gebeurtenissen `dastra:consent:*` en `dastra:consents:*` ook bij het laden van de pagina worden afgevuurd, registreert u uw listeners voor het herladen binnen `dastra:consents:ready`. Zie [Google Tag Manager](google-tag-manager.md).
+{% endhint %}
+
+Om op elke toestemmingsupdate te reageren, kunt u ook `dastra.addConsentDastraListener(callback)` gebruiken: de functie wordt bij elke gebeurtenis `dastra:consents:updated` aangeroepen.
+
+## Veelgestelde vragen
+
+### Kan ik een script blokkeren per categorie in plaats van per dienst? (bijvoorbeeld `data-consent="analytics"`)
+
+Nee. Het attribuut `data-consent` verwacht een **service slug**, geen categorie-slug. Met `<script data-consent="analytics" type="dastra/script">` alle diensten van een categorie in één instructie blokkeren, wordt niet ondersteund.
+
+De reden: een gebruiker kan sommige diensten binnen een categorie accepteren en andere in dezelfde categorie weigeren. De banner beheert toestemming op het niveau van de dienst, niet van de categorie.
+
+Om een script te laden afhankelijk van de vraag of een hele categorie is geaccepteerd, gebruikt u de programmatische API:
+
+```javascript
+window.addEventListener('dastra:consents:updated', function () {
+  if (window.dastra.cookieConsent.consent.getPurposeConsent('Analytical')) {
+    // load your analytics scripts here
+  }
+});
+```
+
+{% hint style="warning" %}
+`getPurposeConsent` geeft alleen `true` terug als **alle** diensten van de categorie zijn geaccepteerd. Heeft de banner geen enkele dienst in die categorie, dan gooit de aanroep een fout: vang die af, bijvoorbeeld met een `try ... catch`.
+{% endhint %}

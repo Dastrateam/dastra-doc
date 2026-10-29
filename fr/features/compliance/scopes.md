@@ -14,7 +14,7 @@ Un périmètre répond à une question simple :
 
 ***
 
-### Rôle des périmètres dans Dastra
+## Rôle des périmètres dans Dastra
 
 Dans Dastra, les périmètres sont utilisés exclusivement dans les **projets de conformité**.\
 Ils permettent de :
@@ -23,12 +23,12 @@ Ils permettent de :
 * adapter les exigences, contrôles et tests au bon niveau,
 * structurer la conformité selon la réalité organisationnelle.
 
-👉 Un périmètre ne modifie pas les frameworks :\
+Un périmètre ne modifie pas les frameworks :\
 il **détermine où** la conformité s’applique, pas **ce qui** s’applique.
 
 ***
 
-### Un découpage organisationnel flexible
+## Un découpage organisationnel flexible
 
 Un périmètre est défini à partir des **unités organisationnelles** existantes dans l’espace de travail.
 
@@ -42,7 +42,7 @@ Les unités organisationnelles peuvent être sélectionnées individuellement ou
 
 ***
 
-### Création d’un périmètre
+## Création d’un périmètre
 
 Lors de la création d’un périmètre, l’utilisateur renseigne :
 
@@ -50,15 +50,15 @@ Lors de la création d’un périmètre, l’utilisateur renseigne :
 * une **description optionnelle**
 * les **unités organisationnelles** incluses dans le périmètre (obligatoire)
 
-<figure><img src="../../.gitbook/assets/compliance-perimeter-create-modal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-perimeter-create-modal.png" alt="Fenêtre de création d'un périmètre"><figcaption></figcaption></figure>
 
-👉 Un périmètre doit toujours contenir **au moins une unité organisationnelle**.
+Un périmètre doit toujours contenir **au moins une unité organisationnelle**.
 
 ***
 
-### Exemple de périmètre
+## Exemple de périmètre
 
-📌 Exemple :
+Exemple :
 
 * **Nom** : Global
 * **Description** : Toute l’entreprise
@@ -73,7 +73,7 @@ Ce périmètre pourra ensuite être sélectionné dans un projet de conformité 
 
 ***
 
-### Bonnes pratiques
+## Bonnes pratiques
 
 * Créer un **périmètre global** pour les démarches transverses
 * Créer des **périmètres plus restreints** pour des projets ciblés
@@ -82,7 +82,7 @@ Ce périmètre pourra ensuite être sélectionné dans un projet de conformité 
 
 ***
 
-### Lien avec les projets de conformité
+## Lien avec les projets de conformité
 
 Les périmètres sont sélectionnés **au moment de la création d’un projet de conformité**.
 
@@ -94,7 +94,7 @@ Ils permettent :
 
 ***
 
-### Synthèse
+## Synthèse
 
 Les périmètres sont un **outil de cadrage organisationnel**.\
 Ils permettent d’aligner la conformité avec la structure réelle de l’entreprise, sans complexifier les référentiels.

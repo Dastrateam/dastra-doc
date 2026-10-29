@@ -5,5 +5,5 @@ De Dastra-toestemmingswidget ondersteunt het IAB Transparency and Consent Framew
 Gebruik Google Consent Mode V2 om de keuzes van bezoekers door te geven aan Google-diensten:
 
 {% content-ref url="blocking/google-consent-mode.md" %}
-[google-consent-mode.md](blocking/google-consent-mode.md)
+[Google Consent Mode V2](blocking/google-consent-mode.md)
 {% endcontent-ref %}

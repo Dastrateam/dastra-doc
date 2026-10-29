@@ -1,192 +1,158 @@
+---
+description: >-
+  Créez, pilotez et finalisez les audits internes et finaux d'un projet de
+  conformité, et signalez les erreurs constatées sur les tests.
+---
+
 # Audits
 
-La phase d'Audit permet de valider officiellement l'état de conformité à un instant T. Elle s’appuie sur le travail de préparation et de surveillance effectué en amont pour offrir une évaluation structurée, qu'elle soit réalisée en interne ou par des auditeurs externes.
+Les phases **Audit interne** et **Audit final** d'un projet permettent de valider officiellement l'état de conformité à un instant donné. Elles s'appuient sur le travail de conception et de surveillance réalisé en amont pour offrir une évaluation structurée, réalisée en interne ou par des auditeurs externes.
 
-**🎯 Objectif de la phase**
+Un audit porte sur un framework du projet. Les auditeurs évaluent chaque exigence à partir des contrôles, des tests et des preuves déjà présents dans le projet, puis l'audit est finalisé avec une appréciation globale.
 
-Préparer et réaliser l'ensemble des audits de conformité de manière centralisée, collaborer avec les parties prenantes et assurer le suivi des corrections suite aux écarts détectés.
+<figure><img src="../../../.gitbook/assets/compliance-project-audit-internal-checklist.png" alt="Vue d'ensemble d'un projet en phase Audit interne avec la checklist de l'assistant"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/compliance-project-audit-internal-checklist.png" alt=""><figcaption></figcaption></figure>
+## Ce que permet le module
 
-***
+* **Réaliser des audits** internes ou externes avec les frameworks standards (RGPD, AI Act, etc.) ou vos propres grilles personnalisées.
+* **Collaborer** : les auditeurs accèdent aux exigences, aux contrôles, aux tests et aux preuves associés, et un auditeur peut être ajouté en cours de mission.
+* **Réutiliser le travail de surveillance** : les contrôles et les preuves du projet sont consultables directement pendant l'évaluation.
+* **Traiter les écarts** : signalez les erreurs constatées sur les tests et créez des tâches de correction.
+* **Exporter** les résultats aux formats XLSX, PDF, DOCX, JSON, HTML ou Markdown.
 
-### Vue d’ensemble du module
+<figure><img src="../../../.gitbook/assets/compliance-project-audits-list.png" alt="Onglet Audits d'un projet avec la liste des audits et le bouton Créer un nouvel audit"><figcaption></figcaption></figure>
 
-Le module Audit transforme la conformité théorique en une réalité mesurable en regroupant frameworks, contrôles, risques et audits sur une plateforme unique. Cette phase repose sur 4 piliers majeurs :
+## Créer un audit
 
-1. Réalisation des audits : Effectuez des audits internes ou externes en utilisant des frameworks standards (RGPD, AI Act...) ou vos propres grilles personnalisées.
-2. Collaboration : Facilitez les échanges via un accès centralisé aux preuves, un système de délégation et une gestion fine de la gouvernance.
-3. Liaison avec la conformité : Réutilisez directement les contrôles et preuves déjà présents dans vos projets pour automatiser la collecte.
-4. Gestion des écarts : Identifiez les non-conformités et transformez-les immédiatement en plans d'actions correctives.
+Créez un audit depuis le projet de conformité, et non depuis le module Questionnaires. Deux points d'entrée existent :
 
-#### Une architecture ouverte
+* l'onglet **Audits** du projet, avec le bouton **Créer un nouvel audit**. Choisissez ensuite le framework dans la liste **Sélectionnez un framework à auditer** : elle indique pour chacun si un audit est déjà en cours ;
+* le menu **⋯** de la carte d'un framework sur la **Vue d'ensemble** du projet, avec **Créer un nouvel audit**. Le framework est alors déjà choisi.
 
-Dastra offre une gestion multi-utilisateurs pour piloter la conformité à l'échelle d'un groupe, ainsi qu'une interopérabilité totale via des APIs et des exports multi-formats.
+Si le projet ne contient aucun framework, Dastra affiche **Aucun framework à auditer** : ajoutez d'abord un framework au projet (voir [Conception du projet](design.md)).
 
-<figure><img src="../../../.gitbook/assets/compliance-project-audits-list.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Créer un audit hors d'une phase d'audit n'est pas recommandé : Dastra affiche un avertissement mais ne vous bloque pas. Le choix de la phase d'audit **Audit final** déclenche le même avertissement tant que le projet n'est pas en phase **Audit final**.
+{% endhint %}
 
-***
+### Informations générales
 
-### 1. Créer une nouvelle mission d'audit
+| Champ | Description |
+| --- | --- |
+| **Nom** | Titre de la mission, par exemple « Audit de conformité annuel ». Obligatoire, 80 caractères au maximum. |
+| **Description** | Contexte ou périmètre spécifique de la mission. Facultatif, 500 caractères au maximum. |
+| **Auditeurs** | Utilisateurs autorisés à réaliser l'audit. Obligatoire. Si vous n'êtes pas dans cette liste, vous ne pourrez pas évaluer les exigences, même si vous êtes propriétaire de l'organisation. |
 
-La création d'une mission est le point de départ de votre évaluation. Depuis le module Audits, cliquez sur le bouton de création pour ouvrir le formulaire de paramétrage.
+<figure><img src="../../../.gitbook/assets/compliance-project-create-audit-modal.png" alt="Fenêtre de création d'un audit avec le nom, les auditeurs, la phase et les dates"><figcaption></figcaption></figure>
 
-#### 1. Informations générales
+### Phase de l'audit et dates
 
-* Nom (obligatoire) : Titre clair de la mission (ex: "Audit de conformité annuel"), limité à 80 caractères.
-* Description (optionnel) : Précisez le contexte ou le périmètre spécifique (jusqu'à 500 caractères).
-* Auditeurs (obligatoire) : Sélectionnez les utilisateurs responsables de la réalisation de l'évaluation. Si vous ne figurez pas dans cette liste, vous ne pourrez pas répondre aux questions de l'audit (même si vous êtes propriétaire de l'organisation).
+La **Phase de l'audit** segmente la mission et permet de filtrer les tableaux de bord de gouvernance. Elle est indépendante de la phase du projet.
 
-<figure><img src="../../../.gitbook/assets/compliance-project-create-audit-modal.png" alt=""><figcaption></figcaption></figure>
+| Phase | Usage |
+| --- | --- |
+| **Analyse initiale** | Cadrage : définition du périmètre, du référentiel et des enjeux réglementaires. Valeur par défaut. |
+| **Préparation** | Logistique : affectation des contrôles aux auditeurs et planification des entretiens. |
+| **Pré-audit** | Audit à blanc : auto-évaluation pour identifier les écarts avant l'échéance officielle. |
+| **Audit final** | Clôture : notation finale, conclusions et rapport officiel. |
 
-#### 2. Phase de l'audit et Calendrier
+Renseignez la **Date de début** et l'**Échéance** pour encadrer la mission dans le temps. Les deux sont obligatoires.
 
-Le choix de la phase permet de segmenter votre mission et de filtrer vos tableaux de bord de gouvernance.
+### Options
 
-| **Phase**        | **Description & Objectif**                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------ |
-| Analyse initiale | Phase de cadrage : définition du périmètre, du référentiel et des enjeux réglementaires.         |
-| Préparation      | Phase logistique : affectation des contrôles aux auditeurs et planification des entretiens.      |
-| Pré-audit        | "Audit à blanc" : auto-évaluation pour identifier les écarts avant l'échéance officielle.        |
-| Audit final      | Phase de clôture : notation finale, rédaction des conclusions et génération du rapport officiel. |
+* **Préserver les résultats d'un précédent audit ?** : repart des évaluations d'un audit existant, utile pour les audits récurrents ou pour refaire un audit dont des contrôles n'étaient pas satisfaisants. Sélectionnez ensuite l'audit dont vous souhaitez reprendre les résultats.
+* **Définir comme audit actif** : l'audit alimente les indicateurs de suivi du framework, dont le taux de conformité affiché sur la vue d'ensemble du projet. Activé par défaut.
+* **Notifier l'auditeur par email** : envoie une invitation aux auditeurs désignés. Saisissez au besoin un **Contenu du message**, puis laissez **Envoyer l'email immédiatemment** activé, ou désactivez-le et choisissez une date et une heure d'envoi, dans les 3 jours à venir.
 
-* Dates clés (obligatoire) : Indiquez une Date de début et une Échéance pour encadrer la mission dans le temps.
+Cliquez sur **Valider** pour créer l'audit : le tableau de bord de l'audit s'ouvre.
 
-#### 3. Options avancées et automatisation
+## Piloter l'audit
 
-* Préserver les résultats d'un précédent audit : Permet de repartir d'une base existante pour les audits récurrents. Cela peut être utile pour refaire un audit à la suite d'un audit dont les contrôles n'ont pas été satisfaisants.
-* Définir comme audit actif : Intègre immédiatement l'audit dans vos indicateurs de suivi en temps réel. Cet audit sera utilisé dans le tableau de bord pour afficher le taux de conformité.
-* Notifier l'auditeur par email : Automatise l'envoi d'une invitation aux collaborateurs désignés.
+Le tableau de bord de l'audit centralise l'avancement et l'équipe.
 
-***
+À gauche, trois onglets :
 
-### Résultat attendu
+* **Exigences auditées (x/y)** : l'arborescence du framework avec le statut de chaque exigence. Filtrez par statut avec **Filtrer par statut** ;
+* **Tests en erreur (n)** : les erreurs signalées par les auditeurs sur les tests (voir [Signaler une erreur sur un test](#signaler-une-erreur-sur-un-test)) ;
+* **Cartographie** : les graphiques de répartition des exigences et des contrôles.
 
-À l’issue de cette phase, l'organisation dispose d'un état des lieux officiel, d'une piste d'audit complète (historique) et d'un plan de remédiation précis pour traiter les écarts et améliorer la gouvernance.
+À droite :
 
-> Prochaine étape : Une fois la mission créée, vous pourrez commencer l'évaluation des points de contrôle et la validation des preuves associées.
+* le périmètre audité, le titre, la description, l'état et la phase de l'audit, les dates et le framework avec sa version. **Modifier** ouvre les informations générales ;
+* la **Progression** de l'audit en pourcentage, avec la répartition des exigences (non auditées, conformes, partiellement conformes, non conformes, non applicables) ;
+* la liste des **Auditeurs**, avec le nombre d'évaluations réalisées par chacun. **Ajouter un auditeur** et **Retirer l'auditeur** permettent d'ajuster l'équipe en cours de mission ;
+* les **Pièces jointes** : centralisez ici les documents de preuve externes pour qu'ils soient accessibles à tous les auditeurs.
 
-### 2. Pilotage et exécution de la mission d'audit
+Les boutons de tâches et de commentaires du tableau de bord servent à suivre l'audit avec les autres utilisateurs, par exemple pour créer des tâches de correction.
 
-Une fois la mission créée et lancée, vous accédez au tableau de bord opérationnel de l'audit. Cette interface centralisée permet de suivre l'avancement des évaluations et de gérer les collaborateurs en temps réel.
+Le bouton **Compléter l'audit** ouvre l'espace d'évaluation. Son menu propose aussi :
 
-#### Vue d'ensemble de l'avancement
+* **Réouvrir l'audit** : permet de modifier de nouveau un audit finalisé ;
+* **Exporter** ;
+* **Copier lien** ;
+* **Archiver l'audit**, puis **Restaurer** pour le rétablir. L'audit défini comme actif ne peut pas être archivé.
 
-Le dashboard affiche une synthèse visuelle de l'état de santé de votre audit :
+Si vous n'êtes pas désigné comme auditeur, le bouton **Compléter l'audit** est verrouillé : demandez à être ajouté à la liste des **Auditeurs**.
 
-* Indicateurs d'exigences : Suivez le nombre total d'exigences à auditer (ex: 0/31) et visualisez immédiatement les points bloquants via l'onglet "Tests en erreur".
-* Graphique de progression : Un diagramme circulaire permet de visualiser la répartition des contrôles (non audités, conformes, non conformes).
-* Statut de la mission : Rappel de la phase actuelle (ex: "Analyse initiale"), des dates limites et du framework utilisé (ex: "RGPD V0.3").
+## Évaluer les exigences
 
-#### Interface d'évaluation et de notation
+L'espace d'évaluation permet de passer en revue chaque exigence du framework sans quitter la page d'audit.
 
-En cliquant sur "Compléter l'audit", l'auditeur accède à l'espace de travail détaillé pour chaque point de contrôle :
+* **Barre de navigation** : **Retour** et **Suivant** parcourent les exigences, une flèche mène à la prochaine exigence non complétée, et un compteur indique la position (par exemple 1/31).
+* **Volet de gauche** : l'arborescence du framework, découpée en chapitres et en exigences. Un indicateur confirme les exigences déjà évaluées.
+* **Zone centrale** : l'objectif de l'exigence, puis les contrôles associés avec leurs tests. Pour chaque test, vous consultez les preuves jointes (fichiers, liens, données JSON) directement dans l'interface.
+* **Volet de droite** : la progression de l'audit et trois onglets : **Évaluation**, **Détails de l'audit** et **Détails du framework**.
 
-* Navigation par référentiel : L'arborescence complète du framework est affichée à gauche (Gouvernance, Registre, Bases légales, etc.) pour une navigation fluide.
-* Outils de notation : Pour chaque exigence, l'auditeur sélectionne un statut précis :
-  * Conforme (Vert)
-  * Partiellement conforme (Jaune)
-  * Non conforme (Rouge)
-  * Non applicable (Gris)
-* Justification et preuve : Un éditeur de texte permet de saisir des commentaires détaillés. L'auditeur peut également basculer sur l'onglet "Détails du framework" pour consulter les exigences théoriques avant de valider.
+<figure><img src="../../../.gitbook/assets/compliance-project-audit-requirements-view.png" alt="Espace d'évaluation avec l'arborescence du framework, les contrôles et tests, et le volet d'évaluation"><figcaption></figcaption></figure>
 
-#### Collaboration et Gestion documentaire
+Après avoir analysé les preuves, attribuez un statut à l'exigence dans l'onglet **Évaluation** et saisissez un **Commentaire** pour justifier votre avis :
 
-Le dashboard sert également de hub collaboratif pour l'équipe d'audit :
+| Statut | Signification |
+| --- | --- |
+| **Conforme** | Les preuves fournies satisfont entièrement l'exigence. |
+| **Partiellement conforme** | Des preuves existent mais elles sont insuffisantes ou incomplètes. |
+| **Non conforme** | Aucune preuve, ou contrôle jugé inefficace. |
+| **Non applicable** | L'exigence ne concerne pas le périmètre de l'audit. |
 
-* Gestion des auditeurs : Visualisez les membres de l'équipe assignés et ajoutez de nouveaux auditeurs en cours de mission si nécessaire.
-* Pièces jointes : Centralisez tous les documents de preuve externes directement dans l'onglet "Pièces jointes" du dashboard pour qu'ils soient accessibles à l'ensemble des contrôleurs.
-* Cartographie : Un onglet dédié permet de visualiser les liens entre les exigences et les éléments de votre inventaire de conformité.
+L'**Historique** de l'exigence conserve les évaluations successives. Chaque saisie met à jour la progression de l'audit.
 
-***
+### Signaler une erreur sur un test
 
-Résultat de cette étape : L'audit est maintenant en cours d'exécution. Chaque saisie met à jour dynamiquement les indicateurs de conformité globale du projet.
+Lorsque les preuves d'un test ne conviennent pas, signalez-le au propriétaire du test sans bloquer l'évaluation.
 
-### 3. Évaluation des exigences et vérification des contrôles
+1. Dans la zone centrale, repérez le test et cliquez sur **Signaler erreur**.
+2. Choisissez la **Sévérité** : **Bas**, **Moyen** (valeur par défaut) ou **Élevé**.
+3. Dans **Expliquez le problème avec les preuves fournies**, décrivez ce qui ne va pas. Le commentaire est facultatif, mais il aide le propriétaire du test à améliorer ses preuves.
+4. Cliquez sur **Créer le rapport d'erreur**.
 
-Une fois l'audit lancé, la phase d'évaluation consiste à passer en revue chaque exigence du référentiel pour valider la conformité réelle sur la base des contrôles et tests existants.
+Le bouton est alors remplacé par un drapeau coloré selon la sévérité. Survolez-le pour lire le commentaire ou supprimer le signalement. Un test ne peut porter qu'un signalement par audit.
 
-#### Structure de l'écran d'évaluation
+<figure><img src="../../../.gitbook/assets/compliance-audit-findings-1.png" alt="Fenêtre Signaler erreur avec la sévérité et le commentaire"><figcaption></figcaption></figure>
 
-L'interface d'évaluation est conçue pour offrir une visibilité complète sur les preuves sans quitter la page d'audit :
+Les signalements sont réunis dans l'onglet **Tests en erreur** du tableau de bord de l'audit, avec la référence, le test, son statut et sa sévérité. Filtrez par **Sévérité**, puis cochez des tests pour :
 
-* Volet de navigation (gauche) : Affiche l'arborescence du framework (ex: RGPD V0.3) découpée en chapitres et exigences. Un indicateur visuel (check vert) confirme les points déjà traités.
-* Zone centrale de travail : Présente l'objectif de l'exigence sélectionnée et la liste exhaustive des contrôles et tests associés.
-* Panneau de décision (droite) : Regroupe les outils de notation, la saisie des commentaires et l'historique des modifications.
+* **Invalider les tests** : les tests signalés repassent au statut **A faire**. Dastra propose alors de **Relancer une campagne de tests** pour notifier leurs propriétaires, afin qu'ils mettent à jour leurs preuves avant le prochain audit ;
+* **Lancement d'une campagne de tests** : crée directement une campagne avec les tests cochés (voir [Surveillance de la conformité](monitoring.md)).
 
-<figure><img src="../../../.gitbook/assets/compliance-project-audit-requirements-view.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-audit-findings-2.png" alt="Onglet Tests en erreur avec les tests signalés, leur sévérité et les boutons Invalider les tests et Lancement d'une campagne de tests"><figcaption></figcaption></figure>
 
-#### Vérification des preuves (Contrôles et Tests)
+## Finaliser l'audit
 
-Le cœur de l'audit Dastra réside dans sa capacité à lier l'audit aux preuves de surveillance :
+Quand toutes les exigences sont évaluées, le bouton **Finaliser l'audit** devient disponible. Il ouvre une fenêtre où vous saisissez l'**Appréciation finale de l'audit** (obligatoire, 1 000 caractères au maximum). Cette synthèse donne un avis global sur le niveau de maturité du périmètre audité, souligne les points de vigilance ou les réussites, et peut inclure des documents de synthèse joints depuis le gestionnaire de fichiers.
 
-* Consultation des contrôles : Pour chaque exigence, l'auditeur visualise les contrôles actifs (ex: Cartographie du périmètre).
-* Examen des tests : Sous chaque contrôle, les tests exécutés sont listés avec leurs documents de preuve joints (fichiers PDF, captures, etc.).
-* Visualisation directe : L'auditeur peut ouvrir et consulter les fichiers de preuves directement depuis l'interface pour valider leur conformité.
+Cliquez sur **Valider** pour clôturer l'audit.
 
-#### Notation et Statuts de conformité
+{% hint style="warning" %}
+Une fois l'audit finalisé, les évaluations individuelles ne sont plus modifiables, tant que vous ne rouvrez pas l'audit avec **Réouvrir l'audit**.
+{% endhint %}
 
-Après analyse des preuves, l'auditeur attribue un statut définitif à l'exigence :
+## Exploiter les résultats
 
-* Conforme : L'exigence est totalement satisfaite par les preuves fournies.
-* Partiellement conforme : Des preuves existent mais sont insuffisantes ou incomplètes.
-* Non conforme : Absence de preuves ou contrôle jugé inefficace.
-* Non applicable : L'exigence ne concerne pas le périmètre de l'audit.
+L'audit finalisé alimente le suivi de conformité :
 
-#### Pilotage en temps réel
+* le pourcentage de conformité par framework s'affiche sur la vue d'ensemble du projet et dans **Conformité** > **Statistiques** ;
+* l'**Appréciation finale de l'audit** apparaît en tête du tableau de bord de l'audit ;
+* l'export de l'audit conserve une piste d'audit structurée, réutilisable les années suivantes ;
+* les exigences non conformes ou partiellement conformes peuvent être suivies par des tâches, créées depuis le bouton de tâches de l'audit, avant le prochain cycle de surveillance.
 
-Pendant l'évaluation, le système met à jour dynamiquement les indicateurs de suivi :
-
-* Progression : Un compteur en bas de page indique la position actuelle (ex: 1/31).
-* Statistiques de conformité : Le graphique à droite affiche en temps réel le pourcentage de conformité atteint (ex: 3% conforme) par rapport aux points restants à auditer.
-* Finalisation : Une fois toutes les exigences traitées, le bouton "Finaliser l'audit" permet de verrouiller l'évaluation et de passer à la génération du rapport.
-
-***
-
-Résultat attendu : Chaque exigence est désormais documentée avec un avis d'expert et des preuves vérifiées, garantissant une piste d'audit inaltérable pour les régulateurs ou la direction.
-
-### 4. Finalisation et clôture de l'audit
-
-Une fois que l'ensemble des exigences du framework a été passé en revue, la mission doit être formellement clôturée. Cette étape verrouille les évaluations pour garantir l'intégrité des résultats et générer les rapports définitifs.
-
-#### Appréciation finale
-
-Lorsque vous cliquez sur le bouton "Finaliser l'audit", une fenêtre de validation apparaît. Avant de clôturer, l'auditeur doit fournir une Appréciation finale de l'audit (obligatoire, jusqu'à 1000 caractères).
-
-Cette synthèse permet de :
-
-* Donner un avis global sur le niveau de maturité du périmètre audité.
-* Souligner les points de vigilance majeurs ou les succès constatés.
-* Joindre des documents de synthèse finaux via l'explorateur de fichiers (limite de 50 Mo par fichier).
-
-> Attention : Une fois l'audit finalisé, il n'est plus possible de modifier les évaluations individuelles de chaque exigence.
-
-***
-
-#### Exploitation des résultats et Reporting
-
-L'audit finalisé alimente instantanément la gouvernance de l'organisation grâce aux fonctionnalités de sortie de Dastra :
-
-**Tableau de bord de conformité**
-
-Les résultats sont consolidés dans une vue d'ensemble affichant le pourcentage de conformité par audit (ex: 75% pour le NIST, 57% pour le RGPD). Ces indicateurs permettent de comparer le niveau de sécurité entre différentes entités ou projets.
-
-<figure><img src="../../../.gitbook/assets/compliance-project-audit-results-overview.png" alt=""><figcaption></figcaption></figure>
-
-**Export et Archivage**
-
-Grâce à une architecture ouverte, vous pouvez communiquer vos résultats efficacement :
-
-* Génération de rapports : Exports disponibles dans de nombreux formats pour diffusion interne ou externe.
-* Piste d'audit : Conservation d'un historique structuré, mesurable et réutilisable pour les années suivantes.
-
-**Gestion des écarts (Plan d'action)**
-
-L'étape ultime consiste à traiter les non-conformités détectées :
-
-* Identification automatique des écarts (points rouges ou jaunes lors de l'évaluation).
-* Possibilité de lier ces écarts à de nouveaux plans d'actions pour corriger les faiblesses avant le prochain cycle de surveillance.
-
-***
-
-Résultat final : Votre organisation dispose désormais d'une preuve de conformité certifiée, opposable en cas de contrôle, et d'une feuille de route claire pour l'amélioration continue de sa gouvernance.
+<figure><img src="../../../.gitbook/assets/compliance-project-audit-results-overview.png" alt="Pourcentage de conformité par audit sur le tableau de bord"><figcaption></figcaption></figure>

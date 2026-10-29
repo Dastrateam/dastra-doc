@@ -1,81 +1,77 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie E-Mail-Vorlagen verwenden und E-Mails mit dynamischem
-  Inhalt erstellen, um mit Ihren Kunden oder Mitarbeitern zu kommunizieren
+  Erfahren Sie, wie Sie Nachrichtenvorlagen mit dynamischen Feldern,
+  Bedingungen und Schleifen schreiben, um mit Ihren Kunden oder Kollegen zu
+  kommunizieren.
 ---
 
 # E-Mail-Vorlagen
 
 ## Allgemeines
 
-E-Mail-Vorlagen sind eine Funktion, die in Betroffenenanfragen, benutzerdefinierten Workflows sowie Audits verfügbar ist.
+Nachrichtenvorlagen sind in Betroffenenanfragen, Aufgaben, Einladungen zu Fragebögen, Einladungen zum Ausfüllen einer Verarbeitungstätigkeit oder eines Datenschutzvorfalls und in Workflow-Regeln verfügbar, die eine Nachricht senden. Einmal gespeichert, sind sie eine schnelle Möglichkeit, mit den Beteiligten zu kommunizieren. Die Daten des betreffenden Objekts können in den Text eingefügt werden, mit Bedingungen und Schleifen, um weitere Informationen abzurufen.
 
-Einmal gespeichert, sind sie ein schnelles Mittel zur Kommunikation mit den Interessengruppen. Alle Daten eines Objekts können eingebunden werden, und es ist sogar möglich, Bedingungen und Schleifen einzurichten, um weitere Informationen abzurufen.
+Diese Seite erklärt, wie Sie eine Vorlage schreiben. Zu den Vorlagentypen, zum Teilen, Importieren und Exportieren siehe die Seite [Nachrichtenvorlagen](../settings/message-templates.md).
 
 ## Verwendung
 
-Um eine Vorlage auszuwählen oder zu erstellen, klicken Sie auf "Vorlage auswählen oder erstellen"
+Um eine Vorlage zu verwenden, klicken Sie neben dem Bereich zum Verfassen der Nachricht auf **Wählen Sie eine Vorlage aus**.
 
-<figure><img src="../../.gitbook/assets/vorlage.png" alt=""><figcaption><p>Vorlagenauswahl in einer Betroffenenanfrage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-email-templates-1.png" alt="Bereich zum Verfassen einer Nachricht einer Betroffenenanfrage mit der Schaltfläche Wählen Sie eine Vorlage aus"><figcaption><p>Die Schaltfläche Wählen Sie eine Vorlage aus in einer Betroffenenanfrage</p></figcaption></figure>
 
-Sie können dann eine bestehende Vorlage in der Liste oder über die Suchfunktion suchen, oder die verfügbaren Vorlagen in den Mandanten, auf die Sie Zugriff haben, oder die von Dastra erstellten Vorlagen durchsuchen.
+Der Bereich zur Auswahl einer Vorlage öffnet sich. Durchsuchen Sie die Liste nach einer Vorlage, öffnen Sie die Vorlagen mit dem Status **Geteilt** oder **Privat** je Typ, oder wählen Sie einen anderen Mandanten, auf den Sie Zugriff haben. Klicken Sie neben der gewünschten Vorlage auf **Bitte auswählen**.
 
-Wenn keine Vorlage passt, klicken Sie auf "Vorlage erstellen"
+<figure><img src="../../.gitbook/assets/general-email-templates-2.png" alt="Bereich zur Auswahl einer Vorlage mit der Suche, den Tabs nach Typ und der Schaltfläche Vorlage erstellen"><figcaption><p>Der Bereich zur Auswahl einer Vorlage</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/vorlage2.png" alt=""><figcaption><p>Auswahl oder Erstellung einer Vorlage</p></figcaption></figure>
+Passt keine Vorlage, klicken Sie auf **Vorlage erstellen**. Das Fenster zum Erstellen enthält:
 
-Die Vorlagenerstellungsoberfläche umfasst 4 Elemente
+* den **Namen** der Vorlage, damit Sie sie später wiederfinden;
+* den **Modelltext**, den Eingabebereich;
+* die Option, die Vorlage mit allen Nutzern des Mandanten zu teilen;
+* den Tab **Übersicht**, der die Darstellung der Nachricht in Echtzeit anzeigt;
+* den Tab **Input Data**, der die Daten des von der Vorlage betroffenen Objekts anzeigt.
 
-* Der Name (ermöglicht es, die Vorlage später wiederzufinden)
-* Der Modelltext (Vorlagenkörper, grün umrandet)
-* Ein Vorschau-Tab (Übersicht): ermöglicht die Anzeige der E-Mail-Darstellung in Echtzeit
-* Ein Input-Data-Tab: ermöglicht es Ihnen, die Daten des von der Vorlage betroffenen Objekts einzusehen
+Die Tabs **Übersicht** und **Input Data** erscheinen nur, wenn Sie die Vorlage an der Stelle erstellen, an der Sie die Nachricht verfassen, und nicht in den Einstellungen.
 
-<figure><img src="../../.gitbook/assets/vorlage3.png" alt=""><figcaption><p>Vorlagenerstellungsoberfläche</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-email-templates-3.png" alt="Fenster zum Erstellen einer Vorlage mit dem Namen, dem Modelltext, der Übersicht und dem Tab Input Data"><figcaption><p>Das Fenster zum Erstellen einer Vorlage</p></figcaption></figure>
 
-## Vorlage anpassen
+## Die Vorlage anpassen
 
-Sie können die Vorlage bearbeiten und Stile anwenden, Bilder oder Tabellen nach Bedarf einfügen. Das Ergebnis sehen Sie im Vorschau-Tab. Wenn Sie auf "Benutzerdefinierte Felder" klicken, haben Sie Zugriff auf eine Liste von einzufügenden Feldern. Der Feldwert wird an der Position des Mauszeigers eingefügt. Selbstverständlich können Sie den Text nach Belieben formatieren.
+Im Modelltext können Sie Formatierungen anwenden und Bilder oder Tabellen einfügen. Das Ergebnis erscheint im Tab **Übersicht**.
 
-<figure><img src="../../.gitbook/assets/select-field.gif" alt=""><figcaption><p>Verwenden Sie die benutzerdefinierten Felder</p></figcaption></figure>
+Um eine Angabe des Objekts einzufügen, klicken Sie in der Symbolleiste auf das Symbol mit den geschweiften Klammern (**Dynamische Felder einfügen**) und wählen Sie ein Feld in der Liste aus. Der Wert des Feldes wird an der Cursorposition eingefügt.
 
-## Weiterführendes zu benutzerdefinierten Feldern
+<figure><img src="../../.gitbook/assets/general-email-templates-4.png" alt="Liste der dynamischen Felder, geöffnet über die Symbolleiste des Vorlageneditors"><figcaption><p>Ein dynamisches Feld einfügen</p></figcaption></figure>
 
-Wie Sie in der obigen Animation sehen können, sind die von doppelten geschweiften Klammern umgebenen Felder "Variablen". Das heißt, sie werden durch die Werte des entsprechenden Objekts ersetzt (hier eine Betroffenenanfrage).
+## Dynamische Felder
 
-### Erstellen Sie neue benutzerdefinierte Felder aus den Input Data
+Felder in doppelten geschweiften Klammern sind Variablen: Sie werden durch die Werte des entsprechenden Objekts ersetzt (hier eine Betroffenenanfrage).
 
-Durch Klicken auf den Tab "Input Data" haben Sie Zugriff auf die Liste der Eigenschaften des verknüpften Objekts. Im folgenden Beispiel möchte ich die mit der Anfrage verknüpfte Nachricht anzeigen:
+### Ein Feld aus den Input Data verwenden
 
-* Ich suche das Feld in "Input Data"
-* Ich gebe den Feldnamen im Nachrichtentext mit der Syntax \{{message\}} ein
-* Ich überprüfe das Ergebnis mit dem Tab "Vorschau"
+Der Tab **Input Data** listet die Eigenschaften des verknüpften Objekts auf. Um zum Beispiel die Nachricht der Anfrage anzuzeigen:
 
-<figure><img src="../../.gitbook/assets/select-field-messsage.gif" alt=""><figcaption><p>Erstellen eines benutzerdefinierten Felds aus Input Data</p></figcaption></figure>
+1. Suchen Sie das Feld im Tab **Input Data**.
+2. Geben Sie seinen Namen im Modelltext mit der Syntax `{{message}}` ein.
+3. Prüfen Sie das Ergebnis im Tab **Übersicht**.
 
-Fertig! Sie können jetzt Ihre eigenen benutzerdefinierten Felder erstellen. Aber das ist noch nicht alles! Sie können noch weiter gehen und Schleifen, Bedingungen erstellen und Formate anwenden, um Daten besser lesbar zu machen!
+Sie können mit Schleifen, Bedingungen und Datumsformaten weitergehen.
 
 ### Bedingungen
 
-Es ist auch möglich, bedingte Blöcke zu erstellen, die nur unter bestimmten Bedingungen angezeigt werden.
+Ein bedingter Block wird nur unter bestimmten Bedingungen angezeigt. Er beginnt mit einem `if`-Tag und endet mit einem `endif`-Tag. Zum Beispiel:
 
-Dazu müssen Sie das bedingte Tag-System verwenden, das mit \{% if qqch == true %\} beginnt und mit \{% endif %\} endet
+```liquid
+{% if attachments != blank %}
+  You have an attachment
+{% endif %}
+```
 
-So kann ich die folgende Bedingung schreiben:
-
-> \{% if attachments != blank %\}
->
-> Sie haben einen Anhang
->
-> \{% endif %\}
-
-Der Block wird nur angezeigt, wenn ein Anhang in der Anfrage vorhanden ist
+Der Block wird nur angezeigt, wenn die Anfrage einen Anhang enthält.
 
 ### Schleifen
 
-Schleifen funktionieren auf die gleiche Weise, nur dass diesmal eine interne Variable innerhalb der Schleife generiert wird.
-
-Das funktioniert folgendermaßen:
+Schleifen funktionieren auf dieselbe Weise, mit einer schleifeninternen Variablen:
 
 ```liquid
 {% for purpose in purposes %}
@@ -83,54 +79,49 @@ Das funktioniert folgendermaßen:
 {% endfor %}
 ```
 
-Im obigen Beispiel erkläre ich, dass ich eine Schleife über die Liste "purposes" durchlaufen und jedem Element die Variable "_purpose_" zuweisen möchte, die ich direkt anzeige.
+In diesem Beispiel durchläuft die Schleife die Liste `purposes` und zeigt jedes Element in der Variablen `purpose` an.
 
 ### Datumsformat
 
-Sie werden schnell feststellen, dass die Daten, die Sie aus Input Data abrufen, in ihrem Rohzustand nicht darstellbar sind. Kein Problem, es ist möglich, ein Format auf das Datum anzuwenden.
+Die Datumsangaben der Input Data sind so, wie sie sind, nicht darstellbar. Wenden Sie ein Format auf sie an:
 
-> \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}}
->
-> Wird umgewandelt in 15-03-2023 à 15:40
+```liquid
+{{ dateCreation | date: "%d-%m-%Y at %H:%M" }}
+```
 
-### Ein komplexeres Beispiel
+Diese Vorlage ergibt zum Beispiel 15-03-2023 at 15:40.
 
-Der folgende Textkörper verwendet alle oben genannten Elemente
+### Ein vollständigeres Beispiel
 
-> Guten Tag,
->
-> wir haben Ihre Betroffenenanfrage am \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}} bezüglich Herrn/Frau \{{givenName\}} \{{familyName\}} erhalten.
->
-> Die Anfrage betrifft die folgenden Verarbeitungszwecke:
->
-> \{% for purpose in purposes %\}
->
-> * \{{ purpose \}}
->
-> \{% endfor %\}
->
-> \{% if attachments != blank %\}
->
-> Wir haben die folgenden Unterlagen erhalten:
->
-> \{% for attachment in attachments %\}
->
-> * \{{ attachment.fileName \}}
->
-> \{% endfor %\}
->
-> \{% endif %\}
->
-> Mit freundlichen Grüßen, wir werden Sie über den weiteren Verlauf der Bearbeitung Ihrer Anfrage informieren.
->
-> Freundliche Grüße,
->
-> \{{operator.displayName\}}
+Der folgende Text verwendet alle oben genannten Elemente:
 
-Für die aktuell in Bearbeitung befindliche Anfrage wird es folgendermaßen umgewandelt:
+```liquid
+Hello,
 
-<figure><img src="../../.gitbook/assets/image-1-5.png" alt=""><figcaption><p>Ein Beispiel einer vollständigen Vorlage</p></figcaption></figure>
+We have received your data subject request on {{ dateCreation | date: "%d-%m-%Y at %H:%M" }} concerning {{ givenName }} {{ familyName }}.
 
-### Sie haben weitere Anforderungen?
+The request relates to the following purposes:
+{% for purpose in purposes %}
+* {{ purpose }}
+{% endfor %}
 
-Sie können die Dokumentation unter folgender Adresse konsultieren: [https://shopify.github.io/liquid/](https://shopify.github.io/liquid/)
+{% if attachments != blank %}
+We have received the following attachments:
+{% for attachment in attachments %}
+* {{ attachment.fileName }}
+{% endfor %}
+{% endif %}
+
+We will keep you informed of the progress of your request.
+
+Kind regards,
+{{ operator.displayName }}
+```
+
+Für die gerade bearbeitete Anfrage wird die Nachricht wie folgt umgewandelt:
+
+<figure><img src="../../.gitbook/assets/general-email-templates-5.png" alt="Vorschau der aus der vollständigen Vorlage erzeugten Nachricht für eine Betroffenenanfrage"><figcaption><p>Die Darstellung einer vollständigen Vorlage</p></figcaption></figure>
+
+## Weiterführende Informationen
+
+Die Vorlagen verwenden die Liquid-Syntax. Die Liste der Tags und Filter finden Sie in der [Liquid-Dokumentation](https://shopify.github.io/liquid/).
