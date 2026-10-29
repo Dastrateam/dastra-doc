@@ -1,14 +1,13 @@
 ---
 description: >-
-  Cette page vous explique comment manipuler directement vos demandes d'exercice
-  de droits dans Dastra sans intégrer le SDK javascript grâce à notre API Rest.
+  Cette page vous explique comment manipuler directement vos demandes d'exercice de droits dans Dastra sans intégrer le SDK javascript grâce à notre API Rest.
 ---
 
 # Intégration de l'API
 
 Dastra ne s'intégrant pas nativement à toutes les plateformes de développement, nous mettons à votre disposition une API Rest pour gérer vos demandes d'exercice de droits depuis vos applications.
 
-### Le JSON de l'objet demande d'exercice de droits
+## L'objet demande d'exercice de droits
 
 Vous trouverez ci-dessous le modèle objet au format JSON d'une demande d'exercice de droits dans Dastra.
 
@@ -16,1112 +15,678 @@ Vous trouverez ci-dessous le modèle objet au format JSON d'une demande d'exerci
 
 <summary>L'objet demande d'exercice de droits</summary>
 
-```
+```json
 {
-    "customFields": {
-      "13_long": "1234567891234",
-      "13_html": "1234567891234"
-    },
-    "closedByUser": null,
-    "area": {
-      "order": XXX,
-      "children": [],
-      "permissions": [],
-      "id": XXX,
-      "type": "Entity",
-      "parentId": null,
-      "ref": null,
-      "label": "Moulinsart",
-      "description": null,
-      "logoUrl": null,
-      "address": null,
-      "zipCode": null,
-      "city": null,
-      "countryCode": "BE",
-      "immatriculationNumber": null,
-      "phoneNumber": null,
-      "mailAddress": null,
-      "dpo": null,
-      "referent": null,
-      "representative": null,
-      "dataProtectionAuthority": null
-    },
-    "creator": null,
-    "operator": null,
-    "operatorId": null,
-    "attachments": [],
-    "messages": [],
-    "tags": [],
-    "id": XXX,
-    "title": "",
-    "locale": "fr",
-    "archived": false,
-    "archivedDate": null,
-    "subjectCategoryId": null,
-    "subjectCategory": null,
-    "complex": false,
-    "dateClosed": null,
-    "areaId": XX,
-    "state": "Open",
-    "description": null,
-    "message": null,
-    "resolutionMessage": null,
-    "email": "",
-    "phoneNumber": null,
-    "givenName": "",
-    "familyName": null,
-    "dateDemand": "2023-09-18T10:31:30.6882299",
-    "dateCreation": "2023-09-18T10:31:30.6882299",
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "title": "Access to my personal data",
+  "locale": "en",
+  "state": "Open",
+  "channel": "Widget",
+  "externalSource": "None",
+  "externalId": null,
+  "refId": null,
+  "userId": null,
+  "widgetId": 29,
+  "widget": {
+    "label": "Privacy requests",
+    "id": 29,
+    "tenantId": 20
+  },
+  "purposes": [
+    "Access"
+  ],
+  "complex": false,
+  "description": null,
+  "message": "I would like to receive a copy of my personal data.",
+  "resolutionMessage": null,
+  "givenName": "Jane",
+  "familyName": "Doe",
+  "email": "jane.doe@example.com",
+  "phoneNumber": null,
+  "address": null,
+  "zipCode": null,
+  "city": null,
+  "countryCode": "GB",
+  "subjectCategoryId": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+  "subjectCategory": {
+    "id": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+    "label": "Customers",
+    "ref": null,
+    "dateCreation": "2026-03-02T08:00:00Z",
     "dateUpdate": null,
-    "workFlowStep": {
-      "id": 22290,
-      "label": "Nouveau",
-      "color": "#1E8EE1",
-      "order": 0,
-      "itemLimit": null,
-      "type": "DataSubjectRequest",
-      "finalStep": false,
-      "initialStep": true,
-      "authorizedRole": null,
-      "authorizedRoleId": null,
-      "descriptionHtml": null,
-      "mappedState": "Open"
-    },
-    "workFlowStepId": XX,
-    "channel": "Widget",
-    "refId": null,
-    "userId": null,
-    "purposes": [
-      "Rectification"
-    ],
-    "closedReason": "None",
-    "closedReasonDescription": null,
-    "expiryTime": "2023-10-18T10:31:30.68823",
-    "address": null,
-    "zipCode": null,
-    "city": null,
-    "countryCode": null,
-    "nbMessages": 0,
-    "nbMessagesNotViewed": 0,
-    "nbMessagesIncoming": 0,
-    "lastMessageDate": null,
-    "remainingDays": -6,
-    "closingTime": null,
-    "additionalDatas": {
-      "givenName": null,
-      "13_long": "XX",
-      "13_html": "XX"
-    },
-    "userNotified": false,
-    "dateUserNotified": null,
-    "sendNotification": false,
-    "emailValidationDate": "2023-09-18T10:31:53.8554799",
-    "mailValidated": true,
-    "referrerUrl": "",
-    "demandId": "",
-    "identityValidated": false,
-    "dateIdentityValidated": null,
-    "widgetId": 0  
-  }
-]
+    "creatorUserId": 4128,
+    "creatorUser": null,
+    "description": null,
+    "minorConcerned": false,
+    "workflowStepId": null,
+    "workflowStep": null,
+    "dataRetentionRules": []
+  },
+  "areaId": 120,
+  "area": {
+    "type": "Entity",
+    "id": 120,
+    "label": "Brightmoor UK"
+  },
+  "areaOwnerId": null,
+  "operatorId": 4128,
+  "operator": {
+    "id": 4128,
+    "displayName": "Emma Walsh",
+    "familyName": "Walsh",
+    "givenName": "Emma",
+    "email": "emma.walsh@example.com",
+    "active": true,
+    "color": "#1E8EE1",
+    "avatarUrl": null,
+    "tenantId": 20
+  },
+  "creator": null,
+  "updatedBy": null,
+  "closedByUser": null,
+  "workflowStepId": 22290,
+  "workflowStep": {
+    "type": "DataSubjectRequest",
+    "id": 22290,
+    "label": "New",
+    "color": "#1E8EE1",
+    "order": 0,
+    "itemLimit": null,
+    "finalStep": false,
+    "initialStep": true,
+    "authorizedRole": null,
+    "authorizedRoleId": null,
+    "descriptionHtml": null,
+    "mappedState": "Open"
+  },
+  "dateDemand": "2026-10-12T09:15:42.381Z",
+  "dateCreation": "2026-10-12T09:15:42.381Z",
+  "dateUpdate": null,
+  "expiryTime": "2026-11-11T09:15:42.381Z",
+  "remainingDays": 13,
+  "forecastedExpiryDate": "2026-11-11T09:15:42.381Z",
+  "isOverdue": false,
+  "suspensionDate": null,
+  "suspensionJustification": null,
+  "suspensionTime": 0,
+  "suspensionRealTime": 0,
+  "nbSuspensions": 0,
+  "dateClosed": null,
+  "closedReason": "None",
+  "closedReasonDescription": null,
+  "closedReasonInternalDescription": null,
+  "closingTime": null,
+  "overdueTime": null,
+  "archived": false,
+  "archivedDate": null,
+  "anonymizationDate": null,
+  "nbMessages": 0,
+  "nbMessagesNotViewed": 0,
+  "nbMessagesIncoming": 0,
+  "nbMessagesWithErrors": 0,
+  "lastMessageDate": null,
+  "userNotified": false,
+  "dateUserNotified": null,
+  "sendNotification": false,
+  "emailValidationDate": "2026-10-12T09:16:10.554Z",
+  "mailValidated": true,
+  "identityValidated": false,
+  "dateIdentityValidated": null,
+  "referrerUrl": "https://www.example.com/privacy",
+  "demandId": "k7Xq2mP9",
+  "dataProcessedCount": 0,
+  "dataToProcessCount": 3,
+  "dataProcessedByAssetOwnersAt": null,
+  "customFields": {
+    "13_long": "1234567891234",
+    "13_html": "<p>Example</p>"
+  },
+  "attachments": [],
+  "messages": [],
+  "tags": []
+}
 ```
 
 </details>
 
-Pour récupérer le format Objet de votre configurée avec des champs personnalisés, vous pouvez faire un export d'une demande au format JSON et obtenir ainsi le modèle JSON.
+Pour obtenir le format de l'objet avec vos champs personnalisés, exportez une demande au format JSON : vous récupérez ainsi le modèle JSON de votre espace de travail.
 
-### Les EndPoints de l'API
+Les identifiants des demandes sont des GUID (par exemple `3fa85f64-5717-4562-b3fc-2c963f66afa6`). L'identifiant de l'espace de travail est un entier.
 
-Voici les principaux Endpoints qui vous seront utiles pour intégrer vos applications avec le module exercice de droits de Dastra.
+## Les endpoints de l'API
 
-## Créer une nouvelle demande d'exercice de droits dans Dastra
+Voici les principaux endpoints qui vous seront utiles pour intégrer vos applications avec le module Exercices des droits de Dastra.
+
+### Créer une nouvelle demande d'exercice de droits dans Dastra
 
 <mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name                                          | Type   | Description                                                                         |
-| --------------------------------------------- | ------ | ----------------------------------------------------------------------------------- |
-| workspaceId<mark style="color:red;">\*</mark> | String | L'Id du workspace dans lequel vous souhaitez poster la demande d'exercice de droits |
+| Nom                                             | Type    | Description                          |
+| ----------------------------------------------- | ------- | ------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail |
+
+#### Corps de la requête
+
+| Nom                                          | Type          | Description                                                                                                       |
+| -------------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `title`<mark style="color:red;">\*</mark>    | String        | Titre de la demande                                                                                               |
+| `message`                                    | String        | Texte de la demande                                                                                               |
+| `locale`<mark style="color:red;">\*</mark>   | String        | Langue du demandeur (par exemple `fr`, `en`)                                                                      |
+| `areaId`<mark style="color:red;">\*</mark>   | Integer       | Identifiant de l'unité organisationnelle de la demande                                                            |
+| `email`                                      | String        | Adresse e-mail du demandeur                                                                                       |
+| `dateDemand`                                 | DateTime      | Date de la demande (par défaut, la date du jour)                                                                  |
+| `purposes`<mark style="color:red;">\*</mark> | Array\[String] | Types de demande concernés (au moins un). Valeurs possibles : voir le paramètre `purposes` de la liste ci-dessous |
 
 {% tabs %}
-{% tab title="200: OK " %}
+{% tab title="201: Created" %}
 ```json
 {
-  "id": 0,
-  "title": "string",
-  "locale": "string",
-  "archived": true,
-  "archivedDate": "2022-08-31T10:24:32.381Z",
-  "personCategory": "Prospect",
-  "complex": true,
-  "dateClosed": "2022-08-31T10:24:32.381Z",
-  "areaId": 0,
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "title": "Access to my personal data",
+  "locale": "en",
   "state": "Open",
-  "description": "string",
-  "message": "string",
-  "resolutionMessage": "string",
-  "email": "string",
-  "phoneNumber": "string",
-  "givenName": "string",
-  "familyName": "string",
-  "dateCreation": "2022-08-31T10:24:32.381Z",
-  "dateUpdate": "2022-08-31T10:24:32.381Z",
-  "workFlowStep": {
-    "id": 0,
-    "label": "string",
-    "color": "string",
-    "order": 0,
-    "itemLimit": 0,
-    "type": "DataSubject",
-    "finalStep": true,
-    "initialStep": true,
-    "descriptionHtml": "string",
-    "mappedState": "string"
-  },
-  "workFlowStepId": 0,
-  "channel": "Internal",
-  "refId": "string",
-  "userId": "string",
+  "channel": "Widget",
+  "externalSource": "None",
+  "externalId": null,
+  "refId": null,
+  "userId": null,
+  "widgetId": 29,
   "purposes": [
-    "Unknown"
+    "Access"
   ],
+  "complex": false,
+  "description": null,
+  "message": "I would like to receive a copy of my personal data.",
+  "resolutionMessage": null,
+  "givenName": "Jane",
+  "familyName": "Doe",
+  "email": "jane.doe@example.com",
+  "phoneNumber": null,
+  "address": null,
+  "zipCode": null,
+  "city": null,
+  "countryCode": "GB",
+  "subjectCategoryId": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+  "subjectCategory": {
+    "id": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+    "label": "Customers",
+    "ref": null,
+    "dateCreation": "2026-03-02T08:00:00Z",
+    "dateUpdate": null,
+    "creatorUserId": 4128,
+    "creatorUser": null,
+    "description": null,
+    "minorConcerned": false,
+    "workflowStepId": null,
+    "workflowStep": null,
+    "dataRetentionRules": []
+  },
+  "areaId": 120,
+  "workflowStepId": 22290,
+  "workflowStep": {
+    "type": "DataSubjectRequest",
+    "id": 22290,
+    "label": "New",
+    "color": "#1E8EE1",
+    "order": 0,
+    "itemLimit": null,
+    "finalStep": false,
+    "initialStep": true,
+    "authorizedRole": null,
+    "authorizedRoleId": null,
+    "descriptionHtml": null,
+    "mappedState": "Open"
+  },
+  "dateDemand": "2026-10-12T09:15:42.381Z",
+  "dateCreation": "2026-10-12T09:15:42.381Z",
+  "dateUpdate": null,
+  "expiryTime": "2026-11-11T09:15:42.381Z",
+  "isOverdue": false,
+  "suspensionDate": null,
+  "suspensionJustification": null,
+  "dateClosed": null,
   "closedReason": "None",
-  "closedReasonDescription": "string",
-  "expiryTime": "2022-08-31T10:24:32.381Z",
-  "address": "string",
-  "zipCode": "string",
-  "city": "string",
-  "countryCode": "st",
+  "closedReasonDescription": null,
+  "closedReasonInternalDescription": null,
+  "archived": false,
+  "archivedDate": null,
+  "anonymizationDate": null,
   "nbMessages": 0,
   "nbMessagesNotViewed": 0,
-  "remainingDays": 0,
-  "closingTime": 0,
-  "additionalDatas": "string",
-  "userNotified": true,
-  "dateUserNotified": "2022-08-31T10:24:32.381Z",
-  "sendNotification": true,
-  "emailValidationDate": "2022-08-31T10:24:32.381Z",
+  "nbMessagesIncoming": 0,
+  "nbMessagesWithErrors": 0,
+  "lastMessageDate": null,
+  "userNotified": false,
+  "dateUserNotified": null,
+  "sendNotification": false,
+  "emailValidationDate": "2026-10-12T09:16:10.554Z",
   "mailValidated": true,
-  "referrerUrl": "string",
-  "demandId": "string",
-  "identityValidated": true,
-  "dateIdentityValidated": "2022-08-31T10:24:32.381Z",
-  "widgetId": 0
+  "identityValidated": false,
+  "dateIdentityValidated": null,
+  "referrerUrl": "https://www.example.com/privacy",
+  "demandId": "k7Xq2mP9"
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-## Récupérer une demande d'exercice de droits existante via son id
+### Récupérer une demande d'exercice de droits existante via son identifiant
 
 <mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name                                          | Type    | Description                                                                                                   |
-| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
-| workspaceId<mark style="color:red;">\*</mark> | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez requêter |
-| <mark style="color:red;">\*</mark>            | Integer | L'id de la demande d'exercice de droits que vous souhaitez requêter                                           |
+| Nom                                             | Type    | Description                                                                                |
+| ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail dans lequel se trouve la demande d'exercice de droits |
+| `id`<mark style="color:red;">\*</mark>          | GUID    | L'identifiant (GUID) de la demande d'exercice de droits                                    |
 
 {% tabs %}
-{% tab title="200: OK " %}
+{% tab title="200: OK" %}
 ```json
 {
-  "closedByUser": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "area": {
-    "order": 0,
-    "children": [
-      "string"
-    ],
-    "teams": [
-      {
-        "id": 0,
-        "label": "string",
-        "ref": "string",
-        "areas": [
-          0
-        ],
-        "users": [
-          0
-        ]
-      }
-    ],
-    "id": 0,
-    "type": "Entity",
-    "parentId": 0,
-    "ref": "string",
-    "label": "string",
-    "description": "string",
-    "logoUrl": "string",
-    "address": "string",
-    "zipCode": "string",
-    "city": "string",
-    "countryCode": "str",
-    "immatriculationNumber": "string",
-    "phoneNumber": "string",
-    "mailAddress": "string",
-    "dpo": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-31T13:29:26.246Z",
-      "dateUpdate": "2022-08-31T13:29:26.246Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "referent": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-31T13:29:26.246Z",
-      "dateUpdate": "2022-08-31T13:29:26.246Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "representative": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-31T13:29:26.246Z",
-      "dateUpdate": "2022-08-31T13:29:26.246Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "dataProtectionAuthority": {
-      "id": 0,
-      "label": "string",
-      "siteURL": "string",
-      "phoneNumber": "string",
-      "email": "user@example.com",
-      "countryCode": "str",
-      "address": "string",
-      "city": "string",
-      "zipCode": "string"
-    }
-  },
-  "creator": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "operator": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "operatorId": 0,
-  "attachments": [
-    {
-      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "extension": "string",
-      "size": 0,
-      "nbDownload": 0,
-      "transmitted": true,
-      "fileName": "string",
-      "label": "string",
-      "userRequestMessageId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "userRequestId": 0,
-      "dateCreation": "2022-08-31T13:29:26.246Z",
-      "dateUpdate": "2022-08-31T13:29:26.246Z",
-      "creator": {
-        "id": 0,
-        "displayName": "string",
-        "familyName": "string",
-        "givenName": "string",
-        "email": "string",
-        "color": "string",
-        "avatarUrl": "string",
-        "tenantId": 0
-      },
-      "expiration": "2022-08-31T13:29:26.246Z",
-      "dateLastDownload": "2022-08-31T13:29:26.246Z",
-      "dateFileRemoved": "2022-08-31T13:29:26.246Z",
-      "deleted": true,
-      "expired": true,
-      "color": "string"
-    }
-  ],
-  "tags": [
-    {
-      "id": 0,
-      "label": "string",
-      "type": "DataProcessing",
-      "color": "string"
-    }
-  ],
-  "id": 0,
-  "title": "string",
-  "locale": "string",
-  "archived": true,
-  "archivedDate": "2022-08-31T13:29:26.246Z",
-  "personCategory": "Prospect",
-  "complex": true,
-  "dateClosed": "2022-08-31T13:29:26.246Z",
-  "areaId": 0,
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "title": "Access to my personal data",
+  "locale": "en",
   "state": "Open",
-  "description": "string",
-  "message": "string",
-  "resolutionMessage": "string",
-  "email": "string",
-  "phoneNumber": "string",
-  "givenName": "string",
-  "familyName": "string",
-  "dateCreation": "2022-08-31T13:29:26.246Z",
-  "dateUpdate": "2022-08-31T13:29:26.246Z",
-  "workFlowStep": {
-    "id": 0,
-    "label": "string",
-    "color": "string",
-    "order": 0,
-    "itemLimit": 0,
-    "type": "DataSubject",
-    "finalStep": true,
-    "initialStep": true,
-    "descriptionHtml": "string",
-    "mappedState": "string"
+  "channel": "Widget",
+  "externalSource": "None",
+  "externalId": null,
+  "refId": null,
+  "userId": null,
+  "widgetId": 29,
+  "widget": {
+    "label": "Privacy requests",
+    "id": 29,
+    "tenantId": 20
   },
-  "workFlowStepId": 0,
-  "channel": "Internal",
-  "refId": "string",
-  "userId": "string",
   "purposes": [
-    "Unknown"
+    "Access"
   ],
+  "complex": false,
+  "description": null,
+  "message": "I would like to receive a copy of my personal data.",
+  "resolutionMessage": null,
+  "givenName": "Jane",
+  "familyName": "Doe",
+  "email": "jane.doe@example.com",
+  "phoneNumber": null,
+  "address": null,
+  "zipCode": null,
+  "city": null,
+  "countryCode": "GB",
+  "subjectCategoryId": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+  "subjectCategory": {
+    "id": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+    "label": "Customers",
+    "ref": null,
+    "dateCreation": "2026-03-02T08:00:00Z",
+    "dateUpdate": null,
+    "creatorUserId": 4128,
+    "creatorUser": null,
+    "description": null,
+    "minorConcerned": false,
+    "workflowStepId": null,
+    "workflowStep": null,
+    "dataRetentionRules": []
+  },
+  "areaId": 120,
+  "area": {
+    "type": "Entity",
+    "id": 120,
+    "label": "Brightmoor UK"
+  },
+  "areaOwnerId": null,
+  "operatorId": 4128,
+  "operator": {
+    "id": 4128,
+    "displayName": "Emma Walsh",
+    "familyName": "Walsh",
+    "givenName": "Emma",
+    "email": "emma.walsh@example.com",
+    "active": true,
+    "color": "#1E8EE1",
+    "avatarUrl": null,
+    "tenantId": 20
+  },
+  "creator": null,
+  "updatedBy": null,
+  "closedByUser": null,
+  "workflowStepId": 22290,
+  "workflowStep": {
+    "type": "DataSubjectRequest",
+    "id": 22290,
+    "label": "New",
+    "color": "#1E8EE1",
+    "order": 0,
+    "itemLimit": null,
+    "finalStep": false,
+    "initialStep": true,
+    "authorizedRole": null,
+    "authorizedRoleId": null,
+    "descriptionHtml": null,
+    "mappedState": "Open"
+  },
+  "dateDemand": "2026-10-12T09:15:42.381Z",
+  "dateCreation": "2026-10-12T09:15:42.381Z",
+  "dateUpdate": null,
+  "expiryTime": "2026-11-11T09:15:42.381Z",
+  "remainingDays": 13,
+  "forecastedExpiryDate": "2026-11-11T09:15:42.381Z",
+  "isOverdue": false,
+  "suspensionDate": null,
+  "suspensionJustification": null,
+  "suspensionTime": 0,
+  "suspensionRealTime": 0,
+  "nbSuspensions": 0,
+  "dateClosed": null,
   "closedReason": "None",
-  "closedReasonDescription": "string",
-  "expiryTime": "2022-08-31T13:29:26.246Z",
-  "address": "string",
-  "zipCode": "string",
-  "city": "string",
-  "countryCode": "st",
+  "closedReasonDescription": null,
+  "closedReasonInternalDescription": null,
+  "closingTime": null,
+  "overdueTime": null,
+  "archived": false,
+  "archivedDate": null,
+  "anonymizationDate": null,
   "nbMessages": 0,
   "nbMessagesNotViewed": 0,
-  "remainingDays": 0,
-  "closingTime": 0,
-  "additionalDatas": "string",
-  "userNotified": true,
-  "dateUserNotified": "2022-08-31T13:29:26.246Z",
-  "sendNotification": true,
-  "emailValidationDate": "2022-08-31T13:29:26.246Z",
+  "nbMessagesIncoming": 0,
+  "nbMessagesWithErrors": 0,
+  "lastMessageDate": null,
+  "userNotified": false,
+  "dateUserNotified": null,
+  "sendNotification": false,
+  "emailValidationDate": "2026-10-12T09:16:10.554Z",
   "mailValidated": true,
-  "referrerUrl": "string",
-  "demandId": "string",
-  "identityValidated": true,
-  "dateIdentityValidated": "2022-08-31T13:29:26.246Z",
-  "widgetId": 0
+  "identityValidated": false,
+  "dateIdentityValidated": null,
+  "referrerUrl": "https://www.example.com/privacy",
+  "demandId": "k7Xq2mP9",
+  "dataProcessedCount": 0,
+  "dataToProcessCount": 3,
+  "dataProcessedByAssetOwnersAt": null,
+  "customFields": {
+    "13_long": "1234567891234",
+    "13_html": "<p>Example</p>"
+  },
+  "attachments": [],
+  "messages": [],
+  "tags": []
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-## Récupérer une liste paginée de demandes d'exercice de droits
+### Récupérer une liste paginée de demandes d'exercice de droits
 
 <mark style="color:blue;">`GET`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests`
 
-Vous pouvez passer des paramètres de recherche optionnels à votre requête pour filtrer la réponse de l'API
+Vous pouvez passer des paramètres de recherche optionnels pour filtrer la réponse de l'API.
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name                                          | Type   | Description                                 |
-| --------------------------------------------- | ------ | ------------------------------------------- |
-| workspaceId<mark style="color:red;">\*</mark> | String | Le workspace id que vous souhaitez requêter |
+| Nom                                             | Type    | Description                                       |
+| ----------------------------------------------- | ------- | ------------------------------------------------- |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail à interroger |
 
-#### Query Parameters
+#### Paramètres de requête
 
-| Name       | Type            | Description                                                                                                                                                      |
-| ---------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| overtaking | Boolean         | Rechercher les demandes dont le délai légal de réponse à a été dépassé                                                                                           |
-| archived   | Boolean         | Retourner les demandes archivées                                                                                                                                 |
-| q          | String          | Recherche texte dans le titre de la demande                                                                                                                      |
-| widgetId   | Integer         | filtrer les demandes issues d'un widget de collecte                                                                                                              |
-| states     | Array\[String]  | Filtrer les demandes par état (Open, IdentityValidation, Processing, Active, Closed)                                                                             |
-| purposes   | Array\[String]  | Filtrer les demandes par type (Unknown, Information, Access, Rectification, Erasure, Restriction, Opposition, Portability, AdvanceDirectives, AutomatedDecision) |
-| ids        | Array\[Integer] | Sélectionner une liste de demandes par leurs ids                                                                                                                 |
-| tags       | Array\[Integer] | Sélectionner les demandes ayant des tags spécifiques (passer un array de tagIds en query string)                                                                 |
-| page       | Integer         | La page que vous souhaitez requêter                                                                                                                              |
-| size       | Integer         | Le nombre d'éléments retournés par page                                                                                                                          |
-| skip       | Integer         |                                                                                                                                                                  |
-| sortBy     | String          | Le champ sur lequel filtrer l'ordre des éléments                                                                                                                 |
-| asc        | Boolean         | true pour ordonner de manière ascendante                                                                                                                         |
+| Nom          | Type           | Description                                                                                                                                                                                                                                                                                                                 |
+| ------------ | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `overtaking` | Boolean        | Rechercher les demandes dont le délai légal de réponse est dépassé                                                                                                                                                                                                                                                          |
+| `archived`   | Boolean        | Retourner les demandes de la corbeille (`false` par défaut)                                                                                                                                                                                                                                                                 |
+| `q`          | String         | Recherche texte dans le titre de la demande                                                                                                                                                                                                                                                                                 |
+| `widgetId`   | Integer        | Filtrer les demandes issues d'un formulaire de collecte                                                                                                                                                                                                                                                                     |
+| `areaId`     | Integer        | Filtrer les demandes d'une unité organisationnelle                                                                                                                                                                                                                                                                          |
+| `states`     | Array\[String] | Filtrer les demandes par état (Open, IdentityValidation, Processing, Active, Closed)                                                                                                                                                                                                                                        |
+| `purposes`   | Array\[String] | Filtrer les demandes par type (Unknown, Information, Access, Rectification, Erasure, Restriction, Opposition, Portability, AdvanceDirectives, AutomatedDecision, AdministrativeAccess, DPORequest, ThirdPartyRequest, DataProtectionComplaint, DoNotSellOrShare, LimitUseSensitivePersonalInformation, WithdrawalOfConsent) |
+| `ids`        | Array\[GUID]   | Sélectionner une liste de demandes par leurs identifiants                                                                                                                                                                                                                                                                   |
+| `tags`       | Array\[GUID]   | Sélectionner les demandes ayant des tags spécifiques (passer un tableau d'identifiants de tags en query string)                                                                                                                                                                                                             |
+| `page`       | Integer        | La page à récupérer (la première page est 1)                                                                                                                                                                                                                                                                                |
+| `size`       | Integer        | Le nombre d'éléments retournés par page (20 par défaut)                                                                                                                                                                                                                                                                     |
+| `skip`       | Integer        | Le nombre d'éléments à ignorer (remplace `page` s'il est fourni)                                                                                                                                                                                                                                                            |
+| `sortBy`     | String         | Le champ utilisé pour ordonner les éléments                                                                                                                                                                                                                                                                                 |
+| `asc`        | Boolean        | `true` pour un tri ascendant                                                                                                                                                                                                                                                                                                |
 
 {% tabs %}
-{% tab title="200: OK Un objet contenant les demandes d" %}
+{% tab title="200: OK" %}
 ```json
 {
   "items": [
     {
-      "closedByUser": {
-        "id": 0,
-        "displayName": "string",
-        "familyName": "string",
-        "givenName": "string",
-        "email": "string",
-        "color": "string",
-        "avatarUrl": "string",
-        "tenantId": 0
-      },
-      "area": {
-        "order": 0,
-        "children": [
-          "string"
-        ],
-        "teams": [
-          {
-            "id": 0,
-            "label": "string",
-            "ref": "string",
-            "areas": [
-              0
-            ],
-            "users": [
-              0
-            ]
-          }
-        ],
-        "id": 0,
-        "type": "Entity",
-        "parentId": 0,
-        "ref": "string",
-        "label": "string",
-        "description": "string",
-        "logoUrl": "string",
-        "address": "string",
-        "zipCode": "string",
-        "city": "string",
-        "countryCode": "str",
-        "immatriculationNumber": "string",
-        "phoneNumber": "string",
-        "mailAddress": "string",
-        "dpo": {
-          "id": 0,
-          "displayName": "string",
-          "dateCreation": "2022-08-31T10:30:53.839Z",
-          "dateUpdate": "2022-08-31T10:30:53.839Z",
-          "logoUrl": "string",
-          "actorType": "Physical",
-          "vendorType": "B2B",
-          "accessLevel": "None",
-          "givenName": "string",
-          "familyName": "string",
-          "companyName": "string",
-          "description": "string",
-          "countryCode": "st",
-          "readonly": true,
-          "email": "string",
-          "phoneNumber": "string",
-          "contactName": "string",
-          "contactPosition": "string",
-          "immatriculationNumber": "string",
-          "websiteUrl": "string",
-          "address": "string",
-          "zipCode": "string",
-          "city": "string"
-        },
-        "referent": {
-          "id": 0,
-          "displayName": "string",
-          "dateCreation": "2022-08-31T10:30:53.839Z",
-          "dateUpdate": "2022-08-31T10:30:53.839Z",
-          "logoUrl": "string",
-          "actorType": "Physical",
-          "vendorType": "B2B",
-          "accessLevel": "None",
-          "givenName": "string",
-          "familyName": "string",
-          "companyName": "string",
-          "description": "string",
-          "countryCode": "st",
-          "readonly": true,
-          "email": "string",
-          "phoneNumber": "string",
-          "contactName": "string",
-          "contactPosition": "string",
-          "immatriculationNumber": "string",
-          "websiteUrl": "string",
-          "address": "string",
-          "zipCode": "string",
-          "city": "string"
-        },
-        "representative": {
-          "id": 0,
-          "displayName": "string",
-          "dateCreation": "2022-08-31T10:30:53.839Z",
-          "dateUpdate": "2022-08-31T10:30:53.839Z",
-          "logoUrl": "string",
-          "actorType": "Physical",
-          "vendorType": "B2B",
-          "accessLevel": "None",
-          "givenName": "string",
-          "familyName": "string",
-          "companyName": "string",
-          "description": "string",
-          "countryCode": "st",
-          "readonly": true,
-          "email": "string",
-          "phoneNumber": "string",
-          "contactName": "string",
-          "contactPosition": "string",
-          "immatriculationNumber": "string",
-          "websiteUrl": "string",
-          "address": "string",
-          "zipCode": "string",
-          "city": "string"
-        },
-        "dataProtectionAuthority": {
-          "id": 0,
-          "label": "string",
-          "siteURL": "string",
-          "phoneNumber": "string",
-          "email": "user@example.com",
-          "countryCode": "str",
-          "address": "string",
-          "city": "string",
-          "zipCode": "string"
-        }
-      },
-      "creator": {
-        "id": 0,
-        "displayName": "string",
-        "familyName": "string",
-        "givenName": "string",
-        "email": "string",
-        "color": "string",
-        "avatarUrl": "string",
-        "tenantId": 0
-      },
-      "operator": {
-        "id": 0,
-        "displayName": "string",
-        "familyName": "string",
-        "givenName": "string",
-        "email": "string",
-        "color": "string",
-        "avatarUrl": "string",
-        "tenantId": 0
-      },
-      "operatorId": 0,
-      "attachments": [
-        {
-          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-          "extension": "string",
-          "size": 0,
-          "nbDownload": 0,
-          "transmitted": true,
-          "fileName": "string",
-          "label": "string",
-          "userRequestMessageId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-          "userRequestId": 0,
-          "dateCreation": "2022-08-31T10:30:53.839Z",
-          "dateUpdate": "2022-08-31T10:30:53.839Z",
-          "creator": {
-            "id": 0,
-            "displayName": "string",
-            "familyName": "string",
-            "givenName": "string",
-            "email": "string",
-            "color": "string",
-            "avatarUrl": "string",
-            "tenantId": 0
-          },
-          "expiration": "2022-08-31T10:30:53.839Z",
-          "dateLastDownload": "2022-08-31T10:30:53.839Z",
-          "dateFileRemoved": "2022-08-31T10:30:53.839Z",
-          "deleted": true,
-          "expired": true,
-          "color": "string"
-        }
-      ],
-      "tags": [
-        {
-          "id": 0,
-          "label": "string",
-          "type": "DataProcessing",
-          "color": "string"
-        }
-      ],
-      "id": 0,
-      "title": "string",
-      "locale": "string",
-      "archived": true,
-      "archivedDate": "2022-08-31T10:30:53.840Z",
-      "personCategory": "Prospect",
-      "complex": true,
-      "dateClosed": "2022-08-31T10:30:53.840Z",
-      "areaId": 0,
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "title": "Access to my personal data",
+      "locale": "en",
       "state": "Open",
-      "description": "string",
-      "message": "string",
-      "resolutionMessage": "string",
-      "email": "string",
-      "phoneNumber": "string",
-      "givenName": "string",
-      "familyName": "string",
-      "dateCreation": "2022-08-31T10:30:53.840Z",
-      "dateUpdate": "2022-08-31T10:30:53.840Z",
-      "workFlowStep": {
-        "id": 0,
-        "label": "string",
-        "color": "string",
-        "order": 0,
-        "itemLimit": 0,
-        "type": "DataSubject",
-        "finalStep": true,
-        "initialStep": true,
-        "descriptionHtml": "string",
-        "mappedState": "string"
+      "channel": "Widget",
+      "externalSource": "None",
+      "externalId": null,
+      "refId": null,
+      "userId": null,
+      "widgetId": 29,
+      "widget": {
+        "label": "Privacy requests",
+        "id": 29,
+        "tenantId": 20
       },
-      "workFlowStepId": 0,
-      "channel": "Internal",
-      "refId": "string",
-      "userId": "string",
       "purposes": [
-        "Unknown"
+        "Access"
       ],
+      "complex": false,
+      "description": null,
+      "message": "I would like to receive a copy of my personal data.",
+      "resolutionMessage": null,
+      "givenName": "Jane",
+      "familyName": "Doe",
+      "email": "jane.doe@example.com",
+      "phoneNumber": null,
+      "address": null,
+      "zipCode": null,
+      "city": null,
+      "countryCode": "GB",
+      "subjectCategoryId": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+      "subjectCategory": {
+        "id": "0c5f4a52-6d1e-4c1b-9a47-3c3b9f6f1a10",
+        "label": "Customers",
+        "ref": null,
+        "dateCreation": "2026-03-02T08:00:00Z",
+        "dateUpdate": null,
+        "creatorUserId": 4128,
+        "creatorUser": null,
+        "description": null,
+        "minorConcerned": false,
+        "workflowStepId": null,
+        "workflowStep": null,
+        "dataRetentionRules": []
+      },
+      "areaId": 120,
+      "area": {
+        "type": "Entity",
+        "id": 120,
+        "label": "Brightmoor UK"
+      },
+      "areaOwnerId": null,
+      "operatorId": 4128,
+      "operator": {
+        "id": 4128,
+        "displayName": "Emma Walsh",
+        "familyName": "Walsh",
+        "givenName": "Emma",
+        "email": "emma.walsh@example.com",
+        "active": true,
+        "color": "#1E8EE1",
+        "avatarUrl": null,
+        "tenantId": 20
+      },
+      "creator": null,
+      "updatedBy": null,
+      "closedByUser": null,
+      "workflowStepId": 22290,
+      "workflowStep": {
+        "type": "DataSubjectRequest",
+        "id": 22290,
+        "label": "New",
+        "color": "#1E8EE1",
+        "order": 0,
+        "itemLimit": null,
+        "finalStep": false,
+        "initialStep": true,
+        "authorizedRole": null,
+        "authorizedRoleId": null,
+        "descriptionHtml": null,
+        "mappedState": "Open"
+      },
+      "dateDemand": "2026-10-12T09:15:42.381Z",
+      "dateCreation": "2026-10-12T09:15:42.381Z",
+      "dateUpdate": null,
+      "expiryTime": "2026-11-11T09:15:42.381Z",
+      "remainingDays": 13,
+      "forecastedExpiryDate": "2026-11-11T09:15:42.381Z",
+      "isOverdue": false,
+      "suspensionDate": null,
+      "suspensionJustification": null,
+      "suspensionTime": 0,
+      "suspensionRealTime": 0,
+      "nbSuspensions": 0,
+      "dateClosed": null,
       "closedReason": "None",
-      "closedReasonDescription": "string",
-      "expiryTime": "2022-08-31T10:30:53.840Z",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string",
-      "countryCode": "st",
+      "closedReasonDescription": null,
+      "closedReasonInternalDescription": null,
+      "closingTime": null,
+      "overdueTime": null,
+      "archived": false,
+      "archivedDate": null,
+      "anonymizationDate": null,
       "nbMessages": 0,
       "nbMessagesNotViewed": 0,
-      "remainingDays": 0,
-      "closingTime": 0,
-      "additionalDatas": "string",
-      "userNotified": true,
-      "dateUserNotified": "2022-08-31T10:30:53.840Z",
-      "sendNotification": true,
-      "emailValidationDate": "2022-08-31T10:30:53.840Z",
+      "nbMessagesIncoming": 0,
+      "nbMessagesWithErrors": 0,
+      "lastMessageDate": null,
+      "userNotified": false,
+      "dateUserNotified": null,
+      "sendNotification": false,
+      "emailValidationDate": "2026-10-12T09:16:10.554Z",
       "mailValidated": true,
-      "referrerUrl": "string",
-      "demandId": "string",
-      "identityValidated": true,
-      "dateIdentityValidated": "2022-08-31T10:30:53.840Z",
-      "widgetId": 0
+      "identityValidated": false,
+      "dateIdentityValidated": null,
+      "referrerUrl": "https://www.example.com/privacy",
+      "demandId": "k7Xq2mP9",
+      "dataProcessedCount": 0,
+      "dataToProcessCount": 3,
+      "dataProcessedByAssetOwnersAt": null,
+      "customFields": {
+        "13_long": "1234567891234",
+        "13_html": "<p>Example</p>"
+      },
+      "attachments": [],
+      "messages": [],
+      "tags": []
     }
   ],
-  "total": 0,
-  "size": 0,
-  "page": 0
+  "total": 1,
+  "size": 20,
+  "page": 1
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-## Mettre à jour une demande d'exercice de droits
+### Mettre à jour une demande d'exercice de droits
 
 <mark style="color:orange;">`PUT`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name                                          | Type    | Description                                                                                                    |
-| --------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
-| workspaceId<mark style="color:red;">\*</mark> | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
-| id<mark style="color:red;">\*</mark>          | Integer | L'id de la demande d'exercice de droits existante que vous souhaitez supprimer                                 |
+| Nom                                             | Type    | Description                                                                                |
+| ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail dans lequel se trouve la demande d'exercice de droits |
+| `id`<mark style="color:red;">\*</mark>          | GUID    | L'identifiant (GUID) de la demande d'exercice de droits                                    |
 
-#### Request Body
+#### Corps de la requête
 
-| Name               | Type   | Description                                                                                                                                                 |
-| ------------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| dataSubjectRequest | Object | Poster l'objet complet de la demande d'exercice de droits (voir plus haut ou notre [documentation d'api swagger](https://api.dastra.eu/swagger/index.html)) |
+| Nom                  | Type   | Description                                                                                                                                                                                                      |
+| -------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dataSubjectRequest` | Object | L'objet complet de la demande d'exercice de droits (voir plus haut ou notre [documentation d'API Swagger](https://api.dastra.eu/swagger/index.html)). Son champ `id` doit correspondre à l'identifiant de l'URL. |
 
 {% tabs %}
-{% tab title="200: OK Success" %}
-```json
-{
-  "closedByUser": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "area": {
-    "order": 0,
-    "children": [
-      "string"
-    ],
-    "teams": [
-      {
-        "id": 0,
-        "label": "string",
-        "ref": "string",
-        "areas": [
-          0
-        ],
-        "users": [
-          0
-        ]
-      }
-    ],
-    "id": 0,
-    "type": "Entity",
-    "parentId": 0,
-    "ref": "string",
-    "label": "string",
-    "description": "string",
-    "logoUrl": "string",
-    "address": "string",
-    "zipCode": "string",
-    "city": "string",
-    "countryCode": "str",
-    "immatriculationNumber": "string",
-    "phoneNumber": "string",
-    "mailAddress": "string",
-    "dpo": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-31T13:44:54.781Z",
-      "dateUpdate": "2022-08-31T13:44:54.781Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "referent": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-31T13:44:54.781Z",
-      "dateUpdate": "2022-08-31T13:44:54.781Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "representative": {
-      "id": 0,
-      "displayName": "string",
-      "dateCreation": "2022-08-31T13:44:54.781Z",
-      "dateUpdate": "2022-08-31T13:44:54.781Z",
-      "logoUrl": "string",
-      "actorType": "Physical",
-      "vendorType": "B2B",
-      "accessLevel": "None",
-      "givenName": "string",
-      "familyName": "string",
-      "companyName": "string",
-      "description": "string",
-      "countryCode": "st",
-      "readonly": true,
-      "email": "string",
-      "phoneNumber": "string",
-      "contactName": "string",
-      "contactPosition": "string",
-      "immatriculationNumber": "string",
-      "websiteUrl": "string",
-      "address": "string",
-      "zipCode": "string",
-      "city": "string"
-    },
-    "dataProtectionAuthority": {
-      "id": 0,
-      "label": "string",
-      "siteURL": "string",
-      "phoneNumber": "string",
-      "email": "user@example.com",
-      "countryCode": "str",
-      "address": "string",
-      "city": "string",
-      "zipCode": "string"
-    }
-  },
-  "creator": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "operator": {
-    "id": 0,
-    "displayName": "string",
-    "familyName": "string",
-    "givenName": "string",
-    "email": "string",
-    "color": "string",
-    "avatarUrl": "string",
-    "tenantId": 0
-  },
-  "operatorId": 0,
-  "attachments": [
-    {
-      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "extension": "string",
-      "size": 0,
-      "nbDownload": 0,
-      "transmitted": true,
-      "fileName": "string",
-      "label": "string",
-      "userRequestMessageId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "userRequestId": 0,
-      "dateCreation": "2022-08-31T13:44:54.781Z",
-      "dateUpdate": "2022-08-31T13:44:54.781Z",
-      "creator": {
-        "id": 0,
-        "displayName": "string",
-        "familyName": "string",
-        "givenName": "string",
-        "email": "string",
-        "color": "string",
-        "avatarUrl": "string",
-        "tenantId": 0
-      },
-      "expiration": "2022-08-31T13:44:54.781Z",
-      "dateLastDownload": "2022-08-31T13:44:54.781Z",
-      "dateFileRemoved": "2022-08-31T13:44:54.781Z",
-      "deleted": true,
-      "expired": true,
-      "color": "string"
-    }
-  ],
-  "tags": [
-    {
-      "id": 0,
-      "label": "string",
-      "type": "DataProcessing",
-      "color": "string"
-    }
-  ],
-  "id": 0,
-  "title": "string",
-  "locale": "string",
-  "archived": true,
-  "archivedDate": "2022-08-31T13:44:54.781Z",
-  "personCategory": "Prospect",
-  "complex": true,
-  "dateClosed": "2022-08-31T13:44:54.781Z",
-  "areaId": 0,
-  "state": "Open",
-  "description": "string",
-  "message": "string",
-  "resolutionMessage": "string",
-  "email": "string",
-  "phoneNumber": "string",
-  "givenName": "string",
-  "familyName": "string",
-  "dateCreation": "2022-08-31T13:44:54.781Z",
-  "dateUpdate": "2022-08-31T13:44:54.781Z",
-  "workFlowStep": {
-    "id": 0,
-    "label": "string",
-    "color": "string",
-    "order": 0,
-    "itemLimit": 0,
-    "type": "DataSubject",
-    "finalStep": true,
-    "initialStep": true,
-    "descriptionHtml": "string",
-    "mappedState": "string"
-  },
-  "workFlowStepId": 0,
-  "channel": "Internal",
-  "refId": "string",
-  "userId": "string",
-  "purposes": [
-    "Unknown"
-  ],
-  "closedReason": "None",
-  "closedReasonDescription": "string",
-  "expiryTime": "2022-08-31T13:44:54.781Z",
-  "address": "string",
-  "zipCode": "string",
-  "city": "string",
-  "countryCode": "st",
-  "nbMessages": 0,
-  "nbMessagesNotViewed": 0,
-  "remainingDays": 0,
-  "closingTime": 0,
-  "additionalDatas": "string",
-  "userNotified": true,
-  "dateUserNotified": "2022-08-31T13:44:54.781Z",
-  "sendNotification": true,
-  "emailValidationDate": "2022-08-31T13:44:54.781Z",
-  "mailValidated": true,
-  "referrerUrl": "string",
-  "demandId": "string",
-  "identityValidated": true,
-  "dateIdentityValidated": "2022-08-31T13:44:54.781Z",
-  "widgetId": 0
-}
-```
+{% tab title="204: No Content" %}
+La réponse n'a pas de contenu.
 {% endtab %}
 {% endtabs %}
 
-## Supprimer une demande d'exercice de droits via son id
+### Supprimer une demande d'exercice de droits via son identifiant
 
 <mark style="color:red;">`DELETE`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/{id}`
 
-Attention, cette action est irréversible, la demande d'exercice de droit sera supprimée définitivement de nos bases de données
+Attention, cette action est irréversible : la demande d'exercice de droits est supprimée définitivement de nos bases de données. Pour la déplacer dans la corbeille sans la supprimer, utilisez l'endpoint d'archivage ci-dessous.
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name                                          | Type    | Description                                                                                                    |
-| --------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
-| workspaceId<mark style="color:red;">\*</mark> | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
-| id<mark style="color:red;">\*</mark>          | Integer | L'id de la demande d'exercice de droits existante que vous souhaitez supprimer                                 |
+| Nom                                             | Type    | Description                                                                                |
+| ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail dans lequel se trouve la demande d'exercice de droits |
+| `id`<mark style="color:red;">\*</mark>          | GUID    | L'identifiant (GUID) de la demande d'exercice de droits                                    |
 
 {% tabs %}
-{% tab title="200: OK Success" %}
-```javascript
-{
-    // Response
-}
-```
+{% tab title="200: OK" %}
+La réponse n'a pas de contenu.
 {% endtab %}
 {% endtabs %}
 
-## Changer l'étape de processus de la demande d'exercice de droits
+### Changer l'étape de processus de la demande d'exercice de droits
 
 <mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/workflow`
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name                                          | Type   | Description                                                                                                    |
-| --------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
-| workspaceId<mark style="color:red;">\*</mark> | String | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
+| Nom                                             | Type    | Description                                                                                |
+| ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail dans lequel se trouve la demande d'exercice de droits |
 
-#### Request Body
+#### Corps de la requête
 
-| Name   | Type    | Description                                                                                 |
-| ------ | ------- | ------------------------------------------------------------------------------------------- |
-| id     | Integer | L'id de la demande d'exercice de droits dont vous souhaitez modifier l'étape de processus   |
-| stepId | Integer | L'id de l'étape de processus que vous souhaitez appliquer à la demande d'exercice de droits |
+| Nom                                        | Type    | Description                                                                                               |
+| ------------------------------------------ | ------- | --------------------------------------------------------------------------------------------------------- |
+| `id`<mark style="color:red;">\*</mark>     | GUID    | L'identifiant (GUID) de la demande d'exercice de droits dont vous souhaitez modifier l'étape de processus |
+| `stepId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'étape de processus à appliquer à la demande                                            |
+| `comment`                                  | String  | Commentaire optionnel associé au changement d'étape                                                       |
 
-## Archiver une demande d'exercice de droit via son Id
+### Archiver une demande d'exercice de droits via son identifiant
 
 <mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/archive/{id}`
 
-Ce endpoint applique le state "Archived" à la demande d'exercice de droits
+Cet endpoint déplace la demande d'exercice de droits dans la corbeille (état « archivée »).
 
-#### Path Parameters
+#### Paramètres d'URL
 
-| Name        | Type    | Description                                                                                                    |
-| ----------- | ------- | -------------------------------------------------------------------------------------------------------------- |
-| workspaceId | String  | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
-| id          | Integer | L'id de la demande d'exercice de droits que vous souhaitez archiver                                            |
+| Nom                                             | Type    | Description                                                                                |
+| ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail dans lequel se trouve la demande d'exercice de droits |
+| `id`<mark style="color:red;">\*</mark>          | GUID    | L'identifiant (GUID) de la demande d'exercice de droits à archiver                         |
 
 {% tabs %}
-{% tab title="200: OK Success" %}
-```javascript
-{
-    // Response
-}
-```
+{% tab title="200: OK" %}
+La réponse contient la demande d'exercice de droits (voir l'objet décrit plus haut).
 {% endtab %}
 {% endtabs %}
 
-## Retirer le statut archiver d'une demande d'exercice de droits
+### Retirer le statut archivé d'une demande d'exercice de droits
 
 <mark style="color:green;">`POST`</mark> `/v1/ws/{workspaceId}/DataSubjectRequests/restore/{id}`
 
-#### Path Parameters
+Cet endpoint restaure une demande depuis la corbeille.
 
-| Name        | Type     | Description                                                                                                    |
-| ----------- | -------- | -------------------------------------------------------------------------------------------------------------- |
-| workspaceId | String   | L'id de l'espace de travail dans lequel se trouve la demande d'exercice de droits que vous souhaitez supprimer |
-| id          | Integrer | L'id de la demande d'exercice de droits que vous souhaitez restaurer                                           |
+#### Paramètres d'URL
+
+| Nom                                             | Type    | Description                                                                                |
+| ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| `workspaceId`<mark style="color:red;">\*</mark> | Integer | L'identifiant de l'espace de travail dans lequel se trouve la demande d'exercice de droits |
+| `id`<mark style="color:red;">\*</mark>          | GUID    | L'identifiant (GUID) de la demande d'exercice de droits à restaurer                        |
+
+{% tabs %}
+{% tab title="200: OK" %}
+La réponse contient la demande d'exercice de droits (voir l'objet décrit plus haut).
+{% endtab %}
+{% endtabs %}

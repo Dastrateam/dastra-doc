@@ -1,50 +1,63 @@
 ---
-description: Leer hoe je je register kunt delen.
+description: Leer hoe u het verwerkingsregister deelt.
 ---
 
-# Register delen
+# Het verwerkingsregister delen
 
-## Het hele register delen
-
-Klik in het gedeelte "Register" van DASTRA op de pijl in de rechterbovenhoek van het register naast de knop Verwerking maken en klik vervolgens in het vervolgkeuzemenu op "Delen".
-
-Zodra u hebt geklikt, verschijnt er een venster op het scherm waarin u wordt gevraagd naar de vervaldatum van de link voor delen, klik vervolgens op "link maken".
-
-![](<../../.gitbook/assets/image (180).png>)
-
-
-
-Delen houdt rekening met alle Verwerkingen met de status "gepubliceerd". Verwerkingen in concept worden niet gedeeld met deze functie. Om een draft behandeling te delen, moet het individueel gedeeld worden &#x20;
-
-![Sharing configuratie interface](<../../.gitbook/assets/image (178).png>)
-
-Linklevensduren zijn als volgt:&#x20;
-
-* 2 dagen &#x20;
-* 30 dagen
-* 120 dagen
-* onbeperkt
+Met een deellink krijgen externe gebruikers zonder Dastra-account leestoegang tot uw verwerkingsregister of tot een deel van de verwerkingsactiviteiten. Voor het delen is het recht **Geavanceerde configuratie** vereist.
 
 {% hint style="info" %}
-De share link is een tijdelijke link die je kunt gebruiken om het register te delen met externe gebruikers. De link is publiekelijk zichtbaar en daarom moet je voorzichtig zijn met hoe je hem verspreidt. Om veiligheidsredenen raden we je aan om de koppelingen voor delen op je project in de gaten te houden.
+De deellink is openbaar zichtbaar: iedereen die de link heeft, kan hem openen tot hij verloopt. Let op hoe u de link verspreidt en houd om veiligheidsredenen de deellinks in uw werkruimte in de gaten.
 {% endhint %}
 
-## **Een link voor delen genereren voor een gegevensverwerking** (in het Frans)
+## Het volledige register delen
 
-Herhaal de hierboven beschreven procedure, maar ga naar de Verwerking die je wilt delen. Klik dan op de pijl naast de knop Opslaan en klik op "Delen".
+Klik in de module **Verwerkingsregister** op de pijl naast de knop **Maak een gegevensverwerking** en daarna op **Delen**.
 
-Verwerkingen kunnen worden gedeeld ongeacht hun status (gepubliceerd of concept).
+<figure><img src="../../.gitbook/assets/ropa-share-1.png" alt="Optie Delen in het menu van Maak een gegevensverwerking"><figcaption><p>De optie Delen in het menu van Maak een gegevensverwerking</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image (18) (1).png>)
+Het venster **Alle items delen** opent:
 
-Het is ook mogelijk om meerdere Verwerkingen te delen door ze in het Register menu te selecteren en de "share" gegroepeerde actie te kiezen.&#x20;
+1. Selecteer de **Vervaldatum link**.
+2. Kies bij **Wil je de link e-mailen naar andere gebruikers?** voor **Ja** om de link per e-mail te versturen, en vul dan de **e-mails van ontvangers** in en eventueel een **Gepersonaliseerd bericht**.
+3. Klik op **Maak een link**.
 
+Het delen omvat alleen de verwerkingsactiviteiten met de status "Gepubliceerd". Verwerkingsactiviteiten in concept worden met deze functie niet gedeeld: om een verwerkingsactiviteit in concept te delen, deelt u ze afzonderlijk (zie hieronder).
 
+<figure><img src="../../.gitbook/assets/ropa-share-2.png" alt="Venster voor de deellink van het volledige register"><figcaption><p>Het venster voor de deellink van het volledige register</p></figcaption></figure>
 
-## Gedeelde links beheren
+De beschikbare geldigheidsduren van de links zijn:
 
-Alle deellinks die in je werkruimte zijn gemaakt, worden gecentraliseerd in de beheerconsole (menu Instellingen).&#x20;
+* 2 dagen
+* 30 dagen (standaard)
+* 120 dagen
+* Onbeperkt
 
-Je kunt ze bekijken en indien nodig verwijderen.
+Zodra de link is aangemaakt, wordt hij naar uw klembord gekopieerd. Het venster biedt dan twee delen:
 
-![Beheersinterface voor koppelingen delen](<../../.gitbook/assets/image (179).png>)
+* **Directe link**: kopieer de link met **Link kopiëren** of open hem met **Link**;
+* **Integratie (insluiten)**: stel de **Breedte** en de **Hoogte** in en kopieer daarna de code om het gedeelde register in een andere website, zoals uw intranet, in te sluiten.
+
+Klik op **Sluiten** om het venster te sluiten.
+
+<figure><img src="../../.gitbook/assets/ropa-share-3.png" alt="Aangemaakte deellink met de delen Directe link en Integratie"><figcaption><p>De deellink na het aanmaken</p></figcaption></figure>
+
+## Een deellink genereren voor een verwerkingsactiviteit
+
+Om één verwerkingsactiviteit te delen, opent u het actiemenu aan het einde van de rij in de lijst en klikt u op **Delen**. Het venster **Genereer een share link voor 1 item** opent: ga verder zoals hierboven beschreven.
+
+<figure><img src="../../.gitbook/assets/ropa-share-4.png" alt="Optie Delen in het actiemenu van een verwerkingsactiviteit"><figcaption><p>De optie Delen in het actiemenu van een verwerkingsactiviteit</p></figcaption></figure>
+
+U kunt een verwerkingsactiviteit ook delen vanuit haar dossier: klik op de pijl naast de knop **Opslaan** en daarna op **Delen**.
+
+Om meerdere verwerkingsactiviteiten te delen, selecteert u ze in de lijst, klikt u op **Kies een bulkactie** en daarna op **Delen**.
+
+Op deze manier gedeelde verwerkingsactiviteiten kunnen worden gedeeld ongeacht hun status (gepubliceerd of concept). Verwerkingsactiviteiten in de prullenbak kunnen niet worden gedeeld.
+
+## Deellinks beheren
+
+Alle deellinks die in uw werkruimte zijn aangemaakt, staan gebundeld in de instellingen van de werkruimte, onder **Links delen**.
+
+Voor elke link toont de lijst de link zelf (die u kunt kopiëren), de gebruiker die hem heeft aangemaakt, het type gedeelde items en hun aantal (**Alles** voor een volledig register), de aanmaakdatum, de vervaldatum en de e-mailadressen van de ontvangers. U kunt de lijst filteren op **Type** en op **Verwijderen** klikken om een link te verwijderen die niet meer gebruikt mag worden.
+
+<figure><img src="../../.gitbook/assets/ropa-share-5.png" alt="Deellinks in de instellingen van de werkruimte"><figcaption><p>De instellingen voor Links delen</p></figcaption></figure>

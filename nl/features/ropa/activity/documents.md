@@ -1,20 +1,32 @@
-# Documenten
+---
+description: >-
+  Bewaar alle documentatie die nodig is om de naleving van deze verwerking aan
+  te tonen.
+---
 
-{% embed url="https://www.youtube.com/watch?v=pAg5LlfWC5s&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=12" %}
+# Documentatie
 
-Het documentatievereiste vloeit voort uit het verantwoordingsbeginsel dat is vastgelegd in [**artikel 24 van de AVG**](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679). &#x20;
+De documentatieplicht vloeit voort uit het verantwoordingsbeginsel dat in [artikel 24 van de AVG](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3043-1-1) wordt herinnerd.
 
-In de praktijk neemt deze documentatie voornamelijk de vorm aan van een register van de verwerkingsactiviteiten, maar ook van andere elementen van gegevensbeheer en naleving van de AVG. Deze kunnen omvatten (maar zijn niet beperkt tot):&#x20;
+In de praktijk komt deze documentatie vooral tot uiting in het verwerkingsregister, maar ook in andere onderdelen van het gegevensbeheer en de naleving van de AVG. Daartoe kunnen onder meer de volgende elementen behoren:
 
-* **interne procedures** voor het creëren van een nieuwe verwerking van persoonsgegevens (interne controle, risico- en evenredigheidsbeoordeling, enz.)
-* **procedure voor het uitvoeren van PIA's**
-* Opstellen van een schriftelijk en bindend gegevensbeschermingsbeleid waarmee rekening moet worden gehouden en dat moet worden toegepast op nieuwe gegevensverwerking (bijv. naleving van gegevenskwaliteitscriteria, voorafgaande kennisgeving, beveiligingsbeginselen, raadpleging, enz;)
-* het in kaart brengen van procedures om ervoor te zorgen dat alle gegevensverwerkingen naar behoren worden geïdentificeerd en dat er een inventaris van deze verwerkingen wordt bijgehouden
-* het opzetten van opleidingsprogramma's voor degenen die verantwoordelijk zijn voor het beheer van gegevensverwerking
-* het opzetten van procedures voor het beheer van verzoeken om toegang, rectificatie en verwijdering van gegevens en de rechten van betrokkenen ten aanzien van hun gegevens
-* het opzetten van een intern klachtenbehandelingsmechanisme
-* het ontwikkelen van interne procedures voor het effectief beheren en melden van datalekken&#x20;
-* het uitvoeren van privacyeffectbeoordelingen in bepaalde omstandigheden
-* implementatie van en toezicht op verificatieprocedures om ervoor te zorgen dat alle maatregelen niet alleen op papier bestaan, maar ook worden geïmplementeerd en in de praktijk werken (interne of externe audits, enz.).
+* interne procedures voor het aanmaken van een nieuwe verwerking van persoonsgegevens (interne controle, beoordeling van risico en evenredigheid enzovoort);
+* de procedure voor het uitvoeren van DPIA's;
+* het opstellen van schriftelijke en bindende gegevensbeschermingsbeleidsregels die bij nieuwe gegevensverwerkingen in acht moeten worden genomen en toegepast (bijvoorbeeld naleving van criteria voor gegevenskwaliteit, voorafgaande informatie, beveiligingsbeginselen, raadpleging enzovoort) en die voor betrokkenen beschikbaar moeten zijn;
+* inventarisatieprocedures om te waarborgen dat alle gegevensverwerkingen correct worden geïdentificeerd en dat een inventaris van de gegevensverwerkingen wordt bijgehouden;
+* het opzetten van opleidingsprogramma's voor de mensen die verantwoordelijk zijn voor het beheer van gegevensverwerkingen;
+* het vaststellen van procedures voor het afhandelen van verzoeken om inzage, rectificatie en wissing en van de andere rechten van betrokkenen;
+* het opzetten van een intern mechanisme voor klachtenbehandeling;
+* het ontwikkelen van interne procedures voor een doeltreffend beheer en een doeltreffende melding van datalekken;
+* het uitvoeren van gegevensbeschermingseffectbeoordelingen in bepaalde omstandigheden;
+* de invoering en het toezicht op controleprocedures om te waarborgen dat alle maatregelen op papier bestaan, daadwerkelijk worden uitgevoerd en in de praktijk werken (interne of externe audits enzovoort).
 
-U kunt hier ook documenten opslaan die nuttig zijn voor het begrijpen van de Verwerking, trainingsnotities en eventuele contracten die betrekking hebben op de Verwerking.
+In deze ruimte kunt u ook elk document bewaren dat nuttig is om de verwerkingsactiviteit te begrijpen, de opleidingsnotities en, indien nodig, de contracten die de verwerkingsactiviteit omkaderen.
+
+## De sectie Documentatie gebruiken
+
+De sectie **Documentatie** van de verwerkingsactiviteit biedt drie hulpmiddelen:
+
+* **Informatiebericht genereren**: de AI-assistent stelt op basis van de inhoud van de verwerkingsactiviteit een informatiebericht voor de betrokkenen op. Kies een snelle instructie (**Standaard**, **Lange versie**, **Compact**, **1 paragraaf**, **Eenvoudig** of **Aangepast**) en de **Taal van de kennisgeving** en klik op **Genereer**. Klik op **Exporteren** om het bericht te downloaden als PDF-, Word-, HTML- of Markdown-bestand. Met de optie **Add this file to the attachments of this data processing** voegt u het geëxporteerde bestand toe aan de bijlagen. Deze knop is alleen beschikbaar wanneer de AI-assistent voor uw organisatie is ingeschakeld. Zie [Gebruiksscenario's van de AI-assistent](../../general/ai-assistant/use-cases.md).
+* **Documenteer hier uw gegevensverwerking (links, procedures...)**: een teksteditor om de verwerkingsactiviteit te documenteren, bijvoorbeeld met links naar uw procedures of interne documenten.
+* **Bijlagen**: sleep uw bestanden naar het uploadgebied of klik op **Bestandsverkenner** om bestaande bestanden te selecteren. Geüploade bestanden worden opgeslagen in het documentbeheer, in een map met de naam van de verwerkingsactiviteit, onder **Gegevensverwerking**.

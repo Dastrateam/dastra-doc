@@ -10,58 +10,68 @@ description: >-
 
 ## Création d'une demande de droit
 
-La création d'une demande de droit peut être effectuée de 3 manières différentes dans Dastra :
+Une demande de droit peut être créée de 5 manières dans Dastra :
 
-1. Création d'une demande manuellement
-2. Automatiquement via une adresse email de collecte
-3. Automatiquement via un formulaire de collecte de demandes.
+1. Manuellement, depuis le registre des demandes.
+2. Par import d'un fichier (voir [Import et export des demandes](manage.md#import--export-des-demandes)).
+3. Automatiquement, via une adresse e-mail de collecte.
+4. Automatiquement, via un formulaire de collecte de demandes.
+5. Automatiquement, via l'API REST.
 
 ### Création d'une demande manuellement
 
 {% embed url="https://youtu.be/UsTkoYcqYkI" %}
 
-Pour créer une nouvelle demande manuellement directement depuis le registre des demandes d'exercice des droits, cliquez sur le module 'Exercices des droits" puis le bouton "**Créer une demande**"
+Pour créer une demande manuellement depuis le registre, cliquez sur **Demandes** dans la barre latérale, puis sur **Registre des demandes** et sur le bouton **Créer une demande**.
 
-<figure><img src="../../.gitbook/assets/dsr-requests-list-create-button.png" alt=""><figcaption><p>Le registre des demandes de droit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-manage-1.png" alt="Le registre des demandes, avec le bouton Créer une demande"><figcaption><p>Le registre des demandes</p></figcaption></figure>
 
 {% hint style="info" %}
-Vous pouvez également créer des demandes de droit automatiquement (voir suivant).
+Vous pouvez également créer des demandes automatiquement (voir ci-dessous).
 {% endhint %}
 
-### Création d'une demande de doit via une adresse mail de collecte
+### Création d'une demande via une adresse e-mail de collecte
 
 {% embed url="https://youtu.be/Lxhzm7wjFwk" %}
 
-Pour créer une ou plieurs demandes d'exercice de droit via une adresse mail de collecte dans Dastra, il faut d'abord activer [l'intégration "adresse email de collecte"](../settings/mailboxes.md).
+Pour créer une ou plusieurs demandes à partir d'une adresse e-mail de collecte, activez d'abord l'intégration **Adresse mail de collecte** (voir [la page de l'intégration](../settings/mailboxes.md)).
 
-Pour cela, rendez-vous dans les **réglages** de l'espace de travail, puis dans la section "**intégrations**" et enfin cliquez sur "**Adresse mail de collecte**".
+Pour cela, ouvrez **Réglages espace de travail**, puis la section **Intégrations** et cliquez sur la carte **Adresse mail de collecte**.
 
-<figure><img src="../../.gitbook/assets/dsr-mailbox-integration-card.png" alt=""><figcaption><p>L'intégration "Adresse mail de collecte" dans Dastra.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-manage-2.png" alt="La carte de l'intégration Adresse mail de collecte"><figcaption><p>L'intégration « Adresse mail de collecte » dans Dastra</p></figcaption></figure>
 
 {% hint style="info" %}
-Si cette intégration n'est pas encore installée, installez-la.
+Si cette intégration n'est pas encore installée, installez-la. Depuis le registre des demandes, l'entrée **Transformer emails en demandes de droits** du menu du bouton **Créer une demande** y mène directement.
 {% endhint %}
 
-Ensuite, cliquez sur le cas d'usage pré-configuré "**Transforme un mail entrant en une demande d'exercice de droits avec les pièces jointes associées**". Une adresse mail sera générée automatiquement. .
+Dans la liste **Cas d'usage préconfigurés**, cliquez ensuite sur **Ajouter l'intégration** sur la ligne **Transforme un mail entrant en une demande avec les pièces jointes associées**. Une adresse e-mail est générée automatiquement.
 
-<figure><img src="../../.gitbook/assets/dsr-mailbox-rule-dsr.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-manage-3.png" alt="Le cas d'usage préconfiguré qui transforme un e-mail entrant en demande"><figcaption></figcaption></figure>
 
-Ainsi, chaque email envoyée à cette adresse se transformera automatiquement en une demande d'exercice de droit dans Dastra !
+Chaque e-mail envoyé à cette adresse devient alors une demande dans Dastra, avec ses pièces jointes.
 
-### Création d'une demande de droit automatiquement via un formulaire de collecte des demandes de droits
+### Création d'une demande via un formulaire de collecte
 
-Pour créer une demande de droit automatiquement via un formulaire de collecte des demandes de droits, voir la page "Widget de collecte de demandes" ci-dessous :
+Pour créer des demandes automatiquement à partir d'un formulaire de collecte (widget), voir la page « Implémenter un widget d'exercice des droits » :
 
 {% content-ref url="widget.md" %}
 [implementez-un-widget-dexercice-des-droits.md](widget.md)
+{% endcontent-ref %}
+
+### Création d'une demande via l'API
+
+Les demandes peuvent aussi être créées depuis un autre outil grâce à l'API REST de Dastra. Voir la page « Intégration de l'API » :
+
+{% content-ref url="api.md" %}
+[api.md](api.md)
 {% endcontent-ref %}
 
 ## Import / Export des demandes
 
 {% embed url="https://youtu.be/31AMZz-DMm8" %}
 
-Cliquez sur le menu en haut à droite et sur le bouton "Importer"
+Cliquez sur la flèche à côté du bouton **Créer une demande**, puis sur **Importer**.
 
-Suivez ensuite le guide sur l'i[mport de données dans Dastra](../general/import.md).
+Suivez ensuite le guide d'[import de données dans Dastra](../general/import.md).
 
-Pour exporter, cliquez sur le bouton "exporter" depuis la même interface.
+Pour exporter, cliquez sur **Exporter** dans le même menu.

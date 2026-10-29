@@ -1,144 +1,170 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie ein vollständiges bestehendes Verzeichnis in Dastra
-  exportieren und importieren.
+  Erfahren Sie, wie Sie ein vollständiges bestehendes Verzeichnis aus Dastra
+  exportieren und in Dastra importieren.
 ---
 
 # Verzeichnis exportieren / importieren
 
-## Der Verzeichnisexport
+## Verzeichnis exportieren
 
-Um das gesamte Verzeichnis zu exportieren, gehen Sie zum Modul "**Verarbeitungsverzeichnis**", klicken Sie auf den Pfeil oben rechts neben der Schaltfläche zur Erstellung einer Verarbeitung und wählen Sie dann "**Exportieren**".
+Um das gesamte Verzeichnis zu exportieren, öffnen Sie das Verarbeitungsverzeichnis, klicken Sie auf den Pfeil rechts neben der Schaltfläche **Erstellen Sie eine Datenverarbeitung** und wählen Sie **Exportieren**.
 
-![Dropdown-Menü des Verzeichnisses mit der Exportfunktion](<../../.gitbook/assets/verzeichnis exportieren.png>)
+<figure><img src="../../.gitbook/assets/ropa-export-import-1.png" alt="Menü Erstellen Sie eine Datenverarbeitung mit dem Eintrag Exportieren"><figcaption><p>Das Menü des Verzeichnisses mit der Exportfunktion</p></figcaption></figure>
 
-Wählen Sie dann das Exportformat sowie die gewünschte Exportart (vollständig oder Format Artikel 30) und klicken Sie auf "**Datei herunterladen**". Das war's, Ihr Verzeichnis ist exportiert!
+Wählen Sie im sich öffnenden Fenster unter **Bitte wählen Sie das gewünschte Exportformat aus.** das Format: PDF, Word, HTML, CSV, Excel, JSON oder Markdown. Bei PDF, Word und HTML wählen Sie außerdem unter **Bitte wählen Sie einen Exporttyp aus** den Typ (**Vollständig**, **DSGVO (Artikel 30)**, **Standard-Datenschutzerklärung** oder **Richtlinie zur Datenspeicherung**). Klicken Sie dann auf **Datei herunterladen**. Ihr Verzeichnis ist exportiert.
 
-### Format Artikel 30
+Je nach Format stehen weitere Optionen zur Verfügung, zum Beispiel:
 
-Das sogenannte Artikel-30-Format entspricht dem, was von der DSGVO gefordert wird. Der Export berücksichtigt die im Sinne der DSGVO obligatorischen Felder. Die DSGVO verpflichtet zur Erstellung des Verarbeitungsverzeichnisses. Die enthaltenen Informationen sind:
+* **Nach Organisationseinheiten gruppieren** (PDF, Word, HTML), um die Verarbeitungstätigkeiten nach Organisationseinheit zu gruppieren
+* **Indikatoren für Fortschritt, Qualität und Sensibilität beim Export hinzufügen** und **Exportieren Sie die zugehörigen Aufgaben** (PDF und HTML, Typ Vollständig)
+* **Komplexe Tabellenkalkulation (mehrere Blätter)** (Excel)
+* **Verwenden Sie die nativen Spalten- oder Berichtsnamen (empfohlen für den Datenimport).** und **Bestimmte Spalten exportieren**, womit Sie die zu exportierenden Spalten wählen (CSV und Excel)
+* **Für einen Kunden exportieren**, um einen Export nur für einen Ihrer Kunden zu erzeugen, ohne die Daten der anderen Kunden
 
-* Name der Verarbeitung
-* Verarbeitungszwecke (ohne Rechtsgrundlagen)
-* Daten und Aufbewahrung
-* Empfänger und eventuelle Übermittlungen
+PDF-, Word- und HTML-Exporte enthalten bis zu 500 Verarbeitungstätigkeiten, CSV-, Excel-, JSON- und Markdown-Exporte bis zu 10.000. Ist Ihre Auswahl größer, erscheint im Fenster eine Warnung.
+
+Bei einem großen Verzeichnis wird der JSON-Export im Hintergrund vorbereitet: Sie können weiterarbeiten, eine Benachrichtigung informiert Sie über den Fortschritt, und die Datei wird heruntergeladen, sobald sie fertig ist.
+
+### Format DSGVO (Artikel 30)
+
+Das Format DSGVO (Artikel 30) entspricht dem, was die DSGVO verlangt: Der Export enthält nur die Felder, die Artikel 30 für das Verarbeitungsverzeichnis vorschreibt. Er umfasst folgende Angaben:
+
+* Name der Verarbeitungstätigkeit sowie Identität des Verantwortlichen (oder Auftragsverarbeiters), seines Vertreters und seines Datenschutzbeauftragten
+* Zwecke (ohne Rechtsgrundlage)
+* Kategorien betroffener Personen und personenbezogener Daten sowie Speicherdauern
+* Empfänger und mögliche Übermittlungen außerhalb der EU
 * Sicherheitsmaßnahmen
 
-### Vollständiges Format
+### Format Vollständig
 
-Das vollständige Format ist das native Format von Dastra. Sie exportieren alle Felder, die das Verarbeitungsblatt bilden.
-
-{% hint style="info" %}
-Es ist auch möglich, nur eine oder mehrere Verarbeitungen des Verzeichnisses zu exportieren, anstatt das gesamte Verzeichnis. Wählen Sie dazu die betreffenden Verarbeitungen manuell aus, indem Sie die Kontrollkästchen links im Verzeichnis aktivieren, dann "Sammelaktion wählen" und "Exportieren".
-{% endhint %}
-
-## Der Verzeichnisimport
-
-#### Der Import über die komplexe Excel-Tabelle
-
-Der Import eines bestehenden Verzeichnisses kann eine mühsame Aufgabe darstellen, wenn Sie eine große Anzahl von Verarbeitungen haben.
-
-Bei DASTRA haben wir eine Excel-Datei integriert, die es Ihnen ermöglicht, Ihre Verarbeitungen massenhaft und in einem einzigen Schritt zu importieren.
-
-Sie bietet auch den Vorteil, **sämtliche** Ihre **Referenzsysteme** direkt in unserer Plattform zu importieren und zu erstellen, und beschränkt sich nicht auf Verarbeitungen.
-
-So können Sie Ihre _Assets_, Ihre _Datensätze_, Ihre _Stakeholder_, Ihre _Sicherheitsmaßnahmen_ usw. eingeben.
-
-Sie können [hier](https://docs.google.com/spreadsheets/d/1u_QLMbx9k4fFm7jBrpnt65i8fVfOzYz8/edit?usp=sharing\&ouid=117505938343554554786\&rtpof=true\&sd=true) die Excel-Tabelle zur Datenformatierung herunterladen, die für einen fehlerfreien Import erforderlich ist!
-
-#### Standardimport
-
-Um nicht jede Verarbeitung manuell ausfüllen zu müssen und alle möglichen Verzeichnisformate zu berücksichtigen, hat Dastra eine Methodik entwickelt, die auf dem Prinzip der **Aufteilung des Verzeichnisses in Datenbereiche** basiert. So werden 7 Schritte empfohlen, um ein bestehendes Verzeichnis vollständig in Dastra zu importieren.
+Das vollständige Format ist das native Dastra-Format: Sie exportieren alle Felder, aus denen die Verarbeitungstätigkeit besteht.
 
 {% hint style="info" %}
-Diese Schritte sind zwar nicht obligatorisch, werden aber dringend empfohlen, insbesondere wenn das Verarbeitungsverzeichnis viele Verarbeitungen enthält.
+Sie können auch nur eine oder mehrere Verarbeitungstätigkeiten des Verzeichnisses exportieren statt des gesamten Verzeichnisses. Aktivieren Sie dazu die Kontrollkästchen links neben den betreffenden Verarbeitungstätigkeiten und klicken Sie dann auf **Bitte wählen Sie eine Sammelaktion aus** und **Exportieren**. Um eine einzelne Verarbeitungstätigkeit zu exportieren, können Sie auch **Exportieren** im Menü am Ende ihrer Zeile verwenden.
 {% endhint %}
 
-Zögern Sie nicht, auch unsere Bibliothek von Verarbeitungsvorlagen zu konsultieren: [https://www.dastra.eu/de/data-processing/referentials](https://www.dastra.eu/de/data-processing/referentials)
+## Verzeichnis importieren
 
-## Schritt 1: Import der Verarbeitungsbezeichnungen
+Klicken Sie auf den Pfeil rechts neben der Schaltfläche **Erstellen Sie eine Datenverarbeitung** und wählen Sie **Importieren**. Das Fenster **Verarbeitungen importieren** bietet drei Formate:
 
-Um Ihre bestehenden Verarbeitungsbezeichnungen zu importieren, klicken Sie auf den Tab "Daten importieren" im Bereich Verzeichnis, Tab Verzeichnis:
+* **Komplexe Excel-Tabelle**: Sie importieren Ihre Verarbeitungstätigkeiten aus einer Excel-Arbeitsmappe mit mehreren Blättern (Beta)
+* **Flache Datei**: Sie importieren Ihre Verarbeitungstätigkeiten aus einer CSV-Datei
+* **JSON**: Sie importieren Verarbeitungstätigkeiten, die Sie zuvor im JSON-Format aus Dastra exportiert haben, zum Beispiel aus einem anderen Mandanten
 
-![](../../.gitbook/assets/importz.png)
+<figure><img src="../../.gitbook/assets/ropa-export-import-2.png" alt="Fenster Verarbeitungen importieren mit den Optionen Komplexe Excel-Tabelle, Flache Datei und JSON"><figcaption><p>Das Importformat wählen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/excel1.png" alt=""><figcaption></figcaption></figure>
+### Import mit der komplexen Excel-Tabelle
 
-Laden Sie dann eine Beispieldatei herunter, wie auf dem Bildschirm angezeigt.
+Ein bestehendes Verzeichnis zu importieren kann mühsam sein, wenn Sie viele Verarbeitungstätigkeiten haben. Mit der komplexen Excel-Tabelle importieren Sie Ihre Verarbeitungstätigkeiten gesammelt in einem Zug. Dastra erkennt die Daten der Arbeitsmappe und legt daraus die Verarbeitungstätigkeiten und die zugehörigen Referenzdaten an.
 
-![](../../.gitbook/assets/excel2.png)
+1. Wählen Sie **Komplexe Excel-Tabelle**.
+2. Klicken Sie auf **Laden Sie die Dateivorlage herunter** und füllen Sie sie mit Ihren Daten aus.
+3. Wählen Sie die **Organisationseinheit**, in der die Verarbeitungstätigkeiten angelegt werden.
+4. Ziehen Sie Ihre ausgefüllte Datei in das Feld, um den Import zu starten.
 
-Füllen Sie die heruntergeladene Datei mit Ihren Verarbeitungsbezeichnungen in der folgenden Reihenfolge aus:
+{% hint style="info" %}
+Beim Import wird keine Organisationseinheit angelegt. Daten aus Feldern, die nicht zur Vorlage gehören, werden in die HTML-Beschreibungsfelder übernommen.
+{% endhint %}
 
-| Spalte           | Beschreibung              | Mögliche Werte                                      |
-| ---------------- | ------------------------- | --------------------------------------------------- |
-| Ref              | Interne Referenz (String) |                                                     |
-| Processing state | Status der Verarbeitung   | "Study", "BeingDeployed", "InProduction", "Stopped" |
-| Label            | Name (String)             |                                                     |
-| Description      | Beschreibung (String)     |                                                     |
+### Standardimport Schritt für Schritt
 
-Unten ein Beispiel einer Datei im geforderten Format, die importiert und per Drag-and-Drop in Dastra importiert werden kann:
+Damit Sie nicht jede Verarbeitungstätigkeit von Hand ausfüllen müssen und jedes denkbare Format eines Verzeichnisses verarbeiten können, hat Dastra eine Methode entwickelt, die auf dem Prinzip beruht, **das Verzeichnis in Datendomänen aufzuteilen**. Um ein ganzes bestehendes Verzeichnis in Dastra zu importieren, empfehlen wir 7 Schritte.
 
-{% file src="../../.gitbook/assets/sample-dataprocessing-18.csv" %}
+{% hint style="info" %}
+Diese Schritte sind nicht verpflichtend, werden aber dennoch dringend empfohlen, vor allem wenn das Verzeichnis viele Verarbeitungstätigkeiten enthält.
+{% endhint %}
 
-Importieren Sie sie direkt in unsere Oberfläche per Drag-and-Drop und klicken Sie dann auf Fortfahren.
+Nutzen Sie auch unsere Bibliothek mit Verarbeitungsvorlagen: [https://www.dastra.eu/de/data-processing/referentials](https://www.dastra.eu/de/data-processing/referentials)
 
-Das war's, Ihre Verarbeitungsbezeichnungen sind importiert!
+Die Importseite funktioniert bei jedem Schritt gleich. Sie ist ausführlich unter [Daten importieren (Excel, CSV)](../general/import.md) beschrieben.
 
-## Schritt 2: Import des Asset-Referenzsystems
+### Schritt 1: Bezeichnungen der Verarbeitungstätigkeiten importieren
 
-Um Ihre bestehenden Anwendungen/Assets zu importieren, klicken Sie auf den Tab "**Importieren**" im Modul "**Metadaten**", im Tab "**Assets**":
+Um Ihre bestehenden Bezeichnungen von Verarbeitungstätigkeiten zu importieren, klicken Sie auf den Pfeil rechts neben **Erstellen Sie eine Datenverarbeitung**, wählen Sie **Importieren** und dann **Flache Datei**. Die Seite **Datenimport** öffnet sich.
 
-![](<../../.gitbook/assets/Assets importieren.png>)
+Klicken Sie auf **Laden Sie die Dateivorlage herunter**, um eine Beispieldatei zu erhalten, und auf **Spaltenformat anzeigen**, um die Liste der erwarteten Spalten, ihrer Regeln und ihrer möglichen Werte zu sehen.
 
-Laden Sie dann eine Beispieldatei herunter, wie auf dem Bildschirm angezeigt. Füllen Sie die heruntergeladene Datei mit Ihren Anwendungen in der folgenden Reihenfolge aus:
+<figure><img src="../../.gitbook/assets/ropa-export-import-3.png" alt="Seite Datenimport mit den Schaltflächen Laden Sie die Dateivorlage herunter und Spaltenformat anzeigen"><figcaption><p>Die Dateivorlage herunterladen</p></figcaption></figure>
 
-| Spalte                     | Beschreibung                              | Mögliche Werte                          |
-| -------------------------- | ----------------------------------------- | --------------------------------------- |
-| Description                | Beschreibung (String)                     |                                         |
-| Label                      | Name (String)                             |                                         |
-| ApplicationState           | Anwendungsstatus (applicationstate)       | "InProduction""InDevelopment""Stopped"  |
-| ApplicationType            | Anwendungstyp (applicationtype)           | "Software""WebApp""Saas""Module""Other" |
-| HostingType                | Hosting-Typ (hostingtype)                 | "InHouse""OutSourced"                   |
-| SupportType                | Support-Typ (supporttype)                 | "InHouse""OutSourced"                   |
-| DevelopmentType            | Entwicklungstyp (developmenttype)         | "InHouse""OutSourced"                   |
-| HostName                   | Hostname (String)                         |                                         |
-| PrivacyByDesignImplemented | Privacy by Design implementiert (Boolean) | "true""false"                           |
+Füllen Sie die Datei mit Ihren Verarbeitungstätigkeiten aus. Die wichtigsten Spalten sind:
 
-Unten ein Beispiel einer Datei im geforderten Format, die importiert und per Drag-and-Drop in Dastra importiert werden kann:
+| Spalte           | Beschreibung                                           | Mögliche Werte                                      |
+| ---------------- | ------------------------------------------------------ | --------------------------------------------------- |
+| Label            | Name der Verarbeitungstätigkeit (erforderlich)         |                                                     |
+| Ref              | Interne Referenz                                       |                                                     |
+| Processing state | Status der Verarbeitungstätigkeit                      | "Study", "BeingDeployed", "InProduction", "Stopped" |
+| Description      | Kurze Beschreibung der Verarbeitungstätigkeit          |                                                     |
 
-{% file src="../../.gitbook/assets/sample-applications-example.xlsx" %}
+Wählen Sie die **Organisationseinheit** und ziehen Sie dann Ihre Datei in das Feld:
 
-Importieren Sie sie direkt in unsere Oberfläche per Drag-and-Drop und klicken Sie dann auf Fortfahren.
+<figure><img src="../../.gitbook/assets/ropa-export-import-4.png" alt="Auswahl der Organisationseinheit und Bereich zum Hochladen der Datei auf der Seite Datenimport"><figcaption><p>Die Organisationseinheit wählen, bevor Sie die Datei hochladen</p></figcaption></figure>
 
-Das war's, Ihre Anwendungen sind importiert!
+Ordnen Sie im Schritt **Entsprechungen** die Spalten Ihrer Datei den Dastra-Feldern zu und klicken Sie dann auf **Weiter**, um den Import auszuführen.
 
-## Schritt 3: Import des Stakeholder-Referenzsystems
+Damit sind die Bezeichnungen Ihrer Verarbeitungstätigkeiten importiert.
 
-Wiederholen Sie das gleiche Verfahren wie zuvor aus dem Modul Metadaten im Tab Stakeholder. Unten ein Beispiel:
+### Schritt 2: Referenzdaten zu Assets importieren
 
-Ihr Stakeholder-Referenzsystem verzeichnet alle an einer Verarbeitung beteiligten Interessengruppen. Juristische Personen wie Auftragsverarbeiter, Kunden oder gemeinsame Verantwortliche sowie natürliche Personen wie Ansprechpartner der Verarbeitungen.
+Um Ihre bestehenden Anwendungen und Assets zu importieren, öffnen Sie das Modul **Metadaten**, den Tab **Assets**, klicken Sie auf den Pfeil rechts neben **Asset erstellen** und wählen Sie **Importieren**:
 
-Dieses Referenzsystem dient als internes Verzeichnis im Mandanten. Für jeden Stakeholder können Sie einen charakterisierenden Typ definieren. Wenn Sie beispielsweise Ihr Auftragsverarbeiter-Verzeichnis hinzufügen möchten, fügen Sie alle Stakeholder hinzu, und jeder Auftragsverarbeiter muss einer Verarbeitung zugeordnet werden.
+<figure><img src="../../.gitbook/assets/ropa-export-import-5.png" alt="Menü Asset erstellen mit dem Eintrag Importieren in den Referenzdaten zu Assets"><figcaption><p>Assets importieren</p></figcaption></figure>
 
-## Schritt 4: Import des Referenzsystems für Sicherheitsmaßnahmen
+Laden Sie dann die Dateivorlage herunter, füllen Sie sie mit Ihren Assets aus (die Liste der Spalten finden Sie unter **Spaltenformat anzeigen**) und importieren Sie sie wie in Schritt 1.
 
-Wiederholen Sie das gleiche Verfahren wie zuvor aus dem Modul Metadaten im Tab Maßnahmen.
+Damit sind Ihre Assets importiert.
 
-## Schritt 5: Import der Datenkategorien
+### Schritt 3: Referenzdaten zu Stakeholdern importieren
 
-Wiederholen Sie das gleiche Verfahren wie zuvor aus dem Modul Metadaten im Tab Datenkategorien.
+Wiederholen Sie dasselbe Vorgehen im Modul **Metadaten**, Tab **Stakeholder**.
 
-## Schritt 6: Import des Datensatz-Referenzsystems
+Ihre Stakeholder-Referenzdaten listen alle an einer Verarbeitungstätigkeit beteiligten Parteien auf: juristische Personen wie Auftragsverarbeiter, Kunden oder gemeinsam Verantwortliche oder natürliche Personen wie die Ansprechpartner einer Verarbeitungstätigkeit.
 
-Wiederholen Sie das gleiche Verfahren wie zuvor aus dem Modul Metadaten im Tab Datensätze.
+Diese Referenzdaten dienen als internes Verzeichnis des Mandanten. Für jeden Stakeholder können Sie einen Typ festlegen, der ihn kennzeichnet. Wenn Sie zum Beispiel Ihre Auftragsverarbeiter hinzufügen möchten, erfassen Sie sie alle als Stakeholder und ordnen dann jeden Auftragsverarbeiter den betreffenden Verarbeitungstätigkeiten zu.
 
-## Schritt 7: Aufbau der Verknüpfungen
+### Schritt 4: Referenzdaten zu Sicherheitsmaßnahmen importieren
 
-Nachdem alle Referenzsysteme importiert wurden, bearbeiten Sie jede Verarbeitung und füllen Sie die Informationen auf Basis der importierten Daten aus, indem Sie der folgenden Anleitung folgen:
+Wiederholen Sie dasselbe Vorgehen im Modul **Metadaten**, Tab **Maßnahmen**.
+
+### Schritt 5: Datenglossar importieren
+
+Wiederholen Sie dasselbe Vorgehen im Modul **Metadaten**, Tab **Datensätze**.
+
+### Schritt 6: Referenzdaten zu Datenkategorien importieren
+
+Wiederholen Sie dasselbe Vorgehen im Modul **Metadaten**, Tab **Datenkategorien**.
+
+#### Datenkategorien mit ihren Datenfeldern exportieren und importieren
+
+Sie können Ihre Datenkategorien **einschließlich der zugehörigen Datenfelder** exportieren und importieren. Das erleichtert es, eine bestehende Datenkartierung zu übernehmen oder Ihr Datenglossar gesammelt zu aktualisieren.
+
+**Datenkategorien mit ihren Feldern exportieren**
+
+Im Modul **Metadaten**, Tab **Datenkategorien**:
+
+1. Wählen Sie die Datenkategorien aus, die Sie exportieren möchten, oder exportieren Sie die gesamte Liste.
+2. Klicken Sie auf **Exportieren**.
+3. Wählen Sie das Format CSV oder Excel und klicken Sie auf **Datei herunterladen**.
+
+Die exportierte Datei enthält für jede Datenkategorie ihren Namen, ihre Beschreibung, ihre Speicherregel und die Liste ihrer Datenfelder. In dieser Spalte wird jedes Datenfeld als `name#sensitivity#category` geschrieben, die Datenfelder sind durch `|` getrennt. Aktivieren Sie **Verwenden Sie die nativen Spalten- oder Berichtsnamen (empfohlen für den Datenimport).**, wenn Sie die Datei erneut importieren möchten.
+
+**Datenkategorien mit ihren Feldern importieren**
+
+Die Importdatei hat dasselbe Format wie der Export. Tragen Sie für jede Datenkategorie ihre Datenfelder in die dafür vorgesehene Spalte ein, zum Beispiel `Last name#Current#CivilStatus|Salary#HighlyPersonalNature#EconomicFinancialData`. Beim Import gilt:
+
+* Datenfelder, die im Datenglossar noch nicht vorhanden sind, werden **automatisch angelegt**.
+* Bereits vorhandene Datenfelder (gleicher Name) werden der Datenkategorie **zugeordnet**, ohne Duplikate zu erzeugen.
+
+{% hint style="info" %}
+Diese Funktion ist besonders nützlich, um die Datenkartierung zwischen mehreren Mandanten zu vereinheitlichen oder einen neuen Mandanten aus einer bestehenden Datenkartierung zu initialisieren.
+{% endhint %}
+
+### Schritt 7: Verknüpfungen herstellen
+
+Nachdem alle Referenzdaten importiert sind, bearbeiten Sie jede Verarbeitungstätigkeit und ergänzen ihre Angaben anhand der importierten Daten, nach der folgenden Anleitung:
 
 {% content-ref url="activity/README.md" %}
-[remplir-le-questionnaire](activity/README.md)
+[Eine Verarbeitung ausfüllen](activity/README.md)
 {% endcontent-ref %}
 
-Das war's, die Verknüpfungen sind aufgebaut!
+Damit sind die Verknüpfungen hergestellt.

@@ -2,70 +2,65 @@
 
 La gestion des risques dans Dastra peut prendre plusieurs formes :
 
-* L'analyse d'impact relative à la protection des données (AIPD / PIA),
-* L'identification et l'évaluation des risques (grâce au module Risques),
-* Les audits.
+* l'analyse d'impact relative à la protection des données (PIA),
+* l'identification et l'évaluation des risques (avec le module Risques),
+* les audits.
 
-### L'analyse d'impact
+## L'analyse d'impact
 
-Si vous avez identifié des traitements de données personnelles susceptibles d'engendrer des risques élevés pour les droits et libertés des personnes concernées, vous devrez mener, pour chacun de ces traitements, une [analyse d'impact relative à la protection des données ](https://www.cnil.fr/fr/gerer-les-risques)(AIPD).
+Si vous avez identifié des traitements de données personnelles susceptibles d'engendrer des risques élevés pour les droits et libertés des personnes concernées, vous devez mener, pour chacun de ces traitements, une [analyse d'impact relative à la protection des données](https://www.cnil.fr/fr/gerer-les-risques) (AIPD), appelée PIA dans Dastra.
 
 {% hint style="info" %}
-Mener une AIPD est obligatoire pour tout traitement susceptible d'engendrer des risques élevés pour les droits et libertés des personnes concernées (Article 35 du RGPD)
+Mener un PIA est obligatoire pour tout traitement susceptible d'engendrer des risques élevés pour les droits et libertés des personnes concernées (article 35 du RGPD).
 {% endhint %}
 
-Pour vous aider à déterminer si votre traitement est susceptible d’engendrer des risques élevés, les 9 critères suivants sont définis dans les lignes directrices du G29 :
+Pour déterminer si votre traitement est susceptible d'engendrer des risques élevés, les 9 critères suivants sont définis dans les lignes directrices du G29 :
 
-1. Evaluation ou notation;
-2. Décision automatisée avec effet juridique ou effet similaire significatif;
-3. Surveillance systématique ;
-4. Données sensibles ou données à caractère hautement personnel ;
-5. Données personnelles traitées à grande échelle ;
-6. Croisement d’ensembles de données ;
-7. Données concernant des personnes vulnérables ;
-8. Usage innovant ou application de nouvelles solutions technologiques ou organisationnelles ;
-9. Exclusion du bénéfice d’un droit, d’un service ou contrat.
+1. évaluation ou notation ;
+2. décision automatisée avec effet juridique ou effet similaire significatif ;
+3. surveillance systématique ;
+4. données sensibles ou données à caractère hautement personnel ;
+5. données personnelles traitées à grande échelle ;
+6. croisement d'ensembles de données ;
+7. données concernant des personnes vulnérables ;
+8. usage innovant ou application de nouvelles solutions technologiques ou organisationnelles ;
+9. exclusion du bénéfice d'un droit, d'un service ou d'un contrat.
 
-Ces critères sont directement intégrés à notre workflow de création de traitement de données, et vous pouvez renseigner pour chacun de vos traitements s'il y a eu de réaliser un PIA sur celui-ci ou non.
+Ces critères sont intégrés au processus de création d'un traitement : vous indiquez, pour chaque traitement, s'il y a lieu de réaliser un PIA.
 
-![Exemple de traitement nécessitant potentiellement un PIA.](../../.gitbook/assets/register-processing-impact-analysis-step.png)
+<figure><img src="../../.gitbook/assets/getting-started-tutorial-1.png" alt="Étape d'analyse d'impact d'un traitement, avec les 9 critères et le bouton de génération du PIA"><figcaption><p>Exemple de traitement nécessitant potentiellement un PIA</p></figcaption></figure>
 
-### L'identification et l'évaluation des risques
+## L'identification et l'évaluation des risques
 
-Le module Risques dans Dastra vous permet de gérer les risques au niveau de vos traitements, de vos acteurs (par exemple, les sous-traitants) et de vos actifs.
+Le module Risques de Dastra gère les risques au niveau de vos traitements, de vos acteurs (par exemple les sous-traitants) et de vos actifs.
 
-La méthodologie de gestion des risques répond aux exigences standard de gestion des risques sur les systèmes d'information.
+La méthodologie de gestion des risques répond aux exigences standard de gestion des risques sur les systèmes d'information. Elle comprend quatre étapes :
 
-4 étapes sont ainsi à suivre :
+1. identification du risque ;
+2. évaluation du risque ;
+3. réponse au risque ;
+4. surveillance du risque.
 
-1 : identification du risque
-
-2 : évaluation du risque
-
-3 : réponse au risque
-
-4 : surveillance du risque
-
-Le risque d'une manière générale se mesure de la façon suivante :
+De façon générale, le risque se mesure ainsi :
 
 $$
 Risque  = Probabilité  * Impact
 $$
 
 {% content-ref url="../../features/risks/README.md" %}
-[la-gestion-des-risques](../../features/risks/README.md)
+[README.md](../../features/risks/README.md)
 {% endcontent-ref %}
 
-### Les audits
+## Les audits
 
-Pour aller plus loin dans la gestion des risques, Dastra vous propose également de concevoir des audits, réaliser des campagnes et collecter les résultats sous forme de rapport d'audit exportable.
+Pour aller plus loin dans la gestion des risques, Dastra propose aussi de concevoir des audits, de réaliser des campagnes et de collecter les résultats sous forme de rapport d'audit exportable.
 
 {% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
+[README.md](../../features/questionnaires/README.md)
 {% endcontent-ref %}
 
-Ca y est, vos risques sont identifiés et évalués ! Passez ensuite à l'étape 4, priorisation des tâches:
+Vos risques sont identifiés et évalués. Passez ensuite à l'étape 4, la priorisation des tâches :
 
 {% content-ref url="step-4.md" %}
-[etape-3-prioriser-les-actions-a-mener.md](step-4.md)
+[step-4.md](step-4.md)
 {% endcontent-ref %}

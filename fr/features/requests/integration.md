@@ -6,21 +6,21 @@ description: >-
 
 # Intégration technique
 
-### Objectifs
+## Objectifs
 
-Le widget d'exercice de droits vous permet de **collecter automatiquement depuis une page de votre site des demandes d'exercice de droit** de différents types (suppressions, modifications, rectifications...)
+Le widget d'exercice de droits collecte automatiquement, depuis une page de votre site, des demandes d'exercice de droit de différents types (suppressions, modifications, rectifications...)
 
-Le widget est intégré au **SDK javascript** de dastra.
+Le widget est intégré au **SDK javascript** de Dastra.
 
-### Prérequis
+## Prérequis
 
-Afin de mettre en place le widget d'exercice de droit, vous devez disposer d'**une clé publique d'API** : [lire la documentation](https://doc.dastra.eu/~/changes/OdM7a8W4pn3S8n18W72A/features/settings/gestion-des-cles-dapi) ou [accéder directement à la page de gestion des clés d'API](https://app.dastra.eu/general-settings/api)
+Pour mettre en place le widget d'exercice de droit, vous devez disposer d'**une clé publique d'API** : lisez la page [Gestion des clés d'API](../settings/api-keys.md) ou [accédez directement à la page de gestion des clés d'API](https://app.dastra.eu/general-settings/api).
 
-### Mise en place du widget dans l'interface dédiée
+## Mise en place du widget dans l'interface dédiée
 
-Pour commencer, vous devez **mettre en place le widget** dans[ le panel de gestion des widgets](https://app.dasta.eu/workspace/data-subject-request/integrations) d'exercice de droits :
+Pour commencer, vous devez mettre en place le widget dans la liste des formulaires de collecte : dans le menu **Demandes**, cliquez sur **Formulaires de collecte**.
 
-![](../../.gitbook/assets/dsr-collection-widgets-list.png)
+<figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Liste des formulaires de collecte avec le bouton Créer un formulaire"><figcaption><p>La liste des formulaires de collecte</p></figcaption></figure>
 
 Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d'ouverture) :
 
@@ -48,7 +48,7 @@ Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d
 </script>
 ```
 
-### Comment forcer la langue du formulaire ?
+## Forcer la langue du formulaire
 
 Par défaut, ce sera **la langue du navigateur** qui sera prise. Si la langue n'est pas disponible dans les traductions du widgets, la langue par défaut sera sélectionnée automatiquement. Vous pouvez forcer la langue courante du widget en ajoutant la propriété **data-lang** à la div où le formulaire s'affichera.
 
@@ -58,7 +58,7 @@ _Dans cet exemple, la langue italienne sera sélectionnée par défaut (si elle 
 <div id="customer-subject-popup" data-lang="it"></div>
 ```
 
-#### Comment envoyer automatiquement des valeurs de formulaire au widget ?
+## Préremplir les champs du formulaire
 
 Il est possible de préremplir les champs du formulaire depuis le contexte d'authentification de l'utilisateur. Les champs préremplis s'affichent en **lecture seule** (grisés) côté utilisateur.
 
@@ -77,6 +77,8 @@ dastra.push(['set', 'dsr:phoneNumber', '{téléphone}'])
 dastra.push(['set', 'dsr:message', '{message}'])
 ```
 
+La propriété `refId` est l'identifiant unique de la personne dans votre système (identifiant client, identifiant de session...). Elle s'affiche, en lecture seule, uniquement si le champ **Référence de la demande** fait partie des champs actifs du formulaire.
+
 **Champs personnalisés :**
 
 ```javascript
@@ -91,12 +93,12 @@ dastra.push(['set', 'dsr:additionalDatas', payload])
 dastra.push(['set', 'dsr:@customFieldSlug1', 'valeur1'])
 ```
 
-### Envoi des paramètres en utilisant le mode page
+## Envoi des paramètres en utilisant le mode page
 
-Il est également possible de passer ces paramètres en utilisant les paramètres querystring, il suffit de préfixer le nom du paramètre par dsr\_ :
+Il est également possible de passer ces paramètres en utilisant les paramètres querystring : préfixez le nom du paramètre par `dsr_`.
 
 ```url
-https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
+https://api.dastra.eu/v1/client/data-subject-request/page?id=<Your widget id>
 &key=<your public key>
 &dsr_email=test@github.org
 &dsr_givenName=Dastonaute
@@ -104,11 +106,11 @@ https://api.dastra.eu/v1/client/customer-subject-form?id=<Your widget id>
 &...etc...
 ```
 
-### Fermer le widget en cliquant en dehors de la fenêtre
+## Fermer le widget en cliquant en dehors de la fenêtre
 
-Si votre widget est configuré avec un **type d'affichage "Popup"**, nous n'avons pas mis en place le comportement de fermeture de la modal en cas de clic en dehors de la fenêtre, car les risques de perte de données saisies par l'utilisateur sont trop importants.
+Si votre widget est configuré avec le type d'affichage **Fenêtre modale (popup)**, la fenêtre ne se ferme pas lorsque l'utilisateur clique en dehors. Ce comportement est voulu : le risque de perdre les données saisies est trop important.
 
-Cependant, si vous souhaitez que le widget se ferme lorsque l'utilisateur clique en dehors du widget, il est possible de le mettre en place à l'aide du code suivant :
+Si vous souhaitez malgré tout que le widget se ferme lorsque l'utilisateur clique en dehors de la fenêtre, utilisez le code suivant :
 
 ```javascript
 window.dastra.customerSubjectReady().then((form) => {
@@ -117,14 +119,14 @@ window.dastra.customerSubjectReady().then((form) => {
 ```
 
 {% hint style="warning" %}
-Attention, cela aura pour effet de supprimer l'intégralité du texte saisi par l'utilisateur sans aucun avertissement ! Si le formulaire est long, cela peut se produire facilement lors d'une sélection dépassant un champ textuel long.
+Cela supprime l'intégralité du texte saisi par l'utilisateur, sans aucun avertissement. Si le formulaire est long, cela peut arriver lors d'une sélection de texte qui dépasse d'un champ long.
 {% endhint %}
 
-### Intégrer plusieurs widgets dans une seule page
+## Intégrer plusieurs widgets dans une seule page
 
 Par défaut, Dastra ne permet pas l'intégration de plusieurs widgets au sein de la même page.
 
-Cependant, il est possible de faire cette intégration avec la méthode suivante.
+Il est cependant possible de le faire avec deux appels à `loadCustomerSubjectForm`, un par widget, avec des sélecteurs et des identifiants de widget distincts.
 
 ```html
 <html lang="en-GB">
@@ -166,15 +168,24 @@ Cependant, il est possible de faire cette intégration avec la méthode suivante
 </html>
 ```
 
-Pour intégrer les champs initiaux dans cette configuration, il faut utiliser le code suivant :
+Pour définir les champs initiaux d'un widget dans cette configuration, utilisez la propriété `form.initialData` dans `onLoad` :
 
-```html
-window.dastra.push(function () {   dastra.loadCustomerSubjectForm({
-    selector: "#customer-subject-form-custom",     widgetId: widgetId,
-    onLoad: function (form) {       form.initialData = {
-        givenName: "prénomTest"       };       document
-        .getElementById("customer-request-button")
-        .addEventListener("click", function () {
-          form.closeOnBackdrop = true;           form.open();         });     },
-  }); });
+```javascript
+window.dastra.push(function () {
+  dastra.loadCustomerSubjectForm({
+    selector: '#customer-subject-form-custom',
+    widgetId: widgetId,
+    onLoad: function (form) {
+      form.initialData = {
+        givenName: 'prénomTest'
+      }
+      document
+        .getElementById('customer-request-button')
+        .addEventListener('click', function () {
+          form.closeOnBackdrop = true
+          form.open()
+        })
+    }
+  })
+})
 ```

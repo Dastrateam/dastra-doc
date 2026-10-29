@@ -1,120 +1,133 @@
 ---
-description: Documenteer de doeleinden van uw Verwerking en de bijbehorende rechtsgrondslag
+description: Geef hier de doeleinden van de gegevensverwerking op.
 ---
 
 # Doeleinden
 
-{% embed url="https://www.youtube.com/watch?v=CnSRO2N-NOk&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=5" %}
+## Doeleinden van een verwerkingsactiviteit
 
-## Verwerkingsdoeleinden
+Een doeleinde is het doel dat u met het aanmaken van uw bestand nastreeft. Het geeft aan waarvoor de persoonsgegevens worden verwerkt, met andere woorden de bestaansreden ervan. Dit doel moet duidelijk en begrijpelijk zijn.
 
-Een **doel** is het doel dat wordt nagestreefd met het opzetten van uw bestand. Het geeft aan waarvoor de gegevensverwerking zal worden gebruikt, de raison d'être. Dit doel moet duidelijk en begrijpelijk zijn.
+Het vastleggen van het doeleinde is fundamenteel, omdat het een voorwaarde is voor de andere elementen die de verwerking omkaderen, zoals de bewaartermijn van de gegevens, de toereikendheid, relevantie en evenredigheid van de gegevens, en de juistheid en actualisering ervan.
 
-De definitie van het doel is fundamenteel omdat het een voorwaarde is voor de andere elementen die de Verwerking regelen, zoals de periode gedurende welke de gegevens worden bewaard, de geschiktheid, relevantie en evenredigheid van de gegevens en de nauwkeurigheid en actualisering van de gegevens.
+[Artikel 5, lid 1, onder b), van de AVG](https://gdpr-info.eu/art-5-gdpr/) bepaalt dat het doeleinde welbepaald, uitdrukkelijk omschreven en gerechtvaardigd moet zijn.
 
-[**Artikel 5 1. b) van de AVG**](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0679-20160504) bepaalt dat het doel gespecificeerd, expliciet en legitiem moet zijn.
+Het doeleinde moet welbepaald zijn: het moet nauwkeurig genoeg worden omschreven om de nodige waarborgen voor gegevensbescherming af te stemmen en de reikwijdte van de gegevensverwerking af te bakenen. Het vereiste detailniveau hangt af van de context van de gegevensverzameling en van de betrokken gegevens. Soms volstaat een korte, duidelijke omschrijving. Een lokaal familiebedrijf hoeft het doeleinde van zijn klantenbestand bijvoorbeeld niet even gedetailleerd te omschrijven als een multinational die complexe algoritmen gebruikt voor gepersonaliseerde aanbiedingen en gerichte reclame. Het doeleinde moet worden bepaald voordat de verwerking plaatsvindt.
 
-**Het doel moet worden gespecificeerd**: het doel moet voldoende nauwkeurig worden gedefinieerd om de nodige waarborgen voor gegevensbescherming te kunnen bieden en om de reikwijdte van de gegevensverwerking te kunnen bepalen. De mate van gedetailleerdheid hangt af van de specifieke context van de gegevensverzameling en de betrokken gegevens. Soms volstaat eenvoudige taal. Een lokaal familiebedrijf zal bijvoorbeeld niet dezelfde mate van detail nodig hebben om het doel van het klantenbestand te beschrijven als een multinational die complexe algoritmen gebruikt voor gepersonaliseerde aanbiedingen en gerichte reclame. Het doel moet worden bepaald voordat de Verwerking wordt uitgevoerd.
+Het doeleinde moet uitdrukkelijk omschreven zijn: het mag niet dubbelzinnig zijn en moet duidelijk worden verwoord.
 
-**Het doel moet expliciet zijn**: het doel mag niet dubbelzinnig zijn en moet duidelijk worden uitgedrukt. &#x20;
+Het doeleinde moet gerechtvaardigd zijn: de rechtvaardiging verwijst naar de wettelijke basis waarop de gegevensverwerking berust, zoals [artikel 6 van de AVG](https://gdpr-info.eu/art-6-gdpr/) vereist.
 
-**Het doel moet legitiem zijn**: legitimiteit verwijst naar de rechtsgrondslag voor de gegevensverwerking vereist door [**artikel 6 van de AVG**](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0679-20160504). &#x20;
+Dit begrip houdt ook in dat het doeleinde niet in strijd is met het recht in het algemeen. Het doeleinde is bijvoorbeeld niet gerechtvaardigd als het leidt tot discriminatie die het strafrecht verbiedt. Met name het arbeidsrecht, het consumentenrecht of het contractenrecht kunnen in aanmerking worden genomen.
 
-Dit concept vereist ook dat het doel niet in algemene zin in strijd is met de wet. Het doel is bijvoorbeeld niet legitiem als het leidt tot discriminatie die verboden is door het wetboek van strafrecht. We kunnen in het bijzonder rekening houden met het arbeidsrecht, het consumentenrecht of het contractenrecht&#x20;
+Daarnaast moet bij de beoordeling van de rechtmatigheid rekening worden gehouden met de context van de verwerking en in het bijzonder met de redelijke verwachtingen van de betrokkene.
 
-Daarnaast moet bij de beoordeling van de rechtmatigheid rekening worden gehouden met de context van de Verwerking en in het bijzonder met de redelijke verwachtingen van de betrokkene.&#x20;
+Een verwerkingsactiviteit kan meerdere doeleinden hebben. De activiteit "werving" kan bijvoorbeeld twee afzonderlijke doeleinden hebben: de analyse van sollicitaties en het beheer van gesprekken, en het opbouwen van een cv-bibliotheek.
 
-Een Verwerkingsactiviteit kan verschillende doeleinden hebben. De activiteit "aanwerving" kan bijvoorbeeld twee verschillende doeleinden hebben: de analyse van sollicitaties en het beheer van sollicitatiegesprekken, evenals het opzetten van een cv-bibliotheek.&#x20;
+Voor elk doeleinde moet u de toepasselijke [wettelijke basis](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/) bepalen. Per doeleinde is er slechts één wettelijke basis mogelijk. De keuze van die wettelijke basis hangt af van de context van de verwerking.
 
-\
-Voor elk doel moet u de **rechtsgrondslag** definiëren die van toepassing is. Er kan maar één rechtsgrondslag per doel zijn. De keuze van de rechtsgrondslag hangt af van de context van de Verwerking.
+## Een doeleinde toevoegen in Dastra
 
-## Voeg een doel toe in Dastra&#x20;
+U voegt doeleinden toe in de sectie **Doeleinden**, de derde sectie van de verwerkingsactiviteit. U kunt zoveel doeleinden toevoegen als nodig is.
 
-Doelen worden toegevoegd in sectie 3 van de verwerking.
+1. Klik in de sectie **Doeleinden** op **Voeg een doel toe**. Het venster **Voeg een doel toe** opent.
+2. Kies hoe u het doeleinde aanmaakt:
+   * **Creëren met AI**: genereer met AI een lijst van doeleinden. Selecteer de doeleinden die u wilt behouden en klik op **Toevoegen**.
+   * **Beginnen met een doel**: vertrek van een bestaand doeleinde. U kunt de doeleinden filteren op **Gegevensverwerking** en op **Wettelijke basis**.
+   * **Uit het niets**: maak een nieuw doeleinde vanaf nul aan.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Doel toevoegen</p></figcaption></figure>
+U kunt deze drie opties ook rechtstreeks openen via de pijl naast de knop **Voeg een doel toe**.
 
+<figure><img src="../../../.gitbook/assets/ropa-purposes-1.png" alt="Venster Voeg een doel toe met de opties Creëren met AI, Beginnen met een doel en Uit het niets"><figcaption><p>De drie manieren om een doeleinde aan te maken</p></figcaption></figure>
 
+Wanneer u een doeleinde vanaf nul aanmaakt, vult u de volgende velden in en klikt u daarna op **Toevoegen**:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+* **Titel van het doel** (verplicht): de naam van het doeleinde, beperkt tot 120 tekens. Dastra stelt bestaande doeleinden voor terwijl u typt.
+* **Wettelijke basis** (optioneel): de wettelijke basis van dit doeleinde (zie hieronder).
+* **Beschrijving van het doel** (optioneel): beschrijf het doeleinde. De AI-knop **Genereer** kan deze beschrijving voor u opstellen.
+* **Gelieve de keuze van deze grondslag uit te leggen**: verschijnt zodra een wettelijke basis is geselecteerd, bijvoorbeeld om de nagestreefde gerechtvaardigde belangen of de wettelijke bepaling die de verwerking oplegt te vermelden.
 
-De titel van het doel is beperkt tot 120 tekens &#x20;
+<figure><img src="../../../.gitbook/assets/ropa-purposes-2.png" alt="Paneel voor het aanmaken van een doeleinde met de velden Titel van het doel, Wettelijke basis en Beschrijving van het doel"><figcaption><p>Een doeleinde vanaf nul aanmaken</p></figcaption></figure>
 
-U kunt verschillende doeleinden aan uw Verwerking toevoegen.
+De doeleinden staan in een tabel met hun naam, hun beschrijving en hun wettelijke basis. Klik op een doeleinde om het te bewerken, of gebruik het menu **...** om het te wijzigen (**Een doel wijzigen**) of te verwijderen (**Verwijderen**).
 
-## Rechtsgrondslag&#x20;
+## Wettelijke bases
 
-Er zijn 6 mogelijke rechtsgrondslagen voor gegevensverwerking.
+Er zijn 6 mogelijke wettelijke bases voor gegevensverwerking. In Dastra biedt de lijst **Wettelijke basis** deze 6 wettelijke bases, plus **Andere**.
 
 ### Toestemming
 
-**Toestemming** moet aan vier criteria voldoen om rechtmatig te zijn: het moet&#x20;
+Toestemming moet aan vier criteria voldoen om de verwerking rechtmatig te maken. Ze moet zijn:
 
-* gratis,&#x20;
-* specifiek,&#x20;
-* geïnformeerd en&#x20;
-* ondubbelzinnig.&#x20;
+* vrij gegeven,
+* specifiek,
+* geïnformeerd en
+* ondubbelzinnig.
 
-Toestemming moet net zo gemakkelijk te geven als in te trekken zijn. Je moet bewijs documenteren dat de toestemming geldig is verkregen. Hiervoor kunt u een beschrijving van het proces voor het verkrijgen van toestemming toevoegen als bijlage bij de Verwerking (stap 11).
+Toestemming intrekken moet even gemakkelijk zijn als ze geven. U moet bewijzen dat de toestemming geldig is verkregen. Dat kunt u doen door een beschrijving van het proces voor het verzamelen van toestemming aan de verwerkingsactiviteit toe te voegen, in de sectie **Documentatie** (sectie 11).
 
-### Contractuele of precontractuele maatregelen
+### Overeenkomst
 
-De rechtsgrondslag van het **contract** moet aan drie criteria voldoen om geldig te zijn: er moet&#x20;
+De overeenkomst (uitvoering van een overeenkomst of precontractuele maatregelen) moet aan drie criteria voldoen om een geldige wettelijke basis te zijn:
 
-* er moet een contractuele of precontractuele relatie bestaan tussen de voor de verwerking verantwoordelijke en de betrokkene; &#x20;
-* het contract moet geldig zijn volgens het toepasselijke recht en&#x20;
-* de Verwerking moet objectief noodzakelijk zijn voor de uitvoering van de overeenkomst &#x20;
+* er moet een contractuele of precontractuele relatie bestaan tussen de verwerkingsverantwoordelijke en de betrokkene;
+* de overeenkomst moet geldig zijn volgens het toepasselijke recht en
+* de verwerking moet objectief noodzakelijk zijn voor de uitvoering van de overeenkomst.
 
-Het recht op bezwaar kan niet worden uitgeoefend met betrekking tot de verwerking op deze rechtsgrondslag en het recht op gegevensoverdraagbaarheid kan worden uitgeoefend met betrekking tot deze verwerking. U kunt het contract waarop u de Verwerking baseert toevoegen in de bijlagen bij stap 11.
+Het recht van bezwaar kan niet worden uitgeoefend tegen een verwerking op deze wettelijke basis, het recht op gegevensoverdraagbaarheid wel. U kunt de overeenkomst waarop u de verwerking baseert, als bijlage toevoegen in de sectie **Documentatie** (sectie 11).
 
 ### Wettelijke verplichting
 
-De **wettelijke verplichting** moet&#x20;
+De wettelijke verplichting moet:
 
-* bindend zijn,&#x20;
-* voldoende duidelijk en nauwkeurig zijn om een geldige basis voor verwerking te bieden&#x20;
+* dwingend zijn,
+* voldoende duidelijk en nauwkeurig zijn om een geldige basis voor de verwerking te bieden.
 
-De teksten die deze verplichting creëren, moeten ten minste het doel van de Verwerking definiëren &#x20;
+De teksten die deze verplichting creëren, moeten ten minste het doeleinde van de verwerking omschrijven.
 
-De verplichting moet worden opgelegd aan de voor de verwerking verantwoordelijke en niet aan de betrokkenen. Je moet de tekst die de Verwerking oplegt (bijvoorbeeld een wetsartikel) gedetailleerd beschrijven.
+De verplichting moet aan de verwerkingsverantwoordelijke worden opgelegd en niet aan de betrokkenen. U moet de tekst die de verwerking oplegt, nader aanduiden (bijvoorbeeld een wetsartikel).
 
-### Bescherming vitale **belangen** 
+### Bescherming van vitale belangen
 
-Het beschermen van vitale belangen** is beperkt tot situaties die het leven van de betrokkene of van een andere natuurlijke persoon bedreigen. De meest voor de hand liggende toepassing is de situatie waarin een persoon het slachtoffer is van een ongeval en, ernstig gewond, bewusteloos in het ziekenhuis wordt opgenomen en niet in staat is om toestemming te geven voor de gegevensverwerking voor behandeling. Deze grondslag moet strikt worden geïnterpreteerd en mag alleen worden gebruikt als er geen toestemming kan worden gevraagd.
+De bescherming van vitale belangen is beperkt tot situaties die het leven van de betrokkene of van een andere natuurlijke persoon bedreigen. De meest voor de hand liggende toepassing is een persoon die het slachtoffer is van een ongeval, ernstig gewond is, bewusteloos in een ziekenhuis wordt opgenomen en niet in staat is toestemming te geven voor de verwerking van zijn of haar gegevens voor de behandeling. Deze basis moet strikt worden uitgelegd en mag alleen worden gebruikt als er geen toestemming kan worden gevraagd.
 
-### Opdracht in het algemeen belang
+### Algemeen belang
 
-De **uitvoering van een taak in het algemeen belang of in het kader van de uitoefening van het openbaar gezag**. Het gebruik van deze rechtsgrondslag is met name gerechtvaardigd voor de Verwerking door overheidsinstanties met het oog op de uitvoering van hun taken.&#x20;
+De vervulling van een taak van algemeen belang of van een taak in het kader van de uitoefening van het openbaar gezag. Het gebruik van deze wettelijke basis is met name gerechtvaardigd voor verwerkingen die overheidsinstanties uitvoeren om hun taken te vervullen.
 
-Twee voorwaarden zijn noodzakelijk:&#x20;
+Er zijn twee voorwaarden nodig:
 
-* de Verwerking moet de relevante en passende uitvoering van de aan de overheidsinstantie toevertrouwde taak mogelijk maken en mag geen ander doel hebben dat geen verband houdt met of te ver afstaat van de specifieke kenmerken van de betrokken taak van algemeen belang.&#x20;
-* Het algemeen belang moet in de wet worden gedefinieerd en kan niet worden verondersteld&#x20;
+* de verwerking moet toelaten dat de aan de overheidsinstantie toevertrouwde taak op een relevante en passende manier wordt uitgevoerd en mag geen ander doel nastreven dat geen verband houdt met de specifieke kenmerken van de betrokken taak van algemeen belang of er te ver van afstaat;
+* het algemeen belang moet in de wet zijn omschreven en mag niet worden verondersteld.
 
-U moet details geven over het openbaar belang dat de uitvoering van de Verwerking vereist.
+U moet de taak van algemeen belang waarvoor de verwerking nodig is, nader aanduiden.
 
-### Legitieme belangen
+### Gerechtvaardigd belang
 
-De **legitieme belangen** van de Verwerkingsverantwoordelijke of van een derde&#x20;
+De gerechtvaardigde belangen van de verwerkingsverantwoordelijke of van een derde.
 
-Deze rechtsgrondslag kan niet worden ingeroepen door overheidsinstanties in het kader van hun opdracht en moet aan 3 voorwaarden voldoen:&#x20;
+Overheidsinstanties kunnen zich bij de uitvoering van hun taken niet op deze wettelijke basis beroepen. Ze moet aan drie voorwaarden voldoen:
 
-* het nagestreefde belang moet legitiem zijn, d.w.z. rechtmatig (legaal), duidelijk en nauwkeurig en reëel (niet fictief);&#x20;
-* de Verwerking moet noodzakelijk zijn om het doel te bereiken en daarom het minst ingrijpende middel zijn;&#x20;
-* en ten slotte mag de Verwerking de rechten en vrijheden van de betrokkenen, gelet op hun redelijke verwachtingen, niet te buiten gaan;&#x20;
+* het nagestreefde belang moet gerechtvaardigd zijn, dat wil zeggen rechtmatig, duidelijk en nauwkeurig, en reëel (niet fictief);
+* de verwerking moet noodzakelijk zijn om het doel te bereiken en dus het minst ingrijpende middel zijn;
+* ten slotte mag de verwerking niet zwaarder wegen dan de rechten en vrijheden van de betrokkenen, rekening houdend met hun redelijke verwachtingen.
 
-Er moet een afweging worden gemaakt, bijvoorbeeld aan de hand van een proportionaliteitstoets&#x20;
+Er moet een afweging worden gemaakt, bijvoorbeeld met een evenredigheidstoets.
 
-Je kunt de resultaten van deze test bewaren als een document in stap 11. Je moet ook de legitieme belangen die worden ingeroepen (bijvoorbeeld de beveiliging van het computernetwerk of fraudebestrijding) gedetailleerd beschrijven.
+U kunt de resultaten van deze toets als document bewaren in de sectie **Documentatie** (sectie 11). U moet ook de ingeroepen gerechtvaardigde belangen nader aanduiden (bijvoorbeeld de beveiliging van het computernetwerk of fraudebestrijding).
 
-## De rechtsgrondslag toevoegen aan een doel
+### Andere
 
-In elk doel kun je een rechtsgrondslag uit de bovenstaande 6 toevoegen.
+Alleen de 6 bovenstaande wettelijke bases kunnen worden ingeroepen om een verwerking te rechtvaardigen. Gebruik **Andere** alleen als u nog niet zeker weet welke wettelijke basis van toepassing is.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Wettelijke basis selector</p></figcaption></figure>
+## De wettelijke basis aan een doeleinde koppelen
 
-Nadat je de rechtsgrondslag hebt geselecteerd, kun je een beschrijving toevoegen. Bijvoorbeeld om de legitieme belangen of wettelijke bepaling te specificeren.&#x20;
+Selecteer bij elk doeleinde een van de bovenstaande wettelijke bases in de lijst **Wettelijke basis**. In de lijst staat een beschrijving van elke optie.
 
+<figure><img src="../../../.gitbook/assets/ropa-purposes-3.png" alt="Geopende lijst Wettelijke basis in het doeleindenpaneel met de beschikbare wettelijke bases"><figcaption><p>De wettelijke basis van een doeleinde selecteren</p></figcaption></figure>
 
+Zodra de wettelijke basis is geselecteerd, verschijnt een herinnering aan de voorwaarden ervan en kunt u een beschrijving toevoegen in **Gelieve de keuze van deze grondslag uit te leggen**, bijvoorbeeld om de gerechtvaardigde belangen of de betrokken wettelijke bepaling te vermelden.
 
+{% hint style="info" %}
+Als u [vragenlijsten](../../questionnaires/README.md) gebruikt, stelt Dastra voor een beoordeling aan te maken wanneer een doeleinde berust op een gerechtvaardigd belang (**Evalueer de legitieme belangen (LIA)**) of op toestemming (**Evalueer de juridische basis voor toestemming**).
+{% endhint %}

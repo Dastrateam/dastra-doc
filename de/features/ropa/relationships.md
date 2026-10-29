@@ -1,148 +1,177 @@
 # Beziehungen zwischen Verarbeitungen erstellen
 
-In Dastra haben Sie die Möglichkeit, Beziehungen zwischen Ihren Verarbeitungen zu erstellen, um deren Verwaltung zu erleichtern.
+In Dastra können Sie Beziehungen zwischen Ihren Verarbeitungstätigkeiten erstellen, um sie leichter zu verwalten.
 
-Diese Beziehungen sind zwischen Verarbeitungen möglich, die sich im selben Mandanten befinden.
+Diese Beziehungen sind zwischen Verarbeitungstätigkeiten möglich, die sich im selben Mandanten befinden.
 
-### Warum Beziehungen zwischen Verarbeitungen erstellen?
+## Zweck von Beziehungen zwischen Verarbeitungstätigkeiten
 
-Beziehungen zwischen Verarbeitungen können genutzt werden, um die Verantwortlichkeitsbeziehungen zwischen den verschiedenen verantwortlichen Entitäten darzustellen.
+Mit Beziehungen zwischen Verarbeitungstätigkeiten bilden Sie die Verantwortlichkeitsverhältnisse zwischen den verschiedenen für die Verarbeitung zuständigen Entitäten ab.
 
-Beispielsweise können Sie in einem Unternehmensverbund eine Beziehung zwischen einer Verarbeitung der Muttergesellschaft und den Verarbeitungen der Tochtergesellschaften herstellen. Dies ist häufig bei Verarbeitungen im Bereich der allgemeinen Verwaltung des Konzerns der Fall, wie Personalverwaltung, Buchhaltung, Lieferantenmanagement usw.
+In einer Unternehmensgruppe können Sie zum Beispiel eine von der Muttergesellschaft durchgeführte Verarbeitungstätigkeit mit den Verarbeitungstätigkeiten ihrer Tochtergesellschaften verknüpfen. Das ist häufig bei Verarbeitungstätigkeiten der allgemeinen Verwaltung der Gruppe der Fall, etwa Personalverwaltung, Buchhaltung oder Lieferantenmanagement.
 
-> Eine Muttergesellschaft X führt eine Gehaltsabrechnungsverarbeitung für ihre Tochtergesellschaften Y und Z durch. In der Entität X wird eine Verarbeitung (ST1) "Gehaltsabrechnung" als Auftragsverarbeiter erstellt. Ausgehend von dieser Verarbeitung können wir eine starke Vererbungsbeziehung mit zwei weiteren Verarbeitungen (RT1 und RT2) in Y und Z erstellen, die als Verantwortlicher erstellt werden.
+> Eine Muttergesellschaft X führt die Gehaltsabrechnung im Auftrag ihrer Tochtergesellschaften Y und Z durch. In der Entität X wird die Verarbeitungstätigkeit „Gehaltsabrechnung“ (P1) als Auftragsverarbeiter erstellt. Von P1 aus erstellen Sie eine Beziehung **Strenge Übertragung (starke Vererbung)** zu zwei Verarbeitungstätigkeiten (C1 und C2), die in Y und Z liegen und als Verarbeitungstätigkeiten des Verantwortlichen erstellt wurden.
 >
-> So wird die Aktualisierung der Verarbeitung ST1 automatisch an die Verarbeitungen RT1 und RT2 weitergeleitet.
+> Jede Änderung an P1 wird dann automatisch an C1 und C2 weitergegeben.
 
-### Eine Beziehung hinzufügen
+## Eine Beziehung hinzufügen
 
-Gehen Sie dazu auf ein Verarbeitungsblatt und wählen Sie den Tab "Beziehungen" oben auf dem Blatt aus.
+Klicken Sie im Eintrag einer Verarbeitungstätigkeit in der Symbolleiste oben auf die Schaltfläche **Beziehungen zwischen Verarbeitungen**. Die Schaltfläche zeigt die Anzahl der bestehenden Beziehungen an.
 
-<figure><img src="../../.gitbook/assets/beziehungen1.png" alt=""><figcaption><p>Schaltfläche zur Erstellung von Verarbeitungsbeziehungen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103430.png" alt="Bereich Beziehungen einer Verarbeitungstätigkeit"><figcaption><p>Der Bereich Beziehungen einer Verarbeitungstätigkeit</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/beziehungen2.png" alt=""><figcaption></figcaption></figure>
+Der Bereich listet die bestehenden Beziehungen nach Art gruppiert auf, mit der Organisationseinheit jeder verbundenen Verarbeitungstätigkeit und dem Datum, an dem die Beziehung erstellt wurde. Klicken Sie auf eine Verarbeitungstätigkeit, um sie in einem neuen Tab zu öffnen, oder auf das Papierkorb-Symbol, um die Beziehung zu entfernen.
 
-Wählen Sie dann einen Beziehungstyp aus.
+Um eine Beziehung zu erstellen, klicken Sie auf **Eine Beziehung hinzufügen** und gehen Sie dann so vor:
 
-<figure><img src="../../.gitbook/assets/beziehungen3.png" alt=""><figcaption><p>Erstellung neuer Beziehungen</p></figcaption></figure>
+1. Wählen Sie die **Art der Beziehung**. Darunter erscheint eine Beschreibung der gewählten Art.
+2. Wählen Sie **Bestehende Verarbeitung**, um bereits vorhandene Verarbeitungstätigkeiten zu verknüpfen, oder **Neue Verarbeitung**, um die verbundene Verarbeitungstätigkeit gleichzeitig zu erstellen.
+3. Wählen Sie bei einer bestehenden Verarbeitungstätigkeit ihre **Organisationseinheit** und dann die Verarbeitungstätigkeit unter **Bitte wählen Sie die angehängten Objekte aus.**
+4. Geben Sie bei einer neuen Verarbeitungstätigkeit den **Name der neuen Verarbeitung** ein, aktivieren Sie bei Bedarf **Verarbeitungstätigkeit als Auftragsverarbeiter** und wählen Sie ihre Organisationseinheit.
+5. Klicken Sie auf **Hinzufügen**.
 
-Sie können Beziehungen zu mehreren Verarbeitungen gleichzeitig erstellen. Dazu müssen Sie neue Verarbeitungen erstellen und die betreffenden Organisationseinheiten auswählen.
+<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103745.png" alt="Fenster zum Hinzufügen einer Beziehung"><figcaption><p>Das Fenster zum Hinzufügen einer Beziehung</p></figcaption></figure>
+
+Sie können Beziehungen zu mehreren Verarbeitungstätigkeiten gleichzeitig erstellen:
+
+* Bei **Strenge Übertragung (starke Vererbung)** oder **Transmet (geringe Vererbung)** können Sie mehrere bestehende Verarbeitungstätigkeiten auswählen.
+* Bei **Ist die Muttergesellschaft von**, **Bezieht sich auf**, **Strenge Übertragung (starke Vererbung)** oder **Transmet (geringe Vererbung)** können Sie mit der Option **Neue Verarbeitung** mehrere Organisationseinheiten auswählen: In jeder von ihnen wird eine neue Verarbeitungstätigkeit erstellt.
+
+Es können bis zu 50 Verarbeitungstätigkeiten oder Organisationseinheiten gleichzeitig ausgewählt werden.
 
 {% hint style="info" %}
-Es ist nur möglich, Beziehungen mit Verarbeitungen zu erstellen, die sich im selben Mandanten befinden.
+Beziehungen können nur mit Verarbeitungstätigkeiten erstellt werden, die sich im selben Mandanten befinden.
 {% endhint %}
 
-### Beziehungstypen
+## Arten von Beziehungen
 
 Es gibt zwei Arten von Beziehungen:
 
-1. **Deklarative Beziehungen:** Werden verwendet, um eine einfache Verknüpfung zwischen zwei Verarbeitungen herzustellen (ohne funktionale Abhängigkeit).
-2. **Funktionale Beziehungen:** Ermöglichen die Übertragung oder Vererbung von Feldern von einer Verarbeitung zu einer anderen.
+1. **Deklarative Beziehungen**: Sie stellen eine einfache Verknüpfung zwischen zwei Verarbeitungstätigkeiten her, ohne funktionale Abhängigkeit.
+2. **Funktionale Beziehungen**: Sie übertragen Felder von einer Verarbeitungstätigkeit auf eine andere oder lassen eine Verarbeitungstätigkeit Felder erben.
 
-### Deklarative Beziehungen:
+Die Bezeichnungen der Beziehungsarten stehen so in der Anwendung. Einige lesen sich im Deutschen missverständlich, daher beschreibt jeder Abschnitt, was die Beziehung bedeutet.
 
-#### **Ist Kind von:**
+### Deklarative Beziehungen
 
-Hierarchische Beziehung, die eine strukturierte Lesart der Verarbeitungen ermöglicht, **ohne funktionale Abhängigkeit** zwischen den Feldern.
+#### Ist das Ergebnis von
 
-> Verarbeitung A ist hierarchisch der Verarbeitung B zugeordnet.
+Hierarchische Beziehung, die eine strukturierte Lesart der Verarbeitungstätigkeiten ermöglicht, **ohne funktionale Abhängigkeit** zwischen den Feldern. Die Bezeichnung entspricht der Beziehung „ist untergeordnet“.
 
-#### Ist Elternteil von:
+> Verarbeitungstätigkeit A ist hierarchisch Verarbeitungstätigkeit B zugeordnet.
 
-Hierarchische Beziehung, die eine strukturierte Lesart der Verarbeitungen ermöglicht, **ohne funktionale Abhängigkeit** zwischen den Feldern.
+#### Ist die Muttergesellschaft von
 
-> Verarbeitung A steht hierarchisch über Verarbeitung B.
+Hierarchische Beziehung, die eine strukturierte Lesart der Verarbeitungstätigkeiten ermöglicht, **ohne funktionale Abhängigkeit** zwischen den Feldern.
 
-#### Bezieht sich auf:
+> Verarbeitungstätigkeit A steht hierarchisch über Verarbeitungstätigkeit B.
 
-Einfache logische Verknüpfung zwischen zwei Verarbeitungen, **ohne Abhängigkeit oder funktionale Unterordnung** zwischen den Feldern.
+#### Bezieht sich auf
 
-> Verarbeitung A ist mit Verarbeitung B verknüpft.<br>
+Einfache logische Verknüpfung zwischen zwei Verarbeitungstätigkeiten, **ohne jede Abhängigkeit** zwischen ihren Feldern.
 
-#### Wird kopiert durch:
+> Verarbeitungstätigkeit A steht in Beziehung zu Verarbeitungstätigkeit B.
 
-Diese Beziehung ermöglicht es, die von dieser Verarbeitung duplizierten Elemente nachzuverfolgen. Diese Beziehung wird automatisch beim Duplizieren einer Verarbeitung erstellt.
+#### Kopiert von
 
-> Verarbeitung A ist die Quelle (der Duplizierung) der Verarbeitung B.
+Diese Beziehung hält fest, welche Kopien von dieser Verarbeitungstätigkeit angefertigt wurden. Sie wird automatisch erstellt, wenn Sie bei einer Verarbeitungstätigkeit **Duplizieren** verwenden.
 
-#### Ist eine Kopie von:
+> Verarbeitungstätigkeit A ist die Quelle (der Kopie) von Verarbeitungstätigkeit B.
 
-Diese Beziehung ermöglicht es, die Quelle der Duplizierung der Verarbeitung nachzuverfolgen. Diese Beziehung wird automatisch beim Duplizieren einer Verarbeitung erstellt.
+#### Dies ist eine Kopie von
 
-> Verarbeitung A ist ein Duplikat der Verarbeitung B.
+Diese Beziehung hält fest, von welcher Verarbeitungstätigkeit eine Kopie angefertigt wurde. Sie wird automatisch erstellt, wenn Sie bei einer Verarbeitungstätigkeit **Duplizieren** verwenden.
 
-### **Funktionale Beziehungen**:
+> Verarbeitungstätigkeit A ist eine Kopie von Verarbeitungstätigkeit B.
 
-#### Überträgt strikt (Starke Vererbung):
-
-Die Felder der Zielverarbeitung **A** ersetzen vollständig die der Ursprungsverarbeitung **B.**
-
-{% hint style="warning" %}
-mit Ausnahme der Felder des Tabs **1 "Allgemein"** und der der Verarbeitung zugeordneten Dokumente im Tab **11 "Dokumentation"**.
+{% hint style="info" %}
+**Kopiert von** und **Dies ist eine Kopie von** werden nur automatisch erstellt: Sie lassen sich im Fenster **Eine Beziehung hinzufügen** nicht auswählen.
 {% endhint %}
 
-* Strikte Unterordnung zwischen A und B.
-* Die vorhandenen Felder in B werden bei der Erstellung der Verknüpfung gelöscht.
-* Die von A geerbten Felder sind **weder bearbeitbar noch löschbar**, und es können keine neuen Felder in B hinzugefügt werden.
-* Bei Löschung der Verknüpfung werden die ursprünglichen Felder von B wiederhergestellt (wobei die Referenzsystem-Elemente erhalten bleiben).
+### Funktionale Beziehungen
 
-#### Erbt strikt von (Starke Vererbung):
+Funktionale Beziehungen übertragen Felder von einer Verarbeitungstätigkeit auf eine andere oder lassen eine Verarbeitungstätigkeit Felder erben.
 
-Die Felder der Zielverarbeitung **B** ersetzen vollständig die der Ursprungsverarbeitung **A**.
+#### Strenge Übertragung (starke Vererbung)
+
+Die Quell-Verarbeitungstätigkeit **A** überträgt ihre Felder auf die abhängige Verarbeitungstätigkeit **B**.
 
 {% hint style="warning" %}
-mit Ausnahme der Felder des Tabs **1 "Allgemein"** und der der Verarbeitung zugeordneten Dokumente im Tab **11 "Dokumentation"**.
+Ausgenommen sind die Felder des Tabs 1 **Allgemeines** und die in Tab 11 **Dokumentation** hochgeladenen Dokumente der Verarbeitungstätigkeit.
 {% endhint %}
 
-* Strikte Unterordnung zwischen B und A.
-* Die vorhandenen Felder in A werden bei der Erstellung der Verknüpfung gelöscht.
-* Die von B geerbten Felder sind **weder bearbeitbar noch löschbar**, und es können keine neuen Felder in A hinzugefügt werden.
-* Bei Löschung der Verknüpfung werden die ursprünglichen Felder von B wiederhergestellt.
+Damit entsteht eine strenge Beziehung zwischen **A (Quelle)** und **B (abhängig)**:
+
+* Die bereits vorhandenen Felder von **B** werden beim Erstellen der Beziehung gelöscht.
+* Die von **A** geerbten Felder können in **B** weder geändert noch gelöscht werden, und in **B** kann kein neues Feld hinzugefügt werden.
+* Jede Änderung in **A** wird automatisch in **B** übernommen.
+
+Wenn Sie die Beziehung entfernen, sind die geerbten Felder wieder bearbeitbar, und die ursprünglichen Felder von **B** werden wiederhergestellt (die Elemente Ihrer Referenzdaten bleiben erhalten).
+
+#### Strenge Vererbung (starke Vererbung)
+
+Die Verarbeitungstätigkeit **A** hängt von der Verarbeitungstätigkeit **B** ab und erbt ihre Felder.
+
+{% hint style="warning" %}
+Ausgenommen sind die Felder des Tabs 1 **Allgemeines** und die in Tab 11 **Dokumentation** hochgeladenen Dokumente der Verarbeitungstätigkeit.
+{% endhint %}
+
+Damit entsteht eine strenge Beziehung zwischen **B (Quelle)** und **A (abhängig)**:
+
+* Die bereits vorhandenen Felder von **A** werden beim Erstellen der Beziehung gelöscht.
+* Die von **B** geerbten Felder können in **A** weder geändert noch gelöscht werden, und in **A** kann kein neues Feld hinzugefügt werden.
+* Jede Änderung in **B** wird automatisch in **A** übernommen.
+
+Wenn Sie die Beziehung entfernen, sind die geerbten Felder wieder bearbeitbar, und die ursprünglichen Felder von **A** werden wiederhergestellt (die Elemente Ihrer Referenzdaten bleiben erhalten).
+
+Eine Verarbeitungstätigkeit, die in strenger Vererbung von einer anderen abhängt, zeigt ein Banner **Erbe der Datenverarbeitung** mit einem Link zu ihrer Quelle an, und ihre geerbten Tabs sind gesperrt.
 
 {% hint style="danger" %}
-Eine Verarbeitung kann nicht gleichzeitig von mehreren Verarbeitungen erben.
+Eine Verarbeitungstätigkeit kann nur von **einer Quell-Verarbeitungstätigkeit gleichzeitig** abhängen.
 {% endhint %}
 
-#### Überträgt (Schwache Vererbung):
+#### Transmet (geringe Vererbung)
 
-Die Ursprungsverarbeitung **A** überträgt automatisch ihre Felder an die Zielverarbeitung **B**.
+Die Quell-Verarbeitungstätigkeit **A** überträgt ihre Felder automatisch auf die abhängige Verarbeitungstätigkeit **B**.
 
 {% hint style="warning" %}
-mit Ausnahme der Felder des Tabs **1 "Allgemein"** und der der Verarbeitung zugeordneten Dokumente im Tab **11 "Dokumentation"**.
+Ausgenommen sind die Felder des Tabs 1 **Allgemeines** und die in Tab 11 **Dokumentation** hochgeladenen Dokumente der Verarbeitungstätigkeit.
 {% endhint %}
 
-* **A** überträgt seine Felder an **B**.
-* Die geerbten Felder sind in B nicht bearbeitbar.
-* B kann eigene Felder hinzufügen, bearbeiten oder löschen.
-* Jede Änderung der Felder von A wird automatisch in B übernommen.
-* Bei Löschung der Verknüpfung werden die geerbten Felder wieder bearbeitbar.
-* Die vorhandenen Felder in B bleiben erhalten.
+Damit entsteht eine Beziehung mit weicher Vererbung zwischen **A (Quelle)** und **B (abhängig)**:
 
-#### Erbt von (Schwache Vererbung):
+* Die von **A** geerbten Felder können in **B** nicht geändert werden.
+* **B** kann eigene Felder hinzufügen, ändern oder löschen.
+* Jede Änderung in **A** wird automatisch in **B** übernommen.
 
-Die Zielverarbeitung **B** erbt automatisch die Felder der Ursprungsverarbeitung **A**.
+Wenn Sie die Beziehung entfernen, sind die geerbten Felder wieder bearbeitbar, und die vorhandenen Felder von **B** bleiben erhalten.
+
+#### Erbschaft (geringe Erbschaft)
+
+Die Verarbeitungstätigkeit **A** hängt von der Verarbeitungstätigkeit **B** ab und erbt ihre Felder automatisch.
 
 {% hint style="warning" %}
-mit Ausnahme der Felder des Tabs **1 "Allgemein"** und der der Verarbeitung zugeordneten Dokumente im Tab **11 "Dokumentation"**.
+Ausgenommen sind die Felder des Tabs 1 **Allgemeines** und die in Tab 11 **Dokumentation** hochgeladenen Dokumente der Verarbeitungstätigkeit.
 {% endhint %}
 
-* **B** erbt die Felder von **A**.
-* Die geerbten Felder sind in B nicht bearbeitbar.
-* B kann eigene Felder hinzufügen, bearbeiten oder löschen.
-* Jede Änderung der Felder von A wird automatisch in B übernommen.
-* Bei Löschung der Verknüpfung werden die geerbten Felder wieder bearbeitbar.
-* Die vorhandenen Felder in B bleiben erhalten.
+Damit entsteht eine Beziehung mit weicher Vererbung zwischen **B (Quelle)** und **A (abhängig)**:
+
+* Die von **B** geerbten Felder können in **A** nicht geändert werden.
+* **A** kann eigene Felder hinzufügen, ändern oder löschen.
+* Jede Änderung in **B** wird automatisch in **A** übernommen.
+
+Wenn Sie die Beziehung entfernen, sind die geerbten Felder wieder bearbeitbar, und die vorhandenen Felder von **A** bleiben erhalten.
 
 {% hint style="danger" %}
-Eine Verarbeitung kann nicht gleichzeitig von mehreren Verarbeitungen erben.
+Eine Verarbeitungstätigkeit kann nur von **einer Quell-Verarbeitungstätigkeit gleichzeitig** abhängen.
 {% endhint %}
 
-### Übersichtstabelle der Beziehungen:
+## Übersicht der Beziehungen
 
-| **Beziehungstyp**                                                                                           | **Tab 1 – "Allgemein"** | **Tabs 2 bis 10 (Fachfelder)** | **Hochgeladene Dokumentation** im Tab 11 – "**Dokumentation"** | **Bearbeitbarkeit der eigenen Felder der Zielverarbeitung** |
-| ----------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------- |
-| **Hierarchische / logische Beziehungen** (Elternteil / Kind / Bezieht sich auf / Kopiert durch / Kopie von) | Ohne Auswirkung         | Ohne Auswirkung                | Ohne Auswirkung                                                | Ohne Auswirkung                                             |
-| **Überträgt strikt (Starke Vererbung)**                                                                     | ❌ Nicht übertragen      | ✅ Übertragen                   | ❌ Nicht übertragen                                             | ❌ Hinzufügen / Bearbeiten / Löschen nicht möglich           |
-| **Erbt strikt von (Starke Vererbung)**                                                                      | ❌ Nicht geerbt          | ✅ Geerbt                       | ❌ Nicht geerbt                                                 | ❌ Hinzufügen / Bearbeiten / Löschen nicht möglich           |
-| **Überträgt (Schwache Vererbung)**                                                                          | ❌ Nicht übertragen      | ✅ Übertragen                   | ❌ Nicht übertragen                                             | ✅ Hinzufügen / Bearbeiten / Löschen möglich                 |
-| **Erbt von (Schwache Vererbung)**                                                                           | ❌ Nicht geerbt          | ✅ Geerbt                       | ❌ Nicht geerbt                                                 | ✅ Hinzufügen / Bearbeiten / Löschen möglich                 |
+| Art der Beziehung | Tab 1, Allgemeines | Tabs 2 bis 10 (fachliche Felder) | In Tab 11 (Dokumentation) hochgeladene Dokumente | Eigene Felder der abhängigen Verarbeitungstätigkeit |
+| --- | --- | --- | --- | --- |
+| **Deklarative Beziehungen** (Ist das Ergebnis von / Ist die Muttergesellschaft von / Bezieht sich auf / Kopiert von / Dies ist eine Kopie von) | Keine Auswirkung | Keine Auswirkung | Keine Auswirkung | Keine Auswirkung |
+| **Strenge Übertragung (starke Vererbung)** | Nicht übertragen | Übertragen | Nicht übertragen | Können nicht hinzugefügt, geändert oder gelöscht werden |
+| **Strenge Vererbung (starke Vererbung)** | Nicht geerbt | Geerbt | Nicht geerbt | Können nicht hinzugefügt, geändert oder gelöscht werden |
+| **Transmet (geringe Vererbung)** | Nicht übertragen | Übertragen | Nicht übertragen | Können hinzugefügt, geändert oder gelöscht werden |
+| **Erbschaft (geringe Erbschaft)** | Nicht geerbt | Geerbt | Nicht geerbt | Können hinzugefügt, geändert oder gelöscht werden |

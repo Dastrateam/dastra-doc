@@ -1,64 +1,56 @@
-# Gebruik een sjabloon voor Verwerking
+# Een sjabloon voor verwerkingsactiviteiten gebruiken
 
-Met Dastra kunt u uw register van de verwerkingsactiviteiten maken met behulp van sjablonen die door onze experts zijn ontworpen;
+Met Dastra stelt u uw verwerkingsregister samen op basis van sjablonen die door onze experts zijn ontworpen.
 
-Verwerkingssjablonen helpen u tijd te besparen bij het invoeren van veelvoorkomende behandelingen &#x20;
+Sjablonen voor verwerkingsactiviteiten besparen tijd bij het invoeren van veelvoorkomende verwerkingsactiviteiten.
 
+## Een verwerkingsactiviteit aanmaken op basis van een sjabloon
 
+Klik op **Maak een gegevensverwerking**
 
-## Verwerking van een sjabloon maken
+<figure><img src="../../.gitbook/assets/ropa-templates-1.png" alt="Knop Maak een gegevensverwerking in het verwerkingsregister"><figcaption><p>De knop Maak een gegevensverwerking</p></figcaption></figure>
 
-Ga naar "Gegevensverwerking aanmaken"&#x20;
+en selecteer **Ingebouwde sjabloon**.
 
-<figure><img src="../../.gitbook/assets/image (12) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-2.png" alt="Venster voor het aanmaken van een verwerkingsactiviteit met de optie Ingebouwde sjabloon"><figcaption><p>De optie Ingebouwde sjabloon</p></figcaption></figure>
 
-en selecteer "voorgedefinieerd sjabloon
+U kunt vervolgens met de zoekbalk zoeken naar sjablonen voor verwerkingsactiviteiten.
 
+<figure><img src="../../.gitbook/assets/ropa-templates-3.png" alt="Sjabloonbrowser met zoekbalk en filters"><figcaption><p>Zoeken in de sjablonenbibliotheek</p></figcaption></figure>
 
+Met verschillende filters vindt u het juiste sjabloon:
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+* **Gegevensbron van de bibliotheek** laat u de te doorzoeken bibliotheek kiezen: de bibliotheek **Sjablonen gemaakt door Dastra**, of de bibliotheek van uw partner als uw organisatie er een heeft.
+* Met de taalkeuze ziet u de sjablonen van de standaardbibliotheek van Dastra in andere talen.
+* Met **Labels** filtert u de sjablonen per sector.
+* **Status** en **Sorteer op** (**De nieuwste**, **Meest populair**, **Alfabetische volgorde**) verfijnen en ordenen de resultaten.
 
-Dan kun je naar verwerkingssjablonen zoeken met de zoekbalk.
+U kunt de resultaten weergeven als lijst of als kaarten.
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+Om de inhoud van een sjabloon te bekijken voordat u het gebruikt, klikt u op de knop **Overzicht** van het sjabloon.
 
-Met de **tags** kun je modellen filteren op activiteitensector &#x20;
+<figure><img src="../../.gitbook/assets/ropa-templates-4.png" alt="Sjabloon met de knop Overzicht"><figcaption><p>Een sjabloon bekijken voordat u het gebruikt</p></figcaption></figure>
 
-Met de **taal** kunt u behandelingsmodellen in andere talen bekijken &#x20;
+Klik op het sjabloon dat u wilt gebruiken, controleer de **Naam gegevensverwerking**, kies de **Organisatie-eenheid** en klik op **Maak een gegevensverwerking**. U gaat naar de nieuwe verwerkingsactiviteit, waar u die kunt aanpassen aan uw organisatie.
 
-Om de inhoud van het sjabloon** te bekijken voordat u het importeert, kunt u op het oog rechtsboven in het sjabloon klikken.
+## Een sjabloon voor een verwerkingsactiviteit voorstellen
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+Levert uw zoekopdracht geen sjabloon op uit de standaardbibliotheek van Dastra, dan kunt u op **Vraag om een model** klikken om het aan ons team voor te stellen: vul de **Gewenste sjabloonnaam** in, voeg eventueel **Aanvullende informatie** toe en klik op **Verzenden**. U kunt ook op **Probeer het eens met AI** klikken om de verwerkingsactiviteit te laten genereren door onze AI-assistent.
 
-## Verwerkingsmodel voorstellen
+<figure><img src="../../.gitbook/assets/ropa-templates-5.png" alt="Leeg zoekresultaat met de knoppen Vraag om een model en Probeer het eens met AI"><figcaption><p>Een nieuw sjabloon voorstellen</p></figcaption></figure>
 
-Als je geen sjabloon kunt vinden, kun je er een aan ons voorstellen.&#x20;
+## Meerdere verwerkingsactiviteiten tegelijk aanmaken op basis van sjablonen
 
-<figure><img src="../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+U kunt meerdere sjablonen voor verwerkingsactiviteiten selecteren en ze via de bibliotheek in één keer importeren.
 
-## Sjablonen voor massaverwerking maken
+Open het menu van de knop **Maak een gegevensverwerking** (de pijl rechts ervan) en kies **Maak vanuit de bibliotheek**.
 
-Je kunt meerdere behandelingssjablonen selecteren en ze allemaal in één keer importeren via de bibliotheek.
+<figure><img src="../../.gitbook/assets/ropa-templates-6.png" alt="Menu van Maak een gegevensverwerking met de optie Maak vanuit de bibliotheek"><figcaption><p>De optie Maak vanuit de bibliotheek</p></figcaption></figure>
 
-Ga naar de opties voor de knop "Gegevensverwerking maken" en vervolgens naar "Maken vanuit bibliotheek".
+Kies in het paneel dat opent de bron bij **Gegevensbron van de bibliotheek** en de organisatie-eenheid bij **Kies de organisatie-eenheid van bestemming**, vink een of meer sjablonen aan en klik op **Toevoegen**.
 
-<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-2023-01-30-171155.png" alt="Paneel Maak vanuit de bibliotheek met meerdere geselecteerde sjablonen"><figcaption><p>Meerdere sjablonen selecteren in de bibliotheek</p></figcaption></figure>
 
+Met de knop **Details** bekijkt u een sjabloon vooraf.
 
-
-
-
-Selecteer een of meer sjablonen, kies een organisatorische eenheid en klik op "toevoegen".
-
-<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Gebruik de knop "**Details**" om een voorbeeld van de sjabloon te bekijken &#x20;
-
-Uw sjablonen worden dan op de achtergrond geïmporteerd
-
-
-
-
-
-
-
+Uw verwerkingsactiviteiten worden daarna op de achtergrond aangemaakt.

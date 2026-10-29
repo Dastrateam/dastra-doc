@@ -1,86 +1,106 @@
 ---
-description: Leer hoe u de optie verwerking frisheid kunt activeren en gebruiken
+description: Leer hoe u de optie voor de frisheid van verwerkingsactiviteiten activeert en gebruikt.
 ---
 
-# Verwerking frisheid
+# Frisheid van verwerkingsactiviteiten
 
-### Wat is de indicator frisheid van een behandeling?
+De frisheid van een verwerkingsactiviteit geeft aan wanneer ze voor het laatst is beoordeeld. Zodra regelmatige beoordelingen zijn ingeschakeld, legt elke beoordeling een volgende beoordelingsdatum vast en neemt de frisheid af naarmate die datum nadert. Zo controleert u of de informatie in uw verwerkingsregister regelmatig wordt beoordeeld en actueel blijft.
 
-De frisheid van een behandeling geeft aan wanneer een behandeling voor het laatst is gecontroleerd. De frisheid gaat achteruit naarmate de vervaldatum van de behandeling nadert. Deze functie is een eenvoudige en leuke manier om ervoor te zorgen dat de informatie in uw register voor verwerkingen regelmatig wordt gecontroleerd.&#x20;
+{% hint style="info" %}
+Regelmatige beoordelingen zijn ook beschikbaar voor andere items, zoals stakeholders, activa, contracten of AI-systemen. Het gemeenschappelijke mechanisme staat beschreven in [Terugkerende beoordeling (frisheid)](../regular-review.md). Deze pagina beschrijft hoe het werkt voor verwerkingsactiviteiten.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>Schematisch diagram van hoe de indicator voor de Frisheid van de behandeling werkt</p></figcaption></figure>
+## De optie voor de frisheid van verwerkingsactiviteiten activeren
 
-### Hoe activeer ik de frisheidsindicator van de behandeling?
+De frisheid van verwerkingsactiviteiten is optioneel en standaard uitgeschakeld. U stelt ze in voor de hele werkruimte, in de instellingen van de werkruimte, onder **Terugkerende beoordelingen**.
 
-Verwerking is optioneel en is standaard uitgeschakeld &#x20;
+Om deze instelling vanuit uw register te openen, klikt u op de pijl naast de knop **Maak een gegevensverwerking** en daarna op **Activeer regelmatige beordeling van verwerkingen (frisheid)**. Het menu-item toont ook of de optie momenteel **Actief** of **Uitgeschakeld** is.
 
-Om de optie te activeren, gaat u naar uw verwerkingsregister, klikt u op de actiekiezer voor de knop "Gegevensverwerking aanmaken" en vervolgens op "Verwerkingsfrisheid activeren" &#x20;
+<figure><img src="../../.gitbook/assets/ropa-freshness-1.png" alt="Optie voor regelmatige beoordeling in het menu van Maak een gegevensverwerking"><figcaption><p>De optie voor regelmatige beoordeling in het menu van Maak een gegevensverwerking</p></figcaption></figure>
 
-Deze actie is voorbehouden aan beheerders van je werkruimte.
+In de instellingen **Terugkerende beoordelingen**:
 
-<figure><img src="../../.gitbook/assets/freshness-activate.JPG" alt=""><figcaption></figcaption></figure>
+1. Selecteer **Gegevensverwerking** in de keuzelijst met itemtypen.
+2. Schakel **Schakel regelmatige beoordelingen in** in.
+3. Voer bij **Selecteer het gewenste interval tussen elke beoordeling** het interval tussen twee beoordelingen in, in jaren, maanden of dagen.
+4. Klik op **Opslaan**.
 
-Het volgende venster verschijnt, waarin je de optie hebt om de **vervaldatum** voor je Verwerkingen in te stellen. De frisheid van een behandeling komt overeen met het aantal dagen tussen de laatste datum waarop de behandeling als vers werd gemarkeerd en de vervaldatum &#x20 van de behandeling;
+Alleen gebruikers met het recht **Geavanceerde configuratie** kunnen deze instelling wijzigen.
 
-De vervaldatum is een datum in de toekomst berekend vanaf de laatste datum waarop de Verwerking als vers werd gemarkeerd, waaraan we **het vervalinterval** toevoegen. Houd er rekening mee dat deze vervaldatum hetzelfde is voor alle Verwerkingen in uw register &#x20;
+<figure><img src="../../.gitbook/assets/ropa-freshness-2.png" alt="Instellingen voor regelmatige beoordelingen van verwerkingsactiviteiten"><figcaption><p>De instellingen voor regelmatige beoordelingen van verwerkingsactiviteiten</p></figcaption></figure>
 
-Met een tweede optie kunt u alle behandelingen in uw register als vers markeren wanneer de optie is geactiveerd (hiermee start u onmiddellijk een frisheidscyclus voor alle behandelingen in het register).
+Het interval geldt voor alle verwerkingsactiviteiten van de werkruimte. De volgende beoordelingsdatum van een verwerkingsactiviteit is de datum van haar laatste beoordeling plus dit interval, tenzij tijdens de beoordeling een specifieke datum is gekozen (zie [Een verwerkingsactiviteit beoordelen](#een-verwerkingsactiviteit-beoordelen)).
 
-<figure><img src="../../.gitbook/assets/freshness-activate-modal.JPG" alt=""><figcaption></figcaption></figure>
+Wanneer u een nieuw interval opslaat, vraagt Dastra of het moet gelden voor de reeds geregistreerde beoordelingen:
 
-Voorbeeld: Het is 04/07/2023, ik activeer de frisheid optie in mijn register en stel een vervalinterval van 1 maand in. Ik vink de optie "markeer al uw Verwerkingen als vers op deze dag" aan en valideer. De vervaldatum voor mijn Verwerkingen wordt berekend als 04/08/2023 (laatste datum waarop mijn Verwerkingen als vers werden gemarkeerd, 04/07/2023, waarbij we het vervalinterval, 1 maand, optellen). Ik maak opnieuw verbinding op 15/07/2023 en mijn behandelingen hebben nog 20 dagen frisheid over (verschil tussen de vervaldatum en de datum van vandaag);
+* **Toepassen op alle bestaande beoordelingen**: de reeds geplande beoordelingsdatums worden herberekend met het nieuwe interval, waarbij ze worden overschreven;
+* **Alleen toepassen op de volgende beoordelingen**: de reeds geplande beoordelingsdatums blijven behouden en het nieuwe interval wordt gebruikt vanaf de volgende beoordeling.
 
+<figure><img src="../../.gitbook/assets/ropa-freshness-3.png" alt="Bevestiging voor het toepassen van het nieuwe interval"><figcaption><p>Kies of het nieuwe interval geldt voor bestaande beoordelingen</p></figcaption></figure>
 
+{% hint style="info" %}
+Voorbeeld: u stelt een interval van 1 jaar in. Een verwerkingsactiviteit die op 15 januari 2026 is beoordeeld, heeft als volgende beoordelingsdatum 15 januari 2027. Ze wordt het grootste deel van het jaar weergegeven als **Fris**, tijdens de laatste 10% van het interval (iets meer dan een maand) als **binnenkort**, en als **Verouderd** zodra haar volgende beoordelingsdatum is verstreken, tot ze opnieuw wordt beoordeeld.
+{% endhint %}
 
-### De frisheidsoptie voor verwerkingen uitschakelen
+## De optie voor de frisheid van verwerkingsactiviteiten uitschakelen
 
-Om de optie te deactiveren, gaat u naar uw verwerkingsregister, klikt u op de actiekeuzeknop voor "Een gegevensverwerking aanmaken" en vervolgens op "Deactiveer de optie frisheid van de gegevensverwerking".
+Om de optie te deactiveren, gaat u terug naar de instellingen **Terugkerende beoordelingen**, selecteert u **Gegevensverwerking**, schakelt u **Schakel regelmatige beoordelingen in** uit en klikt u op **Opslaan**.
 
-Deze actie is voorbehouden aan uw werkruimtebeheerders.
+De frisheidsindicatoren worden dan niet meer weergegeven. Elke verwerkingsactiviteit behoudt haar beoordelingsgeschiedenis en haar laatste beoordelingsdatum, die opnieuw worden gebruikt als u de optie later weer activeert.
 
-Elke Verwerking behoudt de laatste datum waarop deze als vers werd gemarkeerd als je besluit de optie in de toekomst opnieuw in te schakelen.
+## Frisheidsindicatoren
 
-<figure><img src="../../.gitbook/assets/freshness-disablemodal.JPG" alt=""><figcaption></figcaption></figure>
+Frisheid wordt alleen weergegeven voor gepubliceerde verwerkingsactiviteiten die minstens één keer zijn beoordeeld. Een verwerkingsactiviteit kan zich in een van de volgende toestanden bevinden:
 
-### frisheidsindicatoren
+| Toestand                  | Betekenis                                                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Fris (groen)              | De verwerkingsactiviteit is onlangs beoordeeld en vraagt geen onmiddellijke aandacht.                          |
+| binnenkort (oranje)       | De laatste 10% van het interval tussen twee beoordelingen is begonnen: de beoordeling moet worden gepland.     |
+| Verouderd (rood)          | De volgende beoordelingsdatum is verstreken: de verwerkingsactiviteit voldoet niet meer aan het beoordelingsbeleid. |
+| Beordeling in wacht       | De verwerkingsactiviteit is gepubliceerd maar nooit beoordeeld.                                                |
 
-Zodra de optie is geactiveerd, vind je op verschillende plaatsen frisheidsindicatoren voor je Verwerkingen&#x20;
+Een verwerkingsactiviteit die nog een concept is, wordt in de lijst weergegeven als **niet gepubliceerd** en in haar dossier als **In afwachting van publicatie**.
 
-Houd er rekening mee dat de frisheid alleen wordt weergegeven voor **gepubliceerde behandelingen** die ten minste **één keer als vers** zijn gemarkeerd (wanneer de optie is geactiveerd via de selector "Markeer al uw behandelingen als vers deze dag" of handmatig op een behandelingsrecord).
+### In het dossier van de verwerkingsactiviteit
 
-#### In het rechtermenu van uw Verwerking&#x20;
+Op een breed scherm staat de frisheidsindicator bovenaan het rechterpaneel van het dossier van de verwerkingsactiviteit. Hij toont de balk **Frisheid**, die korter wordt naarmate de volgende beoordelingsdatum nadert, de toestand en haar kleur, een link **Beoordeling** en het aantal resterende of te late dagen.
 
-U vindt de frisheidsindicator rechtsboven in uw dossier (als de behandeling ten minste één keer als vers is gepubliceerd en gemarkeerd).
+Op een kleiner scherm is het rechterpaneel verborgen: de toestand (bijvoorbeeld **Fris**) wordt weergegeven in de kop van het dossier, naast de indicatoren **Voortgang**, **Kwaliteit** en **Gevoeligheid**. Klik erop om het venster **Beoordeling** te openen.
 
-Deze indicator bestaat uit een label met de waarden "Vers", "Relatief vers" en "Verlopen", een kleur (respectievelijk richting, geel, rood), een voortgangsbalk die afneemt naarmate de vervaldatum nadert, een knop om de Verwerking als vers te markeren en het aantal resterende dagen of te laat ten opzichte van de vervaldatum.&#x20;
+<figure><img src="../../.gitbook/assets/ropa-freshness-5.png" alt="Frisheidsindicator in de kop van een verwerkingsactiviteit"><figcaption><p>Op een kleiner scherm staat de frisheidsindicator in de kop van het dossier</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+### In de lijst van uw register
 
+De kolom **Frisheid** toont de frisheidstoestand van elke verwerkingsactiviteit en de datum van haar laatste beoordeling. Beweeg de muisaanwijzer over de toestand om het aantal resterende of te late dagen te zien. Deze kolom wordt aan uw lijstweergave toegevoegd wanneer u de optie activeert; u kunt ze ook op elk moment toevoegen aan de weergegeven kolommen.
 
+<figure><img src="../../.gitbook/assets/processing-list-freshness-column.png" alt="Kolom met de laatste beoordelingsdatum in de lijst van het register"><figcaption><p>De kolom met de laatste beoordelingsdatum</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (269).png" alt=""><figcaption><p>In mobiele weergave vind je deze indicator ook in de navigatiebalk boven aan je Verwerking</p></figcaption></figure>
+U kunt ook de kolom **Voorlopige beoordelingsdatum** weergeven, die de volgende geregistreerde beoordelingsdatum van elke verwerkingsactiviteit toont, en uw register filteren met het filter **Frisheid** (beschikbaar onder **Filters**), met de waarden **Vergoedingen** (Fris), **In afwachting** (gepubliceerd maar nooit beoordeeld) of **Verouderd**.
 
-<figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption><p>Voorbeeld van verlopen Verwerking</p></figcaption></figure>
+## Een verwerkingsactiviteit beoordelen
 
-#### In de frisheidskolom van uw Verwerkingsregister
+U kunt een verwerkingsactiviteit op elk moment beoordelen, zonder te wachten op haar volgende beoordelingsdatum. Voor beoordelen is schrijftoegang tot het verwerkingsregister vereist. Open het venster **Beoordeling**:
 
-Als u de kolom frisheid weergeeft in de lijstweergave van uw behandelingsregister, kunt u de indicator vinden voor elke Verwerking die voldoet aan de weergavevoorwaarden (gepubliceerde Verwerking met ten minste één datum waarop deze als vers is geïdentificeerd)\.
+* vanuit het dossier van de verwerkingsactiviteit: klik op de frisheidsindicator, op de link **Beoordeling** van het rechterpaneel, of op **Beoordeling** in het menu naast de knop **Opslaan**;
+* vanuit de lijst: klik op de cel van de kolom **Frisheid**.
 
+Om meerdere verwerkingsactiviteiten tegelijk te beoordelen, selecteert u ze in de lijst en kiest u **Beoordeling** bij **Kies een bulkactie**.
 
-<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption><p>frisheidskolom in een register van de verwerkingsactiviteiten waarbij de optie Verversing actief is</p></figcaption></figure>.
+<figure><img src="../../.gitbook/assets/ropa-freshness-7.png" alt="Het venster Beoordeling"><figcaption><p>Het venster Beoordeling</p></figcaption></figure>
 
-### Verwerking vernieuwen
+Vul op het tabblad **Nieuwe recensie** in:
 
-U kunt op elk moment besluiten om een Verwerking te verversen, zonder dat u op de vervaldatum hoeft te wachten. Klik hiervoor op "als vers markeren" om het venster voor het verversen van een behandeling weer te geven (in mobiele weergave kan dit venster worden geopend door op het bladverversingspictogram te klikken) :
+* **Recensent** (verplicht): de gebruiker die de beoordeling heeft uitgevoerd, standaard uzelf;
+* **Beoordelingsdatum** (verplicht): standaard vandaag;
+* **Beschrijving van de versie:** (optioneel): een korte beschrijving van wat is gecontroleerd of gewijzigd;
+* **Datum voor volgende beoordeling**: berekend op basis van de beoordelingsdatum en het interval dat voor de werkruimte is ingesteld. Om een specifieke datum toe te passen op deze verwerkingsactiviteit, schakelt u **De volgende beoordelingsdatum wijzigen** in en selecteert u een nieuwe datum (op zijn vroegst de volgende dag).
 
-<figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption><p>venster voor het verversen van een behandeling</p></figcaption></figure>
+Klik op **Beoordeling** om op te slaan. Er begint een nieuwe frisheidscyclus vanaf de beoordelingsdatum tot de volgende beoordelingsdatum.
 
-Door de Verwerking als vers te markeren, start je een frisheidscyclus vanaf de datum van vandaag tot de volgende vervaldatum. De vervaldatum wordt standaard berekend volgens het frisheidsbeleid van je werkruimte (frisheidsinterval dat wordt toegepast wanneer de optie Verwerking vers is geactiveerd). Je kunt besluiten om deze standaarddatum te negeren en een specifieke vervaldatum toe te passen op deze Verwerking door de optie "Vervaldatum wijzigen" aan te vinken en een nieuwe datum te selecteren (de vervaldatum moet minstens D+1 zijn).
+Wanneer het venster voor één verwerkingsactiviteit is geopend, toont het tabblad **Oude recensies** haar eerdere beoordelingen. Dit tabblad biedt ook de knop **Delete all reviews**, waarmee u de beoordelingsgeschiedenis wist: na bevestiging worden de laatste en de volgende beoordelingsdatum gewist en wordt de frisheidsindicator niet meer weergegeven. Deze actie kan niet ongedaan worden gemaakt.
 
-### Belangrijke informatie over hoe frisheid werkt
+## Belangrijke informatie over de werking van frisheid
 
-Houd er rekening mee dat we de datum waarop een behandelingsrecord wordt bijgewerkt (bijvoorbeeld wanneer de record wordt opgeslagen) onafhankelijk Verwerken van de datum waarop een behandeling als vers werd geïdentificeerd. Daarom moet u op "als vers markeren" klikken om de frisheidsdatum van een Verwerking (opnieuw) te initialiseren.
+Het opslaan van een verwerkingsactiviteit telt niet als beoordeling: de datum van de laatste beoordeling staat los van de datum waarop het dossier voor het laatst is bijgewerkt. Om de frisheidscyclus van een verwerkingsactiviteit te (her)starten, moet u ze beoordelen.
 
-### Meldingen
-
-De eigenaar van een behandeling die verouderd is, ontvangt een waarschuwingse-mail om hem eraan te herinneren dat een van zijn Verwerkingen al lang niet meer is bekeken en dat het tijd is om hem te verversen.
+Een verwerkingsactiviteit verplaatsen naar de laatste stap van haar workflow kan ook een beoordeling registreren: het venster voor de stapwijziging toont dan een schakelaar **Beoordeling**, die standaard is ingeschakeld.

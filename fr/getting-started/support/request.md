@@ -4,53 +4,58 @@ description: Apprenez à faire une demande de support dans Dastra.
 
 # Demande de support
 
-Parfois, il est possible que le problème auquel vous êtes confronté ne puisse être résolu à travers cette documentation, l'assistant dastronaute ou l'aide en ligne.
+Parfois, le problème auquel vous êtes confronté ne peut pas être résolu à travers cette documentation, le chat ou l'aide en ligne.
 
-Dans ce cas, Dastra vous donne la possibilité de nous contacter directement depuis l'application, soit à travers **le chat** en bas à droite de l'écran pour poser **des questions fonctionnelles directement à votre Privacy Success Manager dédié**, soit en accédant directement au questionnaire de **demande de support** en haut à droite de l'écran **pour les problèmes techniques** :\
-<br>
+Dans ce cas, vous pouvez contacter Dastra directement depuis l'application : par **le chat**, en bas à droite de l'écran, pour poser **des questions fonctionnelles à votre Privacy Success Manager dédié**, ou par le formulaire de **demande de support**, en haut à droite de l'écran, **pour les problèmes techniques**.
 
-<figure><img src="../../.gitbook/assets/support-chat-button.png" alt=""><figcaption><p>Le bouton chat en bas à droite de l'écran</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-support-1.png" alt="Le bouton de chat en bas à droite de l'écran"><figcaption><p>Le bouton de chat en bas à droite de l'écran</p></figcaption></figure>
 
-![Le bouton support en haut à droite de l'écran](../../.gitbook/assets/support-contact-icon.png)
+<figure><img src="../../.gitbook/assets/getting-started-support-2.png" alt="Le bouton Contacter le support dans la barre du haut"><figcaption><p>Le bouton Contacter le support en haut à droite de l'écran</p></figcaption></figure>
 
 {% hint style="info" %}
-Pour accéder directement au formulaire de demande de support ou au chat, vous devez disposer d'un compte et être connecté à l'application.
+Pour accéder au formulaire de demande de support ou au chat, vous devez disposer d'un compte et être connecté à l'application.
 {% endhint %}
 
-### Le chat
+## Le chat
 
-\
-Il vous permet d'échanger directement avec votre **Privacy Success Manager dédié** **sur l’usage de la plateforme ou pour être accompagné dans la compréhension des fonctionnalités.**<br>
+Le chat vous permet d'échanger avec votre **Privacy Success Manager dédié** sur l'usage de la plateforme ou pour être accompagné dans la compréhension des fonctionnalités.
 
-### Le questionnaire de demande de support
+## Le formulaire de demande de support
 
-Il vous permet de remonter des bugs, des idées de fonctionnalités ou de poser des questions techniques à notre équipe support technique.\
-\
-Après avoir cliqué sur le bouton support, une fenêtre apparait dans l'application vous permettant de sélectionner l'objet de votre demande.
+Utilisez-le pour remonter des bugs, proposer des idées de fonctionnalités ou poser des questions techniques à l'équipe support.
 
-Choisissez une des cinq options possibles, détaillez votre réponse et cliquez sur le bouton "Envoyer la requête".
+1. Cliquez sur le bouton **Contacter le support** (icône de mégaphone) en haut à droite. Une fenêtre s'ouvre.
+2. Choisissez l'un des six types de demande :
 
-![Formulaire de demande de support](../../.gitbook/assets/capture-web-3-5-2022-152923-app-dastra-eu.jpeg)
+   | Type | Quand le choisir |
+   | --- | --- |
+   | **Résolution de problèmes** | Vous rencontrez un problème ou vous avez une question sur l'usage d'une fonctionnalité. Une recherche dans la documentation vous est d'abord proposée : si elle ne répond pas à votre question, cliquez sur **Créez un ticket**. |
+   | **Rapport de bug** | Vous souhaitez remonter un dysfonctionnement de l'application. |
+   | **Mise à jour de l'abonnement** | Vous souhaitez modifier votre abonnement ou obtenir des informations sur votre facturation. |
+   | **Idée de fonctionnalité** | Vous souhaitez proposer une nouvelle fonctionnalité. |
+   | **Avis** | Vous souhaitez donner votre avis sur l'application. |
+   | **Autre demande** | Pour toutes les autres demandes. |
 
-Lors de la création de votre ticket, vous pouvez nous donner une autorisation préalable à effectuer des tests sur votre espace de travail en laissant cochée la case suivante :<br>
+3. Détaillez votre demande, puis cliquez sur **Envoyer la requête**.
 
-<figure><img src="../../.gitbook/assets/support-authorize-access-checkbox.png" alt=""><figcaption><p>Case d'autorisation préalable de test</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-support-3.png" alt="Fenêtre de demande de support avec la liste des types de demande"><figcaption><p>Le choix du type de demande</p></figcaption></figure>
 
-Cela nous permet de répondre plus rapidement et plus efficacement à votre demande.\
-<br>
+Pour un rapport de bug et pour une résolution de problèmes, la fenêtre propose deux cases à cocher :
 
-Ça y est, votre demande de support a été envoyée ! notre équipe vous répondra dans les meilleurs délais.\
-Ce service est disponible **24h/24 et 7j/7** et nous permet d'historiser les demandes pour un suivi efficace.
+* **J'autorise les équipes support de Dastra à se connecter à mon espace et à effectuer les tests nécessaires à l'identification de ce problème** : vos données ne sont pas modifiées et toutes les manipulations effectuées par les équipes sont annulées ;
+* **J'autorise Dastra à collecter des données de diagnostic de mon navigateur** : erreur de console et type de navigateur. Cette case est cochée par défaut.
 
-### Le téléphone
+<figure><img src="../../.gitbook/assets/getting-started-support-4.png" alt="Formulaire de rapport de bug avec les cases d'autorisation de test et de données de diagnostic"><figcaption><p>Les cases d'autorisation d'un rapport de bug</p></figcaption></figure>
 
-Pour les problèmes d'accès à l'application ou les urgences majeures critiques :\
-[+33 1 76 31 05 47](tel:+33176310547) (Disponibilité : 9:00 / 18:00 GMT+2)
+Laisser ces cases cochées aide l'équipe à répondre plus rapidement et plus efficacement à votre demande.
 
-### Autres demandes
+Une fois la demande envoyée, l'équipe vous répond dans les meilleurs délais. Le formulaire est accessible à tout moment et conserve l'historique de vos demandes.
 
-Si vous souhaitez réaliser un autre type de demande ou si vous n'avez pas encore créé un compte dans Dastra, il vous est possible de nous faire parvenir votre demande directement à l'adresse [support@dastra.eu](mailto:support@dastra.eu)\
-<br>
+## Le téléphone
 
-\
-Cela garantit que toutes les demandes sont centralisées et traitées dans le cadre du processus de support officiel.
+Pour les problèmes d'accès à l'application ou les urgences majeures :\
+[+33 1 76 31 05 47](tel:+33176310547) (disponibilité : 9:00 / 18:00 GMT+2)
+
+## Autres demandes
+
+Si vous souhaitez faire un autre type de demande, ou si vous n'avez pas encore de compte Dastra, écrivez à [support@dastra.eu](mailto:support@dastra.eu). Toutes les demandes sont ainsi centralisées et traitées dans le cadre du processus de support officiel.

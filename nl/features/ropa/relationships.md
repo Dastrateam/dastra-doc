@@ -1,78 +1,175 @@
-# Een relatie tussen verwerkingen maken
+# Relaties tussen verwerkingsactiviteiten aanmaken
 
-In Dastra kunt u relaties tussen uw verwerkingen maken om ze gemakkelijker te beheren.
+In Dastra maakt u relaties tussen uw verwerkingsactiviteiten aan om ze beter te beheren.
 
-Deze relaties kunnen worden gemaakt tussen verwerkingen in dezelfde werkruimte of in verschillende werkruimten.
+Deze relaties zijn mogelijk tussen verwerkingsactiviteiten die in dezelfde werkruimte staan.
 
+## Het nut van relaties tussen verwerkingsactiviteiten
 
+Met relaties tussen verwerkingsactiviteiten legt u de verantwoordelijkheidsrelaties vast tussen de verschillende entiteiten die voor verwerkingen verantwoordelijk zijn.
 
-### Een relatie toevoegen
+In een groep van bedrijven koppelt u bijvoorbeeld een verwerkingsactiviteit van het moederbedrijf aan de verwerkingsactiviteiten van de dochterondernemingen. Dat komt vaak voor bij verwerkingsactiviteiten rond het algemene beheer van de groep, zoals personeelsbeheer, boekhouding of leveranciersbeheer.
 
-Ga hiervoor naar een Verwerkingsformulier en selecteer de tab "Relaties" bovenaan het formulier.
+> Een moederbedrijf X beheert de salarisadministratie namens zijn dochterondernemingen Y en Z. In entiteit X maakt u een verwerkingsactiviteit "Salarisadministratie" (P1) aan als verwerker. Vanuit P1 maakt u een relatie **Strikt overnemen (sterke erfenis)** aan met twee verwerkingsactiviteiten (C1 en C2) in Y en Z, aangemaakt als verwerkingsactiviteiten van een verwerkingsverantwoordelijke.
+>
+> Elke wijziging in P1 wordt dan automatisch doorgegeven aan C1 en C2.
 
+## Een relatie toevoegen
 
-![De "Relaties" tab](<../../.gitbook/assets/image (243).png>)
+Klik in een verwerkingsactiviteit op de knop **Relaties** in de werkbalk boven aan de activiteit. De knop toont het aantal bestaande relaties.
 
+<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103430.png" alt="Paneel Relaties van een verwerkingsactiviteit"><figcaption><p>Het paneel Relaties van een verwerkingsactiviteit</p></figcaption></figure>
 
+Het paneel **Relaties** toont de bestaande relaties, gegroepeerd per type, met de organisatie-eenheid van elke gekoppelde verwerkingsactiviteit en de datum waarop de relatie is aangemaakt. Klik op een verwerkingsactiviteit om die in een nieuw tabblad te openen, of klik op het prullenbakpictogram om de relatie te verwijderen.
 
-Vervolgens moet je een type relatie selecteren.
+Om een relatie aan te maken klikt u op **Voeg een relatie toe** en doet u daarna het volgende:
 
-[](<../../.gitbook/assets/image (245).png>)
+1. Selecteer het **Type relatie**. Onder het veld verschijnt een beschrijving van het geselecteerde type.
+2. Kies **Bestaande verwerking** om reeds bestaande verwerkingsactiviteiten te koppelen, of **Nieuwe verwerking** om de gekoppelde verwerkingsactiviteit meteen aan te maken.
+3. Selecteer voor een bestaande verwerkingsactiviteit eerst de **Organisatie-eenheid** en daarna de verwerkingsactiviteit bij **Bijgevoegde object (en) selecteren**.
+4. Vul voor een nieuwe verwerkingsactiviteit de **Naam van de nieuwe verwerking** in, schakel zo nodig **Activiteit als verwerker** in en selecteer de organisatie-eenheid.
+5. Klik op **Toevoegen**.
 
-Je kunt het type relatie tussen Verwerkingen selecteren.
+<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103745.png" alt="Venster Voeg een relatie toe"><figcaption><p>Het venster Voeg een relatie toe</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image (246).png>)
+U kunt in één keer relaties met meerdere verwerkingsactiviteiten aanmaken:
 
+* bij **Strikt overnemen (sterke erfenis)** of **Overgebracht (zwakke erfenis)** selecteert u meerdere bestaande verwerkingsactiviteiten;
+* bij **Is de ouder van**, **Is relatief ten opzichte van**, **Strikt overnemen (sterke erfenis)** of **Overgebracht (zwakke erfenis)** kunt u met de optie **Nieuwe verwerking** meerdere organisatie-eenheden selecteren: in elk daarvan wordt een nieuwe verwerkingsactiviteit aangemaakt.
 
+U selecteert maximaal 50 verwerkingsactiviteiten of organisatie-eenheden per keer.
 
+{% hint style="info" %}
+U kunt alleen relaties aanmaken met verwerkingsactiviteiten in dezelfde werkruimte.
+{% endhint %}
 
+## Soorten relaties
 
-### Details relatie
+Er zijn twee soorten relaties:
 
-#### Is het kind van :&#x20;
+1. Declaratieve relaties: ze leggen een eenvoudige koppeling tussen twee verwerkingsactiviteiten, zonder functionele afhankelijkheid.
+2. Functionele relaties: ze geven velden door van de ene verwerkingsactiviteit aan de andere, of laten een verwerkingsactiviteit ze erven.
 
-Hiërarchische relatie voor grafische weergave. Geen koppeling tussen velden.
+### Declaratieve relaties
 
-Verwerking A staat hiërarchisch onder verwerking B.
+#### Is het kind van
 
-#### Is de ouder van :&#x20;
+Hiërarchische relatie voor een gestructureerde weergave van de verwerkingsactiviteiten, zonder functionele afhankelijkheid tussen de velden.
 
-Hiërarchische relatie voor grafische weergave. Geen koppeling tussen velden.
+> Verwerkingsactiviteit A is hiërarchisch ondergeschikt aan verwerkingsactiviteit B.
 
-Verwerking A staat hiërarchisch boven verwerking B.
+#### Is de ouder van
 
-#### Is gerelateerd aan :&#x20;
+Hiërarchische relatie voor een gestructureerde weergave van de verwerkingsactiviteiten, zonder functionele afhankelijkheid tussen de velden.
 
-Eenvoudige logische koppeling tussen 2 Verwerkingen, geen slavings tussen de twee of controleregels.&#x20;
+> Verwerkingsactiviteit A staat hiërarchisch boven verwerkingsactiviteit B.
 
-#### Wordt gekopieerd door :
+#### Is relatief ten opzichte van
 
-Deze relatie wordt gebruikt om elementen bij te houden die vanuit dit proces worden gedupliceerd. Er wordt automatisch een relationele link gemaakt wanneer een Verwerking wordt gedupliceerd.&#x20;
+Logische koppeling tussen twee verwerkingsactiviteiten, zonder enige afhankelijkheid tussen hun velden.
 
-#### Is een kopie van :&#x20;
+> Verwerkingsactiviteit A is gerelateerd aan verwerkingsactiviteit B.
 
-Deze relatie wordt gebruikt om de bron van de gedupliceerde Verwerking bij te houden. Er wordt automatisch een relationele koppeling gemaakt wanneer een Verwerking wordt gedupliceerd.&#x20;
+#### Wordt gekopieerd door
 
-#### Brengt strikt over (Sterke overerving):
+Deze relatie houdt de kopieën bij die van deze verwerkingsactiviteit zijn gemaakt. Ze wordt automatisch aangemaakt wanneer u **Dupliceren** gebruikt op een verwerkingsactiviteit.
 
-De velden van het oorspronkelijke proces (A) vervangen de velden van de doelverwerking (B).&#x20;
+> Verwerkingsactiviteit A is de bron (van de kopie) van verwerkingsactiviteit B.
 
-Strikte overerving tussen Verwerking A en Verwerking B. De reeds bestaande velden van bewerking B worden verwijderd wanneer de koppeling wordt opgezet. De velden in Verwerking B die aan Verwerking A zijn gekoppeld, kunnen niet worden gewijzigd in Verwerking B en er kunnen geen nieuwe velden worden toegevoegd, verwijderd of gewijzigd. Voor zover de elementen van de bewaarplaatsen behouden blijven, worden de velden die al bestonden in Verwerking B opnieuw aangemaakt wanneer de koppeling wordt ingetrokken.
+#### Is een kopie van
 
-#### Erft strikt over van (Sterke overerving) :&#x20;
+Deze relatie houdt bij van welke verwerkingsactiviteit een kopie is gemaakt. Ze wordt automatisch aangemaakt wanneer u **Dupliceren** gebruikt op een verwerkingsactiviteit.
 
-De velden in de doelverwerking (B) vervangen de velden in de oorspronkelijke verwerking (A) &#x20;
+> Verwerkingsactiviteit A is een kopie van verwerkingsactiviteit B.
 
-Strikte overerving tussen Verwerking B en Verwerking A. Reeds bestaande velden in A worden verwijderd bij het opzetten van de koppeling. De velden in A die slaaf zijn van B kunnen niet worden gewijzigd in A en er kunnen geen nieuwe velden worden toegevoegd, verwijderd of gewijzigd. Voor zover de elementen van de repositories behouden blijven, worden de velden die voorafgingen aan de Verwerking van B hersteld wanneer de koppeling wordt ingetrokken.
+{% hint style="info" %}
+**Wordt gekopieerd door** en **Is een kopie van** worden alleen automatisch aangemaakt: u kunt ze niet selecteren in het venster **Voeg een relatie toe**.
+{% endhint %}
 
-#### Erft over van (Zwakke overerving) :&#x20;
+### Functionele relaties
 
-De doelverwerking (B) erft automatisch de velden van de oorspronkelijke verwerking (A) &#x20;
+Functionele relaties geven velden door van de ene verwerkingsactiviteit aan de andere, of laten een verwerkingsactiviteit ze erven.
 
-Nieuwe velden kunnen worden toegevoegd, verwijderd of gewijzigd in proces B, maar velden geërfd van proces A kunnen niet worden gewijzigd. Alle wijzigingen aan de velden in proces A worden automatisch weerspiegeld in de velden die worden geërfd van proces B. Als de koppeling wordt ingetrokken, kunnen de velden die zijn geërfd van proces A weer worden gewijzigd in proces B. Velden die al bestonden in proces B voordat de koppeling werd gemaakt, blijven behouden zodra de koppeling is gemaakt.
+#### Strikt overnemen (sterke erfenis)
 
-#### Transmet (Zwakke overerving) :&#x20;
+De bronverwerkingsactiviteit A geeft haar velden door aan de afhankelijke verwerkingsactiviteit B.
 
-Het oorspronkelijke proces (A) verzendt zijn velden automatisch naar de doelverwerking (B) &#x20;
+{% hint style="warning" %}
+Met uitzondering van de velden van tabblad 1 **Algemeen** en de documenten die u in tabblad 11 **Documentatie** aan de verwerkingsactiviteit hebt toegevoegd.
+{% endhint %}
 
-Doelproces B erft automatisch velden van het oorspronkelijke proces A. Doelproces B kan nieuwe velden toevoegen, verwijderen of wijzigen, maar kan geen velden wijzigen die van proces A zijn geërfd. Elke wijziging aan de velden in Verwerking A wordt automatisch weerspiegeld in de velden die worden geërfd van Verwerking B. Wanneer de koppeling wordt ingetrokken, worden de geërfde velden weer bewerkbaar in proces B. Velden die in proces B bestonden voordat de koppeling werd gemaakt, blijven behouden nadat de koppeling is gemaakt.
+Dit maakt een strikte relatie tussen A (bron) en B (afhankelijk):
+
+* de bestaande velden van B worden verwijderd wanneer de relatie wordt aangemaakt;
+* de van A geërfde velden kunnen in B niet worden gewijzigd of verwijderd, en er kunnen geen nieuwe velden aan B worden toegevoegd;
+* elke wijziging in A wordt automatisch doorgevoerd in B.
+
+Als u de relatie verwijdert, kunt u de geërfde velden weer bewerken en worden de oorspronkelijke velden van B hersteld (de items van uw repositories blijven bewaard).
+
+#### Strikt erven van (Strong Legacy)
+
+Verwerkingsactiviteit A hangt af van verwerkingsactiviteit B en erft haar velden.
+
+{% hint style="warning" %}
+Met uitzondering van de velden van tabblad 1 **Algemeen** en de documenten die u in tabblad 11 **Documentatie** aan de verwerkingsactiviteit hebt toegevoegd.
+{% endhint %}
+
+Dit maakt een strikte relatie tussen B (bron) en A (afhankelijk):
+
+* de bestaande velden van A worden verwijderd wanneer de relatie wordt aangemaakt;
+* de van B geërfde velden kunnen in A niet worden gewijzigd of verwijderd, en er kunnen geen nieuwe velden aan A worden toegevoegd;
+* elke wijziging in B wordt automatisch doorgevoerd in A.
+
+Als u de relatie verwijdert, kunt u de geërfde velden weer bewerken en worden de oorspronkelijke velden van A hersteld (de items van uw repositories blijven bewaard).
+
+Een verwerkingsactiviteit die in strikte erfenis van een andere afhangt, toont een banner **Overerven van gegevensverwerking** met een link naar haar bron, en de geërfde tabbladen zijn vergrendeld.
+
+{% hint style="danger" %}
+Een verwerkingsactiviteit kan maar van één bronverwerkingsactiviteit tegelijk afhangen.
+{% endhint %}
+
+#### Overgebracht (zwakke erfenis)
+
+De bronverwerkingsactiviteit A geeft haar velden automatisch door aan de afhankelijke verwerkingsactiviteit B.
+
+{% hint style="warning" %}
+Met uitzondering van de velden van tabblad 1 **Algemeen** en de documenten die u in tabblad 11 **Documentatie** aan de verwerkingsactiviteit hebt toegevoegd.
+{% endhint %}
+
+Dit maakt een relatie met zwakke erfenis tussen A (bron) en B (afhankelijk):
+
+* de van A geërfde velden kunnen in B niet worden gewijzigd;
+* B kan zijn eigen velden toevoegen, wijzigen of verwijderen;
+* elke wijziging in A wordt automatisch doorgevoerd in B.
+
+Als u de relatie verwijdert, kunt u de geërfde velden weer bewerken en blijven de bestaande velden van B behouden.
+
+#### Overgeërfd van (Weak Legacy)
+
+Verwerkingsactiviteit A hangt af van verwerkingsactiviteit B en erft haar velden automatisch.
+
+{% hint style="warning" %}
+Met uitzondering van de velden van tabblad 1 **Algemeen** en de documenten die u in tabblad 11 **Documentatie** aan de verwerkingsactiviteit hebt toegevoegd.
+{% endhint %}
+
+Dit maakt een relatie met zwakke erfenis tussen B (bron) en A (afhankelijk):
+
+* de van B geërfde velden kunnen in A niet worden gewijzigd;
+* A kan zijn eigen velden toevoegen, wijzigen of verwijderen;
+* elke wijziging in B wordt automatisch doorgevoerd in A.
+
+Als u de relatie verwijdert, kunt u de geërfde velden weer bewerken en blijven de bestaande velden van A behouden.
+
+{% hint style="danger" %}
+Een verwerkingsactiviteit kan maar van één bronverwerkingsactiviteit tegelijk afhangen.
+{% endhint %}
+
+## Overzichtstabel van de relaties
+
+| Type relatie | Tabblad 1, Algemeen | Tabbladen 2 tot 10 (inhoudelijke velden) | Documenten in tabblad 11, Documentatie | Velden die specifiek zijn voor de afhankelijke verwerkingsactiviteit |
+| --- | --- | --- | --- | --- |
+| Declaratieve relaties (Is het kind van, Is de ouder van, Is relatief ten opzichte van, Wordt gekopieerd door, Is een kopie van) | Geen effect | Geen effect | Geen effect | Geen effect |
+| **Strikt overnemen (sterke erfenis)** | Niet doorgegeven | Doorgegeven | Niet doorgegeven | Kunnen niet worden toegevoegd, gewijzigd of verwijderd |
+| **Strikt erven van (Strong Legacy)** | Niet geërfd | Geërfd | Niet geërfd | Kunnen niet worden toegevoegd, gewijzigd of verwijderd |
+| **Overgebracht (zwakke erfenis)** | Niet doorgegeven | Doorgegeven | Niet doorgegeven | Kunnen worden toegevoegd, gewijzigd of verwijderd |
+| **Overgeërfd van (Weak Legacy)** | Niet geërfd | Geërfd | Niet geërfd | Kunnen worden toegevoegd, gewijzigd of verwijderd |

@@ -1,35 +1,40 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie die Karte der Datenübermittlungen in Dastra
-  visualisieren.
+  Erfahren Sie, wie Sie die Karte der Datenübermittlungen in Dastra anzeigen.
 ---
 
 # Übermittlungskarte anzeigen
 
 ## Einführung
 
-In Dastra können Daten auf verschiedene Weisen visualisiert werden. Eine davon ist die **Karte der Datenübermittlungen**.
+In Dastra können Daten auf mehrere Arten angezeigt werden. Eine davon ist die **Karte der Datenübermittlungen**.
 
-Diese Visualisierung ermöglicht es insbesondere, die geografischen Datenübermittlungen zu erkunden, zu analysieren und zu verstehen.
+Mit dieser Ansicht erkunden, analysieren und verstehen Sie die geografischen Übermittlungen der Daten Ihres Verzeichnisses.
 
-## Karte der Datenübermittlungen visualisieren
+## Die Übermittlungskarte anzeigen
 
-Um die Karte der Datenübermittlungen zu visualisieren, klicken Sie auf das Modul "Verzeichnis" und dann auf die Schaltfläche "**Übermittlungen**" über Ihrer Verarbeitungsliste.
+Um die Übermittlungskarte anzuzeigen, öffnen Sie das Modul **Verarbeitungstätigkeiten** und klicken dann über Ihrer Liste der Verarbeitungstätigkeiten auf den Tab **Drittländer**.
 
-![Modul "Verarbeitungsverzeichnis"](../../../.gitbook/assets/2.png)
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Tab Drittländer im Modul Verarbeitungstätigkeiten"><figcaption><p>Tab Drittländer über den Verarbeitungstätigkeiten</p></figcaption></figure>
 
-![Tab "Drittländer"](../../../.gitbook/assets/drittländer.png)
+Anschließend können Sie die **Übermittlungskarte anzeigen**. Über die Schaltflächen der Symbolleiste stehen drei Ansichten zur Verfügung:
 
-So können Sie die **Karte der Datenübermittlungen** visualisieren.
+* **Globusansicht** (Standard): die Übermittlungen auf einem Globus,
+* **Karte anzeigen**: die Übermittlungen auf einer flachen Weltkarte,
+* **Tabelle**: die Übermittlungen als Tabelle.
 
-![Beispiel einer Datenübermittlung](../../../.gitbook/assets/drittländer2.png)
+In den Kartenansichten steht die Liste der Übermittlungen neben der Karte. Mit der Pfeilschaltfläche am Rand der Karte blenden Sie sie aus oder ein. Mit den Filtern der Symbolleiste grenzen Sie die angezeigten Übermittlungen ein, und das Menü neben der Schaltfläche **Eine Übertragung von Daten hinzufügen** ermöglicht es, die Karte zu drucken oder die Übermittlungen zu exportieren.
+
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-2.png" alt="Beispiel einer Karte der Datenübermittlungen"><figcaption><p>Beispiel für Datenübermittlungen</p></figcaption></figure>
 
 {% hint style="info" %}
-Es ist möglich, auf die Details der Übermittlungen zuzugreifen, indem Sie auf die Punkte klicken, die jedem Land entsprechen.
+Klicken Sie auf den Punkt eines Landes, um die Details seiner Übermittlungen aufzurufen.
 {% endhint %}
+
+Das Fenster **Details zu eingehenden/ausgehenden Übertragungen aus diesem Land** zeigt den Status des Landes (europäisches Land, Land mit Angemessenheitsbeschluss, Land mit teilweisem Angemessenheitsbeschluss oder Land ohne Angemessenheitsbeschluss) und listet seine Übermittlungen unter **Eingabe** und **Ausgang** auf.
 
 ## Weiterführende Informationen
 
 {% content-ref url="../../risks/README.md" %}
-[la-gestion-des-risques](../../risks/README.md)
+[Risikomanagement](../../risks/README.md)
 {% endcontent-ref %}

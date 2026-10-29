@@ -1,38 +1,118 @@
 ---
-description: Learn how to get started with Dastra
-cover: >-
-  https://images.unsplash.com/photo-1608496601160-f86d19a44f9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxzdGFydHxlbnwwfHx8fDE3MDUzNTU3Njd8MA&ixlib=rb-4.0.3&q=85
-coverY: 0
+description: Learn how to get started with Dastra.
 ---
 
 # Setting up
 
-To start a project, begin here:
+This section guides you through creating your first workspace, inviting users, and setting up roles, permissions and teams.
+
+***
+
+## Understand the key concepts
+
+Organization, workspace, organizational unit, entity, department: read the definitions before you structure your account.
+
+{% content-ref url="key-concepts.md" %}
+[key-concepts.md](key-concepts.md)
+{% endcontent-ref %}
+
+***
+
+## Sign in
+
+Sign in to Dastra, secure your account and manage your sessions.
+
+{% content-ref url="login.md" %}
+[login.md](login.md)
+{% endcontent-ref %}
+
+***
+
+## Start a project
+
+Begin by creating your workspace:<br>
+
+<figure><img src="../../.gitbook/assets/getting-started-workspace-3.png" alt="Workspace creation form with the name and the logo"><figcaption><p>The workspace creation form</p></figcaption></figure>
 
 {% content-ref url="workspace.md" %}
-[create-and-set-up-a-workspace.md](workspace.md)
+[workspace.md](workspace.md)
 {% endcontent-ref %}
 
-If you'd like to join an existing project on Dastra or invite a member of your network, start here:
+Then structure the workspace with entities and departments, and appoint the DPO and the lead authority:
+
+{% content-ref url="organizational-units.md" %}
+[organizational-units.md](organizational-units.md)
+{% endcontent-ref %}
+
+{% content-ref url="dpo.md" %}
+[dpo.md](dpo.md)
+{% endcontent-ref %}
+
+{% content-ref url="lead-authority.md" %}
+[lead-authority.md](lead-authority.md)
+{% endcontent-ref %}
+
+***
+
+## Invite users
+
+To join an existing project on Dastra or to invite a member of your team, start here:<br>
 
 {% content-ref url="users.md" %}
-[invite-users.md](users.md)
+[users.md](users.md)
 {% endcontent-ref %}
 
-To learn how to manage roles and permissions or create new custom roles, see the section below:
+***
+
+## Manage roles and permissions
+
+Learn how to manage roles and permissions, or create custom roles that fit your organization:<br>
 
 {% content-ref url="roles.md" %}
-[managing-roles-and-permissions.md](roles.md)
+[roles.md](roles.md)
 {% endcontent-ref %}
 
-Then set up teams and assign them to the right entities or departments:
+If a user cannot see an item although they have the right role, read the following page:
+
+{% content-ref url="visibility.md" %}
+[visibility.md](visibility.md)
+{% endcontent-ref %}
+
+***
+
+## Create and assign teams
+
+Set up teams and assign them to the right departments or organizational units:<br>
 
 {% content-ref url="teams.md" %}
-[create-and-assign-teams.md](teams.md)
+[teams.md](teams.md)
 {% endcontent-ref %}
 
-Now you're ready to start a project in Dastra. You can explore Dastra's features on your own, or follow the tutorial to learn by doing:
+***
+
+## Set up your profile and find answers
+
+{% content-ref url="profile.md" %}
+[profile.md](profile.md)
+{% endcontent-ref %}
+
+{% content-ref url="faq.md" %}
+[faq.md](faq.md)
+{% endcontent-ref %}
+
+***
+
+## Tutorial
+
+You are ready to start using Dastra.\
+You can explore the features on your own, or follow a concrete case in the tutorial:<br>
 
 {% content-ref url="../tutorial/README.md" %}
-[tutorial](../tutorial/README.md)
+[README.md](../tutorial/README.md)
 {% endcontent-ref %}
+
+***
+
+{% hint style="info" %}
+You can change roles, teams and organizational units in your workspace at any time. These settings remain fully customizable to fit your organization.
+{% endhint %}

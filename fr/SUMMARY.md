@@ -43,7 +43,7 @@
   * [Etape 5 : Implémenter les processus internes](getting-started/tutorial/step-5.md)
   * [Etape 6 : Documenter la conformité](getting-started/tutorial/step-6.md)
 * [Support](getting-started/support/README.md)
-  * [L'assistant dastronaute](getting-started/support/dastronaut.md)
+  * [Le chat et l'agent IA](getting-started/support/dastronaut.md)
   * [L'aide en ligne](getting-started/support/online-help.md)
   * [Demande de support](getting-started/support/request.md)
   * [Le processus de support client](getting-started/support/process.md)

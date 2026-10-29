@@ -1,35 +1,40 @@
 ---
-description: Erfahren Sie, wie Sie die Datenkartierung in Dastra visualisieren.
+description: Erfahren Sie, wie Sie die Datenkartierung in Dastra anzeigen.
 ---
 
 # Datenkartierung des Verzeichnisses anzeigen
 
 ## Einführung
 
-In Dastra können Daten auf verschiedene Weisen visualisiert werden. Eine davon ist die **Datenkartierung des Verarbeitungsverzeichnisses**.
+In Dastra können Daten auf mehrere Arten angezeigt werden. Eine davon ist die **Datenkartierung** des Verarbeitungsverzeichnisses.
 
-Diese Visualisierung ermöglicht es insbesondere, die Verknüpfungen zwischen den Daten des Verzeichnisses zu erkunden, zu analysieren und zu verstehen.
+Mit dieser Ansicht erkunden, analysieren und verstehen Sie die Verknüpfungen zwischen den Elementen Ihres Verzeichnisses: Verarbeitungstätigkeiten, Organisationseinheiten, Stakeholder, Assets, Datenkategorien, Sicherheitsmaßnahmen, Übermittlungen usw.
 
-## Datenkartierung des Verzeichnisses visualisieren
+## Die Datenkartierung des Verzeichnisses anzeigen
 
-Um die Datenkartierung des Verzeichnisses zu visualisieren, klicken Sie auf das Modul "Verzeichnis" und dann auf die Schaltfläche "**Datenkartierung**" über Ihrer Verarbeitungsliste.
+Um die Datenkartierung Ihres Verzeichnisses anzuzeigen, öffnen Sie das Modul **Verarbeitungstätigkeiten** und klicken dann über Ihrer Liste der Verarbeitungstätigkeiten auf den Tab **Data Mapping**.
 
-![Modul "Verarbeitungsverzeichnis"](../../../.gitbook/assets/2.png)
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Tab Data Mapping im Modul Verarbeitungstätigkeiten"><figcaption><p>Tab Data Mapping über den Verarbeitungstätigkeiten</p></figcaption></figure>
 
-![Tab "Data Mapping" über den Verarbeitungen](../../../.gitbook/assets/4.png)
+Anschließend können Sie die **Datenkartierung Ihres Verzeichnisses anzeigen**.
 
-So können Sie die **Datenkartierung des Verzeichnisses** visualisieren.
+<figure><img src="../../../.gitbook/assets/screenshot-2023-02-10-144614.png" alt="Beispiel einer Datenkartierung des Verzeichnisses"><figcaption><p>Beispiel einer Kartierung</p></figcaption></figure>
 
-![Beispiel einer Datenkartierung](<../../../.gitbook/assets/data mapping.png>)
+Mit der Symbolleiste über der Karte können Sie:
+
+* vergrößern und verkleinern,
+* die Karte auf einige Verarbeitungstätigkeiten, auf eine Organisationseinheit oder mit Filtern einschränken,
+* die anzuzeigenden **Typen** von Elementen wählen,
+* im Menü **Aktionen** den Zoom zurücksetzen, in den Vollbildmodus wechseln, die Karte drucken und **Dunkler Hintergrund**, **Legende der Knoten** oder **Legende zu den Links** aktivieren.
+
+Klicken Sie auf ein Element der Karte, um im rechten Bereich seine **Details zum Knoten** anzuzeigen, mit einer Schaltfläche **Bearbeiten**, um es zu öffnen.
 
 {% hint style="info" %}
-Sobald die Datenkartierung angezeigt wird, kann sie durch **Doppelklick** auf die Elemente geändert werden, um Filter hinzuzufügen.
-
-Eine Suchleiste ermöglicht auch zusätzliche Filter.
+Sobald die Karte angezeigt wird, fügen Sie ein Element mit einem Doppelklick zu den gefilterten Knoten hinzu und fokussieren die Karte darauf. Mit der Suchleiste im Bereich **Gefilterte Knoten** finden Sie ebenfalls ein Element und fügen es als Filter hinzu. Klicken Sie auf **Filter löschen**, um wieder die gesamte Karte anzuzeigen.
 {% endhint %}
 
 ## Weiterführende Informationen
 
 {% content-ref url="transfers-map.md" %}
-[visualiser-la-carte-des-transferts.md](transfers-map.md)
+[Übermittlungskarte anzeigen](transfers-map.md)
 {% endcontent-ref %}
