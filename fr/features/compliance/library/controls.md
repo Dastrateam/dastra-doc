@@ -4,7 +4,7 @@ description: Les contrôles constituent l’élément central du modèle de conf
 
 # Contrôles
 
-Ils traduisent les exigences du framework en **mesures concrètes**, mesurables et auditables, permettant de démontrer l’efficacité de la conformité dans le temps.
+Les contrôles traduisent les exigences du framework en **mesures concrètes**, mesurables et auditables, permettant de démontrer l’efficacité de la conformité dans le temps.
 
 Un contrôle peut :
 
@@ -14,15 +14,15 @@ Un contrôle peut :
 
 ***
 
-### Suivi et gestion des contrôles
+## Suivi et gestion des contrôles
 
-<figure><img src="../../../.gitbook/assets/compliance-library-controls-list-framework.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-controls-list-framework.png" alt="Onglet Contrôles d'un framework avec la liste des contrôles et leur type de remédiation"><figcaption></figcaption></figure>
 
 Les contrôles peuvent être suivis depuis deux points d’entrée complémentaires.
 
 ***
 
-#### 1. Depuis le framework
+### 1. Depuis le framework
 
 Dans l’onglet **Contrôles** d’un framework, l’utilisateur visualise :
 
@@ -31,7 +31,7 @@ Dans l’onglet **Contrôles** d’un framework, l’utilisateur visualise :
 * les exigences couvertes
 * les tests et risques associés
 
-👉 Cette vue est idéale pour :
+Cette vue sert à :
 
 * comprendre la couverture d’un framework
 * identifier les contrôles clés
@@ -39,9 +39,9 @@ Dans l’onglet **Contrôles** d’un framework, l’utilisateur visualise :
 
 ***
 
-#### 2. Depuis la bibliothèque de contrôles
+### 2. Depuis la bibliothèque de contrôles
 
-<figure><img src="../../../.gitbook/assets/compliance-library-controls-list-overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-controls-list-overview.png" alt="Bibliothèque de contrôles avec les filtres et la liste de tous les contrôles"><figcaption></figcaption></figure>
 
 La **bibliothèque de contrôles** centralise l’ensemble des contrôles de l’organisation, tous frameworks confondus.
 
@@ -51,11 +51,10 @@ Cette vue permet de :
 * identifier les contrôles réutilisés dans plusieurs frameworks
 * améliorer la **qualité et la cohérence** de la bibliothèque de contrôles
 
-👉 C’est un outil clé pour la gouvernance et l’industrialisation de la conformité.
 
 ***
 
-### Fenêtre d’édition d’un contrôle
+## Fenêtre d’édition d’un contrôle
 
 {% columns %}
 {% column %}
@@ -63,13 +62,13 @@ La fenêtre d’édition permet de définir précisément le rôle du contrôle 
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-control-edit-panel.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-control-edit-panel.png" alt="Fenêtre d'édition d'un contrôle avec le nom, la référence et le type de remédiation"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-#### Libellé et référence du contrôle
+### Libellé et référence du contrôle
 
 * **Libellé du contrôle**\
   Décrit de manière claire l’action ou la mesure mise en œuvre.
@@ -78,7 +77,7 @@ La fenêtre d’édition permet de définir précisément le rôle du contrôle 
 
 {% columns %}
 {% column %}
-📌 Un **générateur de référence** est disponible pour proposer automatiquement une référence cohérente avec :
+Un **générateur de référence** est disponible pour proposer automatiquement une référence cohérente avec :
 
 * le contexte du contrôle
 * les conventions de nommage
@@ -88,24 +87,24 @@ L’utilisateur peut ajuster librement la référence proposée.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-control-reference-autogenerate.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-control-reference-autogenerate.png" alt="Générateur de référence proposant une référence cohérente pour le contrôle"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-#### Type de remédiation
+### Type de remédiation
 
 Chaque contrôle doit être associé à un **type de remédiation**, qui précise sa nature :
 
 * **Préventif**\
   Le contrôle vise à **éviter** la survenue d’un risque\
-  \&#xNAN;_(ex. formation, règles d’accès, validation avant mise en production)_
+  _(ex. formation, règles d’accès, validation avant mise en production)_
 * **Atténuation**\
   Le contrôle vise à **réduire l’impact ou la probabilité** d’un risque déjà existant\
-  \&#xNAN;_(ex. supervision, détection, plan de mitigation)_
+  _(ex. supervision, détection, plan de mitigation)_
 
-👉 Cette distinction est essentielle pour :
+Cette distinction sert à :
 
 * analyser la stratégie de maîtrise des risques
 * équilibrer prévention et détection
@@ -113,7 +112,7 @@ Chaque contrôle doit être associé à un **type de remédiation**, qui précis
 
 ***
 
-#### Tags
+### Tags
 
 Les tags permettent de :
 
@@ -123,15 +122,15 @@ Les tags permettent de :
 
 ***
 
-### Association des tests
+## Association des tests
 
 Les [**tests**](tests.md) permettent de vérifier l’existence, l’application et l’efficacité d’un contrôle.
 
-#### Association par IA
+### Association par IA
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-control-associate-tests-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-control-associate-tests-list.png" alt="Liste des tests associés à un contrôle"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -140,7 +139,7 @@ L’assistance IA propose :
 * des **tests existants** dans la bibliothèque, pertinents au regard du contrôle
 * la **création de nouveaux tests**, lorsque nécessaire
 
-👉 Cette approche garantit :
+Cette approche garantit :
 
 * cohérence entre contrôles et tests
 * gain de temps
@@ -150,7 +149,7 @@ L’assistance IA propose :
 
 ***
 
-### Association à des exigences
+## Association à des exigences
 
 {% columns %}
 {% column %}
@@ -163,7 +162,7 @@ Dans la section **Exigences associées** de la fenêtre d'édition, les exigence
 
 
 
-👉 Cela permet :
+Cela permet :
 
 * de mutualiser les contrôles
 * de relier un contrôle interne à un référentiel réglementaire
@@ -171,17 +170,17 @@ Dans la section **Exigences associées** de la fenêtre d'édition, les exigence
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-control-associate-requirements-modal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-control-associate-requirements-modal.png" alt="Fenêtre d'association d'un contrôle à des exigences"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Association des risques
+## Association des risques
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-control-edit-panel-risks.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-control-edit-panel-risks.png" alt="Fenêtre d'un contrôle avec les risques associés"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -200,13 +199,13 @@ L’association permet :
 
 ***
 
-### Fusion de contrôles
+## Fusion de contrôles
 
 La bibliothèque de contrôles peut, au fil du temps, contenir des contrôles redondants ou quasi-identiques issus de frameworks différents. La fonctionnalité de **fusion** permet de les consolider en un seul contrôle de référence.
 
-#### Comment fonctionne la fusion
+### Comment fonctionne la fusion
 
-Depuis la bibliothèque de contrôles ou un projet, sélectionnez les contrôles à fusionner (jusqu'à 30) puis déclenchez la fusion via les **actions groupées**. Un assistant vous invite à choisir le contrôle **cible** (celui qui sera conservé) : toutes les associations des contrôles sources — preuves, exigences, scénarios de risque, contrôles couverts — sont automatiquement consolidées sur le contrôle cible, sans perte de données, puis les contrôles sources sont supprimés.
+Depuis la bibliothèque de contrôles ou un projet, sélectionnez les contrôles à fusionner (jusqu'à 30) puis déclenchez la fusion via les **actions groupées**. Un assistant vous invite à choisir la **version de référence**, c'est-à-dire le contrôle qui sera conservé. Les associations des autres contrôles (preuves, exigences, scénarios de risque, contrôles couverts) sont consolidées sur ce contrôle, sans perte de données, puis les autres contrôles sont supprimés.
 
 {% hint style="info" %}
 Le rapprochement est **entièrement manuel** : Dastra ne détecte pas automatiquement les doublons. C'est à vous de sélectionner les contrôles similaires à consolider.
@@ -214,23 +213,23 @@ Le rapprochement est **entièrement manuel** : Dastra ne détecte pas automatiqu
 
 <figure><img src="../../../.gitbook/assets/fusion-controles-selection.png" alt="Sélection de plusieurs contrôles et menu d&#x27;actions groupées avec l&#x27;option Fusionner"><figcaption><p>Sélectionnez jusqu'à 30 contrôles puis déclenchez la fusion via les actions groupées</p></figcaption></figure>
 
-L'assistant de fusion présente les deux contrôles côte à côte : **Conservé** (contrôle cible) à gauche, **À supprimer** (contrôle source) à droite. Pour chaque champ multi-valué (scénarios de risque, exigences, tests), vous choisissez les valeurs à reporter sur le contrôle cible.
+Le tableau de comparaison affiche les contrôles côte à côte, une colonne par contrôle. Choisissez le contrôle à conserver avec le bouton radio de sa colonne : il porte l'étiquette **Version de référence**. Les autres colonnes portent l'étiquette **Conserver sélection** : seuls les champs que vous y cochez sont reportés sur la version de référence (**Sélectionner tout** coche toute la colonne).
 
-<figure><img src="../../../.gitbook/assets/fusion-controles-comparaison.png" alt="Tableau de comparaison côte à côte des contrôles avec sélection des valeurs à conserver"><figcaption><p>Comparez les contrôles côte à côte et choisissez, champ par champ, les valeurs à conserver — preuves, exigences, scénarios de risque et contrôles couverts sont consolidés sur le contrôle conservé</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fusion-controles-comparaison.png" alt="Tableau de comparaison côte à côte des contrôles avec sélection des valeurs à conserver"><figcaption><p>Comparez les contrôles côte à côte et choisissez, champ par champ, les valeurs à conserver : preuves, exigences, scénarios de risque et contrôles couverts sont consolidés sur le contrôle conservé</p></figcaption></figure>
 
 {% hint style="warning" %}
-La fusion est irréversible. Vérifiez les associations de chaque contrôle source avant de confirmer l'opération.
+La fusion est irréversible. Vérifiez les associations de chaque contrôle avant de confirmer l'opération.
 {% endhint %}
 
-#### Cas d'usage typiques
+### Cas d'usage typiques
 
-* **Déduplication** : plusieurs importations de frameworks ont créé des contrôles équivalents — la fusion les consolide sans perte d'information.
+* **Déduplication** : plusieurs importations de frameworks ont créé des contrôles équivalents : la fusion les consolide sans perte d'information.
 * **Mutualisation transverse** : un contrôle couvrant à la fois ISO 27001 et le référentiel IA Act peut être obtenu en fusionnant les contrôles issus de chaque framework.
 * **Nettoyage de la bibliothèque** : avant un audit, supprimer les contrôles orphelins ou redondants améliore la lisibilité du tableau de bord de conformité.
 
 ***
 
-### Synthèse : pourquoi les contrôles sont centraux
+## Synthèse : pourquoi les contrôles sont centraux
 
 Dans Dastra, les contrôles sont le **point de convergence** entre :
 
@@ -242,4 +241,4 @@ Cette approche permet :
 
 * une conformité opérationnelle et mesurable
 * une gouvernance transverse
-* une réutilisation intelligente des efforts de conformité
+* la réutilisation des efforts de conformité

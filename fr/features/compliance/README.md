@@ -1,20 +1,31 @@
 ---
-description: Gérez votre conformité aux différents frameworks avec Dastra !
+description: Gérez votre conformité aux différents frameworks dans Dastra.
 ---
 
 # Conformité
 
-Le module **Conformité** ou **Compliance** de Dastra permet de gérer la conformité réglementaire de manière structurée, traçable et auditable, en s’appuyant sur une architecture modulaire alignée avec les référentiels de conformité.
+Le module **Conformité** de Dastra permet de gérer la conformité réglementaire de manière structurée, traçable et auditable, en s’appuyant sur une architecture modulaire alignée avec les référentiels de conformité.
 
 ***
 
-### Architecture du module Compliance
+## Naviguer dans le module
+
+Dans le menu, **Conformité** donne accès à quatre entrées :
+
+* **Projets** : les projets de conformité, leurs phases, leurs audits et vos tâches. Voir [Projets](projects/README.md).
+* **Bibliothèque** : les frameworks, les contrôles, les tests, les risques et les menaces réutilisables. Voir [Bibliothèque](library/README.md).
+* **Périmètres** : les unités organisationnelles couvertes par un projet. Voir [Périmètres](scopes.md).
+* **Statistiques** : le tableau de bord de conformité de l’espace de travail (voir plus bas).
+
+***
+
+## Architecture du module Compliance
 
 Le module repose sur une chaîne logique d’objets, depuis les référentiels réglementaires jusqu’aux preuves de conformité.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Chaîne d'objets du module : framework, exigences, contrôles, scénarios de risque, tests, preuves et audits"><figcaption></figcaption></figure>
 
-#### Frameworks (Référentiels)
+### Frameworks (Référentiels)
 
 Exemples : RGPD, ISO 27701, ISO 27001, AI Act.
 
@@ -25,7 +36,7 @@ Un framework :
 
 ***
 
-#### Exigences (Requirements)
+### Exigences (Requirements)
 
 Les exigences représentent les obligations issues d’un framework.\
 Exemples : contrôle des accès, gestion des habilitations, journalisation.
@@ -38,7 +49,7 @@ Chaque exigence :
 
 ***
 
-#### Contrôles (Controls)
+### Contrôles (Controls)
 
 Les contrôles décrivent **comment** une exigence est appliquée concrètement.\
 Exemples : revue périodique des accès, procédure d’habilitation.
@@ -51,9 +62,9 @@ Un contrôle :
 
 ***
 
-#### Scénarios de risque (Risk scenarios)
+### Scénarios de risque (Risk scenarios)
 
-Les scénarios de risque décrivent les événements redoutés.\
+Les scénarios de risque décrivent les événements redoutés. Ils s’affichent sous le nom **Risques** dans l’application.\
 Exemple : accès non autorisé à des données sensibles.
 
 Les contrôles permettent :
@@ -63,7 +74,7 @@ Les contrôles permettent :
 
 ***
 
-#### Tests
+### Tests
 
 Les tests servent à vérifier l’efficacité des contrôles.\
 Exemples : revue récurrente des accès, délégation de validation.
@@ -76,7 +87,7 @@ Un test :
 
 ***
 
-#### Campagnes de tests (Test campaigns)
+### Campagnes de tests (Test campaigns)
 
 Les campagnes permettent d’orchestrer les tests à grande échelle :
 
@@ -86,7 +97,7 @@ Les campagnes permettent d’orchestrer les tests à grande échelle :
 
 ***
 
-#### Preuves (Evidences)
+### Preuves (Evidences)
 
 Les preuves démontrent la conformité.\
 Exemples : politiques, procédures, rapports de revue d’accès.
@@ -99,7 +110,7 @@ Une preuve :
 
 ***
 
-#### Audits de conformité (Compliance audits)
+### Audits de conformité (Compliance audits)
 
 Les audits permettent d’évaluer le niveau de conformité :
 
@@ -141,11 +152,11 @@ Objectif : **éviter les doublons** et piloter la conformité de manière transv
 
 ### Relations clés entre les objets
 
-* **Framework → Exigences** : 1 → N
-* **Exigences ↔ Contrôles** : N ↔ N
-* **Contrôles ↔ Tests** : N ↔ N
-* **Tests → Preuves** : 1 → N
-* **Contrôles → Scénarios de risque** : N ↔ N
+* un **framework** contient plusieurs **exigences** (1 à N),
+* **exigences** et **contrôles** : relation N à N,
+* **contrôles** et **tests** : relation N à N,
+* un **test** est appuyé par plusieurs **preuves** (1 à N),
+* **contrôles** et **scénarios de risque** : relation N à N.
 
 Un même contrôle (ex. revue des accès) peut ainsi :
 
@@ -153,6 +164,22 @@ Un même contrôle (ex. revue des accès) peut ainsi :
 * satisfaire une exigence ISO 27001,
 * réduire plusieurs scénarios de risque.
 
-**Schéma explicatif**
+Schéma explicatif :
 
-<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Relations entre frameworks, exigences, contrôles, tests, preuves et scénarios de risque"><figcaption></figcaption></figure>
+
+***
+
+## Statistiques
+
+**Conformité** > **Statistiques** ouvre le **Tableau de bord de conformité**, qui consolide tous les projets de l’espace de travail. Filtrez-le par **Statuts** (phase du projet), **Unités organisationnelles** et **Périmètres**.
+
+Le tableau de bord contient :
+
+* des indicateurs globaux. Contrôles : **Total de contrôles**, **Contrôles validés**, **Non implémentés** et **Contrôles orphelins** (sans exigence associée). Tests : **Total de tests**, **Tests validés**, **Tests en échec** et **Preuves manquantes**. Audits : **Total d'audits**, **Audits terminés** et **Conformité moyenne**, avec la répartition des exigences entre **Conforme**, **Partiellement conforme**, **Non conforme** et **Non applicable** ;
+* **Progression des frameworks** : pour chaque framework, le nombre de projets et l'avancement des contrôles, des tests, des exigences et des risques ;
+* **Projets par statut** : la répartition des projets selon leur phase ;
+* **Conformité par périmètre** : le niveau de conformité de chaque périmètre.
+
+<figure><img src="../../.gitbook/assets/compliance-statistics-1.png" alt="Tableau de bord de conformité avec les indicateurs globaux, la progression des frameworks et la conformité par périmètre"><figcaption></figcaption></figure>

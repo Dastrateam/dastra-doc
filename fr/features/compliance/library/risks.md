@@ -13,11 +13,11 @@ Les risques sont un **élément clé de pilotage** : ils permettent de mesurer l
 
 ***
 
-### Risques et contrôles : une relation centrale
+## Risques et contrôles : une relation centrale
 
-Un point essentiel à comprendre est que **les risques ne sont jamais isolés**.
+**Les risques ne sont jamais isolés.**
 
-👉 Dans Dastra :
+Dans Dastra :
 
 * un **risque est couvert par un ou plusieurs contrôles**
 * un **contrôle contribue à réduire un ou plusieurs risques**
@@ -32,9 +32,9 @@ Cette relation permet de passer d’une approche déclarative à une **gestion o
 
 ***
 
-### Vue bibliothèque des risques
+## Vue bibliothèque des risques
 
-<figure><img src="../../../.gitbook/assets/compliance-library-risks-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-risks-list.png" alt="Bibliothèque de risques avec la liste des risques"><figcaption></figcaption></figure>
 
 La bibliothèque des risques offre une vision globale des risques identifiés, avec notamment :
 
@@ -43,7 +43,7 @@ La bibliothèque des risques offre une vision globale des risques identifiés, a
 * les niveaux d’impact et de probabilité initiaux,
 * des filtres pour faciliter l’analyse transverse.
 
-👉 Cette vue permet :
+Cette vue permet :
 
 * d’identifier les risques majeurs,
 * de vérifier leur couverture par des contrôles,
@@ -51,11 +51,11 @@ La bibliothèque des risques offre une vision globale des risques identifiés, a
 
 ***
 
-### Création et description d’un risque
+## Création et description d’un risque
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-library-risk-edit-form.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-risk-edit-form.png" alt="Fenêtre d'édition d'un risque avec le nom, la référence, la description et l'évaluation"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -69,11 +69,11 @@ Lors de la création ou de l’édition d’un risque, l’utilisateur renseigne
 
 ***
 
-### Évaluation du risque
+## Évaluation du risque
 
-Chaque risque fait l’objet de deux évaluations distinctes :
+Chaque risque fait l’objet de deux évaluations saisies, le risque initial et le risque résiduel, auxquelles s’ajoute un niveau calculé, le risque courant :
 
-#### Risque initial
+### Risque initial
 
 Le **risque initial** correspond au niveau de risque **avant la mise en place des contrôles**.
 
@@ -86,21 +86,29 @@ Ces deux dimensions sont positionnées sur une **grille de risques** standardis�
 
 ***
 
-#### Risque résiduel
+### Risque résiduel
 
 Le **risque résiduel** correspond au niveau de risque **après application des contrôles associés**.
 
-👉 La comparaison entre risque initial et risque résiduel permet :
+La comparaison entre risque initial et risque résiduel permet :
 
 * de mesurer l’efficacité des contrôles,
 * de visualiser la réduction du risque,
 * de justifier les choix de remédiation.
 
-📌 À ce stade, la **grille de risques est fixe** et commune à l’ensemble des risques, afin de garantir une évaluation homogène et comparable.
+À ce stade, la **grille de risques est fixe** et commune à l’ensemble des risques, afin de garantir une évaluation homogène et comparable.
 
 ***
 
-### Association des contrôles
+### Risque courant
+
+Dans un projet, Dastra affiche aussi le **risque courant**. Il représente le niveau de risque à l’instant T, en fonction de l’état réel d’avancement des actions de remédiation et des contrôles. Il évolue donc entre le risque initial et le risque résiduel.
+
+Les trois niveaux sont visibles côte à côte dans la vue **Cartographie** de l’onglet **Risques** d’un projet (voir [Implémentation du projet](../projects/implement.md)).
+
+***
+
+## Association des contrôles
 
 {% columns %}
 {% column %}
@@ -114,17 +122,17 @@ L’association permet :
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-library-risk-controls-search.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-risk-controls-search.png" alt="Recherche de contrôles à associer à un risque"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Association des menaces
+## Association des menaces
 
 Les risques peuvent également être reliés à des **menaces**, qui représentent les **événements ou causes** susceptibles de déclencher le risque.
 
-👉 Exemple :
+Exemple :
 
 * **Menace** : absence de supervision des logs IA
 * **Risque** : fuite d’informations via requêtes IA
@@ -133,7 +141,13 @@ Cette distinction permet une analyse plus fine et plus structurée des scénario
 
 ***
 
-### Pourquoi intégrer les risques dans la bibliothèque
+## Fusion de risques
+
+Comme pour les contrôles et les tests, la bibliothèque de risques peut contenir des doublons. Sélectionnez au moins deux risques, puis cliquez sur **Fusionner** dans les actions groupées, ou sur **Fusionner** dans la fenêtre d’édition d’un risque. L’assistant est le même que pour les contrôles : choisissez la **version de référence** et les champs à reporter (voir [Contrôles](controls.md)). La fusion est irréversible.
+
+***
+
+## Pourquoi intégrer les risques dans la bibliothèque
 
 La centralisation des risques dans la bibliothèque permet :
 

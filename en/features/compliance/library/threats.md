@@ -9,22 +9,22 @@ description: >-
 In Dastra, a threat represents the **triggering factor** of a risk:\
 it describes _how_ or _why_ a risk can materialize.
 
-👉 Threats enrich risk analysis without making its assessment more complex.
+Threats enrich risk analysis without making its assessment more complex.
 
 ***
 
-### Threats, risks and controls: causal logic
+## Threats, risks and controls: causal logic
 
 The Dastra model is based on a simple and readable chain:
 
-> **Threat → Risk → Controls → Tests**
+> **Threat** > **Risk** > **Controls** > **Tests**
 
 * A **threat** describes a situation, a behavior or an event
 * A **risk** describes the potential impact for the organization
 * **Controls** aim to limit the occurrence or the effects of the risk
 * **Tests** make it possible to verify the effectiveness of the controls
 
-📌 Example:
+Example:
 
 * **Threat**: lack of monitoring of AI logs
 * **Risk**: information leakage through AI queries
@@ -33,9 +33,9 @@ The Dastra model is based on a simple and readable chain:
 
 ***
 
-### Threat library view
+## Threat library view
 
-<figure><img src="../../../.gitbook/assets/image-501.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-501.png" alt="Threat library with the list of threats"><figcaption></figcaption></figure>
 
 The threat library centralizes all the identified threats, with:
 
@@ -43,7 +43,7 @@ The threat library centralizes all the identified threats, with:
 * their creation date,
 * filters to facilitate navigation.
 
-👉 This view makes it possible to:
+This view makes it possible to:
 
 * reuse existing threats,
 * ensure consistent terminology,
@@ -51,7 +51,7 @@ The threat library centralizes all the identified threats, with:
 
 ***
 
-### Creating and managing a threat
+## Creating and managing a threat
 
 {% columns %}
 {% column %}
@@ -65,7 +65,7 @@ When creating or editing a threat, the user provides:
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-502.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-502.png" alt="Threat edit window"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -74,7 +74,7 @@ threats do not carry a quantified assessment and are not linked directly to cont
 
 ***
 
-### Association with risks
+## Association with risks
 
 A threat is associated with **one or more risks**.
 
@@ -84,11 +84,11 @@ This association makes it possible to:
 * improve the understanding of causes,
 * strengthen the consistency of the overall analysis.
 
-👉 The same threat can contribute to several risks, and vice versa.
+The same threat can contribute to several risks, and vice versa.
 
 ***
 
-### Why use threats
+## Why use threats
 
 Using threats makes it possible to have:
 
@@ -100,7 +100,13 @@ Threats complement the analysis without adding to the operational management bur
 
 ***
 
-### Summary
+## Merging threats
+
+The threat library merges like the risk library: select at least two threats, then click **Merge** in the bulk actions, or in the edit window of a threat. Choose the **reference version** and the fields to carry over (see [Controls](controls.md)). The merge is irreversible.
+
+***
+
+## Summary
 
 Threats are a **clarification tool**.\
 They make it possible to better understand **the origin of risks**, and therefore to better justify the controls that are in place.
