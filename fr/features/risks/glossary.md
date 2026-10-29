@@ -1,13 +1,14 @@
 # Glossaire
 
-Avant de commencer, voici quelques définitions importantes :
+Voici les termes utilisés dans le module de gestion des risques.
 
-* **La probabilité:** correspond à l'évaluation de la fréquence d'occurrences d'un risque. C'est un score évalué de manière empirique (note sur 5 traditionnellement). Chaque niveau de risque correspond à une fréquence d'apparition du risque.
-* **Impact:** correspond à l'évaluation de la conséquence d'un évènement redouté sur l'entreprise.
-* **Risque courant:** le niveau de risque tel qu'il est à l'instant T en fonction du niveau de remédiation de vos points de contrôles. Il est calculé de cette façon : {Risque courant} = {Risque initial} - ({Risque initial} - {Risque résiduel}) \* {Taux de remédiation du risque}.
-* **Risque résiduel:** c’est le risque subsistant après la mise en œuvre de dispositifs de maîtrise (contrôle interne).
-* **Risque initial (ou inhérent):** c’est le risque théorique lié à l’activité. On peut aussi le définir comme le risque initial, avant toute mesure de maîtrise (contrôle interne). Il est calculé avec la multiplication de l'impact brut x par la probabilité brute.
-* **Evènement redouté:** désigne l'événement incertain qu'on va caractériser en fréquence et gravité
-* **Risque:** la combinaison entre un évènement redouté et l'évaluation de l'impact et de la probabilité sur un objet (traitement, acteur (sous-traitant), application ou entité). D'autres critères peuvent entrer en ligne de compte tels que les menaces (les types de risque à l'origine du risque) ou les sources (les supports ou localisation du risque).
-* **Point de contrôle:** (ou dispositif de management des risques). La conformité aux points de contrôle est le moyen de remédier à 100% aux risques et donc de tendre vers un risque courant = risque résiduel. Dans Dastra, le listing des points de contrôle est managé au niveau de l'évènement redouté.
-* **Remédiation:** il s'agit du pourcentage de conformité du plan de contrôle d'un risque. Ex: si 2 points de contrôles conformes sur 3 = 66% de taux de remédiation.
+* **Vraisemblance (probabilité) :** évaluation de la fréquence d'occurrence d'un risque. C'est un score évalué de manière empirique, de 1 à 5 avec l'échelle par défaut. Chaque niveau correspond à une fréquence d'apparition du risque. L'application l'affiche sous le libellé **Vraisemblance**.
+* **Gravité (impact) :** évaluation de la conséquence d'un évènement redouté sur l'organisation. L'application l'affiche sous le libellé **Gravité**.
+* **Risque initial (ou inhérent) :** risque théorique lié à l'activité, avant toute mesure de maîtrise (contrôle interne). Il se calcule en multipliant l'impact initial par la probabilité initiale.
+* **Risque résiduel :** risque subsistant après la mise en œuvre des dispositifs de maîtrise (contrôle interne). Il se calcule en multipliant l'impact résiduel par la probabilité résiduelle.
+* **Risque courant :** niveau de risque à l'instant T, en fonction du niveau de remédiation de vos points de contrôle. Il se calcule ainsi : {Risque courant} = {Risque initial} - ({Risque initial} - {Risque résiduel}) \* {Taux de remédiation du risque}. Sans réponse aux points de contrôle, le risque courant est égal au risque initial.
+* **Évènement redouté :** évènement incertain que l'on caractérise par sa fréquence et sa gravité. C'est la conséquence de l'occurrence d'un risque.
+* **Type de risque :** regroupe un évènement redouté, ses menaces, ses sources, ses points de contrôle et une pré-évaluation. Il se réutilise sur autant d'objets que nécessaire.
+* **Risque :** combinaison d'un type de risque et de son évaluation (impact et probabilité) sur un objet : unité organisationnelle, traitement, acteur (par exemple un sous-traitant), actif ou système d'IA. Les menaces (les évènements à l'origine de l'évènement redouté) et les sources (qui ou quoi peut les provoquer) complètent la description.
+* **Point de contrôle :** (ou dispositif de management des risques). Respecter les points de contrôle est le moyen de ramener le risque courant vers le risque résiduel. Dans Dastra, la liste des points de contrôle est rattachée au type de risque.
+* **Remédiation (taux de remédiation) :** part des mesures de contrôle effectivement en place pour un risque. Il se calcule ainsi : somme des points de la réponse en cours de chaque point de contrôle, divisée par la somme des points maximum de chaque point de contrôle, arrondie au pourcentage supérieur. Les réponses **Non applicable** sont exclues du calcul ; un point de contrôle sans réponse compte zéro point. Par exemple, avec trois points de contrôle dont les réponses ne valent que 0 ou 1 point, deux points de contrôle conformes sur trois donnent 67 % de remédiation.

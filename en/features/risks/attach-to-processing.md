@@ -1,64 +1,48 @@
 ---
 description: >-
-  Dastra makes it possible to map the risks linked to data processing in order
-  to quickly assess the level of priority and the actions to be taken on a data
-  processing.
+  Dastra lets you map the risks linked to processing activities to quickly
+  assess the level of priority and the actions to take on a processing activity.
 ---
 
 # Attach a risk to a processing activity
 
-## Adding a risk to a processing of data
+## Add a risk to a processing activity
 
-To add a risk to a processing of data, go to the risks tab on the processing of data edit page.
+1. Open the processing activity in the record of processing activities.
+2. In the row of buttons under the title, click **Risks**. The button shows the number of risks already attached to the processing activity.
 
-<figure><img src="../../.gitbook/assets/contracts-detail-assets-tab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risks-attach-1.png" alt="Processing activity page with the Risks button and its counter in the button row"><figcaption><p>The Risks button of a processing activity</p></figcaption></figure>
 
-and click on the "Create a risk assessment" button.
+3. In the panel that opens, click **Create a risk**.
 
-<figure><img src="../../.gitbook/assets/risk-create-risk-assessment-button.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risks-attach-2.png" alt="Risks panel of a processing activity with the matrix, the attached risks and the Create a risk button"><figcaption><p>The Risks panel of a processing activity</p></figcaption></figure>
 
-You will be taken to a risk edit page and you can start to fill in the information about the risk you have identified.&#x20;
+You land on the risk edit page, with the processing activity and its organizational unit already filled in. Start entering the information about the risk you have identified, as described in [Identify](process/identify.md).
 
-You can then find all the risks in your register in the risk repository.
+You can also attach a risk to a processing activity from the risk management module: open **Risk management** > **Risks**, choose the **Processing activity** tab and click **Create a risk**.
 
-<figure><img src="../../.gitbook/assets/risk-assessment-heatmap-panel.png" alt=""><figcaption></figcaption></figure>
+## View the risks of a processing activity
 
-You can also attach a risk to a treatment directly from the risk management module.&#x20;
+To see the risks of all your processing activities, open **Risk management** > **Risks** and choose the **Processing activity** tab. Each row shows the risk type, the processing activity concerned and the initial, current and residual risk levels.
 
-To do this, simply go to the "Risks" tab and "create a risk assessment".
+<figure><img src="../../.gitbook/assets/risks-list-1.png" alt="List of the risks of the Processing activity tab, with initial, current and residual risks"><figcaption><p>The risks attached to processing activities</p></figcaption></figure>
 
-## Visualising the risks of a processing
+## Risk level assessment
 
-To view the risks on processings, it is necessary to go to the Dastra Risks module.
+The risk level is calculated with the following formula:
 
-<figure><img src="../../.gitbook/assets/risk-dashboard-overview.png" alt=""><figcaption></figcaption></figure>
+`Risk level = probability value x impact value`
 
-You have to go to the "Risks" tab and you will have a visualization of all the risks sorted according to the elements related to each risk.
+Dastra shows it in points out of the scale maximum (for example 16/25) and as a percentage. The percentage is calculated with the following formula:
 
-## Risk assessment
+`(impact x probability) / maximum score of the active risk scale`
 
-The risk level is calculated according to the following formula :
+The maximum score of the scale is 25 with the default 5-level scale (5 x 5), 16 with the 4-level scale and 9 with the 3-level scale. See [Configure the risk scale](process/assess.md#configure-the-risk-scale).
 
-```
-Risk level = probability value X impact value
-```
-
-In the dashboard, a risk module shows the number of risks, the processings with the highest risks, the overall risk and the level of the processing with the highest risk.
-
-The overall risk is calculated according to the following formula:
-
-```
-sum (probability* impact ) / number of risks
-```
-
-The level of the processing with the highest risk is calculated according to the following formula:
-
-```
-((impact x probability) / 25)
-```
+The workspace dashboard contains a **Risk management** module. It shows the averages, as percentages, of the initial, current and residual risk, the average remediation, the number of risks per step (**Total**, **Identified**, **Pending response**) and the breakdown of low, medium and high residual risks. Each average is based on the percentages calculated above.
 
 ## Go further
 
 {% content-ref url="../tasks/README.md" %}
-[planifier](../tasks/README.md)
+[Planning](../tasks/README.md)
 {% endcontent-ref %}
