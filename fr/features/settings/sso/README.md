@@ -1,5 +1,8 @@
 ---
-description: Cette page détaille la mise en place du SSO au sein de Dastra
+description: >-
+  Mettre en place l'authentification unique (SSO) de votre organisation dans
+  Dastra : protocoles, options des connexions, création automatique des
+  utilisateurs et gestion des logins.
 ---
 
 # Single Sign On (SSO)
@@ -12,7 +15,7 @@ L'entreprise peut utiliser **son propre système d'authentification** à la plac
 
 **Le fonctionnement est le suivant :**
 
-Un utilisateur (**User Agent**) va solliciter une connexion au fournisseur de service (**Service Provider**) qui ira solliciter un fournisseur d'identité (**Identity Provider**) qui authentifiera l'utilisateur. Cette authentification est ensuite renvoyée adressée au fournisseur du service qui acceptera la demande de connexion de l'utilisateur.
+Un utilisateur (**User Agent**) va solliciter une connexion au fournisseur de service (**Service Provider**) qui ira solliciter un fournisseur d'identité (**Identity Provider**) qui authentifiera l'utilisateur. Cette authentification est ensuite renvoyée au fournisseur de service, qui acceptera la demande de connexion de l'utilisateur.
 
 Dans notre cas, le User Agent est le **navigateur d'un utilisateur de Dastra**. Le Service Provider est **Dastra** et l'Identity Provider est votre **fournisseur d'authentification favori** (par exemple : Active Directory).
 
@@ -20,16 +23,24 @@ Dans notre cas, le User Agent est le **navigateur d'un utilisateur de Dastra**. 
 
 ## Mise en place
 
-Au sein d'un abonnement à Dastra, vous avez la possibilité, si vous avez souscrit à la fonctionnalité, de gérer un ou plusieurs login SSO. Pour accéder à la configuration du SSO, allez sur [la page de configuration des logins SSO](https://app.dastra.eu/general-settings/sso) dans l'onglet sécurité du panel de configuration du compte d'abonnement.
+Un abonnement à Dastra peut compter un ou plusieurs logins SSO, si la fonctionnalité est incluse dans votre abonnement. Pour les gérer, ouvrez **Paramètres de l'organisation** (en bas du menu **Réglages espace de travail**), puis **Single sign on**. Vous arrivez sur [la page de configuration des logins SSO](https://app.dastra.eu/general-settings/sso).
 
 {% hint style="info" %}
-**Attention** : vous devez être propriétaire de l'organisation pour accéder à cette page.
+Seul un propriétaire de l'organisation accède à cette page.
 {% endhint %}
 
-Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml.md) et [**Open ID**](openid.md). Pour accéder à l'aide de configuration, cliquez sur les liens ci-dessous.
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-1.png" alt="La page Single sign on avec le bloc des domaines e-mail autorisés, la liste des connexions SSO et la carte SCIM"><figcaption><p>La page <strong>Single sign on</strong></p></figcaption></figure>
+
+La page réunit trois blocs :
+
+* **Domaines email autorisés**, en haut : voir [Domaines emails](../email-domains.md).
+* La liste de vos connexions SSO, que vous alimentez avec **Ajouter un login SSO**.
+* **SCIM**, en bas : voir [SCIM](../scim.md).
+
+Pour créer une connexion, cliquez sur **Ajouter un login SSO**, puis choisissez le protocole. Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml.md) et [**OpenID**](openid.md). Pour accéder à l'aide de configuration, utilisez les liens ci-dessous.
 
 {% content-ref url="saml.md" %}
-[saml-2.md](saml.md)
+[saml.md](saml.md)
 {% endcontent-ref %}
 
 {% content-ref url="openid.md" %}
@@ -40,69 +51,97 @@ Dastra propose deux protocoles d'authentification unique, [**SAML 2**](saml.md) 
 [adfs.md](adfs.md)
 {% endcontent-ref %}
 
-## Comment activer pour tous les utilisateurs de votre organisation le SSO ?
+{% content-ref url="entra-id.md" %}
+[entra-id.md](entra-id.md)
+{% endcontent-ref %}
 
-### Mise en place :
+{% content-ref url="okta.md" %}
+[okta.md](okta.md)
+{% endcontent-ref %}
 
-* Cliquez sur votre configuration SSO
-* Cocher la case "Forcer pour tous les utilisateurs"
+{% content-ref url="known-problems.md" %}
+[known-problems.md](known-problems.md)
+{% endcontent-ref %}
 
-<figure><img src="../../../.gitbook/assets/settings-sso-connection-settings-general.png" alt=""><figcaption></figcaption></figure>
+## Champs du formulaire
 
-### Gestion des d'utilisateurs exemptés de login SSO
+Le formulaire d'une connexion SSO s'ouvre dans un panneau latéral qui compte trois sections.
 
-Dans certains cas, vous souhaitez **désactiver le SSO pour certains utilisateurs** (par exemple un administrateur de sécurité, un compte de service, un utilisateur qui n'est pas dans votre Active Directory...), dans ce cas il est possible de renseigner des utilisateurs spécifiques qui ne seront pas redirigés vers le login SSO de votre organisation. Il est recommandé de nommer un utilisateur avec un compte de service local, ce qui permet de gérer les cas de dysfonctionnement du SSO dans le cas par exemple d'une panne du fournisseur d'identité ou un problème deconfiguration.
+**1. Généralités**
 
-Ces utilisateurs pourront se connecter à l'application **en utilisant leur mot de passe**.
+* **Intitulé de la connexion SSO** : le nom de la connexion dans la liste, 80 caractères au maximum.
+* **Forcer pour tous les utilisateurs** : tous les utilisateurs doivent se connecter avec ce login SSO. Voir [Activer le SSO pour tous les utilisateurs](#activer-le-sso-pour-tous-les-utilisateurs).
+* **Activer** : quand la connexion est désactivée, la connexion par mot de passe reste en vigueur.
+* **Assigné par défaut aux nouveaux utilisateurs invités** : Dastra sélectionne cette connexion par défaut lorsque vous invitez un nouvel utilisateur.
 
-Vous pouvez nommer des utilisateurs exemptés de SSO en sélectionnant les utilisateurs de votre organisation dans le champ suivant :
+**2. Configuration**
 
-<figure><img src="../../../.gitbook/assets/settings-sso-exempt-users-field.png" alt=""><figcaption></figcaption></figure>
+* Les champs propres au protocole : voir [SAML 2](saml.md) et [OpenID](openid.md).
+* **Le nom du claim contenant l'adresse email** : le nom du claim dans lequel votre fournisseur d'identité renvoie l'adresse e-mail de l'utilisateur. Si Dastra ne retrouve pas les utilisateurs, voir [Problèmes connus](known-problems.md).
 
-## Comment activer le provisionnement automatique des utilisateurs ?
+**3. Création automatique des utilisateurs**
 
-Si vous souhaitez que les utilisateurs de votre fournisseur d'identité n'ait pas besoin de se créer des comptes pour accéder à l'entité, vous pouvez cocher la case "provisionnement automatique des utilisateurs". Si vous fournissez à vos utilisateurs une url de fournisseur SSO comme celle-ci :
+* **Utilisateur créé si l'utilisateur n'a jamais été invité dans Dastra** : active la création automatique des comptes. Voir [Activer le provisionnement automatique des utilisateurs](#activer-le-provisionnement-automatique-des-utilisateurs).
+* **Le rôle assigné par défaut à tous les espaces de travail de l'abonnement si l'utilisateur est créé** : facultatif.
+* **Sélection d'un espace de travail spécifique** : facultatif. Quand vous choisissez un espace de travail, un champ apparaît pour le nom du claim de groupe : voir [Binding des équipes](#binding-des-equipes).
+
+## Activer le SSO pour tous les utilisateurs
+
+1. Dans la liste des connexions SSO, cliquez sur la connexion concernée.
+2. Dans la section **Généralités**, activez **Forcer pour tous les utilisateurs**.
+
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-3.png" alt="La section Généralités du formulaire SSO, avec l'option Forcer pour tous les utilisateurs activée et le champ des utilisateurs exemptés"><figcaption><p>La section <strong>Généralités</strong> de la connexion</p></figcaption></figure>
+
+### Gestion des utilisateurs exemptés de login SSO
+
+Dans certains cas, vous souhaitez **désactiver le SSO pour certains utilisateurs** (par exemple un administrateur de sécurité, un compte de service, un utilisateur qui n'est pas dans votre Active Directory). Vous pouvez renseigner des utilisateurs spécifiques, qui ne seront pas redirigés vers le login SSO de votre organisation. Nous recommandons de nommer au moins un utilisateur disposant d'un compte de service local : il permet de gérer un dysfonctionnement du SSO, par exemple une panne du fournisseur d'identité ou une erreur de configuration.
+
+Ces utilisateurs se connectent à l'application **avec leur mot de passe**.
+
+Pour les nommer, sélectionnez des utilisateurs de votre organisation dans le champ **Utilisateurs spécifiques exemptés de SSO (par exemple, les administrateurs de sécurité)**. Ce champ apparaît lorsque **Forcer pour tous les utilisateurs** est activé.
+
+## Activer le provisionnement automatique des utilisateurs
+
+Si vous souhaitez que les utilisateurs de votre fournisseur d'identité n'aient pas besoin de se créer un compte pour accéder à l'organisation, activez **Utilisateur créé si l'utilisateur n'a jamais été invité dans Dastra** dans la section **Création automatique des utilisateurs**.
+
+Le provisionnement automatique ne fonctionne que si les utilisateurs se connectent avec le lien de votre connexion SSO. Il ne fonctionne pas depuis la page de login classique. Ce lien a la forme suivante :
 
 ```
 https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={id de votre provider}
 ```
 
-Vous pouvez retrouver récupérer ce lien en cliquant sur ce bouton :<br>
+Les adresses du lien sont celles de votre région. Pour le récupérer, cliquez sur le bouton **Copier le lien** de la carte de la connexion, à droite de **Tester**, puis transmettez-le à vos utilisateurs.
 
-<figure><img src="../../../.gitbook/assets/settings-sso-connection-card-copy-button.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-2.png" alt="La carte d'une connexion SSO avec les boutons Tester et Copier le lien"><figcaption><p>Le bouton <strong>Copier le lien</strong> de la carte</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/sso-config-sample.png" alt=""><figcaption></figcaption></figure>
-
-Dans le cas d'une authentification validée, ils auront automatiquement un compte créé dans Dastra. Les propriétaires de l'organisation reçoivent alors un e-mail qui indique le nom et l'adresse du compte créé, la date et l'heure, la connexion SSO à l'origine de la création, l'espace de travail concerné le cas échéant, et un lien vers la page « Utilisateurs », pour attribuer sans délai les droits attendus.
-
-Le provisionnement automatique ne fonctionne que si ils transmettent ce lien à leurs utilisateurs, ils ne peuvent pas le faire en passant par la page de login classique.
+Après une authentification validée, le compte est créé automatiquement dans Dastra. Les propriétaires de l'organisation reçoivent alors une notification qui indique le nom et l'adresse du compte créé, la date et l'heure, la connexion SSO à l'origine de la création, le rôle attribué par défaut et l'espace de travail concerné le cas échéant. Elle renvoie vers la page **Utilisateurs**, pour attribuer sans délai les droits attendus.
 
 {% hint style="warning" %}
-Si le compte de l'utilisateur est supprimé ou invalidé dans le fournisseur d'authentification, son compte ne sera pas effacé dans Dastra, il ne pourra en revanche plus se connecter. Vous avez la possibilité d'épurer ses comptes[ via le gestionnaire d'utilisateur de l'abonnement](https://app.dastra.eu/general-settings/users)
+Si le compte d'un utilisateur est supprimé ou invalidé dans le fournisseur d'authentification, son compte n'est pas effacé dans Dastra, mais il ne peut plus se connecter. Vous pouvez épurer ces comptes depuis [la gestion des utilisateurs de l'abonnement](https://app.dastra.eu/general-settings/users).
 {% endhint %}
 
-Vous pouvez choisir **le rôle assigné par défaut** sur toutes les organisations associées à votre abonnement.
+Vous pouvez choisir **le rôle assigné par défaut** à tous les espaces de travail de l'abonnement.
 
-![](../../../.gitbook/assets/settings-sso-user-creation-options.png)
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-4.png" alt="La section Création automatique des utilisateurs, avec le rôle par défaut, l'espace de travail et le nom du claim de groupe"><figcaption><p>La section <strong>Création automatique des utilisateurs</strong></p></figcaption></figure>
 
 {% hint style="info" %}
-Pour l'instant, Dastra ne supporte pas le binding des rôles via les propriétés du serveur d'authentification. Si cette fonctionnalité est importante, vous pouvez nous le remonter via la [page de support](https://app.dastra.eu/general-settings/support).
+Dastra ne prend pas en charge, pour l'instant, le binding des rôles à partir des propriétés du serveur d'authentification. Si cette fonctionnalité est importante pour vous, signalez-le via la [page de support](https://app.dastra.eu/general-settings/support).
 {% endhint %}
 
 ### Binding des équipes
 
-Il est possible de binder les équipes d'un espace de travail sur une propriété (Claim) renvoyé par votre serveurs d'authentification.
+Il est possible de lier les équipes d'un espace de travail à une propriété (claim) renvoyée par votre serveur d'authentification. Sélectionnez l'espace de travail dans **Sélection d'un espace de travail spécifique**, puis renseignez le nom du claim de groupe dans le champ qui apparaît dessous : Dastra provisionne les équipes à partir de ce claim.
 
-<figure><img src="../../../.gitbook/assets/settings-sso-user-provisioning-options.png" alt=""><figcaption></figcaption></figure>
+## Administrer les logins des utilisateurs
 
-## Comment administrer les logins des utilisateurs ?
+Vous configurez le type de login de chaque utilisateur depuis [la gestion des utilisateurs de l'abonnement](https://app.dastra.eu/general-settings/users) (**Paramètres de l'organisation** > **Utilisateurs**). Ouvrez le profil de l'utilisateur et choisissez le login SSO privilégié dans **Mode de connexion par défaut**. L'utilisateur qui se connecte à Dastra avec son adresse e-mail est alors redirigé vers la page de login du fournisseur d'authentification que vous avez mis en place.
 
-Vous pouvez configurer le type de login des utilisateurs en vous rendant dans [la page de gestion des utilisateurs de l'abonnement](https://app.dastra.eu/general-settings/users) . En vous rendant dans un profil utilisateur, il sera possible de choisir le login SSO privilégié. Dès lors, l'utilisateur qui se connecte à Dastra avec son adresse email, sera automatiquement redirigé vers la page de login du fournisseur d'authentification que vous avez mis en place.
+Lorsque le SSO est forcé pour tous les utilisateurs, le profil affiche à la place un message qui l'indique.
 
-![](../../../.gitbook/assets/settings-sso-default-login-mode.png)
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="Le profil d'un utilisateur avec la liste Mode de connexion par défaut"><figcaption><p>Le champ <strong>Mode de connexion par défaut</strong></p></figcaption></figure>
 
-Vous pourrez également définir le type de login lors de l'invitation de nouveaux utilisateurs.
+Vous pouvez également définir le type de login lors de l'invitation de nouveaux utilisateurs.
 
-### Que faire si je ne parviens pas à me logger en SSO ?
+## En cas de problème de connexion SSO
 
-Contactez immédiatement [le support](../../../getting-started/support/request.md)
+Consultez d'abord les [problèmes connus](known-problems.md). Si le blocage persiste, contactez immédiatement [le support](../../../getting-started/support/request.md).

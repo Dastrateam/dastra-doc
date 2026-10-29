@@ -23,7 +23,7 @@ Un message d'avertissement indique « Cette action n'est pas réversible ». En 
 * Les adresses **IPv4 et IPv6** sont acceptées.
 * Il n'y a pas de limite au nombre de règles.
 
-## Qui est concerné ?
+## Utilisateurs concernés
 
 Le filtrage s'applique à **tous les utilisateurs de l'organisation, administrateurs compris**. Il n'existe ni exemption pour les administrateurs, ni liste d'exemptions.
 
@@ -36,7 +36,7 @@ Il concerne tous les modes de connexion, car le contrôle est réalisé après l
 
 Les comptes de service locaux exemptés du SSO ne sont **pas** exemptés du filtrage IP.
 
-## Quand le contrôle est-il effectué ?
+## Moment du contrôle
 
 L'adresse IP est vérifiée au moment de la connexion, puis à chaque **renouvellement du jeton** d'authentification. Une session déjà ouverte n'est donc pas coupée instantanément si l'utilisateur change de réseau (par exemple du bureau au télétravail) : elle est interrompue au prochain renouvellement du jeton.
 
@@ -48,7 +48,7 @@ Durées de validité des jetons :
 | Session standard | 1 heure |
 | Option « Se souvenir de moi » | 30 jours |
 
-## Quelle adresse IP est prise en compte ?
+## Adresse IP prise en compte
 
 Dastra utilise l'adresse IP publique vue par son infrastructure d'accès (celle qui reçoit votre requête avant l'application). Un utilisateur qui passe par un VPN ou un proxy d'entreprise est donc filtré sur l'**adresse de sortie** du VPN ou du proxy : c'est cette adresse qu'il faut autoriser.
 

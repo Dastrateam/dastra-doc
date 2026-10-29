@@ -6,36 +6,34 @@ description: >-
 
 # Domaines emails
 
-## A quoi servent ils ?
+Cette page explique comment permettre aux futurs collaborateurs de rejoindre votre organisation sans votre intervention. Elle s'adresse aux propriétaires de l'organisation.
 
-Les domaines emails permettent à vos collaborateurs futurs la possibilité d'être affectés directement à un espace de travail avec le rôle choisi sans action de votre part.
+## Rôle des domaines e-mail
 
-## Comment les utiliser ?
+Les domaines e-mail permettent d'affecter directement vos futurs collaborateurs à un espace de travail, avec le rôle que vous avez choisi, sans action de votre part.
 
-Vous trouverez la configuration des domaines emails dans la configuration générale de votre organisation, partie **sécurité**
+## Configurer les domaines e-mail
 
-<figure><img src="../../.gitbook/assets/settings-email-domains-config.png" alt="Accès à la configuration des domaines email"><figcaption><p>domaines emails configuration</p></figcaption></figure>
+Le bloc **Domaines email autorisés** se trouve en haut de la page **Single sign on** : ouvrez **Paramètres de l'organisation** > **Single sign on**.
 
-Activez ou désactivez la fonctionnalité en cliquant sur le bouton "_Permettre aux utilisateurs_..."
+<figure><img src="../../.gitbook/assets/settings-email-domains-1.png" alt="Le bloc Domaines email autorisés, avec un domaine saisi, l'option activée, le rôle par défaut et l'espace de travail"><figcaption><p>Le bloc Domaines email autorisés, en haut de la page Single sign on</p></figcaption></figure>
 
-Puis choisissez le rôle et l'espace de travail qui seront affectés aux futurs utilisateurs :
+1. Dans **Saisissez vos domaines e-mails (top-level uniquement)**, saisissez chaque domaine (par exemple `dastra.eu`), puis appuyez sur Entrée ou cliquez sur **Ajouter**.
+2. Activez **Permettre aux utilisateurs utilisant des domaines mails enregistrés de rejoindre l'organisation**.
+3. Dans **Rôle par défaut**, choisissez le rôle attribué aux futurs utilisateurs. Le rôle **Invité (aucun accès aux données)** est proposé par défaut.
+4. Dans **Sélection d'un espace de travail spécifique**, choisissez l'espace de travail concerné, ou laissez **Tous les espaces de travail**.
+5. Cliquez sur **Enregistrer**.
 
-<figure><img src="../../.gitbook/assets/settings-email-domains-default-role.png" alt=""><figcaption><p>affectation du rôle et de l'espace de travail</p></figcaption></figure>
-
-Enfin, sauvegardez la configuration en cliquant sur le bouton _Enregistrer_ !
+Le rôle et l'espace de travail ne sont modifiables que lorsque l'option de l'étape 2 est activée.
 
 {% hint style="warning" %}
-**Restrictions** :
+Vous ne pouvez ajouter que des domaines préalablement autorisés, c'est-à-dire des domaines pour lesquels un utilisateur de votre organisation a déjà validé une adresse e-mail.
 
-Vous n'êtes autorisés à ajouter que des domaines emails préalablement autorisés (c'est à dire pour lesquels un utilisateur de votre organisation a validé une adresse mail).
-
-Les domaines de type personnels (gmail, hotmail, etc...) ou identifiés comme "jetables" sont interdits !
+Les domaines de messagerie personnelle (gmail, hotmail, etc.) et les domaines identifiés comme jetables sont refusés.
 {% endhint %}
 
 ## Impact pour les futurs utilisateurs
 
-La prochaine fois qu'un collaborateur s'inscrira sur Dastra, il devra toujours inscrire son adresse mail et valider celle-ci. Cependant, il lui sera maintenant proposé de rejoindre votre organisation !
+Un collaborateur qui s'inscrit sur Dastra doit toujours saisir son adresse e-mail et la valider. Dastra lui propose ensuite de rejoindre votre organisation.
 
-<figure><img src="../../.gitbook/assets/settings-email-domains-join-org.png" alt=""><figcaption></figcaption></figure>
-
-Il pourra ensuite vous rejoindre et commencer à travailler avec vous !
+Il clique sur **Rejoindre** et peut commencer à travailler avec vous.

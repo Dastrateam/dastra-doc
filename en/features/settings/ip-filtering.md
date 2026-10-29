@@ -23,7 +23,7 @@ A warning states "This action is not reversible". In practice, a filtering rule 
 * Both **IPv4 and IPv6** addresses are accepted.
 * There is no limit to the number of rules.
 
-## Who is affected?
+## Affected users
 
 Filtering applies to **all users of the organisation, administrators included**. There is no administrator exemption and no exemption list.
 
@@ -32,11 +32,11 @@ It covers every sign-in method, because the check happens after authentication:
 * username and password;
 * SSO (SAML 2, OpenID, ADFS, Entra, Okta);
 * passkey;
-* magic link or e-mail invitation.
+* magic link or email invitation.
 
 Local service accounts exempted from SSO are **not** exempted from IP filtering.
 
-## When is the check performed?
+## When the check is performed
 
 The IP address is checked at sign-in, then at every **token renewal**. An already open session is therefore not cut instantly if the user changes network (for example from the office to remote work): it ends at the next token renewal.
 
@@ -48,7 +48,7 @@ Token validity:
 | Standard session | 1 hour |
 | "Remember me" | 30 days |
 
-## Which IP address is used?
+## IP address used
 
 Dastra uses the public IP address seen by its access infrastructure (the layer that receives your request before the application). A user going through a VPN or corporate proxy is therefore filtered on the VPN or proxy **exit address**: this is the address you must allow.
 

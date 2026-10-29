@@ -7,13 +7,13 @@ description: >-
 
 # OneDrive & SharePoint / Google Drive integrations
 
-## Why use custom cloud storage?
+## Benefits of custom cloud storage
 
 By default, Dastra's [document management system](../files/README.md) relies on Azure Blob Storage: files are encrypted, scanned for viruses, and redundantly stored on a secondary server. For more details, see the [security documentation](../../security/general.md).
 
 In some organizations, this storage duplicates an existing cloud file system (SharePoint, OneDrive, Google Drive). Dastra integrates natively with these providers to avoid this duplication:
 
-* **Microsoft OneDrive & SharePoint** — a OneDrive or a **SharePoint document library** of your Microsoft 365 tenant;
+* **Microsoft OneDrive & SharePoint**: a OneDrive or a **SharePoint document library** of your Microsoft 365 organization;
 * **Google Drive**.
 
 <figure><img src="../../.gitbook/assets/settings-files-attachment-panel.png" alt="File source selector in the Dastra document manager"><figcaption><p>Files can be stored in Dastra, OneDrive & SharePoint, or Google Drive</p></figcaption></figure>
@@ -33,7 +33,7 @@ In practice, this means:
 
 ## Setting up the integration
 
-Go to **Workspace Settings > Integrations**, then click on **Microsoft OneDrive & SharePoint** or **Google Drive**.
+Open **Workspace settings** > **Integrations**, then click **Microsoft OneDrive & SharePoint** or **Google Drive**.
 
 Click **Add integration**. You will be redirected to the provider's login page, where you will be asked to authorize access to your storage.
 
@@ -43,8 +43,8 @@ After authentication, Dastra lists the drives the connected account can reach. C
 
 | Option | Description | Recommendation |
 | --- | --- | --- |
-| **<Site> / <Library>** (e.g. `Root site / Documents`) | A document library of a SharePoint site of your organization | ✅ Recommended for enterprise use — shared space, not tied to a personal account |
-| **Your personal drive** | Personal OneDrive of the connected account | ⚠️ Avoid in production — grants access to all personal drive files |
+| **<Site> / <Library>** (e.g. `Root site / Documents`) | A document library of a SharePoint site of your organization | Recommended for enterprise use: shared space, not tied to a personal account |
+| **Your personal drive** | Personal OneDrive of the connected account | Avoid in production: grants access to all personal drive files |
 
 Click **Refresh** if a site or library you just created does not appear yet.
 
@@ -62,8 +62,6 @@ By default, Dastra uses the **root of the drive**. You can restrict it to a fold
 
 Dastra then stores its files in this folder, and browsing from Dastra is limited to it: users cannot go above it. This is the simplest way to share a single folder of a SharePoint library with Dastra, without exposing the rest of the library.
 
-<!-- 📸 Screenshot: the OneDrive & SharePoint configuration with the drive selected and the "Root folder" section showing the chosen folder and the "Choose a folder" button -->
-
 <figure><img src="../../.gitbook/assets/settings-files-onedrive-root-folder.png" alt="Choosing the drive and the root folder of the OneDrive & SharePoint integration"><figcaption><p>Choosing the drive and the root folder</p></figcaption></figure>
 
 {% hint style="warning" %}
@@ -74,7 +72,7 @@ If the root folder is deleted or moved in SharePoint or OneDrive, Dastra display
 
 ## Attaching cloud files to a Dastra entity
 
-From any entity (processing activity, task, actor…), you can attach files stored in your cloud:
+From any entity (processing activity, task, stakeholder…), you can attach files stored in your cloud:
 
 1. Open the file panel of the entity
 2. Select the **data source** at the top left of the panel
@@ -82,7 +80,7 @@ From any entity (processing activity, task, actor…), you can attach files stor
 ![](../../.gitbook/assets/settings-files-manager-header.png)
 
 3. Browse your drive via the file manager
-4. Click **Select from manager** to attach the file
+4. Click **Add a file from the library** to attach the file
 
 ![](../../.gitbook/assets/settings-files-select-from-manager.png)
 
@@ -94,11 +92,11 @@ A storage whose use case is deactivated in the integration settings is no longer
 
 ### OneDrive & SharePoint
 
-* The connection uses user OAuth — not the Microsoft Graph API. If the account that set up the integration is deactivated, the connection is interrupted.
+* The connection uses user OAuth, not the Microsoft Graph API. If the account that set up the integration is deactivated, the connection is interrupted.
 * Dastra only works in the chosen drive, and in its root folder when one is set.
 * For enterprise environments, prefer a SharePoint document library over a personal drive.
 
 ### Google Drive
 
-* Only files **created from within Dastra** can be added or modified in Google Drive. Dastra does not have access rights to files created directly in Drive — this is a limitation of the OAuth connector.
+* Only files **created from within Dastra** can be added or modified in Google Drive. Dastra does not have access rights to files created directly in Drive. This is a limitation of the OAuth connector.
 * Files created in Dastra can be shared with other collaborators without restriction.

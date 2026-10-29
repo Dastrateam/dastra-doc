@@ -1,96 +1,89 @@
 ---
-description: Learn how to set up a data collection email box
+description: >-
+  Automatically create objects in Dastra from emails received at dedicated
+  collection addresses.
 ---
 
 # Incoming mail data collection
 
-### **Introduction**
+This integration automatically creates objects in Dastra from emails received at dedicated collection addresses. Dastra provides these addresses and turns each incoming email into an object.
 
-This integration allows you to automatically create objects in Dastra from emails received at dedicated email boxes. Dastra provides these boxes and automates the conversion of incoming emails into objects within the Dastra application.
+Five types of objects can be associated with a collection address:
 
-Five types of objects can be associated with these collection email boxes:
+* tasks;
+* data processing;
+* data subject requests;
+* contracts;
+* data breaches.
 
-* Tasks
-* Data Processing
-* Data Subject Requests
-* Contracts
-* Data Breaches
+## Set up a collection address
 
-### **Setting up a collection email**
+Installing requires the permission to manage integrations in the workspace. You can only have one collection address per object type and per workspace.
 
-To set up a collection email for any of the objects listed above, go to your workspace settings, under the Integrations tab, and select the "Incomin mail data collection" card.
+1. Open **Workspace settings** > **Integrations**, then click the **Incoming mail data collection** card.
 
-<figure><img src="../../.gitbook/assets/audit-questionnaire-type-picker.png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-1.png" alt="The integrations catalog with the Incoming mail data collection card"><figcaption><p>The Incoming mail data collection card in the integrations</p></figcaption></figure>
+2. In the **Preconfigured use cases** list, find the object type you want to feed and click **Add integration**.
 
-Then, choose the type of object for which you want to set up the integration by clicking on "Add Integration." Note that you can only have one collection email per object type and per workspace.
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-2.png" alt="The list of the five collection address use cases, each with the Add integration button"><figcaption><p>One use case per object type</p></figcaption></figure>
+3. In the panel that opens, choose the **Destination organisational unit** of the created objects if needed. If you leave this field empty, objects are created in the default organizational unit.
 
-<figure><img src="../../.gitbook/assets/register-processing-generate-dpa-button.png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-3.png" alt="The configuration panel with the Destination organisational unit field and the Save changes button"><figcaption><p>Choosing the destination organizational unit</p></figcaption></figure>
+4. Click **Save changes**. Dastra completes the installation and displays the email address to use.
 
-You have the option to specify the destination organizational unit for the objects created through this collection box during the integration setup. If this field is left empty, objects will be created in the default organizational unit.
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-4.png" alt="The panel showing the generated collection address, with the copy button"><figcaption><p>The generated collection address</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/audit-questionnaire-create-form.png" alt=""><figcaption></figcaption></figure>
+To remove a collection address, open the use case panel again and click **Delete**. The address is released and no longer receives emails.
 
-By clicking "Create," Dastra finalizes the integration setup and provides you with the email address to use.
+## How it works
 
-<figure><img src="../../.gitbook/assets/audit-questionnaire-type-dropdown.png" alt=""><figcaption></figcaption></figure>
+* Each email received at a collection address creates an object of the associated type in Dastra.
+* The object is created in the organizational unit chosen during installation.
+* The email subject becomes the name of the object.
+* The email body becomes the description of the object.
+* The email attachments become attachments of the object, under the conditions described below.
 
-### **Key Features**
+## Attachments
 
-* **Automatic object creation**: Each email received at an associated email box creates a corresponding object in Dastra.
-* **Organizational unit configuration**: You can set a destination organizational unit during setup. If specified, the object will be created in that unit.
-* **Object fields management**:
-  * **Label**: The email subject is used as the name of the created object.
-  * **Description**: The email body is used for the description of the created object.
-  * **Attachments**: Email attachments are added to the object, subject to validation conditions.
+An attachment is kept when:
 
-### **Attachment Management**
+* its extension is valid. The allowed extensions are `7z`, `csv`, `doc`, `docx`, `eml`, `epub`, `gif`, `htm`, `html`, `jpeg`, `jpg`, `json`, `md`, `msg`, `ods`, `odg`, `odp`, `odt`, `pdf`, `png`, `ppt`, `pptx`, `rar`, `rtf`, `svg`, `txt`, `xls`, `xlsm`, `xlsx` and `zip`;
+* if it is an image (jpg, png, gif, etc.), it is at least 5 KB. This limit avoids adding irrelevant images such as email signature logos.
 
-Email attachments are added to the object, provided that:
+## Find the objects created by a collection address
 
-* **File extensions are valid**: Only attachments with valid file extensions are retained.
+The objects concerned have a **source**, or **collection origin**, field. To display it in a table, add the matching column.
 
-Here are the autorized extensions : `7z`, `csv`, `doc`, `docx`, `eml`, `epub`, `gif`, `htm`, `html`, `jpeg`, `jpg`, `json`, `md`, `msg`, `ods`, `odg`, `odp`, `odt`, `pdf`, `png`, `ppt`, `pptx`, `rar`, `rtf`, `svg`, `txt`, `xls`, `xlsm`, `xlsx`, `zip`.
+All objects created from a collection address also carry the **Incoming email** tag, which helps you find them.
 
-* **Images meet minimum size**: For image files (jpg, png, gif, etc.), a minimum size of 5 KB is required. This constraint helps avoid including irrelevant images such as email signatures.
+## Success notification
 
-### **Finding Objects Generated from a Collection Box**
+When an object is created after an email is received, Dastra automatically sends an email notification to the address that triggered the integration. This email confirms that the object was created in Dastra.
 
-Objects associated with collection boxes have a 'source' or 'collection origin' field that you can display in table views by showing the source/collection origin column.
+The confirmation email is written in the default language of the workspace where the integration is installed (workspace settings, default language).
 
-All objects generated from a collection box are tagged with "inbound email," making it easy to identify them if needed.
+## Automatically forward your existing emails to Dastra
 
-### **Success Notification**
+If you already have a dedicated address for data subject requests (for example `privacy@yourcompany.com`), you do not need to replace it. Set up a forwarding rule in your mail server to redirect incoming emails to the Dastra collection address.
 
-Upon successful creation of an object from an email received at the collection box, an email notification is automatically sent to the address that triggered the integration. This notification confirms that the object has been successfully created in Dastra, providing immediate assurance that the request or action has been processed.
+Emails then arrive directly in Dastra with no manual action, and your contacts keep using your usual address.
 
-The language of the confirmation email corresponds to the default language of the workspace where the integration is installed (Workspace settings > Default language).
+### With Microsoft Exchange / Office 365
 
-***
+Open the **Exchange Admin Center** > **Mail flow** > **Rules**, then click **+ Add a rule**. Configure the rule as follows:
 
-### Automatically forwarding your existing email address to Dastra
-
-If you already have a dedicated email address for data subject requests (e.g. `privacy@yourcompany.com`), you do not need to replace it. You can configure a **forwarding rule** in your mail server to automatically redirect incoming emails to the Dastra collection mailbox.
-
-Requests will then arrive directly in Dastra without any manual action, while keeping your usual address for your contacts.
-
-#### With Microsoft Exchange / Office 365
-
-Go to the **Exchange Admin Center** > **Mail flow** > **Rules**, then click **"+ Add a rule"**.
-
-Configure the rule as follows:
-
-1. **Condition**: "The sender is located" > "Outside the organisation" — optionally add a subject keyword filter to only redirect relevant requests (e.g. subject contains "request" or "erasure").
-2. **Action**: "Redirect the message to" > enter the Dastra collection address generated in the previous step.
-3. **Mode**: Enforce.
+1. Condition: **The sender is located** > **Outside the organization**. You can add a filter on subject keywords to redirect only the relevant requests (for example, the subject contains "request" or "erasure").
+2. Action: **Redirect the message to**, then enter the Dastra collection address generated in the previous step.
+3. Mode: **Enforce**.
 
 {% hint style="info" %}
-You can add subject-line filters to redirect only specific request types (erasure, access, portability…) to the corresponding Dastra collection mailbox, while keeping other messages in your usual inbox.
+With subject filters, you redirect only some types of requests (erasure, access, portability, etc.) to the matching collection address, and keep the other messages in your usual inbox.
 {% endhint %}
 
 {% hint style="warning" %}
-Make sure your rule does not create a forwarding loop if the Dastra address itself redirects emails. Use the condition "Received from outside the organisation" to prevent loops.
+Make sure your rule does not create a forwarding loop if the Dastra address itself redirects emails. Use the condition "Received from outside the organization" to prevent loops.
 {% endhint %}
 
-#### With Google Workspace (Gmail)
+### With Google Workspace (Gmail)
 
-In the **Google Admin Console** > **Apps** > **Google Workspace** > **Gmail** > **Routing**, add an inbound routing rule with the action "Change route" and enter the Dastra collection address as the destination.
+In the **Google Admin Console** > **Apps** > **Google Workspace** > **Gmail** > **Routing**, add an inbound routing rule with the action **Change route**, then enter the Dastra collection address.

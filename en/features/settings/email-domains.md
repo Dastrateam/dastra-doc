@@ -6,36 +6,34 @@ description: >-
 
 # Email domains
 
-## What are they used for?
+This page explains how to let future colleagues join your organization without any action on your part. It is intended for organization owners.
 
-Email domains allow your future collaborators the possibility to be directly assigned to a workspace with the chosen role without any action on your part.
+## Purpose of email domains
 
-## How to use them?
+Email domains let you assign your future colleagues directly to a workspace, with the role you chose, without any action on your part.
 
-You will find the email domains configuration in the general settings of your organization, under the **security** section.
+## Configure email domains
 
-<figure><img src="../../.gitbook/assets/settings-org-email-domains-default-role.png" alt=""><figcaption></figcaption></figure>
+The **Authorized email domains** block is at the top of the **Single sign on** page: open **Organization settings** > **Single sign on**.
 
-Activate or deactivate the feature by clicking on the button 'Allow users...'
+<figure><img src="../../.gitbook/assets/settings-email-domains-1.png" alt="The Authorized email domains block, with a domain entered, the option enabled, the default role and the workspace"><figcaption><p>The Authorized email domains block, at the top of the Single sign on page</p></figcaption></figure>
 
-Then choose the role and workspace that will be assigned to future users:
+1. In **Type your top-domain here**, enter each domain (for example `dastra.eu`), then press Enter or click **Add**.
+2. Turn on **Allow users using registered email domains to join the organization**.
+3. In **Default role**, choose the role assigned to future users. The **Guest (no data access)** role is offered by default.
+4. In **Select a specific workspace**, choose the workspace concerned, or keep **All workspaces**.
+5. Click **Save changes**.
 
-<figure><img src="../../.gitbook/assets/settings-user-default-role-workspace.png" alt=""><figcaption></figcaption></figure>
-
-Finally, save the configuration by clicking on the Save button!
-
-
+The role and the workspace can be changed only while the option of step 2 is turned on.
 
 {% hint style="warning" %}
-**Restrictions:**
+You can only add domains that are already authorized, that is, domains for which a user of your organization has already validated an email address.
 
-You are only allowed to add email domains that have been previously authorized (i.e., for which a user in your organization has validated an email address). Personal-type domains (gmail, hotmail, etc.) or those identified as 'disposable' are prohibited!&#x20;
+Personal email domains (gmail, hotmail, etc.) and domains identified as disposable are refused.
 {% endhint %}
 
-## Impact for Future Users
+## Impact on future users
 
-The next time a collaborator signs up on Dastra, they will still need to enter their email address and validate it. However, they will now be offered to join your organization!
+A colleague who signs up on Dastra must still enter their email address and validate it. Dastra then offers to join your organization.
 
-<figure><img src="../../.gitbook/assets/ai-systems-create-ai-generated-preview.png" alt=""><figcaption></figcaption></figure>
-
-They will then be able to join you and start working with you!
+They click **Join** and can start working with you.

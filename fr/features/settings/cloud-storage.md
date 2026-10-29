@@ -7,13 +7,13 @@ description: >-
 
 # Intégrations OneDrive & SharePoint / Google Drive
 
-## Pourquoi utiliser un stockage cloud personnalisé ?
+## Intérêt d'un stockage cloud personnalisé
 
 Par défaut, la [GED de Dastra](../files/README.md) repose sur Azure Blob Storage : fichiers chiffrés, analysés par antivirus, et redondés sur un second serveur. Pour en savoir plus, consultez [la documentation sécurité](../../security/general.md).
 
 Dans certaines organisations, ce stockage fait doublon avec un système de fichiers cloud déjà en place (SharePoint, OneDrive, Google Drive). Dastra s'intègre nativement avec ces fournisseurs afin d'éviter cette duplication :
 
-* **Microsoft OneDrive & SharePoint** — un OneDrive ou une **bibliothèque de documents SharePoint** de votre tenant Microsoft 365 ;
+* **Microsoft OneDrive & SharePoint** : un OneDrive ou une **bibliothèque de documents SharePoint** de votre environnement Microsoft 365 ;
 * **Google Drive**.
 
 <figure><img src="../../.gitbook/assets/settings-files-attachment-panel.png" alt="Sélecteur de source de fichiers dans la GED Dastra"><figcaption><p>Les fichiers peuvent être stockés dans Dastra, OneDrive &#x26; SharePoint ou Google Drive</p></figcaption></figure>
@@ -33,9 +33,9 @@ Cela signifie concrètement :
 
 ## Configurer l'intégration
 
-Rendez-vous dans **Paramètres de l'espace de travail > Intégrations**, puis cliquez sur **Microsoft OneDrive & SharePoint** ou **Google Drive**.
+Ouvrez **Réglages espace de travail** > **Intégrations**, puis cliquez sur **Microsoft OneDrive & SharePoint** ou **Google Drive**.
 
-Cliquez sur **Ajouter une intégration**. Vous êtes redirigé vers la page de connexion du fournisseur, qui vous demandera d'autoriser l'accès à votre stockage.
+Cliquez sur **Ajouter l'intégration**. Vous êtes redirigé vers la page de connexion du fournisseur, qui vous demandera d'autoriser l'accès à votre stockage.
 
 ### Choisir le lecteur (OneDrive & SharePoint uniquement)
 
@@ -43,8 +43,8 @@ Après authentification, Dastra liste les lecteurs auxquels le compte connecté 
 
 | Option | Description | Recommandation |
 | --- | --- | --- |
-| **<Site> / <Bibliothèque>** (ex. `Root site / Documents`) | Une bibliothèque de documents d'un site SharePoint de votre organisation | ✅ Recommandé en entreprise — espace partagé, non lié à un compte personnel |
-| **Your personal drive** | OneDrive personnel du compte connecté | ⚠️ À éviter en production — donne accès à l'ensemble du drive personnel |
+| **<Site> / <Bibliothèque>** (ex. `Root site / Documents`) | Une bibliothèque de documents d'un site SharePoint de votre organisation | Recommandé en entreprise : espace partagé, non lié à un compte personnel |
+| **Your personal drive** | OneDrive personnel du compte connecté | À éviter en production : donne accès à l'ensemble du drive personnel |
 
 Cliquez sur **Rafraîchir** si un site ou une bibliothèque que vous venez de créer n'apparaît pas encore.
 
@@ -61,8 +61,6 @@ Par défaut, Dastra utilise la **racine du lecteur**. Vous pouvez le limiter à 
 3. Enregistrez la configuration.
 
 Dastra stocke alors ses fichiers dans ce dossier, et la navigation depuis Dastra y est limitée : les utilisateurs ne peuvent pas remonter au-dessus. C'est la façon la plus simple de partager un seul dossier d'une bibliothèque SharePoint avec Dastra, sans exposer le reste de la bibliothèque.
-
-<!-- 📸 Capture : la configuration OneDrive & SharePoint avec le lecteur sélectionné et la section « Dossier racine » montrant le dossier choisi et le bouton « Choisir un dossier » -->
 
 <figure><img src="../../.gitbook/assets/settings-files-onedrive-root-folder.png" alt="Choix du lecteur et du dossier racine de l&#x27;intégration OneDrive &#x26; SharePoint"><figcaption><p>Choix du lecteur et du dossier racine</p></figcaption></figure>
 
@@ -94,11 +92,11 @@ Un stockage dont le cas d'usage est désactivé dans les réglages de l'intégra
 
 ### OneDrive & SharePoint
 
-* La connexion repose sur OAuth utilisateur — pas sur Microsoft Graph API. Si le compte ayant configuré l'intégration est désactivé, la connexion est interrompue.
+* La connexion repose sur OAuth utilisateur, pas sur Microsoft Graph API. Si le compte ayant configuré l'intégration est désactivé, la connexion est interrompue.
 * Dastra ne travaille que dans le lecteur choisi, et dans son dossier racine lorsqu'il est défini.
 * Pour les environnements entreprise, préférez une bibliothèque de documents SharePoint plutôt que le drive personnel.
 
 ### Google Drive
 
-* Seuls les fichiers **créés depuis Dastra** peuvent être ajoutés ou modifiés dans Google Drive. Dastra n'a pas les droits d'accès aux fichiers existants créés directement dans Drive — c'est une limitation du connecteur OAuth.
+* Seuls les fichiers **créés depuis Dastra** peuvent être ajoutés ou modifiés dans Google Drive. Dastra n'a pas les droits d'accès aux fichiers existants créés directement dans Drive : c'est une limitation du connecteur OAuth.
 * Les fichiers créés dans Dastra peuvent être partagés sans restriction avec d'autres collaborateurs.

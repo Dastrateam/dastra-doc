@@ -11,9 +11,9 @@ Cette page rassemble les incidents SSO réellement rencontrés par nos clients e
 {% hint style="danger" %}
 **Prévoyez toujours un compte d'exception avant d'activer le SSO pour tous.**
 
-Si vous cochez « Forcer pour tous les utilisateurs » et que le SSO tombe en panne (certificat expiré, montée de version de l'IdP, erreur de configuration), **plus personne ne peut se connecter, y compris les propriétaires**. Déclarez au moins un utilisateur dans le champ **« Utilisateurs spécifiques exemptés de SSO »** — idéalement un compte de service local — afin de pouvoir revenir dans la configuration et corriger le tir.
+Si vous activez **Forcer pour tous les utilisateurs** et que le SSO tombe en panne (certificat expiré, montée de version de l'IdP, erreur de configuration), **plus personne ne peut se connecter, y compris les propriétaires**. Déclarez au moins un utilisateur dans le champ **Utilisateurs spécifiques exemptés de SSO (par exemple, les administrateurs de sécurité)**, idéalement un compte de service local, pour pouvoir revenir dans la configuration et corriger le problème.
 
-Voir [Gestion des utilisateurs exemptés de login SSO](README.md#gestion-des-dutilisateurs-exemptes-de-login-sso).
+Voir [Gestion des utilisateurs exemptés de login SSO](README.md#gestion-des-utilisateurs-exemptes-de-login-sso).
 {% endhint %}
 
 ## Les 5 vérifications à faire en premier
@@ -24,7 +24,7 @@ Avant tout diagnostic approfondi, passez cette liste :
 2. **L'utilisateur existe-t-il dans l'organisation ?** Le SSO est rattaché à l'organisation : l'utilisateur doit figurer dans la [liste des utilisateurs](https://app.dastra.eu/general-settings/users).
 3. **L'adresse e-mail correspond-elle exactement ?** Dastra rapproche le compte à partir de l'**adresse e-mail renvoyée par le fournisseur d'identité**. Un seul caractère de différence et l'utilisateur n'est pas reconnu.
 4. **L'utilisateur est-il habilité sur l'application Dastra côté fournisseur d'identité ?** C'est la cause n° 1 des échecs qui ne concernent qu'une seule personne.
-5. **Testez en navigation privée** et vérifiez que **l'horloge du poste est synchronisée** — un décalage d'horloge invalide les jetons.
+5. **Testez en navigation privée** et vérifiez que **l'horloge du poste est synchronisée** : un décalage d'horloge invalide les jetons.
 
 ---
 
@@ -40,7 +40,7 @@ Cas typiques rencontrés :
 - l'UPN a été modifié côté annuaire (changement de nom, migration de domaine) sans être répercuté dans Dastra ;
 - l'utilisateur a été créé dans Dastra avec une forme courte de son adresse (`pnom@…`) alors que l'IdP renvoie la forme longue.
 
-**Résolution** — alignez les deux valeurs, dans un sens ou dans l'autre :
+**Résolution** : alignez les deux valeurs, dans un sens ou dans l'autre :
 
 - faites renvoyer par l'IdP exactement l'adresse enregistrée dans Dastra, **ou**
 - créez / corrigez le compte Dastra pour qu'il porte l'adresse renvoyée par l'IdP.
@@ -70,9 +70,9 @@ Dastra se base sur la propriété **`Name`**, et non sur le `NameFormat` : la va
 
 **Résolution** :
 
-1. Ouvrez votre configuration SSO, onglet **Configuration**.
-2. Dans le champ **« Le nom du claim contenant l'adresse email »**, remplacez la valeur par le nom réellement publié par votre IdP (ici : `emailaddress`).
-3. Enregistrez, puis refaites un test de connexion **depuis une fenêtre de navigation privée** afin de créer une nouvelle session.
+1. Ouvrez votre configuration SSO, section **Configuration**.
+2. Dans le champ **Le nom du claim contenant l'adresse email**, remplacez la valeur par le nom réellement publié par votre IdP (ici : `emailaddress`).
+3. Enregistrez, puis refaites un test de connexion **depuis une fenêtre de navigation privée** pour créer une nouvelle session.
 
 ### L'utilisateur n'est pas habilité sur l'application côté fournisseur d'identité
 
@@ -92,11 +92,11 @@ Vérifiez son statut dans la [liste des utilisateurs de l'organisation](https://
 
 ### « SSO users autoprovisioning is not allowed for your organization »
 
-Ce message signifie que l'option **« Création automatique de compte »** n'est pas activée dans votre configuration SSO. Tant qu'elle est désactivée, seul un utilisateur **déjà invité dans Dastra** peut se connecter en SSO.
+Ce message signifie que l'option **Utilisateur créé si l'utilisateur n'a jamais été invité dans Dastra** n'est pas activée dans votre configuration SSO. Tant qu'elle est désactivée, seul un utilisateur **déjà invité dans Dastra** peut se connecter en SSO.
 
-**Résolution** : un **propriétaire de l'organisation** active l'option dans la configuration SSO, onglet **Création automatique des utilisateurs**, et choisit le rôle attribué par défaut.
+**Résolution** : un **propriétaire de l'organisation** active l'option dans la configuration SSO, section **Création automatique des utilisateurs**, et choisit le rôle attribué par défaut.
 
-<figure><img src="../../../.gitbook/assets/settings-sso-user-creation-options.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-4.png" alt="La section Création automatique des utilisateurs du formulaire SSO"><figcaption><p>La section <strong>Création automatique des utilisateurs</strong></p></figcaption></figure>
 
 {% hint style="warning" %}
 Seul un **propriétaire** peut modifier la configuration SSO. Un administrateur ne voit pas cette page.
@@ -114,7 +114,7 @@ https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&
 
 Vous le récupérez avec le bouton **Copier le lien** sur la carte de la connexion SSO :
 
-<figure><img src="../../../.gitbook/assets/settings-sso-connection-card-copy-button.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-2.png" alt="La carte d'une connexion SSO avec les boutons Tester et Copier le lien"><figcaption><p>Le bouton <strong>Copier le lien</strong> de la carte</p></figcaption></figure>
 
 ### Les répondants externes à un questionnaire ne sont pas provisionnés
 
@@ -122,7 +122,7 @@ Une personne qui n'a jamais ouvert le lien SSO n'est pas un utilisateur Dastra :
 
 Deux contournements :
 
-- **provisionner les comptes en amont** — voir [l'import d'une liste d'utilisateurs](../../../getting-started/setup/users.md) ;
+- **provisionner les comptes en amont** : voir [l'import d'une liste d'utilisateurs](../../../getting-started/setup/users.md) ;
 - diffuser le questionnaire via un **Trust center**, qui propose une connexion SSO aux visiteurs.
 
 ---
@@ -135,22 +135,32 @@ Dans ce cas, la redirection vers l'IdP et l'authentification fonctionnent : c'es
 
 ### Le champ « Authority/Domain » pointe sur le mauvais endpoint
 
-C'est une erreur de configuration très courante. Ce champ doit contenir **l'URL racine de l'issuer OIDC** — celle qui expose `/.well-known/openid-configuration` — et **non** l'endpoint `/authorize`.
+C'est une erreur de configuration très courante. Ce champ doit contenir **l'URL racine de l'issuer OIDC**, celle qui expose `/.well-known/openid-configuration`, et **non** l'endpoint `/authorize`.
 
 |              |                                                                      |
 | ------------ | -------------------------------------------------------------------- |
-| ❌ Incorrect | `https://login.exemple.fr/user/IdPOAuth2/authorize/FB6CB139F80BCAEB` |
-| ✅ Correct   | `https://login.exemple.fr/user/IdPOAuth2/FB6CB139F80BCAEB`           |
+| Incorrect | `https://login.exemple.fr/user/IdPOAuth2/authorize/FB6CB139F80BCAEB` |
+| Correct   | `https://login.exemple.fr/user/IdPOAuth2/FB6CB139F80BCAEB`           |
 
 Les endpoints `/authorize` et `/token` sont ensuite découverts automatiquement via le document _well-known_.
 
 ### Le type de réponse (response type) est incorrect
 
-Le champ **Response Type** doit reprendre **exactement** une valeur publiée par votre IdP — typiquement `id_token` ou `code`.
+Le champ **Response Type** doit reprendre **exactement** une valeur publiée par votre IdP, typiquement `id_token` ou `code`.
 
 Attention aux variantes avec un tiret : une valeur `id-token` au lieu de `id_token` provoque une boucle d'authentification accompagnée d'une erreur 400 à la récupération du token. Vérifiez caractère par caractère.
 
 Si le flux `id_token` échoue, essayez `code` : certains IdP n'autorisent pas le flux implicite.
+
+### La méthode d'authentification du client n'est pas la bonne
+
+Si la configuration semble correcte mais que la récupération du token échoue, votre IdP n'accepte peut-être pas l'authentification du client par clé secrète. Dans la section **Configuration** de la connexion, sélectionnez **Clé privée JWT** à la place de **Clé secrète**, puis renseignez la clé privée au format PEM et le contenu du certificat. Le détail des champs est décrit dans [OpenID](openid.md).
+
+{% hint style="info" %}
+Avec la clé privée JWT, vous n'avez plus de clé secrète à déclarer et le type de réponse passe à `code`. Pensez à **enregistrer une première fois** pour que l'URI de clé publique JSON (`jwks_uri`) soit exposée, puis déclarez-la chez votre fournisseur d'identité.
+{% endhint %}
+
+Si votre IdP exige une autre méthode d'authentification du client, par exemple une authentification HTTP Basic, contactez le support.
 
 ### L'ID Token est signé en HS256
 
@@ -160,7 +170,7 @@ Vérifiez côté IdP qu'il est possible de configurer le client Dastra avec une 
 
 ### Les autres causes à écarter
 
-- **L'URL de redirection n'est pas déclarée côté IdP.** Elle doit être enregistrée telle quelle, au format `https://account.dastra.eu/signin-{schemeId}`, dans l'application déclarée chez votre fournisseur (par exemple dans _App Registration → Authentication_ sur Azure).
+- **L'URL de redirection n'est pas déclarée côté IdP.** Elle doit être enregistrée telle quelle, au format `https://account.dastra.eu/signin-{schemeId}`, dans l'application déclarée chez votre fournisseur (par exemple dans _App Registration_ > _Authentication_ sur Azure).
 - **Le `redirect_uri` utilisé n'est pas strictement identique** à celui configuré.
 - **L'issuer du token ne correspond pas exactement** à l'URL configurée dans Dastra.
 - **Les scopes ne sont pas autorisés.** Conservez `openid profile email` ; vérifiez que les trois sont bien accordés côté IdP.
@@ -182,9 +192,9 @@ Vérifiez :
 
 Vous rencontrez un message d'erreur de ce type :
 
-<figure><img src="../../../.gitbook/assets/settings-sso-error-untrusted-key.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-sso-error-untrusted-key.png" alt="La page d'erreur de connexion indiquant que la clé de la signature n'est pas de confiance"><figcaption><p>L'erreur de clé non fiable</p></figcaption></figure>
 
-1. **Assurez-vous d'avoir un certificat valide** — un certificat expiré produit exactement ce symptôme, souvent « du jour au lendemain » sans aucune modification de votre part.
+1. **Assurez-vous d'avoir un certificat valide** : un certificat expiré produit exactement ce symptôme, souvent « du jour au lendemain » sans aucune modification de votre part.
 2. **Vérifiez que le copier/coller du certificat n'a pas introduit de saut de ligne ou d'espace** parasite.
 3. **Vérifiez que le certificat configuré dans Dastra est bien celui utilisé par l'IdP de l'environnement concerné** : une erreur fréquente consiste à laisser le certificat de recette sur la configuration de production.
 
@@ -200,7 +210,7 @@ Anticipez l'expiration : programmez le renouvellement **avant** la date d'éché
 
 Lorsque la configuration de production est calquée sur une recette fonctionnelle, trois paramètres diffèrent presque toujours :
 
-- **l'ACS / Reply URL** déclarée côté IdP doit correspondre **exactement** à l'URL de callback de production fournie par Dastra — assurez-vous que l'URL de recette n'a pas été recopiée ;
+- **l'ACS / Reply URL** déclarée côté IdP doit correspondre **exactement** à l'URL de callback de production fournie par Dastra : assurez-vous que l'URL de recette n'a pas été recopiée ;
 - **le certificat SAML** doit être celui de l'IdP de production ;
 - **le Tenant ID** doit être celui de production. Ce paramètre n'est pas configuré dans Dastra : il se vérifie uniquement côté IdP.
 
@@ -242,13 +252,13 @@ Conséquence directe sur le SSO : si l'UPN change côté annuaire sans que l'adr
 {% hint style="danger" %}
 Pour une migration de masse, trois règles à retenir :
 
-- **une seule passe** — les migrations partielles successives créent des incohérences sur le SSO, l'identification des utilisateurs, leurs droits et leurs rattachements ;
-- **pas d'adresse intermédiaire** — transmettez directement l'adresse **cible définitive** ; un même compte ne peut pas être migré deux fois ;
-- **anticipez les effets de bord** — les demandes d'exercice de droits et les questionnaires en cours peuvent contenir les anciennes adresses : indiquez explicitement s'ils doivent être mis à jour.
+- **une seule passe** : les migrations partielles successives créent des incohérences sur le SSO, l'identification des utilisateurs, leurs droits et leurs rattachements ;
+- **pas d'adresse intermédiaire** : transmettez directement l'adresse **cible définitive** ; un même compte ne peut pas être migré deux fois ;
+- **anticipez les effets de bord** : les demandes d'exercice de droits et les questionnaires en cours peuvent contenir les anciennes adresses : indiquez explicitement s'ils doivent être mis à jour.
   {% endhint %}
 
 {% hint style="info" %}
-Ne supprimez pas puis ne recréez pas les comptes « pour aller plus vite » : vous perdriez l'historique et le lien entre la personne et les éléments dont elle est responsable. Notez par ailleurs que lorsqu'un utilisateur supprimé est réinvité, son nom et son prénom sont conservés — c'est le comportement attendu.
+Ne supprimez pas puis ne recréez pas les comptes « pour aller plus vite » : vous perdriez l'historique et le lien entre la personne et les éléments dont elle est responsable. Notez par ailleurs que lorsqu'un utilisateur supprimé est réinvité, son nom et son prénom sont conservés : c'est le comportement attendu.
 {% endhint %}
 
 ---
@@ -281,7 +291,7 @@ Une mise à jour de votre infrastructure d'identité (changement de version d'Op
 **Marche à suivre** :
 
 1. Travaillez sur un **environnement de test / bac à sable**, jamais directement en production.
-2. **Recréez entièrement la configuration SSO depuis zéro** plutôt que de corriger l'existante — cela permet d'écarter un paramètre hérité de l'ancienne version.
+2. **Recréez entièrement la configuration SSO depuis zéro** plutôt que de corriger l'existante : cela permet d'écarter un paramètre hérité de l'ancienne version.
 3. Portez une attention particulière à la **mise à jour et à la validation des certificats**.
 4. Rejouez les vérifications de la section [OpenID Connect](#boucle-dauthentification-ou-erreur-au-retour-vers-dastra-openid-connect) ci-dessus.
 
@@ -295,8 +305,8 @@ Pour des raisons de sécurité et de gouvernance des accès, **l'équipe support
 
 Si le SSO est forcé pour tous et qu'il est hors service :
 
-1. Connectez-vous avec un **compte d'exception SSO** (déclaré à l'avance dans le champ « Utilisateurs spécifiques exemptés de SSO »).
-2. Depuis ce compte, **désactivez la connexion SSO** le temps de corriger la configuration, afin de rendre la main aux utilisateurs en mot de passe.
+1. Connectez-vous avec un **compte d'exception SSO** (déclaré à l'avance dans le champ **Utilisateurs spécifiques exemptés de SSO**).
+2. Depuis ce compte, **désactivez la connexion SSO** (option **Activer**) le temps de corriger la configuration, pour rendre la main aux utilisateurs en mot de passe.
 3. Corrigez, testez avec le bouton **Tester**, puis réactivez.
 
 Si aucun compte d'exception n'existe, contactez immédiatement le support en précisant le nom de votre organisation. Prévoyez d'en créer un dès que l'accès est rétabli.
@@ -307,26 +317,26 @@ Si aucun compte d'exception n'existe, contactez immédiatement le support en pr�
 
 Lorsque le problème n'est pas résolu par les points ci-dessus, un export réseau permet à nos équipes d'analyser précisément le flux d'authentification. Voici la procédure.
 
-**Étape 1 — Ouvrir les outils de développement**
+**Étape 1 : Ouvrir les outils de développement**
 
 - Ouvrez une **fenêtre de navigation privée** (Chrome ou Edge).
 - Appuyez sur `F12` (ou `Ctrl + Maj + I`).
 - Sélectionnez l'onglet **Network** (Réseau).
 
-**Étape 2 — Activer la conservation des logs**
+**Étape 2 : Activer la conservation des logs**
 
 Cochez l'option **Preserve log**. Elle est indispensable : sans elle, l'historique est perdu lors des redirections entre Dastra et votre fournisseur d'identité.
 
-**Étape 3 — Reproduire le problème**
+**Étape 3 : Reproduire le problème**
 
 Lancez la connexion SSO et allez jusqu'à l'erreur ou la boucle de redirection. **Ne fermez pas la fenêtre** après l'erreur.
 
-**Étape 4 — Exporter**
+**Étape 4 : Exporter**
 
-- **Option A (recommandée)** : clic droit dans la liste des requêtes → **« Enregistrer tout au format HAR avec le contenu »** (_Save all as HAR with content_), puis transmettez le fichier `.har`.
+- **Option A (recommandée)** : clic droit dans la liste des requêtes, puis **Enregistrer tout au format HAR avec le contenu** (_Save all as HAR with content_), puis transmettez le fichier `.har`.
 - **Option B** : captures d'écran de l'onglet Network, en incluant les requêtes `/authorize`, `/token`, `/signin` et toute requête en erreur (400, 401, 403…).
 
-**Étape 5 — Préciser le contexte**
+**Étape 5 : Préciser le contexte**
 
 Indiquez également :
 
@@ -338,7 +348,7 @@ Indiquez également :
 {% hint style="info" %}
 Une **capture vidéo** de la séquence complète (Loom par exemple), outils de développement ouverts, accélère considérablement le diagnostic.
 
-La mise à disposition d'un **compte de test** pouvant s'authentifier via votre SSO, avec le même type d'accès que les utilisateurs affectés, est l'élément le plus utile de tous : il nous permet de reproduire le parcours de bout en bout. Ce compte peut être temporaire et supprimé à l'issue de l'investigation.
+Un **compte de test** pouvant s'authentifier via votre SSO, avec le même type d'accès que les utilisateurs affectés, est l'élément le plus utile de tous : nous pouvons ainsi reproduire le parcours de bout en bout. Ce compte peut être temporaire et supprimé à l'issue de l'investigation.
 {% endhint %}
 
 {% content-ref url="../../../getting-started/support/request.md" %}

@@ -1,57 +1,75 @@
+---
+description: >-
+  Send Dastra's notification emails through your own email sending server.
+---
+
 # SMTP configuration
 
-## Introduction
+This page explains how to route Dastra's emails through your own SMTP server. It is intended for organization owners.
 
-By default, Dastra routes a significant number of email notifications for the following services:
+## How it works
 
-* Real time [Notifications](../notifications.md) (New comments, tasks, ...)
-* Email exchanges as part of a rights exercise request
-* Invitations to audits for respondents
-* Invitations for new users
+By default, Dastra sends its emails with its own SMTP service. This covers:
 
-By default, Dastra uses its own SMTP service.
+* real-time [notifications](../notifications.md) (new comments, tasks, etc.);
+* email exchanges within a [data subject request](../../requests/README.md);
+* invitations sent to respondents of [questionnaires](../../questionnaires/README.md);
+* [invitations](../../../getting-started/setup/users.md) of new users.
 
-### How to configure your SMTP sending server?
-
-{% hint style="warning" %}
-Customizing SMTP can lead to platform instabilities. Only perform this manipulation if you are certain of the proper functioning and deliverability of your email sending service.
-{% endhint %}
-
-### Benefits of customizing SMTP
-
-Dastra strives to ensure maximum availability and security for transactional email delivery. However, depending on your internal security policy, you may need to internalize the routing of transactional emails to control messaging flows.
-
-### Prerequisites
-
-You need to have the configuration details of your SMTP server:
-
-* SMTP Host (e.g., smtp.yourservice.com)
-* SMTP Port (default is to use port 25)
-* Username
-* Password
-* A valid sender email address (e.g., [noreply@yourservice.com](mailto:noreply@yourservice.com)): this address must be properly validated by your SMTP provider.
+Once your server is configured, all these emails go through it, for every workspace of the organization.
 
 {% hint style="warning" %}
-Note that your SMTP server must support a secure connection using SSL.
+Customizing SMTP can make the platform unstable. Only do this if you are sure that your email sending service works properly and delivers reliably.
 {% endhint %}
 
-### Configuration
+## Why customize SMTP
 
-Go to the SMTP [server configuration page](https://app.dastra.eu/general-settings/smtp).
+Dastra ensures the availability and security of transactional emails. Depending on your internal security policy, you may still need to control the routing of these emails yourself to manage your mail flows.
 
-Fill in the form fields using the data requested in the [prerequisites](README.md#prerequisites).
+## Access and prerequisites
 
-Note that server connectivity is automatically tested to ensure that the server login credentials are correct. A test email will be automatically sent from our servers.
+The page is in **Organization settings** > **Custom SMTP**. It is reserved for organization owners and for the Enterprise plan (advanced security feature).
 
-### Testing
+You have two options:
 
-Once you have submitted the form, your SMTP server should be operational. You can verify that the notification emails are indeed coming from your SMTP server. To do this, for example, create a comment in a process and see if you receive the notification email in your mailbox.
+* connect a provider (**Outlook (MS Office 365)** or **Gmail (Google workspace)**): see [Integration of external providers](office-365-gmail.md);
+* enter the settings of your own SMTP server, described below.
 
-* **If you do not receive an email**: either you failed to trigger the notification, or there is a problem with your SMTP configuration.
-* **If you receive an email**: verify that your SMTP and sender are properly displayed in the email details.
+For an SMTP server, have the following ready:
+
+* the SMTP server name (for example `smtp.yourservice.com`);
+* the SMTP server port (25 by default);
+* the server user name and password;
+* a valid sender email address (for example `noreply@yourservice.com`): your SMTP provider must have validated it;
+* a sender alias, that is the name displayed as the sender (for example `Compliance team`).
+
+{% hint style="warning" %}
+Dastra requires a secure connection using TLS, version 1.2 at minimum. Your SMTP server must support it.
+{% endhint %}
+
+## Configuration
+
+1. Open the [SMTP configuration page](https://app.dastra.eu/general-settings/smtp).
+2. In the **Custom SMTP** section, fill in **SMTP server name (TLS required)**, **SMTP server port**, **SMTP server user name**, **SMTP server password**, **Email of the sender** and **Alias of sender**.
+3. Click **Save changes**.
+
+<figure><img src="../../../.gitbook/assets/settings-smtp-config-form.png" alt="SMTP server configuration form with the server, port, user name, password, sender email and sender alias fields"><figcaption><p>The SMTP server configuration form</p></figcaption></figure>
+
+When you save, Dastra connects to your server and sends a test message to the email address of your account. If the connection fails, the configuration is not saved and the error returned by the server is displayed.
+
+While a provider is connected, the custom SMTP form is disabled. Click **Remove integration** first to use your own server.
+
+## Testing
+
+Once the configuration is saved, the **Test** button appears. Click it and confirm: Dastra sends a test message to the email address of your personal account.
+
+You can also check that notification emails come from your server. For example, add a comment on a processing activity and see whether the notification reaches your mailbox.
+
+* **You do not receive an email**: either the notification was not triggered, or there is a problem with your SMTP configuration.
+* **You receive an email**: check that your SMTP server and your sender appear in the message details.
 
 {% hint style="info" %}
-[How to view email details in GMAIL](https://app.gitbook.com/o/uWrGLDLDipyYq3GpIuW2/s/-LvBxs22wUMicv9uWp6C-2584506019/)
+[How to view email details in Gmail](https://support.google.com/mail/answer/29436).
 
-[How to view email details in Outlook](https://support.microsoft.com/fr-fr/office/afficher-les-en-t%C3%AAtes-de-message-internet-dans-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
+[How to view email details in Outlook](https://support.microsoft.com/en-us/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
 {% endhint %}

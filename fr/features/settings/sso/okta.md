@@ -1,56 +1,45 @@
 ---
 description: >-
-  Cette page vous expliquera comment configurer un fournisseur d'identification
-  Okta dans Dastra.
+  Configurer Okta comme fournisseur d'identité dans Dastra avec le protocole
+  OpenID Connect.
 ---
 
 # Okta
 
-Voici comment configurer le login Okta en SSO dans Dastra en utilisant le protocole **OpenId Connect**. A noter, qu'il est également de le faire en utilisant SAML.
+Cette page explique comment configurer le login Okta en SSO dans Dastra avec le protocole **OpenID Connect**. Il est également possible de le faire avec SAML : voir [SAML 2](saml.md).
 
-**Etape 1**: se rendre dans **le back-office administrateur Okta**
+1. Connectez-vous à la console d'administration d'Okta.
+2. Ouvrez le menu **Applications** > **Applications**, puis cliquez sur **Create App Integration**.
 
-**Etape 2:** se rendre dans le menu **"Applications" > "Applications".** Cliquez sur le bouton **"Create App Integration"**
+   ![Le menu Applications d'Okta avec le bouton Create App Integration](../../../.gitbook/assets/settings-sso-okta-home.png)
+3. Sélectionnez **OIDC - OpenID Connect**.
 
-![](../../../.gitbook/assets/settings-sso-okta-home.png)
+   ![Le choix du type de connexion dans Okta](../../../.gitbook/assets/settings-sso-okta-select.png)
+4. Sélectionnez le type d'application **Web application**.
 
-**Etape 3** : Sélectionnez "**OIDC - OpenID Connect**"
+   ![Le choix du type d'application dans Okta](../../../.gitbook/assets/settings-sso-okta-app-type.png)
+5. Configurez l'application et cochez **Implicit (hybrid)** dans **Grant type**. Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastra.eu/img/press/logodastra.png).
 
-![](../../../.gitbook/assets/settings-sso-okta-select.png)
+   ![La configuration générale de l'application dans Okta, avec Implicit (hybrid) coché](../../../.gitbook/assets/settings-sso-okta-config.png)
+6. Dans Dastra, récupérez l'URL de redirection : ouvrez [la page de gestion du SSO](https://app.dastra.eu/general-settings/sso), cliquez sur **Ajouter un login SSO** et choisissez **OpenID**. Dans la section **Configuration**, vers le bas du formulaire, copiez l'URL de redirection.
 
-**Etape 3** : Sélectionnez le type d'application "**Web application**"
+   <figure><img src="../../../.gitbook/assets/settings-okta-1.png" alt="Le bas de la section Configuration du formulaire OpenID, avec l'URL de redirection à copier"><figcaption><p>L'URL de redirection affichée par Dastra</p></figcaption></figure>
+7. Retournez dans Okta et collez l'URL de redirection dans **Sign-in redirect URIs**. Sélectionnez les utilisateurs d'Okta à qui vous souhaitez donner accès à Dastra (par défaut, vous pouvez cocher **Allow everyone**), puis cliquez sur **Save**.
 
-![](../../../.gitbook/assets/settings-sso-okta-app-type.png)
+   ![Le champ Sign-in redirect URIs d'Okta](../../../.gitbook/assets/settings-sso-okta-redirecturi-config.png)
+8. Okta affiche la page des paramètres de la nouvelle application : l'identifiant du client (Client ID), la clé secrète (Client secret) et le domaine Okta, qui sert d'autorité.
 
-**Etape 4** : Configurez l'application de la manière suivante en cochant bien la case "**Implicite**"
+   ![Les identifiants du client dans Okta](../../../.gitbook/assets/settings-sso-okta-client-settings.png)
 
-Pour le logo de l'application, vous pouvez [utiliser celui-ci](https://www.dastra.eu/img/press/logodastra.png)
+   ![Le domaine Okta, à reprendre avec le protocole https://](../../../.gitbook/assets/settings-sso-okta-domain.png)
+9. Retournez dans Dastra et renseignez les champs du formulaire :
 
-![](../../../.gitbook/assets/settings-sso-okta-config.png)
+   * **Id du client (ClientId)** : copiez le Client ID d'Okta.
+   * **Authority/Domain** : saisissez le domaine d'Okta avec le protocole (`https://<votre domaine>.okta.com`).
+   * **Issuer** : laissez le champ vide.
+   * **Clé secrète** : copiez la clé secrète d'Okta.
+   * **Scope** : `openid profile email`.
+   * **Type de réponse** : `id_token`.
 
-**Etape 5** : A ce stade, vous allez avoir besoin de configurer une url de redirection de _Dastra_ dans votre application _Okta_. Pour cela, retournez dans l'application _Dastra_, [dans la page de gestion du SSO](https://app.dastra.eu/general-settings/sso). Cliquez sur "**Nouveau login SSO**", et vers le bas du formulaire, vous avez une url de redirection qui s'affiche que vous devez copier.
-
-<figure><img src="../../../.gitbook/assets/settings-sso-openid-redirect-uri.png" alt=""><figcaption></figcaption></figure>
-
-**Etape 6** : Retournez dans Okta, et collez l'url de redirection dans le champ approprié, sélectionnez les utilisateurs Okta à qui vous souhaitez octroyer l'accès à Dastra (par défaut, vous pouvez cocher "Allow everyone") puis cliquez sur "**Save**"
-
-![](../../../.gitbook/assets/settings-sso-okta-redirecturi-config.png)
-
-**Etape 7** : Vous y êtes presque ! Vous êtes redirigé sur une page avec l'ensemble des settings de la nouvelle app SSO : Client Id, Clé secrète et domaine/autorité.
-
-![](../../../.gitbook/assets/settings-sso-okta-client-settings.png)
-
-![Attention de prendre le domaine avec le protocole https://](../../../.gitbook/assets/settings-sso-okta-domain.png)
-
-**Etape 8** : Retournez dans **Dastra**, vous pouvez ainsi renseigner les champs de formulaire de la façon suivante :
-
-* **Id du client** : copier l'id du client de Okta
-* **Authority/Domain** : **Attention !** mettre le domaine avec le protocole (https://\*\*\*.okta.com).
-* **Issuer** : laisser vide !
-* **Clé secrète** : Copier la clé secrète de Okta
-* **Scope** : openid profile email
-* **Type de réponse** : id\_token
-
-![](../../../.gitbook/assets/settings-sso-okta-dastra-settings.png)
-
-**Etape 8** : Cliquez sur "**Enregistrer**" => Puis lancez un test en cliquant sur le bouton "Tester" ! Si vous êtes bien redirigé vers Dastra ! Vous avez réussi ! :tada:
+   <figure><img src="../../../.gitbook/assets/settings-okta-2.png" alt="Le formulaire OpenID de Dastra rempli avec les valeurs d'Okta, les valeurs secrètes étant masquées"><figcaption><p>Le formulaire OpenID de Dastra</p></figcaption></figure>
+10. Cliquez sur **Enregistrer**, puis sur **Tester** sur la carte de la connexion. Si Okta vous redirige vers Dastra, la configuration est terminée.
