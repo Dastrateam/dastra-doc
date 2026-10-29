@@ -1,23 +1,29 @@
+---
+description: Finden Sie Support, Dokumentation und Schulungen im Menü Hilfe und starten Sie die Leitfäden neu.
+---
+
 # Die Online-Hilfe
 
-Die Online-Hilfe von Dastra ist jederzeit in Ihrem Mandanten zugänglich, indem Sie auf die Schaltfläche "Hilfe" unten links auf dem Bildschirm klicken.
+Die Online-Hilfe von Dastra steht Ihnen jederzeit in Ihrem Mandanten über das Profilmenü zur Verfügung: Klicken Sie oben rechts auf dem Bildschirm auf Ihren Namen und dann auf **Hilfe**. Es öffnet sich ein Untermenü mit allen Optionen.
 
-![](../../.gitbook/assets/hilfe.png)
+<figure><img src="../../.gitbook/assets/getting-started-roles-2.png" alt="Profilmenü mit dem Eintrag Hilfe"><figcaption><p>Das Profilmenü mit dem Eintrag Hilfe</p></figcaption></figure>
 
-Ein Fenster wird angezeigt, mit allen Möglichkeiten:
+| Eintrag | Was er öffnet |
+| --- | --- |
+| **Bitte wenden Sie sich an den Support** | Das Formular für Support-Anfragen (siehe [Supportanfrage](request.md)) |
+| **Bitte kontaktieren Sie uns über den Chat.** | Den Support-Chat |
+| **Dokumentation** | Diese Dokumentation |
+| **Wissensdatenbank** | Die Ressourcen und Leitfäden, die auf der Dastra-Website veröffentlicht sind |
+| **Dastra Academy** | Die Schulungen von Dastra |
+| **Webinare** | Die Webinare von Dastra |
+| **Mein Abonnement** | Die Seite Ihres Abonnements |
+| **Tickets** | Den Verlauf Ihrer Support-Anfragen |
 
-![Öffnung des Hilfepanels](../../.gitbook/assets/hilfe2.png)
+Am Ende des Untermenüs gelangen Sie zu den Seiten **Über uns**, **Preise**, **Datenschutzinformation** und **Allgemeine Nutzungsbedingungen**.
 
-### Der Leitfaden für die erste Anmeldung
+## Die Leitfäden
 
-Bei der ersten Anmeldung in Ihrem Mandanten bietet Ihnen Dastra ein Tutorial an, das in wenigen Seiten die wichtigsten Funktionen von Dastra durchgeht.
+Dastra bietet geführte Touren, die eine Funktion in wenigen Schritten vorstellen. Sie können sie jederzeit neu starten:
 
-Wenn Sie diesen Leitfaden erneut starten möchten, klicken Sie einfach auf die Schaltfläche "**Hilfe**" unten links auf dem Bildschirm und wählen Sie dann die Option "**Leitfaden anzeigen**":
-
-![](../../.gitbook/assets/hilfe3.png)
-
-Der Startleitfaden wird dann erneut gestartet und Sie müssen nur den Schritten folgen.
-
-{% content-ref url="online-help.md" %}
-[laide-en-ligne.md](online-help.md)
-{% endcontent-ref %}
+* **Tour von Dastra AI:** Klicken Sie im Panel von Dastra AI oben im Panel auf das Informationssymbol (**Leitfaden anzeigen**). Im Dashboard können Sie auch auf das Badge **Dastra AI** oberhalb des Eingabefelds klicken. Die KI-Funktion muss in Ihrer Organisation verfügbar sein.
+* **Tour eines Moduls:** Klicken Sie auf den Seiten, die einen Leitfaden haben, auf die Informationsschaltfläche (**Leitfaden anzeigen**), um ihn erneut zu starten.

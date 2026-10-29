@@ -25,7 +25,7 @@ Sie möchten diese Inventarisierung nicht durchführen oder sind der Meinung, da
 
 ### So greifen Sie auf die Datenkartierung zu
 
-1. [Greifen Sie auf Ihren Mandanten zu](../../getting-started/setup/workspace.md#accedez-a-un-espace-de-travail)
+1. [Greifen Sie auf Ihren Mandanten zu](../../getting-started/setup/workspace.md#auf-einen-mandanten-zugreifen)
 2. Klicken Sie in der Navigation auf das Symbol "**Metadaten**"
 3. Sie gelangen auf diese Seite:
 

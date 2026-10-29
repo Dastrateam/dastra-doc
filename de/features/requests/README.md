@@ -4,66 +4,72 @@ description: Erfahren Sie, wie Sie auf Betroffenenanfragen antworten.
 
 # Betroffenenanfragen
 
-Mit der DSGVO sind europäische Bürger in der Lage, von einem Unternehmen oder einer Organisation, die sie betreffende personenbezogene Daten verarbeitet, die Ausübung ihrer Rechte zu verlangen. Diese sind verpflichtet, die Ausübung der Rechte zu erleichtern.
+Mit der DSGVO können europäische Bürger von einem Unternehmen oder einer Organisation, die ihre personenbezogenen Daten verarbeitet, verlangen, ihre Rechte auszuüben. Die Organisation ist verpflichtet, die Ausübung dieser Rechte zu erleichtern.
 
 {% content-ref url="../../gdpr/concepts/rights.md" %}
-[droits-des-personnes.md](../../gdpr/concepts/rights.md)
+[Betroffenenrechte](../../gdpr/concepts/rights.md)
 {% endcontent-ref %}
 
-Dazu muss das Unternehmen oder die Organisation Verfahren einrichten, die es ermöglichen, auf Betroffenenanfragen zu antworten und den Nachweis dafür zu erbringen. Dies umfasst insbesondere einzuhaltende Schritte und eine Dokumentation in einem Verzeichnis.
+Dazu muss die Organisation Verfahren einrichten, die es ihr erlauben, auf diese Anfragen zu antworten und den Nachweis dafür zu erbringen. Das bedeutet festgelegte Schritte und eine Dokumentation in einem Verzeichnis.
 
 ## Der Prozess zur Verwaltung einer Betroffenenanfrage
 
-Die Verwaltung einer Betroffenenanfrage kann in 4 große Schritte zusammengefasst werden:
+Die Verwaltung einer Anfrage zur Ausübung eines Rechts lässt sich in 4 große Schritte zusammenfassen:
 
-<figure><img src="../../.gitbook/assets/Betroffenenanfrage.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dsr-request-lifecycle-flowchart.png" alt="Die vier Schritte der Anfragenverwaltung: Erfassung, Identitätsprüfung, Bearbeitung, Mitteilung an die betroffene Person, dann Abschluss oder Archivierung"><figcaption><p>Der Prozess zur Verwaltung von Betroffenenanfragen</p></figcaption></figure>
 
-Für weitere Details zur Verwaltung von Betroffenenanfragen siehe die folgende Seite:
+Weitere Details zur Verwaltung von Anfragen finden Sie auf dieser Seite:
 
 {% content-ref url="manage.md" %}
-[gestion-des-demandes-dexercices-de-droits.md](manage.md)
+[Verwaltung von Betroffenenanfragen](manage.md)
 {% endcontent-ref %}
 
 ## Das Verzeichnis der Betroffenenanfragen
 
-Dastra ermöglicht es Ihnen, ein Verzeichnis der Betroffenenanfragen aufzubauen, das alle vergangenen, aktuellen und zukünftigen Anfragen zentralisiert. Dieses ist verfügbar, indem Sie auf den Reiter "Betroffenenanfragen" in der linken Seitenleiste klicken.
+Mit Dastra können Sie ein Verzeichnis aufbauen, das alle vergangenen, aktuellen und künftigen Anfragen zentralisiert. Um es zu öffnen, klicken Sie in der Seitenleiste auf **Anfragen** und dann im Untermenü auf **Anfragen**.
 
-<figure><img src="../../.gitbook/assets/Betroffenenanfrage1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-readme-1.png" alt="Das Verzeichnis der Anfragen mit der Schaltfläche Anfrage erstellen und dem Menü des Moduls"><figcaption><p>Das Verzeichnis der Anfragen</p></figcaption></figure>
+
+Das Menü **Anfragen** bietet Zugriff auf fünf Seiten:
+
+* **Anfragen**: die Liste aller Anfragen mit ihren Filtern und Spalten.
+* **Statistiken**: die Kennzahlen zur Nachverfolgung (siehe [Statistiken zu den Anfragen](process.md#statistiken-zu-den-anfragen)).
+* **Nachrichten**: der Austausch mit den Antragstellern (siehe [Nachrichten der Antragsteller](process.md#nachrichten-der-antragsteller)).
+* **Formulare zur Datenerfassung**: die Widgets, die Anfragen auf Ihrer Website erfassen. Diese Seite steht nur Nutzern zur Verfügung, die Erfassungsformulare verwalten dürfen.
+* **Ausführung der Anfragen**: die Oberfläche für Asset-Inhaber (siehe [Bearbeitungsoberfläche für Anfragen](advanced/asset-owners.md)).
 
 ## Eine neue Betroffenenanfrage erfassen
 
-Es gibt 3 Möglichkeiten, eine neue Betroffenenanfrage in DASTRA zu erfassen:
+Es gibt 5 Möglichkeiten, eine neue Anfrage in Dastra zu erfassen:
 
-1. [Die neue Betroffenenanfrage direkt im Tool erfassen](manage.md)
-2. Die Anfragen per Excel-, CSV- oder Textdatei importieren. Besuchen Sie [unseren Leitfaden zum Datenimport in Dastra](../general/import.md)
-3. [Ein Widget für Betroffenenanfragen einrichten](widget.md)
+1. [Die Anfrage direkt im Tool erfassen](manage.md#eine-anfrage-manuell-erstellen).
+2. [Anfragen aus einer Excel-, CSV- oder Textdatei importieren](manage.md#anfragen-importieren-und-exportieren).
+3. [Anfragen über eine Sammel-E-Mail-Adresse empfangen](manage.md#eine-anfrage-uber-eine-sammel-e-mail-adresse-erstellen).
+4. [Ein Erfassungsformular (Widget)](widget.md) auf Ihrer Website einrichten.
+5. [Anfragen über die REST-API erstellen](api.md).
 
-### Manuelle Erstellung einer Betroffenenanfrage
+### Eine Anfrage manuell erstellen
 
-Durch Klicken auf die Schaltfläche "**Anfrage erstellen**" erscheint ein Fenster, in dem Sie die Betroffenenanfrage detailliert beschreiben und zuordnen können. Klicken Sie anschließend auf "**Erstellen**".
+Klicken Sie auf **Anfrage erstellen**. Geben Sie im sich öffnenden Fenster den Titel, den oder die Anfragetypen, das Datum, die Sprache des Antragstellers, die E-Mail-Adresse (optional) und die Organisationseinheit ein und klicken Sie dann auf **Erstellen**. Dastra öffnet die Anfrage, damit Sie sie detaillieren und bearbeiten können.
 
-<figure><img src="../../.gitbook/assets/Betroffenenanfrage2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-readme-2.png" alt="Das Fenster zum Erstellen einer Anfrage"><figcaption><p>Das Fenster zum Erstellen einer Anfrage</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Betroffenenanfrage3.png" alt=""><figcaption></figcaption></figure>
+### Das Verzeichnis der Anfragen importieren und exportieren
 
-Geschafft, Sie haben Ihre erste Betroffenenanfrage manuell erstellt!
+Das gesamte Verzeichnis kann importiert und exportiert werden. Um Anfragen zu importieren, klicken Sie auf den Pfeil neben der Schaltfläche **Anfrage erstellen** und dann auf **Importieren**.
 
-### Import / Export des Verzeichnisses der Betroffenenanfragen
+<figure><img src="../../.gitbook/assets/requests-readme-3.png" alt="Das Aufklappmenü der Schaltfläche Anfrage erstellen mit den Einträgen Importieren, Exportieren, E-Mails in Betroffenenanfragen umwandeln und Bitte lesen Sie die Dokumentation"><figcaption></figcaption></figure>
 
-Das gesamte Anfragenverzeichnis ist importier- und exportierbar. Um eine Anfrage zu importieren, klicken Sie auf den **Pfeil** neben der Schaltfläche "Anfrage erstellen".
+Klicken Sie auf der Importseite auf **Laden Sie die Dateivorlage herunter**, um das erwartete Format zu sehen (**Spaltenformat anzeigen** listet die Spalten auf), und legen Sie Ihre Datei (csv, txt oder xlsx) dann im Upload-Bereich ab. Folgen Sie den Schritten des Assistenten (Datenimport, Spaltenzuordnung, Import und Ergebnis), um die Anfragen in Dastra zu importieren. Nach dem Import stehen die Anfragen im Verzeichnis zur Verfügung.
 
-<figure><img src="../../.gitbook/assets/Betroffenenanfrage4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-readme-4.png" alt="Der erste Schritt des Imports von Anfragen: die Vorlage herunterladen und die Datei hochladen"><figcaption></figcaption></figure>
 
-Es erscheint ein Fenster für den Datenimport. Laden Sie sich die Dateivorlage herunter und befüllen Sie diese. Anschließend klicken Sie auf "Weiter". Nach dem Import ist die Anfrage direkt im Anfragenverzeichnis verfügbar.
+### Ein Widget für Anfragen einrichten
 
-![Fenster zum Import des Verzeichnisses der Betroffenenanfragen](../../.gitbook/assets/Betroffenenanfrage5.png)
+Anfragen können auch aus einem dedizierten Widget stammen, das Sie in Dastra konfigurieren.
 
-### Einrichtung eines Widgets für Betroffenenanfragen
-
-Betroffenenanfragen können auch über ein spezifisches Widget erfasst werden, das über die Dastra-Plattform konfigurierbar ist.
-
-Konsultieren Sie [unseren Leitfaden zur Einrichtung des Widgets für Betroffenenanfragen](README.md#mise-en-place-de-widget-de-demande-dexercice-de-droits)
+Lesen Sie unseren [Leitfaden zur Einrichtung des Widgets für Betroffenenanfragen](widget.md).
 
 {% content-ref url="widget.md" %}
-[implementez-un-widget-dexercice-des-droits.md](widget.md)
+[Ein Widget für Betroffenenanfragen implementieren](widget.md)
 {% endcontent-ref %}

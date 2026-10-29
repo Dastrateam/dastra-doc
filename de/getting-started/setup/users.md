@@ -6,138 +6,131 @@ description: Erfahren Sie, wie das Einladungssystem von Dastra funktioniert.
 
 ## Einen Nutzer einladen
 
-Sie können jemanden zur Zusammenarbeit in Ihren Bereichen einladen, indem Sie die Person in die Organisation einladen, zu der der Bereich gehört.
+Sie können jemanden zur Zusammenarbeit in Ihren Mandanten einladen, indem Sie ihn in die Organisation einladen, zu der der Mandant gehört.
 
-Sie können Nutzer zu Ihrem Mandanten einladen, indem Sie auf die Schaltfläche "Einstellungen" unten links auf dem Bildschirm klicken, dann auf "Zugriffsverwaltung / Nutzer" und schließlich auf "Nutzer einladen":
+1. Klicken Sie im linken Menü auf **Mandanteneinstellungen** und dann auf **Nutzer**.
+2. Klicken Sie auf **Einen Nutzer einladen**.
+3. Geben Sie die E-Mail-Adresse der Person ein. Ist diese Adresse der Organisation noch nicht zugeordnet, klicken Sie darauf, um fortzufahren.
+4. Füllen Sie das Einladungsformular aus (siehe die folgende Tabelle) und klicken Sie dann auf **Eine Einladung per E-Mail senden**.
 
-<figure><img src="../../.gitbook/assets/Nutzer einladen0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-1.png" alt="Liste der Nutzer des Mandanten mit der Schaltfläche zum Einladen eines Nutzers"><figcaption><p>Die Seite Nutzer in den Mandanteneinstellungen</p></figcaption></figure>
 
-Geben Sie die E-Mail-Adresse der Person ein, die Sie in Ihren Dastra-Bereich einladen möchten. Wenn diese Adresse noch nicht mit der Organisation verknüpft ist, klicken Sie darauf, um einen Einladungslink zu senden.
+<figure><img src="../../.gitbook/assets/getting-started-users-2.png" alt="Formular zum Einladen eines Nutzers"><figcaption><p>Das Einladungsformular</p></figcaption></figure>
 
-![](<../../.gitbook/assets/Nutzer einladen2 (1).png>)
+| Feld | Beschreibung |
+| --- | --- |
+| **Vorname** und **Name** | Identität der eingeladenen Person |
+| **Sprache der Benutzeroberfläche** | Sprache, in der die Person Dastra sieht |
+| **Einladen in alle Mandanten des Kontos** | Schalter: Ist er ausgeschaltet, wählen Sie den betreffenden Mandanten aus |
+| **Bitte wählen Sie die Rolle(n) des Nutzers aus.** | Siehe [Rollen und Berechtigungen verwalten](roles.md) |
+| **Bitte wählen Sie die Teams des Nutzers aus.** | Siehe [Teams erstellen und zuweisen](teams.md) |
+| **Standardmäßige Verbindungsmethode** | Lokales Konto (Anmeldename und Passwort) oder SSO, sofern ein SSO konfiguriert ist |
+| **Begrüßungsnachricht** | Text, der der Einladungs-E-Mail hinzugefügt wird |
 
-Ein Formular erscheint. Geben Sie den Namen, Vornamen, die Rolle und das Team ein und klicken Sie dann auf die Schaltfläche "Einladung senden". Die eingeladene Person erhält eine E-Mail mit einem Link, der ihr nach dem Anklicken den Zugang zum Bereich ermöglicht.
+Sie können auch unten in der linken Seitenleiste auf **Invite a member** klicken: Dadurch öffnet sich dasselbe Formular.
 
-Sie erhalten eine Benachrichtigungs-E-Mail, wenn die Person auf den Link klickt.\
-\
-Das war's, der Nutzer wurde eingeladen!
+Die eingeladene Person erhält eine E-Mail mit einem Link, der Zugang zum Mandanten gibt. Sie erhalten eine Benachrichtigungs-E-Mail, sobald die Person auf den Link klickt. Der Einladungslink läuft nach 10 Tagen ab.
 
-### Laufende Einladungen anzeigen
+Statt die E-Mail zu versenden, können Sie auf **Einladungslink generieren** klicken: Dastra zeigt dann einen Link an, den Sie selbst an die Person weitergeben.
 
-Sie können die laufenden Einladungen in den Einstellungen des Mandanten im Abschnitt "Nutzer" verwalten.
+### Ausstehende Einladungen finden
 
-<figure><img src="../../.gitbook/assets/aa.png" alt=""><figcaption></figcaption></figure>
+Ausstehende Einladungen verwalten Sie im Tab **Einladungen** der Seite **Nutzer**.
+
+<figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Tab Einladungen mit einer ausstehenden Einladung"><figcaption><p>Der Tab Einladungen</p></figcaption></figure>
 
 ### Einen Einladungslink erneut senden
 
-Wenn der eingeladene Nutzer nicht auf den Einladungslink geklickt hat und der Link abgelaufen ist (nach 10 Tagen), können Sie den Einladungslink erneut senden, indem Sie auf die Schaltfläche "Einladung erneut senden" klicken.
-
-<figure><img src="../../.gitbook/assets/einladungen versendet.png" alt=""><figcaption></figcaption></figure>
+Hat die eingeladene Person nicht auf den Link geklickt und ist dieser abgelaufen, klicken Sie neben der Einladung auf die Schaltfläche zum erneuten Senden und bestätigen Sie anschließend.
 
 ### Teams erstellen und zuweisen
 
-In Dastra werden Nutzer in Teams gruppiert, die wiederum entweder juristischen Entitäten oder Abteilungen zugeordnet werden. So lassen sich Rollen und Verantwortlichkeiten feingranular verwalten.
+In Dastra werden Nutzer in Teams gruppiert. Die Teams werden dann Entitäten oder Abteilungen zugewiesen, sodass sich Rollen und Verantwortlichkeiten genau verwalten lassen. Siehe [Teams erstellen und zuweisen](teams.md).
+
+### Standardrollen
+
+Dastra bietet fünf Basisrollen. Ihre detaillierten Berechtigungen sind unter [Rollen und Berechtigungen verwalten](roles.md) beschrieben.
+
+| Rolle | Kennung |
+| --- | --- |
+| Administrator | 1 |
+| Beitragender | 2 |
+| Leser | 3 |
+| Auditor | 11000 |
+| Compliance-Tester | 11500 |
 
 {% hint style="info" %}
-In Dastra gibt es standardmäßig mehrere Rollen mit verschiedenen Berechtigungsstufen:
-
-* **Administrator**: Administratoren können alles tun, was Mitwirkende können, und zusätzlich die Organisations- und Bereichseinstellungen ändern.
-* **Mitwirkender**: Mitwirkende können Bereiche lesen und bearbeiten. Sie können Entwürfe und noch nicht veröffentlichte Änderungen sehen. Sie können Änderungen veröffentlichen. Sie können keine Organisations- oder Bereichseinstellungen ändern.
-* **Leser**: Leser können nur die veröffentlichten Bereiche der Organisation besuchen. Sie können nicht bearbeiten und keine noch nicht veröffentlichten Änderungen sehen.
+**Inhaber der Organisation und Datenschutzbeauftragter sind keine Rollen.** Wie Sie einem bereits eingeladenen Nutzer den Status **Inhaber** der Organisation geben, lesen Sie unter [Wie füge ich einen Inhaber der Organisation hinzu?](faq.md#wie-fuge-ich-einen-inhaber-der-organisation-hinzu). Wie Sie **den Datenschutzbeauftragten ändern**, lesen Sie unter [Wie ändere ich den Datenschutzbeauftragten?](faq.md#wie-andere-ich-den-datenschutzbeauftragten).
 {% endhint %}
 
 ## Eine große Nutzerliste importieren
 
-Wenn Sie eine große Nutzerliste importieren möchten (mindestens 50 Nutzer), können Sie den Import einer großen Nutzerliste in die Plattform anfordern. Dazu müssen Sie sich an das Dastra-Team wenden.
+Um eine große Nutzerliste (ab 50 Nutzern) zu importieren, wenden Sie sich an das Dastra-Team. Sie können den Import einer Liste von bis zu 200 Nutzern beantragen, im Rahmen der verfügbaren Nutzer.
 
-Sie können eine Liste von bis zu 200 Nutzern importieren lassen, im Rahmen der verfügbaren Nutzerplätze.
+**Vorgehen:**
 
-**Die Schritte:**
+1. Öffnen Sie [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users), klicken Sie auf den Pfeil rechts neben der Schaltfläche **Einen Nutzer einladen** und dann auf **Importieren**.
 
-* Gehen Sie zu diesem Link: [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users)
-* Klicken Sie auf die Schaltfläche "Importieren"
+<figure><img src="../../.gitbook/assets/getting-started-users-4.png" alt="Menü der Schaltfläche Einen Nutzer einladen mit den Einträgen Exportieren und Importieren"><figcaption><p>Das Importmenü in den Einstellungen der Organisation</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/nutzer importe.png" alt=""><figcaption></figcaption></figure>
+2. Erstellen Sie pro Mandant eine Datei im CSV-Format mit den folgenden, durch Kommas getrennten Spalten.
 
-* Erstellen Sie eine Datei pro Mandant im CSV-Format mit folgenden durch , (Komma) getrennten Spalten:
+Erforderlich:
 
-Obligatorisch:
-
-* Email (E-Mail-Adresse des Nutzers)
-* GivenName (Vorname des Nutzers)
-* FamilyName (Nachname des Nutzers)
-* Roles (getrennt durch |) > entspricht den Rollen in Dastra
-* Teams (getrennt durch |) > entspricht den Teams in Dastra
+* `Email`: die E-Mail-Adresse des Nutzers;
+* `GivenName`: sein Vorname;
+* `FamilyName`: sein Nachname;
+* `Roles`: die Kennungen der Rollen in Dastra, getrennt durch `|`;
+* `Teams`: die Kennungen der Teams in Dastra, getrennt durch `|`.
 
 Optional:
 
-* SSOConfigurationId > entspricht der SSO-Login-Kennung, falls zutreffend
+* `SSOConfigurationId`: die Kennung der SSO-Anmeldung, falls zutreffend.
 
-Hier eine Dateivorlage zum Herunterladen und Ausfüllen:
+Hier eine Beispieldatei zum Herunterladen und Ausfüllen:
 
 {% file src="../../.gitbook/assets/sample-admin-users-import.csv" %}
-Importdatei-Vorlage
+Vorlage der Importdatei
 {% endfile %}
 
-**Zu den Rollen-Kennungen:**
+**Kennungen der Rollen**
 
-Standardmäßig haben die Basisrollen folgende Kennungen:
-
-* Administrator = 1
-* Mitwirkender = 2
-* Leser = 3
-
-Für benutzerdefinierte Rollen, die Sie erstellt haben, ist die Kennung über die Entwicklerkonsole Ihres Browsers im Netzwerk-Tab sichtbar.
+Die Basisrollen haben die Kennungen aus der obigen Tabelle. Bei den benutzerdefinierten Rollen, die Sie erstellt haben, ist die Kennung in der Entwicklerkonsole Ihres Browsers sichtbar, im Tab Network. Die Rollen müssen vor dem Import erstellt werden.
 
 {% hint style="info" %}
-Um die Konsole in Chrome zu öffnen, verwenden Sie das Tastenkürzel: Cmd + Option + C (auf Mac) oder Strg + Umschalt + J (unter Windows)
+So öffnen Sie die Konsole in Chrome: Cmd + Option + C (Mac) oder Strg + Umschalt + J (Windows).
 
-Um die Konsole in Firefox zu öffnen, verwenden Sie das Tastenkürzel: Cmd + Option + K (auf Mac) oder Strg + Umschalt + J (unter Windows)
+So öffnen Sie die Konsole in Firefox: Cmd + Option + K (Mac) oder Strg + Umschalt + J (Windows).
 
-Um die Konsole zu öffnen, können Sie das Tastenkürzel verwenden: Cmd + Option + C
-
-Um die Konsole in Microsoft Edge zu öffnen, können Sie das Tastenkürzel verwenden: Strg + Umschalt + I
+So öffnen Sie die Konsole in Microsoft Edge: Strg + Umschalt + I.
 {% endhint %}
 
-Achtung, die Rollen müssen vorab erstellt werden.
+**Kennungen der Teams**
 
-<figure><img src="../../.gitbook/assets/Rolle anlegen.png" alt=""><figcaption></figcaption></figure>
+Teams werden über ihre Kennungsnummer identifiziert. Um sie zu finden, öffnen Sie das Team in Dastra mit der Schaltfläche **Bearbeiten**: Die Nummer steht im Titel des Fensters.
 
-**Zu den Team-Kennungen:**
+<figure><img src="../../.gitbook/assets/getting-started-users-7.png" alt="Fenster zum Bearbeiten eines Teams, dessen Titel die Kennung zeigt"><figcaption><p>In diesem Beispiel lautet die Kennung des Teams „Test“ 8019</p></figcaption></figure>
 
-Die Teams müssen durch Kennungsnummern identifiziert werden, die durch Öffnen eines Teams in Dastra (über die Schaltfläche "Bearbeiten") abgerufen werden.
+Teams sind in Dastra nicht verpflichtend. Die Teams, die Sie in der Datei verwenden, müssen vorher im Mandanten erstellt worden sein.
 
-<figure><img src="../../.gitbook/assets/Team bearbeiten.png" alt=""><figcaption></figcaption></figure>
+**Kennung der SSO-Konfiguration**
 
-Im folgenden Bild ist die Kennung des Teams **id:9390**.
+Die Spalte `SSOConfigurationId` ist **optional**: Füllen Sie sie nur aus, wenn die importierten Nutzer einer bereits in Ihrer Organisation konfigurierten SSO-Anmeldung zugeordnet werden sollen. Lassen Sie sie für eine Standardanmeldung mit E-Mail-Adresse und Passwort leer.
 
-Hinweis: Teams sind in Dastra nicht obligatorisch.
+Wie bei den benutzerdefinierten Rollen wird diese Kennung in der **Entwicklerkonsole** Ihres Browsers abgerufen, im Tab **Network**:
+
+1. Öffnen Sie [die Konfigurationsseite der SSO-Anmeldungen](https://app.dastra.eu/general-settings/sso) (Sie müssen Inhaber der Organisation sein).
+2. Öffnen Sie die Entwicklerkonsole (siehe die Tastenkombinationen oben) und wechseln Sie in den Tab **Network**.
+3. Klicken Sie auf das Stiftsymbol der betreffenden SSO-Anmeldung, um das Fenster **SSO-Anmeldung bearbeiten** zu öffnen. Es handelt sich um ein modales Fenster: Die URL der Seite bleibt `https://app.dastra.eu/general-settings/sso`.
+4. Öffnen Sie im Tab **Network** die Anfrage, die beim Öffnen des Fensters ausgelöst wird, und notieren Sie den Wert des Felds `scheme` (er steht auch am Ende der Anfrage-URL, nach `ssoConfiguration/`): Dies ist der Wert, der in die Spalte `SSOConfigurationId` einzutragen ist.
 
 {% hint style="info" %}
-Achtung, die Teams müssen vorab im Mandanten erstellt werden.
+Die SSO-Anmeldung muss vorher konfiguriert sein. Siehe [Single Sign On (SSO)](../../features/settings/sso/README.md).
 {% endhint %}
 
-**Zur Kennung der SSO-Konfiguration:**
+3. Speichern Sie Ihre Datei im Format CSV UTF-8. Wählen Sie in Excel den Dateityp **CSV UTF-8 (durch Trennzeichen getrennt)**.
+4. Teilen Sie uns mit, in welchen Mandanten Sie die Nutzer importieren möchten, und legen Sie die Datei in der Upload-Oberfläche ab.
 
-Die Spalte `SSOConfigurationId` ist **optional**: Füllen Sie sie nur aus, wenn Sie die importierten Nutzer einem bereits in Ihrer Organisation konfigurierten SSO-Login zuordnen möchten. Lassen Sie sie leer für eine klassische Anmeldung mit E-Mail und Passwort.
+<figure><img src="../../.gitbook/assets/getting-started-users-6.png" alt="Upload-Oberfläche für die Importdatei der Nutzer"><figcaption><p>Die Upload-Oberfläche für die Datei</p></figcaption></figure>
 
-Wie bei den benutzerdefinierten Rollen wird diese Kennung über die **Entwicklerkonsole** Ihres Browsers im Tab **Netzwerk** abgerufen:
-
-1. Öffnen Sie [die Konfigurationsseite der SSO-Logins](https://app.dastra.eu/general-settings/sso) (Sie müssen Eigentümer der Organisation sein).
-2. Öffnen Sie die Entwicklerkonsole (siehe Tastenkürzel oben) und wechseln Sie zum Tab **Netzwerk**.
-3. Klicken Sie auf das Stiftsymbol des betreffenden SSO-Logins, um das Fenster **SSO-Login bearbeiten** zu öffnen. Es handelt sich um ein modales Fenster: Die URL der Seite bleibt `https://app.dastra.eu/general-settings/sso`.
-4. Öffnen Sie im Tab **Netzwerk** die beim Öffnen des Fensters ausgelöste Anfrage und notieren Sie den Wert des Feldes `scheme` (er steht auch am Ende der URL der Anfrage, nach `ssoConfiguration/`): Dieser Wert wird in die Spalte `SSOConfigurationId` eingetragen.
-
-{% hint style="info" %}
-Das SSO-Login muss zuvor konfiguriert worden sein. Siehe die Seite [Single Sign On (SSO)](../../features/settings/sso/README.md).
-{% endhint %}
-
-Speichern Sie Ihre Datei im Format CSV UTF-8
-
-<figure><img src="../../.gitbook/assets/image-11-1.png" alt=""><figcaption></figcaption></figure>
-
-Sobald Ihre Datei fertig ist, geben Sie uns an, in welchen Mandanten Sie die Nutzer importieren möchten, und laden Sie die Datei über die Upload-Oberfläche hoch:
-
-<figure><img src="../../.gitbook/assets/image-2-3-1.png" alt=""><figcaption></figcaption></figure>
-
-Wir erhalten die Anfrage und melden uns bei Ihnen zur Nachverfolgung.
+Das Dastra-Team erhält Ihre Anfrage und meldet sich bei Ihnen.

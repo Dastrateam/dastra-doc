@@ -1,5 +1,5 @@
 ---
-description: Die Antworten auf Ihre Fragen ⁉️
+description: Antworten auf häufig gestellte Fragen zur Einrichtung von Dastra.
 ---
 
 # Häufig gestellte Fragen
@@ -8,38 +8,36 @@ description: Die Antworten auf Ihre Fragen ⁉️
 
 Nein, es handelt sich um zwei verschiedene Datenbanken. Teams sind Gruppen von Nutzern und können mit Organisationseinheiten verknüpft werden.
 
-Die Stakeholder gehören zu einem Referenzsystem der Datenkartierung. Es handelt sich um ein rein deklaratives Verzeichnis, das mit anderen Objekten in Dastra verknüpft werden kann.
+Stakeholder gehören zu einem Referenzsystem der Datenkartierung. Es ist ein rein deklaratives Verzeichnis, das mit anderen Objekten in Dastra verknüpft werden kann.
 
 ## Kann ich Organisationseinheiten als Stakeholder verwenden?
 
-Nein, aus denselben Gründen wie bei den Teams ist es nicht möglich, sie als Stakeholder zu verwenden. Es ist jedoch möglich, Organisationseinheiten als Empfänger zu verwenden. Dies vermeidet die Neuerstellung von Stakeholdern im Namen der Organisationseinheiten.
+Nein, aus denselben Gründen wie bei Teams. Sie können Organisationseinheiten jedoch als Empfänger verwenden. So müssen Sie keine Stakeholder im Namen von Organisationseinheiten neu anlegen.
 
-## Können Organisationseinheiten exportiert werden?
+## Kann ich Organisationseinheiten exportieren?
 
-Ja, es ist derzeit möglich, sie im Tabellenformat zu exportieren.
+Ja, Sie können sie im Tabellenformat exportieren: unter **Mandanteneinstellungen** > **Organisationseinheiten** mit dem Eintrag **Exportieren** im Menü der Schaltfläche **Eine Entität erstellen**.
 
-## Können Organisationseinheiten importiert werden?
+## Kann ich Organisationseinheiten importieren?
 
-Ja, es ist möglich, sie zu importieren, indem Sie im Menü unter der Schaltfläche "Organisationseinheit erstellen" navigieren.
+Ja, mit dem Eintrag **Importieren** im selben Menü. Siehe [Organisationseinheiten importieren und exportieren](organizational-units.md#organisationseinheiten-importieren-und-exportieren).
 
-## Wie ändert man das Logo der Organisation in Dastra?
+## Wie kann ich das Logo der Organisation in Dastra ändern?
 
-Es ist nicht möglich, das Logo der Organisation zu ändern, da es keines gibt. Das Logo, das über dem Organisationsnamen oben rechts angezeigt wird, ist das mit dem Nutzerkonto verknüpfte Bild, das in den Nutzerprofil-Einstellungen konfiguriert wird.
+Sie können das Logo der Organisation nicht ändern, da sie keines hat. Das Bild über dem Namen der Organisation oben rechts ist das des Nutzerkontos: Sie legen es im Nutzerprofil fest.
 
-Zusätzlich zu diesem Bild kann auch das Logo des Mandanten in den Mandanten-Einstellungen geändert werden.
+Das Logo des Mandanten können Sie in den Einstellungen des Mandanten ändern.
 
-## Wie wechselt man den DSB?
+## Wie ändere ich den Datenschutzbeauftragten?
 
-Um den Datenschutzbeauftragten zu wechseln, ist es ganz einfach! Navigieren Sie einfach zur Verwaltung der Organisationseinheiten und wählen Sie die Entität aus, für die Sie den DSB wechseln möchten.
+Öffnen Sie die Verwaltung der Organisationseinheiten und wählen Sie die Entität aus, deren DSB Sie ändern. Wählen Sie dann den Stakeholder aus, der DSB werden soll, wie unter [Einen Datenschutzbeauftragten zu Dastra hinzufügen](dpo.md#einen-datenschutzbeauftragten-zu-dastra-hinzufugen) beschrieben.
 
-Dann [wählen Sie](dpo.md#ajouter-un-dpo-dans-dastra) den Stakeholder aus, der als DSB benannt werden soll.
+## Wie füge ich einen Inhaber der Organisation hinzu?
 
-## Wie fügt man einen Inhaber der Organisation hinzu?
+Um einen Inhaber hinzuzufügen, müssen Sie selbst Inhaber der Organisation sein. Öffnen Sie die Einstellungen der Organisation ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) und klicken Sie auf **Einen Inhaber hinzufügen**.
 
-Um einen Inhaber hinzuzufügen, müssen Sie selbst Inhaber der Organisation sein. Gehen Sie dann zur Organisationskonfiguration ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) und klicken Sie auf "**Einen Inhaber hinzufügen**".
+Sie können einen Nutzer auswählen, der bereits in Ihre Organisation eingeladen wurde. Ein Nutzer, der noch nicht dazugehört, kann nicht hinzugefügt werden.
 
-Sie können einen Nutzer auswählen, der bereits in Ihrer Organisation eingeladen ist. Wenn dieser noch nicht in Ihrer Organisation ist, können Sie ihn nicht hinzufügen.
+## Wie entferne ich einen Inhaber der Organisation?
 
-## Wie entfernt man einen Inhaber der Organisation?
-
-Um einen Inhaber zu entfernen, müssen Sie ebenfalls Inhaber der Organisation sein. Gehen Sie zur Organisationskonfiguration ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)), zum Tab "**Allgemein**", und klicken Sie dann auf die Schaltfläche zum "**Löschen**" neben dem Inhaber, den Sie entfernen möchten. Bestätigen Sie Ihre Auswahl, um den Vorgang abzuschließen.
+Auch dafür müssen Sie Inhaber der Organisation sein. Öffnen Sie die Einstellungen der Organisation ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) im Tab **Allgemeines** und klicken Sie dann auf die Schaltfläche zum Löschen neben dem Inhaber, den Sie entfernen möchten. Bestätigen Sie, um den Vorgang abzuschließen.

@@ -1,15 +1,19 @@
 ---
-description: Erfahren Sie, wie Sie den Dastronauten-Assistenten nutzen.
+description: Erfahren Sie, wie Sie den Support-Chat und den KI-Agenten nutzen, die unten rechts auf dem Bildschirm verfügbar sind.
 ---
 
-# Der Dastronauten-Assistent
+# Der Chat und der KI-Agent
 
-In Ihrem Mandanten steht Ihnen ein Dastronauten-Assistent zur Verfügung, der permanent unten rechts auf Ihrem Bildschirm angezeigt wird:
+In Ihrem Mandanten bleiben zwei schwebende Schaltflächen unten rechts auf dem Bildschirm angezeigt.
 
-![Der Dastronauten-Assistent](../../.gitbook/assets/assist.png)
+<figure><img src="../../.gitbook/assets/getting-started-support-1.png" alt="Die Schaltflächen für den Chat und für Dastra AI unten rechts auf dem Bildschirm"><figcaption><p>Die Chat-Schaltfläche und die Schaltfläche Dastra AI unten rechts auf dem Bildschirm</p></figcaption></figure>
 
-Wenn Sie auf diesen Assistenten klicken, erscheint ein Fenster mit Aktionsvorschlägen.
+## Der Support-Chat
 
-![Ein Beispiel für Aktionsvorschläge](../../.gitbook/assets/assist2.png)
+Die Schaltfläche mit dem Sprechblasen-Symbol (**Bitte kontaktieren Sie uns über den Chat.**) öffnet den Support-Chat. Sie sprechen mit Ihrem Privacy Success Manager darüber, wie Sie die Plattform nutzen und wie ihre Funktionen arbeiten. Derselbe Chat ist über den Eintrag **Hilfe** des Profilmenüs (oben rechts) verfügbar. Siehe [Supportanfrage](request.md).
 
-Während Ihrer gesamten Nutzung von Dastra gibt Ihnen der Assistent Hinweise zu Aktionen, um die Plattform optimal zu nutzen.
+## Der KI-Agent
+
+Die Schaltfläche **Dastra AI** (**Dastra AI öffnen**) öffnet den KI-Assistenten Dastra AI. Sie erscheint nur, wenn Ihre Organisation Zugriff auf die KI-Funktion hat. Was der Assistent leistet, wie Sie ihn nutzen und wie Sie eigene Agenten erstellen, lesen Sie unter [KI-Assistent](../../features/general/ai-assistant/README.md).
+
+Die Schaltflächen werden während einer Chat-Unterhaltung oder bei geöffnetem Panel des KI-Agenten ausgeblendet, damit sie sich nicht überlagern.

@@ -1,91 +1,78 @@
 # Löschregeln für Anfragen
 
 {% hint style="info" %}
-Sie müssen über **Administratorrechte** für den Mandanten verfügen, um auf diese Funktion zugreifen zu können.
+Sie benötigen **Administratorrechte** für den Mandanten, um auf diese Funktion zuzugreifen.
 {% endhint %}
 
-Sie können die **automatische Löschung von in den Papierkorb verschobenen Anfragen** konfigurieren, um Ihre internen Aufbewahrungsrichtlinien und insbesondere den in der DSGVO vorgesehenen Grundsatz der Speicherbegrenzung einzuhalten.
+Sie können die **automatische Löschung von Anfragen im Papierkorb** einrichten, um Ihre internen Aufbewahrungsrichtlinien und insbesondere den Grundsatz der Speicherbegrenzung der DSGVO einzuhalten.
 
-Diese Funktion ermöglicht es Ihnen, Folgendes festzulegen:
+Sie legen fest:
 
-* den **Umfang** der von der Löschung betroffenen Anfragen,
-* den **Verarbeitungsmodus** (Löschung oder Anonymisierung),
-* und die **maximale Aufbewahrungsdauer** vor automatischer Auslösung.
+* den **Umfang** der Anfragen, für die die Löschung gilt,
+* den **Löschmodus** (Löschung oder Anonymisierung),
+* die **maximale Aufbewahrungsdauer**, bevor die Löschung automatisch erfolgt.
 
-***
-
-#### 🔍 Kriterien für die Datenauswahl
-
-Die Löschung gilt **ausschließlich für Anfragen im Papierkorb**.\
-Anfragen, die sich noch in Bearbeitung befinden, abgeschlossen oder archiviert sind, **sind nicht betroffen**.
-
-Jede Nacht prüft Dastra die Anfragen anhand ihres **Datums der Verschiebung in den Papierkorb**.\
-Wenn eine Anfrage die festgelegte maximale Dauer überschreitet (z. B. 180 Tage), wird sie für die Löschung freigegeben.
-
-**Betroffen sind daher:**
-
-* Anfragen, die **länger als die konfigurierte Dauer im Papierkorb** liegen;
-* Alle Anfragetypen (Auskunft, Löschung, Widerspruch usw.);
-* Unabhängig von ihrer Herkunft (Portal, API, Import).
+Um sie einzurichten, öffnen Sie die Mandanteneinstellungen, gehen Sie zum Bereich **Prozess**, dann zu **Anfragen** und zum Abschnitt **Löschregeln**.
 
 ***
 
-#### ⚙️ Verfügbare Löschmodi
+## Betroffene Anfragen
 
-**1. Löschung der Anfragen**
+Die Löschung gilt **ausschließlich für Anfragen im Papierkorb**. Offene, geschlossene oder archivierte Anfragen sind nicht betroffen.
 
-Die betroffenen Anfragen werden **endgültig aus dem System gelöscht**.\
-Diese Aktion ist **unwiderruflich**.
+Jede Nacht prüft Dastra die Anfragen anhand ihres **Datums der Verschiebung in den Papierkorb**. Eine Anfrage, die die von Ihnen festgelegte maximale Dauer überschreitet (zum Beispiel 180 Tage), wird gelöscht. Die Löschung umfasst:
 
-Auswirkungen:
-
-* Personenbezogene Daten und der Inhalt des Austauschs werden dauerhaft gelöscht;
-* Anhänge und zugehörige Dateien werden gelöscht;
-* Die Audit-Protokolle bewahren nur technische Metadaten (Zeitstempel, Nutzer, Vorgang).
+* Anfragen, die länger als die konfigurierte Dauer im Papierkorb liegen;
+* alle Anfragetypen (Auskunft, Löschung, Widerspruch usw.);
+* alle Anfragen, unabhängig von ihrer Herkunft (Portal, API, Import).
 
 ***
 
-**2. Anonymisierung der Anfragen**
+## Löschmodi
 
-Die Anfragen bleiben in Dastra sichtbar, aber **alle darin enthaltenen personenbezogenen Daten** werden **durch fiktive Werte ersetzt**.
+Wählen Sie im Abschnitt zum Bereinigungsmodus einen der beiden Modi aus.
 
-Diese Option ermöglicht die Beibehaltung einer **nicht identifizierbaren statistischen Spur** für Ihre Berichte und Indikatoren.
+### Löschung von Anfragen
 
-Konkret:
+Die betroffenen Anfragen werden **endgültig** aus Dastra gelöscht. Diese Aktion ist **unumkehrbar**.
 
-* Felder mit personenbezogenen Daten (Name, Vorname, E-Mail, Kennung, Nachricht usw.) werden durch generische Werte ersetzt (`John DOE`, `anonymized@example.com`, `XXXXXX`);
-* Anhänge werden gelöscht;
-* Nicht identifizierende Metadaten (Anfragetyp, Status, Daten) werden für das Reporting beibehalten.
-* Die zugehörigen Aktivitätsprotokolle (Logs) werden gelöscht.
+* Personenbezogene Daten und der Inhalt des Austauschs werden gelöscht.
+* Anhänge und zugehörige Dateien werden entfernt.
+* Die Audit-Protokolle behalten nur technische Metadaten (Zeitstempel, Nutzer, Vorgang).
 
-> 💡 **Ziel:** Ermöglichung der statistischen Nachverfolgung bei gleichzeitiger Gewährleistung der Löschung aller identifizierbaren Informationen.
+### Anonymisierung von Anfragen
 
-<figure><img src="../../../.gitbook/assets/Betroffenenanfrage19.png" alt=""><figcaption></figcaption></figure>
+Die Anfragen bleiben in Dastra sichtbar, ihre **personenbezogenen Daten** werden jedoch durch Zufallswerte ersetzt, die keinen Bezug zum Antragsteller haben. Dieser Modus bewahrt eine nicht identifizierbare statistische Spur für Ihre Berichte und Kennzahlen.
 
-***
+* Die Felder mit personenbezogenen Daten (Name, Vorname, E-Mail, Adresse, Ort, Postleitzahl) werden durch generierte Werte ersetzt, und der Text der Anfrage wird ersetzt.
+* Die ausgetauschten Nachrichten und die Anhänge werden gelöscht.
+* Nicht identifizierende Metadaten (Anfragetyp, Status, Daten) bleiben für das Reporting erhalten.
+* Die zugehörigen Aktivitätsprotokolle werden gelöscht.
 
-#### ⏱️ Dauer vor der Löschung festlegen
-
-Ein Parameter ermöglicht es Ihnen, das **maximale Alter einer Anfrage im Papierkorb** vor der Löschung festzulegen (Beispiel: 180 Tage).\
-Diese Frist wird ab dem **Datum der Verschiebung in den Papierkorb** berechnet.
-
-Jede Nacht um Mitternacht (UTC) ruft Dastra die betroffenen Anfragen ab und führt die Löschung automatisch gemäß dem ausgewählten Modus durch.
+<figure><img src="../../../.gitbook/assets/requests-purge-1.png" alt="Der Abschnitt Löschregeln mit dem Schalter zum Aktivieren, der Auswahl des Modus und der maximalen Aufbewahrungsdauer"><figcaption><p>Die Löschregeln konfigurieren</p></figcaption></figure>
 
 ***
 
-#### 🧩 Konfigurationsbeispiel
+## Aufbewahrungsdauer vor der Löschung
 
-* **Löschmodus:** Löschung der Anfragen
-* **Maximale Dauer:** 180 Tage (6 Monate)
+Geben Sie unter **Maximale Aufbewahrungsdauer im Papierkorb (in Tagen)** das maximale Alter einer Anfrage im Papierkorb an, bevor sie gelöscht wird, zum Beispiel 180 Tage. Die Dauer wird ab dem **Datum der Verschiebung der Anfrage in den Papierkorb** gezählt.
 
-\
-➡️ Jede Nacht werden alle Anfragen, die seit mehr als 180 Tagen im Papierkorb liegen, automatisch gelöscht.
+Jede Nacht gegen 2:30 Uhr UTC ruft Dastra die betroffenen Anfragen ab und führt die Löschung im gewählten Modus durch.
 
 ***
 
-#### ✅ Bewährte Praktiken
+## Konfigurationsbeispiel
 
-* Legen Sie eine Aufbewahrungsdauer fest, die mit Ihrer internen Richtlinie zur Aufbewahrung von Anfragen übereinstimmt (z. B. 5 Jahre oder 1825 Tage).
-* Verwenden Sie die **Löschung** für eine vollständige Entfernung.
-* Verwenden Sie die **Anonymisierung**, wenn Sie Aktivitätsstatistiken beibehalten möchten.
-* Stellen Sie sicher, dass die automatische Löschung **aktiviert** ist, damit die Verarbeitung jede Nacht ausgeführt wird.
+* **Löschmodus**: Löschung von Anfragen
+* **Maximale Dauer**: 180 Tage (6 Monate)
+
+Jede Nacht werden alle Anfragen, die seit mehr als 180 Tagen im Papierkorb liegen, automatisch gelöscht.
+
+***
+
+## Empfehlungen
+
+* Legen Sie eine Dauer fest, die zu Ihrer internen Aufbewahrungsrichtlinie für Anfragen passt (zum Beispiel 5 Jahre, also 1.825 Tage).
+* Wählen Sie die Löschung für eine vollständige Entfernung.
+* Wählen Sie die Anonymisierung, wenn Sie Statistiken zur Aktivität behalten möchten.
+* Prüfen Sie, dass **Automatische Bereinigung von Anfragen im Papierkorb aktivieren** eingeschaltet ist: Andernfalls findet keine Löschung statt.
