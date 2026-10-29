@@ -1,47 +1,56 @@
-# Signer le contrat
+# Signer un document
 
-Une fois que vous avez ajouté au moins un signataire à votre contrat (voir [les-signataires.md](signers.md "mention")), vous pouvez gérer la signature de votre contrat. Veuillez noter qu'il est **impératif de sauvegarder votre contrat afin de pouvoir signer**. Toute modification en attende de sauvegarde entrainera un verrouillage du bouton signer.
+Une fois que vous avez ajouté au moins un signataire à votre document (voir [Les signataires](signers.md)), vous pouvez gérer sa signature. Enregistrez d'abord le document : tant qu'une modification n'est pas enregistrée, les boutons de signature sont verrouillés.
 
-Vous pouvez déclarer des signatures manuellement, ou bien mettre en place notre [intégration avec Docusign](docusign.md) pour gérer tout le processus de signature électroniquement.
+## Signature manuelle ou Docusign
 
-<figure><img src="../../.gitbook/assets/contracts-add-signature-modal.png" alt=""><figcaption></figcaption></figure>
+La fenêtre **Ajouter signature** propose deux modes :
 
-Il existe plusieurs manières d'accéder à ce menu de signature:
+* **Manuelle** : vous déclarez que des signataires ont signé. Sélectionnez les acteurs dont vous souhaitez enregistrer la signature, renseignez la **Date de signature**, puis cliquez sur **Ajouter signature**.
+* **Signez avec Docusign®** : Dastra envoie le document à signer électroniquement et suit l'avancement. Ce mode demande l'[intégration avec Docusign](docusign.md).
 
-#### 1) Déclarez individuellement la signature de chaque signataire en cliquant sur le bouton "ajouter signature" d'un signataire
+<figure><img src="../../.gitbook/assets/contracts-sign-1.png" alt="La fenêtre Ajouter signature avec les deux modes, Manuelle et Signez avec Docusign"><figcaption><p>Les deux modes de signature</p></figcaption></figure>
 
-#### 2) Déclarez plusieurs signatures simultanément
+Lorsque tous les signataires ont une signature, Dastra demande si vous souhaitez publier le document. Confirmez pour passer le document à l'état **Actif**.
 
-Vous pouvez signer simultanément plusieurs signataires en cliquant sur la flèche à droite du bouton ajouter un signataire. Il vous sera alors proposé de sélectionner tous les signataires pour lesquels vous voulez signer.
+## Ouvrir la fenêtre de signature
 
-<figure><img src="../../.gitbook/assets/contracts-add-signatory-dropdown.png" alt=""><figcaption></figcaption></figure>
+Il existe trois façons d'ouvrir la fenêtre de signature.
 
-#### 3) Signer depuis la vue tableau
+### Signer pour un signataire
 
-Vous pouvez signer un contrat directement depuis la vue tableau récapitulative
+Dans l'onglet **Signataires**, cliquez sur **Ajouter signature** sur la ligne du signataire concerné.
 
-<figure><img src="../../.gitbook/assets/contracts-list-signature-tooltip.png" alt=""><figcaption></figcaption></figure>
+### Signer pour plusieurs signataires
 
-### Le bouton signer de la zone d'actions principales
+Cliquez sur la flèche à droite du bouton **Ajouter acteur**, puis sur **Signer pour tous**. Vous sélectionnez ensuite les signataires pour lesquels vous enregistrez la signature.
 
-Dans la zone d'actions principales de votre contrat (voir [structure-dun-contrat.md](structure.md "mention")), vous retrouvez un bouton faisant référence aux signatures.
+<figure><img src="../../.gitbook/assets/contracts-sign-2.png" alt="Le menu du bouton Ajouter acteur avec l'action Signer pour tous"><figcaption><p>Signer pour plusieurs signataires depuis l'onglet Signataires</p></figcaption></figure>
 
-Selon le nombre de signataires renseignés, et le nombre de signatures reçues, ce bouton changera de statut
+### Signer depuis le registre
 
-#### 1) Pas de signataires
+Dans le registre, ouvrez le menu de la ligne du document, puis cliquez sur **Ajouter signature**. Cette action est désactivée lorsque tous les signataires ont déjà signé.
 
-Déclarez des signataires afin de pouvoir interagir avec ce bouton
+<figure><img src="../../.gitbook/assets/contracts-sign-3.png" alt="Le menu d'une ligne du registre avec l'action Ajouter signature"><figcaption><p>Signer depuis le registre</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-no-signatories-badge.png" alt=""><figcaption><p>Pas de signataires</p></figcaption></figure>
+## Le bouton de signature de la fiche
 
-#### 2) Des signatures sont manquantes
+Dans le menu d'actions principales de la fiche (voir [Structure d'un document](structure.md)), un bouton résume l'état des signatures. Son libellé change selon le nombre de signataires et de signatures reçues.
 
-En cliquant sur cet état, vous pourrez déclarer les signatures manquantes
+### Pas de signataires
 
-<figure><img src="../../.gitbook/assets/contracts-sign-for-all-button.png" alt=""><figcaption></figcaption></figure>
+Le bouton est désactivé et affiche **pas de signataires**. Ajoutez des signataires pour l'utiliser.
 
-#### 3) Contrat signé par tous les signataires
+<figure><img src="../../.gitbook/assets/contracts-sign-4.png" alt="Le bouton de signature désactivé, avec le libellé pas de signataires"><figcaption><p>Aucun signataire</p></figcaption></figure>
 
-En cliquant sur cet état, vous pourrez supprimer des signatures
+### Des signatures sont manquantes
 
-<figure><img src="../../.gitbook/assets/contracts-signed-badge.png" alt=""><figcaption></figcaption></figure>
+Le bouton affiche **Signer pour tous** suivi du nombre de signatures reçues sur le nombre de signataires. Cliquez dessus pour déclarer les signatures manquantes.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-5.png" alt="Le bouton Signer pour tous avec le compteur de signatures"><figcaption><p>Des signatures sont manquantes</p></figcaption></figure>
+
+### Document signé par tous les signataires
+
+Le bouton affiche **Signé**. Au survol, il devient **Supprimer la signature** : un clic, après confirmation, supprime les signatures si vous devez les reprendre.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-6.png" alt="Le bouton Signé"><figcaption><p>Document signé par tous les signataires</p></figcaption></figure>

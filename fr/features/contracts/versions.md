@@ -1,65 +1,57 @@
-# Versionner le contrat
+# Versionner un document
 
-Pour suivre les modifications, les mises à jour du contrat ou même le renouvellement, il est possible de versionner votre contrat.
+Pour suivre les modifications, les mises à jour ou le renouvellement d'un document, créez-en une nouvelle version.
 
-Chaque version est tracée par un numéro de révision incrémenté automatiquement lors de la création d'une version. Ce numéro de révision est visible depuis la vue tableau récapitulative de vos contrats.
+Chaque version porte un numéro de révision, incrémenté automatiquement à la création. Ce numéro est visible dans le registre. Un document n'a qu'une seule version active à la fois : c'est elle que le registre affiche, les versions inactives n'y figurent pas.
 
-Un contrat ne peut disposer que d'une seule version active à la fois, c'est cette version active du contrat que vous retrouvez dans la vue tableau (les versions non actives du contrat ne sont pas visibles dans la vue tableau).
+Vous pouvez parcourir les versions d'un document depuis le gestionnaire de versions, afficher une version précédente et rendre active n'importe quelle version à tout moment, y compris une version plus récente.
 
-Il est possible de parcourir les différentes versions d'un contrat depuis le gestionnaire des versions du contrat. Vous pouvez afficher à l'écran des versions précédentes de votre contrat et rendre active n'importe quelle version à tout moment (y compris une version ultérieur).
+## Le gestionnaire de versions
 
-### Le gestionnaire de versions
+Quand vous créez un document, Dastra crée sa version 1. Le bouton **Version** suivi du numéro, dans le menu d'actions principales, ouvre le gestionnaire de versions.
 
-Lorsque vous créez un contrat, nous créons par défaut la version 1 de ce contrat, visible dans le menu d'actions principales du contrat
+<figure><img src="../../.gitbook/assets/contracts-versions-1.png" alt="Le bouton Version 1 dans le menu d'actions principales de la fiche"><figcaption><p>Le bouton d'accès au gestionnaire de versions</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-version-indicator-highlight.png" alt=""><figcaption><p>le bouton d'accès au gestionnaire de versions</p></figcaption></figure>
+Le gestionnaire liste toutes les versions du document. Chaque carte indique le numéro de version, sa description, sa date de création et le nombre de ses pièces jointes. Une pastille donne l'état de la version : verte pour la version **Actif**, rouge pour une version **Désactivé**. La mention **(En cours d'affichage)** désigne la version que vous consultez à l'écran.
 
-En cliquant sur ce bouton, vous accédez au gestionnaire de versions
+<figure><img src="../../.gitbook/assets/contracts-versions-2.png" alt="Le gestionnaire de versions avec plusieurs versions, dont la version active et la version affichée"><figcaption><p>Le gestionnaire de versions</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-version-manager-panel.png" alt=""><figcaption><p>Le gestionnaire de versions</p></figcaption></figure>
+## Créer une nouvelle version
 
-Ce menu vous permet de voir et de gérer l'ensemble des versions de votre contrat et d'en créer de nouvelles en cliquant sur _Créer une nouvelle version._
+La nouvelle version part de la version actuellement affichée : placez-vous d'abord sur la version dont vous voulez partir.
 
-### Créer une nouvelle version
+1. Dans le gestionnaire de versions, cliquez sur **Créer une nouvelle version**.
+2. Renseignez la **Date de début** et, si besoin, la **Date de fin**. Vous pourrez les modifier ensuite.
+3. Ajoutez une **Description de la version** si vous le souhaitez.
+4. Activez **Copier les pièces jointes dans la nouvelle version** pour reprendre les fichiers.
+5. Cliquez sur **Créer une nouvelle version**.
 
-En cliquant sur _Créer une nouvelle version_, vous pourrez créer une nouvelle version en renseignant les informations suivantes
+<figure><img src="../../.gitbook/assets/contracts-versions-3.png" alt="La fenêtre de création d'une version avec les dates, la description et l'option de copie des pièces jointes"><figcaption><p>La fenêtre de création d'une version</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-create-version-modal.png" alt=""><figcaption></figcaption></figure>
+Le nom du document, sa description, son unité organisationnelle, ses actifs, ses signataires et ses utilisateurs sont conservés dans la nouvelle version. La version créée devient la version active, et celle qui s'affiche.
 
-Il est important de noter que le nom du contrat, la description, l'unité organisationnelle, les actifs, signataires et utilisateurs seront conservés dans la nouvelle versions. La date de début et de fin de contrat vous est demandé à la création de la version (vous pourrez la modifier par la suite), et il vous est possible d'ajouter une description à cette nouvelle version.
+## Afficher une version
 
-Pour ce qui concerne les pièces jointes de votre contrat, vous pouvez décider de les transférer ou non dans la nouvelle version en cochant la case _Copier les pièces jointes dans la nouvelle version._
+Dans le gestionnaire de versions, ouvrez le menu de la version (les trois points), puis cliquez sur **Afficher**. Cette action n'est pas proposée pour la version déjà affichée.
 
-La nouvelle version est générée à partir de la version en cours d'affichage lorsque vous cliquez sur _Créer une nouvelle version._ Il est donc important de se placer dans la version à partir de laquelle vous souhaitez partir pour votre nouvelle version.
+Vous pouvez afficher et modifier une version qui n'est pas la version active. Dastra le rappelle par un message dans le gestionnaire et par la mention **Version inactive** au-dessus des onglets de la fiche. Ne confondez pas la version active, unique et de référence, avec la version affichée.
 
-La version nouvellement créée devient par défaut la version active de votre contrat (la version visible dans la vue tableau récapitulative des contrats)
+<figure><img src="../../.gitbook/assets/contracts-versions-4.png" alt="La fiche d'un document affichant une version inactive, avec la mention Version inactive"><figcaption><p>La version 4 est la version active, mais vous pouvez afficher et modifier la version 2</p></figcaption></figure>
 
-### Afficher une version
+## Rendre une version active
 
-Pour afficher une version, il vous suffit de vous rendre dans le gestionnaire des versions, de cliquer sur le menu 3 points et de sélectionner _Afficher._
+Une version créée devient automatiquement la version active. Pour rendre une autre version active, ouvrez son menu dans le gestionnaire de versions et cliquez sur **Activer**. Cette action n'est proposée que pour les versions inactives.
 
-A noter qu'il est tout à fait possible d'afficher à l'écran et de modifier une version qui n'est pas la version active de votre contrat
+<figure><img src="../../.gitbook/assets/contracts-versions-5.png" alt="Le menu d'une version inactive avec l'action Activer"><figcaption><p>Définir une version comme version active</p></figcaption></figure>
 
-Il est important de différencier la version active (unique), version qui fait référence pour votre contrat, matérialisée par un point vert dans le gestionnaire de versions, de la version en cours d'affichage.
+## Modifier la description d'une version
 
-Les versions inactives du contrat sont matérialisées par un point rouge dans le gestionnaire de contrats.
+Pour changer la description d'une version existante, ouvrez son menu et cliquez sur **Editer la description de la version**. Modifiez le texte dans la fenêtre qui s'ouvre, puis cliquez sur **Editer la version**.
 
-<figure><img src="../../.gitbook/assets/contracts-version-manager-multiple.png" alt=""><figcaption><p>Bien que ma version 4 soit la version active, je peux tout à fait afficher et travailler sur la version 2</p></figcaption></figure>
+## Supprimer une version
 
-### Rendre une version active
+Ouvrez le menu d'une version inactive et cliquez sur **Supprimer**. Vous ne pouvez supprimer ni la version active, ni la version actuellement affichée : affichez une autre version pour supprimer celle-ci.
 
-Lors de la création d'une version, cette dernière devient automatiquement la version active et en cours d'affichage.
+<figure><img src="../../.gitbook/assets/contracts-versions-6.png" alt="Le menu d'une version inactive avec l'action Supprimer"><figcaption><p>Supprimer une version</p></figcaption></figure>
 
-Vous pouvez manuellement rendre une version active en vous rendant dans le gestionnaire de version et en cliquant sur l'option Activer d'une version.
-
-<figure><img src="../../.gitbook/assets/contracts-version-context-menu-activate.png" alt=""><figcaption><p>Définir la version 3 du contrat comme la version active / principale.</p></figcaption></figure>
-
-### Suppression
-
-Vous pouvez à tout moment supprimer une version inactive du contrat en cliquant sur Supprimer dans le menu d'une version
-
-<figure><img src="../../.gitbook/assets/contracts-version-context-menu-delete.png" alt=""><figcaption><p>Supprimer la version 1 du contrat</p></figcaption></figure>
-
-Il n'est pas possible de supprimer la version active du contrat.
-
-Il est important de noter que la suppression de votre contrat depuis la vue tableau du module contrat entrainera la suppresion de la version active ainsi que de toutes les versions inactives du contrat.
+Supprimer un document supprime sa version active et toutes ses versions inactives.

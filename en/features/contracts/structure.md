@@ -1,45 +1,66 @@
 ---
-description: Details of the structure of a contract in Dastra
+description: >-
+  The elements that make up a document record in Dastra: title, actions,
+  shortcuts, tabs and preview.
 ---
 
-# Structure of a contract
+# Structure of a document
 
-Once your contract is created, you will be redirected to the contract editing view.
+Once your document is created, Dastra opens its record (see [Create a document](declare.md)). The file preview takes the left of the screen and the input tabs take the right.
 
-<figure><img src="../../.gitbook/assets/integration-filerskeepers-schedule-table.png" alt=""><figcaption><p>A new contact</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-structure-1.png" alt="A document record with the header, the preview on the left and the tabs on the right"><figcaption><p>A newly created document record</p></figcaption></figure>
 
-### Structure of the contract's edit page
+## The title and the type
 
-#### The title
+The editable title of the document is at the top left. The type badge (contract, policy, notice, procedure or other) appears above the title: click it to change the type.
 
-You will find the editable title of your contract at the top left corner.
+<figure><img src="../../.gitbook/assets/contracts-structure-2.png" alt="The record header with the type badge, the title, the shortcuts menu and the action buttons"><figcaption><p>The type, the title, the shortcuts and the main actions</p></figcaption></figure>
 
-#### Main actions menu
+## The shortcuts menu
 
-A menu of main actions located at the top right allows you to manage contract signatures, versioning, process steps, and saving.
+Under the title, on the left, the shortcuts menu gives access to the elements associated with the document:
 
-<figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-synced.png" alt=""><figcaption><p>Main actions menu</p></figcaption></figure>
+* internal discussions;
+* associated tasks, if task management is active;
+* the audit log, if audit is active, and the **Activity history** of the document;
+* linked compliance tests, if the Compliance module is active (see [Details and attachments](documents.md));
+* the regular review of the document (see [Regular review of documents](review.md)).
 
-#### Shortcuts menu
+If you came from the record, arrows let you move from one document to another.
 
-A shortcut menu at the top left also allows you to access internal discussions about the contract, associated tasks, questionnaires, modification history, and regular contract reviews. If navigating from the contracts dashboard (and you have more than one contract saved), arrow buttons are also available for moving between contracts.
+## The main actions
 
-<figure><img src="../../.gitbook/assets/settings-sso-entra-auto-create-user-option.png" alt=""><figcaption><p>Shortcuts menu</p></figcaption></figure>
+The main actions menu, at the top right, gathers:
 
-#### The menu of contract sections to be filled in
+* the **AI analysis (beta)** button: it opens the AI analysis of the document. This feature is in beta, it requires the AI analysis and AI agent features, and its results must be interpreted with caution;
+* the signature button, whose label follows the state of the document (see [Sign a document](sign.md));
+* the **Version** button followed by the version number, which opens the versions manager (see [Document versions](versions.md));
+* the workflow stage selector;
+* the **Save changes** button.
 
-A menu at the top right allows you to navigate between different sections of the contract to be filled in, such as documents, assets, signatories, and users.
+The arrow on the right of **Save changes** opens three actions:
 
-<figure><img src="../../.gitbook/assets/getting-started-login-password-page.png" alt=""><figcaption><p>Contract sections</p></figcaption></figure>
+* **Share**: create a sharing link for the document.
+* **Export**: export the document (see [Contracts and policies](README.md#import-and-export)).
+* **Move to recycle bin**: put the document in the recycle bin.
 
-#### The field editing area within the sections
+A document in the recycle bin carries the **Into recycle bin** badge. The same menu then offers **Restore** to put it back in the record, and **Delete** to delete it.
 
-A contract currently consists of four sections: Documents, Assets, Signatories, and Users. The fields to be filled in for each section are displayed on the right side of the screen and change as you navigate from one section to another using the section menu (as mentioned above).
+<figure><img src="../../.gitbook/assets/contracts-structure-3.png" alt="The Save changes menu open, with the Share, Export and Move to recycle bin actions"><figcaption><p>The actions of the Save changes button</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/getting-started-login-2fa-settings.png" alt=""><figcaption><p>Field editing area</p></figcaption></figure>
+## The input tabs
 
-#### Documents preview
+Four tabs are displayed on the right of the screen. Their content changes when you switch from one to another:
 
-An area where you can preview the documents of your contract (the main contract and any annexes).
+* **Details**: the general information, the attachments and the custom fields (see [Details and attachments](documents.md)).
+* **Signers - Signatories**: the parties who sign the document (see [Signers](signers.md)).
+* **Assets**: the assets the document concerns (see [Assets](assets.md)).
+* **Users**: the workspace users who work on the document (see [Linked users](users.md)).
 
-<figure><img src="../../.gitbook/assets/getting-started-workspace-setup-name-logo.png" alt=""><figcaption><p>Documents preview area</p></figcaption></figure>
+Except for **Details**, each tab shows in brackets the number of items it contains.
+
+<figure><img src="../../.gitbook/assets/contracts-structure-4.png" alt="The four tabs Details, Signers - Signatories, Assets and Users"><figcaption><p>The tabs of a document record</p></figcaption></figure>
+
+## The attachments preview
+
+The area on the left previews the files of the document: the contract or policy and any appendices. It stays displayed whichever tab is open. When the document has no file yet, it offers to drop a file or write a policy.
