@@ -4,20 +4,20 @@ description: La bibliothèque centralise l’ensemble des objets de conformité 
 
 # Bibliothèque
 
-Elle constitue le **socle commun** sur lequel reposent les frameworks, les projets de conformité et la gestion des risques.
+La bibliothèque constitue le **socle commun** sur lequel reposent les frameworks, les projets de conformité et la gestion des risques.
 
 {% columns %}
 {% column %}
 Depuis la bibliothèque, vous pouvez créer, structurer et maintenir :
 
-* des **frameworks** (référentiels de conformité),
-* des **exigences**,
+* des **frameworks** (référentiels de conformité) et leurs **exigences**,
 * des **contrôles**, éléments centraux reliant exigences, tests et risques,
+* des **tests** qui vérifient les contrôles,
 * ainsi que les **risques** et **menaces** associés.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/compliance-library-nav-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-nav-menu-1.png" alt="Menu latéral de la bibliothèque de conformité"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

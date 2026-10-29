@@ -5,15 +5,15 @@ description: >-
 
 # Project design
 
-It allows you to define the **organizational scope**, select the **applicable frameworks** and automatically initialize the associated controls, tests and risks.
+The **Design** phase lets you define the **organizational scope** of the project, select the **applicable frameworks** and automatically initialize the associated controls, tests and risks.
 
-This step lays the foundations of the project and determines the quality of monitoring in the following phases.
+This step lays the foundations of the project and determines the quality of monitoring in the following phases. For an overview of the phases, see [Projects](README.md).
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image-432.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-432.png" alt="The phases of the compliance project, with the Scope phase in progress"><figcaption></figcaption></figure>
 
-### 1. Creating the project and defining the scope
+## 1. Creating the project and defining the scope
 
 When creating the project, an **organizational scope** must be selected.\
 The scope groups together one or more organizational units and determines **the scope of application of the compliance project**.
@@ -24,32 +24,32 @@ Once the project is created, the scope is displayed in the project header and us
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-490.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-490.png" alt="Project creation window with the title and the scope"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### 2. Assigning users to the project
+## 2. Assigning users to the project
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-491.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-491.png" alt="Project creation window with the user assignment"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
 The design phase also allows you to **designate the users authorized to manage the project**.
 
-* Each user can be assigned a role (e.g. owner).
+* Each user can be assigned a role: **Accountable** or **Informed**.
 * These users will be entitled to steer the project's controls, tests and audits.
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image-433.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-433.png" alt="The phases of the compliance project, with the Design phase"><figcaption></figcaption></figure>
 
-### 3. Adding compliance frameworks
+## 3. Adding compliance frameworks
 
 A compliance project is based on one or more **frameworks** (standards, internal or custom referentials).
 
@@ -60,7 +60,7 @@ Adding a framework allows you to import:
 * the **tests**,
 * and the associated **risks**.
 
-<figure><img src="../../../.gitbook/assets/image-434.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-434.png" alt="Selection of a framework to add to the project"><figcaption></figcaption></figure>
 
 
 
@@ -72,7 +72,7 @@ Several frameworks can be added successively to the same project.
 
 ***
 
-### 4. Sharing controls across frameworks
+## 4. Sharing controls across frameworks
 
 When several frameworks are added to the project, Dastra automatically detects the **common controls**.
 
@@ -80,11 +80,11 @@ When several frameworks are added to the project, Dastra automatically detects t
 * Its implementation simultaneously covers all the associated requirements.
 * This makes it possible to increase compliance coverage without multiplying actions.
 
-<figure><img src="../../../.gitbook/assets/image-435.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-435.png" alt="Import of the controls shared between several frameworks"><figcaption></figcaption></figure>
 
 ***
 
-### 5. Selecting the controls to import
+## 5. Selecting the controls to import
 
 When adding a framework, several options are offered:
 
@@ -92,13 +92,13 @@ When adding a framework, several options are offered:
 * import **only certain controls**,
 * or **not import any controls** in order to implement them manually.
 
-<figure><img src="../../../.gitbook/assets/image-437.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-437.png" alt="Choice of the controls to import with the framework"><figcaption></figcaption></figure>
 
 This flexibility makes it possible to adapt the project to the organization's maturity.
 
 ***
 
-### 6. Initializing controls and tests
+## 6. Initializing controls and tests
 
 {% columns %}
 {% column %}
@@ -115,13 +115,13 @@ At this stage:
 {% endcolumn %}
 
 {% column %}
-<div align="center"><img src="../../../.gitbook/assets/image-438.png" alt=""></div>
+<div align="center"><img src="../../../.gitbook/assets/image-438.png" alt="Project overview with the imported frameworks"></div>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### 7. Preparing the risk analysis
+## 7. Preparing the risk analysis
 
 The **risks from the frameworks** can be selected during the import.
 
@@ -130,11 +130,19 @@ They constitute:
 * the basis for the **initial risk assessment**,
 * the reference point for calculating the **residual risk** after the controls are applied.
 
-<figure><img src="../../../.gitbook/assets/image-439.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-439.png" alt="Risk matrix of the project"><figcaption></figcaption></figure>
 
 ***
 
-### Result of the Design phase
+## Removing a framework from the project
+
+On the project **Overview**, the **⋯** menu of a framework card offers **Detach framework**. Dastra then removes from the project the controls, tests, risks and threats attached only to that framework. A control that the project still applies through another framework is kept.
+
+Removal is not possible while an audit of that framework is not archived (see [Audits](audits.md)).
+
+***
+
+## Result of the Design phase
 
 At the end of the design phase, the project has:
 
