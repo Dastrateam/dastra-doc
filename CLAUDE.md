@@ -22,9 +22,17 @@ Each language folder contains:
 - `SUMMARY.md` — the table of contents. **A page not listed in `SUMMARY.md` does not appear in the published docs.** Section headers (`## ⚙️ Features`) become nav groups; nesting via indented list items.
 - `README.md` — the landing page of the space (and each subfolder's `README.md` is that section's landing page).
 - `.gitbook/assets/` — all images for that language. Reference them with relative paths (`../.gitbook/assets/foo.png`).
-- Content organized by theme: `features/`, `api-references/`, `security/`, getting-started (`commencer/` or `getting-started/`), etc.
+- Content organized by theme, with the same folders in every language: `gdpr/`, `getting-started/`, `features/`, `api/`, `security/`, `other/`, `partners/` (plus `frameworks/` in English and German).
 
-Note that many file and folder names remain in French even inside `en/`, `de/`, `nl/` (e.g. `en/features/generalites/`, `commencer/`), because slugs were kept when content was translated. **Never rename existing files or folders to "fix" this** — paths are the published URLs and renaming breaks links and anchors. Match the existing slug across languages when adding a translated page.
+## Paths and URLs
+
+Every page has **one English path, identical in the four languages** (`fr/features/ropa/merge.md`, `en/features/ropa/merge.md`, …). The old French-slug URLs keep working through the `redirects:` of each language's `.gitbook.yaml`.
+
+- A new page gets its English path from the start, the same in every language: short English folder names (`features/ropa`, `features/requests`), page names of one to three words, lowercase, hyphens, ASCII.
+- The published URL of a page is the slug of its `##` group in `SUMMARY.md` (the `id` of the group's `<a>` anchor, or the slugified title) followed by the page path inside that group. Each group anchor matches its folder (`<a href="#features" id="features"></a>`); never change a group heading without keeping its anchor.
+- Paths are published URLs: do not rename or move a page as part of a content change. A rename is a decision of its own, done in every language at once, with a redirect from the old URL in each `.gitbook.yaml` (key = old URL path without `.md`, value = new file path), after searching the Dastra app for links to the old path.
+- Never rename `features/integrations/*`: the connectors of the app link to these paths.
+- Changing a heading changes its anchor: update the links that point to it.
 
 ## Editing conventions
 
