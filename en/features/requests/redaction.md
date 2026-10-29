@@ -6,67 +6,80 @@ description: >-
 
 # Document redaction
 
-When processing a data subject right request, it is common to have to share documents with the requester — identity copies, contracts, account histories, client files. These documents almost always contain confidential information that should not be disclosed: data relating to third parties, internal contractual data, or personal references.
+When you process a data subject request, you often have to send documents to the requester: a copy of an ID, a contract, an account history, a customer file. These documents almost always contain confidential information that must not be disclosed: data about third parties, internal contract terms, named references.
 
-Dastra includes a redaction tool directly inside the request processing workflow, without leaving the platform.
-
-***
-
-## How to access redaction
-
-The redaction tool is available from the **Communication / Transmission** step of a request in progress, when an attachment is present or added.
-
-1. Open a data subject request in progress
-2. Go to the **Communication / Transmission** step
-3. Select or add the document to be shared
-4. Click **Redact document**
-
-<figure><img src="../../.gitbook/assets/dsr-request-processing-attachments.png" alt="Request processing step with the original document to redact"><figcaption><p>Original attachment in the request processing step — ready to redact</p></figcaption></figure>
+Dastra includes a redaction tool inside the request. The interface calls it **File redaction**.
 
 ***
 
-## AI-assisted redaction
+## Open the redaction tool
 
-When you launch redaction, the AI assistant analyses the document and **automatically detects zones likely to contain third-party personal identifiers**: names, addresses, contact details, identification numbers.
+The tool opens from the attachments of the request. It accepts PDF, PNG and JPEG files and depends on your plan: the button does not appear if redaction is not included.
 
-These zones are pre-selected and displayed on the document. Your team:
+1. In the **Requests** menu, open **Record of requests**, then open the request to process.
+2. In the **Request processing** section, open the **Attachments** tab. Upload the document if needed.
+3. On the file row, click the **Data redaction** icon. You can also open the file preview and click **Data redaction**.
 
-* **Removes false positives** with a click (incorrectly detected zones)
-* **Manually adds** any zone the AI may have missed
+The **File redaction** editor opens on the document.
 
-<figure><img src="../../.gitbook/assets/caviardage-analyse-ia.gif" alt="AI analysis of a document, automatically detecting zones containing third-party identifiers"><figcaption><p>The AI analyses the document and automatically places the redaction zones to validate</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dsr-request-processing-attachments.png" alt="The Attachments tab of a request, with the preview, redaction, download and delete icons on the file row"><figcaption><p>The request attachments, with the redaction icon on each compatible file</p></figcaption></figure>
+
+***
+
+## Redact manually
+
+Draw the areas to hide on each page with the mouse. The editor shows the number of redactions and offers these actions:
+
+* **Remove redaction** deletes one area.
+* **Undo last redaction** goes back by one area.
+* **Clear page redactions** and **Clear all redactions** start again from a clean page.
+* The zoom and page buttons make long documents easier to read.
+
+<figure><img src="../../.gitbook/assets/caviardage-manuel.gif" alt="Manually selecting the areas to hide on a document"><figcaption><p>Draw the areas to redact directly on the document</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/requests-redaction-1.png" alt="The File redaction editor with the document, redacted areas in black and the toolbar"><figcaption><p>The File redaction editor</p></figcaption></figure>
+
+***
+
+## Redact with AI
+
+In the editor, click **Auto-redact with AI** to open the **Auto-redact with AI** dialog. The AI analyzes the document, finds third-party personal data (names, addresses, contact details, identification numbers) and places redaction areas. No data is kept beyond the session.
+
+The dialog offers three options:
+
+* **Exclude the data subject's own information from redaction**: selected by default, so the requester's own data stays readable.
+* **Custom instruction**: an additional instruction, for example also redact all company names.
+* **Additional phrases to redact**: up to 20 phrases to hide wherever they appear. Type a phrase, then press Enter.
+
+Then click **Auto-redact with AI**. The suggested areas are added to the editor: remove the ones detected by mistake and add the ones the AI missed. The **Auto-redact with AI** button only appears if AI redaction is included in your plan.
+
+<figure><img src="../../.gitbook/assets/requests-redaction-2.png" alt="The Auto-redact with AI dialog with its three options"><figcaption><p>The options of AI auto-redaction</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/caviardage-analyse-ia.gif" alt="AI analysis of a document and automatic detection of the areas containing third-party identifiers"><figcaption><p>The AI analyzes the document and places the redaction areas for you to review</p></figcaption></figure>
 
 {% hint style="warning" %}
-The AI result is a starting proposal, not a final decision. Every redaction zone must be reviewed and validated by a qualified person before the document is sent.
+The AI result is a starting proposal, not a final decision. A qualified person must review and validate every area before the document is sent.
 {% endhint %}
 
 ***
 
-## Manual redaction
+## Save the redacted file
 
-For teams that prefer to keep full control without AI assistance, **fully manual redaction** is available in the same interface. Select the zones to mask directly on the document.
+When the review is done, click **Save redacted file**. The button stays inactive until at least one area is drawn. The **Delete original file** switch, on by default, decides what happens to the original:
 
-<figure><img src="../../.gitbook/assets/caviardage-manuel.gif" alt="Manually selecting the zones to mask on a document"><figcaption><p>Draw the zones to redact yourself, directly on the document</p></figcaption></figure>
+* On: the redacted file permanently replaces the original, which is deleted.
+* Off: the redacted file is added as a new attachment, named with the suffix `-redacted`, and the original is kept.
 
-***
-
-## Generating the redacted document
-
-Once the review is complete, click **Generate redacted document**. The output document is:
-
-* **Rasterised** — the underlying text is not simply hidden visually but made definitively inaccessible. It is not possible to extract redacted content from the final file.
-* **Saved to the request** — the redacted document is attached to the request and available for sending.
-
-The original can be kept or deleted based on your organisation's policy.
+Dastra asks you to confirm before saving. Pages are flattened into images: the hidden text no longer exists in the resulting file and cannot be extracted. A redacted file shows the **File data redacted** indicator, with the number of redacted areas.
 
 {% hint style="info" %}
-Rasterisation-based redaction is the method recommended by data protection authorities. A simple visual mask (an opaque rectangle on a non-flattened PDF) can be circumvented and does not constitute compliant redaction.
+A plain opaque rectangle over an unflattened PDF can be bypassed and is not a compliant redaction. Flattening to an image is the method recommended by data protection authorities.
 {% endhint %}
 
 ***
 
 ## Best practices
 
-* Always review the redacted document before sending to verify that no confidential information is visible.
-* Keep the original in Dastra for your compliance file, unless your internal policy requires deletion.
-* For large or complex documents (multi-page contracts, account statements), combine AI detection with a manual page-by-page review.
+* Review the redacted document before sending it to check that no confidential information is visible.
+* Turn off **Delete original file** to keep the original in the request, for example for your compliance record, unless your internal policy requires deleting it.
+* For long or complex documents (multi-page contracts, account statements), combine AI detection with a page-by-page manual review.

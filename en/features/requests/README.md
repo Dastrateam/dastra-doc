@@ -4,79 +4,72 @@ description: Learn how to respond to data subject right requests.
 
 # Data subject right request
 
-With the GDPR, European citizens are able to ask a company or organization processing personal data about them to exercise their rights.
+With the GDPR, European citizens can ask a company or organization that processes their personal data to let them exercise their rights. The organization is required to make it easy to exercise those rights.
 
 {% content-ref url="../../gdpr/concepts/rights.md" %}
 [data-subject-rights.md](../../gdpr/concepts/rights.md)
 {% endcontent-ref %}
 
-To do this, the company or organization must set up a register of requests to exercise rights as well as a dedicated process.
+To do this, the organization must set up procedures to answer these requests and to provide proof that it did so. This means defined steps and documentation kept in a register.
 
+## The process for managing a data subject right request
 
+Managing a request to exercise a right comes down to 4 main steps:
 
+<figure><img src="../../.gitbook/assets/dsr-request-lifecycle-flowchart.png" alt="The four steps of managing a request: collection, identity check, processing, communication to the data subject, then closing or archiving"><figcaption><p>The DSR management process</p></figcaption></figure>
 
-
-## The process for managing requests from individuals exercising their data protection rights
-
-
-
-The management of a request to exercise a right can be summarised in 4 main steps:
-
-<figure><img src="../../.gitbook/assets/dsr-request-lifecycle-flowchart.png" alt=""><figcaption><p>The DSR management process</p></figcaption></figure>
-
-For more details on the DSR management process, have a look at this page:
-
-
+For more details on managing requests, see this page:
 
 {% content-ref url="manage.md" %}
 [manage-data-subject-right-requests.md](manage.md)
 {% endcontent-ref %}
 
-## The record of data subject rights requests
+## The record of data subject right requests
 
-Dastra allows you to constitute a register of requests for the exercise of rights centralizing all past, present and future requests. This is available by clicking on the "exercise of rights" tab in the banner on the left of the screen.
+Dastra lets you build a register that centralizes all past, present and future requests. To open it, click **Requests** in the sidebar, then **Record of requests**.
 
+<figure><img src="../../.gitbook/assets/requests-readme-1.png" alt="The record of requests, with the Create a request button and the module menu"><figcaption><p>The record of requests</p></figcaption></figure>
 
+The **Requests** menu gives access to five pages:
 
-<figure><img src="../../.gitbook/assets/dsr-requests-list-overview.png" alt=""><figcaption></figcaption></figure>
+* **Record of requests**: the list of all requests, with their filters and columns.
+* **Reporting**: the follow-up indicators (see [Request statistics](process.md#request-statistics)).
+* **Messages**: the exchanges with requesters (see [Requester messages](process.md#requester-messages)).
+* **Forms**: the widgets that collect requests on your website. This page is only available to users allowed to manage collection forms.
+* **Requests processing**: the interface for asset owners (see [Request processing interface](advanced/asset-owners.md)).
 
-## Complete a new data subject rights request
+## Add a new data subject right request
 
-There are 3 ways to fill in a new data subject rights request in DASTRA:
+There are 5 ways to add a new request in Dastra:
 
-1. [Inform directly by hand any new data subject right requests](manage.md)&#x20;
-2. Import requests by excel, csv or text file. Read our[ guide to importing data](../general/import.md) into Dastra
-3. [Set up a data subject right widget](widget.md)
+1. [Enter the request directly in the tool](manage.md#creating-a-request-manually).
+2. [Import requests from an Excel, CSV or text file](manage.md#importing-and-exporting-requests).
+3. [Receive requests through a collection email address](manage.md#creating-a-request-through-a-collection-email-address).
+4. [Set up a collection form (widget)](widget.md) on your website.
+5. [Create requests through the REST API](api.md).
 
-### Manual creation of a data subject rights request
+### Creating a request manually
 
-By clicking on the "Add a data subject right request" button, a window appears where you can detail the data subject right request. Click on "Save and exit". That's it, you have created your first data subject right request manually!
+Click **Create a request**. In the window that opens, fill in the title, the request type or types, the date, the language of the requester, the email address (optional) and the organizational unit, then click **Create**. Dastra opens the request so that you can detail and process it.
 
-<figure><img src="../../.gitbook/assets/dsr-create-request-form.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-readme-2.png" alt="The window for creating a request"><figcaption><p>The window for creating a request</p></figcaption></figure>
 
-### Import / export of the data subject right request register
+### Importing and exporting the request register
 
-The entire request register is importable and exportable. To import a request, click on the arrow next to the "add a data subject right request" button
+The whole register can be imported and exported. To import requests, click the arrow next to the **Create a request** button, then click **Import**.
 
-<figure><img src="../../.gitbook/assets/dsr-list-connect-apps-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-readme-3.png" alt="The drop-down menu of the Create a request button, with the Import, Export, Convert emails into requests and Read the documentation entries"><figcaption></figcaption></figure>
 
-A window appears with an "import" button. Click on it, download the registry template and follow the instructions to import the requests into Dastra. Once imported, the request will be directly available in the request register.
+On the import screen, click **Download the file template** to see the expected format (**View columns format** lists the columns), then drop your file (csv, txt or xlsx) in the upload area. Follow the steps of the wizard (data importing, columns mapping, import and result) to import the requests into Dastra. Once imported, the requests are available in the register.
 
-<figure><img src="../../.gitbook/assets/audit-create-type-picker.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/requests-readme-4.png" alt="The first step of the request import: downloading the template and uploading the file"><figcaption></figcaption></figure>
 
-### Implementation of data subject right request widget
+### Setting up a request widget
 
-Data subject right requests can also come from a specific widget that can be configured from the Dastra platform.
+Requests can also come from a dedicated widget that you configure in Dastra.
 
-See our [guide on how to set up the data subject rights widget](widget.md)
-
-
+See our [guide on setting up the data subject right request widget](widget.md).
 
 {% content-ref url="widget.md" %}
-[implementez-un-widget-dexercice-des-droits.md](widget.md)
+[set-up-a-data-subject-right-request-widget.md](widget.md)
 {% endcontent-ref %}
-
-
-
-
-
