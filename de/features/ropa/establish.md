@@ -1,32 +1,38 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie Ihr Verarbeitungsverzeichnis mit Dastra erstellen und
+  Erfahren Sie, wie Sie Ihr Verarbeitungsverzeichnis in Dastra entwerfen und
   verwalten.
 ---
 
-# Erstellen Sie Ihr Verzeichnis
+# Ihr Verzeichnis erstellen
 
-## Um Ihr Verzeichnis in Dastra zu erstellen, gibt es zwei Möglichkeiten:
+## Zwei Möglichkeiten, Ihr Verzeichnis in Dastra einzurichten
 
-* Entweder verfügen Sie bereits über ein Verzeichnis, in diesem Fall können Sie es in Dastra importieren
-* Oder Sie verfügen über keines und müssen es von Grund auf neu erstellen und sich dabei von den vorgeschlagenen Verarbeitungsvorlagen inspirieren lassen
+* Entweder Sie haben bereits ein Verzeichnis, dann können Sie es in Dastra importieren.
+* Oder Sie haben keines, dann erstellen Sie es von Grund auf und nutzen die Verarbeitungsvorlagen als Orientierung.
 
-## Importieren Sie Ihr bestehendes Verzeichnis
+## Ihr bestehendes Verzeichnis importieren
 
-Mit Dastra können Sie Ihr bestehendes Verarbeitungsverzeichnis einfach hochladen, anstatt es manuell eingeben zu müssen, unabhängig vom aktuellen Format — Excel, Text oder CSV.
+In Dastra können Sie Ihr bestehendes Verzeichnis importieren, statt es von Hand einzugeben, in jedem aktuellen Format: als Excel-, Text- oder CSV-Datei. Sie können auch Verarbeitungstätigkeiten importieren, die Sie im JSON-Format aus einem anderen Dastra-Mandanten exportiert haben.
 
 {% content-ref url="export-import.md" %}
-[exporter-importer-le-registre.md](export-import.md)
+[Verzeichnis exportieren / importieren](export-import.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Vergessen Sie nicht, Ihre Verarbeitungstätigkeiten zu veröffentlichen, wenn Sie möchten, dass sie im Dashboard berücksichtigt werden.
+Vergessen Sie nicht, Ihre Verarbeitungstätigkeiten zu veröffentlichen, wenn sie im Dashboard berücksichtigt werden sollen.
 {% endhint %}
 
-## Ein neues Verarbeitungsverzeichnis von Grund auf erstellen&#x20;
+## Ein neues Verzeichnis von Grund auf erstellen
 
-Mit Dastra wird automatisch ein Verzeichnis erstellt, sobald der Mandant definiert ist. Wenn Sie kein bestehendes Verzeichnis hochladen möchten, können Sie sofort damit beginnen, das standardmäßig erstellte Verzeichnis auszufüllen, indem Sie Ihre erste Verarbeitungstätigkeit erstellen. Wenn Sie wissen möchten, wie, klicken Sie auf den folgenden Link:
+In Dastra wird automatisch ein Verzeichnis angelegt, sobald der Mandant eingerichtet ist. Wenn Sie kein bestehendes Verzeichnis importieren möchten, können Sie sofort mit dem Ausfüllen dieses Standardverzeichnisses beginnen, indem Sie Ihre erste Verarbeitungstätigkeit anlegen. Wie das geht, erfahren Sie hier:
 
 {% content-ref url="declare.md" %}
-[gerer-votre-traitement.md](declare.md)
+[Eine Verarbeitung anlegen](declare.md)
+{% endcontent-ref %}
+
+Um bei gängigen Verarbeitungstätigkeiten Zeit zu sparen, können Sie auch mit einer Vorlage beginnen:
+
+{% content-ref url="templates.md" %}
+[Eine Verarbeitungsvorlage verwenden](templates.md)
 {% endcontent-ref %}

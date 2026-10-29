@@ -1,97 +1,81 @@
-# Zusammenführung von Verarbeitungen
+---
+description: >-
+  Erfahren Sie, wie Sie doppelte oder ähnliche Verarbeitungstätigkeiten zu einer
+  einzigen zusammenführen.
+---
 
-### 🧠 Einführung
+# Verarbeitungen zusammenführen
 
-Die **Zusammenführung von Verarbeitungen** ermöglicht es, **mehrere Datenverarbeitungen zu einer einzigen zusammenzufassen**, wobei die **wesentlichen Informationen** und der zugehörige Verlauf **erhalten bleiben**.\
-Diese Funktion ist besonders nützlich, um **das Verarbeitungsverzeichnis zu rationalisieren**, Duplikate zu vermeiden und die **dokumentarische Konsistenz** zu verbessern.
+## Einführung
 
-> 🎯 Ziel: Vereinfachung der Verzeichnisverwaltung durch Konsolidierung ähnlicher oder redundanter Verarbeitungen.
+Mit dem Zusammenführen von Verarbeitungstätigkeiten **fassen Sie mehrere Verarbeitungstätigkeiten zu einer einzigen zusammen** und behalten dabei die Informationen, die Sie auswählen, und die mit ihnen verknüpften Elemente. Das ist besonders nützlich, um **Ihr Verarbeitungsverzeichnis zu straffen**, Duplikate zu entfernen und Ihre Dokumentation konsistent zu halten.
 
-***
+Eine der Verarbeitungstätigkeiten bleibt als **Referenzversion** erhalten: Sie wählen Feld für Feld die Werte aus, die aus den anderen übernommen werden, danach werden die anderen gelöscht.
 
-### ⚙️ Funktion aktivieren
+Zum Zusammenführen benötigen Sie Schreibzugriff auf das Verarbeitungsverzeichnis. Sind in Ihrem Mandanten Aufgabenverwaltung, Risikomanagement oder Fragebögen aktiviert, benötigen Sie auch Schreibzugriff auf diese Module, damit die verknüpften Elemente auf die Referenzversion verschoben werden können.
 
-Die Zusammenführung von Verarbeitungen ist für **Administratoren** und **Mitwirkende** mit Bearbeitungsrechten am Verzeichnis verfügbar.
+## Ein Zusammenführen starten
 
-#### So aktivieren Sie die Funktion:
+Sie können ein Zusammenführen an drei Stellen starten:
 
-1. Gehen Sie zum Modul **Verarbeitungsverzeichnis**.
-2. Wählen Sie **mehrere Verarbeitungen** zum Zusammenführen aus.
-3. Klicken Sie auf **Zusammenführen**.
-4. Wählen Sie:
-   * Die **Hauptverarbeitung** (die erhalten bleibt),
-   * Die Felder, die **priorisiert** oder **kombiniert** werden sollen (z. B.: Verarbeitungszwecke, Datenkategorien, Rechtsgrundlagen).
-5. Bestätigen Sie die Zusammenführung, um die **konsolidierte Verarbeitung** zu erstellen.
+* **Aus der Liste, für mehrere Verarbeitungstätigkeiten**: Wählen Sie die zusammenzuführenden Verarbeitungstätigkeiten aus (weniger als 30), klicken Sie auf **Bitte wählen Sie eine Sammelaktion aus** und dann auf **Zusammenführen**. Der Vergleich öffnet sich direkt.
+* **Aus der Liste, für eine Verarbeitungstätigkeit**: Öffnen Sie das Aktionsmenü am Ende ihrer Zeile und klicken Sie auf **Zusammenführen**.
+* **Aus dem Eintrag einer Verarbeitungstätigkeit**: Klicken Sie auf den Pfeil neben der Schaltfläche **Speichern** und dann auf **Zusammenführen**.
 
-> 💡 Die zusammengeführten Verarbeitungen werden automatisch archiviert, um die Nachvollziehbarkeit und Umkehrbarkeit des Vorgangs zu gewährleisten.
+<figure><img src="../../.gitbook/assets/ropa-merge-1.png" alt="Eintrag Zusammenführen im Aktionsmenü einer Verarbeitungstätigkeit"><figcaption><p>Der Eintrag Zusammenführen im Aktionsmenü einer Verarbeitungstätigkeit</p></figcaption></figure>
 
-***
+Wenn Sie von einer einzelnen Verarbeitungstätigkeit aus starten, fragt das Fenster **Tool zum Zusammenführen von Daten** zuerst, mit welchen Verarbeitungstätigkeiten sie zusammengeführt werden soll: Wählen Sie diese unter **Bitte wählen Sie die Objekte aus, mit denen Sie die Daten zusammenführen möchten.** aus und klicken Sie dann auf **Weiter**.
 
-### 🚀 Hauptfunktionen
+<figure><img src="../../.gitbook/assets/ropa-merge-2.png" alt="Auswahl der zusammenzuführenden Verarbeitungstätigkeiten"><figcaption><p>Wählen Sie die Verarbeitungstätigkeiten aus, mit denen zusammengeführt wird</p></figcaption></figure>
 
-#### 🔍 1. Zusammenführung und Datenanalyse
+## Die beizubehaltenden Werte auswählen
 
-Dastra ermöglicht es, **verschiedene Verarbeitungen** und ihre **zugehörigen Inhalte** (Datenkategorien, Speicherdauern, Sicherheitsmaßnahmen, Auftragsverarbeiter usw.) zu **kombinieren**.\
-Das Tool erkennt automatisch:
+Das Fenster **Tool zum Zusammenführen von Daten** vergleicht die Verarbeitungstätigkeiten nebeneinander, eine Spalte je Verarbeitungstätigkeit.
 
-* die **ähnlichen Felder** zum Zusammenführen,
-* die **abweichenden Werte**, die manuell entschieden werden müssen,
-* und die **potenziellen Inkonsistenzen** zwischen Verarbeitungen.
+1. Haken Sie in der Kopfzeile ihrer Spalte die Verarbeitungstätigkeit an, die erhalten bleiben soll: Sie wird zur **Reference version**. Sie behält ihre Kennung und ihren Verlauf. Die anderen Spalten zeigen das Badge **Keep selected fields**: Diese Verarbeitungstätigkeiten werden nach der Bestätigung des Zusammenführens gelöscht, und nur die Felder, die Sie in ihnen auswählen, werden in die Referenzversion übernommen.
+2. Wählen Sie bei jedem Feld mit einem einzelnen Wert die Spalte aus, deren Wert Sie behalten möchten.
+3. Haken Sie bei jedem Feld mit einer Liste (Zwecke, Datenkategorien, Empfänger, Sicherheitsmaßnahmen usw.) die Einträge an, die erhalten bleiben sollen, gleich aus welcher Verarbeitungstätigkeit sie stammen: Sie werden in der Referenzversion zusammengeführt.
+4. Klicken Sie auf **Zusammenführen**.
 
-> Dies erleichtert die Analyse, Konsolidierung und **konsistente Kartierung** Ihres DSGVO-Verzeichnisses.
+<figure><img src="../../.gitbook/assets/ropa-merge-3.png" alt="Fenster des Zusammenführungstools mit dem Vergleich zweier Verarbeitungstätigkeiten"><figcaption><p>Das Fenster des Zusammenführungstools</p></figcaption></figure>
 
-***
+Der Vergleich wird dadurch erleichtert:
 
-#### 🧩 2. Integrierte und zentralisierte Verwaltung
+* Jedes Feld, dessen Wert sich zwischen den Verarbeitungstätigkeiten unterscheidet, ist mit **Different** markiert, und ein Zähler zeigt die Zahl der betroffenen Zeilen.
+* Die Tabelle zeigt nur die Zeilen mit Unterschieden. Aktivieren Sie **View all fields**, um alle vergleichbaren Felder anzuzeigen. Ausgeblendete identische Felder behalten den Wert der Referenzversion.
+* Die Schaltfläche **Select all** unter einer Spaltenüberschrift behält die Werte dieser Spalte in allen Zeilen mit Unterschieden bei. Mit **Undo selection** machen Sie das rückgängig. Ein leerer Wert ersetzt nie einen ausgefüllten Wert.
 
-Alle Informationen aus den zusammengeführten Verarbeitungen werden in einem **einheitlichen Datenblatt** zusammengefasst, einschließlich:
+Der Abschnitt **Linked objects kept** zeigt, wie viele Risikobewertungen, Aufgaben und Fragebogenantworten mit den zusammengeführten Verarbeitungstätigkeiten verknüpft sind. Sie werden automatisch der Referenzversion zugeordnet, es geht also nichts verloren, was mit den gelöschten Verarbeitungstätigkeiten verknüpft war.
 
-* Der **konsolidierten Verarbeitungszwecke**,
-* Der zugehörigen **Rechtsgrundlagen**,
-* Der **Kategorien betroffener Personen und Daten**,
-* Der **Übermittlungen und Auftragsverarbeiter**,
-* Der **Sicherheitsmaßnahmen**,
-* Der **zugehörigen Dokumente** (DSFA, Richtlinien, Nachweise...).
+Nach dem Zusammenführen bestätigt eine Meldung den Vorgang, mit einem Link **Element anzeigen**, der die Referenzversion öffnet.
 
-> 🎯 Diese Zentralisierung vereinfacht die Verzeichnisverwaltung und gewährleistet die Konsistenz zwischen Abteilungen oder Entitäten.
+{% hint style="warning" %}
+Die Verarbeitungstätigkeiten außer der Referenzversion werden gelöscht, sobald Sie das Zusammenführen bestätigen, und das lässt sich nicht rückgängig machen. Prüfen Sie Ihre Auswahl, bevor Sie auf **Zusammenführen** klicken, und exportieren Sie die Verarbeitungstätigkeiten vorher, wenn Sie eine Kopie ihres Inhalts behalten möchten.
+{% endhint %}
 
-***
+## Duplikate automatisch finden
 
-#### ⚙️ 3. Prozessautomatisierung
+Um Verarbeitungstätigkeiten zu finden, bei denen es sich wahrscheinlich um Duplikate handelt, klicken Sie auf den Pfeil neben der Schaltfläche **Erstellen Sie eine Datenverarbeitung** und dann auf **Datenqualitätswerkzeug**. Die erkannten Duplikate werden mit einem Konfidenzwert aufgelistet, und Sie können sie von dort aus zusammenführen.
 
-Die Zusammenführung nutzt die Automatisierungsfähigkeiten von Dastra:
+{% content-ref url="../general/merge.md" %}
+[Elemente zusammenführen](../general/merge.md)
+{% endcontent-ref %}
 
-* Automatische Erkennung von Duplikaten und ähnlichen Verarbeitungen,
-* Zusammenführungsvorschläge basierend auf **gemeinsamen Metadaten** (Verarbeitungszweck, Verantwortlicher, Bereich usw.),
-* Automatische Aktualisierung von **Querverweisen** (Verknüpfungen mit Audits, Risiken, KI, Datenschutzvorfälle usw.),
-* Vollständige Protokollierung der Aktionen (Nachvollziehbarkeit, Autor, Datum und Begründung).
+## Typische Anwendungsfälle
 
-> 🔁 Ergebnis: ein sauberes, konsistentes und an der operativen Realität ausgerichtetes Verzeichnis — ohne sich wiederholende manuelle Aufgaben.
+| Fall | Beispiel | Nutzen |
+| --- | --- | --- |
+| **Straffung** | Zwei Verarbeitungstätigkeiten „Personalverwaltung“ und „Mitarbeiterverwaltung“ | Duplikate vermeiden und die Pflege vereinfachen |
+| **Umstrukturierung** | Ähnliche Verarbeitungstätigkeiten, die in mehreren Organisationseinheiten angelegt wurden | Eine einzige aktuelle Verarbeitungstätigkeit behalten |
+| **Harmonisierung über Entitäten hinweg** | Gleichartige Verarbeitungstätigkeiten, die mehrere Tochtergesellschaften getrennt dokumentiert haben | Governance und konzernweites Reporting erleichtern |
+| **Bereinigung des Verzeichnisses** | Duplikate, die bei einem ersten Import entstanden sind | Übersichtlichkeit und Verlässlichkeit des Verzeichnisses verbessern |
 
-***
+## Bewährte Vorgehensweisen
 
-### 🧠 Typische Anwendungsfälle
-
-| Fall                             | Beispiel                                                      | Vorteil                                            |
-| -------------------------------- | ------------------------------------------------------------- | -------------------------------------------------- |
-| **Rationalisierung**             | Zwei Verarbeitungen "Personalverwaltung" und "Personalmanagement" | Duplizierung vermeiden und Pflege vereinfachen    |
-| **Organisatorische Umstrukturierung** | Zusammenführung der Verzeichnisse nach einer Umstrukturierung oder Übernahme | Einheitliches Unternehmensverzeichnis erstellen |
-| **Harmonisierung über Entitäten** | Ähnliche Verarbeitungen zwischen Tochtergesellschaften        | Governance und globales Reporting erleichtern     |
-| **Verzeichnisbereinigung**       | Entfernung von Redundanzen aus den ersten Importen            | Klarheit und Zuverlässigkeit des Verzeichnisses verbessern |
-
-***
-
-### 🪄 Bewährte Praktiken
-
-1. **Kompatibilitäten prüfen**: Führen Sie nur Verarbeitungen mit ähnlichen oder identischen Verarbeitungszwecken zusammen.
-2. **Rechtliche Kohärenz wahren**: Vermeiden Sie das Zusammenführen von Verarbeitungen mit unterschiedlichen Rechtsgrundlagen.
-3. **Entscheidungen dokumentieren**: Vermerken Sie die Begründung im Kommentarfeld oder im Audit-Trail.
-4. **In einer eingeschränkten Umgebung testen**, bevor Sie auf das gesamte Verzeichnis verallgemeinern.
-
-***
+1. **Kompatibilität prüfen**: Führen Sie nur Verarbeitungstätigkeiten mit identischen oder sehr ähnlichen Zwecken zusammen.
+2. **Die rechtliche Bewertung konsistent halten**: Führen Sie keine Verarbeitungstätigkeiten zusammen, die sich auf unterschiedliche Rechtsgrundlagen stützen.
+3. **Die Entscheidung dokumentieren**: Begründen Sie das Zusammenführen in einer internen Diskussion zur Referenzversion.
 
 {% hint style="success" %}
-💡 **Tipp:**\
-Die Zusammenführung von Verarbeitungen hilft Ihnen, ein sauberes und aktuelles Verzeichnis zu pflegen und gleichzeitig den Verwaltungsaufwand zu reduzieren.\
-Dastra automatisiert die Konsolidierung und ermöglicht es Ihnen, die Kontrolle über jede Zusammenführung zu behalten.
+Mit dem Zusammenführen von Verarbeitungstätigkeiten halten Sie Ihr Verzeichnis sauber und aktuell und senken den Verwaltungsaufwand. Sie behalten dabei die Kontrolle über jeden übernommenen Wert.
 {% endhint %}

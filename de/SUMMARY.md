@@ -21,6 +21,7 @@
 
 ## 👨‍💻 Erste Schritte <a href="#getting-started" id="getting-started"></a>
 
+* [Schnellstart in 5 Minuten](getting-started/quickstart.md)
 * [Einrichtung](getting-started/setup/README.md)
   * [Wichtige Begriffe](getting-started/setup/key-concepts.md)
   * [Anmelden und Authentifizierung verwalten](getting-started/setup/login.md)
@@ -60,6 +61,12 @@
     * [Wie funktioniert es?](features/general/ai-assistant/how-it-works.md)
     * [Anwendungsfälle](features/general/ai-assistant/use-cases.md)
     * [Häufig gestellte Fragen](features/general/ai-assistant/faq.md)
+    * [Dastra-KI-Agenten](features/general/ai-assistant/agents/README.md)
+      * [Einen Chat-Agenten erstellen](features/general/ai-assistant/agents/conversational.md)
+      * [Einen autonomen Agenten erstellen](features/general/ai-assistant/agents/autonomous.md)
+      * [Kompetenzen](features/general/ai-assistant/agents/skills.md)
+      * [Ausführungen verfolgen](features/general/ai-assistant/agents/inbox.md)
+    * [Der MCP-Server](features/general/ai-assistant/mcp.md)
   * [E-Mail-Vorlagen](features/general/email-templates.md)
   * [Interne Diskussionen](features/general/discussions.md)
   * [😇 Häufig gestellte Fragen](features/general/faq.md)
@@ -68,8 +75,8 @@
     * [Assets](features/mapping/repositories/assets.md)
   * [Generische Beziehungen](features/mapping/relationships.md)
 * [Verarbeitungsverzeichnis](features/ropa/README.md)
-  * [Verzeichnis „Verantwortlicher"](features/ropa/controller.md)
-  * [Verzeichnis „Auftragsverarbeiter"](features/ropa/processor.md)
+  * [Verzeichnis „Verantwortlicher“](features/ropa/controller.md)
+  * [Verzeichnis „Auftragsverarbeiter“](features/ropa/processor.md)
   * [Ihr Verzeichnis erstellen](features/ropa/establish.md)
   * [Verzeichnis exportieren / importieren](features/ropa/export-import.md)
   * [Eine Verarbeitungsvorlage verwenden](features/ropa/templates.md)
@@ -175,6 +182,7 @@
 * [Datenschutzvorfälle](features/incidents/README.md)
   * [Einen neuen Datenschutzvorfall dokumentieren](features/incidents/document-breach.md)
   * [Ihre Datenschutzvorfälle exportieren](features/incidents/export.md)
+  * [Datenschutzvorfälle als Auftragsverarbeiter](features/incidents/as-processor.md)
 * [Cookies](features/cookies/README.md)
   * [Einrichtung des Banners](features/cookies/banner/README.md)
     * [Vorstudie](features/cookies/banner/preliminary-study.md)
@@ -211,6 +219,7 @@
     * [Frameworks](features/compliance/library/frameworks/README.md)
       * [Import und Dastra-Vorlagen](features/compliance/library/frameworks/import.md)
       * [Benutzerdefiniertes Framework erstellen](features/compliance/library/frameworks/custom.md)
+      * [Framework-Versionen](features/compliance/library/frameworks/versions.md)
     * [Kontrollen](features/compliance/library/controls.md)
     * [Tests](features/compliance/library/tests.md)
     * [Risiken](features/compliance/library/risks.md)
@@ -241,6 +250,7 @@
   * [ServiceNow](features/integrations/servicenow.md)
   * [Jira](features/integrations/jira.md)
   * [Microsoft Teams](features/integrations/microsoft-teams.md)
+  * [HTTP / Benutzerdefinierte API](features/integrations/custom-http.md)
 * [Erweiterte Konfiguration](features/settings/README.md)
   * [Rollen und Berechtigungen](features/settings/roles.md)
   * [Single Sign On (SSO)](features/settings/sso/README.md)
@@ -282,6 +292,7 @@
 * [Sicherheit bei Dastra](security/general.md)
 * [Zwei-Faktor-Authentifizierung](security/mfa.md)
 * [Passkeys](security/passkey.md)
+* [Sicherheits-Roadmap](security/roadmap.md)
 * [Qualität unserer Dienste](security/quality-of-service.md)
 * [Zertifizierungen](security/certifications.md)
 * [Dastra auf Bleu (souveräne Cloud)](security/bleu.md)
@@ -294,6 +305,10 @@
 * [Bekannte Probleme](other/known-problems.md)
 * [Versionshinweise](https://www.dastra.eu/fr/category/release/10)
 * [Webinare](https://www.dastra.eu/fr/guide/categories/webinar/26)
+
+## Referenzwerke <a href="#frameworks" id="frameworks"></a>
+
+* [HR-Referenzwerk der CNIL](frameworks/cnil-hr.md)
 
 ***
 

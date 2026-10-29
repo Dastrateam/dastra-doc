@@ -1,115 +1,133 @@
 ---
-description: Dokumentieren Sie die Verarbeitungszwecke und die zugehörige Rechtsgrundlage
+description: Geben Sie hier die Zwecke der Datenverarbeitung an.
 ---
 
 # Zwecke
 
-## Verarbeitungszwecke
+## Zwecke einer Verarbeitungstätigkeit
 
-Ein **Verarbeitungszweck** stellt das Ziel dar, das mit der Einrichtung Ihrer Datei verfolgt wird. Er gibt an, wozu die Verarbeitung personenbezogener Daten dient, ihre Daseinsberechtigung. Dieses Ziel muss klar und verständlich sein.
+Ein **Zweck** ist das Ziel, das mit der Anlage Ihres Eintrags verfolgt wird. Er gibt an, wofür die Verarbeitung personenbezogener Daten dient, ihre Daseinsberechtigung. Dieses Ziel muss klar und verständlich sein.
 
-Die Definition des Verarbeitungszwecks ist grundlegend, da sie eine Voraussetzung für die anderen Elemente ist, die die Verarbeitung umrahmen, wie die Speicherdauer, die Angemessenheit, Relevanz, Verhältnismäßigkeit der Daten sowie die Genauigkeit und Aktualisierung der Daten.
+Die Festlegung des Zwecks ist grundlegend, denn sie ist die Voraussetzung für die anderen Elemente, die die Verarbeitung rahmen: die Speicherdauer, die Angemessenheit, Erheblichkeit und Verhältnismäßigkeit der Daten sowie ihre Richtigkeit und Aktualisierung.
 
-[**Artikel 5 Abs. 1 Buchst. b) der DSGVO**](https://dsgvo-gesetz.de/art-5-dsgvo/) sieht vor, dass der Verarbeitungszweck festgelegt, eindeutig und rechtmäßig sein muss.
+[**Artikel 5 Absatz 1 Buchstabe b der DSGVO**](https://dsgvo-gesetz.de/art-5-dsgvo/) sieht vor, dass der Zweck festgelegt, eindeutig und legitim sein muss.
 
-**Der Verarbeitungszweck muss festgelegt sein**: Der Zweck muss hinreichend genau definiert sein, um die erforderlichen Datenschutzgarantien anzupassen und den Umfang der Datenverarbeitung abzugrenzen. Das erforderliche Detaillierungsniveau hängt vom konkreten Kontext der Datenerhebung und den betroffenen Daten ab. Manchmal genügt eine einfache Sprache. Ein Familienunternehmen in der Nachbarschaft erfordert beispielsweise nicht den gleichen Detaillierungsgrad bei der Beschreibung des Zwecks der Kundendatei wie ein multinationales Unternehmen, das komplexe Algorithmen für personalisierte Angebote und gezielte Werbung einsetzt. Der Zweck muss vor der Durchführung der Verarbeitung festgelegt werden.
+**Der Zweck muss festgelegt sein**: Der Zweck muss so genau definiert sein, dass die nötigen Datenschutzgarantien angepasst und der Umfang der Datenverarbeitung bestimmt werden können. Das erforderliche Maß an Detail hängt vom Kontext der Datenerhebung und von den betroffenen Daten ab. Manchmal genügt einfache Sprache. Ein lokaler Familienbetrieb braucht für die Beschreibung des Zwecks seiner Kundendatei zum Beispiel nicht dasselbe Maß an Detail wie ein multinationaler Konzern, der mit komplexen Algorithmen personalisierte Angebote und gezielte Werbung erstellt. Der Zweck muss festgelegt sein, bevor die Verarbeitung erfolgt.
 
-**Der Verarbeitungszweck muss eindeutig sein**: Der Zweck darf nicht mehrdeutig sein und muss klar formuliert sein.
+**Der Zweck muss eindeutig sein**: Der Zweck darf nicht mehrdeutig sein und muss klar formuliert werden.
 
-**Der Verarbeitungszweck muss rechtmäßig sein**: Die Rechtmäßigkeit bezieht sich auf die Rechtsgrundlage der Datenverarbeitung, die durch [**Artikel 6 der DSGVO**](https://dsgvo-gesetz.de/art-6-dsgvo/) gefordert wird.
+**Der Zweck muss legitim sein**: Die Legitimität bezieht sich auf die Rechtsgrundlage, auf der die Datenverarbeitung beruht, wie es [**Artikel 6 der DSGVO**](https://dsgvo-gesetz.de/art-6-dsgvo/) verlangt.
 
-Dieser Begriff verlangt auch, dass der Zweck nicht allgemein gegen das Gesetz verstößt. Beispielsweise ist ein Zweck nicht rechtmäßig, wenn er zu einer im Strafgesetzbuch verbotenen Diskriminierung führt. Dabei können insbesondere das Arbeitsrecht, das Verbraucherschutzrecht oder das Vertragsrecht berücksichtigt werden.
+Dieser Begriff verlangt auch, dass der Zweck nicht ganz allgemein gegen das Recht verstößt. Ein Zweck ist zum Beispiel nicht legitim, wenn er zu einer strafrechtlich verbotenen Diskriminierung führt. Insbesondere das Arbeitsrecht, das Verbraucherrecht oder das Vertragsrecht können berücksichtigt werden.
 
-Darüber hinaus ist es notwendig, den Kontext der Verarbeitung zu berücksichtigen, um die Rechtmäßigkeit zu bewerten, insbesondere die berechtigten Erwartungen der von der Verarbeitung betroffenen Person.
+Außerdem muss der Kontext der Verarbeitung berücksichtigt werden, um ihre Legitimität zu beurteilen, insbesondere die vernünftigen Erwartungen der betroffenen Person.
 
-Eine Verarbeitungstätigkeit kann mehrere Verarbeitungszwecke haben. Beispielsweise könnte die Tätigkeit "Recruiting" zwei unterschiedliche Zwecke haben: die Analyse der Bewerbungen und die Verwaltung der Vorstellungsgespräche sowie den Aufbau einer Lebenslaufdatenbank.
+Eine Verarbeitungstätigkeit kann mehrere Zwecke haben. Die Tätigkeit „Recruiting“ könnte zum Beispiel zwei getrennte Zwecke haben: die Analyse der Bewerbungen und die Organisation der Vorstellungsgespräche sowie den Aufbau einer Lebenslaufdatenbank.
 
-\
-Für jeden Zweck müssen Sie **die Rechtsgrundlage** festlegen. Es kann nur eine Rechtsgrundlage pro Zweck geben. Die Wahl dieser Rechtsgrundlage ist je nach Kontext der Verarbeitung zu treffen.
+Für jeden Zweck müssen Sie die geltende **Rechtsgrundlage** festlegen. Pro Zweck ist nur eine Rechtsgrundlage möglich. Die Wahl dieser Rechtsgrundlage richtet sich nach dem Kontext der Verarbeitung.
 
-## Einen Verarbeitungszweck in Dastra hinzufügen
+## Einen Zweck in Dastra hinzufügen
 
-Das Hinzufügen von Verarbeitungszwecken erfolgt in Abschnitt 3 der Verarbeitung.
+Zwecke fügen Sie im Abschnitt **Zweck** hinzu, dem dritten Abschnitt der Verarbeitungstätigkeit. Sie können so viele Zwecke hinzufügen, wie Sie brauchen.
 
-<figure><img src="../../../.gitbook/assets/Zweck.png" alt=""><figcaption><p>Verarbeitungszweck hinzufügen</p></figcaption></figure>
+1. Klicken Sie im Abschnitt **Zweck** auf **Zweck hinzufügen**. Das Fenster **Zweck hinzufügen** öffnet sich.
+2. Wählen Sie, wie Sie den Zweck erstellen:
+   * **Mit KI erstellen**: Erstellen Sie mit KI eine Liste von Zwecken. Wählen Sie die Zwecke aus, die Sie behalten möchten, und klicken Sie dann auf **Hinzufügen**.
+   * **Ausgehend von einem Zweck**: Beginnen Sie mit einem bestehenden Zweck. Sie können die Zwecke nach **Datenverarbeitung** und nach **Rechtsgrundlage** filtern.
+   * **Von Grund auf neu**: Erstellen Sie einen neuen Zweck von Grund auf.
 
-<figure><img src="../../../.gitbook/assets/Zweck2.png" alt=""><figcaption></figcaption></figure>
+Diese drei Optionen können Sie auch direkt über den Pfeil neben der Schaltfläche **Zweck hinzufügen** öffnen.
 
-<figure><img src="../../../.gitbook/assets/Zweck3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-purposes-1.png" alt="Fenster zum Erstellen eines Zwecks mit den Optionen Mit KI erstellen, Ausgehend von einem Zweck und Von Grund auf neu"><figcaption><p>Die drei Wege, einen Zweck zu erstellen</p></figcaption></figure>
 
-Die Bezeichnung des Verarbeitungszwecks ist auf 120 Zeichen begrenzt.
+Wenn Sie einen Zweck von Grund auf erstellen, füllen Sie die folgenden Felder aus und klicken Sie dann auf **Hinzufügen**:
 
-Sie können mehrere Verarbeitungszwecke zu Ihrer Verarbeitung hinzufügen.
+* **Bezeichnung des Zwecks** (Pflichtfeld): der Name des Zwecks, auf 120 Zeichen begrenzt. Dastra schlägt beim Tippen bestehende Zwecke vor.
+* **Rechtsgrundlage** (optional): die Rechtsgrundlage dieses Zwecks (siehe unten).
+* **Beschreibung des Zwecks** (optional): Beschreiben Sie den Zweck. Die KI-Schaltfläche **Generieren** kann diese Beschreibung für Sie entwerfen.
+* **Bitte erläutern Sie die Wahl dieser Rechtsgrundlage.**: wird angezeigt, sobald eine Rechtsgrundlage ausgewählt ist, zum Beispiel um die verfolgten berechtigten Interessen oder die Rechtsvorschrift zu nennen, die die Verarbeitung vorschreibt.
+
+<figure><img src="../../../.gitbook/assets/ropa-purposes-2.png" alt="Bereich zum Erstellen eines Zwecks mit den Feldern Bezeichnung des Zwecks, Rechtsgrundlage und Beschreibung des Zwecks"><figcaption><p>Einen Zweck von Grund auf erstellen</p></figcaption></figure>
+
+Die Zwecke werden in einer Tabelle mit Name, Beschreibung und Rechtsgrundlage aufgelistet. Klicken Sie auf einen Zweck, um ihn zu bearbeiten, oder nutzen Sie das Menü **...**, um ihn mit **Zweck ändern** zu bearbeiten oder mit **Löschen** zu löschen.
 
 ## Rechtsgrundlagen
 
-Es gibt 6 mögliche Rechtsgrundlagen für eine Datenverarbeitung.
+Für eine Datenverarbeitung gibt es 6 mögliche Rechtsgrundlagen. In Dastra bietet die Liste **Rechtsgrundlage** diese 6 Rechtsgrundlagen sowie **Sonstiges**.
 
 ### Einwilligung
 
-Die **Einwilligung** muss vier Kriterien erfüllen, damit die Verarbeitung rechtmäßig ist: Sie muss
+Die **Einwilligung** muss vier Kriterien erfüllen, damit die Verarbeitung rechtmäßig ist. Sie muss
 
-* frei,
-* spezifisch,
-* informiert und
-* eindeutig sein.
+* freiwillig,
+* für den bestimmten Fall,
+* in informierter Weise und
+* unmissverständlich abgegeben werden.
 
-Sie muss ebenso einfach zu erteilen wie zu widerrufen sein. Sie müssen den Nachweis dokumentieren, dass die Einwilligung gültig eingeholt wurde. Dazu können Sie die Beschreibung des Einwilligungsverfahrens als Anhang der Verarbeitung (Schritt 11) hinzufügen.
+Sie muss sich ebenso leicht widerrufen wie erteilen lassen. Sie müssen nachweisen können, dass die Einwilligung wirksam eingeholt wurde. Dazu können Sie der Verarbeitungstätigkeit im Abschnitt **Dokumentation** (Abschnitt 11) eine Beschreibung des Verfahrens zur Einholung der Einwilligung beifügen.
 
-### Vertrag oder vorvertragliche Maßnahmen
+### Vertrag
 
-Die Rechtsgrundlage des **Vertrags** muss drei Kriterien erfüllen, um gültig zu sein: Es muss
+Der **Vertrag** (Vertrag oder vorvertragliche Maßnahmen) muss drei Kriterien erfüllen, um eine gültige Rechtsgrundlage zu sein:
 
-* ein Vertrags- oder vorvertragliches Verhältnis zwischen dem Verantwortlichen und der betroffenen Person bestehen;
-* der Vertrag muss nach geltendem Recht gültig sein und
-* die Verarbeitung muss objektiv zur Erfüllung des Vertrags erforderlich sein.
+* Zwischen dem Verantwortlichen und der betroffenen Person muss ein Vertragsverhältnis oder ein vorvertragliches Verhältnis bestehen.
+* Der Vertrag muss nach dem anwendbaren Recht wirksam sein.
+* Die Verarbeitung muss objektiv für die Erfüllung des Vertrags erforderlich sein.
 
-Das Widerspruchsrecht kann bei auf dieser Rechtsgrundlage basierenden Verarbeitungen nicht ausgeübt werden, und das Recht auf Datenübertragbarkeit kann hingegen bei dieser Verarbeitung ausgeübt werden. Sie können den Vertrag, auf den Sie die Verarbeitung stützen, in den Anhängen in Schritt 11 hinzufügen.
+Das Widerspruchsrecht kann bei einer Verarbeitung auf dieser Rechtsgrundlage nicht ausgeübt werden, das Recht auf Datenübertragbarkeit dagegen schon. Den Vertrag, auf den Sie die Verarbeitung stützen, können Sie im Abschnitt **Dokumentation** (Abschnitt 11) als Anhang hinzufügen.
 
-### Rechtliche Verpflichtung
+### Gesetzliche Verpflichtung
 
-Die **rechtliche Verpflichtung** muss
+Die **gesetzliche Verpflichtung** muss
 
 * zwingend sein,
-* hinreichend klar und präzise, um eine Verarbeitung gültig zu begründen.
+* hinreichend klar und präzise sein, um eine gültige Grundlage für die Verarbeitung zu bieten.
 
-Die Rechtstexte, die diese Verpflichtung begründen, müssen mindestens den Zweck dieser Verarbeitung definieren.
+Die Texte, die diese Verpflichtung begründen, müssen zumindest den Zweck der Verarbeitung festlegen.
 
-Die Verpflichtung muss sich an den Verantwortlichen und nicht an die betroffenen Personen richten. Sie müssen den Text angeben, der die Verarbeitung vorschreibt (z. B. einen Gesetzesartikel).
+Die Verpflichtung muss dem Verantwortlichen auferlegt sein und nicht den betroffenen Personen. Sie müssen den Text angeben, der die Verarbeitung vorschreibt (zum Beispiel einen Gesetzesartikel).
 
-### **Schutz lebenswichtiger Interessen**
+### Schutz lebenswichtiger Interessen
 
-Der **Schutz lebenswichtiger Interessen** beschränkt sich auf Situationen, die das Leben der betroffenen Person oder einer anderen natürlichen Person bedrohen. Die offensichtlichste Anwendung ist die Situation, in der eine Person einen Unfall erleidet und schwer verletzt in ein Krankenhaus eingeliefert wird, während sie bewusstlos ist und nicht in der Lage ist, ihre Einwilligung zur Verarbeitung ihrer Daten im Rahmen ihrer Behandlung zu geben. Diese Grundlage muss eng ausgelegt werden und nur verwendet werden, wenn keine Einwilligung eingeholt werden kann.
+Der **Schutz lebenswichtiger Interessen** beschränkt sich auf Situationen, die das Leben der betroffenen Person oder einer anderen natürlichen Person bedrohen. Der naheliegendste Anwendungsfall ist, dass eine Person Opfer eines Unfalls wird, schwer verletzt bewusstlos in ein Krankenhaus eingeliefert wird und nicht in der Lage ist, in die Verarbeitung ihrer Daten zur Behandlung einzuwilligen. Diese Grundlage ist eng auszulegen und nur zu verwenden, wenn die Einwilligung nicht eingeholt werden kann.
 
-### Aufgabe im öffentlichen Interesse
+### Öffentliches Interesse
 
-Die **Wahrnehmung einer Aufgabe im öffentlichen Interesse oder in Ausübung öffentlicher Gewalt**. Der Rückgriff auf diese Rechtsgrundlage ist insbesondere für Verarbeitungen gerechtfertigt, die von Behörden zur Erfüllung ihrer Aufgaben durchgeführt werden.
+**Die Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt.** Diese Rechtsgrundlage ist insbesondere für Verarbeitungen gerechtfertigt, die Behörden zur Erfüllung ihrer Aufgaben durchführen.
 
 Zwei Bedingungen sind erforderlich:
 
-* Die Verarbeitung muss es ermöglichen, die Aufgabe, mit der die Behörde betraut ist, auf relevante und angemessene Weise auszuüben und darf kein anderes Ziel verfolgen, das ohne besonderen Zusammenhang oder zu weit von den Besonderheiten der betreffenden öffentlichen Aufgabe entfernt ist.
-* Das öffentliche Interesse muss im Recht definiert sein und kann nicht vermutet werden.
+* Die Verarbeitung muss die sachgerechte und angemessene Wahrnehmung der der Behörde übertragenen Aufgabe ermöglichen und darf keinen anderen Zweck verfolgen, der mit den Besonderheiten der betreffenden Aufgabe im öffentlichen Interesse nichts zu tun hat oder zu weit davon entfernt ist.
+* Das öffentliche Interesse muss gesetzlich bestimmt sein und kann nicht vermutet werden.
 
 Sie müssen die Aufgabe im öffentlichen Interesse angeben, die die Verarbeitung erfordert.
 
-### Berechtigte Interessen des Verantwortlichen
+### Berechtigtes Interesse
 
 Die **berechtigten Interessen** des Verantwortlichen oder eines Dritten.
 
-Diese Rechtsgrundlage kann nicht von öffentlichen Stellen im Rahmen ihrer Aufgabe geltend gemacht werden und muss 3 Bedingungen erfüllen:
+Diese Rechtsgrundlage können Behörden in Erfüllung ihrer Aufgaben nicht geltend machen. Sie muss 3 Bedingungen erfüllen:
 
-* Das verfolgte Interesse muss berechtigt sein, d. h. rechtmäßig (legal), klar und präzise sowie real (nicht fiktiv);
-* die Verarbeitung muss zur Erreichung des Ziels erforderlich sein, d. h. das am wenigsten invasive Mittel darstellen;
-* und schließlich darf die Verarbeitung die Rechte und Freiheiten der betroffenen Personen unter Berücksichtigung ihrer berechtigten Erwartungen nicht überwiegen.
+* Das verfolgte Interesse muss berechtigt sein, das heißt rechtmäßig, klar und präzise sowie real (nicht fiktiv).
+* Die Verarbeitung muss zur Erreichung des Ziels erforderlich sein und daher das mildeste Mittel darstellen.
+* Schließlich dürfen die Rechte und Freiheiten der betroffenen Personen nicht überwiegen, unter Berücksichtigung ihrer vernünftigen Erwartungen.
 
-Eine Abwägung muss durchgeführt werden, z. B. mit einem Verhältnismäßigkeitstest.
+Es muss eine Interessenabwägung durchgeführt werden, zum Beispiel mit einer Verhältnismäßigkeitsprüfung.
 
-Sie können die Ergebnisse dieses Tests als Dokument in Schritt 11 aufbewahren. Sie müssen auch die geltend gemachten berechtigten Interessen detailliert beschreiben (z. B. Netzwerksicherheit oder Betrugsbekämpfung).
+Das Ergebnis dieser Prüfung können Sie als Dokument im Abschnitt **Dokumentation** (Abschnitt 11) aufbewahren. Außerdem müssen Sie die geltend gemachten berechtigten Interessen angeben (zum Beispiel die Sicherheit des Computernetzwerks oder die Betrugsbekämpfung).
 
-## Die Rechtsgrundlage einem Verarbeitungszweck zuordnen
+### Sonstiges
 
-In jedem Verarbeitungszweck können Sie eine Rechtsgrundlage aus den 6 oben genannten Grundlagen hinzufügen.
+Nur die 6 oben genannten Rechtsgrundlagen können eine Verarbeitung begründen. Verwenden Sie **Sonstiges** nur, wenn Sie noch nicht sicher sind, welche Rechtsgrundlage zutrifft.
 
-<figure><img src="../../../.gitbook/assets/Zweck4.png" alt=""><figcaption><p>Rechtsgrundlage-Selektor</p></figcaption></figure>
+## Die Rechtsgrundlage zu einem Zweck hinzufügen
 
-Sobald die Grundlage ausgewählt ist, können Sie eine Beschreibung hinzufügen. Zum Beispiel, um die berechtigten Interessen oder die gesetzliche Bestimmung zu präzisieren.
+Wählen Sie in jedem Zweck in der Liste **Rechtsgrundlage** eine der oben genannten Rechtsgrundlagen aus. In der Liste wird zu jeder Option eine Beschreibung angezeigt.
+
+<figure><img src="../../../.gitbook/assets/ropa-purposes-3.png" alt="Geöffnete Liste Rechtsgrundlage im Bereich des Zwecks mit den verfügbaren Rechtsgrundlagen"><figcaption><p>Die Rechtsgrundlage eines Zwecks auswählen</p></figcaption></figure>
+
+Sobald die Rechtsgrundlage ausgewählt ist, wird eine Erinnerung an ihre Voraussetzungen angezeigt, und Sie können unter **Bitte erläutern Sie die Wahl dieser Rechtsgrundlage.** eine Beschreibung hinzufügen, zum Beispiel um die betreffenden berechtigten Interessen oder die Rechtsvorschrift zu nennen.
+
+{% hint style="info" %}
+Wenn Sie [Fragebögen](../../questionnaires/README.md) verwenden, schlägt Dastra vor, eine Bewertung zu erstellen, sobald ein Zweck auf **Berechtigte Interessen des Verantwortlichen oder eines Dritten** (**Bewerten Sie berechtigte Interessen (LIA)**) oder auf **Einwilligung** (**Prüfen Sie die Rechtsgrundlage der Einwilligung**) beruht.
+{% endhint %}

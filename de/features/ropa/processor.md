@@ -1,46 +1,49 @@
 ---
-description: >-
-  Erfahren Sie, wie Sie das Verzeichnis "Auftragsverarbeiter" in Dastra
-  verwenden.
+description: Erfahren Sie, wie Sie das Verzeichnis „Auftragsverarbeiter“ von Dastra verwenden.
 ---
 
-# Verzeichnis „Auftragsverarbeiter"
+# Verzeichnis „Auftragsverarbeiter“
 
 ## Einführung
 
-[Artikel 30 der DSGVO](https://dsgvo-gesetz.de/art-30-dsgvo/) sieht spezifische Pflichten für das _Verzeichnis des Verantwortlichen_ für die Verarbeitung personenbezogener Daten und für das _Verzeichnis des Auftragsverarbeiters_ vor. Wenn Ihre Organisation sowohl als Auftragsverarbeiter als auch als Verantwortlicher tätig ist, muss Ihr Verzeichnis daher die beiden Tätigkeitskategorien klar unterscheiden.
+Artikel 30 der DSGVO legt besondere Pflichten für das _Verzeichnis des Verantwortlichen_ und das _Verzeichnis des Auftragsverarbeiters_ fest. Wenn Ihre Organisation sowohl als Auftragsverarbeiter als auch als Verantwortlicher tätig ist, muss Ihr Verzeichnis die beiden Kategorien von Tätigkeiten daher klar unterscheiden.
 
-**In der Praxis empfiehlt die Aufsichtsbehörde in diesem Fall, 2 Verzeichnisse zu führen:**
+**In der Praxis empfiehlt die CNIL in diesem Fall, zwei Verzeichnisse zu führen:**
 
 1. eines für die Verarbeitungen personenbezogener Daten, für die Sie selbst verantwortlich sind,
-2. ein weiteres für die Verarbeitungen, die Sie als Auftragsverarbeiter für Ihre Kunden durchführen.
+2. ein weiteres für die Verarbeitungen, die Sie als Auftragsverarbeiter im Auftrag Ihrer Kunden durchführen.
 
-Der Rest dieser Seite behandelt ausschließlich das Verzeichnis "Auftragsverarbeiter".
+Der Rest dieser Seite behandelt ausschließlich das Verzeichnis „Auftragsverarbeiter“.
 
-## Das Verzeichnis Auftragsverarbeiter
+## Das Verzeichnis „Auftragsverarbeiter“
 
-Jeder Auftragsverarbeiter ist verpflichtet, ein weniger umfangreiches Verzeichnis zu führen.
+Jeder Auftragsverarbeiter muss ein weniger umfangreiches Verzeichnis führen.
 
-Dieses enthält:
+Dieses Verzeichnis enthält:
 
-* die **Kontaktdaten des Auftragsverarbeiters**, seines Vertreters (falls zutreffend) und seines Datenschutzbeauftragten
-* die **Kontaktdaten aller Verantwortlichen, für die der Auftragsverarbeiter tätig ist** (in der Regel die Kunden)
-* die **Datenkategorien**, die verarbeitet werden
+* die **Kontaktdaten des Auftragsverarbeiters**, gegebenenfalls seines Vertreters und seines Datenschutzbeauftragten
+* die **Kontaktdaten aller Verantwortlichen, in deren Auftrag der Auftragsverarbeiter tätig ist** (in der Regel die Kunden)
+* die **Kategorien der verarbeiteten Daten**
 * die **Empfänger**
-* die **Datenübermittlungen** außerhalb des EWR
+* die **Übermittlungen** außerhalb des EWR
 * die **Sicherheitsmaßnahmen**
 
-![Die verschiedenen Abschnitte einer Verarbeitung "Auftragsverarbeiter" in Dastra](<../../.gitbook/assets/Abschnitte einer Verarbeitung Auftragsverarbeiter.png>)
+In Dastra wird eine als Auftragsverarbeiter angelegte Verarbeitungstätigkeit in 12 Abschnitten dokumentiert: **Allgemeines**, **Interessengruppen**, **Zweck**, **Assets**, **Daten**, **Kunden**, **Betroffene Person**, **Rechte von Personen**, **Empfänger**, **Maßnahmen**, **Dokumentation** und **Zusammenfassung**.
+
+Im Vergleich zu einer Tätigkeit als Verantwortlicher können Sie im Abschnitt **Kunden** die Verantwortlichen angeben, in deren Auftrag Sie tätig sind (in der Regel Ihre Kunden). Einen Abschnitt **Folgenabschätzung** gibt es nicht.
+
+<figure><img src="../../.gitbook/assets/ropa-processor-1.png" alt="Navigation durch die Abschnitte einer Verarbeitungstätigkeit als Auftragsverarbeiter"><figcaption><p>Die verschiedenen Abschnitte einer Verarbeitungstätigkeit „Auftragsverarbeiter“ in Dastra</p></figcaption></figure>
 
 ***
 
 {% hint style="info" %}
-Es ist möglich, eine als Verantwortlicher erstellte Verarbeitung in eine als Auftragsverarbeiter erstellte Verarbeitung umzuwandeln und umgekehrt.\
-[Die Vorgehensweise ist hier verfügbar](https://doc.dastra.eu/features/ropa/faq#comment-changer-de-type-de-traitement-passer-dun-traitement-creer-en-tant-que-responsable-de-traitem)
+Sie können den Typ einer Verarbeitungstätigkeit ändern (von einer als Verantwortlicher angelegten zu einer als Auftragsverarbeiter angelegten und umgekehrt). Die Vorgehensweise finden Sie in den [häufig gestellten Fragen](faq.md#wie-andere-ich-den-typ-einer-verarbeitungstatigkeit-von-verantwortlicher-zu-auftragsverarbeiter-und-umgekehrt).
+
+Wenn Sie eine Tätigkeit als Auftragsverarbeiter wieder in eine Tätigkeit als Verantwortlicher umwandeln, werden die damit verknüpften Kunden entfernt.
 {% endhint %}
 
 ## Weiterführende Informationen
 
 {% content-ref url="controller.md" %}
-[le-registre-responsable-de-traitement.md](controller.md)
+[Verzeichnis „Verantwortlicher“](controller.md)
 {% endcontent-ref %}
