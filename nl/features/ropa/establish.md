@@ -1,31 +1,36 @@
 ---
-description: >-
-  Leer hoe u uw verwerkingsregister ontwerpt en beheert met behulp van Dastra.
+description: Leer hoe u uw verwerkingsregister met Dastra opstelt en beheert.
 ---
 
 # Uw register opzetten
 
-## Er zijn twee manieren om uw register in Dastra op te zetten:
+## Uw register opzetten in Dastra kan op twee manieren
 
-* Of u heeft al een register, in dat geval kunt u het importeren in Dastra.
-* Of je hebt er geen en je moet het helemaal opnieuw maken met behulp van de meegeleverde sjablonen voor Verwerking.
+* U hebt al een register en importeert het in Dastra.
+* U hebt geen register en maakt het vanaf nul aan, met de sjablonen voor verwerkingsactiviteiten als leidraad.
 
-## Uw huidige register importeren
+## Uw bestaande register importeren
 
-Met Dastra kunt u eenvoudig uw bestaande behandelingsregister uploaden in plaats van het handmatig in te voeren, in elk formaat - excel, tekst of csv.
+In plaats van uw verwerkingsregister met de hand in te voeren, importeert u het in Dastra, ongeacht het huidige formaat: een Excel-, tekst- of CSV-bestand. U kunt ook verwerkingsactiviteiten importeren die u in JSON-indeling uit een andere Dastra-werkruimte hebt geëxporteerd.
 
 {% content-ref url="export-import.md" %}
-[exporteren-importeren-registreren](export-importer-le-registre.md)
+[Het register exporteren en importeren](export-import.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Vergeet niet je gegevensverwerking te publiceren als je wilt dat er rekening mee wordt gehouden in het dashboard.
+Vergeet niet uw verwerkingsactiviteiten te publiceren als u wilt dat ze in het dashboard worden weergegeven.
 {% endhint %}
 
-## Maak een nieuw verwerkingsregister vanaf nul&#x20;
+## Een nieuw verwerkingsregister vanaf nul aanmaken
 
-Met Dastra wordt automatisch een register aangemaakt zodra de werkruimte is gedefinieerd. Als u geen bestaand register wilt downloaden, kunt u beginnen met het invullen van het register dat standaard wordt aangemaakt wanneer u uw eerste Verwerkingsactiviteit aanmaakt. Klik op de volgende link als je wilt weten hoe:
+In Dastra wordt automatisch een register aangemaakt zodra de werkruimte is ingesteld. Wilt u geen bestaand register importeren, dan begint u meteen met het invullen van dit standaardregister door uw eerste verwerkingsactiviteit aan te maken. Hoe dat werkt, leest u op deze pagina:
 
 {% content-ref url="declare.md" %}
-[Verwerking beheren](declare.md)
+[Een verwerkingsactiviteit aanmaken](declare.md)
+{% endcontent-ref %}
+
+Om tijd te besparen bij veelvoorkomende verwerkingsactiviteiten kunt u ook vertrekken van een sjabloon:
+
+{% content-ref url="templates.md" %}
+[Een sjabloon voor verwerkingsactiviteiten gebruiken](templates.md)
 {% endcontent-ref %}

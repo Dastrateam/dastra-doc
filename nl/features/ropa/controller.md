@@ -1,73 +1,94 @@
 ---
-description: Leer hoe u het register "Verwerkingsverantwoordelijke" van Dastra kunt gebruiken.
+description: Leer hoe u het register van de verwerkingsverantwoordelijke in Dastra gebruikt.
 ---
 
-# Register "Verwerkingsverantwoordelijke
+# Register van de verwerkingsverantwoordelijke
 
 ## Inleiding
 
-Artikel 30 van de AVG bevat specifieke verplichtingen voor de _registratie van de verwerkingsverantwoordelijke_ van persoonsgegevens en voor de _registratie van de verwerker_. Als uw organisatie zowel als verwerker en als verwerkingsverantwoordelijke optreedt, moet uw register dus duidelijk onderscheid maken tussen de twee categorieën activiteiten.
+Artikel 30 van de AVG bevat specifieke verplichtingen voor het register van de verwerkingsverantwoordelijke en voor het register van de verwerker. Als uw organisatie zowel als verwerker als als verwerkingsverantwoordelijke optreedt, moet uw register de twee categorieën activiteiten duidelijk onderscheiden.
 
-**In de praktijk adviseert de gegevensbeschermingsautoriteit in dit geval om 2 registers bij te houden:**.
+In dat geval raadt de CNIL aan twee registers bij te houden:
 
-1. één voor de gegevensverwerking waarvoor u zelf verantwoordelijk bent,
-2. een ander voor de Verwerkingen die u als subcontractant voor uw klanten uitvoert.
+1. een register voor de verwerkingen van persoonsgegevens waarvoor u zelf verantwoordelijk bent,
+2. een register voor de verwerkingen die u als verwerker uitvoert namens uw klanten.
 
-De rest van deze pagina Verwerkt alleen het "Verwerkingsverantwoordelijke" register.
+De rest van deze pagina gaat alleen over het register van de verwerkingsverantwoordelijke.
 
-## Het register van de "verwerkingsverantwoordelijke
+## Het register van de verwerkingsverantwoordelijke
 
-Voor elke Verwerking vermeldt het register van een Verwerkingsverantwoordelijke ten minste:
+Voor elke verwerking vermeldt het register van een verwerkingsverantwoordelijke ten minste:
 
-1. indien van toepassing, **de naam en contactgegevens** van de [gezamenlijk voor de verwerking verantwoordelijke](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679) die wordt uitgevoerd
-2. de **doeleinden** van de verwerking, het doel waarvoor u de gegevens hebt verzameld
-3. de **categorieën betrokkenen** (klant, prospect, werknemer, enz.)
-4. de **persoonlijke gegevens** (voorbeelden: identiteit, familie, economische of financiële situatie, bankgegevens, verbindingsgegevens, locatiegegevens, enz.)
-5. **de categorieën ontvangers** aan wie de persoonsgegevens zijn of zullen worden meegedeeld, Begrepen de Verwerkers die u gebruikt
-6. de **doorgifte** van persoonsgegevens naar een derde land of naar een internationale organisatie en, in bepaalde zeer specifieke gevallen, de garanties die voor deze doorgifte worden gegeven;
-7. de **termijnen die zijn vastgesteld voor het wissen** van de verschillende categorieën gegevens, d.w.z. de bewaartermijn, of anders de criteria voor het bepalen daarvan
-8. voor zover mogelijk, een **algemene beschrijving van de technische en organisatorische beveiligingsmaatregelen** die u toepast.
+1. in voorkomend geval de naam en de contactgegevens van de [gezamenlijke verwerkingsverantwoordelijke](https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX%3A32016R0679#d1e3083-1-1) voor de verwerking
+2. de doeleinden van de verwerking, dat wil zeggen het doel waarvoor u de gegevens hebt verzameld
+3. de categorieën van betrokkenen (klant, prospect, werknemer enzovoort)
+4. de categorieën van persoonsgegevens (bijvoorbeeld identiteit, gezinssituatie, economische of financiële situatie, bankgegevens, verbindingsgegevens, locatiegegevens enzovoort)
+5. de categorieën van ontvangers aan wie de persoonsgegevens zijn of worden verstrekt, met inbegrip van de verwerkers die u inzet
+6. doorgiften van persoonsgegevens aan een derde land of een internationale organisatie en, in bepaalde zeer specifieke gevallen, de voor deze doorgiften geboden waarborgen
+7. de termijnen waarbinnen de verschillende categorieën van gegevens moeten worden gewist, dat wil zeggen de bewaartermijn of, bij gebrek daaraan, de criteria om die vast te stellen
+8. voor zover mogelijk, een algemene beschrijving van de technische en organisatorische beveiligingsmaatregelen die u treft
 
-De verschillende onderdelen van een Verwerking "verantwoordelijke" in Dastra
+In Dastra wordt een verwerkingsactiviteit die als verwerkingsverantwoordelijke is aangemaakt, gedocumenteerd in 12 secties: **Algemeen**, **Stakeholders**, **Doeleinden**, **Activa**, **Gegevens**, **Betrokken personen**, **Rechten van betrokkenen**, **Ontvangers**, **Maatregelen**, **Impactanalyse**, **Documentatie** en **Samenvatting**. De onderstaande paragrafen tonen waar u elk gegeven documenteert dat artikel 30 vereist.
 
-### Actoren&#x20;
+<figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Sectienavigatie van een verwerkingsactiviteit als verwerkingsverantwoordelijke"><figcaption><p>De verschillende secties van een verwerkingsactiviteit als verwerkingsverantwoordelijke in Dastra</p></figcaption></figure>
 
-* De identiteit en contactgegevens van de Verwerkingsverantwoordelijke.
-* De identiteit en contactgegevens van de functionaris voor gegevensbescherming, indien van toepassing.
-* De identiteit en contactgegevens van de vertegenwoordiger, indien van toepassing
-* De gezamenlijke verwerkingsverantwoordelijke(n), indien van toepassing.
+## Actoren
 
-### Doeleinden
+Gedocumenteerd in de sectie **Stakeholders**:
 
-* Alle doeleinden die verband houden met de activiteit van de Verwerking.
+* De identiteit en de contactgegevens van de verwerkingsverantwoordelijke
+* De identiteit en de contactgegevens van de functionaris voor gegevensbescherming (FG), indien van toepassing
+* De identiteit en de contactgegevens van de vertegenwoordiger, indien van toepassing
+* De gezamenlijke verwerkingsverantwoordelijke(n), indien van toepassing
 
-### Rechtsgrondslag
+## Doeleinden
 
-* Nakoming van een wettelijke verplichting&#x20;
-* Uitvoering van een contract
-* Gerechtvaardigd belang van het bedrijf of een derde
+Gedocumenteerd in de sectie **Doeleinden**:
+
+* Alle doeleinden van de activiteit waarvoor de verwerking plaatsvindt
+
+## Wettelijke basis
+
+Elk doeleinde is gekoppeld aan zijn wettelijke basis, eveneens in de sectie **Doeleinden**:
+
+* Naleving van een wettelijke verplichting
+* Uitvoering van een overeenkomst
+* Gerechtvaardigd belang van het bedrijf of van een derde
 * Algemeen belang
-* Toestemming&#x20;
-* Bescherming van de vitale belangen van de betrokkene of een andere persoon.
+* Toestemming
+* Bescherming van de vitale belangen van de betrokkene of van een andere persoon
 
-### Inventaris van gegevens en betrokkenen
+## Inventaris van gegevens en betrokkenen
+
+Gedocumenteerd in de secties **Betrokken personen** en **Gegevens**:
 
 * Type betrokkenen
-* Categorieën van gegevens&#x20;
+* Categorieën van gegevens
 * Termijnen voor het wissen van gegevens of toepasselijke regel
 
-### Ontvangers en doorgiften van gegevens buiten de EER&#x20;
+## Ontvangers en doorgiften van gegevens buiten de EER
 
-* &#x20;Identificatie van ontvangers inclusief interne ontvangers (afdeling betrokken bij de Verwerking); externe organen (commerciële of institutionele partners); subcontractanten (host, solution provider); betrokkene indien van toepassing en gezamenlijk verantwoordelijken voor de verwerking&#x20;
-* Voor elke ontvanger, identificatie van doorgiften buiten de Europese Economische Ruimte (EER) en de gebruikte juridische instrumenten (bindende bedrijfsregels in geval van doorgiften buiten de EU met dochterondernemingen, standaard contractuele clausules, land erkend als adequaat, enz.)
+Gedocumenteerd in de sectie **Ontvangers**:
 
-### Beveiligingsmaatregelen
+* Identificatie van de ontvangers: interne ontvangers (de afdeling die bij de verwerking betrokken is), externe organisaties (commerciële of institutionele partners), verwerkers (hostingpartij, leverancier van de oplossing), in voorkomend geval de betrokkene en gezamenlijke verwerkingsverantwoordelijken
+* Per ontvanger de identificatie van doorgiften buiten de Europese Economische Ruimte (EER) en de gebruikte juridische instrumenten (bindende bedrijfsvoorschriften bij doorgiften buiten de EU naar dochterondernemingen, standaardcontractbepalingen, land met een adequaatheidsbesluit enzovoort)
 
-* Technische en organisatorische maatregelen ter beveiliging van elke gegevensverwerking&#x20;
-* Bijvoorbeeld gegevensversleuteling, pseudonimisering, beperkte toegang, enz.
+## Beveiligingsmaatregelen
 
-## Verder gaan&#x20;
+Gedocumenteerd in de sectie **Maatregelen**:
+
+* Technische en organisatorische maatregelen om elke gegevensverwerking te beveiligen
+* Bijvoorbeeld versleuteling van gegevens, pseudonimisering, beperking van de toegang
+
+***
+
+{% hint style="info" %}
+U kunt het type van een verwerkingsactiviteit wijzigen (van een activiteit als verwerkingsverantwoordelijke naar een activiteit als verwerker, en omgekeerd).\
+[De werkwijze staat in de veelgestelde vragen](faq.md#hoe-wijzigt-u-het-type-van-een-verwerkingsactiviteit-van-een-activiteit-als-verwerkingsverantwoordelijke-naar-een-activiteit-als-verwerker-en-omgekeerd)
+{% endhint %}
+
+## Meer informatie
 
 {% content-ref url="establish.md" %}
-[beheer-uw-register](establish.md)
+[Uw register opzetten](establish.md)
 {% endcontent-ref %}

@@ -1,49 +1,47 @@
 ---
-description: Leer gegevens visualiseren in Dastra.
+description: Leer hoe u gegevens in Dastra visualiseert.
 ---
 
-# Gegevens visualiseren
+# Gegevensvisualisatie
 
 ## Inleiding
 
-In Dastra kunnen **gegevens** op verschillende manieren worden weergegeven:&#x20;
+In Dastra kunt u de gegevens van uw verwerkingsregister op verschillende manieren bekijken:
 
-* De **organisatieboom** van Verwerkingen,
-* **Mapping** van gegevensverwerking,
-* **Gegevensoverdrachten**.
+* als lijst, als kaarten of als boomstructuur, georganiseerd per entiteit en afdeling,
+* als gegevenskaart van het register,
+* als kaart van de doorgiften van gegevens.
 
-## De registerweergave wijzigen
+## De weergave van het register wijzigen
 
-Om de manier waarop behandelingen in uw register worden weergegeven te wijzigen, gaat u naar de module "Registers" in de banner aan de linkerkant van het scherm. Verwerkingen worden standaard in tabelmodus weergegeven. Klik op de **pijl naar rechts** van de knop "Tabel".
+Ga om de weergave van de verwerkingsactiviteiten in uw register te wijzigen naar de module **Register voor gegevensverwerking** in het linkermenu. Standaard worden de verwerkingsactiviteiten weergegeven in de weergave **Tabel**. Klik in de werkbalk op de **pijl rechts** van de knop **Tabel** en kies een andere weergave.
 
-![Module "Registers"](<../../../.gitbook/assets/image (199).png>)
+<figure><img src="../../../.gitbook/assets/ropa-visualization-1.png" alt="Knop Tabel met het bijbehorende keuzemenu"><figcaption><p>De beschikbare weergaven van het register</p></figcaption></figure>
 
-![Pijl rechts van de "Tabel" knop & uitklapmenu](<../../../.gitbook/assets/Capture web\_4-5-2022\_95947\_app.dastra.eu.jpeg>)
+Er zijn drie weergaven beschikbaar:
 
-{% hint style="info" %}
-De eerste keuze "Tabel" verwijst naar de standaardweergave van de Verwerking**.
-{% endhint %}
-
-Naast de tabelweergave zijn er ook een lijstweergave en een boomweergave beschikbaar.&#x20;
+* **Tabel**: de standaardweergave van het verwerkingsregister, als tabel waarvan u de kolommen, de sortering en de filters kunt aanpassen;
+* **Kaarten**: één kaart per verwerkingsactiviteit, met de belangrijkste informatie en indicatoren;
+* **Boomstructuur**: de verwerkingsactiviteiten georganiseerd per entiteit en afdeling.
 
 {% content-ref url="tree.md" %}
-[de Verwerkingsboom bekijken](tree.md)
+[De boomstructuur van de verwerkingsactiviteiten weergeven](tree.md)
 {% endcontent-ref %}
 
-## Bekijk de mapping van uw register en transfers&#x20;
+## De kaart van uw register en van de doorgiften bekijken
 
-De kaart met registergegevens en de kaart met overdrachten zijn beschikbaar in de tabbladen bovenaan je scherm, boven je lijst&#x20;
+De gegevenskaart van het register en de doorgiftekaart staan op de tabbladen **In kaart brengen** en **Doorgiften**, boven aan de module **Register voor gegevensverwerking**, boven uw lijst.
 
 {% content-ref url="data-map.md" %}
-[gegevens in kaart brengen](data-map.md)
+[De gegevenskaart van het register weergeven](data-map.md)
 {% endcontent-ref %}
 
 {% content-ref url="transfers-map.md" %}
-[bekijk de overboekingenkaart](transfers-map.md)
+[De doorgiftekaart weergeven](transfers-map.md)
 {% endcontent-ref %}
 
-## Verder gaan
+## Verder lezen
 
 {% content-ref url="../../risks/README.md" %}
-[risicobeheer](../../risks/README.md)
+[Risicobeheer](../../risks/README.md)
 {% endcontent-ref %}

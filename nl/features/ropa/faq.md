@@ -1,84 +1,109 @@
 ---
-description: Op deze pagina staan de belangrijkste vragen en antwoorden die we bieden.
+description: Veelgestelde vragen over het verwerkingsregister.
 ---
 
 # Veelgestelde vragen
 
-## Hoe kan ik de geschiedenis van wijzigingen in een Verwerking weergeven?
+## Hoe toont u de wijzigingsgeschiedenis van een verwerkingsactiviteit?
 
-Voor alle Verwerkingen kun je de geschiedenis van de wijzigingen en de details van de wijzigingen &#x20 weergeven;
+Voor alle verwerkingsactiviteiten kunt u de wijzigingsgeschiedenis en de details van de wijzigingen weergeven.
 
-Klik gewoon op het pictogram boven aan de pagina dat een klok voorstelt.
+Klik op het klokpictogram (**Historisch**) bovenaan de pagina van de verwerkingsactiviteit.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p>Toegangsknop geschiedenis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-faq-1.png" alt="Knop voor de activiteitsgeschiedenis bovenaan een verwerkingsactiviteit"><figcaption><p>Knop voor toegang tot de geschiedenis</p></figcaption></figure>
 
-Houd er rekening mee dat wijzigingen in organisatorische eenheden niet worden bijgehouden &#x20;
+Klik bij een vermelding op **Gegevens wijzigen** om de versies te vergelijken. Daar kunt u met de knop **Herstellen** terugkeren naar die versie, als uw rol dat toestaat.
 
-## Is het mogelijk om automatisch elementen toe te voegen aan het veld "belanghebbenden" in een nieuwe Verwerking?
+Wijzigingen in organisatorische eenheden worden niet bijgehouden.
 
-Nee, stakeholders kunnen niet automatisch worden bijgewerkt via geautomatiseerde workflows &#x20;
+## Kunt u automatisch elementen toevoegen aan het veld "stakeholders" in een nieuwe verwerkingsactiviteit?
 
-Het is echter wel mogelijk om een aangepast stakeholderveld te maken dat via de geautomatiseerde workflow kan worden gewijzigd.
+Nee, stakeholders kunnen niet automatisch worden bijgewerkt via een geautomatiseerde workflow.
 
-## Hoe verwijder ik een Verwerking?
+U kunt wel een aangepast veld aanmaken op het niveau van de stakeholder, dat via de geautomatiseerde workflow kan worden gewijzigd.
 
-Om een Verwerking te verwijderen, moet je de Verwerking eerst archiveren met de archiefknop en vervolgens de archieven weergeven met behulp van de filters om de Verwerking definitief te verwijderen. Dit is een beveiliging tegen overhaaste verwijderingen.
+## Hoe verwijdert u een verwerkingsactiviteit?
 
-Om een Verwerking te archiveren, ga je naar de drie kleine puntjes op de Verwerking om het menu weer te geven.
+Om een verwerkingsactiviteit te verwijderen, verplaatst u ze eerst naar de prullenbak met **Verplaats naar de prullenbak**. Daarna kunt u de verwerkingsactiviteit definitief verwijderen door de prullenbak weer te geven via de filters. Zo voorkomt u overhaaste verwijderingen.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (5).png" alt=""><figcaption></figcaption></figure>
+Om een verwerkingsactiviteit naar de prullenbak te verplaatsen, opent u het menu aan het einde van de rij en kiest u **Verplaats naar de prullenbak**.
 
-En tot slot, toon de archieven
+<figure><img src="../../.gitbook/assets/ropa-faq-2.png" alt="Actiemenu van een rij van een verwerkingsactiviteit met de optie Verplaats naar de prullenbak"><figcaption><p>Een verwerkingsactiviteit naar de prullenbak verplaatsen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (3) (2).png" alt=""><figcaption></figcaption></figure>
+Geef daarna de prullenbak weer: klik op **Filters** en vink **Bekijk prullenbak** aan.
 
-en verwijder&#x20;
+<figure><img src="../../.gitbook/assets/ropa-faq-3.png" alt="Filterpaneel van het register met de optie Bekijk prullenbak"><figcaption><p>De prullenbak weergeven</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Open ten slotte het menu aan het einde van de rij en kies **Verwijderen**. U kunt ook **Herstellen** kiezen om de verwerkingsactiviteit terug in het register te zetten.
 
-## Hoe kan ik datasets gebruiken zonder de gegevens te kunnen wijzigen?
+<figure><img src="../../.gitbook/assets/ropa-faq-4.png" alt="Actiemenu van een rij van een verwerkingsactiviteit in de prullenbak met de opties Herstellen en Verwijderen"><figcaption><p>Een verwerkingsactiviteit definitief verwijderen</p></figcaption></figure>
 
-U vraagt zich af hoe u de toegang tot gegevens (velden) in datasets kunt beperken om problemen met koppelingen naar andere verwerkingsformulieren te voorkomen.
+## Hoe kunnen gebruikers met datasets werken zonder ze te mogen wijzigen?
 
-Uw DPO-relais moet mogelijk de datasets gebruiken die u hen aanbiedt zonder nieuwe te hoeven maken &#x20;
+Uw DPO-relais moeten mogelijk de datasets gebruiken die u beschikbaar stelt in hun verwerkingsactiviteiten, zonder nieuwe aan te maken of de gegevensvelden erin te wijzigen, zodat de koppelingen met andere verwerkingsactiviteiten consistent blijven.
 
-In dit geval moet u een aangepaste rol maken &#x20;
+Maak in dat geval een aangepaste rol aan. Ga naar de rollen: [https://app.dastra.eu/general-settings/roles](https://app.dastra.eu/general-settings/roles) (zie [Rollen en rechten](../settings/roles.md)).
 
-Ga hiervoor naar rollen: [https://app.dastra.eu/general-settings/roles](https://app.dastra.eu/general-settings/roles)
+Maak daarna een aangepaste rol met de volgende rechten:
 
-Maak vervolgens een aangepaste rol met de volgende rechten:&#x20;
+* **Register- en gegevensverwerking**: Lezing, Schrijven
+* **Gegevenstoewijzing en opslagplaatsen**: Lezing
 
-* Register: lezen, schrijven
-* Gegevensmapping: lezen
+Wijs deze rol vervolgens toe aan de betreffende gebruikers. Zij kunnen de datasets gebruiken in hun verwerkingsactiviteiten, maar de elementen van de datamap niet wijzigen.
 
-<figure><img src="../../.gitbook/assets/image (2) (2) (3).png" alt=""><figcaption><p>Rol die toegang geeft tot datasets zonder deze te kunnen wijzigen</p></figcaption></fig>
+## Hoe voegt u stakeholders of ontvangers toe aan meerdere verwerkingsactiviteiten?
 
-Vervolgens moet je deze rol toewijzen aan de betrokken gebruikers &#x20;
+Met bulkacties voegt u stakeholders of ontvangers in één keer toe aan meerdere verwerkingsactiviteiten.
 
-Ze kunnen de mappingelementen niet wijzigen.
+Selecteer in de weergave **Tabel** de verwerkingsactiviteiten met de selectievakjes. De knop **Kies een bulkactie** verschijnt.
+
+Kies **Actoren koppelen**, selecteer **Toevoegen**, kies de stakeholders en daarna hun **Type** (bijvoorbeeld stakeholder of ontvanger) en hun categorie, en bevestig. Bevat uw selectie zowel activiteiten als verwerkingsverantwoordelijke als activiteiten als verwerker, dan is alleen het type stakeholder beschikbaar.
+
+In hetzelfde venster verwijdert u met **Verwijderen** stakeholders van de geselecteerde verwerkingsactiviteiten.
+
+## Hoe krijgt u de lijst van activa per organisatorische eenheid?
+
+U krijgt de lijst van activa per organisatorische eenheid via de koppelingen tussen activa en verwerkingsactiviteiten.
+
+Gebruik de Excel-export van de verwerkingsactiviteiten: filter het register op organisatorische eenheid, selecteer de verwerkingsactiviteiten en exporteer ze. Schakel in het exportvenster **Specifieke kolommen exporteren** in en bewaar alleen de kolom met de activa: zo krijgt u de activa van die organisatorische eenheid. U kunt ook alleen de kolommen met de organisatorische eenheid en de activa bewaren om de activa van alle organisatorische eenheden tegelijk te krijgen.
+
+De [datamap van het register](visualization/data-map.md) toont deze informatie ook grafisch.
+
+## Hoe dupliceert u een register in een andere werkruimte?
+
+U kunt een register en zijn verwerkingsactiviteiten op verschillende manieren dupliceren:
+
+* door de verwerkingsactiviteiten in JSON-indeling te [exporteren en opnieuw te importeren](export-import.md),
+* of door naar de doelwerkruimte te gaan en de verwerkingsactiviteiten aan te maken met **Maak vanuit de bibliotheek**: selecteer bij **Gegevensbron van de bibliotheek** de werkruimte die het oorspronkelijke register bevat.
+
+## Hoe wijzigt u het type van een verwerkingsactiviteit (van een activiteit als verwerkingsverantwoordelijke naar een activiteit als verwerker, en omgekeerd)?
+
+Open de verwerkingsactiviteit, klik op de pijl rechts van **Opslaan** en klik daarna op **Schakel over naar processorrecord** of **Schakel over naar verantwoordelijke voor de verwerking**:
+
+<figure><img src="../../.gitbook/assets/ropa-faq-7.png" alt="Menu van Opslaan met de optie Schakel over naar processorrecord"><figcaption><p>Het type van een verwerkingsactiviteit wijzigen</p></figcaption></figure>
+
+Zet u een activiteit als verwerker terug naar een activiteit als verwerkingsverantwoordelijke, dan worden de eraan gekoppelde klanten verwijderd. Vooraf wordt om bevestiging gevraagd.
+
+## Foutmelding: "Label field is required."
+
+Deze melding verschijnt meestal wanneer een veld leeg blijft bij het beantwoorden van een vragenlijst.
+
+## Foutmelding: "Wees voorzichtig, verboden HTML-inhoud is aanwezig in een veld!"
+
+<figure><img src="../../.gitbook/assets/screenshot-2025-03-04-165456.png" alt="Foutmelding over verboden HTML-inhoud in een veld"><figcaption><p>Verboden HTML-inhoud is aanwezig in een veld</p></figcaption></figure>
+
+Deze melding betekent dat HTML-code (meestal tussen punthaken `< >`) aanwezig is in een veld waarin HTML om veiligheidsredenen niet is toegestaan.
+
+De volgende melding wijst het betreffende veld aan:
+
+<figure><img src="../../.gitbook/assets/screenshot-2025-03-04-165525.png" alt="Validatiemelding die wijst op het veld met HTML"><figcaption><p>Verboden HTML-inhoud is aanwezig in een veld</p></figcaption></figure>
+
+## Foutmelding: "De gebruikers-ID bestaat niet in uw organisatie." bij het opslaan van een gegevensverwerking
+
+Deze melding betekent dat een gebruiker die uit uw werkruimte is verwijderd, nog steeds als verantwoordelijke gebruiker is ingesteld bij de stakeholders van de gegevensverwerking.
+
+Verwijder de verwijderde gebruiker uit de stakeholders van de gegevensverwerking om dit probleem op te lossen.
 
 {% hint style="info" %}
-Als je het antwoord niet kunt vinden in deze handleiding, kun je [contact met ons opnemen via support](../../commencer/le-support/make-a-support-request.md)
-
-
+Vindt u het antwoord niet in deze gids, dan kunt u [contact opnemen met onze support](../../getting-started/support/request.md).
 {% endhint %}
-
-## Belanghebbenden of ontvangers aan meerdere Verwerkingen toevoegen?
-
-Je kunt belanghebbenden massaal aan meerdere Verwerkingen toevoegen met behulp van gegroepeerde wijzigingen &#x20;
-
-Ga hiervoor naar de tabelweergave van het register en selecteer de Verwerkingen met behulp van de selectievakjes &#x20;
-
-Vervolgens ziet u de knop "Choose grouped actions" verschijnen &#x20;
-
-Selecteer de optie "Koppel actoren" en voeg je actoren toe als belanghebbenden.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
-
-## Activa opvragen per organisatorische eenheid (OE)?
-
-Je kunt de lijst met Activa per organisatorische eenheid opvragen via de koppelingen die ze hebben met Verwerkingen &#x20;
-
-U kunt hiervoor de export van Verwerkingen in Excel-formaat gebruiken. Door de Verwerkingen te filteren op OE en de geselecteerde Verwerkingen te exporteren, kunt u ervoor kiezen om alleen het veld Activa te exporteren in de export. Je hebt dan de export van Activa per OE. Je kunt er ook voor kiezen om alleen de OE's en Activa te exporteren, zodat je alle Activa voor alle OE's hebt. Je kunt deze informatie ook grafisch weergeven in de mapping-weergave van het register.
-
-
