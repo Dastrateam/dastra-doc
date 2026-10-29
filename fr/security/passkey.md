@@ -12,7 +12,7 @@ Une **clé d'accès** (ou _passkey_) remplace votre mot de passe par une authent
 
 Dastra s'appuie sur les standards ouverts [WebAuthn](https://fr.wikipedia.org/wiki/WebAuthn) et [FIDO2](https://fr.wikipedia.org/wiki/FIDO_Alliance). Concrètement :
 
-* La **clé privée ne quitte jamais votre appareil** (ou votre gestionnaire de clés d'accès : iCloud Keychain, Google Password Manager, Windows Hello, 1Password, YubiKey…). Dastra ne conserve que la clé publique.
+* La **clé privée ne quitte jamais votre appareil** (ou votre gestionnaire de clés d'accès : iCloud Keychain, Google Password Manager, Windows Hello, 1Password, YubiKey, etc.). Dastra ne conserve que la clé publique.
 * Il n'y a **aucun secret partagé** à voler : une fuite de base de données ne permet pas de se connecter à votre compte.
 * La clé d'accès est **liée au domaine de Dastra** : elle est par nature résistante au hameçonnage (_phishing_). Un site frauduleux ne peut pas vous la faire utiliser.
 
@@ -20,29 +20,29 @@ Dastra s'appuie sur les standards ouverts [WebAuthn](https://fr.wikipedia.org/wi
 Une connexion par clé d'accès avec vérification de l'utilisateur (biométrie ou code PIN) vaut **deux facteurs d'authentification**. Vous n'avez donc pas de code à 6 chiffres à saisir, même si votre organisation impose l'[authentification forte](mfa.md).
 {% endhint %}
 
-## Comment créer une clé d'accès ?
+## Créer une clé d'accès
 
 Deux chemins sont possibles.
 
 ### Depuis vos paramètres de sécurité
 
 * Rendez-vous sur [https://app.dastra.eu/general-settings/account-security](https://app.dastra.eu/general-settings/account-security)
-* Dans l'encart **Clés d'accès**, cliquez sur **Gérer**
-* Donnez un nom à votre clé (par exemple « Mon téléphone » ou « MacBook pro »), puis cliquez sur **Ajouter une clé d'accès**
-* Suivez l'invite de votre navigateur ou de votre système d'exploitation (empreinte, visage, code PIN, clé de sécurité physique…)
+* Dans la carte **Se connecter avec une passkey**, cliquez sur **Gérer mes passkeys**
+* Sur l'écran **Gérer vos passkeys**, donnez un nom à votre clé (par exemple « Mon téléphone » ou « MacBook pro »), puis cliquez sur **Ajouter une passkey**
+* Suivez l'invite de votre navigateur ou de votre système d'exploitation (empreinte, visage, code PIN, clé de sécurité physique)
 
 ### Depuis l'invitation affichée après connexion
 
 Après une connexion par mot de passe, Dastra vous propose de créer une clé d'accès si vous n'en avez pas encore. Vous pouvez :
 
-* **Créer une clé d'accès** immédiatement ;
+* **Créer une passkey** immédiatement ;
 * choisir **Plus tard** : l'invitation ne sera plus affichée sur ce navigateur pendant 90 jours ;
-* choisir **Ne plus me le demander** : l'invitation est désactivée définitivement pour votre compte (vous pourrez toujours créer une clé depuis vos paramètres de sécurité).
+* choisir **Ne plus me proposer** : l'invitation est désactivée définitivement pour votre compte (vous pourrez toujours créer une clé depuis vos paramètres de sécurité).
 
-## Comment se connecter avec une clé d'accès ?
+## Se connecter avec une clé d'accès
 
 * Saisissez votre adresse e-mail sur la page de connexion
-* Sur l'écran suivant, cliquez sur **Se connecter avec une clé d'accès**
+* Sur l'écran suivant, cliquez sur **Se connecter avec une passkey**
 * Validez avec votre empreinte, votre visage, votre code PIN ou votre clé de sécurité
 
 {% hint style="info" %}
@@ -51,13 +51,13 @@ Le bouton n'apparaît que si votre navigateur prend en charge WebAuthn **et** qu
 
 ## Gérer ses clés d'accès
 
-Depuis l'écran **Gérer** (paramètres de sécurité de votre compte), vous pouvez :
+Depuis l'écran **Gérer vos passkeys** (accessible par **Gérer mes passkeys** dans les paramètres de sécurité de votre compte), vous pouvez :
 
-* **enregistrer plusieurs clés d'accès** — c'est recommandé : une par appareil (téléphone, ordinateur portable, clé de sécurité physique) vous évite de perdre l'accès si vous perdez un appareil ;
-* **renommer** une clé d'accès ;
-* **supprimer** une clé d'accès qui n'est plus utilisée (appareil revendu, perdu, volé).
+* **enregistrer plusieurs clés d'accès**, ce qui est recommandé : une par appareil (téléphone, ordinateur portable, clé de sécurité physique) vous évite de perdre l'accès si vous perdez un appareil ;
+* **renommer** une clé d'accès, avec le bouton **Enregistrer** ;
+* **supprimer** une clé d'accès avec **Supprimer** quand elle n'est plus utilisée (appareil revendu, perdu, volé). Cliquez à nouveau sur **Confirmer la suppression** pour valider.
 
-L'encart **Clés d'accès** de vos paramètres de sécurité affiche également la date de dernière utilisation de chaque clé, ce qui permet d'identifier rapidement une clé obsolète.
+La carte **Se connecter avec une passkey** de vos paramètres de sécurité affiche également la date de dernière utilisation de chaque clé (colonne **Dernière utilisation**), ce qui permet d'identifier rapidement une clé obsolète.
 
 {% hint style="info" %}
 Si vous ne saisissez pas de nom, la clé est nommée automatiquement avec sa date de création. L'ajout et la suppression d'une clé d'accès sont journalisés et consultables dans les logs d'audit de votre organisation.

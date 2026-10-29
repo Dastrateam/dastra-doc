@@ -287,12 +287,9 @@
 ## 🛡️ Security
 
 * [Security at Dastra](security/general.md)
+* [Strong authentication](security/mfa.md)
 * [Passkeys](security/passkey.md)
-* [Security roadmap](security/roadmap.md)
 * [Quality of Service](security/quality-of-service.md)
-
-***
-
 * [Certifications](security/certifications.md)
 * [Dastra on Bleu (sovereign cloud)](security/bleu.md)
 
