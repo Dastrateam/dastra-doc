@@ -154,7 +154,7 @@ redirects:
   features/gerer-les-exercices-des-droits/document-redaction: features/requests/redaction.md
   features/gerer-les-exercices-des-droits/edit-and-process-requests: features/requests/process.md
   features/gerer-les-exercices-des-droits/faq: features/requests/faq.md
-  features/gerer-les-exercices-des-droits/fonctionnalites-avancees-liees-aux-exercices-de-droits/regles-de-purge-des-demandes: features/requests/README.md
+  features/gerer-les-exercices-des-droits/fonctionnalites-avancees-liees-aux-exercices-de-droits/regles-de-purge-des-demandes: features/requests/advanced/purge.md
   features/gerer-les-exercices-des-droits/implementez-un-widget-dexercice-des-droits: features/requests/widget.md
   features/gerer-les-exercices-des-droits/manage-data-subject-right-requests: features/requests/manage.md
   features/gerer-les-exercices-des-droits/technical-integration: features/requests/integration.md

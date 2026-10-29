@@ -1,18 +1,25 @@
 # Personnalisation des emails envoyés aux demandeurs
 
-L’interface vous permet de modifier l’ensemble des emails de notification relatifs aux demandes d’exercice de droits si vous ne voulez pas utilisez nos formulations.\
+Si vous ne souhaitez pas utiliser les formulations par défaut, vous pouvez modifier tous les e-mails de notification envoyés aux demandeurs.
+
 Vous pouvez :
 
 * Adapter les **sujets et corps des messages**.
-* Gérer les **traductions multilingues** afin d’envoyer des emails dans la langue choisie par le demandeur.
-* Ajouter des langues supplémentaires (par défaut, les emails seront envoyés en anglais si aucune traduction n’est définie).
+* Gérer les **traductions** pour envoyer les e-mails dans la langue du demandeur.
+* Ajouter des langues. Si la langue d'une demande n'est pas paramétrée, le demandeur reçoit les e-mails en anglais.
 
-<figure><img src="../../../.gitbook/assets/settings-workspace-langues.png" alt=""><figcaption><p>Personnalisation des langues</p></figcaption></figure>
+## Ajouter une langue et modifier les textes
 
-<figure><img src="../../../.gitbook/assets/settings-workspace-langues-surcharge.png" alt=""><figcaption><p>Personnalisation d'un message</p></figcaption></figure>
+1. Dans les paramètres de l'espace de travail, section **Processus**, ouvrez **Demandes d'exercice de droit**.
+2. Ouvrez la section **Textes et traductions des emails de notification**.
+3. Choisissez une langue dans la liste **Ajouter la langue**.
+4. Cliquez sur **Modifier** à côté de la langue, puis adaptez les sujets et les textes.
+5. Ouvrez l'e-mail à personnaliser (en-tête et pied de page, confirmation d'identité, confirmation, code d'accès à l'espace demandeur, nouveau message ou clôture de la demande), remplacez les valeurs par défaut affichées sous le libellé de chaque champ, puis cliquez sur **Enregistrer**.
+
+<figure><img src="../../../.gitbook/assets/requests-emails-1.png" alt="La section Textes et traductions des emails de notification avec la liste des langues"><figcaption><p>Les langues personnalisées</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/requests-emails-2.png" alt="L'édition des textes d'un e-mail de notification dans une langue"><figcaption><p>La personnalisation d'un message</p></figcaption></figure>
 
 {% hint style="info" %}
-Veuillez faire attention à la présence éventuelle de balise (ici : `{{data.code}}`) : cela signifie que des données seront insérées lors de la génération du message et sont nécessaires au bon fonctionnement !
-
-Vous pouvez bien entendu ajouter d'autres informations dans le texte (tapez `{{` pour ouvrir la liste des variables disponibles)
+Conservez les balises telles que `{{data.Code}}` : elles sont remplacées par des données lors de l'envoi et le message en a besoin pour fonctionner. Vous pouvez ajouter d'autres variables dans le texte : tapez `{{` pour ouvrir la liste des variables disponibles.
 {% endhint %}
