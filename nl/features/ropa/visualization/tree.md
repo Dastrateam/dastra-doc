@@ -1,34 +1,35 @@
 ---
-description: Leer hoe u de boomstructuur van de Verwerking in Dastra kunt bekijken.
+description: Leer hoe u de verwerkingsboom in Dastra bekijkt.
 ---
 
-# De boomstructuur van verwerkingen bekijken
+# De boomstructuur van de verwerkingsactiviteiten weergeven
 
 ## Inleiding
 
-In Dastra kunnen gegevens op verschillende manieren worden bekeken. Eén daarvan is het visualiseren van de Verwerkingsboom** per entiteit en afdeling.
+In Dastra kunt u gegevens op verschillende manieren visualiseren. Eén daarvan is de boomstructuur van de verwerkingsactiviteiten, georganiseerd per entiteit en afdeling.
 
-Deze weergave maakt het met name mogelijk om te begrijpen aan welke entiteiten en/of afdelingen de Verwerkingen zijn gekoppeld.
+Deze weergave toont onder meer aan welke entiteiten en afdelingen uw verwerkingsactiviteiten zijn gekoppeld.
 
-## Verwerkingsboom bekijken
+## De boomstructuur van de verwerkingsactiviteiten weergeven
 
-Om de Verwerkingsboom te bekijken, klikt u op de module "Registers" en vervolgens op de pijl rechts van de knop om de optie "**Boomstructuur**" te selecteren.
+Ga naar de module **Register voor gegevensverwerking**, klik op de pijl rechts van de knop **Tabel** en selecteer **Boomstructuur** om de boomstructuur van de verwerkingsactiviteiten te bekijken.
 
-![Module Registers](<../../../.gitbook/assets/image (199).png>)
+<figure><img src="../../../.gitbook/assets/ropa-tree-1.png" alt="Knop Tabel met het bijbehorende keuzemenu"><figcaption><p>Pijl rechts van de knop Tabel en keuzemenu</p></figcaption></figure>
 
-![Pijltje rechts van de knop & uitklapmenu](<../../../.gitbook/assets/Capture web\_4-5-2022\_95947\_app.dastra.eu.jpeg>)
+U ziet dan de boomstructuur van uw verwerkingsactiviteiten.
 
-Hiermee kunt u de **boomstructuur** van de verwerking bekijken.
+<figure><img src="../../../.gitbook/assets/ropa-tree-2.png" alt="De boomstructuur van de verwerkingsactiviteiten"><figcaption><p>De boomstructuur van de verwerkingsactiviteiten in Dastra</p></figcaption></figure>
 
-![De verwerkingsboom in Dastra](<../../../.gitbook/assets/image (211).png>)
+Elke entiteit en afdeling wordt getoond met het aantal verwerkingsactiviteiten dat eraan is gekoppeld. Als het adres en de vertegenwoordiger zijn ingevuld, vindt u ze via het hulppictogram naast de naam. Klik op de pijl aan het begin van een rij om een organisatie-eenheid uit te klappen en de onderliggende eenheden en verwerkingsactiviteiten te tonen, met hun **Stap**, **Type**, **Algemene progressie** en **Labels**.
 
+Klik op een verwerkingsactiviteit om de details ervan te tonen. Via het actiemenu, dat verschijnt wanneer u over de rij beweegt, bewerkt, kopieert, exporteert of deelt u de activiteit, of verplaatst u die naar de prullenbak.
 
 {% hint style="info" %}
-Met filters en de instellingenknop kun je de boomstructuur naar wens aanpassen.
+Met de filters boven de boomstructuur past u de weergave aan uw behoeften aan. Gebruikers die de organisatie-eenheden beheren, kunnen via het actiemenu ook een eenheid bewerken of een onderliggende eenheid toevoegen, en **Maak een afdeling** gebruiken in het menu naast de knop **Maak een gegevensverwerking**.
 {% endhint %}
 
-## Verder gaan
+## Verder lezen
 
 {% content-ref url="../../../getting-started/setup/organizational-units.md" %}
-[entiteiten en afdelingen creëren en opzetten.md](../../../getting-started/setup/organizational-units.md)
+[Organisatorische eenheden aanmaken en instellen](../../../getting-started/setup/organizational-units.md)
 {% endcontent-ref %}

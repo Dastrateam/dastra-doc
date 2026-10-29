@@ -1,62 +1,81 @@
 ---
 description: >-
-  De Dastra AI Assistant gebruikt de kracht van de OpenAI GPT-4 AI om
-  automatisch behandelingsrecords te genereren
+  Met de AI-assistent van Dastra genereert en verrijkt u elementen in uw
+  werkruimte met generatieve AI.
 ---
 
-# 😇 AI Assistant (beta)
+# AI-assistent
 
-## Waar Dastra voor kan worden gebruikt
+Met de AI-assistent van Dastra genereert en verrijkt u elementen van uw werkruimte op basis van korte tekstbeschrijvingen. Hij gebruikt generatieve AI-modellen die op Azure worden gehost, in Frankrijk en in de Europese Economische Ruimte. Gegevens van uw organisatie worden niet gebruikt om die modellen te trainen.
 
-Met Dastra kunt u AI gebruiken voor twee belangrijke toepassingen:
+De AI-assistent is beschikbaar in alle Dastra-werkruimten. Wilt u hem voor uw organisatie uitschakelen, neem dan contact op met ons ondersteuningsteam.
 
-**Gegevensverwerking genereren**
+## AI als startpunt, niet als eindantwoord
 
-Snel gegevensverwerking genereren in het formaat dat Dastra verwacht op basis van een snelle beschrijving van uw proces
+De AI-assistent is bedoeld om uw conformiteitswerk te versnellen, niet om menselijke expertise te vervangen. Alle inhoud die de assistent genereert, of het nu een beschrijving van een verwerkingsactiviteit, een informatiebericht of een conformiteitsanalyse is, is een voorstel dat een gekwalificeerd persoon moet nakijken en valideren voordat u het gebruikt.
 
-Op basis van het beschreven gebruik van de gegevens zal Dastra een verwerkingsmodel voorstellen inclusief een naam, een of meer gegevenssets inclusief velden, een bewaarperiode, beveiligingsmaatregelen, ontvangers en een beschrijving van de verwerking.\
-In een mum van tijd kunt u uw gegevensverwerking \&#x20 aanmaken;
-
-Wilt u iets wijzigen aan wat is voorgesteld? Bewerk de Verwerking zodra deze is aangemaakt.
-
-### Activa genereren
-
-Genereer snel Activa (zoals software) in het formaat dat Dastra verwacht. De AI stelt een naam voor, geeft links naar het vertrouwelijkheidsbeleid van de Actor, maakt een Actor aan als redacteur
-
-Bespaar tijd en laat de AI deze informatie vooraf voor je invullen\&x20;
-
-## Hoe gebruik ik Dastra's generatieve AI?
-
-Je kunt de AI-assistent gebruiken om gegevensverwerking of Activa te genereren. Klik hiervoor op de knop "Maak een Verwerking" en op "Genereer met AI". De AI-assistent zal een datamodel voorstellen dat je vervolgens kunt aanpassen aan je behoeften.
-
-{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LvBxs22wUMicv9uWp6C-2584506019%2Fuploads%2F3LnwYaR0wxVm1itxA4XH%2Fia-gpt-dastra.mp4?alt=media&token=ba3d66f4-e290-4215-83ec-7a2f91641d39" %}
+Dat betekent in het bijzonder:
 
 {% hint style="warning" %}
-\*\*Wat moet ik doen als ik deze functie niet op mijn account wil?
+Door AI gegenereerde inhoud vormt geen juridisch advies. Ze kan het oordeel van een gegevensbeschermingsdeskundige of van een jurist niet vervangen.
 
-Als je niet wilt dat deze optie beschikbaar is in je werkruimte, kun je [contact met ons opnemen ](../../../getting-started/support/request.md)zodat we de functionaliteit voor jouw organisatie kunnen deactiveren.
+Conformiteitsbeoordelingen zijn analytische hulpmiddelen. Scores en aanbevelingen van de AI zijn uitsluitend gebaseerd op de informatie in uw werkruimte. Ze weerspiegelen de kwaliteit van die documentatie en vormen geen onafhankelijk juridisch advies.
+
+U houdt de controle. Geen enkel door AI gegenereerd resultaat wordt automatisch toegepast of meegedeeld. Elk resultaat vraagt een bewuste handeling van een persoon voordat u het gebruikt.
 {% endhint %}
 
-## Hoe werkt het?
+## Gegevensbescherming en vertrouwelijkheid
 
-Dastra gebruikt de **IA OpenAI GPT 4omini** (Model van [ChatGPT](https://chat.openai.com/)) geleverd door [de OpenAI service gehost op Azure](https://azure.microsoft.com/fr-fr/products/cognitive-services/openai-service). Het gebruikte model is voorgetraind. **We dragen geen gegevens over van uw organisatie** om deze kunstmatige intelligentie te trainen;
+Gegevens van uw organisatie worden nooit gebruikt om AI-modellen te trainen. De modellen die Dastra gebruikt, worden gehost op de infrastructuur van Microsoft Azure in Frankrijk, onder contractuele garanties die uw gegevens uitsluiten van training of van uitwisseling met derden. Alle details vindt u onder [Werking](how-it-works.md).
 
-Dastra gebruikt gewoon de kracht van GPT's generatieve AI om inhoud te genereren uit eenvoudige tekstvragen. Dastra levert gewoon het verwachte documentmodel (JSON) en een voorbeeld van gegevensverwerking (uit onze bibliotheek) dat we willen hebben en het AI-model doet de rest.
+## Waarmee de AI-assistent u helpt
 
-We dragen alleen de tekst over van de prompt die je naar de AI gaat sturen
+De assistent is beschikbaar in meerdere modules van het platform:
+
+* Verwerkingsactiviteiten: beschrijvingen, datasets, beveiligingsmaatregelen, informatieberichten en conformiteitsanalyses genereren
+* AI-systemen: beschrijvingen, berichten en risicoanalyses genereren
+* Vragenlijsten: door AI ondersteunde antwoorden genereren voor DPIA's en risicoanalyses
+* Verzoeken om rechten uit te oefenen: antwoorden opstellen in meerdere talen en registers
+* Activa en actoren: gestructureerde items genereren op basis van een URL of een vrije beschrijving
+* Contracten: metagegevens uit een geïmporteerd document halen
+* Eigen documenten en rapporten: inhoud genereren op basis van uw eigen instructies
+
+Een stapsgewijze uitleg van elke functie vindt u onder [Gebruiksscenario's](use-cases.md).
+
+## Bètafuncties
+
+Sommige AI-functies verschijnen in bèta: ze werken, maar worden verder verfijnd op basis van de feedback van gebruikers. Bètafuncties zijn in de interface duidelijk herkenbaar.
+
+Wanneer u een bètafunctie gebruikt:
+
+* kunnen de resultaten minder consistent zijn dan bij stabiele functies en moet u ze extra zorgvuldig behandelen;
+* worden de onderliggende prompts en criteria actief verbeterd, zodat de resultaten tussen versies kunnen veranderen;
+* is feedback welkom en helpt die Dastra de functie te verbeteren. Gebruik daarvoor de feedbackoptie in de interface.
 
 {% hint style="warning" %}
-**Waarschuwing voor de kwaliteit van de voorgestelde inhoud!**
-
-De gegevens die door de wizard worden gegenereerd **zijn slechts suggesties**. Het is noodzakelijk om de informatie die automatisch door de wizard wordt gegenereerd te controleren en bij te werken. Dastra is niet verantwoordelijk voor de kwaliteit van de verstrekte informatie.
+Baseer een conformiteitsbeslissing nooit uitsluitend op een bètafunctie. Bètafuncties ondersteunen een grondige menselijke controle, ze vervangen die niet.
 {% endhint %}
 
-Dastra **brengt geen gegevens** over van uw werkruimte naar de AI-service.
+Momenteel in bèta: de conformiteitsanalyse van verwerkingsactiviteiten en de conformiteitsanalyse van AI-systemen.
 
-Tekstquery's en resultaten van de service :
+***
 
-* zijn NIET beschikbaar voor andere clients\*\*. zijn NIET beschikbaar voor OpenAI.
-* worden NIET gebruikt om OpenAI-modellen te verbeteren\*\*
-* worden NIET gebruikt om Azure OpenAI\*\* modellen automatisch te verbeteren voor gebruik in uw bron (modellen zijn stateloos tenzij u de modellen expliciet verfijnt met uw trainingsgegevens).
+{% content-ref url="how-it-works.md" %}
+[Werking](how-it-works.md)
+{% endcontent-ref %}
 
-Als je meer informatie wilt over hoe dit model werkt, [ga naar deze pagina](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
+{% content-ref url="use-cases.md" %}
+[Gebruiksscenario's](use-cases.md)
+{% endcontent-ref %}
+
+{% content-ref url="faq.md" %}
+[Veelgestelde vragen](faq.md)
+{% endcontent-ref %}
+
+{% content-ref url="agents/README.md" %}
+[Dastra AI-agents](agents/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="mcp.md" %}
+[De MCP-server](mcp.md)
+{% endcontent-ref %}

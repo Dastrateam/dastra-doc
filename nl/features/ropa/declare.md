@@ -1,42 +1,44 @@
 ---
-description: Leer hoe je gegevensverwerking declareert.
+description: Leer hoe u een verwerkingsactiviteit aanmaakt en wijzigt.
 ---
 
-# Verwerking declareren
+# Een verwerkingsactiviteit aanmaken
 
-## Wat is gegevensverwerking?
+## Definitie van een gegevensverwerking
 
-Een verwerkingsactiviteit is een bewerking of reeks bewerkingen die wordt uitgevoerd op persoonsgegevens, zoals salarisadministratie. Alle verwerkingsactiviteiten samen vormen het register van de verwerkingen.
+Een verwerkingsactiviteit is een bewerking of geheel van bewerkingen met persoonsgegevens, zoals het beheer van de loonadministratie. Alle verwerkingsactiviteiten samen vormen het verwerkingsregister.
 
-## Een verwerkingsactiviteit aanmaken&#x20;
+## Een verwerkingsactiviteit aanmaken
 
-Om een verwerkingsactiviteit aan te maken, klikt u eerst op "Een gegevensverwerking aanmaken" in de sectie Register.
+Om een verwerkingsactiviteit aan te maken, opent u het verwerkingsregister en klikt u op **Maak een gegevensverwerking**. Het venster **Een gegevensverwerking maken** biedt vier opties:
 
-![Kies nieuwe Verwerking](<../../.gitbook/assets/image (185).png>)
+* **Genereren met A.I.**: beschrijf uw verwerkingsactiviteit in een paar woorden en laat onze AI-assistent (bèta) ze genereren, wanneer deze functie in uw werkruimte is ingeschakeld. De AI-knop naast **Maak een gegevensverwerking** opent deze optie rechtstreeks.
+* **Ingebouwde sjabloon**: begin vanuit een van onze voorgedefinieerde sjablonen (zie [Een sjabloon voor verwerkingsactiviteiten gebruiken](templates.md)).
+* **Vanuit een actief**: maak een verwerkingsactiviteit aan vanuit een activum en de bijbehorende gegevens.
+* **Gepersonaliseerd**: maak een nieuwe verwerkingsactiviteit vanaf nul aan.
 
-Kies het type Verwerking&#x20;
+<figure><img src="../../.gitbook/assets/ropa-declare-1.png" alt="Venster voor het aanmaken van een verwerkingsactiviteit met de vier opties"><figcaption><p>Kiezen hoe u de nieuwe verwerkingsactiviteit aanmaakt</p></figcaption></figure>
 
-Vul de beschrijving van de verwerkingsactiviteit in en je wordt naar de vragenlijstsectie geleid waar je alle benodigde informatie kunt toevoegen.
+Bij **Gepersonaliseerd** vult u de **Naam gegevensverwerking** in, selecteert u de **Organisatie-eenheid** en klikt u op **Maak een gegevensverwerking**. U gaat dan naar de vragenlijst, waar u alle vereiste informatie kunt toevoegen.
 
+## Een verwerkingsactiviteit aanmaken als verwerker
 
+Een verwerkingsactiviteit als verwerker maakt u op dezelfde manier aan: schakel bij het aanmaken met **Gepersonaliseerd** (of **Genereren met A.I.**) de schakelaar **Activiteit als verwerker** in.
 
-## Verwerking als verwerker aanmaken
+<figure><img src="../../.gitbook/assets/ropa-declare-2.png" alt="Schakelaar Activiteit als verwerker in het aanmaakvenster"><figcaption><p>Een verwerkingsactiviteit als verwerker aanmaken</p></figcaption></figure>
 
-Het aanmaken van een Verwerking als verwerker is heel eenvoudig. Als u een Verwerking maakt, vinkt u het vakje&#x20;
-
-![](<../../.gitbook/assets/image (186).png>)
-
-Je komt dan automatisch in de documentatiefase van een Verwerking als een verwerker en je hebt de optie om je Verwerkingsverantwoordelijken (meestal je klanten) aan te geven.
+U komt dan rechtstreeks bij de documentatie van een verwerkingsactiviteit als verwerker, waar u uw verwerkingsverantwoordelijken (meestal uw klanten) opgeeft in de sectie **Klanten**.
 
 ## Een gegevensverwerking wijzigen
 
-Om een bestaande verwerkingsactiviteit te wijzigen, klikt u op de knop "Wijzigen" die aan de verwerking is gekoppeld of gaat u rechtstreeks naar de stappen aan de linkerkant van het scherm:
+Om een bestaande verwerkingsactiviteit te wijzigen, klikt u op de rij in het register of opent u het menu aan het einde van de rij en kiest u **Bewerken**:
 
-![](<../../.gitbook/assets/image (187).png>)
+<figure><img src="../../.gitbook/assets/ropa-declare-3.png" alt="Actiemenu van een rij van een verwerkingsactiviteit met de optie Bewerken"><figcaption><p>Een verwerkingsactiviteit openen om te bewerken</p></figcaption></figure>
 
-Volg dan elke stap van de vragenlijst, te beginnen met de volgende sectie:
+De secties van de vragenlijst staan links op het scherm: klik op een sectie om er rechtstreeks naartoe te gaan, of gebruik onderaan de pagina de knoppen **Terug**, **Ga naar sectie** en **Volgende**. Klik op **Opslaan** om uw werk op te slaan.
+
+Doorloop daarna elke stap van de vragenlijst, te beginnen met de volgende sectie:
 
 {% content-ref url="activity/README.md" %}
-[vul-in-de-vragenlijst](activity/README.md)
+[Een verwerkingsactiviteit invullen](activity/README.md)
 {% endcontent-ref %}
-

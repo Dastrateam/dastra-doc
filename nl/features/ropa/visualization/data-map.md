@@ -1,37 +1,40 @@
 ---
-description: Leer hoe je datamapping visualiseert in Dastra.
+description: Leer hoe u de gegevenskaart in Dastra bekijkt.
 ---
 
-# De registergegevenskaart bekijken
+# De gegevenskaart van het register weergeven
 
 ## Inleiding
 
-In Dastra kunnen gegevens op verschillende manieren gevisualiseerd worden. Een daarvan is de **registergegevenskaart**.
+In Dastra kunt u gegevens op verschillende manieren visualiseren. Eén daarvan is de gegevenskaart van het verwerkingsregister.
 
-Met deze visualisatie kunt u de verbanden tussen de gegevens in het register verkennen, analyseren en begrijpen.
+In deze weergave verkent, analyseert en begrijpt u de verbanden tussen de items van uw register: verwerkingsactiviteiten, organisatorische eenheden, stakeholders, activa, datasets, beveiligingsmaatregelen, doorgiften enzovoort.
 
-## De registergegevenskaart weergeven
+## De gegevenskaart van het register weergeven
 
-Om de registergegevenskaart te bekijken, klikt u op de module "Registers" en vervolgens op de knop "**Map**" boven uw lijst met behandelingen &#x20;
+Ga naar de module **Register voor gegevensverwerking** en klik op het tabblad **In kaart brengen** boven uw lijst met verwerkingsactiviteiten om de gegevenskaart van uw register te bekijken.
 
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Tabblad In kaart brengen van de module Register voor gegevensverwerking"><figcaption><p>Tabblad In kaart brengen boven de verwerkingsactiviteiten</p></figcaption></figure>
 
+U ziet dan de gegevenskaart van uw register.
 
-![Module "Registers"](<../../../.gitbook/assets/image (199).png>)
+<figure><img src="../../../.gitbook/assets/screenshot-2023-02-10-144614.png" alt="Voorbeeld van een gegevenskaart van het register"><figcaption><p>Voorbeeld van een kaart</p></figcaption></figure>
 
-![Tabblad kaarten boven verwerkingen](<../../../.gitbook/assets/Capture web_4-5-2022_101143_app.dastra.eu.jpeg>)
+Met de werkbalk boven de kaart kunt u:
 
-Hiermee kun je **de mapping van de registergegevens** bekijken.
+* in- en uitzoomen;
+* de kaart beperken tot bepaalde verwerkingsactiviteiten, tot een organisatorische eenheid of met filters;
+* de **Soorten** items kiezen die worden weergegeven;
+* in het menu **Acties** de zoom herstellen, naar volledig scherm overschakelen, de kaart afdrukken en **Donkere achtergrond**, **Legende knooppunten** of **Legende koppelingen** inschakelen.
 
-![Voorbeeld van mapping](<../../../.gitbook/assets/image (168).png>)
+Klik op een item van de kaart om de **Details van de knoop** in het rechterpaneel te tonen, met een knop **Bewerken** om het item te openen.
 
 {% hint style="info" %}
-Zodra de mapping wordt weergegeven, kan het worden aangepast door **dubbel te klikken** op de elementen om filters toe te voegen.
-
-Er is ook een zoekbalk beschikbaar voor extra filters.
+Zodra de kaart wordt weergegeven, voegt u een item toe aan de **Gefilterde knopen** en richt u de kaart erop met een dubbelklik. Met de zoekbalk van het paneel **Gefilterde knopen** zoekt u ook een item om het als filter toe te voegen. Klik op **Filters wissen** om opnieuw de hele kaart te tonen.
 {% endhint %}
 
-## Verder gaan
+## Verder lezen
 
 {% content-ref url="transfers-map.md" %}
-[bekijk de doorgiftenskaart.md](transfers-map.md)
+[De doorgiftekaart weergeven](transfers-map.md)
 {% endcontent-ref %}
