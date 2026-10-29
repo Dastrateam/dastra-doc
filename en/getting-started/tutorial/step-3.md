@@ -1,64 +1,66 @@
 # Step 3: Managing risks
 
-Risk management in Dastra can take several forms:&#x20;
+Risk management in Dastra can take several forms:
 
-* Data Protection Impact Analysis (DPI / DPA),&#x20;
-* Risk identification and assessment (using the Risk module),&#x20;
-* Audits.
+* the data protection impact assessment (DPIA),
+* risk identification and assessment (with the Risks module),
+* audits.
 
-## Impact analysis
+## The impact assessment
 
-If you have identified personal data processing operations that are likely to generate high risks for the rights and freedoms of data subjects, you will need to carry out a Data Protection Impact Assessment (DPIA) for each of these operations.
+If you have identified personal data processing activities likely to result in a high risk to the rights and freedoms of data subjects, you must carry out a [data protection impact assessment](https://www.cnil.fr/en/privacy-impact-assessment-pia) (DPIA) for each of them.
 
 {% hint style="info" %}
-Conducting a DPIA is mandatory for any processing likely to result in high risks to the rights and freedoms of data subjects (Article 35 of the GDPR)
+Carrying out a DPIA is mandatory for any processing likely to result in a high risk to the rights and freedoms of data subjects (Article 35 of the GDPR).
 {% endhint %}
 
-To help you determine whether your processing is likely to give rise to high risks, the following 9 criteria are defined in the G29 guidelines:&#x20;
+To help you determine whether your processing is likely to result in a high risk, the following 9 criteria are defined in the guidelines of the Article 29 Working Party:
 
-1. Evaluation or scoring;&#x20;
-2. Automated decision with legal effect or significant similar effect;&#x20;
-3. Systematic monitoring;&#x20;
-4. Sensitive or highly personal data;&#x20;
-5. Personal data processed on a large scale;&#x20;
-6. Cross-referencing of data sets;&#x20;
-7. Data concerning vulnerable persons;&#x20;
-8. Innovative use or application of new technological or organizational solutions;&#x20;
-9. Exclusion from a right, service or contract.
+1. evaluation or scoring;
+2. automated decision-making with legal or similarly significant effect;
+3. systematic monitoring;
+4. sensitive data or data of a highly personal nature;
+5. personal data processed on a large scale;
+6. matching or combining datasets;
+7. data concerning vulnerable data subjects;
+8. innovative use or application of new technological or organizational solutions;
+9. exclusion from a right, a service or a contract.
 
-These criteria are directly integrated into our data processing creation workflow, and you can indicate for each of your processes whether or not an PIA has been carried out on it.
+These criteria are built into the workflow for creating a processing activity: for each one, you indicate whether a DPIA must be carried out.
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-07-a-10.01.48.png" alt="Impact assessment step of a processing activity with the 9 criteria and the Generate assessment button" width="563"><figcaption><p>Example of a processing activity potentially requiring a DPIA</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-tutorial-1.png" alt="Impact assessment step of a processing activity, with the 9 criteria and the button to generate the assessment"><figcaption><p>Example of a processing activity that potentially requires a DPIA</p></figcaption></figure>
 
 ## Risk identification and assessment
 
-Dastra's Risk module enables you to manage risks at the level of your processes, your stakeholders (e.g. subcontractors) and your assets.&#x20;
+Dastra's Risks module lets you manage risks at the level of your processing activities, your stakeholders (for example processors) and your assets.
 
-The risk management methodology complies with standard information systems risk management requirements.&#x20;
+The risk management methodology complies with standard information system risk management requirements. It has four steps:
 
-There are 4 steps to follow:
+1. risk identification;
+2. risk assessment;
+3. risk response;
+4. risk monitoring.
 
-1. risk identification
-2. risk assessment
-3. risk response
-4. risk monitoring
-
-Generally speaking, risk is measured as follows:
+In general, risk is measured as follows:
 
 $$
 Risk = Probability * Impact
 $$
 
 {% content-ref url="../../features/risks/README.md" %}
-[risk-management](../../features/risks/README.md)
+[README.md](../../features/risks/README.md)
 {% endcontent-ref %}
 
 ## Audits
 
-For more information to take risk management, Dastra can also design audits, carry out campaigns and collect the results in the form of exportable audit reports.
+To go further in risk management, Dastra also lets you design audits, run campaigns and collect the results as an exportable audit report.
 
 {% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
+[README.md](../../features/questionnaires/README.md)
 {% endcontent-ref %}
 
-That's it, your risks have been identified and assessed! Then move on to step 4, task prioritization.
+Your risks are identified and assessed. Move on to step 4, task prioritization:
+
+{% content-ref url="step-4.md" %}
+[step-4.md](step-4.md)
+{% endcontent-ref %}

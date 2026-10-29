@@ -21,7 +21,7 @@ Si l'un des deux manque, l'élément n'apparaît pas, ou un message d'erreur d'a
 * Un rôle sans aucune permission cochée ne donne accès à rien.
 * Un utilisateur peut cumuler plusieurs rôles.
 
-Vérifiez dans **Réglages > Utilisateurs** (de l'espace de travail concerné) quels rôles sont attribués, puis dans **Configuration > Rôles et permissions** que le module voulu a bien au minimum la permission **Lecture**. Voir [Rôles et permissions](../../features/settings/roles.md).
+Vérifiez dans **Réglages espace de travail** > **Utilisateurs** (de l'espace de travail concerné) quels rôles sont attribués, puis dans **Configuration de l'organisation** > **Rôles et permissions** que le module voulu a bien au minimum la permission **Lecture**. Voir [Rôles et permissions](../../features/settings/roles.md).
 
 {% hint style="info" %}
 La permission **Lecture/Modification de ses propres éléments** ne donne accès qu'aux éléments qui sont attribués à l'utilisateur, pas à tous les éléments du module.
@@ -37,7 +37,7 @@ Les règles d'accès sont les suivantes :
 * Dès qu'on **définit des permissions** sur une unité (utilisateurs ou équipes autorisés), seuls les utilisateurs et les membres des équipes listés y ont accès.
 * Les unités **filles héritent** des permissions de l'unité parente (indiquées « Hérité »), tant qu'elles n'ont pas les leurs. Si une unité fille définit ses propres permissions, elles remplacent celles du parent.
 
-Pour consulter ou modifier ces règles, ouvrez **Réglages > Unités organisationnelles**, puis, dans le menu de l'unité concernée, choisissez **Définir les permissions pour…**. Cette action est réservée aux utilisateurs disposant du droit de gestion avancée.
+Pour consulter ou modifier ces règles, ouvrez **Réglages espace de travail** > **Unités organisationnelles**, puis, dans le menu de l'unité concernée, choisissez **Définir les permissions pour…**. Cette action est réservée aux utilisateurs disposant du droit de gestion avancée.
 
 {% hint style="warning" %}
 Cause fréquente : une équipe a été ajoutée sur une unité parente, et l'utilisateur n'appartient pas à cette équipe. Il perd alors l'accès à toutes les unités filles qui n'ont pas leurs propres permissions. Vérifiez à quelles [équipes](teams.md) il appartient.

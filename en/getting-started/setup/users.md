@@ -4,130 +4,133 @@ description: Find out how the Dastra invitation system works.
 
 # Invite users
 
-## Invite users
+## Invite a user
 
-You can invite someone to collaborate on your workspaces by inviting them to the organization to which the workspace belongs.&#x20;
+You can invite someone to collaborate on your workspaces by inviting them to the organization the workspace belongs to.
 
-You can invite users to your workspace by clicking on the "settings" button at the bottom left of the screen, then "access management / users" and finally "invite a user":
+1. In the left menu, click **Workspace settings**, then **Users**.
+2. Click **Invite user**.
+3. Enter the email address of the person. If this address is not already attached to the organization, click it to continue.
+4. Fill in the invitation form (see the table below), then click **Send an email invitation**.
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-01-a-16.30.07.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-1.png" alt="List of the workspace users with the Invite user button"><figcaption><p>The Users page of the workspace settings</p></figcaption></figure>
 
-Enter the e-mail address of the person you wish to invite in your Dastra space. If this address is not already attached to the organization, click on it to send an invitation link.
+<figure><img src="../../.gitbook/assets/getting-started-users-2.png" alt="User invitation form"><figcaption><p>The invitation form</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-01-a-16.35.11.png" alt="" width="563"><figcaption></figcaption></figure>
+| Field | Description |
+| --- | --- |
+| **First name(s)** and **Surname** | Identity of the invited person |
+| **UI language** | Language in which the person sees Dastra |
+| **Invite to all workspaces** | Switch: without it, you choose the workspace concerned |
+| **Select user's roles** | See [Managing roles and permissions](roles.md) |
+| **Select teams** | See [Create and assign teams](teams.md) |
+| **Default login method** | Local account (login and password) or SSO, when an SSO is configured |
+| **Welcome message** | Text added to the invitation email |
 
-A form appears. Enter your surname, first name, role and team, then click on the "Send invitation" button. The invited person will receive an e-mail containing a link which, once clicked, will enable that person to access the space, at this time a notification mail will be sent to you.
+You can also click **Invite a member** at the bottom of the left sidebar: it opens the same form.
 
-That's it, the user has been invited!
+The invited person receives an email with a link that gives access to the workspace. You receive a notification email when they click the link. The invitation link expires after 10 days.
 
-## Current invitations
+Instead of sending the email, you can click **Generate a link**: Dastra displays a link that you pass on to the person yourself.
 
-You can control current invitations in the "Users" section of the workspace settings.
+### Find the pending invitations
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-01-a-16.37.02.png" alt="" width="360"><figcaption></figcaption></figure>
+You manage pending invitations in the **Invitations** tab of the **Users** page.
 
-## Resend invitation link
+<figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Invitations tab with a pending invitation"><figcaption><p>The Invitations tab</p></figcaption></figure>
 
-If the invited user has not clicked on the invitation link and the link has expired (after 10 days), you can resend the invitation link by clicking on the "Resend invitation" button.
+### Resend an invitation link
 
-<figure><img src="../../.gitbook/assets/settings-users-invitations-expired.png" alt=""><figcaption></figcaption></figure>
+If the invited person has not clicked the link and it has expired, click **Resend** next to the invitation, then confirm.
 
-## Create and assign teams
+### Create and assign teams
 
-In Dastra, users are grouped into teams, which in turn are assigned to either legal entities or departments. In this way, roles and responsibilities can be finely managed.
+In Dastra, users are grouped into teams. Teams are then assigned to entities or departments, which lets you manage roles and responsibilities precisely. See [Create and assign teams](teams.md).
+
+### Default roles
+
+Dastra offers five base roles. Their detailed permissions are described in [Managing roles and permissions](roles.md).
+
+| Role | Identifier |
+| --- | --- |
+| Administrator | 1 |
+| Contributor | 2 |
+| Reader | 3 |
+| Auditor | 11000 |
+| Compliance tester | 11500 |
 
 {% hint style="info" %}
-There are several default roles in Dastra, representing different levels of authorization:&#x20;
-
-* **Administrator**: They can do everything authors can do, plus modify organization and space settings.&#x20;
-* **Contributor**: They can read and edit spaces. They can see drafts and changes not yet published. They can publish modifications. They cannot modify organization or space parameters.&#x20;
-* **Reader**: They can only visit spaces published in the organization. They cannot edit and cannot see changes that have not yet been published.
+**Organization owner and DPO are not roles.** To give an already invited user the **owner** status of the organization, see [How to add an organization owner?](faq.md#how-to-add-an-organization-owner). To **change the DPO**, see [How to change the DPO?](faq.md#how-to-change-the-dpo).
 {% endhint %}
 
-## Import a large user list
+## Import a large list of users
 
-If you wish to import a large user list (minimum 50 users), you can request the import of a large user list into the platform (maximum 200 users). To do this, you need to go through the Dastra teams.&#x20;
+To import a large list of users (50 or more), you go through the Dastra team. You can request the import of a list of up to 200 users, within the limit of the available users.
 
-The steps to follow:&#x20;
+**Steps to follow:**
 
-* Go to this link: [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users?q=\&page=1\&size=20)
-* Click on the button "Import"
+1. Open [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users), click the arrow to the right of the **Invite a user** button, then **Import**.
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-01-a-16.48.20.png" alt="" width="186"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-4.png" alt="Menu of the Invite a user button with the Export and Import entries"><figcaption><p>The import menu in the organization settings</p></figcaption></figure>
 
-* Create a file for each workspace in CSV format with the following columns separated by " , " (comma):
+2. Create one file per workspace, in CSV format, with the following columns separated by commas.
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-01-a-16.49.11.png" alt=""><figcaption></figcaption></figure>
+Required:
 
-Mandatory fields:
+* `Email`: the email address of the user;
+* `GivenName`: their first name;
+* `FamilyName`: their last name;
+* `Roles`: the identifiers of the roles in Dastra, separated by `|`;
+* `Teams`: the identifiers of the teams in Dastra, separated by `|`.
 
-* Email (user's email)&#x20;
-* GivenName (user's first name)&#x20;
-* FamilyName(user's last name)&#x20;
-* Roles (separated by |) > this corresponds to the roles in Dastra&#x20;
-* Teams (separated by |) > this corresponds to teams in Dastra
+Optional:
 
-Optional:&#x20;
+* `SSOConfigurationId`: the identifier of the SSO login, if applicable.
 
-* SSOConfigurationId > this corresponds to the SSO login identifier, if applicable
-
-Here is a sample file for you to download and fill in:
+Here is a sample file to download and fill in:
 
 {% file src="../../.gitbook/assets/sample-admin-users-import.csv" %}
 Import file template
 {% endfile %}
 
-**Role identifiers:**&#x20;
+**Role identifiers**
 
-By default: basic roles have the following identifiers:&#x20;
-
-* Administrator = 1&#x20;
-* Contributor = 2&#x20;
-* Reader = 3&#x20;
-
-For custom roles you've created, the identifier is visible from your browser's development console via the network tab.
+The base roles have the identifiers of the table above. For the custom roles you created, the identifier is visible in your browser's developer console, in the Network tab. Roles must be created before the import.
 
 {% hint style="info" %}
-To open the console on Chrome, use the following keyboard shortcut: Cmd + Option + C (on Mac) or Ctrl + Shift + J (on Windows)&#x20;
+To open the console in Chrome: Cmd + Option + C (Mac) or Ctrl + Shift + J (Windows).
 
-To open the console on Firefox, use the following keyboard shortcut: Cmd + Option + K (on Mac) or Ctrl + Shift + J (on Windows)&#x20;
+To open the console in Firefox: Cmd + Option + K (Mac) or Ctrl + Shift + J (Windows).
 
-To open the console, use the following keyboard shortcut: Cmd + Option + C&#x20;
-
-To open the console on Microsoft Edge, you can use the following shortcut: Ctrl + Shift + I
+To open the console in Microsoft Edge: Ctrl + Shift + I.
 {% endhint %}
 
-Please note that roles must be created in advance.
+**Team identifiers**
 
-<figure><img src="../../.gitbook/assets/integration-excel-power-automate-connector.png" alt=""><figcaption><p>Here the role identifier is number 115</p></figcaption></figure>
+Teams are identified by their identifier number. To find it, open the team in Dastra with the **Edit** button: the number is in the title of the window.
 
-**For team identifiers:**
+<figure><img src="../../.gitbook/assets/getting-started-users-7.png" alt="Team edit window whose title shows the identifier"><figcaption><p>In this example, the identifier of the Test team is 8019</p></figcaption></figure>
 
-These can be set when adding a team.
+Teams are not mandatory in Dastra. The teams you use in the file must be created beforehand in the workspace.
 
-<figure><img src="../../.gitbook/assets/settings-teams-edit-reference-modal.png" alt=""><figcaption></figcaption></figure>
+**SSO configuration identifier**
 
-{% hint style="info" %}
-Please note that teams must first be created in the workspace.
-{% endhint %}
+The `SSOConfigurationId` column is **optional**: fill it in only if you want the imported users to be attached to an SSO login already configured in your organization. Leave it empty for a standard email and password login.
 
-**For the SSO configuration identifier:**
+As for custom roles, this identifier is retrieved from your browser's **developer console**, in the **Network** tab:
 
-The `SSOConfigurationId` column is **optional**: fill it in only if you want the imported users to be attached to an SSO login already configured in your organisation. Leave it empty for a standard email and password login.
-
-As for custom roles, this identifier is retrieved from your browser's **development console**, via the **Network** tab:
-
-1. Open [the SSO logins configuration page](https://app.dastra.eu/general-settings/sso) (you must be the owner of the organisation).
-2. Open the development console (see the keyboard shortcuts above) and go to the **Network** tab.
+1. Open [the SSO logins configuration page](https://app.dastra.eu/general-settings/sso) (you must be the owner of the organization).
+2. Open the developer console (see the keyboard shortcuts above) and go to the **Network** tab.
 3. Click the pencil icon of the relevant SSO login to open the **Edit SSO login** window. This is a modal window: the page URL stays `https://app.dastra.eu/general-settings/sso`.
 4. In the **Network** tab, open the request triggered when the window opens and note the value of the `scheme` field (it is also the end of the request URL, after `ssoConfiguration/`): this is the value to enter in the `SSOConfigurationId` column.
 
 {% hint style="info" %}
-The SSO login must have been configured beforehand. See the [Single Sign On (SSO)](../../features/settings/sso/README.md) page.
+The SSO login must be configured beforehand. See [Single Sign On (SSO)](../../features/settings/sso/README.md).
 {% endhint %}
 
-Save your file in CSV UTF 8 format.
+3. Save your file in CSV UTF-8 format. In Excel, choose the file type **CSV UTF-8 (Comma delimited)**.
+4. Tell us in which workspace you want to import the users and drop the file in the upload interface.
 
-Once your file is ready, tell us in which workspace you wish to import users and upload the file via the upload interface.
+<figure><img src="../../.gitbook/assets/getting-started-users-6.png" alt="Upload interface for the user import file"><figcaption><p>The file upload interface</p></figcaption></figure>
 
-We'll receive your request and get back to you.
+The Dastra team receives your request and gets back to you.

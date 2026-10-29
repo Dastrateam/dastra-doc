@@ -8,74 +8,84 @@ description: Découvrez comment le système d'invitation de Dastra fonctionne.
 
 Vous pouvez amener quelqu'un à collaborer sur vos espaces en l'invitant dans l'organisation à laquelle appartient l'espace.
 
-Vous pouvez inviter des utilisateurs à votre espace de travail en cliquant sur le bouton "réglages" en bas à gauche de l'écran, puis "gestion d'accès / utilisateurs" et enfin "inviter un utilisateur":
+1. Dans le menu de gauche, cliquez sur **Réglages espace de travail**, puis sur **Utilisateurs**.
+2. Cliquez sur **Inviter un utilisateur**.
+3. Saisissez l'adresse e-mail de la personne. Si cette adresse n'est pas déjà rattachée à l'organisation, cliquez dessus pour continuer.
+4. Renseignez le formulaire d'invitation (voir le tableau ci-dessous), puis cliquez sur **Envoyer une invitation par e-mail**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-143642.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-1.png" alt="Liste des utilisateurs de l'espace de travail avec le bouton Inviter un utilisateur"><figcaption><p>La page Utilisateurs des réglages de l'espace de travail</p></figcaption></figure>
 
-Rentrez l'adresse email de la personne que vous souhaitez inviter dans votre espace Dastra. Si cette adresse n'est pas déjà rattachée à l'organisation, cliquez sur celle-ci pour lui envoyer un lien d'invitation.
+<figure><img src="../../.gitbook/assets/getting-started-users-2.png" alt="Formulaire d'invitation d'un utilisateur"><figcaption><p>Le formulaire d'invitation</p></figcaption></figure>
 
-![](../../.gitbook/assets/settings-users-invite-dialog.png)
+| Champ | Description |
+| --- | --- |
+| **Prénom** et **Nom** | Identité de la personne invitée |
+| **Langue de l'interface** | Langue dans laquelle la personne voit Dastra |
+| **Inviter dans tous les espaces de travail du compte** | Interrupteur : sans lui, vous choisissez l'espace de travail concerné |
+| **Sélectionner le ou les rôles de l'utilisateur** | Voir [Gérer les rôles et permissions](roles.md) |
+| **Sélectionner les équipes de l'utilisateur** | Voir [Créer puis affecter des équipes](teams.md) |
+| **Mode de connexion par défaut** | Compte local (login et mot de passe) ou SSO, quand un SSO est configuré |
+| **Message de bienvenue** | Texte ajouté à l'e-mail d'invitation |
 
-Un formulaire apparait. Rentrez son nom, son prénom, son rôle, son équipe puis cliquez sur le bouton "Envoyer une invitation". La personne invitée recevra un mail contenant un lien qui, une fois cliqué, permettra à cette personne d'accéder à l'espace.
+Vous pouvez aussi cliquer sur **Inviter un membre** en bas de la barre latérale gauche : le même formulaire s'ouvre.
 
-Un mail de notification vous sera envoyé lorsque la personne cliquera sur le lien.\
-\
-Ca y est, l'utilisateur a été invité !
+La personne invitée reçoit un e-mail contenant un lien qui lui donne accès à l'espace. Vous recevez un e-mail de notification quand elle clique sur le lien. Le lien d'invitation expire au bout de 10 jours.
+
+Au lieu d'envoyer l'e-mail, vous pouvez cliquer sur **Générer un lien d'invitation** : Dastra affiche un lien que vous transmettez vous-même à la personne.
 
 ### Retrouvez les invitations en cours
 
-Vous pouvez piloter les invitations en cours dans les réglages de l'espace de travail sur la section "Utilisateurs".
+Les invitations en cours se pilotent dans l'onglet **Invitations** de la page **Utilisateurs**.
 
-<figure><img src="../../.gitbook/assets/settings-users-nav-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Onglet Invitations avec une invitation en attente"><figcaption><p>L'onglet Invitations</p></figcaption></figure>
 
 ### Renvoyer un lien d'invitation
 
-Si l'utilisateur invité n'a pas cliqué sur le lien d'invitation et que le lien a expiré (au bout de 10 jours), vous pouvez lui renvoyer le lien d'invitation en cliquant sur le bouton "Renvoyer l'invitation".
+Si la personne invitée n'a pas cliqué sur le lien et que celui-ci a expiré, cliquez sur **Renvoyer** en face de l'invitation, puis confirmez.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-143758.png" alt=""><figcaption></figcaption></figure>
+### Créer puis affecter des équipes
 
-### Créer puis affectez des équipes
+Dans Dastra, les utilisateurs sont regroupés par équipe. Les équipes sont ensuite affectées à des entités ou à des départements, ce qui donne un contrôle précis des rôles et des responsabilités. Voir [Créer puis affecter des équipes](teams.md).
 
-Dans Dastra, les utilisateurs sont regroupés par équipe, qui elles-mêmes sont affectées soit à des entités juridiques, soit à des départements. Ainsi, il est possible de gérer finement les rôles et responsabilités.
+### Rôles proposés par défaut
+
+Dastra propose cinq rôles de base. Leurs permissions détaillées sont décrites dans [Gérer les rôles et permissions](roles.md).
+
+| Rôle | Identifiant |
+| --- | --- |
+| Administrateur | 1 |
+| Contributeur | 2 |
+| Lecteur | 3 |
+| Auditeur | 11000 |
+| Testeur de conformité | 11500 |
 
 {% hint style="info" %}
-Il existe plusieurs rôles proposés par défaut dans Dastra, représentant des niveaux d'autorisation:
-
-* **Administrateur**: Ils peuvent faire tout ce que les auteurs peuvent faire, en plus de modifier les paramètres d'organisation et d'espaces.
-* **Contributeur**: Ils peuvent lire et éditer des espaces. Ils peuvent voir les brouillons et les modifications qui ne sont pas encore publiés. Ils peuvent publier des modifications. Ils ne peuvent pas modifier les paramètres d'organisation ni les paramètres d'espaces.
-* **Lecteur**: peuvent uniquement visiter les espaces publiés dans l'organisation. Ils ne peuvent pas éditer et ne peuvent pas voir les modifications qui ne sont pas encore publiées.
-{% endhint %}
-
-{% hint style="info" %}
-**Propriétaire de l'organisation, DPO : ce ne sont pas des rôles.** Pour donner à un utilisateur déjà invité le statut de **propriétaire** de l'organisation, voir [Comment ajouter un propriétaire d'organisation ?](faq.md#comment-ajouter-un-proprietaire-dorganisation). Pour **changer de DPO**, voir [Comment changer de DPO ?](faq.md#comment-changer-de-dpo).
+**Propriétaire de l'organisation et DPO ne sont pas des rôles.** Pour donner à un utilisateur déjà invité le statut de **propriétaire** de l'organisation, voir [Comment ajouter un propriétaire d'organisation ?](faq.md#comment-ajouter-un-proprietaire-dorganisation). Pour **changer de DPO**, voir [Comment changer de DPO ?](faq.md#comment-changer-de-dpo).
 {% endhint %}
 
 ## Importer une grande liste d'utilisateurs
 
-Si vous souhaitez importer une grande liste d'utilisateurs (minimum 50 utilisateurs), vous pouvez demander l'import d'une grande liste d'utilisateurs dans la plateforme. Pour cela il faut passer par les équipes de Dastra.
-
-Vous pouvez demander l'import d'une liste jusqu'à 200 utilisateurs, dans la limite des utilisateurs disponibles.
+Pour importer une grande liste d'utilisateurs (minimum 50), vous passez par les équipes de Dastra. Vous pouvez demander l'import d'une liste jusqu'à 200 utilisateurs, dans la limite des utilisateurs disponibles.
 
 **Les étapes à suivre :**
 
-* rendez vous sur ce lien : [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users)
-* Cliquez sur le bouton "Importer"
+1. Ouvrez [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users) et cliquez sur la flèche à droite du bouton **Inviter un utilisateur**, puis sur **Importer**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-143932.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-4.png" alt="Menu du bouton Inviter un utilisateur avec les entrées Exporter et Importer"><figcaption><p>Le menu d'import dans les paramètres de l'organisation</p></figcaption></figure>
 
-* Créez un fichier par espace de travail au format CSV comprenant les colonnes suivantes séparées par des , (virgule) :
+2. Créez un fichier par espace de travail, au format CSV, avec les colonnes suivantes séparées par des virgules.
 
 De manière obligatoire :
 
-* Email (email de l'utilisateur)
-* GivenName (prénom de l'utilisateur)
-* FamilyName(nom de l'utilisateur)
-* Roles (séparé par des |) > cela correspond aux rôles dans Dastra
-* Teams (séparé par des |) > cela correspond aux équipes dans Dastra
+* `Email` : l'adresse e-mail de l'utilisateur ;
+* `GivenName` : son prénom ;
+* `FamilyName` : son nom ;
+* `Roles` : les identifiants des rôles dans Dastra, séparés par `|` ;
+* `Teams` : les identifiants des équipes dans Dastra, séparés par `|`.
 
 De manière optionnelle :
 
-* SSOConfigurationId > cela correspond à l'identifiant de login SSO le cas échéant
+* `SSOConfigurationId` : l'identifiant du login SSO, le cas échéant.
 
 Voici un modèle de fichier à télécharger et à remplir :
 
@@ -83,65 +93,44 @@ Voici un modèle de fichier à télécharger et à remplir :
 Modèle de fichier d'import
 {% endfile %}
 
-**S'agissant des identifiants de rôles :**
+**Identifiants des rôles**
 
-Par défaut : les rôles de base ont les identifiants suivants :
-
-* Administrateur = 1
-* Contributeur = 2
-* Lecteur = 3
-
-Pour les rôles personnalisés que vous avez créé, l'identifiant est visible depuis la console de développement de votre navigateur via l'onglet réseau.
+Les rôles de base ont les identifiants du tableau ci-dessus. Pour les rôles personnalisés que vous avez créés, l'identifiant est visible dans la console de développement de votre navigateur, dans l'onglet Réseau. Les rôles doivent être créés avant l'import.
 
 {% hint style="info" %}
-Pour ouvrir la console sur Chrome, utilisez le raccourci clavier suivant : Cmd + Option + C (sur Mac) ou Ctrl + Maj + J (sous Windows)
+Pour ouvrir la console sur Chrome : Cmd + Option + C (Mac) ou Ctrl + Maj + J (Windows).
 
-Pour ouvrir la console sur Firefox, utilisez le raccourci clavier suivant : Cmd + Option + K (sur Mac) ou Ctrl + Maj + J (sous Windows)
+Pour ouvrir la console sur Firefox : Cmd + Option + K (Mac) ou Ctrl + Maj + J (Windows).
 
-Pour ouvrir la console, vous pouvez utiliser le raccourci clavier suivant : Cmd + Option + C
-
-Pour ouvrir la console sur Microsoft Edge, vous pouvez utiliser le raccourci suivant : Ctrl + Maj + I
+Pour ouvrir la console sur Microsoft Edge : Ctrl + Maj + I.
 {% endhint %}
 
-Attention, les rôles doivent être créés préalablement.
+**Identifiants des équipes**
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-10-17-144450.png" alt=""><figcaption><p>Ici l'identifiant du rôle est le numéro 10</p></figcaption></figure>
+Les équipes sont identifiées par leur numéro d'identifiant. Pour le récupérer, ouvrez l'équipe dans Dastra avec le bouton **Modifier** : le numéro figure dans le titre de la fenêtre.
 
-**S'agissant des identifiants des équipes :**
+<figure><img src="../../.gitbook/assets/getting-started-users-7.png" alt="Fenêtre de modification d'une équipe dont le titre indique l'identifiant"><figcaption><p>Dans cet exemple, l'identifiant de l'équipe Test est 8019</p></figcaption></figure>
 
-Les équipes doivent être identifiées par des numéros d'identifiants qui sont récupérés en ouvrant une équipe dans Dastra (via le bouton "Modifier").
+Les équipes ne sont pas obligatoires dans Dastra. Celles que vous utilisez dans le fichier doivent être créées au préalable dans l'espace de travail.
 
-<figure><img src="../../.gitbook/assets/settings-teams-edit-dialog.png" alt=""><figcaption></figcaption></figure>
+**Identifiant de configuration SSO**
 
-Dans l'image suivante, l'identifiant de l'équipe Test est 8019.
+La colonne `SSOConfigurationId` est **optionnelle** : renseignez-la uniquement si vous souhaitez rattacher les utilisateurs importés à un login SSO déjà configuré dans votre organisation. Laissez-la vide pour une connexion classique par e-mail et mot de passe.
 
-NB : les équipes ne sont pas obligatoires dans Dastra.
-
-{% hint style="info" %}
-Attention, les équipes doivent être crées préalablement dans l'espace de travail
-{% endhint %}
-
-**S'agissant de l'identifiant de configuration SSO :**
-
-La colonne `SSOConfigurationId` est **optionnelle** : renseignez-la uniquement si vous souhaitez rattacher les utilisateurs importés à un login SSO déjà configuré dans votre organisation. Laissez-la vide pour une connexion classique par email et mot de passe.
-
-Comme pour les rôles personnalisés, cet identifiant se récupère depuis la **console de développement** de votre navigateur, via l'onglet **Réseau** :
+Comme pour les rôles personnalisés, cet identifiant se récupère depuis la **console de développement** de votre navigateur, dans l'onglet **Réseau** :
 
 1. Ouvrez [la page de configuration des logins SSO](https://app.dastra.eu/general-settings/sso) (vous devez être propriétaire de l'organisation).
-2. Ouvrez la console de développement (voir les raccourcis clavier ci-dessus) et placez-vous sur l'onglet **Réseau**.
+2. Ouvrez la console de développement (voir les raccourcis ci-dessus) et placez-vous sur l'onglet **Réseau**.
 3. Cliquez sur l'icône crayon du login SSO concerné pour ouvrir la fenêtre **Modifier le login SSO**. Il s'agit d'une fenêtre modale : l'URL de la page reste `https://app.dastra.eu/general-settings/sso`.
 4. Dans l'onglet **Réseau**, ouvrez la requête déclenchée à l'ouverture de la fenêtre et relevez la valeur du champ `scheme` (c'est aussi la fin de l'URL de la requête, après `ssoConfiguration/`) : c'est cette valeur à reporter dans la colonne `SSOConfigurationId`.
 
 {% hint style="info" %}
-Le login SSO doit avoir été configuré préalablement. Voir la page [Single Sign On (SSO)](../../features/settings/sso/README.md).
+Le login SSO doit avoir été configuré au préalable. Voir la page [Authentification unique (SSO)](../../features/settings/sso/README.md).
 {% endhint %}
 
-Enregistrez votre fichier au format CSV UTF 8
+3. Enregistrez votre fichier au format CSV UTF-8. Dans Excel, choisissez le type de fichier **CSV UTF-8 (délimité par des virgules)**.
+4. Indiquez dans quel espace de travail importer les utilisateurs et déposez le fichier dans l'interface de dépôt.
 
-<figure><img src="../../.gitbook/assets/settings-users-invite-csv-format.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-users-6.png" alt="Interface de dépôt du fichier d'import des utilisateurs"><figcaption><p>L'interface de dépôt du fichier</p></figcaption></figure>
 
-Une fois votre fichier prêt, indiquez nous dans quel espace de travail vous souhaitez importer les utilisateurs et déposez le fichier via l'interface de dépôt :
-
-<figure><img src="../../.gitbook/assets/settings-users-bulk-invite-upload.png" alt=""><figcaption></figcaption></figure>
-
-Nous recevrons la demande et nous reviendrons vers vous pour le suivi.
+L'équipe de Dastra reçoit votre demande et revient vers vous pour le suivi.

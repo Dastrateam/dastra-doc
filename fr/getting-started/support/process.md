@@ -1,38 +1,38 @@
 # Le processus de support client
 
-Le support client est un élément essentiel pour garantir la satisfaction de nos clients et maintenir une relation de confiance avec eux. Chez Dastra, nous nous engageons à fournir un support client de qualité, rapide et efficace. Cette page décrit le processus de support client que nous avons mis en place pour assurer une gestion optimale des demandes et des problèmes de nos clients.
+Cette page décrit le processus de support client de Dastra : comment les demandes sont catégorisées, priorisées et traitées, et comment suivre vos tickets.
 
-### Horaires de disponibilité de l'équipe support
+## Horaires de disponibilité de l'équipe support
 
-Notre équipe de support est disponible du lundi au vendredi, de 9h à 18h (GMT +2).
+L'équipe de support est disponible du lundi au vendredi, de 9h à 18h (GMT +2).
 
-### Catégorisation des requêtes
+## Catégorisation des demandes
 
-* **Rapports de Bugs :** Un rapport de bug est une description d'une erreur ou d'un dysfonctionnement rencontré dans le logiciel ou l'application. Les rapports de bugs nécessitent une réponse rapide et sont traités en priorité. Cela permet de résoudre rapidement les problèmes critiques qui affectent directement l'utilisation de l'application.
-* **Problèmes d'Utilisation :** Difficultés rencontrées lors de l'utilisation du logiciel qui nécessitent une assistance ou des clarifications.
-* **Questions du Chat :** Questions rapides posées via le chat bot.
-* **Autre Demande :** Toutes autres questions ou demandes supplémentaires requises par les utilisateurs sur l'utilisation du logiciel.
-* **Suggestions de Nouvelles Fonctionnalités :** Suggestions de nouvelles fonctionnalités au logiciel.
+* **Rapports de bugs** : description d'une erreur ou d'un dysfonctionnement rencontré dans l'application.
+* **Problèmes d'utilisation** : difficultés rencontrées lors de l'utilisation de l'application, qui nécessitent une assistance ou des clarifications.
+* **Questions du chat** : questions rapides posées via le chat intégré à l'application.
+* **Autres demandes** : toute autre question ou demande sur l'utilisation de l'application.
+* **Suggestions de nouvelles fonctionnalités** : propositions d'évolution de l'application.
 
-### Priorisation des Demandes
+## Priorisation des demandes
 
-* **Rapports de Bugs :** Les rapports de bugs sont considérés comme urgents, ils sont traités en priorité.
-* **Autres Demandes :** Les suggestions de nouvelles fonctionnalités, les problèmes d'utilisation, les questions du chat, et autres demandes ne sont pas prioritaires et sont traitées par ordre d'arrivée.
+* **Rapports de bugs** : ils sont considérés comme urgents et traités en priorité, pour résoudre rapidement les problèmes critiques qui affectent directement l'utilisation de l'application.
+* **Autres demandes** : les suggestions de nouvelles fonctionnalités, les problèmes d'utilisation, les questions du chat et les autres demandes ne sont pas prioritaires. Elles sont traitées par ordre d'arrivée.
 
-### Traitement des Demandes
+## Traitement des demandes
 
-* **Rapports de Bugs :** Les rapports de bugs sont d'abord testés par l'équipe support. Si le bug est reproduit, il est alors remonté à l'équipe de développement pour correction. Une fois le correctif déployé, le support technique recontacte le client pour l'informer du déploiement du correctif et s'assurer que le problème est résolu de son côté.
-* **Autres Demandes :** Les problèmes d'utilisation, les questions du chat, et autres demandes sont analysées et traitées directement par l'équipe support.
-* **Suggestions de Nouvelles Fonctionnalités :** Les suggestions de nouvelles fonctionnalités sont remontées à l'équipe produit. L'équipe produit analyse attentivement chaque suggestion de fonctionnalité. Cependant, en tant que logiciel SaaS, nous ne pouvons pas réaliser de développements spécifiques pour chaque client. Notre objectif est de fournir des améliorations et des fonctionnalités qui bénéficient à l'ensemble de notre communauté d'utilisateurs. Les suggestions sont priorisées en fonction de leur intérêt global par rapport au temps de développement nécessaire à leur réalisation et s'il existe un moyen de contournement simple pour aboutir au même résultat.
+* **Rapports de bugs** : l'équipe support teste d'abord le bug. S'il est reproduit, il est remonté à l'équipe de développement pour correction. Une fois le correctif déployé, le support technique recontacte le client pour l'en informer et s'assurer que le problème est résolu de son côté.
+* **Autres demandes** : les problèmes d'utilisation, les questions du chat et les autres demandes sont analysés et traités directement par l'équipe support.
+* **Suggestions de nouvelles fonctionnalités** : elles sont remontées à l'équipe produit, qui analyse chaque suggestion. Dastra étant un logiciel SaaS, l'équipe ne réalise pas de développements spécifiques pour chaque client : elle vise des améliorations qui bénéficient à l'ensemble de la communauté d'utilisateurs. Les suggestions sont priorisées selon leur intérêt global, le temps de développement nécessaire et l'existence d'un moyen de contournement simple pour obtenir le même résultat.
 
-### Suivi des Tickets par les Clients
+## Suivi des tickets par les clients
 
-Les clients ont la possibilité de suivre l'état d'avancement de leurs tickets directement depuis l'onglet "Support" dans les réglages de l'organisation au sein de l'application Dastra. Cette fonctionnalité permet de consulter en temps réel les mises à jour relatives à leurs tickets, de voir s’ils sont en cours de traitement, résolus ou en attente d'autres actions. Cela garantit une transparence totale et une meilleure gestion des attentes du client.
+Vous pouvez suivre l'avancement de vos tickets depuis l'onglet **Support** des réglages de l'organisation dans Dastra. Vous y consultez les mises à jour de chaque ticket et voyez s'il est en cours de traitement, résolu ou en attente d'autres actions.
 
-### Enquête de Satisfaction Client
+## Enquête de satisfaction
 
 Une enquête de satisfaction est envoyée 7 jours après la fermeture d'une demande.
 
-Le processus de support client chez Dastra est conçu pour être efficace et centré sur le client. Notre objectif est de résoudre les problèmes rapidement tout en assurant une communication transparente avec nos clients. En suivant ce processus, nous garantissons un support de qualité et renforçons la satisfaction et la fidélité de nos clients.
+## Amélioration continue
 
-De plus, grâce à un engagement constant dans l'amélioration continue, nous analysons régulièrement les retours et les tendances pour adapter et optimiser notre service ainsi que notre produit. Cela nous permet non seulement de répondre aux besoins actuels de nos clients, mais aussi d'anticiper leurs futures attentes et de prévenir les problèmes avant qu'ils ne surviennent.
+L'équipe analyse régulièrement les retours et les tendances pour adapter le service et le produit.
