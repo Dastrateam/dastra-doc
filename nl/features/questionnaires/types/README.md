@@ -9,7 +9,7 @@ Dastra biedt een bibliotheek met geautomatiseerde vragenlijstsjablonen voor spec
 ## Beschikbare soorten
 
 {% content-ref url="dpia.md" %}
-[Effectbeoordeling (PIA / DPIA)](dpia.md)
+[PIA / DPIA](dpia.md)
 {% endcontent-ref %}
 
 {% content-ref url="tia.md" %}

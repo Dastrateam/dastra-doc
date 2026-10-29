@@ -1,183 +1,188 @@
 ---
 description: >-
-  Cette page vous détaille le fonctionnement de l'api de gestion du
-  consentement. Cette API peut-être intégrée facilement dans les applications
-  mobiles natives.
+  Cette page décrit l'API de gestion du consentement. Vous pouvez l'utiliser
+  dans les applications mobiles natives.
 ---
 
 # Applications natives
 
-## Récupérer la configuration du widget
+Une application native n'affiche pas la bannière web : elle récupère la configuration de la bannière, affiche son propre écran de consentement, puis envoie les choix de l'utilisateur à Dastra. Les deux appels utilisent la clé d'API publique.
 
-<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/cookies/public/cookies-widget-settings/:id?key=:key`
+{% hint style="info" %}
+Selon la région d'hébergement de votre organisation, l'adresse de l'API change (`api-bleu.dastra.eu` au lieu de `api.dastra.eu`). Utilisez celle de votre organisation.
+{% endhint %}
 
-Cet endpoint permet de récupérer l'intégralité de la configuration du widget
+Les requêtes sans en-tête `Origin`, comme celles d'une application native, sont acceptées sans contrôle des **Urls autorisées (CORS)**.
 
-#### Path Parameters
+## Récupérer la configuration de la bannière
 
-| Name | Type   | Description                    |
-| ---- | ------ | ------------------------------ |
-| id   | number | ID of the widget configuration |
+<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/cookies/public/cookies-widget-settings/{id}?key={key}`
 
-#### Query Parameters
+Cet endpoint renvoie la configuration complète de la bannière.
 
-| Name    | Type   | Description                                        |
-| ------- | ------ | -------------------------------------------------- |
-| culture | string | The locale of the widget configuration (en, fr...) |
-| key     | string | The public api key provided                        |
+#### Paramètres de chemin
 
-{% tabs %}
-{% tab title="200 Configuration du widget récupérée" %}
-```
+| Nom | Type | Description |
+| --- | --- | --- |
+| `id` | number | Identifiant de la bannière. |
+
+#### Paramètres de requête
+
+| Nom | Type | Description |
+| --- | --- | --- |
+| `key` | string | La clé d'API publique. |
+| `culture` | string | La langue de la configuration (`en`, `fr`, etc.). À défaut, Dastra utilise l'en-tête `Accept-Language`, puis la première langue de la bannière. |
+| `debug` | boolean | Si la valeur est `true`, aucun évènement de visite n'est enregistré. |
+
+Exemple de réponse `200`. Les textes de la bannière et certains champs sont abrégés ; le contenu dépend de votre configuration.
+
+```json
 {
   "translation": {
     "id": "35dddc1a-3ceb-49a8-a8d2-fc343fdb56a3",
-    "lang": "fr",
-    "order": 0,
-    "buttonBackLabel": "Retour",
-    "buttonAcceptLabel": "Accepter tout",
-    "buttonSettingsLabel": "Personnaliser",
-    "buttonViewPurposeLabel": "Sélectionner les finalités",
-    "buttonConfirmLabel": "Enregistrer sélection",
-    "buttonAcceptAllLabel": "Tout accepter",
-    "buttonLaterLabel": "Tout refuser",
-    "buttonViewMoreLabel": "Voir la liste",
-    "noticeUrlButtonLabel": "Lire notre politique des cookies",
-    "startupTitle": "Nous utilisons les cookies",
-    "startupDisclaimer": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services",
-    "innerTitle": "Voici nos services qui utilisent les cookies",
-    "innerDisclaimer": "Dans cet écran de configuration, vous pouvez choisir les cookies que vous autorisez lors de votre navigation",
-    "categoryNecessaryLabel": "Cookies nécessaires",
-    "categoryNecessaryExcerpt": "Les cookies nécessaires contribuent à rendre un site Web utilisable en activant des fonctions de base comme la navigation de page et l'accès aux zones sécurisées du site Web. Le site Web ne peut pas fonctionner correctement sans ces cookies.",
-    "categoryNecessaryDescription": "Les cookies nécessaires contribuent à rendre un site Web utilisable en activant des fonctions de base comme la navigation de page et l'accès aux zones sécurisées du site Web. Le site Web ne peut pas fonctionner correctement sans ces cookies.",
-    "categoryPreferenceLabel": "Préférences",
-    "categoryPreferenceExcerpt": "Les cookies de préférences permettent à un site Web de retenir des informations qui modifient la manière dont le site se comporte ou s’affiche, comme votre langue préférée ou la région dans laquelle vous vous situez.",
-    "categoryPreferenceDescription": "Les cookies de préférences permettent à un site Web de retenir des informations qui modifient la manière dont le site se comporte ou s’affiche, comme votre langue préférée ou la région dans laquelle vous vous situez.",
-    "categoryAnalyticalLabel": "Statistiques",
-    "categoryAnalyticalExcerpt": "Les cookies statistiques aident les propriétaires du site Web, par la collecte et la communication d'informations de manière anonyme, à comprendre comment les visiteurs interagissent avec les sites Web.",
-    "categoryAnalyticalDescription": "Les cookies statistiques aident les propriétaires du site Web, par la collecte et la communication d'informations de manière anonyme, à comprendre comment les visiteurs interagissent avec les sites Web.",
+    "lang": "en",
+    "startupTitle": "We use cookies",
+    "startupDisclaimer": "Cookies let us personalize content and ads, provide social media features and analyze our traffic.",
+    "buttonAcceptLabel": "Accept all",
+    "buttonSettingsLabel": "Customize",
+    "buttonLaterLabel": "Refuse all",
+    "buttonConfirmLabel": "Save my choices",
+    "innerTitle": "These are our services that use cookies",
+    "categoryNecessaryLabel": "Strictly necessary",
+    "categoryPreferenceLabel": "Preferences",
+    "categoryAnalyticalLabel": "Analytics",
     "categoryMarketingLabel": "Marketing",
-    "categoryMarketingExcerpt": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
-    "categoryMarketingDescription": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
-    "categoryOtherLabel": "Autres cookies",
-    "categoryOtherExcerpt": "Ecrire une description courte ici",
-    "categoryOtherDescription": "Ecrire une description longue ici",
-    "categoryIABLabel": "Services publicitaires de l'IAB",
-    "categoryIABExcerpt": "Ces services utilisent les cookies principalement à des fin d'amélioration de la qualité des messages publicitaires.",
-    "categoryIABDescription": "Ces services utilisent les cookies principalement à des fin d'amélioration de la qualité des messages publicitaires.",
-    "cookieDeclaration": null,
-    "buttonYes": "Oui",
-    "buttonNo": "Non",
-    "viewProof": "Afficher la preuve du consentement",
-    "successMessage": "Vos préférences ont été sauvegardées ! Merci ! "
+    "successMessage": "Your preferences have been saved."
   },
   "groups": [
     {
-      "label": "Marketing",
-      "excerpt": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
-      "purpose": 3,
+      "label": "Analytics",
+      "excerpt": "Analytics cookies help us understand how visitors use the site.",
+      "purpose": "Analytical",
       "services": [
         {
           "id": "e213aca4-79b7-4b93-2bad-08d897969898",
-          "name": "yrdy",
-          "slug": "yrdy",
-          "domain": "www.dastra.eu",
-          "logoUrl": "https://api.dastra.eu/v1/favicon/www.dastra.eu",
-          "privacyPolicyUrl": null,
+          "name": "Google Analytics",
+          "slug": "google-analytics",
+          "domain": "analytics.google.com",
+          "logoUrl": "https://api.dastra.eu/v1/favicon/analytics.google.com",
+          "privacyPolicyUrl": "https://policies.google.com/privacy",
           "defaultConsent": false,
           "requiredConsent": true,
-          "purpose": 3,
+          "purpose": "Analytical",
           "description": null,
           "cookies": [
             {
               "id": "de529978-3ae0-496d-bf25-daac9d7230c7",
               "serviceId": null,
-              "name": "yrdy",
+              "name": "_ga",
               "description": null,
               "value": null,
+              "thirdParty": false,
               "path": null,
               "domain": null,
-              "expiryDays": null
+              "expiryDays": 400
             }
           ],
-          "lang": "fr"
+          "lang": "en",
+          "consentModeV2Permissions": []
         }
       ],
-      "description": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
+      "description": "Analytics cookies help us understand how visitors use the site.",
       "requiredConsent": true,
       "defaultConsent": false
     }
   ],
-  "lang": "fr",
+  "lang": "en",
+  "availableLocales": ["en", "fr"],
+  "id": 1,
   "versionKey": "36df80ee-235c-4485-b9e2-f28f5568f572",
-  "lastVersionGeneration": "2020-12-03T14:28:55.5450603",
-  "buttonLogoUrl": null,
+  "lastVersionGeneration": "2026-10-12T14:28:55Z",
+  "label": "Example banner",
   "enabled": true,
-  "label": "www.dastra.eu",
-  "displayLogo": true,
-  "hideCopyright": false,
-  "showFixedButton": true,
-  "developerMode": true,
+  "disableBanner": false,
   "saveConsentProof": true,
-  "isValid": false,
+  "developerMode": false,
   "position": "BottomLeft",
   "timerTrigger": 0,
   "scrollTrigger": 0,
+  "showFixedButton": true,
+  "showCloseButton": true,
+  "continueWithoutAcceptButton": false,
+  "enableGlobalPrivacyControl": false,
+  "hideCopyright": false,
+  "buttonLayout": "Circle",
+  "buttonLogoUrl": null,
   "autoGeneratedCookieNotice": false,
   "cookieNoticeUrl": "",
   "bgColor": "#FFFFFF",
-  "colorTitle": "#2E4058",
-  "colorBtn": "#686868",
-  "colorText": "#2E4058",
-  "colorPrimary": "#E7630A",
-  "colorSecondary": "#48ba61",
+  "colorTitle": "#0A153B",
+  "colorBtn": "#687c77",
+  "colorText": "#0A153B",
+  "colorPrimary": "#EF4A2A",
+  "colorSecondary": "#687c77",
   "customCSS": "",
-  "enableIAB": false,
-  "tcfVersion": 1,
   "fontFamily": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  "dateCreation": "2020-12-03T14:20:19.3703522",
-  "dateUpdate": "2021-03-15T12:32:09.848664",
-  "consentCookieExpiryTime": 180,
+  "consentStorageMode": "Cookies",
   "consentCookieName": null,
-  "id": 1,
-  "tenant": null,
-  "tenantId": 1
+  "consentCookieDomain": null,
+  "consentCookieExpiryTime": 180
 }
 ```
-{% endtab %}
-{% endtabs %}
 
-## Enregistrement des consentements
+La réponse correspond au modèle `CookieWidgetPublicDto`. Une réponse `400` indique une origine non autorisée, une bannière désactivée ou un abonnement expiré.
 
-<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/cookies/public/collect/:id?key=:key`
+## Enregistrer les consentements
 
-Cette méthode permet de collecter les consentements aux cookies
+<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/cookies/public/collect/{id}?key={key}`
 
-#### Path Parameters
+Cette méthode collecte les consentements aux cookies.
 
-| Name | Type   | Description                    |
-| ---- | ------ | ------------------------------ |
-| id   | string | ID of the widget configuration |
+#### Paramètres de chemin
 
-#### Query Parameters
+| Nom | Type | Description |
+| --- | --- | --- |
+| `id` | number | Identifiant de la bannière. |
 
-| Name | Type   | Description        |
-| ---- | ------ | ------------------ |
-| key  | string | The public api key |
+#### Paramètres de requête
 
-#### Request Body
+| Nom | Type | Description |
+| --- | --- | --- |
+| `key` | string | La clé d'API publique. |
 
-| Name      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| --------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| consents  | object | <p>La liste des consentements de l'utilisateur<br><br><code>{</code><br><code>"cookieConsents":</code><br><code>[</code><br><code>{</code><br><code>"consent":true, // True if consented, false if refused</code><br><code>"id":"e213aca4-79b7-4b93-2bad-08d897969898", // Cookies id</code><br><code>"date":"2021-03-15T14:00:04.133Z",</code><br><code>"name":"yrdy",</code><br><code>"slug":"yrdy",</code><br><code>"purpose":3</code><br><code>}</code><br><code>],</code><br><code>"lang":"fr-FR",</code><br><code>"consentId":"6f47576e-5a0c-4219-8efe-331e72bab73a",</code><br><code>"date":1615809009744</code><br><code>}</code><br><br><br><br><br><br><br><br><br><br></p> |
-| type      | string | CookieEventType Visit,Quit,Consents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| consentId | string | The current consent Id (If any collected before)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| userId    | string | Identifiant pseudonyme de l'utilisateur dans vos systèmes (facultatif), voir [Identification des utilisateurs](../identification.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+#### Corps de la requête
 
-{% tabs %}
-{% tab title="200 Return the id of the consent collected" %}
+| Nom | Type | Description |
+| --- | --- | --- |
+| `type` | string | Le type d'évènement : `Visit`, `Quit` ou `Consents`. |
+| `consents` | object | La liste des consentements de l'utilisateur (voir l'exemple ci-dessous). |
+| `consentId` | string | L'identifiant du consentement courant, s'il en existe déjà un. |
+| `referrer` | string | L'adresse de la page ou l'écran d'où provient l'évènement. |
+| `userId` | string | Identifiant pseudonyme de l'utilisateur dans vos systèmes (facultatif). Voir [Identification des utilisateurs](../identification.md). |
+
+Exemple de corps :
+
+```json
+{
+  "type": "Consents",
+  "referrer": "my-app://settings/privacy",
+  "userId": "{your_pseudonymous_user_id}",
+  "consents": {
+    "consentId": "6f47576e-5a0c-4219-8efe-331e72bab73a",
+    "lang": "fr-FR",
+    "versionKey": "36df80ee-235c-4485-b9e2-f28f5568f572",
+    "cookieConsents": [
+      {
+        "id": "e213aca4-79b7-4b93-2bad-08d897969898",
+        "name": "Google Analytics",
+        "slug": "google-analytics",
+        "consent": true,
+        "date": "2026-10-12T14:00:04.133Z",
+        "purpose": "Analytical"
+      }
+    ]
+  }
+}
 ```
-140f213b-de17-4572-99a7-5075ccbcbbec
-```
-{% endtab %}
-{% endtabs %}
+
+La réponse `200` contient l'identifiant du consentement collecté, par exemple `140f213b-de17-4572-99a7-5075ccbcbbec`. Conservez-le dans l'application pour les appels suivants : c'est l'identifiant de la preuve de consentement. Les évènements envoyés par des robots sont ignorés, et la preuve n'est enregistrée que si l'option **Sauvegarde de la preuve de consentement** est active.

@@ -1,15 +1,14 @@
 ---
 description: >-
-  Dastra est nativement intégré à Google Tag Manager. Cet article vous
-  expliquera comment intégrer le blocage ou le déblocage de tags en fonction des
-  consentements de l'utilisateur à l'aide de GTM.
+  Dastra is natively integrated with Google Tag Manager. This article explains
+  how to block or unblock tags according to the user's consent using GTM.
 ---
 
 # Google Tag Manager
 
 ## Introduction
 
-Google Tag Manager is a powerful tagging tool that centralizes all the code snippets you want to integrate into your website (Dastra can be one of them!).\
+Google Tag Manager is a tagging tool that centralizes all the code snippets you want to integrate into your website (Dastra can be one of them).\
 This tagging solution is very effective for implementing effective cookie consent because it does not require redeploying the entire website each time tags are modified.
 
 ## Google Consent Mode V2
@@ -24,9 +23,8 @@ Dastra natively supports **Google Consent Mode V2**. The prerequisites, how to e
 
 The following events are automatically sent to Google's dataLayer:
 
-| Name                              | Signification                                                                          |
+| Name                              | Meaning                                                                                |
 | --------------------------------- | -------------------------------------------------------------------------------------- |
-| Name                              | Signification                                                                          |
 | dastra:consent:{your-vendor-name} | This event is sent when the user has accepted cookies from this provider.              |
 | dastra:refused:{your-vendor-name} | This event is triggered when the user has not consented to cookies from this provider. |
 
@@ -34,17 +32,22 @@ You can therefore trigger the tags corresponding to the different providers conf
 
 ## Example
 
-In this example, we will trigger the Google Optimize tag when the user gives their consent.\
-In your GTM container, create an event trigger on the dataLayer named “dastra:consent:google-optimize.”\
-The Google Optimize tag will then only trigger on this event. Here is what it looks like in the GTM interface:
+In this example, we trigger the Google Ads conversion tag when the visitor consents to the Google Ads service.
 
-<figure><img src="../../../../.gitbook/assets/cookies-gtm-google-optimize-tag.png" alt=""><figcaption></figcaption></figure>
+1. In your GTM container, create a trigger of type **Custom Event** whose event name is `dastra:consent:google-ads`.
+2. Attach this trigger to your Google Ads conversion tag.
+
+The tag then fires only on this event.
 
 ## Specific case of “blocking triggers”
 
 In some cases, you need to disable certain tags if consent has not been given. Since the “dastra:consent:\<service name>” event only runs when a page is displayed, this may not be sufficient in some cases if you use different interaction triggers on the page, such as clicks on page elements, scroll heights, etc.
 
-In this case, it is necessary to configure certain settings in order to directly **read the consent value stored in the consent cookie.**
+In this case, it is necessary to configure certain settings to directly **read the consent value stored in the consent cookie.**
+
+{% hint style="info" %}
+This method works only with cookie storage: it does not suit the case where the **Enable localStorage store for consent cookies** option is enabled. If you set a custom cookie name in **Cookie consent name (Default to consent-eu)**, use it in the variable.
+{% endhint %}
 
 ### 1. Create a variable called “DastraConsents”
 
@@ -57,13 +60,13 @@ In this case, it is necessary to configure certain settings in order to directly
 Name your tag “DastraConsents,” for example. In the cookie name field, enter the name of the consent cookie (default: **consent-eu**).\
 Remember to **select the “URI-decode cookie” option**.
 
-<figure><img src="../../../../.gitbook/assets/audit-questionnaire-icone-repondue-vert.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-variable-consent-cookie.png" alt=""><figcaption></figcaption></figure>
 
 #### Then configure your trigger as follows:
 
 In this case, our tag fires if the scroll depth on the page is > 20%. We want this tag to fire only if the Google Analytics service has been authorized by the user. Here's how to configure the tag trigger.
 
-<figure><img src="../../../../.gitbook/assets/audit-questionnaire-icone-repondue-section-incomplete.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-trigger-scroll-depth.png" alt=""><figcaption></figcaption></figure>
 
 In the “Some Pages” section, if you want to activate the tag only when consent has been given to use a service, enter the formula **DastraConsents contains “{serviceName}”:true** (example “crisp”:true) without spaces
 
@@ -76,7 +79,7 @@ If you want to trigger the tag in the event of a refusal, enter the formula:
 If you have many different triggers for the same tag, it is also possible to create an exception in this way.\
 Example of a tag with multiple triggers:
 
-<figure><img src="../../../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue-section-complete.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-google-ads-conversion.png" alt=""><figcaption></figcaption></figure>
 
 In this case, we want to add an exception: if the Google Ads tag (google-ads) is not accepted, we do not want the tag to trigger.
 
@@ -94,11 +97,11 @@ If you also want to disable the default tag even if the user has not clicked on 
 **DastraConsents Does not contain “google-ads”:true**
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/trust-center-create-config-form.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-trigger-google-ads-refused.png" alt=""><figcaption></figcaption></figure>
 
 Click “Save.” You should have this:
 
-<figure><img src="../../../../.gitbook/assets/trust-center-questionnaires-config-empty.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-ads-triggering.png" alt=""><figcaption></figcaption></figure>
 
 Save your changes and you should see that your tags are disabled on the relevant pages if consent is not given.
 
@@ -116,7 +119,7 @@ In some situations, it is possible that the tags are still active.
 
 To prevent this type of problem, it is possible to force the page to refresh, which completely resets all markers or JavaScript SDKs loaded by the services.
 
-Simply insert the following code (below the Dastra widget initialization tag if possible)
+Insert the following code (below the Dastra widget initialization tag if possible)
 
 ```markup
 <script>

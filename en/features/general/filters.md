@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how to refine the display of your reports in the data tables of all
-  modules with advanced filters
+  Learn how to refine the display of the data tables of all modules with
+  advanced filters, custom columns and custom views.
 ---
 
 # Advanced filters
@@ -12,108 +12,92 @@ description: >-
 
 Advanced filters let you filter your data on almost any field of your entities.
 
-* Go to a Dastra module (for example, the data subject rights module)
-* Click the "Filters" button at the top right of the data table.
+1. Go to a Dastra module, for example the data subject requests module.
+2. Click the **Filters** button at the top right of the data table.
+3. In the window that opens, apply one of the most commonly used standard filters: the table updates automatically.
 
-<figure><img src="../../.gitbook/assets/dsr-list-filters-arrow.png" alt=""><figcaption></figcaption></figure>
-
-* A small window appears, presenting you with a list of the most commonly used standard filters; by applying one of these filters, the table updates automatically.
-
-<figure><img src="../../.gitbook/assets/dsr-filters-panel-expanded.png" alt=""><figcaption><p><em><mark style="color:$info;">Advanced filter combo for data subject requests</mark></em></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-filters-1.png" alt="Filters window of a list with the standard filters and the Add filter button"><figcaption><p>The standard filters of a data subject requests list</p></figcaption></figure>
 
 {% hint style="info" %}
-The combination of these filters is cumulative.
+Filters add up.
 
-_For example: if I filter on one or two tags "complex" and "pending" + I select an organizational unit "Contoso": it will show me all rows that contain both tags "complex" and "pending" **and** that are in the organizational unit "Contoso"._
+_For example: if you filter on the tags "complex" and "pending" and on the organizational unit "Contoso", the table shows the rows that have both tags **and** that are in the organizational unit "Contoso"._
 {% endhint %}
 
-* If you don't find any filters that suit you, you can click the "Add a filter" button. There you will be able to edit the combination of filters that best fits your needs.
+4. If no standard filter fits, click **Add filter** to build the combination of conditions that suits your need.
 
-<figure><img src="../../.gitbook/assets/settings-sso-adfs-relying-party-trust-menu.png" alt=""><figcaption></figcaption></figure>
+Every change applies immediately. The **Reset filters** button puts the table back in its initial state.
 
-By default, Dastra persists the filters you select, which means that if you change pages or refresh your browser, the filters are retained. These filters are specific to your browser and your workspace (they are stored in **LocalStorage**).
-
-
+Dastra keeps the filters you select: if you change pages or refresh your browser, they are retained. They are specific to your browser, to the list and to your workspace, and are stored in your browser's **LocalStorage**.
 
 ## Customize columns
 
-The **"Customize columns"** button, on the right of each list header, lets you choose which columns are displayed (**Visible columns** and **Hidden columns**), including custom fields, and set their order.
+The **Customize columns** button, in the last cell of each list header, lets you choose which columns are displayed (**Visible columns** and **Hidden columns**), including custom fields, and set their order. Click **Apply** to confirm, or **Reset** to go back to the original selection.
 
-You can also reorder columns directly from the list header: when you hover over a column header, a drag handle appears to the left of the column name. Drag the column to the desired position: the column order is updated immediately and is saved in your display preferences. Some fixed columns cannot be moved.
+You can also reorder columns directly from the list header: when you hover over a column header, a drag handle appears to the left of the column name. Drag the column to the desired position: the new order applies immediately. Some fixed columns cannot be moved.
 
-Hovering over a column header shows the additional explanation of the column, when one exists.
+Hovering over a column header shows the additional explanation of the column, when one exists. Your column selection is saved on your account.
 
 ## Custom views
 
-You can save the current state of your filters (and your column selection) as a **named view**, then switch between your views with a single click from the toolbar of each list.
+A **custom view** saves the current state of your filters and your column selection under a name. The view selector is at the top left of each list: it shows **Default view**, or the name of the active view followed by an asterisk when you changed it without saving.
 
 To create a view:
 
 1. Apply the desired filters and column selection.
-2. Click the **"Save"** button in the toolbar.
-3. Give your view a name and confirm.
+2. Open the view selector and click **Save custom view**.
+3. Enter the **Name of your custom view** and confirm.
 
-The view then appears directly in the toolbar of the relevant section — accessible with one click, without going back through the "Filters" panel.
+<figure><img src="../../.gitbook/assets/general-filters-2.png" alt="Custom view selector open with Default view, My views, Shared views and Save custom view"><figcaption><p>The custom view selector</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-view-archived-tasks-toggle.png" alt=""><figcaption></figcaption></figure>
+The selector lists **Default view**, which resets filters and columns, your own views under **My views** and your colleagues' views under **Shared views**. Hover over a view to edit it (pencil) or delete it (trash). When the active view has been modified, the **Update** entry replaces it with the current filters and columns.
 
-You can **share a view** with the other users of your workspace. Shared views appear under the **"Shared views"** section in the toolbar.
+To **share a view** with the other users of your workspace, turn on **Share this custom view with other users** when you save it. The option is only offered to users with advanced access, who are also the only ones who can edit or delete a shared view.
 
-<figure><img src="../../.gitbook/assets/dsr-update-custom-view-dialog.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-filters-3.png" alt="Save custom view window with the view name and the sharing option"><figcaption><p>Saving a custom view, with the sharing option</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-tasks-burnup-chart.png" alt=""><figcaption></figcaption></figure>
-
-This feature is available in all sections listing objects: data subject rights requests, record of processing activities, assets, contracts, AI systems, data breaches…
+Custom views are available in most lists: data subject requests, record of processing activities, assets, contracts, AI systems, data breaches, etc.
 
 ## Condition groups
 
-Advanced filters support **condition groups**, allowing you to build complex filtering logic combining **AND** and **OR** operators within a single view.
+Advanced filters let you combine conditions with the **And** and **Or** operators within a single filter.
 
 ### Principle
 
-Without groups, all conditions in a filter are combined with an implicit **AND**: the result must satisfy _all_ conditions simultaneously.
-
-With condition groups, you can create independent blocks. Within a group, conditions are linked by **AND**. Between groups, the logic is **OR**: the result must satisfy the conditions of _at least one_ group.
+By default, all the conditions of a filter are linked by **And**: a row must satisfy _all_ the conditions. As soon as a group contains at least two items (conditions or groups), an **And** button appears on its border: click it to change it to **Or**, and back. Each group has its own operator, and so does the filter as a whole.
 
 Example:
 
 ```
-Group 1 : status = "In progress" AND priority = "High"
+Group 1: status = "In progress" AND priority = "High"
 OR
-Group 2 : status = "Overdue"
+Group 2: status = "Overdue"
 ```
 
-This filter displays all in-progress, high-priority requests, **and also** all overdue ones — regardless of their priority.
+This filter shows all in-progress, high-priority requests, and also all overdue ones, whatever their priority.
 
-### Create a condition group
+### Create a group of conditions
 
-1. Open the filter panel and click **"Add a filter"**.
-2. In the filter editor, click **"Add a group"**.
-3. Choose the group operator (**AND** or **OR**) then add your conditions.
-4. For more complex rules, nest **sub-groups** of conditions inside a group (for example: _(Step = "In progress" AND Address filled in) OR (Collection channel = "Incoming email")_).
-5. Reorder or delete each condition or group individually using the dedicated controls.
-6. Save the view to reuse this filter later.
+1. Open the filters window and click **Add filter**.
+2. Click **Add a condition**, then choose the field, the comparison operator and the value.
+3. Click **Add a group of conditions** to create an independent block, then add its conditions.
+4. Click the **And** or **Or** button to choose how the conditions of a group, or the groups among themselves, are combined.
+5. Delete a condition or a group with the trash icon.
 
-<figure><img src="../../.gitbook/assets/generalites-advanced-filters-condition-groups.png" alt="Advanced filters panel with two condition groups connected by an OR operator"><figcaption><p>Example of condition group filters: two AND blocks connected by OR, with "Add a condition" and "Add a group of conditions" buttons</p></figcaption></figure>
-
-{% hint style="info" %}
-Existing filters and custom views remain functional: they are automatically converted to the structured editor.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/filtres-groupes-conditions.png" alt="Advanced filters panel with two condition groups connected by an OR operator"><figcaption><p>Example of condition group filters: two AND blocks connected by OR, with the "Add a condition" and "Add a group" buttons</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/generalites-advanced-filters-condition-groups.png" alt="Advanced filters window with two condition groups connected by an Or operator"><figcaption><p>Two condition groups connected by Or, with the Add a condition and Add a group of conditions buttons</p></figcaption></figure>
 
 {% hint style="info" %}
-Condition groups are available in all Dastra lists: record of processing activities, data subject rights requests, assets, contracts, AI systems, data breaches, etc.
+A group cannot contain another group, and a filter holds at most 10 conditions. Filters and custom views created before groups remain usable.
 {% endhint %}
 
 ## Known problems
 
-### My data is no longer displayed?
+### My data is no longer displayed
 
-If you encounter difficulties with the filters — you lose the display of your data — we recommend that you clear the browser data (cookies, localstorage, etc.). This will reset the state of your filters in your workspace.
+If a filter makes you lose the display of your data, clear your browser data (cookies, LocalStorage, etc.). This resets the filters and the active view of your workspace. You can also click **Reset filters**, then choose **Default view**.
 
-### Some columns are not present in the advanced filters?
+### Some columns are missing from the advanced filters
 
-It may be that, technically, it is not possible to set up these filters for various reasons. In that case, we recommend that you either export the data in a raw form and produce the report in tools like Excel.
+For technical reasons, some columns cannot be filtered. In that case, export the raw data and build your report in a tool such as Excel.
 
-If it is a filter that is essential to your business, do not hesitate to submit a new feature request to us [via the Dastra community or the request system](../../getting-started/support/request.md).
+If a filter is essential to your business, submit a feature request [via the Dastra community or the request system](../../getting-started/support/request.md).

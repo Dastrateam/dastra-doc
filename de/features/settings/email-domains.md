@@ -1,41 +1,39 @@
 ---
 description: >-
-  Ermöglichen Sie den Nutzern Ihrer Organisation, Ihrem Mandanten direkt mit
-  einer passenden Rolle beizutreten.
+  Ermöglichen Sie den Nutzern Ihrer Organisation, Ihrem Bereich direkt mit einer
+  passenden Rolle beizutreten.
 ---
 
 # E-Mail-Domains
 
-## Wozu dienen sie?
+Diese Seite erklärt, wie künftige Kollegen Ihrer Organisation beitreten können, ohne dass Sie etwas tun müssen. Sie richtet sich an die Inhaber der Organisation.
 
-Die E-Mail-Domains ermöglichen Ihren zukünftigen Mitarbeitern die Möglichkeit, direkt einem Mandanten mit der gewählten Rolle zugewiesen zu werden, ohne dass Sie handeln müssen.
+## Zweck der E-Mail-Domains
 
-## Wie verwende ich sie?
+Mit E-Mail-Domains weisen Sie künftige Kollegen direkt einem Mandanten zu, mit der von Ihnen gewählten Rolle, ohne dass Sie etwas tun müssen.
 
-Die Konfiguration der E-Mail-Domains finden Sie in der allgemeinen Konfiguration Ihrer Organisation, Bereich **Sicherheit**
+## E-Mail-Domains konfigurieren
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration35.png" alt="Zugang zur E-Mail-Domain-Konfiguration"><figcaption><p>E-Mail-Domains Konfiguration</p></figcaption></figure>
+Der Block **Zugelassene E-Mail-Domains** befindet sich oben auf der Seite **Einmalige Anmeldung**: Öffnen Sie **Organisationseinstellungen** > **Einmalige Anmeldung**.
 
-Aktivieren oder deaktivieren Sie die Funktionalität, indem Sie auf die Schaltfläche „_Nutzern erlauben_..." klicken
+<figure><img src="../../.gitbook/assets/settings-email-domains-1.png" alt="Der Block Zugelassene E-Mail-Domains mit einer eingegebenen Domain, der aktivierten Option, der Standardrolle und dem Mandanten"><figcaption><p>Der Block Zugelassene E-Mail-Domains, oben auf der Seite Einmalige Anmeldung</p></figcaption></figure>
 
-Wählen Sie dann die Rolle und den Mandanten aus, die zukünftigen Nutzern zugewiesen werden:
+1. Geben Sie unter **Bitte geben Sie Ihre E-Mail-Domains ein (nur Top-Level-Domains).** jede Domain ein (zum Beispiel `dastra.eu`) und drücken Sie die Eingabetaste oder klicken Sie auf **Hinzufügen**.
+2. Schalten Sie **Nutzern mit registrierten E-Mail-Domains die Möglichkeit bieten, der Organisation beizutreten** ein.
+3. Wählen Sie unter **Standardrolle** die Rolle, die künftigen Nutzern zugewiesen wird. Die Rolle **Gast (kein Zugriff auf Daten)** wird standardmäßig angeboten.
+4. Wählen Sie unter **Auswahl eines bestimmten Mandanten** den betreffenden Mandanten oder behalten Sie **Alle Mandanten** bei.
+5. Klicken Sie auf **Speichern**.
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration36.png" alt=""><figcaption><p>Zuweisung der Rolle und des Mandanten</p></figcaption></figure>
-
-Speichern Sie abschließend die Konfiguration, indem Sie auf die Schaltfläche _Speichern_ klicken!
+Die Rolle und der Mandant lassen sich nur ändern, solange die Option aus Schritt 2 eingeschaltet ist.
 
 {% hint style="warning" %}
-**Einschränkungen**:
+Sie können nur Domains hinzufügen, die bereits zugelassen sind, das heißt Domains, für die ein Nutzer Ihrer Organisation bereits eine E-Mail-Adresse bestätigt hat.
 
-Sie dürfen nur E-Mail-Domains hinzufügen, die zuvor autorisiert wurden (d. h. für die ein Nutzer Ihrer Organisation eine E-Mail-Adresse validiert hat).
-
-Persönliche Domains (gmail, hotmail usw.) oder als „Wegwerf"-Domains identifizierte Domains sind verboten!
+Private E-Mail-Domains (gmail, hotmail usw.) und als Wegwerf-Domains erkannte Domains werden abgelehnt.
 {% endhint %}
 
-## Auswirkung für zukünftige Nutzer
+## Auswirkungen auf künftige Nutzer
 
-Beim nächsten Mal, wenn sich ein Mitarbeiter bei Dastra registriert, muss er weiterhin seine E-Mail-Adresse eingeben und validieren. Jedoch wird ihm nun vorgeschlagen, Ihrer Organisation beizutreten!
+Ein Kollege, der sich bei Dastra registriert, muss weiterhin seine E-Mail-Adresse eingeben und bestätigen. Dastra bietet ihm dann an, Ihrer Organisation beizutreten.
 
-<figure><img src="../../.gitbook/assets/image-1-2-2.png" alt=""><figcaption></figcaption></figure>
-
-Er kann dann beitreten und mit Ihnen zusammenarbeiten!
+Er klickt auf **Anmelden** und kann mit Ihnen arbeiten.

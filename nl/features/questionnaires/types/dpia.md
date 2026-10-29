@@ -1,8 +1,10 @@
 ---
-description: Leer hoe u met Dastra een Privacy Impact Assessment (PIA) of gegevensbeschermingseffectbeoordeling (DPIA) uitvoert.
+description: >-
+  Leer hoe u met Dastra een Privacy Impact Assessment (PIA) of
+  gegevensbeschermingseffectbeoordeling (DPIA) uitvoert.
 ---
 
-# Effectbeoordeling (PIA / DPIA)
+# PIA / DPIA
 
 ## Over de PIA en de DPIA
 
@@ -34,8 +36,8 @@ De lijst van verwerkingsactiviteiten waarvoor een DPIA vereist is, hangt af van 
 
 Dastra toont een van deze twee resultaten:
 
-* **DPIA is niet verplicht**: de verwerking haalt de drempel niet
-* **Een DPIA is vereist**: er verschijnt een knop **Maak een DPIA** om de beoordeling rechtstreeks te starten
+* **DPIA is niet verplicht**: de verwerking haalt de drempel niet;
+* **Een DPIA is vereist**: de knop **Maak een DPIA** verschijnt om de beoordeling rechtstreeks te starten.
 
 ## PIA- en DPIA-sjablonen in Dastra
 
@@ -50,7 +52,7 @@ In de bibliotheek van Dastra staan verschillende PIA- en DPIA-sjablonen, waarond
 * **DPIA Questionnaire (ICO)** (9 vragen): het sjabloon van de Britse toezichthouder
 * **US PIA (cross-state)** (86 vragen): voor verwerkingsactiviteiten in de Verenigde Staten
 
-Ga voor deze sjablonen naar het tabblad **Vraagmodellen**, klik op **Maak een sjabloon** en daarna op **Geautomatiseerde audit**, en filter op het type **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**.
+Open voor deze sjablonen **Vragenlijsten** > **Vraagmodellen**, klik op **Maak een sjabloon** en daarna op **Geautomatiseerde audit**, en filter met **Soorten** op **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**.
 
 ## Structuur van de PIA-vragenlijst (CNIL)
 
@@ -68,16 +70,16 @@ De PIA-vragenlijst (CNIL) kent twee antwoordmodi. Het verschil tussen beide betr
 
 Configureer uw PIA-sjabloon als volgt om het meeste uit de PIA-functionaliteit van Dastra te halen:
 
-1. Stel het **Type audit** van het sjabloon in op het type voor effectanalyses. Daarmee schakelt u de risicoheatmap in het dashboard van de vragenlijst in en integreert u de gegevens van de gekoppelde verwerkingsactiviteit.
-2. Selecteer in het onderdeel **Geauditeerd element** de optie Verwerking. Zo koppelt u elk PIA-antwoord aan een specifieke verwerkingsactiviteit en wordt het veld **Datum laatste DPIA** van de verwerkingsactiviteit automatisch bijgewerkt wanneer de DPIA wordt gepubliceerd (zie "De datum van de laatste DPIA bijwerken" hieronder).
+1. Stel het **Type audit** in op **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**: daarmee schakelt u de risicoheatmap in het dashboard van de vragenlijst in en integreert u de gegevens van de gekoppelde verwerkingsactiviteit.
+2. Selecteer bij **Geauditeerd element** de optie Verwerking: zo koppelt u elk PIA-antwoord aan een specifieke verwerkingsactiviteit en wordt het veld **Datum laatste DPIA** van de verwerkingsactiviteit automatisch bijgewerkt wanneer de DPIA wordt gepubliceerd (zie "De datum van de laatste DPIA bijwerken" hieronder).
 
 {% hint style="info" %}
-Zodra een PIA aan een verwerkingsactiviteit is gekoppeld, opent u ze rechtstreeks via de sectie **Impactanalyse** van die verwerkingsactiviteit en start u ze met de knop **Maak een DPIA** wanneer de drempel is bereikt.
+Zodra een PIA aan een verwerkingsactiviteit is gekoppeld, opent u ze rechtstreeks via de stap **Impactanalyse** van die verwerkingsactiviteit en start u ze met de knop **Maak een DPIA** wanneer de drempel is bereikt.
 {% endhint %}
 
 ### De datum van de laatste DPIA bijwerken
 
-Wanneer een DPIA die aan een verwerkingsactiviteit is gekoppeld, wordt gepubliceerd, kopieert Dastra de publicatiedatum naar het veld **Datum laatste DPIA** in de stap **Impactanalyse** van de verwerkingsactiviteit. Deze update geldt ongeacht de herkomst van de DPIA (gestart vanuit de verwerkingsactiviteit of gepland vanuit de module Vragenlijsten), op voorwaarde dat het sjabloontype een effectanalyse is en het geauditeerde element een verwerkingsactiviteit.
+Wanneer een DPIA die aan een verwerkingsactiviteit is gekoppeld, wordt gepubliceerd, kopieert Dastra de publicatiedatum naar het veld **Datum laatste DPIA** in de stap **Impactanalyse** van de verwerkingsactiviteit. Deze update geldt ongeacht de herkomst van de DPIA (gestart vanuit de verwerkingsactiviteit of gepland vanuit de module Vragenlijsten), op voorwaarde dat het sjabloontype **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)** is en het gekoppelde object een verwerkingsactiviteit.
 
 De publicatie vindt plaats:
 
@@ -99,9 +101,10 @@ De publicatiedatum overschrijft elke waarde die al in het veld **Datum laatste D
 
 Hebt u al een PIA uitgevoerd met de CNIL-tool, dan importeert u die rechtstreeks in Dastra:
 
-1. Exporteer uw PIA uit de CNIL-tool in **.json-indeling**
-2. Selecteer in Dastra het PIA-sjabloon (CNIL) en klik op **Importeer PIA vanuit de PIA-tool (CNIL)**
-3. Een groot deel van de elementen wordt automatisch in Dastra geïmporteerd
+1. Exporteer uw PIA uit de CNIL-tool in **.json**-indeling.
+2. Open in Dastra het PIA-sjabloon (CNIL) via **Vraagmodellen**, klik op de pijl naast **Plan een audit** en daarna op **Importeer PIA vanuit de PIA-tool (CNIL)**. Deze actie is alleen beschikbaar voor een sjabloon van het type **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**.
+3. Kies de **Organisatie-eenheid** en de verwerkingsactiviteit bij **Kies de behandeling die bij deze DPIA hoort** en sleep daarna het .json-bestand erin.
+4. Een groot deel van de elementen wordt automatisch in Dastra geïmporteerd.
 
 ## Een DPIA uitvoeren voor meerdere verwerkingsactiviteiten
 

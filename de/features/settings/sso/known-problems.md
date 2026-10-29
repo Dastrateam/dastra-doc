@@ -11,7 +11,9 @@ Diese Seite fasst die SSO-Vorfälle zusammen, auf die unsere Kunden tatsächlich
 {% hint style="danger" %}
 **Richten Sie immer ein Ausnahmekonto ein, bevor Sie SSO für alle erzwingen.**
 
-Wenn Sie „Für alle Nutzer erzwingen" aktivieren und das SSO ausfällt (abgelaufenes Zertifikat, Versionswechsel des Identity Providers, Konfigurationsfehler), **kann sich niemand mehr anmelden — auch Eigentümer nicht**. Tragen Sie mindestens einen Nutzer im Feld **„Von SSO ausgenommene Nutzer"** ein — idealerweise ein lokales Dienstkonto —, damit Sie wieder in die Konfiguration gelangen und sie korrigieren können.
+Wenn Sie **Für alle Nutzer erzwingen** aktivieren und das SSO ausfällt (abgelaufenes Zertifikat, Versionswechsel des Identity Providers, Konfigurationsfehler), **kann sich niemand mehr anmelden, auch Inhaber nicht**. Tragen Sie mindestens einen Nutzer im Feld **Bestimmte Nutzer, die von der SSO ausgenommen sind (z. B. Sicherheitsadministratoren)** ein, idealerweise ein lokales Dienstkonto, damit Sie wieder in die Konfiguration gelangen und sie korrigieren können.
+
+Siehe [Von der SSO-Anmeldung befreite Nutzer](README.md#von-der-sso-anmeldung-befreite-nutzer).
 {% endhint %}
 
 ## Die 5 Prüfungen, die zuerst kommen
@@ -22,7 +24,7 @@ Gehen Sie vor jeder tiefergehenden Diagnose diese Liste durch:
 2. **Existiert der Nutzer in der Organisation?** Das SSO ist mit der Organisation verknüpft: Der Nutzer muss in der [Nutzerliste](https://app.dastra.eu/general-settings/users) vorhanden sein.
 3. **Stimmt die E-Mail-Adresse exakt überein?** Dastra ordnet das Konto über die **vom Identity Provider zurückgegebene E-Mail-Adresse** zu. Schon ein einziges abweichendes Zeichen genügt, und der Nutzer wird nicht erkannt.
 4. **Ist der Nutzer auf Seiten des Identity Providers für die Dastra-Anwendung berechtigt?** Das ist die häufigste Ursache, wenn nur eine einzelne Person betroffen ist.
-5. **Testen Sie im privaten Modus** und prüfen Sie, ob **die Uhr des Rechners synchronisiert** ist — eine Zeitabweichung macht die Token ungültig.
+5. **Testen Sie im privaten Modus** und prüfen Sie, ob **die Uhr des Rechners synchronisiert** ist: Eine Zeitabweichung macht die Token ungültig.
 
 ***
 
@@ -38,7 +40,7 @@ Typische Fälle aus der Praxis:
 * der UPN wurde im Unternehmensverzeichnis geändert (Namensänderung, Domain-Migration), ohne dass dies in Dastra nachgezogen wurde;
 * der Nutzer wurde in Dastra mit einer Kurzform seiner Adresse angelegt (`vnachname@…`), während der IdP die Langform zurückgibt.
 
-**Lösung** — gleichen Sie beide Werte in die eine oder andere Richtung an:
+**Lösung**: Gleichen Sie beide Werte in die eine oder andere Richtung an:
 
 * Lassen Sie den IdP exakt die in Dastra hinterlegte Adresse zurückgeben, **oder**
 * legen Sie das Dastra-Konto mit der vom IdP gelieferten Adresse an bzw. korrigieren Sie es entsprechend.
@@ -68,8 +70,8 @@ Dastra stützt sich auf die Eigenschaft **`Name`**, nicht auf `NameFormat`: Der 
 
 **Lösung**:
 
-1. Öffnen Sie Ihre SSO-Konfiguration, Reiter **Konfiguration**.
-2. Ersetzen Sie im Feld **„Der Name des Claims, der die E-Mail-Adresse enthält"** den Wert durch den tatsächlich von Ihrem IdP veröffentlichten Namen (hier: `emailaddress`).
+1. Öffnen Sie Ihre SSO-Konfiguration, Abschnitt **Konfiguration**.
+2. Ersetzen Sie im Feld **Der Name des Anspruchs, der die E-Mail-Adresse enthält** den Wert durch den tatsächlich von Ihrem IdP veröffentlichten Namen (hier: `emailaddress`).
 3. Speichern Sie und führen Sie einen neuen Anmeldetest **in einem privaten Browserfenster** durch, damit eine neue Sitzung entsteht.
 
 ### Der Nutzer ist auf Seiten des Identity Providers nicht berechtigt
@@ -78,7 +80,7 @@ Wenn ein einzelner Nutzer blockiert ist, während sich alle anderen normal anmel
 
 **Lösung**: Prüfen Sie, ob die Person in Ihrem Verzeichnis angelegt **und** der Dastra-Anwendung mit den nötigen Zugriffsrechten zugewiesen ist. Ein guter Unterscheidungstest: Lassen Sie den Nutzer sich **ohne SSO** anmelden (Ausnahmekonto oder Passwort). Funktioniert das, ist das Dastra-Konto in Ordnung und die Blockade kommt von der Berechtigung auf IdP-Seite.
 
-### Der Nutzer ist ein „externer Nutzer"
+### Der Nutzer ist ein „externer Nutzer“
 
 Das SSO gilt nur für Konten, die **intern** zu Ihrer Organisation gehören. Hatte der Nutzer bereits ein Dastra-Konto (andere Organisation, Testkonto, privates Konto), ist seine **Hauptorganisation** eine andere: Deren Sicherheitseinstellungen gelten, nicht Ihre, und er erscheint bei Ihnen als **externer Nutzer**.
 
@@ -88,14 +90,16 @@ Prüfen Sie seinen Status in der [Nutzerliste der Organisation](https://app.dast
 
 ## Die automatische Kontoerstellung funktioniert nicht
 
-### „SSO users autoprovisioning is not allowed for your organization"
+### „SSO users autoprovisioning is not allowed for your organization“
 
-Diese Meldung bedeutet, dass die Option **„Automatische Kontoerstellung"** in Ihrer SSO-Konfiguration nicht aktiviert ist. Solange sie deaktiviert ist, kann sich nur ein **bereits in Dastra eingeladener** Nutzer per SSO anmelden.
+Diese Meldung bedeutet, dass die Option **Nutzer wird erstellt, wenn der Nutzer noch nie zu Dastra eingeladen wurde** in Ihrer SSO-Konfiguration nicht aktiviert ist. Solange sie deaktiviert ist, kann sich nur ein **bereits in Dastra eingeladener** Nutzer per SSO anmelden.
 
-**Lösung**: Ein **Eigentümer der Organisation** aktiviert die Option in der SSO-Konfiguration, Reiter **Automatische Erstellung der Nutzer**, und wählt die standardmäßig zugewiesene Rolle.
+**Lösung**: Ein **Inhaber der Organisation** aktiviert die Option in der SSO-Konfiguration, Abschnitt **Automatische Erstellung von Nutzern**, und wählt die standardmäßig zugewiesene Rolle.
+
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-4.png" alt="Der Abschnitt Automatische Erstellung von Nutzern des SSO-Formulars"><figcaption><p>Der Abschnitt <strong>Automatische Erstellung von Nutzern</strong></p></figcaption></figure>
 
 {% hint style="warning" %}
-Nur ein **Eigentümer** kann die SSO-Konfiguration ändern. Ein Administrator sieht diese Seite nicht.
+Nur ein **Inhaber** kann die SSO-Konfiguration ändern. Ein Administrator sieht diese Seite nicht.
 {% endhint %}
 
 ### Die Option ist aktiviert, aber es werden trotzdem keine Konten erstellt
@@ -108,7 +112,9 @@ Verteilen Sie den Link Ihrer SSO-Verbindung an Ihre Nutzer, in dieser Form:
 https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={ID Ihres Providers}
 ```
 
-Sie erhalten ihn über die Schaltfläche **Link kopieren** auf der Karte der SSO-Verbindung.
+Sie erhalten ihn über die Schaltfläche **Link kopieren** auf der Karte der SSO-Verbindung:
+
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-2.png" alt="Die Karte einer SSO-Verbindung mit den Schaltflächen Testen und Link kopieren"><figcaption><p>Die Schaltfläche <strong>Link kopieren</strong> auf der Karte</p></figcaption></figure>
 
 ### Externe Fragebogen-Befragte werden nicht provisioniert
 
@@ -116,46 +122,45 @@ Wer den SSO-Link nie geöffnet hat, ist kein Dastra-Nutzer: Die automatische Ers
 
 Zwei Umgehungslösungen:
 
-* **Konten im Vorfeld provisionieren** — siehe [Import einer Nutzerliste](../../../getting-started/setup/users.md);
+* **Konten im Vorfeld provisionieren**: siehe [Import einer Nutzerliste](../../../getting-started/setup/users.md);
 * den Fragebogen über ein **Trust Center** verteilen, das Besuchern eine SSO-Anmeldung anbietet.
 
 ***
 
 ## Authentifizierungsschleife oder Fehler bei der Rückkehr zu Dastra (OpenID Connect)
 
-Symptome: Weiterleitungsschleife zwischen Dastra und dem IdP, Fehler **„An error was encountered while handling the remote login"** oder **HTTP-Fehler 400 beim Abruf des Tokens**.
+Symptome: Weiterleitungsschleife zwischen Dastra und dem IdP, Fehler **„An error was encountered while handling the remote login“** oder **HTTP-Fehler 400 beim Abruf des Tokens**.
 
 In diesem Fall funktionieren die Weiterleitung zum IdP und die Authentifizierung: Die **Verarbeitung des OIDC-Rückkanals** schlägt fehl. Prüfen Sie die folgenden Punkte in dieser Reihenfolge.
 
-### Das Feld „Authority/Domain" verweist auf den falschen Endpunkt
+### Das Feld „Behörde/Domäne“ verweist auf den falschen Endpunkt
 
-Ein sehr häufiger Konfigurationsfehler. Dieses Feld muss **die Root-URL des OIDC-Issuers** enthalten — jene, die `/.well-known/openid-configuration` bereitstellt — und **nicht** den Endpunkt `/authorize`.
+Ein sehr häufiger Konfigurationsfehler. Dieses Feld muss **die Root-URL des OIDC-Issuers** enthalten, jene, die `/.well-known/openid-configuration` bereitstellt, und **nicht** den Endpunkt `/authorize`.
 
 | | |
 | --- | --- |
-| ❌ Falsch | `https://login.beispiel.de/user/IdPOAuth2/authorize/FB6CB139F80BCAEB` |
-| ✅ Richtig | `https://login.beispiel.de/user/IdPOAuth2/FB6CB139F80BCAEB` |
+| Falsch | `https://login.beispiel.de/user/IdPOAuth2/authorize/FB6CB139F80BCAEB` |
+| Richtig | `https://login.beispiel.de/user/IdPOAuth2/FB6CB139F80BCAEB` |
 
 Die Endpunkte `/authorize` und `/token` werden anschließend automatisch über das Well-known-Dokument ermittelt.
 
 ### Der Antworttyp (response type) ist falsch
 
-Das Feld **Response Type** muss **exakt** einen von Ihrem IdP veröffentlichten Wert enthalten — typischerweise `id_token` oder `code`.
+Das Feld **Response Type** muss **exakt** einen von Ihrem IdP veröffentlichten Wert enthalten, typischerweise `id_token` oder `code`.
 
 Achten Sie auf Varianten mit Bindestrich: Ein Wert `id-token` statt `id_token` führt zu einer Authentifizierungsschleife samt 400-Fehler beim Abruf des Tokens. Prüfen Sie Zeichen für Zeichen.
 
 Scheitert der Flow `id_token`, versuchen Sie `code`: Manche IdPs erlauben den impliziten Flow nicht.
 
-### Die Authentifizierungsmethode des Token-Endpunkts passt nicht
+### Die Authentifizierungsmethode des Clients ist nicht die richtige
 
-Wirkt die Konfiguration korrekt, lässt sich das Token aber nicht abrufen, passen Sie das Feld **Authentifizierungsmethode des Token-Endpunkts** an:
-
-1. Versuchen Sie zunächst **`client_secret_basic` (Basic-Auth-Header)**;
-2. Reicht das nicht, wechseln Sie auf **Private Key JWT** und füllen Sie die Felder **privater Schlüssel** und **Zertifikatsinhalt** aus.
+Wirkt die Konfiguration korrekt, lässt sich das Token aber nicht abrufen, akzeptiert Ihr IdP möglicherweise keine Client-Authentifizierung mit einem geheimen Schlüssel. Wählen Sie im Abschnitt **Konfiguration** der Verbindung **Privater JWT-Schlüssel (private JWT-Assertion)** statt **Geheimer Schlüssel** aus und füllen Sie dann den privaten Schlüssel im PEM-Format und den Inhalt des Zertifikats aus. Die Felder sind unter [OpenID](openid.md) beschrieben.
 
 {% hint style="info" %}
-Seit März 2026 unterstützt Dastra die Authentifizierung per **Private Key JWT**: Ein geheimer Schlüssel muss nicht mehr hinterlegt werden. Denken Sie daran, **einmal zu speichern**, damit die JSON-Public-Key-URI (`jwks_uri`) bereitgestellt wird.
+Mit dem privaten JWT-Schlüssel müssen Sie keinen geheimen Schlüssel mehr hinterlegen, und der Antworttyp wechselt auf `code`. Denken Sie daran, **einmal zu speichern**, damit die JSON-Public-Key-URI (`jwks_uri`) bereitgestellt wird, und hinterlegen Sie sie dann bei Ihrem Identity Provider.
 {% endhint %}
+
+Verlangt Ihr IdP eine andere Methode der Client-Authentifizierung, etwa HTTP Basic, wenden Sie sich an den Support.
 
 ### Das ID Token ist mit HS256 signiert
 
@@ -171,7 +176,7 @@ Prüfen Sie auf IdP-Seite, ob sich der Dastra-Client mit einer **RS256**-Signatu
 * **Die Scopes sind nicht freigegeben.** Behalten Sie `openid profile email` bei; prüfen Sie, dass alle drei auf IdP-Seite erlaubt sind.
 * **Der Claim `email` fehlt im ID Token.**
 
-### „Der Wert des Parameters response\_type ist unbekannt"
+### „Der Wert des Parameters response\_type ist unbekannt“
 
 Erscheint diese Meldung **auf der Seite Ihres Identity Providers** (und nicht auf Dastra), funktioniert die Weiterleitung: Das Problem liegt in der Deklaration des OIDC-Clients auf IdP-Seite.
 
@@ -187,15 +192,15 @@ Prüfen Sie:
 
 Sie erhalten eine Fehlermeldung dieser Art:
 
-<figure><img src="../../../.gitbook/assets/image-1-6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-1-6.png" alt="Fehlermeldung zu einem nicht vertrauenswürdigen oder ungültigen Schlüssel"><figcaption></figcaption></figure>
 
-1. **Stellen Sie sicher, dass Sie ein gültiges Zertifikat haben** — ein abgelaufenes Zertifikat erzeugt genau dieses Symptom, oft „über Nacht" und ohne jede Änderung Ihrerseits.
+1. **Stellen Sie sicher, dass Sie ein gültiges Zertifikat haben**: Ein abgelaufenes Zertifikat erzeugt genau dieses Symptom, oft „über Nacht“ und ohne jede Änderung Ihrerseits.
 2. **Überprüfen Sie, dass beim Kopieren/Einfügen des Zertifikats keine Zeilenumbrüche oder Leerzeichen eingefügt wurden.**
 3. **Prüfen Sie, ob das in Dastra hinterlegte Zertifikat tatsächlich das des IdP der betreffenden Umgebung ist**: Ein häufiger Fehler ist, das Test-Zertifikat in der Produktionskonfiguration stehen zu lassen.
 
 ### Ein SSO-Zertifikat erneuern
 
-Die Aktualisierung des Zertifikats erfolgt direkt über die [SSO-Konfiguration Ihrer Organisation](https://app.dastra.eu/general-settings/sso). Ersetzen Sie als **Eigentümer** das aktuelle Zertifikat durch das neue, von Ihren Teams bereitgestellte, und nutzen Sie anschließend die Schaltfläche **Testen**.
+Die Aktualisierung des Zertifikats erfolgt direkt über die [SSO-Konfiguration Ihrer Organisation](https://app.dastra.eu/general-settings/sso). Ersetzen Sie als **Inhaber** das aktuelle Zertifikat durch das neue, von Ihren Teams bereitgestellte, und nutzen Sie anschließend die Schaltfläche **Testen**.
 
 {% hint style="warning" %}
 Planen Sie den Ablauf vorausschauend: Terminieren Sie die Erneuerung **vor** dem Ablaufdatum und prüfen Sie vor dem Eingriff, dass Ihr SSO-Ausnahmekonto noch funktioniert.
@@ -205,7 +210,7 @@ Planen Sie den Ablauf vorausschauend: Terminieren Sie die Erneuerung **vor** dem
 
 Wird die Produktionskonfiguration einer funktionierenden Testumgebung nachgebildet, weichen fast immer drei Parameter ab:
 
-* **die auf IdP-Seite deklarierte ACS- / Reply-URL** muss **exakt** der von Dastra bereitgestellten Produktions-Callback-URL entsprechen — stellen Sie sicher, dass nicht die Test-URL übernommen wurde;
+* **die auf IdP-Seite deklarierte ACS- / Reply-URL** muss **exakt** der von Dastra bereitgestellten Produktions-Callback-URL entsprechen: Stellen Sie sicher, dass nicht die Test-URL übernommen wurde;
 * **das SAML-Zertifikat** muss das des Produktions-IdP sein;
 * **die Tenant ID** muss die der Produktion sein. Dieser Parameter wird nicht in Dastra konfiguriert: Er lässt sich nur auf IdP-Seite prüfen.
 
@@ -213,7 +218,7 @@ Wird die Produktionskonfiguration einer funktionierenden Testumgebung nachgebild
 
 ## Der Nutzer meldet sich an, hat aber auf nichts Zugriff
 
-### „Sie sind nicht berechtigt, auf diese Funktion oder Ressource zuzugreifen (area/entity)"
+### „Sie sind nicht berechtigt, auf diese Funktion oder Ressource zuzugreifen (area/entity)“
 
 Wenn sich der Nutzer **korrekt authentifiziert** und anschließend bei der Auswahl seines Mandanten auf dieser Seite landet, liegt das Problem nicht beim SSO, sondern bei seinen **Berechtigungen**.
 
@@ -222,10 +227,10 @@ Eine in der Produktion identifizierte Ursache: Der Nutzer trägt eine **benutzer
 **Lösung**: Öffnen Sie die betreffende Rolle und weisen Sie ihr **mindestens eine Berechtigung** zu, passend zum erwarteten Zugriffsniveau. Cache leeren oder weiter am SSO suchen ist nicht nötig.
 
 {% content-ref url="../roles.md" %}
-[roles-et-permissions.md](../roles.md)
+[Rollen und Berechtigungen](../roles.md)
 {% endcontent-ref %}
 
-### Fehler „Zugriff verweigert (401)" nach der SSO-Anmeldung
+### Fehler „Zugriff verweigert (401)“ nach der SSO-Anmeldung
 
 Bevor Sie das SSO verdächtigen, prüfen Sie, ob **die Uhr des Rechners mit dem Internet synchronisiert** ist: Die Ablauffristen der Token werden mit der Zeit des Rechners verglichen. Das ist eine klassische Ursache für einen 401 direkt nach erfolgreicher Authentifizierung.
 
@@ -247,13 +252,13 @@ Die unmittelbare Folge für das SSO: Ändert sich der UPN im Verzeichnis, ohne d
 {% hint style="danger" %}
 Für eine Massenmigration gelten drei Regeln:
 
-* **ein einziger Durchgang** — aufeinanderfolgende Teilmigrationen erzeugen Inkonsistenzen beim SSO, bei der Nutzeridentifikation, den Rechten und den Zuordnungen;
-* **keine Zwischenadresse** — übermitteln Sie direkt die **endgültige Zieladresse**; dasselbe Konto kann nicht zweimal migriert werden;
-* **rechnen Sie mit Nebenwirkungen** — laufende Betroffenenanfragen und Fragebögen können die alten Adressen enthalten: Geben Sie ausdrücklich an, ob sie ebenfalls aktualisiert werden sollen.
+* **ein einziger Durchgang**: aufeinanderfolgende Teilmigrationen erzeugen Inkonsistenzen beim SSO, bei der Nutzeridentifikation, den Rechten und den Zuordnungen;
+* **keine Zwischenadresse**: übermitteln Sie direkt die **endgültige Zieladresse**; dasselbe Konto kann nicht zweimal migriert werden;
+* **rechnen Sie mit Nebenwirkungen**: laufende Betroffenenanfragen und Fragebögen können die alten Adressen enthalten: Geben Sie ausdrücklich an, ob sie ebenfalls aktualisiert werden sollen.
 {% endhint %}
 
 {% hint style="info" %}
-Löschen Sie Konten nicht „der Geschwindigkeit halber" und legen Sie sie neu an: Sie verlören die Historie und die Verknüpfung zwischen der Person und den von ihr verantworteten Elementen. Beachten Sie außerdem: Wird ein gelöschter Nutzer erneut eingeladen, bleiben Vor- und Nachname erhalten — das ist das erwartete Verhalten.
+Löschen Sie Konten nicht „der Geschwindigkeit halber“ und legen Sie sie neu an: Sie verlören die Historie und die Verknüpfung zwischen der Person und den von ihr verantworteten Elementen. Beachten Sie außerdem: Wird ein gelöschter Nutzer erneut eingeladen, bleiben Vor- und Nachname erhalten. Das ist das erwartete Verhalten.
 {% endhint %}
 
 ***
@@ -286,7 +291,7 @@ Ein Upgrade Ihrer Identitätsinfrastruktur (Versionswechsel von OpenAM oder ADFS
 **Vorgehen**:
 
 1. Arbeiten Sie in einer **Test- / Sandbox-Umgebung**, niemals direkt in der Produktion.
-2. **Erstellen Sie die SSO-Konfiguration vollständig neu**, statt die bestehende zu korrigieren — so schließen Sie einen aus der alten Version geerbten Parameter aus.
+2. **Erstellen Sie die SSO-Konfiguration vollständig neu**, statt die bestehende zu korrigieren: So schließen Sie einen aus der alten Version geerbten Parameter aus.
 3. Achten Sie besonders auf die **Aktualisierung und Validierung der Zertifikate**.
 4. Gehen Sie die Prüfungen aus dem Abschnitt [OpenID Connect](#authentifizierungsschleife-oder-fehler-bei-der-ruckkehr-zu-dastra-openid-connect) oben erneut durch.
 
@@ -295,13 +300,13 @@ Ein Upgrade Ihrer Identitätsinfrastruktur (Versionswechsel von OpenAM oder ADFS
 ## Niemand kann sich mehr anmelden
 
 {% hint style="danger" %}
-Aus Gründen der Sicherheit und der Zugriffs-Governance **erstellt und ändert das Dastra-Support-Team keine Nutzerkonten innerhalb von Kundenorganisationen** und erzeugt keine Anmeldedaten. Nur ein **Eigentümer Ihrer Organisation** kann dies tun.
+Aus Gründen der Sicherheit und der Zugriffs-Governance **erstellt und ändert das Dastra-Support-Team keine Nutzerkonten innerhalb von Kundenorganisationen** und erzeugt keine Anmeldedaten. Nur ein **Inhaber Ihrer Organisation** kann dies tun.
 {% endhint %}
 
 Wenn das SSO für alle erzwungen ist und ausfällt:
 
-1. Melden Sie sich mit einem **SSO-Ausnahmekonto** an (vorab im Feld „Von SSO ausgenommene Nutzer" hinterlegt).
-2. **Deaktivieren Sie über dieses Konto die SSO-Verbindung**, solange Sie die Konfiguration korrigieren, damit die Nutzer wieder per Passwort arbeiten können.
+1. Melden Sie sich mit einem **SSO-Ausnahmekonto** an (vorab im Feld **Bestimmte Nutzer, die von der SSO ausgenommen sind** hinterlegt).
+2. **Deaktivieren Sie über dieses Konto die SSO-Verbindung** (die Option **Aktivieren**), solange Sie die Konfiguration korrigieren, damit die Nutzer wieder per Passwort arbeiten können.
 3. Korrigieren, mit der Schaltfläche **Testen** prüfen, dann wieder aktivieren.
 
 Existiert kein Ausnahmekonto, wenden Sie sich umgehend an den Support und nennen Sie den Namen Ihrer Organisation. Legen Sie eines an, sobald der Zugriff wiederhergestellt ist.
@@ -312,26 +317,26 @@ Existiert kein Ausnahmekonto, wenden Sie sich umgehend an den Support und nennen
 
 Lässt sich das Problem mit den obigen Punkten nicht lösen, ermöglicht ein Netzwerk-Export unseren Teams die genaue Analyse des Authentifizierungsflusses. So gehen Sie vor.
 
-**Schritt 1 — Entwicklertools öffnen**
+**Schritt 1: Entwicklertools öffnen**
 
 * Öffnen Sie ein **privates Browserfenster** (Chrome oder Edge).
 * Drücken Sie `F12` (oder `Strg + Umschalt + I`).
 * Wählen Sie den Reiter **Network** (Netzwerk).
 
-**Schritt 2 — Protokollerhaltung aktivieren**
+**Schritt 2: Protokollerhaltung aktivieren**
 
 Aktivieren Sie die Option **Preserve log**. Sie ist unerlässlich: Ohne sie geht der Verlauf bei den Weiterleitungen zwischen Dastra und Ihrem Identity Provider verloren.
 
-**Schritt 3 — Das Problem reproduzieren**
+**Schritt 3: Das Problem reproduzieren**
 
 Starten Sie die SSO-Anmeldung und gehen Sie bis zum Fehler oder zur Weiterleitungsschleife. **Schließen Sie das Fenster nach dem Fehler nicht.**
 
-**Schritt 4 — Exportieren**
+**Schritt 4: Exportieren**
 
-* **Option A (empfohlen)**: Rechtsklick in die Anfrageliste → **„Save all as HAR with content"** / „Alles als HAR mit Inhalt speichern", dann übermitteln Sie uns die Datei `.har`.
+* **Option A (empfohlen)**: Rechtsklick in die Anfrageliste → **„Save all as HAR with content“** / „Alles als HAR mit Inhalt speichern“, dann übermitteln Sie uns die Datei `.har`.
 * **Option B**: Screenshots des Reiters Network, einschließlich der Anfragen `/authorize`, `/token`, `/signin` sowie aller fehlerhaften Anfragen (400, 401, 403 …).
 
-**Schritt 5 — Den Kontext beschreiben**
+**Schritt 5: Den Kontext beschreiben**
 
 Teilen Sie uns außerdem mit:
 
@@ -347,5 +352,5 @@ Am hilfreichsten ist ein **Testkonto**, das sich über Ihr SSO authentifizieren 
 {% endhint %}
 
 {% content-ref url="../../../getting-started/support/request.md" %}
-[faire-une-demande-de-support.md](../../../getting-started/support/request.md)
+[Supportanfrage](../../../getting-started/support/request.md)
 {% endcontent-ref %}

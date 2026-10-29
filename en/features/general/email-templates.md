@@ -1,154 +1,126 @@
 ---
 description: >-
-  Learn how to use email templates and generate emails with dynamic content to
-  communicate with your customers or colleagues.
+  Learn how to write message templates with dynamic fields, conditions and
+  loops to communicate with your customers or colleagues.
 ---
 
 # Email templates
 
 ## General
 
-Email templates are a feature of data subject rights management, customised workflows and audits. Once saved, they are a quick way of communicating with stakeholders. The data set of an object can be incorporated into them, and it is even possible to set up conditions and loops to retrieve more information.
+Message templates are available in data subject requests, tasks, questionnaire invitations, invitations to complete a processing activity or a data breach, and workflow rules that send a message. Once saved, they are a quick way to communicate with stakeholders. The data of the object concerned can be inserted in the text, with conditions and loops to retrieve more information.
+
+This page explains how to write a template. For template types, sharing, import and export, see the [Message templates](../settings/message-templates.md) page.
 
 ## How to use
 
-To select or create a template, click on "Select or create a template".
+To use a template, click **Select a template** next to the message writing area.
 
-![](<../../.gitbook/assets/contracts-contract-navigation-toolbar.png>)
+<figure><img src="../../.gitbook/assets/general-email-templates-1.png" alt="Writing area of a data subject request message with the Select a template button"><figcaption><p>The Select a template button in a data subject request</p></figcaption></figure>
 
-you can then search for an existing template in the list or the search function, or look at the templates available in the workspaces to which you have access or the templates created by Dastra). \
-\
-If you don't find a suitable template, click on "New template".
+The **Select a template** panel opens. Search the list for a template, open the **Shared templates** or **Own templates** of each type, or choose another workspace that you have access to. Click **Select** next to the template you want.
 
-![](<../../.gitbook/assets/contracts-contract-action-bar.png>)
+<figure><img src="../../.gitbook/assets/general-email-templates-2.png" alt="Select a template panel with the search, the tabs by type and the New template button"><figcaption><p>The panel to select a template</p></figcaption></figure>
 
-The model creation interface comprises 4 elements:
+If no template fits, click **New template**. The creation window includes:
 
-* &#x20;The name (so that the model can be found later)&#x20;
-* The input field (body of the template, framed in green)&#x20;
-* A Preview tab: displays the rendering of the email in real time&#x20;
-* An Input Data tab: lets you view the data for the object concerned by the template
+* the **Name** of the template, so that you can find it later;
+* the **Template body**, the input area;
+* the option to share the template with all the users of the workspace;
+* the **Preview** tab, which displays the rendering of the message in real time;
+* the **Input Data** tab, which displays the data of the object concerned by the template.
 
-![](<../../.gitbook/assets/contracts-contract-tabs.png>)
+The **Preview** and **Input Data** tabs only appear if you create the template from the place where you write the message, not from the settings.
 
-## Customise the model
+<figure><img src="../../.gitbook/assets/general-email-templates-3.png" alt="Template creation window with the name, the template body, the preview and the Input Data tab"><figcaption><p>The template creation window</p></figcaption></figure>
 
+## Customize the template
 
+In the template body, you can apply styles and insert images or tables. The result appears in the **Preview** tab.
 
-You can edit the template and apply styles, insert images or tables as required. You will see the result in the preview tab. If you click on "Custom fields" you will have access to a list of fields to insert. The value of the field will be inserted at the level of the mouse cursor. Of course, you can format the text as you wish.
+To insert a piece of data from the object, click the braces icon of the toolbar (**Insert dynamic fields**) and choose a field in the list. The value of the field is inserted at the cursor.
 
+<figure><img src="../../.gitbook/assets/general-email-templates-4.png" alt="List of dynamic fields opened from the toolbar of the template editor"><figcaption><p>Inserting a dynamic field</p></figcaption></figure>
 
+## Dynamic fields
 
-## Going further with custom fields
+Fields surrounded by double braces are variables: they are replaced by the values of the corresponding object (here a data subject request).
 
-The fields surrounded by double braces are "variables". In other words, they will be replaced by the values of the corresponding object (in this case, a request to exercise a right).\
-\
-![](<../../.gitbook/assets/contracts-contract-document-panel-highlight.png>)
+### Use a field from the Input Data
 
+The **Input Data** tab lists the properties of the linked object. To display the message of the request, for example:
 
+1. Find the field in the **Input Data** tab.
+2. Enter its name in the template body with the syntax `{{message}}`.
+3. Check the result in the **Preview** tab.
 
-## Create new custom fields from Input Data
+You can go further with loops, conditions and date formats.
 
+### Conditions
 
+A conditional block is only displayed under certain conditions. It starts with an `if` tag and ends with an `endif` tag. For example:
 
-By clicking on the "Input Data" tab, you can access the list of properties of the linked object. In the example below, I decide to display the message linked to the request:&#x20;
-
-* I search for the field in "Input Data".&#x20;
-* I enter the name of the field in the body of the message using the syntax \{{message\}}&#x20;
-* I check the result using the "Preview" tab
-
-![](<../../.gitbook/assets/contracts-contract-metadata-panel-highlight.png>)
-
-That's it! Now you can create your own custom fields. But that's not all! You can also go even further by creating loops, conditions and applying formats to make the dates easier to read!
-
-## Conditional blocks
-
-It is also possible to create conditional blocks that will only be displayed under certain conditions. To do this, you need to use the conditional tag system, which starts with
-
-. In this way, I can write the following condition:
-
-> \{% if attachments != blank %\}
->
-> You have an attachment
->
-> \{% endif %\}
-
-The block will only be displayed if there is an attachment in the request.
-
-
-
-## The loops
-
-Loops work in the same way, except that this time we generate a variable internal to the loop. It works as follows:
-
+```liquid
+{% if attachments != blank %}
+  You have an attachment
+{% endif %}
 ```
+
+The block is only displayed if the request contains an attachment.
+
+### Loops
+
+Loops work in the same way, with a variable internal to the loop:
+
+```liquid
 {% for purpose in purposes %}
   {{ purpose }}
 {% endfor %}
 ```
 
-In the example above, I declare that I want to loop through the "purposes" list and assign the "purpose" variable to each item that I display directly.
+In this example, the loop goes through the `purposes` list and displays each item in the `purpose` variable.
 
-## Date format
+### Date format
 
-You will quickly see that the dates you retrieve from Input Data are not presentable as they are. Don't worry, you can assign a format to the date.
+The dates of the Input Data are not presentable as they are. Apply a format to them:
 
+```liquid
+{{ dateCreation | date: "%d-%m-%Y at %H:%M" }}
+```
 
+This template gives, for example, 15-03-2023 at 15:40.
 
-> \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}}
->
-> Will be transformed into 15-03-2023 at 15:40
+### A more complete example
 
-## A more complex example
+The body text below uses all the elements above:
 
+```liquid
+Hello,
 
+We have received your data subject request on {{ dateCreation | date: "%d-%m-%Y at %H:%M" }} concerning {{ givenName }} {{ familyName }}.
 
-The body text below uses all the above elements
+The request relates to the following purposes:
+{% for purpose in purposes %}
+* {{ purpose }}
+{% endfor %}
 
+{% if attachments != blank %}
+We have received the following attachments:
+{% for attachment in attachments %}
+* {{ attachment.fileName }}
+{% endfor %}
+{% endif %}
 
+We will keep you informed of the progress of your request.
 
-> Hello, We have received your request to exercise your rights on \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}} concerning Mr or Mrs \{{givenName\}} \{{familyName\}}. The request relates to the following purposes :
->
-> \{% for purpose in purposes %\}
->
-> * \{{ purpose \}}
->
-> \{% endfor %\}
->
-> \{% if attachments != blank %\}
->
-> We have received the following attachments:
->
-> \{% for attachment in attachments %\}
->
-> * \{{ attachment.fileName \}}
->
-> \{% endfor %\}
->
-> \{% endif %\}
->
-> Please accept my sincerest greetings and I will keep you informed of the progress of your request.&#x20;
->
-> Yours faithfully \{{operator.displayName\}}
+Kind regards,
+{{ operator.displayName }}
+```
 
-For the request currently being processed, it will be transformed as follows:
+For the request currently being processed, the message is transformed as follows:
 
-![](<../../.gitbook/assets/contracts-add-cloud-document-modal.png>)
+<figure><img src="../../.gitbook/assets/general-email-templates-5.png" alt="Preview of the message generated from the complete template for a data subject request"><figcaption><p>The rendering of a complete template</p></figcaption></figure>
 
+## Going further
 
-
-> Hello,\
-> \
-> We have received your request to exercise your rights on 31-07-2023 à 11:55 concerning Mr or Mrs . The request relates to the following purposes :
->
-> * Access
->
-> Please accept my sincerest greetings and I will keep you informed of the progress of your request.
->
-> Yours faithfully,\
-> \
-> Paul-Emmanuel Bidault
-
-
-
-For more information regarding the Liquid syntax, please go to [this page](https://shopify.github.io/liquid/).
+Templates use the Liquid syntax. See the [Liquid documentation](https://shopify.github.io/liquid/) for the list of tags and filters.

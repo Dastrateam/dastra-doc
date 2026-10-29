@@ -1,107 +1,101 @@
 ---
 description: >-
-  Dastra integreert met Adfs, deze pagina legt de details uit van de
-  configuratie van SSO met AD FS
+  Dastra integreert met ADFS. Deze pagina legt de bijzonderheden uit van het
+  configureren van SSO met AD FS.
 ---
 
 # ADFS
 
-## Wat is ADFS?
+## Over ADFS
 
-Active Directory Federation Services (meestal ADFS genoemd) is een single sign-on (SSO) oplossing ontworpen door Microsoft. Met deze services, die een onderdeel zijn van Windows Server-besturingssystemen, kunnen gebruikers zich authenticeren via Active Directory (AD) wanneer ze toegang willen tot een applicatie die geen Integrated Windows Authentication (IWA) kan gebruiken.
+Active Directory Federation Services (meestal afgekort tot ADFS) is een oplossing voor eenmalig inloggen (SSO) van Microsoft. Deze diensten, een onderdeel van de Windows Server-besturingssystemen, laten gebruikers authenticeren via Active Directory (AD) wanneer ze toegang willen tot een toepassing die geen Integrated Windows Authentication (IWA) kan gebruiken.
 
-**ADFS configureren in Dastra**
+## ADFS configureren in Dastra
 
-**Stap 1: Maak een SAML login aan in Dastra***.
+### Stap 1: een SAML-login maken in Dastra
 
-* Ga naar de [Dastra SSO-configuratiepagina](https://app.dastra.eu/general-settings/sso)
-* Klik op "Een SSO-login toevoegen".
-* Selecteer **SAML** als het type "**SSO Protocol**".
-* Voer in het veld "Identity Provider's Entity id (issuer)" de volgende url in: `http://<adfs server url>/adfs/services/trust`
-* Voer in het veld "**Identity Provider single sign on url**" de volgende url in: `https://<adfs server url>/adfs/ls`
+* Ga naar de [SSO-configuratiepagina van Dastra](https://app.dastra.eu/general-settings/sso) (**Organisatie-instellingen** > **Eenmalig inloggen**).
+* Klik op **Voeg een SSO-login toe**.
+* Selecteer bij **SSO-protocol** de optie **SAML2** en daarna **Handmatige configuratie**.
+* Voer in het veld **Entiteits-ID van de identiteitsprovider (uitgever)** de volgende URL in: `http://<adfs server url>/adfs/services/trust`
+* Voer in het veld **Identity Provider SSO url** het volgende in: `https://<adfs server url>/adfs/ls`
 
-**Stap 2: Het ADFS-certificaat ophalen**".
+### Stap 2: het ADFS-certificaat ophalen
 
-* Ga naar de map "**Certificates**" op de ADFS-server.
-* Haal het .CER-certificaat op van uw ADFS-server met het "**Token-Signing**"-certificaat.
+* Ga naar de map **Certificates** van de ADFS-server.
+* Haal het .CER-certificaat van uw ADFS-server op via het certificaat **Token-Signing**.
 
-![](<../../../.gitbook/assets/image (259).png>)
+<figure><img src="../../../.gitbook/assets/adfs1.png" alt="De map Certificates van de ADFS-server, met het certificaat Token-Signing"><figcaption></figcaption></figure>
 
-* Klik op "**Bekijk Certificaten**".
+* Klik op **View Certificates**.
 
-![](<../../../.gitbook/assets/image (250).png>)
+<figure><img src="../../../.gitbook/assets/adfs2.png" alt="De wizard voor het exporteren van het certificaat"><figcaption></figcaption></figure>
 
-Kopieer de X509 Certificaat code door het CER bestand te openen met een tekstverwerker.
+Kopieer de code van het X509-certificaat door het CER-bestand te openen met een teksteditor. Plak die in het certificaatveld, tussen `-----BEGIN CERTIFICATE-----` en `-----END CERTIFICATE-----`. Uw loginconfiguratie moet er als volgt uitzien:
 
-Voeg de certificaat code in in het certificaat veld dat begint met "----BEGIN CERTIFICATE-----" en eindigt met "--------END CERTIFICATE-----".
+<figure><img src="../../../.gitbook/assets/settings-sso-adfs-dastra-idp-configuration.png" alt="Het SAML-loginformulier in Dastra, ingevuld met de ADFS-waarden"><figcaption></figcaption></figure>
 
-Uw aanmeldingsconfiguratie zou er als volgt uit moeten zien:
+### Stap 3: de volgende waarden bewaren
 
-![](<../../../.gitbook/assets/image (257).png>)
+* De SP-omleidings-URI (formaat: `https://account.dastra.eu/xxxxx-xxxx-xxxx-xxxx/Acs`): de callback-URL van de toepassing, waarnaar het SAML-token wordt gestuurd. De ondersteunde algoritmen zijn SHA-256 en hoger. Kopieer de URI bovenaan het SAML-formulier.
+* De **Entiteits-ID van de identiteitsprovider (uitgever)**, die bovenaan hetzelfde formulier wordt weergegeven.
 
-**Stap 3**: Bewaar de volgende waarden:
-
-* SP redirect URI (formaat: https://account.dastra.eu/xxxxx-xxxx-xxxx-xxxx/Acs) :*De SP redirect URI is Application Callback URL (SAML Token wordt hier gepost). De ondersteunde coderingen zijn SHA 256 en hoger.
-* Identity id van de **Identity Provider (uitgever)**.
-
-Deze twee waarden worden gebruikt om de ADFS server te configureren om Dastra SSO verzoeken te accepteren.
+Deze twee waarden gebruikt u om de ADFS-server in te stellen zodat die SSO-verzoeken van Dastra accepteert.
 
 ## De Dastra-client configureren in ADFS
 
-Zo configureer je Dastra SSO met ADFS SSO SAML2P
+Zo configureert u Dastra-SSO met ADFS SSO SAML2P.
 
-**Stap 1**: Open "AD FS Management" op uw ADFS-server.
+Stap 1: open **AD FS Management** op uw ADFS-server.
 
-**Stap 2: Klik met de rechtermuisknop op "Relying Party Trusts" en selecteer "Add Relying Party Trust". Hiermee wordt de wizard **Add Relying Party Trust** gestart.
+Stap 2: klik met de rechtermuisknop op **Relying Party Trusts** en selecteer **Add Relying Party Trust**. De wizard **Add Relying Party Trust** start.
 
-![](<../../../.gitbook/assets/image (248).png>)
+<figure><img src="../../../.gitbook/assets/adfs4.png" alt="Het menu Relying Party Trusts in AD FS Management"><figcaption></figcaption></figure>
 
-**Stap 3:** Kies in het scherm _**Select Data Source**_ de optie _**Envoer gegevens over de betrouwbare partij handmatig in**_.
+Stap 3: kies op het scherm **Select Data Source** de optie **Enter data about the relying party manually**.
 
-![](<../../../.gitbook/assets/image (254).png>)
+<figure><img src="../../../.gitbook/assets/adfs5.png" alt="Het scherm Select Data Source van de wizard"><figcaption></figcaption></figure>
 
-**Stap 4:**Voer een _**Display naam** in, bijvoorbeeld **"Dastra"**_ _en klik op **"Volgende"**_.
+Stap 4: voer een **Display name** in, bijvoorbeeld "Dastra", en klik op **Next**.
 
-**Stap 5: Kies het _**AD FS profiel**_ met SAML 2.0 en klik op "**Next**".
+Stap 5: kies **AD FS profile** (SAML 2.0) en klik op **Next**.
 
-**Stap 6: Klik op _**Next**_ in het scherm _**Configure Certificate** zonder een certificaat te kiezen_.
+Stap 6: klik op het scherm **Configure Certificate** op **Next** zonder een certificaat te selecteren.
 
-**Stap 7:** Selecteer "_**Support for the SAML 2.0 SSO Web SSO protocol**_ inschakelen".
+Stap 7: selecteer **Enable support for the SAML 2.0 WebSSO protocol**.
 
-![](<../../../.gitbook/assets/image (252).png>)
+<figure><img src="../../../.gitbook/assets/adfs6.png" alt="Het scherm Configure URL van de wizard"><figcaption></figcaption></figure>
 
-In het veld "Relying party SAML 2.0 SSO service URL: zet de url van "**SP redirect URI"** aanwezig in de Dastra. Deze url heeft de vorm: https://account.dastra.eu/xxxx-xxxx-xxxx-xxxx/Acs
+Voer in het veld **Relying party SAML 2.0 SSO service URL** de SP-omleidings-URI van Dastra in. Die ziet er zo uit: `https://account.dastra.eu/xxxx-xxxx-xxxx-xxxx/Acs`
 
-**stap 8**: Voeg in de sectie "**Add a Relying party trust identifier**" twee waarden toe** : _account.dastra.eu_ en _https://account.dastra.eu_
+Stap 8: voeg in het gedeelte **Relying party trust identifier** twee waarden toe: `account.dastra.eu` en `https://account.dastra.eu`.
 
-**Stap 9: Klik op Volgende om het proces te voltooien.
+Stap 9: klik op **Next** tot het einde van de wizard.
 
-**Stap 10: Schakel het selectievakje _**Het dialoogvenster Claimregels bewerken openen**_ in voordat u op "Voltooien" klikt. Er verschijnt dan een venster "_**Declaratieregels bewerken"**_.
+Stap 10: schakel het selectievakje **Open the Edit Claim Rules dialog** in voordat u op **Close** klikt. Het venster **Edit Claim Rules** verschijnt.
 
-![](<../../../.gitbook/assets/image (251).png>)
+<figure><img src="../../../.gitbook/assets/adfs7.png" alt="Het laatste scherm van de wizard met de optie Edit Claim Rules"><figcaption></figcaption></figure>
 
-\
-**Stap 11: Klik op _**Add Rule**_ en kies de "Claim Rule": "_**Send LDAP Attributes as Claims"**_.
+Stap 11: klik op **Add Rule** en kies het claimregelsjabloon **Send LDAP Attributes as Claims**.
 
-![](<../../../.gitbook/assets/image (256).png>)
+<figure><img src="../../../.gitbook/assets/adfs8-1.png" alt="De lijst met claimregelsjablonen"><figcaption></figcaption></figure>
 
-**Stap 12**: Breng de claims als volgt in kaart, de claim namen kunnen variëren afhankelijk van je server configuratie. Dastra heeft drie attributen nodig om te functioneren: Email (Verplicht), Naam en Voornaam van de gebruiker :
+Stap 12: koppel de claims als volgt. De namen van de claims kunnen verschillen naargelang de configuratie van uw server. Dastra heeft drie attributen nodig: het e-mailadres (verplicht), de achternaam en de voornaam van de gebruiker.
 
-![](<../../../.gitbook/assets/image (258).png>)
+<figure><img src="../../../.gitbook/assets/adfs8.png" alt="De koppeling van LDAP-attributen aan uitgaande claims"><figcaption></figcaption></figure>
 
-**Stap 13: Klik op "Voltooien" en klik weer op "Regel toevoegen". Kies deze keer het type "_**Transform an Incoming Claim"** en klik op Next.
+Stap 13: klik op **Finish** en daarna opnieuw op **Add Rule**. Kies deze keer het sjabloon **Transform an Incoming Claim** en klik op **Next**.
 
-**Stap 14:** Configureer de volgende regel **: E-mailadres => Naam-ID => E-mail**.
+Stap 14: configureer de volgende regel: **Email Address** => **Name ID** => **Email**.
 
-![](<../../../.gitbook/assets/image (249).png>)
+<figure><img src="../../../.gitbook/assets/adfs10.png" alt="De regel Transform an Incoming Claim, geconfigureerd voor de Name ID"><figcaption></figcaption></figure>
 
-Pas dan de veranderingen toe door op "Toepassen" te klikken.
+Klik daarna op **Apply**.
 
-**Stap 15: Terug in het "AD FS Management"**" venster, klik met de rechtermuisknop op "**Verbruikende partij voor Dastra**" en kies "**Eigenschappen**". In het tabblad _**Advanced**_ kiest u **SHA-256** als beveiligd algoritme.
+Stap 15: klik in het venster **AD FS Management** met de rechtermuisknop op de relying party van Dastra en kies **Properties**. Kies op het tabblad **Advanced** SHA-256 als beveiligd hashalgoritme.
 
+Stap 16: de configuratie is voltooid.
 
-**Stap 16: Het is je gelukt!
+## Afronden en testen
 
-## Afsluiten en testen!
-
-Zodra alles aan beide kanten is geconfigureerd, kunt u terugkeren naar Dastra en direct in de manager een SSO aanmeldtest uitvoeren.
+Wanneer alles aan beide kanten is geconfigureerd, gaat u terug naar Dastra en klikt u op **Testen**, rechts van de verbinding in de lijst met SSO-logins.

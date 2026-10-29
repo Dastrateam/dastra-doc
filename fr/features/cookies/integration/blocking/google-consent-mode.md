@@ -14,11 +14,11 @@ Dastra supporte nativement le **Google Consent Mode V2**. Cette intégration per
 * Le snippet de consentement par défaut (voir étape 2) doit être inséré dans le `<head>` de votre site, **avant** le chargement de Google Tag Manager.
 * Dans Google Tag Manager, configurez une balise **« Google Tag »** déclenchée sur toutes les pages.
 * L'intégration fonctionne avec **Google Ads** (sans personnalisation) et **Google Analytics**.
-* Si vous utilisez des balises de conversion ou de remarketing Google Ads, assurez-vous qu'elles ne se déclenchent qu'après consentement, à l'aide d'un évènement personnalisé du type `dastra:consent:{slug-du-service}` (exemple : `dastra:consent:googleleads`).
+* Si vous utilisez des balises de conversion ou de remarketing Google Ads, assurez-vous qu'elles ne se déclenchent qu'après consentement, à l'aide d'un évènement personnalisé du type `dastra:consent:{slug-du-service}` (exemple : `dastra:consent:google-ads`).
 
-## Étape 1 — Activer le Consent Mode V2 sur le service
+## Étape 1 : Activer le Consent Mode V2 sur le service
 
-Depuis l'intégration du widget cookies, éditez le service concerné (ex. Google Analytics, Google Ads) et activez l'interrupteur **« Consent mode V2 »**. Une fois activée, la bannière Dastra enverra automatiquement le signal `consent_update` à GTM lors de chaque interaction de l'utilisateur avec le bandeau.
+Dans la section **Services** de la bannière, cliquez sur le service concerné (par exemple Google Analytics ou Google Ads) et activez l'interrupteur **Mode de consentement v2 (bêta)**. Une fois activée, la bannière Dastra enverra automatiquement le signal `consent_update` à GTM lors de chaque interaction de l'utilisateur avec la bannière.
 
 Sélectionnez ensuite les **types de consentement** à piloter pour ce service (tous cochés par défaut) :
 
@@ -31,7 +31,7 @@ Sélectionnez ensuite les **types de consentement** à piloter pour ce service (
 
 Le snippet de consentement par défaut à insérer dans votre site est affiché directement dans l'interface : utilisez le bouton **Copier** pour le récupérer, puis suivez l'étape 2.
 
-## Étape 2 — Placer le code de consentement par défaut avant GTM
+## Étape 2 : Placer le code de consentement par défaut avant GTM
 
 Pour que les tags Google attendent le signal de consentement avant de se déclencher, insérez le snippet suivant **avant** le code d'initialisation de GTM dans votre page :
 
@@ -55,13 +55,17 @@ Ce snippet indique aux tags Google qu'ils doivent attendre au maximum 500 ms le 
 Ce snippet doit impérativement être placé **avant** l'initialisation de GTM. S'il est chargé après, les tags Google peuvent se déclencher sans attendre le consentement.
 {% endhint %}
 
+{% hint style="info" %}
+Le SDK Dastra appelle la fonction globale `gtag`, définie par le snippet ci-dessus. Ne retirez pas la définition de `gtag()` de ce snippet : sans elle, le SDK ne peut pas envoyer la mise à jour du consentement.
+{% endhint %}
+
 ## Installation : en dur ou via GTM ?
 
 Le script Dastra CMP peut être intégré directement dans le code de la page (en dur) ou via GTM. Les deux méthodes sont valides. L'installation en dur est cependant recommandée car elle garantit que le snippet de consentement par défaut (ci-dessus) s'exécute bien avant GTM, ce qui est une condition nécessaire au bon fonctionnement du Consent Mode V2.
 
 ## Ajout de nouveaux services et réinitialisation du consentement
 
-Dastra ne re-propose pas automatiquement le bandeau aux visiteurs ayant déjà exprimé un consentement lorsque de nouveaux services sont ajoutés à la configuration. Si vous ajoutez un nouvel outil (ex. un nouvel outil analytics) et souhaitez obtenir le consentement des visiteurs existants pour ce service, vous devez **réinitialiser les consentements** depuis l'interface Dastra. Un bouton dédié dans la configuration du widget permet de forcer l'affichage du bandeau à tous les visiteurs lors de leur prochaine visite, y compris ceux ayant déjà effectué un choix.
+Dastra ne re-propose pas automatiquement la bannière aux visiteurs ayant déjà exprimé un consentement lorsque de nouveaux services sont ajoutés à la configuration. Si vous ajoutez un nouvel outil (ex. un nouvel outil analytics) et souhaitez obtenir le consentement des visiteurs existants pour ce service, vous devez **réinitialiser les consentements** depuis l'interface Dastra. L'action **Réinitialiser la collecte des preuves de consentement** du menu **Actions** de la bannière force l'affichage de la bannière à tous les visiteurs lors de leur prochaine visite, y compris ceux ayant déjà effectué un choix. Voir [Configurez la bannière](../../banner/configure.md#reinitialiser-la-collecte-des-preuves-de-consentement).
 
 ## Pour aller plus loin
 

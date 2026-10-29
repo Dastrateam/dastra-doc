@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-Google Tag Manager est un outil de taggage performant qui centralise l'ensemble des snippets de code que vous souhaitez intégrer dans votre site (Dastra peut d'ailleurs en faire partie !).\
+Google Tag Manager est un outil de taggage qui centralise l'ensemble des snippets de code que vous souhaitez intégrer dans votre site (Dastra peut d'ailleurs en faire partie).\
 Cette solution de taggage est très efficace pour implémenter le consentement effectif des cookies car elle ne nécessite pas de redéployer l'intégralité du site web lors de chaque modification de tags.
 
 ## Google Consent Mode V2
@@ -33,19 +33,22 @@ Vous pouvez par conséquent déclencher les balises correspondant aux différent
 
 ## Exemple
 
-Dans cet exemple, nous allons déclencher le tag Google Optimize au consentement de l'utilisateur.
+Dans cet exemple, nous déclenchons la balise de conversion Google Ads lorsque le visiteur consent au service Google Ads.
 
-Dans votre container GTM, créez un déclencheur sur évènement du dataLayer portant le nom de "dastra:consent:google-optimize"
+1. Dans votre conteneur GTM, créez un déclencheur de type **Custom Event** (évènement personnalisé) dont le nom d'évènement est `dastra:consent:google-ads`.
+2. Associez ce déclencheur à votre balise de conversion Google Ads.
 
-La balise Google Optimize ne se déclenchera alors que sur cet évènement. Voici ce que ça donne dans l'interface de GTM :
-
-![](../../../../.gitbook/assets/cookies-gtm-tag-google-optimize.png)
+La balise ne se déclenche alors que sur cet évènement.
 
 ## Cas spécifique des "blocking triggers"
 
 Dans certains cas, vous avez besoin de désactiver certaines balises si le consentement n'a pas été donné. L'évènement "dastra:consent:\<nom du service>" ne s'exécutant qu'au moment de l'affichage d'une page, cela peut dans certains cas être insuffisant si vous utilisez des triggers d'interaction dans la page différents tels que des clics sur des éléments de la page, des hauteurs de scroll...
 
-Dans ce cas, il est nécessaire d'effectuer certains paramétrages afin de **lire directement la valeur du consentement stocké dans le cookie de consentement**.
+Dans ce cas, il est nécessaire d'effectuer certains paramétrages pour **lire directement la valeur du consentement stocké dans le cookie de consentement**.
+
+{% hint style="info" %}
+Cette méthode ne fonctionne qu'avec le stockage par cookie : elle ne convient pas quand l'option **Activer le magasin localStorage pour les cookies de consentement** est activée. Si vous avez défini un nom de cookie personnalisé dans **Nom du cookie de stockage du consentement**, utilisez-le dans la variable.
+{% endhint %}
 
 ### 1. Créer une variable "DastraConsents"
 
@@ -115,7 +118,7 @@ Dans certain cas, certaines balises ne sont pas correctement nettoyés suite au 
 
 Dans certaines situations, il est possible que les balises soient toujours actives.
 
-Pour empêcher ce type de problèmes, il est possible de forcer le rafraîchissement de la page ce qui permet de réinitialiser totalement l'ensemble des marqueurs ou sdk javascript chargés par les services.
+Pour empêcher ce type de problèmes, il est possible de forcer le rafraîchissement de la page pour réinitialiser totalement l'ensemble des marqueurs ou sdk javascript chargés par les services.
 
 Il suffit d'insérer le code suivant (en dessous de la balise d'initialisation du widget Dastra si possible)
 

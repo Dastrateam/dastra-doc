@@ -1,13 +1,19 @@
-# 😇 Foire aux questions
+---
+description: >-
+  Réponses aux questions fréquentes sur les fonctionnalités générales de
+  Dastra.
+---
+
+# Foire aux questions
 
 ## Comment importer des jeux de données ?
 
-Pour importer des jeux de données, il faut vous rendre dans le module cartographie et sélectionner les jeux de données.
+1. Ouvrez **Inventaire** > **Référentiels** > **Jeux de données**.
+2. Cliquez sur la flèche du bouton **Créer jeu de données**, puis sur **Importer**.
 
-Vous pouvez vous y rendre en cliquant sur ce bouton : [https://app.dastra.eu/workspace/0/referentials/data-retention-rules](https://app.dastra.eu/workspace/0/referentials/data-retention-rules)
+<figure><img src="../../.gitbook/assets/general-import-1.png" alt="Liste des jeux de données avec le menu du bouton de création ouvert sur Importer"><figcaption><p>L'entrée Importer du menu du bouton de création</p></figcaption></figure>
 
-Dans le sous-menu du bouton "Créer un jeu de données", cliquez sur importer.
+3. Cliquez sur **Télécharger le modèle de fichier**, puis sur **Voir le format des colonnes** pour connaître les valeurs attendues.
+4. Remplissez le modèle, puis déposez le fichier dans la zone d'envoi.
 
-<figure><img src="../../.gitbook/assets/referentiel-datasets-create-dropdown.png" alt=""><figcaption></figcaption></figure>
-
-Vous pourrez ensuite télécharger le modèle de fichier et voir le format des colonnes attendu dans le modèle de fichier d'import. Il ne vous suffira ensuite plus qu'à déposer le fichier d'import pour que l'import soit réalisé.
+Pour la gestion des conflits, la correspondance des colonnes et l'import des champs de données associés, consultez la page [Importer vos données](import.md).

@@ -1,163 +1,176 @@
 ---
-description: Leer alles over het integreren van webhooks in Dastra
+description: >-
+  Breng uw toepassingen in realtime op de hoogte wanneer er een gebeurtenis
+  plaatsvindt in Dastra: webhooks configureren, ontvangen, beveiligen en beheren
+  met de API.
 ---
 
 # Webhooks
 
 ## Concept
 
-Eenvoudig gezegd worden webhooks gebruikt om een actie** te triggeren na een gebeurtenis. Ze worden over het algemeen gebruikt om systemen met elkaar te laten communiceren. Dit is de eenvoudigste manier om een waarschuwing te ontvangen wanneer er iets gebeurt in Dastra. Het doel is om toepassingen van derden (API, CRM, serverloze functies, enz.) in realtime op de hoogte te brengen.
+Een webhook activeert een actie als reactie op een gebeurtenis. Webhooks laten systemen met elkaar communiceren: ze waarschuwen u zodra er iets gebeurt in Dastra. Het doel is toepassingen van derden (API's, CRM, serverloze functies enzovoort) in realtime op de hoogte te brengen.
 
+## Configuratie
 
+Webhooks worden op organisatieniveau geconfigureerd en zijn voorbehouden aan eigenaren. Klik op het tandwielpictogram in de bovenbalk (**Organisatie-instellingen**) en daarna in het linkermenu op **Webhaken**. Het directe adres is [https://app.dastra.eu/general-settings/webhooks](https://app.dastra.eu/general-settings/webhooks).
 
-## Configuratie 🛠️
+<figure><img src="../../.gitbook/assets/settings-webhooks-1.png" alt="De lijst met geconfigureerde webhooks en hun status"><figcaption><p>De lijst met webhooks</p></figcaption></figure>
 
-Om uw webhooks te configureren, gaat u naar: [https://app.dastra.eu/general-settings/webhooks](https://app.dastra.eu/general-settings/webhooks)
+1. Klik op **Maak een webhook url**.
+2. Vul de **Webhook url** in. Wat die ontvangt, leest u in [Hoe ontvangt u de webhook](webhooks.md#comment-receptionner-le-webhook).
+3. Kies de werkruimte bij **Een specifieke werkruimte selecteren**. Kiest u er geen, dan geldt de webhook voor **Alle werkplekken**.
+4. Optioneel: vul het **E-mailadres dat wordt gebruikt om een melding te versturen bij herhaaldelijk falen** in. Dastra stuurt een e-mail naar dit adres wanneer de webhook in fout gaat.
+5. Selecteer bij **Welk(e) event(s) wil je ontvangen?** de gebeurtenis of gebeurtenissen waarop u zich wilt abonneren. Minstens één gebeurtenis is verplicht. Het type gegevens dat wordt teruggestuurd, hangt af van de gebeurtenis: kiest u bijvoorbeeld het aanmaken van een verzoek van een betrokkene, dan bevat de inhoud van het verzoek een JSON die dat verzoek beschrijft.
+6. Klik op **Opslaan**.
 
-(<../../.gitbook/assets/image (252) (1) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/settings-webhooks-3.png" alt="Het formulier voor het aanmaken van een webhook met url, werkruimte, e-mailadres en gebeurtenissen"><figcaption><p>Het webhookformulier</p></figcaption></figure>
 
-* Klik op maak een "webhook url".
-* Voer je webhook ontvangst url in. Voor meer informatie, zie de sectie [Hoe de webhook ontvangen](webhooks.md#undefined).
-* Voer de relevante werkruimte in
-* Selecteer de gebeurtenis(sen) waarop u zich wilt abonneren. Het type gegevens dat wordt geretourneerd, verschilt afhankelijk van het type gebeurtenis. Je kunt de webhook bijvoorbeeld triggeren wanneer een nieuw verzoek om een recht uit te oefenen wordt aangemaakt. In dit geval zal de verzoektekst een json bevatten
-* De webhook opslaan
+De beschikbare gebeurtenissen zijn die van het meldingscentrum, gegroepeerd per objecttype (verwerkingsactiviteiten, verzoeken van betrokkenen, datalekken enzovoort).
 
-Dit brengt u naar het **webhook detailscherm.**.
+{% hint style="info" %}
+Een organisatie kan maximaal 30 webhooks declareren.
+{% endhint %}
 
-![](<../../.gitbook/assets/image (254) (1) (1).png>)
+Daarna opent het detailscherm van de webhook. Het toont de url, de werkruimte, de status van de webhook (**Actief** of **Uitgeschakeld**), in voorkomend geval de **Laatste foutmelding**, de gekozen gebeurtenissen en de **Webhook-validatiesleutel**, die u kunt kopiëren. De knoppen **Bewerken**, **Stuur een test webhook** en **Verwijderen** staan er ook.
 
-### Hoe de webhook te ontvangen 🛬
+<figure><img src="../../.gitbook/assets/settings-webhooks-2.png" alt="Het detailscherm van een webhook met verborgen validatiesleutel"><figcaption><p>De details van een webhook</p></figcaption></figure>
 
-Om verzoeken van de webhook te ontvangen, moet je een event capture API endpoint maken. Het verzoek is in **POST** en zal altijd op deze manier gestructureerd zijn. De request body bevat een json met details van het getriggerde event.
+## Hoe ontvangt u de webhook <a href="#comment-receptionner-le-webhook" id="comment-receptionner-le-webhook"></a>
 
-Hier is de algemene structuur van het verzonden antwoord:&#x20;
+Om webhookverzoeken te ontvangen, maakt u een API-eindpunt aan dat de gebeurtenissen opvangt. Het verzoek wordt als POST verstuurd en heeft altijd dezelfde structuur. De inhoud van het verzoek bevat een JSON met de details van de gebeurtenis die is geactiveerd.
+
+Hier is de algemene structuur van het verstuurde verzoek:
 
 ```json
 {
- "webhookId": <id van de webhook geconfigureerd in dastra>,
+ "webhookId": <id of the webhook configured in dastra>,
  "signatureUrl": "https://yourapi.com/webhooks/handle",
- "userId": <De gebruiker die het event heeft getriggerd>,
- "eventType": <De id van de gebeurtenis>,
- "eventName": <Het label van de gebeurtenis>,
- "data": <Dynamische gegevens van de gebeurtenis>,
- "date": <datum van de gebeurtenis>.
-} 
+ "userId": <The user who triggered the event>,
+ "eventType": <The id of the event>,
+ "eventName": <The label of the event>,
+ "data": <Event dynamic data>,
+ "date": <date of the event>
+}
 ```
 
-Er wordt een time-out van 10 seconden toegepast op het verzoek, waarna het verzoek een foutmelding krijgt. De responscode moet 200.&#x20 zijn;
+Op het verzoek geldt een time-out van 10 seconden, waarna het in fout gaat. Het antwoord moet een succescode (2xx) zijn, bijvoorbeeld 200.
 
-Er kan een kleine vertraging optreden tussen het moment dat het event optreedt in de applicatie en het moment dat de webhook wordt getriggerd (deze vertraging heeft te maken met de asynchrone aard van de uitvoering van webhooks in onze infrastructuur). Deze vertraging varieert afhankelijk van de belasting van onze infrastructuur en kan oplopen tot maximaal 60-120 seconden.
-
-{% hint style="info" %}
-Er is momenteel geen systeem om mislukte webhooks opnieuw af te spelen en zo te compenseren voor eventuele onbeschikbaarheid van de servers die de webhooks ontvangen. In dit geval raden we aan om de mislukte gebeurtenissen handmatig te synchroniseren.
-{% endhint %}
-
-### Test uw webhook url 🧪
-
-U kunt nu uw webhook in echte omstandigheden testen **door op de knop "Testen" te klikken**.
-
-
-
-### Hoe beveilig ik mijn webhook? 🛡️
+Er kan een kleine vertraging zitten tussen het moment waarop de gebeurtenis in de toepassing plaatsvindt en het verzenden van de webhook. Die vertraging komt door de asynchrone uitvoering van webhooks in onze infrastructuur. Ze hangt af van de belasting van de infrastructuur en kan oplopen tot 60 à 120 seconden.
 
 {% hint style="info" %}
-Ook al is het niet verplicht, het wordt **aanbevolen om het inkomende verzoek** van de webhook te valideren om mogelijke aanvallen te voorkomen van een hacker die het netwerk heeft afgeluisterd en zo alles op uw webhook url kan plaatsen en zo de aanmaak van elementen in uw systeem kan triggeren of spammen.
+Er bestaat momenteel geen systeem om mislukte webhooks opnieuw af te spelen en zo een eventuele onbeschikbaarheid van de ontvangende server op te vangen. We raden in dat geval aan de mislukte gebeurtenissen handmatig te synchroniseren.
 {% endhint %}
 
-Elke keer dat er een verzoek wordt gedaan om een element in Dastra te wijzigen of te verwijderen, posten we een object naar alle url's die je hebt geconfigureerd voor de gewenste gebeurtenis. Elk POST verzoek zal een **Dastra-handtekening** header bevatten, die kan worden opgehaald aan de server kant &#x20;
+## Uw webhook url testen
 
-Deze header komt overeen met de volledige JSON gepost **is gehashed met behulp van het HMAC-Sha256 algoritme** met behulp van de webhook validatiesleutel.
+Om uw webhook onder realistische omstandigheden te testen, opent u het detailscherm en klikt u op **Stuur een test webhook**. Doe in het venster **Webhook testtool** het volgende:
 
-> DastraSignature = **HMAC256**(\<geserialiseerde JSON van POST>,\<webhook validatiesleutel>)
+1. Kies bij **Kies het evenement dat je wilt testen** de gebeurtenis die u wilt testen. De lijst toont de gebeurtenissen waarop de webhook is geabonneerd.
+2. Wijzig indien nodig de verzonden gegevens bij **Verzonden gegevens bewerken (indien nodig)**. Dastra vult het veld met een voorbeeld voor de gekozen gebeurtenis.
+3. Klik op **Stuur een test webhook**.
 
-Hier zijn enkele voorbeelden van het valideren van de verzoekhandtekening:
+Een bevestigingsbericht toont dat uw url met een 200-code heeft geantwoord. Was de webhook na fouten geblokkeerd, dan schakelt een geslaagde test hem weer in.
+
+<figure><img src="../../.gitbook/assets/settings-webhooks-4.png" alt="Het venster Webhook testtool met de gebeurtenis en de te verzenden gegevens"><figcaption><p>De testtool voor webhooks</p></figcaption></figure>
+
+## De webhook beveiligen
+
+{% hint style="info" %}
+Het valideren van het binnenkomende verzoek is niet verplicht, maar wel aanbevolen. Zo voorkomt u dat iemand die het netwerk heeft bekeken, willekeurige gegevens naar uw webhook url post en daarmee het aanmaken van items in uw systeem activeert of vermenigvuldigt.
+{% endhint %}
+
+Telkens wanneer een gebeurtenis plaatsvindt waarop u bent geabonneerd, stuurt Dastra een POST-verzoek naar de webhook url. Elk verzoek bevat de header `Dastra-Signature`, die uw server kan lezen.
+
+De waarde is de HMAC-SHA256 van de exacte JSON-inhoud van het verzoek, berekend met de validatiesleutel van de webhook en daarna gecodeerd in Base64.
+
+> Dastra-Signature = Base64(HMAC-SHA256(\<JSON-inhoud van het verzoek>, \<validatiesleutel van de webhook>))
+
+Gebruik de validatiesleutel precies zoals die op het detailscherm van de webhook wordt weergegeven. Hier zijn voorbeelden van de validatie van de handtekening:
 
 {% tabs %}
 {% tab title="PHP" %}
 ```php
-error_reporting(E_ALL);
-ini_set('display_errors', 1); 
-c
-$secret = "your dastra validation key";// your secret key
-$payload = "";// equest body
-$headers = "";// request message headers array
+<?php
+$secret = 'YOUR_WEBHOOK_KEY'; // signature key shown on the webhook details screen
 
-$signature = "";// the HMAC hash key in the HTTP header 'Dastra-Signature'
-$result = false;// verification result
+$payload = file_get_contents('php://input'); // raw request body
+$signature = $_SERVER['HTTP_DASTRA_SIGNATURE'] ?? ''; // value of the Dastra-Signature header
 
-if (isset($_POST)) {
-    try {
-        $payload = file_get_contents('php://input');
-        $headers = get_ds_headers();
-        if (array_key_exists("Dastra-Signature", $headers)) {
-            $signature = $headers["Dastra-Signature"];
-            $result = hash_is_valid($secret, $payload, $signature);
-            log_result($signature, $payload, $result);
-        }
-     } catch (Exception $e) {
-        logger("\nException: " . $e->getMessage() . "\n");
-    }
-    header("HTTP/1.1 200 OK");
+$computed = base64_encode(hash_hmac('sha256', $payload, $secret, true));
+
+if (!hash_equals($computed, $signature)) {
+    http_response_code(401);
+    exit;
 }
 
-function get_ds_headers()
-{
-    $headers = array();
-    foreach ($_SERVER as $key => $value) {
-        if (strpos($key, 'HTTP_') === 0) {
-            $headers[str_replace(' ', '', ucwords(str_replace('_', ' ', strtolower(substr($key, 5)))))] = $value;
-        }
-    }
-    return $headers;
-}
- 
-function compute_hash($secret, $payload)
-{
-    $hexHash = hash_hmac('sha256', $payload, utf8_encode($secret));
-    $base64Hash = base64_encode(hex2bin($hexHash));
-    return $base64Hash;
-}
- 
-function hash_is_valid($secret, $payload, $verify)
-{
-    $computed_hash = compute_hash($secret, $payload);
-     return hash_equals($verify,$computed_hash);
- }
+// the signature is valid: process the event
+http_response_code(200);
 ```
 {% endtab %}
 
 {% tab title="C#" %}
 ```csharp
+[HttpPost("webhooks/handle")]
+public async Task<IActionResult> Handle()
+{
+    string signature = Request.Headers["Dastra-Signature"];
+    string key = "YOUR_WEBHOOK_KEY";
 
-[HttpPost]
-public IActionResult Handle(){
-    string dastraSignature = Request.Headers["Dastra-Signature"];
-    string key = "Your validation key";
-    string payload = GetRequestBody();
+    using var reader = new StreamReader(Request.Body, Encoding.UTF8);
+    string payload = await reader.ReadToEndAsync();
+
+    if (!ValidateSignature(signature, payload, key))
+    {
+        return Unauthorized();
+    }
+
+    // the signature is valid: process the event
+    return Ok();
 }
 
 private static bool ValidateSignature(string signature, string payload, string secret)
 {
-    using (var hmacsha256 = new HMACSHA256(Encoding.UTF8.GetBytes(secret)))
-    {
-        var hash = hmacsha256.ComputeHash(Encoding.UTF8.GetBytes(payload));
-        var result = Convert.ToBase64String(hash);
-    }
-    
-    return result.Equals(signature)
-}
+    using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(secret));
+    byte[] hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(payload));
+    string computed = Convert.ToBase64String(hash);
 
-private static string GetRequestBody()
-{
-    var bodyStream = new StreamReader(Request.InputStream);
-    bodyStream.BaseStream.Seek(0, SeekOrigin.Begin);
-    var bodyText = bodyStream.ReadToEnd();
-    return bodyText;
+    return CryptographicOperations.FixedTimeEquals(
+        Encoding.UTF8.GetBytes(computed),
+        Encoding.UTF8.GetBytes(signature ?? string.Empty));
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-### Wat gebeurt er als de url reageert met iets anders dan 200?
+## Gedrag bij fouten
 
-De webhook wordt automatisch geblokkeerd en als fout beschouwd wanneer de drempel van 5 fouten wordt overschreden.
+De webhook wordt als foutief beschouwd wanneer meer dan 5 fouten zijn geregistreerd. Dastra stopt met het versturen van gebeurtenissen naar de url zolang de laatste fout minder dan 24 uur oud is. Is er in de configuratie een e-mailadres opgegeven, dan ontvangt dat een bericht. Een geslaagde test zet de foutenteller terug op nul.
+
+## Webhooks instellen met de API
+
+Haal de webhooks op die aan uw account zijn gekoppeld (in alle werkruimten). De optionele parameter `workspaceId` beperkt de lijst tot één werkruimte.
+
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls" method="get" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
+
+Maak een nieuwe webhook url aan met het POST-eindpunt. Geef met de parameter `subscribedEvents` de gebeurtenissen op waarop u uw webhook wilt abonneren.
+
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls" method="post" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
+
+U krijgt een webhook-ID terug. Daarmee leest, wijzigt of verwijdert u de webhook.
+
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="get" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="put" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}
+
+{% openapi src="../../.gitbook/assets/dastra-api.json" path="/v1/WebHookUrls/{id}" method="delete" %}
+[dastra-api.json](../../.gitbook/assets/dastra-api.json)
+{% endopenapi %}

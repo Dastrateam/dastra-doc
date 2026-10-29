@@ -1,35 +1,46 @@
 ---
-description: Diese Seite beschreibt die Einrichtung des SSO in Dastra
+description: >-
+  Richten Sie die einmalige Anmeldung (SSO) für Ihre Organisation in Dastra
+  ein: Protokolle, Verbindungsoptionen, automatische Nutzererstellung und
+  Verwaltung der Anmeldungen.
 ---
 
 # Single Sign On (SSO)
 
 ## Funktionsprinzip
 
-Die **einmalige Anmeldung**, oft mit dem englischen Kürzel **SSO** (Single Sign-On) bezeichnet, ist eine Methode, die es einem Nutzer ermöglicht, auf mehrere Computeranwendungen (oder gesicherte Websites) zuzugreifen, indem er sich nur einmal authentifiziert.
+Die **einmalige Anmeldung**, oft mit dem englischen Kürzel **SSO** (Single Sign-On) bezeichnet, ist eine Methode, mit der ein Nutzer nach einer einzigen Authentifizierung auf mehrere Anwendungen (oder gesicherte Websites) zugreifen kann.
 
-Das Unternehmen kann **sein eigenes Authentifizierungssystem** anstelle der von Dastra standardmäßig angebotenen lokalen Anmeldung verwenden. Zu den am häufigsten verwendeten SSO-Systemen gehören Microsoft Active Directory, Google Workspace (ehemals GSuite), Auth0 usw.
+Ein Unternehmen kann **sein eigenes Authentifizierungssystem** anstelle der lokalen Anmeldung verwenden, die Dastra standardmäßig anbietet. Zu den am häufigsten verwendeten SSO-Systemen gehören Microsoft Active Directory, Google Workspace (früher GSuite) und Auth0.
 
 **Die Funktionsweise ist wie folgt:**
 
-Ein Nutzer (**User Agent**) fordert eine Verbindung beim Dienstanbieter (**Service Provider**) an, der sich an einen Identitätsanbieter (**Identity Provider**) wendet, der den Nutzer authentifiziert. Diese Authentifizierung wird dann an den Dienstanbieter zurückgesendet, der die Verbindungsanfrage des Nutzers akzeptiert.
+Ein Nutzer (**User Agent**) fordert eine Verbindung beim Dienstanbieter (**Service Provider**) an, der einen Identitätsanbieter (**Identity Provider**) bittet, den Nutzer zu authentifizieren. Das Ergebnis der Authentifizierung wird dann an den Dienstanbieter zurückgesendet, der die Verbindungsanfrage des Nutzers akzeptiert.
 
-In unserem Fall ist der User Agent der **Browser eines Dastra-Nutzers**. Der Service Provider ist **Dastra** und der Identity Provider ist Ihr **bevorzugter Authentifizierungsanbieter** (zum Beispiel: Active Directory).
+Bei Dastra ist der User Agent **der Browser eines Dastra-Nutzers**, der Service Provider ist **Dastra** und der Identity Provider ist **Ihr Authentifizierungsanbieter** (zum Beispiel Active Directory).
 
-![Funktionsprinzip des SSO unter Verwendung des SAML-2-Protokolls](../../../.gitbook/assets/image-114.png)
+<figure><img src="../../../.gitbook/assets/sso.png" alt="Funktionsweise des SSO mit dem Protokoll SAML 2: die Austauschvorgänge zwischen Dienstanbieter, User Agent und Identitätsanbieter"><figcaption></figcaption></figure>
 
 ## Einrichtung
 
-Innerhalb eines Dastra-Abonnements haben Sie die Möglichkeit, wenn Sie die Funktionalität abonniert haben, ein oder mehrere SSO-Logins zu verwalten. Um auf die SSO-Konfiguration zuzugreifen, gehen Sie auf [die Konfigurationsseite für SSO-Logins](https://app.dastra.eu/general-settings/sso) im Sicherheits-Tab des Konfigurationspanels des Abonnementkontos.
+Ein Dastra-Abonnement kann eine oder mehrere SSO-Anmeldungen enthalten, wenn die Funktion in Ihrem Abonnement enthalten ist. Um sie zu verwalten, öffnen Sie die **Organisationseinstellungen** (unten im Menü **Mandanteneinstellungen**) und dann **Einmalige Anmeldung**. Sie gelangen auf die [Konfigurationsseite der SSO-Anmeldungen](https://app.dastra.eu/general-settings/sso).
 
 {% hint style="info" %}
-**Achtung**: Sie müssen Inhaber der Organisation sein, um auf diese Seite zugreifen zu können.
+Nur ein Inhaber der Organisation kann auf diese Seite zugreifen.
 {% endhint %}
 
-Dastra bietet zwei Protokolle für die einmalige Anmeldung an: [**SAML 2**](saml.md) und [**Open ID**](openid.md). Um auf die Konfigurationshilfe zuzugreifen, klicken Sie auf die folgenden Links.
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-1.png" alt="Die Seite Einmalige Anmeldung mit dem Block der zugelassenen E-Mail-Domains, der Liste der SSO-Verbindungen und der SCIM-Karte"><figcaption><p>Die Seite <strong>Einmalige Anmeldung</strong></p></figcaption></figure>
+
+Die Seite besteht aus drei Blöcken:
+
+* **Zugelassene E-Mail-Domains** oben: siehe [E-Mail-Domains](../email-domains.md).
+* Die Liste Ihrer SSO-Verbindungen, die Sie mit **SSO-Login hinzufügen** erweitern.
+* **SCIM** unten: siehe [SCIM](../scim.md).
+
+Um eine Verbindung zu erstellen, klicken Sie auf **SSO-Login hinzufügen** und wählen Sie dann das Protokoll. Dastra bietet zwei Single-Sign-On-Protokolle an, [**SAML 2**](saml.md) und [**OpenID**](openid.md). Über die folgenden Links gelangen Sie zu den Konfigurationsanleitungen.
 
 {% content-ref url="saml.md" %}
-[saml-2.md](saml.md)
+[saml.md](saml.md)
 {% endcontent-ref %}
 
 {% content-ref url="openid.md" %}
@@ -40,69 +51,97 @@ Dastra bietet zwei Protokolle für die einmalige Anmeldung an: [**SAML 2**](saml
 [adfs.md](adfs.md)
 {% endcontent-ref %}
 
-## Wie aktiviere ich das SSO für alle Nutzer Ihrer Organisation?
+{% content-ref url="entra-id.md" %}
+[entra-id.md](entra-id.md)
+{% endcontent-ref %}
 
-### Einrichtung:
+{% content-ref url="okta.md" %}
+[okta.md](okta.md)
+{% endcontent-ref %}
 
-* Klicken Sie auf Ihre SSO-Konfiguration
-* Aktivieren Sie das Kontrollkästchen „Für alle Nutzer erzwingen"
+{% content-ref url="known-problems.md" %}
+[known-problems.md](known-problems.md)
+{% endcontent-ref %}
 
-<figure><img src="../../../.gitbook/assets/image-405.png" alt=""><figcaption></figcaption></figure>
+## Formularfelder
 
-### Verwaltung von SSO-Login befreiten Nutzern
+Das Formular einer SSO-Verbindung öffnet sich in einem Seitenfenster mit drei Abschnitten.
 
-In bestimmten Fällen möchten Sie **das SSO für bestimmte Nutzer deaktivieren** (zum Beispiel ein Sicherheitsadministrator, ein Dienstkonto, ein Nutzer, der sich nicht in Ihrem Active Directory befindet...). In diesem Fall ist es möglich, spezifische Nutzer anzugeben, die nicht zum SSO-Login Ihrer Organisation weitergeleitet werden. Es wird empfohlen, einen Nutzer mit einem lokalen Dienstkonto zu benennen, um Fehlfunktionen des SSO zu handhaben, beispielsweise bei einem Ausfall des Identitätsanbieters oder einem Konfigurationsproblem.
+**1. Allgemeines**
 
-Diese Nutzer können sich mit **ihrem Passwort** bei der Anwendung anmelden.
+* **Bezeichnung der SSO-Anmeldung**: der Name der Verbindung in der Liste, höchstens 80 Zeichen.
+* **Für alle Nutzer erzwingen**: Alle Nutzer müssen sich mit dieser SSO-Anmeldung anmelden. Siehe [SSO für alle Nutzer aktivieren](#sso-fur-alle-nutzer-aktivieren).
+* **Aktivieren**: Ist die Verbindung deaktiviert, bleibt die Standardanmeldung mit Passwort in Kraft.
+* **Standardmäßig neuen eingeladenen Benutzern zugewiesen**: Dastra wählt diese Verbindung standardmäßig aus, wenn Sie einen neuen Nutzer einladen.
 
-Sie können vom SSO befreite Nutzer benennen, indem Sie die Nutzer Ihrer Organisation im folgenden Feld auswählen:
+**2. Konfiguration**
 
-<figure><img src="../../../.gitbook/assets/image-406.png" alt=""><figcaption></figcaption></figure>
+* Die protokollspezifischen Felder: siehe [SAML 2](saml.md) und [OpenID](openid.md).
+* **Der Name des Anspruchs, der die E-Mail-Adresse enthält**: der Name des Claims, in dem Ihr Identitätsanbieter die E-Mail-Adresse des Nutzers zurückgibt. Wenn Dastra Ihre Nutzer nicht erkennt, siehe [Bekannte Probleme](known-problems.md).
 
-## Wie aktiviere ich die automatische Nutzerbereitstellung?
+**3. Automatische Erstellung von Nutzern**
 
-Wenn Sie möchten, dass die Nutzer Ihres Identitätsanbieters keine Konten erstellen müssen, um auf die Einheit zuzugreifen, können Sie das Kontrollkästchen „Automatische Nutzerbereitstellung" aktivieren. Wenn Sie Ihren Nutzern eine SSO-Anbieter-URL wie diese bereitstellen:
+* **Nutzer wird erstellt, wenn der Nutzer noch nie zu Dastra eingeladen wurde**: aktiviert die automatische Kontoerstellung. Siehe [Automatische Nutzerbereitstellung aktivieren](#automatische-nutzerbereitstellung-aktivieren).
+* **Die standardmäßig allen Mandanten des Abonnements zugewiesene Rolle, wenn der Nutzer erstellt wird**: optional.
+* **Auswahl eines bestimmten Mandanten**: optional. Wenn Sie einen Mandanten auswählen, erscheint ein Feld für den Namen des Gruppenanspruchs: siehe [Team-Binding](#team-binding).
+
+## SSO für alle Nutzer aktivieren
+
+1. Klicken Sie in der Liste der SSO-Verbindungen auf die Verbindung.
+2. Aktivieren Sie im Abschnitt **Allgemeines** die Option **Für alle Nutzer erzwingen**.
+
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-3.png" alt="Der Abschnitt Allgemeines des SSO-Formulars mit aktivierter Option Für alle Nutzer erzwingen und dem Feld für ausgenommene Nutzer"><figcaption><p>Der Abschnitt <strong>Allgemeines</strong> der Verbindung</p></figcaption></figure>
+
+### Von der SSO-Anmeldung befreite Nutzer
+
+In manchen Fällen möchten Sie **das SSO für bestimmte Nutzer ausschalten**, zum Beispiel für einen Sicherheitsadministrator, ein Dienstkonto oder einen Nutzer, der nicht in Ihrem Active Directory enthalten ist. Sie können bestimmte Nutzer benennen, die nicht auf die SSO-Anmeldung Ihrer Organisation weitergeleitet werden. Wir empfehlen, mindestens einen Nutzer mit einem lokalen Dienstkonto zu benennen: So können Sie sich bei einer SSO-Störung, etwa einem Ausfall des Identitätsanbieters oder einem Konfigurationsfehler, wieder Zugang verschaffen.
+
+Diese Nutzer melden sich **mit ihrem Passwort** an der Anwendung an.
+
+Um sie zu benennen, wählen Sie Nutzer Ihrer Organisation im Feld **Bestimmte Nutzer, die von der SSO ausgenommen sind (z. B. Sicherheitsadministratoren)** aus. Dieses Feld erscheint, wenn **Für alle Nutzer erzwingen** aktiviert ist.
+
+## Automatische Nutzerbereitstellung aktivieren
+
+Wenn die Nutzer Ihres Identitätsanbieters kein Konto benötigen sollen, bevor sie auf die Organisation zugreifen, aktivieren Sie im Abschnitt **Automatische Erstellung von Nutzern** die Option **Nutzer wird erstellt, wenn der Nutzer noch nie zu Dastra eingeladen wurde**.
+
+Die automatische Bereitstellung funktioniert nur, wenn sich die Nutzer über den Link Ihrer SSO-Verbindung anmelden. Von der Standard-Anmeldeseite aus funktioniert sie nicht. Der Link sieht so aus:
 
 ```
-https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={ID Ihres Providers}
+https://account.dastra.eu/Account/ExternalLogin?returnUrl=https://app.dastra.eu&provider={your provider id}
 ```
 
-Sie können diesen Link abrufen, indem Sie auf diese Schaltfläche klicken:<br>
+Die Adressen im Link sind die Ihrer Region. Um ihn zu erhalten, klicken Sie auf der Karte der Verbindung rechts neben **Testen** auf die Schaltfläche **Link kopieren** und senden Sie ihn dann an Ihre Nutzer.
 
-<figure><img src="../../../.gitbook/assets/image-415.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-2.png" alt="Die Karte einer SSO-Verbindung mit den Schaltflächen Testen und Link kopieren"><figcaption><p>Die Schaltfläche <strong>Link kopieren</strong> auf der Karte</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/sso-config-sample.png" alt=""><figcaption></figcaption></figure>
-
-Im Fall einer validierten Authentifizierung wird automatisch ein Konto in Dastra erstellt und eine Benachrichtigungs-E-Mail wird Ihnen einige Stunden später zugesendet.
-
-Die automatische Bereitstellung funktioniert nur, wenn dieser Link an die Nutzer weitergegeben wird; sie können dies nicht über die klassische Anmeldeseite tun.
+Nach einer erfolgreichen Authentifizierung wird das Konto automatisch in Dastra erstellt. Die Inhaber der Organisation erhalten dann eine Benachrichtigung mit dem Namen und der E-Mail-Adresse des erstellten Kontos, dem Datum und der Uhrzeit, der SSO-Verbindung, die es erstellt hat, der zugewiesenen Standardrolle und gegebenenfalls dem betroffenen Mandanten. Sie verweist auf die Seite **Nutzer**, damit Sie die erwarteten Rechte ohne Verzögerung vergeben können.
 
 {% hint style="warning" %}
-Wenn das Konto des Nutzers im Authentifizierungsanbieter gelöscht oder ungültig gemacht wird, wird sein Konto in Dastra nicht gelöscht, er kann sich jedoch nicht mehr anmelden. Sie haben die Möglichkeit, diese Konten [über den Nutzermanager des Abonnements](https://app.dastra.eu/general-settings/users) zu bereinigen.
+Wird das Konto eines Nutzers beim Authentifizierungsanbieter gelöscht oder deaktiviert, wird es in Dastra nicht gelöscht, aber der Nutzer kann sich nicht mehr anmelden. Sie können diese Konten in der [Nutzerverwaltung des Abonnements](https://app.dastra.eu/general-settings/users) bereinigen.
 {% endhint %}
 
-Sie können **die standardmäßig zugewiesene Rolle** für alle mit Ihrem Abonnement verknüpften Organisationen wählen.
+Sie können **Die standardmäßig allen Mandanten des Abonnements zugewiesene Rolle, wenn der Nutzer erstellt wird** auswählen.
 
-![](../../../.gitbook/assets/image-124.png)
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-4.png" alt="Der Abschnitt Automatische Erstellung von Nutzern mit der Standardrolle, dem Mandanten und dem Namen des Gruppenanspruchs"><figcaption><p>Der Abschnitt <strong>Automatische Erstellung von Nutzern</strong></p></figcaption></figure>
 
 {% hint style="info" %}
-Derzeit unterstützt Dastra nicht das Binding von Rollen über die Eigenschaften des Authentifizierungsservers. Wenn diese Funktionalität wichtig ist, können Sie uns dies über die [Support-Seite](https://app.dastra.eu/general-settings/support) mitteilen.
+Dastra unterstützt derzeit nicht die Zuordnung von Rollen anhand der Eigenschaften des Authentifizierungsservers. Wenn Ihnen diese Funktion wichtig ist, melden Sie dies über die [Supportseite](https://app.dastra.eu/general-settings/support).
 {% endhint %}
 
 ### Team-Binding
 
-Es ist möglich, die Teams eines Mandanten an eine Eigenschaft (Claim) zu binden, die von Ihrem Authentifizierungsserver zurückgegeben wird.
+Sie können die Teams eines Mandanten an eine Eigenschaft (Claim) binden, die Ihr Authentifizierungsserver zurückgibt. Wählen Sie den Mandanten unter **Auswahl eines bestimmten Mandanten** aus und geben Sie dann im darunter erscheinenden Feld den Namen des Gruppenanspruchs ein: Dastra stellt die Teams anhand dieses Claims bereit.
 
-<figure><img src="../../../.gitbook/assets/image-1-1-2-1-1.png" alt=""><figcaption></figcaption></figure>
+## Nutzeranmeldungen verwalten
 
-## Wie verwalte ich die Logins der Nutzer?
+Sie legen die Anmeldeart jedes Nutzers in der [Nutzerverwaltung des Abonnements](https://app.dastra.eu/general-settings/users) fest (**Organisationseinstellungen** > **Nutzer**). Öffnen Sie das Profil des Nutzers und wählen Sie unter **Standardmäßige Verbindungsmethode** die bevorzugte SSO-Anmeldung. Ein Nutzer, der sich anschließend mit seiner E-Mail-Adresse bei Dastra anmeldet, wird auf die Anmeldeseite des von Ihnen eingerichteten Authentifizierungsanbieters weitergeleitet.
 
-Sie können den Login-Typ der Nutzer konfigurieren, indem Sie die [Nutzerverwaltungsseite des Abonnements](https://app.dastra.eu/general-settings/users) aufrufen. Wenn Sie ein Nutzerprofil aufrufen, können Sie den bevorzugten SSO-Login auswählen. Sobald der Nutzer sich mit seiner E-Mail-Adresse bei Dastra anmeldet, wird er automatisch zur Login-Seite des von Ihnen eingerichteten Authentifizierungsanbieters weitergeleitet.
+Wenn das SSO für alle Nutzer erzwungen wird, zeigt das Profil stattdessen eine entsprechende Meldung an.
 
-![](../../../.gitbook/assets/image-118.png)
+<figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="Ein Nutzerprofil mit der Liste Standardmäßige Verbindungsmethode"><figcaption><p>Das Feld <strong>Standardmäßige Verbindungsmethode</strong></p></figcaption></figure>
 
-Sie können den Login-Typ auch bei der Einladung neuer Nutzer festlegen.
+Die Anmeldeart können Sie auch beim Einladen neuer Nutzer festlegen.
 
-### Was tun, wenn ich mich nicht per SSO anmelden kann?
+## Wenn Sie sich nicht per SSO anmelden können
 
-Kontaktieren Sie sofort [den Support](../../../getting-started/support/request.md)
+Prüfen Sie zuerst die [bekannten Probleme](known-problems.md). Wenn Sie weiterhin blockiert sind, wenden Sie sich umgehend an den [Support](../../../getting-started/support/request.md).
