@@ -1,45 +1,71 @@
-# Fundamental Rights Impact Assessment for High-Risk AI Systems
+---
+description: >-
+  Carry out the fundamental rights impact assessment (FRIA) required by Article
+  27 of the AI Act, from the record of a high-risk AI system.
+---
 
-### Regulatory Context
+# Fundamental rights impact assessment (FRIA)
 
-The **European Artificial Intelligence Regulation (AI Act)** requires, for certain AI systems, the performance of a **Fundamental Rights Impact Assessment**.
+This page explains who must carry out a fundamental rights impact assessment (FRIA) and how to do it in Dastra. It is for deployers of high-risk AI systems.
 
-This obligation applies when the system is classified as **high-risk**. The assessment must be carried out **before the system is put into service**.
+## Regulatory context
 
-### Purpose of the Assessment
+Article 27 of the European Artificial Intelligence Act (**AI Act**) requires a fundamental rights impact assessment before the first use of certain high-risk AI systems. The obligation does not cover every high-risk system.
 
-The Fundamental Rights Impact Assessment aims to:
+It applies to the high-risk systems referred to in Article 6(2), except those of Annex III, point 2 (critical infrastructure). It concerns:
 
-* Identify the risks that the AI system may pose to:
-  * privacy
-  * non-discrimination
-  * freedom of expression
-  * freedom of association
-  * presumption of innocence
-  * human dignity
-  * workers’ rights
-* Assess the severity and likelihood of these risks
-* Determine appropriate mitigation measures
+* deployers governed by public law;
+* private entities providing public services;
+* deployers of the high-risk systems of Annex III, points 5(b) and 5(c): the evaluation of the creditworthiness of people, and risk assessment and pricing for life and health insurance.
 
-⚠️ This assessment is distinct from, but complementary to, a **GDPR DPIA (Data Protection Impact Assessment)**.
+The deployer carries out the assessment before putting the system into service. In similar cases, the deployer may rely on an assessment already carried out, or on the impact assessments the provider supplies. Once the assessment is done, the deployer notifies its results to the market surveillance authority (Article 27(3)).
 
-### Conducting the Impact Assessment
+The assessment is distinct from a GDPR DPIA, but it complements it: when a DPIA already covers some of the obligations, the fundamental rights impact assessment comes in addition (Article 27(4)).
 
-In Dastra, when you define an AI system as **high-risk**, you will see an alert prompting you to perform an **impact assessment**.
+## Purpose of the assessment
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-23-123218.png" alt=""><figcaption></figcaption></figure>
+The assessment describes, for the system concerned:
 
-If you have the **Dastra Questionnaires module**, this alert banner will provide a button labeled “Perform an impact assessment”. Clicking it will open a window containing questionnaires.
+* the deployer's processes in which the system is used;
+* the intended period and frequency of use;
+* the categories of people likely to be affected;
+* the specific risks of harm to their rights, for example to privacy, non-discrimination, freedom of expression, the presumption of innocence, dignity or workers' rights;
+* the human oversight measures;
+* the measures to take if those risks materialize, including internal governance and complaint mechanisms.
 
-If you have installed the impact assessment questionnaire template, it will appear in this window. Otherwise, you can click “**Create template**”, which will redirect you to the Questionnaires module.
+## When Dastra offers the assessment
 
-You can then:
+The **Fundamental Rights Impact Assessment (FRIA)** box appears on the **Classification** step of the record when:
 
-* Create your own template
-* Import our existing template
+* the **Responsibility** step declares the deployer role;
+* the risk level is **High**;
+* your plan includes the **Questionnaires** module and you have write access to questionnaires.
 
-To import our ready-to-use template, click “**Create a template**”, then "**Automated questionnaires**”. This will redirect you to a list of templates. In the filters, select “**Dastra default library**” and choose the type “**Privacy impact assessment (DPIA)**”. You can also type “DPIA Template for AI Systems - GDPR and EU AI Act Compliance” in the search bar.
+If the risk level is **Unacceptable**, the box warns that Article 5 of the AI Act prohibits deployment.
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-23-123054.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-fria-1.png" alt="Classification step of a high-risk system with the impact assessment box and the Perform an impact assessment button"><figcaption><p>The box shown to a deployer of a high-risk system</p></figcaption></figure>
 
-You can now carry out your impact assessment.
+## Carry out the assessment
+
+1. In the box, click **Perform an impact assessment**.
+2. The **Choosing a questionnaire template** window lists the templates of type **AI system impact assessment** installed in your workspace. Click a template to schedule it.
+3. In the **Plan a questionnaire** window, choose how respondents answer. See [Schedule a questionnaire](../questionnaires/schedule.md).
+
+<figure><img src="../../.gitbook/assets/ai-systems-fria-2.png" alt="Choosing a questionnaire template window with the AI system impact assessment templates"><figcaption><p>The AI system impact assessment templates</p></figcaption></figure>
+
+If the window shows no template, install one:
+
+1. In the window, click **Create a template**. The Questionnaires module opens in a new tab.
+2. Choose **Automated questionnaires**.
+3. In the library, filter **Types** on **AI system impact assessment**, then click the template to install. See [Automated questionnaire templates](../questionnaires/templates/README.md#automated-questionnaire-templates).
+4. Go back to the record and click **Perform an impact assessment** again.
+
+{% hint style="info" %}
+The window only offers templates of type **AI system impact assessment**. A template of type **Privacy impact assessment (DPIA)**, even one designed for AI, does not appear there.
+{% endhint %}
+
+## Find the completed assessments
+
+Click **AI governance** in the sidebar, then **Impact analysis**. This page shows the Questionnaires module limited to the **AI system impact assessment** type. It appears if your plan includes the Questionnaires module and you have access to questionnaires.
+
+<figure><img src="../../.gitbook/assets/ai-systems-fria-3.png" alt="Impact analysis page of the AI systems module"><figcaption><p>The Impact analysis page</p></figcaption></figure>

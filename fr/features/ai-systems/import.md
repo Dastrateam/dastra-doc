@@ -1,64 +1,73 @@
+---
+description: >-
+  Importez dans Dastra votre registre existant de systèmes d'IA depuis un
+  fichier CSV ou Excel, avec le format attendu pour chaque colonne.
+---
+
 # Importer vos systèmes d'IA
 
-Vous pouvez facilement télécharger votre registre existant directement dans Dastra. Cela vous évitera de tout remplir vous-même à la main.
+Si vous disposez déjà d'un registre de systèmes d'IA, importez-le dans Dastra plutôt que de tout saisir à la main.
 
-Pour cela, accéder à la vue liste, intitulée "Systèmes d'IA". en haut à droite, ouvrez le menu déroulant à côté du bouton "Créer un nouveau système d'IA" puis cliquez sur "Importer". Une nouvelle page apparait, vous pouvez ajouter votre registre existant en bas de celle-ci.
+1. Cliquez sur **Systèmes d'IA** dans la barre latérale, puis sur **Registre des systèmes d'IA**.
+2. En haut à droite, ouvrez le menu du bouton **Créer un nouveau système d'IA** et cliquez sur **Importer**.
+3. Sur la page qui s'ouvre, ajoutez votre fichier en bas de page.
 
-<figure><img src="../../.gitbook/assets/systemes-dia-registre-menu-importer.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-import-1.png" alt="Menu du bouton Créer un nouveau système d'IA avec les actions Créer à partir de modèles, Importer et Exporter"><figcaption><p>L'action Importer dans le menu du registre des systèmes d'IA</p></figcaption></figure>
 
-Nous vous recommandons de suivre les étapes de la page [Importer vos données (Excel, Csv, JSON)](../general/import.md) pour plus de détails.
+Pour le détail de la procédure, voir [Importer vos données (Excel, Csv, JSON)](../general/import.md).
 
-## Format d’import des systèmes d’IA dans Dastra
+## Format du fichier
 
-Ce guide décrit le format attendu pour le fichier CSV permettant d’importer des systèmes d’IA dans Dastra.
+Le fichier contient une ligne d'en-têtes qui reprend les noms des colonnes décrites ci-dessous. Toutes les colonnes sont facultatives, sauf `Label`.
 
-***
+Les colonnes de type énumération attendent exactement les valeurs de la colonne « Valeurs autorisées ». La casse n'a pas d'importance. Une valeur qui ne correspond à aucune valeur autorisée est ignorée.
 
-### Structure du fichier CSV
+| Colonne | Description | Type | Contraintes | Valeurs autorisées |
+| --- | --- | --- | --- | --- |
+| `Label` | Nom du système | Texte | Obligatoire, 1 à 120 caractères | Texte libre |
+| `Ref` | Référence interne | Texte | 50 caractères au maximum | Texte libre |
+| `Description` | Description du système | Texte | 4 000 caractères au maximum | Texte libre |
+| `State` | État du système | `AiSystemState` | | `Draft`, `Cancelled`, `Pending`, `Active` |
+| `RiskLevel` | Niveau de risque | `AiSystemRiskLevel` | | `Low`, `Medium`, `High`, `Unacceptable` |
+| `RiskLevelJustification` | Justification du niveau de risque | Texte | | Texte libre |
+| `BenefitLevel` | Niveau de valeur ajoutée | `AiSystemBenefitLevel` | | `Low`, `Medium`, `High` |
+| `BenefitLevelJustification` | Justification de la valeur ajoutée | Texte | | Texte libre |
+| `DateArchived` | Date de mise à la corbeille | Date | Formats `DD-MM-YYYY` ou `DD/MM/YYYY` | Date |
+| `DateCreation` | Date de création | Date | Même format | Date |
+| `DateUpdate` | Date de mise à jour | Date | Même format | Date |
+| `DateDeployment` | Date de déploiement | Date | Même format | Date |
+| `DateRetirement` | Date de retrait | Date | Même format | Date |
+| `TransparencyNoticeDone` | Notice de transparence fournie | Booléen | | `true` ou `false` |
+| `TransparencyNoticeHtml` | Contenu HTML de la notice | Texte | | HTML |
 
-Le fichier doit contenir une ligne d’en-têtes correspondant aux colonnes décrites ci-dessous.\
-Tous les champs sont optionnels sauf **Label**.
+### Correspondance avec les libellés de l'application
 
-***
+Les valeurs du fichier sont les noms techniques, pas les libellés affichés dans l'application. N'écrivez pas le libellé à l'écran dans le fichier.
 
-### Tableau des champs d’import
+| Colonne | Valeur du fichier | Libellé affiché |
+| --- | --- | --- |
+| `State` | `Draft` | Projet |
+| `State` | `Pending` | En attente |
+| `State` | `Active` | En cours |
+| `State` | `Cancelled` | Annulé |
+| `RiskLevel` | `Low` | Minimal |
+| `RiskLevel` | `Medium` | Risque limité |
+| `RiskLevel` | `High` | Haut risque |
+| `RiskLevel` | `Unacceptable` | Inacceptable |
+| `BenefitLevel` | `Low` | Bas |
+| `BenefitLevel` | `Medium` | Moyen |
+| `BenefitLevel` | `High` | Élevé |
 
-> 💡 **Important :** Les colonnes de type _Enum_ doivent utiliser strictement les valeurs indiquées dans la colonne “Valeurs autorisées”.
-
-| **Colonne**                   | **Description**                   | **Type**             | **Contraintes**                                    | **Valeurs autorisées**            |
-| ----------------------------- | --------------------------------- | -------------------- | -------------------------------------------------- | --------------------------------- |
-| **Label**                     | Nom du système                    | String               | **Obligatoire**, 1–120 caractères                  | —                                 |
-| **Ref**                       | Référence interne                 | String               | Optionnel, max. 50 caractères                      | —                                 |
-| **Description**               | Description du système            | String               | Optionnel, max. 4000 caractères                    | —                                 |
-| **State**                     | Statut du système                 | AiSystemState        | Optionnel                                          | Draft, Cancelled, Pending, Active |
-| **RiskLevel**                 | Niveau de risque                  | AiSystemRiskLevel    | Optionnel                                          | Low, Medium, High, Unacceptable   |
-| **RiskLevelJustification**    | Justification du niveau de risque | String               | Optionnel                                          | —                                 |
-| **BenefitLevel**              | Niveau de valeur / utilité        | AiSystemBenefitLevel | Optionnel                                          | Low, Medium, High                 |
-| **BenefitLevelJustification** | Justification de la valeur        | String               | Optionnel                                          | —                                 |
-| **DateArchived**              | Date de mise à la corbeille       | DateTime             | Optionnel — Formats : `DD-MM-YYYY` ou `DD/MM/YYYY` | —                                 |
-| **DateCreation**              | Date de création                  | DateTime             | Optionnel — même format                            | —                                 |
-| **DateUpdate**                | Date de mise à jour               | DateTime             | Optionnel — même format                            | —                                 |
-| **DateDeployment**            | Date de déploiement               | DateTime             | Optionnel — même format                            | —                                 |
-| **DateRetirement**            | Date de retrait                   | DateTime             | Optionnel — même format                            | —                                 |
-| **TransparencyNoticeDone**    | Notice de transparence fournie    | Boolean              | Optionnel                                          | true / false                      |
-| **TransparencyNoticeHtml**    | Contenu HTML de la notice         | String               | Optionnel, max. 4000 caractères                    | —                                 |
-
-***
-
-### Exemple de ligne CSV
-
-> ✨ _Voici un exemple complet d’une ligne bien formée :_
+## Exemple de ligne
 
 ```
 "ChatGPT interne","SYS-001","Modèle interne d’assistance documentaire","Active","Medium","Usage responsable mais risques modérés","High","Très forte valeur ajoutée pour les équipes","01/02/2024","15/01/2024","01/03/2024","20/03/2024","","false","<p>Cette IA est utilisée pour assister les employés dans la rédaction de documents internes.</p>"
 ```
 
-***
+## Modèle d'en-têtes prêt à l'emploi
 
-### Modèle CSV prêt à l’emploi
-
-> Vous pouvez _copier-coller ce modèle dans un fichier `.csv` vierge :_
+Copiez cette ligne dans un fichier `.csv` vierge :
 
 ```
-Label,Ref,Description,State,RiskLevel,RiskLevelJustification,BenefitLevel,BenefitLevelJustification,Date
+Label,Ref,Description,State,RiskLevel,RiskLevelJustification,BenefitLevel,BenefitLevelJustification,DateArchived,DateCreation,DateUpdate,DateDeployment,DateRetirement,TransparencyNoticeDone,TransparencyNoticeHtml
 ```
