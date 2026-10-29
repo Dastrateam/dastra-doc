@@ -1,107 +1,114 @@
 ---
-description: Dastra gives you the ability to customize your forms endlessly
+description: >-
+  Add the fields specific to your business to your forms with custom fields:
+  field types, options, usage and API.
 ---
 
 # Custom fields
 
-{% hint style="warning" %}
-This feature is still in beta. It may still have some instabilities.
-{% endhint %}
+## When to use custom fields
 
-## When to use custom fields?
+Some information specific to your industry is not included in the default fields of the ROPA, data subject requests, tasks, etc. Custom fields let you create your own form fields to enrich the data you enter.
 
-Some specific industry information may not be included in the default fields of the ROPA, like DSR and tasks.
+Here is an example of a field configuration for a stakeholder:
 
-With Dastra, you can create custom form fields to easily enhance the inputted data.
+<figure><img src="../../.gitbook/assets/general-custom-fields-1.png" alt="Custom fields page of the stakeholder with a field group and its fields"><figcaption><p>Field configuration of a stakeholder</p></figcaption></figure>
+
+And here is the result in the form:
+
+<figure><img src="../../.gitbook/assets/general-custom-fields-2.png" alt="Stakeholder form with the custom field group"><figcaption><p>The custom fields in the stakeholder form</p></figcaption></figure>
 
 ## Functionalities concerned
 
-{% hint style="warning" %}
-Please note! Not all features are concerned by custom fields
-{% endhint %}
+Custom fields are not available in every module. You can customize the following forms:
 
-You can customize the following forms:&#x20;
-
-* [Processing activities ](../ropa/README.md)
-* [Data subject right request](../requests/README.md)
-* [Tasks](../tasks/README.md)&#x20;
-* [Assets](../ropa/activity/assets.md)&#x20;
-* Actors&#x20;
-* Measures&#x20;
-* Data sets&#x20;
-* Data fields&#x20;
-* [Incidents](../incidents/README.md)
+* [Processing activities](../ropa/README.md)
+* [Data subject requests](../requests/README.md)
+* [Tasks](../tasks/README.md)
+* [Assets](../ropa/activity/assets.md)
+* [Stakeholders](../ropa/activity/stakeholders.md)
+* [Security measures](../ropa/activity/security.md)
+* [Datasets](../ropa/activity/datasets.md)
+* Data fields
+* [Data breaches](../incidents/README.md)
 * [Risk assessments](../risks/attach-to-processing.md)
-* [AI Systems](../ai-systems/README.md)
-* [Contrats and policies](../contracts/README.md)
-* [Controls points](../risks/process/monitor.md)
+* [AI systems](../ai-systems/README.md)
+* [Contracts and policies](../contracts/README.md)
+* [Control points](../risks/process/monitor.md)
 
 {% hint style="warning" %}
-**Limitations on the number of custom fields**
-
-The number of custom fields is limited depending on your chosen plan. Please visit the application's pricing page for more information.
+**Limit on the number of fields.** The number of custom fields depends on the plan and subscription of your organization. A quota indicator is shown on the configuration page. For more information, see the [pricing page](https://www.dastra.eu/en/pricing).
 {% endhint %}
 
 ## Available field types
 
-Dastra offers several types of custom fields:&#x20;
+Dastra offers the following field types:
 
-* Simple text&#x20;
-* Long text&#x20;
-* Rich text&#x20;
-* Whole number&#x20;
-* Decimal number&#x20;
-* Date&#x20;
-* Date and time&#x20;
-* Check box (multiple response) (**unfilterable**)&#x20;
-* Check box (single response)&#x20;
-* Single selector&#x20;
-* Multiple selector (**unfilterable**)&#x20;
-* Check box (Yes/No)
+| Type | Use |
+| --- | --- |
+| Text | One line of text |
+| Text area | Text on several lines |
+| Rich text | Text with formatting |
+| Number (integer) | A number without decimals |
+| Number (decimal) | A number with decimals |
+| Date | A date |
+| Date with time | A date and a time |
+| Check box | Several answers possible from a list of choices |
+| Radio | A single answer from a list of choices |
+| Single select | One value chosen in a drop-down list |
+| Multi select | Several values chosen in a drop-down list |
+| Boolean | A Yes or No answer |
 
 ## Using custom fields
 
-You can:&#x20;
+Once created, custom fields work like the native fields:
 
-* View and edit custom field data in the forms of each module&#x20;
-* Custom fields can be displayed in all the application's visualization tables. To display them, click on the table column settings button
-* Custom fields are **present in all Excel data exports**. For more information on exports, see [the page on exports](../ropa/export-import.md)&#x20;
-* Custom fields can be present in HTML, Word and PDF exports as an option (by checking the "Exportable in reports" box on the field in question)&#x20;
-* **With the exception of multiple response fields**, custom fields are all filterable via the [advanced filter system](filters.md)
-* Custom fields can be updated en masse in data tables&#x20;
-* Custom fields can be imported via flat files using [the import system](import.md)&#x20;
-* Custom fields **are accessible and modifiable via all APIs**. To do this, you will need to use the variable name assigned to each column. See the section on [API modifications of custom fields](custom-fields.md#handling-custom-fields-in-apis)
+* They are displayed and edited in the forms of each module.
+* They can be displayed in all the tables of the application: click the **Customize columns** button of the table. They are hidden by default.
+* They are **present in all Excel data exports**. For more information on exports, see [the page on exports](../ropa/export-import.md).
+* They are present in PDF and Word reports when the field has **Included in PDF and Word reports** ticked (ticked by default).
+* They can be filtered with the [advanced filters](filters.md). **Check box** and **Multi select** fields cannot be used to sort a list, however.
+* They can be updated in bulk in data tables.
+* They can be imported from flat files with the [import system](import.md).
+* They are **accessible and editable through all APIs**, using the variable name assigned to the field. See [Handling custom fields in APIs](custom-fields.md#handling-custom-fields-in-apis).
 
 ## Setting up custom fields
 
-* Go to your **Workspace**
-* Click on the **Workspace Settings** menu on the left
-* Click on the **Custom fields** menu
-* Choose the module in which you want to add a custom field
-* Fields must be created in groups. These groups can be positioned in a certain way in the form Click on "**Create a group of fields**"
+1. In the sidebar, click **Workspace settings**, then **Custom fields**.
+2. In the list on the left, choose the module in which to add a custom field.
+3. Fields are created in groups. Click **Create a group of fields**.
+4. Fill in the **Custom field label** of the group and its **Form position**. For some modules, such as the processing activity, you can choose the step of the form where the group is displayed.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-17-150651.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-3.png" alt="Create a group of fields window with the label and the form position"><figcaption><p>Creating a field group</p></figcaption></figure>
 
-**Fill in the name and location** in the form that you want
+5. Once the group is created, drag a field type from the **Custom fields** list into the group. The field window opens.
+6. Fill in the options of the field (see below), then save.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-17-150823.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-4.png" alt="Window to create a custom field with its options"><figcaption><p>The options of a custom field</p></figcaption></figure>
 
-For some elements, it is possible to define the location you want in the form!&#x20;
+You can reorder fields, or move them from one group to another, by drag and drop. A group can only be deleted once it no longer contains any field. A deleted field goes to the recycle bin: turn on **View recycle bin** to restore it.
 
-* Once the group is created, you can now **drag and drop the field types** you want to set up!
+### Field options
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-17-151117.png" alt=""><figcaption></figcaption></figure>
+| Option | Description |
+| --- | --- |
+| **Custom field label** | The name of the field shown in forms. Required. |
+| **Variable name (slug)** | The identifier of the field for APIs and imports. It is suggested from the label and cannot be changed once the field is created. |
+| **Tooltip text** | A help text shown next to the field. |
+| **Required field** | Makes the input mandatory. |
+| **Included in PDF and Word reports** | Adds the field to the generated reports. Ticked by default. |
+| **Validation rule** | For Text fields: checks that the input follows a syntax (email, URL) or a **Custom regex** (JavaScript format). |
+| **Minimum size** and **Maximum size** | Length of the input for text fields. |
+| **Minimum value** and **Maximum value** | Bounds for numeric fields. |
+| **Possible answers** | For types with a list of choices: one row per choice, with a color. **Add answer** adds a row; pasting text that contains one option per line creates one answer per line. |
 
-Fill in all the information! Click on save and that's it!&#x20;
-
-* Your first personal data field is in place!&#x20;
-* You can drag and drop to reorder the fields as you see fit.
+The label and the variable name of a field must be unique within a module.
 
 ## Handling custom fields in APIs
 
-### Dastra API Guide
+Dastra lets you retrieve, modify and create, through the [REST API](../../api/configuration.md), all the values of entities that include custom fields.
 
-Dastra allows you to retrieve, modify, and create entity values, including custom fields, via the REST API. A "customFields" property is available in all entities you retrieve using the GET method in Dastra.
+A `customFields` property is present in every entity you retrieve with a `GET`:
 
 ```json
  {
@@ -115,15 +122,13 @@ Dastra allows you to retrieve, modify, and create entity values, including custo
      "has_large_dataset":false,
      etc...
    }
- }s
+ }
 ```
 
-To modify this property, you need to post (POST) or update (PUT) the element by modifying the elements of the collection. To gather the names of the custom variables, go to the custom fields configuration page.
+To modify this property, send the element with `POST` or `PUT`, updating the elements of the collection. The variable names to use are listed on the custom fields configuration page.
 
 {% hint style="info" %}
-**Attention:** All custom fields will be validated by the server. If a colonen is not present in the configuration, it will be automatically deleted. If a field is not valid (for example, if it's not filled in even though it's marked as mandatory), an exception with the code 400 will be raised.
+All **custom fields are validated by the server**. If a column is not present in the configuration, it is automatically removed.
+
+If a field is not valid (for example, if it is empty although it is marked as required), the API returns an error with the code 400.
 {% endhint %}
-
-## Limitations
-
-You cannot **filter custom fields of the multiple types (checkbox (Multiple) and selector (Multiple))**. This is a known limitation that we are working on.

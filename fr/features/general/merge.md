@@ -1,84 +1,88 @@
 ---
 description: >-
-  L'outil de fusion d'éléments vous permet de fusionner les éléments qui sont en
-  doublon ou qui ont de nombreuses similarités.
+  L'outil de fusion vous permet de regrouper les éléments en doublon ou très
+  proches, et l'outil de qualité de données de les détecter pour vous.
 ---
 
 # Fusion d'éléments
 
 ## À quoi sert l'outil de fusion
 
-La fonctionnalité de **fusion d’éléments** de Dastra a été conçue pour simplifier la gestion des doublons et des éléments similaires dans vos données de conformité. Elle vous permet de **regrouper plusieurs éléments identiques ou proches** en un seul, sans avoir à effectuer manuellement le **rattachement complexe à l’ensemble des entités associées** (traitements, responsables, registres...).
+La fonctionnalité de **fusion d'éléments** de Dastra regroupe plusieurs éléments identiques ou proches en un seul, sans que vous ayez à rattacher à la main chacune des entités associées (traitements, responsables, registres, etc.). Elle garde votre référentiel cohérent et limite les manipulations manuelles.
 
-Cette fonctionnalité vise à **assurer la cohérence de votre référentiel** tout en **limitant les manipulations manuelles**, vous faisant gagner en temps et en fiabilité.
+## Sur quels éléments utiliser l'outil de fusion
 
-## Sur quels éléments peuvent être utilisés l'outil de fusion
+L'outil de fusion est disponible sur :
 
-L'outil de fusion peut être utilisé sur :
-
-* Les traitements
-* Les actifs
-* Les acteurs
-* Les jeux de données
-* Les glossaires de données
-* Les mesures
-* Les catégories de personnes concernées
-* Les tâches
-* Les contrôles de conformité (contrôles appliqués et contrôles de référence)
-* Les tests de conformité (tests opérationnels et tests de référence)
+* les traitements
+* les actifs
+* les acteurs
+* les jeux de données
+* les champs de données (glossaire de données)
+* les mesures de sécurité
+* les catégories de personnes concernées
+* les tâches
+* les contrôles de conformité (contrôles appliqués et contrôles de référence)
+* les tests de conformité (tests opérationnels et tests de référence)
+* les scénarios de risque et les menaces de la bibliothèque de conformité
 
 {% hint style="info" %}
-La fusion des contrôles et des tests de conformité s'effectue depuis la bibliothèque ou le projet du module Conformité, via les actions groupées. Vous pouvez sélectionner jusqu'à 30 éléments à fusionner. Pour le détail de cette opération, consultez les pages [Contrôles](../compliance/library/controls.md) et [Tests](../compliance/library/tests.md).
+La fusion des contrôles, des tests, des scénarios de risque et des menaces s'effectue depuis la bibliothèque ou le projet du module Conformité. Pour le détail de cette opération, consultez les pages [Contrôles](../compliance/library/controls.md), [Tests](../compliance/library/tests.md), [Risques](../compliance/library/risks.md) et [Menaces](../compliance/library/threats.md).
 {% endhint %}
 
-## Comment fusionner les éléments ?
+## Fusionner des éléments
 
-1. Dans la liste, sélectionnez les éléments à fusionner.
+1. Dans la liste, sélectionnez les éléments à fusionner. Le nombre d'éléments sélectionnés doit rester inférieur à 30.
+2. Cliquez sur **Choisir une action groupée**, puis sur **Fusionner**.
 
-<div align="left"><figure><img src="../../.gitbook/assets/generalites-bulk-selection-action-menu.png" alt="Deux éléments sélectionnés dans une liste"><figcaption></figcaption></figure></div>
+<figure><img src="../../.gitbook/assets/general-merge-1.png" alt="Liste avec deux éléments sélectionnés et le menu Choisir une action groupée ouvert sur Fusionner"><figcaption><p>Deux éléments sélectionnés et l'action groupée Fusionner</p></figcaption></figure>
 
-2. Cliquez sur **Choisir une action groupée**, puis sur **Fusionner les données**.
-
-![Menu des actions groupées avec Fusionner les données](../../.gitbook/assets/generalites-bulk-action-dropdown.png)
-
-3. Dans la fenêtre **Outil de fusion**, cochez dans l'en-tête de sa colonne l'élément à conserver : il devient la **Version de référence**. Les autres colonnes portent le badge **Conserver sélection** : ces éléments sont supprimés une fois la fusion validée, et seuls les champs que vous y sélectionnez sont reportés sur la version de référence.
+3. Dans la fenêtre **Outil de fusion**, choisissez l'élément à conserver en le sélectionnant dans l'en-tête de sa colonne : il devient la **Version de référence**. Les autres colonnes portent le badge **Conserver sélection** : ces éléments sont supprimés une fois la fusion validée, et seuls les champs que vous y sélectionnez sont reportés sur la version de référence.
 4. Pour chaque champ qui diffère, sélectionnez la valeur à conserver.
 5. Cliquez sur **Fusionner**.
 
 <figure><img src="../../.gitbook/assets/generalites-fusion-tool-differences.png" alt="Fenêtre Outil de fusion avec la version de référence et les champs différents"><figcaption><p>La fenêtre Outil de fusion</p></figcaption></figure>
 
-Pour faciliter le choix des valeurs :
+Vous pouvez aussi partir d'un seul élément : dans son menu d'actions, cliquez sur **Fusionner**, sélectionnez les objets avec lesquels fusionner les données, puis cliquez sur **Suivant**.
+
+Pour choisir plus vite les valeurs à conserver :
 
 * chaque champ dont la valeur diffère d'un élément à l'autre porte la mention **Différent**, et un compteur indique le nombre de lignes concernées ;
 * le tableau n'affiche que les lignes qui diffèrent ; activez **Voir tous les champs** pour afficher l'ensemble des champs comparables. Les champs identiques masqués conservent la valeur de la version de référence ;
-* le bouton **Sélectionner tout**, sous l'en-tête d'une colonne, retient ses valeurs sur toutes les lignes qui diffèrent ; **Annuler la sélection** revient en arrière. Une valeur vide ne remplace jamais une valeur renseignée, et le nombre de lignes mises à jour est indiqué.
+* le bouton **Sélectionner tout**, sous l'en-tête d'une colonne, retient ses valeurs sur toutes les lignes qui diffèrent ; **Annuler la sélection** revient en arrière. Une valeur vide ne remplace jamais une valeur renseignée.
 
 {% hint style="info" %}
-Les entités (traitements, analyses, etc.) associées aux éléments supprimés sont automatiquement rattachées à la version de référence, évitant toute perte ou déconnexion dans votre registre. La section **Objets liés conservés** de la fenêtre en donne le décompte.
+Les entités associées aux éléments supprimés (traitements, analyses, tâches, etc.) sont automatiquement rattachées à la version de référence, sans perte ni déconnexion dans votre registre. La section **Objets liés conservés** de la fenêtre en donne le décompte.
 {% endhint %}
 
 Lors de la mise à jour d'un objet depuis les réponses d'un questionnaire, la même fenêtre s'ouvre avec une colonne **Réponses au questionnaire**. L'objet existant reste toujours la version de référence : il conserve son identifiant, son historique et ses rattachements.
 
-## Outil qualité des données — détection automatique des doublons
+## Outil de qualité de données
 
-Dastra dispose d’un **outil de qualité des données** qui analyse automatiquement votre référentiel pour détecter les éléments potentiellement en doublon, sans nécessiter de sélection manuelle préalable.
+L'**outil de qualité de données** analyse votre référentiel pour repérer les éléments probablement en doublon, sans sélection préalable. Il propose ensuite de les fusionner avec l'outil de fusion.
 
-### Comment fonctionne la détection automatique
+### Où le trouver
 
-L’algorithme utilise un **scoring expliqué** : pour chaque paire de doublons potentiels, il analyse plusieurs dimensions (nom, éditeur, unité organisationnelle, URL, catégorie) et attribue un **score de confiance**. Ce score vous permet de valider en connaissance de cause avant toute opération de fusion ou de suppression.
+L'outil est disponible sur les listes des traitements, des acteurs, des actifs, des champs de données, des jeux de données et des mesures de sécurité. Il n'est pas proposé pour les catégories de personnes concernées, qui restent fusionnables depuis la liste.
 
-### Modules couverts
+Dans la liste, cliquez sur la flèche du bouton de création en haut à droite (par exemple **Créer un traitement de données**), puis sur **Outil de qualité de données**. Cette action nécessite le droit d'écriture sur le module.
 
-L’outil qualité des données est disponible pour :
+### Détection intelligente
 
-* les actifs
-* les mesures
-* les acteurs
-* les jeux de données
-* les glossaires de données
-* les traitements
-* les catégories de personnes concernées
+L'onglet **Détection intelligente** lance une analyse par similarité (distance de Levenshtein et indice de Jaccard) et enregistre les doublons probables sous forme de suggestions. L'analyse démarre d'elle-même à la première ouverture ; cliquez sur **Lancer l'analyse** pour la relancer.
 
-### Comment accéder à l’outil
+<figure><img src="../../.gitbook/assets/general-merge-2.png" alt="Onglet Détection intelligente de l'outil de qualité de données avec la liste des suggestions, leur score de confiance et leurs actions"><figcaption><p>Les suggestions de doublons de l'onglet Détection intelligente</p></figcaption></figure>
 
-Dans chacun de ces modules, cliquez sur le **bouton de menu principal** (⋮ ou "Actions") puis sélectionnez **"Outil qualité des données"**. Tous les doublons détectés sont présentés avec leur score de confiance. Vous pouvez ensuite choisir de **fusionner** ou de **supprimer** chaque doublon identifié.
+Chaque suggestion associe deux enregistrements (**Enregistrement A** et **Enregistrement B**). L'algorithme compare surtout le libellé, puis, selon le type d'élément, la description, l'adresse, l'e-mail, le numéro de téléphone ou la définition. Il en déduit un **score de confiance**, de 0 % à 100 %, que vous pouvez lire avant toute fusion. Une icône rouge **UO différente** signale deux enregistrements rattachés à des unités organisationnelles différentes.
+
+Pour chaque suggestion :
+
+* **Fusionner** ouvre l'outil de fusion avec les deux enregistrements ;
+* **Ignorer** écarte la suggestion : son statut passe à **Ignoré** et l'analyse ne la reproposera pas ;
+* **Remettre en attente** replace une suggestion ignorée parmi les suggestions **En attente**.
+
+La liste peut être filtrée par statut (**Tous les statuts**, **En attente**, **Ignoré**). L'outil ne supprime jamais un doublon de lui-même : seuls les éléments non retenus lors d'une fusion sont supprimés.
+
+### Correspondance exacte
+
+L'onglet **Correspondance exacte** regroupe les enregistrements qui ont la même valeur dans la colonne de votre choix. Sélectionnez la colonne, puis cliquez sur **Fusionner** en face d'un groupe pour ouvrir l'outil de fusion.
