@@ -1,45 +1,44 @@
-# Stap 2: Breng uw gegevensverwerking in kaart en stel het register op
+# Stap 2: Breng uw persoonsgegevensverwerkingen in kaart en stel een register op
 
-Na training in het in kaart brengen van de gegevensverwerking en het interviewen van de Verwerkingsverantwoordelijken, identificeert u hieronder uw eerste gegevensverwerkingen:
+Nadat u een [opleiding over het in kaart brengen van verwerkingen](https://www.cnil.fr/en/record-processing-activities) hebt gevolgd en de verantwoordelijken voor de verwerkingen hebt geïnterviewd, bepaalt u uw eerste verwerkingsactiviteiten, hieronder weergegeven:
 
-| #  | Afdeling         | Gegevensverwerking          | Ondersteuning / aanvraag     | DPIA a priori vereist ? |
-| -- | ------------------- | ------------------------------------------- | ------------------------- | ---------------------- |
-| 1  | HR                  | Wervingsmanagement                      | Linkedin (extern)        | Nee                    |
-| 2  | HR                  | Salarisbeheer                        | Payfit (extern)          | Nee                   |
-| 3  | HR                  | Personeelsbeheer                       | Microsoft Office          | Nee                   |
-| 4  | Algemeen secretariaat | Beheer gegevens ondernemingsraad  | Interne toepassing       | Nee                    |
-| 5  | Productie         | Kwaliteitsmanagement                      | Microsoft Office          | Nee                    |
-| 6  | Marketing en verkoop  | Beheer van klanten                         | Salesforce (extern)      | Nee                    |
-| 7  | Marketing en verkoop  | Promotionele e-mails versturen                | Mailjet (extern)         | Nee                    |
-| 8  | Marketing en verkoop  | Prospect profilering                      | Salesforce                | Ja                    |
-| 9  | Beveiliging           | De in- en uitgangen van gebouwen beheren | IBM                       | Ja                    |
-| 10 | Beveiliging          | Prioriteit controleren                    | Microsoft Office          | Nee                    |
-| 11 | IT      | Applicatieontwikkeling                 | Microsoft Azure (externe) | Nee                    |
-| 12 | IT      | Onderhoud van toepassingen               | CGI (externe)             | Nee                    |
-| 13 | Wettelijk         | Contractbeheer                    | Microsoft Office          | Nee                    |
-| 14 | Inkoop            | Beheer van leveranciers                  | SAP (extern)             | Nee                    |
+| #  | Afdeling              | Verwerking van persoonsgegevens  | Drager / toepassing         | DPIA vereist? |
+| -- | --------------------- | -------------------------------- | --------------------------- | ------------- |
+| 1  | HR                    | Beheer van werving               | Linkedin (extern)           | Nee           |
+| 2  | HR                    | Beheer van de salarisadministratie | Payfit (extern)           | Nee           |
+| 3  | HR                    | Personeelsbeheer                 | Microsoft Office            | Nee           |
+| 4  | Algemeen secretariaat | Beheer van gegevens van de ondernemingsraad | Interne toepassing | Nee      |
+| 5  | Productie             | Kwaliteitscontrole               | Microsoft Office            | Nee           |
+| 6  | Marketing en verkoop  | Klantenbeheer                    | Salesforce (extern)         | Nee           |
+| 7  | Marketing en verkoop  | Verzenden van promotionele e-mails | Mailjet (extern)          | Nee           |
+| 8  | Marketing en verkoop  | Profilering van prospects        | Salesforce                  | Ja            |
+| 9  | Beveiliging           | Beheer van in- en uitgaand verkeer in gebouwen | IBM           | Ja            |
+| 10 | Beveiliging           | Antecedentencontrole             | Microsoft Office            | Nee           |
+| 11 | IT                    | Softwareontwikkeling             | Microsoft Azure (extern)    | Nee           |
+| 12 | IT                    | Onderhoud van toepassingen       | CGI (extern)                | Nee           |
+| 13 | Juridische zaken      | Contractbeheer                   | Microsoft Office            | Nee           |
+| 14 | Inkoop                | Leveranciersbeheer               | SAP (extern)                | Nee           |
 
-
-Daarna voltooit u uw registratie in Dastra:
+Vul daarna uw register aan in Dastra:
 
 {% content-ref url="../../features/ropa/README.md" %}
-[het register bewerken](../../features/ropa/README.md)
+[Verwerkingsregister](../../features/ropa/README.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Een goede manier om te beginnen met het ontwerpen van je register is om eerst je bestaande registers in excel-formaat te importeren, als die bestaan, evenals je repositories van actoren, applicaties, onderaannemers, gegevens en bewaarregels. Op deze manier bespaart u tijd bij het invoeren van gegevens als alle registers zijn geïntegreerd.
+Importeer om te beginnen met het ontwerp van uw register uw bestaande registers in Excel-formaat, als u die hebt, samen met uw repositories van stakeholders, toepassingen, verwerkers, gegevens en bewaarregels. Zodra alle repositories zijn geïntegreerd, verloopt de gegevensinvoer sneller.
 {% endhint %}
 
-Vul vervolgens alle informatie in die nodig is voor de Verwerking door de stappen te volgen die worden beschreven in de onderstaande link.
+Vul vervolgens alle vereiste informatie voor een verwerkingsactiviteit in door de stappen op de onderstaande pagina te volgen:
 
 {% content-ref url="../../features/ropa/declare.md" %}
-[gerer-votre-traitement.md](../../features/ropa/declare.md)
+[Een verwerkingsactiviteit aanmaken](../../features/ropa/declare.md)
 {% endcontent-ref %}
 
-U deelt het register met alle Verwerkingsverantwoordelijken en uw netwerk van RGPD-correspondenten en vraagt om validatie van alle belanghebbenden &#x20;
+U deelt het register met alle verantwoordelijken en met uw netwerk van AVG-contactpersonen en vraagt alle stakeholders om validatie.
 
 {% content-ref url="../../features/ropa/share.md" %}
-[deel het register](../../features/ropa/share.md)
+[Het verwerkingsregister delen](../../features/ropa/share.md)
 {% endcontent-ref %}
 
-Dat is het, **je register is ingesteld** en je Verwerking is klaar om beschermd te worden!
+Uw register is opgezet en uw verwerkingsactiviteiten zijn klaar om te worden beschermd.

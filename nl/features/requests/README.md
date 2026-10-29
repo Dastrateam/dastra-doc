@@ -1,60 +1,76 @@
 ---
-description: Leer hoe te reageren op verzoeken om rechten uit te oefenen.
+description: >-
+  Leer hoe u verzoeken van betrokkenen om hun rechten uit te oefenen beantwoordt.
 ---
 
-# Uw rechten uitoefenen
+# Verzoeken van betrokkenen om hun rechten uit te oefenen
 
-Met de AVG kunnen Europese burgers een bedrijf of organisatie die hen betreffende gegevensverwerking doet, vragen om hun rechten uit te oefenen. Deze zijn verplicht om de uitoefening van deze rechten te vergemakkelijken.
+Dankzij de AVG kunnen Europese burgers een bedrijf of organisatie die hun persoonsgegevens verwerkt, vragen hun rechten te laten uitoefenen. De organisatie moet het uitoefenen van die rechten vergemakkelijken.
 
 {% content-ref url="../../gdpr/concepts/rights.md" %}
-[people-rights.md](../../gdpr/concepts/rights.md)
+[Rechten van betrokkenen](../../gdpr/concepts/rights.md)
 {% endcontent-ref %}
 
-Om dit te doen moet het bedrijf of de organisatie procedures opstellen om te reageren op verzoeken om rechten uit te oefenen en om hiervan bewijs te leveren. Dit houdt in dat de te volgen stappen worden vastgelegd en gedocumenteerd in een register &#x20;
+Daarvoor moet de organisatie procedures opzetten om deze verzoeken te beantwoorden en om te bewijzen dat ze dat heeft gedaan. Dat betekent vastgelegde stappen en documentatie die in een register wordt bijgehouden.
 
-## Het register voor rechtenaanvragen
+## Het proces voor het beheer van een verzoek van een betrokkene
 
-Met Dastra kunt u een register voor verzoeken om uitoefening van rechten aanmaken waarin alle vroegere, huidige en toekomstige verzoeken worden gecentraliseerd. Dit is beschikbaar door te klikken op het tabblad "rechten uitoefenen" in de banner aan de linkerkant van het scherm.&#x20;
+Het beheer van een verzoek om rechten uit te oefenen komt neer op 4 hoofdstappen:
 
-![Register van verzoeken tot uitoefening van rechten](<../../.gitbook/assets/Capture web\_5-5-2022\_16246_app.dastra.eu.jpeg>)
+<figure><img src="../../.gitbook/assets/dsr-request-lifecycle-flowchart.png" alt="De vier stappen van het beheer van een verzoek: ontvangst, controle van de identiteit, behandeling, mededeling aan de betrokkene, daarna afsluiting of archivering"><figcaption><p>Het beheerproces van een verzoek</p></figcaption></figure>
 
-## Vul een nieuw verzoek in om rechten uit te oefenen
+Meer details over het beheer van verzoeken vindt u op deze pagina:
 
-Er zijn 3 manieren om een nieuw DASTRA-rechtenverzoek in te vullen:
+{% content-ref url="manage.md" %}
+[Verzoeken van betrokkenen beheren](manage.md)
+{% endcontent-ref %}
 
-1. [Voer de nieuwe aanvraag voor het uitoefenen van rechten rechtstreeks in de tool in] (managing-rights-exercises-requests.md)
-2. Importeer verzoeken als Excel-, csv- of tekstbestanden. Zie [onze gids voor het importeren van gegevens in Dastra](../general/import.md)
-3. [Een widget voor het uitoefenen van rechten implementeren](widget.md)
+## Het register van verzoeken van betrokkenen
 
-### Een aanvraag voor uitoefening van rechten handmatig maken
+In Dastra bouwt u een register op dat alle verleden, huidige en toekomstige verzoeken bundelt. Om het te openen klikt u in de zijbalk op **Verzoeken** en daarna op **Register van verzoeken**.
 
-Door op de knop "Create a request" (Aanvraag aanmaken) te klikken, verschijnt er een venster waarin u de aanvraag voor het uitoefenen van rechten kunt detailleren. Klik op "Opslaan en afsluiten". Dat is het, je hebt je eerste aanvraag voor rechtenuitoefening handmatig gemaakt!
+<figure><img src="../../.gitbook/assets/requests-readme-1.png" alt="Het register van verzoeken, met de knop Maak een aanvraag en het menu van de module"><figcaption><p>Het register van verzoeken</p></figcaption></figure>
 
-![stap](<../../.gitbook/assets/image (174).png>)
+Het menu **Verzoeken** geeft toegang tot vijf pagina's:
 
-### Importeren / exporteren van het aanvraagregister voor uitoefening van rechten
+* **Register van verzoeken**: de lijst van alle verzoeken, met filters en kolommen.
+* **Rapportage**: de opvolgingsindicatoren (zie [Statistieken van verzoeken](process.md#statistieken-van-verzoeken)).
+* **Berichten**: de uitwisselingen met aanvragers (zie [Berichten van aanvragers](process.md#berichten-van-aanvragers)).
+* **Collectie-widgets**: de widgets die verzoeken op uw website verzamelen. Deze pagina is alleen beschikbaar voor gebruikers die verzamelformulieren mogen beheren.
+* **Uitvoering van verzoeken**: de interface voor de eigenaren van activa (zie [Interface voor de behandeling van verzoeken](advanced/asset-owners.md)).
 
-Het volledige aanvraagregister kan worden geïmporteerd en geëxporteerd. Om een verzoek te importeren, klik je op de pijl naast de knop "Een verzoek maken".
+## Een nieuw verzoek toevoegen
 
-![](<../../.gitbook/assets/Capture web\_5-5-2022\_163517_app.dastra.eu.jpeg>)
+U voegt op 5 manieren een nieuw verzoek toe in Dastra:
 
-Er verschijnt een venster met een "importeer" knop. Klik hierop, download het registersjabloon en volg de instructies om de aanvragen te importeren in Dastra. Eenmaal geïmporteerd zal het verzoek direct beschikbaar zijn in het verzoekregister.
+1. [Het verzoek rechtstreeks in de tool invoeren](manage.md#een-verzoek-handmatig-aanmaken).
+2. [Verzoeken importeren uit een Excel-, CSV- of tekstbestand](manage.md#verzoeken-importeren-en-exporteren).
+3. [Verzoeken ontvangen via een verzameladres voor e-mail](manage.md#een-verzoek-aanmaken-via-een-verzameladres-voor-e-mail).
+4. [Een verzamelformulier (widget) instellen](widget.md) op uw website.
+5. [Verzoeken aanmaken via de REST API](api.md).
 
-![venster voor het importeren van verzoeken](<../../.gitbook/assets/image (34).png>)
+### Een verzoek handmatig aanmaken
 
-### Een widget voor het aanvragen van rechten instellen
+Klik op **Maak een aanvraag**. Vul in het venster dat opent de titel, het type of de typen verzoek, de datum, de taal van de aanvrager, het e-mailadres (optioneel) en de organisatie-eenheid in en klik op **Creëren**. Dastra opent het verzoek zodat u het kunt uitwerken en behandelen.
 
-Verzoeken om rechten uit te oefenen kunnen ook komen van een specifieke widget die geconfigureerd kan worden vanaf het Dastra platform.
+<figure><img src="../../.gitbook/assets/requests-readme-2.png" alt="Het venster voor het aanmaken van een verzoek"><figcaption><p>Het venster voor het aanmaken van een verzoek</p></figcaption></figure>
 
-Zie [onze handleiding voor het instellen van de widget voor het uitoefenen van rechten](README.md#het-instellen-van-de-rechten-uitoefening-verzoek-widget)
+### Het register van verzoeken importeren en exporteren
 
+U importeert en exporteert het hele register. Om verzoeken te importeren klikt u op de pijl naast de knop **Maak een aanvraag** en daarna op **Importeren**.
 
+<figure><img src="../../.gitbook/assets/requests-readme-3.png" alt="Het keuzemenu van de knop Maak een aanvraag, met de opties Importeren, Exporteren, Transformeer e-mails naar verzoeken van betrokkenen en Read the documentation"><figcaption></figcaption></figure>
+
+Klik in het importscherm op **Het bestandssjabloon downloaden** om het verwachte formaat te zien (**Zie kolomindeling** toont de kolommen) en sleep daarna uw bestand (csv, txt of xlsx) naar het uploadgebied. Volg de stappen van de wizard (gegevens importeren, kolommen koppelen, importeren en resultaat) om de verzoeken in Dastra te importeren. Na de import staan de verzoeken in het register.
+
+<figure><img src="../../.gitbook/assets/requests-readme-4.png" alt="De eerste stap van het importeren van verzoeken: het sjabloon downloaden en het bestand uploaden"><figcaption></figcaption></figure>
+
+### Een widget voor verzoeken instellen
+
+Verzoeken kunnen ook afkomstig zijn van een speciale widget die u in Dastra configureert.
+
+Zie onze [handleiding voor het instellen van de widget voor verzoeken van betrokkenen](widget.md).
 
 {% content-ref url="widget.md" %}
-[implement-a-widget-de-exercice-rights.md](widget.md)
+[Een widget voor verzoeken van betrokkenen instellen](widget.md)
 {% endcontent-ref %}
-
-
-
-
-

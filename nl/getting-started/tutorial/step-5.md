@@ -1,25 +1,23 @@
 # Stap 5: Interne processen implementeren
 
+Om te allen tijde een hoog niveau van bescherming van persoonsgegevens te waarborgen, moet u interne procedures invoeren die garanderen dat gegevensbescherming overal in aanmerking wordt genomen. Ze dekken alle gebeurtenissen die zich in het leven van een verwerkingsactiviteit kunnen voordoen: een beveiligingsincident, verzoeken om rectificatie of inzage, een wijziging van de verzamelde gegevens, een wisseling van dienstverlener.
 
+Met Dastra digitaliseert en automatiseert u de onderstaande interne processen, minstens gedeeltelijk.
 
-Om te allen tijde een hoog niveau van bescherming van persoonsgegevens te garanderen, moet u interne procedures implementeren die ervoor zorgen dat te allen tijde rekening wordt gehouden met gegevensbescherming, rekening houdend met alle gebeurtenissen die zich tijdens de duur van een Verwerking kunnen voordoen (bijv. inbreuk op de beveiliging, beheer van rectificatie- of toegangsverzoeken, wijziging van verzamelde gegevens, verandering van dienstverlener).
-
-Met Dastra kunt u ten minste enkele van de volgende interne processen digitaliseren en automatiseren:
-
-* **Beheer van verzoeken om rechten uit te oefenen:**
+* Verzoeken van betrokkenen beheren:
 
 {% content-ref url="../../features/requests/README.md" %}
-[manage-rights-exercises](../../features/requests/README.md)
+[Verzoeken van betrokkenen om hun rechten uit te oefenen](../../features/requests/README.md)
 {% endcontent-ref %}
 
-* **Cookie toestemmingsbeheer :**
+* Cookietoestemming beheren:
 
 {% content-ref url="../../features/cookies/README.md" %}
-[manage-cookie-consent](../../features/cookies/README.md)
+[Cookies](../../features/cookies/README.md)
 {% endcontent-ref %}
 
-* **Beheer meldingen datalekken :**
+* Meldingen van datalekken beheren:
 
 {% content-ref url="../../features/incidents/README.md" %}
-[Inbreuk](../../features/incidents/README.md)
+[Inbreuken](../../features/incidents/README.md)
 {% endcontent-ref %}

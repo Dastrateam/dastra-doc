@@ -1,73 +1,66 @@
 # Stap 3: Risico's beheren
 
-Risicomanagement in Dastra kan verschillende vormen aannemen:
+Risicobeheer in Dastra kan verschillende vormen aannemen:
 
-* Gegevensbeschermingseffectbeoordeling (DPIA),
-* Risico-identificatie en -beoordeling (met behulp van de Risicomodule),
-* Audits.
+* de gegevensbeschermingseffectbeoordeling (DPIA),
+* het identificeren en beoordelen van risico's (met de module Risico's),
+* audits.
 
-### Effectbeoordeling
+## De effectbeoordeling
 
-Als u gegevensverwerking hebt geïdentificeerd die waarschijnlijk hoge risico's voor de rechten en vrijheden van betrokkenen met zich meebrengen, moet u voor elk van deze gegevensverwerking een Gegevensbeschermingseffectbeoordeling (DPIA) uitvoeren.
+Hebt u verwerkingen van persoonsgegevens geïdentificeerd die waarschijnlijk een hoog risico inhouden voor de rechten en vrijheden van betrokkenen, dan moet u voor elk ervan een [gegevensbeschermingseffectbeoordeling](https://www.cnil.fr/en/privacy-impact-assessment-pia) (DPIA) uitvoeren.
 
 {% hint style="info" %}
-Het uitvoeren van een DPIA is verplicht voor elke Verwerking die waarschijnlijk leidt tot hoge risico's voor de Rechten en Vrijheden van betrokkenen (Artikel 35 AVG).
+Een DPIA uitvoeren is verplicht voor elke verwerking die waarschijnlijk een hoog risico inhoudt voor de rechten en vrijheden van betrokkenen (artikel 35 van de AVG).
 {% endhint %}
 
-Om u te helpen bepalen of uw Verwerking waarschijnlijk hoge risico's met zich meebrengt, zijn de volgende 9 criteria vastgelegd in de G29-richtlijnen:
+Om te bepalen of uw verwerking waarschijnlijk een hoog risico inhoudt, bevatten de richtsnoeren van de Groep gegevensbescherming artikel 29 de volgende 9 criteria:
 
-1. Beoordeling of classificatie;
-2. Geautomatiseerd besluit met rechtsgevolgen of een aanzienlijk soortgelijk gevolg;
-3. Systematisch toezicht;
-4. Gevoelige gegevens of gegevens van zeer persoonlijke aard;
-5. Persoonsgegevensverwerking op grote schaal;
-6. Kruisverwijzingen tussen gegevensreeksen;
-7. Gegevens over kwetsbare personen;
-8. Innovatief gebruik of toepassing van nieuwe technologische of organisatorische oplossingen;
-9. Uitsluiting van een recht, dienst of contract.
+1. evaluatie of scoretoekenning;
+2. geautomatiseerde besluitvorming met rechtsgevolgen of vergelijkbaar significante gevolgen;
+3. systematische monitoring;
+4. gevoelige gegevens of gegevens van zeer persoonlijke aard;
+5. op grote schaal verwerkte persoonsgegevens;
+6. het matchen of combineren van datasets;
+7. gegevens over kwetsbare betrokkenen;
+8. innovatief gebruik of innovatieve toepassing van nieuwe technologische of organisatorische oplossingen;
+9. uitsluiting van een recht, een dienst of een contract.
 
-Deze criteria zijn rechtstreeks geïntegreerd in onze workflow voor het maken van gegevensverwerking en u kunt voor elk van uw verwerkingen aangeven of er al dan niet een PIA voor is uitgevoerd.
+Deze criteria zijn ingebouwd in de workflow voor het aanmaken van een verwerkingsactiviteit: voor elk criterium geeft u aan of een DPIA moet worden uitgevoerd.
 
-Voorbeeld van een Verwerking waarvoor mogelijk een PIA nodig is (<../../.gitbook/assets/image (23).png>)
+<figure><img src="../../.gitbook/assets/getting-started-tutorial-1.png" alt="Stap Impactanalyse van een verwerkingsactiviteit, met de 9 criteria en de knop om de beoordeling te genereren"><figcaption><p>Voorbeeld van een verwerkingsactiviteit waarvoor mogelijk een DPIA vereist is</p></figcaption></figure>
 
-### Risico's identificeren en beoordelen
+## Risico's identificeren en beoordelen
 
-Met de module Risico's in Dastra kunt u risico's beheren op het niveau van uw verwerking, uw Actoren (bijvoorbeeld subcontractanten) en uw Activa.&#x20;
+Met de module Risico's van Dastra beheert u risico's op het niveau van uw verwerkingsactiviteiten, uw stakeholders (bijvoorbeeld verwerkers) en uw activa.
 
-De risicobeheermethodologie voldoet aan de standaardeisen voor risicobeheer van informatiesystemen &#x20;
+De methodologie voor risicobeheer voldoet aan de standaardvereisten voor risicobeheer van informatiesystemen. Ze bestaat uit vier stappen:
 
-Er zijn 4 te volgen stappen:&#x20;
+1. risico's identificeren;
+2. risico's beoordelen;
+3. op risico's reageren;
+4. risico's opvolgen.
 
-1: risico-identificatie
-
-2: risicobeoordeling
-
-3: risicorespons
-
-4: risicomonitoring
-
-
-
-Risico wordt over het algemeen als volgt gemeten:&#x20;
+Over het algemeen wordt een risico als volgt gemeten:
 
 $$
-Risico = waarschijnlijkheid * impact
+Risico = Waarschijnlijkheid * Impact
 $$
 
 {% content-ref url="../../features/risks/README.md" %}
-[risicobeheer](../../features/risks/README.md)
+[Risicobeheer](../../features/risks/README.md)
 {% endcontent-ref %}
 
-### Audits
+## Audits
 
-Om het risicobeheer een stap verder te brengen, kan Dastra ook audits ontwerpen, campagnes uitvoeren en de resultaten verzamelen in de vorm van een exporteerbaar auditrapport.
+Om risicobeheer verder uit te diepen kunt u in Dastra ook audits ontwerpen, campagnes uitvoeren en de resultaten verzamelen in een exporteerbaar auditrapport.
 
 {% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
+[Audits en PIA's](../../features/questionnaires/README.md)
 {% endcontent-ref %}
 
-Dat is het, je risico's zijn geïdentificeerd en beoordeeld! Ga dan verder met stap 4, het prioriteren van de taken:
+Uw risico's zijn geïdentificeerd en beoordeeld. Ga verder met stap 4, het prioriteren van taken:
 
 {% content-ref url="step-4.md" %}
-[stap-3 te nemen acties prioriteren.md](step-4.md)
+[Stap 4: Acties prioriteren](step-4.md)
 {% endcontent-ref %}
