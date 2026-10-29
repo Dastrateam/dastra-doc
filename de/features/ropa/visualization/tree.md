@@ -1,35 +1,37 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie die Baumstruktur der Verarbeitungen in Dastra
-  visualisieren.
+  Erfahren Sie, wie Sie die Baumstruktur der Verarbeitungstätigkeiten in Dastra
+  anzeigen.
 ---
 
 # Baumstruktur der Verarbeitungen anzeigen
 
 ## Einführung
 
-In Dastra können Daten auf verschiedene Weisen visualisiert werden. Eine davon ist die Visualisierung der **Baumstruktur der Verarbeitungen** nach Entitäten und Abteilungen.
+In Dastra können Daten auf mehrere Arten angezeigt werden. Eine davon ist die **Baumstruktur der Verarbeitungstätigkeiten**, gegliedert nach Entitäten und Abteilungen.
 
-Diese Visualisierung ermöglicht es insbesondere zu verstehen, welchen Entitäten und/oder Abteilungen die Verarbeitungen zugeordnet sind.
+Diese Ansicht zeigt insbesondere, welchen Entitäten und Abteilungen Ihre Verarbeitungstätigkeiten zugeordnet sind.
 
-## Baumstruktur der Verarbeitungen visualisieren
+## Die Baumstruktur der Verarbeitungstätigkeiten anzeigen
 
-Um die Baumstruktur der Verarbeitungen zu visualisieren, klicken Sie auf das Modul "Verzeichnis" und dann auf den Pfeil rechts neben der Schaltfläche, um die Option "**Baumstruktur**" auszuwählen.
+Um die Baumstruktur der Verarbeitungstätigkeiten anzuzeigen, öffnen Sie das Modul **Verarbeitungstätigkeiten**, klicken auf den Pfeil rechts neben der Schaltfläche **Tabelle** und wählen dann **Baumstruktur**.
 
-![Modul "Verarbeitungsverzeichnis"](../../../.gitbook/assets/2.png)
+<figure><img src="../../../.gitbook/assets/ropa-tree-1.png" alt="Schaltfläche Tabelle und ihr Dropdown-Menü"><figcaption><p>Pfeil rechts neben der Schaltfläche Tabelle und Dropdown-Menü</p></figcaption></figure>
 
-![Pfeil rechts neben der Schaltfläche & Dropdown-Menü](../../../.gitbook/assets/struktur.png)
+Anschließend können Sie die **Baumstruktur** Ihrer Verarbeitungstätigkeiten **anzeigen**.
 
-So können Sie die **Baumstruktur der Verarbeitungen** visualisieren.
+<figure><img src="../../../.gitbook/assets/ropa-tree-2.png" alt="Die Baumstruktur der Verarbeitungstätigkeiten"><figcaption><p>Die Baumstruktur der Verarbeitungstätigkeiten in Dastra</p></figcaption></figure>
 
-![Die Baumstruktur der Verarbeitungen in Dastra](../../../.gitbook/assets/struktur2.png)
+Jede Entität und jede Abteilung wird mit der Zahl der ihr zugeordneten Verarbeitungstätigkeiten angezeigt. Sind Adresse und Vertreter ausgefüllt, erreichen Sie sie über das Hilfesymbol neben dem Namen. Klicken Sie auf den Pfeil am Zeilenanfang, um eine Organisationseinheit aufzuklappen und ihre Untereinheiten und Verarbeitungstätigkeiten mit **Schritt**, **Typ**, **Fortschritt** und **Tags** anzuzeigen.
+
+Klicken Sie auf eine Verarbeitungstätigkeit, um ihre Details anzuzeigen. Ihr Aktionsmenü, das erscheint, wenn Sie mit dem Mauszeiger über die Zeile fahren, ermöglicht es, sie zu bearbeiten, zu kopieren, zu exportieren, zu teilen oder in den Papierkorb zu verschieben.
 
 {% hint style="info" %}
-Die Filter und die Einstellungsschaltfläche ermöglichen es Ihnen, die Visualisierung der Baumstruktur nach Ihren Wünschen anzupassen.
+Mit den Filtern über der Baumstruktur passen Sie die Ansicht an Ihre Bedürfnisse an. Nutzer, die die Organisationseinheiten verwalten, können im Aktionsmenü einer Einheit außerdem diese bearbeiten oder eine untergeordnete Einheit hinzufügen und im Menü neben der Schaltfläche **Erstellen Sie eine Datenverarbeitung** **Eine Abteilung erstellen** verwenden.
 {% endhint %}
 
 ## Weiterführende Informationen
 
 {% content-ref url="../../../getting-started/setup/organizational-units.md" %}
-[creer-et-parametrer-des-entites-et-departements.md](../../../getting-started/setup/organizational-units.md)
+[Organisationseinheiten erstellen und konfigurieren](../../../getting-started/setup/organizational-units.md)
 {% endcontent-ref %}

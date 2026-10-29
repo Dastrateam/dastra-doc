@@ -1,85 +1,120 @@
 ---
-description: Definieren Sie die an der Datenverarbeitung beteiligten Stakeholder.
+description: Identifizieren Sie die wichtigsten an der Datenverarbeitung beteiligten Parteien.
 ---
 
 # Stakeholder
 
-## Nutzer einer Verarbeitung zuordnen
+Der Abschnitt **Interessengruppen** (früher **Stakeholder** genannt) ist der zweite Abschnitt einer Verarbeitungstätigkeit. Er fasst zwei Listen zusammen:
 
-Dastra ermöglicht es Ihnen, Nutzer einer Verarbeitung zuzuordnen.
+* die **Nutzer**: Personen, die ein Konto auf der Dastra-Plattform haben und der Verarbeitungstätigkeit zugewiesen sind,
+* die **Stakeholder**: die an der Verarbeitung beteiligten Organisationen, Abteilungen oder Personen, etwa der Verantwortliche, sein Datenschutzbeauftragter, gemeinsam Verantwortliche oder der für die Umsetzung der Verarbeitung Zuständige.
 
-**Achtung, es handelt sich nicht um Stakeholder, sondern um Nutzer (natürliche Personen, die über ein Zugangskonto zur Dastra-Plattform verfügen).**
+## Nutzer einer Verarbeitungstätigkeit zuordnen
 
-{% hint style="warning" %}
-Nutzerkonten müssen mindestens eine Stunde vor dem Hinzufügen als Interessengruppe erstellt worden sein.
+Mit Dastra können Sie Nutzer einer Verarbeitungstätigkeit zuordnen.
+
+Es handelt sich nicht um Stakeholder, sondern um Nutzer (natürliche Personen, die ein Konto auf der Dastra-Plattform haben).
+
+1. Klicken Sie im Abschnitt **Interessengruppen** auf **Nutzer hinzufügen**.
+2. Wählen Sie unter **Inhaber der Verarbeitung** einen oder mehrere Nutzer aus.
+3. Wählen Sie unter **Rollen zuweisen** die Rolle dieser Nutzer.
+4. Klicken Sie auf **Hinzufügen**.
+
+Die Nutzer erscheinen in der Tabelle mit ihrer **Funktion**, die Sie jederzeit in der Tabelle ändern können.
+
+Die so definierten Rollen helfen Ihnen, die Verwaltung und Umsetzung Ihrer Verarbeitungstätigkeiten in Dastra zu organisieren:
+
+* **Genehmiger** (Accountable): der Nutzer in Dastra, der dafür zuständig ist, zu bestätigen, dass die Verarbeitungstätigkeit und die zugehörigen Elemente, wie sie in Dastra beschrieben sind, den Erwartungen der Organisation entsprechen. Diese Person kann sich vom Unterzeichner des Verantwortlichen unterscheiden. Es kann sich zum Beispiel um einen Abteilungsleiter, einen Datenschutzbeauftragten oder einen Datenschutz-Ansprechpartner handeln.
+* **Verantwortlicher** (Responsible): der Nutzer, der die nötigen Maßnahmen an der Verarbeitungstätigkeit umsetzt und sie beschreibt. Das kann die Umsetzung von Datensicherheitsmaßnahmen sein, die Verwaltung von Zugriffen oder jede andere Aufgabe, die nötig ist, um die Konformität der Verarbeitung sicherzustellen. Es kann sich um einen Projektleiter oder einen eigens benannten Fachverantwortlichen handeln. Diese Rolle ist nicht mit dem Verantwortlichen im Sinne der DSGVO zu verwechseln.
+* **Informiert** (Informed): Nutzer, die über Fortschritt und Status der Verarbeitungstätigkeit auf dem Laufenden gehalten werden müssen, ohne eine aktive Rolle bei ihrer Freigabe oder Umsetzung zu haben. Dazu können Mitglieder der Geschäftsführung, Projektleiter oder andere Stakeholder gehören, die ein Interesse an der Verarbeitung haben.
+
+Zugewiesene Nutzer werden über die Maßnahmen an der Verarbeitungstätigkeit benachrichtigt und sind die Standardempfänger der zugehörigen Aufgaben und Benachrichtigungen.
+
+{% hint style="info" %}
+Die Zuweisung eines Nutzers schränkt den Zugriff auf die Verarbeitungstätigkeit nicht ein. Um den Zugriff zu beschränken, nutzen Sie das System der Rollen und Berechtigungen.
 {% endhint %}
 
-Die so definierten Rollen ermöglichen eine effektive Strukturierung der Verwaltung und Umsetzung Ihrer Verarbeitungen in Dastra.
+## Die wichtigsten Stakeholder der Verarbeitungstätigkeit identifizieren
 
-So können Sie die Rollen Ihrer Nutzer für Ihre Verarbeitungen definieren:
+Sie können die Stakeholder angeben, die an der Umsetzung der Verarbeitung beteiligt sind. Das kann zum Beispiel eine Abteilung eines Unternehmens sein (etwa die Personalabteilung), aber auch eine eigens benannte Person bei einem Projekt (zum Beispiel ein Projektleiter).
 
-* **Genehmiger**: Der Nutzer in Dastra, der für die Validierung verantwortlich ist, dass die Verarbeitung und die zugehörigen Elemente, wie sie in Dastra angegeben sind, den Erwartungen der Organisation entsprechen. Er kann sich vom Unterzeichner des Verantwortlichen unterscheiden. Es kann sich z. B. um einen Abteilungsleiter, einen Datenschutzbeauftragten oder einen DSB-Vertreter handeln.
-* **Ausführender**: Der Nutzer, der die Aufgabe hat, die erforderlichen Maßnahmen für die Verarbeitung umzusetzen und sie zu beschreiben. Das kann die Umsetzung von Datensicherheitsmaßnahmen, die Zugriffsverwaltung oder jede andere Aufgabe sein, die zur Sicherstellung der Compliance der Verarbeitung erforderlich ist. Es kann sich um einen Projektleiter oder einen dedizierten Fachverantwortlichen handeln.
-* **Informiert**: Diese Kategorie umfasst Nutzer, die über den Fortschritt und den Status der Verarbeitung informiert werden müssen, ohne eine aktive Rolle bei der Validierung oder Umsetzung zu haben. Dies kann Mitglieder der Geschäftsführung, Projektmanager oder andere Interessengruppen umfassen, die ein Interesse an der Verarbeitung haben.
+Gegebenenfalls geben Sie außerdem den Vertreter des Verantwortlichen und den oder die gemeinsam Verantwortlichen an.
 
-## Die Hauptstakeholder einer Verarbeitung identifizieren
+Die ersten Zeilen der Stakeholder-Tabelle werden von der Entität der Organisationseinheit übernommen, die Sie im Abschnitt **Allgemeines** ausgewählt haben, und sind mit einem Schloss-Symbol gekennzeichnet:
 
-Sie können die an der Umsetzung der Verarbeitung beteiligten Stakeholder angeben. Dies kann beispielsweise eine Abteilung eines Unternehmens sein (wie die Personalabteilung) oder auch eine dedizierte Person, wenn es sich um ein Projekt handelt (z. B. ein Projektleiter).<br>
+* der **Verantwortliche** (bei einer Tätigkeit als Auftragsverarbeiter **Organisation (Auftragsverarbeiter)**),
+* sein **Datenschutzbeauftragter (DSB)**,
+* sein **Vertreter**.
 
-Sie geben auch die Identität des Vertreters des Verantwortlichen an, gegebenenfalls des oder der gemeinsamen Verantwortlichen.
+Um sie zu ändern, bearbeiten Sie die Entität in der Verwaltung der Organisationseinheiten.
 
-<figure><img src="../../../.gitbook/assets/stakeholder hinzufügen1.png" alt=""><figcaption></figcaption></figure>
+## Einen bestimmten Stakeholder hinzufügen
 
-<figure><img src="../../../.gitbook/assets/stakeholder hinzufügen2.png" alt=""><figcaption></figcaption></figure>
+1. Klicken Sie im Abschnitt **Interessengruppen** auf **Spezifische Interessengruppe hinzufügen**.
+2. Durchsuchen Sie unter **Einen Stakeholder auswählen** das Stakeholder-Verzeichnis oder klicken Sie auf **Stakeholder erstellen**, um einen neuen hinzuzufügen.
+3. Wählen Sie unter **Bitte wählen Sie einen Titel** die Rolle dieses Stakeholders: **Gemeinsam verantwortlich**, **Vertreter des Verantwortlichen für die Verarbeitung**, **Verantwortlich für die Umsetzung der Verarbeitung**, **Verantwortlicher für die operative Verarbeitung** oder **Sonstiges**. Wenn Sie **Sonstiges** wählen, geben Sie die Rolle unter **Stellenbezeichnung** ein.
+4. Klicken Sie auf **Hinzufügen**.
 
-## Einen gemeinsamen Verantwortlichen hinzufügen
+<figure><img src="../../../.gitbook/assets/ropa-stakeholders-1.png" alt="Geöffnete Auswahlliste für die Kategorie im Fenster zum Hinzufügen eines bestimmten Stakeholders"><figcaption><p>Verfügbare Kategorien für einen bestimmten Stakeholder</p></figcaption></figure>
 
-Um einen gemeinsamen Verantwortlichen hinzuzufügen, muss eine neue Interessengruppe hinzugefügt und "Gemeinsamer Verantwortlicher" ausgewählt werden.
+## Einen gemeinsam Verantwortlichen hinzufügen
 
-Sie werden aufgefordert, einen Stakeholder als gemeinsamen Verantwortlichen hinzuzufügen.
+Um einen gemeinsam Verantwortlichen hinzuzufügen, fügen Sie einen neuen Stakeholder hinzu und wählen unter **Bitte wählen Sie einen Titel** die Kategorie **Gemeinsam verantwortlich**.
 
-<figure><img src="../../../.gitbook/assets/stakeholder hinzufügen3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-stakeholders-2.png" alt="Fenster zum Hinzufügen eines bestimmten Stakeholders mit ausgewählter Kategorie Gemeinsam verantwortlich"><figcaption><p>Einen gemeinsam Verantwortlichen zur Verarbeitungstätigkeit hinzufügen</p></figcaption></figure>
 
-## Einen Verantwortlichen für die Umsetzung der Verarbeitung hinzufügen
+## Einen für die Umsetzung der Verarbeitung Verantwortlichen hinzufügen
 
-Der Verantwortliche für die Umsetzung entspricht der Abteilung, die operativ für die Verarbeitung verantwortlich ist. Es handelt sich in der Regel um die Abteilung, die die Daten nutzt und die Verarbeitungstätigkeit durchführt.
+Der für die Umsetzung der Verarbeitung Verantwortliche ist die Abteilung, die operativ für die Verarbeitung zuständig ist. Das ist in der Regel die Abteilung, die die Daten nutzt und die Verarbeitungstätigkeit durchführt.
 
-Es kann sich um eine Abteilung oder eine natürliche Person handeln.
+Es kann sich um eine Abteilung oder um eine Einzelperson handeln.
 
-In Dastra müssen Sie einen Stakeholder hinzufügen.
+Fügen Sie ihn in Dastra als Stakeholder mit der Kategorie **Verantwortlich für die Umsetzung der Verarbeitung** hinzu.
 
 ## Einen Vertreter des Verantwortlichen hinzufügen
 
-Der Vertreter des Verantwortlichen entspricht dem operativen Vertreter des Verantwortlichen. Es kann sich beispielsweise um ein Mitglied der Geschäftsleitung oder einen Gemeinderat handeln (wobei der Verantwortliche durch den Bürgermeister vertreten wird).
+Der Vertreter des Verantwortlichen ist der operative Vertreter des Verantwortlichen. Das kann zum Beispiel ein Mitglied der Geschäftsleitung sein oder ein Gemeinderatsmitglied (wobei der Verantwortliche durch den Bürgermeister vertreten wird).
+
+Fügen Sie ihn in Dastra als Stakeholder mit der Kategorie **Vertreter des Verantwortlichen für die Verarbeitung** hinzu.
 
 ## Einen operativen Verantwortlichen hinzufügen
 
-Der operative Verantwortliche (RTO) wird intern von einigen Organisationen verwendet, um eine Person zu bezeichnen, die spezifische Verantwortlichkeiten in der operativen Verwaltung von Datenverarbeitungen hat.
+Der **operative Verantwortliche** (Operational Data Controller, ODC) ist ein Konzept, das einige Organisationen intern verwenden, um eine Person mit besonderen Aufgaben in der **operativen Verwaltung der Verarbeitung personenbezogener Daten** zu bezeichnen.
 
-#### 📌 **Rolle des RTO in der Datenschutz-Governance**
+Fügen Sie ihn in Dastra als Stakeholder mit der Kategorie **Verantwortlicher für die operative Verarbeitung** hinzu.
 
-Der **RTO** (Operativer Verantwortlicher) ist kein direkt in der DSGVO definierter Begriff, kann aber intern von einigen Organisationen verwendet werden, um eine Person mit spezifischen Verantwortlichkeiten in der operativen Verwaltung von Datenverarbeitungen zu bezeichnen.
+**Rolle des operativen Verantwortlichen in der Governance der DSGVO**\
+Der **operative Verantwortliche** ist kein Begriff der DSGVO, aber einige Organisationen verwenden ihn intern, um eine Person mit besonderen **operativen Aufgaben** bei der Verwaltung von Verarbeitungstätigkeiten zu bezeichnen.
 
-1. **Umsetzung der Datenverarbeitungen**
-   * Der RTO ist häufig **ein operativer Vertreter des Verantwortlichen** innerhalb einer Fachabteilung (z. B. Personal, Marketing, IT usw.).
-   * Er ist für **die tägliche Durchführung der Verarbeitungen** zuständig, gemäß den Anweisungen des Verantwortlichen und unter Einhaltung der Datenschutzgrundsätze.
-2. **Anwendung der Compliance-Maßnahmen**
-   * Er stellt sicher, dass die Verarbeitungen in Übereinstimmung mit den internen Compliance-Richtlinien und den Datenschutzpflichten durchgeführt werden.
-   * Er wendet die vom Unternehmen definierten technischen und organisatorischen Maßnahmen an, um die Sicherheit und Vertraulichkeit der Daten zu gewährleisten.
-3. **Zusammenarbeit mit dem DSB und dem Verantwortlichen**
-   * Er arbeitet **eng mit dem Datenschutzbeauftragten (DSB)** zusammen, um sicherzustellen, dass die Verarbeitungen die Datenschutzregeln einhalten.
-   * Er kann ein bevorzugter Ansprechpartner für den DSB sein, wenn es darum geht, **auf Betroffenenanfragen zu antworten (Auskunft, Berichtigung, Löschung usw.)**.
-4. **Verwaltung von Vorfällen und Datenschutzvorfällen**
-   * Er kann an der **Erkennung und Verwaltung von Datenschutzvorfällen** beteiligt sein, indem er die internen Verfahren anwendet, um **schnell zu reagieren** und den Vorfall bei Bedarf zu melden.
-   * Er überwacht die Vorfälle und hilft bei der Umsetzung von Korrekturmaßnahmen.
-5. **Dokumentation und Pflege des Verarbeitungsverzeichnisses**
-   * Er beteiligt sich an der Aktualisierung des **Verarbeitungsverzeichnisses**, dokumentiert die unter seiner Verantwortung stehenden Verarbeitungen und stellt sicher, dass die Informationen ordnungsgemäß an den Verantwortlichen oder den DSB weitergeleitet werden.
+### Umsetzung der Datenverarbeitung
 
-#### **Unterschied zwischen Verantwortlicher und Operativer Verantwortlicher**
+* Der operative Verantwortliche dient häufig als **operativer Ansprechpartner des Verantwortlichen** in einer Fachabteilung (zum Beispiel Personal, Marketing, IT).
+* Er ist dafür zuständig, die Verarbeitungstätigkeiten im Tagesgeschäft nach den **Weisungen des Verantwortlichen** und unter Beachtung der Datenschutzgrundsätze durchzuführen.
 
-| **Kriterium**                | **Verantwortlicher (RT)**                               | **Operativer Verantwortlicher (RTO)**                       |
-| ---------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- |
-| **Rolle**                    | Legt die Verarbeitungszwecke und -mittel fest           | Setzt die Verarbeitungen vor Ort um                         |
-| **Entscheidungen**           | Entscheidet über das Warum und Wie der Verarbeitungen   | Wendet die Entscheidungen an und verwaltet die Durchführung |
-| **Rechtliche Verantwortung** | Trägt die rechtliche Verantwortung bei Nicht-Compliance | Handelt unter der Verantwortung des RT                      |
-| **Verbindung zum DSB**       | Interagiert mit dem DSB zur Definition der Richtlinien  | Führt die Empfehlungen des DSB aus                          |
+### Anwendung der Compliance-Maßnahmen
+
+* Der operative Verantwortliche stellt sicher, dass Verarbeitungstätigkeiten nach den **internen Compliance-Richtlinien** und den Datenschutzpflichten durchgeführt werden.
+* Er wendet die vom Unternehmen festgelegten **technischen und organisatorischen Maßnahmen** an, um die **Sicherheit und Vertraulichkeit** der personenbezogenen Daten zu gewährleisten.
+
+### Zusammenarbeit mit dem Datenschutzbeauftragten und dem Verantwortlichen
+
+* Der operative Verantwortliche arbeitet eng mit dem **Datenschutzbeauftragten (DSB)** zusammen, damit die Verarbeitungstätigkeiten den Datenschutzvorschriften entsprechen.
+* Er kann ein zentraler Ansprechpartner für den **DSB** sein, insbesondere bei der Bearbeitung von **Betroffenenanfragen** (zum Beispiel Auskunft, Berichtigung, Löschung).
+
+### Umgang mit Vorfällen und Datenschutzverletzungen
+
+* Der operative Verantwortliche kann an der **Erkennung und Behandlung von Datenschutzverletzungen** beteiligt sein und wendet interne Verfahren an, um **schnell zu reagieren und** Vorfälle bei Bedarf **zu melden**.
+* Er verfolgt Vorfälle und hilft bei der Umsetzung von **Korrekturmaßnahmen**.
+
+### Dokumentation und Pflege des Verarbeitungsverzeichnisses
+
+* Der operative Verantwortliche trägt zur Aktualisierung des **Verarbeitungsverzeichnisses** bei, dokumentiert die Verarbeitungen in seiner Verantwortung und stellt sicher, dass die relevanten Informationen korrekt an den **Verantwortlichen oder den DSB** gemeldet werden.
+
+**Unterschied zwischen dem Verantwortlichen und dem operativen Verantwortlichen**
+
+| **Kriterium**                | **Verantwortlicher**                                            | **Operativer Verantwortlicher**                        |
+| ---------------------------- | --------------------------------------------------------------- | ------------------------------------------------------ |
+| **Rolle**                    | Legt die **Zwecke** und **Mittel** der Verarbeitung fest        | Setzt Verarbeitungstätigkeiten in der Praxis um        |
+| **Entscheidungsbefugnis**    | Entscheidet, **warum und wie** Daten verarbeitet werden         | Wendet Entscheidungen an und steuert die Durchführung  |
+| **Rechtliche Verantwortung** | Trägt bei Verstößen die **rechtliche Verantwortung**            | Handelt unter der **Weisung des Verantwortlichen**     |
+| **Zusammenarbeit mit dem DSB** | Arbeitet mit dem **DSB** an der Festlegung von Richtlinien    | Setzt die **Empfehlungen des DSB** um                  |

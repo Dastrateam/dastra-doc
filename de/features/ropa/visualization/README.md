@@ -6,44 +6,42 @@ description: Erfahren Sie, wie Sie Daten in Dastra visualisieren.
 
 ## Einführung
 
-In Dastra können **Daten** auf verschiedene Weisen **visualisiert** werden:
+In Dastra können die **Daten** Ihres Verarbeitungsverzeichnisses auf mehrere Arten **angezeigt** werden:
 
-* Die organisatorische **Baumstruktur** der Verarbeitungen,
-* Die **Datenkartierung** des Verarbeitungsverzeichnisses,
-* Die **Datenübermittlungen**.
+* als Liste, als Karten oder als **Baumstruktur** nach Entitäten und Abteilungen,
+* als **Datenkartierung** des Verzeichnisses,
+* als Karte der Datenübermittlungen.
 
-## Ändern Sie die Visualisierung des Verzeichnisses
+## Die Ansicht des Verzeichnisses ändern
 
-Um die Art und Weise zu ändern, wie die Verarbeitungen in Ihrem Verzeichnis angezeigt werden, gehen Sie zum Modul "Verzeichnis" in der Leiste links auf dem Bildschirm. Standardmäßig werden die Verarbeitungen im Tabellenformat angezeigt. Klicken Sie auf den **Pfeil rechts** neben der Schaltfläche "Tabelle".
+Um zu ändern, wie die Verarbeitungstätigkeiten in Ihrem Verzeichnis angezeigt werden, öffnen Sie im linken Menü das Modul **Verarbeitungstätigkeiten**. Standardmäßig werden die Verarbeitungstätigkeiten in der Ansicht **Tabelle** angezeigt. Klicken Sie in der Symbolleiste auf den Pfeil rechts neben der Schaltfläche **Tabelle** und wählen Sie eine andere Ansicht.
 
-![Modul "Verarbeitungsverzeichnis"](../../../.gitbook/assets/2.png)
+<figure><img src="../../../.gitbook/assets/ropa-visualization-1.png" alt="Schaltfläche Tabelle und ihr Dropdown-Menü"><figcaption><p>Die für das Verzeichnis verfügbaren Ansichten</p></figcaption></figure>
 
-![Pfeil rechts neben der Schaltfläche & Dropdown-Menü](../../../.gitbook/assets/struktur.png)
+Es stehen drei Ansichten zur Verfügung:
 
-{% hint style="info" %}
-Die erste Wahl "Tabelle" bezieht sich auf die Standardvisualisierung des **Verarbeitungsverzeichnisses**.
-{% endhint %}
-
-Neben der Tabellenansicht sind auch eine Kartenansicht und eine Baumstrukturansicht verfügbar.
+* **Tabelle**: die Standardansicht des Verarbeitungsverzeichnisses als Tabelle, deren Spalten, Sortierung und Filter Sie anpassen können.
+* **Karten**: eine Karte je Verarbeitungstätigkeit, mit ihren wichtigsten Informationen und Anzeigen.
+* **Baumstruktur**: die nach Entitäten und Abteilungen gegliederten Verarbeitungstätigkeiten.
 
 {% content-ref url="tree.md" %}
-[visualiser-larborescence-des-traitements.md](tree.md)
+[Baumstruktur der Verarbeitungen anzeigen](tree.md)
 {% endcontent-ref %}
 
-## Visualisieren Sie die Datenkartierung Ihres Verzeichnisses und die Übermittlungen
+## Die Kartierung Ihres Verzeichnisses und die Übermittlungen anzeigen
 
-Die Datenkartierung des Verzeichnisses und die Übermittlungskarte sind in den Tabs oben auf Ihrem Bildschirm, über Ihrer Liste verfügbar
+Die Datenkartierung des Verzeichnisses und die Übermittlungskarte stehen in den Tabs **Data Mapping** und **Drittländer** oben im Modul **Verarbeitungstätigkeiten** zur Verfügung, über Ihrer Liste.
 
 {% content-ref url="data-map.md" %}
-[visualiser-la-cartographie-des-donnees.md](data-map.md)
+[Datenkartierung des Verzeichnisses anzeigen](data-map.md)
 {% endcontent-ref %}
 
 {% content-ref url="transfers-map.md" %}
-[visualiser-la-carte-des-transferts.md](transfers-map.md)
+[Übermittlungskarte anzeigen](transfers-map.md)
 {% endcontent-ref %}
 
 ## Weiterführende Informationen
 
 {% content-ref url="../../risks/README.md" %}
-[la-gestion-des-risques](../../risks/README.md)
+[Risikomanagement](../../risks/README.md)
 {% endcontent-ref %}

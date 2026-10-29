@@ -1,123 +1,111 @@
 ---
-description: >-
-  Diese Seite stellt die wichtigsten Fragen und die von uns vorgeschlagenen
-  Antworten vor.
+description: Häufig gestellte Fragen zum Verzeichnis der Verarbeitungstätigkeiten.
 ---
 
 # Häufig gestellte Fragen
 
-## Wie zeigt man den Änderungsverlauf einer Verarbeitung an?
+## Wie zeigt man den Änderungsverlauf einer Verarbeitungstätigkeit an?
 
-Für alle Verarbeitungen können Sie den Änderungsverlauf sowie die Details der Änderungen anzeigen.
+Für alle Verarbeitungstätigkeiten können Sie den Änderungsverlauf und die Details der Änderungen anzeigen.
 
-Klicken Sie dazu einfach auf das Uhrsymbol oben auf der Seite.
+Klicken Sie dazu oben auf der Seite der Verarbeitungstätigkeit auf das Uhrsymbol (**Aktivitätsverlauf**).
 
-<figure><img src="../../.gitbook/assets/verlauf.png" alt=""><figcaption><p>Schaltfläche zum Zugriff auf den Verlauf</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-faq-1.png" alt="Schaltfläche Aktivitätsverlauf oben auf der Seite einer Verarbeitungstätigkeit"><figcaption><p>Schaltfläche für den Zugriff auf den Verlauf</p></figcaption></figure>
 
-Achtung, Änderungen an Organisationseinheiten werden nicht nachverfolgt.
+Klicken Sie bei einem Eintrag auf **Details zu den Änderungen**, um die Versionen zu vergleichen. Von dort aus bringt Sie die Schaltfläche **Wiederherstellen** zu dieser Version zurück, sofern Ihre Rolle es erlaubt.
 
-## Ist es möglich, automatisch Elemente im Feld "Interessengruppen" bei einer neuen Verarbeitung hinzuzufügen?
+Änderungen an Organisationseinheiten werden nicht nachverfolgt.
 
-Nein, Interessengruppen können nicht automatisch über automatisierte Workflows aktualisiert werden.
+## Kann man im Feld „Stakeholder“ einer neuen Verarbeitungstätigkeit automatisch Elemente hinzufügen?
 
-Es ist jedoch möglich, ein benutzerdefiniertes Feld auf Ebene der Interessengruppen zu erstellen, das über den automatisierten Workflow geändert werden kann.
+Nein, Stakeholder können nicht über einen automatisierten Workflow aktualisiert werden.
 
-## Wie löscht man eine Verarbeitung?
+Sie können jedoch auf Ebene der Stakeholder ein benutzerdefiniertes Feld erstellen, das über den automatisierten Workflow geändert werden kann.
 
-Um eine Verarbeitung zu löschen, ist ein Umweg über den Papierkorb erforderlich: Klicken Sie auf "In den Papierkorb verschieben" und zeigen Sie dann den Papierkorb über die Filter an. Dort ist es möglich, die Verarbeitung endgültig zu löschen. Dies dient als Schutzmaßnahme gegen vorschnelle Löschungen.
+## Wie löscht man eine Verarbeitungstätigkeit?
 
-Um eine Verarbeitung in den Papierkorb zu verschieben, gehen Sie auf die drei kleinen Punkte auf der Verarbeitung, um das Menü anzuzeigen.
+Um eine Verarbeitungstätigkeit zu löschen, müssen Sie sie zuerst mit **In den Papierkorb verschieben** in den Papierkorb verschieben. Danach können Sie den Papierkorb über die Filter anzeigen und die Verarbeitungstätigkeit endgültig löschen. Das ist ein Schutz vor voreiligen Löschungen.
 
-<figure><img src="../../.gitbook/assets/papierkorb.png" alt=""><figcaption></figcaption></figure>
+Um eine Verarbeitungstätigkeit in den Papierkorb zu verschieben, öffnen Sie das Menü am Ende ihrer Zeile und wählen **In den Papierkorb verschieben**.
 
-Und schließlich die Archive anzeigen
+<figure><img src="../../.gitbook/assets/ropa-faq-2.png" alt="Aktionsmenü der Zeile einer Verarbeitungstätigkeit mit dem Eintrag In den Papierkorb verschieben"><figcaption><p>Eine Verarbeitungstätigkeit in den Papierkorb verschieben</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/papierkorb2.png" alt=""><figcaption></figcaption></figure>
+Zeigen Sie dann den Papierkorb an: Klicken Sie auf **Filter** und aktivieren Sie **Papierkorb anzeigen**.
 
-<figure><img src="../../.gitbook/assets/papierkorb4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-faq-3.png" alt="Filterbereich des Verzeichnisses mit der Option Papierkorb anzeigen"><figcaption><p>Den Papierkorb anzeigen</p></figcaption></figure>
 
-und löschen
+Öffnen Sie schließlich das Menü am Ende der Zeile und wählen Sie **Löschen**. Mit **Wiederherstellen** legen Sie die Verarbeitungstätigkeit stattdessen wieder im Verzeichnis ab.
 
-<figure><img src="../../.gitbook/assets/papierkorb3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-faq-4.png" alt="Aktionsmenü der Zeile einer Verarbeitungstätigkeit im Papierkorb mit den Einträgen Wiederherstellen und Löschen"><figcaption><p>Eine Verarbeitungstätigkeit endgültig löschen</p></figcaption></figure>
 
-## Wie verwendet man Datensätze, ohne die Daten ändern zu können?
+## Wie können Nutzer Datenkategorien verwenden, ohne sie ändern zu können?
 
-Sie fragen sich, wie Sie den Zugriff auf die Daten (Felder) der Datensätze einschränken können, um Probleme mit der Verknüpfung zu anderen Verarbeitungsblättern zu vermeiden.
+Ihre DSB-Vertreter müssen unter Umständen die von Ihnen bereitgestellten Datenkategorien in ihren Verarbeitungstätigkeiten verwenden, ohne neue zu erstellen oder die enthaltenen Datenfelder zu ändern, damit die Verknüpfungen mit anderen Verarbeitungstätigkeiten konsistent bleiben.
 
-Es ist nämlich möglich, dass Ihre DSB-Vertreter die von Ihnen vorgeschlagenen Datensätze verwenden müssen, ohne neue erstellen zu dürfen.
+Erstellen Sie in diesem Fall eine benutzerdefinierte Rolle. Öffnen Sie die Rollen: [https://app.dastra.eu/general-settings/roles](https://app.dastra.eu/general-settings/roles) (siehe [Rollen und Berechtigungen](../settings/roles.md)).
 
-In diesem Fall sollte eine benutzerdefinierte Rolle erstellt werden.
+Erstellen Sie dann eine benutzerdefinierte Rolle mit den folgenden Berechtigungen:
 
-Gehen Sie dazu zu den Rollen: [https://app.dastra.eu/general-settings/roles](https://app.dastra.eu/general-settings/roles)
+* **Data processing records**: Read, Write
+* **Data mapping and repositories**: Read
 
-Erstellen Sie dann eine benutzerdefinierte Rolle mit den Berechtigungen:
+Weisen Sie diese Rolle anschließend den betreffenden Nutzern zu. Sie können die Datenkategorien in ihren Verarbeitungstätigkeiten verwenden, aber die Elemente der Datenkartierung nicht ändern.
 
-* Verzeichnis: Lesen, Schreiben
-* Datenkartierung: Lesen
+## Wie fügt man Stakeholder oder Empfänger zu mehreren Verarbeitungstätigkeiten hinzu?
 
-<figure><img src="../../.gitbook/assets/rollen.png" alt=""><figcaption><p>Rolle, die den Zugriff auf Datensätze ohne Bearbeitungsmöglichkeit ermöglicht</p></figcaption></figure>
+Mit Sammelaktionen können Sie Stakeholder oder Empfänger mehreren Verarbeitungstätigkeiten gleichzeitig hinzufügen.
 
-Weisen Sie dann diese Rolle den betreffenden Nutzern zu.
+Wählen Sie in der Ansicht **Tabelle** die Verarbeitungstätigkeiten mit den Kontrollkästchen aus. Die Schaltfläche **Bitte wählen Sie eine Sammelaktion aus** erscheint.
 
-Sie werden die Elemente der Datenkartierung nicht ändern können.
+Wählen Sie **Stakeholder vernetzen**, dann **Hinzufügen**, wählen Sie die Stakeholder, anschließend ihren **Typ** (zum Beispiel Stakeholder oder Empfänger) und ihre Kategorie und bestätigen Sie. Enthält Ihre Auswahl sowohl Verarbeitungstätigkeiten des Verantwortlichen als auch des Auftragsverarbeiters, steht nur der Typ Stakeholder zur Verfügung.
 
-{% hint style="info" %}
-Wenn Sie die Antwort in diesem Leitfaden nicht finden, können Sie uns [über den Support kontaktieren](../../getting-started/support/request.md)
-{% endhint %}
+Dasselbe Fenster entfernt mit der Auswahl **Löschen** Stakeholder aus den ausgewählten Verarbeitungstätigkeiten.
 
-## Interessengruppen oder Empfänger zu mehreren Verarbeitungen hinzufügen?
+## Wie erhält man die Liste der Assets je Organisationseinheit?
 
-Sie können Interessengruppen zu mehreren Verarbeitungen gleichzeitig hinzufügen, indem Sie Massenänderungen verwenden.
+Die Liste der Assets je Organisationseinheit erhalten Sie über die Verknüpfungen zwischen Assets und Verarbeitungstätigkeiten.
 
-Gehen Sie dazu in die Tabellenansicht des Verzeichnisses und wählen Sie die Verarbeitungen mit den Kontrollkästchen aus.
+Nutzen Sie den Excel-Export der Verarbeitungstätigkeiten: Filtern Sie das Verzeichnis nach Organisationseinheit, wählen Sie die Verarbeitungstätigkeiten aus und exportieren Sie sie. Aktivieren Sie im Exportfenster **Bestimmte Spalten exportieren** und behalten Sie nur die Spalte der Assets: Sie erhalten die Assets dieser Organisationseinheit. Sie können auch nur die Spalten der Organisationseinheit und der Assets behalten, um die Assets aller Organisationseinheiten auf einmal zu erhalten.
 
-Anschließend sehen Sie die Schaltfläche "Gruppenaktionen wählen" erscheinen.
-
-Wählen Sie die Option "Stakeholder vernetzen" und fügen Sie Ihre Stakeholder als Interessengruppe hinzu.
-
-<figure><img src="../../.gitbook/assets/st vern.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/st vern2.png" alt=""><figcaption></figcaption></figure>
-
-## Die Liste der Assets nach Organisationseinheit (OE) erhalten?
-
-Sie können die Liste der nach Organisationseinheit verteilten Assets über deren Verknüpfungen mit den Verarbeitungen erhalten.
-
-Sie können den Export der Verarbeitungen im Excel-Format dafür verwenden. Durch Filtern der Verarbeitungen nach OE und Exportieren der ausgewählten Verarbeitungen können Sie wählen, nur das Feld Assets im Export zu exportieren. So erhalten Sie den Export der Assets nach OE. Sie können auch wählen, nur die OE und die Assets zu exportieren, um alle Assets aller OE zu erhalten. Über die Datenkartierungsansicht des Verzeichnisses finden Sie diese Information ebenfalls als grafische Darstellung.
+Die [Datenkartierung des Verzeichnisses](visualization/data-map.md) zeigt diese Information auch grafisch.
 
 ## Wie dupliziert man ein Verzeichnis in einen anderen Mandanten?
 
-Sie können ein Verzeichnis und die zugehörigen Verarbeitungen auf verschiedene Weise duplizieren:
+Sie können ein Verzeichnis und seine Verarbeitungstätigkeiten auf verschiedene Weise duplizieren:
 
-* entweder durch [Export und Re-Import](export-import.md) der Verarbeitungen im JSON-Format
-* oder indem Sie zum Zielmandanten gehen und die Verarbeitungen aus der Bibliothek erstellen. Sie können dann die Quelle der Bibliothek ändern und den Ursprungsmandanten des Verzeichnisses wählen.
+* entweder durch [Export und erneuten Import](export-import.md) der Verarbeitungstätigkeiten im JSON-Format,
+* oder indem Sie in den Zielmandanten wechseln und die Verarbeitungstätigkeiten mit **Erstellen Sie auf der Grundlage von Vorlagen** erstellen: Wählen Sie unter **Datenquelle der Bibliothek** den Mandanten aus, der das ursprüngliche Verzeichnis enthält.
 
-## Wie ändert man den Verarbeitungstyp (von einer als Verantwortlicher erstellten Verarbeitung zu einer als Auftragsverarbeiter erstellten Verarbeitung und umgekehrt)?
+## Wie ändere ich den Typ einer Verarbeitungstätigkeit (von Verantwortlicher zu Auftragsverarbeiter und umgekehrt)?
 
-Sie können den Verarbeitungstyp ändern, indem Sie auf "Zu Auftragsverarbeiter wechseln" oder "Zu Verantwortlicher wechseln" klicken:
+Öffnen Sie die Verarbeitungstätigkeit, klicken Sie auf den Pfeil rechts neben **Speichern** und dann auf **Wechseln Sie zu einem Auftragsverarbeiter** oder **Wechseln Sie zum Verantwortlichen für die Verarbeitung**:
 
-<figure><img src="../../.gitbook/assets/switch.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-faq-7.png" alt="Menü neben Speichern mit dem Eintrag Wechseln Sie zu einem Auftragsverarbeiter"><figcaption><p>Den Typ einer Verarbeitungstätigkeit wechseln</p></figcaption></figure>
 
-## Fehlermeldung: "Das Feld Label ist erforderlich."
+Wenn Sie eine Verarbeitungstätigkeit des Auftragsverarbeiters wieder zu einer Verarbeitungstätigkeit des Verantwortlichen machen, werden die mit ihr verknüpften Kunden entfernt. Vorher wird eine Bestätigung verlangt.
 
-Diese Meldung erscheint in der Regel, wenn ein Element bei der Beantwortung eines Fragebogens leer gelassen wurde.<br>
+## Fehlermeldung: „Label field is required.“
 
-## Fehlermeldung: "Achtung, verbotener HTML-Inhalt ist in einem Feld vorhanden!"
+Diese Meldung erscheint in der Regel, wenn beim Beantworten eines Fragebogens ein Feld leer gelassen wurde.
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-03-04-163623.png" alt=""><figcaption><p>Achtung, verbotener HTML-Inhalt ist in einem Feld vorhanden!</p></figcaption></figure>
+## Fehlermeldung: „Bitte beachten Sie, dass ein Feld unzulässigen HTML-Inhalt enthält.“
 
-Diese Meldung bedeutet, dass HTML-Code (in der Regel zwischen spitzen Klammern <> enthalten) in einem Feld vorhanden ist, in dem HTML (aus Sicherheitsgründen) verboten ist.
+<figure><img src="../../.gitbook/assets/screenshot-2025-03-04-165456.png" alt="Fehlerbenachrichtigung zu unzulässigem HTML-Inhalt in einem Feld"><figcaption><p>Hinweis auf unzulässigen HTML-Inhalt in einem Feld</p></figcaption></figure>
 
-Die folgende Meldung ermöglicht eine einfache Identifizierung des betreffenden Felds:
+Diese Meldung bedeutet, dass HTML-Code (in der Regel in spitzen Klammern `< >`) in einem Feld steht, in dem HTML aus Sicherheitsgründen nicht erlaubt ist.
 
-<figure><img src="../../.gitbook/assets/image-2-1-1-1-1.png" alt=""><figcaption><p>Achtung, verbotener HTML-Inhalt ist in einem Feld vorhanden</p></figcaption></figure>
+Die folgende Meldung hilft Ihnen, das betroffene Feld zu erkennen:
 
-## Fehlermeldung: "Die Nutzer-ID existiert nicht in Ihrer Organisation." beim Speichern einer Verarbeitung
+<figure><img src="../../.gitbook/assets/screenshot-2025-03-04-165525.png" alt="Validierungsmeldung, die auf das Feld mit HTML-Inhalt hinweist"><figcaption><p>Hinweis auf unzulässigen HTML-Inhalt in einem Feld</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-05-15-102250.png" alt=""><figcaption><p>Die Nutzer-ID existiert nicht in Ihrer Organisation.</p></figcaption></figure>
+## Fehlermeldung: „Die Kennung des Nutzers ist in Ihrer Organisation nicht vorhanden.“ beim Speichern einer Verarbeitung
 
-Diese Meldung bedeutet, dass ein Nutzer, der aus Ihrem Mandanten gelöscht wurde, noch als Genehmiger in den Interessengruppen der Verarbeitung definiert ist:
+In der englischen Oberfläche lautet die vollständige Meldung: „Stakeholders provided does not exist in your current organization. Please check the stakeholders section and remove users not related to your organization.“
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-05-15-102626.png" alt=""><figcaption><p>Gelöschter Nutzer, der als Interessengruppe der Verarbeitung definiert ist</p></figcaption></figure>
+Sie bedeutet, dass ein aus Ihrem Mandanten entfernter Nutzer in den Stakeholdern der Verarbeitung noch als verantwortlicher Nutzer eingetragen ist.
 
-Entfernen Sie den gelöschten Nutzer aus den Interessengruppen der Verarbeitung, um das Problem zu beheben.
+Entfernen Sie den gelöschten Nutzer aus den Stakeholdern der Verarbeitung, um das Problem zu beheben.
+
+{% hint style="info" %}
+Wenn Sie die Antwort in diesem Leitfaden nicht finden, können Sie sich an den [Support wenden](../../getting-started/support/request.md).
+{% endhint %}

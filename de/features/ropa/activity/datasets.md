@@ -1,139 +1,158 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie die Datenkategorien sowie die zugehörigen
-  verarbeitungsspezifischen Aufbewahrungsregeln angeben.
+  Legen Sie die Datenkategorien und die Regeln zur Speicherdauer fest, die an
+  der Verarbeitungstätigkeit beteiligt sind.
 ---
 
 # Daten und Speicherdauer
 
-[**Artikel 30 der DSGVO**](https://dsgvo-gesetz.de/art-30-dsgvo/) verlangt auch die Eintragung der verarbeiteten Datenkategorien.
+[**Artikel 30 der DSGVO**](https://dsgvo-gesetz.de/art-30-dsgvo/) verlangt außerdem, dass das Verzeichnis die Kategorien der verarbeiteten Daten aufführt.
 
-Hier geht es darum, die Kategorien der verarbeiteten Daten zu definieren. Diese können als gewöhnlich oder sensibel eingestuft werden. Es wird nämlich zwischen Daten unterschieden, die ein höheres Risiko für natürliche Personen darstellen, wie z. B. Gesundheitsdaten, Daten zu politischen Meinungen oder gewerkschaftlichen Aktivitäten. Daten zu Straftaten oder anderen Vollstreckungsmaßnahmen stellen ebenfalls besonders geschützte Daten dar.
+In diesem Abschnitt legen Sie die Kategorien der verarbeiteten Daten fest. Sie können gewöhnlich oder sensibel sein. Manche Daten bergen ein höheres Risiko für natürliche Personen, etwa Gesundheitsdaten, politische Meinungen oder die Gewerkschaftszugehörigkeit. Auch Daten über Straftaten oder Verurteilungen sind besonders geschützt.
 
-Ebenso kann die Sozialversicherungsnummer (NIR) als sensible Daten eingestuft werden.
+Ebenso kann die nationale Kennnummer (etwa die Sozialversicherungsnummer) als sensible Information gelten.
 
-Die Erhebung sensibler Daten ist grundsätzlich verboten. Nur die in [**Artikel 9 der DSGVO**](https://dsgvo-gesetz.de/art-9-dsgvo/) vorgesehenen Ausnahmen erlauben deren Erhebung.
+Die Erhebung sensibler Daten ist grundsätzlich verboten. Nur die in [**Artikel 9 der DSGVO**](https://dsgvo-gesetz.de/art-9-dsgvo/) vorgesehenen Ausnahmen erlauben sie.
 
-## Datensätze
+## Datenkategorien
 
-Der Datensatz fasst die Daten eines bestimmten Elements zusammen, zum Beispiel eine Tabelle in einer Datenbank oder ein Papiererhebungsformular.
+Eine Datenkategorie (in der Anwendung „Datensatz“) fasst die Daten eines bestimmten Elements zusammen, zum Beispiel einer Tabelle in einer Datenbank oder eines Erhebungsformulars auf Papier.
 
-### Verschiedene Anwendungsfälle der Datensätze
+### Mehrere Arten, Datenkategorien zu nutzen
 
-Datensätze können auf verschiedene Weise verwendet werden:
+Datenkategorien lassen sich auf mehrere Arten nutzen:
 
-* **Fall Nr. 1**: Indem **ein Datensatz einem einzelnen Asset zugeordnet** wird. In diesem Fall entspricht der Datensatz den Daten des Assets und ist nicht generisch.
-* **Fall Nr. 2**: Indem **ein Datensatz der Datenverarbeitung zugeordnet** wird. Dieser Datensatz kann spezifisch für die Datenverarbeitung sein und wird nicht in einer anderen Verarbeitung wiederverwendet.
-* **Fall Nr. 3**: Indem **generische Datensätze der Datenverarbeitung zugeordnet** werden. In diesem Fall kann der Datensatz in mehreren Verarbeitungen wiederverwendet werden.
+* **Fall 1**: indem Sie **eine Datenkategorie mit genau einem Asset** verknüpfen. Die Datenkategorie entspricht dann den Daten des Assets und ist nicht generisch.
+* **Fall 2**: indem Sie **eine Datenkategorie mit der Verarbeitungstätigkeit** verknüpfen. Diese Datenkategorie kann für die Verarbeitungstätigkeit spezifisch sein und wird in keiner anderen Verarbeitungstätigkeit wiederverwendet.
+* **Fall 3**: indem Sie **generische Datenkategorien mit der Verarbeitungstätigkeit** verknüpfen. Die Datenkategorie kann dann in mehreren Verarbeitungstätigkeiten wiederverwendet werden.
 
-Für die Verwendung generischer Datensätze empfehlen wir folgendes Vorgehen:
+Für generische Datenkategorien empfehlen wir folgendes Vorgehen:
 
-* Öffnen Sie die Seite der Verarbeitung bezüglich der Datensätze
-* Öffnen Sie einen neuen Tab auf der Seite der Datensätze in der Datenkartierung
-* Wählen Sie den Datensatz in der Datenverarbeitung aus
-* Wenn der Datensatz geändert werden muss, erstellen Sie einen neuen: Gehen Sie zum anderen Tab und duplizieren Sie den generischen Datensatz, indem Sie die gewünschten Felder entfernen oder hinzufügen
-* Für mehr Übersichtlichkeit wird empfohlen, einen Tag für diese Datensätze zu verwenden (damit Sie sie im Datensatz-Selektor leicht unterscheiden können). Zum Beispiel: ein Tag "generisch" und ein Tag bezüglich der hinzugefügten oder entfernten Daten
-
-#### Datensätze ohne Felder verwenden
-
-Darüber hinaus ist es möglich, noch generischer zu bleiben, indem die dem Datensatz zugeordneten Daten nicht angegeben werden, sondern der Datensatz als Datenkategorie benannt wird (was im Sinne der DSGVO ebenfalls gültig ist).
-
-Je nach Verarbeitung können Sie unterschiedliche Ansätze verfolgen, abhängig von der Sensibilität, die sie hinsichtlich der Rechte und Freiheiten der betroffenen Personen darstellen.
-
-### Die Datenquelle im Datensatz angeben
-
-In jedem Datensatz können Sie den Ursprung der Daten eintragen. Dieser ist entweder direkt, indirekt oder beides.
-
-Ein Feld zur Beschreibung des Erhebungsursprungs ermöglicht es, die erforderliche Präzision zu liefern.
-
-<figure><img src="../../../.gitbook/assets/Datensatz.png" alt=""><figcaption><p>Erstellen Sie einen Datensatz</p></figcaption></figure>
-
-### Ein Asset dem Datensatz zuordnen
-
-Datensätze haben von Natur aus die Bestimmung, [Assets](assets.md) zugeordnet zu werden.
-
-Sie können bei der Erstellung eines Datensatzes ein Asset zuordnen.
-
-<figure><img src="../../../.gitbook/assets/Datensatz2.png" alt=""><figcaption><p>Asset-Selektor</p></figcaption></figure>
-
-Ein Datensatz kann nur einem einzigen Asset zugeordnet werden. Durch die Definition der Datensätze eines Assets sind diese nämlich einzigartig.
-
-Betrachtet man beispielsweise eine Buchhaltungssoftware als Asset, könnten diesem Asset mehrere Datensätze zugeordnet werden, wie "Rechnungsdaten" mit den Daten zum Rechnungsverfolgungsmodul oder "Kundendaten" mit den Daten zu den Kundenkonten.
-
-### Eine Kategorie betroffener Personen zuordnen
-
-Für jeden Datensatz können Sie eine oder mehrere Kategorien betroffener Personen zuordnen.
-
-Dies ermöglicht es Ihnen, besser zu verstehen, welche Daten den betroffenen Personen zugeordnet sind. Darüber hinaus vereinfacht dies die Kartierungsarbeit.
-
-<figure><img src="../../../.gitbook/assets/Datensatz3.png" alt=""><figcaption><p>Selektor für Kategorien betroffener Personen</p></figcaption></figure>
+* Öffnen Sie den Abschnitt **Daten** der Verarbeitungstätigkeit.
+* Öffnen Sie die Seite der Datenkategorien der Datenkartierung in einem neuen Tab.
+* Wählen Sie die Datenkategorie in der Verarbeitungstätigkeit aus.
+* Wenn die Datenkategorie angepasst werden muss, erstellen Sie eine weitere: Wechseln Sie in den anderen Tab und duplizieren Sie die generische Datenkategorie, wobei Sie die gewünschten Felder entfernen oder hinzufügen.
+* Zur besseren Übersicht empfehlen wir, diese Datenkategorien mit Tags zu versehen, damit Sie sie in der Auswahl leicht unterscheiden können. Zum Beispiel mit einem Tag „generisch“ und einem Tag für die hinzugefügten oder entfernten Daten.
 
 {% hint style="info" %}
-Die Angabe der betroffenen Personen ist nützlich für die Verwaltung von [Betroffenenanfragen](../../requests/README.md). Sie können die Daten, die Gegenstand der Anfrage sind, leicht finden, indem Sie die betreffenden Datensätze schnell identifizieren.
+Eine Datenkategorie kann mit mehreren Verarbeitungstätigkeiten verknüpft sein. Wenn Sie eine Datenkategorie bearbeiten, die in mehreren Verarbeitungstätigkeiten verwendet wird, warnt Dastra Sie, dass sich Ihre Änderungen auf alle auswirken. Unterscheiden sich die Datenfelder für eine Verarbeitungstätigkeit deutlich, erstellen Sie eine Kopie der Datenkategorie und passen Sie die Kopie an.
+{% endhint %}
+
+#### Datenkategorien ohne Felder verwenden
+
+Sie können auch noch allgemeiner bleiben, indem Sie die Datenfelder der Datenkategorie nicht angeben und die Datenkategorie nach einer Art von Daten benennen (was nach der DSGVO ebenfalls zulässig ist).
+
+Je nach Verarbeitungstätigkeit können Sie unterschiedlich vorgehen, abhängig davon, wie sensibel sie im Hinblick auf die Rechte und Freiheiten der betroffenen Personen ist.
+
+### Datenkategorien zur Verarbeitungstätigkeit hinzufügen
+
+Im Abschnitt **Daten** haben Sie zwei Möglichkeiten:
+
+* Sind Ihre Datenkategorien bereits in Ihrer Datenkartierung dokumentiert, klicken Sie auf **Verknüpfen Sie vorhandene Datensätze.** und wählen Sie die Datenkategorien aus, die Sie mit der Verarbeitungstätigkeit verknüpfen möchten.
+* Andernfalls klicken Sie auf **Einen Datensatz hinzufügen**. Der Assistent öffnet sich (**Assistent zur Erstellung von Datensätzen**). Erstellen Sie die Datenkategorie mit dem KI-Assistenten (**Erstellen mit KI-Assistent**), aus einer bestehenden Datenkategorie (**Verwenden Sie eine Vorlage**), durch Auswahl ihrer Datenfelder (**Bitte folgen Sie den Anweisungen Schritt für Schritt.**) oder von Grund auf (**Von Grund auf neu erstellen**).
+
+Jede Datenkategorie der Verarbeitungstätigkeit zeigt ihre Regeln zur Speicherdauer und die Zwecke, denen sie dient. Aktivieren Sie **Felder anzeigen**, um zusätzlich die Datenfelder jeder Datenkategorie anzuzeigen. Standardmäßig ist eine Datenkategorie mit allen Zwecken der Verarbeitungstätigkeit verknüpft: Im Menü **...** der Datenkategorie können Sie einen oder mehrere bestimmte Zwecke auswählen. Über dasselbe Menü können Sie die Datenkategorie mit **Bearbeiten** ändern, mit **Duplizieren** kopieren, ihre **Details** ansehen oder mit **Bitte entfernen Sie den Link.** die Verbindung zur Verarbeitungstätigkeit entfernen.
+
+Klicken Sie auf eine Datenkategorie, um sie zu öffnen und die unten beschriebenen Informationen zu vervollständigen.
+
+### Die Herkunft der Daten mit der Datenkategorie verknüpfen
+
+In jeder Datenkategorie können Sie unter **Herkunft der Datenerhebung** die Herkunft der Daten angeben: **Direkt**, **Indirekt** oder **Direkt und indirekt**.
+
+Im Feld **Beschreibung der Herkunft der Datenerhebung** können Sie alle nötigen Einzelheiten ergänzen.
+
+<figure><img src="../../../.gitbook/assets/ropa-datasets-1.png" alt="Bereich zur Herkunft der Daten einer Datenkategorie mit der Auswahl der Herkunft und dem Feld Beschreibung der Herkunft der Datenerhebung"><figcaption><p>Herkunft der Daten</p></figcaption></figure>
+
+### Ein Asset mit der Datenkategorie verknüpfen
+
+Datenkategorien sind naturgemäß dafür gedacht, mit [Assets](assets.md) verknüpft zu werden.
+
+Ein Asset verknüpfen Sie im Feld **Verbundener Asset** im Block **Allgemeine Informationen** der Datenkategorie mit Ihrer Datenkategorie.
+
+<figure><img src="../../../.gitbook/assets/ropa-datasets-2.png" alt="Feld Verbundener Asset im Block Allgemeine Informationen einer Datenkategorie"><figcaption><p>Auswahl des Assets</p></figcaption></figure>
+
+Eine Datenkategorie kann nur mit einem Asset verknüpft werden: Die Datenkategorien eines Assets sind ihm eigen.
+
+Betrachten Sie zum Beispiel eine Buchhaltungssoftware als Asset, dann könnten mehrere Datenkategorien damit verknüpft sein, etwa „Rechnungsdaten“ mit den Daten des Moduls zur Rechnungsverfolgung oder „Kundendaten“ mit den Daten der Kundenkonten.
+
+### Kategorien betroffener Personen zuordnen
+
+Für jede Datenkategorie können Sie unter **Kategorien betroffener Personen** eine oder mehrere Kategorien betroffener Personen verknüpfen.
+
+So erkennen Sie, welche Daten sich auf welche betroffenen Personen beziehen. Das vereinfacht auch Ihre Arbeit an der Datenkartierung.
+
+<figure><img src="../../../.gitbook/assets/ropa-datasets-3.png" alt="Feld Kategorien betroffener Personen im Block Allgemeine Informationen einer Datenkategorie"><figcaption><p>Auswahl der Kategorien betroffener Personen</p></figcaption></figure>
+
+{% hint style="info" %}
+Die Angabe der betroffenen Personen ist bei der Bearbeitung von [Betroffenenanfragen](../../requests/README.md) nützlich: Sie erkennen schnell die betroffenen Datenkategorien und finden die Daten, die die Anfrage abdeckt.
 {% endhint %}
 
 ### Datenfelder zuordnen
 
-Jeder Datensatz soll durch Datenfelder ergänzt werden. Diese Felder sind die eigentlichen Daten.
+Jede Datenkategorie soll mit Datenfeldern vervollständigt werden. Diese Felder sind die Daten selbst.
 
-<figure><img src="../../../.gitbook/assets/Datensatz4.png" alt=""><figcaption></figcaption></figure>
+Klicken Sie im Block **Felder für personenbezogene Daten** auf **Daten anhängen**. Die in der Auswahl angebotenen Felder sind die, die in Ihrem Datenglossar verfügbar sind.
 
-Die im Selektor angezeigten Felder sind die im Datenglossar verfügbaren Felder.
+<figure><img src="../../../.gitbook/assets/ropa-datasets-4.png" alt="Geöffnete Auswahl der Datenfelder im Block Felder für personenbezogene Daten einer Datenkategorie"><figcaption><p>Auswahl der Datenfelder</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Datensatz5.png" alt=""><figcaption><p>Datenfeld-Selektor</p></figcaption></figure>
+Wenn ein Feld noch nicht existiert, klicken Sie auf **Daten erstellen**, um es anzulegen und der Datenkategorie hinzuzufügen.
 
-Wenn eine Daten nicht vorhanden ist, können Sie sie direkt über diesen Selektor erstellen, um sie zum Datensatz hinzuzufügen.
+Felder können vordefinierten Datenkategorien zugeordnet werden, etwa **Personenstand, Identität, Identifikationsdaten, Bilder...**, **Persönliches Leben**, **Berufliches Leben** oder **Wirtschaftliche und finanzielle Informationen**. Diese Kategorien folgen den Empfehlungen der französischen Aufsichtsbehörde (CNIL).
 
-Die Felder können nach vordefinierten Kategorien kategorisiert werden.
+<figure><img src="../../../.gitbook/assets/ropa-datasets-5.png" alt="Geöffnete Liste der Datenkategorien im Formular eines Datenfelds"><figcaption><p>Auswahl der Datenkategorie</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Datensatz6.png" alt=""><figcaption><p>Selektor für Kategorien personenbezogener Daten</p></figcaption></figure>
+Im Datenfeld geben Sie auch die Sensibilitätsstufe der Daten an: **Standard**, **Hochsensible Daten** oder **Sensible Daten** (besondere Kategorien), zum Beispiel Gesundheitsdaten.
 
-Auf Feldebene können Sie auch das Vorhandensein sensibler Daten angeben. Zum Beispiel Gesundheitsdaten oder eine andere Art sensibler Daten.
+Für besondere Kategorien von Daten müssen Sie die Erhebung dieser Daten begründen, insbesondere ihre Rechtsgrundlage, und zwar unter **Rechtsgrundlage für die Datenerhebung** und **Begründung für die Datenerhebung sensibler Daten**.
 
-In diesem Fall werden Sie aufgefordert, die Erhebung dieser Daten und insbesondere die sie erlaubende Rechtsgrundlage zu begründen.
-
-<figure><img src="../../../.gitbook/assets/Datensatz7.png" alt=""><figcaption><p>Sensible Daten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-datasets-6.png" alt="Formular eines Datenfelds mit ausgewählter Stufe Sensible Daten und den angezeigten Feldern für die Begründung"><figcaption><p>Sensible Daten</p></figcaption></figure>
 
 {% hint style="info" %}
-Diese Information wird von der Anwendung analysiert, um ein intelligentes [DSFA](impact-analysis.md)-Kriterium auszulösen.
+Sensible Daten werden im Indikator **Sensibilität** der Verarbeitungstätigkeit berücksichtigt. Datenkategorien, die solche Daten enthalten, sind im Abschnitt **Daten** mit einem Badge für besondere Kategorien personenbezogener Daten (sensibel) gekennzeichnet.
 {% endhint %}
 
-### Eine Aufbewahrungsregel für Daten zuordnen
+### Eine Regel zur Speicherdauer mit der Datenkategorie verknüpfen
 
-In jedem Datensatz können Sie eine Aufbewahrungsregel für Daten zuordnen.
+In jeder Datenkategorie können Sie im Block **Speicherdauer** Standardregeln zur Speicherdauer festlegen.
 
-<figure><img src="../../../.gitbook/assets/Datensatz8.png" alt=""><figcaption><p>Speicherdauer</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-datasets-7.png" alt="Block Speicherdauer einer Datenkategorie mit den Tabs Nutzung, Archivierung und Löschung"><figcaption><p>Speicherdauern</p></figcaption></figure>
 
-Die Speicherdauern gelten standardmäßig, da sie auf Verarbeitungsebene angepasst werden können (siehe unten).
+Diese Speicherdauern sind Standardwerte: Sie können auf der Ebene jeder Verarbeitungstätigkeit angepasst werden (siehe unten).
 
-Sie können eine Dauer für die aktive Datenbank, für das Zwischenarchiv oder eine Löschregel hinzufügen.
+Sie können eine Speicherdauer in der aktiven Datenbank, eine Speicherdauer in der archivierten Datenbank und eine Regel zur Löschung festlegen:
 
-Die aktive Datenbank ist die laufende Datenbank der Verarbeitung. Das Zwischenarchiv ist eine eingeschränktere Form der Aufbewahrung. Das Feld "Löschung" ermöglicht es Ihnen, die Bedingungen für die Löschung der Daten oder ihre Übermittlung zur endgültigen Archivierung zu beschreiben.
+* **Nutzung**: Die aktive Datenbank ist die laufend genutzte Datenbank der Verarbeitung.
+* **Archivierung**: Die Zwischenarchivierung ist eine eingeschränktere Form der Aufbewahrung.
+* **Löschung**: Beschreiben Sie die Bedingungen, unter denen die Daten gelöscht oder zur dauerhaften Archivierung übergeben werden.
 
-## Aufbewahrung der Daten
+Geben Sie für die aktive und die archivierte Datenbank die **Speicherdauer** ein, dann **Bitte beschreiben Sie die Regel (Dauer, Bedingungen usw.).**, und ergänzen Sie eine **Begründung**. Füllen Sie für die Regel zur Löschung die **Beschreibung der für das Endergebnis angewandten Regel** und ihre **Begründung** aus.
 
-Die begrenzte Aufbewahrung der Daten gehört zu den allgemeinen Grundsätzen des Datenschutzrechts und wird in [**Artikel 5 Abs. 1 Buchst. e) der DSGVO**](https://dsgvo-gesetz.de/art-5-dsgvo/) bekräftigt. Dieser sieht vor, dass Daten "_in einer Form gespeichert werden, die die Identifizierung der betroffenen Personen nur so lange ermöglicht, wie es für die Zwecke, für die sie verarbeitet werden, erforderlich ist_".
+## Speicherdauer der Daten
 
-Konkret bedeutet dies, dass bei der Durchführung einer Datenverarbeitung an deren Zukunft gedacht werden muss, wenn der Verarbeitungszweck erfüllt ist. Die Daten müssen entweder endgültig vernichtet, anonymisiert oder für einen neuen kompatiblen Verarbeitungszweck verarbeitet werden.
+Die begrenzte Speicherung von Daten ist einer der allgemeinen Grundsätze des Schutzes personenbezogener Daten, den [**Artikel 5 Absatz 1 Buchstabe e der DSGVO**](https://dsgvo-gesetz.de/art-5-dsgvo/) in Erinnerung ruft. Personenbezogene Daten müssen
 
-Die Speicherdauer hängt vom Verarbeitungszweck und der Art der Daten ab. Die Speicherdauern können nach Datentypen definiert werden. Zum Beispiel werden bei der Gehaltsabrechnung die Daten zur Gehaltsabrechnung 1 Monat in der aktiven Datenbank und 5 Jahre im Zwischenarchiv aufbewahrt, während die Daten zum Zahlungsauftrag nur so lange in der aktiven Datenbank aufbewahrt werden, wie es für die Erstellung der Gehaltsabrechnung erforderlich ist, und 10 Jahre ab Abschluss im Zwischenarchiv.
+> in einer Form gespeichert werden, die die Identifizierung der betroffenen Personen nur so lange ermöglicht, wie es für die Zwecke, für die sie verarbeitet werden, erforderlich ist.
 
-Die Dauer kann als Wert angegeben werden oder, falls dies nicht möglich ist, als Kriterien zur Bestimmung der Aufbewahrungsfrist (z. B. bis zur Abmeldung). Es wird empfohlen Verfahren einzurichten, die die Verwaltung der Speicherdauern auf Ebene der Datenkategorie ermöglichen und insbesondere die Löschung oder Vernichtung von Daten verwalten.
+In der Praxis müssen Sie bei der Einführung einer Verarbeitungstätigkeit planen, was mit den Daten geschieht, sobald der Zweck erreicht ist. Die Daten müssen dann dauerhaft vernichtet, anonymisiert oder für einen neuen, vereinbaren Zweck verarbeitet werden.
 
-#### Aufbewahrungsregeln eines Datensatzes anpassen
+Die Speicherdauer hängt vom Zweck der Verarbeitung und von der Art der Daten ab. Speicherdauern können nach Datenarten festgelegt werden. Bei der Gehaltsabrechnung zum Beispiel werden die Daten der Gehaltsabrechnung 1 Monat in der aktiven Datenbank und 5 Jahre in der Zwischenarchivierung aufbewahrt, während die Daten des Überweisungsauftrags für die Zahlung so lange in der aktiven Datenbank bleiben, wie es für die Ausstellung der Gehaltsabrechnung nötig ist, und danach 10 Jahre ab Abschluss in der Zwischenarchivierung.
 
-Die Datenfelder eines generischen Datensatzes können nicht von einer Verarbeitung zur anderen variieren. Die Speicherdauer kann jedoch unterschiedlich sein. Es ist nämlich möglich, die Speicherdauer eines Datensatzes je nach Verarbeitung anzupassen. Somit wird die Speicherdauer des Datensatzes nicht mehr berücksichtigt.
+Die Dauer kann als Wert angegeben werden oder, wenn das nicht möglich ist, als die Kriterien, nach denen die Speicherdauer bestimmt wird (zum Beispiel bis zur Kündigung). Insbesondere die CNIL empfiehlt in ihrer [**Empfehlung vom 11. Oktober 2005 zur elektronischen Archivierung im privaten Sektor**](https://www.legifrance.gouv.fr/affichCnil.do?id=CNILTEXT000017651957) (auf Französisch), Verfahren einzurichten, um die Speicherdauern auf der Ebene der Datenkategorie zu steuern und insbesondere die Löschung oder Vernichtung der Daten zu verwalten.
 
-Dazu muss der Datensatz der Verarbeitung hinzugefügt werden. In der Liste der Datensätze klicken Sie auf die Schaltflächen "**Aktivbestand**".
+### Die Regel zur Speicherdauer einer Datenkategorie für eine Verarbeitungstätigkeit anpassen
 
-<figure><img src="../../../.gitbook/assets/Datensatz9.png" alt=""><figcaption><p>Schaltfläche "Aktivbestand"</p></figcaption></figure>
+Die Datenfelder einer generischen Datenkategorie können sich von einer Verarbeitungstätigkeit zur anderen nicht unterscheiden. Die Speicherdauer dagegen schon. Sie können die Speicherdauer einer Datenkategorie für eine bestimmte Verarbeitungstätigkeit anpassen: Die Standard-Speicherdauer der Datenkategorie gilt dann für diese Verarbeitungstätigkeit nicht mehr.
 
-Sie sehen dann das Anpassungsfenster.
+Dazu muss die Datenkategorie der Verarbeitungstätigkeit hinzugefügt sein. Klicken Sie im Abschnitt **Daten** auf eine der Schaltflächen zur Speicherdauer der Datenkategorie: **Nutzung**, **Archivierung** oder **Löschung**. Eine grüne Schaltfläche bedeutet, dass die Regel definiert ist. Eine rote Schaltfläche **Nutzung** bedeutet, dass sie fehlt.
 
-<figure><img src="../../../.gitbook/assets/Datensatz10.png" alt=""><figcaption><p>Fenster zur Anpassung der Speicherdauern</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-datasets-8.png" alt="Schaltflächen zur Speicherdauer einer Datenkategorie im Abschnitt Daten, eine davon angepasst und mit einem Stiftsymbol"><figcaption><p>Schaltflächen zur Speicherdauer einer Datenkategorie, mit einer angepassten Regel</p></figcaption></figure>
 
-Wenn die Speicherdauer auf Verarbeitungsebene angepasst wurde, erscheint ein kleines Stiftsymbol auf der betreffenden Schaltfläche:
+Der Bereich **Anpassung der Speicherdauern** öffnet sich. Er erinnert Sie an die betroffene Datenkategorie. Aktivieren Sie **Regel anpassen** und geben Sie dann die **Speicherdauer**, **Bitte beschreiben Sie die Regel (Dauer, Bedingungen usw.).** und die **Begründung** ein, die nur für diese Verarbeitungstätigkeit gelten.
 
-Das langfristige Ziel kann sein, die Verwendung generischer Datensätze zu reduzieren und sich einer präziseren Kartierung zuzuwenden, entweder über die Datenverarbeitungen (Fall Nr. 2) oder über die Assets (Fall Nr. 1).
+<figure><img src="../../../.gitbook/assets/ropa-datasets-9.png" alt="Bereich Anpassung der Speicherdauern mit aktiviertem Schalter Regel anpassen"><figcaption><p>Die Speicherdauer für eine Verarbeitungstätigkeit anpassen</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Datensatz11.png" alt=""><figcaption><p>Auf Verarbeitungsebene angepasste Speicherdauer</p></figcaption></figure>
+Wird eine Speicherdauer auf Ebene der Verarbeitungstätigkeit angepasst, erscheint auf der entsprechenden Schaltfläche ein Stiftsymbol.
+
+Um die Regel zur Speicherdauer zu ändern, die in allen Verarbeitungstätigkeiten für die Datenkategorie gilt, klicken Sie oben im Bereich auf die angezeigte Datenkategorie.
+
+Langfristig kann das Ziel sein, die Nutzung generischer Datenkategorien einzuschränken und zu einer genaueren Kartierung überzugehen, entweder über Verarbeitungstätigkeiten (Fall 2) oder über Assets (Fall 1).
