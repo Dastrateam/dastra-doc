@@ -8,7 +8,7 @@ description: >-
 
 ## Contexte réglementaire
 
-Contrairement au RGPD qui impose un **opt-in** (consentement préalable), la législation américaine repose principalement sur un modèle **opt-out** : les traceurs peuvent être déposés par défaut, mais l'utilisateur doit pouvoir s'y opposer facilement.
+Contrairement au RGPD qui impose un **opt-in** (consentement préalable), la législation américaine repose principalement sur un modèle **opt-out** : les traceurs peuvent être déposés par défaut, mais l'utilisateur doit pouvoir s'y opposer sans difficulté.
 
 Les principales réglementations à connaître :
 
@@ -31,7 +31,7 @@ Depuis la CPRA (2023), les entreprises doivent honorer le signal **Global Privac
 
 ### 1. Créer une variante géo-ciblée pour les États-Unis
 
-La façon la plus simple de gérer vos utilisateurs américains est de créer une **variante géo-ciblée** depuis l'onglet **Variantes** de votre widget.
+La façon la plus simple de gérer vos utilisateurs américains est de créer une **variante géo-ciblée** depuis la liste déroulante des variantes, en haut à droite de l'éditeur de votre bannière (voir [Variantes géo-ciblées](geo-targeting.md)).
 
 Pour la **Californie (CCPA/CPRA)**, configurez la variante avec un modèle opt-out : les cookies non essentiels sont actifs par défaut, l'utilisateur peut se désinscrire. Pensez également à ajouter un lien **"Ne pas vendre ni partager mes données"** dans le footer de votre site, qui ouvre directement le widget.
 
@@ -49,8 +49,8 @@ Deux signaux navigateur permettent à un utilisateur d'indiquer son refus de sui
 
 | Signal                           | Standard | Légalement contraignant (CA) | Description                                                        |
 | -------------------------------- | -------- | ---------------------------- | ------------------------------------------------------------------ |
-| **GPC** (`globalPrivacyControl`) | W3C      | ✅ Oui (CPRA)                 | Signal opt-out de la vente/partage des données                     |
-| **DNT** (`doNotTrack`)           | W3C      | ❌ Non                        | Signal de préférence "ne pas pister" (non contraignant légalement) |
+| **GPC** (`globalPrivacyControl`) | W3C      | Oui (CPRA)                 | Signal opt-out de la vente/partage des données                     |
+| **DNT** (`doNotTrack`)           | W3C      | Non                        | Signal de préférence "ne pas pister" (non contraignant légalement) |
 
 #### Activation native (recommandée)
 
@@ -66,7 +66,7 @@ Le même interrupteur existe dans chaque **Variation géo-ciblée** : activez-le
 L'activation native est disponible à partir de la version actuelle du widget Dastra. Elle couvre à la fois le signal `globalPrivacyControl` et le signal `doNotTrack`.
 {% endhint %}
 
-#### Option avancée — Snippet JS personnalisé
+#### Option avancée : Snippet JS personnalisé
 
 Si vous avez besoin d'un comportement plus fin (par exemple afficher un message d'acquittement ou appliquer l'opt-out sur des catégories spécifiques), vous pouvez utiliser le snippet JS suivant **en complément** de l'activation native, ou à la place si vous gérez le widget via l'API JS :
 
@@ -94,7 +94,7 @@ Si vous avez besoin d'un comportement plus fin (par exemple afficher un message 
 ```
 
 {% hint style="info" %}
-**`dispatchEvents()` vs `save()` — quelle différence ?**
+**`dispatchEvents()` vs `save()` : quelle différence ?**
 
 * **`dispatchEvents()`** applique les choix pour la session en cours **sans rien enregistrer** dans le stockage du consentement (le cookie `consent-eu` par défaut, ou le localStorage si cette option est activée). Le signal GPC ou DNT est re-détecté à chaque chargement de page. Si l'utilisateur désactive GPC dans son navigateur, le comportement normal reprend automatiquement. C'est l'approche recommandée pour honorer ces signaux.
 * **`save()`** enregistre le consentement de façon persistante dans ce stockage, comme si l'utilisateur avait fait un choix explicite via le widget. À utiliser uniquement lorsque vous souhaitez mémoriser un choix entre les sessions.
@@ -125,13 +125,13 @@ Les labels de catégories à utiliser avec `setPurposeConsent` :
 
 Lorsqu'un signal GPC ou DNT est détecté, les réglementations comme la CPRA recommandent d'informer l'utilisateur que sa demande a bien été prise en compte.
 
-Avec l'activation native, le widget affiche ce message pendant 6 secondes à la place de la bannière. Texte par défaut : « Global Privacy Control détecté : les cookies analytiques et marketing ont été désactivés. » Pour l'adapter, ouvrez l'onglet **Textes et traductions** de la bannière, section **Page d'accueil**, champ décrit comme « Message affiché lorsque le navigateur envoie un signal Global Privacy Control ou Do Not Track ».
+Avec l'activation native, le widget affiche ce message pendant 6 secondes à la place de la bannière. Texte par défaut : « Global Privacy Control détecté : les cookies analytiques et marketing ont été désactivés. » Pour l'adapter, ouvrez la section **Textes et traductions** de la bannière, groupe **Page d'accueil**, champ décrit comme « Message affiché lorsque le navigateur envoie un signal Global Privacy Control ou Do Not Track ».
 
 Le widget déclenche aussi l'événement `dastra:gpc:applied` sur `window`, que vous pouvez écouter pour vos propres traitements.
 
 Si vous n'utilisez pas l'activation native, ou si vous voulez un autre affichage, deux approches sont possibles avec un snippet.
 
-#### Option A — Toast éphémère
+#### Option A : Toast éphémère
 
 Un message qui apparaît quelques secondes puis disparaît automatiquement. Simple à intégrer, mais l'utilisateur peut le manquer s'il ne regarde pas la page au bon moment.
 
@@ -161,9 +161,9 @@ if (isOptOut) {
 </script>
 ```
 
-#### Option B — Bandeau persistant
+#### Option B : Bannière persistante
 
-Un bandeau fixe en bas de page, visible tant que GPC est actif dans le navigateur. Plus robuste pour la conformité : l'indication est permanente, pas seulement visible au premier chargement. Un bouton "Dismiss" permet à l'utilisateur de le fermer.
+Une barre fixe en bas de page, visible tant que GPC est actif dans le navigateur. Cette option est préférable pour la conformité : l'indication est permanente, pas seulement affichée au premier chargement. Un bouton "Dismiss" permet à l'utilisateur de le fermer.
 
 ```html
 <script>
@@ -183,7 +183,7 @@ if (isOptOut) {
       bar.setAttribute('role', 'status');
       bar.setAttribute('aria-live', 'polite');
       bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;font-size:13px;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;z-index:9999;border-top:1px solid #333';
-      bar.innerHTML = '<span>🔒 Demande de confidentialité prise en compte — les cookies analytiques et marketing sont désactivés.</span>'
+      bar.innerHTML = '<span>🔒 Demande de confidentialité prise en compte, les cookies analytiques et marketing sont désactivés.</span>'
         + '<button onclick="this.parentNode.remove()" style="background:none;border:1px solid #555;color:#fff;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:16px">Fermer</button>';
       document.body.appendChild(bar);
     }
@@ -202,7 +202,7 @@ Adaptez le texte à votre charte éditoriale et à la langue de vos utilisateurs
 
 | Mécanisme                | Implémentation                            | Légalement requis (CA) |
 | ------------------------ | ----------------------------------------- | ---------------------- |
-| Variante géo-ciblée CCPA | Interface Dastra                          | ✅ Oui                  |
-| Détection GPC            | Toggle natif (config widget) — recommandé | ✅ Oui (CPRA)           |
-| Détection DNT            | Toggle natif (config widget) — recommandé | ❌ Recommandé           |
-| Message d'acquittement   | Natif (texte modifiable) ou snippet JS    | ❌ Recommandé           |
+| Variante géo-ciblée CCPA | Interface Dastra                          | Oui                  |
+| Détection GPC            | Toggle natif (config widget), recommandé | Oui (CPRA)           |
+| Détection DNT            | Toggle natif (config widget), recommandé | Non (recommandé)       |
+| Message d'acquittement   | Natif (texte modifiable) ou snippet JS    | Non (recommandé)       |

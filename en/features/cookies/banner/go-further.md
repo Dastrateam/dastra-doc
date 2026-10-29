@@ -1,22 +1,18 @@
 ---
-description: Go cookie consent management further with DASTRA.
+description: The pages that describe how to apply visitors' choices and use the proof of consent.
 ---
 
 # Go further on cookie consent
 
-DASTRA's Cookie Consent module also allows you to go further in managing your cookies, making cookie consent really effective.
+Once the banner is in place, consent must be applied on your website and the proof you collect must be usable. The following pages describe these steps.
 
-In addition to the scanning, classification, cookie widget and proof-of-consent features, DASTRA also allows you to:
-
-* Access a configured API&#x20;
-* Implement prior consent&#x20;
-* Implement natively the integration of a "Google Tag Manager" layer&#x20;
-* Insert custom html or javascript code snippets&#x20;
-* Generate statistical reports&#x20;
-* Integrate consent
-
-For more information, please [contact us directly](https://www.dastra.eu/en/contact) or see the following section:
+* [Blocking cookies](../integration/blocking/README.md): prevent third-party services from setting cookies before consent, using the banner's JavaScript events.
+* [Google Tag Manager](../integration/blocking/google-tag-manager.md) and [Google Consent Mode V2](../integration/blocking/google-consent-mode.md): trigger Google tags according to visitors' choices.
+* [Manage consent programmatically](../integration/programmatic-consent.md): read and change consent with the JavaScript SDK.
+* [User identification](../integration/identification.md): match a proof of consent with a pseudonymous identifier from your system.
+* [Generate the cookie policy](configure.md#generate-the-cookie-policy): produce the cookie policy from the banner configuration.
+* [View the statistics](consent-proof.md#view-the-statistics): follow displays, consents and refusals.
 
 {% content-ref url="../integration/README.md" %}
-[integration-technique](../integration/README.md)
+[README.md](../integration/README.md)
 {% endcontent-ref %}

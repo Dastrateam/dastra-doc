@@ -10,7 +10,11 @@ description: >-
 
 De manière à obtenir de bonnes performances d'affichage, le rendu du widget de Dastra se fait directement dans la page du site, dans le container avec l'id **#dastra-widget**
 
-Il est possible de surcharger l'apparence du widget à l'aide de règles CSS simple.
+Il est possible de surcharger l'apparence de la bannière avec des règles CSS.
+
+{% hint style="info" %}
+Vous pouvez saisir ces règles directement dans le champ **CSS personnalisé** de la section **Apparence & design** de la bannière, sans modifier la feuille de style de votre site. Voir [Configurez la bannière](../banner/configure.md).
+{% endhint %}
 
 Exemple basique :
 
