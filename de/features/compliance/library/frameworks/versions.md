@@ -59,7 +59,7 @@ Mit der Schaltfläche **Eine neue Version importieren** im Tab **Versionen** kö
 Den Versionshinweis können Sie jederzeit über das Aktionsmenü der Version ändern (**Versionshinweise bearbeiten**).
 
 {% hint style="info" %}
-Die Versionen eines Frameworks werden nicht gesondert auf das Framework-Kontingent angerechnet: Das Erstellen oder Importieren einer Version verbraucht keinen Framework-Credit.
+Die Versionen eines Frameworks werden nicht gesondert auf das Framework-Kontingent angerechnet: Das Erstellen oder Importieren einer Version verbraucht kein Framework-Guthaben.
 {% endhint %}
 
 ***

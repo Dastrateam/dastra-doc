@@ -1,111 +1,100 @@
 ---
-description: Hier lernen Sie, die Funktionalität der KI-Systeme zu nutzen.
+description: >-
+  Entdecken Sie das Modul KI-Systeme von Dastra: das Verzeichnis, die
+  Risikostufen der KI-Verordnung, KI-Modelle und die Compliance-Dokumentation.
 ---
 
 # KI-Systeme
 
-### Einführung
+Das Modul **KI-Governance** von Dastra erfasst die KI-Systeme, die Ihre Organisation nutzt oder entwickelt, bewertet deren Risikostufe gemäß der KI-Verordnung und verwaltet die Dokumentation, die Ihre Compliance belegt. Diese Seite richtet sich an Datenschutzbeauftragte, Rechtsabteilungen und Projektteams, die KI verwalten.
 
-In diesem Abschnitt lernen Sie, die Funktionalität **KI-Systeme** von Dastra zu nutzen und deren Nutzen für Ihre Organisation zu verstehen.
+<figure><img src="../../.gitbook/assets/ai-systems-overview-1.png" alt="Verzeichnis der KI-Systeme mit der Liste der Systeme, ihrer Risikostufe und ihrem Status"><figcaption><p>Das Verzeichnis der KI-Systeme</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/KI-Register.png" alt=""><figcaption><p>Oberfläche des Moduls</p></figcaption></figure>
+Das Modul ist verfügbar, wenn Ihr Abonnement es enthält.
 
-***
+## Was ein KI-System gemäß der KI-Verordnung ist
 
-#### 🔹 Was ist ein KI-System gemäß der KI-Verordnung?
+Die europäische Verordnung über künstliche Intelligenz (**KI-Verordnung**, Verordnung (EU) 2024/1689) definiert ein KI-System in Artikel 3 Absatz 1 als maschinengestütztes System, das für einen in unterschiedlichem Grade autonomen Betrieb ausgelegt ist, das nach seiner Betriebsaufnahme anpassungsfähig sein kann und das aus den erhaltenen Eingaben für explizite oder implizite Ziele ableitet, wie Ausgaben erstellt werden, zum Beispiel:
 
-Gemäß der Verordnung über künstliche Intelligenz (**KI-Verordnung**) der Europäischen Union ist ein **KI-System** eine Software, die mithilfe einer oder mehrerer Techniken der künstlichen Intelligenz entwickelt wurde und Daten – insbesondere personenbezogene Daten – verarbeitet, um Ergebnisse wie die folgenden zu erzeugen:
+* Inhalte (generierte Texte, Bilder, Töne);
+* Vorhersagen (Kaufverhalten, Kreditrisiko);
+* Empfehlungen (Produkte, Marketingmaßnahmen, Sicherheitsmaßnahmen);
+* Entscheidungen (Annahme oder Ablehnung eines Kredits, Vorauswahl von Bewerbungen).
 
-* **Inhalte** (generierte Texte, Bilder, Töne)
-* **Vorhersagen** (Vorhersage eines Kaufverhaltens, eines Kreditrisikos)
-* **Empfehlungen** (Produkte, Marketingmaßnahmen, Sicherheitsmaßnahmen)
-* **Automatisierte Entscheidungen** (Genehmigung oder Ablehnung eines Kredits, Vorauswahl von Bewerbungen)
+Diese Ausgaben können die physische oder virtuelle Umgebung beeinflussen, mit der das System interagiert.
 
-Diese Ergebnisse beeinflussen direkt oder indirekt die physische oder digitale Umgebung, mit der das System interagiert.
+## Warum ein Verzeichnis der KI-Systeme führen
 
-***
+### Regulatorische Pflichten erfüllen
 
-#### 🔹 Warum ein Verzeichnis der KI-Systeme führen?
+Die KI-Verordnung verlangt von Organisationen, ihre KI-Systeme zu kennen, nach Risikostufe einzuordnen und zu dokumentieren. Das Verzeichnis hilft Ihnen dabei:
 
-**✅ 1. Regulatorische Verpflichtungen erfüllen**
+* Hochrisiko-Systeme zu identifizieren, die strengen Pflichten unterliegen (Risikomanagement, Daten-Governance, technische Dokumentation, menschliche Aufsicht, Transparenz);
+* zu jedem System eine Nachverfolgung zu führen, um die Compliance bei einer Kontrolle oder einem Audit nachzuweisen;
+* verbotene Praktiken wie Social Scoring rechtzeitig zu erkennen.
 
-Die KI-Verordnung verpflichtet Organisationen, ihre KI-Systeme nach ihrem Risikoniveau zu kennen, zu kategorisieren und zu dokumentieren, insbesondere um:
+### Governance und Transparenz stärken
 
-* **Hochrisiko-Systeme zu identifizieren**, die strengen Verpflichtungen unterliegen (Konformitätsbewertung, Risikomanagement, menschliche Überwachung, Transparenz).
-* **Die Nachvollziehbarkeit zu gewährleisten** und die Compliance bei einer Kontrolle oder einem Audit durch Regulierungsbehörden nachzuweisen.
-* **Verbote zu antizipieren**, insbesondere für Systeme mit inakzeptablem Risiko (z. B. Social Scoring).
+Mit einem Verzeichnis können Sie:
 
-***
+* die Informationen über alle Ihre KI-Systeme zentralisieren;
+* die verantwortlichen Beteiligten identifizieren (Data Scientists, Datenschutzbeauftragte, Fachabteilungen);
+* dieselben Informationen intern teilen, was das Vertrauen der Nutzer und Beschäftigten stärkt;
+* die Dokumentation aktualisieren, wenn sich ein System ändert (neue Version, neuer Datensatz, geänderte Nutzung).
 
-**✅ 2. Governance und Transparenz stärken**
-
-Ein Verzeichnis zu führen ermöglicht Ihnen:
-
-* Informationen über alle Ihre KI-Systeme zu zentralisieren.
-* Die verantwortlichen Beteiligten schnell zu identifizieren (Data Scientists, Datenschutzbeauftragte, Fachabteilungen).
-* Die **interne Transparenz** zu fördern, die für das Vertrauen der Nutzer und Mitarbeiter unerlässlich ist.
-* Die Dokumentation bei Systemänderungen (neue Version, neuer Datensatz, Nutzungsänderung) einfach zu aktualisieren.
-
-***
-
-**✅ 3. KI-Projekte absichern und Investitionen priorisieren**
+### KI-Projekte absichern und Investitionen priorisieren
 
 Das Verzeichnis hilft Ihnen:
 
-* Den **geschäftlichen Mehrwert** jedes KI-Systems zu bewerten (Produktivität, Leistung, Risikoreduktion).
-* Diesen Wert mit dem **zugehörigen Risikoniveau** abzuwägen, um Ihre Projekte zu priorisieren.
-* Zu entscheiden, ob ein System weitergeführt, geändert oder eingestellt werden soll, wenn sein Risiko-Nutzen-Verhältnis ungünstig ist.
+* den geschäftlichen Mehrwert jedes Systems zu bewerten (Produktivität, Leistung, Risikominderung);
+* diesen Mehrwert gegen die Risikostufe abzuwägen, um Ihre Projekte zu priorisieren;
+* zu entscheiden, ob ein System fortgeführt, geändert oder aufgegeben wird, wenn das Verhältnis von Risiko und Nutzen ungünstig ist.
 
-***
+## Risikostufen
 
-#### 🔹 Die Kategorisierung der Risikoniveaus
+Die KI-Verordnung teilt KI-Systeme in vier Kategorien ein:
 
-Die KI-Verordnung klassifiziert KI-Systeme in vier Kategorien:
+1. **Minimales Risiko**: keine nennenswerte Auswirkung, zum Beispiel ein Spamfilter.
+2. **Begrenztes Risiko**: Transparenzpflichten, zum Beispiel ein Chatbot oder generierte Inhalte, die als solche offengelegt werden müssen.
+3. **Hohes Risiko**: Auswirkungen auf Gesundheit, Sicherheit oder Grundrechte, die eine strenge Compliance erfordern, zum Beispiel die automatisierte Vorauswahl von Bewerbungen oder das Kredit-Scoring.
+4. **Inakzeptables Risiko**: verbotene Praktiken, zum Beispiel Social Scoring oder die unterschwellige Manipulation von Menschen.
 
-1. **Minimales Risiko** – Kein signifikanter Einfluss (z. B. Spamfilter).
-2. **Begrenztes Risiko** – Transparenzpflicht (z. B. Chatbots, Deepfakes zu Unterhaltungszwecken).
-3. **Hohes Risiko** – Auswirkungen auf die Sicherheit oder Grundrechte, strenge Compliance erforderlich (z. B. automatisiertes Recruiting, KI-gestützte medizinische Diagnostik).
-4. **Inakzeptables Risiko** – Verboten (z. B. allgemeines Social Scoring, unterschwellige kognitive Manipulation).
+Details zu jeder Stufe finden Sie unter [Risikoanalyse und Mehrwert](risk-analysis.md).
 
-***
+## Was das Modul leistet
 
-#### 🔹 Über die Funktionalität KI-Systeme in Dastra
+In Dastra können Sie:
 
-💡 **Hinweis:** Diese Funktionalität ist nur verfügbar, wenn sie in Ihrem **Abonnementplan** enthalten ist.
+* die in Ihrer Organisation genutzten oder entwickelten KI-Systeme erfassen;
+* deren Risikostufe gemäß der KI-Verordnung bewerten;
+* jedes System mit seinen Assets, Datenkategorien, KI-Modellen, verknüpften Verarbeitungstätigkeiten und Beteiligten dokumentieren;
+* den geschäftlichen Mehrwert jedes Systems analysieren, um Ihre KI-Projekte an Ihren Zielen auszurichten.
 
-Dastra hat dieses Modul entwickelt, um Ihnen Folgendes zu ermöglichen:
+## Was Sie in diesem Abschnitt lernen
 
-* **Alle KI-Systeme zu erfassen**, die in Ihrer Organisation verwendet oder entwickelt werden.
-* **Deren Risikoniveau zu bewerten** gemäß der KI-Verordnung.
-* **Jedes System zu dokumentieren** mit seinen Assets, Datensätzen, verwendeten KI-Modellen und beteiligten Stakeholdern.
-* **Den geschäftlichen Mehrwert** jedes Systems zu analysieren, um Ihre KI-Projekte mit Ihren strategischen Zielen abzustimmen.
+Die folgenden Seiten zeigen Ihnen, wie Sie:
 
-***
+* ein Verzeichnis Ihrer KI-Systeme aufbauen;
+* ein Verzeichnis von KI-Modellen anlegen und verwalten;
+* jedes System dokumentieren, um bei einem Audit die Compliance nachzuweisen;
+* die Bewertung von KI-Risiken in Ihre Prozesse für Daten-Governance und Compliance einbinden.
 
-#### 🔹 Was Sie lernen werden
+## Nutzen für Ihre Organisation
 
-In diesem Abschnitt erfahren Sie, wie Sie:
+Das Modul hilft Ihnen, Ihre regulatorischen Risiken zu verringern, Ihre KI-Projekte zu strukturieren und Ihre Entscheidungen gegenüber Kunden, Partnern und Teams zu begründen.
 
-* **Ein vollständiges Verzeichnis** Ihrer KI-Systeme erstellen.
-* **Ein Referenzverzeichnis der KI-Modelle erstellen und verwalten**, die in Ihren Projekten verwendet werden.
-* Jedes System dokumentieren, um **Ihre Compliance bei Audits nachzuweisen**.
-* Die KI-Risikobewertung in Ihre Prozesse für Datengovernance und Compliance integrieren.
+## Im Modul navigieren
 
-***
+Klicken Sie in der Seitenleiste auf **KI-Governance**. Das Menü enthält folgende Einträge:
 
-#### 🔹 Der strategische Nutzen für Ihre Organisation
+* **KI-Systeme**: die Liste Ihrer Systeme, von der aus Sie Datensätze anlegen, importieren, exportieren und öffnen. Siehe [Ein Verzeichnis der KI-Systeme erstellen](record.md) und [Ihre KI-Systeme importieren](import.md).
+* **Data Mapping**: der Graph der KI-Systeme und der Elemente, mit denen sie verknüpft sind.
+* **Statistiken**: die Kennzahlen des Verzeichnisses, nämlich Systeme nach Risikostufe, nach Mehrwert, nach Workflow-Schritt, nach Organisationseinheit und nach Tag sowie neue Systeme.
+* **KI-Modelle**: das Verzeichnis der Modelle, die Ihre Systeme nutzen. Siehe [Das Verzeichnis der KI-Modelle](models.md).
+* **Assessments**: die Fragebögen zur Folgenabschätzung, die mit Ihren KI-Systemen verknüpft sind. Der Eintrag erscheint, wenn Ihr Plan das Modul **Fragebögen** enthält und Sie Zugriff auf Fragebögen haben. Siehe [Grundrechte-Folgenabschätzung (FRIA)](fria.md).
 
-Die Nutzung der Funktionalität **KI-Systeme** in Dastra ermöglicht Ihnen:
+Wie Sie den Informationshinweis eines Systems verfassen, lesen Sie unter [Transparenzhinweis](transparency-notice.md). Wie Sie Ihre KI-Systeme auf Ihrem öffentlichen Portal veröffentlichen, lesen Sie unter [KI-Systeme im Trust Center](../trust-center/configuration/ai-systems.md).
 
-✅ Ihre regulatorischen und reputationsbezogenen Risiken zu reduzieren\
-✅ Das Vertrauen Ihrer Kunden und Partner zu stärken\
-✅ Ihre KI-Initiativen zu strukturieren und zu beschleunigen\
-✅ Die verantwortungsvolle und ethische Einführung von KI in Ihren Teams zu fördern
+## Erste Schritte
 
-***
-
-#### 🚀 **Bereit loszulegen?**
-
-Greifen Sie auf die folgenden Abschnitte zu, um **Schritt für Schritt** zu erfahren, wie Sie jede Funktionalität des Moduls nutzen und ein KI-Verzeichnis aufbauen, das konform, nützlich und auf Ihre strategischen Herausforderungen abgestimmt ist.
-
-***
+Beginnen Sie mit [Ein Verzeichnis der KI-Systeme erstellen](record.md) oder, wenn Sie bereits eine Liste haben, mit [Ihre KI-Systeme importieren](import.md).

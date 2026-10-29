@@ -4,23 +4,25 @@ description: Die Bibliothek zentralisiert alle Compliance-Objekte von Dastra.
 
 # Bibliothek
 
-Sie bildet die **gemeinsame Grundlage**, auf der die Frameworks, die Compliance-Projekte und das Risikomanagement aufbauen.
+Die Bibliothek bildet die **gemeinsame Grundlage**, auf der die Frameworks, die Compliance-Projekte und das Risikomanagement aufbauen.
 
 {% columns %}
 {% column %}
-Von der Bibliothek aus können Sie erstellen, strukturieren und pflegen:
+In der Bibliothek können Sie erstellen, strukturieren und pflegen:
 
-* **Frameworks** (Compliance-Referenzrahmen),
-* **Anforderungen**,
-* **Kontrollen**, zentrale Elemente, die Anforderungen, Tests und Risiken verbinden,
+* **Frameworks** (Compliance-Frameworks) und ihre **Anforderungen**,
+* **Kontrollen**, die zentralen Elemente, die Anforderungen, Tests und Risiken verbinden,
+* **Tests**, die die Kontrollen überprüfen,
 * sowie die zugehörigen **Risiken** und **Bedrohungen**.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/Compliance2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-nav-menu-1.png" alt="Seitenmenü der Compliance-Bibliothek"><figcaption></figcaption></figure>
+
+
 {% endcolumn %}
 {% endcolumns %}
 
 Die Bibliothek ermöglicht einen **übergreifenden und wiederverwendbaren Ansatz** für die Compliance:\
-Eine einzelne Kontrolle kann mehrere Anforderungen abdecken, zwischen mehreren Frameworks geteilt werden und mithilfe standardisierter Tests bewertet werden.\
-Diese Zentralisierung erleichtert die Governance, verbessert die Kohärenz der Referenzrahmen und bietet dank dedizierter Indikatoren und Statistiken einen umfassenden Überblick.
+Eine einzelne Kontrolle kann mehrere Anforderungen abdecken, von mehreren Frameworks gemeinsam genutzt und mithilfe standardisierter Tests bewertet werden.\
+Diese Zentralisierung erleichtert die Governance, verbessert die Kohärenz der Frameworks und bietet dank eigener Kennzahlen und Statistiken einen Gesamtüberblick.

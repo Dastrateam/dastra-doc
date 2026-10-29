@@ -1,34 +1,45 @@
 ---
-description: Verwalten Sie Ihre Compliance mit verschiedenen Frameworks mit Dastra!
+description: Verwalten Sie Ihre Compliance mit den verschiedenen Frameworks in Dastra.
 ---
 
 # Compliance
 
-Das Modul **Compliance** von Dastra ermöglicht es, die regulatorische Compliance strukturiert, nachvollziehbar und auditierbar zu verwalten, basierend auf einer modularen Architektur, die an Compliance-Referenzrahmen ausgerichtet ist.
+Das Modul **Compliance** von Dastra ermöglicht es, die regulatorische Compliance strukturiert, nachvollziehbar und auditierbar zu verwalten. Es beruht auf einer modularen Architektur, die an den Compliance-Frameworks ausgerichtet ist.
 
 ***
 
-### Architektur des Compliance-Moduls
+## Im Modul navigieren
 
-Das Modul basiert auf einer logischen Kette von Objekten, von den regulatorischen Referenzrahmen bis hin zu den Compliance-Nachweisen.
+Im Menü bietet **Compliance** vier Einträge:
 
-<figure><img src="../../.gitbook/assets/Compliance.png" alt=""><figcaption></figcaption></figure>
+* **Projekte**: die Compliance-Projekte, ihre Phasen, ihre Audits und Ihre Aufgaben. Siehe [Projekte](projects/README.md).
+* **Bibliothek**: die wiederverwendbaren Frameworks, Kontrollen, Tests, Risiken und Bedrohungen. Siehe [Bibliothek](library/README.md).
+* **Scopes**: die Organisationseinheiten, die ein Projekt abdeckt. Siehe [Scopes](scopes.md).
+* **Statistiken**: das Compliance-Dashboard des Mandanten (siehe unten).
 
-#### Frameworks (Referenzrahmen)
+***
+
+## Architektur des Compliance-Moduls
+
+Das Modul beruht auf einer logischen Kette von Objekten, von den regulatorischen Frameworks bis zu den Compliance-Nachweisen.
+
+<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Objektkette des Moduls: Framework, Anforderungen, Kontrollen, Risikoszenarien, Tests, Nachweise und Audits"><figcaption></figcaption></figure>
+
+### Frameworks
 
 Beispiele: DSGVO, ISO 27701, ISO 27001, KI-Verordnung.
 
 Ein Framework:
 
 * definiert den regulatorischen oder normativen Rahmen,
-* enthält eine Reihe von anwendbaren Anforderungen.
+* enthält eine Reihe anwendbarer Anforderungen.
 
 ***
 
-#### Anforderungen (Requirements)
+### Anforderungen
 
-Die Anforderungen repräsentieren die Verpflichtungen aus einem Framework.\
-Beispiele: Zugangskontrollen, Berechtigungsverwaltung, Protokollierung.
+Anforderungen stellen die Verpflichtungen dar, die sich aus einem Framework ergeben.\
+Beispiele: Zugriffskontrolle, Berechtigungsverwaltung, Protokollierung.
 
 Jede Anforderung:
 
@@ -38,58 +49,58 @@ Jede Anforderung:
 
 ***
 
-#### Kontrollen (Controls)
+### Kontrollen
 
-Die Kontrollen beschreiben, **wie** eine Anforderung konkret umgesetzt wird.\
-Beispiele: regelmäßige Überprüfung der Zugänge, Berechtigungsverfahren.
+Kontrollen beschreiben, **wie** eine Anforderung konkret umgesetzt wird.\
+Beispiele: regelmäßige Überprüfung der Zugriffsrechte, Berechtigungsverfahren.
 
 Eine Kontrolle:
 
 * setzt eine Anforderung um,
 * ist mit einem oder mehreren Risikoszenarien verknüpft,
-* wird mithilfe von Tests überprüft.
+* wird anhand von Tests überprüft.
 
 ***
 
-#### Risikoszenarien (Risk scenarios)
+### Risikoszenarien
 
-Die Risikoszenarien beschreiben befürchtete Ereignisse.\
-Beispiel: unbefugter Zugang zu sensiblen Daten.
+Risikoszenarien beschreiben die befürchteten Ereignisse. Sie erscheinen in der Anwendung als **Risiken**.\
+Beispiel: unbefugter Zugriff auf sensible Daten.
 
-Die Kontrollen ermöglichen:
+Kontrollen ermöglichen es:
 
-* diese Risiken zu verhindern oder zu reduzieren,
-* die umgesetzten Abhilfemaßnahmen nachzuweisen.
+* diese Risiken zu verhindern oder zu verringern,
+* die ergriffenen Abhilfemaßnahmen nachzuweisen.
 
 ***
 
-#### Tests
+### Tests
 
-Die Tests dienen dazu, die Wirksamkeit der Kontrollen zu überprüfen.\
-Beispiele: wiederkehrende Überprüfung der Zugänge, Validierungsdelegation.
+Tests dienen dazu, die Wirksamkeit der Kontrollen zu überprüfen.\
+Beispiele: wiederkehrende Überprüfung der Zugriffsrechte, Delegation der Freigabe.
 
 Ein Test:
 
-* überprüft eine oder mehrere Kontrollen,
+* prüft eine oder mehrere Kontrollen,
 * liefert messbare Ergebnisse,
 * wird durch Nachweise gestützt.
 
 ***
 
-#### Testkampagnen (Test campaigns)
+### Testkampagnen
 
-Die Kampagnen ermöglichen es, Tests im großen Maßstab zu orchestrieren:
+Kampagnen ermöglichen es, Tests im großen Maßstab zu steuern:
 
-* Versand von Kampagnen an Teams oder Kunden,
-* zentralisierte Erfassung der Antworten,
-* Verfolgung des Fortschritts und der Status.
+* Versand der Kampagnen an Teams oder Kunden,
+* zentrale Erfassung der Antworten,
+* Verfolgung von Fortschritt und Status.
 
 ***
 
-#### Nachweise (Evidences)
+### Nachweise
 
-Die Nachweise belegen die Compliance.\
-Beispiele: Richtlinien, Verfahren, Berichte zur Zugriffsüberprüfung.
+Nachweise belegen die Compliance.\
+Beispiele: Richtlinien, Verfahren, Berichte über die Überprüfung der Zugriffsrechte.
 
 Ein Nachweis:
 
@@ -99,9 +110,9 @@ Ein Nachweis:
 
 ***
 
-#### Compliance-Audits (Compliance audits)
+### Compliance-Audits
 
-Die Audits ermöglichen die Bewertung des Compliance-Niveaus:
+Audits ermöglichen es, den Compliance-Grad zu bewerten:
 
 * interne Audits,
 * Selbstbewertungen,
@@ -115,44 +126,59 @@ Sie stützen sich auf:
 
 ***
 
-### Gesamtübersicht
+### Gesamtüberblick
 
-Das Compliance-Modul von Dastra ermöglicht somit:
+Das Compliance-Modul von Dastra ermöglicht es somit:
 
 * regulatorische Anforderungen zu strukturieren,
 * Verpflichtungen mit Risiken zu verknüpfen,
 * die Compliance durch getestete und dokumentierte Kontrollen nachzuweisen,
 * Audits und Zertifizierungen effizient vorzubereiten.
 
-### Multi-Framework-Prinzip in Dastra
+### Das Multi-Framework-Prinzip in Dastra
 
-Das Compliance-Modul von Dastra ist **nativ multi-framework-fähig**.
+Das Compliance-Modul von Dastra ist **nativ multi-frameworkfähig**.
 
 Das bedeutet:
 
-* ein und dasselbe **Framework** (DSGVO, ISO, KI-Verordnung…) enthält seine eigenen Anforderungen,
+* ein **Framework** (DSGVO, ISO, KI-Verordnung …) enthält seine eigenen Anforderungen,
 * eine **Anforderung** gehört zu **einem Framework**,
-* eine **Kontrolle kann mehrere Anforderungen abdecken**, auch aus **verschiedenen Frameworks**,
-* die **Tests und Nachweise** werden gemeinsam genutzt und sind wiederverwendbar.
+* eine **Kontrolle kann mehrere Anforderungen abdecken**, auch solche aus **verschiedenen Frameworks**,
+* **Tests und Nachweise** werden gemeinsam genutzt und sind wiederverwendbar.
 
-Ziel: **Doppelarbeit vermeiden** und die Compliance übergreifend steuern.
+Ziel: **Doppelarbeit vermeiden** und die Compliance bereichsübergreifend steuern.
 
 ***
 
 ### Wichtige Beziehungen zwischen den Objekten
 
-* **Framework → Anforderungen**: 1 → N
-* **Anforderungen ↔ Kontrollen**: N ↔ N
-* **Kontrollen ↔ Tests**: N ↔ N
-* **Tests → Nachweise**: 1 → N
-* **Kontrollen → Risikoszenarien**: N ↔ N
+* ein **Framework** enthält mehrere **Anforderungen** (1 zu N),
+* **Anforderungen** und **Kontrollen**: N-zu-N-Beziehung,
+* **Kontrollen** und **Tests**: N-zu-N-Beziehung,
+* ein **Test** wird durch mehrere **Nachweise** gestützt (1 zu N),
+* **Kontrollen** und **Risikoszenarien**: N-zu-N-Beziehung.
 
-Eine einzelne Kontrolle (z. B. Überprüfung der Zugänge) kann somit:
+Eine einzige Kontrolle (zum Beispiel die Überprüfung der Zugriffsrechte) kann somit:
 
-* eine DSGVO-Anforderung erfüllen,
-* eine ISO 27001-Anforderung erfüllen,
-* mehrere Risikoszenarien reduzieren.
+* eine Anforderung der DSGVO erfüllen,
+* eine Anforderung der ISO 27001 erfüllen,
+* mehrere Risikoszenarien verringern.
 
-**Erläuterndes Schema**
+Erläuterndes Schaubild:
 
-<figure><img src="../../.gitbook/assets/Compliance1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Beziehungen zwischen Frameworks, Anforderungen, Kontrollen, Tests, Nachweisen und Risikoszenarien"><figcaption></figcaption></figure>
+
+***
+
+## Statistiken
+
+**Compliance** > **Statistiken** öffnet das **Compliance-Dashboard**, das alle Projekte des Mandanten zusammenführt. Sie können es nach **Status** (Projektphase), **Organisationseinheiten** und **Scopes** filtern.
+
+Das Dashboard enthält:
+
+* globale Kennzahlen. Kontrollen: **Gesamtzahl der Kontrollen**, **Validierte Kontrollen**, **Nicht implementiert** und **Ohne Zuordnung** (Kontrollen ohne zugehörige Anforderung). Tests: **Gesamtzahl der Tests**, **Validierte Tests**, **Fehlgeschlagene Tests** und **Fehlende Nachweise**. Audits: **Gesamtzahl der Audits**, **Abgeschlossene Audits** und **Durchschnittliche Compliance**, mit der Verteilung der Anforderungen auf **Konform**, **Teilweise konform**, **Nicht konform** und **Nicht zutreffend**;
+* **Fortschritte bei den Frameworks**: für jedes Framework die Anzahl der Projekte und der Fortschritt bei Kontrollen, Tests, Anforderungen und Risiken;
+* **Compliance-Projekte nach Schritt**: die Verteilung der Projekte nach Phase;
+* **Anforderungen nach Scope**: der Compliance-Grad jedes Scopes.
+
+<figure><img src="../../.gitbook/assets/compliance-statistics-1.png" alt="Compliance-Dashboard mit den globalen Kennzahlen, den Fortschritten bei den Frameworks und der Compliance nach Scope"><figcaption></figcaption></figure>

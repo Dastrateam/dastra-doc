@@ -1,45 +1,72 @@
+---
+description: >-
+  Führen Sie die in Artikel 27 der KI-Verordnung vorgeschriebene
+  Grundrechte-Folgenabschätzung (FRIA) aus dem Datensatz eines
+  Hochrisiko-KI-Systems durch.
+---
+
 # Grundrechte-Folgenabschätzung (FRIA)
 
-### Regulatorischer Kontext
+Diese Seite erklärt, wer eine Grundrechte-Folgenabschätzung (FRIA) durchführen muss und wie Sie sie in Dastra durchführen. Sie richtet sich an Betreiber von Hochrisiko-KI-Systemen.
 
-Die **Europäische Verordnung über künstliche Intelligenz (KI-Verordnung)** schreibt für bestimmte KI-Systeme die Durchführung einer **Grundrechte-Folgenabschätzung** vor.
+## Regulatorischer Kontext
 
-Diese Verpflichtung gilt, wenn das System als **Hochrisiko** eingestuft ist. Die Analyse muss **vor der Inbetriebnahme des Systems** durchgeführt werden.
+Artikel 27 der europäischen Verordnung über künstliche Intelligenz (**KI-Verordnung**) schreibt vor der ersten Nutzung bestimmter Hochrisiko-KI-Systeme eine Grundrechte-Folgenabschätzung vor. Die Pflicht gilt nicht für jedes Hochrisiko-System.
 
-### Ziel der Analyse
+Sie gilt für die in Artikel 6 Absatz 2 genannten Hochrisiko-Systeme, mit Ausnahme derer aus Anhang III Nummer 2 (kritische Infrastrukturen). Betroffen sind:
 
-Die Grundrechte-Folgenabschätzung zielt darauf ab:
+* Betreiber, die dem öffentlichen Recht unterliegen;
+* private Stellen, die öffentliche Dienste erbringen;
+* Betreiber der Hochrisiko-Systeme aus Anhang III Nummer 5 Buchstaben b und c: die Bewertung der Kreditwürdigkeit von Personen sowie die Risikobewertung und Preisbildung bei Lebens- und Krankenversicherungen.
 
-* Die Risiken zu identifizieren, die das KI-System für folgende Bereiche darstellen kann:
-  * Privatsphäre
-  * Nichtdiskriminierung
-  * Meinungsfreiheit
-  * Vereinigungsfreiheit
-  * Unschuldsvermutung
-  * Menschenwürde
-  * Arbeitnehmerrechte
-* Die Schwere und Wahrscheinlichkeit dieser Risiken zu bewerten
-* Angemessene Abhilfemaßnahmen festzulegen
+Der Betreiber führt die Bewertung durch, bevor er das System in Betrieb nimmt. In ähnlichen Fällen kann der Betreiber sich auf eine bereits durchgeführte Bewertung oder auf die Folgenabschätzungen stützen, die der Anbieter bereitstellt. Nach Abschluss der Bewertung teilt der Betreiber der Marktüberwachungsbehörde die Ergebnisse mit (Artikel 27 Absatz 3).
 
-⚠️ Diese Analyse ist von einer **DSGVO-Datenschutz-Folgenabschätzung** (DSFA) zu unterscheiden, ergänzt diese aber.
+Die Bewertung unterscheidet sich von einer DSGVO-DSFA, ergänzt sie aber: Deckt eine DSFA bereits einige der Pflichten ab, tritt die Grundrechte-Folgenabschätzung hinzu (Artikel 27 Absatz 4).
 
-### Durchführung der Folgenabschätzung
+## Ziel der Bewertung
 
-Wenn Sie in Dastra ein KI-System als **Hochrisiko** definieren, erscheint ein Warnhinweis, der Sie auffordert, eine **Folgenabschätzung** durchzuführen.
+Die Bewertung beschreibt für das betreffende System:
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-23-104949.png" alt=""><figcaption></figcaption></figure>
+* die Prozesse des Betreibers, in denen das System eingesetzt wird;
+* den vorgesehenen Zeitraum und die Häufigkeit der Nutzung;
+* die Kategorien von Personen, die voraussichtlich betroffen sind;
+* die spezifischen Risiken einer Beeinträchtigung ihrer Rechte, zum Beispiel auf Privatsphäre, Nichtdiskriminierung, Meinungsfreiheit, Unschuldsvermutung, Würde oder Arbeitnehmerrechte;
+* die Maßnahmen der menschlichen Aufsicht;
+* die Maßnahmen, die zu ergreifen sind, wenn diese Risiken eintreten, einschließlich der internen Governance und der Beschwerdemechanismen.
 
-Wenn Sie über das Modul **Fragebögen** von Dastra verfügen, bietet Ihnen dieser Warnhinweis die Schaltfläche „**Folgenabschätzung durchführen**". Klicken Sie darauf, es öffnet sich ein Fenster mit Fragebögen.
+## Wann Dastra die Bewertung anbietet
 
-Wenn Sie die Fragebogenvorlage für die Folgenabschätzung installiert haben, wird diese in diesem Fenster angezeigt. Andernfalls können Sie auf „**Vorlage erstellen**" klicken, was Sie zum Fragebogen-Modul weiterleitet.
+Das Feld **Bewertung der Auswirkungen eines KI-Systems auf die Grundrechte** erscheint im Schritt **Risikostufe** des Datensatzes, wenn:
 
-Sie können nun:
+* der Schritt **Verantwortung** die Rolle des Betreibers angibt;
+* die Risikostufe **Hohes Risiko** ist;
+* Ihr Plan das Modul **Fragebögen** enthält und Sie Schreibzugriff auf Fragebögen haben.
 
-* Ihre eigene Vorlage erstellen
-* Unsere bestehende Vorlage importieren
+Ist die Risikostufe **Nicht akzeptabel**, warnt das Feld, dass Artikel 5 der KI-Verordnung den Einsatz verbietet.
 
-Um unsere einsatzbereite Vorlage zu importieren, klicken Sie auf **Vorlage erstellen**, dann **Aus einer Vorlage**. Dies leitet Sie zu einer Liste von Vorlagen weiter. Wählen Sie in den Filtern **Von Dastra erstellte Vorlagen** und wählen Sie den Typ **Folgenabschätzung (PIA)**. Sie können auch „Folgenabschätzung für ein KI-System" in die Suchleiste eingeben.
+<figure><img src="../../.gitbook/assets/ai-systems-fria-1.png" alt="Schritt Risikostufe eines Hochrisiko-Systems mit dem Feld zur Folgenabschätzung und der Schaltfläche Durchführung einer Folgenabschätzung"><figcaption><p>Das Feld, das einem Betreiber eines Hochrisiko-Systems angezeigt wird</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/screenshot-2026-02-23-113208.png" alt=""><figcaption></figcaption></figure>
+## Die Bewertung durchführen
 
-Sie können nun Ihre Folgenabschätzung durchführen.
+1. Klicken Sie in dem Feld auf **Durchführung einer Folgenabschätzung**.
+2. Das Fenster **Auswahl einer Fragebogen-Vorlage** listet die Vorlagen vom Typ **Analyse der Auswirkungen eines KI-Systems** auf, die in Ihrem Mandanten installiert sind. Klicken Sie auf eine Vorlage, um sie zu planen.
+3. Legen Sie im Fenster **Einen Fragebogen planen** fest, wie die Befragten antworten. Siehe [Einen Fragebogen planen](../questionnaires/schedule.md).
+
+<figure><img src="../../.gitbook/assets/ai-systems-fria-2.png" alt="Fenster zur Auswahl einer Fragebogen-Vorlage mit den vorhandenen Vorlagen zur Folgenabschätzung für KI-Systeme"><figcaption><p>Die Vorlagen zur Folgenabschätzung für KI-Systeme</p></figcaption></figure>
+
+Zeigt das Fenster keine Vorlage an, installieren Sie eine:
+
+1. Klicken Sie im Fenster auf **Vorlage erstellen**. Das Modul Fragebögen öffnet sich in einem neuen Tab.
+2. Wählen Sie **Basierend auf einer Vorlage**.
+3. Filtern Sie in der Bibliothek **Typen** nach **Analyse der Auswirkungen eines KI-Systems** und klicken Sie dann auf die Vorlage, die Sie installieren möchten. Siehe [Automatisierte Fragebogenvorlagen](../questionnaires/templates/README.md#automatisierte-fragebogenvorlagen).
+4. Kehren Sie zum Datensatz zurück und klicken Sie erneut auf **Durchführung einer Folgenabschätzung**.
+
+{% hint style="info" %}
+Das Fenster bietet nur Vorlagen vom Typ **Analyse der Auswirkungen eines KI-Systems** an. Eine Vorlage vom Typ **DSFA (PIA)**, auch wenn sie für KI gedacht ist, erscheint dort nicht.
+{% endhint %}
+
+## Abgeschlossene Bewertungen finden
+
+Klicken Sie in der Seitenleiste auf **KI-Governance** und dann auf **Assessments**. Diese Seite zeigt das Modul Fragebögen, beschränkt auf den Typ **Analyse der Auswirkungen eines KI-Systems**. Sie erscheint, wenn Ihr Plan das Modul Fragebögen enthält und Sie Zugriff auf Fragebögen haben.
+
+<figure><img src="../../.gitbook/assets/ai-systems-fria-3.png" alt="Seite Assessments des Moduls KI-Systeme"><figcaption><p>Die Seite Assessments</p></figcaption></figure>

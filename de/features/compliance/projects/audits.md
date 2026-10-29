@@ -1,192 +1,158 @@
+---
+description: >-
+  Interne und abschließende Audits eines Compliance-Projekts erstellen,
+  durchführen und abschließen sowie Probleme an Tests melden.
+---
+
 # Audits
 
-Die Audit-Phase ermöglicht die offizielle Validierung des Compliance-Status zu einem bestimmten Zeitpunkt. Sie stützt sich auf die in den vorgelagerten Phasen geleistete Vorbereitungs- und Überwachungsarbeit, um eine strukturierte Bewertung zu bieten, sei es intern oder durch externe Auditoren.
+Die Phasen **Interne Prüfung** und **Abschlussprüfung** eines Projekts validieren offiziell den Compliance-Stand zu einem bestimmten Zeitpunkt. Sie bauen auf der zuvor geleisteten Arbeit in Design und Überwachung auf und liefern eine strukturierte Bewertung, die intern oder durch externe Auditoren erfolgt.
 
-**🎯 Ziel der Phase**
+Ein Audit deckt ein Framework des Projekts ab. Die Auditoren bewerten jede Anforderung anhand der Kontrollen, Tests und Nachweise, die bereits im Projekt vorhanden sind. Anschließend wird das Audit mit einer Gesamtbewertung abgeschlossen.
 
-Die Vorbereitung und Durchführung aller Compliance-Audits zentralisiert gestalten, mit den Beteiligten zusammenarbeiten und die Nachverfolgung der Korrekturen nach festgestellten Abweichungen sicherstellen.
+<figure><img src="../../../.gitbook/assets/image-509.png" alt="Übersicht eines Projekts in der Phase Interne Prüfung mit der Checkliste des Assistenten"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Compliance48.png" alt=""><figcaption></figcaption></figure>
+## Was das Modul leistet
 
-***
+* **Audits durchführen**, intern oder extern, mit Standard-Frameworks (DSGVO, KI-Verordnung usw.) oder mit Ihren eigenen Rastern.
+* **Zusammenarbeiten**: Die Auditoren haben Zugriff auf die zugehörigen Anforderungen, Kontrollen, Tests und Nachweise, und während des Audits kann ein Auditor hinzugefügt werden.
+* **Die Überwachungsarbeit wiederverwenden**: Die Kontrollen und Nachweise des Projekts können bei der Bewertung direkt eingesehen werden.
+* **Abweichungen behandeln**: Probleme, die an Tests festgestellt werden, melden und Korrekturaufgaben erstellen.
+* **Die Ergebnisse exportieren** als XLSX, PDF, DOCX, JSON, HTML oder Markdown.
 
-### Übersicht des Moduls
+<figure><img src="../../../.gitbook/assets/image-508.png" alt="Tab Audits eines Projekts mit der Liste der Audits und der Schaltfläche Neues Audit erstellen"><figcaption></figcaption></figure>
 
-Das Audit-Modul wandelt die theoretische Compliance in eine messbare Realität um, indem es Frameworks, Kontrollen, Risiken und Audits auf einer einzigen Plattform zusammenführt. Diese Phase basiert auf 4 Hauptsäulen:
+## Ein Audit erstellen
 
-1. Durchführung von Audits: Führen Sie interne oder externe Audits mithilfe von Standardframeworks (DSGVO, KI-Verordnung...) oder Ihren eigenen benutzerdefinierten Bewertungsrastern durch.
-2. Zusammenarbeit: Erleichtern Sie den Austausch über einen zentralisierten Zugang zu Nachweisen, ein Delegationssystem und ein feingranulares Governance-Management.
-3. Verknüpfung mit der Compliance: Verwenden Sie die bereits in Ihren Projekten vorhandenen Kontrollen und Nachweise direkt, um die Erfassung zu automatisieren.
-4. Abweichungsmanagement: Identifizieren Sie Nichtkonformitäten und wandeln Sie sie sofort in Korrekturmaßnahmenpläne um.
+Erstellen Sie ein Audit im Compliance-Projekt, nicht im Modul Fragebögen. Es gibt zwei Einstiegspunkte:
 
-#### Eine offene Architektur
+* der Tab **Audits** des Projekts mit der Schaltfläche **Neues Audit erstellen**. Wählen Sie dann das Framework in der Liste **Bitte wählen Sie ein zu prüfendes Framework aus.** aus; sie zeigt für jedes Framework, ob bereits ein Audit läuft;
+* das Menü **⋯** einer Framework-Karte im **Überblick** des Projekts mit **Neues Audit erstellen**. Das Framework ist dann bereits ausgewählt.
 
-Dastra bietet eine Multi-User-Verwaltung zur Steuerung der Compliance auf Konzernebene sowie eine vollständige Interoperabilität über APIs und Multi-Format-Exporte.
+Hat das Projekt kein Framework, zeigt Dastra **Kein Framework muss geprüft werden**: Fügen Sie dem Projekt zuerst ein Framework hinzu (siehe [Projektgestaltung](design.md)).
 
-<figure><img src="../../../.gitbook/assets/Compliance49.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Ein Audit außerhalb einer Audit-Phase zu erstellen, wird nicht empfohlen: Dastra zeigt eine Warnung an, blockiert Sie aber nicht. Die Auswahl der Audit-Phase **Abschlussprüfung** löst dieselbe Warnung aus, solange sich das Projekt nicht in der Phase **Abschlussprüfung** befindet.
+{% endhint %}
 
-***
+### Allgemeine Informationen
 
-### 1. Eine neue Audit-Mission erstellen
+| Feld | Beschreibung |
+| --- | --- |
+| **Name** | Titel des Audits, zum Beispiel „Jährliches Compliance-Audit“. Pflichtfeld, höchstens 80 Zeichen. |
+| **Zusammenfassung** | Kontext oder besonderer Umfang des Audits. Optional, höchstens 500 Zeichen. |
+| **Auditoren** | Nutzer, die das Audit durchführen dürfen. Pflichtfeld. Stehen Sie nicht in dieser Liste, können Sie die Anforderungen nicht bewerten, auch wenn Sie der Inhaber der Organisation sind. |
 
-Die Erstellung einer Mission ist der Ausgangspunkt Ihrer Bewertung. Klicken Sie im Modul Audits auf die Schaltfläche zur Erstellung, um das Konfigurationsformular zu öffnen.
+<figure><img src="../../../.gitbook/assets/image-510.png" alt="Dialogfenster zum Erstellen eines Audits mit Name, Auditoren, Phase und Terminen"><figcaption></figcaption></figure>
 
-#### 1. Allgemeine Informationen
+### Audit-Phase und Termine
 
-* Name (Pflichtfeld): Eindeutiger Titel der Mission (z. B. „Jährliches Compliance-Audit"), begrenzt auf 80 Zeichen.
-* Beschreibung (optional): Geben Sie den Kontext oder den spezifischen Geltungsbereich an (bis zu 500 Zeichen).
-* Auditoren (Pflichtfeld): Wählen Sie die Nutzer aus, die für die Durchführung der Bewertung verantwortlich sind. Wenn Sie nicht in dieser Liste erscheinen, können Sie die Audit-Fragen nicht beantworten (auch wenn Sie Inhaber der Organisation sind).
+Die **Audit-Phase** gliedert das Audit und ermöglicht es, die Governance-Dashboards zu filtern. Sie ist unabhängig von der Projektphase.
 
-<figure><img src="../../../.gitbook/assets/Compliance50.png" alt=""><figcaption></figcaption></figure>
+| Phase | Verwendung |
+| --- | --- |
+| **Initiale Analyse** | Abgrenzung: Festlegung des Scopes, des Frameworks und der regulatorischen Anforderungen. Standardwert. |
+| **Vorbereitung** | Organisation: Zuweisung der Kontrollen an die Auditoren und Planung der Interviews. |
+| **Vorprüfung** | Probeaudit: Selbstbewertung, um Lücken vor der offiziellen Frist zu erkennen. |
+| **Abschlussprüfung** | Abschluss: endgültige Bewertung, Schlussfolgerungen und offizieller Bericht. |
 
-#### 2. Audit-Phase und Zeitplan
+Tragen Sie das **Anfangsdatum** und die **Frist** ein, um das Audit zeitlich einzugrenzen. Beide Angaben sind Pflicht.
 
-Die Wahl der Phase ermöglicht die Segmentierung Ihrer Mission und die Filterung Ihrer Governance-Dashboards.
+### Optionen
 
-| **Phase**      | **Beschreibung & Ziel**                                                                                         |
-| -------------- | --------------------------------------------------------------------------------------------------------------- |
-| Erstanalyse    | Rahmenphase: Definition des Geltungsbereichs, des Referenzrahmens und der regulatorischen Themen.               |
-| Vorbereitung   | Logistikphase: Zuweisung der Kontrollen an die Auditoren und Planung der Gespräche.                             |
-| Vor-Audit      | „Probeaudit": Selbstbewertung zur Identifizierung von Abweichungen vor dem offiziellen Termin.                  |
-| Abschlussaudit | Abschlussphase: Abschlussbewertung, Erstellung der Schlussfolgerungen und Generierung des offiziellen Berichts. |
+* **Möchten Sie die Ergebnisse eines früheren Audits speichern?**: Das Audit beginnt mit den Bewertungen eines bestehenden Audits. Das ist nützlich bei wiederkehrenden Audits oder um ein Audit zu wiederholen, dessen Kontrollen nicht zufriedenstellend waren. Wählen Sie dann das Audit aus, dessen Ergebnisse Sie wiederverwenden möchten.
+* **Als aktives Audit definieren**: Das Audit fließt in die Verfolgungskennzahlen des Frameworks ein, darunter die Compliance-Quote, die im Projektüberblick angezeigt wird. Standardmäßig aktiviert.
+* **Benachrichtigen Sie den Prüfer per E-Mail**: Sendet den bestimmten Auditoren eine Einladung. Geben Sie bei Bedarf einen **Inhalt der Nachricht** ein und lassen Sie **E-Mail sofort versenden** aktiviert, oder deaktivieren Sie die Option und wählen Sie ein Datum und eine Uhrzeit innerhalb der nächsten 3 Tage.
 
-* Schlüsseldaten (Pflichtfeld): Geben Sie ein Startdatum und eine Frist an, um die Mission zeitlich einzurahmen.
+Klicken Sie auf **Bestätigen**, um das Audit zu erstellen. Das Audit-Dashboard öffnet sich.
 
-#### 3. Erweiterte Optionen und Automatisierung
+## Das Audit durchführen
 
-* Ergebnisse eines vorherigen Audits beibehalten: Ermöglicht den Start auf einer bestehenden Basis für wiederkehrende Audits. Dies kann nützlich sein, um ein Audit nach einem Audit zu wiederholen, bei dem die Kontrollen nicht zufriedenstellend waren.
-* Als aktives Audit definieren: Integriert das Audit sofort in Ihre Echtzeit-Tracking-Indikatoren. Dieses Audit wird im Dashboard verwendet, um die Compliance-Rate anzuzeigen.
-* Auditor per E-Mail benachrichtigen: Automatisiert den Versand einer Einladung an die bestimmten Mitarbeiter.
+Das Audit-Dashboard fasst Fortschritt und Team zusammen.
 
-***
+Links befinden sich drei Tabs:
 
-### Erwartetes Ergebnis
+* **Geprüfte Anforderungen (x/y)**: der Framework-Baum mit dem Status jeder Anforderung. Mit **Nach Status filtern** filtern Sie nach Status;
+* **Fehlerprüfungen (n)**: die Probleme, die Auditoren an Tests gemeldet haben (siehe [Einen Fehler an einem Test melden](#einen-fehler-an-einem-test-melden));
+* **Grafiken**: Diagramme zur Verteilung der Anforderungen und Kontrollen.
 
-Am Ende dieser Phase verfügt die Organisation über einen offiziellen Statusbericht, eine vollständige Audit-Spur (Historie) und einen präzisen Maßnahmenplan zur Behandlung der Abweichungen und Verbesserung der Governance.
+Rechts befinden sich:
 
-> Nächster Schritt: Sobald die Mission erstellt ist, können Sie mit der Bewertung der Kontrollpunkte und der Validierung der zugehörigen Nachweise beginnen.
+* der geprüfte Scope, der Titel, die Beschreibung, der Status und die Phase des Audits, die Termine und das Framework mit seiner Version. **Bearbeiten** öffnet die allgemeinen Informationen;
+* der **Fortschritt** des Audits in Prozent, mit der Verteilung der Anforderungen (nicht geprüft, konform, teilweise konform, nicht konform, nicht zutreffend);
+* die Liste der **Auditoren** mit der Anzahl der Bewertungen, die jeder Auditor abgeschlossen hat. Mit **Einen Prüfer hinzufügen** und **Den Prüfer entfernen** passen Sie das Team während des Audits an;
+* die **Anhänge**: Sammeln Sie hier externe Nachweisdokumente, damit alle Auditoren darauf zugreifen können.
 
-### 2. Steuerung und Durchführung der Audit-Mission
+Mit den Schaltflächen für Aufgaben und Kommentare des Dashboards verfolgen Sie das Audit gemeinsam mit anderen Nutzern, zum Beispiel um Korrekturaufgaben zu erstellen.
 
-Sobald die Mission erstellt und gestartet ist, gelangen Sie zum operativen Dashboard des Audits. Diese zentralisierte Oberfläche ermöglicht die Verfolgung des Bewertungsfortschritts und die Verwaltung der Mitarbeiter in Echtzeit.
+Die Schaltfläche **Das Audit abschließen** öffnet den Bewertungsbereich. Ihr Menü bietet außerdem:
 
-#### Fortschrittsübersicht
+* **Das Audit erneut öffnen**: macht ein abgeschlossenes Audit wieder bearbeitbar;
+* **Exportieren**;
+* **Link kopieren**;
+* **Audit archivieren**, anschließend **Wiederherstellen**, um es zurückzuholen. Das als aktiv definierte Audit kann nicht archiviert werden.
 
-Das Dashboard zeigt eine visuelle Zusammenfassung des Gesundheitszustands Ihres Audits:
+Sind Sie nicht als Auditor bestimmt, ist die Schaltfläche **Das Audit abschließen** gesperrt: Bitten Sie darum, in die Liste der **Auditoren** aufgenommen zu werden.
 
-* Anforderungsindikatoren: Verfolgen Sie die Gesamtzahl der zu auditierenden Anforderungen (z. B. 0/31) und visualisieren Sie sofort die Blockadepunkte über den Tab „Tests mit Fehlern".
-* Fortschrittsdiagramm: Ein Kreisdiagramm ermöglicht die Visualisierung der Verteilung der Kontrollen (nicht auditiert, konform, nicht konform).
-* Missionsstatus: Erinnerung an die aktuelle Phase (z. B. „Erstanalyse"), die Fristen und das verwendete Framework (z. B. „DSGVO V0.3").
+## Die Anforderungen bewerten
 
-#### Bewertungs- und Notierungsoberfläche
+Im Bewertungsbereich gehen Sie jede Anforderung des Frameworks durch, ohne die Audit-Seite zu verlassen.
 
-Durch Klicken auf „Audit ausfüllen" gelangt der Auditor zum detaillierten Arbeitsbereich für jeden Kontrollpunkt:
+* **Navigationsleiste**: **Zurück** und **Weiter** wechseln zwischen den Anforderungen, ein Pfeil springt zur nächsten noch nicht abgeschlossenen Anforderung, und ein Zähler zeigt die Position an (zum Beispiel 1/31).
+* **Linker Bereich**: der Framework-Baum, gegliedert in Kapitel und Anforderungen. Ein Indikator bestätigt die bereits bewerteten Anforderungen.
+* **Mittlerer Bereich**: das Ziel der Anforderung, darunter die zugehörigen Kontrollen mit ihren Tests. Für jeden Test sehen Sie die angehängten Nachweise (Dateien, Links, JSON-Daten) direkt in der Oberfläche.
+* **Rechter Bereich**: der Fortschritt des Audits und drei Tabs: **Bewertung**, **Details zur Prüfung** und **Details zum Framework**.
 
-* Navigation nach Referenzrahmen: Die vollständige Baumstruktur des Frameworks wird links angezeigt (Governance, Verzeichnis, Rechtsgrundlagen usw.) für eine flüssige Navigation.
-* Bewertungstools: Für jede Anforderung wählt der Auditor einen genauen Status:
-  * Konform (Grün)
-  * Teilweise konform (Gelb)
-  * Nicht konform (Rot)
-  * Nicht anwendbar (Grau)
-* Begründung und Nachweis: Ein Texteditor ermöglicht die Eingabe detaillierter Kommentare. Der Auditor kann auch zum Tab „Framework-Details" wechseln, um die theoretischen Anforderungen vor der Validierung einzusehen.
+<figure><img src="../../../.gitbook/assets/image-507.png" alt="Bewertungsbereich mit dem Framework-Baum, den Kontrollen und Tests und dem Bewertungsbereich"><figcaption></figcaption></figure>
 
-#### Zusammenarbeit und Dokumentenmanagement
+Legen Sie nach der Analyse der Nachweise im Tab **Bewertung** einen Status für die Anforderung fest und tragen Sie einen **Kommentar** ein, der Ihre Einschätzung begründet:
 
-Das Dashboard dient auch als kollaborativer Hub für das Audit-Team:
+| Status | Bedeutung |
+| --- | --- |
+| **Konform** | Die vorgelegten Nachweise erfüllen die Anforderung vollständig. |
+| **Teilweise konform** | Es gibt Nachweise, aber sie sind unzureichend oder unvollständig. |
+| **Nicht konform** | Es gibt keine Nachweise, oder die Kontrolle gilt als unwirksam. |
+| **Nicht zutreffend** | Die Anforderung betrifft nicht den Scope des Audits. |
 
-* Auditorenverwaltung: Anzeige der zugewiesenen Teammitglieder und Hinzufügen neuer Auditoren während der Mission bei Bedarf.
-* Anhänge: Zentralisieren Sie alle externen Nachweisdokumente direkt im Tab „Anhänge" des Dashboards, damit sie für alle Prüfer zugänglich sind.
-* Kartografie: Ein spezieller Tab ermöglicht die Visualisierung der Verbindungen zwischen den Anforderungen und den Elementen Ihres Compliance-Inventars.
+Der **Verlauf** der Anforderung bewahrt die aufeinanderfolgenden Bewertungen auf. Jeder Eintrag aktualisiert den Fortschritt des Audits.
 
-***
+### Einen Fehler an einem Test melden
 
-Ergebnis dieses Schritts: Das Audit wird nun ausgeführt. Jede Eingabe aktualisiert dynamisch die globalen Compliance-Indikatoren des Projekts.
+Sind die Nachweise eines Tests nicht zufriedenstellend, melden Sie dies dem Testinhaber, ohne die Bewertung zu blockieren.
 
-### 3. Bewertung der Anforderungen und Überprüfung der Kontrollen
+1. Suchen Sie im mittleren Bereich den Test und klicken Sie auf **Fehler melden**.
+2. Wählen Sie unter **Strenge** den Schweregrad: **Niedrig**, **Mittel** (Standard) oder **Hoch**.
+3. Beschreiben Sie im Kommentarfeld, was an den vorgelegten Nachweisen nicht stimmt. Der Kommentar ist optional, hilft dem Testinhaber aber, den Nachweis zu verbessern.
+4. Klicken Sie auf **Erstellen Sie einen Fehlerbericht**.
 
-Sobald das Audit gestartet ist, besteht die Bewertungsphase darin, jede Anforderung des Referenzrahmens zu überprüfen, um die tatsächliche Compliance auf Basis der bestehenden Kontrollen und Tests zu validieren.
+Die Schaltfläche wird dann durch eine nach Schweregrad eingefärbte Flagge ersetzt. Fahren Sie mit der Maus darüber, um den Kommentar zu lesen oder die Meldung zu löschen. Ein Test kann pro Audit nur eine Meldung tragen.
 
-#### Struktur des Bewertungsbildschirms
+<figure><img src="../../../.gitbook/assets/compliance-audit-findings-1.png" alt="Dialogfenster Fehler melden mit Schweregrad und Kommentar"><figcaption></figcaption></figure>
 
-Die Bewertungsoberfläche ist so konzipiert, dass sie eine vollständige Sicht auf die Nachweise bietet, ohne die Audit-Seite verlassen zu müssen:
+Die Meldungen werden im Tab **Fehlerprüfungen** des Audit-Dashboards gesammelt, mit Referenz, Test, Status und Schweregrad. Filtern Sie nach **Schweregrad des Fehlers** und markieren Sie dann Tests, um:
 
-* Navigationsbereich (links): Zeigt die Baumstruktur des Frameworks (z. B. DSGVO V0.3) an, unterteilt in Kapitel und Anforderungen. Ein visueller Indikator (grüner Haken) bestätigt die bereits behandelten Punkte.
-* Zentraler Arbeitsbereich: Zeigt das Ziel der ausgewählten Anforderung und die vollständige Liste der zugehörigen Kontrollen und Tests.
-* Entscheidungspanel (rechts): Gruppiert die Bewertungstools, die Kommentareingabe und die Änderungshistorie.
+* **Tests ungültig machen**: Die gemeldeten Tests erhalten wieder den Status **Zu erledigen**. Dastra schlägt dann vor, **Eine Testkampagne erneut starten?**, um deren Inhaber zu benachrichtigen, damit sie ihre Nachweise vor dem nächsten Audit aktualisieren;
+* **Start einer Testkampagne**: erstellt direkt eine Kampagne mit den markierten Tests (siehe [Compliance-Überwachung](monitoring.md)).
 
-<figure><img src="../../../.gitbook/assets/Compliance51.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-audit-findings-2.png" alt="Tab Fehlerprüfungen mit den gemeldeten Tests, ihrem Schweregrad und den Schaltflächen Tests ungültig machen und Start einer Testkampagne"><figcaption></figcaption></figure>
 
-#### Nachweisüberprüfung (Kontrollen und Tests)
+## Das Audit abschließen
 
-Der Kern des Dastra-Audits liegt in seiner Fähigkeit, das Audit mit den Überwachungsnachweisen zu verknüpfen:
+Sind alle Anforderungen bewertet, wird die Schaltfläche **Abschluss der Prüfung** verfügbar. Sie öffnet ein Dialogfenster, in dem Sie die **Abschließende Bewertung des Audits** eingeben (Pflichtfeld, höchstens 1.000 Zeichen). Dieser Text gibt eine Gesamteinschätzung zum Reifegrad des geprüften Scopes ab, hebt Beachtenswertes oder Erfolge hervor und kann Übersichtsdokumente enthalten, die aus dem Dateimanager angehängt werden.
 
-* Einsicht in die Kontrollen: Für jede Anforderung sieht der Auditor die aktiven Kontrollen (z. B. Kartografie des Geltungsbereichs).
-* Prüfung der Tests: Unter jeder Kontrolle sind die ausgeführten Tests mit ihren beigefügten Nachweisdokumenten aufgelistet (PDF-Dateien, Screenshots usw.).
-* Direkte Ansicht: Der Auditor kann die Nachweisdateien direkt über die Oberfläche öffnen und einsehen, um deren Konformität zu validieren.
+Klicken Sie auf **Bestätigen**, um das Audit zu schließen.
 
-#### Bewertung und Compliance-Status
+{% hint style="warning" %}
+Sobald das Audit abgeschlossen ist, können die einzelnen Bewertungen nicht mehr bearbeitet werden, es sei denn, Sie öffnen das Audit mit **Das Audit erneut öffnen** wieder.
+{% endhint %}
 
-Nach der Analyse der Nachweise vergibt der Auditor einen endgültigen Status für die Anforderung:
+## Die Ergebnisse nutzen
 
-* Konform: Die Anforderung ist vollständig durch die bereitgestellten Nachweise erfüllt.
-* Teilweise konform: Nachweise existieren, sind aber unzureichend oder unvollständig.
-* Nicht konform: Fehlende Nachweise oder Kontrolle als unwirksam bewertet.
-* Nicht anwendbar: Die Anforderung betrifft nicht den Geltungsbereich des Audits.
+Das abgeschlossene Audit fließt in die Compliance-Verfolgung ein:
 
-#### Echtzeit-Steuerung
+* der Compliance-Prozentsatz pro Framework erscheint im Projektüberblick und unter **Compliance** > **Statistiken**;
+* die **Abschließende Bewertung des Audits** erscheint oben im Audit-Dashboard;
+* der Audit-Export bewahrt einen strukturierten Prüfpfad auf, den Sie in den folgenden Jahren wiederverwenden können;
+* nicht konforme oder teilweise konforme Anforderungen können mit Aufgaben nachverfolgt werden, die über die Aufgabenschaltfläche des Audits erstellt werden, bevor der nächste Überwachungszyklus beginnt.
 
-Während der Bewertung aktualisiert das System dynamisch die Tracking-Indikatoren:
-
-* Fortschritt: Ein Zähler am unteren Seitenrand zeigt die aktuelle Position an (z. B. 1/31).
-* Compliance-Statistiken: Das Diagramm rechts zeigt in Echtzeit den erreichten Compliance-Prozentsatz an (z. B. 3 % konform) im Verhältnis zu den noch zu auditierenden Punkten.
-* Abschluss: Sobald alle Anforderungen behandelt sind, ermöglicht die Schaltfläche „Audit abschließen" das Sperren der Bewertung und den Übergang zur Berichtsgenerierung.
-
-***
-
-Erwartetes Ergebnis: Jede Anforderung ist nun mit einem Expertengutachten und verifizierten Nachweisen dokumentiert, was eine unveränderliche Audit-Spur für Regulierungsbehörden oder die Geschäftsleitung garantiert.
-
-### 4. Abschluss und Schließung des Audits
-
-Sobald alle Anforderungen des Frameworks überprüft wurden, muss die Mission formal abgeschlossen werden. Dieser Schritt sperrt die Bewertungen, um die Integrität der Ergebnisse zu gewährleisten und die endgültigen Berichte zu generieren.
-
-#### Abschlussbeurteilung
-
-Wenn Sie auf die Schaltfläche „Audit abschließen" klicken, erscheint ein Validierungsfenster. Vor dem Abschluss muss der Auditor eine Abschlussbeurteilung des Audits abgeben (Pflichtfeld, bis zu 1000 Zeichen).
-
-Diese Zusammenfassung ermöglicht:
-
-* Eine Gesamtbewertung des Reifegrads des auditierten Bereichs abzugeben.
-* Die wichtigsten Warnpunkte oder festgestellten Erfolge hervorzuheben.
-* Abschließende Zusammenfassungsdokumente über den Datei-Explorer beizufügen (Limit von 50 MB pro Datei).
-
-> Achtung: Sobald das Audit abgeschlossen ist, können die individuellen Bewertungen der einzelnen Anforderungen nicht mehr geändert werden.
-
-***
-
-#### Nutzung der Ergebnisse und Reporting
-
-Das abgeschlossene Audit speist dank der Ausgabefunktionen von Dastra sofort die Governance der Organisation:
-
-**Compliance-Dashboard**
-
-Die Ergebnisse werden in einer Übersicht konsolidiert, die den Compliance-Prozentsatz pro Audit anzeigt (z. B. 75 % für NIST, 57 % für DSGVO). Diese Indikatoren ermöglichen den Vergleich des Sicherheitsniveaus zwischen verschiedenen Einheiten oder Projekten.
-
-<figure><img src="../../../.gitbook/assets/Compliance52.png" alt=""><figcaption></figcaption></figure>
-
-**Export und Archivierung**
-
-Dank einer offenen Architektur können Sie Ihre Ergebnisse effizient kommunizieren:
-
-* Berichtsgenerierung: Exporte sind in zahlreichen Formaten für die interne oder externe Verbreitung verfügbar.
-* Audit-Spur: Aufbewahrung einer strukturierten, messbaren und wiederverwendbaren Historie für die Folgejahre.
-
-**Abweichungsmanagement (Aktionsplan)**
-
-Der letzte Schritt besteht in der Behandlung der festgestellten Nichtkonformitäten:
-
-* Automatische Identifizierung der Abweichungen (rote oder gelbe Punkte bei der Bewertung).
-* Möglichkeit, diese Abweichungen mit neuen Aktionsplänen zu verknüpfen, um die Schwachstellen vor dem nächsten Überwachungszyklus zu korrigieren.
-
-***
-
-Endergebnis: Ihre Organisation verfügt nun über einen zertifizierten Compliance-Nachweis, der bei Prüfungen vorzeigbar ist, und über einen klaren Fahrplan für die kontinuierliche Verbesserung ihrer Governance.
+<figure><img src="../../../.gitbook/assets/image-506.png" alt="Compliance-Prozentsatz pro Audit im Dashboard"><figcaption></figcaption></figure>
