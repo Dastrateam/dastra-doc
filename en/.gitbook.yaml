@@ -245,7 +245,8 @@ redirects:
   rappels-utiles/risk-management/risk-assessment: gdpr/risks/assessment.md
   referentials/other: frameworks/cnil-hr.md
   referentials/other/hr-referential-from-cnil: frameworks/cnil-hr.md
-  security/feuille-de-route: security/roadmap.md
+  security/feuille-de-route: security/general.md
+  security/roadmap: security/general.md
   security/qualite-de-nos-services: security/quality-of-service.md
   useful-reminders/gdpr-key-concepts: gdpr/concepts/README.md
   useful-reminders/gdpr-key-concepts/data-breaches: gdpr/concepts/breaches.md
