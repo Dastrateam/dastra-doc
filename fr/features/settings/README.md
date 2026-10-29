@@ -1,59 +1,104 @@
 ---
-description: Apprenez à configurer Dastra à travers les fonctions avancées.
+description: >-
+  Configurez Dastra avec les fonctions avancées : authentification unique, rôles, clés d'API, workflows, SMTP, webhooks et intégrations.
 ---
 
 # Configuration avancée
 
-Apprenez à mettre en place le SSO :
+Cette section réunit les réglages que le propriétaire de l'organisation et les administrateurs de l'espace de travail utilisent pour adapter Dastra à leur contexte. Pour gérer les référentiels, voir [Référentiels](../mapping/repositories/README.md).
+
+Mettez en place l'authentification unique (SSO) :
 
 {% content-ref url="sso/README.md" %}
-[single-sign-on-sso](sso/README.md)
+[Single Sign On (SSO)](sso/README.md)
 {% endcontent-ref %}
 
-Apprenez à gérer les référentiels :
+Provisionnez les utilisateurs depuis votre annuaire avec SCIM :
 
-{% content-ref url="../mapping/repositories/README.md" %}
-[referentials](../mapping/repositories/README.md)
+{% content-ref url="scim.md" %}
+[SCIM](scim.md)
 {% endcontent-ref %}
 
-Apprenez-en davantage sur les rôles et permissions:
+Envoyez les journaux d'audit vers votre SIEM :
+
+{% content-ref url="siem.md" %}
+[Streaming SIEM](siem.md)
+{% endcontent-ref %}
+
+Limitez l'accès à Dastra à certaines adresses IP :
+
+{% content-ref url="ip-filtering.md" %}
+[Filtrage IP](ip-filtering.md)
+{% endcontent-ref %}
+
+Gérez les rôles et permissions :
 
 {% content-ref url="roles.md" %}
-[roles-et-permissions.md](roles.md)
+[Rôles et permissions](roles.md)
 {% endcontent-ref %}
 
-Si besoin, consultez la section API :
+Créez des clés d'API et connectez le serveur MCP :
+
+{% content-ref url="api-keys.md" %}
+[Gestion des clés d'API](api-keys.md)
+{% endcontent-ref %}
+
+Consultez la section API :
 
 {% content-ref url="../../api/authentication.md" %}
-[authentification.md](../../api/authentication.md)
+[Authentification](../../api/authentication.md)
 {% endcontent-ref %}
 
-Apprenez à gérer les notifications dans Dastra :
+Gérez les notifications :
 
 {% content-ref url="notifications.md" %}
-[notifications.md](notifications.md)
+[Notifications](notifications.md)
 {% endcontent-ref %}
 
-Apprenez à mettre en place des workflows dans Dastra :
+Personnalisez les étapes de processus :
+
+{% content-ref url="workflow-stages.md" %}
+[Etapes de processus](workflow-stages.md)
+{% endcontent-ref %}
+
+Automatisez vos processus avec des règles de workflow :
 
 {% content-ref url="workflow-rules.md" %}
-[workflow-rules.md](workflow-rules.md)
+[Règles de workflows](workflow-rules.md)
 {% endcontent-ref %}
 
-Apprenez à mettre en place des intégrations :
+Collectez des informations par e-mail :
+
+{% content-ref url="mailboxes.md" %}
+[Adresses emails de collecte](mailboxes.md)
+{% endcontent-ref %}
+
+Connectez un stockage cloud :
 
 {% content-ref url="cloud-storage.md" %}
-[integrations-onedrive-google-drive.md](cloud-storage.md)
+[Intégrations OneDrive & SharePoint / Google Drive](cloud-storage.md)
 {% endcontent-ref %}
 
-Apprenez à configurer le SMTP :
-
-{% content-ref url="smtp/README.md" %}
-[configuration-du-smtp](smtp/README.md)
-{% endcontent-ref %}
-
-Apprenez à synchroniser vos données et utiliser les webhooks :
+Synchronisez vos données avec des webhooks :
 
 {% content-ref url="webhooks.md" %}
-[webhooks.md](webhooks.md)
+[Webhooks](webhooks.md)
+{% endcontent-ref %}
+
+Configurez le SMTP :
+
+{% content-ref url="smtp/README.md" %}
+[Configuration du SMTP](smtp/README.md)
+{% endcontent-ref %}
+
+Personnalisez les modèles de messages :
+
+{% content-ref url="message-templates.md" %}
+[Modèles de messages](message-templates.md)
+{% endcontent-ref %}
+
+Autorisez les domaines e-mail de votre organisation :
+
+{% content-ref url="email-domains.md" %}
+[Domaines emails](email-domains.md)
 {% endcontent-ref %}

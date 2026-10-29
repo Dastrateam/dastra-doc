@@ -1,65 +1,87 @@
 ---
-description: Configuration of an SSO Connection Using the OpenId Protocol
+description: >-
+  Configuration of an SSO connection using the OpenId protocol, with a secret
+  key or a JWT private key.
 ---
 
 # OpenId
 
-**Operating Principle**
+## Operating principle
 
-The specifications of OpenId can be found [here](https://openid.net/connect/).
+The OpenId specifications can be found [here](https://openid.net/connect/).
 
+<figure><img src="../../../.gitbook/assets/openid1.png" alt="OpenID Connect authorization code flow between the relying party, the OpenID provider, the token endpoint and the UserInfo endpoint"><figcaption></figcaption></figure>
 
+Setting up SSO with OpenId takes three steps:
 
-<figure><img src="../../../.gitbook/assets/openid1.png" alt=""><figcaption></figcaption></figure>
+* configure the authentication provider: Active Directory, Google Workspace, etc.;
+* configure the service provider: Dastra;
+* test the authentication.
 
-The configuration of SSO with OpenID is done in three steps:
+## 1. Configure the authentication provider
 
-1. Configuration of the Authentication Provider: Active Directory, Google Workspace, etc.
-2. Configuration of the Service Provider: Dastra
-3. Testing of the authentication
+Set up an OpenId configuration in your authentication provider.
 
+For Active Directory: [https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc](https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc)
 
+To link the local accounts (those hosted in Dastra) to the accounts of your provider, Dastra needs a property that contains the user's email. The **User's email address claim name mapping (Used if user does not exist locally)** field in step 2 is prefilled with `email`. If this claim is missing, Dastra also looks for the property named [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress).
 
-1. **Configuration of the Authentication Provider You need to set up an OpenId configuration in your authentication provider.**
+Here is the information you need to fill in the service provider:
 
-For Active Directory: [https://docs.microsoft.com/fr-fr/azure/active-directory/develop/v2-protocols-oidc](https://docs.microsoft.com/fr-fr/azure/active-directory/develop/v2-protocols-oidc)
+* **Authority/Domain**, for example `https://account.oauth.sso.com`;
+* **ClientId**;
+* **Secret key**, or the elements of the JWT private key (see the client authentication method in step 2);
+* **Response type**, `id_token` by default;
+* **Scope**, `openid profile email` by default.
 
-To link the local accounts (those hosted in Dastra), you need to provide a property containing the user's email (by default, Dastra looks for the property named http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress).
+To configure your authentication provider, you need the **Redirect Url** shown in the Dastra form, in the format `https://account.dastra.eu/signin-{connection identifier}`. This URL is specific to each connection.
 
-Here are the details you need to configure the service provider:
+## 2. Configure the service provider
 
-* **Authority/domain (e.g., https://account.oauth.sso.com)**
-* **Client ID: ClientId**
-* **Secret key**
-* **Response Type, by default id\_token**
-* **Scope: by default "openid profile email"**
+In Dastra, open the [SSO administration page](https://app.dastra.eu/general-settings/sso) (**Organisation Configuration** > **Single sign on**, available to organization owners only) and click **Add a SSO login**. Choose the **OpenID** protocol.
 
-To configure your authentication provider, you will need the following information:
+<figure><img src="../../../.gitbook/assets/settings-sso-liste-logins.png" alt="The Single sign on page with the list of SSO logins and the Add a SSO login button"><figcaption></figcaption></figure>
 
-* **The provided Redirect URI in this format: https://account.dastra.eu/signin-{schemeId}**
+Fill in the form fields with the information from your authentication provider:
 
-2. **Configuration of the Service Provider**
+<figure><img src="../../../.gitbook/assets/settings-sso-openid-config-modal.png" alt="The OpenID SSO login form in Dastra"><figcaption></figcaption></figure>
 
-In dastra.eu, go to the [SSO administration page](https://app.dastra.eu/general-settings/sso) and click on "add an SSO login".
+The form also shows the values to declare in your authentication provider:
 
-Fill in the form fields using the information from the entity configuration:
+* **Redirect Url**;
+* **Back-channel logout url**, optional;
+* **Public JSON key URI**, with the JWT private key only. Save the form once to make this endpoint work.
 
+### Client authentication method: secret key or JWT private key
 
+Choose how Dastra authenticates with your identity provider:
 
-<figure><img src="../../../.gitbook/assets/openid2.png" alt=""><figcaption></figcaption></figure>
+* **Secret key**: Dastra and your provider both store the same client secret. Enter it in the **Secret key** field.
+* **JWT private key**: Dastra signs its authentication with the private key you give it, and your provider checks the signature with the public key. No shared secret is needed, which lowers the risk of a leak. Check that your identity provider supports this method.
 
+<figure><img src="../../../.gitbook/assets/settings-sso-openid-jwt-private-key.png" alt="The OpenID form with the JWT private key option selected"><figcaption></figcaption></figure>
 
+With **JWT private key**, the **Response type** switches to `code` and the form asks for:
+
+* **Private key in PEM text (RAW)**: once saved, the key is no longer displayed. Click **Replace private key** to replace it;
+* **Certificate content (RAW format), mandatory for Entra Id**;
+* **Key ID (kid)**, optional: enter the key ID assigned by your provider when you uploaded the public key, or leave it empty so that Dastra uses the JWK thumbprint (RFC 7638) of the private key.
+
+Then declare the **Public JSON key URI** in your provider, so that it can retrieve the public key of the connection.
+
+The **Issuer** field is optional. When it is filled in, Dastra checks that the token received was issued by this issuer, for example `https://login.microsoftonline.com/{tenantid}/v2.0`.
 
 {% hint style="danger" %}
-It is possible to force all users of the subscription account to use a specific SSO (by checking the box "force users to use this SSO"). Be cautious before activating this option, as if the SSO malfunctions, you will no longer be able to access your account as an administrator. It is preferable to manage the SSO on a per-user basis.
+You can force all users of the organization to use a particular SSO (**Assign to all users** option). Be careful: if the SSO malfunctions, you can no longer access your account as an administrator. Keep a local fallback account, or exempt users with the **Specific users exempted from SSO (e.g. security administrators)** field (see [Single Sign On (SSO)](README.md)). Managing SSO per user is preferable.
 {% endhint %}
 
 {% hint style="warning" %}
-Special Cases of External Users Only accounts that are internal to a subscription will be subject to the SSO. Accounts of external users (who have an additional subscription) will not be subject to the SSO.
+**Special case of external users**\
+Only accounts internal to a subscription are subject to SSO. Accounts of external users (who have an additional subscription) are not subject to SSO.
 {% endhint %}
 
-3. **Testing the SSO with OpenId**
+## 3. Test the SSO with OpenId
 
-Once the configuration is complete, you can test the authentication by clicking on the test button at the bottom right. If you encounter any problems during the SSO configuration, do not hesitate to approach support by going to the support ticket [management page](https://app.dastra.eu/general-settings/support).<br>
+When the configuration is complete, test the authentication by clicking **Test** on the right of the connection in the list. If you run into a problem, open a ticket from the [support page](https://app.dastra.eu/general-settings/support).
 
-<figure><img src="../../../.gitbook/assets/openid3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings-sso-openid-card-status.png" alt="An SSO connection in the list, with its status and the Test button"><figcaption></figcaption></figure>

@@ -1,5 +1,8 @@
 ---
-description: Intégrez des processus complexe à l'aide des Règles de workflow personnalisées
+description: >-
+  Automatisez vos processus avec les règles de workflow : déclencheur,
+  conditions et actions (notifications, tâches, mises à jour de champs,
+  requêtes HTTP, agents IA).
 ---
 
 # Règles de workflows
@@ -12,91 +15,116 @@ Les [étapes de processus](workflow-stages.md) définissent les statuts que trav
 
 ## Le principe de fonctionnement
 
-Les Règles de workflow dans Dastra sont un ensemble d'actions (notifications par e-mail, planification d'un audit, tâches et mises à jour de champs) qui sont exécutées lorsque certaines conditions sont réunies. Ces règles automatisent le processus d'envoi des notifications par e-mail, d'attribution des tâches et de mise à jour de certains champs d'un enregistrement lorsqu'une règle est déclenchée.
+Une règle de workflow est un ensemble d'actions (notifications par e-mail, planification d'une réponse à un questionnaire, tâches, mises à jour de champs…) exécutées lorsque certaines conditions sont réunies. Elle automatise l'envoi de notifications, l'attribution de tâches et la mise à jour de certains champs d'un enregistrement.
 
-![Schéma du principe de base](../../.gitbook/assets/settings-workflow-rule-anatomy.png)
+Chaque règle suit une logique en trois temps : un déclencheur, des conditions et des actions.
+
+<figure><img src="../../.gitbook/assets/settings-workflow-rule-anatomy.png" alt="Schéma du principe d'une règle : un déclencheur, des conditions, des actions"><figcaption><p>Déclencheur, conditions et actions</p></figcaption></figure>
+
+Une règle porte sur un type d'objet. Les types proposés dépendent des modules activés sur votre abonnement :
+
+| Type d'objet                    |
+| ------------------------------- |
+| Traitement de données           |
+| Demande                         |
+| Violation de données            |
+| Tâche                           |
+| Actif                           |
+| Acteur                          |
+| Données                         |
+| Mesure de sécurité              |
+| Catégorie de personne concernée |
+| Système d'IA                    |
+| Contrat                         |
+| Soumission de questionnaire     |
 
 {% hint style="info" %}
 Le nombre de règles de workflow disponibles dépend de votre plan, de **25 à 100 règles**. Une capacité supplémentaire peut être achetée si nécessaire. Contactez votre account manager pour plus de détails.
 {% endhint %}
 
-## Comment créer une règle de workflow dans Dastra ?
+## Créer une règle de workflow
 
-* Allez dans [la page de configuration des règles de workflows votre espace de travail](https://app.dastra.eu/workspace/0/settings/workflow-rules)
-* Cliquez sur "Nouvelle règle de workflow"
-* Choisissez un nom et le type d'entité concernée (Traitement, Violations...)
-* Vous arrivez dans le designer de règles
+1. Dans le menu latéral, ouvrez **Automatisations** puis **Règles de workflow**.
+2. Cliquez sur **Créer une règle de workflow**.
+3. Choisissez **De zéro** pour partir d'un canevas vierge, ou **A partir d'un modèle** (voir [Bibliothèque de modèles de règles](#bibliotheque-de-modeles-de-regles)).
+4. Saisissez le **Nom de la règle** et le **Type d'élément** concerné (traitement, violation…), puis validez.
+
+Vous arrivez dans le designer de règles. En haut de l'écran, l'interrupteur **Statut** active ou désactive la règle. Les boutons **Historique** et **Exécuter** sont décrits plus bas. Le menu du bouton **Enregistrer** propose aussi **Enregistrer et quitter** et **Enregistrer le modèle**.
 
 ### Définition du déclencheur
 
-Vous pouvez déclencher une règle de workflow sur deux évènements :
+Le déclencheur se choisit entre deux valeurs :
 
-* Lors d'**une action sur une entité concernée** : création, modification, changement d'étape ou mise à la corbeille (seulement pour les objets pour lesquels la corbeille existe)
+* **Action** : la règle se déclenche lors d'un événement sur l'objet. Les événements proposés sont **Création**, **Création ou modification**, **Modification**, **Mise à la corbeille** et **Changement d'étape**. La mise à la corbeille n'est pas proposée pour les actifs, les acteurs, les données, les mesures de sécurité et les catégories de personnes concernées.
 
-<figure><img src="../../.gitbook/assets/settings-workflow-rules-declencheur-action.png" alt=""><figcaption><p>Création d'un déclencheur par action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-workflow-rules-declencheur-action.png" alt="Déclencheur de type Action avec la liste des événements"><figcaption><p>Création d'un déclencheur par action</p></figcaption></figure>
 
-*   **Contrôle de date récurrent** — la règle est évaluée chaque jour à une heure configurée et se déclenche en fonction d'un champ date de l'objet. Configurez les paramètres suivants :
+*   **Contrôle récurrent de date** : la règle est évaluée chaque jour à une heure configurée et se déclenche en fonction d'un champ date de l'objet. Configurez les paramètres suivants :
 
-    * **Exécuter tous les jours à** — l'heure du contrôle quotidien (avec gestion du fuseau horaire, ex. 00:00 Europe/Paris).
-    * **Champ date à vérifier** — le champ date à évaluer (ex. date de clôture, date de création, date de révision…).
-    * **Condition sur la date** — choisissez parmi :
-      * **A été dépassée** — se déclenche le jour où la date est atteinte.
-      * **Modificateurs de date** — ajoutez un décalage par rapport à la date :
-        * **Surviendra dans** — se déclenche N heures / jours / mois / ans _avant_ la date (ex. 30 jours avant l'expiration d'un contrat).
-        * **A été dépassée depuis** — se déclenche N heures / jours / mois / ans _après_ la date (ex. 1 jour après la clôture).
+    * **Tous les jours à** : l'heure du contrôle quotidien, affichée avec votre fuseau horaire (ex. 00:00 Europe/Paris).
+    * **Vérifier si le champ** : le champ date à évaluer (ex. date de clôture, date de création, date de révision…).
+    * Le moment du déclenchement, à choisir parmi :
+      * **A été dépassé** : la règle se déclenche le jour où la date est atteinte.
+      * **Modificateurs de dates**, qui ajoutent un décalage par rapport à la date :
+        * **Sera dépassé dans** : la règle se déclenche N heures, jours, mois ou années _avant_ la date (ex. 30 jours avant l'expiration d'un contrat).
+        * **A été dépassé depuis** : la règle se déclenche N heures, jours, mois ou années _après_ la date (ex. 1 jour après la clôture).
 
-    Le bouton **"Voir les éléments comme si c'était aujourd'hui"** permet de prévisualiser les objets qui correspondraient actuellement à la règle, utile pour tester avant activation.
+    Le bouton **Voir les éléments concernés aujourd'hui** affiche un aperçu des objets qui correspondraient actuellement à la règle, ce qui est utile pour tester avant activation.
 
-<figure><img src="../../.gitbook/assets/settings-workflow-rule-recurring-trigger.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-workflow-rule-recurring-trigger.png" alt="Déclencheur de type Contrôle récurrent de date"><figcaption><p>Création d'un déclencheur par contrôle récurrent de date</p></figcaption></figure>
 
 Un seul déclencheur (ou trigger) peut être défini par règle de workflow.
 
-A noter que vous pouvez choisir si le workflow peut s'exécuter plus d'une fois par entité. **Il est fortement recommandé** **d'exécuter les workflows une seule fois par entité**, car l'exécution d'un workflow plusieurs fois peut conduire assez facilement à des problèmes de répétition de création de tâches ou de doublons de notifications.
+Pour les événements **Création ou modification**, **Modification**, **Mise à la corbeille** et **Changement d'étape**, l'option **Exécuter le workflow une seule fois par élément (recommandé)** est activée par défaut. Il est fortement recommandé de la conserver, car l'exécution d'un workflow plusieurs fois sur le même élément peut conduire à des créations de tâches répétées ou à des doublons de notifications.
 
 ### Définition de conditions
 
-Vous pouvez configurer une ou plusieurs conditions d'exécution par règle.
+Une règle comporte jusqu'à cinq conditions d'exécution. Chaque condition porte ses propres actions. Les boutons **+** du designer ajoutent une condition.
 
-Les conditions peuvent s'appliquer à l'ensemble des champs de l'objet et peuvent être assemblées au sein de groupes pour vous permettre de mettre en place l'ensemble des scénarios possibles (avec la possibilité de changer l'association "Et" ou "Ou").
+Pour chaque condition, choisissez :
 
-<figure><img src="../../.gitbook/assets/settings-workflow-rules-declencheur-date.png" alt=""><figcaption><p>Ici l'action sera lancée si l'étape est "validation de l'identité" ou "nouveau" ET que la date de validation de l'email est remplie</p></figcaption></figure>
+* **S'applique à tous les éléments** : la règle s'exécute sur tous les éléments qui correspondent au déclencheur, sans filtre supplémentaire.
+* **Spécifier des conditions** : filtrez selon la valeur d'un ou plusieurs champs de l'objet (par exemple « Etape est égal à Nouveau »).
+
+Les conditions peuvent s'appliquer à l'ensemble des champs de l'objet et être assemblées au sein de groupes, avec la possibilité de changer l'association **Et** ou **Ou**. Utilisez **Ajouter une condition** pour ajouter une ligne dans un groupe, et **Ajouter un groupe de conditions** pour créer un bloc logique distinct.
+
+<figure><img src="../../.gitbook/assets/settings-workflow-rules-declencheur-date.png" alt="Condition d'exécution avec une condition sur la date de validation de l'e-mail et un groupe sur l'étape"><figcaption><p>Ici l'action sera lancée si l'étape est « Vérification de l'identité » ou « Nouveau » ET que la date de validation de l'e-mail est remplie</p></figcaption></figure>
 
 ### Définition des actions
 
-Pour ajouter une nouvelle action, cliquez sur le bouton "**Ajouter un action**" et choisissez le modèle que vous souhaitez mettre en place
+Pour ajouter une action, cliquez sur le bouton **+** d'une condition, puis choisissez l'action dans la fenêtre **Choisissez une action à exécuter**. Une condition peut comporter jusqu'à **20 actions**. Au-delà, le bouton d'ajout se désactive et un message indique que le maximum est atteint.
 
-Voici les **différents types d'actions** que vous pouvez déclencher :
+<figure><img src="../../.gitbook/assets/workflow-rule-20-actions.png" alt="Condition de règle de workflow comportant 20 actions"><figcaption><p>Une condition peut comporter jusqu'à 20 actions</p></figcaption></figure>
 
-* Envoi d'une notification par email
-* Mise à jour d'un champ de l'entité concernée
-* Ajout d'un tag à l'entité
-* Planification automatique d'une réponse à un questionnaire
-* Définition de la personne assignée
-* Création automatique d'une tâche
+Voici les actions que vous pouvez déclencher :
 
-* Envoi d'une notification dans un canal Microsoft Teams (si l'intégration Microsoft Teams est installée)
-* Envoi d'une requête HTTP vers une plateforme externe (si l'intégration HTTP / Custom API est activée)
+| Action                                       | Rôle                                                                                              | Types d'objets exclus                                                                              |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Modifier un champ**                        | Mettre à jour un champ de l'objet                                                                 |                                                                                                    |
+| **Définir utilisateur assigné**              | Assigner l'objet à un utilisateur, à un membre d'une équipe ou à une variable de l'objet          | Acteur, données, mesure de sécurité, catégorie de personne concernée, soumission de questionnaire |
+| **Ajouter une tâche**                        | Créer une tâche liée à l'objet                                                                    |                                                                                                    |
+| **Envoyer une notification**                 | Envoyer une notification par e-mail                                                               |                                                                                                    |
+| **Ajouter tag(s)**                           | Ajouter un ou plusieurs tags à l'objet                                                            | Données, soumission de questionnaire                                                               |
+| **Planifier une réponse à un questionnaire** | Planifier automatiquement une réponse à un questionnaire                                          | Soumission de questionnaire                                                                        |
+| **Exécuter un agent IA**                     | Lancer un agent IA (voir [Exécuter un agent IA](#executer-un-agent-ia))                           |                                                                                                    |
+| **Envoyer une notification Teams**           | Publier une carte dans un canal Microsoft Teams, si l'intégration Microsoft Teams est installée   |                                                                                                    |
+| **Envoyer une requête HTTP**                 | Appeler l'API d'une plateforme externe, si l'intégration HTTP / Custom API est activée            |                                                                                                    |
 
+Pour les demandes d'exercice de droits, des actions supplémentaires sont disponibles :
 
-Pour les demandes d'exercices de droit, des actions supplémentaires sont disponibles :
+* **Envoyer un message de demande** : envoyer un message au demandeur.
+* **Clôturer la demande**
+* **Anonymiser la demande** (uniquement possible si la demande est clôturée)
 
-* Clôturer la demande
-* Mise à la corbeille de la demande
-* Anonymisation de la demande (uniquement possible si la demande est clôturée)
-
-Il est possible de chaîner les conditions. Vous pouvez ajouter plusieurs actions par condition en cliquant de nouveau sur "ajouter une action", jusqu'à un maximum de **20 actions par règle**. Au-delà, le bouton d'ajout se désactive et un message indique que le maximum est atteint.
-
-<figure><img src="../../.gitbook/assets/workflow-rule-20-actions.png" alt="Règle de workflow comportant jusqu&#x27;à 20 actions"><figcaption><p>Une règle peut comporter jusqu'à 20 actions</p></figcaption></figure>
+L'action **Déplacer dans la corbeille** est disponible pour les demandes et pour les traitements.
 
 {% hint style="info" %}
-Exemple : envoyer une notification à plusieurs personnes lors de la création d'une tâche. Pour cela, sélectionner le déclencheur "taches" et selon les conditions de la tache (par exemple, l'ajout d'un tag), ajouter une action "notification"
+Exemple : envoyer une notification à plusieurs personnes lors de la création d'une tâche. Pour cela, choisissez le type d'objet **Tâche** et, selon les conditions de la tâche (par exemple l'ajout d'un tag), ajoutez une action **Envoyer une notification**.
 {% endhint %}
-
-
 
 ### Unité organisationnelle d'une tâche créée
 
-L'action **« Ajouter une tâche »** comporte un champ **Unité organisationnelle** qui détermine l'unité de rattachement de la tâche créée :
+L'action **Ajouter une tâche** comporte un champ **Unité organisationnelle** qui détermine l'unité de rattachement de la tâche créée :
 
 * **Par défaut (hérité de l'objet)** : la tâche est rattachée à l'unité organisationnelle de l'objet déclencheur, s'il en a une. C'est la valeur appliquée lorsque le champ reste vide.
 * **Une unité précise** : sélectionnez une unité dans l'arborescence ; la tâche est rattachée à cette unité, quelle que soit l'unité de l'objet déclencheur.
@@ -107,31 +135,29 @@ Pour les règles portant sur les objets des référentiels (**Actif**, **Donnée
 
 ### Personne assignée et propriétaire d'une tâche créée
 
-L'action **« Ajouter une tâche »** comporte les champs **Assignée à** et **Propriétaire**. Chacun accepte une variable de l'objet déclencheur (son créateur, son propriétaire, son responsable, etc.) ou un utilisateur nommé. Si la variable n'est pas renseignée sur l'objet, la tâche est tout de même créée.
+L'action **Ajouter une tâche** comporte les champs **Assignée à** et **Propriétaire**. Chacun accepte une variable de l'objet déclencheur (son créateur, son propriétaire, son responsable, etc.) ou un utilisateur nommé. Si la variable n'est pas renseignée sur l'objet, la tâche est tout de même créée.
 
 La variable **Responsable de l'UO** confie la tâche au responsable de l'unité organisationnelle de l'objet déclencheur. Si cette unité n'a pas de responsable, celui de l'unité parente la plus proche est retenu. Si l'objet n'a pas d'unité organisationnelle, l'action utilise l'**Unité organisationnelle par défaut** sélectionnée dans l'action, avec la même règle. Si aucun responsable n'est trouvé, la tâche est créée sans assigné, sans bloquer la règle.
 
 ### Lier un modèle de message à une action
 
-Pour les règles liées aux **demandes d'exercice de droits**, l'action **« Envoyer un message au demandeur »** peut s'appuyer sur un **modèle de message** existant plutôt que sur un contenu saisi manuellement.
+Pour les règles liées aux **demandes d'exercice de droits**, l'action **Envoyer un message de demande** peut s'appuyer sur un **modèle de message** existant plutôt que sur un contenu saisi manuellement.
 
-<figure><img src="../../.gitbook/assets/workflow-action-select-template.png" alt="Action Envoyer un message au demandeur avec le bouton Sélectionner un modèle"><figcaption><p>L'action « Envoyer un message au demandeur » propose « Sélectionner un modèle »</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-action-select-template.png" alt="Action Envoyer un message de demande avec le bouton Sélectionner un modèle"><figcaption><p>L'action Envoyer un message de demande propose Sélectionner un modèle</p></figcaption></figure>
 
-Dans l'action, cliquez sur **« Sélectionner un modèle »**, puis choisissez un modèle de type **« Message de demande »** de votre espace de travail. Au déclenchement de la règle, le contenu du modèle est récupéré et les variables personnalisées (par exemple `{{ givenName }}`, `{{ refId }}`) sont substituées automatiquement.
+Dans l'action, cliquez sur **Sélectionner un modèle**, puis choisissez un modèle de type **Message de demande d'ex. de droits** de votre espace de travail. Au déclenchement de la règle, le contenu du modèle est récupéré et les variables personnalisées (par exemple `{{ givenName }}`, `{{ refId }}`) sont substituées automatiquement.
 
-<figure><img src="../../.gitbook/assets/workflow-select-template-dialog.png" alt="Fenêtre de sélection d&#x27;un modèle de message"><figcaption><p>Choix d'un modèle « Message de demande » de l'espace de travail</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-select-template-dialog.png" alt="Fenêtre de sélection d'un modèle de message"><figcaption><p>Choix d'un modèle de type message de demande de l'espace de travail</p></figcaption></figure>
 
 * Le message envoyé utilise toujours la version à jour du modèle, même si celui-ci est modifié après la création de la règle.
 * Si le modèle lié est supprimé, l'exécution échoue explicitement : le message n'est pas envoyé silencieusement.
-* Les règles utilisant un contenu manuel ne sont pas affectées. Vous pouvez repasser d'un modèle lié à un contenu manuel à tout moment en cliquant sur **« Retirer »**.
+* Les règles utilisant un contenu manuel ne sont pas affectées. Vous pouvez repasser d'un modèle lié à un contenu manuel à tout moment en cliquant sur **Retirer**.
 
 <figure><img src="../../.gitbook/assets/workflow-action-linked-template.png" alt="Action avec un modèle de message lié et les boutons Changer de modèle et Retirer"><figcaption><p>Une fois lié, le modèle peut être changé ou retiré ; les variables sont substituées à l'exécution</p></figcaption></figure>
 
-
-
 ### Envoyer une notification Teams
 
-Lorsque l'[intégration Microsoft Teams](../integrations/microsoft-teams.md) est installée et activée sur l'espace de travail, l'action **« Envoyer une notification Teams »** publie une carte dans le canal Teams relié au webhook. Il n'y a pas de destinataire à choisir.
+Lorsque l'[intégration Microsoft Teams](../integrations/microsoft-teams.md) est installée et activée sur l'espace de travail, l'action **Envoyer une notification Teams** publie une carte dans le canal Teams relié au webhook. Il n'y a pas de destinataire à choisir.
 
 Renseignez les champs suivants :
 
@@ -147,9 +173,9 @@ L'action n'apparaît dans la liste des actions que si l'intégration Microsoft T
 
 ### Envoyer une requête HTTP
 
-L'action **« Envoyer une requête HTTP »** appelle l'API d'une plateforme externe au déclenchement de la règle : outil de ticketing, ITSM, service interne, hub d'automatisation. Elle sert lorsqu'aucun connecteur natif n'existe pour votre outil.
+L'action **Envoyer une requête HTTP** appelle l'API d'une plateforme externe au déclenchement de la règle : outil de ticketing, ITSM, service interne, hub d'automatisation. Elle sert lorsqu'aucun connecteur natif n'existe pour votre outil.
 
-**Prérequis** : l'intégration [HTTP / Custom API](../integrations/custom-http.md) est activée dans **Paramètres > Intégrations**, avec une connexion pour la plateforme cible (clé d'API, identifiants Basic ou OAuth 2.0). Ajouter ou modifier cette action demande la permission **Intégrations** sur l'espace de travail.
+**Prérequis** : l'intégration [HTTP / Custom API](../integrations/custom-http.md) est activée dans **Réglages espace de travail** > **Intégrations**, avec une connexion pour la plateforme cible (clé d'API, identifiants Basic ou OAuth 2.0). Ajouter ou modifier cette action demande la permission **Intégrations** sur l'espace de travail.
 
 Renseignez les champs suivants :
 
@@ -163,30 +189,35 @@ Tapez `{{` dans l'URL, un en-tête ou le corps pour insérer les champs de l'obj
 * **Tester la requête** rend la requête avec un objet réel de l'espace de travail. **Aperçu** n'envoie rien ; **Envoyer la requête** fait l'appel réel et affiche la réponse de la cible.
 * **Générer avec l'IA** rédige la requête à partir d'une consigne et du payload attendu par la cible. Seuls les noms et types des champs sont transmis à l'assistant, jamais vos données ni vos identifiants.
 
-<figure><img src="../../.gitbook/assets/custom-http-action.png" alt="Action Envoyer une requête HTTP dans une règle de workflow"><figcaption><p>L'action « Envoyer une requête HTTP »</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-http-action.png" alt="Action Envoyer une requête HTTP dans une règle de workflow"><figcaption><p>L'action Envoyer une requête HTTP</p></figcaption></figure>
 
 {% hint style="warning" %}
 Désactiver ou désinstaller l'intégration HTTP / Custom API, ou supprimer une connexion, désactive automatiquement les règles qui en dépendent. Réactivez-les une fois la dépendance rétablie. Chaque envoi est tracé dans les journaux de l'intégration.
 {% endhint %}
 
+### Exécuter un agent IA
+
+L'action **Exécuter un agent IA** lance un [agent IA](../general/ai-assistant/agents/README.md) de votre espace de travail lorsque la règle se déclenche. Elle est réservée aux plans qui incluent les agents IA personnalisés et aux utilisateurs autorisés à les gérer.
+
+Renseignez les champs suivants :
+
+* **Agent IA à exécuter** : seuls les agents publiés en mode Agent sont proposés. Si la liste est vide, créez d'abord un agent dans le module Agents IA.
+* **Message d'instruction** : message facultatif transmis à l'agent à chaque exécution. Il accepte les variables personnalisées de l'objet déclencheur (tapez `{{`).
+* **Champs d'entrée de l'agent** : les champs définis par l'agent apparaissent après sa sélection. Renseignez au moins ceux qui sont obligatoires.
+
 ### Variables personnalisées
 
-\
-**Exemple**
+Dans les notifications personnalisées par exemple, il est souvent utile d'injecter des informations provenant de l'objet entré dans le workflow : le nom du traitement ou sa date de publication sont autant de variables que vous pouvez insérer dans le texte grâce au système d'injection de variables. Dastra utilise un moteur de templating basé sur [LiquidJS](https://shopify.github.io/liquid/basics/introduction/).
 
-Pour afficher une variable de type chaine de caractère (la référence d'un traitement)
+Pour accéder aux variables de l'objet du déclencheur, tapez `{{` : la liste des variables disponibles s'affiche. Les champs personnalisés de l'espace de travail sont disponibles sous la forme `customFields.<clé>`.
 
-Très souvent, dans les notifications personnalisées par exemple, il sera intéressant d'y injecter des informations provenant de l'objet qui est entré dans le workflow : le nom du traitement, sa date de publication... sont autant de variables que vous pourrez facilement injecter dans le texte de vos notifications grâce au système d'injection de variables.
-
-En interne, Dastra utilise un moteur de templating basé sur [LiquidJS](https://shopify.github.io/liquid/basics/introduction/)
-
-**Pour accéder aux différentes variables de l'objet du trigger, tapez "\{{",** cela affichera une liste de propositions de variables que vous pouvez injecter dans le contenu
+Pour afficher une variable de type chaîne de caractères (la référence d'un traitement) :
 
 ```
 {{ref}}
 ```
 
-Pour afficher toutes les valeurs d'une variable de type tableau (les tags)
+Pour afficher toutes les valeurs d'une variable de type tableau (les tags) :
 
 ```
 {% for tag in tags %}
@@ -196,7 +227,7 @@ Pour afficher toutes les valeurs d'une variable de type tableau (les tags)
 {% endfor %}
 ```
 
-Pour afficher uniquement la 1ere valeur d'une variable de type tableau : (1er approbateur d'un traitement)
+Pour afficher uniquement la première valeur d'une variable de type tableau (le premier approbateur d'un traitement) :
 
 ```
 {% assign accountable = accountables | first %}
@@ -208,36 +239,57 @@ Pour afficher uniquement la 1ere valeur d'une variable de type tableau : (1er ap
 
 **Exemple de workflow basé sur une action**
 
-Cet exemple permet de voir l'utilisation d'un workflow par action permettant de notifier les approbateurs d'un traitement lors d'un changement d'étape si l'étape courante est différente de "Nouveau"
+Cet exemple notifie les approbateurs d'un traitement lors d'un changement d'étape, si l'étape courante est différente de « Nouveau ».
 
-<figure><img src="../../.gitbook/assets/workflow-statechange01-fr-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-statechange01-fr-1.png" alt="Règle déclenchée par un changement d'étape, avec une condition sur l'étape et une notification aux approbateurs"><figcaption></figcaption></figure>
 
-**Exemple de workflow "complexe" basé sur une date :**
+**Exemple de workflow basé sur une date**
 
-Cet exemple permet de voir l'utilisation d'un workflow par date permettant de nettoyer automatiquement les demandes de droits dont l'identité de l'utilisateur n'aurait pas été validé un mois après la création.
+Cet exemple nettoie automatiquement les demandes d'exercice de droits dont l'identité du demandeur n'a pas été validée un mois après la création.
 
-<figure><img src="../../.gitbook/assets/workflow-anon01-fr.png" alt=""><figcaption><p><strong>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-anon01-fr.png" alt="Règle quotidienne qui clôture et anonymise les demandes dont l'identité n'est pas validée un mois après la création"><figcaption><p>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</p></figcaption></figure>
 
-### Bibliothèque de modèles de règles
+## Historique d'exécution
+
+Chaque règle conserve l'historique de ses exécutions. Cliquez sur **Historique** dans le designer pour afficher, pour chaque objet traité :
+
+* **Date dernière exécution**
+* **Statut**
+* **Nombre d'exécut.**
+* Le résultat : **Réussite**, **Dern. exécution en erreur** ou **En erreur**, avec le nombre d'erreurs
+
+Le menu de chaque ligne propose :
+
+* **Voir l'objet lié** : ouvrir l'objet qui a déclenché la règle.
+* **Relancer l'éxecution de la règle** : exécuter de nouveau la règle sur le même objet.
+* **Réinitialiser** : supprimer l'entrée d'historique de cet objet.
+
+## Exécution manuelle
+
+Vous pouvez exécuter une règle à tout moment avec le bouton **Exécuter** du designer, ou avec **Executer le workflow** dans le menu du bouton **Enregistrer**. Une fenêtre vous invite à sélectionner l'objet sur lequel exécuter la règle. Le déclencheur est ignoré : seules les conditions et les actions sont appliquées.
+
+L'exécution manuelle sert à tester une règle, ou à l'appliquer à un objet créé avant la règle. Elle n'est disponible qu'une fois la règle enregistrée.
+
+## Bibliothèque de modèles de règles
 
 La bibliothèque de modèles de règles de workflow regroupe deux sources :
 
-* **La bibliothèque par défaut de Dastra** — des règles prêtes à l'emploi couvrant les scénarios d'automatisation les plus courants : gestion des violations de données, expiration de contrats, révision des fournisseurs, cycle de vie des demandes d'exercice de droits… Maintenue et enrichie par Dastra.
-* **Les modèles personnalisés de votre organisation** — toute règle que votre équipe a enregistrée comme modèle. Ces modèles sont accessibles dans la même bibliothèque et réutilisables par tous les utilisateurs de l'espace de travail.
+* **La bibliothèque par défaut de Dastra** : des règles prêtes à l'emploi couvrant les scénarios d'automatisation les plus courants (gestion des violations de données, expiration de contrats, révision des fournisseurs, cycle de vie des demandes d'exercice de droits…). Elle est maintenue et enrichie par Dastra.
+* **Les modèles personnalisés de votre organisation** : toute règle que votre équipe a enregistrée comme modèle. Ces modèles sont accessibles dans la même bibliothèque et réutilisables par tous les utilisateurs de l'espace de travail.
 
 Les modèles peuvent être filtrés par type d'objet et par langue.
 
 **Créer une règle depuis un modèle**
 
-Lors de la création d'une nouvelle règle, choisissez **"Depuis un modèle"** pour démarrer depuis une configuration préétablie plutôt que depuis une page blanche.
+Lors de la création d'une règle, choisissez **A partir d'un modèle** pour démarrer depuis une configuration préétablie plutôt que depuis une page blanche.
 
-<figure><img src="../../.gitbook/assets/workflow-rule-create-from-template.png" alt="Dialogue de création de règle — Depuis zéro ou Depuis un modèle"><figcaption><p>Choisir de créer une règle depuis un modèle existant</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow-rule-create-from-template.png" alt="Dialogue de création de règle avec les choix De zéro et A partir d'un modèle"><figcaption><p>Choisir de créer une règle depuis un modèle existant</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/workflow-rule-select-template.png" alt="Bibliothèque de modèles de règles avec le modèle DSR assign from tags"><figcaption><p>Sélection du modèle souhaité dans la bibliothèque</p></figcaption></figure>
 
 **Enregistrer une règle comme modèle**
 
-Ouvrez une règle de workflow existante et cliquez sur **"Enregistrer comme modèle"**. Donnez-lui un nom, une description, puis confirmez. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable par tous les utilisateurs de l'espace de travail.
+Ouvrez une règle de workflow existante, puis ouvrez le menu du bouton **Enregistrer** et cliquez sur **Enregistrer le modèle**. Donnez-lui un nom et une description, puis confirmez. Le modèle est immédiatement disponible dans la bibliothèque, réutilisable par tous les utilisateurs de l'espace de travail.
 
 <figure><img src="../../.gitbook/assets/workflow-rule-save-as-template.png" alt="Dialogue Enregistrer comme modèle avec nom et description"><figcaption><p>Enregistrement d'une règle de workflow comme modèle réutilisable</p></figcaption></figure>
 

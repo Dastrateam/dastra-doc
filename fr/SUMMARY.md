@@ -258,7 +258,7 @@
     * [SAML 2](features/settings/sso/saml.md)
     * [OpenId](features/settings/sso/openid.md)
     * [ADFS](features/settings/sso/adfs.md)
-    * [Active Directory (MS Entra)](features/settings/sso/entra-id.md)
+    * [Active Directory (Microsoft Entra ID)](features/settings/sso/entra-id.md)
     * [Okta](features/settings/sso/okta.md)
     * [Problèmes connus](features/settings/sso/known-problems.md)
   * [Streaming SIEM](features/settings/siem.md)

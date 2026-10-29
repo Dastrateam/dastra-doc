@@ -1,98 +1,89 @@
 ---
 description: >-
-  Découvrez comment utiliser notre intégration native de boites emails de
-  collecte
+  Créez automatiquement des objets dans Dastra à partir d'e-mails reçus sur des
+  adresses de collecte dédiées.
 ---
 
 # Adresses emails de collecte
 
-### Introduction
+Cette intégration crée automatiquement des objets dans Dastra à partir des e-mails reçus sur des adresses de collecte dédiées. Dastra met ces adresses à votre disposition et transforme chaque e-mail entrant en objet.
 
-Cette intégration permet de créer automatiquement des objets dans Dastra à partir d'e-mails reçus sur des boîtes emails dédiées. Dastra s'occupe de mettre à disposition ces boites et automatise la transformation des emails entrants en objets dans l'application Dastra.
+Cinq types d'objets peuvent être associés à une adresse de collecte :
 
-5 types d'objets peuvent être associés à ces boites emails de collecte:
+* les tâches ;
+* les traitements de données ;
+* les demandes d'exercice de droits ;
+* les contrats ;
+* les violations de données.
 
-* **Tâches**
-* **Traitements de données**
-* **Demandes d'exercices de droits**
-* **Contrats**
-* **Violations de données**
+## Mettre en place une adresse de collecte
 
-### Mise en place d'une boite de collecte
+L'installation demande la permission de gérer les intégrations dans l'espace de travail. Vous ne pouvez avoir qu'une seule adresse de collecte par type d'objet et par espace de travail.
 
-Pour mettre en place une boite de collecte pour l'un des objets listés ci-dessus, rendez-vous dans les réglages de votre espace de travail, onglet intégrations et sélectionnez la carte "Adresse mail de collecte"
+1. Ouvrez **Réglages espace de travail** > **Intégrations**, puis cliquez sur la carte **Adresse mail de collecte**.
 
-<figure><img src="../../.gitbook/assets/settings-integrations-mailbox-list.png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-1.png" alt="Le catalogue des intégrations avec la carte Adresse mail de collecte"><figcaption><p>La carte Adresse mail de collecte dans les intégrations</p></figcaption></figure>
+2. Dans la liste des **Cas d'usage préconfigurés**, repérez le type d'objet que vous voulez alimenter et cliquez sur **Ajouter l'intégration**.
 
-Sélectionnez ensuite le type d'objet pour lequel vous souhaitez mettre en place l'intégration en cliquant sur "ajouter l'intégration". Il est important de noter que vous ne pouvez disposer que d'une seule boite mail de collecte par type d'objet et par espace de travail.
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-2.png" alt="La liste des cinq cas d'usage de l'adresse de collecte, chacun avec le bouton Ajouter l'intégration"><figcaption><p>Un cas d'usage par type d'objet</p></figcaption></figure>
+3. Dans le panneau qui s'ouvre, choisissez si besoin l'**Unité organisationnelle de destination** des objets créés. Si vous laissez ce champ vide, les objets sont créés dans l'unité organisationnelle par défaut.
 
-<figure><img src="../../.gitbook/assets/settings-mailbox-integration-detail.png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-3.png" alt="Le panneau de configuration avec le champ Unité organisationnelle de destination et le bouton Enregistrer"><figcaption><p>Le choix de l'unité organisationnelle de destination</p></figcaption></figure>
+4. Cliquez sur **Enregistrer**. Dastra finalise l'installation et affiche l'adresse e-mail à utiliser.
 
-Vous avez la possiblité de renseigner l'unité organisationnelle de destination des objets créés via cette boite de collecte lors de l'installation de l'intégration. En laissant ce champ vide, les objets seront créés dans l'unité organisationnelle defaut.
+   <figure><img src="../../.gitbook/assets/settings-mailboxes-4.png" alt="Le panneau affichant l'adresse de collecte générée, avec le bouton de copie"><figcaption><p>L'adresse de collecte générée</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/settings-mailbox-configure-modal.png" alt=""><figcaption></figcaption></figure>
+Pour supprimer une adresse de collecte, ouvrez de nouveau le panneau du cas d'usage et cliquez sur **Supprimer**. L'adresse est alors libérée et ne reçoit plus d'e-mails.
 
-En cliquant sur "Créer", Dastra finalise l'installation de l'intégration et met à votre disposition l'adresse email à utiliser.
+## Fonctionnement
 
-<figure><img src="../../.gitbook/assets/settings-mailbox-params-modal.png" alt=""><figcaption></figcaption></figure>
+* Chaque e-mail reçu sur une adresse de collecte crée un objet du type associé dans Dastra.
+* L'objet est créé dans l'unité organisationnelle choisie à l'installation.
+* Le sujet de l'e-mail devient le nom de l'objet.
+* Le corps de l'e-mail devient la description de l'objet.
+* Les pièces jointes de l'e-mail deviennent des pièces jointes de l'objet, sous les conditions décrites ci-dessous.
 
-### Fonctionnalités principales
+## Pièces jointes
 
-* **Création Automatique d'Objets** : Chaque e-mail reçu sur une boite email associée crée un objet correspondant dans Dastra.
-* **Paramétrage de l'Unité Organisationnelle** : Vous pouvez définir une unité organisationnelle de destination lors de l'installation. Si cette unité est spécifiée, l'objet est automatiquement créé dans cette unité.
-* **Gestion des Champs d'Objet** :
-  * **Label** : Le sujet de l'e-mail est repris comme nom de l'objet créé.
-  * **Description** : Le corps de l'e-mail est utilisé pour la description de l'objet créé.
-  * **Pièces Jointes** : Les pièces jointes de l'e-mail sont ajoutées en tant que pièces jointes de l'objet, sous réserve des conditions de validation.
+Une pièce jointe est conservée lorsque :
 
-### La gestion des pièces jointes
+* son extension est valide. Les extensions autorisées sont `7z`, `csv`, `doc`, `docx`, `eml`, `epub`, `gif`, `htm`, `html`, `jpeg`, `jpg`, `json`, `md`, `msg`, `ods`, `odg`, `odp`, `odt`, `pdf`, `png`, `ppt`, `pptx`, `rar`, `rtf`, `svg`, `txt`, `xls`, `xlsm`, `xlsx` et `zip` ;
+* s'il s'agit d'une image (jpg, png, gif, etc.), elle pèse au moins 5 Ko. Cette limite évite d'ajouter des images sans intérêt, comme les logos des signatures d'e-mail.
 
-Les pièces jointes de l'e-mail sont ajoutées en tant que pièces jointes de l'objet, sous réserve que:
+## Retrouver les objets créés par une adresse de collecte
 
-* **Les Extensions de fichiers sont valides** : seules les pièces jointes avec une extension de fichier valide seront conservées.
+Les objets concernés ont un champ **source**, ou **origine de collecte**. Pour l'afficher dans un tableau, ajoutez la colonne correspondante.
 
-Voici la liste des pièces jointes autorisées : `7z`, `csv`, `doc`, `docx`, `eml`, `epub`, `gif`, `htm`, `html`, `jpeg`, `jpg`, `json`, `md`, `msg`, `ods`, `odg`, `odp`, `odt`, `pdf`, `png`, `ppt`, `pptx`, `rar`, `rtf`, `svg`, `txt`, `xls`, `xlsm`, `xlsx`, `zip`.
+Tous les objets créés depuis une adresse de collecte portent aussi le tag **Email entrant**, qui permet de les repérer.
 
-* **Les images respectent une taille minimale** : pour les fichiers de type image (jpg, png, gif, etc.), une taille minimale de 5 KB est requise. Cette contrainte permet d'éviter l'inclusion d'images non pertinentes comme celles des signatures d'e-mails.
+## Notification de succès
 
-### Retrouver les objets générés depuis une boite de collecte
+Quand un objet est créé à la suite d'un e-mail reçu, Dastra envoie automatiquement une notification par e-mail à l'adresse qui a déclenché l'intégration. Cet e-mail confirme que l'objet a bien été créé dans Dastra.
 
-Les objets concernés par les boites de collecte disposent d'un champ 'source' ou 'origine de collecte' que vous pouvez afficher dans les vues tableaux en affichant la colonne source / origine de collecte.
+L'e-mail de confirmation est rédigé dans la langue par défaut de l'espace de travail où l'intégration est installée (réglages de l'espace de travail, langue par défaut).
 
-Tous les objets générés depuis une boite de collecte sont taggés email entrant vous permettant de les identifier facilement si besoin.
+## Rediriger automatiquement vos e-mails existants vers Dastra
 
-### Notification de succès
+Si vous disposez déjà d'une adresse dédiée aux demandes d'exercice de droits (par exemple `privacy@votreentreprise.com`), vous n'avez pas besoin de la remplacer. Configurez une règle de redirection dans votre serveur de messagerie pour transférer les e-mails entrants vers l'adresse de collecte Dastra.
 
-En cas de création réussie d'un objet suite à la réception d'un e-mail sur la boite de collecte, une notification par e-mail est automatiquement envoyée à l'adresse qui a déclenché l'intégration. Cette notification confirme que l'objet a été créé avec succès dans Dastra, fournissant ainsi une assurance immédiate que la demande ou l'action a bien été prise en compte.
+Les e-mails arrivent alors directement dans Dastra, sans intervention manuelle, et vos contacts continuent d'utiliser votre adresse habituelle.
 
-La langue de l'email de confirmation correspond à la langue par défaut de l'espace de travail dans lequel l'intégration est installée (paramètres de votre espace de travail > langue par défaut).
+### Avec Microsoft Exchange / Office 365
 
-***
+Ouvrez le **Centre d'administration Exchange** > **Flux de messagerie** > **Règles**, puis cliquez sur **+ Ajouter une règle**. Configurez la règle ainsi :
 
-### Rediriger automatiquement vos emails existants vers Dastra
-
-Si vous disposez déjà d'une adresse email dédiée aux demandes d'exercice de droits (par exemple `privacy@votreentreprise.com`), vous n'avez pas besoin de la remplacer. Vous pouvez configurer une **règle de redirection** dans votre serveur de messagerie pour transférer automatiquement les emails entrants vers la boite de collecte Dastra.
-
-Les emails arriveront ainsi directement dans Dastra sans intervention manuelle, tout en conservant votre adresse habituelle pour vos contacts.
-
-#### Avec Microsoft Exchange / Office 365
-
-Rendez-vous dans le **Centre d'administration Exchange** > **Flux de messagerie** > **Règles**, puis cliquez sur **"+ Ajouter une règle"**.
-
-Configurez la règle comme suit :
-
-1. **Conditions** : "L'expéditeur est situé" > "En dehors de l'organisation" — et optionnellement filtrez par mots-clés dans l'objet pour ne rediriger que les demandes pertinentes (ex. : l'objet contient "demande" ou "droits").
-2. **Action** : "Rediriger le message vers" > saisissez l'adresse de collecte Dastra générée à l'étape précédente.
-3. **Mode** : Appliquer (Enforce).
+1. Condition : **L'expéditeur est situé** > **En dehors de l'organisation**. Vous pouvez ajouter un filtre sur des mots-clés de l'objet pour ne rediriger que les demandes pertinentes (par exemple, l'objet contient « demande » ou « droits »).
+2. Action : **Rediriger le message vers**, puis saisissez l'adresse de collecte Dastra générée à l'étape précédente.
+3. Mode : **Appliquer** (Enforce).
 
 {% hint style="info" %}
-Vous pouvez ajouter des filtres sur l'objet de l'email pour ne rediriger que certains types de demandes (effacement, accès, portabilité…) vers la boite Dastra correspondante, et conserver les autres dans votre boite habituelle.
+Avec des filtres sur l'objet, vous redirigez seulement certains types de demandes (effacement, accès, portabilité, etc.) vers l'adresse de collecte correspondante, et vous gardez les autres messages dans votre boîte habituelle.
 {% endhint %}
 
 {% hint style="warning" %}
-Vérifiez que votre règle ne crée pas de boucle de redirection si votre adresse Dastra redirige elle-même des emails. Configurez la condition "Reçu de l'extérieur de l'organisation" pour éviter les boucles.
+Vérifiez que votre règle ne crée pas de boucle de redirection si l'adresse Dastra redirige elle-même des e-mails. Utilisez la condition « Reçu de l'extérieur de l'organisation » pour éviter les boucles.
 {% endhint %}
 
-#### Avec Google Workspace (Gmail)
+### Avec Google Workspace (Gmail)
 
-Dans la **Console d'administration Google** > **Applications** > **Google Workspace** > **Gmail** > **Routage**, ajoutez une règle de routage entrant avec l'action "Modifier les destinataires" et saisissez l'adresse de collecte Dastra.
+Dans la **Console d'administration Google** > **Applications** > **Google Workspace** > **Gmail** > **Routage**, ajoutez une règle de routage entrant avec l'action **Modifier les destinataires**, puis saisissez l'adresse de collecte Dastra.

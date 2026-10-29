@@ -1,71 +1,78 @@
 ---
 description: >-
-  Dastra vous permet de router vos emails de notification via votre propre
-  serveur d'envoi d'emails
+  Faites passer les e-mails de notification de Dastra par votre propre serveur
+  d'envoi d'e-mails.
 ---
 
 # Configuration du SMTP
 
 {% embed url="https://youtu.be/We93kT_KrJA" %}
 
+Cette page explique comment router les e-mails de Dastra vers votre propre serveur SMTP. Elle s'adresse aux propriétaires de l'organisation.
+
 ## Principe de fonctionnement
 
-Par défaut, Dastra route un nombre important de notifications par email pour les services suivants :
+Par défaut, Dastra envoie ses e-mails avec son propre service SMTP. Sont concernés :
 
-* [Notifications ](../notifications.md)en temps réel (Nouveaux commentaires, tâches, ...)
-* Emails d'échanges dans le cadre d'[une demande d'exercice de droits](../../requests/README.md)
-* Invitation aux [audits](../../questionnaires/README.md) pour les répondants
-* [Invitations ](../../../getting-started/setup/users.md)de nouveaux utilisateurs
+* les [notifications](../notifications.md) en temps réel (nouveaux commentaires, tâches, etc.) ;
+* les e-mails d'échange dans le cadre d'une [demande d'exercice de droits](../../requests/README.md) ;
+* les invitations des répondants aux [questionnaires](../../questionnaires/README.md) ;
+* les [invitations](../../../getting-started/setup/users.md) de nouveaux utilisateurs.
 
-Par défaut, Dastra utilise son propre service SMTP.
-
-## Comment configurer votre serveur d'envoi SMTP ?
+Une fois votre serveur configuré, tous ces e-mails passent par lui, pour tous les espaces de travail de l'organisation.
 
 {% hint style="warning" %}
-Attention ! personnaliser le SMTP peut conduire à des instabilités de la plateforme. N'effectuez cette manipulation que si vous êtes certains du bon fonctionnement et de la délivrabilité de votre service d'envoi d'email.
+Personnaliser le SMTP peut rendre la plateforme instable. N'effectuez cette configuration que si vous êtes certain du bon fonctionnement et de la délivrabilité de votre service d'envoi d'e-mails.
 {% endhint %}
 
-### Intérêt de personnaliser le SMTP
+## Intérêt de personnaliser le SMTP
 
-Dastra s'efforce d'assurer une disponibilité et une sécurité maximale pour les envois d'emails transactionnels.
+Dastra assure la disponibilité et la sécurité des envois d'e-mails transactionnels. Selon votre politique interne de sécurité, vous pouvez toutefois avoir besoin de maîtriser vous-même le routage de ces e-mails pour contrôler vos flux de messagerie.
 
-Cependant, selon votre politique interne de sécurité, vous pouvez être amené à internaliser le routage des emails transactionnels afin de maîtriser les flux de messagerie.
+## Accès et prérequis
 
-### Prérequis
+La page se trouve dans **Paramètres de l'organisation** > **SMTP personnalisé**. Elle est réservée aux propriétaires de l'organisation et au plan Enterprise (fonctionnalité de sécurité avancée).
 
-Vous devez disposer des éléments de configuration de votre serveur SMTP :
+Vous avez deux possibilités :
 
-* Hôte SMTP (ex: smtp.yourservice.com)
-* Port SMTP (par défaut, utilisez le port 25)
-* Nom d'utilisateur
-* Mot de passe
-* Une **adresse email de sender valide** (ex: noreply@yourservice.com) : cette adresse doit être correctement validée par votre fournisseur SMTP.
+* connecter un fournisseur (**Outlook (MS Office 365)** ou **Gmail (Google workspace)**) : voir [Intégration des fournisseurs externes](office-365-gmail.md) ;
+* renseigner les paramètres de votre serveur SMTP, décrits ci-dessous.
+
+Pour un serveur SMTP, munissez-vous des éléments suivants :
+
+* le nom du serveur SMTP (par exemple `smtp.yourservice.com`) ;
+* le port du serveur SMTP (25 par défaut) ;
+* le nom d'utilisateur et le mot de passe du serveur ;
+* une adresse e-mail d'expéditeur valide (par exemple `noreply@yourservice.com`) : votre fournisseur SMTP doit l'avoir validée ;
+* un alias d'expéditeur, c'est-à-dire le nom affiché comme expéditeur (par exemple `Équipe conformité`).
 
 {% hint style="warning" %}
-Attention, votre serveur SMTP doit obligatoirement supporter une connexion sécurisée utilisant SSL
+Dastra impose une connexion sécurisée par TLS, en version 1.2 au minimum. Votre serveur SMTP doit la proposer.
 {% endhint %}
 
-### Configuration
+## Configuration
 
-Rendez-vous sur la [page de configuration du serveur SMTP](https://app.dastra.eu/general-settings/smtp)
+1. Ouvrez [la page de configuration du SMTP](https://app.dastra.eu/general-settings/smtp).
+2. Dans la section **SMTP Personnalisé**, renseignez **Nom du serveur SMTP (TLS obligatoire)**, **Port du serveur SMTP**, **Nom d'utilisateur du serveur SMTP**, **Mot de passe du serveur SMTP**, **Email du sender** et **Alias du sender**.
+3. Cliquez sur **Enregistrer**.
 
-Remplissez les champs de formulaire à l'aide des données demandées en [prérequis](README.md#prerequis)
+<figure><img src="../../../.gitbook/assets/settings-smtp-config-form.png" alt="Formulaire de configuration du serveur SMTP avec les champs serveur, port, utilisateur, mot de passe, e-mail et alias de l'expéditeur"><figcaption><p>Le formulaire de configuration du serveur SMTP</p></figcaption></figure>
 
-![](../../../.gitbook/assets/settings-smtp-config-form.png)
+À l'enregistrement, Dastra se connecte à votre serveur et envoie un message de test à l'adresse e-mail de votre compte. Si la connexion échoue, la configuration n'est pas enregistrée et le message d'erreur du serveur s'affiche.
 
-A noter que la connectivité au serveur est automatiquement testé pour s'assurer que les identifiants de connexion au serveurs sont correctes. Un email de test sera automatiquement envoyé à partir de nos serveurs.
+Quand un fournisseur est connecté, le formulaire SMTP personnalisé est désactivé. Cliquez d'abord sur **Supprimer l'intégration** pour utiliser votre propre serveur.
 
-### Tests
+## Tests
 
-Une fois que vous avez validé le formulaire, votre serveur SMTP devrait fonctionner.
+Une fois la configuration enregistrée, le bouton **Tester** apparaît. Cliquez dessus et confirmez : Dastra envoie un message de test à l'adresse e-mail de votre compte personnel.
 
-Vous pouvez vérifier que les emails de notifications proviennent bien de votre serveur SMTP. Pour cela, créez par exemple un commentaire dans un traitement et regardez si vous recevez bien le mail de notification dans votre BAL.
+Vous pouvez aussi vérifier que les e-mails de notification proviennent bien de votre serveur. Créez par exemple un commentaire dans un traitement et regardez si vous recevez la notification dans votre boîte aux lettres.
 
-* **Si vous ne recevez pas d'email** : soit vous n'avez pas réussi à déclencher la notification, soit il y a un problème dans la configuration de votre SMTP
-* **Si vous recevez un email** : vérifiez que votre SMTP et votre sender figurent bien dans le détail du mail.
+* **Vous ne recevez pas d'e-mail** : soit la notification n'a pas été déclenchée, soit la configuration du SMTP est en cause.
+* **Vous recevez un e-mail** : vérifiez que votre serveur SMTP et votre expéditeur figurent dans le détail du message.
 
 {% hint style="info" %}
-[Comment voir le détail de l'email dans GMAIL](https://support.google.com/mail/answer/29436?hl=fr).
+[Comment afficher le détail d'un e-mail dans Gmail](https://support.google.com/mail/answer/29436?hl=fr).
 
-[Comment voir le détail de l'email dans Outlook](https://support.microsoft.com/fr-fr/office/afficher-les-en-t%C3%AAtes-de-message-internet-dans-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
+[Comment afficher le détail d'un e-mail dans Outlook](https://support.microsoft.com/fr-fr/office/afficher-les-en-t%C3%AAtes-de-message-internet-dans-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
 {% endhint %}
