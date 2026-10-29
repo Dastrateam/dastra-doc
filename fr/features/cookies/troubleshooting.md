@@ -1,14 +1,19 @@
+---
+description: Les causes les plus fréquentes d'une bannière de cookies qui ne s'affiche pas, et comment les corriger.
+---
+
 # Dépannage
 
-Dans certain cas, le widget de Cookies ne s'affiche pas, voici les solutions à ce problème :
+Si la bannière de cookies ne s'affiche pas, vérifiez les points suivants dans l'ordre.
 
-1.  Vérifier les domaines associés au widget. Pour cela, se rendre dans **Cookies** > **Sélectionnez un widget** > **Configuration**\
-    Modifiez les domaines autorisés de cette façon, en respectant le format _https://monurl.com_ :\
-    <br>
+1. Vérifiez les URL autorisées. Dans le menu, cliquez sur **Consentement cookies** > **Bannières**, ouvrez la bannière, puis la section **Configuration**. L'adresse de votre site doit figurer dans **Urls autorisées (CORS)**, au format `https://monurl.com`, sans chemin. C'est la cause la plus fréquente : une origine absente de la liste est refusée.
 
-    <figure><img src="../../.gitbook/assets/cookies-widget-config-section.png" alt=""><figcaption></figcaption></figure>
-2. **Vérifiez la validité de votre clé d'API publique** (Ne pas utiliser la clé privée !). Pour cela, aller dans **Configuration de l'organisation (Le bouton en haut à droite**![](../../.gitbook/assets/cookies-widget-settings-icon.png)) > **Développement / Clés d'API .** Vérifiez ensuite que la clé d'API existe bien et qu'elle est bien valide.\
-   ![](../../.gitbook/assets/cookies-widget-api-key-modal.png)
-3. **Vérifiez que vous n'avez pas paramétré un déclencheur d'affichage par erreur.** Si par exemple, la bannière est paramétrée pour s'afficher sur une hauteur de scroll en % trop importante, vous ne verrez pas le widget en arrivant sur la page.
-4. **Vérifiez votre abonnement** : pour utiliser librement le widget de consentement aux cookies, vous devez disposer d'un abonnement à la fonctionnalité valide. Contactez votre propriétaire d'organisation si celui-ci ne voit pas le bouton cookies s'afficher dans la navigation, c'est que probablement la fonctionnalité n'est pas incluse dans votre abonnement. Vous pouvez rapprocher du [service support](mailto:support@dastra.eu) pour plus d'informations.
-5. Pour tout autre problème, [contactez le support](https://doc.dastra.eu/commencer/le-support/faire-une-demande-de-support?cacheBust=1676909428068).
+   <figure><img src="../../.gitbook/assets/cookies-configure-6.png" alt="La section Configuration avec le champ Urls autorisées (CORS)"><figcaption><p>Le champ « Urls autorisées (CORS) »</p></figcaption></figure>
+2. Vérifiez le statut de la bannière. Dans l'éditeur, l'interrupteur **Statut** doit être sur **Actif**.
+3. Vérifiez la validité de votre clé d'API publique (n'utilisez pas la clé privée). Cliquez sur l'icône d'engrenage de la barre supérieure (**Réglages de l'organisation**), puis sur **Clés d'API & MCP**. Vérifiez que la clé existe et qu'elle n'est pas expirée. Voir [Gestion des clés d'API](../settings/api-keys.md).
+
+   <figure><img src="../../.gitbook/assets/cookies-quickstart-1.png" alt="La page Clés d'API & MCP avec la liste des clés"><figcaption><p>La page « Clés d'API & MCP »</p></figcaption></figure>
+4. Vérifiez que vous n'avez pas défini un déclencheur d'affichage par erreur. Dans la section **Déclencheurs**, une **Hauteur de scroll en %** trop élevée empêche d'afficher la bannière à l'arrivée sur la page.
+5. Vérifiez les options qui masquent la bannière. L'option **Ne pas déclencher l'affichage la bannière (tous les cookies consenties par défaut seront déclenchés)** masque la bannière, de même que **Activer le Global Privacy Control (GPC)** pour les visiteurs dont le navigateur envoie ce signal. Un visiteur qui a déjà fait un choix ne voit plus la bannière : supprimez le cookie `consent-eu` de votre navigateur pour tester.
+6. Vérifiez votre abonnement. Pour utiliser la bannière de consentement aux cookies, votre abonnement doit inclure la fonctionnalité. Si le menu **Consentement cookies** n'apparaît pas dans la navigation, la fonctionnalité n'est probablement pas incluse : contactez le propriétaire de votre organisation. Si l'abonnement a expiré, l'API refuse la configuration de la bannière. Pour plus d'informations, vous pouvez contacter le [support](mailto:support@dastra.eu).
+7. Pour tout autre problème, [contactez le support](../../getting-started/support/request.md).

@@ -10,7 +10,11 @@ description: >-
 
 In order to obtain good display performance, the Dastra widget is rendered directly in the site page, in the container with the id **#dastra-widget**&#x20;
 
-It's possible to override the appearance of the widget using simple CSS rules.
+You can override the appearance of the banner with CSS rules.
+
+{% hint style="info" %}
+You can enter these rules directly in the **Custom CSS** field of the **Templating of the banner** section of the banner, without changing the stylesheet of your site. See [Set up the cookie consent banner](../banner/configure.md).
+{% endhint %}
 
 Exemple:
 

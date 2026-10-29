@@ -1,38 +1,60 @@
 ---
-description: Learn how to collect proof of consent cookies with Dastra.
+description: Learn how to collect, view and export proof of cookie consent with Dastra, and how to follow the banner statistics.
 ---
 
 # Collect proof of cookie consent
 
-Once the DASTRA cookie consent widget is implemented on your website, the DASTRA Cookie Consent module also allows you to **collect** and **export proof of cookie consent**.
+Once the cookie consent banner is installed on your website, the **Cookie consent** module collects, keeps and exports **proof of consent**. It also shows the **statistics** of the banner.
 
 ## Prerequisites
 
-To do this, you must have implemented a DASTRA cookie consent widget on your website.
+You must have installed the banner on your website.
 
 {% content-ref url="configure.md" %}
-[implementez-un-widget-de-consentement-aux-cookies.md](configure.md)
+[configure.md](configure.md)
 {% endcontent-ref %}
 
-## Collect evidence of consent to cookies
+## View the proof of consent
 
-Once the widget is implemented, DASTRA automatically collects proof of consent from visitors to your website.
+Once the banner is installed, Dastra automatically collects proof of consent from the visitors of your website. To view it:
 
-To consult them, simply go to the "Consent" interface of the DASTRA cookie consent module.
+1. In the menu, click **Cookie consent** > **Cookie consents**.
+2. Use the filters above the list: the period (the last 7 days by default), the banner (**All banners**) and, once a banner is chosen, the consented services.
+3. Click a row to open the proof.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-21-162007.png" alt=""><figcaption><p>"Consent" interface</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookies-consent-proof-1.png" alt="The list of consents with the period and banner filters"><figcaption><p>The list of consents</p></figcaption></figure>
+
+The cookie consent proof shows the date, the country, the consent fingerprint and the list of services, each marked **Consented** or **Refused**. You can print or delete it.
+
+<figure><img src="../../../.gitbook/assets/cookies-consent-proof-2.png" alt="The detail of a proof of consent"><figcaption><p>The detail of a proof of consent</p></figcaption></figure>
+
+From the list, the **Export** button downloads the proof for the selected period and banner. To delete proof, use the row menu or the **Delete** batch action.
+
+The lifespan of the proof of consent is one year.
 
 {% hint style="info" %}
-From this interface, you can also customize the proofs of consent collected, export data, filter by date or cookie widget, among others.
+The collection of proof depends on the **Save consent proof** option in the **Settings** section of the banner. When it is disabled, no proof is kept. To match a proof with a user of your system, see [User identification](../integration/identification.md).
 {% endhint %}
 
-Congratulations, you are now collecting proof of consent cookies!&#x20;
+## View the statistics
 
-The lifespan of the proof of consent is one year.&#x20;
+The **Reporting** page follows the activity of your banners.
 
-To make your site dynamic and truly take into account the consent of the user, go to the next section "go further on cookie consent":
+1. In the menu, click **Cookie consent** > **Reporting**. You can also open the menu of a banner in the list of banners and choose **Stats report**.
+2. Choose the period (the last 7 days by default) and, if needed, a banner in **All banners**.
+
+Three charts are displayed, each compared with the previous period:
+
+* **Collected consents**: the volume of choices recorded, with the **Total**, **Full consent**, **Partial consent** and **Refused** indicators;
+* **Widget's display**: the number of sessions during which the banner was displayed. The counter increases once per visitor session, and a session lasts at least one hour;
+* a third chart counts the times a visitor closed the banner with the close cross.
+
+{% hint style="info" %}
+In preview mode, no statistics are collected. Displays are also not counted when the **Save consent proof** option is disabled.
+{% endhint %}
+
+To actually apply visitors' choices on your website, go to the next page:
 
 {% content-ref url="go-further.md" %}
-[allez-plus-loin-sur-le-consentement-des-cookies.md](go-further.md)
+[go-further.md](go-further.md)
 {% endcontent-ref %}
-

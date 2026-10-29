@@ -6,7 +6,7 @@ description: Manage privacy compliance for your US users (CCPA/CPRA, GPC, DoNotT
 
 ## Regulatory context
 
-Unlike the GDPR which requires **opt-in** (prior consent), US privacy law is primarily based on an **opt-out** model: trackers can be placed by default, but users must be able to object easily.
+Unlike the GDPR which requires **opt-in** (prior consent), US privacy law is primarily based on an **opt-out** model: trackers can be placed by default, but users must be able to object without difficulty.
 
 Key regulations to be aware of:
 
@@ -29,7 +29,7 @@ Since CPRA (2023), businesses must honour the **Global Privacy Control (GPC)** s
 
 ### 1. Create a geo-targeted variant for the United States
 
-The simplest way to handle your US users is to create a **geo-targeted variant** from the **Variants** tab of your widget.
+The simplest way to handle your US users is to create a **geo-targeted variant** from the variants drop-down at the top right of your banner editor (see [Geo-targeted variants](geo-targeting.md)).
 
 For **California (CCPA/CPRA)**, configure the variant with an opt-out model: non-essential cookies are active by default, and users can opt out. Also consider adding a **"Do Not Sell or Share My Personal Information"** link in your site footer that opens the widget directly.
 
@@ -47,8 +47,8 @@ Two browser signals allow a user to express their refusal to be tracked without 
 
 | Signal                           | Standard | Legally binding (CA) | Description                                                |
 | -------------------------------- | -------- | -------------------- | ---------------------------------------------------------- |
-| **GPC** (`globalPrivacyControl`) | W3C      | ✅ Yes (CPRA)        | Opt-out signal for the sale/sharing of personal data       |
-| **DNT** (`doNotTrack`)           | W3C      | ❌ No                | "Do not track" preference signal (not legally enforceable) |
+| **GPC** (`globalPrivacyControl`) | W3C      | Yes (CPRA)        | Opt-out signal for the sale/sharing of personal data       |
+| **DNT** (`doNotTrack`)           | W3C      | No                | "Do not track" preference signal (not legally enforceable) |
 
 #### Native activation (recommended)
 
@@ -64,7 +64,7 @@ The same toggle exists in each **Geo-target variation**: enable it on the variat
 Native activation is available from the current version of the Dastra widget. It covers both the `globalPrivacyControl` and the `doNotTrack` signals.
 {% endhint %}
 
-#### Advanced option — Custom JS snippet
+#### Advanced option: Custom JS snippet
 
 If you need finer control (for example displaying an acknowledgment message or applying opt-out to specific categories), you can use the following JS snippet **in addition to** the native toggle, or instead of it if you manage the widget via the JS API:
 
@@ -92,7 +92,7 @@ If you need finer control (for example displaying an acknowledgment message or a
 ```
 
 {% hint style="info" %}
-**`dispatchEvents()` vs `save()` — what's the difference?**
+**`dispatchEvents()` vs `save()`: what's the difference?**
 
 - **`dispatchEvents()`** applies the consent choices for the current session **without writing anything** to the consent storage (the `consent-eu` cookie by default, or localStorage if that option is enabled). The GPC or DNT signal is re-evaluated on every page load. If the user later disables GPC in their browser, normal behaviour resumes automatically. This is the recommended approach for honouring these signals.
 - **`save()`** persists the consent in that storage, as if the user had made an explicit choice through the widget. Use this only when you want to remember a choice across sessions.
@@ -123,13 +123,13 @@ Category labels to use with `setPurposeConsent`:
 
 When a GPC or DNT signal is detected, regulations such as CPRA recommend informing the user that their opt-out request has been acknowledged.
 
-With native activation, the widget displays this message for 6 seconds instead of the banner. Default text: "Global Privacy Control detected: analytics and marketing cookies have been disabled." To change it, open the banner's **Texts and translations** tab, **Home page** section, in the field described as "Message displayed when the browser sends a Global Privacy Control or Do Not Track signal".
+With native activation, the widget displays this message for 6 seconds instead of the banner. Default text: "Global Privacy Control detected: analytics and marketing cookies have been disabled." To change it, open the **Texts and localizations** section of the banner, **Home page** group, in the field described as "Message displayed when the browser sends a Global Privacy Control or Do Not Track signal".
 
 The widget also dispatches the `dastra:gpc:applied` event on `window`, which you can listen to for your own processing.
 
 If you do not use native activation, or if you want a different display, two snippet-based approaches are available.
 
-#### Option A — Ephemeral toast
+#### Option A: Ephemeral toast
 
 A message that appears for a few seconds then disappears automatically. Easy to implement, but the user may miss it if they are not looking at the page at the right moment.
 
@@ -159,9 +159,9 @@ if (isOptOut) {
 </script>
 ```
 
-#### Option B — Persistent banner
+#### Option B: Persistent banner
 
-A fixed bar at the bottom of the page, visible as long as GPC is active in the browser. More robust for compliance: the indication is permanent, not only visible on first load. A Dismiss button lets the user close it.
+A fixed bar at the bottom of the page, visible as long as GPC is active in the browser. It is better for compliance: the indication is permanent, not just shown on first load. A Dismiss button lets the user close it.
 
 ```html
 <script>
@@ -181,7 +181,7 @@ if (isOptOut) {
       bar.setAttribute('role', 'status');
       bar.setAttribute('aria-live', 'polite');
       bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;font-size:13px;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;z-index:9999;border-top:1px solid #333';
-      bar.innerHTML = '<span>🔒 Opt-Out Request Honored — analytics and marketing cookies are disabled.</span>'
+      bar.innerHTML = '<span>🔒 Opt-Out Request Honored, analytics and marketing cookies are disabled.</span>'
         + '<button onclick="this.parentNode.remove()" style="background:none;border:1px solid #555;color:#fff;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:16px">Dismiss</button>';
       document.body.appendChild(bar);
     }
@@ -200,7 +200,7 @@ Adapt the message text to your editorial style and your users' language. For mul
 
 | Mechanism                    | Implementation                              | Legally required (CA) |
 | ---------------------------- | ------------------------------------------- | --------------------- |
-| CCPA geo-targeted variant    | Dastra interface                            | ✅ Yes                |
-| GPC detection                | Native toggle (widget config) — recommended | ✅ Yes (CPRA)         |
-| DNT detection                | Native toggle (widget config) — recommended | ❌ Recommended        |
-| Acknowledgment message       | Native (editable text) or JS snippet        | ❌ Recommended        |
+| CCPA geo-targeted variant    | Dastra interface                            | Yes                |
+| GPC detection                | Native toggle (widget config), recommended | Yes (CPRA)         |
+| DNT detection                | Native toggle (widget config), recommended | No (recommended)     |
+| Acknowledgment message       | Native (editable text) or JS snippet        | No (recommended)     |
