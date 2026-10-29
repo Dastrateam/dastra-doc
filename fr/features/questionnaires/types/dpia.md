@@ -26,7 +26,7 @@ Dans Dastra, l'onglet **Analyse d'impact** de chaque traitement vous aide à dé
 * Usage innovant ou application de nouvelles technologies
 * Traitement empêchant les personnes concernées d'exercer leurs droits
 
-Pour chaque critère, sélectionnez "Oui", "Non" ou "Non applicable". **Deux réponses "Oui" suffisent généralement** à déclencher l'obligation de réaliser une AIPD, bien qu'un seul critère puisse être suffisant selon le contexte.
+Pour chaque critère, sélectionnez **Oui**, **Non** ou **Non applicable**. Deux réponses **Oui** suffisent généralement à déclencher l'obligation de réaliser une AIPD, bien qu'un seul critère puisse être suffisant selon le contexte.
 
 Pour gagner du temps, cliquez sur **Générer l'évaluation**, à côté du titre **Évaluation des 9 critères de l'AIPD (CEPD)** : l'assistant IA propose une réponse pour chaque critère, accompagnée d'une justification, à partir des informations déjà renseignées dans le traitement. Vous examinez la proposition avant de l'appliquer au formulaire, et chaque réponse reste modifiable. Pour le détail de la procédure, consultez la page [Analyse d'impact](../../ropa/activity/impact-analysis.md).
 
@@ -38,8 +38,8 @@ La liste des traitements nécessitant une AIPD dépend des recommandations de vo
 
 Dastra affichera l'un des deux résultats suivants :
 
-* **"Une AIPD n'est pas requise"** — le traitement ne franchit pas le seuil
-* **"Vous devez réaliser une analyse d'impact relative à la protection des données (AIPD)"** — un bouton "Créer une AIPD" apparaît pour lancer l'analyse directement
+* **Le PIA n'est pas obligatoire** : le traitement ne franchit pas le seuil
+* **Vous devez réaliser une analyse d'impact (PIA)** : le bouton **Créer un PIA** apparaît pour lancer l'analyse directement
 
 ## Les modèles d'AIPD dans Dastra
 
@@ -53,36 +53,36 @@ Plusieurs modèles de PIA/AIPD sont disponibles dans la bibliothèque Dastra, no
 * **DPC DPIA Questionnaire - Irlande** (9 questions) : le modèle de l'autorité irlandaise
 * **DPIA Questionnaire (ICO)** (9 questions) : le modèle de l'autorité britannique
 
-Pour y accéder, rendez-vous dans l'onglet "Modèles de questionnaires", cliquez sur **"Créer un modèle"** → **"Questionnaires automatisés"**, puis filtrez par type "Analyse d'impact".
+Pour y accéder, ouvrez **Questionnaires** > **Modèles de questionnaires**, cliquez sur **Créer modèle** puis sur **A partir d'un modèle**, et filtrez avec **Types** sur **Analyse d'impact (PIA)**.
 
 ## Structure du questionnaire PIA (CNIL)
 
 Le modèle PIA (CNIL) est structuré en trois grandes parties :
 
-1. **Contexte** — décrire le traitement : informations générales, finalités, données impliquées, parties prenantes (responsable de traitement, sous-traitants, coresponsables)
-2. **Principes fondamentaux** — évaluer la proportionnalité et la minimisation des données, et documenter les mesures de protection des droits des personnes
-3. **Risques liés à la sécurité des données** — évaluer les risques selon quatre catégories de menaces : mesures de sécurité mises en place, accès illégitime aux données, modification non désirée des données, disparition des données
+1. **Contexte** : décrire le traitement : informations générales, finalités, données impliquées, parties prenantes (responsable de traitement, sous-traitants, coresponsables)
+2. **Principes fondamentaux** : évaluer la proportionnalité et la minimisation des données, et documenter les mesures de protection des droits des personnes
+3. **Risques liés à la sécurité des données** : évaluer les risques selon quatre catégories de menaces : mesures de sécurité mises en place, accès illégitime aux données, modification non désirée des données, disparition des données
 
 {% hint style="info" %}
-Le questionnaire PIA (CNIL) propose deux modes de réponse. La différence entre les deux modes porte uniquement sur l'affichage des champs complémentaires par question : en **Mode expert**, les champs **Justification de la réponse**, **Pièces jointes** et **Annotations** sont affichés pour chaque question. En **Mode simplifié**, ces champs sont masqués. Vous pouvez basculer entre les deux modes à tout moment.
+Le questionnaire PIA (CNIL) propose deux modes de réponse. La différence entre les deux modes porte uniquement sur l'affichage des champs complémentaires par question : en **Mode étendu**, les champs **Justification de la réponse**, **Pièces jointes** et **Annotations** sont affichés pour chaque question. En **Mode simplifié**, ces champs sont masqués. Vous pouvez basculer entre les deux modes à tout moment.
 {% endhint %}
 
 ## Lier une AIPD à un traitement
 
 Pour tirer pleinement parti des fonctionnalités AIPD dans Dastra, configurez votre modèle comme suit :
 
-1. Définissez le **type de modèle** sur "Analyse d'impact" — cela active la carte de chaleur des risques dans le tableau de bord du questionnaire et intègre les données du traitement lié.
-2. Dans la section **Élément évalué**, sélectionnez "Traitement de données" — cela lie chaque réponse à un traitement spécifique et met automatiquement à jour la **Date du dernier PIA** du traitement lors de la publication de l'AIPD (voir « Mise à jour de la date du dernier PIA » ci-dessous).
+1. Définissez le **Type de questionnaire** sur **Analyse d'impact (PIA)** : cela active la carte de chaleur des risques dans le tableau de bord du questionnaire et intègre les données du traitement lié.
+2. Dans **Objet associé**, sélectionnez **Traitement de données** : cela lie chaque réponse à un traitement spécifique et met automatiquement à jour la **Date du dernier PIA** du traitement lors de la publication de l'AIPD (voir « Mise à jour de la date du dernier PIA » ci-dessous).
 
 {% hint style="info" %}
-Une fois l'AIPD liée à un traitement, vous pouvez y accéder directement depuis l'onglet **"Analyse d'impact"** de ce traitement, et la lancer via le bouton "Créer une AIPD" lorsque le seuil est atteint.
+Une fois l'AIPD liée à un traitement, vous pouvez y accéder directement depuis l'étape **Analyse d'impact** de ce traitement, et la lancer avec le bouton **Créer un PIA** lorsque le seuil est atteint.
 {% endhint %}
 
 
 
 ### Mise à jour de la date du dernier PIA
 
-Lorsqu'une AIPD liée à un traitement est publiée, Dastra reporte sa date de publication dans le champ **Date du dernier PIA** de l'étape **Analyse d'impact** du traitement. Cette mise à jour s'applique quelle que soit l'origine de l'AIPD (lancée depuis le traitement ou planifiée depuis le module Questionnaires), dès lors que le modèle est de type « Analyse d'impact » et que l'élément évalué est un traitement de données.
+Lorsqu'une AIPD liée à un traitement est publiée, Dastra reporte sa date de publication dans le champ **Date du dernier PIA** de l'étape **Analyse d'impact** du traitement. Cette mise à jour s'applique quelle que soit l'origine de l'AIPD (lancée depuis le traitement ou planifiée depuis le module Questionnaires), dès lors que le modèle est de type **Analyse d'impact (PIA)** et que l'objet associé est un traitement de données.
 
 La publication intervient :
 
@@ -104,9 +104,10 @@ La date de publication remplace la valeur précédemment saisie dans le champ **
 
 Si vous avez déjà réalisé une PIA avec l'outil dédié de la CNIL, vous pouvez l'importer directement dans Dastra :
 
-1. Exportez votre PIA depuis l'outil CNIL au format **.json**
-2. Dans Dastra, sélectionnez le modèle PIA (CNIL) et cliquez sur **"Importer votre PIA CNIL"**
-3. Une très grande partie des éléments sera automatiquement reprise dans Dastra
+1. Exportez votre PIA depuis l'outil CNIL au format **.json**.
+2. Dans Dastra, ouvrez le modèle PIA (CNIL) depuis **Modèles de questionnaires**, cliquez sur la flèche à côté de **Planifier questionnaire**, puis sur **Importer PIA depuis l'outil PIA (CNIL)**. Cette action n'est proposée que pour un modèle de type **Analyse d'impact (PIA)**.
+3. Choisissez l'**Unité organisationnelle** puis le traitement dans **Choisissez le traitement associé à ce PIA**, et déposez le fichier .json.
+4. Une très grande partie des éléments est automatiquement reprise dans Dastra.
 
 ## Réaliser une AIPD sur plusieurs traitements
 

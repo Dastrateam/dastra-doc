@@ -11,9 +11,9 @@ La validation est l’étape de revue qui suit la finalisation d’un questionna
 
 ## Le cycle de vie d’une réponse
 
-1. **En attente de répondants / Démarré** — les répondants complètent le formulaire.
-2. **En attente de validation** — dès que tous les répondants **requis** ont cliqué sur **Finaliser**, la réponse bascule dans cet état et les validateurs reçoivent une notification.
-3. **Validé** — après approbation de tous les validateurs requis et validation finale.
+1. **En attente de répondants / Démarré** : les répondants complètent le formulaire.
+2. **En attente de validation** : dès que tous les répondants **requis** ont cliqué sur **Finaliser**, la réponse bascule dans cet état et les validateurs reçoivent une notification.
+3. **Validé** : après approbation de tous les validateurs requis et validation finale.
 
 Trois issues sont possibles depuis l’état « En attente de validation » : **valider**, **demander une révision** (retour aux répondants) ou **annuler** le questionnaire.
 
@@ -23,15 +23,17 @@ Si aucun bouton n’est actionnable, vérifiez que la réponse est bien en « En
 
 ## Qui valide ?
 
-Les validateurs sont définis à la planification du questionnaire (voir [Planifier un questionnaire](schedule.md)), dans la section **Responsables** :
+Les validateurs sont définis à la planification du questionnaire (voir [Planifier un questionnaire](schedule.md)), dans la section **Approbateurs** :
 
-* **Approbateurs requis** — tous doivent approuver le questionnaire avant qu’il puisse être validé. Au moins un approbateur requis est obligatoire.
-* **Approbateurs optionnels** — activez l’option « Ajouter des approbateurs optionnels » pour convier des relecteurs dont l’approbation est suivie mais **n’est pas bloquante**.
+* **Approbateurs requis** : tous doivent approuver le questionnaire avant qu’il puisse être validé. Au moins un approbateur requis est obligatoire.
+* **Approbateurs optionnels** : activez **Ajouter des approbateurs optionnels** pour convier des relecteurs dont l’approbation est suivie mais **n’est pas bloquante**.
 
-Seuls ces utilisateurs peuvent approuver, valider, demander une révision ou annuler la réponse.
+<figure><img src="../../.gitbook/assets/questionnaires-validate-1.png" alt="Section Approbateurs du formulaire de planification avec les approbateurs requis et optionnels"><figcaption><p>La section Approbateurs du formulaire de planification</p></figcaption></figure>
+
+Les approbateurs proposés par défaut se définissent dans la configuration du modèle, avec le champ **Responsables du questionnaire** (voir [Créer un modèle de questionnaire](templates/README.md)). Seuls les approbateurs de la réponse peuvent approuver, valider, demander une révision ou annuler la réponse.
 
 {% hint style="success" %}
-Vous pouvez désactiver entièrement cette étape à la planification avec l’option « Désactiver l’étape d’approbation ». La réponse est alors publiée directement dès la finalisation par les répondants.
+Vous pouvez désactiver entièrement cette étape à la planification avec l’option **Désactiver l’étape d’approbation**. La réponse est alors publiée directement dès la finalisation par les répondants.
 {% endhint %}
 
 ## L’écran de revue
@@ -42,17 +44,17 @@ Depuis la réponse, cliquez sur **« Revoir et valider le questionnaire »**. L�
 
 Chaque question peut recevoir un statut d’évaluation :
 
-* **Pas de statut** — question non qualifiée (statut par défaut, non bloquant)
-* **Validé** — la réponse est acceptée
-* **Besoin de révision** — la réponse doit être complétée ou corrigée
-* **Non validé** — la réponse est rejetée
+* **Pas de statut** : question non qualifiée (statut par défaut, non bloquant)
+* **Validé** : la réponse est acceptée
+* **Besoin de révision** : la réponse doit être complétée ou corrigée
+* **Non validé** : la réponse est rejetée
 
 Un sélecteur situé en haut de chaque section permet d’appliquer le même statut à toutes les questions affichées d’un seul geste.
 
 Pour chaque question, vous pouvez également :
 
-* **Ajouter une annotation** — échange interne avec les répondants et les autres validateurs
-* **Ajouter une tâche** — alimente directement le plan d’actions
+* **Ajouter une annotation** : échange interne avec les répondants et les autres validateurs
+* **Ajouter une tâche** : alimente directement le plan d’actions
 * **Compléter la justification** de la réponse et **joindre une pièce jointe**
 * **Qualifier un risque** lorsque la question y est associée
 
@@ -71,7 +73,7 @@ Le panneau **« Approbations requises (n/total) »** récapitule l’état de ch
 
 Deux actions complémentaires :
 
-* **Révoquer mon approbation** — retire votre approbation tant que le questionnaire n’est pas validé.
+* **Révoquer mon approbation** : retire votre approbation tant que le questionnaire n’est pas validé.
 * Si vous êtes le **dernier validateur requis** à approuver, Dastra vous propose immédiatement d’enchaîner sur la validation et la publication.
 
 ## Valider et publier
@@ -94,7 +96,7 @@ L’action **« Demander révision »** renvoie le questionnaire aux répondants
 * la réponse repasse en « En cours » et une **nouvelle échéance** est calculée à partir du délai du modèle (30 jours par défaut) ;
 * **toutes les approbations déjà données sont réinitialisées** ;
 * un **tour de correction** est comptabilisé dans l’historique de la réponse ;
-* une notification est envoyée à chaque répondant, avec votre message de revue — que vous pouvez rédiger librement ou pré-remplir depuis un modèle d’e-mail.
+* une notification est envoyée à chaque répondant, avec votre message de revue, que vous pouvez rédiger librement ou pré-remplir depuis un modèle d’e-mail.
 
 Lorsque les répondants finalisent à nouveau, le cycle de validation reprend depuis le début.
 
@@ -104,4 +106,4 @@ L’action **« Annuler le questionnaire »** met fin au cycle sans publication.
 
 ## Suivre les questionnaires à valider
 
-Les questionnaires qui attendent votre approbation sont regroupés dans « En attente de ma validation » depuis vos questionnaires, et signalés par le badge « En attente de validation » dans les listes et le reporting.
+Pour retrouver les questionnaires qui attendent votre approbation, ouvrez **Mes réponses aux questionnaires** et filtrez sur le statut **En attente de validation**. Le même badge signale ces réponses dans les listes et le reporting.
