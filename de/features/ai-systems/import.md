@@ -1,64 +1,73 @@
+---
+description: >-
+  Importieren Sie Ihr bestehendes Verzeichnis von KI-Systemen aus einer CSV- oder
+  Excel-Datei in Dastra, mit dem erwarteten Format jeder Spalte.
+---
+
 # Ihre KI-Systeme importieren
 
-Sie können Ihr bestehendes Verzeichnis ganz einfach direkt in Dastra hochladen. So müssen Sie nicht alles manuell ausfüllen.
+Wenn Sie bereits ein Verzeichnis von KI-Systemen haben, importieren Sie es in Dastra, statt alles von Hand einzugeben.
 
-Gehen Sie dazu zur Listenansicht mit dem Titel „KI-Systeme". Öffnen Sie oben rechts das Dropdown-Menü neben der Schaltfläche „Neues KI-System erstellen" und klicken Sie dann auf „Importieren". Eine neue Seite erscheint, auf der Sie unten Ihr bestehendes Verzeichnis hinzufügen können.
+1. Klicken Sie in der Seitenleiste auf **KI-Governance** und dann auf **KI-Systeme**.
+2. Öffnen Sie oben rechts das Menü der Schaltfläche **Ein neues KI-System erstellen** und klicken Sie auf **Importieren**.
+3. Fügen Sie auf der Seite, die sich öffnet, am unteren Rand Ihre Datei hinzu.
 
-<figure><img src="../../.gitbook/assets/KI-Register1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-import-1.png" alt="Menü der Schaltfläche zum Erstellen eines KI-Systems mit den Aktionen zum Erstellen aus Vorlagen, Importieren und Exportieren"><figcaption><p>Die Aktion Importieren im Menü des Verzeichnisses der KI-Systeme</p></figcaption></figure>
 
-Wir empfehlen Ihnen, die Schritte auf der Seite [Ihre Daten importieren (Excel, CSV, JSON)](../general/import.md) für weitere Details zu befolgen.
+Einzelheiten zum Ablauf finden Sie unter [Daten importieren (Excel, CSV)](../general/import.md).
 
-## Importformat der KI-Systeme in Dastra
+## Dateiformat
 
-Dieser Leitfaden beschreibt das erwartete Format für die CSV-Datei zum Import von KI-Systemen in Dastra.
+Die Datei enthält eine Kopfzeile mit den unten beschriebenen Spaltennamen. Alle Spalten sind optional, außer `Label`.
 
-***
+Spalten mit festen Werten erwarten genau die Werte der Spalte „Zulässige Werte“. Die Groß- und Kleinschreibung spielt keine Rolle. Ein Wert, der keinem der zulässigen Werte entspricht, wird ignoriert.
 
-### Struktur der CSV-Datei
+| Spalte | Beschreibung | Typ | Einschränkungen | Zulässige Werte |
+| --- | --- | --- | --- | --- |
+| `Label` | Name des Systems | Text | Pflichtfeld, 1 bis 120 Zeichen | Freitext |
+| `Ref` | Interne Referenz | Text | höchstens 50 Zeichen | Freitext |
+| `Description` | Beschreibung des Systems | Text | höchstens 4.000 Zeichen | Freitext |
+| `State` | Status des Systems | `AiSystemState` | | `Draft`, `Cancelled`, `Pending`, `Active` |
+| `RiskLevel` | Risikostufe | `AiSystemRiskLevel` | | `Low`, `Medium`, `High`, `Unacceptable` |
+| `RiskLevelJustification` | Begründung der Risikostufe | Text | | Freitext |
+| `BenefitLevel` | Stufe des geschäftlichen Mehrwerts | `AiSystemBenefitLevel` | | `Low`, `Medium`, `High` |
+| `BenefitLevelJustification` | Begründung des geschäftlichen Mehrwerts | Text | | Freitext |
+| `DateArchived` | Datum der Verschiebung in den Papierkorb | Datum | Formate `DD-MM-YYYY` oder `DD/MM/YYYY` | Datum |
+| `DateCreation` | Erstellungsdatum | Datum | gleiches Format | Datum |
+| `DateUpdate` | Datum der letzten Aktualisierung | Datum | gleiches Format | Datum |
+| `DateDeployment` | Datum der Einführung | Datum | gleiches Format | Datum |
+| `DateRetirement` | Datum der Außerbetriebnahme | Datum | gleiches Format | Datum |
+| `TransparencyNoticeDone` | Ein Transparenzhinweis wurde bereitgestellt | Boolescher Wert | | `true` oder `false` |
+| `TransparencyNoticeHtml` | Inhalt des Hinweises | Text | | HTML |
 
-Die Datei muss eine Kopfzeile enthalten, die den unten beschriebenen Spalten entspricht.\
-Alle Felder sind optional, außer **Label**.
+### Zuordnung zu den in der Anwendung angezeigten Bezeichnungen
 
-***
+Die Werte in der Datei sind die technischen Namen, nicht die in der Anwendung angezeigten Bezeichnungen. Schreiben Sie nicht die Bezeichnung vom Bildschirm in die Datei.
 
-### Tabelle der Importfelder
+| Spalte | Wert in der Datei | Angezeigte Bezeichnung |
+| --- | --- | --- |
+| `State` | `Draft` | Projekt |
+| `State` | `Pending` | In Bearbeitung |
+| `State` | `Active` | In Bearbeitung |
+| `State` | `Cancelled` | Abgebrochen |
+| `RiskLevel` | `Low` | Minimal |
+| `RiskLevel` | `Medium` | Begrenztes Risiko |
+| `RiskLevel` | `High` | Hohes Risiko |
+| `RiskLevel` | `Unacceptable` | Nicht akzeptabel |
+| `BenefitLevel` | `Low` | Niedrig |
+| `BenefitLevel` | `Medium` | Mittel |
+| `BenefitLevel` | `High` | Hoch |
 
-> 💡 **Wichtig:** Spalten vom Typ _Enum_ müssen strikt die in der Spalte „Zulässige Werte" angegebenen Werte verwenden.
-
-| **Spalte**                    | **Beschreibung**                  | **Typ**              | **Einschränkungen**                                | **Zulässige Werte**               |
-| ----------------------------- | --------------------------------- | -------------------- | -------------------------------------------------- | --------------------------------- |
-| **Label**                     | Name des Systems                  | String               | **Pflichtfeld**, 1–120 Zeichen                     | —                                 |
-| **Ref**                       | Interne Referenz                  | String               | Optional, max. 50 Zeichen                          | —                                 |
-| **Description**               | Beschreibung des Systems          | String               | Optional, max. 4000 Zeichen                        | —                                 |
-| **State**                     | Status des Systems                | AiSystemState        | Optional                                           | Draft, Cancelled, Pending, Active |
-| **RiskLevel**                 | Risikoniveau                      | AiSystemRiskLevel    | Optional                                           | Low, Medium, High, Unacceptable   |
-| **RiskLevelJustification**    | Begründung des Risikoniveaus      | String               | Optional                                           | —                                 |
-| **BenefitLevel**              | Nutzwert-Niveau                   | AiSystemBenefitLevel | Optional                                           | Low, Medium, High                 |
-| **BenefitLevelJustification** | Begründung des Nutzwerts          | String               | Optional                                           | —                                 |
-| **DateArchived**              | Archivierungsdatum                | DateTime             | Optional — Formate: `DD-MM-YYYY` oder `DD/MM/YYYY` | —                                 |
-| **DateCreation**              | Erstellungsdatum                  | DateTime             | Optional — gleiches Format                         | —                                 |
-| **DateUpdate**                | Aktualisierungsdatum              | DateTime             | Optional — gleiches Format                         | —                                 |
-| **DateDeployment**            | Bereitstellungsdatum              | DateTime             | Optional — gleiches Format                         | —                                 |
-| **DateRetirement**            | Außerbetriebnahme-Datum           | DateTime             | Optional — gleiches Format                         | —                                 |
-| **TransparencyNoticeDone**    | Transparenzhinweis bereitgestellt | Boolean              | Optional                                           | true / false                      |
-| **TransparencyNoticeHtml**    | HTML-Inhalt des Hinweises         | String               | Optional, max. 4000 Zeichen                        | —                                 |
-
-***
-
-### Beispiel einer CSV-Zeile
-
-> ✨ _Hier ein vollständiges Beispiel einer korrekt formatierten Zeile:_
-
-```
-"ChatGPT interne","SYS-001","Modèle interne d'assistance documentaire","Active","Medium","Usage responsable mais risques modérés","High","Très forte valeur ajoutée pour les équipes","01/02/2024","15/01/2024","01/03/2024","20/03/2024","","false","<p>Cette IA est utilisée pour assister les employés dans la rédaction de documents internes.</p>"
-```
-
-***
-
-### Einsatzbereite CSV-Vorlage
-
-> Sie können _diese Vorlage in eine leere `.csv`-Datei kopieren:_
+## Beispielzeile
 
 ```
-Label,Ref,Description,State,RiskLevel,RiskLevelJustification,BenefitLevel,BenefitLevelJustification,Date
+"Internal ChatGPT","SYS-001","Internal documentation assistant model","Active","Medium","Moderate risks with responsible use","High","Very high business value","01/02/2024","15/01/2024","01/03/2024","20/03/2024","","false","<p>This AI system is used to assist employees in drafting internal documents.</p>"
+```
+
+## Gebrauchsfertige Kopfzeile
+
+Kopieren Sie diese Zeile in eine leere `.csv`-Datei:
+
+```
+Label,Ref,Description,State,RiskLevel,RiskLevelJustification,BenefitLevel,BenefitLevelJustification,DateArchived,DateCreation,DateUpdate,DateDeployment,DateRetirement,TransparencyNoticeDone,TransparencyNoticeHtml
 ```

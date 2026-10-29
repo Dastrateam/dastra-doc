@@ -1,143 +1,157 @@
 ---
 description: >-
-  Die Risikobibliothek ermöglicht die Identifizierung, Qualifizierung und
-  Überwachung von Risiken im Zusammenhang mit den Anforderungen und Kontrollen,
-  die in den Compliance-Frameworks definiert sind.
+  Die Risikobibliothek hilft, die Risiken zu identifizieren, zu qualifizieren
+  und zu verfolgen, die mit den Anforderungen und Kontrollen der
+  Compliance-Frameworks verbunden sind.
 ---
 
 # Risiken
 
-In Dastra stellt ein Risiko ein **befürchtetes Ereignis** dar, das negative Auswirkungen auf die Organisation haben kann, im Zusammenhang mit der Nutzung, Entwicklung oder dem Betrieb von Systemen (z. B. KI-Systeme).
+In Dastra stellt ein Risiko ein **befürchtetes Ereignis** dar, das negative Auswirkungen auf die Organisation haben kann, im Zusammenhang mit der Nutzung, Entwicklung oder dem Betrieb von Systemen (z. B. KI-Systemen).
 
-Die Risiken sind ein **Schlüsselelement der Steuerung**: Sie ermöglichen die Messung der Risikoexposition der Organisation und die Bewertung der tatsächlichen Wirksamkeit der umgesetzten Kontrollen.
-
-***
-
-### Risiken und Kontrollen: eine zentrale Beziehung
-
-Ein wesentlicher Punkt zum Verständnis ist, dass **Risiken niemals isoliert sind**.
-
-👉 In Dastra:
-
-* ein **Risiko wird durch eine oder mehrere Kontrollen abgedeckt**
-* eine **Kontrolle trägt zur Reduzierung eines oder mehrerer Risiken bei**
-
-Die Kontrollen bilden daher die **Maßnahmen zur Risikobeherrschung**.\
-Sie ermöglichen die Reduzierung:
-
-* der **Wahrscheinlichkeit** des Risikoeintritts,
-* und/oder seiner **Auswirkung** auf die Organisation.
-
-Diese Beziehung ermöglicht den Übergang von einem deklarativen Ansatz zu einem **operativen Risikomanagement**, das auf konkreten und überprüfbaren Maßnahmen basiert.
+Risiken sind ein **zentrales Steuerungselement**: Sie ermöglichen es, die Risikoexposition der Organisation zu messen und die tatsächliche Wirksamkeit der vorhandenen Kontrollen zu bewerten.
 
 ***
 
-### Bibliotheksansicht der Risiken
+## Risiken und Kontrollen: eine zentrale Beziehung
 
-<figure><img src="../../../.gitbook/assets/Compliance24.png" alt=""><figcaption></figcaption></figure>
+**Risiken stehen nie für sich allein.**
 
-Die Risikobibliothek bietet einen Gesamtüberblick über die identifizierten Risiken, insbesondere:
+In Dastra gilt:
 
-* ihre Referenz und Beschreibung,
-* die zugehörigen Tags (Vertraulichkeit, Leistung, Robustheit usw.),
-* die anfänglichen Auswirkungs- und Wahrscheinlichkeitsstufen,
-* Filter zur Erleichterung der übergreifenden Analyse.
+* ein **Risiko wird von einer oder mehreren Kontrollen abgedeckt**
+* eine **Kontrolle trägt zur Verringerung eines oder mehrerer Risiken bei**
 
-👉 Diese Ansicht ermöglicht:
+Die Kontrollen bilden daher die **Maßnahmen zur Risikominderung**.\
+Sie ermöglichen es, zu verringern:
 
-* die Hauptrisiken zu identifizieren,
+* die **Eintrittswahrscheinlichkeit** des Risikos,
+* und/oder seine **Auswirkung** auf die Organisation.
+
+Diese Beziehung ermöglicht den Übergang von einem deklarativen Ansatz zu einem **operativen Risikomanagement**, das auf konkreten und überprüfbaren Maßnahmen beruht.
+
+***
+
+## Ansicht der Risikobibliothek
+
+<figure><img src="../../../.gitbook/assets/image-497.png" alt="Risikobibliothek mit der Liste der Risiken"><figcaption></figcaption></figure>
+
+Die Risikobibliothek bietet einen Gesamtüberblick über die identifizierten Risiken, insbesondere mit:
+
+* ihrer Referenz und Beschreibung,
+* den zugehörigen Tags (Vertraulichkeit, Leistung, Robustheit usw.),
+* den anfänglichen Stufen für Auswirkung und Wahrscheinlichkeit,
+* Filtern, die die übergreifende Analyse erleichtern.
+
+Diese Ansicht ermöglicht es,
+
+* die wesentlichen Risiken zu identifizieren,
 * ihre Abdeckung durch Kontrollen zu überprüfen,
-* die Compliance-Bemühungen zu priorisieren.
+* die Compliance-Maßnahmen zu priorisieren.
 
 ***
 
-### Erstellung und Beschreibung eines Risikos
+## Ein Risiko erstellen und beschreiben
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/Compliance25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-498.png" alt="Bearbeitungsfenster eines Risikos mit Name, Referenz, Beschreibung und Bewertung"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-Bei der Erstellung oder Bearbeitung eines Risikos gibt der Nutzer an:
+Beim Erstellen oder Bearbeiten eines Risikos geben Sie an:
 
 * **den Namen und die Referenz des Risikos**
-* eine **Beschreibung** zur Qualifizierung des Risikoszenarios
-* **Tags** zur Erleichterung der Kategorisierung
+* eine **Beschreibung**, die das Risikoszenario qualifiziert
+* **Tags**, die die Kategorisierung erleichtern
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Risikobewertung
+## Risikobewertung
 
-Jedes Risiko wird in zwei unterschiedlichen Bewertungen erfasst:
+Jedes Risiko wird in zwei erfassten Bewertungen beurteilt, dem Anfangsrisiko und dem Restrisiko, hinzu kommt eine berechnete Stufe, das aktuelle Risiko:
 
-#### Anfangsrisiko
+### Anfangsrisiko
 
-Das **Anfangsrisiko** entspricht dem Risikoniveau **vor der Umsetzung der Kontrollen**.
+Das **Anfangsrisiko** entspricht der Risikostufe **vor der Umsetzung der Kontrollen**.
 
-Es wird bewertet anhand:
+Es wird bewertet anhand von:
 
 * einer **Wahrscheinlichkeit**
 * einer **Auswirkung**
 
-Diese beiden Dimensionen werden auf einer **standardisierten Risikomatrix** positioniert.
+Diese beiden Dimensionen werden in einer standardisierten **Risikomatrix** eingeordnet.
 
 ***
 
-#### Restrisiko
+### Restrisiko
 
-Das **Restrisiko** entspricht dem Risikoniveau **nach Anwendung der zugehörigen Kontrollen**.
+Das **Restrisiko** entspricht der Risikostufe **nach Anwendung der zugehörigen Kontrollen**.
 
-👉 Der Vergleich zwischen Anfangsrisiko und Restrisiko ermöglicht:
+Der Vergleich von Anfangsrisiko und Restrisiko ermöglicht es,
 
 * die Wirksamkeit der Kontrollen zu messen,
-* die Risikoreduktion zu visualisieren,
-* die Abhilfemaßnahmen zu begründen.
+* die Verringerung des Risikos zu veranschaulichen,
+* die Entscheidungen zu den Abhilfemaßnahmen zu begründen.
 
-📌 Derzeit ist die **Risikomatrix fest** und für alle Risiken gleich, um eine homogene und vergleichbare Bewertung zu gewährleisten.
+Derzeit ist die **Risikomatrix fest vorgegeben** und für alle Risiken gleich, damit die Bewertung einheitlich und vergleichbar bleibt.
 
 ***
 
-### Zuordnung von Kontrollen
+### Aktuelles Risiko
+
+In einem Projekt zeigt Dastra zusätzlich das **aktuelle Risiko**. Es stellt die Risikostufe zu einem bestimmten Zeitpunkt dar, auf Grundlage des tatsächlichen Fortschritts der Abhilfemaßnahmen und Kontrollen. Es entwickelt sich daher zwischen dem Anfangsrisiko und dem Restrisiko.
+
+Die drei Stufen sind nebeneinander in der Ansicht **Kartografie** des Tabs **Risiken** eines Projekts sichtbar (siehe [Projektimplementierung](../projects/implement.md)).
+
+***
+
+## Kontrollen zuordnen
 
 {% columns %}
 {% column %}
-Ein Risiko muss einem oder mehreren **Kontrollen** zugeordnet werden, die die zur Beherrschung umgesetzten Maßnahmen darstellen.
+Ein Risiko muss einer oder mehreren **Kontrollen** zugeordnet werden, die die Maßnahmen darstellen, die zu seiner Minderung umgesetzt werden.
 
-Die Zuordnung ermöglicht:
+Die Zuordnung ermöglicht es,
 
-* die Hebel zur Risikoreduktion klar zu identifizieren,
+* die Hebel zur Verringerung des Risikos klar zu identifizieren,
 * die Auswirkung der Kontrollen auf das Restrisiko zu verfolgen,
 * die Nachvollziehbarkeit zwischen Compliance und Risikomanagement sicherzustellen.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/Compliance26.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-499.png" alt="Suche nach Kontrollen, die einem Risiko zugeordnet werden sollen"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-### Zuordnung von Bedrohungen
+## Bedrohungen zuordnen
 
-Die Risiken können auch mit **Bedrohungen** verknüpft werden, die die **Ereignisse oder Ursachen** darstellen, die ein Risiko auslösen können.
+Risiken können auch mit **Bedrohungen** verknüpft werden, die die **Ereignisse oder Ursachen** darstellen, die das Risiko auslösen können.
 
-👉 Beispiel:
+Beispiel:
 
-* **Bedrohung**: fehlende Überwachung der KI-Logs
+* **Bedrohung**: fehlende Überwachung der KI-Protokolle
 * **Risiko**: Informationsabfluss über KI-Anfragen
 
 Diese Unterscheidung ermöglicht eine feinere und strukturiertere Analyse der Risikoszenarien.
 
 ***
 
-### Warum Risiken in die Bibliothek integrieren
+## Risiken zusammenführen
+
+Wie bei den Kontrollen und Tests kann die Risikobibliothek Duplikate enthalten. Wählen Sie mindestens zwei Risiken aus und klicken Sie dann in den Sammelaktionen auf **Zusammenführen** oder im Bearbeitungsfenster eines Risikos auf **Zusammenführen**. Der Assistent entspricht dem für Kontrollen: Wählen Sie die **Reference version** und die Felder, die übernommen werden sollen (siehe [Kontrollen](controls.md)). Die Zusammenführung ist unwiderruflich.
+
+***
+
+## Warum Risiken in die Bibliothek aufnehmen
 
 Die Zentralisierung der Risiken in der Bibliothek ermöglicht:
 
-* einen übergreifenden Blick auf die Risiken über alle Frameworks hinweg
-* eine bessere Kohärenz bei ihrer Bewertung
+* einen übergreifenden Blick auf die Risiken aller Frameworks
+* eine einheitlichere Bewertung
 * eine direkte Verbindung zwischen Risiken, Kontrollen und Anforderungen
-* eine effizientere Steuerung der Compliance und der Sicherheit
+* eine wirksamere Steuerung von Compliance und Sicherheit

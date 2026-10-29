@@ -1,104 +1,112 @@
 ---
 description: >-
-  Die Bedrohungsbibliothek ermöglicht die Identifizierung und Dokumentierung von
-  Ursachen oder Ereignissen, die ein Risiko auslösen können.
+  Die Bedrohungsbibliothek hilft, die Ursachen oder Ereignisse zu
+  identifizieren und zu dokumentieren, die ein Risiko auslösen können.
 ---
 
 # Bedrohungen
 
 In Dastra stellt eine Bedrohung den **auslösenden Faktor** eines Risikos dar:\
-sie beschreibt, _wie_ oder _warum_ sich ein Risiko materialisieren kann.
+Sie beschreibt, _wie_ oder _warum_ ein Risiko eintreten kann.
 
-👉 Die Bedrohungen bereichern die Risikoanalyse, ohne deren Bewertung zu verkomplizieren.
+Bedrohungen bereichern die Risikoanalyse, ohne ihre Bewertung zu verkomplizieren.
 
 ***
 
-### Bedrohungen, Risiken und Kontrollen: kausale Logik
+## Bedrohungen, Risiken und Kontrollen: die Kausallogik
 
-Das Dastra-Modell basiert auf einer einfachen und lesbaren Kette:
+Das Modell von Dastra beruht auf einer einfachen und gut lesbaren Kette:
 
-> **Bedrohung → Risiko → Kontrollen → Tests**
+> **Bedrohung** > **Risiko** > **Kontrollen** > **Tests**
 
 * Eine **Bedrohung** beschreibt eine Situation, ein Verhalten oder ein Ereignis
-* Ein **Risiko** beschreibt die potenzielle Auswirkung auf die Organisation
-* Die **Kontrollen** zielen darauf ab, das Eintreten oder die Auswirkungen des Risikos zu begrenzen
-* Die **Tests** ermöglichen die Überprüfung der Wirksamkeit der Kontrollen
+* Ein **Risiko** beschreibt die mögliche Auswirkung auf die Organisation
+* **Kontrollen** zielen darauf ab, den Eintritt oder die Folgen des Risikos zu begrenzen
+* **Tests** ermöglichen es, die Wirksamkeit der Kontrollen zu überprüfen
 
-📌 Beispiel:
+Beispiel:
 
-* **Bedrohung**: fehlende Überwachung der KI-Logs
+* **Bedrohung**: fehlende Überwachung der KI-Protokolle
 * **Risiko**: Informationsabfluss über KI-Anfragen
-* **Kontrollen**: Protokollierung, Überwachung, Sensibilisierung
+* **Kontrollen**: Protokollierung, Überwachung, Sensibilisierungsschulungen
 * **Tests**: Überprüfung der Protokolle, regelmäßige Audits
 
 ***
 
-### Bibliotheksansicht der Bedrohungen
+## Ansicht der Bedrohungsbibliothek
 
-<figure><img src="../../../.gitbook/assets/Compliance27.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-501.png" alt="Bedrohungsbibliothek mit der Liste der Bedrohungen"><figcaption></figcaption></figure>
 
 Die Bedrohungsbibliothek zentralisiert alle identifizierten Bedrohungen mit:
 
 * ihrem Namen und ihrer Referenz,
 * ihrem Erstellungsdatum,
-* Filtern zur Erleichterung der Navigation.
+* Filtern, die die Navigation erleichtern.
 
-👉 Diese Ansicht ermöglicht:
+Diese Ansicht ermöglicht es,
 
 * bestehende Bedrohungen wiederzuverwenden,
-* eine einheitliche Terminologie zu gewährleisten,
+* eine einheitliche Terminologie sicherzustellen,
 * kohärente Risikoszenarien zu strukturieren.
 
 ***
 
-### Erstellung und Verwaltung einer Bedrohung
+## Eine Bedrohung erstellen und verwalten
 
 {% columns %}
 {% column %}
-Bei der Erstellung oder Bearbeitung einer Bedrohung gibt der Nutzer an:
+
+
+Beim Erstellen oder Bearbeiten einer Bedrohung geben Sie an:
 
 * **den Namen der Bedrohung**
 * **eine interne Referenz**
-* eine **optionale Beschreibung** zur Kontextualisierung der Bedrohung
+* eine **optionale Beschreibung**, die die Bedrohung in ihren Kontext einordnet
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/Compliance28.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-502.png" alt="Bearbeitungsfenster einer Bedrohung"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
-Das Modul ist bewusst **schlank**:\
-Die Bedrohungen tragen keine numerische Bewertung und sind nicht direkt mit den Kontrollen verknüpft.
+Das Modul ist bewusst **schlank** gehalten:\
+Bedrohungen tragen keine quantifizierte Bewertung und sind nicht direkt mit Kontrollen verknüpft.
 
 ***
 
-### Zuordnung zu Risiken
+## Zuordnung zu Risiken
 
-Eine Bedrohung ist **einem oder mehreren Risiken** zugeordnet.
+Eine Bedrohung wird **einem oder mehreren Risiken** zugeordnet.
 
-Diese Zuordnung ermöglicht:
+Diese Zuordnung ermöglicht es,
 
-* Risikoszenarien präzise zu dokumentieren,
+* die Risikoszenarien genau zu dokumentieren,
 * das Verständnis der Ursachen zu verbessern,
 * die Kohärenz der Gesamtanalyse zu stärken.
 
-👉 Eine einzelne Bedrohung kann zu mehreren Risiken beitragen und umgekehrt.
+Dieselbe Bedrohung kann zu mehreren Risiken beitragen und umgekehrt.
 
 ***
 
-### Warum Bedrohungen verwenden
+## Warum Bedrohungen verwenden
 
 Die Verwendung von Bedrohungen ermöglicht:
 
 * eine feinere und realistischere Analyse der Risiken,
 * eine bessere Nachvollziehbarkeit der Szenarien,
-* eine klarere Kommunikation gegenüber den Beteiligten (CISO, Datenschutzbeauftragter, Fachabteilungen).
+* eine klarere Kommunikation mit den Beteiligten (CISO, Datenschutzbeauftragte, Fachbereiche).
 
-Die Bedrohungen ergänzen die Analyse, ohne das operative Management zu erschweren.
+Bedrohungen ergänzen die Analyse, ohne den operativen Verwaltungsaufwand zu erhöhen.
 
 ***
 
-### Zusammenfassung
+## Bedrohungen zusammenführen
 
-Die Bedrohungen sind ein **Klärungsinstrument**.\
-Sie ermöglichen ein besseres Verständnis des **Ursprungs der Risiken** und damit eine bessere Begründung der umgesetzten Kontrollen.
+Die Bedrohungsbibliothek lässt sich wie die Risikobibliothek zusammenführen: Wählen Sie mindestens zwei Bedrohungen aus und klicken Sie dann in den Sammelaktionen oder im Bearbeitungsfenster einer Bedrohung auf **Zusammenführen**. Wählen Sie die **Reference version** und die Felder, die übernommen werden sollen (siehe [Kontrollen](controls.md)). Die Zusammenführung ist unwiderruflich.
+
+***
+
+## Zusammenfassung
+
+Bedrohungen sind ein **Klärungsinstrument**.\
+Sie helfen, **den Ursprung der Risiken** besser zu verstehen und damit die vorhandenen Kontrollen besser zu begründen.
