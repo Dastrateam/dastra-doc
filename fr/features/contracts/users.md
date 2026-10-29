@@ -1,15 +1,11 @@
 # Utilisateurs associés
 
-Vous pouvez associer des utilisateurs de votre espace de travail à votre contrat afin de définir des rôles de validateur, réalisateur ou informé.
+Dans l'onglet **Utilisateurs**, associez des utilisateurs de votre espace de travail au document avec un rôle d'approbateur, de réalisateur ou d'informé. Cliquez sur **Ajouter un utilisateur**, choisissez l'utilisateur et son rôle.
 
-Voici une manière de définir les rôles de vos utilisateurs pour vos contrats :
+Voici une manière de répartir les rôles pour vos documents :
 
-* **Validateur** : il s'agit de l'utilisateur dans Dastra qui est en charge de valider que le contrat et les éléments associés tels qu'ils sont indiqués dans Dastra sont valides selon les attendus de l'organisation. ll peut être différent du signataire du contrat.
-* **Réalisateur** : c'est l'utilisateur qui a pour rôle de mettre en œuvre les actions nécessaires pour répondre aux exigences du contrat. Il peut s'agir de la mise en place des mesures de sécurité des données, de la gestion des accès ou de toute autre tâche requise pour assurer la conformité avec les termes du contrat.
-* **Informé** : cette catégorie regroupe les utilisateurs qui doivent être tenus informés de l'avancement et de l'état du contrat, sans avoir de rôle actif dans sa validation ou sa réalisation. Cela peut inclure des membres de l'équipe de direction, des gestionnaires de projet, ou d'autres parties prenantes qui ont un intérêt dans le bon déroulement du contrat.
+* **Approbateur** : l'utilisateur chargé de valider que le document et les éléments associés, tels qu'ils sont renseignés dans Dastra, répondent aux attentes de l'organisation. Il peut être différent du signataire du document.
+* **Réalisateur** : l'utilisateur chargé de mettre en œuvre les actions nécessaires pour répondre aux exigences du document. Il peut s'agir de mettre en place des mesures de sécurité des données, de gérer des accès ou de toute autre tâche requise pour respecter les termes du contrat.
+* **Informé** : les utilisateurs qui doivent être tenus au courant de l'avancement et de l'état du document, sans rôle actif dans sa validation ou sa réalisation. Cela peut inclure la direction, des chefs de projet ou d'autres parties prenantes.
 
-***
-
-***
-
-<figure><img src="../../.gitbook/assets/contracts-detail-users-tab.png" alt=""><figcaption><p>Associez des utilisateurs à votre contrat</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-users-1.png" alt="L'onglet Utilisateurs d'un document avec un utilisateur pour chacun des trois rôles"><figcaption><p>Associer des utilisateurs à un document</p></figcaption></figure>

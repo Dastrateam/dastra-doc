@@ -1,35 +1,56 @@
-# Sign the contract
+# Sign a document
 
-Once you have added at least one signatory to your contract ([see signers](signers.md)), you can manage the signing process of your contract. It's important to note that you must save your contract in order to proceed with signing. Any pending modifications that have not been saved will lock the sign button.
+Once you have added at least one signer to your document (see [Signers](signers.md)), you can manage its signature. Save the document first: as long as a change is not saved, the signature buttons are locked.
 
-You have the option to declare signatures manually or [integrate with Docusign](docusign.md) to handle the entire electronic signature process electronically. This integration streamlines the signing workflow and ensures compliance with electronic signature requirements.
+## Manual signature or Docusign
 
-<figure><img src="../../.gitbook/assets/settings-message-templates-tabs.png" alt=""><figcaption></figcaption></figure>
+The **Add signature** window offers two modes:
 
-There are several ways to access the signing menu:
+* **Manual**: you declare that signers have signed. Select the signers whose signature you want to record, enter the **Signature date**, then click **Add signature**.
+* **Sign with Docusign®**: Dastra sends the document for electronic signature and tracks its progress. This mode requires the [Docusign integration](docusign.md).
 
-1. **Declare Individual Signatures**: You can declare the signature of each signatory individually by clicking on the "Add Signature" button next to each signatory.
-2. **Declare Multiple Signatures Simultaneously**: To sign multiple signatories simultaneously, click on the arrow next to the "Add Signature" button. You will be prompted to select all the signatories for whom you want to sign.
-3. Signing from the Table View
+<figure><img src="../../.gitbook/assets/contracts-sign-1.png" alt="The Add signature window with the two modes, Manual and Sign with Docusign"><figcaption><p>The two signature modes</p></figcaption></figure>
 
-You can sign a contract directly from the summary table view.
+When every signer has a signature, Dastra asks whether you want to publish the document. Confirm to set the document to the **Active** status.
 
-<figure><img src="../../.gitbook/assets/contracts-signers-sign-all-dropdown.png" alt=""><figcaption><p>Sign from the signers tab of the contract</p></figcaption></figure>
+## Open the signature window
 
-<figure><img src="../../.gitbook/assets/cookies-widget-api-key-modal.png" alt=""><figcaption><p>Sign from the table view</p></figcaption></figure>
+There are three ways to open the signature window.
 
-#### The "Sign" Button in the Main Actions Area
+### Sign for one signer
 
-In the main actions area of your contract (see ), you will find a button related to signatures. Depending on the number of signatories listed and the number of signatures received, this button will change status:
+In the **Signers - Signatories** tab, click **Add signature** on the row of the signer concerned.
 
-**1) No Signatories**: Declare signatories to interact with this button.
+### Sign for several signers
 
-<figure><img src="../../.gitbook/assets/planning-tasks-kanban-board.png" alt=""><figcaption></figcaption></figure>
+Click the arrow on the right of the **Add signer** button, then **Sign all - Apply all signatures**. You then select the signers for whom you record the signature.
 
-**2) Signatures Missing**: By clicking this state, you can declare any missing signatures.
+<figure><img src="../../.gitbook/assets/contracts-sign-2.png" alt="The Add signer button menu with the Sign all - Apply all signatures action"><figcaption><p>Sign for several signers from the Signers tab</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-sign-all-signers-button.png" alt=""><figcaption></figcaption></figure>
+### Sign from the record
 
-**3) Contract Signed by All Signatories**: By clicking this state, you can remove signatures if needed.
+In the record, open the menu of the document row, then click **Add signature**. This action is disabled when all signers have already signed.
 
-<figure><img src="../../.gitbook/assets/contracts-signed-status-header.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-sign-3.png" alt="The menu of a record row with the Add signature action"><figcaption><p>Sign from the record</p></figcaption></figure>
+
+## The signature button of the record
+
+In the main actions menu of the record (see [Structure of a document](structure.md)), a button summarizes the state of the signatures. Its label changes with the number of signers and the number of signatures received.
+
+### No signers
+
+The button is disabled and shows **no signers**. Add signers to use it.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-4.png" alt="The disabled signature button with the label no signers"><figcaption><p>No signers</p></figcaption></figure>
+
+### Signatures are missing
+
+The button shows **Sign all - Apply all signatures** followed by the number of signatures received out of the number of signers. Click it to declare the missing signatures.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-5.png" alt="The Sign all - Apply all signatures button with the signature counter"><figcaption><p>Signatures are missing</p></figcaption></figure>
+
+### Document signed by all signers
+
+The button shows **Signed**. On hover, it becomes **Delete signature**: after confirmation, a click deletes the signatures if you need to redo them.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-6.png" alt="The Signed button"><figcaption><p>Document signed by all signers</p></figcaption></figure>

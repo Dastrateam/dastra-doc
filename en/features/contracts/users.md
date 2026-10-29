@@ -1,11 +1,11 @@
 # Linked users
 
-You can associate users from your workspace with your contract to define roles such as **Accountable**, **Responsible**, or Informed.
+In the **Users** tab, associate users from your workspace with the document and give them a role: **Accountable**, **Responsible** or **Informed**. Click **Add a user**, then choose the user and their role.
 
-Here's how you can define roles for your users in your contracts:
+Here is one way to split the roles for your documents:
 
-1. **Accountable**: This is the user in Dastra responsible for validating that the contract and associated elements as documented in Dastra meet the organization's expectations. This role may differ from the contract signatory.
-2. **Responsible**: This user is tasked with executing actions necessary to meet the contract's requirements. This could involve implementing data security measures, managing access, or any other tasks required to ensure compliance with the contract terms.
-3. **Informed**: This category includes users who need to be kept informed about the progress and status of the contract but do not have an active role in its validation or implementation. This may include members of the management team, project managers, or other stakeholders who have an interest in the successful execution of the contract.
+* **Accountable**: the user in charge of validating that the document and the associated elements, as documented in Dastra, meet the organization's expectations. This role may differ from the signer of the document.
+* **Responsible**: the user in charge of carrying out the actions needed to meet the requirements of the document. This could involve implementing data security measures, managing access or any other task required to comply with the terms of the contract.
+* **Informed**: the users who need to be kept up to date on the progress and status of the document, without an active role in its validation or implementation. This can include management, project managers or other stakeholders.
 
-<figure><img src="../../.gitbook/assets/dsr-message-template-selection.png" alt=""><figcaption><p>Link users to your contract</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-users-1.png" alt="The Users tab of a document with one user for each of the three roles"><figcaption><p>Link users to a document</p></figcaption></figure>

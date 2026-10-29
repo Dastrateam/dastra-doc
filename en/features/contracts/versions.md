@@ -1,67 +1,57 @@
-# Contract versions
+# Document versions
 
-To track changes, updates, or even renewals of your contract, you can version your contract.
+To track changes, updates or the renewal of a document, create a new version of it.
 
-Each version is identified by an incrementally incremented revision number created automatically when a version is initiated. This revision number is visible from the summary table view of your contracts.
+Each version has a revision number, incremented automatically at creation. This number is visible in the record. A document has only one active version at a time: it is the one the record displays, and inactive versions do not appear there.
 
-A contract can only have one active version at a time, which is the version displayed in the summary table view (inactive versions are not visible in the summary table view).
+You can browse the versions of a document from the versions manager, display a previous version and make any version active at any time, including a more recent one.
 
-You can navigate through different versions of a contract using the contract version manager. You can view previous versions of your contract on-screen and activate any version at any time, including a later version.
+## The versions manager
 
-### Version Manager
+When you create a document, Dastra creates its version 1. The **Version** button followed by the number, in the main actions menu, opens the versions manager.
 
-When you create a contract, we create version 1 of that contract by default, which is visible in the main contract action menu
+<figure><img src="../../.gitbook/assets/contracts-versions-1.png" alt="The Version 1 button in the main actions menu of the record"><figcaption><p>The button that opens the versions manager</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-version-button-highlighted.png" alt=""><figcaption><p>Button to access the versions manager</p></figcaption></figure>
+The manager lists all versions of the document. Each card shows the version number, its description, its creation date and the number of its attachments. A dot gives the state of the version: green for the **Active** version, red for a **Disabled** one. The **(Currently displayed)** mention marks the version you are viewing on screen.
 
-By clicking on this button, you will acess the version manager
+<figure><img src="../../.gitbook/assets/contracts-versions-2.png" alt="The versions manager with several versions, including the active version and the displayed version"><figcaption><p>The versions manager</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-version-manager-panel.png" alt=""><figcaption></figcaption></figure>
+## Create a new version
 
-This menu allows you to view and manage all versions of your contract, as well as create new ones by clicking on "Create a New Version."
+The new version starts from the version currently displayed: first go to the version you want to start from.
 
-### Create a New Version
+1. In the versions manager, click **Create a new version**.
+2. Enter the **Start date** and, if needed, the **Deadline**. You can edit them later.
+3. Add a **Version description** if you wish.
+4. Turn on **Copy attachments in new version** to carry the files over.
+5. Click **Create a new version**.
 
-By clicking on "Create a New Version," you can create a new version by providing the following information:
+<figure><img src="../../.gitbook/assets/contracts-versions-3.png" alt="The window to create a version with the dates, the description and the option to copy attachments"><figcaption><p>The window to create a version</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-create-version-modal.png" alt=""><figcaption><p>Create a version form</p></figcaption></figure>
+The document name, description, organizational unit, assets, signers and users are kept in the new version. The created version becomes the active version, and the displayed one.
 
-It's important to note that when you create a new version:
+## View a version
 
-* The contract name, description, organizational unit, assets, signatories, and users will be retained in the new version.
-* You will be asked to specify the start and end dates of the contract for the new version (which you can modify later), and you can add a description to this new version.
-* Regarding attachments in your contract, you can choose whether to transfer them to the new version by checking the box "Copy Attachments to the New Version."
-* The new version is generated based on the currently displayed version when you click "Create a New Version." Therefore, it's crucial to ensure you are on the correct version from which you want to create your new version.
-* The newly created version automatically becomes the active version of your contract (the version visible in the summary table view of contracts).
+In the versions manager, open the version menu (the three dots), then click **View**. This action is not offered for the version already displayed.
 
-### To view a version
+You can view and edit a version that is not the active version. Dastra reminds you with a message in the manager and with the **Inactive version** mention above the tabs of the record. Do not confuse the active version, which is unique and is the reference, with the displayed version.
 
-1. Navigate to the version manager.
-2. Click on the three-dot menu next to the version you want to view.
-3. Select "Display" from the options.
+<figure><img src="../../.gitbook/assets/contracts-versions-4.png" alt="A document record displaying an inactive version, with the Inactive version mention"><figcaption><p>Version 4 is the active version, but you can view and edit version 2</p></figcaption></figure>
 
-It's important to note the following:
+## Make a version active
 
-* You can view and modify a version that is not the active version of your contract.
-* Differentiate between the active version (singular), which is the reference version for your contract and marked with a green dot in the version manager, and the currently displayed version.
-* Inactive versions of the contract are marked with a red dot in the contract manager.
+A created version automatically becomes the active version. To make another version active, open its menu in the versions manager and click **Activate**. This action is offered only for inactive versions.
 
-<figure><img src="../../.gitbook/assets/settings-sso-openid-redirect-uri.png" alt=""><figcaption><p>Although version 4 is the active version, I can still view and work on version 2.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-versions-5.png" alt="The menu of an inactive version with the Activate action"><figcaption><p>Set a version as the active version</p></figcaption></figure>
 
-### Making a Version Active
+## Edit the description of a version
 
-When you create a new version, it automatically becomes the active and currently displayed version.
+To change the description of an existing version, open its menu and click **Edit version description**. Edit the text in the window that opens, then click **Edit version**.
 
-You can manually make a version active by going to the version manager and clicking the "Activate" option for the desired version.
+## Delete a version
 
-<figure><img src="../../.gitbook/assets/contracts-add-signature-modal.png" alt=""><figcaption><p>Set version 2 as active / main version</p></figcaption></figure>
+Open the menu of an inactive version and click **Delete**. You cannot delete the active version or the version currently displayed: display another version to delete this one.
 
-### Deletion
+<figure><img src="../../.gitbook/assets/contracts-versions-6.png" alt="The menu of an inactive version with the Delete action"><figcaption><p>Delete a version</p></figcaption></figure>
 
-You can delete an inactive version of the contract at any time by clicking on "Delete" in the version's menu.
-
-<figure><img src="../../.gitbook/assets/contracts-add-signatory-dropdown.png" alt=""><figcaption></figcaption></figure>
-
-You cannot delete the active version of the contract or the currently displayed version.
-
-It's important to note that deleting your contract from the contract module's summary table view will result in the deletion of the active version as well as all inactive versions of the contract.
+Deleting a document deletes its active version and all its inactive versions.

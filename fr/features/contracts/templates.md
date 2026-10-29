@@ -1,45 +1,54 @@
 ---
 description: >-
   Générez des contrats à partir de modèles prédéfinis, enrichis dynamiquement
-  avec les données spécifiques issues de votre registre.
+  avec les données spécifiques issues de votre registre, ou créez vos propres
+  modèles de documents.
 ---
 
 # Modèles de contrats dynamiques
 
-### Comment utiliser nos modèles de contrats ?
+## Utiliser un modèle
 
-Lorsque vous [renseignez un contrat dans Dastra](declare.md), vous pouvez sélectionner lors de la création l'option 'générer automatiquement' afin d'utiliser l'un de nos modèles de contrats dynamiques.
+Lorsque vous [créez un document dans Dastra](declare.md), choisissez l'option **Générer automatiquement** pour utiliser un modèle dynamique. Vous accédez à la liste des modèles disponibles, par exemple le modèle de clauses contractuelles types pour vos contrats de sous-traitance (DPA).
 
-En sélectionnant cette option, vous accéderez à la liste de tous les modèles que nous proposons tel que le modèle pour gérer les clauses contractuelles types de vos contrats de sous-traitances (DPA).
+Avec le modèle de clauses types, le document est rempli avec les informations de votre registre des traitements et de vos référentiels. Plus ils sont complets, plus le document généré est pertinent.
 
-En utilisant par exemple notre modèle de clauses types, vous garantissez que vous respectez les obligations du RGPD avec vos sous-traitants tout en générant en quelques clics un contrat complet peuplé de manière dynamique avec toutes les informations issues de votre registre de traitement et de vos référentiels.
+<figure><img src="../../.gitbook/assets/contracts-templates-1.png" alt="La liste des modèles proposés par l'option Générer automatiquement"><figcaption><p>Sélectionnez le modèle à utiliser</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-create-from-template-modal.png" alt=""><figcaption><p>Sélectionnez le modèle de contrat que vous souhaitez utiliser</p></figcaption></figure>
+Une fois le modèle sélectionné, un panneau vous guide en plusieurs étapes. Les boutons **Suivant** et **Précédent** font avancer ou reculer.
 
-Une fois le modèle sélectionné, vous êtes redirigé vers un formulaire vous demandant de renseigner les informations nécessaires au remplissage du modèle. Ce formulaire est propre à chaque modèle et dépend des champs à peupler dynamiquement dans le modèle.
+1. **Instructions** : les consignes du modèle, lorsqu'il en comporte.
+2. **Choix des options** : un formulaire propre à chaque modèle, qui dépend des champs à remplir. Pour le DPA, vous choisissez le traitement du registre concerné, le sous-traitant avec qui vous établissez le contrat, et vous répondez à des questions sur les clauses optionnelles. Cliquez sur **Générer le modèle** pour passer à l'étape suivante.
+3. **Aperçu** : le document généré. Cliquez sur **Modifier** pour changer son contenu ou sa mise en page. Dastra vous prévient que la modification peut faire perdre des éléments de mise en page définis par le modèle.
 
-Pour reprendre l'exemple du DPA, il vous sera par exemple demandé de choisir le traitement de votre registre concerné par le DPA , le sous-traitant (se trouvant dans la fiche de traitement) avec qui vous souhaitez établir le contrat ainsi que diverses questions sur des choix ou des clauses optionnelles à insérer dans le contrat.
+<figure><img src="../../.gitbook/assets/contracts-templates-2.png" alt="L'étape Choix des options du modèle de DPA"><figcaption><p>Répondez aux questions du modèle</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-dpa-wizard-options.png" alt=""><figcaption><p>Répondez à quelques questions pour nous permettre de compléter le modèle</p></figcaption></figure>
+À l'étape **Aperçu**, renseignez le **Nom du document** et l'**Unité organisationnelle**. Sélectionnez l'emplacement de stockage et le format du fichier généré, **Fichier PDF (.pdf)** ou **Word (.docx)**, puis cliquez sur **Créer un document**.
 
-Une fois ces questions répondues, votre contrat est généré automatiquement et peuplé dynamiquement avec toutes les informations nécessaires (plus votre registre et vos référentiels seront complets, plus les informations insérées dans le modèle de contrat seront pertinentes).
+<figure><img src="../../.gitbook/assets/contracts-templates-3.png" alt="L'étape Aperçu avec le contenu du document, le nom, l'unité organisationnelle, l'emplacement de stockage et le format"><figcaption><p>Vérifiez et modifiez le document avant de le créer</p></figcaption></figure>
 
-Vous avez alors la possiblité de modifier ou de remettre en page le document que nous vous proposons dans une vue aperçu.
+Dastra crée le document, l'ajoute au registre et ouvre sa fiche.
 
-<figure><img src="../../.gitbook/assets/contracts-dpa-wizard-preview.png" alt=""><figcaption><p>Vous pouvez vérifier et modifier le document que nous générons automatiquement avant validation finale</p></figcaption></figure>
+## Générer un DPA depuis une fiche de traitement
 
-Une fois que vous êtes satisfait de votre document, il ne vous reste plus qu'à donner un titre à votre contrat, sélectionner le format de génération (.docx ou .pdf), l'emplacement de stockage et cliquer sur 'Créer un contrat'
+Vous pouvez aussi partir de la fiche de traitement concernée, sans passer par le module **Contrats et politiques**. Ouvrez la fiche du traitement, puis l'étape **Destinataires**. Sur la ligne du destinataire de type sous-traitant avec qui vous établissez le DPA, ouvrez le menu et cliquez sur **Générer DPA**. Cette action demande le droit d'écrire des contrats.
 
-<figure><img src="../../.gitbook/assets/contracts-dpa-generated-contract.png" alt=""><figcaption><p>Le document est généré et inséré directement dans notre module de gestion contractuelle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-templates-4.png" alt="Le menu d'un destinataire sous-traitant avec l'action Générer DPA"><figcaption><p>Générer un DPA avec un sous-traitant depuis une fiche de traitement</p></figcaption></figure>
 
-### Cas d'usage: générer un DPA depuis une fiche de traitement
+Dastra ouvre la génération avec le modèle DPA déjà sélectionné et rempli avec le traitement et le sous-traitant choisis. La même action existe dans un traitement de type **Sous-traitant**, pour établir un DPA avec un client depuis l'onglet des clients.
 
-Plutôt que de partir de votre module de contrat, sélectionner le modèle DPA et renseigner le traitement et le sous-traitant faisant l'objet du contrat, vous pouvez directement partir de la fiche de traitement concernée.
+## Créer vos propres modèles
 
-Pour se faire, sélectionnez la fiche de traitement pour laquelle vous souhaitez établir un DPA et rendez vous dans l'étape destinataire. Sélectionnez le destinataire de type sous-traitant avec qui vous souhaitez établir le DPA et cliquez sur "Générer un DPA"
+L'entrée **Modèles de documents** du module liste les modèles de votre espace de travail. Chaque carte indique le nom du modèle, son état (**Actif** ou **Désactivé**) et sa catégorie. Le menu de la carte propose **Modifier**, **Exporter** et **Supprimer définitivement**.
 
-<figure><img src="../../.gitbook/assets/register-processing-generate-dpa-button.png" alt=""><figcaption><p>Générer un DPA avec un sous traitant directement depuis une fiche de traitement</p></figcaption></figure>
+Pour créer un modèle :
 
-Vous serez alors redirigé vers notre génération de contrat avec le modèle DPA automatiquement sélectionné et paramétré avec le traitement et le sous-traitant sur lequel vous avez cliqué.
+1. Cliquez sur **Ajouter modèle de document**.
+2. Choisissez **De zéro** et saisissez le **Nom du modèle**, ou importez un fichier JSON exporté depuis un autre modèle avec **Envoi du fichier**.
+3. Dastra ouvre l'éditeur du modèle.
 
-La même action peut-être réalisée dans un traitement de type "Sous-traitant" en réalisant un DPA avec un client (depuis l'onglet client).
+Dans l'éditeur, vous rédigez le **Corps du modèle** en HTML. Utilisez la syntaxe [Liquid](https://shopify.github.io/liquid/) pour insérer les réponses collectées par le formulaire du modèle. Vous définissez ces champs avec **Ajouter champ**, ainsi que les instructions affichées en tête du formulaire, la langue, la catégorie et la description du modèle. Un aperçu et un formulaire de test servent à vérifier le rendu avant de publier le modèle.
+
+Activez le commutateur **Actif** puis cliquez sur **Enregistrer** pour rendre le modèle disponible dans l'option **Générer automatiquement**. Un modèle désactivé n'est pas proposé à la création.
+
+<figure><img src="../../.gitbook/assets/contracts-templates-5.png" alt="L'éditeur d'un modèle de document avec le corps du modèle, l'aperçu et les champs"><figcaption><p>L'éditeur d'un modèle de document</p></figcaption></figure>

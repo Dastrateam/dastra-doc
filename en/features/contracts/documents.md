@@ -1,30 +1,39 @@
-# Documents
+# Details and attachments
 
-### Attachments
+The **Details** tab of a document record gathers the document information and its attachments. The file preview stays on the left whichever tab is open.
 
-In the documents section, you can add the relevant documents that make up your contract. This can include the contract itself, agreements, appendices or other files associated with the contract. To benefit from document previewing, you need to store .pdf files or images.
+## Attachments
 
-Document storage is linked to our [document-management](../files/README.md "mention") module. You can also install our cloud storage integration, which allows you to associate documents from your own OneDrive or Google Drive.
+Add to your document the files that make it up: the contract itself, amendments, appendices or any other related file. To get the preview, store PDF files or images.
 
-<figure><img src="../../.gitbook/assets/ai-systems-list-empty-state.png" alt=""><figcaption><p>Our cloud storage integration to link your OneDrive or Google Drive</p></figcaption></figure>
+Drop the files in the drop zone, or click **File explorer** to choose them. If you installed the [OneDrive & SharePoint / Google Drive integration](../settings/cloud-storage.md), a source selector lets you attach files from your own storage.
 
-On the left you will find the document preview, and on the right a list of all documents associated with your contract. To preview a different document, simply click its name in the list on the right, or navigate using the left and right arrows on your keyboard (or by clicking the on-screen arrows). The document currently being previewed is highlighted in blue in the list of documents. \
-\
-The preview window remains active regardless of the contract tab you are on — useful for referring to the document while filling in the signers or the assets, for example.
+Attachment storage is linked to Dastra's [document management](../files/README.md) module. Users who manage attachments can move a file to the common file manager with **Move to common file manager**, then open it from the document with **View in file manager**.
 
-The preview window remains active regardless of the contract tab you are on, which is useful for referencing the document while filling out signatories or assets, for example.
+<figure><img src="../../.gitbook/assets/contracts-documents-1.png" alt="The Details tab of a document with the drop zone, the source selector and the File explorer button"><figcaption><p>Add attachments to a document</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/dsr-workflow-steps-diagram.png" alt=""><figcaption><p>Previewing a document</p></figcaption></figure>
+## Preview a document
 
-### Metadatas
+The preview is on the left and the list of attachments on the right. To change file, click its name in the list, click the on-screen arrows or use the left and right arrow keys of your keyboard. The previewed file is highlighted in blue in the list. You can also rename the previewed file by clicking its name above the preview.
 
-In this section, you can also change the organizational unit attached to the contract, add tags, fill in the contract's start and end dates, and add a description and an internal reference.&#x20;
+Because the preview stays visible on the **Signers - Signatories**, **Assets** and **Users** tabs, you can refer to the document while you fill in those tabs.
 
-The contract end date is particularly valuable for managing your contracts, as the statistics tab lists all contracts that have passed their deadline.
+<figure><img src="../../.gitbook/assets/contracts-documents-2.png" alt="The preview of a document on the left and the Details tab on the right"><figcaption><p>Previewing a document</p></figcaption></figure>
 
+## Document information
 
-### Linked compliance tests
+The **Details** tab contains the following fields:
 
-When a document or a contract is used as **evidence** for a test in the Compliance module, this link is visible directly from the contract. An icon shows the **number of linked compliance tests**; clicking it opens the list of those tests. Clicking a test displays its details without leaving the contract page.
+* **Area**: the organizational unit the document is attached to.
+* **Tags**.
+* **Start date** and **Deadline**.
+* **Description** and **Internal reference**.
+* The custom fields defined for contracts in your workspace.
+
+The deadline drives the follow-up of your due dates: a document past its deadline appears in the **Overdue** indicator of the **Reporting** page (see [Contracts and policies](README.md#reporting)), and a warning is displayed in the tab.
+
+## Linked compliance tests
+
+When a document is used as **evidence** for a test in the Compliance module, this link is visible directly from the document. An icon shows the **number of linked compliance tests**; clicking it opens the list of those tests. Clicking a test displays its details without leaving the document page.
 
 <figure><img src="../../.gitbook/assets/conformite-liens-preuve-contrats.png" alt="Icon showing the number of compliance tests linked to a contract"><figcaption><p>The icon shows the number of linked compliance tests; a click opens the list and then the test details without leaving the contract</p></figcaption></figure>
