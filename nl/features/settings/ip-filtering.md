@@ -23,7 +23,7 @@ Een waarschuwing meldt: "Deze actie is niet omkeerbaar". In de praktijk kan een 
 * **IPv4- en IPv6**-adressen worden geaccepteerd.
 * Er is geen limiet op het aantal regels.
 
-## Wie wordt getroffen?
+## Getroffen gebruikers
 
 De filtering geldt voor **alle gebruikers van de organisatie, beheerders inbegrepen**. Er is geen uitzondering voor beheerders en geen uitzonderingenlijst.
 
@@ -36,7 +36,7 @@ Ze geldt voor alle inlogmethoden, omdat de controle na de authenticatie plaatsvi
 
 Lokale serviceaccounts die van SSO zijn vrijgesteld, zijn **niet** vrijgesteld van IP-filtering.
 
-## Wanneer vindt de controle plaats?
+## Moment van de controle
 
 Het IP-adres wordt gecontroleerd bij het inloggen en bij elke **vernieuwing van het token**. Een reeds geopende sessie wordt dus niet onmiddellijk beëindigd als de gebruiker van netwerk wisselt (bv. van kantoor naar thuiswerk): ze eindigt bij de volgende vernieuwing van het token.
 
@@ -48,7 +48,7 @@ Geldigheidsduur van de tokens:
 | Standaardsessie | 1 uur |
 | "Onthoud mij" | 30 dagen |
 
-## Welk IP-adres wordt gebruikt?
+## Gebruikt IP-adres
 
 Dastra gebruikt het openbare IP-adres dat zijn toegangsinfrastructuur ziet (de laag die uw verzoek ontvangt vóór de applicatie). Een gebruiker die via een VPN of bedrijfsproxy gaat, wordt dus gefilterd op het **uitgangsadres** van de VPN of proxy: dit adres moet u toestaan.
 
@@ -56,7 +56,9 @@ Dastra gebruikt het openbare IP-adres dat zijn toegangsinfrastructuur ziet (de l
 
 De gebruiker wordt doorgestuurd naar een foutpagina met de melding:
 
-> IP Address not allowed — Your IP address is not allowed by your organization. Please contact your account's administrator.
+> IP Address not allowed
+>
+> Your IP address is not allowed by your organization. Please contact your account's administrator.
 
 {% hint style="warning" %}
 Blokkeringen worden **niet** vastgelegd in het auditlogboek en niet naar [SIEM-streaming](siem.md) gestuurd.

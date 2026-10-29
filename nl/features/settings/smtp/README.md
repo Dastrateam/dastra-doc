@@ -1,69 +1,75 @@
 ---
 description: >-
-  Met Dastra kunt u uw notificatiemails routeren via uw eigen
-  e-mailserver
+  Verstuur de notificatiemails van Dastra via uw eigen e-mailserver.
 ---
 
 # SMTP-configuratie
 
-## Hoe het werkt
+Deze pagina legt uit hoe u de e-mails van Dastra via uw eigen SMTP-server laat lopen. Ze is bedoeld voor eigenaren van de organisatie.
 
-Standaard routeert Dastra een groot aantal e-mailmeldingen voor de volgende diensten:&#x20;
+## Werking
 
-* [Meldingen](../notifications.md) in realtime (nieuwe opmerkingen, taken, enz.)
-* E-mails voor uitwisselingen als onderdeel van [een verzoek om rechten uit te oefenen](../../requests/README.md)
-* Uitnodigingen voor [audits](../../questionnaires/README.md) voor respondenten
-* [Uitnodigingen](../../../getting-started/setup/users.md) voor nieuwe gebruikers
+Standaard verstuurt Dastra zijn e-mails met zijn eigen SMTP-service. Dat geldt voor:
 
-Standaard gebruikt Dastra zijn eigen SMTP-service.
+* [meldingen](../notifications.md) in realtime (nieuwe opmerkingen, taken enzovoort);
+* e-mailwisselingen binnen een [verzoek van een betrokkene](../../requests/README.md);
+* uitnodigingen aan respondenten van [vragenlijsten](../../questionnaires/README.md);
+* [uitnodigingen](../../../getting-started/setup/users.md) van nieuwe gebruikers.
 
-## Hoe configureer je je SMTP verzendserver?
-
-{% hint style="warning" %}
-Waarschuwing! Het aanpassen van SMTP kan leiden tot instabiliteit van het platform. Voer deze handeling alleen uit als u zeker weet dat uw e-mailverzendservice goed werkt en afgeleverd kan worden.
-{% endhint %}
-
-### Waarom SMTP aanpassen?
-
-Dastra stelt alles in het werk om maximale beschikbaarheid en veiligheid voor transactie-e-mails te garanderen &#x20;
-
-Afhankelijk van uw interne beveiligingsbeleid kan het echter nodig zijn om de routering van transactie-e-mails te internaliseren om de berichtenstromen te controleren.
-
-### Vereisten
-
-U hebt de volgende SMTP-serverconfiguratie-elementen nodig:&#x20;
-
-* SMTP host (bijv. smtp.yourservice.com)
-* SMTP-poort (gebruik standaard poort 25)
-* Gebruikersnaam
-* Wachtwoord
-* Een **geldig e-mailadres van de afzender** (bijv. noreply@yourservice.com): dit adres moet correct worden gevalideerd door uw SMTP-provider.
+Zodra uw server is geconfigureerd, lopen al deze e-mails erlangs, voor elke werkruimte van de organisatie.
 
 {% hint style="warning" %}
-Uw SMTP-server moet een beveiligde verbinding met SSL ondersteunen.
+Het aanpassen van SMTP kan het platform onstabiel maken. Doe dit alleen als u zeker weet dat uw e-mailverzendservice goed werkt en betrouwbaar aflevert.
 {% endhint %}
 
-### Configuratie
+## Waarom SMTP aanpassen
 
-Ga naar de [SMTP server configuratiepagina](https://app.dastra.eu/general-settings/smtp)
+Dastra zorgt voor de beschikbaarheid en de beveiliging van transactionele e-mails. Afhankelijk van uw intern beveiligingsbeleid kan het toch nodig zijn dat u de routering van deze e-mails zelf beheert om uw mailstromen te sturen.
 
-Vul de formuliervelden in met de gegevens die worden gevraagd in [prerequisites](README.md#prerequisites)
+## Toegang en vereisten
 
-![](<../../../.gitbook/assets/image (249) (1).png>)
+De pagina staat onder **Organisatie-instellingen** > **Aangepaste SMTP**. Ze is voorbehouden aan eigenaren van de organisatie en aan het Enterprise-abonnement (geavanceerde beveiligingsfunctie).
 
-Merk op dat de server connectiviteit automatisch getest wordt om er zeker van te zijn dat de server login gegevens correct zijn. Een test e-mail wordt automatisch verzonden vanaf onze servers.
+U hebt twee mogelijkheden:
 
-### Tests
+* een leverancier koppelen (**Outlook (MS Office 365)** of **Gmail (Google workspace)**): zie [Integratie van externe providers](office-365-gmail.md);
+* de instellingen van uw eigen SMTP-server invoeren, zoals hieronder beschreven.
 
-Zodra je het formulier hebt gevalideerd, zou je SMTP-server moeten werken.
+Houd voor een SMTP-server het volgende bij de hand:
 
-U kunt controleren of de notificatiemails van uw SMTP-server komen. Om dit te doen, maakt u bijvoorbeeld een opmerking in een behandeling en controleert u of u de notificatie-e-mail in uw mailbox ontvangt.
+* de naam van de SMTP-server (bijvoorbeeld `smtp.uwdienst.com`);
+* de poort van de SMTP-server (standaard 25);
+* de gebruikersnaam en het wachtwoord van de server;
+* een geldig e-mailadres van de afzender (bijvoorbeeld `noreply@uwdienst.com`): uw SMTP-provider moet het hebben gevalideerd;
+* een alias van de afzender, dat wil zeggen de naam die als afzender wordt weergegeven (bijvoorbeeld `Compliance-team`).
 
-* Als je geen e-mail ontvangt**: ofwel is het je niet gelukt om de melding te triggeren, ofwel is er een probleem met je SMTP-configuratie.
-* Als u wel een e-mail ontvangt**: controleer of uw SMTP en afzender worden weergegeven in de e-maildetails &#x20;
+{% hint style="warning" %}
+Dastra vereist een beveiligde verbinding via TLS, minimaal versie 1.2. Uw SMTP-server moet dit ondersteunen.
+{% endhint %}
+
+## Configuratie
+
+1. Open de [SMTP-configuratiepagina](https://app.dastra.eu/general-settings/smtp).
+2. Vul in de sectie **SMTP Persoonlijk** de velden **SMTP-servernaam (TLS vereist)**, **SMTP-serverpoort**, **Gebruikersnaam van SMTP-server**, **Wachtwoord SMTP-server**, **e-mail van de afzender** en **Naam van afzender** in.
+3. Klik op **Opslaan**.
+
+<figure><img src="../../../.gitbook/assets/settings-smtp-config-form.png" alt="Configuratieformulier van de SMTP-server met de velden server, poort, gebruikersnaam, wachtwoord, e-mail van de afzender en alias van de afzender"><figcaption><p>Het configuratieformulier van de SMTP-server</p></figcaption></figure>
+
+Bij het opslaan maakt Dastra verbinding met uw server en stuurt een testbericht naar het e-mailadres van uw account. Mislukt de verbinding, dan wordt de configuratie niet opgeslagen en verschijnt de foutmelding van de server.
+
+Zolang een leverancier is gekoppeld, is het formulier voor aangepaste SMTP uitgeschakeld. Klik eerst op **Verwijder de integratie** om uw eigen server te gebruiken.
+
+## Testen
+
+Zodra de configuratie is opgeslagen, verschijnt de knop **Testen**. Klik erop en bevestig: Dastra stuurt een testbericht naar het e-mailadres van uw persoonlijke account.
+
+U kunt ook controleren of de notificatiemails van uw server komen. Voeg bijvoorbeeld een opmerking toe aan een verwerkingsactiviteit en kijk of de melding in uw mailbox aankomt.
+
+* U ontvangt geen e-mail: ofwel is de melding niet geactiveerd, ofwel is er een probleem met uw SMTP-configuratie.
+* U ontvangt wel een e-mail: controleer of uw SMTP-server en uw afzender in de details van het bericht staan.
 
 {% hint style="info" %}
-[Hoe de e-maildetails in GMAIL te bekijken](https://support.google.com/mail/answer/29436?hl=fr).&#x20;
+[E-maildetails bekijken in Gmail](https://support.google.com/mail/answer/29436).
 
-[Hoe de e-maildetails in Outlook te bekijken](https://support.microsoft.com/fr-fr/office/afficher-les-en-t%C3%AAtes-de-message-internet-dans-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
+[E-maildetails bekijken in Outlook](https://support.microsoft.com/en-us/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
 {% endhint %}
