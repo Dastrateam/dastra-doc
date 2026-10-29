@@ -1,45 +1,52 @@
 ---
-description: Apprenez à paramétrer des questionnaires dans votre Trust center
+description: >-
+  Apprenez à paramétrer des questionnaires dans votre Trust Center.
 ---
 
 # Questionnaires
 
-**Activation de la fonctionnalité 'Questionnaires' dans votre Trust center**
+Cette page explique comment mettre des questionnaires à disposition des visiteurs de votre Trust Center.
 
-Pour activer la fonctionnalité 'Questionnaires' dans votre Trust center, consultez la section de configuration générale qui permet d'activer ou de désactiver cette option. Une fois activée, une nouvelle page publique intitulée 'Questionnaires' sera ajoutée à votre Trust center.
+## Activer la fonctionnalité
 
-<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-config-empty.png" alt=""><figcaption><p>L'onglet de configuration des questionnaires de votre Trust center</p></figcaption></figure>
+Cochez **Questionnaires** dans la section **Configuration**, comme l'explique [Page d'accueil et configuration générale](home.md). Une page publique **Questionnaires** est alors ajoutée à votre Trust Center, et la section **Questionnaires** se débloque dans la page d'édition.
 
-#### Ajout d'un questionnaire à votre Trust center
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-1.png" alt="Section Questionnaires de la page d'édition avec deux questionnaires ajoutés"><figcaption><p>La section de configuration des questionnaires de votre Trust Center</p></figcaption></figure>
 
-Pour ajouter un questionnaire, sélectionnez les questionnaires à partager dans votre Trust center en cliquant sur **Ajouter des questionnaires**. Une fenêtre de sélection s'ouvrira, vous permettant de choisir un ou plusieurs questionnaires à ajouter. Une fois votre sélection effectuée, cliquez sur **Ajouter** pour valider. Les questionnaires disponibles correspondent à ceux que vous avez installés dans le module Questionnaires de cet espace de travail.
+## Ajouter un questionnaire
 
-<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-add-modal.png" alt=""><figcaption></figcaption></figure>
+1. Dans la section **Questionnaires**, cliquez sur **Ajouter des questionnaires**.
+2. Dans la fenêtre de sélection, choisissez un ou plusieurs questionnaires. Ils correspondent à ceux que vous avez installés dans le module Questionnaires de cet espace de travail.
+3. Cliquez sur **Ajouter** pour valider.
 
-Vous avez la possibilité de retirer ou d'ajouter d'autres questionnaires à votre Trust center à tout moment. Les questionnaires ajoutés seront visibles sur la page 'Questionnaires' de votre Trust center.
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-2.png" alt="Fenêtre de sélection des modèles de questionnaires"><figcaption><p>La fenêtre de sélection des questionnaires</p></figcaption></figure>
 
-#### Instructions pour les questionnaires
+Vous pouvez retirer ou ajouter d'autres questionnaires à tout moment. Les questionnaires ajoutés sont visibles sur la page publique **Questionnaires**.
 
-Ce champ de texte enrichi (HTML) vous permet de personnaliser un message avec des options de mise en forme, et d'y intégrer des images ou des vidéos. Ce message sera affiché sur la page public 'Questionnaires' de votre Trust center, au dessus de la liste des questionnaires installés dans votre portail.
+## Instructions pour les questionnaires
 
-#### Renommer les questionnaires
+Le champ **Instructions pour les questionnaires** est un éditeur de texte enrichi. Vous pouvez y mettre le texte en forme et y intégrer des images ou des vidéos. Le message s'affiche sur la page publique **Questionnaires**, au-dessus de la liste des questionnaires.
 
-Par défaut, les questionnaires affichés dans votre Trust center portent le même nom que celui du modèle installé. Cependant, vous avez la possibilité de modifier le nom affiché dans le portail, sans affecter le nom du modèle d'origine, en cliquant sur **Modifier le nom et la description**.
+## Renommer les questionnaires
 
-<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-edit-menu.png" alt=""><figcaption><p>Modifier le nom et la description à afficher dans le Trust center</p></figcaption></figure>
+Par défaut, un questionnaire porte dans le Trust Center le nom du modèle installé. Pour changer le nom et la description affichés dans le portail, sans modifier le modèle d'origine, ouvrez le menu du questionnaire et cliquez sur **Modifier le nom et la description**.
 
-#### Modification de l'ordre d'affichage des questionnaires
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-3.png" alt="Menu d'un questionnaire avec l'option Modifier le nom et la description"><figcaption><p>Modifier le nom et la description à afficher dans le Trust Center</p></figcaption></figure>
 
-Après avoir sélectionné vos questionnaires, vous pouvez réorganiser leur ordre d'affichage en utilisant la fonction de glisser-déposer. L'ordre des questionnaires affichés dans votre Trust center public correspondra à celui que vous aurez défini dans cette page de configuration.
+## Modifier l'ordre d'affichage
 
-#### Épinglage de questionnaires
+Réorganisez les questionnaires par glisser-déposer. L'ordre du portail public suit celui de cette page de configuration.
 
-Pour mettre en avant certains questionnaires, cliquez sur l'icône d'épingle. Les questionnaires épinglés s'afficheront toujours en haut de la liste, quel que soit leur ordre de configuration. De plus, ils seront également accessibles dans la barre latérale de la page d'accueil de votre hub, en plus d'être disponibles sur la page des questionnaires.
+## Épingler des questionnaires
 
-<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-pin-button.png" alt=""><figcaption><p>Epingler un questionnaire</p></figcaption></figure>
+Pour mettre un questionnaire en avant, cliquez sur son icône d'épingle. Les questionnaires épinglés s'affichent toujours en haut de la liste, quel que soit leur ordre de configuration. Ils apparaissent aussi dans la barre latérale de la page d'accueil, lorsque la page d'accueil est activée.
 
-#### Impact du choix de l'unité organisationnelle sur les réponses
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-4.png" alt="Un questionnaire épinglé dans la section Questionnaires"><figcaption><p>Épingler un questionnaire</p></figcaption></figure>
 
-Les utilisateurs de votre Trust center peuvent répondre à tous les questionnaires mis à leur disposition sur le portail. Les réponses seront enregistrées dans le module Questionnaires et associées à l'unité organisationnelle de votre Trust center (voir la configuration générale de votre Trust center).
+## Impact du choix de l'unité organisationnelle sur les réponses
 
-**Note importante** : Pour fonctionner correctement dans un Trust center, l'option de partage par lien d'un questionnaire doit être activée. Si vous souhaitez ajouter un questionnaire dont cette option n'est pas activée, celle-ci sera automatiquement activée lors de l'ajout du questionnaire. De plus, l'option de partage par lien ne pourra pas être désactivée tant que le questionnaire sera présent dans votre Trust center.
+Les visiteurs de votre Trust Center peuvent répondre à tous les questionnaires mis à leur disposition. Les réponses sont enregistrées dans le module Questionnaires et associées à l'unité organisationnelle du Trust Center (voir [Page d'accueil et configuration générale](home.md)).
+
+{% hint style="info" %}
+Pour fonctionner dans un Trust Center, un questionnaire doit avoir le partage par lien activé. Si ce n'est pas le cas, le partage par lien est activé automatiquement lorsque vous ajoutez le questionnaire. Il ne peut plus être désactivé tant que le questionnaire figure dans un Trust Center.
+{% endhint %}

@@ -1,19 +1,44 @@
-# Collecting data processing projects from a Trust center.
+---
+description: >-
+  Collect processing activity, incident, asset, contract, AI system or
+  stakeholder projects from a Trust Center with creation questionnaire
+  templates.
+---
 
-We have developed questionnaire templates specifically designed to work with Trust centers: templates for creating processing activities, data breach incidents, assets, and contracts. These templates function the same way as our other templates, but once completed, the responses can be transformed into corresponding drafts.
+# Collect processing activity, incident, asset, contract, AI system or stakeholder projects from a Trust Center
 
-#### &#x20;Add a Template
+Questionnaire templates are designed to work with a Trust Center. They work like other templates, but once the response is validated, its data can be turned into a Dastra object. Six template types exist:
 
-To start using these templates, go to the Questionnaires module in the Dastra application and click on Create template. Choose the Automated questionnaire option, then select Dastra template library as the source. Search for the desired template (Data processing creation, Data breach Incidents, Assets, or Contracts) and select it by clicking on it. The template will be added to your workspace, and you will be redirected to the management page of this questionnaire.
+* **Data processing project**: a processing activity;
+* **Data breach creation request**: a data breach;
+* **Asset creation**: an asset of the repository;
+* **Contract creation**: a contract;
+* **AI System creation**: an AI system;
+* **Stakeholder creation**: a stakeholder.
 
-#### Template Content&#x20;
+## Add a template
 
-Each template includes a list of questions aimed at covering all the fields necessary for creating the corresponding items in Dastra.
+1. In the Questionnaires module, open the **Questionnaire templates** list and click **Create a template**.
+2. In the **Choose a questionnaire template type** window, choose **Automated questionnaires**.
+3. In the library, filter by **Types** or search for the template you want, then click it.
 
-#### Transform a Response into a Draft&#x20;
+The template is added to your workspace and you are redirected to its management page. To offer it to visitors, add it to your Trust Center afterwards: see [Questionnaires](configuration/questionnaires.md). For the details of creating a template, see [Create a questionnaire template](../questionnaires/templates/README.md).
 
-Once a response to this questionnaire is collected, an option will appear on the response review page to transform it into a corresponding draft (each response will be linked to the relevant field in the processing activity, incident, asset, or contract).
+## Template content
 
-#### Modifying the Template&#x20;
+Each template includes a list of questions that cover the fields needed to create the matching object in Dastra.
 
-Since each question is linked to a field in the future item to be created, modifications to the template could cause malfunctions when transforming the responses. Therefore, we recommend using the template exactly as provided in the library to ensure it functions correctly.
+## Turn a response into an object
+
+Responses given from the Trust Center arrive in the Questionnaires module, in the Trust Center's organizational unit. The conversion button only appears when the response is validated. It is active for the approvers of the response.
+
+On the page of the validated response, the button is called:
+
+* **Creation request** followed by the object type, for example **Creation request (Processing activity)**, as long as the response is not linked to an object;
+* **Merge request** followed by the object type, when the response is already linked to an object.
+
+Each response is linked to the matching field of the object. For the full procedure, see [Merging responses into the linked object](../questionnaires/monitor.md#merging-responses-into-the-linked-object).
+
+## Modify the template
+
+Each question is linked to a field of the object to create, so modifying the template can prevent responses from being converted. We recommend using the template as it is provided in the library.

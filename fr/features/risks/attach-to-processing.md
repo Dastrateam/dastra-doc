@@ -7,52 +7,43 @@ description: >-
 
 # Associer un risque à un traitement
 
-### Ajouter un risque dans un traitement
+## Ajouter un risque dans un traitement
 
-Pour ajouter un risque sur un traitement, il faut aller dans l'onglet risques présent sur la page d'édition du traitement.
+1. Ouvrez le traitement concerné dans le registre des traitements.
+2. Dans la barre de boutons sous le titre, cliquez sur **Risques**. Le bouton affiche le nombre de risques déjà associés au traitement.
 
-<figure><img src="../../.gitbook/assets/register-processing-risks-badge.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risks-attach-1.png" alt="Page d'un traitement avec le bouton Risques et son compteur dans la barre de boutons"><figcaption><p>Le bouton Risques d'un traitement</p></figcaption></figure>
 
-et cliquer sur le bouton "Créer un risque".
+3. Dans le panneau qui s'ouvre, cliquez sur **Créer un risque**.
 
-![](../../.gitbook/assets/risks-create-button.png)
+<figure><img src="../../.gitbook/assets/risks-attach-2.png" alt="Panneau Risques d'un traitement avec la matrice, les risques associés et le bouton Créer un risque"><figcaption><p>Le panneau Risques d'un traitement</p></figcaption></figure>
 
-Vous arrivez sur une page d'édition du risque et vous pouvez commencer à renseigner les informations concernant le risque que vous avez identifié.
+Vous arrivez sur la page d'édition du risque, avec le traitement et son unité organisationnelle déjà renseignés. Commencez à renseigner les informations du risque que vous avez identifié, comme décrit dans [Identifier](process/identify.md).
 
-Vous pouvez ensuite retrouver tous les risques de votre registre dans le référentiel des risques.
+Vous pouvez aussi rattacher un risque à un traitement depuis le module de gestion des risques : ouvrez **Gestion des risques** > **Risques**, choisissez l'onglet **Traitement de données** et cliquez sur **Créer un risque**.
 
-<figure><img src="../../.gitbook/assets/risks-matrix-panel.png" alt=""><figcaption></figcaption></figure>
+## Visualiser les risques d'un traitement
 
-Vous pouvez aussi attacher un risque à un traitement directement depuis le module de gestion des risques.
+Pour voir les risques de tous vos traitements, ouvrez **Gestion des risques** > **Risques** et choisissez l'onglet **Traitement de données**. Chaque ligne affiche le type de risque, le traitement concerné et les niveaux de risque initial, courant et résiduel.
 
-Pour ce faire, il vous suffit de vous placer dans l'onglet "Risques" et de "créer un risque"
+<figure><img src="../../.gitbook/assets/risks-list-1.png" alt="Liste des risques de l'onglet Traitement de données, avec les risques initial, courant et résiduel"><figcaption><p>Les risques associés aux traitements</p></figcaption></figure>
 
-### Visualiser les risques d'un traitement
-
-Pour visualiser les risques sur les traitements, il est nécessaire de vous rendre dans le module Risques de Dastra.
-
-![](../../.gitbook/assets/risks-overview-dashboard.png)
-
-Vous devez vous rendre sur l'onglet "Risques" et vous aurez une visualisation de l'ensemble des risques triés selon les éléments liés à chaque risque.
-
-### Evaluation du niveau de risque
+## Évaluation du niveau de risque
 
 Le niveau de risque est calculé selon la formule suivante :
 
-`Niveau de risque = valeur de probabilité X valeur d'impact`<br>
+`Niveau de risque = valeur de probabilité x valeur d'impact`
 
-Dans le tableau de bord, un module de risque présente le nombre de risques, les traitements avec les risques les plus élevés, le risque global et le niveau du traitement ayant le plus de risques.
+Dastra l'affiche en points sur le maximum de l'échelle (par exemple 16/25) et en pourcentage. Le pourcentage est calculé selon la formule suivante :
 
-Le risque global est calculé selon la formule suivante :<br>
+`(impact x probabilité) / score maximum de l'échelle de risques active`
 
-`somme (probabilité* impact ) / nombre de risques`<br>
+Le score maximum de l'échelle est de 25 avec l'échelle par défaut à 5 niveaux (5 x 5), de 16 avec l'échelle à 4 niveaux et de 9 avec l'échelle à 3 niveaux. Voir [Configurer l'échelle de risques](process/assess.md#configurer-lechelle-de-risques).
 
-Le niveau du traitement ayant le plus de risque est calculé selon la formule suivante :<br>
+Le tableau de bord de l'espace de travail contient un module **Gestion des risques**. Il présente les moyennes, en pourcentage, du risque initial, du risque actuel et du risque résiduel, la remédiation moyenne, le nombre de risques par étape (**Total**, **Identifiés**, **Sans réponse**) et la répartition des risques résiduels faibles, moyens et élevés. Chaque moyenne porte sur les pourcentages calculés ci-dessus.
 
-`((impact x probabilité) / 25)`<br>
-
-## **Aller plus loin**
+## Aller plus loin
 
 {% content-ref url="../tasks/README.md" %}
-[planifier](../tasks/README.md)
+[Planification](../tasks/README.md)
 {% endcontent-ref %}

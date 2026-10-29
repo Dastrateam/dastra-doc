@@ -1,27 +1,31 @@
 ---
-description: Learn how to create and configure Trust centers
+description: >-
+  Learn how to create and configure a Trust Center, your organization's public
+  transparency portal.
 ---
 
-# Trust center
+# Trust Center
 
-The **Trust center** allows organizations to create and customize a fully configurable **public web portal** designed for managing compliance with personal data protection regulations. The Trust center provides a simple and intuitive solution to establish a space for transparency and interaction with the organization's stakeholders, whether customers, subcontractors, or employees.
+The Trust Center is a public web portal that you configure to present your organization's compliance with personal data protection rules. It is intended for your customers, processors and employees.
 
-The Trust center offers modular and flexible configuration, enabling you to select and activate the features of your choice from the following options:
+You choose the features to display among the following:
 
-* [Customizable Home Page](configuration/home.md) (mandatory)
-* [Questionnaires](configuration/questionnaires.md) (optional - requires the [Questionnaires](../questionnaires/README.md) feature)
+* [Homepage](configuration/home.md) (optional)
+* [Questionnaires](configuration/questionnaires.md) (optional, requires the [Questionnaires](../questionnaires/README.md) feature)
 * [Attachments](configuration/attachments.md) (optional)
-* [Data subject requests](configuration/data-subject-requests.md) (optional - requires the [Data subject requests](../requests/README.md) feature)
-* [Organizational Chart](configuration/org-chart.md) (optional)
-* [Record of processing activities](configuration/ropa.md) (optional - requires the [Record of processing activities](../ropa/README.md) feature)
-* [AI Systems](configuration/ai-systems.md) (optional - requires the AI Systems module in your subscription)
+* [Data subject requests](configuration/data-subject-requests.md) (optional, requires the [Data subject requests](../requests/README.md) feature)
+* [Organizational chart](configuration/org-chart.md) (optional)
+* [Contacts](configuration/contacts.md) (optional)
+* [Record of processing activities](configuration/ropa.md) (optional, requires the [Record of processing activities](../ropa/README.md) feature)
+* [AI systems](configuration/ai-systems.md) (optional, requires the AI systems module in your subscription)
+* [Display the compliance project](configuration/README.md#display-the-compliance-project) (optional, requires the [Compliance](../compliance/README.md) feature)
 
-### How to access the feature&#x20;
+The homepage is optional. Quick links, the welcome message and the Contacts section are shown on that page: without it, they do not appear in the portal.
 
-To access the feature, your subscription must include our [Trust centers](README.md "mention") feature.
+## How to access the feature
 
-You can access the Trust centers from the application's side navigation bar.
+Your subscription must include the Trust Center feature.
 
-<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt=""><figcaption><p>Access the Trust centers from Dastra's sidebar</p></figcaption></figure>
+You access Trust Centers from the **Trust Center** entry of the application's side navigation bar.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-11-18-230356.png" alt=""><figcaption><p>Preview of a Trust center with all features enabled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/trust-center-overview-1.png" alt="Public portal of a Trust Center with its tabs"><figcaption><p>Preview of a Trust Center with all features enabled</p></figcaption></figure>

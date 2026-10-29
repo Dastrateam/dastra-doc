@@ -1,24 +1,27 @@
 ---
 description: >-
-  Learn how to configure a Data subject requests collection form in your Privacy
-  hub
+  Learn how to configure a data subject requests collection form in your Trust
+  Center.
 ---
 
 # Data subject requests
 
-#### Activating the 'Data subject requests' feature in Your Trust center
+This page explains how to display a collection form for data subject requests in your Trust Center.
 
-To activate the ' Data subject requests' feature in your Trust center, refer to the general configuration section where you can enable or disable this option. Once enabled, a new public page titled  'Data subject requests' will be added to your Trust center.
+## Enable the feature
 
-<figure><img src="../../../.gitbook/assets/screenshot-2024-11-18-233858.png" alt=""><figcaption><p>The Data subject requests configuration accordion</p></figcaption></figure>
+Check **Data subject requests** in the **Configuration** section, as explained in [Homepage and general configuration](home.md). A public **Data subject requests** page is then added to your Trust Center, and the **Data subject requests** section unlocks on the editing page.
 
+<figure><img src="../../../.gitbook/assets/trust-center-data-subject-requests-1.png" alt="Data subject requests section with the Data subject requests form field"><figcaption><p>The data subject requests configuration section</p></figcaption></figure>
 
+## Prerequisites
 
-#### Prerequisites
+* Your subscription includes the Data subject requests feature.
+* You have [configured and published a collection form](../../requests/widget.md).
+* A public API key exists in your organization. Without it, a warning is displayed on the editing page and the widget cannot work in the Trust Center. To create one, see [API key management](../../settings/api-keys.md).
 
-To display a Data subject requests collection form in your Trust center, you must have the **'Data subject requests'** module included in your subscription and have previously configured and published a collection form.
+## Choose the collection form
 
-#### Data subject requests collection form
+In the **Data subject requests** section, the **Data subject requests form** field lets you select the collection form to display. A Trust Center displays only one form.
 
-This field allows you to select the Data subject requests collection form to display in your Trust center. Note that only one collection form can be displayed per Trust center.
-
+As long as no form is selected, the public page states that the administrator has not configured a collection form.
