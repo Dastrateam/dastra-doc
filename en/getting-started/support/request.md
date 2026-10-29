@@ -4,45 +4,58 @@ description: Learn how to make a support request in Dastra.
 
 # Request support
 
-Sometimes the problem you're experiencing can't be solved through this documentation, the dastronaute assistant or online help.&#x20;
+Sometimes the problem you are facing cannot be solved with this documentation, the chat or the online help.
 
-In this case, Dastra gives you the option of contacting us directly from the application, either via the "Help" button at the bottom left of the screen, or by accessing the support request questionnaire at the top right of the screen:
+In that case, Dastra lets you contact us directly from the application: through **the chat**, at the bottom right of the screen, to ask **functional questions to your dedicated Privacy Success Manager**, or through the **support request** form, at the top right of the screen, **for technical issues**.
 
-<figure><img src="../../.gitbook/assets/dsr-settings-purge-rules.png" alt=""><figcaption><p>The support button at the top right of the screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-support-1.png" alt="The chat button at the bottom right of the screen"><figcaption><p>The chat button at the bottom right of the screen</p></figcaption></figure>
 
-## Support request questionnaire
+<figure><img src="../../.gitbook/assets/getting-started-support-2.png" alt="The User feedback button in the top bar"><figcaption><p>The User feedback button at the top right of the screen</p></figcaption></figure>
 
-After clicking on the support button, a window appears in the application, allowing you to select the subject of your request.
+{% hint style="info" %}
+To access the support request form or the chat, you must have an account and be signed in to the application.
+{% endhint %}
 
-Choose one of the six possible options, detail your response and click on the “Send request” button.
+## The chat
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-07-a-10.55.13.png" alt="" width="563"><figcaption><p>Support request form</p></figcaption></figure>
+The chat lets you talk with your **dedicated Privacy Success Manager** about how to use the platform, or to get help understanding the features.
 
+## The support request form
 
+It lets you report bugs, suggest feature ideas or ask technical questions to the support team.
 
-When creating your ticket, you can provide us with prior authorization to conduct tests on your workspace by leaving the<br>
+1. Click the **User feedback** button (megaphone icon) at the top right. A window opens.
+2. Choose one of the six request types:
 
-<figure><img src="../../.gitbook/assets/screenshot-2025-05-15-101639.png" alt=""><figcaption><p>Pre-authorization test box</p></figcaption></figure>
+   | Type | When to choose it |
+   | --- | --- |
+   | **Troubleshouting** | You face a problem or have a question about how to use a feature. A documentation search is offered first: if it does not answer your question, click **Create a ticket**. |
+   | **Issue** | You want to report a malfunction of the application. |
+   | **Subscription update** | You want to change your subscription or get information about your billing. |
+   | **New feature** | You want to suggest a new feature. |
+   | **Notation** | You want to give your opinion on the application. |
+   | **Other** | For all other requests. |
 
-This allows us to develop more quickly and efficiently in response to your request.
+3. Describe your request in detail, then click **Provide feedback**.
 
+<figure><img src="../../.gitbook/assets/getting-started-support-3.png" alt="Support request window with the list of request types"><figcaption><p>Choosing the request type</p></figcaption></figure>
 
+For an issue and for troubleshooting, the window offers two check boxes:
 
-That's it, your support request has been sent! Our team will get back to you as soon as possible. This service is available 24 hours a day, 7 days a week, and allows us to keep a record of all requests for efficient follow-up.
+* **I authorize Dastra's support teams to connect to my space and perform the necessary tests to identify this problem**: your data is not modified and all manipulations performed by the teams are cancelled;
+* **I authorize Dastra to collect diagnostic data from my browser**: console error and browser type. This box is ticked by default.
 
-## Chat&#x20;
+<figure><img src="../../.gitbook/assets/getting-started-support-4.png" alt="Issue form with the test authorization and diagnostic data check boxes"><figcaption><p>The authorization check boxes of an issue report</p></figcaption></figure>
 
-Integrated into our website, it is designed for quick questions that don't need to be logged. Response time is around 1 hour on average, during the hours when our support team is available.
+Leaving these boxes ticked lets the team respond more quickly and efficiently to your request.
+
+Once the request is sent, the team replies as soon as possible. The form is available at any time and keeps a record of your requests.
 
 ## Phone
 
-&#x20;For application access problems or major critical emergencies :\
-[+33 1 76 31 05 47](tel:+33176310547) (Availability: 9:00 / 18:00 GMT+2)
+For application access problems or major emergencies:\
+[+33 1 76 31 05 47](tel:+33176310547) (availability: 9:00 / 18:00 GMT+2)
 
-## Other requests&#x20;
+## Other requests
 
-If you wish to make another type of request, or if you have not yet created an account in Dastra, you can send your request directly to us at [support@dastra.eu](mailto:support@dastra.eu).
-
-
-
-This ensures that all requests are centralized and handled as part of the official support process.
+If you want to make another type of request, or if you do not have a Dastra account yet, write to [support@dastra.eu](mailto:support@dastra.eu). This way, all requests are centralized and handled in the official support process.

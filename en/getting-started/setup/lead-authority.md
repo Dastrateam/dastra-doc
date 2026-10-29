@@ -1,19 +1,28 @@
+---
+description: Set the lead supervisory authority of an entity in Dastra.
+---
+
 # Add a lead authority
 
-Within the entity, you can add a lead authority.&#x20;
+If your organization carries out cross-border data processing, you can benefit from the "**one-stop shop**" mechanism for all processing activities in the European Union. Your contact is then the "**lead**" supervisory authority.
 
-If you are an organization that carries out cross-border data processing, you can benefit from the "**one-stop shop**" mechanism for all processing activities on European territory.&#x20;
+**For example, the CNIL is the lead authority for cross-border processing carried out by organizations:**
 
-This contact is the "**lead**" supervisory authority.
+* that have several establishments in the European Union and whose head office is in France, if that establishment decides on the purposes and means of the cross-border processing;
+* that have several establishments in the European Union, whose head office does not decide on the purposes and means of the cross-border processing, but whose establishment that takes these decisions is in France;
+* that have a single establishment in the European Union, located in France.
 
-**For example, CNIL is the lead authority for cross-border processing carried out by organizations:**&#x20;
+## Set the lead authority in Dastra
 
-* which have several establishments in the European Union and whose head office is located in France, if this establishment decides on the purposes and means of the cross-border processing;&#x20;
-* which have several establishments in the European Union, whose head office does not decide on the purposes and means of cross-border processing, but whose establishment which takes these decisions is located in France;&#x20;
-* have a single establishment in the European Union, located in France.
+The lead authority is set at the entity level.
 
-### Is it compulsory?
+1. In the left menu, click **Workspace settings**, then **Organizational units**.
+2. Click the three dots to the right of the entity, then **Edit**.
+3. In the **Data protection authority** field, select the authority.
+4. Click **Save changes**.
 
-No, it's not compulsory to designate a lead authority, nor to designate yourself to one. However, it is very useful for managing your compliance.&#x20;
+<figure><img src="../../.gitbook/assets/getting-started-dpo-1.png" alt="Entity edit window with the Data protection authority field"><figcaption><p>The entity edit window</p></figcaption></figure>
 
-We recommend that you identify it. In particular, it will be useful to know which authority is to receive a data breach notification in the event of cross-border processing.
+## An optional designation
+
+It is not compulsory to designate a lead authority or to register with one. It is still useful for managing your compliance: in particular, it tells you which authority receives a data breach notification in the event of cross-border processing.

@@ -1,17 +1,29 @@
+---
+description: Find support, documentation and training in the Help menu, and restart the guides.
+---
+
 # Online help
 
-Dastra's online help can be accessed at any time in your workspace by clicking on the "Help" button at the bottom left of the screen.
+Dastra's online help is available at any time in your workspace from the profile menu: click your name at the top right of the screen, then **Help**. A submenu opens with all the options.
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-07-a-10.43.17.png" alt="" width="157"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-roles-2.png" alt="Profile menu with the Help entry"><figcaption><p>The profile menu, with the Help entry</p></figcaption></figure>
 
-A window appears with all the options:
+| Entry | What it opens |
+| --- | --- |
+| **Contact support** | The support request form (see [Request support](request.md)) |
+| **Chat with us** | The support chat |
+| **Documentation** | This documentation |
+| **Knowledge center** | The resources and guides published on the Dastra website |
+| **Dastra Academy** | Dastra's training courses |
+| **Webinars** | Dastra webinars |
+| **Subscription & billing** | The page of your subscription |
+| **Tickets** | The history of your support requests |
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-07-a-10.49.05.png" alt="" width="370"><figcaption><p>Opening the help panel</p></figcaption></figure>
+The bottom of the submenu gives access to the **About us**, **Pricing**, **Privacy policy** and **Terms and conditions** pages.
 
-## The First Connection Guide
+## The guides
 
-The first time you log on to your workspace, Dastra offers you a tutorial that takes you through the main Dastra functions in just a few pages.&#x20;
+Dastra offers guided tours that present a feature in a few steps. You can restart them at any time:
 
-If you wish to relaunch this guide, simply click on the "Help" button at the bottom left of the screen, then select the "**Display the guide**" option.
-
-The Getting Started guide then relaunches and all you have to do is follow the steps.
+* **Dastra AI tour:** in the Dastra AI panel, click the information icon (**Display the guide**) at the top of the panel. On the dashboard, you can also click the **Dastra AI** badge above the prompt box. The AI feature must be available in your organization.
+* **Tour of a module:** on the pages that have a guide, click the information button (**Display the guide**) to start it again.

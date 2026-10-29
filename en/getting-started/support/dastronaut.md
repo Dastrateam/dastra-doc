@@ -1,15 +1,19 @@
 ---
-description: Learn how to use the dastronaut assistant.
+description: Learn how to use the support chat and the AI agent, available at the bottom right of the screen.
 ---
 
-# The dastronaut's assistant
+# The chat and the AI agent
 
-In your workspace, you'll find an astronaut assistant permanently displayed in the bottom right-hand corner of your screen:
+In your workspace, two floating buttons stay displayed at the bottom right of the screen.
 
-<figure><img src="../../.gitbook/assets/image.jpg" alt=""><figcaption><p>The dastronaut's assistant</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-support-1.png" alt="The chat and Dastra AI buttons at the bottom right of the screen"><figcaption><p>The chat button and the Dastra AI button at the bottom right of the screen</p></figcaption></figure>
 
-Clicking on this wizard brings up a window with suggested actions.
+## The support chat
 
-<figure><img src="../../.gitbook/assets/capture-d-e-cran-2023-06-07-a-10.41.35.png" alt="" width="375"><figcaption><p>An example of suggested actions</p></figcaption></figure>
+The button with a speech bubble icon (**Chat with us**) opens the support chat. You talk with your Privacy Success Manager about how to use the platform and how its features work. The same chat is available from the **Help** entry of the profile menu (top right). See [Request support](request.md).
 
-As you make your way through Dastra, the assistant will give you instructions on how to make the most of the platform.
+## The AI agent
+
+The **Dastra AI** button (**Open Dastra AI**) opens the Dastra AI assistant. It appears only if your organization has access to the AI feature. To learn what it does, how to use it and how to create your own agents, see [AI Assistant](../../features/general/ai-assistant/README.md).
+
+The buttons are hidden during a chat conversation or while the AI agent panel is open, so that they do not overlap.

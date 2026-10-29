@@ -1,23 +1,23 @@
 # Step 5: Implement internal processes
 
-To ensure a high level of personal data protection at all times, you must put in place internal procedures to guarantee that data protection is taken into account at all times, taking into account all events that may occur during the life of a processing operation (e.g. security breach, management of rectification or access requests, modification of collected data, change of service provider).
+To ensure a high level of personal data protection at all times, you must put in place internal procedures that guarantee data protection is taken into account throughout. They cover all the events that may occur during the life of a processing activity: security breach, rectification or access requests, change to the collected data, change of service provider.
 
-Dastra enables you to digitize and automate at least some of the following internal processes:
+Dastra lets you digitize and automate, at least in part, the internal processes below.
 
-* **Managing requests to exercise rights:**
+* **Managing data subject requests:**
 
 {% content-ref url="../../features/requests/README.md" %}
-[gerer-les-exercices-des-droits](../../features/requests/README.md)
+[README.md](../../features/requests/README.md)
 {% endcontent-ref %}
 
-* **Managing consent to cookies:**
+* **Managing cookie consent:**
 
 {% content-ref url="../../features/cookies/README.md" %}
-[gerer-le-consentement-aux-cookies](../../features/cookies/README.md)
+[README.md](../../features/cookies/README.md)
 {% endcontent-ref %}
 
 * **Managing data breach notifications:**
 
 {% content-ref url="../../features/incidents/README.md" %}
-[notifier-les-violations-de-donnees](../../features/incidents/README.md)
+[README.md](../../features/incidents/README.md)
 {% endcontent-ref %}

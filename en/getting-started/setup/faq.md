@@ -1,39 +1,43 @@
 ---
-description: Answers to your questions ⁉️
+description: Answers to frequently asked questions about setting up Dastra.
 ---
 
 # Frequently asked questions
 
-## Can I use the teams as an actor?&#x20;
+## Can I use teams as stakeholders?
 
-No, these are two different databases. Teams are groups of users and can be linked to organizational units.&#x20;
+No, these are two different databases. Teams are groups of users and can be linked to organizational units.
 
-Actors are part of a data mapping repository. This is a purely declarative directory that can be linked to other Dastra objects.&#x20;
+Stakeholders are part of a data mapping repository. It is a purely declarative directory that can be linked to other Dastra objects.
 
-## Can I use organizational units as actors?&#x20;
+## Can I use organizational units as stakeholders?
 
-No, it is not possible to use them as actors, for the same reasons as teams. However, it is possible to use organizational units as recipients. This avoids the need to recreate actors on behalf of organizational units.&#x20;
+No, for the same reasons as teams. You can, however, use organizational units as recipients, which avoids recreating stakeholders in the name of organizational units.
 
-## Can organizational units be exported?&#x20;
+## Can organizational units be exported?
 
-Yes, it is currently possible to export them in spreadsheet format.&#x20;
+Yes, you can export them in spreadsheet format from **Workspace settings** > **Organizational units**, with the **Export** entry of the **Create an entity** button's menu.
 
-## Can I import organizational units?&#x20;
+## Can I import organizational units?
 
-Yes, you can import them by going to the menu under the create an organizational unit button.&#x20;
+Yes, with the **Import** entry of the same menu. See [Import and export organizational units](organizational-units.md#import-and-export-organizational-units).
 
-## How can I change the organization's logo in Dastra?&#x20;
+## How can I change the organization's logo in Dastra?
 
-It's not possible to modify the organization's logo, as there isn't one. The logo displayed above the organization's name in the top right-hand corner is the image associated with the user account, which is set in the user profile parameters.&#x20;
+You can't change the organization's logo, because it doesn't have one. The image displayed above the organization name at the top right is the one of the user account: you set it in the user profile.
 
-In addition to this image, the workspace logo can also be modified in the workspace settings.
+The workspace logo can be changed in the workspace settings.
 
-## How to add an organization owner?&#x20;
+## How to change the DPO?
 
-To add an owner, you must be an organization owner yourself. Then, go to the organization settings ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) and click on "New owner".&#x20;
+Open the organizational units management and select the entity whose DPO you are changing. Then select the stakeholder who will be the DPO, as described in [Add a DPO to Dastra](dpo.md#add-a-dpo-to-dastra).
 
-You will be able to select a user already invited to your organization. If they are not already part of your organization, you will not be able to add them.&#x20;
+## How to add an organization owner?
 
-## How to remove an organization owner?&#x20;
+To add an owner, you must be an organization owner yourself. Open the organization settings ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)) and click **Add an owner**.
 
-To remove an owner, you must also be an organization owner. Go to the organization settings ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)), in the "General" tab, then click the delete button next to the owner you want to remove. Confirm your choice to complete the operation.
+You can select a user already invited to your organization. A user who is not yet part of it cannot be added.
+
+## How to remove an organization owner?
+
+You must also be an organization owner. Open the organization settings ([https://app.dastra.eu/general-settings/organization](https://app.dastra.eu/general-settings/organization)), in the **General** tab, then click the delete button next to the owner to remove. Confirm to complete the operation.
