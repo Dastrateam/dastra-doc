@@ -37,6 +37,7 @@ Note that many file and folder names remain in French even inside `en/`, `de/`, 
   - `&#x20;` trailing-space escapes are artifacts of GitBook export — harmless, don't strip them in bulk.
 - Adding a page = create the `.md` file **and** add its entry to that language's `SUMMARY.md`. When a change applies to the product (not language-specific wording), mirror it across all four languages — `fr/` first, then translate.
 - PRs target `main`. Keep one language per PR unless the change is structural.
+- Style, languages and vocabulary (tone, no emojis, form of address, glossary, UI labels) are defined in the `doc-review` skill (`.claude/skills/doc-review/`): follow its references when writing, and run `/doc-review` on the changed pages before opening a PR.
 
 ## Dastra source code (../../Dastra)
 
