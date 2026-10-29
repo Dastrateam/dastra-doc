@@ -1,5 +1,6 @@
 ---
-description: Leer hoe u tests beheert in de bibliotheek van de module Conformiteit: handmatige tests, geautomatiseerde tests met connectoren, bewijs, samenvoegen en koppeling aan documenten.
+description: >-
+  Leer hoe u tests beheert in de bibliotheek van de module Conformiteit: handmatige tests, geautomatiseerde tests met connectoren, bewijs, samenvoegen en koppeling aan documenten.
 ---
 
 # Tests
