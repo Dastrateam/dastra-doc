@@ -39,7 +39,7 @@ Daarmee wordt het LIA-antwoord automatisch gekoppeld aan het betreffende doelein
 ## Verder lezen
 
 {% content-ref url="dpia.md" %}
-[Effectbeoordeling (PIA / DPIA)](dpia.md)
+[PIA / DPIA](dpia.md)
 {% endcontent-ref %}
 
 {% content-ref url="tia.md" %}

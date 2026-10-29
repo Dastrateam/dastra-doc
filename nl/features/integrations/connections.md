@@ -40,7 +40,7 @@ Om een verbinding aan te maken, klikt u op **Voeg een verbinding toe**:
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt="Het venster voor het aanmaken van een verbinding met naam, methode en velden voor inloggegevens"><figcaption><p>Een verbinding aanmaken</p></figcaption></figure>
 
 {% hint style="info" %}
-Verbindingen die workflowregels gebruiken. Bij de integratie [HTTP / Custom API](custom-http.md) is een verbinding niet aan een gebruiksscenario gebonden: elke actie **Send an HTTP request** van een workflowregel kiest rechtstreeks de te gebruiken verbinding en meerdere regels kunnen dezelfde verbinding delen. Het verbindingenpaneel toont hoeveel regels elke verbinding gebruiken. Wist u een verbinding, dan worden de regels die ervan afhangen uitgeschakeld. Zie ook [Een HTTP-verzoek versturen](../settings/workflow-rules.md#sending-an-http-request) bij de workflowregels.
+Verbindingen die workflowregels gebruiken. Bij de integratie [HTTP / Custom API](custom-http.md) is een verbinding niet aan een gebruiksscenario gebonden: elke actie **Send an HTTP request** van een workflowregel kiest rechtstreeks de te gebruiken verbinding en meerdere regels kunnen dezelfde verbinding delen. Het verbindingenpaneel toont hoeveel regels elke verbinding gebruiken. Wist u een verbinding, dan worden de regels die ervan afhangen uitgeschakeld. Zie ook [Een HTTP-verzoek versturen](../settings/workflow-rules.md#een-http-verzoek-verzenden) bij de workflowregels.
 {% endhint %}
 
 ## Een gebruiksscenario installeren

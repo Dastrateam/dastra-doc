@@ -23,5 +23,5 @@ Workflowregels automatiseren bewerkingen in Dastra. Voor verzoeken van betrokken
 * **Execute an AI agent**: voert een AI-agent uit, afhankelijk van uw abonnement en uw rechten.
 
 {% hint style="info" %}
-Meer over workflows leest u bij [Workflow-regels](../../settings/workflow-rules.md).
+Meer over workflows leest u bij [Werkstroomregels](../../settings/workflow-rules.md).
 {% endhint %}
