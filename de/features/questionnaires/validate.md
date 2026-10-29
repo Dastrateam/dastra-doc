@@ -1,108 +1,108 @@
 ---
 description: >-
-  Der Validierungsprozess eines Fragebogens in Dastra: Genehmigungen der Prüfer,
-  endgültige Validierung, Korrekturanforderung und Abbruch.
+  Der Validierungsprozess eines Fragebogens in Dastra: Genehmigungen der
+  Genehmiger, endgültige Validierung, Überprüfungsanfragen und Abbruch.
 ---
 
 # Einen Fragebogen validieren
 
-Die Validierung ist der Prüfschritt, der auf die Finalisierung eines Fragebogens durch die Befragten folgt. Die benannten Prüfer kontrollieren dabei jede Antwort, fordern bei Bedarf Korrekturen an und genehmigen und veröffentlichen anschließend den Fragebogen.
+Die Validierung ist die Prüfphase, die auf den Abschluss eines Fragebogens durch seine Befragten folgt. Sie ermöglicht es den benannten Genehmigern, jede Antwort zu prüfen, bei Bedarf Korrekturen anzufordern und den Fragebogen anschließend zu genehmigen und zu veröffentlichen.
 
 ## Lebenszyklus einer Antwort
 
-1. **Warten auf Befragte / Gestartet** — die Befragten füllen das Formular aus.
-2. **Warten auf Validierung** — sobald alle **erforderlichen** Befragten auf **Finalisieren** geklickt haben, wechselt die Antwort in diesen Status und die Prüfer werden benachrichtigt.
-3. **Validiert** — nachdem alle erforderlichen Prüfer genehmigt haben und die endgültige Validierung erfolgt ist.
+1. **Wir erwarten Ihre Rückmeldung** / **Gestartet**: Die Befragten füllen das Formular aus.
+2. **Zur Freigabe vorgelegt**: Sobald alle **erforderlichen** Befragten auf **Abschließen** geklickt haben, wechselt die Antwort in diesen Status und die Genehmiger werden benachrichtigt.
+3. **Validiert**: nachdem alle erforderlichen Genehmiger zugestimmt haben und die endgültige Validierung erfolgt ist.
 
-Aus dem Status „Warten auf Validierung“ sind drei Ausgänge möglich: **validieren**, **eine Überprüfung anfordern** (Zurücksenden an die Befragten) oder den Fragebogen **abbrechen**.
+Aus dem Status „Zur Freigabe vorgelegt“ gibt es drei mögliche Ergebnisse: **validieren**, **eine Überprüfung beantragen** (den Fragebogen an die Befragten zurückschicken) oder den Fragebogen **abbrechen**.
 
 {% hint style="info" %}
-Wenn keine Schaltfläche verfügbar ist, prüfen Sie, ob die Antwort tatsächlich den Status „Warten auf Validierung“ hat. In allen anderen Status sind die Validierungsaktionen gesperrt.
+Wenn keine der Schaltflächen verfügbar ist, prüfen Sie, ob die Antwort tatsächlich den Status „Zur Freigabe vorgelegt“ hat. Alle Validierungsaktionen sind in jedem anderen Status gesperrt.
 {% endhint %}
 
-## Wer validiert?
+## Die Genehmiger
 
-Die Prüfer werden bei der Planung des Fragebogens festgelegt (siehe [Einen Fragebogen planen](schedule.md)), im Abschnitt **Verantwortliche**:
+Die Prüfer werden beim Planen des Fragebogens im Abschnitt **Genehmiger** festgelegt (siehe [Einen Fragebogen planen](schedule.md)):
 
-* **Erforderliche Prüfer** — alle müssen den Fragebogen genehmigen, bevor er validiert werden kann. Mindestens ein erforderlicher Prüfer ist Pflicht.
-* **Optionale Prüfer** — aktivieren Sie die Option für optionale Prüfer, um Personen einzubeziehen, deren Genehmigung nachverfolgt wird, aber **nicht blockierend** ist.
+* **Genehmiger erforderlich**: Alle müssen den Fragebogen genehmigen, bevor er validiert werden kann. Mindestens ein erforderlicher Genehmiger ist verpflichtend.
+* **Optionale Genehmiger**: Aktivieren Sie **Optionale Genehmiger hinzufügen**, um Genehmiger einzubinden, deren Genehmigung nachverfolgt wird, aber **nicht blockierend** ist.
 
-Nur diese Nutzer können genehmigen, validieren, eine Überprüfung anfordern oder die Antwort abbrechen.
+<figure><img src="../../.gitbook/assets/questionnaires-validate-1.png" alt="Abschnitt Genehmiger des Planungsformulars mit den erforderlichen und den optionalen Genehmigern"><figcaption><p>Der Abschnitt Genehmiger des Planungsformulars</p></figcaption></figure>
+
+Die standardmäßig vorgeschlagenen Genehmiger werden in der Konfiguration der Vorlage mit dem Feld **Verantwortliche für den Fragebogen** festgelegt (siehe [Eine Fragebogenvorlage erstellen](templates/README.md)). Nur die Genehmiger der Antwort können sie genehmigen, validieren, eine Überprüfung anfordern oder sie abbrechen.
 
 {% hint style="success" %}
-Sie können diesen Schritt bei der Planung vollständig deaktivieren (Option „Schritt zur Korrektur deaktivieren“). Die Antwort wird dann direkt mit der Finalisierung durch die Befragten veröffentlicht.
+Sie können diesen Schritt beim Planen des Fragebogens mit der Option **Genehmigungsschritt deaktivieren** ganz abschalten. Die Antwort wird dann direkt veröffentlicht, sobald die Befragten sie abschließen.
 {% endhint %}
 
 ## Der Prüfbildschirm
 
-Klicken Sie in der Antwort auf **„Überprüfen und bestätigen Sie den Fragebogen“**. Der Prüfbildschirm entspricht dem Aufbau des Fragebogens: Abschnittsnavigation links, Fragen und Antworten in der Mitte, Validierungsaktionen rechts.
+Klicken Sie in der Antwort auf **Überprüfen und bestätigen Sie den Fragebogen**. Der Prüfbildschirm spiegelt den Aufbau des Fragebogens wider: Abschnittsnavigation links, Fragen und Antworten in der Mitte, Validierungsaktionen rechts.
 
-### Jede Antwort bewerten
+### Jede Antwort qualifizieren
 
-Jede Frage kann einen Bewertungsstatus erhalten:
+Jeder Frage kann ein Bewertungsstatus zugewiesen werden:
 
-* **Kein Status** — die Frage wurde nicht bewertet (Standard, nicht blockierend)
-* **Validiert** — die Antwort wird akzeptiert
-* **Korrekturen erforderlich** — die Antwort muss ergänzt oder korrigiert werden
-* **Abgelehnt** — die Antwort wird zurückgewiesen
+* **Kein Status**: Die Frage wurde nicht qualifiziert (Standard, nicht blockierend)
+* **Validiert**: Die Antwort wird akzeptiert
+* **Korrekturen erforderlich**: Die Antwort muss ergänzt oder korrigiert werden
+* **Nicht validiert**: Die Antwort wird abgelehnt
 
-Ein Selektor am Anfang jedes Abschnitts weist allen angezeigten Fragen in einem Schritt denselben Status zu.
+Eine Auswahl am Anfang jedes Abschnitts weist allen angezeigten Fragen auf einmal denselben Status zu.
 
-Zu jeder Frage können Sie zusätzlich:
+Für jede Frage können Sie außerdem:
 
-* **Eine Anmerkung hinzufügen** — interner Austausch mit den Befragten und den anderen Prüfern
-* **Eine Aufgabe hinzufügen** — fließt direkt in den Aktionsplan ein
-* **Die Begründung ergänzen** und **einen Anhang hinzufügen**
-* **Ein Risiko qualifizieren**, wenn die Frage mit einem Risiko verknüpft ist
+* eine Anmerkung hinzufügen: eine interne Diskussion mit den Befragten und den anderen Genehmigern
+* **Aufgabe hinzufügen**: fließt direkt in den Aktionsplan ein
+* die **Begründung der Antwort** ergänzen und eine Datei anhängen
+* ein Risiko qualifizieren, wenn die Frage mit einem Risiko verknüpft ist
 
 {% hint style="warning" %}
-Ist mindestens eine Frage als „Korrekturen erforderlich“ oder „Abgelehnt“ markiert, sind Genehmigung und Validierung gesperrt: Nutzen Sie **„Überprüfung beantragen“**, um den Fragebogen an die Befragten zurückzusenden.
+Wenn mindestens eine Frage mit „Korrekturen erforderlich“ oder „Nicht validiert“ markiert ist, sind die Genehmigung und die Validierung gesperrt: Verwenden Sie **Überprüfung beantragen**, um den Fragebogen an die Befragten zurückzuschicken.
 {% endhint %}
 
 ## Den Fragebogen genehmigen
 
-Jeder Prüfer erteilt seine Genehmigung einzeln über die Schaltfläche „Fragebogen genehmigen“:
+Jeder Genehmiger gibt seine Genehmigung einzeln mit der Schaltfläche **Den Fragebogen genehmigen** ab:
 
-* Sie können **Prüfkommentare** erfassen: Sie werden gespeichert und **im Berichtsexport übernommen**.
-* Eine **E-Mail-Benachrichtigung** wird an die Prüfer gesendet, die noch nicht genehmigt haben.
+* Sie können **Prüfkommentare** verfassen: Sie werden aufbewahrt und **in den Berichtsexport aufgenommen**.
+* Eine **E-Mail-Benachrichtigung** geht an die Genehmiger, die noch nicht genehmigt haben.
 
-Das Panel der **erforderlichen Genehmigungen (n/Gesamt)** fasst den Status jedes Prüfers zusammen (genehmigt, mit Datum, oder ausstehend) sowie, falls vorhanden, einen separaten Block für die optionalen Genehmigungen. Die Prüfkommentare der einzelnen Prüfer sind dort einsehbar.
+Der Bereich **Erforderliche Freigaben (n/Gesamt)** fasst den Status jedes Genehmigers zusammen (genehmigt, mit Datum, oder „Freigabe ausstehend“), dazu gegebenenfalls ein eigener Block „Optionale Freigaben“. Dort lassen sich auch die Prüfkommentare jedes Genehmigers einsehen.
 
-Zwei ergänzende Aktionen:
+Zwei weitere Aktionen:
 
-* **Meine Genehmigung widerrufen** — nimmt Ihre Genehmigung zurück, solange der Fragebogen nicht validiert ist.
-* Sind Sie der **letzte erforderliche Prüfer**, schlägt Dastra unmittelbar vor, direkt mit Validierung und Veröffentlichung fortzufahren.
-
-{% hint style="info" %}
-Die Beschriftungen der neuen Genehmigungsfunktionen sind derzeit noch nicht ins Deutsche übersetzt und erscheinen in der Oberfläche auf Englisch („Approve questionnaire“, „Required approvals“, „Revoke my approval“).
-{% endhint %}
+* **Meine Einwilligung widerrufen**: zieht Ihre Genehmigung zurück, solange der Fragebogen noch nicht validiert wurde.
+* Wenn Sie der **letzte erforderliche Genehmiger** sind, der genehmigt, bietet Dastra sofort an, mit der Validierung und Veröffentlichung fortzufahren.
 
 ## Validieren und veröffentlichen
 
-Die Schaltfläche **„Den Fragebogen bestätigen“** ist erst aktiv, wenn **alle erforderlichen Prüfer genehmigt haben** und keine Frage zur Korrektur markiert ist. Das Validierungsfenster zeigt:
+Die Schaltfläche **Den Fragebogen bestätigen** wird erst aktiv, wenn **alle erforderlichen Genehmiger zugestimmt haben** und keine Frage zur Korrektur markiert ist. Das Validierungsfenster zeigt:
 
 * die Anzahl der validierten Fragen im Verhältnis zur Gesamtzahl;
-* den Stand der Genehmigungen;
-* bei einer **DSFA / PIA** die Option, das **Datum der Folgenabschätzung auf die verknüpfte Verarbeitung zu übertragen**;
-* die Option, eine **Benachrichtigung** an die Beteiligten zu senden.
+* den Status der Genehmigungen;
+* bei einer **DSFA / PIA**, die mit einer Verarbeitungstätigkeit verknüpft ist, die Meldung „Das Datum der letzten DSFA für die zugehörige Verarbeitung wird aktualisiert.“: Das **Datum der letzten DSFA** der Verarbeitungstätigkeit wird bei der Validierung automatisch aktualisiert;
+* die Option, den Stakeholdern eine **Benachrichtigung** zu senden.
 
-Die Antwort erhält anschließend den Status **„Validiert“** mit ihrem Veröffentlichungsdatum, und Sie werden zu ihrem Bericht weitergeleitet. Danach können Sie [den Bericht exportieren](export.md), einen Aktionsplan erzeugen oder die Antworten mit dem verknüpften Objekt zusammenführen (siehe [Fragebögen steuern](monitor.md)).
+Die Antwort wechselt dann in den Status **Validiert** mit ihrem Veröffentlichungsdatum, und Sie werden zu ihrem Bericht weitergeleitet. Anschließend können Sie [den Bericht exportieren](export.md), einen Aktionsplan erzeugen oder die Antworten in das verknüpfte Objekt übernehmen (siehe [Fragebögen steuern](monitor.md)).
 
-## Eine Überprüfung anfordern
+Nach der Validierung erhält jeder Befragte, intern oder extern, eine Benachrichtigungs-E-Mail mit Angabe des Fragebogens, des Mandanten und des Validierungsdatums sowie einem Link zu seinem Abschlussbildschirm. Auf diesem Bildschirm kann er mit der Aktion **Export to PDF** seine Fragen und Antworten herunterladen, ohne Dastra-Konto. Der Export ist erst verfügbar, wenn der Fragebogen validiert ist, und jeder Befragte kann nur den Fragebogen exportieren, den er beantwortet hat. Um ohne Benachrichtigung zu validieren, deaktivieren Sie die Benachrichtigungsoption im Validierungsfenster.
 
-Die Aktion **„Überprüfung beantragen“** sendet den Fragebogen an die Befragten zurück:
+## Eine Überprüfung beantragen
 
-* die Antwort wechselt zurück auf „In Bearbeitung“ und eine **neue Frist** wird anhand der Frist der Vorlage berechnet (standardmäßig 30 Tage);
-* **alle bereits erteilten Genehmigungen werden zurückgesetzt**;
-* eine **Korrekturrunde** wird in der Historie der Antwort erfasst;
-* jeder Befragte wird benachrichtigt, zusammen mit Ihrer Prüfnachricht — die Sie frei formulieren oder aus einer E-Mail-Vorlage vorbefüllen können.
+Die Aktion **Überprüfung beantragen** schickt den Fragebogen an die Befragten zurück:
 
-Sobald die Befragten erneut finalisieren, beginnt der Validierungszyklus von vorn.
+* die Antwort kehrt in den Status „In Bearbeitung“ zurück und eine **neue Frist** wird aus der Standardantwortzeit der Vorlage berechnet (standardmäßig 30 Tage);
+* **jede bereits erteilte Genehmigung wird zurückgesetzt**;
+* eine **Korrekturrunde** wird im Verlauf der Antwort festgehalten;
+* jeder Befragte erhält eine Benachrichtigung zusammen mit Ihrer Prüfnachricht, die Sie frei verfassen oder aus einer E-Mail-Vorlage vorausfüllen können.
+
+Wenn die Befragten erneut abschließen, beginnt der Validierungszyklus von vorn.
 
 ## Den Fragebogen abbrechen
 
-Die Aktion zum Abbrechen des Fragebogens beendet den Zyklus ohne Veröffentlichung. Ein optionaler Kommentar erläutert den Grund; er bleibt in der Historie erhalten und ist für die Befragten sichtbar. Die Genehmigungen werden zurückgesetzt und die Antwort erhält den Status **„Abgebrochen“**: Sie ist nicht mehr bearbeitbar und wird nicht in die Ergebnisse einbezogen.
+Die Aktion **Den Fragebogen abbrechen** beendet den Zyklus ohne Veröffentlichung. In einem optionalen Kommentar können Sie den Grund erläutern; er wird im Verlauf aufbewahrt und ist für die Befragten sichtbar. Die Genehmigungen werden zurückgesetzt und die Antwort erhält den Status **Abgebrochen**: Sie kann nicht mehr bearbeitet werden und fließt nicht in die Ergebnisse ein.
 
-## Zu validierende Fragebögen nachverfolgen
+## Fragebögen verfolgen, die auf Validierung warten
 
-Fragebögen, die auf Ihre Genehmigung warten, sind in Ihren Fragebögen unter „Warten auf meine Bestätigung“ zusammengefasst und in den Listen sowie im Reporting mit dem Kennzeichen „Warten auf Validierung“ versehen.
+Um die Fragebögen zu finden, die auf Ihre Genehmigung warten, öffnen Sie **Meine Fragebögen** und filtern Sie nach dem Status **Zur Freigabe vorgelegt**. Dasselbe Badge kennzeichnet diese Antworten in den Listen und in den Reporting-Ansichten.

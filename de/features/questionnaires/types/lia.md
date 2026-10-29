@@ -1,47 +1,49 @@
 ---
-description: Erfahren Sie, wie Sie eine Interessenabwägung für berechtigte Interessen (LIA) mit Dastra durchführen.
+description: >-
+  Erfahren Sie, wie Sie mit Dastra eine Interessenabwägung für berechtigte
+  Interessen (LIA) durchführen.
 ---
 
-# Interessenabwägung für berechtigte Interessen (LIA)
+# Interessenabwägung (LIA)
 
-## Was ist eine LIA?
+## Die LIA im Überblick
 
-Eine Interessenabwägung für berechtigte Interessen (Legitimate Interests Assessment oder LIA) ist eine Analyse zur Dokumentation und Begründung der Verwendung **berechtigter Interessen** als Rechtsgrundlage einer Verarbeitung. Sie dient dazu, zu überprüfen, dass die Interessen des Verantwortlichen nicht die Rechte und Freiheiten der betroffenen Personen überwiegen.
+Eine Interessenabwägung für berechtigte Interessen (Legitimate Interests Assessment, LIA) ist eine Analyse, mit der Sie die Verwendung des **berechtigten Interesses** als Rechtsgrundlage einer Verarbeitungstätigkeit dokumentieren und begründen. Sie hilft zu prüfen, dass die Interessen des Verantwortlichen nicht von den Rechten und Freiheiten der betroffenen Personen überwogen werden.
 
-Die DSGVO schreibt die Dokumentation einer LIA nicht formell vor, sie wird jedoch im Sinne der Rechenschaftspflicht dringend empfohlen und kann von den Aufsichtsbehörden angefordert werden.
+Die DSGVO verlangt nicht, dass eine LIA förmlich dokumentiert wird, aber es wird im Sinne der Rechenschaftspflicht dringend empfohlen, und die Datenschutzbehörden können sie anfordern.
 
-## Die LIA-Vorlage in Dastra
+## LIA-Vorlage in Dastra
 
-Dastra bietet eine LIA-Vorlage in der Fragebogenbibliothek an:
+Dastra stellt in der Fragebogenbibliothek eine LIA-Vorlage bereit:
 
-* **Legitimate interests assessment (LIA)**: 26 Fragen, strukturiert um den dreiteiligen Test
+* **Legitimate interests assessment (LIA)**: 26 Fragen, aufgebaut um den dreistufigen Test
 
-Um darauf zuzugreifen, gehen Sie zur Registerkarte "Fragebogenvorlagen", klicken Sie auf **"Vorlage erstellen"** → **"Automatisierte Fragebögen"** und suchen Sie nach "LIA".
+Um sie zu öffnen, gehen Sie zum Tab **Vorlagen**, klicken Sie auf **Vorlage erstellen** und dann auf **Basierend auf einer Vorlage** und suchen Sie nach „LIA“.
 
-## Struktur des LIA-Fragebogens
+## Aufbau eines LIA-Fragebogens
 
-Der LIA-Fragebogen ist um drei Tests strukturiert:
+Die LIA ist um drei Tests herum aufgebaut:
 
-1. **Legitimitätstest** — das verfolgte berechtigte Interesse identifizieren: warum Sie die Daten verarbeiten möchten, wer davon profitiert und welches Ergebnis für die Personen angestrebt wird
-2. **Erforderlichkeitstest** — nachweisen, dass die Verarbeitung zur Erreichung des Verarbeitungszwecks notwendig ist und weniger eingreifende Alternativen in Betracht gezogen wurden
-3. **Abwägungstest** — die Interessen des Verantwortlichen gegen die Rechte und Freiheiten der Personen abwägen, unter Berücksichtigung der Art der Daten, der berechtigten Erwartungen der Personen und der vorhandenen Garantien
+1. **Legitimitätstest**: Bestimmen Sie das verfolgte berechtigte Interesse: warum Sie die Daten verarbeiten möchten, wer davon profitiert und welches Ergebnis für die Personen angestrebt wird
+2. **Erforderlichkeitstest**: Weisen Sie nach, dass die Verarbeitung zur Erreichung des Zwecks erforderlich ist und dass weniger eingreifende Alternativen geprüft wurden
+3. **Abwägungstest**: Wägen Sie die Interessen des Verantwortlichen gegen die Rechte und Freiheiten der Personen ab und berücksichtigen Sie dabei die Art der Daten, die vernünftigen Erwartungen der Personen und die vorhandenen Garantien
 
-## Eine LIA direkt von einer Verarbeitung aus erstellen
+## Eine LIA direkt aus einer Verarbeitungstätigkeit erstellen
 
-Bei der Bearbeitung einer Verarbeitung in Dastra können Sie eine LIA direkt von einem Verarbeitungszweck aus erstellen, dessen Rechtsgrundlage das berechtigte Interesse ist:
+Wenn Sie eine Verarbeitungstätigkeit in Dastra bearbeiten, können Sie eine LIA direkt aus einem Zweck erstellen, dessen Rechtsgrundlage das berechtigte Interesse ist:
 
-1. Gehen Sie zur Registerkarte **Zwecke** der Verarbeitung
-2. Öffnen Sie einen Zweck mit "Berechtigte Interessen" als Rechtsgrundlage
-3. Klicken Sie auf **"Interessenabwägung für berechtigte Interessen (LIA) erstellen"**
+1. Öffnen Sie den Tab **Zweck** der Verarbeitungstätigkeit
+2. Öffnen Sie einen Zweck mit dem berechtigten Interesse als Rechtsgrundlage
+3. Klicken Sie auf **Bewerten Sie berechtigte Interessen (LIA)**
 
-Die LIA-Antwort wird automatisch mit dem betreffenden Zweck verknüpft.
+Dadurch wird die LIA-Antwort automatisch mit dem betreffenden Zweck verknüpft.
 
 ## Weiterführende Informationen
 
 {% content-ref url="dpia.md" %}
-[pia-aipd.md](dpia.md)
+[DSFA / PIA](dpia.md)
 {% endcontent-ref %}
 
 {% content-ref url="tia.md" %}
-[tia.md](tia.md)
+[Transferfolgenabschätzung (TIA)](tia.md)
 {% endcontent-ref %}
