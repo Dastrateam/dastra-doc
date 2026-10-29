@@ -2,14 +2,14 @@
 description: >-
   Dastra ist nativ in Google Tag Manager integriert. Dieser Artikel erklärt
   Ihnen, wie Sie das Blockieren oder Freigeben von Tags in Abhängigkeit von den
-  Einwilligungen des Nutzers mithilfe von GTM inte
+  Einwilligungen des Nutzers mithilfe von GTM steuern.
 ---
 
 # Google Tag Manager
 
 ## Einführung
 
-Google Tag Manager ist ein leistungsstarkes Tagging-Tool, das alle Code-Snippets zentralisiert, die Sie in Ihre Website integrieren möchten (Dastra kann übrigens dazugehören!).\
+Google Tag Manager ist ein Tagging-Tool, das alle Code-Snippets zentralisiert, die Sie in Ihre Website integrieren möchten (Dastra kann dazugehören).\
 Diese Tagging-Lösung ist sehr effektiv für die Implementierung der effektiven Cookie-Einwilligung, da sie es nicht erfordert, die gesamte Website bei jeder Tag-Änderung neu zu deployen.
 
 ## Google Consent Mode V2
@@ -33,73 +33,76 @@ Sie können daher die Tags, die den verschiedenen im Widget konfigurierten Anbie
 
 ## Beispiel
 
-In diesem Beispiel lösen wir das Google Optimize-Tag bei Einwilligung des Nutzers aus.
+In diesem Beispiel lösen wir das Google Ads-Conversion-Tag aus, wenn der Besucher dem Dienst Google Ads zustimmt.
 
-Erstellen Sie in Ihrem GTM-Container einen Trigger für ein dataLayer-Ereignis mit dem Namen „dastra:consent:google-optimize"
+1. Erstellen Sie in Ihrem GTM-Container einen Trigger vom Typ **Custom Event** (Benutzerdefiniertes Ereignis), dessen Ereignisname `dastra:consent:google-ads` lautet.
+2. Verknüpfen Sie diesen Trigger mit Ihrem Google Ads-Conversion-Tag.
 
-Das Google Optimize-Tag wird dann nur bei diesem Ereignis ausgelöst. So sieht es in der GTM-Oberfläche aus:
+Das Tag wird dann nur bei diesem Ereignis ausgelöst.
 
-![](../../../../.gitbook/assets/image-169.png)
+## Spezialfall der „Blocking Triggers“
 
-## Spezialfall der „Blocking Triggers"
-
-In bestimmten Fällen müssen Sie bestimmte Tags deaktivieren, wenn die Einwilligung nicht erteilt wurde. Da das Ereignis „dastra:consent:\<Dienstname>" nur beim Laden einer Seite ausgeführt wird, kann dies in bestimmten Fällen unzureichend sein, wenn Sie andere Interaktions-Trigger auf der Seite verwenden, wie Klicks auf Seitenelemente, Scroll-Höhen usw.
+In bestimmten Fällen müssen Sie bestimmte Tags deaktivieren, wenn die Einwilligung nicht erteilt wurde. Da das Ereignis „dastra:consent:\<Dienstname>“ nur beim Laden einer Seite ausgeführt wird, kann dies in bestimmten Fällen unzureichend sein, wenn Sie andere Interaktions-Trigger auf der Seite verwenden, wie Klicks auf Seitenelemente, Scroll-Höhen usw.
 
 In diesem Fall müssen bestimmte Konfigurationen vorgenommen werden, um **den Einwilligungswert direkt aus dem Einwilligungs-Cookie zu lesen**.
 
-### 1. Eine Variable „DastraConsents" erstellen
+{% hint style="info" %}
+Diese Methode funktioniert nur mit der Speicherung im Cookie: Sie eignet sich nicht, wenn die Option **Aktivieren Sie den localStorage-Speicher für Einwilligung-Cookies** aktiviert ist. Wenn Sie unter **Name des Cookies zur Speicherung der Einwilligung** einen eigenen Cookie-Namen festgelegt haben, verwenden Sie ihn in der Variablen.
+{% endhint %}
+
+### 1. Eine Variable „DastraConsents“ erstellen
 
 #### Die Variable definieren
 
-**Melden Sie sich** bei Ihrem Google Tag Manager-Konto an und gehen Sie zu „Variablen", dann erstellen Sie eine neue „Benutzerdefinierte Variable".
+**Melden Sie sich** bei Ihrem Google Tag Manager-Konto an und gehen Sie zu „Variablen“, dann erstellen Sie eine neue „Benutzerdefinierte Variable“.
 
-#### „1st party cookies" auswählen
+#### „1st party cookies“ auswählen
 
-Benennen Sie Ihr Tag z. B. „DastraConsents". Geben Sie im Feld Cookie-Name (Cookie name) den Namen des Einwilligungs-Cookies ein (Standard: **consent-eu**).\
-Denken Sie daran, **die Option „URI-decode cookie" zu aktivieren**
+Benennen Sie Ihr Tag z. B. „DastraConsents“. Geben Sie im Feld Cookie-Name (Cookie name) den Namen des Einwilligungs-Cookies ein (Standard: **consent-eu**).\
+Denken Sie daran, **die Option „URI-decode cookie“ zu aktivieren**
 
-<figure><img src="../../../../.gitbook/assets/image-7-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-variable-consent-cookie.png" alt="Die Variable DastraConsents vom Typ 1st party cookie mit dem Cookie-Namen consent-eu und der Option URI-decode cookie"><figcaption></figcaption></figure>
 
 #### Konfigurieren Sie anschließend Ihren Trigger folgendermaßen:
 
 In diesem Fall wird unser Tag ausgelöst, wenn die Scroll-Tiefe auf der Seite > 20% beträgt. Wir möchten, dass dieses Tag nur ausgelöst wird, wenn der Google Analytics-Dienst vom Nutzer autorisiert wurde. So konfigurieren Sie den Tag-Trigger.
 
-<figure><img src="../../../../.gitbook/assets/image-4-1-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-trigger-scroll-depth.png" alt="Konfiguration eines Triggers für die Scroll-Tiefe mit der Bedingung auf DastraConsents"><figcaption></figcaption></figure>
 
-Im Bereich „Some Pages", wenn Sie das Tag nur aktivieren möchten, wenn die Nutzung eines Dienstes genehmigt wurde, geben Sie die Formel ein: **DastraConsents contains "{serviceName}":true** (Beispiel: "crisp":true) ohne Leerzeichen
+Im Bereich „Some Pages“, wenn Sie das Tag nur aktivieren möchten, wenn die Nutzung eines Dienstes genehmigt wurde, geben Sie die Formel ein: **DastraConsents contains "{serviceName}":true** (Beispiel: "crisp":true) ohne Leerzeichen
 
 Wenn Sie das Tag im Falle einer Ablehnung auslösen möchten, verwenden Sie die Formel:
 
 **DastraConsents contains "{serviceName}":false** (Beispiel: "google-analytics":false)
 
-#### Fall mehrerer Trigger desselben Typs mit einer Ausnahme
+### Fall mehrerer Trigger desselben Typs mit einer Ausnahme
 
 Wenn Sie viele verschiedene Trigger für ein und dasselbe Tag haben, ist es auch durchaus möglich, eine Ausnahme auf diese Weise zu erstellen.\
 Beispiel eines Tags mit mehreren Triggern:
 
-<figure><img src="../../../../.gitbook/assets/image-2-1-1-1-1-1-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-google-ads-conversion.png" alt="Ein Google Ads-Conversion-Tag mit mehreren Triggern"><figcaption></figcaption></figure>
 
 In diesem Fall möchten wir eine Ausnahme hinzufügen: Wenn das Google Ads-Tag (google-ads) nicht akzeptiert wurde, soll das Tag nicht ausgelöst werden.
 
-Klicken Sie auf **„Ausnahme hinzufügen"** (Add Exception)
+Klicken Sie auf **„Ausnahme hinzufügen“** (Add Exception)
 
 {% hint style="info" %}
-Achtung: Ausnahmen funktionieren nur dann korrekt, wenn sie vom gleichen Typ sind. Wenn Ihre Trigger vom Typ „Page view" sind, muss die Ausnahme ebenfalls vom Typ Page view sein
+Achtung: Ausnahmen funktionieren nur dann korrekt, wenn sie vom gleichen Typ sind. Wenn Ihre Trigger vom Typ „Page view“ sind, muss die Ausnahme ebenfalls vom Typ Page view sein
 {% endhint %}
 
-Erstellen Sie einen Trigger desselben Typs mit dem Namen z. B. „Seitenaufrufe mit explizit abgelehntem Google Ads-Dienst".
+Erstellen Sie einen Trigger desselben Typs mit dem Namen z. B. „Seitenaufrufe mit explizit abgelehntem Google Ads-Dienst“.
 
 {% hint style="info" %}
-Wenn Sie auch das Tag standardmäßig nicht aktivieren möchten, einschließlich wenn der Nutzer nicht auf das Einwilligungs-Modal geklickt hat (und daher kein Cookie mit den Präferenzen gespeichert ist). In diesem Fall können Sie einen Trigger mit einer Negation verwenden:
+Wenn Sie das Standard-Tag auch dann deaktivieren möchten, wenn der Nutzer nicht auf das Einwilligungs-Modal geklickt hat (und daher kein Cookie mit den Präferenzen gespeichert ist), können Sie einen Trigger mit einer Negation verwenden:
 
 **DastraConsents Does not contain "google-ads":true**
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image-3-1-1-1-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-trigger-google-ads-refused.png" alt="Ein Trigger vom Typ Page view für Seiten, auf denen der Dienst Google Ads explizit abgelehnt wurde"><figcaption></figcaption></figure>
 
-Klicken Sie auf „Speichern". Sie sollten Folgendes sehen:
+Klicken Sie auf **Speichern**. Sie sollten Folgendes sehen:
 
-<figure><img src="../../../../.gitbook/assets/image-5-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-ads-triggering.png" alt="Das Google Ads-Tag mit seinen Triggern und der Ausnahme"><figcaption></figcaption></figure>
 
 Speichern Sie Ihre Änderungen und Sie sollten feststellen, dass Ihre Tags auf den betreffenden Seiten korrekt deaktiviert sind, wenn die Einwilligung nicht erteilt wurde.
 
@@ -117,9 +120,9 @@ In bestimmten Situationen ist es möglich, dass die Tags weiterhin aktiv sind.
 
 Um diese Art von Problemen zu verhindern, ist es möglich, eine Seitenaktualisierung zu erzwingen, die alle Marker oder JavaScript-SDKs, die von den Diensten geladen werden, vollständig zurücksetzt.
 
-Fügen Sie einfach den folgenden Code ein (wenn möglich unterhalb des Initialisierungs-Tags des Dastra-Widgets)
+Fügen Sie den folgenden Code ein (wenn möglich unterhalb des Initialisierungs-Tags des Dastra-Widgets)
 
-```html
+```markup
 <script>
 // If any service is refused explicitely in the modal
 // Consent events also fire on every page load: listen only once the widget is ready
@@ -150,7 +153,7 @@ window.addEventListener('dastra:consents:ready', function(){
 
 #### Vollständige Akzeptierung der Tracker:
 
-Um die Seite beim vollständigen Akzeptieren der Tracker neu zu laden (Schaltfläche „Alle akzeptieren"):
+Um die Seite beim vollständigen Akzeptieren der Tracker neu zu laden (Schaltfläche „Alle akzeptieren“):
 
 ```markup
 <script>
@@ -172,7 +175,7 @@ Um die Seite bei der Akzeptierung eines bestimmten Dienstes neu zu laden:
 <script>
 // Consent events also fire on every page load: listen only once the widget is ready
 window.addEventListener('dastra:consents:ready', function(){
-    window.addEventListener('dastra:consent:<Service-Slug>', function(){
+    window.addEventListener('dastra:consent:<service-slug>', function(){
         // Refresh the current page
         location.reload();
     })

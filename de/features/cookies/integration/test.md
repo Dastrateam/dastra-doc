@@ -1,23 +1,33 @@
 ---
-description: Erfahren Sie, wie Sie die Integration eines Einwilligungs-Widgets testen.
+description: Erfahren Sie, wie Sie die Integration eines Einwilligungsbanners testen.
 ---
 
-# Widget-Integration testen
+# Banner-Integration testen
 
-## Vorschaumodus aktivieren
+## Den Vorschau-Modus aktivieren
 
-![](../../../.gitbook/assets/Cookie16.png)
+Öffnen Sie im Abschnitt **Konfiguration** des Banners den Block mit den erweiterten Einstellungen und aktivieren Sie **Vorschau-Modus**.
 
-<figure><img src="../../../.gitbook/assets/Cookie17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookies-test-1.png" alt="Der Schalter Vorschau-Modus im Abschnitt Konfiguration"><figcaption><p>Der Schalter „Vorschau-Modus“</p></figcaption></figure>
 
-Der Vorschaumodus deaktiviert den Widget-Cache und ermöglicht es Ihnen, Ihre Konfigurationsänderungen live zu sehen. Domains auf localhost werden ebenfalls zugelassen.
+Der Vorschau-Modus deaktiviert den Cache der Bannerkonfiguration: Sie sehen Ihre Änderungen live. Außerdem deaktiviert er die Erfassung von Statistiken.
 
-## Sie können den folgenden API-Schlüssel verwenden
+{% hint style="warning" %}
+Lassen Sie den Vorschau-Modus nicht in der Produktion aktiviert: Er beeinträchtigt die Leistung des Banners.
+{% endhint %}
+
+`localhost`-Adressen mit Port, zum Beispiel `http://localhost:3000`, werden immer akzeptiert, mit oder ohne Vorschau-Modus.
+
+## Das Banner auf Ihrer Website in der Vorschau ansehen
+
+Klicken Sie oben im Editor auf **Vorschau**. Die Schaltfläche ist deaktiviert, solange in **Zulässige URLs (CORS)** keine Adresse eingetragen ist. Wählen Sie die Website aus, geben Sie den Pfad einer Seite und bei Bedarf die Sprache ein und klicken Sie dann auf **Vorschau verfügbar**. Der Banner-Code muss auf der betreffenden Website bereits installiert sein.
+
+## Den folgenden API-Schlüssel verwenden
 
 ```
 dastra00-0testing1-key
 ```
 
 {% hint style="info" %}
-Dieser Schlüssel zeigt ein Beispiel-Einwilligungs-Widget an. Es ist nicht möglich, dessen Konfiguration zu ändern. Der Zweck dieses Schlüssels besteht darin, Integrationstests durchzuführen (z. B. in einem jsFiddle).
+Dieser Schlüssel zeigt ein Beispiel-Einwilligungsbanner an. Seine Konfiguration können Sie nicht ändern. Er dient für Integrationstests, zum Beispiel in einem jsFiddle.
 {% endhint %}

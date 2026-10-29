@@ -1,13 +1,19 @@
-# 😇 Häufig gestellte Fragen
+---
+description: >-
+  Antworten auf häufig gestellte Fragen zu den allgemeinen Funktionen von
+  Dastra.
+---
+
+# Häufig gestellte Fragen
 
 ## Wie importiert man Datensätze?
 
-Um Datensätze zu importieren, gehen Sie zum Modul Datenkartierung und wählen Sie die Datensätze aus.
+1. Öffnen Sie **Dateninventar** > **Metadaten** > **Datenkategorien**.
+2. Klicken Sie auf den Pfeil der Schaltfläche **Datensatz erstellen** und dann auf **Importieren**.
 
-Sie können dorthin gelangen, indem Sie auf diese Schaltfläche klicken: [https://app.dastra.eu/workspace/0/referentials/data-retention-rules](https://app.dastra.eu/workspace/0/referentials/data-retention-rules)
+<figure><img src="../../.gitbook/assets/general-import-1.png" alt="Liste der Datensätze mit geöffnetem Menü der Schaltfläche zum Erstellen und dem Eintrag Importieren"><figcaption><p>Der Eintrag Importieren im Menü der Schaltfläche zum Erstellen</p></figcaption></figure>
 
-Im Untermenü der Schaltfläche "Datensatz erstellen" klicken Sie auf Importieren.
+3. Klicken Sie auf **Laden Sie die Dateivorlage herunter** und dann auf **Spaltenformat anzeigen**, um die erwarteten Werte zu sehen.
+4. Füllen Sie die Vorlage aus und legen Sie die Datei dann in der Upload-Zone ab.
 
-<figure><img src="../../.gitbook/assets/datensatz import.png" alt=""><figcaption></figcaption></figure>
-
-Sie können dann die Dateivorlage herunterladen und das erwartete Spaltenformat in der Importdateivorlage einsehen. Anschließend müssen Sie nur noch die Importdatei ablegen, damit der Import durchgeführt wird.
+Zum Konfliktmanagement, zur Spaltenzuordnung und zum Import der zugehörigen Datenfelder siehe die Seite [Daten importieren](import.md).
