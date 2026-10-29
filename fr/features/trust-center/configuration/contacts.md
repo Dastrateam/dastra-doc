@@ -1,15 +1,16 @@
 ---
-description: Apprenez à configurer les Contacts dans votre Trust center
+description: >-
+  Apprenez à configurer les contacts dans votre Trust Center.
 ---
 
 # Contacts
 
-**Activation de la fonctionnalité 'Contacts' dans votre Trust center**
+## Activer la fonctionnalité
 
-Pour activer la fonctionnalité '**Contacts'** dans votre Trust center, consultez la section de configuration générale qui permet d'activer ou de désactiver cette option. Une fois activée, une nouvelle section '**Contacts'** dans la barre latérale de la page d'accueil de votre Trust center s'affichera.
+Cochez **Contacts** dans la section **Configuration**, comme l'explique [Page d'accueil et configuration générale](home.md). Une section **Contacts** s'affiche alors dans la barre latérale de la page d'accueil de votre Trust Center. Elle n'apparaît donc que si la page d'accueil est activée.
 
-En dehors de l'activation, les contacts ne nécessitent pas de configuration additionnelle pour s'afficher dans votre Trust center.
+En dehors de l'activation, les contacts ne nécessitent aucune configuration supplémentaire.
 
-#### Affichage des contacts et impact du choix de l'unité organisationnelle
+## Affichage des contacts et impact de l'unité organisationnelle
 
-Les contacts affichés dans la barre latérale incluent les DPO, représentants au sein de l'union Européenne et représentants légaux renseignés dans l'unité organisationnelle associée à votre Trust center (voir ["Paramétrer les unités organisationnelles"](../../../getting-started/setup/organizational-units.md)), ainsi que, le cas échéant, les DPO, représentants au sein de l'union Européenne et représentants légaux de toutes les unités organisationnelles enfants de cette unité.
+Les contacts affichés dans la barre latérale incluent les DPO, les représentants au sein de l'Union européenne et les représentants légaux renseignés dans l'unité organisationnelle associée à votre Trust Center (voir [Paramétrer les unités organisationnelles](../../../getting-started/setup/organizational-units.md)). S'il y en a, ils incluent aussi ceux de toutes les unités enfants de cette unité.
