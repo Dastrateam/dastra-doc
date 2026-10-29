@@ -13,7 +13,9 @@ In Dastra, the default PIA model is attached to a single processing operation. I
 
 ## Can an email template be set up automatically when a questionnaire is created?
 
-You can create an email template that can be used in questionnaire invitations. It is not possible to perform automated actions via workflows for example. Questionnaires cannot be used as triggers.
+You can create an email template that can be used in questionnaire invitations: in the scheduling form, click **Select a template** next to the **Invitation's message**.
+
+To automate other actions, use a workflow rule. Questionnaire responses are an entity of workflow rules, named **Responding to a questionnaire**. To create a rule, open a response, click the arrow next to its main button, then **Workflow rule** and **Create a workflow rule**. A rule can, for example, send a notification or create a task when a response meets the conditions you defined. See the [Workflow rules](../settings/workflow-rules.md) page.
 
 ## As an external respondent, can I put images in the answers?
 
@@ -28,6 +30,21 @@ Yes, it is possible from the "long text" question type by checking the box "Auto
 Yes, you can do so from the questionnaire template editor by clicking on "Contribute":
 
 <div align="left"><figure><img src="../../.gitbook/assets/screenshot-2024-07-26-120534.png" alt=""><figcaption></figcaption></figure></div>
+
+## What do the colors in questionnaire answers mean?
+
+In the questionnaire sections, colors are associated with the icons of the questions.
+
+Here is what the colors mean:
+
+| Color | Image | Description |
+| --- | --- | --- |
+| Grey circled in red | ![](../../.gitbook/assets/audit-questionnaire-icone-oblig-non-repondue.png) | Required question not answered |
+| Black circled in red | ![](../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue.png) | Required question answered |
+| Grey | ![](../../.gitbook/assets/audit-questionnaire-icone-non-oblig-non-repondue.png) | Optional question not answered |
+| Green | ![](../../.gitbook/assets/audit-questionnaire-icone-repondue-vert.png) | All the questions in the section have an answer. Optional question answered |
+| Green circled in red | <img src="../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue-section-complete.png" alt="" data-size="original"> | All the questions in the section have an answer. Required question answered |
+| Black | <img src="../../.gitbook/assets/audit-questionnaire-icone-repondue-section-incomplete.png" alt="" data-size="original"> | Optional question answered. Some questions in the section have no answer yet |
 
 ## What to do when you get the error message "Error: there is a duplicate slug for the following questions" when saving a questionnaire? <a href="#slug-error" id="slug-error"></a>
 
@@ -75,11 +92,11 @@ Yes. When a respondent receives an invitation link by email, the **first access 
 
 ## Can an external respondent add other respondents themselves?
 
-No, only the **questionnaire owner** can add new respondents from the Dastra interface. If an external respondent wishes to involve a colleague, two options are available: the owner can directly add the new email address from the questionnaire management view, or the respondent can share their invitation link — the colleague will then need to validate access via a PIN code sent by email.
+No, only the **questionnaire owner** can add new respondents from the Dastra interface. If an external respondent wishes to involve a colleague, two options are available: the owner can directly add the new email address from the questionnaire management view, or the respondent can share their invitation link, the colleague will then need to validate access via a PIN code sent by email.
 
 ## Is there an automatic reminder when a questionnaire is awaiting validation?
 
-Currently, the owner receives a **notification** (in Dastra and by email) when the respondent finalises the questionnaire, but there is no periodic automatic reminder system. To avoid missing pending questionnaires, two alternatives exist: regularly check the **"My responses"** view in the Questionnaires module, or set up a **workflow rule** to automate sending a questionnaire or notification at regular intervals.
+Currently, the owner receives a **notification** (in Dastra and by email) when the respondent finalises the questionnaire, but there is no periodic automatic reminder system. To avoid missing pending questionnaires, two alternatives exist: regularly check **My responses**, filtered on the **Pending validation** status, or set up a **workflow rule** to automate sending a questionnaire or notification at regular intervals.
 
 ## Do dynamic selection questions require specific permissions for respondents?
 

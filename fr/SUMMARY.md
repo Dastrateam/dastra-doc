@@ -117,7 +117,7 @@
     * [AIPD / PIA](features/questionnaires/types/dpia.md)
     * [Analyse d'impact sur les transferts (TIA)](features/questionnaires/types/tia.md)
     * [Test d'équilibre des intérêts légitimes (LIA)](features/questionnaires/types/lia.md)
-  * [Traduire un formulaire avec l'IA](features/questionnaires/translate.md)
+  * [Traduire un questionnaire avec l'IA](features/questionnaires/translate.md)
   * [Supprimer un questionnaire ou un modèle](features/questionnaires/delete.md)
   * [Questions fréquentes](features/questionnaires/faq.md)
 * [Trust center](features/trust-center/README.md)

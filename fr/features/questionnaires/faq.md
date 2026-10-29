@@ -13,7 +13,9 @@ Dans Dastra, le modèle par défaut de PIA est rattaché à un seul traitement. 
 
 ## Peut-on mettre en place un modèle de mail automatiquement à la création d'un questionnaire ?
 
-Vous pouvez créer un modèle de mail qui pourra être utilisé dans les invitations aux questionnaires. Il n'est pas possible de réaliser des actions automatisées via les workflow par exemple. En effet, les questionnaires ne peuvent pas être utilisés comme éléments déclencheurs.
+Vous pouvez créer un modèle de mail qui pourra être utilisé dans les invitations aux questionnaires : dans le formulaire de planification, cliquez sur **Sélectionner un modèle** à côté du **Message d'invitation**.
+
+Pour automatiser d'autres actions, utilisez une règle de workflow. Les réponses aux questionnaires sont une entité des règles de workflow, nommée **Soumission de questionnaire**. Pour créer une règle, ouvrez une réponse, cliquez sur la flèche à côté de son bouton principal, puis sur **Règle de workflow** et **Créer une règle de workflow**. Une règle peut par exemple envoyer une notification ou créer une tâche lorsqu'une réponse remplit les conditions que vous avez définies. Consultez la page [Règles de workflows](../settings/workflow-rules.md).
 
 ## En tant que répondant externe, est-ce que je peux mettre des images dans les réponses ?
 
@@ -44,7 +46,7 @@ Voici la correspondance des couleurs :
 | Vert entouré de rouge | <img src="../../.gitbook/assets/audit-questionnaire-icone-oblig-repondue-section-complete.png" alt="" data-size="original"> | Toutes les questions de la section ont un réponse. Question obligatoire répondue        |
 | Noir                  | <img src="../../.gitbook/assets/audit-questionnaire-icone-repondue-section-incomplete.png" alt="" data-size="original">     | Question non obligatoire répondue. Il reste des questions sans réponse dans la section. |
 
-### Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ? <a href="#slug-error" id="slug-error"></a>
+## Que faire lorsque l'on rencontre le message d'erreur "Error : there is a duplicate slug for the following questions" lors de l'enregistrement d'un questionnaire ? <a href="#slug-error" id="slug-error"></a>
 
 <figure><img src="../../.gitbook/assets/audit-questionnaire-erreur-duplicate-slug.png" alt=""><figcaption></figcaption></figure>
 
@@ -63,18 +65,18 @@ Pour résoudre ce problème, il faut donc modifier le "Nom de la variable" de ch
 
 Lorsque le questionnaire ne contiendra plus de "Nom de la variable" en doublon, il sera possible de l'enregistrer normalement.<br>
 
-### Que faire lorsque l'on rencontre le message "Bloqué car trop d'invitations" lors de l'envoi d'invitations par email aux répondants du questionnaire ?
+## Que faire lorsque l'on rencontre le message "Bloqué car trop d'invitations" lors de l'envoi d'invitations par e-mail aux répondants du questionnaire ?
 
 <figure><img src="../../.gitbook/assets/audit-questionnaire-invitation-bloquee.png" alt=""><figcaption></figcaption></figure>
 
 \
-Ce message apparaît si 5 invitations par email ont déjà été envoyées à un répondant depuis le même questionnaire.\
+Ce message apparaît si 5 invitations par e-mail ont déjà été envoyées à un répondant depuis le même questionnaire.\
 \
 Lorsque ce message apparait, vous pouvez encore inviter le répondant en lui transmettant le lien d'invitation au questionnaire disponible ici :
 
 <figure><img src="../../.gitbook/assets/audit-questionnaire-repondants-copier-lien.png" alt=""><figcaption></figcaption></figure>
 
-### Que faire lorsque je ne peux pas "Revoir et valider le questionnaire" alors que je suis bien responsable ?
+## Que faire lorsque je ne peux pas "Revoir et valider le questionnaire" alors que je suis bien responsable ?
 
 Cela peut arriver lorsque le répondant n'a pas encore finalisé son questionnaire en cliquant sur le bouton "Finaliser" après y avoir répondu.\
 \
@@ -88,15 +90,15 @@ Oui, le nombre de modèles disponibles dépend de votre souscription. Ce quota e
 
 ## Est-il possible de partager le lien d'accès d'un questionnaire avec plusieurs personnes ?
 
-Oui. Lorsqu'un répondant reçoit un lien d'invitation par email, le **premier accès via ce lien ne nécessite pas de code PIN**. En revanche, si le répondant transfère le lien à un collègue, cette personne devra valider son accès via un **code PIN reçu par email**. Cette mécanique garantit la sécurité de l'accès tout en permettant la collaboration au sein d'une même équipe externe, sans qu'il soit nécessaire de créer un compte Dastra.
+Oui. Lorsqu'un répondant reçoit un lien d'invitation par e-mail, le **premier accès via ce lien ne nécessite pas de code PIN**. En revanche, si le répondant transfère le lien à un collègue, cette personne devra valider son accès via un **code PIN reçu par e-mail**. Cette mécanique garantit la sécurité de l'accès tout en permettant la collaboration au sein d'une même équipe externe, sans qu'il soit nécessaire de créer un compte Dastra.
 
 ## Un répondant externe peut-il ajouter lui-même d'autres répondants ?
 
-Non, seul le **responsable (owner) du questionnaire** peut ajouter de nouveaux répondants depuis l'interface Dastra. Si un répondant externe souhaite impliquer un collègue, deux options existent : le responsable peut ajouter directement la nouvelle adresse email depuis la gestion du questionnaire, ou le répondant peut partager son lien d'invitation — le collègue devra alors valider son accès par un code PIN reçu par email.
+Non, seul le **responsable (owner) du questionnaire** peut ajouter de nouveaux répondants depuis l'interface Dastra. Si un répondant externe souhaite impliquer un collègue, deux options existent : le responsable peut ajouter directement la nouvelle adresse e-mail depuis la gestion du questionnaire, ou le répondant peut partager son lien d'invitation, le collègue devra alors valider son accès par un code PIN reçu par e-mail.
 
 ## Y a-t-il un rappel automatique lorsqu'un questionnaire est en attente de validation ?
 
-Aujourd'hui, le responsable reçoit une **notification** (dans Dastra et par email) lors de la finalisation du questionnaire par le répondant, mais il n'existe pas de système de relance automatique périodique. Pour ne manquer aucun questionnaire en attente, deux alternatives existent : consulter régulièrement la vue **"Mes réponses"** dans le module Questionnaires, ou configurer une **règle de workflow** pour automatiser l'envoi d'un questionnaire ou d'une notification à intervalles réguliers.
+Aujourd'hui, le responsable reçoit une **notification** (dans Dastra et par e-mail) lors de la finalisation du questionnaire par le répondant, mais il n'existe pas de système de relance automatique périodique. Pour ne manquer aucun questionnaire en attente, deux alternatives existent : consulter régulièrement **Mes réponses aux questionnaires**, filtrée sur le statut **En attente de validation**, ou configurer une **règle de workflow** pour automatiser l'envoi d'un questionnaire ou d'une notification à intervalles réguliers.
 
 ## Les questions à sélection dynamique nécessitent-elles des droits particuliers pour les répondants ?
 

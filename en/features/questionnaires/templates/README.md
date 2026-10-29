@@ -4,52 +4,104 @@ description: Learn how to create and modify a questionnaire template with Dastra
 
 # Create a questionnaire template
 
-## Introduction
-
-Creating or modifying a questionnaire template in Dastra is a breeze. To do so, access the "Questionnaires" functionality.
+A questionnaire template describes the sections, the questions and the scoring rules of a questionnaire. You create it once, then schedule it as many times as needed. To reach the templates, open **Questionnaires** > **Questionnaire templates**.
 
 ## Create or modify a questionnaire template
 
-To create a questionnaire template, click the "Create Template" button on the "Questionnaires" tab. Then you can select one of the template types available in Dastra: automated, custom, or import from file.
+To create a template, click **Create a template** at the top of the **Questionnaire templates** list. The button is greyed out when you have reached the number of templates included in your plan.
 
-<figure><img src="../../../.gitbook/assets/create-audit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/questionnaires-templates-1.png" alt="Questionnaire template list with the Plan questionnaire and Create a template buttons"><figcaption><p>The list of questionnaire templates</p></figcaption></figure>
 
-This brings you to the template type selection interface:
+The **Choose a questionnaire template type** window offers four options:
 
-<figure><img src="../../../.gitbook/assets/audit-type.png" alt=""><figcaption></figcaption></figure>
+* **Automated questionnaires**: choose a predefined template from the Dastra library. See [Automated questionnaire templates](#automated-questionnaire-templates).
+* **Personalized questionnaire**: build your own template. See [Customized questionnaire templates](#customized-questionnaire-templates).
+* **Create from AI**: the AI assistant generates the template from your description. You can attach documents with the **+** button (an internal audit grid in Word, a security questionnaire in PDF, etc.): the assistant transposes the questionnaire provided into sections, questions, question types and answer options. Specify the questionnaire type (**Standard**, **Cyber compliance** or **Training**), then, under **More options**, the sections you want, the number of questions (from 1 to 50) and, for a training questionnaire, the difficulty level. You preview the result before creating the template. The option is greyed out when the AI feature for questionnaires is not enabled for your organization.
+* **Upload file**: import an existing template with **Json File** (a template exported from Dastra) or **Excel file** (a questionnaire in Excel or CSV format).
 
-* By clicking on the "Automated Questionnaire" tab, you will choose an existing predefined questionnaire template from the Dastra Questionnaire Library.
-* By clicking on "Custom Questionnaire" you can build your own questionnaire template.
-* By clicking on "**Create from AI**", the AI assistant generates the template from your description. You can attach documents with the **+** button (an internal audit grid in Word, a security questionnaire in PDF, etc.): the assistant transposes the questionnaire provided into sections, questions, question types and answer options. The questionnaire type, the generation language and the advanced options apply as for any generation, and you preview the result before creating the template.
+<figure><img src="../../../.gitbook/assets/questionnaires-templates-2.png" alt="Choose a questionnaire template type window with the four creation options"><figcaption><p>The four options for creating a template</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/audit-create-ai-template-attachments.png" alt="Window for creating a questionnaire template with AI, with attached documents"><figcaption><p>Creating a questionnaire template with AI from a document</p></figcaption></figure>
 
 {% hint style="info" %}
-Unlike automated questionnaires, custom questionnaires are fully customisable. Based on the answers selected by respondents, you will be able to automatically generate an action plan or map the risks associated with the model.
+Unlike automated questionnaires, personalized questionnaires are fully customizable. Based on the answers selected by respondents, you can automatically generate an action plan or map the risks associated with the template.
 {% endhint %}
 
 ## Automated questionnaire templates
 
-Dastra offers a number of automated questionnaire templates to document compliance and drive processes. These include templates for privacy impact analysis (PIA/DPIA), legitimate interests assessment (LIA), transfer impact assessment (TIA), processor assessments, and more.
+Dastra offers many automated questionnaire templates that document compliance and drive processes. They include DPIAs, TIAs, LIAs and processor questionnaires.
 
-<figure><img src="../../../.gitbook/assets/automatic-audit.png" alt=""><figcaption></figcaption></figure>
+In the selection window, filter the library with **Choose the library source**, **Locale**, **Tags** and **Types**, or search for a template by name. Click the eye icon of a template to see its details. Click the template to install it: Dastra creates a copy in your workspace and opens its page.
 
-Once you have selected a template, you will be taken to the planning screen where you can either:
+<figure><img src="../../../.gitbook/assets/questionnaires-templates-3.png" alt="Questionnaire template library with the source, locale, tags and types filters"><figcaption><p>The questionnaire template library</p></figcaption></figure>
 
-* modify the template by clicking on the "Modify template" button, or
-* schedule a questionnaire by clicking on the "Schedule a questionnaire" button.
+From the template's page, you can:
+
+* modify the template with **Edit template**;
+* schedule a questionnaire with **Plan questionnaire**.
 
 {% hint style="info" %}
-Some questionnaire types (PIA, TIA, LIA) can also be launched directly from within a processing activity — for example from the "Impact assessment", "Recipients" or "Purposes" tabs. See the dedicated pages below for details.
+Some questionnaire types (DPIA, TIA, LIA) can also be started directly from a processing activity, for example from the **Impact assessment**, **Recipients** or **Purposes** steps. See the dedicated pages below for details.
 {% endhint %}
 
-## Customised questionnaire templates
+## Customized questionnaire templates
 
-In Dastra, you can create your own custom questionnaire template. To do this, click on the "Custom Questionnaire" option. This will take you to the questionnaire template editing interface.
+To create your own template, click **Personalized questionnaire**. The **Creation of a questionnaire template** panel opens: fill it in (see the next section), then build the sections and questions in the template editor. Click **Save changes** to keep your edits, or **Save and exit** to close the editor.
 
-Build the questionnaire template you want and click on "Save and Continue".
+<figure><img src="../../../.gitbook/assets/questionnaires-templates-5.png" alt="Questionnaire template editor with its sections, its questions and the actions panel"><figcaption><p>The questionnaire template editor</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/creation-assessement-template-2.png" alt=""><figcaption></figcaption></figure>
+### Configure the template
+
+The configuration panel opens when you create a template. To come back to it later, open the template's menu in the list and click **Settings**, or, in the editor, click **Configure**. It is titled **Template's configuration** when you reopen it.
+
+<figure><img src="../../../.gitbook/assets/questionnaires-templates-4.png" alt="Questionnaire template configuration panel"><figcaption><p>The configuration panel of a template</p></figcaption></figure>
+
+| Field | Purpose |
+| --- | --- |
+| **Name**, **Summary**, logo | The identity of the template in the lists and the library. |
+| **Related to** | The type of object each response is linked to (see [Items assessed](#items-assessed)). |
+| **Default questionnaire approvers** | The approvers selected by default when scheduling. They can still be changed. |
+| **Questionnaire type** | The behavior of the questionnaire in the application (see [Types of templates](#types-of-templates)). |
+| **Tags** | Labels to filter the templates. |
+| **Number of days before the deadline** | The number of days proposed as the deadline when scheduling. It is 30 days by default. |
+| **Display analysis and allow exports to respondents** | Respondents see the analysis blocks and the scores, and can export their responses. |
+| **Should this questionnaire be conducted on a regular basis?** | If you answer **Yes**, set the **Days between responses**. See [Schedule a questionnaire](../schedule.md). |
+
+### Items assessed
+
+You can link questionnaires to items in Dastra. By choosing the type of item assessed in **Related to**, you force all responses based on that template to be linked to an object of the chosen type. For example, this questionnaire template will always be linked to a processing activity.
+
+The possible object types are stakeholders, assets, processing activities, data breaches, requests, security measures, datasets, risk assessments, AI systems and contracts.
+
+You can also choose not to link a questionnaire to a particular object. The response is then always linked to an organizational unit, which suits global compliance questionnaires, for example.
+
+### Types of templates
+
+The **Questionnaire type** field classifies the template and changes its behavior in the application. Dastra offers 19 types, grouped as follows in the list:
+
+| Group | Types |
+| --- | --- |
+| Impact assessments | Privacy impact assessment (DPIA), Transfer impact assessment (TIA), Legitimate interests assessment (LIA), Consent analysis, AI system impact assessment |
+| Compliance | Cyber compliance, Privacy compliance, CSR compliance |
+| Third party | Third party assessment, Stakeholder creation |
+| E-Learning | Training |
+| Privacy by design | Data processing project |
+| Incident management | Data breach creation request |
+| Asset management | Asset creation |
+| Contracts | Contract creation |
+| AI | AI System creation, AI system risk assessment, AI responsability assessment |
+| Other | Standard |
+
+Some types enable a specific behavior:
+
+* **Standard**: a standard questionnaire with standard reporting;
+* **Cyber compliance**: a questionnaire for compliance with a specific regulation, with a compliance score;
+* **Privacy impact assessment (DPIA)**: this template displays a risk matrix (with the required configuration) and can be called up at the **Impact assessment** step of a processing activity. See [Create or modify a DPIA template](pia.md);
+* **Third party assessment**: this template is called up at the processor recipients step of a processing activity;
+* **Transfer impact assessment (TIA)**: a questionnaire to analyze the risks related to a data transfer outside the EU;
+* **Legitimate interests assessment (LIA)**: a questionnaire on the legitimate interests legal basis, to make sure those interests do not override the rights and freedoms of individuals;
+* **Training**: a questionnaire for running training quizzes. It lets you mark the correct answer among the answers offered and display the correct answers at the end of the questionnaire;
+* the **creation** types (data processing project, data breach, asset, contract, AI system or stakeholder collection): once the response is validated, its data is used to create or update the matching object (see [Monitor questionnaires](../monitor.md)). These templates also feed the collection from a Trust Center (see [Collecting data processing projects from a Trust Center](../../trust-center/creation-questionnaires.md)).
 
 ### Scoring calculation rule for multiple-choice questions
 
@@ -62,33 +114,13 @@ The question's **Score max** is shown under the selector. The rule applies to th
 
 <figure><img src="../../../.gitbook/assets/audit-template-question-scoring-rule.gif" alt="Choosing the scoring calculation rule of a multiple-choice question"><figcaption><p>Scoring calculation rule of a multiple-choice question</p></figcaption></figure>
 
-## Items assessed
+## Load a questionnaire template you own
 
-You can link questionnaires to items in Dastra. By choosing the type of item being assessed, you force all questionnaire responses based on that template to be linked to an object of the chosen type. For example, you can choose that this questionnaire template will always be linked to a process.
-
-<figure><img src="../../../.gitbook/assets/element-audite.png" alt=""><figcaption></figcaption></figure>
-
-You can choose not to link a questionnaire to a particular object. In this case, the response will always be linked to an organisational unit. This may be the case for global compliance questionnaires for example.
-
-## Types of templates
-
-When creating a custom template, you will need to choose a template type.
-
-<figure><img src="../../../.gitbook/assets/assessment-template-create-label-required.png" alt=""><figcaption></figcaption></figure>
-
-These types allow for some customisation of questionnaire models.
-
-* **Standard questionnaire**: this is a standard questionnaire
-* **Compliance questionnaire**: currently a standard questionnaire
-* **Impact analysis**: this questionnaire template allows a risk matrix to be displayed (with the required configuration) and to be called up at the PIA stage of a processing activity
-* **Subcontractor questionnaire**: this questionnaire template is called at the subcontractor recipients stage of a processing activity
-* **Transfer Impact Assessment (TIA)**: a questionnaire to analyse the risks related to a data transfer outside the EU
-* **Legitimate Interest Assessment (LIA)**: questionnaire of the legal basis of legitimate interests to ensure that the interests do not override the rights and freedoms of individuals
-* **Training questionnaire**: a questionnaire for conducting training quizzes. This type of questionnaire makes it possible to select a correct answer from the answers and to display the correct answers at the end of the questionnaire.
+You can import one of your questionnaire templates in JSON format. When creating the template, click **Upload file**, then **Json File**, and drop the file. To get this file, export a template from its menu with **Export**.
 
 ## Dynamic selection questions
 
-Among the question types available in the template editor, two types allow you to connect a question directly to data in your Dastra workspace: **"Single dynamic selection"** and **"Multiple dynamic selection"**.
+Among the question types available in the template editor, two types connect a question directly to data in your Dastra workspace: **Single dynamic selection** and **Multiple dynamic selection**.
 
 These question types display a list of objects from Dastra to the respondent: assets, processing activities, stakeholders, security measures, datasets, data fields, AI systems, contracts, etc. The respondent selects one or more items from their library as their answer.
 
@@ -144,31 +176,48 @@ The **Compare versions** action shows two versions side by side. Each section an
 <figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Comparison of two versions of a questionnaire template"><figcaption><p>Comparing two versions of a questionnaire template</p></figcaption></figure>
 
 {% hint style="info" %}
-The number of available templates depends on your subscription plan. This quota is shared across all workspaces in your organisation. The template recycle bin counts towards the quota — remember to empty it regularly to free up slots.
+The number of available templates depends on your subscription plan. This quota is shared across all workspaces in your organization. The template recycle bin counts towards the quota: remember to empty it regularly to free up slots.
 {% endhint %}
 
-## Load a questionnaire template you own
+## History, export and contribution
 
-Finally, it is possible to import one of your questionnaire templates, in json format. To do this, when creating the questionnaire, select the "Load a template" option.
+In the editor, the menu next to the **Save changes** button gives access to several actions:
+
+* **Create a version**;
+* **Plan questionnaire**;
+* **Configure**;
+* **Activity history**: review and restore earlier changes to the template;
+* **Export**: download the template (JSON, Excel, CSV, PDF, Word, HTML or Markdown);
+* **Contribute**: publish the template for all Dastra users, for users allowed to contribute.
+
+To delete a template, see [Delete a questionnaire or a template](../delete.md).
+
+## Analysis blocks
+
+Analysis blocks display a custom text based on the questionnaire score or the answers provided.
 
 ## Go further
 
 {% content-ref url="../schedule.md" %}
-[scheduling-an-audit-or-a-pia.md](../schedule.md)
+[Schedule a questionnaire](../schedule.md)
 {% endcontent-ref %}
 
 {% content-ref url="../export.md" %}
-[share-an-audit-report-or-pia.md](../export.md)
+[Export a report](../export.md)
 {% endcontent-ref %}
 
 {% content-ref url="../types/dpia.md" %}
-[questionnaire-types/pia-dpia.md](../types/dpia.md)
+[PIA / DPIA](../types/dpia.md)
 {% endcontent-ref %}
 
 {% content-ref url="../types/tia.md" %}
-[questionnaire-types/tia.md](../types/tia.md)
+[Transfer Impact Assessment (TIA)](../types/tia.md)
 {% endcontent-ref %}
 
 {% content-ref url="../types/lia.md" %}
-[questionnaire-types/lia.md](../types/lia.md)
+[Legitimate Interests Assessment (LIA)](../types/lia.md)
+{% endcontent-ref %}
+
+{% content-ref url="pia.md" %}
+[Create or modify a DPIA template](pia.md)
 {% endcontent-ref %}

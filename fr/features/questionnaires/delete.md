@@ -1,37 +1,48 @@
 ---
-description: Comment supprimer un audit ? Comment supprimer un modèle d'audit ?
+description: >-
+  Apprenez à déplacer un questionnaire ou un modèle de questionnaire dans la
+  corbeille, à le restaurer ou à le supprimer définitivement.
 ---
 
 # Supprimer un questionnaire ou un modèle
 
-## Supprimer un audit
+Dans Dastra, un questionnaire ou un modèle de questionnaire passe d'abord par la corbeille avant sa suppression définitive. Cette étape protège contre les suppressions accidentelles : tant que l'élément est dans la corbeille, vous pouvez le restaurer.
 
-Avant de supprimer un audit, nous avons mis en place un garde-fou : une phase d'archive. Cette phase permet de conserver le document supprimer avant suppression définitive. Cela fonctionne comme une corbeille.
+## Supprimer un questionnaire
 
-### Archivage
+### Déplacer dans la corbeille
 
-Tout d'abord, vous devez archiver l'audit via le bouton **Archiver** présent dans le menu de l'audit. Pour afficher le menu, il faut se rendre sur les trois petits points dans la liste des audits.
+1. Dans une liste de questionnaires (**Tous les questionnaires**, **Mes réponses aux questionnaires** ou le tableau de bord d'un modèle), cliquez sur les trois points de la ligne concernée.
+2. Cliquez sur **Déplacer dans la corbeille** et confirmez.
 
-<figure><img src="../../.gitbook/assets/audit-list-context-menu.png" alt=""><figcaption><p>Le bouton Archiver est en bas de la liste</p></figcaption></figure>
+Vous pouvez aussi ouvrir le questionnaire et choisir **Déplacer dans la corbeille** dans le menu à côté de son bouton principal. Pour traiter plusieurs questionnaires à la fois, sélectionnez les lignes et utilisez l'action groupée correspondante.
 
-Cliquez sur **Archiver** et votre audit passera en archive.
+<figure><img src="../../.gitbook/assets/questionnaires-delete-1.png" alt="Menu d'une ligne de la liste des questionnaires avec l'action Déplacer dans la corbeille"><figcaption><p>L'action Déplacer dans la corbeille dans le menu d'un questionnaire</p></figcaption></figure>
 
-### Suppression définitive d'un audit
+### Restaurer ou supprimer définitivement
 
-Pour **supprimer définitivement** un audit, il faut afficher les archives et procéder à sa suppression.
+1. Cliquez sur **Filtres** au-dessus de la liste, puis activez **Voir la corbeille**.
+2. Dans le menu du questionnaire, cliquez sur **Restaurer** pour le remettre dans vos listes, ou sur **Supprimer** pour le supprimer définitivement.
 
-<figure><img src="../../.gitbook/assets/audit-filters-show-archives.png" alt=""><figcaption><p>Coche pour afficher les archives</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/questionnaires-delete-2.png" alt="Filtres de la liste des questionnaires avec Voir la corbeille activé et menu Restaurer ou Supprimer"><figcaption><p>La corbeille des questionnaires : Restaurer ou Supprimer</p></figcaption></figure>
 
-Ensuite, il faut suffit de supprimer l'audit via le menu de l'audit
+{% hint style="danger" %}
+La suppression définitive d'un questionnaire est irréversible.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/audit-archived-restore-menu.png" alt=""><figcaption><p>Vous pouvez également restaurer votre audit si besoin</p></figcaption></figure>
+## Supprimer un modèle
 
-## Supprimer un modèle d'audit
+Les modèles de questionnaires disposent eux aussi d'une corbeille.
 
-Pour supprimer un modèle d'audit, il faut aller sur la liste des modèles et sélectionner dans le menu du modèle le bouton **supprimer**.
+1. Dans **Modèles de questionnaires**, cliquez sur les trois points du modèle.
+2. Cliquez sur **Déplacer dans la corbeille** et confirmez.
 
-<figure><img src="../../.gitbook/assets/audit-template-context-menu.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/questionnaires-delete-3.png" alt="Menu d'un modèle de questionnaire avec l'action Déplacer dans la corbeille"><figcaption><p>Le menu d'un modèle de questionnaire</p></figcaption></figure>
+
+Pour restaurer un modèle ou le supprimer définitivement, activez **Voir la corbeille** en haut de la liste des modèles. Dans le menu du modèle, cliquez ensuite sur **Restaurer** ou sur **Supprimer définitivement**.
+
+<figure><img src="../../.gitbook/assets/questionnaires-delete-4.png" alt="Liste des modèles de questionnaires dans la corbeille avec le menu Restaurer ou Supprimer définitivement"><figcaption><p>La corbeille des modèles de questionnaires</p></figcaption></figure>
 
 {% hint style="info" %}
-Attention, il n'y a pas d'archivage des modèles d'audit. Pensez à le télécharger en format JSON si vous souhaitez en conserver une copie à réimporter.
+Le nombre de modèles dépend de votre abonnement, et la corbeille des modèles compte dans ce quota : un modèle déplacé dans la corbeille occupe toujours un emplacement tant qu'il n'est pas supprimé définitivement. Si vous souhaitez conserver une copie d'un modèle avant de le supprimer, exportez-le au format JSON depuis son menu : vous pourrez le réimporter plus tard.
 {% endhint %}
