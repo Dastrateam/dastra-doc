@@ -1,207 +1,188 @@
 ---
 description: >-
-  Diese Seite beschreibt die Funktionsweise der API zur Einwilligungsverwaltung.
-  Diese API kann einfach in native mobile Anwendungen integriert werden.
+  Diese Seite beschreibt die API zur Verwaltung der Einwilligung. Sie können sie
+  in nativen mobilen Anwendungen verwenden.
 ---
 
 # Native Anwendungen
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/cookies-widget-settings/:id?key=:key" method="get" summary="Widget-Konfiguration abrufen" expanded="false" %}
-{% swagger-description %}
-Dieser Endpunkt ermöglicht es, die vollständige Konfiguration des Widgets abzurufen
-{% endswagger-description %}
+Eine native Anwendung zeigt das Web-Banner nicht an: Sie ruft die Konfiguration des Banners ab, zeigt ihren eigenen Einwilligungsbildschirm an und sendet dann die Entscheidungen des Nutzers an Dastra. Beide Aufrufe verwenden den öffentlichen API-Schlüssel.
 
-{% swagger-parameter in="path" name="id" type="number" %}
-ID of the widget configuration
-{% endswagger-parameter %}
+{% hint style="info" %}
+Je nach Hosting-Region Ihrer Organisation ändert sich die Adresse der API (`api-bleu.dastra.eu` statt `api.dastra.eu`). Verwenden Sie die Adresse Ihrer Organisation.
+{% endhint %}
 
-{% swagger-parameter in="query" name="culture" type="string" %}
-The locale of the widget configuration (en, fr...)
-{% endswagger-parameter %}
+Anfragen ohne `Origin`-Header, wie die einer nativen Anwendung, werden akzeptiert, ohne dass die **Zulässigen URLs (CORS)** geprüft werden.
 
-{% swagger-parameter in="query" name="key" type="string" %}
-The public api key provided
-{% endswagger-parameter %}
+## Die Konfiguration des Banners abrufen
 
-{% swagger-response status="200" description="Widget-Konfiguration abgerufen" %}
-```
+<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/cookies/public/cookies-widget-settings/{id}?key={key}`
+
+Dieser Endpunkt gibt die vollständige Konfiguration des Banners zurück.
+
+### Pfadparameter
+
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| `id` | number | Kennung des Banners. |
+
+### Query-Parameter
+
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| `key` | string | Der öffentliche API-Schlüssel. |
+| `culture` | string | Die Sprache der Konfiguration (`en`, `fr` usw.). Fehlt sie, verwendet Dastra den Header `Accept-Language` und dann die erste Sprache des Banners. |
+| `debug` | boolean | Bei `true` wird kein Besuchsereignis erfasst. |
+
+Beispiel einer `200`-Antwort. Die Banner-Texte und einige Felder sind gekürzt; der Inhalt hängt von Ihrer Konfiguration ab.
+
+```json
 {
   "translation": {
     "id": "35dddc1a-3ceb-49a8-a8d2-fc343fdb56a3",
-    "lang": "fr",
-    "order": 0,
-    "buttonBackLabel": "Retour",
-    "buttonAcceptLabel": "Accepter tout",
-    "buttonSettingsLabel": "Personnaliser",
-    "buttonViewPurposeLabel": "Sélectionner les finalités",
-    "buttonConfirmLabel": "Enregistrer sélection",
-    "buttonAcceptAllLabel": "Tout accepter",
-    "buttonLaterLabel": "Tout refuser",
-    "buttonViewMoreLabel": "Voir la liste",
-    "noticeUrlButtonLabel": "Lire notre politique des cookies",
-    "startupTitle": "Nous utilisons les cookies",
-    "startupDisclaimer": "Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services",
-    "innerTitle": "Voici nos services qui utilisent les cookies",
-    "innerDisclaimer": "Dans cet écran de configuration, vous pouvez choisir les cookies que vous autorisez lors de votre navigation",
-    "categoryNecessaryLabel": "Cookies nécessaires",
-    "categoryNecessaryExcerpt": "Les cookies nécessaires contribuent à rendre un site Web utilisable en activant des fonctions de base comme la navigation de page et l'accès aux zones sécurisées du site Web. Le site Web ne peut pas fonctionner correctement sans ces cookies.",
-    "categoryNecessaryDescription": "Les cookies nécessaires contribuent à rendre un site Web utilisable en activant des fonctions de base comme la navigation de page et l'accès aux zones sécurisées du site Web. Le site Web ne peut pas fonctionner correctement sans ces cookies.",
-    "categoryPreferenceLabel": "Préférences",
-    "categoryPreferenceExcerpt": "Les cookies de préférences permettent à un site Web de retenir des informations qui modifient la manière dont le site se comporte ou s'affiche, comme votre langue préférée ou la région dans laquelle vous vous situez.",
-    "categoryPreferenceDescription": "Les cookies de préférences permettent à un site Web de retenir des informations qui modifient la manière dont le site se comporte ou s'affiche, comme votre langue préférée ou la région dans laquelle vous vous situez.",
-    "categoryAnalyticalLabel": "Statistiques",
-    "categoryAnalyticalExcerpt": "Les cookies statistiques aident les propriétaires du site Web, par la collecte et la communication d'informations de manière anonyme, à comprendre comment les visiteurs interagissent avec les sites Web.",
-    "categoryAnalyticalDescription": "Les cookies statistiques aident les propriétaires du site Web, par la collecte et la communication d'informations de manière anonyme, à comprendre comment les visiteurs interagissent avec les sites Web.",
+    "lang": "en",
+    "startupTitle": "We use cookies",
+    "startupDisclaimer": "Cookies let us personalize content and ads, provide social media features and analyze our traffic.",
+    "buttonAcceptLabel": "Accept all",
+    "buttonSettingsLabel": "Customize",
+    "buttonLaterLabel": "Refuse all",
+    "buttonConfirmLabel": "Save my choices",
+    "innerTitle": "These are our services that use cookies",
+    "categoryNecessaryLabel": "Strictly necessary",
+    "categoryPreferenceLabel": "Preferences",
+    "categoryAnalyticalLabel": "Analytics",
     "categoryMarketingLabel": "Marketing",
-    "categoryMarketingExcerpt": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
-    "categoryMarketingDescription": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
-    "categoryOtherLabel": "Autres cookies",
-    "categoryOtherExcerpt": "Ecrire une description courte ici",
-    "categoryOtherDescription": "Ecrire une description longue ici",
-    "categoryIABLabel": "Services publicitaires de l'IAB",
-    "categoryIABExcerpt": "Ces services utilisent les cookies principalement à des fin d'amélioration de la qualité des messages publicitaires.",
-    "categoryIABDescription": "Ces services utilisent les cookies principalement à des fin d'amélioration de la qualité des messages publicitaires.",
-    "cookieDeclaration": null,
-    "buttonYes": "Oui",
-    "buttonNo": "Non",
-    "viewProof": "Afficher la preuve du consentement",
-    "successMessage": "Vos préférences ont été sauvegardées ! Merci ! "
+    "successMessage": "Your preferences have been saved."
   },
   "groups": [
     {
-      "label": "Marketing",
-      "excerpt": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
-      "purpose": 3,
+      "label": "Analytics",
+      "excerpt": "Analytics cookies help us understand how visitors use the site.",
+      "purpose": "Analytical",
       "services": [
         {
           "id": "e213aca4-79b7-4b93-2bad-08d897969898",
-          "name": "yrdy",
-          "slug": "yrdy",
-          "domain": "www.dastra.eu",
-          "logoUrl": "https://api.dastra.eu/v1/favicon/www.dastra.eu",
-          "privacyPolicyUrl": null,
+          "name": "Google Analytics",
+          "slug": "google-analytics",
+          "domain": "analytics.google.com",
+          "logoUrl": "https://api.dastra.eu/v1/favicon/analytics.google.com",
+          "privacyPolicyUrl": "https://policies.google.com/privacy",
           "defaultConsent": false,
           "requiredConsent": true,
-          "purpose": 3,
+          "purpose": "Analytical",
           "description": null,
           "cookies": [
             {
               "id": "de529978-3ae0-496d-bf25-daac9d7230c7",
               "serviceId": null,
-              "name": "yrdy",
+              "name": "_ga",
               "description": null,
               "value": null,
+              "thirdParty": false,
               "path": null,
               "domain": null,
-              "expiryDays": null
+              "expiryDays": 400
             }
           ],
-          "lang": "fr"
+          "lang": "en",
+          "consentModeV2Permissions": []
         }
       ],
-      "description": "Les cookies marketing sont utilisés pour effectuer le suivi des visiteurs au travers des sites Web. Le but est d'afficher des publicités qui sont pertinentes et intéressantes pour l'utilisateur individuel et donc plus précieuses pour les éditeurs et annonceurs tiers.",
+      "description": "Analytics cookies help us understand how visitors use the site.",
       "requiredConsent": true,
       "defaultConsent": false
     }
   ],
-  "lang": "fr",
+  "lang": "en",
+  "availableLocales": ["en", "fr"],
+  "id": 1,
   "versionKey": "36df80ee-235c-4485-b9e2-f28f5568f572",
-  "lastVersionGeneration": "2020-12-03T14:28:55.5450603",
-  "buttonLogoUrl": null,
+  "lastVersionGeneration": "2026-10-12T14:28:55Z",
+  "label": "Example banner",
   "enabled": true,
-  "label": "www.dastra.eu",
-  "displayLogo": true,
-  "hideCopyright": false,
-  "showFixedButton": true,
-  "developerMode": true,
+  "disableBanner": false,
   "saveConsentProof": true,
-  "isValid": false,
+  "developerMode": false,
   "position": "BottomLeft",
   "timerTrigger": 0,
   "scrollTrigger": 0,
+  "showFixedButton": true,
+  "showCloseButton": true,
+  "continueWithoutAcceptButton": false,
+  "enableGlobalPrivacyControl": false,
+  "hideCopyright": false,
+  "buttonLayout": "Circle",
+  "buttonLogoUrl": null,
   "autoGeneratedCookieNotice": false,
   "cookieNoticeUrl": "",
   "bgColor": "#FFFFFF",
-  "colorTitle": "#2E4058",
-  "colorBtn": "#686868",
-  "colorText": "#2E4058",
-  "colorPrimary": "#E7630A",
-  "colorSecondary": "#48ba61",
+  "colorTitle": "#0A153B",
+  "colorBtn": "#687c77",
+  "colorText": "#0A153B",
+  "colorPrimary": "#EF4A2A",
+  "colorSecondary": "#687c77",
   "customCSS": "",
-  "enableIAB": false,
-  "tcfVersion": 1,
   "fontFamily": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-  "dateCreation": "2020-12-03T14:20:19.3703522",
-  "dateUpdate": "2021-03-15T12:32:09.848664",
-  "consentCookieExpiryTime": 180,
+  "consentStorageMode": "Cookies",
   "consentCookieName": null,
-  "id": 1,
-  "tenant": null,
-  "tenantId": 1
+  "consentCookieDomain": null,
+  "consentCookieExpiryTime": 180
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/collect/:id?key=:key" method="post" summary="Einwilligungen erfassen" %}
-{% swagger-description %}
-Diese Methode ermöglicht die Erfassung von Cookie-Einwilligungen
-{% endswagger-description %}
+Die Antwort entspricht dem Modell `CookieWidgetPublicDto`. Eine `400`-Antwort bedeutet eine nicht zulässige Origin, ein deaktiviertes Banner oder ein abgelaufenes Abonnement.
 
-{% swagger-parameter in="path" name="id" type="string" %}
-ID of the widget configuration
-{% endswagger-parameter %}
+## Einwilligungen erfassen
 
-{% swagger-parameter in="query" name="key" type="string" %}
-The public api key
-{% endswagger-parameter %}
+<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/cookies/public/collect/{id}?key={key}`
 
-{% swagger-parameter in="body" name="consents" type="object" %}
-&#x20;Die Liste der Nutzer-Einwilligungen\
-\
-`{`\
-`"cookieConsents":`\
-`[`\
-&#x20; `{`\
-&#x20;   `"consent":true, // True if consented, false if refused`\
-&#x20;   `"id":"e213aca4-79b7-4b93-2bad-08d897969898", // Cookies id`\
-&#x20;   `"date":"2021-03-15T14:00:04.133Z",`\
-&#x20;   `"name":"yrdy",`\
-&#x20;   `"slug":"yrdy",`\
-&#x20;   `"purpose":3`\
-&#x20; `}`\
-`],`\
-`"lang":"fr-FR",`\
-`"consentId":"6f47576e-5a0c-4219-8efe-331e72bab73a",`\
-`"date":1615809009744`\
-`}`\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-&#x20;
-{% endswagger-parameter %}
+Diese Methode erfasst Cookie-Einwilligungen.
 
-{% swagger-parameter in="body" name="type" type="string" %}
-CookieEventType Visit,Quit,Consents
-{% endswagger-parameter %}
+### Pfadparameter
 
-{% swagger-parameter in="body" name="consentId" type="string" %}
-The current consent Id (If any collected before)
-{% endswagger-parameter %}
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| `id` | number | Kennung des Banners. |
 
-{% swagger-parameter in="body" name="userId" type="string" %}
-Pseudonyme Kennung des Nutzers in Ihren Systemen (optional), siehe [Identifizierung der Nutzer](../identification.md)
-{% endswagger-parameter %}
+### Query-Parameter
 
-{% swagger-response status="200" description="Return the id of the consent collected" %}
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| `key` | string | Der öffentliche API-Schlüssel. |
+
+### Request-Body
+
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| `type` | string | Der Ereignistyp: `Visit`, `Quit` oder `Consents`. |
+| `consents` | object | Die Liste der Einwilligungen des Nutzers (siehe das Beispiel unten). |
+| `consentId` | string | Die aktuelle Einwilligungskennung, falls bereits eine Einwilligung erfasst wurde. |
+| `referrer` | string | Die Adresse der Seite oder des Bildschirms, von dem das Ereignis stammt. |
+| `userId` | string | Pseudonyme Kennung des Nutzers in Ihren Systemen (optional). Siehe [Nutzeridentifizierung](../identification.md). |
+
+Beispiel eines Bodys:
+
+```json
+{
+  "type": "Consents",
+  "referrer": "my-app://settings/privacy",
+  "userId": "{your_pseudonymous_user_id}",
+  "consents": {
+    "consentId": "6f47576e-5a0c-4219-8efe-331e72bab73a",
+    "lang": "en-US",
+    "versionKey": "36df80ee-235c-4485-b9e2-f28f5568f572",
+    "cookieConsents": [
+      {
+        "id": "e213aca4-79b7-4b93-2bad-08d897969898",
+        "name": "Google Analytics",
+        "slug": "google-analytics",
+        "consent": true,
+        "date": "2026-10-12T14:00:04.133Z",
+        "purpose": "Analytical"
+      }
+    ]
+  }
+}
 ```
-140f213b-de17-4572-99a7-5075ccbcbbec
-```
-{% endswagger-response %}
-{% endswagger %}
+
+Die `200`-Antwort enthält die Kennung der erfassten Einwilligung, zum Beispiel `140f213b-de17-4572-99a7-5075ccbcbbec`. Bewahren Sie sie in der Anwendung für die nächsten Aufrufe auf: Sie ist die Kennung des Einwilligungsnachweises. Ereignisse von Bots werden ignoriert, und der Nachweis wird nur gespeichert, wenn die Option **Speicherung der Einwilligung** aktiviert ist.

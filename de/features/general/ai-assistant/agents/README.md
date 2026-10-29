@@ -89,7 +89,7 @@ Jede **Nachricht, die Sie senden**, kostet **1 Dastra-AI-Credit**, unabhängig d
 
 Das monatliche Kontingent Ihrer Organisation und sein Verbrauch werden unter **Organisationseinstellungen** > **KI-Assistent** verfolgt. Ist das Kontingent erreicht, werden Unterhaltungen und Ausführungen abgelehnt, und die Schaltfläche **Ausführen** eines autonomen Agenten ist deaktiviert.
 
-Modellfamilien, Hosting und die an die Modelle gesendeten Daten sind unter [Wie funktioniert es?](../how-it-works.md) beschrieben.
+Modellfamilien, Hosting und die an die Modelle gesendeten Daten sind unter [Funktionsweise](../how-it-works.md) beschrieben.
 
 ***
 

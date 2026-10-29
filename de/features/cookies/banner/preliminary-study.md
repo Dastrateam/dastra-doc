@@ -1,68 +1,66 @@
 ---
 description: >-
-  Bevor Sie mit der technischen Implementierung des Dastra-Widgets beginnen,
-  empfehlen wir Ihnen, zunächst ein Cookie-Audit Ihrer Websites durchzuführen.
+  Bevor Sie mit der technischen Umsetzung des Dastra-Banners beginnen,
+  empfehlen wir ein Cookie-Audit Ihrer Websites.
 ---
 
-# Voruntersuchung
+# Vorstudie
 
-## 1. Wenden Sie sich an Ihren Webmaster oder Ihre Webagentur
+## 1. Kontaktieren Sie Ihren Webmaster oder Ihre Webagentur
 
-Bevor Sie das Dastra-Widget implementieren, empfehlen wir Ihnen, sich an die Person zu wenden, die für die Integration der Tags und anderer Marker auf Ihrer Website verantwortlich ist, und sie in Ihren Mandanten einzuladen. Diese Person kann dann die von Dastra generierten Code-Elemente abrufen, die für die Durchführung der verschiedenen technischen Maßnahmen erforderlich sind (Einrichtung des Banners, effektive Blockierung von Cookies bei fehlender Einwilligung...).
+Bevor Sie das Dastra-Banner umsetzen, empfehlen wir, die Person zu kontaktieren, die für die Einbindung von Tags und anderen Markern auf Ihrer Website zuständig ist, und sie in Ihren Mandanten einzuladen. Diese Person kann dann die von Dastra generierten Codebausteine abrufen, die für die verschiedenen technischen Schritte nötig sind (Einrichtung des Banners, tatsächliches Blockieren von Cookies bei fehlender Einwilligung usw.).
 
 ## 2. Führen Sie ein Mini-Audit der Cookies Ihrer Website oder Web-App durch
 
-Für dieses Audit können Sie sich auf die folgende Excel-Dateivorlage stützen:
+Für dieses Audit können Sie die folgende Excel-Vorlage verwenden:
 
 {% file src="../../../.gitbook/assets/template-audit.xlsx" %}
 
-Dieses Mini-Audit wird die Integrationsarbeit des technischen Teams erheblich erleichtern.
+Dieses Mini-Audit bereitet die Integrationsarbeit des technischen Teams vor.
 
-### Listen Sie die Dienste/Cookies auf, die mit Ihrer Domain verbunden sind
+### Die mit Ihrem Domainnamen verbundenen Dienste und Cookies auflisten
 
-Zur Unterstützung können Sie unser schlüsselfertiges Cookie-Scan-Tool verwenden: [https://app.dastra.eu/workspace/19/cookie-widget/integration/scan](https://app.dastra.eu/workspace/19/cookie-widget/integration/scan)\
-Damit können Sie die auf Ihrer Website installierten Dienste anhand unserer Cookie-Datenbank direkt identifizieren.
+Zur Unterstützung können Sie das Dastra-Tool zum Scannen von Cookies verwenden: Klicken Sie im Menü auf **Cookie-Banner** > **Banner** > **Banner erstellen** und wählen Sie dann **Website-Analyse**. Es identifiziert die auf Ihrer Website installierten Dienste anhand der Dastra-Cookie-Datenbank.
 
 {% content-ref url="scan.md" %}
-[scannez-les-cookies-deposes-sur-votre-site-web.md](scan.md)
+[Cookies scannen](scan.md)
 {% endcontent-ref %}
 
-Ergänzend wird empfohlen, alle auf Ihrer Website installierten Dienste genau zu untersuchen (Prüfung des Quellcodes der Seite, Inspektion der Cookies...). Tools wie [https://builtwith.com/](https://builtwith.com/) können Ihnen ebenfalls bei der Auflistung dieser Dienste helfen.
+Außerdem empfiehlt es sich, alle auf Ihrer Website installierten Dienste genau zu prüfen (Untersuchung des Quellcodes der Seite, Inspektion der Cookies usw.). Tools wie [https://builtwith.com/](https://builtwith.com/) können Ihnen ebenfalls helfen, diese Dienste aufzulisten.
 
-Für jede Domain oder Website, die Sie erfassen möchten, empfehlen wir Ihnen, eine vollständige Liste der Drittanbieterdienste zu erstellen, die Tracker verwenden.
+Wir empfehlen, für jede Domain oder Website, die Sie erfassen möchten, eine vollständige Liste der Drittanbieterdienste zu erstellen, die Tracker verwenden.
 
-Sobald Sie die Liste der mit Ihrer Website verbundenen Dienste haben, müssen Sie die anzuwendende Blockierungsstrategie festlegen.
+Sobald Sie die Liste der mit Ihrer Website verbundenen Dienste haben, müssen Sie die Blockierstrategie festlegen.
 
-### Definition der Verarbeitungszwecke
+### Zwecke festlegen
 
-Jeder identifizierte Dienst muss in eine dieser Kategorien eingeordnet werden:&#x20;
+Jeder identifizierte Dienst sollte einer dieser Kategorien zugeordnet werden:
 
-| Typ                       | Id |
-| ------------------------- | -- |
-| Unbedingt erforderlich    | 0  |
-| Präferenzen               | 1  |
-| Analytisch                | 2  |
-| Marketing                 | 3  |
-| Sonstige                  | 4  |
+| Typ                           | Id |
+| ----------------------------- | -- |
+| Unbedingt erforderlich        | 0  |
+| Einstellungen                 | 1  |
+| Analyse der Besucherzahlen    | 2  |
+| Marketing und Nutzererfahrung | 3  |
+| Sonstiges                     | 4  |
 
-### Identifikation der Integrationsart des Dienstes
+### Die Art der Integration des Dienstes bestimmen
 
-Für jeden Dienst müssen Sie feststellen, wie das JS-Tag in die Seite integriert ist:
+Für jeden Dienst müssen Sie bestimmen, wie das JS-Tag in die Seite eingebunden ist:
 
-* JavaScript-Tag direkt in der Seite
-* Integration im JS-Code der Seite (interne Entwicklung)
-* Integration in einem Tag-Management-Tool (Google Tag Manager)
-* Sonstige: iframe, ...
+* direktes JavaScript-Tag in der Seite;
+* Integration im JS-Code der Seite (interne Entwicklung);
+* Integration in einem Tagging-Tool (Google Tag Manager);
+* Sonstiges: iframe usw.
 
-### Definition der anzuwendenden Blockierungsstrategie
+### Die anzuwendende Blockierstrategie festlegen
 
 Um Cookies standardmäßig zu blockieren, gibt es mehrere mögliche Strategien, die von Ihren Anforderungen abhängen:
 
-* **Nicht mehr verwenden**: Diese Bibliothek ist tatsächlich nicht notwendig, Sie können sie daher vollständig aus den Quellen der Website entfernen;
+* **Nicht mehr verwenden**: Diese Bibliothek wird tatsächlich nicht benötigt, Sie können sie also vollständig aus den Quellen der Website entfernen;
 * **Vollständig blockieren**: Die Ausführung des Tags wird vollständig blockiert, solange der Nutzer die Cookies nicht akzeptiert hat;
-* **Teilweise blockieren**: Nur die Tracking-Funktionen werden blockiert (sofern die Bibliothek dies ermöglicht). Einige Bibliotheken können nämlich in einem vollständig degradierten Modus ohne Leistungseinbußen funktionieren.
+* **Teilweise blockieren**: Nur die Tracking-Funktionen werden blockiert (sofern die Bibliothek das erlaubt). Manche Bibliotheken können nämlich in einem vollständig eingeschränkten Modus ohne Leistungseinbußen arbeiten.
 
 {% content-ref url="scan.md" %}
-[scannez-les-cookies-deposes-sur-votre-site-web.md](scan.md)
+[Cookies scannen](scan.md)
 {% endcontent-ref %}
-

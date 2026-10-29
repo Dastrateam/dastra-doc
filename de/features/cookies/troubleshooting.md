@@ -1,14 +1,21 @@
+---
+description: >-
+  Die häufigsten Ursachen für ein Cookie-Banner, das nicht angezeigt wird, und
+  wie Sie sie beheben.
+---
+
 # Fehlerbehebung
 
-In bestimmten Fällen wird das Cookie-Widget nicht angezeigt. Hier sind die Lösungen für dieses Problem:
+Wenn das Cookie-Banner nicht angezeigt wird, prüfen Sie der Reihe nach die folgenden Punkte.
 
-1.  Überprüfen Sie die dem Widget zugeordneten Domains. Gehen Sie dazu zu **Cookies** > **Widget auswählen** > **Konfiguration**\
-    Ändern Sie die autorisierten Domains folgendermaßen, wobei Sie das Format _https://www.meineurl.com_ einhalten:<br>
+1. Prüfen Sie die zulässigen URLs. Klicken Sie im Menü auf **Cookie-Banner** > **Banner**, öffnen Sie das Banner und dann den Abschnitt **Konfiguration**. Die Adresse Ihrer Website muss unter **Zulässige URLs (CORS)** aufgeführt sein, im Format `https://myurl.com`, ohne Pfad. Das ist die häufigste Ursache: Ein Origin, der in der Liste fehlt, wird abgelehnt.
 
-    <figure><img src="../../.gitbook/assets/Cookie18.png" alt=""><figcaption></figcaption></figure>
-2.  **Überprüfen Sie die Gültigkeit Ihres öffentlichen API-Schlüssels** (Verwenden Sie nicht den privaten Schlüssel!). Gehen Sie dazu zu **Organisationseinstellungen (Die Schaltfläche oben rechts**![](../../.gitbook/assets/image-1-4-2.png)) > **Entwicklung / API-Schlüssel**. Überprüfen Sie dann, ob der API-Schlüssel existiert und gültig ist.<br>
+   <figure><img src="../../.gitbook/assets/cookies-configure-6.png" alt="Der Abschnitt Konfiguration mit dem Feld Zulässige URLs (CORS)"><figcaption><p>Das Feld „Zulässige URLs (CORS)“</p></figcaption></figure>
+2. Prüfen Sie den Status des Banners. Im Editor muss der Schalter **Status** auf aktiviert stehen.
+3. Prüfen Sie die Gültigkeit Ihres öffentlichen API-Schlüssels (verwenden Sie nicht den privaten Schlüssel). Klicken Sie in der oberen Leiste auf das Zahnradsymbol (**Organisationseinstellungen**) und dann auf **API-Schlüssel & MCP**. Prüfen Sie, ob der Schlüssel existiert und nicht abgelaufen ist. Siehe [API-Schlüssel verwalten](../settings/api-keys.md).
 
-    <figure><img src="../../.gitbook/assets/Cookie19 (1).png" alt=""><figcaption></figcaption></figure>
-3. **Überprüfen Sie, ob Sie nicht versehentlich einen Anzeige-Auslöser konfiguriert haben.** Wenn beispielsweise das Banner so konfiguriert ist, dass es bei einer zu hohen Scroll-Höhe in % angezeigt wird, werden Sie das Widget beim Aufrufen der Seite nicht sehen.
-4. **Überprüfen Sie Ihr Abonnement**: Um das Cookie-Einwilligungs-Widget frei nutzen zu können, müssen Sie über ein gültiges Abonnement für diese Funktion verfügen. Kontaktieren Sie Ihren Organisationseigentümer, wenn dieser die Cookie-Schaltfläche nicht in der Navigation sieht – wahrscheinlich ist die Funktion nicht in Ihrem Abonnement enthalten. Sie können sich an den [Support-Service](mailto:support@dastra.eu) wenden, um weitere Informationen zu erhalten.
-5. Für alle anderen Probleme [kontaktieren Sie den Support](https://doc.dastra.eu/commencer/le-support/faire-une-demande-de-support?cacheBust=1676909428068).
+   <figure><img src="../../.gitbook/assets/cookies-quickstart-1.png" alt="Die Seite API-Schlüssel & MCP mit der Liste der Schlüssel"><figcaption><p>Die Seite „API-Schlüssel & MCP“</p></figcaption></figure>
+4. Prüfen Sie, ob Sie versehentlich einen Anzeige-Auslöser festgelegt haben. Im Abschnitt **Auslöser** verhindert ein zu hoher Wert bei **Scrollhöhe in % der Seitengröße (0 % = Seitenanfang)**, dass das Banner erscheint, wenn der Besucher auf der Seite ankommt.
+5. Prüfen Sie die Optionen, die das Banner ausblenden. Die Option **Bitte aktivieren Sie das Banner nicht (alle standardmäßig durch Einwilligung zugelassenen Cookies werden aktiviert).** blendet das Banner aus, ebenso **Aktivieren Sie die Global Privacy Control (GPC)** bei Besuchern, deren Browser dieses Signal sendet. Ein Besucher, der bereits eine Auswahl getroffen hat, sieht das Banner nicht mehr: Löschen Sie zum Testen das Cookie `consent-eu` aus Ihrem Browser.
+6. Prüfen Sie Ihr Abonnement. Um das Cookie-Banner zu nutzen, muss Ihr Abonnement die Funktion enthalten. Erscheint das Menü **Cookie-Banner** nicht in der Navigation, ist die Funktion wahrscheinlich nicht enthalten: Wenden Sie sich an den Inhaber Ihrer Organisation. Ist das Abonnement abgelaufen, lehnt die API die Konfiguration des Banners ab. Weitere Informationen erhalten Sie beim [Support](mailto:support@dastra.eu).
+7. Bei jedem anderen Problem [wenden Sie sich an den Support](../../getting-started/support/request.md).

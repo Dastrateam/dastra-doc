@@ -1,93 +1,101 @@
+---
+description: Zeigen Sie je nach geografischem Standort des Nutzers ein anderes Cookie-Banner an.
+---
+
 # Geo-Targeting-Varianten
 
-### Vorstellung
+## Überblick
 
-Das Dastra-Einwilligungsmodul ermöglicht es, **geo-zielgerichtete Varianten** Ihres Cookie-Banners zu erstellen. Jede Variante ist eine angepasste Version des Widgets – Erscheinungsbild, Texte, angezeigte Dienste – die automatisch basierend auf dem **geografischen Standort des Nutzers** angezeigt wird, der über seine IP-Adresse ermittelt wird.
+Mit dem Dastra-Einwilligungsmodul können Sie **geografisch ausgerichtete Varianten** Ihres Cookie-Banners erstellen. Jede Variante ist eine angepasste Version des Banners (Erscheinungsbild, Texte, angezeigte Dienste), die automatisch anhand des **geografischen Standorts des Nutzers** angezeigt wird, der aus seiner IP-Adresse ermittelt wird.
 
-Diese Funktion ist besonders nützlich für Organisationen, die in mehreren Ländern oder Regulierungszonen tätig sind, da die Pflichten in Bezug auf die Cookie-Einwilligung je nach lokaler Gesetzgebung erheblich variieren (DSGVO/ePrivacy in Europa, CCPA in Kalifornien, LGPD in Brasilien usw.).
+Diese Funktion ist nützlich für Organisationen, die in mehreren Ländern oder Rechtsräumen tätig sind, da die Pflichten zur Cookie-Einwilligung je nach Rechtsordnung unterschiedlich sind (DSGVO und ePrivacy in Europa, CCPA in Kalifornien, LGPD in Brasilien usw.).
 
 {% hint style="info" %}
-**Warum dies rechtlich wichtig ist**
+**Warum das rechtlich wichtig ist**
 
-Das in Deutschland konforme Banner ist nicht unbedingt konform für einen kalifornischen Nutzer (Opt-out statt Opt-in) oder einen britischen Nutzer (nach dem Brexit hat die ICO eigene Richtlinien). Geo-zielgerichtete Varianten ermöglichen es Ihnen, Ihre CMP präzise an jeden rechtlichen Kontext anzupassen, ohne die Widgets zu vervielfachen.
+Ein in Frankreich konformes Banner ist nicht zwangsläufig konform für einen kalifornischen Nutzer (Opt-out statt Opt-in) oder einen britischen Nutzer (nach dem Brexit hat das ICO eigene Leitlinien). Mit geografisch ausgerichteten Varianten passen Sie Ihr Banner an jeden rechtlichen Kontext an, ohne die Zahl der Banner zu vervielfachen.
 {% endhint %}
+
+Varianten hängen von Ihrem Tarif ab: Die Auswahlliste der Varianten ist deaktiviert, wenn die Funktion nicht in Ihrem Abonnement enthalten ist.
 
 ***
 
-### Eine geo-zielgerichtete Variante erstellen
+## Eine geografisch ausgerichtete Variante erstellen
 
-#### 1. Auf die Konfiguration zugreifen
+### 1. Die Konfiguration öffnen
 
-Wählen Sie im Modul **Cookies** Ihr Widget aus und navigieren Sie dann zum Tab **Varianten**.
+1. Klicken Sie im Menü auf **Cookie-Banner** > **Banner** und dann auf Ihr Banner.
+2. Öffnen Sie oben rechts im Editor die Auswahlliste, die **Standardkonfiguration** anzeigt. Sie listet die vorhandenen Varianten auf.
+3. Klicken Sie auf **Erstellen Sie eine geografisch ausgerichtete Variante**.
 
-Klicken Sie auf **„Geo-zielgerichtete Variante erstellen"**.
+<figure><img src="../../../.gitbook/assets/cookies-geo-targeting-1.png" alt="Die Auswahlliste der Varianten im Banner-Editor"><figcaption><p>Die Auswahlliste der Varianten</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Cookie11.png" alt=""><figcaption></figcaption></figure>
+### 2. Die Variante benennen
 
-#### 2. Die Variante benennen
+Geben Sie im Feld **Name der Variante** einen aussagekräftigen Namen ein (höchstens 80 Zeichen), zum Beispiel `Banner - Kalifornien (CCPA)` oder `Banner - EWR-Zone`.
 
-Geben Sie ein beschreibendes **Label** ein (maximal 80 Zeichen). Wählen Sie einen aussagekräftigen Namen, um die Verwaltung zu erleichtern, z. B.: `Banner – Kalifornien (CCPA)` oder `Banner – EWR-Zone`.
+### 3. Die anvisierten geografischen Zonen auswählen
 
-#### 3. Die Zielregionen auswählen
+Wählen Sie unter **Länder oder geografische Regionen, auf die sich das Banner bezieht** die **Länder oder Regionen**, für die die Variante gilt. In der Liste steht eine Suche zur Verfügung.
 
-Wählen Sie die **Länder oder Regionen** aus, für die diese Variante gelten soll. Die Suche ist in der Liste verfügbar.
+Dastra bietet unter **Vorauswahl** zwei Abkürzungen:
 
-Dastra bietet zwei Schnellauswahlen:
+* **EU/EWR**: wählt alle Länder des Europäischen Wirtschaftsraums aus.
+* **Geeignete Länder**: wählt die Länder aus, die von der Europäischen Kommission nach Artikel 45 DSGVO als angemessen anerkannt sind.
 
-* **EU/EWR**: wählt automatisch alle Länder des Europäischen Wirtschaftsraums vor.
-* **All adequate country**: wählt die von der Europäischen Kommission im Sinne von Artikel 45 DSGVO als angemessen anerkannten Länder vor.
-
-Die Liste ist nach Ländern organisiert, mit der Möglichkeit, **subnationale Regionen** anzusteuern (z. B. französische Regionen, US-Bundesstaaten). Dies ermöglicht es beispielsweise, eine spezifische Variante nur für Kalifornien innerhalb eines allgemeineren Widgets für die USA zu erstellen.
+Die Liste ist nach Ländern gegliedert und ermöglicht es, **Regionen unterhalb der Landesebene** anzusprechen (zum Beispiel französische Regionen oder US-Bundesstaaten). Sie können zum Beispiel innerhalb eines allgemeineren Banners für die Vereinigten Staaten eine Variante speziell für Kalifornien erstellen.
 
 {% hint style="warning" %}
-**Prioritätsreihenfolge der Varianten**
+**Vorrang der Varianten**
 
-Wenn mehrere Varianten auf denselben Nutzer zutreffen könnten (z. B. ein Nutzer in Île-de-France mit einer Variante „Frankreich" und einer Variante „Île-de-France"), hat die **spezifischere** Variante (Region) Vorrang vor der allgemeineren Variante (Land).
+Können mehrere Varianten auf denselben Nutzer zutreffen (zum Beispiel ein Nutzer in der Île-de-France mit einer Variante „Frankreich“ und einer Variante „Île-de-France“), hat die **spezifischste** Variante (die Region) Vorrang vor der allgemeineren (dem Land).
 {% endhint %}
 
-#### 4. Die Variante anpassen
+### 4. Die Variante anpassen
 
-Sobald die Variante erstellt ist, können Sie sie **vollständig unabhängig** vom Haupt-Widget konfigurieren:
+Sobald die Variante erstellt ist, öffnet sie sich im Editor. Sie können Folgendes anpassen:
 
-* **Erscheinungsbild**: Farben, Layout, Schaltflächen
-* **Texte & Übersetzungen**: an den lokalen rechtlichen Kontext angepasste Beschriftungen
-* **Angezeigte Dienste**: Sie können die Liste der angezeigten Tracker einschränken oder erweitern
-* **Auslöser**: spezifische Anzeigebedingungen
+* **Erscheinungsbild und Design**: Farben, Layout, Schaltflächen;
+* **Texte und Übersetzungen**: an den lokalen rechtlichen Kontext angepasste Texte;
+* **Dienstleistungen**: Sie können die Liste der angezeigten Tracker einschränken oder erweitern;
+* **Auslöser**: für die Variante spezifische Anzeigebedingungen.
 
-#### 5. Die Anzeige des Banners deaktivieren (optional)
+{% hint style="info" %}
+Eine Variante übernimmt die folgenden Einstellungen aus dem Standard-Banner: die zulässigen URLs, die Generierung der Cookie-Richtlinie, den Namen, die Domäne und die Lebensdauer des Einwilligungs-Cookies, den Speichermodus, den Vorschau-Modus und den Versionsschlüssel. Um sie zu ändern, öffnen Sie die **Standardkonfiguration**.
+{% endhint %}
 
-Eine Option ermöglicht es, **kein Banner** für Nutzer der Zielzone anzuzeigen.
+### 5. Die Anzeige des Banners deaktivieren (optional)
 
-Wenn aktiviert, wird für die betreffenden Besucher kein Einwilligungsfenster angezeigt. Alle Cookies werden dann mit ihrer **Standardeinwilligung** ausgelöst, wie sie auf Ebene jedes Dienstes im Widget konfiguriert ist.
+Im Abschnitt der Variante können Sie über die Option zur Deaktivierung der Banner-Anzeige (alle Cookies mit Standardeinwilligung werden ausgelöst) festlegen, **kein Banner** für Nutzer in der anvisierten Zone anzuzeigen.
+
+Wenn sie aktiviert ist, wird den betreffenden Besuchern kein Einwilligungsfenster angezeigt. Alle Cookies werden dann mit ihrer **Standardeinwilligung** ausgelöst, wie sie für jeden Dienst konfiguriert ist.
 
 {% hint style="warning" %}
-**Nur für Zonen ohne Pflicht zur vorherigen Einwilligung**
+**Nur für Zonen ohne vorherige Einwilligungspflicht**
 
-Diese Option ist für Länder geeignet, in denen die lokale Gesetzgebung keine aktive Einholung der Einwilligung vor dem Setzen von Cookies vorschreibt (z. B. bestimmte Länder außerhalb des EWR ohne entsprechende ePrivacy-Gesetzgebung). Sie darf **niemals** für Nutzer in der EU/dem EWR, im Vereinigten Königreich oder in einer anderen Rechtsordnung verwendet werden, die ein Opt-in vorschreibt.
+Diese Option ist relevant für Länder, in denen die lokalen Vorschriften vor dem Setzen von Cookies keine aktive Einwilligung verlangen (zum Beispiel bestimmte Länder außerhalb des EWR ohne gleichwertige ePrivacy-Gesetzgebung). Verwenden Sie sie niemals für Nutzer in der EU oder im EWR, im Vereinigten Königreich oder in jedem anderen Rechtsraum, der ein Opt-in verlangt.
 {% endhint %}
 
 {% hint style="info" %}
-Die „Standardeinwilligung" jedes Dienstes ist in der Widget-Konfiguration im Bereich **Dienste** einstellbar. Überprüfen Sie diese Werte, bevor Sie diese Option aktivieren.
+Die Standardeinwilligung jedes Dienstes legen Sie im Abschnitt **Dienstleistungen** des Banners fest. Prüfen Sie diese Werte, bevor Sie die Option aktivieren.
 {% endhint %}
 
 ***
 
-### Typische Anwendungsfälle
+## Typische Anwendungsfälle
 
-| Situation                                                  | Empfohlene Konfiguration                                                                    |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Europäische Website mit amerikanischem Traffic             | EWR-Variante (striktes Opt-in) + USA/Kalifornien-Variante (CCPA Opt-out)                    |
-| Französische Website mit deutscher Niederlassung           | Frankreich-Variante + Deutschland-Variante mit an die BfDI-Anforderungen angepassten Texten |
-| Globale Website mit minimaler Compliance außerhalb des EWR | Standard-Widget weltweit + EWR-Variante DSGVO-konform                                       |
+| Situation                                           | Empfohlene Konfiguration                                                 |
+| --------------------------------------------------- | ------------------------------------------------------------------------ |
+| Europäische Website mit US-Traffic                  | EWR-Variante (striktes Opt-in) + US-/Kalifornien-Variante (CCPA-Opt-out) |
+| Französische Website mit einer deutschen Tochtergesellschaft | Variante Frankreich + Variante Deutschland mit an die Anforderungen des BfDI angepassten Texten |
+| Globale Website mit minimaler Compliance außerhalb des EWR | Globales Standard-Banner + DSGVO-konforme EWR-Variante            |
 
 ***
 
-### Technische Funktionsweise
+## Wie es technisch funktioniert
 
-Die geografische Erkennung wird automatisch vom Dastra-SDK anhand der **IP-Adresse** des Nutzers durchgeführt, ohne dass Ihrerseits eine zusätzliche Konfiguration erforderlich ist.
-
-Es werden keine Standortdaten im Einwilligungsprofil des Nutzers gespeichert: Die Geolokalisierung dient ausschließlich zur Auswahl der anzuzeigenden Variante.
+Dastra ermittelt den Standort anhand der **IP-Adresse** des Besuchers, ohne dass Sie etwas konfigurieren müssen. Der Standort bestimmt, welche Variante angezeigt wird. Das Einwilligungs-Cookie des Besuchers enthält seinen Standort nicht, aber das erkannte Land und die IP-Adresse werden mit dem [Einwilligungsnachweis](consent-proof.md) gespeichert.
 
 {% hint style="info" %}
-Um die Anzeige einer bestimmten Variante in Ihrem Browser zu testen, können Sie ein VPN verwenden oder den Dastra-Support kontaktieren, um einen Vorschaumodus nach Zone zu aktivieren.
+Um die Anzeige einer Variante aus Ihrem Browser zu testen, verwenden Sie ein VPN mit Standort in der anvisierten Zone.
 {% endhint %}

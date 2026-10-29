@@ -1,113 +1,114 @@
 ---
-description: Dastra bietet Ihnen die Möglichkeit, Ihre Formulare unbegrenzt anzupassen
+description: >-
+  Ergänzen Sie Ihre Formulare mit benutzerdefinierten Feldern um die Felder, die
+  Ihrer Tätigkeit eigen sind: Feldtypen, Optionen, Verwendung und API.
 ---
 
 # Benutzerdefinierte Felder
 
-So verwenden Sie benutzerdefinierte Felder in Dastra
+## Wann benutzerdefinierte Felder verwenden
 
-## Wann sollten benutzerdefinierte Felder verwendet werden?
+Manche Informationen, die Ihrer Branche eigen sind, sind in den Standardfeldern des Verarbeitungsverzeichnisses, der Betroffenenanfragen, der Aufgaben usw. nicht enthalten. Mit benutzerdefinierten Feldern erstellen Sie Ihre eigenen Formularfelder, um die erfassten Daten anzureichern.
 
-Es kann vorkommen, dass bestimmte branchenspezifische Informationen nicht in den nativen Feldern des Verarbeitungsverzeichnisses, der Betroffenenanfragen, der Aufgaben usw. vorhanden sind.
+Hier ein Beispiel für die Konfiguration von Feldern für einen Stakeholder:
 
-Dastra ermöglicht es Ihnen, benutzerdefinierte Formularfelder zu erstellen, die Sie ganz einfach hinzufügen können, um die erfassten Daten zu erweitern.
-
-Hier ein Beispiel für die Konfiguration von Feldern für den Stakeholder:
-
-<figure><img src="../../.gitbook/assets/image-2-1-3-1-1.png" alt=""><figcaption><p>Feldkonfiguration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-1.png" alt="Seite der benutzerdefinierten Felder des Stakeholders mit einer Feldgruppe und ihren Feldern"><figcaption><p>Konfiguration der Felder eines Stakeholders</p></figcaption></figure>
 
 Und hier das Ergebnis im Formular:
 
-<figure><img src="../../.gitbook/assets/image-4-1-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-2.png" alt="Stakeholder-Formular mit der Gruppe benutzerdefinierter Felder"><figcaption><p>Die benutzerdefinierten Felder im Stakeholder-Formular</p></figcaption></figure>
 
 ## Betroffene Funktionen
 
-{% hint style="success" %}
-Achtung! Nicht alle Funktionen unterstützen benutzerdefinierte Felder.
-{% endhint %}
+Benutzerdefinierte Felder sind nicht in jedem Modul verfügbar. Sie können die folgenden Formulare anpassen:
 
-Sie können die folgenden Formulare anpassen:
-
-* [Verarbeitungsblätter](../ropa/README.md)
+* [Verarbeitungstätigkeiten](../ropa/README.md)
 * [Betroffenenanfragen](../requests/README.md)
-* [Aufgaben](../tasks/create.md)
+* [Aufgaben](../tasks/README.md)
 * [Assets](../ropa/activity/assets.md)
-* [Stakeholder](../mapping/repositories/README.md)
-* [Maßnahmen](../ropa/activity/security.md)
+* [Stakeholder](../ropa/activity/stakeholders.md)
+* [Sicherheitsmaßnahmen](../ropa/activity/security.md)
 * [Datensätze](../ropa/activity/datasets.md)
 * Datenfelder
-* [Datenschutzvorfälle](../../gdpr/concepts/breaches.md)
+* [Datenschutzvorfälle](../incidents/README.md)
 * [Risikobewertungen](../risks/attach-to-processing.md)
 * [KI-Systeme](../ai-systems/README.md)
-* [Verträge](../contracts/README.md)
-* [Kontrollpunkte](../compliance/library/risks.md#association-des-controles)
+* [Verträge und Richtlinien](../contracts/README.md)
+* [Kontrollpunkte](../risks/process/monitor.md)
 
-{% hint style="danger" %}
-#### Begrenzung der Feldanzahl
-
-Die Anzahl der benutzerdefinierten Felder ist je nach verwendetem Plan begrenzt. Bitte konsultieren Sie [die Preisseite der Anwendung](https://www.dastra.eu/de/pricing) für weitere Informationen zu diesem Thema.
+{% hint style="warning" %}
+**Begrenzte Anzahl von Feldern.** Die Anzahl der benutzerdefinierten Felder hängt vom Plan und vom Abonnement Ihrer Organisation ab. Auf der Konfigurationsseite wird eine Quotenanzeige eingeblendet. Weitere Informationen finden Sie auf der [Preisseite](https://www.dastra.eu/de/pricing).
 {% endhint %}
 
 ## Verfügbare Feldtypen
 
-Dastra bietet Ihnen verschiedene Arten von benutzerdefinierten Feldern:
+Dastra bietet die folgenden Feldtypen:
 
-* Einfacher Text
-* Langer Text
-* Formatierter Text
-* Ganzzahl
-* Dezimalzahl
-* Datum
-* Datum und Uhrzeit
-* Kontrollkästchen (Mehrfachauswahl) (**nicht filterbar**)
-* Kontrollkästchen (Einfachauswahl)
-* Einfacher Selektor
-* Mehrfach-Selektor (**nicht filterbar**)
-* Kontrollkästchen (Ja/Nein)
+| Typ | Verwendung |
+| --- | --- |
+| Text | Eine Textzeile |
+| Textfeld | Text über mehrere Zeilen |
+| Formatierter Text | Text mit Formatierung |
+| Anzahl (ganze Zahl) | Eine Zahl ohne Dezimalstellen |
+| Anzahl (Dezimalzahl) | Eine Zahl mit Dezimalstellen |
+| Datum | Ein Datum |
+| Datum und Uhrzeit | Ein Datum und eine Uhrzeit |
+| Kontrollkästchen | Mehrere Antworten aus einer Liste von Auswahlmöglichkeiten möglich |
+| Radio | Eine einzige Antwort aus einer Liste von Auswahlmöglichkeiten |
+| Einfacher Selektor | Ein in einer Dropdown-Liste gewählter Wert |
+| Mehrfachauswahl | Mehrere in einer Dropdown-Liste gewählte Werte |
+| Boolesche Werte | Eine Antwort Ja oder Nein |
 
-## Verwendung benutzerdefinierter Felder
+## Benutzerdefinierte Felder verwenden
 
-Sie können:
+Einmal erstellt, funktionieren benutzerdefinierte Felder wie die nativen Felder:
 
-* Daten benutzerdefinierter Felder in den Formularen jedes Moduls anzeigen und bearbeiten
-* Benutzerdefinierte Felder können in allen Anzeigetabellen der Anwendung dargestellt werden. Um sie anzuzeigen, klicken Sie auf die Schaltfläche zur Spalteneinstellung der Tabelle.
-* Benutzerdefinierte Felder sind **in allen Excel-Datenexporten enthalten**. Weitere Informationen zu Exporten finden Sie auf der [Seite zu Exporten](../ropa/export-import.md).
-* Benutzerdefinierte Felder können optional in HTML-, Word- und PDF-Exporten enthalten sein (indem Sie das Kontrollkästchen "In Berichten exportierbar" beim betreffenden Feld aktivieren)
-* **Mit Ausnahme der Mehrfachantwort-Felder** sind alle benutzerdefinierten Felder über das System der [erweiterten Filter](filters.md) filterbar.
-* Benutzerdefinierte Felder können in den Datentabellen massenhaft aktualisiert werden
-* Benutzerdefinierte Felder können über Flat-Files [mit dem Importsystem](import.md) importiert werden
-* Benutzerdefinierte Felder sind **über alle APIs zugänglich und bearbeitbar**. Dazu müssen Sie den Variablennamen verwenden, der jeder Spalte zugewiesen ist. [Konsultieren Sie den Abschnitt zur Bearbeitung benutzerdefinierter Felder über die API](custom-fields.md#manipuler-les-champs-personnalises-dans-les-api).
+* Sie werden in den Formularen jedes Moduls angezeigt und bearbeitet.
+* Sie können in allen Tabellen der Anwendung angezeigt werden: Klicken Sie auf die Schaltfläche **Spalten anpassen** der Tabelle. Standardmäßig sind sie ausgeblendet.
+* Sie sind **in allen Excel-Datenexporten enthalten**. Weitere Informationen zu Exporten finden Sie auf [der Seite zu Exporten](../ropa/export-import.md).
+* Sie sind in PDF- und Word-Berichten enthalten, wenn beim Feld **In PDF- oder Word-Berichten enthalten?** angekreuzt ist (standardmäßig angekreuzt).
+* Sie lassen sich mit den [erweiterten Filtern](filters.md) filtern. Felder vom Typ **Kontrollkästchen** und **Mehrfachauswahl** können jedoch nicht zum Sortieren einer Liste verwendet werden.
+* Sie können in Datentabellen gesammelt aktualisiert werden.
+* Sie können mit dem [Importsystem](import.md) aus flachen Dateien importiert werden.
+* Sie sind **über alle APIs zugänglich und bearbeitbar**, mit dem dem Feld zugewiesenen Variablennamen. Siehe [Benutzerdefinierte Felder in APIs verwenden](custom-fields.md#benutzerdefinierte-felder-in-apis-verwenden).
 
-## Einrichtung benutzerdefinierter Felder
+## Benutzerdefinierte Felder einrichten
 
-* Gehen Sie zu Ihrem **Mandanten**
-* Klicken Sie im linken Menü auf **Einstellungen des Mandanten**
-* Klicken Sie auf das Menü **Benutzerdefinierte Felder**
-* Wählen Sie das Modul, in dem Sie ein benutzerdefiniertes Feld hinzufügen möchten
-* Die Felder müssen in Gruppen erstellt werden. Diese Gruppen können an einer bestimmten Position im Formular platziert werden. Klicken Sie auf "**Feldgruppe hinzufügen**"
+1. Klicken Sie in der Seitenleiste auf **Mandanteneinstellungen** und dann auf **Benutzerdefinierte Felder**.
+2. Wählen Sie in der Liste links das Modul aus, in dem Sie ein benutzerdefiniertes Feld hinzufügen möchten.
+3. Felder werden in Gruppen erstellt. Klicken Sie auf **Erstellen Sie eine Gruppe von Feldern**.
+4. Füllen Sie die **Bezeichnung** der Gruppe und ihre **Position im Formular** aus. Bei manchen Modulen, etwa der Verarbeitungstätigkeit, können Sie den Schritt des Formulars wählen, in dem die Gruppe angezeigt wird.
 
-<figure><img src="../../.gitbook/assets/image-3-1-3-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-3.png" alt="Fenster zum Erstellen einer Feldgruppe mit der Bezeichnung und der Position im Formular"><figcaption><p>Eine Feldgruppe erstellen</p></figcaption></figure>
 
-* **Geben Sie den Namen und die Position** im Formular ein, die Sie wünschen
+5. Ziehen Sie nach dem Erstellen der Gruppe einen Feldtyp aus der Liste **Benutzerdefinierte Felder** in die Gruppe. Das Fenster des Feldes öffnet sich.
+6. Füllen Sie die Optionen des Feldes aus (siehe unten) und speichern Sie.
 
-<figure><img src="../../.gitbook/assets/image-1-1-1-2-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-4.png" alt="Fenster zum Erstellen eines benutzerdefinierten Feldes mit seinen Optionen"><figcaption><p>Die Optionen eines benutzerdefinierten Feldes</p></figcaption></figure>
 
-Für bestimmte Elemente ist es möglich, die gewünschte Position im Formular festzulegen!
+Sie können Felder per Drag-and-drop neu anordnen oder von einer Gruppe in eine andere verschieben. Eine Gruppe kann erst gelöscht werden, wenn sie kein Feld mehr enthält. Ein gelöschtes Feld landet im Papierkorb: Aktivieren Sie **Papierkorb anzeigen**, um es wiederherzustellen.
 
-* Sobald die Gruppe erstellt ist, können Sie nun **die gewünschten Feldtypen per Drag-and-Drop** einrichten!
+### Optionen eines Feldes
 
-<figure><img src="../../.gitbook/assets/image-1-1-1-2-3.png" alt=""><figcaption></figcaption></figure>
+| Option | Beschreibung |
+| --- | --- |
+| **Bezeichnung** | Der in Formularen angezeigte Name des Feldes. Pflichtangabe. |
+| **Name der Variablen (Slug)** | Die Kennung des Feldes für APIs und Importe. Sie wird aus der Bezeichnung vorgeschlagen und kann nach dem Erstellen des Feldes nicht mehr geändert werden. |
+| **Tooltip-Text** | Ein Hilfetext, der neben dem Feld angezeigt wird. |
+| **Pflichtfeld** | Macht die Eingabe verpflichtend. |
+| **In PDF- oder Word-Berichten enthalten?** | Fügt das Feld den erzeugten Berichten hinzu. Standardmäßig angekreuzt. |
+| **Validierungsregel** | Bei Text-Feldern: prüft, ob die Eingabe einer Syntax (E-Mail, URL) oder einem **Benutzerdefinierten regulären Ausdruck (Javascript-Format)** folgt. |
+| **Mindestgröße** und **Maximale Größe** | Länge der Eingabe bei Textfeldern. |
+| **Mindestwert** und **Maximaler Wert** | Grenzen für numerische Felder. |
+| **Auswahl der Antwort** | Bei Typen mit einer Liste von Auswahlmöglichkeiten: eine Zeile pro Auswahlmöglichkeit, mit einer Farbe. **Eine mögliche Option hinzufügen** fügt eine Zeile hinzu; wenn Sie Text einfügen, der eine Option pro Zeile enthält, wird pro Zeile eine Antwort erstellt. |
 
-Füllen Sie alle Informationen aus!
+Die Bezeichnung und der Variablenname eines Feldes müssen innerhalb eines Moduls eindeutig sein.
 
-* Klicken Sie auf Speichern und fertig! Ihr erstes benutzerdefiniertes Datenfeld ist eingerichtet!
-* Sie können die Felder per Drag-and-Drop nach Belieben neu anordnen.
+## Benutzerdefinierte Felder in APIs verwenden
 
-## Benutzerdefinierte Felder in den APIs verwenden
+Mit Dastra können Sie über die [REST-API](../../api/configuration.md) alle Werte von Entitäten abrufen, ändern und erstellen, die benutzerdefinierte Felder enthalten.
 
-Dastra ermöglicht es Ihnen, über die [REST-API](../../api/configuration.md) alle Werte der Entitäten mit benutzerdefinierten Feldern abzurufen, zu ändern und zu erstellen.
-
-Eine Eigenschaft "**customFields**" ist in allen Entitäten verfügbar, die Sie per GET in Dastra abrufen.
+Eine Eigenschaft `customFields` ist in jeder Entität vorhanden, die Sie mit einem `GET` abrufen:
 
 ```json
  {
@@ -124,16 +125,10 @@ Eine Eigenschaft "**customFields**" ist in allen Entitäten verfügbar, die Sie 
  }
 ```
 
-Um diese Eigenschaft zu ändern, genügt es, das Element per POST oder PUT zu senden und die Elemente der Sammlung zu aktualisieren.
-
-Um die Namen der benutzerdefinierten Variablen zu erfassen, müssen Sie die Konfigurationsseite der benutzerdefinierten Felder aufrufen.
+Um diese Eigenschaft zu ändern, senden Sie das Element mit `POST` oder `PUT` und aktualisieren Sie dabei die Elemente der Sammlung. Die zu verwendenden Variablennamen sind auf der Konfigurationsseite der benutzerdefinierten Felder aufgeführt.
 
 {% hint style="info" %}
-Achtung, alle **benutzerdefinierten Felder werden vom Server validiert**. Wenn eine Spalte nicht in der Konfiguration vorhanden ist, wird sie automatisch gelöscht.
+Alle **benutzerdefinierten Felder werden vom Server validiert**. Ist eine Spalte nicht in der Konfiguration vorhanden, wird sie automatisch entfernt.
 
-Wenn ein Feld ungültig ist (z. B. wenn es nicht ausgefüllt ist, obwohl es als Pflichtfeld markiert ist), wird eine Ausnahme mit dem Code 400 ausgelöst.
+Ist ein Feld nicht gültig (zum Beispiel wenn es leer ist, obwohl es als Pflichtfeld markiert ist), gibt die API einen Fehler mit dem Code 400 zurück.
 {% endhint %}
-
-## Einschränkungen
-
-Sie können **Mehrfach-Felder (Kontrollkästchen (Mehrfach) und Selektor (Mehrfach)) nicht filtern**. Dies ist eine bekannte Einschränkung, an der wir arbeiten.
