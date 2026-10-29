@@ -5,18 +5,18 @@ description: >-
 
 # Projectontwerp
 
-In deze fase bepaalt u de organisatorische perimeter, selecteert u de toepasselijke kaders en initialiseert u automatisch de bijbehorende controles, tests en risico's.
+In de fase **Design** bepaalt u de **organisatorische perimeter** van het project, selecteert u de **toepasselijke kaders** en initialiseert u automatisch de bijbehorende controles, tests en risico's.
 
-Deze stap legt de basis van het project en bepaalt de kwaliteit van de opvolging in de volgende fasen.
+Deze stap legt de basis van het project en bepaalt de kwaliteit van de opvolging in de volgende fasen. Voor een overzicht van de fasen, zie [Projecten](README.md).
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image-432.png" alt="Ontwerpfase van een conformiteitsproject"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-432.png" alt="De fasen van het conformiteitsproject, met de fase Perimeter in uitvoering"><figcaption></figcaption></figure>
 
 ## 1. Het project aanmaken en de perimeter bepalen
 
-Bij het aanmaken van het project moet u een organisatorische perimeter selecteren.\
-De perimeter groepeert een of meer organisatorische eenheden en bepaalt het toepassingsgebied van het conformiteitsproject.
+Bij het aanmaken van het project moet u een **organisatorische perimeter** selecteren.\
+De perimeter groepeert een of meer organisatorische eenheden en bepaalt **het toepassingsgebied van het conformiteitsproject**.
 
 {% columns %}
 {% column %}
@@ -24,7 +24,7 @@ Zodra het project is aangemaakt, wordt de perimeter weergegeven in de projectkop
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-490.png" alt="Projectkop met de geselecteerde perimeter"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-490.png" alt="Venster voor het aanmaken van een project met de titel en de perimeter"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -34,37 +34,37 @@ Zodra het project is aangemaakt, wordt de perimeter weergegeven in de projectkop
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-491.png" alt="Toewijzing van gebruikers aan het project"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-491.png" alt="Venster voor het aanmaken van een project met de toewijzing van gebruikers"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-In de ontwerpfase wijst u ook de gebruikers aan die het project mogen beheren.
+In de ontwerpfase wijst u ook **de gebruikers aan die het project mogen beheren**.
 
-* U kunt aan elke gebruiker een rol toewijzen (bijvoorbeeld eigenaar).
+* U kunt aan elke gebruiker een rol toewijzen: **Goedkeurder** of **Op de hoogte**.
 * Deze gebruikers mogen de controles, tests en audits van het project aansturen.
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image-433.png" alt="Toevoegen van een conformiteitskader aan het project"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-433.png" alt="De fasen van het conformiteitsproject, met de fase Design"><figcaption></figcaption></figure>
 
 ## 3. Conformiteitskaders toevoegen
 
-Een conformiteitsproject steunt op een of meer kaders (normen, interne of aangepaste referentiekaders).
+Een conformiteitsproject steunt op een of meer **kaders** (normen, interne of aangepaste referentiekaders).
 
 Door een kader toe te voegen importeert u:
 
-* de vereisten,
-* de controles,
-* de tests,
-* en de bijbehorende risico's.
+* de **vereisten**,
+* de **controles**,
+* de **tests**,
+* en de bijbehorende **risico's**.
 
-<figure><img src="../../../.gitbook/assets/image-434.png" alt="Lijst van beschikbare kaders om aan het project toe te voegen"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-434.png" alt="Selectie van een kader om aan het project toe te voegen"><figcaption></figcaption></figure>
 
 Alleen de gepubliceerde versies van een kader worden aangeboden. Als er meerdere gepubliceerde versies bestaan, kiest u de versie in de lijst **Te installeren versie** naast de naam van het kader. De huidige versie is vooraf geselecteerd.
 
-Het project blijft gekoppeld aan de geïnstalleerde versie. Wanneer dat niet meer de huidige versie is, toont de kaderkaart in het projectoverzicht de badge **Beschikbare update**. U schakelt handmatig over naar een andere versie met de actie **Werk de versie van het framework bij**. Dat is niet mogelijk zolang er een audit loopt in het project (zie [Versies van kaders](../library/frameworks/versions.md)).
+Het project blijft gekoppeld aan de geïnstalleerde versie. Wanneer dat niet meer de huidige versie is, toont de kaderkaart in het projectoverzicht de badge **Beschikbare update**. U schakelt handmatig over naar een andere versie met de actie **Werk de versie van het framework bij**. Dat is niet mogelijk zolang er een audit loopt in het project (zie [Versies van een kader](../library/frameworks/versions.md)).
 
 U kunt achtereenvolgens meerdere kaders aan hetzelfde project toevoegen.
 
@@ -72,13 +72,13 @@ U kunt achtereenvolgens meerdere kaders aan hetzelfde project toevoegen.
 
 ## 4. Controles delen tussen kaders
 
-Wanneer u meerdere kaders aan het project toevoegt, detecteert Dastra automatisch de gemeenschappelijke controles.
+Wanneer u meerdere kaders aan het project toevoegt, detecteert Dastra automatisch de **gemeenschappelijke controles**.
 
-* Een controle die door meerdere kaders wordt gedeeld, wordt maar één keer geïmporteerd.
+* Een controle die door meerdere kaders wordt gedeeld, **wordt maar één keer geïmporteerd**.
 * De invoering ervan dekt tegelijk alle bijbehorende vereisten.
 * Zo vergroot u de conformiteitsdekking zonder acties te vermenigvuldigen.
 
-<figure><img src="../../../.gitbook/assets/image-435.png" alt="Gedeelde controles tussen meerdere kaders"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-435.png" alt="Import van de controles die tussen meerdere kaders worden gedeeld"><figcaption></figcaption></figure>
 
 ***
 
@@ -86,11 +86,11 @@ Wanneer u meerdere kaders aan het project toevoegt, detecteert Dastra automatisc
 
 Wanneer u een kader toevoegt, hebt u meerdere opties:
 
-* alle controles van het kader importeren,
-* alleen bepaalde controles importeren,
-* geen controles importeren, om ze handmatig in te voeren.
+* **alle controles** van het kader importeren,
+* **alleen bepaalde controles** importeren,
+* of **geen controles importeren**, om ze handmatig in te voeren.
 
-<figure><img src="../../../.gitbook/assets/image-437.png" alt="Keuze van de te importeren controles bij het toevoegen van een kader"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-437.png" alt="Keuze van de controles die met het kader worden geïmporteerd"><figcaption></figcaption></figure>
 
 Dankzij deze flexibiliteit stemt u het project af op de maturiteit van de organisatie.
 
@@ -102,9 +102,9 @@ Dankzij deze flexibiliteit stemt u het project af op de maturiteit van de organi
 {% column %}
 Zodra de kaders zijn geïmporteerd:
 
-* worden de geselecteerde controles automatisch aan het project toegevoegd,
-* gelden ze standaard als ingevoerd,
-* worden de bijbehorende tests ook aan de controles gekoppeld.
+* worden de **geselecteerde controles** automatisch aan het project toegevoegd,
+* gelden ze **standaard als ingevoerd**,
+* worden de **bijbehorende tests** ook aan de controles gekoppeld.
 
 In dit stadium:
 
@@ -113,7 +113,7 @@ In dit stadium:
 {% endcolumn %}
 
 {% column %}
-<div align="center"><img src="../../../.gitbook/assets/image-438.png" alt="Controles en tests na het importeren van de kaders"></div>
+<div align="center"><img src="../../../.gitbook/assets/image-438.png" alt="Projectoverzicht met de geïmporteerde kaders"></div>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -121,14 +121,22 @@ In dit stadium:
 
 ## 7. De risicoanalyse voorbereiden
 
-U kunt tijdens het importeren de risico's van de kaders selecteren.
+U kunt tijdens het importeren de **risico's van de kaders** selecteren.
 
 Ze vormen:
 
-* de basis voor de initiële risicobeoordeling,
-* het referentiepunt voor de berekening van het restrisico na toepassing van de controles.
+* de basis voor de **initiële risicobeoordeling**,
+* het referentiepunt voor de berekening van het **restrisico** na toepassing van de controles.
 
-<figure><img src="../../../.gitbook/assets/image-439.png" alt="Selectie van de risico's van de kaders"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-439.png" alt="Risicomatrix van het project"><figcaption></figcaption></figure>
+
+***
+
+## Een kader uit het project verwijderen
+
+Op het tabblad **Statistieken** van het project biedt het menu **⋯** van een kaderkaart de actie **Verwijder het framework**. Dastra verwijdert dan uit het project de controles, tests, risico's en bedreigingen die alleen aan dat kader zijn gekoppeld. Een controle die het project nog via een ander kader toepast, blijft behouden.
+
+Verwijderen is niet mogelijk zolang een audit van dat kader niet is gearchiveerd (zie [Audits](audits.md)).
 
 ***
 
@@ -143,4 +151,4 @@ Na de ontwerpfase heeft het project:
 * geïnitialiseerde tests,
 * en een gestructureerde risicobasis.
 
-Het project is dan klaar voor de volgende fase: de implementatie.
+Het project is dan klaar voor de volgende fase: **Implementatie**.

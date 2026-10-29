@@ -1,5 +1,7 @@
 ---
-description: Bouw uw eigen conformiteitskader of importeer een kader dat door Dastra is opgesteld.
+description: >-
+  Bouw uw eigen conformiteitskader of importeer een kader dat door Dastra is
+  opgesteld.
 ---
 
 # Kaders
@@ -12,15 +14,19 @@ Deze kaders vormen de gemeenschappelijke basis voor uw conformiteitsprojecten, b
 
 ## 1. Zijmenu van de conformiteitsbibliotheek
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/image-425.png" alt="Weergave van de bibliotheek"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/compliance-library-frameworks-1.png" alt="Lijst van de kaders van de bibliotheek met het zijmenu en de meter van de gebruikte frameworks"><figcaption></figcaption></figure></div>
 
-Het zijmenu geeft toegang tot de verschillende objecten van de bibliotheek:
+Het zijmenu groepeert de objecten van de bibliotheek in twee groepen, met het aantal items van elke ingang:
 
-* **Kaders**: conformiteitskaders (centrale bibliotheek)
-* **Vereisten**: hoofdstukken en vereisten die een kader structureren
-* **Controles**: het centrale element dat vereisten, tests en risico's met elkaar verbindt
-* **Risico's**: hulpmiddelen om risico's te beoordelen en op te volgen
-* **Bedreigingen**: gebeurtenissen of scenario's waarin een risico zich kan voordoen
+* Groep **Conformiteit**:
+  * **Kaders**: conformiteitskaders (centrale bibliotheek). De hoofdstukken en vereisten die een kader structureren, bekijkt u op de pagina van het kader
+  * **Controles**: het centrale element dat vereisten, tests en risico's met elkaar verbindt
+  * **Tests**: verificaties die de doeltreffendheid van een controle aantonen
+* Groep **Risico's**:
+  * **Risico's**: hulpmiddelen om risico's te beoordelen en op te volgen
+  * **Bedreigingen**: gebeurtenissen of scenario's waarin een risico zich kan voordoen
+
+Onderaan het menu toont de meter **gebruikte frameworks** uw verbruik van frameworkcredits.
 
 ***
 

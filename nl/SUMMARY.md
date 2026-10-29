@@ -236,7 +236,7 @@
   * [Uw AI-systemen importeren](features/ai-systems/import.md)
   * [Een register van AI-systemen opzetten](features/ai-systems/record.md)
   * [Risicoanalyse en bedrijfswaarde](features/ai-systems/risk-analysis.md)
-  * [Beoordeling van de gevolgen voor de grondrechten bij AI-systemen met een hoog risico](features/ai-systems/fria.md)
+  * [Beoordeling van de gevolgen voor de grondrechten (FRIA)](features/ai-systems/fria.md)
   * [Transparantiebericht](features/ai-systems/transparency-notice.md)
   * [Repository van AI-modellen](features/ai-systems/models.md)
 * [Integraties](features/integrations/README.md)

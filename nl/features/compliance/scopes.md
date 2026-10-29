@@ -50,7 +50,7 @@ Bij het aanmaken van een perimeter geeft de gebruiker op:
 * een optionele beschrijving,
 * de organisatorische eenheden die in de perimeter zijn opgenomen (verplicht).
 
-<figure><img src="../../.gitbook/assets/image-456.png" alt="Formulier voor het aanmaken van een perimeter"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-456.png" alt="Venster voor het aanmaken van een perimeter"><figcaption></figcaption></figure>
 
 Een perimeter moet altijd ten minste één organisatorische eenheid bevatten.
 

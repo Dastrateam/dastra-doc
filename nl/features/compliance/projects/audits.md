@@ -1,192 +1,158 @@
+---
+description: >-
+  De interne audits en eindaudits van een conformiteitsproject aanmaken,
+  uitvoeren en afronden, en fouten in tests melden.
+---
+
 # Audits
 
-Met de auditfase valideert u officieel de stand van de conformiteit op een bepaald moment. Ze bouwt voort op het voorbereidende werk en de monitoring die eraan voorafgingen, voor een gestructureerde beoordeling die intern of door externe auditors wordt uitgevoerd.
+In de fasen **Interne audit** en **Eindaudit** van een project valideert u officieel de stand van de conformiteit op een bepaald moment. Ze bouwen voort op het ontwerpwerk en de monitoring die eraan voorafgingen, voor een gestructureerde beoordeling die intern of door externe auditors wordt uitgevoerd.
 
-Doel van de fase
+Een audit heeft betrekking op één kader van het project. De auditors beoordelen elke vereiste op basis van de controles, tests en het bewijs die al in het project staan, waarna de audit wordt afgerond met een algemene beoordeling.
 
-Alle conformiteitsaudits centraal voorbereiden en uitvoeren, samenwerken met de betrokken partijen en de opvolging verzekeren van de correcties naar aanleiding van de vastgestelde afwijkingen.
+<figure><img src="../../../.gitbook/assets/image-509.png" alt="Overzicht van een project in de fase Interne audit met de checklist van de assistent"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image-509.png" alt="Overzicht van de module Audits"><figcaption></figcaption></figure>
+## Wat de module doet
 
-***
+* **Audits uitvoeren**, intern of extern, met standaardkaders (AVG, AI-verordening enzovoort) of met uw eigen aangepaste rasters.
+* **Samenwerken**: de auditors hebben toegang tot de bijbehorende vereisten, controles, tests en het bewijs, en tijdens de audit kan een auditor worden toegevoegd.
+* **Het monitoringwerk hergebruiken**: de controles en het bewijs van het project zijn tijdens de beoordeling rechtstreeks te raadplegen.
+* **Afwijkingen aanpakken**: fouten in tests melden en corrigerende taken aanmaken.
+* De resultaten **exporteren** als XLSX, pdf, DOCX, JSON, HTML of Markdown.
 
-## Overzicht van de module
+<figure><img src="../../../.gitbook/assets/image-508.png" alt="Tabblad Audits van een project met de lijst van audits en de knop Maak een nieuwe audit aan"><figcaption></figcaption></figure>
 
-De module Audits maakt van theoretische conformiteit een meetbare werkelijkheid, door kaders, controles, risico's en audits op één platform samen te brengen. Deze fase steunt op vier pijlers:
+## Een audit aanmaken
 
-1. Audits uitvoeren: voer interne of externe audits uit met standaardkaders (AVG, AI-verordening enzovoort) of met uw eigen aangepaste rasters.
-2. Samenwerking: vergemakkelijk de uitwisseling met gecentraliseerde toegang tot bewijs, een delegatiesysteem en fijnmazig beheer van de governance.
-3. Koppeling met conformiteit: hergebruik rechtstreeks de controles en het bewijs die al in uw projecten staan, om het verzamelen te automatiseren.
-4. Beheer van afwijkingen: stel non-conformiteiten vast en zet ze meteen om in corrigerende actieplannen.
+Maak een audit aan vanuit het conformiteitsproject, niet vanuit de module Vragenlijsten. Er zijn twee ingangen:
 
-### Een open architectuur
+* het tabblad **Audits** van het project, met de knop **Maak een nieuwe audit aan**. Kies daarna het kader in de lijst **Selecteer een framework om te auditen**, die voor elk kader aangeeft of er al een audit loopt;
+* het menu **⋯** van een kaderkaart op het projectoverzicht, met **Maak een nieuwe audit aan**. Het kader is dan al geselecteerd.
 
-Dastra biedt multigebruikersbeheer om conformiteit op groepsschaal aan te sturen, met volledige interoperabiliteit via API's en exports in meerdere indelingen.
+Heeft het project geen kader, dan toont Dastra **Geen framework om te auditen**: voeg eerst een kader aan het project toe (zie [Projectontwerp](design.md)).
 
-<figure><img src="../../../.gitbook/assets/image-508.png" alt="Open architectuur van de module Audits"><figcaption></figcaption></figure>
+{% hint style="info" %}
+Een audit aanmaken buiten een auditfase wordt niet aanbevolen: Dastra toont een waarschuwing maar blokkeert u niet. Kiest u de auditfase **Eindaudit** terwijl het project niet in de fase **Eindaudit** is, dan verschijnt dezelfde waarschuwing.
+{% endhint %}
 
-***
+### Algemene informatie
 
-## 1. Een nieuwe auditopdracht aanmaken
-
-Het aanmaken van een opdracht is het vertrekpunt van uw beoordeling. Klik in de module Audits op de knop om het configuratieformulier te openen.
-
-### 1. Algemene informatie
-
-* Naam (verplicht): een duidelijke titel voor de opdracht (bijvoorbeeld "Jaarlijkse conformiteitsaudit"), beperkt tot 80 tekens.
-* Beschrijving (optioneel): geef de context of de specifieke perimeter aan (tot 500 tekens).
-* **Auditeurs** (verplicht): selecteer de gebruikers die de beoordeling uitvoeren. Staat u niet in deze lijst, dan kunt u de vragen van de audit niet beantwoorden (ook niet als u eigenaar van de organisatie bent).
-
-<figure><img src="../../../.gitbook/assets/image-510.png" alt="Formulier voor het aanmaken van een audit met naam, beschrijving en auditors"><figcaption></figcaption></figure>
-
-### 2. Auditfase en planning
-
-Met de keuze van de fase segmenteert u uw opdracht en filtert u uw governancedashboards.
-
-| Fase | Beschrijving en doel |
+| Veld | Beschrijving |
 | --- | --- |
-| Initiële Analyse | Afbakeningsfase: bepaling van de perimeter, het referentiekader en de regelgevende vraagstukken. |
-| Voorbereiding | Logistieke fase: toewijzing van controles aan auditors en planning van gesprekken. |
-| Vooraudit | Proefaudit: zelfbeoordeling om afwijkingen vast te stellen vóór de officiële deadline. |
-| Eindaudit | Afsluitende fase: definitieve scoring, opstelling van de conclusies en aanmaak van het officiële rapport. |
+| **Naam** | Titel van de audit, bijvoorbeeld "Jaarlijkse conformiteitsaudit". Verplicht, maximaal 80 tekens. |
+| **Beschrijving** | Context of specifieke perimeter van de audit. Optioneel, maximaal 500 tekens. |
+| **Auditeurs** | Gebruikers die de audit mogen uitvoeren. Verplicht. Staat u niet in deze lijst, dan kunt u de vereisten niet beoordelen, ook niet als u eigenaar van de organisatie bent. |
 
-* Belangrijke data (verplicht): geef een **Startdatum** en een **Deadline** op om de opdracht in de tijd af te bakenen.
+<figure><img src="../../../.gitbook/assets/image-510.png" alt="Venster voor het aanmaken van een audit met de naam, de auditors, de fase en de data"><figcaption></figcaption></figure>
 
-### 3. Geavanceerde opties en automatisering
+### Auditfase en data
 
-* **Resultaten van een eerdere audit behouden?**: u vertrekt van een bestaande basis voor terugkerende audits. Dat kan nuttig zijn om een audit opnieuw uit te voeren na een audit waarvan de controles niet bevredigend waren.
-* **Definieer als actieve audit**: de audit komt meteen in uw realtime opvolgingsindicatoren. Deze audit wordt in het dashboard gebruikt om het conformiteitspercentage weer te geven.
-* **Stuur een e-mail naar de auditor**: verstuurt automatisch een uitnodiging aan de aangewezen medewerkers.
+Met de **Fase van de audit** segmenteert u de audit en filtert u de governancedashboards. Ze staat los van de fase van het project.
 
-***
+| Fase | Gebruik |
+| --- | --- |
+| **Initiële Analyse** | Afbakening: bepaling van de perimeter, het kader en de regelgevende vraagstukken. Standaardwaarde. |
+| **Voorbereiding** | Logistiek: controles aan auditors toewijzen en gesprekken plannen. |
+| **Vooraudit** | Proefaudit: zelfbeoordeling om afwijkingen vast te stellen vóór de officiële deadline. |
+| **Eindaudit** | Afsluiting: definitieve scoring, conclusies en officieel rapport. |
 
-## Verwacht resultaat
+Vul de **Startdatum** en de **Deadline** in om de audit in de tijd af te bakenen. Beide zijn verplicht.
 
-Na deze fase beschikt de organisatie over een officieel statusrapport, een volledig auditspoor (geschiedenis) en een nauwkeurig remediëringsplan om de afwijkingen aan te pakken en de governance te verbeteren.
+### Opties
 
-> Volgende stap: zodra de opdracht is aangemaakt, kunt u beginnen met het beoordelen van de controlepunten en het valideren van het bijbehorende bewijs.
+* **Resultaten van een eerdere audit behouden?**: u vertrekt van de beoordelingen van een bestaande audit. Dat is nuttig voor terugkerende audits of om een audit opnieuw uit te voeren waarvan de controles niet bevredigend waren. Selecteer vervolgens de audit waarvan u de resultaten wilt hergebruiken.
+* **Definieer als actieve audit**: de audit voedt de opvolgingsindicatoren van het kader, waaronder het conformiteitspercentage op het projectoverzicht. Standaard ingeschakeld.
+* **Stuur een e-mail naar de auditor**: verstuurt een uitnodiging aan de aangewezen auditors. Voer indien nodig een **Inhoud van het bericht** in en laat **Stuur de e-mail onmiddellijk** ingeschakeld, of schakel het uit en kies een datum en tijd binnen de komende 3 dagen.
 
-## 2. De auditopdracht aansturen en uitvoeren
+Klik op **Valideren** om de audit aan te maken. Het dashboard van de audit opent.
 
-Zodra de opdracht is aangemaakt en gestart, opent u het operationele dashboard van de audit. Met deze gecentraliseerde interface volgt u de voortgang van de beoordelingen op en beheert u de medewerkers in real time.
+## De audit uitvoeren
 
-### Overzicht van de voortgang
+Het dashboard van de audit bundelt de voortgang en het team.
 
-Het dashboard toont een visuele samenvatting van de gezondheid van uw audit:
+Links staan drie tabbladen:
 
-* Indicatoren voor vereisten: volg het totale aantal te auditen vereisten (bijvoorbeeld 0/31) en zie meteen de knelpunten via het tabblad **Automatische tests met fouten**.
-* Voortgangsgrafiek: een cirkeldiagram toont de verdeling van de controles (niet geauditeerd, conform, niet conform).
-* Status van de opdracht: een herinnering aan de huidige fase (bijvoorbeeld "Initiële Analyse"), de deadlines en het gebruikte kader (bijvoorbeeld "GDPR V0.3").
+* **Geauditeerde vereisten (x/y)**: de boomstructuur van het kader met de status van elke vereiste. Filter op status met **Filteren op status**;
+* **Fouten in tests (n)**: de fouten die auditors in tests hebben gemeld (zie [Een fout in een test melden](#een-fout-in-een-test-melden));
+* **In kaart brengen**: grafieken met de verdeling van de vereisten en de controles.
 
-### Interface voor beoordeling en scoring
+Rechts staan:
 
-Door op **Audit aanvullen** te klikken, opent de auditor de gedetailleerde werkruimte voor elk controlepunt:
+* de geauditeerde perimeter, de titel, de beschrijving, de status en de fase van de audit, de data en het kader met zijn versie. Met **Bewerken** opent u de algemene informatie;
+* de **Vooruitgang** van de audit als percentage, met de verdeling van de vereisten (niet geauditeerd, conform, deels conform, niet conform, niet van toepassing);
+* de lijst van **Auditeurs**, met het aantal beoordelingen dat elk van hen heeft afgerond. Met **Auditor toevoegen** en **Auditor verwijderen** past u het team tijdens de audit aan;
+* de **Bijlagen**: verzamel hier externe bewijsdocumenten zodat alle auditors er toegang toe hebben.
 
-* Navigatie per referentiekader: de volledige boomstructuur van het kader staat links (Governance, Register, Wettelijke basis enzovoort) voor vlotte navigatie.
-* Scoringsinstrumenten: voor elke vereiste kiest de auditor een nauwkeurige status:
-  * **Conform** (groen)
-  * **Deels conform** (geel)
-  * **Niet conform** (rood)
-  * **Niet van toepassing** (grijs)
-* Rechtvaardiging en bewijs: in een teksteditor voert u gedetailleerde opmerkingen in. De auditor kan ook overschakelen naar het tabblad **Frameworkdetails** om de theoretische vereisten te raadplegen vóór de validatie.
+Met de knoppen voor taken en opmerkingen van het dashboard volgt u de audit samen met andere gebruikers, bijvoorbeeld om corrigerende taken aan te maken.
 
-### Samenwerking en documentbeheer
+De knop **Audit aanvullen** opent de beoordelingsruimte. Het bijbehorende menu biedt ook:
 
-Het dashboard dient ook als samenwerkingscentrum voor het auditteam:
+* **Heropen de audit**: maakt een afgeronde audit weer bewerkbaar;
+* **Exporteren**;
+* **Link kopiëren**;
+* **Audit archiveren**, en daarna **Herstellen** om hem terug te halen. De audit die als actief is gedefinieerd, kan niet worden gearchiveerd.
 
-* Beheer van auditors: bekijk de toegewezen teamleden en voeg zo nodig tijdens de opdracht nieuwe auditors toe.
-* Bijlagen: centraliseer al het externe bewijs rechtstreeks in het tabblad **Bijlagen** van het dashboard, zodat alle verantwoordelijken er toegang toe hebben.
-* Cartografie: in een apart tabblad ziet u de verbanden tussen de vereisten en de elementen van uw conformiteitsinventaris.
+Bent u niet als auditor aangewezen, dan is de knop **Audit aanvullen** vergrendeld: vraag om aan de lijst **Auditeurs** te worden toegevoegd.
 
-***
+## De vereisten beoordelen
 
-Resultaat van deze stap: de audit wordt nu uitgevoerd. Elke invoer werkt de algemene conformiteitsindicatoren van het project dynamisch bij.
+In de beoordelingsruimte doorloopt u elke vereiste van het kader zonder de auditpagina te verlaten.
 
-## 3. Vereisten beoordelen en controles verifiëren
+* **Navigatiebalk**: met **Terug** en **Volgende** gaat u door de vereisten, een pijl springt naar de volgende niet voltooide vereiste en een teller toont de positie (bijvoorbeeld 1/31).
+* **Linkerpaneel**: de boomstructuur van het kader, onderverdeeld in hoofdstukken en vereisten. Een indicator bevestigt de reeds beoordeelde vereisten.
+* **Centraal werkgebied**: het doel van de vereiste, daarna de gekoppelde controles met hun tests. Voor elke test bekijkt u het bijgevoegde bewijs (bestanden, links, JSON-gegevens) rechtstreeks in de interface.
+* **Rechterpaneel**: de voortgang van de audit en drie tabbladen: **Evaluatie**, **Auditdetails** en **Frameworkdetails**.
 
-Zodra de audit is gestart, bestaat de beoordelingsfase erin elke vereiste van het referentiekader te doorlopen om de werkelijke conformiteit te valideren op basis van de bestaande controles en tests.
+<figure><img src="../../../.gitbook/assets/image-507.png" alt="Beoordelingsruimte met de boomstructuur van het kader, de controles en tests en het beoordelingspaneel"><figcaption></figcaption></figure>
 
-### Structuur van het beoordelingsscherm
+Kies na de analyse van het bewijs in het tabblad **Evaluatie** een status voor de vereiste en voer een **Opmerking** in om uw oordeel te motiveren:
 
-De beoordelingsinterface biedt volledig zicht op het bewijs zonder de auditpagina te verlaten:
+| Status | Betekenis |
+| --- | --- |
+| **Conform** | Het aangeleverde bewijs voldoet volledig aan de vereiste. |
+| **Deels conform** | Er is bewijs, maar het is onvoldoende of onvolledig. |
+| **Niet conform** | Er is geen bewijs of de controle wordt als ondoeltreffend beschouwd. |
+| **Niet van toepassing** | De vereiste valt buiten de perimeter van de audit. |
 
-* Navigatiepaneel (links): toont de boomstructuur van het kader (bijvoorbeeld GDPR V0.3), onderverdeeld in hoofdstukken en vereisten. Een visuele indicator (groen vinkje) bevestigt de reeds behandelde punten.
-* Centraal werkgebied: toont het doel van de geselecteerde vereiste en de volledige lijst van de gekoppelde controles en tests.
-* Beslissingspaneel (rechts): bundelt de scoringsinstrumenten, de invoer van opmerkingen en de wijzigingsgeschiedenis.
+De **Historiek** van de vereiste bewaart de opeenvolgende beoordelingen. Elke invoer werkt de voortgang van de audit bij.
 
-<figure><img src="../../../.gitbook/assets/image-507.png" alt="Beoordelingsscherm met navigatiepaneel, werkgebied en beslissingspaneel"><figcaption></figcaption></figure>
+### Een fout in een test melden
 
-### Bewijs verifiëren (controles en tests)
+Is het bewijs van een test niet bevredigend, meld dat dan aan de eigenaar van de test zonder de beoordeling te blokkeren.
 
-De kern van de Dastra-audit is dat de audit gekoppeld wordt aan het bewijs uit de monitoring:
+1. Zoek in het centrale werkgebied de test en klik op **Fout melden**.
+2. Kies de **Ernst**: **Low**, **Medium** (standaard) of **High**.
+3. Beschrijf het probleem bij **Leg het probleem uit met de geleverde bewijzen**. De opmerking is optioneel, maar helpt de eigenaar van de test het bewijs te verbeteren.
+4. Klik op **Maak het foutrapport aan**.
 
-* Controles raadplegen: voor elke vereiste ziet de auditor de actieve controles (bijvoorbeeld Scope mapping).
-* Tests onderzoeken: onder elke controle staan de uitgevoerde tests met hun bijgevoegde bewijsdocumenten (pdf-bestanden, schermafdrukken enzovoort).
-* Rechtstreekse weergave: de auditor opent en raadpleegt de bewijsbestanden rechtstreeks vanuit de interface om de conformiteit ervan te valideren.
+De knop wordt daarna vervangen door een vlag in de kleur van de ernst. Ga er met de muis overheen om de opmerking te lezen of de melding te verwijderen. Een test kan per audit maar één melding hebben.
 
-### Scoring en conformiteitsstatussen
+<figure><img src="../../../.gitbook/assets/compliance-audit-findings-1.png" alt="Venster Fout melden met de ernst en de opmerking"><figcaption></figcaption></figure>
 
-Na de analyse van het bewijs kent de auditor een definitieve status aan de vereiste toe:
+De meldingen staan gebundeld in het tabblad **Fouten in tests** van het auditdashboard, met de referentie, de test, de status en de ernst. Filter op **Ernst van de fout**, vink daarna tests aan om:
 
-* Conform: de vereiste wordt volledig vervuld door het aangeleverde bewijs.
-* Deels conform: er is bewijs, maar het is onvoldoende of onvolledig.
-* Niet conform: er is geen bewijs of de controle wordt als ondoeltreffend beschouwd.
-* Niet van toepassing: de vereiste valt buiten de perimeter van de audit.
+* **De tests ongeldig maken**: de gemelde tests krijgen weer de status **Te doen**. Dastra stelt dan voor **Een testcampagne opnieuw starten?** om hun eigenaars te verwittigen, zodat ze hun bewijs bijwerken vóór de volgende audit;
+* **Start van een testcampagne**: maakt rechtstreeks een campagne aan met de aangevinkte tests (zie [Conformiteitsmonitoring](monitoring.md)).
 
-### Opvolging in real time
+<figure><img src="../../../.gitbook/assets/compliance-audit-findings-2.png" alt="Tabblad Fouten in tests met de gemelde tests, hun ernst en de knoppen De tests ongeldig maken en Start van een testcampagne"><figcaption></figcaption></figure>
 
-Tijdens de beoordeling werkt het systeem de opvolgingsindicatoren dynamisch bij:
+## De audit afronden
 
-* Voortgang: een teller onderaan de pagina geeft de huidige positie aan (bijvoorbeeld 1/31).
-* Conformiteitsstatistieken: de grafiek rechts toont in real time het bereikte conformiteitspercentage (bijvoorbeeld 3 % conform) ten opzichte van de nog te auditen punten.
-* Afronding: zodra alle vereisten zijn behandeld, vergrendelt u met de knop **Finaliseer de audit** de beoordeling en gaat u over naar het aanmaken van het rapport.
+Zijn alle vereisten beoordeeld, dan wordt de knop **Finaliseer de audit** beschikbaar. Die opent een venster waarin u de **Eindbeoordeling van de audit** invoert (verplicht, maximaal 1.000 tekens). Met deze samenvatting geeft u een algemeen oordeel over het maturiteitsniveau van de geauditeerde perimeter, benadrukt u aandachtspunten of successen en kunt u documenten met een samenvatting bijvoegen vanuit de bestandsverkenner.
 
-***
+Klik op **Valideren** om de audit af te sluiten.
 
-Verwacht resultaat: elke vereiste is nu gedocumenteerd met een deskundig oordeel en gecontroleerd bewijs, wat een onaantastbaar auditspoor garandeert voor toezichthouders of het management.
+{% hint style="warning" %}
+Zodra de audit is afgerond, kunt u de individuele beoordelingen niet meer wijzigen, tenzij u de audit heropent met **Heropen de audit**.
+{% endhint %}
 
-## 4. De audit afronden en afsluiten
+## De resultaten benutten
 
-Zodra alle vereisten van het kader zijn doorlopen, moet de opdracht formeel worden afgesloten. Deze stap vergrendelt de beoordelingen om de integriteit van de resultaten te waarborgen en de definitieve rapporten aan te maken.
+De afgeronde audit voedt de opvolging van de conformiteit:
 
-### Eindbeoordeling
+* het conformiteitspercentage per kader verschijnt op het projectoverzicht en in **Conformiteit** > **Statistieken**;
+* de **Eindbeoordeling van de audit** staat bovenaan het dashboard van de audit;
+* de export van de audit bewaart een gestructureerd auditspoor dat u de volgende jaren kunt hergebruiken;
+* niet-conforme of deels conforme vereisten kunt u opvolgen met taken, aangemaakt via de taakknop van de audit, vóór de volgende monitoringcyclus.
 
-Wanneer u op de knop **Finaliseer de audit** klikt, verschijnt een validatievenster. Voor het afsluiten moet de auditor een **Eindbeoordeling van de audit** invoeren (verplicht, tot 1000 tekens).
-
-Met deze samenvatting kunt u:
-
-* een algemeen oordeel geven over het maturiteitsniveau van de geauditeerde perimeter,
-* de belangrijkste aandachtspunten of de vastgestelde successen benadrukken,
-* via de bestandsverkenner definitieve documenten ter afsluiting bijvoegen (limiet van 50 MB per bestand).
-
-> Waarschuwing: zodra de audit is afgerond, kunt u de individuele beoordelingen van elke vereiste niet meer wijzigen.
-
-***
-
-### De resultaten benutten en rapporteren
-
-De afgeronde audit voedt meteen de governance van de organisatie dankzij de uitvoerfuncties van Dastra:
-
-Conformiteitsdashboard
-
-De resultaten worden samengebracht in een overzicht met het conformiteitspercentage per audit (bijvoorbeeld 75 % voor NIST, 57 % voor AVG). Met deze indicatoren vergelijkt u het beveiligingsniveau van verschillende entiteiten of projecten.
-
-<figure><img src="../../../.gitbook/assets/image-506.png" alt="Conformiteitsdashboard met het percentage per audit"><figcaption></figcaption></figure>
-
-Exporteren en archiveren
-
-Dankzij de open architectuur communiceert u uw resultaten doeltreffend:
-
-* Rapporten genereren: exports in veel indelingen voor interne of externe verspreiding.
-* Auditspoor: bewaring van een gestructureerde, meetbare en herbruikbare geschiedenis voor de volgende jaren.
-
-Beheer van afwijkingen (actieplan)
-
-De laatste stap bestaat erin de vastgestelde non-conformiteiten aan te pakken:
-
-* Automatische identificatie van afwijkingen (rode of gele punten tijdens de beoordeling).
-* Mogelijkheid om deze afwijkingen te koppelen aan nieuwe actieplannen, om de zwakke punten te corrigeren vóór de volgende monitoringcyclus.
-
-***
-
-Eindresultaat: uw organisatie beschikt nu over een bewijs van conformiteit dat afdwingbaar is bij een inspectie, en over een duidelijke routekaart voor de continue verbetering van haar governance.
+<figure><img src="../../../.gitbook/assets/image-506.png" alt="Conformiteitspercentage per audit op het dashboard"><figcaption></figcaption></figure>

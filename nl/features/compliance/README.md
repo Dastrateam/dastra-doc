@@ -8,11 +8,22 @@ De module **Conformiteit** van Dastra beheert de naleving van regelgeving op een
 
 ***
 
+## De module doorlopen
+
+In het menu geeft **Conformiteit** toegang tot vier onderdelen:
+
+* **Projecten**: de conformiteitsprojecten, hun fasen, hun audits en uw taken. Zie [Projecten](projects/README.md).
+* **Bibliotheek**: de herbruikbare kaders, controles, tests, risico's en bedreigingen. Zie [Bibliotheek](library/README.md).
+* **Perimeters**: de organisatorische eenheden die een project dekt. Zie [Perimeters](scopes.md).
+* **Statistieken**: het conformiteitsdashboard van de werkruimte (zie hieronder).
+
+***
+
 ## Architectuur van de module Conformiteit
 
 De module berust op een logische keten van objecten, van regelgevende kaders tot bewijs van conformiteit.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Schema van de keten van objecten in de module Conformiteit: kaders, vereisten, controles, risicoscenario's, tests, testcampagnes, bewijs en audits"><figcaption><p>De keten van objecten in de module Conformiteit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Keten van objecten van de module: kader, vereisten, controles, risicoscenario's, tests, bewijs en audits"><figcaption></figcaption></figure>
 
 ### Kaders
 
@@ -53,7 +64,7 @@ Een controle:
 
 ### Risicoscenario's
 
-Risicoscenario's beschrijven de gevreesde gebeurtenissen.\
+Risicoscenario's beschrijven de gevreesde gebeurtenissen. Ze verschijnen als **Risico's** in de toepassing.\
 Voorbeeld: onbevoegde toegang tot gevoelige gegevens.
 
 Met controles kunt u:
@@ -115,7 +126,7 @@ Ze berusten op:
 
 ***
 
-## Overzicht
+### Overzicht
 
 Met de module Conformiteit van Dastra:
 
@@ -124,7 +135,7 @@ Met de module Conformiteit van Dastra:
 * toont u conformiteit aan met geteste en gedocumenteerde controles,
 * bereidt u audits en certificeringen doeltreffend voor.
 
-## Het multikaderprincipe in Dastra
+### Het multikaderprincipe in Dastra
 
 De module Conformiteit van Dastra is van nature multikader.
 
@@ -139,16 +150,35 @@ Het doel is dubbel werk te vermijden en conformiteit transversaal te sturen.
 
 ***
 
-## Belangrijkste verbanden tussen objecten
+### Belangrijkste verbanden tussen objecten
 
-* Kader → vereisten: 1 → N
-* Vereisten ↔ controles: N ↔ N
-* Controles ↔ tests: N ↔ N
-* Tests → bewijs: 1 → N
-* Controles → risicoscenario's: N ↔ N
+* een kader bevat meerdere vereisten (1 tot N),
+* vereisten en controles: N-tot-N-relatie,
+* controles en tests: N-tot-N-relatie,
+* een test wordt onderbouwd met meerdere stukken bewijs (1 tot N),
+* controles en risicoscenario's: N-tot-N-relatie.
 
 Eén controle (bijvoorbeeld een toegangsreview) kan dus:
 
 * voldoen aan een vereiste van de AVG,
 * voldoen aan een vereiste van ISO 27001,
 * meerdere risicoscenario's beperken.
+
+Verklarend schema:
+
+<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Verbanden tussen kaders, vereisten, controles, tests, bewijs en risicoscenario's"><figcaption></figcaption></figure>
+
+***
+
+## Statistieken
+
+**Conformiteit** > **Statistieken** opent het **Dashboard voor conformiteit**, dat alle projecten van de werkruimte samenbrengt. Filter het op **Status** (fase van het project), **Organisatorische eenheden** en **Perimeters**.
+
+Het dashboard bevat:
+
+* globale indicatoren. Controles: **Totaal aantal controles**, **Geverifieerde controles**, **Niet geïmplementeerd** en **Weescontroles** (zonder gekoppelde vereiste). Tests: **Totaal aantal tests**, **Geverifieerde tests**, **Mislukte tests** en **Ontbrekende bewijzen**. Audits: **Totaal aantal audits**, **Voltooide audits** en **Gemiddelde conformiteit**, met de verdeling van de vereisten over **Conform**, **Deels conform**, **Niet conform** en **Niet van toepassing**;
+* **Vooruitgang van de frameworks**: per kader het aantal projecten en de voortgang van controles, tests, vereisten en risico's;
+* **Projecten per status**: de verdeling van de projecten per fase;
+* **Conformiteit per scope**: het conformiteitsniveau van elke perimeter.
+
+<figure><img src="../../.gitbook/assets/compliance-statistics-1.png" alt="Conformiteitsdashboard met de globale indicatoren, de vooruitgang van de kaders en de conformiteit per perimeter"><figcaption></figcaption></figure>
