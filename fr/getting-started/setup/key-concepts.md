@@ -1,5 +1,6 @@
 ---
-description: Définitions des notions qui structurent Dastra : organisation, espace de travail, unité organisationnelle, entité, département et propriétaire.
+description: >-
+  Définitions des notions qui structurent Dastra : organisation, espace de travail, unité organisationnelle, entité, département et propriétaire.
 ---
 
 # Les notions importantes

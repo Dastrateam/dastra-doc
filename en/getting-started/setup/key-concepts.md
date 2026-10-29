@@ -1,5 +1,6 @@
 ---
-description: Definitions of the concepts that structure Dastra: organization, workspace, organizational unit, entity, department and owner.
+description: >-
+  Definitions of the concepts that structure Dastra: organization, workspace, organizational unit, entity, department and owner.
 ---
 
 # Key concepts
