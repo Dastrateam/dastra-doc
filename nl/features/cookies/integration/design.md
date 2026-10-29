@@ -1,17 +1,22 @@
 ---
 description: >-
-  Deze handleiding laat zien hoe je het uiterlijk van de widget kunt veranderen met behulp van eenvoudige eenvoudige CSS-regels
+  Deze handleiding laat zien hoe u het uiterlijk van de widget aanpast met
+  CSS-regels.
 ---
 
 # Geavanceerd ontwerp
 
 ## CSS-integratie
 
-Om goede weergaveprestaties te verkrijgen, wordt de Dastra-widget direct weergegeven op de sitepagina, in de container met het id **#dastra-widget**.
+Voor een goede weergaveprestatie wordt de Dastra-widget rechtstreeks in de pagina van uw site weergegeven, in de container met het id **#dastra-widget**.
 
-Het is mogelijk om het uiterlijk van de widget aan te passen met behulp van eenvoudige CSS-regels.
+U kunt het uiterlijk van de banner met CSS-regels aanpassen.
 
-Basisvoorbeeld:
+{% hint style="info" %}
+U kunt deze regels rechtstreeks invoeren in het veld **Aangepaste CSS** van de sectie **Uiterlijk van de widget** van de banner, zonder de stylesheet van uw site te wijzigen. Zie [De cookiebanner voor toestemming instellen](../banner/configure.md).
+{% endhint %}
+
+Voorbeeld:
 
 ```css
 /**Trigger button**/
@@ -48,5 +53,5 @@ Basisvoorbeeld:
 ```
 
 {% hint style="info" %}
-&#x20;Houd er rekening mee dat bepaalde aanpassingen aan de widgetcontainer ongewenste effecten kunnen hebben.
+Let op: sommige wijzigingen aan de widgetcontainer kunnen ongewenste effecten hebben.
 {% endhint %}

@@ -1,208 +1,188 @@
 ---
 description: >-
-  Deze pagina legt uit hoe de api voor toestemmingsbeheer werkt.
-  API voor toestemmingsbeheer. Deze API kan eenvoudig worden geïntegreerd in
-  toepassingen.
+  Deze pagina beschrijft de API voor het beheer van toestemming. U kunt ze
+  gebruiken in native mobiele applicaties.
 ---
 
 # Native toepassingen
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/cookies-widget-settings/:id?key=:key" method="get" summary="Haal widgetconfiguratie op" expanded="false" %}
-{% swagger-description %}
-Dit endpoint wordt gebruikt om de volledige configuratie van de widget op te halen
-{% endswagger-description %}
+Een native applicatie toont de webbanner niet: ze haalt de bannerconfiguratie op, toont een eigen toestemmingsscherm en stuurt daarna de keuzes van de gebruiker naar Dastra. Beide aanroepen gebruiken de openbare API-sleutel.
 
-{% swagger-parameter in="path" name="id" type="number" %}
-ID van de widgetconfiguratie
-{% endswagger-parameter %}
+{% hint style="info" %}
+Afhankelijk van de hostingregio van uw organisatie verandert het adres van de API (`api-bleu.dastra.eu` in plaats van `api.dastra.eu`). Gebruik het adres van uw organisatie.
+{% endhint %}
 
-{% swagger-parameter in="query" name="culture" type="string" %}
-De locale van de widgetconfiguratie (en, fr...)
-{% endswagger-parameter %}
+Verzoeken zonder `Origin`-header, zoals die van een native applicatie, worden geaccepteerd zonder dat de **Geautoriseerde URL's (CORS)** worden gecontroleerd.
 
-{% swagger-parameter in="query" name="key" type="string" %}
-De geleverde openbare api-sleutel
-{% endswagger-parameter %}
+## De bannerconfiguratie ophalen
 
-{% swagger-response status="200" description="Widgetconfiguratie opgehaald" %}
-```
+<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/cookies/public/cookies-widget-settings/{id}?key={key}`
+
+Dit endpoint geeft de volledige configuratie van de banner terug.
+
+### Padparameters
+
+| Naam | Type | Beschrijving |
+| --- | --- | --- |
+| `id` | number | Identifier van de banner. |
+
+### Queryparameters
+
+| Naam | Type | Beschrijving |
+| --- | --- | --- |
+| `key` | string | De openbare API-sleutel. |
+| `culture` | string | De taal van de configuratie (`en`, `fr` enzovoort). Als de parameter ontbreekt, gebruikt Dastra de header `Accept-Language` en daarna de eerste taal van de banner. |
+| `debug` | boolean | Bij `true` wordt geen bezoekgebeurtenis geregistreerd. |
+
+Voorbeeld van een `200`-antwoord. De teksten van de banner en sommige velden zijn ingekort; de inhoud hangt af van uw configuratie.
+
+```json
 {
   "translation": {
     "id": "35dddc1a-3ceb-49a8-a8d2-fc343fdb56a3",
-    "lang": "nl",
-    "order": 0,
-    "buttonBackLabel": "Retour",
-    "buttonAcceptLabel": "Alles accepteren",
-    "buttonSettingsLabel": "Aanpassen",
-    "buttonViewPurposeLabel": "Selecteer doeleinden",
-    "buttonConfirmLabel": "Selectie opslaan",
-    "buttonAcceptAllLabel": "Alles accepteren",
-    "buttonLaterLabel": "Alles afwijzen",
-    "buttonViewMoreLabel": "Bekijk de lijst",
-    "noticeUrlButtonLabel": "Lees ons cookiebeleid",
-    "startupTitle": "Wij gebruiken cookies",
-    "startupDisclaimer":"Cookies stellen ons in staat inhoud en advertenties te personaliseren, functies voor sociale media aan te bieden en ons verkeer te analyseren. We delen ook informatie over het gebruik van onze site met onze sociale media-, advertentie- en analysepartners, die dit kunnen combineren met andere informatie die u aan hen hebt verstrekt of die zij hebben verzameld via uw gebruik van hun diensten."
-    "innerTitle": "Dit zijn onze diensten die cookies gebruiken",
-    "innerDisclaimer": "In dit configuratiescherm kunt u de cookies kiezen die u tijdens het browsen toestaat,
-    "categoryNecessaryLabel": "Noodzakelijke cookies",
-    "categoryNecessaryExcerpt": "Noodzakelijke cookies helpen een website bruikbaar te maken door basisfuncties mogelijk te maken, zoals paginanavigatie en toegang tot beveiligde delen van de website. Zonder deze cookies kan de website niet goed functioneren.",
-    "categoryNecessaryDescription": "Noodzakelijke cookies helpen om een website bruikbaar te maken door basisfuncties zoals paginanavigatie en toegang tot beveiligde delen van de website mogelijk te maken. Zonder deze cookies kan de website niet goed functioneren.",
-    "categoryPreferenceLabel": "Voorkeuren",
-    "categoryPreferenceExcerpt": "Voorkeurscookies stellen een website in staat om informatie te onthouden die de manier verandert waarop de site zich gedraagt of wordt weergegeven, zoals uw voorkeurstaal of de regio waarin u zich bevindt.",
-    "categoryPreferenceDescription": "Voorkeurcookies stellen een website in staat om informatie te onthouden die de manier verandert waarop de site zich gedraagt of wordt weergegeven, zoals uw voorkeurstaal of de regio waarin u zich bevindt."
-    "categoryAnalyticalLabel": "Statistieken",
-    "categoryAnalyticalExcerpt": "Statistische cookies helpen website-eigenaren, door anoniem informatie te verzamelen en te rapporteren, om te begrijpen hoe bezoekers omgaan met websites.",
-    "categoryAnalyticalDescription": "Statistische cookies helpen website-eigenaren, door anoniem informatie te verzamelen en door te geven, om te begrijpen hoe bezoekers omgaan met websites.",
+    "lang": "en",
+    "startupTitle": "We use cookies",
+    "startupDisclaimer": "Cookies let us personalize content and ads, provide social media features and analyze our traffic.",
+    "buttonAcceptLabel": "Accept all",
+    "buttonSettingsLabel": "Customize",
+    "buttonLaterLabel": "Refuse all",
+    "buttonConfirmLabel": "Save my choices",
+    "innerTitle": "These are our services that use cookies",
+    "categoryNecessaryLabel": "Strictly necessary",
+    "categoryPreferenceLabel": "Preferences",
+    "categoryAnalyticalLabel": "Analytics",
     "categoryMarketingLabel": "Marketing",
-    "categoryMarketingExcerpt": "Marketingcookies worden gebruikt om bezoekers op websites te volgen. Het doel is om advertenties weer te geven die relevant en interessant zijn voor de individuele gebruiker en daardoor waardevoller voor externe uitgevers en adverteerders.",
-    "categoryMarketingDescription": "Marketingcookies worden gebruikt om bezoekers van verschillende websites te volgen. Het doel is om advertenties weer te geven die relevant en interessant zijn voor de individuele gebruiker en daardoor waardevoller voor externe uitgevers en adverteerders.",
-    "categoryOtherLabel": "Overige cookies",
-    "categoryOtherExcerpt": "Schrijf hier een korte beschrijving",
-    "categoryOtherDescription": "Schrijf hier een lange beschrijving",
-    "categoryIABLabel": "IAB Reclamediensten",
-    "categoryIABExcerpt": "Deze services gebruiken cookies voornamelijk om de kwaliteit van reclameboodschappen te verbeteren."
-    "categoryIABDescription": "Deze services gebruiken cookies voornamelijk om de kwaliteit van reclameboodschappen te verbeteren,
-    "cookieDeclaration": null,
-    "buttonYes": "Yes",
-    "buttonNo": "No",
-    "viewProof": "Bewijs van toestemming weergeven",
-    "successMessage": "Uw voorkeuren zijn opgeslagen! Bedankt! "
+    "successMessage": "Your preferences have been saved."
   },
   "groups": [
     {
-      "label": "Marketing",
-      "excerpt": "Marketingcookies worden gebruikt om bezoekers van verschillende websites te volgen. Het doel is om advertenties weer te geven die relevant en interessant zijn voor de individuele gebruiker en daardoor waardevoller voor externe uitgevers en adverteerders.",
-      "purpose": 3,
+      "label": "Analytics",
+      "excerpt": "Analytics cookies help us understand how visitors use the site.",
+      "purpose": "Analytical",
       "services": [
         {
           "id": "e213aca4-79b7-4b93-2bad-08d897969898",
-          "name": "yrdy",
-          "slug": "yrdy",
-          "domain": "www.dastra.eu",
-          "logoUrl": "https://api.dastra.eu/v1/favicon/www.dastra.eu",
-          "privacyPolicyUrl": null,
+          "name": "Google Analytics",
+          "slug": "google-analytics",
+          "domain": "analytics.google.com",
+          "logoUrl": "https://api.dastra.eu/v1/favicon/analytics.google.com",
+          "privacyPolicyUrl": "https://policies.google.com/privacy",
           "defaultConsent": false,
           "requiredConsent": true,
-          "purpose": 3,
+          "purpose": "Analytical",
           "description": null,
           "cookies": [
             {
               "id": "de529978-3ae0-496d-bf25-daac9d7230c7",
               "serviceId": null,
-              "name": "yrdy",
+              "name": "_ga",
               "description": null,
               "value": null,
+              "thirdParty": false,
               "path": null,
               "domain": null,
-              "expiryDays": null
+              "expiryDays": 400
             }
           ],
-          "lang": "nl"
+          "lang": "en",
+          "consentModeV2Permissions": []
         }
       ],
-      "description": "Marketingcookies worden gebruikt om bezoekers van verschillende websites te volgen. Het doel is om advertenties weer te geven die relevant en interessant zijn voor de individuele gebruiker en daardoor waardevoller voor externe uitgevers en adverteerders.",
+      "description": "Analytics cookies help us understand how visitors use the site.",
       "requiredConsent": true,
       "defaultConsent": false
     }
   ],
-  "lang": "nl",
+  "lang": "en",
+  "availableLocales": ["en", "fr"],
+  "id": 1,
   "versionKey": "36df80ee-235c-4485-b9e2-f28f5568f572",
-  "lastVersionGeneration": "2020-12-03T14:28:55.5450603",
-  "buttonLogoUrl": null,
+  "lastVersionGeneration": "2026-10-12T14:28:55Z",
+  "label": "Example banner",
   "enabled": true,
-  "label": "www.dastra.eu",
-  "displayLogo": true,
-  "hideCopyright": false,
-  "showFixedButton": true,
-  "developerMode": true,
+  "disableBanner": false,
   "saveConsentProof": true,
-  "isValid": false,
+  "developerMode": false,
   "position": "BottomLeft",
   "timerTrigger": 0,
   "scrollTrigger": 0,
+  "showFixedButton": true,
+  "showCloseButton": true,
+  "continueWithoutAcceptButton": false,
+  "enableGlobalPrivacyControl": false,
+  "hideCopyright": false,
+  "buttonLayout": "Circle",
+  "buttonLogoUrl": null,
   "autoGeneratedCookieNotice": false,
   "cookieNoticeUrl": "",
-  "bgColor": "#FFFFFFFF",
-  "colorTitle": "#2E4058",
-  "colorBtn": "#686868",
-  "colorText": "#2E4058",
-  "colorPrimary": "#E7630A",
-  "colorSecondary": "#48ba61",
+  "bgColor": "#FFFFFF",
+  "colorTitle": "#0A153B",
+  "colorBtn": "#687c77",
+  "colorText": "#0A153B",
+  "colorPrimary": "#EF4A2A",
+  "colorSecondary": "#687c77",
   "customCSS": "",
-  "enableIAB": false,
-  "tcfVersion": 1,
-  "fontFamily": "'Segoe UI', Tahoma, Geneva, Verdana, schreefloos",
-  "dateCreation": "2020-12-03T14:20:19.3703522",
-  "dateUpdate": "2021-03-15T12:32:09.848664",
-  "consentCookieExpiryTime": 180,
+  "fontFamily": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  "consentStorageMode": "Cookies",
   "consentCookieName": null,
-  "id": 1,
-  "tenant": null,
-  "tenantId": 1
+  "consentCookieDomain": null,
+  "consentCookieExpiryTime": 180
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
 
-{% swagger baseUrl="https://api.dastra.eu" path="/v1/cookies/public/collect/:id?key=:key" method="post" summary="Toestemming registratie" %}
-{% swagger-description %}
-Deze methode wordt gebruikt om toestemming voor cookies te verzamelen
-{% endswagger-description %}
+Het antwoord komt overeen met het model `CookieWidgetPublicDto`. Een `400`-antwoord betekent een niet-toegestane origin, een uitgeschakelde banner of een verlopen abonnement.
 
-{% swagger-parameter in="path" name="id" type="string" %}
-ID van de widgetconfiguratie
-{% endswagger-parameter %}
+## Toestemmingen registreren
 
-{% swagger-parameter in="query" name="key" type="string" %}
-De openbare api-sleutel
-{% endswagger-parameter %}
+<mark style="color:green;">`POST`</mark> `https://api.dastra.eu/v1/cookies/public/collect/{id}?key={key}`
 
-{% swagger-parameter in="body" name="consents" type="object" %}
-&#x20;De lijst van gebruikers toestemmingen
-\
-`{`\
-cookieConsents":`
-`[`\
-&#x20; `{`\
-&#x20; `"toestemming":true, // True als toegestaan, false als geweigerd``.
-&#x20; `"id":"e213aca4-79b7-4b93-2bad-08d897969898", // Cookies id`.
-&#x20; `"date":"2021-03-15T14:00:04.133Z",`\
-&#x20; `"name":"yrdy",`
-&#x20; `"slug":"yrdy",`
-&#x20; `"purpose":3``
-&#x20; `}`\
-`],`\
-`"lang":"nl-NL",`
-`"consentId":"6f47576e-5a0c-4219-8efe-331e72bab73a",`\
-`"date":1615809009744`\
-`}`\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-&#x20;
-{% endswagger-parameter %}
+Deze methode verzamelt de cookietoestemmingen.
 
-{% swagger-parameter in="body" name="type" type="string" %}
-CookieEventType Bezoek,Afsluiten,Toestemmingen
-{% swagger-parameter %}
+### Padparameters
 
-{% swagger-parameter in="body" name="consentId" type="string" %}
-De huidige toestemmings-id (indien eerder verzameld)
-{% endswagger-parameter %}
+| Naam | Type | Beschrijving |
+| --- | --- | --- |
+| `id` | number | Identifier van de banner. |
 
-{% swagger-parameter in="body" name="userId" type="string" %}
-Gepseudonimiseerde ID van de gebruiker in je systemen (optioneel), zie [Identificatie van gebruikers](../identification.md)
-{% endswagger-parameter %}
+### Queryparameters
 
-{% swagger-response status="200" description="Geef de id van de verzamelde toestemming terug" %}
+| Naam | Type | Beschrijving |
+| --- | --- | --- |
+| `key` | string | De openbare API-sleutel. |
+
+### Aanvraagtekst
+
+| Naam | Type | Beschrijving |
+| --- | --- | --- |
+| `type` | string | Het type gebeurtenis: `Visit`, `Quit` of `Consents`. |
+| `consents` | object | De lijst met toestemmingen van de gebruiker (zie het voorbeeld hieronder). |
+| `consentId` | string | De huidige identifier van de toestemming, als er al een is verzameld. |
+| `referrer` | string | Het adres van de pagina of het scherm waar de gebeurtenis vandaan komt. |
+| `userId` | string | Gepseudonimiseerde identifier van de gebruiker in uw systemen (optioneel). Zie [Gebruikersidentificatie](../identification.md). |
+
+Voorbeeld van een aanvraagtekst:
+
+```json
+{
+  "type": "Consents",
+  "referrer": "my-app://settings/privacy",
+  "userId": "{your_pseudonymous_user_id}",
+  "consents": {
+    "consentId": "6f47576e-5a0c-4219-8efe-331e72bab73a",
+    "lang": "en-US",
+    "versionKey": "36df80ee-235c-4485-b9e2-f28f5568f572",
+    "cookieConsents": [
+      {
+        "id": "e213aca4-79b7-4b93-2bad-08d897969898",
+        "name": "Google Analytics",
+        "slug": "google-analytics",
+        "consent": true,
+        "date": "2026-10-12T14:00:04.133Z",
+        "purpose": "Analytical"
+      }
+    ]
+  }
+}
 ```
-140f213b-de17-4572-99a7-5075ccbcbbec
-```
-{% endswagger-response %}
-{% endswagger %}
+
+Het `200`-antwoord bevat de identifier van de verzamelde toestemming, bijvoorbeeld `140f213b-de17-4572-99a7-5075ccbcbbec`. Bewaar deze identifier in de applicatie voor de volgende aanroepen: het is de identifier van het bewijs van toestemming. Gebeurtenissen die door bots worden verzonden, worden genegeerd en het bewijs wordt alleen opgeslagen als de optie **Bewijs van toestemming opslaan** is ingeschakeld.

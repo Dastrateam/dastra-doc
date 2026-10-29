@@ -1,16 +1,22 @@
+---
+description: >-
+  AI-modellen, hosting, eigen leverancier, gebruikslogboeken, AI-credits en de
+  gegevens die de AI-assistent van Dastra naar het model stuurt.
+---
+
 # Werking
 
 ## Modellen en hosting
 
-<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-settings-models.png" alt="Instellingenpagina van de AI-assistent met de modelfamilies en het kredietquotum"><figcaption><p>Organisatie-instellingen > Assistent IA: kies de modelfamilie en volg het kredietquotum</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Pagina Assistent IA van de organisatie-instellingen met de modelfamilie en het volgen van de credits"><figcaption><p>Organisatie-instellingen > Assistent IA: kies de modelfamilie en volg de credits</p></figcaption></figure>
 
 Dastra gebruikt vooraf getrainde generatieve AI-modellen, beschikbaar in vier families waaruit u kiest:
 
 | Familie | Geconfigureerde modellen | Hosting |
 | --- | --- | --- |
-| OpenAI (aanbevolen standaard) | Fast: gpt-4o-nano · Smart: gpt-5-mini · Large context: gpt-4.1-mini | Azure, Frankrijk / EER |
+| OpenAI (aanbevolen standaard) | Fast: gpt-5-nano · Smart: gpt-5.6-terra · Large context: gpt-5.6-sol | Azure, Frankrijk / EER |
 | Mistral | Fast: mistral-small-2503 · Smart: Mistral-Large-3 · Large context: Mistral-Large-3 | Azure, Frankrijk / EER |
-| Open source | Fast: Ministral-3B · Smart: DeepSeek-V3.2 · Large context: Llama-4-Maverick-17B-128K | Azure, Frankrijk / EER |
+| Open source | Fast: DeepSeek-V4.1-Flash · Smart: DeepSeek-V3.2 · Large context: DeepSeek-V3.2 | Azure, Frankrijk / EER |
 | IA-leverancier (eigen AI-leverancier) | Uw eigen leverancier via een API-sleutel (zie hieronder) | Afhankelijk van uw configuratie |
 
 Voor de eerste drie families worden de modellen gehost op de infrastructuur van Microsoft Azure in Frankrijk. Ze worden niet rechtstreeks beheerd door OpenAI of Mistral: Dastra gebruikt beheerde Azure-diensten, zodat uw gegevens niet via de eigen infrastructuur van OpenAI of Mistral lopen.
@@ -19,23 +25,23 @@ Voor elke familie worden afhankelijk van de complexiteit van de taak drie modeln
 
 * Fast (eenvoudige acties): beschrijvingen genereren, labels voorstellen
 * Smart (acties die meer redeneerwerk vragen): gestructureerde objecten genereren in Dastra
-* Large context (acties die grote hoeveelheden gegevens verwerken): een vragenlijst beantwoorden, complianceanalyse
+* Large context (acties die grote hoeveelheden gegevens verwerken): een vragenlijst beantwoorden, conformiteitsanalyse
 
-U configureert de gebruikte modelfamilie in uw **Organisatie-instellingen** > **Assistent IA**.
+De eigenaar van de organisatie kiest de modelfamilie in **Organisatie-instellingen** > **Assistent IA**, in de kaart **Instellingen van de Assistent IA**, veld **Familie van IA-modellen**. De wijziging wordt opgeslagen zodra u een familie selecteert.
 
 ## Eigen AI-leverancier
 
 <figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Modelfamilies van de AI-assistent, waaronder de eigen AI-leverancier"><figcaption><p>De eigen AI-leverancier tussen de modelfamilies</p></figcaption></figure>
 
-Met Dastra koppelt u uw eigen AI-leverancier via een API-sleutel, op voorwaarde dat die compatibel is met de OpenAI-API-standaard. Ondersteunde leveranciers zijn onder meer OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Microsoft Foundry en elke compatibele zelfgehoste LLM.
+Met Dastra koppelt u uw eigen AI-leverancier met een API-sleutel, op voorwaarde dat die compatibel is met de OpenAI-API-standaard. De aangeboden leveranciers zijn OpenAI, Google, Anthropic, Mistral en Azure AI Foundry. De optie **Other** accepteert elk ander compatibel endpoint, waaronder een zelfgehoste LLM.
 
-Om een eigen leverancier te configureren, gaat u naar **Organisatie-instellingen** > **Assistent IA** > **IA-leverancier**, voert u uw inloggegevens in en koppelt u ze aan de drie modelniveaus (Fast, Smart, Large context).
+Om een eigen leverancier te configureren, selecteert u de familie **IA-leverancier** in **Organisatie-instellingen** > **Assistent IA**. Klik in het blok **Identificaties van IA-leverancier** op **Identificaties toevoegen**, voer de leverancier en de bijbehorende API-sleutel in en wijs daarna een model toe aan elk van de drie niveaus (Fast, Smart, Large context).
 
-Voor herkende leveranciers wordt de **Basis-URL** automatisch vooraf ingevuld. Voor Anthropic is dat `https://api.anthropic.com/v1/`. U hoeft alleen nog uw **API-sleutel** in te voeren.
+Voor herkende leveranciers wordt de **Basis-URL** vooraf ingevuld: voor Anthropic is dat `https://api.anthropic.com/v1/`. Voor Azure AI Foundry en voor **Other** voert u hem zelf in.
 
 * Met de knop **Test de verbinding** controleert u de geldigheid van de inloggegevens vóór het opslaan.
-* U wijst voor elk type bewerking (fast, smart en large context) het te gebruiken model aan, met standaard een aanbevolen model.
-* De API-sleutel wordt nooit meer in leesbare tekst getoond, en het beheer van de inloggegevens is voorbehouden aan gebruikers met rechten op integraties.
+* U kiest voor elk niveau het te gebruiken model, met standaard een aanbevolen model.
+* De API-sleutel wordt nooit meer in leesbare tekst getoond, en het beheer van de inloggegevens is voorbehouden aan eigenaren van de organisatie.
 
 <figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Venster met de inloggegevens van een eigen leverancier met Anthropic en de knop Test de verbinding"><figcaption><p>Configuratie van Anthropic: vooraf ingevulde Basis-URL, API-sleutel en knop Test de verbinding</p></figcaption></figure>
 
@@ -45,9 +51,9 @@ Bij een eigen AI-leverancier vallen de gegevens die naar het model worden gestuu
 
 ## Wat Dastra naar het model stuurt
 
-Dastra stuurt alleen de informatie door die nodig is voor de gevraagde generatie: de tekst die de gebruiker invoert en, indien van toepassing, de gestructureerde velden van het betrokken object (verwerkingsactiviteit, AI-systeem, verzoek om rechten uit te oefenen enzovoort).
+Dastra stuurt alleen de informatie door die nodig is voor de gevraagde generatie: de tekst die de gebruiker invoert en, indien van toepassing, de gestructureerde velden van het betrokken object (verwerkingsactiviteit, AI-systeem, verzoek van een betrokkene enzovoort).
 
-De exacte gegevens per functie staan in de sectie [Gegevens die naar het model worden gestuurd](#gegevens-die-naar-het-model-worden-gestuurd).
+De exacte gegevens per functie staan in de sectie [Gegevens die naar het model worden gestuurd](how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd).
 
 ## Wat Dastra niet doet
 
@@ -64,50 +70,51 @@ Microsoft Azure heeft een geautomatiseerd mechanisme om mogelijk misbruikte inho
 
 Deze bewaring blijft uitzonderlijk en geldt niet voor het normale gebruik van het platform. Zie voor meer informatie de [Microsoft-documentatie over gegevensprivacy van Azure Direct Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).
 
-## Logboeken van AI-aanroepen
+## Logboeken van het AI-gebruik
 
-Dastra bewaart een geschiedenis van de aanroepen van de AI-assistent gedurende de laatste 90 dagen, beschikbaar via **Organisatie-instellingen** > **Assistent IA** > **AI invocation logs**. Voor elke aanroep wordt de volgende informatie vastgelegd:
+Dastra bewaart een geschiedenis van de aanroepen van de AI-assistent. De kaart **AI usage** van **Organisatie-instellingen** > **Assistent IA** toont de **laatste 90 dagen** in het tabblad **Logs (90 days)**, dat is voorbehouden aan eigenaren van de organisatie. Voor elke aanroep wordt de volgende informatie vastgelegd:
 
 | Veld | Beschrijving |
 | --- | --- |
 | Datum | Tijdstip van de aanroep |
 | Status | Succes of mislukken van de generatie |
 | Operation | Type van de gebruikte prompt |
-| Model | Naam van het gebruikte model |
+| Model name | Naam van het gebruikte model |
+| Credits | Verbruikte credits. Alleen geslaagde generaties verbruiken credits |
 | Duur | Verwerkingstijd van de aanvraag |
 | Gebruiker | Lid van de werkruimte dat de generatie heeft gestart |
 
+De tabbladen **Credits by user** en **Credits by operation** tellen het verbruik van de huidige maand op.
+
 ## AI-credits en quota
 
-Dastra volgt het gebruik van de AI-assistent met een systeem van AI-credits. Elke aanroep van een AI-functie verbruikt credits in verhouding tot het gebruikte model en het volume aan verwerkte gegevens.
+Dastra meet het gebruik van de AI-assistent in AI-credits (geen tokens). Het quotum is maandelijks en wordt gedeeld door alle werkruimten van de organisatie: het hangt af van het abonnement en wordt automatisch vernieuwd op de eerste dag van elke maand. Gesprekken met Dastra AI en uitvoeringen van agents gebruiken hetzelfde quotum.
 
-| Modelniveau | Relatief verbruik |
+Een geslaagde generatie verbruikt credits volgens het type bewerking. Een mislukte of lopende generatie wordt nooit geteld.
+
+| Bewerking | Credits |
 | --- | --- |
-| Fast | Laag |
-| Smart | Gemiddeld |
-| Large context | Hoog |
+| Een verwerkingsactiviteit, activum, stakeholder, dataset, beveiligingsmaatregel, AI-systeem of AI-model genereren; informatiebericht; labelsuggestie; antwoord op een verzoek van een betrokkene; extractie van contractmetadata; suggesties voor controles en tests | 1 |
+| Risicoanalyse, beoordeling van de DPIA-criteria, verificatie van testbewijs, postmortem van een datalek, aangepast rapport | 2 |
+| Een vragenlijst beantwoorden en een vragenlijst vertalen | 1 per 25 vragen |
 
-Beheerders openen het verbruiksoverzicht via **Organisatie-instellingen** > **Assistent IA** ([directe link](https://app.dastra.eu/general-settings/ai)): het AI-creditverbruik van de huidige maand, het beschikbare saldo en de vernieuwingsdatum.
+De kaart **Gebruik** van **Organisatie-instellingen** > **Assistent IA** toont het verbruik van de huidige maand, het quotum van het abonnement en de vernieuwingsdatum. De voortgangsbalk verandert van kleur naarmate een groter deel van het quotum is verbruikt:
 
-Het gebruiksniveau wordt getoond in een gekleurde voortgangsbalk die verandert naarmate een groter deel van het quotum is verbruikt:
+* Groen: minder dan 80% van het quotum
+* Oranje: van 80% tot 99%
+* Rood: het quotum is bereikt
 
-* Groen: gematigd verbruik, quotum grotendeels beschikbaar
-* Oranje: hoog verbruik, quotum bijna bereikt
-* Rood: quotum bereikt of bijna bereikt
+Zodra het maandelijkse quotum is bereikt, krijgt u een melding die voorstelt contact op te nemen met het Dastra-team.
 
-Zodra het maandelijkse quotum is bereikt, krijgt u een duidelijke melding met een link naar de mogelijkheden om het quotum te verhogen.
-
-<figure><img src="../../../.gitbook/assets/credits-ia-quota.png" alt="Gekleurde voortgangsbalk van het AI-kredietquotum in de instellingen van de werkruimte"><figcaption><p>Volgen van het AI-creditverbruik van de huidige maand met een gekleurde voortgangsbalk (groen, oranje, rood)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Kaart Gebruik van de AI-assistent met de voortgangsbalk van het creditquotum en de uitleg van de berekening"><figcaption><p>Volgen van het AI-creditverbruik van de huidige maand</p></figcaption></figure>
 
 {% hint style="info" %}
 Wanneer het quotum is bereikt, worden de AI-functies uitgeschakeld tot de volgende vernieuwing. De rest van het platform (gegevens, workflows, exports) blijft normaal werken.
 {% endhint %}
 
 {% hint style="info" %}
-Eigen AI-leverancier, creditberekening uitgeschakeld: wanneer uw organisatie een eigen AI-leverancier gebruikt, geldt het creditsysteem van Dastra niet en worden er geen credits geteld. Het verbruik wordt dan rechtstreeks door uw eigen leverancier beheerd volgens zijn eigen factureringsvoorwaarden.
+Eigen AI-leverancier, geen creditberekening: wanneer uw organisatie een eigen AI-leverancier gebruikt, geldt het creditsysteem van Dastra niet. Het verbruik wordt rechtstreeks door uw eigen leverancier beheerd volgens zijn eigen factureringsvoorwaarden.
 {% endhint %}
-
-Neem contact op met het Dastra-team om uw quotum te verhogen.
 
 ## Gegevens die naar het model worden gestuurd
 
@@ -129,7 +136,7 @@ Dastra stuurt geen gegevens uit uw werkruimte naar het AI-model tenzij u daarom 
 | Labels voorstellen | Tekstinhoud van het object (naam, beschrijving) | Nee |
 | Een vragenlijstsjabloon genereren | Vrije tekst die de gebruiker invoert | Nee |
 | Een vragenlijst beantwoorden (DPIA, risicoanalyse enzovoort) | Gestructureerde velden van de gekoppelde verwerkingsactiviteit plus eventuele eigen instructies | Mogelijk, afhankelijk van de inhoud van de verwerkingsactiviteit |
-| Een antwoord op een verzoek om rechten uit te oefenen genereren | Voor- en achternaam van de aanvrager, bericht van het verzoek, taal, naam van de werkruimte, doeleinden, naam van de behandelaar, datum van het verzoek en resterende dagen, status en ID van het verzoek | Ja: voornaam, achternaam en inhoud van het verzoek |
+| Een antwoord op een verzoek van een betrokkene genereren | Voor- en achternaam van de aanvrager, bericht van het verzoek, taal, naam van de werkruimte, doeleinden, naam van de behandelaar, datum van het verzoek en resterende dagen, status en ID van het verzoek | Ja: voornaam, achternaam en inhoud van het verzoek |
 | Een postmortem van een datalek genereren | Gestructureerde velden van het datalek (beschrijving, getroffen gegevens, genomen maatregelen) | Mogelijk, afhankelijk van de inhoud van het datalekdossier |
 | Contractmetadata extraheren | Tekstinhoud van het verzonden document (bijlage of URL) | Mogelijk, afhankelijk van de inhoud van het contract |
 | Een aangepast document genereren | Instructies van de gebruiker plus eventueel bronmateriaal | Mogelijk, afhankelijk van de opgegeven instructies |

@@ -1,14 +1,14 @@
 ---
 description: >-
-  Met de AI-assistent van Dastra genereert en verrijkt u elementen in uw
-  werkruimte met generatieve AI.
+  Met de AI-assistent van Dastra genereert en verrijkt u elementen van uw
+  werkruimte op basis van korte beschrijvingen, met agents en een MCP-server.
 ---
 
 # AI-assistent
 
 Met de AI-assistent van Dastra genereert en verrijkt u elementen van uw werkruimte op basis van korte tekstbeschrijvingen. Hij gebruikt generatieve AI-modellen die op Azure worden gehost, in Frankrijk en in de Europese Economische Ruimte. Gegevens van uw organisatie worden niet gebruikt om die modellen te trainen.
 
-De AI-assistent is beschikbaar in alle Dastra-werkruimten. Wilt u hem voor uw organisatie uitschakelen, neem dan contact op met ons ondersteuningsteam.
+De beschikbaarheid van de AI-assistent hangt per module af van het abonnement van uw organisatie. In een module die niet in uw abonnement zit, zijn de AI-knoppen grijs. Neem contact op met ons team om de reikwijdte van uw abonnement te wijzigen.
 
 ## AI als startpunt, niet als eindantwoord
 
@@ -35,12 +35,18 @@ De assistent is beschikbaar in meerdere modules van het platform:
 * Verwerkingsactiviteiten: beschrijvingen, datasets, beveiligingsmaatregelen, informatieberichten en conformiteitsanalyses genereren
 * AI-systemen: beschrijvingen, berichten en risicoanalyses genereren
 * Vragenlijsten: door AI ondersteunde antwoorden genereren voor DPIA's en risicoanalyses
-* Verzoeken om rechten uit te oefenen: antwoorden opstellen in meerdere talen en registers
+* Verzoeken van betrokkenen: antwoorden opstellen in meerdere talen en registers
 * Activa en actoren: gestructureerde items genereren op basis van een URL of een vrije beschrijving
 * Contracten: metagegevens uit een geïmporteerd document halen
 * Eigen documenten en rapporten: inhoud genereren op basis van uw eigen instructies
 
 Een stapsgewijze uitleg van elke functie vindt u onder [Gebruiksscenario's](use-cases.md).
+
+## Dastra AI, agents en de MCP-server
+
+Naast het genereren van inhoud biedt Dastra een gesprekspartner, Dastra AI, die u bevraagt vanuit het dashboard of met de knop **Open Dastra AI** rechtsonder op het scherm. U kunt ook uw eigen [agents](agents/README.md) maken, conversational of autonoom, en uw AI-hulpmiddelen met Dastra verbinden via de [MCP-server](mcp.md). Deze functies hangen af van het abonnement van uw organisatie en van de rechten van elke gebruiker.
+
+Alle AI-functies delen het maandelijkse quotum aan AI-credits dat wordt beschreven onder [Werking](how-it-works.md#ai-credits-en-quota).
 
 ## Bètafuncties
 

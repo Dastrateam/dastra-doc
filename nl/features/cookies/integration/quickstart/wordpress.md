@@ -1,41 +1,31 @@
 ---
-description: Leer hoe je de Dastra cookie-widget integreert in een Wordpress-site.
+description: >-
+  Leer hoe u de Dastra-cookiebanner op een WordPress-website integreert.
 ---
 
 # Wordpress
 
-## 1 De SDK ophalen
+## De Dastra-plugin installeren
 
-Zodra u klaar bent met de configuratie en het ontwerp van de Dastra cookie toestemmingswidget, kunt u de SDK ophalen in de "Installatie" sectie.
+De Dastra-plugin is de aanbevolen methode: updates van het thema overschrijven ze niet.
 
-{% hint style="info" %}
-U kunt dit stukje code vinden en het hier kopiëren/plakken: \
-Cookie toestemming > Bewerken > Installatie
-{% endhint %}
+1. Open in de banner de sectie **Installatie** en klik op de kaart **Wordpress**.
+2. Klik op **Bezoek de plugin-pagina**, of zoek de plugin "Dastra" in de lijst met plugins van uw WordPress-beheer. U kunt de plugin ook in dit venster downloaden en handmatig installeren.
+3. Installeer en activeer de plugin.
+4. Open in WordPress **Settings** > **Dastra** en klik op **Link with Dastra** om de plugin aan uw banner te koppelen.
 
-![](<../../../../.gitbook/assets/image (79).png>)
+<figure><img src="../../../../.gitbook/assets/cookies-wordpress-1.png" alt="Het venster Wordpress van de sectie Installatie met de link naar de plugin"><figcaption><p>De kaart "Wordpress" van de sectie Installatie</p></figcaption></figure>
 
-## 2. Kopieer en plak in de Wordpress editor
+## Of de code in het thema plakken
 
-Zodra je de code hebt opgehaald, ga je naar de beheerconsole van je Wordpress site.
+Kunt u geen plugin installeren, plak dan de bannercode in het thema. Een update van het thema overschrijft deze wijziging: pas ze daarom toe in een child theme.
 
-Klik op de knop "Uiterlijk" in de verticale banner aan de linkerkant van het scherm en vervolgens op de knop "Thema-editor" &#x20;
+1. Klik in de sectie **Installatie** van de banner op de kaart **JavaScript** en kopieer de code.
+2. Klik in het beheer van uw WordPress-site op **Appearance** en daarna op **Theme Editor**.
+3. Selecteer het bestand `footer.php` en voeg de code net vóór de tag `</body>` in.
 
-Selecteer het bestand "Footer.php" aan de rechterkant van het scherm dat verschijnt en voeg de code in die u eerder van Dastra hebt gehaald aan het einde van de tag \<body> (net voor \</body>).
+![De thema-editor van WordPress met het bestand footer.php geopend](../../../../.gitbook/assets/cookies-wordpress-theme-editor.png)
 
-![](<../../../../.gitbook/assets/image (80).png>)
+4. Klik op **Update File** en vernieuw daarna de pagina van uw website. De banner verschijnt.
 
-Sla op door op "Bestand bijwerken" te klikken, vernieuw dan je website pagina. Dat is het, de banner verschijnt!
-
-&#x20;
-
-
-
-
-
-
-
-
-
-
-
+Voeg ook een knop toe die de banner opnieuw opent, zoals beschreven in [Snel aan de slag](README.md#de-banner-vanaf-een-knop-opnieuw-openen).
