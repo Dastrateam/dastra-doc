@@ -1,59 +1,70 @@
 ---
 description: >-
-  Learn how to integrate the Dastra cookie widget into a web page using the
-  javascript SDK.
+  Learn how to integrate the Dastra cookie banner into a web page using the
+  JavaScript SDK.
 ---
 
 # Quick start
 
-## Prerequisite: recovery of an API public key
+## Prerequisite: get a public API key
 
-to get a public key from the Dastra SDK, go to this page: [https://app.dastra.eu/general-settings/api](https://app.dastra.eu/general-settings/api)
+The banner needs a public API key. Click the gear icon in the top bar (**Organization settings**), then **Api keys & MCP** in the left menu. See [API key management](../../../settings/api-keys.md).
 
-<figure><img src="../../../../.gitbook/assets/screenshot-2023-02-21-171348.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-quickstart-1.png" alt="The Api keys & MCP page with the list of keys"><figcaption><p>The "Api keys & MCP" page</p></figcaption></figure>
 
-## Configure your widget
+## Configure your banner
 
-Configure your widget by following the guide below:
+Configure your banner by following the guide below:
 
 {% content-ref url="../../banner/README.md" %}
-[configuration-du-widget](../../banner/README.md)
+[README.md](../../banner/README.md)
 {% endcontent-ref %}
 
-## Insert the html integration code
+## Insert the HTML integration code
 
-Insert the HTML code available in the "Installation" section of the Dastra Cookie Consent Module **before the end of the \<BODY> tag** on your website, on all pages. You can use the Google tag manager to dynamically insert this code on each page.
+Insert the HTML code available in the **Installation** section of the banner, **JavaScript** card, **before the closing `</body>` tag** of your website, on all pages. You can use Google Tag Manager to insert this code dynamically on each page.
 
 {% hint style="info" %}
-For the code to work properly, make sure the public key of your API is configured correctly beforehand.
+For the code to work, the public API key must be configured beforehand.
 {% endhint %}
 
-Here is how the widget integration code looks:
+Here is the banner integration code:
 
-```ssml
+```html
 <div id="dastra-cookie-consent" data-widgetid="{your_widget_id}"></div>
-<script src="https://cdn.dastra.eu/sdk/dastra.js?key={your_public_key}" async>
-</script>
+<script src="https://cdn.dastra.eu/sdk/dastra.js?key={your_public_key}" async></script>
 ```
 
-The div with the id "dastra-cookie-consent" will be the rendering location of your consent widget. The "data-widgetid" attribute is used to identify the widget being invoked, it is often a number (int32). {your\_public\_key} is your API public key which [can be retrieved here](https://app.dastra.eu/general-settings/api).
+The `div` with the id `dastra-cookie-consent` is where the banner is rendered. The `data-widgetid` attribute identifies the banner: it is an integer. `{your_public_key}` is your public API key, available in **Api keys & MCP**.
 
-Once the code is inserted in the tag of your site, the widget will display on your site.
-
-{% hint style="warning" %}
-For optimal performance, the widget is automatically cached by the browser in the sessionStorage
+{% hint style="info" %}
+Always copy the code from the application. Depending on the hosting region of your organization, the address of the script (`cdn-bleu.dastra.eu` instead of `cdn.dastra.eu`) and the address of the API (`api-bleu.dastra.eu` instead of `api.dastra.eu`) change.
 {% endhint %}
 
-## Wordpress
+Once the code is inserted before the `</body>` tag of your website, the banner appears.
 
-If you use Wordpress, you will find in the link below more information on how the generated code can be inserted at the end of the html tag of your website.
+{% hint style="warning" %}
+For better performance, the browser caches the banner in the `sessionStorage`.
+{% endhint %}
+
+## Reopen the banner from a button
+
+Withdrawing consent must be as easy as giving it. Add a button that reopens the banner to your website, for example in the footer. The same snippet is shown in the **Installation** section of the banner:
+
+```html
+<button type="button" onclick="dastra.openCookieConsent()">Check your cookie consent</button>
+```
+
+## WordPress
+
+If you use WordPress, the following page explains how to install the banner with the Dastra plugin.
 
 {% content-ref url="wordpress.md" %}
 [wordpress.md](wordpress.md)
 {% endcontent-ref %}
 
-Once the widget is integrated, move on to the testing phase.
+Once the banner is integrated, move on to the testing phase.
 
 {% content-ref url="../test.md" %}
-[comment-tester-lintegration-dun-widget.md](../test.md)
+[test.md](../test.md)
 {% endcontent-ref %}

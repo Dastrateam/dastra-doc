@@ -22,15 +22,17 @@ Zijn er geen knoppen beschikbaar, controleer dan of het antwoord echt de status 
 
 ## Aanwijzing van de goedkeurders
 
-De goedkeurders worden bepaald bij het plannen van de vragenlijst (zie [Een audit of PIA plannen](schedule.md)), in het onderdeel **Eigenaren**:
+De goedkeurders worden bepaald bij het plannen van de vragenlijst (zie [Een audit of PIA plannen](schedule.md)), in het onderdeel **Goedkeurders**:
 
 * **Vereiste goedkeurders**: ze moeten allemaal de vragenlijst goedkeuren voordat ze kan worden gevalideerd. Minstens één vereiste goedkeurder is verplicht.
 * **Optionele goedkeurders**: schakel **Voeg optionele goedkeurders toe** in om goedkeurders te betrekken van wie de goedkeuring wordt bijgehouden maar niet blokkerend is.
 
-Alleen deze gebruikers kunnen het antwoord goedkeuren, valideren, een revisie vragen of annuleren.
+<figure><img src="../../.gitbook/assets/questionnaires-validate-1.png" alt="Onderdeel Goedkeurders van het planningsformulier met de vereiste en optionele goedkeurders"><figcaption><p>Het onderdeel Goedkeurders van het planningsformulier</p></figcaption></figure>
+
+De standaard voorgestelde goedkeurders stelt u in via de configuratie van het sjabloon, met het veld **Personen verantwoordelijk voor de vragenlijst** (zie [Een vragenlijstsjabloon aanmaken](templates/README.md)). Alleen de goedkeurders van het antwoord kunnen het goedkeuren, valideren, een revisie vragen of annuleren.
 
 {% hint style="success" %}
-U kunt deze fase volledig uitschakelen bij het plannen van de vragenlijst, met de optie **Geen validatiestap**. Het antwoord wordt dan rechtstreeks gepubliceerd zodra de respondenten het hebben afgerond.
+U kunt deze fase volledig uitschakelen bij het plannen van de vragenlijst, met de optie **Deactiveer de goedkeuringsstap**. Het antwoord wordt dan rechtstreeks gepubliceerd zodra de respondenten het hebben afgerond.
 {% endhint %}
 
 ## Het beoordelingsscherm
@@ -103,4 +105,4 @@ De actie **Annuleer de vragenlijst** beëindigt de cyclus zonder publicatie. Met
 
 ## Vragenlijsten opvolgen die op validatie wachten
 
-Vragenlijsten die op uw goedkeuring wachten, staan gegroepeerd onder **Wachten op mijn validatie** in uw vragenlijsten en zijn gemarkeerd met de badge **Wachten op validatie** in de lijsten en de rapportageweergaven.
+Open **Mijn antwoorden op de vragenlijsten** en filter op de status **Wachten op validatie** om de vragenlijsten te vinden die op uw goedkeuring wachten. Dezelfde badge markeert deze antwoorden in de lijsten en de rapportageweergaven.

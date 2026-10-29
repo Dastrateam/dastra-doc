@@ -1,128 +1,143 @@
 ---
-description: Lernen Sie, Benachrichtigungen in Dastra zu verwalten.
+description: >-
+  Verwalten Sie Benachrichtigungen in Dastra: das Benachrichtigungscenter in der
+  Anwendung, E-Mail-Benachrichtigungen und die Berechtigung Benachrichtigung
+  der Rollen.
 ---
 
 # Benachrichtigungen
 
-### 🧭 Übersicht
+## Überblick
 
-In Dastra ermöglichen Ihnen Benachrichtigungen, über wichtige Aktivitäten im Zusammenhang mit Ihren Verarbeitungen, Audits, Aufgaben oder Rechteausübungsanfragen informiert zu bleiben.
+Benachrichtigungen in Dastra informieren Sie über wichtige Aktivitäten bei Ihren Verarbeitungstätigkeiten, Fragebögen, Aufgaben und Betroffenenanfragen.
 
 Es gibt **zwei Arten von Benachrichtigungen**:
 
-1. **Das Benachrichtigungszentrum** — direkt in die Anwendung integriert
-2. **E-Mail-Benachrichtigungen** — nach Ihren Präferenzen anpassbar
+1. **Das Benachrichtigungscenter**, direkt in die Anwendung integriert.
+2. **E-Mail-Benachrichtigungen**, die jeder Nutzer nach seinen Präferenzen anpasst.
 
-***
+## Benachrichtigungscenter (in der Anwendung)
 
-### 🔔 Benachrichtigungszentrum (in der Anwendung)
+Das Benachrichtigungscenter fasst die Hinweise zusammen, die Sie über das Benachrichtigungssymbol oben rechts auf dem Bildschirm sehen. Es hat zwei Tabs: **Benachrichtigungen** und **Zugewiesene Aufgaben**.
 
-Das Benachrichtigungszentrum fasst die Warnungen zusammen, die über das **Glocken**-Symbol oben rechts auf Ihrem Bildschirm sichtbar sind.
+* Es steht allen Nutzern des Mandanten zur Verfügung.
+* Es lässt sich nicht anpassen: Es gilt für den gesamten Mandanten.
+* Es enthält allgemeine Benachrichtigungen über die jüngste Aktivität: Erstellung, Änderung oder Löschung von Elementen.
+* Die Schaltfläche **Aktualisieren** lädt die Liste neu, **Mehr anzeigen** öffnet die Verlaufsseite, und der Schalter **Meine Tätigkeit** beschränkt die Liste auf Ihre eigenen Aktionen.
 
-* Für alle Nutzer des Mandanten zugänglich
-* Nicht anpassbar (gemeinsam für den gesamten Mandanten)
-* Enthält allgemeine Benachrichtigungen über die letzten Aktivitäten: Erstellung, Änderung oder Löschung von Elementen
-
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration2.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Beispiel: „Eine neue Datenverarbeitung wurde in Ihrem Mandanten erstellt."
-{% endhint %}
-
-***
-
-### ✉️ E-Mail-Benachrichtigungen (anpassbar)
-
-Jeder Nutzer kann die zu empfangenden E-Mail-Benachrichtigungen über sein Nutzerprofil auswählen.
-
-#### 🔧 So passen Sie Ihre Benachrichtigungen an
-
-1. Klicken Sie auf Ihren **Avatar** oben rechts in Dastra
-2. Wählen Sie **Benachrichtigungszentrum**
-3. Aktivieren oder deaktivieren Sie die Kategorien nach Ihren Bedürfnissen
-4. Speichern Sie Ihre Präferenzen
+<figure><img src="../../.gitbook/assets/settings-notifications-1.png" alt="Das Panel des Benachrichtigungscenters mit den Tabs Benachrichtigungen und Zugewiesene Aufgaben"><figcaption><p>Das Benachrichtigungscenter</p></figcaption></figure>
 
 {% hint style="info" %}
-E-Mail-Benachrichtigungen sind ideal, um über Aktionen benachrichtigt zu werden, die eine schnelle Reaktion erfordern (Audits, Anfragen, Datenschutzverletzungen usw.)
+Beispiel: „Die Verarbeitungstätigkeit Personalverwaltung wurde geändert“.
 {% endhint %}
 
-***
+## E-Mail-Benachrichtigungen
 
-**🔐 Voraussetzung: Die Berechtigung „Benachrichtigung" in der Rolle**
+Jeder Nutzer wählt in seinem Profil, welche Benachrichtigungen er per E-Mail erhält.
 
-Die Anpassung der E-Mail-Benachrichtigungen funktioniert nur, wenn die Rolle des Nutzers dies erlaubt.
+### So passen Sie Ihre Benachrichtigungen an
 
-In der Rollenkonfiguration (**Einstellungen → Rollen**) verfügt jedes Modul über ein Kontrollkästchen **Benachrichtigung**. Wenn dieses Kontrollkästchen nicht aktiviert ist, erhalten Nutzer mit dieser Rolle keine E-Mail-Benachrichtigungen für dieses Modul — unabhängig von ihren persönlichen Präferenzen.
+1. Klicken Sie oben rechts in Dastra auf Ihren **Avatar**.
+2. Wählen Sie **Benachrichtigungscenter**.
+3. Schalten Sie die Ereignisse nach Bedarf ein oder aus. Jede Änderung wird sofort gespeichert.
+
+<figure><img src="../../.gitbook/assets/settings-notifications-2.png" alt="Das Avatar-Menü mit dem Eintrag Benachrichtigungscenter"><figcaption><p>Der Eintrag „Benachrichtigungscenter“ im Avatar-Menü</p></figcaption></figure>
+
+Die Seite hat drei Blöcke: **Push-Benachrichtigungen** (Desktop-Benachrichtigungen, auch wenn Ihr Browser geschlossen ist), **Marketing** (Anmeldung zum Newsletter und kommerzielle Kommunikation) und **Benachrichtigungen zu Aktivitäten**, der die E-Mail-Ereignisse zusammenfasst. Der Schalter oben in diesem letzten Block schaltet alle Ereignisse auf einmal ein oder aus.
 
 {% hint style="info" %}
-Die Rolle öffnet oder schließt das Recht auf Benachrichtigung. Der Nutzer kann anschließend seine Präferenzen verfeinern — aber nur im Rahmen dessen, was seine Rolle erlaubt.
+E-Mail-Benachrichtigungen sind ideal, um auf Aktionen aufmerksam zu werden, die eine schnelle Antwort erfordern (Fragebögen, Anfragen, Datenschutzvorfälle usw.).
 {% endhint %}
 
-### 📚 Benachrichtigungskategorien
+### Voraussetzung: die Berechtigung Benachrichtigung in der Rolle
 
-Die E-Mail-Benachrichtigungen sind nach **Kategorien** organisiert.\
-Jede Kategorie enthält mehrere Unter-Ereignistypen, die individuell aktiviert werden können.
+Die Anpassung der E-Mail-Benachrichtigungen funktioniert nur, wenn die Rolle des Nutzers sie erlaubt.
 
-| Kategorie                         | Beispiel für Benachrichtigung                     | Anpassbar? |
-| --------------------------------- | ------------------------------------------------- | ---------- |
-| **Datenverarbeitungen**           | Eine Verarbeitung wurde geändert oder gelöscht    | ✅          |
-| **Rechteausübungsanfragen (DSR)** | Eine neue Anfrage wurde zugewiesen                | ✅          |
-| **Datenschutzverletzungen**       | Eine Verletzung wurde gemeldet oder abgeschlossen | ✅          |
-| **Aufgaben**                      | Sie wurden einer Aufgabe zugewiesen               | ✅          |
-| **Audits**                        | Eine Antwort wurde validiert/abgelehnt            | ✅          |
-| **Audit-Vorlagen**                | Eine Vorlage wurde aktualisiert                   | ✅          |
-| **Kommentare**                    | Jemand hat Sie erwähnt (@)                        | ✅          |
-| **Einwilligung / Cookies**        | Eine Änderung am Banner wurde vorgenommen         | ✅          |
-| **Berichte / Analysen**           | Ein neuer Bericht ist verfügbar                   | ✅          |
-| **Marketing / Push**              | Produktkommunikationen oder Dastra-Neuigkeiten    | ✅          |
+In der Konfiguration der Rolle (**Konfiguration der Organisation** > **Rollen und Berechtigungen**) hat jedes Modul ein Kontrollkästchen **Benachrichtigung**. Ist es nicht angekreuzt, erhalten Nutzer mit dieser Rolle für dieses Modul keine E-Mail-Benachrichtigung, unabhängig von ihren persönlichen Präferenzen. Ist es angekreuzt, erhalten sie etwa eine Stunde nach der letzten Aktivität eine gesammelte Benachrichtigung.
 
-***
+{% hint style="info" %}
+Die Rolle öffnet oder schließt das Recht, Benachrichtigungen zu erhalten. Der Nutzer kann seine Präferenzen dann verfeinern, jedoch nur im Rahmen dessen, was seine Rolle erlaubt.
+{% endhint %}
 
-### ⚠️ Automatische Benachrichtigungen
+### Benachrichtigungskategorien
 
-Bestimmte Benachrichtigungen gelten als **systemisch**: Sie werden automatisch gesendet, auch wenn Sie die entsprechende Kategorie deaktiviert haben.
+E-Mail-Benachrichtigungen sind nach **Kategorien** gegliedert, eine pro Objektart. Jede Kategorie enthält mehrere Ereignisse, die Sie einzeln einschalten können.
 
-Diese Benachrichtigungen werden als wesentlich für die Zusammenarbeit erachtet:
+| Kategorie                          | Angebotene Ereignisse                                                                                                                           |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Verarbeitungstätigkeit             | Erstellung, Änderung, Statusänderung, Veröffentlichung, Archivierung, Löschung, Beziehungen, Einladung, Überprüfung                              |
+| Anfrage                            | Erstellung, Änderung, Statusänderung, neue Nachricht, Zuweisung, Identitätsprüfung, Aussetzung, Anonymisierung                                  |
+| Datenschutzvorfall                 | Erstellung, Änderung, Statusänderung, Archivierung, Einladung                                                                                   |
+| Aufgabe                            | Erstellung, Änderung, Statusänderung, Erwähnung, Zuweisung, Archivierung, Löschung                                                              |
+| Kommentar                          | Neue Nachricht, neue Erwähnung                                                                                                                  |
+| Widget zur Einwilligung in Cookies | Erstellung eines Widgets                                                                                                                        |
+| Einreichung des Fragebogens        | Antwort abgelehnt, validiert oder abgeschlossen, Einladung, Anmerkungen, Aktionsplan erstellt, Antwort wartet auf Validierung                    |
+| Musterfragebogen                   | Erstellung, Änderung, Löschung                                                                                                                  |
+| Trust Center                       | Erstellung, Aktualisierung                                                                                                                      |
+| Analysenberichte                   | Abonnement des Monatsberichts                                                                                                                   |
+| Allgemeine Beziehungen             | Erstellung, Löschung einer Beziehung                                                                                                            |
+| Risikobewertung                    | Erstellung, Änderung, Statusänderung                                                                                                            |
+| Kontrollpunkt                      | Erstellung, Änderung, Überprüfung                                                                                                               |
+| Beitrag                            | Genehmigung, Ablehnung                                                                                                                          |
+| Stakeholder                        | Import, Erstellung, Änderung, Statusänderung, Löschung, Überprüfung                                                                             |
+| Datenkategorie                     | Import                                                                                                                                          |
+| Asset                              | Import, Erstellung, Änderung, Statusänderung, Löschung, Überprüfung                                                                             |
+| Betroffenenkategorie               | Import, Erstellung, Änderung, Statusänderung, Löschung                                                                                          |
+| Datenfeld                          | Import, Erstellung, Änderung, Statusänderung, Löschung                                                                                          |
+| Sicherheitsmaßnahme                | Import, Erstellung, Änderung, Statusänderung, Löschung                                                                                          |
+| Team                               | Nutzer hinzugefügt oder entfernt, Erstellung, Änderung, Löschung                                                                                |
+| Organisationseinheit               | Team hinzugefügt oder entfernt, Änderung, Löschung                                                                                              |
+| Vertrag                            | Erstellung, Änderung, Statusänderung, Löschung, Überprüfung, elektronische Unterschrift, Zuweisung, Ablauf                                      |
+| KI-System                          | Erstellung, Aktualisierung, Phasenwechsel, Löschung, Überprüfung, Einladung zur Vervollständigung                                               |
+| Compliance-Projekt                 | Erstellung, Archivierung, Statusänderung                                                                                                        |
+| Compliance-Audit                   | Erstellung, Archivierung, Abschluss                                                                                                             |
+| Testkampagne                       | Erstellung, Abschluss                                                                                                                           |
+| Individuelles Reporting            | Erstellung, Änderung, in den Papierkorb verschoben, Wiederherstellung, endgültige Löschung                                                      |
 
-* Einladung zu einem **Audit**
-* **Zuweisung** zu einer Aufgabe oder einer Anfrage
+Bei Verarbeitungstätigkeiten können Sie zum Beispiel wählen, ob Sie über eine Änderung, einen Statuswechsel oder das Entfernen einer Beziehung benachrichtigt werden:
+
+<figure><img src="../../.gitbook/assets/settings-notifications-3.png" alt="Die Ereignisse der Kategorie Verarbeitungstätigkeit, jeweils mit ihrem Schalter"><figcaption><p>Die Ereignisse der Kategorie Verarbeitungstätigkeit</p></figcaption></figure>
+
+Bei Fragebögen können Sie wählen, eine E-Mail zu erhalten, wenn eine Antwort abgelehnt oder validiert wird, bei einer Einladung zur Antwort oder wenn eine Anmerkung hinzugefügt wird:
+
+<figure><img src="../../.gitbook/assets/settings-notifications-4.png" alt="Die Ereignisse der Kategorie Einreichung des Fragebogens, jeweils mit ihrem Schalter"><figcaption><p>Die Ereignisse der Kategorie Einreichung des Fragebogens</p></figcaption></figure>
+
+## Automatische Benachrichtigungen
+
+Einige Benachrichtigungen sind **systembedingt**: Sie werden automatisch gesendet, auch wenn Sie die entsprechende Kategorie ausgeschaltet haben.
+
+Diese Benachrichtigungen gelten als wesentlich für die Zusammenarbeit:
+
+* Einladung zu einem **Fragebogen**
+* **Zuweisung** einer Aufgabe oder einer Anfrage
 * **Direkte Erwähnung** in einem Kommentar (@Ihr-Name)
 * Einladung zur Vervollständigung des **Verarbeitungsverzeichnisses**
-* Sofortiger Versand einer **geplanten Einladung** (falls Option aktiviert)
+* Sofortiger Versand einer **geplanten Einladung** (wenn die Option aktiviert ist)
 
-***
+## Bewährte Vorgehensweisen
 
-### 💬 Best Practices
+* Schalten Sie E-Mails für Aktivitäten ein, die ein Handeln von Ihnen erfordern (Fragebögen, Anfragen, Datenschutzvorfälle).
+* Prüfen Sie das Benachrichtigungscenter regelmäßig, um einen Überblick über den Mandanten zu behalten.
+* Prüfen Sie den Ordner „Benachrichtigungen“ in Ihrem Postfach, wenn Sie glauben, einige Nachrichten nicht mehr zu erhalten.
+* Für einen Datenschutzbeauftragten: Schalten Sie alle Kategorien ein.
+* Für einen Beitragenden: Priorisieren Sie Aufgaben, Kommentare und Fragebögen.
 
-Gut zu wissen
+## FAQ
 
-* Aktivieren Sie E-Mails für Aktivitäten, die eine Handlung Ihrerseits erfordern (Audits, DSR, Verletzungen).
-* Konsultieren Sie regelmäßig die **Glocke** für die Gesamtüberwachung des Mandanten.
-* Überprüfen Sie Ihren **Ordner „Benachrichtigungen"** in Ihrem E-Mail-Postfach, wenn Sie bestimmte Nachrichten nicht mehr zu erhalten glauben.
-* Für einen Datenschutzbeauftragten: Alle Kategorien aktivieren.
-* Für einen Mitarbeiter: Aufgaben, Kommentare und Audits bevorzugen.
+### Ich erhalte meine Benachrichtigungen nicht mehr. Was soll ich tun?
 
-***
-
-### ❓FAQ
-
-#### Ich erhalte meine Benachrichtigungen nicht mehr, was tun?
-
-Überprüfen Sie Ihre Präferenzen in Ihrem **Nutzerprofil → Benachrichtigungszentrum**.\
-Stellen Sie außerdem sicher, dass die E-Mails von Dastra nicht in den Ordner „Werbung" oder „Spam" umgeleitet werden.
+Prüfen Sie Ihre Präferenzen im **Benachrichtigungscenter** in Ihrem Avatar-Menü. Stellen Sie außerdem sicher, dass E-Mails von Dastra nicht in Ihren Ordner „Werbung“ oder „Spam“ umgeleitet werden.
 
 {% hint style="info" %}
-Achtung: Sie erhalten keine Benachrichtigung für Elemente, die Sie selbst betreffen.
+Standardmäßig erhalten Sie keine Benachrichtigungen über Aktionen, die Sie selbst ausführen.
 {% endhint %}
 
-#### Kann ich eine monatliche Zusammenfassung erhalten?
+### Kann ich eine monatliche Zusammenfassung erhalten?
 
-Sie können eine monatliche Zusammenfassung der Aktivitäten Ihres Mandanten erhalten. Klicken Sie auf die Benachrichtigung: **Präferenzen: Anmeldung zum monatlichen Bericht**
+Ja, Sie können eine monatliche Zusammenfassung der Aktivität Ihres Mandanten erhalten. Schalten Sie im **Benachrichtigungscenter** das Ereignis **Preferences : mensual report subscription** der Kategorie **Analysenberichte** ein.
 
-***
+## Siehe auch
 
-### 🔗 Siehe auch
-
-* [Ihr Nutzerprofil einrichten](../../getting-started/setup/profile.md)
-* [Rollen und Berechtigungen konfigurieren](roles.md)
-* [Ihre Audits verfolgen](../questionnaires/README.md)
+* [Ihr Nutzerprofil konfigurieren](../../getting-started/setup/profile.md)
+* [Rollen und Berechtigungen verwalten](roles.md)
+* [Ihre Fragebögen überwachen](../questionnaires/README.md)

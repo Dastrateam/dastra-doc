@@ -1,5 +1,7 @@
 ---
-description: Dastra vous donne la possibilité de personnaliser à l'infini vos formulaires
+description: >-
+  Ajoutez à vos formulaires les champs propres à votre activité grâce aux
+  champs personnalisés : types de champs, options, utilisation et API.
 ---
 
 # Champs personnalisés
@@ -8,108 +10,109 @@ description: Dastra vous donne la possibilité de personnaliser à l'infini vos 
 Comment utiliser les champs personnalisés dans Dastra
 {% endembed %}
 
-## Dans quel cas utiliser les champs personnalisés ?
+## Dans quels cas utiliser les champs personnalisés
 
-Il se peut que certaines informations propres à votre secteur ne soient pas présentes dans les champs natifs du registre des traitements, les exercices de droits, les tâches...etc...
-
-Dastra vous permettra de créer des champs de formulaire personnalisés que vous pouvez très facilement ajouter pour enrichir les données saisies.
+Certaines informations propres à votre secteur ne figurent pas dans les champs natifs du registre des traitements, des exercices de droits, des tâches, etc. Les champs personnalisés vous permettent de créer vos propres champs de formulaire pour enrichir les données saisies.
 
 Voici un exemple de configuration de champs pour l'acteur :
 
-<figure><img src="../../.gitbook/assets/custom-fields-editor-groups.png" alt=""><figcaption><p>Configuration des champs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-1.png" alt="Page Champs personnalisés de l'acteur avec un groupe de champs et ses champs"><figcaption><p>Configuration des champs d'un acteur</p></figcaption></figure>
 
 Et voici le résultat dans le formulaire :
 
-<figure><img src="../../.gitbook/assets/custom-fields-form-preview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-2.png" alt="Formulaire d'un acteur avec le groupe de champs personnalisés"><figcaption><p>Les champs personnalisés dans le formulaire de l'acteur</p></figcaption></figure>
 
 ## Fonctionnalités concernées
 
-{% hint style="success" %}
-Attention ! Toutes les fonctionnalités ne sont pas concernées par les champs personnalisés
-{% endhint %}
-
-Vous pouvez personnaliser les formulaires suivants :
+Les champs personnalisés ne sont pas disponibles dans tous les modules. Vous pouvez personnaliser les formulaires suivants :
 
 * [Fiches de traitement](../ropa/README.md)
-* [Exercice de droits](../requests/README.md)
+* [Demandes d'exercice de droits](../requests/README.md)
 * [Tâches](../tasks/create.md)
 * [Actifs](../ropa/activity/assets.md)
-* [Acteurs](../mapping/repositories/README.md)
-* [Mesures](../ropa/activity/security.md)
+* [Acteurs](../ropa/activity/stakeholders.md)
+* [Mesures de sécurité](../ropa/activity/security.md)
 * [Jeux de données](../ropa/activity/datasets.md)
 * Champs de données
-* [Violations](../../gdpr/concepts/breaches.md)
-* [Evaluations de risques](../risks/attach-to-processing.md)
+* [Violations de données](../incidents/README.md)
+* [Évaluations de risques](../risks/attach-to-processing.md)
 * [Systèmes d'IA](../ai-systems/README.md)
 * [Contrats](../contracts/README.md)
-* [Points de contrôles](../compliance/library/risks.md#association-des-controles)
+* [Points de contrôle](../risks/process/monitor.md)
 
-{% hint style="danger" %}
-#### Limitations du nombre de champs
-
-La quantité de champs personnalisés est limitée selon de plan que vous utilisez. Nous vous invitons à consulter l[a page des tarifs de l'application](https://www.dastra.eu/fr/pricing) pour plus d'informations à ce sujet
+{% hint style="warning" %}
+**Limite du nombre de champs.** Le nombre de champs personnalisés dépend de l'offre et de l'abonnement de votre organisation. Un indicateur de quota est affiché sur la page de configuration. Pour en savoir plus, consultez la [page des tarifs](https://www.dastra.eu/fr/pricing).
 {% endhint %}
 
 ## Types de champs disponibles
 
-Dastra vous propose plusieurs types de champs personnalisés possibles
+Dastra propose les types de champs suivants :
 
-* Texte simple
-* Texte long
-* Texte enrichi
-* Nombre entier
-* Nombre décimal
-* Date
-* Date et heure
-* Case à cocher (réponse multiple) (**non filtrable**)
-* Case à cocher (réponse unique)
-* Sélecteur simple
-* Sélecteur multiple (**non filtrable**)
-* Case à cocher (Oui/Non)
+| Type | Usage |
+| --- | --- |
+| Texte | Une ligne de texte |
+| Zone de texte | Un texte sur plusieurs lignes |
+| Texte formatté | Un texte avec mise en forme |
+| Nombre (entier) | Un nombre sans décimale |
+| Nombre (décimal) | Un nombre avec décimales |
+| Date | Une date |
+| Date et heure | Une date et une heure |
+| Case à cocher | Plusieurs réponses possibles parmi une liste de choix |
+| Radio | Une seule réponse possible parmi une liste de choix |
+| Sélecteur simple | Une valeur choisie dans une liste déroulante |
+| Sélecteur multiple | Plusieurs valeurs choisies dans une liste déroulante |
+| Booléen | Une réponse Oui ou Non |
 
 ## Utilisation des champs personnalisés
 
-Vous pouvez :
+Une fois créés, les champs personnalisés s'utilisent comme les champs natifs :
 
-* Afficher et modifier les données des champs personnalisés dans les formulaires de chaque module
-* Les champs personnalisés peuvent s'afficher dans tous les tableaux de visualisation de l'application. Pour les afficher, cliquer sur le bouton de paramétrage des colonnes du tableau.
-* Les champs personnalisés sont **présents dans tous les exports Excel** de données. Pour plus d'informations sur les exports, [consultez la page sur les exports](../ropa/export-import.md)
-* Les champs personnalisés peuvent être présents dans les exports HTML, Word et PDF sur option (en cochant la case "Exportable dans les rapports" sur le champ en question)
-* **A l'exception des champs à réponses multiples**, les champs personnalisés sont tous filtrables via le système de [filtres avancés](filters.md).
-* Les champs personnalisés peuvent être mis à jour en masse dans les tableaux de données
-* Les champs personnalisés peuvent être importés via fichiers plats [en utilisant le système d'import](import.md)
-* Les champs personnalisés sont **accessibles et modifiables via toutes les API**. Pour cela, il faudra utiliser le nom de variable attribué à chaque colonne. [Consultez la rubrique concernant les modifications via API des champs personnalisés](custom-fields.md#manipuler-les-champs-personnalises-dans-les-api).
+* Ils s'affichent et se modifient dans les formulaires de chaque module.
+* Ils peuvent s'afficher dans tous les tableaux de l'application : cliquez sur le bouton **Personnaliser les colonnes** du tableau. Ils sont masqués par défaut.
+* Ils sont **présents dans tous les exports Excel** de données. Pour plus d'informations sur les exports, [consultez la page sur les exports](../ropa/export-import.md).
+* Ils sont présents dans les rapports PDF et Word lorsque le champ est coché **Inclus dans les rapports PDF ou Word ?** (coché par défaut).
+* Ils sont filtrables avec les [filtres avancés](filters.md). Les champs **Case à cocher** et **Sélecteur multiple** ne peuvent en revanche pas servir au tri d'une liste.
+* Ils peuvent être mis à jour en masse dans les tableaux de données.
+* Ils peuvent être importés depuis des fichiers plats avec le [système d'import](import.md).
+* Ils sont **accessibles et modifiables via toutes les API**, avec le nom de variable attribué au champ. Voir [Manipuler les champs personnalisés dans les API](custom-fields.md#manipuler-les-champs-personnalises-dans-les-api).
 
 ## Mise en place des champs personnalisés
 
-* Allez dans votre **Espace de travail**
-* Cliquez sur le menu à gauche **Réglages de l'espace de travail**
-* Cliquez sur le menu **Champs personnalisés**
-* Choisissez le module dans lequel vous voulez ajouter un champ personnalisé
-* Les champs doivent être créés dans des groupes. Ces groupes peuvent être positionnés d'une certaine façon dans le formulaire Cliquez sur "**Ajouter un groupe de champs**"
+1. Dans la barre latérale, cliquez sur **Réglages espace de travail**, puis sur **Champs personnalisés**.
+2. Choisissez dans la liste de gauche le module dans lequel ajouter un champ personnalisé.
+3. Les champs sont créés dans des groupes. Cliquez sur **Créer un groupe de champs**.
+4. Renseignez le **Libellé** du groupe et son **Emplacement dans le formulaire**. Pour certains modules, comme le traitement, vous pouvez choisir l'étape du formulaire où le groupe s'affiche.
 
-<figure><img src="../../.gitbook/assets/custom-fields-empty-state.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-3.png" alt="Fenêtre Créer un groupe de champs avec le libellé et l'emplacement dans le formulaire"><figcaption><p>La création d'un groupe de champs</p></figcaption></figure>
 
-* **Renseignez le nom et l'emplacement** dans le formulaire que vous souhaitez
+5. Une fois le groupe créé, faites glisser un type de champ depuis la liste **Champs personnalisés** jusque dans le groupe. La fenêtre du champ s'ouvre.
+6. Renseignez les options du champ (voir ci-dessous), puis enregistrez.
 
-<figure><img src="../../.gitbook/assets/custom-fields-create-group-modal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-custom-fields-4.png" alt="Fenêtre de création d'un champ personnalisé avec ses options"><figcaption><p>Les options d'un champ personnalisé</p></figcaption></figure>
 
-Pour certains éléments, il est possible de définir l'emplacement que vous souhaitez dans le formulaire !
+Vous pouvez réordonner les champs, ou les déplacer d'un groupe à l'autre, par glisser-déposer. Un groupe ne peut être supprimé que s'il ne contient plus de champ. Un champ supprimé va dans la corbeille : activez **Voir la corbeille** pour le restaurer.
 
-* Une fois le groupe créé, vous pouvez désormais **effectuer un glisser-déposer des types de champs** que vous souhaitez mettre en place !
+### Options d'un champ
 
-<figure><img src="../../.gitbook/assets/custom-fields-create-field-modal.png" alt=""><figcaption></figcaption></figure>
+| Option | Description |
+| --- | --- |
+| **Libellé** | Le nom du champ affiché dans les formulaires. Obligatoire. |
+| **Nom de la variable (slug)** | L'identifiant du champ pour les API et les imports. Il est proposé à partir du libellé et ne peut plus être modifié une fois le champ créé. |
+| **Texte d'infobulle** | Une aide affichée à côté du champ. |
+| **Champ obligatoire** | Rend la saisie obligatoire. |
+| **Inclus dans les rapports PDF ou Word ?** | Ajoute le champ aux rapports générés. Coché par défaut. |
+| **Règle de validation** | Pour les champs de type Texte : vérifie que la saisie respecte une syntaxe (e-mail, URL) ou une **expression régulière personnalisée (format Javascript)**. |
+| **Taille minimum** et **Taille maximum** | Longueur de la saisie pour les champs texte. |
+| **Valeur minimum** et **Valeur maximum** | Bornes pour les champs numériques. |
+| **Choix de réponse** | Pour les types à liste de choix : une ligne par choix, avec une couleur. **Ajouter un choix possible** ajoute une ligne ; coller un texte qui contient une option par ligne crée une réponse par ligne. |
 
-Renseignez toutes les informations !
-
-* Cliquez sur enregistrer et ça y est ! Votre premier champ de donnée personnelle est en place !
-* Vous pouvez effectuer des glisser déposer pour réordonner les champs comme bon vous semble.
+Le nom et le nom de variable d'un champ doivent être uniques dans un même module.
 
 ## Manipuler les champs personnalisés dans les API
 
-Dastra vous permet de récupérer, modifier et créer via l'[API Rest](../../api/configuration.md) toutes les valeurs des entités comprenant des champs personnalisés.
+Dastra permet de récupérer, modifier et créer, via l'[API REST](../../api/configuration.md), toutes les valeurs des entités qui comprennent des champs personnalisés.
 
-Une propriété "**customFields**" sera disponible dans toutes les entités que vous récupérez en get dans Dastra.c
+Une propriété `customFields` est présente dans toutes les entités que vous récupérez avec un `GET` :
 
 ```json
  {
@@ -126,16 +129,10 @@ Une propriété "**customFields**" sera disponible dans toutes les entités que 
  }
 ```
 
-Pour modifier cette propriété, il suffit de poster (POST) ou modifier (PUT) l'élément en mettant à jour les éléments de la collection
-
-Pour collecter le nom des variables personnalisés, vous devez vous rendre dans la page de configuration des champs personnalisés.
+Pour modifier cette propriété, envoyez l'élément avec `POST` ou `PUT` en mettant à jour les éléments de la collection. Les noms de variables à utiliser figurent dans la page de configuration des champs personnalisés.
 
 {% hint style="info" %}
-Attention, tous **les champs personnalisés seront validés par le serveur**. Si une colonen n'est pas présente dans la configuration, elle sera automatiquement supprimée.
+Tous **les champs personnalisés sont validés par le serveur**. Si une colonne n'est pas présente dans la configuration, elle est automatiquement supprimée.
 
-Si un champ n'est pas valide (par exemple, si il n'est pas renseigné alors qu'il est marqué comme étant obligatoire), cela lèvera une exception avec le code 400
+Si un champ n'est pas valide (par exemple, s'il n'est pas renseigné alors qu'il est marqué comme obligatoire), l'API renvoie une erreur avec le code 400.
 {% endhint %}
-
-## Limitations
-
-Vous ne pouvez **pas filtrer les champs personnalisés du type multiple (case à cocher (Multiple) et sélecteur (Multiple)**.

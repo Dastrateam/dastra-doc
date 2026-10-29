@@ -1,49 +1,51 @@
 ---
-description: Erfahren Sie, wie Sie eine Transferfolgenabschätzung (TIA) mit Dastra durchführen.
+description: >-
+  Erfahren Sie, wie Sie mit Dastra eine Transferfolgenabschätzung (TIA)
+  durchführen.
 ---
 
 # Transferfolgenabschätzung (TIA)
 
-## Was ist eine TIA?
+## Die TIA im Überblick
 
-Eine Transferfolgenabschätzung (Transfer Impact Assessment oder TIA) ist eine Analyse, die bei der Übermittlung personenbezogener Daten außerhalb der EU/des EWR erforderlich ist, um zu bewerten, ob das Zielland ein im Wesentlichen gleichwertiges Schutzniveau bietet. Sie wird in der Regel in Verbindung mit der Umsetzung eines Übermittlungsmechanismus wie den Standardvertragsklauseln (SVK) durchgeführt.
+Eine Transferfolgenabschätzung (Transfer Impact Assessment, TIA) ist eine Analyse, die bei der Übermittlung personenbezogener Daten außerhalb der EU/des EWR erforderlich ist, um zu beurteilen, ob das Bestimmungsland ein im Wesentlichen gleichwertiges Datenschutzniveau bietet. Sie wird in der Regel zusammen mit der Einführung eines Übermittlungsinstruments wie den Standardvertragsklauseln (SCC) durchgeführt.
 
-Die TIA wird vom Europäischen Datenschutzausschuss (EDSA) empfohlen und ist in der Praxis bei der Verwendung von SVK für internationale Datenübermittlungen erforderlich.
+TIA werden vom Europäischen Datenschutzausschuss (EDSA) empfohlen und sind in der Praxis erforderlich, wenn für internationale Übermittlungen auf SCC zurückgegriffen wird.
 
-## Die TIA-Vorlagen in Dastra
+## TIA-Vorlagen in Dastra
 
-Dastra bietet TIA-Vorlagen in der Fragebogenbibliothek an, darunter:
+Dastra stellt in der Fragebogenbibliothek TIA-Vorlagen bereit, darunter:
 
 * **Transfer Impact Assessment - TIA (outside EU/EEA)**: die Standard-TIA-Vorlage von Dastra (45 Fragen)
 * **Data Transfer Impact Assessment (DTIA)**: eine umfassendere Vorlage (96 Fragen)
 
-Um darauf zuzugreifen, gehen Sie zur Registerkarte "Fragebogenvorlagen", klicken Sie auf **"Vorlage erstellen"** → **"Automatisierte Fragebögen"** und suchen Sie nach "TIA".
+Um sie zu öffnen, gehen Sie zum Tab **Vorlagen**, klicken Sie auf **Vorlage erstellen** und dann auf **Basierend auf einer Vorlage** und suchen Sie nach „TIA“.
 
-## Struktur eines TIA-Fragebogens
+## Aufbau eines TIA-Fragebogens
 
 Ein TIA-Fragebogen ist in der Regel in vier Schritte gegliedert:
 
-1. **Die Übermittlung verstehen** — die Übermittlung beschreiben: Exporteur, Importeur, Art und Zweck der Übermittlung
-2. **Das verwendete Übermittlungsinstrument identifizieren** — den verwendeten rechtlichen Mechanismus identifizieren (SVK, BCR, Angemessenheitsbeschluss usw.)
-3. **Die Gesetzgebung und Praktiken des Ziellandes bewerten** — den rechtlichen Rahmen des Ziellandes bewerten: Datenschutzgesetzgebung, Rechte der Personen, Rechtsbehelfe, Gesetze zum Datenzugriff, wesentliche Garantien
-4. **Ergänzende Maßnahmen umsetzen** — wenn die Bewertung Lücken aufzeigt, ergänzende technische, vertragliche oder organisatorische Maßnahmen identifizieren
+1. **Die Übermittlung verstehen**: Beschreiben Sie die Übermittlung: Datenexporteur, Datenimporteur, Art und Zweck der Übermittlung
+2. **Das verwendete Übermittlungsinstrument bestimmen**: Bestimmen Sie den verwendeten rechtlichen Mechanismus (SCC, verbindliche interne Datenschutzvorschriften, Angemessenheitsbeschluss usw.)
+3. **Die Rechtsvorschriften und Praktiken des Bestimmungslandes bewerten**: Beurteilen Sie den Rechtsrahmen des Bestimmungslandes, einschließlich der Datenschutzgesetze, der Rechte der betroffenen Personen, der Rechtsbehelfe und Sanktionen, der Gesetze, die den Zugriff auf Daten erlauben, und der wesentlichen Garantien
+4. **Ergänzende Maßnahmen umsetzen**: Wenn die Bewertung Lücken aufzeigt, bestimmen Sie zusätzliche technische, vertragliche oder organisatorische Maßnahmen, um sie zu schließen
 
-## Eine TIA direkt von einer Verarbeitung aus erstellen
+## Eine TIA direkt aus einer Verarbeitungstätigkeit erstellen
 
-Bei der Bearbeitung einer Verarbeitung in Dastra können Sie eine TIA direkt von einem als Auftragsverarbeiter identifizierten Empfänger aus erstellen:
+Wenn Sie eine Verarbeitungstätigkeit in Dastra bearbeiten, können Sie eine TIA direkt aus einem Empfänger erstellen, der als Auftragsverarbeiter gekennzeichnet ist:
 
-1. Gehen Sie zur Registerkarte **Empfänger** der Verarbeitung
-2. Öffnen Sie einen Empfänger und scrollen Sie zum Abschnitt Übermittlung
-3. Klicken Sie auf **"Transferfolgenabschätzung (TIA) erstellen"**
+1. Öffnen Sie den Tab **Empfänger** der Verarbeitungstätigkeit
+2. Öffnen Sie einen Empfänger und scrollen Sie zum Abschnitt zur Übermittlung
+3. Klicken Sie auf **Erstellen Sie einen Fragebogen zur Auswirkung von Datenübertragungen (TIA)**
 
-Die TIA-Antwort wird automatisch mit der Übermittlung und dem betreffenden Empfänger verknüpft.
+Dadurch wird die TIA-Antwort automatisch mit der betreffenden Übermittlung und dem betreffenden Empfänger verknüpft.
 
 ## Weiterführende Informationen
 
 {% content-ref url="dpia.md" %}
-[pia-aipd.md](dpia.md)
+[DSFA / PIA](dpia.md)
 {% endcontent-ref %}
 
 {% content-ref url="lia.md" %}
-[lia.md](lia.md)
+[Interessenabwägung (LIA)](lia.md)
 {% endcontent-ref %}

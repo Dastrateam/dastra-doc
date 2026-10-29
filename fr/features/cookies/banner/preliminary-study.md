@@ -1,15 +1,15 @@
 ---
 description: >-
-  Avant de vous lancer dans l'implémentation technique du widget Dastra, nous
-  vous recommandons de passer par une étape d'audit des cookies de vos sites
-  web.
+  Avant de vous lancer dans l'implémentation technique de la bannière Dastra,
+  nous vous recommandons de passer par une étape d'audit des cookies de vos
+  sites web.
 ---
 
 # Etude préliminaire
 
 ## 1. Rapprochez vous de votre webmaster ou agence web
 
-Avant d'implémenter le widget Dastra, nous vous recommandons de vous rapprocher de la personne responsable de l'intégration des tags et autres marqueurs de votre site web, et de l'inviter dans votre espace de travail. Cette personne pourra ainsi récupérer les éléments de code générés par Dastra qui seront nécessaires à la réalisation des diverses actions techniques (mise en place de la bannière, du blocage effectif des cookies en cas de non-consentement...).
+Avant d'implémenter la bannière Dastra, nous vous recommandons de vous rapprocher de la personne responsable de l'intégration des tags et autres marqueurs de votre site web, et de l'inviter dans votre espace de travail. Cette personne pourra ainsi récupérer les éléments de code générés par Dastra qui seront nécessaires à la réalisation des diverses actions techniques (mise en place de la bannière, du blocage effectif des cookies en cas de non-consentement...).
 
 ## 2. Effectuez un mini-audit des cookies de votre site ou web-app
 
@@ -17,12 +17,11 @@ Pour effectuer cet audit, vous pouvez vous appuyer sur le template de fichier Ex
 
 {% file src="../../../.gitbook/assets/template-audit.xlsx" %}
 
-Ce mini audit facilitera grandement le travail d'intégration de l'équipe technique.
+Ce mini-audit prépare le travail d'intégration de l'équipe technique.
 
 ### Listez les services/cookies associés à votre nom de domaine
 
-Pour vous aider, vous pouvez utiliser notre outil de scan de cookies clé en main : [https://app.dastra.eu/workspace/19/cookie-widget/integration/scan](https://app.dastra.eu/workspace/19/cookie-widget/integration/scan)\
-Celui-ci vous permettra d'identifier à la volée les services installés sur votre site à partir de notre base de données de cookies.
+Pour vous aider, vous pouvez utiliser l'outil de scan de cookies de Dastra : dans le menu, cliquez sur **Consentement cookies** > **Bannières** > **Créer une bannière**, puis choisissez **Analyse du site web**. Il identifie les services installés sur votre site à partir de la base de cookies de Dastra.
 
 {% content-ref url="scan.md" %}
 [scannez-les-cookies-deposes-sur-votre-site-web.md](scan.md)

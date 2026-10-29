@@ -41,7 +41,7 @@ Daarmee wordt het TIA-antwoord automatisch gekoppeld aan de betreffende doorgift
 ## Verder lezen
 
 {% content-ref url="dpia.md" %}
-[Effectbeoordeling (PIA / DPIA)](dpia.md)
+[PIA / DPIA](dpia.md)
 {% endcontent-ref %}
 
 {% content-ref url="lia.md" %}

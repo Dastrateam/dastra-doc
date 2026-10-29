@@ -1,59 +1,105 @@
 ---
-description: Lernen Sie, Dastra über die erweiterten Funktionen zu konfigurieren.
+description: >-
+  Konfigurieren Sie Dastra mit den erweiterten Funktionen: Single Sign-on,
+  Rollen, API-Schlüssel, Workflows, SMTP, Webhooks und Integrationen.
 ---
 
 # Erweiterte Konfiguration
 
-Lernen Sie, SSO einzurichten:
+Dieser Bereich behandelt die Einstellungen, mit denen der Inhaber der Organisation und die Administratoren der Mandanten Dastra an ihren Kontext anpassen.
+
+Single Sign-on (SSO) einrichten:
 
 {% content-ref url="sso/README.md" %}
-[single-sign-on-sso](sso/README.md)
+[Single Sign On (SSO)](sso/README.md)
 {% endcontent-ref %}
 
-Lernen Sie, die Referenzverzeichnisse zu verwalten:
+Nutzer mit SCIM aus Ihrem Verzeichnis bereitstellen:
 
-{% content-ref url="../mapping/repositories/README.md" %}
-[referentials](../mapping/repositories/README.md)
+{% content-ref url="scim.md" %}
+[SCIM](scim.md)
 {% endcontent-ref %}
 
-Erfahren Sie mehr über Rollen und Berechtigungen:&#x20;
+Audit-Logs an Ihr SIEM senden:
+
+{% content-ref url="siem.md" %}
+[SIEM-Streaming](siem.md)
+{% endcontent-ref %}
+
+Den Zugriff auf Dastra auf bestimmte IP-Adressen beschränken:
+
+{% content-ref url="ip-filtering.md" %}
+[IP-Filterung](ip-filtering.md)
+{% endcontent-ref %}
+
+Rollen und Berechtigungen verwalten:
 
 {% content-ref url="roles.md" %}
-[roles-et-permissions.md](roles.md)
+[Rollen und Berechtigungen](roles.md)
 {% endcontent-ref %}
 
-Bei Bedarf konsultieren Sie den API-Bereich:
+API-Schlüssel erstellen und den MCP-Server verbinden:
+
+{% content-ref url="api-keys.md" %}
+[API-Schlüssel verwalten](api-keys.md)
+{% endcontent-ref %}
+
+Den Bereich zur API ansehen:
 
 {% content-ref url="../../api/authentication.md" %}
-[authentification.md](../../api/authentication.md)
+[Authentifizierung](../../api/authentication.md)
 {% endcontent-ref %}
 
-Lernen Sie, Benachrichtigungen in Dastra zu verwalten:
+Benachrichtigungen verwalten:
 
 {% content-ref url="notifications.md" %}
-[notifications.md](notifications.md)
+[Benachrichtigungen](notifications.md)
 {% endcontent-ref %}
 
-Lernen Sie, Workflows in Dastra einzurichten:
+Prozessschritte anpassen:
 
-{% content-ref url="workflows.md" %}
-[workflows.md](workflows.md)
+{% content-ref url="workflow-stages.md" %}
+[Prozessschritte](workflow-stages.md)
 {% endcontent-ref %}
 
-Lernen Sie, Integrationen einzurichten:
+Ihre Prozesse mit Workflow-Regeln automatisieren:
+
+{% content-ref url="workflow-rules.md" %}
+[Workflow-Regeln](workflow-rules.md)
+{% endcontent-ref %}
+
+Informationen per E-Mail erfassen:
+
+{% content-ref url="mailboxes.md" %}
+[E-Mail-Adressen für Datenerfassung](mailboxes.md)
+{% endcontent-ref %}
+
+Einen Cloud-Speicher verbinden:
 
 {% content-ref url="cloud-storage.md" %}
-[integrations-onedrive-google-drive.md](cloud-storage.md)
+[OneDrive/SharePoint- und Google-Drive-Integrationen](cloud-storage.md)
 {% endcontent-ref %}
 
-Lernen Sie, SMTP zu konfigurieren:
-
-{% content-ref url="smtp/README.md" %}
-[configuration-du-smtp](smtp/README.md)
-{% endcontent-ref %}
-
-Lernen Sie, Ihre Daten zu synchronisieren und Webhooks zu verwenden:
+Ihre Daten mit Webhooks synchronisieren:
 
 {% content-ref url="webhooks.md" %}
-[webhooks.md](webhooks.md)
+[Webhooks](webhooks.md)
+{% endcontent-ref %}
+
+SMTP konfigurieren:
+
+{% content-ref url="smtp/README.md" %}
+[SMTP-Konfiguration](smtp/README.md)
+{% endcontent-ref %}
+
+Nachrichtenvorlagen anpassen:
+
+{% content-ref url="message-templates.md" %}
+[Nachrichtenvorlagen](message-templates.md)
+{% endcontent-ref %}
+
+Die E-Mail-Domains Ihrer Organisation zulassen:
+
+{% content-ref url="email-domains.md" %}
+[E-Mail-Domains](email-domains.md)
 {% endcontent-ref %}

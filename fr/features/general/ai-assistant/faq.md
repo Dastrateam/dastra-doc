@@ -1,6 +1,12 @@
+---
+description: >-
+  Questions fréquentes sur l'assistant IA de Dastra : confidentialité,
+  fiabilité, configuration et AI Act.
+---
+
 # Foire aux questions
 
-### Confidentialité et données
+## Confidentialité et données
 
 **Mes données sont-elles utilisées pour entraîner les modèles d'IA ?**
 
@@ -8,9 +14,9 @@ Non. Les modèles utilisés par Dastra sont pré-entraînés et hébergés sur M
 
 ***
 
-**Les données de mon workspace sont-elles transmises au modèle à mon insu ?**
+**Les données de mon espace de travail sont-elles transmises au modèle à mon insu ?**
 
-Non. Dastra ne transmet que les informations strictement nécessaires à la génération demandée : le texte que vous saisissez, et le cas échéant les champs de l'objet sur lequel vous travaillez (traitement, système d'IA, demande de droit, etc.). Les autres enregistrements de votre workspace, vos identifiants et les métadonnées de session ne sont jamais inclus. Seule exception : lorsque vous activez l'option **Utiliser des éléments existants** à la génération d'un traitement, les libellés des mesures de sécurité, actifs et champs de données existants sont transmis afin que l'assistant les réutilise. Pour le détail par fonctionnalité, consultez la page Comment ça marche ?.
+Non. Dastra ne transmet que les informations strictement nécessaires à la génération demandée : le texte que vous saisissez, et le cas échéant les champs de l'objet sur lequel vous travaillez (traitement, système d'IA, demande de droit, etc.). Les autres enregistrements de votre espace de travail, vos identifiants et les métadonnées de session ne sont jamais inclus. Seule exception : lorsque vous activez l'option **Utiliser des éléments existants** à la génération d'un traitement, les libellés des mesures de sécurité, actifs et champs de données existants sont transmis afin que l'assistant les réutilise. Pour le détail par fonctionnalité, consultez la page [Comment ça marche ?](how-it-works.md).
 
 ***
 
@@ -18,7 +24,7 @@ Non. Dastra ne transmet que les informations strictement nécessaires à la gén
 
 Pour les familles OpenAI, Mistral et Open source, les modèles sont hébergés sur l'infrastructure Microsoft Azure en France. Vos données ne transitent pas vers les serveurs propres d'OpenAI ou de Mistral. Dastra utilise exclusivement les services managés Azure.
 
-Si vous configurez un **Custom AI provider** avec votre propre clé API, l'hébergement dépend du fournisseur que vous choisissez.
+Si vous configurez un **fournisseur d'IA personnalisé** avec votre propre clé d'API, l'hébergement dépend du fournisseur que vous choisissez.
 
 ***
 
@@ -32,7 +38,7 @@ Les modèles Azure sont sans état (_stateless_) : les prompts et résultats ne 
 
 **Qui peut voir les appels effectués à l'assistant IA dans mon organisation ?**
 
-Les administrateurs de votre workspace ont accès aux **logs d'invocation IA** (90 jours d'historique) depuis **Paramètres de l'organisation > Assistant IA > Logs d'invocation IA**. Ces logs indiquent la date, le statut, le type d'opération, le modèle utilisé, la durée et l'utilisateur ayant déclenché la génération. Le contenu des prompts et des réponses n'y est pas affiché.
+Les propriétaires de l'organisation ont accès aux journaux d'utilisation de l'IA (90 jours d'historique) dans **Paramètres de l'organisation** > **Assistant IA**, carte **Utilisation de l'IA**, onglet **Logs (90 jours)**. Ils indiquent la date, le statut, le type d'opération, le nom du modèle, les crédits consommés, la durée et l'utilisateur ayant déclenché la génération. Le contenu des prompts et des réponses n'y est pas affiché.
 
 ***
 
@@ -42,7 +48,7 @@ Oui. L'utilisation de l'assistant IA s'inscrit dans le cadre contractuel existan
 
 ***
 
-### Qualité et fiabilité
+## Qualité et fiabilité
 
 **Peut-on faire confiance aux résultats générés par l'IA ?**
 
@@ -60,63 +66,65 @@ Sont actuellement en bêta : l'analyse de conformité des traitements et l'analy
 
 **L'IA peut-elle se tromper sur des questions juridiques ?**
 
-Oui. L'assistant IA n'est pas un juriste. Les contenus générés, analyses de conformité, notices, évaluations de risques, sont des aides à la réflexion basées sur les informations enregistrées dans votre workspace. Ils ne constituent pas un avis juridique et ne sauraient remplacer l'expertise d'un DPO ou d'un conseil spécialisé.
+Oui. L'assistant IA n'est pas un juriste. Les contenus générés, analyses de conformité, notices, évaluations de risques, sont des aides à la réflexion basées sur les informations enregistrées dans votre espace de travail. Ils ne constituent pas un avis juridique et ne sauraient remplacer l'expertise d'un DPO ou d'un conseil spécialisé.
 
 ***
 
-### Configuration et accès
+## Configuration et accès
 
 **Comment choisir le modèle d'IA utilisé ?**
 
-Rendez-vous dans **Paramètres de l'organisation > Assistant IA** pour sélectionner la famille de modèles : OpenAI (par défaut), Mistral, Open source ou un fournisseur personnalisé (Custom AI provider). Pour chaque famille, trois niveaux de modèle sont utilisés automatiquement selon la complexité de la tâche (Fast, Smart, Contexte étendu).
+Le propriétaire de l'organisation ouvre **Paramètres de l'organisation** > **Assistant IA** et sélectionne la **Famille de modèles d'IA** : OpenAI (par défaut), Mistral, Open source ou **Modèles AI personnalisés**. Pour chaque famille, trois niveaux de modèle sont utilisés automatiquement selon la complexité de la tâche (Rapide, Avancé, Contexte étendu).
 
 ***
 
 **Puis-je connecter mon propre fournisseur d'IA ?**
 
-Oui, via la fonctionnalité **Custom AI provider**. Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Google (Gemini), Mistral, Microsoft Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation > Assistant IA > Custom AI provider**.
+Oui, avec la famille **Modèles AI personnalisés** (Custom AI provider). Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation** > **Assistant IA**, bloc **Identifiants de fournisseur d'IA**.
 
 {% hint style="warning" %}
-Avec un Custom AI provider, les garanties Azure décrites dans cette documentation ne s'appliquent plus. Les données sont soumises à la politique de votre fournisseur.
+Avec un fournisseur d'IA personnalisé, les garanties Azure décrites dans cette documentation ne s'appliquent plus. Les données sont soumises à la politique de votre fournisseur.
 {% endhint %}
 
 ***
 
 **Puis-je désactiver l'assistant IA pour mon organisation ?**
 
-Oui. Contactez notre équipe support pour désactiver la fonctionnalité au niveau de votre organisation. La désactivation est globale : il n'est pas possible de désactiver uniquement certains prompts tout en gardant les autres actifs.
+L'application ne propose pas d'interrupteur pour désactiver l'assistant IA : sa disponibilité dépend de l'offre de votre organisation. Les fonctionnalités IA sont activées module par module (traitements et référentiels, conformité, risques, violations, questionnaires, contrats, exercices de droits, analyses). Dans un module que votre offre n'inclut pas, les boutons IA sont grisés. Pour modifier ce périmètre, contactez notre équipe.
+
+Un seul réglage est à la main des administrateurs : l'**Analyse IA automatique des preuves**, activée par défaut, que vous désactivez par espace de travail dans **Réglages espace de travail** > **Conformité**.
 
 ***
 
 **L'assistant IA est-il disponible sur tous les plans Dastra ?**
 
-Oui, l'assistant IA est disponible sur tous les plans de Dastra. Certaines fonctionnalités avancées peuvent être soumises à des conditions spécifiques. Contactez notre équipe pour toute question sur votre plan.
+Non. L'assistant IA, chacune de ses fonctionnalités par module, les agents IA et le serveur MCP font l'objet d'options de l'offre. Contactez notre équipe pour connaître le périmètre de votre offre.
 
 ***
 
 **Qu'est-ce que les crédits IA ?**
 
-Les crédits IA sont l'unité de mesure de la consommation de l'assistant IA au sein de votre organisation. Chaque appel à une fonctionnalité IA consomme un certain nombre de crédits, variable selon le modèle sollicité (Fast, Smart ou Contexte étendu) et la quantité de données traitées.
+Les crédits IA sont l'unité de mesure de la consommation de l'assistant IA au sein de votre organisation. Chaque appel à une fonctionnalité IA consomme un certain nombre de crédits, variable selon le modèle sollicité (Rapide, Avancé ou Contexte étendu) et la quantité de données traitées.
 
-Les administrateurs peuvent consulter la consommation en cours et le solde restant depuis **Paramètres de l'organisation > Assistant IA** ([accès direct](https://app.dastra.eu/general-settings/ai)).
+Les propriétaires de l'organisation peuvent consulter la consommation en cours et le solde restant dans **Paramètres de l'organisation** > **Assistant IA**, carte **Utilisation** ([accès direct](https://app.dastra.eu/general-settings/ai)).
 
 ***
 
 **Que se passe-t-il si mon organisation atteint son quota de crédits ?**
 
-Lorsque le quota est atteint, les fonctionnalités IA sont temporairement suspendues jusqu'au prochain renouvellement. Votre workspace et vos données restent entièrement accessibles ; seule la génération IA est désactivée.
+Lorsque le quota est atteint, les fonctionnalités IA sont temporairement suspendues jusqu'au prochain renouvellement. Votre espace de travail et vos données restent entièrement accessibles ; seule la génération IA est désactivée.
 
 Pour augmenter votre quota ou anticiper un renouvellement, contactez notre équipe.
 
 ***
 
-**Le décompte de crédits s'applique-t-il avec un Custom AI provider ?**
+**Le décompte de crédits s'applique-t-il avec un fournisseur d'IA personnalisé ?**
 
-Non. Lorsque votre organisation configure un **fournisseur IA personnalisé** (Custom AI provider), le système de crédits Dastra est désactivé — aucun crédit n'est décompté. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation.
+Non. Lorsque votre organisation configure un **fournisseur d'IA personnalisé**, le système de crédits Dastra est désactivé : aucun crédit n'est décompté. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation.
 
 ***
 
-### Règlement IA (AI Act)
+## Règlement IA (AI Act)
 
 **L'assistant IA de Dastra est-il concerné par l'AI Act ?**
 
@@ -128,12 +136,12 @@ Oui. L'assistant IA de Dastra entre dans la définition d'un système d'IA au se
 
 Pas au titre d'une obligation stricte, mais c'est fortement recommandé à titre de bonne pratique.
 
-L'article 50(1) du Règlement IA vise les systèmes d'IA **qui interagissent directement** avec des personnes physiques. Dans Dastra, ce n'est pas le cas : c'est un utilisateur humain (DPO, juriste) qui génère le texte, le relit, le valide et l'envoie lui-même à la personne concernée. Il n'y a pas d'interaction directe entre le système d'IA et le destinataire final — l'obligation stricte de l'art. 50(1) ne s'applique donc pas.
+L'article 50(1) du Règlement IA vise les systèmes d'IA **qui interagissent directement** avec des personnes physiques. Dans Dastra, ce n'est pas le cas : c'est un utilisateur humain (DPO, juriste) qui génère le texte, le relit, le valide et l'envoie lui-même à la personne concernée. Il n'y a pas d'interaction directe entre le système d'IA et le destinataire final, donc l'obligation stricte de l'art. 50(1) ne s'applique pas.
 
 {% hint style="info" %}
 Les guidelines draft de l'AI Office (publiées en consultation en 2025) confirment explicitement cette interprétation : _"l'interaction directe exclut les interactions humaines indirectes ou médiées \[...] **par exemple si des agents du service client utilisent des outils d'assistance IA pour communiquer avec des personnes physiques** ou si le résultat de l'IA n'est pas mis à la disposition de la personne par le système d'IA lui-même, mais par une autre personne qui diffuse le contenu."_ (Section 3.1.1). Le cas d'usage Dastra correspond exactement à ce schéma.
 
-À noter : les obligations de l'article 50 entrent en vigueur le **2 août 2026**. Les guidelines définitives pourront apporter des précisions complémentaires.
+À noter : les obligations de l'article 50 s'appliquent depuis le **2 août 2026**. La Commission européenne a adopté des lignes directrices définitives en juillet 2026, qui peuvent compléter cette analyse.
 {% endhint %}
 
 En revanche, informer la personne concernée qu'une réponse a été assistée par IA reste une **bonne pratique** au titre du principe de loyauté et de transparence du RGPD (art. 5(1)(a)). Dastra ne génère pas automatiquement cette mention : si votre organisation souhaite l'inclure, c'est à vous de l'ajouter avant l'envoi.
@@ -142,4 +150,4 @@ En revanche, informer la personne concernée qu'une réponse a été assistée p
 
 **Dastra est-il fournisseur ou déployeur au sens de l'AI Act ?**
 
-Les deux, selon le cas d'usage. Lorsque vous utilisez les modèles par défaut (OpenAI, Mistral, Open source via Azure), Dastra est **fournisseur** du système d'IA et votre organisation en est le **déployeur**. Lorsque vous connectez votre propre fournisseur via Custom AI provider, Dastra agit uniquement comme outil de conformité. Votre organisation assume alors le rôle de fournisseur et/ou déployeur vis-à-vis de son propre modèle.
+Les deux, selon le cas d'usage. Lorsque vous utilisez les modèles par défaut (OpenAI, Mistral, Open source via Azure), Dastra est **fournisseur** du système d'IA et votre organisation en est le **déployeur**. Lorsque vous connectez votre propre fournisseur d'IA personnalisé, Dastra agit uniquement comme outil de conformité. Votre organisation assume alors le rôle de fournisseur et/ou déployeur vis-à-vis de son propre modèle.

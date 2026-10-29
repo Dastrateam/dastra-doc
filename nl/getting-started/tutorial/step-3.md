@@ -56,7 +56,7 @@ $$
 Om risicobeheer verder uit te diepen kunt u in Dastra ook audits ontwerpen, campagnes uitvoeren en de resultaten verzamelen in een exporteerbaar auditrapport.
 
 {% content-ref url="../../features/questionnaires/README.md" %}
-[Audits en PIA's](../../features/questionnaires/README.md)
+[Vragenlijsten](../../features/questionnaires/README.md)
 {% endcontent-ref %}
 
 Uw risico's zijn geïdentificeerd en beoordeeld. Ga verder met stap 4, het prioriteren van taken:

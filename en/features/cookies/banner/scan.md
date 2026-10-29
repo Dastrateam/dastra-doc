@@ -4,44 +4,55 @@ description: Learn how to scan cookies placed on your website.
 
 # Cookies scanning
 
-DASTRA allows you to scan the cookies placed on your website thanks to its **cookie scanning** functionality, directly integrated into its "Cookie consent widget" module.
+Dastra scans the cookies placed on your website with the **cookie scanning** feature of the **Cookie consent** module. The scan is the starting point for creating your banner.
 
-## Access the "scan cookies" function Dastra
+## Access the scan feature
 
-You must first log into your Dastra workspace. To learn how to do this, go to the following page:
+Sign in to your Dastra workspace. To learn how to do this, go to the following page:
 
-{% content-ref url="/broken/pages/-LvaGKB4EL4Jf4xLoJUG" %}
-[Broken link](/broken/pages/-LvaGKB4EL4Jf4xLoJUG)
+{% content-ref url="../../../getting-started/tutorial/README.md" %}
+[README.md](../../../getting-started/tutorial/README.md)
 {% endcontent-ref %}
 
-Then, you must go to the "Consent to cookies" module, and click on the "New widget" button.
+1. In the menu, click **Cookie consent**. The list of banners appears.
+2. Click **Create a banner**.
 
-<figure><img src="../../../.gitbook/assets/settings-sso-openid-card-status.png" alt=""><figcaption><p>Icon of the "Cookies" module</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookies-scan-1.png" alt="The Cookie consent menu with its Banners, Reporting and Cookie consents sub-menus"><figcaption><p>The "Cookie consent" module in the menu</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-20-174103.png" alt=""><figcaption><p>Click on the "New widget" button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookies-scan-2.png" alt="The list of banners with the Create a banner button"><figcaption><p>The "Create a banner" button</p></figcaption></figure>
 
-A new screen appears. You are in the "Cookie Scan" section.
+Dastra asks **How would you like to create your banner?** Two choices are available:
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-20-174229.png" alt=""><figcaption></figcaption></figure>
+* **Website scanning**: Dastra analyzes the cookies of your website and suggests a banner with the services it detected;
+* **Manual configuration**: you create the banner from scratch and declare the URLs, services and cookies yourself.
+
+<figure><img src="../../../.gitbook/assets/cookies-scan-3.png" alt="The choice of how to create the banner"><figcaption><p>The choice between "Website scanning" and "Manual configuration"</p></figcaption></figure>
+
+Choose **Website scanning** to continue on this page.
 
 ## Scan the cookies placed on your website
 
-Once in the "Scan cookies" section, simply enter the domain name of your website in the space reserved, and click on "Submit".
+1. Enter the address of your website in the **Enter your domain name below** field, for example `https://www.example.com`. If you omit `https://`, Dastra adds it.
+2. Click **Submit**.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-20-174330.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookies-scan-4.png" alt="The field to enter the domain name to scan"><figcaption><p>Entering the address of the website to scan</p></figcaption></figure>
 
 {% hint style="info" %}
-Your domain name must include the entire prefix "https: // www." to be taken into account by our engine. Websites without SSL are not eligible to the scan feature.
+The scan must be able to open your website. If an authentication or a firewall blocks access, Dastra tells you: use **Manual configuration** instead.
 {% endhint %}
 
-Wait a few seconds, and that's it, the cookies placed on your website are identified!
+The scan crawls up to 20 pages of your website to collect the most reliable cookie analysis. A progress bar appears during the analysis.
 
-![Scanning is in progress](<../../../.gitbook/assets/settings-org-units-create-department-button.png>)
+<figure><img src="../../../.gitbook/assets/cookies-scan-5.png" alt="The progress bar during the scan"><figcaption><p>Scanning is in progress</p></figcaption></figure>
 
-Once the cookies placed on your website are scanned, you can proceed to their classification.
+When the scan ends, the results appear: the services recognized in the Dastra cookie database, the cookies found and their breakdown by category. Click **Redo scan** to run the analysis again, or **Create the banner** to create the banner from these results.
+
+<figure><img src="../../../.gitbook/assets/cookies-scan-6.png" alt="The scan results with the Services, Found cookies and Cookies breakdown tabs"><figcaption><p>The scan results</p></figcaption></figure>
+
+Once the cookies of your website are scanned, you can classify them.
 
 {% content-ref url="classify.md" %}
-[classifiez-les-cookies-par-categories-de-consentement.md](classify.md)
+[classify.md](classify.md)
 {% endcontent-ref %}
 
 ***
@@ -106,11 +117,11 @@ Unclassified cookies are never displayed in the public banner. Link every cookie
 
 By default, a cookie scanner browses your site without giving consent. Cookies that are only placed after opt-in (analytics, marketing, etc.) are never triggered and therefore cannot be detected.
 
-**Exception: if the Dastra SDK is already integrated on your site**, the scanner is able to bypass the consent banner and collect all cookies actually placed — including those from opt-in services. In that case, the scan produces a complete result without any manual intervention.
+**Exception: if the Dastra SDK is already integrated on your site**, the scanner is able to bypass the consent banner and collect all cookies actually placed: including those from opt-in services. In that case, the scan produces a complete result without any manual intervention.
 
 If the Dastra SDK is not yet in place on the scanned site, opt-in services will need to be **added manually** via the service library.
 
-### Manually added services — excess cookies
+### Manually added services: excess cookies
 
 When you add a service from the Dastra library (e.g. Google Analytics, Meta Pixel), Dastra imports the full list of cookies that service *can* place across all its possible configurations. Your implementation likely only uses a subset of those.
 

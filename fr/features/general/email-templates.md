@@ -1,81 +1,76 @@
 ---
 description: >-
-  Apprenez à utiliser les modèles de mail et générez des e-mail au contenu
-  dynamique pour communiquer avec vos clients ou collaborateurs
+  Apprenez à écrire des modèles de messages avec des champs dynamiques, des
+  conditions et des boucles pour communiquer avec vos clients ou collaborateurs.
 ---
 
-# Modèles email
+# Modèles e-mail
 
 ## Généralités
 
-Les modèles de mail sont une fonctionnalité présente dans les exercices de droit, les workflows personnalisés ainsi que les audits.
+Les modèles de messages sont disponibles dans les demandes d'exercice de droits, les tâches, les invitations aux questionnaires, les invitations à compléter un traitement ou une violation, et les règles de workflow qui envoient un message. Une fois enregistrés, ils permettent de communiquer rapidement avec les parties prenantes. Les données de l'objet concerné peuvent être insérées dans le texte, avec des conditions et des boucles pour récupérer plus d'informations.
 
-Une fois enregistré, ils sont un moyen rapide pour communiquer avec les parties prenantes. L'ensemble de données d'un objet peut y être incorporé et il est même possible de mettre en place des conditions et des boucles pour récupérer plus d'informations.
+Cette page explique comment écrire un modèle. Pour les types de modèles, le partage, l'import et l'export, consultez la page [Modèles de messages](../settings/message-templates.md).
 
 ## Utilisation
 
-Pour sélectionner ou créer un modèle, cliquez sur "Sélectionner ou créer un modèle "
+Pour utiliser un modèle, cliquez sur **Sélectionner un modèle** à côté de la zone de rédaction du message.
 
-<figure><img src="../../.gitbook/assets/dsr-communication-message-template-button.png" alt=""><figcaption><p>Sélection du modèle dans un exercice de droit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-email-templates-1.png" alt="Zone de rédaction d'un message de demande d'exercice de droits avec le bouton Sélectionner un modèle"><figcaption><p>Le bouton Sélectionner un modèle dans une demande d'exercice de droits</p></figcaption></figure>
 
-Vous pouvez ensuite chercher un modèle existant dans la liste ou la fonction rechercher, ou regarder les modèles disponibles dans les espaces de travail auquel vous avec accès ou encore les modèles créés par Dastra).
+Le panneau **Sélection du modèle** s'ouvre. Recherchez un modèle dans la liste, parcourez les modèles **Partagé** ou **Privé** de chaque type, ou choisissez un autre espace de travail auquel vous avez accès. Cliquez sur **Sélectionner** en face du modèle voulu.
 
-Si aucun modèle ne vous convient, cliquez sur "Créer modèle"
+<figure><img src="../../.gitbook/assets/general-email-templates-2.png" alt="Panneau Sélection du modèle avec la recherche, les onglets par type et le bouton Créer modèle"><figcaption><p>Le panneau de sélection d'un modèle</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/dsr-message-template-selection.png" alt=""><figcaption><p>Sélection ou création d'un modèle</p></figcaption></figure>
+Si aucun modèle ne convient, cliquez sur **Créer modèle**. La fenêtre de création comprend :
 
-L'interface de création de modèle comprend 4 éléments
+* le **Nom** du modèle, qui permet de le retrouver ;
+* le **Corps du modèle**, la zone de saisie ;
+* l'option de partage avec tous les utilisateurs de l'espace de travail ;
+* l'onglet **Aperçu**, qui affiche le rendu du message en temps réel ;
+* l'onglet **Input Data**, qui affiche les données de l'objet concerné par le modèle.
 
-* Le nom (permettra de retrouver le modèle plus tard)
-* La zone de saisie (Corps du modèle, encadrée en vert)
-* Un onglet Aperçu : permet d'afficher le rendu du mail en temps réel
-* Un onglet Input Data : vous permet de voir les données de l'objet concerné par le modèle
+Les onglets **Aperçu** et **Input Data** n'apparaissent que si vous créez le modèle depuis l'endroit où vous rédigez le message, et pas depuis les réglages.
 
-<figure><img src="../../.gitbook/assets/dsr-message-template-create-form.png" alt=""><figcaption><p>Interface de création de modèle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-email-templates-3.png" alt="Fenêtre de création d'un modèle avec le nom, le corps du modèle, l'aperçu et l'onglet Input Data"><figcaption><p>La fenêtre de création d'un modèle</p></figcaption></figure>
 
 ## Personnalisez le modèle
 
-Vous pouvez éditer le modèle et appliquer des styles, insérer des images ou des tableaux selon vos besoins. Vous verrez le résultat dans l'onglet aperçu. Si vous cliquez sur "Champs personnalisés" vous aurez accès à une liste de champs à insérer. La valeur du champ sera insérée au niveau du curseur de la souris. Bien entendu, vous pouvez formatter le texte à votre convenance.
+Dans le corps du modèle, vous pouvez appliquer des styles, insérer des images ou des tableaux. Le résultat s'affiche dans l'onglet **Aperçu**.
 
-<figure><img src="../../.gitbook/assets/select-field.gif" alt=""><figcaption><p>Utilisez les champs personnalisés</p></figcaption></figure>
+Pour insérer une donnée de l'objet, cliquez sur l'icône accolades de la barre d'outils (**Insérer des champs dynamiques**) et choisissez un champ dans la liste. La valeur du champ est insérée à l'emplacement du curseur.
 
-## Aller plus loin avec les champs personnalisés
+<figure><img src="../../.gitbook/assets/general-email-templates-4.png" alt="Liste des champs dynamiques ouverte depuis la barre d'outils de l'éditeur du modèle"><figcaption><p>L'insertion d'un champ dynamique</p></figcaption></figure>
 
-Comme vous pouvez le voir sur l'animation ci-dessus, les champs entourés par des doubles accolades sont des "variables". C'est à dire qu'elles vont être remplacées par les valeurs de l'objet correspondant (ici une demande d'exercice de droit).
+## Les champs dynamiques
 
-### Créez de nouveau champs personnalisés à partir de l'Input Data
+Les champs entourés de doubles accolades sont des variables : elles sont remplacées par les valeurs de l'objet correspondant (ici une demande d'exercice de droits).
 
-En cliquant sur l'onglet "Input Data", vous aurez accès à la liste des propriétés de l'objet lié. Dans l'exemple ci-dessous, je décide d'afficher le message lié la demande :
+### Utiliser un champ de l'Input Data
 
-* Je cherche le champ dans "Input Data"
-* Je saisie le nom du champ dans le Corps du message avec la syntaxe \{{message\}}
-* Je vérifie le résultat avec l'onglet "Aperçu"
+L'onglet **Input Data** liste les propriétés de l'objet lié. Pour afficher par exemple le message de la demande :
 
-<figure><img src="../../.gitbook/assets/select-field-messsage.gif" alt=""><figcaption><p>Création d'un champ personnalisé à partir d'Input Data</p></figcaption></figure>
+1. Repérez le champ dans l'onglet **Input Data**.
+2. Saisissez son nom dans le corps du modèle avec la syntaxe `{{message}}`.
+3. Vérifiez le résultat dans l'onglet **Aperçu**.
 
-Voilà ! Vous êtes maintenant capables de créer vos propres champs personnalisés. Mais ce n'est pas tout ! Vous pouvez également aller encore plus loin en créant les boucles, des conditions et en appliquant des format pour rendre les dates plus lisibles !
+Vous pouvez aller plus loin avec des boucles, des conditions et des formats de date.
 
 ### Les conditions
 
-Il est également possible de créer des blocs conditionnels qi ne s'afficheront que dans certaines conditions.
+Un bloc conditionnel ne s'affiche que dans certaines conditions. Il commence par une balise `if` et se termine par une balise `endif`. Par exemple :
 
-Pour cela, il faut utiliser le système de balise conditionnelle qui commence avec \{% if qqch == true %\} et finit avec \{% endif %\}
+```liquid
+{% if attachments != blank %}
+  Vous avez une pièce jointe
+{% endif %}
+```
 
-Ainsi, je peux écrire la condition suivante :
-
-> \{% if attachments != blank %\}
->
-> Vous avez une pièce jointe
->
-> \{% endif %\}
-
-Le bloc ne s'affichera que si une pièce jointe est présente dans la demande
+Le bloc ne s'affiche que si la demande contient une pièce jointe.
 
 ### Les boucles
 
-Les boucles fonctionnent de la même manière, sauf que cette fois on va générer une variable interne à la boucle.
-
-Ca fonctionne de la manière suivante :
+Les boucles fonctionnent de la même manière, avec une variable propre à la boucle :
 
 ```liquid
 {% for purpose in purposes %}
@@ -83,54 +78,49 @@ Ca fonctionne de la manière suivante :
 {% endfor %}
 ```
 
-Dans l'exemple ci dessus, je déclare vouloir faire une boucle sur la liste "purposes" et affecter la variable "_purpose_" à chaque élément que j'affiche directement.
+Dans cet exemple, la boucle parcourt la liste `purposes` et affiche chaque élément dans la variable `purpose`.
 
 ### Format des dates
 
-Vous verrez rapidement que les dates que vous récupérez dans Input Data ne sont pas présentables en l'état. Pas de problèmes, il est possible d'affecter un format à la date.
+Les dates de l'Input Data ne sont pas présentables en l'état. Appliquez-leur un format :
 
-> \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}}
->
-> Sera transformé en 15-03-2023 à 15:40
+```liquid
+{{ dateCreation | date: "%d-%m-%Y à %H:%M" }}
+```
 
-### Un exemple plus complexe
+Ce modèle donne par exemple 15-03-2023 à 15:40.
 
-Le corps de texte ci-dessous utilise tous les éléments ci-dessus
+### Un exemple plus complet
 
-> Bonjour,
->
-> Nous avons bien reçu votre demande d'exercice de droit le \{{dateCreation | date: "%d-%m-%Y à %H:%M"\}} concernant Monsieur ou Madame \{{givenName\}} \{{familyName\}}.
->
-> La demande porte sur les finalités suivantes :
->
-> \{% for purpose in purposes %\}
->
-> * \{{ purpose \}}
->
-> \{% endfor %\}
->
-> \{% if attachments != blank %\}
->
-> Nous avons bien reçu les pièces suivantes :
->
-> \{% for attachment in attachments %\}
->
-> * \{{ attachment.fileName \}}
->
-> \{% endfor %\}
->
-> \{% endif %\}
->
-> Je vous pris d'agréer mes plus sincères salutations et ne manquerais de vous tenir informé-e de la suite du traitement de votre demande.
->
-> Cordialement,
->
-> \{{operator.displayName\}}
+Le corps de texte ci-dessous utilise tous les éléments précédents :
 
-Pour la demande en cours de traitement, il sera transformé de la manière suivante :
+```liquid
+Bonjour,
 
-<figure><img src="../../.gitbook/assets/dsr-message-template-preview.png" alt=""><figcaption><p>Un exemple de modèle complet</p></figcaption></figure>
+Nous avons bien reçu votre demande d'exercice de droit le {{ dateCreation | date: "%d-%m-%Y à %H:%M" }} concernant {{ givenName }} {{ familyName }}.
 
-### Vous avez encore des besoins ?
+La demande porte sur les finalités suivantes :
+{% for purpose in purposes %}
+* {{ purpose }}
+{% endfor %}
 
-Vous pouvez consulter la documentation à l'adresse suivante : [https://shopify.github.io/liquid/](https://shopify.github.io/liquid/)
+{% if attachments != blank %}
+Nous avons bien reçu les pièces suivantes :
+{% for attachment in attachments %}
+* {{ attachment.fileName }}
+{% endfor %}
+{% endif %}
+
+Nous vous tiendrons informé de la suite du traitement de votre demande.
+
+Cordialement,
+{{ operator.displayName }}
+```
+
+Pour la demande en cours de traitement, le message est transformé de la manière suivante :
+
+<figure><img src="../../.gitbook/assets/general-email-templates-5.png" alt="Aperçu du message généré à partir du modèle complet pour une demande d'exercice de droits"><figcaption><p>Le rendu d'un modèle complet</p></figcaption></figure>
+
+## Aller plus loin
+
+Les modèles utilisent la syntaxe Liquid. Consultez la [documentation de Liquid](https://shopify.github.io/liquid/) pour la liste des balises et des filtres.

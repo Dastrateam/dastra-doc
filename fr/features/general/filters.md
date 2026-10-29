@@ -1,7 +1,8 @@
 ---
 description: >-
-  Apprenez comment affiner l'affichage de vos rapport dans les tableaux de
-  données de tous les modules grâce aux filtres avancés
+  Apprenez à affiner l'affichage des tableaux de données de tous les modules
+  avec les filtres avancés, les colonnes personnalisées et les vues
+  personnalisées.
 ---
 
 # Filtres avancés
@@ -12,70 +13,59 @@ description: >-
 
 Les filtres avancés permettent de filtrer vos données sur presque tous les champs de vos entités.
 
-* Allez dans un module de Dastra (par exemple, le module des exercices de droits
-* Cliquez sur le bouton "Filtres" en haut à droite de la table de données.
+1. Allez dans un module de Dastra, par exemple celui des demandes d'exercice de droits.
+2. Cliquez sur le bouton **Filtres** en haut à droite du tableau de données.
+3. Dans la fenêtre qui s'affiche, appliquez l'un des filtres standards les plus utilisés : le tableau se met à jour automatiquement.
 
-<figure><img src="../../.gitbook/assets/generalites-advanced-filters-basic.png" alt=""><figcaption></figcaption></figure>
-
-* Une petite fenêtre s'affiche, elle vous présente une liste de filtres standards les plus utilisés, en appliquant un de ces filtres, le tableau se met à jour automatiquement.
-
-<figure><img src="../../.gitbook/assets/advanced-filters-dsr-conditions.png" alt=""><figcaption></figcaption></figure>
-
-<p align="center"><sub><mark style="color:$info;">Combo de filtres avancés des demandes d'exercices de droits</mark></sub></p>
+<figure><img src="../../.gitbook/assets/general-filters-1.png" alt="Fenêtre Filtres d'une liste avec les filtres standards et le bouton Ajouter un filtre"><figcaption><p>Les filtres standards d'une liste de demandes d'exercice de droits</p></figcaption></figure>
 
 {% hint style="info" %}
-La combinaison de ces filtres est cumuliative.
+Les filtres se cumulent.
 
-_Par exemple : si je filtre sur un ou deux tags "complexe" et "en attente" + je sélectionne une unité organisationnelle "Contoso" : cela m'affichera toutes les lignes qui contiennent les 2 tags "complexe" et "en attente" **et** qui sont dans l'unité organisationnelle "Contoso"_
+_Par exemple : si vous filtrez sur les tags « complexe » et « en attente » et sur l'unité organisationnelle « Contoso », le tableau affiche les lignes qui portent les deux tags **et** qui sont dans l'unité organisationnelle « Contoso »._
 {% endhint %}
 
-* Si vous ne trouvez pas de filtres qui vous conviennent, vous pouvez cliquer sur le bouton "Ajouter un filtre". Là vous allez pouvoir éditer la combinaison de filtres qui correspondra le mieux à vos besoins
+4. Si aucun filtre standard ne convient, cliquez sur **Ajouter un filtre** pour construire la combinaison de conditions adaptée à votre besoin.
 
-<figure><img src="../../.gitbook/assets/advanced-filters-condition-group-or.png" alt=""><figcaption></figcaption></figure>
+Chaque modification s'applique tout de suite. Le bouton **Effacer les filtres** remet le tableau dans son état initial.
 
-Par défaut, Dastra fait persister les filtres que vous sélectionnez, ce qui signifie que si vous changez de page ou que vous rafraîchissez votre navigateur, les filtres sont conservés. Ces filtres sont propre à votre navigateur et votre espace de travail (Ils sont stockés en **LocalStorage**).
-
-
+Dastra conserve les filtres que vous sélectionnez : si vous changez de page ou rafraîchissez votre navigateur, ils sont maintenus. Ils sont propres à votre navigateur, à la liste et à votre espace de travail, et sont stockés dans le **LocalStorage** de votre navigateur.
 
 ## Personnaliser les colonnes
 
-Le bouton **« Personnaliser les colonnes »**, situé à droite de l'en-tête de chaque liste, permet de choisir les colonnes affichées (**Colonnes visibles** et **Colonnes cachées**), y compris les champs personnalisés, et de définir leur ordre.
+Le bouton **Personnaliser les colonnes**, dans la dernière cellule de l'en-tête de chaque liste, permet de choisir les colonnes affichées (**Colonnes visibles** et **Colonnes cachées**), y compris les champs personnalisés, et de définir leur ordre. Cliquez sur **Appliquer** pour valider, ou sur **Réinitialiser** pour revenir à la sélection d'origine.
 
-Vous pouvez aussi réordonner les colonnes directement depuis l'en-tête de la liste : au survol d'un en-tête, une poignée de glisser-déposer apparaît à gauche du nom de la colonne. Faites glisser la colonne jusqu'à l'emplacement souhaité : le nouvel ordre s'applique immédiatement et est conservé dans vos préférences d'affichage. Certaines colonnes fixes ne peuvent pas être déplacées.
+Vous pouvez aussi réordonner les colonnes directement depuis l'en-tête de la liste : au survol d'un en-tête, une poignée de glisser-déposer apparaît à gauche du nom de la colonne. Faites glisser la colonne jusqu'à l'emplacement souhaité : le nouvel ordre s'applique immédiatement. Certaines colonnes fixes ne peuvent pas être déplacées.
 
-Le survol d'un en-tête de colonne affiche l'explication complémentaire de la colonne, lorsqu'elle existe.
+Le survol d'un en-tête de colonne affiche l'explication complémentaire de la colonne, lorsqu'elle existe. Votre sélection de colonnes est enregistrée sur votre compte.
 
 ## Vues personnalisées
 
-Vous pouvez enregistrer l'état courant de vos filtres (et votre sélection de colonnes) sous forme de **vue nommée**, puis basculer entre vos vues en un seul clic depuis la barre d'outils de chaque liste.
+Une **vue personnalisée** enregistre l'état courant de vos filtres et votre sélection de colonnes sous un nom. Le sélecteur de vues se trouve en haut à gauche de chaque liste : il affiche **Vue par défaut**, ou le nom de la vue active suivi d'un astérisque lorsque vous l'avez modifiée sans l'enregistrer.
 
 Pour créer une vue :
 
 1. Appliquez les filtres et la sélection de colonnes souhaités.
-2. Cliquez sur le bouton **"Enregistrer"** dans la barre d'outils.
-3. Donnez un nom à votre vue et confirmez.
+2. Ouvrez le sélecteur de vues et cliquez sur **Enregistrer la vue personnalisée**.
+3. Saisissez le **Nom de votre vue personnalisée** et confirmez.
 
-La vue apparaît alors directement dans la barre d'outils de la section concernée — accessible en un clic, sans repasser par le panneau "Filtres".
+<figure><img src="../../.gitbook/assets/general-filters-2.png" alt="Sélecteur de vues personnalisées ouvert avec Vue par défaut, Mes vues personnalisées, Vues partagées et Enregistrer la vue personnalisée"><figcaption><p>Le sélecteur de vues personnalisées</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/advanced-filters-custom-view-dropdown.png" alt=""><figcaption></figcaption></figure>
+Le sélecteur regroupe **Vue par défaut**, qui réinitialise filtres et colonnes, vos vues sous **Mes vues personnalisées** et celles de vos collègues sous **Vues partagées**. Survolez une vue pour la modifier (crayon) ou la supprimer (corbeille). Quand la vue active est modifiée, l'entrée **Mettre à jour** la remplace par les filtres et les colonnes courants.
 
-Vous pouvez **partager une vue** avec les autres utilisateurs de votre espace de travail. Les vues partagées apparaissent sous la rubrique **"Vues partagées"** dans la barre d'outils.
+Pour **partager une vue** avec les autres utilisateurs de votre espace de travail, activez l'option **Partager cette vue personnalisée avec les autres utilisateurs** lors de l'enregistrement. Elle n'est proposée qu'aux utilisateurs qui disposent du droit d'accès avancé, qui sont aussi les seuls à pouvoir modifier ou supprimer une vue partagée.
 
-<figure><img src="../../.gitbook/assets/advanced-filters-update-custom-view-modal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-filters-3.png" alt="Fenêtre Enregistrer vue personnalisée avec le nom de la vue et l'option de partage"><figcaption><p>L'enregistrement d'une vue personnalisée, avec l'option de partage</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/advanced-filters-shared-views-panel.png" alt=""><figcaption></figcaption></figure>
-
-Cette fonctionnalité est disponible dans toutes les sections listant des objets : demandes d'exercice de droits, registre des traitements, actifs, contrats, systèmes d'IA, violations de données…
+Les vues personnalisées sont disponibles dans la plupart des listes : demandes d'exercice de droits, registre des traitements, actifs, contrats, systèmes d'IA, violations de données, etc.
 
 ## Groupes de conditions
 
-Les filtres avancés supportent désormais les **groupes de conditions**, ce qui permet de construire des logiques de filtrage complexes combinant des opérateurs **ET** et **OU** au sein d'une même vue.
+Les filtres avancés permettent de combiner des conditions avec les opérateurs **Et** et **Ou** au sein d'un même filtre.
 
 ### Principe
 
-Sans groupes, toutes les conditions d'un filtre sont combinées avec un **ET** implicite : le résultat doit satisfaire _toutes_ les conditions simultanément.
-
-Avec les groupes de conditions, vous pouvez créer des blocs indépendants. Au sein d'un groupe, les conditions sont liées par **ET**. Entre les groupes, la logique est **OU** : le résultat doit satisfaire les conditions d'_au moins un_ groupe.
+Par défaut, toutes les conditions d'un filtre sont reliées par **Et** : une ligne doit satisfaire _toutes_ les conditions. Dès qu'un groupe contient au moins deux éléments (conditions ou groupes), un bouton **Et** apparaît en bordure : cliquez dessus pour le changer en **Ou**, et inversement. Chaque groupe a son propre opérateur, le filtre dans son ensemble aussi.
 
 Exemple :
 
@@ -85,35 +75,30 @@ OU
 Groupe 2 : statut = "En retard"
 ```
 
-Ce filtre affiche toutes les demandes en cours et prioritaires, **et aussi** toutes celles en retard — quelle que soit leur priorité.
+Ce filtre affiche toutes les demandes en cours et prioritaires, et aussi toutes celles en retard, quelle que soit leur priorité.
 
 ### Créer un groupe de conditions
 
-1. Ouvrez le panneau de filtres et cliquez sur **"Ajouter un filtre"**.
-2. Dans l'éditeur de filtres, cliquez sur **"Ajouter un groupe"**.
-3. Choisissez l'opérateur du groupe (**ET** ou **OU**) puis ajoutez vos conditions.
-4. Pour des règles plus complexes, imbriquez des **sous-groupes** de conditions à l'intérieur d'un groupe (par exemple : _(Étape = « En cours » ET Adresse renseignée) OU (Canal de collecte = « Email entrant »)_).
-5. Réorganisez ou supprimez individuellement chaque condition ou groupe à l'aide des contrôles dédiés.
-6. Enregistrez la vue pour réutiliser ce filtre ultérieurement.
+1. Ouvrez la fenêtre des filtres et cliquez sur **Ajouter un filtre**.
+2. Cliquez sur **Ajouter une condition**, puis choisissez le champ, l'opérateur de comparaison et la valeur.
+3. Cliquez sur **Ajouter un groupe de conditions** pour créer un bloc indépendant, puis ajoutez ses conditions.
+4. Cliquez sur le bouton **Et** ou **Ou** pour choisir comment les conditions d'un groupe, ou les groupes entre eux, sont combinés.
+5. Supprimez une condition ou un groupe avec l'icône corbeille.
+
+<figure><img src="../../.gitbook/assets/generalites-advanced-filters-condition-groups.png" alt="Fenêtre des filtres avancés avec deux groupes de conditions reliés par un opérateur Ou"><figcaption><p>Deux groupes de conditions reliés par Ou, avec les boutons Ajouter une condition et Ajouter un groupe de conditions</p></figcaption></figure>
 
 {% hint style="info" %}
-Les filtres et vues personnalisées existants restent fonctionnels : ils sont convertis automatiquement vers l'éditeur structuré.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/generalites-advanced-filters-condition-groups.png" alt="Panneau de filtres avancés avec deux groupes de conditions reliés par un opérateur OU"><figcaption><p>Exemple de filtres à groupes de conditions : deux blocs ET reliés par OU, avec les boutons « Ajouter une condition » et « Ajouter un groupe »</p></figcaption></figure>
-
-{% hint style="info" %}
-Les groupes de conditions sont disponibles dans toutes les listes Dastra : registre des traitements, demandes d'exercice de droits, actifs, contrats, systèmes d'IA, violations de données, etc.
+Un groupe ne peut pas contenir d'autre groupe, et un filtre compte au maximum 10 conditions. Les filtres et les vues personnalisées créés avant les groupes restent utilisables.
 {% endhint %}
 
 ## Problèmes connus
 
-### Mes données ne s'affichent plus ?
+### Les données ne s'affichent plus
 
-Se vous rencontrez des difficultés avec les filtres : vous perdez l'affichage de vos données, nous vous recommandons de vider les données du navigateur (cookies, localstorage...). Cela réinitialisera le statut de vos filtres dans votre espace de travail.
+Si un filtre vous fait perdre l'affichage de vos données, videz les données de votre navigateur (cookies, LocalStorage, etc.). Cela réinitialise les filtres et la vue active de votre espace de travail. Vous pouvez aussi cliquer sur **Effacer les filtres**, puis choisir **Vue par défaut**.
 
-### Certaines colonnes ne sont pas présentes dans les filtres avancées ?
+### Des colonnes sont absentes des filtres avancés
 
-Ils se peut que techniquement, il ne soit pas possible de mettre en place ces filtres pour diverses raison. Nous vous recommandons dans ce cas, soit d'exporter de manière brute les données, et effectuer le rapport dans des outils comme Excel.
+Pour des raisons techniques, certaines colonnes ne peuvent pas être filtrées. Dans ce cas, exportez les données brutes et construisez votre rapport dans un outil comme Excel.
 
-Si c'est un filtre qui est essentiel à votre activité, n'hésitez pas à nous faire une demande de nouvelle fonctionnalité [via la communauté Dastra ou le système de demandes](../../getting-started/support/request.md)
+Si un filtre est essentiel à votre activité, faites une demande de nouvelle fonctionnalité [via la communauté Dastra ou le système de demandes](../../getting-started/support/request.md).

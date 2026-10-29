@@ -1,97 +1,104 @@
 ---
 description: >-
-  Many websites use iframes to display videos, tweets, etc. It is therefore
-  necessary to ask users for their consent before loading the content of the
-  iframe.
+  Many websites use iframes to display videos, tweets, etc. It is therefore necessary to ask users for their consent before loading the content of the iframe.
 ---
 
 # Blocking iframes (twitter/youtube...)
 
 ## Examples of services using iframes
 
-Video players: YouTube, Vimeo, DailyMotion, etc.\
-Social media: Twitter, Facebook, etc.\
-Podcast players\
-Audio players
+* Video players: YouTube, Vimeo, Dailymotion, etc.
+* Social media: Twitter, Facebook, etc.
+* Podcast players.
+* Audio players.
 
 ## Method 1: Using the SDK
 
-Our SDK will allow you to block all iframes on the page by displaying a customizable blocking message:<br>
+The SDK blocks the iframes of the page that match a selector and displays a customizable blocking message instead:
 
-<figure><img src="../../../../.gitbook/assets/settings-sso-openid-config-modal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-video-consent-overlay.png" alt="A blocking message displayed in place of a YouTube video, with the I accept button"><figcaption><p>The blocking message in place of the video</p></figcaption></figure>
 
-By clicking on “I accept,” consent to the specific service will be automatically dispatched. The system also allows you to capture a refusal of cookies in the Dastra CMP.\
-A simple example with YouTube video player iframes:
+A click on the button of the message automatically records consent to the service and loads the iframe. If the visitor later withdraws consent to this service, the iframe is blocked again. The message offers an acceptance button only.
 
-```markup
+An example with YouTube video player iframes:
+
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aJ1qDx8lv2Y" allowfullscreen></iframe>
 <script>
   // Set up youtube iframe blocking
   dastra.push(['iframeBlock', {
     selector: 'iframe[src*="youtube.com"]',
-    service: 'youtube', // service slug (Check your Dastra cmp config)
-    body:'<p>By clicking on "I accept" the trackers will be deposited and you will be able to view the video. You can withdraw your consent at any time :</p>',
-    buttonLabel:'I accept',
-    buttonClass: 'btn btn-primary'
+    service: 'youtube', // service slug (check your banner configuration)
+    body: '<p>By clicking on "I accept" the trackers will be deposited and you will be able to view the video. You can withdraw your consent at any time :</p>',
+    buttonLabel: 'I accept',
+    buttonClass: 'btn btn-primary',
+    footer: '<p>Consents provided by <a href="https://www.dastra.eu">Dastra</a></p>'
   }])
 </script>
 ```
 
+The `iframeBlock` options are:
+
+| Option | Purpose |
+| --- | --- |
+| `selector` | CSS selector of the iframes to block. |
+| `service` | Identifier (slug) of the service whose consent unblocks the iframe. |
+| `body` | HTML text of the blocking message. |
+| `buttonLabel` | Label of the acceptance button. |
+| `buttonClass` | CSS classes of the button. |
+| `footer` | HTML text displayed under the button. |
+
 {% hint style="info" %}
-You can customize the appearance of the message (background, fonts, etc.) using your CSS sheet. The blocking message is integrated into the page's DOM with a class “.datra-blocking-iframe”.
+You can customize the look of the message (background, fonts, etc.) with your CSS stylesheet. The blocking message is added to the page with the `.datra-blocking-iframe` class.
 {% endhint %}
 
 ## Method 2: Manual implementation
 
-You can also implement your own logic :&#x20;
+You can also implement your own logic:
 
-```markup
+```html
 <script>
-  // Select all youtube iframes 
+  // Select all youtube iframes
   var iframes = document.querySelectorAll('iframe[src*="youtube.com"]');
 
-  // Foreach iframe disable the iframe by transforming "src" attribute to "data-blocked-src"
-  iframes.forEach(function(iframe){
+  // For each iframe, disable it by moving the "src" attribute to "data-blocked-src"
+  iframes.forEach(function (iframe) {
     var iframeSrc = iframe.getAttribute('src');
-    iframe.setAttribute('data-blocked-src', iframeSrc );
-    iframe.setAttribute('src','about:blank');
+    iframe.setAttribute('data-blocked-src', iframeSrc);
+    iframe.setAttribute('src', 'about:blank');
     var divAlert = document.createElement('div');
-    divAlert.classList.add('alert-iframe-cookie')
-    divAlert.innerHTML = '<p>En cliquant sur « j’autorise » les traceurs seront déposés et vous pourrez visualiser la vidéo. Vous gardez la possibilité de retirer votre consentement à tout moment. En cliquant sur « je refuse », vous ne pourrez pas accéder à la vidéo. : </p><div class="button-container"><button type="button" onclick="SetConsent(\'youtube\', true)" href="#" class="btn btn-success" >Accept the cookies</button></div><p>Consentements fournis par <a href="https://www.dastra.eu">Dastra</a></p>';
+    divAlert.classList.add('alert-iframe-cookie');
+    divAlert.innerHTML = '<p>By clicking on "I accept" the trackers will be deposited and you will be able to view the video. You can withdraw your consent at any time.</p><div class="button-container"><button type="button" onclick="SetConsent(\'youtube\', true)" class="btn btn-success">I accept</button></div><p>Consents provided by <a href="https://www.dastra.eu">Dastra</a></p>';
     iframe.after(divAlert);
   });
 
-  // On cookie consent, 
-  window.addEventListener('dastra:consent:youtube', function() {
-    // Load iframe when accepted
-    document.querySelectorAll('iframe[data-blocked-src*="youtube.com"]').forEach(function(iframe){
+  // On consent, load the iframes and hide the message
+  window.addEventListener('dastra:consent:youtube', function () {
+    document.querySelectorAll('iframe[data-blocked-src*="youtube.com"]').forEach(function (iframe) {
       iframe.setAttribute('src', iframe.getAttribute('data-blocked-src'));
       iframe.removeAttribute('data-blocked-src');
     });
-    
-    // Delete message when accepted
-    document.querySelectorAll('.alert-iframe-cookie').forEach(function(alert){
-      alert.style.display = "none";
+
+    document.querySelectorAll('.alert-iframe-cookie').forEach(function (alert) {
+      alert.style.display = 'none';
     });
   });
 
-  function SetConsent(service, consent){
-    dastra.cookieConsent.consent.setServiceConsent(service, true);
+  function SetConsent(service, consent) {
+    dastra.cookieConsent.consent.setServiceConsent(service, consent);
     dastra.cookieConsent.consent.save();
-  };
-
+  }
 </script>
 <style>
-  .alert-iframe-cookie{
-    background-color:#CCC;
-    padding: 20px 20px;
-    color:#fff;
-    text-align:center;
+  .alert-iframe-cookie {
+    background-color: #ccc;
+    padding: 20px;
+    color: #333;
+    text-align: center;
   }
-  
-  .button-container{
-    margin: 10px auto; 
+
+  .button-container {
+    margin: 10px auto;
   }
-  
 </style>
 ```

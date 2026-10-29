@@ -4,46 +4,55 @@ description: Apprenez à scanner les cookies déposés sur votre site web.
 
 # Scannez les cookies déposés sur votre site Web
 
-DASTRA vous permets de scanner les cookies déposés sur votre site web grâce à sa fonctionnalité de **scan des cookies,** directement intégré à son module "Widget de consentement aux cookies".
+Dastra scanne les cookies déposés sur votre site web grâce à la fonctionnalité de **scan des cookies** du module **Consentement cookies**. Le scan sert de point de départ pour créer votre bannière.
 
-## Accédez à la fonctionalité "scan des cookies" Dastra
+## Accédez à la fonctionnalité de scan
 
-Vous devez tout d'abord vous connecter à votre votre espace de travail Dastra. Pour apprendre à faire cela, rendez-vous sur la page suivante:
+Connectez-vous à votre espace de travail Dastra. Pour apprendre à le faire, consultez la page suivante :
 
 {% content-ref url="../../../getting-started/tutorial/README.md" %}
-[tutoriel](../../../getting-started/tutorial/README.md)
+[README.md](../../../getting-started/tutorial/README.md)
 {% endcontent-ref %}
 
-Ensuite, vous devez vous rendre dans le module "Cookies", et cliquer sur le bouton "Créer un widget".
+1. Dans le menu, cliquez sur **Consentement cookies**. La liste des bannières s'affiche.
+2. Cliquez sur **Créer une bannière**.
 
-![Icône du module "Cookies"](../../../.gitbook/assets/capture-web-5-5-2022-165656-app-dastra-eu.jpeg)
+<figure><img src="../../../.gitbook/assets/cookies-scan-1.png" alt="Le menu Consentement cookies avec ses sous-menus Bannières, Statistiques et Consentements"><figcaption><p>Le module « Consentement cookies » dans le menu</p></figcaption></figure>
 
-![Cliquer sur le bouton "Créer un widget"](../../../.gitbook/assets/capture-web-5-5-2022-165746-app-dastra-eu.jpeg)
+<figure><img src="../../../.gitbook/assets/cookies-scan-2.png" alt="La liste des bannières avec le bouton Créer une bannière"><figcaption><p>Le bouton « Créer une bannière »</p></figcaption></figure>
 
-Un nouvel écran s'affiche. Vous vous trouvez dans la section "Scan des cookies".
+Dastra vous demande **Comment souhaitez-vous créer votre bannière ?** Deux choix sont proposés :
 
-![](../../../.gitbook/assets/capture-web-5-5-2022-165823-app-dastra-eu.jpeg)
+* **Analyse du site web** : Dastra analyse les cookies de votre site et vous propose une bannière avec les services détectés ;
+* **Configuration manuelle** : vous créez la bannière à partir de zéro et déclarez vous-même les URL, les services et les cookies.
+
+<figure><img src="../../../.gitbook/assets/cookies-scan-3.png" alt="Le choix du mode de création de la bannière"><figcaption><p>Le choix entre « Analyse du site web » et « Configuration manuelle »</p></figcaption></figure>
+
+Choisissez **Analyse du site web** pour continuer sur cette page.
 
 ## Scannez les cookies déposés sur votre site web
 
-Une fois dans la section "Scan des cookies", il vous suffit de saisir le nom de domaine de votre site internet dans l'espace réservé, et de cliquer sur "Valider".
+1. Saisissez l'adresse de votre site dans le champ **Saisissez votre nom de domaine (ex : https://www.github.com)**, par exemple `https://www.example.com`. Si vous omettez `https://`, Dastra l'ajoute.
+2. Cliquez sur **Valider**.
 
-![Section "Scan des cookies"](../../../.gitbook/assets/capture-web-5-5-2022-165912-app-dastra-eu.jpeg)
+<figure><img src="../../../.gitbook/assets/cookies-scan-4.png" alt="Le champ de saisie du nom de domaine à scanner"><figcaption><p>La saisie de l'adresse du site à scanner</p></figcaption></figure>
 
 {% hint style="info" %}
-Votre nom de domaine doit inclure l'intégralité du préfixe "https://www." pour être pris en compte par notre moteur.
+Le scan doit pouvoir ouvrir votre site. Si une authentification ou un pare-feu bloque l'accès, Dastra l'indique : utilisez alors la **Configuration manuelle**.
 {% endhint %}
 
-Attendez quelques secondes, et ça y est, les cookies déposés sur votre site web sont identifiés !
+Le scan explore jusqu'à 20 pages de votre site pour détecter les cookies les plus fiables. Une barre de progression s'affiche pendant l'analyse.
 
-![Le scan est en cours](../../../.gitbook/assets/capture-web-5-5-2022-17030-app-dastra-eu.jpeg)
+<figure><img src="../../../.gitbook/assets/cookies-scan-5.png" alt="La barre de progression pendant le scan"><figcaption><p>Le scan est en cours</p></figcaption></figure>
 
-![Ecran d'affichage des cookies](../../../.gitbook/assets/cookies-categories-list-overview.png)
+À la fin du scan, les résultats s'affichent : les services reconnus dans la base de cookies de Dastra, les cookies trouvés et leur répartition par catégorie. Cliquez sur **Scanner à nouveau** pour relancer l'analyse, ou sur **Créer une bannière** pour créer la bannière avec ces résultats.
 
-Une fois les cookies déposés sur votre site web scannés, vous pouvez procéder à leur classification.
+<figure><img src="../../../.gitbook/assets/cookies-scan-6.png" alt="Les résultats du scan avec les onglets Services, Cookies trouvés et Répartition des catégories de cookies"><figcaption><p>Les résultats du scan</p></figcaption></figure>
+
+Une fois les cookies de votre site scannés, vous pouvez procéder à leur classification.
 
 {% content-ref url="classify.md" %}
-[classifiez-les-cookies-par-categories-de-consentement.md](classify.md)
+[classify.md](classify.md)
 {% endcontent-ref %}
 
 ***
@@ -112,7 +121,7 @@ Par défaut, un scanner de cookies navigue sur votre site sans donner de consent
 
 Si le SDK Dastra n'est pas encore en place sur le site scanné, les services opt-in devront être **ajoutés manuellement** via la bibliothèque de services.
 
-### Services ajoutés manuellement — cookies en excès
+### Services ajoutés manuellement : cookies en excès
 
 Lorsque vous ajoutez un service depuis la bibliothèque Dastra (ex. Google Analytics, Meta Pixel), Dastra importe la liste complète des cookies que ce service _peut_ déposer dans toutes ses configurations possibles. Votre implémentation n'en utilise probablement qu'une partie.
 

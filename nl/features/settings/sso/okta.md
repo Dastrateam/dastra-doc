@@ -1,57 +1,31 @@
 ---
 description: >-
-  Deze pagina legt uit hoe u een Okta ID-provider configureert in Dastra.
+  Okta instellen als identiteitsprovider in Dastra met het protocol OpenID
+  Connect.
 ---
 
 # Okta
 
-Hier wordt uitgelegd hoe u de Okta login in SSO in Dastra kunt configureren met behulp van het **OpenId Connect** protocol. Merk op dat het ook mogelijk is om dit te doen met behulp van SAML.
+Deze pagina legt uit hoe u de SSO-aanmelding met Okta in Dastra instelt met het protocol **OpenID Connect**. U kunt dit ook met SAML doen: zie [SAML 2](saml.md).
 
-**Stap 1: ga naar **Okta administrator backoffice**.
+1. Meld u aan bij de beheerconsole van Okta.
+2. Open het menu **Applications** > **Applications** en klik op **Create App Integration**.
+3. Selecteer **OIDC - OpenID Connect**.
+4. Selecteer als toepassingstype **Web application**.
+5. Configureer de toepassing en vink **Implicit (hybrid)** aan onder **Grant type**. Voor het logo van de toepassing kunt u [dit logo gebruiken](https://www.dastra.eu/img/press/logodastra.png).
+6. Haal in Dastra de omleidings-URL op: open de [SSO-beheerpagina](https://app.dastra.eu/general-settings/sso), klik op **Voeg een SSO-login toe** en kies **OpenID**. Kopieer in de sectie **Configuratie**, onderaan het formulier, de omleidings-URL.
 
-**Stap 2:** ga naar het menu **"Applications" > "Applications".** Klik op de knop **"Create App Integration"**.
+   <figure><img src="../../../.gitbook/assets/settings-okta-1.png" alt="Het onderste deel van de sectie Configuratie van het OpenID-formulier, met de te kopiëren omleidings-URL"><figcaption><p>De omleidings-URL die Dastra toont</p></figcaption></figure>
+7. Ga terug naar Okta en plak de omleidings-URL in **Sign-in redirect URIs**. Selecteer de Okta-gebruikers aan wie u toegang tot Dastra wilt geven (standaard kunt u **Allow everyone** aanvinken) en klik op **Save**.
+8. Okta toont de instellingenpagina van de nieuwe toepassing: de client-ID (Client ID), de geheime sleutel (Client secret) en het Okta-domein, dat als autoriteit dient.
+9. Ga terug naar Dastra en vul de velden van het formulier in:
 
-![](../../../.gitbook/assets/okta-home.png)
+   * **ID van de client (clientId)**: kopieer de Client ID uit Okta.
+   * **Autoriteit/domein**: vul het Okta-domein in met het protocol (`https://<uw domein>.okta.com`).
+   * **Beheerder**: laat het veld leeg.
+   * **Geheime sleutel**: kopieer de client secret uit Okta.
+   * **Scope**: `openid profile email`.
+   * **Type reactie (Standaard: id_token)**: `id_token`.
 
-**Stap 3**: Selecteer "**OIDC - OpenID Connect**".
-
-![](../../../.gitbook/assets/okta-select.png)
-
-**Stap 3**: Selecteer het toepassingstype "**Webtoepassing**".
-
-![](../../../.gitbook/assets/okta-app-type.png)
-
-**Stap 4: Configureer de applicatie als volgt, vink het vakje "**Impliciet**" aan.
-
-Voor het applicatie logo, kunt u [deze gebruiken](https://www.dastra.eu/images/logo-dastra-dark.png)
-
-![](../../../.gitbook/assets/okta-config.png)
-
-**Stap 5** : In dit stadium moet je een _Dastra_ omleiding instellen in je _Okta_ applicatie. Ga hiervoor terug naar de _Dastra_ applicatie, [in de SSO beheerpagina](https://app.dastra.eu/general-settings/sso). Klik op "**Nieuwe SSO login**", en onderaan het formulier ziet u een redirection url die u moet kopiëren.
-
-![](../../../.gitbook/assets/okta-redirecturi.png)
-
-**Stap 6**: Ga terug naar Okta, en plak de omleidingsurl in het juiste veld, selecteer de Okta-gebruikers aan wie u toegang wilt verlenen tot Dastra (standaard kunt u "Iedereen toestaan" aanvinken) en klik dan op "**Opslaan**".
-
-![](../../../.gitbook/assets/okta-redirecturi-config.png)
-
-**Stap 7**: Je bent er bijna! Je wordt doorgestuurd naar een pagina met alle instellingen voor de nieuwe SSO app: Client Id, Secret Key en Domain/Authority.
-
-![](../../../.gitbook/assets/okta-client-settings.png)
-
-Let op dat je het domein gebruikt met het [https:// protocol](../../../.gitbook/assets/okta-domain.png)
-
-**Stap 8: Ga terug naar **Dastra** en vul de formuliervelden als volgt in:&#x20;
-
-* **Klant-ID**: kopieer de klant-ID uit Okta &#x20;
-* **Autoriteit/Domein** : **Vul het domein in met het protocol (https://.okta.com).
-* Issuer**: leeg laten &#x20;
-* Geheime sleutel**: Kopieer de geheime sleutel van Okta.
-* Scope**: openid profiel e-mail &#x20;
-* **Response type**: id_token
-
-
-
-![](../../../.gitbook/assets/okta-dastra-settings.png)
-
-**Stap 8**: Klik op "Opslaan" => Voer dan een test uit door op de "Test" knop te klikken! Als je succesvol wordt doorgestuurd naar Dastra! Het is je gelukt!
+   <figure><img src="../../../.gitbook/assets/settings-okta-2.png" alt="Het OpenID-formulier van Dastra ingevuld met de Okta-waarden, met de geheime waarden afgeschermd"><figcaption><p>Het OpenID-formulier van Dastra</p></figcaption></figure>
+10. Klik op **Opslaan** en klik daarna op **Testen** op de verbindingskaart. Als Okta u naar Dastra omleidt, is de configuratie voltooid.
