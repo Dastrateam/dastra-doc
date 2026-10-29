@@ -1,23 +1,24 @@
 ---
-description: Leer hoe u effectief cookie-toestemmingsbeheer kunt implementeren.
+description: >-
+  Leer hoe u de toestemming voor cookies goed beheert.
 ---
 
-# Cookies
+# Cookietoestemming beheren
 
-## Wat zijn cookies?
+## Definitie van cookies
 
-[Cookie]"(https://www.definitions-marketing.com/definition/cookie/) zijn kleine bestanden die informatie opslaan over een internetgebruiker die een website bezoekt, zoals browsergeschiedenis, site-instellingen, enzovoort.
+[Cookies](https://en.wikipedia.org/wiki/HTTP_cookie) zijn kleine bestanden die informatie opslaan over een gebruiker die een website bezoekt, bijvoorbeeld de browsegeschiedenis of de instellingen van de site.
 
-De meer volledige definitie van een cookie door de CNIL is als volgt:&#x20;
+De Franse gegevensbeschermingsautoriteit (CNIL) definieert een cookie als volgt:
 
-> Een cookie is een verzameling informatie, meestal klein in omvang en geïdentificeerd door een naam, die naar uw browser kan worden gestuurd door een website waarmee u verbinding maakt. Uw webbrowser slaat deze informatie gedurende een bepaalde tijd op en stuurt deze elke keer dat u opnieuw verbinding maakt terug naar de webserver.
+> Een cookie is een reeks informatie, meestal klein en geïdentificeerd door een naam, die een website waarmee u verbinding maakt naar uw browser kan sturen. Uw webbrowser bewaart die gedurende een bepaalde periode en stuurt hem bij elke nieuwe verbinding terug naar de webserver.
 
-De inwerkingtreding van de algemene verordening gegevensbescherming (AVG) op 25 mei 2018 heeft de vereisten met betrekking tot de geldigheid van toestemming aangescherpt die met name worden beschreven in artikel 82 van de wet "Informatique et Libertés" (omzetting in Frans recht van Richtlijn 2002/58/EG "privacy en elektronische communicatie", of "_ePrivacy_"). In het bijzonder vereist deze richtlijn dat de toestemming van de gebruiker wordt verkregen voorafgaand aan elke handeling waarbij _cookies_ en andere tracers worden geschreven of gelezen.
+De algemene verordening gegevensbescherming (AVG), die sinds 25 mei 2018 van toepassing is, heeft de eisen voor geldige toestemming aangescherpt die zijn vastgelegd in [artikel 82 van de Franse wet "Informatique et Libertés"](https://www.cnil.fr/fr/la-loi-informatique-et-libertes#article82) (in het Frans). Dat artikel zet Richtlijn 2002/58/EG betreffende privacy en elektronische communicatie ("ePrivacy") om in Frans recht. Behalve in specifieke gevallen moet u de toestemming van de gebruikers verkrijgen vóór elke handeling waarbij cookies en andere trackers worden geschreven of gelezen.
 
-Begin 2020 publiceerde de CNIL [aanbevelingen over cookies en andere trackers](https://www.dastra.eu/fr/article/recommendations-CNIL-cookies-expliquees-a-votre-boss/104);
+Begin 2020 publiceerde de CNIL [aanbevelingen over cookies en andere trackers](https://www.dastra.eu/fr/article/recommendations-CNIL-cookies-expliquees-a-votre-boss/104) (artikel in het Frans).
 
-Een cookie-toestemmingswidget kan worden gebruikt om naleving te garanderen.
+Met een cookietoestemmingsbanner voldoet u aan de eisen voor toestemming voor cookies.
 
 {% content-ref url="banner/configure.md" %}
-[implement-a-widget-de-consent-aux-cookies.md](banner/configure.md)
+[De cookietoestemmingsbanner instellen](banner/configure.md)
 {% endcontent-ref %}

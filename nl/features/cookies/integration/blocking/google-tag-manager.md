@@ -1,125 +1,128 @@
 ---
 description: >-
-  Dastra is geïntegreerd met Google Tag Manager. Dit artikel
-  legt uit hoe u het blokkeren of deblokkeren van tags kunt integreren op basis van de toestemming van de gebruiker toestemming van de gebruiker met behulp van GTM.
+  Dastra is standaard geïntegreerd met Google Tag Manager. Dit artikel legt uit
+  hoe u met GTM tags blokkeert of deblokkeert op basis van de toestemming van de
+  gebruiker.
 ---
 
 # Google Tag Manager
 
-## Introductie
+## Inleiding
 
-Google Tag Manager is een krachtige taggingtool die alle codeknipsels centraliseert die u in uw site wilt integreren (Dastra kan ook worden opgenomen!).
-Deze tagging-oplossing is zeer effectief voor het implementeren van effectieve cookietoestemming, omdat u niet de hele website opnieuw hoeft te implementeren telkens wanneer u tags wijzigt.
+Google Tag Manager is een taggingtool die alle codefragmenten centraliseert die u in uw website wilt opnemen (Dastra kan er een van zijn).\
+Deze taggingoplossing is zeer geschikt om cookietoestemming effectief te implementeren, omdat u niet telkens de hele website opnieuw hoeft te implementeren wanneer tags worden gewijzigd.
 
 ## Google Consent Mode V2
 
-Dastra ondersteunt **Google Consent Mode V2** standaard. De vereisten, de activering voor een service en het standaard toestemmingsfragment worden beschreven op een aparte pagina:
+Dastra ondersteunt **Google Consent Mode V2** standaard. De vereisten, de activering voor een dienst en het standaard toestemmingsfragment worden beschreven op een aparte pagina:
 
 {% content-ref url="google-consent-mode.md" %}
-[google-consent-mode-v2.md](google-consent-mode.md)
+[Google Consent Mode V2](google-consent-mode.md)
 {% endcontent-ref %}
 
-## Gebeurtenissen verzonden naar GTM in de DataLayer
+## Gebeurtenissen die naar GTM worden gestuurd in de dataLayer
 
-De volgende gebeurtenissen worden automatisch verzonden naar de Google Data Layer:
+De volgende gebeurtenissen worden automatisch naar de dataLayer van Google gestuurd:
 
+| Naam | Betekenis |
+| --- | --- |
+| `dastra:consent:{your-vendor-name}` | Deze gebeurtenis wordt gestuurd wanneer de gebruiker de cookies van deze aanbieder heeft geaccepteerd. |
+| `dastra:refused:{your-vendor-name}` | Deze gebeurtenis wordt geactiveerd wanneer de gebruiker geen toestemming heeft gegeven voor de cookies van deze aanbieder. |
 
-| Naam                               | Betekenis                                                                              |
-| --------------------------------- | ------------------------------------------------------------------------------------------ |
-| dastra:consent:{your-vendor-name} | Deze gebeurtenis wordt verzonden wanneer de gebruiker cookies van deze verkoper heeft geaccepteerd.           |
-| dastra:refused:{your-vendor-name} | Deze gebeurtenis wordt verstuurd wanneer de gebruiker geen toestemming heeft gegeven voor de cookies van deze verkoper |
-
-Je kunt daarom de tags die overeenkomen met de verschillende verkopers die in de widget zijn geconfigureerd activeren met deze twee gebeurtenissen
+Met deze twee gebeurtenissen activeert u dus de tags die bij de verschillende in de widget geconfigureerde aanbieders horen.
 
 ## Voorbeeld
 
-In dit voorbeeld gaan we de Google Optimize tag activeren na toestemming van de gebruiker.
+In dit voorbeeld activeren we de conversietag van Google Ads wanneer de bezoeker toestemming geeft voor de dienst Google Ads.
 
-Maak in je GTM container een trigger aan op een data layer event met de naam "dastra:consent:google-optimize".
+1. Maak in uw GTM-container een trigger van het type **Custom Event** met de gebeurtenisnaam `dastra:consent:google-ads`.
+2. Koppel deze trigger aan uw conversietag van Google Ads.
 
-De Google Optimize tag wordt dan alleen getriggerd op deze gebeurtenis. Zo ziet het eruit in de GTM-interface:
+De tag wordt dan alleen bij deze gebeurtenis geactiveerd.
 
-![](<../../../../.gitbook/assets/image (169).png>)
+## Specifiek geval: blokkeringstriggers
 
-## Specifiek geval van blokkerende triggers
+In sommige gevallen moet u bepaalde tags uitschakelen als er geen toestemming is gegeven. Omdat de gebeurtenis `dastra:consent:<service name>` alleen wordt uitgevoerd wanneer een pagina wordt weergegeven, volstaat dit soms niet als u op de pagina andere interactietriggers gebruikt, zoals klikken op pagina-elementen of scrolldiepte.
 
-In sommige gevallen moet je bepaalde tags uitschakelen als er geen toestemming is gegeven. Omdat de "dastra:consent:\<service naam>" gebeurtenis alleen wordt uitgevoerd wanneer een pagina wordt weergegeven, kan dit in sommige gevallen niet voldoende zijn als je verschillende triggers voor pagina-interactie gebruikt, zoals klikken op pagina-elementen, scrollhoogtes, enz.
-
-In dit geval moet je bepaalde instellingen maken om **de toestemmingswaarde die is opgeslagen in de toestemmingscookie** direct uit te lezen.
-
-### 1. Maak een variabele "DastraConsents" aan.
-
-#### Definieer de variabele
-
-**Log in** bij je Google Tag Manager-account en ga naar "Variabelen". Maak vervolgens een nieuwe "Door gebruiker gedefinieerde variabele" aan.
-
-#### Selecteer "1st party cookies
-
-Geef uw tag bijvoorbeeld de naam "DastraConsents". Voer in het veld Cookienaam de naam van de cookie voor toestemming in (standaard: **consent-eu**).
-Vergeet niet **de optie "URI-decode cookie"** te selecteren.
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
-
-#### Configureer je trigger dan als volgt:&#x20;
-
-In dit geval wordt onze tag geactiveerd als de scrolldiepte op de pagina > 20% is. We willen dat deze tag alleen wordt geactiveerd als de google analytics-service is geautoriseerd door de gebruiker. Zo configureer je de tag-trigger.
-
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-
-Als je in de sectie "Sommige pagina's" de tag alleen wilt activeren als het gebruik van een service is overeengekomen, voer dan de formule **DastraConsents bevat "{serviceName}":true** (bijvoorbeeld "crisp":true) zonder spaties in.
-
-Als u de tag wilt activeren in het geval van een weigering, voert u de formule in :
-
-**DastraConsents contains "{serviceName}":false** (bijvoorbeeld "google-analytics":false)
-
-#### Meerdere triggers van hetzelfde type met één uitzondering
-
-Als je een aantal verschillende triggers hebt voor dezelfde tag, kun je op deze manier ook een uitzondering maken.
-Voorbeeld van een tag met meerdere triggers:&#x20;
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-In dit geval willen we een uitzondering toevoegen, als de google ads tag (google-ads) niet wordt geaccepteerd, willen we niet dat de tag wordt geactiveerd.
-
-Klik op "Uitzondering toevoegen
+In dat geval moet u bepaalde instellingen configureren om **de toestemmingswaarde die in de toestemmingscookie is opgeslagen** rechtstreeks uit te lezen.
 
 {% hint style="info" %}
-Merk op dat uitzonderingen alleen goed werken als ze van hetzelfde type zijn. Als je triggers van het type "Paginaweergave" zijn, moet de uitzondering ook van het type paginaweergave zijn
+Deze methode werkt alleen met cookieopslag: ze is niet geschikt als de optie **LocalStorage inschakelen voor cookies op basis van toestemming** is ingeschakeld. Hebt u in **Naam van de cookie voor de opslag van toestemming (standaard 'consent-eu')** een eigen cookienaam ingesteld, gebruik die dan in de variabele.
 {% endhint %}
 
-Maak een trigger van hetzelfde type met de naam "Pagina's bekeken met de Google Ads-service expliciet geweigerd", bijvoorbeeld &#x20;
+### 1. Een variabele DastraConsents aanmaken
+
+#### De variabele definiëren
+
+Meld u aan bij uw Google Tag Manager-account, ga naar "Variables" en maak een nieuwe "User-defined variable" aan.
+
+#### "1st party cookies" selecteren
+
+Geef uw variabele bijvoorbeeld de naam "DastraConsents". Voer in het veld voor de cookienaam de naam van de toestemmingscookie in (standaard: `consent-eu`).\
+Vergeet niet de optie **"URI-decode cookie"** te selecteren.
+
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-variable-consent-cookie.png" alt="De variabele DastraConsents van het type 1st party cookie in Google Tag Manager, met de cookienaam consent-eu"><figcaption><p>De variabele die de toestemmingscookie leest</p></figcaption></figure>
+
+#### Configureer daarna uw trigger als volgt
+
+In dit voorbeeld wordt onze tag geactiveerd als de scrolldiepte op de pagina groter is dan 20%. We willen dat deze tag alleen wordt geactiveerd als de gebruiker de dienst Google Analytics heeft toegestaan. Zo configureert u de trigger van de tag.
+
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-trigger-scroll-depth.png" alt="Een scrolldieptetrigger met de voorwaarde op de variabele DastraConsents"><figcaption><p>De scrolldieptetrigger met een voorwaarde op de toestemming</p></figcaption></figure>
+
+Voer in de sectie "Some Pages" de volgende formule zonder spaties in als u de tag alleen wilt activeren wanneer toestemming voor een dienst is gegeven: `DastraConsents contains "{serviceName}":true` (voorbeeld `"crisp":true`).
+
+Wilt u de tag activeren bij een weigering, voer dan deze formule in:
+
+`DastraConsents contains "{serviceName}":false` (voorbeeld `"google-analytics":false`)
+
+### Meerdere triggers van hetzelfde type met een uitzondering
+
+Hebt u veel verschillende triggers voor dezelfde tag, dan kunt u op deze manier ook een uitzondering maken.\
+Voorbeeld van een tag met meerdere triggers:
+
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-google-ads-conversion.png" alt="Een conversietag van Google Ads met meerdere triggers"><figcaption><p>Een tag met meerdere triggers</p></figcaption></figure>
+
+In dit geval willen we een uitzondering toevoegen: als de tag van Google Ads (google-ads) niet is geaccepteerd, willen we niet dat de tag wordt geactiveerd.
+
+Klik op "Add Exception".
 
 {% hint style="info" %}
-Als je de tag ook niet standaard wilt activeren, zelfs als de gebruiker niet op het toestemmingsmodal heeft geklikt (en dus geen cookies heeft om voorkeuren op te slaan). In dit geval kun je een trigger gebruiken met een negatie van het type :&#x20;
-
-**DastraConsents Bevat geen "google-ads":true**
+Uitzonderingen werken alleen goed als ze van hetzelfde type zijn. Zijn uw triggers van het type "Page view", dan moet de uitzondering ook van het type "Page view" zijn.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Maak een trigger van hetzelfde type met een naam als "Pages viewed with Google Ads service explicitly refused".
 
-Klik op "Opslaan". Dit zou je nu moeten hebben:
+{% hint style="info" %}
+Wilt u de standaardtag ook uitschakelen als de gebruiker niet op het toestemmingsvenster heeft geklikt (en dus geen cookies met voorkeuren heeft), gebruik dan een trigger met een ontkenning zoals:
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+`DastraConsents Does not contain "google-ads":true`
+{% endhint %}
 
-Sla je wijzigingen op en je zou moeten zien dat je tags zijn uitgeschakeld op de pagina's in kwestie als er geen toestemming is gegeven.
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-trigger-google-ads-refused.png" alt="Een uitzonderingstrigger voor paginaweergaven waarbij de dienst Google Ads uitdrukkelijk is geweigerd"><figcaption><p>De uitzonderingstrigger</p></figcaption></figure>
 
-### Specifiek geval: vernieuw de pagina als de toestemmingsconfiguratie is gewijzigd.
+Klik op "Save". U zou nu dit moeten hebben:
+
+<figure><img src="../../../../.gitbook/assets/cookies-gtm-tag-ads-triggering.png" alt="De conversietag van Google Ads met zijn triggers en de uitzondering"><figcaption><p>De tag met zijn triggers en uitzondering</p></figcaption></figure>
+
+Sla uw wijzigingen op: de tags zijn dan uitgeschakeld op de betreffende pagina's als er geen toestemming is gegeven.
+
+### Specifiek geval: de pagina vernieuwen als de toestemmingsconfiguratie wijzigt
 
 {% hint style="warning" %}
-De events `dastra:consents:*` en `dastra:consent:<slug>` worden ook bij elke paginalading geactiveerd, wanneer de widget de al opgeslagen keuzes toepast. Een `location.reload()` die rechtstreeks aan deze events is gekoppeld, laadt de pagina eindeloos opnieuw. Registreer de listener daarom altijd binnen `dastra:consents:ready`, zoals in de voorbeelden hieronder: alleen de keuzes van de bezoeker activeren dan het herladen.
+De gebeurtenissen `dastra:consents:*` en `dastra:consent:<slug>` worden ook bij elke paginalading afgevuurd, wanneer de widget de reeds opgeslagen keuzes toepast. Een `location.reload()` die rechtstreeks aan deze gebeurtenissen is gekoppeld, laadt de pagina in een lus opnieuw. Registreer de listener daarom altijd binnen `dastra:consents:ready`, zoals in de onderstaande voorbeelden: alleen de keuzes van de bezoeker veroorzaken dan het herladen.
 {% endhint %}
 
-#### Weigering van cookies na acceptatie:
+#### Weigering van cookies na acceptatie
 
-In sommige gevallen worden bepaalde tags niet correct opgeschoond na weigering van cookies. Dit gebeurt met name wanneer een gebruiker besluit cookies te accepteren en vervolgens opnieuw op de widget klikt en besluit zijn toestemming in te trekken. In de meeste gevallen vormt dit geen probleem, omdat de markers toch niet meerdere keren in de pagina worden uitgevoerd en het dus niet meer nodig is om de scripttags die in de pagina zijn ingevoegd te verwijderen &#x20;
+In sommige gevallen worden bepaalde tags niet goed opgeschoond nadat cookies zijn geweigerd. Dat gebeurt vooral wanneer een gebruiker eerst cookies accepteert, daarna opnieuw op de widget klikt en zijn toestemming intrekt. Meestal geeft dit geen probleem, omdat de tags toch niet meerdere keren op de pagina worden uitgevoerd en het dus niet meer nodig is de in de pagina ingevoegde scripttags te verwijderen.
 
-In bepaalde situaties is het mogelijk dat de tags nog Activa zijn.
+In sommige situaties kunnen de tags echter nog actief zijn.
 
-Om dit soort problemen te voorkomen, is het mogelijk om een paginaverversing te forceren, waardoor alle javascript-tags of sdk die door de services zijn geladen, volledig worden gereset.
+Om dit soort problemen te voorkomen, kunt u een vernieuwing van de pagina afdwingen. Daarmee worden alle tags of JavaScript-SDK's die de diensten hebben geladen volledig opnieuw ingesteld.
 
-Voeg eenvoudig de volgende code in (indien mogelijk onder de Dastra widget initialisatie tag)
+Voeg de volgende code in (indien mogelijk onder de initialisatietag van de Dastra-widget):
 
-```html
+```markup
 <script>
 // If any service is refused explicitely in the modal
 // Consent events also fire on every page load: listen only once the widget is ready
@@ -132,9 +135,9 @@ window.addEventListener('dastra:consents:ready', function(){
 </script>
 ```
 
-#### Toestemming bijwerken :
+#### Toestemmingsupdate
 
-Gebruik de functie _updated_ met de volgende code om de pagina opnieuw te laden wanneer een toestemming op een of andere manier wordt gewijzigd:&#x20;
+Om de pagina opnieuw te laden wanneer een toestemming op welke manier dan ook verandert, gebruikt u de gebeurtenis `updated` met de volgende code:
 
 ```markup
 <script>
@@ -148,9 +151,9 @@ window.addEventListener('dastra:consents:ready', function(){
 </script>
 ```
 
-#### Volledige acceptatie van trackers :
+#### Volledige acceptatie van de trackers
 
-Om de pagina opnieuw te laden wanneer trackers volledig zijn geaccepteerd ("accepteer alle" knop):&#x20;
+Om de pagina opnieuw te laden wanneer alle trackers zijn geaccepteerd (knop "alles accepteren"):
 
 ```markup
 <script>
@@ -164,9 +167,9 @@ window.addEventListener('dastra:consents:ready', function(){
 </script>
 ```
 
-#### &#x20;Een specifieke service accepteren :
+#### Acceptatie van een specifieke dienst
 
-De pagina herladen wanneer een specifieke service wordt geaccepteerd:&#x20;
+Om de pagina opnieuw te laden wanneer een specifieke dienst wordt geaccepteerd:
 
 ```markup
 <script>

@@ -11,27 +11,27 @@ Dastra ondersteunt **Google Consent Mode V2** standaard. Deze integratie stuurt 
 
 ## Vereisten
 
-* Het standaard toestemmingsfragment (zie stap 2) moet in de `<head>` van uw website worden geplaatst, **vóór** het laden van Google Tag Manager.
+* Het standaard toestemmingsfragment (zie stap 2) moet in de `<head>` van uw website worden geplaatst, vóór het laden van Google Tag Manager.
 * Configureer in Google Tag Manager een **"Google Tag"** die op alle pagina's wordt geactiveerd.
-* De integratie werkt met **Google Ads** (zonder personalisatie) en **Google Analytics**.
-* Als u Google Ads-tags voor conversietracking of remarketing gebruikt, zorg er dan voor dat deze tags alleen na toestemming worden geactiveerd, met behulp van een aangepaste gebeurtenis zoals `dastra:consent:{service-slug}` (voorbeeld: `dastra:consent:googleleads`).
+* De integratie werkt met Google Ads (zonder personalisatie) en Google Analytics.
+* Als u Google Ads-tags voor conversietracking of remarketing gebruikt, zorg er dan voor dat deze tags alleen na toestemming worden geactiveerd, met behulp van een aangepaste gebeurtenis zoals `dastra:consent:{service-slug}` (voorbeeld: `dastra:consent:google-ads`).
 
-## Stap 1 — Consent Mode V2 activeren voor de service
+## Stap 1: Consent Mode V2 activeren voor de dienst
 
-Bewerk in de widgetintegratie de betreffende service (bijv. Google Analytics, Google Ads) en activeer de schakelaar **"Consent mode V2"**. Eenmaal geactiveerd, stuurt de Dastra-banner automatisch het `consent_update`-signaal naar GTM telkens wanneer een gebruiker met de toestemmingsbanner interageert.
+Klik in de sectie **Diensten** van de banner op de betreffende dienst (bijvoorbeeld Google Analytics of Google Ads) en activeer de schakelaar **Toestemmingsmodus v2 (bèta)**. Eenmaal geactiveerd, stuurt de Dastra-banner automatisch het `consent_update`-signaal naar GTM telkens wanneer een gebruiker met de toestemmingsbanner interageert.
 
-Selecteer vervolgens de **toestemmingstypen** die voor deze service worden aangestuurd (standaard allemaal aangevinkt):
+Selecteer vervolgens de toestemmingstypen die voor deze dienst worden aangestuurd (standaard allemaal aangevinkt):
 
 * `ad_storage`
 * `analytics_storage`
 * `ad_user_data`
 * `ad_personalization`
 
-<figure><img src="../../../../.gitbook/assets/cookies-service-consent-mode-v2.png" alt=""><figcaption><p>Consent Mode V2 activeren voor een service van de cookiewidget</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/cookies-service-consent-mode-v2.png" alt="De schakelaar Toestemmingsmodus v2 en de toestemmingstypen in het formulier van een dienst"><figcaption><p>Consent Mode V2 activeren voor een dienst van de cookiewidget</p></figcaption></figure>
 
 Het standaard toestemmingsfragment dat u in uw website moet plaatsen, wordt rechtstreeks in de interface weergegeven: gebruik de knop **Kopiëren** om het over te nemen en volg daarna stap 2.
 
-## Stap 2 — De standaard toestemmingscode vóór GTM plaatsen
+## Stap 2: De standaard toestemmingscode vóór GTM plaatsen
 
 Om ervoor te zorgen dat de Google-tags op het toestemmingssignaal wachten voordat ze worden geactiveerd, plaatst u het volgende fragment **vóór** de GTM-initialisatiecode op uw pagina:
 
@@ -49,16 +49,28 @@ Om ervoor te zorgen dat de Google-tags op het toestemmingssignaal wachten voorda
 </script>
 ```
 
-Dit fragment geeft de Google-tags de instructie om maximaal 500 ms te wachten op het `consent_update`-signaal voordat de tracking wordt uitgevoerd. Als de gebruiker de betreffende services accepteert, activeert de Dastra-banner dit signaal automatisch en kunnen de tags worden uitgevoerd.
+Dit fragment geeft de Google-tags de instructie om maximaal 500 ms te wachten op het `consent_update`-signaal voordat de tracking wordt uitgevoerd. Als de gebruiker de betreffende diensten accepteert, activeert de Dastra-banner dit signaal automatisch en kunnen de tags worden uitgevoerd.
 
 {% hint style="warning" %}
 Dit fragment moet **vóór** de GTM-initialisatie worden geplaatst. Als het erna wordt geladen, kunnen de Google-tags worden geactiveerd zonder op toestemming te wachten.
 {% endhint %}
 
+{% hint style="info" %}
+De Dastra-SDK roept de globale functie `gtag` aan, die het bovenstaande fragment definieert. Verwijder de definitie van `gtag()` niet uit dit fragment: zonder die functie kan de SDK de toestemmingsupdate niet verzenden.
+{% endhint %}
+
+## Installatie: rechtstreeks in de code of via GTM
+
+Het Dastra-CMP-script kan rechtstreeks in de broncode van de pagina worden geïntegreerd of via GTM worden geladen. Beide methoden zijn geldig. Een installatie rechtstreeks in de code verdient de voorkeur, omdat die garandeert dat het standaard toestemmingsfragment (hierboven) vóór GTM wordt uitgevoerd, een vereiste om Consent Mode V2 goed te laten werken.
+
+## Nieuwe diensten toevoegen en toestemming opnieuw instellen
+
+Dastra toont de toestemmingsbanner niet automatisch opnieuw aan bezoekers die al een keuze hebben gemaakt wanneer er nieuwe diensten aan de configuratie worden toegevoegd. Voegt u een nieuw hulpmiddel toe (bijvoorbeeld een nieuwe analysedienst) en moet u voor die dienst toestemming van bestaande bezoekers verzamelen, dan moet u de toestemming opnieuw instellen vanuit de Dastra-interface. De actie **Het verzamelen van bewijs van toestemming opnieuw instellen** in het menu **Acties** van de banner dwingt af dat de banner bij hun volgende bezoek opnieuw aan alle bezoekers wordt getoond, ook aan wie al een keuze had gemaakt. Zie [De cookiebanner voor toestemming instellen](../../banner/configure.md#het-verzamelen-van-bewijs-van-toestemming-opnieuw-instellen).
+
 ## Verder gaan
 
-Voor het activeren van tags op basis van toestemmingen (dataLayer-gebeurtenissen, blocking triggers...), zie de pagina over Google Tag Manager:
+Voor het activeren van tags op basis van toestemmingen (dataLayer-gebeurtenissen, blokkeringstriggers...), zie de pagina over Google Tag Manager:
 
 {% content-ref url="google-tag-manager.md" %}
-[google-tag-manager.md](google-tag-manager.md)
+[Google Tag Manager](google-tag-manager.md)
 {% endcontent-ref %}
