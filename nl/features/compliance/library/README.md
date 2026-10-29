@@ -1,5 +1,6 @@
 ---
-description: De bibliotheek bundelt alle conformiteitsobjecten van Dastra.
+description: >-
+  De bibliotheek bundelt alle conformiteitsobjecten van Dastra.
 ---
 
 # Bibliotheek
@@ -10,14 +11,14 @@ De bibliotheek is de gemeenschappelijke basis waarop kaders, conformiteitsprojec
 {% column %}
 In de bibliotheek maakt en beheert u:
 
-* kaders (conformiteitskaders),
-* vereisten,
+* kaders (conformiteitskaders) en hun vereisten,
 * controles, de centrale elementen die vereisten, tests en risico's met elkaar verbinden,
+* tests waarmee de controles worden geverifieerd,
 * en de bijbehorende risico's en bedreigingen.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-488.png" alt="De bibliotheek met haar objecten en indicatoren"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/compliance-library-nav-menu-1.png" alt="Zijmenu van de conformiteitsbibliotheek"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 

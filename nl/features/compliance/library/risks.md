@@ -55,7 +55,7 @@ Met deze weergave kunt u:
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-498.png" alt="Formulier voor het aanmaken van een risico"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-498.png" alt="Venster voor het bewerken van een risico met de naam, de referentie, de beschrijving en de beoordeling"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -71,7 +71,7 @@ Bij het aanmaken of bewerken van een risico geeft de gebruiker op:
 
 ## Risicobeoordeling
 
-Elk risico wordt op twee afzonderlijke manieren beoordeeld:
+Voor elk risico voert u twee beoordelingen in, het initiële risico en het restrisico. Daarnaast berekent Dastra een derde niveau, het huidige risico:
 
 ### Initieel risico
 
@@ -100,6 +100,14 @@ In dit stadium is het risicoraster vast en voor alle risico's gelijk, zodat de b
 
 ***
 
+### Huidig risico
+
+In een project toont Dastra ook het huidige risico. Het geeft het risiconiveau op een bepaald moment weer, op basis van de werkelijke voortgang van de remediëringsacties en de controles. Het ontwikkelt zich dus tussen het initiële risico en het restrisico.
+
+De drie niveaus ziet u naast elkaar in de weergave **Cartography** van het tabblad **Risico's** van een project (zie [Projectimplementatie](../projects/implement.md)).
+
+***
+
 ## Controles koppelen
 
 {% columns %}
@@ -114,7 +122,7 @@ Dankzij de koppeling kunt u:
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-499.png" alt="Koppeling van controles aan een risico"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-499.png" alt="Zoeken naar controles om aan een risico te koppelen"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -130,6 +138,12 @@ Voorbeeld:
 * Risico: informatielek via AI-vragen
 
 Dit onderscheid maakt een fijnere en meer gestructureerde analyse van risicoscenario's mogelijk.
+
+***
+
+## Risico's samenvoegen
+
+Net als bij controles en tests kan de risicobibliotheek duplicaten bevatten. Selecteer ten minste twee risico's en klik vervolgens op **Samenvoegen** in de bulkacties, of op **Samenvoegen** in het bewerkingsvenster van een risico. De wizard is dezelfde als voor controles: kies de **Reference version** en de velden die u wilt overnemen (zie [Controles](controls.md)). Het samenvoegen kan niet ongedaan worden gemaakt.
 
 ***
 

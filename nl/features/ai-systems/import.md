@@ -1,56 +1,72 @@
+---
+description: >-
+  Importeer uw bestaande register van AI-systemen in Dastra vanuit een CSV- of
+  Excelbestand, met het verwachte formaat van elke kolom.
+---
+
 # Uw AI-systemen importeren
 
-U importeert uw bestaande register rechtstreeks in Dastra, zodat u niet alles met de hand hoeft in te voeren.
+Als u al een register van AI-systemen hebt, importeert u het in Dastra in plaats van alles met de hand in te voeren.
 
-Open hiervoor de lijstweergave **AI-systemen**. Open rechtsboven het keuzemenu naast de knop **Een nieuw AI-systeem creëren** en klik op **Importeren**. Er verschijnt een nieuwe pagina, waar u onderaan uw bestaande register toevoegt.
+1. Klik op **AI-wet** in de zijbalk en daarna op **Register van AI-systemen**.
+2. Open rechtsboven het menu van de knop **Een nieuw AI-systeem creëren** en klik op **Importeren**.
+3. Voeg op de pagina die opent uw bestand toe onderaan de pagina.
 
-<figure><img src="../../.gitbook/assets/screenshot-2024-06-14-172133.png" alt="Pagina voor het importeren van AI-systemen"><figcaption><p>Uw AI-systemen importeren</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ai-systems-import-1.png" alt="Menu van de knop Een nieuw AI-systeem creëren met de acties Maak vanuit de bibliotheek, Importeren en Exporteren"><figcaption><p>De actie Importeren in het menu van het register van AI-systemen</p></figcaption></figure>
 
-Voor meer details volgt u de stappen op de pagina [Uw gegevens importeren (Excel, CSV)](../general/import.md).
+Voor de details van de procedure raadpleegt u [Uw gegevens importeren (Excel, CSV)](../general/import.md).
 
-## Importformaat voor AI-systemen in Dastra
+## Bestandsformaat
 
-Deze handleiding beschrijft het formaat dat het CSV-bestand voor het importeren van AI-systemen in Dastra moet hebben.
+Het bestand bevat een koprij met de kolomnamen die hieronder worden beschreven. Alle kolommen zijn optioneel, behalve `Label`.
 
-### Structuur van het CSV-bestand
-
-Het bestand moet een koprij bevatten met de hieronder beschreven kolomnamen. Alle velden zijn optioneel, behalve `Label`: dat is verplicht.
-
-### Tabel met importvelden
-
-{% hint style="info" %}
-Velden van het type enum moeten precies de waarden gebruiken die onder "Toegestane waarden" staan.
-{% endhint %}
+Kolommen met een opsomming verwachten precies de waarden uit de kolom "Toegestane waarden". Hoofdletters maken niet uit. Een waarde die met geen enkele toegestane waarde overeenkomt, wordt genegeerd.
 
 | Kolom | Beschrijving | Type | Beperkingen | Toegestane waarden |
 | --- | --- | --- | --- | --- |
-| `Label` | Naam van het systeem | String | Verplicht, 1–120 tekens | Geen |
-| `Ref` | Interne referentie | String | Optioneel, maximaal 50 tekens | Geen |
-| `Description` | Beschrijving van het systeem | String | Optioneel, maximaal 4000 tekens | Geen |
-| `State` | Status van het systeem | AiSystemState | Optioneel | Draft, Cancelled, Pending, Active |
-| `RiskLevel` | Risiconiveau | AiSystemRiskLevel | Optioneel | Low, Medium, High, Unacceptable |
-| `RiskLevelJustification` | Rechtvaardiging van het risiconiveau | String | Optioneel | Geen |
-| `BenefitLevel` | Niveau van waarde of nut | AiSystemBenefitLevel | Optioneel | Low, Medium, High |
-| `BenefitLevelJustification` | Rechtvaardiging van het waardeniveau | String | Optioneel | Geen |
-| `DateArchived` | Archiveringsdatum | DateTime | Optioneel, formaat `DD-MM-YYYY` of `DD/MM/YYYY` | Geen |
-| `DateCreation` | Aanmaakdatum | DateTime | Optioneel, hetzelfde formaat | Geen |
-| `DateUpdate` | Datum van de laatste wijziging | DateTime | Optioneel, hetzelfde formaat | Geen |
-| `DateDeployment` | Implementatiedatum | DateTime | Optioneel, hetzelfde formaat | Geen |
-| `DateRetirement` | Datum van buitengebruikstelling | DateTime | Optioneel, hetzelfde formaat | Geen |
-| `TransparencyNoticeDone` | Heeft een transparantiebericht | Boolean | Optioneel | true / false |
-| `TransparencyNoticeHtml` | Transparantiebericht (HTML-inhoud) | String | Optioneel, maximaal 4000 tekens | Geen |
+| `Label` | Naam van het systeem | Tekst | Verplicht, 1 tot 120 tekens | Vrije tekst |
+| `Ref` | Interne referentie | Tekst | Maximaal 50 tekens | Vrije tekst |
+| `Description` | Beschrijving van het systeem | Tekst | Maximaal 4.000 tekens | Vrije tekst |
+| `State` | Status van het systeem | `AiSystemState` | | `Draft`, `Cancelled`, `Pending`, `Active` |
+| `RiskLevel` | Risiconiveau | `AiSystemRiskLevel` | | `Low`, `Medium`, `High`, `Unacceptable` |
+| `RiskLevelJustification` | Motivering van het risiconiveau | Tekst | | Vrije tekst |
+| `BenefitLevel` | Niveau van de bedrijfswaarde | `AiSystemBenefitLevel` | | `Low`, `Medium`, `High` |
+| `BenefitLevelJustification` | Motivering van de bedrijfswaarde | Tekst | | Vrije tekst |
+| `DateArchived` | Datum van verplaatsing naar de prullenbak | Datum | Formaten `DD-MM-YYYY` of `DD/MM/YYYY` | Datum |
+| `DateCreation` | Aanmaakdatum | Datum | Hetzelfde formaat | Datum |
+| `DateUpdate` | Datum van de laatste wijziging | Datum | Hetzelfde formaat | Datum |
+| `DateDeployment` | Datum van ingebruikname | Datum | Hetzelfde formaat | Datum |
+| `DateRetirement` | Datum van buitengebruikstelling | Datum | Hetzelfde formaat | Datum |
+| `TransparencyNoticeDone` | Er is een transparantiebericht verstrekt | Boolean | | `true` of `false` |
+| `TransparencyNoticeHtml` | Inhoud van het bericht | Tekst | | HTML |
 
-### Voorbeeld van een CSV-regel
+### Overeenkomst met de labels in de toepassing
 
-Een volledig geldig voorbeeld:
+De waarden in het bestand zijn de technische namen, niet de labels die in de toepassing worden getoond. Schrijf het label van het scherm niet in het bestand.
+
+| Kolom | Waarde in het bestand | Getoond label |
+| --- | --- | --- |
+| `State` | `Draft` | Draft |
+| `State` | `Pending` | In de wacht |
+| `State` | `Active` | In uitvoering |
+| `State` | `Cancelled` | Geannuleerd |
+| `RiskLevel` | `Low` | Minimaal |
+| `RiskLevel` | `Medium` | Beperkt risico |
+| `RiskLevel` | `High` | Hoog risico |
+| `RiskLevel` | `Unacceptable` | Onaanvaardbaar |
+| `BenefitLevel` | `Low` | Laag |
+| `BenefitLevel` | `Medium` | medium |
+| `BenefitLevel` | `High` | Hoog |
+
+## Voorbeeldrij
 
 ```
 "Internal ChatGPT","SYS-001","Internal documentation assistant model","Active","Medium","Moderate risks with responsible use","High","Very high business value","01/02/2024","15/01/2024","01/03/2024","20/03/2024","","false","<p>This AI system is used to assist employees in drafting internal documents.</p>"
 ```
 
-### Sjabloon voor de CSV-koprij
+## Kant-en-klaar sjabloon voor de koprij
 
-U plakt deze regel rechtstreeks in een leeg `.csv`-bestand:
+Kopieer deze regel in een leeg `.csv`-bestand:
 
 ```
 Label,Ref,Description,State,RiskLevel,RiskLevelJustification,BenefitLevel,BenefitLevelJustification,DateArchived,DateCreation,DateUpdate,DateDeployment,DateRetirement,TransparencyNoticeDone,TransparencyNoticeHtml

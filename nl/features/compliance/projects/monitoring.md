@@ -1,13 +1,14 @@
 ---
-description: De monitoringfase is de uitvoeringsfase van het conformiteitsproject.
+description: >-
+  De monitoringfase is de uitvoeringsfase van het conformiteitsproject: bewijs,
+  testcampagnes en opvolging van de indicatoren.
 ---
 
 # Conformiteitsmonitoring
 
-Deze fase controleert de werkelijke doeltreffendheid van de controles in de loop van de tijd, verzamelt het bijbehorende bewijs en volgt de evolutie van de conformiteit via terugkerende testcampagnes.
+De fase **Monitoring** controleert de werkelijke doeltreffendheid van de controles in de loop van de tijd, verzamelt het bijbehorende bewijs en volgt de evolutie van de conformiteit via terugkerende testcampagnes.
 
-> Doel van de fase\
-> Verzamel bewijs voor het hele project met testcampagnes, zorg dat een maximum aan controles slaagt en houd een conformiteitsniveau aan dat in de loop van de tijd meetbaar is.
+Het doel: bewijs verzamelen voor het hele project met testcampagnes, zorgen dat een maximum aan controles slaagt en een conformiteitsniveau aanhouden dat in de loop van de tijd meetbaar is.
 
 ***
 
@@ -20,26 +21,38 @@ In deze fase gaat het project van een voorbereidende logica naar een logica van 
 * het bewijs wordt verzameld, bijgewerkt en beoordeeld,
 * de conformiteitsindicatoren worden bruikbaar.
 
-<figure><img src="../../../.gitbook/assets/image-464.png" alt="Overzicht van de monitoringfase van een conformiteitsproject"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-464.png" alt="Projectoverzicht in de fase Monitoring met de indicatoren voor controles en tests"><figcaption></figcaption></figure>
 
 ***
 
 ## Algemene opvolging van controles en tests
 
-De monitoringpagina geeft een beknopt overzicht van de status van het project:
+In het gedeelte **Controles en tests** van het tabblad **Statistieken** van het project geven vier indicatoren een beknopt beeld van de status van het project:
 
-* **Status van de controle**: aandeel van de controles die voldoen of verbeterd moeten worden.
+* **Status van de controles**: aandeel van de gevalideerde controles.
+* **Implementatie**: geïmplementeerde of niet-geïmplementeerde controles.
 * **Teststatus**:
   * geslaagde tests,
-  * ontbrekend bewijs,
+  * tests met ontbrekend bewijs,
   * mislukte tests.
 * **Frisheid van de tests**:
   * actuele tests,
-  * verouderde tests waarvoor nieuw bewijs nodig is.
+  * verlopen tests waarvoor nieuw bewijs nodig is.
 
 Met deze indicatoren ziet u snel welke punten aandacht vragen en prioriteert u corrigerende acties.
 
-<figure><img src="../../../.gitbook/assets/image-465.png" alt="Indicatoren voor de status van controles en tests"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-465.png" alt="Lijst van de controles van het project met hun status en tests"><figcaption></figcaption></figure>
+
+### Projectgeschiedenis
+
+Onder deze indicatoren toont de grafiek **Projectgeschiedenis** hoe het project zich in de loop van de tijd ontwikkelt. Kies de periode met de datumkiezer (maximaal 3 jaar) en stel vervolgens in:
+
+* **Tijdseenheid**: **Dag**, **Week**, **Maand** of **Jaar**;
+* **Metriek**: **Tests**, **Controles**, **Vereisten**, **Risico's** of **Conformiteit**.
+
+Met de grafiek toont u de voortgang van de conformiteit aan het management of aan auditors.
+
+<figure><img src="../../../.gitbook/assets/compliance-monitoring-history-1.png" alt="Grafiek Projectgeschiedenis met de periode, de tijdseenheid en de metriek Tests"><figcaption></figcaption></figure>
 
 ***
 
@@ -48,7 +61,7 @@ Met deze indicatoren ziet u snel welke punten aandacht vragen en prioriteert u c
 {% columns %}
 {% column %}
 Bewijs vormt de kern van de monitoringfase.\
-U voegt het rechtstreeks vanuit een test toe en kunt het hergebruiken voor meerdere tests van het project.
+U voegt het rechtstreeks vanuit een test toe met **Bewijs toevoegen** en kunt het hergebruiken voor meerdere tests van het project.
 
 De beschikbare manieren om bewijs aan te leveren zijn onder meer:
 
@@ -56,11 +69,11 @@ De beschikbare manieren om bewijs aan te leveren zijn onder meer:
 * externe links,
 * bewijs selecteren dat al in het project staat.
 
-U kunt elk stuk bewijs documenteren om latere audits te vergemakkelijken.
+U kunt elk stuk bewijs documenteren met een **Beschrijving van het bewijs** om latere audits te vergemakkelijken.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-466.png" alt="Bewijs toevoegen aan een test"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-466.png" alt="Venster Bewijs toevoegen met het bestand, de externe link en de beschrijving"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -68,7 +81,7 @@ U kunt elk stuk bewijs documenteren om latere audits te vergemakkelijken.
 
 ## Testcampagnes
 
-Met testcampagnes organiseert u de uitvoering van tests op grote schaal.
+Met **Testcampagnes** organiseert u de uitvoering van tests op grote schaal. U beheert ze in het tabblad **Testcampagnes** van het project.
 
 Met een campagne kunt u:
 
@@ -77,9 +90,15 @@ Met een campagne kunt u:
 * een algemene deadline bepalen,
 * de voortgang centraal opvolgen.
 
-Bij het aanmaken van een campagne kunt u automatisch alle tests vooraf selecteren die op bewijs wachten, zodat de start vlotter verloopt.
+Om een campagne aan te maken, klikt u op **Een testcampagne aanmaken** en vult u het **Campagne label** in. U kunt **Selecteer vooraf alle tests van uw project die wachten op bewijs** aanvinken om de start te vergemakkelijken. De campagne opent dan in configuratie: **Stel de inhoud van de testcampagne in**, controleer of elke test een eigenaar heeft en start de campagne vervolgens.
 
-<figure><img src="../../../.gitbook/assets/image-467.png" alt="Een testcampagne aanmaken"><figcaption></figcaption></figure>
+{% hint style="warning" %}
+Als een of meer tests van de campagne geen eigenaar hebben, toont Dastra een waarschuwing en vraagt het u ze na te lopen voordat de uitnodigingen worden verstuurd. Met **Bekijk tests zonder eigenaren** vindt u ze terug.
+{% endhint %}
+
+Een campagne starten buiten de fase **Monitoring** is niet aanbevolen: Dastra toont een waarschuwing, zonder u te blokkeren.
+
+<figure><img src="../../../.gitbook/assets/image-467.png" alt="Configuratie van een testcampagne met de inhoud, de eigenaren en de deadline"><figcaption></figcaption></figure>
 
 ***
 
@@ -89,17 +108,28 @@ Bij het aanmaken van een campagne kunt u automatisch alle tests vooraf selectere
 {% column %}
 Zodra de campagne is geconfigureerd:
 
-* ontvangen de betrokken gebruikers een uitnodiging per e-mail,
+* ontvangen de betrokken gebruikers een uitnodiging per e-mail, die u verstuurt met **Stuur de uitnodigingen** nadat u de eigenaren hebt geselecteerd die u wilt verwittigen,
 * kunt u een persoonlijk bericht toevoegen om het verzoek in context te plaatsen,
-* verloopt elke test afzonderlijk (_Te doen_, _Voltooid_).
+* verloopt elke test afzonderlijk (_Te doen_, _In afwachting van validatie_, _Voltooid_).
 
 De algemene voortgang van de campagne is in real time zichtbaar, zodat de projecteigenaar snel vertragingen of blokkades ziet.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-468.png" alt="Opvolging van een testcampagne"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-468.png" alt="Venster Stuur de uitnodigingen met de lijst van de eigenaren van de tests"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
+
+### Een campagne herinneren, afsluiten en opvolgen
+
+In de lijst van de campagnes biedt het menu **⋯** van elke rij:
+
+* **Stuur een herinnering**: selecteer de eigenaren die nog tests moeten voltooien. Er wordt een standaardherinnering verstuurd, waaraan u een **Aangepast herinneringsbericht** kunt toevoegen;
+* **Sluit de campagne**: beëindigt de campagne; met **Heropen de campagne** zet u ze weer in uitvoering;
+* **Link kopiëren**: kopieert de link naar de campagne;
+* **Verplaats naar de prullenbak**: verwijdert de campagne uit de lijst. Met **Herstellen** brengt u ze terug, met **Verwijderen** verwijdert u ze definitief.
+
+**Details** opent het dashboard van de campagne: aantal tests, deelnemers en kaders, gevalideerde tests, **Voltooiingspercentage per gebruiker** (voltooide tests, tests in afwachting van validatie en nog te doen tests) en **Verdeling van tests per framework**.
 
 ***
 
@@ -107,13 +137,45 @@ De algemene voortgang van de campagne is in real time zichtbaar, zodat de projec
 
 Elke test doorloopt een duidelijke cyclus:
 
-* de procedure raadplegen,
+* de **Testprocedure** raadplegen,
 * het bewijs toevoegen of bijwerken,
-* de test valideren.
+* de test valideren met **Test valideren**.
 
-Zodra de test is gevalideerd, draagt hij automatisch bij aan een betere status van de gekoppelde controle en aan de algemene indicatoren van het project. De uitnodiging brengt de gebruiker naar een persoonlijk opvolgingsdashboard, waar hij het bewijs invult voor de tests waarvan hij eigenaar is.
+Het resultaat van een test is **Geslaagd**, **Fout**, **Ontbrekend bewijs** of **Verlopen bewijs**. Voor een handmatige test zet **Test valideren** de test op **Done**; met **Test ongeldig maken** annuleert u de validatie. Zodra de test is gevalideerd, draagt hij automatisch bij aan een betere status van de gekoppelde controle en aan de algemene indicatoren van het project.
 
-<figure><img src="../../../.gitbook/assets/image-469.png" alt="Persoonlijk opvolgingsdashboard voor de tests van een gebruiker"><figcaption></figcaption></figure>
+De uitnodiging brengt de gebruiker naar een persoonlijk opvolgingsdashboard, waar hij het bewijs invult voor de tests waarvan hij eigenaar is. Deze werkruimte is ook beschikbaar via **Mijn tests** (zie [Projecten](README.md)). Wanneer een gebruiker al zijn tests heeft voltooid, toont Dastra een felicitatiebericht met de knop **Bekijk mijn taken**.
+
+<figure><img src="../../../.gitbook/assets/image-469.png" alt="Opvolgingsdashboard van een eigenaar van tests met de in te vullen tests"><figcaption></figcaption></figure>
+
+***
+
+## Export van de verklaring van toepasselijkheid (SOA)
+
+De **verklaring van toepasselijkheid** (Statement of Applicability, SOA) is het referentiedocument dat alle controles van een kader van het project bundelt. U gebruikt ze voor certificeringsaudits, bijvoorbeeld ISO 27001, en om de dekking van de vereisten aan te tonen aan uw management of uw auditors.
+
+De export gebeurt per kader, als XLSX-bestand:
+
+1. Open het conformiteitsproject.
+2. Klik in het tabblad **Statistieken** op het menu **⋯** van de kaderkaart, of open het tabblad **Vereisten** en gebruik het menu **⋯** van het kader.
+3. Klik op **Exporteer de verklaring van toepasselijkheid**.
+
+Hiervoor is exporttoegang tot operationele conformiteit vereist.
+
+<figure><img src="../../../.gitbook/assets/compliance-monitoring-soa-export-1.png" alt="Menu van de kaderkaart met de actie Exporteer de verklaring van toepasselijkheid"><figcaption></figcaption></figure>
+
+Het bestand bevat één rij per controle, met de volgende kolommen:
+
+| Kolom | Inhoud |
+| --- | --- |
+| `ControlId` | Referentie van de controle. |
+| `Label` | Naam van de controle. |
+| `Description` | Beschrijving van de controle, zonder opmaak. |
+| `Applicable` | Toepasselijkheid: een controle met de status **Excluded** is niet van toepassing. |
+| `Justification` | Rechtvaardiging van de uitsluiting die op de controle is ingevoerd (zie [Status en uitsluiting van een controle](implement.md)). |
+| `ImplementationStatus` | Status van de controle: **Concept**, **Geïmplementeerd** of **Excluded**. |
+| `Evidence` | Verwijzingen naar het bewijs dat op de tests van de controle is verzameld. |
+| `Auditor` | Eigenaar van de controle. |
+| `RequirementNodes` | Vereisten waarop de controle betrekking heeft. |
 
 ***
 

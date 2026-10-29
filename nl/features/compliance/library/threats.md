@@ -17,7 +17,7 @@ Bedreigingen verrijken de risicoanalyse zonder de beoordeling ervan complexer te
 
 Het Dastra-model steunt op een eenvoudige en leesbare keten:
 
-> Bedreiging → Risico → Controles → Tests
+> Bedreiging > Risico > Controles > Tests
 
 * Een bedreiging beschrijft een situatie, een gedrag of een gebeurtenis.
 * Een risico beschrijft de mogelijke impact voor de organisatie.
@@ -63,7 +63,7 @@ Bij het aanmaken of bewerken van een bedreiging geeft de gebruiker op:
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-502.png" alt="Formulier voor het aanmaken van een bedreiging"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-502.png" alt="Venster voor het bewerken van een bedreiging"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -95,6 +95,12 @@ Met bedreigingen hebt u:
 * een duidelijkere communicatie met de betrokken partijen (CISO, FG, businessteams).
 
 Bedreigingen vullen de analyse aan zonder de operationele beheerslast te verzwaren.
+
+***
+
+## Bedreigingen samenvoegen
+
+De bedreigingenbibliotheek voegt u net als de risicobibliotheek samen: selecteer ten minste twee bedreigingen en klik vervolgens op **Samenvoegen** in de bulkacties, of in het bewerkingsvenster van een bedreiging. Kies de **Reference version** en de velden die u wilt overnemen (zie [Controles](controls.md)). Het samenvoegen kan niet ongedaan worden gemaakt.
 
 ***
 

@@ -1,12 +1,11 @@
 ---
-description: Controles verbinden de vereisten van een kader met tests en risico's.
+description: >-
+  Controles zijn het centrale element van het conformiteitsmodel van Dastra.
 ---
 
 # Controles
 
-Controles zijn het centrale element van het conformiteitsmodel van Dastra.
-
-Ze vertalen de vereisten van een kader naar concrete maatregelen die meetbaar en controleerbaar zijn, zodat u de doeltreffendheid van de conformiteit in de tijd kunt aantonen.
+Controles vertalen de vereisten van een kader naar concrete maatregelen die meetbaar en controleerbaar zijn, zodat u de doeltreffendheid van de conformiteit in de tijd kunt aantonen.
 
 Een controle kan:
 
@@ -18,7 +17,7 @@ Een controle kan:
 
 ## Controles opvolgen en beheren
 
-<figure><img src="../../../.gitbook/assets/image-480.png" alt="Lijst van controles"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-480.png" alt="Tabblad Controles van een kader met de lijst van controles en hun type remedie"><figcaption></figcaption></figure>
 
 U kunt controles opvolgen vanuit twee complementaire ingangen.
 
@@ -43,7 +42,7 @@ Deze weergave is geschikt om:
 
 ### 2. Vanuit de controlebibliotheek
 
-<figure><img src="../../../.gitbook/assets/image-481.png" alt="De controlebibliotheek met globale statistieken"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-481.png" alt="De controlebibliotheek met de filters en de lijst van alle controles"><figcaption></figcaption></figure>
 
 De controlebibliotheek bundelt alle controles van de organisatie, over alle kaders heen.
 
@@ -52,8 +51,6 @@ Met deze weergave kunt u:
 * gebruikmaken van globale statistieken (controles met tests, risico's, meervoudige koppelingen, wezen)
 * controles identificeren die in meerdere kaders worden hergebruikt
 * de kwaliteit en de consistentie van de controlebibliotheek verbeteren
-
-Het is een belangrijk instrument voor governance en voor het industrialiseren van conformiteit.
 
 ***
 
@@ -65,7 +62,7 @@ In het bewerkingsvenster definieert u nauwkeurig de rol van de controle en haar 
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-440.png" alt="Bewerkingsvenster van een controle"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-440.png" alt="Bewerkingsvenster van een controle met de naam, de referentie en het type remedie"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -90,7 +87,7 @@ De gebruiker kan de voorgestelde referentie vrij aanpassen.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-441.png" alt="Referentiegenerator in het bewerkingsvenster van een controle"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-441.png" alt="Referentiegenerator die een samenhangende referentie voor de controle voorstelt"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -133,7 +130,7 @@ Met [tests](tests.md) verifieert u het bestaan, de toepassing en de doeltreffend
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-442.png" alt="Voorstellen van de AI-assistent voor tests"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-442.png" alt="Lijst van de tests die aan een controle zijn gekoppeld"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -171,7 +168,7 @@ Zo kunt u:
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-443.png" alt="Vereisten koppelen aan een controle"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-443.png" alt="Venster om een controle aan vereisten te koppelen"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -181,7 +178,7 @@ Zo kunt u:
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-444.png" alt="Risico's koppelen aan een controle"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-444.png" alt="Venster van een controle met de gekoppelde risico's"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -206,7 +203,7 @@ In de loop van de tijd kan de controlebibliotheek overbodige of bijna identieke 
 
 ### Hoe het samenvoegen werkt
 
-Selecteer in de controlebibliotheek of in een project de controles die u wilt samenvoegen (maximaal 30) en start het samenvoegen via de bulkacties. Een wizard vraagt u de doelcontrole te kiezen (de controle die behouden blijft). Alle koppelingen van de bron-controles (bewijs, vereisten, risicoscenario's, gedekte controles) worden automatisch geconsolideerd op de doelcontrole, zonder gegevensverlies, waarna de bronnen worden verwijderd.
+Selecteer in de controlebibliotheek of in een project de controles die u wilt samenvoegen (maximaal 30) en start het samenvoegen via de bulkacties. Een wizard vraagt u de **Reference version** te kiezen, dat wil zeggen de controle die behouden blijft. De koppelingen van de andere controles (bewijs, vereisten, risicoscenario's, gedekte controles) worden op die controle geconsolideerd, zonder gegevensverlies, waarna de andere controles worden verwijderd.
 
 {% hint style="info" %}
 Het zoeken naar overeenkomsten gebeurt volledig handmatig: Dastra detecteert niet automatisch dubbels. U selecteert zelf de gelijkaardige controles die u wilt consolideren.
@@ -214,12 +211,12 @@ Het zoeken naar overeenkomsten gebeurt volledig handmatig: Dastra detecteert nie
 
 <figure><img src="../../../.gitbook/assets/fusion-controles-selection.png" alt="Selectie van meerdere controles en het menu met bulkacties met de optie Samenvoegen"><figcaption><p>Selecteer maximaal 30 controles en start het samenvoegen via de bulkacties</p></figcaption></figure>
 
-De wizard toont de twee controles naast elkaar: links de te behouden controle (doelcontrole), rechts de te verwijderen controle (bron). Voor elk veld met meerdere waarden (risicoscenario's, vereisten, tests) kiest u de waarden die naar de doelcontrole worden overgenomen.
+De vergelijkingstabel toont de controles naast elkaar, met één kolom per controle. Kies de controle die u wilt behouden met het keuzerondje van haar kolom: die kolom draagt het label **Reference version**. De andere kolommen dragen het label **Keep selected fields**: alleen de velden die u daar aanvinkt, worden naar de referentieversie overgenomen (met **Select all** vinkt u de hele kolom aan).
 
 <figure><img src="../../../.gitbook/assets/fusion-controles-comparaison.png" alt="Vergelijkingstabel van de controles naast elkaar met selectie van de te behouden waarden"><figcaption><p>Vergelijk de controles naast elkaar en kies veld per veld de te behouden waarden: bewijs, vereisten, risicoscenario's en gedekte controles worden op de behouden controle geconsolideerd</p></figcaption></figure>
 
 {% hint style="warning" %}
-Het samenvoegen is onomkeerbaar. Controleer de koppelingen van elke bron-controle voordat u de bewerking bevestigt.
+Het samenvoegen is onomkeerbaar. Controleer de koppelingen van elke controle voordat u de bewerking bevestigt.
 {% endhint %}
 
 ### Typische gebruiksscenario's

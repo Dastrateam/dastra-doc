@@ -88,7 +88,7 @@ Deze versie wordt de versie die standaard wordt aangeboden en geïnstalleerd wan
 Als een kader is aangemaakt op basis van een sjabloon en er een nieuwere versie van dat bronreferentiekader beschikbaar is:
 
 * toont de kaderkaart in de lijst het label **Beschikbare update**,
-* toont de kaderpagina de banner **Een nieuwere versie van de bronnent repository is beschikbaar**, gevolgd door de link **bijwerken**.
+* toont de kaderpagina de banner _Een nieuwere versie van de bronnent repository is beschikbaar_, gevolgd door de link **bijwerken**.
 
 Klik op **bijwerken** om het venster **Bijwerken vanuit de bronnent repository** te openen. Het toont een voorbeeld van de wijzigingen in controles, tests, risicoscenario's en bedreigingen. Items die uit het bronreferentiekader zijn verwijderd, zijn gemarkeerd met het label **Afwezig van de bron**.
 

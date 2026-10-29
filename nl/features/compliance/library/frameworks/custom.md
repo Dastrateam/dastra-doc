@@ -23,14 +23,14 @@ Een eigen kader kan:
 {% column %}
 Bij het aanmaken van een eigen kader geeft de gebruiker op:
 
-* de **Naam van het framework** (bijvoorbeeld _Custom AI_, _AI ISSP - Demo_)
+* de **Naam van het framework** (bijvoorbeeld _Custom AI_, _AI ISSP, Demo_)
 * de **Taal van het framework**, die de standaardtaal van de vereisten en controles bepaalt
 
 Na het aanmaken wordt het kader met de status concept toegevoegd aan de bibliotheek.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-448.png" alt="Venster om een kader aan te maken met de naam en de taal van het kader"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-448.png" alt="Venster om een kader aan te maken met de naam, de taal en het logo"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -47,7 +47,7 @@ Een nieuw aangemaakt kader is standaard:
 
 * **Exporteren**: het kader ophalen in JSON- of Excel-formaat
 * **Dupliceren**: een kopie van het kader maken
-* **Verplaats naar de prullenbak**: het kader verwijderen
+* **Verplaats naar de prullenbak**: het kader uit de bibliotheek verwijderen (met **Herstellen** haalt u het terug, met **Verwijderen** wist u het definitief)
 
 U kunt niets toevoegen of wijzigen zolang het kader zich niet in de bewerkingsmodus bevindt.
 
@@ -74,7 +74,7 @@ De bewerkingsmodus is alleen beschikbaar voor een conceptversie. De vereisten va
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-449.png" alt="Een kader in de bewerkingsmodus"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-449.png" alt="Pagina van een nieuw aangemaakt kader, leeg en alleen-lezen"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -91,7 +91,7 @@ Zo vertaalt u een regelgevend, normatief of intern kader naar elementen die u in
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-450.png" alt="Hoofdstukken van een kader"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-450.png" alt="Venster om een hoofdstuk aan te maken"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -134,7 +134,7 @@ Ze vormen de directe schakel tussen het kader en de operationele controles.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-451.png" alt="Formulier om een vereiste aan te maken"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-451.png" alt="Venster om een vereiste aan te maken"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -153,7 +153,7 @@ Ze vormen de directe schakel tussen het kader en de operationele controles.
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-452.png" alt="AI-ondersteuning bij het aanmaken van een vereiste"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-452.png" alt="Venster om een vereiste aan te maken met de door de AI voorgestelde referentie"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
@@ -177,7 +177,7 @@ De gebruiker blijft vrij om de voorgestelde referentie te wijzigen.
 
 ### Vereisten organiseren en beheren
 
-<figure><img src="../../../../.gitbook/assets/image-476.png" alt="Lijst van vereisten van een kader met samenvattende indicatoren"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-476.png" alt="Menu om een vereiste te verplaatsen in de boomstructuur van het kader"><figcaption></figcaption></figure>
 
 Eenmaal aangemaakt kunnen vereisten:
 
@@ -199,7 +199,7 @@ Er zijn twee manieren om controles aan een vereiste te koppelen.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-453.png" alt="Opties om controles aan een vereiste te koppelen"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-453.png" alt="Keuze tussen bestaande controles koppelen of controles aanmaken met de AI"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -213,7 +213,7 @@ De gebruiker selecteert een of meer controles die al in de bibliotheek staan en 
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-454.png" alt="Bestaande controles selecteren"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-454.png" alt="Lijst van bestaande controles om aan een vereiste te koppelen"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -229,7 +229,7 @@ Eén controle kan aan meerdere vereisten worden gekoppeld. Dat bevordert:
 
 {% columns %}
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-455.png" alt="Voorstellen van de AI-assistent voor bestaande en nieuwe controles"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-455.png" alt="Controles aanmaken of koppelen met de AI voor een vereiste"><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}

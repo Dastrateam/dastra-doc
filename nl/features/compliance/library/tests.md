@@ -1,6 +1,8 @@
 ---
 description: >-
-  Leer hoe u tests beheert in de bibliotheek van de module Conformiteit: handmatige tests, geautomatiseerde tests met connectoren, bewijs, samenvoegen en koppeling aan documenten.
+  Leer hoe u tests beheert in de bibliotheek van de module Conformiteit:
+  handmatige tests, geautomatiseerde tests met connectoren, bewijs, samenvoegen
+  en koppeling aan documenten.
 ---
 
 # Tests
@@ -17,7 +19,7 @@ Tests vormen de operationele schakel tussen:
 
 ## De rol van tests in Dastra
 
-Een test beantwoordt een eenvoudige maar essentiële vraag:
+Een test beantwoordt één vraag:
 
 > _Wordt de controle echt toegepast en is ze doeltreffend?_
 
@@ -31,7 +33,7 @@ Elke test is:
 
 ## Weergave van de testbibliotheek
 
-<figure><img src="../../../.gitbook/assets/image-492.png" alt="Weergave van de testbibliotheek met de lijst van beschikbare tests"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-492.png" alt="Weergave van de testbibliotheek met het type, de gekoppelde controles en de filters"><figcaption></figcaption></figure>
 
 De testbibliotheek biedt een overkoepelend overzicht van alle beschikbare tests, met onder meer:
 
@@ -85,19 +87,28 @@ Bij het aanmaken of bewerken van een test legt de gebruiker vast:
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../.gitbook/assets/image-493.png" alt="Formulier voor het aanmaken van een test"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-493.png" alt="Venster voor het bewerken van een test met de naam, de referentie, de frequentie en de beschrijving"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 Deze informatie dient als operationele leidraad wanneer u de test binnen een project uitvoert.
 
+### Testvenster in een project
+
+In een project opent een test in een venster met tabbladen:
+
+* **Testdetails**: label, **Eigenaar van de test**, status, **Testprocedure**, **Frequentie van de test** en bewijs;
+* **Geassocieerde controles**: de controles die de test verifieert;
+* **Fouten in tests**: de problemen die auditors bij deze test hebben gemeld (zie [Audits](../projects/audits.md));
+* **Context**: het project, de kaders en de perimeter waartoe de test behoort.
+
 ***
 
 ## Geautomatiseerde tests met Dastra-connectoren
 
-Dastra biedt verschillende soorten kant-en-klare connectoren (vragenlijsten, registers, beleidsdocumenten enzovoort), en een generieke connector. Deze connectoren worden rechtstreeks gebruikt in de geautomatiseerde tests van de module Conformiteit.
+Dastra biedt kant-en-klare connectoren (vragenlijsten, registers, beleidsdocumenten enzovoort), en een generieke connector voor HTTP-verzoeken. Deze connectoren, ook automatische bewijsverzamelaars genoemd, worden rechtstreeks gebruikt in de geautomatiseerde tests van de module Conformiteit.
 
-<figure><img src="../../../.gitbook/assets/image-494.png" alt="Keuze van een connector voor een geautomatiseerde test"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image-494.png" alt="Dialoogvenster om een automatische bewijsverzamelaar te kiezen die op een test wordt geïnstalleerd"><figcaption></figcaption></figure>
 
 Naast handmatige tests kunt u met connectoren geautomatiseerde tests configureren.
 
@@ -107,17 +118,29 @@ Een geautomatiseerde test gebruikt een Dastra-connector om:
 * automatisch bewijs te verzamelen,
 * de conformiteit te verifiëren aan de hand van vastgelegde criteria.
 
-### Voorbeelden van connectoren
+### Een connector op een test installeren
 
-Met connectoren kunt u onder meer:
+1. Open een handmatige test en klik op **Installeer connector**.
+2. Selecteer de connector in **Kies een automatische bewijsverzamelaar om te installeren**.
+3. Stel de **Frequentie van de test** in (in dagen, maanden of jaren) en configureer de standaardwaarden van de connector.
+4. Klik op **Valideren**. Het verzamelen van bewijs start onmiddellijk met deze configuratie.
 
-* een register van AI-systemen verzamelen,
-* controleren of documenten aanwezig en bijgewerkt zijn (bijvoorbeeld de documentatie van AI-systemen),
-* registers bevragen (activa, incidenten, gegevensverwerkingen),
-* vragenlijsten of beleidsdocumenten analyseren.
+Klik vervolgens op **Uitvoeren** om het verzamelen op aanvraag opnieuw uit te voeren. Elke uitvoering wordt opgeslagen als bewijs van de test. Als de configuratie van een connector ongeldig is, blijft het automatisch verzamelen uitgeschakeld totdat u de configuratie corrigeert.
 
-Voorbeeld:\
-Een geautomatiseerde test kan nagaan of elk AI-systeem conforme en actuele documentatie heeft, zonder handmatige tussenkomst.
+### Beschikbare connectoren
+
+| Connector | Verzamelt |
+| --- | --- |
+| **Verzamel questionnaires** | De vragenlijsten van de werkruimte, volgens criteria. |
+| **Verzamel een contract of beleid** | Een contract of beleidsdocument, bijvoorbeeld om te controleren of het aanwezig en bijgewerkt is. |
+| **Verzamel het register van actoren** | De stakeholders (derden) van de werkruimte. |
+| **Verzamel het register van IA-systemen** | Het register van AI-systemen, bijvoorbeeld om hun documentatie te controleren. |
+| **Verzamel het register van activa** | De activa van de werkruimte. |
+| **Verzamel het incidentenregister** | De incidenten van de werkruimte. |
+| **Verzamelt het register van gegevensverwerking** | De verwerkingsactiviteiten van het register. |
+| **HTTP-verzoek** | Het resultaat van een verzoek aan een willekeurige API of een willekeurig eindpunt (zie hieronder). |
+
+Voorbeeld: een geautomatiseerde test kan nagaan of elk AI-systeem conforme en actuele documentatie heeft, zonder handmatige tussenkomst.
 
 ## Een aangepaste connector toevoegen
 
@@ -146,34 +169,22 @@ De connector is vooral geschikt om:
 
 <figure><img src="../../../.gitbook/assets/compliance-test-http-connector-form.png" alt="Venster voor het aanmaken van de HTTP-connector met de velden URL, HTTP-methode, Auth, Headers, URL-parameters en Body"><figcaption><p>De configuratie-interface van de HTTP-connector met de tabbladen Auth, Headers, URL-parameters en Body</p></figcaption></figure>
 
-De configuratie-interface van de HTTP-connector is opnieuw ontworpen, zodat u verzoeken rechtstreeks vanuit Dastra kunt opbouwen en testen.
-
-Met de configuratie-interface bouwt u een verzoek op zonder de JSON-syntaxis te kennen:
-
-* Keuze van de authenticatiemethode: kies rechtstreeks tussen **API-sleutel**, **Autorisatietoken (Bearer)** of **Basisauthenticatie (Basic)**, zonder headers handmatig in JSON-indeling in te voeren.
-* Afgeschermde inloggegevens: gevoelige velden (token, wachtwoord) zijn standaard afgeschermd. Met een oogpictogram maakt u ze tijdelijk zichtbaar. Deze waarden verschijnen nooit leesbaar in de logs.
-* Editors voor sleutel/waarde-paren (zoals in Postman): configureer eigen headers en URL-parameters als sleutel/waarde-paren, zonder JSON te schrijven.
-* Alleen-lezen voorbeeld: een voorbeeld toont de headers die bij de uitvoering echt worden verzonden, waarbij gevoelige waarden afgeschermd blijven.
-
-### Verzoekbouwer
-
-Met een visuele editor configureert u elk onderdeel van het verzoek:
+Met de configuratie-interface van de HTTP-connector bouwt u een verzoek op zonder de JSON-syntaxis te kennen.
 
 | Veld | Beschrijving |
 | --- | --- |
-| URL | Het te bevragen eindpunt (verplicht). Ondersteunt variabelen tussen accolades `{{variabele}}`. |
-| HTTP-methode | GET, POST, PUT, PATCH, DELETE. |
-| **Headers** | Voeg headers toe als sleutel/waarde-paren: verwerking van authenticatie met token, API-sleutel of eigen header. |
-| **Aanvraagtekst** | JSON-payload of vrije tekst (voor de methoden POST/PUT/PATCH). |
-| Variabelen | Declareer herbruikbare variabelen in de URL en in de aanvraagtekst, die bij de uitvoering worden ingevuld. |
+| **URL** | Het te bevragen eindpunt. Verplicht, in de indeling `http://` of `https://`. |
+| **HTTP Method** | `GET` of `POST`. |
+| Tabblad **Auth** | Kies de **Authenticatie**: **Geen**, **API-sleutel**, **Autorisatietoken (Bearer)** of **Basisauthenticatie (Basic)**. De bijbehorende header wordt automatisch aan elk verzoek toegevoegd, zonder dat u JSON hoeft in te voeren. |
+| Tabblad **Headers** | Eigen headers als sleutel/waarde-paren, verzonden naast de authenticatie. |
+| Tabblad **URL-parameters** | Queryparameters als sleutel/waarde-paren, aan de URL toegevoegd. |
+| Tabblad **Body** | **Aanvraagtekst** in JSON-indeling. |
 
-### Het verzoek testen
+Gevoelige velden (API-sleutel, token, wachtwoord) zijn standaard afgeschermd. Met een oogpictogram maakt u ze tijdelijk zichtbaar. Alleen-lezen voorbeelden tonen wat er werkelijk wordt verzonden: **Headers die worden verzonden**, **URL die wordt aangeroepen** en **Aanvraagtekst die wordt verzonden**, waarbij gevoelige waarden afgeschermd blijven.
 
-Met een testknop (**Test request**) voert u het verzoek rechtstreeks vanuit de configuratie-interface uit en toont u het ruwe antwoord. Dat vergemakkelijkt het opsporen van fouten voordat u de connector aan een conformiteitstest koppelt.
+### Resultaat van het verzoek
 
-### Het antwoord analyseren
-
-Leg de succescriteria vast: verwachte HTTP-code, aanwezigheid van een veld in het JSON-antwoord, doelwaarde van een attribuut. Het resultaat van de analyse wordt als bewijs opgeslagen in het conformiteitsproject.
+De test slaagt wanneer het eindpunt met HTTP-code 200 antwoordt. Elke uitvoering wordt als bewijs opgeslagen in het conformiteitsproject, en de test wordt opnieuw uitgevoerd volgens de **Frequentie van de test** die u bij de installatie van de connector hebt gekozen. De succescriteria kunt u niet configureren.
 
 ## Voordelen van geautomatiseerde tests
 
@@ -196,56 +207,49 @@ Wanneer u bewijs aan een test toevoegt, kunt u een bestand rechtstreeks selecter
 
 ***
 
-## IA-analyse van bewijs
+## AI-analyse van bewijs
 
-Dastra kan het bewijs dat aan een test is gekoppeld automatisch analyseren en aangeven of het overeenkomt met wat de procedure verwachtte. Deze functie is een hulpmiddel voor de auditor: ze vervangt het menselijke oordeel nooit en accepteert of weigert geen bewijs namens de klant.
+Dastra kan het bewijs dat aan een test is gekoppeld automatisch analyseren en aangeven of het overeenkomt met wat de procedure verwachtte. Deze functie is een hulpmiddel voor de auditor: ze vervangt het menselijke oordeel nooit en accepteert of weigert geen bewijs namens u.
 
 ### Werking
 
-Wanneer u bewijs aan een testprocedure toevoegt, ontvangt de AI twee elementen:
+Wanneer u bewijs aan een test toevoegt, vergelijkt de AI de inhoud van het bewijs met het label en de beschrijving van de testprocedure. Het resultaat verschijnt in de kolom **Waardering IA** van de bewijstabel, als een gekleurde badge:
 
-1. De procedurebeschrijving: wat de test als bewijs verwacht
-2. De inhoud van het aangeleverde bewijs, geanalyseerd naargelang het type (zie hieronder)
-
-De AI vergelijkt beide en geeft vier gegevens terug, die in de bewijstabel verschijnen als een gekleurde badge met een tooltip:
-
-| Gegeven | Beschrijving |
+| Waardering | Betekenis |
 | --- | --- |
-| Waardering | **Correct**, **Waarschijnlijk correct**, **Niet conform** of **Onbekend** |
-| Vertrouwensscore | Van 0 tot 100 %: geeft aan hoe zeker de AI is van haar oordeel |
-| Beschrijving | Korte samenvatting van het geanalyseerde document |
-| Rechtvaardiging | Uitleg van het oordeel ten opzichte van de criteria van de procedure |
+| **Correct** | Het bewijs komt overeen met de procedure. |
+| **Waarschijnlijk correct** | Het bewijs lijkt overeen te komen, een menselijke controle wordt aanbevolen. |
+| **Niet conform** | Het bewijs komt niet overeen met de procedure. |
+| **Onbekend** | De AI kan geen conclusie trekken. |
+
+Houd de muisaanwijzer boven de badge om het **Document** (samenvatting van het geanalyseerde document), het **Vertrouwen in de analyse** (van 0 tot 100 %) en de **Details** weer te geven die de waardering onderbouwen.
 
 ### Ondersteunde soorten bewijs
 
-De analyse past zich automatisch aan het type aangeleverd bewijs aan:
+De analyse past zich aan het type aangeleverd bewijs aan:
 
 | Soort bewijs | Analysemethode |
 | --- | --- |
-| Schermafdruk of afbeelding | Visuele analyse van de inhoud |
-| Document (PDF, Word, tekst) | Lezen en extraheren van de tekstinhoud |
-| URL of webpagina | Ophalen van de pagina via de opgegeven URL |
-| Geen bewijs bijgevoegd | Resultaat automatisch ingesteld op **Onbekend** |
+| Afbeelding (schermafdruk, JPEG, PNG enzovoort) | Visuele analyse van de inhoud door een visueel model |
+| Document (PDF, Word) | Extractie van de tekst, daarna analyse van de tekst |
 
-{% hint style="info" %}
-Een tooltip bij het analyseresultaat legt uit welke methode de AI voor het betrokken bewijs heeft gebruikt (OCR, lezen van het label, vergelijking met de testprocedure enzovoort). De tooltip bevat ook een link naar deze documentatie, voor meer informatie over de werking van de analyse.
-{% endhint %}
+De tooltip van de kolomkop **Waardering IA** herinnert aan deze methode.
 
 ### Activering en instellingen
 
-De functie is optioneel en standaard uitgeschakeld. Om ze te activeren gaat u naar **Configuratie** > **Conformiteit** en schakelt u de optie **Automatische IA-analyse van bewijsstukken** in.
+De functie is optioneel en standaard uitgeschakeld. Om ze te activeren gaat u naar **Instellingen voor werkruimte** > **Conformiteit** en schakelt u de optie **Automatische IA-analyse van bewijsstukken** in.
 
 {% hint style="info" %}
 Zolang de functie niet is geactiveerd, worden er geen bewijsgegevens naar het AI-model verzonden.
 {% endhint %}
 
-Het AI-model dat voor de analyse van bewijs wordt gebruikt, kunt u naar keuze van uw organisatie configureren via de instellingen van de AI-assistent (modelfamilie of aangepaste AI-provider).
+Om de analyse uit te schakelen klikt u op **Ik wil deze functie uitschakelen** in de tooltip van een resultaat: de link leidt naar de conformiteitsinstellingen. Het AI-model dat wordt gebruikt, kunt u naar keuze van uw organisatie configureren via de instellingen van de AI-assistent (modelfamilie of aangepaste AI-provider).
 
 ### Wat de analyse niet doet
 
 * Ze accepteert of weigert bewijs niet automatisch: de eindbeslissing blijft altijd bij de auditor.
 * Ze wijzigt de status van de test niet.
-* Ze is niet bindend: een lage vertrouwensscore (**Onbekend** of **Waarschijnlijk correct**) geeft alleen aan dat een menselijke controle aanbevolen is.
+* Ze is niet bindend: een waardering **Onbekend** of **Waarschijnlijk correct** geeft alleen aan dat een menselijke controle aanbevolen is.
 
 ***
 
@@ -255,7 +259,7 @@ Net als bij controles kan de testbibliotheek overbodige tests verzamelen, vooral
 
 ### Werking van het samenvoegen
 
-Selecteer in de testbibliotheek de tests die u wilt samenvoegen en klik op **Samenvoegen**. Kies de doeltest die u wilt behouden: de koppelingen van de brontests (gekoppelde controles, uitvoeringsresultaten, frequentie) worden overgenomen door de doeltest, waarna de brontests worden verwijderd.
+Selecteer in de testbibliotheek de tests die u wilt samenvoegen en klik op **Samenvoegen**. Kies de **Reference version**, dat wil zeggen de test die u wilt behouden: de koppelingen van de andere tests (gekoppelde controles, uitvoeringsresultaten, frequentie) worden overgenomen door die test, waarna de andere tests worden verwijderd. Vink in de vergelijkingstabel de velden aan die u wilt overnemen in de kolommen **Keep selected fields**.
 
 {% hint style="warning" %}
 Het samenvoegen is onomkeerbaar. Controleer de koppelingen van elke brontest voordat u bevestigt.
@@ -271,7 +275,7 @@ Het samenvoegen is onomkeerbaar. Controleer de koppelingen van elke brontest voo
 
 ## Een test aan een document koppelen
 
-Een conformiteitstest kunt u koppelen aan een of meer documenten uit het Bestandsbeheer van Dastra: contracten, beleidsdocumenten, documentair bewijs, verwerkersovereenkomsten voor subverwerking. Dankzij deze koppeling vindt u gemakkelijk de tests die bij elk document horen, en omgekeerd.
+Een conformiteitstest kunt u koppelen aan een of meer documenten uit het Bestandsbeheer van Dastra: contracten, beleidsdocumenten, documentair bewijs, verwerkersovereenkomsten voor subverwerking. Dankzij deze koppeling vindt u de tests die bij elk document horen, en omgekeerd.
 
 ### Vanuit de weergave van een document
 
@@ -285,7 +289,7 @@ In Bestandsbeheer toont het detailblad van een document in de zijkolom alle Dast
 
 <figure><img src="../../../.gitbook/assets/file-manager-document-with-test.png" alt="Documentblad in Bestandsbeheer met de sectie Tests in de zijkolom"><figcaption><p>Bestandsbeheer toont de tests die bij elk document horen in de detailkolom</p></figcaption></figure>
 
-Dankzij deze tweerichtingstraceerbaarheid controleert u gemakkelijk welke tests op welk document steunen en vindt u al het documentaire bewijs vanuit Bestandsbeheer.
+Dankzij deze tweerichtingstraceerbaarheid controleert u welke tests op welk document steunen en vindt u al het documentaire bewijs vanuit Bestandsbeheer.
 
 ***
 
