@@ -2,91 +2,97 @@
 description: Learn how to identify risks in Dastra.
 ---
 
-# 1. Identification
+# 1. Identify
 
-When creating a new risk, you are asked to fill in the identification details.
+To create a risk, open **Risk management** > **Risks**, choose the tab of the object type concerned and click **Create a risk**. You can also create it from a processing activity page (see [Attach a risk to a processing activity](../attach-to-processing.md)). The **Identification** section opens.
 
-<figure><img src="../../../.gitbook/assets/cookies-gtm-trigger-scroll-depth.png" alt=""><figcaption><p>Identification</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/risks-identify-1.png" alt="Identification section of a new risk: organizational unit, linked object, risk owner, identification date and risk type"><figcaption><p>The Identification section of a risk</p></figcaption></figure>
 
-Position your risk in an organizational unit (by default, this will be the same as the treatment unit if the risk is attached to a processing activity).&#x20;
+Fill in the identification details:
 
-Define an owner for each risk. This person will be responsible for monitoring and managing the risk.&#x20;
-
-And choose a risk type. &#x20;
+* the organizational unit: by default, the one of the processing activity if the risk is attached to one;
+* the object concerned, for example the processing activity;
+* the risk owner, who is responsible for monitoring and managing the risk;
+* the identification date;
+* the type of risk, chosen from the repository;
+* a summary of the risk, specific to this object.
 
 {% hint style="info" %}
-Dastra lets you create a risk type repository. This will save you time and enable you to reuse risk types on other assets.
+Dastra lets you build a repository of risk types. The repository saves time and lets you reuse a risk type on other objects.
 {% endhint %}
 
-If your risk type is not in the repository, don't worry, just add it directly from this interface.&#x20;
+If your risk type is not in the repository, add it from this page with **Create a type of risk**.
 
-**Add a risk type**&#x20;
+## Add a risk type <a href="#add-a-risk-type" id="add-a-risk-type"></a>
 
-By creating a risk type, you can reuse this information to generate this type of risk on as many assets as you wish. For example, you may wish to identify the same risk on several of your subcontractors. All you need to do is enter the risk type once, and reuse it for each subcontractor or service provider.
+You can also manage risk types in **Risk management** > **Type of risks**, with the **Create a type of risk** button.
 
-**Identifying the type of risk**&#x20;
+You reuse a risk type to generate the same risk on as many objects as you wish. For example, you may want to identify the same risk on several of your processors: enter the risk type once, then reuse it for each processor or service provider.
 
-A risk can be defined as the combination of a feared event and one or more threats of this feared event occurring. It is measured in terms of likelihood (probability of occurrence) and severity (impact).
+In the **Identification** section of the risk type, give it a name and an internal reference. Tags are optional.
 
-<figure><img src="../../../.gitbook/assets/risk-identification-form.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/risks-identify-2.png" alt="Risk type form: name, reference, dreaded event and its description"><figcaption><p>A risk type: name, reference and dreaded event</p></figcaption></figure>
 
-**Dreaded event**&#x20;
+A risk is the combination of a dreaded event and one or more threats that could cause it. It is measured in terms of likelihood (probability of occurrence) and severity (impact).
 
-To add a type of risk, it is necessary to identify the feared event and its impact. The feared event is the consequence of the occurrence of a risk.&#x20;
+### Dreaded event
 
-Classically, 3 types of feared event are evoked in terms of information systems security and/or privacy. In fact, the RGPD calls on us to guarantee the security of personal data along these three lines.&#x20;
+To add a risk type, identify the dreaded event and its impacts. The dreaded event is the consequence of the occurrence of a risk.
 
-* Breach of **confidentiality**&#x20;
-* Breach of **availability**&#x20;
-* Breach of **integrity**&#x20;
+Classically, three types of dreaded events are mentioned for information security and privacy. The GDPR calls on you to [guarantee the security](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679#d1e3428-1-1) of personal data along these three lines (Article 32):
 
-With Dastra, the possibilities for creating feared events are unlimited. You can create your own categories of feared events. We can also imagine an industrial accident, an act of corruption, etc. In our approach, we'll concentrate initially on risks to information systems. For each feared event, you are asked to specify the impact it will have on the situation.
+* breach of **confidentiality**
+* breach of **availability**
+* breach of **integrity**
 
-In the description of the feared event, specify the impacts.
+You can create your own categories of dreaded events with **Create dreaded event**, for example an industrial accident or an act of corruption. The number of dreaded events is not limited. The module first focuses on risks to information systems.
 
-<figure><img src="../../../.gitbook/assets/register-dataset-retention-periods-tabs.png" alt=""><figcaption></figcaption></figure>
+For each dreaded event, specify the impacts it causes in the **Description of the dreaded event** field.
 
-Impacts may vary depending on the context and the object for which the risk is being addressed. In the case of risks relating to personal data, the impacts will consist of damage to individuals (identity theft, false accusations, loss of civil status, etc.).&#x20;
+Impacts vary with the context and the object for which the risk is addressed. For risks relating to personal data, the impacts are harms to individuals: identity theft, false accusation, loss of civil status and so on.
 
-**Threats**&#x20;
+### Threats
 
-For each feared event, we need to identify the threat(s) that will enable it to occur. A scenario needs to be devised. You can use past events or your imagination to anticipate what might happen.
+For each dreaded event, identify the threat or threats that enable it to occur. Imagine a scenario: use past events or your imagination to anticipate what might happen.
 
-<figure><img src="../../../.gitbook/assets/risk-threats-section.png" alt=""><figcaption></figcaption></figure>
+In the **Threats** section, select an existing threat with **Add a threat** or create one. The **Threat details** field describes the scenario.
 
-Dastra offers template repositories in particular for generic threats. To import them, you need to search for generic threats in the library by selecting the "templates" source.&#x20;
+<figure><img src="../../../.gitbook/assets/risk-threats-section.png" alt="Threats section of a risk type, with the Add a threat button"><figcaption><p>The Threats section of a risk type</p></figcaption></figure>
 
-**Sources**&#x20;
+Dastra offers templates for generic threats. To import them, open **Risk management** > **Threats**, open the menu of the **Create threat** button and click **Create from library...**.
 
-Risk sources are the elements that will enable the feared event to occur (who or what could cause the feared event?).&#x20;
+### Sources
 
-<figure><img src="../../../.gitbook/assets/risk-sources-of-risk-section.png" alt=""><figcaption></figcaption></figure>
+Risk sources are the elements that enable the dreaded event to occur: who or what could be at its origin?
 
-To do this, we need to take into account human sources: e.g. a computer administrator, a cyber-attacker, a foreign state... and non-human sources: e.g. water, an earthquake, a non-targeted computer virus.
+Take into account human sources, for example an IT administrator, a cyber-attacker or a foreign state, and non-human sources, for example water, an earthquake or a non-targeted computer virus.
 
-**Control points**&#x20;
+In the **Sources** section, select or create the sources, then describe them in **Source description**.
 
-For each risk, we need to identify the existing or planned measures that will enable us to deal with the risk.&#x20;
+<figure><img src="../../../.gitbook/assets/risks-identify-3.png" alt="Sources section of a risk type with two sources selected"><figcaption><p>The Sources section of a risk type</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/settings-scim-azure-provisioning-toolbar.png" alt=""><figcaption></figcaption></figure>
+### Control points
 
-These control points can be of several types:&#x20;
+For each risk type, determine the existing or planned measures that will deal with the risk. These control points can be of several kinds: security, technical, organizational, legal or functional measures.
 
-* security measures,&#x20;
-* technical measures,&#x20;
-* organizational measures,&#x20;
-* or legal or functional measures.&#x20;
+In the **Control points** section, select existing control points with **Select control points** or create new ones with **Create a control point**. Each control point defines:
 
-ISO 27001 identifies standard control points for information system security risks. The CNIL data security guide also proposes a number of control points in the field of personal data protection.
+* its influence: reducing the impact (mitigation) or the probability (prevention) of the risk;
+* its possible answers and their score, from 0 to 100 points. By default, a new control point offers the answers **Yes** (1 point), **No** (0 points) and **Not applicable**;
+* its owner, its priority (1 is the highest, 10 the lowest) and, if needed, a recurrent assessment with the number of days between two controls.
 
-**Pre-assessment**&#x20;
+<figure><img src="../../../.gitbook/assets/risks-identify-4.png" alt="Control points section of a risk type with three control points selected"><figcaption><p>The Control points section of a risk type</p></figcaption></figure>
 
-Within a risk type, you can include a risk assessment. This assessment will be included in the final risk.
+For information security risks, ISO 27001 identifies standard control points. The CNIL personal data security guide also proposes several.
 
-<figure><img src="../../../.gitbook/assets/settings-workflow-steps-task-3steps.png" alt=""><figcaption></figcaption></figure>
+### Pre-assessment
 
-&#x20;Pre-assessment allows you to save time on the future risks you will have on this basis. The assessment is made in terms of probability and impact, according to the scale you have set.&#x20;
+In a risk type, you can include an assessment. It is carried over to every risk created from this type, which saves time. It is optional.
 
-You can identify the initial risk: this is the theoretical risk associated with the activity.&#x20;
+The assessment is made in terms of likelihood and severity, according to the scale you have set (see [Assess](assess.md)).
 
-It can also be defined as the initial risk, before any control measures (internal control). You can also identify the residual risk: this is the risk remaining after the implementation of control measures (control points in particular).
+You can set the initial risk: the theoretical risk associated with the activity, before any control measure (internal control).
+
+You can also set the residual risk: the risk remaining after the implementation of control measures, control points in particular. It cannot exceed the initial risk.
+
+<figure><img src="../../../.gitbook/assets/risks-identify-5.png" alt="Pre-assessment section of a risk type with the initial and residual levels"><figcaption><p>The pre-assessment of the initial and residual risk</p></figcaption></figure>
