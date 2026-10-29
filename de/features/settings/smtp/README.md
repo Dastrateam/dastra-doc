@@ -1,69 +1,76 @@
 ---
 description: >-
-  Dastra ermöglicht es Ihnen, Ihre Benachrichtigungs-E-Mails über Ihren eigenen
-  E-Mail-Versandserver zu routen
+  Senden Sie die Benachrichtigungs-E-Mails von Dastra über Ihren eigenen
+  E-Mail-Versandserver.
 ---
 
 # SMTP-Konfiguration
 
-## Funktionsprinzip
+Diese Seite erklärt, wie Sie die E-Mails von Dastra über Ihren eigenen SMTP-Server leiten. Sie richtet sich an die Inhaber der Organisation.
 
-Standardmäßig routet Dastra eine große Anzahl von Benachrichtigungs-E-Mails für die folgenden Dienste:
+## Funktionsweise
 
-* [Benachrichtigungen](../notifications.md) in Echtzeit (Neue Kommentare, Aufgaben, ...)
-* Austausch-E-Mails im Rahmen [einer Rechteausübungsanfrage](../../requests/README.md)
-* Einladungen zu [Audits](../../questionnaires/README.md) für die Befragten
-* [Einladungen](../../../getting-started/setup/users.md) neuer Nutzer
+Standardmäßig versendet Dastra seine E-Mails mit seinem eigenen SMTP-Dienst. Das betrifft:
 
-Standardmäßig verwendet Dastra seinen eigenen SMTP-Dienst.
+* [Benachrichtigungen](../notifications.md) in Echtzeit (neue Kommentare, Aufgaben usw.);
+* den E-Mail-Austausch im Rahmen einer [Betroffenenanfrage](../../requests/README.md);
+* Einladungen an die Teilnehmer von [Fragebögen](../../questionnaires/README.md);
+* [Einladungen](../../../getting-started/setup/users.md) neuer Nutzer.
 
-## Wie konfiguriere ich meinen SMTP-Versandserver?
-
-{% hint style="warning" %}
-Achtung! Die Anpassung des SMTP kann zu Instabilitäten der Plattform führen. Führen Sie diese Manipulation nur durch, wenn Sie sich des ordnungsgemäßen Funktionierens und der Zustellbarkeit Ihres E-Mail-Versanddienstes sicher sind.
-{% endhint %}
-
-### Interesse an der SMTP-Anpassung
-
-Dastra ist bestrebt, eine maximale Verfügbarkeit und Sicherheit für den Versand transaktionaler E-Mails zu gewährleisten.
-
-Abhängig von Ihrer internen Sicherheitsrichtlinie kann es jedoch erforderlich sein, das Routing der transaktionalen E-Mails zu internalisieren, um die E-Mail-Flüsse zu kontrollieren.
-
-### Voraussetzungen
-
-Sie benötigen die Konfigurationsdaten Ihres SMTP-Servers:
-
-* SMTP-Host (z. B.: smtp.yourservice.com)
-* SMTP-Port (standardmäßig Port 25)
-* Benutzername
-* Passwort
-* Eine **gültige Absender-E-Mail-Adresse** (z. B.: noreply@yourservice.com): Diese Adresse muss von Ihrem SMTP-Anbieter korrekt validiert sein.
+Sobald Ihr Server konfiguriert ist, laufen alle diese E-Mails über ihn, für alle Mandanten der Organisation.
 
 {% hint style="warning" %}
-Achtung, Ihr SMTP-Server muss zwingend eine sichere Verbindung mit SSL unterstützen
+Das Anpassen von SMTP kann die Plattform instabil machen. Tun Sie dies nur, wenn Sie sicher sind, dass Ihr E-Mail-Versanddienst einwandfrei funktioniert und zuverlässig zustellt.
 {% endhint %}
 
-### Konfiguration
+## Warum SMTP anpassen
 
-Gehen Sie auf die [SMTP-Server-Konfigurationsseite](https://app.dastra.eu/general-settings/smtp)
+Dastra stellt die Verfügbarkeit und Sicherheit transaktionaler E-Mails sicher. Je nach Ihrer internen Sicherheitsrichtlinie kann es dennoch nötig sein, das Routing dieser E-Mails selbst zu steuern, um Ihre Mailflüsse zu verwalten.
 
-Füllen Sie die Formularfelder mit den unter [Voraussetzungen](README.md#prerequis) angegebenen Daten aus
+## Zugang und Voraussetzungen
 
-![](<../../../.gitbook/assets/Erweiterte Konfiguration28.png>)
+Die Seite befindet sich unter **Organisationseinstellungen** > **Personalisiertes SMTP**. Sie ist den Inhabern der Organisation und dem Enterprise-Tarif vorbehalten (Funktion für erweiterte Sicherheit).
 
-Beachten Sie, dass die Konnektivität zum Server automatisch getestet wird, um sicherzustellen, dass die Server-Anmeldedaten korrekt sind. Eine Test-E-Mail wird automatisch von unseren Servern gesendet.
+Sie haben zwei Möglichkeiten:
 
-### Tests
+* einen Anbieter verbinden (**Outlook (MS Office 365)** oder **Gmail (Google workspace)**): siehe [Integration externer Anbieter](office-365-gmail.md);
+* die Einstellungen Ihres eigenen SMTP-Servers eingeben, wie unten beschrieben.
 
-Sobald Sie das Formular validiert haben, sollte Ihr SMTP-Server funktionieren.
+Halten Sie für einen SMTP-Server Folgendes bereit:
 
-Sie können überprüfen, ob die Benachrichtigungs-E-Mails tatsächlich von Ihrem SMTP-Server stammen. Erstellen Sie dazu beispielsweise einen Kommentar in einer Verarbeitung und prüfen Sie, ob Sie die Benachrichtigungs-E-Mail in Ihrem Postfach erhalten.
+* den Namen des SMTP-Servers (zum Beispiel `smtp.yourservice.com`);
+* den Port des SMTP-Servers (standardmäßig 25);
+* den Benutzernamen und das Passwort des Servers;
+* eine gültige Absenderadresse (zum Beispiel `noreply@yourservice.com`): Ihr SMTP-Anbieter muss sie validiert haben;
+* einen Absender-Alias, also den Namen, der als Absender angezeigt wird (zum Beispiel `Compliance-Team`).
 
-* **Wenn Sie keine E-Mail erhalten**: Entweder haben Sie es nicht geschafft, die Benachrichtigung auszulösen, oder es liegt ein Problem in Ihrer SMTP-Konfiguration vor
-* **Wenn Sie eine E-Mail erhalten**: Überprüfen Sie, ob Ihr SMTP und Ihr Absender tatsächlich in den E-Mail-Details erscheinen.
+{% hint style="warning" %}
+Dastra verlangt eine gesicherte Verbindung mit TLS, mindestens in Version 1.2. Ihr SMTP-Server muss dies unterstützen.
+{% endhint %}
+
+## Konfiguration
+
+1. Öffnen Sie die [SMTP-Konfigurationsseite](https://app.dastra.eu/general-settings/smtp).
+2. Füllen Sie im Bereich **Personalisiertes SMTP** die Felder **Name des SMTP-Servers (TLS erforderlich)**, **SMTP-Server-Port**, **Benutzername des SMTP-Servers**, **SMTP-Server-Passwort**, **E-Mail des Absenders** und **Absender-Alias** aus.
+3. Klicken Sie auf **Speichern**.
+
+<figure><img src="../../../.gitbook/assets/settings-smtp-config-form.png" alt="Konfigurationsformular des SMTP-Servers mit den Feldern Server, Port, Benutzername, Passwort, Absender-E-Mail und Absender-Alias"><figcaption><p>Das Konfigurationsformular des SMTP-Servers</p></figcaption></figure>
+
+Beim Speichern verbindet sich Dastra mit Ihrem Server und sendet eine Testnachricht an die E-Mail-Adresse Ihres Kontos. Schlägt die Verbindung fehl, wird die Konfiguration nicht gespeichert und die vom Server zurückgegebene Fehlermeldung angezeigt.
+
+Solange ein Anbieter verbunden ist, ist das Formular für das personalisierte SMTP deaktiviert. Klicken Sie zuerst auf **Integration entfernen**, um Ihren eigenen Server zu verwenden.
+
+## Testen
+
+Sobald die Konfiguration gespeichert ist, erscheint die Schaltfläche **Testen**. Klicken Sie darauf und bestätigen Sie: Dastra sendet eine Testnachricht an die E-Mail-Adresse Ihres persönlichen Kontos.
+
+Sie können auch prüfen, ob Benachrichtigungs-E-Mails von Ihrem Server kommen. Fügen Sie zum Beispiel einen Kommentar zu einer Verarbeitungstätigkeit hinzu und sehen Sie nach, ob die Benachrichtigung in Ihrem Postfach ankommt.
+
+* **Sie erhalten keine E-Mail**: Entweder wurde die Benachrichtigung nicht ausgelöst, oder Ihre SMTP-Konfiguration hat ein Problem.
+* **Sie erhalten eine E-Mail**: Prüfen Sie, ob Ihr SMTP-Server und Ihr Absender in den Details der Nachricht erscheinen.
 
 {% hint style="info" %}
-[Wie man die E-Mail-Details in GMAIL anzeigt](https://support.google.com/mail/answer/29436?hl=fr).
+[So sehen Sie die E-Mail-Details in Gmail](https://support.google.com/mail/answer/29436).
 
-[Wie man die E-Mail-Details in Outlook anzeigt](https://support.microsoft.com/fr-fr/office/afficher-les-en-t%C3%AAtes-de-message-internet-dans-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
+[So sehen Sie die E-Mail-Details in Outlook](https://support.microsoft.com/en-us/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
 {% endhint %}

@@ -1,41 +1,61 @@
 ---
-description: Lernen Sie, die Workflow-Schritte in Dastra anzupassen.
+description: >-
+  Passen Sie die Prozessschritte jedes Objekttyps in Dastra an: hinzufügen,
+  neu anordnen, den internen Status festlegen und löschen.
 ---
 
 # Prozessschritte
 
 {% hint style="info" %}
-**Prozessschritte vs. Workflow-Regeln**
+**Prozessschritte und Workflow-Regeln**
 
-Die Prozessschritte definieren die Status, die Objekte durchlaufen. Um Aktionen bei Schrittänderungen zu automatisieren (eine Benachrichtigung senden, eine Aufgabe erstellen…), konsultieren Sie die [Workflow-Regeln](workflow-rules.md).
+Prozessschritte legen die Status fest, die Objekte durchlaufen. Wenn Sie Aktionen automatisieren möchten, sobald sich ein Schritt ändert (eine Benachrichtigung senden, eine Aufgabe erstellen …), lesen Sie [Workflow-Regeln](workflow-rules.md).
 {% endhint %}
 
-## Wozu dienen Prozessschritte?
+## Zweck der Prozessschritte
 
-Die Workflow-Schritte ermöglichen es, einen Realisierungsprozess zu materialisieren, indem man von einem Schritt zum nächsten übergeht.
+Prozessschritte bilden einen Arbeitsablauf ab: Objekte wandern von einem Schritt zum nächsten. Sie können Ihre Compliance-Verfahren operativ gliedern, indem Sie die zu durchlaufenden Schritte direkt in Dastra festlegen.
 
-So können Sie Ihr Verfahren sehr operativ umsetzen, indem Sie die zu befolgenden Schritte direkt in Dastra angeben.
+Jeder Objekttyp hat seine eigenen konfigurierbaren Schritte:
 
-## Wie passe ich die Workflow-Schritte an?
+* Betroffenenanfragen
+* Datenschutzvorfälle
+* Aufgaben
+* Verarbeitungstätigkeiten
+* Assets
+* Stakeholder
+* Datenfelder
+* Sicherheitsmaßnahmen
+* Kategorien betroffener Personen
+* KI-Systeme
+* Verträge
 
-Klicken Sie auf „**Mandanteneinstellungen**" und dann auf „**Prozessschritte**"
+Jeder Schritt ist mit einem **internen Status** verknüpft, der vom Objekttyp abhängt. Bei einer Verarbeitungstätigkeit sind die Status zum Beispiel „Entwurf“ und „Veröffentlicht“.
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration6.png" alt=""><figcaption></figcaption></figure>
+## Prozessschritte anpassen
 
-Sie erhalten Zugriff auf die verschiedenen Schritte und Status („Entwurf" oder „Veröffentlicht") der pro Prozess verfügbaren Workflows. Passen Sie diese nach Ihren Wünschen an und klicken Sie auf „Anlegen".
+Klicken Sie im Seitenmenü auf **Mandanteneinstellungen** und dann im Bereich **Prozess** auf **Prozessschritte**. Diese Seite ist Nutzern vorbehalten, die die erweiterten Einstellungen verwalten dürfen.
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-workflow-stages-1.png" alt="Das Menü Mandanteneinstellungen mit dem Eintrag Prozessschritte"><figcaption><p>Der Eintrag Prozessschritte in den Mandanteneinstellungen</p></figcaption></figure>
 
-## Kann man einen Workflow-Schritt löschen?
+Wählen Sie oben auf der Seite den Objekttyp in der Liste aus: Sie sehen die für diesen Prozess verfügbaren Schritte mit ihrem internen Status. Passen Sie sie an die Prozesse Ihrer Organisation an und klicken Sie dann auf **Speichern**.
 
-Um Schritte zu löschen, klicken Sie auf den Papierkorb.
+* Mit **Bearbeiten** ändern Sie bei einem Schritt den Namen, die Beschreibung und den internen Status und können die Bearbeitung des Objekts in diesem Schritt Nutzern mit einer bestimmten Rolle vorbehalten.
+* Mit **Schritt hinzufügen** erstellen Sie einen neuen Schritt.
+* Ziehen Sie einen Schritt per Drag-and-drop, um die Reihenfolge zu ändern. Der erste Schritt ist mit **Initial** gekennzeichnet, der letzte mit **Final**.
 
-Die an den gelöschten Schritt angehängten Elemente werden automatisch dem ersten Schritt im selben Status zugeordnet.
+<figure><img src="../../.gitbook/assets/settings-workflow-stages-2.png" alt="Liste der Schritte des Prozesses einer Verarbeitungstätigkeit"><figcaption><p>Die Schritte des Prozesses einer Verarbeitungstätigkeit</p></figcaption></figure>
 
-Wenn Sie zum Beispiel den Schritt „In Bearbeitung" in den Aufgaben-Workflows löschen:
+## Einen Prozessschritt löschen
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration8.png" alt=""><figcaption></figcaption></figure>
+Um einen Schritt zu löschen, klicken Sie neben ihm auf **Löschen** und bestätigen Sie.
 
-Werden die angehängten Objekte auf den Schritt „Bedarf an Informationen" verschoben:
+Alle Objekte, die dem gelöschten Schritt zugeordnet sind, werden automatisch dem ersten Schritt mit demselben internen Status zugewiesen.
 
-<figure><img src="../../.gitbook/assets/Erweiterte Konfiguration9.png" alt=""><figcaption></figcaption></figure>
+Wenn Sie zum Beispiel den Schritt „In Bearbeitung“ im Aufgabenprozess löschen:
+
+<figure><img src="../../.gitbook/assets/settings-workflow-stages-3.png" alt="Aufgabenprozess mit vier Schritten"><figcaption><p>Der Aufgabenprozess vor dem Löschen des Schritts „In Bearbeitung“</p></figcaption></figure>
+
+Die zugeordneten Objekte wechseln in den ersten Schritt mit demselben Status, zum Beispiel „Needs info“:
+
+<figure><img src="../../.gitbook/assets/settings-workflow-stages-4.png" alt="Aufgabenprozess mit drei Schritten"><figcaption><p>Der Aufgabenprozess nach dem Löschen</p></figcaption></figure>

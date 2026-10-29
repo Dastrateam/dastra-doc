@@ -4,62 +4,69 @@ description: Details zur Konfiguration von SAML 2
 
 # SAML 2
 
-Die Konfiguration des SSO mit SAML 2 erfolgt in drei Schritten
+Die Einrichtung des SSO mit SAML 2 umfasst drei Schritte:
 
-* Konfiguration des Authentifizierungsanbieters (**Identity Provider - IdP**): Active Directory, Google Workspace...
-* Konfiguration des Dienstanbieters (**Service Provider - SP**): Dastra
-* Tests der Authentifizierung
+* den Authentifizierungsanbieter (**Identity Provider - IdP**) konfigurieren: Active Directory, Google Workspace usw.;
+* den Dienstanbieter (**Service Provider - SP**) konfigurieren: Dastra;
+* die Authentifizierung testen.
 
-Im spezifischen Fall **von ADFS-Servern** konsultieren Sie unsere spezielle Dokumentation:
+Für **ADFS-Server** gibt es eine eigene Seite:
 
 {% content-ref url="adfs.md" %}
 [adfs.md](adfs.md)
 {% endcontent-ref %}
 
-## 1. Konfiguration des Authentifizierungsanbieters
+## 1. Den Authentifizierungsanbieter konfigurieren
 
-Sie müssen eine SAML-Konfiguration in Ihrem Authentifizierungsanbieter einrichten.
+Richten Sie bei Ihrem Authentifizierungsanbieter eine SAML-Konfiguration ein.
 
-Für AD FS: [https://docs.microsoft.com/fr-fr/powerapps/maker/portals/configure/configure-saml2-settings](https://docs.microsoft.com/fr-fr/powerapps/maker/portals/configure/configure-saml2-settings)
+* Für AD FS: siehe die Seite [ADFS](adfs.md).
+* Für Microsoft Entra ID (früher Azure AD): siehe die Seite [Active Directory (Microsoft Entra ID)](entra-id.md) und die [Microsoft-Dokumentation](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso).
+* Für Google: [https://support.google.com/a/answer/6087519?hl=de](https://support.google.com/a/answer/6087519?hl=de)
 
-Für Azure AD: [https://docs.microsoft.com/fr-fr/powerapps/maker/portals/configure/configure-saml2-settings-azure-ad](https://docs.microsoft.com/fr-fr/powerapps/maker/portals/configure/configure-saml2-settings-azure-ad)
+Um die lokalen Konten (die in Dastra gehosteten) zu verknüpfen, müssen Sie eine Eigenschaft mit der E-Mail-Adresse des Nutzers übermitteln (standardmäßig sucht Dastra nach der Eigenschaft mit dem Namen [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)). Diesen Namen können Sie im Feld **Der Name des Anspruchs, der die E-Mail-Adresse enthält** ändern.
 
-Für Google: [https://support.google.com/a/answer/6087519?hl=fr](https://support.google.com/a/answer/6087519?hl=fr)
+Diese Informationen benötigen Sie, um den Dienstanbieter auszufüllen:
 
-Um den Abgleich zwischen den lokalen Konten (die in Dastra gehostet werden) herzustellen, müssen Sie eine Eigenschaft angeben, die die E-Mail des Nutzers enthält (standardmäßig sucht Dastra die Eigenschaft mit dem Namen [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)).
+* **Identitätsanbieter-Entitäts-ID** (Aussteller);
+* **Single Sign-On-URL**;
+* **das Zertifikat im RAW-Format** (Base64-codiert).
 
-Hier sind die Informationen, die Sie zur Konfiguration des Service Providers benötigen:
+Um Ihren Authentifizierungsanbieter zu konfigurieren, benötigen Sie die folgenden Informationen, die oben im SAML-Formular in Dastra angezeigt werden:
 
-* **Identity Provider's Entity id** (issuer)
-* **Single sign on url**
-* **Das Zertifikat im RAW-Format** (Base64-codiert)
+* **Aussteller (Issuer)**: standardmäßig `https://www.dastra.eu`;
+* **SP-Weiterleitungs-URI** (ACS): `https://account.dastra.eu/{connection identifier}/Acs`. Diese URL ist für jede Verbindung spezifisch: Kopieren Sie sie oben im SAML-Formular, wenn Sie die SSO-Anmeldung in Dastra hinzufügen (Schritt 2), und speichern Sie diese Anmeldung dann;
+* **SP-Start-URL (Anmelde-URL)**, wenn Ihr Anbieter eine Anmelde-URL für die Anwendung verlangt;
+* **SAML-Abmelde-URL (optional)**, wenn Ihr Anbieter die Abmeldung verwaltet.
 
-Zur Konfiguration Ihres Authentifizierungsanbieters benötigen Sie die folgenden Informationen:
+## 2. Den Dienstanbieter konfigurieren
 
-* **Issuer**: standardmäßig „https://www.dastra.eu"
-* **SP Redirect URI** (ACS): `https://account.dastra.eu/{Kennung der Verbindung}/Acs`. Diese URL ist für jede Verbindung unterschiedlich: Kopieren Sie sie oben im SAML-Formular, wenn Sie den SSO-Login in Dastra hinzufügen (Schritt 2), und speichern Sie anschließend diesen Login.
+Öffnen Sie in Dastra die [Administrationsseite des SSO](https://app.dastra.eu/general-settings/sso) (**Konfiguration der Organisation** > **Einmalige Anmeldung**, nur für Inhaber der Organisation verfügbar) und klicken Sie auf **SSO-Login hinzufügen**. Wählen Sie das Protokoll **SAML2**.
 
-## 2. Konfiguration des Dienstanbieters
+<figure><img src="../../../.gitbook/assets/settings-sso-liste-logins.png" alt="Die Seite Einmalige Anmeldung mit der Liste der SSO-Anmeldungen und der Schaltfläche SSO-Login hinzufügen"><figcaption></figcaption></figure>
 
-Gehen Sie in dastra.eu auf [die SSO-Administrationsseite](https://app.dastra.eu/general-settings/sso) und klicken Sie auf „SSO-Login hinzufügen"
+Wählen Sie dann, wie Sie die Konfiguration Ihres Identitätsanbieters angeben:
 
-![](<../../../.gitbook/assets/image-116.png>)
+* **Bitte laden Sie Ihre SAML-Konfigurationsdatei (.xml) hoch.**: Laden Sie die Metadatendatei (XML-Manifest) hoch, die Ihr Anbieter bereitstellt. Dastra füllt die Formularfelder anhand dieser Datei aus. Klicken Sie auf die Zurück-Schaltfläche, um die Methode zu wechseln.
+* **Manuelle Konfiguration**: Füllen Sie die Felder selbst aus.
 
-Füllen Sie die Formularfelder mithilfe der Konfigurationsinformationen der Entität aus:
+<figure><img src="../../../.gitbook/assets/settings-sso-saml-upload-manifest.png" alt="Die Auswahl zwischen dem Hochladen des SAML-Manifests und der manuellen Konfiguration"><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/image-117.png>)
+Füllen Sie bei der manuellen Konfiguration die Formularfelder mit den Informationen Ihres Authentifizierungsanbieters aus:
+
+<figure><img src="../../../.gitbook/assets/settings-sso-saml-config-form.png" alt="Das Formular zur manuellen Konfiguration einer SAML-SSO-Anmeldung in Dastra"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Es ist möglich, alle Nutzer des Abonnementkontos zur Verwendung eines bestimmten SSO zu zwingen (durch Aktivieren des Kontrollkästchens „Nutzer zur Verwendung dieses SSO zwingen"). Vor der Aktivierung dieser Option ist Vorsicht geboten. Denn wenn das SSO nicht funktioniert, können Sie nicht mehr als Administrator auf Ihr Konto zugreifen. Es ist vorzuziehen, das SSO pro Nutzer zu verwalten.
+Sie können alle Nutzer der Organisation zwingen, ein bestimmtes SSO zu verwenden (Option **Für alle Nutzer erzwingen**). Vorsicht: Wenn das SSO nicht funktioniert, können Sie als Administrator nicht mehr auf Ihr Konto zugreifen. Halten Sie ein lokales Ausweichkonto bereit oder nehmen Sie Nutzer über das Feld **Bestimmte Nutzer, die von der SSO ausgenommen sind (z. B. Sicherheitsadministratoren)** aus (siehe [Single Sign On (SSO)](README.md)). Die Verwaltung des SSO pro Nutzer ist vorzuziehen.
 {% endhint %}
 
 {% hint style="warning" %}
-**Sonderfälle externer Nutzer**\
-Nur interne Konten eines Abonnements unterliegen dem SSO. Konten externer Nutzer (die ein anderes zusätzliches Abonnement haben) unterliegen nicht dem SSO.
+**Sonderfall externer Nutzer**\
+Nur Konten, die zu einem Abonnement gehören, unterliegen dem SSO. Konten externer Nutzer (die ein zusätzliches Abonnement haben) unterliegen dem SSO nicht.
 {% endhint %}
 
-## 3. SSO testen
+## 3. Das SSO testen
 
-Sobald die Konfiguration abgeschlossen ist, können Sie die Authentifizierung testen, indem Sie unten rechts auf die Schaltfläche „Testen" klicken. Wenn Sie bei der SSO-Konfiguration auf ein Problem stoßen, wenden Sie sich bitte an den Support, indem Sie die Seite zur [Verwaltung von Support-Tickets](https://app.dastra.eu/general-settings/support) aufrufen.
+Wenn die Konfiguration abgeschlossen ist, testen Sie die Authentifizierung, indem Sie in der Liste rechts neben der Verbindung auf **Testen** klicken. Wenn Sie auf ein Problem stoßen, eröffnen Sie ein Ticket über die [Supportseite](https://app.dastra.eu/general-settings/support).
 
-![](<../../../.gitbook/assets/image-120.png>)
+<figure><img src="../../../.gitbook/assets/settings-sso-saml-provider-card.png" alt="Eine SAML-SSO-Verbindung in der Liste mit ihrem Status und der Schaltfläche Testen"><figcaption></figcaption></figure>
