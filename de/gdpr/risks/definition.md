@@ -4,24 +4,24 @@ description: Einige nützliche Hinweise zur Definition von Risiken.
 
 # Definition von Risiken
 
-## Was ist ein Risiko?
+## Der Risikobegriff
 
-Ein Sicherheitsrisiko wird im deutschen Kontext, angelehnt an die Definitionen des Bundesamts für Sicherheit in der Informationstechnik (BSI), als ein Szenario verstanden, das ein **befürchtetes Ereignis** (bestehend aus Bedrohungsquelle, schützenswertem Wert, Sicherheitskriterium, Schutzbedarf und möglichen Auswirkungen) mit **einem oder mehreren Bedrohungsszenarien** kombiniert. Diese Bedrohungsszenarien umfassen wiederum Bedrohungsquellen, unterstützende Werte, relevante Sicherheitskriterien sowie konkrete Bedrohungen und vorhandene Schwachstellen.
+Ein Sicherheitsrisiko wird von der französischen Nationalen Agentur für die Sicherheit der Informationssysteme (ANSSI) als ein Szenario definiert, das ein **befürchtetes Ereignis** (Bedrohungsquellen, kritischer Wert, Sicherheitskriterien, Schutzbedarf, Auswirkungen) mit **einem oder mehreren Bedrohungsszenarien** (Bedrohungsquellen, unterstützender Wert, Sicherheitskriterien, Bedrohungen, Schwachstellen) verbindet.
 
-## Risikotypologien
+## Arten von Risiken
 
-Es lassen sich verschiedene Risikotypologien unterscheiden (nicht abschließende Liste):
+Es lassen sich mehrere Arten von Risiken unterscheiden (nicht abschließende Liste):
 
-| Risikotypologien                                             | Beispiele für Risiken                                                                                                                                                                                                                                                                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Risiken im Zusammenhang mit Privatsphäre und Datensicherheit | <ul><li>Beeinträchtigung der Vertraulichkeit der Daten</li><li>Beeinträchtigung der Verfügbarkeit der Daten</li><li>Beeinträchtigung der Integrität der Daten</li></ul>                                                                                                                           |
-| Rechtliche Risiken                                           | <ul><li>Verletzung des Berufsgeheimnisses</li><li>Deliktische und vertragliche Haftung</li><li>Strafrechtliche Verantwortlichkeit</li><li>Verlust der Compliance mit gesetzlichen, regulatorischen, normativen, branchenspezifischen oder internen Referenzrahmen</li></ul>                       |
-| Operationelle Risiken                                        | <ul><li>Naturereignisse</li><li>Interner Betrug</li><li>Diebstahl</li><li>Sabotage</li><li>Zivilrechtliche Haftung</li><li>Systemausfälle</li><li>Offenlegung vertraulicher Informationen</li><li>Beschädigung der Industrieanlage</li><li>Technologische Risiken</li><li>Umweltrisiken</li></ul> |
-| Finanzielle Risiken                                          | <ul><li>Marktrisiko</li><li>Kredit-/Gegenparteirisiko</li><li>Liquiditätsrisiko</li><li>Politisches Risiko</li></ul>                                                                                                                                                                              |
-| Strategische Risiken                                         | <ul><li>Nicht-Compliance</li><li>Auftragsverarbeiter</li><li>Transformation</li><li>Projekt</li></ul>                                                                                                                                                                                             |
+| Arten von Risiken | Beispiele für Risiken |
+| --- | --- |
+| Risiken für die Privatsphäre und die Datensicherheit | <ul><li>Verletzung der Vertraulichkeit der Daten</li><li>Verletzung der Verfügbarkeit der Daten</li><li>Verletzung der Integrität der Daten</li></ul> |
+| Rechtliche Risiken | <ul><li>Verletzung des Berufsgeheimnisses</li><li>deliktische und vertragliche Haftung</li><li>strafrechtliche Verantwortung</li><li>Verlust der Konformität mit gesetzlichen, regulatorischen, normativen, branchenbezogenen oder internen Vorgaben</li></ul> |
+| Operative Risiken | <ul><li>Naturereignisse</li><li>Interner Betrug</li><li>Diebstahl</li><li>Sabotage</li><li>Zivilrechtliche Haftung</li><li>Systemausfall</li><li>Offenlegung vertraulicher Informationen</li><li>Beschädigung von Industrieanlagen</li><li>Technologische Risiken</li><li>Umweltrisiken</li></ul> |
+| Finanzielle Risiken | <ul><li>Marktrisiko</li><li>Kredit- / Gegenparteirisiko</li><li>Liquiditätsrisiko</li><li>Politisches Risiko</li></ul> |
+| Strategische Risiken | <ul><li>Nichtkonformität</li><li>Auftragsverarbeiter</li><li>Transformation</li><li>Projekt</li></ul> |
 
 ## Weiterführende Informationen
 
 {% content-ref url="assessment.md" %}
-[evaluation-dun-risque.md](assessment.md)
+[Bewertung eines Risikos](assessment.md)
 {% endcontent-ref %}

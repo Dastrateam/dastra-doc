@@ -9,61 +9,63 @@ description: Erfahren Sie, wie Sie das Niveau eines Risikos mit Dastra bewerten.
 Ein Risiko kann mit folgender Formel bewertet werden:
 
 $$
-Risiko = Wahrscheinlichkeit * Auswirkung
+Risiko=Wahrscheinlichkeit∗Auswirkung
 $$
 
-Wobei die **Wahrscheinlichkeit** die Eintrittshäufigkeit eines befürchteten Ereignisses und/oder eines gefährlichen Elements ist,
+Dabei ist die **Wahrscheinlichkeit** die Häufigkeit des Eintretens eines gefährlichen Ereignisses und/oder eines gefährlichen Elements, und die **Auswirkung** die Schwere der Folgen und/oder die Tragweite der Konsequenzen dieses gefährlichen Ereignisses.
 
-und die **Auswirkung** die Schwere der Folgen und/oder die Tragweite der Konsequenzen dieses befürchteten Ereignisses ist.
+Die Auswirkung eines Risikos wird standardmäßig in 5 Stufen eingeteilt:
 
-Die Auswirkung eines Risikos wird standardmäßig in 4 Kategorien eingeteilt:
-
-* Katastrophal,
-* Erheblich,
+* Vernachlässigbar,
+* Gering,
 * Mittel,
-* Gering.
+* Hoch,
+* Extrem.
 
-Die Wahrscheinlichkeit eines Risikos wird standardmäßig in 4 Kategorien eingeteilt:
+Die Wahrscheinlichkeit eines Risikos wird standardmäßig in 5 Stufen eingeteilt:
 
-* Sehr wahrscheinlich,
-* Wahrscheinlich,
+* Sehr unwahrscheinlich,
+* Unwahrscheinlich,
 * Möglich,
-* Unwahrscheinlich.
+* Wahrscheinlich,
+* Extrem.
+
+In der Matrix heißt die Auswirkung **Schweregrad** und die Wahrscheinlichkeit **Eintrittswahrscheinlichkeit**.
 
 {% hint style="info" %}
-Es ist möglich, die Risikostufen in Dastra individuell anzupassen.
+Die Risikostufen lassen sich in Dastra anpassen.
 {% endhint %}
 
 ## Klassifizierung der Risiken
 
-Je nach Wahrscheinlichkeits- und Auswirkungsniveau können Risiken in mehrere Kategorien eingeteilt werden:
+Je nach Wahrscheinlichkeit und Auswirkung können Risiken in mehrere Kategorien eingeteilt werden:
 
-* Untragbare Risiken.
-* Risiken, die so weit wie möglich begrenzt werden müssen.
-* Akzeptable Risiken, entweder weil die Wahrscheinlichkeit und/oder die Schwere des Risikos im Vergleich zu anderen Risiken vernachlässigbar ist/sind.
+* untragbare Risiken;
+* Risiken, die so weit wie möglich begrenzt werden müssen;
+* akzeptable Risiken, weil die Wahrscheinlichkeit und/oder die Schwere des Risikos im Vergleich zu anderen Risiken vernachlässigbar ist.
 
 Untragbare Risiken werden in Dastra **rot** dargestellt.
 
-Risiken, die so weit wie möglich begrenzt werden müssen, werden in Dastra **orange** oder **gelb** dargestellt.
+Risiken, die so weit wie möglich begrenzt werden müssen, werden in Dastra **gelb** dargestellt.
 
 Akzeptable Risiken werden in Dastra **grün** dargestellt.
 
-## Bruttorisiko vs. Nettorisiko (oder Restrisiko)
+## Bruttorisiko und Nettorisiko (oder Restrisiko)
 
-Ein "**Brutto**"-Risiko wird ohne die Gesamtheit der Kontroll- und Steuerungsmaßnahmen betrachtet – Organisation, diverse Kontrollen, Dokumentation usw.
+Ein **Bruttorisiko** wird ohne die Gesamtheit der umgebenden Kontrollsysteme betrachtet (Organisation, verschiedene Kontrollen, Dokumentation usw.).
 
-Ein "**Netto**"-Risiko (oder Restrisiko) wird hingegen unter Berücksichtigung aller bereits vorhandenen und wirksamen Maßnahmen bewertet.
+Ein **Nettorisiko** (oder Restrisiko) wird dagegen unter Berücksichtigung aller bereits vorhandenen und wirksamen Systeme bewertet.
 
 ## Visualisierung eines Risikos
 
-![Beispiel für die Visualisierung von Risiken in Dastra.](<../../.gitbook/assets/Beispiel für die Visualisierung von Risiken in Dastra..png>)
+<figure><img src="../../.gitbook/assets/risks-assess-1.png" alt="Abschnitt Risikobewertung mit anfänglichem und verbleibendem Niveau, Begründung und Risikomatrix"><figcaption><p>Ein Risiko und sein Restniveau in der Risikomatrix</p></figcaption></figure>
 
-Weiterführende Informationen
+## Weiterführende Informationen
 
 {% content-ref url="../../features/risks/attach-to-processing.md" %}
-[risques.md](../../features/risks/attach-to-processing.md)
+[Ein Risiko einer Verarbeitungstätigkeit zuordnen](../../features/risks/attach-to-processing.md)
 {% endcontent-ref %}
 
 {% content-ref url="processors.md" %}
-[risques-sous-traitants.md](processors.md)
+[Risiken bei Auftragsverarbeitern](processors.md)
 {% endcontent-ref %}

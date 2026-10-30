@@ -1,171 +1,172 @@
 ---
-description: Erfahren Sie, was eine Datenschutz-Folgenabschätzung ist.
+description: Erfahren Sie, was eine Datenschutz-Folgenabschätzung (DSFA) ist.
 ---
 
 # Datenschutz-Folgenabschätzung (DSFA / DPIA)
 
-### 📖 Was ist eine DSFA?
+## Definition
 
-Die **Datenschutz-Folgenabschätzung (DSFA)**, vorgesehen durch [Artikel 35 der DSGVO](https://dsgvo-gesetz.de/art-35-dsgvo/), ist ein **Compliance-Mechanismus**, der darauf abzielt:
+Die **Datenschutz-Folgenabschätzung (DSFA)**, vorgesehen in [Artikel 35 der DSGVO](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1), ist ein **Compliance-Mechanismus** mit folgenden Zielen:
 
-* **Risiken** für die Rechte und Freiheiten der betroffenen Personen **zu identifizieren und zu minimieren**,
-* Die **Compliance** mit der DSGVO **nachzuweisen**,
-* Und den **Datenschutz durch Technikgestaltung** von Anfang an zu integrieren (_Privacy by Design_).
+* **Risiken** für die Rechte und Freiheiten von Personen **identifizieren und minimieren**,
+* die **Einhaltung** der DSGVO **nachweisen**,
+* und den **Datenschutz von der Entwurfsphase an berücksichtigen** (_Privacy by Design_).
 
-> ⚖️ Die DSFA bezieht sich auf die **Risiken für die Personen**, nicht auf die Risiken für die Organisation.
+> Die DSFA betrifft die **Risiken für die Personen**, nicht die Risiken für die Organisation.
 
-**DSFA = DPIA = PIA = Privacy Impact Assessment = Datenschutz-Folgenabschätzung**
-
-***
-
-### 🧩 Die drei Bestandteile einer DSFA
-
-Eine DSFA ist in drei große Schritte gegliedert:
-
-1. 📝 **Beschreibung der Verarbeitung**\
-   → Ziele, Kontext, Stakeholder, Technologien, betroffene Daten.
-2. ⚖️ **Bewertung der Notwendigkeit und Verhältnismäßigkeit**\
-   → Analyse der rechtlichen Compliance: Zwecke, Rechtsgrundlagen, Betroffenenrechte, Speicherdauern usw.
-3. 🔐 **Untersuchung der Risiken und Sicherheitsmaßnahmen**\
-   → Identifizierung der Risiken für die Privatsphäre und Bestimmung der technischen und organisatorischen Maßnahmen zur Risikominderung.
-
-> 📘 Die DSFA ist zugleich **juristisch**, **technisch** und **organisatorisch**: Sie bindet das gesamte Projektteam ein.
+Für denselben Ansatz begegnet Ihnen auch der englische Begriff Privacy Impact Assessment (PIA).
 
 ***
 
-### 🎯 Ziel der DSFA
+## Die drei Bestandteile einer DSFA
+
+Eine DSFA gliedert sich in drei große Schritte:
+
+1. **Beschreibung der Verarbeitung** → Ziele, Kontext, Stakeholder, Technologien, betroffene Daten.
+2. **Bewertung der Notwendigkeit und Verhältnismäßigkeit** → Analyse der rechtlichen Konformität: Zwecke, Rechtsgrundlagen, Rechte der Personen, Speicherdauern usw.
+3. **Risikoanalyse und Sicherheitsmaßnahmen** → Ermittlung der Datenschutzrisiken und Festlegung der Maßnahmen zu ihrer Beherrschung (technisch und organisatorisch).
+
+> Die DSFA ist zugleich **juristisch**, **technisch** und **organisatorisch**: Sie bindet das gesamte Projektteam ein.
+
+***
+
+## Ziel der DSFA
 
 Die DSFA ermöglicht einer Organisation:
 
-* Ihre **Compliance nachzuweisen** (Accountability-Prinzip),
-* **Risiken und Compliance-Kosten vorauszusehen**,
-* **Entwurfsentscheidungen** zu dokumentieren,
-* Das **Vertrauen** der Nutzer, Kunden oder Beschäftigten **zu gewährleisten**.
+* ihre **Konformität nachzuweisen** (Grundsatz der Rechenschaftspflicht),
+* **Risiken** und Compliance-Kosten **vorauszusehen**,
+* **Entscheidungen** und Gestaltungsentscheidungen **zu dokumentieren**,
+* das **Vertrauen** von Nutzern, Kunden oder Beschäftigten **zu stärken**.
 
 ***
 
-### 🔍 Wann ist eine DSFA erforderlich?
+## Wann eine DSFA verpflichtend ist
 
-Eine DSFA ist **verpflichtend**, wenn eine Verarbeitung ein **hohes Risiko** für die Rechte und Freiheiten der betroffenen Personen **mit sich bringt**.
+Eine DSFA ist **verpflichtend**, wenn eine Verarbeitung **voraussichtlich ein hohes Risiko** für die Rechte und Freiheiten von Personen **zur Folge hat**.
 
-#### Beispiele betroffener Verarbeitungen:
+### Beispiele für betroffene Verarbeitungen
 
 * Intelligente Videoüberwachung,
-* Automatische Profilbewertung (Scoring),
-* Massenhafte Erhebung von Gesundheitsdaten,
-* Einsatz von Biometrie oder KI für personenbezogene Daten.
+* automatisierte Profilbewertung (Scoring),
+* Erhebung von Gesundheitsdaten in großem Umfang,
+* Einsatz von Biometrie oder KI auf personenbezogene Daten.
 
 {% hint style="info" %}
-Verarbeitungen, die mindestens **2 der folgenden Kriterien** (EDSA) aufweisen, gelten als mit hohem Risiko behaftet:
+Als Faustregel erfordert eine Verarbeitung, die mindestens **2 der folgenden Kriterien** (Europäischer Datenschutzausschuss, EDSA) erfüllt, eine DSFA:
 
 * Bewertung oder Scoring,
-* Automatisierte Entscheidungsfindung mit rechtlicher Wirkung,
-* Systematische Überwachung,
-* Sensible Daten,
-* Großer Umfang,
-* Datenabgleich,
-* Schutzbedürftige Personen,
-* Innovativer Einsatz (KI, IoT, Big Data),
-* Verweigerung eines Rechts oder einer Dienstleistung,
-* Datenübermittlungen außerhalb der EU.
+* automatisierte Entscheidungsfindung mit rechtlicher oder ähnlicher Wirkung,
+* systematische Überwachung,
+* sensible Daten,
+* großer Umfang,
+* Abgleich von Daten,
+* schutzbedürftige Personen,
+* innovative Nutzung (KI, IoT, Big Data),
+* Verweigerung eines Rechts oder einer Leistung.
+
+Bei besonders sensiblen Verarbeitungen kann ein einziges Kriterium genügen. Die Aufsichtsbehörden veröffentlichen außerdem Listen der Verarbeitungsvorgänge, für die eine DSFA erforderlich ist: Siehe die [Hinweise zur DSFA, Land für Land](../../other/dpia-by-country.md).
 {% endhint %}
 
 ***
 
-### 🕐 Wann soll sie durchgeführt werden?
+## Zeitpunkt und Aktualisierung
 
-Die DSFA muss **vor der Umsetzung der Verarbeitung** durchgeführt werden, idealerweise bereits in der Entwurfsphase.\
-Sie stellt eine konkrete Anwendung des Prinzips **Privacy by Design** dar.
+Die DSFA muss **vor der Einführung der Verarbeitung** durchgeführt werden, idealerweise bereits in der Entwurfsphase. Sie ist eine konkrete Anwendung des Grundsatzes **Privacy by Design**.
 
-Sie muss außerdem:
+Außerdem muss sie:
 
-* **Regelmäßig aktualisiert werden** (alle 3 bis 5 Jahre),
-* **Bei wesentlichen Änderungen** der Verarbeitung **überarbeitet werden**,
-* In Dastra **mit Ihrem Verarbeitungsverzeichnis verknüpft werden** für eine kontinuierliche Überwachung.
+* **regelmäßig überprüft** werden,
+* **bei jeder wesentlichen Änderung** der Verarbeitung oder ihres Risikoniveaus **überarbeitet** werden (Artikel 35 Absatz 11),
+* in Dastra **mit Ihrem Verzeichnis verknüpft** sein, damit sie fortlaufend überwacht wird.
 
-![Ein iterativer Prozess](<../../.gitbook/assets/Ein iterativer Prozess.png>)
+<figure><img src="../../.gitbook/assets/dpia-iterative-process.svg" alt="Iterativer DSFA-Zyklus in sieben Schritten: Beschreibung der Verarbeitung, Bewertung der Notwendigkeit und Verhältnismäßigkeit, Maßnahmen zum Nachweis der Konformität, Bewertung der Risiken für die Rechte und Freiheiten, Maßnahmen zur Risikobehandlung, Dokumentation, Überwachung und Überprüfung"><figcaption><p>Ein iterativer Prozess</p></figcaption></figure>
 
-> 🔁 Die DSFA ist ein **iterativer Prozess**: Sie begleitet den gesamten Lebenszyklus der Verarbeitung.
+> Die DSFA ist ein **iterativer Prozess**: Sie begleitet den gesamten Lebenszyklus der Verarbeitungstätigkeit.
 
 ***
 
-### ⚙️ Wie wird eine DSFA durchgeführt?
+## Eine DSFA durchführen
 
-#### 1. Notwendigkeit und Verhältnismäßigkeit der Verarbeitung bewerten
+### 1. Notwendigkeit und Verhältnismäßigkeit der Verarbeitung bewerten
 
 Stellen Sie sich die richtigen Fragen:
 
-* Sind die **Verarbeitungszwecke** bestimmt und legitim?
+* Sind die **Zwecke** bestimmt, eindeutig und legitim?
 * Ist die **Rechtsgrundlage** klar?
-* Sind die Daten **minimiert**, korrekt und aktuell?
+* Sind die Daten **minimiert**, richtig und auf dem neuesten Stand?
 * Sind die **Speicherdauern** begrenzt?
 * Sind die **betroffenen Personen** ordnungsgemäß informiert?
 
-#### 2. Den Schutz der Betroffenenrechte prüfen
+### 2. Den Schutz der Rechte der Personen prüfen
 
-* Transparente Information, klare Einwilligung, Recht auf Auskunft, Löschung, Widerspruch.
+* Transparente Information, klare Einwilligung, Recht auf Auskunft, Löschung und Widerspruch.
 * Verträge mit Auftragsverarbeitern.
-* Garantien bei internationalen Datenübermittlungen.
-* Vorgesehene Korrekturmaßnahmen im Falle eines Datenschutzvorfalls.
+* Garantien für internationale Übermittlungen.
+* Vorgesehene Abhilfemaßnahmen im Fall einer Datenschutzverletzung.
 
-#### 3. Risiken für die Privatsphäre analysieren
+### 3. Die Datenschutzrisiken analysieren
 
 Für jedes **befürchtete Ereignis**:
 
-* Die möglichen **Auswirkungen** auf die betroffenen Personen identifizieren (Beeinträchtigung der Privatsphäre, Ruf, Diskriminierung…).
-* Die **Schwere** und **Eintrittswahrscheinlichkeit** des Risikos einschätzen.
-* Die **vorhandenen oder geplanten Schutzmaßnahmen** bestimmen.
-* Das **Restrisiko** bewerten und gegebenenfalls **ergänzende Maßnahmen** vorschlagen.
+* die **möglichen Folgen** für die Personen ermitteln (Verletzung der Privatsphäre, Diskriminierung, Rufschädigung usw.),
+* die **Schwere** und die **Eintrittswahrscheinlichkeit** des Risikos abschätzen,
+* die **bestehenden oder geplanten Schutzmaßnahmen** bestimmen,
+* das **Restrisiko** bewerten und bei Bedarf **zusätzliche Maßnahmen** vorschlagen.
 
 {% hint style="success" %}
-💡 Endziel: Ein **akzeptables Restrisiko** erreichen, das dokumentiert und begründet ist.
+Endziel: ein **vertretbares Restrisiko**, das dokumentiert und begründet ist.
 {% endhint %}
 
 ***
 
-### 🧠 Wer sollte einbezogen werden?
+## Einzubindende Stakeholder
 
-| Stakeholder                 | Rolle in der DSFA                                                   |
-| --------------------------- | ------------------------------------------------------------------- |
-| **Verantwortlicher**        | Trägt die Verantwortung für die DSFA und steuert deren Durchführung |
-| **Datenschutzbeauftragter** | Berät, validiert die Methodik und bewertet die Restrisiken          |
-| **CISO / IT-Leitung**       | Bringt die technische Expertise und Sicherheitsmaßnahmen ein        |
-| **Fachabteilungen**         | Liefern die operativen Details der Verarbeitung                     |
-| **Auftragsverarbeiter**     | Übermitteln die für die Bewertung erforderlichen Informationen      |
-| **Betroffene Personen**     | Können in bestimmten Fällen konsultiert oder vertreten werden       |
+| Stakeholder | Rolle in der DSFA |
+| --- | --- |
+| **Verantwortlicher** | Trägt die Verantwortung für die DSFA und leitet ihre Durchführung |
+| **Datenschutzbeauftragter** | Berät zur DSFA und überwacht ihre Durchführung |
+| **CISO / IT-Abteilung** | Liefert die technische Expertise und die Sicherheitsmaßnahmen |
+| **Fachabteilungen** | Liefern die operativen Einzelheiten der Verarbeitung |
+| **Auftragsverarbeiter** | Übermitteln die für die Bewertung erforderlichen Informationen |
+| **Betroffene Personen** | Können in bestimmten Fällen konsultiert oder vertreten werden |
 
-> 👥 Die DSFA ist ein kollaborativer Ansatz – sie bindet sowohl Juristen als auch operative Mitarbeiter ein.
+> Die DSFA ist ein gemeinsamer Prozess: Sie bindet juristische, technische und operative Teams gleichermaßen ein.
 
 ***
 
-### 🤖 DSFA und künstliche Intelligenz
+## DSFA und künstliche Intelligenz
 
-Die **KI-Verordnung** führt eine spezifische Pflicht zur **Dokumentation und Bewertung von KI-Systemen** mit hohem Risiko ein.\
-Organisationen müssen darin aufnehmen:
+Die **KI-Verordnung** führt eine besondere Pflicht ein, **KI-Systeme mit hohem Risiko zu dokumentieren und zu bewerten**. Die Organisationen müssen dabei aufnehmen:
 
-* Die Herkunft der Trainingsdaten,
-* Robustheits- und Bias-Tests,
-* Vorgesehene menschliche Kontrollen,
+* die Herkunft der Trainingsdaten,
+* Robustheitstests und Bewertungen von Verzerrungen,
+* vorgesehene Kontrollen durch menschliche Aufsicht,
 * Transparenzmaßnahmen.
 
-Dastra ermöglicht es, jede **DSFA** mit einem **KI-System** zu verknüpfen, um eine **übergreifende Compliance DSGVO / KI-Verordnung** sicherzustellen.
+Für KI-Systeme bietet Dastra im Modul **KI-Governance** unter **Folgenabschätzung** eine eigene Folgenabschätzung an, die sowohl die DSGVO als auch die KI-Verordnung abdeckt.
 
 ***
 
-### 🧰 Bewährte Praktiken in Dastra
+## Bewährte Vorgehensweisen in Dastra
 
-* Zentralisieren Sie alle Ihre DSFAs im **Modul "Verarbeitungsverzeichnis"**,
-* Nutzen Sie die **vordefinierten Risikomodelle** (EDSA, Aufsichtsbehörden, ISO 29134),
-* Arbeiten Sie mit den Teams über **Kommentare und Workflows** zusammen,
-* Exportieren Sie Ihre DSFAs als **PDF** für Audits,
-* Planen Sie **automatische Überprüfungserinnerungen**.
+* Klären Sie im Abschnitt **Folgenabschätzung** der Verarbeitungstätigkeit, der die 9 Kriterien des EDSA bewertet, ob eine DSFA erforderlich ist,
+* starten Sie die DSFA mit einer **Fragebogenvorlage** aus der Bibliothek,
+* exportieren Sie den DSFA-Bericht für Audits als **PDF**,
+* planen Sie die nächste Überprüfung mit den **regelmäßigen Überprüfungen** der Verarbeitungstätigkeit.
 
 {% hint style="success" %}
-💡 Dastra führt Sie Schritt für Schritt durch die Durchführung der DSFA, dank eines interaktiven Modells und bereits integrierter Bibliotheken von Bedrohungen und Maßnahmen.
+Dastra führt Sie mit einer interaktiven Fragebogenvorlage Schritt für Schritt durch die DSFA.
 {% endhint %}
 
 ***
 
-### 📘 Weiterführende Informationen
+## Weiterführende Informationen
 
-🎥 Webinar "Wie Sie die DSFA-Phase mit einem Tool angehen"
+{% content-ref url="../../features/ropa/activity/impact-analysis.md" %}
+[Datenschutz-Folgenabschätzung](../../features/ropa/activity/impact-analysis.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../features/questionnaires/types/dpia.md" %}
+[DSFA / PIA](../../features/questionnaires/types/dpia.md)
+{% endcontent-ref %}

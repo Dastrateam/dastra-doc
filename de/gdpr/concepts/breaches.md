@@ -1,17 +1,16 @@
 ---
-description: Erfahren Sie, wie Sie Meldungen von Datenschutzvorfällen nachverfolgen.
+description: Erfahren Sie, wie Sie Meldungen von Datenschutzverletzungen verwalten.
 ---
 
-# Datenschutzvorfälle
+# Meldung von Datenschutzverletzungen
 
-### 📖 Definition
+## Definition
 
-Gemäß [Artikel 4.12 der DSGVO](https://dsgvo-gesetz.de/art-4-dsgvo/) ist\
-ein **Datenschutzvorfall** (Verletzung des Schutzes personenbezogener Daten):
+Nach [Artikel 4 Nummer 12 der DSGVO](https://dsgvo-gesetz.de/art-4-dsgvo/) ist eine **Verletzung des Schutzes personenbezogener Daten**:
 
-> _Eine Verletzung der Sicherheit, die, ob unbeabsichtigt oder unrechtmäßig, zur Vernichtung, zum Verlust, zur Veränderung oder zur unbefugten Offenlegung von beziehungsweise zum unbefugten Zugang zu personenbezogenen Daten führt, die übermittelt, gespeichert oder auf sonstige Weise verarbeitet wurden._
+> _Eine Verletzung der Sicherheit, die, ob unbeabsichtigt oder unrechtmäßig, zur Vernichtung, zum Verlust, zur Veränderung, oder zur unbefugten Offenlegung von beziehungsweise zum unbefugten Zugang zu personenbezogenen Daten führt, die übermittelt, gespeichert oder auf sonstige Weise verarbeitet wurden._
 
-Mit anderen Worten handelt es sich um jeden **Sicherheitsvorfall**, ob **absichtlich oder versehentlich**, der Folgendes beeinträchtigt:
+Anders gesagt: Jeder **Sicherheitsvorfall**, ob **absichtlich oder unbeabsichtigt**, der Folgendes beeinträchtigt, ist eine Datenschutzverletzung:
 
 * die **Vertraulichkeit** (unbefugter Zugriff, Offenlegung),
 * die **Integrität** (Veränderung, Fälschung),
@@ -19,116 +18,124 @@ Mit anderen Worten handelt es sich um jeden **Sicherheitsvorfall**, ob **absicht
 
 ***
 
-### ⚠️ Beispiele typischer Datenschutzvorfälle
+## Typische Beispiele
 
-* Versehentliche Löschung medizinischer Daten ohne Sicherungskopie.
-* Verlust eines unverschlüsselten USB-Sticks mit der Kundendatenbank.
-* Hackerangriff auf einen Server, der E-Mail-Adressen und Passwörter offenlegt.
-* Versand einer E-Mail mit personenbezogenen Daten an den falschen Empfänger.
-* Leak von HR-Informationen auf einem ungesicherten gemeinsamen Speicherplatz.
-
-***
-
-### 🧩 Die drei Haupttypen von Datenschutzvorfällen
-
-| Typ                 | Beschreibung                             | Beispiel                            |
-| ------------------- | ---------------------------------------- | ----------------------------------- |
-| **Vertraulichkeit** | Unbefugter Zugriff oder Offenlegung      | Datenleck durch Phishing            |
-| **Integrität**      | Unbefugte Änderung oder Fälschung        | Veränderung einer Patientenakte     |
-| **Verfügbarkeit**   | Versehentlicher Verlust oder Vernichtung | Daten ohne Sicherungskopie gelöscht |
+* Versehentliches Löschen von medizinischen Daten, die nirgendwo sonst gespeichert sind.
+* Verlust eines unverschlüsselten USB-Sticks mit einer Kundendatenbank.
+* Hackerangriff auf einen Server, bei dem E-Mail-Adressen und Passwörter offengelegt werden.
+* E-Mail mit personenbezogenen Daten, die an den falschen Empfänger geschickt wird.
+* Personalinformationen, die in einem ungesicherten gemeinsamen Bereich offengelegt werden.
 
 ***
 
-### 🕓 Die gesetzlichen Pflichten des Verantwortlichen
+## Drei Haupttypen von Datenschutzverletzungen
 
-Wenn ein Datenschutzvorfall eintritt, muss der **Verantwortliche** **unverzüglich** reagieren.
+| Typ | Beschreibung | Beispiel |
+| --- | --- | --- |
+| **Vertraulichkeit** | Unbefugter Zugriff oder unbefugte Offenlegung | Offenlegung durch Phishing |
+| **Integrität** | Unbefugte Änderung oder Fälschung | Veränderung einer Patientenakte |
+| **Verfügbarkeit** | Versehentlicher Verlust oder versehentliche Vernichtung | Daten ohne Backup gelöscht |
 
-#### 1️⃣ Meldung an die Aufsichtsbehörde
+***
 
-* **Frist**: 72 Stunden nach Kenntnisnahme.
+## Gesetzliche Pflichten des Verantwortlichen
+
+### Meldung an die Aufsichtsbehörde
+
+* **Frist**: wenn möglich binnen 72 Stunden, nachdem die Verletzung bekannt wurde. Eine Meldung ist nicht erforderlich, wenn die Verletzung voraussichtlich nicht zu einem Risiko für die Rechte und Freiheiten von Personen führt.
 * **Inhalt**:
-  * Art des Vorfalls,
+  * Art der Verletzung,
   * Kategorien und Umfang der betroffenen Daten,
-  * Voraussichtliche Folgen,
-  * Ergriffene oder geplante Abhilfemaßnahmen.
+  * wahrscheinliche Folgen,
+  * ergriffene oder geplante Maßnahmen.
 
-> Wenn die Meldung nicht innerhalb von 72 Stunden erfolgt, muss die **Verzögerung begründet** werden.
+> Kann die Meldung nicht binnen 72 Stunden erfolgen, muss die **Verzögerung begründet werden**.
 
-📚 Referenz: [Artikel 33 der DSGVO](https://dsgvo-gesetz.de/art-33-dsgvo/)
-
-***
-
-#### 2️⃣ Information der betroffenen Personen
-
-Wenn der Vorfall **ein hohes Risiko für die Rechte und Freiheiten darstellt**,\
-müssen die betroffenen Personen **schnellstmöglich** informiert werden:
-
-* Art des Vorfalls,
-* Betroffene Daten,
-* Ergriffene Maßnahmen,
-* Empfehlungen zur Begrenzung der Auswirkungen (z. B.: Passwortänderung).
-
-📚 Referenz: [Artikel 34 der DSGVO](https://dsgvo-gesetz.de/art-34-dsgvo/)
+Referenz: [Artikel 33 der DSGVO](https://dsgvo-gesetz.de/art-33-dsgvo/)
 
 ***
 
-#### 3️⃣ Obligatorische interne Dokumentation
+### Benachrichtigung der betroffenen Personen
 
-Auch wenn keine Meldung erforderlich ist,\
-muss **jeder Vorfall** in einem internen Register erfasst werden, das enthält:
+Wenn die Verletzung **voraussichtlich ein hohes Risiko für die Rechte und Freiheiten von Personen zur Folge hat**, müssen diese **unverzüglich** informiert werden:
 
-* die Fakten zum Vorfall,
-* seine Auswirkungen,
-* die ergriffenen Korrekturmaßnahmen.
+* Art der Verletzung,
+* betroffene Daten,
+* ergriffene Maßnahmen,
+* Empfehlungen, um die Folgen zu begrenzen (zum Beispiel das Passwort ändern).
 
-> Dieses Register dient dem **Nachweis der Compliance** (Accountability-Prinzip).
-
-***
-
-### 🔁 Der Managementzyklus eines Datenschutzvorfalls
-
-1. **Erkennung** → Identifizierung eines Vorfalls oder anomalen Verhaltens.
-2. **Qualifizierung** → Prüfen, ob personenbezogene Daten betroffen sind.
-3. **Risikobewertung** → Auswirkung auf die Privatsphäre der betroffenen Personen.
-4. **Meldung (falls erforderlich)** → Aufsichtsbehörde innerhalb von 72h, betroffene Personen bei hohem Risiko.
-5. **Abhilfe** → Korrektur- und Präventivmaßnahmen.
-6. **Dokumentation** → Eintragung in das Register der Datenschutzvorfälle.
-7. **Nachbereitung** → Organisatorische oder technische Anpassungen.
+Referenz: [Artikel 34 der DSGVO](https://dsgvo-gesetz.de/art-34-dsgvo/)
 
 ***
 
-### 🧠 Bewährte Sicherheitspraktiken
+### Verpflichtende interne Dokumentation
 
-* Einen **Vorfallmanagementplan** vorbereiten und regelmäßig testen.
-* Die Teams in der **Erkennung und schnellen Meldung** von Vorfällen schulen.
-* **Präventivmaßnahmen** einrichten (MFA, Netzwerksegmentierung, Backups).
-* Ein **zentrales Register** nutzen, um jeden Vorfall und seine Behebung nachzuverfolgen.
-* Die Schwere mittels einer **standardisierten Risikomatrix** bewerten (z. B. ISO 27005).
+Auch wenn keine Meldung erforderlich ist, **muss jede Verletzung** in einem internen Verzeichnis **erfasst werden**, das Folgendes enthält:
 
-***
+* die Fakten zur Verletzung,
+* ihre Auswirkungen,
+* die ergriffenen Abhilfemaßnahmen.
 
-### 🧾 Verwaltung von Datenschutzvorfällen in Dastra
-
-Dastra ermöglicht die **zentrale Dokumentation und Steuerung von Datenschutzvorfällen**:
-
-| Schritt          | Dastra-Funktion                                                                     |
-| ---------------- | ----------------------------------------------------------------------------------- |
-| Meldung          | Anpassbares Meldeformular                                                           |
-| Bewertung        | Automatische Risikoberechnung bezüglich der Betroffenenrechte                       |
-| Benachrichtigung | Berichterstellung für die Aufsichtsbehörde und Kommunikation an betroffene Personen |
-| Nachverfolgung   | Aktionsprotokoll und Abhilfeplan                                                    |
-| Reporting        | Dashboards und Compliance-Kennzahlen                                                |
+> Dieses Verzeichnis **weist die Einhaltung der Vorschriften nach** (Grundsatz der Rechenschaftspflicht).
 
 ***
 
-### 📚 Nützliche Ressourcen
+## Der Managementzyklus einer Datenschutzverletzung
 
-* [ENISA – Data Breach Notification Guidelines](https://www.enisa.europa.eu/)
-* [ISO/IEC 27035 – Management von Informationssicherheitsvorfällen](https://www.dinmedia.de/de/norm/csa-iso-iec-27035-4/400025388?queryId=2f755d5cffcb79a64986797517c3268c\&indexName=prod_dinmedia_products\&position=1)
+1. **Erkennung** → Feststellung eines Vorfalls oder eines ungewöhnlichen Verhaltens.
+2. **Einstufung** → Prüfen, ob personenbezogene Daten betroffen sind.
+3. **Risikobewertung** → Auswirkung auf die Privatsphäre der Personen.
+4. **Meldung (falls erforderlich)** → Aufsichtsbehörde binnen 72 Stunden, betroffene Personen bei hohem Risiko.
+5. **Abhilfe** → Korrektur- und Vorbeugungsmaßnahmen.
+6. **Dokumentation** → Eintrag in das Verzeichnis der Datenschutzverletzungen.
+7. **Erkenntnisse** → organisatorische oder technische Anpassungen.
+
+***
+
+## Bewährte Sicherheitspraktiken
+
+* Erstellen Sie einen **Plan für das Vorfallmanagement** und testen Sie ihn regelmäßig.
+* Schulen Sie Ihre Teams in der **schnellen Erkennung und Eskalation** von Vorfällen.
+* Setzen Sie **Vorbeugungsmaßnahmen** um (MFA, Netzwerksegmentierung, Backups).
+* Verwenden Sie ein **zentrales Verzeichnis**, um jede Verletzung und ihre Lösung zu verfolgen.
+* Bewerten Sie den Schweregrad mit einem **standardisierten Risikoraster** (zum Beispiel einem von Ihrer Aufsichtsbehörde veröffentlichten oder ISO/IEC 27005).
+
+***
+
+## Datenschutzverletzungen in Dastra verwalten
+
+Das Modul **Vorfälle** von Dastra dokumentiert und verfolgt Verletzungen des Schutzes personenbezogener Daten:
+
+| Schritt | Dastra-Funktion |
+| --- | --- |
+| Meldung | Datensatz der Verletzung im Verzeichnis der Vorfälle |
+| Bewertung | Risikostufe, berechnet aus der Wahrscheinlichkeit der Identifizierung und der Schwere der Folgen |
+| Benachrichtigung | Nachverfolgung der Meldung an die Behörde (Countdown von 72 Stunden) und der Benachrichtigung der betroffenen Personen |
+| Überwachung | Zugehörige Aufgaben, nach dem Vorfall beschlossene Maßnahmen, Post-Mortem und Verlauf |
+| Reporting | Seite **Statistiken** mit Kennzahlen zu Vorfällen |
+
+***
+
+## Nützliche Ressourcen
+
+* [ICO: reporting a data breach](https://ico.org.uk/for-organizations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/personal-data-breaches/) (auf Englisch)
+* [ENISA: die EU-Agentur für Cybersicherheit](https://www.enisa.europa.eu/)
+* [ISO/IEC 27035: information security incident management](https://www.iso.org/standard/60803.html) (auf Englisch)
 
 ***
 
 {% hint style="success" %}
-💡 **Gute Praxis:** Ein schnell gemeldeter Vorfall begrenzt die Auswirkungen, stärkt die Transparenz und beweist die Beherrschung der Compliance.\
-Dastra hilft Ihnen, jeden Schritt des Prozesses zu strukturieren und zu dokumentieren.
+**Bewährte Praxis:** Ein schnell gemeldeter Vorfall begrenzt die Auswirkungen, stärkt die Transparenz und belegt, dass Sie die Vorschriften beherrschen. Dastra hilft Ihnen, jeden Schritt des Prozesses zu strukturieren und zu dokumentieren.
 {% endhint %}
+
+***
+
+## Weiterführende Informationen
+
+{% content-ref url="../../features/incidents/README.md" %}
+[Datenschutzvorfälle](../../features/incidents/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../features/incidents/document-breach.md" %}
+[Einen neuen Datenschutzvorfall dokumentieren](../../features/incidents/document-breach.md)
+{% endcontent-ref %}

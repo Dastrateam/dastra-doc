@@ -4,155 +4,152 @@ description: Erfahren Sie, was ein Verarbeitungsverzeichnis ist.
 
 # Verarbeitungsverzeichnis
 
-### 📖 Definition
+## Definition
 
-Das **Verarbeitungsverzeichnis** ist die **strukturierte Kartierung aller Verarbeitungen personenbezogener Daten** innerhalb Ihrer Organisation.\
-Es stellt den **Ausgangspunkt jeder Kontrolle** durch eine Datenschutzaufsichtsbehörde (z. B.: CNIL) und ein **zentrales Instrument der Compliance-Governance** dar.
+Das **Verzeichnis von Verarbeitungstätigkeiten** ist die **strukturierte Kartierung aller Verarbeitungen personenbezogener Daten** innerhalb Ihrer Organisation. Es ist der **Ausgangspunkt jeder Kontrolle** durch eine Datenschutzaufsichtsbehörde und ein **zentrales Instrument der Compliance-Governance**.
 
-> 🔗 Das Verarbeitungsverzeichnis ist in [Artikel 30 der DSGVO](https://dsgvo-gesetz.de/art-30-dsgvo/) vorgesehen.\
-> Es konkretisiert das Prinzip der **Accountability**, also der nachweisbaren Verantwortlichkeit.
+> Das Verzeichnis ist in [Artikel 30 der DSGVO](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3265-1-1) vorgeschrieben. Es konkretisiert den Grundsatz der **Rechenschaftspflicht**, also der nachweisbaren Verantwortlichkeit.
 
-Es ermöglicht die genaue Identifizierung von:
+Es listet genau auf:
 
-* Den beteiligten **Stakeholdern** (Verantwortlicher, Auftragsverarbeiter, gemeinsam Verantwortliche, Vertreter)
-* Den **Kategorien der erhobenen Daten**
-* Den **Verarbeitungszwecken**
-* Den **Empfängern und Datenübermittlungen**
-* Den **Speicherdauern**
-* Den umgesetzten **Sicherheitsmaßnahmen**
-
-Wie Sie in den "Run"-Modus bei der Verwaltung der Verarbeitungsverzeichnisse wechseln
+* die beteiligten **Stakeholder** (Verantwortlicher, Auftragsverarbeiter, gemeinsam Verantwortliche, Vertreter)
+* die **Kategorien der erhobenen Daten**
+* die **Zwecke** der Verarbeitung
+* die **Empfänger und Übermittlungen**
+* die **Speicherdauern**
+* die umgesetzten **Sicherheitsmaßnahmen**
 
 ***
 
-### 🎯 Warum ein Verarbeitungsverzeichnis führen?
+## Gründe, ein Verzeichnis zu führen
 
-Das Verarbeitungsverzeichnis ist **verpflichtend** (Artikel 30 der DSGVO).\
-Aber über die regulatorische Pflicht hinaus wird es zu einem **echten Steuerungsinstrument**, das Ihnen ermöglicht:
+Das Verzeichnis ist **verpflichtend** (Artikel 30 der DSGVO), vorbehaltlich der unten beschriebenen Ausnahme. Über die gesetzliche Pflicht hinaus wird es aber zu einem **echten Steuerungsinstrument**, das Ihnen ermöglicht:
 
 * Ihre Verarbeitungen zu dokumentieren, um **Ihre Compliance nachzuweisen**,
 * Risiken zu identifizieren und zu **priorisieren**,
 * Ihre **Speicherdauern zu optimieren**,
-* Ihre **Verarbeitungen zu rationalisieren** und unnötige Daten zu löschen,
-* Ihre **DSGVO-Audits** und **DSFA (Datenschutz-Folgenabschätzungen)** vorzubereiten.
+* Ihre **Verarbeitungen zu rationalisieren** und nicht benötigte Daten zu löschen,
+* Ihre **DSGVO-Audits** und **Datenschutz-Folgenabschätzungen** vorzubereiten.
 
 {% hint style="success" %}
-💡 Das Verarbeitungsverzeichnis ist keine Verwaltungsformalität: Es ist der **Schlüssel zu einer effizienten Governance** Ihrer Daten und internen Prozesse.
+Das Verzeichnis ist keine Verwaltungsformalität: Es ist der **Schlüssel zu einer wirksamen Governance** Ihrer Daten und internen Prozesse.
 {% endhint %}
 
 ***
 
-### 👥 Wer ist betroffen?
+## Betroffene Organisationen
 
-Alle Organisationen, die personenbezogene Daten europäischer Einwohner verarbeiten, sind betroffen.\
-Allerdings ist eine **Ausnahme** für Unternehmen mit weniger als 250 Beschäftigten vorgesehen.
+Betroffen sind alle Organisationen, die der DSGVO unterliegen. Für Organisationen mit weniger als 250 Beschäftigten besteht jedoch eine **Ausnahme** (Artikel 30 Absatz 5).
 
 {% hint style="info" %}
-KMU müssen dennoch in ihrem Verarbeitungsverzeichnis folgende Verarbeitungen eintragen:
+KMU müssen dennoch alle Verarbeitungen in ihr Verzeichnis aufnehmen, die:
 
-* nicht gelegentliche (z. B.: Personalverwaltung, Gehaltsabrechnung, Kunden, Lieferanten),
-* solche mit **Risiken für die betroffenen Personen** (Videoüberwachung, Geolokalisierung usw.),
-* oder solche mit **sensiblen Daten** (Gesundheit, Straftaten, Meinungen).
+* nicht gelegentlich, sondern regelmäßig erfolgen (z. B. Personalverwaltung, Gehaltsabrechnung, Kunden, Lieferanten),
+* voraussichtlich **Risiken für die betroffenen Personen** mit sich bringen (Videoüberwachung, Geolokalisierung usw.),
+* oder **sensible Daten** betreffen (Gesundheit, Straftaten, politische Meinungen).
 
-➡️ In der Praxis sind **die meisten Unternehmen** betroffen.\
-Die Aufsichtsbehörde empfiehlt, **in jedem Fall** ein Verarbeitungsverzeichnis zu erstellen.
+In der Praxis sind **die meisten Organisationen** betroffen. Die CNIL, die französische Aufsichtsbehörde, empfiehlt, **in jedem Fall** ein Verzeichnis zu führen.
 {% endhint %}
 
 ***
 
-### 🧱 Zwei zu unterscheidende Verzeichnisse
+## Zwei Verzeichnisse, die zu unterscheiden sind
 
 Je nach Ihrer Rolle müssen Sie führen:
 
 1. ein **Verzeichnis des Verantwortlichen**,
 2. ein **Verzeichnis des Auftragsverarbeiters**.
 
-> Eine Organisation kann beide kumulieren: Beispielsweise ein SaaS-Unternehmen, das sowohl seine eigenen HR-Daten (Verantwortlicher) als auch die seiner Kunden (Auftragsverarbeiter) verwaltet.
+> Dieselbe Organisation kann beide führen: zum Beispiel ein SaaS-Unternehmen, das seine eigenen Personaldaten (Verantwortlicher) und die Daten seiner Kunden (Auftragsverarbeiter) verwaltet.
 
 ***
 
-### 🧭 Das Verzeichnis des Verantwortlichen (in Dastra)
+## Das Verzeichnis des Verantwortlichen (in Dastra)
 
-Für jede Verarbeitung muss das Verzeichnis mindestens enthalten:
+Für jede Verarbeitungstätigkeit muss das Verzeichnis mindestens enthalten:
 
-1. Den **Namen und die Kontaktdaten** des Verantwortlichen oder gemeinsam Verantwortlichen
-2. Die **Verarbeitungszwecke**
-3. Die **Kategorien betroffener Personen** (Kunden, Interessenten, Beschäftigte usw.)
-4. Die **Datenkategorien** (Identität, Finanzen, Standort usw.)
-5. Die **Empfänger** (intern, Auftragsverarbeiter, Partner)
-6. Die **Datenübermittlungen außerhalb des EWR**, mit den zugehörigen Garantien (Standardvertragsklauseln, BCR usw.)
-7. Die **Löschfristen** oder Aufbewahrungskriterien
-8. Eine **allgemeine Beschreibung der Sicherheitsmaßnahmen**
+1. den **Namen und die Kontaktdaten** des Verantwortlichen oder gemeinsam Verantwortlichen
+2. die **Zwecke** der Verarbeitung
+3. die **Kategorien betroffener Personen** (Kunden, Interessenten, Beschäftigte usw.)
+4. die **Kategorien von Daten** (Identität, Finanzen, Standort usw.)
+5. die **Empfänger** (intern, Auftragsverarbeiter, Partner)
+6. die **Übermittlungen außerhalb des EWR** mit den zugehörigen Garantien (Standardvertragsklauseln, verbindliche interne Datenschutzvorschriften usw.)
+7. die **Speicherdauern** oder die Kriterien für ihre Festlegung
+8. eine **allgemeine Beschreibung der Sicherheitsmaßnahmen**
 
-#### 👤 Die Stakeholder
+### Stakeholder
 
 * Verantwortlicher
-* Datenschutzbeauftragter oder Compliance-Kontakt
-* Eventueller Vertreter
-* Gemeinsam Verantwortliche oder Partner
+* Datenschutzbeauftragter oder Compliance-Ansprechpartner
+* gegebenenfalls Vertreter
+* gemeinsam Verantwortliche oder Partner
 
-#### 🎯 Die Verarbeitungszwecke
+### Zwecke
 
-Alle mit einer Tätigkeit verbundenen Zwecke (z. B.: Vertragsverwaltung, Bewerberverfolgung, Marketing usw.).
+Alle Zwecke, die mit einer Tätigkeit verbunden sind (z. B. Vertragsverwaltung, Bewerbermanagement, Marketing usw.).
 
-#### ⚖️ Die Rechtsgrundlagen
+### Rechtsgrundlagen
 
 * Vertragserfüllung
-* Gesetzliche Verpflichtung
-* Berechtigte Interessen des Verantwortlichen
+* Rechtliche Verpflichtung
+* Berechtigte Interessen
 * Öffentliches Interesse
 * Einwilligung
 * Schutz lebenswichtiger Interessen
 
-#### 🧩 Daten und betroffene Personen
+### Daten und betroffene Personen
 
-* Typologie der Personen (Kunden, Beschäftigte, Besucher…)
+* Art der betroffenen Personen (Kunden, Beschäftigte, Besucher usw.)
 * Kategorien der erhobenen Daten
-* Speicherdauern oder geltende Regeln
+* Speicherdauern oder anwendbare Regeln
 
-#### 🌍 Empfänger und Datenübermittlungen außerhalb des EWR
+### Empfänger und Übermittlungen außerhalb des EWR
 
-* Betroffene interne Abteilungen
+* betroffene interne Abteilungen
 * Auftragsverarbeiter, Dienstleister oder externe Partner
-* Gemeinsam Verantwortliche oder betroffene Personen
-* Internationale Datenübermittlungen: Identifizierung der Länder und rechtlichen Instrumente (Standardvertragsklauseln, BCR, Angemessenheitsbeschluss…)
+* gemeinsam Verantwortliche
+* Internationale Übermittlungen: Angabe der Länder und der rechtlichen Instrumente (Standardvertragsklauseln, verbindliche interne Datenschutzvorschriften, Angemessenheitsbeschluss usw.)
 
-#### 🔐 Sicherheitsmaßnahmen
+### Sicherheitsmaßnahmen
 
-* Technische Maßnahmen (Verschlüsselung, Pseudonymisierung, Sicherung)
-* Organisatorische Maßnahmen (Zugangsmanagement, Schulung, interne Richtlinien)
-
-***
-
-### 🤝 Das Verzeichnis des Auftragsverarbeiters
-
-Auftragsverarbeiter müssen ebenfalls ein kompakteres Verzeichnis führen, das auflistet:
-
-* Die Kontaktdaten des Auftragsverarbeiters, des Datenschutzbeauftragten und des eventuellen Vertreters
-* Die Kontaktdaten der **Verantwortlichen Kunden**
-* Die **Kategorien der verarbeiteten Daten**
-* Die **Kategorien der Empfänger**
-* Die **Datenübermittlungen außerhalb des EWR** und zugehörigen Garantien
-* Die angewandten **Sicherheitsmaßnahmen**
-
-### 🤖 Und das Register der KI-Systeme
-
-Mit dem Inkrafttreten der **KI-Verordnung** müssen Organisationen auch ihre **KI-Systeme** entsprechend ihrem Risikoniveau dokumentieren.\
-Dastra integriert bereits jetzt ein **Register der KI-Systeme**, um:
-
-* Jedes KI-System mit seinen Datenverarbeitungen zu verknüpfen,
-* Zwecke, verwendete Modelle und Trainingsdaten zu beschreiben,
-* Risiken und Maßnahmen zur Risikominderung zu bewerten,
-* Die Compliance mit KI-Verordnung und DSGVO in einem gemeinsamen Bereich zu verfolgen.
+* Technische Maßnahmen (Verschlüsselung, Pseudonymisierung, Backups)
+* Organisatorische Maßnahmen (Zugriffsverwaltung, Schulung, interne Richtlinie)
 
 ***
 
-### 📘 Weiterführende Informationen
+## Das Verzeichnis des Auftragsverarbeiters
+
+Auftragsverarbeiter müssen ebenfalls ein Verzeichnis führen, das knapper gehalten ist und Folgendes auflistet:
+
+* die Kontaktdaten des Auftragsverarbeiters, des Datenschutzbeauftragten und gegebenenfalls des Vertreters
+* die Kontaktdaten der **Verantwortlichen, die Kunden sind**
+* die **Kategorien von Verarbeitungen**, die im Auftrag jedes Verantwortlichen durchgeführt werden
+* die **Übermittlungen außerhalb des EWR** und die zugehörigen Garantien
+* die angewandten **Sicherheitsmaßnahmen**
+
+## Das Register der KI-Systeme
+
+Die **KI-Verordnung**, seit 2024 in Kraft, verpflichtet Organisationen außerdem, ihre **Systeme der künstlichen Intelligenz** entsprechend ihrem Risikoniveau zu dokumentieren. Im **Register der KI-Systeme** von Dastra können Sie:
+
+* jedes KI-System mit seinen Verarbeitungstätigkeiten verknüpfen,
+* Zwecke, verwendete Modelle und Trainingsdaten beschreiben,
+* Risiken und Beherrschungsmaßnahmen bewerten,
+* die Einhaltung von KI-Verordnung und DSGVO in einem einzigen Bereich verfolgen.
+
+***
+
+## Weiterführende Informationen
+
+{% content-ref url="../../features/ropa/README.md" %}
+[Verarbeitungsverzeichnis](../../features/ropa/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../features/ropa/establish.md" %}
+[Ihr Verzeichnis erstellen](../../features/ropa/establish.md)
+{% endcontent-ref %}
 
 ***
 
 {% hint style="success" %}
-💡 **Gute Praxis:**\
-Aktualisieren Sie Ihr Verarbeitungsverzeichnis **bei jeder neuen Verarbeitung** und **jeder wesentlichen Änderung** (neuer Zweck, neuer Dienstleister, neue Datenübermittlung usw.).\
-Dastra kann Sie automatisch benachrichtigen, wenn ein Verzeichnis eine Überprüfung erfordert.
+**Gute Praxis:** Aktualisieren Sie Ihr Verzeichnis **bei jeder neuen Verarbeitungstätigkeit** und **bei jeder wesentlichen Änderung** (neuer Zweck, neuer Dienstleister, neue Übermittlung usw.). Bei regelmäßigen Überprüfungen sendet Dastra dem Verantwortlichen einer Verarbeitungstätigkeit, deren Überprüfung fällig ist, eine E-Mail.
 {% endhint %}
