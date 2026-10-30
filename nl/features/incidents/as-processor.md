@@ -1,60 +1,62 @@
 ---
-description: Beheer datalekincidenten waarbij uw organisatie volgens de AVG optreedt als verwerker.
+description: >-
+  Beheer datalekincidenten waarbij uw organisatie volgens de AVG optreedt als
+  verwerker.
 ---
 
 # Incidenten als verwerker
 
-De module voor datalekken van Dastra past zich aan de rol van uw organisatie in het incident aan: verwerkingsverantwoordelijke of verwerker. Deze rol bepaalt de toepasselijke verplichtingen en welke stappen in het formulier worden getoond.
-
-***
+De module Incidenten van Dastra past zich aan de rol van uw organisatie in het incident aan: verwerkingsverantwoordelijke of verwerker. Deze rol bepaalt de toepasselijke verplichtingen en welke stappen in het formulier worden getoond.
 
 ## Uw rol aangeven bij het aanmaken
 
-Bij het aanmaken van een nieuw incident kiest u met een selector tussen:
+Wanneer u een incident aanmaakt, stelt het venster de vraag **Bent u in het kader van dit incident een subcontractant?**, met twee antwoorden:
 
-* Verwerkingsverantwoordelijke: standaardverloop, met melding aan de toezichthoudende autoriteit, communicatie aan de betrokkenen en risicoanalyse.
-* Verwerker: aangepast verloop. De verplichting om de toezichthoudende autoriteit rechtstreeks te melden geldt niet: de melding is de verantwoordelijkheid van de verwerkingsverantwoordelijke.
+* **Neen** (de standaardwaarde): u behandelt het incident als verwerkingsverantwoordelijke. Het verloop is het standaardverloop: melding aan de toezichthoudende autoriteit, communicatie aan de betrokkenen en risicobeoordeling.
+* **Ja**: u behandelt het incident als verwerker. U hoeft de toezichthoudende autoriteit niet rechtstreeks te melden: dat is de verantwoordelijkheid van de verwerkingsverantwoordelijke.
 
-<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Venster voor het aanmaken van een incident met de selector voor de rol van verwerker (Ja/Nee)"><figcaption><p>Geef bij het aanmaken van een incident aan of uw organisatie als verwerker optreedt, met de vraag <strong>Bent u in het kader van dit incident een subcontractant?</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Venster voor het aanmaken van een incident met de vraag over de rol van verwerker, Ja geselecteerd"><figcaption><p>Geef bij het aanmaken aan of uw organisatie als verwerker optreedt</p></figcaption></figure>
+
+Om het incident stap voor stap aan te maken, zie [Een nieuwe inbreuk documenteren](document-breach.md).
 
 {% hint style="info" %}
-Wettelijke basis: artikel 33, lid 2 van de AVG.
-
-De verwerker moet elke inbreuk op persoonsgegevens zonder onredelijke vertraging aan de verwerkingsverantwoordelijke melden nadat de verwerker kennis ervan heeft genomen. De verwerker hoeft de toezichthoudende autoriteit niet rechtstreeks te melden: die verplichting rust op de verwerkingsverantwoordelijke.
+Artikel 33, lid 2, van de AVG: de verwerker meldt elke inbreuk op persoonsgegevens zonder onredelijke vertraging aan de verwerkingsverantwoordelijke nadat hij er kennis van heeft genomen. De verwerker heeft geen verplichting om de toezichthoudende autoriteit rechtstreeks te melden: die verplichting rust op de verwerkingsverantwoordelijke.
 {% endhint %}
 
-***
+## Verschillen in het formulier
 
-## Verschillen in het formulier bij de rol van verwerker
+Wanneer u **Ja** antwoordt op de vraag over de rol, verandert het formulier als volgt:
 
-Wanneer u de rol van verwerker kiest:
+| Element | Verwerkingsverantwoordelijke | Verwerker |
+| --- | --- | --- |
+| Stap **Kennisgeving** (toezichthoudende autoriteit) | Getoond | Verborgen |
+| Stap **Communicatie** | Communicatie aan de betrokkenen | Communicatie aan de verwerkingsverantwoordelijken, met het tabblad **Verantwoordelijken voor verwerking** |
 
-| Element | Als verwerkingsverantwoordelijke | Als verwerker |
-| ------- | -------------------------------- | ------------- |
-| Stap voor de melding aan de toezichthoudende autoriteit | Getoond | Verborgen |
-| Sectie communicatie aan de betrokkenen | Standaard | Vervangen door de sectie voor verwerkers (zie hieronder) |
-| Sectie communicatie aan de klanten die verwerkingsverantwoordelijke zijn | Niet aanwezig | Aanwezig |
+De andere stappen blijven hetzelfde. In de stap **Risicoanalyse** herinnert een melding u eraan de betrokken verwerkingsverantwoordelijken te informeren over de vereiste acties, zodat zij dienovereenkomstig kunnen handelen.
 
-***
+In het register maakt het filter **Type** onderscheid tussen incidenten die als verwerker worden behandeld en incidenten die als verwerkingsverantwoordelijke worden behandeld, en de pagina **Statistieken** toont de **Verdeling per rol**.
 
-## Communicatie aan de klanten die verwerkingsverantwoordelijke zijn
+## Communiceren met de klanten die verwerkingsverantwoordelijke zijn
 
-Bij de rol van verwerker vervangt een speciale sectie de standaardsectie voor communicatie. Daarmee kunt u:
+De stap **Communicatie** van een incident als verwerker heeft twee tabbladen.
 
-* de klanten die verwerkingsverantwoordelijke zijn en bij het incident betrokken zijn, koppelen: de lijst kan automatisch worden gesynchroniseerd vanuit de verwerkingsactiviteiten die aan het incident zijn gekoppeld
-* de status van de melding aan elke verwerkingsverantwoordelijke opvolgen (gemeld of in behandeling)
-* de lijst van betrokken verwerkingsverantwoordelijken exporteren voor uw nalevingsdossier
+Beantwoord op het tabblad **Communicatie** de vraag **Heeft u een communicatie aan de verantwoordelijken voor verwerking gestuurd?** met **Niet van toepassing**, **Ja** of **Neen**. Klik bij **Ja** op **Voeg een communicatie toe** om elk bericht met zijn datum vast te leggen. Geef bij **Neen** de redenen op bij **Om welke redenen heeft u niet gecommuniceerd met de verantwoordelijken voor verwerking?**.
 
-<figure><img src="../../.gitbook/assets/violations-subprocessor-communication-dc.png" alt="Sectie communicatie aan de verwerkingsverantwoordelijken in een incident als verwerker"><figcaption><p>Het tabblad Communicatie RT toont de te informeren verwerkingsverantwoordelijken, met de knoppen Koppel een RT, Synchroniseer de RT's en Exporteer de RT</p></figcaption></figure>
+Het tabblad **Verantwoordelijken voor verwerking** toont de klanten die verwerkingsverantwoordelijke zijn en door het incident worden getroffen. U kunt:
 
-### Automatische synchronisatie van de verwerkingsverantwoordelijken vanuit gekoppelde verwerkingsactiviteiten
+* een verwerkingsverantwoordelijke koppelen met **Koppel een RT**;
+* de verwerkingsverantwoordelijken automatisch importeren met **Synchroniseer de RT's**;
+* voor elk van hen **Verzonden communicatie** en **Geadviseerde autoriteit** aanvinken;
+* de lijst exporteren met **Exporteer de RT**, voor uw nalevingsdossier.
 
-Zijn er verwerkingsactiviteiten aan het incident gekoppeld, dan kan Dastra de betrokken klanten die verwerkingsverantwoordelijke zijn automatisch uit die activiteiten afleiden en aan de meldingslijst toevoegen. Klik in de speciale sectie op **Synchroniseer de RT's** om die synchronisatie te starten.
+<figure><img src="../../.gitbook/assets/incidents-as-processor-1.png" alt="Stap Communicatie van een incident als verwerker, tabblad Verantwoordelijken voor verwerking"><figcaption><p>Het tabblad Verantwoordelijken voor verwerking, met de acties Koppel een RT, Synchroniseer de RT's en Exporteer de RT</p></figcaption></figure>
 
-***
+### De verwerkingsverantwoordelijken synchroniseren
+
+Zijn er verwerkingsactiviteiten aan het incident gekoppeld (stap **Verwerkingen**), dan zoekt Dastra de klanten die verwerkingsverantwoordelijke zijn op in die activiteiten en voegt ze toe aan de lijst. Klik op **Synchroniseer de RT's** om dit te starten. Is er nog geen verwerkingsactiviteit of AI-systeem gekoppeld, dan vraagt Dastra u er eerst enkele te koppelen.
 
 ## Goede praktijken
 
-* Informeer uw klanten die verwerkingsverantwoordelijke zijn zonder onredelijke vertraging zodra u kennis hebt van het incident. De AVG stelt geen vaste termijn voor de melding van de verwerker aan de verwerkingsverantwoordelijke (anders dan de termijn van 72 uur die voor verwerkingsverantwoordelijken geldt tegenover de toezichthoudende autoriteit), maar snel handelen is essentieel.
-* Leg de datum en het tijdstip van elke melding aan verwerkingsverantwoordelijken vast in de speciale sectie.
-* Bewaar de ontvangstbevestigingen of reacties van verwerkingsverantwoordelijken in de bijlagen van het incident.
+* Informeer uw klanten die verwerkingsverantwoordelijke zijn zodra u kennis hebt van het incident. De AVG stelt geen vaste termijn voor de verwerker, anders dan de 72 uur die de verwerkingsverantwoordelijke heeft om de autoriteit te melden, maar snel handelen is essentieel.
+* Leg de datum en het tijdstip van elke communicatie aan de verwerkingsverantwoordelijken vast.
+* Bewaar de ontvangstbevestigingen en reacties in de stap **Documentatie** van het incident.
