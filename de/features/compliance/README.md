@@ -23,7 +23,7 @@ Im Menü bietet **Compliance** vier Einträge:
 
 Das Modul beruht auf einer logischen Kette von Objekten, von den regulatorischen Frameworks bis zu den Compliance-Nachweisen.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Objektkette des Moduls: Framework, Anforderungen, Kontrollen, Risikoszenarien, Tests, Nachweise und Audits"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-object-chain.svg" alt="Objektkette des Moduls: Framework, Anforderungen, Kontrollen, Risikoszenarien, Tests, Nachweise und Audits"><figcaption></figcaption></figure>
 
 ### Frameworks
 
@@ -164,9 +164,9 @@ Eine einzige Kontrolle (zum Beispiel die Überprüfung der Zugriffsrechte) kann 
 * eine Anforderung der ISO 27001 erfüllen,
 * mehrere Risikoszenarien verringern.
 
-Erläuterndes Schaubild:
+Beispiel: Die Kontrolle „Regelmäßige Überprüfung der Zugriffsrechte“ erfüllt eine Anforderung der DSGVO und eine der ISO 27001, wird durch einen Test mit Nachweis geprüft und mindert zwei Risiken:
 
-<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Beziehungen zwischen Frameworks, Anforderungen, Kontrollen, Tests, Nachweisen und Risikoszenarien"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-shared-control-example.svg" alt="Beispiel einer Kontrolle für DSGVO und ISO 27001, mit Test, Nachweis und den zwei Risiken, die sie mindert"><figcaption></figcaption></figure>
 
 ***
 

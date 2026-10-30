@@ -23,7 +23,7 @@ In the menu, **Compliance** gives access to four entries:
 
 The module is based on a logical chain of objects, from regulatory frameworks through to compliance evidence.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Chain of objects of the module: framework, requirements, controls, risk scenarios, tests, evidence and audits"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-object-chain.svg" alt="Chain of objects of the module: framework, requirements, controls, risk scenarios, tests, evidence and audits"><figcaption></figcaption></figure>
 
 ### Frameworks
 
@@ -164,9 +164,9 @@ A single control (e.g. access review) can thus:
 * satisfy an ISO 27001 requirement,
 * reduce several risk scenarios.
 
-Explanatory diagram:
+Example: the periodic access review control satisfies a GDPR requirement and an ISO 27001 requirement, is verified by a test proven by evidence, and reduces two risks:
 
-<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Relationships between frameworks, requirements, controls, tests, evidence and risk scenarios"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-shared-control-example.svg" alt="Example of one control shared by GDPR and ISO 27001, with its test, its evidence and the two risks it reduces"><figcaption></figcaption></figure>
 
 ***
 
