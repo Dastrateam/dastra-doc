@@ -1,91 +1,84 @@
+---
+description: >-
+  Aktivieren Sie die regelmäßige Überprüfung, damit Dastra Sie an die
+  Überprüfung Ihrer Elemente erinnert: Verarbeitungstätigkeiten, Stakeholder,
+  Assets, KI-Systeme, Verträge und Kontrollpunkte.
+---
+
 # Regelmäßige Überprüfung (Aktualität)
 
-### Was ist der Aktualitätsindikator?
+Die Aktualität zeigt Ihnen, wann ein Element zuletzt überprüft wurde. Wenn Sie die regelmäßige Überprüfung für eine Art von Elementen aktivieren, legen Sie ein Intervall zwischen zwei Überprüfungen fest. Jede Überprüfung setzt ein nächstes Überprüfungsdatum, und die Aktualität nimmt ab, je näher dieses Datum rückt. So stellen Sie sicher, dass die in Dastra erfassten Informationen regelmäßig überprüft werden.
 
-Die Aktualität ist ein Indikator für die letzte Überprüfung eines Elements in Dastra. Es kann sich um eine Verarbeitung, ein Objekt Ihres Referenzverzeichnisses oder sogar einen Vertrag handeln. Durch Aktivierung dieser Funktionalität legen Sie ein zukünftiges Überprüfungsdatum für das Objekt fest, und die Aktualität verschlechtert sich, je näher dieses Datum rückt. Diese Funktionalität ist ein einfaches und spielerisches Mittel, um sicherzustellen, dass Sie die in der Anwendung eingegebenen Informationen regelmäßig überprüfen.
+Die regelmäßige Überprüfung steht für Verarbeitungstätigkeiten, Stakeholder, Assets, KI-Systeme, Verträge und die Kontrollpunkte des Risikomanagements zur Verfügung, je nach den Modulen Ihres Abonnements. Die Besonderheiten der Verarbeitungstätigkeiten sind unter [Aktualität der Verarbeitungen](ropa/freshness.md) beschrieben.
 
-<figure><img src="../.gitbook/assets/Compliance53.png" alt=""><figcaption><p>Funktionsschema des Aktualitätsindikators</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/freshness-en.png" alt="Diagramm der Funktionsweise der Aktualitätsanzeige"><figcaption><p>Funktionsweise der Aktualitätsanzeige</p></figcaption></figure>
 
-### Wie aktiviere ich den Aktualitätsindikator?
+## Die regelmäßige Überprüfung aktivieren
 
-Um die Aktualität für einen Objekttyp zu aktivieren, gehen Sie in die Einstellungen Ihres Mandanten und wählen Sie den Tab _Regelmäßige Überprüfungen_.
+Nur Nutzer mit der Berechtigung **Erweiterte Konfiguration** können diese Einstellung ändern.
 
-<figure><img src="../.gitbook/assets/Compliance54.png" alt=""><figcaption><p>Das Konfigurationsmenü der regelmäßigen Überprüfung (Aktualität)</p></figcaption></figure>
+1. Klicken Sie im linken Menü auf **Mandanteneinstellungen** und dann unter **Prozess** auf **Regelmäßige Überprüfungen**. Sie können auch im Optionsmenü der Liste eines Moduls auf **Regelmäßige Überprüfung (Aktualität) konfigurieren** klicken: Der Eintrag zeigt, ob die regelmäßige Überprüfung für diese Art von Elementen bereits aktiviert ist.
+2. Wählen Sie in der Auswahl oben auf der Seite die Art des Elements.
+3. Aktivieren Sie **Die regelmäßige Überprüfung des Elements aktivieren**.
+4. Geben Sie unter **Bitte wählen Sie das gewünschte Intervall zwischen den einzelnen Überprüfungen aus** das Intervall in Jahren, Monaten oder Tagen ein.
+5. Klicken Sie auf **Speichern**.
 
-Sie können von diesem Menü aus die Aktualität für die verschiedenen Objekte aktivieren, die über diese Funktionalität verfügen, indem Sie auf das Dropdown-Menü zur Objektauswahl klicken.
+<figure><img src="../.gitbook/assets/regular-review-1.png" alt="Die Einstellungen Regelmäßige Überprüfungen mit der Auswahl der Art des Elements, dem Schalter zur Aktivierung und dem Intervall"><figcaption><p>Die Einstellungen Regelmäßige Überprüfungen</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Compliance55.png" alt=""><figcaption><p>Die Liste der Objekte, für die Sie die Aktualität aktivieren können</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/regular-review-2.png" alt="Die Liste der Arten von Elementen, für die die regelmäßige Überprüfung verfügbar ist"><figcaption><p>Die verfügbaren Arten von Elementen</p></figcaption></figure>
 
-Aktivieren Sie die Option „Regelmäßige Überprüfung des Elements aktivieren" und konfigurieren Sie **das gewünschte Zeitintervall zwischen jeder Überprüfung**.
+Das Intervall ist für alle Elemente einer Art gleich. Sobald Sie es speichern, fragt Dastra **Das neue Intervall anwenden?**:
 
-Die Aktualität eines Elements entspricht der Anzahl der Tage zwischen dem letzten Datum, an dem das Element als aktuell markiert wurde, und seinem zukünftigen Überprüfungsdatum.
+* **Auf alle bestehenden Überprüfungen anwenden** ersetzt alle bereits gesetzten nächsten Überprüfungsdaten durch neue Daten, die aus dem neuen Intervall berechnet werden.
+* **Nur auf zukünftige Überprüfungen anwenden** behält die bestehenden Daten bei, und das neue Intervall gilt ab der nächsten Überprüfung.
 
-Das Überprüfungsdatum ist ein zukünftiges Datum, das berechnet wird, indem zum letzten Datum, an dem das Element als aktuell markiert wurde, **das gewünschte Zeitintervall zwischen jeder Überprüfung** hinzugefügt wird.
+## Die regelmäßige Überprüfung deaktivieren
 
-Bitte beachten Sie, dass dieses Ablaufintervall für alle Elemente desselben Typs gleich ist, für die die Überprüfung aktiv ist.
+Wählen Sie in denselben Einstellungen die Art des Elements, deaktivieren Sie **Die regelmäßige Überprüfung des Elements aktivieren** und klicken Sie auf **Speichern**.
 
-### Aktualitätsoption deaktivieren
+## Die Aktualität anzeigen
 
-Um die Option zu deaktivieren, müssen Sie einfach das Kontrollkästchen _Regelmäßige Überprüfung des Elements aktivieren_ im Bereich „Regelmäßige Überprüfungen" der Mandant-Einstellungen deaktivieren.
+Die Aktualität wird nur für **veröffentlichte** Elemente angezeigt, die mindestens einmal überprüft wurden.
 
-### Visualisierung des Aktualitätsindikators
+Alle betroffenen Elemente haben eine Spalte **Datum der letzten Überprüfung**, die Sie zu den Spalten der Liste hinzufügen können. Sie zeigt den Aktualitätszustand jedes Elements.
 
-Alle Objekte, die über diese Funktionalität verfügen, haben eine Spalte „Datum der letzten Überprüfung", die Sie den Übersichtstabellen hinzufügen können. Diese Spalte ermöglicht die Verfolgung des Aktualitätsstatus jedes Elements.
+<figure><img src="../.gitbook/assets/regular-review-3.png" alt="Eine Liste mit der Spalte Datum der letzten Überprüfung"><figcaption><p>Die Spalte Datum der letzten Überprüfung</p></figcaption></figure>
 
-Bitte beachten Sie, dass die Aktualität nur für **veröffentlichte Elemente** angezeigt wird.
+Auf der Seite einer Verarbeitungstätigkeit oder eines KI-Systems zeigt der rechte Bereich außerdem den Balken **Aktualität**, der kürzer wird, je näher das nächste Überprüfungsdatum rückt. Neben dem Zustand und seiner Farbe sehen Sie den Link **Überprüfung** und die Anzahl der verbleibenden oder überschrittenen Tage.
 
-<figure><img src="../.gitbook/assets/Compliance56.png" alt="Die Spalte &#x22;Datum der letzten Überprüfung&#x22;"><figcaption><p>Die Spalte „Datum der letzten Überprüfung"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/regular-review-4.png" alt="Der Aktualitätsbereich der Seite einer Verarbeitungstätigkeit mit dem Balken, dem Zustand und dem Link Überprüfung"><figcaption><p>Die Aktualitätsanzeige auf der Seite einer Verarbeitungstätigkeit</p></figcaption></figure>
 
-Diesen Indikator finden Sie auch im Schnellzugriffsmenü der Elemente.
+### Aktualitätszustände
 
-<figure><img src="../.gitbook/assets/image-350.png" alt=""><figcaption><p>Der Aktualitätsindikator im Schnellzugriffsmenü eines Elements</p></figcaption></figure>
+| Zustand | Anzeigeregel |
+| --- | --- |
+| **Aktuell** (grün) | Das Element wurde kürzlich überprüft und braucht keine sofortige Aufmerksamkeit. Dieser Zustand wird angezeigt, bis das aktuelle Datum in den letzten 10 Prozent des Intervalls liegt. |
+| **Demnächst fällig** (orange) | Das Element muss geprüft werden. Dieser Zustand wird in den letzten 10 Prozent des Intervalls nach der letzten Überprüfung angezeigt. |
+| **Veraltet** (rot) | Das nächste Überprüfungsdatum ist überschritten: Das Element entspricht nicht mehr der Überprüfungsrichtlinie. |
 
-### Visualisierung des Aktualitätsindikators im spezifischen Fall des Verarbeitungsverzeichnisses
+**Beispiel:** Sie haben ein Intervall von 1 Jahr festgelegt. Ein Element, das am 1. Januar 2026 überprüft wurde, wird bis Ende November 2026 als **Aktuell** angezeigt, dann als **Demnächst fällig** bis zum 1. Januar 2027. Danach wird es als **Veraltet** angezeigt, bis es überprüft wird.
 
-Die Anzeige der Aktualität im Rahmen einer Datenverarbeitung ist etwas umfangreicher als bei den anderen Elementen, die über diese Funktionalität verfügen.
+## Ein Element überprüfen
 
-Sie finden den Aktualitätsindikator oben rechts in Ihrem Verarbeitungsformular (sofern die Verarbeitung veröffentlicht und mindestens einmal als aktuell markiert wurde)
+Sie können ein Element jederzeit überprüfen, ohne auf sein nächstes Überprüfungsdatum zu warten. Klicken Sie in einer Liste auf die Zelle der Spalte **Datum der letzten Überprüfung** des Elements. Klicken Sie auf der Seite einer Verarbeitungstätigkeit oder eines KI-Systems auf **Überprüfung**.
 
-Dieser Indikator besteht aus einem Label mit den Werten „Aktuell", „Ausstehend" und „Überfällig", einer Farbe (jeweils Grün, Gelb, Rot), einem Fortschrittsbalken, der abnimmt, je näher das Ablaufdatum rückt, einer Schaltfläche zum Markieren der Verarbeitung als aktuell und der Anzahl der verbleibenden Tage oder der Verzögerung gegenüber dem Ablaufdatum.
+<figure><img src="../.gitbook/assets/regular-review-5.png" alt="Das Fenster Überprüfung mit seinen Feldern"><figcaption><p>Das Fenster Überprüfung</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image-270.png" alt=""><figcaption></figcaption></figure>
+Füllen Sie im Tab **Neue Überprüfung** Folgendes aus:
 
-<figure><img src="../.gitbook/assets/Compliance57.png" alt=""><figcaption><p>In der mobilen Ansicht finden Sie diesen Indikator ebenfalls in der Navigationsleiste oben in Ihrem Verarbeitungsformular</p></figcaption></figure>
+* **Verantwortlicher für die Überprüfung**: der Nutzer, der die Überprüfung durchgeführt hat.
+* **Überprüfung** (das Datum der Überprüfung).
+* **Versionsbeschreibung:** was geprüft oder geändert wurde (optional).
+* **Datum vor der nächsten Überprüfung**: berechnet aus dem in den Einstellungen festgelegten Intervall. Um ein Datum festzulegen, das für dieses Element gilt, aktivieren Sie **Ändern Sie das Datum der nächsten Überprüfung** und wählen Sie ein Datum (frühestens am nächsten Tag).
 
-<figure><img src="../.gitbook/assets/image-271.png" alt=""><figcaption><p>Beispiel einer abgelaufenen Verarbeitung</p></figcaption></figure>
+Klicken Sie auf **Überprüfung**, um zu speichern: Ab dem Datum der Überprüfung beginnt ein neuer Aktualitätszyklus.
 
-### Anzeigeregeln für Überprüfungsstatus
+Der Tab **Frühere Überprüfungen** listet die vergangenen Überprüfungen des Elements auf. Er bietet außerdem die Schaltfläche **Delete all reviews**, die den Verlauf löscht. Nach einer Bestätigung gilt das Element als nie überprüft, seine Überprüfungsdaten werden gelöscht, und die Aktualitätsanzeige verschwindet. Diese Aktion lässt sich nicht rückgängig machen.
 
-Es gibt 3 mögliche Status bezüglich der Aktualität einer Verarbeitung: aktuell, ausstehend oder überfällig. Standardmäßig gelten die folgenden Anzeigeregeln:
+## Überprüfungen im Dashboard verfolgen
 
-<table><thead><tr><th width="258">Überprüfungsstatus</th><th>Anzeigeregel</th></tr></thead><tbody><tr><td>Aktuell (grüne Farbe)</td><td><p>Das Element wurde kürzlich überprüft und erfordert keine sofortige Aufmerksamkeit.</p><p><br>Dieser Status wird angezeigt, bis das aktuelle Datum in den letzten 10 Prozent des vorgesehenen Intervalls seit der letzten Überprüfung liegt.</p></td></tr><tr><td>Ausstehend (orange Farbe)</td><td><p>Das Element muss überprüft werden.<br></p><p>Dieser Status wird in den letzten zehn Prozent des vorgesehenen Intervalls seit der letzten Überprüfung angezeigt.</p></td></tr><tr><td>Überfällig (rote Farbe)</td><td>Das Element entspricht nicht mehr der Überprüfungsrichtlinie.<br><br>Dieser Status wird angezeigt, wenn das aktuelle Datum größer ist als das Datum der letzten Überprüfung + das definierte Intervall.</td></tr></tbody></table>
+Die Kachel **Datenverarbeitung** des [Dashboards](dashboard.md) zeigt die Kennzahl **Überprüfung erforderlich**: die Anzahl der Verarbeitungstätigkeiten, die nach dem festgelegten Intervall zu überprüfen sind, und die Anzahl der aktuellen.
 
-{% hint style="info" %}
-**Beispiel:**
+## Benachrichtigungen
 
-Ich habe ein Intervall von 1 Jahr für die Überprüfung der Verarbeitungen festgelegt. Für eine am 1. Januar überprüfte Verarbeitung:
-
-* wird sie bis zum 25. November als aktuell angezeigt
-* wird sie ab dem 25. November als ausstehend angezeigt
-* Am 31. Dezember wird sie dann als überfällig angezeigt, solange sie nicht überprüft wird.
-{% endhint %}
-
-### Ein Element aktualisieren
-
-Sie können jederzeit, ohne unbedingt das nächste Überprüfungsdatum abzuwarten, entscheiden, das Element zu überprüfen. Klicken Sie dazu auf die Zelle der Spalte „Datum der letzten Überprüfung" eines Elements, wenn Sie sich in einer Tabellenansicht befinden. Die Funktionalität muss natürlich für dieses Element aktiv sein und Sie müssen die betreffende Spalte anzeigen.
-
-<figure><img src="../.gitbook/assets/screenshot-2024-07-26-154523-1.png" alt=""><figcaption><p>Zugang zum Fenster der regelmäßigen Überprüfung des Elements</p></figcaption></figure>
-
-Sie können auch direkt über die Bearbeitungsansicht des zu überprüfenden Elements darauf zugreifen, indem Sie auf das Aktualitätssymbol im Schnellzugriffsmenü klicken.
-
-<figure><img src="../.gitbook/assets/image-347.png" alt=""><figcaption><p>Das Aktualitätssymbol, auf das Sie klicken, um zur Überprüfung eines Elements zu gelangen.</p></figcaption></figure>
-
-Sie gelangen dann zum Überprüfungsfenster des Elements. Beachten Sie, dass es möglich ist, frühere Überprüfungen über dieses Fenster einzusehen.
-
-<figure><img src="../.gitbook/assets/Compliance58.png" alt=""><figcaption><p>Das Fenster zur Überprüfung eines Elements</p></figcaption></figure>
-
-Durch die Überprüfung eines Elements starten Sie einen neuen Aktualitätszyklus ab dem aktuellen Datum bis zum nächsten Überprüfungsdatum. Das Überprüfungsdatum wird standardmäßig basierend auf der Einstellung des Überprüfungsintervalls des Elements berechnet (siehe oben). Sie können dieses Standarddatum ignorieren und ein spezifisches Ablaufdatum für dieses Element festlegen, indem Sie die Option „Nächstes Überprüfungsdatum ändern" aktivieren und ein neues Datum auswählen (das nächste Überprüfungsdatum muss mindestens auf T+1 festgelegt werden)
-
-### Benachrichtigungen
-
-Der Ersteller des Elements sowie die mit dem Element verknüpften Nutzer (zum Beispiel die Inhaber bei Verarbeitungen) werden beim Übergang in den abgelaufenen Status per E-Mail benachrichtigt, um sie daran zu erinnern, dass das Element seit langem nicht überprüft wurde und es Zeit ist, es zu aktualisieren.
+Wird ein Element veraltet, werden sein Ersteller und die mit ihm verknüpften Nutzer (zum Beispiel die Inhaber einer Verarbeitungstätigkeit) per E-Mail benachrichtigt: Das Element wurde lange nicht überprüft, und es ist Zeit, es zu aktualisieren.
