@@ -1,75 +1,88 @@
 ---
 description: >-
-  Die Filerskeepers-Integration ermöglicht es Ihnen, die Aufbewahrungsfristen
-  Ihrer Dastra-Datensätze mit Ihrem Filerskeepers-Referenzverzeichnis zu
-  synchronisieren.
+  Filerskeepers-Integration, um die Speicherdauern Ihrer Dastra-Datenkategorien
+  mit Ihrem Filerskeepers-Verzeichnis zu synchronisieren.
 ---
 
 # Filerskeepers
 
-### Was ist Filerskeepers?
+## Über Filerskeepers
 
-[Filerskeepers](https://www.filerskeepers.co/) ist ein Dienst, der einsatzbereite **Datenaufbewahrungspläne** (Retention Schedules) bereitstellt, die die gesetzlichen Pflichten weltweit abdecken.\
-Er hilft Unternehmen dabei, **festzustellen, wie lange jede Art von Daten aufbewahrt oder gelöscht werden muss**, um die Vorschriften einzuhalten.
+[Filerskeepers](https://www.filerskeepers.co/) ist ein Dienst, der **gebrauchsfertige Aufbewahrungspläne** bereitstellt und die gesetzlichen Aufbewahrungspflichten aus aller Welt abdeckt.\
+Er hilft Unternehmen zu **bestimmen, wie lange sie jede Art von Daten aufbewahren oder wann sie sie löschen müssen**, um die geltenden Vorschriften einzuhalten.
 
-### Voraussetzungen
+## Voraussetzungen
 
-* Eine kostenpflichtige Dastra-Lizenz besitzen
-* Ein Filerskeepers-Konto haben. Wenn Sie noch keines haben und bereits Dastra-Kunde sind, können Sie [mit unserem Vertriebsteam sprechen](https://meetings-eu1.hubspot.com/yann-forveille/rendez-vous-avec-un-expert?message=Filerskeepers+Integration), das Ihnen vorteilhafte Konditionen anbieten kann
-* Einen Aufbewahrungsfristen-Referenzkatalog (Schedule) in der Filerskeepers-Software eingerichtet haben. Die Integration benötigt diesen Referenzkatalog, um auf die Katalogdaten zugreifen zu können.
-
-### Installation
-
-Der Einrichtungsprozess ist sehr einfach:
-
-* **Rufen Sie die Seite der Filerskeepers-Integration im** Dastra-Integrations-Marketplace auf: [https://app.dastra.eu/workspace/0/settings/integrations/filerskeepers](https://app.dastra.eu/workspace/0/settings/integrations/filerskeepers)
-* Klicken Sie auf die Schaltfläche **"Installieren"**.
-*   **Geben Sie Ihre Anmeldedaten** Ihres Filerskeepers-Administratorkontos ein (E-Mail + Passwort). Diese Anmeldedaten ermöglichen es uns, einen Zugriffstoken für die Filerskeepers-API zu generieren.<br>
-
-    <figure><img src="../../.gitbook/assets/Konfigurieren Sie Ihr filerskeepers Konto.png" alt=""><figcaption></figcaption></figure>
-* Ein Konfigurationsfenster wird angezeigt. Diese Konfiguration ist obligatorisch, um die Installation abzuschließen. Wählen Sie in diesem Formular den "Schedule" aus, den Sie mit Dastra konfigurieren möchten.
-
-<figure><img src="../../.gitbook/assets/image-1-1-1-1-1-1.png" alt=""><figcaption></figcaption></figure>
-
-### Konfiguration
-
-* Wählen Sie das Filerskeepers-Referenzverzeichnis aus, das Sie mit Dastra synchronisieren möchten
-* Entscheiden Sie, ob Sie die Synchronisierung der Aufbewahrungsfristen einrichten möchten. (Die mit Filerskeepers synchronisierten Datensätze werden jede Nacht um 00:00 UTC aktualisiert)
-* Wählen Sie die Personen aus, die bei Änderung/Erstellung von Aufbewahrungsfristen in den Datensätzen benachrichtigt werden sollen. Die Person erhält eine Benachrichtigungs-E-Mail mit Informationen über die aktualisierten Datensätze.
-* Das Aktivieren von "Create new datasets if not exists" hat zur Folge, dass für jeden in Ihrem Filerskeepers-Konto deklarierten Datentyp ein Datensatz erstellt wird.
+* Eine kostenpflichtige Dastra-Lizenz
+* Ein Filerskeepers-Konto. Wenn Sie noch keines haben und bereits Dastra-Kunde sind, können Sie [unser Vertriebsteam kontaktieren](https://meetings-eu1.hubspot.com/yann-forveille/rendez-vous-avec-un-expert?message=Filerskeepers+Integration), das Ihnen Vorzugskonditionen anbieten kann.
+* Ein in der Filerskeepers-Software eingerichtetes Verzeichnis der Aufbewahrungsfristen („Schedule“). Die Integration benötigt dieses Verzeichnis, um auf Ihre Katalogdaten zuzugreifen.
 
 {% hint style="info" %}
-Achtung: Wenn Sie dieses Kontrollkästchen aktivieren, wird eine große Anzahl von Datensätzen automatisch in Ihrem Mandanten erstellt.
+Die Nutzung des Konnektors unterliegt den Nutzungsbedingungen von Filerskeepers. Die von Filerskeepers bereitgestellten Daten sind ausschließlich für den internen Gebrauch in Ihrer Organisation bestimmt: Sie dürfen weder kopiert, exportiert oder weitergegeben noch kommerziell genutzt werden. Filerskeepers-Zugangsdaten können nur mit einer Dastra-Organisation verknüpft werden. Endet der Dienst, müssen Sie alle Filerskeepers-Daten löschen. Dastra ist nicht verantwortlich für die Inhalte oder Aktualisierungen von Filerskeepers.
 {% endhint %}
 
-### Auswahl der Aufbewahrungsrichtlinie
+## Installation
 
-Der Filerskeepers-Konnektor hat mehrere Betriebsmodi:
+Die Installation folgt dem gemeinsamen Ablauf der Integrationen (siehe [Verbindungen, Anwendungsfälle und Feld-Mapping](connections.md)):
 
-* Anzeige der Aufbewahrungsfristen-Auswahl aus Ihrem Aufbewahrungsfristen-Referenzverzeichnis. In der Software als "Schedule" bezeichnet
+1. Öffnen Sie **Mandanteneinstellungen** > **Integrationen** und wählen Sie **Filerskeepers** aus.
+2. Klicken Sie im Anwendungsfall für Datenkategorien auf **Integration hinzufügen**.
+3. Wählen Sie im Schritt **Anmelden** die Option **Verbindung hinzufügen**. Geben Sie die **E-Mail-Adresse** und das **Passwort** eines Filerskeepers-Administratorkontos ein und klicken Sie dann auf **Anmelden**. Dastra verwendet diese Zugangsdaten, um ein Zugriffstoken für die Filerskeepers-API zu erhalten.
 
-Wenn Sie nun einen Datensatz aufrufen, wird im Abschnitt "Aufbewahrungsrichtlinien" eine Schaltfläche zur Auswahl der Aufbewahrungsrichtlinie angezeigt
+<figure><img src="../../.gitbook/assets/integrations-filerskeepers-1.png" alt="Der Schritt Verbindung der Filerskeepers-Installation mit den Feldern E-Mail-Adresse und Passwort"><figcaption><p>Verbindung mit Filerskeepers herstellen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image-3.png" alt=""><figcaption></figcaption></figure>
+4. Wählen Sie im Schritt **Konfiguration** den Schedule aus, der mit Dastra synchronisiert werden soll. Dieser Schritt ist erforderlich, um die Installation abzuschließen.
 
-Durch Klicken auf diese Schaltfläche können Sie direkt einen Datensatz aus Ihrem Filerskeepers-Referenzverzeichnis auswählen. **Diese Aufbewahrungsfrist wird automatisch** mit Dastra synchronisiert, wenn Sie diese Option in der Konnektor-Konfiguration aktiviert haben.
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-settings.png" alt="Der Konfigurationsschritt von Filerskeepers"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image-4.png" alt=""><figcaption></figcaption></figure>
+## Konfiguration
 
-Wählen Sie einen Datensatz aus, indem Sie auf die Schaltfläche "Select" klicken
+Öffnen Sie die Konfiguration über das Menü des Anwendungsfalls erneut, Eintrag **Konfiguration**.
 
-Sobald Sie die Aufbewahrungsfrist ausgewählt haben, schließt sich das Fenster und folgende Informationen werden angezeigt:<br>
+* **Wählen Sie den filerskeepers-Aufbewahrungsplan (Schedule) aus, den Sie synchronisieren möchten** (erforderlich): der Filerskeepers-Schedule, der mit Dastra synchronisiert werden soll.
+* Der Schalter, der die Speicherdauern synchron hält: Ist er aktiviert, werden die mit Filerskeepers synchronisierten Datenkategorien einmal täglich aktualisiert.
+* **Nutzer, die bei der Erstellung/Aktualisierung von Datensätzen benachrichtigt werden sollen** (erforderlich, wenn die Synchronisierung aktiviert ist, höchstens 10): Diese Nutzer erhalten eine E-Mail mit den Datenkategorien, die erstellt oder aktualisiert wurden.
+* Der Schalter, der die fehlenden Datenkategorien erstellt: Ist er aktiviert, wird für jede in Ihrem Filerskeepers-Konto deklarierte Datenart eine Datenkategorie erstellt.
+* Die optionale Auswahl der Rechtsordnung, die bei aktiviertem Erstellen von Datenkategorien angezeigt wird: Sie bestimmt die Rechtsordnung, die für die erstellten Datenkategorien synchronisiert wird. Passt keine Rechtsordnung, verwendet Dastra die Referenz-Speicherdauer (Golden Standard).
 
-<figure><img src="../../.gitbook/assets/image-5.png" alt=""><figcaption></figcaption></figure>
+{% hint style="warning" %}
+Wenn Sie das Erstellen von Datenkategorien aktivieren, werden in Ihrem Mandanten automatisch sehr viele Datenkategorien angelegt.
+{% endhint %}
+
+### Eine Synchronisierung starten
+
+Um zu synchronisieren, ohne den täglichen Lauf abzuwarten, öffnen Sie das Menü des Anwendungsfalls und klicken Sie auf **Synchronisierung starten**. Eine von Hand gestartete Synchronisierung erstellt die fehlenden Datenkategorien, auch wenn die Option zum Erstellen deaktiviert ist.
+
+**Protokolle anzeigen** im selben Menü listet die vergangenen Läufe und ihr Ergebnis auf.
+
+## Die Speicherdauer auswählen
+
+Der Filerskeepers-Konnektor bietet mehrere Betriebsarten:
+
+* Anzeige der Auswahl der Speicherdauer auf Grundlage Ihres Filerskeepers-Verzeichnisses der Aufbewahrungsfristen (in der Software „Schedule“ genannt).
+
+Wenn Sie ab jetzt in Dastra eine Datenkategorie öffnen, erscheint im Bereich **Speicherdauer** eine Schaltfläche zur Auswahl einer Aufbewahrungsrichtlinie.
+
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-retention-pick.png" alt="Die Schaltfläche Füllen Sie mit filerskeepers im Editor der Speicherdauer einer Datenkategorie"><figcaption><p>Aus dem Filerskeepers-Schedule auswählen</p></figcaption></figure>
+
+Mit einem Klick auf diese Schaltfläche können Sie direkt einen Eintrag aus Ihrem Filerskeepers-Verzeichnis auswählen. **Diese Speicherdauer wird automatisch mit Dastra synchronisiert**, wenn Sie diese Option in der Konfiguration der Integration aktiviert haben.
+
+Wählen Sie einen Eintrag mit der Schaltfläche **Bitte auswählen** aus.
+
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-schedule-table.png" alt="Die Tabelle der Speicherdauern des Filerskeepers-Schedules mit einer Auswahlschaltfläche in jeder Zeile"><figcaption><p>Tabelle der Speicherdauern im Schedule</p></figcaption></figure>
+
+Sobald Sie die Speicherdauer ausgewählt haben, schließt sich das Fenster und die Details der Speicherdauer werden angezeigt.
+
+<figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-synced.png" alt="Eine mit Filerskeepers synchronisierte Speicherdauer mit dem Datum der letzten Aktualisierung"><figcaption><p>Eine synchronisierte Speicherdauer</p></figcaption></figure>
 
 {% hint style="info" %}
-Nur Aufbewahrungsfristen in der aktiven Basis werden synchronisiert
+Es werden nur Speicherdauern synchronisiert, die sich auf aktive Datenspeicher beziehen.
 {% endhint %}
 
-### Wie werden die Daten zwischen Dastra und Filerskeepers synchronisiert?
+## Datenabgleich zwischen Dastra und Filerskeepers
 
-Eine Reihe von Feldern aus Filerskeepers werden automatisch auf Ihre Aufbewahrungsfrist gemappt:
+Mehrere Felder aus Filerskeepers werden automatisch Ihrer Speicherdauer zugeordnet:
 
-* **Die Aufbewahrungsdauer** (from)
-* **Die Beschreibung der Aufbewahrungsregel**
-* **Die Rechtsgrundlage, der Link und die betroffene Rechtsordnung** werden im Feld Begründung zusammengefasst
+* **Die Aufbewahrungsdauer** (ab)
+* **Die Beschreibung der Aufbewahrungsrichtlinie**
+* **Die rechtliche Begründung, der Link und die Rechtsordnung**, die im Feld für die Begründung zusammengeführt werden

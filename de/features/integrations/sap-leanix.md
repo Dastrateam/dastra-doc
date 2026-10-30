@@ -12,7 +12,7 @@ description: 'SAP LeanIX-Integration: Anwendungen als Assets mit Dastra synchron
 
 Die Integration **importiert Ihre SAP LeanIX Application Fact Sheets in das Asset-Verzeichnis von Dastra und hält sie synchron**:
 
-* Jede LeanIX-Anwendung wird zu einem **Asset** in Ihrem Workspace oder aktualisiert ein bereits vorhandenes Asset.
+* Jede LeanIX-Anwendung wird zu einem **Asset** in Ihrem Mandanten oder aktualisiert ein bereits vorhandenes Asset.
 * Die Synchronisierung erfolgt **täglich** und kann jederzeit manuell ausgelöst werden.
 * Bestehende Assets werden aktualisiert und nicht dupliziert: Die Zuordnung erfolgt anhand der ID des LeanIX Fact Sheets und optional anhand eines von Ihnen gewählten Feldes (siehe Deduplizierung weiter unten).
 * Die Integration löscht niemals Assets — Anwendungen, die nicht mehr in LeanIX vorhanden sind, werden lediglich mit einem Tag gekennzeichnet.
@@ -22,11 +22,13 @@ Die Integration **importiert Ihre SAP LeanIX Application Fact Sheets in das Asse
 * Die **URL Ihrer SAP LeanIX-Instanz**, z. B. `https://ihr-unternehmen.leanix.net`.
 * Ein **API-Token** eines LeanIX-_Technical Users_, der von Ihrem LeanIX-Administrator erstellt wurde.
 
+{% hint style="warning" %}
 Verwenden Sie die Root-URL Ihrer LeanIX-Instanz ohne Workspace-Pfad (z. B. `https://ihr-unternehmen.leanix.net` und nicht `https://ihr-unternehmen.leanix.net/MeinWorkspace`).
+{% endhint %}
 
 ### Installation
 
-1. Öffnen Sie **Einstellungen > Integrationen** und wählen Sie **SAP LeanIX** aus.
+1. Öffnen Sie **Mandanteneinstellungen** > **Integrationen** und wählen Sie **SAP LeanIX** aus.
 2. Klicken Sie beim Anwendungsfall für den Import von Anwendungen auf **Integration hinzufügen**.
 3. Fügen Sie eine Verbindung hinzu: Geben Sie einen **Verbindungsnamen**, die **Instanz-URL** und das **API-Token** ein und klicken Sie anschließend auf **Verbinden**. Dastra validiert das Token bei Ihrer Instanz.
 
@@ -39,7 +41,7 @@ Im Konfigurationsschritt legen Sie fest, wie Anwendungen importiert werden:
 * **Bei Fehlern zu benachrichtigende Benutzer (erforderlich)**: Diese Benutzer erhalten eine E-Mail, wenn eine Synchronisierung fehlschlägt.
 * **Dastra-Eintrag erstellen, falls nicht vorhanden**: Ist diese Option deaktiviert, werden nur bereits vorhandene Assets aktualisiert.
 * **Synchronisierte Elemente deduplizieren**: Eingehende Anwendungen werden anhand eines **Abgleichfelds** (Bezeichnung oder Referenz) bestehenden Assets zugeordnet und aktualisiert, anstatt Duplikate zu erzeugen.
-* **Feldzuordnung (Mapping)**: Legen Sie fest, welches LeanIX-Feld welches Dastra-Feld befüllt.&#x20;
+* **Feldzuordnung (Mapping)**: Legen Sie fest, welches LeanIX-Feld welches Dastra-Feld befüllt (siehe [Verbindungen, Anwendungsfälle und Feld-Mapping](connections.md)).
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,4 +86,6 @@ Wenn die Deduplizierung mehrere bestehende Assets findet, die derselben eingehen
 
 #### Deinstallation der Integration
 
-Die importierten Assets bleiben Bestandteil Ihres Workspaces. Bei einer Deinstallation der Integration werden sie **nicht entfernt** und bleiben einschließlich ihrer Tags unverändert erhalten.
+{% hint style="info" %}
+Die importierten Assets bleiben Bestandteil Ihres Mandanten. Bei einer Deinstallation der Integration werden sie **nicht entfernt** und bleiben einschließlich ihrer Tags unverändert erhalten.
+{% endhint %}
