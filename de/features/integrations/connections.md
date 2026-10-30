@@ -10,7 +10,7 @@ Diese Seite beschreibt die Konzepte, die für alle nativen Integrationen gelten.
 
 ### Der Integrationskatalog
 
-Öffnen Sie in Ihrem Workspace **Einstellungen > Integrationen**. Der Katalog listet alle verfügbaren Integrationen auf und kann nach Kategorie sowie nach dem jeweiligen Dastra-Objekt gefiltert werden. Zusätzlich stehen die Registerkarten **Alle / Installiert** zur Verfügung.
+Öffnen Sie in Ihrem Mandanten **Mandanteneinstellungen** > **Integrationen**. Der Katalog listet alle verfügbaren Integrationen auf und kann nach Kategorie sowie nach dem jeweiligen Dastra-Objekt gefiltert werden. Zusätzlich stehen die Registerkarten **Alle / Installiert** zur Verfügung.
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,11 +35,19 @@ In diesem Bereich können Sie eine Verbindung **testen** (ein erfolgreicher Test
 Um eine Verbindung zu erstellen, klicken Sie auf **Verbindung hinzufügen**:
 
 1. Geben Sie einen **Verbindungsnamen** ein (z. B. _Produktionsinstanz_) — optional, aber hilfreich, wenn Sie mehrere Verbindungen verwenden.
-2. Wählen Sie die **Authentifizierungsmethode**, wenn der Konnektor mehrere Optionen unterstützt: **Basic (Zugangsdaten / API-Schlüssel)** oder **OAuth**.
+2. Wählen Sie die **Authentifizierungsmethode**, wenn der Konnektor mehrere Optionen unterstützt: **Basic (Zugangsdaten / API-Schlüssel)** oder **OAuth**. Die Integration [HTTP / Benutzerdefinierte API](custom-http.md) bietet außerdem **API-Schlüssel / Token** und **OAuth 2.0 (Client Credentials)**: Bei Letzterem authentifiziert sich Dastra mit seiner eigenen Client-ID und seinem eigenen Geheimnis, ohne Anmeldung eines Nutzers, und erneuert die Zugriffstoken automatisch.
 3. Füllen Sie die vom Konnektor benötigten Felder aus (Instanz-URL, API-Token usw.).
 4. Klicken Sie auf **Verbinden** — oder bei OAuth auf **Speichern und verbinden**. Sie werden anschließend zum externen Tool weitergeleitet, um Dastra zu autorisieren.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Widerrufene OAuth-Verbindung.** Wenn die Autorisierung einer OAuth-Verbindung widerrufen wurde oder abgelaufen ist, erkennt Dastra das bei der ersten Verwendung der Verbindung und zeigt eine Benachrichtigung über einen Integrationsfehler mit der Schaltfläche **Reauthorize** an. Die Schaltfläche öffnet das Verbindungsfenster der Integration. Klicken Sie bei der betroffenen Verbindung auf **Reauthorize**, um die Autorisierung neu zu starten: Die Verbindung und die Anwendungsfälle, die sich auf sie stützen, bleiben erhalten.
+{% endhint %}
+
+{% hint style="info" %}
+**Von Workflow-Regeln verwendete Verbindungen.** Bei der Integration [HTTP / Benutzerdefinierte API](custom-http.md) ist eine Verbindung nicht an einen Anwendungsfall gebunden: Jede Aktion **Send an HTTP request** einer Workflow-Regel wählt die zu verwendende Verbindung direkt aus, und mehrere Regeln können dieselbe nutzen. Das Verbindungsfenster zeigt an, wie viele Regeln jede Verbindung verwenden. Wenn Sie eine Verbindung löschen, werden die Regeln deaktiviert, die von ihr abhängen. Siehe auch [Eine HTTP-Anfrage senden](../settings/workflow-rules.md#eine-http-anfrage-senden) in den Workflow-Regeln.
+{% endhint %}
 
 ### Einen Anwendungsfall installieren
 
@@ -59,7 +67,9 @@ Nach der Installation bietet die Karte des Anwendungsfalls folgende Optionen:
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-Durch die Deinstallation eines Anwendungsfalls werden die zugehörigen Zugangsdaten gelöscht. Assets, Anfragen und andere von der Integration erstellte Datensätze bleiben erhalten — sie gehören zu Ihrem Workspace.
+{% hint style="warning" %}
+Durch die Deinstallation eines Anwendungsfalls werden die zugehörigen Zugangsdaten gelöscht. Assets, Anfragen und andere von der Integration erstellte Datensätze bleiben erhalten — sie gehören zu Ihrem Mandanten.
+{% endhint %}
 
 ### Das Feld-Mapping
 
@@ -77,6 +87,8 @@ Für jede Zeile steht ein Bereich **Erweitert** mit zwei Optionen zur Verfügung
 
 * **Standardwert** — wird verwendet, wenn kein Quellfeld vorhanden ist, oder als Fallback für Quellwerte, die nicht transkodiert wurden. Bei Datumsfeldern können Sie **Heute** oder ein relatives Datum auswählen (z. B. _in 30 Tagen_), das zum Zeitpunkt der Erstellung des Datensatzes aufgelöst wird.
 * **Wertetranscodierung** — für geschlossene Listen (Status, Lebenszyklusphasen usw.): Ordnen Sie jedem Quellwert einen Dastra-Wert zu. Nicht zugeordnete Werte übernehmen den Standardwert.
+
+Für ein Feld mit geschlossener Liste, das mit einem Quellfeld verknüpft ist, muss die Transcodierung festgelegt sein: Solange sie fehlt, zeigt seine Zeile eine Warnung an, und die Konfiguration kann nicht gespeichert werden.
 
 <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 

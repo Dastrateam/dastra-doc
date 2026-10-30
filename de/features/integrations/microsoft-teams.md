@@ -31,18 +31,22 @@ Sie benötigen einen Microsoft Teams-Kanal mit einem **eingehenden Webhook, der 
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 Microsoft hat die klassischen eingehenden Office 365-Webhooks (Kanal-Connectors) im April 2026 eingestellt. Die **Workflows-App** ist die von Microsoft vorgesehene Nachfolgelösung, auf der diese Integration basiert.
+{% endhint %}
 
 ### Installation
 
-1. Öffnen Sie in Dastra **Einstellungen > Integrationen** und wählen Sie **Microsoft Teams** aus.
+1. Öffnen Sie in Dastra **Mandanteneinstellungen** > **Integrationen** und wählen Sie **Microsoft Teams** aus.
 2. Klicken Sie beim Anwendungsfall für Workflow-Benachrichtigungen auf **Integration hinzufügen**.
 3. Fügen Sie eine Verbindung hinzu und fügen Sie die **Workflows-Webhook-URL** ein.
 4. Klicken Sie auf **Verbinden**. Dastra veröffentlicht sofort eine Testkarte („_Dastra-Testbenachrichtigung_“) im Kanal, um die URL zu validieren.
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
 Die Webhook-URL muss ein Power-Automate-Endpunkt über HTTPS sein (`*.logic.azure.com`, `*.azure-api.net` oder `*.api.powerplatform.com`). Andere Hosts werden abgelehnt.
+{% endhint %}
 
 Um **mehrere Kanäle** zu benachrichtigen, erstellen Sie für jeden Kanal eine eigene Verbindung (jeder Workflows-Webhook ist jeweils nur einem Kanal zugeordnet).
 
@@ -60,7 +64,9 @@ Es muss kein Empfänger ausgewählt werden: Die Karte wird in dem Kanal zugestel
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-Die Teams-Aktion wird im Aktionsauswahlmenü nur angezeigt, wenn die Integration im Workspace installiert und aktiviert ist.
+{% hint style="info" %}
+Die Teams-Aktion wird im Aktionsauswahlmenü nur angezeigt, wenn die Integration im Mandanten installiert und aktiviert ist.
+{% endhint %}
 
 ### Deinstallation
 
