@@ -1,17 +1,18 @@
 ---
-description: Leer hoe u generieke relaties tussen elementen in Dastra aanmaakt.
+description: >-
+  Leer hoe u generieke relaties tussen elementen in Dastra aanmaakt.
 ---
 
 # Generieke relaties
 
-## Over generieke relaties
+## Definitie van een generieke relatie
 
-Een generieke relatie is een eenvoudige, benoemde koppeling tussen twee elementen in Dastra. Daarmee documenteert u verbanden tussen objecten die het platform niet automatisch afleidt, bijvoorbeeld een activum koppelen aan een stakeholder, of een risico aan een datalek.
+Een generieke relatie is een eenvoudige, benoemde koppeling tussen twee elementen in Dastra. Daarmee documenteert u verbanden tussen objecten die het platform niet automatisch afleidt, bijvoorbeeld een actief koppelen aan een stakeholder, of een datalek aan een risico.
 
 Een relatie wordt gekenmerkt door:
 
 * een bronobject en een doelobject,
-* een relatielabel (optioneel, bijvoorbeeld "Verwerkingsverantwoordelijke", "Beheerd door"),
+* een relatielabel (optioneel, bijvoorbeeld "Verwerkingsverantwoordelijke" of "Beheerd door"),
 * een samenvatting (optioneel, voor extra context),
 * een richting, die u indien nodig kunt omkeren.
 
@@ -19,37 +20,40 @@ Een relatie wordt gekenmerkt door:
 Eén element kan aan meerdere andere elementen van verschillende types worden gekoppeld.
 {% endhint %}
 
-## Beschikbaarheid van generieke relaties
+## Waar u een generieke relatie aanmaakt
 
-U kunt generieke relaties aanmaken vanuit de volgende elementen:
+U maakt een relatie aan vanuit het formulier van een:
 
-* Activa
-* Stakeholders
-* Beveiligingsmaatregelen
-* Datalekken
-* Datasets
-* Risico's
+* actief,
+* stakeholder,
+* dataset,
+* beveiligingsmaatregel,
+* datalek.
 
-Ze worden vooral gebruikt in de module Activa en in de repositories (cartografie), waar de volledige relatiegrafiek wordt weergegeven.
+Het doelobject kan van een van deze types zijn, of een risico als de module voor risicobeheer is ingeschakeld en u er toegang toe hebt. Een risico zelf heeft geen generieke relaties.
+
+Relaties verschijnen op de pagina **In kaart brengen** van de module **Referenties**, waar ze de knooppunten van de grafiek verbinden. Zie [Referenties](repositories/README.md).
+
+Om verwerkingsactiviteiten aan elkaar te koppelen, zie [Relaties tussen verwerkingsactiviteiten aanmaken](../ropa/relationships.md).
 
 ## Een generieke relatie toevoegen
 
-1. Open een element (bijvoorbeeld een activum).
-2. Klik op het pictogram **Gekoppelde elementen** in de werkbalk bovenaan. Het toont het huidige aantal gekoppelde elementen.
-3. Klik op **Voeg een relatie toe** en selecteer het type object waaraan u wilt koppelen (stakeholder, beveiligingsmaatregel, datalek, activum, dataset of risico).
+1. Open een element, bijvoorbeeld een actief.
+2. Klik in de werkbalk op **Gekoppelde elementen**. De knop toont het aantal bestaande koppelingen.
+3. Klik op **Voeg een relatie toe** en selecteer daarna het type object waaraan u wilt koppelen: stakeholder, beveiligingsmaatregel, datalek, actief, dataset of risico.
 4. Doe in het venster het volgende:
    * Schakel **Omgekeerde relatie** in als de richting moet worden omgekeerd.
    * Kies **Bestaand object** om te koppelen aan een element dat al in Dastra staat, of **Maak een nieuw object** om meteen een nieuw element aan te maken.
-   * Selecteer het doelobject in de keuzelijst.
-   * Voeg desgewenst een **Relatie-label** en een samenvatting toe.
+   * Selecteer bij **Bestaand object** de doelobjecten in **Bijgevoegde object (en) selecteren**. Typ bij **Maak een nieuw object** de naam van het nieuwe object.
+   * Vul desgewenst het **Relatie-label** en de **Samenvatting** in.
 5. Klik op **Toevoegen** om de relatie op te slaan.
 
-## Relaties visualiseren
+## Relaties bekijken
 
-Zodra relaties zijn aangemaakt, verschijnen ze in:
+Zodra relaties zijn aangemaakt, verschijnen ze:
 
-* Het paneel **Gekoppelde elementen** van elk element, met alle directe koppelingen.
-* De knooppuntgrafiek in de cartografieweergave, waar alle relaties als een verbonden netwerk worden getoond.
+* in het paneel **Gekoppelde elementen** van elk element, met alle directe koppelingen;
+* in de grafieken **In kaart brengen van stromen tussen activa** en **In kaart brengen van stakeholders** van de pagina **In kaart brengen**, waar ze als netwerk worden weergegeven.
 
 ## Verder lezen
 

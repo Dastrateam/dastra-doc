@@ -1,23 +1,37 @@
 ---
-description:  Leer hoe u de persoonlijke gegevens van uw organisatie in kaart brengt
-  in Dastra
+description: >-
+  Leer hoe u de persoonsgegevens van uw organisatie in kaart brengt in Dastra.
 ---
 
 # Gegevens in kaart brengen
 
-#### Het begint allemaal met het in kaart brengen van gegevens <a href="#0-label" id="0-label"></a>
+## Alles begint met het in kaart brengen van gegevens
 
-Voordat u begint met het maken van uw verwerkingsbladen, raden wij u aan om de gegevens van uw bedrijf zo nauwkeurig mogelijk in kaart te brengen. Het onderstaande diagram toont de mappingstructuur die u kunt gebruiken.
+Breng de gegevens van uw organisatie zo nauwkeurig mogelijk in kaart voordat u uw verwerkingsactiviteiten aanmaakt. In de toepassing heet deze module **Referenties**. De mapping verbindt vier soorten elementen: de uitgever van een actief, het actief zelf, de beveiligingsmaatregelen die erop van toepassing zijn en de datasets die het bevat, die uit gegevensvelden bestaan.
 
-<figure><img src="../../.gitbook/assets/assets-schema.png" alt=""><figcaption><p>Data mapping diagram </p></figcaption></figure>
+Om alle persoonsgegevens van uw informatiesysteem te inventariseren, volgt u deze werkwijze:
 
-Om een inventarisatie te maken van alle persoonlijke gegevens in je IS, is dit de procedure die je moet volgen:
+1. **Identificeer de activa**: software, bestanden, plug-ins, servers, machines enzovoort.
+2. **Identificeer de uitgever van het actief, indien van toepassing**: voer de gegevens in van het bedrijf dat dit actief produceert. Het kan dan worden vermeld bij uw verwerkers wanneer u het verwerkingsregister opbouwt.
+3. **Inventariseer de gegevens**: vermeld de bijbehorende datasets (u kunt de verwerkersovereenkomst raadplegen die met de verwerker is ondertekend). Zie [Gegevens en retentie](../ropa/activity/datasets.md) voor meer informatie.
+4. **Vermeld de beveiligingsmaatregelen** die zijn getroffen.
 
-1. **Identificeer de Activa**, dat kan software zijn, bestanden, plugins, servers, machines, enz.
-2. **Identificeer de uitgever van de Activa (indien van toepassing)**: voer de gegevens in van het bedrijf dat de Activa produceert. Dit kan worden vermeld onder onderaannemers bij het aanmaken van het register.
-3. **Gegevens opslaan**: vermeld de bijbehorende dataset(s) (u kunt verwijzen naar de DPA die is ondertekend met de onderaannemer). Klik hier voor meer informatie over [de datasets] (https://doc.dastra.eu/features/ropa/activity/datasets).
-4. **Lijst de geïmplementeerde beveiligingsmaatregelen**
+Met deze mapping maakt u verwerkingsactiviteiten gemakkelijker aan, omdat u vertrekt van de realiteit van uw gegevens.
 
-Met deze mapping wordt het veel eenvoudiger om verwerkingsfiches op te stellen op basis van de realiteit van uw gegevens.
+Wilt u deze inventaris niet opbouwen, of is de software die u gebruikt standaard, maak dan uw repository van activa aan vanuit de bibliotheek met voorgedefinieerde sjablonen, die veelvoorkomende activa op de markt bevat (Salesforce, Jira enzovoort).
 
-Als je deze inventarisatie niet wilt maken, of je denkt dat de software die je gebruikt standaard is, dan hebben we het voor je geregeld. We hebben het onder controle: u kunt uw Activa repository maken met behulp van onze bibliotheek van voorgedefinieerde sjablonen met standaard marktactiva (Salesforce, Jira, enz.).
+## De gegevensmapping openen
+
+1. [Ga naar uw werkruimte](../../getting-started/setup/workspace.md#naar-een-werkruimte-gaan).
+2. Klik in het zijmenu onder **Data inventory** op **Referenties**.
+3. De pagina **Rapportage** opent: één kaart per repository, met het aantal elementen dat ze bevat.
+
+Klik daarna op de repository die u wilt openen. Voor details over elke repository, zie [Referenties](repositories/README.md).
+
+## Uw lijst met beveiligingsmaatregelen opbouwen
+
+Beveiligingsmaatregelen hebben hun eigen repository: voer ze één keer in en koppel ze daarna aan activa in de sectie **Bijbehorende beveiligingsmaatregelen** van het formulier van een actief. Die informatie staat vaak in de verwerkersovereenkomst die met de uitgever is ondertekend. Kies korte namen (Antivirus, Applicatiefirewall, Toegangscontroles) zodat een maatregel van het ene actief naar het andere kan worden hergebruikt.
+
+## Uw verwerkers beheren
+
+Een verwerker is een stakeholder in uw mapping. Voer die in als **Uitgever** van het actief: de verwerker kan dan als verwerker worden aangeduid wanneer het actief in een verwerkingsactiviteit wordt vermeld. In het formulier van de stakeholder kunt u ook de sub-verwerkers van de verwerker opslaan, om de hele keten van onderaanneming in kaart te brengen.
