@@ -139,7 +139,7 @@ U kunt een vragenlijst gebruiken om aangepaste velden in Dastra-registers automa
 
 Open in **Vragenlijsten** het betreffende sjabloon en voeg de vraag toe die het aangepaste veld moet invullen. Kies een vraagtype dat compatibel is met het veldtype.
 
-Open de eigenschappen van de vraag en schakel **Wilt u de naam van de variabele aanpassen (alleen voor gevorderde gebruikers)?** in. Vul bij **Naam variabele** `custom_` in, gevolgd door de technische naam van het veld.
+Open de eigenschappen van de vraag en vink **Wilt u de naam van de variabele aanpassen (alleen voor gevorderde gebruikers)?** aan. Vul bij **Naam variabele** `custom_` in, gevolgd door de technische naam van het veld.
 
 Gebruik voor een veld met de technische naam `business_owner`:
 
@@ -150,6 +150,8 @@ custom_business_owner
 Sla daarna de wijzigingen van het sjabloon op.
 {% endstep %}
 {% endstepper %}
+
+Voor de andere velden van het record, de vraagtypen en het samenvoegen, zie [Een record invullen met de antwoorden](record-mapping.md).
 
 ### Syntaxis van de variabele
 

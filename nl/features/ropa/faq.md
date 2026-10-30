@@ -2,7 +2,7 @@
 description: Veelgestelde vragen over het verwerkingsregister.
 ---
 
-# Veelgestelde vragen
+# FAQ
 
 ## Hoe toont u de wijzigingsgeschiedenis van een verwerkingsactiviteit?
 

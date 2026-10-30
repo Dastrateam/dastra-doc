@@ -1,4 +1,4 @@
-# Veelgestelde vragen
+# FAQ
 
 ## Is Zapier een subverwerker van Dastra (wat is de contractuele status)?
 

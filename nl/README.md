@@ -31,6 +31,14 @@ description: >-
 
 ***
 
+## Uitgewerkte voorbeelden
+
+{% content-ref url="examples/README.md" %}
+[Uitgewerkte voorbeelden](examples/README.md)
+{% endcontent-ref %}
+
+***
+
 ## Functies
 
 {% content-ref url="features/ropa/README.md" %}
@@ -114,6 +122,8 @@ description: >-
 {% endcontent-ref %}
 
 ***
+
+Op zoek naar een antwoord? De [FAQ](other/faq.md) bundelt de vragen van elke module en [Bekende problemen](other/known-problems.md) behandelt de meest voorkomende fouten.
 
 {% hint style="info" %}
 Om Dastra te ontdekken, [vraag een demo aan](https://www.dastra.eu/en/contacts/demo).

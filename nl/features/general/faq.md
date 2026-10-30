@@ -3,7 +3,7 @@ description: >-
   Antwoorden op veelgestelde vragen over de algemene functies van Dastra.
 ---
 
-# Veelgestelde vragen
+# FAQ
 
 ## Hoe importeer ik datasets?
 

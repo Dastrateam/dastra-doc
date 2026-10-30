@@ -121,6 +121,8 @@ De stap **Kennisgeving** volgt de melding aan de toezichthoudende autoriteit. De
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-4.png" alt="Stap Kennisgeving met de aftelling van 72 uur"><figcaption><p>De stap Kennisgeving en de aftelling ervan</p></figcaption></figure>
 
+Een uitgewerkte berekening van de score staat in [Risicoscores](../../examples/risk-scoring.md).
+
 Zodra de risicoanalyse tot een reëel of hoog risico concludeert, telt een bericht de 72 uur af vanaf de datum van vaststelling. Het toont het aantal resterende uren, daarna "72 uur overschreden" wanneer u te laat bent, en vervolgens "U hebt de toezichthoudende autoriteit op de hoogte gebracht" zodra de melding is geregistreerd. Bij een verwaarloosbaar risico meldt het bericht dat u de autoriteit niet hoeft te melden.
 
 Om een melding te registreren:

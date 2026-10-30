@@ -247,6 +247,8 @@ Dit voorbeeld ruimt automatisch verzoeken van betrokkenen op waarvan de identite
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rules-6.png" alt="Dagelijkse regel die verzoeken sluit en anonimiseert waarvan de identiteit een maand na de aanmaak niet is gevalideerd"><figcaption><p>Sluit en anonimiseer elke dag de verzoeken waarvan de identiteit van de aanvrager een maand na de aanmaak niet is gevalideerd</p></figcaption></figure>
 
+Vier volledige regels, met hun trigger, voorwaarden en acties, worden beschreven in [Werkstroomrecepten](../../examples/workflow-recipes.md).
+
 ## Uitvoeringsgeschiedenis
 
 Elke regel bewaart de geschiedenis van haar uitvoeringen. Klik in de ontwerper op **Historiek** om voor elk verwerkt object het volgende te zien:

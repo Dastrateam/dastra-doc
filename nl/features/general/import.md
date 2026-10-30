@@ -38,6 +38,8 @@ U kunt de volgende objecten importeren:
 
 De namen van de menugroepen Data inventory, Operations en Governance hebben geen Nederlandse waarde in de app en staan zoals ze op het scherm verschijnen.
 
+Voor een uitgewerkt voorbeeld met een aangepast veld en de modus **Samenvoegen**, zie [Activa importeren uit een spreadsheet](../../examples/excel-import.md).
+
 Bij elke import is het proces hetzelfde. Het verloopt in 4 stappen:
 
 1. [Het gegevensbestand voorbereiden](import.md#1.-het-gegevensbestand-voorbereiden)

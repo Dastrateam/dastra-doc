@@ -33,7 +33,7 @@
   * [Rollen en machtigingen beheren](getting-started/setup/roles.md)
   * [Waarom ziet een gebruiker een verwerkingsactiviteit niet?](getting-started/setup/visibility.md)
   * [Teams aanmaken en toewijzen](getting-started/setup/teams.md)
-  * [Veelgestelde vragen](getting-started/setup/faq.md)
+  * [FAQ](getting-started/setup/faq.md)
   * [Uw gebruikersprofiel instellen](getting-started/setup/profile.md)
 * [Handleiding](getting-started/tutorial/README.md)
   * [Stap 1: Instellen](getting-started/tutorial/step-1.md)
@@ -47,6 +47,16 @@
   * [Online help](getting-started/support/online-help.md)
   * [Ondersteuning aanvragen](getting-started/support/request.md)
   * [Het klantondersteuningsproces](getting-started/support/process.md)
+
+## Uitgewerkte voorbeelden <a href="#examples" id="examples"></a>
+
+* [Uitgewerkte voorbeelden](examples/README.md)
+  * [ISO 27001-project](examples/iso-27001-project.md)
+  * [Risicoscores](examples/risk-scoring.md)
+  * [Werkstroomrecepten](examples/workflow-recipes.md)
+  * [Activa importeren uit een spreadsheet](examples/excel-import.md)
+  * [Een gegevensstroom in kaart brengen](examples/data-mapping.md)
+  * [Vragenlijstantwoorden in een record](examples/questionnaire-to-record.md)
 
 ## ⚙️ Functies <a href="#features" id="features"></a>
 
@@ -71,7 +81,7 @@
     * [De MCP-server](features/general/ai-assistant/mcp.md)
   * [E-mailsjablonen](features/general/email-templates.md)
   * [Interne discussies](features/general/discussions.md)
-  * [Veelgestelde vragen](features/general/faq.md)
+  * [FAQ](features/general/faq.md)
 * [Gegevens in kaart brengen](features/mapping/README.md)
   * [Referenties](features/mapping/repositories/README.md)
     * [Activa](features/mapping/repositories/assets.md)
@@ -112,10 +122,11 @@
     * [De gegevenskaart van het register weergeven](features/ropa/visualization/data-map.md)
     * [De doorgiftekaart weergeven](features/ropa/visualization/transfers-map.md)
   * [Verwerkingsactiviteiten samenvoegen](features/ropa/merge.md)
-  * [Veelgestelde vragen](features/ropa/faq.md)
+  * [FAQ](features/ropa/faq.md)
 * [Vragenlijsten](features/questionnaires/README.md)
   * [Een vragenlijstsjabloon aanmaken](features/questionnaires/templates/README.md)
     * [Een DPIA-sjabloon maken of wijzigen](features/questionnaires/templates/pia.md)
+    * [Een record invullen met de antwoorden](features/questionnaires/templates/record-mapping.md)
   * [Een audit of PIA plannen](features/questionnaires/schedule.md)
   * [Vragenlijsten opvolgen](features/questionnaires/monitor.md)
   * [Een vragenlijst valideren](features/questionnaires/validate.md)
@@ -252,7 +263,7 @@
   * [Verbindingen, gebruiksscenario's en veldmapping](features/integrations/connections.md)
   * [Zapier](features/integrations/zapier/README.md)
     * [Dastra integreren met externe tools](features/integrations/zapier/external-tools.md)
-    * [Veelgestelde vragen](features/integrations/zapier/faq.md)
+    * [FAQ](features/integrations/zapier/faq.md)
   * [Filerskeepers](features/integrations/filerskeepers.md)
   * [ServiceNow](features/integrations/servicenow.md)
   * [SAP LeanIX](features/integrations/sap-leanix.md)
@@ -307,7 +318,7 @@
 
 ## 🤖 DIVERSEN <a href="#other" id="other"></a>
 
-* [Veelgestelde vragen](other/faq.md)
+* [FAQ](other/faq.md)
 * [Toegankelijkheid](other/accessibility.md)
 * [DPIA-richtsnoeren per land](other/dpia-by-country.md)
 * [Bekende problemen](other/known-problems.md)

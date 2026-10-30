@@ -3,7 +3,7 @@ description: >-
   Antwoorden op veelgestelde vragen over het instellen van Dastra.
 ---
 
-# Veelgestelde vragen
+# FAQ
 
 ## Kan ik teams als stakeholders gebruiken?
 

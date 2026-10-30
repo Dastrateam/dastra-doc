@@ -93,7 +93,7 @@ U herschikt velden, of verplaatst ze van de ene groep naar de andere, door te sl
 | Optie | Beschrijving |
 | --- | --- |
 | **Tekst** (label van het aangepaste veld) | De naam van het veld zoals die in formulieren staat. Verplicht. |
-| **Naam van de variabele (slug)** | De identificatie van het veld voor API's en imports. Ze wordt voorgesteld op basis van het label en kan niet meer worden gewijzigd nadat het veld is aangemaakt. |
+| **Naam van de variabele (slug)** | De technische naam van het veld, gebruikt door API's en imports. Ze wordt voorgesteld op basis van het label, in kleine letters met underscores (bijvoorbeeld `business_owner` voor "Business owner"), en kan niet meer worden gewijzigd zodra het veld is aangemaakt. Ze wordt alleen in dit venster getoond: open het veld in de lijst om ze te lezen. Om het veld vanuit een vragenlijst in te vullen, schrijft u `custom_` gevolgd door deze naam (zie [Een record invullen met de antwoorden](../questionnaires/templates/record-mapping.md)). |
 | **Tooltip-tekst** | Een hulptekst naast het veld. |
 | **Verplicht veld** | Maakt de invoer verplicht. |
 | **Inbegrepen in PDF- of Word-rapporten?** | Voegt het veld toe aan de gegenereerde rapporten. Standaard aangevinkt. |
