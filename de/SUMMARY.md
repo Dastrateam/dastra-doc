@@ -13,11 +13,11 @@
   * [Betroffenenrechte](gdpr/concepts/rights.md)
   * [Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen](gdpr/concepts/privacy-by-design.md)
   * [Sicherheitsmaßnahmen](gdpr/concepts/security.md)
-  * [Datenschutzvorfälle](gdpr/concepts/breaches.md)
+  * [Meldung von Datenschutzverletzungen](gdpr/concepts/breaches.md)
 * [Risikomanagement](gdpr/risks/README.md)
   * [Definition von Risiken](gdpr/risks/definition.md)
   * [Bewertung eines Risikos](gdpr/risks/assessment.md)
-  * [Risiken bei Auftragsverarbeitern](gdpr/risks/processors.md)
+  * [Risikomanagement bei Dienstleistern](gdpr/risks/processors.md)
 
 ## 👨‍💻 Erste Schritte <a href="#getting-started" id="getting-started"></a>
 
