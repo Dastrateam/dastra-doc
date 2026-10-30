@@ -33,16 +33,29 @@ Si vous ne souhaitez pas faire cet inventaire, ou si les logiciels que vous util
 
 <figure><img src="../../.gitbook/assets/referentiel-stats-overview.png" alt="Vue d'ensemble des référentiels : Actifs, Acteurs, Jeux de données, Glossaire de données, Mesures et Cat. personnes concernées, chacun avec son nombre d'éléments"><figcaption><p>La vue d'ensemble des référentiels</p></figcaption></figure>
 
-Cliquez ensuite sur le référentiel auquel vous souhaitez accéder. Pour le détail de chaque référentiel, consultez [Référentiels](repositories/README.md).
+Cliquez ensuite sur le référentiel auquel vous souhaitez accéder. Pour le chemin d'accès, les fonctions de liste communes à tous les référentiels et la cartographie, consultez [Référentiels](repositories/README.md).
+
+## Les référentiels de la cartographie
+
+Chaque référentiel a sa propre page :
+
+* [Actifs](repositories/assets.md) : les logiciels, serveurs et autres supports de vos données.
+* [Acteurs](repositories/stakeholders.md) : les sous-traitants, éditeurs et autres entreprises et personnes avec lesquels vous travaillez, et leurs sous-traitants ultérieurs.
+* [Jeux de données](repositories/datasets.md) : les groupes de champs de données, avec leurs règles de conservation.
+* [Glossaire de données](repositories/data-glossary.md) : les champs de données, avec leur catégorie et leur niveau de sensibilité.
+* [Mesures de sécurité](repositories/security-measures.md) : les mesures techniques et organisationnelles qui protègent les données.
+* [Catégories de personnes concernées](repositories/subject-categories.md) : les groupes de personnes dont vous traitez les données.
+
+Pour documenter un lien que la plateforme ne déduit pas, par exemple un actif lié à un acteur, consultez [Relations génériques](relationships.md). Pour réutiliser ces référentiels dans votre registre, consultez [Registre des traitements](../ropa/README.md).
 
 ## Établissez votre liste de mesures de sécurité
 
-Les mesures de sécurité disposent de leur propre référentiel : saisissez-les une fois, puis rattachez-les aux actifs dans la section **Mesures de sécurité associées** de la fiche de l'actif. Ces informations figurent souvent dans le DPA signé avec l'éditeur. Préférez des libellés courts (Antivirus, Pare-feu applicatif, Contrôles d'accès) : une mesure peut ainsi être réutilisée d'un actif à l'autre.
+Les mesures de sécurité disposent de leur propre référentiel (voir [Mesures de sécurité](repositories/security-measures.md)) : saisissez-les une fois, puis rattachez-les aux actifs dans la section **Mesures de sécurité associées** de la fiche de l'actif. Ces informations figurent souvent dans le DPA signé avec l'éditeur. Préférez des libellés courts (Antivirus, Pare-feu applicatif, Contrôles d'accès) : une mesure peut ainsi être réutilisée d'un actif à l'autre.
 
 {% embed url="https://youtu.be/5gHAl_8Tdv4" %}
 
 ## Gérez vos sous-traitants
 
-Un sous-traitant est un acteur de votre cartographie. Renseignez-le comme **Editeur** de l'actif : il pourra ensuite être référencé comme sous-traitant lorsque cet actif est mentionné dans un traitement. Sur la fiche de l'acteur, vous pouvez aussi enregistrer ses sous-traitants ultérieurs, pour cartographier toute la chaîne de sous-traitance.
+Un sous-traitant est un [acteur](repositories/stakeholders.md) de votre cartographie. Renseignez-le comme **Editeur** de l'actif : il pourra ensuite être référencé comme sous-traitant lorsque cet actif est mentionné dans un traitement. Sur la fiche de l'acteur, vous pouvez aussi enregistrer ses sous-traitants ultérieurs, pour cartographier toute la chaîne de sous-traitance.
 
 {% embed url="https://youtu.be/VATg9fGMeU0" %}
