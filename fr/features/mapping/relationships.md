@@ -4,59 +4,62 @@ description: Apprenez à créer des relations génériques entre les éléments 
 
 # Relations génériques
 
-## Qu'est-ce qu'une relation générique ?
+## Définition d'une relation générique
 
-Une **relation générique** est un lien simple et étiqueté entre deux éléments dans Dastra. Elle permet de documenter des connexions entre objets qui ne sont pas automatiquement inférées par la plateforme — par exemple, lier un actif à un acteur, ou un risque à une violation de données.
+Une **relation générique** est un lien simple et étiqueté entre deux éléments dans Dastra. Elle sert à documenter des connexions entre objets qui ne sont pas inférées automatiquement par la plateforme, par exemple lier un actif à un acteur, ou une violation de données à un risque.
 
 Une relation se caractérise par :
 
 * un **objet source** et un **objet cible**,
-* un **libellé de relation** (optionnel, ex. "Responsable", "Géré par"),
-* un **résumé** (optionnel, pour apporter du contexte),
-* une **direction** — qui peut être inversée si nécessaire.
+* un **libellé de la relation** (optionnel, par exemple « Responsable » ou « Géré par »),
+* une **description** (optionnelle, pour apporter du contexte),
+* une **direction**, qui peut être inversée si nécessaire.
 
 {% hint style="info" %}
 Un élément peut être lié à plusieurs autres éléments de types différents.
 {% endhint %}
 
-## Où les relations génériques sont-elles disponibles ?
+## Où créer une relation générique
 
-Des relations génériques peuvent être créées depuis les éléments suivants :
+Vous créez une relation depuis la fiche d'un :
 
-* **Actifs**
-* **Acteurs**
-* **Mesures de sécurité**
-* **Violations de données**
-* **Jeux de données**
-* **Risques**
+* **actif**,
+* **acteur**,
+* **jeu de données**,
+* **mesure de sécurité**,
+* **violation de données**.
 
-Elles sont principalement utilisées dans le module **Actifs** et les **référentiels** (cartographie), où le graphe de relations est visualisé.
+L'objet cible peut être de l'un de ces types, ou un **risque** si le module de gestion des risques est activé et que vous y avez accès. Un risque ne porte donc pas lui-même de relation générique.
 
-## Comment ajouter une relation générique
+Les relations apparaissent dans la page **Cartographie** du module **Référentiels**, où elles relient les nœuds du graphe. Voir [Référentiels](repositories/README.md).
 
-1. Ouvrez un élément (ex. un actif).
-2. Cliquez sur l'icône **"Éléments liés"** dans la barre d'outils — elle affiche le nombre de liens existants.
+Pour relier des traitements entre eux, consultez [Créer des relations entre les traitements](../ropa/relationships.md).
 
-<figure><img src="../../.gitbook/assets/cartography-relation-icon.png" alt=""><figcaption></figcaption></figure>
+## Ajouter une relation générique
 
-3. Cliquez sur **"Ajouter une relation"** et sélectionnez le type d'objet à lier (Acteur, Mesure de sécurité, Violation de données, Actif, Jeu de données ou Risque).
-4. Dans la fenêtre de dialogue :
-   * Activez **"Relation inverse"** si la direction doit être inversée.
-   * Choisissez **"Élément existant"** pour lier à un élément déjà dans Dastra, ou **"Créer un élément"** pour en créer un à la volée.
-   * Sélectionnez l'objet cible dans le menu déroulant.
-   * Ajoutez optionnellement un **Libellé de relation** et un **Résumé**.
-5. Cliquez sur **"Ajouter"** pour enregistrer la relation.
+1. Ouvrez un élément, par exemple un actif.
+2. Dans la barre d'outils, cliquez sur **Eléments liés**. Le bouton affiche le nombre de liens existants.
 
-<figure><img src="../../.gitbook/assets/cartography-add-relation-modal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cartography-relation-icon.png" alt="Bouton Eléments liés dans la barre d'outils d'un actif"><figcaption></figcaption></figure>
+
+3. Cliquez sur **Ajouter une relation**, puis sélectionnez le type d'objet à lier : acteur, mesure de sécurité, violation de données, actif, jeu de données ou risque.
+4. Dans la fenêtre qui s'ouvre :
+   * Activez **Relation inverse** si la direction doit être inversée.
+   * Choisissez **Objet existant** pour lier un élément déjà présent dans Dastra, ou **Créer un nouvel objet** pour en créer un à la volée.
+   * Avec **Objet existant**, sélectionnez les objets cibles dans **Sélectionner le(s) objet(s) attaché(s)**. Avec **Créer un nouvel objet**, saisissez son nom dans **Nom du nouvel objet**.
+   * Renseignez si vous le souhaitez le **Libellé de la relation** et la **Description**.
+5. Cliquez sur **Ajouter** pour enregistrer la relation.
+
+<figure><img src="../../.gitbook/assets/cartography-add-relation-modal.png" alt="Fenêtre Ajouter une relation avec les options Relation inverse, Objet existant et Créer un nouvel objet"><figcaption></figcaption></figure>
 
 ## Visualiser les relations
 
-Une fois les relations créées, elles apparaissent dans :
+Une fois créées, les relations apparaissent :
 
-* Le panneau **"Éléments liés"** de chaque élément, affichant tous les liens directs.
-* Le **graphe de nœuds** dans la vue cartographie, où toutes les relations sont représentées sous forme de réseau connecté.
+* dans le panneau **Eléments liés** de chaque élément, qui affiche tous ses liens directs ;
+* dans les graphes **Cartographie des flux entre les actifs** et **Cartographie des acteurs** de la page **Cartographie**, où elles sont représentées sous forme de réseau.
 
-<figure><img src="../../.gitbook/assets/cartography-relation-graph-view.png" alt=""><figcaption><p>Exemple de visualisation graphique d'une relation générique dans la cartographie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cartography-relation-graph-view.png" alt="Graphe de la page Cartographie montrant des éléments reliés par une relation générique"><figcaption><p>Exemple de visualisation graphique d'une relation générique dans la cartographie</p></figcaption></figure>
 
 ## Pour aller plus loin
 
