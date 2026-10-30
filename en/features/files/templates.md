@@ -1,13 +1,15 @@
 ---
-description: Access ready-to-use document templates in Dastra.
+description: >-
+  Download ready-to-use document templates from the Resources section of News &
+  resources.
 ---
 
 # Document templates
 
-Looking for document templates? You'll find them here.
+Dastra provides document templates, for example for your compliance documentation. You find them in the **News & resources** module.
 
-To access the document resources, go to the **"Watch & Resources"** module and click on **"Resources"**.
+1. In the left menu, under **Resources**, click **News & resources**.
+2. Open the **Resources** tab.
 
-Simply select the templates you need.
+Select the template you need. Templates are available for download in Word format.
 
-Templates are available for download in **Word format**.

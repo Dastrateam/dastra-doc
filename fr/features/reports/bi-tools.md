@@ -1,32 +1,38 @@
 ---
 description: >-
-  Apprenez comment intégrer Dastra dans votre outil d'analyse de données préféré
-  !
+  Connectez vos rapports personnalisés Dastra à Power BI, Google Looker ou
+  Tableau, avec des données rafraîchies automatiquement.
 ---
 
 # Intégration dans les outils d'analyse de données (BI)
 
 {% hint style="info" %}
-Pour utiliser cette fonctionnalité, vous devez avoir dans votre souscription un abonnement avec le plan **Entreprise**
+Pour utiliser cette fonctionnalité, votre abonnement doit inclure le plan **Entreprise** et vous devez disposer de la permission **Configuration avancée**.
 {% endhint %}
 
-Dastra vous permettra très simplement d'importer [des rapports personnalisés](README.md) dans votre outil de BI préféré (Power BI, Google Looker, Tableau Software...). L'avantage d'utiliser cette fonctionnalité est que vous pouvez bénéficier de la puissance des outils de BI afin d'analyser en profondeur les données, tout en ayant des rapports qui se rafraîchissent automatiquement.<br>
+Dastra permet d'importer [des rapports personnalisés](README.md) dans votre outil de BI (Power BI, Google Looker, Tableau Software, etc.). Vous analysez les données en profondeur avec votre outil, et les rapports se rafraîchissent automatiquement.
 
-### Mise en place dans Dastra
+## Mise en place dans Dastra
 
-Rendez-vous dans le module des rapports personnalisés, accédez à l'un d'eux et cliquez sur le bouton "Intégrer à un outil BI".
+1. Dans le module **Rapports personnalisés**, ouvrez un rapport et cliquez sur **Connecter outils BI**.
+2. Dans la fenêtre qui s'ouvre, cliquez sur **Créer lien de connexion**. Le lien est copié dans votre presse-papiers.
 
-Une fenêtre modale s'ouvre, cliquez alors sur "Créer lien d'intégration".
+La fenêtre affiche ensuite deux onglets, selon la façon dont votre outil se connecte :
 
-**Copier alors le lien généré**
+* **Lien** : l'adresse publique du rapport, à coller dans l'outil. Toute personne qui possède ce lien accède aux données brutes du rapport.
+* **Authentification (Bearer)** : l'**Url du service** et le **Jeton d'Authentification** à renseigner séparément. Votre outil envoie le jeton dans l'en-tête HTTP `Authorization: Bearer <jeton>`. Préférez cet onglet lorsque votre outil sait ajouter un en-tête : l'adresse seule ne donne alors pas accès aux données.
 
-{% hint style="info" %}
-Attention ! Ne transférez à personne le lien généré. Celui-ci permet d'accéder aux données brutes du rapport.
+<figure><img src="../../.gitbook/assets/reports-bi-tools-1.png" alt="La fenêtre de connexion aux outils BI avec les onglets Lien et Authentification (Bearer)"><figcaption><p>La fenêtre de connexion aux outils BI</p></figcaption></figure>
+
+{% hint style="warning" %}
+Ne transmettez ni le lien ni le jeton à quiconque n'a pas à voir les données du rapport.
 {% endhint %}
 
-## Mise en place dans l'outil BI :
+Pour couper l'accès, cliquez sur **Supprimer connexion** dans la même fenêtre, puis confirmez. Le lien et le jeton cessent de fonctionner : vous pouvez créer une nouvelle connexion avec **Créer lien de connexion**.
 
-#### Microsoft Power BI
+## Mise en place dans l'outil BI
+
+### Microsoft Power BI
 
 1. **Ouvrir Power BI Desktop :**
    * Lancez **Power BI Desktop** sur votre machine.
@@ -38,33 +44,33 @@ Attention ! Ne transférez à personne le lien généré. Celui-ci permet d'acc�
    * Assurez-vous que l'URL pointe vers un fichier JSON ou une API qui renvoie des données JSON.
    * Cliquez sur **OK**.
 4. **Authentification (si nécessaire) :**
-   * Si l'URL nécessite une authentification (par exemple, si elle est protégée par un mot de passe ou une clé API), Power BI vous demandera de vous connecter.
-   * Sélectionnez le type d'authentification approprié (par exemple, **Anonyme**, **OAuth2**, **Clé API**, etc.) et entrez vos informations d'identification si nécessaire.
+   * Avec le lien de l'onglet **Lien**, aucune authentification n'est nécessaire : sélectionnez **Anonyme**.
+   * Avec l'onglet **Authentification (Bearer)**, saisissez l'**Url du service** à l'étape 3, puis cliquez sur **Avancé** et ajoutez, dans les paramètres d'en-tête de requête HTTP, l'en-tête `Authorization` avec la valeur `Bearer ` suivie du jeton. Sélectionnez ensuite **Anonyme**.
 5. **Accéder aux données JSON :**
    * Power BI va se connecter à l'URL et récupérer le fichier JSON.
    * Une fois la connexion réussie, une fenêtre de prévisualisation des données JSON apparaîtra. Vous pourrez explorer les données sous forme de listes, objets ou tableaux imbriqués.
 
 {% hint style="info" %}
-* **Performance** : Si votre fichier JSON est volumineux ou contient des hiérarchies profondes, Power BI peut prendre un certain temps pour charger et transformer les données.
-* **Rafraîchissement des données** : Si les données JSON sont mises à jour régulièrement (par exemple, par une API), vous pouvez configurer un **rafraîchissement des données** dans Power BI Service pour récupérer les dernières données automatiquement.
+* **Performance** : Si votre fichier JSON est volumineux ou contient des hiérarchies profondes, Power BI peut prendre un certain temps pour charger et transformer les données.
+* **Rafraîchissement des données** : Si les données JSON sont mises à jour régulièrement (par exemple, par une API), vous pouvez configurer un **rafraîchissement des données** dans Power BI Service pour récupérer les dernières données automatiquement.
 {% endhint %}
 
 ### Google Looker
 
-Google Looker se connecte facilement à **Google BigQuery**, un entrepôt de données de Google Cloud qui peut stocker et traiter des fichiers JSON.
+Google Looker se connecte à **Google BigQuery**, un entrepôt de données de Google Cloud qui peut stocker et traiter des fichiers JSON.
 
 #### 1. **Utiliser un Google BigQuery comme source de données**
 
-1. **Télécharger le fichier JSON sur Google Cloud Storage** :
+1. **Télécharger le fichier JSON sur Google Cloud Storage** :
    * Si votre fichier JSON est accessible via un lien de partage, commencez par télécharger le fichier sur **Google Cloud Storage**.
    * Rendez-le public ou configurez les permissions appropriées.
-2. **Charger les données JSON dans BigQuery** :
+2. **Charger les données JSON dans BigQuery** :
    * Accédez à la console **Google Cloud Platform** (Google Cloud Console).
    * Allez dans **BigQuery** et choisissez ou créez un **projet**.
    * Dans **BigQuery**, sélectionnez votre **Dataset** (ensemble de données) et cliquez sur **Créer une table**.
    * Sélectionnez **Google Cloud Storage** comme source et entrez l'URL de votre fichier JSON dans le champ **URI**.
    * Configurez le format des données en **JSON** et assurez-vous que BigQuery peut correctement interpréter la structure de votre fichier.
-3. **Connecter BigQuery à Looker** :
+3. **Connecter BigQuery à Looker** :
    * Une fois le fichier JSON chargé dans **BigQuery**, vous pouvez connecter **Looker** à BigQuery.
    * Dans Looker, allez dans **Admin** > **Connections** et ajoutez BigQuery comme source de données.
    * Une fois la connexion établie, vous pouvez interroger les données de BigQuery directement dans Looker et les visualiser.
@@ -90,7 +96,7 @@ Si vous avez besoin d'automatiser l'intégration de données JSON depuis une API
 **2. Se connecter à une source de données Web :**
 
 * Dans **Tableau Desktop**, allez dans le menu **Fichier** et sélectionnez **Nouvelle source de données**.
-* Dans la fenêtre de sélection des sources de données, cliquez sur **Web Data Connector**. Cette option permet de se connecter à des données à partir de diverses sources web, y compris des fichiers JSON via une API ou une URL.
+* Dans la fenêtre de sélection des sources de données, cliquez sur **Web Data Connector**. Cette option se connecte à des données de diverses sources web, y compris des fichiers JSON via une API ou une URL.
 
 **3. Entrer l'URL JSON :**
 
@@ -98,8 +104,8 @@ Si vous avez besoin d'automatiser l'intégration de données JSON depuis une API
 
 **4. Authentification (si nécessaire) :**
 
-* Si l'URL JSON nécessite une forme d'authentification (par exemple une clé API, un jeton OAuth, ou des identifiants de connexion), Tableau vous demandera les informations d'identification pour y accéder.
-* Sélectionnez le type d'authentification approprié (par exemple, **Clé API** ou **OAuth**) et entrez les informations nécessaires.
+* Avec le lien de l'onglet **Lien**, aucune authentification n'est nécessaire.
+* Si votre connecteur permet d'ajouter un en-tête HTTP, utilisez l'onglet **Authentification (Bearer)** : renseignez l'**Url du service** et l'en-tête `Authorization: Bearer <jeton>`.
 
 **5. Analyser les données JSON dans Tableau :**
 
@@ -108,6 +114,6 @@ Si vous avez besoin d'automatiser l'intégration de données JSON depuis une API
 
 {% hint style="info" %}
 - **Limites du fichier JSON :** Si votre fichier JSON est volumineux ou très imbriqué, Tableau peut avoir des difficultés à l'analyser correctement. Parfois, il peut être nécessaire de le transformer ou de le simplifier avant de l'intégrer.
-- **Authentification et sécurité :** Si votre lien JSON nécessite une clé API, assurez-vous de bien gérer les autorisations et les informations d'identification. Certaines API peuvent avoir des limitations sur le nombre de requêtes ou nécessiter des autorisations spécifiques.
-- **Rafraîchissement des données :** Si les données JSON changent régulièrement (par exemple, via une API qui fournit des mises à jour en temps réel), vous pouvez configurer Tableau pour **rafraîchir automatiquement les données** à intervalles réguliers, afin de garder vos rapports à jour.
+- **Authentification et sécurité :** Si votre lien JSON nécessite une clé d'API, assurez-vous de bien gérer les autorisations et les informations d'identification. Certaines API peuvent avoir des limitations sur le nombre de requêtes ou nécessiter des autorisations spécifiques.
+- **Rafraîchissement des données :** Si les données JSON changent régulièrement (par exemple, via une API qui fournit des mises à jour en temps réel), vous pouvez configurer Tableau pour **rafraîchir automatiquement les données** à intervalles réguliers pour garder vos rapports à jour.
 {% endhint %}
