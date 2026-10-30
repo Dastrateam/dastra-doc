@@ -23,6 +23,8 @@ Diese Kartierung erleichtert die Erstellung von Verarbeitungstätigkeiten, weil 
 
 Wenn Sie dieses Inventar nicht aufbauen möchten oder die von Ihnen genutzte Software Standard ist, erstellen Sie Ihre Asset-Liste aus der Bibliothek vordefinierter Vorlagen, die gängige Assets des Marktes enthält (Salesforce, Jira usw.).
 
+Wie Sie einem Datenfluss vom Anbieter bis zur Verarbeitungstätigkeit folgen, lesen Sie unter [Einen Datenfluss kartieren](../../examples/data-mapping.md).
+
 ## Auf die Datenkartierung zugreifen
 
 1. [Öffnen Sie Ihren Mandanten](../../getting-started/setup/workspace.md#auf-einen-mandanten-zugreifen).

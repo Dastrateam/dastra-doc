@@ -30,6 +30,14 @@ description: Erfahren Sie, was Dastra ist.
 
 ***
 
+## Praxisbeispiele
+
+{% content-ref url="examples/README.md" %}
+[Praxisbeispiele](examples/README.md)
+{% endcontent-ref %}
+
+***
+
 ## Funktionen
 
 {% content-ref url="features/ropa/README.md" %}
@@ -113,6 +121,8 @@ description: Erfahren Sie, was Dastra ist.
 {% endcontent-ref %}
 
 ***
+
+Sie suchen eine Antwort? Die [FAQ](other/faq.md) listet die Fragen jedes Moduls auf, und die [bekannten Probleme](other/known-problems.md) behandeln die häufigsten Fehler.
 
 {% hint style="info" %}
 Um Dastra kennenzulernen, [fordern Sie eine Demo an](https://www.dastra.eu/en/contacts/demo).

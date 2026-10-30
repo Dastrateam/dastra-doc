@@ -1,4 +1,4 @@
-# Häufig gestellte Fragen
+# FAQ
 
 ## Handelt Zapier als weiterer Auftragsverarbeiter von Dastra (welchen vertraglichen Status hat es)?
 

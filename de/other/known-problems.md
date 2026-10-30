@@ -6,6 +6,8 @@ description: >-
 
 # Bekannte Probleme
 
+Diese Seite behandelt die Probleme, die jeden Nutzer betreffen können. Zu den Authentifizierungsproblemen von SSO siehe [Bekannte Probleme bei SSO](../features/settings/sso/known-problems.md).
+
 ## Der eingeladene Nutzer erhält die Einladungs-E-Mails nicht
 
 Prüfen Sie zunächst Folgendes:

@@ -4,7 +4,7 @@ description: >-
   Dastra.
 ---
 
-# Häufig gestellte Fragen
+# FAQ
 
 ## Wie importiert man Datensätze?
 

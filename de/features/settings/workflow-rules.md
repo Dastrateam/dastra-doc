@@ -249,6 +249,8 @@ Dieses Beispiel zeigt die Verwendung eines datumsbasierten Workflows, der automa
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rules-6.png" alt="Tägliche Regel, die Anfragen schließt und anonymisiert, deren Identität einen Monat nach der Erstellung nicht validiert wurde"><figcaption><p><strong>Jeden Tag die Betroffenenanfragen schließen und anonymisieren, bei denen die Identität des Antragstellers einen Monat nach der Erstellung nicht validiert wurde</strong></p></figcaption></figure>
 
+Vier vollständige Regeln mit Auslöser, Bedingungen und Aktionen sind unter [Workflow-Rezepte](../../examples/workflow-recipes.md) beschrieben.
+
 ## Verlauf der Ausführungen
 
 Jede Regel führt einen Verlauf ihrer Ausführungen. Klicken Sie im Designer auf die Schaltfläche für den Verlauf, um für jedes verarbeitete Objekt Folgendes zu sehen:

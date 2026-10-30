@@ -36,6 +36,8 @@ Die folgenden Objekte können importiert werden:
 | Nachrichtenvorlagen | Mandanteneinstellungen > Vorlagen | |
 | Organisationseinheiten | Mandanteneinstellungen > Zugriffsverwaltung > Organisationseinheiten | CSV-Datei |
 
+Ein durchgängiges Beispiel mit einem benutzerdefinierten Feld und dem Modus **Zusammenführen** finden Sie unter [Assets aus einer Tabelle importieren](../../examples/excel-import.md).
+
 Bei jedem Import ist der Ablauf derselbe. Er erfolgt in 4 Schritten:
 
 1. [Die Datendatei vorbereiten](import.md#1.-die-datendatei-vorbereiten)

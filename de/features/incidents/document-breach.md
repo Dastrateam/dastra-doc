@@ -115,6 +115,8 @@ Beantworten Sie zuerst **Wurde bereits eine Risikoanalyse durchgeführt?**.
 
 Zum rechtlichen Rahmen dieser Analyse (Artikel 33 und 34 DSGVO) siehe [Meldung von Datenschutzverletzungen](../../gdpr/concepts/breaches.md).
 
+Eine durchgerechnete Bewertung finden Sie unter [Risiko-Scoring](../../examples/risk-scoring.md).
+
 ## Schritt Benachrichtigung
 
 Der Schritt **Benachrichtigung** verfolgt die Meldung an die Aufsichtsbehörde. Die DSGVO verlangt, die Verletzung unverzüglich und möglichst binnen 72 Stunden, nachdem sie Ihnen bekannt wurde, zu melden (Artikel 33).

@@ -67,6 +67,33 @@ Ein bestehendes Verzeichnis zu importieren kann mühsam sein, wenn Sie viele Ver
 Beim Import wird keine Organisationseinheit angelegt. Daten aus Feldern, die nicht zur Vorlage gehören, werden in die HTML-Beschreibungsfelder übernommen.
 {% endhint %}
 
+### Eine JSON-Datei importieren
+
+Das JSON-Format ist das des **JSON**-Exports des Verzeichnisses. Es enthält vollständige Verarbeitungstätigkeiten und ist daher das Format, um Tätigkeiten von einem Mandanten in einen anderen zu kopieren. Wählen Sie **JSON**, wählen Sie die **Organisationseinheit**, in der die Verarbeitungstätigkeiten angelegt werden, und legen Sie dann die Datei ab. Das Fenster listet anschließend die angelegten Verarbeitungstätigkeiten und die bereits vorhandenen Elemente auf.
+
+Die Datei hat die Struktur des Exports: `$schema`, `version`, `date`, `label`, `source` und ein Array `records` mit einer Verarbeitungstätigkeit pro Eintrag.
+
+Was der Import akzeptiert:
+
+* eine aus Dastra exportierte Datei mit der Version `1.4`. Eine andere Version wird mit der Meldung „Incorrect version of your JSON import file (required version : 1.4)“ abgelehnt;
+* den gesamten Inhalt eines Eintrags: die allgemeinen Informationen, die Zwecke, die Datenkategorien und ihre Regeln zur Speicherdauer, die Assets, die Empfänger und Stakeholder, die Kategorien betroffener Personen, die Sicherheitsmaßnahmen, die Tags und die benutzerdefinierten Felder;
+* einen Eintrag mit derselben Bezeichnung wie eine bestehende Verarbeitungstätigkeit: Er legt eine neue an und überschreibt nie;
+* die Stakeholder, Assets, Datenkategorien, Kategorien betroffener Personen, Sicherheitsmaßnahmen und Tags eines Eintrags: Existiert im Mandanten bereits ein Element mit demselben Namen, verwendet Dastra es wieder, andernfalls legt es es an;
+* die Inhaber eines Eintrags, wenn sie Nutzer der Organisation sind. Die übrigen werden übersprungen.
+
+Was der Import ignoriert oder zurücksetzt:
+
+* die Kennungen: Jede Verarbeitungstätigkeit erhält eine neue;
+* die Organisationseinheit der Datei: Alle Tätigkeiten kommen in die Einheit, die Sie gewählt haben;
+* den Status und den Workflow-Schritt: Die Tätigkeiten werden als Entwürfe im ersten Schritt des Workflows angelegt;
+* den Ersteller, das Erstellungsdatum und die Überprüfungsdaten: Ersteller ist die Person, die importiert, und die Daten beginnen von vorn;
+* die Risikostufe und die Bewertungen: Dastra berechnet sie neu;
+* die Beziehungen zwischen Verarbeitungstätigkeiten (übergeordnet, untergeordnet, verwandt).
+
+Jeder Eintrag wird geprüft, bevor etwas angelegt wird. Ist ein Eintrag ungültig, zum Beispiel weil ein Pflichtfeld leer ist, bricht der Import mit der Meldung „Error on data processing“ gefolgt von seiner Bezeichnung und seiner Zeilennummer ab, und es wird nichts angelegt.
+
+Der Import setzt die Berechtigung voraus, Verarbeitungstätigkeiten zu importieren.
+
 ### Standardimport Schritt für Schritt
 
 Damit Sie nicht jede Verarbeitungstätigkeit von Hand ausfüllen müssen und jedes denkbare Format eines Verzeichnisses verarbeiten können, hat Dastra eine Methode entwickelt, die auf dem Prinzip beruht, **das Verzeichnis in Datendomänen aufzuteilen**. Um ein ganzes bestehendes Verzeichnis in Dastra zu importieren, empfehlen wir 7 Schritte.

@@ -2,7 +2,7 @@
 description: Antworten auf häufig gestellte Fragen zur Einrichtung von Dastra.
 ---
 
-# Häufig gestellte Fragen
+# FAQ
 
 ## Kann ich Teams als Stakeholder verwenden?
 
