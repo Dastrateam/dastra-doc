@@ -1,88 +1,137 @@
 ---
 description: >-
-  Ontdek wat Gegevensbescherming door ontwerp en door standaardinstellingen betekenen en hoe en hoe ze toe te passen in Dastra.
+  Ontdek wat privacy by design en privacy by default betekenen en hoe u ze in
+  Dastra toepast.
 ---
 
-# Privacy door ontwerp en privacy door standaard
+# Privacy by design en by default
 
 ## Inleiding
 
-"Privacy by design" en "privacy by default" zijn twee belangrijke concepten bij de implementatie van de bescherming van persoonsgegevens, die voortvloeien uit artikel 25 van de [AVG][https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679].
+De principes van privacy by design en privacy by default vormen de kern van de AVG, vastgelegd in [artikel 25](https://gdpr-info.eu/art-25-gdpr/). Ze zorgen ervoor dat de bescherming van persoonsgegevens al in de ontwerpfase van een project wordt geïntegreerd en dat standaard alleen de persoonsgegevens worden verwerkt die voor elk doeleinde nodig zijn.
 
-Het principe van gegevensbescherming door ontwerp betekent dat het bedrijf de bescherming van persoonsgegevens **vanaf de ontwerpfase van projecten met betrekking tot de verwerking van bedrijfsgegevens** moet integreren. Het doel is om de risico's van niet-naleving van de AVG te minimaliseren, al in de ontwerpfase van een project en standaard.
+> Doel: risico's voorkomen voordat ze zich voordoen en in elke fase van de levenscyclus van de gegevens kunnen aantonen dat u de regels naleeft.
 
-{% hint style="info" %}
-Het principe van privacy by design is van toepassing in de ontwerpfase van een product of dienst, wat **voorbereiding** van de kant van bedrijven vereist.
+***
 
-&#x20;De toepassing van maatregelen om persoonsgegevens te beschermen stopt echter niet bij de ontwerpfase, maar moet plaatsvinden gedurende de gehele levenscyclus van de gegevensverwerking.
+## Belangrijkste definities
+
+### Privacy by design
+
+De verwerkingsverantwoordelijke anticipeert op de gegevensbescherming al in de ontwerpfase van een product, een dienst of een verwerkingsactiviteit. Er wordt vooraf gehandeld, vóór elke gegevensverzameling of ingebruikname.
+
+### Privacy by default
+
+Standaard worden alleen de gegevens verwerkt die voor elk doeleinde nodig zijn. Ze mogen niet zonder tussenkomst van de betrokkene toegankelijk worden gemaakt voor een onbepaald aantal personen, dus opties voor delen of zichtbaarheid zijn standaard uitgeschakeld.
+
+### Minimale gegevensverwerking
+
+Verwerk alleen gegevens die toereikend, ter zake dienend en beperkt zijn tot het doeleinde.
+
+### Integriteit en vertrouwelijkheid
+
+Beperk de toegang, waarborg de vertrouwelijkheid, de integriteit en de beschikbaarheid van de gegevens en registreer alle handelingen in een logboek.
+
+### Opslagbeperking
+
+Plan al in de ontwerpfase het wissen, anonimiseren of archiveren van de gegevens aan het einde van hun nuttige levensduur.
+
+***
+
+## Privacy by design uitvoeren
+
+De aanpak moet doorlopend zijn en geïntegreerd in de levenscyclus van de verwerking:
+
+### Belangrijkste stappen
+
+1. Het project identificeren
+   * Elke nieuwe verwerking, elk nieuw hulpmiddel of elke wijziging van een proces.
+   * De functionaris voor gegevensbescherming (FG) al in de studiefase waarschuwen.
+2. De gevolgen beoordelen
+   * De gegevens en doeleinden in kaart brengen.
+   * De risico's voor de rechten en vrijheden van personen identificeren.
+   * Zo nodig een DPIA uitvoeren.
+3. Passende maatregelen ontwerpen
+   * Minimalisering, compartimentering, versleuteling, pseudonimisering, logboekregistratie.
+   * Bewaartermijnen, rollen en toegangsrechten vastleggen.
+   * Mechanismen plannen voor de uitoefening van rechten.
+4. De naleving documenteren
+   * De maatregelen opnemen in het verwerkingsregister.
+   * Het bewijsmateriaal bewaren in de sectie **Documentatie** van de verwerkingsactiviteit.
+   * Beslissingen rechtvaardigen (evenredigheid, technologiekeuzes enzovoort).
+5. Opvolgen en verbeteren
+   * Verwerkingsactiviteiten regelmatig auditen.
+   * Registers en actieplannen bijwerken.
+
+***
+
+## Typische maatregelen om te integreren
+
+| Doel                          | Technische of organisatorische maatregel                        |
+| ----------------------------- | --------------------------------------------------------------- |
+| Gegevens minimaliseren        | Selectieve verzameling, maskering, automatisch wissen           |
+| Gegevensstromen beveiligen    | Versleuteling, TLS, sterke authenticatie, toegangsbeheer        |
+| Rechten waarborgen            | Portaal voor het beheer van rechten (DSR), bezwaarprocedures    |
+| Transparantie waarborgen      | Privacyverklaringen, toegangslogboeken, duidelijke documentatie |
+| Traceerbaarheid waarborgen    | Verwerkingslogboeken, regelmatige audits                        |
+| De bewaring beheersen         | Opschoning, anonimisering, beveiligde tussentijdse archivering  |
+
+***
+
+## Verband met verantwoordingsplicht
+
+Privacy by design vloeit rechtstreeks voort uit het [beginsel van verantwoording (artikel 5 van de AVG)](https://gdpr-info.eu/art-5-gdpr/). De verwerkingsverantwoordelijke moet op elk moment kunnen aantonen dat hij de regels naleeft.
+
+> Dit betekent: _"Het volstaat niet om te voldoen aan de regels: u moet het kunnen bewijzen."_
+
+***
+
+## Privacy by design in Dastra
+
+Dastra ondersteunt de praktische uitvoering van privacy by design en privacy by default met zijn geïntegreerde modules:
+
+### 1. Risico's identificeren
+
+Gebruik voor elk nieuw project de vragenlijsten voor aanvragen tot aanmaak in het menu **Privacy by design**.
+
+***
+
+### 2. Risico's beoordelen en documenteren
+
+Voer voor elke verwerkingsactiviteit DPIA's of risicobeoordelingen uit.
+
+***
+
+### 3. Nalevingsacties plannen
+
+Wijs herstelacties toe en volg de voortgang en de deadlines ervan.
+
+***
+
+### 4. Documenteren in het register
+
+Neem beveiligings- en governancemaatregelen op in de formulieren van uw verwerkingsactiviteiten, met bewijsmateriaal en logboekregistratie.
+
+***
+
+## Uitbreiding: privacy by design en verantwoorde AI
+
+Privacy by design is ook van toepassing op de governance van AI-systemen (AI-verordening). Dastra koppelt uw AI-systemen aan de betrokken verwerkingsactiviteiten, beoordeelt de naleving en documenteert de maatregelen voor risicobeheersing.
+
+***
+
+{% hint style="success" %}
+**Goede praktijk:** anticipeer op de naleving al in de ontwerpfase: betrek de FG, documenteer beslissingen, beoordeel risico's en integreer standaard waarborgen voor de privacy. Dastra helpt u om deze aanpak te structureren en aan te tonen.
 {% endhint %}
 
-## Definities
+***
 
-#### Ingebouwde privacy
-
-Al in de ontwerpfase van de gegevensverwerking rekening houden met de uitdagingen van de bescherming van privégegevens. Het doel is om elke inbreuk op de rechten van de betrokkene in een vroeg stadium te voorkomen.
-
-#### Privacy door standaard
-
-Gegevensbeschermings- en beveiligingsmaatregelen moeten standaard actief zijn voor alle gegevensverwerkingen.
-
-#### Minimalisering van persoonsgegevens
-
-Verwerk alleen gegevensverwerking die adequaat, relevant en noodzakelijk is voor de doeleinden waarvoor ze worden verzameld.
-
-#### Integriteit en vertrouwelijkheid
-
-Regel de toegang tot persoonlijke gegevens strikt door middel van autorisatie voor toegang tot het beleid en ad hoc beveiligingsmaatregelen.
-
-#### De periode gedurende welke de gegevens worden bewaard beperken
-
-Zorg vanaf het begin van de verwerking voor een mechanisme voor het wissen van gegevens op de vervaldatum van de bewaarperiode.
-
-## Hoe privacy by design en by default implementeren?
-
-Om privacy by design te implementeren, moet er **in elke fase van het creatieproces van nieuwe projecten** rekening worden gehouden met de bescherming van persoonsgegevens. Dit betekent dat bedrijven minimaal **voordat projecten live gaan** :
-
-* De functionaris voor gegevensbescherming of een gelijkwaardige functionaris informeren** over het bestaan van deze projecten.
-* De risico's** in verband met privacy in deze projecten analyseren&#x20;
-* Identificeer** en **implementeer** in het project **maatregelen** die de bescherming van persoonsgegevens integreren
-* Documenteer** alle elementen om bewijs te vormen van naleving van de principes van privacy by design & by default.
-
-{% hint style="info" %}
-Het beginsel van privacy by design vloeit rechtstreeks voort uit het verantwoordingsbeginsel vastgelegd door de AVG binnen zijn [artikel 5](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679). Verwerkingsverantwoordelijken zijn verplicht om :
-
-* de overeenstemming van hun gegevensverwerking** met de AVG in twijfel te trekken
-* in staat zijn om deze naleving** te bewijzen.
-
-Ze zijn daarom **verantwoordelijk voor de naleving van de regels** die door de AVG worden opgelegd. Daarom moeten ze maatregelen implementeren en bijwerken om de naleving van de gegevensverwerking te waarborgen.
-{% endhint %}
-
-Privacy by Design principes kunnen op verschillende manieren worden toegepast in Dastra:
-
-* Maak specifieke **auditformulieren** om de benodigde informatie te verzamelen.
-
-{% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
-{% endcontent-ref %}
-
-* Identificeer en analyseer risico's** om de maatregelen te beoordelen die moeten worden geïmplementeerd om de uitdagingen aan te gaan&#x20;
-
-
-* &#x20;**Identificeer, wijs toe en bewaak** **saneringstaken**
-
-
-* **Documenteer** **het register** door de uitgevoerde maatregelen aan te geven in de verwerkingsbladen en zo een controlespoor te creëren.
-
-{% content-ref url="../../features/ropa/README.md" %}
-[edit-the-record](../../features/ropa/README.md)
-{% endcontent-ref %}
-
-## Om verder te gaan
-
-{% content-ref url="../risks/README.md" %}
-[risicobeheer](../risks/README.md)
-{% endcontent-ref %}
+## Meer informatie
 
 {% content-ref url="security.md" %}
-[maatregelen-van-veiligheid.md](maatregelen-van-veiligheid.md)
+[Beveiligingsmaatregelen](security.md)
+{% endcontent-ref %}
+
+{% content-ref url="ropa.md" %}
+[Register van verwerkingen](ropa.md)
 {% endcontent-ref %}

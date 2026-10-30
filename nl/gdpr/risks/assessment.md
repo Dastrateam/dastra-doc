@@ -1,5 +1,6 @@
 ---
-description: Leer hoe je het risiconiveau kunt beoordelen met Dastra.
+description: >-
+  Leer hoe u het niveau van een risico beoordeelt met Dastra.
 ---
 
 # Risicobeoordeling
@@ -9,65 +10,63 @@ description: Leer hoe je het risiconiveau kunt beoordelen met Dastra.
 Een risico kan worden beoordeeld met de volgende formule:
 
 $$
-Risico = Waarschijnlijkheid * Gevolgen
+Risico=Waarschijnlijkheid∗Impact
 $$
 
-Waarbij de **waarschijnlijkheid** de frequentie is waarmee een gevreesde gebeurtenis en/of een gevaarlijk element zich voordoet,
+Hierbij is de **waarschijnlijkheid** de frequentie waarmee een gevaarlijke gebeurtenis en/of een gevaarlijk element zich voordoet, en de **impact** de ernst van de effecten en/of van de gevolgen van die gevaarlijke gebeurtenis.
 
-en de **impact** de ernst van de effecten en/of de ernst van de gevolgen van de gevreesde gebeurtenis is.
+De impact van een risico wordt standaard ingedeeld in 5 niveaus:
 
-De impact van een risico wordt standaard ingedeeld in 4 categorieën:&#x20;
+* Verwaarloosbaar,
+* Laag,
+* Gemiddeld,
+* Hoog,
+* Kritisch.
 
-* Catastrofaal,&#x20;
-* Significant,
-* Medium
-* Laag.
+De waarschijnlijkheid van een risico wordt standaard ingedeeld in 5 niveaus:
 
-De waarschijnlijkheid van een risico wordt standaard ingedeeld in 4 categorieën:
+* Zeer onwaarschijnlijk,
+* Onwaarschijnlijk,
+* Mogelijk,
+* Waarschijnlijk,
+* Zeer waarschijnlijk.
 
-* Zeer waarschijnlijk,
-* Waarschijnlijk
-* Mogelijk
-* Onwaarschijnlijk.
+In de matrix heet de impact **Ernst** en de waarschijnlijkheid **Waarschijnlijkheid**.
 
 {% hint style="info" %}
-Risiconiveaus kunnen worden aangepast in Dastra.
+U kunt de risiconiveaus in Dastra aanpassen.
 {% endhint %}
 
 ## Risicoclassificatie
 
-Afhankelijk van hun waarschijnlijkheids- en impactniveau kunnen risico's in verschillende categorieën worden ingedeeld:
+Afhankelijk van hun niveau van waarschijnlijkheid en impact kunnen risico's in verschillende categorieën worden ingedeeld:
 
-* Onaanvaardbare risico's.
-* Risico's die zoveel mogelijk beperkt moeten worden.
-* Risico's die aanvaardbaar zijn omdat de waarschijnlijkheid en/of de ernst van het risico verwaarloosbaar is/zijn in vergelijking met andere risico's.
+* Onaanvaardbare risico's;
+* Risico's die zoveel mogelijk moeten worden beperkt;
+* Aanvaardbare risico's, omdat de waarschijnlijkheid en/of de ernst van het risico verwaarloosbaar is of zijn in vergelijking met andere risico's.
 
-Onduldbare risico's worden in **rood** weergegeven in Dastra.
+Onaanvaardbare risico's worden in Dastra in **rood** weergegeven.
 
-Risico's die zoveel mogelijk beperkt moeten worden, worden in Dastra weergegeven in **oranje** of **geel**.
+Risico's die zoveel mogelijk moeten worden beperkt, worden in Dastra in **geel** weergegeven.
 
-Aanvaardbare risico's worden in **groen** weergegeven in Dastra.
+Aanvaardbare risico's worden in Dastra in **groen** weergegeven.
 
-## Brutorisico vs. nettorisico (of restrisico)
+## Brutorisico en nettorisico (of restrisico)
 
-Een "**bruto**" risico wordt beschouwd zonder alle omringende controlemaatregelen - organisatie, verschillende controles, documentatie, enz.&#x20;
+Een "**bruto**" risico wordt beschouwd zonder alle omringende beheersmaatregelen (organisatie, diverse controles, documentatie enzovoort).
 
-Een "netto" (of rest)risico wordt daarentegen beoordeeld door rekening te houden met alle systemen die al aanwezig en effectief zijn.
-
-
+Een "**netto**" risico (of restrisico) wordt daarentegen beoordeeld met inachtneming van alle maatregelen die al aanwezig en doeltreffend zijn.
 
 ## Visualisatie van een risico
 
+<figure><img src="../../.gitbook/assets/risks-assess-1.png" alt="Sectie Risicobeoordeling: initieel niveau en restniveau, motivering en risicomatrix"><figcaption><p>Een risico en het restniveau ervan in de risicomatrix</p></figcaption></figure>
 
-
-Voorbeeld van risicovisualisatie in Dastra (<../../.gitbook/assets/image (198).png>)
-
-Verder gaan
+## Meer informatie
 
 {% content-ref url="../../features/risks/attach-to-processing.md" %}
-[risks.md](../../features/risks/attach-to-processing.md)
+[Een risico aan een verwerkingsactiviteit koppelen](../../features/risks/attach-to-processing.md)
 {% endcontent-ref %}
 
 {% content-ref url="processors.md" %}
-[risico's-subcontractanten.md](processors.md)
+[Beheer van verwerkersrisico's](processors.md)
 {% endcontent-ref %}

@@ -1,128 +1,173 @@
 ---
-description: Leer wat een Effectbeoordeling is.
+description: >-
+  Ontdek wat een gegevensbeschermingseffectbeoordeling (DPIA) is.
 ---
 
-# Effectbeoordeling
+# Gegevensbeschermingseffectbeoordeling (DPIA)
 
-## Wat is een PIA?
+## Definitie
 
-**Gegevensbeschermingseffectbeoordeling** is een nalevingsmechanisme waarin wordt voorzien door **Artikel 35 van de AVG**.
+De **gegevensbeschermingseffectbeoordeling (DPIA)**, waarin [artikel 35 van de AVG](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1) voorziet, is een **nalevingsmechanisme** dat tot doel heeft om:
 
-Het heeft als doel om naleving van de AVG te waarborgen en het bewijs hiervan te leveren!
+* **de risico's te identificeren en te minimaliseren** van inbreuken op de rechten en vrijheden van personen,
+* **de naleving van de AVG aan te tonen**,
+* en **privacy al in de ontwerpfase te integreren** (_Privacy by design_).
 
-De analyse bestaat uit het **vaststellen en minimaliseren** van de risico's van inbreuk op de rechten en vrijheden van betrokkenen bij een verwerking van persoonsgegevens.
+> De DPIA richt zich op **de risico's voor personen**, niet op de risico's voor de organisatie.
 
-Het is primair een **onderzoek naar de risico's voor individuen en niet voor de organisatie**!
+U kunt voor dezelfde aanpak ook de term privacy impact assessment (PIA) tegenkomen.
 
-**PIA** = Privacy Impact Assessment
+***
 
-De PIA is een driedelig document:
+## De drie onderdelen van een DPIA
 
-* Een **gedetailleerde beschrijving** van de [Verwerking] die wordt uitgevoerd, inclusief zowel technische als operationele aspecten;
-* de **beoordeling**, van meer juridische aard, van de **noodzaak en evenredigheid** met betrekking tot de niet-onderhandelbare fundamentele beginselen en rechten (doel, gegevens en bewaartermijnen, informatie en rechten van personen, enz);
-* De **studie**, van meer technische aard, van de **risico's voor gegevensbeveiliging** (vertrouwelijkheid, integriteit en beschikbaarheid) en hun mogelijke impact op de privacy, die het mogelijk maakt om de technische en organisatorische maatregelen te bepalen die nodig zijn om de gegevens te beschermen.
+Een DPIA is opgebouwd uit drie hoofdstappen:
 
-## Reikwijdte van de PIA
+1. **Beschrijving van de verwerking** → doelstellingen, context, stakeholders, technologieën, betrokken gegevens.
+2. **Beoordeling van de noodzaak en evenredigheid** → analyse van de juridische naleving: doeleinden, rechtsgronden, rechten van personen, bewaartermijnen enzovoort.
+3. **Risicoanalyse en beveiligingsmaatregelen** → identificatie van de privacyrisico's en bepaling van de beheersmaatregelen (technisch en organisatorisch).
 
-De PIA kan betrekking hebben op :
+> De DPIA is tegelijk **juridisch**, **technisch** en **organisatorisch**: ze betrekt het hele projectteam.
 
-* Eén enkele Verwerking
-* Vergelijkbare verwerkingen
-* Identieke Verwerkingen uitgevoerd door meerdere Verwerkingsverantwoordelijken
-* Verwerkingen die door verschillende Verwerkingsverantwoordelijken worden gedeeld
-* Verwerkingen die vergelijkbaar zijn wat betreft doeleinden, functionaliteiten, risico's, technologieën, enz.
-* Een technologisch product (hardware of software)**.
+***
 
-Er moet een Effectbeoordeling worden uitgevoerd als de Verwerking een **hoog risico** inhoudt voor de Rechten en Vrijheden van betrokkenen &#x20;
+## Doel van de DPIA
 
-Rechten en vrijheden omvatten niet alleen het recht op privacy, maar ook andere grondrechten zoals bewegingsvrijheid, non-discriminatie, het recht op leven, enz.
+Dankzij de DPIA kan een organisatie:
+
+* **naleving aantonen** (verantwoordingsplicht),
+* **risico's en nalevingskosten voorzien**,
+* **keuzes en ontwerpbeslissingen documenteren**,
+* **vertrouwen opbouwen** bij gebruikers, klanten of werknemers.
+
+***
+
+## Wanneer een DPIA verplicht is
+
+Een DPIA is **verplicht** wanneer een verwerking **waarschijnlijk een hoog risico** inhoudt voor de rechten en vrijheden van personen.
+
+### Voorbeelden van verwerkingsactiviteiten waarvoor dit geldt
+
+* Intelligent videotoezicht,
+* Geautomatiseerde profielscores,
+* Grootschalige verzameling van gezondheidsgegevens,
+* Gebruik van biometrie of AI op persoonsgegevens.
 
 {% hint style="info" %}
-Verwerkingen met een hoog risico kunnen worden geïdentificeerd als ze aan ten minste 2 van de volgende criteria voldoen (bron: EDPD):
+In de regel vraagt een verwerking die aan ten minste **2 van de volgende criteria** voldoet (Europees Comité voor gegevensbescherming, EDPB) om een DPIA:
 
-* &#x20;Beoordeling/notering (scoren)
-* Automatisch besluit met wettelijk of soortgelijk effect
-* Systematisch toezicht
-* Gevoelige gegevens
-* Grootschalig
-* Kruisverwijzingen van gegevens
-* Kwetsbare personen
-* Innovatief gebruik
-* Afscherming van een recht/contract
-* Doorgifte buiten de EU
+* Evaluatie of scoring,
+* Geautomatiseerde besluitvorming met rechtsgevolgen of soortgelijke gevolgen,
+* Systematische monitoring,
+* Gevoelige gegevens,
+* Grote schaal,
+* Kruisen van gegevens,
+* Kwetsbare personen,
+* Innovatief gebruik (AI, IoT, big data),
+* Blokkering van een recht of dienst.
+
+Bij bijzonder gevoelige verwerkingen kan één criterium volstaan. Toezichthoudende autoriteiten publiceren ook lijsten van verwerkingen waarvoor een DPIA vereist is: zie de [DPIA-richtsnoeren per land](../../other/dpia-by-country.md).
 {% endhint %}
 
-## Wanneer moet ik een PIA uitvoeren?
+***
 
-* Voordat de Verwerking wordt uitgevoerd
-* Principe van ingebouwde privacy
-* Als besluitvormingshulpmiddel voor het implementeren van de verwerking
-* Hiermee kunt u anticiperen op nalevingskosten
-* Moet worden uitgevoerd voor bestaande Verwerkingen
+## Timing en updates
 
-De PIA is een continu proces:
+De DPIA moet **vóór de uitvoering van de verwerking** worden uitgevoerd, bij voorkeur al in de ontwerpfase. Ze is een concrete toepassing van het principe **Privacy by Design**.
 
-* PIA's moeten regelmatig worden herzien
-* De beste werkwijze is om de PIA elke 3 tot 5 jaar bij te werken.
-* In alle gevallen, zodra er een wijziging optreedt in de verwerking
+Ze moet ook worden:
 
- ![Een iteratief proces](<../../.gitbook/assets/image (188).png>)
+* **regelmatig herzien**,
+* **herzien bij elke belangrijke wijziging** van de verwerking of van het risiconiveau ervan (artikel 35, lid 11),
+* **gekoppeld aan uw register** in Dastra voor continue opvolging.
 
-## Hoe maak je een PIA?
+<figure><img src="../../.gitbook/assets/dpia-iterative-process.svg" alt="Iteratieve DPIA-cyclus in zeven stappen: beschrijving van de verwerking, beoordeling van noodzaak en evenredigheid, maatregelen om naleving aan te tonen, beoordeling van de risico's voor rechten en vrijheden, maatregelen om de risico's aan te pakken, documentatie, opvolging en herziening"><figcaption><p>Een iteratief proces</p></figcaption></figure>
 
-#### Door eerst de **maatregelen van noodzakelijkheid en evenredigheid** te beoordelen. Dit is een grondig onderzoek van de Verwerking vanuit elke hoek!
+> De DPIA is een **iteratief proces**: ze begeleidt de hele levenscyclus van de verwerkingsactiviteit.
 
-Je moet vragen stellen en je keuzes uitleggen over de volgende aspecten van de Verwerking:
+***
 
-* Doeleinden" (https://www.dastra.eu/fr/article/finalit%C3%A9-traitement-de-donn%C3%A9es/358): specifiek, expliciet en legitiem.
-* Grondslag: rechtmatigheid van de Verwerking, verbod op "purpose creep
-* Gegevensminimalisatie: adequaat, relevant en beperkt
-* Kwaliteit van de gegevens: nauwkeurig en actueel
-* [Bewaartermijnen](https://www.dastra.eu/fr/article/dur%C3%A9e-de-conservation-des-donn%C3%A9es-personnelles/364): beperkt
+## Een DPIA uitvoeren
 
-#### Beschrijf vervolgens de **maatregelen om de rechten van personen te beschermen:**
+### 1. De noodzaak en evenredigheid van de verwerking beoordelen
 
-* Informatie voor betrokkenen
-* verkrijgen van toestemming, indien van toepassing
-* uitoefening van het recht op toegang en portabiliteit
-* uitoefening van het recht op rectificatie en uitwissing
-* uitoefening van het recht op beperking van de Verwerking en het recht om bezwaar te maken tegen de Verwerking
-* relaties met [subcontractanten](https://www.dastra.eu/fr/article/sous-traitant/388)
-* garanties rond [internationale doorgiften](https://www.dastra.eu/fr/article/transfert-de-donnees-a-caractere-personnel/410)
+Stel uzelf de juiste vragen:
 
-Sectorspecifieke richtlijnen, gedragscodes, labels en merken moeten worden geraadpleegd.
+* Zijn de **doeleinden** bepaald, uitdrukkelijk omschreven en gerechtvaardigd?
+* Is de **rechtsgrond** duidelijk?
+* Zijn de gegevens **geminimaliseerd**, juist en actueel?
+* Zijn de **bewaartermijnen** beperkt?
+* Zijn de **betrokkenen** goed geïnformeerd?
 
-#### En tot slot **analyse van de risico's voor de betrokken personen**: mogelijke inbreuken op de privacy
+### 2. De bescherming van de rechten van personen nagaan
 
-Voor elke **gevreesde gebeurtenis** (onrechtmatige toegang tot gegevens, ongewenste wijziging van gegevens en verdwijning van gegevens):
+* Transparante informatie, duidelijke toestemming, recht op inzage, wissing en bezwaar.
+* Contracten met verwerkers.
+* Waarborgen voor internationale doorgiften.
+* Corrigerende maatregelen die zijn voorzien bij een datalek.
 
-* de mogelijke **gevolgen** voor de privacy van de betrokkenen bepalen, mochten ze zich voordoen
-* de **ernstigheid** ervan in te schatten, met name wat betreft de schadelijke aard van de potentiële gevolgen en, in voorkomend geval, de maatregelen die deze gevolgen kunnen wijzigen;
-* de **bedreigingen** voor gegevensdragers identificeren die tot deze gevreesde gebeurtenis zouden kunnen leiden en de risicobronnen die deze gebeurtenis zouden kunnen veroorzaken;
-* de **waarschijnlijkheid** ervan in te schatten, met name in termen van de kwetsbaarheden van de gegevensdragers, het vermogen van de risicobronnen om deze te exploiteren en de maatregelen die deze waarschijnlijk zullen wijzigen.
+### 3. De privacyrisico's analyseren
 
-Bepaal of de initiële **risico's** als aanvaardbaar kunnen worden beschouwd gezien de bestaande of geplande maatregelen.
+Voor elke **gevreesde gebeurtenis**:
 
-Zo niet, stel dan **aanvullende maatregelen** voor en beoordeel het risiconiveau opnieuw, rekening houdend met deze maatregelen, om het **resterende risico** te bepalen.
+* Identificeer de **mogelijke gevolgen** voor personen (inbreuk op de privacy, discriminatie, reputatieschade enzovoort).
+* Schat de **ernst** en de **waarschijnlijkheid** van het risico in.
+* Bepaal de **bestaande of geplande beschermingsmaatregelen**.
+* Beoordeel het **restrisico** en stel zo nodig **aanvullende maatregelen** voor.
 
-## Wie is erbij betrokken?
+{% hint style="success" %}
+Einddoel: een **aanvaardbaar niveau van restrisico** bereiken, gedocumenteerd en gemotiveerd.
+{% endhint %}
 
-* De** [**Verwerkingsverantwoordelijke**](https://www.dastra.eu/fr/article/responsable-de-traitement/392) (RT)
-  * De teams van de CPO, inclusief de teams van de betreffende business line (projecteigenaar, projectmanager), compliance officers, juridische teams, enz.
-  * De Data Controller kan delegeren aan externe consultants, maar dit blijft zijn verantwoordelijkheid.
-* De functionaris voor gegevensbescherming
-  * Advies en verificatie van de implementatie, beoordeling van maatregelen en restrisico's, stelt PIA's voor.
-* De betrokkenen (of hun vertegenwoordigers), indien van toepassing** * Hun mening kan worden gevraagd en gedocumenteerd door de functionaris voor gegevensbescherming.
-  * Hun mening kan worden gevraagd en gedocumenteerd
-* De** [**subcontractanten**](https://www.dastra.eu/fr/article/sous-traitant/388)
-  * Assistentie en informatieverstrekking
-* De CISO of IT-afdeling** * Voorstel voor het uitvoeren van een DPIA
-  * Voorstel tot het uitvoeren van een DPIA, assistentie
+***
 
+## Stakeholders die u moet betrekken
 
+| Stakeholder                  | Rol in de DPIA                                                          |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| **Verwerkingsverantwoordelijke** | Draagt de verantwoordelijkheid voor de DPIA en leidt de uitvoering ervan |
+| **FG**                       | Adviseert over de DPIA en volgt de uitvoering ervan op                  |
+| **CISO / IT-afdeling**       | Levert technische expertise en beveiligingsmaatregelen                  |
+| **Business teams**           | Leveren de operationele details van de verwerking                       |
+| **Verwerkers**               | Geven de voor de beoordeling nodige informatie door                     |
+| **Betrokkenen**              | Kunnen in bepaalde gevallen worden geraadpleegd of vertegenwoordigd     |
 
-## Om verder te gaan
+> De DPIA is een samenwerkingsproces: juridische, technische en operationele teams zijn er allemaal bij betrokken.
 
-{% embed url="https://www.youtube.com/watch?v=yfaJC-YESPk" %}
-Webinar "Hoe benader je de PIA-fase met een tool?"
-{% endembed %}
+***
+
+## DPIA en artificiële intelligentie
+
+De **AI Act** voert een specifieke verplichting in om **AI-systemen met een hoog risico te documenteren en te beoordelen**. Organisaties moeten het volgende opnemen:
+
+* De herkomst van de trainingsgegevens,
+* Robuustheidstests en beoordelingen van vooroordelen,
+* Geplande controles voor menselijk toezicht,
+* Transparantiemaatregelen.
+
+Voor AI-systemen biedt Dastra een specifieke impactanalyse in de module **AI-wet**, onder **Impactanalyses**, die zowel de AVG als de AI Act dekt.
+
+***
+
+## Best practices met Dastra
+
+* Bepaal of een DPIA nodig is in de sectie **Impactanalyse** van de verwerkingsactiviteit, die de 9 EDPB-criteria evalueert,
+* Start de DPIA vanuit een **vragenlijstsjabloon** uit de bibliotheek,
+* Exporteer het DPIA-rapport als **PDF** voor audits,
+* Plan de volgende herziening met de **regelmatige beoordelingen** van de verwerkingsactiviteit.
+
+{% hint style="success" %}
+Dastra begeleidt u stap voor stap door de DPIA met een interactief vragenlijstsjabloon.
+{% endhint %}
+
+***
+
+## Meer informatie
+
+{% content-ref url="../../features/ropa/activity/impact-analysis.md" %}
+[Impactanalyse](../../features/ropa/activity/impact-analysis.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../features/questionnaires/types/dpia.md" %}
+[PIA / DPIA](../../features/questionnaires/types/dpia.md)
+{% endcontent-ref %}

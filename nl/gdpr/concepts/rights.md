@@ -1,86 +1,182 @@
 ---
-description: Ontdek de verschillende rechten die door de AVG worden geïntroduceerd.
+description: >-
+  Ontdek de verschillende rechten die door de AVG worden geïntroduceerd.
 ---
 
 # Rechten van betrokkenen
 
-De AVG herbevestigt de rechten van individuen, introduceert het recht op gegevensoverdraagbaarheid en versterkt de verplichtingen voor Verwerkingsverantwoordelijken. Rechten van betrokkenen hebben het recht om controle over hun gegevens te behouden. De Verwerkingsverantwoordelijke moet uitleggen hoe ze dit recht kunnen uitoefenen. Wanneer ze hun rechten uitoefenen, moeten aanvragers binnen een maand een antwoord krijgen (verlengd tot twee maanden in het geval van complexe verzoeken).
+De AVG bevestigt de rechten van personen opnieuw, introduceert het recht op gegevensoverdraagbaarheid en versterkt de verplichtingen van de verwerkingsverantwoordelijke. Personen moeten de controle over hun gegevens behouden en de verwerkingsverantwoordelijke moet duidelijk uitleggen hoe zij die rechten kunnen uitoefenen.
 
-## Twee belangrijke verplichtingen voor de Verwerkingsverantwoordelijke:
+* Antwoordtermijn: 1 maand vanaf ontvangst (te verlengen met 2 maanden voor complexe of talrijke verzoeken; meld de verlenging binnen de eerste maand).
+* Kosteloos: geen kosten, behalve voor kennelijk ongegronde of buitensporige verzoeken (motiveer in dat geval de weigering of vraag een redelijke vergoeding).
+* Traceerbaarheid: leg verzoeken en antwoorden vast (bewijs van naleving).
 
-* &#x20;Informeer betrokkenen over het gebruik van hun gegevens (doel, archiveringsduur etc.) en hoe ze hun rechten kunnen uitoefenen&#x20;
-* Betrokkenen informeren over de uitvoering van handelingen in lijn met de uitoefening van hun recht op rectificatie, wissen of beperking.
+***
 
-## 3 gemeenschappelijke operationele regels voor de rechten van betrokkenen:&#x20;
+## Twee belangrijke verplichtingen voor de verwerkingsverantwoordelijke
 
-* Antwoordtermijn van één maand vanaf het verzoek (verlengd met 2 maanden in geval van complexe verzoeken)&#x20;
-* Geen kosten voor het uitoefenen van rechten, behalve in het geval van duidelijk ongegronde of buitensporige claims&#x20;
-* Traceerbaarheid van verzoeken en antwoorden
+1. De betrokkenen informeren (doeleinden, wettelijke basis, bewaartermijnen, ontvangers, rechten, doorgiften, contactgegevens van de FG enzovoort).
+2. De uitvoering melden van de handelingen die voortvloeien uit de uitoefening van de rechten (rectificatie, wissing, beperking) of een weigering motiveren.
 
-## Recht op toegang tot informatie
+***
 
-Om rechtmatig te zijn, moet het verzamelen van persoonsgegevens vergezeld gaan van duidelijke en nauwkeurige informatie voor personen over:&#x20;
+## Gemeenschappelijke operationele regels (alle rechten)
 
-* de identiteit van de persoon die Verwerkingsverantwoordelijke is voor de gegevensverwerking
-* het doel van de Verwerking; &#x20;
-* de verplichte of facultatieve aard van antwoorden en de gevolgen van het niet antwoorden;&#x20;
-* de ontvangers van de gegevens;&#x20;
-* hun rechten (recht op toegang, rectificatie, verzet enz.);&#x20;
-* mogelijke doorgifte van gegevens aan derde landen &#x20;
+* Termijn: 1 maand (zo nodig tot +2 maanden, met kennisgeving binnen 1 maand).
+* Identiteitsverificatie in verhouding tot het risico (vraag niet meer dan nodig).
+* Kanalen voor ontvangst: een speciaal e-mailadres, een online formulier, een klantenportaal, post.
+* Registratie: datum van ontvangst, geverifieerde identiteit, reikwijdte, beslissing, datum van afsluiting.
+* Uitzonderingen en beperkingen: rechten van derden, bedrijfsgeheimen, wettelijke bewaarplichten, beveiliging, fraudepreventie enzovoort (documenteer ze).
 
-In het geval van directe gegevensverzameling wordt informatie verstrekt voordat de gegevens worden verzameld. In het geval van indirecte gegevensverzameling moet de informatie binnen een maand worden verstrekt. Het medium voor het verstrekken van deze informatie varieert afhankelijk van de kenmerken van de gegevensverwerking (bijvoorbeeld een informatiepaneel voor videobewaking, informatie op een formulier, het voorlezen van deze informatie in het geval van gegevensverzameling per telefoon).
+***
 
-### Het recht op toegang kan worden uitgeoefend:
+## Recht op informatie (art. 13 en 14)
 
-* Schriftelijk: per post, vergezeld van een kopie van een identiteitsbewijs in geval van vermoeden van fraude. Idealiter per aangetekende post met ontvangstbevestiging. Het verzoek kan ook per e-mail worden ingediend.
-* Persoonlijk: met een identiteitsbewijs als er twijfel is over de persoon. U mag zich laten vergezellen door een persoon van uw keuze. De raadpleging moet lang genoeg duren om er een volledige en praktische nota van te kunnen nemen. Het is mogelijk om een kopie van de gegevens&#x20 aan te vragen;
-* Online: rechtstreeks vanaf het platform in verbonden modus &#x20;
+Te verstrekken op het moment van de verzameling (rechtstreekse verzameling) of binnen 1 maand (onrechtstreekse verzameling): identiteit van de verwerkingsverantwoordelijke, doeleinden, wettelijke basis, ontvangers, doorgiften, bewaartermijnen, rechten, contactgegevens van de FG, bron (bij onrechtstreekse verzameling), geautomatiseerde besluitvorming of profilering indien van toepassing.
 
-De Verwerkingsverantwoordelijke heeft een maximale reactietijd van een maand vanaf de datum van ontvangst van het verzoek. Als het verzoek onvolledig is (bijv. het identiteitsdocument ontbreekt), kan de verantwoordelijke voor de verwerking om aanvullende informatie vragen: de termijn wordt dan opgeschort en opnieuw gestart zodra deze informatie is verstrekt.
+> Dragers: formuliermededelingen, privacybeleid, cookiebanner, bordjes (camerabewaking), scripts van callcenters enzovoort.
 
-### Hoe moeten de gegevens worden teruggestuurd?
+***
 
-De verstrekte informatie moet gemakkelijk te begrijpen zijn. De gebruikte codes, acroniemen en afkortingen moeten worden uitgelegd (eventueel met behulp van een verklarende woordenlijst). Segmentatie: A +" betekent bijvoorbeeld dat u als VIP-klant wordt beschouwd.
+## Recht op inzage (art. 15)
 
-### Beperkingen van het recht op toegang
+De betrokkene kan het volgende verkrijgen:
 
-De Verwerkingsverantwoordelijke kan:&#x20;
+* bevestiging dat gegevens worden verwerkt,
+* inzage in de gegevens en de bijbehorende informatie (doeleinden, categorieën, ontvangers, bewaartermijnen enzovoort),
+* een kopie van de gegevens (de eerste kopie is kosteloos).
 
-* het verzoek om toegang weigeren: in dat geval moet hij zijn beslissing rechtvaardigen &#x20;
-* niet ingaan op verzoeken die kennelijk onredelijk in aantal, repetitief of systematisch van aard zijn (bijvoorbeeld elke week een volledige kopie van een opname opvragen).
+Vormen:
 
-Wanneer de Verwerking geen gegevens heeft over de persoon die het recht op toegang uitoefent (de gegevens zijn bijvoorbeeld verwijderd of de organisatie heeft geen gegevens over de persoon), moet deze de verzoeker binnen een maand antwoorden. Het recht op toegang moet worden uitgeoefend met inachtneming van de rechten van derden: een werknemer van een bedrijf mag geen gegevens verkrijgen die betrekking hebben op een andere werknemer.
+* Schriftelijk (post of e-mail), ter plaatse (indien passend) of online (beveiligd portaal).
+* De antwoorden moeten begrijpelijk zijn (uitleg van codes, afkortingen, scores).
 
-## Verzamelen van toestemming
+Beperkingen en weigering: misbruik van het verzoek, gevolgen voor de rechten van derden, geen gegevens in bezit. Antwoord in dat laatste geval toch, om dit te bevestigen.
 
-Toestemming is een actieve, expliciete en bij voorkeur schriftelijke handeling van de gebruiker, die vrij, specifiek en geïnformeerd moet zijn. In een online formulier kan dit bijvoorbeeld worden bereikt door een selectievakje dat niet standaard is aangevinkt. Toestemming gaat "vooraf" aan het verzamelen van gegevens &#x20;
+***
 
-De voorafgaande toestemming van de betrokkene is vereist, in het bijzonder:&#x20;
+## Recht op rectificatie (art. 16)
 
-* Wanneer gevoelige gegevens worden verzameld &#x20;
-* Hergebruik van gegevens voor andere doeleinden&#x20;
-* Gebruik van cookies voor bepaalde doeleinden&#x20;
-* Gebruik van gegevens voor elektronische commerciële prospectie
+Verbeter onjuiste gegevens zonder onredelijke vertraging en vul onvolledige gegevens aan (met een aanvullende verklaring). Informeer de ontvangers over de rectificaties, indien van toepassing.
 
-## Het recht om bezwaar te maken
+***
 
-Personen moeten bezwaar kunnen maken tegen het hergebruik van hun gegevens door de persoon die verantwoordelijk is voor het bestand voor, met name commerciële, wervingsdoeleinden bij het plaatsen van een bestelling of het ondertekenen van een contract. Een aankruisvakje, niet standaard aangevinkt, moet hen in staat stellen hun keuze rechtstreeks op het in te vullen formulier of bestelformulier kenbaar te maken. Het volstaat niet om in de algemene voorwaarden te vermelden dat dit recht bestaat. Iedereen heeft het recht om, op legitieme gronden, bezwaar te maken tegen de gegevensverwerking van zijn/haar gegevens, behalve wanneer dit gebeurt om te voldoen aan een wettelijke verplichting (bijv. belastingdossiers).
+## Recht op gegevenswissing (art. 17)
 
-## Recht op toegang en rectificatie
+Wis gegevens wanneer:
 
-Iedereen heeft het recht om toegang te krijgen tot alle informatie die op hem betrekking heeft, om de herkomst van de informatie die op hem betrekking heeft te kennen, om toegang te krijgen tot de informatie waarop de verantwoordelijke van het dossier zich heeft gebaseerd om een beslissing te nemen die op hem betrekking heeft (bijvoorbeeld de elementen op basis waarvan u geen promotie zou hebben gekregen of de score die door een bank is toegekend en die heeft geleid tot de afwijzing van uw kredietaanvraag), om een kopie te krijgen (er kan een vergoeding worden gevraagd die niet hoger is dan de reproductiekosten) en om te eisen dat zijn gegevens, indien nodig, worden gecorrigeerd, aangevuld, bijgewerkt of verwijderd.
+* ze niet langer nodig zijn,
+* de toestemming wordt ingetrokken,
+* een gegrond bezwaar wordt gemaakt en er geen dwingende gerechtvaardigde gronden zijn,
+* de verwerking onrechtmatig is,
+* er een wettelijke verplichting is om te wissen,
+* de gegevens van kinderen zijn verzameld (diensten van de informatiemaatschappij).
 
-### Het recht op overdraagbaarheid
+Uitzonderingen: wettelijke bewaarplicht, uitoefening of verdediging van rechtsvorderingen, algemeen belang (gezondheid, onderzoek), vrijheid van meningsuiting en van informatie. Informeer de ontvangers, indien van toepassing.
 
-* Betrokkenen kunnen vragen om de hen betreffende gegevens die zij aan een Verwerkingsverantwoordelijke hebben verstrekt, in een gestructureerd, algemeen gebruikt en machineleesbaar formaat te ontvangen;
-* Indien technisch mogelijk kunnen zij ook vragen dat deze gegevens rechtstreeks van de ene naar de andere verwerkingsverantwoordelijke worden doorgegeven.
+***
 
-## Om verder te gaan
+## Recht op beperking van de verwerking (art. 18)
+
+Schort de verwerking tijdelijk op (behalve de opslag) wanneer:
+
+* de juistheid wordt betwist,
+* de verwerking onrechtmatig is (de betrokkene vraagt om beperking in plaats van wissing),
+* de gegevens nodig zijn voor de uitoefening of verdediging van rechten,
+* een bezwaar in afwachting van verificatie is.
+
+***
+
+## Recht van bezwaar (art. 21)
+
+De betrokkene kan bezwaar maken:
+
+* te allen tijde tegen direct marketing (inclusief de daarmee verband houdende profilering) → de verplichting om er onverwijld mee op te houden;
+* om redenen die verband houden met zijn of haar specifieke situatie, tegen verwerking op basis van gerechtvaardigde belangen → inwilligen, tenzij er dwingende gerechtvaardigde gronden zijn.
+
+> Zorg voor laagdrempelige opt-outmechanismen (afmeldlink in e-mails, accountvoorkeur, selectievakje enzovoort).
+
+***
+
+## Recht op gegevensoverdraagbaarheid (art. 20)
+
+* De verstrekte gegevens ontvangen van de verwerkingsverantwoordelijke in een gestructureerd, gangbaar en machineleesbaar formaat,
+* en ze doorgeven aan een andere verwerkingsverantwoordelijke (indien technisch mogelijk). Dit geldt wanneer de verwerking berust op toestemming of op een overeenkomst en met geautomatiseerde middelen wordt verricht.
+
+***
+
+## Geautomatiseerde individuele besluitvorming en profilering (art. 22)
+
+Het recht om niet te worden onderworpen aan een beslissing die uitsluitend op geautomatiseerde verwerking is gebaseerd en die rechtsgevolgen heeft of de betrokkene op soortgelijke wijze in aanmerkelijke mate treft (uitzonderingen: noodzaak voor een overeenkomst, wettelijke machtiging, uitdrukkelijke toestemming, met passende waarborgen). Verplichtingen: duidelijke informatie, menselijke tussenkomst, de mogelijkheid om de beslissing aan te vechten en een standpunt kenbaar te maken.
+
+***
+
+## Toestemming (art. 6 en 7)
+
+Toestemming moet vrij, specifiek, geïnformeerd en ondubbelzinnig worden gegeven (een actieve handeling, niet vooraf aangevinkt). Het intrekken van toestemming mag niet moeilijker zijn dan het geven ervan. Voorbeelden: gevoelige gegevens, elektronische prospectie, cookies (afhankelijk van de doeleinden).
+
+***
+
+## Operationeel draaiboek (sjabloon)
+
+### Kanalen voor ontvangst
+
+* Webformulier (indien mogelijk met authenticatie), speciaal e-mailadres (privacy@…), klantenportaal, post.
+
+### Identiteitsverificatie
+
+* In verhouding tot het risico (bevestigings-e-mail, eenmalige code, identiteitsdocument bij een reëel risico).
+* Vermijd extra risico's (vraag niet meer dan nodig).
+
+### SLA en workflow
+
+1. Ontvangstbevestiging: snel (bijvoorbeeld binnen 72 uur, een interne doelstelling: de AVG stelt voor deze stap geen termijn) met een dossiernummer en de beoogde termijn,
+2. Kwalificatie van het gevraagde recht en van de reikwijdte (systemen, dochterondernemingen, verwerkers),
+3. Verzameling en interne beoordeling (business, IT, juridische dienst, FG),
+4. Antwoord binnen 1 maand (+ kennisgeving bij verlenging),
+5. Bewijs: voeg de documenten en de beslissing toe aan het dossier en informeer de betrokken ontvangers (rectificatie, wissing, beperking).
+
+### Te bewaren bewijs
+
+* Het verzoek, de geverifieerde identiteit, de uitgevoerde zoekopdrachten, de gemotiveerde beslissing, de verzenddatum, de logboeken van kennisgevingen en de aan de betrokkene doorgegeven gegevens.
+
+***
+
+## De rechten beheren in Dastra
+
+* Maak een verzoek aan in de module **Verzoeken**, wijs het toe en volg de voortgang ervan in de workflow. Standaard zijn de stappen: NIEUW, Identiteitsverificatie, Aan de gang, Communicatie, Gesloten. U kunt ze aanpassen.
+* Leg de geverifieerde identiteiten, de zoekopdrachten en de beslissingen vast. Bewaar de bewijsstukken in het tabblad **Bijlagen** van het verzoek.
+* Gebruik antwoordsjablonen, verzamelformulieren en de omzetting van binnenkomende e-mails in verzoeken. Dastra signaleert verzoeken waarvan de termijn is verstreken.
+* Volg de indicatoren van de pagina **Rapportage**: afhandelingstijd, volumes, redenen voor afsluiting, verzoeken per behandelaar.
+
+<figure><img src="../../.gitbook/assets/dsr-request-lifecycle-flowchart.png" alt="De vier stappen van het beheer van een verzoek: verzameling, identiteitscontrole, behandeling, communicatie aan de betrokkene, daarna afsluiting of archivering"><figcaption><p>De stappen van het beheer van een verzoek van een betrokkene</p></figcaption></figure>
+
+***
+
+## Antwoordsjablonen
+
+Drie korte sjablonen om aan te passen:
+
+* Ontvangstbevestiging:\
+  "Wij hebben uw verzoek op [datum] ontvangen. Het betreft het recht op ______. Wij antwoorden u uiterlijk op [datum]."
+* Verlenging:\
+  "Gezien de complexiteit of het aantal verzoeken wordt de termijn met twee maanden verlengd. U ontvangt uiterlijk op [datum] een antwoord."
+* Gemotiveerde weigering:\
+  "Uw verzoek kan niet worden ingewilligd omdat ______ (grond uit de AVG). U kunt een klacht indienen bij de bevoegde toezichthoudende autoriteit of beroep instellen bij de rechter."
+
+***
+
+## Belangrijkste punten
+
+* Termijn van 1 maand (tot +2), kosteloos behalve bij misbruik, traceerbaarheid is verplicht.
+* Zet gestandaardiseerde processen en bewijsspoor op.
+* Bied laagdrempelige opt-out- en overdraagbaarheidsmechanismen aan.
+* Centraliseer het beheer van verzoeken in Dastra om de naleving te waarborgen, aan te tonen en te bewaken.
+
+***
+
+## Meer informatie
 
 {% content-ref url="../../features/requests/README.md" %}
-[gerer-les-exercices-des-droits.md](../../features/requests/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="../../features/ropa/activity/rights.md" %}
-[rechten van betrokkenen.md](../../features/ropa/activity/rights.md)
+[Verzoeken van betrokkenen om hun rechten uit te oefenen](../../features/requests/README.md)
 {% endcontent-ref %}
