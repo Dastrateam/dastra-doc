@@ -33,7 +33,9 @@ The list of endpoints, with their parameters and data models, is published in th
 * the Swagger interface: [https://api.dastra.eu/swagger/index.html](https://api.dastra.eu/swagger/index.html);
 * the OpenAPI definition in JSON: [https://api.dastra.eu/api/v1/dastra.json](https://api.dastra.eu/api/v1/dastra.json).
 
-It only contains the public endpoints of the API. The references are also available on [dastra.readme.io](https://dastra.readme.io). For a complete example, see [API use cases](use-cases.md).
+It only contains the public endpoints of the API. The compliance module (frameworks, controls, tests, audits) has its own API, whose routes start with `/v1/compliance/`: [https://api.dastra.eu/v1/compliance/swagger/index.html](https://api.dastra.eu/v1/compliance/swagger/index.html).
+
+The references are also available on [dastra.readme.io](https://dastra.readme.io). For a complete example, see [API use cases](use-cases.md).
 
 ## Limitations
 

@@ -10,7 +10,7 @@ La liste des endpoints est générée à partir de l'API elle-même et publiée 
 * la définition OpenAPI au format JSON : [https://api.dastra.eu/api/v1/dastra.json](https://api.dastra.eu/api/v1/dastra.json), pour générer un client dans votre langage ;
 * la référence d'API : [https://dastra.readme.io](https://dastra.readme.io).
 
-Seuls les endpoints publics de l'API y figurent.
+Seuls les endpoints publics de l'API y figurent. Le module Conformité (référentiels, contrôles, tests, audits) a sa propre référence, dont les routes commencent par `/v1/compliance/ws/{workspaceId}/` : [https://api.dastra.eu/v1/compliance/swagger/index.html](https://api.dastra.eu/v1/compliance/swagger/index.html).
 
 ## Lire un chemin
 
