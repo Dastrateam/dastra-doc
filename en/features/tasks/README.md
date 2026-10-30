@@ -1,51 +1,63 @@
 ---
-description: Learn how to use the Dastra planning and monitoring module.
+description: >-
+  Discover the Dastra planning module: your organization's action plan, its
+  tasks, projects and sprints.
 ---
 
 # Planning
 
-## Why plan?
+The planning module gathers the tasks of your workspace's action plan. You create tasks, assign them, track their progress and export them. It is meant for data protection officers (DPOs) and compliance teams who need to show what they have done.
 
-The need to demonstrate the accountability of your organization vis-à-vis data protection is at the heart of the GDPR philosophy. Article 24 summarizes this concept:
+## Why keep an action plan
 
-> (...) the controller implements appropriate technical and organizational measures to ensure and be able to demonstrate that the processing is carried out in accordance with these regulations. "
+Article 24 of the GDPR sets out the principle of accountability:
 
-Once their data processing has been mapped and evaluated, organizations are required to implement both technical and organizational measures to protect this processing. But the implementation of this principle of accountability is not always easy for companies, because the regulation requires “reporting” without providing precise and quantified indicators.
+> (...) the controller implements appropriate technical and organizational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation.
 
-At Dastra, we believe that keeping a **clear, collaborative** and **auditable** action plan can provide the organization with both tangible evidence of its company's accountability for data protection, but also to save time for all stakeholders by eliminating downtime and reduce the risk of delay or failure of projects by adopting an "agile" approach.
+Once an organization has mapped and assessed its processing activities, it must put technical and organizational measures in place to protect them. The regulation requires you to demonstrate compliance without giving precise indicators. A clear, shared and traceable action plan provides concrete evidence: each task has an assignee, a due date, a step and a history.
 
-## Access the Planning module
+## Open the module
 
-To access the planning module, go to the application and click on the "planning" module on the left of the screen
+In the side menu, click **Tasks**. The menu expands to five pages:
 
-<figure><img src="../../.gitbook/assets/processing-module-icon.png" alt=""><figcaption></figcaption></figure>
+* **Tasks**: the list of tasks, with the Columns, Table, Tree and Calendar views;
+* **Stats**: indicators and progress charts;
+* **Current sprint**: the tasks of the sprint in progress;
+* **Projects**: the projects that group tasks;
+* **Sprints**: the work periods.
 
-This will take you to the planning module:
+<figure><img src="../../.gitbook/assets/tasks-readme-1.png" alt="The side menu with the Tasks entry expanded to its five pages"><figcaption><p>The pages of the planning module in the side menu</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/advanced-filters-dsr-conditions.png" alt=""><figcaption></figcaption></figure>
+The **Tasks** page opens by default in the **Columns** view, where tasks are laid out by step.
+
+<figure><img src="../../.gitbook/assets/tasks-readme-2.png" alt="The Tasks page in the Columns view, with tasks laid out in four steps"><figcaption><p>The Tasks page in the Columns view</p></figcaption></figure>
+
+{% hint style="info" %}
+The **Tasks** entry only appears if your role gives access to tasks and the module is enabled for your organization.
+{% endhint %}
 
 ## Go further
 
 {% content-ref url="create.md" %}
-[gerer-vos-taches.md](create.md)
+[Create or edit a task](create.md)
 {% endcontent-ref %}
 
 {% content-ref url="projects.md" %}
-[create-or-modify-a-project-or-an-iteration.md](projects.md)
+[Create or edit a project or a sprint](projects.md)
 {% endcontent-ref %}
 
 {% content-ref url="export.md" %}
-[exportez-vos-taches.md](export.md)
+[Monitor, filter or export tasks](export.md)
+{% endcontent-ref %}
+
+{% content-ref url="workflow.md" %}
+[Customize the task workflow](workflow.md)
 {% endcontent-ref %}
 
 {% content-ref url="calendar-sync.md" %}
-[share-as-calendar.md](calendar-sync.md)
+[Share as calendar](calendar-sync.md)
 {% endcontent-ref %}
 
-{% content-ref url="workflow.md" %}
-[customise-the-task-workflow-1.md](workflow.md)
-{% endcontent-ref %}
-
-{% content-ref url="workflow.md" %}
-[allez-plus-loin-avec-la-planification.md](workflow.md)
+{% content-ref url="faq.md" %}
+[FAQ](faq.md)
 {% endcontent-ref %}

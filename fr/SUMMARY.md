@@ -159,7 +159,7 @@
   * [Associer un risque à un traitement](features/risks/attach-to-processing.md)
   * [Questions fréquentes](features/risks/faq.md)
 * [Planification](features/tasks/README.md)
-  * [Créez ou modifier une tâche](features/tasks/create.md)
+  * [Créer ou modifier une tâche](features/tasks/create.md)
   * [Créer ou modifier un projet ou une itération](features/tasks/projects.md)
   * [Suivre, filtrer ou exporter les tâches](features/tasks/export.md)
   * [Personnaliser le workflow des tâches](features/tasks/workflow.md)

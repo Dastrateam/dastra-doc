@@ -1,101 +1,119 @@
-# Monitor, screen or export your tasks
+---
+description: >-
+  Track your tasks in the Columns, Table, Tree and Calendar views, filter them,
+  read the statistics and export them.
+---
 
-## Introduction
+# Monitor, filter or export tasks
 
-<figure><img src="../../.gitbook/assets/planning-tabs-stats-selected.png" alt=""><figcaption></figcaption></figure>
+All the tasks of the action plan can be tracked from the **Tasks** page of the planning module and from the **Stats** page, then exported. This lets you steer your processes with indicators, to demonstrate your organization's accountability under the GDPR.
 
-![The "Statistics" tab](<../../.gitbook/assets/capture-web-4-5-2022-15757-app-dastra-eu.jpeg>)
+## Choose a view
 
-This makes it possible to monitor your processes and produce statistics with the help of KPIs in an agile mode, to ultimately demonstrate your company's accountability with regard to the GDPR.&#x20;
+The view selector in the toolbar of the **Tasks** page offers four views: **Columns**, **Table**, **Tree** and **Calendar**.
 
-## Task monitoring
+### Columns view
 
-#### Table tab
+The **Columns** view lays out the tasks by workflow step, one column per step. Drag and drop a task from one column to another to change its step.
 
-The columns tab displays a list of all tasks.&#x20;
+<figure><img src="../../.gitbook/assets/tasks-readme-2.png" alt="The Columns view with tasks laid out in four steps"><figcaption><p>The Columns view</p></figcaption></figure>
 
-![Table tab of the Planning module](<../../.gitbook/assets/capture-web-4-5-2022-151055-app-dastra-eu.jpeg>)
+In the header of a column, click the name of the step to rename it, or **+** to create a task at that step. The **Add column** button adds a step. To reorder the steps or set their internal status, see [Customize the task workflow](workflow.md).
 
-The view can be customised using the dedicated configuration interface ("filters" and "columns" buttons).
+### Table view
 
-<figure><img src="../../.gitbook/assets/tasks-columns-picker-visible-hidden.png" alt=""><figcaption></figcaption></figure>
+The **Table** view displays the list of all tasks. Click a row to open the task. Select rows to apply a batch action: **Edit fields...**, **Merge**, **Export**, **Attach tasks to an object**, **Move to recycle bin** or **Delete**.
 
-#### Column tab&#x20;
+Click **Customize columns** to choose the displayed columns, and **Filters** to filter the list.
 
-The column tab provides access to a task overview that lets you view all tasks by status in a graphical way.
+<figure><img src="../../.gitbook/assets/tasks-export-1.png" alt="The Table view with the Customize columns and Filters buttons in the toolbar"><figcaption><p>The Table view</p></figcaption></figure>
 
-![Example of a task overview board](<../../.gitbook/assets/image-239.png>)
+### Tree view
 
-#### Progress chart
+The **Tree** view groups the tasks by the criterion chosen in the **Group by** list. The default grouping is **Project**. The other criteria are **Iteration**, **Organizational unit**, **Assigned to**, **Processing activity**, **Request**, **Stakeholder**, **Asset**, **Data breach**, **Dataset**, **Control point** and **Security measure**.
 
-The progress chart summarises all the information about the progress made and the advancement of tasks over a given time frame.
+Click **Collapse all** or **Deploy all** to close or open all the groups.
 
-This chart represents the evolution of the amount of work remaining for a given period (corresponding to an iteration).
+<figure><img src="../../.gitbook/assets/tasks-export-2.png" alt="The Tree view with tasks grouped by project"><figcaption><p>The Tree view grouped by project</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-iteration-burndown-chart.png" alt=""><figcaption></figcaption></figure>
+### Calendar view
 
-#### Cumulative flow chart
+The **Calendar** view places each task between its start date and its due date. Choose the **Day**, **Week** or **Month** display, and use **Today** and the arrows to navigate.
 
-This chart shows, over time, the distribution of tasks across the different life stages of a task.
+The **Unplanned tasks** button opens the list of tasks that have no start date or no due date. Drag a task onto a day of the calendar to plan it: its start date and due date are then filled in. A task that is already planned keeps its duration when you move it. To remove the dates of a task, drag it into the **Drop a task here to unplan it** area.
 
-<figure><img src="../../.gitbook/assets/settings-sso-default-login-mode.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-export-3.png" alt="The Calendar view in month display with the Unplanned tasks panel open"><figcaption><p>The Calendar view and its unplanned tasks</p></figcaption></figure>
 
-#### Velocity chart
+## Filter tasks
 
-The velocity chart shows the evolution of the number of tasks closed per iteration.
+In every view, the search box and the **Filters** button narrow down the displayed tasks. The filters cover the organizational unit, project, sprint, assignee, priority, step, tags, status, type of associated item and recycle bin.
 
-<figure><img src="../../.gitbook/assets/planning-iteration-velocity-chart.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-export-4.png" alt="The Filters panel of the Tasks page with the available filters"><figcaption><p>The filters of the Tasks page</p></figcaption></figure>
 
-You can filter tasks by priority, tags, departments, types, users or iterations directly from the filters available in each tab.
+## Track progress with the statistics
 
-![Task filters](<../../.gitbook/assets/image-163.png>)
+In the side menu, click **Tasks**, then **Stats**. The page has two tabs.
 
-To export the tasks, go to the "column" or "table" tab of the "planning" module, then click the arrow on the right of the screen, then the "Export data" button.
+The **Basic charts** tab shows the general indicators of the action plan and the **Task states by project** chart. This chart shows the number of tasks per step. Choose the criterion in the **Group by** list: tasks are grouped by project by default, and you can group them by organizational unit, sprint, assignee or associated item.
 
-<figure><img src="../../.gitbook/assets/planning-tasks-filters-panel.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-export-5.png" alt="The Basic charts tab with the indicators and the chart of task states"><figcaption><p>The Basic charts tab</p></figcaption></figure>
 
-![](<../../.gitbook/assets/image-66.png>)
+The **Advanced charts** tab holds three charts. By default, they cover the last 30 days. You can limit them to a sprint, a period or an organizational unit.
 
-A window appears with a choice of formats available for export. Click the format of your choice and then the "Download file" button.
+### Burn down chart
 
-<figure><img src="../../.gitbook/assets/settings-sso-saml-flow-diagram.png" alt=""><figcaption></figcaption></figure>
+The burn down chart shows how the amount of remaining work evolves over a given period, for example a sprint.
 
-A window appears with a choice of possible formats for export. Click on the format of your choice and then on the "Download file" button.
+<figure><img src="../../.gitbook/assets/tasks-export-6.png" alt="The burn down chart of the Advanced charts tab"><figcaption><p>The burn down chart</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/getting-started-checklist-panel.png" alt=""><figcaption></figcaption></figure>
+### Cumulative flow chart
 
-That's it, your tasks are exported!
+This chart shows over time how the tasks are distributed across the steps of their life cycle.
 
+<figure><img src="../../.gitbook/assets/tasks-export-7.png" alt="The cumulative flow chart of the Advanced charts tab"><figcaption><p>The cumulative flow chart</p></figcaption></figure>
 
+### Velocity chart
 
-{% embed url="https://youtu.be/MVWJev04V8Y" %}
+This chart shows the evolution of the number of tasks closed per sprint.
+
+<figure><img src="../../.gitbook/assets/tasks-export-8.png" alt="The velocity chart of the Advanced charts tab"><figcaption><p>The velocity chart</p></figcaption></figure>
+
+## Export tasks
+
+1. On the **Tasks** page, click the arrow of the **Create task** button, then **Export**. To export only some tasks, select them in the **Table** view and choose the **Export** batch action.
+2. In the window, choose the export format. The export applies the filters set on the page.
+3. Click **Download file**.
+
+<figure><img src="../../.gitbook/assets/tasks-export-9.png" alt="The export window with the choice of format and the Download file button"><figcaption><p>The task export window</p></figcaption></figure>
 
 ## Custom views
 
-The Planning module supports **custom views**: you can save a combination of filters and columns under a name, then switch between your views with a single click from the toolbar.
+A custom view saves, under a name, the combination of filters and columns of a view. You then switch between saved views from the selector in the toolbar, next to the search box.
 
-<figure><img src="../../.gitbook/assets/planification-taches-custom-view-selector.png" alt="Custom view selector in the Planning module — Kanban board view"><figcaption><p>The view selector appears in the toolbar — switch between saved views with a single click</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-export-10.png" alt="The custom view selector open with the default view, a personal view and a shared view"><figcaption><p>The custom view selector</p></figcaption></figure>
 
-### Creating a view
+### Create a view
 
-1. Apply the desired filters and column selection in the **Table** or **Columns** tab.
-2. Click **Save view** in the toolbar.
-3. Give your view a name and confirm.
+1. Apply the filters and column selection you want in the **Columns**, **Table** or **Tree** view.
+2. Open the view selector (it shows **Default view**), then click **Save custom view**.
+3. Enter the **Name of your custom view**, then click **Save changes**.
 
-The view appears directly in the toolbar for quick access.
+The view appears in the selector under **My views**. When you change the filters of an active view, the **Update** entry of that view saves the changes.
 
-### Sharing a view
+<figure><img src="../../.gitbook/assets/tasks-export-11.png" alt="The Save custom view window with the view name and the sharing option"><figcaption><p>Saving a custom view</p></figcaption></figure>
 
-You can **share a view** with other users in your workspace. Shared views appear under the **Shared views** section in the toolbar — handy for standardising action plan monitoring across a team.
+### Share a view
 
-### Example use cases
+In the save window, turn on **Share this custom view with other users**. This option is reserved for users who manage advanced settings. Other users of the workspace find the view under **Shared views**, which helps standardize action plan monitoring across a team.
 
-* "Overdue tasks" view: filter on tasks past their due date with status ≠ Closed
-* "My backlog" view: filter on the logged-in user, status = To do, sorted by decreasing priority
-* "Q3 Sprint" view: filter on the current iteration, all columns displayed
+### View examples
+
+* "Overdue tasks": tasks whose due date has passed and whose step is not **Done**.
+* "My backlog": tasks assigned to you, at the **New** step.
+* "Current sprint": tasks of the sprint in progress.
 
 ## Go further
 
 {% content-ref url="calendar-sync.md" %}
-[share-as-calendar.md](calendar-sync.md)
+[Share as calendar](calendar-sync.md)
 {% endcontent-ref %}
