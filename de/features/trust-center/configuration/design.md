@@ -1,15 +1,23 @@
 ---
-description: Erfahren Sie, wie Sie die Designelemente Ihres Trust Centers konfigurieren
+description: >-
+  Erfahren Sie, wie Sie das Logo, das Titelbild und die Akzentfarbe Ihres Trust
+  Centers konfigurieren.
 ---
 
 # Erscheinungsbild und Design
 
-<figure><img src="../../../.gitbook/assets/trust center13.png" alt=""><figcaption><p>Die Registerkarte zur Konfiguration der Designelemente Ihres Trust Centers</p></figcaption></figure>
+Der Abschnitt **Erscheinungsbild und Design** der Bearbeitungsseite fasst die visuellen Elemente Ihres Trust Centers zusammen: das Logo, die Akzentfarbe und das Titelbild. Alle drei sind optional.
 
-#### Logo (optional)
+<figure><img src="../../../.gitbook/assets/trust-center-design-1.png" alt="Abschnitt Erscheinungsbild und Design eines Trust Centers mit Logo, Akzentfarbe und Titelbild"><figcaption><p>Der Abschnitt Erscheinungsbild und Design eines Trust Centers</p></figcaption></figure>
 
-Sie können ein Logo Ihrer Wahl (quadratisches Format) zu Ihrem Trust Center hinzufügen. Dieses Logo wird in der Kopfzeile Ihres Trust Centers neben dem Namen angezeigt. Ohne Logo wird nur der Name Ihres Trust Centers angezeigt.
+## Logo
 
-#### Titelbild (optional)
+Fügen Sie ein Logo Ihrer Wahl im quadratischen Format hinzu. Es wird in der Kopfzeile des Trust Centers neben dem Namen angezeigt. Ohne Logo wird nur der Name des Trust Centers angezeigt.
 
-Sie können ein Titelbild Ihrer Wahl (rechteckiges Format) zu Ihrem Trust Center hinzufügen. Dieses wird, sofern angegeben, in der Kopfzeile Ihres Trust Centers über dem Logo und dem Titel angezeigt.
+## Akzentfarbe
+
+Das Feld **Akzentfarbe** färbt die interaktiven Elemente des öffentlichen Portals: Links, den aktiven Tab, primäre Schaltflächen und die aktive Seite von Listen. Ohne Farbe verwendet das Portal seine Standardfarbe.
+
+## Titelbild
+
+Fügen Sie ein Titelbild im Rechteckformat (Seitenverhältnis 2:1) hinzu. Es wird oben in der Kopfzeile des Trust Centers angezeigt, über dem Logo und dem Namen.

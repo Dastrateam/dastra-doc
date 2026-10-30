@@ -1,39 +1,45 @@
 ---
 description: >-
-  Dastra ermöglicht es Ihnen, die starke Authentifizierung der Nutzer zu
-  aktivieren
+  Aktivieren Sie die starke Authentifizierung (6-stelliger Code) für Ihr Konto
+  oder machen Sie sie für die Nutzer Ihrer Organisation verpflichtend.
 ---
 
 # Zwei-Faktor-Authentifizierung
 
-## Einführung
+Dastra verwendet die [TOTP](https://de.wikipedia.org/wiki/Time-based_one-time_password)-Technologie zur Verwaltung der [Multi-Faktor-Authentifizierung](https://de.wikipedia.org/wiki/Multi-Faktor-Authentisierung) der Nutzer. Die Nutzer melden sich mit ihrem üblichen Passwort und einem 6-stelligen Code an, den eine Authentifizierungs-App wie Microsoft Authenticator oder Google Authenticator bereitstellt.
 
-Dastra verwendet die [TOTP](https://de.wikipedia.org/wiki/Time-based_one-time_password)-Technologie zur Verwaltung der [Multi-Faktor-Authentifizierung](https://de.wikipedia.org/wiki/Multi-Faktor-Authentisierung) der Nutzer.\
-Die Nutzer können sich somit sowohl mit ihrem üblichen Passwort als auch mit einem 6-stelligen Code anmelden, der von einer Secrets-Speicher-App wie Microsoft Authenticator oder Google Authenticator (oder anderen) bereitgestellt wird.
+Diese Seite erklärt, wie Sie die starke Authentifizierung für Ihr Konto aktivieren und wie Sie sie anschließend für die Nutzer Ihrer Organisation verpflichtend machen.
 
-## Wie aktiviert man die starke Authentifizierung?
+## Die starke Authentifizierung für Ihr Konto aktivieren
 
-* Navigieren Sie zu https://app.dastra.eu/general-settings/two-factor
-* Klicken Sie auf "**Zwei-Faktor-Authentifizierung aktivieren**"
-* Laden Sie eine Zwei-Faktor-Authentifizierungs-App herunter
-* **Scannen Sie den QR-Code** mit der von Ihnen gewählten App
+1. Öffnen Sie oben rechts das Profilmenü, klicken Sie auf **Nutzerprofil** und anschließend im linken Menü auf **Kontosicherheit**. Sie können auch direkt [https://app.dastra.eu/general-settings/account-security](https://app.dastra.eu/general-settings/account-security) aufrufen.
+2. Klicken Sie in der Karte **Schützen Sie Ihr Konto mit einer Zwei-Faktor-Authentifizierung** auf **Zwei-Faktor-Authentifizierung aktivieren**.
 
-![](<../.gitbook/assets/Einrichtung einer starken Authentifizierung.png>)
+<figure><img src="../.gitbook/assets/security-mfa-1.png" alt="Seite Kontosicherheit: Karte zur Zwei-Faktor-Authentifizierung mit der Schaltfläche Zwei-Faktor-Authentifizierung aktivieren"><figcaption><p>Die Karte zur Zwei-Faktor-Authentifizierung unter Kontosicherheit</p></figcaption></figure>
 
-* Bewahren Sie den Wiederherstellungscode sicher auf.
-* Melden Sie sich mit dem 6-stelligen Code an, der von Ihrer Authentifizierungs-App bereitgestellt wird
+3. Installieren Sie auf dem Bildschirm **Einrichtung einer Zwei-Faktor-Authentifizierung** eine Authentifizierungs-App auf Ihrem Telefon, falls Sie noch keine haben.
+4. Scannen Sie den QR-Code mit der App. Wenn die App ihn nicht scannen kann, geben Sie den Code ein, der unter dem Text angezeigt wird.
 
-![Beispiel einer Authentifizierungs-App](../.gitbook/assets/image-104.png)
+<figure><img src="../.gitbook/assets/security-mfa-2.png" alt="Bildschirm Einrichtung einer Zwei-Faktor-Authentifizierung mit dem zu scannenden QR-Code"><figcaption><p>Der Einrichtungsbildschirm: der QR-Code, den Sie mit Ihrer App scannen</p></figcaption></figure>
+
+5. Klicken Sie auf **Weiter**. Dastra zeigt Ihnen anschließend Ihren Wiederherstellungscode an: Bewahren Sie ihn sicher auf.
+6. Bei jeder Anmeldung geben Sie Ihr Passwort ein und danach den **6-stelligen Code**, den Ihre App bereitstellt.
+
+<figure><img src="../.gitbook/assets/security-mfa-3.png" alt="Beispiel einer Authentifizierungs-App mit 6-stelligen Codes"><figcaption><p>Beispiel einer Authentifizierungs-App</p></figcaption></figure>
 
 {% hint style="warning" %}
-Bewahren Sie den Wiederherstellungscode sorgfältig auf! Dieser ermöglicht es Ihnen, Ihr Konto wiederherzustellen, falls Sie Ihre Authentifizierungs-App verlieren. Ihr Konto wird dauerhaft gesperrt, wenn Sie diesen Code nicht vorlegen können. In diesem Fall müssen Sie sich an den Eigentümer Ihrer Organisation wenden, damit er die Zwei-Faktor-Authentifizierung Ihres Kontos zurücksetzt.
+Bewahren Sie den Wiederherstellungscode sicher auf. Wenn Sie Ihre Authentifizierungs-App verlieren, können Sie damit die starke Authentifizierung zurücksetzen: Klicken Sie auf dem Bildschirm zur Codeeingabe auf **Haben Sie Schwierigkeiten beim Einloggen?**. Ohne diesen Code bleibt Ihr Konto gesperrt: Wenden Sie sich an den Inhaber Ihrer Organisation, damit er die starke Authentifizierung Ihres Kontos zurücksetzt.
 {% endhint %}
 
-## Wie erzwingt man die Zwei-Faktor-Authentifizierung für alle Nutzer?
+## Die starke Authentifizierung verpflichtend machen
 
-* Navigieren Sie zu https://app.dastra.eu/general-settings/security
-* Aktivieren Sie das Kontrollkästchen für die erzwungene Zwei-Faktor-Authentifizierung.
+Die Inhaber der Organisation können alle internen Nutzer, also die von der Organisation verwalteten Nutzer, zur Verwendung der starken Authentifizierung verpflichten. Diese Option gehört zu den Sicherheitseinstellungen der Organisation, die dem Enterprise-Plan vorbehalten sind.
+
+1. Öffnen Sie das Profilmenü, klicken Sie auf **Konfiguration der Organisation** und anschließend im linken Menü auf **Sicherheit**. Sie können auch direkt [https://app.dastra.eu/general-settings/security](https://app.dastra.eu/general-settings/security) aufrufen.
+2. Aktivieren Sie in der Karte **Nutzer zur Verwendung einer Zwei-Faktor-Authentifizierung (zweistufige Authentifizierung) verpflichten** den Schalter: Er wechselt auf aktiviert.
+
+<figure><img src="../.gitbook/assets/security-mfa-4.png" alt="Sicherheitseinstellungen der Organisation: Karte, mit der die starke Authentifizierung verpflichtend wird"><figcaption><p>Die Karte, mit der die starke Authentifizierung verpflichtend wird</p></figcaption></figure>
 
 {% hint style="info" %}
-Alle Nutzer, die sich anmelden, werden keinen Zugang zur Anwendung haben, ohne die Zwei-Faktor-Authentifizierung in ihrem Konto konfiguriert zu haben. Stellen Sie sicher, dass Ihr Team über die Best Practices zur Aufbewahrung der geheimen TOTP-Schlüssel informiert ist.
+Bei ihrer nächsten Anmeldung können die betroffenen Nutzer erst auf die Anwendung zugreifen, wenn sie die starke Authentifizierung eingerichtet haben. Informieren Sie Ihr Team und erinnern Sie es daran, den Wiederherstellungscode sicher aufzubewahren. Eine Anmeldung mit einem [Passkey](passkey.md) und Nutzerverifizierung zählt bereits als zwei Faktoren: Dabei wird kein 6-stelliger Code abgefragt.
 {% endhint %}

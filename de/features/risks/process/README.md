@@ -4,36 +4,34 @@ description: Erfahren Sie, wie der Risikomanagement-Prozess in Dastra funktionie
 
 # Der Risikomanagement-Prozess
 
-\
-Der Risikomanagement-Prozess in Dastra ist eine **vereinfachte Version** des Modells **eBios Risk Manager**.
+Der Risikomanagement-Prozess von Dastra ist eine **vereinfachte Version** des Modells **eBios Risk Manager** und der **Methodik der CNIL zur Risikobewertung**.
 
-### Verwalten Sie Ihre Risiken in 4 Schritten <a href="#gerez-vos-risques-en-4-etapes" id="gerez-vos-risques-en-4-etapes"></a>
+## Verwalten Sie Ihre Risiken in 4 Schritten <a href="#manage-your-risks-in-4-steps" id="manage-your-risks-in-4-steps"></a>
 
-Das Risikomanagement erfolgt in einem Prozess mit vier großen Schritten.
+Das Management eines Risikos folgt vier Hauptschritten, auf die die Archivierung folgt. Oben auf der Seite eines Risikos zeigt die Fortschrittsleiste sie unter den Bezeichnungen **Identifizierung**, **Bewertung**, **Verarbeitung**, **Überwachung** und **Archivierung** an.
 
-![4 Schritte des Risikomanagements + Archivierung](<../../../.gitbook/assets/Risiko (1).png>)
+<figure><img src="../../../.gitbook/assets/risk-workflow-stepper.png" alt="Fortschrittsleiste eines Risikos: Identifizierung, Bewertung, Verarbeitung, Überwachung, Archivierung"><figcaption><p>Die 4 Schritte des Risikomanagements, danach die Archivierung</p></figcaption></figure>
 
-**1. Die Identifikation**\
-Ziel der Risikoidentifikation ist es, die Ereignisse zu bestimmen, die eintreten könnten und ein befürchtetes Ereignis (wie einen Verlust) verursachen, und einen Überblick zu geben, wie, wo und wann dieses Ereignis eintreten könnte.
+**1. Identifizieren**\
+Die Identifizierung bestimmt die Ereignisse, die eintreten und ein befürchtetes Ereignis (wie einen Verlust) verursachen könnten. Sie gibt einen Überblick darüber, wie, wo und wann dieses Ereignis eintreten könnte.
 
-**2. Die Bewertung**\
-Das Risiko wird positiv oder negativ bewertet, je nach der **Auswirkungsstufe**, die das befürchtete Ereignis darstellt, und der **Wahrscheinlichkeit**, dass es **aufgrund der Bedrohungen** eintritt, die es ermöglichen.
+**2. Bewerten**\
+Das Risiko wird anhand der **Auswirkungsstufe** des befürchteten Ereignisses und der **Wahrscheinlichkeit** bewertet, mit der es eintritt, auf Grundlage der **Bedrohungen**, die es ermöglichen. Die App bezeichnet diese beiden Messgrößen als **Schweregrad** und **Wahrscheinlichkeit**.
 
-**3. Die Behandlung**\
-Die Risikobehandlung besteht in der Antwort auf ein Risiko. Diese kann verschiedener Art sein:
+**3. Behandeln**\
+Die Behandlung ist die Antwort auf das Risiko. Sie hat eine von fünf Formen:
 
-* die _Risikominderung_: Maßnahmen müssen umgesetzt werden, um das Risiko zu reduzieren
-* die _Risikoakzeptanz_: das Bruttorisiko wird von der Organisation ohne Minderungsmaßnahmen akzeptiert
-* die _Risikovermeidung_: das Risiko verhindert die Durchführung der betreffenden Aktivität
-* der _Risikotransfer_: das Risiko, das auf der Organisation lastet, kann auf eine andere Organisation übertragen werden (z. B. über eine Versicherung)
-* die _Risikoübernahme_: das Risiko sollte Gegenstand von Minderungsmaßnahmen sein, aber die Organisation akzeptiert, diese nicht umzusetzen
+* _Risikominderung_: Es müssen Maßnahmen umgesetzt werden, um das Risiko zu verringern;
+* _Risikoakzeptanz_: Die Organisation akzeptiert das Bruttorisiko, wie es ist, ohne Minderungsmaßnahmen;
+* _Risikovermeidung_: Das Risiko verhindert die Durchführung der betreffenden Tätigkeit;
+* _Risikoübertragung_: Das Risiko, das auf der Organisation lastet, wird auf eine andere Organisation übertragen, zum Beispiel über eine Versicherung;
+* _Risikoübernahme_: Das Risiko sollte Gegenstand von Minderungsmaßnahmen sein, aber die Organisation ist damit einverstanden, diese nicht umzusetzen.
 
-**4. Die Überwachung**
+**4. Überwachen**\
+Sobald eine Antwort gegeben wurde, ist das Risiko unter Kontrolle. Überprüfen und bewerten Sie es regelmäßig neu, um seinen Veränderungen Rechnung zu tragen, insbesondere wenn Sie Kontrollpunkte einrichten.
 
-Sobald eine Antwort auf das Risiko gegeben wurde, ist das Risiko unter Kontrolle. Es muss regelmäßig überprüft und neu bewertet werden, um den Entwicklungen des Risikos Rechnung zu tragen. Insbesondere bei der Einführung von Kontrollpunkten.
-
-Schließlich **archivieren** Sie Ihre Risiken, sobald sie verschwunden sind, um eine Nachverfolgung zu gewährleisten.
+Schließlich **archivieren** Sie Ihre Risiken, sobald sie verschwunden sind, um sie nachvollziehbar zu halten.
 
 {% hint style="info" %}
-Die Besonderheit des Dastra-Risikomanagement-Prozesses besteht darin, eine nahezu Echtzeit-Aktualisierung der Risikobewertung zu ermöglichen, basierend auf den Ergebnissen der Kontrollpunkte.
+Die Besonderheit des Risikomanagement-Prozesses von Dastra besteht darin, dass er die Risikobewertung nahezu in Echtzeit aktualisiert, auf Grundlage der Ergebnisse der Kontrollpunkte.
 {% endhint %}

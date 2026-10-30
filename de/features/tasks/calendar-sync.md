@@ -1,32 +1,39 @@
 ---
 description: >-
-  Erfahren Sie, wie Sie das Planungsmodul von Dastra mit anderen Kalendern
-  synchronisieren.
+  Synchronisieren Sie Ihren Dastra-Aufgabenkalender mit Outlook, Google Kalender
+  oder einer anderen Kalenderanwendung.
 ---
 
-# Mit anderen Kalendern synchronisieren
+# Als Kalender teilen
 
-## Einleitung
+Dastra erzeugt einen Kalenderlink im Format .ics. Sobald Sie diesen Link in Ihrer Mailanwendung hinzufügen, erscheinen Ihre Aufgaben in einem Arbeitskalender wie Outlook oder Google Kalender.
 
-In Dastra ist es möglich, alle erstellten Aktionen mit anderen Kalendern zu synchronisieren, wie zum Beispiel berufliche Kalender, die von E-Mail-Diensten angeboten werden.
+## Den Kalenderlink erzeugen
 
-## Mit anderen Kalendern synchronisieren
+1. Klicken Sie im Seitenmenü auf **Aufgaben** und wählen Sie im Untermenü **Kanban-Board**.
+2. Klicken Sie auf den Pfeil der Schaltfläche **Aufgabe erstellen** und dann auf **Mit meinem Kalender synchronisieren (Outlook...)**. Dieser Eintrag erfordert die Berechtigung zum Exportieren von Aufgaben.
 
-Gehen Sie dazu auf den Reiter "Spalten" oder "Tabelle" im Modul "Planung" und klicken Sie dann auf den Pfeil oben rechts auf dem Bildschirm neben der Schaltfläche "Neue Aufgabe". Klicken Sie anschließend auf "Mit meinem Kalender synchronisieren (Outlook...).
+<figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="Das Dropdown-Menü der Schaltfläche Aufgabe erstellen mit dem Eintrag Mit meinem Kalender synchronisieren"><figcaption><p>Der Eintrag zum Teilen als Kalender im Menü der Schaltfläche Aufgabe erstellen</p></figcaption></figure>
 
-![Das Dropdown-Menü der Aufgaben](<../../.gitbook/assets/capture-web-4-5-2022-152356-app-dastra-eu.jpeg>)
+3. Klicken Sie im Fenster **Freigabe des Aufgabenplans** auf **Link erstellen**.
 
-Dadurch wird ein **Link** generiert und/oder eine **.ics-Datei** heruntergeladen, mit der es möglich ist, den Kalender der Ihnen zugewiesenen Aufgaben mit jeder beliebigen Kalenderanwendung (Outlook, Google...) zu synchronisieren.
+<figure><img src="../../.gitbook/assets/tasks-calendar-sync-1.png" alt="Das Fenster Freigabe des Aufgabenplans mit dem erzeugten Link"><figcaption><p>Der erzeugte Kalenderlink</p></figcaption></figure>
 
-* [Einen Outlook-Kalender synchronisieren](https://support.microsoft.com/fr-fr/office/importer-des-calendriers-dans-outlook-8e8364e1-400e-4c0f-a573-fe76b5a2d379)
-* [Einen Google-Kalender synchronisieren](https://support.google.com/calendar/answer/37118?hl=fr\&co=GENIE.Platform%3DDesktop)
+Der Link wird in Ihre Zwischenablage kopiert und im Fenster angezeigt. Damit können Sie den Kalender der Ihnen zugewiesenen Aufgaben mit jeder Kalenderanwendung synchronisieren.
+
+## Den Link zu Ihrem Kalender hinzufügen
+
+Fügen Sie den Link in Ihrer Kalenderanwendung als Internetkalender hinzu. Das Vorgehen hängt von der Anwendung ab:
+
+* [Kalender in Outlook importieren](https://support.microsoft.com/en-us/office/import-calendars-into-outlook-8e8364e1-400e-4c0f-a573-fe76b5a2d379)
+* [Termine in Google Kalender importieren](https://support.google.com/calendar/answer/37118?hl=en\&co=GENIE.Platform%3DDesktop)
 
 {% hint style="info" %}
-Aus Sicherheitsgründen wird empfohlen, die auf Ihrem Projekt freigegebenen Links in der Verwaltungsoberfläche für Freigabelinks (Schaltfläche "Einstellungen") zu überwachen.
+Geben Sie diesen Link nicht weit herum. Überwachen Sie aus Sicherheitsgründen die bestehenden Links unter **Mandanteneinstellungen** > **Links zum Teilen**.
 {% endhint %}
 
 ## Weiterführende Informationen
 
 {% content-ref url="workflow.md" %}
-[allez-plus-loin-avec-la-planification.md](workflow.md)
+[Den Aufgaben-Workflow anpassen](workflow.md)
 {% endcontent-ref %}

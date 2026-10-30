@@ -1,29 +1,49 @@
 # Integration mit Docusign
 
-Wir haben eine native Integration zwischen Dastra und DocuSign eingerichtet, dem weltweit führenden Anbieter für elektronische Unterschriften, die es Ihnen ermöglicht, Unterschriften direkt aus dem Vertragsmodul von Dastra zu versenden, zu leisten und deren Status zu verfolgen.
+Dastra ist nativ in DocuSign integriert, die Lösung für elektronische Signaturen. Sie senden ein Dokument zur Unterzeichnung, verfolgen den Status der Unterschrift und finden ihn direkt im Modul **Verträge und Richtlinien** aktuell wieder.
 
-Gehen Sie zu den [Einstellungen Ihres Mandanten, Registerkarte Integrationen](https://app.dastra.eu/workspace/2/settings/integrations), um die Integration einzurichten und im Unterschriftsbereich eines Vertrags darauf zuzugreifen.
+## Die Integration installieren
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien20.png" alt=""><figcaption><p>Wählen Sie Docusign in den Integrationen aus</p></figcaption></figure>
+1. Öffnen Sie **Mandanteneinstellungen** > **Integrationen** und klicken Sie dann auf die Karte **Docusign**.
 
-Sobald die Docusign-Integration geöffnet ist, klicken Sie bitte auf "Integration hinzufügen". Sie werden dann zur Docusign-Authentifizierung weitergeleitet, um Ihr Docusign-Konto mit Dastra zu verknüpfen.
+   <figure><img src="../../.gitbook/assets/contracts-docusign-1.png" alt="Der Katalog der Integrationen mit der Karte Docusign"><figcaption><p>Docusign in den Integrationen auswählen</p></figcaption></figure>
+2. Klicken Sie beim Anwendungsfall Verträge auf **Integration hinzufügen**.
+3. Erstellen Sie im Schritt **Anmeldung** die Verbindung: Dastra leitet Sie zur Authentifizierung bei Docusign weiter, um Ihr Docusign-Konto mit Dastra zu verknüpfen.
+4. Geben Sie im Konfigurationsschritt **Konto-ID (API-Konto-ID)** und **Account Base URI** ein. Beides finden Sie in Ihrem Docusign-Konto auf der Seite [Apps and Keys](https://apps.docusign.com/admin/apps-and-keys).
 
-Sobald die Verbindung hergestellt ist, müssen Sie in Dastra Ihre Docusign-AccountId und Ihre Docusign Account Base URI angeben, die Sie [hier finden](https://apps.docusign.com/admin/apps-and-keys).
+   <figure><img src="../../.gitbook/assets/contracts-docusign-2.png" alt="Der Konfigurationsschritt mit den Feldern Konto-ID und Account Base URI"><figcaption><p>Die Schlüssel, die Sie aus Ihrem Docusign-Konto in Dastra eingeben</p></figcaption></figure>
+5. Speichern Sie. Dastra prüft das Konto bei Docusign.
 
-<figure><img src="../../.gitbook/assets/image-361.png" alt=""><figcaption><p>Die in Dastra einzugebenden Schlüssel aus Ihrem Docusign-Konto</p></figcaption></figure>
+Damit ist die Installation abgeschlossen: Die Signatur über Docusign steht im Signaturfenster Ihrer Dokumente zur Verfügung. Wie Verbindungen und Anwendungsfälle allgemein funktionieren, ist unter [Verbindungen, Anwendungsfälle und Feld-Mapping](../integrations/connections.md) beschrieben.
 
-Sobald diese Felder ausgefüllt sind, haben Sie die Einrichtung der Integration abgeschlossen. Sie können nun zum Vertragsmodul gehen und die Unterschriften Ihrer Verträge elektronisch verwalten.
+## Ein Dokument zur Unterzeichnung senden
 
-### Docusign-Unterschriftsoberfläche
+Um ein Dokument zu senden, benötigen Sie:
 
-Nachfolgend sehen Sie die Unterschriftsoberfläche eines Vertrags über Docusign (zugänglich über die Schaltfläche 'Unterschrift hinzufügen' eines Unterzeichners).
+* einen Unterzeichner, dessen Stakeholder über eine gültige E-Mail-Adresse verfügt;
+* mindestens einen Anhang zur Unterzeichnung im Format PDF, DOC oder DOCX;
+* einen Betreff für die Einladungs-E-Mail.
 
-Um diese Seite validieren zu können, benötigen Sie zwingend einen Akteur (Unterzeichner) mit einer gültigen E-Mail-Adresse, einen zu unterschreibenden Anhang im Format .pdf, .doc, .docx und einen Betreff für die Einladungs-E-Mail zur Unterschrift.
+Wählen Sie im Fenster **Signatur hinzufügen** den Modus **Bitte unterzeichnen Sie mit Docusign®.** (siehe [Ein Dokument unterzeichnen](sign.md)). Ist die Integration nicht installiert, zeigt das Fenster die Schaltfläche **Integration installieren** an, die ihre Einstellungen öffnet.
 
-Sie können detaillierte Anweisungen für die Dokumentenunterschrift hinzufügen. Diese werden in die Einladungs-E-Mail zur Unterschrift aufgenommen und sind für den Unterzeichner auch in der Docusign-Oberfläche sichtbar, wenn er auf das zu unterschreibende Dokument zugreift.
+### Optionen für den Versand
 
-<figure><img src="../../.gitbook/assets/image-362.png" alt=""><figcaption><p>Oberfläche zum Versand der Unterschrift per Docusign über Dastra</p></figcaption></figure>
+Füllen Sie die folgenden Felder aus:
 
-Sobald die Unterschrift versendet wurde, wird ihr Status automatisch in Ihrem Vertrag synchronisiert und bei jeder Statusänderung der Unterschrift auf Docusign-Seite aktualisiert.
+* **Bitte wählen Sie die Stakeholder aus, deren Unterschrift Sie erfassen möchten.**: die Unterzeichner, an die die Anfrage gesendet wird. Ein Stakeholder ohne E-Mail-Adresse oder der bereits unterzeichnet hat, kann nicht ausgewählt werden. Die Schaltfläche **Aktualisieren** lädt die Liste nach einer Änderung neu.
+* **Wählen Sie die Anhänge aus, die der Signaturanforderung hinzugefügt werden sollen.**: die PDF-, DOC- oder DOCX-Dateien, die zur Unterzeichnung gesendet werden. Alle gültigen Anhänge sind standardmäßig angekreuzt.
+* **Betreff der Einladungs-E-Mail**: der Betreff der E-Mail, die an die Unterzeichner gesendet wird (höchstens 80 Zeichen).
+* **Bereitstellung detaillierter Anweisungen zum Unterzeichnen des Dokuments**: ein optionaler Text, der in der Einladungs-E-Mail enthalten ist und für den Unterzeichner in der Docusign-Oberfläche sichtbar ist.
 
-<figure><img src="../../.gitbook/assets/image-363.png" alt=""><figcaption><p>Eine ausstehende Unterschrift</p></figcaption></figure>
+Zwei optionale Einstellungen vervollständigen die Anfrage:
+
+* **Automatisches Hinzufügen einer Signaturposition (mit Textanker)**: verfügbar, wenn alle Anhänge PDF-Dateien sind. Für jeden Unterzeichner zeigt Dastra den Text an, der an der Stelle in das Dokument eingefügt werden muss, an der er unterschreiben soll, zum Beispiel `[Signature Signer name]`. Die Unterschrift wird an diesem Text positioniert.
+* **Fügen Sie automatisch Initialen auf jeder Seite des Dokuments hinzu**: verfügbar, wenn die Signaturposition aktiviert ist.
+
+Klicken Sie auf **Senden**, um die Anfrage zu senden. Die Unterzeichner erhalten von Docusign eine Einladungs-E-Mail.
+
+## Die Unterschrift verfolgen
+
+Nach dem Senden der Anfrage wird der Status der Unterschrift mit Ihrem Dokument synchronisiert und aktualisiert, sobald er sich bei Docusign ändert. Im Tab **Unterzeichner** zeigt die Zeile des Unterzeichners **Unterschrift ausstehend** an, bis er unterschreibt.
+
+<figure><img src="../../.gitbook/assets/contracts-docusign-4.png" alt="Eine Zeile eines Unterzeichners mit dem Status Unterschrift ausstehend"><figcaption><p>Eine ausstehende Unterschrift</p></figcaption></figure>

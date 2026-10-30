@@ -1,65 +1,57 @@
-# Vertragsversionierung
+# Dokumentversionen
 
-Um Änderungen, Aktualisierungen des Vertrags oder auch die Erneuerung nachzuverfolgen, ist es möglich, Ihren Vertrag zu versionieren.
+Um Änderungen, Aktualisierungen oder die Verlängerung eines Dokuments nachzuverfolgen, erstellen Sie eine neue Version davon.
 
-Jede Version wird durch eine Revisionsnummer gekennzeichnet, die bei der Erstellung einer Version automatisch hochgezählt wird. Diese Revisionsnummer ist in der zusammenfassenden Tabellenansicht Ihrer Verträge sichtbar.
+Jede Version hat eine Revisionsnummer, die bei der Erstellung automatisch hochgezählt wird. Diese Nummer ist im Verzeichnis sichtbar. Ein Dokument hat zu jedem Zeitpunkt nur eine aktive Version: Sie wird im Verzeichnis angezeigt, inaktive Versionen erscheinen dort nicht.
 
-Ein Vertrag kann nur eine aktive Version gleichzeitig haben. Es ist diese aktive Version des Vertrags, die Sie in der Tabellenansicht sehen (inaktive Versionen des Vertrags sind in der Tabellenansicht nicht sichtbar).
+Im Versionsmanager können Sie die Versionen eines Dokuments durchsuchen, eine frühere Version anzeigen und jede Version jederzeit aktiv setzen, auch eine neuere.
 
-Es ist möglich, die verschiedenen Versionen eines Vertrags über den Versionsmanager des Vertrags zu durchsuchen. Sie können frühere Versionen Ihres Vertrags auf dem Bildschirm anzeigen und jederzeit eine beliebige Version aktivieren (einschließlich einer späteren Version).
+## Der Versionsmanager
 
-### Der Versionsmanager
+Wenn Sie ein Dokument erstellen, legt Dastra seine Version 1 an. Die Schaltfläche **Version** gefolgt von der Nummer im Menü der Hauptaktionen öffnet den Versionsmanager.
 
-Wenn Sie einen Vertrag erstellen, wird standardmäßig die Version 1 dieses Vertrags erstellt, die im Hauptaktionsmenü des Vertrags sichtbar ist
+<figure><img src="../../.gitbook/assets/contracts-versions-1.png" alt="Die Schaltfläche Version 1 im Menü der Hauptaktionen der Akte"><figcaption><p>Die Schaltfläche, die den Versionsmanager öffnet</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien21.png" alt=""><figcaption><p>Die Schaltfläche zum Zugriff auf den Versionsmanager</p></figcaption></figure>
+Der Manager listet alle Versionen des Dokuments auf. Jede Karte zeigt die Versionsnummer, ihre Beschreibung, ihr Erstellungsdatum und die Anzahl ihrer Anhänge. Ein Punkt gibt den Zustand der Version an: grün für die aktive Version, rot für eine deaktivierte. Der Zusatz **Wird angezeigt** kennzeichnet die Version, die Sie gerade auf dem Bildschirm sehen.
 
-Durch Klicken auf diese Schaltfläche gelangen Sie zum Versionsmanager
+<figure><img src="../../.gitbook/assets/contracts-versions-2.png" alt="Der Versionsmanager mit mehreren Versionen, darunter die aktive und die angezeigte Version"><figcaption><p>Der Versionsmanager</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien22.png" alt=""><figcaption><p>Der Versionsmanager</p></figcaption></figure>
+## Eine neue Version erstellen
 
-Dieses Menü ermöglicht es Ihnen, alle Versionen Ihres Vertrags einzusehen und zu verwalten sowie neue zu erstellen, indem Sie auf **Neue Version erstellen** klicken.
+Die neue Version geht von der aktuell angezeigten Version aus: Wechseln Sie also zuerst zu der Version, von der Sie ausgehen möchten.
 
-### Eine neue Version erstellen
+1. Klicken Sie im Versionsmanager auf **Neue Version erstellen**.
+2. Geben Sie das **Startdatum** und bei Bedarf das **Enddatum** ein. Sie können sie später bearbeiten.
+3. Fügen Sie bei Bedarf eine **Beschreibung der Version** hinzu.
+4. Aktivieren Sie **Anhänge in die neue Version kopieren**, um die Dateien zu übernehmen.
+5. Klicken Sie auf **Neue Version erstellen**.
 
-Durch Klicken auf **Neue Version erstellen** können Sie eine neue Version erstellen, indem Sie die folgenden Informationen angeben
+<figure><img src="../../.gitbook/assets/contracts-versions-3.png" alt="Das Fenster zum Erstellen einer Version mit den Daten, der Beschreibung und der Option zum Kopieren der Anhänge"><figcaption><p>Das Fenster zum Erstellen einer Version</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien23.png" alt=""><figcaption></figcaption></figure>
+Der Dokumentenname, die Beschreibung, die Organisationseinheit, die Assets, die Unterzeichner und die Nutzer bleiben in der neuen Version erhalten. Die erstellte Version wird zur aktiven Version und zur angezeigten Version.
 
-Es ist wichtig zu beachten, dass der Name des Vertrags, die Beschreibung, die Organisationseinheit, die Assets, Unterzeichner und Nutzer in der neuen Version beibehalten werden. Das Start- und Enddatum des Vertrags wird bei der Versionserstellung abgefragt (Sie können es anschließend ändern), und es ist möglich, dieser neuen Version eine Beschreibung hinzuzufügen.
+## Eine Version anzeigen
 
-Was die Anhänge Ihres Vertrags betrifft, können Sie entscheiden, ob diese in die neue Version übertragen werden sollen oder nicht, indem Sie das Kontrollkästchen _Anhänge in die neue Version kopieren_ aktivieren.
+Öffnen Sie im Versionsmanager das Menü der Version (die drei Punkte) und klicken Sie dann auf **Anzeigen**. Diese Aktion wird für die bereits angezeigte Version nicht angeboten.
 
-Die neue Version wird aus der aktuell angezeigten Version generiert, wenn Sie auf **Neue Version erstellen** klicken. Es ist daher wichtig, sich in der Version zu befinden, von der aus Sie Ihre neue Version erstellen möchten.
+Sie können eine Version, die nicht die aktive Version ist, anzeigen und bearbeiten. Dastra erinnert Sie daran mit einer Meldung im Manager und mit dem Zusatz **Inaktive Version** über den Tabs der Akte. Verwechseln Sie nicht die aktive Version, die eindeutig ist und als Referenz dient, mit der angezeigten Version.
 
-Die neu erstellte Version wird standardmäßig zur aktiven Version Ihres Vertrags (die in der zusammenfassenden Tabellenansicht der Verträge sichtbare Version)
+<figure><img src="../../.gitbook/assets/contracts-versions-4.png" alt="Die Akte eines Dokuments mit einer angezeigten inaktiven Version und dem Zusatz Inaktive Version"><figcaption><p>Version 4 ist die aktive Version, aber Sie können Version 2 anzeigen und bearbeiten</p></figcaption></figure>
 
-### Eine Version anzeigen
+## Eine Version aktiv setzen
 
-Um eine Version anzuzeigen, gehen Sie einfach zum Versionsmanager, klicken Sie auf das 3-Punkte-Menü und wählen Sie _Anzeigen_.
+Eine erstellte Version wird automatisch zur aktiven Version. Um eine andere Version aktiv zu setzen, öffnen Sie im Versionsmanager ihr Menü und klicken auf **Aktivieren**. Diese Aktion wird nur für inaktive Versionen angeboten.
 
-Beachten Sie, dass es durchaus möglich ist, eine Version auf dem Bildschirm anzuzeigen und zu bearbeiten, die nicht die aktive Version Ihres Vertrags ist
+<figure><img src="../../.gitbook/assets/contracts-versions-5.png" alt="Das Menü einer inaktiven Version mit der Aktion Aktivieren"><figcaption><p>Eine Version als aktive Version festlegen</p></figcaption></figure>
 
-Es ist wichtig, zwischen der aktiven Version (einzigartig), die als Referenz für Ihren Vertrag dient und im Versionsmanager durch einen grünen Punkt gekennzeichnet ist, und der aktuell angezeigten Version zu unterscheiden.
+## Die Beschreibung einer Version bearbeiten
 
-Die inaktiven Versionen des Vertrags sind im Versionsmanager durch einen roten Punkt gekennzeichnet.
+Um die Beschreibung einer vorhandenen Version zu ändern, öffnen Sie ihr Menü und klicken auf **Die Versionsbeschreibung bearbeiten**. Bearbeiten Sie den Text im Fenster, das sich öffnet, und klicken Sie dann auf **Version bearbeiten**.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien24 (1).png" alt=""><figcaption><p>Obwohl Version 2 die aktive Version ist, kann ich problemlos Version 1 anzeigen und bearbeiten</p></figcaption></figure>
+## Eine Version löschen
 
-### Eine Version aktivieren
+Öffnen Sie das Menü einer inaktiven Version und klicken Sie auf **Löschen**. Die aktive Version und die aktuell angezeigte Version können Sie nicht löschen: Zeigen Sie eine andere Version an, um diese zu löschen.
 
-Bei der Erstellung einer Version wird diese automatisch zur aktiven und angezeigten Version.
+<figure><img src="../../.gitbook/assets/contracts-versions-6.png" alt="Das Menü einer inaktiven Version mit der Aktion Löschen"><figcaption><p>Eine Version löschen</p></figcaption></figure>
 
-Sie können eine Version manuell aktivieren, indem Sie zum Versionsmanager gehen und auf die Option Aktivieren einer Version klicken.
-
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien25.png" alt=""><figcaption><p>Version 1 des Vertrags als aktive / Hauptversion festlegen.</p></figcaption></figure>
-
-### Löschung
-
-Sie können jederzeit eine inaktive Version des Vertrags löschen, indem Sie im Menü einer Version auf Löschen klicken
-
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien26.png" alt=""><figcaption><p>Version 1 des Vertrags löschen</p></figcaption></figure>
-
-Es ist nicht möglich, die aktive Version des Vertrags zu löschen.
-
-Es ist wichtig zu beachten, dass das Löschen Ihres Vertrags aus der Tabellenansicht des Vertragsmoduls die Löschung der aktiven Version sowie aller inaktiven Versionen des Vertrags zur Folge hat.
+Wird ein Dokument gelöscht, werden seine aktive Version und alle seine inaktiven Versionen gelöscht.

@@ -1,25 +1,37 @@
 # Ihr Trust Center in der Vorschau anzeigen und teilen
 
-### Ihr Trust Center in der Vorschau anzeigen
+Diese Seite erklärt, wie Sie Ihr Trust Center so anzeigen, wie Ihre Besucher es sehen, und wie Sie es per Link teilen oder in Ihre Website einbetten.
 
-Sie können Ihr Trust Center jederzeit in der Vorschau anzeigen, indem Sie auf die Schaltfläche '**Anzeigen**' oben rechts auf der Konfigurationsseite klicken (sofern Ihr Trust Center aktiviert ist).
+## Ihr Trust Center in der Vorschau anzeigen
 
-<figure><img src="../../.gitbook/assets/trust center14.png" alt=""><figcaption></figcaption></figure>
+Klicken Sie oben rechts auf der Bearbeitungsseite auf **Anzeigen**. Das öffentliche Portal öffnet sich in einem neuen Tab.
 
-Wenn Sie Änderungen auf der Konfigurationsseite vornehmen, müssen Sie die Vorschauseite aktualisieren (oder erneut öffnen), um Ihre Änderungen in der Vorschau zu sehen
+Die Schaltfläche ist deaktiviert, solange das Trust Center nicht veröffentlicht ist. Wie Sie es veröffentlichen, erfahren Sie unter [Ihr Trust Center konfigurieren](configuration/README.md#veroffentlichen-und-die-veroffentlichung-abbrechen).
 
-### Ihr Trust Center teilen
+Wenn Sie die Konfiguration ändern, speichern Sie Ihre Änderungen und aktualisieren Sie dann den Tab des Portals, um sie zu sehen.
 
-Nach Abschluss der Konfiguration können Sie die URL Ihres Trust Centers teilen.
+## Ihr Trust Center teilen
 
-Dazu können Sie die URL direkt aus dem Vorschaufenster kopieren oder auf die Option _**Link kopieren**_ im Menü eines Trust Centers klicken
+Sobald die Konfiguration abgeschlossen ist, können Sie die URL Ihres Trust Centers teilen:
 
-<figure><img src="../../.gitbook/assets/trust center15.png" alt=""><figcaption></figcaption></figure>
+* Kopieren Sie die URL des Portal-Tabs;
+* oder klicken Sie oben rechts auf der Bearbeitungsseite auf den Pfeil der Schaltfläche **Speichern** und dann auf **Link kopieren**.
 
-#### Ihr Trust Center in einen iFrame einbetten
+In der Liste der Trust Center befindet sich **Link kopieren** im Menü der Zeile des Trust Centers.
 
-Sie können Ihr Trust Center auch in einen iFrame einbetten. Den iFrame-Code erhalten Sie, indem Sie auf die Option '**integrieren**' im Menü Ihres Trust Centers klicken.
+<figure><img src="../../.gitbook/assets/trust-center-preview-1.png" alt="Menü der Schaltfläche Speichern mit den Optionen Link kopieren, integrieren und Löschen"><figcaption><p>Die Freigabeoptionen im Menü der Schaltfläche Speichern</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/trust center16.png" alt=""><figcaption></figcaption></figure>
+**Link kopieren** und **integrieren** sind nur aktiviert, wenn das Trust Center veröffentlicht ist.
 
-<figure><img src="../../.gitbook/assets/trust center17.png" alt=""><figcaption><p>Das Trust Center im iFrame-Modus einbetten</p></figcaption></figure>
+Die Regeln der Seite [Sicherheit](configuration/security.md), etwa die obligatorische Authentifizierung oder die Filterung von IP-Adressen, gelten auch für Besucher, die den Link verwenden.
+
+## Ihr Trust Center in Ihre Website einbetten
+
+Klicken Sie auf den Pfeil der Schaltfläche **Speichern** und dann auf **integrieren**. Das Fenster **Trust Center integrieren** bietet zwei Anzeigearten, die Sie unter **Anzeigetyp** auswählen:
+
+* **Seite (URL angegeben)**: Das Fenster zeigt die URL des Trust Centers. Kopieren Sie sie und teilen Sie sie oder verweisen Sie mit einem Link Ihrer Website darauf.
+* **In einen Iframe integriert**: Das Fenster zeigt einen Codeausschnitt. Klicken Sie auf **Kopieren** und fügen Sie dann den HTML-Teil an der Stelle Ihrer Seite ein, an der das Trust Center erscheinen soll. Das mitgelieferte Skript passt die Größe des Iframes automatisch an die Größe des Trust Centers an.
+
+<figure><img src="../../.gitbook/assets/trust-center-preview-2.png" alt="Fenster Trust Center integrieren mit dem Anzeigetyp Seite"><figcaption><p>Der Anzeigetyp Seite (URL angegeben)</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/trust-center-preview-3.png" alt="Fenster Trust Center integrieren mit dem Anzeigetyp In einen Iframe integriert und dem Codeausschnitt"><figcaption><p>Der Anzeigetyp In einen Iframe integriert</p></figcaption></figure>

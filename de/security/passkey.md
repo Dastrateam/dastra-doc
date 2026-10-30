@@ -27,8 +27,8 @@ Es gibt zwei Wege.
 ### Über Ihre Sicherheitseinstellungen
 
 * Rufen Sie [https://app.dastra.eu/general-settings/account-security](https://app.dastra.eu/general-settings/account-security) auf
-* Klicken Sie im Bereich **Passkeys** auf **Verwalten**
-* Geben Sie Ihrem Passkey einen Namen (zum Beispiel „Mein Telefon“ oder „MacBook pro“) und klicken Sie auf **Passkey hinzufügen**
+* Klicken Sie in der Karte **Mit einem Passkey anmelden** auf **Meine Passkeys verwalten**
+* Geben Sie auf dem Bildschirm **Verwalten Sie Ihre Passkeys** Ihrem Passkey einen Namen (zum Beispiel „Mein Telefon“ oder „MacBook pro“) und klicken Sie auf **Fügen Sie einen Passkey hinzu**
 * Folgen Sie der Aufforderung Ihres Browsers oder Betriebssystems (Fingerabdruck, Gesicht, PIN, physischer Sicherheitsschlüssel…)
 
 ### Über die Einladung nach der Anmeldung
@@ -37,7 +37,7 @@ Nach einer Anmeldung mit Passwort schlägt Dastra Ihnen vor, einen Passkey zu er
 
 * sofort **einen Passkey erstellen**;
 * **Später** wählen: Die Einladung wird in diesem Browser 90 Tage lang nicht mehr angezeigt;
-* **Nicht mehr fragen** wählen: Die Einladung wird für Ihr Konto dauerhaft deaktiviert (Sie können weiterhin über Ihre Sicherheitseinstellungen einen Passkey erstellen).
+* **Nicht mehr vorschlagen** wählen: Die Einladung wird für Ihr Konto dauerhaft deaktiviert (Sie können weiterhin über Ihre Sicherheitseinstellungen einen Passkey erstellen).
 
 ## Wie melde ich mich mit einem Passkey an?
 
@@ -51,13 +51,13 @@ Die Schaltfläche erscheint nur, wenn Ihr Browser WebAuthn unterstützt **und** 
 
 ## Passkeys verwalten
 
-Im Bereich **Verwalten** (Sicherheitseinstellungen Ihres Kontos) können Sie:
+Auf dem Bildschirm **Verwalten Sie Ihre Passkeys** (erreichbar über **Meine Passkeys verwalten** in den Sicherheitseinstellungen Ihres Kontos) können Sie:
 
-* **mehrere Passkeys registrieren** – das ist empfehlenswert: einer pro Gerät (Telefon, Laptop, physischer Sicherheitsschlüssel) verhindert, dass Sie den Zugang verlieren, wenn Sie ein Gerät verlieren;
-* einen Passkey **umbenennen**;
-* einen nicht mehr genutzten Passkey **löschen** (Gerät verkauft, verloren oder gestohlen).
+* **mehrere Passkeys registrieren**; das ist empfehlenswert: einer pro Gerät (Telefon, Laptop, physischer Sicherheitsschlüssel) verhindert, dass Sie den Zugang verlieren, wenn Sie ein Gerät verlieren;
+* einen Passkey **umbenennen**, mit der Schaltfläche **Registrieren**;
+* einen nicht mehr genutzten Passkey (Gerät verkauft, verloren oder gestohlen) **löschen**: Klicken Sie auf **Löschen** und anschließend auf **Löschung bestätigen**.
 
-Der Bereich **Passkeys** in Ihren Sicherheitseinstellungen zeigt zudem, wann jeder Passkey zuletzt verwendet wurde – so erkennen Sie veraltete Schlüssel schnell.
+Die Karte **Mit einem Passkey anmelden** in Ihren Sicherheitseinstellungen zeigt zudem, wann jeder Passkey zuletzt verwendet wurde (Spalte **Letzte Nutzung**), so erkennen Sie veraltete Schlüssel schnell.
 
 {% hint style="info" %}
 Wenn Sie keinen Namen eingeben, wird der Passkey automatisch nach seinem Erstellungsdatum benannt. Das Hinzufügen und Löschen eines Passkeys wird in den Audit-Logs Ihrer Organisation protokolliert.

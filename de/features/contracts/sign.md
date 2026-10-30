@@ -1,49 +1,56 @@
-# Den Vertrag unterzeichnen
+# Ein Dokument unterzeichnen
 
-Sobald Sie mindestens einen Unterzeichner zu Ihrem Vertrag hinzugefügt haben (siehe [les-signataires.md](signers.md "mention")), können Sie die Unterschrift Ihres Vertrags verwalten. Bitte beachten Sie, dass es **zwingend erforderlich ist, Ihren Vertrag zu speichern, um unterschreiben zu können**. Jede noch nicht gespeicherte Änderung führt zur Sperrung der Unterschrift-Schaltfläche.
+Sobald Sie Ihrem Dokument mindestens einen Unterzeichner hinzugefügt haben (siehe [Unterzeichner](signers.md)), können Sie seine Unterschrift verwalten. Speichern Sie das Dokument zuerst: Solange eine Änderung nicht gespeichert ist, sind die Schaltflächen für die Unterschrift gesperrt.
 
-Sie können Unterschriften manuell erfassen oder unsere [Integration mit Docusign](docusign.md) einrichten, um den gesamten Unterschriftsprozess elektronisch zu verwalten.
+## Manuelle Unterschrift oder Docusign
 
-<figure><img src="../../.gitbook/assets/image-356.png" alt=""><figcaption></figcaption></figure>
+Das Fenster **Signatur hinzufügen** bietet zwei Modi:
 
-Es gibt mehrere Möglichkeiten, auf dieses Unterschriftsmenü zuzugreifen:
+* **Manuelle**: Sie erklären, dass Unterzeichner unterschrieben haben. Wählen Sie die Stakeholder aus, deren Unterschrift Sie erfassen möchten, geben Sie das **Datum der Unterzeichnung** ein und klicken Sie dann auf **Signatur hinzufügen**.
+* **Bitte unterzeichnen Sie mit Docusign®.**: Dastra sendet das Dokument zur elektronischen Unterzeichnung und verfolgt ihren Fortschritt. Dieser Modus setzt die [Integration mit Docusign](docusign.md) voraus.
 
-#### 1) Die Unterschrift jedes Unterzeichners einzeln erfassen, indem Sie auf die Schaltfläche "Unterschrift hinzufügen" eines Unterzeichners klicken
+<figure><img src="../../.gitbook/assets/contracts-sign-1.png" alt="Das Fenster Signatur hinzufügen mit den beiden Modi Manuelle und Docusign"><figcaption><p>Die beiden Signaturmodi</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien15.png" alt=""><figcaption></figcaption></figure>
+Wenn jeder Unterzeichner eine Unterschrift hat, fragt Dastra, ob Sie das Dokument veröffentlichen möchten. Bestätigen Sie, um das Dokument auf den aktiven Status zu setzen.
 
-#### 2) Mehrere Unterschriften gleichzeitig erfassen
+## Das Signaturfenster öffnen
 
-Sie können mehrere Unterzeichner gleichzeitig unterschreiben lassen, indem Sie auf den Pfeil rechts neben der Schaltfläche "Unterzeichner hinzufügen" klicken. Ihnen wird dann angeboten, alle Unterzeichner auszuwählen, für die Sie unterschreiben möchten.
+Das Signaturfenster lässt sich auf drei Wegen öffnen.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien16.png" alt=""><figcaption></figcaption></figure>
+### Für einen Unterzeichner unterschreiben
 
-#### 3) Aus der Tabellenansicht unterschreiben
+Klicken Sie im Tab **Unterzeichner** in der Zeile des betreffenden Unterzeichners auf **Signatur hinzufügen**.
 
-Sie können einen Vertrag direkt aus der zusammenfassenden Tabellenansicht unterschreiben
+### Für mehrere Unterzeichner unterschreiben
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien17.png" alt=""><figcaption></figcaption></figure>
+Klicken Sie auf den Pfeil rechts neben der Schaltfläche **Stakeholder hinzufügen** und dann auf **Für alle unterschreiben**. Anschließend wählen Sie die Unterzeichner aus, für die Sie die Unterschrift erfassen.
 
-### Die Unterschrift-Schaltfläche im Hauptaktionsbereich
+<figure><img src="../../.gitbook/assets/contracts-sign-2.png" alt="Das Menü der Schaltfläche Stakeholder hinzufügen mit der Aktion Für alle unterschreiben"><figcaption><p>Für mehrere Unterzeichner aus dem Tab Unterzeichner unterschreiben</p></figcaption></figure>
 
-Im Hauptaktionsbereich Ihres Vertrags (siehe [structure-dun-contrat.md](structure.md "mention")) finden Sie eine Schaltfläche, die sich auf die Unterschriften bezieht.
+### Aus dem Verzeichnis unterschreiben
 
-Je nach Anzahl der erfassten Unterzeichner und der erhaltenen Unterschriften ändert sich der Status dieser Schaltfläche
+Öffnen Sie im Verzeichnis das Menü der Zeile des Dokuments und klicken Sie dann auf **Signatur hinzufügen**. Diese Aktion ist deaktiviert, wenn alle Unterzeichner bereits unterschrieben haben.
 
-#### 1) Keine Unterzeichner
+<figure><img src="../../.gitbook/assets/contracts-sign-3.png" alt="Das Menü einer Zeile des Verzeichnisses mit der Aktion Signatur hinzufügen"><figcaption><p>Aus dem Verzeichnis unterschreiben</p></figcaption></figure>
 
-Erfassen Sie Unterzeichner, um mit dieser Schaltfläche interagieren zu können
+## Die Signaturschaltfläche des Verzeichnisses
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien18.png" alt=""><figcaption><p>Keine Unterzeichner</p></figcaption></figure>
+Im Menü der Hauptaktionen des Verzeichnisses (siehe [Struktur eines Dokuments](structure.md)) fasst eine Schaltfläche den Stand der Unterschriften zusammen. Ihre Beschriftung ändert sich mit der Anzahl der Unterzeichner und der Anzahl der eingegangenen Unterschriften.
 
-#### 2) Unterschriften fehlen
+### Keine Unterzeichner
 
-Durch Klicken auf diesen Status können Sie die fehlenden Unterschriften erfassen
+Die Schaltfläche ist deaktiviert und zeigt **Keine Unterzeichner** an. Fügen Sie Unterzeichner hinzu, um sie zu verwenden.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-sign-4.png" alt="Die deaktivierte Signaturschaltfläche mit der Beschriftung Keine Unterzeichner"><figcaption><p>Keine Unterzeichner</p></figcaption></figure>
 
-#### 3) Vertrag von allen Unterzeichnern unterschrieben
+### Es fehlen Unterschriften
 
-Durch Klicken auf diesen Status können Sie Unterschriften löschen
+Die Schaltfläche zeigt **Für alle unterschreiben** gefolgt von der Anzahl der eingegangenen Unterschriften im Verhältnis zur Anzahl der Unterzeichner. Klicken Sie darauf, um die fehlenden Unterschriften zu erklären.
 
-<figure><img src="../../.gitbook/assets/image-338.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-sign-5.png" alt="Die Schaltfläche Für alle unterschreiben mit dem Zähler der Unterschriften"><figcaption><p>Es fehlen Unterschriften</p></figcaption></figure>
+
+### Dokument von allen Unterzeichnern unterschrieben
+
+Die Schaltfläche zeigt **Unterzeichnet** an. Beim Daraufzeigen wird daraus **Signatur entfernen**: Nach einer Bestätigung löscht ein Klick die Unterschriften, falls Sie sie erneut einholen müssen.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-6.png" alt="Die Schaltfläche Unterzeichnet"><figcaption><p>Dokument von allen Unterzeichnern unterschrieben</p></figcaption></figure>

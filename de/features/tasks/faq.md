@@ -1,55 +1,62 @@
+---
+description: >-
+  Antworten auf häufig gestellte Fragen zu Aufgaben: Sammelaktionen, Löschen,
+  Arbeitsaufwand und Nachfassen.
+---
+
 # Häufig gestellte Fragen
 
-## Mehrere Aufgaben einem Projekt zuordnen
+## Wie ordne ich mehrere Aufgaben einem Projekt zu?
 
-Um mehrere Aufgaben in einer einzigen Aktion einem Projekt zuzuordnen, müssen Sie die Gruppenaktionen und die Feldbearbeitung verwenden.
+Verwenden Sie die Sammelaktionen und den Feldeditor.
 
-Beginnen Sie damit, die Aufgaben auszuwählen, die Sie einem Projekt zuordnen möchten.
+1. Wählen Sie in der Ansicht **Tabelle** der Seite **Kanban-Board** die Aufgaben aus, die dem Projekt zugeordnet werden sollen.
 
-<figure><img src="../../.gitbook/assets/image-3-1-1-1-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-faq-1.png" alt="Die Ansicht Tabelle mit drei ausgewählten Aufgaben und geöffnetem Menü Bitte wählen Sie eine Sammelaktion aus"><figcaption><p>Das Menü der Sammelaktionen</p></figcaption></figure>
 
-Klicken Sie auf "Gruppenaktionen".
+2. Klicken Sie auf **Bitte wählen Sie eine Sammelaktion aus** und dann auf **Felder bearbeiten**.
+3. Wählen Sie im Fenster das Feld **Projekt** und dann das gewünschte Projekt.
 
-Klicken Sie auf "Felder bearbeiten".
+<figure><img src="../../.gitbook/assets/tasks-faq-2.png" alt="Das Fenster zur Sammelbearbeitung mit dem Feld Projekt und einem ausgewählten Projekt"><figcaption><p>Das Feld Projekt per Sammelaktion bearbeiten</p></figcaption></figure>
 
-Wählen Sie "Projekt" und das gewünschte Projekt aus.&#x20;
+4. Klicken Sie auf **Speichern**.
 
-<figure><img src="../../.gitbook/assets/image-1-1-1-1-1-1-1-1-1-1-1-1-1.png" alt=""><figcaption></figcaption></figure>
+## Wie lösche ich eine Aufgabe?
 
-Bestätigen Sie die Änderungen durch Speichern.
+Es gibt zwei Wege.
 
-## Wie löscht man eine Aufgabe?&#x20;
+### Über den Papierkorb
 
-Um eine Aufgabe zu löschen, müssen Sie sie zunächst archivieren und dann aus dem Archiv löschen.&#x20;
+Dieser Weg ermöglicht es, einen Schritt zurückzugehen, solange die Aufgabe nicht gelöscht ist.
 
-<figure><img src="../../.gitbook/assets/image-4-2.png" alt=""><figcaption><p>Schaltfläche Archivieren</p></figcaption></figure>
+1. Klicken Sie auf die drei Punkte der Aufgabe und dann auf **In den Papierkorb verschieben**.
+2. Öffnen Sie **Filter** und wählen Sie **Papierkorb anzeigen**.
+3. Klicken Sie auf die drei Punkte der Aufgabe, dann auf **Löschen**, und bestätigen Sie.
 
-Zeigen Sie anschließend das Aufgabenarchiv an.
+<figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Das Fenster Filter mit ausgewähltem Kontrollkästchen Papierkorb anzeigen"><figcaption><p>Der Filter Papierkorb anzeigen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image-1-4-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-create-7.png" alt="Das Menü einer Aufgabe im Papierkorb mit den Aktionen Wiederherstellen und Löschen"><figcaption><p>Die Aktionen einer Aufgabe im Papierkorb</p></figcaption></figure>
 
-Und löschen Sie die Aufgaben.
+### Direkt aus der Ansicht Tabelle
 
-<figure><img src="../../.gitbook/assets/image-5-1-2-1.png" alt=""><figcaption></figcaption></figure>
+Wählen Sie die Aufgaben aus, klicken Sie auf **Bitte wählen Sie eine Sammelaktion aus**, dann auf **Löschen**, und bestätigen Sie.
 
-Sie können die Aufgabe auch direkt aus der Tabellenansicht löschen.
+{% hint style="danger" %}
+Das Löschen ist endgültig. Um eine Spur der Aufgabe zu behalten, verschieben Sie sie in den Papierkorb, ohne sie zu löschen.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image-3-2.png" alt=""><figcaption></figcaption></figure>
+## Wie erfasse ich den Arbeitsaufwand einer Aufgabe?
 
-## Arbeitsaufwand für eine Aufgabe angeben
+Sie können bei jeder Aufgabe den geschätzten und den tatsächlichen Arbeitsaufwand eintragen. So messen Sie in Ihrer Auswertung die für Aufgaben aufgewendete Zeit.
 
-Sie können den geschätzten und den tatsächlichen Arbeitsaufwand in Dastra angeben. Dies kann nützlich sein, um in Ihrem Bericht die für die Erledigung der Aufgaben aufgewendete Zeit zu dokumentieren.&#x20;
+Fügen Sie dazu den Aufgaben benutzerdefinierte Felder hinzu: Klicken Sie im Seitenmenü auf **Mandanteneinstellungen**, dann auf **Benutzerdefinierte Felder** und wählen Sie in der Liste links **Aufgabe**. Siehe [Benutzerdefinierte Felder](../general/custom-fields.md).
 
-Um den Arbeitsaufwand hinzuzufügen, müssen Sie benutzerdefinierte Felder zu den Aufgaben hinzufügen.&#x20;
+<figure><img src="../../.gitbook/assets/tasks-faq-3.png" alt="Die Seite Benutzerdefinierte Felder für Aufgaben mit einer Gruppe aus zwei numerischen Feldern für den geschätzten und den tatsächlichen Arbeitsaufwand"><figcaption><p>Eine Gruppe von Feldern für den Arbeitsaufwand</p></figcaption></figure>
 
-&#x20;
+Die Felder erscheinen im Fenster der Aufgabe. Sie können ihre Werte anschließend in eine Arbeitsmappe exportieren oder in den Aufgabenfiltern verwenden.
 
-<figure><img src="../../.gitbook/assets/image-4-4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-faq-4.png" alt="Das Aufgabenfenster mit den Feldern für den geschätzten und den tatsächlichen Arbeitsaufwand"><figcaption><p>Beispiel für Felder zum Arbeitsaufwand</p></figcaption></figure>
 
-Sie können diese Werte anschließend in eine Tabelle exportieren oder über Ihre Aufgabenfilter abrufen.
+## Wie fasse ich bei jemandem zu einer Aufgabe nach?
 
-<figure><img src="../../.gitbook/assets/image-1-1-6.png" alt=""><figcaption><p>Beispiel für Arbeitsaufwand-Felder</p></figcaption></figure>
-
-## Wie erinnert man an eine Aufgabe?
-
-Sie können eine Aufgabenbenachrichtigung erneut an einen Nutzer senden, indem Sie ihn in einer Diskussion erwähnen.&#x20;
+Erwähnen Sie die Person in der Diskussion der Aufgabe: Öffnen Sie die Aufgabe, klicken Sie auf die Schaltfläche **Interne Diskussionen** und tippen Sie **@** gefolgt vom Namen der Person. Die erwähnte Person erhält eine Benachrichtigung. Siehe [Interne Diskussionen](../general/discussions.md).

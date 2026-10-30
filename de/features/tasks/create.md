@@ -1,99 +1,140 @@
 ---
-description: Erfahren Sie, wie Sie Ihre Aufgaben erstellen und bearbeiten.
+description: >-
+  Erstellen Sie eine Aufgabe des Maßnahmenplans, weisen Sie sie zu, bearbeiten
+  Sie sie, verschieben Sie sie in den Papierkorb oder löschen Sie sie.
 ---
 
 # Eine Aufgabe erstellen oder bearbeiten
 
-## Einleitung
+In Dastra ist eine Aufgabe eine zu erledigende Arbeit. Sie hat eine zuständige Person, ein Fälligkeitsdatum und einen Verfolgungsschritt. Diese Seite erklärt, wie Sie eine Aufgabe erstellen, zuweisen, bearbeiten und löschen.
 
-Das Erstellen und Verfolgen einer Datenschutzaufgabe war noch nie so einfach wie mit dem Planungsmodul von Dastra.
+## Eine Aufgabe erstellen
 
-In Dastra entspricht eine Aufgabe einer Arbeit, die ausgeführt werden muss.
+Sie können eine Aufgabe auf drei Wegen erstellen:
 
-## Erstellung einer Aufgabe
+* auf der Seite **Kanban-Board** des Planungsmoduls;
+* im Datensatz eines anderen Elements der Anwendung;
+* aus einer E-Mail, die an einer Sammeladresse eingeht.
 
-Um eine Aufgabe zu erstellen, haben Sie zwei Möglichkeiten:
+### Im Planungsmodul
 
-* Sie erstellen eine Aufgabe direkt im Kanban-Board
-* Sie erstellen eine Aufgabe direkt in einem anderen Modul der Anwendung (Verarbeitungsverzeichnis, Datenschutzvorfall, Betroffenenrechte, Audits, Cookies)
+1. Klicken Sie im Seitenmenü auf **Aufgaben** und wählen Sie im Untermenü **Kanban-Board**.
+2. Klicken Sie auf **Aufgabe erstellen**. Rechts auf dem Bildschirm öffnet sich das Fenster **Aufgabe erstellen**.
 
-#### Eine Aufgabe im Kanban-Board erstellen
+<figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="Die Symbolleiste der Seite Kanban-Board mit der Schaltfläche Aufgabe erstellen und ihrem geöffneten Dropdown-Menü"><figcaption><p>Die Schaltfläche Aufgabe erstellen und die Aktionen ihres Menüs</p></figcaption></figure>
 
-Klicken Sie auf der Hauptseite des Moduls "[Kanban-Board](https://app.dastra.eu/workspace/4757/planification/tasks)" auf "**Aufgabe erstellen**". Ein neues Fenster "Neue Aufgabe" erscheint rechts auf dem Bildschirm, in dem Sie die gewünschte Aufgabe beschreiben können. Klicken Sie nach der Beschreibung auf "Speichern".
+3. Füllen Sie den **Aufgabentitel** (höchstens 120 Zeichen) und die **Organisationseinheit** aus, die beide erforderlich sind. Ergänzen Sie die übrigen Felder nach Bedarf.
+4. Klicken Sie auf **Speichern**. Um mehrere Aufgaben hintereinander zu erstellen, klicken Sie auf **Speichern und neu anlegen**.
 
-![Schaltfläche zur Erstellung einer neuen Aufgabe](../../.gitbook/assets/kanban.png)
+<figure><img src="../../.gitbook/assets/tasks-create-2.png" alt="Das Fenster Aufgabe erstellen mit Titel, Organisationseinheit, Zuständigkeit, Datumsangaben und verknüpften Elementen"><figcaption><p>Das Fenster zum Erstellen einer Aufgabe</p></figcaption></figure>
 
-![Oberfläche zur Dokumentation der Aufgabe](<../../.gitbook/assets/kanban1 (1).png>)
+Das Fenster enthält:
+
+* **Organisationseinheit**: vorausgefüllt mit der im Mandanten ausgewählten Einheit oder mit der ersten verfügbaren Einheit;
+* **Projekt**, **Sprint** und **Tags**, um die Aufgabe einzuordnen;
+* **Zugewiesen an**, **Startdatum** und **Fälligkeitsdatum**;
+* **Priorität** und **Interne Referenz** im ausklappbaren Teil des Fensters;
+* die benutzerdefinierten Felder, die Sie den Aufgaben hinzugefügt haben.
+
+### Eine Aufgabe mit Elementen verknüpfen
+
+Eine Aufgabe kann mit einem oder mehreren Elementen der Anwendung verknüpft werden. Klicken Sie im Fenster auf **Ein Element verknüpfen**, wählen Sie die Art des Elements und dann ein oder mehrere Elemente dieser Art. Die verknüpften Elemente erscheinen unter **Verwandte Elemente**.
+
+Folgende Arten stehen zur Verfügung:
+
+* **Datenverarbeitung**;
+* **Anfrage**;
+* **Verletzung des Datenschutzes**;
+* **Einreichung des Fragebogens**;
+* **Stakeholder**;
+* **Asset**;
+* **Datensatz**;
+* **Risikobewertung**;
+* **Kontrollpunkt**;
+* **Sicherheitsmaßnahme**;
+* **KI-System**;
+* **Vertrag**;
+* **Daten**;
+* **Betroffenenkategorie**;
+* **Compliance-Projekt**;
+* **Compliance-Audit**.
+
+Die Aufgabe finden Sie anschließend im Datensatz jedes dieser Elemente (siehe unten). Der Filter **In Verbindung mit** der Seite **Kanban-Board** listet die Aufgaben auf, die mit einer bestimmten Art von Element verknüpft sind.
+
+### Im Datensatz eines anderen Elements
+
+Die Datensätze von Verarbeitungstätigkeiten, Betroffenenanfragen, Datenschutzverletzungen, Stakeholdern, Assets, Datensätzen, Sicherheitsmaßnahmen, Verträgen, KI-Systemen, Kontrollpunkten und Risikobewertungen haben eine Aufgabenschaltfläche: ein Listensymbol mit Häkchen und der Anzahl der verknüpften Aufgaben.
+
+1. Öffnen Sie den Datensatz des Elements.
+2. Klicken Sie auf die Aufgabenschaltfläche. Das Fenster **Zugehörige Aufgaben** listet die mit diesem Element verknüpften Aufgaben auf, mit Filtern nach Schritt und nach Tag.
+3. Klicken Sie auf **Aufgabe erstellen**. Die Aufgabe wird mit dem Element verknüpft und übernimmt dessen Organisationseinheit.
+
+<figure><img src="../../.gitbook/assets/tasks-create-3.png" alt="Der Datensatz einer Verarbeitungstätigkeit mit geöffnetem Fenster Zugehörige Aufgaben"><figcaption><p>Das Fenster Zugehörige Aufgaben im Datensatz einer Verarbeitungstätigkeit</p></figcaption></figure>
+
+Die Schaltfläche **In der Planung anzeigen** des Fensters öffnet die Seite **Kanban-Board** mit den Aufgaben des Elements.
 
 {% hint style="info" %}
-Jede Aufgabe in Dastra kann einem in der Anwendung vorhandenen Element zugeordnet werden, zum Beispiel:
-
-* Einer Verarbeitung
-* Einer Anwendung
-* Einem Akteur / Auftragsverarbeiter
-* Einem Datensatz
-* Einer Sicherheitsmaßnahme
-* Einem Audit / einer DSFA
-* Einer Betroffenenanfrage
-* Einem Vorfall
-
-Sobald diese Aufgaben erstellt und zugeordnet sind, können Sie sie direkt im Datenblatt jedes dieser Elemente unter dem Reiter "Kanban-Board" wiederfinden.
+Ein Maßnahmenplan kann auch aus einem validierten Fragebogen erzeugt werden. Siehe [Fragebögen überwachen](../questionnaires/monitor.md).
 {% endhint %}
 
-#### Eine Aufgabe direkt aus einem anderen Dastra-Modul erstellen
+### Aus einer E-Mail
 
-Dastra ermöglicht es Ihnen, eine Aufgabe genau dann zu erstellen, wenn Sie sie benötigen, direkt innerhalb der operativen Prozesse:
+Dastra kann jede an einer Sammeladresse eingehende E-Mail samt Anhängen in eine Aufgabe umwandeln. Um die Adresse einzurichten, klicken Sie auf den Pfeil der Schaltfläche **Aufgabe erstellen** und dann auf **E-Mails in Aufgaben umwandeln**. Die Einrichtungsseite öffnet sich unter **Mandanteneinstellungen** > **Integrationen**. Siehe [E-Mail-Adressen für Datenerfassung](../settings/mailboxes.md). Dieser Eintrag erfordert die Berechtigung zum Verwalten von Integrationen.
 
-* Bearbeitung einer Datenverarbeitung
+### Unteraufgaben erstellen
 
-![An Datenverarbeitungen angehängte Aufgaben](../../.gitbook/assets/image-26.png)
+Eine Aufgabe kann eine Liste von Unteraufgaben enthalten. Speichern Sie zuerst die Aufgabe: Die Schaltfläche **Eine Unteraufgabe hinzufügen** bleibt inaktiv, bis die Aufgabe existiert. Bearbeiten Sie die Aufgabe anschließend und klicken Sie auf **Eine Unteraufgabe hinzufügen**.
 
-* Verwaltung einer Betroffenenanfrage
+<figure><img src="../../.gitbook/assets/tasks-create-4.png" alt="Eine geöffnete Aufgabe mit ihrer Liste von Unteraufgaben und der Schaltfläche Eine Unteraufgabe hinzufügen"><figcaption><p>Die Unteraufgaben einer Aufgabe</p></figcaption></figure>
 
-![An Betroffenenanfragen angehängte Aufgaben](../../.gitbook/assets/image-27.png)
-
-* Datenschutzvorfall
-
-![An eine Datenschutzvorfallmeldung angehängte Aufgaben](../../.gitbook/assets/image-28-1.png)
-
-* Generierung von Aufgaben aus einem Audit
-
-{% hint style="info" %}
-Ein Maßnahmenplan kann auch automatisch nach Durchführung eines Audits generiert werden. Weitere Informationen finden Sie im Abschnitt "Einen Audit planen".
-{% endhint %}
-
-#### Erstellung von Unteraufgaben
-
-Es ist möglich, in Dastra eine Liste von Unteraufgaben zu jeder Aufgabe zu erstellen. Bearbeiten Sie dazu eine Aufgabe und klicken Sie auf die Schaltfläche "Unteraufgabe hinzufügen".
-
-<figure><img src="../../.gitbook/assets/kanban2.png" alt=""><figcaption></figcaption></figure>
-
-![Schaltfläche "Unteraufgabe hinzufügen"](../../.gitbook/assets/kanban3.png)
+Sind alle Unteraufgaben geschlossen, bietet Dastra an, die Hauptaufgabe zu schließen.
 
 ## Eine Aufgabe zuweisen
 
-Bei der Erstellung der Aufgabe haben Sie die Möglichkeit, diese Aufgabe einem Dastra-Nutzer zuzuweisen, entweder als "Inhaber" oder als "Mitwirkender".
+Zwei Felder bezeichnen die beteiligten Personen:
 
-Diese Personen werden bei jeder Änderung einer Aufgabe per E-Mail benachrichtigt.
+* **Zugewiesen an**: die Person, die die Aufgabe ausführt. Beim Erstellen der Aufgabe sind standardmäßig Sie das;
+* **Inhaber**: die für die Aufgabe verantwortliche Person. Sie wird benachrichtigt, wenn sich der Schritt ändert.
+
+Das Feld **Inhaber** befindet sich im ausklappbaren Teil des Fensters. Jeder Nutzer erhält Benachrichtigungen entsprechend seinen Einstellungen: siehe [Benachrichtigungen](../settings/notifications.md). Um bei jemandem nachzufassen, erwähnen Sie die Person in der Diskussion der Aufgabe (siehe die [FAQ](faq.md)).
 
 ## Eine Aufgabe bearbeiten
 
-Um eine Aufgabe zu bearbeiten, klicken Sie einfach auf die drei Punkte rechts neben einer Aufgabe und wählen Sie "Bearbeiten".
+Um eine Aufgabe zu bearbeiten, klicken Sie sie an: Das Fenster **Aufgabe bearbeiten** öffnet sich. In der Ansicht **Tabelle** können Sie auch auf die drei Punkte am Zeilenende und dann auf **Bearbeiten** klicken.
 
-![Dropdown-Menü einer Aufgabe](../../.gitbook/assets/kanban2.png)
+<figure><img src="../../.gitbook/assets/tasks-create-5.png" alt="Die Ansicht Tabelle mit geöffnetem Dreipunktmenü einer Aufgabe"><figcaption><p>Das Menü einer Aufgabe in der Ansicht Tabelle</p></figcaption></figure>
+
+Dieses Menü bietet außerdem **Link kopieren**, **Duplizieren**, **Zusammenführen** und **In den Papierkorb verschieben**. **Duplizieren** kopiert die Aufgabe und ihre Unteraufgaben: Der Titel der Kopie endet mit " - copy".
 
 {% hint style="info" %}
-Um den Status einer Aufgabe noch einfacher zu ändern, können Sie diese per "Drag-and-Drop" aus dem Reiter "Tabelle" verschieben, der eine Verteilung der Aufgaben auf 4 Statusspalten ermöglicht: "Neu", "Zusätzliche Informationen erforderlich", "In Bearbeitung", "Erledigt". Sie können die Statusspalten auch anpassen.
+Um den Schritt einer Aufgabe zu ändern, ziehen Sie sie in der Ansicht **Spalten** per Drag-and-drop. Die Standardschritte sind **Neu**, **Informationen anfordern**, **In Bearbeitung** und **Fait**. Um sie zu ändern, klicken Sie auf den Pfeil der Schaltfläche **Aufgabe erstellen** und dann auf **Spalten konfigurieren**: siehe [Den Aufgaben-Workflow anpassen](workflow.md).
 {% endhint %}
 
-## Eine Aufgabe archivieren oder löschen
+### Eine Aufgabe an Jira senden
 
-In Dastra ist es möglich, eine bereits gelöschte Aufgabe über das Filter-Menü "Papierkorb anzeigen" in der Aufgabenübersicht sich anzeigen zu lassen. Hier kann es auch ggf. wiederhergestellt werden. Dies ist über die drei Punkte daneben möglich. Oder sie kann endgültig gelöscht werden.
+Wenn die Jira-Integration für Aufgaben aktiv ist, bietet das Aktionsmenü der Aufgabe den Eintrag **Send to Jira**. Siehe [Jira](../integrations/jira.md).
 
-<figure><img src="../../.gitbook/assets/kanban4.png" alt=""><figcaption></figcaption></figure>
+## Eine Aufgabe in den Papierkorb verschieben oder löschen
 
-<figure><img src="../../.gitbook/assets/kanban5.png" alt=""><figcaption></figcaption></figure>
+Eine Aufgabe im Papierkorb ist nicht gelöscht: Sie trägt den Vermerk **Im Papierkorb** und verschwindet aus den Listen. Sie können sie jederzeit wiederherstellen.
+
+1. Klicken Sie im Dreipunktmenü der Aufgabe oder im Aktionsmenü des Fensters auf **In den Papierkorb verschieben** und bestätigen Sie.
+2. Um die Aufgaben des Papierkorbs zu finden, öffnen Sie **Filter** und wählen Sie **Papierkorb anzeigen**.
+
+<figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Das Fenster Filter mit ausgewähltem Kontrollkästchen Papierkorb anzeigen"><figcaption><p>Der Filter Papierkorb anzeigen</p></figcaption></figure>
+
+3. Klicken Sie im Menü der Aufgabe auf **Wiederherstellen**, um sie in die Liste zurückzulegen, oder auf **Löschen** und bestätigen Sie, um sie zu löschen.
+
+<figure><img src="../../.gitbook/assets/tasks-create-7.png" alt="Das Menü einer Aufgabe im Papierkorb mit den Aktionen Wiederherstellen und Löschen"><figcaption><p>Die Aktionen einer Aufgabe im Papierkorb</p></figcaption></figure>
+
+{% hint style="danger" %}
+Das Löschen einer Aufgabe ist endgültig. Ihre Unteraufgaben werden mit ihr gelöscht.
+{% endhint %}
+
+Um Aufgaben zu löschen, ohne den Papierkorb zu nutzen, siehe die [FAQ](faq.md).
+
+## Weiterführende Informationen
 
 {% content-ref url="projects.md" %}
-[creer-ou-modifier-un-projet-ou-une-iteration.md](projects.md)
+[Ein Projekt oder einen Sprint erstellen oder bearbeiten](projects.md)
 {% endcontent-ref %}

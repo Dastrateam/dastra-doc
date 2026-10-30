@@ -1,26 +1,31 @@
 ---
-description: Erfahren Sie, wie Sie Trust Center erstellen und konfigurieren
+description: >-
+  Erfahren Sie, wie Sie ein Trust Center erstellen und konfigurieren, das
+  öffentliche Transparenzportal Ihrer Organisation.
 ---
 
 # Trust Center
 
-Das **Trust Center** ermöglicht es Organisationen, ein vollständig konfigurierbares **öffentliches Webportal** zu erstellen und anzupassen, das für die Verwaltung der Compliance im Bereich des Schutzes personenbezogener Daten konzipiert ist. Das Trust Center bietet eine einfache und intuitive Lösung zur Einrichtung eines Transparenz- und Interaktionsbereichs mit den Stakeholdern der Organisation, seien es Kunden, Auftragsverarbeiter oder Mitarbeiter.
+Das Trust Center ist ein öffentliches Webportal, das Sie konfigurieren, um die Einhaltung der Vorschriften zum Schutz personenbezogener Daten in Ihrer Organisation darzustellen. Es richtet sich an Ihre Kunden, Auftragsverarbeiter und Mitarbeitenden.
 
-Das Trust Center bietet eine modulare und flexible Konfiguration, mit der Sie die gewünschten Funktionen aus den folgenden Optionen auswählen und aktivieren können:
+Sie wählen die anzuzeigenden Funktionen aus der folgenden Liste:
 
-* [Anpassbare Startseite](configuration/home.md) (pflichtfeld)
-* [Fragebögen](configuration/questionnaires.md) (optional - erfordert die Funktion [Fragebögen](../questionnaires/README.md))
+* [Startseite](configuration/home.md) (optional)
+* [Fragebögen](configuration/questionnaires.md) (optional, erfordert die Funktion [Fragebögen](../questionnaires/README.md))
 * [Dokumente](configuration/attachments.md) (optional)
-* [Betroffenenanfragen](configuration/data-subject-requests.md) (optional - erfordert die Funktion [Betroffenenanfragen](../requests/README.md))
+* [Betroffenenanfragen](configuration/data-subject-requests.md) (optional, erfordert die Funktion [Betroffenenanfragen](../requests/README.md))
 * [Organigramm](configuration/org-chart.md) (optional)
-* [Verarbeitungsverzeichnis](configuration/ropa.md) (optional - erfordert die Funktion [Verarbeitungsverzeichnis](../ropa/README.md))
+* [Kontakte](configuration/contacts.md) (optional)
+* [Verarbeitungsverzeichnis](configuration/ropa.md) (optional, erfordert die Funktion [Verarbeitungsverzeichnis](../ropa/README.md))
+* [KI-Systeme](configuration/ai-systems.md) (optional, erfordert das Modul KI-Systeme in Ihrem Abonnement)
+* [Das Compliance-Projekt anzeigen](configuration/README.md#das-compliance-projekt-anzeigen) (optional, erfordert die Funktion [Compliance](../compliance/README.md))
 
-### Zugang zur Funktion
+Die Startseite ist optional. Auf dieser Seite werden die Schnellzugriff-Links, die Willkommensnachricht und der Bereich Kontakte angezeigt: Ohne Startseite erscheinen sie nicht im Portal.
 
-Um auf die Funktion zugreifen zu können, muss Ihr Abonnement unsere Funktion [.](README.md "mention") enthalten.
+## Zugang zur Funktion
 
-Sie greifen auf die Trust Center über die seitliche Navigationsleiste der Anwendung zu
+Ihr Abonnement muss die Funktion Trust Center enthalten.
 
-<figure><img src="../../.gitbook/assets/trust center.png" alt=""><figcaption></figcaption></figure>
+Sie greifen auf die Trust Center über den Eintrag **Trust Center** in der seitlichen Navigationsleiste der Anwendung zu.
 
-<figure><img src="../../.gitbook/assets/trust center2.png" alt=""><figcaption><p>Vorschau eines Demo-Trust Centers mit allen aktivierten Modulen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/trust-center-overview-1.png" alt="Öffentliches Portal eines Trust Centers mit seinen Tabs"><figcaption><p>Vorschau eines Trust Centers mit allen aktivierten Funktionen</p></figcaption></figure>

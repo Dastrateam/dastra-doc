@@ -1,13 +1,17 @@
 # Unterzeichner
 
 {% hint style="info" %}
-Der Unterzeichner eines Vertrags ist in der Regel eine natürliche oder juristische Person, die **als Akteur in Dastra referenziert ist**.
+Der Unterzeichner eines Dokuments ist in der Regel eine natürliche oder juristische Person, die **in Dastra als Stakeholder geführt wird**.
 {% endhint %}
 
-Geben Sie die am Vertrag beteiligten Parteien an, indem Sie die erforderlichen Unterzeichner benennen.
+Legen Sie im Tab **Unterzeichner** die Parteien fest, die das Dokument unterzeichnen müssen.
 
-Ein Unterzeichner wird durch einen Akteur aus Ihrem [referentials](../mapping/repositories/README.md "mention") dargestellt. Ebenso wie bei den Assets finden Sie auf der Detailseite der Akteure (Unterzeichner), die mit Ihrem Vertrag verknüpft sind, die Details aller Verträge, mit denen sie verknüpft sind.
+Ein Unterzeichner ist ein Stakeholder aus Ihren Referenzen der [Datenkartierung](../mapping/README.md). Um einen hinzuzufügen, klicken Sie auf **Stakeholder hinzufügen**, wählen den Stakeholder aus und klicken dann auf **Hinzufügen**. Existiert der Stakeholder noch nicht und haben Sie Schreibrechte auf die Referenzen, können Sie ihn im selben Fenster erstellen. Der Tab zeigt in Klammern die Anzahl der Unterzeichner.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien13.png" alt=""><figcaption><p>Unterzeichner erfassen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-signers-1.png" alt="Der Tab Unterzeichner mit Unterzeichnern, deren Unterschrift erfasst, ausstehend oder nicht vorhanden ist"><figcaption><p>Die Unterzeichner eines Dokuments</p></figcaption></figure>
 
-Sie können die Unterschrift jedes Unterzeichners unabhängig verwalten (siehe Abschnitt [signer-le-contrat.md](sign.md "mention"))
+Ist der ausgewählte Stakeholder mit Assets verknüpft, bietet Dastra an, diese automatisch mit dem Dokument zu verknüpfen: Aktivieren Sie die Assets, die hinzugefügt werden sollen.
+
+Jeder Unterzeichner zeigt seine E-Mail-Adresse an oder, wenn sie fehlt, den Hinweis **Die Stakeholder verfügen über keine E-Mail-Adresse.**, sowie den Stand seiner Unterschrift: **Keine Signatur erforderlich**, **Unterschrift ausstehend** oder **Unterzeichnet am** gefolgt vom Datum. Sie können die Unterschrift jedes Unterzeichners unabhängig verwalten (siehe [Ein Dokument unterzeichnen](sign.md)).
+
+Wie bei den Assets listet die Akte jedes Stakeholders die Dokumente auf, mit denen er verknüpft ist.

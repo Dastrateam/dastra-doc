@@ -1,21 +1,39 @@
-# Dokumente
+# Details und Anhänge
 
-### Die Anhänge
+Der Tab **Details** der Akte eines Dokuments vereint die Informationen zum Dokument und seine Anhänge. Die Dateivorschau bleibt links sichtbar, egal welcher Tab geöffnet ist.
 
-Im Abschnitt **Details** können Sie die relevanten Dokumente hinzufügen, die Ihren Vertrag ausmachen. Dies kann den Vertrag selbst, Vereinbarungen, Anlagen oder andere mit dem Vertrag verbundene Dateien umfassen. Um die Dokumentenvorschau nutzen zu können, müssen .pdf-Dateien oder Bilder gespeichert werden.
+## Anhänge
 
-Die Dokumentenspeicherung ist mit unserem Modul [gestion-de-documents-ged](../files/README.md "mention") verknüpft. Sie können auch unsere Cloud-Speicher-Integration installieren, mit der Sie Dokumente aus Ihrem eigenen OneDrive oder Google Drive verknüpfen können.
+Fügen Sie Ihrem Dokument die Dateien hinzu, aus denen es besteht: den Vertrag selbst, Änderungen, Anlagen oder jede andere zugehörige Datei. Damit die Vorschau angezeigt wird, speichern Sie PDF-Dateien oder Bilder.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien10.png" alt=""><figcaption></figcaption></figure>
+Legen Sie die Dateien in der Ablagefläche ab oder klicken Sie auf **Datei-Explorer**, um sie auszuwählen. Wenn Sie die [Integration von OneDrive und SharePoint bzw. Google Drive](../settings/cloud-storage.md) installiert haben, können Sie über eine Quellenauswahl Dateien aus Ihrem eigenen Speicher anhängen.
 
-Auf der linken Seite finden Sie die Dokumentenvorschau und auf der rechten Seite eine Liste aller mit Ihrem Vertrag verknüpften Dokumente. Um ein anderes Dokument in der Vorschau anzuzeigen, klicken Sie einfach auf seinen Namen in der rechten Liste oder navigieren Sie mit den linken und rechten Pfeiltasten Ihrer Tastatur (oder klicken Sie auf die Pfeile auf dem Bildschirm). Das aktive Dokument, das gerade in der Vorschau angezeigt wird, ist in der Dokumentenliste blau hervorgehoben.\
-\
-Das Vorschaufenster bleibt aktiv, unabhängig davon, in welcher Registerkarte des Vertrags Sie sich befinden — nützlich, um sich auf das Dokument zu beziehen, während Sie beispielsweise die Unterzeichner oder Assets ausfüllen.
+Die Speicherung der Anhänge ist mit dem Modul [Dokumentenmanagement (DMS)](../files/README.md) von Dastra verknüpft. Nutzer, die Anhänge verwalten, können eine Datei mit **Wechseln Sie zum gemeinsamen Dateimanager (GED)** in den gemeinsamen Dateimanager verschieben und sie anschließend im Dokument mit **Im Dateimanager anzeigen** öffnen.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien11.png" alt=""><figcaption><p>Die Vorschau eines Dokuments</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-documents-1.png" alt="Der Tab Details eines Dokuments mit der Ablagefläche, der Quellenauswahl und der Schaltfläche Datei-Explorer"><figcaption><p>Anhänge zu einem Dokument hinzufügen</p></figcaption></figure>
 
-### Weitere Details
+## Ein Dokument in der Vorschau anzeigen
 
-Außerdem können Sie in diesem Abschnitt auch die dem Vertrag zugeordnete Organisationseinheit ändern, Tags hinzufügen, die Start- und Enddaten des Vertrags angeben und eine Beschreibung sowie eine interne Referenz hinzufügen.
+Die Vorschau befindet sich links, die Liste der Anhänge rechts. Um die Datei zu wechseln, klicken Sie in der Liste auf ihren Namen, auf die Pfeile auf dem Bildschirm oder verwenden die Pfeiltasten links und rechts Ihrer Tastatur. Die angezeigte Datei ist in der Liste blau hervorgehoben. Sie können die angezeigte Datei auch umbenennen, indem Sie über der Vorschau auf ihren Namen klicken.
 
-Das Enddatum des Vertrags ist wertvoll für die Steuerung Ihrer Verträge, da Sie in der Registerkarte Statistiken alle Verträge finden, die ihre Frist überschritten haben.
+Da die Vorschau in den Tabs **Unterzeichner**, **Assets** und **Nutzer** sichtbar bleibt, können Sie beim Ausfüllen dieser Tabs auf das Dokument zurückgreifen.
+
+<figure><img src="../../.gitbook/assets/contracts-documents-2.png" alt="Die Vorschau eines Dokuments links und der Tab Details rechts"><figcaption><p>Ein Dokument in der Vorschau anzeigen</p></figcaption></figure>
+
+## Informationen zum Dokument
+
+Der Tab **Details** enthält die folgenden Felder:
+
+* **Organisationseinheit**: die Organisationseinheit, der das Dokument zugeordnet ist.
+* **Tags**.
+* **Startdatum** und **Enddatum** (die Frist).
+* **Beschreibung** und **Interne Referenz**.
+* Die benutzerdefinierten Felder, die in Ihrem Mandanten für Verträge definiert sind.
+
+Die Frist steuert die Nachverfolgung Ihrer Termine: Ein Dokument, dessen Frist überschritten ist, erscheint in der Kennzahl **Verspätet** auf der Seite **Statistiken** (siehe [Verträge und Richtlinien](README.md#statistiken)), und im Tab wird eine Warnung angezeigt.
+
+## Zugehörige Compliance-Tests
+
+Wird ein Dokument als **Nachweis** für einen Test im Modul Compliance verwendet, ist diese Verknüpfung direkt im Dokument sichtbar. Ein Symbol zeigt die **Anzahl der verknüpften Compliance-Tests** an. Ein Klick darauf öffnet die Liste dieser Tests. Ein Klick auf einen Test zeigt seine Details an, ohne die Seite des Dokuments zu verlassen.
+
+<figure><img src="../../.gitbook/assets/conformite-liens-preuve-contrats.png" alt="Symbol mit der Anzahl der Compliance-Tests, die mit einem Vertrag verknüpft sind"><figcaption><p>Das Symbol zeigt die Anzahl der verknüpften Compliance-Tests an. Ein Klick öffnet die Liste und dann die Details des Tests, ohne den Vertrag zu verlassen</p></figcaption></figure>
