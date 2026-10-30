@@ -1,105 +1,161 @@
 ---
-beschrijving: Leer meer over de periode gedurende welke de persoonsgegevens zullen worden opgeslagen.
+description: >-
+  Ontdek wat bewaartermijnen zijn.
 ---
 
-# De periode gedurende welke de persoonsgegevens zullen worden opgeslagen
+# Bewaartermijn van gegevens
 
-## Definitie van bewaartermijnen
+## Definitie
 
-Bewaartermijnen zijn een van de grondbeginselen van de bescherming van persoonsgegevens.
+Bewaartermijnen zijn een van de grondbeginselen van de bescherming van persoonsgegevens. Ze vloeien voort uit het beginsel van opslagbeperking (artikel 5, lid 1, onder e), van de AVG) en dragen bij aan het recht op wissing.
 
-Het principe van beperkte bewaartermijnen verankert het recht van individuen om vergeten te worden.
+Belangrijkste artikelen:
 
-Een verplichting die voortvloeit uit artikel 5 van de AVG.
+* artikel 5 van de AVG (opslagbeperking);
+* artikel 30 (documentatie in het verwerkingsregister);
+* artikelen 13 en 14 (informatie aan betrokkenen).
 
+Concreet moet u voor elke verwerkingsactiviteit bepalen:
 
-* **Een vorm die identificatie mogelijk maakt**
-  * Persoonsgegevens mogen binnen bepaalde grenzen in direct of indirect identificerende vorm en voor onbepaalde tijd worden bewaard door organisaties.
-**Noodzakelijk voor de doeleinden** Gegevens moeten voor een minimumperiode worden verwerkt.
-  * Gegevensverwerking moet gedurende een beperkte periode plaatsvinden, op een wijze die in overeenstemming is met het nagestreefde doel (met andere woorden: het doel).
+* een vaste termijn (of een reeks termijnen per fase),
+* en/of een objectief criterium om die te berekenen (bijvoorbeeld "+3 jaar na het laatste actieve contact").
 
-Een **verplichting om te documenteren** in het register van de verwerkingsactiviteiten voorzien in artikel 30 van de GDPR
-
-Een **verplichting om informatie** te verstrekken aan betrokkenen zoals bepaald in de artikelen 13 en 14 van de AVG
-
-Het is daarom noodzakelijk om te bepalen:
-
-* Een vaste bewaartermijn, overeenkomstig de levenscyclus van de gegevens.
-* Een objectief criterium om deze periode te bepalen.
+*
 
 ## De levenscyclus van gegevens
 
-De levenscyclus van gegevens kan worden onderverdeeld in drie fasen.
+De bewaring is georganiseerd in opeenvolgende fasen. Deze levenscyclus bepaalt uw bewaarregels.
+
+| Fase                                | Doel                              | Toegang                          | Voorbeeld van een termijn                    |
+| ----------------------------------- | --------------------------------- | -------------------------------- | -------------------------------------------- |
+| **Actief gebruik**                  | Operationeel gebruik              | Breed (zakelijk team)            | Duur van het contract + uitvoering           |
+| **Tussentijdse archivering**        | Bewijs / verdediging van een recht | Beperkt (need-to-know)           | Wettelijke verjaringstermijn (bijv. 5 jaar)  |
+| **Definitieve archivering** (publiek) | Historisch belang               | Zeer beperkt                     | Overdracht / selectie door de archiefdiensten |
+| **Anonimisering**                   | Statistieken / onderzoek          | Niet-identificerende gegevens    | Onbeperkt als echt onomkeerbaar              |
+| **Verwijdering**                    | Einde van de levenscyclus         | Niet van toepassing              | Aan het einde van de fasen                   |
 
 {% hint style="info" %}
-De gegevensbeschermingsautoriteit gids over bewaartermijnen geeft duidelijkheid over de documentatie die moet worden verstrekt over bewaartermijnen:
-
-* Het **register** waarin de verwerkingsactiviteiten en de bijbehorende bewaartermijnen moeten worden opgenomen;
-* Een **referentiedocument** waarin, bijvoorbeeld in de vorm van een tabel, de bewaartermijnen voor de verschillende fasen in de levensduur van de gegevens voor elke Verwerking zijn gecentraliseerd (de SIAF-aanbevelingen kunnen worden opgenomen in de interne tabellen voor archiefbeheer van de organisatie);
-* De **verschillende ondernomen acties**, Begrepen of deze acties nog lopen;
-* de **schriftelijke instructies** aan de subcontractant met betrekking tot de duur.
-* De **procedures voor het archiveren van gegevens**, indien van toepassing, en in het bijzonder in het geval van verplichte deponering voor de permanente archivering van openbare documenten (deponeringsbewijs, enz.);
-* De **procedure voor het vernietigen van gegevens**, indien van toepassing (verwijderingsformulier, enz.);
-* Het **beleid voor opruimbeheer** en de **opruimmatrix** in geval van archivering, enz.
+De richtsnoeren van uw nationale gegevensbeschermingsautoriteit over bewaartermijnen gaan doorgaans over: het bijhouden van registers, referentiedocumenten, procedures voor archivering en vernietiging, instructies aan verwerkers enzovoort.
 {% endhint %}
 
-Met Dastra kun je de verschillende gegevenslevenscycli invullen en de bewaarperioden aanpassen aan elke set gecreëerde gegevens &#x20;
+*
 
-## Hoe bepaalt u ze?
+## Hoe bepaalt u ze (methodologie)
 
-Door het principe van gegevensbescherming al in de ontwerpfase toe te passen:
-
-* Definieer het precieze doel**, d.w.z. waarvoor de persoonsgegevens zullen worden gebruikt;
-* De **verschillende levenscycli van deze gegevens**, de toepasselijke tijdsperioden en de betrokken gegevens;
-* De personen identificeren die de gegevensverwerking** moeten uitvoeren tijdens het huidige gebruik en diegenen die de gegevens tussentijds archiveren; de traceerbaarheid van de toegang tot gearchiveerde gegevens garanderen;
-* voorzien in een automatische** en selectieve procedure voor het wissen van gegevens (voor openbare archieven moet de persoon die verantwoordelijk is voor de wetenschappelijke en technische controle toestemming geven voor het wissen);
-* Als een **anonimiseringsproces** wordt overwogen, controleer dan of de gegevens het niet mogelijk maken dat de betrokkenen aan het einde van het proces worden "geheridentificeerd".
-
-### Waar vindt u de referenties?
-
-* Vertrouw op wettelijke of reglementaire bepalingen
-* gegevensbeschermingsautoriteit-overleg
-* Voor openbare archieven, de aanbevelingen van de Archives de France
-* Sectorspecifieke referenties
+1. **De doeleinden verduidelijken**: Wat doet u precies met de gegevens? Waarvoor worden ze gebruikt?
+2. **De fasen in kaart brengen**: actief gebruik, daarna tussentijdse archivering, daarna anonimisering/verwijdering
+3. **De rechtsgronden en referenties identificeren**: sectorspecifieke wet- en regelgeving, richtsnoeren van de autoriteit, interne referentiekaders
+4. **Een duidelijke regel vaststellen**: "X jaar na \[gebeurtenis], daarna Y jaar archiveren, daarna verwijderen" of "zolang…, daarna Z jaar na / \[criterium]"
+5. **De uitvoering organiseren**: automatische of beheerde verwijdering, logging, bewijs van uitvoering
+6. **Informeren en documenteren**: privacyverklaring (art. 13-14), verwerkingsregister (art. 30), intern beleid
 
 {% hint style="info" %}
-Als geen tekst of norm oplossingen biedt, moet de duur worden bepaald die het meest geschikt is om het doel van de verwerking te bereiken in overeenstemming met het principe van verantwoordelijkheid.
+Is er geen duidelijke referentie, kies dan een termijn die evenredig is aan het doeleinde en documenteer de redenering (verantwoordingsplicht).
 {% endhint %}
 
-## Wie is erbij betrokken?
+*
 
-* De **afdeling die verantwoordelijk is voor de uitvoering van de Verwerking** (dit kan een subcontractant zijn) verstrekt alle informatie die nodig is om haar vereisten te begrijpen en zo de duur van het huidige gebruik van de gegevens in kwestie te bepalen;
-* De functionaris voor gegevensbescherming (Data Protection Officer, DPO)** is de belangrijkste contactpersoon wanneer hij/zij is aangesteld; hij/zij is verantwoordelijk voor het waarborgen van de naleving van de verwerkingen binnen de organisatie en voor het adviseren van de Verwerkingsverantwoordelijke;
-* De **interne archiefdienst van de organisatie of de lokale overheid**, indien van toepassing, kan informatie verstrekken over gegevensbewaringspraktijken voor de betreffende Verwerking (levenscyclusbeheer van gegevens, enz.);
-* Advies**, zowel intern binnen de organisatie (bijv. de juridische afdeling van een bedrijf) als extern (bijv. een advocaat, digitaal dienstenbedrijf, enz.). Dit laatste kan in het bijzonder helpen om de toepasselijke wet- en regelgeving na te leven;
-* De beroepsfederatie** waartoe de Verwerkingsverantwoordelijke behoort, kan haar netwerk ondersteunen bij het bepalen van de bewaartermijnen.
+## Voorbeeldregels (aan te passen)
 
-In de publieke sector (voor overheidsorganen en voor particuliere organen met een openbare dienstverleningstaak) zijn de geprefereerde contactpersonen de **departementale archiefdienst met territoriale bevoegdheid** (voor gedecentraliseerde departementen en lokale overheden en hun groeperingen), of de archiefdienst van het toezichthoudende ministerie (voor centrale overheidsdepartementen). Deze contactpersonen kunnen de organisatie informeren over de verplichtingen die op haar van toepassing zijn en begeleiden bij de uitvoering ervan (bepalen van de DUA en de eindbestemming).
+| Context          | Gegevens                            | Samengevatte regel                                                             |
+| ---------------- | ----------------------------------- | ------------------------------------------------------------------------------ |
+| B2B-prospects    | Identiteit, contactgegevens, opt-in-spoor | **3 jaar** na het laatste actieve contact, daarna **verwijdering**         |
+| HR, kandidaten   | Cv's, motivatiebrieven, gesprekken  | **2 jaar** na het laatste contact met de kandidaat, tenzij bezwaar             |
+| Klanten          | Contract, facturatie                | Contract + **5 jaar** (bewijs), daarna **archivering/verwijdering**            |
+| Camerabewaking   | Beelden                             | **maximaal 30 dagen**, behalve bij een incident (bewijsprocedure)              |
+| Cookies          | Identificatiegegevens, voorkeuren   | Termijn in overeenstemming met de cookiebanner en het **bewijs van toestemming** |
 
-## Hoe controleren?
+> Deze waarden verschillen naargelang de toepasselijke teksten, uw sector en uw risico's: documenteer uw keuzes.
 
-De praktische uitvoering van bewaartermijnen moet regelmatig worden gecontroleerd. Het is daarom noodzakelijk om **regelmatig audits** uit te voeren. De DPO heeft de taak om de Verwerkingen te controleren, inclusief de bewaartermijnen.
+*
 
-De Audit-functionaliteit van Dastra is ideaal voor dit doel:&#x20;
+## Wie betrekt u erbij
 
-{% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
-{% endcontent-ref %}
+* Verantwoordelijke van de verwerking binnen de business: operationele behoeften, aanleidingen
+* FG / juridische dienst: naleving, toepasselijke teksten, afweging van rechten en vrijheden
+* CISO / IT: verwijdering, anonimisering, beperking van de toegang, logs
+* Verwerkers: naleving van de schriftelijke instructies
 
-## Om verder te gaan
+*
 
-{% embed url="https://www.youtube.com/watch?v=BK8A3L9P7T0" %}
-Webinar "Bewaartermijnen: hoe bepaal je ze?"
-{% endembed %}
+## De uitvoering controleren (audits)
+
+* Controleer periodiek: de relevantie van de termijnen, de uitvoering van verwijderingen, de toegang tot archieven, de anonimisering
+* Registreer de handelingen: vernietigingsverslagen, verslagen van verwijderingen, logs
+* Herzie bij elke wijziging van doeleinde, rechtsgrond of leverancier
+
+*
+
+## Uitvoering in Dastra
+
+### 1) In het verwerkingsregister
+
+* Geef per dataset een leesbare regel op: "_3 jaar na het laatste actieve contact (prospect), daarna verwijdering_"
+* Voeg het aanleidende criterium toe (bijvoorbeeld "datum van de laatste CRM-activiteit", "einddatum van het contract")
+* Koppel referenties (wettekst, intern referentiekader)
+
+### 2) De verwijdering automatiseren/beheren
+
+* Plan taken (beoordelingen, verwijderingen, bewijsextracties)
+* Gebruik werkstroomregels en regelmatige beoordelingen voor de termijnen
+
+### 3) Bewijs
+
+* Bewaar vernietigingsverslagen, verslagen van verwijderingen, scripts en uitvoeringstickets in de sectie **Documentatie** van de verwerkingsactiviteit
+
+*
+
+## Tussentijdse archivering en beveiliging
+
+* Beperk de toegang (RBAC, compartimentering)
+* Registreer raadplegingen
+* Logische scheiding (archiefkluis/-zone)
+* Versleutel waar relevant
+* Plan omkeerbaarheid met verwerkers
+
+*
+
+## Anonimisering versus pseudonimisering
+
+* Anonimisering: onomkeerbaar → buiten het toepassingsgebied van de AVG als de gegevens echt niet opnieuw kunnen worden geïdentificeerd
+* Pseudonimisering: omkeerbaar met een sleutel → blijft persoonsgegevens → Documenteer de methode, test de heridentificeerbaarheid en houd rekening met aanvullende gegevens.
+
+*
+
+## AI en bewaartermijnen
+
+Bepaal voor AI-systemen afzonderlijke bewaartermijnen voor:
+
+* Training (datasets, versies),
+* Validatie / testen,
+* Inferentielogs (traceerbaarheid, transparantie),
+* Evaluatiesets (bias, robuustheid).
+
+Koppel deze termijnen aan uw register van AI-systemen om de consistentie tussen de AVG en de AI-verordening te waarborgen.
+
+*
+
+## Nuttige referenties
+
+* Richtsnoeren over bewaring die uw nationale toezichthoudende autoriteit publiceert (bijvoorbeeld de gids van de CNIL over bewaartermijnen in Frankrijk)
+* Sectorspecifieke wet- en regelgeving die minimale of maximale bewaartermijnen vastlegt
+* Gedragscodes en normen van uw sector
+* Collectieve arbeidsovereenkomsten
+
+*
+
+{% hint style="success" %}
+**Goede praktijk:** schrijf _uitvoerbare_ regels ("X jaar na \[gebeurtenis], daarna verwijdering of anonimisering"), test ze op een beperkte reikwijdte en rol ze daarna breed uit. Dastra helpt u de uitvoering te **documenteren**, te **plannen** en te **bewijzen**.
+{% endhint %}
+
+*
+
+## Meer informatie
 
 {% content-ref url="../../features/ropa/activity/datasets.md" %}
-[categorie-de-donnees.md](../../features/editer-le-registre/remplir-le-questionnaire/categorie-de-donnees)
-{% endcontent-ref %}
-
-{% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
+[Gegevens en retentie](../../features/ropa/activity/datasets.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../features/tasks/README.md" %}
-[planifier](../../features/tasks/README.md)
+[Planning](../../features/tasks/README.md)
 {% endcontent-ref %}

@@ -1,27 +1,28 @@
 ---
-description: Een paar nuttige herinneringen over de definitie van risico.
+description: >-
+  Enkele nuttige herinneringen over de definitie van een risico.
 ---
 
 # Definitie van risico
 
-## Wat is een risico?
+## Het begrip risico
 
-Een beveiligingsrisico wordt door het Franse nationale agentschap voor de beveiliging van informatiesystemen (ANSSI) gedefinieerd als een scenario dat een **gevreesde gebeurtenis** (bronnen van bedreigingen, kritieke bedrijfsmiddelen, beveiligingscriteria, beveiligingsbehoeften, gevolgen) combineert met **een of meer bedreigingsscenario's** (bronnen van bedreigingen, ondersteunende bedrijfsmiddelen, beveiligingscriteria, bedreigingen, kwetsbaarheden).
+Een beveiligingsrisico wordt door het Franse nationale agentschap voor de beveiliging van informatiesystemen (ANSSI) gedefinieerd als een scenario dat een **gevreesde gebeurtenis** (bronnen van bedreigingen, kritiek bedrijfsmiddel, beveiligingscriteria, beveiligingsbehoeften, gevolgen) combineert met **een of meer bedreigingsscenario's** (bronnen van bedreigingen, ondersteunend bedrijfsmiddel, beveiligingscriteria, bedreigingen, kwetsbaarheden).
 
-## Risicotypologieën
+## Soorten risico's
 
-Er kunnen verschillende risicotypologieën worden onderscheiden (niet-exhaustieve lijst):&#x20;
+Er kunnen verschillende soorten risico's worden onderscheiden (niet-limitatieve lijst):
 
-| Risicotypologieën | Risicovoorbeelden |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Privacy- en gegevensbeveiligingsrisico's | <p></p><ul><li>Storing van de vertrouwelijkheid van gegevens</li><li>Storing van de beschikbaarheid van gegevens</li><li>Storing van de integriteit van gegevens</li></ul> |
-| Juridische risico's | <p></p><ul><li>Inbreuk op het beroepsgeheim</li><li>aansprakelijkheid wegens onrechtmatige daad en contractuele aansprakelijkheid</li><li>strafrechtelijke aansprakelijkheid</li><li>niet-naleving van wettelijke, reglementaire, normatieve, sectorale of interne benchmarks</li></ul> |
-| Operationele risico's | <p></p><ul><li>Natuurlijke gebeurtenissen</li><li>Interne fraude</li><li>Diefstal</li><li>Sabotage</li><li>Burgerlijke aansprakelijkheid</li><li>Systeemfalen</li><li>Vertrouwelijke informatie</li><li>Schade aan industriële faciliteiten</li><li>Technologische risico's</li><li>Milieurisico's</li></ul> |
-| Financiële risico's | <ul><li>Marktrisico</li><li>Krediet-/tegenpartijrisico</li><li>Liquiditeitsrisico</li><li>Politiek risico</li></ul> |
-| Strategische risico's | <ul><li>noncompliance</li><li>subcontractor</li><li>transformatie</li><li>project</li></ul>
+| Soorten risico's | Voorbeelden van risico's |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Privacy- en gegevensbeveiligingsrisico's | <ul><li>inbreuk op de vertrouwelijkheid van gegevens</li><li>inbreuk op de beschikbaarheid van gegevens</li><li>inbreuk op de integriteit van gegevens</li></ul> |
+| Juridische risico's | <ul><li>schending van het beroepsgeheim</li><li>aansprakelijkheid wegens onrechtmatige daad en contractuele aansprakelijkheid</li><li>strafrechtelijke aansprakelijkheid</li><li>verlies van naleving van wettelijke, reglementaire, normatieve, sectorale of interne normen</li></ul> |
+| Operationele risico's | <ul><li>Natuurverschijnselen</li><li>Interne fraude</li><li>Diefstal</li><li>Sabotage</li><li>Burgerlijke aansprakelijkheid</li><li>Systeemstoring</li><li>Openbaarmaking van vertrouwelijke informatie</li><li>Schade aan industriële uitrusting</li><li>Technologische risico's</li><li>Milieurisico's</li></ul> |
+| Financiële risico's | <ul><li>Marktrisico</li><li>Krediet- of tegenpartijrisico</li><li>Liquiditeitsrisico</li><li>Politiek risico</li></ul> |
+| Strategische risico's | <ul><li>Niet-naleving</li><li>Verwerker</li><li>Transformatie</li><li>Project</li></ul> |
 
-## Ga verder
+## Verder lezen
 
 {% content-ref url="assessment.md" %}
-[evaluation-dun-risque.md](assessment.md)
+[Risicobeoordeling](assessment.md)
 {% endcontent-ref %}

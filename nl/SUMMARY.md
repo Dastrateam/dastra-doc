@@ -4,20 +4,20 @@
 
 ## 🇪🇺 Nuttige herinneringen <a href="#gdpr" id="gdpr"></a>
 
-* [Inleiding tot de AVG](gdpr/introduction.md)
-* [AVG kernbegrippen](gdpr/concepts/README.md)
+* [Inleiding tot privacy](gdpr/introduction.md)
+* [Belangrijkste concepten van de AVG](gdpr/concepts/README.md)
   * [Persoonsgegevens](gdpr/concepts/personal-data.md)
-  * [Register van verwerkingen](gdpr/concepts/ropa.md)
-  * [Effectbeoordeling](gdpr/concepts/dpia.md)
-  * [Bewaartermijnen](gdpr/concepts/retention.md)
+  * [Register van verwerkingsactiviteiten (ROPA)](gdpr/concepts/ropa.md)
+  * [Gegevensbeschermingseffectbeoordeling (DPIA)](gdpr/concepts/dpia.md)
+  * [Bewaartermijn van gegevens](gdpr/concepts/retention.md)
   * [Rechten van betrokkenen](gdpr/concepts/rights.md)
-  * [Vertrouwelijkheid bij ontwerp en standaard](gdpr/concepts/privacy-by-design.md)
+  * [Privacy by design en by default](gdpr/concepts/privacy-by-design.md)
   * [Beveiligingsmaatregelen](gdpr/concepts/security.md)
-  * [Gegevensinbreuken](gdpr/concepts/breaches.md)
+  * [Meldingen van datalekken](gdpr/concepts/breaches.md)
 * [Risicobeheer](gdpr/risks/README.md)
-  * [Risico definitie](gdpr/risks/definition.md)
+  * [Definitie van risico](gdpr/risks/definition.md)
   * [Risicobeoordeling](gdpr/risks/assessment.md)
-  * [Risico's verwerker](gdpr/risks/processors.md)
+  * [Beheer van verwerkersrisico's](gdpr/risks/processors.md)
 
 ## 👨‍💻 Aan de slag <a href="#getting-started" id="getting-started"></a>
 

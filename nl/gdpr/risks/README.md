@@ -1,23 +1,24 @@
 ---
-description: Samenvatting van de belangrijkste risicomanagementconcepten
+description: >-
+  Samenvatting van de belangrijkste concepten van risicobeheer.
 ---
 
-# Risicomanagement
+# Risicobeheer
 
 {% content-ref url="definition.md" %}
-[definition-des-risques.md](definition.md)
+[Definitie van risico](definition.md)
 {% endcontent-ref %}
 
 {% content-ref url="assessment.md" %}
-[evaluation-dun-risque.md](assessment.md)
+[Risicobeoordeling](assessment.md)
 {% endcontent-ref %}
 
 {% content-ref url="processors.md" %}
-[risico's-subcontractanten.md](processors.md)
+[Beheer van verwerkersrisico's](processors.md)
 {% endcontent-ref %}
 
-## Verder gaan
+## Verder lezen
 
 {% content-ref url="../../features/risks/README.md" %}
-[risicobeheer](../../features/risks/README.md)
+[Risicobeheer](../../features/risks/README.md)
 {% endcontent-ref %}

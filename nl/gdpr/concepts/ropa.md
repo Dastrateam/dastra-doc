@@ -1,126 +1,156 @@
 ---
-description: Leer wat een register van de verwerkingsactiviteiten is.
+description: >-
+  Leer wat een register van verwerkingsactiviteiten is.
 ---
 
-# Register van verwerkingen
+# Register van verwerkingsactiviteiten (ROPA)
 
-## Definitie van een verwerkingsregister
+## Definitie
 
-Het register van de verwerkingsactiviteiten brengt alle verwerkingen van persoonsgegevens op een duidelijke en gestructureerde manier in kaart en vormt het uitgangspunt voor de controles van de Autoriteit Persoonsgegevens
+Het register van verwerkingsactiviteiten is de gestructureerde inventarisatie van alle verwerkingen van persoonsgegevens binnen uw organisatie. Het is het vertrekpunt van elke controle door een toezichthoudende autoriteit voor gegevensbescherming en een centraal instrument voor het beheer van de naleving.
 
-Het register is vastgelegd in [artikel 30 van de AVG](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679). Het helpt bij het documenteren van de naleving.
+> Het register is verplicht volgens [artikel 30 van de AVG](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3265-1-1). Het geeft invulling aan het beginsel van verantwoordingsplicht (accountability).
 
-Als inventarisatie- en analysedocument moet het de realiteit van uw gegevensverwerking weerspiegelen en u in staat stellen om nauwkeurig vast te stellen :
+Het register geeft precies weer:
 
-* de **Stakeholders** (vertegenwoordiger, Verwerkers, Verwerkingsverantwoordelijken, etc.) die betrokken zijn bij de gegevensverwerking,
-* de categorieën **gegevensverwerking**,
-* waarvoor de gegevens worden gebruikt\*\* (wat u ermee doet), **wie toegang heeft** tot de gegevens en **aan wie ze worden meegedeeld**,
-* hoe lang u uw gegevens **bewaart**,
-* hoe veilig ze **zijn**.
+* De betrokken stakeholders (verwerkingsverantwoordelijke, verwerker, gezamenlijke verwerkingsverantwoordelijken, vertegenwoordigers)
+* De categorieën van verzamelde gegevens
+* De doeleinden van de verwerking
+* De ontvangers en doorgiften
+* De bewaartermijnen
+* De getroffen beveiligingsmaatregelen
 
-{% embed url="https://youtu.be/R_Z2m4sb-44" %}
-Hoe overschakelen naar de runstand voor logboekbeheer voor Verwerking
-{% endembed %}
+***
 
-## Waarom een register gebruiken?
+## Redenen om een register bij te houden
 
-Het register is **verplicht** gesteld door \[artikel 30 van de AVG] (https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679). Naast het voldoen aan de verplichting van artikel 30 van de AVG, is het register een **hulpmiddel voor het controleren en aantonen van uw naleving van de AVG**.
+Het register is verplicht (artikel 30 van de AVG), onder voorbehoud van de hieronder beschreven uitzondering. Maar los van de wettelijke verplichting wordt het een echt beheerinstrument waarmee u:
 
-Het stelt u in staat om uw gegevensverwerking te documenteren en uzelf de juiste vragen te stellen: heb ik deze gegevens echt nodig voor mijn verwerking? Heeft het zin om alle gegevens zo lang te bewaren? Zijn de gegevens voldoende beschermd? En ga zo maar door.
+* uw verwerkingsactiviteiten documenteert om uw naleving aan te tonen,
+* risico's identificeert en prioriteert,
+* uw bewaartermijnen optimaliseert,
+* uw verwerkingen rationaliseert en overbodige gegevens verwijdert,
+* uw AVG-audits en DPIA's voorbereidt.
 
-Het opstellen en bijwerken van een gegevensbeschermingsplan biedt de mogelijkheid om **de risico's met betrekking tot de AVG te identificeren en te prioriteren**. Met deze **essentiële stap** kunt u een **actieplan** opstellen om ervoor te zorgen dat uw Verwerking voldoet aan de regels voor gegevensbescherming.
-
-## Voor welke bedrijven geldt de verplichting om een register in te vullen?
-
-Alle bedrijven die persoonsgegevens van Europese burgers verwerken, moeten een register bijhouden.
-
-{% hint style="info" %}
-Voor bedrijven met minder dan 250 werknemers geldt een uitzondering voor het bijhouden van registers. **Zij hoeven alleen de volgende gegevensverwerking te registreren**:
-
-* niet-incidentele verwerkingen (bijv. salarisbeheer, klanten-/prospect- en leveranciersbeheer, enz;)
-* Verwerkingen die waarschijnlijk een risico inhouden voor de rechten en vrijheden van personen (bijv. geolocatiesystemen, videobewaking, enz.)
-* Verwerking van gevoelige gegevens (bijv. gezondheidsgegevens, strafbare feiten, enz.).
-
-**In de praktijk is deze uitzondering dus beperkt tot zeer specifieke gevallen van Verwerking** die incidenteel en niet-routinematig worden uitgevoerd, zoals een communicatiecampagne ter gelegenheid van de opening van een nieuwe vestiging, op voorwaarde dat deze verwerking geen risico inhoudt voor de betrokkenen. Als er twijfel bestaat of deze vrijstelling van toepassing is op een Verwerking, raadt de CNIL u aan deze in uw register op te nemen.
+{% hint style="success" %}
+Het register is geen administratieve formaliteit: het is de sleutel tot een doeltreffend beheer van uw gegevens en interne processen.
 {% endhint %}
 
-## Inhoud van het register van verwerkingen
+***
 
-Artikel 30 van de AVG bevat specifieke verplichtingen voor het register van de verwerkingsverantwoordelijke van persoonsgegevens en voor het register van de verwerker. Als uw organisatie zowel als verwerker als als verwerkingsverantwoordelijke optreedt, moet uw register duidelijk onderscheid maken tussen de twee categorieën activiteiten.
+## Betrokken organisaties
 
-**In de praktijk raadt de Gegevensbeschermingsautoriteit aan om in dit geval 2 registers bij te houden:**.
+Alle organisaties die onder de AVG vallen, zijn betrokken. Er bestaat echter een uitzondering voor organisaties met minder dan 250 personen (artikel 30, lid 5).
 
-1. één voor de gegevensverwerking waarvoor u zelf verantwoordelijk bent,
-2. een ander voor verwerkingen die u als subcontractant namens uw klanten uitvoert.
+{% hint style="info" %}
+Kleine en middelgrote ondernemingen moeten in hun register toch alle verwerkingen opnemen die:
 
-## Het "Verwerkingsverantwoordelijke" register in Dastra
+* niet incidenteel zijn (bijvoorbeeld personeelsbeheer, loonadministratie, klanten, leveranciers),
+* waarschijnlijk risico's inhouden voor personen (camerabewaking, geolocatie enzovoort),
+* of gevoelige gegevens betreffen (gezondheid, strafbare feiten, politieke opvattingen).
 
-Voor elke Verwerking vermeldt het register van de Verwerkingsverantwoordelijke ten minste :
+In de praktijk zijn de meeste organisaties betrokken. De CNIL, de Franse toezichthoudende autoriteit, beveelt aan om in alle gevallen een register bij te houden.
+{% endhint %}
 
-1. indien van toepassing, **de naam en contactgegevens** van de [gezamenlijk verantwoordelijke voor de verwerking](https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32016R0679) die wordt uitgevoerd
-2. de **doeleinden** van de verwerking, het doel waarvoor u de gegevens hebt verzameld
-3. de **categorieën betrokkenen** (klant, prospect, werknemer, enz.)
-4. de **persoonlijke gegevens** (voorbeelden: identiteit, familie, economische of financiële situatie, bankgegevens, verbindingsgegevens, locatiegegevens, enz.)
-5. **de categorieën ontvangers** aan wie de persoonsgegevens zijn of zullen worden meegedeeld, Begrepen de Verwerkers die u gebruikt
-6. de **doorgifte** van persoonsgegevens naar een derde land of naar een internationale organisatie en, in bepaalde zeer specifieke gevallen, de garanties die voor dergelijke doorgiften worden gegeven;
-7. de **termijnen die zijn vastgesteld voor het wissen** van de verschillende categorieën gegevens, d.w.z. de bewaartermijn, of anders de criteria voor het bepalen daarvan
-8. voor zover mogelijk, een **algemene beschrijving van de technische en organisatorische beveiligingsmaatregelen** die u toepast.
+***
 
-\[Een "Verwerkingsverantwoordelijke" in Dastra]
+## Twee registers om te onderscheiden
 
-### De actoren
+Afhankelijk van uw rol moet u bijhouden:
 
-* De identiteit en contactgegevens van de Verwerkingsverantwoordelijke.
-* De identiteit en contactgegevens van de functionaris voor gegevensbescherming, indien van toepassing.
-* De identiteit en contactgegevens van de vertegenwoordiger, indien van toepassing
-* De gezamenlijke verwerkingsverantwoordelijke(n), indien van toepassing.
+1. een register van de verwerkingsverantwoordelijke,
+2. een register van de verwerker.
+
+> Dezelfde organisatie kan beide registers hebben: bijvoorbeeld een SaaS-bedrijf dat zijn eigen personeelsgegevens beheert (verwerkingsverantwoordelijke) en de gegevens van zijn klanten (verwerker).
+
+***
+
+## Het register van de verwerkingsverantwoordelijke (in Dastra)
+
+Voor elke verwerkingsactiviteit moet het register ten minste bevatten:
+
+1. De naam en contactgegevens van de verwerkingsverantwoordelijke of de gezamenlijke verwerkingsverantwoordelijke
+2. De doeleinden van de verwerking
+3. De categorieën van betrokkenen (klanten, prospects, werknemers enzovoort)
+4. De categorieën van gegevens (identiteit, financiën, locatie enzovoort)
+5. De ontvangers (intern, verwerkers, partners)
+6. Doorgiften buiten de EER, met de bijbehorende waarborgen (SCC's, BCR's enzovoort)
+7. De bewaartermijnen of de criteria om ze te bepalen
+8. Een algemene beschrijving van de beveiligingsmaatregelen
+
+### Stakeholders
+
+* Verwerkingsverantwoordelijke
+* FG of contactpersoon voor naleving
+* Vertegenwoordiger, indien van toepassing
+* Gezamenlijke verwerkingsverantwoordelijken of partners
 
 ### Doeleinden
 
-* Alle doeleinden die verband houden met de activiteit van de Verwerking.
+Alle doeleinden die aan een activiteit zijn gekoppeld (bijvoorbeeld contractbeheer, opvolging van werving, marketing enzovoort).
 
-### Rechtsgrondslag
+### Wettelijke basis
 
-* Nakoming van een wettelijke verplichting
-* Uitvoering van een contract
-* Gerechtvaardigd belang van het bedrijf of een derde
+* Uitvoering van een overeenkomst
+* Wettelijke verplichting
+* Gerechtvaardigde belangen
 * Algemeen belang
 * Toestemming
-* Bescherming van de vitale belangen van de betrokkene of een andere persoon.
+* Bescherming van vitale belangen
 
-### Inventaris van gegevens en betrokkenen
+### Gegevens en betrokkenen
 
-* Type betrokkenen
-* Categorieën van gegevens
-* Termijnen voor het wissen van gegevens of toepasselijke regel
+* Type betrokkenen (klanten, werknemers, bezoekers…)
+* Categorieën van verzamelde gegevens
+* Bewaartermijnen of toepasselijke regels
 
-### Ontvangers en doorgiften van gegevens buiten de EER
+### Ontvangers en doorgiften buiten de EER
 
-* Identificatie van ontvangers inclusief interne ontvangers (afdeling betrokken bij de Verwerking); externe organen (commerciële of institutionele partners); subcontractanten (host, solution provider); betrokkene indien van toepassing en gezamenlijk verantwoordelijken voor de verwerking
-* Voor elke ontvanger, identificatie van doorgiften buiten de Europese Economische Ruimte (EER) en de gebruikte juridische instrumenten (bindende bedrijfsregels in geval van doorgiften buiten de EU met dochterondernemingen, standaard contractuele clausules, land erkend als adequaat, enz.)
+* Betrokken interne afdelingen
+* Verwerkers, dienstverleners of externe partners
+* Gezamenlijke verwerkingsverantwoordelijken
+* Internationale doorgiften: identificatie van de landen en van de juridische instrumenten (SCC's, BCR's, adequaatheidsbesluit…)
 
 ### Beveiligingsmaatregelen
 
-* Technische en organisatorische maatregelen ter beveiliging van elke gegevensverwerking
-* Bijvoorbeeld gegevensversleuteling, pseudonimisering, toegangsbeperking, enz.
+* Technische maatregelen (versleuteling, pseudonimisering, back-ups)
+* Organisatorische maatregelen (toegangsbeheer, opleidingen, intern beleid)
 
-## Het register "subcontractant" in Dastra
+***
 
-Elke subcontractant moet een minder uitgebreid register invullen;
+## Het register van de verwerker
 
-Dit bevat:
+Verwerkers moeten ook een register bijhouden, dat beknopter is en het volgende vermeldt:
 
-* de **contactgegevens** van de subcontractant, hun vertegenwoordiger indien van toepassing en hun DPO
-* de **gegevens van alle Verwerkingsverantwoordelijken namens wie de subcontractant optreedt** (meestal de klanten)
-* de **categorieën gegevensverwerking**
-* **ontvangers**
-* **doorgiften** buiten de EER
-* **beveiligingsmaatregelen**.
+* De contactgegevens van de verwerker, de FG en de vertegenwoordiger, indien van toepassing
+* De contactgegevens van de klanten die verwerkingsverantwoordelijke zijn
+* De categorieën van verwerkingen die namens elke verwerkingsverantwoordelijke worden uitgevoerd
+* Doorgiften buiten de EER en de bijbehorende waarborgen
+* De toegepaste beveiligingsmaatregelen
 
-\[Een "onderaannemer" verwerking in Dastra]
+## Het register van AI-systemen
 
-## Om verder te gaan
+De AI-verordening (AI Act), sinds 2024 van kracht, verplicht organisaties ook om hun systemen voor kunstmatige intelligentie te documenteren op basis van hun risiconiveau. In het register van AI-systemen van Dastra kunt u:
+
+* elk AI-systeem koppelen aan zijn verwerkingsactiviteiten,
+* de doeleinden, de gebruikte modellen en de trainingsgegevens beschrijven,
+* risico's en beheersmaatregelen beoordelen,
+* de naleving van de AI-verordening en de AVG op één plek opvolgen.
+
+***
+
+## Meer informatie
 
 {% content-ref url="../../features/ropa/README.md" %}
-[editer-le-registre](../../features/ropa/README.md)
+[Verwerkingsregister](../../features/ropa/README.md)
 {% endcontent-ref %}
+
+{% content-ref url="../../features/ropa/establish.md" %}
+[Uw register opzetten](../../features/ropa/establish.md)
+{% endcontent-ref %}
+
+***
+
+{% hint style="success" %}
+Goede praktijk: werk uw register bij bij elke nieuwe verwerkingsactiviteit en bij elke belangrijke wijziging (nieuw doeleinde, nieuwe leverancier, nieuwe doorgifte enzovoort). Bij regelmatige beoordelingen stuurt Dastra een e-mail naar de eigenaar van een verwerkingsactiviteit waarvan de beoordeling aan de orde is.
+{% endhint %}
