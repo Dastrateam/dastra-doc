@@ -1,93 +1,95 @@
 ---
-description: Auf dieser Seite finden Sie die Lösung der wichtigsten bekannten Probleme.
+description: >-
+  Lösungen für die wichtigsten bekannten Probleme: nicht erhaltene
+  Einladungs-E-Mails, Browser-Cache sowie die Fehler 401, 403, 404 und 500.
 ---
 
 # Bekannte Probleme
 
-## Der eingeladene Nutzer erhält keine Einladungs-E-Mails
+## Der eingeladene Nutzer erhält die Einladungs-E-Mails nicht
 
-**Überprüfen Sie, ob die E-Mail-Adresse des Nutzers (Domain, Name...)** korrekt ist. Wenn diese falsch ist, wird die Oberfläche keinen Fehler anzeigen
+Prüfen Sie zunächst Folgendes:
 
-Überprüfen Sie, ob das Postfach der Person nicht voll ist
+* Die E-Mail-Adresse des Nutzers (Domain, Name usw.) ist korrekt. Ist sie falsch, zeigt die Oberfläche keinen Fehler an.
+* Das Postfach der Person ist nicht voll.
+* Die E-Mail liegt nicht im Spam-Ordner. In seltenen Fällen blockiert der Spam-Filter des Mailservers des Empfängers die von Dastra gesendete E-Mail.
 
-In sehr seltenen Fällen kann Dastra vom Spam-Filter des Servers blockiert werden. In diesem Fall können Sie einen Einladungslink generieren, indem Sie eine neue Einladung erstellen und auf **"Nutzer"** > **"Einen Nutzer einladen"** > **Mail eingeben** und absenden.
+Wenn die E-Mail weiterhin nicht ankommt, erzeugen Sie einen Einladungslink:
 
-<figure><img src="../.gitbook/assets/Nutzer einladen.png" alt=""><figcaption></figcaption></figure>
+1. Klicken Sie in der Liste der Nutzer auf **Einen Nutzer einladen** und folgen Sie den Schritten.
+2. Wählen Sie im Schritt zur Art der Einladung **Einladungslink generieren** und klicken Sie dann auf die Schaltfläche **Einladungslink generieren**.
 
-<figure><img src="../.gitbook/assets/Nutzer einladen2.png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../.gitbook/assets/other-known-problems-1.png" alt="Einladungsfenster mit ausgewählter Option Einladungslink generieren"><figcaption><p>Den Einladungslink wählen</p></figcaption></figure>
+3. Kopieren Sie den Link, der unter **Einladungslink, der direkt an den Nutzer gesendet werden kann** angezeigt wird.
 
-**Anschließend die folgenden Parameter befüllen und einen "Einladungslink generieren" klicken.  Kopieren Sie den auf der Seite angezeigten Link.**
+   <figure><img src="../.gitbook/assets/other-known-problems-2.png" alt="Einladungsfenster mit dem erzeugten Einladungslink"><figcaption><p>Der erzeugte Einladungslink</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Nutzer einladen3 (1).png" alt=""><figcaption></figcaption></figure>
-
-So können Sie den Einladungslink über einen Unternehmens-Chat, einen Versand aus Ihrem E-Mail-Postfach usw. an den Nutzer übermitteln.
-
-{% hint style="info" %}
-Achtung: Eine Validierung der E-Mail-Adresse ist erforderlich, damit der Nutzer auf Ihren Bereich zugreifen kann
-{% endhint %}
-
-## Probleme im Zusammenhang mit dem Browser-Cache beheben
-
-Wenn Sie einen Browser verwenden, nutzt dieser den Cache und Cookies, um Informationen von Websites zu speichern. Das Löschen dieser Daten behebt bestimmte Probleme, wie z. B. Probleme beim Laden von Anwendungen wie Dastra.<br>
-
-Um diese Probleme zu beheben, stellen wir Ihnen mehrere Lösungen zur Verfügung:
-
-1. **Browser-Aktualisierung durchführen**, mit STRG + F5 (oder MAC + F5)
-2. Wenn die erste Lösung nicht funktioniert, eine **Zurücksetzung der Präferenzdaten** durchführen. Diese Aktion ermöglicht es Ihnen, die von Dastra gesetzten Cookies einfach zu löschen, die in Ihrem lokalen Speicher gespeicherten Elemente zu löschen und Ihre Anzeigeeinstellungen in Dastra zurückzusetzen, und kann so helfen, bestimmte Anzeige- und Fehlerprobleme zu beheben.
-
-Um diese Funktion aufzurufen, navigieren Sie zum Reiter "Profil" in Ihren persönlichen Einstellungen. Ganz unten befindet sich die Funktion:
-
-![](<../.gitbook/assets/Präferenzdaten zurücksetzen (1).png>)
+Senden Sie den Link dann dem Nutzer über den Chat Ihres Unternehmens oder aus Ihrem Postfach.
 
 {% hint style="info" %}
-Wenn Sie diese Option wählen, verlieren Sie Ihre Spalteneinstellungen in allen Tabellen von Dastra und die Anzeige der Tutorials in allen Modulen wird erneut ausgelöst.
+Der Nutzer muss weiterhin seine E-Mail-Adresse bestätigen, um Zugriff auf Ihren Mandanten zu erhalten.
 {% endhint %}
 
-Diese beiden Maßnahmen haben Ihr Problem nicht gelöst? Kontaktieren Sie den Support direkt über die Anwendung, per Chat oder über den "Megafon"-Tab.
+## Probleme mit dem Cache Ihres Browsers beheben
+
+Der Browser nutzt einen Cache und Cookies, um Informationen von Websites zu speichern. Wenn Sie sie löschen, lassen sich manche Probleme beheben, etwa beim Laden von Anwendungen wie Dastra.
+
+Probieren Sie die folgenden Lösungen der Reihe nach:
+
+1. **Aktualisieren Sie die Seite ohne Cache** mit Strg + F5 (Windows) oder Cmd + Umschalt + R (Mac).
+2. Wenn das Problem weiterhin besteht, **setzen Sie Ihre Präferenzdaten zurück**. Diese Aktion löscht die von Dastra gesetzten Cookies, leert die in Ihrem lokalen Speicher gespeicherten Elemente und setzt Ihre Anzeigeeinstellungen in Dastra zurück. Sie kann manche Anzeigeprobleme beheben.
+
+Öffnen Sie dazu oben rechts Ihr Profilmenü, klicken Sie auf **Nutzerprofil** und dann auf **Präferenzdaten zurücksetzen**.
+
+<figure><img src="../.gitbook/assets/other-known-problems-3.png" alt="Seite Nutzerprofil mit der Schaltfläche Präferenzdaten zurücksetzen"><figcaption><p>Die Präferenzdaten zurücksetzen</p></figcaption></figure>
+
+{% hint style="info" %}
+Diese Aktion löscht Ihre Spalteneinstellungen in allen Tabellen von Dastra und zeigt die Tutorials in allen Modulen erneut an.
+{% endhint %}
+
+Lösen diese beiden Maßnahmen Ihr Problem nicht, wenden Sie sich aus der Anwendung heraus an den Support: Öffnen Sie Ihr Profilmenü und wählen Sie dann **Hilfe** > **Bitte wenden Sie sich an den Support** oder **Bitte kontaktieren Sie uns über den Chat.**
 
 ## Fehler 401 bei der Anmeldung
 
-**Szenario**: Sie melden sich bei Dastra über die URL https://app.dastra.eu an, geben Ihre Anmeldedaten ein und gelangen auf eine Fehlerseite "**Zugriff verweigert (401)**".
+**Szenario**: Sie melden sich über https://app.dastra.eu bei Dastra an, geben Ihre Zugangsdaten ein, und es erscheint eine Fehlerseite. Ihr Titel lautet „Zugriff verweigert (401)“.
 
-Vorschau der Seite:\
-![](../.gitbook/assets/image-1-1-1-2-4-1.png)
+<figure><img src="../.gitbook/assets/other-known-problems-4.png" alt="Fehlerseite 401 von Dastra mit den vorgeschlagenen Lösungen"><figcaption><p>Fehlerseite 401</p></figcaption></figure>
 
 **Lösungen**:
 
-1. **Überprüfen Sie die Uhreinstellungen Ihres Computers**. Es wird dringend empfohlen, die Zeitsynchronisierung mit dem Internet zu aktivieren. Die Ablauffristen Ihrer Identifikationstoken werden nämlich mit der Zeit Ihres Computers verglichen. Wenn das Datum nicht korrekt mit der Serverzeit synchronisiert ist, werden Sie auf diesen Fehler stoßen. Zur Konfiguration Ihrer Uhr besuchen Sie folgende Links:
-   * [Mac](https://support.apple.com/de-de/guide/mac-help/mchlp2996/mac)
-   * [PC](https://support.microsoft.com/de-de/windows/festlegen-von-zeit-datums-und-zeitzoneneinstellungen-in-windows-dfaa7122-479f-5b98-2a7b-fa0b6e01b261)
-2. **Verwenden Sie diese Adresse für den Zugriff auf Dastra: https://app.dastra.eu**. Sie können sie als Lesezeichen speichern. Dieses Problem kann auftreten, wenn Sie versuchen, über URLs mit der Domain account.dastra.eu auf Dastra zuzugreifen (die häufig automatisch in den URL-Vorschlägen Ihres Browsers gespeichert werden)
-3. **Löschen Sie die Website-Daten und Cookies Ihres Browsers**
+1. **Prüfen Sie die Uhreinstellungen Ihres Computers.** Aktivieren Sie die Zeitsynchronisierung mit dem Internet. Die Ablaufzeiten Ihrer Identifikationstoken werden mit der Uhrzeit Ihres Rechners verglichen: Ist sie nicht mit der Serverzeit synchronisiert, erhalten Sie diesen Fehler. Wie Sie Ihre Uhr einstellen, lesen Sie unter den folgenden Links (auf Englisch):
+   * [Mac](https://support.apple.com/en-ca/guide/mac-help/mchlp2996/mac)
+   * [PC](https://support.microsoft.com/en-us/windows/how-to-set-your-time-and-time-zone-dfaa7122-479f-5b98-2a7b-fa0b6e01b261)
+2. **Verwenden Sie https://app.dastra.eu, um auf Dastra zuzugreifen.** Sie können die Adresse als Favorit speichern. Das Problem kann auftreten, wenn Sie Dastra über Adressen der Domain account.dastra.eu aufrufen, die Browser oft automatisch in ihren Adressvorschlägen speichern.
+3. **Löschen Sie die Websitedaten und Cookies Ihres Browsers.**
 
 ## Fehler 403: Zugriff verweigert
 
-Die Fehlermeldung "Fehler 403 Zugriff verweigert" weist darauf hin, dass Sie versuchen, auf einen Teil des Dastra-Systems zuzugreifen, ohne die erforderliche Berechtigung zu haben. Dies geschieht, wenn der Zugriff auf bestimmte Elemente oder Module von einem Administrator in Ihrem Mandanten eingeschränkt wurde, basierend auf den Berechtigungen Ihrer Rolle oder Ihres Teams.
+Die Meldung „Ressource nicht verfügbar (403)“ bedeutet, dass Sie ohne die nötige Berechtigung auf einen Teil von Dastra zugreifen wollen. Ein Administrator hat den Zugriff auf bestimmte Elemente oder Module Ihres Mandanten anhand Ihrer Rolle oder der Berechtigungen Ihres Teams eingeschränkt.
 
-**Lösungsansätze**
+So beheben Sie das Problem:
 
-* **Berechtigungen überprüfen**: Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen für das gewünschte Modul oder Element besitzen.
-* **Kontaktieren Sie einen der Administratoren Ihres Mandanten**: Im Zweifelsfall kontaktieren Sie einen der Administratoren Ihres Mandanten, um Ihre Zugriffsrechte zu überprüfen oder zu aktualisieren.
+* Prüfen Sie, ob Sie die nötigen Berechtigungen für das Modul oder das Element haben.
+* Wenden Sie sich an einen der Administratoren Ihres Mandanten, damit er Ihre Zugriffsrechte prüft oder anpasst.
 
 ## Fehler 404: Element nicht gefunden
 
-Die Fehlermeldung "Fehler 404 Element nicht gefunden" weist darauf hin, dass Sie versuchen, auf ein in Dastra nicht auffindbares Element zuzugreifen. Dies kann auftreten, wenn das betreffende Element geändert, verschoben oder gelöscht wurde (von einem anderen Nutzer oder von Ihnen selbst).
+Die Meldung „404 not found“ bedeutet, dass das Element, auf das Sie zugreifen wollen, nicht gefunden wird. Es kann von einem anderen Nutzer oder von Ihnen geändert, verschoben oder gelöscht worden sein.
 
-**Lösungsansätze**
+So beheben Sie das Problem:
 
-* **URL überprüfen**
-* **Element über die Suchfunktion suchen**
+* Prüfen Sie die Adresse (URL).
+* Suchen Sie das Element in der Liste seines Moduls erneut.
 
 ## Fehler 500
 
-Dieser Fehler kann gelegentlich auftreten und wird häufig verursacht durch:\
--Verbindungsprobleme\
--Probleme mit Ihrer Umgebung (Browser, Erweiterungen usw.)\
--Die Tatsache, dass mehrere Personen gleichzeitig am selben Element arbeiten\
--Die Ausführung einer Aktion, die viele Serverressourcen erfordert.
+Dieser Fehler kann gelegentlich auftreten. Häufig wird er verursacht durch:
 
-In den meisten Fällen handelt es sich um einen vorübergehenden Vorfall, und wir empfehlen, einige Minuten zu warten, bevor Sie es erneut versuchen.\
-\
-Wenn das Problem erneut auftritt, zögern Sie nicht, über das Megafon in Dastra einen Fehlerbericht zu melden, damit unsere Teams das Problem untersuchen können.<br>
+* Verbindungsprobleme;
+* Probleme in Ihrer Umgebung (Browser, Erweiterung usw.);
+* mehrere Personen, die gleichzeitig am selben Element arbeiten;
+* eine Aktion, die viele Serverressourcen benötigt.
 
-##
+In den meisten Fällen ist das Problem vorübergehend: Warten Sie einige Minuten, bevor Sie es erneut versuchen.
+
+Besteht das Problem weiter, senden Sie über **Hilfe** > **Bitte wenden Sie sich an den Support** in Ihrem Profilmenü einen Fehlerbericht, damit unsere Teams der Ursache nachgehen können.

@@ -301,7 +301,7 @@
 
 * [Häufig gestellte Fragen](other/faq.md)
 * [Barrierefreiheit](other/accessibility.md)
-* [DSFA-Leitfaden – nach Ländern](other/dpia-by-country.md)
+* [DSFA-Leitfaden nach Ländern](other/dpia-by-country.md)
 * [Bekannte Probleme](other/known-problems.md)
 * [Versionshinweise](https://www.dastra.eu/fr/category/release/10)
 * [Webinare](https://www.dastra.eu/fr/guide/categories/webinar/26)

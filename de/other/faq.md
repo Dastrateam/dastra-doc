@@ -1,74 +1,71 @@
 ---
-description: Häufig gestellte Fragen zum Produkt
+description: >-
+  Antworten auf häufig gestellte Fragen zur Nutzung von Dastra: Logos, Import
+  eines bestehenden Verzeichnisses, Löschen einer Verarbeitungstätigkeit,
+  fehlende Elemente und der lokale Speicher des Browsers.
 ---
 
 # Häufig gestellte Fragen
 
-## Wie zeige ich die Modulnamen unter den Symbolen in Dastra an?
-
-Sie möchten die Modulnamen unter jedem Symbol links auf dem Bildschirm anzeigen? Dies hängt von der Zoomstufe des Browsers ab.
-
-Verringern Sie die Zoomstufe und die Namen werden erscheinen!
-
 ## Wie ändere ich das Logo der Organisation in Dastra?
 
-Es ist nicht möglich, das Logo der Organisation zu ändern, da es keines gibt. Das Logo, das über dem Organisationsnamen oben rechts angezeigt wird, ist das mit dem Benutzerkonto verknüpfte Bild, das in den Profileinstellungen konfiguriert wird.
+Die Organisation hat kein Logo. Das Bild oben rechts auf dem Bildschirm, neben Ihrem Namen und dem Namen der Organisation, ist das Bild Ihres Nutzerkontos. Um es zu ändern, öffnen Sie oben rechts Ihr Profilmenü, klicken Sie auf **Nutzerprofil** und laden Sie ein neues Bild hoch.
 
-Mit diesem Bild ist auch das Logo des Mandanten änderbar.
+Wie Sie das in den Exporten verwendete Logo anpassen, lesen Sie bei der nächsten Frage.
 
 ## Wie ändere ich das Logo des Mandanten in Dastra?
 
-Sie können es ändern, indem Sie in den Einstellungen des Mandanten zur Rubrik Design und Marke navigieren. Sie können dort auch bestimmte Elemente des Exports im Word- und PDF-Format anpassen (Schriftart und Farben).
+Öffnen Sie die Mandanteneinstellungen und dann den Bereich **Design und Marke**. Sie können ein quadratisches und ein rechteckiges Logo hochladen und die **Markenfarbe** und die **Akzentfarbe** wählen. Mit diesen Elementen passen Sie die Exporte von Dastra an Ihre Marke an.
 
-## Wie importiere ich die Daten meines Verarbeitungsverzeichnisses im CNIL-Format?
+Dieser Bereich ist den Inhabern der Organisation vorbehalten.
 
-Sie haben ein bestehendes Verarbeitungsverzeichnis im CNIL-Format? Sie können es selbstverständlich in Dastra importieren. Dazu sind mehrere Schritte erforderlich:
+## Wie importiere ich mein Verarbeitungsverzeichnis im CNIL-Format?
 
-1: Verarbeitungsnamen importieren
+Sie können ein bestehendes Verarbeitungsverzeichnis im CNIL-Format in Dastra importieren. Der Import umfasst mehrere Schritte:
 
-2: Datensätze importieren
+1. Importieren Sie die Bezeichnungen der Verarbeitungstätigkeiten.
+2. Importieren Sie die Datenkategorien.
+3. Importieren Sie die Stakeholder.
+4. Importieren Sie die Sicherheitsmaßnahmen.
+5. Stellen Sie in den Verarbeitungstätigkeiten die Verknüpfungen zwischen diesen Objekten her.
 
-3: Akteure importieren
+Zum Import von Verarbeitungstätigkeiten siehe [Verzeichnis exportieren / importieren](../features/ropa/export-import.md). Wenn Sie Hilfe beim Import Ihres Verzeichnisses benötigen, [wenden Sie sich an den Support](../getting-started/support/request.md).
 
-4: Sicherheitsmaßnahmen importieren
+## Wie lösche ich eine Verarbeitungstätigkeit?
 
-5: Verknüpfungen zwischen den Objekten in den Verarbeitungen erstellen
+Das Löschen erfolgt in zwei Schritten, damit nichts versehentlich gelöscht wird. Verschieben Sie die Verarbeitungstätigkeit zuerst mit **In den Papierkorb verschieben** in den Papierkorb. Zeigen Sie dann in den Filtern mit **Papierkorb anzeigen** den Papierkorb an und wählen Sie **Löschen**, um sie endgültig zu löschen, oder **Wiederherstellen**, um sie wieder in das Verzeichnis aufzunehmen.
 
-Wenn Sie Unterstützung beim Import Ihres bestehenden Verzeichnisses wünschen, zögern Sie nicht, uns zu kontaktieren. Das ist eine gute Gelegenheit, es zu überprüfen!
-
-## Wie lösche ich eine Verarbeitung?
-
-Um böse Überraschungen zu vermeiden, haben wir eine Sicherheitsvorkehrung eingerichtet. Die Löschung erfolgt in zwei Schritten.
+Das vollständige Vorgehen steht in den [häufig gestellten Fragen](../features/ropa/faq.md#wie-loscht-man-eine-verarbeitungstatigkeit) zum Verzeichnis.
 
 ## Ich finde bestimmte Elemente nicht. Was kann ich tun?
 
-Wenn Sie ein Element nicht finden, auf das Sie Zugriff haben sollten, ist es möglicherweise aus folgenden Gründen nicht sichtbar:
+Wenn Sie ein Element nicht finden, auf das Sie Zugriff haben sollten, kann es aus einem der folgenden Gründe ausgeblendet sein:
 
-1.  Ein Filter ist aktiv und schränkt die Anzeige ein, wie unten mit der "(1)" dargestellt. Klicken Sie auf Filter löschen<br>
+1. Ein Filter ist aktiv und schränkt die Anzeige ein. Die Anzahl der aktiven Filter steht in Klammern auf der Schaltfläche, zum Beispiel „(1)“. Klicken Sie auf **Filter löschen**.
 
-    <figure><img src="../.gitbook/assets/Filter.png" alt=""><figcaption></figcaption></figure>
-2. Das Objekt ist mit einer Organisationseinheit verknüpft, auf die Sie keinen Zugriff haben oder für die Sie nicht die erforderlichen Rechte besitzen. Kontaktieren Sie den Verwalter Ihres Mandanten.
-3.  Das Objekt ist im **Papierkorb** oder unter **Sensible Daten** geführt und wird daher standardmäßig nicht in der Liste angezeigt. Sie können über das Filtermenü wählen, ob archivierte Elemente angezeigt werden sollen.<br>
+   <figure><img src="../.gitbook/assets/other-faq-1.png" alt="Liste des Verzeichnisses mit einem aktiven Filter und der Schaltfläche Filter löschen (1)"><figcaption><p>Ein aktiver Filter schränkt die Liste ein</p></figcaption></figure>
+2. Das Element ist mit einer Organisationseinheit verknüpft, auf die Sie keinen Zugriff haben oder für die Ihnen die nötigen Rechte fehlen. Wenden Sie sich an die Verantwortlichen Ihres Mandanten.
+3. Das Element befindet sich im Papierkorb und erscheint deshalb nicht mehr in der Standardliste. Klicken Sie auf **Filter** und aktivieren Sie **Papierkorb anzeigen**.
 
-    <figure><img src="../.gitbook/assets/Papierkorb, sensible daten.png" alt=""><figcaption></figcaption></figure>
-4. Schließlich sind möglicherweise fehlerhafte Einstellungen in Ihrem Browser gespeichert. Zur Überprüfung können Sie den privaten Modus verwenden. Wenn der private Modus das Problem löst, folgen Sie der unten beschriebenen Prozedur zum Löschen des lokalen Speichers Ihres Browsers.
+   <figure><img src="../.gitbook/assets/ropa-faq-3.png" alt="Bereich Filter des Verzeichnisses mit der Option Papierkorb anzeigen"><figcaption><p>Den Papierkorb anzeigen</p></figcaption></figure>
+4. Fehlerhafte Einstellungen sind in Ihrem Browser gespeichert. Öffnen Sie zur Prüfung Dastra in einem privaten Browserfenster. Wenn das Problem verschwindet, leeren Sie den lokalen Speicher Ihres Browsers nach dem Vorgehen der nächsten Frage.
 
-## Wie lösche ich den LocalStorage?
+## Wie leere ich den lokalen Speicher des Browsers?
 
-Sie haben ein Problem mit der Anwendung? Manchmal werden Sie aufgefordert, den LocalStorage zu löschen. Dabei handelt es sich um Speicherelemente des Webbrowsers, die für die Nutzung der Anwendung erforderlich sind und sich gewählte Einstellungen merken (z. B. Filter).
+Der lokale Speicher (localStorage) enthält Daten, die der Browser aufbewahrt, damit Dastra funktioniert und sich Ihre Einstellungen merkt, zum Beispiel Ihre Filter. Bei einem Anzeigeproblem kann der Support Sie bitten, ihn zu leeren.
 
-Hier die Vorgehensweise:
+Sie können auch die Schaltfläche **Präferenzdaten zurücksetzen** in Ihrem Nutzerprofil verwenden, die unter [Bekannte Probleme](known-problems.md) beschrieben ist.
 
 ### Google Chrome
 
-1. "Hamburger"-Menü / Weitere Tools / Entwicklertools (F12)
-2. Menü Application / Storage / Local Storage
-3. Rechtsklick: "Clear"
-4. Seite aktualisieren (F5)
+1. Öffnen Sie das Browsermenü und dann **Weitere Tools** > **Entwicklertools** (F12).
+2. Öffnen Sie den Tab **Application** und dann **Storage** > **Local storage**.
+3. Klicken Sie mit der rechten Maustaste auf die Dastra-Adresse und wählen Sie **Clear**.
+4. Aktualisieren Sie die Seite (F5).
 
 ### Mozilla Firefox
 
-1. "Hamburger"-Menü / Web-Entwickler / Entwicklertools (F12)
-2. Menü Speicher / Lokaler Speicher
-3. Rechtsklick: "Alles löschen"
-4. Seite aktualisieren (F5)
+1. Öffnen Sie das Browsermenü und dann **Weitere Tools** > **Web-Entwickler** > **Entwicklertools** (F12).
+2. Öffnen Sie den Tab **Speicher** und dann **Lokaler Speicher**.
+3. Klicken Sie mit der rechten Maustaste auf die Dastra-Adresse und wählen Sie **Alles löschen**.
+4. Aktualisieren Sie die Seite (F5).
