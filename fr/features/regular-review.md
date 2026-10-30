@@ -1,91 +1,86 @@
-# Revue régulière (fraicheur)
+---
+description: >-
+  Activez la revue régulière pour que Dastra vous rappelle de revoir vos
+  éléments : traitements, acteurs, actifs, systèmes d'IA, contrats et points de
+  contrôle.
+---
 
-### Qu'est ce que l'indicateur de fraîcheur ?
+# Revue régulière (fraîcheur)
 
-La fraicheur est un indicateur sur le dernier passage en revue d'un élément dans Dastra. Il peut s'agir d'un traitement, d'un objet de votre référentiel ou même d'un contrat. En activant cette fonctionnalité vous allez définir une date de revue future de l'objet, et la fraicheur se dégradera au fur et à mesure que cette date approchera. Cette fonctionnalité est un moyen simple et ludique pour garantir que vous révisez régulièrement les informations renseignées dans l'application.
+La fraîcheur indique à quand remonte le dernier passage en revue d'un élément. En activant la revue régulière pour un type d'élément, vous définissez un intervalle entre deux revues. Chaque revue fixe une date de prochaine revue, et la fraîcheur diminue à l'approche de cette date. Vous vous assurez ainsi que les informations saisies dans Dastra sont revues régulièrement.
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-schema-timeline.png" alt=""><figcaption><p>Schéma de fonctionnement de l'indicateur de fraicheur</p></figcaption></figure>
+La revue régulière est disponible pour les traitements de données, les acteurs, les actifs, les systèmes d'IA, les contrats et les points de contrôle de la gestion des risques, selon les modules de votre abonnement. Les spécificités des traitements sont détaillées dans [Fraîcheur des traitements](ropa/freshness.md).
 
-### Comment activer l'indicateur de fraicheur ?
+<figure><img src="../.gitbook/assets/revue-fraicheur-schema-timeline.png" alt="Schéma de fonctionnement de l'indicateur de fraîcheur"><figcaption><p>Schéma de fonctionnement de l'indicateur de fraîcheur</p></figcaption></figure>
 
-Pour activer la fraicheur d'un type d'objet, rendez vous dans les réglages de votre espace de travail et sélectionnez l'onglet _Revues régulières_.
+## Activer la revue régulière
 
-<figure><img src="../.gitbook/assets/settings-revue-reguliere-parametres.png" alt=""><figcaption><p>Le menu de configuration de la revue régulière (fraicheur)</p></figcaption></figure>
+Seuls les utilisateurs qui disposent de la permission **Configuration avancée** peuvent modifier ce réglage.
 
-Vous pouvez depuis ce menu activer la fraicheur pour les différents objets disposant de la fonctionnalité en cliquant sur le menu déroulant de sélection de l'objet.
+1. Dans le menu de gauche, cliquez sur **Réglages espace de travail**, puis, sous **Processus**, sur **Revues régulières**. Vous pouvez aussi cliquer sur **Configurer revue régulière** dans le menu d'options de la liste d'un module : l'entrée indique si la revue est déjà activée pour ce type d'élément.
+2. Dans le sélecteur en haut de la page, choisissez le type d'élément.
+3. Activez **Activer la revue régulière de l'élément**.
+4. Dans **Sélectionnez l'intervalle souhaité entre chaque revue**, saisissez l'intervalle en années, en mois ou en jours.
+5. Cliquez sur **Enregistrer**.
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-selector-type-objet.png" alt=""><figcaption><p>La liste des objets pour lesquels vous pouvez activer la fraicheur</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/regular-review-1.png" alt="Les réglages Revues régulières avec le sélecteur de type d'élément, l'option d'activation et l'intervalle"><figcaption><p>Les réglages Revues régulières</p></figcaption></figure>
 
-Cochez l'option activer la revue régulière de l'élément et paramétrez **l'intervalle de temps souhaité entre chaque revue**.
+<figure><img src="../.gitbook/assets/regular-review-2.png" alt="La liste des types d'éléments pour lesquels la revue régulière est disponible"><figcaption><p>Les types d'éléments disponibles</p></figcaption></figure>
 
-La fraicheur d'un élément correspond au nombre de jours entre la dernière date à laquelle l'élément a été marqué comme frais et sa date de revue future.
+L'intervalle est le même pour tous les éléments d'un même type. Une fois enregistré, Dastra demande **Appliquer le nouvel intervalle ?** :
 
-La date de revue est une date dans le futur calculée à partir de la dernière date à laquelle l'élément a été marqué comme frais à laquelle nous ajoutons **l'intervalle de temps souhaité entre chaque revue**.
+* **Appliquer à toutes les revues existantes** remplace toutes les dates de prochaine revue déjà renseignées par de nouvelles dates calculées avec le nouvel intervalle ;
+* **Appliquer uniquement aux prochaines revues** conserve les dates existantes, et le nouvel intervalle s'applique à partir de la prochaine revue.
 
-Veuillez noter que cet intervalle de péremption sera le même pour tous les éléments du même type pour lesquels la revue est active.
+## Désactiver la revue régulière
 
-### Désactiver l'option fraicheur
+Dans les mêmes réglages, choisissez le type d'élément, désactivez **Activer la revue régulière de l'élément** et cliquez sur **Enregistrer**.
 
-Pour désactiver l'option, il vous suffit de décocher la case _Activer la revue régulière de l'élément_ depuis la section Revues régulières des réglages de votre espace de travail.
+## Afficher la fraîcheur
 
-### Visualisation de l'indicateur de fraicheur
+La fraîcheur ne s'affiche que pour les éléments **publiés** qui ont été revus au moins une fois.
 
-Tous les objets disposant de la fonctionnalité disposent d'une colonne "Date de dernière revue" que vous pouvez ajouter aux tableaux récapitulatifs. Cette colonne vous permettra de suivre l'état de fraicheur de chaque élément.
+Tous les éléments concernés disposent d'une colonne **Date de dernière revue**, que vous pouvez ajouter aux colonnes de la liste. Elle affiche l'état de fraîcheur de chaque élément.
 
-Veuillez noter que la fraicheur ne s'affiche que pour les **éléments publiés.**
+<figure><img src="../.gitbook/assets/regular-review-3.png" alt="Une liste avec la colonne Date de dernière revue"><figcaption><p>La colonne Date de dernière revue</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-liste.png" alt="La colonne &#x22;Date de dernière revue&#x22;"><figcaption><p>La colonne "Date de dernière revue"</p></figcaption></figure>
+Sur la fiche d'un traitement ou d'un système d'IA, le panneau de droite affiche aussi la barre **Fraîcheur**, qui diminue à l'approche de la date de prochaine revue. À côté de l'état et de sa couleur, vous voyez le lien **Passer en revue** et le nombre de jours restants ou de retard.
 
-Vous retrouvez également cet indicateur dans le menu de raccourcis des éléments.
+<figure><img src="../.gitbook/assets/regular-review-4.png" alt="Le panneau de fraîcheur d'une fiche de traitement avec la barre, l'état et le lien Passer en revue"><figcaption><p>L'indicateur de fraîcheur d'une fiche de traitement</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-toolbar-frais.png" alt=""><figcaption><p>l'indicateur de fraicheur dans le menu de raccourcis d'un élément</p></figcaption></figure>
+### Les états de fraîcheur
 
-### Visualisation de l'indicateur de fraicheur dans le cas spécifique du registre des traitements
-
-L'affichage de la fraicheur dans le cadre d'un traitement de données est un peu plus poussé que sur les autres éléments disposant de la fonctionnalité.
-
-Vous retrouverez l'indicateur de fraicheur en haut à droite de votre fiche de traitement (dans la mesure où le traitement a été publié et marqué comme étant frais au moins une fois)
-
-Cet indicateur est composé d'un label prenant les valeurs "Frais", "E en attente" et "Dépassé", d'une couleur (respectivement vert, jaune, rouge), d'une barre de progression diminuant à mesure que la date de péremption approche, d'un bouton pour marquer le traitement comme frais et du nombre de jours restants ou de retard par rapport à la date de péremption.
-
-<figure><img src="../.gitbook/assets/revue-fraicheur-fiche-panneau.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/revue-fraicheur-toolbar-indicateurs.png" alt=""><figcaption><p>En vue mobile, vous retrouvez également cet indicateur dans la barre de navigation en haut de votre fiche de traitement</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/revue-fraicheur-badge-perime.png" alt=""><figcaption><p>Exemple de traitement périmé</p></figcaption></figure>
-
-### Règles d'affichage des statuts de revue
-
-Il y a 3 statuts possibles s'agissant de la fraîcheur d'un traitement : frais, en attente ou dépassé. Par défaut, les règles d'affichage suivantes s'appliquent :
-
-<table><thead><tr><th width="258">Statut de revue</th><th>Règle d'affichage</th></tr></thead><tbody><tr><td>Frais (couleur verte)</td><td><p>L'élément a été revu récemment et ne requière pas d'attention immédiate.</p><p><br>Ce statut s'affiche jusqu'à ce que la date de jour soit dans les 10 derniers pourcents de l'intervalle prévue par rapport à la dernière revue.</p></td></tr><tr><td>En attente (couleur orange)</td><td><p>L'élément doit être vérifié.<br></p><p>Ce statut s'affiche lors des dix derniers pourcents de l'intervalle prévue par rapport à la dernière revue.</p></td></tr><tr><td>Dépassé (couleur rouge)</td><td>L'élément n'est plus conforme à la politique de revue.<br><br>Ce statut s'affiche lorsque la date du jour est supérieure à la date de derniere revue + l'intervalle défini.</td></tr></tbody></table>
+| État | Règle d'affichage |
+| --- | --- |
+| **Frais** (vert) | L'élément a été revu récemment et ne demande pas d'attention immédiate. Cet état s'affiche tant que la date du jour n'est pas dans les derniers 10 % de l'intervalle. |
+| **Bientôt périmé** (orange) | L'élément doit être vérifié. Cet état s'affiche pendant les derniers 10 % de l'intervalle qui suit la dernière revue. |
+| **Périmé** (rouge) | La date de prochaine revue est dépassée : l'élément n'est plus conforme à la politique de revue. |
 
 {% hint style="info" %}
-**Exemple :**
-
-J'ai défini 1 an d'intervalle pour la revue des traitements. Pour un traitement revu le 1er janvier :
-
-* il sera affiché frais jusqu'au 25 novembre
-* il sera affiché en attente du 25 novembre
-* Au 31 décembre il sera ensuite affiché dépassé tant qu'il ne sera pas revu.
+**Exemple :** vous avez défini un intervalle de 1 an. Un élément revu le 1er janvier 2026 s'affiche **Frais** jusqu'à fin novembre 2026, puis **Bientôt périmé** jusqu'au 1er janvier 2027. Au-delà, il s'affiche **Périmé** tant qu'il n'est pas revu.
 {% endhint %}
 
-### Rafraichir un élément
+## Passer en revue un élément
 
-Vous pouvez à tout moment, et sans forcément attendre la date de prochaine revue, décider de passer en revue l'élément. Pour ce faire, cliquez sur la cellule de la colonne "Date de dernière revue" d'un élément lorsque vous êtes dans une vue tableau. Il faut bien sur que la fonctionnalité soit active pour cet élément et que vous affichiez la colonne en question.
+Vous pouvez passer un élément en revue à tout moment, sans attendre la date de prochaine revue. Dans une liste, cliquez sur la cellule de la colonne **Date de dernière revue** de l'élément. Sur la fiche d'un traitement ou d'un système d'IA, cliquez sur **Passer en revue**.
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-badge-frais.png" alt=""><figcaption><p>Accéder à la fenêtre de revue régulière de l'élément</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/regular-review-5.png" alt="La fenêtre Passer en revue avec ses champs"><figcaption><p>La fenêtre Passer en revue</p></figcaption></figure>
 
-Vous pouvez également y accéder directement depuis la vue d'édition de l'élément que vous souhaitez passer en revue en cliquant sur l'icône fraicheur située dans le menu de raccourcis.
+Dans l'onglet **Nouvelle revue**, renseignez :
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-fiche-badge.png" alt=""><figcaption><p>L'icône fraicheur à cliquer pour accéder à la revue d'un élément.</p></figcaption></figure>
+* **Responsable de la revue** : l'utilisateur qui a réalisé la revue ;
+* **Date de revue** ;
+* **Description de la version** (facultatif) : ce qui a été vérifié ou modifié ;
+* **Date avant la prochaine revue** : calculée à partir de l'intervalle défini dans les réglages. Pour fixer une date propre à cet élément, activez **Changer la date de prochaine revue** et choisissez une date (au plus tôt le lendemain).
 
-Vous accéderez alors à la fenêtre de passage en revue de l'élément. A noter qu'il est possible de consulter les anciennes revues depuis cette fenêtre. L'onglet « Anciennes revues » propose aussi le bouton **Supprimer toutes les revues**, qui efface l'historique des revues de l'élément ; une confirmation en détaille les conséquences, car l'action est irréversible.
+Cliquez sur **Passer en revue** pour enregistrer : un nouveau cycle de fraîcheur démarre à la date de revue.
 
-<figure><img src="../.gitbook/assets/revue-fraicheur-modal-passer-en-revue.png" alt=""><figcaption><p>La fenêtre de passage en revue d'un élément</p></figcaption></figure>
+L'onglet **Anciennes revues** liste les revues passées de l'élément. Il propose aussi le bouton **Supprimer toutes les revues**, qui efface l'historique. Après confirmation, l'élément est considéré comme n'ayant jamais été revu, ses dates de revue sont effacées et l'indicateur de fraîcheur disparaît. Cette action est irréversible.
 
-En passant un élément en revue, vous relancerez un cycle de fraicheur à partir de la date du jour et ce jusqu'à la prochaine date de revue. La date de revue est calculée par défaut en fonction du réglage de l'intervalle de revue de l'élément (voir plus haut). Vous pouvez décider d'ignorer cette date par défaut et appliquer une date de péremption spécifique à cet élément en cochant l'option "Changer la date de prochaine revue" et en sélectionnant une nouvelle date (la date de prochaine revue doit au minimum être fixé à J+1)
+## Suivre les revues sur le tableau de bord
 
-### Notifications
+La tuile **Traitements de données** du [tableau de bord](dashboard.md) affiche l'indicateur **Revue nécessaire** : le nombre de traitements à revoir au regard de l'intervalle défini, et le nombre de traitements frais.
 
-Le créateur de l'élément, ainsi que les utilisateurs associés à l'élément (les propriétaires par exemple dans le cas des traitements), lors du passage à l'état périmé d'un élément, seront notifiés par email pour leur rappeler que l'élément n'a pas été révisé depuis longtemps et qu'il est temps de le rafraichir.
+## Notifications
+
+Lorsqu'un élément passe à l'état périmé, son créateur et les utilisateurs qui lui sont associés (par exemple les propriétaires d'un traitement) sont notifiés par e-mail : l'élément n'a pas été revu depuis longtemps et il est temps de le rafraîchir.

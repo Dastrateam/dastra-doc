@@ -1,30 +1,38 @@
 ---
-description: Learn how to integrate Dastra into your favorite data analysis tool!
+description: >-
+  Connect your Dastra custom reports to Power BI, Google Looker or Tableau, with
+  data that refreshes automatically.
 ---
 
 # Integration with data analysis tools (BI)
 
 {% hint style="info" %}
-To use this feature, your subscription must include the **Enterprise** plan.
+To use this feature, your subscription must include the **Enterprise** plan and you must have the **Advanced configuration** permission.
 {% endhint %}
 
-Dastra makes it easy to import [customized reports](README.md) into your favorite BI tool (Power BI, Google Looker, Tableau Software...). The advantage of using this feature is that you can benefit from the power of BI tools to analyze data in depth, while having reports that refresh automatically
+Dastra lets you import [custom reports](README.md) into your BI tool (Power BI, Google Looker, Tableau Software, etc.). You analyze the data in depth with your tool, and the reports refresh automatically.
 
-### Setting up in Dastra
+## Set up in Dastra
 
-Go to the customized reports module, access one of them and click on the “Integrate with a BI tool” button.&#x20;
+1. In the **Reporting** module, open a report and click **Connect BI Tools**.
+2. In the window that opens, click **Create connect link**. The link is copied to your clipboard.
 
-A modal window opens, click on “Create integration link”.&#x20;
+The window then shows two tabs, depending on how your tool connects:
 
-Copy the generated link&#x20;
+* **Link**: the public address of the report, to paste into the tool. Anyone who has this link can access the raw data of the report.
+* **Authentication (Bearer)**: the **Service url** and the **Authentication token**, to enter separately. Your tool sends the token in the HTTP header `Authorization: Bearer <token>`. Prefer this tab when your tool can add a header: the address alone then gives no access to the data.
+
+<figure><img src="../../.gitbook/assets/reports-bi-tools-1.png" alt="The BI tools connection window with the Link and Authentication (Bearer) tabs"><figcaption><p>The BI tools connection window</p></figcaption></figure>
 
 {% hint style="warning" %}
-Please note! Do not transfer the generated link to anyone. It will give you access to the raw data in the report.
+Do not pass the link or the token to anyone who should not see the data of the report.
 {% endhint %}
 
+To cut off access, click **Remove connection** in the same window, then confirm. The link and the token stop working: you can create a new connection with **Create connect link**.
 
+## Set up in the BI tool
 
-## Power BI:
+### Microsoft Power BI
 
 1. **Open Power BI Desktop :**
    * Launch Power BI Desktop on your machine.
@@ -36,8 +44,8 @@ Please note! Do not transfer the generated link to anyone. It will give you acce
    * Make sure the URL points to a JSON file or API that returns JSON data.
    * Click on OK.
 4. **Authentication (if required):**
-   * If the URL requires authentication (for example, if it is protected by a password or API key), Power BI will ask you to log in.
-   * Select the appropriate authentication type (e.g. Anonymous, OAuth2, API Key, etc.) and enter your credentials if necessary.
+   * With the link from the **Link** tab, no authentication is needed: select **Anonymous**.
+   * With the **Authentication (Bearer)** tab, enter the **Service url** in step 3, then click **Advanced** and add, in the HTTP request header parameters, the `Authorization` header with the value `Bearer ` followed by the token. Then select **Anonymous**.
 5. **Access JSON data:**
    * Power BI will connect to the URL and retrieve the JSON file.
    * Once successfully connected, a JSON data preview window will appear. You can explore the data in the form of nested lists, objects or tables.
@@ -49,9 +57,9 @@ Please note! Do not transfer the generated link to anyone. It will give you acce
 
 
 
-## Google Looker <a href="#google-looker" id="google-looker"></a>
+### Google Looker <a href="#google-looker" id="google-looker"></a>
 
-Google Looker connects easily to Google BigQuery, a Google Cloud data warehouse that can store and process JSON files.
+Google Looker connects to Google BigQuery, a Google Cloud data warehouse that can store and process JSON files.
 
 **1. Using Google BigQuery as a data source**
 
@@ -82,7 +90,7 @@ If you need to automate the integration of JSON data from an API or external fil
 
 
 
-## Tableau Software <a href="#tableau-software" id="tableau-software"></a>
+### Tableau Software <a href="#tableau-software" id="tableau-software"></a>
 
 **1. Open Tableau Desktop** :
 
@@ -97,10 +105,10 @@ If you need to automate the integration of JSON data from an API or external fil
 
 * You'll need to enter the URL of the JSON file or API in the window that appears.
 
-**4. Authentication (if required):**
+**4. Authentication:**
 
-* If the JSON URL requires some form of authentication (e.g. an API key, OAuth token, or login credentials), Tableau will ask you for credentials to access it.
-* Select the appropriate authentication type (e.g. API Key or OAuth) and enter the necessary information.
+* With the link from the **Link** tab, no authentication is needed.
+* If your connector can add an HTTP header, use the **Authentication (Bearer)** tab: enter the **Service url** and the header `Authorization: Bearer <token>`.
 
 **5. Analyze JSON data in Tableau :**
 

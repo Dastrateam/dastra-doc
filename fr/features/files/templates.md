@@ -1,15 +1,18 @@
+---
+description: >-
+  Téléchargez des modèles de documents prêts à l'emploi depuis la section
+  Ressources de Veille et ressources.
+---
+
 # Modèles de documents
 
-Vous cherchez des modèles de documents ? C'est par ici ! :thumbsup:
+Dastra propose des modèles de documents, par exemple pour votre documentation de conformité. Ils se trouvent dans le module **Veille et ressources**.
 
-Pour accéder aux ressources documentaires, il faut se rendre dans le module "Veille et ressources" et cliquer sur "Ressources"
+1. Dans le menu de gauche, sous **Ressources**, cliquez sur **Veille et ressources**.
+2. Ouvrez l'onglet **Ressources**.
 
-<figure><img src="../../.gitbook/assets/ged-veille-onglet-ressources.png" alt=""><figcaption><p>Accès aux ressources</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ged-veille-onglet-ressources.png" alt="L'onglet Ressources du module Veille et ressources"><figcaption><p>Accès aux ressources</p></figcaption></figure>
 
-Vous n'avez plus qu'à sélectionner les modèles
+Sélectionnez le modèle voulu. Les modèles sont disponibles en téléchargement au format Word.
 
-<figure><img src="../../.gitbook/assets/getting-started-models-doc-card.png" alt=""><figcaption></figcaption></figure>
-
-Les modèles sont disponibles en téléchargement au format Word.
-
-<figure><img src="../../.gitbook/assets/getting-started-news-feed-documents.png" alt=""><figcaption><p>Exemples de modèles de documents</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/getting-started-news-feed-documents.png" alt="Des exemples de modèles de documents dans les ressources"><figcaption><p>Exemples de modèles de documents</p></figcaption></figure>

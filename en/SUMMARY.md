@@ -74,7 +74,7 @@
   * [Repositories](features/mapping/repositories/README.md)
     * [Assets](features/mapping/repositories/assets.md)
   * [Generic relationships](features/mapping/relationships.md)
-* [Document management](features/files/README.md)
+* [File manager](features/files/README.md)
   * [Document templates](features/files/templates.md)
 * [Record of processing activities](features/ropa/README.md)
   * ["Data controller" record](features/ropa/controller.md)
@@ -232,7 +232,7 @@
     * [Compliance monitoring](features/compliance/projects/monitoring.md)
     * [Audits](features/compliance/projects/audits.md)
 * [Regular review (freshness)](features/regular-review.md)
-* [Custom Reporting](features/reports/README.md)
+* [Custom reports](features/reports/README.md)
   * [Integration with data analysis tools (BI)](features/reports/bi-tools.md)
 * [AI systems](features/ai-systems/README.md)
   * [Import your AI systems](features/ai-systems/import.md)
@@ -278,7 +278,7 @@
 
 ## PARTNERS
 
-* [Portal](partners/portal.md)
+* [Partner portal](partners/portal.md)
 
 ## 📄 API documentation <a href="#api" id="api"></a>
 

@@ -1,50 +1,56 @@
 ---
-description: Learn how to use the Dastra dashboard.
+description: >-
+  The dashboard is the home page of your workspace: it summarizes your GDPR
+  compliance with one tile per module that you can reorder.
 ---
 
 # Dashboard
 
-## Introduction&#x20;
+The dashboard is the first page you see when you enter a workspace. It summarizes the state of your GDPR compliance and gives access to the modules. To come back to it from any page, click **Home** at the top of the left menu.
 
-The Dastra dashboard is the first page you see when you enter your workspace, and is a summary of your RGPD compliance.&#x20;
+## The areas of the screen
 
-It's composed of 3 main sections:&#x20;
+The screen has three areas:
 
-* The feature bar on the left of the screen,&#x20;
-* The selector of organizational unit
-* Your role in this workspace
-* The last release note (for a review of the new features)
-* The section in the center containing the tiles summarizing the news and the watch of your space, and the different features.
+* **The left menu**: the workspace selector, which also shows your roles in the workspace, then the modules grouped under **Data inventory**, **Operations**, **Governance**, **Automations** and **Resources**. The **Invite a member** button and the **Workspace settings** entry are at the bottom of the menu. A module only appears if your subscription includes it and your permissions give you access to it.
+* **The central section**: above the tiles, depending on your permissions and subscription, you find the AI agent prompt (**How can I help you today?**), the card of the latest release note, the **Progression** card (the getting started guide) and the **Project presentation**, a free text that introduces the workspace to its users.
+* **The community tab**, on the right of the screen: it opens the **Upcoming webinars** panel. You can collapse the panel; the tab then stays on the right of the screen to reopen it, and your choice is remembered in your browser.
 
-<figure><img src="../.gitbook/assets/sans-titre.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dashboard-1.png" alt="The dashboard with the left menu, the release note card, the getting started guide and the tiles"><figcaption><p>The dashboard of a workspace</p></figcaption></figure>
 
-## The tiles of the dashboard
+## The dashboard tiles
 
-In the section containing the tiles, you can change the order of appearance of these tiles by clicking on the drag and drop button to move the order of appearance of the tile.
+The tiles summarize the activity of each module. By default, they appear in this order, for the modules you have access to:
 
-<figure><img src="../.gitbook/assets/dashboard-processing-tasks-widgets.png" alt=""><figcaption><p>An example of tile</p></figcaption></figure>
+* **Record of processing activities**
+* **Compliance**
+* **Latest news**
+* **Tasks**
+* **Requests over the last 90 days**
+* **Last incidents**
+* **Contracts & Policies**
+* **AI Systems**
+* **Risk management**
+* **Your questionnaires**
+* **Assets**
 
-There are several **categories of tiles** available in the dashboard:&#x20;
+Most tiles (processing activities, tasks, requests, incidents, contracts, AI systems, risks and questionnaires) have an organizational unit filter. Use it to limit the tile to the items of one entity or department.
 
-* **News**&#x20;
-* **Data processing (ROPA)**
-* **Risk analysis**&#x20;
-* **Assessments**
-* **Deadline tasks**&#x20;
-* **Data subjects rights**
-* **Cookie consent widget**&#x20;
-* **Latest data breaches** &#x20;
-* **Asset management**
+### Reorder the tiles
 
-## How to share the dashboard?&#x20;
+To change the order of the tiles, drag the handle next to a tile, or click the **Move up** and **Move down** buttons that come with it. The order is saved in your browser: it does not change for other users.
 
-You can also print the dashboard or invite a user directly by clicking on one of the buttons at the top right of the tiles section.
+<figure><img src="../.gitbook/assets/dashboard-2.png" alt="A dashboard tile with its handle, the Move up and Move down buttons and its organizational unit filter"><figcaption><p>A tile and its move controls</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/capture-d-e-cran-2023-06-07-a-11.03.28.png" alt="" width="257"><figcaption><p>The print and invite a user buttons</p></figcaption></figure>
+## Invite a member
 
-## For more information
+If you have the right to manage users, the **Invite a member** button appears at the bottom of the left menu. It opens the form to invite a new user. For the details of the fields, see [Invite users](../getting-started/setup/users.md).
 
-Explore the features now:
+<figure><img src="../.gitbook/assets/dashboard-3.png" alt="The invitation form opened from the Invite a member button"><figcaption><p>The form to invite a member</p></figcaption></figure>
+
+## Go further
+
+Explore the features:
 
 {% content-ref url="ropa/README.md" %}
 [editer-le-registre](ropa/README.md)

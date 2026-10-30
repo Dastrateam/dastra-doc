@@ -1,12 +1,14 @@
 ---
-description: Learn how to manage documents and files in Dastra.
+description: >-
+  Centralize in the Dastra file manager the documents that prove your
+  compliance: document creation, folders, access rights and cloud storage.
 ---
 
-# Document management
+# File manager
 
-Dastra natively integrates a **document management module** that allows you to centralise and share access to all documents associated with your compliance work.
+Dastra natively integrates a file manager, also called GED (electronic document management) in French. It centralizes and shares access to all the documents associated with your work in Dastra. You find the module under **Resources** > **File Manager** in the left menu.
 
-This is where you can store all documentation useful for proving your GDPR compliance — from internal procedures and policies to training records, DPIAs and contracts.
+This is where you can store all the documentation that helps prove your GDPR compliance.
 
 {% hint style="info" %}
 **Focus on GDPR documentation**
@@ -36,58 +38,76 @@ Many formats are supported:
 * Excel (.xlsx)
 * Images (JPG, PNG, etc.)
 * Archives (.zip)
-* And many more
+* And more
 
-{% hint style="info" %}
-If a specific format is not accepted, you can add it to a `.zip` archive and upload that instead.
-{% endhint %}
+If a format is not accepted, put the file in a `.zip` archive and upload that instead.
 
-## Creating a document
+## Create a document
 
-With Dastra, you can quickly create a document for note-taking directly in the platform.
+You can write a document directly in Dastra, for example to take notes. In the file manager, click **Write a document**.
 
-Go to the document management module and click **"Write a document"**.
+<figure><img src="../../.gitbook/assets/files-1.png" alt="The file manager toolbar with the Write a document button"><figcaption><p>The Write a document button</p></figcaption></figure>
 
-The new document is saved in **Markdown format** (.md) and can be edited directly in Dastra.
+Enter the label of the document, then its content in the Markdown editor. The document is saved in Markdown format (.md).
+
+<figure><img src="../../.gitbook/assets/files-2.png" alt="The document editor with the Generate with AI button"><figcaption><p>The document editor</p></figcaption></figure>
 
 ### Generate a document with AI
 
-The AI assistant can **automatically generate a document** from a prompt and, where needed, additional files provided as context.
+The AI assistant can **generate a document** from a description and, if needed, files or a website address provided as context.
 
-To use it, click **"Generate with AI"** in the document management module, describe the document you need (type, purpose, expected content) and optionally attach existing files to enrich the context. The assistant generates the document directly in Dastra, where you can then review, edit and save it.
-
-{% hint style="info" %}
-This feature is particularly useful for quickly drafting data protection policies, internal procedures, or any other GDPR compliance documentation.
-{% endhint %}
-
-## Creating folders
-
-You can organise your documents into folders for easy retrieval. Sub-folders are supported.
-
-## Access rights management
-
-It is possible to restrict access to specific folders and files. Permissions can be assigned to both folders and files, and can be configured by the workspace administrator or any user with the "File management: manage" permission.
+To use it, click **Write a document**, then **Generate with AI** in the editor. Briefly describe the document you need (type, purpose, expected content) and optionally add files to enrich the context. The generated text appears in the editor: review it, edit it and save it. The button is only active if the AI assistant is available in your subscription.
 
 {% hint style="info" %}
-**Important:** By default, no restrictions are applied to the folder tree. User role permissions are still enforced.
+This feature is useful to draft a first version of a data protection policy, an internal procedure or any other compliance document.
 {% endhint %}
 
-The workspace owner (or administrator) can configure access rights by clicking the settings icon on the relevant row, then adding teams and users with the appropriate permission level.
+## Create a folder
 
-Permissions are applied to all **child elements** (i.e. all items contained within the folder, including sub-folders).
+Organize your documents in folders so you can find them. Click **Create folder**, name it and choose its location: sub-folders are supported.
+
+<figure><img src="../../.gitbook/assets/files-3.png" alt="The folder creation window"><figcaption><p>The folder creation window</p></figcaption></figure>
+
+## Manage access rights
+
+You can restrict access to folders and files. Rights apply to folders as well as files. They are configured by the workspace administrator or by a user allowed to manage files.
+
+{% hint style="info" %}
+By default, no restrictions are applied to the folder tree. The permissions linked to the user's roles still apply.
+{% endhint %}
+
+On the row of a folder or a file, click the **File access** button, then add the teams and users with the permission level you want.
+
+<figure><img src="../../.gitbook/assets/files-4.png" alt="The window to manage the access rights of a folder"><figcaption><p>The access rights window</p></figcaption></figure>
+
+These permissions apply to all child elements, that is, everything the folder contains, sub-folders included.
 
 {% hint style="info" %}
 A folder with no defined permissions is accessible to all users.
 
-If permissions have been defined or inherited on an element, it will be hidden from users who do not have the required authorisations.
+If permissions are defined or inherited on an element, it is hidden from users who do not have the required authorizations.
 {% endhint %}
 
-## Cloud storage integration
+## Files from other modules
 
-By default, Dastra stores files on a secure Azure Blob Storage system (encrypted, virus-scanned, redundant). You can also connect your own cloud storage provider — Google Drive or OneDrive — to avoid duplicating files across systems.
+The files attached to processing activities, assets, stakeholders and contracts can be stored in the file manager, in a dedicated folder. They are then visible to all the users allowed to view files: you need to manage access to the folders.
+
+To choose this default behavior, click **Workspace settings** > **General**, then, in the **File manager** card, turn on **Upload files in GED by default**. If you turn the option off, files stay attached to their item and do not appear in the file manager, which can make access management simpler.
+
+<figure><img src="../../.gitbook/assets/files-5.png" alt="The File manager card in the general settings of the workspace"><figcaption><p>The option to upload files by default</p></figcaption></figure>
+
+Users who can manage files have three additional commands:
+
+* **View files not in file manager**, in the **Filters** menu of the file manager, lists the files that are not stored there.
+* **Move to common file manager** moves a file into the file manager, in the folder of your choice.
+* **Remove from common file manager** takes the file out of the file manager: the file is kept, but other users can no longer discover it.
+
+## Cloud storage
+
+By default, Dastra stores files on Azure Blob Storage: they are encrypted, scanned for viruses and redundant. You can also connect your own storage, Microsoft OneDrive & SharePoint or Google Drive, to avoid duplicating files between systems.
 
 {% content-ref url="../settings/cloud-storage.md" %}
-[integrations-onedrive-google-drive.md](../settings/cloud-storage.md)
+[cloud-storage.md](../settings/cloud-storage.md)
 {% endcontent-ref %}
 
 ## Document templates
@@ -95,5 +115,5 @@ By default, Dastra stores files on a secure Azure Blob Storage system (encrypted
 Dastra provides ready-to-use document templates to help you build your compliance documentation.
 
 {% content-ref url="templates.md" %}
-[document-templates.md](templates.md)
+[templates.md](templates.md)
 {% endcontent-ref %}
