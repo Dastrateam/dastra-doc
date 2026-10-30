@@ -25,6 +25,8 @@ Cette cartographie facilite la constitution des traitements, puisque vous partez
 
 Si vous ne souhaitez pas faire cet inventaire, ou si les logiciels que vous utilisez sont standards, créez votre référentiel d'actifs à partir de la bibliothèque de modèles prédéfinis, qui contient les actifs courants du marché (Salesforce, Jira, etc.).
 
+Pour suivre un flux de l'éditeur jusqu'au traitement, voir [Cartographier un flux de données](../../examples/data-mapping.md).
+
 ## Accéder à la cartographie
 
 1. [Accédez à votre espace de travail](../../getting-started/setup/workspace.md#accedez-a-un-espace-de-travail).

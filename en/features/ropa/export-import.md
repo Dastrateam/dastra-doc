@@ -65,6 +65,33 @@ Importing an existing record can be tedious if you have many processing activiti
 No organizational unit is created during the import. Data from fields that are not part of the template is placed in the HTML description fields.
 {% endhint %}
 
+### Import a JSON file
+
+The JSON format is the one of the **JSON** export of the record. It carries complete processing activities, which makes it the format to copy activities from one workspace to another. Choose **JSON**, select the **Organizational unit** in which the processing activities will be created, then drop the file. The window then lists the processing activities created and the items that already existed.
+
+The file has the structure of the export: `$schema`, `version`, `date`, `label`, `source` and a `records` array, with one processing activity per entry.
+
+What the import accepts:
+
+* a file exported from Dastra with the version `1.4`. Another version is refused with the message "Incorrect version of your JSON import file (required version : 1.4)";
+* all the content of an entry: the general information, the purposes, the datasets and their retention rules, the assets, the recipients and stakeholders, the categories of data subjects, the security measures, the tags and the custom fields;
+* an entry with the same label as an existing processing activity: it creates a new one, it never overwrites;
+* the stakeholders, assets, datasets, categories of data subjects, security measures and tags of an entry: when an item with the same name already exists in the workspace, Dastra reuses it, otherwise it creates it;
+* the owners of an entry, when they are users of the organization. The others are skipped.
+
+What the import ignores or resets:
+
+* the identifiers: every processing activity gets a new one;
+* the organizational unit of the file: all the activities go to the unit you selected;
+* the status and the workflow step: the activities are created as drafts, on the first step of the workflow;
+* the creator, the creation date and the review dates: the creator is the person who imports, and the dates start again;
+* the risk level and the scores: Dastra calculates them again;
+* the relationships between processing activities (parent, child, related).
+
+Each entry is checked before anything is created. If one entry is invalid, for example a required field is empty, the import stops with the message "Error on data processing" followed by its label and its line number, and nothing is created.
+
+The import requires the permission to import processing activities.
+
 ### Standard import, step by step
 
 To avoid filling in each processing activity by hand and to handle every possible record format, Dastra has designed a methodology based on the principle of **splitting the record into data domains**. Thus, 7 steps are recommended to import an entire existing record into Dastra.

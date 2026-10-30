@@ -40,6 +40,8 @@ Enabling another scale when risks already exist seriously affects the risk stati
 
 The score of a risk is the product of its severity and its likelihood. The maximum score of a scale is the product of its two highest levels: 25 with the 5-level scale, 16 with the 4-level scale and 9 with the 3-level scale. The percentages shown in Dastra express a score relative to this maximum.
 
+For a calculation step by step, on the default scale and on the CNIL scale, see [Risk scoring](../../../examples/risk-scoring.md).
+
 ## Probability (likelihood)
 
 Probability is an evaluation of how often a risk occurs. It is an empirically evaluated score (traditionally rated out of 5). Each level can correspond to a frequency of occurrence of the risk, and therefore of the threat.

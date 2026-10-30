@@ -4,7 +4,7 @@ description: >-
   fiabilité, configuration et AI Act.
 ---
 
-# Foire aux questions
+# FAQ
 
 ## Confidentialité et données
 

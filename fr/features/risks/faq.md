@@ -1,4 +1,4 @@
-# Questions fréquentes
+# FAQ
 
 ## Pourquoi le menu Gestion des risques n'apparaît-il pas ?
 

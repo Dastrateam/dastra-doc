@@ -121,6 +121,8 @@ The **Notification** step tracks the notification to the supervisory authority. 
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-4.png" alt="Notification step with the 72-hour countdown"><figcaption><p>The Notification step and its countdown</p></figcaption></figure>
 
+A worked calculation of the score is in [Risk scoring](../../examples/risk-scoring.md).
+
 As soon as the risk assessment concludes to a medium or high risk, a message counts the 72 hours from the observation date. It shows the number of hours left, then "72 hours deadline exceeded" when you are late, then "You have notified the data protection authority" once the notification is recorded. For a low risk, the message states that you are not required to notify the authority.
 
 To record a notification:

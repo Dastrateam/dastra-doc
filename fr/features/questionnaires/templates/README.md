@@ -140,7 +140,7 @@ Vous pouvez utiliser un questionnaire pour renseigner automatiquement des champs
 
 Dans **Questionnaires**, ouvrez le modèle concerné et ajoutez la question qui doit renseigner le champ personnalisé. Choisissez un type de question compatible avec le type du champ. &#x20;
 
-Ouvrez les propriétés de la question, puis activez "**Souhaitez-vous personnaliser le nom de la variable ?"**. Dans **Nom de la variable**, saisissez `custom_` suivi du nom technique du champ.
+Ouvrez les propriétés de la question, puis cochez **Souhaitez-vous personnaliser le nom de la variable (pour les utilisateurs avancés uniquement) ?**. Dans **Nom de la variable**, saisissez `custom_` suivi du nom technique du champ.
 
 Pour un champ dont le nom technique est `business_owner`, utilisez :
 
@@ -151,6 +151,8 @@ custom_business_owner
 Enregistrez ensuite les modifications du modèle.
 {% endstep %}
 {% endstepper %}
+
+Pour les autres champs de la fiche, les types de questions et la fusion, voir [Alimenter une fiche avec les réponses](record-mapping.md).
 
 ### Syntaxe des variables
 

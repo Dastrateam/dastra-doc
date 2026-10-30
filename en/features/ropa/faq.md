@@ -2,7 +2,7 @@
 description: Frequently asked questions about the record of processing activities.
 ---
 
-# Frequently asked questions
+# FAQ
 
 ## How to display the history of modifications on a processing activity?
 

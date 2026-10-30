@@ -1,0 +1,6 @@
+Ref;Label;Type;Description;Address;ZipCode;City;CountryCode;State;ApplicationType;HostingType;ApplicationState;CustomFields.criticality
+BRM-A001;Brightmoor customer portal;Software;Comptes clients et suivi des commandes;;;;IE;Active;WebApp;OutSourced;InProduction;High
+BRM-A002;Loyalty card platform;Software;Points de fidélité et offres aux membres;;;;IE;Active;Saas;OutSourced;InProduction;High
+BRM-A003;Warehouse management system;Software;Stocks et préparation des colis;;;;DE;Active;Software;InHouse;InProduction;Medium
+BRM-A004;Berlin store server room;Building;Serveurs locaux du magasin de Berlin;1 Example Street;10115;Berlin;DE;Active;;;;Medium
+BRM-A005;Checkout terminals;Material;Terminaux de paiement et de caisse des magasins;;;;DE;Draft;;;;Low

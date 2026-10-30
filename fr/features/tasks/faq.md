@@ -4,7 +4,7 @@ description: >-
   suppression, charge de travail et relances.
 ---
 
-# Questions fréquentes
+# FAQ
 
 ## Comment attacher plusieurs tâches à un projet ?
 

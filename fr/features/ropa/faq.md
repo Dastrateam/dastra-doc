@@ -2,7 +2,7 @@
 description: Questions fréquentes sur le registre des traitements.
 ---
 
-# Questions fréquentes
+# FAQ
 
 ## Comment afficher l'historique des modifications d'un traitement ?
 

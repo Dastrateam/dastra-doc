@@ -30,6 +30,14 @@ description: Bienvenue dans la documentation de Dastra.
 
 ***
 
+### Exemples concrets
+
+{% content-ref url="examples/README.md" %}
+[README.md](examples/README.md)
+{% endcontent-ref %}
+
+***
+
 ### ⚙️ Fonctionnalités
 
 {% content-ref url="features/ropa/README.md" %}
@@ -113,6 +121,8 @@ description: Bienvenue dans la documentation de Dastra.
 {% endcontent-ref %}
 
 ***
+
+Vous cherchez une réponse ? La [FAQ](other/faq.md) liste les questions de chaque module, et les [problèmes connus](other/known-problems.md) traitent des erreurs les plus courantes.
 
 {% hint style="info" %}
 Pour découvrir Dastra, [demandez une démo](https://www.dastra.eu/fr/contacts/demo).

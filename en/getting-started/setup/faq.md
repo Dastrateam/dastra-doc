@@ -2,7 +2,7 @@
 description: Answers to frequently asked questions about setting up Dastra.
 ---
 
-# Frequently asked questions
+# FAQ
 
 ## Can I use teams as stakeholders?
 

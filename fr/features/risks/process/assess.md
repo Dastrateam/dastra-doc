@@ -40,6 +40,8 @@ Activer une autre échelle quand des risques existent déjà a un impact sérieu
 
 Le score d'un risque est le produit de sa gravité par sa vraisemblance. Le score maximum de l'échelle est le produit de ses deux niveaux les plus élevés : 25 avec l'échelle à 5 niveaux, 16 avec celle à 4 niveaux, 9 avec celle à 3 niveaux. Les pourcentages affichés dans Dastra expriment un score par rapport à ce maximum.
 
+Pour un calcul pas à pas, sur l'échelle par défaut et sur l'échelle de la CNIL, voir [Calcul des risques](../../../examples/risk-scoring.md).
+
 ## Probabilité (vraisemblance) <a href="#probabilite-vraissemblance" id="probabilite-vraissemblance"></a>
 
 La probabilité correspond à l'évaluation de la fréquence d'occurrence d'un risque. C'est un score évalué de manière empirique (note sur 5 traditionnellement). Chaque niveau peut correspondre à une fréquence d'apparition du risque, donc de réalisation de la menace.

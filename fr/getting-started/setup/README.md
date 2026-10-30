@@ -113,6 +113,8 @@ Vous pouvez explorer librement les fonctionnalités de la plateforme, ou suivre 
 
 ***
 
+Des questions sur la mise en place ? Consultez la [FAQ](../../other/faq.md), qui liste les questions de chaque module.
+
 {% hint style="info" %}
 Vous pouvez à tout moment modifier les rôles, les équipes et les unités organisationnelles de votre espace de travail. Ces paramètres restent entièrement personnalisables selon votre organisation.
 {% endhint %}

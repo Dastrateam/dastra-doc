@@ -69,6 +69,33 @@ Importer un registre existant peut être fastidieux si vous avez de nombreux tra
 Aucune unité organisationnelle n'est créée pendant l'import. Les données des champs qui ne font pas partie du modèle sont placées dans les champs de description HTML.
 {% endhint %}
 
+### Importer un fichier JSON
+
+Le format JSON est celui de l'export **JSON** du registre. Il porte des traitements complets, ce qui en fait le format pour copier des traitements d'un espace de travail à un autre. Choisissez **JSON**, sélectionnez l'**Unité organisationnelle** dans laquelle les traitements seront créés, puis déposez le fichier. La fenêtre liste ensuite les traitements créés et les éléments qui existaient déjà.
+
+Le fichier a la structure de l'export : `$schema`, `version`, `date`, `label`, `source` et un tableau `records`, avec un traitement par entrée.
+
+Ce que l'import accepte :
+
+* un fichier exporté depuis Dastra avec la version `1.4`. Une autre version est refusée avec le message « Incorrect version of your JSON import file (required version : 1.4) » ;
+* tout le contenu d'une entrée : les informations générales, les finalités, les jeux de données et leurs règles de conservation, les actifs, les destinataires et acteurs, les catégories de personnes concernées, les mesures de sécurité, les tags et les champs personnalisés ;
+* une entrée dont le libellé est identique à celui d'un traitement existant : elle en crée un nouveau, elle n'écrase jamais ;
+* les acteurs, actifs, jeux de données, catégories de personnes concernées, mesures de sécurité et tags d'une entrée : quand un élément du même nom existe déjà dans l'espace de travail, Dastra le réutilise, sinon il le crée ;
+* les propriétaires d'une entrée, quand ce sont des utilisateurs de l'organisation. Les autres sont ignorés.
+
+Ce que l'import ignore ou réinitialise :
+
+* les identifiants : chaque traitement en reçoit un nouveau ;
+* l'unité organisationnelle du fichier : tous les traitements vont dans l'unité que vous avez sélectionnée ;
+* le statut et l'étape du processus : les traitements sont créés en brouillon, à la première étape du processus ;
+* le créateur, la date de création et les dates de revue : le créateur est la personne qui importe, et les dates repartent de zéro ;
+* le niveau de risque et les scores : Dastra les recalcule ;
+* les relations entre traitements (parent, enfant, lié).
+
+Chaque entrée est contrôlée avant toute création. Si une entrée est invalide, par exemple un champ obligatoire vide, l'import s'arrête avec le message « Error on data processing » suivi de son libellé et de son numéro de ligne, et rien n'est créé.
+
+L'import demande la permission d'importer des traitements.
+
 ### Import standard, étape par étape
 
 Pour vous éviter de remplir chaque traitement à la main et pour prendre en charge tous les formats de registre possibles, Dastra a conçu une méthodologie fondée sur le principe du **découpage du registre en domaines de données**. 7 étapes sont conseillées pour importer l'ensemble d'un registre existant dans Dastra.

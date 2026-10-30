@@ -4,7 +4,7 @@ description: >-
   Dastra.
 ---
 
-# Foire aux questions
+# FAQ
 
 ## Comment importer des jeux de données ?
 

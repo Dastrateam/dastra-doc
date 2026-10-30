@@ -1,4 +1,4 @@
-# Questions fréquentes
+# FAQ
 
 ## Est ce que Zapier agit en tant que sous-traitant ultérieur de Dastra (quel est son statut contractuel) ?
 

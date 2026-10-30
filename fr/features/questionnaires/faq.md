@@ -1,4 +1,4 @@
-# Questions fréquentes
+# FAQ
 
 ## Est ce que je peux faire un PIA sur plusieurs traitements ?
 
