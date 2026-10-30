@@ -12,13 +12,13 @@ This view lets you explore, analyze and understand the links between the items o
 
 ## View the record data map
 
-To view the data map of your record, go to the **Record of processing activities** module, then click the **Graphs** tab above your list of processing activities.
+To view the data map of your record, in the left-hand menu, click **ROPA**, then **Graphs**.
 
-<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Graphs tab of the Record of processing activities module"><figcaption><p>Graphs tab above the processing activities</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Graphs entry in the ROPA menu"><figcaption><p>The Graphs entry of the ROPA menu</p></figcaption></figure>
 
 You can then **view the data map of your record**.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-10-144614.png" alt="Example of a record data map"><figcaption><p>Mapping example</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-2.png" alt="Example of a record data map"><figcaption><p>Mapping example</p></figcaption></figure>
 
 The toolbar above the map lets you:
 

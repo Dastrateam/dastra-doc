@@ -12,7 +12,7 @@ description: >-
 
 L'application Dastra vous accompagne à chaque étape de la création d'un traitement, tout en vous laissant avancer à votre rythme. Des conseils sont proposés à chaque étape pour vous aider à respecter les exigences du RGPD.
 
-## Qu'est-ce que le questionnaire de traitement Dastra ?
+## Le questionnaire de traitement Dastra
 
 Le questionnaire de traitement recueille les informations nécessaires à un traitement. Il est découpé en sections, listées dans la navigation à gauche du traitement. À côté de la plupart des sections, la navigation indique le nombre d'éléments déjà saisis (finalités, jeux de données, destinataires, etc.). Utilisez les boutons **Suivant** et **Retour** en bas de page pour passer d'une section à l'autre.
 
@@ -118,29 +118,29 @@ Le questionnaire n'est pas le seul guide disponible pour remplir un traitement. 
 * **Qualité**
 * **Sensibilité**
 
-#### Progression
+### Progression
 
 Ce pourcentage est calculé à partir d'une série de contrôles qui vérifient que le traitement contient tous les éléments obligatoires : finalités, jeux de données avec leurs champs de données et leurs règles de conservation, catégories de personnes concernées, destinataires, mesures de sécurité et, pour un traitement en tant que sous-traitant, clients.
 
-Ces éléments correspondent aux informations que l'article 30 du RGPD exige dans le registre des activités de traitement.
+Ces éléments correspondent aux informations que l'article 30 du RGPD exige dans le registre des traitements.
 
-#### Qualité
+### Qualité
 
 Ce pourcentage est calculé à partir d'une série de contrôles sur la qualité des éléments saisis dans le formulaire. Ces contrôles vérifient par exemple que :
 
 * chaque finalité a une base légale,
 * au moins un actif est lié au traitement,
 * l'exercice des droits des personnes concernées est décrit,
-* la section **Analyse d'impact** a été complétée et, si une AIPD est requise, qu'elle a été réalisée,
+* la section **Analyse d'impact** a été complétée et, si un PIA est requis, qu'il a été réalisé,
 * un utilisateur **Approbateur** est affecté au traitement,
 * un transfert est déclaré pour chaque destinataire situé hors UE.
 
 Ces critères vont au-delà de l'article 30 du RGPD et vous aident à anticiper d'autres obligations. Par exemple :
 
-* réaliser une AIPD sur un traitement qui en nécessite une,
+* réaliser un PIA sur un traitement qui en nécessite un,
 * identifier le logiciel qui supporte le traitement, ce qui vous indique qui en est l'éditeur. Vous pouvez alors identifier le sous-traitant et les éventuels transferts de données.
 
-#### Sensibilité
+### Sensibilité
 
 Cet indicateur affiche le **niveau de sensibilité du traitement**.
 
@@ -151,4 +151,4 @@ Il est calculé automatiquement à partir des **critères suivants** :
 * volume important de personnes concernées,
 * présence d'un sous-traitant,
 * présence d'un transfert vers un pays n'offrant pas un niveau de protection adéquat,
-* nécessité de réaliser une AIPD.
+* nécessité de réaliser un PIA.

@@ -1,5 +1,5 @@
 ---
-description: Learn how to design and manage your processing activity record using Dastra.
+description: Learn how to design and manage your record of processing activities using Dastra.
 ---
 
 # Establish your record
@@ -11,7 +11,7 @@ description: Learn how to design and manage your processing activity record usin
 
 ## Import your existing record
 
-With Dastra, you can easily import your existing processing activity record instead of having to enter it manually, whatever its current format: Excel, text or CSV file. You can also import processing activities exported from another Dastra workspace in JSON format.
+With Dastra, you can import your existing record of processing activities instead of having to enter it manually, whatever its current format: Excel, text or CSV file. You can also import processing activities exported from another Dastra workspace in JSON format.
 
 {% content-ref url="export-import.md" %}
 [upload-your-existing-record.md](export-import.md)
@@ -21,7 +21,7 @@ With Dastra, you can easily import your existing processing activity record inst
 Don't forget to publish your data processing activities if you want them to be reflected in the dashboard.
 {% endhint %}
 
-## Create a new processing activity record from scratch
+## Create a new record from scratch
 
 With Dastra, a record is automatically created as soon as the workspace is set up. If you don't want to import an existing record, you can start filling in this default record right away by creating your first processing activity. To find out how, follow this link:
 

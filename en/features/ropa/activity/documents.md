@@ -19,7 +19,7 @@ In practice, this documentation is primarily reflected in the record of processi
 * setting up an internal complaints management mechanism;
 * developing internal procedures for effective data breach management and notification;
 * conducting privacy impact assessments in certain circumstances;
-* implementation and supervision of verification procedures to ensure that all measures do not only exist on paper, but are also implemented and work in practice (internal or external audits, etc.).
+* implementation and supervision of verification procedures to ensure that the measures are applied and effective in practice, not just written down (internal or external audits, etc.).
 
 You can also store in this space any document useful for understanding the processing activity, the training notes, and the contracts framing the processing activity if necessary.
 

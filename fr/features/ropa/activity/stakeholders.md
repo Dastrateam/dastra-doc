@@ -88,29 +88,29 @@ Dans Dastra, ajoutez-le comme partie prenante avec l'intitulé **Responsable de 
 **Rôle du RTO dans la gouvernance RGPD**\
 Le **RTO** n'est pas une notion définie par le RGPD, mais certaines organisations l'utilisent en interne pour désigner une personne ayant des **responsabilités opérationnelles** précises dans la gestion des traitements de données.
 
-#### **Mise en oeuvre des traitements de données**
+### **Mise en oeuvre des traitements de données**
 
 * Le RTO est souvent un **relais opérationnel du responsable de traitement (RT)** au sein d'une direction métier (par exemple RH, Marketing, IT).
 * Il est chargé d'exécuter les traitements au quotidien, conformément aux **instructions du responsable de traitement** et dans le respect des principes de protection des données.
 
-#### **Application des mesures de conformité**
+### **Application des mesures de conformité**
 
 * Le RTO veille à ce que les traitements soient effectués en accord avec les **politiques internes de conformité** et les obligations de protection des données.
 * Il applique les **mesures techniques et organisationnelles** définies par l'entreprise pour garantir la **sécurité et la confidentialité** des données personnelles.
 
-#### **Collaboration avec le DPO et le responsable de traitement**
+### **Collaboration avec le DPO et le responsable de traitement**
 
 * Le RTO travaille en étroite collaboration avec le **délégué à la protection des données (DPO)** pour s'assurer que les traitements respectent les règles de protection des données.
 * Il peut être un interlocuteur privilégié du **DPO**, en particulier pour le traitement des **demandes d'exercice des droits** (accès, rectification, effacement, etc.).
 
-#### **Gestion des incidents et des violations de données**
+### **Gestion des incidents et des violations de données**
 
 * Le RTO peut être impliqué dans la **détection et la gestion des violations de données**, en appliquant les procédures internes pour **réagir rapidement et notifier** l'incident si nécessaire.
 * Il assure le suivi des incidents et aide à la mise en place d'**actions correctives**.
 
-#### **Documentation et tenue du registre des activités de traitement**
+### **Documentation et tenue du registre des traitements**
 
-* Le RTO participe à la mise à jour du **registre des activités de traitement**, en documentant les traitements placés sous sa responsabilité et en s'assurant que les informations utiles remontent bien au **responsable de traitement ou au DPO**.
+* Le RTO participe à la mise à jour du **registre des traitements**, en documentant les traitements placés sous sa responsabilité et en s'assurant que les informations utiles remontent bien au **responsable de traitement ou au DPO**.
 
 **Différence entre le responsable de traitement et le responsable de traitement opérationnel**
 

@@ -10,7 +10,7 @@ description: >-
 
 The Dastra application guides you through each step of the process of creating a processing activity, while leaving you free to work at your own pace. Benefit from advice at every step and become compliant with the GDPR requirements.
 
-## What is the Dastra processing questionnaire?
+## The Dastra processing questionnaire
 
 The processing questionnaire collects the information required for a processing activity. It is split into sections, listed in the navigation on the left of the processing activity. Next to most sections, the navigation shows how many items you have already entered (purposes, datasets, recipients, etc.). Use **Next** and **Back** at the bottom of the page to move from one section to another.
 
@@ -112,13 +112,13 @@ The questionnaire is not the only guide available when you fill in a processing 
 * **Quality**
 * **Sensitivity**
 
-#### Overall progression
+### Overall progression
 
 This percentage is calculated from a series of checks that verify that the processing activity contains all the mandatory elements: purposes, datasets with their data fields and retention rules, data subject categories, recipients, security measures and, for a data processor activity, controllers.
 
 These elements correspond to the information that Article 30 of the GDPR requires in the record of processing activities.
 
-#### Quality
+### Quality
 
 This percentage is calculated from a series of checks on the quality of the elements you have entered in the form. For example, these checks verify that:
 
@@ -134,7 +134,7 @@ These criteria go beyond Article 30 of the GDPR and help you anticipate other ob
 * carrying out a DPIA on a processing activity that requires one,
 * identifying the software that supports the processing activity, which tells you who its editor is: you can then identify the processor and any data transfers.
 
-#### Sensitivity
+### Sensitivity
 
 This indicator shows the **sensitivity level of the processing activity**.
 

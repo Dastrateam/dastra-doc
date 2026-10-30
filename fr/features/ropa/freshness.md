@@ -2,7 +2,7 @@
 description: Apprenez à activer et à utiliser l'option de fraîcheur des traitements
 ---
 
-# Fraicheur des traitements
+# Fraîcheur des traitements
 
 La fraîcheur d'un traitement indique à quand remonte sa dernière revue. Une fois les revues régulières activées, chaque revue fixe une date de prochaine revue, et la fraîcheur diminue à l'approche de cette date. C'est un moyen simple de vous assurer que les informations de votre registre des traitements sont revues régulièrement et restent à jour.
 
@@ -10,7 +10,7 @@ La fraîcheur d'un traitement indique à quand remonte sa dernière revue. Une f
 Les revues régulières sont aussi disponibles pour d'autres éléments, comme les acteurs, les actifs, les contrats ou les systèmes d'IA. Le mécanisme commun est décrit dans [Revue régulière (fraîcheur)](../regular-review.md). Cette page détaille son fonctionnement pour les traitements.
 {% endhint %}
 
-### Activer l'option de fraîcheur des traitements
+## Activer l'option de fraîcheur des traitements
 
 La fraîcheur des traitements est facultative et désactivée par défaut. Elle se configure pour tout l'espace de travail, dans les réglages de l'espace de travail, sous **Revues régulières**.
 
@@ -42,13 +42,13 @@ Lorsque vous enregistrez un nouvel intervalle, Dastra vous demande s'il doit s'a
 **Exemple :** vous fixez un intervalle de 1 an. Un traitement revu le 15 janvier 2026 a une date de prochaine revue au 15 janvier 2027. Il s'affiche **Frais** pendant la plus grande partie de l'année, **Bientôt périmé** pendant les derniers 10 % de l'intervalle (un peu plus d'un mois), puis **Périmé** une fois sa date de prochaine revue dépassée, jusqu'à ce qu'il soit de nouveau revu.
 {% endhint %}
 
-### Désactiver l'option de fraîcheur des traitements
+## Désactiver l'option de fraîcheur des traitements
 
 Pour désactiver l'option, retournez dans les réglages **Revues régulières**, sélectionnez **Traitement de données**, désactivez **Activer la revue régulière de l'élément** et cliquez sur **Enregistrer**.
 
 Les indicateurs de fraîcheur ne s'affichent alors plus. Chaque traitement conserve son historique de revues et sa date de dernière revue, qui sont réutilisés si vous réactivez l'option plus tard.
 
-### Indicateurs de fraîcheur
+## Indicateurs de fraîcheur
 
 La fraîcheur ne s'affiche que pour les traitements **publiés** qui ont été **revus au moins une fois**. Un traitement peut se trouver dans l'un des états suivants :
 
@@ -61,7 +61,7 @@ La fraîcheur ne s'affiche que pour les traitements **publiés** qui ont été *
 
 Un traitement encore à l'état de brouillon s'affiche comme **non publié** dans la liste, et **En attente de revue** sur sa fiche.
 
-#### Sur la fiche du traitement
+### Sur la fiche du traitement
 
 Sur un écran large, l'indicateur de fraîcheur se trouve en haut du panneau de droite de la fiche du traitement. Il affiche la barre **Fraîcheur**, qui diminue à l'approche de la date de prochaine revue, l'état et sa couleur, un lien **Passer en revue** et le nombre de jours restants ou de retard.
 
@@ -69,13 +69,13 @@ Sur un écran plus petit, le panneau de droite est masqué. L'état (par exemple
 
 <figure><img src="../../.gitbook/assets/ropa-freshness-5.png" alt="Indicateur de fraîcheur dans l&#x27;en-tête d&#x27;un traitement"><figcaption><p>Sur un écran plus petit, l'indicateur de fraîcheur s'affiche dans l'en-tête de la fiche</p></figcaption></figure>
 
-#### Dans la liste de votre registre
+### Dans la liste de votre registre
 
 La colonne **Date de dernière revue** affiche l'état de fraîcheur de chaque traitement et la date de sa dernière revue. Survolez l'état pour voir le nombre de jours restants ou de retard. Cette colonne est ajoutée à votre vue de liste lorsque vous activez l'option. Vous pouvez aussi l'ajouter aux colonnes affichées à tout moment.
 
 Vous pouvez également afficher la colonne **Date de revue prévisionnelle**, qui indique la date de prochaine revue enregistrée pour chaque traitement, et filtrer votre registre avec le filtre **Fraîcheur** (disponible sous **Filtres**), avec les valeurs **Frais**, **En attente** (publié mais jamais revu) ou **Périmé**.
 
-### Passer en revue un traitement
+## Passer en revue un traitement
 
 Vous pouvez passer en revue un traitement à tout moment, sans attendre sa date de prochaine revue. La revue nécessite un accès en écriture au registre des traitements. Ouvrez la fenêtre **Passer en revue** :
 
@@ -97,7 +97,7 @@ Cliquez sur **Passer en revue** pour enregistrer. Un nouveau cycle de fraîcheur
 
 Lorsque la fenêtre est ouverte pour un seul traitement, l'onglet **Anciennes revues** liste ses revues passées. Cet onglet propose aussi le bouton **Supprimer toutes les revues**, qui efface l'historique des revues. Après confirmation, les dates de dernière et de prochaine revue sont effacées et l'indicateur de fraîcheur ne s'affiche plus. Cette action est irréversible.
 
-### Informations importantes sur le fonctionnement de la fraîcheur
+## Informations importantes sur le fonctionnement de la fraîcheur
 
 L'enregistrement d'un traitement ne vaut pas revue. La date de dernière revue est indépendante de la date de dernière mise à jour de la fiche. Pour (re)lancer le cycle de fraîcheur d'un traitement, vous devez le passer en revue.
 

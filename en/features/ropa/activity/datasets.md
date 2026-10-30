@@ -2,7 +2,7 @@
 description: Define the dataset and retention policy involved in the processing activity.
 ---
 
-# Dataset
+# Datasets and retention
 
 [**Article 30 of the GDPR**](https://gdpr-info.eu/art-30-gdpr/) also requires the record to list the categories of data processed.
 
@@ -30,7 +30,7 @@ To use generic datasets, we recommend the following procedure:
 * Open the datasets page of the data mapping in a new tab.
 * Select the dataset in the processing activity.
 * If the dataset needs to be modified, create another one: go to the other tab and duplicate the generic dataset, removing or adding the desired fields.
-* For more clarity, we recommend tagging these datasets, so that you can easily distinguish them in the dataset selector. For example: a "generic" tag and a tag for the added or removed data.
+* For more clarity, we recommend tagging these datasets, so that you can tell them apart in the dataset selector. For example: a "generic" tag and a tag for the added or removed data.
 
 {% hint style="info" %}
 A dataset can be linked to several processing activities. When you edit a dataset used by several processing activities, Dastra warns you that your changes affect all of them. If the data fields differ significantly for one processing activity, create a copy of the dataset and customize the copy.
@@ -101,7 +101,7 @@ Fields can be classified into predefined categories of data, such as **Civil sta
 
 The data field is also where you indicate the sensitivity level of the data: **Standard**, **Data of a highly personal nature** or **Special categories (sensitive)**, for example health data.
 
-For special categories of data, you are asked to justify the collection of this data, and in particular its legal ground, in **Lawful basis for collection** and **Justification for collecting sensitive personal data**.
+For special categories of data, you are asked to justify the collection of this data, and in particular its lawful basis, in **Lawful basis for collection** and **Justification for collecting sensitive personal data**.
 
 <figure><img src="../../../.gitbook/assets/ropa-datasets-6.png" alt="Data field form with the Special categories (sensitive) level selected and the justification fields displayed"><figcaption><p>Sensitive data</p></figcaption></figure>
 

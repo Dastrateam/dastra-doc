@@ -10,7 +10,7 @@ To export the entire record, open the record of processing activities, click the
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-1.png" alt="Create data processing menu with the Export entry"><figcaption><p>Record drop-down menu with the export feature</p></figcaption></figure>
 
-In the window that opens, **Choose an export format**: PDF, Word, HTML, CSV, Excel, JSON or Markdown. For PDF, Word and HTML, also **Choose an export type** (**Complete**, **Article 30 GDPR**, **Standard information notice** or **Data retention policy**). Then click **Download file**. That's it, your record is exported!
+In the window that opens, **Choose an export format**: PDF, Word, HTML, CSV, Excel, JSON or Markdown. For PDF, Word and HTML, also **Choose an export type** (**Complete**, **Article 30 GDPR**, **Standard information notice** or **Data retention policy**). Then click **Download file**. Your record is exported.
 
 Depending on the format, additional options are available, for example:
 
@@ -73,7 +73,7 @@ To avoid filling in each processing activity by hand and to handle every possibl
 These steps, which are not mandatory, are nevertheless strongly recommended, especially when the record contains many processing activities.
 {% endhint %}
 
-Don't hesitate to consult our library of data processing templates: [https://www.dastra.eu/en/data-processing/referentials](https://www.dastra.eu/en/data-processing/referentials)
+See our library of data processing templates: [https://www.dastra.eu/en/data-processing/referentials](https://www.dastra.eu/en/data-processing/referentials)
 
 The import page works the same way for every step. It is described in detail in [Import your data (Excel, Csv)](../general/import.md).
 
@@ -100,7 +100,7 @@ Select the **Organizational unit**, then drop your file:
 
 Match the columns of your file with the Dastra fields in the **Columns mapping** step, then click **Continue** to run the import.
 
-That's it, your processing activity labels are imported!
+Your processing activity labels are imported.
 
 ### Step 2: Import of the asset repository
 
@@ -110,7 +110,7 @@ To import your existing applications and assets, go to the **Repositories** modu
 
 Then download the file template, fill it in with your assets (use **View columns format** for the list of columns) and import it as in step 1.
 
-That's it, your assets are imported!
+Your assets are imported.
 
 ### Step 3: Import of the stakeholders repository
 
@@ -154,7 +154,7 @@ The import file follows the same format as the export. For each dataset, fill in
 * Data fields already present (same name) are **associated** with the dataset without duplication
 
 {% hint style="info" %}
-This feature is particularly useful for harmonising the data map between multiple workspaces, or for initialising a new workspace from an existing data map.
+This feature is particularly useful for harmonizing the data map between multiple workspaces, or for initialising a new workspace from an existing data map.
 {% endhint %}
 
 ### Step 7: Construction of links
@@ -165,4 +165,4 @@ Now that all the repositories have been imported, edit each processing activity 
 [remplir-le-questionnaire](activity/README.md)
 {% endcontent-ref %}
 
-That's it, the links are built!
+The links are built.

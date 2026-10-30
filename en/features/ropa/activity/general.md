@@ -27,7 +27,7 @@ The **General** section is the first section of a processing activity. It identi
 * **Name of the processing activity** (required, up to 120 characters): the name of the activity, which usually corresponds to the activity that involves one or more processing operations, such as customer management or event management.
 * **Internal reference** (optional, up to 50 characters): your own identifier for this processing activity, if you have one.
 * **Organizational unit** (required): the entity or department the processing activity belongs to. The data controller, its data protection officer and its representative shown in the **Parties involved** section are inherited from the entity of this organizational unit.
-* **Tags**: classify the processing activity to find and filter it more easily. While no tag is selected, the AI assistant can suggest tags based on the name and description of the processing activity.
+* **Tags**: classify the processing activity to find and filter it. While no tag is selected, the AI assistant can suggest tags based on the name and description of the processing activity.
 * **Short description of the processing activity** (optional, up to 3,000 characters): describe the processing activity. Click **Generate** under the field to let the AI assistant draft the description from the name of the processing activity, then check the result and click **Apply**. When the field already contains text, the button becomes **Continue writing content**.
 * **State of the processing activity** (optional): select the current state of the processing in your organization: **To study**, **Being deployed**, **In production** or **Stopped**.
 * **Deployment date** (optional): available once a state is selected.

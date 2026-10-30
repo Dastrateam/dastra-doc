@@ -77,40 +77,40 @@ The data controller representative is the operational representative of the data
 
 In Dastra, add it as a stakeholder with the **Data controller representative** category.
 
-## Add an Operational Data Controller (ODC)
+## Add an operational data controller (ODC)
 
 The **Operational Data Controller (ODC)** is a concept used internally by some organizations to designate a person with specific responsibilities in the **operational management of personal data processing**.
 
 In Dastra, add it as a stakeholder with the **Operational Data Controller** category.
 
-📌 **Role of the ODC in GDPR governance**\
+**Role of the ODC in GDPR governance**\
 The **ODC** is not a concept defined by the GDPR, but some organizations use it internally to designate a person with specific **operational responsibilities** in managing data processing activities.
 
-#### **Implementation of data processing**
+### **Implementation of data processing**
 
 * The ODC often serves as an **operational relay for the Data Controller (DC)** within a business unit (e.g., HR, Marketing, IT, etc.).
 * They are responsible for carrying out data processing activities on a daily basis, in accordance with the **instructions of the Data Controller** and in compliance with data protection principles.
 
-#### **Application of compliance measures**
+### **Application of compliance measures**
 
 * The ODC ensures that processing activities are carried out in accordance with **internal compliance policies** and data protection obligations.
 * They apply the **technical and organizational measures** defined by the company to ensure the **security and confidentiality** of personal data.
 
-#### **Collaboration with the DPO and the Data Controller**
+### **Collaboration with the DPO and the data controller**
 
 * The ODC works closely with the **Data Protection Officer (DPO)** to ensure that data processing activities comply with data protection rules.
 * They can act as a key contact for the **DPO**, particularly when handling **data subject requests** (e.g., access, rectification, deletion).
 
-#### **Incident and data breach management**
+### **Incident and data breach management**
 
 * The ODC may be involved in **detecting and managing data breaches**, applying internal procedures to **react quickly and notify** incidents if necessary.
 * They monitor incidents and help implement **corrective actions**.
 
-#### **Documentation and maintenance of the record of processing activities**
+### **Documentation and maintenance of the record of processing activities**
 
 * The ODC contributes to updating the **record of processing activities**, documenting the processing under their responsibility and ensuring that relevant information is properly reported to the **Data Controller or DPO**.
 
-🎯 **Difference between the Data Controller and the Operational Data Controller**
+**Difference between the Data Controller and the Operational Data Controller**
 
 | **Criteria**                 | **Data Controller (DC)**                                 | **Operational Data Controller (ODC)**        |
 | ---------------------------- | -------------------------------------------------------- | -------------------------------------------- |

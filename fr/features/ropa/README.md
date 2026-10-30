@@ -42,9 +42,9 @@ Il existe deux méthodologies pour constituer un registre des traitements :
 * **La conception Top-Down (descendante)** : vous commencez par dresser l'inventaire des traitements, puis vous collectez les informations propres à chaque traitement (données, sous-traitants, etc.).
 * **La conception Bottom-Up (ascendante)** : vous commencez par faire l'inventaire des données (logiciels, jeux de données et champs de données personnelles), puis vous créez les traitements à partir de cet inventaire.
 
-### Quelle méthodologie choisir ?
+### Choisir une méthodologie
 
-Il n'y a pas de bonne ou de mauvaise méthode. Tout dépend du contexte de votre organisation, des compétences de l'équipe DPO, de la facilité à joindre les personnes qui exploitent les données...
+Il n'y a pas de bonne ou de mauvaise méthode. Tout dépend du contexte de votre organisation, des compétences de l'équipe DPO, de la facilité à joindre les personnes qui exploitent les données, etc.
 
 Voici un tableau qui compare les deux approches :
 
@@ -52,7 +52,7 @@ Voici un tableau qui compare les deux approches :
 
 Dastra prend en charge les deux approches. Pour une approche descendante, créez vos traitements [à partir de modèles](templates.md). Si vous préférez l'approche ascendante, vous pouvez d'abord [construire votre cartographie des données](../mapping/README.md), puis créer un traitement directement à partir d'un actif (logiciel, base de données).
 
-## Comment établir votre registre des traitements ?
+## Établir votre registre
 
 {% embed url="https://www.youtube.com/watch?v=gqtAPok9ZuU" %}
 
@@ -68,19 +68,19 @@ Pour apprendre à concevoir et à gérer un de vos traitements, commencez ici :
 [gerer-votre-traitement.md](declare.md)
 {% endcontent-ref %}
 
-Pour comprendre les différentes étapes du questionnaire, cliquez ici :
+Pour comprendre les sections du questionnaire, consultez :
 
 {% content-ref url="activity/README.md" %}
 [remplir-le-questionnaire](activity/README.md)
 {% endcontent-ref %}
 
-Pour apprendre à partager le registre, cliquez ici :
+Pour apprendre à partager le registre, consultez :
 
 {% content-ref url="share.md" %}
 [partager-le-registre.md](share.md)
 {% endcontent-ref %}
 
-## Comment agir sur plusieurs traitements à la fois ?
+## Agir sur plusieurs traitements à la fois
 
 {% embed url="https://youtu.be/0BQDHzyFl-Y" %}
 
@@ -95,6 +95,29 @@ Dans la vue **Tableau**, cochez les cases à gauche des traitements sur lesquels
 * **Passer en revue**
 * **Partager**
 * **Déplacer dans la corbeille**
+
+## Suivre le registre avec les statistiques
+
+Dans le menu de gauche, cliquez sur **Traitements de données**, puis sur **Statistiques** pour afficher les statistiques de votre registre.
+
+<figure><img src="../../.gitbook/assets/ropa-readme-2.png" alt="Page Statistiques du registre des traitements avec ses tuiles d'indicateurs et ses widgets"><figcaption><p>La page Statistiques du registre</p></figcaption></figure>
+
+La page affiche :
+
+* des tuiles d'indicateurs : le nombre de traitements et les indicateurs **Progression**, **Qualité** et **Sensibilité** ;
+* les **Indicateurs moyens** et la **Répartition des indicateurs** ;
+* le nombre de traitements par étape (**Étapes**), par **Bases légales**, par catégorie de personnes (**Catégories de personnes**), par sous-traitant et par unité organisationnelle ;
+* la part des traitements avec transferts de données, les pays concernés (**Transferts de données**) et le statut du **PIA** ;
+* l'évolution du nombre de traitements (**Nouveaux traitements**) et les **Activités**.
+
+Utilisez le sélecteur d'unité organisationnelle, les filtres et les boutons **Tout**, **Responsable de traitement** et **Sous-traitant** pour restreindre les statistiques. Cliquez sur **Imprimer** pour imprimer la page.
+
+## Analyses d'impact et demandes de Privacy by design
+
+Deux autres entrées du menu **Traitements de données** donnent accès aux questionnaires liés à vos traitements. Elles s'affichent lorsque vous avez accès aux questionnaires.
+
+* **Analyses d'impact** liste les questionnaires [PIA](../questionnaires/types/dpia.md), [LIA](../questionnaires/types/lia.md) et [TIA](../questionnaires/types/tia.md) de l'espace de travail. Cliquez sur **Planifier questionnaire** pour en créer un.
+* **Privacy by design** liste les questionnaires de demande de création de traitement. Ils permettent de [collecter des projets de traitements](../trust-center/creation-questionnaires.md) depuis un Trust Center : une fois la réponse validée, ses données peuvent devenir un traitement.
 
 ## Pour aller plus loin
 

@@ -98,7 +98,7 @@ Ce message apparaît généralement quand un champ a été laissé vide lors de 
 Ce message signifie que du code HTML (généralement placé entre chevrons `< >`) est présent dans un champ où le HTML n'est pas autorisé (pour des raisons de sécurité).<br>
 
 \
-Le message suivant permet d'identifier facilement le champ concerné :
+Le message suivant permet d'identifier le champ concerné :
 
 <figure><img src="../../.gitbook/assets/register-html-error-banner.png" alt="Message de validation qui indique le champ contenant du HTML"><figcaption><p>Attention, du contenu HTML interdit est présent dans un champ !</p></figcaption></figure>
 

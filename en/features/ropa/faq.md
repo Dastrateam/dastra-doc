@@ -8,7 +8,7 @@ description: Frequently asked questions about the record of processing activitie
 
 For all processing activities, you can display the history of modifications as well as the details of the changes.&#x20;
 
-Just click the clock icon (**Activity history**) at the top of the processing activity page.
+Click the clock icon (**Activity history**) at the top of the processing activity page.
 
 <figure><img src="../../.gitbook/assets/ropa-faq-1.png" alt="Activity history button at the top of a processing activity"><figcaption><p>History access button</p></figcaption></figure>
 

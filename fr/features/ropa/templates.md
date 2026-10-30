@@ -49,7 +49,7 @@ Ouvrez le menu du bouton **Créer un traitement de données** (la flèche à sa 
 
 Dans le panneau qui s'ouvre, renseignez **Source de données de la bibliothèque** et **Choisissez l'unité organisationnelle de destination**, puis cochez un ou plusieurs modèles et cliquez sur **Ajouter**.
 
-<figure><img src="../../.gitbook/assets/register-create-from-library-selection.png" alt="Panneau Créer à partir de modèles avec plusieurs modèles sélectionnés"><figcaption><p>Sélection de plusieurs modèles dans la bibliothèque</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-7.png" alt="Panneau Créer à partir de modèles avec plusieurs modèles sélectionnés"><figcaption><p>Sélection de plusieurs modèles dans la bibliothèque</p></figcaption></figure>
 
 Le bouton **Détails** vous permet de prévisualiser un modèle.&#x20;
 

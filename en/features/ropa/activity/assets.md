@@ -1,12 +1,12 @@
 ---
 description: >-
-  This section allows you to list the applications or software that serve as
-  storage media for personal data.
+  List the assets, internal or external to the organization, that support the
+  processing activity.
 ---
 
 # Assets
 
-This is where you list the assets, internal or external to the organization (applications, software, resources, buildings, etc.), that support the execution of the processing activity and that are used to **store personal data**.
+This is where you list the assets, internal or external to the organization (applications, software, resources, buildings, etc.), that support the execution of the processing activity.
 
 _For example, if you use CRM software, add it to this list._
 
@@ -14,7 +14,7 @@ This information, **which is not mandatory for the register**, allows you to **m
 
 **The objective is to help you control the data carriers and link your assets to your data catalog.**
 
-You can thus quickly and **simply specify the types of data processed through this processing activity**.
+You can thus specify the types of data processed through this processing activity.
 
 NB: Assets are not necessarily linked to processors. For example, it can be **software installed on your own server, without any intervention of its editor in the processing of personal data**.
 

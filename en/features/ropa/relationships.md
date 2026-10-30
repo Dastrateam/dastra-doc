@@ -4,7 +4,7 @@ In Dastra, you can create relationships between your processing activities to ma
 
 These relationships are possible between processing activities located in the same workspace.
 
-## Why create relationships between processing activities?
+## When to use relationships
 
 Relationships between processing activities can be used to materialize the responsibility relationships between the various entities responsible for processing.
 
@@ -16,9 +16,9 @@ For example, in a group of companies, you can link a processing activity carried
 
 ## Add a relationship
 
-On a processing activity record, click the **Relationships** button in the toolbar at the top of the record. The button shows the number of existing relationships.
+On the page of a processing activity, click the **Relationships** button in the toolbar at the top of the page. The button shows the number of existing relationships.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103430.png" alt="Relationships panel of a processing activity"><figcaption><p>The Relationships panel of a processing activity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-1.png" alt="Relationships panel of a processing activity"><figcaption><p>The Relationships panel of a processing activity</p></figcaption></figure>
 
 The **Relationships** panel lists the existing relationships, grouped by type, with the organizational unit of each related processing activity and the date the relationship was created. Click a processing activity to open it in a new tab, or click the bin icon to remove the relationship.
 
@@ -30,7 +30,7 @@ To create a relationship, click **Add a relationship**, then:
 4. For a new processing activity, enter the **New data processing's name**, turn on **This activity is carried out as a processor** if needed, and select its organizational unit.
 5. Click **Add**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103745.png" alt="Add a relationship window"><figcaption><p>The Add a relationship window</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-2.png" alt="Add a relationship window"><figcaption><p>The Add a relationship window</p></figcaption></figure>
 
 You can create relationships with several processing activities at once:
 
@@ -166,10 +166,10 @@ A processing activity can only depend on **one source processing activity at a t
 
 ## Summary table of relationships
 
-| Type of relationship                                                                                             | Tab 1 – "General" | Tabs 2 to 10 (business fields) | Documents uploaded in tab 11 – "Documentation" | Fields specific to the dependent processing activity |
+| Type of relationship                                                                                             | Tab 1, "General" | Tabs 2 to 10 (business fields) | Documents uploaded in tab 11, "Documentation" | Fields specific to the dependent processing activity |
 | ---------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------ | ---------------------------------------------- | ---------------------------------------------------- |
 | **Declarative relationships** (Is a child of / Is parent of / Is related to / Has the following duplicate / Is copied from) | No impact         | No impact                      | No impact                                      | No impact                                            |
-| **Is source of (strict inheritance)**                                                                            | ❌ Not transmitted | ✅ Transmitted                  | ❌ Not transmitted                              | ❌ Cannot be added, modified or deleted               |
-| **Is dependent on (strict inheritance)**                                                                         | ❌ Not inherited   | ✅ Inherited                    | ❌ Not inherited                                | ❌ Cannot be added, modified or deleted               |
-| **Is source of (soft inheritance)**                                                                              | ❌ Not transmitted | ✅ Transmitted                  | ❌ Not transmitted                              | ✅ Can be added, modified or deleted                  |
-| **Is dependent on (soft inheritance)**                                                                           | ❌ Not inherited   | ✅ Inherited                    | ❌ Not inherited                                | ✅ Can be added, modified or deleted                  |
+| **Is source of (strict inheritance)**                                                                            | Not transmitted | Transmitted                  | Not transmitted                              | Cannot be added, modified or deleted               |
+| **Is dependent on (strict inheritance)**                                                                         | Not inherited   | Inherited                    | Not inherited                                | Cannot be added, modified or deleted               |
+| **Is source of (soft inheritance)**                                                                              | Not transmitted | Transmitted                  | Not transmitted                              | Can be added, modified or deleted                  |
+| **Is dependent on (soft inheritance)**                                                                           | Not inherited   | Inherited                    | Not inherited                                | Can be added, modified or deleted                  |

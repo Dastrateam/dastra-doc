@@ -4,7 +4,7 @@ description: Learn how to report a data processing activity.
 
 # Declare a processing activity
 
-## What is data processing?
+## Definition of a processing activity
 
 A processing activity is an operation or set of operations performed on personal data, such as payroll management. All processing activities taken together make up the record of processing activities.
 

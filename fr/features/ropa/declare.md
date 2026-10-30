@@ -4,7 +4,7 @@ description: Apprenez à déclarer un traitement.
 
 # Déclarer un traitement
 
-## Qu'est-ce qu'un traitement ?
+## Définition d'un traitement
 
 Un traitement est une opération ou un ensemble d'opérations portant sur des données personnelles, par exemple la gestion de la paie. L'ensemble des traitements constitue le registre des traitements.
 

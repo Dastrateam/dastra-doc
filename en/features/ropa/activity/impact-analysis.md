@@ -2,9 +2,9 @@
 description: Assess the privacy impact of the processing.
 ---
 
-# Impact analysis
+# Impact assessment
 
-The **Impact assessment** section helps you assess in a simple way whether your processing must be subject to a data protection impact assessment (DPIA, also called PIA), as provided for by [Article 35 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1).
+The **Impact assessment** section helps you assess in a simple way whether your processing must be subject to a data protection impact assessment (DPIA), as provided for by [Article 35 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1).
 
 This section is only available for **Data controller** processing activities.
 
@@ -50,7 +50,7 @@ The list of processing operations concerned depends on the recommendations of yo
 
 ## Generate the assessment with the AI assistant
 
-The AI assistant can suggest an answer for each of the 9 criteria based on the information already entered in the processing activity record: name, description, purposes, data subject categories, personal data categories, assets and recipients.
+The AI assistant can suggest an answer for each of the 9 criteria based on the information already entered in the processing activity: name, description, purposes, data subject categories, personal data categories, assets and recipients.
 
 <figure><img src="../../../.gitbook/assets/ropa-impact-analysis-1.png" alt="Generate assessment button next to the Assessment of the 9 criteria for the DPIA (EDPB) title in the Impact assessment section"><figcaption><p>The Generate assessment button starts the analysis of the 9 criteria by the AI assistant</p></figcaption></figure>
 

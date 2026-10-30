@@ -14,7 +14,7 @@ In Dastra, the **data** of your record of processing activities can be **viewed*
 
 ## Change the Record view
 
-To change the way processing activities are displayed in your record, go to the **Record of processing activities** module from the left-hand menu. By default, the processing activities are displayed in the **List view**. In the toolbar, click the **arrow to the right** of the **List view** button and choose another view.
+To change the way processing activities are displayed in your record, go to the **Record of processing activities** module: in the left-hand menu, click **ROPA**, then **Record of processing activities**. By default, the processing activities are displayed in the **List view**. In the toolbar, click the **arrow to the right** of the **List view** button and choose another view.
 
 <figure><img src="../../../.gitbook/assets/ropa-visualization-1.png" alt="List view button and its drop-down menu"><figcaption><p>The views available for the record</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ Three views are available:
 
 ## View the mapping of your record and transfers
 
-The record data map and the transfers map are available in the **Graphs** and **Transfers** tabs, at the top of the **Record of processing activities** module, above your list.
+The record data map and the transfers map are available from the left-hand menu, under **ROPA**: click **Graphs** or **Transfers**. The **Transfers** entry is displayed when the transfers map is enabled for your workspace.
 
 {% content-ref url="data-map.md" %}
 [view-the-record-data-map.md](data-map.md)
