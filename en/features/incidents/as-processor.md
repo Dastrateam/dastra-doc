@@ -1,60 +1,62 @@
 ---
-description: Manage data breach incidents in which your organisation acts as a Data Processor under the GDPR.
+description: >-
+  Manage data breach incidents in which your organization acts as a processor
+  under the GDPR.
 ---
 
-# Incidents as data processor
+# Incidents as a processor
 
-Dastra's data breach module adapts to your **organisation's role** in the incident: Data Controller (DC) or Data Processor (DP). This role determines the applicable obligations and which steps are displayed in the form.
+The Incidents module of Dastra adapts to your organization's role in the incident: controller or processor. This role determines the applicable obligations and which steps are displayed in the form.
 
-***
+## Declare your role at creation
 
-## Declaring your role at creation
+When you create an incident, the dialog asks **In the case of this data breach, are you a sub processor?**, with two answers:
 
-When creating a new incident, a selector lets you choose between:
+* **No** (the default): you handle the incident as a controller. The flow is the standard one: notification to the supervisory authority, communication to the data subjects, risk assessment.
+* **Yes**: you handle the incident as a processor. You do not have to notify the supervisory authority directly: that is the controller's responsibility.
 
-* **Data Controller** — standard flow: supervisory authority notification, communication to data subjects, risk analysis.
-* **Data Processor** — adapted flow: the obligation to notify the supervisory authority directly does not apply; it is the Data Controller's responsibility to notify.
+<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Create an incident dialog with the processor question, Yes selected"><figcaption><p>At creation, indicate whether your organization acts as a processor</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Create incident dialog with the Data Processor selector (Yes/No)"><figcaption><p>When creating an incident, indicate whether your organisation acts as a Data Processor</p></figcaption></figure>
+To create the incident step by step, see [Document a new data breach](document-breach.md).
 
 {% hint style="info" %}
-**Regulatory basis — GDPR Art. 33(2)**
-
-The Data Processor is required to notify any personal data breach to the Data Controller **without undue delay** after becoming aware of it. There is no obligation for the Processor to notify the supervisory authority directly — that obligation rests with the Data Controller.
+Article 33(2) of the GDPR: the processor notifies the controller of any personal data breach without undue delay after becoming aware of it. The processor has no obligation to notify the supervisory authority directly: that obligation rests with the controller.
 {% endhint %}
 
-***
+## Differences in the form
 
-## Form differences in Data Processor mode
+When you answer **Yes** to the role question, the form changes as follows:
 
-When the **Data Processor** role is selected:
+| Element | Controller | Processor |
+| --- | --- | --- |
+| **Notification** step (supervisory authority) | Shown | Hidden |
+| **Communication** step | Communication to the data subjects | Communication to the data controllers, with the **Data controllers** tab |
 
-| Element | DC mode | DP mode |
-| ------- | ------- | ------- |
-| Supervisory authority notification step | ✅ Shown | ❌ Hidden |
-| Communication to data subjects section | Standard | Replaced by DP section (see below) |
-| Communication to Data Controller clients section | ❌ Not present | ✅ Present |
+The other steps stay the same. In the **Risk assessment** step, a reminder tells you to inform the relevant controllers of the required actions so that they can act accordingly.
 
-***
+In the record, the **Type** filter tells incidents handled as a processor from those handled as a controller, and the **Reporting** page shows the **Role breakdown**.
 
-## Communication to Data Controller clients
+## Communicate to the data controller clients
 
-In Data Processor mode, a dedicated section replaces the standard communication section. It allows you to:
+The **Communication** step of a processor incident has two tabs.
 
-* **Associate the Data Controller clients** involved in the incident — the list can be automatically synchronised from the processing activities linked to the incident
-* **Track the notification status** of each DC (notified / pending)
-* **Export the list** of involved DCs for your compliance file
+In the **Communication** tab, answer **Did you notify the relevant data controller(s)?** with **Not applicable**, **Yes** or **No**. With **Yes**, click **Add a communication** to record each message with its date. With **No**, give the reasons in **Why have you not notified the relevant data controller(s)?**.
 
-<figure><img src="../../.gitbook/assets/violations-subprocessor-communication-dc.png" alt="Communication to Data Controllers section in a Data Processor incident"><figcaption><p>The Data Controllers tab lists the DCs to notify, with the Attach, Sync, and Export buttons</p></figcaption></figure>
+The **Data controllers** tab lists the client controllers affected by the incident. You can:
 
-### Automatic synchronisation of DCs from linked processing activities
+* attach a controller with **Attach Data Controllers**;
+* import the controllers automatically with **Sync Data Controllers**;
+* tick **Communication sent** and **Authority notified** for each one;
+* export the list with **Export list**, for your compliance file.
 
-If processing activities are associated with the incident, Dastra can automatically identify the relevant Data Controller clients from those activities and add them to the notification list. Click **Sync Data Controllers** in the dedicated section to trigger this synchronisation.
+<figure><img src="../../.gitbook/assets/incidents-as-processor-1.png" alt="Communication step of a processor incident, Data controllers tab"><figcaption><p>The Data controllers tab, with the Attach Data Controllers, Sync Data Controllers and Export list actions</p></figcaption></figure>
 
-***
+### Synchronize the data controllers
+
+If processing activities are linked to the incident (**Data processing** step), Dastra finds the client controllers from those activities and adds them to the list. Click **Sync Data Controllers** to start it. If no processing activity or AI system is linked yet, Dastra asks you to link some first.
 
 ## Best practices
 
-* Notify your DC clients **without undue delay** as soon as you become aware of the incident — the GDPR does not set a fixed deadline for the Processor's notification to the Controller (unlike the 72-hour deadline imposed on Controllers towards the supervisory authority), but prompt action is essential.
-* Document the date and time of each notification sent to DCs in the dedicated section.
-* Keep a record of acknowledgements or responses from DCs in the incident attachments.
+* Notify your client controllers as soon as you become aware of the incident. The GDPR sets no fixed deadline for the processor, unlike the 72 hours the controller has to notify the authority, but a quick response is essential.
+* Record the date and time of each communication sent to the controllers.
+* Keep the acknowledgements and replies in the **Documentation** step of the incident.
