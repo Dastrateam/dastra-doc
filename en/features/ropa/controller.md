@@ -32,7 +32,7 @@ In Dastra, a processing activity created as a data controller is documented in 1
 
 <figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Section navigation of a data controller processing activity"><figcaption><p>The different sections of a "data controller" processing activity in Dastra</p></figcaption></figure>
 
-## Actors
+## Parties involved
 
 Documented in the **Parties involved** section:
 
@@ -47,9 +47,9 @@ Documented in the **Purposes** section:
 
 * All purposes related to the activity involving the processing
 
-## Legal basis
+## Lawful basis
 
-Each purpose is associated with its legal basis, also in the **Purposes** section:
+Each purpose is associated with its lawful basis, also in the **Purposes** section:
 
 * Compliance with a legal obligation&#x20;
 * Fulfillment of a contract&#x20;
@@ -84,7 +84,7 @@ Documented in the **Measures** section:
 
 {% hint style="info" %}
 You can change the type of processing activity (from one created as a data controller to one created as a processor, and vice versa)\
-[The procedure is available here](https://doc.dastra.eu/en/features/ropa/faq#how-can-i-change-my-type-of-processing-activity-from-one-created-as-a-data-controller-to-one-created)
+[The procedure is available here](faq.md#how-can-i-change-my-type-of-processing-activity-from-one-created-as-a-data-controller-to-one-created)
 {% endhint %}
 
 ## For more information

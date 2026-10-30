@@ -37,14 +37,14 @@ Article 30 of the GDPR sets out specific obligations for the _controller's recor
 
 ## The different methodologies for setting up the record of processing activities
 
-There are two methodologies for creating a processing record:
+There are two methodologies for building the record of processing activities:
 
 * **Top-Down design**: you start the project by drawing up the inventory of data processing activities, and then you collect the information specific to each processing activity (data, processors, etc.).
 * **Bottom-Up design**: you start by making an inventory of the data (software, datasets and personal data fields) and you create the processing activities from it.
 
-### Which record methodology to choose?
+### Choosing a methodology
 
-There is no right or wrong method: everything depends on the context of your organization, the skills of the DPO team, how easily you can reach the people who operate the data...
+There is no right or wrong method: everything depends on the context of your organization, the skills of the DPO team, how accessible the people who operate the data are, etc.
 
 Here is a table comparing the two approaches:
 
@@ -52,33 +52,33 @@ Here is a table comparing the two approaches:
 
 Dastra supports both approaches. For a top-down approach, create processing activities [from templates](templates.md). If you prefer the bottom-up approach, you can [build your data map](../mapping/README.md) first and then create a processing activity directly from an asset (software, database).
 
-## How to set up your processing activity record?
+## Set up your record
 
-If you want to learn how to design and manage your record of processing activities, start here:
+To learn how to design and manage your record of processing activities, start here:
 
 {% content-ref url="establish.md" %}
 [establish-your-record.md](establish.md)
 {% endcontent-ref %}
 
-If you want to learn how to design and manage one of your processing activities, start here:
+To learn how to design and manage one of your processing activities, start here:
 
 {% content-ref url="declare.md" %}
 [declare-a-treatment.md](declare.md)
 {% endcontent-ref %}
 
-If you want to understand the different stages of the questionnaire, click here:
+To understand the sections of the questionnaire, see:
 
 {% content-ref url="activity/README.md" %}
 [remplir-le-questionnaire](activity/README.md)
 {% endcontent-ref %}
 
-If you want to learn how to share the record of processing, click here:
+To learn how to share the record of processing, see:
 
 {% content-ref url="share.md" %}
 [partager-le-registre.md](share.md)
 {% endcontent-ref %}
 
-## How to act on several processing activities at once?
+## Act on several processing activities at once
 
 In **List view**, tick the boxes on the left of the processing activities you want to work on. The **Select a batch action** button then appears above the list. Depending on your permissions and on the features enabled in your workspace, it offers the following actions:
 
@@ -91,6 +91,29 @@ In **List view**, tick the boxes on the left of the processing activities you wa
 * **Review**
 * **Share**
 * **Move to recycle bin**
+
+## Follow the record with reporting
+
+In the left-hand menu, click **ROPA**, then **Reporting** to display the statistics of your record.
+
+<figure><img src="../../.gitbook/assets/ropa-readme-2.png" alt="Reporting page of the record of processing activities with its indicator tiles and widgets"><figcaption><p>The Reporting page of the record</p></figcaption></figure>
+
+The page shows:
+
+* indicator tiles for the number of processing activities and for the **Overall progression**, **Quality** and **Sensitivity** indicators;
+* the **Indicator Averages** and the **Indicator breakdown**;
+* the number of processing activities per **Workflow** step, per **Legal basis**, per **Data subject** category, per processor and per organizational unit;
+* the share of processing activities with data transfers, the countries concerned by the **Data transfer** widget and the **DPIA** status;
+* the evolution of the number of processing activities (**Creation date**) and the **Activity logs**.
+
+Use the organizational unit selector, the filters and the **All**, **Data controller** and **Data processor** buttons to narrow the statistics. Click **Print** to print the page.
+
+## Impact analyses and privacy by design requests
+
+Two more entries of the **ROPA** menu give access to the questionnaires linked to your processing activities. They are displayed when you have access to questionnaires.
+
+* **Impact analysis** lists the [DPIA](../questionnaires/types/dpia.md), [LIA](../questionnaires/types/lia.md) and [TIA](../questionnaires/types/tia.md) questionnaires of the workspace. Click **Plan questionnaire** to create one.
+* **Privacy by design** lists the processing creation request questionnaires. They [collect processing activity projects](../trust-center/creation-questionnaires.md) from a Trust Center: once a response is validated, its data can become a processing activity.
 
 ## For more information
 

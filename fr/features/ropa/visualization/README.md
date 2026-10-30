@@ -14,7 +14,7 @@ Dans Dastra, les **données** de votre registre des traitements peuvent être **
 
 ## Modifier la vue du registre
 
-Pour modifier la manière dont les traitements s'affichent dans votre registre, allez dans le module **Registre des traitements** depuis le menu de gauche. Par défaut, les traitements s'affichent dans la vue **Tableau**. Dans la barre d'outils, cliquez sur la **flèche à droite** du bouton **Tableau** et choisissez une autre vue.
+Pour modifier la manière dont les traitements s'affichent dans votre registre, allez dans le module **Registre des traitements** : dans le menu de gauche, cliquez sur **Traitements de données**, puis sur **Registre des traitements**. Par défaut, les traitements s'affichent dans la vue **Tableau**. Dans la barre d'outils, cliquez sur la **flèche à droite** du bouton **Tableau** et choisissez une autre vue.
 
 <figure><img src="../../../.gitbook/assets/ropa-visualization-1.png" alt="Bouton Tableau et son menu déroulant"><figcaption><p>Les vues disponibles pour le registre</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ Trois vues sont disponibles :
 
 ## Visualiser la cartographie de votre registre et les transferts
 
-La cartographie des données du registre et la carte des transferts sont disponibles dans les onglets **Cartographie** et **Transferts**, en haut du module **Registre des traitements**, au-dessus de votre liste.
+La cartographie des données du registre et la carte des transferts sont disponibles depuis le menu de gauche, sous **Traitements de données** : cliquez sur **Cartographie** ou sur **Transferts**. L'entrée **Transferts** s'affiche lorsque la carte des transferts est activée pour votre espace de travail.
 
 {% content-ref url="data-map.md" %}
 [visualiser-la-cartographie-des-donnees.md](data-map.md)

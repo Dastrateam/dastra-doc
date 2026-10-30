@@ -6,7 +6,7 @@ description: Learn how to merge duplicate or similar processing activities into 
 
 ## Introduction
 
-Merging processing activities lets you **combine several processing activities into a single one**, while keeping the information you choose and the items linked to them. It is particularly useful to **streamline your record of processing activities**, remove duplicates and keep your documentation consistent.
+Merging processing activities lets you **combine several processing activities into a single one**, while keeping the information you choose and the items linked to them. It is particularly useful to **consolidate your record of processing activities**, remove duplicates and keep your documentation consistent.
 
 One of the processing activities is kept as the **reference version**: you choose, field by field, the values to carry over from the others, then the others are deleted.
 
@@ -18,7 +18,7 @@ You can start a merge from three places:
 
 * **From the list, for several processing activities**: select the processing activities to merge (fewer than 30), click **Select a batch action**, then **Merge**. The comparison opens directly.
 * **From the list, for one processing activity**: open the action menu at the end of its row and click **Merge**.
-* **From a processing activity record**: click the arrow next to the **Save changes** button, then **Merge**.
+* **From a processing activity**: click the arrow next to the **Save changes** button, then **Merge**.
 
 <figure><img src="../../.gitbook/assets/ropa-merge-1.png" alt="Merge entry in the action menu of a processing activity"><figcaption><p>The Merge entry of the action menu of a processing activity</p></figcaption></figure>
 
@@ -63,7 +63,7 @@ To identify processing activities that are likely duplicates, click the arrow ne
 
 | Case                                 | Example                                                                         | Benefit                                         |
 | ------------------------------------ | ------------------------------------------------------------------------------- | ----------------------------------------------- |
-| **Streamlining**                     | Two processing activities "HR management" and "Staff management"                | Avoid duplicates and simplify maintenance       |
+| **Consolidation**                    | Two processing activities "HR management" and "Staff management"                | Avoid duplicates and simplify maintenance       |
 | **Reorganization**                   | Similar processing activities created in several organizational units          | Keep a single, up-to-date processing activity   |
 | **Harmonization across entities**    | Equivalent processing activities documented separately by several subsidiaries | Make governance and global reporting easier     |
 | **Record cleanup**                   | Duplicates created during an initial import                                     | Improve the clarity and reliability of the record |

@@ -1,14 +1,14 @@
 ---
 description: >-
-  Cette section permet de lister les applications ou logiciels qui servent de
-  supports de stockage aux données personnelles.
+  Listez les actifs, internes ou externes à l'organisation, qui supportent le
+  traitement.
 ---
 
 # Actifs
 
 {% embed url="https://youtu.be/cDB0qfqGaqU" %}
 
-Vous listez ici les actifs, internes ou externes à l'organisation (applications, logiciels, ressources, bâtiments, etc.), qui supportent l'exécution du traitement et qui servent à **stocker des données personnelles**.
+Vous listez ici les actifs, internes ou externes à l'organisation (applications, logiciels, ressources, bâtiments, etc.), qui supportent l'exécution du traitement.
 
 _Par exemple, si vous utilisez un logiciel de relation client de type CRM, ajoutez-le à cette liste._
 

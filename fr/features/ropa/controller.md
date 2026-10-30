@@ -32,7 +32,7 @@ Dans Dastra, un traitement créé en tant que responsable de traitement est docu
 
 <figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Navigation entre les sections d'un traitement en tant que responsable de traitement"><figcaption><p>Les différentes sections d'un traitement "responsable de traitement" dans Dastra</p></figcaption></figure>
 
-## Les acteurs
+## Les parties prenantes
 
 Documentés dans la section **Parties prenantes** :
 
@@ -84,7 +84,7 @@ Documentées dans la section **Mesures** :
 
 {% hint style="info" %}
 Vous pouvez changer le type d'un traitement (passer d'un traitement créé en tant que responsable de traitement à un traitement créé en tant que sous-traitant, et inversement).\
-[La procédure est disponible ici](https://doc.dastra.eu/features/ropa/faq#comment-changer-le-type-dun-traitement-passer-dun-traitement-cree-en-tant-que-responsable-de-traitem)
+[La procédure est disponible ici](faq.md#comment-changer-le-type-dun-traitement-passer-dun-traitement-cree-en-tant-que-responsable-de-traitem)
 {% endhint %}
 
 ## Pour aller plus loin

@@ -4,7 +4,7 @@ Dans Dastra, vous pouvez créer des relations entre vos traitements pour facilit
 
 Ces relations sont possibles entre des traitements situés dans un même espace de travail.
 
-## Pourquoi créer des relations entre les traitements ?
+## Quand utiliser les relations
 
 Les relations entre les traitements peuvent servir à matérialiser les relations de responsabilité entre les différentes entités responsables de traitement.
 
@@ -18,7 +18,7 @@ Par exemple, dans un groupe de sociétés, vous pouvez relier un traitement réa
 
 Sur la fiche d'un traitement, cliquez sur le bouton **Relations inter-traitements** dans la barre d'outils en haut de la fiche. Le bouton indique le nombre de relations existantes.
 
-<figure><img src="../../.gitbook/assets/register-processing-relations-tab-tooltip.png" alt="Panneau Relations inter-traitements d&#x27;un traitement"><figcaption><p>Le panneau Relations inter-traitements d'un traitement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-1.png" alt="Panneau Relations inter-traitements d&#x27;un traitement"><figcaption><p>Le panneau Relations inter-traitements d'un traitement</p></figcaption></figure>
 
 Le panneau **Relations inter-traitements** liste les relations existantes, regroupées par type, avec l'unité organisationnelle de chaque traitement lié et la date de création de la relation. Cliquez sur un traitement pour l'ouvrir dans un nouvel onglet, ou cliquez sur l'icône de corbeille pour supprimer la relation.
 
@@ -30,7 +30,7 @@ Pour créer une relation, cliquez sur **Ajouter une relation**, puis :
 4. Pour un nouveau traitement, saisissez le **Nom du nouveau traitement**, activez **Activité en tant que sous-traitant** si nécessaire, et sélectionnez son unité organisationnelle.
 5. Cliquez sur **Ajouter**.
 
-<figure><img src="../../.gitbook/assets/register-processing-add-relation-modal.png" alt="Fenêtre Ajouter une relation"><figcaption><p>La fenêtre Ajouter une relation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-2.png" alt="Fenêtre Ajouter une relation"><figcaption><p>La fenêtre Ajouter une relation</p></figcaption></figure>
 
 Vous pouvez créer des relations avec plusieurs traitements en une seule fois :
 
@@ -122,7 +122,7 @@ Cela crée une relation stricte entre **B (source)** et **A (dépendant)** :
 
 Si la relation est supprimée, les champs hérités redeviennent modifiables et les champs d'origine de **A** sont restaurés (les éléments de vos référentiels sont conservés).
 
-Un traitement qui dépend d'un autre en héritage fort affiche un bandeau **Héritage du traitement de données** avec un lien vers sa source, et ses onglets hérités sont verrouillés.
+Un traitement qui dépend d'un autre en héritage fort affiche le message **Héritage du traitement de données** avec un lien vers sa source, et ses onglets hérités sont verrouillés.
 
 {% hint style="danger" %}
 Un traitement ne peut dépendre que d'**un seul traitement source à la fois**.

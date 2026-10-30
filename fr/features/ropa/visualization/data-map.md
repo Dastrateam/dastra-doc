@@ -14,13 +14,13 @@ Cette vue permet d'explorer, d'analyser et de comprendre les liens entre les él
 
 ## Visualiser la cartographie des données du registre
 
-Pour visualiser la cartographie de votre registre, allez dans le module **Registre des traitements**, puis cliquez sur l'onglet **Cartographie** au-dessus de votre liste de traitements.
+Pour visualiser la cartographie de votre registre, dans le menu de gauche, cliquez sur **Traitements de données**, puis sur **Cartographie**.
 
-<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Onglet Cartographie du module Registre des traitements"><figcaption><p>Onglet Cartographie au-dessus des traitements</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Entrée Cartographie du menu Traitements de données"><figcaption><p>L'entrée Cartographie du menu Traitements de données</p></figcaption></figure>
 
 Vous pouvez alors **visualiser la cartographie des données de votre registre**.
 
-<figure><img src="../../../.gitbook/assets/cartography-graph-node-detail.png" alt="Exemple de cartographie des données du registre"><figcaption><p>Exemple de cartographie</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-2.png" alt="Exemple de cartographie des données du registre"><figcaption><p>Exemple de cartographie</p></figcaption></figure>
 
 La barre d'outils au-dessus de la cartographie permet :
 

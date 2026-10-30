@@ -49,7 +49,7 @@ Open the menu of the **Create data processing** button (the arrow on its right),
 
 In the panel that opens, **Choose the library source**, **Choose the destination organisational unit**, then tick one or more templates and click **Add**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-01-30-171155.png" alt="Create from library panel with several templates selected"><figcaption><p>Selecting several templates in the library</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-7.png" alt="Create from library panel with several templates selected"><figcaption><p>Selecting several templates in the library</p></figcaption></figure>
 
 The **Details** button lets you preview a template.&#x20;
 

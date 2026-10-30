@@ -34,7 +34,7 @@ Pour utiliser des jeux de données génériques, nous recommandons la procédure
 * Ouvrez la page des jeux de données de la cartographie dans un nouvel onglet.
 * Sélectionnez le jeu de données dans le traitement.
 * Si le jeu de données doit être modifié, créez-en un autre : allez dans l'autre onglet et dupliquez le jeu de données générique en retirant ou en ajoutant les champs souhaités.
-* Pour plus de clarté, nous recommandons d'ajouter des tags à ces jeux de données, afin de les distinguer facilement dans le sélecteur de jeux de données. Par exemple : un tag « générique » et un tag pour la donnée ajoutée ou retirée.
+* Pour plus de clarté, nous recommandons d'ajouter des tags à ces jeux de données, pour les distinguer dans le sélecteur de jeux de données. Par exemple : un tag « générique » et un tag pour la donnée ajoutée ou retirée.
 
 {% hint style="info" %}
 Un jeu de données peut être lié à plusieurs traitements. Lorsque vous modifiez un jeu de données utilisé par plusieurs traitements, Dastra vous avertit que vos modifications s'appliquent à tous ces traitements. Si les champs de données diffèrent nettement pour un traitement, créez une copie du jeu de données et personnalisez la copie.
