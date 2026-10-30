@@ -1,15 +1,14 @@
 ---
 description: >-
   Le registre est lié à de nombreux référentiels : actifs, acteurs, jeux de
-  données, mesures de sécurité. Dastra vous permet de les gérer de manière
-  indépendante du registre pour limiter les erreurs de saisie.
+  données, glossaire de données, mesures de sécurité et catégories de personnes
+  concernées. Dastra vous permet de les gérer de manière indépendante du
+  registre pour limiter les erreurs de saisie.
 ---
 
 # Référentiels
 
-Pour réduire les erreurs de saisie, Dastra vous permet d'administrer un ou plusieurs référentiels de manière autonome, indépendamment du registre. Le schéma ci-dessous illustre la réutilisabilité de ces référentiels dans le registre des traitements.
-
-![Schéma illustrant les relations entre traitements et référentiels (applicatifs et sous-traitance)](../../../.gitbook/assets/register-referentiel-architecture-diagram.png)
+Pour réduire les erreurs de saisie, Dastra vous permet d'administrer les référentiels de manière autonome, indépendamment du registre. Les traitements du registre réutilisent ensuite les éléments de ces référentiels.
 
 ## Accéder aux référentiels
 
@@ -19,23 +18,34 @@ Dans le menu latéral, sous **Inventaire**, cliquez sur **Référentiels**. Le m
 * **Cartographie** : la représentation graphique de vos actifs et de vos acteurs.
 * **Actifs**, **Acteurs**, **Jeux de données**, **Glossaire de données**, **Mesures** et **Cat. personnes concernées** : les six référentiels.
 
-## Liste des référentiels proposés par Dastra
+Ce que vous pouvez faire dépend des droits de cartographie et de référentiels de votre rôle. Voir [Rôles et permissions](../../settings/roles.md).
 
-* **Actifs** : les actifs regroupent les éléments utiles au pilotage des données (supports des données, locaux, éléments matériels ou immatériels). Voir [Actifs](assets.md).
-* **Acteurs** : les acteurs sont différenciés des utilisateurs, car ils n'ont pas besoin de se connecter à la plateforme.
-* **Jeux de données** : les jeux de données sont des groupes de données formant des ensembles cohérents, avec leurs règles de conservation.
-* **Glossaire de données** : les données sont les informations. Elles constituent le niveau le plus atomique dans Dastra.
-* **Mesures** : les mesures de sécurité sont les dispositions techniques ou organisationnelles mises en place pour protéger les données.
-* **Cat. personnes concernées** : les catégories de personnes concernées regroupent des catégories d'individus.
+## Les six référentiels
+
+* [Actifs](assets.md) : les supports des données, les locaux, les éléments matériels ou immatériels.
+* [Acteurs](stakeholders.md) : les entreprises et personnes liées à vos traitements, qui n'ont pas besoin de se connecter à la plateforme.
+* [Jeux de données](datasets.md) : des groupes de champs de données formant des ensembles cohérents, avec leurs règles de conservation.
+* [Glossaire de données](data-glossary.md) : les champs de données, niveau le plus atomique dans Dastra.
+* [Mesures de sécurité](security-measures.md) : les dispositions techniques ou organisationnelles qui protègent les données. L'entrée du menu est **Mesures**.
+* [Catégories de personnes concernées](subject-categories.md) : les groupes d'individus dont vous traitez les données. L'entrée du menu est **Cat. personnes concernées**.
+
+Chaque page décrit les champs de la fiche, la création, l'import et la fusion des éléments, et les endroits où le référentiel est utilisé. La façon dont un traitement utilise ces éléments est décrite une seule fois, dans les pages du traitement : voir [Compléter un traitement](../../ropa/activity/README.md).
 
 ## Fonctions communes aux listes
 
 Les listes des six référentiels partagent plusieurs fonctions :
 
-* **Créer à partir de modèles** ajoute un élément depuis la bibliothèque de modèles.
+* **Créer à partir de modèles** ajoute un élément depuis la bibliothèque de modèles. Pour la plupart des référentiels, un bouton d'IA à côté du bouton de création rédige un élément à partir d'une courte description, lorsque la fonctionnalité est activée pour votre organisation.
 * **Importer** ajoute des éléments depuis un fichier. Voir [Importer vos données (Excel, Csv)](../../general/import.md).
-* **Exporter** exporte la liste.
+* **Exporter** exporte la liste, ou seulement les lignes sélectionnées.
 * **Outil de qualité de données** détecte les doublons, et **Fusionner** les regroupe. L'outil de qualité de données n'existe pas pour les catégories de personnes concernées. Voir [Fusion d'éléments](../../general/merge.md).
+* Filtres, colonnes personnalisées et vues personnalisées. Voir [Filtres avancés](../../general/filters.md).
+* Actions groupées sur une sélection de lignes. Voir [Listes, actions groupées et corbeille](../../general/lists.md). **Modifier les champs**, lorsqu'elle est proposée, modifie le même champ sur tous les éléments sélectionnés.
+* Les vues tableau et cartes, pour les actifs et les acteurs.
+
+Dans les référentiels, **Supprimer** demande une confirmation et supprime l'élément définitivement : la corbeille décrite dans la page des listes ne s'applique pas.
+
+Les fiches partagent aussi les [champs personnalisés](../../general/custom-fields.md), sauf pour les catégories de personnes concernées, et, dans la barre d'outils, les [relations génériques](../relationships.md) de l'élément, lorsqu'elles sont proposées.
 
 ## Vue d'ensemble et cartographie
 
@@ -49,40 +59,6 @@ La page **Cartographie** propose quatre représentations, à choisir dans la lis
 * **Arbre hierarchique des actifs**.
 
 Les boutons **Imprimer** et **Rafraîchir** sont disponibles en haut de la page.
-
-## Particularités de chaque référentiel
-
-### Acteurs
-
-Un acteur peut être rattaché à une unité organisationnelle, ce qui limite sa visibilité aux utilisateurs de cette unité. Le bouton **Créer acteur** propose de partir d'un modèle (**A partir d'un modèle**) ou de zéro (**A partir de zéro**).
-
-Sur la fiche, la section **Sous-traitants ultérieurs** permet d'enregistrer les sous-traitants de l'organisation, souvent cités dans le DPA, et de cartographier toute la chaîne de sous-traitance.
-
-Dans la liste, le filtre **Référencé en tant que** retrouve les acteurs selon l'usage que vous en faites : éditeur de logiciel (éditeur d'au moins un actif), fournisseur de modèle d'IA (éditeur d'au moins un modèle d'IA), ou destinataire dans un traitement (sous-traitant, responsable conjoint, organisme public, etc.).
-
-### Jeux de données
-
-Un jeu de données regroupe des champs de données, sensibles ou non, et les règles de conservation liées à leur cycle de vie : un bulletin de paie papier ou les fiches clients d'un CRM, par exemple. Renseignez notamment l'**Origine de la collecte**, la **Base active** et l'**Archivage intermédiaire**, puis ajoutez les données dans **Détails des données**.
-
-Le filtre **Voir orphelin (sans actif)** liste les jeux de données qui ne sont rattachés à aucun actif. Vous pouvez les rattacher depuis le champ **Actif lié**.
-
-### Glossaire de données
-
-Chaque donnée porte un **Niveau de sensibilité** :
-
-* **Standard**, par exemple le nom, le prénom ou le numéro de téléphone.
-* **Données hautement personnelles**, par exemple les données financières, la localisation ou les communications.
-* **Données sensibles**, par exemple l'origine raciale, les opinions politiques, la religion, la santé ou l'orientation sexuelle.
-
-Le niveau **Données sensibles** fait apparaître le champ **Base légale de collecte**. La colonne **Jeux de données**, masquée par défaut, se filtre avec **Est vide** ou **N'est pas vide** : utilisez-la pour retrouver les données qui n'appartiennent à aucun jeu de données.
-
-### Mesures
-
-Une mesure porte un nom, un **Type** et, si vous le souhaitez, l'adresse de sa documentation, par exemple sur le site de la CNIL. Le filtre **Voir les orphelins** liste les mesures qui ne sont rattachées ni à un actif ni à un traitement.
-
-### Catégories de personnes concernées
-
-Une catégorie porte un libellé et une option **Personnes vulnérables concernées**, à cocher si la catégorie regroupe des personnes en situation de déséquilibre, comme des mineurs, des salariés ou des personnes âgées.
 
 ## Générer un référentiel de données avec Dastra
 
