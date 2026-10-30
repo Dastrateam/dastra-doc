@@ -61,7 +61,7 @@ In Dastra ist es möglich, [benutzerdefinierte Felder](../features/general/custo
 
 Benutzerdefinierte Felder sind für jeden Mandanten spezifisch. Um sie in der Dastra-API zu berücksichtigen, legen Sie zunächst den **Namen der Variablen (Slug)** in der Definition des benutzerdefinierten Feldes fest:
 
-<figure><img src="../.gitbook/assets/image-276.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/general-custom-fields-4.png" alt=""><figcaption></figcaption></figure>
 
 {% content-ref url="../features/general/custom-fields.md" %}
 [custom-fields.md](../features/general/custom-fields.md)
