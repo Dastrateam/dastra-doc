@@ -22,6 +22,8 @@ Richten Sie zunächst das Widget in der Liste der Formulare ein: Klicken Sie im 
 
 <figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Liste der Formulare mit der Schaltfläche zum Erstellen eines Formulars"><figcaption><p>Die Liste der Formulare</p></figcaption></figure>
 
+Kopieren Sie den Code immer aus der Anwendung: Die Adresse des Skripts hängt von der Hosting-Region Ihrer Organisation ab (`cdn-bleu.dastra.eu` statt `cdn.dastra.eu` auf [Bleu](../../security/bleu.md)).
+
 Hier ist ein einfaches Beispiel für die Integration des Widgets (im Popup-Modus mit einer Schaltfläche zum Öffnen):
 
 ```html

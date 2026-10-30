@@ -10,7 +10,7 @@ description: >-
 Bei Dastra nehmen wir die Sicherheit sehr ernst. Hier einige Informationen, die wir zur Umsetzung von Sicherheitsmaßnahmen teilen:
 
 {% hint style="info" %}
-Die Sicherheitseinstellungen der Organisation (verpflichtende starke Authentifizierung, IP-Adressfilterung, Filterung der E-Mail-Domains, Richtlinie zur Passwortaktualisierung, automatische Abmeldung, Aufbewahrung von Sicherheitsprotokollen, SIEM-Streaming) sind den Organisationseigentümern und dem Enterprise-Plan vorbehalten. Sie befinden sich unter **Konfiguration der Organisation** > **Sicherheit**.
+Die Sicherheitseinstellungen der Organisation (verpflichtende starke Authentifizierung, IP-Adressfilterung, Filterung der E-Mail-Domains, Richtlinie zur Passwortaktualisierung, automatische Abmeldung, Aufbewahrung von Sicherheitsprotokollen, SIEM-Streaming) sind den Organisationseigentümern und dem Enterprise-Plan vorbehalten. Sie befinden sich unter **Konfiguration der Organisation** > **Sicherheit**. Zu jeder Einstellung siehe [Sicherheit der Organisation und Sicherheitsprotokolle](../features/settings/security-center.md).
 {% endhint %}
 
 ## Sicheres Cloud-Hosting

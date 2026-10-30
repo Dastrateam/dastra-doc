@@ -13,6 +13,10 @@ Dieser Bereich versammelt die Funktionen, die in jedem Dastra-Modul genutzt werd
 [Erweiterte Filter](filters.md)
 {% endcontent-ref %}
 
+{% content-ref url="lists.md" %}
+[Listen, Sammelaktionen und Papierkorb](lists.md)
+{% endcontent-ref %}
+
 {% content-ref url="import.md" %}
 [Daten importieren (Excel, CSV)](import.md)
 {% endcontent-ref %}

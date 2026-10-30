@@ -12,11 +12,23 @@ Um das Modul zu öffnen, klicken Sie im linken Menü auf **Fragebögen**. Das Me
 * **Alle Fragebögen**: die Antworten auf alle im Mandanten geplanten Fragebögen;
 * **Meine Fragebögen**: die Fragebögen, die an Sie gerichtet sind, als Befragter oder als Genehmiger.
 
+## Einen an Sie gerichteten Fragebogen beantworten
+
+Wenn Sie Befragter oder Genehmiger sind, öffnen Sie **Fragebögen** > **Meine Fragebögen**. Die Liste zeigt nur die an Sie gerichteten Fragebögen mit Frist, Befragten, Status und Bearbeitungsgrad. Ein Fragebogen nach Ablauf der Frist trägt das Badge **Abgelaufen**.
+
+1. Filtern Sie mit den Tabs über der Liste nach Status: **Alle**, **Validierung ausstehend**, **Validiert** oder **Abgelaufen**.
+2. Klicken Sie auf eine Zeile, um den Fragebogen zu öffnen und zu beantworten.
+3. Wenn Sie alle erforderlichen Fragen beantwortet haben, schließen Sie den Fragebogen ab. Er geht dann an seine Genehmiger: siehe [Einen Fragebogen validieren](validate.md).
+
+Das Menü einer Zeile bietet je nach Ihren Berechtigungen außerdem **Teilen**, **Exportieren** und **Den Fragebogen abbrechen**. Fragebögen, die Sie in den Papierkorb verschieben, erscheinen, wenn Sie **Papierkorb anzeigen** aktivieren, wie unter [Einen Fragebogen oder eine Vorlage löschen](delete.md) beschrieben.
+
 ## Eine Vorlage erstellen
 
 {% content-ref url="templates/README.md" %}
 [Eine Fragebogenvorlage erstellen](templates/README.md)
 {% endcontent-ref %}
+
+Die Anzahl der Vorlagen hängt von Ihrem Abonnement ab: siehe [Credits und Kontingente](../../getting-started/setup/key-concepts.md#credits-und-kontingente).
 
 ## Einen Fragebogen planen
 

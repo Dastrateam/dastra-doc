@@ -15,3 +15,5 @@ Um die Funktion „Verarbeitungsverzeichnis“ in Ihrem Trust Center zu aktivier
 Sobald die Funktion aktiviert ist, sind die Verarbeitungstätigkeiten mit dem Status **„veröffentlicht“**, die zur Organisationseinheit Ihres Trust Centers oder zu einer ihrer untergeordneten Einheiten gehören, für alle Besucher Ihres Trust Centers öffentlich einsehbar.
 
 Abgesehen von der Aktivierung erfordert das Verarbeitungsverzeichnis keine zusätzliche Konfiguration, um in Ihrem Trust Center angezeigt zu werden.
+
+Auf der öffentlichen Seite erhalten Besucher beim Verzeichnis außerdem einen Filter **Organisationseinheit**, wenn die Einheit des Trust Centers untergeordnete Einheiten hat. Er bietet nur die Einheit des Trust Centers und ihre untergeordneten Einheiten an.

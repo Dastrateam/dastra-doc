@@ -62,6 +62,10 @@ Der Assistent kann eine bestehende Verarbeitungstätigkeit analysieren und eine 
 
 Sobald die Analyse erstellt ist, klicken Sie auf **Analyse ausdrucken**, um das Ergebnis als PDF zu exportieren oder direkt an den Drucker zu senden. Dieses Dokument kann Ihrer Compliance-Akte beigefügt werden.
 
+### Einen Vertrag, einen Stakeholder, ein Asset oder eine Fragebogenantwort analysieren
+
+Dieselbe Analyse steht für Verträge, Stakeholder, Assets und Fragebogenantworten zur Verfügung. Öffnen Sie den Eintrag und klicken Sie dann auf die Schaltfläche **KI-Analyse (Beta)**. Das Fenster zeigt die Gesamtbewertung von A bis F, die bewerteten Kriterien mit ihrer Begründung und die vorgeschlagenen Aufgaben. Mit **Verlauf der Analysen** vergleichen Sie mit einer früheren Analyse, mit **Analyse ausdrucken** exportieren Sie das Ergebnis.
+
 ### Tags vorschlagen
 
 In einem noch leeren Feld **Tags** schlägt eine KI-Schaltfläche anhand von Name und Beschreibung des Objekts Tags vor. Klicken Sie darauf: Die vorgeschlagenen Tags füllen das Feld. Zur Verwaltung der Tags siehe [Tags verwalten](../tags.md).

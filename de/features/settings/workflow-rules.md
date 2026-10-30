@@ -138,6 +138,8 @@ Die Aktion **Aufgabe hinzufügen** enthält die Felder **Zugewiesen an** und **I
 
 Die Variable **OU Owner** weist die Aufgabe dem Inhaber der Organisationseinheit des auslösenden Objekts zu. Hat diese Einheit keinen Inhaber, wird der Inhaber der nächstgelegenen übergeordneten Einheit verwendet. Hat das Objekt keine Organisationseinheit, verwendet die Aktion die in der Aktion ausgewählte **Default organizational unit** mit derselben Regel. Wird kein Inhaber gefunden, wird die Aufgabe ohne zugewiesene Person erstellt, ohne die Regel zu blockieren.
 
+Um die Arbeit auf ein Team zu verteilen, wählen Sie in der Aktion zum Festlegen des Inhabers **Bitte wählen Sie einen Nutzer aus dem Team aus.** und dann das Team unter **Bitte wählen Sie ein Team aus**. Dastra wählt einen Nutzer des Teams nach dem Round-Robin-Verfahren: Jedes Mal, wenn die Regel ausgelöst wird, kommt das nächste Mitglied des Teams an die Reihe.
+
 ### Eine Nachrichtenvorlage mit einer Aktion verknüpfen
 
 Bei Regeln für **Betroffenenanfragen** kann die Aktion **Bitte senden Sie eine Anfrage** (Nachricht an den Antragsteller) auf eine bestehende **Nachrichtenvorlage** zurückgreifen, statt manuell eingegebene Inhalte zu verwenden.

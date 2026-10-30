@@ -39,6 +39,10 @@ Ausstehende Einladungen verwalten Sie im Tab **Einladungen** der Seite **Nutzer*
 
 <figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Tab Einladungen mit einer ausstehenden Einladung"><figcaption><p>Der Tab Einladungen</p></figcaption></figure>
 
+{% hint style="info" %}
+Ihr Abonnement begrenzt die Anzahl der Nutzer. Das Kontingent zählt die aktiven Nutzer und die Nutzer, die mit einer ausstehenden oder abgelaufenen Einladung verknüpft sind: Entfernen Sie den Nutzer einer Einladung, die Sie nicht mehr brauchen, um einen Platz freizugeben. Ist die Grenze erreicht, zeigt Dastra **You have reached the users limit**, und Sie können das Dastra-Team kontaktieren, um sie zu erhöhen.
+{% endhint %}
+
 ### Einen Einladungslink erneut senden
 
 Hat die eingeladene Person nicht auf den Link geklickt und ist dieser abgelaufen, klicken Sie neben der Einladung auf die Schaltfläche zum erneuten Senden und bestätigen Sie anschließend.

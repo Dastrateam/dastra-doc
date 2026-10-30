@@ -37,23 +37,25 @@ Der Abschnitt enthält außerdem die **Sprache des Browsers** (die bevorzugte Sp
 
 Dastra bietet 17 Anfragetypen:
 
-* Auskunft
-* Zugang
-* Berichtigung
-* Löschung
-* Einschränkung
-* Widerspruch
-* Portabilität
-* Verfahren für Daten nach dem Tod
-* Keine automatisierte Entscheidungsfindung
-* Zugriff auf Verwaltungsdokumente
-* Anfrage an den Datenschutzbeauftragten
-* Anfrage eines Dritten
-* Data protection complaint
-* Meine Daten nicht verkaufen/weitergeben
-* Einschränkung der Verwendung sensibler personenbezogener Daten
-* Widerruf der Einwilligung
-* Sonstiges
+| Typ | Was die anfragende Person verlangt |
+| --- | --- |
+| Auskunft | Informationen über die Verarbeitung ihrer Daten |
+| Zugang | Eine Kopie ihrer personenbezogenen Daten (Artikel 15) |
+| Berichtigung | Die Berichtigung unrichtiger Daten (Artikel 16) |
+| Löschung | Die Löschung ihrer Daten (Artikel 17) |
+| Einschränkung | Die Einschränkung der Verarbeitung (Artikel 18) |
+| Widerspruch | Eine Verarbeitung zu beenden, die auf berechtigten Interessen beruht oder für Marketing genutzt wird (Artikel 21) |
+| Portabilität | Ihre Daten in einem strukturierten Format zu erhalten oder übertragen zu lassen (Artikel 20) |
+| Verfahren für Daten nach dem Tod | Anweisungen für das Schicksal ihrer Daten nach ihrem Tod festzulegen (französisches Recht) |
+| Keine automatisierte Entscheidungsfindung | Keiner Entscheidung unterworfen zu werden, die ausschließlich auf einer automatisierten Verarbeitung beruht (Artikel 22) |
+| Zugriff auf Verwaltungsdokumente | Zugang zu Verwaltungsdokumenten, für französische öffentliche Stellen |
+| Anfrage an den Datenschutzbeauftragten | Eine an den Datenschutzbeauftragten gerichtete Anfrage |
+| Anfrage eines Dritten | Eine von einem Dritten gestellte Anfrage |
+| Data protection complaint | Eine Beschwerde über den Umgang mit personenbezogenen Daten |
+| Meine Daten nicht verkaufen/weitergeben | Dem Verkauf oder der Weitergabe personenbezogener Informationen zu widersprechen (kalifornisches Recht) |
+| Einschränkung der Verwendung sensibler personenbezogener Daten | Die Verwendung sensibler personenbezogener Informationen einzuschränken (kalifornisches Recht) |
+| Widerruf der Einwilligung | Eine zuvor erteilte Einwilligung zu widerrufen (Artikel 7 Absatz 3) |
+| Sonstiges | Jede Anfrage, die zu keinem der obigen Typen passt |
 
 Eine Anfrage kann mehrere Typen abdecken.
 

@@ -6,7 +6,7 @@ description: HR-Referenzwerk der CNIL, der französischen Datenschutzbehörde.
 
 Die CNIL hat ein Referenzwerk für Verarbeitungen im Personalwesen veröffentlicht: [Referenzwerk zur Personalverwaltung auf der Website der CNIL](https://www.cnil.fr/fr/publication-du-referentiel-relatif-la-gestion-des-ressources-humaines) (auf Französisch).
 
-Unten finden Sie von Dastra bereitgestellte Dateien zum Herunterladen, mit denen Sie dieses Referenzwerk schneller in Ihr Verarbeitungsverzeichnis übernehmen.
+Unten finden Sie von Dastra bereitgestellte Dateien zum Herunterladen, mit denen Sie dieses Referenzwerk schneller in Ihr Verarbeitungsverzeichnis übernehmen. Importieren Sie sie mit dem [Excel- und CSV-Import](../features/general/import.md).
 
 ## 1. Bezeichnungen der Verarbeitungen
 

@@ -10,6 +10,8 @@ description: >-
 
 Bevor Sie Ihre Verarbeitungstätigkeiten erstellen, kartieren Sie die Daten Ihrer Organisation so genau wie möglich. In der Anwendung heißt dieses Modul **Metadaten**. Die Kartierung verknüpft vier Arten von Elementen: den Herausgeber eines Assets, das Asset selbst, die darauf angewandten Sicherheitsmaßnahmen und die Datenkategorien, die es enthält und die aus Datenfeldern bestehen.
 
+<figure><img src="../../.gitbook/assets/mapping-schema-1.png" alt="Diagramm der Datenkartierung: Der Herausgeber stellt Assets bereit, die mit Sicherheitsmaßnahmen und mit Datenkategorien aus Feldern verknüpft sind"><figcaption><p>Struktur der Datenkartierung</p></figcaption></figure>
+
 Um alle personenbezogenen Daten Ihres Informationssystems zu inventarisieren, gehen Sie wie folgt vor:
 
 1. **Die Assets erfassen**: Software, Dateien, Plugins, Server, Maschinen usw.

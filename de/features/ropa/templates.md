@@ -54,3 +54,14 @@ Wählen Sie im sich öffnenden Bereich die **Datenquelle der Bibliothek** und di
 Mit der Schaltfläche **Details** sehen Sie eine Vorschau einer Vorlage.
 
 Ihre Verarbeitungstätigkeiten werden anschließend im Hintergrund angelegt.
+
+## Eine Vorlage beitragen
+
+Sie können eine Ihrer Verarbeitungstätigkeiten, Fragebogenvorlagen oder Asset-Vorlagen bei den Dastra-Bibliotheken einreichen, damit alle Dastra-Nutzer sie verwenden können, sobald unser Team sie freigegeben hat.
+
+1. Öffnen Sie die Verarbeitungstätigkeit oder die Vorlage und klicken Sie dann auf **Beitrag leisten**.
+2. Geben Sie den **Name des Beitrags** ein. Fügen Sie unter **Ihr Kommentar** einen Kommentar für unser Team hinzu, wenn er die Prüfung erleichtert.
+3. Wählen Sie, ob Sie genannt werden möchten: Wenn Sie **Möchten Sie für diesen Beitrag genannt werden?** mit Ja beantworten und der Beitrag freigegeben wird, werden Ihr Avatar und Ihr Benutzername bei der Vorlage angezeigt.
+4. Stimmen Sie der Weitergabe der gesamten Vorlage zur Veröffentlichung in der Dastra-Bibliothek zu und reichen Sie sie dann ein.
+
+Um Ihre Beiträge zu verfolgen, öffnen Sie **Mandanteneinstellungen** > **Beiträge**. Diese Seite setzt die Berechtigung voraus, Beiträge zu schreiben. Sie listet für jeden Beitrag seinen Namen, den Nutzer, seinen **Status**, ob er **Veröffentlicht** ist und seinen Typ auf. Filtern Sie die Liste nach Status und Typ, öffnen Sie einen Beitrag, um unter **Ergebnis Ihres Beitrags** den Kommentar unseres Teams zu lesen, oder klicken Sie auf **Bitte diesen Beitrag entfernen**, um seine Entfernung aus der Bibliothek zu beantragen.

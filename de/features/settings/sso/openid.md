@@ -52,6 +52,8 @@ Das Formular zeigt außerdem die Werte an, die Sie bei Ihrem Authentifizierungsa
 * **URL zum Abmelden (Back-Channel-Logout-URL)**, optional;
 * **JSON-URI für öffentlichen Schlüssel (JWK-Privatschlüssel)**, nur beim privaten JWT-Schlüssel. Speichern Sie das Formular einmal, damit dieser Endpunkt funktioniert.
 
+Tragen Sie die **URL zum Abmelden (Back-Channel-Logout-URL)** bei Ihrem Anbieter ein, wenn eine Abmeldung beim Anbieter auch die Dastra-Sitzung beenden soll. Dastra unterstützt OpenID Connect Back-Channel Logout: Sendet Ihr Anbieter ein Logout-Token für einen Nutzer oder eine Sitzung, widerruft Dastra die entsprechenden Sitzungen, sodass sich der Nutzer erneut anmelden muss.
+
 ### Methode zur Client-Authentifizierung: geheimer Schlüssel oder privater JWT-Schlüssel
 
 Wählen Sie, wie sich Dastra bei Ihrem Identitätsanbieter authentifiziert:

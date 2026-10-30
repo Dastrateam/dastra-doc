@@ -39,6 +39,8 @@ Das bedeutet:
 
 Solange sich das Projekt nicht in der Phase **Überwachung** befindet, wird davon abgeraten, Nachweise zu ändern oder zu bestätigen: Dastra zeigt eine Warnung an, ohne Sie zu blockieren.
 
+Der Tab **Context** der Testdetails zeigt, woher der Test stammt: das **Projekt** (Name, Status, Beschreibung und **Frameworks**) und sein **Geltungsbereich**.
+
 <figure><img src="../../../.gitbook/assets/image-458.png" alt="Details eines Projekttests mit dem Status Beweis fehlt"><figcaption></figcaption></figure>
 
 ***
@@ -181,3 +183,9 @@ Das Projekt ist dann bereit für die nächste Phase: **Überwachung**, in der:
 * die Tests regelmäßig ausgeführt werden,
 * die Nachweise gesammelt werden,
 * und die Compliance im Zeitverlauf gemessen wird.
+
+## Die Listen des Projekts exportieren
+
+Die Tabs **Kontrollen**, **Tests** und **Risiken** eines Projekts haben jeweils eine Schaltfläche **Exportieren**. Sie exportiert die Liste so, wie sie angezeigt wird: Die aktiven Filter gelten. Wählen Sie im Exportfenster das Format (CSV, Excel oder JSON) und die einzuschließenden Spalten und klicken Sie dann auf **Datei herunterladen**.
+
+Die Schaltfläche setzt die Berechtigung voraus, die operativen Daten des Compliance-Moduls zu exportieren. Ohne sie ist sie deaktiviert.

@@ -36,6 +36,8 @@ Es gibt keine Einstellung, mit der Sie Systeme einzeln auswählen. Sobald der Ta
 
 Um ein System aus dem Portal zu entfernen, ändern Sie seine Organisationseinheit oder seinen Status oder archivieren Sie es.
 
+Hat die Organisationseinheit des Trust Centers untergeordnete Einheiten, erhalten Besucher über der Liste einen Filter **Organisationseinheit**. Er bietet nur die Einheit des Trust Centers und ihre untergeordneten Einheiten an.
+
 {% hint style="warning" %}
 Die Aktivierung des Tabs veröffentlicht sofort jedes System, das diese Bedingungen erfüllt. Prüfen Sie vorher die Liste der Systeme der Einheit im [Verzeichnis der KI-Systeme](../../ai-systems/record.md).
 {% endhint %}
