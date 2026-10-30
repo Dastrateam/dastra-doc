@@ -71,6 +71,8 @@
   * [Internal discussions](features/general/discussions.md)
   * [Frequently asked questions](features/general/faq.md)
 * [Data Mapping](features/mapping/README.md)
+  * [Repositories](features/mapping/repositories/README.md)
+    * [Assets](features/mapping/repositories/assets.md)
   * [Generic relationships](features/mapping/relationships.md)
 * [Document management](features/files/README.md)
   * [Document templates](features/files/templates.md)

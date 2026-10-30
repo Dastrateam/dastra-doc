@@ -4,52 +4,55 @@ description: Learn how to create generic relationships between elements in Dastr
 
 # Generic relationships
 
-## What is a generic relationship?
+## Definition of a generic relationship
 
-A **generic relationship** is a simple, labelled link between two elements in Dastra. It allows you to document connections between objects that are not automatically inferred by the platform — for example, linking an asset to a stakeholder, or a risk to a data breach.
+A **generic relationship** is a simple, labeled link between two elements in Dastra. It lets you document connections between objects that the platform does not infer automatically, for example linking an asset to a stakeholder, or a data breach to a risk.
 
-A relationship is characterised by:
+A relationship is defined by:
 
 * a **source object** and a **target object**,
-* a **relation label** (optional, e.g. "Controller", "Managed by"),
-* a **summary** (optional, for additional context),
-* a **direction** — which can be inverted if needed.
+* a **relation label** (optional, for example "Controller" or "Managed by"),
+* a **summary** (optional, to add context),
+* a **direction**, which can be inverted if needed.
 
 {% hint style="info" %}
-One element can be linked to multiple other elements of different types.
+One element can be linked to several other elements of different types.
 {% endhint %}
 
-## Where are generic relationships available?
+## Where to create a generic relationship
 
-Generic relationships can be created from the following elements:
+You create a relationship from the form of an:
 
-* **Assets**
-* **Stakeholders**
-* **Security measures**
-* **Data breaches**
-* **Datasets**
-* **Risks**
+* **asset**,
+* **stakeholder**,
+* **dataset**,
+* **security measure**,
+* **data breach**.
 
-They are primarily used in the **Assets** module and the **referentials** (cartography), where the full relationship graph is visualised.
+The target object can be one of these types, or a **risk** if the risk management module is enabled and you have access to it. A risk does not carry generic relationships itself.
 
-## How to add a generic relationship
+Relationships appear on the **Graphs** page of the **Repositories** module, where they connect the nodes of the graph. See [Repositories](repositories/README.md).
 
-1. Open an element (e.g. an asset).
-2. Click the **"Linked elements"** icon in the top toolbar — it shows the current count of linked elements.
-3. Click **"Add a relationship"** and select the type of object to link to (Stakeholder, Security measure, Data breach, Asset, Dataset or Risk).
+To link processing activities to each other, see [Create relationships between processing activities](../ropa/relationships.md).
+
+## Add a generic relationship
+
+1. Open an element, for example an asset.
+2. In the toolbar, click **Linked elements**. The button shows the number of existing links.
+3. Click **Add a relationship**, then select the type of object to link: stakeholder, security measure, data breach, asset, dataset or risk.
 4. In the dialog:
-   * Toggle **"Inverse relationship"** if the direction should be reversed.
-   * Choose **"Existing element"** to link to an element already in Dastra, or **"Create element"** to create a new one on the fly.
-   * Select the target object from the dropdown.
-   * Optionally add a **Relation label** and a **Summary**.
-5. Click **"Add"** to save the relationship.
+   * Turn on **Inverse relationship** if the direction should be reversed.
+   * Choose **Existing element** to link an element already in Dastra, or **Create element** to create a new one on the fly.
+   * With **Existing element**, select the target objects in **Select the attached objects**. With **Create element**, type the name of the new object.
+   * Optionally, fill in the **Relation label** and the **Summary**.
+5. Click **Add** to save the relationship.
 
-## Visualising relationships
+## View relationships
 
-Once relationships are created, they appear in:
+Once created, relationships appear:
 
-* The **"Linked elements"** panel of each element, showing all direct links.
-* The **node graph** in the cartography view, where all relationships are displayed as a connected network.
+* in the **Linked elements** panel of each element, which lists all its direct links;
+* in the **Node mapping** and **Mapping of stakeholders** charts of the **Graphs** page, where they are displayed as a network.
 
 ## Go further
 

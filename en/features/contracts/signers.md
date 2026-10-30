@@ -6,7 +6,7 @@ The signer of a document is generally a natural or legal person **referenced as 
 
 In the **Signers - Signatories** tab, specify the parties who must sign the document.
 
-A signer is a stakeholder from your [data mapping](../mapping/README.md) referentials. To add one, click **Add signer**, select the stakeholder, then click **Add**. If the stakeholder does not exist yet and you can write to the referentials, you can create it from the same window. The tab shows in brackets the number of signers.
+A signer is a stakeholder from your [repositories](../mapping/repositories/README.md). To add one, click **Add signer**, select the stakeholder, then click **Add**. If the stakeholder does not exist yet and you can write to the referentials, you can create it from the same window. The tab shows in brackets the number of signers.
 
 <figure><img src="../../.gitbook/assets/contracts-signers-1.png" alt="The Signers tab with signers whose signature is recorded, pending or missing"><figcaption><p>The signers of a document</p></figcaption></figure>
 

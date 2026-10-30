@@ -4,17 +4,33 @@ description: Learn how to map your organization's personal data in Dastra
 
 # Data Mapping
 
-#### It all starts with data mapping
+## It all starts with data mapping
 
-Before you start creating your treatment sheets, we recommend that you map the company's data as accurately as possible. The diagram below shows you the structure of the mapping that you can set up.
+Before you create your processing activities, map your organization's data as accurately as you can. In the application, this module is called **Repositories**. The mapping links four kinds of elements: the publisher of an asset, the asset itself, the security measures applied to it, and the datasets it holds, which are made of data fields.
 
-To inventory all the personal data of your IS, here is the procedure to follow:
+To inventory all the personal data of your information system, follow this procedure:
 
-1. **Identify the assets** which can be software, files, plugins, servers, machines...
-2. **Identify the publisher of the asset (if applicable)**: enter the information of the company that produces this asset. This can be listed in the data processors when the record is created.
-3. **Inventory the data**: list the associated dataset(s) (you can refer to the DPA signed with the data processors). Click here to learn more about the [datasets](../ropa/activity/datasets.md).
+1. **Identify the assets**: software, files, plugins, servers, machines, etc.
+2. **Identify the publisher of the asset, if applicable**: enter the details of the company that produces this asset. It can then be listed among your processors when you build the record of processing activities.
+3. **Inventory the data**: list the associated datasets (you can refer to the DPA signed with the processor). For more information, see [Datasets and retention](../ropa/activity/datasets.md).
 4. **List the security measures** in place.
 
-This mapping will make it much easier to create treatment sheets based on the reality of your data.
+This mapping makes it easier to create processing activities, because you start from the reality of your data.
 
-You don't want to make this inventory or you think that the software you use is standard? We've got it covered, you can create your asset repository using our library of predefined templates containing standard assets from the market (Salesforce, Jira...).
+If you prefer not to build this inventory, or if the software you use is standard, create your asset repository from the library of predefined templates, which contains common assets on the market (Salesforce, Jira, etc.).
+
+## Access the data mapping
+
+1. [Open your workspace](../../getting-started/setup/workspace.md#access-a-workspace).
+2. In the side menu, under **Data inventory**, click **Repositories**.
+3. The **Overview** page opens: one card per repository, with the number of elements it contains.
+
+Then click the repository you want to open. For details on each repository, see [Repositories](repositories/README.md).
+
+## Build your list of security measures
+
+Security measures have their own repository: enter them once, then attach them to assets in the **Attached security measures** section of the asset form. This information often appears in the DPA signed with the publisher. Prefer short names (Antivirus, Application firewall, Access controls) so that a measure can be reused from one asset to another.
+
+## Manage your processors
+
+A processor is a stakeholder in your mapping. Enter it as the **Publisher** of the asset: it can then be referenced as a processor when the asset is mentioned in a processing activity. On the stakeholder form, you can also save the processor's sub-processors, to map the whole subcontracting chain.
