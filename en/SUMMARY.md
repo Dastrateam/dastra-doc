@@ -4,13 +4,13 @@
 
 ## 💁‍♂️ USEFUL REMINDERS <a href="#gdpr" id="gdpr"></a>
 
-* [What is GDPR ?](gdpr/introduction.md)
+* [Introduction to Privacy](gdpr/introduction.md)
 * [GDPR key concepts](gdpr/concepts/README.md)
   * [Personal data](gdpr/concepts/personal-data.md)
   * [Record of processing activities (ROPA)](gdpr/concepts/ropa.md)
-  * [Privacy impact assessment](gdpr/concepts/dpia.md)
+  * [Data protection impact assessment (DPIA)](gdpr/concepts/dpia.md)
   * [Data retention period](gdpr/concepts/retention.md)
-  * [Data Subject Rights (DSR)](gdpr/concepts/rights.md)
+  * [Data subject rights (DSR)](gdpr/concepts/rights.md)
   * [Privacy by design and by default](gdpr/concepts/privacy-by-design.md)
   * [Security measures](gdpr/concepts/security.md)
   * [Data breach notifications](gdpr/concepts/breaches.md)

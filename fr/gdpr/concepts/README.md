@@ -9,7 +9,7 @@ Chacune est expliquée en détail dans les pages suivantes.
 
 ***
 
-### 🧠 Les bases de la protection des données
+## Les bases de la protection des données
 
 Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
@@ -25,7 +25,7 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 🗂️ Le registre des activités de traitement
+## Le registre des traitements
 
 > Le registre est l’outil central de la conformité RGPD.\
 > Il recense les traitements, leurs finalités, les acteurs impliqués et les mesures de protection associées.
@@ -36,9 +36,9 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 👤 Les droits des personnes concernées
+## Les droits des personnes concernées
 
-> Accès, rectification, opposition, effacement, portabilité…\
+> Accès, rectification, opposition, effacement, portabilité, etc.\
 > Découvrez les droits dont disposent les individus et comment les organisations doivent les respecter.
 
 {% content-ref url="rights.md" %}
@@ -47,7 +47,7 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 🧮 La gestion des risques et la sous-traitance
+## La gestion des risques et la sous-traitance
 
 > Identifier les risques pour les personnes, évaluer leur gravité et documenter les mesures de maîtrise.\
 > Comprendre les responsabilités respectives entre responsable du traitement et sous-traitant.
@@ -62,7 +62,7 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 🧱 Privacy by design et by default
+## Privacy by design et by default
 
 > Intégrez la protection des données dès la conception des projets et paramétrez les systèmes pour garantir le respect de la vie privée par défaut.
 
@@ -72,7 +72,7 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 🔐 Mesures de sécurité et gouvernance
+## Mesures de sécurité et gouvernance
 
 > Explorez les mesures techniques et organisationnelles nécessaires pour protéger les données contre les pertes, accès non autorisés ou altérations.
 
@@ -82,9 +82,9 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 🚨 Gestion des violations de données
+## Gestion des violations de données
 
-> Découvrez les bonnes pratiques pour détecter, documenter et notifier une violation de données dans les 72 heures conformément au RGPD.
+> Découvrez les bonnes pratiques pour détecter, documenter et notifier une violation de données dans les 72 heures, conformément au RGPD.
 
 {% content-ref url="breaches.md" %}
 [violations-de-donnees.md](breaches.md)
@@ -92,10 +92,10 @@ Découvrez les concepts essentiels sur lesquels repose tout le cadre du RGPD :
 
 ***
 
-### 🤖 Et demain : convergence RGPD & AI Act
+## Et demain : convergence RGPD & AI Act
 
 Le RGPD constitue le socle de la **gouvernance des données**.\
-L’**AI Act**, à venir, vient compléter ce cadre en encadrant les **systèmes d’intelligence artificielle** selon leur niveau de risque.
+L’**AI Act**, entré en vigueur en 2024, complète ce cadre en encadrant les **systèmes d’intelligence artificielle** selon leur niveau de risque.
 
 {% content-ref url="../../features/ai-systems/README.md" %}
 [systemes-dia](../../features/ai-systems/README.md)
@@ -103,7 +103,7 @@ L’**AI Act**, à venir, vient compléter ce cadre en encadrant les **systèmes
 
 ***
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Ces notions constituent la base de votre démarche de conformité.\
 Chacune d’entre elles est abordée en profondeur dans la documentation Dastra, avec exemples, cas pratiques et guides d’application.
 {% endhint %}

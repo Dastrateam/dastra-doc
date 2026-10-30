@@ -4,24 +4,25 @@ description: Apprenez ce que sont les durées de conservation.
 
 # Durées de conservation
 
-### 📖 Définition
+## Définition
 
 Les **durées de conservation** font partie des principes fondamentaux de la protection des données.\
 Elles découlent du principe de **limitation de la conservation** (article 5.1.e RGPD) et participent au **droit à l’oubli**.
 
-> 🔗 Articles clés :\
-> – **Art. 5 RGPD** (limitation de conservation)\
-> – **Art. 30 RGPD** (documentation dans le registre)\
-> – **Art. 13–14 RGPD** (information des personnes)
+Articles clés :
+
+* **article 5 du RGPD** (limitation de la conservation) ;
+* **article 30** (documentation dans le registre) ;
+* **articles 13 et 14** (information des personnes).
 
 Concrètement, vous devez déterminer pour chaque traitement :
 
 * une **durée fixe** (ou un ensemble de durées par phase),
-* et/ou un **critère objectif** permettant de la calculer (ex. “+3 ans après le dernier contact actif”).
+* et/ou un **critère objectif** permettant de la calculer (ex. « +3 ans après le dernier contact actif »).
 
 ***
 
-### 🔄 Le cycle de vie de la donnée
+## Le cycle de vie de la donnée
 
 La conservation s’organise en **phases successives**. C’est ce cycle qui détermine vos règles.
 
@@ -31,15 +32,15 @@ La conservation s’organise en **phases successives**. C’est ce cycle qui dé
 | **Archivage intermédiaire**      | Preuve / défense d’un droit | Restreint (need-to-know)  | Prescription légale (ex. 5 ans) |
 | **Archivage définitif** (public) | Intérêt historique          | Très restreint            | Versement / tri par SIAF        |
 | **Anonymisation**                | Statistiques / recherche    | Données non identifiantes | Illimitée si irréversible       |
-| **Suppression**                  | Fin du cycle                | —                         | Au terme des phases             |
+| **Suppression**                  | Fin du cycle                | Sans objet                | Au terme des phases             |
 
 {% hint style="info" %}
-📄 Le [guide CNIL “Durées de conservation”](https://www.cnil.fr/sites/default/files/atoms/files/guide_durees_de_conservation.pdf) détaille : registre, document de référence, procédures d’archivage/d’élimination, instructions aux sous-traitants, etc.
+Le [guide de la CNIL sur les durées de conservation](https://www.cnil.fr/sites/default/files/atoms/files/guide_durees_de_conservation.pdf) détaille : registre, document de référence, procédures d’archivage/d’élimination, instructions aux sous-traitants, etc.
 {% endhint %}
 
 ***
 
-### 🧭 Comment les déterminer (méthode)
+## Comment les déterminer (méthode)
 
 1. **Clarifier la finalité**\
    → que faites-vous réellement des données ? À quoi servent-elles ?
@@ -48,8 +49,8 @@ La conservation s’organise en **phases successives**. C’est ce cycle qui dé
 3. **Identifier les bases juridiques et références**\
    → lois & règlements sectoriels, délibérations CNIL, référentiels, **SIAF** (public), pratiques métier
 4. **Fixer une règle claire**\
-   → “**X ans après \[événement]**, puis **archivage Y ans**, puis **suppression**”\
-   → ou “**tant que…**, puis **Z ans après** / **critère**”
+   → « **X ans après \[événement]**, puis **archivage Y ans**, puis **suppression** »\
+   → ou « **tant que…**, puis **Z ans après** / **critère** »
 5. **Organiser la mise en œuvre**\
    → purge **automatique** ou **pilotée**, journalisation, preuves d’exécution
 6. **Informer et documenter**\
@@ -61,21 +62,21 @@ S’il n’existe **aucune référence claire**, choisissez une durée **proport
 
 ***
 
-### 🧪 Exemples de règles (à adapter)
+## Exemples de règles (à adapter)
 
 | Contexte          | Données                           | Règle synthétique                                                 |
 | ----------------- | --------------------------------- | ----------------------------------------------------------------- |
 | Prospects B2B     | Identité, contact, trace d’opt-in | **3 ans** après dernier contact actif, puis **suppression**       |
-| RH – Candidats    | CV, lettres, entretiens           | **2 ans** après dernier contact avec le candidat, sauf opposition |
+| RH, candidats     | CV, lettres, entretiens           | **2 ans** après dernier contact avec le candidat, sauf opposition |
 | Clients           | Contrat, facturation              | Contrat + **5 ans** (preuve), puis **archivage**/**suppression**  |
 | Vidéosurveillance | Images                            | **30 jours max**, sauf incident (procédure probatoire)            |
-| Cookies           | Identifiants, préférences         | Durée conforme au bandeau et à la **preuve du consentement**      |
+| Cookies           | Identifiants, préférences         | Durée conforme à la bannière de cookies et à la **preuve du consentement**      |
 
 > Ces valeurs varient selon les textes applicables, votre secteur et vos risques : **documentez vos choix**.
 
 ***
 
-### 👥 Qui impliquer ?
+## Acteurs à impliquer
 
 * **Métier porteur du traitement** : besoin opérationnel, événements déclencheurs
 * **DPO / Juridique** : conformité, textes applicables, équilibre droits/libertés
@@ -85,7 +86,7 @@ S’il n’existe **aucune référence claire**, choisissez une durée **proport
 
 ***
 
-### ✅ Contrôler l’application (audits)
+## Contrôler l’application (audits)
 
 * Vérifier périodiquement : pertinence des durées, exécution des purges, accès en archivage, anonymisation
 * Tracer les opérations : bordereaux d’élimination, rapports de purge, logs
@@ -93,27 +94,27 @@ S’il n’existe **aucune référence claire**, choisissez une durée **proport
 
 ***
 
-### 🧰 Mettre en œuvre dans Dastra
+## Mettre en œuvre dans Dastra
 
-#### 1) Dans le **registre**
+### 1) Dans le **registre**
 
 * Renseignez **une règle lisible** par jeu de données :\
-  “_3 ans après dernier contact actif (prospect), puis suppression_”
-* Ajoutez **le critère déclencheur** (ex. “date de dernière activité CRM”, “fin de contrat”)
+  « _3 ans après dernier contact actif (prospect), puis suppression_ »
+* Ajoutez **le critère déclencheur** (ex. « date de dernière activité CRM », « fin de contrat »)
 * Liez **les références** (texte légal, référentiel interne)
 
-#### 2) **Automatiser/piloter** la purge
+### 2) **Automatiser/piloter** la purge
 
-* Planifiez des **tâches récurrentes** (revues, purges, extractions de preuves)
-* Utilisez les **workflows** et **rappels** pour les échéances
+* Planifiez des **tâches** (revues, purges, extractions de preuves)
+* Utilisez les **règles de workflow** et les **revues régulières** pour les échéances
 
-#### 3) **Preuves**
+### 3) **Preuves**
 
-* Déposez bordereaux d’élimination, comptes rendus de purge, scripts, tickets d’exécution dans la **GED** du traitement
+* Déposez bordereaux d’élimination, comptes rendus de purge, scripts, tickets d’exécution dans la section **Documentation** du traitement
 
 ***
 
-### 🔐 Archivage intermédiaire & sécurité
+## Archivage intermédiaire & sécurité
 
 * Restreindre l’accès (RBAC, cloisonnement)
 * Journaliser les consultations
@@ -123,7 +124,7 @@ S’il n’existe **aucune référence claire**, choisissez une durée **proport
 
 ***
 
-### 🧪 Anonymisation vs pseudonymisation
+## Anonymisation vs pseudonymisation
 
 * **Anonymisation** : irréversible → **hors RGPD** si véritablement non ré-identifiable
 * **Pseudonymisation** : réversible avec clé → **toujours donnée personnelle**\
@@ -131,7 +132,7 @@ S’il n’existe **aucune référence claire**, choisissez une durée **proport
 
 ***
 
-### 🤖 IA & durées de conservation
+## IA & durées de conservation
 
 Pour les **systèmes d’IA**, définissez des durées distinctes pour :
 
@@ -144,23 +145,31 @@ Liez ces durées à votre **registre des systèmes d’IA** pour assurer la coh�
 
 ***
 
-### 📚 Références utiles
+## Références utiles
 
-* **CNIL** – Guide durées de conservation (documentation, preuves, archivage)
-* **SIAF** – Tableau de gestion (secteur public)
+* **CNIL** : guide sur les durées de conservation (documentation, preuves, archivage)
+* **SIAF** : tableau de gestion (secteur public)
 * Référentiels sectoriels, codes de conduite, conventions collectives
 
 ***
 
-### ▶️ Ressources & suites
+## Ressources et suites
 
 {% embed url="https://www.youtube.com/watch?v=BK8A3L9P7T0" %}
-Webinar “Durées de conservation : comment les déterminer ?”
+Webinar « Durées de conservation : comment les déterminer ? »
 {% endembed %}
+
+{% content-ref url="../../features/ropa/activity/datasets.md" %}
+[Données et conservation](../../features/ropa/activity/datasets.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../features/tasks/README.md" %}
+[Planification](../../features/tasks/README.md)
+{% endcontent-ref %}
 
 ***
 
 {% hint style="success" %}
-**Bon réflexe :** écrivez des règles _actionnables_ (“**X ans après \[événement]** → **purge** / **anonymisation**”), testez-les sur un périmètre réduit, puis généralisez.\
+**Bon réflexe :** écrivez des règles _actionnables_ (« X ans après \[événement], puis purge ou anonymisation »), testez-les sur un périmètre réduit, puis généralisez.\
 Dastra vous aide à **documenter**, **planifier** et **prouver** l’exécution.
 {% endhint %}

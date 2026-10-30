@@ -4,12 +4,12 @@ description: Apprenez ce qu'est un registre de traitement.
 
 # Registre des traitements
 
-### 📖 Définition
+## Définition
 
-Le **registre des activités de traitement** est la **cartographie structurée de tous les traitements de données personnelles** effectués au sein de votre organisation.\
+Le **registre des traitements** est la **cartographie structurée de tous les traitements de données personnelles** effectués au sein de votre organisation.\
 Il constitue le **point de départ de tout contrôle** par une autorité de protection des données (ex. : CNIL) et un **outil central de gouvernance de la conformité**.
 
-> 🔗 Le registre est prévu par [l’article 30 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article30).\
+> Le registre est prévu par [l’article 30 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article30).\
 > Il matérialise le principe d’**accountability**, ou responsabilité démontrée.
 
 Il permet d’identifier précisément :
@@ -22,32 +22,32 @@ Il permet d’identifier précisément :
 * Les **mesures de sécurité** mises en œuvre
 
 {% embed url="https://youtu.be/R_Z2m4sb-44" %}
-Comment passer en mode “Run” sur la gestion des registres de traitements
+Comment passer en mode « Run » sur la gestion des registres de traitements
 {% endembed %}
 
 ***
 
-### 🎯 Pourquoi tenir un registre ?
+## Raisons de tenir un registre
 
-Le registre est **obligatoire** (article 30 du RGPD).\
+Le registre est **obligatoire** (article 30 du RGPD), sous réserve de la dérogation décrite plus bas.\
 Mais au-delà de la contrainte réglementaire, il devient un **véritable outil de pilotage**, vous permettant de :
 
 * Documenter vos traitements pour **prouver votre conformité**,
 * Identifier et **prioriser les risques**,
 * **Optimiser vos durées de conservation**,
 * **Rationaliser vos traitements** et supprimer les données inutiles,
-* Préparer vos **audits RGPD** et vos **DPIA (analyses d’impact)**.
+* Préparer vos **audits RGPD** et vos **PIA (analyses d’impact)**.
 
 {% hint style="success" %}
-💡 Le registre n’est pas une formalité administrative : c’est la **clé d’une gouvernance efficace** de vos données et de vos processus internes.
+Le registre n’est pas une formalité administrative : c’est la **clé d’une gouvernance efficace** de vos données et de vos processus internes.
 {% endhint %}
 
 ***
 
-### 👥 Qui est concerné ?
+## Organisations concernées
 
-Toutes les organisations qui traitent des données personnelles de résidents européens sont concernées.\
-Cependant, une **dérogation** est prévue pour les entreprises de moins de 250 salariés.
+Toutes les organisations soumises au RGPD sont concernées.\
+Cependant, une **dérogation** est prévue pour les organisations de moins de 250 personnes (article 30, paragraphe 5).
 
 {% hint style="info" %}
 Les PME doivent tout de même inscrire dans leur registre les traitements :
@@ -56,13 +56,13 @@ Les PME doivent tout de même inscrire dans leur registre les traitements :
 * comportant des **risques pour les personnes** (vidéosurveillance, géolocalisation, etc.),
 * ou impliquant des **données sensibles** (santé, infractions, opinions).
 
-➡️ En pratique, **la plupart des entreprises** sont concernées.\
+En pratique, **la plupart des entreprises** sont concernées.\
 La CNIL recommande d’établir un registre **dans tous les cas**.
 {% endhint %}
 
 ***
 
-### 🧱 Deux registres à distinguer
+## Deux registres à distinguer
 
 Selon votre rôle, vous devez tenir :
 
@@ -73,7 +73,7 @@ Selon votre rôle, vous devez tenir :
 
 ***
 
-### 🧭 Le registre du responsable de traitement (dans Dastra)
+## Le registre du responsable de traitement (dans Dastra)
 
 Pour chaque traitement, le registre doit contenir au minimum :
 
@@ -86,18 +86,18 @@ Pour chaque traitement, le registre doit contenir au minimum :
 7. Les **délais d’effacement** ou critères de conservation
 8. Une **description générale des mesures de sécurité**
 
-#### 👤 Les acteurs
+### Les acteurs
 
 * Responsable du traitement
 * DPO ou contact conformité
 * Représentant éventuel
 * Co-responsables ou partenaires
 
-#### 🎯 Les finalités
+### Les finalités
 
 Toutes les finalités liées à une activité (ex. : gestion des contrats, suivi des candidatures, marketing, etc.).
 
-#### ⚖️ Les bases légales
+### Les bases légales
 
 * Exécution d’un contrat
 * Obligation légale
@@ -106,41 +106,40 @@ Toutes les finalités liées à une activité (ex. : gestion des contrats, suivi
 * Consentement
 * Sauvegarde des intérêts vitaux
 
-#### 🧩 Données et personnes concernées
+### Données et personnes concernées
 
 * Typologie des personnes (clients, salariés, visiteurs…)
 * Catégories de données collectées
 * Durées de conservation ou règles applicables
 
-#### 🌍 Destinataires et transferts hors EEE
+### Destinataires et transferts hors EEE
 
 * Services internes concernés
 * Sous-traitants, prestataires ou partenaires externes
-* Responsables conjoints ou personnes concernées
+* Responsables conjoints
 * Transferts internationaux : identification des pays et outils juridiques (SCC, BCR, décision d’adéquation…)
 
-#### 🔐 Mesures de sécurité
+### Mesures de sécurité
 
 * Mesures techniques (chiffrement, pseudonymisation, sauvegarde)
 * Mesures organisationnelles (gestion des accès, formation, politique interne)
 
 ***
 
-### 🤝 Le registre du sous-traitant
+## Le registre du sous-traitant
 
 Les sous-traitants doivent également tenir un registre, plus concis, listant :
 
 * Les coordonnées du sous-traitant, du DPO et du représentant éventuel
 * Les coordonnées des **responsables de traitement clients**
-* Les **catégories de données** traitées
-* Les **catégories de destinataires**
+* Les **catégories de traitements** effectués pour le compte de chaque responsable de traitement
 * Les **transferts hors EEE** et garanties associées
 * Les **mesures de sécurité** appliquées
 
-### 🤖 Et le registre des systèmes d’IA
+## Et le registre des systèmes d’IA
 
-Avec l’entrée en vigueur de l’**AI Act**, les organisations devront également documenter leurs **systèmes d’intelligence artificielle** selon leur niveau de risque.\
-Dastra intègre dès à présent un **registre des systèmes d’IA** pour :
+L’**AI Act**, entré en vigueur en 2024, demande aussi de documenter les **systèmes d’intelligence artificielle** selon leur niveau de risque.\
+Dans le **registre des systèmes d’IA** de Dastra, vous pouvez :
 
 * Relier chaque système d’IA à ses traitements de données,
 * Décrire les finalités, les modèles utilisés et les données d’entraînement,
@@ -149,12 +148,20 @@ Dastra intègre dès à présent un **registre des systèmes d’IA** pour :
 
 ***
 
-### 📘 Pour aller plus loin
+## Pour aller plus loin
+
+{% content-ref url="../../features/ropa/README.md" %}
+[Registre des traitements](../../features/ropa/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../features/ropa/establish.md" %}
+[Établir votre registre](../../features/ropa/establish.md)
+{% endcontent-ref %}
 
 ***
 
 {% hint style="success" %}
-💡 **Bon réflexe :**\
+**Bon réflexe :**\
 Mettez à jour votre registre **à chaque nouveau traitement** et **chaque évolution majeure** (nouvelle finalité, nouveau prestataire, nouveau transfert, etc.).\
-Dastra peut vous notifier automatiquement lorsqu’un registre nécessite une révision.
+Avec les revues régulières, Dastra prévient par e-mail le responsable d’un traitement dont la revue arrive à échéance.
 {% endhint %}

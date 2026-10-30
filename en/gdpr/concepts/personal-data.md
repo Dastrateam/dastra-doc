@@ -4,9 +4,9 @@ description: Learn what personal data is.
 
 # Personal data
 
-### Definition of personal data
+## Definition of personal data
 
-According to the [ICO](https://ico.org.uk), **personal data** is _any information relating to an identified or identifiable natural person_. In other words, it is **any information that allows an individual to be identified directly or indirectly.**
+Under [Article 4 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj), **personal data** is _any information relating to an identified or identifiable natural person_. In other words, it is **any information that allows an individual to be identified directly or indirectly.**
 
 A natural person can be identified:
 
@@ -19,12 +19,12 @@ Identification can therefore be achieved:
 * or by **combining multiple elements** (e.g. a woman born on a certain date, living in a certain city, working at a certain company).
 
 {% hint style="info" %}
-💡 A company's general contact details are not, in principle, personal data (e.g. **info@company.com**). However, a named email address such as **firstname.lastname@company.com** is personal data.
+A company's general contact details are not, in principle, personal data (e.g. **info@company.com**). However, a named email address such as **firstname.lastname@company.com** is personal data.
 {% endhint %}
 
 ***
 
-### 🗂️ Categories of personal data
+## Categories of personal data
 
 **Categories of personal data** group information according to its nature or use.
 
@@ -37,11 +37,11 @@ Some common examples:
 * **Connection and usage**: IP address, login identifier, logs, cookies
 * **Location**: GPS coordinates, travel history, movement records
 
-> 🔍 These categories are essential for **structuring your record of processing activities** and identifying the risks associated with each type of data.
+> These categories are essential for **structuring your record of processing activities** and identifying the risks associated with each type of data.
 
 ***
 
-### ⚠️ Special category data ("sensitive data")
+## Special category data ("sensitive data")
 
 Certain personal data benefits from enhanced protection: these are **special category data**, as their use can have a significant impact on individuals' rights and freedoms.
 
@@ -51,17 +51,17 @@ They reveal in particular:
 * **Political opinions**,
 * **Religious or philosophical beliefs**,
 * **Trade union membership**,
-* **Genetic or biometric data**,
+* **Genetic data** and **biometric data** processed to uniquely identify a person,
 * **Health data**,
 * **Sexual orientation** or **sex life** of a person.
 
 {% hint style="info" %}
-Examples: fingerprints (biometrics), medical records, DNA, religious affiliation, professional badge photos containing biometric data.
+Examples: fingerprints used to identify a person (biometrics), medical records, DNA, religious affiliation.
 {% endhint %}
 
 ***
 
-### 🚫 The prohibition principle and exceptions
+## The prohibition principle and exceptions
 
 The **processing of special category data is prohibited**, except as provided by the GDPR (Article 9). These exceptions include in particular:
 
@@ -75,7 +75,7 @@ The **processing of special category data is prohibited**, except as provided by
 
 ***
 
-### 🤖 Personal data and artificial intelligence
+## Personal data and artificial intelligence
 
 **Artificial intelligence systems** frequently use personal data for model training, testing or operation. The **AI Act** complements the GDPR by imposing **traceability and documentation** of data used by AI systems.
 
@@ -83,9 +83,9 @@ Examples:
 
 * Training data containing facial images (biometrics);
 * Text data drawn from private communications;
-* Behavioural data from sensors or browsing activity.
+* Behavioral data from sensors or browsing activity.
 
-Dastra allows you to **link personal data to its uses in AI systems**, within the **AI systems register**, to ensure cross-compliance between GDPR and the AI Act.
+In Dastra, each AI system is linked to the **processing activities** it uses, within the **AI systems register**, to ensure cross-compliance between the GDPR and the AI Act.
 
 {% content-ref url="../../features/ai-systems/README.md" %}
 [ai-systems](../../features/ai-systems/README.md)
@@ -93,8 +93,12 @@ Dastra allows you to **link personal data to its uses in AI systems**, within th
 
 ***
 
-### 🔍 Go further
+## Go further
+
+{% content-ref url="../../features/ropa/activity/datasets.md" %}
+[Datasets and retention](../../features/ropa/activity/datasets.md)
+{% endcontent-ref %}
 
 {% hint style="success" %}
-💡 **Good practice:** Identify, classify and document your data categories from the design phase of your processing activities or AI systems. This will make it easier to maintain your record and comply with the _privacy by design_ principle.
+**Good practice:** Identify, classify and document your data categories from the design phase of your processing activities or AI systems. This will make it easier to maintain your record and comply with the _privacy by design_ principle.
 {% endhint %}

@@ -4,15 +4,13 @@ description: Learn about security measures under the GDPR.
 
 # Security measures
 
-### 🔍 Introduction
+The GDPR (Article 32) requires data controllers and processors to **guarantee the security of personal data** through **appropriate technical and organizational measures**. These measures must be **proportionate to the risks** presented by the processing, the **nature of the data** and the **purposes pursued**.
 
-The GDPR (Article 32) requires data controllers and processors to **guarantee the security of personal data** through **appropriate technical and organisational measures**. These measures must be **proportionate to the risks** presented by the processing, the **nature of the data** and the **purposes pursued**.
-
-> 🎯 Objective: ensure the **confidentiality**, **integrity**, **availability** and **resilience** of systems and data.
+> Objective: ensure the **confidentiality**, **integrity**, **availability** and **resilience** of systems and data.
 
 ***
 
-### ⚖️ A risk-based approach
+## A risk-based approach
 
 Before choosing measures, you must:
 
@@ -21,37 +19,43 @@ Before choosing measures, you must:
 3. Determine the **potential impacts** (loss, disclosure, alteration…).
 4. Choose **appropriate measures** to reduce these risks to an acceptable level.
 
-> 🧩 The GDPR does not prescribe a fixed list of measures: it imposes a **reinforced obligation of means**. Each organisation must **adapt** its approach to its context and be able to **demonstrate** it.
+> The GDPR does not prescribe a fixed list of measures: it requires measures that are **appropriate to the risk** (Article 32), taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of the processing. Each organization must **adapt** its approach to its context and be able to **demonstrate** it.
 
 ***
 
-### 🧱 Categories of security measures
+## Categories of security measures
 
-#### 🔧 Technical measures
+### Technical measures
+
+Technical measures act directly on information systems.
 
 | Domain                               | Examples                                                                |
 | ------------------------------------ | ----------------------------------------------------------------------- |
 | **Access control**                   | Strong authentication (MFA), rights management, logging                 |
 | **Encryption**                       | Data at rest and in transit, TLS certificates, managed and renewed keys |
-| **Pseudonymisation / anonymisation** | Logical separation, hashing, tokens                                     |
+| **Pseudonymisation / anonymization** | Logical separation, hashing, tokens                                     |
 | **Backups and resilience**           | Regular backups, restoration tests, redundancy                          |
 | **Application security**             | Penetration tests, patches, server hardening                            |
 | **Monitoring**                       | SIEM, alerts for abnormal access, incident detection                    |
 
 ***
 
-#### 🧭 Organisational measures
+### Organizational measures
+
+Organizational measures structure governance and internal behaviors.
 
 | Domain                     | Examples                                                              |
 | -------------------------- | --------------------------------------------------------------------- |
 | **Security policy**        | IT charter, information security governance, incident management plan |
 | **Training & awareness**   | Internal campaigns, e-learning modules, phishing simulations          |
 | **Third-party management** | Contractual clauses, processor audits, regular assessments            |
-| **Internal procedures**    | Authorisation process, business continuity plan, periodic review      |
+| **Internal procedures**    | Authorization process, business continuity plan, periodic review      |
 
 ***
 
-#### 🏢 Physical measures
+### Physical measures
+
+Physical measures protect premises, equipment and media.
 
 | Domain                  | Examples                                          |
 | ----------------------- | ------------------------------------------------- |
@@ -61,7 +65,7 @@ Before choosing measures, you must:
 
 ***
 
-### 🔁 Security management cycle
+## Security management cycle
 
 1. **Identify**: data, systems, vulnerabilities, threats.
 2. **Assess**: risks and potential impacts.
@@ -71,23 +75,26 @@ Before choosing measures, you must:
 
 ***
 
-### 💼 Security measures in Dastra
+## Security measures in Dastra
 
-* 🧩 **Map** your measures in the **record of processing activities**, by activity or by processor.
-* 🔍 **Assess risks** with the risk management module.
-* 🧠 **Plan corrective actions** and track their progress.
-* 🧾 **Trace compliance evidence** (policies, audits, proof of execution).
+In Dastra, you can document, assess and track security measures as part of GDPR and AI Act governance:
+
+* Describe your measures in the **Measures** repository and attach them to processing activities, assets and data breaches.
+* Assess risks with the risk management module.
+* Plan corrective actions with tasks and track their progress.
+* Keep compliance evidence (policies, audits, proof of execution).
+* Track your organization's compliance level against frameworks such as ISO 27001, in the **Compliance** module.
 
 ***
 
-### 📚 Useful resources
+## Useful resources
 
-* [ICO – Guide to data security](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/security/)
-* [ISO/IEC 27001 – Information security management systems](https://www.iso.org/isoiec-27001-information-security.html)
-* [ENISA – Recommendations on cybersecurity](https://www.enisa.europa.eu/)
+* [ICO: guide to data security](https://ico.org.uk/for-organizations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/security/)
+* [ISO/IEC 27001: information security management systems](https://www.iso.org/isoiec-27001-information-security.html)
+* [ENISA: the EU Agency for Cybersecurity](https://www.enisa.europa.eu/)
 
 ***
 
 {% hint style="success" %}
-💡 **Good practice:** Every new project, processor or tool must be subject to a risk assessment and an update of the associated measures.
+**Good practice:** Every new project, processor or tool must be subject to a risk assessment and an update of the associated measures.
 {% endhint %}

@@ -16,19 +16,23 @@ Où la **probabilité** est la fréquence d'occurrence d'un évènement redouté
 
 et l'**impact** est la gravité des effets et/ou la sévérité des conséquences de cet évènement redouté.
 
-L'impact d'un risque est classé par défaut en 4 catégories :
+L'impact d'un risque est classé par défaut en 5 niveaux :
 
-* Catastrophique,
-* Important,
+* Négligable,
+* Faible,
 * Moyen,
-* Faible.
+* Élevé,
+* Critique.
 
-La probabilité d'un risque est classé par défaut en 4 catégories :
+La probabilité d'un risque est classée par défaut en 5 niveaux :
 
-* Très probable,
-* Probable,
+* Improbable,
+* Peu probable,
 * Possible,
-* Peu probable.
+* Probable,
+* Très probable.
+
+Dans la matrice, l'impact est appelé **gravité** et la probabilité **vraisemblance**.
 
 {% hint style="info" %}
 Il est possible de personnaliser les niveaux de risques dans Dastra.
@@ -44,21 +48,21 @@ Selon leur niveau de probabilité et d'impact, les risques peuvent être classé
 
 Les risques intolérables sont représentés en **rouge** dans Dastra.
 
-Les risques qui doivent être limités autant que possible sont représentés en **orange** ou en **jaune** dans Dastra.
+Les risques qui doivent être limités autant que possible sont représentés en **jaune** dans Dastra.
 
 Les risques acceptables sont représentés en **vert** dans Dastra.
 
-## Risque brut vs. risque net (ou résiduel)
+## Risque brut et risque net (ou résiduel)
 
-Un risque « **brut** » est considéré sans l’ensemble des dispositifs de maîtrise et de contrôle qui l’entoure – organisation, contrôles divers, documentation, etc.
+Un risque « **brut** » est considéré sans l’ensemble des dispositifs de maîtrise et de contrôle qui l’entoure (organisation, contrôles divers, documentation, etc.)
 
 Un risque « **net** » (ou résiduel) est, au contraire, évalué en prenant compte l’ensemble des dispositifs déjà en place et effectifs.
 
 ## Visualisation d'un risque
 
-![Exemple de visualisation de risques dans Dastra.](../../.gitbook/assets/risks-matrix-treatment-arrows.png)
+<figure><img src="../../.gitbook/assets/risks-assess-1.png" alt="Section Évaluation du risque : niveaux initial et résiduel, justification et matrice de risque"><figcaption><p>Un risque et son niveau résiduel dans la matrice de risques</p></figcaption></figure>
 
-Aller plus loin
+## Pour aller plus loin
 
 {% content-ref url="../../features/risks/attach-to-processing.md" %}
 [risques.md](../../features/risks/attach-to-processing.md)
