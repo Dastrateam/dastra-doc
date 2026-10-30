@@ -1,31 +1,39 @@
 ---
 description: >-
-  Leer hoe u de Dastra-planningsmodule kunt synchroniseren met andere kalenders.
+  Synchroniseer uw taakkalender van Dastra met Outlook, Google Agenda of een
+  andere agendatoepassing.
 ---
 
-# Synchroniseren met andere kalenders
+# Delen als kalender
 
-## Inleiding
+Dastra genereert een kalenderlink in .ics-formaat. Zodra u deze link aan uw mailtoepassing toevoegt, verschijnen uw taken in een werkkalender zoals Outlook of Google Agenda.
 
-In Dastra is het mogelijk om alle acties te synchroniseren die zijn aangemaakt in andere kalenders, zoals professionele kalenders die worden aangeboden door berichtendiensten.
+## De kalenderlink genereren
 
-## Synchroniseren met andere kalenders
+1. Klik in het zijmenu op **Planning** en kies daarna in het submenu **Taken**.
+2. Klik op de pijl van de knop **Nieuwe taak** en daarna op **Synchroniseren met mijn agenda (Outlook...)**. Deze vermelding vereist de machtiging om taken te exporteren.
 
-Ga hiervoor naar het tabblad "Kolommen" of "Tabel" in de module "Agenda" en klik vervolgens op de pijl rechtsboven in het scherm, naast de knop "Nieuwe taak". Klik vervolgens op "Synchroniseren met mijn agenda (Outlook...).
+<figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="Het uitklapmenu van de knop Nieuwe taak met de vermelding Synchroniseren met mijn agenda"><figcaption><p>De vermelding Synchroniseren met mijn agenda in het menu van de knop Nieuwe taak</p></figcaption></figure>
 
-![Het taak uitklapmenu](<../../.gitbook/assets/Capture web\_4-5-2022\_152356\_app.dastra.eu.jpeg>)
+3. Klik in het venster **Taakkalender delen** op **Maak een link**.
 
-Dit genereert een **link** en/of download een **.ics bestand** waarmee het mogelijk is om de kalender van de aan jou toegewezen taken te synchroniseren met elk willekeurig kalenderprogramma (Outlook, Google, etc.).
+<figure><img src="../../.gitbook/assets/tasks-calendar-sync-1.png" alt="Het venster Taakkalender delen met de gegenereerde link"><figcaption><p>De gegenereerde kalenderlink</p></figcaption></figure>
 
-* [Outlook-kalender synchroniseren](https://support.microsoft.com/fr-fr/office/importer-des-calendriers-dans-outlook-8e8364e1-400e-4c0f-a573-fe76b5a2d379)
-* [Synchroniseer een Google-agenda](https://support.google.com/calendar/answer/37118?hl=fr&co=GENIE.Platform%3DDesktop)
+De link wordt naar uw klembord gekopieerd en in het venster weergegeven. Met deze link synchroniseert u de kalender van de taken die aan u zijn toegewezen met elke agendatoepassing.
+
+## De link aan uw kalender toevoegen
+
+Voeg de link in uw agendatoepassing toe als internetkalender. De werkwijze hangt van de toepassing af:
+
+* [Agenda's importeren in Outlook](https://support.microsoft.com/en-us/office/import-calendars-into-outlook-8e8364e1-400e-4c0f-a573-fe76b5a2d379) (in het Engels)
+* [Gebeurtenissen importeren in Google Agenda](https://support.google.com/calendar/answer/37118?hl=en\&co=GENIE.Platform%3DDesktop) (in het Engels)
 
 {% hint style="info" %}
-Om veiligheidsredenen raden we u aan de deellinks die worden weergegeven op uw project te controleren in de interface voor het beheer van de deellinks ("instellingen"-knop).
+Deel deze link niet breed. Controleer om veiligheidsredenen de bestaande links in **Instellingen voor werkruimte** > **Links delen**.
 {% endhint %}
 
 ## Verder gaan
 
-{% content-ref url="aller-plus-loin-avec-la-planification.md" %}
-[ga-verder-met-planning.md](aller-plus-loin-avec-la-planification.md)
+{% content-ref url="workflow.md" %}
+[De takenworkflow aanpassen](workflow.md)
 {% endcontent-ref %}

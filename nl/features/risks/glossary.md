@@ -1,15 +1,14 @@
 # Woordenlijst
 
+Dit zijn de termen die in de module risicobeheer worden gebruikt.
 
-
-Voordat we beginnen, volgen hier enkele belangrijke definities:
-
-* **Waarschijnlijkheid:** komt overeen met de evaluatie van de frequentie waarmee een risico zich voordoet. Het is een score die empirisch wordt geëvalueerd (traditioneel een score op 5). Elk risiconiveau komt overeen met een frequentie van optreden.
-* **Impact:** komt overeen met de evaluatie van het gevolg van een gevreesde gebeurtenis voor het bedrijf.
-* **Huidig risico:** het risiconiveau zoals het is op een bepaald moment T, afhankelijk van het niveau van herstel van uw controlepunten. Het wordt als volgt berekend: {Current risk} = {Initial risk} - ({Initial risk} - {Residual risk}) * {Risk remediation rate}.
-**Residueel risico:** dit is het risico dat overblijft na de implementatie van controlemaatregelen (interne controle).
-* **Initieel (of inherent) risico:** dit is het theoretische risico verbonden aan de activiteit. Het kan ook worden gedefinieerd als het oorspronkelijke risico, vóór controlemaatregelen (interne controle). Het wordt berekend door de bruto impact x te vermenigvuldigen met de bruto waarschijnlijkheid.
-* **Gevreesde gebeurtenis:** verwijst naar de onzekere gebeurtenis die zal worden gekarakteriseerd in termen van frequentie en ernst.
-* **Risico:** de combinatie van een gevreesde gebeurtenis en de beoordeling van de impact en waarschijnlijkheid op een object (Verwerking, Actor (subcontractant), toepassing of entiteit). Er kan ook rekening worden gehouden met andere criteria, zoals bedreigingen (de soorten risico's die het risico veroorzaken) of bronnen (de media of locatie van het risico).
-* **Controlepunt:** (of risicobeheersysteem). Naleving van de controlepunten is het middel om 100% van de risico's te verhelpen en dus te evolueren naar een huidig risico = restrisico. In Dastra wordt de lijst met controlepunten beheerd op het niveau van de gevreesde gebeurtenis.
-* **Sanering:** Dit is het percentage van naleving van het controleplan voor een risico. Voorbeeld: als 2 van de 3 controlepunten voldoen = 66% saneringspercentage.
+* **Waarschijnlijkheid (kans):** de evaluatie van de frequentie waarmee een risico zich voordoet. Het is een score die empirisch wordt geëvalueerd, van 1 tot 5 met de standaardschaal. Elk niveau komt overeen met een frequentie van optreden van het risico. De app toont deze score onder het label **Waarschijnlijkheid**.
+* **Ernst (impact):** de evaluatie van het gevolg van een gevreesde gebeurtenis voor de organisatie. De app toont deze waarde onder het label **Ernst**.
+* **Initieel (of inherent) risico:** het theoretische risico dat aan de activiteit verbonden is, vóór enige beheersmaatregel (interne controle). Het wordt berekend door de initiële impact te vermenigvuldigen met de initiële waarschijnlijkheid.
+* **Restrisico:** het risico dat overblijft nadat beheersmaatregelen (interne controle) zijn ingevoerd. Het wordt berekend door de resterende impact te vermenigvuldigen met de resterende waarschijnlijkheid.
+* **Huidig risico:** het risiconiveau op een bepaald moment, afhankelijk van het remediëringsniveau van uw controlepunten. Het wordt als volgt berekend: {Huidig risico} = {Initieel risico} - ({Initieel risico} - {Restrisico}) \* {Remediëringspercentage}. Zonder enige respons op de controlepunten is het huidige risico gelijk aan het initiële risico.
+* **Gevreesde gebeurtenis:** de onzekere gebeurtenis die wordt gekarakteriseerd door haar frequentie en ernst. Het is het gevolg van het optreden van een risico.
+* **Risicotype:** groepeert een gevreesde gebeurtenis, de bedreigingen, de bronnen, de controlepunten en een voorbeoordeling. U hergebruikt het voor zoveel objecten als nodig.
+* **Risico:** de combinatie van een risicotype en de evaluatie ervan (impact en waarschijnlijkheid) op een object: organisatorische eenheid, verwerkingsactiviteit, actor (bijvoorbeeld een verwerker), activum of AI-systeem. Bedreigingen (de gebeurtenissen die aan de oorsprong van de gevreesde gebeurtenis liggen) en bronnen (wie of wat ze kan veroorzaken) vullen de beschrijving aan.
+* **Controlepunt:** (of risicobeheersysteem). Het naleven van de controlepunten is de manier om het huidige risico naar het restrisico te brengen. In Dastra is de lijst met controlepunten gekoppeld aan het risicotype.
+* **Remediëring (remediëringspercentage):** het aandeel beheersmaatregelen dat voor een risico daadwerkelijk is ingevoerd. Het wordt als volgt berekend: de som van de punten van de huidige respons van elk controlepunt, gedeeld door de som van de maximumpunten van elk controlepunt, naar boven afgerond op het volgende percentage. Responsen **Niet van toepassing** worden van de berekening uitgesloten en een controlepunt zonder respons telt voor nul punten. Met drie controlepunten waarvan de responsen slechts 0 of 1 punt waard zijn, geven twee conforme controlepunten uit drie bijvoorbeeld een remediëringspercentage van 67%.

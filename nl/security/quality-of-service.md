@@ -1,23 +1,23 @@
 ---
 description: >-
-  We doen ons uiterste best om de best mogelijke beschikbaarheid en vlotheid te garanderen
-  van onze diensten.
+  Wij doen ons best om de beste beschikbaarheid en de goede werking van onze
+  diensten te garanderen.
 ---
 
 # Kwaliteit van onze diensten
 
-## Infrastructuur & schaalbaarheid
+## Infrastructuur en schaalbaarheid
 
-Onze cloud-infrastructuur stelt ons in staat om onze applicaties te schalen, zodat de impact van een toename van het publiek op de responstijden wordt beperkt.
+Dankzij onze cloudinfrastructuur kunnen wij onze applicaties opschalen, zodat een groter publiek minder invloed heeft op de responstijden.
 
-## Realtime transparantie over de beschikbaarheid van onze diensten
+## Realtimetransparantie over de beschikbaarheid van onze diensten
 
-Al onze services worden bewaakt door realtime sondes. Je kunt de status van de service controleren op de volgende pagina: [https://status.dastra.eu](https://status.dastra.eu)
+Al onze diensten worden in realtime bewaakt met probes. U kunt de status van de dienst controleren op de volgende pagina: [**https://status.dastra.eu**](https://status.dastra.eu)
 
 ## Beschikbaarheid
 
-We streven naar een beschikbaarheid van 99,5% en een responstijd van onze API Rest < 1000ms.
+Ons doel is een beschikbaarheid van 99,5% en een responstijd van onze REST-API van minder dan 1000 ms.
 
 ## Ondersteuning
 
-Ons supportteam streeft ernaar alle tickets binnen 48 uur te beantwoorden.
+Ons supportteam verbindt zich ertoe alle tickets binnen 48 uur te beantwoorden.

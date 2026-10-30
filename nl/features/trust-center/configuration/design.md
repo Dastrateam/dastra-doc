@@ -1,15 +1,23 @@
 ---
-description: Leer hoe u de ontwerpelementen van uw Trust Center configureert
+description: >-
+  Leer hoe u het logo, de omslagafbeelding en de accentkleur van uw Trust Center
+  configureert.
 ---
 
 # Uiterlijk en ontwerp
 
-<figure><img src="../../../.gitbook/assets/trust-center-appearance-config.png" alt=""><figcaption><p>Het tabblad waarmee u de ontwerpelementen van uw Trust Center configureert</p></figcaption></figure>
+In de sectie **Ontwerp** van de bewerkingspagina vindt u de visuele elementen van uw Trust Center: het logo, de accentkleur en de omslagafbeelding. Alle drie zijn optioneel.
 
-#### Logo (optioneel)
+<figure><img src="../../../.gitbook/assets/trust-center-design-1.png" alt="Sectie Ontwerp van een Trust Center met het logo, de accentkleur en de omslagafbeelding"><figcaption><p>De sectie Ontwerp van een Trust Center</p></figcaption></figure>
 
-U kunt een logo van uw keuze (vierkant formaat) aan uw Trust Center toevoegen. Dit logo wordt weergegeven in de koptekst van uw Trust Center, naast de naam ervan. Zonder logo wordt alleen de naam van uw Trust Center weergegeven.
+## Logo
 
-#### Omslagafbeelding (optioneel)
+Voeg een logo van uw keuze toe, in vierkant formaat. Het wordt weergegeven in de koptekst van het Trust Center, naast de naam ervan. Zonder logo wordt alleen de naam van het Trust Center weergegeven.
 
-U kunt een omslagafbeelding van uw keuze (rechthoekig formaat) aan uw Trust Center toevoegen. Indien opgegeven, wordt deze weergegeven in de koptekst van uw Trust Center, boven het logo en de titel ervan.
+## Accentkleur
+
+Het veld **Accentkleur** kleurt de interactieve elementen van het openbare portaal: links, het actieve tabblad, primaire knoppen en de actieve pagina van lijsten. Zonder kleur gebruikt het portaal zijn standaardkleur.
+
+## Omslagafbeelding
+
+Voeg een omslagafbeelding toe, in rechthoekig formaat (verhouding 2:1). Ze wordt weergegeven bovenaan de koptekst van het Trust Center, boven het logo en de naam.

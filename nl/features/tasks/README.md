@@ -1,47 +1,63 @@
 ---
-description: Leer de Dastra plannings- en bewakingsmodule gebruiken.
+description: >-
+  Ontdek de planningsmodule van Dastra: het actieplan van uw organisatie, de
+  taken, projecten en iteraties.
 ---
 
 # Planning
 
-## Inleiding
+De planningsmodule bundelt de taken van het actieplan van uw werkruimte. U maakt taken aan, wijst ze toe, volgt hun voortgang en exporteert ze. De module is bedoeld voor functionarissen voor gegevensbescherming (FG's) en compliance-teams die moeten aantonen wat ze hebben gedaan.
 
-Centraal in de filosofie van de AVG staat de noodzaak om aan te tonen dat de organisatie verantwoordelijk is voor gegevensbescherming. Artikel 24 vat dit concept samen:&#x20;
+## Waarom een actieplan bijhouden
 
-> (...) _de voor de verwerking verantwoordelijke treft passende technische en organisatorische maatregelen om te waarborgen en aan te kunnen tonen dat de verwerking in overeenstemming met deze verordening wordt uitgevoerd_".
+Artikel 24 van de AVG formuleert het beginsel van verantwoordingsplicht:
 
-Zodra hun gegevensverwerking in kaart is gebracht en beoordeeld, zijn organisaties verplicht om zowel technische als organisatorische maatregelen te implementeren om deze verwerking te beschermen. Maar het implementeren van dit principe van verantwoording is niet altijd gemakkelijk voor bedrijven, omdat de verordening van hen verlangt dat ze "rapporteren" zonder precieze, gekwantificeerde indicatoren te geven&#x20;
+> (...) treft de verwerkingsverantwoordelijke passende technische en organisatorische maatregelen om te waarborgen en te kunnen aantonen dat de verwerking in overeenstemming met deze verordening wordt uitgevoerd.
 
-Bij Dastra geloven we dat het bijhouden van een **duidelijk**, **samenwerkend** en **controleerbaar** actieplan de organisatie niet alleen tastbaar bewijs geeft van het nemen van verantwoordelijkheid voor gegevensbescherming, maar ook tijd bespaart voor alle betrokkenen door het elimineren van dode tijd en het verminderen van het risico op vertraging of mislukking van projecten door een "agile" aanpak.
+Zodra een organisatie haar verwerkingsactiviteiten in kaart heeft gebracht en beoordeeld, moet ze technische en organisatorische maatregelen nemen om ze te beschermen. De verordening verplicht u om de naleving aan te tonen, zonder precieze indicatoren te geven. Een duidelijk, gedeeld en traceerbaar actieplan levert concreet bewijs: elke taak heeft een toegewezen persoon, een vervaldatum, een stap en een geschiedenis.
 
-## Toegang tot de planningsmodule
+## De module openen
 
-Om toegang te krijgen tot de planningsmodule gaat u naar de toepassing en klikt u op de module "planning" aan de linkerkant van het scherm.
+Klik in het zijmenu op **Planning**. Het menu klapt uit tot vijf pagina's:
 
-![Planning knop](<../../.gitbook/assets/image (220).png>)
+* **Taken**: de lijst met taken, met de weergaven Kolommen, Tabel, Boomstructuur en Kalender;
+* **Statistieken**: indicatoren en voortgangsgrafieken;
+* **Huidige iteratie**: de taken van de lopende iteratie;
+* **Projecten**: de projecten waarin taken worden gegroepeerd;
+* **Iteraties**: de werkperioden.
 
-Dit brengt je naar de planningsmodule:
+<figure><img src="../../.gitbook/assets/tasks-readme-1.png" alt="Het zijmenu met de vermelding Planning, uitgeklapt tot vijf pagina's"><figcaption><p>De pagina's van de planningsmodule in het zijmenu</p></figcaption></figure>
 
-![Planning module](<../../.gitbook/assets/image (221).png>)
+De pagina **Taken** opent standaard in de weergave **Kolommen**, waarin de taken per stap zijn ingedeeld.
+
+<figure><img src="../../.gitbook/assets/tasks-readme-2.png" alt="De pagina Taken in de weergave Kolommen, met taken verdeeld over vier stappen"><figcaption><p>De pagina Taken in de weergave Kolommen</p></figcaption></figure>
+
+{% hint style="info" %}
+De vermelding **Planning** verschijnt alleen als uw rol toegang geeft tot taken en de module voor uw organisatie is ingeschakeld.
+{% endhint %}
 
 ## Verder gaan
 
 {% content-ref url="create.md" %}
-[gerer-vos-taches.md](create.md)
+[Een taak aanmaken of bewerken](create.md)
 {% endcontent-ref %}
 
 {% content-ref url="projects.md" %}
-[creer-ou-modifier-un-projet-ou-une-iteration.md](projects.md)
+[Een project of een iteratie aanmaken of bewerken](projects.md)
 {% endcontent-ref %}
 
 {% content-ref url="export.md" %}
-[suivre-les-taches.md](export.md)
-{% endcontent-ref %}
-
-{% content-ref url="calendar-sync.md" %}
-[synchroniser-avec-dautres-calendriers.md](calendar-sync.md)
+[Taken volgen, filteren of exporteren](export.md)
 {% endcontent-ref %}
 
 {% content-ref url="workflow.md" %}
-[allez-plus-loin-avec-la-planification.md](workflow.md)
+[De takenworkflow aanpassen](workflow.md)
+{% endcontent-ref %}
+
+{% content-ref url="calendar-sync.md" %}
+[Delen als kalender](calendar-sync.md)
+{% endcontent-ref %}
+
+{% content-ref url="faq.md" %}
+[Veelgestelde vragen](faq.md)
 {% endcontent-ref %}

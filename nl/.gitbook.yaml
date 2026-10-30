@@ -186,4 +186,5 @@ redirects:
   rappels-utiles/rgpd-en-bref/mesures-de-securite: gdpr/concepts/security.md
   rappels-utiles/rgpd-en-bref/registre-de-traitement: gdpr/concepts/ropa.md
   rappels-utiles/rgpd-en-bref/violations-de-donnees: gdpr/concepts/breaches.md
+  security/roadmap: security/general.md
   security/qualite-de-nos-services: security/quality-of-service.md

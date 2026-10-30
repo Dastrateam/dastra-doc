@@ -1,25 +1,31 @@
 ---
-description: Leer hoe u Trust Centers aanmaakt en configureert
+description: >-
+  Leer hoe u een Trust Center aanmaakt en configureert, het openbare
+  transparantieportaal van uw organisatie.
 ---
 
 # Trust Center
 
-Met het **Trust Center** kunnen organisaties een volledig configureerbaar **openbaar webportaal** aanmaken en aanpassen, ontworpen voor het beheer van de naleving van de regels voor gegevensbescherming. Het Trust Center biedt een eenvoudige en intuïtieve oplossing om een ruimte voor transparantie en interactie met de belanghebbenden van de organisatie op te zetten, of het nu gaat om klanten, verwerkers of medewerkers.
+Het Trust Center is een openbaar webportaal dat u configureert om de naleving van de regels voor gegevensbescherming door uw organisatie te presenteren. Het is bedoeld voor uw klanten, verwerkers en medewerkers.
 
-Het Trust Center heeft een modulaire en flexibele configuratie, waarmee u de functies van uw keuze kunt selecteren en activeren uit de volgende opties:
+U kiest de functies die u wilt tonen uit de volgende lijst:
 
-* [Aanpasbare startpagina](configuration/home.md) (verplicht)
-* [Vragenlijsten](configuration/questionnaires.md) (optioneel - vereist de functie [Vragenlijsten](../questionnaires/README.md))
-* [Documenten](configuration/attachments.md) (optioneel)
-* [Uitoefening van rechten](configuration/data-subject-requests.md) (optioneel - vereist de functie [Uitoefening van rechten](../requests/README.md))
+* [Startpagina](configuration/home.md) (optioneel)
+* [Vragenlijsten](configuration/questionnaires.md) (optioneel, vereist de functie [Vragenlijsten](../questionnaires/README.md))
+* [Bijlagen](configuration/attachments.md) (optioneel)
+* [Verzoeken van betrokkenen](configuration/data-subject-requests.md) (optioneel, vereist de functie [Verzoeken van betrokkenen](../requests/README.md))
 * [Organigram](configuration/org-chart.md) (optioneel)
-* [Register van verwerkingen](configuration/ropa.md) (optioneel - vereist de functie [Register van verwerkingen](../ropa/README.md))
-* [AI-systemen](configuration/ai-systems.md) (optioneel - vereist de module AI-systemen in uw abonnement)
+* [Contacten](configuration/contacts.md) (optioneel)
+* [Verwerkingsregister](configuration/ropa.md) (optioneel, vereist de functie [Verwerkingsregister](../ropa/README.md))
+* [AI-systemen](configuration/ai-systems.md) (optioneel, vereist de module AI-systemen in uw abonnement)
+* [Het conformiteitsproject weergeven](configuration/README.md#het-conformiteitsproject-weergeven) (optioneel, vereist de functie [Conformiteit](../compliance/README.md))
 
-### Toegang tot de functie
+De startpagina is optioneel. Snelle links, het welkomstbericht en het onderdeel Contacten worden op die pagina getoond: zonder startpagina verschijnen ze niet in het portaal.
+
+## Toegang tot de functie
 
 Om toegang te krijgen tot de functie moet de Trust Center-functie deel uitmaken van uw abonnement.
 
-U opent de Trust Centers via de zijnavigatiebalk van de applicatie.
+U opent de Trust Centers via het item **Vertrouwenscentrum** in de zijnavigatiebalk van de applicatie.
 
-<figure><img src="../../.gitbook/assets/trust-center-demo-homepage.png" alt=""><figcaption><p>Voorbeeld van een demo-Trust Center met alle modules geactiveerd</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/trust-center-overview-1.png" alt="Openbaar portaal van een Trust Center met zijn tabbladen"><figcaption><p>Voorbeeld van een Trust Center met alle functies geactiveerd</p></figcaption></figure>
