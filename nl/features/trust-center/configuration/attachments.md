@@ -1,17 +1,22 @@
 ---
-description: Leer hoe u documenten beschikbaar stelt in uw Trust Center
+description: >-
+  Leer hoe u bijlagen configureert in uw Trust Center.
 ---
 
-# Documenten
+# Bijlagen
 
-**De functie "Documenten" activeren in uw Trust Center**
+Deze pagina legt uit hoe u documenten beschikbaar stelt aan de bezoekers van uw Trust Center.
 
-Om de functie **Documenten** in uw Trust Center te activeren, raadpleegt u de sectie algemene configuratie waarmee u deze optie kunt activeren of deactiveren. Eenmaal geactiveerd, wordt er een nieuwe openbare pagina met de naam "Documenten" aan uw Trust Center toegevoegd.
+## De functie activeren
 
-<figure><img src="../../../.gitbook/assets/trust-center-documents-config.png" alt=""><figcaption><p>Het configuratietabblad voor documenten</p></figcaption></figure>
+Vink **Bijlagen** aan in het onderdeel **Configuratie**, zoals uitgelegd in [Startpagina en algemene configuratie](home.md). Aan uw Trust Center wordt dan een openbare pagina **Bijlagen** toegevoegd en op de bewerkingspagina wordt het onderdeel **Documenten** ontgrendeld.
 
-#### Documenten toevoegen aan uw Trust Center
+<figure><img src="../../../.gitbook/assets/trust-center-attachments-1.png" alt="Onderdeel Documenten van de bewerkingspagina met de lijst van beschikbaar gestelde bestanden"><figcaption><p>Het configuratieonderdeel voor bijlagen</p></figcaption></figure>
 
-Voeg bestanden toe in dit tabblad (door ze te uploaden of te selecteren uit uw bestaande bestanden in het documentbeheer) om ze openbaar beschikbaar te stellen in het tabblad Documenten van uw Trust Center (voor raadpleging en download).
+## Bijlagen toevoegen aan uw Trust Center
+
+Voeg in het onderdeel **Documenten** bestanden toe door ze te uploaden of door ze te selecteren uit de bestaande bestanden van het documentbeheer. Ze worden dan vermeld op de openbare pagina **Bijlagen** van uw Trust Center. Bestanden die vanuit dit onderdeel worden geüpload, worden opgeslagen in de map **Vertrouwenscentra** van het documentbeheer.
+
+Standaard moet een bezoeker toegang tot een document aanvragen voordat het kan worden gedownload. Om dit gedrag te wijzigen, zie [Beveiliging](security.md).
 
 [Meer informatie over documentbeheer in Dastra.](../../files/README.md)

@@ -1,19 +1,27 @@
 ---
-description: Leer hoe u een widget voor de uitoefening van rechten instelt in uw Trust Center
+description: >-
+  Leer hoe u een verzamelformulier voor verzoeken van betrokkenen instelt in uw
+  Trust Center.
 ---
 
-# Uitoefening van rechten
+# Verzoeken van betrokkenen
 
-**De functie "Uitoefening van rechten" activeren in uw Trust Center**
+Deze pagina legt uit hoe u een verzamelformulier voor verzoeken van betrokkenen weergeeft in uw Trust Center.
 
-Om de functie **Uitoefening van rechten** in uw Trust Center te activeren, raadpleegt u de sectie algemene configuratie waarmee u deze optie kunt activeren of deactiveren. Eenmaal geactiveerd, wordt er een nieuwe openbare pagina met de naam "Uitoefening van rechten" aan uw Trust Center toegevoegd.
+## De functie activeren
 
-<figure><img src="../../../.gitbook/assets/trust-center-dsr-widget-config.png" alt=""><figcaption><p>Het configuratietabblad van de functie Uitoefening van rechten in uw Trust Center</p></figcaption></figure>
+Vink **Verzoeken van betrokkenen** aan in de sectie **Configuratie**, zoals uitgelegd in [Startpagina en algemene configuratie](home.md). Er wordt dan een openbare pagina **Verzoeken van betrokkenen** aan uw Trust Center toegevoegd, en de sectie **Verzoeken van betrokkenen** wordt ontgrendeld op de bewerkingspagina.
 
-#### Vereisten
+<figure><img src="../../../.gitbook/assets/trust-center-data-subject-requests-1.png" alt="Sectie Verzoeken van betrokkenen met het veld Formulier voor het aanvragen van betrokkenen"><figcaption><p>De configuratiesectie voor verzoeken van betrokkenen</p></figcaption></figure>
 
-Om een widget voor de uitoefening van rechten in uw Trust Center te kunnen weergeven, moet de module "Uitoefening van rechten" deel uitmaken van uw abonnement en moet u eerst [een verzamelwidget hebben geconfigureerd en gepubliceerd](../../requests/widget.md).
+## Vereisten
 
-**Widget voor het verzamelen van verzoeken om rechten uit te oefenen**
+* Uw abonnement bevat de functie Verzoeken van betrokkenen.
+* U hebt [een verzamelformulier geconfigureerd en gepubliceerd](../../requests/widget.md).
+* In uw organisatie bestaat een openbare API-sleutel. Zonder deze sleutel verschijnt er een waarschuwing op de bewerkingspagina en kan de widget niet werken in het Trust Center. Zie [API-sleutelbeheer](../../settings/api-keys.md) om er een aan te maken.
 
-In dit veld selecteert u het verzamelformulier voor verzoeken dat in uw Trust Center wordt weergegeven. Let op: per Trust Center kan slechts één verzamelformulier worden weergegeven.
+## Het verzamelformulier kiezen
+
+In de sectie **Verzoeken van betrokkenen** kiest u in het veld **Formulier voor het aanvragen van betrokkenen** het verzamelformulier dat u wilt weergeven. Een Trust Center toont slechts één formulier.
+
+Zolang er geen formulier is geselecteerd, vermeldt de openbare pagina dat de beheerder geen verzamelformulier heeft geconfigureerd.

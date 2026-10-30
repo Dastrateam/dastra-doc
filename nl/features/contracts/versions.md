@@ -1,67 +1,57 @@
-# Contractversies
+# Documentversies
 
-Om wijzigingen, bijwerkingen of verlengingen van uw contract bij te houden, versioneert u uw contract.
+Om wijzigingen, bijwerkingen of verlengingen van een document bij te houden, maakt u er een nieuwe versie van.
 
-Elke versie heeft een revisienummer dat automatisch oploopt wanneer een versie wordt aangemaakt. U ziet dit revisienummer in de overzichtstabel van uw contracten.
+Elke versie heeft een revisienummer dat automatisch oploopt wanneer een versie wordt aangemaakt. Dit nummer is zichtbaar in het dossier. Een document heeft op elk moment maar één actieve versie: dat is de versie die het dossier toont, inactieve versies staan er niet in.
 
-Een contract heeft op elk moment maar één actieve versie. Dat is de versie die in de overzichtstabel wordt weergegeven (inactieve versies staan niet in de overzichtstabel).
+In het versiebeheer navigeert u tussen de versies van een document, geeft u een eerdere versie weer en maakt u op elk moment een versie actief, ook een recentere.
 
-Met het versiebeheer van het contract navigeert u tussen de verschillende versies van een contract. U bekijkt eerdere versies van uw contract op het scherm en activeert op elk moment een versie, ook een latere.
+## Het versiebeheer
 
-## Versiebeheer
+Wanneer u een document aanmaakt, maakt Dastra versie 1 ervan aan. De knop **Version** gevolgd door het nummer, in het menu met hoofdacties, opent het versiebeheer.
 
-Wanneer u een contract aanmaakt, maken we standaard versie 1 van dat contract aan. Die is zichtbaar in het menu met hoofdacties van het contract.
+<figure><img src="../../.gitbook/assets/contracts-versions-1.png" alt="De knop Version 1 in het menu met hoofdacties van het dossier"><figcaption><p>De knop die het versiebeheer opent</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-version-button-highlighted.png" alt="De knop om het versiebeheer te openen"><figcaption><p>Knop om het versiebeheer te openen</p></figcaption></figure>
+Het versiebeheer toont alle versies van het document. Elke kaart toont het versienummer, de beschrijving, de aanmaakdatum en het aantal bijlagen. Een stip geeft de status van de versie aan: groen voor de versie die **Actief** is, rood voor een versie die **Uitgeschakeld** is. De vermelding **(Currently displayed)** markeert de versie die u op het scherm bekijkt.
 
-Met deze knop opent u het versiebeheer.
-
-<figure><img src="../../.gitbook/assets/contracts-version-manager-panel.png" alt="Het paneel met het versiebeheer van een contract"><figcaption></figcaption></figure>
-
-In dit menu bekijkt en beheert u alle versies van uw contract en maakt u nieuwe versies aan met **Stel een nieuwe versie in**.
+<figure><img src="../../.gitbook/assets/contracts-versions-2.png" alt="Het versiebeheer met meerdere versies, waaronder de actieve versie en de weergegeven versie"><figcaption><p>Het versiebeheer</p></figcaption></figure>
 
 ## Een nieuwe versie aanmaken
 
-Met **Stel een nieuwe versie in** maakt u een nieuwe versie aan door de volgende gegevens op te geven:
+De nieuwe versie wordt aangemaakt op basis van de versie die op dat moment wordt weergegeven: ga dus eerst naar de versie waarvan u wilt uitgaan.
 
-<figure><img src="../../.gitbook/assets/contracts-create-version-modal.png" alt="Het formulier om een nieuwe versie aan te maken"><figcaption><p>Het formulier om een versie aan te maken</p></figcaption></figure>
+1. Klik in het versiebeheer op **Stel een nieuwe versie in**.
+2. Voer de **Startdatum** in en, indien nodig, de **Einddatum**. U kunt ze later nog wijzigen.
+3. Voeg desgewenst een **Beschrijving van de versie** toe.
+4. Zet **Copy attachments in new version** aan om de bestanden over te nemen.
+5. Klik op **Stel een nieuwe versie in**.
 
-Wanneer u een nieuwe versie aanmaakt, geldt het volgende:
+<figure><img src="../../.gitbook/assets/contracts-versions-3.png" alt="Het venster om een versie aan te maken met de datums, de beschrijving en de optie om bijlagen te kopiëren"><figcaption><p>Het venster om een versie aan te maken</p></figcaption></figure>
 
-* De naam, de beschrijving, de organisatorische eenheid, de activa, de ondertekenaars en de gebruikers van het contract blijven behouden in de nieuwe versie.
-* U geeft de begin- en einddatum van het contract voor de nieuwe versie op (die u later kunt wijzigen) en u kunt een beschrijving van deze nieuwe versie toevoegen.
-* Voor de bijlagen van uw contract kiest u of ze naar de nieuwe versie worden overgenomen, door het vakje **Copy attachments in new version** aan te vinken.
-* De nieuwe versie wordt aangemaakt op basis van de versie die op het scherm wordt weergegeven wanneer u op **Stel een nieuwe versie in** klikt. Controleer dus dat u zich in de versie bevindt waarvan u de nieuwe versie wilt afleiden.
-* De nieuwe versie wordt automatisch de actieve versie van uw contract (de versie die in de overzichtstabel van de contracten zichtbaar is).
+De naam, de beschrijving, de organisatorische eenheid, de activa, de ondertekenaars en de gebruikers van het document blijven behouden in de nieuwe versie. De aangemaakte versie wordt de actieve versie en de weergegeven versie.
 
 ## Een versie bekijken
 
-1. Open het versiebeheer.
-2. Klik op het menu met drie puntjes naast de versie die u wilt bekijken.
-3. Selecteer **Tonen**.
+Open in het versiebeheer het menu van de versie (de drie puntjes) en klik op **Tonen**. Deze actie wordt niet aangeboden voor de versie die al wordt weergegeven.
 
-Houd rekening met het volgende:
+U kunt een versie die niet de actieve versie is, bekijken en bewerken. Dastra herinnert u daaraan met een bericht in het versiebeheer en met de vermelding **Inactieve versie** boven de tabbladen van het dossier. Onderscheid de actieve versie, die uniek is en de referentie vormt, van de weergegeven versie.
 
-* U kunt een versie die niet de actieve versie van uw contract is, bekijken en wijzigen.
-* De actieve versie is de referentieversie van uw contract en er is er maar één. Ze is in het versiebeheer gemarkeerd met een groene stip. Onderscheid haar van de versie die op dat moment wordt weergegeven.
-* Inactieve versies van het contract zijn in het versiebeheer gemarkeerd met een rode stip.
-
-<figure><img src="../../.gitbook/assets/settings-sso-openid-redirect-uri.png" alt="Versie 2 bekijken terwijl versie 4 de actieve versie is"><figcaption><p>Hoewel versie 4 de actieve versie is, kunt u versie 2 nog steeds bekijken en bewerken.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-versions-4.png" alt="Een documentdossier met een inactieve versie, met de vermelding Inactieve versie"><figcaption><p>Versie 4 is de actieve versie, maar u kunt versie 2 bekijken en bewerken</p></figcaption></figure>
 
 ## Een versie actief maken
 
-Wanneer u een nieuwe versie aanmaakt, wordt die automatisch de actieve en de weergegeven versie.
+Een aangemaakte versie wordt automatisch de actieve versie. Om een andere versie actief te maken, opent u het menu ervan in het versiebeheer en klikt u op **Activate**. Deze actie wordt alleen aangeboden voor inactieve versies.
 
-U maakt zelf een versie actief via het versiebeheer, met de optie **Activate** van de gewenste versie.
+<figure><img src="../../.gitbook/assets/contracts-versions-5.png" alt="Het menu van een inactieve versie met de actie Activate"><figcaption><p>Een versie als actieve versie instellen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-add-signature-modal.png" alt="Versie 2 instellen als actieve versie"><figcaption><p>Versie 2 instellen als actieve of hoofdversie</p></figcaption></figure>
+## De beschrijving van een versie wijzigen
 
-## Verwijderen
+Om de beschrijving van een bestaande versie te wijzigen, opent u het menu ervan en klikt u op **Edit version description**. Pas de tekst aan in het venster dat opent en klik daarna op **Edit version**.
 
-U kunt op elk moment een inactieve versie van het contract verwijderen met **Verwijderen** in het menu van de versie.
+## Een versie verwijderen
 
-<figure><img src="../../.gitbook/assets/contracts-add-signatory-dropdown.png" alt="Het menu van een versie met de optie Verwijderen"><figcaption></figcaption></figure>
+Open het menu van een inactieve versie en klik op **Verwijderen**. U kunt de actieve versie en de versie die op dat moment wordt weergegeven niet verwijderen: geef een andere versie weer om deze te verwijderen.
 
-U kunt de actieve versie van het contract en de versie die op dat moment wordt weergegeven, niet verwijderen.
+<figure><img src="../../.gitbook/assets/contracts-versions-6.png" alt="Het menu van een inactieve versie met de actie Verwijderen"><figcaption><p>Een versie verwijderen</p></figcaption></figure>
 
-Als u een contract verwijdert vanuit de overzichtstabel van de module Contracten, worden de actieve versie en alle inactieve versies van het contract verwijderd.
+Wanneer u een document verwijdert, worden de actieve versie en alle inactieve versies ervan verwijderd.

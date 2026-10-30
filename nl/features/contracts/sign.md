@@ -1,33 +1,62 @@
-# Het contract ondertekenen
+---
+description: >-
+  Registreer de handtekeningen van een document handmatig of verstuur het
+  ter elektronische ondertekening met Docusign.
+---
 
-Zodra u ten minste één ondertekenaar aan uw contract hebt toegevoegd ([zie Ondertekenaars](signers.md)), beheert u het ondertekeningsproces van uw contract. Sla het contract eerst op: niet-opgeslagen wijzigingen blokkeren de knop voor ondertekening.
+# Een document ondertekenen
 
-U kunt handtekeningen handmatig registreren of [de integratie met Docusign](docusign.md) gebruiken om het hele elektronische ondertekeningsproces elektronisch af te handelen. Die integratie stroomlijnt de ondertekening en helpt te voldoen aan de vereisten voor elektronische handtekeningen.
+Zodra u ten minste één ondertekenaar aan uw document hebt toegevoegd (zie [Ondertekenaars](signers.md)), kunt u de ondertekening beheren. Sla het document eerst op: zolang een wijziging niet is opgeslagen, zijn de knoppen voor ondertekening vergrendeld.
 
-<figure><img src="../../.gitbook/assets/settings-message-templates-tabs.png" alt="Het ondertekeningsmenu van een contract"><figcaption></figcaption></figure>
+## Handmatige ondertekening of Docusign
 
-Het ondertekeningsmenu opent u op verschillende manieren:
+Het venster **Add signature** biedt twee modi:
 
-1. Afzonderlijke handtekeningen registreren: u registreert de handtekening van elke ondertekenaar afzonderlijk met de knop **Add signature** naast de ondertekenaar.
-2. Meerdere handtekeningen tegelijk registreren: klik op de pijl naast de knop **Add signature** om de ondertekenaars te selecteren voor wie u wilt ondertekenen.
-3. Ondertekenen vanuit de tabelweergave: u kunt een contract rechtstreeks vanuit de overzichtstabel ondertekenen.
+* **Manual**: u meldt dat ondertekenaars hebben ondertekend. Selecteer de ondertekenaars van wie u de handtekening wilt registreren, voer de **Signature date** in en klik op **Add signature**.
+* **Sign with Docusign®**: Dastra verstuurt het document ter elektronische ondertekening en volgt de voortgang. Voor deze modus is de [Docusign-integratie](docusign.md) vereist.
 
-<figure><img src="../../.gitbook/assets/contracts-signers-sign-all-dropdown.png" alt="Ondertekenen vanuit het tabblad Ondertekenaars van het contract"><figcaption><p>Ondertekenen vanuit het tabblad Ondertekenaars van het contract</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-sign-1.png" alt="Het venster Add signature met de twee modi, Manual en Sign with Docusign"><figcaption><p>De twee ondertekeningsmodi</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/cookies-widget-api-key-modal.png" alt="Ondertekenen vanuit de tabelweergave"><figcaption><p>Ondertekenen vanuit de tabelweergave</p></figcaption></figure>
+Wanneer elke ondertekenaar een handtekening heeft, vraagt Dastra of u het document wilt publiceren. Bevestig om het document de status **Actief** te geven.
 
-## De ondertekeningsknop in het gebied met hoofdacties
+## Het ondertekeningsvenster openen
 
-In het gebied met hoofdacties van uw contract (zie [Structuur van een contract](structure.md)) staat een knop voor de handtekeningen. Afhankelijk van het aantal ondertekenaars en het aantal ontvangen handtekeningen verandert de status van die knop:
+Het ondertekeningsvenster opent op drie manieren.
 
-1. Geen ondertekenaars: geef ondertekenaars op om met deze knop te werken.
+### Ondertekenen voor één ondertekenaar
 
-<figure><img src="../../.gitbook/assets/planning-tasks-kanban-board.png" alt="De ondertekeningsknop zonder ondertekenaars"><figcaption></figcaption></figure>
+Klik op het tabblad **Signers - Signatories** op **Add signature** in de rij van de betrokken ondertekenaar.
 
-2. Handtekeningen ontbreken: met deze status registreert u de ontbrekende handtekeningen.
+### Ondertekenen voor meerdere ondertekenaars
 
-<figure><img src="../../.gitbook/assets/contracts-sign-all-signers-button.png" alt="De ondertekeningsknop wanneer handtekeningen ontbreken"><figcaption></figcaption></figure>
+Klik op de pijl rechts van de knop **Add signer** en vervolgens op **Sign all - Apply all signatures**. U selecteert daarna de ondertekenaars voor wie u de handtekening registreert.
 
-3. Contract ondertekend door alle ondertekenaars: met deze status verwijdert u indien nodig handtekeningen.
+<figure><img src="../../.gitbook/assets/contracts-sign-2.png" alt="Het menu van de knop Add signer met de actie Sign all - Apply all signatures"><figcaption><p>Ondertekenen voor meerdere ondertekenaars vanaf het tabblad Signers</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/contracts-signed-status-header.png" alt="De ondertekeningsknop wanneer alle ondertekenaars hebben getekend"><figcaption></figcaption></figure>
+### Ondertekenen vanuit het register
+
+Open in het register het menu van de rij van het document en klik op **Add signature**. Deze actie is uitgeschakeld wanneer alle ondertekenaars al hebben ondertekend.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-3.png" alt="Het menu van een rij van het register met de actie Add signature"><figcaption><p>Ondertekenen vanuit het register</p></figcaption></figure>
+
+## De ondertekeningsknop van het register
+
+In het menu met hoofdacties van het register (zie [Structuur van een document](structure.md)) vat een knop de status van de handtekeningen samen. Het label verandert met het aantal ondertekenaars en het aantal ontvangen handtekeningen.
+
+### Geen ondertekenaars
+
+De knop is uitgeschakeld en toont **no signers**. Voeg ondertekenaars toe om hem te gebruiken.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-4.png" alt="De uitgeschakelde ondertekeningsknop met het label no signers"><figcaption><p>Geen ondertekenaars</p></figcaption></figure>
+
+### Handtekeningen ontbreken
+
+De knop toont **Sign all - Apply all signatures**, gevolgd door het aantal ontvangen handtekeningen ten opzichte van het aantal ondertekenaars. Klik erop om de ontbrekende handtekeningen te melden.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-5.png" alt="De knop Sign all - Apply all signatures met de teller van handtekeningen"><figcaption><p>Handtekeningen ontbreken</p></figcaption></figure>
+
+### Document ondertekend door alle ondertekenaars
+
+De knop toont **Signed**. Wanneer u de aanwijzer erop plaatst, wordt het **Delete signature**: na bevestiging verwijdert een klik de handtekeningen, als u ze opnieuw moet registreren.
+
+<figure><img src="../../.gitbook/assets/contracts-sign-6.png" alt="De knop Signed"><figcaption><p>Document ondertekend door alle ondertekenaars</p></figcaption></figure>

@@ -1,58 +1,62 @@
+---
+description: >-
+  Antwoorden op veelgestelde vragen over taken: bulkacties, verwijderen,
+  werklast en opvolging.
+---
+
 # Veelgestelde vragen
 
-## Meerdere taken aan een project koppelen
+## Hoe koppelt u meerdere taken aan een project?
 
-Om meerdere taken in één actie aan een project te koppelen, moet je gegroepeerde acties gebruiken en velden wijzigen.
+Gebruik de bulkacties en de veldeditor.
 
-Begin met het selecteren van de taken die je aan een project wilt koppelen.
+1. Selecteer in de weergave **Tabel** van de pagina **Taken** de taken die u aan het project wilt koppelen.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-faq-1.png" alt="De weergave Tabel met drie geselecteerde taken en het geopende menu Kies een bulkactie"><figcaption><p>Het menu met bulkacties</p></figcaption></figure>
 
-Klik op "Gegroepeerde acties
+2. Klik op **Kies een bulkactie** en daarna op **Velden bewerken**.
+3. Selecteer in het venster het veld **Project** en daarna het gewenste project.
 
-Klik op "Velden wijzigen
+<figure><img src="../../.gitbook/assets/tasks-faq-2.png" alt="Het venster voor bulkbewerking met het veld Project en een geselecteerd project"><figcaption><p>Het veld Project in bulk bewerken</p></figcaption></figure>
 
-Selecteer "Project" en het gewenste project.&#x20;
+4. Klik op **Opslaan**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Hoe verwijdert u een taak?
 
-Bevestig de veranderingen door ze op te slaan.
+Er zijn twee manieren.
 
-## Hoe verwijder ik een spot? &#x20;
+### Via de prullenbak
 
-Om een spot te verwijderen, moet je deze eerst archiveren en vervolgens uit de archieven verwijderen.&#x20;
+Zo kunt u nog terug zolang de taak niet is verwijderd.
 
-<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Archiveer knop</p></figcaption></figure>
+1. Klik op de drie puntjes van de taak en daarna op **Verplaats naar de prullenbak**.
+2. Open **Filters** en selecteer **Bekijk prullenbak**.
+3. Klik op de drie puntjes van de taak, daarna op **Verwijderen**, en bevestig.
 
-Geef vervolgens de taakarchieven weer
+<figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Het paneel Filters met het vakje Bekijk prullenbak geselecteerd"><figcaption><p>Het filter Bekijk prullenbak</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-create-7.png" alt="Het menu van een taak in de prullenbak met de acties Herstellen en Verwijderen"><figcaption><p>De acties van een taak in de prullenbak</p></figcaption></figure>
 
-En verwijder de taken
+### Rechtstreeks vanuit de weergave Tabel
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+Selecteer de taken, klik op **Kies een bulkactie** en daarna op **Verwijderen**, en bevestig.
 
-Je kunt de plek ook rechtstreeks vanuit de tabelweergave verwijderen
+{% hint style="danger" %}
+Verwijderen is definitief. Om een spoor van de taak te bewaren, verplaatst u ze naar de prullenbak zonder ze te verwijderen.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+## Hoe registreert u de werklast van een taak?
 
-## Geef de werkbelasting van de taak op
+U kunt op elke taak de geschatte en de werkelijke werklast invoeren. Zo meet u in uw evaluatie de tijd die aan taken is besteed.
 
-Je kunt de geschatte en werkelijke werklast op Dastra aangeven. Dit kan handig zijn voor het identificeren van de tijd die aan taken is besteed in je balans &#x20;
+Voeg hiervoor aangepaste velden toe aan taken: klik in het zijmenu op **Instellingen voor werkruimte**, daarna op **Aangepaste velden**, en kies **Taak** in de lijst links. Zie [Aangepaste velden](../general/custom-fields.md).
 
-Om de werklast toe te voegen, moet je aangepaste velden toevoegen aan de taken.&#x20;
+<figure><img src="../../.gitbook/assets/tasks-faq-3.png" alt="De pagina Aangepaste velden voor taken, met een groep van twee numerieke velden voor de geschatte en de werkelijke werklast"><figcaption><p>Een groep werklastvelden</p></figcaption></figure>
 
-&#x20;
+De velden verschijnen in het taakpaneel. U kunt hun waarden daarna exporteren naar een werkmap of gebruiken in de taakfilters.
 
-<figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-faq-4.png" alt="Het taakpaneel met de velden voor geschatte en werkelijke werklast"><figcaption><p>Voorbeeld van werklastvelden</p></figcaption></figure>
 
-Je kunt deze waarden vervolgens exporteren naar een werkmap of ze ophalen via je taakfilters.
+## Hoe volgt u een taak op bij iemand?
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (6).png" alt=""><figcaption><p>Voorbeeld werklastvelden</p></figcaption></figure>
-
-
-
-## Hoe start ik een taak opnieuw?
-
-Je kunt een taakmelding opnieuw naar een gebruiker sturen door deze te vermelden in een discussie &#x20;
-
+Vermeld de persoon in de discussie van de taak: open de taak, klik op de knop **Discussies** en typ **@** gevolgd door de naam. De vermelde persoon ontvangt een melding. Zie [Interne discussies](../general/discussions.md).

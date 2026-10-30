@@ -1,102 +1,117 @@
 ---
 description: >-
-   Beveiliging is een integraal onderdeel van de structuur van onze Cloud-producten, -infrastructuur en -processen. infrastructuur en processen. U kunt er dus zeker van zijn dat uw gegevens beschermd zijn.
+  Hosting, versleuteling, authenticatie, toegangsbeheer en back-ups: de
+  beveiligingsmaatregelen die Dastra toepast om uw gegevens te beschermen.
 ---
-   
+
 # Beveiliging bij Dastra
 
-## Veilige cloud hosting
+Deze pagina beschrijft de beveiligingsmaatregelen die Dastra toepast om uw gegevens te beschermen: hosting, versleuteling, authenticatie, toegangsbeheer en back-ups.
 
-We besteden de hosting van de gegevens van het platform uit aan Microsoft Azure.&#x20;
+{% hint style="info" %}
+De beveiligingsinstellingen van de organisatie (verplichte sterke authenticatie, filtering op IP-adres, filtering op e-maildomein, beleid voor wachtwoordvernieuwing, automatisch afmelden, bewaartermijn van beveiligingslogs, SIEM-streaming) zijn voorbehouden aan organisatie-eigenaren en aan het Enterprise-abonnement. U vindt ze onder **Organisatie-instellingen** > **Beveiliging**.
+{% endhint %}
 
-Gegevens worden opgeslagen in Parijs en Marseille in Frankrijk. De gegevens worden redundant opgeslagen tussen de twee locaties.&#x20;
+## Veilige cloudhosting
 
-**Twee-factor authenticatie**
+Wij besteden de hosting van de gegevens van het platform uit aan Microsoft Azure. Wij hebben dit platform gekozen omdat de meeste van onze klanten het al gebruiken (Microsoft 365 enz.) en omdat het een beveiligingsniveau biedt dat [tot de hoogste op de markt behoort](https://learn.microsoft.com/en-us/azure/compliance/).
 
-Het is voor alle organisatie-eigenaren mogelijk om het gebruik van twee-factor authenticatie af te dwingen. Authenticatie met twee factoren werkt met TOTP.
-Elke gebruiker kan de functionaliteit voor authenticatie met twee factoren individueel activeren.
+Gegevens worden in Frankrijk opgeslagen: in Parijs voor de productiegegevens en in Marseille voor de back-ups. De gegevens worden ook gerepliceerd in het datacenter van Amsterdam voor redundantie.
 
-[Meer informatie over sterke authenticatie](mfa.md)
+Voor een dedicated instantie op een soevereine cloud, zie [Dastra op Bleu](bleu.md).
+
+## Tweefactorauthenticatie
+
+Tweefactorauthenticatie werkt met het TOTP-protocol.
+
+Elke gebruiker kan tweefactorauthenticatie inschakelen voor zijn eigen account. Organisatie-eigenaren kunnen het ook verplicht stellen voor alle interne gebruikers die door de organisatie worden beheerd.
+
+Zie [Sterke authenticatie](mfa.md).
+
+## Single sign-on (SSO) en SCIM
+
+Afhankelijk van het gekozen abonnement, of als optie, biedt Dastra [self-service SSO](../features/settings/sso/README.md). Wij ondersteunen de protocollen SAML2P en OpenID, die compatibel zijn met de meeste bedrijfsdirectory's. U kunt ook de gebruikers van uw directory automatisch laten aanmaken met onze [SCIM](../features/settings/scim.md)-server.
 
 ## Versleuteling van gegevens onderweg
 
-Alle gegevens die tussen onze klanten en applicaties worden uitgewisseld, worden tijdens het transport versleuteld met behulp van het TLS-protocol (Transport Layer Security) met PFS (Perfect Forward Secrecy). De certificeringsautoriteit voor encryptie is CloudFlare inc.
+Alle gegevens die tussen onze klanten en applicaties worden uitgewisseld, worden tijdens het transport versleuteld met het TLS-protocol (Transport Layer Security) met PFS (Perfect Forward Secrecy). De certificeringsautoriteit is Cloudflare, Inc.
 
-## Encryptie van gegevens in rust
+## Versleuteling van gegevens in rust
 
-De gegevensschijven op de servers die klantgegevens hosten in de Azure-cloud zijn in rust allemaal versleuteld met behulp van "Transparante gegevensversleuteling"-technologie.
+De gegevensschijven van de servers die klantgegevens hosten in de Azure-cloud zijn in rust versleuteld met [Transparent Data Encryption](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver16).
 
-Fysieke bestanden worden ook statisch versleuteld in de Azure Storage-service met behulp van transparante 256-bits [AES-encryptie](https://en.wikipedia.org/wiki/Advanced), een van de sterkste algoritmen die voldoet aan FIPS 140-2.
+Bestanden worden ook in rust versleuteld in de Azure Storage-service, met transparante 256-bits [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)-versleuteling die voldoet aan FIPS 140-2.
 
-## Penetratietests&#x20;
+Alle versleutelingssleutels worden bewaard in een door Dastra beheerde sleutelkluis, met automatische rotatie.
 
-We laten onze applicatie regelmatig controleren door een onafhankelijke derde partij;
+## Penetratietests (pentests)
 
-De laatste test is uitgevoerd op 25 januari 2022 en heeft geen kritieke kwetsbaarheden aan het licht gebracht.
+Wij laten de beveiliging van de applicatie elk jaar controleren door een onafhankelijke derde partij.
 
-## Organisatie Audit Logs
+De laatste test heeft geen kritieke kwetsbaarheid aan het licht gebracht.
 
-Organisatiebeheerders kunnen alle wijzigingen in gebruikersbeheer en toegangsrechten bijhouden.
+Onze testmethodologie volgt de aanbevelingen van **OWASP** en bestaat uit verschillende fasen, van het zoeken naar open-sourceinformatie (reconnaissance) tot de exploitatie van de ontdekte kwetsbaarheden.
 
-## Unieke ID's
+## Beveiligingsauditlogs
 
-Elke gebruiker heeft een unieke identificatie en het gebruik van accounts die door meerdere gebruikers worden gedeeld, is niet toegestaan.
+Organisatiebeheerders kunnen alle wijzigingen in gebruikersbeheer, werkruimten en toegangsmachtigingen bijhouden.
+
+Organisatie-eigenaren bepalen hoelang beveiligingslogs worden bewaard onder **Organisatie-instellingen** > **Beveiliging**, in het blok **Veiligheidslogboeken bijhouden**: van 30 dagen tot 3 jaar (180 dagen aanbevolen). Logs die ouder zijn dan deze periode worden elke nacht verwijderd.
+
+Om deze gebeurtenissen continu naar uw monitoringtool te streamen, zie [SIEM-streaming](../features/settings/siem.md).
+
+## Unieke identificatiecodes
+
+Elke gebruiker heeft een unieke identificatiecode. Accounts die door meerdere gebruikers worden gedeeld, zijn niet toegestaan.
 
 ## Back-up van gegevens
 
-Van alle gegevens (Azure SQL) en bestanden (Azure Blob Storage) van onze gebruikers wordt regelmatig een back-up gemaakt met een geschiedenis van één maand.
+Van alle gegevens (Azure SQL) en bestanden (Azure Blob Storage) van onze gebruikers wordt regelmatig een back-up gemaakt, met een geschiedenis van 3 maanden (langetermijnretentie) en een herstel naar een bepaald tijdstip (PITR) over 7 dagen.
 
 ## Regels voor gegevensarchivering
 
-Als een account wordt verwijderd. Gegevens worden 1 maand bewaard voordat ze definitief worden verwijderd.
+Als een account wordt verwijderd, worden de gegevens 1 maand bewaard voordat ze definitief worden verwijderd.
 
-## **Wachtwoordregels**
+## Wachtwoordbeleid
 
-Minstens 8 tekens waaronder 3 van de 4 soorten tekens (hoofdletters, kleine letters, cijfers, speciale tekens)&#x20;
+* Minstens **10 tekens**, met **4 soorten tekens**: hoofdletters, kleine letters, cijfers en speciale tekens.
+* Vertraging bij de toegang tot het account na meerdere mislukte aanmeldpogingen.
+* Versleuteling van wachtwoorden in de database.
 
-Time-out accounttoegang na meerdere mislukte pogingen.
+## Beleid voor wachtwoordvernieuwing
 
-Database wachtwoordcodering.
+Organisatie-eigenaren kunnen een levensduur voor wachtwoorden instellen onder [Organisatie-instellingen > Beveiliging](https://app.dastra.eu/general-settings/security), in het blok **Beleid voor wachtwoordverlenging**. Dit geldt voor de interne gebruikers van de organisatie die geen SSO gebruiken. Wanneer de periode verstrijkt, maakt de gebruiker bij de volgende aanmelding een nieuw wachtwoord aan.
 
+## Automatisch afmelden
 
+Organisatie-eigenaren kunnen het blok **Automatisch verbinding verbreken** inschakelen: alle interne gebruikers die door de organisatie worden beheerd, worden dan na 1 uur inactiviteit afgemeld.
 
-## Wachtwoord vernieuwingsbeleid
+## Controle van API-tokens
 
-Met Dastra kan de accountbeheerder een wachtwoordvernieuwingsbeleid instellen voor al uw gebruikers via [de beveiligingsbeheerpagina](https://app.dastra.eu/general-settings/security).
+Bekijk en beheer alle [API-sleutels](../features/settings/api-keys.md) die de ontwikkelaars van uw organisatie gebruiken. U kunt het bereik van een sleutel ook beperken tot één werkruimte en tot specifieke machtigingen.
 
-## API token controle
+## Toegangsbeheer
 
-Bekijk en beheer alle API tokens die gebruikt worden door ontwikkelaars in uw organisatie.
+Dastra gebruikt het toegangsbeheermodel [RBAC](https://en.wikipedia.org/wiki/Role-based_access_control) (Role-Based Access Control). De organisatie-eigenaar kiest de [rollen en machtigingen](../features/settings/roles.md) van elke gebruiker met fijne granulariteit.
 
-## Totale toegangscontrole
+## Beveiligde authenticatie op basis van OpenID Connect voor al onze sites
 
-Gebruik het toegangsbeheermodel [RBAC](https://en.wikipedia.org/wiki/Role-based_access_control) (Role-base-access-control). Het hoofd van de organisatie kan de rollen en rechten van elke gebruiker kiezen.
+De authenticatieautoriteit is [https://account.dastra.eu](https://account.dastra.eu). Zij gebruikt OpenID om al onze gebruikers te authenticeren.
 
-## Beveiligde authenticatie op basis van OpenIdConnect voor al onze sites
-
-![](<../.gitbook/assets/image (22).png>)
-
-De authenticatie autoriteit is [https://account.dastra.eu](https://account.dastra.eu) gebruikt [IdentityServer4 ](https://identityserver.io/)technologie om al onze gebruikers te authenticeren.&#x20;
-
-**OpenID** is een gedecentraliseerd [authenticatie systeem](https://fr.wikipedia.org/wiki/Authentification) dat [unieke authenticatie](https://fr.wikipedia.org/wiki/Authentification) en het delen van attributen mogelijk maakt. Het stelt een gebruiker in staat om zich op verschillende sites te authenticeren (die deze technologie moeten ondersteunen) zonder dat hij voor elke site een identificatiecode hoeft te onthouden, maar door telkens één OpenID-identificatiecode te gebruiken.
+**OpenID** is een gedecentraliseerd [authenticatiesysteem](https://en.wikipedia.org/wiki/Authentication) dat [eenmalige aanmelding](https://en.wikipedia.org/wiki/Single_sign-on) en het delen van attributen mogelijk maakt. Het stelt een gebruiker in staat om zich op verschillende sites die deze technologie ondersteunen te authenticeren met één OpenID-identificatiecode, zonder voor elke site een aparte identificatiecode te hoeven onthouden.
 
 ## IP-adres autorisatielijst
 
-De toegang tot de organisatie kan worden beperkt tot toegestane IP-adresbereiken. De filtering geldt voor alle gebruikers (beheerders inbegrepen) en alle inlogmethoden (wachtwoord, SSO, passkey, magische link), bij het inloggen en bij elke vernieuwing van het token. Ze geldt niet voor API's, SCIM of SIEM-streaming. Zie de pagina [IP-filtering](../features/settings/ip-filtering.md) voor details.
+De toegang tot de organisatie kan worden beperkt tot toegestane IP-adresbereiken. De filtering geldt voor alle gebruikers (beheerders inbegrepen) en alle inlogmethoden (wachtwoord, SSO, passkey, magische link), bij het inloggen en bij elke vernieuwing van het token. Ze geldt niet voor API's, SCIM of SIEM-streaming.
+
+Dastra controleert of uw eigen IP-adres tot de toegestane bereiken behoort. Controleer uw bereiken zorgvuldig voordat u ze opslaat: een regel kan niet via de interface worden verwijderd. Zie de pagina [IP-filtering](../features/settings/ip-filtering.md) voor details.
 
 ## Machtigingslijst e-maildomein
 
-Beheerders kunnen een witte lijst van geautoriseerde e-maildomeinen definiëren (bijv. gmail.com). Ga naar **Configuratie** => **Beveiliging** => **Domeinfilters** om deze instellingen te maken.
+Organisatie-eigenaren kunnen de lijst van toegestane e-maildomeinen bepalen (bijvoorbeeld `example.com`): alleen gebruikers van wie het e-mailadres tot een van deze domeinen behoort, kunnen zich aanmelden. Ga naar **Organisatie-instellingen** > **Beveiliging**, blok **Filter de e-maildomeinen van je gebruikers**. Het kan enkele minuten duren voordat de configuratie van kracht wordt.
 
 ## Strikte isolatie tussen productie- en ontwikkelomgevingen
 
-Afgezien van een paar geautoriseerde mensen, gebruiken of benaderen applicatieontwikkelaars nooit gegevens uit de productieomgeving. Deze isolatie is strikt en kan niet worden omzeild &#x20;
+Afgezien van een paar geautoriseerde mensen, gebruiken of benaderen applicatieontwikkelaars nooit gegevens uit de productieomgeving. Deze isolatie is strikt en kan niet worden omzeild.
 
-In test- of pre-productieomgevingen gebruiken we alleen testsets die we zelf hebben gemaakt.
-
-## Regelmatige pentests
-
-Elk jaar voeren we een penetratietest uit op de volledige perimeter van de applicatie (API Rest, Authenticatieservice, Widgets, enz.).
-
-Onze methodologie voor beveiligingstests volgt de **OWASP** aanbevelingen en bestaat uit verschillende fasen, van het zoeken naar open source informatie (Reconnaissance) tot de exploitatie van de ontdekte kwetsbaarheden.
-
+In test- en pre-productieomgevingen gebruiken we alleen testgegevenssets die we zelf hebben gemaakt.

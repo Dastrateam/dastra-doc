@@ -103,7 +103,7 @@ Open het geldige antwoord en klik op deze knop: een bevestigingsvenster toont de
 
 <figure><img src="../../.gitbook/assets/questionnaire-merge-processing-dialog.png" alt="Bevestiging van de samenvoeging met de details van de doelverwerkingsactiviteit"><figcaption><p>De samenvoeging bevestigen en de verwerkingsactiviteit aanmaken op basis van de verzamelde antwoorden</p></figcaption></figure>
 
-Deze functie is vooral nuttig bij externe gegevensverzameling via een Trust Center, waar derden (leveranciers, verwerkers) informatie invullen die daarna in uw interne registers moet worden doorgevoerd. Zie [Conceptverwerkingen, incidenten, activa of contracten verzamelen](../trust-center/creation-questionnaires.md).
+Deze functie is vooral nuttig bij externe gegevensverzameling via een Trust Center, waar derden (leveranciers, verwerkers) informatie invullen die daarna in uw interne registers moet worden doorgevoerd. Zie [Projecten voor verwerkingsactiviteiten, incidenten, activa, contracten, AI-systemen of stakeholders verzamelen via een Trust Center](../trust-center/creation-questionnaires.md).
 
 ## Een vragenlijstsjabloon met AI vertalen
 

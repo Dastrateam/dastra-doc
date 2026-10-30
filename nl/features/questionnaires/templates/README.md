@@ -102,7 +102,7 @@ Sommige typen activeren een specifiek gedrag:
 * Transfer impact analyse (TIA): een vragenlijst om de risico's van een doorgifte van gegevens buiten de EU te analyseren;
 * Analyse van de wettelijke basis van verwerking (LIA): een vragenlijst over de wettelijke basis van het gerechtvaardigd belang, om te controleren dat die belangen niet zwaarder wegen dan de rechten en vrijheden van personen;
 * Training: een vragenlijst voor trainingsquizzen. U geeft het juiste antwoord aan onder de aangeboden antwoorden en toont de juiste antwoorden aan het einde van de vragenlijst;
-* de aanmaaktypen (verzamelen van een verwerkingsproject, datalek, activum, contract, AI-systeem of stakeholder): zodra de respons is gevalideerd, worden de gegevens ervan gebruikt om het bijbehorende object aan te maken of bij te werken (zie [Vragenlijsten opvolgen](../monitor.md)). Deze sjablonen voeden ook het verzamelen vanuit een Trust Center (zie [Conceptverwerkingen, incidenten, activa of contracten verzamelen](../../trust-center/creation-questionnaires.md)).
+* de aanmaaktypen (verzamelen van een verwerkingsproject, datalek, activum, contract, AI-systeem of stakeholder): zodra de respons is gevalideerd, worden de gegevens ervan gebruikt om het bijbehorende object aan te maken of bij te werken (zie [Vragenlijsten opvolgen](../monitor.md)). Deze sjablonen voeden ook het verzamelen vanuit een Trust Center (zie [Projecten voor verwerkingsactiviteiten, incidenten, activa, contracten, AI-systemen of stakeholders verzamelen via een Trust Center](../../trust-center/creation-questionnaires.md)).
 
 ### Scoreberekeningsregel voor meerkeuzevragen
 
