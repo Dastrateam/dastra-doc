@@ -8,7 +8,7 @@ description: >-
 
 ## Was ist eine generische Beziehung?
 
-Eine **generische Beziehung** ist eine einfache und benannte Verknüpfung zwischen zwei Elementen in Dastra. Sie ermöglicht es, Verbindungen zwischen Objekten zu dokumentieren, die nicht automatisch von der Plattform abgeleitet werden — zum Beispiel die Verknüpfung eines Assets mit einem Stakeholder oder eines Risikos mit einem Datenschutzvorfall.
+Eine **generische Beziehung** ist eine einfache und benannte Verknüpfung zwischen zwei Elementen in Dastra. Sie ermöglicht es, Verbindungen zwischen Objekten zu dokumentieren, die nicht automatisch von der Plattform abgeleitet werden — zum Beispiel die Verknüpfung eines Assets mit einem Stakeholder oder eines Datenschutzvorfalls mit einem Risiko.
 
 Eine Beziehung zeichnet sich aus durch:
 
@@ -27,12 +27,15 @@ Generische Beziehungen können von folgenden Elementen aus erstellt werden:
 
 * **Assets**
 * **Stakeholder**
+* **Datensätze**
 * **Sicherheitsmaßnahmen**
 * **Datenschutzvorfälle**
-* **Datensätze**
-* **Risiken**
 
-Sie werden hauptsächlich im Modul **Assets** und in den **Referenzsystemen** (Datenkartierung) verwendet, wo der Beziehungsgraph visualisiert wird.
+Das Zielobjekt kann von einer dieser Arten sein oder ein **Risiko**, wenn das Modul Risikomanagement aktiviert ist und Sie Zugriff darauf haben. Ein Risiko selbst trägt keine generischen Beziehungen.
+
+Beziehungen erscheinen auf der Seite **Data Mapping** des Moduls **Metadaten**, wo sie die Knoten des Graphen verbinden. Siehe [Metadaten](repositories/README.md).
+
+Um Verarbeitungstätigkeiten miteinander zu verknüpfen, siehe [Beziehungen zwischen Verarbeitungen erstellen](../ropa/relationships.md).
 
 ## So fügen Sie eine generische Beziehung hinzu
 
@@ -45,7 +48,7 @@ Sie werden hauptsächlich im Modul **Assets** und in den **Referenzsystemen** (D
 4. Im Dialogfenster:
    * Aktivieren Sie **"Umgekehrte Beziehung"**, wenn die Richtung umgekehrt werden soll.
    * Wählen Sie **"Bestehendes Element"**, um ein bereits in Dastra vorhandenes Element zu verknüpfen, oder **"Element erstellen"**, um eines ad hoc zu erstellen.
-   * Wählen Sie das Zielobjekt im Dropdown-Menü.
+   * Wählen Sie bei **Bestehendes Element** die Zielobjekte unter **Bitte wählen Sie die angehängten Objekte aus.** aus. Geben Sie bei **Element erstellen** den Namen des neuen Objekts ein.
    * Fügen Sie optional eine **Beziehungsbezeichnung** und eine **Zusammenfassung** hinzu.
 5. Klicken Sie auf **"Hinzufügen"**, um die Beziehung zu speichern.
 
@@ -56,7 +59,7 @@ Sie werden hauptsächlich im Modul **Assets** und in den **Referenzsystemen** (D
 Sobald die Beziehungen erstellt sind, erscheinen sie in:
 
 * Dem Panel **"Verknüpfte Elemente"** jedes Elements, das alle direkten Verknüpfungen anzeigt.
-* Dem **Knotengraph** in der Datenkartierungsansicht, in dem alle Beziehungen als verbundenes Netzwerk dargestellt werden.
+* Den Diagrammen **Kartierung der Datenflüsse zwischen den Assets** und **Kartografie der Stakeholder** der Seite **Data Mapping**, in denen sie als Netzwerk dargestellt werden.
 
 ## Weiterführende Informationen
 

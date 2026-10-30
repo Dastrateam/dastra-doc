@@ -1,38 +1,38 @@
 ---
 description: >-
   Erfahren Sie, wie Sie die personenbezogenen Daten Ihrer Organisation in Dastra
-  kartieren können
+  kartieren
 ---
 
 # Datenkartierung
 
-#### Alles beginnt mit einer Datenkartierung <a href="#id-0-label" id="id-0-label"></a>
+## Alles beginnt mit einer Datenkartierung
 
-Bevor Sie mit der Erstellung Ihrer Verarbeitungsblätter beginnen, empfehlen wir Ihnen, die Daten des Unternehmens so genau wie möglich zu kartieren. Das folgende Schema zeigt Ihnen die Struktur der Datenkartierung, die Sie einrichten können.
-
-<figure><img src="../../.gitbook/assets/assets-schema.png" alt=""><figcaption><p>Schema der Datenkartierung</p></figcaption></figure>
+Bevor Sie Ihre Verarbeitungstätigkeiten erstellen, kartieren Sie die Daten Ihrer Organisation so genau wie möglich. In der Anwendung heißt dieses Modul **Metadaten**. Die Kartierung verknüpft vier Arten von Elementen: den Herausgeber eines Assets, das Asset selbst, die darauf angewandten Sicherheitsmaßnahmen und die Datenkategorien, die es enthält und die aus Datenfeldern bestehen.
 
 Um alle personenbezogenen Daten Ihres Informationssystems zu inventarisieren, gehen Sie wie folgt vor:
 
-1. **Assets (Assets) erfassen**, die Software, Dateien, Plugins, Server, Maschinen usw. sein können
-2. **Den Herausgeber des Assets identifizieren (falls zutreffend)**: Geben Sie die Informationen des Unternehmens ein, das dieses Asset produziert. Dieser kann bei der Erstellung des Verarbeitungsverzeichnisses in den Auftragsverarbeitern aufgeführt werden.
-3. **Daten inventarisieren**: Listen Sie den oder die zugehörigen Datensätze auf (Sie können sich auf den mit dem Auftragsverarbeiter unterzeichneten DPA beziehen). Klicken Sie hier, um mehr über [die Datensätze](https://doc.dastra.eu/features/ropa/activity/datasets) zu erfahren.
-4. **Sicherheitsmaßnahmen auflisten**, die implementiert wurden
+1. **Die Assets erfassen**: Software, Dateien, Plugins, Server, Maschinen usw.
+2. **Den Herausgeber des Assets angeben, sofern zutreffend**: Geben Sie die Angaben des Unternehmens ein, das dieses Asset herstellt. Es kann dann beim Aufbau des Verarbeitungsverzeichnisses unter Ihren Auftragsverarbeitern aufgeführt werden.
+3. **Die Daten inventarisieren**: Listen Sie die zugehörigen Datenkategorien auf (Sie können sich auf den mit dem Auftragsverarbeiter unterzeichneten DPA stützen). Weitere Informationen finden Sie unter [Daten und Speicherdauer](../ropa/activity/datasets.md).
+4. **Die vorhandenen Sicherheitsmaßnahmen auflisten**.
 
-Diese Datenkartierung erleichtert die Erstellung von Verarbeitungsblättern erheblich, da sie von der Realität Ihrer Daten ausgeht.
+Diese Kartierung erleichtert die Erstellung von Verarbeitungstätigkeiten, weil Sie von der Realität Ihrer Daten ausgehen.
 
-Sie möchten diese Inventarisierung nicht durchführen oder sind der Meinung, dass die von Ihnen verwendete Software Standard ist? Wir haben an alles gedacht: Sie können Ihr Asset-Referenzsystem mithilfe unserer Bibliothek vordefinierter Vorlagen erstellen, die die Standard-Assets des Marktes enthalten (Salesforce, Jira...).
+Wenn Sie dieses Inventar nicht aufbauen möchten oder die von Ihnen genutzte Software Standard ist, erstellen Sie Ihre Asset-Liste aus der Bibliothek vordefinierter Vorlagen, die gängige Assets des Marktes enthält (Salesforce, Jira usw.).
 
-### So greifen Sie auf die Datenkartierung zu
+## Auf die Datenkartierung zugreifen
 
-1. [Greifen Sie auf Ihren Mandanten zu](../../getting-started/setup/workspace.md#auf-einen-mandanten-zugreifen)
-2. Klicken Sie in der Navigation auf das Symbol "**Metadaten**"
-3. Sie gelangen auf diese Seite:
+1. [Öffnen Sie Ihren Mandanten](../../getting-started/setup/workspace.md#auf-einen-mandanten-zugreifen).
+2. Klicken Sie im Seitenmenü auf **Metadaten**.
+3. Die Seite **Überblick** öffnet sich: eine Karte pro Referenzliste mit der Anzahl der darin enthaltenen Elemente.
 
-<figure><img src="../../.gitbook/assets/Metadaten.png" alt=""><figcaption></figcaption></figure>
+Klicken Sie dann auf die Referenzliste, die Sie öffnen möchten. Einzelheiten zu jeder Referenzliste finden Sie unter [Metadaten](repositories/README.md).
 
-Wählen Sie dann das Referenzsystem, auf das Sie zugreifen möchten.
+## Ihre Liste der Sicherheitsmaßnahmen aufbauen
 
-## Erstellen Sie Ihre Liste der Sicherheitsmaßnahmen
+Sicherheitsmaßnahmen haben eine eigene Referenzliste: Erfassen Sie sie einmal und hängen Sie sie dann im Bereich **Verbundene Sicherheitsmaßnahmen** des Asset-Formulars an Assets an. Diese Angaben stehen oft im DPA, den Sie mit dem Herausgeber unterzeichnet haben. Wählen Sie kurze Namen (Virenschutz, Application Firewall, Zugriffskontrollen), damit eine Maßnahme von einem Asset zum anderen wiederverwendet werden kann.
 
-## Wie verwaltet man seine Auftragsverarbeiter?
+## Ihre Auftragsverarbeiter verwalten
+
+Ein Auftragsverarbeiter ist ein Stakeholder Ihrer Kartierung. Erfassen Sie ihn als **Herausgeber** des Assets: Er kann dann als Auftragsverarbeiter referenziert werden, wenn das Asset in einer Verarbeitungstätigkeit genannt wird. Im Formular des Stakeholders können Sie außerdem die Unterauftragsverarbeiter des Auftragsverarbeiters erfassen, um die gesamte Unterauftragskette zu kartieren.
