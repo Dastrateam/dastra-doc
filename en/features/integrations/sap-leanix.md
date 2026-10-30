@@ -28,7 +28,7 @@ Use the root URL of your LeanIX instance, without any workspace path (e.g. `http
 
 ### Installation
 
-1. Open **Settings > Integrations** and select **SAP LeanIX**.
+1. Open **Workspace settings** > **Integrations** and select **SAP LeanIX**.
 2. On the use case **Import your SAP LeanIX applications into the Dastra asset registry**, click **Add integration**.
 3. Add a connection: enter a **Connection name**, the **Instance URL** and the **API token**, then click **Connect**. Dastra validates the token against your instance.
 

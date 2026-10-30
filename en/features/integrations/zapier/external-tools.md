@@ -25,10 +25,10 @@ This guide introduces three integration models (from lightweight to enterprise-g
 
 **Workflow example:**
 
-1. **Trigger in Dastra** → DSAR or event triggers a webhook.
+1. **Trigger in Dastra** → DSAR or event triggers a webhook (see [Webhooks](../../settings/webhooks.md)).
 2. **Zapier receives webhook** → calls external tool’s API.
 3. **Results processed** → external tool returns data to Zapier.
-4. **Update in Dastra** → Zapier uses Dastra’s REST API to attach results (`POST /requests/{id}/attachments`) or update statuses.
+4. **Update in Dastra** → Zapier uses Dastra’s REST API to attach results (`POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`, as multipart) or update statuses (`PATCH /v1/ws/{workspaceId}/DataSubjectRequests/{id}`).
 
 ✅ **Pros:** Quick to set up, no development needed.\
 ⚠️ **Cons:** Limited payload size, execution timeouts.
@@ -56,9 +56,9 @@ This guide introduces three integration models (from lightweight to enterprise-g
 
 **Workflow example:**
 
-1. **Dastra calls the external API directly** when a trigger occurs.
+1. **Dastra calls the external API directly** when a trigger occurs (see [HTTP / Custom API](../custom-http.md)).
 2. **External system executes workflow** (discovery, classification, redaction, etc.).
-3. **Results pushed back to Dastra** via API (`PATCH /requests/{id}`, `POST /requests/{id}/attachments`).
+3. **Results pushed back to Dastra** via API (`PATCH /v1/ws/{workspaceId}/DataSubjectRequests/{id}`, `POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`).
 4. **Dastra orchestrates compliance response** across systems.
 
 ✅ **Pros:** Robust, scalable, eliminates Zapier limitations.\

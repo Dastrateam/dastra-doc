@@ -28,7 +28,7 @@ Utilisez l'URL racine de votre instance LeanIX, sans chemin de workspace (ex. `h
 
 ### Installation
 
-1. Ouvrez **Paramètres > Intégrations** et sélectionnez **SAP LeanIX**.
+1. Ouvrez **Réglages espace de travail** > **Intégrations** et sélectionnez **SAP LeanIX**.
 2. Sur le cas d'usage d'import des applications, cliquez sur **Ajouter l'intégration**.
 3. Ajoutez une connexion : saisissez un **Nom de la connexion**, l'**URL de l'instance** et le **Jeton d'API**, puis cliquez sur **Connecter**. Dastra valide le jeton auprès de votre instance.
 

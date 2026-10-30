@@ -8,7 +8,7 @@ Cette page décrit les concepts communs à toutes les intégrations natives. Pou
 
 ### Le magasin d'intégrations
 
-Ouvrez **Paramètres > Intégrations** dans votre workspace. Le catalogue liste toutes les intégrations disponibles, filtrables par catégorie et par objet Dastra ciblé, avec les onglets **Toutes / Installées**.
+Ouvrez **Réglages espace de travail** > **Intégrations** dans votre workspace. Le catalogue liste toutes les intégrations disponibles, filtrables par catégorie et par objet Dastra ciblé, avec les onglets **Tout** et **Installée**.
 
 <!-- 📸 Capture : le catalogue des intégrations avec les filtres latéraux et les onglets Toutes/Installées -->
 
@@ -37,13 +37,17 @@ Depuis ce panneau vous pouvez **Tester** une connexion (un test réussi réiniti
 Pour créer une connexion, cliquez sur **Ajouter une connexion** :
 
 1. Donnez-lui un **Nom de la connexion** (ex. *Instance de production*) — facultatif, mais utile quand vous en avez plusieurs.
-2. Choisissez la **Méthode d'authentification** quand le connecteur en propose plusieurs : **Basic (identifiants / clé d'API)** ou **OAuth**.
+2. Choisissez la **Méthode d'authentification** quand le connecteur en propose plusieurs : **Basic (identifiants / clé d'API)** ou **OAuth**. L'intégration [HTTP / Custom API](custom-http.md) propose aussi **Clé d'API / jeton** et **OAuth 2.0 (client credentials)** : avec cette dernière méthode, Dastra s'authentifie avec son propre identifiant et secret client, sans connexion d'utilisateur, et renouvelle les jetons d'accès automatiquement.
 3. Renseignez les champs demandés par le connecteur (URL de l'instance, jeton d'API…).
 4. Cliquez sur **Connecter** — ou **Enregistrer et se connecter** pour OAuth, qui vous redirige vers l'outil externe pour autoriser Dastra.
 
 <!-- 📸 Capture : la modale de création de connexion (ex. SAP LeanIX ou ServiceNow) avec le nom, la méthode et les champs d'identification -->
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Création d'une connexion</p></figcaption></figure>
+
+{% hint style="info" %}
+**Connexion OAuth révoquée.** Quand l'autorisation d'une connexion OAuth a été révoquée ou a expiré, Dastra le détecte à la première utilisation et affiche une notification d'erreur d'intégration avec le bouton **Réautoriser**. Ce bouton ouvre le panneau des connexions de l'intégration. Cliquez sur **Réautoriser** sur la connexion concernée pour relancer l'autorisation : la connexion et les cas d'usage qui l'utilisent sont conservés.
+{% endhint %}
 
 {% hint style="info" %}
 **Connexions utilisées par des règles de workflow.** Pour l'intégration [HTTP / Custom API](custom-http.md), une connexion n'est pas rattachée à un cas d'usage : chaque action **Envoyer une requête HTTP** d'une règle de workflow choisit directement la connexion à utiliser, et plusieurs règles peuvent partager la même. Le panneau des connexions indique combien de règles utilisent chacune d'elles. Supprimer une connexion désactive les règles qui en dépendent. Voir aussi [Envoyer une requête HTTP](../settings/workflow-rules.md#envoyer-une-requete-http) dans les règles de workflow.
@@ -83,7 +87,7 @@ Les cas d'usage d'import comportent une section **Mapping des champs** : pour ch
 
 <!-- 📸 Capture : l'éditeur de mapping avec quelques lignes mappées, une ligne « Comportement par défaut » et le bouton « Mapper un champ » -->
 
-<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt=""><figcaption><p>L'éditeur de mapping des champs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt="L'éditeur de mapping des champs"><figcaption><p>L'éditeur de mapping des champs</p></figcaption></figure>
 
 #### Options avancées
 
@@ -91,6 +95,8 @@ Chaque ligne dispose d'un panneau **Avancé** avec deux options :
 
 * **Valeur par défaut** — écrite lorsqu'il n'y a pas de champ source, ou en repli pour les valeurs sources non transcodées. Pour les champs de type date, vous pouvez choisir **Aujourd'hui** ou une date relative (ex. *dans 30 jours*), résolue au moment de la création de l'enregistrement.
 * **Transcodage des valeurs** — pour les listes fermées (statuts, étapes de cycle de vie…) : associez chaque valeur source à une valeur Dastra. Les valeurs non mappées prennent la valeur par défaut.
+
+Un champ à liste fermée relié à un champ source doit avoir son transcodage défini : tant que ce n'est pas fait, sa ligne est signalée par un avertissement et la configuration ne peut pas être enregistrée.
 
 <!-- 📸 Capture : le panneau Avancé d'un champ mappé montrant Valeur par défaut et Transcodage des valeurs -->
 

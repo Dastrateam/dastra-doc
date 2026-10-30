@@ -20,7 +20,7 @@ The HTTP / Custom API integration lets your **workflow rules call any platform t
 
 ### Installation
 
-1. In Dastra, open **Settings > Integrations** and select **HTTP / Custom API**.
+1. In Dastra, open **Workspace settings** > **Integrations** and select **HTTP / Custom API**.
 2. Activate the use case: there is no credential to enter at this stage — the switch simply enables the action for the workspace.
 3. Click **Manage connections** and add one connection per target platform. A connection holds one way to authenticate:
    * **API key / token** — the key, the header that carries it (`Authorization` by default) and an optional value prefix (`Bearer ` by default when the header is `Authorization`). For a header such as `X-API-Key`, leave the prefix empty.

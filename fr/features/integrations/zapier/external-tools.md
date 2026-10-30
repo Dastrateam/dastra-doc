@@ -25,10 +25,10 @@ Ce guide présente trois modèles d’intégration (du plus léger au plus robus
 
 **Exemple de workflow :**
 
-1. **Déclencheur dans Dastra** → un DSAR ou un événement envoie un webhook.
+1. **Déclencheur dans Dastra** → un DSAR ou un événement envoie un webhook (voir [Webhooks](../../settings/webhooks.md)).
 2. **Zapier reçoit le webhook** → appelle l’API d’un outil externe.
 3. **Résultats traités** → l’outil externe renvoie les données à Zapier.
-4. **Mise à jour dans Dastra** → Zapier utilise l’API REST de Dastra pour attacher les résultats (`POST /requests/{id}/attachments`) ou mettre à jour le statut.
+4. **Mise à jour dans Dastra** → Zapier utilise l’API REST de Dastra pour attacher les résultats (`POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`, en multipart) ou mettre à jour le statut (`PATCH /v1/ws/{workspaceId}/DataSubjectRequests/{id}`).
 
 ✅ **Avantages :** rapide à mettre en place, pas de développement nécessaire.\
 ⚠️ **Limites :** taille des payloads et délais d’exécution limités.
@@ -56,9 +56,9 @@ Ce guide présente trois modèles d’intégration (du plus léger au plus robus
 
 **Exemple de workflow :**
 
-1. **Dastra appelle directement l’API externe** lorsqu’un déclencheur survient.
+1. **Dastra appelle directement l’API externe** lorsqu’un déclencheur survient (voir [HTTP / Custom API](../custom-http.md)).
 2. **Le système externe exécute le traitement** (découverte, classification, redaction, etc.).
-3. **Les résultats sont renvoyés à Dastra** via API (`PATCH /requests/{id}`, `POST /requests/{id}/attachments`).
+3. **Les résultats sont renvoyés à Dastra** via API (`PATCH /v1/ws/{workspaceId}/DataSubjectRequests/{id}`, `POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`).
 4. **Dastra orchestre la réponse de conformité** entre plusieurs systèmes.
 
 ✅ **Avantages :** robuste, évolutif, sans limitations de Zapier.\
