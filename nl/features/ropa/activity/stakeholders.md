@@ -83,9 +83,7 @@ De operationele verantwoordelijke (in het Engels Operational Data Controller of 
 
 Voeg deze in Dastra toe als stakeholder met de titel **Operationele Verantwoordelijke**.
 
-### Rol van de operationele verantwoordelijke in de AVG-governance
-
-De operationele verantwoordelijke is geen begrip uit de AVG, maar sommige organisaties gebruiken het intern voor een persoon met specifieke operationele verantwoordelijkheden bij het beheer van verwerkingsactiviteiten.
+**Rol van de operationele verantwoordelijke in de AVG-governance**\nDe operationele verantwoordelijke is geen begrip uit de AVG, maar sommige organisaties gebruiken het intern voor een persoon met specifieke operationele verantwoordelijkheden bij het beheer van verwerkingsactiviteiten.
 
 ### Uitvoering van gegevensverwerking
 
@@ -111,7 +109,7 @@ De operationele verantwoordelijke is geen begrip uit de AVG, maar sommige organi
 
 * De operationele verantwoordelijke draagt bij aan het bijwerken van het verwerkingsregister, documenteert de verwerkingen waarvoor hij of zij verantwoordelijk is en zorgt dat de relevante informatie correct aan de verwerkingsverantwoordelijke of de FG wordt doorgegeven.
 
-### Verschil tussen de verwerkingsverantwoordelijke en de operationele verantwoordelijke
+**Verschil tussen de verwerkingsverantwoordelijke en de operationele verantwoordelijke**
 
 | Criterium | Verwerkingsverantwoordelijke | Operationele verantwoordelijke |
 | --- | --- | --- |

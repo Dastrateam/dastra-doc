@@ -1,12 +1,12 @@
 ---
 description: >-
-  In deze sectie lijst u de toepassingen of software op die als opslagmedium
-  voor persoonsgegevens dienen.
+  Lijst de activa, binnen of buiten de organisatie, op die de
+  verwerkingsactiviteit ondersteunen.
 ---
 
 # Activa
 
-Hier lijst u de activa op, binnen of buiten de organisatie (toepassingen, software, middelen, gebouwen enzovoort), die de uitvoering van de verwerkingsactiviteit ondersteunen en waarmee persoonsgegevens worden opgeslagen.
+Hier lijst u de activa op, binnen of buiten de organisatie (toepassingen, software, middelen, gebouwen enzovoort), die de uitvoering van de verwerkingsactiviteit ondersteunen.
 
 _Gebruikt u bijvoorbeeld crm-software, voeg die dan aan deze lijst toe._
 
@@ -14,7 +14,7 @@ Deze informatie is niet verplicht voor het register, maar met haar brengt u de t
 
 Het doel is u te helpen de gegevensdragers te beheersen en uw activa te koppelen aan uw gegevenscatalogus.
 
-Zo kunt u snel de soorten gegevens opgeven die met deze verwerkingsactiviteit worden verwerkt.
+Zo kunt u de soorten gegevens opgeven die met deze verwerkingsactiviteit worden verwerkt.
 
 NB: activa zijn niet noodzakelijk gekoppeld aan verwerkers. Het kan bijvoorbeeld gaan om software die op uw eigen server is geïnstalleerd, zonder enige tussenkomst van de uitgever bij de verwerking van persoonsgegevens.
 

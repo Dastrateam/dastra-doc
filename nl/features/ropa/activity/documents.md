@@ -19,7 +19,7 @@ In de praktijk komt deze documentatie vooral tot uiting in het verwerkingsregist
 * het opzetten van een intern mechanisme voor klachtenbehandeling;
 * het ontwikkelen van interne procedures voor een doeltreffend beheer en een doeltreffende melding van datalekken;
 * het uitvoeren van gegevensbeschermingseffectbeoordelingen in bepaalde omstandigheden;
-* de invoering en het toezicht op controleprocedures om te waarborgen dat alle maatregelen op papier bestaan, daadwerkelijk worden uitgevoerd en in de praktijk werken (interne of externe audits enzovoort).
+* de invoering en het toezicht op controleprocedures om te waarborgen dat de maatregelen in de praktijk worden toegepast en doeltreffend zijn en geen dode letter blijven (interne of externe audits enzovoort).
 
 In deze ruimte kunt u ook elk document bewaren dat nuttig is om de verwerkingsactiviteit te begrijpen, de opleidingsnotities en, indien nodig, de contracten die de verwerkingsactiviteit omkaderen.
 

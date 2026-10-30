@@ -61,9 +61,9 @@ Frisheid wordt alleen weergegeven voor gepubliceerde verwerkingsactiviteiten die
 
 Een verwerkingsactiviteit die nog een concept is, wordt in de lijst weergegeven als **niet gepubliceerd** en in haar dossier als **In afwachting van publicatie**.
 
-### In het dossier van de verwerkingsactiviteit
+### Op de pagina van een verwerkingsactiviteit
 
-Op een breed scherm staat de frisheidsindicator bovenaan het rechterpaneel van het dossier van de verwerkingsactiviteit. Hij toont de balk **Frisheid**, die korter wordt naarmate de volgende beoordelingsdatum nadert, de toestand en haar kleur, een link **Beoordeling** en het aantal resterende of te late dagen.
+Op een breed scherm staat de frisheidsindicator bovenaan het rechterpaneel van de pagina van de verwerkingsactiviteit. Hij toont de balk **Frisheid**, die korter wordt naarmate de volgende beoordelingsdatum nadert, de toestand en haar kleur, een link **Beoordeling** en het aantal resterende of te late dagen.
 
 Op een kleiner scherm is het rechterpaneel verborgen: de toestand (bijvoorbeeld **Fris**) wordt weergegeven in de kop van het dossier, naast de indicatoren **Voortgang**, **Kwaliteit** en **Gevoeligheid**. Klik erop om het venster **Beoordeling** te openen.
 
@@ -81,7 +81,7 @@ U kunt ook de kolom **Voorlopige beoordelingsdatum** weergeven, die de volgende 
 
 U kunt een verwerkingsactiviteit op elk moment beoordelen, zonder te wachten op haar volgende beoordelingsdatum. Voor beoordelen is schrijftoegang tot het verwerkingsregister vereist. Open het venster **Beoordeling**:
 
-* vanuit het dossier van de verwerkingsactiviteit: klik op de frisheidsindicator, op de link **Beoordeling** van het rechterpaneel, of op **Beoordeling** in het menu naast de knop **Opslaan**;
+* vanuit de pagina van de verwerkingsactiviteit: klik op de frisheidsindicator, op de link **Beoordeling** van het rechterpaneel, of op **Beoordeling** in het menu naast de knop **Opslaan**;
 * vanuit de lijst: klik op de cel van de kolom **Frisheid**.
 
 Om meerdere verwerkingsactiviteiten tegelijk te beoordelen, selecteert u ze in de lijst en kiest u **Beoordeling** bij **Kies een bulkactie**.

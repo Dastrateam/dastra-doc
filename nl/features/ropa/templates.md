@@ -49,7 +49,7 @@ Open het menu van de knop **Maak een gegevensverwerking** (de pijl rechts ervan)
 
 Kies in het paneel dat opent de bron bij **Gegevensbron van de bibliotheek** en de organisatie-eenheid bij **Kies de organisatie-eenheid van bestemming**, vink een of meer sjablonen aan en klik op **Toevoegen**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-01-30-171155.png" alt="Paneel Maak vanuit de bibliotheek met meerdere geselecteerde sjablonen"><figcaption><p>Meerdere sjablonen selecteren in de bibliotheek</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-7.png" alt="Paneel Maak vanuit de bibliotheek met meerdere geselecteerde sjablonen"><figcaption><p>Meerdere sjablonen selecteren in de bibliotheek</p></figcaption></figure>
 
 Met de knop **Details** bekijkt u een sjabloon vooraf.
 

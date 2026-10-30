@@ -12,13 +12,13 @@ In deze weergave verkent, analyseert en begrijpt u de verbanden tussen de items 
 
 ## De gegevenskaart van het register weergeven
 
-Ga naar de module **Register voor gegevensverwerking** en klik op het tabblad **In kaart brengen** boven uw lijst met verwerkingsactiviteiten om de gegevenskaart van uw register te bekijken.
+Klik in het linkermenu op **Gegevensverwerking** en daarna op **In kaart brengen** om de gegevenskaart van uw register te bekijken.
 
-<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Tabblad In kaart brengen van de module Register voor gegevensverwerking"><figcaption><p>Tabblad In kaart brengen boven de verwerkingsactiviteiten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Item In kaart brengen in het menu Gegevensverwerking"><figcaption><p>Het item In kaart brengen van het menu Gegevensverwerking</p></figcaption></figure>
 
 U ziet dan de gegevenskaart van uw register.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-10-144614.png" alt="Voorbeeld van een gegevenskaart van het register"><figcaption><p>Voorbeeld van een kaart</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-2.png" alt="Voorbeeld van een gegevenskaart van het register"><figcaption><p>Voorbeeld van een kaart</p></figcaption></figure>
 
 Met de werkbalk boven de kaart kunt u:
 

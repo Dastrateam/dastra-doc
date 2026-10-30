@@ -92,6 +92,29 @@ Vink in de weergave **Tabel** de vakjes links van de verwerkingsactiviteiten aan
 * **Delen**
 * **Verplaats naar de prullenbak**
 
+## Het register opvolgen met rapportages
+
+Klik in het linkermenu op **Gegevensverwerking** en daarna op **Rapportage** om de statistieken van uw register weer te geven.
+
+<figure><img src="../../.gitbook/assets/ropa-readme-2.png" alt="Rapportagepagina van het verwerkingsregister met de indicatortegels en widgets"><figcaption><p>De rapportagepagina van het register</p></figcaption></figure>
+
+De pagina toont:
+
+* indicatortegels voor het aantal verwerkingsactiviteiten en voor de indicatoren **Algemene progressie**, **Kwaliteit** en **Gevoeligheid**;
+* de **Gemiddelde indicatoren** en de **Indicatoren verdeling**;
+* het aantal verwerkingsactiviteiten per stap van de **Werkstroom**, per **Legale basis**, per categorie **Betrokkene**, per verwerker en per organisatie-eenheid;
+* het aandeel verwerkingsactiviteiten met gegevensdoorgiften, de landen die de widget **Data doorgiften** weergeeft en de **DPIA**-status;
+* de evolutie van het aantal verwerkingsactiviteiten (**Aanmaakdatum**) en de **Activiteitenlogboeken**.
+
+Gebruik de selector voor de organisatie-eenheid, de filters en de knoppen **Alles**, **Verwerkingsverantwoordelijke** en **Verwerker** om de statistieken te beperken. Klik op **Afdrukken** om de pagina af te drukken.
+
+## Impactanalyses en privacy by design-aanvragen
+
+Twee andere items van het menu **Gegevensverwerking** geven toegang tot de vragenlijsten die aan uw verwerkingsactiviteiten zijn gekoppeld. Ze worden weergegeven wanneer u toegang hebt tot vragenlijsten.
+
+* **Impactanalyses** toont de vragenlijsten [DPIA](../questionnaires/types/dpia.md), [LIA](../questionnaires/types/lia.md) en [TIA](../questionnaires/types/tia.md) van de werkruimte. Klik op **Plan een audit** om er een aan te maken.
+* **Privacy by design** toont de vragenlijsten voor aanvragen tot het aanmaken van een verwerking. Ze [verzamelen projecten voor verwerkingsactiviteiten](../trust-center/creation-questionnaires.md) via een Trust Center: zodra een antwoord is gevalideerd, kunnen de gegevens ervan een verwerkingsactiviteit worden.
+
 ## Meer informatie
 
 {% content-ref url="../../gdpr/concepts/ropa.md" %}

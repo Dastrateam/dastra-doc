@@ -16,9 +16,9 @@ In een groep van bedrijven koppelt u bijvoorbeeld een verwerkingsactiviteit van 
 
 ## Een relatie toevoegen
 
-Klik in een verwerkingsactiviteit op de knop **Relaties** in de werkbalk boven aan de activiteit. De knop toont het aantal bestaande relaties.
+Klik op de pagina van een verwerkingsactiviteit op de knop **Relaties** in de werkbalk boven aan de pagina. De knop toont het aantal bestaande relaties.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103430.png" alt="Paneel Relaties van een verwerkingsactiviteit"><figcaption><p>Het paneel Relaties van een verwerkingsactiviteit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-1.png" alt="Paneel Relaties van een verwerkingsactiviteit"><figcaption><p>Het paneel Relaties van een verwerkingsactiviteit</p></figcaption></figure>
 
 Het paneel **Relaties** toont de bestaande relaties, gegroepeerd per type, met de organisatie-eenheid van elke gekoppelde verwerkingsactiviteit en de datum waarop de relatie is aangemaakt. Klik op een verwerkingsactiviteit om die in een nieuw tabblad te openen, of klik op het prullenbakpictogram om de relatie te verwijderen.
 
@@ -30,7 +30,7 @@ Om een relatie aan te maken klikt u op **Voeg een relatie toe** en doet u daarna
 4. Vul voor een nieuwe verwerkingsactiviteit de **Naam van de nieuwe verwerking** in, schakel zo nodig **Activiteit als verwerker** in en selecteer de organisatie-eenheid.
 5. Klik op **Toevoegen**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103745.png" alt="Venster Voeg een relatie toe"><figcaption><p>Het venster Voeg een relatie toe</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-2.png" alt="Venster Voeg een relatie toe"><figcaption><p>Het venster Voeg een relatie toe</p></figcaption></figure>
 
 U kunt in één keer relaties met meerdere verwerkingsactiviteiten aanmaken:
 

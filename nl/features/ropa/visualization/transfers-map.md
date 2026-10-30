@@ -12,9 +12,9 @@ In deze weergave verkent, analyseert en begrijpt u de geografische doorgiften va
 
 ## De doorgiftekaart weergeven
 
-Ga naar de module **Register voor gegevensverwerking** en klik op het tabblad **Doorgiften** boven uw lijst met verwerkingsactiviteiten om de doorgiftekaart te bekijken.
+Klik in het linkermenu op **Gegevensverwerking** en daarna op **Doorgiften** om de doorgiftekaart te bekijken.
 
-<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Tabblad Doorgiften van de module Register voor gegevensverwerking"><figcaption><p>Tabblad Doorgiften boven de verwerkingsactiviteiten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Item Doorgiften in het menu Gegevensverwerking"><figcaption><p>Het item Doorgiften van het menu Gegevensverwerking</p></figcaption></figure>
 
 U ziet dan de doorgiftekaart. Met de knoppen in de werkbalk zijn drie weergaven beschikbaar:
 
@@ -22,9 +22,11 @@ U ziet dan de doorgiftekaart. Met de knoppen in de werkbalk zijn drie weergaven 
 * **Kaartweergave**: de doorgiften op een platte wereldkaart;
 * **Lijstweergave**: de doorgiften als tabel.
 
-In de kaartweergaven staat de lijst met doorgiften naast de kaart. Met de pijlknop aan de rand van de kaart verbergt of toont u die lijst. Met de filters in de werkbalk beperkt u de weergegeven doorgiften, en met het menu naast de knop **Een gegevensdoorgifte toevoegen buiten de EU/EER** drukt u de kaart af of exporteert u de doorgiften.
+In de kaartweergaven staat de lijst met doorgiften naast de kaart. Met de pijlknop aan de rand van de kaart verbergt of toont u die lijst. Met de filters in de werkbalk beperkt u de weergegeven doorgiften. Schakel **Sub-verwerkers weergeven** in of uit (standaard ingeschakeld) om de doorgiften van volgende verwerkers op te nemen of uit te sluiten. Met het menu naast de knop **Een gegevensdoorgifte toevoegen buiten de EU/EER** drukt u de kaart af of exporteert u de doorgiften.
 
 <figure><img src="../../../.gitbook/assets/ropa-transfers-map-2.png" alt="Voorbeeld van een kaart van gegevensdoorgiften"><figcaption><p>Voorbeeld van gegevensdoorgiften</p></figcaption></figure>
+
+Op de kaart worden landen gekleurd volgens hun status: **Europese landen**, **Voldoende land**, **Gedeeltelijk geschikt land** en **Geen geschikt land**.
 
 {% hint style="info" %}
 Klik op het punt van een land om de details van de doorgiften ervan te openen.
