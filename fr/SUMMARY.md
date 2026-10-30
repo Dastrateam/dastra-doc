@@ -301,7 +301,7 @@
 
 * [Foire aux questions](other/faq.md)
 * [Accessibilité](other/accessibility.md)
-* [Guide AIPD - par pays](other/dpia-by-country.md)
+* [Guide PIA - par pays](other/dpia-by-country.md)
 * [Problèmes connus](other/known-problems.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
 * [Webinaires](https://www.dastra.eu/fr/guide/categories/webinar/26)

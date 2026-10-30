@@ -1,75 +1,71 @@
 ---
-description: Foire aux questions générales sur le produit
+description: >-
+  Réponses aux questions fréquentes sur l'utilisation de Dastra : logos,
+  import d'un registre existant, suppression d'un traitement, éléments
+  introuvables et stockage local du navigateur.
 ---
 
 # Foire aux questions
 
-## Comment afficher le nom des modules sous les icones dans Dastra ?
-
-Vous souhaitez afficher le nom des modules sous chaque icône à gauche de l'écran ? Cela dépend du niveau de zoom du navigateur.
-
-Baissez le niveau de zoom et vous verrez apparaitre les noms !
-
 ## Comment modifier le logo de l'organisation dans Dastra ?
 
-Il n'est pas possible de modifier le logo de l'organisation puisqu'il n'y en a pas. Le logo qui s'affiche au dessus du nom de l'organisation en haut à droite est l'image associée au compte utilisateur qui se paramètre au niveau des paramètres du profil.
+L'organisation n'a pas de logo. L'image affichée en haut à droite de l'écran, à côté de votre nom et du nom de l'organisation, est l'image de votre compte utilisateur. Pour la modifier, ouvrez le menu de votre profil en haut à droite, cliquez sur **Profil utilisateur** et envoyez une nouvelle image.
 
-Avec cette image, le logo de l'espace de travail est également modifiable.
+Pour personnaliser le logo utilisé dans les exports, voir la question suivante.
 
 ## Comment modifier le logo de l'espace de travail dans Dastra ?
 
-Vous pouvez le modifier en vous rendant dans les réglages de l'espace de travail dans la rubrique Design et marque. Vous pourrez également personnaliser certains éléments de l'export en format word et PDF (police de caractère et couleurs).
+Ouvrez les paramètres de l'espace de travail, puis la rubrique **Design & marque**. Vous pouvez y envoyer un logo carré et un logo rectangle, et choisir la **Couleur de la marque** et la **Couleur d'accentuation**. Ces éléments adaptent les exports de Dastra à votre charte graphique.
 
-## Comment importer les données de mon registre des traitements sur le format de la CNIL ?
+Cette rubrique est réservée aux propriétaires de l'organisation.
 
-Vous avez un registre des traitements existant sur le format de la CNIL ? Vous pouvez bien évidemment l'importer dans Dastra. Cela va nécessiter la réalisation de plusieurs actions :
+## Comment importer les données de mon registre des traitements au format de la CNIL ?
 
-1 : importer les noms des traitements
+Vous pouvez importer dans Dastra un registre des traitements existant au format de la CNIL. L'import se fait en plusieurs étapes :
 
-2 : importer les jeux de données
+1. Importez les noms des traitements.
+2. Importez les jeux de données.
+3. Importez les acteurs.
+4. Importez les mesures de sécurité.
+5. Créez les liens entre ces objets dans les traitements.
 
-3 : importer les acteurs
-
-4 : importer les mesures de sécurité
-
-5 : créer les liens entre les objets dans les traitements
-
-Si vous souhaitez qu'on vous aide à importer votre registre existant, n'hésitez pas à nous solliciter. Ce sera l'occasion de le revoir !
+Pour l'import des traitements, voir [Exporter / importer le registre](../features/ropa/export-import.md). Pour être accompagné dans l'import de votre registre, [contactez le support](../getting-started/support/request.md).
 
 ## Comment supprimer un traitement ?
 
-Afin d'éviter les mauvaises surprises, nous avons mis en place un garde-fou. La suppression se fait en deux étapes.
+La suppression se fait en deux étapes, pour éviter les suppressions par erreur. Placez d'abord le traitement dans la corbeille avec **Déplacer dans la corbeille**. Affichez ensuite la corbeille avec **Voir la corbeille** dans les filtres, puis choisissez **Supprimer** pour le supprimer définitivement, ou **Restaurer** pour le remettre dans le registre.
+
+La procédure complète est décrite dans [Questions fréquentes](../features/ropa/faq.md#comment-supprimer-un-traitement) du registre des traitements.
 
 ## Je ne retrouve pas des éléments, que puis-je faire ?
 
-Si vous ne retrouvez pas un élément auquel vous devriez avoir accès, il se peut qu'il ne soit pas visible pour les raisons suivantes
+Si vous ne retrouvez pas un élément auquel vous devriez avoir accès, il peut être masqué pour l'une des raisons suivantes :
 
-1.  Un filtre est présent et restreint l'affichage comme ci-dessous avec le "(1)". Cliquez sur Effacez les filtres\
-    <br>
+1. Un filtre est actif et restreint l'affichage. Le nombre de filtres actifs apparaît entre parenthèses sur le bouton, par exemple « (1) ». Cliquez sur **Effacer les filtres**.
 
-    <figure><img src="../.gitbook/assets/breach-filters-show-archives.png" alt=""><figcaption></figcaption></figure>
-2. L'objet est lié à une unité organisationnelle à laquelle vous n'avez pas accès ou pour laquelle vous n'avez pas les droits nécessaires. Contactez le gestionnaire de votre espace de travail.
-3.  L'objet est archivé et ne s'affiche donc plus dans la liste par défaut. Vous pouvez choisir d'afficher les archives dans le menu de sélection des filtres.<br>
+   <figure><img src="../.gitbook/assets/other-faq-1.png" alt="Liste du registre des traitements avec un filtre actif et le bouton Effacer les filtres (1)"><figcaption><p>Un filtre actif restreint la liste</p></figcaption></figure>
+2. L'élément est lié à une unité organisationnelle à laquelle vous n'avez pas accès, ou pour laquelle vous n'avez pas les droits nécessaires. Contactez le gestionnaire de votre espace de travail.
+3. L'élément est dans la corbeille et n'apparaît donc plus dans la liste par défaut. Cliquez sur **Filtres** et cochez **Voir la corbeille**.
 
-    <figure><img src="../.gitbook/assets/register-processing-list-filter-active.png" alt=""><figcaption></figcaption></figure>
-4. Enfin des paramètres incorrects sont enregistrés dans votre navigateur. Pour vérifier, vous pouvez essayer la navigation privée. Si la navigation privée règle le problème, référez vous à la procédure ci-dessous qui permet de vider le stockage local de votre navigateur.
+   <figure><img src="../.gitbook/assets/ropa-faq-3.png" alt="Panneau Filtres du registre avec l'option Voir la corbeille"><figcaption><p>Affichage de la corbeille</p></figcaption></figure>
+4. Des paramètres incorrects sont enregistrés dans votre navigateur. Pour le vérifier, ouvrez Dastra dans une fenêtre de navigation privée. Si le problème disparaît, supprimez le stockage local de votre navigateur avec la procédure de la question suivante.
 
-## Comment supprimer le localstorage ?
+## Comment supprimer le stockage local du navigateur ?
 
-Vous avez un problème sur l'application ? Parfois, on peut vous demander de supprimer le localstorage. Il s'agit d'éléments de stockage du navigateur web qui permettent d'utiliser l'application et de se souvenir des paramètres choisis (les filtres par exemple).
+Le stockage local (localStorage) regroupe des données que le navigateur conserve pour que Dastra fonctionne et se souvienne de vos réglages, comme vos filtres. En cas de problème d'affichage, le support peut vous demander de le supprimer.
 
-Voici la procédure :
+Vous pouvez aussi utiliser le bouton **Réinitialiser les données de préférences** de votre profil utilisateur, décrit dans [Problèmes connus](known-problems.md).
 
 ### Google Chrome
 
-1. Menu « sandwich » / plus d’outils / Outils de développement (F12)
-2. Menu application / storage / local storage
-3. Clic droit : « clear »
-4. Actualiser la page (F5)
+1. Ouvrez le menu du navigateur, puis **Plus d'outils** > **Outils de développement** (F12).
+2. Ouvrez l'onglet **Application**, puis **Stockage** > **Stockage local**.
+3. Faites un clic droit sur l'adresse de Dastra et choisissez **Effacer**.
+4. Actualisez la page (F5).
 
 ### Mozilla Firefox
 
-1. Menu « sandwich » / développement web / Outils de développement (F12)
-2. Menu stockage / stockage local
-3. Clic droit : « tout supprimer »
-4. Actualiser la page (F5)
+1. Ouvrez le menu du navigateur, puis **Plus d'outils** > **Développement web** > **Outils de développement** (F12).
+2. Ouvrez l'onglet **Stockage**, puis **Stockage local**.
+3. Faites un clic droit sur l'adresse de Dastra et choisissez **Tout supprimer**.
+4. Actualisez la page (F5).
