@@ -1,108 +1,119 @@
 ---
-description: Leer hoe u Dastra koppelt aan uw favoriete hulpmiddel voor gegevensanalyse.
+description: >-
+  Koppel uw aangepaste Dastra-rapporten aan Power BI, Google Looker of Tableau,
+  met gegevens die automatisch worden ververst.
 ---
 
 # Integratie met hulpmiddelen voor gegevensanalyse (BI)
 
 {% hint style="info" %}
-Om deze functie te gebruiken, moet uw abonnement het Enterprise-plan omvatten.
+Om deze functie te gebruiken, moet uw abonnement het plan **Enterprise** omvatten en moet u de machtiging **Geavanceerde configuratie** hebben.
 {% endhint %}
 
-Met Dastra importeert u [aangepaste rapporten](README.md) in uw favoriete BI-hulpmiddel (Power BI, Google Looker, Tableau Software enzovoort). Zo benut u de mogelijkheden van BI-hulpmiddelen om gegevens diepgaand te analyseren, terwijl de rapporten automatisch worden ververst.
+Met Dastra importeert u [aangepaste rapporten](README.md) in uw BI-tool (Power BI, Google Looker, Tableau Software enzovoort). U analyseert de gegevens grondig met uw tool en de rapporten worden automatisch ververst.
 
 ## Instellen in Dastra
 
-Ga naar de module voor aangepaste rapporten, open een rapport en klik op de knop **Connect BI Tools**.
+1. Open in de module **Rapportages** een rapport en klik op **Connect BI Tools**.
+2. Klik in het venster dat opent op **Create connect link**. De link wordt naar uw klembord gekopieerd.
 
-Er opent een venster. Klik op **Create connect link**.
+Het venster toont daarna twee tabbladen, afhankelijk van hoe uw tool verbinding maakt:
 
-Kopieer de gegenereerde link.
+* **Link**: het openbare adres van het rapport, dat u in de tool plakt. Iedereen die deze link heeft, heeft toegang tot de ruwe gegevens van het rapport.
+* **Authentication (Bearer)**: de **Service url** en het **Authentication token**, die u afzonderlijk invoert. Uw tool stuurt het token mee in de HTTP-header `Authorization: Bearer <token>`. Geef de voorkeur aan dit tabblad wanneer uw tool een header kan toevoegen: het adres alleen geeft dan geen toegang tot de gegevens.
+
+<figure><img src="../../.gitbook/assets/reports-bi-tools-1.png" alt="Het verbindingsvenster voor BI-tools met de tabbladen Link en Authentication (Bearer)"><figcaption><p>Het verbindingsvenster voor BI-tools</p></figcaption></figure>
 
 {% hint style="warning" %}
-Geef de gegenereerde link aan niemand door. Ze geeft toegang tot de ruwe gegevens van het rapport.
+Geef de link of het token niet door aan personen die de gegevens van het rapport niet mogen zien.
 {% endhint %}
 
-## Power BI
+Om de toegang af te sluiten, klikt u in hetzelfde venster op **Verbinding verwijderen** en bevestigt u. De link en het token werken dan niet meer: u kunt een nieuwe verbinding aanmaken met **Create connect link**.
 
-1. Open Power BI Desktop:
-   * Start Power BI Desktop op uw computer.
-2. Maak verbinding met de gegevensbron Web:
+## Instellen in de BI-tool
+
+### Microsoft Power BI
+
+1. **Open Power BI Desktop :**
+   * Start Power BI Desktop op uw machine.
+2. **Maak verbinding met de gegevensbron Web:**
    * Ga in Power BI Desktop naar het tabblad Home.
-   * Klik op Get Data en selecteer **Web**.
-3. Voer de URL van de JSON-link in:
+   * Klik op Get Data en selecteer daarna **Web**.
+3. **Voer de URL van de JSON-link in:**
    * Voer in het venster Get Data Web dat verschijnt de URL van uw JSON-bestand of API in (als u een JSON-deellink hebt).
-   * Controleer of de URL verwijst naar een JSON-bestand of een API die JSON-gegevens teruggeeft.
+   * Zorg ervoor dat de URL naar een JSON-bestand of een API verwijst die JSON-gegevens teruggeeft.
    * Klik op OK.
-4. Authenticatie (indien vereist):
-   * Als de URL authenticatie vereist (bijvoorbeeld omdat hij met een wachtwoord of API-sleutel is beveiligd), vraagt Power BI u zich aan te melden.
-   * Selecteer het juiste authenticatietype (bijvoorbeeld Anonymous, OAuth2, API Key) en vul zo nodig uw inloggegevens in.
-5. Toegang tot de JSON-gegevens:
+4. **Authenticatie (indien vereist):**
+   * Met de link van het tabblad **Link** is geen authenticatie nodig: selecteer **Anonymous**.
+   * Voer met het tabblad **Authentication (Bearer)** de **Service url** in bij stap 3, klik daarna op **Advanced** en voeg bij de parameters van de HTTP-verzoekheader de header `Authorization` toe met als waarde `Bearer ` gevolgd door het token. Selecteer daarna **Anonymous**.
+5. **Toegang tot de JSON-gegevens:**
    * Power BI maakt verbinding met de URL en haalt het JSON-bestand op.
-   * Na een geslaagde verbinding verschijnt een voorbeeldvenster met de JSON-gegevens. U verkent de gegevens als geneste lijsten, objecten of tabellen.
+   * Zodra de verbinding is gelegd, verschijnt een voorbeeldvenster met JSON-gegevens. U kunt de gegevens verkennen in de vorm van geneste lijsten, objecten of tabellen.
 
 {% hint style="info" %}
-* Prestaties: is uw JSON-bestand groot of bevat het diepe hiërarchieën, dan heeft Power BI mogelijk wat tijd nodig om de gegevens te laden en te transformeren.
-* Gegevens verversen: worden de JSON-gegevens regelmatig bijgewerkt (bijvoorbeeld door een API), dan stelt u in Power BI Service een gegevensverversing in om de nieuwste gegevens automatisch op te halen.
+* **Prestaties**: als uw JSON-bestand groot is of diepe hiërarchieën bevat, kan Power BI enige tijd nodig hebben om de gegevens te laden en te transformeren.
+* **Gegevens verversen:** als de JSON-gegevens regelmatig worden bijgewerkt (bijvoorbeeld door een API), kunt u in Power BI Service een gegevensverversing instellen om automatisch de nieuwste gegevens op te halen.
 {% endhint %}
 
-## Google Looker <a href="#google-looker" id="google-looker"></a>
+### Google Looker <a href="#google-looker" id="google-looker"></a>
 
 Google Looker maakt verbinding met Google BigQuery, een datawarehouse van Google Cloud dat JSON-bestanden kan opslaan en verwerken.
 
-### 1. Google BigQuery als gegevensbron gebruiken
+**1. Google BigQuery als gegevensbron gebruiken**
 
-1. Upload het JSON-bestand naar Google Cloud Storage:
-   * Is uw JSON-bestand bereikbaar via een deellink, upload het bestand dan eerst naar **Google Cloud Storage**.
+1. **Upload het JSON-bestand naar Google Cloud Storage :**
+   * Is uw JSON-bestand toegankelijk via een deellink, begin dan met het uploaden van het bestand naar **Google Cloud Storage**.
    * Maak het openbaar of stel de juiste machtigingen in.
-2. Laad de JSON-gegevens in BigQuery:
-   * Open de console van Google Cloud Platform (Google Cloud Console).
+2. **Laad de JSON-gegevens in BigQuery:**
+   * Ga naar de Google Cloud Platform-console (Google Cloud Console).
    * Ga naar **BigQuery** en selecteer of maak een project.
-   * Selecteer in **BigQuery** uw dataset en klik op **Create Table**.
-   * Selecteer **Google Cloud Storage** als bron en voer de URL van uw JSON-bestand in bij het veld **URL**.
+   * Selecteer in **BigQuery** uw dataset en klik op **Create Table.**
+   * Selecteer **Google Cloud Storage** als bron en voer de URL van uw JSON-bestand in het veld **URL** in.
    * Stel het gegevensformaat in op **JSON** en controleer of **BigQuery** de structuur van uw bestand correct kan interpreteren.
-3. Verbind BigQuery met Looker:
-   * Zodra het JSON-bestand in BigQuery is geladen, verbindt u Looker met BigQuery.
+3. **Verbind BigQuery met Looker :**
+   * Zodra het JSON-bestand in BigQuery is geladen, kunt u Looker met BigQuery verbinden.
    * Ga in Looker naar Admin > Connections en voeg BigQuery toe als gegevensbron.
-   * Zodra de verbinding tot stand is gebracht, bevraagt en visualiseert u de BigQuery-gegevens rechtstreeks in Looker.
+   * Zodra de verbinding is gelegd, kunt u de BigQuery-gegevens rechtstreeks in Looker bevragen en visualiseren.
 
-### 2. ETL-hulpmiddelen gebruiken om JSON in Looker te integreren
+**2. ETL-tools gebruiken om JSON in Looker te integreren**
 
-Wilt u de integratie van JSON-gegevens uit een API of extern bestand in Looker automatiseren, dan gebruikt u ETL-hulpmiddelen (Extract, Transform, Load) zoals Fivetran, Stitch of Airflow. Deze hulpmiddelen extraheren de JSON-gegevens, transformeren ze en laden ze in een datawarehouse dat compatibel is met Looker.
+Moet u de integratie van JSON-gegevens uit een API of extern bestand in Looker automatiseren, dan kunt u ETL-tools (Extract, Transform, Load) gebruiken, zoals Fivetran, Stitch of Airflow. Deze tools kunnen JSON-gegevens extraheren, transformeren en laden in een datawarehouse dat met Looker compatibel is.
 
-Voorbeeld met Fivetran:
+**Voorbeeld met Fivetran :**
 
-1. Verbind een REST-API of JSON-bron met Fivetran.
-2. Transformeer de gegevens zodat ze aan de eisen van uw datawarehouse voldoen.
-3. Laad de gegevens in het datawarehouse (bijvoorbeeld BigQuery).
+1. Verbind een REST API of JSON-bron met Fivetran.
+2. Transformeer de gegevens zodat ze aan de vereisten van uw datawarehouse voldoen.
+3. Laad de gegevens in het warehouse (bijvoorbeeld BigQuery).
 4. Verbind Looker met dit datawarehouse om de gegevens te bevragen en te visualiseren.
 
-## Tableau Software <a href="#tableau-software" id="tableau-software"></a>
+### Tableau Software <a href="#tableau-software" id="tableau-software"></a>
 
-### 1. Tableau Desktop openen
+**1. Open Tableau Desktop** :
 
-* Start Tableau Desktop op uw computer.
+* Start Tableau Desktop op uw machine.
 
-### 2. Verbinden met een webgegevensbron
+**2. Maak verbinding met een webgegevensbron**:
 
 * Ga in Tableau Desktop naar het menu File en selecteer New Data Source.
-* Klik in het venster voor de keuze van de gegevensbron op Web Data Connector. Met deze optie verbindt u met gegevens uit verschillende webbronnen, waaronder JSON-bestanden via een API of URL.
+* Klik in het venster voor de keuze van de gegevensbron op Web Data Connector. Met deze optie maakt u verbinding met gegevens uit verschillende webbronnen, waaronder JSON-bestanden via een API of URL.
 
-### 3. De JSON-URL invoeren
+**3. Voer de JSON-URL in:**
 
-* Voer in het venster dat verschijnt de URL van het JSON-bestand of de API in.
+* U moet in het venster dat verschijnt de URL van het JSON-bestand of de API invoeren.
 
-### 4. Authenticatie (indien vereist)
+**4. Authenticatie:**
 
-* Vereist de JSON-URL een vorm van authenticatie (bijvoorbeeld een API-sleutel, een OAuth-token of inloggegevens), dan vraagt Tableau om inloggegevens.
-* Selecteer het juiste authenticatietype (bijvoorbeeld API Key of OAuth) en vul de benodigde gegevens in.
+* Met de link van het tabblad **Link** is geen authenticatie nodig.
+* Kan uw connector een HTTP-header toevoegen, gebruik dan het tabblad **Authentication (Bearer)**: voer de **Service url** en de header `Authorization: Bearer <token>` in.
 
-### 5. JSON-gegevens analyseren in Tableau
+**5. De JSON-gegevens analyseren in Tableau :**
 
-* Tableau maakt verbinding met de URL, downloadt het JSON-bestand en probeert het om te zetten naar een begrijpelijke tabelvorm (een tabel of gestructureerde gegevensweergave).
-* Tableau herkent de structuur van JSON-gegevens automatisch. Is het bestand erg complex of diep genest, dan moet u soms in de gegevenseditor aanpassingen doen om de gegevens af te vlakken of in een geschikt formaat om te zetten.
+* Tableau maakt verbinding met de URL, downloadt het JSON-bestand en probeert het om te zetten naar een begrijpelijk tabelformaat (een tabel of een gestructureerde gegevensweergave).
+* Tableau kan de structuur van JSON-gegevens automatisch detecteren, maar is het bestand zeer complex of genest, dan moet u soms in de gegevenseditor aanpassingen doen om de gegevens af te vlakken of om te zetten naar een geschikt formaat.
 
 {% hint style="info" %}
-* Beperkingen van JSON-bestanden: is uw JSON-bestand groot of sterk genest, dan kan Tableau het mogelijk niet goed verwerken. Soms moet u het eerst transformeren of vereenvoudigen voordat u het integreert.
-* Authenticatie en beveiliging: vereist uw JSON-link een API-sleutel, beheer dan de autorisaties en inloggegevens zorgvuldig. Sommige API's beperken het aantal verzoeken of vereisen specifieke autorisaties.
-* Gegevens verversen: veranderen de JSON-gegevens regelmatig (bijvoorbeeld via een API met realtime-updates), dan stelt u Tableau in om de gegevens met vaste tussenpozen automatisch te verversen, zodat uw rapporten up-to-date blijven.
+* **Beperkingen van JSON-bestanden:** als uw JSON-bestand groot is of sterk genest, kan Tableau moeite hebben het correct te parseren.\
+  Soms moet u het transformeren of vereenvoudigen voordat u het integreert.
+* **Authenticatie en beveiliging:** vereist uw JSON-link een API-sleutel, zorg dan voor een goed beheer van autorisaties en inloggegevens. Sommige API's hebben beperkingen op het aantal verzoeken of vereisen specifieke autorisaties.
+* **Gegevens verversen:** als JSON-gegevens regelmatig wijzigen (bijvoorbeeld via een API die realtime updates levert), kunt u Tableau zo configureren dat de gegevens met regelmatige tussenpozen automatisch worden ververst, om uw rapporten up-to-date te houden.
 {% endhint %}

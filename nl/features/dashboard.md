@@ -1,76 +1,89 @@
 ---
-description: Leer het Dastra-dashboard te gebruiken.
+description: >-
+  Het dashboard is de startpagina van uw werkruimte: het vat uw naleving van de
+  AVG samen met één tegel per module, die u kunt herordenen.
 ---
 
 # Dashboard
 
-## Introductie
+Het dashboard is de eerste pagina die u ziet wanneer u een werkruimte binnengaat. Het vat de stand van uw naleving van de AVG samen en geeft toegang tot de modules. Om vanaf elke pagina naar het dashboard terug te keren, klikt u bovenaan het linkermenu op **Dashboard**.
 
-Het dashboard van Dastra is de eerste pagina die u opent wanneer u uw werkruimte binnengaat en geeft een overzicht van de naleving van de AVG.
+## De gebieden van het scherm
 
-Het bestaat uit 3 hoofdonderdelen:
+Het scherm heeft drie gebieden:
 
-* De eigenschappenbalk aan de linkerkant van het scherm,
-* Het gemeenschapstabblad aan de rechterkant van het scherm,
-* Het gedeelte in het midden met tegels die het laatste nieuws en de bewaking van je ruimte en de verschillende functies samenvatten.
+* **Het linkermenu**: de keuzelijst voor de werkruimte, die ook uw rollen in de werkruimte toont, en daaronder de modules gegroepeerd onder **Data inventory**, **Operations**, **Governance**, **Automations** en **Resources**. De knop **Invite a member** en het item **Instellingen voor werkruimte** staan onderaan het menu. Een module verschijnt alleen als uw abonnement ze omvat en uw rechten u er toegang toe geven.
+* **Het middelste gedeelte**: boven de tegels vindt u, afhankelijk van uw rechten en abonnement, de prompt van de AI-agent (**How can I help you today?**), de kaart met de laatste release note, de kaart **Handleiding om aan de slag te gaan** (de handleiding om aan de slag te gaan) en de **Project presentatie**, een vrije tekst die de werkruimte aan de gebruikers voorstelt.
+* **Het gemeenschapstabblad**, rechts van het scherm: het opent het paneel **Aankomende webinars**. U kunt het paneel inklappen; het tabblad blijft dan rechts van het scherm staan om het opnieuw te openen, en uw keuze wordt onthouden in uw browser.
 
-### Dashboard tegels
+<figure><img src="../.gitbook/assets/dashboard-1.png" alt="Het dashboard met het linkermenu, de kaart met de release note, de handleiding om aan de slag te gaan en de tegels"><figcaption><p>Het dashboard van een werkruimte</p></figcaption></figure>
 
-In de sectie met de tegels kun je de volgorde van verschijnen van deze tegels veranderen door op de sleepknop te klikken om de volgorde van verschijnen van de tegel te verplaatsen.
+## De tegels van het dashboard
 
-Er zijn verschillende **categorieën tegels** beschikbaar in het dashboard:
+De tegels vatten de activiteit van elke module samen. Standaard verschijnen ze in deze volgorde, voor de modules waartoe u toegang hebt:
 
-* **Nieuws en bekijken**;
-* **Gegevensverwerking**;
-* **Taken**;
-* **Uitoefening van rechten van betrokkenen**; 
-* **Laatste inbreuken**;
-* **Risicoanalyse**;
-* **Uw audits**;
-* **Widget voor toestemming voor gegevensverwerking**;
-* **Widget voor bescherming persoonsgegevens**;
-* **Widget voor toestemming cookie**
+* **Gegevensverwerking**
+* **Conformiteit**
+* **Nieuws**
+* **Taken**
+* **Oefeningen over rechten van betrokkenen**
+* **Laatste incidenten**
+* **Contracten en beleidslijnen**
+* **AI-systemen**
+* **Risicobeheer**
+* **Uw audits**
+* **Activa**
 
-## Hoe deel ik het dashboard?
+De meeste tegels (verwerkingsactiviteiten, taken, verzoeken, incidenten, contracten, AI-systemen, risico's en vragenlijsten) hebben een filter op organisatorische eenheid. Gebruik het om de tegel te beperken tot de items van één entiteit of afdeling.
 
-Je kunt het dashboard ook afdrukken of direct een gebruiker uitnodigen door op een van de knoppen rechtsboven in het gedeelte met de tegels te klikken.
+### De tegels herordenen
 
-## Verder gaan
+Om de volgorde van de tegels te wijzigen, sleept u de greep naast een tegel, of klikt u op de knoppen **Monteren** en **Naar beneden** die erbij horen. De volgorde wordt opgeslagen in uw browser: ze verandert niet voor andere gebruikers.
 
-Verken de functies nu:
+<figure><img src="../.gitbook/assets/dashboard-2.png" alt="Een tegel van het dashboard met de greep, de knoppen Monteren en Naar beneden en het filter op organisatorische eenheid"><figcaption><p>Een tegel en de knoppen om ze te verplaatsen</p></figcaption></figure>
+
+## Een lid uitnodigen
+
+Hebt u het recht om gebruikers te beheren, dan verschijnt onderaan het linkermenu de knop **Invite a member**. Die opent het formulier om een nieuwe gebruiker uit te nodigen. Voor de details van de velden, zie [Gebruikers uitnodigen](../getting-started/setup/users.md).
+
+<figure><img src="../.gitbook/assets/dashboard-3.png" alt="Het uitnodigingsformulier dat vanuit de knop Invite a member is geopend"><figcaption><p>Het formulier om een lid uit te nodigen</p></figcaption></figure>
+
+## Verder lezen
+
+Ontdek de functies:
 
 {% content-ref url="ropa/README.md" %}
-[editer-le-registre](ropa/README.md)
+[Verwerkingsregister](ropa/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="ropa/visualization/README.md" %}
-[la-visualisation-des-donnees](ropa/visualization/README.md)
+[Gegevensvisualisatie](ropa/visualization/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="risks/README.md" %}
-[la-gestion-des-risques](risks/README.md)
+[Risicobeheer](risks/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="tasks/README.md" %}
-[planifier](tasks/README.md)
+[Planning](tasks/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="requests/README.md" %}
-[rechten van betrokkenen beheren](requests/README.md)
+[Verzoeken van betrokkenen om hun rechten uit te oefenen](requests/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="incidents/README.md" %}
-[gegevensinbreuken documenteren](incidents/README.md)
+[Incidenten en datalekken](incidents/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="cookies/README.md" %}
-[toestemming beheren voor cookies](cookies/README.md)
+[Cookietoestemming beheren](cookies/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="questionnaires/README.md" %}
-[audit](questionnaires/README.md)
+[Vragenlijsten](questionnaires/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="settings/README.md" %}
-[instellingen](settings/README.md)
+[Geavanceerde configuratie](settings/README.md)
 {% endcontent-ref %}
