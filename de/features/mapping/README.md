@@ -29,12 +29,25 @@ Wenn Sie dieses Inventar nicht aufbauen möchten oder die von Ihnen genutzte Sof
 2. Klicken Sie im Seitenmenü auf **Metadaten**.
 3. Die Seite **Überblick** öffnet sich: eine Karte pro Referenzliste mit der Anzahl der darin enthaltenen Elemente.
 
-Klicken Sie dann auf die Referenzliste, die Sie öffnen möchten. Einzelheiten zu jeder Referenzliste finden Sie unter [Metadaten](repositories/README.md).
+Klicken Sie dann auf die Referenzliste, die Sie öffnen möchten. Den Zugriffsweg, die gemeinsamen Funktionen der Listen und die Grafiken finden Sie unter [Metadaten](repositories/README.md).
+
+## Die Referenzlisten der Kartierung
+
+Jede Referenzliste hat eine eigene Seite:
+
+* [Assets](repositories/assets.md): die Software, Server und anderen Medien, die Ihre Daten enthalten.
+* [Stakeholder](repositories/stakeholders.md): die Auftragsverarbeiter, Herausgeber und anderen Unternehmen und Personen, mit denen Sie arbeiten, und ihre Unterauftragsverarbeiter.
+* [Datenkategorien](repositories/datasets.md): die Gruppen von Datenfeldern mit ihren Regeln zur Speicherdauer.
+* [Datenglossar](repositories/data-glossary.md): die Datenfelder mit ihrer Kategorie und Sensibilitätsstufe.
+* [Sicherheitsmaßnahmen](repositories/security-measures.md): die technischen und organisatorischen Maßnahmen, die die Daten schützen.
+* [Betroffenenkategorien](repositories/subject-categories.md): die Personengruppen, deren Daten Sie verarbeiten.
+
+Wie Sie eine Verbindung dokumentieren, die die Plattform nicht selbst ableitet, zum Beispiel ein mit einem Stakeholder verknüpftes Asset, lesen Sie unter [Generische Beziehungen](relationships.md). Wie Sie diese Referenzlisten in Ihrem Verzeichnis wiederverwenden, lesen Sie unter [Verarbeitungsverzeichnis](../ropa/README.md).
 
 ## Ihre Liste der Sicherheitsmaßnahmen aufbauen
 
-Sicherheitsmaßnahmen haben eine eigene Referenzliste: Erfassen Sie sie einmal und hängen Sie sie dann im Bereich **Verbundene Sicherheitsmaßnahmen** des Asset-Formulars an Assets an. Diese Angaben stehen oft im DPA, den Sie mit dem Herausgeber unterzeichnet haben. Wählen Sie kurze Namen (Virenschutz, Application Firewall, Zugriffskontrollen), damit eine Maßnahme von einem Asset zum anderen wiederverwendet werden kann.
+Sicherheitsmaßnahmen haben eine eigene Referenzliste (siehe [Sicherheitsmaßnahmen](repositories/security-measures.md)): Erfassen Sie sie einmal und hängen Sie sie dann im Bereich **Verbundene Sicherheitsmaßnahmen** des Asset-Formulars an Assets an. Diese Angaben stehen oft im DPA, den Sie mit dem Herausgeber unterzeichnet haben. Wählen Sie kurze Namen (Virenschutz, Application Firewall, Zugriffskontrollen), damit eine Maßnahme von einem Asset zum anderen wiederverwendet werden kann.
 
 ## Ihre Auftragsverarbeiter verwalten
 
-Ein Auftragsverarbeiter ist ein Stakeholder Ihrer Kartierung. Erfassen Sie ihn als **Herausgeber** des Assets: Er kann dann als Auftragsverarbeiter referenziert werden, wenn das Asset in einer Verarbeitungstätigkeit genannt wird. Im Formular des Stakeholders können Sie außerdem die Unterauftragsverarbeiter des Auftragsverarbeiters erfassen, um die gesamte Unterauftragskette zu kartieren.
+Ein Auftragsverarbeiter ist ein [Stakeholder](repositories/stakeholders.md) Ihrer Kartierung. Erfassen Sie ihn als **Herausgeber** des Assets: Er kann dann als Auftragsverarbeiter referenziert werden, wenn das Asset in einer Verarbeitungstätigkeit genannt wird. Im Formular des Stakeholders können Sie außerdem die Unterauftragsverarbeiter des Auftragsverarbeiters erfassen, um die gesamte Unterauftragskette zu kartieren.
