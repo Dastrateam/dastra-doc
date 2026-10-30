@@ -37,18 +37,14 @@ De installatie volgt de gemeenschappelijke integratiestroom (zie [Verbindingen, 
 
 ## Authenticatiemethoden
 
-### OAuth 2.0 (aanbevolen)
-
-Dastra slaat nooit een wachtwoord op. ServiceNow geeft tokens met een korte levensduur uit die Dastra automatisch vernieuwt.
+**OAuth 2.0 (aanbevolen)**: Dastra slaat nooit een wachtwoord op. ServiceNow geeft tokens met een korte levensduur uit die Dastra automatisch vernieuwt.
 
 1. Maak in ServiceNow een OAuth-app voor Dastra aan: All > Application Registry (in recente versies: Inbound integrations > Authorization code grant), type OAuth API endpoint for external clients.
 2. Stel de redirect-URL in op `https://api.dastra.eu/v1/integrationaccounts/callback/servicenow`.
 3. Zorg dat de scopebeperking van de app op Broadly scoped staat (of declareer de scope `useraccount`): een securely scoped app zonder scopes weigert de tokenuitwisseling.
 4. Maak in Dastra de verbinding aan met de methode **OAuth**, vul de **URL van de instantie**, de OAuth client ID en de OAuth client secret in, klik op **Opslaan en inloggen** en autoriseer Dastra in ServiceNow.
 
-### Basisauthenticatie
-
-Gebruikersnaam en wachtwoord van een ServiceNow-account, door Dastra versleuteld opgeslagen.
+**Basisauthenticatie**: gebruikersnaam en wachtwoord van een ServiceNow-account, door Dastra versleuteld opgeslagen.
 
 {% hint style="warning" %}
 Recente ServiceNow-instanties beperken basisauthenticatie op de REST API op accountniveau. Gebruikt u basisauthenticatie, maak dan een speciaal serviceaccount aan waarbij Web service access only is aangevinkt, nooit een persoonlijke gebruiker of een beheerdersaccount. Symptoom van de beperking: een antwoord `401 User is not authenticated`, ook met geldige inloggegevens.
@@ -85,7 +81,7 @@ De synchronisatie loopt automatisch één keer per dag en u kunt ze op elk momen
 
 U kunt elk van deze standaardgedragingen per veld overschrijven in de editor voor de **Veldmapping**. Al deze gegevens zorgen voor een betrouwbare en actuele koppeling tussen uw ServiceNow-CMDB en uw Dastra-repository.
 
-## Beheer van activa die in ServiceNow zijn verwijderd
+### Beheer van activa die in ServiceNow zijn verwijderd
 
 Wanneer Dastra merkt dat een eerder gesynchroniseerd activum niet meer in ServiceNow bestaat, wordt het niet automatisch in Dastra verwijderd.
 
