@@ -71,7 +71,7 @@
   * [Interne Diskussionen](features/general/discussions.md)
   * [Häufig gestellte Fragen](features/general/faq.md)
 * [Datenkartierung](features/mapping/README.md)
-  * [Referenzdaten](features/mapping/repositories/README.md)
+  * [Metadaten](features/mapping/repositories/README.md)
     * [Assets](features/mapping/repositories/assets.md)
   * [Generische Beziehungen](features/mapping/relationships.md)
 * [Verarbeitungsverzeichnis](features/ropa/README.md)

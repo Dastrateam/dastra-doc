@@ -4,36 +4,39 @@ description: Erfahren Sie, wie Sie sich bei der Dastra-API authentifizieren.
 
 # Authentifizierung
 
-### Erhalt des geheimen API-Schlüssels
+## Ihren geheimen API-Schlüssel abrufen
 
-Die Dastra REST-API verwendet API-Schlüssel zur Authentifizierung jeder Anfrage. Sie können Ihre Schlüssel in der [Konfigurationsoberfläche Ihrer Organisation](https://app.dastra.eu/general-settings/api) verwalten.
+Die Dastra-REST-API verwendet API-Schlüssel, um jede Anfrage zu authentifizieren. Sie verwalten Ihre Schlüssel auf der Seite **API-Schlüssel & MCP**, die den Inhabern der Organisation vorbehalten ist. Siehe [API-Schlüssel verwalten](../features/settings/api-keys.md).
 
-Sie können einen API-Schlüssel für einen bestimmten Mandanten oder die gesamte Organisation verwenden.
+Sie können einen API-Schlüssel für einen bestimmten Mandanten oder für die gesamte Organisation verwenden.
 
-Ihr API-Schlüssel ermöglicht viele Aktionen, daher sollten Sie ihn sorgfältig aufbewahren. Teilen Sie Ihren geheimen Schlüssel nicht in öffentlichen Bereichen von Anwendungen wie GitHub, clientseitigem Code usw.
+Ein API-Schlüssel gewährt Zugriff auf Ihre Daten, bewahren Sie ihn daher sicher auf. Teilen Sie Ihren privaten Schlüssel nicht in öffentlichen Bereichen von Anwendungen, etwa auf GitHub oder in clientseitigem Code.
 
-Wenn Sie die OAuth2-Authentifizierung im Modus "authorization\_code" verwenden möchten, müssen die Weiterleitungs-URL(s) sowie die autorisierten CORS-Ursprünge korrekt konfiguriert werden.
+Ein abgelaufener oder unbekannter Schlüssel wird mit dem Status 401 abgelehnt.
 
-![](<../.gitbook/assets/Einen neuen API-Schlüssel erstellen (1).png>)
+Wenn Sie die OAuth2-Authentifizierung mit dem Ablauf „authorization\_code“ verwenden möchten, tragen Sie die Weiterleitungs-URIs und die erlaubten CORS-Ursprünge im Detailbereich des Schlüssels ein.
+
+<figure><img src="../.gitbook/assets/settings-api-keys-1.png" alt="Das Fenster zum Erstellen eines API-Schlüssels mit Name, Mandant, Ablaufdatum und Berechtigungen"><figcaption><p>Einen API-Schlüssel erstellen</p></figcaption></figure>
 
 ## API-Schlüssel (X-API-Key)
 
-Zur Authentifizierung ist die einfachste Methode die Verwendung eines HTTP-Headers **X-API-Key**, der den privaten Schlüssel Ihres API-Schlüssels enthält, wie im folgenden Beispiel:
+Am einfachsten authentifizieren Sie sich mit dem HTTP-Header **X-API-Key**, der den privaten Teil Ihres API-Schlüssels enthält, wie im folgenden Beispiel:
 
 ```bash
 curl -X 'GET' \
   'https://api.dastra.eu/me' \
   -H 'accept: */*' \
   -H 'X-API-Key: <your private key here>'
-```
-
-## OAuth2 "Authorization code" Flow
-
-### Authorization
-
-Die Autorisierungsphase erfolgt durch Aufruf der folgenden URL:
 
 ```
+
+## OAuth2-Ablauf „Authorization code“
+
+### Autorisierung
+
+Die Autorisierungsphase wird durch Aufruf der folgenden URL durchgeführt:
+
+```bash
 https://account.dastra.eu/connect/authorize?
     response_type=code&
     client_id={YOUR_CLIENT_ID}&
@@ -44,65 +47,71 @@ https://account.dastra.eu/connect/authorize?
 
 **Parameter**
 
-<table><thead><tr><th width="272.5595168190588">Parameter Name</th><th width="470.9578998488362">Description</th></tr></thead><tbody><tr><td><code>response_type</code></td><td>code</td></tr><tr><td><code>client_id</code></td><td>Der öffentliche Schlüssel Ihres in Ihrem Dastra-Konto konfigurierten API-Schlüssels</td></tr><tr><td><code>redirect_uri</code></td><td>Die im Dastra-API-Schlüssel konfigurierte URL. Sie werden nach Abschluss des Autorisierungsprozesses automatisch auf diese Seite weitergeleitet</td></tr><tr><td><code>scope</code></td><td><p>api1 => erforderlich</p><p>offline_access <em>=></em> um ein refresh_token zu erhalten (lange Sitzungen)</p></td></tr><tr><td><code>state</code></td><td>Ein von Ihrer Anwendung generierter zufälliger Schlüssel, der Cross-Site-Request-Forgery-Angriffe (CSRF) verhindert, siehe <a href="https://auth0.com/docs/protocols/oauth2/mitigate-csrf-attacks">Mitigate CSRF Attacks With State Parameters</a>. Client-Bibliotheken handhaben dies schnell</td></tr></tbody></table>
+| Parametername | Beschreibung |
+| --- | --- |
+| `response_type` | code |
+| `client_id` | Der öffentliche Teil Ihres API-Schlüssels, der in Ihrem Dastra-Konto konfiguriert ist |
+| `redirect_uri` | Die im Dastra-API-Schlüssel konfigurierte URL. Am Ende des Autorisierungsvorgangs werden Sie automatisch auf diese Seite weitergeleitet |
+| `scope` | <p><code>api1</code> => erforderlich<br><code>offline_access</code> => um ein refresh_token zu erhalten (lange Sitzungen)</p> |
+| `state` | Eine zufällige Zeichenfolge, die Ihre Anwendung erzeugt, um Cross-Site-Request-Forgery-Angriffe (CSRF) zu verhindern. Siehe [Mitigate CSRF Attacks With State Parameters](https://auth0.com/docs/protocols/oauth2/mitigate-csrf-attacks) (auf Englisch). Client-Bibliotheken übernehmen dies in der Regel automatisch |
 
-## OAuth2 "Client credential" Flow
+## OAuth2-Ablauf „Client credentials“
 
 ### Authentifizierungsmethode
 
-Die API-Authentifizierung erfolgt mithilfe des [OAuth2-Protokolls](https://oauth.net/2/) unter Verwendung des "Client credential"-Flows. Dieser Authentifizierungsmodus darf ausschließlich für Server-zu-Server-Anfragen verwendet werden und darf keinesfalls browserseitig eingesetzt werden (z. B. SPA in JavaScript).
+Die Authentifizierung der API beruht auf dem [OAuth2-Protokoll](https://oauth.net/2/) mit dem Ablauf „Client credentials“. Dieser Authentifizierungsmodus sollte nur für Server-zu-Server-Anfragen verwendet und nie auf der Clientseite eingesetzt werden (zum Beispiel in einer JavaScript-SPA).
 
-![](../.gitbook/assets/api-authentication-scheam.svg)
+<figure><img src="../.gitbook/assets/api-authentication-scheam.svg" alt="Diagramm des Ablaufs Client credentials: Ihr Server fordert beim Identifikationsserver von Dastra ein Token an und ruft dann die API mit diesem Token auf"><figcaption><p>Der Ablauf Client credentials</p></figcaption></figure>
 
-### Token abrufen
+### Das Token abrufen
 
-<mark style="color:green;">`POST`</mark> `https://account.dastra.eu/connect/token`
+`POST` `https://account.dastra.eu/connect/token`
 
-Perform a token request using BASIC Headers
+Senden Sie eine Token-Anfrage mit BASIC-Headern.
 
-#### Headers
+**Header**
 
-| Name                               | Type          | Description                                |
-| ---------------------------------- | ------------- | ------------------------------------------ |
-| <mark style="color:red;">\*</mark> | Authorization | Basic {base64("{PublicKey}:{PrivateKey}")} |
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| Authorization | Basic {base64("{PublicKey}:{PrivateKey}")} |  |
 
-#### Request Body
+**Anfragetext**
 
-| Name                               | Type        | Description         |
-| ---------------------------------- | ----------- | ------------------- |
-| <mark style="color:red;">\*</mark> | grant\_type | client\_credentials |
-| <mark style="color:red;">\*</mark> | scope       | api1                |
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| grant\_type | string | client\_credentials |
+| scope | string | api1 |
 
 {% tabs %}
-{% tab title="200: OK The access_token necessary to perform operations on the REST API" %}
-```javascript
+{% tab title="200: OK - Access Token for REST API Operations" %}
+```json
 {
-  "access_token":"tNQoqsSePv0DnSSNVJv1aDxzSFh9H2z3YBKtuBKqWAU",
-  "expires_in":3600,
-  "token_type":"Bearer",
-  "scope":"api1"
+  "access_token": "tNQoqsSePv0DnSSNVJv1aDxzSFh9H2z3YBKtuBKqWAU",
+  "expires_in": 3600,
+  "token_type": "Bearer",
+  "scope": "api1"
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-Sobald Sie ein access\_token erhalten haben, können Sie anschließend jeden Endpunkt der REST-API mit diesem Zugriffstoken aufrufen, indem Sie es als "Bearer Token" übergeben.
+Sobald Sie ein access\_token abgerufen haben, können Sie jeden Endpunkt der REST-API aufrufen und dieses Token als „Bearer-Token“ verwenden.
 
-Zum Beispiel, um die Liste Ihrer Mandanten abzurufen:
+Um zum Beispiel die Liste Ihrer Mandanten abzurufen:
 
-<mark style="color:blue;">`GET`</mark> `https://api.dastra.eu/v1/workspaces`
+`GET` `https://api.dastra.eu/v1/Workspaces`
 
-Liste der Dastra-Mandanten abrufen
+Ruft die Liste der Dastra-Mandanten ab.
 
-#### Headers
+**Header**
 
-| Name                               | Type          | Description            |
-| ---------------------------------- | ------------- | ---------------------- |
-| <mark style="color:red;">\*</mark> | Authorization | Bearer {access\_token} |
+| Name | Typ | Beschreibung |
+| --- | --- | --- |
+| Authorization | Bearer {access\_token} |  |
 
 {% tabs %}
-{% tab title="200: OK " %}
-```javascript
+{% tab title="200: OK" %}
+```json
 {
   "items": [
     {
@@ -142,6 +151,6 @@ Liste der Dastra-Mandanten abrufen
 {% endtab %}
 {% endtabs %}
 
-Alle Anfragen müssen über [HTTPS](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol_Secure) und immer serverseitig erfolgen. Anfragen ohne Authentifizierung schlagen mit dem Fehlercode 401 fehl.
+Alle Anfragen müssen über [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure) und immer serverseitig erfolgen. Anfragen ohne Authentifizierung scheitern mit dem Fehlercode 401.
 
-Die API-Referenz finden Sie hier: [https://api.dastra.eu/swagger/index.html](https://api.dastra.eu/swagger/index.html)<br>
+Die API-Referenz finden Sie hier: [https://api.dastra.eu/swagger/index.html](https://api.dastra.eu/swagger/index.html)

@@ -1,6 +1,6 @@
 # API-Anwendungsfälle
 
-Diese Seite zeigt drei Python-Beispiele zu Betroffenenanfragen: eine Datei an eine Anfrage anhängen, der anfragenden Person eine Nachricht mit dieser Datei senden und die neuen Anfragen auflisten. Die Beispiele verwenden die Bibliothek `requests` und authentifizieren sich mit dem Header `X-API-Key` (siehe [Authentifizierung](authentication.md)).
+Diese Seite zeigt drei Python-Beispiele zu Anfragen betroffener Personen: eine Datei an eine Anfrage anhängen, der anfragenden Person eine Nachricht mit dieser Datei senden und die neuen Anfragen auflisten. Die Beispiele verwenden die Bibliothek `requests` und authentifizieren sich mit dem Header `X-API-Key` (siehe [Authentifizierung](authentication.md)).
 
 ```sh
 pip install requests
@@ -13,8 +13,8 @@ import os
 import requests
 
 API_URL = "https://api.dastra.eu"
-WORKSPACE_ID = 123  # Kennung Ihres Arbeitsbereichs
-HEADERS = {"X-API-Key": "<Ihr privater Schlüssel>"}
+WORKSPACE_ID = 123  # your workspace identifier
+HEADERS = {"X-API-Key": "<your private key>"}
 ```
 
 ## 1. Eine Datei an eine Anfrage anhängen
@@ -34,7 +34,7 @@ def upload_attachment(request_id, path):
     response.raise_for_status()
     return response.json()
 
-attachment = upload_attachment("<ID der Anfrage>", "auskunft-export.pdf")
+attachment = upload_attachment("<request id>", "access-export.pdf")
 print(attachment["id"], attachment["fileName"])
 ```
 
@@ -58,7 +58,7 @@ def send_message(request_id, text, attachment_ids):
     response.raise_for_status()
     return response.json()
 
-message = send_message("<ID der Anfrage>", "Guten Tag, anbei erhalten Sie den Export Ihrer Daten.", [attachment["id"]])
+message = send_message("<request id>", "Hello, please find attached the export of your data.", [attachment["id"]])
 print(message["id"])
 ```
 
