@@ -23,7 +23,7 @@ In het menu geeft **Conformiteit** toegang tot vier onderdelen:
 
 De module berust op een logische keten van objecten, van regelgevende kaders tot bewijs van conformiteit.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Keten van objecten van de module: kader, vereisten, controles, risicoscenario's, tests, bewijs en audits"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-object-chain.svg" alt="Keten van objecten van de module: kader, vereisten, controles, risicoscenario's, tests, bewijs en audits"><figcaption></figcaption></figure>
 
 ### Kaders
 
@@ -164,9 +164,9 @@ Eén controle (bijvoorbeeld een toegangsreview) kan dus:
 * voldoen aan een vereiste van ISO 27001,
 * meerdere risicoscenario's beperken.
 
-Verklarend schema:
+Voorbeeld: de controle ‘Periodieke review van toegangsrechten’ voldoet aan een vereiste van de AVG en een vereiste van ISO 27001, wordt getoetst door een test met bewijs en vermindert twee risico's:
 
-<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Verbanden tussen kaders, vereisten, controles, tests, bewijs en risicoscenario's"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-shared-control-example.svg" alt="Voorbeeld van één controle gedeeld door de AVG en ISO 27001, met test, bewijs en de twee risico's die ze vermindert"><figcaption></figcaption></figure>
 
 ***
 

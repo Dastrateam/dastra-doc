@@ -23,7 +23,7 @@ Dans le menu, **Conformité** donne accès à quatre entrées :
 
 Le module repose sur une chaîne logique d’objets, depuis les référentiels réglementaires jusqu’aux preuves de conformité.
 
-<figure><img src="../../.gitbook/assets/mermaid-diagram-2026-01-28-160744.png" alt="Chaîne d'objets du module : framework, exigences, contrôles, scénarios de risque, tests, preuves et audits"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-object-chain.svg" alt="Chaîne d'objets du module : framework, exigences, contrôles, scénarios de risque, tests, preuves et audits"><figcaption></figcaption></figure>
 
 ### Frameworks (Référentiels)
 
@@ -164,10 +164,9 @@ Un même contrôle (ex. revue des accès) peut ainsi :
 * satisfaire une exigence ISO 27001,
 * réduire plusieurs scénarios de risque.
 
-Schéma explicatif :
+Exemple : le contrôle de revue périodique des accès satisfait une exigence du RGPD et une exigence ISO 27001, est vérifié par un test appuyé par une preuve, et réduit deux risques :
 
-
-<figure><img src="../../.gitbook/assets/compliance-framework-architecture-diagram.png" alt="Relations entre frameworks, exigences, contrôles, tests, preuves et scénarios de risque"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/compliance-shared-control-example.svg" alt="Exemple d'un contrôle partagé par le RGPD et ISO 27001, avec son test, sa preuve et les deux risques qu'il réduit"><figcaption></figcaption></figure>
 
 ***
 

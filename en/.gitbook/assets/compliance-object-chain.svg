@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 550" width="830" height="550" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Compliance module: chain of objects">
+<title>Compliance module: chain of objects</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8f9bab"/></marker></defs>
+<rect width="830" height="550" fill="#ffffff"/>
+<rect x="310" y="30" width="200" height="48" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="410.0" y="59.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Frameworks</text>
+<rect x="310" y="140" width="200" height="48" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="410.0" y="169.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Requirements</text>
+<rect x="310" y="250" width="200" height="48" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="410.0" y="279.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Controls</text>
+<rect x="310" y="360" width="200" height="48" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="410.0" y="389.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Tests</text>
+<rect x="310" y="470" width="200" height="48" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="410.0" y="499.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Evidence</text>
+<rect x="30" y="140" width="180" height="48" rx="8" fill="#fdf1e8" stroke="#c9560a" stroke-width="1.6"/>
+<text x="120.0" y="169.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Audits</text>
+<rect x="620" y="250" width="180" height="48" rx="8" fill="#fdf1e8" stroke="#c9560a" stroke-width="1.6"/>
+<text x="710.0" y="279.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Risks</text>
+<rect x="620" y="360" width="180" height="48" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="710.0" y="389.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Test campaigns</text>
+<path d="M410.0,78 L410.0,138" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="422.0" y="113.0" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">contains  (1–N)</text>
+<path d="M410.0,188 L410.0,248" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="422.0" y="223.0" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">implemented by  (N–N)</text>
+<path d="M410.0,298 L410.0,358" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="422.0" y="333.0" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">verified by  (N–N)</text>
+<path d="M410.0,408 L410.0,468" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="422.0" y="443.0" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">proven by  (1–N)</text>
+<path d="M210,164.0 L308,164.0" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="260.0" y="156.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5b6878">assess</text>
+<path d="M120,188 L120,494.0 L308,494.0" fill="none" stroke="#8f9bab" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+<text x="132" y="486.0" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">rely on</text>
+<path d="M510,274.0 L618,274.0" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="565.0" y="266.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5b6878">reduce  (N–N)</text>
+<path d="M510,384.0 L618,384.0" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="565.0" y="376.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5b6878">grouped in</text>
+</svg>
