@@ -1,58 +1,49 @@
 ---
 description: >-
-  Dastra ermöglicht die Kartierung der mit Verarbeitungen verbundenen Risiken,
-  um schnell die Prioritätsstufe und die durchzuführenden Maßnahmen für eine
-  Datenverarbeitung zu bewerten.
+  Mit Dastra erfassen Sie die Risiken Ihrer Verarbeitungstätigkeiten, um schnell
+  die Prioritätsstufe und die zu ergreifenden Maßnahmen für eine
+  Verarbeitungstätigkeit zu bewerten.
 ---
 
-# Ein Risiko einer Verarbeitung zuordnen
+# Ein Risiko einer Verarbeitungstätigkeit zuordnen
 
-### Ein Risiko in einer Verarbeitung hinzufügen
+## Ein Risiko zu einer Verarbeitungstätigkeit hinzufügen
 
-Um ein Risiko zu einer Verarbeitung hinzuzufügen, gehen Sie auf den Reiter "**Risiken**" auf der Bearbeitungsseite der Verarbeitung.
+1. Öffnen Sie die Verarbeitungstätigkeit im Verzeichnis der Verarbeitungstätigkeiten.
+2. Klicken Sie in der Schaltflächenleiste unter dem Titel auf **Risiken**. Die Schaltfläche zeigt die Anzahl der Risiken an, die der Verarbeitungstätigkeit bereits zugeordnet sind.
 
-<figure><img src="../../.gitbook/assets/Risiko6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risks-attach-1.png" alt="Seite einer Verarbeitungstätigkeit mit der Schaltfläche Risiken und ihrem Zähler in der Schaltflächenleiste"><figcaption><p>Die Schaltfläche Risiken einer Verarbeitungstätigkeit</p></figcaption></figure>
 
-und klicken Sie auf die Schaltfläche "**Ein Risiko erstellen**".
+3. Klicken Sie im Bereich, der sich öffnet, auf **Ein Risiko erstellen**.
 
-![](../../.gitbook/assets/Risiko7.png)
+<figure><img src="../../.gitbook/assets/risks-attach-2.png" alt="Bereich Risiken einer Verarbeitungstätigkeit mit der Matrix, den zugeordneten Risiken und der Schaltfläche Ein Risiko erstellen"><figcaption><p>Der Bereich Risiken einer Verarbeitungstätigkeit</p></figcaption></figure>
 
-Sie gelangen auf eine Bearbeitungsseite des Risikos und können die Informationen zum identifizierten Risiko eingeben.
+Sie gelangen auf die Bearbeitungsseite des Risikos, auf der die Verarbeitungstätigkeit und ihre Organisationseinheit bereits ausgefüllt sind. Beginnen Sie mit der Eingabe der Informationen zu dem Risiko, das Sie identifiziert haben, wie unter [Identifizieren](process/identify.md) beschrieben.
 
-Anschließend können Sie alle Risiken Ihres Verzeichnisses im Risiko-Referenzsystem wiederfinden.
+Sie können ein Risiko auch im Risikomanagement-Modul einer Verarbeitungstätigkeit zuordnen: Öffnen Sie **Risikomanagement** > **Risiken**, wählen Sie den Tab **Datenverarbeitung** und klicken Sie auf **Ein Risiko erstellen**.
 
-<figure><img src="../../.gitbook/assets/Risiko9.png" alt=""><figcaption></figcaption></figure>
+## Die Risiken einer Verarbeitungstätigkeit anzeigen
 
-Sie können ein Risiko auch direkt aus dem Risikomanagement-Modul an eine Verarbeitung anhängen.
+Um die Risiken aller Ihrer Verarbeitungstätigkeiten zu sehen, öffnen Sie **Risikomanagement** > **Risiken** und wählen Sie den Tab **Datenverarbeitung**. Jede Zeile zeigt den Risikotyp, die betroffene Verarbeitungstätigkeit sowie die Stufen des anfänglichen, aktuellen und Restrisikos.
 
-Gehen Sie dazu auf den Reiter "Risiken" und klicken Sie auf "**Ein Risiko erstellen**".
+<figure><img src="../../.gitbook/assets/risks-list-1.png" alt="Liste der Risiken im Tab Datenverarbeitung, mit anfänglichem, aktuellem und Restrisiko"><figcaption><p>Die Risiken, die Verarbeitungstätigkeiten zugeordnet sind</p></figcaption></figure>
 
-### Risiken einer Verarbeitung visualisieren
+## Bewertung der Risikostufe
 
-Um die Risiken der Verarbeitungen zu visualisieren, müssen Sie zum Risiko-Modul von Dastra navigieren.
+Die Risikostufe wird mit der folgenden Formel berechnet:
 
-![](../../.gitbook/assets/Risiko8.png)
+`Risikostufe = Wahrscheinlichkeitswert x Auswirkungswert`
 
-Sie müssen auf den Reiter "**Risiken**" gehen und erhalten eine Visualisierung aller Risiken, sortiert nach den mit jedem Risiko verknüpften Elementen.
+Dastra zeigt sie in Punkten von der Höchstpunktzahl der Skala (zum Beispiel 16/25) und als Prozentsatz an. Der Prozentsatz wird mit der folgenden Formel berechnet:
 
-### Bewertung der Risikostufe
+`(Auswirkung x Wahrscheinlichkeit) / Höchstpunktzahl der aktiven Risikoskala`
 
-Die Risikostufe wird nach folgender Formel berechnet:
+Die Höchstpunktzahl der Skala beträgt 25 bei der Standardskala mit 5 Stufen (5 x 5), 16 bei der Skala mit 4 Stufen und 9 bei der Skala mit 3 Stufen. Siehe [Die Risikoskala konfigurieren](process/assess.md#die-risikoskala-konfigurieren).
 
-`Risikostufe = Wahrscheinlichkeitswert X Auswirkungswert`<br>
+Das Dashboard des Mandanten enthält ein Modul **Risikomanagement**. Es zeigt die Durchschnittswerte des anfänglichen, aktuellen und Restrisikos in Prozent, die durchschnittliche Behebung, die Anzahl der Risiken pro Schritt (**Gesamt**, **Identifiziert**, **Keine Antwort**) und die Aufteilung der niedrigen, mittleren und hohen Restrisiken. Jeder Durchschnittswert beruht auf den oben berechneten Prozentsätzen.
 
-Im Dashboard zeigt ein Risiko-Modul die Anzahl der Risiken, die Verarbeitungen mit den höchsten Risiken, das Gesamtrisiko und die Stufe der Verarbeitung mit den meisten Risiken an.
-
-Das Gesamtrisiko wird nach folgender Formel berechnet:<br>
-
-`Summe (Wahrscheinlichkeit * Auswirkung) / Anzahl der Risiken`<br>
-
-Die Stufe der Verarbeitung mit dem höchsten Risiko wird nach folgender Formel berechnet:<br>
-
-`((Auswirkung x Wahrscheinlichkeit) / 25)`<br>
-
-## **Weiterführende Informationen**
+## Weiterführende Informationen
 
 {% content-ref url="../tasks/README.md" %}
-[planifier](../tasks/README.md)
+[Planung](../tasks/README.md)
 {% endcontent-ref %}

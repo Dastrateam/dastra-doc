@@ -6,17 +6,17 @@ description: >-
 
 # Qualität unserer Dienste
 
-## Infrastruktur & Skalierbarkeit
+## Infrastruktur und Skalierbarkeit
 
-Unsere Cloud-Infrastruktur ermöglicht es uns, die Skalierung unserer Anwendungen sicherzustellen, um die Auswirkungen eines Anstiegs der Nutzerzahlen auf die Antwortzeiten zu reduzieren.
+Unsere Cloud-Infrastruktur ermöglicht es uns, unsere Anwendungen zu skalieren, um die Auswirkungen eines Anstiegs der Nutzerzahlen auf die Antwortzeiten zu verringern.
 
 ## Echtzeit-Transparenz zur Verfügbarkeit unserer Dienste
 
-Alle unsere Dienste werden in Echtzeit durch Monitoring-Sonden überwacht. Sie können den Dienststatus auf der folgenden Seite einsehen: [https://status.dastra.eu](https://status.dastra.eu)
+Alle unsere Dienste werden in Echtzeit durch Monitoring-Sonden überwacht. Den Status der Dienste können Sie auf der folgenden Seite einsehen: [**https://status.dastra.eu**](https://status.dastra.eu)
 
 ## Verfügbarkeit
 
-Unser Ziel ist es, eine Verfügbarkeitsrate von 99,5% und eine Antwortzeit unserer REST-API von < 1000ms zu gewährleisten.
+Unser Ziel ist es, eine Verfügbarkeitsrate von 99,5 % und eine Antwortzeit unserer REST-API von unter 1000 ms zu gewährleisten.
 
 ## Support
 

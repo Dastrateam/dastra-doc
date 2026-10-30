@@ -1,45 +1,66 @@
 ---
-description: Details zu den Elementen, aus denen ein Vertrag in Dastra besteht
+description: >-
+  Die Elemente, aus denen die Akte eines Dokuments in Dastra besteht: Titel,
+  Aktionen, Kurzbefehle, Tabs und Vorschau.
 ---
 
-# Struktur eines Vertrags
+# Struktur eines Dokuments
 
-Sobald Ihr Vertrag erstellt ist, werden Sie zur Bearbeitungsansicht des Vertrags weitergeleitet
+Sobald Ihr Dokument erstellt ist, öffnet Dastra seine Akte (siehe [Ein Dokument erstellen](declare.md)). Die Dateivorschau nimmt die linke Bildschirmseite ein, die Eingabe-Tabs die rechte.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien4.png" alt=""><figcaption><p>Ein neu erstellter Vertrag</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-structure-1.png" alt="Die Akte eines Dokuments mit der Kopfzeile, der Vorschau links und den Tabs rechts"><figcaption><p>Die Akte eines neu erstellten Dokuments</p></figcaption></figure>
 
-### Struktur der Bearbeitungsansicht des Vertrags
+## Der Titel und der Typ
 
-#### Der Titel
+Der bearbeitbare Titel des Dokuments steht oben links. Das Typ-Badge (Vertrag, Richtlinie, Hinweis, Vorgehensweise oder Sonstiges) erscheint über dem Titel: Klicken Sie darauf, um den Typ zu ändern.
 
-Sie finden den bearbeitbaren Titel Ihres Vertrags oben links
+<figure><img src="../../.gitbook/assets/contracts-structure-2.png" alt="Die Kopfzeile der Akte mit dem Typ-Badge, dem Titel, dem Menü der Kurzbefehle und den Aktionsschaltflächen"><figcaption><p>Der Typ, der Titel, die Kurzbefehle und die Hauptaktionen</p></figcaption></figure>
 
-#### Das Menü der Hauptaktionen
+## Das Menü der Kurzbefehle
 
-Ein Menü mit Hauptaktionen oben rechts, mit dem Sie die Unterschriften des Vertrags, die Versionierung, die Prozessschritte und das Speichern verwalten können.
+Unter dem Titel, links, gibt das Menü der Kurzbefehle Zugriff auf die Elemente, die dem Dokument zugeordnet sind:
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien5.png" alt=""><figcaption><p>Das Menü der Hauptaktionen</p></figcaption></figure>
+* interne Diskussionen;
+* zugeordnete Aufgaben, wenn die Aufgabenverwaltung aktiv ist;
+* das Audit-Protokoll, wenn Audit aktiv ist, und der **Aktivitätsverlauf** des Dokuments;
+* zugehörige Compliance-Tests, wenn das Modul Compliance aktiv ist (siehe [Details und Anhänge](documents.md));
+* die regelmäßige Überprüfung des Dokuments (siehe [Regelmäßige Überprüfung von Dokumenten](review.md)).
 
-#### Das Schnellzugriffsmenü
+Wenn Sie aus dem Verzeichnis kommen, können Sie mit Pfeilen von einem Dokument zum anderen wechseln.
 
-Ein Schnellzugriffsmenü oben links, über das Sie auf interne Diskussionen zum Vertrag, zugeordnete Aufgaben, Fragebögen, den Änderungsverlauf sowie die regelmäßige Vertragsprüfung zugreifen können. Wenn Sie über die Vertragstabelle navigieren (und mehr als einen Vertrag erfasst haben), stehen Ihnen auch Pfeile zur Verfügung, um von einem Vertrag zum nächsten zu navigieren.
+## Die Hauptaktionen
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien6.png" alt=""><figcaption><p>Das Schnellzugriffsmenü</p></figcaption></figure>
+Das Menü der Hauptaktionen oben rechts vereint:
 
-#### Das Menü der Vertragsabschnitte
+* die Schaltfläche **KI-Analyse** (Beta): Sie öffnet die KI-Analyse des Dokuments. Diese Funktion befindet sich in der Beta-Phase, setzt die Funktionen KI-Analyse und KI-Agent voraus, und ihre Ergebnisse sind mit Vorsicht zu interpretieren;
+* die Signaturschaltfläche, deren Beschriftung dem Stand des Dokuments folgt (siehe [Ein Dokument unterzeichnen](sign.md));
+* die Schaltfläche **Version** gefolgt von der Versionsnummer, die den Versionsmanager öffnet (siehe [Dokumentversionen](versions.md));
+* die Auswahl des Schritts im Prozess;
+* die Schaltfläche **Speichern**.
 
-Ein Menü oben rechts, mit dem Sie zwischen den verschiedenen auszufüllenden Abschnitten des Vertrags navigieren können (Details, Unterzeichner, Assets, Nutzer).
+Der Pfeil rechts neben **Speichern** öffnet drei Aktionen:
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien7.png" alt=""><figcaption><p>Das Menü der Vertragsabschnitte</p></figcaption></figure>
+* **Teilen**: einen Freigabelink für das Dokument erstellen.
+* **Exportieren**: das Dokument exportieren (siehe [Verträge und Richtlinien](README.md#import-und-export)).
+* **In den Papierkorb verschieben**: das Dokument in den Papierkorb legen.
 
-#### Der Bearbeitungsbereich für die Abschnittsfelder
+Ein Dokument im Papierkorb trägt das Badge **Im Papierkorb**. Dasselbe Menü bietet dann **Wiederherstellen** an, um es wieder in das Verzeichnis zu legen, und **Löschen**, um es zu löschen.
 
-Ein Vertrag besteht derzeit aus 4 Abschnitten (Details, Unterzeichner, Assets, Nutzer). Die für jeden Abschnitt auszufüllenden Felder werden auf der rechten Seite des Bildschirms angezeigt und ändern sich, wenn Sie über das Abschnittsmenü von einem Abschnitt zum anderen navigieren (siehe oben)
+<figure><img src="../../.gitbook/assets/contracts-structure-3.png" alt="Das geöffnete Menü der Schaltfläche Speichern mit den Aktionen Teilen, Exportieren und In den Papierkorb verschieben"><figcaption><p>Die Aktionen der Schaltfläche Speichern</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien8.png" alt=""><figcaption><p>Der Bearbeitungsbereich für die Abschnittsfelder</p></figcaption></figure>
+## Die Eingabe-Tabs
 
-#### Die Vorschau der Anhänge
+Vier Tabs werden auf der rechten Bildschirmseite angezeigt. Ihr Inhalt ändert sich, wenn Sie von einem zum anderen wechseln:
 
-Ein Bereich, in dem Sie die Dokumente Ihres Vertrags (den Vertrag und eventuelle Anlagen) in der Vorschau anzeigen können.
+* **Details**: die allgemeinen Informationen, die Anhänge und die benutzerdefinierten Felder (siehe [Details und Anhänge](documents.md)).
+* **Unterzeichner**: die Parteien, die das Dokument unterzeichnen (siehe [Unterzeichner](signers.md)).
+* **Assets**: die Assets, die das Dokument betrifft (siehe [Assets](assets.md)).
+* **Nutzer**: die Nutzer des Mandanten, die am Dokument arbeiten (siehe [Zugeordnete Nutzer](users.md)).
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien9.png" alt=""><figcaption><p>Der Vorschaubereich für Dokumente</p></figcaption></figure>
+Mit Ausnahme von **Details** zeigt jeder Tab in Klammern die Anzahl der Elemente an, die er enthält.
+
+<figure><img src="../../.gitbook/assets/contracts-structure-4.png" alt="Die vier Tabs Details, Unterzeichner, Assets und Nutzer"><figcaption><p>Die Tabs der Akte eines Dokuments</p></figcaption></figure>
+
+## Die Vorschau der Anhänge
+
+Der Bereich links zeigt eine Vorschau der Dateien des Dokuments: des Vertrags oder der Richtlinie und eventueller Anlagen. Sie bleibt angezeigt, egal welcher Tab geöffnet ist. Hat das Dokument noch keine Datei, bietet sie an, eine Datei abzulegen oder eine Richtlinie zu verfassen.

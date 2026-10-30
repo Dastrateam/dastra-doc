@@ -1,45 +1,54 @@
 ---
 description: >-
   Generieren Sie Verträge aus vordefinierten Vorlagen, die dynamisch mit
-  spezifischen Daten aus Ihrem Verzeichnis angereichert werden.
+  spezifischen Daten aus Ihrem Verzeichnis angereichert werden, oder erstellen
+  Sie Ihre eigenen Dokumentvorlagen.
 ---
 
-# Dynamische Vertragsvorlagen
+# Vertragsvorlagen
 
-### Wie verwenden Sie unsere Vertragsvorlagen?
+## Eine Vorlage verwenden
 
-Wenn Sie [einen Vertrag in Dastra erfassen](declare.md), können Sie bei der Erstellung die Option 'Automatisch generieren' wählen, um eine unserer dynamischen Vertragsvorlagen zu verwenden.
+Wenn Sie [ein Dokument in Dastra erstellen](declare.md), wählen Sie die Option **Automatisch generieren**, um eine dynamische Vorlage zu verwenden. Sie erhalten die Liste der verfügbaren Vorlagen, zum Beispiel die Vorlage für die Standardvertragsklauseln Ihrer Auftragsverarbeitungsverträge (DPA).
 
-Durch Auswahl dieser Option erhalten Sie Zugriff auf die Liste aller von uns angebotenen Vorlagen, wie z. B. die Vorlage zur Verwaltung der Standardvertragsklauseln Ihrer Auftragsverarbeitungsverträge (AVV).
+Bei der Vorlage mit den Standardklauseln wird das Dokument mit den Informationen aus Ihrem Verzeichnis der Verarbeitungstätigkeiten und Ihren Referenzen ausgefüllt. Je vollständiger diese sind, desto passender ist das generierte Dokument.
 
-Durch die Verwendung unserer Vorlage für Standardvertragsklauseln stellen Sie beispielsweise sicher, dass Sie die Pflichten der DSGVO gegenüber Ihren Auftragsverarbeitern einhalten, und generieren gleichzeitig mit wenigen Klicks einen vollständigen Vertrag, der dynamisch mit allen Informationen aus Ihrem Verarbeitungsverzeichnis und Ihren Referenzsystemen befüllt wird.
+<figure><img src="../../.gitbook/assets/contracts-templates-1.png" alt="Die Liste der Vorlagen, die die Option Automatisch generieren anbietet"><figcaption><p>Die zu verwendende Vorlage auswählen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien27.png" alt=""><figcaption><p>Wählen Sie die Vertragsvorlage aus, die Sie verwenden möchten</p></figcaption></figure>
+Sobald Sie die Vorlage ausgewählt haben, führt Sie ein Bereich durch mehrere Schritte. Die Schaltflächen **Weiter** und **Zurück** gehen vor oder zurück.
 
-Sobald die Vorlage ausgewählt ist, werden Sie zu einem Formular weitergeleitet, in dem Sie die für die Befüllung der Vorlage erforderlichen Informationen angeben müssen. Dieses Formular ist für jede Vorlage spezifisch und hängt von den dynamisch zu befüllenden Feldern in der Vorlage ab.
+1. **Anweisungen**: die Hinweise der Vorlage, sofern sie welche hat.
+2. **Auswahl der Optionen**: ein für jede Vorlage spezifisches Formular, das von den auszufüllenden Feldern abhängt. Für den DPA wählen Sie die betroffene Verarbeitungstätigkeit des Verzeichnisses und den Auftragsverarbeiter, mit dem Sie den Vertrag abschließen, und beantworten Fragen zu optionalen Klauseln. Klicken Sie auf **Vorlage generieren**, um zum nächsten Schritt zu gelangen.
+3. **Übersicht**: das generierte Dokument. Klicken Sie auf **Bearbeiten**, um Inhalt oder Layout zu ändern. Dastra weist Sie darauf hin, dass beim Bearbeiten von der Vorlage definierte Layoutelemente verloren gehen können.
 
-Am Beispiel des AVV werden Sie beispielsweise aufgefordert, die betroffene Verarbeitung aus Ihrem Verzeichnis auszuwählen, den Auftragsverarbeiter (aus dem Verarbeitungsdatenblatt), mit dem Sie den Vertrag abschließen möchten, sowie verschiedene Fragen zu optionalen Klauseln zu beantworten, die in den Vertrag eingefügt werden sollen.
+<figure><img src="../../.gitbook/assets/contracts-templates-2.png" alt="Der Schritt Auswahl der Optionen der DPA-Vorlage"><figcaption><p>Die Fragen der Vorlage beantworten</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien28.png" alt=""><figcaption><p>Beantworten Sie einige Fragen, damit wir die Vorlage vervollständigen können</p></figcaption></figure>
+Geben Sie im Schritt **Übersicht** den **Dokumentennamen** und die **Organisationseinheit** ein. Wählen Sie den Speicherort und das Format der generierten Datei, **PDF-Datei (.pdf)** oder **Word (.docx)**, und klicken Sie dann auf **Ein Dokument erstellen**.
 
-Sobald diese Fragen beantwortet sind, wird Ihr Vertrag automatisch generiert und dynamisch mit allen erforderlichen Informationen befüllt (je vollständiger Ihr Verzeichnis und Ihre Referenzsysteme sind, desto relevanter sind die in die Vertragsvorlage eingefügten Informationen).
+<figure><img src="../../.gitbook/assets/contracts-templates-3.png" alt="Der Schritt Übersicht mit dem Inhalt des Dokuments, dem Namen, der Organisationseinheit, dem Speicherort und dem Format"><figcaption><p>Das Dokument vor der Erstellung prüfen und bearbeiten</p></figcaption></figure>
 
-Sie haben dann die Möglichkeit, das von uns vorgeschlagene Dokument in einer Vorschauansicht zu bearbeiten oder neu zu formatieren.
+Dastra erstellt das Dokument, fügt es dem Verzeichnis hinzu und öffnet die Seite seiner Akte.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien29.png" alt=""><figcaption><p>Sie können das automatisch generierte Dokument vor der endgültigen Bestätigung überprüfen und bearbeiten</p></figcaption></figure>
+## Einen DPA aus einer Verarbeitungstätigkeit generieren
 
-Sobald Sie mit Ihrem Dokument zufrieden sind, müssen Sie nur noch Ihrem Vertrag einen Titel geben, das Generierungsformat (.docx oder .pdf) und den Speicherort auswählen und auf 'Vertrag erstellen' klicken
+Sie können auch von der betroffenen Verarbeitungstätigkeit ausgehen, ohne das Modul **Verträge und Richtlinien** zu durchlaufen. Öffnen Sie die Verarbeitungstätigkeit und dann den Schritt **Empfänger**. Öffnen Sie in der Zeile des Empfängers vom Typ Auftragsverarbeiter, mit dem Sie den DPA abschließen, das Menü und klicken Sie auf **DPA generieren**. Für diese Aktion ist die Berechtigung zum Schreiben von Verträgen erforderlich.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien30.png" alt=""><figcaption><p>Das Dokument wird generiert und direkt in unser Vertragsverwaltungsmodul eingefügt</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-templates-4.png" alt="Das Menü eines Empfängers vom Typ Auftragsverarbeiter mit der Aktion DPA generieren"><figcaption><p>Einen DPA mit einem Auftragsverarbeiter aus einer Verarbeitungstätigkeit generieren</p></figcaption></figure>
 
-### Anwendungsfall: Einen AVV aus einem Verarbeitungsdatenblatt generieren
+Dastra öffnet die Generierung mit der bereits ausgewählten DPA-Vorlage, ausgefüllt mit der Verarbeitungstätigkeit und dem von Ihnen gewählten Auftragsverarbeiter. Dieselbe Aktion gibt es in einer Verarbeitungstätigkeit als **Auftragsverarbeiter**, um im Tab für Kunden einen DPA mit einem Kunden abzuschließen.
 
-Anstatt von Ihrem Vertragsmodul aus zu starten, die AVV-Vorlage auszuwählen und die Verarbeitung und den Auftragsverarbeiter anzugeben, die Gegenstand des Vertrags sind, können Sie direkt vom betreffenden Verarbeitungsdatenblatt ausgehen.
+## Eigene Vorlagen erstellen
 
-Wählen Sie dazu die Verarbeitungstätigkeit aus, für das Sie einen AVV erstellen möchten, und gehen Sie zum Schritt Empfänger. Wählen Sie den Empfänger vom Typ Auftragsverarbeiter aus, mit dem Sie den AVV abschließen möchten, und klicken Sie auf "AVV generieren"
+Der Eintrag **Dokumentvorlagen** des Moduls listet die Vorlagen Ihres Mandanten auf. Jede Karte zeigt den Namen der Vorlage, ihren Zustand (aktiviert oder deaktiviert) und ihre Kategorie. Das Menü der Karte bietet **Bearbeiten**, **Exportieren** und **Dauerhaft löschen**.
 
-<figure><img src="../../.gitbook/assets/Verträge und Richtlinien31 (1).png" alt=""><figcaption><p>Einen AVV mit einem Auftragsverarbeiter direkt aus einem Verarbeitungsdatenblatt generieren</p></figcaption></figure>
+So erstellen Sie eine Vorlage:
 
-Sie werden dann zu unserer Vertragserstellung weitergeleitet, wobei die AVV-Vorlage automatisch ausgewählt und mit der Verarbeitung und dem Auftragsverarbeiter konfiguriert ist, auf die Sie geklickt haben.
+1. Klicken Sie auf **Vertragsvorlage hinzufügen**.
+2. Wählen Sie **Von Grund auf neu** und geben Sie den **Namen des Modells** ein, oder importieren Sie eine aus einer anderen Vorlage exportierte JSON-Datei über die Importoption des Fensters.
+3. Dastra öffnet den Vorlageneditor.
 
-Dieselbe Aktion kann in einer Verarbeitung vom Typ "Auftragsverarbeiter" durchgeführt werden, indem ein AVV mit einem Kunden erstellt wird (über die Registerkarte Kunde).
+Im Editor schreiben Sie den **Modelltext** in HTML. Mit der Syntax von [Liquid](https://shopify.github.io/liquid/) fügen Sie die Antworten ein, die das Formular der Vorlage erfasst. Diese Felder definieren Sie mit **Feld hinzufügen**, ebenso die oben im Formular angezeigten Anweisungen, die Sprache, die Kategorie und die Beschreibung der Vorlage. Eine Vorschau und ein Testformular ermöglichen es, das Ergebnis zu prüfen, bevor Sie die Vorlage veröffentlichen.
+
+Aktivieren Sie die Vorlage mit dem Schalter für den Zustand aktiviert und klicken Sie dann auf **Speichern**, um sie in der Option **Automatisch generieren** verfügbar zu machen. Eine deaktivierte Vorlage wird bei der Erstellung nicht angeboten.
+
+<figure><img src="../../.gitbook/assets/contracts-templates-5.png" alt="Der Vorlageneditor mit dem Modelltext, der Vorschau und den Feldern"><figcaption><p>Der Editor für Dokumentvorlagen</p></figcaption></figure>

@@ -1,45 +1,52 @@
 ---
-description: Erfahren Sie, wie Sie Fragebögen in Ihrem Trust Center konfigurieren
+description: >-
+  Erfahren Sie, wie Sie Fragebögen in Ihrem Trust Center konfigurieren.
 ---
 
 # Fragebögen
 
-**Aktivierung der Funktion 'Fragebögen' in Ihrem Trust Center**
+Diese Seite erklärt, wie Sie den Besuchern Ihres Trust Centers Fragebögen zur Verfügung stellen.
 
-Um die Funktion '**Fragebögen**' in Ihrem Trust Center zu aktivieren, besuchen Sie den Abschnitt der allgemeinen Konfiguration, der die Aktivierung oder Deaktivierung dieser Option ermöglicht. Nach der Aktivierung wird Ihrem Trust Center eine neue öffentliche Seite mit dem Titel '**Fragebögen**' hinzugefügt.
+## Die Funktion aktivieren
 
-<figure><img src="../../../.gitbook/assets/trust center7.png" alt=""><figcaption><p>Die Konfigurationsregisterkarte für Fragebögen Ihres Trust Centers</p></figcaption></figure>
+Aktivieren Sie im Abschnitt **Konfiguration** das Kontrollkästchen **Fragebögen**, wie unter [Startseite und allgemeine Konfiguration](home.md) beschrieben. Ihrem Trust Center wird dann eine öffentliche Seite **Fragebögen** hinzugefügt und der Abschnitt **Fragebögen** wird auf der Bearbeitungsseite freigeschaltet.
 
-#### Einen Fragebogen zu Ihrem Trust Center hinzufügen
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-1.png" alt="Abschnitt Fragebögen der Bearbeitungsseite mit zwei hinzugefügten Fragebögen"><figcaption><p>Der Konfigurationsabschnitt für die Fragebögen Ihres Trust Centers</p></figcaption></figure>
 
-Um einen Fragebogen hinzuzufügen, wählen Sie die in Ihrem Trust Center zu teilenden Fragebögen aus, indem Sie auf **Fragebögen hinzufügen** klicken. Ein Auswahlfenster öffnet sich, in dem Sie einen oder mehrere Fragebögen auswählen können. Klicken Sie nach Ihrer Auswahl auf **Hinzufügen** zur Bestätigung. Die verfügbaren Fragebögen entsprechen denen, die Sie im Fragebogen-Modul dieses Mandanten installiert haben.
+## Einen Fragebogen hinzufügen
 
-<figure><img src="../../../.gitbook/assets/trust center8.png" alt=""><figcaption></figcaption></figure>
+1. Klicken Sie im Abschnitt **Fragebögen** auf **Fragebögen hinzufügen**.
+2. Wählen Sie im Auswahlfenster einen oder mehrere Fragebögen aus. Es sind die Fragebögen, die Sie im Modul Fragebögen dieses Mandanten installiert haben.
+3. Klicken Sie zur Bestätigung auf **Hinzufügen**.
 
-Sie haben jederzeit die Möglichkeit, Fragebögen aus Ihrem Trust Center zu entfernen oder weitere hinzuzufügen. Die hinzugefügten Fragebögen sind auf der Seite 'Fragebögen' Ihres Trust Centers sichtbar.
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-2.png" alt="Auswahlfenster für Fragebogenvorlagen"><figcaption><p>Das Auswahlfenster für Fragebögen</p></figcaption></figure>
 
-#### Anweisungen für die Fragebögen
+Sie können jederzeit Fragebögen entfernen oder weitere hinzufügen. Die hinzugefügten Fragebögen sind auf der öffentlichen Seite **Fragebögen** sichtbar.
 
-Dieses Rich-Text-Feld (HTML) ermöglicht es Ihnen, eine Nachricht mit Formatierungsoptionen anzupassen und Bilder oder Videos einzubetten. Diese Nachricht wird auf der öffentlichen Seite 'Fragebögen' Ihres Trust Centers oberhalb der Liste der in Ihrem Portal installierten Fragebögen angezeigt.
+## Anweisungen für Fragebögen
 
-#### Fragebögen umbenennen
+Das Feld **Anweisungen für Fragebögen** ist ein Rich-Text-Editor. Er ermöglicht es, den Text zu formatieren und Bilder oder Videos einzubetten. Die Nachricht erscheint auf der öffentlichen Seite **Fragebögen** oberhalb der Liste der Fragebögen.
 
-Standardmäßig tragen die in Ihrem Trust Center angezeigten Fragebögen denselben Namen wie die installierte Vorlage. Sie haben jedoch die Möglichkeit, den im Portal angezeigten Namen zu ändern, ohne den Namen der Originalvorlage zu beeinflussen, indem Sie auf **Name und Beschreibung ändern** klicken.
+## Fragebögen umbenennen
 
-<figure><img src="../../../.gitbook/assets/trust center9.png" alt=""><figcaption><p>Den im Trust Center anzuzeigenden Namen und die Beschreibung ändern</p></figcaption></figure>
+Standardmäßig trägt ein Fragebogen im Trust Center den Namen der installierten Vorlage. Um den im Portal angezeigten Namen und die Beschreibung zu ändern, ohne die ursprüngliche Vorlage zu ändern, öffnen Sie das Menü des Fragebogens und klicken Sie auf **Name und Beschreibung ändern**.
 
-#### Anzeigereihenfolge der Fragebögen ändern
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-3.png" alt="Menü eines Fragebogens mit der Option Name und Beschreibung ändern"><figcaption><p>Den im Trust Center angezeigten Namen und die Beschreibung ändern</p></figcaption></figure>
 
-Nach der Auswahl Ihrer Fragebögen können Sie deren Anzeigereihenfolge per Drag-and-Drop neu anordnen. Die Reihenfolge der in Ihrem öffentlichen Trust Center angezeigten Fragebögen entspricht der, die Sie auf dieser Konfigurationsseite festgelegt haben.
+## Die Anzeigereihenfolge ändern
 
-#### Fragebögen anheften
+Ordnen Sie die Fragebögen per Drag-and-Drop neu an. Die Reihenfolge im öffentlichen Portal entspricht der Reihenfolge dieser Konfigurationsseite.
 
-Um bestimmte Fragebögen hervorzuheben, klicken Sie auf das Pinnnadel-Symbol. Angeheftete Fragebögen werden immer oben in der Liste angezeigt, unabhängig von ihrer Konfigurationsreihenfolge. Darüber hinaus sind sie auch in der Seitenleiste der Startseite Ihres Hubs zugänglich, zusätzlich zur Verfügbarkeit auf der Fragebogenseite.
+## Fragebögen anheften
 
-<figure><img src="../../../.gitbook/assets/trust center10.png" alt=""><figcaption><p>Einen Fragebogen anheften</p></figcaption></figure>
+Um einen Fragebogen hervorzuheben, klicken Sie auf sein Pinnnadel-Symbol. Angeheftete Fragebögen erscheinen unabhängig von ihrer Konfigurationsreihenfolge immer oben in der Liste. Sie erscheinen außerdem in der Seitenleiste der Startseite, wenn die Startseite aktiviert ist.
 
-#### Auswirkung der Organisationseinheitenauswahl auf die Antworten
+<figure><img src="../../../.gitbook/assets/trust-center-questionnaires-4.png" alt="Ein angehefteter Fragebogen im Abschnitt Fragebögen"><figcaption><p>Einen Fragebogen anheften</p></figcaption></figure>
 
-Die Nutzer Ihres Trust Centers können alle im Portal bereitgestellten Fragebögen beantworten. Die Antworten werden im Fragebogen-Modul gespeichert und der Organisationseinheit Ihres Trust Centers zugeordnet (siehe die allgemeine Konfiguration Ihres Trust Centers).
+## Auswirkung der Organisationseinheit auf die Antworten
 
-**Wichtiger Hinweis**: Damit ein Fragebogen im Trust Center ordnungsgemäß funktioniert, muss die Option zur Linkfreigabe aktiviert sein. Wenn Sie einen Fragebogen hinzufügen möchten, bei dem diese Option nicht aktiviert ist, wird sie beim Hinzufügen des Fragebogens automatisch aktiviert. Darüber hinaus kann die Linkfreigabe-Option nicht deaktiviert werden, solange der Fragebogen in Ihrem Trust Center vorhanden ist.
+Die Besucher Ihres Trust Centers können alle Fragebögen beantworten, die ihnen zur Verfügung gestellt werden. Die Antworten werden im Modul Fragebögen gespeichert und der Organisationseinheit des Trust Centers zugeordnet (siehe [Startseite und allgemeine Konfiguration](home.md)).
+
+{% hint style="info" %}
+Damit ein Fragebogen in einem Trust Center verwendet werden kann, muss die Linkfreigabe aktiviert sein. Ist sie es nicht, wird sie beim Hinzufügen des Fragebogens automatisch aktiviert. Sie kann nicht mehr deaktiviert werden, solange sich der Fragebogen in einem Trust Center befindet.
+{% endhint %}

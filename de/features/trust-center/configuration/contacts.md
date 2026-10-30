@@ -1,15 +1,16 @@
 ---
-description: Erfahren Sie, wie Sie die Kontakte in Ihrem Trust Center konfigurieren
+description: >-
+  Erfahren Sie, wie Sie Kontakte in Ihrem Trust Center anzeigen.
 ---
 
 # Kontakte
 
-**Aktivierung der Funktion 'Kontakte' in Ihrem Trust Center**
+## Die Funktion aktivieren
 
-Um die Funktion '**Kontakte**' in Ihrem Trust Center zu aktivieren, besuchen Sie den Abschnitt der allgemeinen Konfiguration, der die Aktivierung oder Deaktivierung dieser Option ermöglicht. Nach der Aktivierung wird ein neuer Abschnitt '**Kontakte**' in der Seitenleiste der Startseite Ihres Trust Centers angezeigt.
+Aktivieren Sie im Abschnitt **Konfiguration** das Kontrollkästchen **Kontakte**, wie unter [Startseite und allgemeine Konfiguration](home.md) beschrieben. In der Seitenleiste der Startseite Ihres Trust Centers wird dann ein Bereich **Kontakte** angezeigt. Er erscheint daher nur, wenn die Startseite aktiviert ist.
 
-Abgesehen von der Aktivierung erfordern die Kontakte keine zusätzliche Konfiguration, um in Ihrem Trust Center angezeigt zu werden.
+Abgesehen von der Aktivierung erfordern die Kontakte keine zusätzliche Konfiguration.
 
-#### Anzeige der Kontakte und Auswirkung der Organisationseinheitenauswahl
+## Anzeige der Kontakte und Auswirkung der Organisationseinheit
 
-Die in der Seitenleiste angezeigten Kontakte umfassen die Datenschutzbeauftragten, Vertreter in der Europäischen Union und rechtliche Vertreter, die in der mit Ihrem Trust Center verknüpften Organisationseinheit hinterlegt sind (siehe ["Organisationseinheiten konfigurieren"](../../../getting-started/setup/organizational-units.md)), sowie gegebenenfalls die Datenschutzbeauftragten, Vertreter in der Europäischen Union und rechtliche Vertreter aller untergeordneten Organisationseinheiten dieser Einheit.
+Die in der Seitenleiste angezeigten Kontakte umfassen die Datenschutzbeauftragten, die Vertreter in der Europäischen Union und die gesetzlichen Vertreter, die in der mit Ihrem Trust Center verknüpften Organisationseinheit hinterlegt sind (siehe [Organisationseinheiten einrichten](../../../getting-started/setup/organizational-units.md)). Falls vorhanden, umfassen sie auch die der untergeordneten Einheiten dieser Einheit.

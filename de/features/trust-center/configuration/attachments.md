@@ -1,17 +1,22 @@
 ---
-description: Erfahren Sie, wie Sie Dokumente in Ihrem Trust Center bereitstellen
+description: >-
+  Erfahren Sie, wie Sie Dokumente in Ihrem Trust Center konfigurieren.
 ---
 
 # Dokumente
 
-**Aktivierung der Funktion 'Dokumente' in Ihrem Trust Center**
+Diese Seite erklärt, wie Sie den Besuchern Ihres Trust Centers Dokumente zur Verfügung stellen.
 
-Um die Funktion '**Dokumente**' in Ihrem Trust Center zu aktivieren, besuchen Sie den Abschnitt der allgemeinen Konfiguration, der die Aktivierung oder Deaktivierung dieser Option ermöglicht. Nach der Aktivierung wird Ihrem Trust Center eine neue öffentliche Seite mit dem Titel 'Dokumente' hinzugefügt.
+## Die Funktion aktivieren
 
-<figure><img src="../../../.gitbook/assets/trust center11.png" alt=""><figcaption><p>Die Konfigurationsregisterkarte für Dokumente</p></figcaption></figure>
+Aktivieren Sie im Abschnitt **Konfiguration** das Kontrollkästchen **Dokumente**, wie unter [Startseite und allgemeine Konfiguration](home.md) beschrieben. Ihrem Trust Center wird dann eine öffentliche Seite **Dokumente** hinzugefügt und der Abschnitt **Dokumente** wird auf der Bearbeitungsseite freigeschaltet.
 
-#### Dokumente zu Ihrem Trust Center hinzufügen
+<figure><img src="../../../.gitbook/assets/trust-center-attachments-1.png" alt="Abschnitt Dokumente der Bearbeitungsseite mit der Liste der bereitgestellten Dateien"><figcaption><p>Der Konfigurationsabschnitt für Dokumente</p></figcaption></figure>
 
-Fügen Sie in dieser Registerkarte Dateien hinzu (durch Hochladen oder Auswahl aus Ihren bestehenden Dateien der Dokumentenverwaltung), um sie öffentlich in der Registerkarte Dokumente Ihres Trust Centers bereitzustellen (zur Einsicht und zum Download).
+## Dokumente zu Ihrem Trust Center hinzufügen
+
+Fügen Sie im Abschnitt **Dokumente** Dateien hinzu, indem Sie sie hochladen oder aus den vorhandenen Dateien der Dokumentenverwaltung auswählen. Sie werden dann auf der öffentlichen Seite **Dokumente** Ihres Trust Centers aufgelistet. Dateien, die Sie aus diesem Abschnitt hochladen, werden im Ordner **Trust Center** der Dokumentenverwaltung gespeichert.
+
+Standardmäßig muss ein Besucher den Zugriff auf ein Dokument beantragen, bevor er es herunterladen kann. Wie Sie dieses Verhalten ändern, erfahren Sie unter [Sicherheit](security.md).
 
 [Mehr Informationen zur Dokumentenverwaltung in Dastra.](../../files/README.md)

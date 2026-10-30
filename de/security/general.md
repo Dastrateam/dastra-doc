@@ -9,18 +9,24 @@ description: >-
 
 Bei Dastra nehmen wir die Sicherheit sehr ernst. Hier einige Informationen, die wir zur Umsetzung von Sicherheitsmaßnahmen teilen:
 
+{% hint style="info" %}
+Die Sicherheitseinstellungen der Organisation (verpflichtende starke Authentifizierung, IP-Adressfilterung, Filterung der E-Mail-Domains, Richtlinie zur Passwortaktualisierung, automatische Abmeldung, Aufbewahrung von Sicherheitsprotokollen, SIEM-Streaming) sind den Organisationseigentümern und dem Enterprise-Plan vorbehalten. Sie befinden sich unter **Konfiguration der Organisation** > **Sicherheit**.
+{% endhint %}
+
 ## Sicheres Cloud-Hosting
 
 Wir lagern das Hosting der Plattformdaten an Microsoft Azure aus. Wir haben diese Plattform gewählt, weil sie bei unseren Kunden weit verbreitet ist (MS 365...) und sie ein Sicherheitsniveau bietet, das [zu den höchsten auf dem Markt](https://learn.microsoft.com/de-de/azure/compliance/) gehört.
 
 Die Datenspeicherorte befinden sich in Paris (Produktionsdaten) und Marseille (Backups) in Frankreich. Eine Datenredundanz wird im Rechenzentrum Amsterdam durchgeführt.
 
+Für eine dedizierte Instanz in einer souveränen Cloud siehe [Dastra auf Bleu (souveräne Cloud)](bleu.md).
+
 ## **Zwei-Faktor-Authentifizierung**
 
 Die Zwei-Faktor-Authentifizierung funktioniert unter Verwendung des TOTP-Protokolls.\
-Jeder Nutzer kann die Zwei-Faktor-Authentifizierung individuell aktivieren. Es ist für alle Organisationseigentümer möglich, die Verwendung der Zwei-Faktor-Authentifizierung zu erzwingen.
+Jeder Nutzer kann die Zwei-Faktor-Authentifizierung individuell aktivieren. Organisationseigentümer können sie außerdem für alle internen Nutzer, die von der Organisation verwaltet werden, verpflichtend machen.
 
-[Mehr erfahren über die Zwei-Faktor-Authentifizierung](mfa.md)
+Siehe [Zwei-Faktor-Authentifizierung](mfa.md).
 
 ## Single Sign On (SSO) und SCIM
 
@@ -42,13 +48,17 @@ Die gesamten Verschlüsselungsschlüssel werden **in einem von Dastra verwaltete
 
 Wir lassen die Sicherheit der Anwendung jährlich von einem unabhängigen externen Auditor prüfen.
 
-Der letzte Test wurde im September 2024 durchgeführt und hat keine kritischen Schwachstellen ergeben.
+Der letzte Test hat keine kritischen Schwachstellen ergeben.
 
 Unsere Sicherheitstestmethodik folgt den Empfehlungen des **OWASP** und besteht aus verschiedenen Phasen, von der Open-Source-Informationsrecherche (Reconnaissance) bis zur Ausnutzung entdeckter Schwachstellen.
 
 ## **Sicherheits-Audit-Protokolle**
 
 Die Organisationsadministratoren können alle Änderungen an der Nutzerverwaltung, den Mandanten und den Zugriffsberechtigungen nachverfolgen.
+
+Organisationseigentümer legen unter **Konfiguration der Organisation** > **Sicherheit** in der Karte **Aufbewahrung von Sicherheitsprotokollen** fest, wie lange die Sicherheitsprotokolle aufbewahrt werden: von 30 Tagen bis zu 3 Jahren (empfohlen: 180 Tage). Ältere Protokolle werden jede Nacht bereinigt.
+
+Um diese Ereignisse fortlaufend an Ihr Überwachungstool zu übertragen, siehe [SIEM-Streaming](../features/settings/siem.md).
 
 ## Eindeutige Kennungen
 
@@ -66,13 +76,17 @@ Bei Löschung eines Kontos werden die Daten 1 Monat vor ihrer endgültigen Lösc
 
 Mindestens **10 Zeichen** mit **4 Zeichentypen** (Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen)
 
-Temporäre Kontosperre nach mehreren Fehlversuchen.
+Verzögerung beim Zugriff auf das Konto nach mehreren fehlgeschlagenen Anmeldeversuchen.
 
 Verschlüsselung der Passwörter in der Datenbank.
 
 ## Richtlinie zur Passworterneuerung
 
-Dastra ermöglicht es dem Kontoadministrator über [die Seite zur Sicherheitsverwaltung](https://app.dastra.eu/general-settings/security), eine Richtlinie zur Passworterneuerung für alle Ihre Nutzer festzulegen.
+Organisationseigentümer können unter [Konfiguration der Organisation > Sicherheit](https://app.dastra.eu/general-settings/security) in der Karte **Richtlinie zur Passwortaktualisierung** eine Gültigkeitsdauer für Passwörter festlegen. Sie gilt für die internen Nutzer der Organisation, die kein SSO verwenden. Nach Ablauf der Frist erstellt der Nutzer bei der nächsten Anmeldung ein neues Passwort.
+
+## Automatische Abmeldung
+
+Organisationseigentümer können die Karte **Automatische Abmeldung** aktivieren: Alle internen Nutzer, die von der Organisation verwaltet werden, werden dann nach 1 Stunde Inaktivität abgemeldet.
 
 ## **API-Token-Kontrollen**
 
@@ -94,12 +108,10 @@ Der Zugriff auf die Organisation kann auf zugelassene IP-Adressbereiche beschrä
 
 ## E-Mail-Domain-Zulassungsliste
 
-Administratoren können eine Whitelist erlaubter E-Mail-Domains definieren (z. B.: gmail.com). Für diese Einstellungen navigieren Sie zu **Konfiguration der Organisation** => **Sicherheit** => **Filtern Sie die IP-Adressen der Nutzer**
+Organisationseigentümer können die Liste der erlaubten E-Mail-Domains festlegen (z. B. `example.com`): Nur Nutzer, deren E-Mail-Adresse zu einer dieser Domains gehört, können sich anmelden. Navigieren Sie dazu zu **Konfiguration der Organisation** > **Sicherheit**, Karte **Filtern Sie die E-Mail-Domains Ihrer Nutzer**. Die Einrichtung kann einige Minuten in Anspruch nehmen.
 
 ## Strikte Trennung zwischen Produktions- und Entwicklungsumgebungen
 
 Abgesehen von einigen autorisierten Personen nutzen und greifen die Anwendungsentwickler niemals auf die Daten der Produktionsumgebung zu. Diese Trennung ist strikt und kann nicht umgangen werden.
 
 In Test- oder Vorproduktionsumgebungen verwenden wir ausschließlich von uns erstellte Testdatensätze.
-
-##

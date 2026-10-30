@@ -1,15 +1,16 @@
 ---
-description: Erfahren Sie, wie Sie ein Organigramm in Ihrem Trust Center konfigurieren
+description: >-
+  Erfahren Sie, wie Sie Ihr Organigramm in Ihrem Trust Center anzeigen.
 ---
 
 # Organigramm
 
-**Aktivierung der Funktion 'Organigramm' in Ihrem Trust Center**
+## Die Funktion aktivieren
 
-Um die Funktion '**Organigramm**' in Ihrem Trust Center zu aktivieren, besuchen Sie den Abschnitt der allgemeinen Konfiguration, der die Aktivierung oder Deaktivierung dieser Option ermöglicht. Nach der Aktivierung wird Ihrem Trust Center eine neue öffentliche Seite mit dem Titel '**Organigramm**' hinzugefügt.
+Aktivieren Sie im Abschnitt **Konfiguration** das Kontrollkästchen **Organigramm**, wie unter [Startseite und allgemeine Konfiguration](home.md) beschrieben. Ihrem Trust Center wird dann eine öffentliche Seite **Organigramm** hinzugefügt.
 
-Abgesehen von der Aktivierung erfordert das Organigramm keine zusätzliche Konfiguration, um in Ihrem Trust Center angezeigt zu werden.
+Abgesehen von der Aktivierung erfordert das Organigramm keine zusätzliche Konfiguration.
 
-#### Anzeige des Organigramms und Auswirkung der Organisationseinheitenauswahl
+## Anzeige des Organigramms und Auswirkung der Organisationseinheit
 
-Sobald die Funktion aktiviert ist, wird das Organigramm der Organisationseinheit Ihres Trust Centers (diese Einheit und alle ihre Untereinheiten) auf der Seite 'Organigramm' Ihres Trust Centers angezeigt.
+Das auf der Seite **Organigramm** angezeigte Organigramm ist das der Organisationseinheit Ihres Trust Centers: diese Einheit und alle ihre untergeordneten Einheiten.
