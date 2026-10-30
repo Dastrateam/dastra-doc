@@ -138,6 +138,8 @@ Sie legen die Anmeldeart jedes Nutzers in der [Nutzerverwaltung des Abonnements]
 
 Wenn das SSO für alle Nutzer erzwungen wird, zeigt das Profil stattdessen eine entsprechende Meldung an.
 
+Um die Anmeldeart mehrerer Nutzer auf einmal zu ändern, aktivieren Sie sie in der Liste **Nutzer** und öffnen Sie dann **Bitte wählen Sie eine Sammelaktion aus** über der Liste und wählen Sie **Anmeldemodus ändern**. Wählen Sie die Methode unter **Standardmäßige Verbindungsmethode** und speichern Sie dann. Externe Nutzer und Nutzer, die in ein global zugewiesenes SSO gezwungen sind, bleiben unberührt. Die Aktion erscheint, wenn SSO Teil Ihres Tarifs ist.
+
 <figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="Ein Nutzerprofil mit der Liste Standardmäßige Verbindungsmethode"><figcaption><p>Das Feld <strong>Standardmäßige Verbindungsmethode</strong></p></figcaption></figure>
 
 Die Anmeldeart können Sie auch beim Einladen neuer Nutzer festlegen.

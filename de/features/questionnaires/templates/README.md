@@ -177,6 +177,12 @@ Die Aktion **Versionen vergleichen** zeigt zwei Versionen nebeneinander. Jeder A
 
 <figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Vergleich zweier Versionen einer Fragebogenvorlage"><figcaption><p>Zwei Versionen einer Fragebogenvorlage vergleichen</p></figcaption></figure>
 
+Um eine andere Version zur Hauptversion zu machen, klicken Sie in der Liste der Versionen auf **In der Hauptversion festlegen**. Das Fenster **Make this version the main one?** vergleicht die neue Hauptversion mit der aktuellen, bevor Sie bestätigen. Bereits erfasste Antworten bleiben der Version zugeordnet, auf der sie gegeben wurden.
+
+### Aus der Bibliotheksvorlage aktualisieren
+
+Wenn Sie eine Vorlage aus der Dastra-Bibliothek installiert haben und die Bibliotheksvorlage danach aktualisiert wird, weist eine Meldung oben auf der Seite der Vorlage darauf hin, dass die Vorlage, aus der sie erstellt wurde, aktualisiert wurde. Die Meldung zeigt die aktuelle und die neue Version mit der Anzahl der hinzugefügten, geänderten und entfernten Elemente. Klicken Sie auf **Versionen vergleichen**, um die Einzelheiten zu sehen. In diesem Fenster können Sie die Änderungen übernehmen oder auf **Eine Version erstellen** klicken, um die aktuelle Vorlage zu behalten und abzuzweigen. Klicken Sie auf **Aus der Bibliothek entfernen**, um der Bibliotheksvorlage nicht mehr zu folgen.
+
 {% hint style="info" %}
 Die Anzahl der verfügbaren Vorlagen hängt von Ihrem Abonnement ab. Dieses Kontingent gilt gemeinsam für alle Mandanten Ihrer Organisation. Auch der Papierkorb der Vorlagen zählt zum Kontingent: Denken Sie daran, ihn regelmäßig zu leeren, um Plätze freizugeben.
 {% endhint %}

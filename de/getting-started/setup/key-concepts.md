@@ -16,6 +16,7 @@ Bevor Sie Dastra nutzen, sollten Sie sich die Zeit nehmen, die Begriffe zu verst
 * [Entität](key-concepts.md#entitat)
 * [Abteilung](key-concepts.md#abteilung)
 * [Inhaber der Organisation](key-concepts.md#inhaber-der-organisation)
+* [Credits und Kontingente](key-concepts.md#credits-und-kontingente)
 
 ***
 
@@ -95,3 +96,17 @@ Abteilungen sind optional. Sie sind nützlich, sobald die Organisation mehrere B
 Der **Inhaber** ist der Hauptadministrator der Organisation. Nur Inhaber können Mandanten erstellen, die Einstellungen der Organisation ändern, angepasste Rollen erstellen und andere Inhaber hinzufügen oder entfernen.
 
 Beschränken Sie die Anzahl der Inhaber, damit die Governance klar bleibt. Andere Nutzer erhalten Rollen, die zu ihren Anforderungen passen: siehe [Rollen und Berechtigungen verwalten](roles.md).
+
+***
+
+## Credits und Kontingente
+
+Ihr Abonnement legt Credits fest, also Grenzen dafür, was Ihre Organisation erstellen oder verbrauchen kann. Sie werden von allen Mandanten der Organisation gemeinsam genutzt.
+
+* **Nutzer**: aktive Nutzer plus die Nutzer, die mit einer ausstehenden oder abgelaufenen Einladung verknüpft sind. Wenn Sie den Nutzer einer Einladung entfernen, wird ein Platz frei. Siehe [Nutzer einladen](users.md).
+* **Entitäten**: Das Erstellen einer Entität verbraucht einen Entitäts-Credit. Siehe [Organisationseinheiten erstellen und einrichten](organizational-units.md).
+* **Fragebogenvorlagen**: Die Vorlagen aller Ihrer Mandanten zählen mit, auch die im Papierkorb. Siehe [Eine Fragebogenvorlage erstellen](../../features/questionnaires/templates/README.md).
+* **Verarbeitungstätigkeiten, Dokumentenspeicher, Cookie-Einwilligungsprotokolle, Aktivitätsverlauf**: Die Seite **Abonnement** der Organisationseinstellungen zeigt für jeden dieser Punkte den Credit Ihres Tarifs.
+* **KI**: ein monatliches Kontingent an KI-Credits, beschrieben unter [Funktionsweise](../../features/general/ai-assistant/how-it-works.md#ki-credits-und-kontingente).
+
+Wird eine Grenze erreicht, weist der betroffene Bildschirm darauf hin und bietet einen Link, um das Dastra-Team zu kontaktieren und Ihren Credit zu erhöhen.

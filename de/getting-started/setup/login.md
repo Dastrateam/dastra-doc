@@ -50,6 +50,12 @@ Ihre Passkeys registrieren Sie unter **Kontosicherheit** > **Meine Passkeys verw
 
 Klicken Sie im zweiten Schritt auf **Bitte senden Sie den Zugangslink per E-Mail.** Dastra sendet einen Link an Ihre E-Mail-Adresse, mit dem Sie sich ohne Passwort anmelden.
 
+### Die Hosting-Region wählen
+
+Wenn Ihre Dastra-Umgebung mehrere Hosting-Regionen anbietet, zeigt die Anmeldeseite ein Feld **Hosting region** mit der aktuellen Region: **Europe region (default)** oder **Bleu cloud France**. Klicken Sie auf das Feld, um die andere Region zu öffnen, und melden Sie sich dort an.
+
+Klicken Sie auf die Schaltfläche **?** neben dem Feld (**Learn more about hosting regions**), um die Regionen zu vergleichen. Ein Mandant wird in genau einer Region gehostet, und die beiden Regionen werden weder gespiegelt noch synchronisiert: Ein Konto der einen Region kann sich nicht in der anderen anmelden. Um einen bestehenden Mandanten in die andere Region zu verlegen, verwenden Sie **Contact our sales team** im selben Fenster. Siehe [Dastra auf Bleu](../../security/bleu.md) für die Adressen und die Hosting-Einzelheiten jeder Region.
+
 ## Ihr Passwort zurücksetzen
 
 1. Klicken Sie im zweiten Anmeldeschritt auf **Haben Sie Ihr Passwort vergessen?**.

@@ -136,3 +136,5 @@ Klicken Sie bei jeder Sprache auf **Bearbeiten**, um die Texte zu öffnen, die i
 
 Das so konfigurierte Widget ermöglicht es betroffenen Personen, die Art des Rechts auszuwählen, das sie ausüben möchten, und ihre Anfrage einzureichen.\
 Das Formular passt sich der Konfiguration an (Sprachen, Erscheinungsbild, Felder).
+
+Am Ende des Formulars erhält die anfragende Person eine E-Mail mit einem Bestätigungslink und einem 6-stelligen Code und gibt den Code im Formular ein: **Bitte geben Sie den 6-stelligen Code ein, den Sie soeben per E-Mail erhalten haben.** Die Anfrage wird erst berücksichtigt, wenn die Adresse bestätigt ist. Siehe die [häufig gestellten Fragen](faq.md).

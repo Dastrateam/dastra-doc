@@ -60,6 +60,10 @@ Dastra übermittelt nur die für die angeforderte Erstellung erforderlichen Info
 
 Die genau übermittelten Daten pro Funktion sind im Abschnitt [An das Modell übermittelte Daten](how-it-works.md#an-das-modell-ubermittelte-daten) aufgeführt.
 
+Bevor eine Erstellungsanfrage gesendet wird, wendet Dastra einen Filter an, der die E-Mail-Adressen, Telefonnummern, Postanschriften, Postleitzahlen und vollständigen Namen maskiert, die er im Text erkennt. Der Filter folgt europäischen Formaten. Daten, Kennungen und Standardnummern wie ISO 27001 lässt er unverändert, damit das Modell die benötigten fachlichen Daten behält.
+
+Die **Sprachdiktat-Funktion** im Nachrichtenfeld von Dastra AI sendet Ihre Aufnahme an einen Spracherkennungsdienst, der den transkribierten Text zurückgibt. Dastra verwendet Azure Speech auf der Standardplattform und Mistral Voxtral auf [Bleu](../../../security/bleu.md).
+
 ***
 
 ## Was Dastra nicht tut

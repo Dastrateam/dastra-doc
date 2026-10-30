@@ -41,6 +41,7 @@ Die Einzelheiten finden Sie unter [Verbindungen, Anwendungsfälle und Feld-Mappi
 | **Eingehende E-Mails** | Wandelt die E-Mails, die an eine dedizierte Erfassungsadresse gesendet werden, in Aufgaben, Anfragen, Datenschutzverletzungen, Verträge oder Verarbeitungstätigkeiten um | [E-Mail-Adressen für Datenerfassung](../settings/mailboxes.md) |
 | **SIRENE (INSEE)** | Füllt die Angaben Ihrer Stakeholder aus dem französischen Unternehmensregister aus | [SIRENE (INSEE)](#integration-sirene-insee) |
 | **KI-Anbieter** | Verbindet jeden OpenAI-kompatiblen KI-Anbieter mit dem Dastra-Assistenten | [Funktionsweise](../general/ai-assistant/how-it-works.md) |
+| **MCP-Server** | Lässt Ihre KI-Tools (Claude, Le Chat, VS Code usw.) Dastra-Daten lesen und aktualisieren | [Der MCP-Server](../general/ai-assistant/mcp.md) |
 | **Single Sign-on (SSO)** | Ermöglicht Ihren Nutzern die Anmeldung mit Ihrem eigenen Identitätsanbieter | [Single Sign On (SSO)](../settings/sso/README.md) |
 | **SIEM-Streaming** | Streamt Ihre Sicherheits-Audit-Ereignisse in Echtzeit an Ihr SIEM | [SIEM-Streaming](../settings/siem.md) |
 | **Zapier** | Verbindet Dastra über automatisierte Workflows mit Tausenden von Anwendungen | [Zapier](zapier/README.md) |

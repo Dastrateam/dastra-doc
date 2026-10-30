@@ -20,6 +20,12 @@ Nutzer mit SCIM aus Ihrem Verzeichnis bereitstellen:
 [SCIM](scim.md)
 {% endcontent-ref %}
 
+Die Sicherheitsregeln Ihrer Organisation festlegen und die Sicherheitsprotokolle einsehen:
+
+{% content-ref url="security-center.md" %}
+[Sicherheit der Organisation und Sicherheitsprotokolle](security-center.md)
+{% endcontent-ref %}
+
 Audit-Logs an Ihr SIEM senden:
 
 {% content-ref url="siem.md" %}

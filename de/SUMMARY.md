@@ -51,8 +51,10 @@
 ## ⚙️ Funktionen <a href="#features" id="features"></a>
 
 * [Dashboard](features/dashboard.md)
+* [Newsfeed und Ressourcen](features/news-and-resources.md)
 * [Allgemeines](features/general/README.md)
   * [Erweiterte Filter](features/general/filters.md)
+  * [Listen, Sammelaktionen und Papierkorb](features/general/lists.md)
   * [Daten importieren (Excel, CSV)](features/general/import.md)
   * [Tags verwalten](features/general/tags.md)
   * [Elemente zusammenführen](features/general/merge.md)
@@ -261,6 +263,7 @@
     * [Active Directory (Microsoft Entra ID)](features/settings/sso/entra-id.md)
     * [Okta](features/settings/sso/okta.md)
     * [Bekannte Probleme](features/settings/sso/known-problems.md)
+  * [Sicherheit der Organisation und Sicherheitsprotokolle](features/settings/security-center.md)
   * [SIEM-Streaming](features/settings/siem.md)
   * [SCIM](features/settings/scim.md)
   * [IP-Filterung](features/settings/ip-filtering.md)
