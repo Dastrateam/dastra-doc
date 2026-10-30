@@ -6,7 +6,7 @@ description: HR referential from CNIL, the French data protection authorities.
 
 CNIL has published a referential dedicated to HR data processing activities, available on [**this link**](https://www.cnil.fr/fr/publication-du-referentiel-relatif-la-gestion-des-ressources-humaines).
 
-Please find below materials ready for download made available by Dastra to help you integrate this referential faster into your record of processing.
+Please find below materials ready for download made available by Dastra to help you integrate this referential faster into your record of processing. Import them with the [Excel and CSV import](../features/general/import.md).
 
 ## 1. Processing labels
 

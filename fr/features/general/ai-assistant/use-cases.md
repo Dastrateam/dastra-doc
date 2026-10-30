@@ -62,6 +62,10 @@ L'assistant peut analyser un traitement existant et produire une évaluation de 
 
 Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF ou l'envoyer directement à l'impression. Ce document peut servir de pièce jointe dans votre dossier de conformité.
 
+### Analyser un contrat, un acteur, une application ou une réponse de questionnaire
+
+La même analyse est disponible sur les contrats, les acteurs, les applications et les réponses de questionnaire. Ouvrez la fiche, puis cliquez sur le bouton **Analyse IA**. La fenêtre affiche la note globale de A à F, les critères analysés avec leur justification et les tâches suggérées. **Historique des analyses** permet de comparer avec une analyse précédente, et **Imprimer l'analyse** exporte le résultat.
+
 ### Proposer des tags
 
 Dans un champ **Tags** encore vide, un bouton d'assistant IA propose des tags à partir du nom et de la description de l'objet. Cliquez dessus : les tags proposés remplissent le champ. Pour la gestion des tags, consultez la page [Gestion des tags](../tags.md).

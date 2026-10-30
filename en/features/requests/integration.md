@@ -22,6 +22,8 @@ To start with, you need to set up the widget in the list of forms: in the **Requ
 
 <figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="List of forms with the Create form button"><figcaption><p>The list of forms</p></figcaption></figure>
 
+Always copy the code from the application: the address of the script depends on the hosting region of your organization (`cdn-bleu.dastra.eu` instead of `cdn.dastra.eu` on [Bleu](../../security/bleu.md)).
+
 Here is a simple example of how to integrate the widget (in popup mode with an open button):
 
 ```html

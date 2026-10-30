@@ -51,8 +51,10 @@
 ## ⚙️ Features
 
 * [Dashboard](features/dashboard.md)
+* [News and resources](features/news-and-resources.md)
 * [General](features/general/README.md)
   * [Advanced Filters](features/general/filters.md)
+  * [Lists, bulk actions and recycle bin](features/general/lists.md)
   * [Import your data (Excel, Csv)](features/general/import.md)
   * [Tag management](features/general/tags.md)
   * [Merging elements](features/general/merge.md)
@@ -261,6 +263,7 @@
     * [Active Directory (Microsoft Entra ID)](features/settings/sso/entra-id.md)
     * [Okta](features/settings/sso/okta.md)
     * [Known problems](features/settings/sso/known-problems.md)
+  * [Organization security and security logs](features/settings/security-center.md)
   * [SIEM streaming](features/settings/siem.md)
   * [SCIM](features/settings/scim.md)
   * [IP filtering](features/settings/ip-filtering.md)

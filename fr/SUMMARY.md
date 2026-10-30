@@ -51,8 +51,10 @@
 ## ⚙️ Les fonctionnalités <a href="#features" id="features"></a>
 
 * [Tableau de bord](features/dashboard.md)
+* [Veille et ressources](features/news-and-resources.md)
 * [Généralités](features/general/README.md)
   * [Filtres avancés](features/general/filters.md)
+  * [Listes, actions groupées et corbeille](features/general/lists.md)
   * [Importer vos données (Excel, Csv)](features/general/import.md)
   * [Gestion des tags](features/general/tags.md)
   * [Fusion d'éléments](features/general/merge.md)
@@ -261,6 +263,7 @@
     * [Active Directory (Microsoft Entra ID)](features/settings/sso/entra-id.md)
     * [Okta](features/settings/sso/okta.md)
     * [Problèmes connus](features/settings/sso/known-problems.md)
+  * [Sécurité de l'organisation et journaux de sécurité](features/settings/security-center.md)
   * [Streaming SIEM](features/settings/siem.md)
   * [SCIM](features/settings/scim.md)
   * [Filtrage IP](features/settings/ip-filtering.md)
@@ -305,3 +308,7 @@
 * [Problèmes connus](other/known-problems.md)
 * [Notes de version](https://www.dastra.eu/fr/category/release/10)
 * [Webinaires](https://www.dastra.eu/fr/guide/categories/webinar/26)
+
+## Référentiels <a href="#frameworks" id="frameworks"></a>
+
+* [Référentiel RH de la CNIL](frameworks/cnil-hr.md)

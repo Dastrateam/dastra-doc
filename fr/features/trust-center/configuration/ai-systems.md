@@ -32,6 +32,8 @@ Aucun réglage ne sélectionne les systèmes un par un. Dès que l'onglet est ac
 
 Pour retirer un système du portail, changez son unité organisationnelle, modifiez son état ou archivez-le.
 
+Lorsque l'unité organisationnelle du Trust Center a des unités enfants, les visiteurs disposent d'un filtre **Unité organisationnelle** au-dessus de la liste. Il ne propose que l'unité du Trust Center et ses unités enfants.
+
 {% hint style="warning" %}
 Activer l'onglet publie immédiatement tous les systèmes qui remplissent ces conditions. Avant de le faire, vérifiez la liste des systèmes de l'unité dans le [registre des systèmes d'IA](../../ai-systems/record.md).
 {% endhint %}

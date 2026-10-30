@@ -84,6 +84,10 @@ description: Welcome to the Dastra documentation.
 [privacy-hubs](features/trust-center/README.md)
 {% endcontent-ref %}
 
+{% content-ref url="features/compliance/README.md" %}
+[compliance](features/compliance/README.md)
+{% endcontent-ref %}
+
 {% content-ref url="features/reports/README.md" %}
 [custom-reporting](features/reports/README.md)
 {% endcontent-ref %}

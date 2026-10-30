@@ -54,3 +54,14 @@ In the panel that opens, **Choose the library source**, **Choose the destination
 The **Details** button lets you preview a template.&#x20;
 
 Your processing activities are then created in the background.
+
+## Contribute a template
+
+You can submit one of your processing activities, questionnaire templates or asset templates to the Dastra libraries, so that all Dastra users can use it once our team approves it.
+
+1. Open the processing activity or the template, then click **Contribute**.
+2. Enter the **Name of the contribution**. Add a comment for our team in **Your comment** if it helps the review.
+3. Choose whether you want to be credited: when you answer yes to **Would you like to be credited for this contribution?** and the contribution is approved, your avatar and username are displayed with the template.
+4. Accept the sharing of the whole template for publication in the Dastra library, then submit.
+
+To follow your contributions, open **Workspace settings** > **Contributions**. This page requires the permission to write contributions. It lists, for each contribution, its name, the user, its **Status**, whether it is **Published** and its type. Filter the list by status and type, open a contribution to read **Outcome of your contribution**, the comment left by our team, or click **Withdraw this contribution** to ask for its removal from the library.

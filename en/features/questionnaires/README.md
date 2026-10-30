@@ -12,11 +12,23 @@ To open the module, click **Questionnaires** in the left menu. The menu has thre
 * **View questionnaires**: the responses to all questionnaires scheduled in the workspace;
 * **My responses**: the questionnaires addressed to you, as a respondent or as an approver.
 
+## Answer a questionnaire addressed to you
+
+If you are a respondent or an approver, open **Questionnaires** > **My responses**. The list shows only the questionnaires addressed to you, with their deadline, respondents, status and completion rate. A questionnaire past its deadline carries the **Overdue** badge.
+
+1. Use the tabs above the list to filter by status: **All**, **Pending validation**, **Validated** or **Overdue**.
+2. Click a line to open the questionnaire and answer it.
+3. When you have answered all the required questions, finalize the questionnaire. It then goes to its approvers: see [Validate a questionnaire](validate.md).
+
+The menu of a line also offers **Share**, **Export** and **Cancel questionnaire**, depending on your permissions. Questionnaires you move to the recycle bin appear when you turn on **View recycle bin**, as described in [Delete a questionnaire or a template](delete.md).
+
 ## Create a template
 
 {% content-ref url="templates/README.md" %}
 [Create a questionnaire template](templates/README.md)
 {% endcontent-ref %}
+
+The number of templates depends on your subscription: see [Credits and quotas](../../getting-started/setup/key-concepts.md#credits-and-quotas).
 
 ## Schedule a questionnaire
 

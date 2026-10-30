@@ -139,6 +139,8 @@ L'action **Ajouter une tâche** comporte les champs **Assignée à** et **Propri
 
 La variable **Responsable de l'UO** confie la tâche au responsable de l'unité organisationnelle de l'objet déclencheur. Si cette unité n'a pas de responsable, celui de l'unité parente la plus proche est retenu. Si l'objet n'a pas d'unité organisationnelle, l'action utilise l'**Unité organisationnelle par défaut** sélectionnée dans l'action, avec la même règle. Si aucun responsable n'est trouvé, la tâche est créée sans assigné, sans bloquer la règle.
 
+Pour répartir le travail dans une équipe, choisissez **Sélectionnez un utilisateur dans l'équipe** dans l'action **Définir utilisateur assigné**, puis sélectionnez l'équipe dans **Sélectionnez une équipe**. Dastra choisit un utilisateur de l'équipe selon le modèle du tourniquet : à chaque déclenchement de la règle, le membre suivant de l'équipe est choisi.
+
 ### Lier un modèle de message à une action
 
 Pour les règles liées aux **demandes d'exercice de droits**, l'action **Envoyer un message de demande** peut s'appuyer sur un **modèle de message** existant plutôt que sur un contenu saisi manuellement.

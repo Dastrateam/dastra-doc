@@ -9,7 +9,7 @@ description: >-
 This page describes the security measures Dastra applies to protect your data: hosting, encryption, authentication, access control and backups.
 
 {% hint style="info" %}
-The organization security settings (mandatory strong authentication, IP address filtering, email domain filtering, password renewal policy, automatic sign-out, security log retention, SIEM streaming) are reserved for organization owners and for the Enterprise plan. They are in **Organisation Configuration** > **Security**.
+The organization security settings (mandatory strong authentication, IP address filtering, email domain filtering, password renewal policy, automatic sign-out, security log retention, SIEM streaming) are reserved for organization owners and for the Enterprise plan. They are in **Organisation Configuration** > **Security**. For each setting, see [Organization security and security logs](../features/settings/security-center.md).
 {% endhint %}
 
 ## Secure cloud hosting

@@ -8,6 +8,8 @@ description: Learn how to map your organization's personal data in Dastra
 
 Before you create your processing activities, map your organization's data as accurately as you can. In the application, this module is called **Repositories**. The mapping links four kinds of elements: the publisher of an asset, the asset itself, the security measures applied to it, and the datasets it holds, which are made of data fields.
 
+<figure><img src="../../.gitbook/assets/mapping-schema-1.png" alt="Data mapping diagram: the publisher provides assets, which are linked to security measures and to datasets made of fields"><figcaption><p>Structure of the data mapping</p></figcaption></figure>
+
 To inventory all the personal data of your information system, follow this procedure:
 
 1. **Identify the assets**: software, files, plugins, servers, machines, etc.

@@ -59,6 +59,10 @@ Dastra only transmits the information necessary for the requested generation: th
 
 The exact data transmitted per feature is detailed in the [What data is transmitted to the model](how-it-works.md#what-data-is-transmitted-to-the-model) section.
 
+Before a generation request is sent, Dastra applies a filter that masks the email addresses, phone numbers, postal addresses, postal codes and full names it recognizes in the text. The filter follows European formats. It leaves dates, identifiers and standard numbers such as ISO 27001 unchanged, so that the model keeps the business data it needs.
+
+**Voice dictation** in the Dastra AI message box sends your recording to a speech-to-text service, which returns the transcribed text. Dastra uses Azure Speech on the standard platform and Mistral Voxtral on [Bleu](../../../security/bleu.md).
+
 ***
 
 ## What Dastra does not do

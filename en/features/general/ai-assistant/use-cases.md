@@ -62,6 +62,10 @@ The assistant can analyze an existing processing activity and produce an assessm
 
 Once the analysis is generated, click **Print analysis** to export the result as a PDF or send it directly to the printer. This document can be attached to your compliance file.
 
+### Analyze a contract, a stakeholder, an asset or a questionnaire response
+
+The same analysis is available on contracts, stakeholders, assets and questionnaire responses. Open the record, then click the **AI analysis (beta)** button. The window shows the overall score from A to F, the assessed criteria with their justification and the suggested tasks. Use **Analysis history** to compare with a previous analysis, then **Print analysis** to export the result.
+
 ### Suggest tags
 
 In a **Tags** field that is still empty, an AI assistant button suggests tags from the name and description of the object. Click it: the suggested tags fill the field. For tag management, see [Tag management](../tags.md).

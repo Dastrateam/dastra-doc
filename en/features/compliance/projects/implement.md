@@ -41,6 +41,8 @@ As long as the project is not in the **Monitoring** phase, modifying or validati
 
 <figure><img src="../../../.gitbook/assets/image-458.png" alt="Details of a project test with its Missing evidence status"><figcaption></figcaption></figure>
 
+The **Context** tab of the test details shows where the test comes from: the **Project** (name, status, description and **Frameworks**) and its **Scope**.
+
 ***
 
 ## 2. Configuring compliance tests
@@ -181,3 +183,9 @@ The project is then ready to enter the next phase: **Monitoring**, during which:
 * the tests are executed periodically,
 * the evidence is collected,
 * and compliance is measured over time.
+
+## Export the project lists
+
+The **Controls**, **Tests** and **Risks** tabs of a project each have an **Export** button. It exports the list as it is displayed: the active filters apply. In the export window, choose the format (CSV, Excel or JSON) and the columns to include, then click **Download file**.
+
+The button requires the permission to export the operational data of the compliance module. Without it, it is disabled.

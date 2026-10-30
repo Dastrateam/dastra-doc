@@ -12,6 +12,10 @@ This section gathers the features used in every Dastra module: sort and filter l
 [filters.md](filters.md)
 {% endcontent-ref %}
 
+{% content-ref url="lists.md" %}
+[lists.md](lists.md)
+{% endcontent-ref %}
+
 {% content-ref url="import.md" %}
 [import.md](import.md)
 {% endcontent-ref %}

@@ -17,6 +17,7 @@ Before you start using Dastra, take the time to understand the concepts that str
 * [Entity](key-concepts.md#entity)
 * [Department](key-concepts.md#department)
 * [Organization owner](key-concepts.md#organization-owner)
+* [Credits and quotas](key-concepts.md#credits-and-quotas)
 
 ***
 
@@ -96,3 +97,17 @@ Departments are optional. They are useful as soon as the organization has severa
 The **owner** is the main administrator of the organization. Only owners can create workspaces, change the organization settings, create custom roles, and add or remove other owners.
 
 Limit the number of owners to keep governance clear. Other users receive roles that fit their needs: see [Managing roles and permissions](roles.md).
+
+***
+
+## Credits and quotas
+
+Your subscription sets credits, which are limits on what your organization can create or consume. They are shared by all the workspaces of the organization.
+
+* **Users**: active users plus the users linked to a pending or expired invitation. Removing the user of an invitation frees a seat. See [Invite users](users.md).
+* **Entities**: creating an entity consumes one entity credit. See [Create and set up organizational units](organizational-units.md).
+* **Questionnaire templates**: the templates of all your workspaces count, including those in the recycle bin. See [Create a questionnaire template](../../features/questionnaires/templates/README.md).
+* **Processing activities, document storage, cookie consent logs, activity history**: the **Change plan/Subscription** page of the organization settings shows the credit of your plan for each of them.
+* **AI**: a monthly quota of AI credits, described in [How it works](../../features/general/ai-assistant/how-it-works.md#ai-credits-and-quotas).
+
+When a limit is reached, the screen that is concerned says so and offers a link to contact the Dastra team and increase your credit.

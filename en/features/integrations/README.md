@@ -41,6 +41,7 @@ Read the details in [Connections, use cases and field mapping](connections.md).
 | **Incoming mail**           | Turns the emails sent to a dedicated collection address into tasks, requests, data breaches, contracts or processing activities            | [Incoming mail data collection](../settings/mailboxes.md)                                 |
 | **SIRENE (INSEE)** | Fills in your stakeholders' details from the French company registry | [SIRENE (INSEE)](#sirene-insee) |
 | **AI provider** | Connects any OpenAI-compatible AI provider to the Dastra assistant | [Custom AI provider](../general/ai-assistant/how-it-works.md) |
+| **MCP server** | Lets your AI tools (Claude, Le Chat, VS Code, etc.) read and update Dastra data | [The MCP server](../general/ai-assistant/mcp.md) |
 | **Single sign-on (SSO)**    | Lets your users sign in with your own identity provider                                                                                    | [Single Sign On (SSO)](../settings/sso/README.md)                                                 |
 | **SIEM streaming**          | Streams your security audit events to your SIEM in real time                                                                               | [SIEM streaming](../settings/siem.md)                                                           |
 | **Zapier** | Connects Dastra to thousands of applications through automated workflows | [Zapier](zapier/README.md) |

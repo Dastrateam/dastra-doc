@@ -52,6 +52,8 @@ Le formulaire affiche aussi les valeurs à déclarer chez votre fournisseur d'au
 * **URL de déconnexion (Back-channel logout url)**, facultative ;
 * **URI de clé publique JSON**, uniquement avec la clé privée JWT. Enregistrez le formulaire une fois pour que ce point de terminaison fonctionne.
 
+Déclarez l'**URL de déconnexion (Back-channel logout url)** chez votre fournisseur si vous voulez qu'une déconnexion chez le fournisseur mette aussi fin à la session Dastra. Dastra prend en charge OpenID Connect Back-Channel Logout : lorsque votre fournisseur envoie un jeton de déconnexion pour un utilisateur ou une session, Dastra révoque les sessions correspondantes, et l'utilisateur doit se reconnecter.
+
 ### Méthode d'authentification du client : clé secrète ou clé privée JWT
 
 Choisissez comment Dastra s'authentifie auprès de votre fournisseur d'identité :

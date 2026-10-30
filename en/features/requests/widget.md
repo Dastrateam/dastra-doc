@@ -136,3 +136,5 @@ For each language, click **Edit** to open the texts, grouped in four sections (*
 
 Once configured, the widget lets data subjects select the type of right they want to exercise and submit their request.\
 The form adapts to the configuration (languages, appearance, fields).
+
+At the end of the form, the requester receives an email with a validation link and a 6-digit code, and enters the code in the form: **Enter the 6-digit code sent via email.** The request is only taken into account once the address is validated. See the [FAQ](faq.md).

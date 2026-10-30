@@ -146,3 +146,5 @@ Pour chaque langue, cliquez sur **Modifier** pour ouvrir les textes, regroupés 
 
 Le widget ainsi configuré permet aux personnes concernées de sélectionner le type de droit qu’elles souhaitent exercer et de soumettre leur demande.\
 Le formulaire s’adapte à la configuration (langues, apparence, champs).
+
+À la fin du formulaire, le demandeur reçoit un e-mail avec un lien de validation et un code à 6 chiffres, et saisit le code dans le formulaire : **Saisissez le code à 6 chiffres que vous venez de recevoir par e-mail**. La demande n'est prise en compte qu'une fois l'adresse validée. Consultez la [FAQ](faq.md).

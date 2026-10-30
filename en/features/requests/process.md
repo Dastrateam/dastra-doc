@@ -37,23 +37,25 @@ The section also holds the **Preferred language of the requester**, the **Tags**
 
 Dastra offers 17 request types:
 
-* Information
-* Access
-* Rectification
-* Erasure
-* Restriction
-* Opposition
-* Portability
-* Advance directives
-* Automated decision making
-* Freedom of information
-* Request to DPO
-* Third party request
-* Data protection complaint
-* Do Not Sell/Share My Data
-* Limit Use of Sensitive Personal Information
-* Withdrawal of Consent
-* Other
+| Type | What the requester asks |
+| --- | --- |
+| Information | Information about the processing of their data |
+| Access | A copy of their personal data (Article 15) |
+| Rectification | The correction of inaccurate data (Article 16) |
+| Erasure | The deletion of their data (Article 17) |
+| Restriction | The limitation of the processing (Article 18) |
+| Opposition | To stop a processing based on legitimate interests or used for marketing (Article 21) |
+| Portability | To receive their data in a structured format or have it transferred (Article 20) |
+| Advance directives | To set instructions for the fate of their data after their death (French law) |
+| Automated decision making | Not to be subject to a decision based solely on automated processing (Article 22) |
+| Freedom of information | Access to administrative documents, for French public bodies |
+| Request to DPO | A request addressed to the data protection officer |
+| Third party request | A request made by a third party |
+| Data protection complaint | A complaint about the handling of personal data |
+| Do Not Sell/Share My Data | To opt out of the sale or sharing of personal information (California law) |
+| Limit Use of Sensitive Personal Information | To limit the use of sensitive personal information (California law) |
+| Withdrawal of Consent | To withdraw a consent given earlier (Article 7(3)) |
+| Other | Any request that fits none of the types above |
 
 A request can cover several types.
 

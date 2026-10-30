@@ -50,6 +50,12 @@ You register your passkeys in **Account security** > **Manage my passkeys**. See
 
 On the second step, click **Email me a login link**. Dastra sends a link to your email address that signs you in without a password.
 
+### Choose the hosting region
+
+When your Dastra environment offers several hosting regions, the sign-in page shows a **Hosting region** field with the current region: **Europe region (default)** or **Bleu cloud France**. Click the field to open the other region, then sign in there.
+
+Click the **?** button next to the field (**Learn more about hosting regions**) to compare the regions. A tenant is hosted in a single region, and the two regions are neither mirrored nor synchronized: an account of one region cannot sign in on the other. To move an existing tenant to the other region, use **Contact our sales team** in the same window. See [Dastra on Bleu](../../security/bleu.md) for the addresses and the hosting details of each region.
+
 ## Reset your password
 
 1. On the second sign-in step, click **Forgot your password ?**.

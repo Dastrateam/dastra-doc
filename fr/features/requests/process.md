@@ -37,23 +37,25 @@ La section contient aussi la langue préférée du demandeur, les **Tags**, le *
 
 Dastra propose 17 types de demande :
 
-* Information
-* Accès
-* Rectification
-* Effacement
-* Limitation
-* Opposition
-* Portabilité
-* Sort des données après le décès
-* Absence d'une décision automatisée
-* Accès aux documents administratifs
-* Demande au DPO
-* Demande d'un tiers
-* Plainte relative à la protection des données
-* Ne pas vendre/partager mes données
-* Limiter l'utilisation des informations personnelles sensibles
-* Retrait du consentement
-* Autre
+| Type | Ce que demande la personne |
+| --- | --- |
+| Information | Des informations sur le traitement de ses données |
+| Accès | Une copie de ses données personnelles (article 15) |
+| Rectification | La correction de données inexactes (article 16) |
+| Effacement | La suppression de ses données (article 17) |
+| Limitation | La limitation du traitement (article 18) |
+| Opposition | L'arrêt d'un traitement fondé sur l'intérêt légitime ou utilisé à des fins de prospection (article 21) |
+| Portabilité | Recevoir ses données dans un format structuré ou les faire transférer (article 20) |
+| Sort des données après le décès | Définir des directives sur le sort de ses données après son décès (droit français) |
+| Absence d'une décision automatisée | Ne pas faire l'objet d'une décision fondée uniquement sur un traitement automatisé (article 22) |
+| Accès aux documents administratifs | L'accès à des documents administratifs, pour les organismes publics français |
+| Demande au DPO | Une demande adressée au délégué à la protection des données |
+| Demande d'un tiers | Une demande faite par un tiers |
+| Plainte relative à la protection des données | Une plainte sur le traitement de données personnelles |
+| Ne pas vendre/partager mes données | Refuser la vente ou le partage de ses informations personnelles (droit californien) |
+| Limiter l'utilisation des informations personnelles sensibles | Limiter l'utilisation de ses informations personnelles sensibles (droit californien) |
+| Retrait du consentement | Retirer un consentement donné auparavant (article 7, paragraphe 3) |
+| Autre | Toute demande qui ne correspond à aucun des types ci-dessus |
 
 Une demande peut porter sur plusieurs types.
 

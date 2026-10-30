@@ -32,6 +32,8 @@ No setting lets you choose systems one by one. As soon as the tab is enabled, th
 
 To remove a system from the portal, change its organizational unit, change its state or archive it.
 
+When the Trust Center's organizational unit has child units, visitors get an **Organizational unit** filter above the list. It only offers the Trust Center's unit and its child units.
+
 {% hint style="warning" %}
 Enabling the tab immediately publishes every system that meets these conditions. Before you do, check the list of the unit's systems in the [record of AI systems](../../ai-systems/record.md).
 {% endhint %}
