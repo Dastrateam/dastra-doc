@@ -41,6 +41,8 @@ Het activeren van een andere schaal wanneer er al risico's bestaan, heeft ernsti
 
 De score van een risico is het product van de ernst en de waarschijnlijkheid ervan. De maximumscore van een schaal is het product van de twee hoogste niveaus: 25 met de schaal van 5 niveaus, 16 met de schaal van 4 niveaus en 9 met de schaal van 3 niveaus. De percentages in Dastra drukken een score uit ten opzichte van dit maximum.
 
+Voor een berekening stap voor stap, op de standaardschaal en op de CNIL-schaal, zie [Risicoscores](../../../examples/risk-scoring.md).
+
 ## Waarschijnlijkheid (kans)
 
 De waarschijnlijkheid is een evaluatie van de frequentie waarmee een risico zich voordoet. Het is een empirisch geëvalueerde score (traditioneel op 5). Elk niveau kan overeenkomen met een frequentie van optreden van het risico en dus van de bedreiging.

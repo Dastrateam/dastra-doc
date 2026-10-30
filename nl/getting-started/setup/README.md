@@ -114,6 +114,8 @@ U verkent de functies zelf, of volgt een concreet voorbeeld in de handleiding:<b
 
 ***
 
+Vragen over het opzetten? Zie de [FAQ](../../other/faq.md), die de vragen van elke module bundelt.
+
 {% hint style="info" %}
 U kunt de rollen, teams en organisatorische eenheden van uw werkruimte op elk moment wijzigen. Deze instellingen blijven volledig aanpasbaar aan uw organisatie.
 {% endhint %}

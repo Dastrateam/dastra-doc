@@ -15,6 +15,8 @@ Deze pagina behandelt het aanmaken van een project, de zes fasen, de assistent v
 * [Conformiteitsmonitoring](monitoring.md): bewijs, testcampagnes, export van de verklaring van toepasselijkheid;
 * [Audits](audits.md): interne audits en eindaudits.
 
+Voor een volledige doorloop van een certificeringsproject, zie het [voorbeeld van een ISO 27001-project](../../../examples/iso-27001-project.md).
+
 ## De projecten openen
 
 Klik in het menu op **Conformiteit** en vervolgens op **Projecten**. Het zijmenu heeft twee groepen:

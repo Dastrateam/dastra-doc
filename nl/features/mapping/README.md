@@ -22,6 +22,8 @@ Met deze mapping maakt u verwerkingsactiviteiten gemakkelijker aan, omdat u vert
 
 Wilt u deze inventaris niet opbouwen, of is de software die u gebruikt standaard, maak dan uw repository van activa aan vanuit de bibliotheek met voorgedefinieerde sjablonen, die veelvoorkomende activa op de markt bevat (Salesforce, Jira enzovoort).
 
+Om één stroom van de leverancier tot de verwerkingsactiviteit te volgen, zie [Een gegevensstroom in kaart brengen](../../examples/data-mapping.md).
+
 ## De gegevensmapping openen
 
 1. [Ga naar uw werkruimte](../../getting-started/setup/workspace.md#naar-een-werkruimte-gaan).

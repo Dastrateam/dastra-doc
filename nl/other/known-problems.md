@@ -6,6 +6,8 @@ description: >-
 
 # Bekende problemen
 
+Deze pagina behandelt de problemen die elke gebruiker kunnen treffen. Voor de authenticatieproblemen van SSO, zie [Bekende problemen van SSO](../features/settings/sso/known-problems.md).
+
 ## De uitgenodigde gebruiker ontvangt de uitnodigingsmails niet
 
 Controleer eerst het volgende:

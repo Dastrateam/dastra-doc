@@ -1,11 +1,28 @@
 ---
 description: >-
-  Antwoorden op veelgestelde vragen over het gebruik van Dastra: logo's, een
-  bestaand register importeren, een verwerkingsactiviteit verwijderen, items die
-  niet te vinden zijn en de lokale opslag van de browser.
+  De FAQ van elke Dastra-module op één plek, en antwoorden op algemene vragen:
+  logo's, een bestaand register importeren, een verwerkingsactiviteit
+  verwijderen, items die niet te vinden zijn en de lokale opslag van de browser.
 ---
 
-# Veelgestelde vragen
+# FAQ
+
+Deze pagina is het toegangspunt tot de vragen die in de documentatie worden beantwoord. Ze bundelt de FAQ van elke module en beantwoordt daarna de algemene vragen die op de lijst volgen.
+
+## FAQ van de modules
+
+* [FAQ Aan de slag](../getting-started/setup/faq.md): teams en organisatorische eenheden als stakeholders, organisatorische eenheden exporteren en importeren, de FG wijzigen en de eigenaars van de organisatie beheren.
+* [FAQ Algemene functies](../features/general/faq.md): datasets importeren.
+* [FAQ AI-assistent](../features/general/ai-assistant/faq.md): privacy en gegevens, kwaliteit en betrouwbaarheid, configuratie en toegang en de AI-verordening.
+* [FAQ Verwerkingsregister](../features/ropa/faq.md): wijzigingsgeschiedenis, verwijdering, datasets in alleen-lezenmodus, bulkwijzigingen van stakeholders, dupliceren naar een andere werkruimte, wijziging van type en foutmeldingen.
+* [FAQ Vragenlijsten](../features/questionnaires/faq.md): DPIA op meerdere verwerkingsactiviteiten, e-mailsjablonen, externe respondenten, voorgestelde taken, sjablonen publiceren, foutmeldingen en limieten.
+* [FAQ Risico's](../features/risks/faq.md): het ontbrekende menu, een risico naar de volgende stap verplaatsen, initieel, rest- en huidig risico en de risicoschaal wijzigen.
+* [FAQ Taken](../features/tasks/faq.md): taken aan een project koppelen, een taak verwijderen, de werklast registreren en opvolgen.
+* [FAQ Verzoeken](../features/requests/faq.md): sluitingsmails, de beveiligde ruimte van de aanvrager en de verificatie van het e-mailadres, de lengte van berichten en cookies op de verzamelpagina.
+* [FAQ Zapier](../features/integrations/zapier/faq.md): contractuele status van Zapier, wie het contract ondertekent en documentatie over betrouwbaarheid.
+
+Voor problemen in plaats van vragen, zie [Bekende problemen](known-problems.md) en de [bekende problemen van SSO](../features/settings/sso/known-problems.md).
+
 
 ## Hoe wijzigt u het logo van de organisatie in Dastra?
 
@@ -35,7 +52,7 @@ Voor het importeren van verwerkingsactiviteiten, zie [Het register exporteren en
 
 Verwijderen verloopt in twee stappen, om verwijderingen per ongeluk te voorkomen. Verplaats de verwerkingsactiviteit eerst naar de prullenbak met **Verplaats naar de prullenbak**. Geef daarna de prullenbak weer met **Bekijk prullenbak** in de filters en kies **Verwijderen** om ze definitief te verwijderen, of **Herstellen** om ze terug te zetten in het register.
 
-De volledige werkwijze staat in de [veelgestelde vragen](../features/ropa/faq.md#hoe-verwijdert-u-een-verwerkingsactiviteit) van het register.
+De volledige werkwijze staat in de [FAQ van het register](../features/ropa/faq.md#hoe-verwijdert-u-een-verwerkingsactiviteit).
 
 ## Ik kan sommige items niet vinden, wat kan ik doen?
 

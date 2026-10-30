@@ -45,5 +45,5 @@ Deze sectie bundelt de functies die u in elke Dastra-module gebruikt: lijsten so
 {% endcontent-ref %}
 
 {% content-ref url="faq.md" %}
-[Veelgestelde vragen](faq.md)
+[FAQ](faq.md)
 {% endcontent-ref %}

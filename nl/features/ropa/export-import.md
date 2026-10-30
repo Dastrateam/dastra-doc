@@ -65,6 +65,33 @@ Een bestaand register importeren is omslachtig als u veel verwerkingsactiviteite
 Tijdens de import wordt geen organisatorische eenheid aangemaakt. Gegevens uit velden die geen deel uitmaken van het sjabloon komen terecht in de HTML-beschrijvingsvelden.
 {% endhint %}
 
+### Een JSON-bestand importeren
+
+Het JSON-formaat is dat van de **JSON**-export van het register. Het bevat volledige verwerkingsactiviteiten, waardoor het het formaat is om activiteiten van de ene werkruimte naar de andere te kopiëren. Kies **JSON**, selecteer de **Organisatie-eenheid** waarin de verwerkingsactiviteiten worden aangemaakt en sleep daarna het bestand. Het venster toont daarna de verwerkingsactiviteiten die zijn aangemaakt en de items die al bestonden.
+
+Het bestand heeft de structuur van de export: `$schema`, `version`, `date`, `label`, `source` en een array `records`, met één verwerkingsactiviteit per item.
+
+Wat de import accepteert:
+
+* een bestand dat uit Dastra is geëxporteerd met de versie `1.4`. Een andere versie wordt geweigerd met de melding "Incorrect version of your JSON import file (required version : 1.4)";
+* alle inhoud van een item: de algemene informatie, de doeleinden, de datasets en hun bewaarregels, de activa, de ontvangers en stakeholders, de categorieën van betrokkenen, de beveiligingsmaatregelen, de labels en de aangepaste velden;
+* een item met hetzelfde label als een bestaande verwerkingsactiviteit: het maakt een nieuwe aan en overschrijft nooit;
+* de stakeholders, activa, datasets, categorieën van betrokkenen, beveiligingsmaatregelen en labels van een item: bestaat er al een item met dezelfde naam in de werkruimte, dan hergebruikt Dastra het, anders maakt het het aan;
+* de eigenaars van een item, wanneer het gebruikers van de organisatie zijn. De andere worden overgeslagen.
+
+Wat de import negeert of opnieuw instelt:
+
+* de identificatoren: elke verwerkingsactiviteit krijgt een nieuwe;
+* de organisatorische eenheid van het bestand: alle activiteiten gaan naar de eenheid die u hebt geselecteerd;
+* de status en de werkstroomstap: de activiteiten worden als concept aangemaakt, op de eerste stap van de werkstroom;
+* de maker, de aanmaakdatum en de beoordelingsdata: de maker is de persoon die importeert en de data beginnen opnieuw;
+* het risiconiveau en de scores: Dastra berekent ze opnieuw;
+* de relaties tussen verwerkingsactiviteiten (ouder, kind, gerelateerd).
+
+Elk item wordt gecontroleerd voordat er iets wordt aangemaakt. Is een item ongeldig, bijvoorbeeld omdat een verplicht veld leeg is, dan stopt de import met de melding "Error on data processing" gevolgd door het label en het regelnummer ervan, en wordt niets aangemaakt.
+
+De import vereist de machtiging om verwerkingsactiviteiten te importeren.
+
 ### Standaardimport, stap voor stap
 
 Om niet elke verwerkingsactiviteit met de hand in te vullen en om elk mogelijk registerformaat te verwerken, heeft Dastra een methode ontworpen die uitgaat van het opsplitsen van het register in gegevensdomeinen. Zeven stappen worden aanbevolen om een volledig bestaand register in Dastra te importeren.
