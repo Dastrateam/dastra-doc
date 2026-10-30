@@ -32,41 +32,48 @@ Native mobiele applicaties, software en andere specifieke omgevingen worden rech
 
 ## Toegankelijkheidsaudit
 
-In het vierde kwartaal van 2025 is een RGAA-audit gestart om het conformiteitsniveau van de openbaar toegankelijke interfaces te beoordelen.
+Op 16 oktober 2025 is intern een eerste RGAA 4.1.1-audit uitgevoerd op drie openbaar toegankelijke pagina's:
 
-De audit heeft vooral betrekking op elementen die voor externe gebruikers zichtbaar zijn, waaronder:
+* De cookiebanner, zoals weergegeven op www.dastra.eu
+* De openbare pagina van het formulier voor verzoeken van betrokkenen
+* De Privacy Hub
 
-* Het portaal voor het uitoefenen van rechten door betrokkenen
-* Cookiebanners
-* Openbare formulieren en gebruikerstrajecten
-* Informatiepagina's die zonder authenticatie toegankelijk zijn
+Interne interfaces die authenticatie vereisen, vallen niet onder deze eerste scope. De audit levert geen globaal conformiteitspercentage op: alleen deze drie pagina's zijn beoordeeld.
 
-Interne interfaces die niet openbaar toegankelijk zijn, vallen niet onder deze eerste scope.
+| Pagina | Conforme criteria | Niet-conforme criteria | Niet-toepasselijke criteria |
+| --- | --- | --- | --- |
+| Cookiebanner | 47 | 5 | 54 |
+| Formulier voor verzoeken van betrokkenen | 43 | 11 | 52 |
+| Privacy Hub | 56 | 3 | 47 |
 
-De resultaten leiden tot een bijgewerkte toegankelijkheidsverklaring en een geprioriteerd herstelplan.
+Criteria 7.1 en 7.2 (weergave zonder JavaScript) worden gemeld op alle drie de pagina's. De audit beschouwt ze als niet van toepassing voor de banner, die zonder JavaScript geen enkele cookie plaatst, en voor het formulier.
 
 ## Verbeterplan
 
-Na de audit wordt een herstelplan uitgerold.
+De correcties worden geleidelijk in de ontwikkelcycli opgenomen. Tot nu toe betreffen ze:
 
-De prioritaire aandachtsgebieden zijn:
+* Criterium 3.3 (kleuren in interfacecomponenten)
+* Criterium 12.6 (navigatiemijlpalen)
+* Criterium 9.3 (opmaak van lijsten) en criteria 11.5 en 11.6 (veldgroepen met een legenda) op het aanvraagformulier
 
-* Toetsenbordnavigatie
-* Focusbeheer
-* Kleurcontrast
-* Tekstalternatieven
-* Semantische paginastructuur
-* Toegankelijkheid van dynamische componenten (modale vensters, cookiebanners, formulieren)
+De resterende werkzaamheden betreffen:
 
-De correcties worden geleidelijk in de ontwikkelcycli opgenomen.
+* Toetsenbordnavigatie op het formulier voor verzoeken van betrokkenen (criteria 7.3 en 7.4)
+* Het label van de taalkiezer van het formulier (criterium 11.1)
+
+De audit beveelt ook nauwkeurigere tekstalternatieven aan (criterium 1.1), explicietere foutmeldingen (criterium 11.11) en, voor de cookiebanner, dat die vooraan in de tabvolgorde wordt geplaatst (criterium 10.7).
+
+### Kleurcontrast
+
+Criterium 3.2 (tekstcontrast) hangt af van de kleuren die elke klant kiest in zijn ontwerpinstellingen. Contrast blijft dus de verantwoordelijkheid van de klant: controleer of de kleuren die u kiest een contrastverhouding van ten minste 4,5:1 geven voor lopende tekst.
 
 ## Stand van zaken
 
-Op dit moment geldt het volgende:
+Laatst bijgewerkt: 30 oktober 2026.
 
-* De RGAA-audit is afgerond
-* Het herstel is aan de gang
-* Een gedetailleerde toegankelijkheidsverklaring wordt gepubliceerd nadat de belangrijkste correcties zijn doorgevoerd
+* De eerste RGAA-audit is afgerond, op drie pagina's.
+* De hierboven vermelde correcties zijn doorgevoerd. De resterende werkzaamheden moeten nog worden uitgevoerd.
+* De gedetailleerde toegankelijkheidsverklaring is nog niet gepubliceerd. Ze wordt gepubliceerd zodra de belangrijkste correcties zijn doorgevoerd.
 
 ## Een toegankelijkheidsprobleem melden
 

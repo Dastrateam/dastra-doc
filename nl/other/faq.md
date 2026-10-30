@@ -1,77 +1,71 @@
+---
+description: >-
+  Antwoorden op veelgestelde vragen over het gebruik van Dastra: logo's, een
+  bestaand register importeren, een verwerkingsactiviteit verwijderen, items die
+  niet te vinden zijn en de lokale opslag van de browser.
+---
+
 # Veelgestelde vragen
 
-## Hoe toon ik de namen van de modules onder de pictogrammen in Dastra?
+## Hoe wijzigt u het logo van de organisatie in Dastra?
 
-Wilt u de namen van de modules onder elk pictogram aan de linkerkant van het scherm zien? Dit hangt af van het zoomniveau van de browser &#x20;
+De organisatie heeft geen logo. De afbeelding rechtsboven in het scherm, naast uw naam en de naam van de organisatie, is de afbeelding van uw gebruikersaccount. Om die te wijzigen, opent u rechtsboven uw profielmenu, klikt u op **Gebruikersprofiel** en uploadt u een nieuwe afbeelding.
 
-Verlaag het zoomniveau en de namen verschijnen!
+Zie de volgende vraag om het logo aan te passen dat in exports wordt gebruikt.
 
-## Hoe verander ik het logo van de organisatie in Dastra?
+## Hoe wijzigt u het logo van de werkruimte in Dastra?
 
-U kunt het logo van de organisatie niet wijzigen omdat er geen logo is. Het logo dat in de rechterbovenhoek boven de naam van de organisatie wordt weergegeven, is de afbeelding die aan het gebruikersaccount is gekoppeld en die is ingesteld in de profielinstellingen.
+Open de instellingen van de werkruimte en daarna de sectie **Design & merk**. U kunt een vierkant logo en een rechthoekig logo uploaden en de **Merk kleur** en de **Secundaire kleur** kiezen. Met deze elementen past u de exports van Dastra aan uw merk aan.
 
-Je kunt het werkruimte-logo ook wijzigen met deze afbeelding.
+Deze sectie is voorbehouden aan de eigenaars van de organisatie.
 
-## Hoe verander ik het werkruimte-logo in Dastra?
+## Hoe importeert u uw verwerkingsregister in het CNIL-formaat?
 
-U kunt het wijzigen door naar de werkruimte-instellingen te gaan in de sectie Ontwerp en branding. U kunt ook bepaalde elementen van de Word- en PDF-export aanpassen (lettertype en kleuren).
+U kunt een bestaand verwerkingsregister in het CNIL-formaat in Dastra importeren. De import verloopt in meerdere stappen:
 
-## Hoe importeer ik de gegevens uit mijn register voor gegevensverwerking in het CNIL-formaat?&#x20;
+1. Importeer de namen van de verwerkingsactiviteiten.
+2. Importeer de datasets.
+3. Importeer de stakeholders.
+4. Importeer de beveiligingsmaatregelen.
+5. Maak in de verwerkingsactiviteiten de koppelingen tussen deze objecten.
 
-Hebt u een bestaand register voor gegevensverwerking in CNIL-formaat? Dan kunt u deze natuurlijk importeren in Dastra. Hiervoor moet u verschillende handelingen verrichten:&#x20;
+Voor het importeren van verwerkingsactiviteiten, zie [Het register exporteren en importeren](../features/ropa/export-import.md). Voor hulp bij het importeren van uw register [neemt u contact op met support](../getting-started/support/request.md).
 
-1: importeer de namen van de Verwerkingen&#x20;
+## Hoe verwijdert u een verwerkingsactiviteit?
 
-2: de gegevenssets importeren
+Verwijderen verloopt in twee stappen, om verwijderingen per ongeluk te voorkomen. Verplaats de verwerkingsactiviteit eerst naar de prullenbak met **Verplaats naar de prullenbak**. Geef daarna de prullenbak weer met **Bekijk prullenbak** in de filters en kies **Verwijderen** om ze definitief te verwijderen, of **Herstellen** om ze terug te zetten in het register.
 
-3: de actoren importeren
+De volledige werkwijze staat in de [veelgestelde vragen](../features/ropa/faq.md#hoe-verwijdert-u-een-verwerkingsactiviteit) van het register.
 
-4: importeer de beveiligingsmaatregelen&#x20;
+## Ik kan sommige items niet vinden, wat kan ik doen?
 
-5: koppelingen maken tussen objecten in processen
+Als u een item niet vindt waartoe u toegang zou moeten hebben, kan het om een van de volgende redenen verborgen zijn:
 
-Als je wilt dat we je helpen bij het importeren van je bestaande register, aarzel dan niet om het ons te vragen. Dit zal een gelegenheid zijn om het te beoordelen!
+1. Een filter is actief en beperkt de weergave. Het aantal actieve filters staat tussen haakjes op de knop, bijvoorbeeld "(1)". Klik op **Filters wissen**.
 
-## Hoe een Verwerking verwijderen &#x20;
+   <figure><img src="../.gitbook/assets/other-faq-1.png" alt="Lijst van het register met een actief filter en de knop Filters wissen (1)"><figcaption><p>Een actief filter beperkt de lijst</p></figcaption></figure>
+2. Het item is gekoppeld aan een organisatorische eenheid waartoe u geen toegang hebt of waarvoor u niet over de nodige rechten beschikt. Neem contact op met uw werkruimtebeheerder.
+3. Het item staat in de prullenbak en verschijnt daarom niet meer in de standaardlijst. Klik op **Filters** en vink **Bekijk prullenbak** aan.
 
-Om onaangename verrassingen te voorkomen, hebben we een beveiliging ingebouwd. Verwijderen gaat in twee stappen &#x20;
+   <figure><img src="../.gitbook/assets/ropa-faq-3.png" alt="Filterpaneel van het register met de optie Bekijk prullenbak"><figcaption><p>De prullenbak weergeven</p></figcaption></figure>
+4. In uw browser zijn onjuiste instellingen opgeslagen. Open Dastra in een privévenster om dit te controleren. Verdwijnt het probleem, wis dan de lokale opslag van uw browser met de werkwijze in de volgende vraag.
 
-## Ik kan geen items vinden, wat kan ik doen? &#x20;
+## Hoe wist u de lokale opslag van de browser?
 
-Als je een item waartoe je toegang zou moeten hebben niet kunt vinden, kan het om de volgende redenen niet zichtbaar zijn &#x20;
+De lokale opslag (localStorage) bevat gegevens die de browser bewaart zodat Dastra werkt en uw instellingen onthoudt, zoals uw filters. Hebt u een weergaveprobleem, dan kan support u vragen om die te wissen.
 
-1.  Er is een filter dat de weergave beperkt, zoals hieronder wordt weergegeven met "(1)". Klik op Filters wissen.
-    \
-
-
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Het object is gekoppeld aan een organisatorische eenheid waartoe je geen toegang hebt of waarvoor je niet de benodigde rechten hebt. Neem contact op met je werkruimtebeheerder.
-3.  Het object is gearchiveerd en wordt daarom niet meer weergegeven in de standaardlijst. Je kunt ervoor kiezen om archieven weer te geven in het filterselectiemenu.
-
-
-    <figure><img src="../.gitbook/assets/image (4) (1) (4).png" alt=""><figcaption></figcaption></figure>
-
-
-4. Tot slot worden onjuiste instellingen opgeslagen in je browser. Om dit te controleren, kunt u privé browsen proberen. Als privé browsen het probleem oplost, raadpleeg dan de onderstaande procedure waarmee je de lokale opslag van je browser kunt wissen.
-
-## Hoe verwijder ik lokale opslag?
-
-Hebt u een probleem met de toepassing? Soms wordt u gevraagd om de lokale opslag te verwijderen. Dit zijn opslagelementen in de webbrowser waarmee u de toepassing kunt gebruiken en de instellingen die u hebt gekozen (bijvoorbeeld filters) kunt onthouden.&#x20;
-
-Hier is de procedure:&#x20;
+U kunt ook de knop **Voorkeursgegevens opnieuw instellen** in uw gebruikersprofiel gebruiken, die wordt beschreven in [Bekende problemen](known-problems.md).
 
 ### Google Chrome
 
-1. Menu "Sandwich" / Meer tools / Ontwikkelgereedschappen (F12)
-2. Menu toepassing / opslag / lokale opslag
-3. Klik met de rechtermuisknop: "wissen"
-4. Pagina vernieuwen (F5)
+1. Open het browsermenu en kies **More tools** > **Developer tools** (F12).
+2. Open het tabblad **Application** en kies daarna **Storage** > **Local storage**.
+3. Klik met de rechtermuisknop op het adres van Dastra en kies **Clear**.
+4. Vernieuw de pagina (F5).
 
 ### Mozilla Firefox
 
-1. Menu "Sandwich" / Webontwikkeling / Ontwikkelgereedschappen (F12)
-2. Opslagmenu / lokale opslag
-3. Klik met de rechtermuisknop: "alles verwijderen
-4. Pagina verversen (F5)
-
-
+1. Open het browsermenu en kies **More tools** > **Web Developer** > **Developer Tools** (F12).
+2. Open het tabblad **Storage** en kies daarna **Local Storage**.
+3. Klik met de rechtermuisknop op het adres van Dastra en kies **Delete All**.
+4. Vernieuw de pagina (F5).
