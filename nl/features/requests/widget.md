@@ -135,3 +135,5 @@ Klik per taal op **Bewerken** om de teksten te openen, gegroepeerd in vier secti
 
 Eenmaal geconfigureerd kunnen betrokkenen met de widget het type recht kiezen dat ze willen uitoefenen en hun verzoek indienen.\
 Het formulier past zich aan de configuratie aan (talen, uiterlijk, velden).
+
+Aan het einde van het formulier ontvangt de aanvrager een e-mail met een validatielink en een code van 6 cijfers en voert hij de code in het formulier in: **Voer de 6-cijferige code in de e-mail in**. Het verzoek wordt pas in aanmerking genomen zodra het adres is gevalideerd. Zie de [FAQ](faq.md).

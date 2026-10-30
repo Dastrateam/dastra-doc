@@ -138,6 +138,8 @@ De actie **Voeg een taak toe** bevat de velden **Toegewezen aan** en **Eigenaar*
 
 De variabele OU Owner geeft de taak aan de eigenaar van de organisatie-eenheid van het triggerobject. Heeft die eenheid geen eigenaar, dan wordt de eigenaar van de dichtstbijzijnde bovenliggende eenheid gebruikt. Heeft het object geen organisatie-eenheid, dan gebruikt de actie de in de actie gekozen Default organizational unit, met dezelfde regel. Wordt geen eigenaar gevonden, dan wordt de taak zonder toegewezen persoon aangemaakt, zonder de regel te blokkeren.
 
+Om het werk over een team te spreiden, kiest u **Selecteer een gebruiker in het team** in de actie **Eigenaar definiëren** en selecteert u daarna het team bij **Selecteer een team**. Dastra kiest een gebruiker uit het team volgens het round-robinmodel: telkens wanneer de regel wordt uitgevoerd, wordt het volgende lid van het team gekozen.
+
 ### Een berichtsjabloon aan een actie koppelen
 
 Voor regels die aan verzoeken van betrokkenen zijn gekoppeld, kan de actie **Een verzoekbericht verzenden** steunen op een bestaand berichtsjabloon in plaats van op handmatig ingevoerde inhoud.

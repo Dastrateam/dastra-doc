@@ -1,35 +1,120 @@
 ---
-description: Ontdek wat Dastra is.
+description: >-
+  Welkom bij de Dastra-documentatie.
 ---
 
-# Inleiding tot Dastra
+# Wat is Dastra
 
-**Dastra** is een gegevensbeschermingsoplossing waarmee gegevensbeschermingsteams alle privacy-gebruiksgevallen kunnen aansturen en beheren, van het beheren van de registratie van verwerkingsactiviteiten tot het implementeren van een cookie-widget op hun websites.
+**Dastra** is een platform voor compliancebeheer en governance van gegevens en AI. Het stelt DPO-, juridische, technische en businessteams in staat al hun verplichtingen onder de AVG en de AI-verordening te beheren in een samenwerkende, begeleide omgeving.
 
-Wij streven ernaar om gegevensbeschermingsteams te helpen bij het **vergroten van het bewustzijn** in hun bedrijf en **verbeteren van de privacy-ervaring** met een gestroomlijnde oplossing die één antwoord biedt op de verschillende privacy-behoeften van organisaties, door middel van:
+> Voor meer informatie over onze aanpak, zie ons [manifest](https://www.dastra.eu/en/mission).
 
-* Een snelle, intuïtieve en gebruiksvriendelijke **interface**;
-* vruchtbare **samenwerking** tussen de verschillende spelers die betrokken zijn bij privacy.
-* **Tijdsbesparingen** in het dagelijkse compliancebeheer
-* Nieuwe **diensten** en **functionaliteiten** voor naleving en beheer
-* Een **begeleide** pedagogische aanpak waardoor niet-experts stap voor stap verantwoordelijkheid kunnen nemen.
+{% content-ref url="getting-started/quickstart.md" %}
+[Aan de slag in 5 minuten](getting-started/quickstart.md)
+{% endcontent-ref %}
 
-Bij Dastra geloven we dat gegevensbescherming niet alleen een juridische kwestie is, maar ook **een kwestie van code, expertise, projectmanagement en operaties**
+***
 
-Zie voor meer informatie ons [manifest](https://www.dastra.eu/en/mission).
+## Aan de slag
 
-## Met Dastra kunt u:
+{% content-ref url="getting-started/setup/README.md" %}
+[Opzetten](getting-started/setup/README.md)
+{% endcontent-ref %}
 
-* **Uw persoonlijke gegevens** in kaart brengen door uw Verwerkingsdossier aan te maken en te onderhouden met behulp van een flexibele en intuïtieve interface, repositories, bibliotheken en een vragenlijst, en **uw Verwerkingsdossier aanmaken, delen** en **exporteren**.
-* Identificeer uw risico's en voer **audits** uit om prioriteiten te beoordelen.
-* Stel een actieplan op, wijs taken **toe** en **werk samen met uw netwerk,** om uw gegevens echt te beschermen.
-* **Implementeer interne processen** zoals het instellen van het beheer van uitoefening van rechten, het beheren van cookietoestemmingen of het bijhouden van een register van datalekken:
-* **Centraliseer de documentatie** waardoor aan de privacy kan worden voldaan.
+{% content-ref url="getting-started/tutorial/README.md" %}
+[Handleiding](getting-started/tutorial/README.md)
+{% endcontent-ref %}
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption><p>Vvoorbeeld van een verwerkingsregister</p></figcaption></figure>
+{% content-ref url="getting-started/support/README.md" %}
+[Ondersteuning](getting-started/support/README.md)
+{% endcontent-ref %}
 
-## Hoe kom ik meer te weten over Dastra?
+***
 
-Begin nu met het ontdekken van Dastra, eerst met de functies en de setup, daarna de tutorial :
+## Functies
 
-## Verder gaan
+{% content-ref url="features/ropa/README.md" %}
+[Verwerkingsregister](features/ropa/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/ai-systems/README.md" %}
+[AI-systemen](features/ai-systems/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/risks/README.md" %}
+[Risicobeheer](features/risks/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/requests/README.md" %}
+[Verzoeken van betrokkenen om hun rechten uit te oefenen](features/requests/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/incidents/README.md" %}
+[Incidenten en datalekken](features/incidents/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/cookies/README.md" %}
+[Cookietoestemming beheren](features/cookies/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/tasks/README.md" %}
+[Planning](features/tasks/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/settings/README.md" %}
+[Geavanceerde configuratie](features/settings/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/mapping/README.md" %}
+[Gegevens in kaart brengen](features/mapping/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/questionnaires/README.md" %}
+[Vragenlijsten](features/questionnaires/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/contracts/README.md" %}
+[Contracten en beleidslijnen](features/contracts/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/files/README.md" %}
+[Bestandsbeheer](features/files/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/trust-center/README.md" %}
+[Trust Center](features/trust-center/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/compliance/README.md" %}
+[Conformiteit](features/compliance/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/reports/README.md" %}
+[Aangepaste rapportage](features/reports/README.md)
+{% endcontent-ref %}
+
+***
+
+## API en integraties
+
+{% content-ref url="api/endpoints.md" %}
+[Lijst van API-endpoints](api/endpoints.md)
+{% endcontent-ref %}
+
+{% content-ref url="features/integrations/README.md" %}
+[Integraties](features/integrations/README.md)
+{% endcontent-ref %}
+
+***
+
+## Beveiliging
+
+{% content-ref url="security/general.md" %}
+[Beveiliging bij Dastra](security/general.md)
+{% endcontent-ref %}
+
+***
+
+{% hint style="info" %}
+Om Dastra te ontdekken, [vraag een demo aan](https://www.dastra.eu/en/contacts/demo).
+{% endhint %}

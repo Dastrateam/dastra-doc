@@ -6,7 +6,7 @@ description: HR-referentiekader van de CNIL, de Franse toezichthoudende autorite
 
 De CNIL heeft een referentiekader gepubliceerd voor verwerkingsactiviteiten op het gebied van personeelsbeheer, beschikbaar via [**deze link**](https://www.cnil.fr/fr/publication-du-referentiel-relatif-la-gestion-des-ressources-humaines).
 
-Hieronder vindt u bestanden die Dastra ter beschikking stelt om dit referentiekader sneller in uw verwerkingsregister op te nemen.
+Hieronder vindt u bestanden die Dastra ter beschikking stelt om dit referentiekader sneller in uw verwerkingsregister op te nemen. Importeer ze met de [Excel- en CSV-import](../features/general/import.md).
 
 ## 1. Labels van verwerkingsactiviteiten
 

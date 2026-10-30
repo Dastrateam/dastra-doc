@@ -17,6 +17,7 @@ Neem de tijd om de concepten te begrijpen die het platform structureren voordat 
 * [Entiteit](key-concepts.md#entiteit)
 * [Afdeling](key-concepts.md#afdeling)
 * [Eigenaar van de organisatie](key-concepts.md#eigenaar-van-de-organisatie)
+* [Credits en quota](key-concepts.md#credits-en-quota)
 
 ***
 
@@ -96,3 +97,17 @@ Afdelingen zijn optioneel. Ze zijn nuttig zodra de organisatie meerdere diensten
 De **eigenaar** is de hoofdbeheerder van de organisatie. Alleen eigenaren kunnen werkruimten aanmaken, de instellingen van de organisatie wijzigen, aangepaste rollen aanmaken en andere eigenaren toevoegen of verwijderen.
 
 Beperk het aantal eigenaren om het bestuur overzichtelijk te houden. Andere gebruikers krijgen rollen die bij hun behoeften passen: zie [Rollen en rechten beheren](roles.md).
+
+***
+
+## Credits en quota
+
+Uw abonnement bepaalt de credits, dat zijn limieten voor wat uw organisatie kan aanmaken of verbruiken. Ze worden gedeeld door alle werkruimten van de organisatie.
+
+* **Gebruikers**: actieve gebruikers plus de gebruikers die aan een openstaande of verlopen uitnodiging zijn gekoppeld. Het verwijderen van de gebruiker van een uitnodiging maakt een plaats vrij. Zie [Gebruikers uitnodigen](users.md).
+* **Entiteiten**: het aanmaken van een entiteit verbruikt één entiteitscredit. Zie [Organisatorische eenheden aanmaken en instellen](organizational-units.md).
+* **Vragenlijstsjablonen**: de sjablonen van al uw werkruimten tellen mee, ook die in de prullenbak. Zie [Een vragenlijstsjabloon aanmaken](../../features/questionnaires/templates/README.md).
+* **Verwerkingsactiviteiten, documentopslag, logboeken van cookietoestemming, activiteitengeschiedenis**: de pagina **Plan/abonnement wijzigen** van de organisatie-instellingen toont het krediet van uw plan voor elk ervan.
+* **AI**: een maandelijks quotum aan AI-credits, beschreven in [Werking](../../features/general/ai-assistant/how-it-works.md#ai-credits-en-quota).
+
+Wanneer een limiet is bereikt, meldt het betrokken scherm dat en biedt het een link om contact op te nemen met het Dastra-team en uw credit te verhogen.

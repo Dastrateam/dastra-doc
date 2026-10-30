@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Inleiding tot Dastra](README.md)
+* [Wat is Dastra](README.md)
 
 ## 🇪🇺 Nuttige herinneringen <a href="#gdpr" id="gdpr"></a>
 
@@ -51,8 +51,10 @@
 ## ⚙️ Functies <a href="#features" id="features"></a>
 
 * [Dashboard](features/dashboard.md)
+* [Nieuws en bronnen](features/news-and-resources.md)
 * [Algemeen](features/general/README.md)
   * [Geavanceerde filters](features/general/filters.md)
+  * [Lijsten, bulkacties en prullenbak](features/general/lists.md)
   * [Uw gegevens importeren (Excel, CSV)](features/general/import.md)
   * [Tagbeheer](features/general/tags.md)
   * [Elementen samenvoegen](features/general/merge.md)
@@ -261,6 +263,7 @@
     * [Active Directory (Microsoft Entra ID)](features/settings/sso/entra-id.md)
     * [Okta](features/settings/sso/okta.md)
     * [Bekende problemen](features/settings/sso/known-problems.md)
+  * [Beveiliging van de organisatie en beveiligingslogboeken](features/settings/security-center.md)
   * [SIEM-streaming](features/settings/siem.md)
   * [SCIM](features/settings/scim.md)
   * [IP-filtering](features/settings/ip-filtering.md)
@@ -286,7 +289,7 @@
 * [Gebruiksscenario's van de API](api/use-cases.md)
 * [API-configuratie](api/configuration.md)
 * [Authenticatie](api/authentication.md)
-* [API referenties](https://api.dastra.eu/swagger)
+* [API referenties](https://dastra.readme.io)
 
 ## 🛡️ Beveiliging <a href="#security" id="security"></a>
 
@@ -303,7 +306,7 @@
 * [Toegankelijkheid](other/accessibility.md)
 * [DPIA-richtsnoeren per land](other/dpia-by-country.md)
 * [Bekende problemen](other/known-problems.md)
-* [Release-opmerkingen](https://www.dastra.eu/en/articles/category/release/10)
+* [Release-opmerkingen](https://www.dastra.eu/en/category/release/10)
 
 ## Referentiekaders <a href="#frameworks" id="frameworks"></a>
 

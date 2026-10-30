@@ -42,6 +42,7 @@ De details leest u in [Verbindingen, gebruiksscenario's en veldmapping](connecti
 | Inkomende e-mail | Zet de e-mails die naar een speciaal verzameladres worden gestuurd om in taken, verzoeken, datalekken, contracten of verwerkingsactiviteiten | [Gegevens verzamelen via inkomende e-mail](../settings/mailboxes.md) |
 | SIRENE (INSEE) | Vult de gegevens van uw stakeholders aan vanuit het Franse bedrijvenregister | [SIRENE (INSEE)](#sirene-insee) |
 | AI-leverancier | Koppelt elke OpenAI-compatibele AI-leverancier aan de Dastra-assistent | [Eigen AI-leverancier](../general/ai-assistant/how-it-works.md) |
+| MCP-server | Laat uw AI-tools (Claude, Le Chat, VS Code enzovoort) de gegevens van Dastra lezen en bijwerken | [De MCP-server](../general/ai-assistant/mcp.md) |
 | Single sign-on (SSO) | Laat uw gebruikers inloggen met uw eigen identiteitsprovider | [Single Sign On (SSO)](../settings/sso/README.md) |
 | SIEM-streaming | Streamt uw beveiligingsauditgebeurtenissen in realtime naar uw SIEM | [SIEM-streaming](../settings/siem.md) |
 | Zapier | Koppelt Dastra via geautomatiseerde workflows aan duizenden applicaties | [Zapier](zapier/README.md) |

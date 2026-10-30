@@ -176,6 +176,12 @@ De actie **Vergelijk de versies** toont twee versies naast elkaar. Elke sectie e
 
 <figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Vergelijking van twee versies van een vragenlijstsjabloon"><figcaption><p>Twee versies van een vragenlijstsjabloon vergelijken</p></figcaption></figure>
 
+Om een andere versie de hoofdversie te maken, klikt u in de lijst met versies op **Definieer in de hoofdversie**. Het venster **Make this version the main one?** vergelijkt de nieuwe hoofdversie met de huidige voordat u bevestigt. Antwoorden die al zijn verzameld, blijven gekoppeld aan de versie waarop ze zijn gegeven.
+
+### Bijwerken vanuit het bibliotheeksjabloon
+
+Wanneer u een sjabloon uit de Dastra-bibliotheek installeert en het bibliotheeksjabloon daarna wordt bijgewerkt, meldt een bericht bovenaan de pagina van het sjabloon dat het sjabloon waarvan het is aangemaakt, is bijgewerkt. Het bericht toont de huidige en de nieuwe versie, met het aantal toegevoegde, gewijzigde en verwijderde items. Klik op **Vergelijk de versies** om de details te zien. In dat venster kunt u de wijzigingen toepassen of op **Maak een versie** klikken om het huidige sjabloon te behouden en een aftakking te maken. Klik op **Ontkoppelen van de bibliotheek** om het bibliotheeksjabloon niet meer te volgen.
+
 {% hint style="info" %}
 Het aantal beschikbare sjablonen hangt af van uw abonnement. Dit quotum wordt gedeeld door alle werkruimten van uw organisatie. De prullenbak van sjablonen telt mee voor het quotum: denk eraan hem regelmatig te legen om plaatsen vrij te maken.
 {% endhint %}

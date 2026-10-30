@@ -9,6 +9,8 @@ description: >-
 
 Breng de gegevens van uw organisatie zo nauwkeurig mogelijk in kaart voordat u uw verwerkingsactiviteiten aanmaakt. In de toepassing heet deze module **Referenties**. De mapping verbindt vier soorten elementen: de uitgever van een actief, het actief zelf, de beveiligingsmaatregelen die erop van toepassing zijn en de datasets die het bevat, die uit gegevensvelden bestaan.
 
+<figure><img src="../../.gitbook/assets/mapping-schema-1.png" alt="Diagram van de gegevensmapping: de uitgever levert activa, die zijn gekoppeld aan beveiligingsmaatregelen en aan datasets die uit velden bestaan"><figcaption><p>Structuur van de gegevensmapping</p></figcaption></figure>
+
 Om alle persoonsgegevens van uw informatiesysteem te inventariseren, volgt u deze werkwijze:
 
 1. **Identificeer de activa**: software, bestanden, plug-ins, servers, machines enzovoort.

@@ -55,6 +55,10 @@ Dastra stuurt alleen de informatie door die nodig is voor de gevraagde generatie
 
 De exacte gegevens per functie staan in de sectie [Gegevens die naar het model worden gestuurd](how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd).
 
+Voordat een generatieverzoek wordt verstuurd, past Dastra een filter toe dat de e-mailadressen, telefoonnummers, postadressen, postcodes en volledige namen die het in de tekst herkent, maskeert. Het filter volgt Europese formaten. Het laat datums, identificatoren en standaardnummers zoals ISO 27001 ongewijzigd, zodat het model de zakelijke gegevens behoudt die het nodig heeft.
+
+**Spraakdictaat** in het berichtenveld van Dastra AI stuurt uw opname naar een spraak-naar-tekstdienst, die de getranscribeerde tekst teruggeeft. Dastra gebruikt Azure Speech op het standaardplatform en Mistral Voxtral op [Bleu](../../../security/bleu.md).
+
 ## Wat Dastra niet doet
 
 Microsoft Azure garandeert de volgende punten contractueel voor alle modellen van de families OpenAI, Mistral en Open source:

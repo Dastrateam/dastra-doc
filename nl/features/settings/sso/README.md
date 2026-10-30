@@ -137,6 +137,8 @@ U stelt het logintype van elke gebruiker in via het [gebruikersbeheer van het ab
 
 Wanneer SSO voor alle gebruikers wordt afgedwongen, toont het profiel in plaats daarvan een bericht met die strekking.
 
+Om de inlogmethode van meerdere gebruikers tegelijk te wijzigen, vinkt u ze aan in de lijst **Gebruikers**, opent u daarna **Kies een bulkactie** boven de lijst en kiest u **Wijzig de inlogmethode**. Selecteer de methode bij **Standaard verbindingsmodus** en sla daarna op. Externe gebruikers en gebruikers die worden gedwongen tot een globaal toegewezen SSO, blijven ongewijzigd. De actie verschijnt wanneer SSO deel uitmaakt van uw plan.
+
 <figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="Een gebruikersprofiel met de lijst Standaard verbindingsmodus"><figcaption><p>Het veld <strong>Standaard verbindingsmodus</strong></p></figcaption></figure>
 
 U kunt het logintype ook instellen wanneer u nieuwe gebruikers uitnodigt.

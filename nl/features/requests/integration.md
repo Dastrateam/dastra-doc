@@ -21,6 +21,8 @@ U stelt de widget eerst in via de lijst met formulieren: klik in het menu **Verz
 
 <figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Lijst van formulieren met de knop Nieuwe widget"><figcaption><p>De lijst van formulieren</p></figcaption></figure>
 
+Kopieer de code altijd uit de toepassing: het adres van het script hangt af van de hostingregio van uw organisatie (`cdn-bleu.dastra.eu` in plaats van `cdn.dastra.eu` op [Bleu](../../security/bleu.md)).
+
 Hier is een voorbeeld van een integratie van de widget (in pop-upmodus met een openingsknop):
 
 ```html

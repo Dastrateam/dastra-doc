@@ -32,6 +32,8 @@ Er is geen instelling waarmee u systemen één voor één kiest. Zodra het tabbl
 
 Om een systeem van het portaal te verwijderen, wijzigt u de organisatorische eenheid of de status ervan, of archiveert u het.
 
+Heeft de organisatorische eenheid van het Trust Center onderliggende eenheden, dan krijgen bezoekers boven de lijst een filter **Organisatie-eenheid**. Het biedt alleen de eenheid van het Trust Center en de onderliggende eenheden ervan aan.
+
 {% hint style="warning" %}
 Door het tabblad te activeren, publiceert u onmiddellijk elk systeem dat aan deze voorwaarden voldoet. Controleer daarom eerst de lijst met systemen van de eenheid in het [register van AI-systemen](../../ai-systems/record.md).
 {% endhint %}

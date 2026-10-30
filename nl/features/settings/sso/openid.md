@@ -52,6 +52,8 @@ Het formulier toont ook de waarden die u bij uw authenticatieprovider moet decla
 * **Afmeld-URL (Back-channel logout url)**, optioneel;
 * **JSON openbare sleutel URI (JWK Private Key)**, alleen bij de privésleutel JWT. Sla het formulier eenmaal op om dit eindpunt te laten werken.
 
+Declareer de **Afmeld-URL (Back-channel logout url)** bij uw provider als u wilt dat een afmelding bij de provider ook de Dastra-sessie beëindigt. Dastra ondersteunt OpenID Connect Back-Channel Logout: wanneer uw provider een logouttoken voor een gebruiker of een sessie verstuurt, trekt Dastra de bijbehorende sessies in, zodat de gebruiker zich opnieuw moet aanmelden.
+
 ### Clientauthenticatiemethode: geheime sleutel of privésleutel JWT
 
 Kies hoe Dastra zich bij uw identiteitsprovider authenticeert:
