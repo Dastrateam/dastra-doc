@@ -34,6 +34,26 @@ Vergeleken met een activiteit als verwerkingsverantwoordelijke kunt u in de sect
 
 <figure><img src="../../.gitbook/assets/ropa-processor-1.png" alt="Sectienavigatie van een verwerkingsactiviteit als verwerker"><figcaption><p>De verschillende secties van een verwerkingsactiviteit als verwerker in Dastra</p></figcaption></figure>
 
+## De sectie Klanten
+
+De sectie **Klanten** bevat de verwerkingsverantwoordelijken namens wie u de gegevens verwerkt, meestal uw klanten. U moet met elk van hen een contract ondertekenen waarin de clausules van artikel 28 van de AVG zijn opgenomen.
+
+<figure><img src="../../.gitbook/assets/ropa-processor-2.png" alt="Sectie Klanten van een verwerkingsactiviteit als verwerker met de knop Voeg klant/RT toe"><figcaption><p>De sectie Klanten van een verwerkingsactiviteit als verwerker</p></figcaption></figure>
+
+Een verwerkingsverantwoordelijke opgeven:
+
+1. Klik op **Voeg klant/RT toe**.
+2. Kies **Referentielijst van actoren (aanbevolen)** om een stakeholder uit uw repository te selecteren, of **Selecteer een afdeling of entiteit**.
+3. Beschrijf eventueel uw bewerkingen bij **Beschrijf de bewerkingen die op de gegevens zijn uitgevoerd**.
+4. Ontvangt de verwerkingsverantwoordelijke ook de gegevens, schakel dan **Is de klant/verwerker de ontvanger van de gegevens?** in. Kies bij **Welke gegevens zijn betrokken?** voor **Alle datasets (standaard)** of **Toegang tot bepaalde datasets** en vink de betreffende datasets aan.
+5. Bevestig.
+
+Om meerdere verwerkingsverantwoordelijken tegelijk toe te voegen, klikt u op de pijl rechts van **Voeg klant/RT toe** en kiest u **Voeg actoren in bulk toe** om meerdere stakeholders te selecteren, of **Voeg org. eenheden in bulk toe** om meerdere organisatie-eenheden te selecteren.
+
+Met het menu aan het einde van elke rij kunt u de verwerkingsverantwoordelijke **Bewerken**, **Acteur bewerken** of **Verwijderen**. Gebruikt uw werkruimte de module Contracten, dan maakt **Genereer een VWO** de verwerkersovereenkomst van de verwerkingsverantwoordelijke aan. Om meerdere verwerkingsverantwoordelijken te verwijderen, vinkt u ze aan en klikt u op **Verwijderen**.
+
+Om een verwerkingsverantwoordelijke alleen zijn eigen gegevens te sturen, gebruikt u de optie **Exporteren voor klant/gegevensbeheerder** van het exportvenster: het bestand sluit dan de andere verwerkingsverantwoordelijken uit (zie [Het register exporteren en importeren](export-import.md)).
+
 ***
 
 {% hint style="info" %}

@@ -6,7 +6,7 @@ description: Leer hoe u dubbele of vergelijkbare verwerkingsactiviteiten samenvo
 
 ## Inleiding
 
-Met samenvoegen combineert u meerdere verwerkingsactiviteiten tot één, waarbij u de informatie die u kiest en de eraan gekoppelde items behoudt. Het is vooral nuttig om uw verwerkingsregister te stroomlijnen, duplicaten te verwijderen en uw documentatie consistent te houden.
+Met samenvoegen combineert u meerdere verwerkingsactiviteiten tot één, waarbij u de informatie die u kiest en de eraan gekoppelde items behoudt. Het is vooral nuttig om uw verwerkingsregister te consolideren, duplicaten te verwijderen en uw documentatie consistent te houden.
 
 Eén van de verwerkingsactiviteiten blijft behouden als referentieversie: u kiest veld per veld de waarden die u uit de andere overneemt, waarna de andere worden verwijderd.
 
@@ -18,7 +18,7 @@ U kunt een samenvoeging op drie plaatsen starten:
 
 * Vanuit de lijst, voor meerdere verwerkingsactiviteiten: selecteer de samen te voegen verwerkingsactiviteiten (minder dan 30), klik op **Kies een bulkactie** en daarna op **Samenvoegen**. De vergelijking opent meteen.
 * Vanuit de lijst, voor één verwerkingsactiviteit: open het actiemenu aan het einde van de rij en klik op **Samenvoegen**.
-* Vanuit het dossier van een verwerkingsactiviteit: klik op de pijl naast de knop **Opslaan** en daarna op **Samenvoegen**.
+* Vanuit een verwerkingsactiviteit: klik op de pijl naast de knop **Opslaan** en daarna op **Samenvoegen**.
 
 <figure><img src="../../.gitbook/assets/ropa-merge-1.png" alt="Optie Samenvoegen in het actiemenu van een verwerkingsactiviteit"><figcaption><p>De optie Samenvoegen in het actiemenu van een verwerkingsactiviteit</p></figcaption></figure>
 
@@ -63,7 +63,7 @@ Om verwerkingsactiviteiten te identificeren die waarschijnlijk duplicaten zijn, 
 
 | Geval                           | Voorbeeld                                                                                       | Voordeel                                                  |
 | ------------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Stroomlijnen                    | Twee verwerkingsactiviteiten "HR-beheer" en "Personeelsbeheer"                                  | Duplicaten voorkomen en het onderhoud vereenvoudigen      |
+| Consolideren                    | Twee verwerkingsactiviteiten "HR-beheer" en "Personeelsbeheer"                                  | Duplicaten voorkomen en het onderhoud vereenvoudigen      |
 | Reorganisatie                   | Vergelijkbare verwerkingsactiviteiten aangemaakt in meerdere organisatorische eenheden          | Eén enkele, actuele verwerkingsactiviteit behouden        |
 | Harmonisatie tussen entiteiten  | Gelijkwaardige verwerkingsactiviteiten die door meerdere dochterondernemingen apart zijn gedocumenteerd | Governance en globale rapportage vergemakkelijken |
 | Register opschonen              | Duplicaten die bij een eerste import zijn ontstaan                                              | De duidelijkheid en betrouwbaarheid van het register verbeteren |

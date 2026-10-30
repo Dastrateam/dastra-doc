@@ -4,7 +4,7 @@ description: Beoordeel de gevolgen van de verwerking voor de privacy.
 
 # Impactanalyse
 
-De sectie **Impactanalyse** helpt u te beoordelen of uw verwerking moet worden onderworpen aan een gegevensbeschermingseffectbeoordeling (DPIA, ook wel PIA genoemd), zoals bepaald in [artikel 35 van de AVG](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1).
+De sectie **Impactanalyse** helpt u te beoordelen of uw verwerking moet worden onderworpen aan een gegevensbeschermingseffectbeoordeling (DPIA), zoals bepaald in [artikel 35 van de AVG](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1).
 
 Deze sectie is alleen beschikbaar voor verwerkingsactiviteiten als **Verwerkingsverantwoordelijke**.
 
@@ -50,7 +50,7 @@ De lijst van de betrokken verwerkingen hangt af van de aanbevelingen van uw nati
 
 ## De beoordeling genereren met de AI-assistent
 
-De AI-assistent kan voor elk van de 9 criteria een antwoord voorstellen op basis van de informatie die al in het register van de verwerkingsactiviteit is ingevoerd: naam, beschrijving, doeleinden, categorieën van betrokkenen, categorieën van persoonsgegevens, activa en ontvangers.
+De AI-assistent kan voor elk van de 9 criteria een antwoord voorstellen op basis van de informatie die al in de verwerkingsactiviteit is ingevoerd: naam, beschrijving, doeleinden, categorieën van betrokkenen, categorieën van persoonsgegevens, activa en ontvangers.
 
 <figure><img src="../../../.gitbook/assets/ropa-impact-analysis-1.png" alt="Knop Genereer de evaluatie naast de titel Evaluatie van de 9 criteria van de AIPD (CEPD) in de sectie Impactanalyse"><figcaption><p>De knop Genereer de evaluatie start de analyse van de 9 criteria door de AI-assistent</p></figcaption></figure>
 

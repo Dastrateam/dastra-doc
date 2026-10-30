@@ -32,7 +32,7 @@ In Dastra wordt een verwerkingsactiviteit die als verwerkingsverantwoordelijke i
 
 <figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Sectienavigatie van een verwerkingsactiviteit als verwerkingsverantwoordelijke"><figcaption><p>De verschillende secties van een verwerkingsactiviteit als verwerkingsverantwoordelijke in Dastra</p></figcaption></figure>
 
-## Actoren
+## Stakeholders
 
 Gedocumenteerd in de sectie **Stakeholders**:
 

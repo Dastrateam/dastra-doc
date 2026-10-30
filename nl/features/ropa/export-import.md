@@ -132,7 +132,7 @@ Herhaal dezelfde procedure vanuit de module **Referenties**, tabblad **Gegevenss
 
 U kunt uw datasets exporteren en importeren, inclusief de bijbehorende gegevensvelden. Zo migreert u gemakkelijker een bestaande datamap of werkt u uw verklarende woordenlijst voor gegevens in bulk bij.
 
-##### Datasets met hun velden exporteren
+**Datasets met hun velden exporteren**
 
 Vanuit de module **Referenties**, tabblad **Gegevenssets**:
 
@@ -142,7 +142,7 @@ Vanuit de module **Referenties**, tabblad **Gegevenssets**:
 
 Het geëxporteerde bestand bevat voor elke dataset de naam, de beschrijving, de bewaarregel en de lijst van de gegevensvelden. In deze kolom wordt elk gegevensveld geschreven als `naam#gevoeligheid#categorie`, en de gegevensvelden worden gescheiden door `|`. Schakel **Native kolomnamen gebruiken (handig voor het importeren van gegevens)** in als u van plan bent het bestand opnieuw te importeren.
 
-##### Datasets met hun velden importeren
+**Datasets met hun velden importeren**
 
 Het importbestand heeft hetzelfde formaat als de export. Vul voor elke dataset de gegevensvelden in de daarvoor bestemde kolom in, bijvoorbeeld `Last name#Current#CivilStatus|Salary#HighlyPersonalNature#EconomicFinancialData`. Tijdens de import:
 

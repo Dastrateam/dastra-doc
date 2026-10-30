@@ -30,7 +30,7 @@ Om generieke datasets te gebruiken, raden we de volgende werkwijze aan:
 * Open de datasetpagina van de datamapping in een nieuw tabblad.
 * Selecteer de dataset in de verwerkingsactiviteit.
 * Moet de dataset worden aangepast, maak dan een andere aan: ga naar het andere tabblad en dupliceer de generieke dataset, waarbij u de gewenste velden verwijdert of toevoegt.
-* Voor meer duidelijkheid raden we aan deze datasets van een label te voorzien, zodat u ze in de datasetkiezer gemakkelijk kunt onderscheiden. Bijvoorbeeld een label "generiek" en een label voor de toegevoegde of verwijderde gegevens.
+* Voor meer duidelijkheid raden we aan deze datasets van een label te voorzien, zodat u ze in de datasetkiezer van elkaar kunt onderscheiden. Bijvoorbeeld een label "generiek" en een label voor de toegevoegde of verwijderde gegevens.
 
 {% hint style="info" %}
 Een dataset kan aan meerdere verwerkingsactiviteiten worden gekoppeld. Wanneer u een dataset bewerkt die door meerdere verwerkingsactiviteiten wordt gebruikt, waarschuwt Dastra u dat uw wijzigingen ze allemaal beïnvloeden. Verschillen de gegevensvelden sterk voor één verwerkingsactiviteit, maak dan een kopie van de dataset en pas de kopie aan.
