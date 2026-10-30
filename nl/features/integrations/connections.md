@@ -33,11 +33,15 @@ In dit paneel test u een verbinding met **Tester** (een geslaagde test wist ook 
 Om een verbinding aan te maken, klikt u op **Voeg een verbinding toe**:
 
 1. Geef de verbinding een **Naam van de verbinding** (bijvoorbeeld Productie-instantie). Dat is optioneel, maar handig als u er meerdere hebt.
-2. Kies de **Authentificatiemethode** wanneer de connector er meer dan één ondersteunt: **Basis (inloggegevens / API-sleutel)** of **OAuth**.
+2. Kies de **Authentificatiemethode** wanneer de connector er meer dan één ondersteunt: **Basis (inloggegevens / API-sleutel)** of **OAuth**. De integratie [HTTP / Custom API](custom-http.md) biedt ook **API key / token** en **OAuth 2.0 (client credentials)**: bij die laatste authenticeert Dastra zich met zijn eigen client-ID en geheim, zonder aanmelding van een gebruiker, en vernieuwt het de toegangstokens automatisch.
 3. Vul de velden in die de connector vraagt (URL van de instantie, API-token enzovoort).
 4. Klik op **Verbinden**, of bij OAuth op **Opslaan en inloggen**. U wordt dan doorgestuurd naar de externe tool om Dastra te autoriseren.
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt="Het venster voor het aanmaken van een verbinding met naam, methode en velden voor inloggegevens"><figcaption><p>Een verbinding aanmaken</p></figcaption></figure>
+
+{% hint style="info" %}
+**Ingetrokken OAuth-verbinding.** Wanneer de autorisatie van een OAuth-verbinding is ingetrokken of verlopen, detecteert Dastra dat de eerste keer dat de verbinding wordt gebruikt en toont het een melding over een integratiefout met een knop **Reauthorize**. De knop opent het verbindingenpaneel van de integratie. Klik bij de betreffende verbinding op **Reauthorize** om de autorisatie opnieuw te starten: de verbinding en de gebruiksscenario's die ervan afhankelijk zijn, blijven behouden.
+{% endhint %}
 
 {% hint style="info" %}
 Verbindingen die workflowregels gebruiken. Bij de integratie [HTTP / Custom API](custom-http.md) is een verbinding niet aan een gebruiksscenario gebonden: elke actie **Send an HTTP request** van een workflowregel kiest rechtstreeks de te gebruiken verbinding en meerdere regels kunnen dezelfde verbinding delen. Het verbindingenpaneel toont hoeveel regels elke verbinding gebruiken. Wist u een verbinding, dan worden de regels die ervan afhangen uitgeschakeld. Zie ook [Een HTTP-verzoek versturen](../settings/workflow-rules.md#een-http-verzoek-verzenden) bij de workflowregels.
@@ -81,6 +85,8 @@ Elke rij heeft een paneel **Geavanceerd** met twee opties:
 
 * **Standaardwaarde**: wordt weggeschreven wanneer er geen bronveld is, of als terugvaloptie voor bronwaarden die niet zijn getranscodeerd. Bij datumvelden kiest u **Vandaag** of een relatieve datum (bijvoorbeeld over 30 dagen), die wordt bepaald wanneer het record wordt aangemaakt.
 * **Transcodering van waarden**: voor gesloten lijsten (statussen, levenscyclusfasen enzovoort) koppelt u elke bronwaarde aan een Dastra-waarde. Waarden die u niet koppelt, krijgen de standaardwaarde.
+
+Een gesloten-lijstveld dat aan een bronveld is gekoppeld, moet een transcodering hebben: zolang die ontbreekt, toont de rij een waarschuwing en kan de configuratie niet worden opgeslagen.
 
 <figure><img src="../../.gitbook/assets/field-mapping-advanced.png" alt="Het paneel Geavanceerd van een gemapt veld met Standaardwaarde en Transcodering van waarden"><figcaption><p>Standaardwaarde en transcodering van waarden</p></figcaption></figure>
 

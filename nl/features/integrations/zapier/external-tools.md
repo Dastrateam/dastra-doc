@@ -23,10 +23,10 @@ Geschikt voor: eenvoudige automatiseringen met kleine tot gemiddelde gegevensvol
 
 Voorbeeld van een workflow:
 
-1. Trigger in Dastra: een verzoek van een betrokkene (DSAR) of een gebeurtenis activeert een webhook.
+1. Trigger in Dastra: een verzoek van een betrokkene (DSAR) of een gebeurtenis activeert een webhook (zie [Webhooks](../../settings/webhooks.md)).
 2. Zapier ontvangt de webhook en roept de API van de externe tool aan.
 3. De resultaten worden verwerkt: de externe tool stuurt gegevens terug naar Zapier.
-4. Bijwerking in Dastra: Zapier gebruikt de REST API van Dastra om de resultaten toe te voegen (`POST /requests/{id}/attachments`) of statussen bij te werken.
+4. Bijwerking in Dastra: Zapier gebruikt de REST API van Dastra om de resultaten toe te voegen (`POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`, als multipart) of statussen bij te werken (`PATCH /v1/ws/{workspaceId}/DataSubjectRequests/{id}`).
 
 Voordelen: snel op te zetten, geen ontwikkeling nodig.\
 Nadelen: beperkte omvang van de payload, time-outs bij uitvoering.
@@ -50,9 +50,9 @@ Geschikt voor: bedrijfsklare implementaties met strikte SLA's, grote volumes en 
 
 Voorbeeld van een workflow:
 
-1. Dastra roept rechtstreeks de externe API aan wanneer een trigger optreedt.
+1. Dastra roept rechtstreeks de externe API aan wanneer een trigger optreedt (zie [HTTP / Custom API](../custom-http.md)).
 2. Het externe systeem voert de workflow uit (detectie, classificatie, redactie enzovoort).
-3. De resultaten worden via de API teruggestuurd naar Dastra (`PATCH /requests/{id}`, `POST /requests/{id}/attachments`).
+3. De resultaten worden via de API teruggestuurd naar Dastra (`PATCH /v1/ws/{workspaceId}/DataSubjectRequests/{id}`, `POST /v1/ws/{workspaceId}/DataSubjectAttachments/{dataSubjectRequestId}`).
 4. Dastra orkestreert de compliancerespons over de systemen heen.
 
 Voordelen: robuust, schaalbaar, zonder de beperkingen van Zapier.\

@@ -242,14 +242,15 @@
   * [Repository van AI-modellen](features/ai-systems/models.md)
 * [Integraties](features/integrations/README.md)
   * [Verbindingen, gebruiksscenario's en veldmapping](features/integrations/connections.md)
+  * [Zapier](features/integrations/zapier/README.md)
+    * [Dastra integreren met externe tools](features/integrations/zapier/external-tools.md)
+    * [Veelgestelde vragen](features/integrations/zapier/faq.md)
   * [Filerskeepers](features/integrations/filerskeepers.md)
   * [ServiceNow](features/integrations/servicenow.md)
   * [SAP LeanIX](features/integrations/sap-leanix.md)
   * [Jira](features/integrations/jira.md)
   * [Microsoft Teams](features/integrations/microsoft-teams.md)
   * [HTTP / Custom API](features/integrations/custom-http.md)
-  * [Dastra integreren met externe tools](features/integrations/zapier/external-tools.md)
-  * [Veelgestelde vragen](features/integrations/zapier/faq.md)
 * [Geavanceerde configuratie](features/settings/README.md)
   * [Rollen en machtigingen](features/settings/roles.md)
   * [Single Sign On (SSO)](features/settings/sso/README.md)
@@ -285,7 +286,6 @@
 * [API-configuratie](api/configuration.md)
 * [Authenticatie](api/authentication.md)
 * [API referenties](https://api.dastra.eu/swagger)
-* [Integraties via Zapier](features/integrations/zapier/README.md)
 
 ## 🛡️ Beveiliging <a href="#security" id="security"></a>
 
