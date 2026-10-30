@@ -180,7 +180,7 @@
   * [Intégration de l'API](features/requests/api.md)
   * [Questions fréquentes](features/requests/faq.md)
   * [Caviardage des documents](features/requests/redaction.md)
-* [Violations de données](features/incidents/README.md)
+* [Incidents et violations de données](features/incidents/README.md)
   * [Documenter une nouvelle violation de données](features/incidents/document-breach.md)
   * [Exportez vos violations de données](features/incidents/export.md)
   * [Incidents en tant que sous-traitant](features/incidents/as-processor.md)

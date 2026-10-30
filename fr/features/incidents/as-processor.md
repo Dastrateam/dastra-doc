@@ -6,57 +6,57 @@ description: >-
 
 # Incidents en tant que sous-traitant
 
-Le module de violations de données de Dastra s'adapte au **rôle de votre organisation** dans l'incident : Responsable de traitement (RT) ou Sous-traitant (ST). Ce rôle détermine les obligations applicables et conditionne les étapes affichées dans le formulaire.
-
-***
+Le module Incidents de Dastra s'adapte au rôle de votre organisation dans l'incident : responsable de traitement ou sous-traitant. Ce rôle détermine les obligations applicables et les étapes affichées dans le formulaire.
 
 ## Déclarer son rôle à la création
 
-Lors de la création d'un nouvel incident, un sélecteur permet de choisir entre :
+Lorsque vous créez un incident, la fenêtre pose la question **Dans le cadre de cet incident, êtes-vous sous-traitant ?**, avec deux réponses :
 
-* **Responsable de traitement** — flux standard : notification CNIL, communication aux personnes concernées, analyse de risque.
-* **Sous-traitant** — flux adapté : l'obligation de notification directe à l'autorité de contrôle ne s'applique pas ; c'est au responsable de traitement de notifier.
+* **Non** (réponse par défaut) : vous traitez l'incident en tant que responsable de traitement. Le parcours est le parcours standard : notification à l'autorité de contrôle, communication aux personnes concernées, analyse de risque.
+* **Oui** : vous traitez l'incident en tant que sous-traitant. Vous n'avez pas à notifier directement l'autorité de contrôle : c'est au responsable de traitement de le faire.
 
-<figure><img src="../../.gitbook/assets/violation-selecteur-role.png" alt="Fenêtre de création d&#x27;un incident avec le sélecteur de rôle Responsable de traitement / Sous-traitant"><figcaption><p>Lors de la création, indiquez le rôle de votre organisation dans l'incident : Responsable de traitement ou Sous-traitant</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Fenêtre de création d'un incident avec la question sur le rôle de sous-traitant, réponse Oui sélectionnée"><figcaption><p>À la création, indiquez si votre organisation intervient en tant que sous-traitant</p></figcaption></figure>
+
+Pour créer l'incident pas à pas, lisez [Documenter une nouvelle violation de données](document-breach.md).
 
 {% hint style="info" %}
-**Base réglementaire — Art. 33(2) RGPD**
-
-Le sous-traitant est tenu de notifier toute violation de données personnelles au responsable de traitement **dans les meilleurs délais** après en avoir pris connaissance. Il n'a pas d'obligation de notification directe à l'autorité de contrôle, cette obligation incombant au responsable de traitement.
+Article 33, paragraphe 2, du RGPD : le sous-traitant notifie toute violation de données personnelles au responsable de traitement dans les meilleurs délais après en avoir pris connaissance. Il n'a pas d'obligation de notification directe à l'autorité de contrôle : cette obligation incombe au responsable de traitement.
 {% endhint %}
 
-***
+## Différences dans le formulaire
 
-## Différences du formulaire en mode Sous-traitant
+Lorsque vous répondez **Oui** à la question sur le rôle, le formulaire change comme suit :
 
-Lorsque le rôle **Sous-traitant** est sélectionné :
+| Élément | Responsable de traitement | Sous-traitant |
+| --- | --- | --- |
+| Étape **Notification** (autorité de contrôle) | Affichée | Masquée |
+| Étape **Communication** | Communication aux personnes concernées | Communication aux responsables de traitement, avec l'onglet **Responsables de traitement** |
 
-| Élément                                        | Mode RT    | Mode ST                                       |
-| ---------------------------------------------- | ---------- | --------------------------------------------- |
-| Étape de notification à l'autorité de contrôle | ✅ Affichée | ❌ Masquée                                     |
-| Section communication aux personnes concernées | Standard   | Remplacée par la section ST (voir ci-dessous) |
-| Section de communication aux RT clients        | ❌ Absente  | ✅ Présente                                    |
+Les autres étapes restent les mêmes. À l'étape **Analyse de risque**, un rappel indique que vous devez informer les responsables de traitement concernés des actions requises afin qu'ils puissent agir en conséquence.
 
-***
+Dans le registre, le filtre **Type** distingue les incidents traités en tant que sous-traitant de ceux traités en tant que responsable de traitement, et la page **Statistiques** affiche la **Répartition par rôle**.
 
-## Section de communication aux responsables de traitement clients
+## Communiquer aux responsables de traitement clients
 
-En mode Sous-traitant, une section dédiée remplace la communication standard. Elle vous permet de :
+L'étape **Communication** d'un incident de sous-traitant a deux onglets.
 
-* **Associer les RT clients** concernés par l'incident — la liste peut être synchronisée automatiquement depuis les traitements liés à l'incident
-* **Suivre le statut de notification** de chaque RT (notifié / en attente)
-* **Exporter la liste** des RT impliqués pour votre dossier de conformité
+Dans l'onglet **Communication**, répondez à **Avez-vous adressé une communication aux responsables de traitement ?** par **Non applicable**, **Oui** ou **Non**. Avec **Oui**, cliquez sur **Ajouter une communication** pour enregistrer chaque envoi avec sa date. Avec **Non**, indiquez les raisons dans **Pour quelles raisons n'avez-vous pas communiqué aux responsables de traitement ?**.
 
-<figure><img src="../../.gitbook/assets/violation-sous-traitant-clients.png" alt="Section Communication aux responsables de traitement dans un incident sous-traitant"><figcaption><p>L'onglet Responsables de traitement liste les RT clients à notifier, avec les actions Joindre, Synchroniser et Exporter</p></figcaption></figure>
+L'onglet **Responsables de traitement** liste les responsables de traitement clients touchés par l'incident. Vous pouvez :
 
-### Synchronisation automatique des RT depuis les traitements liés
+* rattacher un responsable de traitement avec **Rattacher un RT** ;
+* importer automatiquement les responsables de traitement avec **Synchroniser les RT** ;
+* cocher, pour chacun, **Communication envoyée** et **Autorité notifiée** ;
+* exporter la liste avec **Exporter les RT**, pour votre dossier de conformité.
 
-Si des traitements de données sont associés à l'incident, Dastra peut identifier automatiquement les responsables de traitement clients concernés à partir de ces traitements et les ajouter à la liste de notification. Cliquez sur **Synchroniser les RT** dans la section dédiée pour déclencher cette synchronisation.
+<figure><img src="../../.gitbook/assets/incidents-as-processor-1.png" alt="Étape Communication d'un incident de sous-traitant, onglet Responsables de traitement"><figcaption><p>L'onglet Responsables de traitement, avec les actions Rattacher un RT, Synchroniser les RT et Exporter les RT</p></figcaption></figure>
 
-***
+### Synchroniser les responsables de traitement
+
+Si des traitements sont liés à l'incident (étape **Traitements**), Dastra retrouve les responsables de traitement clients à partir de ces traitements et les ajoute à la liste. Cliquez sur **Synchroniser les RT** pour lancer l'opération. Si aucun traitement ni système d'IA n'est encore lié, Dastra vous invite à en lier d'abord.
 
 ## Bonnes pratiques
 
-* Notifiez vos RT clients **sans délai injustifié** dès que vous avez connaissance de l'incident — le RGPD n'impose pas de délai fixe au ST (contrairement aux 72h imposées au RT vis-à-vis de l'autorité), mais la réactivité est essentielle.
-* Documentez la date et l'heure de chaque notification envoyée aux RT dans la section dédiée.
-* Conservez une trace des accusés de réception ou réponses des RT dans les pièces jointes de l'incident.
+* Prévenez vos clients responsables de traitement dès que vous avez connaissance de l'incident. Le RGPD n'impose pas de délai chiffré au sous-traitant, contrairement aux 72 heures laissées au responsable de traitement pour notifier l'autorité, mais la réactivité est essentielle.
+* Enregistrez la date et l'heure de chaque communication envoyée aux responsables de traitement.
+* Conservez les accusés de réception et les réponses dans l'étape **Documentation** de l'incident.
