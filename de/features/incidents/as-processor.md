@@ -1,64 +1,62 @@
 ---
 description: >-
-  Verwalten Sie Datenschutzvorfälle, bei denen Ihre Organisation im Sinne der
-  DSGVO als Auftragsverarbeiter handelt
+  Verwalten Sie Datenschutzvorfälle, bei denen Ihre Organisation nach der DSGVO
+  als Auftragsverarbeiter handelt.
 ---
 
 # Datenschutzvorfälle als Auftragsverarbeiter
 
-Das Modul für Datenschutzvorfälle in Dastra passt sich der **Rolle Ihrer Organisation** im Vorfall an: Verantwortlicher oder Auftragsverarbeiter. Diese Rolle bestimmt die geltenden Pflichten und die Schritte, die im Formular angezeigt werden.
+Das Modul Vorfälle von Dastra passt sich der Rolle Ihrer Organisation im Vorfall an: Verantwortlicher oder Auftragsverarbeiter. Diese Rolle bestimmt die geltenden Pflichten und welche Schritte im Formular angezeigt werden.
 
-***
+## Ihre Rolle bei der Erstellung angeben
 
-## Die Rolle beim Erstellen angeben
+Beim Erstellen eines Vorfalls fragt das Fenster **Sind Sie im Zusammenhang mit diesem Vorfall als Auftragsverarbeiter tätig?** mit zwei Antworten:
 
-Beim Erstellen eines neuen Vorfalls legen Sie fest, ob Ihre Organisation als Verantwortlicher oder als Auftragsverarbeiter handelt. Dafür beantworten Sie die Frage **Sind Sie im Zusammenhang mit diesem Vorfall als Auftragsverarbeiter tätig?** mit Ja oder Nein:
+* **Nein** (Standard): Sie behandeln den Vorfall als Verantwortlicher. Es gilt der Standardablauf: Meldung an die Aufsichtsbehörde, Mitteilung an die betroffenen Personen, Risikoanalyse.
+* **Ja**: Sie behandeln den Vorfall als Auftragsverarbeiter. Sie müssen die Aufsichtsbehörde nicht selbst benachrichtigen: Das ist Sache des Verantwortlichen.
 
-* **Verantwortlicher**: der übliche Ablauf mit Meldung an die Aufsichtsbehörde, Benachrichtigung der betroffenen Personen und Risikoanalyse.
-* **Auftragsverarbeiter**: ein angepasster Ablauf. Die Pflicht, die Aufsichtsbehörde direkt zu melden, entfällt: Die Meldung ist Sache des Verantwortlichen.
+<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Fenster zum Erstellen eines Vorfalls mit der Frage zur Rolle als Auftragsverarbeiter, Ja ausgewählt"><figcaption><p>Geben Sie bei der Erstellung an, ob Ihre Organisation als Auftragsverarbeiter handelt</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/violations-create-subprocessor.png" alt="Dialog zum Erstellen eines Vorfalls mit der Auswahl der Rolle als Auftragsverarbeiter (Ja/Nein)"><figcaption><p>Geben Sie beim Erstellen eines Vorfalls an, ob Ihre Organisation als Auftragsverarbeiter handelt</p></figcaption></figure>
+Wie Sie den Vorfall Schritt für Schritt erstellen, lesen Sie unter [Einen neuen Datenschutzvorfall dokumentieren](document-breach.md).
 
 {% hint style="info" %}
-**Rechtsgrundlage: Art. 33 Abs. 2 DSGVO**
-
-Der Auftragsverarbeiter muss jede Verletzung des Schutzes personenbezogener Daten **unverzüglich**, nachdem sie ihm bekannt wurde, dem Verantwortlichen melden. Der Auftragsverarbeiter ist nicht verpflichtet, die Aufsichtsbehörde direkt zu informieren: Diese Pflicht liegt beim Verantwortlichen.
+Artikel 33 Absatz 2 DSGVO: Der Auftragsverarbeiter meldet dem Verantwortlichen jede Verletzung des Schutzes personenbezogener Daten unverzüglich, nachdem sie ihm bekannt geworden ist. Der Auftragsverarbeiter ist nicht verpflichtet, die Aufsichtsbehörde direkt zu benachrichtigen: Diese Pflicht liegt beim Verantwortlichen.
 {% endhint %}
 
-***
+## Unterschiede im Formular
 
-## Unterschiede im Formular im Modus Auftragsverarbeiter
+Wenn Sie die Frage zur Rolle mit **Ja** beantworten, ändert sich das Formular wie folgt:
 
-Wenn die Rolle **Auftragsverarbeiter** gewählt ist:
+| Element | Verantwortlicher | Auftragsverarbeiter |
+| --- | --- | --- |
+| Schritt **Benachrichtigung** (Aufsichtsbehörde) | Angezeigt | Ausgeblendet |
+| Schritt **Mitteilung** | Mitteilung an die betroffenen Personen | Mitteilung an die Verantwortlichen, mit dem Tab **Verantwortliche für die Datenverarbeitung** |
 
-| Element | Modus Verantwortlicher | Modus Auftragsverarbeiter |
-| ------- | ---------------------- | ------------------------- |
-| Schritt Meldung an die Aufsichtsbehörde | Angezeigt | Ausgeblendet |
-| Bereich Benachrichtigung der betroffenen Personen | Standard | Ersetzt durch den Bereich für Auftragsverarbeiter (siehe unten) |
-| Bereich Mitteilung an Kunden als Verantwortliche | Nicht vorhanden | Vorhanden |
+Die übrigen Schritte bleiben gleich. Im Schritt **Risikoanalyse** erinnert ein Hinweis daran, die betreffenden Verantwortlichen über die erforderlichen Maßnahmen zu informieren, damit sie entsprechend handeln können.
 
-***
+Im Verzeichnis unterscheidet der Filter **Rolle** die als Auftragsverarbeiter behandelten Vorfälle von denen, die als Verantwortlicher behandelt werden, und die Seite **Statistiken** zeigt die **Aufteilung nach Rollen**.
 
-## Mitteilung an Kunden als Verantwortliche
+## Den Verantwortlichen, die Ihre Kunden sind, Mitteilung machen
 
-Im Modus Auftragsverarbeiter ersetzt ein eigener Bereich den üblichen Bereich zur Benachrichtigung. Er ermöglicht Ihnen:
+Der Schritt **Mitteilung** eines Vorfalls als Auftragsverarbeiter hat zwei Tabs.
 
-* die **am Vorfall beteiligten Kunden als Verantwortliche zuzuordnen**: Die Liste kann automatisch aus den mit dem Vorfall verknüpften Verarbeitungstätigkeiten synchronisiert werden.
-* den **Benachrichtigungsstatus** jedes Verantwortlichen zu verfolgen (benachrichtigt oder ausstehend).
-* die **Liste** der beteiligten Verantwortlichen für Ihre Compliance-Akte zu **exportieren**.
+Beantworten Sie im Tab **Mitteilung** die Frage **Haben Sie sich an die Verantwortlichen für die Verarbeitungen gewandt?** mit **Nicht zutreffend**, **Ja** oder **Nein**. Klicken Sie bei **Ja** auf **Eine Mitteilung hinzufügen**, um jede Nachricht mit ihrem Datum zu erfassen. Nennen Sie bei **Nein** die Gründe unter **Aus welchen Gründen haben Sie die Verantwortlichen für die Verarbeitung nicht informiert?**.
 
-<figure><img src="../../.gitbook/assets/violations-subprocessor-communication-dc.png" alt="Bereich Mitteilung an Verantwortliche in einem Vorfall als Auftragsverarbeiter"><figcaption><p>Der Tab RT-Mitteilung listet die zu benachrichtigenden Verantwortlichen auf, mit den Schaltflächen zum Zuordnen, Synchronisieren und Exportieren</p></figcaption></figure>
+Der Tab **Verantwortliche für die Datenverarbeitung** listet die vom Vorfall betroffenen Verantwortlichen unter Ihren Kunden auf. Sie können:
 
-Die Schaltflächen des Bereichs heißen **RT zuordnen**, **RTs synchronisieren** und **RTs exportieren**.
+* einen Verantwortlichen mit **RT zuordnen** zuordnen;
+* die Verantwortlichen mit **RTs synchronisieren** automatisch importieren;
+* bei jedem **Nachricht gesendet** und **Notifizierte Behörde** aktivieren;
+* die Liste für Ihre Compliance-Akte mit **RTs exportieren** exportieren.
 
-### Verantwortliche automatisch aus verknüpften Verarbeitungstätigkeiten synchronisieren
+<figure><img src="../../.gitbook/assets/incidents-as-processor-1.png" alt="Schritt Mitteilung eines Vorfalls als Auftragsverarbeiter, Tab Verantwortliche für die Datenverarbeitung"><figcaption><p>Der Tab Verantwortliche für die Datenverarbeitung mit den Aktionen RT zuordnen, RTs synchronisieren und RTs exportieren</p></figcaption></figure>
 
-Sind dem Vorfall Verarbeitungstätigkeiten zugeordnet, kann Dastra daraus automatisch die betroffenen Kunden als Verantwortliche ermitteln und in die Benachrichtigungsliste aufnehmen. Klicken Sie dazu im Bereich auf **RTs synchronisieren**.
+### Die Verantwortlichen synchronisieren
 
-***
+Sind dem Vorfall Verarbeitungstätigkeiten zugeordnet (Schritt **Verarbeitungen**), findet Dastra anhand dieser Tätigkeiten die Verantwortlichen unter Ihren Kunden und fügt sie der Liste hinzu. Klicken Sie auf **RTs synchronisieren**, um den Vorgang zu starten. Ist noch keine Verarbeitungstätigkeit und kein KI-System verknüpft, bittet Dastra Sie, zuerst welche zu verknüpfen.
 
 ## Bewährte Vorgehensweisen
 
-* Benachrichtigen Sie Ihre Kunden als Verantwortliche **unverzüglich**, sobald Ihnen der Vorfall bekannt wird. Die DSGVO legt keine feste Frist für die Meldung des Auftragsverarbeiters an den Verantwortlichen fest (anders als die 72 Stunden, die für Verantwortliche gegenüber der Aufsichtsbehörde gelten), aber ein rasches Handeln ist entscheidend.
-* Dokumentieren Sie Datum und Uhrzeit jeder an Verantwortliche gesendeten Benachrichtigung im dafür vorgesehenen Bereich.
-* Bewahren Sie Empfangsbestätigungen oder Antworten der Verantwortlichen in den Anhängen des Vorfalls auf.
+* Benachrichtigen Sie die Verantwortlichen unter Ihren Kunden, sobald Ihnen der Vorfall bekannt wird. Die DSGVO setzt dem Auftragsverarbeiter keine feste Frist, anders als die 72 Stunden, die der Verantwortliche für die Meldung an die Behörde hat, doch eine schnelle Reaktion ist entscheidend.
+* Halten Sie Datum und Uhrzeit jeder an die Verantwortlichen gesendeten Mitteilung fest.
+* Bewahren Sie die Empfangsbestätigungen und Antworten im Schritt **Dokumentation** des Vorfalls auf.
