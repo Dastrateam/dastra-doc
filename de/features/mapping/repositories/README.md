@@ -1,13 +1,14 @@
 ---
 description: >-
   Das Verarbeitungsverzeichnis stützt sich auf Referenzlisten: Assets,
-  Stakeholder, Datenkategorien und Sicherheitsmaßnahmen. Dastra lässt Sie sie
-  getrennt vom Verzeichnis verwalten, um Eingabefehler zu begrenzen.
+  Stakeholder, Datenkategorien, Datenfelder, Sicherheitsmaßnahmen und
+  Betroffenenkategorien. Dastra lässt Sie sie getrennt vom Verzeichnis
+  verwalten, um Eingabefehler zu begrenzen.
 ---
 
 # Metadaten
 
-Um Eingabefehler zu begrenzen, lässt Dastra Sie eine oder mehrere Referenzlisten unabhängig vom Verarbeitungsverzeichnis verwalten. Die Verarbeitungstätigkeiten des Verzeichnisses verwenden dann die Elemente dieser Referenzlisten wieder.
+Um Eingabefehler zu begrenzen, lässt Dastra Sie Referenzlisten unabhängig vom Verarbeitungsverzeichnis verwalten. Die Verarbeitungstätigkeiten des Verzeichnisses verwenden dann die Elemente dieser Referenzlisten wieder.
 
 ## Auf die Referenzlisten zugreifen
 
@@ -17,23 +18,34 @@ Klicken Sie im Seitenmenü auf **Metadaten**. Das Menü bietet:
 * **Data Mapping**: eine grafische Darstellung Ihrer Assets und Stakeholder.
 * **Assets**, **Stakeholder**, **Datenkategorien**, **Datensätze**, **Maßnahmen** und **Betroffenenkategorie**: die sechs Referenzlisten.
 
-## Von Dastra bereitgestellte Referenzlisten
+Was Sie tun können, hängt von den Berechtigungen Ihrer Rolle für die Datenkartierung und die Referenzlisten ab. Siehe [Rollen und Berechtigungen](../../settings/roles.md).
 
-* **Assets**: Assets sind die Elemente, die Ihnen bei der Verwaltung von Daten helfen, etwa Datenträger, Räumlichkeiten sowie materielle und immaterielle Ausstattung. Siehe [Assets](assets.md).
-* **Stakeholder**: Stakeholder unterscheiden sich von Nutzern, weil sie sich nicht auf der Plattform anmelden müssen.
-* **Datenkategorien**: Datenkategorien sind Gruppen von Daten, die zusammenhängende Einheiten bilden, mit ihren Regeln zur Speicherdauer.
-* **Datensätze** (im Englischen „Data glossary“): Datenfelder sind die einzelnen Informationen. Sie sind die kleinste Ebene in Dastra.
-* **Maßnahmen**: Sicherheitsmaßnahmen sind die technischen oder organisatorischen Vorkehrungen zum Schutz der Daten.
-* **Betroffenenkategorie**: Kategorien betroffener Personen fassen Kategorien von Personen zusammen.
+## Die sechs Referenzlisten
+
+* [Assets](assets.md): Datenträger, Räumlichkeiten sowie materielle und immaterielle Ausstattung.
+* [Stakeholder](stakeholders.md): die Unternehmen und Personen, die mit Ihren Verarbeitungen verbunden sind und sich nicht auf der Plattform anmelden müssen.
+* [Datenkategorien](datasets.md): Gruppen von Datenfeldern, die zusammenhängende Einheiten bilden, mit ihren Regeln zur Speicherdauer.
+* [Datenglossar](data-glossary.md): die Datenfelder, die kleinste Ebene in Dastra. Der Menüeintrag heißt **Datensätze**.
+* [Sicherheitsmaßnahmen](security-measures.md): die technischen oder organisatorischen Vorkehrungen zum Schutz der Daten. Der Menüeintrag heißt **Maßnahmen**.
+* [Betroffenenkategorien](subject-categories.md): die Personengruppen, deren Daten Sie verarbeiten. Der Menüeintrag heißt **Betroffenenkategorie**.
+
+Jede Seite beschreibt die Felder des Formulars, wie Sie Elemente erstellen, importieren und zusammenführen und wo die Referenzliste verwendet wird. Wie eine Verarbeitungstätigkeit diese Elemente nutzt, ist einmal in den Seiten der Tätigkeit beschrieben: siehe [Eine Verarbeitung ausfüllen](../../ropa/activity/README.md).
 
 ## Gemeinsame Funktionen der Listen
 
 Die Listen der sechs Referenzlisten haben mehrere Funktionen gemeinsam:
 
-* **Erstellen Sie auf der Grundlage von Vorlagen** fügt ein Element aus der Vorlagenbibliothek hinzu.
-* **Importieren** fügt Elemente aus einer Datei hinzu. Siehe [Ihre Daten importieren (Excel, CSV)](../../general/import.md).
-* **Exportieren** exportiert die Liste.
+* **Erstellen Sie auf der Grundlage von Vorlagen** fügt ein Element aus der Vorlagenbibliothek hinzu. Bei den meisten Referenzlisten entwirft eine KI-Schaltfläche neben der Schaltfläche zum Erstellen ein Element aus einer kurzen Beschreibung, sofern die Funktion für Ihre Organisation aktiviert ist.
+* **Importieren** fügt Elemente aus einer Datei hinzu. Siehe [Daten importieren (Excel, CSV)](../../general/import.md).
+* **Exportieren** exportiert die Liste oder nur die ausgewählten Zeilen.
 * **Datenqualitätswerkzeug** erkennt Duplikate, und **Zusammenführen** fasst sie zusammen. Das Datenqualitätswerkzeug gibt es für Betroffenenkategorien nicht. Siehe [Elemente zusammenführen](../../general/merge.md).
+* Filter, benutzerdefinierte Spalten und benutzerdefinierte Ansichten. Siehe [Erweiterte Filter](../../general/filters.md).
+* Sammelaktionen für eine Auswahl von Zeilen. Siehe [Listen, Sammelaktionen und Papierkorb](../../general/lists.md). **Felder bearbeiten**, wo angeboten, ändert dasselbe Feld bei allen ausgewählten Elementen.
+* Die Tabellen- und die Kartenansicht, für Assets und Stakeholder.
+
+In den Referenzlisten fragt **Löschen** nach einer Bestätigung und löscht das Element endgültig: Der auf der Seite zu den Listen beschriebene Papierkorb gilt hier nicht.
+
+Die Formulare enthalten außerdem die [benutzerdefinierten Felder](../../general/custom-fields.md), außer bei Betroffenenkategorien, und in der Symbolleiste, wo angeboten, die [generischen Beziehungen](../relationships.md) des Elements.
 
 ## Überblick und Grafiken
 
@@ -47,37 +59,3 @@ Die Seite **Data Mapping** bietet vier Darstellungen, die Sie in der Dropdown-Li
 * **Hierarchischer Baum der Assets**.
 
 Die Schaltflächen **Drucken** und **Aktualisieren** stehen oben auf der Seite zur Verfügung.
-
-## Besonderheiten der einzelnen Referenzlisten
-
-### Stakeholder
-
-Ein Stakeholder kann einer Organisationseinheit zugeordnet werden, was seine Sichtbarkeit auf die Nutzer dieser Einheit beschränkt. Die Schaltfläche **Stakeholder erstellen** bietet an, von einer Vorlage (**Basierend auf einer Vorlage**) oder von Grund auf (**Von Grund auf neu**) zu beginnen.
-
-Im Formular können Sie im Abschnitt **Unterauftragsverarbeiter** die Unterauftragsverarbeiter der Organisation erfassen, die oft im DPA genannt werden, und so die gesamte Unterauftragskette kartieren.
-
-In der Liste findet der Filter **Verantwortung** Stakeholder danach, wie Sie sie verwenden: Software-Herausgeber (Herausgeber von mindestens einem Asset), Anbieter von KI-Modellen (Herausgeber von mindestens einem KI-Modell) oder Empfänger in einer Verarbeitungstätigkeit (Auftragsverarbeiter, gemeinsam Verantwortlicher, öffentliche Stelle usw.).
-
-### Datenkategorien
-
-Eine Datenkategorie fasst Datenfelder, sensibel oder nicht, mit den Regeln zur Speicherdauer zusammen, die für ihren Lebenszyklus gelten: zum Beispiel Gehaltsabrechnungen auf Papier oder Kundendatensätze in einem CRM. Füllen Sie die **Herkunft der Datenerhebung**, die **Nutzung** und die **Archivierung** aus und fügen Sie dann die Daten unter **Felder für personenbezogene Daten** hinzu.
-
-Der Filter **Siehe „Orphan“ (ohne Asset)** listet die Datenkategorien auf, die keinem Asset zugeordnet sind. Sie können sie über das Feld **Verbundener Asset** zuordnen.
-
-### Datensätze
-
-Jedes Datenfeld hat eine **Sensibilität**:
-
-* **Standard**, zum Beispiel Name, Vorname oder Telefonnummer.
-* **Daten höchstpersönlicher Natur**, zum Beispiel Finanzdaten, Standortdaten oder Kommunikation.
-* **Besondere Kategorien (sensibel)**, zum Beispiel rassische oder ethnische Herkunft, politische Meinungen, Religion, Gesundheit oder sexuelle Orientierung.
-
-Die Stufe **Besondere Kategorien (sensibel)** blendet das Feld **Rechtsgrundlage für die Datenerhebung** ein. Die standardmäßig ausgeblendete Spalte **Datenkategorien** lässt sich mit **Ist leer** oder **Ist nicht leer** filtern: Damit finden Sie die Datenfelder, die zu keiner Datenkategorie gehören.
-
-### Maßnahmen
-
-Eine Maßnahme hat einen Namen, einen **Typ** und optional die Adresse ihrer Dokumentation, zum Beispiel auf der Website der CNIL. Der Filter **Siehe Waisen** listet die Maßnahmen auf, die weder einem Asset noch einer Verarbeitungstätigkeit zugeordnet sind.
-
-### Betroffenenkategorien
-
-Eine Kategorie hat einen Namen und die Option **Betroffene schutzbedürftige Personen**. Aktivieren Sie sie, wenn die Kategorie Personen in einer ungleichen Situation zusammenfasst, etwa Minderjährige, Beschäftigte oder ältere Menschen.

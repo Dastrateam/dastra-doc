@@ -1,13 +1,14 @@
 ---
 description: >-
   Het verwerkingsregister steunt op repositories: activa, stakeholders,
-  datasets en beveiligingsmaatregelen. Met Dastra beheert u ze los van het
-  register om invoerfouten te beperken.
+  datasets, gegevensvelden, beveiligingsmaatregelen en categorieën van
+  betrokkenen. Met Dastra beheert u ze los van het register om invoerfouten te
+  beperken.
 ---
 
 # Referenties
 
-Om invoerfouten te beperken, kunt u in Dastra een of meer repositories onafhankelijk van het verwerkingsregister beheren. De verwerkingsactiviteiten van het register hergebruiken daarna de elementen van die repositories.
+Om invoerfouten te beperken, kunt u in Dastra repositories onafhankelijk van het verwerkingsregister beheren. De verwerkingsactiviteiten van het register hergebruiken daarna de elementen van die repositories.
 
 ## De repositories openen
 
@@ -17,23 +18,34 @@ Klik in het zijmenu onder **Data inventory** op **Referenties**. Het menu biedt:
 * **In kaart brengen**: een grafische weergave van uw activa en stakeholders.
 * **Activa**, **Actoren**, **Datasets**, **Verklarende woordenlijst voor gegevens**, **Maatregelen** en **Categorie van betrokken personen**: de zes repositories.
 
-## Repositories die Dastra aanbiedt
+Wat u kunt doen, hangt af van de rechten voor gegevensmapping en repositories van uw rol. Zie [Rollen en machtigingen](../../settings/roles.md).
 
-* **Activa**: activa zijn de elementen die u helpen gegevens te beheren, zoals gegevensdragers, gebouwen en materiële of immateriële uitrusting. Zie [Activa](assets.md).
-* **Actoren**: stakeholders verschillen van gebruikers doordat ze zich niet bij het platform hoeven aan te melden.
-* **Datasets**: datasets zijn groepen gegevens die samenhangende geheel vormen, met hun bewaarregels.
-* **Verklarende woordenlijst voor gegevens**: gegevensvelden zijn de stukjes informatie. Ze vormen het meest atomaire niveau in Dastra.
-* **Maatregelen**: beveiligingsmaatregelen zijn de technische of organisatorische voorzieningen die zijn getroffen om de gegevens te beschermen.
-* **Categorie van betrokken personen**: categorieën van betrokkenen groeperen categorieën van personen.
+## De zes repositories
+
+* [Activa](assets.md): gegevensdragers, gebouwen en materiële of immateriële uitrusting.
+* [Actoren](stakeholders.md): de bedrijven en personen die aan uw verwerking zijn gekoppeld en zich niet bij het platform hoeven aan te melden.
+* [Datasets](datasets.md): groepen gegevensvelden die samenhangende sets vormen, met hun bewaarregels.
+* [Verklarende woordenlijst voor gegevens](data-glossary.md): de gegevensvelden, het meest atomaire niveau in Dastra.
+* [Beveiligingsmaatregelen](security-measures.md): de technische of organisatorische voorzieningen die de gegevens beschermen. Het menu-item is **Maatregelen**.
+* [Categorieën van betrokkenen](subject-categories.md): de groepen personen van wie u gegevens verwerkt. Het menu-item is **Categorie van betrokken personen**.
+
+Elke pagina beschrijft de velden van het formulier, hoe u elementen aanmaakt, importeert en samenvoegt, en waar de repository wordt gebruikt. Hoe een verwerkingsactiviteit deze elementen gebruikt, wordt één keer beschreven, op de pagina's van de activiteit: zie [Een verwerkingsactiviteit invullen](../../ropa/activity/README.md).
 
 ## Functies die de lijsten delen
 
 De lijsten van de zes repositories delen verschillende functies:
 
-* **Maak vanuit de bibliotheek** voegt een element toe uit de sjablonenbibliotheek.
+* **Maak vanuit de bibliotheek** voegt een element toe uit de sjablonenbibliotheek. Bij de meeste repositories stelt een AI-knop naast de knop om aan te maken een element op basis van een korte beschrijving op, wanneer de functie voor uw organisatie is ingeschakeld.
 * **Importeren** voegt elementen toe uit een bestand. Zie [Uw gegevens importeren (Excel, CSV)](../../general/import.md).
-* **Exporteren** exporteert de lijst.
+* **Exporteren** exporteert de lijst, of alleen de geselecteerde regels.
 * Het **Gegevenskwaliteitsinstrument** detecteert duplicaten en **Samenvoegen** combineert ze. Het gegevenskwaliteitsinstrument bestaat niet voor categorieën van betrokkenen. Zie [Elementen samenvoegen](../../general/merge.md).
+* Filters, aangepaste kolommen en aangepaste weergaven. Zie [Geavanceerde filters](../../general/filters.md).
+* Bulkacties op een selectie van regels. Zie [Lijsten, bulkacties en prullenbak](../../general/lists.md). **Velden bewerken**, waar het wordt aangeboden, wijzigt hetzelfde veld op alle geselecteerde elementen.
+* De tabel- en kaartweergave, voor activa en stakeholders.
+
+In de repositories vraagt **Verwijderen** om bevestiging en verwijdert het element definitief: de prullenbak die op de pagina over lijsten wordt beschreven, geldt hier niet.
+
+De formulieren delen ook de [aangepaste velden](../../general/custom-fields.md), behalve voor categorieën van betrokkenen, en, in de werkbalk, de [generieke relaties](../relationships.md) van het element, waar die worden aangeboden.
 
 ## Rapportage en grafieken
 
@@ -47,37 +59,3 @@ De pagina **In kaart brengen** biedt vier weergaven, die u kiest in de keuzelijs
 * **Hiërarchische structuur van activa**.
 
 De knoppen **Afdrukken** en **Verversen** staan boven aan de pagina.
-
-## Wat specifiek is voor elke repository
-
-### Actoren
-
-Een stakeholder kan aan een organisatorische eenheid worden gekoppeld, waardoor de zichtbaarheid beperkt blijft tot de gebruikers van die eenheid. Met de knop **Nieuwe actor** begint u vanuit een sjabloon (**Ingebouwde sjabloon**) of vanaf nul (**Gepersonaliseerd**).
-
-In het formulier kunt u in de sectie **Sub-verwerkers** de sub-verwerkers van de organisatie opslaan, die vaak in de verwerkersovereenkomst worden genoemd, en zo de hele keten van onderaanneming in kaart brengen.
-
-In de lijst vindt u met het filter **Verantwoordelijkheid** stakeholders volgens de manier waarop u ze gebruikt: softwareuitgever (uitgever van ten minste één actief), aanbieder van een AI-model (uitgever van ten minste één AI-model) of ontvanger in een verwerkingsactiviteit (verwerker, gezamenlijke verwerkingsverantwoordelijke, openbare instantie enzovoort).
-
-### Datasets
-
-Een dataset groepeert gegevensvelden, gevoelig of niet, met de bewaarregels die van toepassing zijn op hun levenscyclus: bijvoorbeeld loonstroken op papier of klantendossiers in een CRM. Vul de **Herkomst van de collectie**, de **Actieve basis** en de **Tussentijdse archivering** in en voeg daarna de gegevens toe bij **Velden voor persoonlijke gegevens**.
-
-Het filter **Zie weeskind (zonder actief)** toont de datasets die niet aan een actief zijn gekoppeld. U kunt ze koppelen via het veld **Gerelateerde activa**.
-
-### Verklarende woordenlijst voor gegevens
-
-Elk gegevensveld heeft een **Niveau van verwerking**:
-
-* **Standaard**, bijvoorbeeld naam, voornaam of telefoonnummer.
-* **Zeer persoonlijke gegevens**, bijvoorbeeld financiële gegevens, locatie of communicatie.
-* **Gevoelige gegevens**, bijvoorbeeld raciale of etnische afkomst, politieke opvattingen, religie, gezondheid of seksuele geaardheid.
-
-Het niveau **Gevoelige gegevens** toont het veld **Wettelijke basis voor inzameling**. De kolom **Datasets**, standaard verborgen, kunt u filteren met **Is leeg** of **Is niet leeg**: gebruik ze om de gegevensvelden te vinden die tot geen enkele dataset behoren.
-
-### Maatregelen
-
-Een maatregel heeft een naam, een **Type** en eventueel het adres van de documentatie ervan, bijvoorbeeld op de website van de CNIL. Het filter **Bekijk de wezen** toont de maatregelen die noch aan een actief, noch aan een verwerkingsactiviteit zijn gekoppeld.
-
-### Categorieën van betrokkenen
-
-Een categorie heeft een naam en de optie **Betrokken kwetsbare personen**. Vink die aan wanneer de categorie mensen in een onevenwichtige situatie groepeert, zoals minderjarigen, werknemers of ouderen.
