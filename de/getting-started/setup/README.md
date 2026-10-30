@@ -113,6 +113,8 @@ Sie können die Funktionen selbst erkunden oder einem konkreten Fall im Tutorial
 
 ***
 
+Fragen zur Einrichtung? Die [FAQ](../../other/faq.md) listet die Fragen jedes Moduls auf.
+
 {% hint style="info" %}
 Sie können Rollen, Teams und Organisationseinheiten in Ihrem Mandanten jederzeit ändern. Diese Einstellungen bleiben vollständig anpassbar, damit sie zu Ihrer Organisation passen.
 {% endhint %}

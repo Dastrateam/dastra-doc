@@ -33,7 +33,7 @@
   * [Rollen und Berechtigungen verwalten](getting-started/setup/roles.md)
   * [Warum sieht ein Nutzer eine Verarbeitung nicht?](getting-started/setup/visibility.md)
   * [Teams erstellen und zuweisen](getting-started/setup/teams.md)
-  * [Häufig gestellte Fragen](getting-started/setup/faq.md)
+  * [FAQ](getting-started/setup/faq.md)
   * [Ihr Nutzerprofil konfigurieren](getting-started/setup/profile.md)
 * [Tutorial](getting-started/tutorial/README.md)
   * [Schritt 1: Die Einrichtung](getting-started/tutorial/step-1.md)
@@ -47,6 +47,16 @@
   * [Die Online-Hilfe](getting-started/support/online-help.md)
   * [Supportanfrage](getting-started/support/request.md)
   * [Der Kundensupport-Prozess](getting-started/support/process.md)
+
+## Praxisbeispiele <a href="#examples" id="examples"></a>
+
+* [Praxisbeispiele](examples/README.md)
+  * [ISO-27001-Projekt](examples/iso-27001-project.md)
+  * [Risiko-Scoring](examples/risk-scoring.md)
+  * [Workflow-Rezepte](examples/workflow-recipes.md)
+  * [Assets aus einer Tabelle importieren](examples/excel-import.md)
+  * [Einen Datenfluss kartieren](examples/data-mapping.md)
+  * [Fragebogenantworten in einem Verzeichnis](examples/questionnaire-to-record.md)
 
 ## ⚙️ Funktionen <a href="#features" id="features"></a>
 
@@ -71,7 +81,7 @@
     * [Der MCP-Server](features/general/ai-assistant/mcp.md)
   * [E-Mail-Vorlagen](features/general/email-templates.md)
   * [Interne Diskussionen](features/general/discussions.md)
-  * [Häufig gestellte Fragen](features/general/faq.md)
+  * [FAQ](features/general/faq.md)
 * [Datenkartierung](features/mapping/README.md)
   * [Metadaten](features/mapping/repositories/README.md)
     * [Assets](features/mapping/repositories/assets.md)
@@ -110,12 +120,13 @@
     * [Datenkartierung des Verzeichnisses anzeigen](features/ropa/visualization/data-map.md)
     * [Übermittlungskarte anzeigen](features/ropa/visualization/transfers-map.md)
   * [Verarbeitungen zusammenführen](features/ropa/merge.md)
-  * [Häufig gestellte Fragen](features/ropa/faq.md)
+  * [FAQ](features/ropa/faq.md)
 * [Dokumentenmanagement (DMS)](features/files/README.md)
   * [Dokumentvorlagen](features/files/templates.md)
 * [Fragebögen](features/questionnaires/README.md)
   * [Eine Fragebogenvorlage erstellen](features/questionnaires/templates/README.md)
     * [Eine DSFA-Vorlage erstellen oder bearbeiten](features/questionnaires/templates/pia.md)
+    * [Ein Verzeichnis aus den Antworten befüllen](features/questionnaires/templates/record-mapping.md)
   * [Einen Fragebogen planen](features/questionnaires/schedule.md)
   * [Fragebögen überwachen](features/questionnaires/monitor.md)
   * [Einen Fragebogen validieren](features/questionnaires/validate.md)
@@ -252,7 +263,7 @@
   * [Verbindungen, Anwendungsfälle und Feld-Mapping](features/integrations/connections.md)
   * [Zapier](features/integrations/zapier/README.md)
     * [Dastra mit externen Tools integrieren](features/integrations/zapier/external-tools.md)
-    * [Häufig gestellte Fragen](features/integrations/zapier/faq.md)
+    * [FAQ](features/integrations/zapier/faq.md)
   * [Filerskeepers](features/integrations/filerskeepers.md)
   * [ServiceNow](features/integrations/servicenow.md)
   * [SAP LeanIX](features/integrations/sap-leanix.md)
@@ -307,7 +318,7 @@
 
 ## 🤖 VERSCHIEDENES <a href="#other" id="other"></a>
 
-* [Häufig gestellte Fragen](other/faq.md)
+* [FAQ](other/faq.md)
 * [Barrierefreiheit](other/accessibility.md)
 * [DSFA-Leitfaden nach Ländern](other/dpia-by-country.md)
 * [Bekannte Probleme](other/known-problems.md)

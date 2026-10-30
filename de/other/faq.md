@@ -1,11 +1,28 @@
 ---
 description: >-
-  Antworten auf häufig gestellte Fragen zur Nutzung von Dastra: Logos, Import
-  eines bestehenden Verzeichnisses, Löschen einer Verarbeitungstätigkeit,
-  fehlende Elemente und der lokale Speicher des Browsers.
+  Die FAQ jedes Dastra-Moduls an einem Ort und Antworten auf allgemeine Fragen:
+  Logos, Import eines bestehenden Verzeichnisses, Löschen einer
+  Verarbeitungstätigkeit, fehlende Elemente und der lokale Speicher des
+  Browsers.
 ---
 
-# Häufig gestellte Fragen
+# FAQ
+
+Diese Seite ist der Einstieg zu den in der Dokumentation beantworteten Fragen. Sie listet die FAQ jedes Moduls auf und beantwortet danach die allgemeinen Fragen.
+
+## FAQ der Module
+
+* [FAQ Erste Schritte](../getting-started/setup/faq.md): Teams und Organisationseinheiten als Stakeholder, Export und Import von Organisationseinheiten, Änderung des Datenschutzbeauftragten und Verwaltung der Inhaber der Organisation.
+* [FAQ Allgemeine Funktionen](../features/general/faq.md): Datenkategorien importieren.
+* [FAQ KI-Assistent](../features/general/ai-assistant/faq.md): Datenschutz und Daten, Qualität und Zuverlässigkeit, Konfiguration und Zugriff sowie die KI-Verordnung.
+* [FAQ Verarbeitungsverzeichnis](../features/ropa/faq.md): Änderungsverlauf, Löschen, Datenkategorien im Lesemodus, Sammeländerungen bei Stakeholdern, Duplizieren in einen anderen Mandanten, Typwechsel und Fehlermeldungen.
+* [FAQ Fragebögen](../features/questionnaires/faq.md): DSFA für mehrere Verarbeitungstätigkeiten, E-Mail-Vorlagen, externe Befragte, vorgeschlagene Aufgaben, Veröffentlichen von Vorlagen, Fehlermeldungen und Grenzen.
+* [FAQ Risiken](../features/risks/faq.md): das fehlende Menü, ein Risiko zum nächsten Schritt verschieben, anfängliches, Restrisiko und aktuelles Risiko, die Risikoskala ändern.
+* [FAQ Aufgaben](../features/tasks/faq.md): Aufgaben einem Projekt zuordnen, eine Aufgabe löschen, den Arbeitsaufwand erfassen und nachfassen.
+* [FAQ Anfragen](../features/requests/faq.md): E-Mails zum Abschluss, der sichere Bereich der anfragenden Person und die E-Mail-Prüfung, Länge von Nachrichten und Cookies auf der Erfassungsseite.
+* [FAQ Zapier](../features/integrations/zapier/faq.md): vertraglicher Status von Zapier, wer den Vertrag unterzeichnet, und die Dokumentation zur Zuverlässigkeit.
+
+Bei Problemen statt Fragen siehe [Bekannte Probleme](known-problems.md) und die [bekannten Probleme bei SSO](../features/settings/sso/known-problems.md).
 
 ## Wie ändere ich das Logo der Organisation in Dastra?
 
@@ -35,7 +52,7 @@ Zum Import von Verarbeitungstätigkeiten siehe [Verzeichnis exportieren / import
 
 Das Löschen erfolgt in zwei Schritten, damit nichts versehentlich gelöscht wird. Verschieben Sie die Verarbeitungstätigkeit zuerst mit **In den Papierkorb verschieben** in den Papierkorb. Zeigen Sie dann in den Filtern mit **Papierkorb anzeigen** den Papierkorb an und wählen Sie **Löschen**, um sie endgültig zu löschen, oder **Wiederherstellen**, um sie wieder in das Verzeichnis aufzunehmen.
 
-Das vollständige Vorgehen steht in den [häufig gestellten Fragen](../features/ropa/faq.md#wie-loscht-man-eine-verarbeitungstatigkeit) zum Verzeichnis.
+Das vollständige Vorgehen steht in der [FAQ zum Verzeichnis](../features/ropa/faq.md#wie-loscht-man-eine-verarbeitungstatigkeit).
 
 ## Ich finde bestimmte Elemente nicht. Was kann ich tun?
 

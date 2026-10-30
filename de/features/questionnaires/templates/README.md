@@ -149,6 +149,8 @@ custom_business_owner
 ```
 
 Speichern Sie anschließend die Änderungen an der Vorlage.
+
+Zu den übrigen Feldern des Eintrags, den Fragetypen und dem Zusammenführen siehe [Ein Verzeichnis aus den Antworten befüllen](record-mapping.md).
 {% endstep %}
 {% endstepper %}
 

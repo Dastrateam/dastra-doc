@@ -40,6 +40,8 @@ Das Aktivieren einer anderen Skala, wenn bereits Risiken vorhanden sind, wirkt s
 
 Der Wert eines Risikos ist das Produkt aus seinem Schweregrad und seiner Wahrscheinlichkeit. Die Höchstpunktzahl einer Skala ist das Produkt ihrer beiden höchsten Stufen: 25 bei der Skala mit 5 Stufen, 16 bei der Skala mit 4 Stufen und 9 bei der Skala mit 3 Stufen. Die in Dastra angezeigten Prozentsätze drücken einen Wert im Verhältnis zu dieser Höchstpunktzahl aus.
 
+Eine Berechnung Schritt für Schritt, auf der Standardskala und auf der CNIL-Skala, finden Sie unter [Risiko-Scoring](../../../examples/risk-scoring.md).
+
 ## Wahrscheinlichkeit
 
 Die Wahrscheinlichkeit ist eine Bewertung der Häufigkeit, mit der ein Risiko eintritt. Es handelt sich um einen empirisch bewerteten Wert (traditionell auf einer Skala von 5). Jede Stufe kann einer Häufigkeit des Eintretens des Risikos und damit der Bedrohung entsprechen.

@@ -93,7 +93,7 @@ Sie können Felder per Drag-and-drop neu anordnen oder von einer Gruppe in eine 
 | Option | Beschreibung |
 | --- | --- |
 | **Bezeichnung** | Der in Formularen angezeigte Name des Feldes. Pflichtangabe. |
-| **Name der Variablen (Slug)** | Die Kennung des Feldes für APIs und Importe. Sie wird aus der Bezeichnung vorgeschlagen und kann nach dem Erstellen des Feldes nicht mehr geändert werden. |
+| **Name der Variablen (Slug)** | Der technische Name des Feldes, den APIs und Importe verwenden. Er wird aus der Bezeichnung vorgeschlagen, in Kleinbuchstaben mit Unterstrichen (zum Beispiel `business_owner` für „Business owner“), und kann nach dem Erstellen des Feldes nicht mehr geändert werden. Er wird nur in diesem Fenster angezeigt: Öffnen Sie das Feld in der Liste, um ihn zu lesen. Um das Feld aus einem Fragebogen zu befüllen, schreiben Sie `custom_` gefolgt von diesem Namen (siehe [Ein Verzeichnis aus den Antworten befüllen](../questionnaires/templates/record-mapping.md)). |
 | **Tooltip-Text** | Ein Hilfetext, der neben dem Feld angezeigt wird. |
 | **Pflichtfeld** | Macht die Eingabe verpflichtend. |
 | **In PDF- oder Word-Berichten enthalten?** | Fügt das Feld den erzeugten Berichten hinzu. Standardmäßig angekreuzt. |

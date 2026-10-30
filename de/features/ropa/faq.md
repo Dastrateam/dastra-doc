@@ -2,7 +2,7 @@
 description: Häufig gestellte Fragen zum Verzeichnis der Verarbeitungstätigkeiten.
 ---
 
-# Häufig gestellte Fragen
+# FAQ
 
 ## Wie zeigt man den Änderungsverlauf einer Verarbeitungstätigkeit an?
 

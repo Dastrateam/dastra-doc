@@ -16,6 +16,8 @@ Diese Seite behandelt das Erstellen eines Projekts, seine sechs Phasen, den Phas
 * [Compliance-Überwachung](monitoring.md): Nachweise, Testkampagnen, Export der Anwendungserklärung;
 * [Audits](audits.md): interne Audits und abschließende Audits.
 
+Eine vollständige Schritt-für-Schritt-Anleitung für ein Zertifizierungsprojekt finden Sie im [Beispiel eines ISO-27001-Projekts](../../../examples/iso-27001-project.md).
+
 ## Die Projekte öffnen
 
 Klicken Sie im Menü auf **Compliance** und dann auf **Projekte**. Das Seitenmenü hat zwei Gruppen:
