@@ -1,17 +1,14 @@
+---
+description: >-
+  Download kant-en-klare documentsjablonen in het gedeelte Middelen van Toezicht
+  en informatiebronnen.
+---
+
 # Documentsjablonen
 
-Op zoek naar documentsjablonen? Dit is de plek! :thumbsup:
+Dastra biedt documentsjablonen, bijvoorbeeld voor uw nalevingsdocumentatie. U vindt ze in de module **Toezicht en informatiebronnen**.
 
-Om toegang te krijgen tot de documentbronnen, ga je naar de module "Bewaking en bronnen" en klik je op "Bronnen".
+1. Klik in het linkermenu onder **Resources** op **Toezicht en informatiebronnen**.
+2. Open het tabblad **Middelen**.
 
-<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption><p>Toegang tot bronnen</p></figcaption></figure>
-
-
-
-Je hoeft nu alleen nog maar de sjablonen te selecteren
-
-<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
-
-De sjablonen zijn beschikbaar om te downloaden in Word formaat.&#x20;
-
-<figure><img src="../../.gitbook/assets/image (2) (4).png" alt=""><figcaption><p>Voorbeelden van documentsjablonen</p></figcaption></figure>
+Selecteer het sjabloon dat u nodig hebt. De sjablonen kunnen in Word-formaat worden gedownload.

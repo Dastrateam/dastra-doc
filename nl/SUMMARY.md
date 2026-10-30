@@ -104,7 +104,7 @@
     * [De doorgiftekaart weergeven](features/ropa/visualization/transfers-map.md)
   * [Verwerkingsactiviteiten samenvoegen](features/ropa/merge.md)
   * [Veelgestelde vragen](features/ropa/faq.md)
-* [Documentbeheer](features/files/README.md)
+* [Bestandsbeheer](features/files/README.md)
   * [Documentsjablonen](features/files/templates.md)
 * [Vragenlijsten](features/questionnaires/README.md)
   * [Een vragenlijstsjabloon aanmaken](features/questionnaires/templates/README.md)
@@ -278,7 +278,7 @@
 
 ## Partners <a href="#partners" id="partners"></a>
 
-* [Portaal](partners/portal.md)
+* [Partnerportaal](partners/portal.md)
 
 ## 📄 API-documentatie <a href="#api" id="api"></a>
 

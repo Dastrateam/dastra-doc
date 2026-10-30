@@ -1,87 +1,119 @@
-# Documentbeheer 
+---
+description: >-
+  Centraliseer in het bestandsbeheer van Dastra de documenten die uw naleving
+  aantonen: documenten aanmaken, mappen, toegangsrechten en cloudopslag.
+---
 
-Dastra integreert standaard een document management functie &#x20;
+# Bestandsbeheer
 
-Met deze module kunt u de toegang tot alle gerelateerde documenten in Dastra centraliseren en delen.
+Dastra integreert standaard een bestandsbeheer, in het Frans ook GED (elektronisch documentbeheer) genoemd. Het centraliseert en deelt de toegang tot alle documenten die bij uw werk in Dastra horen. U vindt de module onder **Resources** > **Bestandsbeheer** in het linkermenu.
 
-Hier kunt u bijvoorbeeld alle documentatie opslaan die u nodig hebt om aan te tonen dat u voldoet aan de AVG.
-
-{% hint style="info" %}
-**Focus op AVG documentatie**
-
-&#x20;
-
-De documentatievereiste komt voort uit het verantwoordingsbeginsel van artikel 24 van de AVG.
-
-In de praktijk neemt deze documentatie voornamelijk de vorm aan van een register van de verwerkingsactiviteiten, maar ook van andere elementen van gegevensbeheer en naleving van de AVG. **Deze kunnen het volgende omvatten (niet-limitatieve lijst):** * interne procedures voor het creëren van gegevensbestanden
-
-* interne procedures voor het creëren van een nieuwe verwerking van persoonsgegevens (interne controle, risico- en evenredigheidsbeoordeling, enz.)
-* procedure voor het uitvoeren van PIA's
-* opstellen van een schriftelijk en bindend gegevensbeschermingsbeleid, waarmee rekening moet worden gehouden en dat moet worden toegepast op nieuwe gegevensverwerking (bijv. naleving van gegevenskwaliteitscriteria, voorafgaande kennisgeving, beveiligingsbeginselen, raadpleging, enz.)
-* in kaart brengen van procedures om ervoor te zorgen dat alle gegevensverwerking naar behoren wordt geïdentificeerd, en beheer van een inventaris van gegevensverwerking
-* het opzetten van opleidingsprogramma's voor mensen die verantwoordelijk zijn voor het beheer van gegevensverwerking
-* het opzetten van procedures voor het beheer van verzoeken om toegang, rectificatie en verwijdering van gegevens en de rechten van betrokkenen ten aanzien van hun gegevens
-* het opzetten van een intern klachtenbehandelingsmechanisme
-* het ontwikkelen van interne procedures voor het effectief beheren en melden van datalekken
-* het uitvoeren van privacyeffectbeoordelingen in bepaalde omstandigheden
-* implementatie van en toezicht op verificatieprocedures om ervoor te zorgen dat alle maatregelen niet alleen op papier bestaan, maar ook worden geïmplementeerd en in de praktijk werken (interne of externe audits, enz.).
-
-U kunt deze ruimte ook gebruiken voor **het opslaan van documenten die nuttig kunnen zijn voor het begrijpen van de Verwerking, trainingsnotities en eventuele contracten die de Verwerking regelen**.
-{% endhint %}
-
-### Geaccepteerde formaten
-
-Vele formaten worden geaccepteerd:
-
-* pdf
-* Word
-* Excel
-* jpg
-* zip
-* etc
-
-Als een formaat niet wordt geaccepteerd, kun je het bestand in een .zip-archief plaatsen om het in de documentatie op te nemen &#x20;
-
-### Een document maken
-
-Met Dastra kunt u snel een document maken om aantekeningen te maken &#x20;
-
-Ga hiervoor naar documentbeheer en klik op "Een document schrijven".
-
-&#x20;
-
-<figure><img src="../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption><p>Schrijf een nieuw document</p></figcaption></figure>
-
-Het nieuwe document wordt opgeslagen in markdown-indeling (.md)
-
-<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
-
-### Een map maken
-
-U kunt uw documenten in mappen opslaan zodat u ze gemakkelijk kunt terugvinden &#x20;
-
-Het is mogelijk om submappen te maken.
-
-<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
-
-### Rechtenbeheer
-
-Je kunt rechten toevoegen aan mappen en bestanden in het EDM. Deze rechten kunnen worden toegewezen aan zowel mappen als bestanden en kunnen worden geconfigureerd door de beheerder van de werkruimte of een gebruiker met de machtiging "Bestandsbeheer: beheer".
+Hier kunt u alle documentatie opslaan die helpt uw naleving van de AVG aan te tonen.
 
 {% hint style="info" %}
-Belangrijk: Standaard worden er geen beperkingen toegepast op de mappenstructuur. Machtigingen gekoppeld aan de rollen van de gebruiker worden echter toegepast !&#x20;
+**Focus op AVG-documentatie**
+
+De documentatieplicht vloeit voort uit het verantwoordingsbeginsel van artikel 24 van de AVG.
+
+In de praktijk gaat dit verder dan het verwerkingsregister en omvat het (niet-limitatieve lijst):
+
+* Interne procedures voor het aanmaken van nieuwe verwerkingen van persoonsgegevens
+* DPIA-methodologie en uitgevoerde beoordelingen
+* Schriftelijk gegevensbeschermingsbeleid
+* Procedures voor het in kaart brengen en inventariseren van gegevens
+* Opleidingsregisters van het personeel dat betrokken is bij gegevensverwerking
+* Procedures voor het beheer van de rechten van betrokkenen
+* Interne mechanismen voor klachtenbehandeling
+* Procedures voor het beheer en de melding van datalekken
+* Verslagen en bevindingen van interne of externe audits
+* Contractdocumentatie voor verwerkers en gezamenlijke verwerkingsverantwoordelijken
 {% endhint %}
 
-De eigenaar van de werkruimte (of beheerder) kan toegangsrechten configureren door op het configuratiepictogram op de overeenkomstige regel te klikken. Ze kunnen dan toegang configureren door teams en gebruikers toe te voegen met de bijbehorende uitvoeringsrechten.
+## Geaccepteerde bestandsformaten
 
-&#x20;
+Veel formaten worden ondersteund:
 
-<figure><img src="../../.gitbook/assets/select-permission.gif" alt=""><figcaption><p>Interface beheer interface</p></figcaption></figure>
+* PDF
+* Word (.docx)
+* Excel (.xlsx)
+* Afbeeldingen (JPG, PNG enzovoort)
+* Archieven (.zip)
+* En meer
 
-Deze machtigingen worden toegepast op alle "kind"-items (d.w.z. alle items in de map, dus ook submappen).&#x20;
+Wordt een formaat niet geaccepteerd, plaats het bestand dan in een `.zip`-archief en upload dat.
+
+## Een document aanmaken
+
+U kunt rechtstreeks in Dastra een document schrijven, bijvoorbeeld om aantekeningen te maken. Klik in het bestandsbeheer op **Schrijf een document**.
+
+<figure><img src="../../.gitbook/assets/files-1.png" alt="De werkbalk van het bestandsbeheer met de knop Schrijf een document"><figcaption><p>De knop Schrijf een document</p></figcaption></figure>
+
+Voer het label van het document in en daarna de inhoud ervan in de Markdown-editor. Het document wordt opgeslagen in Markdown-formaat (.md).
+
+<figure><img src="../../.gitbook/assets/files-2.png" alt="De documenteditor met de knop Genereer met AI"><figcaption><p>De documenteditor</p></figcaption></figure>
+
+### Een document genereren met AI
+
+De AI-assistent kan een **document genereren** op basis van een beschrijving en, indien nodig, bestanden of een websiteadres als context.
+
+Om dit te gebruiken, klikt u op **Schrijf een document** en daarna in de editor op **Genereer met AI**. Beschrijf kort het document dat u nodig hebt (type, doel, verwachte inhoud) en voeg eventueel bestanden toe om de context te verrijken. De gegenereerde tekst verschijnt in de editor: controleer ze, bewerk ze en sla ze op. De knop is alleen actief als de AI-assistent in uw abonnement beschikbaar is.
 
 {% hint style="info" %}
-Een map waarvoor geen rechten zijn gedefinieerd, wordt beschouwd als toegankelijk voor alle gebruikers.
-
-Als er permissies zijn gedefinieerd of geërfd op een item, wordt het verborgen voor gebruikers die niet de benodigde machtiging hebben.
+Deze functie is handig om een eerste versie op te stellen van een gegevensbeschermingsbeleid, een interne procedure of een ander nalevingsdocument.
 {% endhint %}
+
+## Een map aanmaken
+
+Organiseer uw documenten in mappen zodat u ze kunt terugvinden. Klik op **Maak een map**, geef ze een naam en kies de locatie ervan: submappen worden ondersteund.
+
+<figure><img src="../../.gitbook/assets/files-3.png" alt="Het venster voor het aanmaken van een map"><figcaption><p>Het venster voor het aanmaken van een map</p></figcaption></figure>
+
+## Toegangsrechten beheren
+
+U kunt de toegang tot mappen en bestanden beperken. Rechten gelden voor mappen en bestanden. Ze worden geconfigureerd door de beheerder van de werkruimte of door een gebruiker die bestanden mag beheren.
+
+{% hint style="info" %}
+Standaard worden er geen beperkingen toegepast op de mappenstructuur. De machtigingen die aan de rollen van de gebruiker zijn gekoppeld, blijven wel van toepassing.
+{% endhint %}
+
+Klik op de rij van een map of een bestand op de knop **Element toegangsrechten** en voeg daarna de teams en gebruikers toe met het gewenste machtigingsniveau.
+
+<figure><img src="../../.gitbook/assets/files-4.png" alt="Het venster om de toegangsrechten van een map te beheren"><figcaption><p>Het venster voor de toegangsrechten</p></figcaption></figure>
+
+Deze machtigingen gelden voor alle onderliggende elementen, dat wil zeggen alles wat de map bevat, submappen inbegrepen.
+
+{% hint style="info" %}
+Een map zonder gedefinieerde machtigingen is toegankelijk voor alle gebruikers.
+
+Zijn er machtigingen gedefinieerd of geërfd op een element, dan is het verborgen voor gebruikers die niet over de vereiste autorisaties beschikken.
+{% endhint %}
+
+## Bestanden uit andere modules
+
+De bestanden die aan verwerkingsactiviteiten, activa, stakeholders en contracten zijn gekoppeld, kunnen in het bestandsbeheer worden opgeslagen, in een speciale map. Ze zijn dan zichtbaar voor alle gebruikers die bestanden mogen bekijken: u moet de toegang tot de mappen beheren.
+
+Om dit standaardgedrag te kiezen, klikt u op **Instellingen voor werkruimte** > **Algemeen** en schakelt u daarna in de kaart **Bestandsbeheer** de optie **Upload standaard bestanden in GED** in. Schakelt u de optie uit, dan blijven bestanden aan hun item gekoppeld en verschijnen ze niet in het bestandsbeheer, wat het beheer van de toegang eenvoudiger kan maken.
+
+<figure><img src="../../.gitbook/assets/files-5.png" alt="De kaart Bestandsbeheer in de algemene instellingen van de werkruimte"><figcaption><p>De optie om bestanden standaard te uploaden</p></figcaption></figure>
+
+Gebruikers die bestanden mogen beheren, hebben drie extra opdrachten:
+
+* **Bekijk bestanden die niet in bestandsbeheer staan**, in het menu **Filters** van het bestandsbeheer, toont de bestanden die er niet in zijn opgeslagen.
+* **Ga naar gemeenschappelijk bestandsbeheer** verplaatst een bestand naar het bestandsbeheer, in de map van uw keuze.
+* **Verwijderen uit algemeen bestandsbeheer** haalt het bestand uit het bestandsbeheer: het bestand blijft bewaard, maar andere gebruikers kunnen het niet meer vinden.
+
+## Cloudopslag
+
+Standaard slaat Dastra bestanden op in Azure Blob Storage: ze zijn versleuteld, op virussen gescand en redundant. U kunt ook uw eigen opslag koppelen, Microsoft OneDrive & SharePoint of Google Drive, om te vermijden dat bestanden tussen systemen worden gedupliceerd.
+
+{% content-ref url="../settings/cloud-storage.md" %}
+[Integraties met OneDrive & SharePoint / Google Drive](../settings/cloud-storage.md)
+{% endcontent-ref %}
+
+## Documentsjablonen
+
+Dastra biedt kant-en-klare documentsjablonen om u te helpen uw nalevingsdocumentatie op te bouwen.
+
+{% content-ref url="templates.md" %}
+[Documentsjablonen](templates.md)
+{% endcontent-ref %}
