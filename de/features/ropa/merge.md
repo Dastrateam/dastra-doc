@@ -8,7 +8,7 @@ description: >-
 
 ## Einführung
 
-Mit dem Zusammenführen von Verarbeitungstätigkeiten **fassen Sie mehrere Verarbeitungstätigkeiten zu einer einzigen zusammen** und behalten dabei die Informationen, die Sie auswählen, und die mit ihnen verknüpften Elemente. Das ist besonders nützlich, um **Ihr Verarbeitungsverzeichnis zu straffen**, Duplikate zu entfernen und Ihre Dokumentation konsistent zu halten.
+Mit dem Zusammenführen von Verarbeitungstätigkeiten **fassen Sie mehrere Verarbeitungstätigkeiten zu einer einzigen zusammen** und behalten dabei die Informationen, die Sie auswählen, und die mit ihnen verknüpften Elemente. Das ist besonders nützlich, um **Ihr Verarbeitungsverzeichnis zu konsolidieren**, Duplikate zu entfernen und Ihre Dokumentation konsistent zu halten.
 
 Eine der Verarbeitungstätigkeiten bleibt als **Referenzversion** erhalten: Sie wählen Feld für Feld die Werte aus, die aus den anderen übernommen werden, danach werden die anderen gelöscht.
 
@@ -20,7 +20,7 @@ Sie können ein Zusammenführen an drei Stellen starten:
 
 * **Aus der Liste, für mehrere Verarbeitungstätigkeiten**: Wählen Sie die zusammenzuführenden Verarbeitungstätigkeiten aus (weniger als 30), klicken Sie auf **Bitte wählen Sie eine Sammelaktion aus** und dann auf **Zusammenführen**. Der Vergleich öffnet sich direkt.
 * **Aus der Liste, für eine Verarbeitungstätigkeit**: Öffnen Sie das Aktionsmenü am Ende ihrer Zeile und klicken Sie auf **Zusammenführen**.
-* **Aus dem Eintrag einer Verarbeitungstätigkeit**: Klicken Sie auf den Pfeil neben der Schaltfläche **Speichern** und dann auf **Zusammenführen**.
+* **Aus einer Verarbeitungstätigkeit**: Klicken Sie auf den Pfeil neben der Schaltfläche **Speichern** und dann auf **Zusammenführen**.
 
 <figure><img src="../../.gitbook/assets/ropa-merge-1.png" alt="Eintrag Zusammenführen im Aktionsmenü einer Verarbeitungstätigkeit"><figcaption><p>Der Eintrag Zusammenführen im Aktionsmenü einer Verarbeitungstätigkeit</p></figcaption></figure>
 
@@ -65,7 +65,7 @@ Um Verarbeitungstätigkeiten zu finden, bei denen es sich wahrscheinlich um Dupl
 
 | Fall | Beispiel | Nutzen |
 | --- | --- | --- |
-| **Straffung** | Zwei Verarbeitungstätigkeiten „Personalverwaltung“ und „Mitarbeiterverwaltung“ | Duplikate vermeiden und die Pflege vereinfachen |
+| **Konsolidierung** | Zwei Verarbeitungstätigkeiten „Personalverwaltung“ und „Mitarbeiterverwaltung“ | Duplikate vermeiden und die Pflege vereinfachen |
 | **Umstrukturierung** | Ähnliche Verarbeitungstätigkeiten, die in mehreren Organisationseinheiten angelegt wurden | Eine einzige aktuelle Verarbeitungstätigkeit behalten |
 | **Harmonisierung über Entitäten hinweg** | Gleichartige Verarbeitungstätigkeiten, die mehrere Tochtergesellschaften getrennt dokumentiert haben | Governance und konzernweites Reporting erleichtern |
 | **Bereinigung des Verzeichnisses** | Duplikate, die bei einem ersten Import entstanden sind | Übersichtlichkeit und Verlässlichkeit des Verzeichnisses verbessern |

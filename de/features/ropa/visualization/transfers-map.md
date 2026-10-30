@@ -13,9 +13,9 @@ Mit dieser Ansicht erkunden, analysieren und verstehen Sie die geografischen Üb
 
 ## Die Übermittlungskarte anzeigen
 
-Um die Übermittlungskarte anzuzeigen, öffnen Sie das Modul **Verarbeitungstätigkeiten** und klicken dann über Ihrer Liste der Verarbeitungstätigkeiten auf den Tab **Drittländer**.
+Um die Übermittlungskarte anzuzeigen, klicken Sie im linken Menü auf **Verarbeitungsverzeichnis** und dann auf **Drittländer**.
 
-<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Tab Drittländer im Modul Verarbeitungstätigkeiten"><figcaption><p>Tab Drittländer über den Verarbeitungstätigkeiten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-transfers-map-1.png" alt="Eintrag Drittländer im Menü Verarbeitungsverzeichnis"><figcaption><p>Der Eintrag Drittländer des Menüs Verarbeitungsverzeichnis</p></figcaption></figure>
 
 Anschließend können Sie die **Übermittlungskarte anzeigen**. Über die Schaltflächen der Symbolleiste stehen drei Ansichten zur Verfügung:
 
@@ -23,9 +23,11 @@ Anschließend können Sie die **Übermittlungskarte anzeigen**. Über die Schalt
 * **Karte anzeigen**: die Übermittlungen auf einer flachen Weltkarte,
 * **Tabelle**: die Übermittlungen als Tabelle.
 
-In den Kartenansichten steht die Liste der Übermittlungen neben der Karte. Mit der Pfeilschaltfläche am Rand der Karte blenden Sie sie aus oder ein. Mit den Filtern der Symbolleiste grenzen Sie die angezeigten Übermittlungen ein, und das Menü neben der Schaltfläche **Eine Übertragung von Daten hinzufügen** ermöglicht es, die Karte zu drucken oder die Übermittlungen zu exportieren.
+In den Kartenansichten steht die Liste der Übermittlungen neben der Karte. Mit der Pfeilschaltfläche am Rand der Karte blenden Sie sie aus oder ein. Mit den Filtern der Symbolleiste grenzen Sie die angezeigten Übermittlungen ein. Schalten Sie **Weitere ST anzeigen** ein oder aus (standardmäßig ist es eingeschaltet), um die Übermittlungen nachfolgender Auftragsverarbeiter einzubeziehen oder auszublenden. Das Menü neben der Schaltfläche **Eine Übertragung von Daten hinzufügen** ermöglicht es, die Karte zu drucken oder die Übermittlungen zu exportieren.
 
 <figure><img src="../../../.gitbook/assets/ropa-transfers-map-2.png" alt="Beispiel einer Karte der Datenübermittlungen"><figcaption><p>Beispiel für Datenübermittlungen</p></figcaption></figure>
+
+Auf der Karte sind die Länder nach ihrem Status eingefärbt: **Europäisches Land (EU/EWR)**, **Geeignetes Land**, **Teilweise angemessenes Land** und **Nicht geeignetes Land**.
 
 {% hint style="info" %}
 Klicken Sie auf den Punkt eines Landes, um die Details seiner Übermittlungen aufzurufen.

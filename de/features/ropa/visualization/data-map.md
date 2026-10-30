@@ -12,13 +12,13 @@ Mit dieser Ansicht erkunden, analysieren und verstehen Sie die Verknüpfungen zw
 
 ## Die Datenkartierung des Verzeichnisses anzeigen
 
-Um die Datenkartierung Ihres Verzeichnisses anzuzeigen, öffnen Sie das Modul **Verarbeitungstätigkeiten** und klicken dann über Ihrer Liste der Verarbeitungstätigkeiten auf den Tab **Data Mapping**.
+Um die Datenkartierung Ihres Verzeichnisses anzuzeigen, klicken Sie im linken Menü auf **Verarbeitungsverzeichnis** und dann auf **Data Mapping**.
 
-<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Tab Data Mapping im Modul Verarbeitungstätigkeiten"><figcaption><p>Tab Data Mapping über den Verarbeitungstätigkeiten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-1.png" alt="Eintrag Data Mapping im Menü Verarbeitungsverzeichnis"><figcaption><p>Der Eintrag Data Mapping des Menüs Verarbeitungsverzeichnis</p></figcaption></figure>
 
 Anschließend können Sie die **Datenkartierung Ihres Verzeichnisses anzeigen**.
 
-<figure><img src="../../../.gitbook/assets/screenshot-2023-02-10-144614.png" alt="Beispiel einer Datenkartierung des Verzeichnisses"><figcaption><p>Beispiel einer Kartierung</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-data-map-2.png" alt="Beispiel einer Datenkartierung des Verzeichnisses"><figcaption><p>Beispiel einer Kartierung</p></figcaption></figure>
 
 Mit der Symbolleiste über der Karte können Sie:
 

@@ -1,12 +1,12 @@
 ---
 description: >-
-  In diesem Abschnitt listen Sie die Anwendungen oder Software auf, die als
-  Träger für personenbezogene Daten dienen.
+  Listen Sie die Assets auf, die zur Organisation gehören oder außerhalb von
+  ihr liegen und die Verarbeitungstätigkeit unterstützen.
 ---
 
 # Assets
 
-Hier tragen Sie die Assets ein, die zur Organisation gehören oder außerhalb von ihr liegen (Anwendungen, Software, Ressourcen, Gebäude usw.), die die Durchführung der Verarbeitungstätigkeit unterstützen und mit denen **personenbezogene Daten gespeichert** werden.
+Hier tragen Sie die Assets ein, die zur Organisation gehören oder außerhalb von ihr liegen (Anwendungen, Software, Ressourcen, Gebäude usw.), die die Durchführung der Verarbeitungstätigkeit unterstützen.
 
 _Wenn Sie beispielsweise eine CRM-Software verwenden, fügen Sie diese in diese Liste ein._
 
@@ -14,7 +14,7 @@ Diese Information ist **für das Verzeichnis nicht obligatorisch**. Mit ihr kön
 
 Das Ziel ist, Ihnen die Kontrolle über die Datenträger zu erleichtern und Ihre Assets mit Ihrem Datenkatalog zu verknüpfen.
 
-So können Sie schnell **die Arten von Daten angeben, die im Rahmen dieser Verarbeitungstätigkeit verarbeitet werden**.
+So können Sie **die Arten von Daten angeben, die im Rahmen dieser Verarbeitungstätigkeit verarbeitet werden**.
 
 Hinweis: Assets sind nicht zwangsläufig mit Auftragsverarbeitern verknüpft. Es kann sich zum Beispiel um **Software handeln, die auf Ihrem eigenen Server installiert ist, ohne dass ihr Herausgeber in die Verarbeitung personenbezogener Daten eingreift**.
 

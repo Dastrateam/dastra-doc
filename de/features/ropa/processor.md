@@ -34,6 +34,26 @@ Im Vergleich zu einer Tätigkeit als Verantwortlicher können Sie im Abschnitt *
 
 <figure><img src="../../.gitbook/assets/ropa-processor-1.png" alt="Navigation durch die Abschnitte einer Verarbeitungstätigkeit als Auftragsverarbeiter"><figcaption><p>Die verschiedenen Abschnitte einer Verarbeitungstätigkeit „Auftragsverarbeiter“ in Dastra</p></figcaption></figure>
 
+## Der Abschnitt Kunden
+
+Der Abschnitt **Kunden** listet die Verantwortlichen auf, in deren Auftrag Sie die Daten verarbeiten, in der Regel Ihre Kunden. Mit jedem von ihnen müssen Sie einen Vertrag schließen, der die in Artikel 28 der DSGVO vorgesehenen Klauseln enthält.
+
+<figure><img src="../../.gitbook/assets/ropa-processor-2.png" alt="Abschnitt Kunden einer Verarbeitungstätigkeit als Auftragsverarbeiter mit der Schaltfläche Kunden/RT hinzufügen"><figcaption><p>Der Abschnitt Kunden einer Verarbeitungstätigkeit als Auftragsverarbeiter</p></figcaption></figure>
+
+So geben Sie einen Verantwortlichen an:
+
+1. Klicken Sie auf **Kunden/RT hinzufügen**.
+2. Wählen Sie **Verzeichnis der Stakeholder (empfohlen)**, um einen Stakeholder Ihres Verzeichnisses auszuwählen, oder **Bitte wählen Sie eine Organisationseinheit aus**.
+3. Beschreiben Sie bei Bedarf Ihre Vorgänge unter **Beschreibung der mit den Daten durchgeführten Vorgänge**.
+4. Wenn der Verantwortliche die Daten auch erhält, aktivieren Sie **Ist der Kunde/Verantwortliche für die Datenverarbeitung der Empfänger der Daten?**. Wählen Sie unter **Auf welche Daten hat er Zugriff?** den Eintrag **Zugriff auf alle Daten (Standard)** oder **Zugriff auf bestimmte Datensätze** und aktivieren Sie die betreffenden Datenkategorien.
+5. Bestätigen Sie.
+
+Um mehrere Verantwortliche gleichzeitig hinzuzufügen, klicken Sie auf den Pfeil rechts neben **Kunden/RT hinzufügen** und wählen dann **Mehrere Stakeholder gleichzeitig hinzufügen**, um mehrere Stakeholder auszuwählen, oder **Organisationseinheiten in großer Anzahl hinzufügen**, um mehrere Organisationseinheiten auszuwählen.
+
+Das Menü am Ende jeder Zeile bietet **Bearbeiten**, **Stakeholder bearbeiten** und **Löschen**. Wenn Ihr Mandant das Modul Verträge nutzt, erstellt **DPA generieren** die Auftragsverarbeitungsvereinbarung des Verantwortlichen. Um mehrere Verantwortliche zu löschen, aktivieren Sie sie und klicken auf **Löschen**.
+
+Um einem Verantwortlichen nur seine eigenen Daten zu senden, verwenden Sie die Option **Für einen Kunden exportieren** im Exportfenster: Die Datei enthält dann nicht die anderen Verantwortlichen (siehe [Verzeichnis exportieren / importieren](export-import.md)).
+
 ***
 
 {% hint style="info" %}

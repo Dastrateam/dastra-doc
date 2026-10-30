@@ -49,7 +49,7 @@ Sie können mehrere Verarbeitungsvorlagen auswählen und sie über die Bibliothe
 
 Wählen Sie im sich öffnenden Bereich die **Datenquelle der Bibliothek** und die Organisationseinheit (**Bitte wählen Sie die gewünschte Organisationseinheit aus.**), aktivieren Sie dann eine oder mehrere Vorlagen und klicken Sie auf **Hinzufügen**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-01-30-171155.png" alt="Bereich zum Erstellen aus der Bibliothek mit mehreren ausgewählten Vorlagen"><figcaption><p>Mehrere Vorlagen in der Bibliothek auswählen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-templates-7.png" alt="Bereich zum Erstellen aus der Bibliothek mit mehreren ausgewählten Vorlagen"><figcaption><p>Mehrere Vorlagen in der Bibliothek auswählen</p></figcaption></figure>
 
 Mit der Schaltfläche **Details** sehen Sie eine Vorschau einer Vorlage.
 
