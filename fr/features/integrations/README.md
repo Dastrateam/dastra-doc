@@ -87,4 +87,4 @@ Ensuite, dans le formulaire d'un acteur de type **Personne morale**, un bouton d
 
 #### Un besoin non couvert ?
 
-Si aucune intégration ne correspond à votre besoin, l'[API REST Dastra](../../api/endpoints.md) vous permet de développer vos propres scripts et connecteurs, et vous pouvez soumettre une demande de connecteur à l'équipe Dastra via le support.
+Si aucune intégration ne correspond à votre besoin, l'[API REST Dastra](../../api/configuration.md) vous permet de développer vos propres scripts et connecteurs, et vous pouvez soumettre une demande de connecteur à l'équipe Dastra via le support.
