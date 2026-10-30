@@ -9,7 +9,7 @@ description: >-
 Deze pagina beschrijft de beveiligingsmaatregelen die Dastra toepast om uw gegevens te beschermen: hosting, versleuteling, authenticatie, toegangsbeheer en back-ups.
 
 {% hint style="info" %}
-De beveiligingsinstellingen van de organisatie (verplichte sterke authenticatie, filtering op IP-adres, filtering op e-maildomein, beleid voor wachtwoordvernieuwing, automatisch afmelden, bewaartermijn van beveiligingslogs, SIEM-streaming) zijn voorbehouden aan organisatie-eigenaren en aan het Enterprise-abonnement. U vindt ze onder **Organisatie-instellingen** > **Beveiliging**.
+De beveiligingsinstellingen van de organisatie (verplichte sterke authenticatie, filtering op IP-adres, filtering op e-maildomein, beleid voor wachtwoordvernieuwing, automatisch afmelden, bewaartermijn van beveiligingslogs, SIEM-streaming) zijn voorbehouden aan organisatie-eigenaren en aan het Enterprise-abonnement. U vindt ze onder **Organisatie-instellingen** > **Beveiliging**. Voor elke instelling, zie [Beveiliging van de organisatie en beveiligingslogboeken](../features/settings/security-center.md).
 {% endhint %}
 
 ## Veilige cloudhosting

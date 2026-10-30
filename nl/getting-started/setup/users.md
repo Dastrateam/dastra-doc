@@ -40,6 +40,10 @@ U beheert openstaande uitnodigingen op het tabblad **Uitnodigingen** van de pagi
 
 <figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Tabblad Uitnodigingen met een openstaande uitnodiging"><figcaption><p>Het tabblad Uitnodigingen</p></figcaption></figure>
 
+{% hint style="info" %}
+Uw abonnement beperkt het aantal gebruikers. Het quotum telt de actieve gebruikers en de gebruikers die aan een openstaande of verlopen uitnodiging zijn gekoppeld: verwijder de gebruiker van een uitnodiging die u niet meer nodig hebt om een plaats vrij te maken. Is de limiet bereikt, dan toont Dastra **U heeft de limiet van uw gebruikers bereikt** en kunt u contact opnemen met het Dastra-team om ze te verhogen.
+{% endhint %}
+
 ### Een uitnodigingslink opnieuw versturen
 
 Heeft de uitgenodigde persoon niet op de link geklikt en is die verlopen, klik dan naast de uitnodiging op **Opnieuw verzenden** en bevestig.

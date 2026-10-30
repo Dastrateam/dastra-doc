@@ -35,23 +35,25 @@ De sectie bevat ook de **Taal van de browser** (de voorkeurstaal van de aanvrage
 
 Dastra biedt 17 typen verzoek:
 
-* Informatie
-* Toegang
-* Rectificatie
-* Verwijdering
-* Beperking
-* Tegenstand
-* Hernieuwbaarheid
-* Lot van data na de dood
-* Afwezigheid van een geautomatiseerde beslissing
-* Toegang tot administratieve documenten
-* Request to DPO
-* Third party request
-* Data protection complaint
-* Verkoop/ delen van mijn gegevens is niet toegestaan
-* Beperk het gebruik van gevoelige persoonlijke informatie
-* Intrekking van toestemming
-* Andere
+| Type | Wat de aanvrager vraagt |
+| --- | --- |
+| Informatie | Informatie over de verwerking van hun gegevens |
+| Toegang | Een kopie van hun persoonsgegevens (artikel 15) |
+| Rectificatie | De correctie van onjuiste gegevens (artikel 16) |
+| Verwijdering | De verwijdering van hun gegevens (artikel 17) |
+| Beperking | De beperking van de verwerking (artikel 18) |
+| Tegenstand | Een verwerking te stoppen die op gerechtvaardigde belangen is gebaseerd of voor marketing wordt gebruikt (artikel 21) |
+| Hernieuwbaarheid | Hun gegevens in een gestructureerd formaat te ontvangen of te laten overdragen (artikel 20) |
+| Lot van data na de dood | Instructies vast te leggen over het lot van hun gegevens na hun overlijden (Frans recht) |
+| Afwezigheid van een geautomatiseerde beslissing | Niet te worden onderworpen aan een beslissing die uitsluitend op geautomatiseerde verwerking is gebaseerd (artikel 22) |
+| Toegang tot administratieve documenten | Toegang tot administratieve documenten, voor Franse overheidsinstanties |
+| Request to DPO | Een verzoek gericht aan de functionaris voor gegevensbescherming |
+| Third party request | Een verzoek van een derde |
+| Data protection complaint | Een klacht over de omgang met persoonsgegevens |
+| Verkoop/ delen van mijn gegevens is niet toegestaan | Zich af te melden voor de verkoop of het delen van persoonlijke informatie (Californisch recht) |
+| Beperk het gebruik van gevoelige persoonlijke informatie | Het gebruik van gevoelige persoonlijke informatie te beperken (Californisch recht) |
+| Intrekking van toestemming | Een eerder gegeven toestemming in te trekken (artikel 7, lid 3) |
+| Andere | Elk verzoek dat in geen van de bovenstaande typen past |
 
 De namen van deze typen zijn de labels van de Nederlandse applicatie. De typen Request to DPO, Third party request en Data protection complaint hebben geen Nederlandse vertaling in de applicatie.
 

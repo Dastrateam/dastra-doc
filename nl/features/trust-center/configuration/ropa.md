@@ -16,3 +16,5 @@ Om de functie **Registratie van verwerkingsactiviteiten** in uw Trust Center te 
 Zodra de functie is geactiveerd, zijn de verwerkingen met de status **gepubliceerd** die tot de organisatorische eenheid van uw Trust Center of tot een van de onderliggende eenheden behoren, openbaar toegankelijk voor alle bezoekers van uw Trust Center.
 
 Afgezien van de activering is er geen extra configuratie nodig om het register van verwerkingen in uw Trust Center weer te geven.
+
+Op de openbare pagina krijgen bezoekers ook een filter **Organisatie-eenheid** op het register wanneer de eenheid van het Trust Center onderliggende eenheden heeft. Het biedt alleen de eenheid van het Trust Center en de onderliggende eenheden ervan aan.

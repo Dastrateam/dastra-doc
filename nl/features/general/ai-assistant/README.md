@@ -48,6 +48,34 @@ Naast het genereren van inhoud biedt Dastra een gesprekspartner, Dastra AI, die 
 
 Alle AI-functies delen het maandelijkse quotum aan AI-credits dat wordt beschreven onder [Werking](how-it-works.md#ai-credits-en-quota).
 
+## Chatten met Dastra AI
+
+**Dastra AI** beantwoordt vragen over uw werkruimte in een gesprek. Het zoekt uw records op met alleen-lezentools, zodat u kunt vragen om een samenvatting, een lijst van achterstallige verzoeken of de verwerkingsactiviteiten die geen DPIA hebben.
+
+1. Klik rechtsonder op het scherm op **Open Dastra AI**, of druk op **Ctrl+J** (**Cmd+J** op Mac).
+2. Typ uw vraag, of kies een van de **Suggested prompts**. Ze veranderen met de pagina waarop u zich bevindt: het record dat u bekijkt, het register, verzoeken, AI-systemen.
+3. Lees het antwoord. Wanneer de assistent op uw records steunt, toont hij zijn stappen en citeert hij ze. Gebruik de **Suggested follow-up questions** om verder te gaan.
+
+<figure><img src="../../../.gitbook/assets/general-ai-chat-1.png" alt="Het paneel Dastra AI op een verwerkingsactiviteit, met de voorgestelde prompts en het berichtenveld"><figcaption><p>Het paneel Dastra AI, met het menu + geopend</p></figcaption></figure>
+
+Het paneel biedt verschillende hulpmiddelen:
+
+* **Toggle fullscreen** vergroot het paneel naar volledig scherm. Een link naar de pagina van de AI-agent van een werkruimte opent de assistent op volledig scherm en gaat daarna terug naar het dashboard van die werkruimte.
+* **New conversation** start een nieuw gesprek. De gesprekkenlijst bewaart uw eerdere gesprekken: u kunt ze daar hernoemen of verwijderen. Het verwijderen van een gesprek verwijdert al zijn berichten.
+* **Choose an agent** schakelt tussen de standaardassistent en de [agents](agents/README.md) die uw werkruimte heeft ingeschakeld.
+* **Add context** en **Attach a file** geven de assistent een record of een document om mee te werken. Typ `@` om een record of een gebruiker te vermelden.
+* Typ `/` of klik op **Skills** om een [skill](agents/skills.md) uit te voeren, een herbruikbare prompt.
+* **Dictate a message** neemt uw stem op en transcribeert die in het berichtenveld. Uw browser vraagt de eerste keer om toegang tot de microfoon.
+* Beoordeel een antwoord met **Good response** of **Bad response** en voeg een opmerking toe om feedback naar Dastra te sturen.
+
+### Ask- en Edit-modus
+
+In de modus **Ask** leest de assistent alleen: er verandert niets in uw werkruimte. In de modus **Edit** kan hij ook records aanmaken en bijwerken, en vraagt hij om uw bevestiging voordat hij een wijziging toepast. De modusselector verschijnt voor gebruikers die de schrijfmachtiging van de assistent hebben. De modus **Edit** vereist de bijbehorende optie in het plan van uw organisatie. Zonder die optie is ze vergrendeld.
+
+{% hint style="info" %}
+Dastra AI is beschikbaar wanneer uw plan het omvat en wanneer uw rol de machtiging voor de AI-assistent heeft. De berichten tellen mee voor het maandelijkse quotum aan AI-credits en een banner waarschuwt u wanneer het quotum bijna is opgebruikt.
+{% endhint %}
+
 ## Bètafuncties
 
 Sommige AI-functies verschijnen in bèta: ze werken, maar worden verder verfijnd op basis van de feedback van gebruikers. Bètafuncties zijn in de interface duidelijk herkenbaar.
@@ -62,7 +90,7 @@ Wanneer u een bètafunctie gebruikt:
 Baseer een conformiteitsbeslissing nooit uitsluitend op een bètafunctie. Bètafuncties ondersteunen een grondige menselijke controle, ze vervangen die niet.
 {% endhint %}
 
-Momenteel in bèta: de conformiteitsanalyse van verwerkingsactiviteiten en de conformiteitsanalyse van AI-systemen.
+Momenteel in bèta: de AI-conformiteitsanalyse, beschikbaar op verwerkingsactiviteiten, AI-systemen, contracten, stakeholders, activa en antwoorden op vragenlijsten. Open ze met de knop **AI analysis (beta)** van het record, of vraag Dastra AI om een record te analyseren. Het resultaat geeft een score van A tot F, de beoordeelde criteria en voorgestelde taken, en kan worden afgedrukt, opnieuw gestart of voortgezet in de chat.
 
 ***
 

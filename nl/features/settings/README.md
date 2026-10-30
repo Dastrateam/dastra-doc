@@ -19,6 +19,12 @@ Voorzie gebruikers vanuit uw directory met SCIM:
 [SCIM](scim.md)
 {% endcontent-ref %}
 
+Stel de beveiligingsregels van uw organisatie in en raadpleeg de beveiligingslogboeken:
+
+{% content-ref url="security-center.md" %}
+[Beveiliging van de organisatie en beveiligingslogboeken](security-center.md)
+{% endcontent-ref %}
+
 Stream auditlogs naar uw SIEM:
 
 {% content-ref url="siem.md" %}

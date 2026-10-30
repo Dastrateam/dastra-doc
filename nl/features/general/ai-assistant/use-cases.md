@@ -62,6 +62,10 @@ Bètafunctie: de resultaten kunnen minder consistent zijn dan bij een stabiele f
 
 Klik nadat de analyse is gegenereerd op **Analyse afdrukken** om het resultaat als PDF te exporteren of rechtstreeks naar de printer te sturen. Dit document kunt u bij uw compliancedossier voegen.
 
+### Een contract, een stakeholder, een activum of een antwoord op een vragenlijst analyseren
+
+Dezelfde analyse is beschikbaar op contracten, stakeholders, activa en antwoorden op vragenlijsten. Open het record en klik daarna op de knop **AI analysis (beta)**. Het venster toont de algemene score van A tot F, de beoordeelde criteria met hun motivering en de voorgestelde taken. Gebruik **Analysis history** om met een eerdere analyse te vergelijken en daarna **Analyse afdrukken** om het resultaat te exporteren.
+
 ### Labels voorstellen
 
 In een veld **Labels** dat nog leeg is, stelt een knop van de AI-assistent labels voor op basis van de naam en de beschrijving van het object. Klik erop: de voorgestelde labels vullen het veld. Zie [Tagbeheer](../tags.md) voor het beheer van labels.

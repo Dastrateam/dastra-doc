@@ -51,6 +51,12 @@ U registreert uw passkeys via **beveiliging** > **Beheer mijn passkeys**. Zie [P
 
 Klik op de tweede stap op **Stuur de toegang link per e-mail**. Dastra stuurt een link naar uw e-mailadres waarmee u zich zonder wachtwoord aanmeldt.
 
+### Het hostingregio kiezen
+
+Biedt uw Dastra-omgeving meerdere hostingregio's, dan toont de aanmeldpagina een veld **Hosting region** met de huidige regio: **Europe region (default)** of **Bleu cloud France**. Klik op het veld om de andere regio te openen en meld u daar aan.
+
+Klik op de knop **?** naast het veld (**Learn more about hosting regions**) om de regio's te vergelijken. Een tenant wordt in één regio gehost en de twee regio's worden niet gespiegeld of gesynchroniseerd: een account van de ene regio kan zich niet in de andere aanmelden. Om een bestaande tenant naar de andere regio te verplaatsen, gebruikt u **Contact our sales team** in hetzelfde venster. Zie [Dastra op Bleu](../../security/bleu.md) voor de adressen en de hostingdetails van elke regio.
+
 ## Uw wachtwoord opnieuw instellen
 
 1. Klik op de tweede aanmeldstap op **Wachtwoord vergeten ?**.

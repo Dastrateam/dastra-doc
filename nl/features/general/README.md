@@ -12,6 +12,10 @@ Deze sectie bundelt de functies die u in elke Dastra-module gebruikt: lijsten so
 [Geavanceerde filters](filters.md)
 {% endcontent-ref %}
 
+{% content-ref url="lists.md" %}
+[Lijsten, bulkacties en prullenbak](lists.md)
+{% endcontent-ref %}
+
 {% content-ref url="import.md" %}
 [Uw gegevens importeren (Excel, CSV)](import.md)
 {% endcontent-ref %}

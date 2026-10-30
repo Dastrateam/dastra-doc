@@ -20,6 +20,6 @@ Als uw documentatie aantoont dat u voldoet aan de verplichtingen van de Europese
 
 ## Deze documentatie bundelen in Dastra
 
-* Met [Documentbeheer](../../features/files/README.md) groepeert u de documenten die aan uw objecten in Dastra zijn gekoppeld.
+* Met [Bestandsbeheer](../../features/files/README.md) groepeert u de documenten die aan uw objecten in Dastra zijn gekoppeld.
 * Met [Contracten](../../features/contracts/README.md) declareert en volgt u uw contracten.
 * Met [het Trust Center](../../features/trust-center/README.md) maakt u een openbaar transparantieportaal voor uw klanten, verwerkers en medewerkers.

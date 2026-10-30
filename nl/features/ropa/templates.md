@@ -54,3 +54,14 @@ Kies in het paneel dat opent de bron bij **Gegevensbron van de bibliotheek** en 
 Met de knop **Details** bekijkt u een sjabloon vooraf.
 
 Uw verwerkingsactiviteiten worden daarna op de achtergrond aangemaakt.
+
+## Een sjabloon aanbieden
+
+U kunt een van uw verwerkingsactiviteiten, vragenlijstsjablonen of activasjablonen indienen bij de Dastra-bibliotheken, zodat alle Dastra-gebruikers het kunnen gebruiken zodra ons team het goedkeurt.
+
+1. Open de verwerkingsactiviteit of het sjabloon en klik op **Draag bij**.
+2. Voer de **Naam van de bijdrage** in. Voeg bij **Jouw commentaar** zo nodig een opmerking voor ons team toe om de beoordeling te vergemakkelijken.
+3. Kies of u wilt worden vermeld: wanneer u **Wil je gecrediteerd worden voor deze bijdrage?** met ja beantwoordt en de bijdrage wordt goedgekeurd, worden uw avatar en gebruikersnaam bij het sjabloon weergegeven.
+4. Ga akkoord met het delen van het volledige sjabloon voor publicatie in de Dastra-bibliotheek en dien daarna in.
+
+Om uw bijdragen op te volgen, opent u **Instellingen voor werkruimte** > **Bijdragen**. Deze pagina vereist de machtiging om bijdragen te schrijven. Ze toont voor elke bijdrage de naam, de gebruiker, de **Status**, of ze **Gepubliceerd** is en het type. Filter de lijst op status en type, open een bijdrage om het **Resultaat van je bijdrage** te lezen, het commentaar van ons team, of klik op **Deze bijdrage verwijderen** om te vragen ze uit de bibliotheek te verwijderen.

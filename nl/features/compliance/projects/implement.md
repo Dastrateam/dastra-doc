@@ -41,6 +41,8 @@ Zolang het project zich niet in de fase **Monitoring** bevindt, is het niet aanb
 
 <figure><img src="../../../.gitbook/assets/image-458.png" alt="Details van een projecttest met de status Ontbrekend bewijs"><figcaption></figcaption></figure>
 
+Het tabblad **Context** van de details van de test toont waar de test vandaan komt: het **Project** (naam, status, beschrijving en **Kaders**) en de **Perimeter** ervan.
+
 ***
 
 ## 2. Conformiteitstests configureren
@@ -181,3 +183,9 @@ Het project is dan klaar voor de volgende fase: **Monitoring**. In die fase:
 * worden de tests periodiek uitgevoerd,
 * wordt het bewijs verzameld,
 * wordt de conformiteit in de loop van de tijd gemeten.
+
+## De projectlijsten exporteren
+
+De tabbladen **Controles**, **Tests** en **Risico's** van een project hebben elk een knop **Exporteren**. Ze exporteert de lijst zoals ze wordt weergegeven: de actieve filters zijn van toepassing. Kies in het exportvenster het formaat (CSV, Excel of JSON) en de op te nemen kolommen en klik daarna op **Bestand downloaden**.
+
+De knop vereist de machtiging om de operationele gegevens van de compliancemodule te exporteren. Zonder die machtiging is ze uitgeschakeld.
