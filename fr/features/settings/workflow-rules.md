@@ -251,6 +251,8 @@ Cet exemple nettoie automatiquement les demandes d'exercice de droits dont l'ide
 
 <figure><img src="../../.gitbook/assets/workflow-anon01-fr.png" alt="Règle quotidienne qui clôture et anonymise les demandes dont l'identité n'est pas validée un mois après la création"><figcaption><p>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</p></figcaption></figure>
 
+Quatre règles complètes, avec leur déclencheur, leurs conditions et leurs actions, sont décrites dans [Recettes de workflow](../../examples/workflow-recipes.md).
+
 ## Historique d'exécution
 
 Chaque règle conserve l'historique de ses exécutions. Cliquez sur **Historique** dans le designer pour afficher, pour chaque objet traité :

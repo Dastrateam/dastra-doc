@@ -1,4 +1,4 @@
-# Frequently asked questions
+# FAQ
 
 ## Is Zapier acting as a subprocessor to Dastra (what is its contractual status)?
 

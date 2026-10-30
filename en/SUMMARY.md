@@ -33,7 +33,7 @@
   * [Managing roles and permissions](getting-started/setup/roles.md)
   * [Why can't a user see a processing activity?](getting-started/setup/visibility.md)
   * [Create and assign teams](getting-started/setup/teams.md)
-  * [Frequently asked questions](getting-started/setup/faq.md)
+  * [FAQ](getting-started/setup/faq.md)
   * [Set up your user profile](getting-started/setup/profile.md)
 * [Tutorial](getting-started/tutorial/README.md)
   * [Step 1: Setting up](getting-started/tutorial/step-1.md)
@@ -47,6 +47,16 @@
   * [Online help](getting-started/support/online-help.md)
   * [Request support](getting-started/support/request.md)
   * [The customer support process](getting-started/support/process.md)
+
+## Worked examples <a href="#examples" id="examples"></a>
+
+* [Worked examples](examples/README.md)
+  * [ISO 27001 project](examples/iso-27001-project.md)
+  * [Risk scoring](examples/risk-scoring.md)
+  * [Workflow recipes](examples/workflow-recipes.md)
+  * [Import assets from a spreadsheet](examples/excel-import.md)
+  * [Map a data flow](examples/data-mapping.md)
+  * [Questionnaire answers in a record](examples/questionnaire-to-record.md)
 
 ## ⚙️ Features
 
@@ -71,7 +81,7 @@
     * [The MCP server](features/general/ai-assistant/mcp.md)
   * [Email templates](features/general/email-templates.md)
   * [Internal discussions](features/general/discussions.md)
-  * [Frequently asked questions](features/general/faq.md)
+  * [FAQ](features/general/faq.md)
 * [Data Mapping](features/mapping/README.md)
   * [Repositories](features/mapping/repositories/README.md)
     * [Assets](features/mapping/repositories/assets.md)
@@ -112,10 +122,11 @@
     * [View the record data map](features/ropa/visualization/data-map.md)
     * [View the transfers map](features/ropa/visualization/transfers-map.md)
   * [Merge processing activities](features/ropa/merge.md)
-  * [Frequently asked questions](features/ropa/faq.md)
+  * [FAQ](features/ropa/faq.md)
 * [Questionnaires](features/questionnaires/README.md)
   * [Create a questionnaire template](features/questionnaires/templates/README.md)
     * [Create or modify a DPIA template](features/questionnaires/templates/pia.md)
+    * [Fill a record from the answers](features/questionnaires/templates/record-mapping.md)
   * [Schedule a questionnaire](features/questionnaires/schedule.md)
   * [Monitor questionnaires](features/questionnaires/monitor.md)
   * [Validate a questionnaire](features/questionnaires/validate.md)
@@ -252,7 +263,7 @@
   * [Connections, use cases and field mapping](features/integrations/connections.md)
   * [Zapier](features/integrations/zapier/README.md)
     * [Integrating Dastra with External Tools](features/integrations/zapier/external-tools.md)
-    * [Frequently asked questions](features/integrations/zapier/faq.md)
+    * [FAQ](features/integrations/zapier/faq.md)
   * [Filerskeepers](features/integrations/filerskeepers.md)
   * [ServiceNow](features/integrations/servicenow.md)
   * [SAP LeanIX](features/integrations/sap-leanix.md)
@@ -307,7 +318,7 @@
 
 ## 🤖 Other
 
-* [Frequently asked questions](other/faq.md)
+* [FAQ](other/faq.md)
 * [Accessibility](other/accessibility.md)
 * [DPIA guidance - country by country](other/dpia-by-country.md)
 * [Known problems](other/known-problems.md)

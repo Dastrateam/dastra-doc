@@ -15,6 +15,8 @@ This page covers creating a project, its six phases, the phase assistant and nav
 * [Compliance monitoring](monitoring.md): evidence, test campaigns, statement of applicability export;
 * [Audits](audits.md): internal audits and final audits.
 
+For a complete walk-through of a certification project, see the [ISO 27001 project example](../../../examples/iso-27001-project.md).
+
 ## Open the projects
 
 In the menu, click **Compliance** then **Projects**. The side menu has two groups:

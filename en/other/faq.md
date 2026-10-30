@@ -1,11 +1,27 @@
 ---
 description: >-
-  Answers to frequently asked questions about using Dastra: logos, importing an
-  existing record, deleting a processing activity, missing items and the
-  browser's local storage.
+  The FAQ of every Dastra module in one place, and answers to general questions:
+  logos, importing an existing record, deleting a processing activity, missing
+  items and the browser's local storage.
 ---
 
-# Frequently asked questions
+# FAQ
+
+This page is the entry point to the questions answered in the documentation. It lists the FAQ of every module, then answers the general questions that follow the list.
+
+## FAQ of the modules
+
+* [Getting started FAQ](../getting-started/setup/faq.md): teams and organizational units as stakeholders, exporting and importing organizational units, changing the DPO and managing the owners of the organization.
+* [General features FAQ](../features/general/faq.md): importing datasets.
+* [AI assistant FAQ](../features/general/ai-assistant/faq.md): privacy and data, quality and reliability, configuration and access, and the AI Act.
+* [Record of processing activities FAQ](../features/ropa/faq.md): history of modifications, deletion, datasets in read-only mode, bulk changes of stakeholders, duplication to another workspace, change of type and error messages.
+* [Questionnaires FAQ](../features/questionnaires/faq.md): DPIA on several processing activities, email templates, external respondents, suggested tasks, publishing templates, error messages and limits.
+* [Risks FAQ](../features/risks/faq.md): the missing menu, moving a risk to the next step, initial, residual and current risk, changing the risk scale.
+* [Tasks FAQ](../features/tasks/faq.md): attaching tasks to a project, deleting a task, recording the workload and following up.
+* [Requests FAQ](../features/requests/faq.md): closure emails, the requester's secure space and email verification, message length and cookies on the collection page.
+* [Zapier FAQ](../features/integrations/zapier/faq.md): contractual status of Zapier, who signs the contract and reliability documentation.
+
+For problems rather than questions, see [Known problems](known-problems.md) and the [known problems of SSO](../features/settings/sso/known-problems.md).
 
 ## How to change the organization logo in Dastra?
 
@@ -35,7 +51,7 @@ For the import of processing activities, see [Export / import the record](../fea
 
 Deletion takes two steps, to prevent deletions by mistake. First move the processing activity to the recycle bin with **Move to recycle bin**. Then display the recycle bin with **View recycle bin** in the filters, and choose **Delete** to delete it permanently, or **Restore** to put it back in the record.
 
-The full procedure is described in the [Frequently asked questions](../features/ropa/faq.md#how-to-delete-a-processing-activity) of the record.
+The full procedure is described in the [FAQ of the record](../features/ropa/faq.md#how-to-delete-a-processing-activity).
 
 ## I can't find some items, what can I do?
 

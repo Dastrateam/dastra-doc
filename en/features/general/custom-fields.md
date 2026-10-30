@@ -93,7 +93,7 @@ You can reorder fields, or move them from one group to another, by drag and drop
 | Option | Description |
 | --- | --- |
 | **Custom field label** | The name of the field shown in forms. Required. |
-| **Variable name (slug)** | The identifier of the field for APIs and imports. It is suggested from the label and cannot be changed once the field is created. |
+| **Variable name (slug)** | The technical name of the field, used by APIs and imports. It is suggested from the label, in lowercase with underscores (for example `business_owner` for "Business owner"), and cannot be changed once the field is created. It is shown in this window only: open the field from the list to read it. To fill the field from a questionnaire, write `custom_` followed by this name (see [Fill a record from the answers](../questionnaires/templates/record-mapping.md)). |
 | **Tooltip text** | A help text shown next to the field. |
 | **Required field** | Makes the input mandatory. |
 | **Included in PDF and Word reports** | Adds the field to the generated reports. Ticked by default. |

@@ -6,6 +6,8 @@ description: >-
 
 # Problèmes connus
 
+Cette page traite des problèmes qui peuvent toucher n'importe quel utilisateur. Pour les problèmes d'authentification du SSO, voir les [problèmes connus du SSO](../features/settings/sso/known-problems.md).
+
 ## L'utilisateur invité ne reçoit pas les e-mails d'invitation
 
 Vérifiez d'abord les points suivants :

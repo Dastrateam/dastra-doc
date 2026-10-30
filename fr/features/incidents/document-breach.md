@@ -125,6 +125,8 @@ L'étape **Notification** suit la notification à l'autorité de contrôle. Le R
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-4.png" alt="Étape Notification avec le compte à rebours de 72 heures"><figcaption><p>L'étape Notification et son compte à rebours</p></figcaption></figure>
 
+Un calcul détaillé du score figure dans [Calcul des risques](../../examples/risk-scoring.md).
+
 Dès que l'analyse de risque conclut à un risque réel ou élevé, un encadré compte les 72 heures à partir de la date de constatation. Il indique le nombre d'heures restantes, puis « délai de 72 heures dépassé » en cas de retard, puis « Vous avez prévenu l'autorité de contrôle » une fois la notification enregistrée. Pour un risque négligeable, l'encadré précise que vous n'êtes pas tenu de notifier l'autorité.
 
 Pour enregistrer une notification :

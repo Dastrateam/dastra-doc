@@ -21,6 +21,8 @@ This mapping makes it easier to create processing activities, because you start 
 
 If you prefer not to build this inventory, or if the software you use is standard, create your asset repository from the library of predefined templates, which contains common assets on the market (Salesforce, Jira, etc.).
 
+To follow one flow from the vendor to the processing activity, see [Map a data flow](../../examples/data-mapping.md).
+
 ## Access the data mapping
 
 1. [Open your workspace](../../getting-started/setup/workspace.md#access-a-workspace).

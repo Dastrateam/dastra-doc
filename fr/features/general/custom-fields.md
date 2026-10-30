@@ -97,7 +97,7 @@ Vous pouvez réordonner les champs, ou les déplacer d'un groupe à l'autre, par
 | Option | Description |
 | --- | --- |
 | **Libellé** | Le nom du champ affiché dans les formulaires. Obligatoire. |
-| **Nom de la variable (slug)** | L'identifiant du champ pour les API et les imports. Il est proposé à partir du libellé et ne peut plus être modifié une fois le champ créé. |
+| **Nom de la variable (slug)** | Le nom technique du champ, utilisé par les API et les imports. Il est proposé à partir du libellé, en minuscules avec des tirets bas (par exemple `business_owner` pour « Business owner »), et ne peut plus être modifié une fois le champ créé. Il s'affiche uniquement dans cette fenêtre : ouvrez le champ depuis la liste pour le lire. Pour alimenter le champ depuis un questionnaire, écrivez `custom_` suivi de ce nom (voir [Alimenter une fiche avec les réponses](../questionnaires/templates/record-mapping.md)). |
 | **Texte d'infobulle** | Une aide affichée à côté du champ. |
 | **Champ obligatoire** | Rend la saisie obligatoire. |
 | **Inclus dans les rapports PDF ou Word ?** | Ajoute le champ aux rapports générés. Coché par défaut. |

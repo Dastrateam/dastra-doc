@@ -2,7 +2,7 @@
 description: Les réponses aux questions fréquentes sur la mise en place de Dastra.
 ---
 
-# Questions fréquentes
+# FAQ
 
 ## Est-ce que je peux utiliser les équipes en tant qu'acteur ?
 

@@ -6,6 +6,8 @@ description: >-
 
 # Known problems
 
+This page covers the problems that can affect any user. For the authentication problems of SSO, see [SSO known problems](../features/settings/sso/known-problems.md).
+
 ## The invited user does not receive the invitation emails
 
 First check the following:

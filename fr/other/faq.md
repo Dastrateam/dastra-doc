@@ -1,11 +1,27 @@
 ---
 description: >-
-  Réponses aux questions fréquentes sur l'utilisation de Dastra : logos,
-  import d'un registre existant, suppression d'un traitement, éléments
-  introuvables et stockage local du navigateur.
+  La FAQ de chaque module Dastra au même endroit, et des réponses aux questions
+  générales : logos, import d'un registre existant, suppression d'un traitement,
+  éléments introuvables et stockage local du navigateur.
 ---
 
-# Foire aux questions
+# FAQ
+
+Cette page est le point d'entrée vers les questions traitées dans la documentation. Elle liste la FAQ de chaque module, puis répond aux questions générales qui suivent la liste.
+
+## FAQ des modules
+
+* [FAQ Bien commencer](../getting-started/setup/faq.md) : équipes et unités organisationnelles comme acteurs, export et import des unités organisationnelles, changement de DPO et gestion des propriétaires de l'organisation.
+* [FAQ Fonctionnalités générales](../features/general/faq.md) : import de jeux de données.
+* [FAQ Assistant IA](../features/general/ai-assistant/faq.md) : confidentialité et données, qualité et fiabilité, configuration et accès, et AI Act.
+* [FAQ Registre des traitements](../features/ropa/faq.md) : historique des modifications, suppression, jeux de données en lecture seule, modification en masse des acteurs, duplication vers un autre espace de travail, changement de type et messages d'erreur.
+* [FAQ Questionnaires](../features/questionnaires/faq.md) : PIA sur plusieurs traitements, modèles d'e-mail, répondants externes, tâches suggérées, publication de modèles, messages d'erreur et limites.
+* [FAQ Risques](../features/risks/faq.md) : le menu absent, passage d'un risque à l'étape suivante, risque initial, résiduel et courant, changement d'échelle de risque.
+* [FAQ Tâches](../features/tasks/faq.md) : rattacher des tâches à un projet, supprimer une tâche, saisir la charge et relancer.
+* [FAQ Demandes](../features/requests/faq.md) : e-mails de clôture, espace sécurisé du demandeur et vérification de son e-mail, longueur des messages et cookies de la page de collecte.
+* [FAQ Zapier](../features/integrations/zapier/faq.md) : statut contractuel de Zapier, signataire du contrat et documentation sur la fiabilité.
+
+Pour les problèmes plutôt que les questions, voir [Problèmes connus](known-problems.md) et les [problèmes connus du SSO](../features/settings/sso/known-problems.md).
 
 ## Comment modifier le logo de l'organisation dans Dastra ?
 
@@ -35,7 +51,7 @@ Pour l'import des traitements, voir [Exporter / importer le registre](../feature
 
 La suppression se fait en deux étapes, pour éviter les suppressions par erreur. Placez d'abord le traitement dans la corbeille avec **Déplacer dans la corbeille**. Affichez ensuite la corbeille avec **Voir la corbeille** dans les filtres, puis choisissez **Supprimer** pour le supprimer définitivement, ou **Restaurer** pour le remettre dans le registre.
 
-La procédure complète est décrite dans [Questions fréquentes](../features/ropa/faq.md#comment-supprimer-un-traitement) du registre des traitements.
+La procédure complète est décrite dans [FAQ du registre des traitements](../features/ropa/faq.md#comment-supprimer-un-traitement).
 
 ## Je ne retrouve pas des éléments, que puis-je faire ?
 

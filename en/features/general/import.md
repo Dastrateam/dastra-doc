@@ -38,6 +38,8 @@ The following objects can be imported:
 | Message templates | Workspace settings > Message templates | |
 | Organizational units | Workspace settings > Access management > Organizational units | CSV file |
 
+For a worked example with a custom field and the **Merge** mode, see [Import assets from a spreadsheet](../../examples/excel-import.md).
+
 In each import, the process is the same. It is done in 4 steps:
 
 1. [Preparation of the data file](import.md#1.-preparation-of-the-data-file)

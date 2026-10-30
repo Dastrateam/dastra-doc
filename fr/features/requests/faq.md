@@ -1,4 +1,4 @@
-# Questions fréquentes
+# FAQ
 
 ## Les demandeurs reçoivent-ils une notification par e-mail lors de la clôture d'une demande ?
 

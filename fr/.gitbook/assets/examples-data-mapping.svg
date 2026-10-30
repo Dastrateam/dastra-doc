@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Cartographie : un éditeur, un actif, un jeu de données et un traitement">
+<title>Cartographie : un éditeur, un actif, un jeu de données et un traitement</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8f9bab"/></marker></defs>
+<rect width="880" height="380" fill="#ffffff"/>
+<rect x="30" y="40" width="220" height="76" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="140.0" y="56" text-anchor="middle" font-size="10.5" letter-spacing="1" font-weight="700" fill="#084887">ACTEUR</text>
+<text x="140.0" y="92.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Stampwise Software Ltd</text>
+<rect x="330" y="40" width="220" height="76" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="440.0" y="56" text-anchor="middle" font-size="10.5" letter-spacing="1" font-weight="700" fill="#084887">ACTIF</text>
+<text x="440.0" y="92.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Loyalty card platform</text>
+<rect x="630" y="40" width="220" height="76" rx="8" fill="#eef3fa" stroke="#084887" stroke-width="1.6"/>
+<text x="740.0" y="56" text-anchor="middle" font-size="10.5" letter-spacing="1" font-weight="700" fill="#084887">JEU DE DONNÉES</text>
+<text x="740.0" y="92.2" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Loyalty card activity</text>
+<rect x="330" y="250" width="220" height="86" rx="8" fill="#fdf1e8" stroke="#c9560a" stroke-width="1.6"/>
+<text x="440.0" y="266" text-anchor="middle" font-size="10.5" letter-spacing="1" font-weight="700" fill="#c9560a">TRAITEMENT</text>
+<text x="440.0" y="297.9" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">Brightmoor Rewards</text>
+<text x="440.0" y="316.6" text-anchor="middle" font-size="15" font-weight="600" fill="#16202c">loyalty programme</text>
+<path d="M250,78.0 L328,78.0" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="290.0" y="70.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5b6878">éditeur de</text>
+<path d="M550,78.0 L628,78.0" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="590.0" y="70.0" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5b6878">contient</text>
+<path d="M440.0,250 L440.0,118" fill="none" stroke="#8f9bab" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="450.0" y="190" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">utilise</text>
+<path d="M330,293 L140.0,293 L140.0,118" fill="none" stroke="#8f9bab" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+<text x="150.0" y="220" text-anchor="start" font-size="12.5" font-style="italic" fill="#5b6878">destinataire, sous-traitant</text>
+<path d="M550,293 L740.0,293 L740.0,118" fill="none" stroke="#8f9bab" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+<text x="730.0" y="220" text-anchor="end" font-size="12.5" font-style="italic" fill="#5b6878">traite</text>
+</svg>

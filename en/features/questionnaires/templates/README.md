@@ -138,7 +138,7 @@ You can use a questionnaire to automatically populate custom fields in Dastra re
 
 In **Questionnaires**, open the relevant template and add the question that should populate the custom field. Choose a question type that is compatible with the field type.
 
-Open the question properties, then enable **Do you want to customize the variable name?**. In **Variable name**, enter `custom_` followed by the field’s technical name.
+Open the question properties, then check **Would you like to customize the variable name (for experts users only)?**. In **Variable name**, enter `custom_` followed by the field’s technical name.
 
 For a field with the technical name `business_owner`, use:
 
@@ -149,6 +149,8 @@ custom_business_owner
 Then save the template changes.
 {% endstep %}
 {% endstepper %}
+
+For the other fields of the record, the question types and the merge, see [Fill a record from the answers](record-mapping.md).
 
 ### Variable syntax
 

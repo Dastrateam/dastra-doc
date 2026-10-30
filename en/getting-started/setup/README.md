@@ -113,6 +113,8 @@ You can explore the features on your own, or follow a concrete case in the tutor
 
 ***
 
+Questions about setting up? See the [FAQ](../../other/faq.md), which lists the questions of every module.
+
 {% hint style="info" %}
 You can change roles, teams and organizational units in your workspace at any time. These settings remain fully customizable to fit your organization.
 {% endhint %}

@@ -30,6 +30,14 @@ description: Welcome to the Dastra documentation.
 
 ***
 
+### Worked examples
+
+{% content-ref url="examples/README.md" %}
+[README.md](examples/README.md)
+{% endcontent-ref %}
+
+***
+
 ### ⚙️ Features
 
 {% content-ref url="features/ropa/README.md" %}
@@ -113,6 +121,8 @@ description: Welcome to the Dastra documentation.
 {% endcontent-ref %}
 
 ***
+
+Looking for an answer? The [FAQ](other/faq.md) lists the questions of every module, and [Known problems](other/known-problems.md) covers the most common errors.
 
 {% hint style="info" %}
 To discover Dastra, [ask for a demo](https://www.dastra.eu/en/contacts/demo).

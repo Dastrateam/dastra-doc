@@ -3,7 +3,7 @@ description: >-
   Answers to frequently asked questions about the general features of Dastra.
 ---
 
-# Frequently asked questions
+# FAQ
 
 ## How do I import datasets?
 

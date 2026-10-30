@@ -39,6 +39,8 @@ Les objets suivants peuvent être importés :
 | Modèles de messages | Réglages espace de travail > Modèles | |
 | Unités organisationnelles | Réglages espace de travail > Gestion des accès > Unités organisationnelles | Fichier CSV |
 
+Pour un exemple complet avec un champ personnalisé et le mode **Fusion**, voir [Importer des actifs depuis un tableur](../../examples/excel-import.md).
+
 Dans chaque import, le processus est le même. Il s'effectue en 4 étapes :
 
 1. [Préparation du fichier de données](import.md#1.-preparation-du-fichier-de-donnees)

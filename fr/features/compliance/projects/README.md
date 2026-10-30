@@ -15,6 +15,8 @@ Cette page présente la création d'un projet, ses six phases, l'assistant de ph
 * [Surveillance de la conformité](monitoring.md) : preuves, campagnes de tests, export de la déclaration d'applicabilité ;
 * [Audits](audits.md) : audits internes et audits finaux.
 
+Pour un parcours complet d'un projet de certification, voir l'[exemple du projet ISO 27001](../../../examples/iso-27001-project.md).
+
 ## Accéder aux projets
 
 Dans le menu, cliquez sur **Conformité** puis sur **Projets**. Le menu latéral contient deux groupes :
