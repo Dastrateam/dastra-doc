@@ -1,53 +1,62 @@
+---
+description: >-
+  Réponses aux questions fréquentes sur les tâches : actions groupées,
+  suppression, charge de travail et relances.
+---
+
 # Questions fréquentes
 
-## Attacher plusieurs tâches à un projet
+## Comment attacher plusieurs tâches à un projet ?
 
-Pour attacher plusieurs à un projet en une seule action, vous devez passer par les actions groupées et la modification des champs.
+Passez par les actions groupées et la modification des champs.
 
-Commencez par sélectionner les tâches que vous voulez attacher à un projet.
+1. Dans la vue **Tableau** de la page **Tâches**, cochez les tâches à rattacher au projet.
 
-<figure><img src="../../.gitbook/assets/planning-tasks-bulk-select-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-faq-1.png" alt="La vue Tableau avec trois tâches cochées et le menu Choisir une action groupée ouvert"><figcaption><p>Le menu des actions groupées</p></figcaption></figure>
 
-Cliquez sur "Actions groupées"
+2. Cliquez sur **Choisir une action groupée**, puis sur **Modifier les champs**.
+3. Dans la fenêtre, sélectionnez le champ **Projet**, puis le projet souhaité.
 
-Cliquez sur "Modifier les champs"
+<figure><img src="../../.gitbook/assets/tasks-faq-2.png" alt="La fenêtre de modification groupée avec le champ Projet et un projet sélectionnés"><figcaption><p>La modification groupée du champ Projet</p></figcaption></figure>
 
-Sélectionnez "Projet" et le projet souhaité.
+4. Cliquez sur **Enregistrer**.
 
-<figure><img src="../../.gitbook/assets/planning-tasks-bulk-edit-dialog.png" alt=""><figcaption></figcaption></figure>
+## Comment supprimer une tâche ?
 
-Validez les changements en enregistrant.
+Deux chemins sont possibles.
 
-## Comment supprimer une tache ?
+### Par la corbeille
 
-Pour supprimer une tache, vous devez d'abord l'archiver puis la supprimer des archives.
+Cette voie laisse la possibilité de revenir en arrière tant que la tâche n'est pas supprimée.
 
-<figure><img src="../../.gitbook/assets/planning-task-actions-archive.png" alt=""><figcaption><p>Bouton Archiver</p></figcaption></figure>
+1. Cliquez sur les trois points de la tâche, puis sur **Déplacer dans la corbeille**.
+2. Ouvrez **Filtres** et cochez **Voir la corbeille**.
+3. Cliquez sur les trois points de la tâche, puis sur **Supprimer**, et confirmez.
 
-Ensuite, afficher les archives des tâches
+<figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Le panneau Filtres avec la case Voir la corbeille cochée"><figcaption><p>Le filtre Voir la corbeille</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-tasks-filter-view-archives.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-create-7.png" alt="Le menu d'une tâche de la corbeille avec les actions Restaurer et Supprimer"><figcaption><p>Les actions d'une tâche de la corbeille</p></figcaption></figure>
 
-Et supprimer les tâches
+### Directement depuis la vue Tableau
 
-<figure><img src="../../.gitbook/assets/planning-archived-task-context-menu.png" alt=""><figcaption></figcaption></figure>
+Cochez la ou les tâches, cliquez sur **Choisir une action groupée**, puis sur **Supprimer**, et confirmez.
 
-Vous pouvez également supprimer la tache directement depuis la vue tableau
+{% hint style="danger" %}
+La suppression est définitive. Pour conserver une trace de la tâche, mettez-la à la corbeille sans la supprimer.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/planning-task-context-menu-delete.png" alt=""><figcaption></figcaption></figure>
+## Comment indiquer la charge de travail d'une tâche ?
 
-## Indiquer la charge de travail sur la tâche
+Vous pouvez saisir la charge de travail estimée et réalisée sur chaque tâche. Vous mesurez ainsi dans votre bilan le temps passé à réaliser les tâches.
 
-Vous pouvez indiquer la charge de travail estimée et réalisée sur Dastra. Cela peut être utile pour identifier dans votre bilan le temps passé à la réalisation des tâches.
+Pour cela, ajoutez des champs personnalisés aux tâches : dans le menu latéral, cliquez sur **Réglages espace de travail**, puis sur **Champs personnalisés**, et choisissez **Tâche** dans la liste de gauche. Voir [Champs personnalisés](../general/custom-fields.md).
 
-Pour ajouter la charge de travail, vous devrez ajouter des champs personnalisés sur les tâches.
+<figure><img src="../../.gitbook/assets/tasks-faq-3.png" alt="La page Champs personnalisés pour les tâches, avec un groupe de deux champs numériques de charge de travail estimée et réelle"><figcaption><p>Un groupe de champs de charge de travail</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-custom-fields-workload-group.png" alt=""><figcaption></figcaption></figure>
+Les champs apparaissent dans le panneau de la tâche. Vous pouvez ensuite exporter leurs valeurs dans un classeur ou les utiliser dans les filtres des tâches.
 
-Vous pourrez ensuite exporter ces valeurs dans un classeur ou les retrouver via vos filtres de tâches.
+<figure><img src="../../.gitbook/assets/tasks-faq-4.png" alt="Le panneau d'une tâche avec les champs de charge de travail estimée et réelle"><figcaption><p>Exemple de champs de charge de travail</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-task-form-workload.png" alt=""><figcaption><p>Exemple de champs de charge de travail</p></figcaption></figure>
+## Comment relancer une personne sur une tâche ?
 
-## Comment relancer une tache ?
-
-Vous pouvez renvoyer une notification de tache à un utilisateur en le mentionnant dans une discussion.
+Mentionnez-la dans la discussion de la tâche : ouvrez la tâche, cliquez sur le bouton **Discussions internes**, puis saisissez **@** suivi de son nom. La personne mentionnée reçoit une notification. Voir [Discussions internes](../general/discussions.md).

@@ -1,97 +1,140 @@
 ---
-description: Learn to design and track your tasks.
+description: >-
+  Create a task of the action plan, assign it, edit it, move it to the recycle
+  bin or delete it.
 ---
 
-# Create your action plan
+# Create or edit a task
 
-## Introduction
+In Dastra, a task is a piece of work to be done. It has an assignee, a due date and a tracking step. This page explains how to create, assign, edit and delete a task.
 
-Creating and tracking a data protection task has never been easier with Dastra's scheduling module. In Dastra, a task is a job that needs to be done.
+## Create a task
 
-## To create a task, two possibilities:
+You can create a task in three ways:
 
-* Either you create a task directly in the action plan
-* Either you create a task directly in another module of the application (processing register, data breach notifications, cookies ...)
+* from the **Tasks** page of the planning module;
+* from the record of another item in the application;
+* from an email received at a collection address.
 
-### Create a task in the action plan
+### From the planning module
 
-In the main page of the "planning" module, click on "new task". A new "New task" window appears on the right of the screen allowing you to describe the desired task. Once described, click on save.
+1. In the side menu, click **Tasks**, then choose **Tasks** in the submenu.
+2. Click **Create task**. The **Create task** panel opens on the right of the screen.
 
-<figure><img src="../../.gitbook/assets/getting-started-show-guide-link.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="The toolbar of the Tasks page with the Create task button and its drop-down menu open"><figcaption><p>The Create task button and the actions of its menu</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/planning-new-task-create-form.png" alt=""><figcaption></figcaption></figure>
+3. Fill in the **Title of the task** (120 characters maximum) and the **Organizational unit**, which are required. Complete the other fields as needed.
+4. Click **Save changes**. To create several tasks in a row, click **Save and add another**.
 
-{% hint style="info" %}
-Each task in Dastra can be assigned to an item in the application, for example :&#x20;
+<figure><img src="../../.gitbook/assets/tasks-create-2.png" alt="The Create task panel with the title, organizational unit, assignee, dates and associated elements"><figcaption><p>The task creation panel</p></figcaption></figure>
 
-* A process&#x20;
-* An application&#x20;
-* An actor / subcontractor&#x20;
-* A set of data&#x20;
-* A security measure&#x20;
-* An audit / PIA&#x20;
-* An exercise of rights&#x20;
-* An incident&#x20;
+The panel includes:
 
-Once these tasks have been created and associated, you will be able to find them directly in the file for each of these elements under the "Tasks" tab.
-{% endhint %}
+* **Organizational unit**: prefilled with the unit selected in the workspace, or the first available unit;
+* **Project**, **Sprint** and **Tags** to classify the task;
+* **Assigned to**, **Start date** and **Due date**;
+* **Priority** and **Internal reference**, in the expandable part of the panel;
+* the custom fields you added to tasks.
 
-{% hint style="info" %}
-**Link a task to multiple objects simultaneously**
+### Link a task to items
 
-It is possible to link a task to **multiple objects at once**: processing activities, assets, contracts, or any other element in the application. You can also link a task to a **questionnaire response**. This makes it easier to track cross-cutting actions that span several areas of your compliance work.
-{% endhint %}
+A task can be linked to one or more items of the application. In the panel, click **Associate element**, choose the type of item, then one or more items of that type. The linked items are listed under **Associated elements**.
 
-### Create a task directly from another Dastra module
+The available types are:
 
-Dastra allows you to create a task when you think about it, directly within the operational processes:
+* **Processing activity**;
+* **Request**;
+* **Data breach**;
+* **Responding to a questionnaire**;
+* **Stakeholder**;
+* **Asset**;
+* **Dataset**;
+* **Risk assessment**;
+* **Control point**;
+* **Security measure**;
+* **AI system**;
+* **Contract**;
+* **Datafield**;
+* **Category of data subjects**;
+* **Compliance project**;
+* **Compliance Audit**.
 
-* Editing a data processing
+You then find the task in the record of each of these items (see below). The **Associated with** filter of the **Tasks** page lists the tasks linked to a given type of item.
 
-<figure><img src="../../.gitbook/assets/processing-record-summary-tab-highlighted.png" alt=""><figcaption></figcaption></figure>
+### From the record of another item
 
-* Management of a request for exercise of rights
+The records of processing activities, data subject requests, data breaches, stakeholders, assets, datasets, security measures, contracts, AI systems, control points and risk assessments have a task button: a list icon with a check mark and the number of linked tasks.
 
-<figure><img src="../../.gitbook/assets/settings-2fa-authenticator-app.png" alt=""><figcaption></figcaption></figure>
+1. Open the record of the item.
+2. Click the task button. The **Related tasks** panel lists the tasks linked to this item, with filters by step and by tag.
+3. Click **Create task**. The task is linked to the item and takes its organizational unit.
 
-* Data breach notification
+<figure><img src="../../.gitbook/assets/tasks-create-3.png" alt="The record of a processing activity with the Related tasks panel open"><figcaption><p>The Related tasks panel on the record of a processing activity</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/breach-describe-summary-tab-highlighted.png" alt=""><figcaption></figcaption></figure>
-
-* Generating tasks from an audit
-
-{% hint style="info" %}
-An action plan can also be generated automatically following the completion of an audit. For more information, see the section "Planning an audit".
-{% endhint %}
-
-### Creating subtasks
-
-It is possible to create a list of subtasks to each task in Dastra. To do this, edit a task and click on the "add subtask" button.
-
-<figure><img src="../../.gitbook/assets/settings-sso-saml-config-form.png" alt=""><figcaption></figcaption></figure>
-
-## Assigning a task
-
-When creating the task, you will have the option to assign the task to a Dastra user, either as an "owner" or as a "contributor". These people will be notified by email when a task is modified.
-
-## Editing a task
-
-To edit a task, simply click on the three dots to the right of a task, and select "Edit".
-
-<figure><img src="../../.gitbook/assets/settings-2fa-setup-qr-code.png" alt=""><figcaption></figcaption></figure>
+The **Show in planning** button of the panel opens the **Tasks** page with the tasks of the item.
 
 {% hint style="info" %}
-To change the status of a task even more easily, you can "click and drop" it from the "table" tab, which allows tasks to be divided into 4 status columns: "new", "additional information required", "in progress", "done". You can also customise the status columns.
+An action plan can also be generated from a validated questionnaire. See [Monitor questionnaires](../questionnaires/monitor.md).
 {% endhint %}
 
-## Archive or delete a task
+### From an email
 
-In Dastra, it is possible to archive or delete a task from the task drop-down menu accessible by clicking on the three dots on the right.
+Dastra can turn each email received at a collection address into a task, with its attachments. To set up the address, click the arrow of the **Create task** button, then **Transform emails into tasks**. The setup page opens in **Workspace settings** > **Integrations**. See [Incoming mail data collection](../settings/mailboxes.md). This entry requires the permission to manage integrations.
 
-<figure><img src="../../.gitbook/assets/settings-users-invite-dialog.png" alt=""><figcaption></figcaption></figure>
+### Create sub-tasks
+
+A task can contain a list of sub-tasks. Save the task first: the **Add sub-tasks** button stays inactive until the task exists. Then edit the task and click **Add sub-tasks**.
+
+<figure><img src="../../.gitbook/assets/tasks-create-4.png" alt="An open task with its list of sub-tasks and the Add sub-tasks button"><figcaption><p>The sub-tasks of a task</p></figcaption></figure>
+
+When all the sub-tasks are closed, Dastra offers to close the main task.
+
+## Assign a task
+
+Two fields identify the people involved:
+
+* **Assigned to**: the person who carries out the task. By default, it is you when you create the task;
+* **Task owner**: the person responsible for the task. They are notified when the step changes.
+
+The **Task owner** field is in the expandable part of the panel. Each user receives notifications according to their preferences: see [Notifications](../settings/notifications.md). To follow up with someone, mention them in the discussion of the task (see the [FAQ](faq.md)).
+
+## Edit a task
+
+To edit a task, click it: the **Task edition** panel opens. In the **Table** view, you can also click the three dots at the right of the row, then **Edit**.
+
+<figure><img src="../../.gitbook/assets/tasks-create-5.png" alt="The Table view with the three-dot menu of a task open"><figcaption><p>The menu of a task in the Table view</p></figcaption></figure>
+
+This menu also offers **Copy link**, **Create a copy**, **Merge** and **Move to recycle bin**. **Create a copy** duplicates the task and its sub-tasks: the title of the copy ends with " - copy".
+
+{% hint style="info" %}
+To change the step of a task, drag and drop it in the **Columns** view. The default steps are **New**, **Info needed**, **In progress** and **Done**. To change them, click the arrow of the **Create task** button, then **Configure columns**: see [Customize the task workflow](workflow.md).
+{% endhint %}
+
+### Send a task to Jira
+
+When the Jira integration is active for tasks, the actions menu of the task offers **Send to Jira**. See [Jira](../integrations/jira.md).
+
+## Move a task to the recycle bin or delete it
+
+A task moved to the recycle bin is not deleted: it shows the **Into recycle bin** mention and disappears from the lists. You can restore it at any time.
+
+1. In the three-dot menu of the task, or in the actions menu of the panel, click **Move to recycle bin**, then confirm.
+2. To find the tasks of the recycle bin, open **Filters** and select **View recycle bin**.
+
+<figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="The Filters panel with the View recycle bin box selected"><figcaption><p>The View recycle bin filter</p></figcaption></figure>
+
+3. In the menu of the task, click **Restore** to put it back in the list, or **Delete**, then confirm, to delete it.
+
+<figure><img src="../../.gitbook/assets/tasks-create-7.png" alt="The menu of a task in the recycle bin with the Restore and Delete actions"><figcaption><p>The actions of a task in the recycle bin</p></figcaption></figure>
+
+{% hint style="danger" %}
+Deleting a task is permanent. Its sub-tasks are deleted with it.
+{% endhint %}
+
+To delete tasks without going through the recycle bin, see the [FAQ](faq.md).
 
 ## Go further
 
 {% content-ref url="projects.md" %}
-[create-or-modify-a-project-or-an-iteration.md](projects.md)
+[Create or edit a project or a sprint](projects.md)
 {% endcontent-ref %}

@@ -1,32 +1,39 @@
 ---
 description: >-
-  Apprenez à synchroniser le module planification de Dastra avec d'autres
-  calendriers.
+  Synchronisez le calendrier de vos tâches Dastra avec Outlook, Google Agenda ou
+  une autre application de calendrier.
 ---
 
 # Synchroniser avec d'autres calendriers
 
-## Introduction
+Dastra génère un lien de calendrier au format .ics. Une fois ce lien ajouté à votre messagerie, vos tâches s'affichent dans un calendrier professionnel comme Outlook ou Google Agenda.
 
-Dans Dastra, il est possible de synchroniser toutes les actions créées dans d'autres calendriers, comme par exemple des calendriers professionnels proposés par des messageries.
+## Générer le lien de calendrier
 
-## Synchroniser avec d'autres calendrier
+1. Dans le menu latéral, cliquez sur **Planification**, puis sur **Tâches**.
+2. Cliquez sur la flèche du bouton **Créer tâche**, puis sur **Synchroniser avec mon calendrier (Outlook...)**. Cette entrée demande le droit d'exporter les tâches.
 
-Pour cela, rendez-vous sur l'onglet "Colonnes" ou "Tableau" dans le module "Planification", puis cliquez sur la flèche en haut à droite de l'écran, à côté du bouton "nouvelle tâche". Cliquez ensuite sur "Synchronisez avec mon calendrier (Outlook...).
+<figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="Le menu déroulant du bouton Créer tâche avec l'entrée Synchroniser avec mon calendrier"><figcaption><p>L'entrée Synchroniser avec mon calendrier du menu Créer tâche</p></figcaption></figure>
 
-![Le menu déroulant des tâches](../../.gitbook/assets/capture-web-4-5-2022-152356-app-dastra-eu.jpeg)
+3. Dans la fenêtre **Partage du calendrier des tâches**, cliquez sur **Créer un lien**.
 
-Cela permettra de générer un **lien** et/ou de télécharger un **fichier .ics** avec lequel il sera possible de synchroniser le calendrier des tâches qui vous sont assignées avec n'importe quelle application de calendrier (Outlook, Google…).
+<figure><img src="../../.gitbook/assets/tasks-calendar-sync-1.png" alt="La fenêtre Partage du calendrier des tâches avec le lien généré"><figcaption><p>Le lien de calendrier généré</p></figcaption></figure>
+
+Le lien est copié dans votre presse-papiers et affiché dans la fenêtre. Vous pouvez y synchroniser le calendrier des tâches qui vous sont assignées, dans n'importe quelle application de calendrier.
+
+## Ajouter le lien à votre calendrier
+
+Dans votre application de calendrier, ajoutez le lien comme calendrier Internet. La procédure dépend de l'application :
 
 * [Synchroniser un calendrier Outlook](https://support.microsoft.com/fr-fr/office/importer-des-calendriers-dans-outlook-8e8364e1-400e-4c0f-a573-fe76b5a2d379)
-* [Synchroniser un calendrier google agenda](https://support.google.com/calendar/answer/37118?hl=fr\&co=GENIE.Platform%3DDesktop)
+* [Synchroniser un calendrier Google Agenda](https://support.google.com/calendar/answer/37118?hl=fr\&co=GENIE.Platform%3DDesktop)
 
 {% hint style="info" %}
-Pour des raisons de sécurité, il est recommandé de surveiller les liens de partage exposés sur votre projet dans l'interface de gestion des liens de partage (bouton "réglages").
+Ne diffusez pas ce lien trop largement. Pour des raisons de sécurité, surveillez les liens existants dans **Réglages espace de travail** > **Liens de partage**.
 {% endhint %}
 
 ## Aller plus loin
 
 {% content-ref url="workflow.md" %}
-[allez-plus-loin-avec-la-planification.md](workflow.md)
+[Personnaliser le workflow des tâches](workflow.md)
 {% endcontent-ref %}

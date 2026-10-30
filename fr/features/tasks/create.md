@@ -1,107 +1,142 @@
 ---
-description: Apprenez à concevoir et modifier vos tâches.
+description: >-
+  Créez une tâche du plan d'action, assignez-la, modifiez-la, mettez-la à la
+  corbeille ou supprimez-la.
 ---
 
-# Créez ou modifier une tâche
+# Créer ou modifier une tâche
 
-## Introduction
+Dans Dastra, une tâche est un travail à réaliser. Elle a une personne assignée, une échéance et une étape de suivi. Cette page explique comment créer, assigner, modifier et supprimer une tâche.
 
-La création et le suivi d'une tâche de protection des données n'a jamais été plus simple grâce au module planification de Dastra.
-
-Dans Dastra, une tâche correspond à un travail qui doit être exécuté.
-
-## Création d'une tâche
+## Créer une tâche
 
 {% embed url="https://youtu.be/ARvp9PGVnAE" %}
 
-Pour créer une tâche, vous avez deux possibilités :
+Une tâche se crée de trois façons :
 
-* Soit vous créez une tâche directement dans le plan d'action
-* Soit vous créez une tâche directement dans un autre module de l'application (registres des traitements, violation de données, droits des personnes, audits, cookies)
+* depuis la page **Tâches** du module Planification ;
+* depuis la fiche d'un autre élément de l'application ;
+* à partir d'un e-mail reçu sur une adresse de collecte.
 
-#### Créer une tâche dans le plan d'action
+### Depuis le module Planification
 
-Dans la page principale du module "planification", cliquez sur "Nouvelle tâche". Une nouvelle fenêtre "Nouvelle tâche" apparaît à droite de l'écran vous permettant de décrire la tâche désirée. Une fois décrite, cliquez sur "Enregistrer".
+1. Dans le menu latéral, cliquez sur **Planification**, puis sur **Tâches**.
+2. Cliquez sur **Créer tâche**. Le panneau **Créer tâche** s'ouvre à droite de l'écran.
 
-![Bouton de création d'une nouvelle tâche](../../.gitbook/assets/planning-new-task-button.png)
+<figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="La barre d'outils de la page Tâches avec le bouton Créer tâche et son menu déroulant ouvert"><figcaption><p>Le bouton Créer tâche et les actions de son menu</p></figcaption></figure>
 
-![Interface de documentation de la tâche](../../.gitbook/assets/capture-web-4-5-2022-14206-app-dastra-eu.jpeg)
+3. Renseignez l'**Intitulé de la tâche** (120 caractères au maximum) et l'**Unité organisationnelle**, deux champs obligatoires. Complétez les autres champs selon vos besoins.
+4. Cliquez sur **Enregistrer**. Pour créer plusieurs tâches de suite, cliquez sur **Enregistrer et créer un nouveau**.
+
+<figure><img src="../../.gitbook/assets/tasks-create-2.png" alt="Le panneau Créer tâche avec l'intitulé, l'unité organisationnelle, la personne assignée, les dates et les éléments associés"><figcaption><p>Le panneau de création d'une tâche</p></figcaption></figure>
+
+Le panneau contient notamment :
+
+* **Unité organisationnelle** : préremplie avec l'unité sélectionnée dans l'espace de travail, ou à défaut la première unité disponible ;
+* **Projet**, **Itération** et **Tags** pour classer la tâche ;
+* **Assignée à**, **Date de début** et **Date d'échéance** ;
+* **Priorité** et **Référence interne**, dans la partie dépliable du panneau ;
+* les champs personnalisés que vous avez ajoutés aux tâches.
+
+### Lier une tâche à des éléments
+
+Une tâche peut être liée à un ou plusieurs éléments de l'application. Dans le panneau, cliquez sur **Associer un élément**, choisissez le type d'élément, puis un ou plusieurs éléments de ce type. Les éléments liés sont listés sous **Eléments associés**.
+
+Les types disponibles sont :
+
+* **Traitement de données** ;
+* **Demande** ;
+* **Violation de données** ;
+* **Soumission de questionnaire** ;
+* **Acteur** ;
+* **Actif** ;
+* **Jeu de données** ;
+* **Evaluation de risque** ;
+* **Point de contrôle** ;
+* **Mesure de sécurité** ;
+* **Système d'IA** ;
+* **Contrat** ;
+* **Données** ;
+* **Catégorie de personne concernée** ;
+* **Projet de conformité** ;
+* **Audit de conformité**.
+
+Vous retrouvez ensuite la tâche dans la fiche de chacun de ces éléments (voir ci-dessous). Le filtre **Associée à** de la page **Tâches** liste les tâches liées à un type d'élément donné.
+
+### Depuis la fiche d'un autre élément
+
+Les fiches des traitements, des demandes d'exercice de droits, des violations de données, des acteurs, des actifs, des jeux de données, des mesures de sécurité, des contrats, des systèmes d'IA, des points de contrôle et des évaluations de risque ont un bouton de tâches : une icône de liste avec coche et le nombre de tâches liées.
+
+1. Ouvrez la fiche de l'élément.
+2. Cliquez sur le bouton de tâches. Le panneau **Tâches attachées** liste les tâches liées à cet élément, avec des filtres par étape et par tag.
+3. Cliquez sur **Créer tâche**. La tâche est liée à l'élément et reprend son unité organisationnelle.
+
+<figure><img src="../../.gitbook/assets/tasks-create-3.png" alt="La fiche d'un traitement avec le panneau Tâches attachées ouvert"><figcaption><p>Le panneau Tâches attachées sur la fiche d'un traitement</p></figcaption></figure>
+
+Le bouton **Afficher dans la planification** du panneau ouvre la page **Tâches** avec les tâches de l'élément.
 
 {% hint style="info" %}
-Chaque tâche dans Dastra peut être affectée à un élément présent dans l'application, par exemple :
-
-* Un traitement
-* Une application
-* Un acteur / sous-traitant
-* Un jeu de données
-* Une mesure de sécurité
-* Un audit / PIA
-* Un exercice de droit
-* Un incident
-
-Une fois ces tâches créées et associées, vous pourrez les retrouver directement dans la fiche de chacun de ces éléments sous l'onglet "Tâches".
+Un plan d'action peut aussi être généré à partir d'un questionnaire validé. Voir [Piloter les questionnaires](../questionnaires/monitor.md).
 {% endhint %}
 
-{% hint style="info" %}
-**Liaison à plusieurs objets simultanément**
+### À partir d'un e-mail
 
-Il est possible de lier une tâche à **plusieurs objets en même temps** : traitements, actifs, contrats ou tout autre élément de l'application. Il est également possible de lier une tâche à une **réponse à un questionnaire**. Cette fonctionnalité facilite le suivi des actions transversales qui concernent plusieurs périmètres.
-{% endhint %}
+Dastra peut transformer chaque e-mail reçu sur une adresse de collecte en tâche, avec ses pièces jointes. Pour installer l'adresse, cliquez sur la flèche du bouton **Créer tâche**, puis sur **Transformer emails en tâches**. La page d'installation s'ouvre dans **Réglages espace de travail** > **Intégrations**. Voir [Adresses emails de collecte](../settings/mailboxes.md). Cette entrée demande le droit de gérer les intégrations.
 
-#### Créer une tâche directement depuis un autre module de Dastra
+### Créer des sous-tâches
 
-Dastra vous permet de créer une tâche au moment où vous en avez besoin, directement au sein des processus opérationnels :
+Une tâche peut contenir une liste de sous-tâches. Enregistrez d'abord la tâche : le bouton **Ajouter une sous-tâche** reste inactif tant qu'elle n'existe pas. Modifiez ensuite la tâche et cliquez sur **Ajouter une sous-tâche**.
 
-* Edition d'un traitement de données
+<figure><img src="../../.gitbook/assets/tasks-create-4.png" alt="Une tâche ouverte avec sa liste de sous-tâches et le bouton Ajouter une sous-tâche"><figcaption><p>Les sous-tâches d'une tâche</p></figcaption></figure>
 
-![Tâches attachées à des traitements de données](../../.gitbook/assets/planning-task-tabs-register-view.png)
+Quand toutes les sous-tâches sont terminées, Dastra propose de fermer la tâche principale.
 
-* Gestion d'une demande d'exercice de droits
+## Assigner une tâche
 
-![Tâches attachées à des demandes d'exercice de droits](../../.gitbook/assets/planning-task-tabs-panel-view.png)
+Deux champs désignent les personnes concernées :
 
-* Violation de données
+* **Assignée à** : la personne qui exécute la tâche. Par défaut, c'est vous quand vous créez la tâche ;
+* **Propriétaire** : la personne responsable de la tâche. Elle est notifiée en cas de changement d'étape.
 
-![Tâches attachées à une notification de violation de données](../../.gitbook/assets/planning-task-tab-panel.png)
-
-* Génération de tâches depuis un audit
-
-{% hint style="info" %}
-Un plan d'action peut également être généré automatiquement suite à la réalisation d'un audit. Pour en savoir plus, consultez la section "Planifiez un audit".
-{% endhint %}
-
-#### Création de sous-tâches
-
-Il est possible de créer une liste de sous-tâches à chaque tâche dans Dastra. Pour cela, modifiez une tâche et cliquez sur le bouton "ajouter une sous-tâche".
-
-![Bouton "ajouter une sous-tâche"](../../.gitbook/assets/planning-add-subtask-button.png)
-
-## Allouer une tâche
-
-Lors de la création de la tâche, vous aurez la possibilité d'allouer cette tâche à un utilisateur de Dastra, soit en tant que "propriétaire", soit en tant que "contributeur".
-
-Ces personnes seront notifiées par mail dès la modification d'une tâche.
+Le champ **Propriétaire** se trouve dans la partie dépliable du panneau. Chaque utilisateur reçoit les notifications selon ses préférences : voir [Notifications](../settings/notifications.md). Pour relancer une personne, mentionnez-la dans la discussion de la tâche (voir les [Questions fréquentes](faq.md)).
 
 ## Modifier une tâche
 
-Pour modifier une tâche, il suffit de cliquer sur les trois points à droite d'une tâche, et de sélectionner "Modifier".
+Pour modifier une tâche, cliquez dessus : le panneau **Modifier une tâche** s'ouvre. Dans la vue **Tableau**, vous pouvez aussi cliquer sur les trois points à droite de la ligne, puis sur **Modifier**.
 
-![Menu déroulant d'une tâche](../../.gitbook/assets/planning-task-context-menu.png)
+<figure><img src="../../.gitbook/assets/tasks-create-5.png" alt="La vue Tableau avec le menu des trois points d'une tâche ouvert"><figcaption><p>Le menu d'une tâche dans la vue Tableau</p></figcaption></figure>
+
+Ce menu propose aussi **Copier le lien**, **Dupliquer**, **Fusionner** et **Déplacer dans la corbeille**. **Dupliquer** crée une copie de la tâche et de ses sous-tâches : l'intitulé de la copie se termine par « - copy ».
 
 {% hint style="info" %}
-Pour modifier le statut d'une tâche encore plus simplement, vous pouvez "cliquer - déposer" celle-ci depuis l'onglet "tableau", qui permet une répartition des tâches entre 4 colonnes de statut : "nouveau", informations complémentaires requises", "en cours", "fait". Vous pouvez également personnaliser les colonnes de statut.
+Pour changer l'étape d'une tâche, glissez-déposez-la dans la vue **Colonnes**. Les étapes par défaut sont **Nouveau**, **Besoins d'infos**, **En cours** et **Fait**. Pour les modifier, cliquez sur la flèche du bouton **Créer tâche**, puis sur **Configurer les colonnes** : voir [Personnaliser le workflow des tâches](workflow.md).
 {% endhint %}
 
-## Archiver ou supprimer une tâche
+### Envoyer une tâche vers Jira
 
-Dans Dastra, il est possible d'archiver ou de supprimer une tâche depuis le menu déroulant de la tâche accessible en cliquant sur les trois points à droite.
+Quand l'intégration Jira est active pour les tâches, le menu d'actions de la tâche propose **Envoyer vers Jira**. Voir [Jira](../integrations/jira.md).
 
-Contrairement à la suppression, l'archivage d'une tâche ne la supprime pas dans Dastra. Une mention "archivée" apparaît dans la tâche. Pour faire disparaître de la visualisation une tâche, il suffit de désactiver le filtre "voir les tâches archivées
+## Mettre à la corbeille ou supprimer une tâche
 
-![Filtre "voir les tâches archivées" désactivé](../../.gitbook/assets/planning-view-archived-tasks-toggle.png)
+Une tâche mise à la corbeille n'est pas supprimée : elle porte la mention **Dans la corbeille** et disparaît des listes. Vous pouvez la restaurer à tout moment.
+
+1. Dans le menu des trois points de la tâche, ou dans le menu d'actions du panneau, cliquez sur **Déplacer dans la corbeille**, puis confirmez.
+2. Pour retrouver les tâches de la corbeille, ouvrez **Filtres** et cochez **Voir la corbeille**.
+
+<figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Le panneau Filtres avec la case Voir la corbeille cochée"><figcaption><p>Le filtre Voir la corbeille</p></figcaption></figure>
+
+3. Dans le menu de la tâche, cliquez sur **Restaurer** pour la remettre dans la liste, ou sur **Supprimer**, puis confirmez, pour la supprimer.
+
+<figure><img src="../../.gitbook/assets/tasks-create-7.png" alt="Le menu d'une tâche de la corbeille avec les actions Restaurer et Supprimer"><figcaption><p>Les actions d'une tâche de la corbeille</p></figcaption></figure>
+
+{% hint style="danger" %}
+La suppression d'une tâche est définitive. Ses sous-tâches sont supprimées avec elle.
+{% endhint %}
+
+Pour supprimer des tâches sans passer par la corbeille, voir les [Questions fréquentes](faq.md).
 
 ## Aller plus loin
 
 {% content-ref url="projects.md" %}
-[creer-ou-modifier-un-projet-ou-une-iteration.md](projects.md)
+[Créer ou modifier un projet ou une itération](projects.md)
 {% endcontent-ref %}
