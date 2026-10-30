@@ -4,8 +4,8 @@ description: ServiceNow integration to synchronize assets in Dastra
 
 # ServiceNow
 
-**What is ServiceNow?**\
-\
+### What is ServiceNow?
+
 The [**ServiceNow**](https://www.servicenow.com/) integration allows you to automatically synchronize business applications from the ServiceNow CMDB directly into Dastra.
 
 It allows you to:
@@ -15,15 +15,15 @@ It allows you to:
 * use these assets in your processing records, datasets, impact assessments, risk analyses, audits, etc.;
 * ensure that information from ServiceNow remains up to date in Dastra.
 
-**Prerequisites**
+### Prerequisites
 
 * Have a paid Dastra license including access to the Integrations / Connectors module.
 * Have a ServiceNow instance (e.g. `https://your-instance.service-now.com`) that allows REST API calls from external sources, and depending on the authentication method:
   * **OAuth 2.0 (recommended)** — the ability to register an OAuth application in your instance,
   * **Basic** — a service account with read access to `cmdb_ci_business_app`.
 
-**Installation**\
-\
+### Installation
+
 The setup process follows the common integration flow (see [Connections, use cases and field mapping](connections.md)):
 
 1. Go to the ServiceNow integration page in the Dastra integrations marketplace.\
@@ -35,7 +35,7 @@ The setup process follows the common integration flow (see [Connections, use cas
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Creating the ServiceNow connection</p></figcaption></figure>
 
-**Authentication methods**
+### Authentication methods
 
 **OAuth 2.0 (recommended)** — Dastra never stores a password; ServiceNow issues short-lived tokens that Dastra refreshes automatically.
 
@@ -50,7 +50,7 @@ The setup process follows the common integration flow (see [Connections, use cas
 Recent ServiceNow instances restrict Basic authentication on the REST API at the account level. If you use Basic authentication, create a **dedicated service account with "Web service access only" checked** — never a named user or an admin account. Symptom of the restriction: a `401 User is not authenticated` response even with valid credentials.
 {% endhint %}
 
-**Configuration**
+### Configuration
 
 * Select the **users to notify on error** (required). They will receive an email notification when a synchronization fails, containing information about the updated assets.
 * **Create the Dastra record if it does not exist** — when enabled, an asset is created if it does not exist in Dastra, based on the external reference.
@@ -63,8 +63,8 @@ Warning: if you enable the creation option, a large number of assets may be auto
 
 <figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt=""><figcaption><p>The ServiceNow configuration: options and field mapping</p></figcaption></figure>
 
-**How is data synchronized between Dastra and ServiceNow?**\
-\
+### How is data synchronized between Dastra and ServiceNow?
+
 The synchronization runs automatically **once a day**, and can be triggered at any time with **Run synchronization now** on the use case card. During each synchronization, fields from ServiceNow are mapped into your Dastra asset repository. By default, the following information is retrieved and updated:
 
 * Asset **label**
@@ -81,8 +81,8 @@ The synchronization runs automatically **once a day**, and can be triggered at a
 
 Each of these default behaviours can be overridden per field in the **Field mapping** editor. All this data ensures a reliable and up-to-date link between your ServiceNow CMDB and your Dastra repository.
 
-**Management of assets deleted in ServiceNow**\
-\
+#### Management of assets deleted in ServiceNow
+
 When Dastra detects that an asset previously synchronized no longer exists in ServiceNow, it is not automatically deleted in Dastra.
 
 Instead, Dastra adds an automatic tag (`To-delete-servicenow`) to the asset indicating that it has been deleted in ServiceNow. If the application reappears in ServiceNow later, the tag is removed automatically.

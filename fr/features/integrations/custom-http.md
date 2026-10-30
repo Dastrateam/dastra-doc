@@ -20,7 +20,7 @@ L'intégration HTTP / Custom API permet à vos **règles de workflow d'appeler n
 
 ### Installation
 
-1. Dans Dastra, ouvrez **Paramètres > Intégrations** et sélectionnez **HTTP / Custom API**.
+1. Dans Dastra, ouvrez **Réglages espace de travail** > **Intégrations** et sélectionnez **HTTP / Custom API**.
 2. Activez le cas d'usage : aucun identifiant à saisir à cette étape — l'interrupteur active simplement l'action pour le workspace.
 3. Cliquez sur **Gérer les connexions** et ajoutez une connexion par plateforme cible. Une connexion porte une façon de s'authentifier :
    * **Clé d'API / jeton** — la clé, l'en-tête qui la transporte (`Authorization` par défaut) et un préfixe de valeur optionnel (`Bearer ` par défaut lorsque l'en-tête est `Authorization`). Pour un en-tête du type `X-API-Key`, laissez le préfixe vide.

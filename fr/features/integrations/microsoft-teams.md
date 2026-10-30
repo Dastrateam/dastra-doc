@@ -38,7 +38,7 @@ Microsoft a retiré les webhooks entrants Office 365 classiques (connecteurs de 
 
 ### Installation
 
-1. Dans Dastra, ouvrez **Paramètres > Intégrations** et sélectionnez **Microsoft Teams**.
+1. Dans Dastra, ouvrez **Réglages espace de travail** > **Intégrations** et sélectionnez **Microsoft Teams**.
 2. Sur le cas d'usage de notifications de workflow, cliquez sur **Ajouter l'intégration**.
 3. Ajoutez une connexion et collez l'**URL du webhook Workflows**.
 4. Cliquez sur **Connecter**. Dastra publie immédiatement une carte de test (« *Notification de test Dastra* ») dans le canal pour valider l'URL.

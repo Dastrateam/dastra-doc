@@ -37,7 +37,7 @@ La méthode OAuth apparaît dans la liste **Méthode d'authentification** lorsqu
 
 ### Installation
 
-1. Ouvrez **Paramètres > Intégrations** et sélectionnez **Jira**.
+1. Ouvrez **Réglages espace de travail** > **Intégrations** et sélectionnez **Jira**.
 2. Sur le cas d'usage voulu, cliquez sur **Ajouter l'intégration**.
 3. Ajoutez une connexion, ou sélectionnez la connexion Jira déjà utilisée par l'autre cas d'usage :
    * **Basic** : saisissez l'**URL de l'instance**, l'**E-mail** et le **Jeton d'API**, puis cliquez sur **Connecter**.

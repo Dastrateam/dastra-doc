@@ -8,7 +8,7 @@ This page describes the concepts shared by all native integrations. For connecto
 
 ### The integration store
 
-Open **Settings > Integrations** in your workspace. The catalog lists every available integration, filterable by category and by the Dastra object it targets, with an **All / Installed** tab switch.
+Open **Workspace settings** > **Integrations** in your workspace. The catalog lists every available integration, filterable by category and by the Dastra object it targets, with an **All / Installed** tab switch.
 
 <!-- 📸 Screenshot: the integrations catalog with the sidebar filters and the All/Installed tabs -->
 
@@ -37,13 +37,17 @@ From this panel you can **Test** a connection (a successful test also clears its
 To create a connection, click **Add a connection**:
 
 1. Give it a **Connection name** (e.g. *Production instance*) — optional, but useful when you have several.
-2. Pick the **Authentication method** when the connector supports more than one: **Basic (credentials / API key)** or **OAuth**.
+2. Pick the **Authentication method** when the connector supports more than one: **Basic (credentials / API key)** or **OAuth**. The [HTTP / Custom API](custom-http.md) integration also offers **API key / token** and **OAuth 2.0 (client credentials)**: with the latter, Dastra authenticates with its own client ID and secret, without a user sign-in, and renews the access tokens automatically.
 3. Fill in the fields requested by the connector (instance URL, API token…).
 4. Click **Connect** — or **Save and connect** for OAuth, which redirects you to the external tool to authorize Dastra.
 
 <!-- 📸 Screenshot: the connection creation modal (e.g. for SAP LeanIX or ServiceNow) showing name, method and credential fields -->
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt=""><figcaption><p>Creating a connection</p></figcaption></figure>
+
+{% hint style="info" %}
+**Revoked OAuth connection.** When the authorization of an OAuth connection has been revoked or has expired, Dastra detects it the first time the connection is used and shows an integration error notification with a **Reauthorize** button. The button opens the connections panel of the integration. Click **Reauthorize** on the affected connection to restart the authorization: the connection and the use cases that rely on it are kept.
+{% endhint %}
 
 {% hint style="info" %}
 **Connections used by workflow rules.** For the [HTTP / Custom API](custom-http.md) integration, a connection is not bound to a use case: each **Send an HTTP request** action of a workflow rule picks the connection to use directly, and several rules can share the same one. The connections panel shows how many rules use each connection. Deleting a connection disables the rules that depend on it. See also [Sending an HTTP request](../settings/workflow-rules.md#sending-an-http-request) in workflow rules.
@@ -83,7 +87,7 @@ Import use cases include a **Field mapping** section: for each Dastra field, cho
 
 <!-- 📸 Screenshot: the field mapping editor with a few mapped rows, one "Default behaviour" row and the "Map a field" button -->
 
-<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt=""><figcaption><p>The field mapping editor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt="The field mapping editor"><figcaption><p>The field mapping editor</p></figcaption></figure>
 
 #### Advanced options
 
@@ -91,6 +95,8 @@ Each row has an **Advanced** panel with two options:
 
 * **Default value** — written when there is no source field, or as a fallback for source values that aren't transcoded. For date fields you can pick **Today** or a relative date (e.g. *in 30 days*), resolved when the record is created.
 * **Value transcoding** — for closed lists (statuses, lifecycle stages…): map each source value to a Dastra value. Values you don't map fall back to the default value.
+
+A closed-list field linked to a source field must have its transcoding defined: until it is, its row shows a warning and the configuration cannot be saved.
 
 <!-- 📸 Screenshot: the Advanced push-menu of a mapped field showing Default value and Value transcoding -->
 

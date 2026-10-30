@@ -37,7 +37,7 @@ Si vous souhaitez automatiser un flux de travail pour lequel nous ne proposons p
 
 L'éditeur de Zap vous permet de créer un Zap à partir de zéro, sans avoir à taper une seule ligne de code.
 
-Choisissez l'application que vous souhaitez connecter avec Dastra dans le [catalogue de Zapier](https://zapier.com/apps), configurez un déclencheur puis sélectionner l'action à effectuer. Vous pouvez déclencher des actions dans une application tierce à partir d'un évènement se produisant sur Dastra, ou bien déclencher une action dans Dastra suite à un événement dans une application tierce. Avec plus de 4000 applications compatibles avec Zapier, les possibilités d'automatisation sont infinies.
+Choisissez l'application que vous souhaitez connecter avec Dastra dans le [catalogue de Zapier](https://zapier.com/apps), configurez un déclencheur puis sélectionner l'action à effectuer. Vous pouvez déclencher des actions dans une application tierce à partir d'un évènement se produisant sur Dastra, ou bien déclencher une action dans Dastra suite à un événement dans une application tierce. Des milliers d'applications sont compatibles avec Zapier.
 
 ### Quelles fonctionnalités de Dastra sont actuellement automatisables dans Dastra via Zapier ? <a href="#chapter-4" id="chapter-4"></a>
 

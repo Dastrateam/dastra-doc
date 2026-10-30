@@ -38,7 +38,7 @@ Microsoft retired the classic Office 365 incoming webhooks (channel connectors) 
 
 ### Installation
 
-1. In Dastra, open **Settings > Integrations** and select **Microsoft Teams**.
+1. In Dastra, open **Workspace settings** > **Integrations** and select **Microsoft Teams**.
 2. On the use case **Post workflow rule notifications as cards in a Microsoft Teams channel**, click **Add integration**.
 3. Add a connection and paste the **Workflows webhook URL**.
 4. Click **Connect**. Dastra immediately posts a test card ("*Dastra test notification*") into the channel to validate the URL.
