@@ -92,6 +92,29 @@ Aktivieren Sie in der Ansicht **Tabelle** die Kontrollkästchen links neben den 
 * **Teilen**
 * **In den Papierkorb verschieben**
 
+## Das Verzeichnis mit den Statistiken verfolgen
+
+Klicken Sie im linken Menü auf **Verarbeitungsverzeichnis** und dann auf **Statistiken**, um die Kennzahlen Ihres Verzeichnisses anzuzeigen.
+
+<figure><img src="../../.gitbook/assets/ropa-readme-2.png" alt="Seite Statistiken des Verarbeitungsverzeichnisses mit ihren Kennzahlen und Widgets"><figcaption><p>Die Seite Statistiken des Verzeichnisses</p></figcaption></figure>
+
+Die Seite zeigt:
+
+* Kennzahlen zur Anzahl der Verarbeitungstätigkeiten und zu den Indikatoren **Fortschritt**, **Qualität** und **Sensibilität**;
+* die **Durchschnittlichen Indikatoren** und die **Verteilung der Indikatoren**;
+* die Anzahl der Verarbeitungstätigkeiten pro Schritt des Workflows (**Schritte**), pro **Rechtliche Grundlagen**, pro Kategorie betroffener Personen (**Personengruppen**), pro Auftragsverarbeiter und pro Organisationseinheit;
+* den Anteil der Verarbeitungstätigkeiten mit Datenübermittlungen, die vom Widget **Datenübertragungen** angezeigten Länder und den Status der **DSFA**;
+* die Entwicklung der Anzahl der Verarbeitungstätigkeiten (**Neue Verarbeitungen**) und die **Aktivitäten**.
+
+Mit der Auswahl der Organisationseinheit, den Filtern und den Schaltflächen **Alle**, **Verantwortlicher** und **Auftragsverarbeiter** grenzen Sie die Statistiken ein. Klicken Sie auf **Drucken**, um die Seite zu drucken.
+
+## Folgenabschätzungen und Privacy-by-Design-Anfragen
+
+Zwei weitere Einträge des Menüs **Verarbeitungsverzeichnis** geben Zugriff auf die Fragebögen, die mit Ihren Verarbeitungstätigkeiten verknüpft sind. Sie werden angezeigt, wenn Sie Zugriff auf Fragebögen haben.
+
+* **Assessments** listet die Fragebögen [DSFA / PIA](../questionnaires/types/dpia.md), [Interessenabwägung (LIA)](../questionnaires/types/lia.md) und [Transferfolgenabschätzung (TIA)](../questionnaires/types/tia.md) des Mandanten auf. Klicken Sie auf **Fragebogen planen**, um einen zu erstellen.
+* **Privacy by Design** listet die Fragebögen für Anfragen zur Erstellung einer Verarbeitung auf. Sie [erfassen Projekte für Verarbeitungstätigkeiten](../trust-center/creation-questionnaires.md) über ein Trust Center: Sobald eine Antwort validiert ist, können ihre Daten zu einer Verarbeitungstätigkeit werden.
+
 ## Weiterführende Informationen
 
 {% content-ref url="../../gdpr/concepts/ropa.md" %}

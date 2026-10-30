@@ -63,9 +63,9 @@ Die Aktualität wird nur für **veröffentlichte** Verarbeitungstätigkeiten ang
 
 Eine Verarbeitungstätigkeit, die noch ein Entwurf ist, wird in der Liste als **nicht veröffentlicht** angezeigt und in ihrem Eintrag als **Awaiting publication**.
 
-### Im Eintrag der Verarbeitungstätigkeit
+### Auf der Seite der Verarbeitungstätigkeit
 
-Auf einem breiten Bildschirm steht die Aktualitätsanzeige oben im rechten Bereich des Eintrags der Verarbeitungstätigkeit. Sie zeigt den Balken **Aktualität**, der kürzer wird, je näher das Datum der nächsten Überprüfung rückt, den Zustand und seine Farbe, einen Link **Überprüfung** sowie die Zahl der verbleibenden oder überfälligen Tage.
+Auf einem breiten Bildschirm steht die Aktualitätsanzeige oben im rechten Bereich der Seite der Verarbeitungstätigkeit. Sie zeigt den Balken **Aktualität**, der kürzer wird, je näher das Datum der nächsten Überprüfung rückt, den Zustand und seine Farbe, einen Link **Überprüfung** sowie die Zahl der verbleibenden oder überfälligen Tage.
 
 Auf einem kleineren Bildschirm ist der rechte Bereich ausgeblendet: Der Zustand (zum Beispiel **Aktuell**) steht in der Kopfzeile des Eintrags, neben den Anzeigen **Fortschritt**, **Qualität** und **Sensibilität**. Klicken Sie darauf, um das Fenster **Überprüfung** zu öffnen.
 
@@ -83,7 +83,7 @@ Sie können außerdem die Spalte **Voraussichtliches Datum der Überprüfung** e
 
 Sie können eine Verarbeitungstätigkeit jederzeit überprüfen, ohne das Datum der nächsten Überprüfung abzuwarten. Dafür ist Schreibzugriff auf das Verarbeitungsverzeichnis erforderlich. Öffnen Sie das Fenster **Überprüfung**:
 
-* aus dem Eintrag der Verarbeitungstätigkeit: Klicken Sie auf die Aktualitätsanzeige, auf den Link **Überprüfung** im rechten Bereich oder im Menü neben der Schaltfläche **Speichern** auf **Überprüfung**;
+* von der Seite der Verarbeitungstätigkeit: Klicken Sie auf die Aktualitätsanzeige, auf den Link **Überprüfung** im rechten Bereich oder im Menü neben der Schaltfläche **Speichern** auf **Überprüfung**;
 * aus der Liste: Klicken Sie auf die Zelle der Spalte **Datum der letzten Überprüfung**.
 
 Um mehrere Verarbeitungstätigkeiten gleichzeitig zu überprüfen, wählen Sie sie in der Liste aus und wählen dann unter **Bitte wählen Sie eine Sammelaktion aus** den Eintrag **Überprüfung**.

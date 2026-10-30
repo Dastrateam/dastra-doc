@@ -32,7 +32,7 @@ Für generische Datenkategorien empfehlen wir folgendes Vorgehen:
 * Öffnen Sie die Seite der Datenkategorien der Datenkartierung in einem neuen Tab.
 * Wählen Sie die Datenkategorie in der Verarbeitungstätigkeit aus.
 * Wenn die Datenkategorie angepasst werden muss, erstellen Sie eine weitere: Wechseln Sie in den anderen Tab und duplizieren Sie die generische Datenkategorie, wobei Sie die gewünschten Felder entfernen oder hinzufügen.
-* Zur besseren Übersicht empfehlen wir, diese Datenkategorien mit Tags zu versehen, damit Sie sie in der Auswahl leicht unterscheiden können. Zum Beispiel mit einem Tag „generisch“ und einem Tag für die hinzugefügten oder entfernten Daten.
+* Zur besseren Übersicht empfehlen wir, diese Datenkategorien mit Tags zu versehen, damit Sie sie in der Auswahl unterscheiden können. Zum Beispiel mit einem Tag „generisch“ und einem Tag für die hinzugefügten oder entfernten Daten.
 
 {% hint style="info" %}
 Eine Datenkategorie kann mit mehreren Verarbeitungstätigkeiten verknüpft sein. Wenn Sie eine Datenkategorie bearbeiten, die in mehreren Verarbeitungstätigkeiten verwendet wird, warnt Dastra Sie, dass sich Ihre Änderungen auf alle auswirken. Unterscheiden sich die Datenfelder für eine Verarbeitungstätigkeit deutlich, erstellen Sie eine Kopie der Datenkategorie und passen Sie die Kopie an.

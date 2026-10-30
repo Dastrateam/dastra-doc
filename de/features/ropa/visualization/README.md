@@ -14,7 +14,7 @@ In Dastra können die **Daten** Ihres Verarbeitungsverzeichnisses auf mehrere Ar
 
 ## Die Ansicht des Verzeichnisses ändern
 
-Um zu ändern, wie die Verarbeitungstätigkeiten in Ihrem Verzeichnis angezeigt werden, öffnen Sie im linken Menü das Modul **Verarbeitungstätigkeiten**. Standardmäßig werden die Verarbeitungstätigkeiten in der Ansicht **Tabelle** angezeigt. Klicken Sie in der Symbolleiste auf den Pfeil rechts neben der Schaltfläche **Tabelle** und wählen Sie eine andere Ansicht.
+Um zu ändern, wie die Verarbeitungstätigkeiten in Ihrem Verzeichnis angezeigt werden, öffnen Sie das Modul **Verarbeitungstätigkeiten**: Klicken Sie im linken Menü auf **Verarbeitungsverzeichnis** und dann auf **Verarbeitungstätigkeiten**. Standardmäßig werden die Verarbeitungstätigkeiten in der Ansicht **Tabelle** angezeigt. Klicken Sie in der Symbolleiste auf den Pfeil rechts neben der Schaltfläche **Tabelle** und wählen Sie eine andere Ansicht.
 
 <figure><img src="../../../.gitbook/assets/ropa-visualization-1.png" alt="Schaltfläche Tabelle und ihr Dropdown-Menü"><figcaption><p>Die für das Verzeichnis verfügbaren Ansichten</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ Es stehen drei Ansichten zur Verfügung:
 
 ## Die Kartierung Ihres Verzeichnisses und die Übermittlungen anzeigen
 
-Die Datenkartierung des Verzeichnisses und die Übermittlungskarte stehen in den Tabs **Data Mapping** und **Drittländer** oben im Modul **Verarbeitungstätigkeiten** zur Verfügung, über Ihrer Liste.
+Die Datenkartierung des Verzeichnisses und die Übermittlungskarte stehen im linken Menü unter **Verarbeitungsverzeichnis** zur Verfügung: Klicken Sie auf **Data Mapping** oder **Drittländer**. Der Eintrag **Drittländer** wird angezeigt, wenn die Übermittlungskarte für Ihren Mandanten aktiviert ist.
 
 {% content-ref url="data-map.md" %}
 [Datenkartierung des Verzeichnisses anzeigen](data-map.md)

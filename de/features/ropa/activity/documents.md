@@ -19,7 +19,7 @@ In der Praxis zeigt sich diese Dokumentation vor allem im Verarbeitungsverzeichn
 * ein internes Beschwerdemanagement;
 * interne Verfahren für den wirksamen Umgang mit Datenschutzverletzungen und deren Meldung;
 * die Durchführung von Datenschutz-Folgenabschätzungen unter bestimmten Umständen;
-* Umsetzung und Überwachung von Überprüfungsverfahren, die sicherstellen, dass alle Maßnahmen tatsächlich umgesetzt werden und in der Praxis funktionieren, statt nur auf dem Papier zu bestehen (interne oder externe Audits usw.).
+* Umsetzung und Überwachung von Überprüfungsverfahren, die sicherstellen, dass die Maßnahmen in der Praxis angewendet werden und wirksam sind, statt bloß schriftlich festgehalten zu sein (interne oder externe Audits usw.).
 
 In diesem Bereich können Sie außerdem alle Dokumente speichern, die für das Verständnis der Verarbeitungstätigkeit nützlich sind, die Schulungsunterlagen und gegebenenfalls die Verträge, die die Verarbeitungstätigkeit regeln.
 

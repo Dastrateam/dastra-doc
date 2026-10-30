@@ -50,7 +50,7 @@ Welche Verarbeitungen betroffen sind, richtet sich nach den Empfehlungen Ihrer n
 
 ## Die Bewertung mit dem KI-Assistenten erstellen
 
-Der KI-Assistent kann für jedes der 9 Kriterien eine Antwort vorschlagen, auf Grundlage der Informationen, die bereits im Eintrag der Verarbeitungstätigkeit erfasst sind: Name, Beschreibung, Zwecke, Kategorien betroffener Personen, Kategorien personenbezogener Daten, Assets und Empfänger.
+Der KI-Assistent kann für jedes der 9 Kriterien eine Antwort vorschlagen, auf Grundlage der Informationen, die bereits in der Verarbeitungstätigkeit erfasst sind: Name, Beschreibung, Zwecke, Kategorien betroffener Personen, Kategorien personenbezogener Daten, Assets und Empfänger.
 
 <figure><img src="../../../.gitbook/assets/ropa-impact-analysis-1.png" alt="Schaltfläche Bewertung erstellen neben dem Titel Bewertung der 9 Kriterien der AIPD (EDSB) im Abschnitt Folgenabschätzung"><figcaption><p>Die Schaltfläche Bewertung erstellen startet die Analyse der 9 Kriterien durch den KI-Assistenten</p></figcaption></figure>
 

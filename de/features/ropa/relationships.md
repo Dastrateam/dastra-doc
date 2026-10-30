@@ -4,7 +4,7 @@ In Dastra können Sie Beziehungen zwischen Ihren Verarbeitungstätigkeiten erste
 
 Diese Beziehungen sind zwischen Verarbeitungstätigkeiten möglich, die sich im selben Mandanten befinden.
 
-## Zweck von Beziehungen zwischen Verarbeitungstätigkeiten
+## Wann Sie Beziehungen verwenden
 
 Mit Beziehungen zwischen Verarbeitungstätigkeiten bilden Sie die Verantwortlichkeitsverhältnisse zwischen den verschiedenen für die Verarbeitung zuständigen Entitäten ab.
 
@@ -16,9 +16,9 @@ In einer Unternehmensgruppe können Sie zum Beispiel eine von der Muttergesellsc
 
 ## Eine Beziehung hinzufügen
 
-Klicken Sie im Eintrag einer Verarbeitungstätigkeit in der Symbolleiste oben auf die Schaltfläche **Beziehungen zwischen Verarbeitungen**. Die Schaltfläche zeigt die Anzahl der bestehenden Beziehungen an.
+Klicken Sie auf der Seite einer Verarbeitungstätigkeit in der Symbolleiste oben auf der Seite auf die Schaltfläche **Beziehungen zwischen Verarbeitungen**. Die Schaltfläche zeigt die Anzahl der bestehenden Beziehungen an.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103430.png" alt="Bereich Beziehungen einer Verarbeitungstätigkeit"><figcaption><p>Der Bereich Beziehungen einer Verarbeitungstätigkeit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-1.png" alt="Bereich Beziehungen einer Verarbeitungstätigkeit"><figcaption><p>Der Bereich Beziehungen einer Verarbeitungstätigkeit</p></figcaption></figure>
 
 Der Bereich listet die bestehenden Beziehungen nach Art gruppiert auf, mit der Organisationseinheit jeder verbundenen Verarbeitungstätigkeit und dem Datum, an dem die Beziehung erstellt wurde. Klicken Sie auf eine Verarbeitungstätigkeit, um sie in einem neuen Tab zu öffnen, oder auf das Papierkorb-Symbol, um die Beziehung zu entfernen.
 
@@ -30,7 +30,7 @@ Um eine Beziehung zu erstellen, klicken Sie auf **Eine Beziehung hinzufügen** u
 4. Geben Sie bei einer neuen Verarbeitungstätigkeit den **Name der neuen Verarbeitung** ein, aktivieren Sie bei Bedarf **Verarbeitungstätigkeit als Auftragsverarbeiter** und wählen Sie ihre Organisationseinheit.
 5. Klicken Sie auf **Hinzufügen**.
 
-<figure><img src="../../.gitbook/assets/screenshot-2023-02-06-103745.png" alt="Fenster zum Hinzufügen einer Beziehung"><figcaption><p>Das Fenster zum Hinzufügen einer Beziehung</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ropa-relationships-2.png" alt="Fenster zum Hinzufügen einer Beziehung"><figcaption><p>Das Fenster zum Hinzufügen einer Beziehung</p></figcaption></figure>
 
 Sie können Beziehungen zu mehreren Verarbeitungstätigkeiten gleichzeitig erstellen:
 
