@@ -186,6 +186,12 @@ L'action **Comparez les versions** présente deux versions côte à côte. Chaqu
 
 <figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Comparaison de deux versions d'un modèle de questionnaire"><figcaption><p>Comparer deux versions d'un modèle de questionnaire</p></figcaption></figure>
 
+Pour faire d'une autre version la version principale, cliquez sur **Définir en version principale** dans la liste des versions. La fenêtre **Faire de cette version la version principale ?** compare la nouvelle version principale à la version actuelle avant que vous confirmiez. Les réponses déjà collectées restent rattachées à la version sur laquelle elles ont été données.
+
+### Mettre à jour depuis le modèle de la bibliothèque
+
+Lorsque vous installez un modèle de la bibliothèque Dastra et que ce modèle est mis à jour ensuite, un message en haut de la page du modèle indique que le modèle dont il est issu a été mis à jour. Le message montre la version actuelle et la nouvelle version, avec le nombre d'éléments ajoutés, modifiés et supprimés. Cliquez sur **Comparez les versions** pour voir le détail. Depuis cette fenêtre, vous pouvez appliquer les modifications ou cliquer sur **Créer une version** pour conserver le modèle actuel et créer une branche. Cliquez sur **Dissocier de la librairie** pour ne plus suivre le modèle de la bibliothèque.
+
 {% hint style="info" %}
 Le nombre de modèles disponibles dépend de votre souscription. Ce quota est partagé entre tous les espaces de travail de votre organisation. La corbeille des modèles compte dans ce quota : pensez à vider régulièrement les modèles inutilisés pour libérer des emplacements.
 {% endhint %}

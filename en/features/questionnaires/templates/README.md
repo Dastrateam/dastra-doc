@@ -175,6 +175,12 @@ The **Compare versions** action shows two versions side by side. Each section an
 
 <figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Comparison of two versions of a questionnaire template"><figcaption><p>Comparing two versions of a questionnaire template</p></figcaption></figure>
 
+To make another version the main one, click **Set as main version** in the list of versions. The window **Make this version the main one?** compares the new main version with the current one before you confirm. Responses already collected stay attached to the version they were answered on.
+
+### Update from the library template
+
+When you install a template from the Dastra library and the library template is updated afterwards, a message at the top of the template's page says that the template it was created from has been updated. The message shows the current version and the new version, with the number of added, modified and removed items. Click **Compare versions** to see the details. From that window you can apply the changes or click **Create a version** to keep the current template and branch off. Click **Unlink template** to stop following the library template.
+
 {% hint style="info" %}
 The number of available templates depends on your subscription plan. This quota is shared across all workspaces in your organization. The template recycle bin counts towards the quota: remember to empty it regularly to free up slots.
 {% endhint %}

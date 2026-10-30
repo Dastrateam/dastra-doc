@@ -15,3 +15,5 @@ To activate the 'Record of processing activities' feature in your Trust Center, 
 Once the feature is activated, the processing activities with a **'published'** status and belonging to your Trust Center's organizational unit or to one of its child units will be publicly accessible for consultation by all visitors to your Trust Center.
 
 Outside of activation, the record of processing activities does not require additional configuration to be displayed in your Trust Center.
+
+On the public page, visitors also get an **Organizational unit** filter on the register when the Trust Center's unit has child units. It only offers the Trust Center's unit and its child units.

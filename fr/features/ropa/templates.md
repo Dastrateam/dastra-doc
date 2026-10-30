@@ -54,3 +54,14 @@ Dans le panneau qui s'ouvre, renseignez **Source de données de la bibliothèque
 Le bouton **Détails** vous permet de prévisualiser un modèle.&#x20;
 
 Vos traitements sont ensuite créés en arrière-plan.
+
+## Contribuer un modèle
+
+Vous pouvez soumettre l'un de vos traitements, de vos modèles de questionnaire ou de vos modèles d'actif aux bibliothèques de Dastra, pour que tous les utilisateurs de Dastra puissent l'utiliser une fois que notre équipe l'a approuvé.
+
+1. Ouvrez le traitement ou le modèle, puis cliquez sur **Contribuer**.
+2. Saisissez le **Nom de la contribution**. Ajoutez un commentaire pour notre équipe dans **Votre commentaire** si cela aide à l'étude.
+3. Choisissez si vous souhaitez être crédité : lorsque vous répondez oui à **Souhaitez-vous être crédité pour cette contribution ?** et que la contribution est approuvée, votre avatar et votre nom d'utilisateur sont affichés avec le modèle.
+4. Acceptez le partage de l'intégralité du modèle en vue de sa publication dans la bibliothèque de Dastra, puis soumettez.
+
+Pour suivre vos contributions, ouvrez **Réglages espace de travail** > **Contributions**. Cette page nécessite la permission d'écrire des contributions. Elle liste, pour chaque contribution, son nom, l'utilisateur, son **Statut**, si elle est publiée (colonne **Publié**) et son type. Filtrez la liste par statut et par type, ouvrez une contribution pour lire **Résultat de votre contribution**, le commentaire laissé par notre équipe, ou cliquez sur **Retirer cette contribution** pour demander son retrait de la bibliothèque.

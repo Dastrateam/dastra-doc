@@ -138,6 +138,8 @@ The **Add a task** action includes the **Assigned to** and **Task owner** fields
 
 The **OU Owner** variable gives the task to the owner of the trigger object's organizational unit. If that unit has no owner, the owner of the closest parent unit is used. If the object has no organizational unit, the action uses the **Default organizational unit** selected in the action, with the same rule. If no owner is found, the task is created without an assignee, without blocking the rule.
 
+To spread the work over a team, choose **Select a user from team** in the **Define owner** action, then select the team in **Select a team**. Dastra picks a user from the team following the round-robin model: each time the rule fires, the next member of the team is chosen.
+
 ### Linking a message template to an action
 
 For rules linked to **data subject requests**, the **Send a message to the requester** action can rely on an existing **message template** rather than manually entered content.

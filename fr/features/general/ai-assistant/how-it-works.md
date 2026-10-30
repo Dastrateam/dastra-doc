@@ -59,6 +59,10 @@ Dastra transmet uniquement les informations nécessaires à la génération dema
 
 Le détail exact des données transmises par fonctionnalité figure dans la section [Quelles données sont transmises au modèle](how-it-works.md#quelles-donnees-sont-transmises-au-modele).
 
+Avant l'envoi d'une demande de génération, Dastra applique un filtre qui masque les adresses e-mail, les numéros de téléphone, les adresses postales, les codes postaux et les noms complets qu'il reconnaît dans le texte. Le filtre suit les formats européens. Il laisse intacts les dates, les identifiants et les numéros de norme comme ISO 27001, afin que le modèle conserve les données métier dont il a besoin.
+
+La **dictée vocale** de la zone de message de Dastra AI envoie votre enregistrement à un service de transcription, qui renvoie le texte. Dastra utilise Azure Speech sur la plateforme standard et Mistral Voxtral sur [Bleu](../../../security/bleu.md).
+
 ***
 
 ## Ce que Dastra ne fait pas

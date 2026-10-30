@@ -50,6 +50,12 @@ Vous enregistrez vos passkeys dans **Sécurité du compte** > **Gérer mes passk
 
 Sur la deuxième étape, cliquez sur **Envoyer par mail le lien d'accès**. Dastra envoie à votre adresse e-mail un lien qui vous connecte sans mot de passe.
 
+### Choisir la région d'hébergement
+
+Lorsque votre environnement Dastra propose plusieurs régions d'hébergement, la page de connexion affiche un champ **Région d'hébergement** avec la région actuelle : **Région Europe (défaut)** ou **Bleu cloud France**. Cliquez sur le champ pour ouvrir l'autre région, puis connectez-vous à cet endroit.
+
+Cliquez sur le bouton **?** à côté du champ (**En savoir plus sur les régions d'hébergement**) pour comparer les régions. Un tenant est hébergé dans une seule région, et les deux régions ne sont ni dupliquées ni synchronisées : un compte d'une région ne peut pas se connecter sur l'autre. Pour migrer un tenant existant vers l'autre région, utilisez **Contactez notre équipe commerciale** dans la même fenêtre. Consultez [Dastra sur Bleu](../../security/bleu.md) pour les adresses et les détails d'hébergement de chaque région.
+
 ## Réinitialiser votre mot de passe
 
 1. Sur la deuxième étape de la connexion, cliquez sur **Vous avez oublié votre mot de passe ?**.

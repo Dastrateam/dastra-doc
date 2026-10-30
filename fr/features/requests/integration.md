@@ -22,6 +22,8 @@ Pour commencer, vous devez mettre en place le widget dans la liste des formulair
 
 <figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Liste des formulaires de collecte avec le bouton Créer un formulaire"><figcaption><p>La liste des formulaires de collecte</p></figcaption></figure>
 
+Copiez toujours le code depuis l'application : l'adresse du script dépend de la région d'hébergement de votre organisation (`cdn-bleu.dastra.eu` au lieu de `cdn.dastra.eu` sur [Bleu](../../security/bleu.md)).
+
 Voici un exemple simple d'intégration du widget (en mode popup avec un bouton d'ouverture) :
 
 ```html

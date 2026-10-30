@@ -52,6 +52,8 @@ The form also shows the values to declare in your authentication provider:
 * **Back-channel logout url**, optional;
 * **Public JSON key URI**, with the JWT private key only. Save the form once to make this endpoint work.
 
+Declare the **Back-channel logout url** in your provider if you want a sign-out at the provider to end the Dastra session too. Dastra supports OpenID Connect Back-Channel Logout: when your provider sends a logout token for a user or a session, Dastra revokes the matching sessions, so the user must sign in again.
+
 ### Client authentication method: secret key or JWT private key
 
 Choose how Dastra authenticates with your identity provider:

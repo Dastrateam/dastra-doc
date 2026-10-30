@@ -19,6 +19,12 @@ Provisionnez les utilisateurs depuis votre annuaire avec SCIM :
 [SCIM](scim.md)
 {% endcontent-ref %}
 
+Définissez les règles de sécurité de votre organisation et consultez les journaux de sécurité :
+
+{% content-ref url="security-center.md" %}
+[Sécurité de l'organisation et journaux de sécurité](security-center.md)
+{% endcontent-ref %}
+
 Envoyez les journaux d'audit vers votre SIEM :
 
 {% content-ref url="siem.md" %}

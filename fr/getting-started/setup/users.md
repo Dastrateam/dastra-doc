@@ -39,6 +39,10 @@ Les invitations en cours se pilotent dans l'onglet **Invitations** de la page **
 
 <figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Onglet Invitations avec une invitation en attente"><figcaption><p>L'onglet Invitations</p></figcaption></figure>
 
+{% hint style="info" %}
+Votre abonnement limite le nombre d'utilisateurs. Le quota compte les utilisateurs actifs et ceux liés à une invitation en attente ou expirée : supprimez l'utilisateur d'une invitation dont vous n'avez plus besoin pour libérer un emplacement. Lorsque la limite est atteinte, Dastra affiche **Vous avez atteint la limite de vos utilisateurs** et vous pouvez contacter l'équipe Dastra pour l'augmenter.
+{% endhint %}
+
 ### Renvoyer un lien d'invitation
 
 Si la personne invitée n'a pas cliqué sur le lien et que celui-ci a expiré, cliquez sur **Renvoyer** en face de l'invitation, puis confirmez.

@@ -17,6 +17,7 @@ Avant de commencer à utiliser Dastra, prenez le temps de comprendre les notions
 * [Entité](key-concepts.md#entite)
 * [Département](key-concepts.md#departement)
 * [Propriétaire de l'organisation](key-concepts.md#proprietaire-de-lorganisation)
+* [Crédits et quotas](key-concepts.md#credits-et-quotas)
 
 ***
 
@@ -96,3 +97,17 @@ Les départements sont optionnels. Ils sont utiles dès que l'organisation compt
 Le **propriétaire** (owner) est l'administrateur principal de l'organisation. Seuls les propriétaires peuvent créer des espaces de travail, modifier les paramètres de l'organisation, créer des rôles personnalisés et ajouter ou retirer d'autres propriétaires.
 
 Limitez le nombre de propriétaires pour garder une gouvernance claire. Les autres utilisateurs reçoivent des rôles adaptés à leurs besoins : voir [Gérer les rôles et permissions](roles.md).
+
+***
+
+## Crédits et quotas
+
+Votre abonnement définit des crédits, c'est-à-dire des limites sur ce que votre organisation peut créer ou consommer. Ils sont partagés par tous les espaces de travail de l'organisation.
+
+* **Utilisateurs** : les utilisateurs actifs, plus ceux liés à une invitation en attente ou expirée. Supprimer l'utilisateur d'une invitation libère un emplacement. Consultez [Inviter des utilisateurs](users.md).
+* **Entités** : la création d'une entité consomme un crédit d'entité. Consultez [Créer et paramétrer les unités organisationnelles](organizational-units.md).
+* **Modèles de questionnaires** : les modèles de tous vos espaces de travail comptent, y compris ceux de la corbeille. Consultez [Créer un modèle de questionnaire](../../features/questionnaires/templates/README.md).
+* **Traitements, stockage des documents, consentements cookies, historique d'activité** : la page **Abonnement** des paramètres de l'organisation indique le crédit de votre offre pour chacun d'eux.
+* **IA** : un quota mensuel de crédits IA, décrit dans [Comment ça marche ?](../../features/general/ai-assistant/how-it-works.md#credits-et-quotas-ia).
+
+Lorsqu'une limite est atteinte, l'écran concerné l'indique et propose un lien pour contacter l'équipe Dastra et augmenter votre crédit.

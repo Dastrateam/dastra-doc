@@ -9,7 +9,7 @@ description: >-
 Cette page décrit les mesures de sécurité mises en oeuvre par Dastra pour protéger vos données : hébergement, chiffrement, authentification, contrôle des accès et sauvegardes.
 
 {% hint style="info" %}
-Les réglages de sécurité de l'organisation (authentification forte obligatoire, filtrage des adresses IP, filtrage des domaines d'e-mails, politique de renouvellement des mots de passe, déconnexion automatique, conservation des journaux de sécurité, streaming SIEM) sont réservés aux propriétaires de l'organisation et au plan Enterprise. Ils se trouvent dans **Configuration de l'organisation** > **Sécurité**.
+Les réglages de sécurité de l'organisation (authentification forte obligatoire, filtrage des adresses IP, filtrage des domaines d'e-mails, politique de renouvellement des mots de passe, déconnexion automatique, conservation des journaux de sécurité, streaming SIEM) sont réservés aux propriétaires de l'organisation et au plan Enterprise. Ils se trouvent dans **Configuration de l'organisation** > **Sécurité**. Pour le détail de chaque réglage, consultez [Sécurité de l'organisation et journaux de sécurité](../features/settings/security-center.md).
 {% endhint %}
 
 ## Hébergement sécurisé sur le Cloud

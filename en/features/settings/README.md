@@ -19,6 +19,12 @@ Provision users from your directory with SCIM:
 [SCIM](scim.md)
 {% endcontent-ref %}
 
+Set the security rules of your organization and review the security logs:
+
+{% content-ref url="security-center.md" %}
+[Organization security and security logs](security-center.md)
+{% endcontent-ref %}
+
 Stream audit logs to your SIEM:
 
 {% content-ref url="siem.md" %}

@@ -41,6 +41,8 @@ Tant que le projet n’est pas en phase **Surveillance**, la modification ou la 
 
 <figure><img src="../../../.gitbook/assets/compliance-project-test-detail.png" alt="Détail d'un test du projet avec son statut Preuve manquante"><figcaption></figcaption></figure>
 
+L'onglet **Contexte** du détail d'un test indique d'où vient le test : le **Projet** (nom, statut, description et **Frameworks**) et son **Périmètre**.
+
 ***
 
 ## 2. Configurer les tests de conformité
@@ -181,3 +183,9 @@ Le projet est alors prêt à entrer dans la phase suivante : **Surveillance**, d
 * les tests sont exécutés périodiquement,
 * les preuves sont collectées,
 * et la conformité est mesurée dans le temps.
+
+## Exporter les listes du projet
+
+Les onglets **Contrôles**, **Tests** et **Risques** d'un projet ont chacun un bouton **Exporter**. Il exporte la liste telle qu'elle est affichée : les filtres actifs s'appliquent. Dans la fenêtre d'export, choisissez le format (CSV, Excel ou JSON) et les colonnes à inclure, puis cliquez sur **Télécharger le fichier**.
+
+Le bouton nécessite la permission d'exporter les données opérationnelles du module de conformité. Sans elle, il est désactivé.

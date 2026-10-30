@@ -138,6 +138,8 @@ Vous configurez le type de login de chaque utilisateur depuis [la gestion des ut
 
 Lorsque le SSO est forcé pour tous les utilisateurs, le profil affiche à la place un message qui l'indique.
 
+Pour modifier le mode de connexion de plusieurs utilisateurs à la fois, cochez-les dans la liste **Utilisateurs**, puis ouvrez **Choisir une action groupée** au-dessus de la liste et choisissez **Modifier le mode de connexion**. Sélectionnez le mode dans **Mode de connexion par défaut**, puis enregistrez. Les utilisateurs externes et ceux soumis à un SSO appliqué à tous ne sont pas modifiés. L'action apparaît lorsque le SSO fait partie de votre offre.
+
 <figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="Le profil d'un utilisateur avec la liste Mode de connexion par défaut"><figcaption><p>Le champ <strong>Mode de connexion par défaut</strong></p></figcaption></figure>
 
 Vous pouvez également définir le type de login lors de l'invitation de nouveaux utilisateurs.

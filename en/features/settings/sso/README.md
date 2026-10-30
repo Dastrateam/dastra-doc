@@ -137,6 +137,8 @@ You set the login type of each user from the [user management of the subscriptio
 
 When SSO is enforced for all users, the profile shows a message to that effect instead.
 
+To change the login method of several users at once, tick them in the **Users** list, then open **Select a batch action** above the list and choose **Change login method**. Select the method in **Default login method**, then save. External users and users forced into a globally assigned SSO are left untouched. The action appears when SSO is part of your plan.
+
 <figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="A user profile with the Default login method list"><figcaption><p>The <strong>Default login method</strong> field</p></figcaption></figure>
 
 You can also set the login type when you invite new users.

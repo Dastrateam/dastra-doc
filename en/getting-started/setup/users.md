@@ -39,6 +39,10 @@ You manage pending invitations in the **Invitations** tab of the **Users** page.
 
 <figure><img src="../../.gitbook/assets/getting-started-users-3.png" alt="Invitations tab with a pending invitation"><figcaption><p>The Invitations tab</p></figcaption></figure>
 
+{% hint style="info" %}
+Your subscription limits the number of users. The quota counts the active users and the users linked to a pending or expired invitation: remove the user of an invitation you no longer need to free a seat. When the limit is reached, Dastra shows **You have reached the users limit** and you can contact the Dastra team to increase it.
+{% endhint %}
+
 ### Resend an invitation link
 
 If the invited person has not clicked the link and it has expired, click **Resend** next to the invitation, then confirm.
