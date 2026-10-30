@@ -1,33 +1,37 @@
 ---
-description: Learn how to manage the risks of subcontracting with the GDPR.
+description: Learn how to manage the risks of working with processors under the GDPR.
 ---
 
 # Vendor risk management
 
-The requirements of the GDPR are extended to vendors (subcontractors or processors).
+The requirements of the GDPR extend to processors, the vendors that process personal data on your behalf.
 
 ## Contract
 
-The subcontracting contract must specify the object, the duration, the nature and the purpose of the processing, the type of personal data, the categories of data subjects, the rights and obligations of the controller and the obligations of subcontracting in terms of personal data protection.
+The contract with a processor must specify the subject matter, the duration, the nature and the purpose of the processing, the type of personal data, the categories of data subjects, and the obligations and rights of the controller. It must also set out the processor's data protection obligations (Article 28).
 
 ## Audit
 
-The processor must allow audits to be carried out by the controller so that the latter ensures that he respects the contractual clauses relating to the protection of personal data and that he does not process the personal data transferred only to purposes provided for in the subcontract and on a documented instruction from the controller.
+The processor must allow audits by the controller, so that the controller can check that the processor complies with the contractual data protection clauses. The processor must also process the personal data only for the purposes set out in the processing contract and on documented instructions from the controller.
 
-## Supervision of the subcontracting chain
+## Supervision of the processing chain
 
-The processor does not recruit any other processor (level 2 processor) without the prior, specific or general written authorization of the person in charge of the processing. Any contract with a level 2 processor must provide the same data protection obligations provided for in the contract concluded with the controller.
+The processor does not engage another processor (a sub-processor) without the prior written authorization of the controller, which may be specific or general. With a general authorization, the processor informs the controller of any intended change so that the controller can object. Any contract with a sub-processor must impose the same data protection obligations as the contract with the controller.
 
-## Register of subcontractors
+## Processor record
 
-Each processor must keep a record of all the processing carried out on behalf of each controller. This register must be linked to the data controller register and must also be made available to the supervisory authority on request.
+Each processor must keep a record of the categories of processing carried out on behalf of each controller. The processor makes this record available to the supervisory authority on request (Article 30).
 
-## Liability of the subcontractor
+## Liability of the processor
 
-The subcontractor is not liable for material or moral damage caused by the processing of personal data only if he has not complied with the obligations laid down by the GDPR which fall specifically upon him or if he has acted outside the instructions of the controller. The processor is subject to the same administrative fines and penalties as the controller.
+The processor is liable for damage caused by processing only where it has not complied with GDPR obligations specifically directed to processors, or where it has acted outside or contrary to the controller's lawful instructions (Article 82). A processor can also be fined for breaching its own obligations (Article 83).
 
-## For more information
+## Go further
 
 {% content-ref url="../../features/risks/attach-to-processing.md" %}
-[attach-a-risk-to-a-processing-activity.md](../../features/risks/attach-to-processing.md)
+[Attach a risk to a processing activity](../../features/risks/attach-to-processing.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../getting-started/tutorial/step-3.md" %}
+[Step 3: Managing risks](../../getting-started/tutorial/step-3.md)
 {% endcontent-ref %}

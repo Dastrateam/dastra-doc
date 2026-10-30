@@ -1,38 +1,38 @@
 ---
-description: Learn what a privacy impact assessment is.
+description: Learn what a data protection impact assessment (DPIA) is.
 ---
 
-# Privacy impact assessment
+# Data protection impact assessment (DPIA)
 
-### 📖 What is a PIA?
+## Definition
 
-The **Data Protection Impact Assessment (DPIA)**, provided for by [Article 35 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1), is a **compliance mechanism** that aims to:
+The **data protection impact assessment (DPIA)**, provided for by [Article 35 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3546-1-1), is a **compliance mechanism** that aims to:
 
-* **Identify and minimise the risks** of infringement on the rights and freedoms of individuals,
+* **Identify and minimize the risks** of infringement on the rights and freedoms of individuals,
 * **Prove compliance** with the GDPR,
 * And **integrate privacy from the design phase** (_Privacy by design_).
 
-> ⚖️ The PIA focuses on **risks to individuals**, not risks to the organisation.
+> The DPIA focuses on **risks to individuals**, not risks to the organization.
 
-**PIA = Privacy Impact Assessment = DPIA = Data Protection Impact Assessment**
-
-***
-
-### 🧩 The three components of a PIA
-
-A PIA is structured around three major steps:
-
-1. 📝 **Description of the processing** → Objectives, context, stakeholders, technologies, data involved.
-2. ⚖️ **Assessment of necessity and proportionality** → Legal compliance analysis: purposes, legal bases, individual rights, retention periods, etc.
-3. 🔐 **Risk study and security measures** → Identification of privacy risks and determination of control measures (technical and organisational).
-
-> 📘 The PIA is simultaneously **legal**, **technical** and **organisational**: it engages the whole project team.
+You may also meet the term privacy impact assessment (PIA) for the same approach.
 
 ***
 
-### 🎯 Objective of the PIA
+## The three components of a DPIA
 
-The PIA enables an organisation to:
+A DPIA is structured around three major steps:
+
+1. **Description of the processing** → Objectives, context, stakeholders, technologies, data involved.
+2. **Assessment of necessity and proportionality** → Legal compliance analysis: purposes, legal bases, individual rights, retention periods, etc.
+3. **Risk study and security measures** → Identification of privacy risks and determination of control measures (technical and organizational).
+
+> The DPIA is simultaneously **legal**, **technical** and **organizational**: it engages the whole project team.
+
+***
+
+## Objective of the DPIA
+
+The DPIA enables an organization to:
 
 * **Demonstrate compliance** (accountability principle),
 * **Anticipate risks** and compliance costs,
@@ -41,11 +41,11 @@ The PIA enables an organisation to:
 
 ***
 
-### 🔍 When is a PIA required?
+## When a DPIA is mandatory
 
-A PIA is **mandatory** when processing is **likely to result in a high risk** to the rights and freedoms of individuals.
+A DPIA is **mandatory** when processing is **likely to result in a high risk** to the rights and freedoms of individuals.
 
-#### Examples of processing activities concerned:
+### Examples of processing activities concerned
 
 * Intelligent video surveillance,
 * Automated profile scoring,
@@ -53,7 +53,7 @@ A PIA is **mandatory** when processing is **likely to result in a high risk** to
 * Use of biometrics or AI on personal data.
 
 {% hint style="info" %}
-Processing activities presenting at least **2 of the following criteria** (EDPB) are considered high risk:
+As a general rule, processing that meets at least **2 of the following criteria** (European Data Protection Board, EDPB) calls for a DPIA:
 
 * Evaluation or scoring,
 * Automated decision-making with legal or similar effects,
@@ -63,46 +63,49 @@ Processing activities presenting at least **2 of the following criteria** (EDPB)
 * Cross-referencing of data,
 * Vulnerable individuals,
 * Innovative use (AI, IoT, big data),
-* Blocking of a right or service,
-* Transfers outside the EU.
+* Blocking of a right or service.
+
+A single criterion can be enough for particularly sensitive processing. Supervisory authorities also publish lists of processing operations that require a DPIA: see the [DPIA guidance, country by country](../../other/dpia-by-country.md).
 {% endhint %}
 
 ***
 
-### 🕐 When should it be conducted?
+## Timing and updates
 
-The PIA must be carried out **before the implementation of the processing**, ideally from the design phase. It is a concrete application of the **Privacy by Design** principle.
+The DPIA must be carried out **before the implementation of the processing**, ideally from the design phase. It is a concrete application of the **Privacy by Design** principle.
 
 It must also be:
 
-* **Updated regularly** (every 3 to 5 years),
-* **Revised upon any significant change** to the processing,
+* **Reviewed regularly**,
+* **Revised upon any significant change** to the processing or to its level of risk (Article 35, paragraph 11),
 * **Linked to your record** in Dastra for continuous monitoring.
 
-> 🔁 The PIA is an **iterative process**: it accompanies the entire lifecycle of the processing activity.
+<figure><img src="../../.gitbook/assets/dpia-iterative-process.svg" alt="Iterative DPIA cycle in seven steps: description of the processing, assessment of necessity and proportionality, measures to demonstrate compliance, assessment of risks to rights and freedoms, measures to address the risks, documentation, monitoring and review"><figcaption><p>An iterative process</p></figcaption></figure>
+
+> The DPIA is an **iterative process**: it accompanies the entire lifecycle of the processing activity.
 
 ***
 
-### ⚙️ How to conduct a PIA?
+## Carrying out a DPIA
 
-#### 1. Assess the necessity and proportionality of the processing
+### 1. Assess the necessity and proportionality of the processing
 
 Ask yourself the right questions:
 
 * Are the **purposes** determined, explicit and legitimate?
 * Is the **legal basis** clear?
-* Is data **minimised**, accurate and up to date?
+* Is data **minimized**, accurate and up to date?
 * Are **retention periods** limited?
 * Are **data subjects** properly informed?
 
-#### 2. Review the protection of individuals' rights
+### 2. Review the protection of individuals' rights
 
 * Transparent information, clear consent, right of access, erasure and objection.
 * Contracts with processors.
 * Safeguards for international transfers.
 * Corrective measures planned in case of a breach.
 
-#### 3. Analyse privacy risks
+### 3. Analyze privacy risks
 
 For each **feared event**:
 
@@ -112,57 +115,58 @@ For each **feared event**:
 * Assess the **residual risk** and, if necessary, propose **additional measures**.
 
 {% hint style="success" %}
-💡 Final objective: reach an **acceptable level of residual risk**, documented and justified.
+Final objective: reach an **acceptable level of residual risk**, documented and justified.
 {% endhint %}
 
 ***
 
-### 🧠 Who should be involved?
+## Stakeholders to involve
 
-| Stakeholder              | Role in the PIA                                                |
+| Stakeholder              | Role in the DPIA                                                |
 | ------------------------ | -------------------------------------------------------------- |
-| **Data controller**      | Bears responsibility for the PIA and leads its implementation  |
-| **DPO**                  | Advises, validates the methodology and assesses residual risks |
+| **Data controller**      | Bears responsibility for the DPIA and leads its implementation  |
+| **DPO**                  | Advises on the DPIA and monitors its performance               |
 | **CISO / IT department** | Provides technical expertise and security measures             |
 | **Business teams**       | Provide operational details of the processing                  |
 | **Processors**           | Communicate necessary information for the assessment           |
 | **Data subjects**        | May be consulted or represented in certain cases               |
 
-> 👥 The PIA is a collaborative process — it involves legal, technical and operational teams alike.
+> The DPIA is a collaborative process: it involves legal, technical and operational teams alike.
 
 ***
 
-### 🤖 PIA and artificial intelligence
+## DPIA and artificial intelligence
 
-The **AI Act** introduces a specific obligation to **document and assess high-risk AI systems**. Organisations must include:
+The **AI Act** introduces a specific obligation to **document and assess high-risk AI systems**. Organizations must include:
 
 * The origin of training data,
 * Robustness tests and bias assessments,
 * Planned human oversight controls,
 * Transparency measures.
 
-Dastra allows you to link each **PIA** to an **AI system** to ensure **cross-compliance between GDPR and the AI Act**.
+For AI systems, Dastra offers a dedicated impact assessment in the **AI governance** module, under **Impact analysis**, to cover both the GDPR and the AI Act.
 
 ***
 
-### 🧰 Dastra best practices
+## Dastra best practices
 
-* Centralise all your PIAs in the **"Record of processing activities" module**,
-* Use **predefined risk models** (EDPB, CNIL, ISO 29134),
-* Collaborate with teams via **comments and workflows**,
-* Export your PIAs as **PDF** for audits,
-* Schedule **automatic revision reminders**.
+* Determine whether a DPIA is needed in the **Impact assessment** section of the processing activity, which evaluates the 9 EDPB criteria,
+* Start the DPIA from a **questionnaire template** of the library,
+* Export the DPIA report as a **PDF** for audits,
+* Plan the next review with the **regular reviews** of the processing activity.
+
+{% hint style="success" %}
+Dastra guides you step by step through the DPIA with an interactive questionnaire template.
+{% endhint %}
 
 ***
 
-### 📘 For more information
+## For more information
 
 {% content-ref url="../../features/ropa/activity/impact-analysis.md" %}
-[analyse-dimpact.md](../../features/ropa/activity/impact-analysis.md)
+[Impact assessment](../../features/ropa/activity/impact-analysis.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../features/questionnaires/README.md" %}
-[audit](../../features/questionnaires/README.md)
+{% content-ref url="../../features/questionnaires/types/dpia.md" %}
+[PIA / DPIA](../../features/questionnaires/types/dpia.md)
 {% endcontent-ref %}
-
-������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

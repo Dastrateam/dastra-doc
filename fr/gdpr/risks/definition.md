@@ -4,13 +4,13 @@ description: Quelques rappels utiles sur la définition des risques.
 
 # Définition des risques
 
-## Qu'est-ce qu'un risque ?
+## La notion de risque
 
 Un risque de sécurité est défini par l’Agence nationale de la sécurité des systèmes d’information (ANSSI) comme étant un scénario qui combine un **événement redouté** (sources de menaces, bien essentiel, critère de sécurité, besoin de sécurité, impacts) et **un ou plusieurs scénarios de menaces** (sources de menaces, bien support, critère de sécurité, menaces, vulnérabilités).
 
 ## Typologies de risques
 
-On peut distinguer plusieurs typologies de risques (liste non exhaustive):
+On peut distinguer plusieurs typologies de risques (liste non exhaustive) :
 
 | Typologies de risques                                       | Exemple de risques                                                                                                                                                                                                                                                                                                     |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ On peut distinguer plusieurs typologies de risques (liste non exhaustive):
 | Les risques financiers                                      | <ul><li>Risque de marché</li><li>Risque de crédit / contrepartie</li><li>Risque de liquidité</li><li>Risque politique</li></ul>                                                                                                                                                                                        |
 | Risques stratégiques                                        | <ul><li>non-conformité</li><li>sous-traitant</li><li>transformation</li><li>projet</li></ul>                                                                                                                                                                                                                           |
 
-## Allez plus loin
+## Pour aller plus loin
 
 {% content-ref url="assessment.md" %}
 [evaluation-dun-risque.md](assessment.md)

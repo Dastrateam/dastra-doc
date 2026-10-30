@@ -14,25 +14,29 @@ $$
 
 Where the **probability** is the frequency of occurrence of a hazardous event and/or a hazardous element, and the **impact** is the severity of the effects and/or the severity of the consequences of this hazardous event.
 
-The impact of a risk is classified by default in 4 categories:
+The impact of a risk is classified by default in 5 levels:
 
-* Catastrophic,
-* Significant,
+* Negligible,
+* Low,
 * Medium,
-* Low.
+* High,
+* Extreme.
 
-The probability of a risk is classified by default in 4 categories:
+The probability of a risk is classified by default in 5 levels:
 
-* Very likely,
-* Likely,
+* Remote,
+* Unlikely,
 * Possible,
-* Unlikely.
+* Likely,
+* Extreme.
+
+In the matrix, the impact is called **severity** and the probability **likelihood**.
 
 {% hint style="info" %}
 It's possible to customize the risk levels in Dastra.
 {% endhint %}
 
-## Risks classification
+## Risk classification
 
 Depending on their level of probability and impact, risks can be classified into several categories:
 
@@ -40,21 +44,21 @@ Depending on their level of probability and impact, risks can be classified into
 * Risks that must be limited as much as possible;
 * Acceptable risks either because the probability and/or the severity of the risk is/are negligible compared to other risks.
 
-Unacceptable risks are shown in **red** in Dastra.
+Intolerable risks are shown in **red** in Dastra.
 
-Risks that should be limited as much as possible are represented in **orange** or **yellow** in Dastra.
+Risks that should be limited as much as possible are represented in **yellow** in Dastra.
 
 Acceptable risks are shown in **green** in Dastra.
 
-## Gross risk vs. net (or residual) risk
+## Gross risk and net (or residual) risk
 
-A "**gross**" risk is considered without all of the surrounding control systems - organization, various controls, documentation, etc.
+A "**gross**" risk is considered without all of the surrounding control systems (organization, various controls, documentation, etc.)
 
 A "**net**" (or residual) risk, on the other hand, is evaluated by taking into account all the systems already in place and effective.
 
 ## Visualization of a risk
 
-<figure><img src="../../.gitbook/assets/example-of-risk-visualization-in-dastra.jpg" alt=""><figcaption><p>Example of risk visualization in Dastra</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risks-assess-1.png" alt="Risk assessment section: initial and residual levels, justification and risk matrix"><figcaption><p>A risk and its residual level in the risk matrix</p></figcaption></figure>
 
 ## For more information
 
