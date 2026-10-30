@@ -28,12 +28,25 @@ Wilt u deze inventaris niet opbouwen, of is de software die u gebruikt standaard
 2. Klik in het zijmenu onder **Data inventory** op **Referenties**.
 3. De pagina **Rapportage** opent: één kaart per repository, met het aantal elementen dat ze bevat.
 
-Klik daarna op de repository die u wilt openen. Voor details over elke repository, zie [Referenties](repositories/README.md).
+Klik daarna op de repository die u wilt openen. Voor het pad om ze te openen, de lijstfuncties die alle repositories delen en de grafieken, zie [Referenties](repositories/README.md).
+
+## De repositories van de mapping
+
+Elke repository heeft een eigen pagina:
+
+* [Activa](repositories/assets.md): de software, servers en andere dragers die uw gegevens bevatten.
+* [Actoren](repositories/stakeholders.md): de verwerkers, uitgevers en andere bedrijven en personen met wie u werkt, en hun sub-verwerkers.
+* [Datasets](repositories/datasets.md): de groepen gegevensvelden, met hun bewaarregels.
+* [Verklarende woordenlijst voor gegevens](repositories/data-glossary.md): de gegevensvelden, met hun categorie en gevoeligheidsniveau.
+* [Beveiligingsmaatregelen](repositories/security-measures.md): de technische en organisatorische maatregelen die de gegevens beschermen.
+* [Categorieën van betrokkenen](repositories/subject-categories.md): de groepen personen van wie u gegevens verwerkt.
+
+Om een verband te documenteren dat het platform niet afleidt, bijvoorbeeld een actief dat aan een stakeholder is gekoppeld, zie [Generieke relaties](relationships.md). Om deze repositories in uw register te hergebruiken, zie [Verwerkingsregister](../ropa/README.md).
 
 ## Uw lijst met beveiligingsmaatregelen opbouwen
 
-Beveiligingsmaatregelen hebben hun eigen repository: voer ze één keer in en koppel ze daarna aan activa in de sectie **Bijbehorende beveiligingsmaatregelen** van het formulier van een actief. Die informatie staat vaak in de verwerkersovereenkomst die met de uitgever is ondertekend. Kies korte namen (Antivirus, Applicatiefirewall, Toegangscontroles) zodat een maatregel van het ene actief naar het andere kan worden hergebruikt.
+Beveiligingsmaatregelen hebben hun eigen repository (zie [Beveiligingsmaatregelen](repositories/security-measures.md)): voer ze één keer in en koppel ze daarna aan activa in de sectie **Bijbehorende beveiligingsmaatregelen** van het formulier van een actief. Die informatie staat vaak in de verwerkersovereenkomst die met de uitgever is ondertekend. Kies korte namen (Antivirus, Applicatiefirewall, Toegangscontroles) zodat een maatregel van het ene actief naar het andere kan worden hergebruikt.
 
 ## Uw verwerkers beheren
 
-Een verwerker is een stakeholder in uw mapping. Voer die in als **Uitgever** van het actief: de verwerker kan dan als verwerker worden aangeduid wanneer het actief in een verwerkingsactiviteit wordt vermeld. In het formulier van de stakeholder kunt u ook de sub-verwerkers van de verwerker opslaan, om de hele keten van onderaanneming in kaart te brengen.
+Een verwerker is een [stakeholder](repositories/stakeholders.md) in uw mapping. Voer die in als **Uitgever** van het actief: de verwerker kan dan als verwerker worden aangeduid wanneer het actief in een verwerkingsactiviteit wordt vermeld. In het formulier van de stakeholder kunt u ook de sub-verwerkers van de verwerker opslaan, om de hele keten van onderaanneming in kaart te brengen.
