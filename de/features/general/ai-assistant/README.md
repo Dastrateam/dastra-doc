@@ -8,6 +8,13 @@ description: >-
 
 Mit dem KI-Assistenten von Dastra erstellen und ergänzen Sie Elemente Ihres Mandanten aus einfachen Textbeschreibungen. Er basiert auf generativen KI-Modellen, die auf Azure in Frankreich und im Europäischen Wirtschaftsraum gehostet werden, ohne dass Daten Ihrer Organisation zum Training dieser Modelle verwendet werden.
 
+Dastra AI fasst alle KI-Funktionen von Dastra in zwei Gruppen zusammen:
+
+* Die **KI-Assistenten** sind eng begrenzte Erstellungsfunktionen. Eine Schaltfläche in einem Modul deckt einen genau definierten Anwendungsfall ab: eine Verarbeitungstätigkeit, einen Datenschutzhinweis oder eine Risikoanalyse erstellen.
+* Der **Gesprächsmodus** umfasst den Dastra-AI-Chat, die [Agenten](agents/README.md) und den [MCP-Server](mcp.md). Er ist offener: Sie stellen Fragen und übertragen Aufgaben in natürlicher Sprache.
+
+Diese Seite behandelt beide.
+
 Die Verfügbarkeit des KI-Assistenten hängt vom Tarif Ihrer Organisation ab, Modul für Modul. In einem Modul, das Ihr Tarif nicht enthält, sind die KI-Schaltflächen ausgegraut, bei einigen Funktionen erscheinen sie gar nicht. Um den Umfang Ihres Tarifs zu ändern, wenden Sie sich an unser Team.
 
 ## KI als Ausgangspunkt, nicht als endgültige Antwort
@@ -47,7 +54,7 @@ Eine Schritt-für-Schritt-Anleitung zu jeder Funktion finden Sie unter [Anwendun
 
 ## Dastra AI, Agenten und der MCP-Server
 
-Über die Erstellung von Inhalten hinaus bietet Dastra einen Gesprächsassistenten, **Dastra AI**, den Sie über das Dashboard oder über die Schaltfläche **Dastra AI öffnen** unten rechts auf dem Bildschirm befragen. Sie können außerdem eigene [Agenten](agents/README.md) erstellen, im Chat oder autonom, und Ihre KI-Werkzeuge über den [MCP-Server](mcp.md) mit Dastra verbinden. Diese Funktionen hängen vom Tarif Ihrer Organisation und von den Berechtigungen der einzelnen Nutzer ab.
+Über die Erstellung von Inhalten hinaus bietet Dastra AI einen Gesprächsmodus, den Sie über das Dashboard oder über die Schaltfläche **Dastra AI öffnen** unten rechts auf dem Bildschirm befragen. Sie können außerdem eigene [Agenten](agents/README.md) erstellen, im Chat oder autonom, und Ihre KI-Werkzeuge über den [MCP-Server](mcp.md) mit Dastra verbinden. Diese Funktionen hängen vom Tarif Ihrer Organisation und von den Berechtigungen der einzelnen Nutzer ab.
 
 Alle KI-Funktionen teilen sich das monatliche Kontingent an KI-Credits, das unter [Funktionsweise](how-it-works.md#ki-credits-und-kontingente) beschrieben ist.
 

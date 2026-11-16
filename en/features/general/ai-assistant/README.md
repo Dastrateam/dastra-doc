@@ -8,6 +8,13 @@ description: >-
 
 Dastra's AI Assistant lets you generate and enrich workspace elements from simple text descriptions. It relies on generative AI models hosted on Azure, in France and the European Economic Area, without any data from your organization being used to train those models.
 
+Dastra AI brings together all of Dastra's AI features, in two families:
+
+* The **AI assistants** are tightly scoped generation features. A button in a module covers one precise use case: generating a processing activity, an information notice or a risk analysis.
+* The **conversational mode** covers the Dastra AI chat, [agents](agents/README.md) and the [MCP server](mcp.md). It is more open: you ask questions and hand over tasks in natural language.
+
+This page covers both.
+
 The availability of the AI Assistant depends on your organization's plan, module by module. In a module that your plan does not include, the AI buttons are greyed out, or do not appear for a few features. To change the scope of your plan, contact our team.
 
 ## AI as a starting point, not a final answer
@@ -47,7 +54,7 @@ For a step-by-step guide to each feature, see [Use cases](use-cases.md).
 
 ## Dastra AI, agents and the MCP server
 
-Beyond content generation, Dastra offers a conversational assistant, **Dastra AI**, that you query from the dashboard or from the **Open Dastra AI** button at the bottom right of the screen. You can also create your own [agents](agents/README.md), conversational or autonomous, and connect your AI tools to Dastra with the [MCP server](mcp.md). These features depend on your organization's plan and on each user's permissions.
+Beyond content generation, Dastra AI offers a conversational mode that you query from the dashboard or from the **Open Dastra AI** button at the bottom right of the screen. You can also create your own [agents](agents/README.md), conversational or autonomous, and connect your AI tools to Dastra with the [MCP server](mcp.md). These features depend on your organization's plan and on each user's permissions.
 
 All AI features share the monthly AI credit quota described in [How it works](how-it-works.md#ai-credits-and-quotas).
 

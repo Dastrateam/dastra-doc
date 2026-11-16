@@ -8,6 +8,13 @@ description: >-
 
 L'assistant IA de Dastra vous permet de générer et d'enrichir des éléments de votre espace de travail à partir de simples descriptions textuelles. Il s'appuie sur des modèles d'IA générative hébergés sur Azure, en France et dans l'Espace Économique Européen, sans qu'aucune donnée de votre organisation ne soit utilisée pour entraîner ces modèles.
 
+Dastra AI regroupe l'ensemble des fonctions d'IA de Dastra, en deux familles :
+
+* Les **assistants IA** sont des fonctions de génération très encadrées. Un bouton, dans un module, répond à un cas d'usage précis : générer un traitement, une notice d'information, une analyse de risque.
+* Le **mode conversationnel** réunit le chat Dastra AI, les [agents](agents/README.md) et le [serveur MCP](mcp.md). Il est plus ouvert : vous posez vos questions et confiez des tâches en langage naturel.
+
+Cette page présente les deux.
+
 La disponibilité de l'assistant IA dépend de l'offre de votre organisation, module par module. Dans un module que votre offre n'inclut pas, les boutons IA sont grisés, ou n'apparaissent pas pour quelques fonctions. Pour modifier le périmètre de votre offre, contactez notre équipe.
 
 ## L'IA comme point de départ, pas comme réponse définitive
@@ -47,7 +54,7 @@ Pour un guide pas à pas de chaque fonctionnalité, consultez la page [Cas d'usa
 
 ## Dastra AI, agents et serveur MCP
 
-Au-delà de la génération de contenu, Dastra propose un assistant conversationnel, **Dastra AI**, que vous interrogez depuis le tableau de bord ou depuis le bouton **Ouvrir Dastra AI** en bas à droite de l'écran. Vous pouvez aussi créer vos propres [agents](agents/README.md), conversationnels ou autonomes, et connecter vos outils d'IA à Dastra avec le [serveur MCP](mcp.md). Ces fonctionnalités dépendent de l'offre de votre organisation et des permissions de chaque utilisateur.
+Au-delà de la génération de contenu, Dastra AI propose un mode conversationnel que vous interrogez depuis le tableau de bord ou depuis le bouton **Ouvrir Dastra AI** en bas à droite de l'écran. Vous pouvez aussi créer vos propres [agents](agents/README.md), conversationnels ou autonomes, et connecter vos outils d'IA à Dastra avec le [serveur MCP](mcp.md). Ces fonctionnalités dépendent de l'offre de votre organisation et des permissions de chaque utilisateur.
 
 Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit dans [Comment ça marche ?](how-it-works.md#credits-et-quotas-ia).
 

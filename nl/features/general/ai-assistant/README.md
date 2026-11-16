@@ -8,6 +8,13 @@ description: >-
 
 Met de AI-assistent van Dastra genereert en verrijkt u elementen van uw werkruimte op basis van korte tekstbeschrijvingen. Hij gebruikt generatieve AI-modellen die op Azure worden gehost, in Frankrijk en in de Europese Economische Ruimte. Gegevens van uw organisatie worden niet gebruikt om die modellen te trainen.
 
+Dastra AI brengt alle AI-functies van Dastra samen in twee groepen:
+
+* De **AI-assistenten** zijn strak afgebakende generatiefuncties. Een knop in een module dekt één precies gebruiksscenario: een verwerking, een informatiebericht of een risicoanalyse genereren.
+* De **gespreksmodus** omvat de Dastra AI-chat, de [agents](agents/README.md) en de [MCP-server](mcp.md). Hij is opener: u stelt vragen en vertrouwt taken toe in gewone taal.
+
+Deze pagina behandelt beide.
+
 De beschikbaarheid van de AI-assistent hangt per module af van het abonnement van uw organisatie. In een module die niet in uw abonnement zit, zijn de AI-knoppen grijs, of ze verschijnen niet voor enkele functies. Neem contact op met ons team om de reikwijdte van uw abonnement te wijzigen.
 
 ## AI als startpunt, niet als eindantwoord
@@ -47,7 +54,7 @@ Een stapsgewijze uitleg van elke functie vindt u onder [Gebruiksscenario's](use-
 
 ## Dastra AI, agents en de MCP-server
 
-Naast het genereren van inhoud biedt Dastra een gesprekspartner, Dastra AI, die u bevraagt vanuit het dashboard of met de knop **Open Dastra AI** rechtsonder op het scherm. U kunt ook uw eigen [agents](agents/README.md) maken, conversational of autonoom, en uw AI-hulpmiddelen met Dastra verbinden via de [MCP-server](mcp.md). Deze functies hangen af van het abonnement van uw organisatie en van de rechten van elke gebruiker.
+Naast het genereren van inhoud biedt Dastra AI een gespreksmodus die u bevraagt vanuit het dashboard of met de knop **Open Dastra AI** rechtsonder op het scherm. U kunt ook uw eigen [agents](agents/README.md) maken, conversational of autonoom, en uw AI-hulpmiddelen met Dastra verbinden via de [MCP-server](mcp.md). Deze functies hangen af van het abonnement van uw organisatie en van de rechten van elke gebruiker.
 
 Alle AI-functies delen het maandelijkse quotum aan AI-credits dat wordt beschreven onder [Werking](how-it-works.md#ai-credits-en-quota).
 
