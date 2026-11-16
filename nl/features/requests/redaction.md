@@ -43,7 +43,7 @@ Teken met de muis op elke pagina de te verbergen gebieden. De editor toont het a
 
 ## Verbergen met AI
 
-Klik in de editor op **Auto-redact with AI** om het venster **Automatische verdoezeling door IA** te openen. De AI analyseert het document, vindt persoonsgegevens van derden (namen, adressen, contactgegevens, identificatienummers) en plaatst gebieden om te verbergen. Er worden geen gegevens bewaard na de sessie.
+Klik in de editor op **Auto-redact with AI** om het venster **Automatische verdoezeling door IA** te openen. De AI analyseert het document, vindt persoonsgegevens van derden (namen, adressen, contactgegevens, identificatienummers) en plaatst gebieden om te verbergen. Er worden geen gegevens bewaard na de sessie. De tekst van het document, uitgelezen met optische tekenherkenning (OCR), wordt in blokken naar het AI-model gestuurd: hij bevat van nature persoonsgegevens. Dastra logt noch deze tekst noch de gevonden waarden, en de voorgestelde gebieden worden pas opgeslagen nadat u ze hebt bevestigd. Zie [Gegevens die naar het model worden gestuurd](../general/ai-assistant/how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd) voor details.
 
 Het venster biedt drie opties:
 

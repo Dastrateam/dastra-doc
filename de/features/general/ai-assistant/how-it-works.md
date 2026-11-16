@@ -60,7 +60,7 @@ Dastra übermittelt nur die für die angeforderte Erstellung erforderlichen Info
 
 Die genau übermittelten Daten pro Funktion sind im Abschnitt [An das Modell übermittelte Daten](how-it-works.md#an-das-modell-ubermittelte-daten) aufgeführt.
 
-Bevor eine Erstellungsanfrage gesendet wird, wendet Dastra einen Filter an, der die E-Mail-Adressen, Telefonnummern, Postanschriften, Postleitzahlen und vollständigen Namen maskiert, die er im Text erkennt. Der Filter folgt europäischen Formaten. Daten, Kennungen und Standardnummern wie ISO 27001 lässt er unverändert, damit das Modell die benötigten fachlichen Daten behält.
+Bei einigen Erstellungsfunktionen wendet Dastra vor dem Senden einen Filter an, der die E-Mail-Adressen, Telefonnummern, Postanschriften und Postleitzahlen maskiert, die er im Text erkennt, sowie Namen, denen eine Anrede vorangeht (Herr, Frau, Dr. ...). Der Filter folgt europäischen Formaten. Daten, Kennungen und Standardnummern wie ISO 27001 lässt er unverändert, damit das Modell die benötigten fachlichen Daten behält. Dieser Filter wird nicht bei allen Funktionen angewendet: Insbesondere gilt er nicht für Dastra AI, die Agenten, die KI-Analyse und die Schwärzung. Er garantiert nicht, dass ein Text anonymisiert ist: Vermeiden Sie es, unnötige personenbezogene Daten einzugeben.
 
 Die **Sprachdiktat-Funktion** im Nachrichtenfeld von Dastra AI sendet Ihre Aufnahme an einen Spracherkennungsdienst, der den transkribierten Text zurückgibt. Dastra speichert die Aufnahme nicht. Dastra verwendet Azure Speech auf der Standardplattform und Mistral Voxtral auf [Bleu](../../../security/bleu.md).
 
@@ -160,13 +160,25 @@ Dastra übermittelt **keine Daten Ihres Mandanten** an das KI-Modell, es sei den
 | **Eine Antwort auf eine Anfrage zur Ausübung von Rechten erstellen** | Vor- und Nachname des Antragstellers, Nachricht der Anfrage, Sprache, Name des Mandanten, Zwecke, Name des Bearbeiters, Datum der Anfrage und verbleibende Tage, Status und ID der Anfrage | **Ja**: Vorname, Nachname und Inhalt der Anfrage |
 | **Eine Nachbetrachtung eines Datenschutzvorfalls erstellen** | Strukturierte Felder des Vorfalls (Beschreibung, betroffene Daten, ergriffene Maßnahmen) | Möglicherweise, je nach Inhalt des Vorfalleintrags |
 | **Vertragsmetadaten extrahieren** | Textinhalt des übermittelten Dokuments (Anhang oder URL) | Möglicherweise, je nach Inhalt des Vertrags |
-| **Ein eigenes Dokument erstellen** | Vom Nutzer eingegebene Anweisungen + eventueller Quellinhalt | Möglicherweise, je nach den angegebenen Anweisungen |
 | **Einen eigenen Bericht erstellen** | Vom Nutzer eingegebene Anweisungen | Nein, es sei denn, der Nutzer nimmt Daten in die Anweisungen auf |
 | **Risikoanalyse (KI-System)** | Strukturierte Felder des KI-Systems (Beschreibung, Zwecke, verarbeitete Daten, Stakeholder) | Möglicherweise, je nach Inhalt des KI-Systems |
 | **Eine Beschreibung eines KI-Systems erstellen** | Freitext + angegebene URL oder angegebener Anhang | Nein |
 | **Einen Hinweis zu einem KI-System erstellen** | Strukturierte Felder des betreffenden KI-Systems | Möglicherweise |
 | **Kontrollen / Anforderungen / Tests vorschlagen** | Kontext des betreffenden Objekts (Name, Beschreibung, Framework) | Nein |
 | **KI-Analyse von Testnachweisen (Compliance)** | Beschreibung des Testverfahrens + Inhalt des Nachweises (extrahierter Text, Bild oder abgerufene URL) | Möglicherweise, je nach Inhalt des Nachweises |
+| **Die Begründung der Rolle erstellen (KI-System)** | Name und Beschreibung des KI-Systems, Bezeichnungen der verknüpften KI-Modelle, Art der Verantwortlichkeit (Anbieter, Betreiber …) | Nein, es sei denn, Name oder Beschreibung enthalten namentliche Verweise |
+| **Die Bewertung des geschäftlichen Nutzens erstellen (KI-System)** | Name, Beschreibung und KI-Modelle des Systems, AI-Act-Rollen der Organisation, Bezeichnungen der verknüpften Verarbeitungstätigkeiten, Assets, Kategorien betroffener Personen und Datensätze (mit den Bezeichnungen ihrer Felder) | Unwahrscheinlich, es sei denn, eine Bezeichnung enthält einen Namen |
+| **Ein KI-Modell erstellen** | Vom Nutzer eingegebener Freitext, aus den angehängten Dateien oder der angegebenen URL extrahierter Text | Möglicherweise, je nach Inhalt der Dateien oder der Seite |
+| **KI-Analyse eines Eintrags (Verarbeitungstätigkeit, KI-System, Vertrag, Asset, Stakeholder, Zusammenfassung von Auditantworten)** | Inhalt des Eintrags und seine Kommentare sowie die verknüpften Einträge, die die Analyse mit Ihren Berechtigungen liest. Der Inhalt der Anhänge wird nicht übermittelt | **Ja**: Ein Eintrag kann Namen von Verantwortlichen oder Kontakten enthalten |
+| **Eine Fragebogenvorlage übersetzen** | Alle Texte der Vorlage: Titel, Beschreibungen, Abschnitte, Fragen, Antwortoptionen, vorgeschlagene Aufgaben und Analyseblöcke. Eingegebene Antworten werden nicht übermittelt | Nein, es sei denn, die Vorlage nennt Namen oder Kontaktdaten |
+| **Ein Dokument automatisch schwärzen (Betroffenenanfrage)** | Vollständiger Text des Dokuments, per optischer Zeichenerkennung (OCR) extrahiert und in Blöcken gesendet, gegebenenfalls mit der freien Anweisung. Wenn Sie die betroffene Person ausschließen, werden auch ihr Name, ihre E-Mail-Adresse, Telefonnummer und Adresse übermittelt. Seitenbilder werden nicht an das Modell gesendet. Der Maskierungsfilter wird nicht angewendet, sonst ließen sich die zu schwärzenden Daten nicht erkennen. Dastra protokolliert weder den Text noch die erkannten Werte | **Ja**: Der Text des Dokuments enthält von Natur aus personenbezogene Daten, auch von Dritten |
+| **Ein Dokument aus dem Dateimanager erstellen** | Vom Nutzer eingegebene Anweisung | Nein, es sei denn, die Anweisung nennt Personen |
+| **Beschreibung einer Workflow-Regel** | Objekttyp, Auslöser, Aktion und Bedingungen der Regel sowie der bereits eingegebene Text | Nein, es sei denn, eine Bedingung enthält einen namentlichen Wert |
+| **HTTP-Aktion einer Workflow-Regel** | Objekttyp, Anweisung, eingefügter Auszug der API-Dokumentation, Spalten des Objekts (Name, Bezeichnung, Typ, mögliche Werte) und die aktuelle Konfiguration (URL mit maskierten Parameterwerten, Methode, Namen der Header ohne Werte, Anfragetext). Nie Datensatzdaten oder Zugangsdaten | Unwahrscheinlich, es sei denn, die eingefügte Dokumentation oder der Anfragetext enthält welche |
+| **Feldzuordnung einer Integration** | Konnektor, Quellfelder und Zielspalten von Dastra (Schlüssel, Bezeichnung, Typ, mögliche Werte), bestehende Zuordnungsregeln. Nur Metadaten, keine Beispieldaten | Nein |
+| **Mit Dastra AI oder einem Agenten chatten** | Ihre Nachricht und der Gesprächsverlauf, die Anweisungen des Agenten, die Werte seiner Eingabefelder, das Ergebnis der Werkzeuge (Inhalt der Einträge, auf die Sie Zugriff haben) und Anhänge. Bilder und PDFs werden an das Modell gesendet; andere Formate werden nicht gelesen. Der Maskierungsfilter wird nicht angewendet. Gespräche werden in Dastra gespeichert, und Sie können sie löschen; Anhänge werden 180 Tage aufbewahrt | **Ja**, je nach eingesehenen Einträgen und Anhängen |
+
+Beim [MCP-Server](mcp.md) werden die gelesenen Daten an das von Ihnen verbundene KI-Werkzeug übermittelt, nach dessen eigenen Bedingungen, und nicht an ein Modell von Dastra.
 
 {% hint style="warning" %}
 **Bewährte Vorgehensweise**: Vermeiden Sie es, personenbezogene Daten direkt in Freitextfelder (Beschreibungen, individuelle Anweisungen) aufzunehmen. Verwenden Sie nach Möglichkeit Kennungen oder allgemeine Begriffe.
@@ -177,7 +189,7 @@ Dastra übermittelt **keine Daten Ihres Mandanten** an das KI-Modell, es sei den
 Die folgenden Daten sind **nie** Teil der Anfragen an das KI-Modell:
 
 * Zugangsdaten und Passwörter der Dastra-Nutzer
-* Daten anderer Einträge Ihres Mandanten (nur das Objekt, an dem Sie arbeiten, ist einbezogen), mit Ausnahme der Bezeichnungen vorhandener Sicherheitsmaßnahmen, Assets und Datenfelder, wenn Sie beim Erstellen einer Verarbeitungstätigkeit die Option **Vorhandene Komponenten nutzen** aktivieren
+* Daten anderer Einträge Ihres Mandanten (nur das Objekt, an dem Sie arbeiten, ist einbezogen, außer bei Dastra AI, den Agenten und der KI-Analyse, die die benötigten Einträge mit Ihren Berechtigungen lesen), mit Ausnahme der Bezeichnungen vorhandener Sicherheitsmaßnahmen, Assets und Datenfelder, wenn Sie beim Erstellen einer Verarbeitungstätigkeit die Option **Vorhandene Komponenten nutzen** aktivieren
 * Sitzungsmetadaten (Name des angemeldeten Nutzers, IP-Adresse usw.)
 * Anhänge, die in der betreffenden Funktion nicht ausdrücklich angegeben wurden
 

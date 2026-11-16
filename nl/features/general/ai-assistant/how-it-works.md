@@ -55,7 +55,7 @@ Dastra stuurt alleen de informatie door die nodig is voor de gevraagde generatie
 
 De exacte gegevens per functie staan in de sectie [Gegevens die naar het model worden gestuurd](how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd).
 
-Voordat een generatieverzoek wordt verstuurd, past Dastra een filter toe dat de e-mailadressen, telefoonnummers, postadressen, postcodes en volledige namen die het in de tekst herkent, maskeert. Het filter volgt Europese formaten. Het laat datums, identificatoren en standaardnummers zoals ISO 27001 ongewijzigd, zodat het model de zakelijke gegevens behoudt die het nodig heeft.
+Bij sommige generatiefuncties past Dastra vóór het versturen een filter toe dat de e-mailadressen, telefoonnummers, postadressen en postcodes die het in de tekst herkent maskeert, evenals namen die door een aanspreekvorm worden voorafgegaan (Dhr., Mevr., Dr...). Het filter volgt Europese formaten. Het laat datums, identificatoren en standaardnummers zoals ISO 27001 ongewijzigd, zodat het model de zakelijke gegevens behoudt die het nodig heeft. Dit filter wordt niet op alle functies toegepast: het geldt met name niet voor Dastra AI, agents, AI-analyse en redactie. Het garandeert niet dat een tekst geanonimiseerd is: vermijd het invoeren van onnodige persoonsgegevens.
 
 **Spraakdictaat** in het berichtenveld van Dastra AI stuurt uw opname naar een spraak-naar-tekstdienst, die de getranscribeerde tekst teruggeeft. Dastra bewaart de opname niet. Dastra gebruikt Azure Speech op het standaardplatform en Mistral Voxtral op [Bleu](../../../security/bleu.md).
 
@@ -147,13 +147,25 @@ Dastra stuurt geen gegevens uit uw werkruimte naar het AI-model tenzij u daarom 
 | Een antwoord op een verzoek van een betrokkene genereren | Voor- en achternaam van de aanvrager, bericht van het verzoek, taal, naam van de werkruimte, doeleinden, naam van de behandelaar, datum van het verzoek en resterende dagen, status en ID van het verzoek | Ja: voornaam, achternaam en inhoud van het verzoek |
 | Een postmortem van een datalek genereren | Gestructureerde velden van het datalek (beschrijving, getroffen gegevens, genomen maatregelen) | Mogelijk, afhankelijk van de inhoud van het datalekdossier |
 | Contractmetadata extraheren | Tekstinhoud van het verzonden document (bijlage of URL) | Mogelijk, afhankelijk van de inhoud van het contract |
-| Een aangepast document genereren | Instructies van de gebruiker plus eventueel bronmateriaal | Mogelijk, afhankelijk van de opgegeven instructies |
 | Een aangepast rapport genereren | Instructies van de gebruiker | Nee, tenzij de gebruiker gegevens in de instructies opneemt |
 | Risicoanalyse (AI-systeem) | Gestructureerde velden van het AI-systeem (beschrijving, doeleinden, verwerkte gegevens, stakeholders) | Mogelijk, afhankelijk van de inhoud van het AI-systeem |
 | De beschrijving van een AI-systeem genereren | Vrije tekst plus de opgegeven URL of bijlage | Nee |
 | Een informatiebericht voor een AI-systeem genereren | Gestructureerde velden van het betrokken AI-systeem | Mogelijk |
 | Controles, vereisten of tests voorstellen | Context van het betrokken object (naam, beschrijving, kader) | Nee |
 | AI-analyse van testbewijs (Conformiteit) | Beschrijving van de testprocedure plus de inhoud van het bewijs (geëxtraheerde tekst, afbeelding of opgehaalde URL) | Mogelijk, afhankelijk van de inhoud van het bewijs |
+| De rolverantwoording genereren (AI-systeem) | Naam en beschrijving van het AI-systeem, labels van de gekoppelde AI-modellen, type verantwoordelijkheid (aanbieder, gebruiksverantwoordelijke…) | Nee, tenzij de naam of beschrijving namen bevat |
+| De evaluatie van de bedrijfswaarde genereren (AI-systeem) | Naam, beschrijving en AI-modellen van het systeem, de AI Act-rollen van de organisatie, labels van de gekoppelde verwerkingsactiviteiten, activa, categorieën van betrokkenen en datasets (met de labels van hun velden) | Onwaarschijnlijk, tenzij een label een naam bevat |
+| Een AI-model genereren | Vrije tekst die de gebruiker invoert, tekst uit de bijgevoegde bestanden of uit de opgegeven URL | Mogelijk, afhankelijk van de inhoud van de bestanden of de pagina |
+| AI-analyse van een record (verwerkingsactiviteit, AI-systeem, contract, actief, stakeholder, samenvatting van auditantwoorden) | Inhoud van het record en de opmerkingen, plus de gekoppelde records die de analyse met uw rechten raadpleegt. De inhoud van bijlagen wordt niet verzonden | **Ja**: een record kan namen van verantwoordelijken of contactpersonen bevatten |
+| Een vragenlijstsjabloon vertalen | Alle teksten van het sjabloon: titels, beschrijvingen, secties, vragen, antwoordopties, voorgestelde taken en analyseblokken. Ingevoerde antwoorden worden niet verzonden | Nee, tenzij het sjabloon namen of contactgegevens noemt |
+| Een document automatisch caviarderen (verzoek van een betrokkene) | Volledige tekst van het document, uitgelezen met optische tekenherkenning (OCR) en in blokken verzonden, eventueel met de vrije instructie. Sluit u de betrokkene uit, dan worden ook diens naam, e-mailadres, telefoonnummer en adres verzonden. Paginabeelden worden niet naar het model gestuurd. Het maskeringsfilter wordt niet toegepast, anders zouden de te caviarderen gegevens niet kunnen worden opgespoord. Dastra logt noch de tekst noch de gevonden waarden | **Ja**: de tekst van het document bevat van nature persoonsgegevens, ook van derden |
+| Een document genereren vanuit de bestandsbeheerder | Instructie die de gebruiker invoert | Nee, tenzij de instructie personen noemt |
+| Beschrijving van een workflowregel | Objecttype, trigger, actie en voorwaarden van de regel, en de reeds ingevoerde tekst | Nee, tenzij een voorwaarde een naam als waarde bevat |
+| HTTP-actie van een workflowregel | Objecttype, instructie, geplakt fragment van de API-documentatie, kolommen van het object (naam, label, type, mogelijke waarden) en de huidige configuratie (URL met gemaskeerde parameterwaarden, methode, namen van de headers zonder waarden, aanvraagtekst). Nooit recordgegevens of inloggegevens | Onwaarschijnlijk, tenzij de geplakte documentatie of de aanvraagtekst er bevat |
+| Veldmapping van een integratie | Connector, bronvelden en doelkolommen van Dastra (sleutel, label, type, mogelijke waarden), bestaande mappingregels. Alleen metagegevens, geen voorbeeldgegevens | Nee |
+| Chatten met Dastra AI of een agent | Uw bericht en de gespreksgeschiedenis, de instructies van de agent, de waarden van zijn invoervelden, het resultaat van de tools (inhoud van de records waartoe u toegang hebt) en bijlagen. Afbeeldingen en pdf's worden naar het model gestuurd; andere formaten worden niet gelezen. Het maskeringsfilter wordt niet toegepast. Gesprekken worden in Dastra opgeslagen en u kunt ze verwijderen; bijlagen worden 180 dagen bewaard | **Ja**, afhankelijk van de geraadpleegde records en de bijlagen |
+
+Bij de [MCP-server](mcp.md) worden de gelezen gegevens verzonden naar de AI-tool die u hebt gekoppeld, onder diens eigen voorwaarden, en niet naar een model van Dastra.
 
 {% hint style="warning" %}
 Goede praktijk: voeg geen persoonsgegevens rechtstreeks in vrije tekstvelden (beschrijvingen, eigen instructies) in. Gebruik waar mogelijk identificatiecodes of algemene termen.
@@ -164,7 +176,7 @@ Goede praktijk: voeg geen persoonsgegevens rechtstreeks in vrije tekstvelden (be
 De volgende gegevens maken nooit deel uit van de aanvragen die naar het AI-model gaan:
 
 * Inloggegevens en wachtwoorden van Dastra-gebruikers
-* Gegevens uit andere records in uw werkruimte (alleen het object waaraan u werkt valt binnen het bereik), behalve de labels van de bestaande beveiligingsmaatregelen, activa en gegevensvelden wanneer u de optie **Gebruik bestaande elementen** inschakelt bij het genereren van een verwerkingsactiviteit
+* Gegevens uit andere records in uw werkruimte (alleen het object waaraan u werkt valt binnen het bereik, behalve bij Dastra AI, agents en AI-analyse, die de nodige records raadplegen met uw rechten), behalve de labels van de bestaande beveiligingsmaatregelen, activa en gegevensvelden wanneer u de optie **Gebruik bestaande elementen** inschakelt bij het genereren van een verwerkingsactiviteit
 * Sessiemetadata (naam van de aangemelde gebruiker, IP-adres enzovoort)
 * Bijlagen die niet uitdrukkelijk in de betrokken functie zijn opgegeven
 
