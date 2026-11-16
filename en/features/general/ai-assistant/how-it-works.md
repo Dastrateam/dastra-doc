@@ -35,7 +35,7 @@ The organization owner chooses the model family in **Organization settings** > *
 
 <figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="AI Assistant model families, including the Custom AI provider"><figcaption><p>The Custom AI provider among the model families</p></figcaption></figure>
 
-Dastra lets you connect your own AI provider with an API key, provided it is compatible with the OpenAI API standard. The providers offered are OpenAI, Google, Anthropic, Mistral and Azure AI Foundry. The **Other** option accepts any other compatible endpoint, including a self-hosted LLM.
+Dastra lets you connect your own AI provider with an API key, provided it is compatible with the OpenAI API standard. The providers offered are OpenAI, Google, Anthropic, Mistral and Azure AI Foundry. The **Other** option accepts any other compatible endpoint, including a self-hosted LLM. The custom provider applies to the generation features of the AI assistant (the buttons in each module). Dastra AI (chat), agents and the MCP server keep using Dastra's models.
 
 To configure a custom provider, select the **Custom AI provider** family in **Organization settings** > **Dastra AI**. In the **Custom AI provider credentials** block, click **Add credential**, enter the provider and its API key, then assign a model to each of the three tiers (Fast, Smart, Large context).
 
@@ -61,7 +61,7 @@ The exact data transmitted per feature is detailed in the [What data is transmit
 
 Before a generation request is sent, Dastra applies a filter that masks the email addresses, phone numbers, postal addresses, postal codes and full names it recognizes in the text. The filter follows European formats. It leaves dates, identifiers and standard numbers such as ISO 27001 unchanged, so that the model keeps the business data it needs.
 
-**Voice dictation** in the Dastra AI message box sends your recording to a speech-to-text service, which returns the transcribed text. Dastra uses Azure Speech on the standard platform and Mistral Voxtral on [Bleu](../../../security/bleu.md).
+**Voice dictation** in the Dastra AI message box sends your recording to a speech-to-text service, which returns the transcribed text. Dastra does not keep the recording. Dastra uses Azure Speech on the standard platform and Mistral Voxtral on [Bleu](../../../security/bleu.md).
 
 ***
 
@@ -108,9 +108,11 @@ A successful generation consumes credits according to the type of operation. A f
 
 | Operation | Credits |
 | --- | --- |
-| Generating a processing activity, asset, stakeholder, dataset, security measure, AI system or AI model; privacy notice; tag suggestion; response to a rights request; contract metadata extraction; control and test suggestions | 1 |
-| Risk analysis, DPIA criteria assessment, test evidence verification, data breach post-mortem, custom report | 2 |
+| Generating a processing activity, asset, stakeholder, dataset, security measure, AI system or AI model; privacy notice; tag suggestion; response to a rights request; contract metadata extraction; control and test suggestions; questionnaire template generation; AI system role justification; mapping or HTTP action suggestion | 1 |
+| Risk analysis, business value analysis, DPIA criteria assessment, test evidence verification, data breach post-mortem, custom report | 2 |
 | Answering a questionnaire and translating a questionnaire | 1 per 25 questions |
+| Automatic document redaction | 1 per document segment sent |
+| Message sent to Dastra AI or to an agent | 1 per message, whatever the number of tools used |
 
 The **Usage** card of **Organization settings** > **Dastra AI** shows the consumption of the current month, the quota of the plan and the renewal date. The **progress bar** changes color according to the share of the quota consumed:
 
@@ -120,6 +122,8 @@ The **Usage** card of **Organization settings** > **Dastra AI** shows the consum
 
 When the monthly quota is reached, a message informs you and offers to contact the Dastra team.
 
+In the Dastra AI panel, all users see the quota status: a discreet counter from 50%, an orange banner from 80%, then a red banner at 100%, which blocks sending new messages (the history stays available).
+
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Usage card of the AI assistant with the credit quota progress bar and the explanation of the calculation"><figcaption><p>Tracking of current-month AI credit consumption</p></figcaption></figure>
 
 {% hint style="info" %}
@@ -127,7 +131,7 @@ When the quota is reached, AI features are disabled until the next renewal. The 
 {% endhint %}
 
 {% hint style="info" %}
-**Custom AI provider: no credit counting.** When your organization uses a Custom AI provider, the Dastra credit system does not apply. Consumption is managed directly by your own provider according to its own billing terms.
+**Custom AI provider: no credit counting for the AI assistant.** When your organization uses a Custom AI provider, the Dastra credit system does not apply to the generation features of the AI assistant. Consumption is managed directly by your own provider according to its own billing terms. Dastra AI and agents use Dastra's models: their messages still consume the credit quota and are blocked once it is reached.
 {% endhint %}
 
 ***

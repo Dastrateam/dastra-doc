@@ -8,7 +8,7 @@ description: >-
 
 Met de AI-assistent van Dastra genereert en verrijkt u elementen van uw werkruimte op basis van korte tekstbeschrijvingen. Hij gebruikt generatieve AI-modellen die op Azure worden gehost, in Frankrijk en in de Europese Economische Ruimte. Gegevens van uw organisatie worden niet gebruikt om die modellen te trainen.
 
-De beschikbaarheid van de AI-assistent hangt per module af van het abonnement van uw organisatie. In een module die niet in uw abonnement zit, zijn de AI-knoppen grijs. Neem contact op met ons team om de reikwijdte van uw abonnement te wijzigen.
+De beschikbaarheid van de AI-assistent hangt per module af van het abonnement van uw organisatie. In een module die niet in uw abonnement zit, zijn de AI-knoppen grijs, of ze verschijnen niet voor enkele functies. Neem contact op met ons team om de reikwijdte van uw abonnement te wijzigen.
 
 ## AI als startpunt, niet als eindantwoord
 
@@ -32,12 +32,15 @@ Gegevens van uw organisatie worden nooit gebruikt om AI-modellen te trainen. De 
 
 De assistent is beschikbaar in meerdere modules van het platform:
 
-* Verwerkingsactiviteiten: beschrijvingen, datasets, beveiligingsmaatregelen, informatieberichten en conformiteitsanalyses genereren
-* AI-systemen: beschrijvingen, berichten en risicoanalyses genereren
-* Vragenlijsten: door AI ondersteunde antwoorden genereren voor DPIA's en risicoanalyses
-* Verzoeken van betrokkenen: antwoorden opstellen in meerdere talen en registers
+* Verwerkingsactiviteiten: beschrijvingen, datasets, beveiligingsmaatregelen, informatieberichten, de beoordeling van de DPIA-criteria en conformiteitsanalyses genereren
+* AI-systemen: beschrijvingen, berichten, de motivering van de rol, risicoanalyses en de beoordeling van de zakelijke waarde genereren
+* Vragenlijsten: een sjabloon genereren, het vertalen, en door AI ondersteunde antwoorden genereren voor DPIA's en risicoanalyses
+* Verzoeken van betrokkenen: antwoorden opstellen in meerdere talen en registers, en documenten automatisch caviarderen
+* Datalekken: een postmortem genereren
 * Activa en actoren: gestructureerde items genereren op basis van een URL of een vrije beschrijving
 * Contracten: metagegevens uit een geïmporteerd document halen
+* Conformiteit: controles, tests en vereistenreferenties voorstellen en testbewijs analyseren
+* Workflowregels en integraties: een HTTP-actie genereren of een veldmapping voorstellen
 * Eigen documenten en rapporten: inhoud genereren op basis van uw eigen instructies
 
 Een stapsgewijze uitleg van elke functie vindt u onder [Gebruiksscenario's](use-cases.md).
@@ -51,6 +54,8 @@ Alle AI-functies delen het maandelijkse quotum aan AI-credits dat wordt beschrev
 ## Chatten met Dastra AI
 
 **Dastra AI** beantwoordt vragen over uw werkruimte in een gesprek. Het zoekt uw records op met alleen-lezentools, zodat u kunt vragen om een samenvatting, een lijst van achterstallige verzoeken of de verwerkingsactiviteiten die geen DPIA hebben.
+
+Om te antwoorden kan Dastra AI ook steunen op de door Dastra geïndexeerde regelgevingsbank, op de Dastra-documentatie en op een webzoekopdracht. In de modus Edit kan Dastra AI records aanmaken, velden wijzigen, een actieplan, een vragenlijst, een opmerking of een label aanmaken en recordacties starten, zoals het wijzigen van de workflowstap. Het kan u verduidelijkende vragen stellen voordat het handelt en u doorverwijzen naar het betrokken record.
 
 1. Klik rechtsonder op het scherm op **Open Dastra AI**, of druk op **Ctrl+J** (**Cmd+J** op Mac).
 2. Typ uw vraag, of kies een van de **Suggested prompts**. Ze veranderen met de pagina waarop u zich bevindt: het record dat u bekijkt, het register, verzoeken, AI-systemen.
@@ -90,7 +95,7 @@ Wanneer u een bètafunctie gebruikt:
 Baseer een conformiteitsbeslissing nooit uitsluitend op een bètafunctie. Bètafuncties ondersteunen een grondige menselijke controle, ze vervangen die niet.
 {% endhint %}
 
-Momenteel in bèta: de AI-conformiteitsanalyse, beschikbaar op verwerkingsactiviteiten, AI-systemen, contracten, stakeholders, activa en antwoorden op vragenlijsten. Open ze met de knop **AI analysis (beta)** van het record, of vraag Dastra AI om een record te analyseren. Het resultaat geeft een score van A tot F, de beoordeelde criteria en voorgestelde taken, en kan worden afgedrukt, opnieuw gestart of voortgezet in de chat.
+Momenteel in bèta: de AI-conformiteitsanalyse, beschikbaar op verwerkingsactiviteiten, AI-systemen, contracten, activa, stakeholders en samenvattingen van auditantwoorden. Open ze met de knop **AI analysis (beta)** van het record, of vraag Dastra AI om een record te analyseren. Het resultaat geeft een score van A tot F, de beoordeelde criteria en voorgestelde taken, en kan worden afgedrukt, opnieuw gestart of voortgezet in de chat.
 
 ***
 

@@ -60,7 +60,7 @@ Generated results are starting proposals, not definitive answers. They accelerat
 
 Some AI features are released in beta: they are operational but continue to be refined. Results may be less consistent than in stable features and should be treated with extra care.
 
-Currently in beta: processing activity compliance analysis and AI system compliance analysis.
+Currently in beta: the AI compliance analysis (**AI analysis (beta)** button), available on processing activities, AI systems, contracts, assets, stakeholders and audit response summaries.
 
 ***
 
@@ -80,7 +80,7 @@ The organization owner opens **Organization settings** > **Dastra AI** and selec
 
 **Can I connect my own AI provider?**
 
-Yes, with the **Custom AI provider** family. Any provider compatible with the OpenAI API standard can be connected: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, or a self-hosted LLM. Configure your credentials in **Organization settings** > **Dastra AI**, **Custom AI provider credentials** block.
+Yes, with the **Custom AI provider** family. Any provider compatible with the OpenAI API standard can be connected: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, or a self-hosted LLM. Configure your credentials in **Organization settings** > **Dastra AI**, **Custom AI provider credentials** block. The custom provider applies to the generation features of the AI assistant, not to Dastra AI (chat), agents or the MCP server.
 
 {% hint style="warning" %}
 With a Custom AI provider, the Azure guarantees described in this documentation no longer apply. Data is subject to your provider's policy.
@@ -120,7 +120,7 @@ To increase your quota or request an early renewal, contact our team.
 
 **Does the credit system apply when using a Custom AI provider?**
 
-No. When your organization configures a **Custom AI provider**, the Dastra credit system is disabled: no credits are counted. Consumption is managed directly by your provider according to its own billing terms.
+No. When your organization configures a **Custom AI provider**, the Dastra credit system is disabled for the generation features of the AI assistant: no credits are counted. Consumption is managed directly by your provider according to its own billing terms. Dastra AI and agents use Dastra's models: their messages still consume the credit quota and are blocked once it is reached.
 
 ***
 

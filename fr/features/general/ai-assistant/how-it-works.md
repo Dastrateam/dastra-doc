@@ -35,7 +35,7 @@ Le propriétaire de l'organisation choisit la famille de modèles dans **Paramè
 
 <figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Familles de modèles de l'assistant IA, dont le Custom AI provider"><figcaption><p>Le Fournisseur d'IA personnalisé (Custom AI provider) parmi les familles de modèles</p></figcaption></figure>
 
-Dastra vous permet de connecter votre propre fournisseur d'IA avec une clé d'API, à condition qu'il soit compatible avec le standard OpenAI API. Les fournisseurs proposés sont OpenAI, Google, Anthropic, Mistral et Azure AI Foundry. L'option **Autre** accepte tout autre point d'accès compatible, y compris un LLM auto-hébergé.
+Dastra vous permet de connecter votre propre fournisseur d'IA avec une clé d'API, à condition qu'il soit compatible avec le standard OpenAI API. Les fournisseurs proposés sont OpenAI, Google, Anthropic, Mistral et Azure AI Foundry. L'option **Autre** accepte tout autre point d'accès compatible, y compris un LLM auto-hébergé. Le fournisseur personnalisé s'applique aux fonctions de génération de l'assistant IA (les boutons des modules). Dastra AI (chat), les agents et le serveur MCP continuent d'utiliser les modèles de Dastra.
 
 Pour configurer un fournisseur personnalisé, sélectionnez la famille **Modèles AI personnalisés** dans **Paramètres de l'organisation** > **Assistant IA**. Dans le bloc **Identifiants de fournisseur d'IA**, cliquez sur **Ajouter des identifiants**, renseignez le fournisseur et sa clé d'API, puis associez un modèle à chacun des trois niveaux (Rapide, Avancé, Contexte étendu).
 
@@ -61,7 +61,7 @@ Le détail exact des données transmises par fonctionnalité figure dans la sect
 
 Avant l'envoi d'une demande de génération, Dastra applique un filtre qui masque les adresses e-mail, les numéros de téléphone, les adresses postales, les codes postaux et les noms complets qu'il reconnaît dans le texte. Le filtre suit les formats européens. Il laisse intacts les dates, les identifiants et les numéros de norme comme ISO 27001, afin que le modèle conserve les données métier dont il a besoin.
 
-La **dictée vocale** de la zone de message de Dastra AI envoie votre enregistrement à un service de transcription, qui renvoie le texte. Dastra utilise Azure Speech sur la plateforme standard et Mistral Voxtral sur [Bleu](../../../security/bleu.md).
+La **dictée vocale** de la zone de message de Dastra AI envoie votre enregistrement à un service de transcription, qui renvoie le texte. Dastra ne conserve pas l'enregistrement. Dastra utilise Azure Speech sur la plateforme standard et Mistral Voxtral sur [Bleu](../../../security/bleu.md).
 
 ***
 
@@ -108,9 +108,11 @@ Une génération réussie consomme des crédits selon le type d'opération. Une 
 
 | Opération | Crédits |
 | --- | --- |
-| Génération d'un traitement, d'un actif, d'un acteur, d'un jeu de données, d'une mesure de sécurité, d'un système d'IA ou d'un modèle d'IA ; notice d'information ; proposition de tags ; réponse à une demande d'exercice de droits ; extraction des métadonnées d'un contrat ; suggestion de contrôles et de tests | 1 |
-| Analyse de risque, évaluation des critères d'AIPD, vérification d'une preuve de test, post-mortem de violation, rapport personnalisé | 2 |
+| Génération d'un traitement, d'un actif, d'un acteur, d'un jeu de données, d'une mesure de sécurité, d'un système d'IA ou d'un modèle d'IA ; notice d'information ; proposition de tags ; réponse à une demande d'exercice de droits ; extraction des métadonnées d'un contrat ; suggestion de contrôles et de tests ; génération d'un modèle de questionnaire ; justification de responsabilité d'un système d'IA ; suggestion de mapping ou d'action HTTP | 1 |
+| Analyse de risque, analyse de la valeur métier, évaluation des critères d'AIPD, vérification d'une preuve de test, post-mortem de violation, rapport personnalisé | 2 |
 | Réponse à un questionnaire et traduction d'un questionnaire | 1 par tranche de 25 questions |
+| Caviardage automatique d'un document | 1 par segment de document envoyé |
+| Message envoyé à Dastra AI ou à un agent | 1 par message, quel que soit le nombre d'outils utilisés |
 
 La carte **Utilisation** de **Paramètres de l'organisation** > **Assistant IA** indique la consommation du mois en cours, le quota de l'offre et la date de renouvellement. La **barre de progression** change de couleur selon la part du quota consommée :
 
@@ -120,6 +122,8 @@ La carte **Utilisation** de **Paramètres de l'organisation** > **Assistant IA**
 
 Lorsque le quota mensuel est atteint, un message vous en informe et propose de contacter l'équipe Dastra.
 
+Dans le panneau Dastra AI, tous les utilisateurs voient l'état du quota : un compteur discret à partir de 50 %, une bannière orange à partir de 80 %, puis une bannière rouge à 100 %, qui bloque l'envoi de nouveaux messages (l'historique reste consultable).
+
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Carte Utilisation de l'assistant IA avec la barre de progression du quota de crédits et l'explication du calcul"><figcaption><p>Suivi de la consommation de crédits IA du mois en cours</p></figcaption></figure>
 
 {% hint style="info" %}
@@ -127,7 +131,7 @@ Lorsque le quota est atteint, les fonctionnalités IA sont désactivées jusqu'a
 {% endhint %}
 
 {% hint style="info" %}
-**Fournisseur d'IA personnalisé : pas de décompte.** Lorsque votre organisation utilise un fournisseur d'IA personnalisé, le système de crédits Dastra ne s'applique pas. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation.
+**Fournisseur d'IA personnalisé : pas de décompte pour l'assistant IA.** Lorsque votre organisation utilise un fournisseur d'IA personnalisé, le système de crédits Dastra ne s'applique pas aux fonctions de génération de l'assistant IA. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation. Dastra AI et les agents utilisent les modèles de Dastra : leurs messages consomment toujours le quota de crédits et sont bloqués lorsqu'il est atteint.
 {% endhint %}
 
 ***

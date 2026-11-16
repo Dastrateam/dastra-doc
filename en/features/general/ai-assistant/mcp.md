@@ -8,7 +8,7 @@ description: >-
 
 The MCP (**Model Context Protocol**) server lets your AI assistant, code editor or terminal work with your Dastra data: search records, create entities, update fields, and more.
 
-In other words, instead of coming into Dastra, you ask the tool you already use — Claude, ChatGPT, Microsoft Copilot, Le Chat, Cursor… — to do it for you.
+In other words, instead of coming into Dastra, you ask the tool you already use (Claude, ChatGPT, Microsoft Copilot, Le Chat, Cursor…) to do it for you.
 
 Everything is configured in **Organization settings > Api keys & MCP > MCP Server** ([direct access](https://app.dastra.eu/general-settings/api)).
 
@@ -21,7 +21,7 @@ Everything is configured in **Organization settings > Api keys & MCP > MCP Serve
 {% hint style="warning" %}
 **Three conditions must be met:**
 
-* The MCP server is part of the **Dastra AI Pro** plan. If it is not included in your subscription, the tab stays visible but the connection is refused.
+* The MCP server is part of the **Dastra AI Pro** plan. If it is not included in your subscription, the tab stays visible but locked, and tool calls are refused.
 * Only an **account owner** can connect an AI tool.
 * **Each connection is scoped to a single workspace**: the one chosen when the sign-in is approved, or the one the API key is bound to. To work on two workspaces, create two connections.
 {% endhint %}
@@ -151,7 +151,7 @@ Once connected, your tool has around thirty Dastra tools at its disposal.
 
 | Tool | What it does |
 | --- | --- |
-| Searching the workspace | Broad search across every record type — the usual starting point |
+| Searching the workspace | Broad search across every record type: the usual starting point |
 | Browsing records | Lists and filters the records of a given type |
 | Reading a record | Fetches one record by type and identifier |
 | Inspecting record structure | Describes the fields and columns of a record type |
@@ -199,10 +199,12 @@ The MCP server exposes **tools only**. It publishes neither *resources* nor *pro
 
 A few points worth knowing:
 
-* **Scope** — a connection only sees one workspace, in one organization.
-* **Traceability** — writes performed through MCP are identified as coming from an AI agent. The last-used date of each key is visible in the API key list.
-* **Revocation** — a connection approved from the browser becomes an ordinary API key, visible and revocable in the **API keys** tab. Deleting the key cuts access immediately.
-* **Rate limits** — calls are limited to 60 requests per minute on the MCP server, and 120 requests per minute across all uses. Beyond that, the server answers a `429` error stating how long to wait.
+* **Scope**: a connection only sees one workspace, in one organization.
+* **Traceability**: writes performed through MCP are identified as coming from an AI agent. The last-used date of each key is visible in the API key list.
+* **Revocation**: a connection approved from the browser becomes an ordinary API key, visible and revocable in the **API keys** tab. Deleting the key cuts access immediately.
+* **Rate limits**: calls are limited to 60 requests per minute on the MCP server, and 120 requests per minute across all uses. Beyond that, the server answers a `429` error stating how long to wait.
+
+The MCP server tools are those of Dastra AI, with a few exceptions: code execution, agent creation and interface navigation do not exist on the MCP side. Conversely, the editing tools are available without the Ask or Edit mode of the chat, and Dastra does not display a confirmation request. Turn on confirmation before execution in your MCP client if you want to approve each change.
 
 {% hint style="warning" %}
 An API key used for MCP grants read **and write** access to an entire workspace. Treat it like a password: never publish it, and revoke it at the slightest doubt.
@@ -214,7 +216,7 @@ An API key used for MCP grants read **and write** access to an entire workspace.
 
 | Symptom | Likely cause |
 | --- | --- |
-| The connection is refused with a subscription message | The MCP server is not included in your plan — it requires Dastra AI Pro |
+| Tool calls are refused with a subscription message | The MCP server is not included in your plan. It requires Dastra AI Pro |
 | "API key must be bound to a specific workspace" | The key was created without a workspace: create a new one and fill in that field |
 | No Dastra tool appears in your client | The connection was not completed. In Claude, open the connector and click **Connect**; in Claude Code, type `/mcp` |
 | Le Chat refuses the API key | Expected: Le Chat only supports browser sign-in |

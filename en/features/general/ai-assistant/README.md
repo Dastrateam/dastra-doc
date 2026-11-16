@@ -8,7 +8,7 @@ description: >-
 
 Dastra's AI Assistant lets you generate and enrich workspace elements from simple text descriptions. It relies on generative AI models hosted on Azure, in France and the European Economic Area, without any data from your organization being used to train those models.
 
-The availability of the AI Assistant depends on your organization's plan, module by module. In a module that your plan does not include, the AI buttons are greyed out. To change the scope of your plan, contact our team.
+The availability of the AI Assistant depends on your organization's plan, module by module. In a module that your plan does not include, the AI buttons are greyed out, or do not appear for a few features. To change the scope of your plan, contact our team.
 
 ## AI as a starting point, not a final answer
 
@@ -32,12 +32,15 @@ Your organization's data is never used to train AI models. The models used by Da
 
 The assistant is available across several modules of the platform:
 
-* **Processing activities**: generate descriptions, datasets, security measures, privacy notices, and compliance analyses
-* **AI systems**: generate descriptions, notices, and risk analyses
-* **Questionnaires**: generate AI-assisted responses to DPIAs and risk analyses
-* **Data subject requests**: draft responses in multiple languages and registers
+* **Processing activities**: generate descriptions, datasets, security measures, privacy notices, the DPIA criteria assessment, and compliance analyses
+* **AI systems**: generate descriptions, notices, the role justification, risk analyses, and the business value assessment
+* **Questionnaires**: generate a template, translate it, and generate AI-assisted responses to DPIAs and risk analyses
+* **Data subject requests**: draft responses in multiple languages and registers, and redact documents automatically
+* **Data breaches**: generate a post-mortem
 * **Assets and stakeholders**: generate structured entries from a URL or free description
 * **Contracts**: extract metadata from an imported document
+* **Compliance**: suggest controls, tests and requirement references, and analyze test evidence
+* **Workflow rules and integrations**: generate an HTTP action or suggest a field mapping
 * **Custom documents and reports**: generate content from your own instructions
 
 For a step-by-step guide to each feature, see [Use cases](use-cases.md).
@@ -51,6 +54,8 @@ All AI features share the monthly AI credit quota described in [How it works](ho
 ## Chat with Dastra AI
 
 **Dastra AI** answers questions about your workspace in a conversation. It looks up your records with read-only tools, so you can ask for a summary, a list of overdue requests or the processing activities that have no DPIA.
+
+To answer, Dastra AI can also rely on the regulatory base indexed by Dastra, on the Dastra documentation and on a web search. In Edit mode, it can create records, update fields, create an action plan, a questionnaire, a comment or a tag, and run record actions such as changing the workflow step. It can ask you clarifying questions before acting and direct you to the relevant record.
 
 1. Click **Open Dastra AI**, at the bottom right of the screen, or press **Ctrl+J** (**Cmd+J** on Mac).
 2. Type your question, or pick one of the **Suggested prompts**. They change with the page you are on: the record you are viewing, the register, requests, AI systems.
@@ -90,7 +95,7 @@ When using a beta feature:
 Beta features should never be the sole basis for a compliance decision. They are designed to support thorough human review, not replace it.
 {% endhint %}
 
-**Currently in beta**: the AI compliance analysis, available on processing activities, AI systems, contracts, stakeholders, assets and questionnaire responses. Open it with the **AI analysis (beta)** button of the record, or ask Dastra AI to analyze a record. The result gives a score from A to F, the assessed criteria and suggested tasks, and can be printed, relaunched or continued in the chat.
+**Currently in beta**: the AI compliance analysis, available on processing activities, AI systems, contracts, assets, stakeholders and audit response summaries. Open it with the **AI analysis (beta)** button of the record, or ask Dastra AI to analyze a record. The result gives a score from A to F, the assessed criteria and suggested tasks, and can be printed, relaunched or continued in the chat.
 
 ***
 

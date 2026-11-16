@@ -22,8 +22,8 @@ Runs in progress update live: there is no need to refresh the page.
 
 Click a row to open the detail. It has two tabs:
 
-* **Conversation** — the full trace: the agent's reasoning, the tools it called, and its final answer.
-* **Inputs** — the values of the input fields the run was launched with.
+* **Conversation**: the full trace: the agent's reasoning, the tools it called, and its final answer.
+* **Inputs**: the values of the input fields the run was launched with.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-inbox-detail.png" alt="Detail of an agent run"><figcaption><p>The detail of a run</p></figcaption></figure>
 
@@ -33,7 +33,7 @@ The **Continue in chat** button carries the result of the run into a new convers
 
 ### Statuses
 
-Some statuses are technical; others are **declared by the agent itself** at the end of its work — they are conclusions, not failures.
+Some statuses are technical; others are **declared by the agent itself** at the end of its work. They are conclusions, not failures.
 
 | Status | Meaning |
 | --- | --- |
@@ -59,4 +59,4 @@ If you are one of an agent's **notified users**, you receive a Dastra notificati
 
 ### Technical log
 
-For organization-level monitoring — model used, duration, user behind the call — see the **AI assistant invocation logs** in **Organization settings > Dastra AI**. They are kept for 90 days.
+For organization-level monitoring (model used, duration, user behind the call) see the **AI assistant invocation logs** in **Organization settings > Dastra AI**. They are kept for 90 days.

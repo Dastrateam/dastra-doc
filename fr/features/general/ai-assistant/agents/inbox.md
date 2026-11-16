@@ -22,8 +22,8 @@ Les exécutions en cours se mettent à jour en direct : inutile de rafraîchir l
 
 Cliquez sur une ligne pour ouvrir le détail. Il comporte deux onglets :
 
-* **Conversation** — le déroulé complet : le raisonnement de l'agent, les outils qu'il a appelés, et sa réponse finale.
-* **Données d'entrée** — les valeurs des champs de saisie avec lesquelles l'exécution a été lancée.
+* **Conversation** : le déroulé complet : le raisonnement de l'agent, les outils qu'il a appelés, et sa réponse finale.
+* **Données d'entrée** : les valeurs des champs de saisie avec lesquelles l'exécution a été lancée.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-inbox-detail.png" alt="Détail d&#x27;une exécution d&#x27;agent"><figcaption><p>Le détail d'une exécution</p></figcaption></figure>
 
@@ -59,4 +59,4 @@ Si vous figurez parmi les **utilisateurs notifiés** d'un agent, vous recevez un
 
 ### Journal technique
 
-Pour un suivi au niveau de l'organisation — modèle utilisé, durée, utilisateur à l'origine de l'appel — consultez les **logs d'exécution de l'assistant IA** dans **Paramètres de l'organisation > Assistant IA**. Ils sont conservés 90 jours.
+Pour un suivi au niveau de l'organisation (modèle utilisé, durée, utilisateur à l'origine de l'appel) consultez les **logs d'exécution de l'assistant IA** dans **Paramètres de l'organisation > Assistant IA**. Ils sont conservés 90 jours.

@@ -11,7 +11,7 @@ Un agent autonome exécute une tâche de bout en bout, sans personne devant l'é
 Rendez-vous dans **Réglages espace de travail > Agents IA**, cliquez sur **Créer un agent**, puis sur **Agent autonome**.
 
 {% hint style="warning" %}
-**Un agent autonome ne peut pas vous poser de question.** Les outils qui demandent une interaction — poser une question, naviguer dans l'interface, demander une confirmation — lui sont retirés. Son instruction doit donc couvrir tous les cas, y compris ce qu'il doit faire quand une information manque.
+**Un agent autonome ne peut pas vous poser de question.** Les outils qui demandent une interaction (poser une question, naviguer dans l'interface, demander une confirmation) lui sont retirés. Son instruction doit donc couvrir tous les cas, y compris ce qu'il doit faire quand une information manque.
 {% endhint %}
 
 ***
@@ -23,21 +23,21 @@ L'**instruction système** (10 000 caractères maximum) décrit la mission compl
 Une instruction système efficace est numérotée, explicite sur les limites, et précise le format du résultat attendu :
 
 ```
-Tu réalises la revue mensuelle du registre des traitements.
+Vous réalisez la revue mensuelle du registre des traitements.
 
 Étapes à suivre :
-1. Liste les fiches de traitement de l'unité organisationnelle indiquée
+1. Listez les fiches de traitement de l'unité organisationnelle indiquée
    dans le champ de saisie.
-2. Pour chaque fiche, vérifie que la finalité, la base légale, la durée
+2. Pour chaque fiche, vérifiez que la finalité, la base légale, la durée
    de conservation et les mesures de sécurité sont renseignées.
-3. Regroupe les manques constatés par fiche.
-4. Crée un plan d'action contenant une tâche par fiche incomplète, en
+3. Regroupez les manques constatés par fiche.
+4. Créez un plan d'action contenant une tâche par fiche incomplète, en
    précisant les champs à compléter.
 
-Ne modifie aucune fiche de traitement : limite-toi à la création des
+Ne modifiez aucune fiche de traitement : limitez-vous à la création des
 tâches du plan d'action.
 
-Termine par un résumé en français indiquant le nombre de fiches examinées,
+Terminez par un résumé en français indiquant le nombre de fiches examinées,
 le nombre de fiches incomplètes et les tâches créées.
 ```
 
@@ -66,7 +66,7 @@ Un agent sans aucun champ de saisie s'exécute sans rien demander.
 Le **Nom** est pré-rempli automatiquement à partir du libellé. Si vous le modifiez, vérifiez la valeur finale : c'est elle que vous devez citer dans l'instruction système.
 {% endhint %}
 
-L'**aperçu du formulaire**, à droite de l'éditeur, montre exactement ce que verront vos utilisateurs — et sert aussi à lancer une exécution de test.
+L'**aperçu du formulaire**, à droite de l'éditeur, montre exactement ce que verront vos utilisateurs. Il sert aussi à lancer une exécution de test.
 
 ***
 
@@ -86,7 +86,7 @@ Les utilisateurs notifiés reçoivent une notification Dastra lorsque l'agent **
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Bloc de planification d&#x27;un agent autonome, fréquence mensuelle"><figcaption><p>La planification d'un agent autonome</p></figcaption></figure>
 
-Choisissez une **fréquence** — Pas de planification, Quotidien, Hebdomadaire ou Mensuel — puis l'heure, et selon le cas le jour de la semaine ou le jour du mois.
+Choisissez une **fréquence** (Pas de planification, Quotidien, Hebdomadaire ou Mensuel) puis l'heure, et selon le cas le jour de la semaine ou le jour du mois.
 
 {% hint style="info" %}
 **Les heures sont affichées dans votre fuseau horaire**, comme l'indique la mention sous le formulaire. Dastra les enregistre en UTC : c'est pourquoi la vignette de l'agent dans la liste peut afficher une heure différente de celle que vous avez saisie.
@@ -110,7 +110,7 @@ L'agent part tout seul à la fréquence configurée. Les valeurs par défaut de 
 
 #### 3. Depuis une règle de workflow
 
-Dans **Réglages espace de travail > Règles de workflow**, l'action **Exécuter un agent IA** permet de déclencher un agent à partir d'un événement sur une fiche — un changement d'étape, une création, une échéance.
+Dans **Réglages espace de travail > Règles de workflow**, l'action **Exécuter un agent IA** permet de déclencher un agent à partir d'un événement sur une fiche (changement d'étape, création, échéance).
 
 Vous y choisissez l'agent, un message, et les valeurs de ses champs de saisie. Ces valeurs acceptent des **variables personnalisées** résolues depuis la fiche qui a déclenché la règle : l'agent reçoit donc un contexte différent à chaque exécution.
 

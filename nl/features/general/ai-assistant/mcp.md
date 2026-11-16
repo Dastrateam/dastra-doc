@@ -21,7 +21,7 @@ Alles wordt geconfigureerd bij **Organisatie-instellingen** > **API-sleutels** >
 {% hint style="warning" %}
 Aan drie voorwaarden moet zijn voldaan:
 
-* De MCP-server maakt deel uit van het abonnement Dastra AI Pro. Zit hij niet in uw abonnement, dan blijft het tabblad zichtbaar maar wordt de verbinding geweigerd.
+* De MCP-server maakt deel uit van het abonnement Dastra AI Pro. Zit hij niet in uw abonnement, dan blijft het tabblad zichtbaar maar is het vergrendeld, en worden aanroepen van tools geweigerd.
 * Alleen een eigenaar van het account kan een AI-tool verbinden.
 * Elke verbinding is beperkt tot één werkruimte: die welke u kiest wanneer de aanmelding wordt goedgekeurd, of die waaraan de API-sleutel is gekoppeld. Wilt u met twee werkruimten werken, maak dan twee verbindingen aan.
 {% endhint %}
@@ -204,6 +204,8 @@ Enkele punten om te weten:
 * Intrekken: een verbinding die vanuit de browser is goedgekeurd, wordt een gewone API-sleutel, zichtbaar en intrekbaar in het tabblad **API keys**. Verwijdert u de sleutel, dan is de toegang meteen weg.
 * Aanvraaglimieten: aanroepen zijn beperkt tot 60 verzoeken per minuut op de MCP-server en tot 120 verzoeken per minuut voor alle gebruik samen. Daarboven antwoordt de server met een fout `429` met de wachttijd.
 
+De tools van de MCP-server zijn die van Dastra AI, op enkele uitzonderingen na: het uitvoeren van code, het aanmaken van agents en het navigeren in de interface bestaan niet aan de MCP-kant. Omgekeerd zijn de bewerkingshulpmiddelen beschikbaar zonder de modus Ask of Edit van de chat, en toont Dastra geen bevestigingsverzoek. Schakel de bevestiging vóór uitvoering in in uw MCP-client als u elke wijziging wilt valideren.
+
 {% hint style="warning" %}
 Een API-sleutel die voor MCP wordt gebruikt, geeft lees- en schrijftoegang tot een hele werkruimte. Behandel hem als een wachtwoord: publiceer hem nooit en trek hem bij de minste twijfel in.
 {% endhint %}
@@ -214,7 +216,7 @@ Een API-sleutel die voor MCP wordt gebruikt, geeft lees- en schrijftoegang tot e
 
 | Symptoom | Waarschijnlijke oorzaak |
 | --- | --- |
-| De verbinding wordt geweigerd met een melding over het abonnement | De MCP-server zit niet in uw abonnement: hij vereist Dastra AI Pro |
+| Aanroepen van tools worden geweigerd met een melding over het abonnement | De MCP-server zit niet in uw abonnement. Hij vereist Dastra AI Pro |
 | "API key must be bound to a specific workspace" | De sleutel is zonder werkruimte aangemaakt: maak een nieuwe aan en vul dat veld in |
 | Er verschijnt geen Dastra-hulpmiddel in uw client | De verbinding is niet afgerond. Open in Claude de connector en klik op **Connect**; typ in Claude Code `/mcp` |
 | Le Chat weigert de API-sleutel | Verwacht: Le Chat ondersteunt alleen aanmelden via de browser |

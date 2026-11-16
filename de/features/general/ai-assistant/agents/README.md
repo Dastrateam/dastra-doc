@@ -78,7 +78,7 @@ Der Zugriff auf Agenten hängt von Ihrem **Tarif** und von Ihren **Berechtigunge
 Berechtigungen legen Sie unter **Organisationseinstellungen** > **Rollen und Berechtigungen** fest. Der [MCP-Server](../mcp.md) ist in einem separaten Tarif enthalten.
 
 {% hint style="info" %}
-Ein Agent hat nie mehr Rechte als die Person, die ihn auslöst. Seine Tools laufen mit Ihren eigenen Berechtigungen: Wenn Sie auf einen Eintrag nicht zugreifen können, kann es der Agent auch nicht.
+Ein Agent hat nie mehr Rechte als die Person, die ihn auslöst. Seine Tools laufen mit Ihren eigenen Berechtigungen: Wenn Sie auf einen Eintrag nicht zugreifen können, kann es der Agent auch nicht. Zerstörerische Aktionen (Löschen, Anonymisieren) werden ihm nie angeboten.
 {% endhint %}
 
 ***

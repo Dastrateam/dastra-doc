@@ -12,7 +12,7 @@ description: >-
 
 Toutes les fonctionnalités de génération utilisent la même fenêtre : décrivez l'élément à générer (ou partez de l'un des **Exemples** proposés), choisissez si besoin la langue de génération, puis cliquez sur **Générer**. La proposition s'affiche dans un écran de synthèse, à relire avant de cliquer sur **Valider**.
 
-Dans les listes, le bouton de génération est une icône IA placée à gauche du bouton de création. Il est grisé si votre offre n'inclut pas la fonctionnalité. Chaque génération consomme des [crédits IA](how-it-works.md#credits-et-quotas-ia).
+Dans les listes, le bouton de génération est une icône IA placée à gauche du bouton de création. Il est grisé si votre offre n'inclut pas la fonctionnalité. Quelques fonctions, signalées dans les sections concernées, n'apparaissent pas du tout dans ce cas. Chaque génération consomme des [crédits IA](how-it-works.md#credits-et-quotas-ia).
 
 ***
 
@@ -52,6 +52,8 @@ L'onglet d'analyse d'un traitement évalue les 9 critères de l'AIPD du CEPD à 
 2. Dans la section **Évaluation des 9 critères de l'AIPD (CEPD)**, cliquez sur **Générer l'évaluation**
 3. Cliquez sur **Générer** dans la fenêtre qui s'ouvre, puis relisez le résultat
 
+Le bouton **Générer l'évaluation** n'apparaît pas si votre offre n'inclut pas cette fonctionnalité.
+
 ### Générer une analyse de conformité d'un traitement
 
 L'assistant peut analyser un traitement existant et produire une évaluation de sa conformité au regard des exigences documentaires RGPD.
@@ -62,13 +64,13 @@ L'assistant peut analyser un traitement existant et produire une évaluation de 
 
 Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF ou l'envoyer directement à l'impression. Ce document peut servir de pièce jointe dans votre dossier de conformité.
 
-### Analyser un contrat, un acteur, une application ou une réponse de questionnaire
+### Analyser un système d'IA, un contrat, un actif, un acteur ou une synthèse de réponses
 
-La même analyse est disponible sur les contrats, les acteurs, les applications et les réponses de questionnaire. Ouvrez la fiche, puis cliquez sur le bouton **Analyse IA**. La fenêtre affiche la note globale de A à F, les critères analysés avec leur justification et les tâches suggérées. **Historique des analyses** permet de comparer avec une analyse précédente, et **Imprimer l'analyse** exporte le résultat.
+La même analyse est disponible sur les systèmes d'IA, les contrats, les actifs, les acteurs et la synthèse des réponses d'un questionnaire. Ouvrez la fiche, puis cliquez sur le bouton **Analyse IA**. La fenêtre affiche la note globale de A à F, les critères analysés avec leur justification et les tâches suggérées. **Historique des analyses** permet de comparer avec une analyse précédente, et **Imprimer l'analyse** exporte le résultat.
 
 ### Proposer des tags
 
-Dans un champ **Tags** encore vide, un bouton d'assistant IA propose des tags à partir du nom et de la description de l'objet. Cliquez dessus : les tags proposés remplissent le champ. Pour la gestion des tags, consultez la page [Gestion des tags](../tags.md).
+Dans un champ **Tags** encore vide, un bouton d'assistant IA propose des tags à partir du nom et de la description de l'objet. Cliquez dessus : les tags proposés remplissent le champ. Le bouton existe sur les traitements, les systèmes d'IA, les violations, les documents de contrat, les demandes d'exercice de droits, les tâches, les acteurs, les actifs et les règles de conservation. Pour la gestion des tags, consultez la page [Gestion des tags](../tags.md).
 
 ***
 
@@ -154,6 +156,10 @@ Générez des réponses dans plusieurs langues, avec des options de personnalisa
 Une limitation du nombre d'appels par minute est en place pour cette fonctionnalité.
 {% endhint %}
 
+### Caviarder automatiquement un document
+
+Depuis une pièce jointe de la demande, l'éditeur de caviardage propose le bouton **Caviarder auto.** : l'IA repère les données personnelles de tiers et place les zones d'occultation à valider. Le bouton n'apparaît que si l'occultation par IA est incluse dans votre offre. Chaque segment de document envoyé consomme 1 crédit. Voir [Caviarder un document](../../requests/redaction.md).
+
 {% hint style="info" %}
 **Règlement IA, article 50** : lorsqu'une réponse est générée par l'assistant IA, l'obligation stricte de l'art. 50(1) (informer la personne qu'elle interagit avec un système d'IA) ne s'applique **pas**, car il n'y a pas d'interaction directe entre le système d'IA et la personne concernée : c'est un utilisateur humain qui relit, valide et envoie la réponse. Il reste toutefois recommandé d'informer la personne concernée à titre de bonne pratique RGPD (art. 5(1)(a) loyauté). Consultez la [FAQ](faq.md) pour l'analyse complète.
 {% endhint %}
@@ -186,6 +192,10 @@ Dans le module **Contrats**, cliquez sur le bouton de création, puis sur **Impo
 
 Saisissez vos propres instructions et fournissez éventuellement un contenu source. L'assistant génère un document structuré selon vos spécifications. Dans le module **Contrats**, cliquez sur le bouton de création, puis sur **Générer un document**.
 
+### Générer un document depuis le gestionnaire de fichiers
+
+Dans l'éditeur de document du gestionnaire de fichiers, cliquez sur **Générer avec AI**, décrivez le document, puis choisissez si besoin un actif et un traitement qui serviront de contexte.
+
 ### Générer un rapport personnalisé
 
 Depuis le module **Rapports personnalisés**, cliquez sur l'icône IA **Générer un rapport personnalisé avec l'IA** et décrivez le rapport souhaité en langage naturel. L'assistant produit une première version que vous pouvez affiner.
@@ -206,9 +216,13 @@ La même démarche existe pour les modèles d'IA : décrivez le modèle (nom, é
 
 Depuis la fiche d'un système d'IA, cliquez sur **Générer une notice** pour produire automatiquement le document d'information destiné aux utilisateurs ou aux personnes concernées.
 
+### Générer la justification du rôle
+
+Dans la fiche d'un système d'IA, à côté du choix de votre responsabilité (fournisseur, déployeur, etc.), cliquez sur l'icône IA **Générer une description de la responsabilité avec l'IA** pour obtenir une proposition de justification.
+
 ### Générer une analyse de risque d'un système d'IA
 
-L'assistant analyse les champs renseignés dans la fiche du système d'IA et produit une évaluation des risques associés.
+L'assistant analyse les champs renseignés dans la fiche du système d'IA et produit une évaluation des risques associés. Dans la fiche, le bouton s'appelle **Générer classification** ; il n'apparaît pas si votre offre n'inclut pas cette fonctionnalité.
 
 {% hint style="info" %}
 **Fonctionnalité en bêta** : à traiter avec une vigilance accrue et à valider par un expert avant toute décision.
@@ -217,6 +231,20 @@ L'assistant analyse les champs renseignés dans la fiche du système d'IA et pro
 Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de conformité AI Act.
 
 <figure><img src="../../../.gitbook/assets/impression-analyse-ia.png" alt="Panneau d'analyse IA avec les boutons Imprimer l'analyse et Relancer l'analyse"><figcaption><p>Le bouton « Imprimer l'analyse » permet d'exporter le résultat de l'analyse au format PDF</p></figcaption></figure>
+
+### Générer l'évaluation de la valeur métier
+
+Dans la partie de la fiche consacrée au bénéfice attendu du système d'IA, cliquez sur **Générer l'évaluation** pour obtenir une analyse de la valeur métier. Le bouton n'apparaît pas si votre offre n'inclut pas cette fonctionnalité.
+
+***
+
+## Règles de workflow et intégrations
+
+* **Description d'une règle** : dans la fenêtre de titre d'une règle de workflow, cliquez sur **Générer** pour obtenir une description de la règle.
+* **Action HTTP** : dans une action de type requête HTTP, cliquez sur **Générer avec l'IA** pour pré-remplir la requête. Le bouton est réservé aux utilisateurs qui gèrent les intégrations.
+* **Mapping de champs d'une intégration** : cliquez sur **Suggérer par IA** pour proposer le mapping de tous les champs, ou sur **Suggérer ce champ par IA** sur une ligne pour un seul champ.
+
+Ces boutons n'apparaissent pas si votre offre n'inclut pas l'assistant IA.
 
 ***
 

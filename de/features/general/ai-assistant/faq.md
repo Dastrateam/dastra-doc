@@ -60,7 +60,7 @@ Die erstellten Ergebnisse sind Ausgangsvorschläge, keine endgültigen Antworten
 
 Einige KI-Funktionen werden als Beta veröffentlicht: Sie sind einsatzbereit, werden aber weiter verfeinert. Die Ergebnisse können weniger konsistent sein als bei stabilen Funktionen und sollten mit besonderer Sorgfalt behandelt werden.
 
-Derzeit in der Beta: die Compliance-Analyse von Verarbeitungstätigkeiten und die Compliance-Analyse von KI-Systemen.
+Derzeit in der Beta ist die KI-Compliance-Analyse (Schaltfläche **KI-Analyse**), verfügbar für Verarbeitungstätigkeiten, KI-Systeme, Verträge, Assets, Stakeholder und Zusammenfassungen von Fragebogenantworten.
 
 ***
 
@@ -80,7 +80,7 @@ Der Inhaber der Organisation öffnet **Organisationseinstellungen** > **KI-Assis
 
 **Kann ich meinen eigenen KI-Anbieter anbinden?**
 
-Ja, mit der Familie des benutzerdefinierten KI-Anbieters. Jeder Anbieter, der mit dem OpenAI-API-Standard kompatibel ist, kann angebunden werden: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry oder ein selbst gehostetes LLM. Konfigurieren Sie Ihre Zugangsdaten unter **Organisationseinstellungen** > **KI-Assistent** im Block **Anmeldedaten des KI-Anbieters**.
+Ja, mit der Familie des benutzerdefinierten KI-Anbieters. Jeder Anbieter, der mit dem OpenAI-API-Standard kompatibel ist, kann angebunden werden: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry oder ein selbst gehostetes LLM. Konfigurieren Sie Ihre Zugangsdaten unter **Organisationseinstellungen** > **KI-Assistent** im Block **Anmeldedaten des KI-Anbieters**. Der benutzerdefinierte Anbieter gilt für die Erstellungsfunktionen des KI-Assistenten, nicht für Dastra AI (Chat), die Agenten oder den MCP-Server.
 
 {% hint style="warning" %}
 Bei einem benutzerdefinierten KI-Anbieter gelten die in dieser Dokumentation beschriebenen Azure-Garantien nicht mehr. Die Daten unterliegen der Richtlinie Ihres Anbieters.
@@ -120,7 +120,7 @@ Um Ihr Kontingent zu erhöhen oder eine vorzeitige Erneuerung zu beantragen, wen
 
 **Gilt das Credit-System auch bei einem benutzerdefinierten KI-Anbieter?**
 
-Nein. Wenn Ihre Organisation einen **benutzerdefinierten KI-Anbieter** konfiguriert, ist das Credit-System von Dastra deaktiviert: Es werden keine Credits gezählt. Der Verbrauch wird direkt von Ihrem Anbieter nach dessen eigenen Abrechnungsbedingungen verwaltet.
+Nein. Wenn Ihre Organisation einen **benutzerdefinierten KI-Anbieter** konfiguriert, ist das Credit-System von Dastra für die Erstellungsfunktionen des KI-Assistenten deaktiviert: Es werden keine Credits gezählt. Der Verbrauch wird direkt von Ihrem Anbieter nach dessen eigenen Abrechnungsbedingungen verwaltet. Dastra AI und die Agenten nutzen die Modelle von Dastra: Ihre Nachrichten verbrauchen weiterhin das Credit-Kontingent und werden gesperrt, sobald es erreicht ist.
 
 ***
 

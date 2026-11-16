@@ -60,7 +60,7 @@ Les résultats générés sont des propositions de départ, pas des réponses d�
 
 Certaines fonctionnalités IA sont publiées en version bêta : elles sont opérationnelles mais continuent d'être affinées. Les résultats peuvent être moins constants que dans les fonctionnalités stables et doivent être traités avec une vigilance accrue.
 
-Sont actuellement en bêta : l'analyse de conformité des traitements et l'analyse de conformité des systèmes d'IA.
+Est actuellement en bêta l'analyse de conformité par l'IA (bouton **Analyse IA**), disponible sur les traitements, les systèmes d'IA, les contrats, les actifs, les acteurs et les synthèses de réponses d'audit.
 
 ***
 
@@ -80,7 +80,7 @@ Le propriétaire de l'organisation ouvre **Paramètres de l'organisation** > **A
 
 **Puis-je connecter mon propre fournisseur d'IA ?**
 
-Oui, avec la famille **Modèles AI personnalisés** (Custom AI provider). Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation** > **Assistant IA**, bloc **Identifiants de fournisseur d'IA**.
+Oui, avec la famille **Modèles AI personnalisés** (Custom AI provider). Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation** > **Assistant IA**, bloc **Identifiants de fournisseur d'IA**. Le fournisseur personnalisé s'applique aux fonctions de génération de l'assistant IA, pas à Dastra AI (chat), aux agents ni au serveur MCP.
 
 {% hint style="warning" %}
 Avec un fournisseur d'IA personnalisé, les garanties Azure décrites dans cette documentation ne s'appliquent plus. Les données sont soumises à la politique de votre fournisseur.
@@ -120,7 +120,7 @@ Pour augmenter votre quota ou anticiper un renouvellement, contactez notre équi
 
 **Le décompte de crédits s'applique-t-il avec un fournisseur d'IA personnalisé ?**
 
-Non. Lorsque votre organisation configure un **fournisseur d'IA personnalisé**, le système de crédits Dastra est désactivé : aucun crédit n'est décompté. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation.
+Non. Lorsque votre organisation configure un **fournisseur d'IA personnalisé**, le système de crédits Dastra est désactivé pour les fonctions de génération de l'assistant IA : aucun crédit n'est décompté. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation. Dastra AI et les agents utilisent les modèles de Dastra : leurs messages consomment toujours le quota de crédits et sont bloqués lorsqu'il est atteint.
 
 ***
 

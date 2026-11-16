@@ -41,6 +41,8 @@ Typ `/` in een gesprek met Dastra AI: de lijst met beschikbare skills verschijnt
 Een skill geldt voor het huidige gesprek, met de agent en de modus (Ask of Edit) die op dat moment zijn geselecteerd. Een skill die records moet wijzigen, vereist dus de modus Edit.
 {% endhint %}
 
+Een skill aanmaken, wijzigen of verwijderen vereist de machtiging voor het beheer van aangepaste AI-agents, maar niet de abonnementsoptie voor aangepaste agents. Een skill gebruiken vereist alleen toegang tot de assistent.
+
 ***
 
 ## Skill of agent

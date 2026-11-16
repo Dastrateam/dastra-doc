@@ -36,7 +36,7 @@ Der Inhaber der Organisation wählt die Modellfamilie unter **Organisationseinst
 
 <figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Modellfamilien des KI-Assistenten, einschließlich des benutzerdefinierten KI-Anbieters"><figcaption><p>Der benutzerdefinierte KI-Anbieter unter den Modellfamilien</p></figcaption></figure>
 
-Sie können Ihren eigenen KI-Anbieter über einen API-Schlüssel anbinden, sofern er mit dem OpenAI-API-Standard kompatibel ist. Angeboten werden OpenAI, Google, Anthropic, Mistral und Azure AI Foundry. Die Option **Other** akzeptiert jeden anderen kompatiblen Endpunkt, auch ein selbst gehostetes LLM.
+Sie können Ihren eigenen KI-Anbieter über einen API-Schlüssel anbinden, sofern er mit dem OpenAI-API-Standard kompatibel ist. Angeboten werden OpenAI, Google, Anthropic, Mistral und Azure AI Foundry. Die Option **Other** akzeptiert jeden anderen kompatiblen Endpunkt, auch ein selbst gehostetes LLM. Der benutzerdefinierte Anbieter gilt für die Erstellungsfunktionen des KI-Assistenten (die Schaltflächen in den Modulen). Dastra AI (Chat), die Agenten und der MCP-Server nutzen weiterhin die Modelle von Dastra.
 
 Um einen benutzerdefinierten Anbieter zu konfigurieren, wählen Sie unter **Organisationseinstellungen** > **KI-Assistent** die Familie **Maßgeschneiderte KI-Modelle** aus. Klicken Sie im Block **Anmeldedaten des KI-Anbieters** auf **Anmeldedaten hinzufügen**, geben Sie den Anbieter und seinen API-Schlüssel ein und weisen Sie dann jeder der drei Stufen (Fast, Smart, Large context) ein Modell zu.
 
@@ -62,7 +62,7 @@ Die genau übermittelten Daten pro Funktion sind im Abschnitt [An das Modell üb
 
 Bevor eine Erstellungsanfrage gesendet wird, wendet Dastra einen Filter an, der die E-Mail-Adressen, Telefonnummern, Postanschriften, Postleitzahlen und vollständigen Namen maskiert, die er im Text erkennt. Der Filter folgt europäischen Formaten. Daten, Kennungen und Standardnummern wie ISO 27001 lässt er unverändert, damit das Modell die benötigten fachlichen Daten behält.
 
-Die **Sprachdiktat-Funktion** im Nachrichtenfeld von Dastra AI sendet Ihre Aufnahme an einen Spracherkennungsdienst, der den transkribierten Text zurückgibt. Dastra verwendet Azure Speech auf der Standardplattform und Mistral Voxtral auf [Bleu](../../../security/bleu.md).
+Die **Sprachdiktat-Funktion** im Nachrichtenfeld von Dastra AI sendet Ihre Aufnahme an einen Spracherkennungsdienst, der den transkribierten Text zurückgibt. Dastra speichert die Aufnahme nicht. Dastra verwendet Azure Speech auf der Standardplattform und Mistral Voxtral auf [Bleu](../../../security/bleu.md).
 
 ***
 
@@ -109,9 +109,11 @@ Eine erfolgreiche Erstellung verbraucht je nach Art des Vorgangs Credits. Eine f
 
 | Vorgang | Credits |
 | --- | --- |
-| Erstellen einer Verarbeitungstätigkeit, eines Assets, eines Stakeholders, einer Datenkategorie, einer Sicherheitsmaßnahme, eines KI-Systems oder eines KI-Modells; Datenschutzerklärung; Tag-Vorschlag; Antwort auf eine Anfrage zur Ausübung von Rechten; Extraktion von Vertragsmetadaten; Vorschläge für Kontrollen und Tests | 1 |
-| Risikoanalyse, Bewertung der DSFA-Kriterien, Überprüfung von Testnachweisen, Nachbetrachtung eines Datenschutzvorfalls, eigener Bericht | 2 |
+| Erstellen einer Verarbeitungstätigkeit, eines Assets, eines Stakeholders, einer Datenkategorie, einer Sicherheitsmaßnahme, eines KI-Systems oder eines KI-Modells; Datenschutzerklärung; Tag-Vorschlag; Antwort auf eine Anfrage zur Ausübung von Rechten; Extraktion von Vertragsmetadaten; Vorschläge für Kontrollen und Tests; Erstellen einer Fragebogenvorlage; Begründung der Verantwortlichkeit eines KI-Systems; Vorschlag eines Mappings oder einer HTTP-Aktion | 1 |
+| Risikoanalyse, Analyse des geschäftlichen Nutzens, Bewertung der DSFA-Kriterien, Überprüfung von Testnachweisen, Nachbetrachtung eines Datenschutzvorfalls, eigener Bericht | 2 |
 | Beantwortung eines Fragebogens und Übersetzung eines Fragebogens | 1 pro 25 Fragen |
+| Automatische Schwärzung eines Dokuments | 1 pro gesendetem Dokumentsegment |
+| Nachricht an Dastra AI oder an einen Agenten | 1 pro Nachricht, unabhängig von der Anzahl der verwendeten Tools |
 
 Die Karte **Anwendung** unter **Organisationseinstellungen** > **KI-Assistent** zeigt den Verbrauch des aktuellen Monats, das Kontingent des Tarifs und das Erneuerungsdatum. Der Fortschrittsbalken ändert seine Farbe je nach verbrauchtem Anteil des Kontingents:
 
@@ -121,6 +123,8 @@ Die Karte **Anwendung** unter **Organisationseinstellungen** > **KI-Assistent** 
 
 Ist das monatliche Kontingent erreicht, informiert Sie eine Meldung und bietet an, das Dastra-Team zu kontaktieren.
 
+Im Dastra-AI-Fenster sehen alle Nutzer den Stand des Kontingents: einen dezenten Zähler ab 50 %, ein orangefarbenes Banner ab 80 % und ein rotes Banner bei 100 %, das das Senden neuer Nachrichten blockiert (der Verlauf bleibt einsehbar).
+
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Karte Anwendung des KI-Assistenten mit dem Fortschrittsbalken des Credit-Kontingents und der Erläuterung der Berechnung"><figcaption><p>Verfolgung des KI-Credit-Verbrauchs im aktuellen Monat</p></figcaption></figure>
 
 {% hint style="info" %}
@@ -128,7 +132,7 @@ Ist das Kontingent erreicht, sind die KI-Funktionen bis zur nächsten Erneuerung
 {% endhint %}
 
 {% hint style="info" %}
-**Benutzerdefinierter KI-Anbieter: keine Credit-Zählung.** Wenn Ihre Organisation einen benutzerdefinierten KI-Anbieter verwendet, gilt das Credit-System von Dastra nicht. Der Verbrauch wird direkt von Ihrem eigenen Anbieter nach dessen eigenen Abrechnungsbedingungen verwaltet.
+**Benutzerdefinierter KI-Anbieter: keine Credit-Zählung für den KI-Assistenten.** Wenn Ihre Organisation einen benutzerdefinierten KI-Anbieter verwendet, gilt das Credit-System von Dastra nicht für die Erstellungsfunktionen des KI-Assistenten. Der Verbrauch wird direkt von Ihrem eigenen Anbieter nach dessen eigenen Abrechnungsbedingungen verwaltet. Dastra AI und die Agenten nutzen die Modelle von Dastra: Ihre Nachrichten verbrauchen weiterhin das Credit-Kontingent und werden gesperrt, sobald es erreicht ist.
 {% endhint %}
 
 ***

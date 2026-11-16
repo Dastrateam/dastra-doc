@@ -41,6 +41,8 @@ Geben Sie in einer Dastra-AI-Unterhaltung `/` ein: Die Liste der verfügbaren Ko
 Eine Kompetenz gilt für die aktuelle Unterhaltung, mit dem Agenten und dem Modus (**Frage** oder **Ausgabe**), die gerade ausgewählt sind. Eine Kompetenz, die Einträge ändern muss, erfordert daher den Modus **Ausgabe**.
 {% endhint %}
 
+Eine Kompetenz zu erstellen, zu ändern oder zu löschen erfordert die Berechtigung zur Verwaltung benutzerdefinierter KI-Agenten, nicht aber die Tarifoption „benutzerdefinierte Agenten“. Eine Kompetenz zu verwenden erfordert nur den Zugriff auf den Assistenten.
+
 ***
 
 ## Kompetenz und Agent im Vergleich

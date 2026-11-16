@@ -75,7 +75,9 @@ In der Unterhaltung wechselt eine Auswahl zwischen zwei Modi:
 * **Frage**: Der Agent hat nur Lesezugriff. Er kann suchen, lesen und analysieren, aber nichts wird geändert.
 * **Ausgabe**: Der Agent kann Einträge erstellen und ändern. Bearbeitungstools sind nur in diesem Modus verfügbar.
 
-Der Bearbeitungsmodus hängt von Ihrem Tarif und von der entsprechenden Berechtigung ab. Steht er Ihnen nicht zur Verfügung, erscheint die Auswahl nicht, und die Bearbeitungstools bleiben inaktiv, selbst wenn sie in der Agentendefinition angehakt sind.
+Der Bearbeitungsmodus hängt von Ihrem Tarif und von der entsprechenden Berechtigung ab. Enthält Ihr Tarif ihn nicht, ist die Option **Ausgabe** gesperrt. Ohne die Schreibberechtigung für den Assistenten erscheint die Auswahl nicht. In beiden Fällen bleiben die Bearbeitungstools inaktiv, selbst wenn sie in der Agentendefinition angehakt sind.
+
+In der Unterhaltung verlangt jedes Bearbeitungstool vor der Ausführung Ihre Bestätigung. Der Agent kann einen Eintrag weder löschen noch anonymisieren: Diese Aktionen werden ihm nicht angeboten.
 
 ***
 

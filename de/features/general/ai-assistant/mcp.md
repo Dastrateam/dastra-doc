@@ -21,7 +21,7 @@ Alles konfigurieren Sie unter **Organisationseinstellungen** > **API-Schlüssel 
 {% hint style="warning" %}
 **Drei Voraussetzungen müssen erfüllt sein:**
 
-* Der MCP-Server gehört zum Tarif **Dastra AI Pro**. Ist er in Ihrem Abonnement nicht enthalten, bleibt der Tab sichtbar, aber die Verbindung wird abgelehnt.
+* Der MCP-Server gehört zum Tarif **Dastra AI Pro**. Ist er in Ihrem Abonnement nicht enthalten, bleibt der Tab sichtbar, aber gesperrt, und Tool-Aufrufe werden abgelehnt.
 * Nur ein **Kontoinhaber** kann ein KI-Tool verbinden.
 * **Jede Verbindung ist auf einen einzigen Mandanten beschränkt**: den, der bei der Freigabe der Anmeldung gewählt wird, oder den, an den der API-Schlüssel gebunden ist. Um an zwei Mandanten zu arbeiten, legen Sie zwei Verbindungen an.
 {% endhint %}
@@ -204,6 +204,8 @@ Einige Punkte, die Sie kennen sollten:
 * **Widerruf**: Eine im Browser freigegebene Verbindung wird zu einem gewöhnlichen API-Schlüssel, der im Tab **API keys** sichtbar ist und widerrufen werden kann. Löschen Sie den Schlüssel, ist der Zugriff sofort gesperrt.
 * **Ratenbegrenzung**: Aufrufe sind auf 60 Anfragen pro Minute am MCP-Server und auf 120 Anfragen pro Minute über alle Nutzungen hinweg begrenzt. Darüber hinaus antwortet der Server mit einem Fehler `429` und nennt die Wartezeit.
 
+Die Tools des MCP-Servers sind die von Dastra AI, mit wenigen Ausnahmen: Code-Ausführung, das Erstellen von Agenten und die Navigation in der Oberfläche gibt es auf der MCP-Seite nicht. Dafür stehen die Bearbeitungstools ohne den Modus Frage oder Ausgabe des Chats zur Verfügung, und Dastra zeigt keine Bestätigungsabfrage an. Aktivieren Sie in Ihrem MCP-Client die Bestätigung vor der Ausführung, wenn Sie jede Änderung freigeben möchten.
+
 {% hint style="warning" %}
 Ein für MCP verwendeter API-Schlüssel gewährt Lese- **und Schreibzugriff** auf einen ganzen Mandanten. Behandeln Sie ihn wie ein Passwort: Veröffentlichen Sie ihn nie und widerrufen Sie ihn bei der geringsten Unsicherheit.
 {% endhint %}
@@ -214,7 +216,7 @@ Ein für MCP verwendeter API-Schlüssel gewährt Lese- **und Schreibzugriff** au
 
 | Symptom | Wahrscheinliche Ursache |
 | --- | --- |
-| Die Verbindung wird mit einer Meldung zum Abonnement abgelehnt | Der MCP-Server ist in Ihrem Tarif nicht enthalten: Er erfordert Dastra AI Pro |
+| Tool-Aufrufe werden mit einer Meldung zum Abonnement abgelehnt | Der MCP-Server ist in Ihrem Tarif nicht enthalten. Er erfordert Dastra AI Pro |
 | „API key must be bound to a specific workspace“ | Der Schlüssel wurde ohne Mandant erstellt: Erstellen Sie einen neuen und füllen Sie dieses Feld aus |
 | In Ihrem Client erscheint kein Dastra-Tool | Die Verbindung wurde nicht abgeschlossen. Öffnen Sie in Claude den Konnektor und klicken Sie auf **Connect**, geben Sie in Claude Code `/mcp` ein |
 | Le Chat lehnt den API-Schlüssel ab | Das ist erwartet: Le Chat unterstützt nur die Anmeldung im Browser |

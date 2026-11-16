@@ -75,7 +75,9 @@ In het gesprek schakelt een keuzelijst tussen twee modi:
 * **Ask**: de agent heeft alleen leesrechten. Hij kan zoeken, lezen en analyseren, maar er wordt niets gewijzigd.
 * **Edit**: de agent kan records aanmaken en bijwerken. Bewerkingshulpmiddelen zijn alleen in deze modus beschikbaar.
 
-De modus Edit hangt af van uw abonnement en van de bijbehorende machtiging. Is die niet beschikbaar voor u, dan verschijnt de keuzelijst niet en blijven de bewerkingshulpmiddelen inactief, ook als ze in de definitie van de agent zijn aangevinkt.
+De modus Edit hangt af van uw abonnement en van de bijbehorende machtiging. Als uw abonnement de modus niet bevat, is de optie **Edit** vergrendeld. Zonder de schrijfmachtiging van de assistent verschijnt de keuzelijst niet. In beide gevallen blijven de bewerkingshulpmiddelen inactief, ook als ze in de definitie van de agent zijn aangevinkt.
+
+In het gesprek vraagt elk bewerkingshulpmiddel om uw bevestiging voordat het wordt uitgevoerd. De agent kan een record niet verwijderen of anonimiseren: die acties worden hem niet aangeboden.
 
 ***
 

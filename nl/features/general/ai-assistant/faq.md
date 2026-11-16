@@ -46,7 +46,7 @@ Gegenereerde resultaten zijn uitgangsvoorstellen, geen definitieve antwoorden. Z
 
 Sommige AI-functies verschijnen eerst in bèta: ze werken, maar worden nog verfijnd. De resultaten kunnen minder consistent zijn dan bij stabiele functies en vragen extra zorg.
 
-Momenteel in bèta: de conformiteitsanalyse van verwerkingsactiviteiten en de conformiteitsanalyse van AI-systemen.
+Momenteel in bèta is de AI-conformiteitsanalyse (knop **AI analysis (beta)**), beschikbaar op verwerkingsactiviteiten, AI-systemen, contracten, activa, stakeholders en samenvattingen van auditantwoorden.
 
 ### Kan AI fouten maken bij juridische vragen?
 
@@ -60,7 +60,7 @@ De eigenaar van de organisatie opent **Organisatie-instellingen** > **Assistent 
 
 ### Kan ik mijn eigen AI-leverancier koppelen?
 
-Ja, met de familie **IA-leverancier**. Elke leverancier die compatibel is met de OpenAI-API-standaard kan worden gekoppeld: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry of een zelfgehoste LLM. Configureer uw inloggegevens in **Organisatie-instellingen** > **Assistent IA**, blok **Identificaties van IA-leverancier**.
+Ja, met de familie **IA-leverancier**. Elke leverancier die compatibel is met de OpenAI-API-standaard kan worden gekoppeld: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry of een zelfgehoste LLM. Configureer uw inloggegevens in **Organisatie-instellingen** > **Assistent IA**, blok **Identificaties van IA-leverancier**. De eigen leverancier geldt voor de generatiefuncties van de AI-assistent, niet voor Dastra AI (chat), agents of de MCP-server.
 
 {% hint style="warning" %}
 Bij een eigen AI-leverancier gelden de in deze documentatie beschreven Azure-garanties niet meer. De gegevens vallen onder het beleid van uw leverancier.
@@ -90,7 +90,7 @@ Neem contact op met ons team om uw quotum te verhogen of een vervroegde vernieuw
 
 ### Geldt het creditsysteem ook bij een eigen AI-leverancier?
 
-Nee. Wanneer uw organisatie een **IA-leverancier** configureert, is het creditsysteem van Dastra uitgeschakeld en worden er geen credits geteld. Het verbruik wordt rechtstreeks door uw leverancier beheerd volgens zijn eigen factureringsvoorwaarden.
+Nee. Wanneer uw organisatie een **IA-leverancier** configureert, is het creditsysteem van Dastra voor de generatiefuncties van de AI-assistent uitgeschakeld en worden er geen credits geteld. Het verbruik wordt rechtstreeks door uw leverancier beheerd volgens zijn eigen factureringsvoorwaarden. Dastra AI en agents gebruiken de modellen van Dastra: hun berichten verbruiken nog steeds het creditquotum en worden geblokkeerd zodra het is bereikt.
 
 ## AI-verordening (EU-verordening 2024/1689)
 

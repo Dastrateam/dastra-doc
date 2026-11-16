@@ -8,7 +8,7 @@ description: >-
 
 Mit dem KI-Assistenten von Dastra erstellen und ergänzen Sie Elemente Ihres Mandanten aus einfachen Textbeschreibungen. Er basiert auf generativen KI-Modellen, die auf Azure in Frankreich und im Europäischen Wirtschaftsraum gehostet werden, ohne dass Daten Ihrer Organisation zum Training dieser Modelle verwendet werden.
 
-Die Verfügbarkeit des KI-Assistenten hängt vom Tarif Ihrer Organisation ab, Modul für Modul. In einem Modul, das Ihr Tarif nicht enthält, sind die KI-Schaltflächen ausgegraut. Um den Umfang Ihres Tarifs zu ändern, wenden Sie sich an unser Team.
+Die Verfügbarkeit des KI-Assistenten hängt vom Tarif Ihrer Organisation ab, Modul für Modul. In einem Modul, das Ihr Tarif nicht enthält, sind die KI-Schaltflächen ausgegraut, bei einigen Funktionen erscheinen sie gar nicht. Um den Umfang Ihres Tarifs zu ändern, wenden Sie sich an unser Team.
 
 ## KI als Ausgangspunkt, nicht als endgültige Antwort
 
@@ -32,12 +32,15 @@ Die Daten Ihrer Organisation werden niemals zum Training von KI-Modellen verwend
 
 Der Assistent steht in mehreren Modulen der Plattform zur Verfügung:
 
-* **Verarbeitungstätigkeiten**: Beschreibungen, Datenkategorien, Sicherheitsmaßnahmen, Datenschutzerklärungen und Compliance-Analysen erstellen
-* **KI-Systeme**: Beschreibungen, Hinweise und Risikoanalysen erstellen
-* **Fragebögen**: KI-gestützte Antworten auf DSFA und Risikoanalysen erstellen
-* **Betroffenenanfragen**: Antworten in mehreren Sprachen und Sprachregistern entwerfen
+* **Verarbeitungstätigkeiten**: Beschreibungen, Datenkategorien, Sicherheitsmaßnahmen, Datenschutzerklärungen, die Bewertung der DSFA-Kriterien und Compliance-Analysen erstellen
+* **KI-Systeme**: Beschreibungen, Hinweise, die Begründung der Rolle, Risikoanalysen und die Bewertung des geschäftlichen Nutzens erstellen
+* **Fragebögen**: eine Vorlage erstellen, sie übersetzen und KI-gestützte Antworten auf DSFA und Risikoanalysen erstellen
+* **Betroffenenanfragen**: Antworten in mehreren Sprachen und Sprachregistern entwerfen und Dokumente automatisch schwärzen
+* **Datenschutzvorfälle**: eine Nachbetrachtung erstellen
 * **Assets und Stakeholder**: strukturierte Einträge aus einer URL oder einer freien Beschreibung erstellen
 * **Verträge**: Metadaten aus einem importierten Dokument extrahieren
+* **Compliance**: Kontrollen, Tests und Anforderungsreferenzen vorschlagen und Testnachweise analysieren
+* **Workflow-Regeln und Integrationen**: eine HTTP-Aktion erstellen oder ein Feld-Mapping vorschlagen
 * **Eigene Dokumente und Berichte**: Inhalte nach Ihren eigenen Anweisungen erstellen
 
 Eine Schritt-für-Schritt-Anleitung zu jeder Funktion finden Sie unter [Anwendungsfälle](use-cases.md).
@@ -51,6 +54,8 @@ Alle KI-Funktionen teilen sich das monatliche Kontingent an KI-Credits, das unte
 ## Mit Dastra AI chatten
 
 **Dastra AI** beantwortet in einer Unterhaltung Fragen zu Ihrem Mandanten. Der Assistent durchsucht Ihre Einträge mit Werkzeugen, die nur lesen, sodass Sie eine Zusammenfassung, eine Liste überfälliger Anfragen oder die Verarbeitungstätigkeiten ohne DSFA anfordern können.
+
+Für seine Antworten kann sich Dastra AI auch auf die von Dastra indexierte Rechtsgrundlage, auf die Dastra-Dokumentation und auf eine Websuche stützen. Im Modus **Bearbeiten** kann der Assistent Einträge erstellen, Felder ändern, einen Aktionsplan, einen Fragebogen, einen Kommentar oder ein Tag erstellen und Eintragsaktionen wie den Wechsel der Workflow-Phase starten. Er kann Ihnen vor der Ausführung Rückfragen stellen und Sie zum betreffenden Eintrag führen.
 
 1. Klicken Sie unten rechts auf dem Bildschirm auf **Dastra AI öffnen** oder drücken Sie **Strg+J** (**Cmd+J** auf dem Mac).
 2. Geben Sie Ihre Frage ein oder wählen Sie einen der **Vorschläge**. Sie ändern sich mit der Seite, auf der Sie sind: der Eintrag, den Sie ansehen, das Verzeichnis, Anfragen, KI-Systeme.
@@ -90,7 +95,7 @@ Bei der Nutzung einer Beta-Funktion gilt:
 Beta-Funktionen sollten niemals die alleinige Grundlage einer Compliance-Entscheidung sein. Sie sollen eine gründliche menschliche Prüfung unterstützen, nicht ersetzen.
 {% endhint %}
 
-**Derzeit in der Beta**: die KI-Compliance-Analyse, verfügbar für Verarbeitungstätigkeiten, KI-Systeme, Verträge, Stakeholder, Assets und Fragebogenantworten. Öffnen Sie sie mit der Schaltfläche **KI-Analyse (Beta)** des Eintrags oder bitten Sie Dastra AI, einen Eintrag zu analysieren. Das Ergebnis liefert eine Bewertung von A bis F, die bewerteten Kriterien und vorgeschlagene Aufgaben und kann gedruckt, neu gestartet oder im Chat fortgesetzt werden.
+**Derzeit in der Beta**: die KI-Compliance-Analyse, verfügbar für Verarbeitungstätigkeiten, KI-Systeme, Verträge, Assets, Stakeholder und Zusammenfassungen von Fragebogenantworten. Öffnen Sie sie mit der Schaltfläche **KI-Analyse (Beta)** des Eintrags oder bitten Sie Dastra AI, einen Eintrag zu analysieren. Das Ergebnis liefert eine Bewertung von A bis F, die bewerteten Kriterien und vorgeschlagene Aufgaben und kann gedruckt, neu gestartet oder im Chat fortgesetzt werden.
 
 ***
 

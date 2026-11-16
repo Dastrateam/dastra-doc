@@ -10,7 +10,7 @@ A **Dastra AI agent** is an assistant you configure yourself: you give it a role
 
 Agents are configured from **Workspace settings > AI agents** ([direct access](https://app.dastra.eu/workspace/0/settings/ai-agents)).
 
-<figure><img src="../../../../.gitbook/assets/ai-agents-liste.png" alt="List of the Dastra AI agents of a workspace"><figcaption><p>Workspace settings &#x3E; AI agents — the list of configured agents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ai-agents-liste.png" alt="List of the Dastra AI agents of a workspace"><figcaption><p>Workspace settings &#x3E; AI agents: the list of configured agents</p></figcaption></figure>
 
 {% hint style="warning" %}
 **Do not confuse this with the AI systems register.** The [AI systems](../../../ai-systems/README.md) section is where you document **your own** AI systems for the AI Act. The agents described here are a Dastra feature you use to work on your data.
@@ -36,11 +36,11 @@ Click **Create agent**. Five starting points are offered:
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-creation-modal.png" alt="Agent creation dialog with the five starting points"><figcaption><p>The five ways to create an agent</p></figcaption></figure>
 
-* **Generate with Dastra AI** — describe the mission in a few words and the assistant builds the agent with you, saving it once you approve. This is the built-in `/scaffold_agent` skill.
-* **Conversational Agent** — start from a blank page for a chat assistant. See [Creating a conversational agent](conversational.md).
-* **Auto Agent** — start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md).
-* **Dastra library** — start from a ready-made template built by the Dastra team. The template is imported **as a draft**: review its instructions and its tools before publishing it.
-* **Import an agent** — drop in a definition file previously exported from Dastra.
+* **Generate with Dastra AI**: describe the mission in a few words and the assistant builds the agent with you, saving it once you approve. This is the built-in `/scaffold_agent` skill.
+* **Conversational Agent**: start from a blank page for a chat assistant. See [Creating a conversational agent](conversational.md).
+* **Auto Agent**: start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md).
+* **Dastra library**: start from a ready-made template built by the Dastra team. The template is imported **as a draft**: review its instructions and its tools before publishing it.
+* **Import an agent**: drop in a definition file previously exported from Dastra.
 
 In every case creation happens in two steps: you pick the type, you enter a **name** (120 characters maximum) and an optional **description** (1000 characters), then the full editor opens.
 
@@ -52,9 +52,9 @@ The editor **saves automatically**: the last save time is shown in the top-right
 
 ### Publishing, deactivating, archiving, deleting
 
-* **Enabled / Deactivated** — a deactivated agent no longer appears to users and its schedules stop firing. This is the state to use while you are still tuning its instructions.
-* **Archive** — the agent goes to the recycle bin. Tick **View recycle bin** in the list to find it and restore it. Its past runs are kept.
-* **Delete** — deletion is permanent and **also erases every session and every message** belonging to the agent. Use it when you need to purge that data.
+* **Enabled / Deactivated**: a deactivated agent no longer appears to users and its schedules stop firing. This is the state to use while you are still tuning its instructions.
+* **Archive**: the agent goes to the recycle bin. Tick **View recycle bin** in the list to find it and restore it. Its past runs are kept.
+* **Delete**: deletion is permanent and **also erases every session and every message** belonging to the agent. Use it when you need to purge that data.
 
 ### Exporting and importing an agent
 
@@ -78,7 +78,7 @@ Access to agents depends both on your **plan** and on your **permissions**.
 Permissions are set in **Organization settings > Roles and permissions**. The [MCP server](../mcp.md) is covered by a separate plan.
 
 {% hint style="info" %}
-**An agent never has more rights than the person who triggers it.** Its tools run with your own permissions: if it cannot access a record, neither can the agent.
+**An agent never has more rights than the person who triggers it.** Its tools run with your own permissions: if it cannot access a record, neither can the agent. Destructive actions (deletion, anonymization) are never offered to it.
 {% endhint %}
 
 ***

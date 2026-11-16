@@ -8,7 +8,7 @@ description: >-
 
 L'assistant IA de Dastra vous permet de générer et d'enrichir des éléments de votre espace de travail à partir de simples descriptions textuelles. Il s'appuie sur des modèles d'IA générative hébergés sur Azure, en France et dans l'Espace Économique Européen, sans qu'aucune donnée de votre organisation ne soit utilisée pour entraîner ces modèles.
 
-La disponibilité de l'assistant IA dépend de l'offre de votre organisation, module par module. Dans un module que votre offre n'inclut pas, les boutons IA sont grisés. Pour modifier le périmètre de votre offre, contactez notre équipe.
+La disponibilité de l'assistant IA dépend de l'offre de votre organisation, module par module. Dans un module que votre offre n'inclut pas, les boutons IA sont grisés, ou n'apparaissent pas pour quelques fonctions. Pour modifier le périmètre de votre offre, contactez notre équipe.
 
 ## L'IA comme point de départ, pas comme réponse définitive
 
@@ -32,12 +32,15 @@ Les données de votre organisation ne sont jamais utilisées pour entraîner des
 
 L'assistant est disponible dans plusieurs modules de la plateforme :
 
-* **Traitements de données** : générer des descriptions, des jeux de données, des mesures de sécurité, des notices d'information et des analyses de conformité
-* **Systèmes d'IA** : générer des descriptions, des notices et des analyses de risque
-* **Questionnaires** : générer des réponses assistées par IA à des PIA et analyses de risque
-* **Demandes d'exercice de droits** : rédiger des réponses dans plusieurs langues et registres
+* **Traitements de données** : générer des descriptions, des jeux de données, des mesures de sécurité, des notices d'information, l'évaluation des critères d'AIPD et des analyses de conformité
+* **Systèmes d'IA** : générer des descriptions, des notices, la justification du rôle, des analyses de risque et l'évaluation de la valeur métier
+* **Questionnaires** : générer un modèle, le traduire, et générer des réponses assistées par IA à des PIA et analyses de risque
+* **Demandes d'exercice de droits** : rédiger des réponses dans plusieurs langues et registres, et caviarder automatiquement des documents
+* **Violations de données** : générer un post-mortem
 * **Actifs et acteurs** : générer des entrées structurées à partir d'une URL ou d'une description libre
 * **Contrats** : extraire des métadonnées depuis un document importé
+* **Conformité** : suggérer des contrôles, des tests et des références d'exigences, et analyser des preuves de test
+* **Règles de workflow et intégrations** : générer une action HTTP ou proposer un mapping de champs
 * **Documents et rapports personnalisés** : générer du contenu à partir de vos propres instructions
 
 Pour un guide pas à pas de chaque fonctionnalité, consultez la page [Cas d'usage](use-cases.md).
@@ -51,6 +54,8 @@ Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit
 ## Discuter avec Dastra AI
 
 **Dastra AI** répond à vos questions sur votre espace de travail dans une conversation. Il consulte vos fiches avec des outils en lecture seule : vous pouvez demander un résumé, la liste des demandes en retard ou les traitements qui n'ont pas d'AIPD.
+
+Pour répondre, Dastra AI peut aussi s'appuyer sur la base réglementaire indexée par Dastra, sur la documentation Dastra et sur une recherche web. En mode Édition, il peut créer des fiches, modifier des champs, créer un plan d'actions, un questionnaire, un commentaire ou un tag, et lancer des actions de fiche comme le changement d'étape de workflow. Il peut vous poser des questions de précision avant d'agir et vous diriger vers la fiche concernée.
 
 1. Cliquez sur **Ouvrir Dastra AI**, en bas à droite de l'écran, ou appuyez sur **Ctrl+J** (**Cmd+J** sur Mac).
 2. Saisissez votre question, ou choisissez l'une des **Suggestions**. Elles changent selon la page où vous êtes : la fiche consultée, le registre, les demandes, les systèmes d'IA.
@@ -90,7 +95,7 @@ Lors de l'utilisation d'une fonctionnalité bêta :
 Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une décision de conformité. Elles sont conçues pour accompagner une revue humaine approfondie, non pour la remplacer.
 {% endhint %}
 
-**Actuellement en bêta** : l'analyse de conformité par l'IA, disponible sur les traitements, les systèmes d'IA, les contrats, les acteurs, les applications et les réponses de questionnaire. Ouvrez-la avec le bouton **Analyse IA** de la fiche, ou demandez à Dastra AI d'analyser une fiche. Le résultat donne une note de A à F, les critères analysés et des tâches suggérées. Vous pouvez l'imprimer, le relancer ou le poursuivre dans la conversation.
+**Actuellement en bêta** : l'analyse de conformité par l'IA, disponible sur les traitements, les systèmes d'IA, les contrats, les actifs, les acteurs et les synthèses de réponses d'audit. Ouvrez-la avec le bouton **Analyse IA** de la fiche, ou demandez à Dastra AI d'analyser une fiche. Le résultat donne une note de A à F, les critères analysés et des tâches suggérées. Vous pouvez l'imprimer, le relancer ou le poursuivre dans la conversation.
 
 ***
 

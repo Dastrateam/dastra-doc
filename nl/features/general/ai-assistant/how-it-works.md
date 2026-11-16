@@ -33,7 +33,7 @@ De eigenaar van de organisatie kiest de modelfamilie in **Organisatie-instelling
 
 <figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Modelfamilies van de AI-assistent, waaronder de eigen AI-leverancier"><figcaption><p>De eigen AI-leverancier tussen de modelfamilies</p></figcaption></figure>
 
-Met Dastra koppelt u uw eigen AI-leverancier met een API-sleutel, op voorwaarde dat die compatibel is met de OpenAI-API-standaard. De aangeboden leveranciers zijn OpenAI, Google, Anthropic, Mistral en Azure AI Foundry. De optie **Other** accepteert elk ander compatibel endpoint, waaronder een zelfgehoste LLM.
+Met Dastra koppelt u uw eigen AI-leverancier met een API-sleutel, op voorwaarde dat die compatibel is met de OpenAI-API-standaard. De aangeboden leveranciers zijn OpenAI, Google, Anthropic, Mistral en Azure AI Foundry. De optie **Other** accepteert elk ander compatibel endpoint, waaronder een zelfgehoste LLM. De eigen leverancier geldt voor de generatiefuncties van de AI-assistent (de knoppen in de modules). Dastra AI (chat), agents en de MCP-server blijven de modellen van Dastra gebruiken.
 
 Om een eigen leverancier te configureren, selecteert u de familie **IA-leverancier** in **Organisatie-instellingen** > **Assistent IA**. Klik in het blok **Identificaties van IA-leverancier** op **Identificaties toevoegen**, voer de leverancier en de bijbehorende API-sleutel in en wijs daarna een model toe aan elk van de drie niveaus (Fast, Smart, Large context).
 
@@ -57,7 +57,7 @@ De exacte gegevens per functie staan in de sectie [Gegevens die naar het model w
 
 Voordat een generatieverzoek wordt verstuurd, past Dastra een filter toe dat de e-mailadressen, telefoonnummers, postadressen, postcodes en volledige namen die het in de tekst herkent, maskeert. Het filter volgt Europese formaten. Het laat datums, identificatoren en standaardnummers zoals ISO 27001 ongewijzigd, zodat het model de zakelijke gegevens behoudt die het nodig heeft.
 
-**Spraakdictaat** in het berichtenveld van Dastra AI stuurt uw opname naar een spraak-naar-tekstdienst, die de getranscribeerde tekst teruggeeft. Dastra gebruikt Azure Speech op het standaardplatform en Mistral Voxtral op [Bleu](../../../security/bleu.md).
+**Spraakdictaat** in het berichtenveld van Dastra AI stuurt uw opname naar een spraak-naar-tekstdienst, die de getranscribeerde tekst teruggeeft. Dastra bewaart de opname niet. Dastra gebruikt Azure Speech op het standaardplatform en Mistral Voxtral op [Bleu](../../../security/bleu.md).
 
 ## Wat Dastra niet doet
 
@@ -98,9 +98,11 @@ Een geslaagde generatie verbruikt credits volgens het type bewerking. Een misluk
 
 | Bewerking | Credits |
 | --- | --- |
-| Een verwerkingsactiviteit, activum, stakeholder, dataset, beveiligingsmaatregel, AI-systeem of AI-model genereren; informatiebericht; labelsuggestie; antwoord op een verzoek van een betrokkene; extractie van contractmetadata; suggesties voor controles en tests | 1 |
-| Risicoanalyse, beoordeling van de DPIA-criteria, verificatie van testbewijs, postmortem van een datalek, aangepast rapport | 2 |
+| Een verwerkingsactiviteit, activum, stakeholder, dataset, beveiligingsmaatregel, AI-systeem of AI-model genereren; informatiebericht; labelsuggestie; antwoord op een verzoek van een betrokkene; extractie van contractmetadata; suggesties voor controles en tests; een vragenlijstsjabloon genereren; motivering van de verantwoordelijkheid van een AI-systeem; suggestie van een mapping of een HTTP-actie | 1 |
+| Risicoanalyse, analyse van de zakelijke waarde, beoordeling van de DPIA-criteria, verificatie van testbewijs, postmortem van een datalek, aangepast rapport | 2 |
 | Een vragenlijst beantwoorden en een vragenlijst vertalen | 1 per 25 vragen |
+| Automatisch caviarderen van een document | 1 per verzonden documentsegment |
+| Bericht naar Dastra AI of een agent | 1 per bericht, ongeacht het aantal gebruikte tools |
 
 De kaart **Gebruik** van **Organisatie-instellingen** > **Assistent IA** toont het verbruik van de huidige maand, het quotum van het abonnement en de vernieuwingsdatum. De voortgangsbalk verandert van kleur naarmate een groter deel van het quotum is verbruikt:
 
@@ -110,6 +112,8 @@ De kaart **Gebruik** van **Organisatie-instellingen** > **Assistent IA** toont h
 
 Zodra het maandelijkse quotum is bereikt, krijgt u een melding die voorstelt contact op te nemen met het Dastra-team.
 
+In het paneel Dastra AI zien alle gebruikers de status van het quotum: een discrete teller vanaf 50%, een oranje banner vanaf 80% en een rode banner bij 100%, die het versturen van nieuwe berichten blokkeert (de geschiedenis blijft raadpleegbaar).
+
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Kaart Gebruik van de AI-assistent met de voortgangsbalk van het creditquotum en de uitleg van de berekening"><figcaption><p>Volgen van het AI-creditverbruik van de huidige maand</p></figcaption></figure>
 
 {% hint style="info" %}
@@ -117,7 +121,7 @@ Wanneer het quotum is bereikt, worden de AI-functies uitgeschakeld tot de volgen
 {% endhint %}
 
 {% hint style="info" %}
-Eigen AI-leverancier, geen creditberekening: wanneer uw organisatie een eigen AI-leverancier gebruikt, geldt het creditsysteem van Dastra niet. Het verbruik wordt rechtstreeks door uw eigen leverancier beheerd volgens zijn eigen factureringsvoorwaarden.
+Eigen AI-leverancier, geen creditberekening: wanneer uw organisatie een eigen AI-leverancier gebruikt, geldt het creditsysteem van Dastra niet voor de generatiefuncties van de AI-assistent. Het verbruik wordt rechtstreeks door uw eigen leverancier beheerd volgens zijn eigen factureringsvoorwaarden. Dastra AI en agents gebruiken de modellen van Dastra: hun berichten verbruiken nog steeds het creditquotum en worden geblokkeerd zodra het is bereikt.
 {% endhint %}
 
 ## Gegevens die naar het model worden gestuurd

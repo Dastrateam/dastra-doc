@@ -78,7 +78,7 @@ De toegang tot agents hangt af van uw abonnement en van uw machtigingen.
 U stelt machtigingen in bij **Organisatie-instellingen** > **Rollen en machtigingen**. De [MCP-server](../mcp.md) valt onder een apart abonnement.
 
 {% hint style="info" %}
-Een agent heeft nooit meer rechten dan de persoon die hem start. Zijn hulpmiddelen werken met uw eigen machtigingen: heeft u geen toegang tot een record, dan heeft de agent die ook niet.
+Een agent heeft nooit meer rechten dan de persoon die hem start. Zijn hulpmiddelen werken met uw eigen machtigingen: heeft u geen toegang tot een record, dan heeft de agent die ook niet. Destructieve acties (verwijderen, anonimiseren) worden hem nooit aangeboden.
 {% endhint %}
 
 ***

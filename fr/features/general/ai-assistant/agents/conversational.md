@@ -36,10 +36,10 @@ C'est le cœur de l'agent : sa personnalité et ses règles de conduite, dans la
 
 Une instruction efficace précise :
 
-* **le rôle** — « Tu es le délégué à la protection des données de l'organisation. »
-* **la source de vérité** — « Réponds toujours à partir des fiches enregistrées dans l'espace de travail : recherche la fiche concernée avant de répondre, et cite-la systématiquement. »
-* **le comportement en cas de manque** — « Si l'information n'existe pas dans l'espace de travail, dis-le explicitement plutôt que de l'inventer. »
-* **le format attendu** — langue, longueur, mentions obligatoires.
+* **le rôle** : « Vous êtes le délégué à la protection des données de l'organisation. »
+* **la source de vérité** : « Répondez toujours à partir des fiches enregistrées dans l'espace de travail : recherchez la fiche concernée avant de répondre, et citez-la systématiquement. »
+* **le comportement en cas de manque** : « Si l'information n'existe pas dans l'espace de travail, dites-le explicitement plutôt que de l'inventer. »
+* **le format attendu** : langue, longueur, mentions obligatoires.
 
 #### Amorces de conversation
 
@@ -55,8 +55,8 @@ Par défaut, un agent a accès à **tous** les outils. Répondez **Oui** à « S
 
 Les outils sont séparés en deux groupes :
 
-* **Outils de lecture** — recherche dans l'espace de travail, lecture d'une fiche, lecture des commentaires et des fichiers, consultation de la documentation Dastra et du corpus réglementaire, recherche sur le web.
-* **Outils de modification** — création et mise à jour de fiches, ajout de commentaires, changement d'étape de workflow, création de tâches et de tags, planification et remplissage de questionnaires.
+* **Outils de lecture** : recherche dans l'espace de travail, lecture d'une fiche, lecture des commentaires et des fichiers, consultation de la documentation Dastra et du corpus réglementaire, recherche sur le web.
+* **Outils de modification** : création et mise à jour de fiches, ajout de commentaires, changement d'étape de workflow, création de tâches et de tags, planification et remplissage de questionnaires.
 
 {% hint style="warning" %}
 Restreindre les outils est la façon la plus sûre de cadrer un agent. Un assistant destiné à répondre à des questions n'a besoin d'aucun outil de modification : ne lui en donnez pas.
@@ -72,10 +72,12 @@ Les personnes qui recevront une notification Dastra à la fin d'une exécution d
 
 Dans la conversation, un sélecteur permet de basculer entre deux modes :
 
-* **Question** — l'agent est en lecture seule. Il peut chercher, lire et analyser, mais rien n'est modifié.
-* **Édition** — l'agent peut créer et modifier des fiches. Les outils de modification ne sont disponibles que dans ce mode.
+* **Question** : l'agent est en lecture seule. Il peut chercher, lire et analyser, mais rien n'est modifié.
+* **Édition** : l'agent peut créer et modifier des fiches. Les outils de modification ne sont disponibles que dans ce mode.
 
-Le mode Édition dépend de votre offre et de la permission correspondante. S'il ne vous est pas accessible, le sélecteur n'apparaît pas et les outils de modification restent inactifs, même s'ils sont cochés dans la définition de l'agent.
+Le mode Édition dépend de votre offre et de la permission correspondante. Si votre offre ne l'inclut pas, l'option **Édition** est verrouillée. Sans la permission d'écriture de l'assistant, le sélecteur n'apparaît pas. Dans les deux cas, les outils de modification restent inactifs, même s'ils sont cochés dans la définition de l'agent.
+
+Dans la conversation, chaque outil de modification demande votre confirmation avant de s'exécuter. L'agent ne peut ni supprimer ni anonymiser une fiche : ces actions ne lui sont pas proposées.
 
 ***
 
@@ -88,7 +90,7 @@ L'**aperçu du chat**, à droite de l'éditeur, est une vraie conversation avec 
 Une fois l'agent **Actif**, les utilisateurs de l'espace de travail y accèdent :
 
 * depuis le panneau **Dastra AI**, en bas à droite de l'écran ;
-* avec le raccourci clavier **Ctrl+J** (**⌘J** sur Mac) ;
+* avec le raccourci clavier **Ctrl+J** (**Cmd+J** sur Mac) ;
 * depuis la page plein écran de Dastra AI.
 
 Le sélecteur **Choisir un agent**, en haut de la conversation, permet de passer d'un agent à l'autre.

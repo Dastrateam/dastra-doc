@@ -12,7 +12,7 @@ description: >-
 
 Alle Erstellungsfunktionen verwenden dasselbe Fenster: Beschreiben Sie das zu erstellende Element (oder beginnen Sie mit einem der vorgeschlagenen **Beispiele**), wählen Sie bei Bedarf die Ausgabesprache und klicken Sie dann auf **Generieren**. Der Vorschlag wird auf einer Zusammenfassungsseite angezeigt, die Sie prüfen, bevor Sie auf **Bestätigen** klicken.
 
-In Listen ist die Erstellungsschaltfläche ein KI-Symbol links neben der Schaltfläche zum Erstellen. Es ist ausgegraut, wenn Ihr Tarif die Funktion nicht enthält. Jede Erstellung verbraucht [KI-Credits](how-it-works.md#ki-credits-und-kontingente).
+In Listen ist die Erstellungsschaltfläche ein KI-Symbol links neben der Schaltfläche zum Erstellen. Es ist ausgegraut, wenn Ihr Tarif die Funktion nicht enthält. Einige Funktionen, die in den jeweiligen Abschnitten genannt sind, erscheinen in diesem Fall gar nicht. Jede Erstellung verbraucht [KI-Credits](how-it-works.md#ki-credits-und-kontingente).
 
 ***
 
@@ -52,6 +52,8 @@ Der Analyse-Tab einer Verarbeitungstätigkeit bewertet die 9 Kriterien des EDSA 
 2. Klicken Sie im Abschnitt **Bewertung der 9 Kriterien der AIPD (EDSB)** auf **Bewertung erstellen**
 3. Klicken Sie im sich öffnenden Fenster auf **Generieren** und prüfen Sie dann das Ergebnis
 
+Die Schaltfläche **Bewertung erstellen** erscheint nicht, wenn Ihr Tarif diese Funktion nicht enthält.
+
 ### Eine Compliance-Analyse für eine Verarbeitungstätigkeit erstellen
 
 Der Assistent kann eine bestehende Verarbeitungstätigkeit analysieren und eine Bewertung ihrer Konformität mit den Dokumentationsanforderungen der DSGVO erstellen.
@@ -62,13 +64,13 @@ Der Assistent kann eine bestehende Verarbeitungstätigkeit analysieren und eine 
 
 Sobald die Analyse erstellt ist, klicken Sie auf **Analyse ausdrucken**, um das Ergebnis als PDF zu exportieren oder direkt an den Drucker zu senden. Dieses Dokument kann Ihrer Compliance-Akte beigefügt werden.
 
-### Einen Vertrag, einen Stakeholder, ein Asset oder eine Fragebogenantwort analysieren
+### Ein KI-System, einen Vertrag, ein Asset, einen Stakeholder oder eine Zusammenfassung von Antworten analysieren
 
-Dieselbe Analyse steht für Verträge, Stakeholder, Assets und Fragebogenantworten zur Verfügung. Öffnen Sie den Eintrag und klicken Sie dann auf die Schaltfläche **KI-Analyse (Beta)**. Das Fenster zeigt die Gesamtbewertung von A bis F, die bewerteten Kriterien mit ihrer Begründung und die vorgeschlagenen Aufgaben. Mit **Verlauf der Analysen** vergleichen Sie mit einer früheren Analyse, mit **Analyse ausdrucken** exportieren Sie das Ergebnis.
+Dieselbe Analyse steht für KI-Systeme, Verträge, Assets, Stakeholder und die Zusammenfassung der Antworten eines Fragebogens zur Verfügung. Öffnen Sie den Eintrag und klicken Sie dann auf die Schaltfläche **KI-Analyse (Beta)**. Das Fenster zeigt die Gesamtbewertung von A bis F, die bewerteten Kriterien mit ihrer Begründung und die vorgeschlagenen Aufgaben. Mit **Verlauf der Analysen** vergleichen Sie mit einer früheren Analyse, mit **Analyse ausdrucken** exportieren Sie das Ergebnis.
 
 ### Tags vorschlagen
 
-In einem noch leeren Feld **Tags** schlägt eine KI-Schaltfläche anhand von Name und Beschreibung des Objekts Tags vor. Klicken Sie darauf: Die vorgeschlagenen Tags füllen das Feld. Zur Verwaltung der Tags siehe [Tags verwalten](../tags.md).
+In einem noch leeren Feld **Tags** schlägt eine KI-Schaltfläche anhand von Name und Beschreibung des Objekts Tags vor. Klicken Sie darauf: Die vorgeschlagenen Tags füllen das Feld. Die Schaltfläche gibt es bei Verarbeitungstätigkeiten, KI-Systemen, Vorfällen, Vertragsdokumenten, Betroffenenanfragen, Aufgaben, Stakeholdern, Assets und Aufbewahrungsregeln. Zur Verwaltung der Tags siehe [Tags verwalten](../tags.md).
 
 ***
 
@@ -154,6 +156,10 @@ Erstellen Sie Antworten in mehreren Sprachen mit Anpassungsoptionen (Länge, fö
 Für diese Funktion gilt eine Begrenzung der Anzahl der Aufrufe pro Minute.
 {% endhint %}
 
+### Ein Dokument automatisch schwärzen
+
+Aus einem Anhang der Anfrage bietet der Schwärzungseditor die Schaltfläche **Automatische Schwärzung.**: Die KI erkennt personenbezogene Daten Dritter und setzt die Schwärzungsbereiche, die Sie bestätigen. Die Schaltfläche erscheint nur, wenn die KI-Schwärzung in Ihrem Tarif enthalten ist. Jedes gesendete Dokumentsegment verbraucht 1 Credit. Siehe [Dokumente schwärzen](../../requests/redaction.md).
+
 {% hint style="info" %}
 **KI-Verordnung, Artikel 50**: Wird eine Antwort vom KI-Assistenten erstellt, gilt die strikte Pflicht aus Art. 50 Abs. 1 (die Person darüber zu informieren, dass sie mit einem KI-System interagiert) **nicht**, da zwischen dem KI-System und der betroffenen Person keine direkte Interaktion besteht: Ein menschlicher Nutzer prüft, bestätigt und sendet die Antwort. Dennoch bleibt es als bewährte Vorgehensweise der DSGVO (Art. 5 Treu und Glauben) empfehlenswert, die betroffene Person zu informieren. Die vollständige Analyse finden Sie in den [häufig gestellten Fragen](faq.md).
 {% endhint %}
@@ -186,6 +192,10 @@ Klicken Sie im Modul **Verträge** auf die Schaltfläche zum Erstellen und dann 
 
 Geben Sie Ihre eigenen Anweisungen ein und stellen Sie optional Quellinhalte bereit. Der Assistent erstellt ein strukturiertes Dokument nach Ihren Vorgaben. Klicken Sie im Modul **Verträge** auf die Schaltfläche zum Erstellen und dann auf **Ein Dokument erstellen**.
 
+### Ein Dokument aus dem Dateimanager erstellen
+
+Klicken Sie im Dokumenteditor des Dateimanagers auf **Mit KI generieren**, beschreiben Sie das Dokument und wählen Sie bei Bedarf ein Asset und eine Verarbeitungstätigkeit, die als Kontext dienen.
+
 ### Einen eigenen Bericht erstellen
 
 Klicken Sie im Modul **Personalisierte Berichte** auf das Symbol **Erstellen Sie einen personalisierten Bericht mit KI** und beschreiben Sie den gewünschten Bericht in natürlicher Sprache. Der Assistent erstellt eine erste Version, die Sie anschließend verfeinern können.
@@ -206,9 +216,13 @@ Dasselbe Vorgehen gibt es für KI-Modelle: Beschreiben Sie das Modell (Name, Her
 
 Klicken Sie im Eintrag eines KI-Systems auf **Informationsblatt erstellen**, um automatisch das Informationsdokument für Nutzer oder betroffene Personen zu erstellen.
 
+### Die Begründung der Rolle erstellen
+
+Klicken Sie im Eintrag eines KI-Systems neben der Auswahl Ihrer Verantwortlichkeit (Anbieter, Betreiber usw.) auf das KI-Symbol **Erstellen Sie mit KI eine Beschreibung der Verantwortlichkeiten**, um einen Vorschlag für die Begründung zu erhalten.
+
 ### Eine Risikoanalyse für ein KI-System erstellen
 
-Der Assistent analysiert die im Eintrag des KI-Systems ausgefüllten Felder und erstellt eine Bewertung der damit verbundenen Risiken.
+Der Assistent analysiert die im Eintrag des KI-Systems ausgefüllten Felder und erstellt eine Bewertung der damit verbundenen Risiken. Im Eintrag heißt die Schaltfläche **Klassifizierung generieren**; sie erscheint nicht, wenn Ihr Tarif diese Funktion nicht enthält.
 
 {% hint style="info" %}
 **Beta-Funktion**: mit besonderer Sorgfalt zu behandeln und vor jeder Entscheidung von einer Fachperson zu bestätigen.
@@ -217,6 +231,20 @@ Der Assistent analysiert die im Eintrag des KI-Systems ausgefüllten Felder und 
 Sobald die Analyse erstellt ist, klicken Sie auf **Analyse ausdrucken**, um das Ergebnis als PDF zu exportieren. Dieses Dokument kann Ihrer Compliance-Akte zur KI-Verordnung beigefügt werden.
 
 <figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="KI-Analysebereich mit den Schaltflächen Analyse ausdrucken und Analyse erneut starten"><figcaption><p>Die Schaltfläche „Analyse ausdrucken“ exportiert das Analyseergebnis als PDF</p></figcaption></figure>
+
+### Die Bewertung des geschäftlichen Nutzens erstellen
+
+Klicken Sie im Teil des Eintrags, der dem erwarteten Nutzen des KI-Systems gewidmet ist, auf **Bewertung generieren**, um eine Analyse des geschäftlichen Nutzens zu erhalten. Die Schaltfläche erscheint nicht, wenn Ihr Tarif diese Funktion nicht enthält.
+
+***
+
+## Workflow-Regeln und Integrationen
+
+* **Beschreibung einer Regel**: Klicken Sie im Titelfenster einer Workflow-Regel auf **Generieren**, um eine Beschreibung der Regel zu erhalten.
+* **HTTP-Aktion**: Klicken Sie in einer Aktion vom Typ HTTP-Anfrage auf **Mit KI generieren**, um die Anfrage vorauszufüllen. Die Schaltfläche steht nur Nutzern zur Verfügung, die Integrationen verwalten.
+* **Feld-Mapping einer Integration**: Klicken Sie auf **KI Vorschläge**, um das Mapping aller Felder vorzuschlagen, oder in einer Zeile auf **Dieses Feld mithilfe von KI ausfüllen** für ein einzelnes Feld.
+
+Diese Schaltflächen erscheinen nicht, wenn Ihr Tarif den KI-Assistenten nicht enthält.
 
 ***
 

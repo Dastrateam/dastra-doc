@@ -20,18 +20,18 @@ Dastra fournit deux compétences, disponibles dans tous les espaces de travail e
 
 | Commande | Ce qu'elle fait |
 | --- | --- |
-| `/scaffold_agent` | Vous accompagne dans la conception d'un agent personnalisé — persona, outils, règles — et l'enregistre une fois que vous l'avez validé. C'est ce que déclenche l'option **Générer avec Dastra AI** de l'écran de création d'un agent. |
+| `/scaffold_agent` | Vous accompagne dans la conception d'un agent personnalisé (persona, outils, règles) et l'enregistre une fois que vous l'avez validé. C'est ce que déclenche l'option **Générer avec Dastra AI** de l'écran de création d'un agent. |
 | `/dpo_opinion` | Transforme la discussion en cours, ou la fiche consultée, en un avis DPO formel et archivable. |
 
 ### Créer votre propre compétence
 
 Cliquez sur **Créer une compétence**, puis renseignez :
 
-* **Nom** — le libellé affiché dans la liste des commandes.
-* **Commande** — le texte tapé après le `/`. En minuscules, avec des tirets bas, et **unique dans l'organisation** : par exemple `synthese_comite`.
-* **Description** — une phrase expliquant quand l'utiliser. Elle s'affiche à côté de la commande dans le chat.
-* **Prompt** — l'instruction envoyée à l'assistant, jusqu'à 10 000 caractères.
-* **Visibilité** — gardez la compétence pour vous, ou partagez-la avec les autres membres de l'espace de travail.
+* **Nom** : le libellé affiché dans la liste des commandes.
+* **Commande** : le texte tapé après le `/`. En minuscules, avec des tirets bas, et **unique dans l'organisation** : par exemple `synthese_comite`.
+* **Description** : une phrase expliquant quand l'utiliser. Elle s'affiche à côté de la commande dans le chat.
+* **Prompt** : l'instruction envoyée à l'assistant, jusqu'à 10 000 caractères.
+* **Visibilité** : gardez la compétence pour vous, ou partagez-la avec les autres membres de l'espace de travail.
 
 ### Utiliser une compétence
 
@@ -40,6 +40,8 @@ Dans une conversation Dastra AI, tapez `/` : la liste des compétences disponibl
 {% hint style="info" %}
 Une compétence s'applique à la conversation en cours, avec l'agent et le mode (Question ou Édition) actuellement sélectionnés. Une compétence qui doit modifier des fiches nécessite donc le mode Édition.
 {% endhint %}
+
+Créer, modifier ou supprimer une compétence demande la permission de gestion des agents IA personnalisés, mais pas l'option d'offre « agents personnalisés ». Utiliser une compétence ne demande que l'accès à l'assistant.
 
 ***
 

@@ -19,18 +19,18 @@ Dastra ships two skills, available in every workspace and not editable:
 
 | Command | What it does |
 | --- | --- |
-| `/scaffold_agent` | Guides you through designing a custom agent — persona, tools, rules — and saves it once you validate. This is what the **Generate with Dastra AI** option of the agent creation screen triggers. |
+| `/scaffold_agent` | Guides you through designing a custom agent (persona, tools, rules) and saves it once you validate. This is what the **Generate with Dastra AI** option of the agent creation screen triggers. |
 | `/dpo_opinion` | Turns the current discussion, or the record you are looking at, into a formal, archivable DPO opinion. |
 
 ### Creating your own skill
 
 Click **Create a skill**, then fill in:
 
-* **Name** — the label shown in the command list.
-* **Command** — the text typed after the `/`. Lower case, with underscores, and **unique within the organisation**: for example `steering_committee_summary`.
-* **Description** — one sentence explaining when to use it. It is shown next to the command in the chat.
-* **Prompt** — the instruction sent to the assistant, up to 10,000 characters.
-* **Visibility** — keep the skill to yourself, or share it with the other members of the workspace.
+* **Name**: the label shown in the command list.
+* **Command**: the text typed after the `/`. Lower case, with underscores, and **unique within the organisation**: for example `steering_committee_summary`.
+* **Description**: one sentence explaining when to use it. It is shown next to the command in the chat.
+* **Prompt**: the instruction sent to the assistant, up to 10,000 characters.
+* **Visibility**: keep the skill to yourself, or share it with the other members of the workspace.
 
 ### Using a skill
 
@@ -39,6 +39,8 @@ In a Dastra AI conversation, type `/`: the list of available skills appears. Pic
 {% hint style="info" %}
 A skill applies to the current conversation, with the agent and the mode (Ask or Edit) currently selected. A skill that needs to modify records therefore requires Edit mode.
 {% endhint %}
+
+Creating, updating or deleting a skill requires the **Custom AI agents management** permission, but not the custom agents plan option. Using a skill only requires access to the assistant.
 
 ***
 

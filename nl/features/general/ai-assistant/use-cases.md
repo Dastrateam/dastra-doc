@@ -12,7 +12,7 @@ Opmerking over de kwaliteit van gegenereerde inhoud: alle inhoud die de assisten
 
 Alle generatiefuncties gebruiken hetzelfde venster: beschrijf het te genereren item (of begin met een van de voorgestelde **Voorbeelden**), kies zo nodig de generatietaal en klik op **Genereer**. Het voorstel verschijnt op een samenvattingsscherm, zodat u het kunt nakijken voordat u op **Valideren** klikt.
 
-In lijsten is de generatieknop een AI-pictogram links van de knop om iets aan te maken. De knop is grijs als uw abonnement de functie niet bevat. Elke generatie verbruikt [AI-credits](how-it-works.md#ai-credits-en-quota).
+In lijsten is de generatieknop een AI-pictogram links van de knop om iets aan te maken. De knop is grijs als uw abonnement de functie niet bevat. Enkele functies, die in de betreffende secties worden aangegeven, verschijnen in dat geval helemaal niet. Elke generatie verbruikt [AI-credits](how-it-works.md#ai-credits-en-quota).
 
 ***
 
@@ -52,6 +52,8 @@ In het tabblad voor de analyse van een verwerkingsactiviteit beoordeelt de assis
 2. Klik in de sectie **Evaluatie van de 9 criteria van de AIPD (CEPD)** op **Genereer de evaluatie**.
 3. Klik in het venster dat opent op **Genereer** en controleer daarna het resultaat.
 
+De knop **Genereer de evaluatie** verschijnt niet als uw abonnement deze functie niet bevat.
+
 ### Een complianceanalyse van een verwerkingsactiviteit genereren
 
 De assistent kan een bestaande verwerkingsactiviteit analyseren en beoordelen in hoeverre ze voldoet aan de documentatievereisten van de AVG.
@@ -62,13 +64,13 @@ Bètafunctie: de resultaten kunnen minder consistent zijn dan bij een stabiele f
 
 Klik nadat de analyse is gegenereerd op **Analyse afdrukken** om het resultaat als PDF te exporteren of rechtstreeks naar de printer te sturen. Dit document kunt u bij uw compliancedossier voegen.
 
-### Een contract, een stakeholder, een activum of een antwoord op een vragenlijst analyseren
+### Een AI-systeem, een contract, een activum, een stakeholder of een samenvatting van antwoorden analyseren
 
-Dezelfde analyse is beschikbaar op contracten, stakeholders, activa en antwoorden op vragenlijsten. Open het record en klik daarna op de knop **AI analysis (beta)**. Het venster toont de algemene score van A tot F, de beoordeelde criteria met hun motivering en de voorgestelde taken. Gebruik **Analysis history** om met een eerdere analyse te vergelijken en daarna **Analyse afdrukken** om het resultaat te exporteren.
+Dezelfde analyse is beschikbaar op AI-systemen, contracten, activa, stakeholders en de samenvatting van de antwoorden op een vragenlijst. Open het record en klik daarna op de knop **AI analysis (beta)**. Het venster toont de algemene score van A tot F, de beoordeelde criteria met hun motivering en de voorgestelde taken. Gebruik **Analysis history** om met een eerdere analyse te vergelijken en daarna **Analyse afdrukken** om het resultaat te exporteren.
 
 ### Labels voorstellen
 
-In een veld **Labels** dat nog leeg is, stelt een knop van de AI-assistent labels voor op basis van de naam en de beschrijving van het object. Klik erop: de voorgestelde labels vullen het veld. Zie [Tagbeheer](../tags.md) voor het beheer van labels.
+In een veld **Labels** dat nog leeg is, stelt een knop van de AI-assistent labels voor op basis van de naam en de beschrijving van het object. Klik erop: de voorgestelde labels vullen het veld. De knop bestaat op verwerkingsactiviteiten, AI-systemen, datalekken, contractdocumenten, verzoeken van betrokkenen, taken, stakeholders, activa en bewaarregels. Zie [Tagbeheer](../tags.md) voor het beheer van labels.
 
 ***
 
@@ -154,6 +156,10 @@ Genereer antwoorden in meerdere talen, met aanpassingsopties (lengte, formele of
 Voor deze functie geldt een limiet op het aantal aanroepen per minuut.
 {% endhint %}
 
+### Een document automatisch caviarderen
+
+Vanuit een bijlage van het verzoek biedt de caviarderingseditor de knop **Automatisch caviarder.**: de AI spoort persoonsgegevens van derden op en plaatst de af te dekken zones, die u valideert. De knop verschijnt alleen als AI-afdekking in uw abonnement is opgenomen. Elk verzonden documentsegment verbruikt 1 credit. Zie [Documenten verbergen](../../requests/redaction.md).
+
 {% hint style="info" %}
 AI-verordening, artikel 50: wanneer de AI-assistent een antwoord genereert, geldt de strikte verplichting van artikel 50, lid 1 (de persoon informeren dat hij met een AI-systeem communiceert) niet, omdat er geen rechtstreekse interactie is tussen het AI-systeem en de betrokkene: een menselijke gebruiker controleert, valideert en verstuurt het antwoord. Het blijft wel aanbevolen de betrokkene te informeren als goede praktijk volgens de AVG (artikel 5, lid 1, onder a, eerlijkheid). Zie de [veelgestelde vragen](faq.md) voor de volledige analyse.
 {% endhint %}
@@ -186,6 +192,10 @@ Klik in de module **Contracten en beleidslijnen** op de knop om iets aan te make
 
 Voer uw eigen instructies in en geef eventueel bronmateriaal op. De assistent genereert een gestructureerd document volgens uw specificaties. Klik in de module **Contracten en beleidslijnen** op de knop om iets aan te maken en daarna op **Genereer een document**.
 
+### Een document genereren vanuit de bestandsbeheerder
+
+Klik in de documenteditor van de bestandsbeheerder op **Genereer met AI**, beschrijf het document en kies zo nodig een activum en een verwerkingsactiviteit die als context dienen.
+
 ### Een aangepast rapport genereren
 
 Klik in de module **Aangepaste rapportage** op het pictogram **Genereer een op maat gemaakt rapport met de IA** en beschrijf het gewenste rapport in natuurlijke taal. De assistent maakt een eerste versie die u daarna verfijnt.
@@ -206,9 +216,13 @@ Voor AI-modellen bestaat dezelfde werkwijze: beschrijf het model (naam, uitgever
 
 Klik in het dossier van een AI-systeem op **Genereer uw informatiebericht** om automatisch het informatiedocument voor gebruikers of betrokkenen te maken.
 
+### De motivering van de rol genereren
+
+Klik in het dossier van een AI-systeem, naast de keuze van uw verantwoordelijkheid (aanbieder, gebruiksverantwoordelijke enzovoort), op het AI-pictogram **Een beschrijving van de verantwoordelijkheid genereren met IA** om een voorstel voor de motivering te krijgen.
+
 ### Een risicoanalyse voor een AI-systeem genereren
 
-De assistent analyseert de ingevulde velden van het dossier van het AI-systeem en beoordeelt de bijbehorende risico's.
+De assistent analyseert de ingevulde velden van het dossier van het AI-systeem en beoordeelt de bijbehorende risico's. In het dossier heet de knop **Genereren classificatie**; hij verschijnt niet als uw abonnement deze functie niet bevat.
 
 {% hint style="info" %}
 Bètafunctie: met extra zorg te behandelen en door een deskundige te valideren voordat u een beslissing neemt.
@@ -217,6 +231,20 @@ Bètafunctie: met extra zorg te behandelen en door een deskundige te valideren v
 Klik nadat de analyse is gegenereerd op **Analyse afdrukken** om het resultaat als PDF te exporteren. Dit document kunt u bij uw nalevingsdossier voor de AI-verordening voegen.
 
 <figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="Analysepaneel van de AI met de knoppen Analyse afdrukken en Analyse opnieuw starten"><figcaption><p>De knop Analyse afdrukken exporteert het resultaat van de analyse als PDF</p></figcaption></figure>
+
+### De beoordeling van de zakelijke waarde genereren
+
+Klik in het deel van het dossier over het verwachte voordeel van het AI-systeem op **Genereer de evaluatie** om een analyse van de zakelijke waarde te krijgen. De knop verschijnt niet als uw abonnement deze functie niet bevat.
+
+***
+
+## Workflowregels en integraties
+
+* **Beschrijving van een regel**: klik in het titelvenster van een workflowregel op **Genereer** om een beschrijving van de regel te krijgen.
+* **HTTP-actie**: klik in een actie van het type HTTP-verzoek op **Genereer met AI** om het verzoek vooraf in te vullen. De knop is voorbehouden aan gebruikers die de integraties beheren.
+* **Veldmapping van een integratie**: klik op **Suggereer met IA** om de mapping van alle velden voor te stellen, of op **Suggereer dit veld met IA** op een rij voor één enkel veld.
+
+Deze knoppen verschijnen niet als uw abonnement de AI-assistent niet bevat.
 
 ***
 

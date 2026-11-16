@@ -23,7 +23,7 @@ The name is limited to 120 characters, the description to 1000.
 
 #### Welcome message
 
-The first message shown to the user when the conversation opens (1000 characters maximum). Use it to announce what the agent can do — and what it cannot.
+The first message shown to the user when the conversation opens (1000 characters maximum). Use it to announce what the agent can do and what it cannot.
 
 #### Assistant instruction
 
@@ -35,10 +35,10 @@ This is the heart of the agent: its personality and its rules of conduct, within
 
 An effective instruction states:
 
-* **the role** — "You are the data protection officer of the organisation."
-* **the source of truth** — "Always answer from the records saved in the workspace: find the relevant record before answering, and always cite it."
-* **what to do when something is missing** — "If the information does not exist in the workspace, say so explicitly rather than inventing it."
-* **the expected format** — language, length, mandatory statements.
+* **the role**: "You are the data protection officer of the organisation."
+* **the source of truth**: "Always answer from the records saved in the workspace: find the relevant record before answering, and always cite it."
+* **what to do when something is missing**: "If the information does not exist in the workspace, say so explicitly rather than inventing it."
+* **the expected format**: language, length, mandatory statements.
 
 #### Conversation starters
 
@@ -54,8 +54,8 @@ By default an agent has access to **all** tools. Answer **Yes** to "Do you want 
 
 Tools come in two groups:
 
-* **Read-only tools** — searching the workspace, reading a record, reading comments and files, searching the Dastra documentation and the regulation corpus, searching the web.
-* **Editing tools** — creating and updating records, adding comments, changing workflow state, creating tasks and tags, planning and filling in questionnaires.
+* **Read-only tools**: searching the workspace, reading a record, reading comments and files, searching the Dastra documentation and the regulation corpus, searching the web.
+* **Editing tools**: creating and updating records, adding comments, changing workflow state, creating tasks and tags, planning and filling in questionnaires.
 
 {% hint style="warning" %}
 Restricting tools is the safest way to keep an agent on rails. An assistant meant to answer questions needs no editing tool at all: do not give it any.
@@ -71,10 +71,12 @@ The people who will receive a Dastra notification when a run of the agent finish
 
 Inside the conversation, a selector switches between two modes:
 
-* **Ask** — the agent is read-only. It can search, read and analyse, but nothing is modified.
-* **Edit** — the agent can create and update records. Editing tools are only available in this mode.
+* **Ask**: the agent is read-only. It can search, read and analyse, but nothing is modified.
+* **Edit**: the agent can create and update records. Editing tools are only available in this mode.
 
-Edit mode depends on your plan and on the matching permission. If it is not available to you, the selector does not appear and editing tools stay inactive, even when they are ticked in the agent definition.
+Edit mode depends on your plan and on the matching permission. If your plan does not include it, the **Edit** option is locked. Without the write permission of the assistant, the selector does not appear. In both cases, editing tools stay inactive, even when they are ticked in the agent definition.
+
+In the conversation, each editing tool asks for your confirmation before it runs. The agent can neither delete nor anonymize a record: these actions are not offered to it.
 
 ***
 
@@ -87,7 +89,7 @@ The **chat preview**, on the right of the editor, is a real conversation with th
 Once the agent is **Enabled**, workspace users reach it:
 
 * from the **Dastra AI** panel, at the bottom right of the screen;
-* with the **Ctrl+J** keyboard shortcut (**⌘J** on Mac);
+* with the **Ctrl+J** keyboard shortcut (**Cmd+J** on Mac);
 * from the full-screen Dastra AI page.
 
 The **Choose an agent** selector, at the top of the conversation, switches between agents.

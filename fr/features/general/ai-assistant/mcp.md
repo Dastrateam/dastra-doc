@@ -8,7 +8,7 @@ description: >-
 
 Le serveur MCP (**Model Context Protocol**) permet à votre assistant IA, votre éditeur de code ou votre terminal de travailler avec vos données Dastra : rechercher des fiches, créer des entités, mettre à jour des champs, et plus encore.
 
-Autrement dit, au lieu de venir dans Dastra, vous demandez à l'outil que vous utilisez déjà — Claude, ChatGPT, Microsoft Copilot, Le Chat, Cursor… — de le faire pour vous.
+Autrement dit, au lieu de venir dans Dastra, vous demandez à l'outil que vous utilisez déjà (Claude, ChatGPT, Microsoft Copilot, Le Chat, Cursor…) de le faire pour vous.
 
 Tout se configure dans **Paramètres de l'organisation > Clés d'API & MCP > MCP Server** ([accès direct](https://app.dastra.eu/general-settings/api)).
 
@@ -21,7 +21,7 @@ Tout se configure dans **Paramètres de l'organisation > Clés d'API & MCP > MCP
 {% hint style="warning" %}
 **Trois conditions doivent être réunies :**
 
-* Le serveur MCP fait partie de l'offre **Dastra AI Pro**. S'il n'est pas inclus dans votre abonnement, l'onglet reste visible mais la connexion est refusée.
+* Le serveur MCP fait partie de l'offre **Dastra AI Pro**. S'il n'est pas inclus dans votre abonnement, l'onglet reste visible mais verrouillé, et les appels d'outils sont refusés.
 * Seul un **propriétaire du compte** peut connecter un outil d'IA.
 * **Chaque connexion est limitée à un seul espace de travail** : celui choisi au moment d'approuver la connexion, ou celui auquel la clé d'API est liée. Pour travailler sur deux espaces de travail, créez deux connexions.
 {% endhint %}
@@ -151,7 +151,7 @@ Une fois connecté, votre outil dispose d'une trentaine d'outils Dastra.
 
 | Outil | Ce qu'il fait |
 | --- | --- |
-| Recherche approximative | Recherche large sur tous les types de fiches — le point de départ habituel |
+| Recherche approximative | Recherche large sur tous les types de fiches : le point de départ habituel |
 | Parcours des enregistrements | Liste et filtre les fiches d'un type donné |
 | Lecture d'un enregistrement | Récupère une fiche par son type et son identifiant |
 | Inspection de la structure | Décrit les champs et colonnes d'un type de fiche |
@@ -199,10 +199,12 @@ Le serveur MCP n'expose que des **outils**. Il ne publie ni *resources* ni *prom
 
 Quelques points à connaître :
 
-* **Portée** — une connexion ne voit qu'un seul espace de travail, dans une seule organisation.
-* **Traçabilité** — les écritures réalisées via MCP sont identifiées comme provenant d'un agent IA. La date de dernière utilisation de chaque clé est visible dans la liste des clés d'API.
-* **Révocation** — une connexion approuvée depuis le navigateur devient une clé d'API ordinaire, visible et révocable dans l'onglet **API keys**. Supprimer la clé coupe l'accès immédiatement.
-* **Débit** — les appels sont limités à 60 requêtes par minute sur le serveur MCP, et 120 requêtes par minute tous usages confondus. Au-delà, le serveur répond une erreur `429` en indiquant le délai d'attente.
+* **Portée** : une connexion ne voit qu'un seul espace de travail, dans une seule organisation.
+* **Traçabilité** : les écritures réalisées via MCP sont identifiées comme provenant d'un agent IA. La date de dernière utilisation de chaque clé est visible dans la liste des clés d'API.
+* **Révocation** : une connexion approuvée depuis le navigateur devient une clé d'API ordinaire, visible et révocable dans l'onglet **API keys**. Supprimer la clé coupe l'accès immédiatement.
+* **Débit** : les appels sont limités à 60 requêtes par minute sur le serveur MCP, et 120 requêtes par minute tous usages confondus. Au-delà, le serveur répond une erreur `429` en indiquant le délai d'attente.
+
+Les outils du serveur MCP sont ceux de Dastra AI, à quelques exceptions près : l'exécution de code, la création d'agents et la navigation dans l'interface n'existent pas côté MCP. À l'inverse, les outils de modification sont disponibles sans le mode Question ou Édition du chat, et Dastra n'affiche pas de demande de confirmation. Activez la confirmation avant exécution dans votre client MCP si vous voulez valider chaque modification.
 
 {% hint style="warning" %}
 Une clé d'API utilisée pour MCP donne accès en lecture **et en écriture** à un espace de travail entier. Traitez-la comme un mot de passe : ne la publiez jamais, et révoquez-la au moindre doute.
@@ -214,7 +216,7 @@ Une clé d'API utilisée pour MCP donne accès en lecture **et en écriture** à
 
 | Symptôme | Cause probable |
 | --- | --- |
-| La connexion est refusée avec un message d'abonnement | Le serveur MCP n'est pas inclus dans votre offre — il nécessite Dastra AI Pro |
+| Les appels d'outils sont refusés avec un message d'abonnement | Le serveur MCP n'est pas inclus dans votre offre. Il nécessite Dastra AI Pro |
 | « La clé d'API doit être liée à un espace de travail » | La clé a été créée sans espace de travail : recréez-en une en renseignant le champ correspondant |
 | Aucun outil Dastra n'apparaît dans votre client | La connexion n'a pas été finalisée. Sur Claude, ouvrez le connecteur et cliquez sur **Connecter** ; sur Claude Code, tapez `/mcp` |
 | Le Chat refuse la clé d'API | Normal : Le Chat ne prend en charge que la connexion via le navigateur |

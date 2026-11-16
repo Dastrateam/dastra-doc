@@ -10,7 +10,7 @@ Un **agent Dastra AI** est un assistant que vous configurez vous-même : vous lu
 
 Les agents se configurent depuis **Réglages espace de travail > Agents IA** ([accès direct](https://app.dastra.eu/workspace/0/settings/ai-agents)).
 
-<figure><img src="../../../../.gitbook/assets/ai-agents-liste.png" alt="Liste des agents Dastra AI d&#x27;un espace de travail"><figcaption><p>Réglages espace de travail &#x3E; Agents IA — la liste des agents configurés</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ai-agents-liste.png" alt="Liste des agents Dastra AI d&#x27;un espace de travail"><figcaption><p>Réglages espace de travail &#x3E; Agents IA : la liste des agents configurés</p></figcaption></figure>
 
 {% hint style="warning" %}
 **Ne confondez pas avec le registre des systèmes d'IA.** La rubrique [Systèmes d'IA](../../../ai-systems/README.md) sert à documenter **vos propres** systèmes d'IA au titre de l'AI Act. Les agents décrits ici sont une fonctionnalité de Dastra que vous utilisez pour travailler sur vos données.
@@ -36,11 +36,11 @@ Cliquez sur **Créer un agent**. Cinq points de départ vous sont proposés :
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-creation-modal.png" alt="Modale de création d&#x27;un agent avec les cinq points de départ"><figcaption><p>Les cinq façons de créer un agent</p></figcaption></figure>
 
-* **Générer avec Dastra AI** — décrivez la mission en quelques mots, l'assistant construit l'agent avec vous et l'enregistre après votre validation. C'est la compétence intégrée `/scaffold_agent`.
-* **Agent conversationnel** — repartez d'une page blanche pour un assistant de chat. Voir [Créer un agent conversationnel](conversational.md).
-* **Agent autonome** — repartez d'une page blanche pour une exécution outillée. Voir [Créer un agent autonome](autonomous.md).
-* **Bibliothèque Dastra** — partez d'un modèle prêt à l'emploi conçu par l'équipe Dastra. Le modèle est importé **en brouillon** : relisez ses instructions et ses outils avant de le publier.
-* **Importer un agent** — déposez un fichier de définition précédemment exporté depuis Dastra.
+* **Générer avec Dastra AI** : décrivez la mission en quelques mots, l'assistant construit l'agent avec vous et l'enregistre après votre validation. C'est la compétence intégrée `/scaffold_agent`.
+* **Agent conversationnel** : repartez d'une page blanche pour un assistant de chat. Voir [Créer un agent conversationnel](conversational.md).
+* **Agent autonome** : repartez d'une page blanche pour une exécution outillée. Voir [Créer un agent autonome](autonomous.md).
+* **Bibliothèque Dastra** : partez d'un modèle prêt à l'emploi conçu par l'équipe Dastra. Le modèle est importé **en brouillon** : relisez ses instructions et ses outils avant de le publier.
+* **Importer un agent** : déposez un fichier de définition précédemment exporté depuis Dastra.
 
 Dans tous les cas, la création se fait en deux temps : vous choisissez le type, vous saisissez un **nom** (120 caractères maximum) et une **description** facultative (1000 caractères), puis l'éditeur complet s'ouvre.
 
@@ -52,9 +52,9 @@ L'éditeur **enregistre automatiquement** : la date de dernière sauvegarde s'af
 
 ### Publier, désactiver, archiver, supprimer
 
-* **Actif / Désactivé** — un agent désactivé n'apparaît plus pour les utilisateurs et ses planifications ne se déclenchent plus. C'est l'état à utiliser pendant que vous mettez au point ses instructions.
-* **Archiver** — l'agent part à la corbeille. Cochez **Voir la corbeille** dans la liste pour le retrouver et le restaurer. Ses exécutions passées sont conservées.
-* **Supprimer** — la suppression est définitive et **efface également toutes les sessions et tous les messages** de l'agent. Utilisez-la lorsque vous devez purger ces données.
+* **Actif / Désactivé** : un agent désactivé n'apparaît plus pour les utilisateurs et ses planifications ne se déclenchent plus. C'est l'état à utiliser pendant que vous mettez au point ses instructions.
+* **Archiver** : l'agent part à la corbeille. Cochez **Voir la corbeille** dans la liste pour le retrouver et le restaurer. Ses exécutions passées sont conservées.
+* **Supprimer** : la suppression est définitive et **efface également toutes les sessions et tous les messages** de l'agent. Utilisez-la lorsque vous devez purger ces données.
 
 ### Exporter et importer un agent
 
@@ -78,7 +78,7 @@ L'accès aux agents dépend à la fois de votre **offre** et de vos **permission
 Les permissions se règlent dans **Paramètres de l'organisation > Rôles et permissions**. Le [serveur MCP](../mcp.md) fait l'objet d'une offre distincte.
 
 {% hint style="info" %}
-**Un agent n'a jamais plus de droits que la personne qui le déclenche.** Ses outils s'exécutent avec vos propres permissions : s'il n'a pas accès à une fiche, l'agent n'y a pas accès non plus.
+**Un agent n'a jamais plus de droits que la personne qui le déclenche.** Ses outils s'exécutent avec vos propres permissions : s'il n'a pas accès à une fiche, l'agent n'y a pas accès non plus. Les actions destructives (suppression, anonymisation) ne lui sont jamais proposées.
 {% endhint %}
 
 ***
