@@ -21,6 +21,10 @@ Dastra gebruikt vooraf getrainde generatieve AI-modellen, beschikbaar in vier fa
 
 Voor de eerste drie families worden de modellen gehost op de infrastructuur van Microsoft Azure in Frankrijk. Ze worden niet rechtstreeks beheerd door OpenAI of Mistral: Dastra gebruikt beheerde Azure-diensten, zodat uw gegevens niet via de eigen infrastructuur van OpenAI of Mistral lopen.
 
+{% hint style="warning" %}
+**Bleu-aanbod.** Op [Bleu](../../../security/bleu.md) lopen de AI-functies niet via Azure: ze worden uitgevoerd door Mistral AI, een Frans bedrijf buiten de Bleu-perimeter. De tabel hierboven geldt niet. Alleen de Mistral-familie wordt gebruikt, en elke voorkeur voor OpenAI of Open source wordt vervangen door Mistral: Mistral Small voor het niveau Fast, Mistral Large voor de niveaus Smart en Large context. Dastra AI en agents gebruiken Mistral Medium, en spraakdictaat gebruikt Mistral Voxtral.
+{% endhint %}
+
 Voor elke familie worden afhankelijk van de complexiteit van de taak drie modelniveaus gebruikt:
 
 * Fast (eenvoudige acties): beschrijvingen genereren, labels voorstellen
@@ -73,6 +77,10 @@ Microsoft Azure garandeert de volgende punten contractueel voor alle modellen va
 Microsoft Azure heeft een geautomatiseerd mechanisme om mogelijk misbruikte inhoud op te sporen. In uitzonderlijke gevallen waarin inhoud wordt gemarkeerd, kan een steekproef van prompts tijdelijk worden bewaard in een opslagomgeving die van andere klanten is afgeschermd, met het oog op controle. Voor resources die in de EER zijn geïmplementeerd (zoals bij Dastra het geval is), bevinden eventuele menselijke beoordelaars zich eveneens in de EER.
 
 Deze bewaring blijft uitzonderlijk en geldt niet voor het normale gebruik van het platform. Zie voor meer informatie de [Microsoft-documentatie over gegevensprivacy van Azure Direct Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).
+
+{% hint style="warning" %}
+**Bleu-aanbod.** Dit onderdeel beschrijft Azure en geldt niet voor Bleu: verzoeken worden daar verwerkt door Mistral AI, onder diens eigen voorwaarden. Raadpleeg voor de geldende toezeggingen uw Dastra-contract of neem contact op met ons team.
+{% endhint %}
 
 ## Logboeken van het AI-gebruik
 
@@ -166,6 +174,10 @@ Dastra stuurt geen gegevens uit uw werkruimte naar het AI-model tenzij u daarom 
 | Chatten met Dastra AI of een agent | Uw bericht en de gespreksgeschiedenis, de instructies van de agent, de waarden van zijn invoervelden, het resultaat van de tools (inhoud van de records waartoe u toegang hebt) en bijlagen. Afbeeldingen en pdf's worden naar het model gestuurd; andere formaten worden niet gelezen. Het maskeringsfilter wordt niet toegepast. Gesprekken worden in Dastra opgeslagen en u kunt ze verwijderen; bijlagen worden 180 dagen bewaard | **Ja**, afhankelijk van de geraadpleegde records en de bijlagen |
 
 Bij de [MCP-server](mcp.md) worden de gelezen gegevens verzonden naar de AI-tool die u hebt gekoppeld, onder diens eigen voorwaarden, en niet naar een model van Dastra.
+
+{% hint style="warning" %}
+**Bleu-aanbod.** De gegevens uit de tabel worden naar Mistral AI gestuurd, niet naar Azure. Bij Dastra AI en agents worden bijgevoegde afbeeldingen naar het model gestuurd en andere bestanden als uitgelezen tekst. Automatische redactie gebruikt de optische tekenherkenning (OCR) van Mistral. Het uitvoeren van code in Dastra AI is niet beschikbaar.
+{% endhint %}
 
 {% hint style="warning" %}
 Goede praktijk: voeg geen persoonsgegevens rechtstreeks in vrije tekstvelden (beschrijvingen, eigen instructies) in. Gebruik waar mogelijk identificatiecodes of algemene termen.

@@ -45,6 +45,10 @@ Draw the areas to hide on each page with the mouse. The editor shows the number 
 
 In the editor, click **Auto-redact with AI** to open the **Auto-redact with AI** dialog. The AI analyzes the document, finds third-party personal data (names, addresses, contact details, identification numbers) and places redaction areas. No data is kept beyond the session. The text of the document, extracted by optical character recognition (OCR), is sent to the AI model in blocks: it contains personal data by nature. Dastra does not log this text or the detected values, and the proposed areas are not saved before you validate them. See [What data is transmitted to the model](../general/ai-assistant/how-it-works.md#what-data-is-transmitted-to-the-model) for details.
 
+{% hint style="warning" %}
+**Bleu offer.** Optical character recognition and text analysis are performed by Mistral AI, not by Azure.
+{% endhint %}
+
 The dialog offers three options:
 
 * **Exclude the data subject's own information from redaction**: selected by default, so the requester's own data stays readable.

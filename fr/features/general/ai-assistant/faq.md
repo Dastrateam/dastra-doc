@@ -8,6 +8,10 @@ description: >-
 
 ## Confidentialité et données
 
+{% hint style="warning" %}
+**Offre Bleu.** Les réponses de cette section qui décrivent Azure (hébergement des modèles, non-entraînement, conservation des prompts, détection des abus, sous-traitant de rang 2) ne s'appliquent pas à [Bleu](../../../security/bleu.md) : les fonctions d'IA y sont exécutées par Mistral AI, société française hors du périmètre Bleu. Pour les engagements contractuels applicables, référez-vous à votre contrat Dastra ou contactez notre équipe.
+{% endhint %}
+
 **Mes données sont-elles utilisées pour entraîner les modèles d'IA ?**
 
 Non. Les modèles utilisés par Dastra sont pré-entraînés et hébergés sur Microsoft Azure. Vos données ne sont jamais utilisées pour entraîner, affiner ou améliorer les modèles de base, que ce soit par Microsoft, OpenAI, Mistral ou tout autre tiers. Cette garantie est contractuelle.

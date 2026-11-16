@@ -21,6 +21,10 @@ Dastra uses pre-trained generative AI models, available in four families to choo
 
 For the first three families, models are hosted on Microsoft Azure infrastructure in France. They are not operated directly by OpenAI or Mistral: Dastra uses Azure managed services, meaning **your data does not transit through OpenAI's or Mistral's own infrastructure**.
 
+{% hint style="warning" %}
+**Bleu offer.** On [Bleu](../../../security/bleu.md), the AI features do not go through Azure: they are run by Mistral AI, a French company outside the Bleu perimeter. The table above does not apply. Only the Mistral family is used, and any OpenAI or Open source preference is replaced by Mistral: Mistral Small for the Fast tier, Mistral Large for the Smart and Large context tiers. Dastra AI and agents use Mistral Medium, and voice dictation uses Mistral Voxtral.
+{% endhint %}
+
 For each family, three model tiers are used depending on task complexity:
 
 * **Fast** (simple actions): generating descriptions, suggesting tags
@@ -81,6 +85,10 @@ The following points are contractually guaranteed by Microsoft Azure for all mod
 Microsoft Azure maintains an automated mechanism for detecting potentially abusive content. In exceptional cases where content is flagged, a sample of prompts may be temporarily retained in a customer-isolated storage environment for review purposes. For resources deployed in the EEA (which is the case for Dastra), any human reviewers involved are also located in the EEA.
 
 This retention remains exceptional and does not apply to normal platform usage. For more details, see the [Microsoft documentation on Azure Direct Models data privacy](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).
+
+{% hint style="warning" %}
+**Bleu offer.** This section describes Azure and does not apply to Bleu: requests are processed by Mistral AI, under its own terms. For the commitments that apply, refer to your Dastra contract or contact our team.
+{% endhint %}
 
 ***
 
@@ -178,6 +186,10 @@ Dastra transmits **no data from your workspace** to the AI model unless you init
 | **Chat with Dastra AI or an agent** | Your message and the conversation history, the agent's instructions, the values of its input fields, the result of the tools (content of the records you can access) and attachments. Images and PDFs are sent to the model; other formats are not read. The masking filter is not applied. Conversations are saved in Dastra, and you can delete them; attachments are kept for 180 days | **Yes**, depending on the records consulted and the attachments |
 
 With the [MCP server](mcp.md), the data read is sent to the AI tool you connected, subject to its own terms, and not to a Dastra model.
+
+{% hint style="warning" %}
+**Bleu offer.** The data in the table is sent to Mistral AI, not to Azure. For Dastra AI and agents, attached images are sent to the model and other files are sent as extracted text. Automatic redaction uses Mistral's optical character recognition (OCR). Code execution in Dastra AI is not available.
+{% endhint %}
 
 {% hint style="warning" %}
 **Best practice**: avoid including personal data directly in free text fields (descriptions, custom instructions). Use identifiers or generic terms where possible.

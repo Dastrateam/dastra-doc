@@ -45,6 +45,10 @@ Teken met de muis op elke pagina de te verbergen gebieden. De editor toont het a
 
 Klik in de editor op **Auto-redact with AI** om het venster **Automatische verdoezeling door IA** te openen. De AI analyseert het document, vindt persoonsgegevens van derden (namen, adressen, contactgegevens, identificatienummers) en plaatst gebieden om te verbergen. Er worden geen gegevens bewaard na de sessie. De tekst van het document, uitgelezen met optische tekenherkenning (OCR), wordt in blokken naar het AI-model gestuurd: hij bevat van nature persoonsgegevens. Dastra logt noch deze tekst noch de gevonden waarden, en de voorgestelde gebieden worden pas opgeslagen nadat u ze hebt bevestigd. Zie [Gegevens die naar het model worden gestuurd](../general/ai-assistant/how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd) voor details.
 
+{% hint style="warning" %}
+**Bleu-aanbod.** De optische tekenherkenning en de tekstanalyse worden uitgevoerd door Mistral AI, niet door Azure.
+{% endhint %}
+
 Het venster biedt drie opties:
 
 * **Uitsluiten van de informatie van de betrokken persoon van de verdoezeling**: standaard geselecteerd, zodat de eigen gegevens van de aanvrager leesbaar blijven.

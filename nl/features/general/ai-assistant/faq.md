@@ -8,6 +8,10 @@ description: >-
 
 ## Privacy en gegevens
 
+{% hint style="warning" %}
+**Bleu-aanbod.** De antwoorden in dit onderdeel die Azure beschrijven (hosting van de modellen, geen training, bewaring van prompts, misbruikdetectie, subverwerker van de tweede rang) gelden niet voor [Bleu](../../../security/bleu.md): de AI-functies worden daar uitgevoerd door Mistral AI, een Frans bedrijf buiten de Bleu-perimeter. Raadpleeg voor de geldende contractuele toezeggingen uw Dastra-contract of neem contact op met ons team.
+{% endhint %}
+
 ### Worden mijn gegevens gebruikt om AI-modellen te trainen?
 
 Nee. De modellen die Dastra gebruikt, zijn vooraf getraind en worden gehost op Microsoft Azure. Uw gegevens worden nooit gebruikt om de basismodellen te trainen, bij te stellen of te verbeteren, niet door Microsoft, OpenAI, Mistral of enige andere derde. Deze garantie is contractueel.

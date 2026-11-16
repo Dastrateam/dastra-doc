@@ -8,6 +8,10 @@ description: >-
 
 ## Privacy and data
 
+{% hint style="warning" %}
+**Bleu offer.** The answers in this section that describe Azure (model hosting, no training, prompt retention, abuse detection, tier-2 sub-processor) do not apply to [Bleu](../../../security/bleu.md): the AI features are run there by Mistral AI, a French company outside the Bleu perimeter. For the contractual commitments that apply, refer to your Dastra contract or contact our team.
+{% endhint %}
+
 **Is my data used to train AI models?**
 
 No. The models used by Dastra are pre-trained and hosted on Microsoft Azure. Your data is never used to train, fine-tune, or improve the base models by Microsoft, OpenAI, Mistral, or any other third party. This guarantee is contractual.

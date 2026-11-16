@@ -45,6 +45,10 @@ Zeichnen Sie mit der Maus auf jeder Seite die Bereiche ein, die ausgeblendet wer
 
 Klicken Sie im Editor auf **Automatische Schwärzung**, um den Dialog **Automatische Maskierung mittels KI** zu öffnen. Die KI analysiert das Dokument, findet personenbezogene Daten Dritter (Namen, Adressen, Kontaktdaten, Identifikationsnummern) und setzt Schwärzungsbereiche. Über die Sitzung hinaus werden keine Daten gespeichert. Der Text des Dokuments, per optischer Zeichenerkennung (OCR) extrahiert, wird blockweise an das KI-Modell gesendet: Er enthält von Natur aus personenbezogene Daten. Dastra protokolliert weder diesen Text noch die erkannten Werte, und die vorgeschlagenen Bereiche werden erst nach Ihrer Bestätigung gespeichert. Einzelheiten finden Sie unter [An das Modell übermittelte Daten](../general/ai-assistant/how-it-works.md#an-das-modell-ubermittelte-daten).
 
+{% hint style="warning" %}
+**Bleu-Angebot.** Die optische Zeichenerkennung und die Textanalyse werden von Mistral AI durchgeführt, nicht von Azure.
+{% endhint %}
+
 Der Dialog bietet drei Optionen:
 
 * **Die Daten der betroffenen Person von der Anonymisierung ausnehmen**: standardmäßig ausgewählt, damit die Daten des Antragstellers lesbar bleiben.

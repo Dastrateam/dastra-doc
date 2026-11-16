@@ -45,6 +45,10 @@ Tracez à la souris les zones à masquer sur chaque page. L'éditeur affiche le 
 
 Dans l'éditeur, cliquez sur **Caviarder auto.** pour ouvrir la fenêtre **Occultation automatique par IA**. L'IA analyse le document, repère les données personnelles de tiers (noms, adresses, coordonnées, numéros d'identification) et place des zones d'occultation. Aucune donnée n'est conservée au-delà de la session. Le texte du document, extrait par reconnaissance de caractères (OCR), est envoyé au modèle d'IA par blocs : il contient par nature des données personnelles. Dastra ne journalise ni ce texte ni les valeurs détectées, et les zones proposées ne sont pas enregistrées avant votre validation. Le détail figure dans [Quelles données sont transmises au modèle](../general/ai-assistant/how-it-works.md#quelles-donnees-sont-transmises-au-modele).
 
+{% hint style="warning" %}
+**Offre Bleu.** La reconnaissance de caractères et l'analyse du texte sont réalisées par Mistral AI, et non par Azure.
+{% endhint %}
+
 La fenêtre propose trois options :
 
 * **Exclure les informations de la personne concernée de l'occultation** : cochée par défaut, pour que les données du demandeur restent lisibles.

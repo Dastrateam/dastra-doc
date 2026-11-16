@@ -22,6 +22,10 @@ Dastra verwendet vortrainierte generative KI-Modelle, die in vier Familien zur A
 
 Für die ersten drei Familien werden die Modelle auf der Infrastruktur von Microsoft Azure in Frankreich gehostet. Sie werden nicht direkt von OpenAI oder Mistral betrieben: Dastra nutzt verwaltete Azure-Dienste, das heißt, **Ihre Daten laufen nicht über die eigene Infrastruktur von OpenAI oder Mistral**.
 
+{% hint style="warning" %}
+**Bleu-Angebot.** Auf [Bleu](../../../security/bleu.md) laufen die KI-Funktionen nicht über Azure: Sie werden von Mistral AI ausgeführt, einem französischen Unternehmen außerhalb des Bleu-Perimeters. Die obige Tabelle gilt nicht. Es wird nur die Mistral-Familie verwendet, und jede Präferenz für OpenAI oder Open Source wird durch Mistral ersetzt: Mistral Small für die Stufe Fast, Mistral Large für die Stufen Smart und Large context. Dastra AI und die Agenten nutzen Mistral Medium, die Sprachdiktat-Funktion Mistral Voxtral.
+{% endhint %}
+
 Für jede Familie werden je nach Komplexität der Aufgabe drei Modellstufen verwendet:
 
 * **Fast** (einfache Aktionen): Beschreibungen erstellen, Tags vorschlagen
@@ -82,6 +86,10 @@ Die folgenden Punkte sind für alle Modelle der Familien OpenAI, Mistral und Ope
 Microsoft Azure unterhält einen automatisierten Mechanismus zur Erkennung potenziell missbräuchlicher Inhalte. In Ausnahmefällen, in denen ein Inhalt gemeldet wird, kann eine Stichprobe von Prompts zu Prüfzwecken vorübergehend in einer kundenspezifisch isolierten Speicherumgebung aufbewahrt werden. Für Ressourcen, die im EWR bereitgestellt werden (was bei Dastra der Fall ist), befinden sich auch die beteiligten menschlichen Prüfer im EWR.
 
 Diese Aufbewahrung bleibt die Ausnahme und gilt nicht für die normale Nutzung der Plattform. Weitere Einzelheiten finden Sie in der [Microsoft-Dokumentation zum Datenschutz bei direkten Azure-Modellen](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).
+
+{% hint style="warning" %}
+**Bleu-Angebot.** Dieser Abschnitt beschreibt Azure und gilt nicht für Bleu: Anfragen werden dort von Mistral AI nach dessen eigenen Bedingungen verarbeitet. Zu den geltenden Zusagen wenden Sie sich an Ihren Dastra-Vertrag oder an unser Team.
+{% endhint %}
 
 ***
 
@@ -179,6 +187,10 @@ Dastra übermittelt **keine Daten Ihres Mandanten** an das KI-Modell, es sei den
 | **Mit Dastra AI oder einem Agenten chatten** | Ihre Nachricht und der Gesprächsverlauf, die Anweisungen des Agenten, die Werte seiner Eingabefelder, das Ergebnis der Werkzeuge (Inhalt der Einträge, auf die Sie Zugriff haben) und Anhänge. Bilder und PDFs werden an das Modell gesendet; andere Formate werden nicht gelesen. Der Maskierungsfilter wird nicht angewendet. Gespräche werden in Dastra gespeichert, und Sie können sie löschen; Anhänge werden 180 Tage aufbewahrt | **Ja**, je nach eingesehenen Einträgen und Anhängen |
 
 Beim [MCP-Server](mcp.md) werden die gelesenen Daten an das von Ihnen verbundene KI-Werkzeug übermittelt, nach dessen eigenen Bedingungen, und nicht an ein Modell von Dastra.
+
+{% hint style="warning" %}
+**Bleu-Angebot.** Die Daten der Tabelle werden an Mistral AI übermittelt, nicht an Azure. Bei Dastra AI und den Agenten werden angehängte Bilder an das Modell gesendet, andere Dateien als extrahierter Text. Die automatische Schwärzung nutzt die optische Zeichenerkennung (OCR) von Mistral. Die Codeausführung in Dastra AI ist nicht verfügbar.
+{% endhint %}
 
 {% hint style="warning" %}
 **Bewährte Vorgehensweise**: Vermeiden Sie es, personenbezogene Daten direkt in Freitextfelder (Beschreibungen, individuelle Anweisungen) aufzunehmen. Verwenden Sie nach Möglichkeit Kennungen oder allgemeine Begriffe.
