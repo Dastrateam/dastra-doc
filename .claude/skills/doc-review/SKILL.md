@@ -13,6 +13,8 @@ Review pages of this repository against three references, then report or fix:
   each language.
 - [`references/glossary.md`](references/glossary.md): the term to use for each privacy, product and technical
   concept in the four languages, and the variants to replace.
+- [`references/glossary-de.md`](references/glossary-de.md): the customer's French to German terms, for German
+  pages.
 
 Read the three files before reviewing. They are the rules; this file is the procedure.
 

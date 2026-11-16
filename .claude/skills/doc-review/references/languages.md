@@ -56,6 +56,7 @@ the four languages** (English slugs, lowercase, hyphens), so `fr/features/ropa/m
 - German quotation marks „…“ for quoted words (UI labels in bold).
 - Hyphenate compounds with an English or abbreviated part: API-Schlüssel, Cookie-Banner, KI-System, E-Mail.
 - Prefer the German term when the app has one; keep English only where the app does.
+- For a concept missing from `glossary.md`, take the German term of [`glossary-de.md`](glossary-de.md).
 
 ## Dutch (`nl/`)
 
