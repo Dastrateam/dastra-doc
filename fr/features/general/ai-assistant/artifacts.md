@@ -86,7 +86,7 @@ Un artefact HTML s'exécute dans un cadre isolé. Un lien vers une fiche l'ouvre
 Les artefacts sont des fichiers du module Documents de l'espace de travail, dans le dossier **AI Artifacts**. Ils suivent les règles de tout fichier :
 
 * **Déplacer dans la corbeille**, dans le menu de la ligne, envoie l'artefact dans la corbeille du module Documents.
-* Supprimer une conversation supprime ses messages et les fichiers qui y sont joints, mais pas les artefacts qu'elle a produits. Placez-les dans la corbeille séparément.
+* Supprimer une conversation supprime ses messages et les fichiers qui y sont joints, mais jamais les artefacts qu'elle a produits : un même artefact peut être modifié depuis plusieurs conversations. Placez un artefact dans la corbeille depuis sa page ou depuis le dossier **AI Artifacts** du module Documents.
 * Dastra AI peut les retrouver : demandez-lui de lister les artefacts de l'espace de travail.
 
 ***

@@ -86,7 +86,7 @@ An HTML artifact runs in an isolated frame. A link to a record opens it in a new
 Artifacts are files of the Documents module of the workspace, in the **AI Artifacts** folder. They follow the rules of any file:
 
 * **Move to trash**, in the menu of the row, sends the artifact to the recycle bin of the Documents module.
-* Deleting a conversation deletes its messages and the files attached to it, but not the artifacts it produced. Move them to the trash separately.
+* Deleting a conversation deletes its messages and the files attached to it, but never the artifacts it produced: the same artifact can be updated from several conversations. Move an artifact to the trash from its page or from the **AI Artifacts** folder of the Documents module.
 * Dastra AI can find them again: ask it to list the artifacts of the workspace.
 
 ***
