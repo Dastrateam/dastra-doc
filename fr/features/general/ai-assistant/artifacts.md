@@ -25,6 +25,9 @@ Lorsque l'assistant construit un fichier avec l'exécution de code, ou exporte d
 
 1. Ouvrez Dastra AI et décrivez ce que vous voulez : « Construis un tableau de bord des violations de données ouvertes par statut » ou « Dessine le flux de données de ce traitement sous forme de schéma ».
 2. L'assistant rassemble les données dont il a besoin avec vos permissions, puis affiche une carte avec le titre de l'artefact et le bouton **Ouvrir**. La carte indique **Artefact créé**.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-3.png" alt="Le panneau Dastra AI avec la carte Artefact créé"><figcaption><p>La carte d'un artefact, avec le bouton Ouvrir</p></figcaption></figure>
+
 3. Cliquez sur **Ouvrir** pour voir le résultat sur sa propre page.
 4. Demandez des modifications dans la même conversation. L'assistant met à jour le même artefact au lieu d'en créer un second, et la carte indique **Artefact mis à jour**.
 
@@ -44,6 +47,8 @@ Les artefacts sont listés dans la section **Dastra AI** du menu **Automatisatio
 Depuis le panneau, l'entrée **Mes artefacts** du menu **+** ouvre la même liste.
 
 La liste affiche chaque artefact sous forme de carte ou de ligne de tableau : choisissez **Vue exhaustive** ou **Vue simplifiée**. Utilisez **Rechercher un artefact** pour filtrer par nom. Le tableau indique le créateur, la date de dernière mise à jour, la taille et la visibilité.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-1.png" alt="La liste des artefacts en vue cartes"><figcaption><p>Les artefacts de l'espace de travail, avec leur visibilité</p></figcaption></figure>
 
 La liste suit les permissions du module Documents : vous ne voyez que les artefacts que vous pouvez ouvrir. Lorsqu'elle est vide, le bouton **Demander à Dastra AI** démarre une conversation.
 
@@ -65,6 +70,8 @@ Un artefact peut contenir des données que l'assistant a lues dans votre espace 
 {% endhint %}
 
 ## Travailler avec un artefact
+
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-2.png" alt="La page d'un artefact HTML avec ses actions"><figcaption><p>La page d'un artefact : aperçu et actions</p></figcaption></figure>
 
 Sur la page d'un artefact, vous pouvez :
 

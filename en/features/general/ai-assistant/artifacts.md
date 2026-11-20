@@ -25,6 +25,9 @@ When the assistant builds a file with code execution, or exports records, the re
 
 1. Open Dastra AI and describe what you want: "Build a dashboard of the open data breaches by status" or "Draw the data flow of this processing activity as a diagram".
 2. The assistant gathers the data it needs with your permissions, then shows a card with the title of the artifact and the **Open** button. The card reads **Artifact created**.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-3.png" alt="The Dastra AI panel with the Artifact created card"><figcaption><p>The card of an artifact, with the Open button</p></figcaption></figure>
+
 3. Click **Open** to see the result on its own page.
 4. Ask for changes in the same conversation. The assistant updates the same artifact instead of creating a second one, and the card reads **Artifact updated**.
 
@@ -44,6 +47,8 @@ Artifacts are listed in the **Dastra AI** section of the **Automation** menu:
 From the panel, the **My artifacts** entry of the **+** menu opens the same list.
 
 The list shows each artifact as a card or as a row of a table: choose **Detailed view** or **Condensed view**. Use **Search an artifact** to filter by name. The table shows the creator, the date of the last update, the size and the visibility.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-1.png" alt="The artifacts list in card view"><figcaption><p>The artifacts of the workspace, with their visibility</p></figcaption></figure>
 
 The list follows the permissions of the Documents module: you only see the artifacts you can open. When it is empty, the **Ask Dastra AI** button starts a conversation.
 
@@ -65,6 +70,8 @@ An artifact can contain data that the assistant read in your workspace, includin
 {% endhint %}
 
 ## Work with an artifact
+
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-2.png" alt="The page of an HTML artifact with its actions"><figcaption><p>An artifact page: preview and actions</p></figcaption></figure>
 
 On the page of an artifact, you can:
 

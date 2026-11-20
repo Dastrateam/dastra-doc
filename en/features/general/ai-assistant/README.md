@@ -58,6 +58,8 @@ Beyond content generation, Dastra AI offers a conversational mode that you query
 
 The **Dastra AI** entry of the **Automation** menu groups the full-size chat (**Conversations**, with the **Artifacts** list), **Agents**, **Inbox** and **Skills**. The last three appear when your plan includes custom agents and your role allows them.
 
+<figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="The Dastra AI entry of the Automation menu"><figcaption><p>Automation &#x3E; Dastra AI</p></figcaption></figure>
+
 All AI features share the monthly AI credit quota described in [How it works](how-it-works.md#ai-credits-and-quotas).
 
 ## Chat with Dastra AI
@@ -105,6 +107,8 @@ Before it runs one of these tools, Dastra AI shows an **Authorization required**
 * **Approve** to run the tool this time;
 * **Always approve for this session** to stop being asked for the tools of this conversation;
 * **Decline** to refuse.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-confirmation-1.png" alt="The Authorization required card of Dastra AI"><figcaption><p>The authorization card of Edit mode</p></figcaption></figure>
 
 If you send another message while a card is waiting, the card no longer applies.
 

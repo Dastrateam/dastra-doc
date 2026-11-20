@@ -58,6 +58,8 @@ Au-delà de la génération de contenu, Dastra AI propose un mode conversationne
 
 L'entrée **Dastra AI** du menu **Automatisation** regroupe le chat en grand (**Conversations**, avec la liste des **Artefacts**), **Agents**, **Boîte de réception** et **Compétences**. Les trois dernières apparaissent lorsque votre offre inclut les agents personnalisés et que votre rôle les autorise.
 
+<figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="L'entrée Dastra AI du menu Automatisation"><figcaption><p>Automatisation &#x3E; Dastra AI</p></figcaption></figure>
+
 Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit dans [Comment ça marche ?](how-it-works.md#credits-et-quotas-ia).
 
 ## Discuter avec Dastra AI
@@ -105,6 +107,8 @@ Avant d'exécuter l'un de ces outils, Dastra AI affiche une carte **Autorisation
 * **Approuver** pour exécuter l'outil cette fois ;
 * **Toujours approuver pour cette session** pour ne plus être sollicité pour les outils de cette conversation ;
 * **Refuser** pour refuser.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-confirmation-1.png" alt="La carte Autorisation requise de Dastra AI"><figcaption><p>La carte d'autorisation du mode Édition</p></figcaption></figure>
 
 Si vous envoyez un autre message pendant qu'une carte est en attente, la carte n'est plus pertinente.
 
