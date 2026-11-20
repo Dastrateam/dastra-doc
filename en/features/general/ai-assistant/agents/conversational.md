@@ -48,9 +48,9 @@ The suggested questions shown under the welcome message. They act as an implicit
 
 ### Tools
 
+{% columns %}
+{% column %}
 By default an agent has access to **all** tools. Each group below has three options, **All**, **None** and **Custom**. Choose **Custom** to switch on only the tools you want. An agent needs at least one tool.
-
-<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Tool picker split into read-only tools and editing tools"><figcaption><p>Tools are grouped into read-only tools and editing tools</p></figcaption></figure>
 
 Tools come in two groups:
 
@@ -58,6 +58,12 @@ Tools come in two groups:
 * **Editing tools**: creating and updating records, running record actions such as changing the workflow step, adding comments, creating action plans and tags, planning and filling in questionnaires, writing documents, linking files.
 
 Asking you a question and taking you to a page of Dastra are always available in a conversation: they are not in the list.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Tool picker split into read-only tools and editing tools" width="500"><figcaption><p>Tools are grouped into read-only tools and editing tools</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 {% hint style="warning" %}
 Restricting tools is the safest way to keep an agent on rails. An assistant meant to answer questions needs no editing tool at all: do not give it any.

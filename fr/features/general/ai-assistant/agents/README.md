@@ -44,9 +44,7 @@ Cliquez sur **Créer un agent**. Cinq points de départ vous sont proposés :
 
 Dans tous les cas, la création se fait en deux temps : vous choisissez le type, vous saisissez un **nom** (120 caractères maximum) et une **description** facultative, puis l'éditeur complet s'ouvre. L'éditeur accepte des descriptions de 3000 caractères au plus, avec une mise en forme Markdown de base.
 
-{% hint style="info" %}
 L'éditeur **enregistre automatiquement** : la date de dernière sauvegarde s'affiche en haut à droite. Il n'y a pas de bouton « Enregistrer ».
-{% endhint %}
 
 ***
 
@@ -77,11 +75,9 @@ L'accès aux agents dépend à la fois de votre **offre** et de vos **permission
 
 Les permissions se règlent dans l'éditeur de rôles, voir [Rôles](../../../settings/roles.md). Le [serveur MCP](../mcp.md) fait l'objet d'une offre distincte.
 
-{% hint style="info" %}
-**Un agent conversationnel n'a jamais plus de droits que la personne qui discute avec lui.** Ses outils s'exécutent avec vos propres permissions : si vous n'avez pas accès à une fiche, l'agent n'y a pas accès non plus. La suppression et l'anonymisation ne sont pas proposées aux agents.
-{% endhint %}
-
 {% hint style="warning" %}
+**Un agent conversationnel n'a jamais plus de droits que la personne qui discute avec lui.** Ses outils s'exécutent avec vos propres permissions : si vous n'avez pas accès à une fiche, l'agent n'y a pas accès non plus. La suppression et l'anonymisation ne sont pas proposées aux agents.
+
 **Un agent autonome n'est pas lié aux permissions d'un utilisateur.** Une exécution lancée par un planning, par une règle de workflow ou par **Exécuter** s'effectue avec les droits de l'espace de travail, quelle que soit la personne qui l'a lancée. Ne lui donnez que les outils que sa mission exige.
 {% endhint %}
 
@@ -97,18 +93,4 @@ Le détail des familles de modèles, de l'hébergement et des données transmise
 
 ***
 
-{% content-ref url="conversational.md" %}
-[agent-conversationnel.md](conversational.md)
-{% endcontent-ref %}
-
-{% content-ref url="autonomous.md" %}
-[agent-autonome.md](autonomous.md)
-{% endcontent-ref %}
-
-{% content-ref url="skills.md" %}
-[competences.md](skills.md)
-{% endcontent-ref %}
-
-{% content-ref url="inbox.md" %}
-[boite-de-reception.md](inbox.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Créer un agent conversationnel</strong></td><td>Créez un assistant de chat spécialisé, avec sa propre personnalité, ses règles et ses outils</td><td><a href="conversational.md">conversational.md</a></td></tr><tr><td><strong>Créer un agent autonome</strong></td><td>Configurez un agent qui s'exécute seul, manuellement, selon un planning ou depuis une règle de workflow</td><td><a href="autonomous.md">autonomous.md</a></td></tr><tr><td><strong>Les compétences</strong></td><td>Enregistrez vos instructions récurrentes sous forme de commandes réutilisables dans le chat Dastra AI</td><td><a href="skills.md">skills.md</a></td></tr><tr><td><strong>Suivre les exécutions</strong></td><td>Retrouvez l'historique des exécutions de vos agents, leur statut et le détail de ce qu'ils ont fait</td><td><a href="inbox.md">inbox.md</a></td></tr></tbody></table>

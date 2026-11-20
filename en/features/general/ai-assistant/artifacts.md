@@ -26,7 +26,7 @@ When the assistant builds a file with code execution, or exports records, the re
 1. Open Dastra AI and describe what you want: "Build a dashboard of the open data breaches by status" or "Draw the data flow of this processing activity as a diagram".
 2. The assistant gathers the data it needs with your permissions, then shows a card with the title of the artifact and the **Open** button. The card reads **Artifact created**.
 
-<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-3.png" alt="The Dastra AI panel with the Artifact created card"><figcaption><p>The card of an artifact, with the Open button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-3.png" alt="The Dastra AI panel with the Artifact created card" width="500"><figcaption><p>The card of an artifact, with the Open button</p></figcaption></figure>
 
 3. Click **Open** to see the result on its own page.
 4. Ask for changes in the same conversation. The assistant updates the same artifact instead of creating a second one, and the card reads **Artifact updated**.

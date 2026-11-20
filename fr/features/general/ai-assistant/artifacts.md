@@ -26,7 +26,7 @@ Lorsque l'assistant construit un fichier avec l'exécution de code, ou exporte d
 1. Ouvrez Dastra AI et décrivez ce que vous voulez : « Construis un tableau de bord des violations de données ouvertes par statut » ou « Dessine le flux de données de ce traitement sous forme de schéma ».
 2. L'assistant rassemble les données dont il a besoin avec vos permissions, puis affiche une carte avec le titre de l'artefact et le bouton **Ouvrir**. La carte indique **Artefact créé**.
 
-<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-3.png" alt="Le panneau Dastra AI avec la carte Artefact créé"><figcaption><p>La carte d'un artefact, avec le bouton Ouvrir</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v3-ai-artifacts-3.png" alt="Le panneau Dastra AI avec la carte Artefact créé" width="500"><figcaption><p>La carte d'un artefact, avec le bouton Ouvrir</p></figcaption></figure>
 
 3. Cliquez sur **Ouvrir** pour voir le résultat sur sa propre page.
 4. Demandez des modifications dans la même conversation. L'assistant met à jour le même artefact au lieu d'en créer un second, et la carte indique **Artefact mis à jour**.
