@@ -1,8 +1,8 @@
 ---
 description: >-
   De FAQ van elke Dastra-module op één plek, en antwoorden op algemene vragen:
-  logo's, een bestaand register importeren, een verwerkingsactiviteit
-  verwijderen, items die niet te vinden zijn en de lokale opslag van de browser.
+  logo's, een register importeren, een verwerkingsactiviteit verwijderen, lokale
+  opslag van de browser.
 ---
 
 # FAQ

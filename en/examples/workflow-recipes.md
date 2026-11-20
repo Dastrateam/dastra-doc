@@ -5,7 +5,7 @@ description: >-
   HTTP request.
 ---
 
-# Workflow recipes
+# Workflow configuration examples
 
 Each recipe is a [workflow rule](../features/settings/workflow-rules.md) of Brightmoor Retail Group: a trigger, conditions and actions on one object type. To create any of them, open **Automations** > **Workflow rules**, click **Create a workflow rule**, choose **From scratch**, then enter the **Rule name** and the **Object type**. Switch the rule on with the **Status** switch once it is saved.
 

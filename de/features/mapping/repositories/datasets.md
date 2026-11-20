@@ -1,8 +1,8 @@
 ---
 description: >-
-  Fassen Sie Datenfelder zu zusammenhängenden Einheiten zusammen, mit den
-  Regeln zur Speicherdauer, die für ihren Lebenszyklus gelten, und
-  verwenden Sie sie in Ihren Assets und Verarbeitungstätigkeiten wieder.
+  Fassen Sie Datenfelder mit ihren Regeln zur Speicherdauer zu zusammenhängenden
+  Einheiten zusammen und verwenden Sie sie in Assets und
+  Verarbeitungstätigkeiten wieder.
 ---
 
 # Datenkategorien

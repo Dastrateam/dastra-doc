@@ -1,8 +1,8 @@
 ---
 description: >-
-  Stel de beveiligingsregels van uw organisatie in (verlenging van wachtwoorden,
-  automatische afmelding, sterke authenticatie, IP- en e-maildomeinfilters) en
-  raadpleeg de beveiligingslogboeken en de activiteitengeschiedenis.
+  Stel de beveiligingsregels van uw organisatie in (wachtwoorden, automatische
+  afmelding, sterke authenticatie, IP- en e-maildomeinfilters) en raadpleeg de
+  beveiligingslogboeken.
 ---
 
 # Beveiliging van de organisatie en beveiligingslogboeken

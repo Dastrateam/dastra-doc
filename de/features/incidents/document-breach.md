@@ -1,8 +1,8 @@
 ---
 description: >-
-  Erstellen Sie einen Vorfall in Dastra und füllen Sie jeden Schritt des
-  Formulars aus: Beschreibung, Daten, Risikoanalyse, Meldung an die Behörde,
-  Mitteilung an die betroffenen Personen und Post-Mortem.
+  Erstellen Sie einen Vorfall in Dastra und füllen Sie jeden Schritt aus:
+  Beschreibung, Daten, Risikoanalyse, Meldung an die Behörde, Mitteilung an die
+  Betroffenen und Post-Mortem.
 ---
 
 # Einen neuen Datenschutzvorfall dokumentieren

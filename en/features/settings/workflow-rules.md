@@ -247,7 +247,7 @@ This example automatically cleans up data subject requests whose requester ident
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rules-6.png" alt="Daily rule that closes and anonymizes requests whose identity is not validated one month after creation"><figcaption><p>Every day, close and anonymize the requests whose requester identity has not been validated one month after creation</p></figcaption></figure>
 
-Four complete rules, with their trigger, conditions and actions, are described in [Workflow recipes](../../examples/workflow-recipes.md).
+Four complete rules, with their trigger, conditions and actions, are described in [Workflow configuration examples](../../examples/workflow-recipes.md).
 
 ## Execution history
 

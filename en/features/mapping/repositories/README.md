@@ -1,9 +1,8 @@
 ---
 description: >-
-  The record of processing activities relies on repositories: assets,
-  stakeholders, datasets, data fields, security measures and categories of data
-  subjects. Dastra lets you manage them separately from the record to limit
-  data entry errors.
+  The record of processing activities relies on repositories (assets,
+  stakeholders, datasets, data fields, security measures, categories of data
+  subjects) that you manage separately.
 ---
 
 # Repositories

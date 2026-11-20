@@ -11,7 +11,7 @@ These pages show Dastra at work on one concrete case each. They follow Brightmoo
 
 * [ISO 27001 project](iso-27001-project.md): run a certification project from the framework to the final audit.
 * [Risk scoring](risk-scoring.md): compute a risk on the default 5×5 scale and on the CNIL 4×4 scale, then score a data breach.
-* [Workflow recipes](workflow-recipes.md): assign requests, share tasks in a team, alert a Microsoft Teams channel and call an external API.
+* [Workflow configuration examples](workflow-recipes.md): assign requests, share tasks in a team, alert a Microsoft Teams channel and call an external API.
 * [Import assets from a spreadsheet](excel-import.md): map the columns of a CSV file, merge it into existing assets and fill a custom field.
 * [Map a data flow](data-mapping.md): connect an asset, a dataset, a processing activity and a vendor.
 * [Questionnaire answers in a record](questionnaire-to-record.md): build an AI Act questionnaire that fills an AI system.

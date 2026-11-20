@@ -1,11 +1,11 @@
 ---
 description: >-
-  Quatre règles de workflow pour Brightmoor Retail Group : assigner les nouvelles
-  demandes, répartir les tâches dans une équipe, alerter Microsoft Teams sur une
-  violation à risque élevé et envoyer une requête HTTP.
+  Quatre règles de workflow pour Brightmoor Retail Group : assigner les
+  demandes, répartir les tâches dans une équipe, alerter Microsoft Teams et
+  envoyer une requête HTTP.
 ---
 
-# Recettes de workflow
+# Exemples de configuration de workflow
 
 Chaque recette est une [règle de workflow](../features/settings/workflow-rules.md) de Brightmoor Retail Group : un déclencheur, des conditions et des actions sur un type d'élément. Pour créer l'une d'elles, ouvrez **Automatisations** > **Règles de workflow**, cliquez sur **Créer une règle de workflow**, choisissez **De zéro**, puis saisissez le **Nom de la règle** et le **Type d'élément**. Activez la règle avec l'interrupteur **Statut** une fois qu'elle est enregistrée.
 
