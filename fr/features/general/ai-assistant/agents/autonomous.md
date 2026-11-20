@@ -84,7 +84,7 @@ Choisissez les **Utilisateurs notifiés** de l'agent. Ils reçoivent une notific
 
 ### Planification
 
-<figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Bloc de planification d&#x27;un agent autonome, fréquence mensuelle"><figcaption><p>La planification d'un agent autonome</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Bloc de planification d&#x27;un agent autonome, fréquence hebdomadaire"><figcaption><p>La planification d'un agent autonome</p></figcaption></figure>
 
 Choisissez une **Fréquence** (**Pas de planification**, **Quotidien**, **Hebdomadaire** ou **Mensuel**) puis l'**Heure**, et selon le cas le **Jour de la semaine** ou le **Jour du mois**.
 

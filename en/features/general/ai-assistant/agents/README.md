@@ -42,7 +42,7 @@ Click **Create agent**. Five starting points are offered:
 * **Dastra library**: start from a ready-made template. The library offers the templates built by the Dastra team, those of your partner library when you have one, and the agents of another workspace you can access. Click **Install**: the template is imported **as a draft**, deactivated and without notified users. Review its instructions and its tools before you activate it. The **Dastra library** button of the agent list opens the same gallery.
 * **Import an agent**: drop in a definition file previously exported from Dastra.
 
-In every case creation happens in two steps: you pick the type, you enter a **name** (120 characters maximum) and an optional **description** (1000 characters), then the full editor opens. The editor accepts descriptions of up to 3000 characters, with basic Markdown formatting.
+In every case creation happens in two steps: you pick the type, you enter a **name** (120 characters maximum) and an optional **description**, then the full editor opens. The editor accepts descriptions of up to 3000 characters, with basic Markdown formatting.
 
 {% hint style="info" %}
 The editor **saves automatically**: the last save time is shown in the top-right corner. There is no Save button.

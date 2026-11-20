@@ -42,7 +42,7 @@ Cliquez sur **Créer un agent**. Cinq points de départ vous sont proposés :
 * **Bibliothèque Dastra** : partez d'un modèle prêt à l'emploi. La bibliothèque propose les modèles conçus par l'équipe Dastra, ceux de votre bibliothèque partenaire si vous en avez une, et les agents d'un autre espace de travail auquel vous avez accès. Cliquez sur **Installer** : le modèle est importé **en brouillon**, désactivé et sans utilisateurs notifiés. Relisez ses instructions et ses outils avant de l'activer. Le bouton **Bibliothèque Dastra** de la liste des agents ouvre la même galerie.
 * **Importer un agent** : déposez un fichier de définition précédemment exporté depuis Dastra.
 
-Dans tous les cas, la création se fait en deux temps : vous choisissez le type, vous saisissez un **nom** (120 caractères maximum) et une **description** facultative (1000 caractères), puis l'éditeur complet s'ouvre. L'éditeur accepte des descriptions de 3000 caractères au plus, avec une mise en forme Markdown de base.
+Dans tous les cas, la création se fait en deux temps : vous choisissez le type, vous saisissez un **nom** (120 caractères maximum) et une **description** facultative, puis l'éditeur complet s'ouvre. L'éditeur accepte des descriptions de 3000 caractères au plus, avec une mise en forme Markdown de base.
 
 {% hint style="info" %}
 L'éditeur **enregistre automatiquement** : la date de dernière sauvegarde s'affiche en haut à droite. Il n'y a pas de bouton « Enregistrer ».

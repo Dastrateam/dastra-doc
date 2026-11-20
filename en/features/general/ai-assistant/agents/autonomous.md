@@ -84,7 +84,7 @@ Choose the **Notified users** of the agent. They receive a Dastra notification w
 
 ### Scheduling
 
-<figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Scheduling block of an autonomous agent, monthly frequency"><figcaption><p>Scheduling an autonomous agent</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Scheduling block of an autonomous agent, weekly frequency"><figcaption><p>Scheduling an autonomous agent</p></figcaption></figure>
 
 Pick a **Frequency** (**No schedule**, **Daily**, **Weekly** or **Monthly**) then the **Hour**, and depending on the case the **Day of week** or the **Day of month**.
 
