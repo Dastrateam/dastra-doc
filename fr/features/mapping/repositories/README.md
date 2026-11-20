@@ -1,9 +1,8 @@
 ---
 description: >-
-  Le registre est lié à de nombreux référentiels : actifs, acteurs, jeux de
-  données, glossaire de données, mesures de sécurité et catégories de personnes
-  concernées. Dastra vous permet de les gérer de manière indépendante du
-  registre pour limiter les erreurs de saisie.
+  Le registre s'appuie sur des référentiels (actifs, acteurs, jeux de données,
+  glossaire de données, mesures de sécurité, catégories de personnes concernées)
+  que vous gérez à part.
 ---
 
 # Référentiels

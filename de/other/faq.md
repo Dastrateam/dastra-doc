@@ -1,9 +1,8 @@
 ---
 description: >-
-  Die FAQ jedes Dastra-Moduls an einem Ort und Antworten auf allgemeine Fragen:
-  Logos, Import eines bestehenden Verzeichnisses, Löschen einer
-  Verarbeitungstätigkeit, fehlende Elemente und der lokale Speicher des
-  Browsers.
+  Die FAQ aller Dastra-Module an einem Ort und Antworten auf allgemeine Fragen:
+  Logos, Import eines Verzeichnisses, Löschen einer Verarbeitungstätigkeit,
+  lokaler Speicher.
 ---
 
 # FAQ

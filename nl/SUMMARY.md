@@ -53,7 +53,7 @@
 * [Uitgewerkte voorbeelden](examples/README.md)
   * [ISO 27001-project](examples/iso-27001-project.md)
   * [Risicoscores](examples/risk-scoring.md)
-  * [Werkstroomrecepten](examples/workflow-recipes.md)
+  * [Voorbeelden van werkstroomconfiguraties](examples/workflow-recipes.md)
   * [Activa importeren uit een spreadsheet](examples/excel-import.md)
   * [Een gegevensstroom in kaart brengen](examples/data-mapping.md)
   * [Vragenlijstantwoorden in een record](examples/questionnaire-to-record.md)

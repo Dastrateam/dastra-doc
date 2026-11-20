@@ -1,8 +1,7 @@
 ---
 description: >-
-  Dastra ist nativ in Google Tag Manager integriert. Dieser Artikel erklärt
-  Ihnen, wie Sie das Blockieren oder Freigeben von Tags in Abhängigkeit von den
-  Einwilligungen des Nutzers mithilfe von GTM steuern.
+  Dastra ist nativ in Google Tag Manager integriert. So steuern Sie mit GTM das
+  Blockieren oder Freigeben von Tags je nach Einwilligung des Nutzers.
 ---
 
 # Google Tag Manager

@@ -1,8 +1,8 @@
 ---
 description: >-
-  La FAQ de chaque module Dastra au même endroit, et des réponses aux questions
-  générales : logos, import d'un registre existant, suppression d'un traitement,
-  éléments introuvables et stockage local du navigateur.
+  La FAQ de chaque module Dastra au même endroit, et des réponses générales :
+  logos, import d'un registre, suppression d'un traitement, éléments
+  introuvables, stockage local.
 ---
 
 # FAQ

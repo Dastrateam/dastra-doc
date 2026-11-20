@@ -1,9 +1,8 @@
 ---
 description: >-
-  Das Verarbeitungsverzeichnis stützt sich auf Referenzlisten: Assets,
-  Stakeholder, Datenkategorien, Datenfelder, Sicherheitsmaßnahmen und
-  Betroffenenkategorien. Dastra lässt Sie sie getrennt vom Verzeichnis
-  verwalten, um Eingabefehler zu begrenzen.
+  Das Verarbeitungsverzeichnis stützt sich auf Referenzlisten (Assets,
+  Stakeholder, Datenkategorien, Datenfelder, Sicherheitsmaßnahmen,
+  Betroffenenkategorien), die Sie getrennt verwalten.
 ---
 
 # Metadaten

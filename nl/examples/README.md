@@ -11,7 +11,7 @@ Deze pagina's tonen Dastra in actie, telkens aan de hand van één concreet geva
 
 * [ISO 27001-project](iso-27001-project.md): voer een certificeringsproject uit, van het kader tot de eindaudit.
 * [Risicoscores](risk-scoring.md): bereken een risico op de standaardschaal 5×5 en op de CNIL-schaal 4×4 en bereken daarna de score van een datalek.
-* [Werkstroomrecepten](workflow-recipes.md): wijs verzoeken toe, deel taken in een team, waarschuw een Microsoft Teams-kanaal en roep een externe API aan.
+* [Voorbeelden van werkstroomconfiguraties](workflow-recipes.md): wijs verzoeken toe, deel taken in een team, waarschuw een Microsoft Teams-kanaal en roep een externe API aan.
 * [Activa importeren uit een spreadsheet](excel-import.md): koppel de kolommen van een CSV-bestand, voeg het samen met bestaande activa en vul een aangepast veld in.
 * [Een gegevensstroom in kaart brengen](data-mapping.md): verbind een actief, een dataset, een verwerkingsactiviteit en een leverancier.
 * [Vragenlijstantwoorden in een record](questionnaire-to-record.md): bouw een vragenlijst over de AI-verordening die een AI-systeem invult.
