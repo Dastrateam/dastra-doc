@@ -72,8 +72,6 @@ Une fois votre espace ouvert, renseignez dès que possible les autres entités j
 
 Pour les départements enfants, les entités enfants, l'import et la suppression, voir [Créer et paramétrer les unités organisationnelles](organizational-units.md).
 
-{% embed url="https://youtu.be/QbH80Xp5c90" %}
-
 ## Définissez le fuseau horaire par défaut
 
 Le fuseau horaire par défaut est le fuseau de référence de l'espace de travail. Dastra l'utilise pour les dates qui concernent l'espace de travail dans son ensemble plutôt qu'une personne en particulier.
