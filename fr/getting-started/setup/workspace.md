@@ -6,8 +6,6 @@ description: Apprenez à créer votre premier espace de travail dans Dastra.
 
 Cette page explique comment créer un espace de travail, y inviter les premiers utilisateurs, déclarer votre première entité et naviguer entre vos espaces.
 
-{% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=1" %}
-
 ## Connectez-vous à Dastra
 
 Commencez par vous connecter sur [app.dastra.eu](https://app.dastra.eu). Si vous n'avez pas encore de compte, demandez à un administrateur de votre organisation de vous inviter. Si votre organisation n'utilise pas encore Dastra, [demandez une démo](https://www.dastra.eu/fr/contacts/demo).
@@ -38,10 +36,6 @@ Pour reprendre la configuration d'un espace existant, cochez **Cloner les param�
 Une fois l'espace créé, vous pouvez configurer ses unités organisationnelles et inviter des utilisateurs.
 {% endhint %}
 
-{% embed url="https://youtu.be/a7sW-B_TeZ0" %}
-
-{% embed url="https://youtu.be/94K9ERenlo8" %}
-
 ### Invitez les premiers utilisateurs
 
 Après la création, Dastra ouvre la page des utilisateurs du nouvel espace. Vous pouvez ajouter des utilisateurs existants de l'organisation ou inviter de nouveaux utilisateurs avec **Inviter un utilisateur**.
@@ -71,8 +65,6 @@ Une fois votre espace ouvert, renseignez dès que possible les autres entités j
 <figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Vue Organigramme des unités organisationnelles dans Dastra"><figcaption><p>La vue Organigramme</p></figcaption></figure>
 
 Pour les départements enfants, les entités enfants, l'import et la suppression, voir [Créer et paramétrer les unités organisationnelles](organizational-units.md).
-
-{% embed url="https://youtu.be/QbH80Xp5c90" %}
 
 ## Accédez à un espace de travail
 

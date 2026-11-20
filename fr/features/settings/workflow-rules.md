@@ -299,8 +299,3 @@ Ouvrez une règle de workflow existante, puis ouvrez le menu du bouton **Enregis
 
 Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
 
-***
-
-## Tutoriel vidéo : les règles de workflow
-
-{% embed url="https://www.youtube-nocookie.com/embed/FqPmGdk2nTI" %}

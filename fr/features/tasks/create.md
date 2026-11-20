@@ -10,8 +10,6 @@ Dans Dastra, une tâche est un travail à réaliser. Elle a une personne assign�
 
 ## Créer une tâche
 
-{% embed url="https://youtu.be/ARvp9PGVnAE" %}
-
 Une tâche se crée de trois façons :
 
 * depuis la page **Tâches** du module Planification ;

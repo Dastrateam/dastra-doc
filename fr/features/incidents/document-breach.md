@@ -28,8 +28,6 @@ Un incident se crée de trois façons :
 
 Répondez **Oui** uniquement si votre organisation traite les données touchées pour le compte d'un responsable de traitement. Le formulaire est alors adapté, comme l'explique [Incidents en tant que sous-traitant](as-processor.md).
 
-{% embed url="https://youtu.be/59bysJxvs5M" %}
-
 ## Parcourir le formulaire
 
 Les étapes du formulaire sont listées à gauche. Un compteur indique le nombre d'éléments renseignés pour les étapes qui en comptent. Parcourez-les dans l'ordre avec **Suivant** et **Retour**, ou passez directement à l'étape de votre choix.
@@ -116,8 +114,6 @@ Répondez d'abord à **Une analyse du risque a-t-elle déjà été effectuée ?*
 | 6 à 8 | Risque élevé | Notification à l'autorité de contrôle et communication aux personnes concernées obligatoires |
 
 Pour le cadre juridique de cette évaluation (articles 33 et 34 du RGPD), lisez [Violations de données](../../gdpr/concepts/breaches.md).
-
-{% embed url="https://youtu.be/r47gMaPJJog" %}
 
 ## Étape Notification
 

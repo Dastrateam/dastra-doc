@@ -7,8 +7,6 @@ description: >-
 
 # Tableau de bord
 
-{% embed url="https://youtu.be/PnPa70sRGF8" %}
-
 Le tableau de bord est la première page que vous voyez en entrant dans un espace de travail. Il résume l'état de votre conformité au RGPD et donne accès aux modules. Pour y revenir depuis n'importe quelle page, cliquez sur **Tableau de bord** en haut du menu de gauche.
 
 ## Les zones de l'écran

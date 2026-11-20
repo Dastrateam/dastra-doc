@@ -4,8 +4,6 @@ description: Identifiez les principales parties prenantes du traitement de donn�
 
 # Parties prenantes
 
-{% embed url="https://youtu.be/ReWH4-vYkcU" %}
-
 La section **Parties prenantes** est la deuxième section d'un traitement. Elle regroupe deux listes :
 
 * les **utilisateurs** : les personnes qui disposent d'un compte sur la plateforme Dastra et qui sont affectées au traitement ;

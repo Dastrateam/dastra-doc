@@ -4,8 +4,6 @@ description: Apprenez comment fonctionne le processus de gestion des risques dan
 
 # Le processus de gestion des risques
 
-{% embed url="https://www.youtube.com/watch?v=sR_dFRc_4rc" %}
-
 Le processus de gestion des risques de Dastra est une **version simplifiée** du modèle **eBios Risk Manager** et de la **méthodologie d'évaluation des risques de la CNIL**.
 
 ## Gérez vos risques en 4 étapes <a href="#gerez-vos-risques-en-4-etapes" id="gerez-vos-risques-en-4-etapes"></a>

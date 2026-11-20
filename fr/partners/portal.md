@@ -6,8 +6,6 @@ description: >-
 
 # Portail partenaire
 
-{% embed url="https://www.loom.com/share/8f62bea5c0f54ef3b3de3dc811f15a2d?sid=9540de7f-9501-4af1-8d2d-11250d859a0e" %}
-
 En tant que partenaire, vous disposez d'un portail partenaire. Vous pouvez y :
 
 * visualiser tous vos clients et l'état de leur abonnement ;

@@ -6,8 +6,6 @@ description: Apprenez à exporter le registre et à importer un registre existan
 
 ## Export du registre
 
-{% embed url="https://www.youtube.com/watch?index=24&list=PL-EvtNdEiDxEzGBBTfGHy25vS6COmcgeQ&v=FZrIB6q76Mw" %}
-
 Pour exporter l'ensemble du registre, ouvrez le registre des traitements, cliquez sur la flèche à droite du bouton **Créer un traitement de données**, puis sélectionnez **Exporter**.
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-1.png" alt="Menu Créer un traitement de données avec l'entrée Exporter"><figcaption><p>Menu déroulant du registre avec la fonctionnalité d'export</p></figcaption></figure>
@@ -55,8 +53,6 @@ Cliquez sur la flèche à droite du bouton **Créer un traitement de données**,
 <figure><img src="../../.gitbook/assets/ropa-export-import-2.png" alt="Fenêtre Importer des traitements avec les options Classeur excel complexe, CSV et JSON"><figcaption><p>Choix du format d'import</p></figcaption></figure>
 
 ### Import avec le classeur Excel complexe
-
-{% embed url="https://youtu.be/88e1j4v-fKQ" %}
 
 Importer un registre existant peut être fastidieux si vous avez de nombreux traitements. Le classeur Excel complexe vous permet d'importer vos traitements en masse, en une seule fois. Dastra reconnaît les données du classeur pour créer les traitements et les référentiels associés.
 

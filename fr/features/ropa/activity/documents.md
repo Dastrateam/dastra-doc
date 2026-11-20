@@ -6,8 +6,6 @@ description: >-
 
 # Documents
 
-{% embed url="https://youtu.be/MoVRO4pSrkc" %}
-
 L’exigence de documentation découle du principe de responsabilité (accountability) rappelé à l’[**article 24 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4).
 
 En pratique, cette documentation se traduit d'abord par le registre des traitements, mais aussi par d’autres éléments de gestion des données et de la conformité au RGPD. Il peut s’agir des éléments suivants (liste non exhaustive) :

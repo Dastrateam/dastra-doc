@@ -6,8 +6,6 @@ description: >-
 
 # Advanced filters
 
-{% embed url="https://www.youtube-nocookie.com/embed/uLzd1as3QBo?si=yokS5cLZcNJ__V4z" %}
-
 ## Use
 
 Advanced filters let you filter your data on almost any field of your entities.

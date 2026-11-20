@@ -6,8 +6,6 @@ description: >-
 
 # Récapitulatif
 
-{% embed url="https://youtu.be/bQpQTzeLg_0" %}
-
 La section **Récapitulatif** est la dernière section d'un traitement. Elle rassemble sur une seule page, en lecture seule, toutes les informations saisies dans les sections précédentes.
 
 {% hint style="info" %}

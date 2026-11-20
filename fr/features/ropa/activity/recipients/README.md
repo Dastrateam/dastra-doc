@@ -4,8 +4,6 @@ description: Indiquez les destinataires des données du traitement.
 
 # Destinataires
 
-{% embed url="https://youtu.be/BNj0pG7ddRw" %}
-
 [**L’article 30 1. d) du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4) impose que le registre comporte « _les catégories de destinataires auxquels les données à caractère personnel ont été ou seront communiquées, y compris les destinataires dans des pays tiers ou des organisations internationales_ ».
 
 [**L’article 4 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre1) définit le destinataire comme « _la personne physique ou morale, l'autorité publique, le service ou tout autre organisme qui reçoit communication de données à caractère personnel, qu'il s'agisse ou non d'un tiers. Toutefois, les autorités publiques qui sont susceptibles de recevoir communication de données à caractère personnel dans le cadre d'une mission d'enquête particulière conformément au droit de l'Union ou au droit d'un État membre ne sont pas considérées comme des destinataires ; le traitement de ces données par les autorités publiques en question est conforme aux règles applicables en matière de protection des données en fonction des finalités du traitement_ ».
@@ -44,8 +42,6 @@ Un sous-traitant peut lui-même faire appel à d'autres sous-traitants pour trai
 Depuis le menu **...** d'un destinataire enregistré dans le répertoire, cliquez sur **Envoyer un questionnaire à votre sous-traitant** pour évaluer cet acteur à l'aide d'un questionnaire.
 
 ## Générer un DPA
-
-{% embed url="https://youtu.be/kUatwoQSWOM" %}
 
 Si vous utilisez le module Contrats, vous pouvez générer un accord de sous-traitance (DPA) directement depuis le traitement. Dans la liste des destinataires, un bouton **DPA** apparaît sur les sous-traitants d'un traitement en tant que responsable de traitement lorsqu'ils sont enregistrés dans le répertoire. Il ouvre la génération de contrat avec le modèle de DPA, déjà rempli avec le traitement et le sous-traitant. La même action est disponible dans le menu **...** (**Générer DPA**).
 

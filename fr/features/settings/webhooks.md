@@ -6,8 +6,6 @@ description: >-
 
 # Webhooks
 
-{% embed url="https://youtu.be/gqwGui1ua7Y" %}
-
 ## Concept
 
 Un webhook déclenche une action à la suite d'un évènement. Les webhooks servent à faire communiquer des systèmes : ils vous alertent dès que quelque chose se produit dans Dastra. L'objectif est de notifier des applications tierces (API, CRM, fonctions serverless...) en temps réel.

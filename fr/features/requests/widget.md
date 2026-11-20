@@ -31,16 +31,6 @@ Ce diagramme illustre le processus :
 3. Vous êtes notifiés et pouvez la qualifier et la traiter dans la plateforme.
 4. La personne concernée reçoit une réponse via le portail demandeur.
 
-### Vidéo tutoriel
-
-Cette vidéo montre comment mettre en place un widget de collecte de demandes de droits.
-
-{% hint style="warning" %}
-La vidéo n’est pas totalement à jour visuellement, mais elle reste utile pour comprendre les grandes étapes.
-{% endhint %}
-
-{% embed url="https://youtu.be/P1Z4hvmpbSw" %}
-
 ***
 
 ## Configuration générale

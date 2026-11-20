@@ -62,8 +62,5 @@ Les boutons **Imprimer** et **Rafraîchir** sont disponibles en haut de la page.
 
 ## Générer un référentiel de données avec Dastra
 
-{% embed url="https://youtu.be/7Ul_agu6wLc" %}
-
 ## Filtrer les référentiels
 
-{% embed url="https://youtu.be/q3dvGcBr6ZA" %}

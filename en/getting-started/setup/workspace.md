@@ -6,8 +6,6 @@ description: Learn how to create your first workspace in Dastra.
 
 This page explains how to create a workspace, invite its first users, declare your first entity and move between your workspaces.
 
-{% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM" %}
-
 ## Sign in to Dastra
 
 Start by signing in at [app.dastra.eu](https://app.dastra.eu). If you don't have an account yet, ask an administrator of your organization to invite you. If your organization does not use Dastra yet, [ask for a demo](https://www.dastra.eu/en/contacts/demo).

@@ -6,8 +6,6 @@ description: >-
 
 # Configuration du SMTP
 
-{% embed url="https://youtu.be/We93kT_KrJA" %}
-
 Cette page explique comment router les e-mails de Dastra vers votre propre serveur SMTP. Elle s'adresse aux propriétaires de l'organisation.
 
 ## Principe de fonctionnement
