@@ -68,6 +68,32 @@ Once your workspace is open, fill in the other legal entities and the department
 
 For child departments, child entities, import and deletion, see [Create and set up organizational units](organizational-units.md).
 
+## Set the default time zone
+
+The default time zone is the reference time zone of the workspace. Dastra uses it for dates that concern the workspace as a whole rather than one person.
+
+1. In the left menu, click **Workspace settings**, then **General**.
+2. In **Default timezone**, choose the time zone.
+3. Click **Save changes**.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-workspace-1.png" alt="Workspace settings with the Default timezone field"><figcaption><p>The Default timezone field of the workspace settings</p></figcaption></figure>
+
+Only workspace owners can change it. A workspace starts with the time zone of the user who created it.
+
+The default time zone applies to:
+
+* the day on which due-date and expiry reminders are sent (tasks, contracts, processing activities and so on), and the dates written in those emails;
+* the dates written in the invitation and reminder emails of compliance audits;
+* the calendar day used by the date conditions of workflow rules;
+* the dates printed on the export of a processing activity shared by link, where no user is signed in;
+* the time zone of the users you invite to the workspace: their profile starts with it, and they can change it afterwards.
+
+Each user keeps their own time zone for what is displayed to them and addressed to them personally.
+
+{% hint style="info" %}
+The default time zone does not move the time at which a workflow rule, an AI agent or a scheduled sending runs. These times are chosen in your own time zone, shown in the editor.
+{% endhint %}
+
 ## Access a workspace
 
 1. Sign in to the application with your user account.

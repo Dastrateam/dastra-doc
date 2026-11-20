@@ -15,7 +15,7 @@ Autrement dit, les destinataires sont toutes les entités qui accèdent aux donn
 ## Ajouter un destinataire
 
 1. Dans la section **Destinataires**, cliquez sur **Créer un destinataire**.
-2. Dans **Catégorie**, sélectionnez le type de destinataire : **Destinataire interne**, **Sous-traitant**, **Tiers: Organisme externe**, **Tiers autorisés**, **Responsable conjoint** ou **Personne concernée par le traitement**.
+2. Dans **Catégorie**, sélectionnez le type de destinataire : **Destinataire interne**, **Sous-traitant**, **Tiers: Organisme externe**, **Tiers autorisés**, **Responsable conjoint**, **Personne concernée par le traitement** ou **Autre**. Choisissez **Autre** pour un destinataire qui ne correspond à aucune autre catégorie. Le menu **...** d'un destinataire de cette catégorie ne propose pas **Envoyer un questionnaire à votre sous-traitant**.
 3. Identifiez le destinataire :
    * **Répertoire des acteurs (recommandé)** : sélectionnez un acteur de votre répertoire des acteurs, ou créez-en un. Si le destinataire figure dans le répertoire, vous pouvez cartographier les traitements liés à cet acteur.
    * **Sélectionner une unité organisationnelle** : sélectionnez l'une de vos unités organisationnelles, par exemple un service interne.

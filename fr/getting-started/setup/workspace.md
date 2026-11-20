@@ -74,6 +74,32 @@ Pour les départements enfants, les entités enfants, l'import et la suppression
 
 {% embed url="https://youtu.be/QbH80Xp5c90" %}
 
+## Définissez le fuseau horaire par défaut
+
+Le fuseau horaire par défaut est le fuseau de référence de l'espace de travail. Dastra l'utilise pour les dates qui concernent l'espace de travail dans son ensemble plutôt qu'une personne en particulier.
+
+1. Dans le menu de gauche, cliquez sur **Réglages espace de travail**, puis sur **Général**.
+2. Dans **Fuseau horaire par défaut**, choisissez le fuseau horaire.
+3. Cliquez sur **Enregistrer**.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-workspace-1.png" alt="Réglages de l'espace de travail avec le champ Fuseau horaire par défaut"><figcaption><p>Le champ Fuseau horaire par défaut des réglages de l'espace de travail</p></figcaption></figure>
+
+Seuls les propriétaires de l'espace de travail peuvent le modifier. Un espace de travail démarre avec le fuseau horaire de l'utilisateur qui l'a créé.
+
+Le fuseau horaire par défaut s'applique :
+
+* au jour d'envoi des rappels d'échéance et d'expiration (tâches, contrats, traitements, etc.) et aux dates écrites dans ces e-mails ;
+* aux dates écrites dans les e-mails d'invitation et de rappel des audits de conformité ;
+* au jour calendaire utilisé par les conditions de date des règles de workflow ;
+* aux dates imprimées sur l'export d'un traitement partagé par lien, où aucun utilisateur n'est connecté ;
+* au fuseau horaire des utilisateurs que vous invitez dans l'espace de travail : leur profil démarre avec ce fuseau, et ils peuvent le modifier ensuite.
+
+Chaque utilisateur conserve son propre fuseau horaire pour ce qui lui est affiché et pour ce qui lui est adressé personnellement.
+
+{% hint style="info" %}
+Le fuseau horaire par défaut ne décale pas l'heure d'exécution d'une règle de workflow, d'un agent IA ou d'un envoi programmé. Ces heures se choisissent dans votre propre fuseau horaire, affiché dans l'éditeur.
+{% endhint %}
+
 ## Accédez à un espace de travail
 
 1. Connectez-vous à l'application avec votre compte utilisateur.

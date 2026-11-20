@@ -48,4 +48,14 @@ Pour utiliser les modèles de documents dans vos propres documents, consultez [M
 
 ## Webinaires
 
-**Webinaires** liste les sessions en direct animées par les experts Dastra. Choisissez une catégorie à gauche, ou **Tout**. Cliquez sur un webinaire pour ouvrir sa page d'inscription dans un nouvel onglet. Lorsqu'aucune session n'est planifiée, la page indique **Aucun webinaire prévu prochainement.**
+La page **Webinaires** comporte un champ de recherche, **Rechercher une session...**, et deux onglets : **Prochaines sessions** et **Replays**. La recherche s'applique aux deux onglets et vous suit quand vous passez de l'un à l'autre. Cliquez sur **Effacer les filtres** pour la vider.
+
+### Prochaines sessions
+
+**Prochaines sessions** liste les sessions en direct animées par les experts Dastra. Choisissez une catégorie à gauche : **Tout**, **Webinaires** ou **Formations**. Cliquez sur une session pour ouvrir sa page d'inscription dans un nouvel onglet. Lorsqu'aucune session n'est planifiée, la page indique **Aucune session programmée prochainement.**
+
+La catégorie **Partenaires** n'apparaît que pour le propriétaire d'une organisation partenaire.
+
+### Replays
+
+**Replays** liste les enregistrements des sessions passées, avec la date de publication sur chaque carte. Un badge distingue les sessions **Formation** et **Partenaire** des webinaires simples. Cliquez sur un replay pour regarder la vidéo dans Dastra. Cliquez sur **Télécharger le contenu** pour télécharger les fichiers qui l'accompagnent. La page d'un replay permet de passer d'un replay au suivant dans l'ordre de la liste. Lorsqu'aucun enregistrement n'est disponible, la page indique **Aucun replay disponible pour le moment.**

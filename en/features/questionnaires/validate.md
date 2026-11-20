@@ -50,6 +50,16 @@ Each question can be given an evaluation state:
 
 A selector at the top of each section applies the same state to all displayed questions at once.
 
+In the section navigation on the left, each question is a colored bar. Once you set a state, the bar shows it, whether the question is required or not:
+
+* dark green: **Validated**;
+* yellow: **Needs revision**;
+* red: **Rejected**.
+
+A question with no state keeps the color of its answer: gray when it is not answered, green when it is answered, and orange when it is required and not answered.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-questionnaires-2.png" alt="Section navigation of the review screen with the colored question bars"><figcaption><p>The question bars of the review navigation</p></figcaption></figure>
+
 For each question you can also:
 
 * **Add an annotation**: an internal discussion with respondents and other approvers

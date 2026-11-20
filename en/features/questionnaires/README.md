@@ -22,6 +22,16 @@ If you are a respondent or an approver, open **Questionnaires** > **My responses
 
 The menu of a line also offers **Share**, **Export** and **Cancel questionnaire**, depending on your permissions. Questionnaires you move to the recycle bin appear when you turn on **View recycle bin**, as described in [Delete a questionnaire or a template](delete.md).
 
+### Answer with several respondents
+
+When a questionnaire is addressed to several respondents, Dastra users or external respondents, each of them sees who else is working on it at the same time.
+
+* **Who is there**: the **Also answering** line, above the progress bar, shows the avatars of the other people currently in the questionnaire. Hover over an avatar to see the name and the section the person is in. The same avatars appear next to the section in the left navigation. A respondent without a name, invited by email only, appears as **External respondent**.
+* **Answers of the others**: the answers they save appear on your screen without reloading the page. If you have an edit on the same question that is not saved yet, your edit is kept and is saved after the usual delay.
+* **Finalization**: when another respondent finalizes the questionnaire, a message tells you who did it and that the questionnaire no longer accepts answers. Click **Refresh** to open the page of the finalized questionnaire.
+
+Only the name and the avatar of the respondents are shared with the others. No email address is displayed.
+
 ## Create a template
 
 {% content-ref url="templates/README.md" %}
