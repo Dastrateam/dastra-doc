@@ -19,4 +19,13 @@ Dans la section **Documents**, ajoutez des fichiers en les important ou en les s
 
 Par défaut, un visiteur doit demander l'accès à un document avant de pouvoir le télécharger. Pour modifier ce comportement, lisez [Sécurité](security.md).
 
+## Retirer un document
+
+Dans la section **Documents**, cliquez sur l'icône de corbeille d'un fichier. Dastra demande s'il faut placer le fichier dans la corbeille avec toutes ses relations, et propose deux choix :
+
+* **Supprimer uniquement le lien** : le fichier n'est plus mis à disposition dans ce Trust Center, mais il reste dans la gestion documentaire et dans ses autres usages ;
+* **Placer dans la corbeille** : le fichier est placé dans la corbeille, partout où il est utilisé.
+
+<figure><img src="../../../.gitbook/assets/v3-improvements-trust-center-1.png" alt="Fenêtre de retrait d'un document du Trust Center avec Supprimer uniquement le lien et Placer dans la corbeille"><figcaption><p>La fenêtre de retrait d'un document</p></figcaption></figure>
+
 [Plus d'informations sur la gestion des documents dans Dastra.](../../files/README.md)

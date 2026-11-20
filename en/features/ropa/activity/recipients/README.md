@@ -13,7 +13,7 @@ In other words, the term recipients covers all the entities that will access the
 ## Add a recipient
 
 1. In the **Recipients** section, click **New recipient**.
-2. In **Category**, select the type of recipient: **Internal service**, **Processors**, **Third party (autonomous controller)**, **Authorized third party (autonomous controller)**, **Joint controller** or **Data subject**.
+2. In **Category**, select the type of recipient: **Internal service**, **Processors**, **Third party (autonomous controller)**, **Authorized third party (autonomous controller)**, **Joint controller**, **Data subject** or **Other**. Choose **Other** for a recipient that fits none of the other categories. The **...** menu of a recipient of this category does not offer **Launch a vendor questionnaire**.
 3. Identify the recipient:
    * **Directory**: select a stakeholder from your stakeholders directory, or create a new one. With the recipient in the directory, you can map the processing activities related to this stakeholder.
    * **Select an organizational unit**: select one of your organizational units, for example an internal department.
