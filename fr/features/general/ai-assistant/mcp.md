@@ -61,10 +61,10 @@ Réservée à l'automatisation et aux environnements sans navigateur. Vous ajout
 | `X-API-Key` | La clé privée de votre clé d'API |
 
 {% hint style="danger" %}
-**La clé d'API doit être liée à un espace de travail**, sinon la connexion MCP est refusée. Au moment de créer la clé dans l'onglet **API keys**, renseignez le champ **Sélection d'un espace de travail spécifique**. Les clés éligibles portent un badge `MCP` dans la liste.
+**La clé d'API doit autoriser l'accès MCP et être liée à un espace de travail**, sinon la connexion MCP est refusée. Au moment de créer la clé dans l'onglet **API keys**, activez **Autoriser cette clé à accéder au serveur MCP (nécessite un espace de travail spécifique)** et renseignez le champ **Sélection d'un espace de travail spécifique**. Les clés qui autorisent MCP portent un badge `MCP` dans la liste.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Création d&#x27;une clé d&#x27;API avec le sélecteur d&#x27;espace de travail"><figcaption><p>C'est le champ « Sélection d'un espace de travail spécifique » qui rend une clé utilisable pour MCP</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Création d&#x27;une clé d&#x27;API avec l&#x27;interrupteur MCP et le sélecteur d&#x27;espace de travail"><figcaption><p>L'interrupteur MCP et le champ **Sélection d'un espace de travail spécifique** rendent une clé utilisable pour MCP</p></figcaption></figure>
 
 La procédure générale de création d'une clé est décrite dans [Gestion des clés d'API](../../settings/api-keys.md).
 
@@ -156,6 +156,7 @@ Une fois connecté, votre outil dispose d'une trentaine d'outils Dastra.
 | Lecture d'un enregistrement | Récupère une fiche par son type et son identifiant |
 | Inspection de la structure | Décrit les champs et colonnes d'un type de fiche |
 | Vérification des champs modifiables | Indique quels champs peuvent être mis à jour, et dans quel format |
+| Vérification des actions disponibles | Liste les actions qu'un type de fiche propose (archiver, restaurer, cloner, changer l'étape de workflow, etc.) et ce que chacune attend |
 | Lecture des commentaires | Liste les commentaires d'une fiche |
 | Lecture des fichiers | Liste les fichiers de l'espace de travail ou d'une fiche |
 | Lecture d'un fichier | Extrait le texte d'un PDF, DOCX, XLSX, HTML, TXT, CSV, JSON ou Markdown |
@@ -167,23 +168,22 @@ Une fois connecté, votre outil dispose d'une trentaine d'outils Dastra.
 | Vérification des réglementations | Interroge le corpus réglementaire indexé par Dastra (RGPD, NIS2, DORA, ISO 27001…) avec les sources citées |
 | Liste des catégories réglementaires | Donne les catégories utilisables pour la recherche réglementaire |
 | Recherche dans la documentation | Recherche dans la documentation Dastra |
-| Recherche sur le web | Recherche publique sur le web, en dernier recours |
-| Analyse de l'enregistrement | Produit une analyse de conformité notée de A à F, avec des pistes d'amélioration |
+| Lecture du profil de l'espace de travail | Renvoie le nom, l'identité visuelle, la langue, l'offre, les fonctionnalités activées et la consommation des quotas de l'espace de travail |
 | Liens vers les enregistrements | Construit les URL cliquables des fiches dans l'application Dastra |
 
 ### Outils de modification
 
 | Outil | Ce qu'il fait |
 | --- | --- |
-| Création d'un enregistrement | Crée une fiche vierge |
-| Rédaction d'un enregistrement | Génère une fiche complète à partir d'une description et l'importe |
+| Création d'un enregistrement | Crée une fiche avec les champs que son type exige |
 | Mise à jour d'enregistrement(s) | Met à jour jusqu'à 50 fiches en une fois |
-| Changement d'état du workflow | Déplace une fiche vers une autre étape |
+| Exécution d'une action | Exécute l'une des actions d'un type de fiche sur une ou plusieurs fiches, par exemple le changement d'étape de workflow |
 | Ajout d'un commentaire | Commente une fiche, mentions comprises |
 | Création d'un plan d'action | Crée jusqu'à 10 tâches rattachées à une fiche |
 | Création d'un tag | Crée un tag pour un type de fiche |
 | Rédaction d'un document | Crée ou met à jour un document Markdown dans la GED |
 | Liaison d'un fichier | Rattache un fichier existant à une fiche |
+| Envoi d'un fichier | Enregistre un petit fichier (moins de 2 Mo) dans les documents de l'espace de travail, ou remplace le contenu d'un fichier existant |
 | Planification du questionnaire | Instancie un questionnaire à partir d'un modèle et l'assigne |
 | Mise à jour du questionnaire | Renseigne les réponses d'un questionnaire planifié |
 
@@ -204,7 +204,7 @@ Quelques points à connaître :
 * **Révocation** : une connexion approuvée depuis le navigateur devient une clé d'API ordinaire, visible et révocable dans l'onglet **API keys**. Supprimer la clé coupe l'accès immédiatement.
 * **Débit** : les appels sont limités à 60 requêtes par minute sur le serveur MCP, et 120 requêtes par minute tous usages confondus. Au-delà, le serveur répond une erreur `429` en indiquant le délai d'attente.
 
-Les outils du serveur MCP sont ceux de Dastra AI, à quelques exceptions près : l'exécution de code, la création d'agents et la navigation dans l'interface n'existent pas côté MCP. À l'inverse, les outils de modification sont disponibles sans le mode Question ou Édition du chat, et Dastra n'affiche pas de demande de confirmation. Activez la confirmation avant exécution dans votre client MCP si vous voulez valider chaque modification.
+Les outils du serveur MCP sont ceux de Dastra AI, avec des exceptions. La recherche web, l'analyse d'une fiche, la rédaction d'une fiche à partir d'une description, les [artefacts](artifacts.md), les exports, l'exécution de code, les sous-tâches, la création d'agents, les questions à l'utilisateur et la navigation n'existent pas côté MCP. Les liens vers les fiches et l'envoi de fichier n'existent que côté MCP. Les outils de modification sont disponibles sans le mode Question ou Édition du chat, et Dastra n'affiche pas de demande de confirmation. Activez la confirmation avant exécution dans votre client MCP si vous voulez valider chaque modification.
 
 {% hint style="warning" %}
 Une clé d'API utilisée pour MCP donne accès en lecture **et en écriture** à un espace de travail entier. Traitez-la comme un mot de passe : ne la publiez jamais, et révoquez-la au moindre doute.
@@ -218,6 +218,7 @@ Une clé d'API utilisée pour MCP donne accès en lecture **et en écriture** à
 | --- | --- |
 | Les appels d'outils sont refusés avec un message d'abonnement | Le serveur MCP n'est pas inclus dans votre offre. Il nécessite Dastra AI Pro |
 | « La clé d'API doit être liée à un espace de travail » | La clé a été créée sans espace de travail : recréez-en une en renseignant le champ correspondant |
+| « MCP access is not enabled for this API key » | La clé a été créée sans l'interrupteur MCP : recréez-en une avec **Autoriser cette clé à accéder au serveur MCP** activé |
 | Aucun outil Dastra n'apparaît dans votre client | La connexion n'a pas été finalisée. Sur Claude, ouvrez le connecteur et cliquez sur **Connecter** ; sur Claude Code, tapez `/mcp` |
 | Le Chat refuse la clé d'API | Normal : Le Chat ne prend en charge que la connexion via le navigateur |
 | Vous devez vous reconnecter sans arrêt | L'autorisation d'accès prolongé n'a pas été accordée : supprimez le connecteur et refaites la connexion |

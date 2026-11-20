@@ -14,6 +14,6 @@ Le bouton avec une icône de bulle (**Discutez avec nous sur le chat**) ouvre le
 
 ## L'agent IA
 
-Le bouton **Dastra AI** (**Ouvrir Dastra AI**) ouvre l'assistant IA de Dastra. Il apparaît seulement si votre organisation a accès à la fonctionnalité IA. Pour savoir ce qu'il fait, comment l'utiliser et comment créer vos propres agents, voir [Assistant IA](../../features/general/ai-assistant/README.md).
+Le bouton **Dastra AI** (**Ouvrir Dastra AI**) ouvre l'assistant IA de Dastra. Il apparaît seulement si votre organisation a accès à la fonctionnalité IA et que votre rôle vous autorise à l'utiliser. Pour savoir ce qu'il fait, comment l'utiliser et comment créer vos propres agents, voir [Assistant IA](../../features/general/ai-assistant/README.md).
 
-Les boutons se masquent pendant une conversation de chat ou quand le panneau de l'agent IA est ouvert, pour éviter qu'ils se superposent.
+Les boutons se masquent pendant une conversation de chat ou quand le panneau de l'agent IA est ouvert, pour éviter qu'ils se superposent. Le bouton **Ouvrir Dastra AI** n'est pas affiché sur la page Dastra AI (**Automatisation** > **Dastra AI**), où la conversation prend la place du panneau.

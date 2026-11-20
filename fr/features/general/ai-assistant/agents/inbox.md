@@ -8,11 +8,11 @@ description: >-
 
 La **boîte de réception** rassemble l'historique des exécutions de vos agents : ce qui a été lancé, par quoi, quand, et avec quel résultat.
 
-Elle se trouve dans **Réglages espace de travail > Agents IA > Boîte de réception**.
+Elle se trouve dans **Automatisation** > **Dastra AI** > **Boîte de réception**.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-inbox.png" alt="Boîte de réception des exécutions d&#x27;agents"><figcaption><p>La boîte de réception, avec le statut et la source de chaque exécution</p></figcaption></figure>
 
-Chaque ligne indique la **session**, son **statut**, sa **source** (Manuel, Planning ou Workflow), l'heure de **démarrage** et l'heure de **fin**. Le sélecteur en haut de la liste permet de n'afficher que les exécutions d'un agent donné.
+Chaque ligne indique la **session**, son **statut**, sa **source** (Manual, Schedule ou Workflow, affichés en anglais), l'heure de **démarrage** et l'heure de **fin**. Le sélecteur en haut de la liste permet de n'afficher que les exécutions d'un agent donné.
 
 Les exécutions en cours se mettent à jour en direct : inutile de rafraîchir la page.
 
@@ -33,7 +33,7 @@ Le bouton **Continuer dans le chat** reprend le résultat de l'exécution dans u
 
 ### Les statuts
 
-Certains statuts sont techniques, d'autres sont **déclarés par l'agent lui-même** à la fin de son travail : ce sont des conclusions, pas des pannes.
+Certains statuts sont techniques. Les autres viennent d'une relecture finale : une fois que l'agent a rédigé son rapport final, Dastra lit ce rapport seul et choisit le statut qui décrit ce qu'il dit s'être passé. Ce sont des conclusions, pas des pannes.
 
 | Statut | Signification |
 | --- | --- |
@@ -55,8 +55,8 @@ Un statut **Informations manquantes** ou **Revue humaine requise** revient souve
 
 ### Notifications
 
-Si vous figurez parmi les **utilisateurs notifiés** d'un agent, vous recevez une notification Dastra à la fin de chaque exécution, réussie ou en échec. C'est la façon recommandée de surveiller un agent planifié sans avoir à consulter la boîte de réception.
+Si vous figurez parmi les **utilisateurs notifiés** d'un agent, vous recevez une notification Dastra à la fin de chaque exécution. Elle indique si l'exécution s'est terminée (**Terminée** ou **Revue humaine requise**) ou non. C'est la façon recommandée de surveiller un agent planifié sans avoir à consulter la boîte de réception. Lorsque vous lancez vous-même une exécution, le bouton **Ouvrir Dastra AI** vous prévient aussi quand elle est terminée.
 
 ### Journal technique
 
-Pour un suivi au niveau de l'organisation (modèle utilisé, durée, utilisateur à l'origine de l'appel) consultez les **logs d'exécution de l'assistant IA** dans **Paramètres de l'organisation > Assistant IA**. Ils sont conservés 90 jours.
+Pour un suivi au niveau de l'organisation (modèle utilisé, durée, utilisateur à l'origine de l'appel) consultez l'onglet **Journaux (90 jours)** de la carte **Utilisation de l'IA**, dans **Paramètres de l'organisation** > **Dastra AI**. Ils couvrent les 90 derniers jours.

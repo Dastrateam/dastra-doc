@@ -8,10 +8,10 @@ description: >-
 
 Un agent autonome exécute une tâche de bout en bout, sans personne devant l'écran : passer en revue un périmètre du registre, préparer un plan d'action, produire une synthèse mensuelle.
 
-Rendez-vous dans **Réglages espace de travail > Agents IA**, cliquez sur **Créer un agent**, puis sur **Agent autonome**.
+Rendez-vous dans **Automatisation** > **Dastra AI** > **Agents**, cliquez sur **Créer un agent**, puis sur **Agent autonome**.
 
 {% hint style="warning" %}
-**Un agent autonome ne peut pas vous poser de question.** Les outils qui demandent une interaction (poser une question, naviguer dans l'interface, demander une confirmation) lui sont retirés. Son instruction doit donc couvrir tous les cas, y compris ce qu'il doit faire quand une information manque.
+**Un agent autonome ne peut pas vous poser de question.** Les outils qui demandent une interaction (poser une question, naviguer dans l'interface) lui sont retirés, et ses outils de modification s'exécutent sans demande de confirmation. Son instruction doit donc couvrir tous les cas, y compris ce qu'il doit faire quand une information manque.
 {% endhint %}
 
 ***
@@ -72,13 +72,13 @@ L'**aperçu du formulaire**, à droite de l'éditeur, montre exactement ce que v
 
 ### Outils
 
-Le fonctionnement est identique à celui d'un [agent conversationnel](conversational.md#outils) : par défaut tous les outils sont disponibles, et vous pouvez restreindre la liste.
+Le fonctionnement est proche de celui d'un [agent conversationnel](conversational.md#outils) : par défaut tous les outils sont disponibles, et vous pouvez restreindre chaque groupe avec **Tout**, **Aucune** ou **Personnalisé**.
 
 L'enjeu est cependant plus important ici, puisque personne ne relit l'agent pendant qu'il travaille. Accordez-lui les outils de lecture dont il a besoin, et **uniquement les outils de modification que sa mission exige**.
 
 ### Notifications
 
-Les utilisateurs notifiés reçoivent une notification Dastra lorsque l'agent **termine** son exécution, et une autre lorsqu'elle **échoue**. Une exécution qui se termine en demandant une revue humaine est considérée comme terminée.
+Choisissez les **Utilisateurs notifiés** de l'agent. Ils reçoivent une notification Dastra lorsqu'une exécution se termine, et une autre lorsqu'elle ne se termine pas. Une exécution qui se termine avec le statut **Revue humaine requise** est considérée comme terminée. Une exécution qui se termine avec un autre statut, comme **Échouée** ou **Informations manquantes**, est considérée comme non terminée.
 
 ***
 
@@ -86,7 +86,7 @@ Les utilisateurs notifiés reçoivent une notification Dastra lorsque l'agent **
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Bloc de planification d&#x27;un agent autonome, fréquence mensuelle"><figcaption><p>La planification d'un agent autonome</p></figcaption></figure>
 
-Choisissez une **fréquence** (Pas de planification, Quotidien, Hebdomadaire ou Mensuel) puis l'heure, et selon le cas le jour de la semaine ou le jour du mois.
+Choisissez une **Fréquence** (**Pas de planification**, **Quotidien**, **Hebdomadaire** ou **Mensuel**) puis l'**Heure**, et selon le cas le **Jour de la semaine** ou le **Jour du mois**.
 
 {% hint style="info" %}
 **Les heures sont affichées dans votre fuseau horaire**, comme l'indique la mention sous le formulaire. Dastra les enregistre en UTC : c'est pourquoi la vignette de l'agent dans la liste peut afficher une heure différente de celle que vous avez saisie.
@@ -102,17 +102,17 @@ Seuls les agents **actifs**, non archivés et de type autonome sont pris en comp
 
 #### 1. Manuellement
 
-Remplissez le formulaire dans l'aperçu, puis cliquez sur **Exécuter**. L'exécution est mise en file d'attente : vous êtes redirigé vers la boîte de réception, où vous la voyez passer de **En cours** à son statut final.
+Remplissez le formulaire dans l'aperçu, puis cliquez sur **Exécuter**. L'exécution est mise en file d'attente : vous êtes redirigé vers la boîte de réception, où vous la voyez passer de **En cours** à son statut final. Un agent désactivé peut être exécuté ainsi, ce qui permet de le tester avant de l'activer.
 
 #### 2. Selon le planning
 
-L'agent part tout seul à la fréquence configurée. Les valeurs par défaut de ses champs de saisie sont alors utilisées.
+L'agent part tout seul à la fréquence configurée. Une exécution planifiée ne reçoit aucune valeur pour ses champs de saisie : la valeur **Défaut** ne sert qu'à préremplir le formulaire d'une exécution manuelle. Rédigez l'instruction système de sorte que l'agent ne dépende pas d'un champ de saisie lorsqu'il s'exécute selon un planning.
 
 #### 3. Depuis une règle de workflow
 
-Dans **Réglages espace de travail > Règles de workflow**, l'action **Exécuter un agent IA** permet de déclencher un agent à partir d'un événement sur une fiche (changement d'étape, création, échéance).
+Dans **Automatisation** > **Règles de workflow**, l'action **Exécuter un agent IA** permet de déclencher un agent à partir d'un événement sur une fiche (changement d'étape, création, échéance). Voir [Règles de workflow](../../../settings/workflow-rules.md).
 
-Vous y choisissez l'agent, un message, et les valeurs de ses champs de saisie. Ces valeurs acceptent des **variables personnalisées** résolues depuis la fiche qui a déclenché la règle : l'agent reçoit donc un contexte différent à chaque exécution.
+Vous y choisissez l'**Agent IA à exécuter**, un **Message d'instruction** facultatif (2000 caractères au plus) et les valeurs des **Champs d'entrée de l'agent**. Le message et les valeurs acceptent des **variables personnalisées** résolues depuis la fiche qui a déclenché la règle : l'agent reçoit donc un contexte différent à chaque exécution. Un agent désactivé, ou placé dans la corbeille, n'est pas démarré.
 
 ***
 

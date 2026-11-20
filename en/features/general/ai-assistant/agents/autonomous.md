@@ -8,10 +8,10 @@ description: >-
 
 An autonomous agent carries out a task from end to end, with nobody watching: reviewing a slice of the record of processing activities, preparing an action plan, producing a monthly summary.
 
-Go to **Workspace settings > AI agents**, click **Create agent**, then **Auto Agent**.
+Go to **Automation** > **Dastra AI** > **Agents**, click **Create agent**, then **Auto Agent**.
 
 {% hint style="warning" %}
-**An autonomous agent cannot ask you anything.** The tools that require interaction (asking a question, navigating the interface, requesting a confirmation) are removed from it. Its instruction must therefore cover every case, including what to do when information is missing.
+**An autonomous agent cannot ask you anything.** The tools that require interaction (asking a question, navigating the interface) are removed from it, and its editing tools run without a confirmation request. Its instruction must therefore cover every case, including what to do when information is missing.
 {% endhint %}
 
 ***
@@ -72,13 +72,13 @@ The **form preview**, on the right of the editor, shows exactly what your users 
 
 ### Tools
 
-This works exactly like a [conversational agent](conversational.md#tools): all tools are available by default, and you can restrict the list.
+This works like a [conversational agent](conversational.md#tools): all tools are available by default, and you can restrict each group with **All**, **None** or **Custom**.
 
 The stakes are higher here, though, since nobody reviews the agent while it works. Give it the read-only tools it needs, and **only the editing tools its mission requires**.
 
 ### Notifications
 
-Notified users receive a Dastra notification when the agent **completes** a run, and another one when a run **fails**. A run that ends by requesting a human review counts as completed.
+Choose the **Notified users** of the agent. They receive a Dastra notification when a run completes, and another one when a run does not complete. A run that ends with **Human review required** counts as completed. A run that ends with any other status, such as **Failed** or **Missing information**, counts as not completed.
 
 ***
 
@@ -86,7 +86,7 @@ Notified users receive a Dastra notification when the agent **completes** a run,
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Scheduling block of an autonomous agent, monthly frequency"><figcaption><p>Scheduling an autonomous agent</p></figcaption></figure>
 
-Pick a **frequency** (No schedule, Daily, Weekly or Monthly) then the hour, and depending on the case the day of the week or the day of the month.
+Pick a **Frequency** (**No schedule**, **Daily**, **Weekly** or **Monthly**) then the **Hour**, and depending on the case the **Day of week** or the **Day of month**.
 
 {% hint style="info" %}
 **Hours are shown in your own time zone**, as stated under the form. Dastra stores them in UTC, which is why the agent card in the list may display a different hour from the one you entered.
@@ -102,17 +102,17 @@ Only **enabled**, non-archived, autonomous agents are picked up by the scheduler
 
 #### 1. Manually
 
-Fill in the form in the preview, then click **Run**. The run is queued: you are redirected to the inbox, where you watch it move from **Running** to its final status.
+Fill in the form in the preview, then click **Run now**. The run is queued: you are redirected to the inbox, where you watch it move from **Running** to its final status. A deactivated agent can be run this way, which lets you test it before you activate it.
 
 #### 2. On the schedule
 
-The agent starts on its own at the configured frequency. The default values of its input fields are used.
+The agent starts on its own at the configured frequency. A scheduled run receives no value for its input fields: the **Default** value only pre-fills the form of a manual run. Write the system instruction so that the agent does not depend on an input field when it runs on a schedule.
 
 #### 3. From a workflow rule
 
-In **Workspace settings > Workflow rules**, the **Execute an AI agent** action triggers an agent from an event on a record (a stage change, a creation, a deadline).
+In **Automation** > **Workflow rules**, the **Execute an AI agent** action triggers an agent from an event on a record (a stage change, a creation, a deadline). See [Workflow rules](../../../settings/workflow-rules.md).
 
-There you pick the agent, a message, and the values of its input fields. Those values accept **custom variables** resolved from the record that triggered the rule, so the agent receives a different context on every run.
+There you pick the **AI agent to execute**, an optional **Instruction message** (2000 characters maximum) and the values of the **Agent input fields**. The message and the values accept **custom variables** resolved from the record that triggered the rule, so the agent receives a different context on every run. A deactivated agent, or one in the recycle bin, is not started.
 
 ***
 
