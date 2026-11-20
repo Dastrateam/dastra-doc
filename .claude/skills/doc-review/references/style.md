@@ -78,6 +78,43 @@ Weak signals, to rewrite only when a direct verb reads better: "allows you to", 
   goes ("see [Merge processing activities](merge.md)"), never "click here". A link to dastra.eu points to the
   page language (`/fr/`, `/en/`, `/de/`; Dutch pages use `/en/`).
 
+## Layout
+
+GitBook has no preview: check the published page (Playwright, desktop width) right after the merge.
+
+- **Image width.** A screenshot of part of the screen (a menu, a card, a dialog, the chat panel) gets a `width`
+  on its `<img>`, close to its on-screen size: the file width divided by 2 for the 2x captures, usually 300 to
+  500. Without it GitBook stretches the image to the column and its text ends up larger than the page text. A
+  full-page screenshot keeps no width. Write it inside the figure:
+  `<figure><img src="..." alt="..." width="420"><figcaption>...</figcaption></figure>`.
+- **Columns.** A tall screenshot (higher than wide) or a small one sits in `{% columns %}` next to the text it
+  illustrates: the steps of a procedure, the paragraph that names the menu. Never a wide screenshot, never more
+  than two columns.
+
+  ```
+  {% columns %}
+  {% column %}
+  1. First step…
+  {% endcolumn %}
+
+  {% column %}
+  <figure>…</figure>
+  {% endcolumn %}
+  {% endcolumns %}
+  ```
+
+- **Cards.** A landing page opens on cards when it leads to 3 to 6 features or pages: one card each, a bold title
+  and one sentence with a link. `<table data-view="cards">` with one `<td>` for the title and one for the
+  sentence. To make the whole card clickable, add a third column
+  `<th data-hidden data-card-target data-type="content-ref"></th>` holding `<a href="page.md">page.md</a>`: it
+  only takes a page, not an anchor of the same page, so a card about a section keeps an inline link.
+- **Bottom links.** At the end of a landing page, a few cards to the reference pages replace a stack of
+  `{% content-ref %}` blocks; do not repeat what the cards at the top already link.
+- **Tabs.** `{% tabs %}` for alternatives the reader picks one of (two modes, two roles, two plans), each tab
+  complete on its own. Not for steps that follow each other, not for content everyone must read.
+- **Long lists.** Above about eight items, group the list under short bold labels (`**Display**`, then its
+  items), or turn it into a table when every item has the same parts.
+
 ## Editing GitBook files safely
 
 - Keep GitBook syntax intact: `{% hint %}`, `{% tabs %}`, `{% content-ref %}`, `{% embed %}`, `<figure>`, `<a id>`

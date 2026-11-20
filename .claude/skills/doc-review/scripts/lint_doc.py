@@ -23,6 +23,7 @@ from urllib.parse import unquote
 
 LANGS = ("fr", "en", "de", "nl")
 DESCRIPTION_MAX = 200
+IMAGE_FULL_WIDTH = 1200  # px; narrower screenshots are partial and get a width (2x captures)
 SKILL_DIR = Path(__file__).resolve().parent.parent
 
 EMOJI = re.compile(
@@ -239,6 +240,18 @@ def structure(text):
     )
 
 
+def png_size(path):
+    """(width, height) read from a PNG header, or None."""
+    try:
+        with open(path, "rb") as f:
+            head = f.read(24)
+    except OSError:
+        return None
+    if head[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+
+
 def broken_links(raw, page_dir):
     """Relative link, image and content-ref targets of a line that do not exist on disk."""
     targets = re.findall(r"\]\(<([^>]+)>\)", raw) + re.findall(r"\]\(([^)<\s]+)", raw)
@@ -316,6 +329,12 @@ def check_page(rel, root, glossary, labels):
             add(no, "error", "link", f"\"{target}\" does not exist", raw)
         if re.search(r"<img\b[^>]*\balt=\"\s*\"", raw):
             add(no, "warning", "alt", "describe what the figure shows in alt", raw)
+        for src in re.findall(r"<img\b(?![^>]*\bwidth=)[^>]*\bsrc=\"([^\"]+\.png)\"", raw):
+            size = png_size(page_dir / unquote(src))
+            if size and (size[0] < IMAGE_FULL_WIDTH or size[1] > size[0]):
+                add(no, "hint", "image-width",
+                    f"{Path(src).name} is {size[0]}x{size[1]}: add width=\"{min(500, max(250, size[0] // 2))}\" "
+                    "or put it in columns beside its text", raw)
         if MENU_PATH.search(line) and "→" in line:
             add(no, "warning", "menu-path", "separate the steps of a menu path with >, not →", raw)
 
