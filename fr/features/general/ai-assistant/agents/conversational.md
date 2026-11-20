@@ -49,9 +49,9 @@ Les questions suggérées affichées sous le message d'accueil. Elles servent de
 
 ### Outils
 
+{% columns %}
+{% column %}
 Par défaut, un agent a accès à **tous** les outils. Chaque groupe ci-dessous propose trois options : **Tout**, **Aucune** et **Personnalisé**. Choisissez **Personnalisé** pour n'activer que les outils voulus. Un agent a besoin d'au moins un outil.
-
-<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Sélecteur d&#x27;outils séparé en outils de lecture et outils de modification"><figcaption><p>Les outils sont regroupés en outils de lecture et outils de modification</p></figcaption></figure>
 
 Les outils sont séparés en deux groupes :
 
@@ -59,6 +59,12 @@ Les outils sont séparés en deux groupes :
 * **Outils de modification** : création et mise à jour de fiches, exécution d'actions de fiche comme le changement d'étape de workflow, ajout de commentaires, création de plans d'actions et de tags, planification et remplissage de questionnaires, rédaction de documents, liaison de fichiers.
 
 Poser une question et vous emmener vers une page de Dastra sont toujours disponibles dans une conversation : ces outils ne figurent pas dans la liste.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Sélecteur d&#x27;outils séparé en outils de lecture et outils de modification" width="500"><figcaption><p>Les outils sont regroupés en outils de lecture et outils de modification</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 {% hint style="warning" %}
 Restreindre les outils est la façon la plus sûre de cadrer un agent. Un assistant destiné à répondre à des questions n'a besoin d'aucun outil de modification : ne lui en donnez pas.
