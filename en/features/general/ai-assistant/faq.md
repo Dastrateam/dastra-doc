@@ -94,7 +94,7 @@ With a Custom AI provider, the Azure guarantees described in this documentation 
 
 **Can I disable the AI Assistant for my organization?**
 
-The application has no switch to disable the AI Assistant: its availability depends on your organization's plan. AI features are enabled module by module (processing activities and repositories, compliance, risks, data breaches, questionnaires, contracts, data subject requests, analyses). In a module that your plan does not include, the AI buttons are greyed out. To change this scope, contact our team.
+The application has no switch to disable the AI Assistant: its availability depends on your organization's plan. AI features are enabled module by module (processing activities and repositories, compliance, risks, data breaches, questionnaires, contracts, data subject requests, analyses). In a module that your plan does not include, the AI buttons are greyed out. To change this scope, contact our team. To keep Dastra AI away from some users, remove the **AI Assistant** permission from their role.
 
 One setting is in the hands of administrators: **AI evidence auto-scan**, enabled by default, which you turn off per workspace in **Workspace settings** > **Compliance**.
 
@@ -102,13 +102,13 @@ One setting is in the hands of administrators: **AI evidence auto-scan**, enable
 
 **Is the AI Assistant available on all Dastra plans?**
 
-No. The AI Assistant, each of its features per module, AI agents and the MCP server are plan options. Contact our team to learn the scope of your plan.
+No. The AI Assistant, each of its features per module, Edit mode, custom AI agents and the MCP server are plan options. Contact our team to learn the scope of your plan.
 
 ***
 
 **What are AI credits?**
 
-AI credits are the unit of measurement for AI Assistant consumption within your organization. Each call to an AI feature consumes a certain number of credits, which varies depending on the model tier used (Fast, Smart, or Large context) and the amount of data processed.
+AI credits are the unit of measurement for AI Assistant consumption within your organization. Each call to an AI feature consumes credits from the monthly quota of the organization, shared with Dastra AI conversations and agent runs. See [AI credits and quotas](how-it-works.md#ai-credits-and-quotas).
 
 Organization owners can view current consumption and the remaining balance in **Organization settings** > **Dastra AI**, **Usage** card ([direct link](https://app.dastra.eu/general-settings/ai)).
 

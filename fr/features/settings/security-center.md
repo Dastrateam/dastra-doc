@@ -1,9 +1,8 @@
 ---
 description: >-
-  Définissez les règles de sécurité de votre organisation (renouvellement des
-  mots de passe, déconnexion automatique, authentification forte, filtres d'IP
-  et de domaines e-mail) et consultez les journaux de sécurité et l'historique
-  d'activités.
+  Définissez les règles de sécurité de votre organisation (mots de passe,
+  déconnexion automatique, authentification forte, filtres d'IP et de domaines
+  e-mail) et consultez les journaux de sécurité.
 ---
 
 # Sécurité de l'organisation et journaux de sécurité

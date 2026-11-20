@@ -25,12 +25,6 @@ No, this is not possible. This option is available if you are an internal respon
 
 Yes, it is possible from the "long text" question type by checking the box "Automatically suggest a task(s) based on the answer".
 
-## Is it possible to publish a questionnaire template for all Dastra users?
-
-Yes, you can do so from the questionnaire template editor by clicking on "Contribute":
-
-<div align="left"><figure><img src="../../.gitbook/assets/screenshot-2024-07-26-120534.png" alt=""><figcaption></figcaption></figure></div>
-
 ## What do the colors in questionnaire answers mean?
 
 In the questionnaire sections, colors are associated with the icons of the questions.

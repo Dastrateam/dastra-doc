@@ -22,6 +22,7 @@
 ## 👨‍💻 Bien commencer <a href="#getting-started" id="getting-started"></a>
 
 * [🚀 Démarrer en 5 minutes](getting-started/quickstart.md)
+* [Naviguer dans Dastra](getting-started/navigation.md)
 * [Mise en place](getting-started/setup/README.md)
   * [Les notions importantes](getting-started/setup/key-concepts.md)
   * [Se connecter et gérer l’authentification](getting-started/setup/login.md)
@@ -53,7 +54,7 @@
 * [Exemples concrets](examples/README.md)
   * [Projet ISO 27001](examples/iso-27001-project.md)
   * [Calcul des risques](examples/risk-scoring.md)
-  * [Recettes de workflow](examples/workflow-recipes.md)
+  * [Exemples de configuration de workflow](examples/workflow-recipes.md)
   * [Importer des actifs depuis un tableur](examples/excel-import.md)
   * [Cartographier un flux de données](examples/data-mapping.md)
   * [Des réponses de questionnaire dans une fiche](examples/questionnaire-to-record.md)
@@ -79,6 +80,7 @@
       * [Les compétences](features/general/ai-assistant/agents/skills.md)
       * [Suivre les exécutions](features/general/ai-assistant/agents/inbox.md)
     * [Le serveur MCP](features/general/ai-assistant/mcp.md)
+    * [Artefacts](features/general/ai-assistant/artifacts.md)
   * [Modèles e-mail](features/general/email-templates.md)
   * [Discussions internes](features/general/discussions.md)
   * [FAQ](features/general/faq.md)

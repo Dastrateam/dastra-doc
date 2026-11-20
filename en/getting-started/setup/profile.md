@@ -10,11 +10,11 @@ Each Dastra user has a personal profile: identification details, language and ti
 
 You can add a logo or a profile photo, displayed in Dastra next to your name. Click **Upload a logo** and choose a square image of at least 200 x 200 px. Dastra crops it automatically.
 
-<figure><img src="../../.gitbook/assets/getting-started-profile-1.png" alt="User profile page with the logo field and the personal information"><figcaption><p>The User profile page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-profile-1.png" alt="User profile page with the logo field and the personal information"><figcaption><p>The User profile page</p></figcaption></figure>
 
 ## Personal information
 
-You can fill in or update the following fields at any time. The address, website and bio fields are hidden by default: click **View more** to display them. Click **Save changes** to confirm.
+You can fill in or update the following fields at any time. Click **Save changes** to confirm. Dastra does not ask for a postal address or a website, in line with data minimization.
 
 | Field | Description | Required |
 | --- | --- | --- |
@@ -22,9 +22,7 @@ You can fill in or update the following fields at any time. The address, website
 | **Surname** | Your family name | Yes |
 | **Public pseudonym** | Pseudonym used in the users' forum (the community) and in messages of data subject requests sent outside your organization. At least 4 characters: letters, digits and underscores | No |
 | **Professional phone number** | Your professional phone number | No |
-| **Address**, **Postcode**, **City**, **State/Province/Region**, **Country** | Your contact details | No |
-| **Blog/Website url** | Link to your website or professional profile | No |
-| **Bio** | Short description of your role or position | No |
+| **Description** | Short description of your role or position | No |
 
 ## Change your email address
 
@@ -44,6 +42,8 @@ The **Language & time zone** section customizes how Dastra is displayed.
 | **Timezone** | Time zone used to display dates and times |
 
 These preferences only change your personal display. They do not change the language of the other workspace members.
+
+When a user is invited to a workspace, their time zone starts with the default time zone of that workspace. They can change it here. See [Set the default time zone](workspace.md#set-the-default-time-zone).
 
 <figure><img src="../../.gitbook/assets/getting-started-profile-2.png" alt="Profile email, Language and time zone, and Reset preference data sections"><figcaption><p>The email, language and preferences sections</p></figcaption></figure>
 

@@ -20,6 +20,14 @@ Internal discussions work like a chat attached to an element of Dastra: processi
 
 An unsent draft is kept in your browser and restored when you reopen the panel. You can edit or delete your own messages from their menu. An edited message shows **Last edit** followed by the date.
 
+## Message layout
+
+Messages are laid out like a chat, in the internal discussions as well as in the exchanges of a data subject request, on your side and in the requester space. Your own messages are on the right, in a light-blue bubble, with **Me** above. The name of another author is above their bubble, in the color of their avatar. The date and time of each message are under the bubble.
+
+<figure><img src="../../.gitbook/assets/v3-interface-discussions-1.png" alt="An internal discussion with messages in bubbles: own messages on the right in light blue, other authors on the left"><figcaption><p>The message layout in an internal discussion</p></figcaption></figure>
+
+In the exchange with the requester of a data subject request, the requester's messages are headed **Data subject**. See [Requester space](../requests/advanced/requester-space.md).
+
 ## Mentions
 
 Mention the users concerned with the **@** character. A list of the users of your workspace appears and narrows as you type.

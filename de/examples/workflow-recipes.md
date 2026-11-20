@@ -1,11 +1,11 @@
 ---
 description: >-
-  Vier Workflow-Regeln der Brightmoor Retail Group: neue Anfragen zuweisen,
-  Aufgaben in einem Team verteilen, Microsoft Teams bei einer Verletzung mit
-  hohem Risiko alarmieren und eine HTTP-Anfrage senden.
+  Vier Workflow-Regeln der Brightmoor Retail Group: Anfragen zuweisen, Aufgaben
+  im Team verteilen, Microsoft Teams bei hohem Risiko alarmieren und eine HTTP-
+  Anfrage senden.
 ---
 
-# Workflow-Rezepte
+# Beispiele für Workflow-Konfigurationen
 
 Jedes Rezept ist eine [Workflow-Regel](../features/settings/workflow-rules.md) der Brightmoor Retail Group: ein Auslöser, Bedingungen und Aktionen für eine Objektart. Um eine davon zu erstellen, öffnen Sie **Automatisierungen** > **Workflow-Regeln**, klicken Sie auf **Erstellen Sie eine Workflow-Regel**, wählen Sie **Von Grund auf** und geben Sie dann den **Namen der Regel** und den **Elementtyp** ein. Schalten Sie die Regel nach dem Speichern mit dem Schalter **Status** ein.
 

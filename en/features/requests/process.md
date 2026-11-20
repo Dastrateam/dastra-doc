@@ -86,6 +86,8 @@ You can complete or modify the information collected via the initial form:
 
 When the request comes from a collection form, the fields filled in by the requester (the message and the email address) are locked and cannot be edited.
 
+When [requester verification by SMS](advanced/requester-space.md#verify-the-requester-by-sms) is on, the **Phone number** field also shows whether the number is verified. A number entered or changed here is never considered verified.
+
 If other requests have the same email address, the side panel shows the **n requests with similar e-mail** link. Use it to spot duplicates.
 
 ***
@@ -266,5 +268,6 @@ Each request keeps the complete history:
 * Messages exchanged.
 * Attachments added.
 * Status and processing progress.
+* With SMS verification: code sent, number verified, download validated, verification locked and number changed.
 
 This makes it possible to ensure traceability and compliance in the event of an audit.

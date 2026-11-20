@@ -1,8 +1,8 @@
 ---
 description: >-
-  Legen Sie die Sicherheitsregeln Ihrer Organisation fest (Passworterneuerung,
-  automatische Abmeldung, starke Authentifizierung, IP- und E-Mail-Domain-Filter)
-  und sehen Sie die Sicherheitsprotokolle und den Aktivitätsverlauf ein.
+  Legen Sie die Sicherheitsregeln Ihrer Organisation fest (Passwörter,
+  automatische Abmeldung, starke Authentifizierung, IP- und Domain-Filter) und
+  sehen Sie die Sicherheitsprotokolle ein.
 ---
 
 # Sicherheit der Organisation und Sicherheitsprotokolle

@@ -231,7 +231,7 @@ L'infobulle de l'en-tête de la colonne **Appréciation IA** rappelle cette mét
 
 ### Activation et paramétrage
 
-La fonctionnalité est optionnelle et désactivée par défaut. Pour l'activer, rendez-vous dans **Paramètres** > **Conformité** et activez l'option **Analyse IA automatique des preuves**.
+La fonctionnalité est optionnelle et désactivée par défaut. Pour l'activer, rendez-vous dans **Réglages espace de travail** > **Conformité** et activez l'option **Analyse IA automatique des preuves**.
 
 {% hint style="info" %}
 Tant que la fonctionnalité n'est pas activée, **aucune donnée de preuve n'est envoyée au modèle d'IA**.

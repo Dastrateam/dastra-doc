@@ -28,7 +28,7 @@ In particular:
 
 **Compliance assessments are analytical aids.** Scores and recommendations produced by the AI are based solely on information recorded in your workspace. They reflect the quality of that documentation, not an independent legal opinion.
 
-**You remain in control.** No AI-generated result is applied or communicated automatically. Every result requires a deliberate human action to be used.
+**You remain in control.** No AI-generated result is applied or communicated automatically. Every result requires a deliberate human action to be used. The one exception is an [autonomous agent](agents/autonomous.md) that you configure: it runs without anyone watching and applies the changes its editing tools allow, which is why you choose those tools yourself.
 {% endhint %}
 
 ## Data protection and confidentiality
@@ -54,7 +54,11 @@ For a step-by-step guide to each feature, see [Use cases](use-cases.md).
 
 ## Dastra AI, agents and the MCP server
 
-Beyond content generation, Dastra AI offers a conversational mode that you query from the dashboard or from the **Open Dastra AI** button at the bottom right of the screen. You can also create your own [agents](agents/README.md), conversational or autonomous, and connect your AI tools to Dastra with the [MCP server](mcp.md). These features depend on your organization's plan and on each user's permissions.
+Beyond content generation, Dastra AI offers a conversational mode that you query from the dashboard, from the **Open Dastra AI** button at the bottom right of the screen or from the **Dastra AI** entry of the **Automation** menu. You can also create your own [agents](agents/README.md), conversational or autonomous, keep the files the assistant produces as [artifacts](artifacts.md), and connect your AI tools to Dastra with the [MCP server](mcp.md). These features depend on your organization's plan and on each user's permissions.
+
+The **Dastra AI** entry of the **Automation** menu groups the full-size chat (**Conversations**, with the **Artifacts** list), **Agents**, **Inbox** and **Skills**. The last three appear when your plan includes custom agents and your role allows them.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="The Dastra AI entry of the Automation menu"><figcaption><p>Automation &#x3E; Dastra AI</p></figcaption></figure>
 
 All AI features share the monthly AI credit quota described in [How it works](how-it-works.md#ai-credits-and-quotas).
 
@@ -62,27 +66,51 @@ All AI features share the monthly AI credit quota described in [How it works](ho
 
 **Dastra AI** answers questions about your workspace in a conversation. It looks up your records with read-only tools, so you can ask for a summary, a list of overdue requests or the processing activities that have no DPIA.
 
-To answer, Dastra AI can also rely on the regulatory base indexed by Dastra, on the Dastra documentation and on a web search. In Edit mode, it can create records, update fields, create an action plan, a questionnaire, a comment or a tag, and run record actions such as changing the workflow step. It can ask you clarifying questions before acting and direct you to the relevant record.
+To answer, Dastra AI can also rely on the regulatory base indexed by Dastra, on the Dastra documentation and on a web search. In Edit mode, it can create records, update fields, create an action plan, a questionnaire, a comment or a tag, and run record actions such as changing the workflow step. It can build [artifacts](artifacts.md), ask you clarifying questions before acting and direct you to the relevant record.
 
-1. Click **Open Dastra AI**, at the bottom right of the screen, or press **Ctrl+J** (**Cmd+J** on Mac).
+1. Click **Open Dastra AI**, at the bottom right of the screen, or press **Ctrl+J** (**Cmd+J** on Mac). On the dashboard, you can also type your question in the message box under **How can I help you today?**: the panel opens and answers.
 2. Type your question, or pick one of the **Suggested prompts**. They change with the page you are on: the record you are viewing, the register, requests, AI systems.
 3. Read the answer. When the assistant relies on your records, it shows its steps and cites them. Use the **Suggested follow-up questions** to continue.
 
 <figure><img src="../../../.gitbook/assets/general-ai-chat-1.png" alt="The Dastra AI panel on a processing activity, with the suggested prompts and the message box"><figcaption><p>The Dastra AI panel, with the + menu open</p></figcaption></figure>
 
+The record or the register you are viewing is passed to the assistant as context, so you can ask "summarize this processing" without naming it. A guided tour of the panel is available: click **Display the guide**, the information icon of the panel header.
+
 The panel offers several tools:
 
-* **Toggle fullscreen** expands the panel to the full screen. A link to the AI agent page of a workspace opens the assistant full screen, then goes back to the dashboard of that workspace.
-* **New conversation** starts a fresh conversation. The conversation list keeps your previous conversations: rename or delete them from there. Deleting a conversation deletes all of its messages.
-* **Choose an agent** switches between the standard assistant and the [agents](agents/README.md) your workspace has enabled.
-* **Add context** and **Attach a file** give the assistant a record or a document to work on. Type `@` to mention a record or a user.
-* Type `/` or click **Skills** to run a [skill](agents/skills.md), a reusable prompt.
+* **Open in full view** opens the conversation on the Dastra AI page, in the **Automation** menu, where your conversations are listed on the left. Older links to the AI agent page of a workspace lead to the same page.
+* **Dock to the right** keeps the panel in a column beside the page, **Undock** puts it back over the page, and **Minimize** closes it. Docking is offered on screens at least 1,480 pixels wide. Dastra remembers your choice.
+* **New conversation** starts a fresh conversation. The list of conversations keeps the previous ones, grouped by date, with a search box: rename or delete them from there. Deleting a conversation deletes all of its messages.
+* **Choose an agent** switches between the **Standard chat** and the [agents](agents/README.md) your workspace has enabled.
+* **Add context** gives the assistant a record or a user to work on. Type `@` in the message to mention a record or a user.
+* **Attach a file**, or drop a file in the message box. Dastra AI reads PDF, PNG and JPEG files itself. CSV, XLSX, DOCX, JSON, TXT and Markdown files are accepted too, but only code execution can open them, where it is available. A file is limited to 10 MB.
+* **My artifacts**, in the **+** menu, opens the list of [artifacts](artifacts.md) of the workspace.
+* Type `/` or click **Skills** to run a [skill](agents/skills.md), a reusable prompt. A message applies at most five skills.
 * **Dictate a message** records your voice and transcribes it into the message box. Your browser asks for microphone access the first time.
-* Rate an answer with **Good response** or **Bad response**, and add a comment, to send feedback to Dastra.
+* **Copy** puts an answer in your clipboard.
+* Rate an answer with **Good response** or **Bad response**. A **Bad response** opens a window where you can add a comment. Dastra stores the rating and the comment with the message.
+
+Dastra restores what you were doing after a page reload: the text you were typing and, if your last exchange is less than six hours old, the conversation.
+
+When a conversation gets long, a **Context** indicator appears next to the message box from 50% of the room available. From 80%, the indicator turns orange and suggests a new conversation. Sending stays possible, but the assistant may lose the beginning of the conversation once the room is used up.
 
 ### Ask and Edit modes
 
-In **Ask** mode, the assistant only reads: nothing in your workspace changes. In **Edit** mode, it can also create and update records, and asks for your confirmation before it applies a change. The mode selector appears for users who have the write permission of the assistant. The **Edit** mode requires the matching option in your organization's plan. Without it, the option is locked.
+In **Ask** mode, the assistant only reads: nothing in your workspace changes. In **Edit** mode, it can also create and update records. The mode selector appears for users who have the write permission of the assistant. The **Edit** mode requires the matching option in your organization's plan. Without it, the option is locked.
+
+**Tools available in Ask mode.** Searching the workspace, the documentation, the regulations and the web. Browsing and reading records, comments, files, organizational units, questionnaires and the workspace profile. Inspecting the structure of a record type, its editable fields and its available actions. Listing users, tags, workflow steps and regulation categories. Exporting records, building [artifacts](artifacts.md), running code (where it is available) and delegating a sub-task. The assistant can also ask you questions and take you to a page of Dastra.
+
+**Tools added by Edit mode.** Creating a record, updating one or several records, running a record action (archive, restore, clone, change the workflow step, etc.), adding a comment, creating an action plan or a tag, planning and filling in a questionnaire, writing a document, linking or saving a file, drafting a record from a description, analyzing a record and creating or updating an agent. Deletion and anonymization are not offered.
+
+Before it runs one of these tools, Dastra AI shows an **Authorization required** card that names the tool. Click **Show arguments** to see what it is about to send, then choose:
+
+* **Approve** to run the tool this time;
+* **Always approve for this session** to stop being asked for the tools of this conversation;
+* **Decline** to refuse.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-confirmation-1.png" alt="The Authorization required card of Dastra AI"><figcaption><p>The authorization card of Edit mode</p></figcaption></figure>
+
+If you send another message while a card is waiting, the card no longer applies.
 
 {% hint style="info" %}
 Dastra AI is available when your plan includes it and when your role has the AI assistant permission. The messages count towards the monthly AI credit quota, and a banner warns you when the quota is almost used up.
@@ -102,7 +130,7 @@ When using a beta feature:
 Beta features should never be the sole basis for a compliance decision. They are designed to support thorough human review, not replace it.
 {% endhint %}
 
-**Currently in beta**: the AI compliance analysis, available on processing activities, AI systems, contracts, assets, stakeholders and audit response summaries. Open it with the **AI analysis (beta)** button of the record, or ask Dastra AI to analyze a record. The result gives a score from A to F, the assessed criteria and suggested tasks, and can be printed, relaunched or continued in the chat.
+**Currently in beta**: the AI compliance analysis, available on processing activities, AI systems, contracts, assets, stakeholders and audit response summaries. Open it with the **AI analysis (beta)** button of the record, or ask Dastra AI to analyze a record in Edit mode. The result gives a score from A to F, the assessed criteria and suggested tasks, and can be printed, relaunched or continued in the chat.
 
 ***
 
@@ -124,4 +152,8 @@ Beta features should never be the sole basis for a compliance decision. They are
 
 {% content-ref url="mcp.md" %}
 [serveur-mcp.md](mcp.md)
+{% endcontent-ref %}
+
+{% content-ref url="artifacts.md" %}
+[artifacts.md](artifacts.md)
 {% endcontent-ref %}

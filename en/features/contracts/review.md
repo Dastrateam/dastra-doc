@@ -15,3 +15,17 @@ Once review is on, each document record shows the freshness indicator in the sho
 Click the indicator to open the **Review** window. In the **New review** tab, choose the **Reviewer**, the **Review date** and, if needed, a description. Dastra calculates the **Date before next review** from the workspace frequency. You can replace it with a specific date using **Change the date of the next review**. The **Previous reviews** tab keeps the history.
 
 When a document becomes outdated, its owner receives an email.
+
+## Record a review when a document becomes active
+
+When regular review is on, moving a document to a workflow stage whose internal status is **Active** opens the **Switch workflow stage** window with a **Review** switch, turned on by default. Keep it on and click **Validate**: Dastra changes the stage and records a review at the same time.
+
+* The reviewer is you, and the **Review date** is today.
+* The **Date before next review** is calculated from the workspace frequency.
+* The text you write in the version description is kept as the description of the review.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-contracts-1.png" alt="Switch workflow stage window with the Review switch"><figcaption><p>The workflow stage window with the Review switch</p></figcaption></figure>
+
+The window appears when you change the stage from the document page and from the **Workflow** column of the list. The review updates the dates of the last and the next review of the document and appears in the **Previous reviews** tab. Turn the switch off if the stage change should not count as a review.
+
+If the stage changes but the review cannot be saved, a message asks you to record it again from the **Review** window.

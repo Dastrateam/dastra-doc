@@ -16,6 +16,9 @@ Two rules decide which term wins:
    label, or the official GDPR wording in that language when the app has none. App labels that look wrong are
    listed at the end of this file, to fix in the app (Localazy), not in the documentation.
 
+For German, [`glossary-de.md`](glossary-de.md) gives the customer's French to German terms for the concepts
+this table does not cover.
+
 ## Privacy and GDPR
 
 | Concept | fr | en | de | nl | Note |
@@ -29,10 +32,10 @@ Two rules decide which term wins:
 | Processor | sous-traitant | processor ≠ subcontractor, sub-contractor | Auftragsverarbeiter ≠ Subunternehmer | verwerker ≠ subcontractant | A sub-processor (sous-traitant ultérieur, Unterauftragsverarbeiter, subverwerker) is a different role: keep it. |
 | Data subject | personne concernée | data subject ≠ concerned person, concerned people | betroffene Person | betrokkene | |
 | Personal data | données personnelles | personal data ≠ personal datas, PII | personenbezogene Daten | persoonsgegevens | "données à caractère personnel" is fine when quoting the law. |
-| Personal data breach | violation de données ≠ fuite de données | data breach ≠ data leak | Datenschutzverletzung ≠ Datenleck | datalek | The module is named "Incidents" (Vorfälle, Incidenten) in the app menus: quote it as a label. |
+| Personal data breach | violation de données ≠ fuite de données | data breach ≠ data leak | Datenschutzvorfall ≠ Datenleck, Datenschutzverletzung | datalek | The module is named "Incidents" (Vorfälle, Incidenten) in the app menus: quote it as a label. |
 | Data subject request | demande d'exercice de droits ≠ DSR | data subject request | Betroffenenanfrage | verzoek van een betrokkene | In English, DSR is fine after the first mention. |
 | Lawful basis | base légale ≠ base juridique | lawful basis ≠ legal ground | Rechtsgrundlage | wettelijke basis | Label of the purpose form in each language. |
-| Purpose | finalité | purpose | Zweck | doeleinde | |
+| Purpose | finalité | purpose | Zweck | doeleinde | German: Verarbeitungszweck for the purpose of a processing activity. |
 | Recipient | destinataire | recipient | Empfänger | ontvanger | |
 | Consent | consentement | consent | Einwilligung ≠ Zustimmung | toestemming | |
 | Transfer outside the EU | transfert hors UE | transfer outside the EU | Drittlandübermittlung | doorgifte buiten de EU | |
@@ -49,15 +52,18 @@ Two rules decide which term wins:
 | Workspace | espace de travail ≠ workspace | workspace | Mandant ≠ Workspace, Arbeitsbereich | werkruimte ≠ workspace | German follows the app label. |
 | Organization (the customer account) | organisation ≠ tenant | organization ≠ tenant | Organisation ≠ Tenant | organisatie ≠ tenant | "Tenant" is internal vocabulary: write organization, or workspace when that is what is meant. |
 | Organizational unit | unité organisationnelle | organizational unit ≠ organisational unit | Organisationseinheit | organisatorische eenheid | An entity (entité, Entität, entiteit) is one type of organizational unit, not a synonym. |
-| Stakeholder | acteur | stakeholder ≠ actor | Stakeholder | actor ≠ acteur | Menu label in each language. |
+| Stakeholder | acteur | stakeholder ≠ actor | Stakeholder | actor ≠ acteur | Menu label in each language. A project stakeholder (partie prenante) is an Interessengruppe in German. |
 | Asset | actif | asset | Asset | activum | Dutch menu label: Activa. |
-| Dataset | jeu de données | dataset | Datenkategorie | dataset | Menu labels: Datenkategorien (de), Gegevenssets (nl). |
+| Dataset | jeu de données | dataset | Datensatz | dataset | Menu labels: Datenkategorien (de), Gegevenssets (nl): quote them as labels. Datenkategorie in running text is a data category (catégorie de données), not a dataset. |
 | Data catalog | catalogue de données | data catalog | Datenkatalog | gegevenscatalogus | |
-| Data glossary | glossaire de données | data glossary | Datensätze | verklarende woordenlijst voor gegevens | German and Dutch follow the menu labels, which are questioned at the end of this file. |
+| Data glossary | glossaire de données | data glossary | Datenglossar ≠ Daten-Glossar | verklarende woordenlijst voor gegevens | German menu label « Datensätze » is questioned at the end of this file: quote it only as a label. Dutch follows the menu label. |
 | Security measure | mesure de sécurité | security measure | Sicherheitsmaßnahme | veiligheidsmaatregel | |
 | Questionnaire | questionnaire | questionnaire | Fragebogen | vragenlijst | |
 | Risk management | gestion des risques | risk management | Risikomanagement | risicobeheer | |
 | Task | tâche | task | Aufgabe | taak | |
+| User | utilisateur | user | Nutzer ≠ Benutzer | gebruiker | Quote « Benutzer » only where it is the on-screen label. |
+| Owner | propriétaire | owner | Inhaber ≠ Eigentümer | eigenaar | |
+| Privacy notice | politique de confidentialité | privacy notice | Datenschutzinformation | privacyverklaring | |
 | Regular review | revue régulière | regular review | regelmäßige Überprüfung | terugkerende beoordeling | |
 | Custom field | champ personnalisé | custom field | benutzerdefiniertes Feld | aangepast veld | |
 | Collection form | formulaire de collecte | form | Formular zur Datenerfassung | verzamelformulier | |
@@ -89,7 +95,6 @@ fixed in the app. Do not use them in running text.
 | en | "Subcontractors" (AI analysis criteria) | French calque: the GDPR term is "processors". |
 | en | "Webhooks" for the vendors settings entry | The French label of the same key is « Sous-traitants ». |
 | de | "Datensätze" for the data glossary | The same word is used for datasets. |
-| de | "Mandant" for the workspace, "Organisation" for the tenant | "Mandant" usually means the tenant in German software. |
 | nl | "Webhaken" | Translation of a technical term that Dutch users know as "webhook". |
 | nl | "Subcontractant" for processor | The AVG term is "verwerker". |
 | fr | « email » and « e-mail » both used | The documentation uses « e-mail ». |

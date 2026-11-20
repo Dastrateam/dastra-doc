@@ -187,7 +187,7 @@ When you install a template from the Dastra library and the library template is 
 The number of available templates depends on your subscription plan. This quota is shared across all workspaces in your organization. The template recycle bin counts towards the quota: remember to empty it regularly to free up slots.
 {% endhint %}
 
-## History, export and contribution
+## History and export
 
 In the editor, the menu next to the **Save changes** button gives access to several actions:
 
@@ -195,8 +195,7 @@ In the editor, the menu next to the **Save changes** button gives access to seve
 * **Plan questionnaire**;
 * **Configure**;
 * **Activity history**: review and restore earlier changes to the template;
-* **Export**: download the template (JSON, Excel, CSV, PDF, Word, HTML or Markdown);
-* **Contribute**: publish the template for all Dastra users, for users allowed to contribute.
+* **Export**: download the template (JSON, Excel, CSV, PDF, Word, HTML or Markdown).
 
 To delete a template, see [Delete a questionnaire or a template](../delete.md).
 

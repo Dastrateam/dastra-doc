@@ -13,7 +13,7 @@ Le tableau de bord est la première page que vous voyez en entrant dans un espac
 
 L'écran se compose de trois zones :
 
-* **Le menu de gauche** : le sélecteur d'espace de travail, qui rappelle vos rôles dans l'espace, puis les modules regroupés sous **Inventaire**, **Opérations**, **Gouvernance**, **Automatisations** et **Ressources**. Le bouton **Inviter un membre** et l'entrée **Réglages espace de travail** se trouvent en bas du menu. Un module n'apparaît que si votre abonnement l'inclut et si vos permissions vous y donnent accès.
+* **Le menu de gauche** : le sélecteur d'espace de travail, qui rappelle vos rôles dans l'espace, puis les modules regroupés sous **Inventaire**, **Opérations**, **Gouvernance**, **Automatisation** et **Ressources**. Le bouton **Inviter un membre** et l'entrée **Réglages espace de travail** se trouvent en bas du menu. Un module n'apparaît que si votre abonnement l'inclut et si vos permissions vous y donnent accès.
 * **La section centrale** : au-dessus des tuiles, selon vos droits et votre abonnement, vous trouvez l'invite de l'agent IA (**Comment puis-je vous aider aujourd'hui ?**), la carte de la dernière note de version, le **Guide de démarrage** et la **Présentation de l'espace de travail**, un texte libre qui présente l'espace à ses utilisateurs.
 * **L'onglet de la communauté**, à droite de l'écran : il ouvre le panneau des **Webinaires à venir**. Vous pouvez replier ce panneau ; l'onglet reste alors à droite de l'écran pour le rouvrir, et votre choix est mémorisé dans votre navigateur.
 

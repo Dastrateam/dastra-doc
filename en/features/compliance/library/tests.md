@@ -231,7 +231,7 @@ The tooltip of the **AI Appreciation** column header recalls this method.
 
 ### Activation and settings
 
-The feature is optional and disabled by default. To enable it, go to **Settings** > **Compliance** and turn on the **AI evidence auto-scan** option.
+The feature is optional and disabled by default. To enable it, go to **Workspace settings** > **Compliance** and turn on the **AI evidence auto-scan** option.
 
 {% hint style="info" %}
 As long as the feature is not enabled, **no evidence data is sent to the AI model**.

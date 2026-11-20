@@ -53,7 +53,7 @@
 * [Praxisbeispiele](examples/README.md)
   * [ISO-27001-Projekt](examples/iso-27001-project.md)
   * [Risiko-Scoring](examples/risk-scoring.md)
-  * [Workflow-Rezepte](examples/workflow-recipes.md)
+  * [Beispiele für Workflow-Konfigurationen](examples/workflow-recipes.md)
   * [Assets aus einer Tabelle importieren](examples/excel-import.md)
   * [Einen Datenfluss kartieren](examples/data-mapping.md)
   * [Fragebogenantworten in einem Verzeichnis](examples/questionnaire-to-record.md)

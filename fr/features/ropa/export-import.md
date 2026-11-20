@@ -36,7 +36,7 @@ Le format RGPD (Article 30) correspond à ce qu'exige le RGPD. L'export contient
 
 ### Format complet
 
-Le format complet est le format natif de Dastra. Vous exportez l'ensemble des champs qui composent le traitement.
+Le format complet est le format natif de Dastra. Vous exportez l'ensemble des champs qui composent le traitement. Dans les exports PDF, Word et HTML, la section des droits des personnes concernées ne liste que les droits renseignés dans le traitement. Lorsqu'aucun droit n'est renseigné, la section est omise.
 
 {% hint style="info" %}
 Vous pouvez aussi exporter un ou plusieurs traitements du registre, au lieu du registre entier. Pour cela, cochez les cases à gauche des traitements concernés, puis cliquez sur **Choisir une action groupée** et **Exporter**. Pour exporter un seul traitement, vous pouvez aussi utiliser **Exporter** dans le menu en bout de ligne.
@@ -64,6 +64,10 @@ Importer un registre existant peut être fastidieux si vous avez de nombreux tra
 {% hint style="info" %}
 Aucune unité organisationnelle n'est créée pendant l'import. Les données des champs qui ne font pas partie du modèle sont placées dans les champs de description HTML.
 {% endhint %}
+
+Lorsque la catégorie de destinataire d'une ligne est vide, Dastra importe le destinataire avec la catégorie **Autre**.
+
+La feuille des champs de données du classeur comporte une colonne **Remarques** : elle reprend les remarques saisies pour chaque champ de données d'un jeu de données, comme dans le champ **Remarques** du jeu de données. L'export la renseigne et l'import la lit, dans la limite de 1 000 caractères par remarque. Un classeur exporté avant l'ajout de cette colonne reste importable.
 
 ### Importer un fichier JSON
 

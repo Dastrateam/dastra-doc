@@ -35,7 +35,7 @@ Générez rapidement un traitement de données au format attendu par Dastra à p
 ### Générer une notice d'information
 
 1. Rendez-vous dans la page de modification d'un traitement
-2. Dans la section **11. Documentation**, cliquez sur **Générer une notice d'information**
+2. Dans la section **11. Documentation**, cliquez sur **Générer notice d'information**
 3. Choisissez le format souhaité (vous pouvez personnaliser les instructions en sélectionnant **Personnalisée**) et la **Langue de la notice** ; la langue de l'interface est proposée par défaut
 4. Cliquez sur **Générer** : l'aperçu permet de copier le texte de chaque onglet, ou de cliquer sur **Exporter** pour obtenir un fichier PDF, Word, HTML ou Markdown
 5. Dans la fenêtre **Exporter la notice d'information**, l'option **Ajouter ce fichier aux pièces jointes du traitement**, activée par défaut, ajoute le fichier exporté aux pièces jointes du traitement ; chaque export crée une nouvelle pièce jointe
@@ -139,8 +139,8 @@ Dans le constructeur d'un modèle de questionnaire enregistré, cliquez sur **Tr
 Générez des réponses dans plusieurs langues, avec des options de personnalisation (longueur, ton formel ou informel, etc.).
 
 1. Ouvrez une demande d'exercice de droits en cours de traitement
-2. Remplissez les informations jusqu'à l'étape **Communication / Transmission**
-3. Cliquez sur **Générer avec IA** : l'assistant génère une réponse à partir des informations suivantes :
+2. Allez à la section **Réponse à la demande**
+3. Cliquez sur **Générer avec IA** : la fenêtre **Assistant IA de discussion** s'ouvre et l'assistant génère une réponse à partir des informations suivantes :
    * Nom et prénom du demandeur
    * Message de la demande
    * Langue à utiliser
@@ -150,7 +150,7 @@ Générez des réponses dans plusieurs langues, avec des options de personnalisa
    * Date de la demande et nombre de jours restants
    * État et identifiant de la demande
 4. Éditez le texte proposé ou utilisez les options de reformulation (raccourcir, allonger, changer le ton)
-5. Cliquez sur **Valider ce message**, ajoutez les pièces jointes éventuelles, puis cliquez sur **Envoyer**
+5. Cliquez sur **Utiliser ce message**, puis envoyez-le depuis Dastra
 
 {% hint style="info" %}
 Une limitation du nombre d'appels par minute est en place pour cette fonctionnalité.
@@ -214,7 +214,7 @@ La même démarche existe pour les modèles d'IA : décrivez le modèle (nom, é
 
 ### Générer une notice d'information pour un système d'IA
 
-Depuis la fiche d'un système d'IA, cliquez sur **Générer une notice** pour produire automatiquement le document d'information destiné aux utilisateurs ou aux personnes concernées.
+Dans l'onglet **Documentation** de la fiche d'un système d'IA, cliquez sur **Générez votre notice d'information** pour produire automatiquement le document d'information destiné aux utilisateurs ou aux personnes concernées.
 
 ### Générer la justification du rôle
 

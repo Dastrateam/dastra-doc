@@ -42,7 +42,7 @@ Les modèles Azure sont sans état (_stateless_) : les prompts et résultats ne 
 
 **Qui peut voir les appels effectués à l'assistant IA dans mon organisation ?**
 
-Les propriétaires de l'organisation ont accès aux journaux d'utilisation de l'IA (90 jours d'historique) dans **Paramètres de l'organisation** > **Assistant IA**, carte **Utilisation de l'IA**, onglet **Logs (90 jours)**. Ils indiquent la date, le statut, le type d'opération, le nom du modèle, les crédits consommés, la durée et l'utilisateur ayant déclenché la génération. Le contenu des prompts et des réponses n'y est pas affiché.
+Les propriétaires de l'organisation ont accès aux journaux d'utilisation de l'IA (90 jours d'historique) dans **Paramètres de l'organisation** > **Dastra AI**, carte **Utilisation de l'IA**, onglet **Journaux (90 jours)**. Ils indiquent la date, le statut, le type d'opération, le nom du modèle, les crédits consommés, la durée et l'utilisateur ayant déclenché la génération. Le contenu des prompts et des réponses n'y est pas affiché.
 
 ***
 
@@ -78,13 +78,13 @@ Oui. L'assistant IA n'est pas un juriste. Les contenus générés, analyses de c
 
 **Comment choisir le modèle d'IA utilisé ?**
 
-Le propriétaire de l'organisation ouvre **Paramètres de l'organisation** > **Assistant IA** et sélectionne la **Famille de modèles d'IA** : OpenAI (par défaut), Mistral, Open source ou **Modèles AI personnalisés**. Pour chaque famille, trois niveaux de modèle sont utilisés automatiquement selon la complexité de la tâche (Rapide, Avancé, Contexte étendu).
+Le propriétaire de l'organisation ouvre **Paramètres de l'organisation** > **Dastra AI** et sélectionne la **Famille de modèles d'IA** : OpenAI (par défaut), Mistral, Open source ou **Modèles AI personnalisés**. Pour chaque famille, trois niveaux de modèle sont utilisés automatiquement selon la complexité de la tâche (Rapide, Avancé, Contexte étendu).
 
 ***
 
 **Puis-je connecter mon propre fournisseur d'IA ?**
 
-Oui, avec la famille **Modèles AI personnalisés** (Custom AI provider). Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation** > **Assistant IA**, bloc **Identifiants de fournisseur d'IA**. Le fournisseur personnalisé s'applique aux fonctions de génération de l'assistant IA, pas à Dastra AI (chat), aux agents ni au serveur MCP.
+Oui, avec la famille **Modèles AI personnalisés** (Custom AI provider). Tout fournisseur compatible avec le standard OpenAI API peut être connecté : OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry, ou un LLM auto-hébergé. Configurez vos identifiants dans **Paramètres de l'organisation** > **Dastra AI**, bloc **Identifiants de fournisseur d'IA**. Le fournisseur personnalisé s'applique aux fonctions de génération de l'assistant IA, pas à Dastra AI (chat), aux agents ni au serveur MCP.
 
 {% hint style="warning" %}
 Avec un fournisseur d'IA personnalisé, les garanties Azure décrites dans cette documentation ne s'appliquent plus. Les données sont soumises à la politique de votre fournisseur.
@@ -94,7 +94,7 @@ Avec un fournisseur d'IA personnalisé, les garanties Azure décrites dans cette
 
 **Puis-je désactiver l'assistant IA pour mon organisation ?**
 
-L'application ne propose pas d'interrupteur pour désactiver l'assistant IA : sa disponibilité dépend de l'offre de votre organisation. Les fonctionnalités IA sont activées module par module (traitements et référentiels, conformité, risques, violations, questionnaires, contrats, exercices de droits, analyses). Dans un module que votre offre n'inclut pas, les boutons IA sont grisés. Pour modifier ce périmètre, contactez notre équipe.
+L'application ne propose pas d'interrupteur pour désactiver l'assistant IA : sa disponibilité dépend de l'offre de votre organisation. Les fonctionnalités IA sont activées module par module (traitements et référentiels, conformité, risques, violations, questionnaires, contrats, exercices de droits, analyses). Dans un module que votre offre n'inclut pas, les boutons IA sont grisés. Pour modifier ce périmètre, contactez notre équipe. Pour tenir Dastra AI à l'écart de certains utilisateurs, retirez la permission **Agent IA conversationnel** de leur rôle.
 
 Un seul réglage est à la main des administrateurs : l'**Analyse IA automatique des preuves**, activée par défaut, que vous désactivez par espace de travail dans **Réglages espace de travail** > **Conformité**.
 
@@ -102,15 +102,15 @@ Un seul réglage est à la main des administrateurs : l'**Analyse IA automatique
 
 **L'assistant IA est-il disponible sur tous les plans Dastra ?**
 
-Non. L'assistant IA, chacune de ses fonctionnalités par module, les agents IA et le serveur MCP font l'objet d'options de l'offre. Contactez notre équipe pour connaître le périmètre de votre offre.
+Non. L'assistant IA, chacune de ses fonctionnalités par module, le mode Édition, les agents IA personnalisés et le serveur MCP font l'objet d'options de l'offre. Contactez notre équipe pour connaître le périmètre de votre offre.
 
 ***
 
 **Qu'est-ce que les crédits IA ?**
 
-Les crédits IA sont l'unité de mesure de la consommation de l'assistant IA au sein de votre organisation. Chaque appel à une fonctionnalité IA consomme un certain nombre de crédits, variable selon le modèle sollicité (Rapide, Avancé ou Contexte étendu) et la quantité de données traitées.
+Les crédits IA sont l'unité de mesure de la consommation de l'assistant IA au sein de votre organisation. Chaque appel à une fonctionnalité IA consomme des crédits du quota mensuel de l'organisation, partagé avec les conversations Dastra AI et les exécutions d'agents. Voir [Crédits et quotas IA](how-it-works.md#credits-et-quotas-ia).
 
-Les propriétaires de l'organisation peuvent consulter la consommation en cours et le solde restant dans **Paramètres de l'organisation** > **Assistant IA**, carte **Utilisation** ([accès direct](https://app.dastra.eu/general-settings/ai)).
+Les propriétaires de l'organisation peuvent consulter la consommation en cours et le solde restant dans **Paramètres de l'organisation** > **Dastra AI**, carte **Utilisation** ([accès direct](https://app.dastra.eu/general-settings/ai)).
 
 ***
 

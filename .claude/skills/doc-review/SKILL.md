@@ -13,6 +13,8 @@ Review pages of this repository against three references, then report or fix:
   each language.
 - [`references/glossary.md`](references/glossary.md): the term to use for each privacy, product and technical
   concept in the four languages, and the variants to replace.
+- [`references/glossary-de.md`](references/glossary-de.md): the customer's French to German terms, for German
+  pages.
 
 Read the three files before reviewing. They are the rules; this file is the procedure.
 
@@ -33,8 +35,8 @@ python -I <repository root>/.claude/skills/doc-review/scripts/lint_doc.py <paths
 
 It prints the pages in scope and the mechanical findings, grouped by page, each with its line or line range,
 severity (`error`, `warning`, `hint`, `info`) and rule. Besides style and vocabulary, it catches broken relative
-links and images, empty `alt` texts, translated front matter keys, question headings, skipped heading levels and
-menu paths written with `→`. If it says "No documentation page to check", ask which pages to review.
+links and images, empty `alt` texts, translated front matter keys, descriptions over 200 characters, question
+headings, skipped heading levels and menu paths written with `→`. If it says "No documentation page to check", ask which pages to review.
 
 The UI label check needs the Dastra application repository. The script looks for `--app <path>`, then the
 `DASTRA_REPO` environment variable, then a `Dastra` folder next to this repository or one level above. When it

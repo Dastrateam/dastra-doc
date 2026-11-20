@@ -63,6 +63,8 @@ Weak signals, to rewrite only when a direct verb reads better: "allows you to", 
 - One `#` title per page, identical to the label in `SUMMARY.md`.
 - Front matter keys stay in English whatever the page language (`description:`, never `beschrijving:`): GitBook
   ignores any other key. The value of `description` is written in the page language.
+- The `description` is 200 characters at most, once its lines are joined: GitBook cuts the rest under the
+  title. Say what the page lets the reader do; the details go in the page.
 - The first paragraph says what the page covers and who it is for, in one or two sentences. No "Introduction"
   or "Overview" heading when the introduction is one paragraph.
 - Headings go down one level at a time (`##` under `#`, `###` under `##`) and state the topic, not a question,

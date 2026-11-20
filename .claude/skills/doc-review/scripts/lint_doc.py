@@ -22,6 +22,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 LANGS = ("fr", "en", "de", "nl")
+DESCRIPTION_MAX = 200
 SKILL_DIR = Path(__file__).resolve().parent.parent
 
 EMOJI = re.compile(
@@ -255,6 +256,27 @@ def broken_links(raw, page_dir):
     return broken
 
 
+def front_matter_description(fm_lines):
+    """Returns (line number, text) of the description, as GitBook displays it, or None."""
+    for i, raw in enumerate(fm_lines):
+        match = re.match(r"description:\s*(.*)$", raw)
+        if not match:
+            continue
+        value = match.group(1).strip()
+        if value[:1] in (">", "|"):
+            block = []
+            for nxt in fm_lines[i + 1:]:
+                if nxt.strip() and not nxt.startswith((" ", "\t")):
+                    break
+                block.append(nxt.strip())
+            separator = "\n" if value.startswith("|") else " "
+            value = separator.join(part for part in block if part)
+        elif len(value) > 1 and value[0] == value[-1] and value[0] in "'\"":
+            value = value[1:-1].replace("''", "'") if value[0] == "'" else value[1:-1].replace('\\"', '"')
+        return i + 2, value
+    return None
+
+
 def check_page(rel, root, glossary, labels):
     lang = rel.split("/", 1)[0]
     text = (root / rel).read_text(encoding="utf-8")
@@ -272,6 +294,11 @@ def check_page(rel, root, glossary, labels):
             key = re.match(r"([^\s:#][^:]*):", raw)
             if key and key.group(1) not in FRONT_MATTER_KEYS:
                 add(no, "error", "front-matter", f"\"{key.group(1)}\" is not a GitBook key: keys stay in English (description:)", raw)
+        description = front_matter_description(lines[1:front_matter_end - 1])
+        if description and len(description[1]) > DESCRIPTION_MAX:
+            add(description[0], "error", "description-length",
+                f"description has {len(description[1])} characters: GitBook cuts it at {DESCRIPTION_MAX}",
+                description[1][DESCRIPTION_MAX - 20:])
 
     page_dir = (root / rel).parent
     in_code = False
