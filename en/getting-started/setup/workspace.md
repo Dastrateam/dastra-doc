@@ -64,7 +64,7 @@ Once your workspace is open, fill in the other legal entities and the department
 2. Click **Create an entity** to add a legal entity, or open the button's menu to choose **Create department**.
 3. Repeat until the organization chart of your structure is represented in Dastra.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigram view of the organizational units in Dastra"><figcaption><p>The Organigram view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Organigram view of the organizational units in Dastra"><figcaption><p>The Organigram view</p></figcaption></figure>
 
 For child departments, child entities, import and deletion, see [Create and set up organizational units](organizational-units.md).
 

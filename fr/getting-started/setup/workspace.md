@@ -68,7 +68,7 @@ Une fois votre espace ouvert, renseignez dès que possible les autres entités j
 2. Cliquez sur **Créer une entité** pour ajouter une entité juridique, ou ouvrez le menu du bouton pour choisir **Créer un département**.
 3. Répétez l'opération jusqu'à ce que l'organigramme de votre structure soit représenté dans Dastra.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Vue Organigramme des unités organisationnelles dans Dastra"><figcaption><p>La vue Organigramme</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Vue Organigramme des unités organisationnelles dans Dastra"><figcaption><p>La vue Organigramme</p></figcaption></figure>
 
 Pour les départements enfants, les entités enfants, l'import et la suppression, voir [Créer et paramétrer les unités organisationnelles](organizational-units.md).
 

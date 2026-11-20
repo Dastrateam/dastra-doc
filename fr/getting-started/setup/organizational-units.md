@@ -102,7 +102,7 @@ Exemple :
 
 L'onglet **Organigramme** affiche graphiquement vos entités et départements. Vous pouvez y réaliser la plupart des opérations disponibles dans la liste.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Vue Organigramme des unités organisationnelles"><figcaption><p>La vue Organigramme</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Vue Organigramme des unités organisationnelles"><figcaption><p>La vue Organigramme</p></figcaption></figure>
 
 ### Filtrer l'organigramme
 

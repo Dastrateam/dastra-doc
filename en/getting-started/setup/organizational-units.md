@@ -102,7 +102,7 @@ Example:
 
 The **Organigram** tab shows your entities and departments graphically. You can perform most of the operations available in the list from there.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigram view of the organizational units"><figcaption><p>The Organigram view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Organigram view of the organizational units"><figcaption><p>The Organigram view</p></figcaption></figure>
 
 ### Filter the organigram
 
