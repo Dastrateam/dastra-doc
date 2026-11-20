@@ -79,6 +79,7 @@
       * [Les compétences](features/general/ai-assistant/agents/skills.md)
       * [Suivre les exécutions](features/general/ai-assistant/agents/inbox.md)
     * [Le serveur MCP](features/general/ai-assistant/mcp.md)
+    * [Artefacts](features/general/ai-assistant/artifacts.md)
   * [Modèles e-mail](features/general/email-templates.md)
   * [Discussions internes](features/general/discussions.md)
   * [FAQ](features/general/faq.md)

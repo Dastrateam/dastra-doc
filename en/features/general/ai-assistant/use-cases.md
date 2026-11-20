@@ -35,7 +35,7 @@ Quickly generate a processing activity in the format expected by Dastra from a s
 ### Generate a privacy notice
 
 1. Go to the editing page of a processing activity
-2. In section **11. Documentation**, click **Generate a privacy notice**
+2. In section **11. Documentation**, click **Generate information notice**
 3. Choose the desired format (you can customize the instructions by selecting **Custom**) and the **Notice language**; the interface language is offered by default
 4. Click **Generate**: the preview lets you copy the text of each tab, or click **Export** to get a PDF, Word, HTML or Markdown file
 5. In the **Export information notice** window, the **Add this file to the attachments of this data processing** option, enabled by default, adds the exported file to the attachments of the processing activity; each export creates a new attachment
@@ -139,8 +139,8 @@ In the builder of a saved questionnaire template, click **Translate questionnair
 Generate responses in multiple languages, with customization options (length, formal or informal tone, etc.).
 
 1. Open a request currently being processed
-2. Fill in the information up to the **Communication / Transmission** step
-3. Click **Generate with AI**: the assistant generates a response based on the following information:
+2. Go to the **Response** section
+3. Click **Generate with AI**: the **Requests AI Chatbot** window opens and the assistant generates a response based on the following information:
    * First and last name of the requester
    * Request message
    * Language to use
@@ -150,7 +150,7 @@ Generate responses in multiple languages, with customization options (length, fo
    * Request date and number of days remaining
    * Request status and ID
 4. Edit the proposed text or use the reformulation options (shorten, lengthen, change tone)
-5. Click **Validate this message**, add any attachments, then click **Send**
+5. Click **Use this message**, then send it from Dastra
 
 {% hint style="info" %}
 A limit on the number of calls per minute is in place for this feature.
@@ -214,7 +214,7 @@ The same approach exists for AI models: describe the model (name, publisher, etc
 
 ### Generate an information notice for an AI system
 
-From an AI system record, click **Generate a notice** to automatically produce the information document intended for users or data subjects.
+In the **Documentation** tab of an AI system record, click **Generate your information notice** to automatically produce the information document intended for users or data subjects.
 
 ### Generate the role justification
 

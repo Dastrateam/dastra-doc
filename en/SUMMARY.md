@@ -79,6 +79,7 @@
       * [Skills](features/general/ai-assistant/agents/skills.md)
       * [Tracking runs](features/general/ai-assistant/agents/inbox.md)
     * [The MCP server](features/general/ai-assistant/mcp.md)
+    * [Artifacts](features/general/ai-assistant/artifacts.md)
   * [Email templates](features/general/email-templates.md)
   * [Internal discussions](features/general/discussions.md)
   * [FAQ](features/general/faq.md)

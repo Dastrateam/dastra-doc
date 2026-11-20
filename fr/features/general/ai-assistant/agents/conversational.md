@@ -8,7 +8,7 @@ description: >-
 
 Un agent conversationnel est un assistant de chat que vous spécialisez sur un sujet : un assistant DPO qui ne répond qu'à partir du registre, un assistant achats qui vérifie les contrats fournisseurs, un assistant sécurité qui aide à qualifier un incident.
 
-Rendez-vous dans **Réglages espace de travail > Agents IA**, cliquez sur **Créer un agent**, puis sur **Agent conversationnel**.
+Rendez-vous dans **Automatisation** > **Dastra AI** > **Agents**, cliquez sur **Créer un agent**, puis sur **Agent conversationnel**.
 
 ***
 
@@ -16,7 +16,7 @@ Rendez-vous dans **Réglages espace de travail > Agents IA**, cliquez sur **Cré
 
 Le nom et la description identifient l'agent dans la liste et dans le sélecteur d'agents. Vous pouvez également lui donner un **logo**, qui servira d'avatar dans la conversation.
 
-Le nom est limité à 120 caractères, la description à 1000.
+Le nom est limité à 120 caractères. La description, limitée à 3000 caractères, accepte une mise en forme Markdown de base.
 
 ### Configuration du chat
 
@@ -49,22 +49,20 @@ Les questions suggérées affichées sous le message d'accueil. Elles servent de
 
 ### Outils
 
-Par défaut, un agent a accès à **tous** les outils. Répondez **Oui** à « Souhaitez-vous personnaliser la liste des outils utilisables par cet agent ? » pour restreindre cette liste.
+Par défaut, un agent a accès à **tous** les outils. Chaque groupe ci-dessous propose trois options : **Tout**, **Aucune** et **Personnalisé**. Choisissez **Personnalisé** pour n'activer que les outils voulus. Un agent a besoin d'au moins un outil.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Sélecteur d&#x27;outils séparé en outils de lecture et outils de modification"><figcaption><p>Les outils sont regroupés en outils de lecture et outils de modification</p></figcaption></figure>
 
 Les outils sont séparés en deux groupes :
 
-* **Outils de lecture** : recherche dans l'espace de travail, lecture d'une fiche, lecture des commentaires et des fichiers, consultation de la documentation Dastra et du corpus réglementaire, recherche sur le web.
-* **Outils de modification** : création et mise à jour de fiches, ajout de commentaires, changement d'étape de workflow, création de tâches et de tags, planification et remplissage de questionnaires.
+* **Outils de lecture** : recherche dans l'espace de travail, la documentation Dastra, le corpus réglementaire et le web, parcours et lecture des fiches, des commentaires, des fichiers et des questionnaires, construction d'[artefacts](../artifacts.md), export de fiches.
+* **Outils de modification** : création et mise à jour de fiches, exécution d'actions de fiche comme le changement d'étape de workflow, ajout de commentaires, création de plans d'actions et de tags, planification et remplissage de questionnaires, rédaction de documents, liaison de fichiers.
+
+Poser une question et vous emmener vers une page de Dastra sont toujours disponibles dans une conversation : ces outils ne figurent pas dans la liste.
 
 {% hint style="warning" %}
 Restreindre les outils est la façon la plus sûre de cadrer un agent. Un assistant destiné à répondre à des questions n'a besoin d'aucun outil de modification : ne lui en donnez pas.
 {% endhint %}
-
-### Utilisateurs notifiés
-
-Les personnes qui recevront une notification Dastra à la fin d'une exécution de l'agent.
 
 ***
 
@@ -72,12 +70,12 @@ Les personnes qui recevront une notification Dastra à la fin d'une exécution d
 
 Dans la conversation, un sélecteur permet de basculer entre deux modes :
 
-* **Question** : l'agent est en lecture seule. Il peut chercher, lire et analyser, mais rien n'est modifié.
+* **Question** : l'agent est en lecture seule. Il peut chercher et lire, mais rien n'est modifié.
 * **Édition** : l'agent peut créer et modifier des fiches. Les outils de modification ne sont disponibles que dans ce mode.
 
 Le mode Édition dépend de votre offre et de la permission correspondante. Si votre offre ne l'inclut pas, l'option **Édition** est verrouillée. Sans la permission d'écriture de l'assistant, le sélecteur n'apparaît pas. Dans les deux cas, les outils de modification restent inactifs, même s'ils sont cochés dans la définition de l'agent.
 
-Dans la conversation, chaque outil de modification demande votre confirmation avant de s'exécuter. L'agent ne peut ni supprimer ni anonymiser une fiche : ces actions ne lui sont pas proposées.
+Dans la conversation, chaque outil de modification affiche une carte **Autorisation requise** avant de s'exécuter : choisissez **Approuver**, **Toujours approuver pour cette session** ou **Refuser**. L'agent ne peut ni supprimer ni anonymiser une fiche : ces actions ne lui sont pas proposées.
 
 ***
 
@@ -87,17 +85,18 @@ L'**aperçu du chat**, à droite de l'éditeur, est une vraie conversation avec 
 
 ### Utiliser l'agent au quotidien
 
-Une fois l'agent **Actif**, les utilisateurs de l'espace de travail y accèdent :
+Une fois l'agent activé, les utilisateurs de l'espace de travail qui peuvent exécuter les agents personnalisés y accèdent :
 
 * depuis le panneau **Dastra AI**, en bas à droite de l'écran ;
 * avec le raccourci clavier **Ctrl+J** (**Cmd+J** sur Mac) ;
-* depuis la page plein écran de Dastra AI.
+* depuis la page Dastra AI, dans **Automatisation** > **Dastra AI** > **Conversations**, où les agents sont listés sous **Agents** ;
+* avec **Ouvrir dans le chat**, dans la fenêtre de détails de l'agent dans la liste.
 
 Le sélecteur **Choisir un agent**, en haut de la conversation, permet de passer d'un agent à l'autre.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-chat.png" alt="Conversation avec un agent personnalisé affichant son message d&#x27;accueil et ses amorces"><figcaption><p>L'agent affiche son message d'accueil et ses amorces de conversation</p></figcaption></figure>
 
-Chaque réponse peut être notée d'un pouce vers le haut ou vers le bas, avec un commentaire. Ces retours vous aident à ajuster l'instruction de l'agent.
+Chaque réponse peut être notée avec **Bonne réponse** ou **Mauvaise réponse**. Une mauvaise réponse ouvre une fenêtre où vous pouvez ajouter un commentaire.
 
 ***
 

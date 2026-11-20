@@ -28,7 +28,7 @@ En particulier :
 
 **Les évaluations de conformité sont des aides à l'analyse.** Les scores et recommandations produits par l'IA reposent uniquement sur les informations enregistrées dans votre espace de travail. Ils reflètent la qualité de cette documentation, et non un avis juridique indépendant.
 
-**Vous gardez le contrôle.** Aucun résultat généré par l'IA n'est appliqué ou communiqué automatiquement. Chaque résultat nécessite une action humaine délibérée pour être utilisé.
+**Vous gardez le contrôle.** Aucun résultat généré par l'IA n'est appliqué ou communiqué automatiquement. Chaque résultat nécessite une action humaine délibérée pour être utilisé. La seule exception est un [agent autonome](agents/autonomous.md) que vous configurez : il s'exécute sans que personne ne le surveille et applique les modifications que ses outils de modification permettent, c'est pourquoi vous choisissez vous-même ces outils.
 {% endhint %}
 
 ## Protection des données et confidentialité
@@ -54,7 +54,11 @@ Pour un guide pas à pas de chaque fonctionnalité, consultez la page [Cas d'usa
 
 ## Dastra AI, agents et serveur MCP
 
-Au-delà de la génération de contenu, Dastra AI propose un mode conversationnel que vous interrogez depuis le tableau de bord ou depuis le bouton **Ouvrir Dastra AI** en bas à droite de l'écran. Vous pouvez aussi créer vos propres [agents](agents/README.md), conversationnels ou autonomes, et connecter vos outils d'IA à Dastra avec le [serveur MCP](mcp.md). Ces fonctionnalités dépendent de l'offre de votre organisation et des permissions de chaque utilisateur.
+Au-delà de la génération de contenu, Dastra AI propose un mode conversationnel que vous interrogez depuis le tableau de bord, depuis le bouton **Ouvrir Dastra AI** en bas à droite de l'écran ou depuis l'entrée **Dastra AI** du menu **Automatisation**. Vous pouvez aussi créer vos propres [agents](agents/README.md), conversationnels ou autonomes, conserver les fichiers produits par l'assistant sous forme d'[artefacts](artifacts.md), et connecter vos outils d'IA à Dastra avec le [serveur MCP](mcp.md). Ces fonctionnalités dépendent de l'offre de votre organisation et des permissions de chaque utilisateur.
+
+L'entrée **Dastra AI** du menu **Automatisation** regroupe le chat en grand (**Conversations**, avec la liste des **Artefacts**), **Agents**, **Boîte de réception** et **Compétences**. Les trois dernières apparaissent lorsque votre offre inclut les agents personnalisés et que votre rôle les autorise.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="L'entrée Dastra AI du menu Automatisation"><figcaption><p>Automatisation &#x3E; Dastra AI</p></figcaption></figure>
 
 Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit dans [Comment ça marche ?](how-it-works.md#credits-et-quotas-ia).
 
@@ -62,27 +66,51 @@ Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit
 
 **Dastra AI** répond à vos questions sur votre espace de travail dans une conversation. Il consulte vos fiches avec des outils en lecture seule : vous pouvez demander un résumé, la liste des demandes en retard ou les traitements qui n'ont pas d'AIPD.
 
-Pour répondre, Dastra AI peut aussi s'appuyer sur la base réglementaire indexée par Dastra, sur la documentation Dastra et sur une recherche web. En mode Édition, il peut créer des fiches, modifier des champs, créer un plan d'actions, un questionnaire, un commentaire ou un tag, et lancer des actions de fiche comme le changement d'étape de workflow. Il peut vous poser des questions de précision avant d'agir et vous diriger vers la fiche concernée.
+Pour répondre, Dastra AI peut aussi s'appuyer sur la base réglementaire indexée par Dastra, sur la documentation Dastra et sur une recherche web. En mode Édition, il peut créer des fiches, modifier des champs, créer un plan d'actions, un questionnaire, un commentaire ou un tag, et lancer des actions de fiche comme le changement d'étape de workflow. Il peut construire des [artefacts](artifacts.md), vous poser des questions de précision avant d'agir et vous diriger vers la fiche concernée.
 
-1. Cliquez sur **Ouvrir Dastra AI**, en bas à droite de l'écran, ou appuyez sur **Ctrl+J** (**Cmd+J** sur Mac).
+1. Cliquez sur **Ouvrir Dastra AI**, en bas à droite de l'écran, ou appuyez sur **Ctrl+J** (**Cmd+J** sur Mac). Sur le tableau de bord, vous pouvez aussi saisir votre question dans la zone de message sous **Comment puis-je vous aider aujourd'hui ?** : le panneau s'ouvre et répond.
 2. Saisissez votre question, ou choisissez l'une des **Suggestions**. Elles changent selon la page où vous êtes : la fiche consultée, le registre, les demandes, les systèmes d'IA.
 3. Lisez la réponse. Lorsque l'assistant s'appuie sur vos fiches, il affiche ses étapes et les cite. Utilisez les **Suggestions de questions** pour poursuivre.
 
 <figure><img src="../../../.gitbook/assets/general-ai-chat-1.png" alt="Le panneau Dastra AI sur un traitement, avec les suggestions et la zone de message"><figcaption><p>Le panneau Dastra AI, avec le menu + ouvert</p></figcaption></figure>
 
+La fiche ou le registre que vous consultez est transmis à l'assistant comme contexte : vous pouvez demander « résume ce traitement » sans le nommer. Une visite guidée du panneau est disponible : cliquez sur **Afficher le guide**, l'icône d'information de l'en-tête du panneau.
+
 Le panneau propose plusieurs outils :
 
-* **Basculer en plein écran** étend le panneau à tout l'écran. Un lien vers la page de l'agent IA d'un espace de travail ouvre l'assistant en plein écran, puis revient au tableau de bord de cet espace.
-* **Nouvelle conversation** démarre une conversation vierge. La liste des conversations conserve les précédentes : renommez-les ou supprimez-les depuis cette liste. Supprimer une conversation supprime tous ses messages.
-* **Choisir un agent** passe de l'assistant standard aux [agents](agents/README.md) activés dans votre espace de travail.
-* **Ajouter du contexte** et **Joindre un fichier** donnent à l'assistant une fiche ou un document sur lequel travailler. Saisissez `@` pour mentionner une fiche ou un utilisateur.
-* Saisissez `/` ou cliquez sur **Compétences** pour lancer une [compétence](agents/skills.md), un prompt réutilisable.
+* **Ouvrir en grand** ouvre la conversation sur la page Dastra AI, dans le menu **Automatisation**, où vos conversations sont listées à gauche. Les anciens liens vers la page de l'agent IA d'un espace de travail mènent à la même page.
+* **Ancrer à droite** place le panneau dans une colonne à côté de la page, **Détacher** le replace par-dessus la page et **Réduire** le ferme. L'ancrage est proposé sur les écrans d'au moins 1 480 pixels de large. Dastra mémorise votre choix.
+* **Nouvelle conversation** démarre une conversation vierge. La liste des conversations conserve les précédentes, regroupées par date, avec une zone de recherche : renommez-les ou supprimez-les depuis cette liste. Supprimer une conversation supprime tous ses messages.
+* **Choisir un agent** passe du **Chat standard** aux [agents](agents/README.md) activés dans votre espace de travail.
+* **Ajouter du contexte** donne à l'assistant une fiche ou un utilisateur sur lequel travailler. Saisissez `@` dans le message pour mentionner une fiche ou un utilisateur.
+* **Joindre un fichier**, ou déposez un fichier dans la zone de message. Dastra AI lit lui-même les fichiers PDF, PNG et JPEG. Les fichiers CSV, XLSX, DOCX, JSON, TXT et Markdown sont acceptés aussi, mais seule l'exécution de code peut les ouvrir, lorsqu'elle est disponible. Un fichier est limité à 10 Mo.
+* **Mes artefacts**, dans le menu **+**, ouvre la liste des [artefacts](artifacts.md) de l'espace de travail.
+* Saisissez `/` ou cliquez sur **Compétences** pour lancer une [compétence](agents/skills.md), un prompt réutilisable. Un message applique au plus cinq compétences.
 * **Dicter un message** enregistre votre voix et la transcrit dans la zone de message. Votre navigateur demande l'accès au micro la première fois.
-* Évaluez une réponse avec **Bonne réponse** ou **Mauvaise réponse**, et ajoutez un commentaire, pour envoyer un retour à Dastra.
+* **Copier** place une réponse dans votre presse-papiers.
+* Évaluez une réponse avec **Bonne réponse** ou **Mauvaise réponse**. Une **Mauvaise réponse** ouvre une fenêtre où vous pouvez ajouter un commentaire. Dastra enregistre la note et le commentaire avec le message.
+
+Dastra restaure ce que vous faisiez après un rechargement de la page : le texte en cours de saisie et, si votre dernier échange date de moins de six heures, la conversation.
+
+Lorsqu'une conversation s'allonge, un indicateur **Contexte** apparaît près de la zone de message dès 50 % de la place disponible. À partir de 80 %, l'indicateur devient orange et propose une nouvelle conversation. L'envoi reste possible, mais l'assistant peut perdre le début de la conversation une fois la place épuisée.
 
 ### Modes Question et Édition
 
-En mode **Question**, l'assistant lit seulement : rien ne change dans votre espace de travail. En mode **Édition**, il peut aussi créer et modifier des fiches, et demande votre confirmation avant d'appliquer une modification. Le sélecteur de mode apparaît pour les utilisateurs qui ont la permission d'écriture de l'assistant. Le mode **Édition** nécessite l'option correspondante dans l'offre de votre organisation. Sans elle, l'option est verrouillée.
+En mode **Question**, l'assistant lit seulement : rien ne change dans votre espace de travail. En mode **Édition**, il peut aussi créer et modifier des fiches. Le sélecteur de mode apparaît pour les utilisateurs qui ont la permission d'écriture de l'assistant. Le mode **Édition** nécessite l'option correspondante dans l'offre de votre organisation. Sans elle, l'option est verrouillée.
+
+**Outils disponibles en mode Question.** Recherche dans l'espace de travail, la documentation, les réglementations et le web. Parcours et lecture des fiches, commentaires, fichiers, unités organisationnelles, questionnaires et du profil de l'espace de travail. Inspection de la structure d'un type de fiche, de ses champs modifiables et de ses actions disponibles. Liste des utilisateurs, des tags, des étapes de workflow et des catégories de réglementation. Export de fiches, construction d'[artefacts](artifacts.md), exécution de code (lorsqu'elle est disponible) et délégation d'une sous-tâche. L'assistant peut aussi vous poser des questions et vous emmener vers une page de Dastra.
+
+**Outils ajoutés par le mode Édition.** Création d'une fiche, modification d'une ou plusieurs fiches, exécution d'une action de fiche (archiver, restaurer, cloner, changer l'étape de workflow, etc.), ajout d'un commentaire, création d'un plan d'actions ou d'un tag, planification et remplissage d'un questionnaire, rédaction d'un document, liaison ou enregistrement d'un fichier, rédaction d'une fiche à partir d'une description, analyse d'une fiche et création ou modification d'un agent. La suppression et l'anonymisation ne sont pas proposées.
+
+Avant d'exécuter l'un de ces outils, Dastra AI affiche une carte **Autorisation requise** qui nomme l'outil. Cliquez sur **Voir les arguments** pour voir ce qu'il s'apprête à envoyer, puis choisissez :
+
+* **Approuver** pour exécuter l'outil cette fois ;
+* **Toujours approuver pour cette session** pour ne plus être sollicité pour les outils de cette conversation ;
+* **Refuser** pour refuser.
+
+<figure><img src="../../../.gitbook/assets/v3-ai-confirmation-1.png" alt="La carte Autorisation requise de Dastra AI"><figcaption><p>La carte d'autorisation du mode Édition</p></figcaption></figure>
+
+Si vous envoyez un autre message pendant qu'une carte est en attente, la carte n'est plus pertinente.
 
 {% hint style="info" %}
 Dastra AI est disponible lorsque votre offre l'inclut et que votre rôle a la permission de l'assistant IA. Les messages consomment le quota mensuel de crédits IA, et une bannière vous prévient lorsque le quota est presque épuisé.
@@ -102,7 +130,7 @@ Lors de l'utilisation d'une fonctionnalité bêta :
 Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une décision de conformité. Elles sont conçues pour accompagner une revue humaine approfondie, non pour la remplacer.
 {% endhint %}
 
-**Actuellement en bêta** : l'analyse de conformité par l'IA, disponible sur les traitements, les systèmes d'IA, les contrats, les actifs, les acteurs et les synthèses de réponses d'audit. Ouvrez-la avec le bouton **Analyse IA** de la fiche, ou demandez à Dastra AI d'analyser une fiche. Le résultat donne une note de A à F, les critères analysés et des tâches suggérées. Vous pouvez l'imprimer, le relancer ou le poursuivre dans la conversation.
+**Actuellement en bêta** : l'analyse de conformité par l'IA, disponible sur les traitements, les systèmes d'IA, les contrats, les actifs, les acteurs et les synthèses de réponses d'audit. Ouvrez-la avec le bouton **Analyse IA** de la fiche, ou demandez à Dastra AI d'analyser une fiche en mode Édition. Le résultat donne une note de A à F, les critères analysés et des tâches suggérées. Vous pouvez l'imprimer, le relancer ou le poursuivre dans la conversation.
 
 ***
 
@@ -124,4 +152,8 @@ Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une
 
 {% content-ref url="mcp.md" %}
 [serveur-mcp.md](mcp.md)
+{% endcontent-ref %}
+
+{% content-ref url="artifacts.md" %}
+[artefacts.md](artifacts.md)
 {% endcontent-ref %}

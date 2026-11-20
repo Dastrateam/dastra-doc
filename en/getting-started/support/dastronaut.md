@@ -14,6 +14,6 @@ The button with a speech bubble icon (**Chat with us**) opens the support chat. 
 
 ## The AI agent
 
-The **Dastra AI** button (**Open Dastra AI**) opens the Dastra AI assistant. It appears only if your organization has access to the AI feature. To learn what it does, how to use it and how to create your own agents, see [AI Assistant](../../features/general/ai-assistant/README.md).
+The **Dastra AI** button (**Open Dastra AI**) opens the Dastra AI assistant. It appears only if your organization has access to the AI feature and your role gives you access to it. To learn what it does, how to use it and how to create your own agents, see [AI Assistant](../../features/general/ai-assistant/README.md).
 
-The buttons are hidden during a chat conversation or while the AI agent panel is open, so that they do not overlap.
+The buttons are hidden during a chat conversation or while the AI agent panel is open, so that they do not overlap. The **Open Dastra AI** button is not displayed on the Dastra AI page (**Automation** > **Dastra AI**), where the conversation takes the place of the panel.

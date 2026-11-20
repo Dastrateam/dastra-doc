@@ -106,11 +106,11 @@ Dastra keeps a history of AI assistant calls. The **AI usage** card of **Organiz
 | **Duration** | Processing time for the request |
 | **User** | Workspace member who triggered the generation |
 
-The **Credits by user** and **Credits by operation** tabs total the consumption of the current month.
+The **Credits by user** and **Credits by operation** tabs total the consumption over a period that you choose with the period picker. It starts on the first day of the current month.
 
 ## AI credits and quotas
 
-Dastra measures AI assistant consumption in **AI credits** (not tokens). The quota is monthly and shared by all the workspaces of the organization: it depends on the plan and subscription, and renews automatically on the first day of each month. Conversations with Dastra AI and agent runs use the same quota.
+Dastra measures AI assistant consumption in **AI credits**. The quota is monthly and shared by all the workspaces of the organization: it depends on the plan and subscription, and renews automatically on the first day of each month. Conversations with Dastra AI and agent runs use the same quota.
 
 A successful generation consumes credits according to the type of operation. A failed or running generation is never counted.
 
@@ -120,7 +120,6 @@ A successful generation consumes credits according to the type of operation. A f
 | Risk analysis, business value analysis, DPIA criteria assessment, test evidence verification, data breach post-mortem, custom report | 2 |
 | Answering a questionnaire and translating a questionnaire | 1 per 25 questions |
 | Automatic document redaction | 1 per document segment sent |
-| Message sent to Dastra AI or to an agent | 1 per message, whatever the number of tools used |
 
 The **Usage** card of **Organization settings** > **Dastra AI** shows the consumption of the current month, the quota of the plan and the renewal date. The **progress bar** changes color according to the share of the quota consumed:
 
@@ -130,7 +129,7 @@ The **Usage** card of **Organization settings** > **Dastra AI** shows the consum
 
 When the monthly quota is reached, a message informs you and offers to contact the Dastra team.
 
-In the Dastra AI panel, all users see the quota status: a discreet counter from 50%, an orange banner from 80%, then a red banner at 100%, which blocks sending new messages (the history stays available).
+In the Dastra AI panel, all users see the quota status: a discreet counter of the remaining credits from 50% of the quota, an orange banner from 80%, then a red banner at 100%, which blocks sending new messages (the history stays available). A message sent while credits remain is processed in full, even if it takes the consumption past the quota.
 
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Usage card of the AI assistant with the credit quota progress bar and the explanation of the calculation"><figcaption><p>Tracking of current-month AI credit consumption</p></figcaption></figure>
 
@@ -183,7 +182,7 @@ Dastra transmits **no data from your workspace** to the AI model unless you init
 | **Workflow rule description** | Object type, trigger, action and conditions of the rule, and the text already entered | No, unless a condition contains a named value |
 | **HTTP action of a workflow rule** | Object type, instruction, pasted API documentation excerpt, columns of the object (name, label, type, possible values) and the current configuration (URL with parameter values masked, method, header names without their values, request body). Never record data or credentials | Unlikely, unless the pasted documentation or the request body contains some |
 | **Integration field mapping** | Connector, source fields and Dastra target columns (key, label, type, possible values), existing mapping rules. Metadata only, without sample data | No |
-| **Chat with Dastra AI or an agent** | Your message and the conversation history, the agent's instructions, the values of its input fields, the result of the tools (content of the records you can access) and attachments. Images and PDFs are sent to the model; other formats are not read. The masking filter is not applied. Conversations are saved in Dastra, and you can delete them; attachments are kept for 180 days | **Yes**, depending on the records consulted and the attachments |
+| **Chat with Dastra AI or an agent** | Your message and the conversation history, the agent's instructions, the values of its input fields, the result of the tools (content of the records you can access) and attachments. Images and PDFs are sent to the model; other formats are only opened by code execution, where it is available. The masking filter is not applied. Conversations are saved in Dastra, and you can delete them; attachments are kept for 180 days | **Yes**, depending on the records consulted and the attachments |
 
 With the [MCP server](mcp.md), the data read is sent to the AI tool you connected, subject to its own terms, and not to a Dastra model.
 
