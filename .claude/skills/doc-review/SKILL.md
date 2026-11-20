@@ -77,7 +77,10 @@ Read every page in scope in full. The script finds patterns; the reading pass ju
    figures, hints and embeds. Say what is missing or extra (a section, a step, an item of a list, a video). When
    the French page is the one behind or has its own defects, say so under "Page française source": it is fixed
    in a French change, not in the translation. Do not translate missing content during a review unless asked.
-6. **Facts.** Do not rewrite a claim about product behavior, a limit, a price or a legal obligation. If one
+6. **Layout.** Against the "Layout" rules of `style.md`: images without `width` that GitBook stretches, a
+   tall screenshot alone under its steps instead of beside them, a landing page without cards, a list of more
+   than eight items, alternatives that would read better as tabs. Propose the block; do not rewrite the text.
+7. **Facts.** Do not rewrite a claim about product behavior, a limit, a price or a legal obligation. If one
    looks wrong or outdated, you may read the app code to make the question precise, but report it as a
    question: the user decides.
 
