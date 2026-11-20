@@ -4,8 +4,6 @@ description: Learn how to create and set up entities and departments in Dastra.
 
 # Create and set up organizational units
 
-{% embed url="https://www.youtube.com/watch?v=QyEliXjoMJ0" %}
-
 ## Introduction
 
 Organizational units structure your workspace. Two types of organizational units can be created:

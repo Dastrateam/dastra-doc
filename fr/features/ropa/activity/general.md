@@ -5,8 +5,6 @@ description: >-
 
 # Général
 
-{% embed url="https://youtu.be/wkRBxYOcVmc" %}
-
 [**L'article 30 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4) impose à chaque responsable du traitement de tenir un registre des activités de traitement dont il porte la responsabilité. Ce registre est le premier élément d'« accountability » permettant de démontrer le respect du RGPD. Le registre des activités de traitement permet de recenser vos traitements de données et de disposer d'une vue d'ensemble de ce que vous faites avec les données personnelles.
 
 L'activité de traitement est l'activité « parapluie » qui englobe l'ensemble des finalités poursuivies dans le cadre de l'activité.

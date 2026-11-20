@@ -54,8 +54,6 @@ Dastra prend en charge les deux approches. Pour une approche descendante, créez
 
 ## Établir votre registre
 
-{% embed url="https://www.youtube.com/watch?v=gqtAPok9ZuU" %}
-
 Pour apprendre à concevoir et à gérer votre registre des traitements, commencez ici :
 
 {% content-ref url="establish.md" %}
@@ -81,8 +79,6 @@ Pour apprendre à partager le registre, consultez :
 {% endcontent-ref %}
 
 ## Agir sur plusieurs traitements à la fois
-
-{% embed url="https://youtu.be/0BQDHzyFl-Y" %}
 
 Dans la vue **Tableau**, cochez les cases à gauche des traitements sur lesquels vous voulez agir. Le bouton **Choisir une action groupée** apparaît alors au-dessus de la liste. Selon vos permissions et les fonctionnalités activées dans votre espace de travail, il propose les actions suivantes :
 
@@ -120,8 +116,6 @@ Deux autres entrées du menu **Traitements de données** donnent accès aux ques
 * **Privacy by design** liste les questionnaires de demande de création de traitement. Ils permettent de [collecter des projets de traitements](../trust-center/creation-questionnaires.md) depuis un Trust Center : une fois la réponse validée, ses données peuvent devenir un traitement.
 
 ## Pour aller plus loin
-
-{% embed url="https://www.youtube.com/watch?v=R_Z2m4sb-44" %}
 
 {% content-ref url="../../gdpr/concepts/ropa.md" %}
 [registre-de-traitement.md](../../gdpr/concepts/ropa.md)

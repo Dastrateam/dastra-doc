@@ -6,8 +6,6 @@ description: >-
 
 # Actifs
 
-{% embed url="https://youtu.be/cDB0qfqGaqU" %}
-
 Vous listez ici les actifs, internes ou externes à l'organisation (applications, logiciels, ressources, bâtiments, etc.), qui supportent l'exécution du traitement.
 
 _Par exemple, si vous utilisez un logiciel de relation client de type CRM, ajoutez-le à cette liste._

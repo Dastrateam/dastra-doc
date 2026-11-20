@@ -14,8 +14,6 @@ Pour accéder au module, ouvrez **Questionnaires** dans le menu de gauche. Le me
 
 ## Tutoriel utilisateur
 
-{% embed url="https://www.youtube-nocookie.com/embed/IHevXHniVvk" %}
-
 ## Répondre à un questionnaire qui vous est adressé
 
 Si vous êtes répondant ou approbateur, ouvrez **Questionnaires** > **Mes réponses aux questionnaires**. La liste n'affiche que les questionnaires qui vous sont adressés, avec leur échéance, leurs répondants, leur statut et leur taux de complétion. Un questionnaire qui a dépassé son échéance porte le badge **Expiré**.

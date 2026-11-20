@@ -6,10 +6,6 @@ description: >-
 
 # Champs personnalisés
 
-{% embed url="https://www.youtube-nocookie.com/embed/mDyJD-mnnL0" %}
-Comment utiliser les champs personnalisés dans Dastra
-{% endembed %}
-
 ## Dans quels cas utiliser les champs personnalisés
 
 Certaines informations propres à votre secteur ne figurent pas dans les champs natifs du registre des traitements, des exercices de droits, des tâches, etc. Les champs personnalisés vous permettent de créer vos propres champs de formulaire pour enrichir les données saisies.

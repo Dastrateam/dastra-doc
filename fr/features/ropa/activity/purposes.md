@@ -4,8 +4,6 @@ description: Indiquez ici les finalités du traitement de données.
 
 # Finalités
 
-{% embed url="https://youtu.be/JFiY1ydSiDg" %}
-
 ## Finalités d'un traitement
 
 Une **finalité** est l'objectif poursuivi par la mise en place de votre fichier. Elle indique à quoi le traitement de données personnelles va servir, sa raison d'être. Cet objectif doit être clair et compréhensible.

@@ -6,8 +6,6 @@ description: Apprenez à créer votre premier espace de travail dans Dastra.
 
 Cette page explique comment créer un espace de travail, y inviter les premiers utilisateurs, déclarer votre première entité et naviguer entre vos espaces.
 
-{% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=1" %}
-
 ## Connectez-vous à Dastra
 
 Commencez par vous connecter sur [app.dastra.eu](https://app.dastra.eu). Si vous n'avez pas encore de compte, demandez à un administrateur de votre organisation de vous inviter. Si votre organisation n'utilise pas encore Dastra, [demandez une démo](https://www.dastra.eu/fr/contacts/demo).
@@ -37,10 +35,6 @@ Pour reprendre la configuration d'un espace existant, cochez **Cloner les param�
 {% hint style="info" %}
 Une fois l'espace créé, vous pouvez configurer ses unités organisationnelles et inviter des utilisateurs.
 {% endhint %}
-
-{% embed url="https://youtu.be/a7sW-B_TeZ0" %}
-
-{% embed url="https://youtu.be/94K9ERenlo8" %}
 
 ### Invitez les premiers utilisateurs
 

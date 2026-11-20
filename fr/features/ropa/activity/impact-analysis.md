@@ -4,8 +4,6 @@ description: Évaluez l'impact du traitement sur la vie privée.
 
 # Analyse d'impact
 
-{% embed url="https://youtu.be/We7jZ2DpmLk" %}
-
 La section **Analyse d'impact** vous aide à évaluer si votre traitement doit faire l’objet d’une analyse d’impact relative à la protection des données (AIPD, appelée PIA dans Dastra), prévue par l’[**article 35 du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4#Article35).
 
 Cette section n'est disponible que pour les traitements en tant que **Responsable de traitement**.

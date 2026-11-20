@@ -6,8 +6,6 @@ description: >-
 
 # Import your data (Excel, Csv)
 
-{% embed url="https://www.youtube-nocookie.com/embed/XNcy3eudgZk?si=LadsT5mhFv-hubDT" %}
-
 ## Importing data into Dastra
 
 Dastra imports your own data from a spreadsheet file. In each list that supports it, start the import from the arrow of the create button, then **Import**.

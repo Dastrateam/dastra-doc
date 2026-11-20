@@ -8,8 +8,6 @@ Un modèle de questionnaire décrit les sections, les questions et les règles d
 
 ## Créer ou modifier un modèle de questionnaire
 
-{% embed url="https://youtu.be/bESwC6iMcI8" %}
-
 Pour créer un modèle, cliquez sur **Créer modèle** en haut de la liste **Modèles de questionnaires**. Le bouton est grisé lorsque vous avez atteint le nombre de modèles de votre abonnement.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-1.png" alt="Liste des modèles de questionnaires avec les boutons Planifier questionnaire et Créer modèle"><figcaption><p>La liste des modèles de questionnaires</p></figcaption></figure>
@@ -213,8 +211,6 @@ Pour supprimer un modèle, consultez [Supprimer un questionnaire ou un modèle](
 ## Les blocs d'analyse
 
 Les blocs d'analyse affichent un texte personnalisé en fonction du score du questionnaire ou des réponses apportées.
-
-{% embed url="https://youtu.be/Ot4OmgTKtrg" %}
 
 ## Pour aller plus loin
 

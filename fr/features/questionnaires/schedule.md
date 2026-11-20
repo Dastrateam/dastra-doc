@@ -10,8 +10,6 @@ Planifier un questionnaire consiste à envoyer un modèle à ses répondants, ou
 
 ## Lancer une planification
 
-{% embed url="https://youtu.be/YGU3yPRtQok" %}
-
 Une fois le modèle de questionnaire créé et personnalisé, cliquez sur **Planifier questionnaire**. Le bouton est disponible dans la liste **Modèles de questionnaires**, en haut de la page d'un modèle et, pour les questionnaires de type PIA, TIA ou LIA, depuis le traitement concerné (voir [AIPD / PIA](types/dpia.md)).
 
 La fenêtre **Planifier un questionnaire** propose quatre modes de création.
@@ -138,8 +136,5 @@ Pour les questionnaires de type PIA, vous pouvez lancer l'analyse d'impact depui
 
 ## Générer un plan d'actions à partir d'un questionnaire
 
-{% embed url="https://youtu.be/hPeM4mHOzww" %}
-
 ## Valider un questionnaire
 
-{% embed url="https://youtu.be/caEBTQTV2Yo" %}
