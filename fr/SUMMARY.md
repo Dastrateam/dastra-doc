@@ -49,6 +49,20 @@
   * [Demande de support](getting-started/support/request.md)
   * [Le processus de support client](getting-started/support/process.md)
 
+## Dastra AI <a href="#dastra-ai" id="dastra-ai"></a>
+
+* [Dastra AI](features/general/ai-assistant/README.md)
+  * [Les agents Dastra AI](features/general/ai-assistant/agents/README.md)
+    * [Créer un agent conversationnel](features/general/ai-assistant/agents/conversational.md)
+    * [Créer un agent autonome](features/general/ai-assistant/agents/autonomous.md)
+    * [Suivre les exécutions](features/general/ai-assistant/agents/inbox.md)
+  * [Les compétences](features/general/ai-assistant/agents/skills.md)
+  * [Artefacts](features/general/ai-assistant/artifacts.md)
+  * [Le serveur MCP](features/general/ai-assistant/mcp.md)
+  * [Cas d'usage](features/general/ai-assistant/use-cases.md)
+  * [Comment ça marche ?](features/general/ai-assistant/how-it-works.md)
+  * [FAQ](features/general/ai-assistant/faq.md)
+
 ## Exemples concrets <a href="#examples" id="examples"></a>
 
 * [Exemples concrets](examples/README.md)
@@ -70,17 +84,6 @@
   * [Gestion des tags](features/general/tags.md)
   * [Fusion d'éléments](features/general/merge.md)
   * [Champs personnalisés](features/general/custom-fields.md)
-  * [Assistant IA](features/general/ai-assistant/README.md)
-    * [Comment ça marche ?](features/general/ai-assistant/how-it-works.md)
-    * [Cas d'usage](features/general/ai-assistant/use-cases.md)
-    * [FAQ](features/general/ai-assistant/faq.md)
-    * [Les agents Dastra AI](features/general/ai-assistant/agents/README.md)
-      * [Créer un agent conversationnel](features/general/ai-assistant/agents/conversational.md)
-      * [Créer un agent autonome](features/general/ai-assistant/agents/autonomous.md)
-      * [Les compétences](features/general/ai-assistant/agents/skills.md)
-      * [Suivre les exécutions](features/general/ai-assistant/agents/inbox.md)
-    * [Le serveur MCP](features/general/ai-assistant/mcp.md)
-    * [Artefacts](features/general/ai-assistant/artifacts.md)
   * [Modèles e-mail](features/general/email-templates.md)
   * [Discussions internes](features/general/discussions.md)
   * [FAQ](features/general/faq.md)
