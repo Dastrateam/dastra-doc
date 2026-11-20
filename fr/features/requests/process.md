@@ -86,6 +86,8 @@ Vous pouvez compléter ou modifier les informations collectées via le formulair
 
 Lorsque la demande vient d'un formulaire de collecte, les champs renseignés par le demandeur (le message et l'adresse e-mail) sont verrouillés : ils ne peuvent pas être modifiés.
 
+Lorsque la [vérification du demandeur par SMS](advanced/requester-space.md#verifier-le-demandeur-par-sms) est activée, le champ **Téléphone** indique aussi si le numéro est vérifié. Un numéro saisi ou modifié ici n'est jamais considéré comme vérifié.
+
 Si d'autres demandes ont la même adresse e-mail, le panneau latéral affiche le lien **n demandes avec e-mail identique**. Il aide à repérer les doublons.
 
 ***
@@ -266,5 +268,6 @@ Chaque demande conserve l’historique complet :
 * Messages échangés.
 * Pièces jointes ajoutées.
 * Statut et avancement du traitement.
+* Avec la vérification par SMS : code envoyé, numéro vérifié, téléchargement validé, vérification bloquée et numéro modifié.
 
 Vous garantissez ainsi la traçabilité et la conformité en cas de contrôle.

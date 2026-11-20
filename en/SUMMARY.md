@@ -22,6 +22,7 @@
 ## 🧑‍🎓 GETTING STARTED
 
 * [🚀 Get started in 5 minutes](getting-started/quickstart.md)
+* [Navigate in Dastra](getting-started/navigation.md)
 * [Setting up](getting-started/setup/README.md)
   * [Key concepts](getting-started/setup/key-concepts.md)
   * [Sign in and manage authentication](getting-started/setup/login.md)

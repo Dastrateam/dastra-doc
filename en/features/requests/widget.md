@@ -40,6 +40,7 @@ Open a form and go to the **Settings** section. You define:
 * The **Name** of the widget and its **Organizational unit**.
 * The available request types, with the question **Which rights are concerned?**: **Default rights**, **Specific rights** (you then pick the types in **Choose specific request types**) or **No rights (simple form)**, which does not ask the person to choose a request type.
 * The links **Redirection link in case of success (after the identification phase)**, **Redirection link in case of an error (e.g. validation link expires)** and **Link to the privacy policy**. All three links are optional.
+* **Enable phone validation**, shown only when [requester verification by SMS](advanced/requester-space.md#verify-the-requester-by-sms) is on in the workspace: the phone field becomes required and the number is verified by SMS after the email address is validated.
 
 <figure><img src="../../.gitbook/assets/requests-widget-2.png" alt="Settings section of a form: name, organizational unit, request types and redirection links"><figcaption><p>Widget settings</p></figcaption></figure>
 

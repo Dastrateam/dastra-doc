@@ -198,7 +198,7 @@ Lorsque vous installez un modèle de la bibliothèque Dastra et que ce modèle e
 Le nombre de modèles disponibles dépend de votre souscription. Ce quota est partagé entre tous les espaces de travail de votre organisation. La corbeille des modèles compte dans ce quota : pensez à vider régulièrement les modèles inutilisés pour libérer des emplacements.
 {% endhint %}
 
-## Historique, export et contribution
+## Historique et export
 
 Dans l'éditeur, le menu à côté du bouton **Enregistrer** donne accès à plusieurs actions :
 
@@ -206,8 +206,7 @@ Dans l'éditeur, le menu à côté du bouton **Enregistrer** donne accès à plu
 * **Planifier questionnaire** ;
 * **Configurer** ;
 * **Historique d'activités** : consulter et restaurer les modifications précédentes du modèle ;
-* **Exporter** : télécharger le modèle (JSON, Excel, CSV, PDF, Word, HTML ou Markdown) ;
-* **Contribuer** : publier le modèle pour tous les utilisateurs de Dastra, pour les utilisateurs autorisés à contribuer.
+* **Exporter** : télécharger le modèle (JSON, Excel, CSV, PDF, Word, HTML ou Markdown).
 
 Pour supprimer un modèle, consultez [Supprimer un questionnaire ou un modèle](../delete.md).
 

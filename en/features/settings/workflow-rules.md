@@ -43,7 +43,7 @@ The number of workflow rules available depends on your plan, from **25 to 100 ru
 
 ## Creating a workflow rule
 
-1. In the side menu, open **Automations**, then **Workflow rules**.
+1. In the side menu, under **Automation**, click **Workflow rules**.
 2. Click **Create a workflow rule**.
 3. Choose **From scratch** to start from a blank canvas, or **From a template** (see [Template library](#template-library)).
 4. Enter the **Rule name** and the **Object type**, then confirm.
@@ -202,7 +202,7 @@ The **Execute an AI agent** action runs an [AI agent](../general/ai-assistant/ag
 
 Fill in the following fields:
 
-* **AI agent to execute**: only agents published in Agent mode are offered. If the list is empty, create an agent in the AI Agents module first.
+* **AI agent to execute**: only agents published in Agent mode are offered. If the list is empty, create an agent in **Automation** > **Dastra AI** > **Agents** first.
 * **Instruction message**: an optional message sent to the agent on every run. It accepts custom variables from the trigger object (type `{{`).
 * **Agent input fields**: the fields defined by the agent appear after you select it. Fill in at least the required ones.
 

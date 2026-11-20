@@ -78,7 +78,6 @@ Les notifications par e-mail sont organisées par **catégories**, une par type 
 | Relations génériques            | Création, suppression d'une relation                                                                                              |
 | Evaluation de risque            | Création, modification, changement d'état                                                                                         |
 | Point de contrôle               | Création, modification, revue                                                                                                     |
-| Contribution                    | Acceptation, refus                                                                                                                |
 | Acteur                          | Import, création, modification, changement de statut, suppression, revue                                                          |
 | Jeu de données                  | Import                                                                                                                            |
 | Actif                           | Import, création, modification, changement de statut, suppression, revue                                                          |

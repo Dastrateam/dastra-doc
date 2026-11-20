@@ -12,7 +12,7 @@ The dashboard is the first page you see when you enter a workspace. It summarize
 
 The screen has three areas:
 
-* **The left menu**: the workspace selector, which also shows your roles in the workspace, then the modules grouped under **Data inventory**, **Operations**, **Governance**, **Automations** and **Resources**. The **Invite a member** button and the **Workspace settings** entry are at the bottom of the menu. A module only appears if your subscription includes it and your permissions give you access to it.
+* **The left menu**: the workspace selector, which also shows your roles in the workspace, then the modules grouped under **Data inventory**, **Operations**, **Governance**, **Automation** and **Resources**. The **Invite a member** button and the **Workspace settings** entry are at the bottom of the menu. A module only appears if your subscription includes it and your permissions give you access to it.
 * **The central section**: above the tiles, depending on your permissions and subscription, you find the AI agent prompt (**How can I help you today?**), the card of the latest release note, the **Progression** card (the getting started guide) and the **Project presentation**, a free text that introduces the workspace to its users.
 * **The community tab**, on the right of the screen: it opens the **Upcoming webinars** panel. You can collapse the panel; the tab then stays on the right of the screen to reopen it, and your choice is remembered in your browser.
 
