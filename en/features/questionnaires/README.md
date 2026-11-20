@@ -30,6 +30,8 @@ When a questionnaire is addressed to several respondents, Dastra users or extern
 * **Answers of the others**: the answers they save appear on your screen without reloading the page. If you have an edit on the same question that is not saved yet, your edit is kept and is saved after the usual delay.
 * **Finalization**: when another respondent finalizes the questionnaire, a message tells you who did it and that the questionnaire no longer accepts answers. Click **Refresh** to open the page of the finalized questionnaire.
 
+<figure><img src="../../.gitbook/assets/v3-improvements-questionnaires-1.png" alt="Questionnaire answered by two respondents, with the Also answering line and the avatar next to the section"><figcaption><p>Two respondents at work: the Also answering line and the section avatars</p></figcaption></figure>
+
 Only the name and the avatar of the respondents are shared with the others. No email address is displayed.
 
 ## Create a template

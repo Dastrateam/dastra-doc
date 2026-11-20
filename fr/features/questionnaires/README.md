@@ -34,6 +34,8 @@ Lorsqu'un questionnaire est adressé à plusieurs répondants, utilisateurs Dast
 * **Réponses des autres** : les réponses qu'ils enregistrent s'affichent sur votre écran sans recharger la page. Si vous avez une modification non enregistrée sur la même question, elle est conservée et enregistrée après le délai habituel.
 * **Finalisation** : lorsqu'un autre répondant finalise le questionnaire, un message vous indique qui l'a fait et que le questionnaire n'accepte plus de réponses. Cliquez sur **Rafraîchir** pour ouvrir la page du questionnaire finalisé.
 
+<figure><img src="../../.gitbook/assets/v3-improvements-questionnaires-1.png" alt="Questionnaire rempli par deux répondants, avec la ligne Répond aussi et l'avatar à côté de la section"><figcaption><p>Deux répondants au travail : la ligne des autres répondants et les avatars des sections</p></figcaption></figure>
+
 Seuls le nom et l'avatar des répondants sont partagés avec les autres. Aucune adresse e-mail n'est affichée.
 
 ## Créer un modèle
