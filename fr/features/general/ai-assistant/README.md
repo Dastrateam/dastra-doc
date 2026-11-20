@@ -17,15 +17,17 @@ La disponibilité de chaque fonction dépend de l'offre de votre organisation, m
 
 ## Ce que vous pouvez faire avec Dastra AI
 
-* **Interroger votre espace de travail.** Demandez un résumé, la liste des demandes en retard ou les traitements qui n'ont pas de PIA. En mode Édition, Dastra AI crée et modifie aussi des fiches, après votre accord. Voir [Discuter avec Dastra AI](#discuter-avec-dastra-ai).
-* **Lancer une compétence.** Saisissez `/` dans la zone de message pour appliquer un prompt réutilisable, fourni par Dastra ou rédigé par votre équipe. Voir [Compétences](agents/skills.md).
-* **Créer vos propres agents.** Un agent conversationnel répond avec ses propres instructions et ses outils. Un agent autonome exécute une tâche seul, quand vous le lancez, selon une planification ou depuis une règle de workflow, et ses exécutions sont listées dans la **Boîte de réception**. Voir [Les agents Dastra AI](agents/README.md).
-* **Conserver des artefacts.** Les tableaux de bord, schémas et documents que Dastra AI construit dans une conversation sont enregistrés comme artefacts, que vous pouvez rouvrir et partager. Voir [Artefacts](artifacts.md).
-* **Connecter vos outils d'IA.** Claude, ChatGPT, Microsoft Copilot et d'autres outils accèdent à vos données Dastra par le serveur MCP. Voir [Le serveur MCP](mcp.md).
+<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Interroger votre espace de travail</strong></td><td>Demandez un résumé, la liste des demandes en retard ou les traitements qui n'ont pas de PIA. En mode Édition, Dastra AI crée et modifie aussi des fiches, après votre accord. Voir <a href="#discuter-avec-dastra-ai">Discuter avec Dastra AI</a>.</td></tr><tr><td><strong>Lancer une compétence</strong></td><td>Saisissez <code>/</code> dans la zone de message pour appliquer un prompt réutilisable, fourni par Dastra ou rédigé par votre équipe. Voir <a href="agents/skills.md">Compétences</a>.</td></tr><tr><td><strong>Créer vos propres agents</strong></td><td>Un agent conversationnel répond avec ses propres instructions et ses outils. Un agent autonome exécute une tâche seul, quand vous le lancez, selon une planification ou depuis une règle de workflow, et ses exécutions sont listées dans la <strong>Boîte de réception</strong>. Voir <a href="agents/README.md">Les agents Dastra AI</a>.</td></tr><tr><td><strong>Conserver des artefacts</strong></td><td>Les tableaux de bord, schémas et documents que Dastra AI construit dans une conversation sont enregistrés comme artefacts, que vous pouvez rouvrir et partager. Voir <a href="artifacts.md">Artefacts</a>.</td></tr><tr><td><strong>Connecter vos outils d'IA</strong></td><td>Claude, ChatGPT, Microsoft Copilot et d'autres outils accèdent à vos données Dastra par le serveur MCP. Voir <a href="mcp.md">Le serveur MCP</a>.</td></tr></tbody></table>
 
+{% columns %}
+{% column %}
 Vous ouvrez Dastra AI depuis le tableau de bord, avec le bouton **Ouvrir Dastra AI** en bas à droite de l'écran, avec **Ctrl+J** (**Cmd+J** sur Mac), ou depuis l'entrée **Dastra AI** du menu **Automatisation**. Cette entrée regroupe le chat en grand (**Conversations**, avec la liste des **Artefacts**), **Agents**, **Boîte de réception** et **Compétences**. Les trois dernières apparaissent lorsque votre offre inclut les agents personnalisés et que votre rôle les autorise.
+{% endcolumn %}
 
-<figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="L'entrée Dastra AI du menu Automatisation"><figcaption><p>Automatisation &#x3E; Dastra AI</p></figcaption></figure>
+{% column %}
+<figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="L'entrée Dastra AI du menu Automatisation" width="300"><figcaption><p>Automatisation &#x3E; Dastra AI</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit dans [Comment ça marche ?](how-it-works.md#credits-et-quotas-ia).
 
@@ -35,24 +37,38 @@ Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit
 
 Pour répondre, Dastra AI peut aussi s'appuyer sur la base réglementaire indexée par Dastra, sur la documentation Dastra et sur une recherche web. En mode Édition, il peut créer des fiches, modifier des champs, créer un plan d'actions, un questionnaire, un commentaire ou un tag, et lancer des actions de fiche comme le changement d'étape de workflow. Il peut construire des [artefacts](artifacts.md), vous poser des questions de précision avant d'agir et vous diriger vers la fiche concernée.
 
+{% columns %}
+{% column %}
 1. Cliquez sur **Ouvrir Dastra AI**, en bas à droite de l'écran, ou appuyez sur **Ctrl+J** (**Cmd+J** sur Mac). Sur le tableau de bord, vous pouvez aussi saisir votre question dans la zone de message sous **Comment puis-je vous aider aujourd'hui ?** : le panneau s'ouvre et répond.
 2. Saisissez votre question, ou choisissez l'une des **Suggestions**. Elles changent selon la page où vous êtes : la fiche consultée, le registre, les demandes, les systèmes d'IA.
 3. Lisez la réponse. Lorsque l'assistant s'appuie sur vos fiches, il affiche ses étapes et les cite. Utilisez les **Suggestions de questions** pour poursuivre.
+{% endcolumn %}
 
-<figure><img src="../../../.gitbook/assets/general-ai-chat-1.png" alt="Le panneau Dastra AI sur un traitement, avec les suggestions et la zone de message"><figcaption><p>Le panneau Dastra AI, avec le menu + ouvert</p></figcaption></figure>
+{% column %}
+<figure><img src="../../../.gitbook/assets/general-ai-chat-1.png" alt="Le panneau Dastra AI sur un traitement, avec les suggestions et la zone de message" width="420"><figcaption><p>Le panneau Dastra AI, avec le menu + ouvert</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 La fiche ou le registre que vous consultez est transmis à l'assistant comme contexte : vous pouvez demander « résume ce traitement » sans le nommer. Une visite guidée du panneau est disponible : cliquez sur **Afficher le guide**, l'icône d'information de l'en-tête du panneau.
 
 Le panneau propose plusieurs outils :
 
+**Affichage**
+
 * **Ouvrir en grand** ouvre la conversation sur la page Dastra AI, dans le menu **Automatisation**, où vos conversations sont listées à gauche. Les anciens liens vers la page de l'agent IA d'un espace de travail mènent à la même page.
 * **Ancrer à droite** place le panneau dans une colonne à côté de la page, **Détacher** le replace par-dessus la page et **Réduire** le ferme. L'ancrage est proposé sur les écrans d'au moins 1 480 pixels de large. Dastra mémorise votre choix.
 * **Nouvelle conversation** démarre une conversation vierge. La liste des conversations conserve les précédentes, regroupées par date, avec une zone de recherche : renommez-les ou supprimez-les depuis cette liste. Supprimer une conversation supprime tous ses messages.
+
+**Contexte**
+
 * **Choisir un agent** passe du **Chat standard** aux [agents](agents/README.md) activés dans votre espace de travail.
 * **Ajouter du contexte** donne à l'assistant une fiche ou un utilisateur sur lequel travailler. Saisissez `@` dans le message pour mentionner une fiche ou un utilisateur.
 * **Joindre un fichier**, ou déposez un fichier dans la zone de message. Dastra AI lit lui-même les fichiers PDF, PNG et JPEG. Les fichiers CSV, XLSX, DOCX, JSON, TXT et Markdown sont acceptés aussi, mais seule l'exécution de code peut les ouvrir, lorsqu'elle est disponible. Un fichier est limité à 10 Mo.
 * **Mes artefacts**, dans le menu **+**, ouvre la liste des [artefacts](artifacts.md) de l'espace de travail.
 * Saisissez `/` ou cliquez sur **Compétences** pour lancer une [compétence](agents/skills.md), un prompt réutilisable. Un message applique au plus cinq compétences.
+
+**Messages**
+
 * **Dicter un message** enregistre votre voix et la transcrit dans la zone de message. Votre navigateur demande l'accès au micro la première fois.
 * **Copier** place une réponse dans votre presse-papiers.
 * Évaluez une réponse avec **Bonne réponse** ou **Mauvaise réponse**. Une **Mauvaise réponse** ouvre une fenêtre où vous pouvez ajouter un commentaire. Dastra enregistre la note et le commentaire avec le message.
@@ -65,8 +81,12 @@ Lorsqu'une conversation s'allonge, un indicateur **Contexte** apparaît près de
 
 En mode **Question**, l'assistant lit seulement : rien ne change dans votre espace de travail. En mode **Édition**, il peut aussi créer et modifier des fiches. Le sélecteur de mode apparaît pour les utilisateurs qui ont la permission d'écriture de l'assistant. Le mode **Édition** nécessite l'option correspondante dans l'offre de votre organisation. Sans elle, l'option est verrouillée.
 
+{% tabs %}
+{% tab title="Mode Question" %}
 **Outils disponibles en mode Question.** Recherche dans l'espace de travail, la documentation, les réglementations et le web. Parcours et lecture des fiches, commentaires, fichiers, unités organisationnelles, questionnaires et du profil de l'espace de travail. Inspection de la structure d'un type de fiche, de ses champs modifiables et de ses actions disponibles. Liste des utilisateurs, des tags, des étapes de workflow et des catégories de réglementation. Export de fiches, construction d'[artefacts](artifacts.md), exécution de code (lorsqu'elle est disponible) et délégation d'une sous-tâche. L'assistant peut aussi vous poser des questions et vous emmener vers une page de Dastra.
+{% endtab %}
 
+{% tab title="Mode Édition" %}
 **Outils ajoutés par le mode Édition.** Création d'une fiche, modification d'une ou plusieurs fiches, exécution d'une action de fiche (archiver, restaurer, cloner, changer l'étape de workflow, etc.), ajout d'un commentaire, création d'un plan d'actions ou d'un tag, planification et remplissage d'un questionnaire, rédaction d'un document, liaison ou enregistrement d'un fichier, rédaction d'une fiche à partir d'une description, analyse d'une fiche et création ou modification d'un agent. La suppression et l'anonymisation ne sont pas proposées.
 
 Avant d'exécuter l'un de ces outils, Dastra AI affiche une carte **Autorisation requise** qui nomme l'outil. Cliquez sur **Voir les arguments** pour voir ce qu'il s'apprête à envoyer, puis choisissez :
@@ -75,9 +95,11 @@ Avant d'exécuter l'un de ces outils, Dastra AI affiche une carte **Autorisation
 * **Toujours approuver pour cette session** pour ne plus être sollicité pour les outils de cette conversation ;
 * **Refuser** pour refuser.
 
-<figure><img src="../../../.gitbook/assets/v3-ai-confirmation-1.png" alt="La carte Autorisation requise de Dastra AI"><figcaption><p>La carte d'autorisation du mode Édition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v3-ai-confirmation-1.png" alt="La carte Autorisation requise de Dastra AI" width="500"><figcaption><p>La carte d'autorisation du mode Édition</p></figcaption></figure>
 
 Si vous envoyez un autre message pendant qu'une carte est en attente, la carte n'est plus pertinente.
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 Dastra AI est disponible lorsque votre offre l'inclut et que votre rôle a la permission de l'assistant IA. Les messages consomment le quota mensuel de crédits IA, et une bannière vous prévient lorsque le quota est presque épuisé.
@@ -136,30 +158,4 @@ Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une
 
 ***
 
-{% content-ref url="agents/README.md" %}
-[README.md](agents/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="agents/skills.md" %}
-[competences.md](agents/skills.md)
-{% endcontent-ref %}
-
-{% content-ref url="artifacts.md" %}
-[artefacts.md](artifacts.md)
-{% endcontent-ref %}
-
-{% content-ref url="mcp.md" %}
-[serveur-mcp.md](mcp.md)
-{% endcontent-ref %}
-
-{% content-ref url="use-cases.md" %}
-[cas-dusage.md](use-cases.md)
-{% endcontent-ref %}
-
-{% content-ref url="how-it-works.md" %}
-[comment-ca-marche.md](how-it-works.md)
-{% endcontent-ref %}
-
-{% content-ref url="faq.md" %}
-[foire-aux-questions.md](faq.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Cas d'usage</strong></td><td>Chaque assistant IA des modules, pas à pas.</td><td><a href="use-cases.md">use-cases.md</a></td></tr><tr><td><strong>Comment ça marche ?</strong></td><td>Modèles et hébergement, données transmises au modèle, crédits et quotas IA.</td><td><a href="how-it-works.md">how-it-works.md</a></td></tr><tr><td><strong>FAQ</strong></td><td>Confidentialité et données, qualité et fiabilité, configuration et accès, AI Act.</td><td><a href="faq.md">faq.md</a></td></tr></tbody></table>
