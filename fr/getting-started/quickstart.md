@@ -6,7 +6,7 @@ description: >-
 
 # 🚀 Démarrer en 5 minutes
 
-Ce guide vous accompagne de votre première connexion à votre premier traitement documenté dans le registre Dastra.
+Ce guide vous accompagne de votre première connexion à votre premier traitement documenté dans le registre Dastra. Pour vous repérer dans l'interface, voir [Naviguer dans Dastra](navigation.md).
 
 ***
 
@@ -45,7 +45,7 @@ Dastra ouvre ensuite la page des utilisateurs du nouvel espace, où vous pouvez 
 
 Le **registre des traitements** est au cœur de Dastra. Commencez par une activité simple, par exemple la paie ou la messagerie professionnelle.
 
-1. Dans le menu de gauche, cliquez sur **Registre des traitements**.
+1. Dans le menu de gauche, cliquez sur **Traitements de données**, puis sur **Registre des traitements**.
 2. Cliquez sur **Créer un traitement de données**.
 3. Choisissez le mode de création :
 
@@ -101,6 +101,10 @@ La personne invitée reçoit un lien d'accès par e-mail.
 ## Et ensuite ?
 
 Pour aller plus loin :
+
+{% content-ref url="navigation.md" %}
+[navigation.md](navigation.md)
+{% endcontent-ref %}
 
 {% content-ref url="tutorial/README.md" %}
 [tutoriel](tutorial/README.md)

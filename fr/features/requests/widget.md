@@ -50,6 +50,7 @@ Ouvrez un formulaire de collecte, section **Configuration**. Vous y définissez 
 * Le **nom** du widget et son **unité organisationnelle**.
 * Les types de droits disponibles, avec la question **Pour quels types de droit ?** : **Types de droit par défaut**, **Certains types de droit** (vous choisissez alors les types dans **Choisir les types de demande autorisés**) ou **Aucun type de droit (formulaire simple)**, qui ne demande pas de type de droit à la personne.
 * Les liens **Lien de redirection dans le cas d'un succès (après la phase d'identification)**, **Lien de redirection dans le cas d'une erreur (ex: expiration du lien de validation)** et **Lien vers la politique de confidentialité**. Ces trois liens sont facultatifs.
+* **Activer la validation du téléphone**, affiché uniquement lorsque la [vérification du demandeur par SMS](advanced/requester-space.md#verifier-le-demandeur-par-sms) est activée dans l'espace de travail : le champ téléphone devient obligatoire et le numéro est vérifié par SMS après la validation de l'adresse e-mail.
 
 <figure><img src="../../.gitbook/assets/requests-widget-2.png" alt="Section Configuration d’un formulaire de collecte : nom, unité organisationnelle, types de droits et liens de redirection"><figcaption><p>Configuration du widget</p></figcaption></figure>
 
