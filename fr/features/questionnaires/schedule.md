@@ -55,7 +55,7 @@ Dastra crée le questionnaire, dont vous êtes le répondant et l'approbateur, y
 Un indicateur **Utilisation** s'affiche dès que votre quota de crédits IA atteint 80 %. La génération est bloquée lorsque le quota est dépassé.
 
 {% hint style="info" %}
-L'utilisation de la réponse assistée par IA consomme des crédits IA. Consultez la page [Assistant IA](../general/ai-assistant/README.md) pour connaître votre quota et les modalités de consommation.
+L'utilisation de la réponse assistée par IA consomme des crédits IA. Consultez la page [Dastra AI](../general/ai-assistant/README.md) pour connaître votre quota et les modalités de consommation.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/questionnaires-schedule-6.png" alt="Fenêtre Réponse assistée par IA avec les instructions, la langue des réponses et les pièces jointes"><figcaption><p>Générer la réponse à un questionnaire avec l'IA</p></figcaption></figure>

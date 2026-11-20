@@ -1,62 +1,29 @@
 ---
 description: >-
-  L'assistant IA de Dastra génère et enrichit des éléments de votre espace de
-  travail à partir de simples descriptions, avec des agents et un serveur MCP.
+  Dastra AI répond à vos questions sur votre espace de travail, lance des
+  compétences et des agents, conserve des artefacts et relie vos outils d'IA.
 ---
 
-# Assistant IA
+# Dastra AI
 
-L'assistant IA de Dastra vous permet de générer et d'enrichir des éléments de votre espace de travail à partir de simples descriptions textuelles. Il s'appuie sur des modèles d'IA générative hébergés sur Azure, en France et dans l'Espace Économique Européen, sans qu'aucune donnée de votre organisation ne soit utilisée pour entraîner ces modèles.
+Dastra AI regroupe l'ensemble des fonctions d'IA de Dastra. Vous l'interrogez sur votre espace de travail, vous lui confiez des tâches, vous créez vos propres agents et vous connectez vos outils d'IA à Dastra. Il s'appuie sur des modèles d'IA générative hébergés sur Azure, en France et dans l'Espace Économique Européen, sans qu'aucune donnée de votre organisation ne soit utilisée pour entraîner ces modèles.
 
-Dastra AI regroupe l'ensemble des fonctions d'IA de Dastra, en deux familles :
+Ses fonctions se répartissent en deux familles :
 
+* Le **mode conversationnel** réunit le chat Dastra AI, les [compétences](agents/skills.md), les [agents](agents/README.md), les [artefacts](artifacts.md) et le [serveur MCP](mcp.md). Il est ouvert : vous posez vos questions et confiez des tâches en langage naturel.
 * Les **assistants IA** sont des fonctions de génération très encadrées. Un bouton, dans un module, répond à un cas d'usage précis : générer un traitement, une notice d'information, une analyse de risque.
-* Le **mode conversationnel** réunit le chat Dastra AI, les [agents](agents/README.md) et le [serveur MCP](mcp.md). Il est plus ouvert : vous posez vos questions et confiez des tâches en langage naturel.
 
-Cette page présente les deux.
+La disponibilité de chaque fonction dépend de l'offre de votre organisation, module par module, et des permissions de chaque utilisateur. Dans un module que votre offre n'inclut pas, les boutons IA sont grisés, ou n'apparaissent pas pour quelques fonctions. Pour modifier le périmètre de votre offre, contactez notre équipe.
 
-La disponibilité de l'assistant IA dépend de l'offre de votre organisation, module par module. Dans un module que votre offre n'inclut pas, les boutons IA sont grisés, ou n'apparaissent pas pour quelques fonctions. Pour modifier le périmètre de votre offre, contactez notre équipe.
+## Ce que vous pouvez faire avec Dastra AI
 
-## L'IA comme point de départ, pas comme réponse définitive
+* **Interroger votre espace de travail.** Demandez un résumé, la liste des demandes en retard ou les traitements qui n'ont pas de PIA. En mode Édition, Dastra AI crée et modifie aussi des fiches, après votre accord. Voir [Discuter avec Dastra AI](#discuter-avec-dastra-ai).
+* **Lancer une compétence.** Saisissez `/` dans la zone de message pour appliquer un prompt réutilisable, fourni par Dastra ou rédigé par votre équipe. Voir [Compétences](agents/skills.md).
+* **Créer vos propres agents.** Un agent conversationnel répond avec ses propres instructions et ses outils. Un agent autonome exécute une tâche seul, quand vous le lancez, selon une planification ou depuis une règle de workflow, et ses exécutions sont listées dans la **Boîte de réception**. Voir [Les agents Dastra AI](agents/README.md).
+* **Conserver des artefacts.** Les tableaux de bord, schémas et documents que Dastra AI construit dans une conversation sont enregistrés comme artefacts, que vous pouvez rouvrir et partager. Voir [Artefacts](artifacts.md).
+* **Connecter vos outils d'IA.** Claude, ChatGPT, Microsoft Copilot et d'autres outils accèdent à vos données Dastra par le serveur MCP. Voir [Le serveur MCP](mcp.md).
 
-L'assistant IA est conçu pour **accélérer votre travail de conformité**, non pour remplacer l'expertise humaine. Tout contenu généré par l'assistant, qu'il s'agisse d'une description de traitement, d'une notice d'information ou d'une analyse de conformité, est **une proposition qui nécessite une relecture et une validation** par une personne qualifiée avant tout usage.
-
-En particulier :
-
-{% hint style="warning" %}
-**Le contenu généré par l'IA ne constitue pas un avis juridique.** Il ne peut pas se substituer au jugement d'un professionnel de la protection des données ou d'un conseil juridique.
-
-**Les évaluations de conformité sont des aides à l'analyse.** Les scores et recommandations produits par l'IA reposent uniquement sur les informations enregistrées dans votre espace de travail. Ils reflètent la qualité de cette documentation, et non un avis juridique indépendant.
-
-**Vous gardez le contrôle.** Aucun résultat généré par l'IA n'est appliqué ou communiqué automatiquement. Chaque résultat nécessite une action humaine délibérée pour être utilisé. La seule exception est un [agent autonome](agents/autonomous.md) que vous configurez : il s'exécute sans que personne ne le surveille et applique les modifications que ses outils de modification permettent, c'est pourquoi vous choisissez vous-même ces outils.
-{% endhint %}
-
-## Protection des données et confidentialité
-
-Les données de votre organisation ne sont jamais utilisées pour entraîner des modèles d'IA. Les modèles utilisés par Dastra sont hébergés sur l'infrastructure Microsoft Azure en France, sous des garanties contractuelles qui excluent vos données de tout entraînement ou partage avec des tiers. Pour tous les détails, consultez la page [Comment ça marche ?](how-it-works.md#comment-ca-marche).
-
-## Ce que l'assistant IA peut vous aider à faire
-
-L'assistant est disponible dans plusieurs modules de la plateforme :
-
-* **Traitements de données** : générer des descriptions, des jeux de données, des mesures de sécurité, des notices d'information, l'évaluation des critères d'AIPD et des analyses de conformité
-* **Systèmes d'IA** : générer des descriptions, des notices, la justification du rôle, des analyses de risque et l'évaluation de la valeur métier
-* **Questionnaires** : générer un modèle, le traduire, et générer des réponses assistées par IA à des PIA et analyses de risque
-* **Demandes d'exercice de droits** : rédiger des réponses dans plusieurs langues et registres, et caviarder automatiquement des documents
-* **Violations de données** : générer un post-mortem
-* **Actifs et acteurs** : générer des entrées structurées à partir d'une URL ou d'une description libre
-* **Contrats** : extraire des métadonnées depuis un document importé
-* **Conformité** : suggérer des contrôles, des tests et des références d'exigences, et analyser des preuves de test
-* **Règles de workflow et intégrations** : générer une action HTTP ou proposer un mapping de champs
-* **Documents et rapports personnalisés** : générer du contenu à partir de vos propres instructions
-
-Pour un guide pas à pas de chaque fonctionnalité, consultez la page [Cas d'usage](use-cases.md).
-
-## Dastra AI, agents et serveur MCP
-
-Au-delà de la génération de contenu, Dastra AI propose un mode conversationnel que vous interrogez depuis le tableau de bord, depuis le bouton **Ouvrir Dastra AI** en bas à droite de l'écran ou depuis l'entrée **Dastra AI** du menu **Automatisation**. Vous pouvez aussi créer vos propres [agents](agents/README.md), conversationnels ou autonomes, conserver les fichiers produits par l'assistant sous forme d'[artefacts](artifacts.md), et connecter vos outils d'IA à Dastra avec le [serveur MCP](mcp.md). Ces fonctionnalités dépendent de l'offre de votre organisation et des permissions de chaque utilisateur.
-
-L'entrée **Dastra AI** du menu **Automatisation** regroupe le chat en grand (**Conversations**, avec la liste des **Artefacts**), **Agents**, **Boîte de réception** et **Compétences**. Les trois dernières apparaissent lorsque votre offre inclut les agents personnalisés et que votre rôle les autorise.
+Vous ouvrez Dastra AI depuis le tableau de bord, avec le bouton **Ouvrir Dastra AI** en bas à droite de l'écran, avec **Ctrl+J** (**Cmd+J** sur Mac), ou depuis l'entrée **Dastra AI** du menu **Automatisation**. Cette entrée regroupe le chat en grand (**Conversations**, avec la liste des **Artefacts**), **Agents**, **Boîte de réception** et **Compétences**. Les trois dernières apparaissent lorsque votre offre inclut les agents personnalisés et que votre rôle les autorise.
 
 <figure><img src="../../../.gitbook/assets/v3-ai-menu-1.png" alt="L'entrée Dastra AI du menu Automatisation"><figcaption><p>Automatisation &#x3E; Dastra AI</p></figcaption></figure>
 
@@ -64,7 +31,7 @@ Toutes les fonctionnalités IA partagent le quota mensuel de crédits IA décrit
 
 ## Discuter avec Dastra AI
 
-**Dastra AI** répond à vos questions sur votre espace de travail dans une conversation. Il consulte vos fiches avec des outils en lecture seule : vous pouvez demander un résumé, la liste des demandes en retard ou les traitements qui n'ont pas d'AIPD.
+**Dastra AI** répond à vos questions sur votre espace de travail dans une conversation. Il consulte vos fiches avec des outils en lecture seule : vous pouvez demander un résumé, la liste des demandes en retard ou les traitements qui n'ont pas de PIA.
 
 Pour répondre, Dastra AI peut aussi s'appuyer sur la base réglementaire indexée par Dastra, sur la documentation Dastra et sur une recherche web. En mode Édition, il peut créer des fiches, modifier des champs, créer un plan d'actions, un questionnaire, un commentaire ou un tag, et lancer des actions de fiche comme le changement d'étape de workflow. Il peut construire des [artefacts](artifacts.md), vous poser des questions de précision avant d'agir et vous diriger vers la fiche concernée.
 
@@ -116,6 +83,41 @@ Si vous envoyez un autre message pendant qu'une carte est en attente, la carte n
 Dastra AI est disponible lorsque votre offre l'inclut et que votre rôle a la permission de l'assistant IA. Les messages consomment le quota mensuel de crédits IA, et une bannière vous prévient lorsque le quota est presque épuisé.
 {% endhint %}
 
+## Les assistants IA dans les modules
+
+Les assistants IA sont des boutons présents dans les modules de la plateforme, chacun pour une tâche précise :
+
+* **Traitements de données** : générer des descriptions, des jeux de données, des mesures de sécurité, des notices d'information, l'évaluation des critères d'AIPD et des analyses de conformité
+* **Systèmes d'IA** : générer des descriptions, des notices, la justification du rôle, des analyses de risque et l'évaluation de la valeur métier
+* **Questionnaires** : générer un modèle, le traduire, et générer des réponses assistées par IA à des PIA et analyses de risque
+* **Demandes d'exercice de droits** : rédiger des réponses dans plusieurs langues et registres, et caviarder automatiquement des documents
+* **Violations de données** : générer un post-mortem
+* **Actifs et acteurs** : générer des entrées structurées à partir d'une URL ou d'une description libre
+* **Contrats** : extraire des métadonnées depuis un document importé
+* **Conformité** : suggérer des contrôles, des tests et des références d'exigences, et analyser des preuves de test
+* **Règles de workflow et intégrations** : générer une action HTTP ou proposer un mapping de champs
+* **Documents et rapports personnalisés** : générer du contenu à partir de vos propres instructions
+
+Pour un guide pas à pas de chaque fonctionnalité, consultez la page [Cas d'usage](use-cases.md).
+
+## L'IA comme point de départ, pas comme réponse définitive
+
+Dastra AI est conçu pour **accélérer votre travail de conformité**, non pour remplacer l'expertise humaine. Tout contenu généré par Dastra AI, qu'il s'agisse d'une description de traitement, d'une notice d'information ou d'une analyse de conformité, est **une proposition qui nécessite une relecture et une validation** par une personne qualifiée avant tout usage.
+
+En particulier :
+
+{% hint style="warning" %}
+**Le contenu généré par l'IA ne constitue pas un avis juridique.** Il ne peut pas se substituer au jugement d'un professionnel de la protection des données ou d'un conseil juridique.
+
+**Les évaluations de conformité sont des aides à l'analyse.** Les scores et recommandations produits par l'IA reposent uniquement sur les informations enregistrées dans votre espace de travail. Ils reflètent la qualité de cette documentation, et non un avis juridique indépendant.
+
+**Vous gardez le contrôle.** Aucun résultat généré par l'IA n'est appliqué ou communiqué automatiquement. Chaque résultat nécessite une action humaine délibérée pour être utilisé. La seule exception est un [agent autonome](agents/autonomous.md) que vous configurez : il s'exécute sans que personne ne le surveille et applique les modifications que ses outils de modification permettent, c'est pourquoi vous choisissez vous-même ces outils.
+{% endhint %}
+
+## Protection des données et confidentialité
+
+Les données de votre organisation ne sont jamais utilisées pour entraîner des modèles d'IA. Les modèles utilisés par Dastra sont hébergés sur l'infrastructure Microsoft Azure en France, sous des garanties contractuelles qui excluent vos données de tout entraînement ou partage avec des tiers. Pour tous les détails, consultez la page [Comment ça marche ?](how-it-works.md#comment-ca-marche).
+
 ## Fonctionnalités en bêta
 
 Certaines fonctionnalités IA sont publiées en version bêta : elles sont opérationnelles mais continuent d'être affinées sur la base des retours utilisateurs. Les fonctionnalités bêta sont clairement identifiées dans l'interface.
@@ -134,26 +136,30 @@ Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une
 
 ***
 
-{% content-ref url="how-it-works.md" %}
-[comment-ca-marche.md](how-it-works.md)
-{% endcontent-ref %}
-
-{% content-ref url="use-cases.md" %}
-[cas-dusage.md](use-cases.md)
-{% endcontent-ref %}
-
-{% content-ref url="faq.md" %}
-[foire-aux-questions.md](faq.md)
-{% endcontent-ref %}
-
 {% content-ref url="agents/README.md" %}
 [README.md](agents/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="agents/skills.md" %}
+[competences.md](agents/skills.md)
+{% endcontent-ref %}
+
+{% content-ref url="artifacts.md" %}
+[artefacts.md](artifacts.md)
 {% endcontent-ref %}
 
 {% content-ref url="mcp.md" %}
 [serveur-mcp.md](mcp.md)
 {% endcontent-ref %}
 
-{% content-ref url="artifacts.md" %}
-[artefacts.md](artifacts.md)
+{% content-ref url="use-cases.md" %}
+[cas-dusage.md](use-cases.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-it-works.md" %}
+[comment-ca-marche.md](how-it-works.md)
+{% endcontent-ref %}
+
+{% content-ref url="faq.md" %}
+[foire-aux-questions.md](faq.md)
 {% endcontent-ref %}

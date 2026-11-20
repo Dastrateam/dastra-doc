@@ -49,6 +49,20 @@
   * [Request support](getting-started/support/request.md)
   * [The customer support process](getting-started/support/process.md)
 
+## Dastra AI <a href="#dastra-ai" id="dastra-ai"></a>
+
+* [Dastra AI](features/general/ai-assistant/README.md)
+  * [Dastra AI agents](features/general/ai-assistant/agents/README.md)
+    * [Creating a conversational agent](features/general/ai-assistant/agents/conversational.md)
+    * [Creating an autonomous agent](features/general/ai-assistant/agents/autonomous.md)
+    * [Tracking runs](features/general/ai-assistant/agents/inbox.md)
+  * [Skills](features/general/ai-assistant/agents/skills.md)
+  * [Artifacts](features/general/ai-assistant/artifacts.md)
+  * [The MCP server](features/general/ai-assistant/mcp.md)
+  * [Use cases](features/general/ai-assistant/use-cases.md)
+  * [How it works](features/general/ai-assistant/how-it-works.md)
+  * [FAQ](features/general/ai-assistant/faq.md)
+
 ## Worked examples <a href="#examples" id="examples"></a>
 
 * [Worked examples](examples/README.md)
@@ -70,17 +84,6 @@
   * [Tag management](features/general/tags.md)
   * [Merging elements](features/general/merge.md)
   * [Custom fields](features/general/custom-fields.md)
-  * [AI Assistant](features/general/ai-assistant/README.md)
-    * [Use cases](features/general/ai-assistant/use-cases.md)
-    * [How it works](features/general/ai-assistant/how-it-works.md)
-    * [FAQ](features/general/ai-assistant/faq.md)
-    * [Dastra AI agents](features/general/ai-assistant/agents/README.md)
-      * [Creating a conversational agent](features/general/ai-assistant/agents/conversational.md)
-      * [Creating an autonomous agent](features/general/ai-assistant/agents/autonomous.md)
-      * [Skills](features/general/ai-assistant/agents/skills.md)
-      * [Tracking runs](features/general/ai-assistant/agents/inbox.md)
-    * [The MCP server](features/general/ai-assistant/mcp.md)
-    * [Artifacts](features/general/ai-assistant/artifacts.md)
   * [Email templates](features/general/email-templates.md)
   * [Internal discussions](features/general/discussions.md)
   * [FAQ](features/general/faq.md)

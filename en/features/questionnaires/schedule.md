@@ -55,7 +55,7 @@ Dastra creates the questionnaire, with you as the respondent and the approver, f
 A **Usage** indicator appears as soon as your AI credit quota reaches 80%. Generation is blocked when the quota is exceeded.
 
 {% hint style="info" %}
-Using the AI-assisted response consumes AI credits. See the [AI Assistant](../general/ai-assistant/README.md) page for details on your quota and usage.
+Using the AI-assisted response consumes AI credits. See the [Dastra AI](../general/ai-assistant/README.md) page for details on your quota and usage.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/questionnaires-schedule-6.png" alt="AI-assisted response window with the instructions, the answer language and the attachments"><figcaption><p>Generating the response to a questionnaire with AI</p></figcaption></figure>
