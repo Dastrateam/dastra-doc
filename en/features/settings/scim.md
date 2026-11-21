@@ -149,6 +149,31 @@ If a group is removed in Entra ID:
 * **User accounts remain active**
 * No impact on individual users
 
+**Name of synchronized teams**
+
+A team created through SCIM receives two values from the identity provider:
+
+| SCIM attribute | Team field in Dastra | Maximum length |
+| --- | --- | --- |
+| `displayName` | Team name, displayed in Dastra | 160 characters |
+| `externalId` | Group identifier in the identity provider | 100 characters |
+
+Dastra uses the `displayName` exactly as it is sent, without changing or truncating it. Renaming the group in the identity provider renames the team. The displayed name is always the `displayName`: Dastra cannot display the group identifier instead.
+
+To display a shorter name than the group's (for example only the end of a very long group name), transform the `displayName` in the identity provider. In Microsoft Entra ID, open the provisioning application, then **Provisioning** > **Attribute mappings** > **Provision Microsoft Entra ID Groups**. Replace the source of `displayName` with an expression. For example, to keep only what follows the last hyphen:
+
+```
+Replace([displayName], , "^.*-", , "", , )
+```
+
+Adapt the separator to your group names. Entra's `Mid` or `Split` functions also work. Entra lets you test the expression on a group before saving.
+
+{% hint style="warning" %}
+* **Unique names**: Dastra refuses to create a team if a team with the same name already exists in the workspace. If two groups give the same name after transformation, the second one is not created. Check that the resulting names are unique.
+* **160 characters maximum**: a longer `displayName` makes the team creation fail. Shorten long group names in the identity provider.
+* **Group identifier**: keep `externalId` on the group's Object ID, which is Entra's default. This identifier is stable and unique. SSO [team binding](sso/README.md#team-binding) uses it to link users to their teams, so SCIM and SSO stay consistent even with a shortened team name.
+{% endhint %}
+
 ***
 
 ### Mapping and synchronization scope
@@ -332,8 +357,8 @@ During synchronization, Dastra reads the following SCIM 2.0 attributes. `/v2/Sch
 
 | SCIM attribute | Field in Dastra | Required |
 | --- | --- | --- |
-| `displayName` | Team name (30 characters maximum) | Yes |
-| `externalId` | Group identifier in the identity provider | Optional |
+| `displayName` | Team name (160 characters maximum) | Yes |
+| `externalId` | Group identifier in the identity provider (100 characters maximum) | Optional |
 | `members` | Team members (Dastra user identifiers) | Optional |
 
 {% hint style="info" %}
