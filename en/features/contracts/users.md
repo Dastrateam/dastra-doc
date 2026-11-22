@@ -8,4 +8,6 @@ Here is one way to split the roles for your documents:
 * **Responsible**: the user in charge of carrying out the actions needed to meet the requirements of the document. This could involve implementing data security measures, managing access or any other task required to comply with the terms of the contract.
 * **Informed**: the users who need to be kept up to date on the progress and status of the document, without an active role in its validation or implementation. This can include management, project managers or other stakeholders.
 
+A user has only one role on a document: they cannot be both Accountable and Informed, for example. Users already linked to the document no longer appear in the selection list. To give a user another role, change their role in the table.
+
 <figure><img src="../../.gitbook/assets/contracts-users-1.png" alt="The Users tab of a document with one user for each of the three roles"><figcaption><p>Link users to a document</p></figcaption></figure>

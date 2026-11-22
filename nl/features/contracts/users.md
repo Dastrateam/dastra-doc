@@ -8,4 +8,6 @@ U kunt de rollen voor uw documenten als volgt verdelen:
 * **Verantwoordelijk**: de gebruiker die de acties uitvoert die nodig zijn om aan de vereisten van het document te voldoen. Dat kunnen maatregelen voor gegevensbeveiliging zijn, het beheer van toegangsrechten of andere taken om de naleving van de voorwaarden van het contract te garanderen.
 * **Op de hoogte**: gebruikers die op de hoogte moeten blijven van de voortgang en de status van het document, maar geen actieve rol hebben bij de goedkeuring of uitvoering ervan. Denk aan leden van het managementteam, projectleiders of andere belanghebbenden.
 
+Een gebruiker heeft maar één rol op een document: hij kan bijvoorbeeld niet tegelijk Goedkeurder en Op de hoogte zijn. Gebruikers die al aan het document zijn gekoppeld, staan niet meer in de selectielijst. Wilt u een gebruiker een andere rol geven, wijzig dan zijn rol in de tabel.
+
 <figure><img src="../../.gitbook/assets/contracts-users-1.png" alt="Het tabblad Users van een document met één gebruiker voor elk van de drie rollen"><figcaption><p>Gebruikers aan een document koppelen</p></figcaption></figure>

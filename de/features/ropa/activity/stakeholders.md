@@ -28,6 +28,8 @@ Die so definierten Rollen helfen Ihnen, die Verwaltung und Umsetzung Ihrer Verar
 * **Verantwortlicher** (Responsible): der Nutzer, der die nötigen Maßnahmen an der Verarbeitungstätigkeit umsetzt und sie beschreibt. Das kann die Umsetzung von Datensicherheitsmaßnahmen sein, die Verwaltung von Zugriffen oder jede andere Aufgabe, die nötig ist, um die Konformität der Verarbeitung sicherzustellen. Es kann sich um einen Projektleiter oder einen eigens benannten Fachverantwortlichen handeln. Diese Rolle ist nicht mit dem Verantwortlichen im Sinne der DSGVO zu verwechseln.
 * **Informiert** (Informed): Nutzer, die über Fortschritt und Status der Verarbeitungstätigkeit auf dem Laufenden gehalten werden müssen, ohne eine aktive Rolle bei ihrer Freigabe oder Umsetzung zu haben. Dazu können Mitglieder der Geschäftsführung, Projektleiter oder andere Stakeholder gehören, die ein Interesse an der Verarbeitung haben.
 
+Ein Nutzer hat in einer Verarbeitungstätigkeit nur eine Rolle: Er kann zum Beispiel nicht gleichzeitig Genehmiger und Informiert sein. Nutzer, die der Verarbeitungstätigkeit bereits zugewiesen sind, erscheinen nicht mehr in der Auswahlliste. Um einem Nutzer eine andere Rolle zu geben, ändern Sie seine Rolle in der Tabelle.
+
 Zugewiesene Nutzer werden über die Maßnahmen an der Verarbeitungstätigkeit benachrichtigt und sind die Standardempfänger der zugehörigen Aufgaben und Benachrichtigungen.
 
 {% hint style="info" %}

@@ -28,6 +28,8 @@ Les rôles ainsi définis vous aident à organiser la gestion et la mise en oeuv
 * **Réalisateur** : l'utilisateur qui met en oeuvre les actions nécessaires sur le traitement et le décrit. Il peut s'agir de la mise en place des mesures de sécurité des données, de la gestion des accès ou de toute autre tâche requise pour assurer la conformité du traitement. Il peut s'agir d'un chef de projet ou d'un responsable métier dédié.
 * **Informé** : les utilisateurs qui doivent être tenus informés de l'avancement et de l'état du traitement, sans rôle actif dans sa validation ou sa mise en oeuvre. Il peut s'agir de membres de l'équipe de direction, de chefs de projet ou d'autres parties prenantes qui ont un intérêt dans le traitement.
 
+Un utilisateur n'a qu'un seul rôle sur un traitement : il ne peut pas être à la fois approbateur et informé, par exemple. Les utilisateurs déjà affectés au traitement n'apparaissent plus dans la liste **Propriétaires du traitement**. Pour donner un autre rôle à un utilisateur, changez son rôle dans le tableau.
+
 Les utilisateurs affectés sont notifiés des actions réalisées sur le traitement et sont les destinataires par défaut des tâches et notifications associées.
 
 {% hint style="info" %}

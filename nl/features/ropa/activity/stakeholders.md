@@ -28,6 +28,8 @@ De zo gedefinieerde rollen helpen u het beheer en de uitvoering van uw verwerkin
 * **Verantwoordelijk**: de gebruiker die de nodige acties op de verwerkingsactiviteit uitvoert en ze beschrijft. Dat kan het invoeren van beveiligingsmaatregelen zijn, het beheer van toegang of elke andere taak die nodig is om de naleving van de verwerking te waarborgen. Dit kan een projectmanager zijn of een vaste verantwoordelijke van de afdeling.
 * **Op de hoogte**: gebruikers die op de hoogte moeten blijven van de voortgang en de status van de verwerkingsactiviteit, zonder een actieve rol bij de validatie of de uitvoering ervan. Het kan gaan om leden van het managementteam, projectmanagers of andere stakeholders die belang hebben bij de verwerking.
 
+Een gebruiker heeft maar één rol op een verwerkingsactiviteit: hij kan bijvoorbeeld niet tegelijk Goedkeurder en Op de hoogte zijn. Gebruikers die al aan de verwerkingsactiviteit zijn toegewezen, staan niet meer in de selectielijst. Wilt u een gebruiker een andere rol geven, wijzig dan zijn rol in de tabel.
+
 Toegewezen gebruikers ontvangen meldingen over de acties die op de verwerkingsactiviteit worden uitgevoerd en zijn de standaardontvangers van de bijbehorende taken en meldingen.
 
 {% hint style="info" %}

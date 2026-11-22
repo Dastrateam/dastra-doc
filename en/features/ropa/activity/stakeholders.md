@@ -28,6 +28,8 @@ The roles defined this way help you organize the management and implementation o
 * **Responsible**: the user who carries out the necessary actions on the processing activity and describes it. This could involve implementing data security measures, managing access, or any other task required to ensure the compliance of the processing. This could be a project manager or a dedicated business manager.
 * **Informed**: users who need to be kept informed of the progress and status of the processing activity without having an active role in its validation or implementation. This may include members of the management team, project managers, or other stakeholders who have an interest in the processing.
 
+A user has only one role on a processing activity: they cannot be both Accountable and Informed, for example. Users already assigned to the processing activity no longer appear in the selection list. To give a user another role, change their role in the table.
+
 Assigned users are notified of the actions taken on the processing activity and are the default recipients of the related tasks and notifications.
 
 {% hint style="info" %}
