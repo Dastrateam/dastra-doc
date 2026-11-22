@@ -145,6 +145,31 @@ Wenn eine Gruppe in Entra ID entfernt wird:
 * **Nutzerkonten bleiben aktiv**.
 * Einzelne Nutzer sind nicht betroffen.
 
+**Name der synchronisierten Teams**
+
+Ein über SCIM erstelltes Team erhält zwei Werte vom Identitätsanbieter:
+
+| SCIM-Attribut | Feld des Teams in Dastra | Maximale Länge |
+| --- | --- | --- |
+| `displayName` | Teamname, in Dastra angezeigt | 160 Zeichen |
+| `externalId` | Gruppenkennung im Identitätsanbieter | 100 Zeichen |
+
+Dastra übernimmt den `displayName` so, wie er gesendet wird, ohne ihn zu ändern oder zu kürzen. Wenn Sie die Gruppe im Identitätsanbieter umbenennen, wird auch das Team umbenannt. Angezeigt wird immer der `displayName`: Dastra kann stattdessen nicht die Gruppenkennung anzeigen.
+
+Um einen kürzeren Namen als den der Gruppe anzuzeigen (zum Beispiel nur das Ende eines sehr langen Gruppennamens), wandeln Sie den `displayName` im Identitätsanbieter um. Öffnen Sie in Microsoft Entra ID die Provisioning-Anwendung und dann **Provisioning** > **Attribute mappings** > **Provision Microsoft Entra ID Groups**. Ersetzen Sie die Quelle von `displayName` durch einen Ausdruck. Um zum Beispiel nur den Teil nach dem letzten Bindestrich zu behalten:
+
+```
+Replace([displayName], , "^.*-", , "", , )
+```
+
+Passen Sie das Trennzeichen an Ihre Gruppennamen an. Die Entra-Funktionen `Mid` oder `Split` eignen sich ebenfalls. In Entra können Sie den Ausdruck vor dem Speichern an einer Gruppe testen.
+
+{% hint style="warning" %}
+* **Eindeutige Namen**: Dastra erstellt kein Team, wenn im Mandanten bereits ein Team mit demselben Namen existiert. Ergeben zwei Gruppen nach der Umwandlung denselben Namen, wird die zweite nicht erstellt. Prüfen Sie, dass die erhaltenen Namen eindeutig sind.
+* **Höchstens 160 Zeichen**: Ein längerer `displayName` lässt die Erstellung des Teams fehlschlagen. Kürzen Sie zu lange Gruppennamen im Identitätsanbieter.
+* **Gruppenkennung**: Belassen Sie `externalId` auf der Objekt-ID (Object ID) der Gruppe, wie es Entra standardmäßig tut. Diese Kennung ist stabil und eindeutig. Das [Team-Binding](sso/README.md#team-binding) des SSO verwendet sie, um Nutzer ihren Teams zuzuordnen: SCIM und SSO bleiben auch mit einem gekürzten Teamnamen konsistent.
+{% endhint %}
+
 ***
 
 ### Zuordnung und Umfang der Synchronisierung
@@ -328,8 +353,8 @@ Bei der Synchronisierung liest Dastra die folgenden SCIM-2.0-Attribute. `/v2/Sch
 
 | SCIM-Attribut | Feld in Dastra | Erforderlich |
 | --- | --- | --- |
-| `displayName` | Teamname (maximal 30 Zeichen) | Ja |
-| `externalId` | Gruppenkennung im Identitätsanbieter | Optional |
+| `displayName` | Teamname (maximal 160 Zeichen) | Ja |
+| `externalId` | Gruppenkennung im Identitätsanbieter (maximal 100 Zeichen) | Optional |
 | `members` | Teammitglieder (Dastra-Nutzerkennungen) | Optional |
 
 {% hint style="info" %}

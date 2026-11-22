@@ -143,6 +143,31 @@ Als een groep in Entra ID wordt verwijderd:
 * blijven de gebruikersaccounts actief;
 * heeft dit geen gevolgen voor individuele gebruikers.
 
+#### Naam van de gesynchroniseerde teams
+
+Een team dat via SCIM wordt aangemaakt, krijgt twee waarden van de identiteitsprovider:
+
+| SCIM-attribuut | Veld van het team in Dastra | Maximale lengte |
+| --- | --- | --- |
+| `displayName` | Teamnaam, weergegeven in Dastra | 160 tekens |
+| `externalId` | Groepsidentificatie in de identiteitsprovider | 100 tekens |
+
+Dastra neemt de `displayName` over zoals die wordt verzonden, zonder hem te wijzigen of in te korten. Als u de groep in de identiteitsprovider een andere naam geeft, krijgt het team die naam ook. De weergegeven naam is altijd de `displayName`: Dastra kan in plaats daarvan niet de groepsidentificatie weergeven.
+
+Om een kortere naam weer te geven dan die van de groep (bijvoorbeeld alleen het einde van een zeer lange groepsnaam), zet u de `displayName` om in de identiteitsprovider. Open in Microsoft Entra ID de provisioningtoepassing en daarna **Provisioning** > **Attribute mappings** > **Provision Microsoft Entra ID Groups**. Vervang de bron van `displayName` door een expressie. Om bijvoorbeeld alleen te behouden wat na het laatste koppelteken komt:
+
+```
+Replace([displayName], , "^.*-", , "", , )
+```
+
+Pas het scheidingsteken aan uw groepsnamen aan. De Entra-functies `Mid` of `Split` werken ook. In Entra kunt u de expressie op een groep testen voordat u opslaat.
+
+{% hint style="warning" %}
+* **Unieke namen**: Dastra maakt geen team aan als er in de werkruimte al een team met dezelfde naam bestaat. Als twee groepen na de omzetting dezelfde naam opleveren, wordt de tweede niet aangemaakt. Controleer of de verkregen namen uniek zijn.
+* **Maximaal 160 tekens**: een langere `displayName` laat het aanmaken van het team mislukken. Kort te lange groepsnamen in de identiteitsprovider in.
+* **Groepsidentificatie**: laat `externalId` op de object-ID (Object ID) van de groep staan, zoals Entra standaard doet. Deze identificatie is stabiel en uniek. Het [koppelen van teams](sso/README.md#teams-koppelen) via SSO gebruikt haar om gebruikers aan hun teams te koppelen: SCIM en SSO blijven consistent, ook met een ingekorte teamnaam.
+{% endhint %}
+
 ***
 
 ### Mapping en reikwijdte van de synchronisatie
@@ -323,8 +348,8 @@ Tijdens de synchronisatie leest Dastra de volgende SCIM 2.0-attributen. `/v2/Sch
 
 | SCIM-attribuut | Veld in Dastra | Verplicht |
 | --- | --- | --- |
-| `displayName` | Teamnaam (maximaal 30 tekens) | Ja |
-| `externalId` | Groepsidentificatie in de identiteitsprovider | Optioneel |
+| `displayName` | Teamnaam (maximaal 160 tekens) | Ja |
+| `externalId` | Groepsidentificatie in de identiteitsprovider (maximaal 100 tekens) | Optioneel |
 | `members` | Teamleden (Dastra-gebruikersidentificaties) | Optioneel |
 
 {% hint style="info" %}
