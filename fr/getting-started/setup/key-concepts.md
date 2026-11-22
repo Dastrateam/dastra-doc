@@ -37,7 +37,7 @@ Une organisation peut contenir plusieurs espaces de travail, chacun dédié à u
 
 Un **espace de travail** est l'environnement dans lequel vous collaborez avec votre équipe. Il regroupe les modules et les données liés à vos entités : traitements, audits, risques, incidents, demandes d'exercice de droits, etc. Les données d'un espace de travail ne sont jamais accessibles depuis un autre espace.
 
-Vous choisissez votre espace de travail à la connexion, en cliquant sur sa tuile dans la liste de vos espaces.
+Vous choisissez votre espace de travail à la connexion, en cliquant sur sa tuile dans la liste de vos espaces. Pour changer d'espace ensuite, utilisez le sélecteur d'espace de travail en haut du menu latéral : voir [Naviguer dans Dastra](../navigation.md).
 
 Donnez à vos espaces de travail des noms explicites (par exemple « Conformité Groupe » ou « Entités France »). Cela facilite la navigation quand l'organisation en compte plusieurs.
 

@@ -77,7 +77,6 @@ Email notifications are organized by **categories**, one per object type. Each c
 | Generic relationships         | Creation, deletion of a relationship                                                                                            |
 | Risk assessment               | Creation, modification, state change                                                                                            |
 | Control point                 | Creation, modification, review                                                                                                  |
-| Contribution                  | Approval, rejection                                                                                                             |
 | Stakeholder                   | Import, creation, modification, status change, deletion, review                                                                 |
 | Dataset                       | Import                                                                                                                          |
 | Asset                         | Import, creation, modification, status change, deletion, review                                                                 |

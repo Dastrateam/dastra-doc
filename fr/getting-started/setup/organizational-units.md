@@ -4,8 +4,6 @@ description: Apprenez à créer et paramétrer des entités et des départements
 
 # Créer et paramétrer les unités organisationnelles
 
-{% embed url="https://youtu.be/WPSzbYtu3j4" %}
-
 ## Introduction
 
 Les unités organisationnelles structurent votre espace de travail. Deux types d'unités organisationnelles peuvent être créés :
@@ -102,7 +100,36 @@ Exemple :
 
 L'onglet **Organigramme** affiche graphiquement vos entités et départements. Vous pouvez y réaliser la plupart des opérations disponibles dans la liste.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Vue Organigramme des unités organisationnelles"><figcaption><p>La vue Organigramme</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Vue Organigramme des unités organisationnelles"><figcaption><p>La vue Organigramme</p></figcaption></figure>
+
+### Filtrer l'organigramme
+
+La barre située au-dessus du graphique sert à la fois de légende des couleurs et de filtre. Utilisez-la pour n'afficher que ce dont vous avez besoin :
+
+* **Espace de travail** et **Départements** : décochez la case pour masquer l'espace de travail ou les départements. La case **Entités** reste cochée, car les entités sont toujours affichées.
+* **Rechercher une entité ou un département** : saisissez une partie du nom. L'organigramme conserve les unités qui correspondent et les unités situées au-dessus d'elles.
+* **Entité** : sélectionnez une entité pour n'afficher que sa branche, c'est-à-dire l'entité et les unités placées en dessous. L'espace de travail est alors masqué.
+* **Réinitialiser** : rétablit l'organigramme complet.
+
+La mention **Vue filtrée** vous rappelle que certaines unités sont masquées.
+
+### Inclure les informations légales
+
+Activez **Inclure les informations légales** pour ajouter un bloc sous chaque entité : **Siège**, **Pays**, **Immatriculation**, **Représentant légal**, **DPO**, **Représentant UE** et **Autorité de contrôle**. Une information non renseignée dans l'entité affiche **Non renseigné**. La ligne **Représentant UE** n'apparaît que pour une entité située hors de l'Union européenne ou sans pays.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-1.png" alt="Organigramme avec la barre de filtre et les informations légales des entités"><figcaption><p>L'organigramme filtré sur les entités, avec les informations légales</p></figcaption></figure>
+
+Les départements n'affichent pas ce bloc. Pour renseigner ces informations, modifiez l'entité (voir la section Créer ou modifier une entité plus haut).
+
+### Exporter l'organigramme
+
+Cliquez sur **Exporter**, choisissez **Fichier PDF (.pdf)** ou **Fichier HTML (.html)** dans la fenêtre **Exporter l'organigramme**, puis cliquez sur **Télécharger le fichier**. Le fichier contient l'organigramme tel qu'il est filtré, avec les informations légales si vous les avez activées, entièrement déplié. Il indique en en-tête le nom de l'espace de travail, la date et les filtres actifs. Le PDF tient sur une seule page en paysage, mise à l'échelle.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-2.png" alt="Fenêtre Exporter l'organigramme avec les formats PDF et HTML"><figcaption><p>La fenêtre d'export de l'organigramme</p></figcaption></figure>
+
+{% hint style="info" %}
+Le bouton **Exporter** est disponible si vous avez le droit de gérer les utilisateurs.
+{% endhint %}
 
 ## Limiter les accès au contenu d'une unité organisationnelle
 

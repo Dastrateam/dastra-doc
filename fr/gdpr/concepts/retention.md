@@ -155,10 +155,6 @@ Liez ces durées à votre **registre des systèmes d’IA** pour assurer la coh�
 
 ## Ressources et suites
 
-{% embed url="https://www.youtube.com/watch?v=BK8A3L9P7T0" %}
-Webinar « Durées de conservation : comment les déterminer ? »
-{% endembed %}
-
 {% content-ref url="../../features/ropa/activity/datasets.md" %}
 [Données et conservation](../../features/ropa/activity/datasets.md)
 {% endcontent-ref %}

@@ -7,8 +7,6 @@ description: >-
 
 # Modèles de messages
 
-{% embed url="https://youtu.be/3UtQuceFXqo" %}
-
 Les modèles de messages vous font gagner du temps : vous les rédigez une fois et vous les réutilisez dans les modules de Dastra. Pour les gérer, ouvrez **Réglages espace de travail** > **Modèles**. Cette entrée du menu est visible pour les utilisateurs qui disposent de la permission d'écriture sur les modèles de messages, pour tout ou pour leurs propres éléments.
 
 ## Types de modèles de messages

@@ -36,7 +36,7 @@ The Article 30 GDPR format corresponds to what the GDPR requires: the export onl
 
 ### Complete format
 
-The complete format is the native Dastra format: you export all the fields that make up the processing activity.
+The complete format is the native Dastra format: you export all the fields that make up the processing activity. In the PDF, Word and HTML exports, the data subject rights section lists only the rights that are filled in the processing activity. When none is filled in, the section is left out.
 
 {% hint style="info" %}
 You can also export only one or several processing activities of the record, instead of the whole record. To do this, tick the boxes on the left of the processing activities concerned, then click **Select a batch action** and **Export**. To export a single processing activity, you can also use **Export** in the menu at the end of its row.
@@ -64,6 +64,10 @@ Importing an existing record can be tedious if you have many processing activiti
 {% hint style="info" %}
 No organizational unit is created during the import. Data from fields that are not part of the template is placed in the HTML description fields.
 {% endhint %}
+
+When the recipient category of a row is empty, Dastra imports the recipient with the **Other** category.
+
+The data fields sheet of the workbook has a **Remarks** column: it carries the remarks entered for each data field of a dataset, as in the **Remarks** field of the dataset. The export fills it and the import reads it, up to 1,000 characters per remark. A workbook exported before this column existed can still be imported.
 
 ### Import a JSON file
 

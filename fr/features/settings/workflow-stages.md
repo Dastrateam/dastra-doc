@@ -36,8 +36,6 @@ Chaque étape est rattachée à un **statut interne** (champ **Etape de processu
 
 ## Personnaliser les étapes de workflow
 
-{% embed url="https://youtu.be/rIPJUY3vylc" %}
-
 Dans le menu latéral, cliquez sur **Réglages espace de travail**, puis, dans la section **Processus**, sur **Etapes de processus**. Cette page est réservée aux utilisateurs qui ont le droit de gérer les paramètres avancés.
 
 <figure><img src="../../.gitbook/assets/settings-workflow-stages-1.png" alt="Menu Réglages espace de travail avec l'entrée Etapes de processus"><figcaption><p>L'entrée Etapes de processus dans les réglages de l'espace de travail</p></figcaption></figure>

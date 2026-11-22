@@ -8,8 +8,6 @@ description: >-
 
 ## Modèles et hébergement
 
-<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Page Assistant IA des paramètres de l'organisation avec la famille de modèles et le suivi des crédits"><figcaption><p>Paramètres de l'organisation > Assistant IA : choix de la famille de modèles et suivi des crédits</p></figcaption></figure>
-
 Dastra utilise des modèles d'IA générative pré-entraînés, disponibles en quatre familles au choix :
 
 | Famille | Modèles configurés | Hébergement |
@@ -25,23 +23,31 @@ Pour les trois premières familles, les modèles sont hébergés sur l'infrastru
 **Offre Bleu.** Sur [Bleu](../../../security/bleu.md), les fonctions d'IA ne passent pas par Azure : elles sont exécutées par Mistral AI, société française hors du périmètre Bleu. Le tableau ci-dessus ne s'applique pas. Seule la famille Mistral est utilisée, et toute préférence OpenAI ou Open source est remplacée par Mistral : Mistral Small pour le niveau Rapide, Mistral Large pour les niveaux Avancé et Contexte étendu. Dastra AI et les agents utilisent Mistral Medium, et la dictée vocale Mistral Voxtral.
 {% endhint %}
 
+{% columns %}
+{% column %}
 Pour chaque famille, trois niveaux de modèle sont utilisés selon la complexité de la tâche :
 
 * **Rapide** (actions simples) : génération de descriptions, proposition de tags
 * **Avancé** (actions nécessitant plus de raisonnement) : génération d'éléments structurés dans Dastra
 * **Contexte étendu** (actions traitant un volume important de données) : réponse à un questionnaire, analyse de conformité
 
-Le propriétaire de l'organisation choisit la famille de modèles dans **Paramètres de l'organisation** > **Assistant IA**, carte **Paramètres de l'Assistant IA**, champ **Famille de modèles d'IA**. Le changement est enregistré dès que vous sélectionnez une famille.
+Le propriétaire de l'organisation choisit la famille de modèles dans **Paramètres de l'organisation** > **Dastra AI**, carte **Paramètres de Dastra AI**, champ **Famille de modèles d'IA**. Le changement est enregistré dès que vous sélectionnez une famille.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Page Dastra AI des paramètres de l'organisation avec la famille de modèles et le suivi des crédits" width="420"><figcaption><p>Paramètres de l'organisation > Dastra AI : choix de la famille de modèles et suivi des crédits</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 ***
 
 ## Fournisseur d'IA personnalisé
 
-<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Familles de modèles de l'assistant IA, dont le Custom AI provider"><figcaption><p>Le Fournisseur d'IA personnalisé (Custom AI provider) parmi les familles de modèles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Familles de modèles de l'assistant IA, dont le Custom AI provider" width="490"><figcaption><p>Le Fournisseur d'IA personnalisé (Custom AI provider) parmi les familles de modèles</p></figcaption></figure>
 
 Dastra vous permet de connecter votre propre fournisseur d'IA avec une clé d'API, à condition qu'il soit compatible avec le standard OpenAI API. Les fournisseurs proposés sont OpenAI, Google, Anthropic, Mistral et Azure AI Foundry. L'option **Autre** accepte tout autre point d'accès compatible, y compris un LLM auto-hébergé. Le fournisseur personnalisé s'applique aux fonctions de génération de l'assistant IA (les boutons des modules). Dastra AI (chat), les agents et le serveur MCP continuent d'utiliser les modèles de Dastra.
 
-Pour configurer un fournisseur personnalisé, sélectionnez la famille **Modèles AI personnalisés** dans **Paramètres de l'organisation** > **Assistant IA**. Dans le bloc **Identifiants de fournisseur d'IA**, cliquez sur **Ajouter des identifiants**, renseignez le fournisseur et sa clé d'API, puis associez un modèle à chacun des trois niveaux (Rapide, Avancé, Contexte étendu).
+Pour configurer un fournisseur personnalisé, sélectionnez la famille **Modèles AI personnalisés** dans **Paramètres de l'organisation** > **Dastra AI**. Dans le bloc **Identifiants de fournisseur d'IA**, cliquez sur **Ajouter des identifiants**, renseignez le fournisseur et sa clé d'API, puis associez un modèle à chacun des trois niveaux (Rapide, Avancé, Contexte étendu).
 
 Pour les fournisseurs reconnus, l'**URL de base** est pré-remplie : pour Anthropic, il s'agit de `https://api.anthropic.com/v1/`. Pour Azure AI Foundry et pour **Autre**, vous la saisissez.
 
@@ -49,7 +55,7 @@ Pour les fournisseurs reconnus, l'**URL de base** est pré-remplie : pour Anthro
 * Vous désignez le modèle à utiliser pour chaque niveau, un modèle recommandé étant proposé par défaut.
 * La clé d'API n'est jamais réaffichée en clair, et la gestion des identifiants est réservée aux propriétaires de l'organisation.
 
-<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenêtre d'identifiants du fournisseur personnalisé avec Anthropic et le bouton Tester la connexion"><figcaption><p>Configuration d'Anthropic : URL de base pré-remplie, clé d'API et bouton « Tester la connexion »</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenêtre d'identifiants du fournisseur personnalisé avec Anthropic et le bouton Tester la connexion" width="400"><figcaption><p>Configuration d'Anthropic : URL de base pré-remplie, clé d'API et bouton « Tester la connexion »</p></figcaption></figure>
 
 {% hint style="warning" %}
 Lorsque vous utilisez un fournisseur d'IA personnalisé, les données transmises au modèle sont soumises à la politique de confidentialité de **votre fournisseur**, et non aux garanties Azure décrites sur cette page. Vérifiez les conditions de votre fournisseur avant d'activer cette option, notamment si vos prompts peuvent contenir des données à caractère personnel.
@@ -94,7 +100,7 @@ Cette conservation reste exceptionnelle et ne concerne pas les usages normaux de
 
 ## Journaux d'utilisation de l'IA
 
-Dastra conserve l'historique des appels à l'assistant IA. La carte **Utilisation de l'IA** de **Paramètres de l'organisation** > **Assistant IA** affiche les **90 derniers jours** dans l'onglet **Logs (90 jours)**, réservé aux propriétaires de l'organisation. Pour chaque appel, les informations suivantes sont enregistrées :
+Dastra conserve l'historique des appels à l'assistant IA. La carte **Utilisation de l'IA** de **Paramètres de l'organisation** > **Dastra AI** affiche les **90 derniers jours** dans l'onglet **Journaux (90 jours)**, réservé aux propriétaires de l'organisation. Pour chaque appel, les informations suivantes sont enregistrées :
 
 | Champ | Description |
 | --- | --- |
@@ -106,11 +112,11 @@ Dastra conserve l'historique des appels à l'assistant IA. La carte **Utilisatio
 | **Durée** | Temps de traitement de la requête |
 | **Utilisateur** | Membre de l'espace de travail ayant déclenché la génération |
 
-Les onglets **Crédits par utilisateur** et **Crédits par opération** cumulent la consommation du mois en cours.
+Les onglets **Crédits par utilisateur** et **Crédits par opération** cumulent la consommation sur une période que vous choisissez avec le sélecteur de période. Elle commence le premier jour du mois en cours.
 
 ## Crédits et quotas IA
 
-Dastra mesure la consommation de l'assistant IA en **crédits IA** (et non en tokens). Le quota est mensuel et commun à tous les espaces de travail de l'organisation : il dépend de l'offre et de l'abonnement, et se renouvelle automatiquement le premier jour de chaque mois. Les échanges avec Dastra AI et les exécutions des agents consomment le même quota.
+Dastra mesure la consommation de l'assistant IA en **crédits IA**. Le quota est mensuel et commun à tous les espaces de travail de l'organisation : il dépend de l'offre et de l'abonnement, et se renouvelle automatiquement le premier jour de chaque mois. Les échanges avec Dastra AI et les exécutions des agents consomment le même quota.
 
 Une génération réussie consomme des crédits selon le type d'opération. Une génération en échec ou en cours n'est jamais décomptée.
 
@@ -120,9 +126,8 @@ Une génération réussie consomme des crédits selon le type d'opération. Une 
 | Analyse de risque, analyse de la valeur métier, évaluation des critères d'AIPD, vérification d'une preuve de test, post-mortem de violation, rapport personnalisé | 2 |
 | Réponse à un questionnaire et traduction d'un questionnaire | 1 par tranche de 25 questions |
 | Caviardage automatique d'un document | 1 par segment de document envoyé |
-| Message envoyé à Dastra AI ou à un agent | 1 par message, quel que soit le nombre d'outils utilisés |
 
-La carte **Utilisation** de **Paramètres de l'organisation** > **Assistant IA** indique la consommation du mois en cours, le quota de l'offre et la date de renouvellement. La **barre de progression** change de couleur selon la part du quota consommée :
+La carte **Utilisation** de **Paramètres de l'organisation** > **Dastra AI** indique la consommation du mois en cours, le quota de l'offre et la date de renouvellement. La **barre de progression** change de couleur selon la part du quota consommée :
 
 * **Vert** : moins de 80 % du quota
 * **Orange** : de 80 % à 99 %
@@ -130,13 +135,11 @@ La carte **Utilisation** de **Paramètres de l'organisation** > **Assistant IA**
 
 Lorsque le quota mensuel est atteint, un message vous en informe et propose de contacter l'équipe Dastra.
 
-Dans le panneau Dastra AI, tous les utilisateurs voient l'état du quota : un compteur discret à partir de 50 %, une bannière orange à partir de 80 %, puis une bannière rouge à 100 %, qui bloque l'envoi de nouveaux messages (l'historique reste consultable).
+Dans le panneau Dastra AI, tous les utilisateurs voient l'état du quota : un compteur discret des crédits restants à partir de 50 % du quota, une bannière orange à partir de 80 %, puis une bannière rouge à 100 %, qui bloque l'envoi de nouveaux messages (l'historique reste consultable). Un message envoyé alors qu'il reste des crédits est traité en entier, même s'il fait dépasser le quota.
 
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Carte Utilisation de l'assistant IA avec la barre de progression du quota de crédits et l'explication du calcul"><figcaption><p>Suivi de la consommation de crédits IA du mois en cours</p></figcaption></figure>
 
-{% hint style="info" %}
 Lorsque le quota est atteint, les fonctionnalités IA sont désactivées jusqu'au prochain renouvellement. Le reste de la plateforme (données, workflows, exports) continue de fonctionner normalement.
-{% endhint %}
 
 {% hint style="info" %}
 **Fournisseur d'IA personnalisé : pas de décompte pour l'assistant IA.** Lorsque votre organisation utilise un fournisseur d'IA personnalisé, le système de crédits Dastra ne s'applique pas aux fonctions de génération de l'assistant IA. La consommation est gérée directement par votre fournisseur selon ses propres conditions de facturation. Dastra AI et les agents utilisent les modèles de Dastra : leurs messages consomment toujours le quota de crédits et sont bloqués lorsqu'il est atteint.
@@ -146,9 +149,7 @@ Lorsque le quota est atteint, les fonctionnalités IA sont désactivées jusqu'a
 
 ## Quelles données sont transmises au modèle ?
 
-{% hint style="info" %}
 Dastra ne transmet **aucune donnée de votre espace de travail** au modèle IA sans que vous en soyez à l'origine. Seules les informations listées ci-dessous, selon la fonctionnalité utilisée, sont incluses dans la requête envoyée au modèle.
-{% endhint %}
 
 | Fonctionnalité                                             | Données transmises au modèle                                                                                                                                         | Données personnelles potentielles                                       |
 | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
@@ -183,15 +184,13 @@ Dastra ne transmet **aucune donnée de votre espace de travail** au modèle IA s
 | **Description d'une règle de workflow** | Type d'objet, déclencheur, action et conditions de la règle, et texte déjà saisi | Non, sauf si une condition contient une valeur nominative |
 | **Action HTTP d'une règle de workflow** | Type d'objet, instruction, extrait de documentation d'API collé, colonnes de l'objet (nom, libellé, type, valeurs possibles) et configuration en cours (URL dont les valeurs de paramètres sont masquées, méthode, noms des en-têtes sans leurs valeurs, corps de la requête). Jamais de données d'enregistrement ni d'identifiants | Peu probable, sauf si la documentation collée ou le corps de la requête en contient |
 | **Mapping de champs d'une intégration** | Connecteur, champs source et colonnes cibles de Dastra (clé, libellé, type, valeurs possibles), règles de mapping existantes. Métadonnées uniquement, sans données d'exemple | Non |
-| **Discuter avec Dastra AI ou un agent** | Votre message et l'historique de la conversation, les consignes de l'agent, les valeurs de ses champs de saisie, le résultat des outils (contenu des fiches auxquelles vous avez accès) et les pièces jointes. Les images et les PDF sont envoyés au modèle ; les autres formats ne sont pas lus. Le filtre de masquage n'est pas appliqué. Les conversations sont enregistrées dans Dastra, et vous pouvez les supprimer ; les pièces jointes sont conservées 180 jours | **Oui**, selon les fiches consultées et les pièces jointes |
+| **Discuter avec Dastra AI ou un agent** | Votre message et l'historique de la conversation, les consignes de l'agent, les valeurs de ses champs de saisie, le résultat des outils (contenu des fiches auxquelles vous avez accès) et les pièces jointes. Les images et les PDF sont envoyés au modèle ; les autres formats ne sont ouverts que par l'exécution de code, lorsqu'elle est disponible. Le filtre de masquage n'est pas appliqué. Les conversations sont enregistrées dans Dastra, et vous pouvez les supprimer ; les pièces jointes sont conservées 180 jours | **Oui**, selon les fiches consultées et les pièces jointes |
 
 Avec le [serveur MCP](mcp.md), les données lues sont transmises à l'outil d'IA que vous avez connecté, soumis à ses propres conditions, et non à un modèle de Dastra.
 
 {% hint style="warning" %}
 **Offre Bleu.** Les données du tableau sont transmises à Mistral AI, et non à Azure. Pour Dastra AI et les agents, les images jointes sont envoyées au modèle et les autres fichiers sont envoyés sous forme de texte extrait. Le caviardage automatique utilise la reconnaissance de caractères (OCR) de Mistral. L'exécution de code de Dastra AI n'est pas disponible.
-{% endhint %}
 
-{% hint style="warning" %}
 **Bonne pratique** : évitez d'inclure des données à caractère personnel directement dans les champs de texte libre (descriptions, instructions personnalisées). Utilisez des identifiants ou des termes génériques lorsque c'est possible.
 {% endhint %}
 
@@ -208,8 +207,6 @@ Les éléments suivants ne font **jamais** partie des requêtes envoyées au mod
 
 Les modèles Azure utilisés par Dastra sont **sans état (stateless)** : les prompts et les résultats ne sont pas stockés dans le modèle et ne sont pas utilisés pour réentraîner ou améliorer les modèles de base.
 
-{% hint style="info" %}
 **Exception : détection des abus** : Microsoft Azure maintient un mécanisme automatisé de surveillance des contenus potentiellement abusifs. Si un prompt est signalé, un échantillon peut être conservé temporairement dans un espace de stockage isolé par client, aux fins de revue. Pour les ressources déployées dans l'EEE (ce qui est le cas de Dastra), les éventuels réviseurs humains sont également situés dans l'EEE. Cette conservation reste exceptionnelle et ne concerne pas les usages normaux de la plateforme.
-{% endhint %}
 
 Pour plus d'informations, consultez la [documentation Microsoft sur la confidentialité des données Azure Direct Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).

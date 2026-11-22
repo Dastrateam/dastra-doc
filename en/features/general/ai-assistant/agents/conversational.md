@@ -7,7 +7,7 @@ description: >-
 
 A conversational agent is a chat assistant you specialise on a topic: a DPO assistant that only answers from the record of processing activities, a procurement assistant that checks vendor contracts, a security assistant that helps qualify an incident.
 
-Go to **Workspace settings > AI agents**, click **Create agent**, then **Conversational Agent**.
+Go to **Automation** > **Dastra AI** > **Agents**, click **Create agent**, then **Conversational Agent**.
 
 ***
 
@@ -15,7 +15,7 @@ Go to **Workspace settings > AI agents**, click **Create agent**, then **Convers
 
 The name and description identify the agent in the list and in the agent selector. You can also give it a **logo**, which becomes its avatar in the conversation.
 
-The name is limited to 120 characters, the description to 1000.
+The name is limited to 120 characters. The description, limited to 3000 characters, accepts basic Markdown formatting.
 
 ### Chat configuration
 
@@ -42,28 +42,32 @@ An effective instruction states:
 
 #### Conversation starters
 
-The suggested questions shown under the welcome message. They act as an implicit user guide: pick them to showcase the uses you want to encourage. Add as many as you need with **Add a starter**.
+The suggested questions shown under the welcome message. They act as an implicit user guide: pick them to showcase the uses you want to encourage. Add as many as you need with **Add starter**.
 
 ***
 
 ### Tools
 
-By default an agent has access to **all** tools. Answer **Yes** to "Do you want to customize the list of tools this agent can use?" to restrict that list.
-
-<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Tool picker split into read-only tools and editing tools"><figcaption><p>Tools are grouped into read-only tools and editing tools</p></figcaption></figure>
+{% columns %}
+{% column %}
+By default an agent has access to **all** tools. Each group below has three options, **All**, **None** and **Custom**. Choose **Custom** to switch on only the tools you want. An agent needs at least one tool.
 
 Tools come in two groups:
 
-* **Read-only tools**: searching the workspace, reading a record, reading comments and files, searching the Dastra documentation and the regulation corpus, searching the web.
-* **Editing tools**: creating and updating records, adding comments, changing workflow state, creating tasks and tags, planning and filling in questionnaires.
+* **Read-only tools**: searching the workspace, the Dastra documentation, the regulation corpus and the web, browsing and reading records, comments, files and questionnaires, building [artifacts](../artifacts.md), exporting records.
+* **Editing tools**: creating and updating records, running record actions such as changing the workflow step, adding comments, creating action plans and tags, planning and filling in questionnaires, writing documents, linking files.
+
+Asking you a question and taking you to a page of Dastra are always available in a conversation: they are not in the list.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Tool picker split into read-only tools and editing tools" width="500"><figcaption><p>Tools are grouped into read-only tools and editing tools</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 {% hint style="warning" %}
 Restricting tools is the safest way to keep an agent on rails. An assistant meant to answer questions needs no editing tool at all: do not give it any.
 {% endhint %}
-
-### Notified users
-
-The people who will receive a Dastra notification when a run of the agent finishes.
 
 ***
 
@@ -71,12 +75,12 @@ The people who will receive a Dastra notification when a run of the agent finish
 
 Inside the conversation, a selector switches between two modes:
 
-* **Ask**: the agent is read-only. It can search, read and analyse, but nothing is modified.
+* **Ask**: the agent is read-only. It can search and read, but nothing is modified.
 * **Edit**: the agent can create and update records. Editing tools are only available in this mode.
 
 Edit mode depends on your plan and on the matching permission. If your plan does not include it, the **Edit** option is locked. Without the write permission of the assistant, the selector does not appear. In both cases, editing tools stay inactive, even when they are ticked in the agent definition.
 
-In the conversation, each editing tool asks for your confirmation before it runs. The agent can neither delete nor anonymize a record: these actions are not offered to it.
+In the conversation, each editing tool shows an **Authorization required** card before it runs: choose **Approve**, **Always approve for this session** or **Decline**. The agent can neither delete nor anonymize a record: these actions are not offered to it.
 
 ***
 
@@ -86,17 +90,18 @@ The **chat preview**, on the right of the editor, is a real conversation with th
 
 ### Using the agent day to day
 
-Once the agent is **Enabled**, workspace users reach it:
+Once the agent is activated, workspace users who can run custom agents reach it:
 
 * from the **Dastra AI** panel, at the bottom right of the screen;
 * with the **Ctrl+J** keyboard shortcut (**Cmd+J** on Mac);
-* from the full-screen Dastra AI page.
+* from the Dastra AI page, in **Automation** > **Dastra AI** > **Conversations**, where the agents are listed under **Agents**;
+* with **Open in chat**, in the details window of the agent in the list.
 
 The **Choose an agent** selector, at the top of the conversation, switches between agents.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-chat.png" alt="Conversation with a custom agent showing its welcome message and starters"><figcaption><p>The agent shows its welcome message and its conversation starters</p></figcaption></figure>
 
-Every answer can be rated thumbs up or thumbs down, with a comment. That feedback helps you tune the agent's instruction.
+Every answer can be rated with **Good response** or **Bad response**. A bad response opens a window where you can add a comment.
 
 ***
 

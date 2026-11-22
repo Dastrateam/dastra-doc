@@ -6,10 +6,6 @@ description: >-
 
 # Active Directory (Microsoft Entra ID)
 
-Découvrez dans le guide vidéo comment configurer le SSO Active Directory (Microsoft Entra ID) pas à pas :
-
-{% embed url="https://www.youtube.com/embed/SUC_J489wjI?si=VPoD5nAxG_i1-AEp" %}
-
 ## Configuration de l'application dans Microsoft Entra ID
 
 * Rendez-vous dans le centre d'administration Microsoft Entra : [https://entra.microsoft.com](https://entra.microsoft.com)

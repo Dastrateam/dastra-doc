@@ -22,6 +22,8 @@ from pathlib import Path
 from urllib.parse import unquote
 
 LANGS = ("fr", "en", "de", "nl")
+DESCRIPTION_MAX = 200
+IMAGE_FULL_WIDTH = 1200  # px; narrower screenshots are partial and get a width (2x captures)
 SKILL_DIR = Path(__file__).resolve().parent.parent
 
 EMOJI = re.compile(
@@ -238,6 +240,18 @@ def structure(text):
     )
 
 
+def png_size(path):
+    """(width, height) read from a PNG header, or None."""
+    try:
+        with open(path, "rb") as f:
+            head = f.read(24)
+    except OSError:
+        return None
+    if head[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+
+
 def broken_links(raw, page_dir):
     """Relative link, image and content-ref targets of a line that do not exist on disk."""
     targets = re.findall(r"\]\(<([^>]+)>\)", raw) + re.findall(r"\]\(([^)<\s]+)", raw)
@@ -253,6 +267,27 @@ def broken_links(raw, page_dir):
         if not (full.exists() or full.with_suffix(".md").exists() or (full / "README.md").exists()):
             broken.append(target)
     return broken
+
+
+def front_matter_description(fm_lines):
+    """Returns (line number, text) of the description, as GitBook displays it, or None."""
+    for i, raw in enumerate(fm_lines):
+        match = re.match(r"description:\s*(.*)$", raw)
+        if not match:
+            continue
+        value = match.group(1).strip()
+        if value[:1] in (">", "|"):
+            block = []
+            for nxt in fm_lines[i + 1:]:
+                if nxt.strip() and not nxt.startswith((" ", "\t")):
+                    break
+                block.append(nxt.strip())
+            separator = "\n" if value.startswith("|") else " "
+            value = separator.join(part for part in block if part)
+        elif len(value) > 1 and value[0] == value[-1] and value[0] in "'\"":
+            value = value[1:-1].replace("''", "'") if value[0] == "'" else value[1:-1].replace('\\"', '"')
+        return i + 2, value
+    return None
 
 
 def check_page(rel, root, glossary, labels):
@@ -272,6 +307,11 @@ def check_page(rel, root, glossary, labels):
             key = re.match(r"([^\s:#][^:]*):", raw)
             if key and key.group(1) not in FRONT_MATTER_KEYS:
                 add(no, "error", "front-matter", f"\"{key.group(1)}\" is not a GitBook key: keys stay in English (description:)", raw)
+        description = front_matter_description(lines[1:front_matter_end - 1])
+        if description and len(description[1]) > DESCRIPTION_MAX:
+            add(description[0], "error", "description-length",
+                f"description has {len(description[1])} characters: GitBook cuts it at {DESCRIPTION_MAX}",
+                description[1][DESCRIPTION_MAX - 20:])
 
     page_dir = (root / rel).parent
     in_code = False
@@ -289,6 +329,12 @@ def check_page(rel, root, glossary, labels):
             add(no, "error", "link", f"\"{target}\" does not exist", raw)
         if re.search(r"<img\b[^>]*\balt=\"\s*\"", raw):
             add(no, "warning", "alt", "describe what the figure shows in alt", raw)
+        for src in re.findall(r"<img\b(?![^>]*\bwidth=)[^>]*\bsrc=\"([^\"]+\.png)\"", raw):
+            size = png_size(page_dir / unquote(src))
+            if size and (size[0] < IMAGE_FULL_WIDTH or size[1] > size[0]):
+                add(no, "hint", "image-width",
+                    f"{Path(src).name} is {size[0]}x{size[1]}: add width=\"{min(500, max(250, size[0] // 2))}\" "
+                    "or put it in columns beside its text", raw)
         if MENU_PATH.search(line) and "→" in line:
             add(no, "warning", "menu-path", "separate the steps of a menu path with >, not →", raw)
 

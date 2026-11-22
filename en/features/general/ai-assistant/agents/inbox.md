@@ -8,7 +8,7 @@ description: >-
 
 The **Inbox** gathers the run history of your agents: what was started, by what, when, and with what outcome.
 
-You will find it in **Workspace settings > AI agents > Inbox**.
+You will find it in **Automation** > **Dastra AI** > **Inbox**.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-inbox.png" alt="Inbox listing agent runs"><figcaption><p>The Inbox, with the status and the source of every run</p></figcaption></figure>
 
@@ -33,7 +33,7 @@ The **Continue in chat** button carries the result of the run into a new convers
 
 ### Statuses
 
-Some statuses are technical; others are **declared by the agent itself** at the end of its work. They are conclusions, not failures.
+Some statuses are technical. The others come from a closing review: once the agent has written its final report, Dastra reads that report alone and picks the status that describes what it says happened. They are conclusions, not failures.
 
 | Status | Meaning |
 | --- | --- |
@@ -55,8 +55,8 @@ A **Missing information** or **Human review required** status usually points bac
 
 ### Notifications
 
-If you are one of an agent's **notified users**, you receive a Dastra notification at the end of every run, successful or failed. This is the recommended way to keep an eye on a scheduled agent without opening the Inbox.
+If you are one of an agent's **notified users**, you receive a Dastra notification at the end of every run. It tells whether the run completed (**Completed** or **Human review required**) or not. This is the recommended way to keep an eye on a scheduled agent without opening the Inbox. When you start a run yourself, the **Open Dastra AI** button also tells you when it has finished.
 
 ### Technical log
 
-For organization-level monitoring (model used, duration, user behind the call) see the **AI assistant invocation logs** in **Organization settings > Dastra AI**. They are kept for 90 days.
+For organization-level monitoring (model used, duration, user behind the call) see the **Logs (90 days)** tab of the **AI usage** card, in **Organization settings** > **Dastra AI**. They show the last 90 days.

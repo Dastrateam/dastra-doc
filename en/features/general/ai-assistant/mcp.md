@@ -61,10 +61,10 @@ Reserved for automation and environments without a browser. You add an HTTP head
 | `X-API-Key` | The private key of your API key |
 
 {% hint style="danger" %}
-**The API key must be bound to a workspace**, otherwise the MCP connection is refused. When creating the key in the **API keys** tab, fill in the **Select a specific workspace** field. Eligible keys carry an `MCP` badge in the list.
+**The API key must allow MCP access and be bound to a workspace**, otherwise the MCP connection is refused. When creating the key in the **API keys** tab, turn on **Allow this key to access the MCP server (requires a specific workspace)** and fill in the **Select a specific workspace** field. The keys that allow MCP carry an `MCP` badge in the list.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="API key creation with the workspace selector"><figcaption><p>The “Select a specific workspace” field is what makes a key usable for MCP</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="API key creation with the MCP switch and the workspace selector" width="600"><figcaption><p>The MCP switch and the **Select a specific workspace** field make a key usable for MCP</p></figcaption></figure>
 
 The general procedure for creating a key is described in [API key management](../../settings/api-keys.md).
 
@@ -156,6 +156,7 @@ Once connected, your tool has around thirty Dastra tools at its disposal.
 | Reading a record | Fetches one record by type and identifier |
 | Inspecting record structure | Describes the fields and columns of a record type |
 | Checking editable fields | Says which fields can be updated, and in what format |
+| Checking available actions | Lists the actions a record type offers (archive, restore, clone, change the workflow step, etc.) and what each one expects |
 | Reading comments | Lists the comments of a record |
 | Reading files | Lists the files of the workspace or of a record |
 | Reading a file | Extracts the text of a PDF, DOCX, XLSX, HTML, TXT, CSV, JSON or Markdown file |
@@ -167,23 +168,22 @@ Once connected, your tool has around thirty Dastra tools at its disposal.
 | Checking regulations | Queries the regulation corpus indexed by Dastra (GDPR, NIS2, DORA, ISO 27001…) with cited sources |
 | Listing regulation categories | Gives the categories usable for regulation search |
 | Searching documentation | Searches the Dastra documentation |
-| Searching the web | Public web search, as a last resort |
-| Analyzing the record | Produces a compliance analysis graded A to F, with improvement suggestions |
+| Reading the workspace profile | Returns the workspace name, branding, language, plan, enabled features and quota usage |
 | Record links | Builds clickable Dastra web app URLs for records |
 
 ### Editing tools
 
 | Tool | What it does |
 | --- | --- |
-| Creating a record | Creates an empty record |
-| Drafting a record | Generates a complete record from a description and imports it |
+| Creating a record | Creates a record with the fields its type requires |
 | Updating record(s) | Updates up to 50 records at once |
-| Changing workflow state | Moves a record to another stage |
+| Running an action | Runs one of the actions of a record type on one or several records, for example changing the workflow step |
 | Adding a comment | Comments a record, mentions included |
 | Creating an action plan | Creates up to 10 tasks linked to a record |
 | Creating a tag | Creates a tag for a record type |
 | Writing a document | Creates or updates a Markdown document in the file manager |
 | Linking a file | Attaches an existing file to a record |
+| Uploading a file | Stores a small file (under 2 MB) in the documents of the workspace, or replaces the content of an existing one |
 | Planning questionnaire | Instantiates a questionnaire from a template and assigns it |
 | Updating questionnaire | Fills in the answers of a planned questionnaire |
 
@@ -204,7 +204,7 @@ A few points worth knowing:
 * **Revocation**: a connection approved from the browser becomes an ordinary API key, visible and revocable in the **API keys** tab. Deleting the key cuts access immediately.
 * **Rate limits**: calls are limited to 60 requests per minute on the MCP server, and 120 requests per minute across all uses. Beyond that, the server answers a `429` error stating how long to wait.
 
-The MCP server tools are those of Dastra AI, with a few exceptions: code execution, agent creation and interface navigation do not exist on the MCP side. Conversely, the editing tools are available without the Ask or Edit mode of the chat, and Dastra does not display a confirmation request. Turn on confirmation before execution in your MCP client if you want to approve each change.
+The MCP server tools are those of Dastra AI, with exceptions. Web search, record analysis, drafting a record from a description, [artifacts](artifacts.md), exports, code execution, sub-tasks, agent creation, questions to the user and navigation do not exist on the MCP side. Record links and file upload exist only on the MCP side. The editing tools are available without the Ask or Edit mode of the chat, and Dastra does not display a confirmation request. Turn on confirmation before execution in your MCP client if you want to approve each change.
 
 {% hint style="warning" %}
 An API key used for MCP grants read **and write** access to an entire workspace. Treat it like a password: never publish it, and revoke it at the slightest doubt.
@@ -218,6 +218,7 @@ An API key used for MCP grants read **and write** access to an entire workspace.
 | --- | --- |
 | Tool calls are refused with a subscription message | The MCP server is not included in your plan. It requires Dastra AI Pro |
 | "API key must be bound to a specific workspace" | The key was created without a workspace: create a new one and fill in that field |
+| "MCP access is not enabled for this API key" | The key was created without the MCP switch: create a new one with **Allow this key to access the MCP server** turned on |
 | No Dastra tool appears in your client | The connection was not completed. In Claude, open the connector and click **Connect**; in Claude Code, type `/mcp` |
 | Le Chat refuses the API key | Expected: Le Chat only supports browser sign-in |
 | You have to sign in again constantly | Long-lived access was not granted: remove the connector and connect again |

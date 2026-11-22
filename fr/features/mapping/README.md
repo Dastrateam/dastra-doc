@@ -6,8 +6,6 @@ description: >-
 
 # Cartographie des données
 
-{% embed url="https://youtu.be/Cl8aBeX68s4" %}
-
 ## Tout commence par une cartographie des données <a href="#id-0-label" id="id-0-label"></a>
 
 Avant de constituer vos traitements, cartographiez le plus précisément possible les données de l'organisation. Dans l'application, ce module s'appelle **Référentiels**. Le schéma ci-dessous présente la structure de la cartographie que vous pouvez mettre en place.
@@ -54,10 +52,7 @@ Pour documenter un lien que la plateforme ne déduit pas, par exemple un actif l
 
 Les mesures de sécurité disposent de leur propre référentiel (voir [Mesures de sécurité](repositories/security-measures.md)) : saisissez-les une fois, puis rattachez-les aux actifs dans la section **Mesures de sécurité associées** de la fiche de l'actif. Ces informations figurent souvent dans le DPA signé avec l'éditeur. Préférez des libellés courts (Antivirus, Pare-feu applicatif, Contrôles d'accès) : une mesure peut ainsi être réutilisée d'un actif à l'autre.
 
-{% embed url="https://youtu.be/5gHAl_8Tdv4" %}
-
 ## Gérez vos sous-traitants
 
 Un sous-traitant est un [acteur](repositories/stakeholders.md) de votre cartographie. Renseignez-le comme **Editeur** de l'actif : il pourra ensuite être référencé comme sous-traitant lorsque cet actif est mentionné dans un traitement. Sur la fiche de l'acteur, vous pouvez aussi enregistrer ses sous-traitants ultérieurs, pour cartographier toute la chaîne de sous-traitance.
 
-{% embed url="https://youtu.be/VATg9fGMeU0" %}

@@ -8,8 +8,6 @@ description: >-
 
 ## Un processus de création de traitement qui vous guide pas à pas
 
-{% embed url="https://www.youtube.com/embed/videoseries?list=PL-EvtNdEiDxEzGBBTfGHy25vS6COmcgeQ&si=q8iJKz0VjemfjzbO" %}
-
 L'application Dastra vous accompagne à chaque étape de la création d'un traitement, tout en vous laissant avancer à votre rythme. Des conseils sont proposés à chaque étape pour vous aider à respecter les exigences du RGPD.
 
 ## Le questionnaire de traitement Dastra
@@ -106,11 +104,7 @@ Une fois que vous avez saisi les informations dont vous disposez, vous pouvez co
 [README.md](../../tasks/README.md)
 {% endcontent-ref %}
 
-{% embed url="https://youtu.be/pz61gKChilY" %}
-
 ## Les indicateurs des traitements
-
-{% embed url="https://youtu.be/QAmXR4y2RYU" %}
 
 Le questionnaire n'est pas le seul guide disponible pour remplir un traitement. Trois indicateurs vous aident à évaluer à quel point le traitement est complet, bien documenté et sensible. Ils sont affichés dans le panneau à droite du traitement et dans sa section **Récapitulatif** :
 

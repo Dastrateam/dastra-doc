@@ -5,7 +5,7 @@ description: >-
 
 # 🚀 Get started in 5 minutes
 
-This guide takes you from your first login to your first documented processing activity in the Dastra record.
+This guide takes you from your first login to your first documented processing activity in the Dastra record. To find your way around the interface, see [Navigate in Dastra](navigation.md).
 
 ***
 
@@ -44,7 +44,7 @@ Dastra then opens the users page of the new workspace, where you can add its mem
 
 The **record of processing activities** is at the heart of Dastra. Start with a simple activity, such as payroll or business email.
 
-1. In the left menu, click **Record of processing activities**.
+1. In the left menu, click **ROPA**, then **Record of processing activities**.
 2. Click **Create data processing**.
 3. Choose how to create it:
 
@@ -100,6 +100,10 @@ The invited person receives an access link by email.
 ## What's next?
 
 To go further:
+
+{% content-ref url="navigation.md" %}
+[navigation.md](navigation.md)
+{% endcontent-ref %}
 
 {% content-ref url="tutorial/README.md" %}
 [tutorial](tutorial/README.md)

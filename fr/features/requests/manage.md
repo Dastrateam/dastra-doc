@@ -6,8 +6,6 @@ description: >-
 
 # Gestion des demandes d'exercices de droits
 
-{% embed url="https://youtu.be/ZNY5oz9xJVo" %}
-
 ## Création d'une demande de droit
 
 Une demande de droit peut être créée de 5 manières dans Dastra :
@@ -20,8 +18,6 @@ Une demande de droit peut être créée de 5 manières dans Dastra :
 
 ### Création d'une demande manuellement
 
-{% embed url="https://youtu.be/UsTkoYcqYkI" %}
-
 Pour créer une demande manuellement depuis le registre, cliquez sur **Demandes** dans la barre latérale, puis sur **Registre des demandes** et sur le bouton **Créer une demande**.
 
 <figure><img src="../../.gitbook/assets/requests-manage-1.png" alt="Le registre des demandes, avec le bouton Créer une demande"><figcaption><p>Le registre des demandes</p></figcaption></figure>
@@ -31,8 +27,6 @@ Vous pouvez également créer des demandes automatiquement (voir ci-dessous).
 {% endhint %}
 
 ### Création d'une demande via une adresse e-mail de collecte
-
-{% embed url="https://youtu.be/Lxhzm7wjFwk" %}
 
 Pour créer une ou plusieurs demandes à partir d'une adresse e-mail de collecte, activez d'abord l'intégration **Adresse mail de collecte** (voir [la page de l'intégration](../settings/mailboxes.md)).
 
@@ -67,8 +61,6 @@ Les demandes peuvent aussi être créées depuis un autre outil grâce à l'API 
 {% endcontent-ref %}
 
 ## Import / Export des demandes
-
-{% embed url="https://youtu.be/31AMZz-DMm8" %}
 
 Cliquez sur la flèche à côté du bouton **Créer une demande**, puis sur **Importer**.
 

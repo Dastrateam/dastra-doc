@@ -8,8 +8,6 @@ description: >-
 
 ## Models and hosting
 
-<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Dastra AI page of the organization settings with the model family and the credit tracking"><figcaption><p>Organization settings > Dastra AI: choose the model family and track credits</p></figcaption></figure>
-
 Dastra uses pre-trained generative AI models, available in four families to choose from:
 
 | Family | Configured models | Hosting |
@@ -25,6 +23,8 @@ For the first three families, models are hosted on Microsoft Azure infrastructur
 **Bleu offer.** On [Bleu](../../../security/bleu.md), the AI features do not go through Azure: they are run by Mistral AI, a French company outside the Bleu perimeter. The table above does not apply. Only the Mistral family is used, and any OpenAI or Open source preference is replaced by Mistral: Mistral Small for the Fast tier, Mistral Large for the Smart and Large context tiers. Dastra AI and agents use Mistral Medium, and voice dictation uses Mistral Voxtral.
 {% endhint %}
 
+{% columns %}
+{% column %}
 For each family, three model tiers are used depending on task complexity:
 
 * **Fast** (simple actions): generating descriptions, suggesting tags
@@ -32,12 +32,18 @@ For each family, three model tiers are used depending on task complexity:
 * **Large context** (actions processing large volumes of data): answering a questionnaire, compliance analysis
 
 The organization owner chooses the model family in **Organization settings** > **Dastra AI**, in the **AI Assistant settings** card, **AI Models family** field. The change is saved as soon as you select a family.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Dastra AI page of the organization settings with the model family and the credit tracking" width="420"><figcaption><p>Organization settings > Dastra AI: choose the model family and track credits</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 ***
 
 ## Custom AI provider
 
-<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="AI Assistant model families, including the Custom AI provider"><figcaption><p>The Custom AI provider among the model families</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="AI Assistant model families, including the Custom AI provider" width="490"><figcaption><p>The Custom AI provider among the model families</p></figcaption></figure>
 
 Dastra lets you connect your own AI provider with an API key, provided it is compatible with the OpenAI API standard. The providers offered are OpenAI, Google, Anthropic, Mistral and Azure AI Foundry. The **Other** option accepts any other compatible endpoint, including a self-hosted LLM. The custom provider applies to the generation features of the AI assistant (the buttons in each module). Dastra AI (chat), agents and the MCP server keep using Dastra's models.
 
@@ -49,7 +55,7 @@ For recognized providers, the **Base URL** is pre-filled: for Anthropic, it is `
 * You choose the model to use for each tier, with a recommended model proposed by default.
 * The API key is never displayed again in clear text, and credential management is reserved for organization owners.
 
-<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Custom provider credentials window with Anthropic and the Test connection button"><figcaption><p>Anthropic configuration: pre-filled Base URL, API key and "Test connection" button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Custom provider credentials window with Anthropic and the Test connection button" width="400"><figcaption><p>Anthropic configuration: pre-filled Base URL, API key and "Test connection" button</p></figcaption></figure>
 
 {% hint style="warning" %}
 When using a Custom AI provider, data sent to the model is subject to **your provider's** privacy policy, not the Azure guarantees described on this page. Review your provider's terms before enabling this option, especially if your prompts may contain personal data.
@@ -106,11 +112,11 @@ Dastra keeps a history of AI assistant calls. The **AI usage** card of **Organiz
 | **Duration** | Processing time for the request |
 | **User** | Workspace member who triggered the generation |
 
-The **Credits by user** and **Credits by operation** tabs total the consumption of the current month.
+The **Credits by user** and **Credits by operation** tabs total the consumption over a period that you choose with the period picker. It starts on the first day of the current month.
 
 ## AI credits and quotas
 
-Dastra measures AI assistant consumption in **AI credits** (not tokens). The quota is monthly and shared by all the workspaces of the organization: it depends on the plan and subscription, and renews automatically on the first day of each month. Conversations with Dastra AI and agent runs use the same quota.
+Dastra measures AI assistant consumption in **AI credits**. The quota is monthly and shared by all the workspaces of the organization: it depends on the plan and subscription, and renews automatically on the first day of each month. Conversations with Dastra AI and agent runs use the same quota.
 
 A successful generation consumes credits according to the type of operation. A failed or running generation is never counted.
 
@@ -120,7 +126,6 @@ A successful generation consumes credits according to the type of operation. A f
 | Risk analysis, business value analysis, DPIA criteria assessment, test evidence verification, data breach post-mortem, custom report | 2 |
 | Answering a questionnaire and translating a questionnaire | 1 per 25 questions |
 | Automatic document redaction | 1 per document segment sent |
-| Message sent to Dastra AI or to an agent | 1 per message, whatever the number of tools used |
 
 The **Usage** card of **Organization settings** > **Dastra AI** shows the consumption of the current month, the quota of the plan and the renewal date. The **progress bar** changes color according to the share of the quota consumed:
 
@@ -130,13 +135,11 @@ The **Usage** card of **Organization settings** > **Dastra AI** shows the consum
 
 When the monthly quota is reached, a message informs you and offers to contact the Dastra team.
 
-In the Dastra AI panel, all users see the quota status: a discreet counter from 50%, an orange banner from 80%, then a red banner at 100%, which blocks sending new messages (the history stays available).
+In the Dastra AI panel, all users see the quota status: a discreet counter of the remaining credits from 50% of the quota, an orange banner from 80%, then a red banner at 100%, which blocks sending new messages (the history stays available). A message sent while credits remain is processed in full, even if it takes the consumption past the quota.
 
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Usage card of the AI assistant with the credit quota progress bar and the explanation of the calculation"><figcaption><p>Tracking of current-month AI credit consumption</p></figcaption></figure>
 
-{% hint style="info" %}
 When the quota is reached, AI features are disabled until the next renewal. The rest of the platform (data, workflows, exports) continues to work normally.
-{% endhint %}
 
 {% hint style="info" %}
 **Custom AI provider: no credit counting for the AI assistant.** When your organization uses a Custom AI provider, the Dastra credit system does not apply to the generation features of the AI assistant. Consumption is managed directly by your own provider according to its own billing terms. Dastra AI and agents use Dastra's models: their messages still consume the credit quota and are blocked once it is reached.
@@ -146,9 +149,7 @@ When the quota is reached, AI features are disabled until the next renewal. The 
 
 ## What data is transmitted to the model?
 
-{% hint style="info" %}
 Dastra transmits **no data from your workspace** to the AI model unless you initiate it. Only the information listed below, depending on the feature used, is included in the request sent to the model.
-{% endhint %}
 
 | Feature                                           | Data transmitted to the model                                                                                                                                    | Potential personal data                                      |
 | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -183,15 +184,13 @@ Dastra transmits **no data from your workspace** to the AI model unless you init
 | **Workflow rule description** | Object type, trigger, action and conditions of the rule, and the text already entered | No, unless a condition contains a named value |
 | **HTTP action of a workflow rule** | Object type, instruction, pasted API documentation excerpt, columns of the object (name, label, type, possible values) and the current configuration (URL with parameter values masked, method, header names without their values, request body). Never record data or credentials | Unlikely, unless the pasted documentation or the request body contains some |
 | **Integration field mapping** | Connector, source fields and Dastra target columns (key, label, type, possible values), existing mapping rules. Metadata only, without sample data | No |
-| **Chat with Dastra AI or an agent** | Your message and the conversation history, the agent's instructions, the values of its input fields, the result of the tools (content of the records you can access) and attachments. Images and PDFs are sent to the model; other formats are not read. The masking filter is not applied. Conversations are saved in Dastra, and you can delete them; attachments are kept for 180 days | **Yes**, depending on the records consulted and the attachments |
+| **Chat with Dastra AI or an agent** | Your message and the conversation history, the agent's instructions, the values of its input fields, the result of the tools (content of the records you can access) and attachments. Images and PDFs are sent to the model; other formats are only opened by code execution, where it is available. The masking filter is not applied. Conversations are saved in Dastra, and you can delete them; attachments are kept for 180 days | **Yes**, depending on the records consulted and the attachments |
 
 With the [MCP server](mcp.md), the data read is sent to the AI tool you connected, subject to its own terms, and not to a Dastra model.
 
 {% hint style="warning" %}
 **Bleu offer.** The data in the table is sent to Mistral AI, not to Azure. For Dastra AI and agents, attached images are sent to the model and other files are sent as extracted text. Automatic redaction uses Mistral's optical character recognition (OCR). Code execution in Dastra AI is not available.
-{% endhint %}
 
-{% hint style="warning" %}
 **Best practice**: avoid including personal data directly in free text fields (descriptions, custom instructions). Use identifiers or generic terms where possible.
 {% endhint %}
 
@@ -208,8 +207,6 @@ The following are **never** part of the requests sent to the AI model:
 
 The Azure models used by Dastra are **stateless**: prompts and results are not stored in the model and are not used to retrain or improve base models.
 
-{% hint style="info" %}
 **Exception: abuse detection**: Microsoft Azure maintains an automated mechanism for monitoring potentially abusive content. If a prompt is flagged, a sample may be temporarily retained in a customer-isolated storage environment for review purposes. For resources deployed in the EEA (which is the case for Dastra), any human reviewers involved are also located in the EEA. This retention remains exceptional and does not apply to normal platform usage.
-{% endhint %}
 
 For more information, see the [Microsoft documentation on Azure Direct Models data privacy](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).

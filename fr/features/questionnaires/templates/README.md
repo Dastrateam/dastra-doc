@@ -8,8 +8,6 @@ Un modèle de questionnaire décrit les sections, les questions et les règles d
 
 ## Créer ou modifier un modèle de questionnaire
 
-{% embed url="https://youtu.be/bESwC6iMcI8" %}
-
 Pour créer un modèle, cliquez sur **Créer modèle** en haut de la liste **Modèles de questionnaires**. Le bouton est grisé lorsque vous avez atteint le nombre de modèles de votre abonnement.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-1.png" alt="Liste des modèles de questionnaires avec les boutons Planifier questionnaire et Créer modèle"><figcaption><p>La liste des modèles de questionnaires</p></figcaption></figure>
@@ -198,7 +196,7 @@ Lorsque vous installez un modèle de la bibliothèque Dastra et que ce modèle e
 Le nombre de modèles disponibles dépend de votre souscription. Ce quota est partagé entre tous les espaces de travail de votre organisation. La corbeille des modèles compte dans ce quota : pensez à vider régulièrement les modèles inutilisés pour libérer des emplacements.
 {% endhint %}
 
-## Historique, export et contribution
+## Historique et export
 
 Dans l'éditeur, le menu à côté du bouton **Enregistrer** donne accès à plusieurs actions :
 
@@ -206,16 +204,13 @@ Dans l'éditeur, le menu à côté du bouton **Enregistrer** donne accès à plu
 * **Planifier questionnaire** ;
 * **Configurer** ;
 * **Historique d'activités** : consulter et restaurer les modifications précédentes du modèle ;
-* **Exporter** : télécharger le modèle (JSON, Excel, CSV, PDF, Word, HTML ou Markdown) ;
-* **Contribuer** : publier le modèle pour tous les utilisateurs de Dastra, pour les utilisateurs autorisés à contribuer.
+* **Exporter** : télécharger le modèle (JSON, Excel, CSV, PDF, Word, HTML ou Markdown).
 
 Pour supprimer un modèle, consultez [Supprimer un questionnaire ou un modèle](../delete.md).
 
 ## Les blocs d'analyse
 
 Les blocs d'analyse affichent un texte personnalisé en fonction du score du questionnaire ou des réponses apportées.
-
-{% embed url="https://youtu.be/Ot4OmgTKtrg" %}
 
 ## Pour aller plus loin
 

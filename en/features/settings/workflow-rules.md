@@ -43,7 +43,7 @@ The number of workflow rules available depends on your plan, from **25 to 100 ru
 
 ## Creating a workflow rule
 
-1. In the side menu, open **Automations**, then **Workflow rules**.
+1. In the side menu, under **Automation**, click **Workflow rules**.
 2. Click **Create a workflow rule**.
 3. Choose **From scratch** to start from a blank canvas, or **From a template** (see [Template library](#template-library)).
 4. Enter the **Rule name** and the **Object type**, then confirm.
@@ -202,7 +202,7 @@ The **Execute an AI agent** action runs an [AI agent](../general/ai-assistant/ag
 
 Fill in the following fields:
 
-* **AI agent to execute**: only agents published in Agent mode are offered. If the list is empty, create an agent in the AI Agents module first.
+* **AI agent to execute**: only agents published in Agent mode are offered. If the list is empty, create an agent in **Automation** > **Dastra AI** > **Agents** first.
 * **Instruction message**: an optional message sent to the agent on every run. It accepts custom variables from the trigger object (type `{{`).
 * **Agent input fields**: the fields defined by the agent appear after you select it. Fill in at least the required ones.
 
@@ -247,7 +247,7 @@ This example automatically cleans up data subject requests whose requester ident
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rules-6.png" alt="Daily rule that closes and anonymizes requests whose identity is not validated one month after creation"><figcaption><p>Every day, close and anonymize the requests whose requester identity has not been validated one month after creation</p></figcaption></figure>
 
-Four complete rules, with their trigger, conditions and actions, are described in [Workflow recipes](../../examples/workflow-recipes.md).
+Four complete rules, with their trigger, conditions and actions, are described in [Workflow configuration examples](../../examples/workflow-recipes.md).
 
 ## Execution history
 

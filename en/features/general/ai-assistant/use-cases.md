@@ -14,6 +14,8 @@ All generation features use the same window: describe the item to generate (or s
 
 In lists, the generation button is an AI icon placed to the left of the create button. It is greyed out if your plan does not include the feature. A few functions, flagged in the relevant sections, do not appear at all in that case. Each generation consumes [AI credits](how-it-works.md#ai-credits-and-quotas).
 
+Modules: [Processing activities](#processing-activities) · [Repositories](#repositories) · [Questionnaires](#questionnaires-dpia-risk-analysis) · [Data subject requests](#data-subject-requests) · [Data breaches](#data-breaches) · [Contracts](#contracts) · [Custom documents and reports](#custom-documents-and-reports) · [AI systems](#ai-systems) · [Workflow rules and integrations](#workflow-rules-and-integrations) · [Frameworks and controls](#frameworks-and-controls)
+
 ***
 
 ## Processing activities
@@ -30,19 +32,25 @@ Quickly generate a processing activity in the format expected by Dastra from a s
 4. Click **Generate** and wait a few moments
 5. On the summary screen, review the proposal and click **Validate**
 
-<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="AI processing activity generation window: input field, language selector, samples and Use existing elements option"><figcaption><p>Generating a processing activity with the AI assistant: samples, generation language and reuse of existing elements</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="AI processing activity generation window: input field, language selector, samples and Use existing elements option" width="315"><figcaption><p>Generating a processing activity with the AI assistant: samples, generation language and reuse of existing elements</p></figcaption></figure>
 
 ### Generate a privacy notice
 
+{% columns %}
+{% column %}
 1. Go to the editing page of a processing activity
-2. In section **11. Documentation**, click **Generate a privacy notice**
+2. In section **11. Documentation**, click **Generate information notice**
 3. Choose the desired format (you can customize the instructions by selecting **Custom**) and the **Notice language**; the interface language is offered by default
 4. Click **Generate**: the preview lets you copy the text of each tab, or click **Export** to get a PDF, Word, HTML or Markdown file
 5. In the **Export information notice** window, the **Add this file to the attachments of this data processing** option, enabled by default, adds the exported file to the attachments of the processing activity; each export creates a new attachment
+{% endcolumn %}
 
-<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Privacy notice preview with the Export action"><figcaption><p>Exporting the AI-generated privacy notice</p></figcaption></figure>
+{% column %}
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Privacy notice preview with the Export action" width="350"><figcaption><p>Exporting the AI-generated privacy notice</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
-<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Export information notice window with the option to add the file to the attachments"><figcaption><p>Adding the exported notice to the attachments of the processing activity</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Export information notice window with the option to add the file to the attachments" width="350"><figcaption><p>Adding the exported notice to the attachments of the processing activity</p></figcaption></figure>
 
 ### Generate the DPIA criteria assessment
 
@@ -139,8 +147,8 @@ In the builder of a saved questionnaire template, click **Translate questionnair
 Generate responses in multiple languages, with customization options (length, formal or informal tone, etc.).
 
 1. Open a request currently being processed
-2. Fill in the information up to the **Communication / Transmission** step
-3. Click **Generate with AI**: the assistant generates a response based on the following information:
+2. Go to the **Response** section
+3. Click **Generate with AI**: the **Requests AI Chatbot** window opens and the assistant generates a response based on the following information:
    * First and last name of the requester
    * Request message
    * Language to use
@@ -150,7 +158,7 @@ Generate responses in multiple languages, with customization options (length, fo
    * Request date and number of days remaining
    * Request status and ID
 4. Edit the proposed text or use the reformulation options (shorten, lengthen, change tone)
-5. Click **Validate this message**, add any attachments, then click **Send**
+5. Click **Use this message**, then send it from Dastra
 
 {% hint style="info" %}
 A limit on the number of calls per minute is in place for this feature.
@@ -214,7 +222,7 @@ The same approach exists for AI models: describe the model (name, publisher, etc
 
 ### Generate an information notice for an AI system
 
-From an AI system record, click **Generate a notice** to automatically produce the information document intended for users or data subjects.
+In the **Documentation** tab of an AI system record, click **Generate your information notice** to automatically produce the information document intended for users or data subjects.
 
 ### Generate the role justification
 
@@ -230,7 +238,7 @@ The assistant analyzes the fields filled in on the AI system record and produces
 
 Once the analysis is generated, click **Print analysis** to export the result as a PDF. This document can be attached to your AI Act compliance file.
 
-<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="AI analysis panel with the Print analysis and Restart analysis buttons"><figcaption><p>The "Print analysis" button exports the analysis result as a PDF</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="AI analysis panel with the Print analysis and Restart analysis buttons" width="490"><figcaption><p>The "Print analysis" button exports the analysis result as a PDF</p></figcaption></figure>
 
 ### Generate the business value assessment
 

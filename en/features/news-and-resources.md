@@ -48,4 +48,14 @@ To use the document templates in your own documents, see [Document templates](fi
 
 ## Webinars
 
-**Webinars** lists the live sessions hosted by Dastra experts. Choose a category on the left, or **All**. Click a webinar to open its registration page in a new tab. When no session is scheduled, the page says **No webinar scheduled soon.**
+The **Webinars** page has a search field, **Search a session...**, and two tabs: **Upcoming sessions** and **Replays**. The search applies to both tabs and follows you when you switch from one to the other. Click **Reset filters** to clear it.
+
+### Upcoming sessions
+
+**Upcoming sessions** lists the live sessions hosted by Dastra experts. Choose a category on the left: **All**, **Webinars** or **Training sessions**. Click a session to open its registration page in a new tab. When no session is scheduled, the page says **No session scheduled soon.**
+
+The **Partners** category appears only for the owner of a partner organization.
+
+### Replays
+
+**Replays** lists the recordings of past sessions, with the publication date on each card. A badge tells **Training** and **Partner** sessions apart from plain webinars. Click a replay to watch the video in Dastra. Click **Download the content** to download the files that come with it. The replay page lets you move from one replay to the next in the order of the list. When no recording is available, the page says **No replay available yet.**

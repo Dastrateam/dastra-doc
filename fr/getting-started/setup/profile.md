@@ -10,11 +10,11 @@ Chaque utilisateur Dastra dispose d'un profil personnel : informations d'identif
 
 Vous pouvez ajouter un logo ou une photo de profil, visible dans Dastra à côté de votre nom. Cliquez sur **Envoyez un logo** et choisissez une image carrée d'au moins 200 x 200 px. Dastra la recadre automatiquement.
 
-<figure><img src="../../.gitbook/assets/getting-started-profile-1.png" alt="Page Profil utilisateur avec le champ de logo et les informations personnelles"><figcaption><p>La page Profil utilisateur</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-profile-1.png" alt="Page Profil utilisateur avec le champ de logo et les informations personnelles"><figcaption><p>La page Profil utilisateur</p></figcaption></figure>
 
 ## Informations personnelles
 
-Les champs suivants peuvent être complétés ou mis à jour à tout moment. Les champs d'adresse, de site web et de bio sont masqués par défaut : cliquez sur **Afficher plus** pour les afficher. Cliquez sur **Enregistrer** pour valider.
+Les champs suivants peuvent être complétés ou mis à jour à tout moment. Cliquez sur **Enregistrer** pour valider. Dastra ne demande ni adresse postale ni site web, conformément à la minimisation des données.
 
 | Champ | Description | Obligation |
 | --- | --- | --- |
@@ -22,9 +22,7 @@ Les champs suivants peuvent être complétés ou mis à jour à tout moment. Les
 | **Nom** | Votre nom de famille | Obligatoire |
 | **Pseudonyme publique** | Pseudonyme utilisé dans le forum des utilisateurs (la communauté) et dans les messages des demandes d'exercice de droits adressés à l'extérieur. 4 caractères minimum : lettres, chiffres et tiret bas | Optionnel |
 | **Numéro de téléphone** | Votre numéro de téléphone professionnel | Optionnel |
-| **Adresse postale**, **Code postal**, **Ville**, **Région**, **Pays** | Vos coordonnées | Optionnel |
-| **Blog/Site web url** | Lien vers votre site ou votre profil professionnel | Optionnel |
-| **Biographie** | Courte description de votre rôle ou de votre fonction | Optionnel |
+| **Description** | Courte description de votre rôle ou de votre fonction | Optionnel |
 
 ## Changer votre adresse e-mail
 
@@ -44,6 +42,8 @@ La section **Langue & fuseau horaire** personnalise l'affichage de Dastra.
 | **Fuseau horaire** | Fuseau horaire utilisé pour afficher les dates et les heures |
 
 Ces préférences ne changent que votre affichage personnel. Elles ne modifient pas la langue des autres membres de l'espace de travail.
+
+Lorsqu'un utilisateur est invité dans un espace de travail, son fuseau horaire démarre avec le fuseau horaire par défaut de cet espace. Il peut le modifier ici. Voir [Définissez le fuseau horaire par défaut](workspace.md).
 
 <figure><img src="../../.gitbook/assets/getting-started-profile-2.png" alt="Sections Email du profil, Langue et fuseau horaire et Réinitialiser les données de préférences"><figcaption><p>Les sections e-mail, langue et préférences</p></figcaption></figure>
 

@@ -4,8 +4,6 @@ description: Découvrez comment gérer les rôles et permissions dans Dastra.
 
 # Gérer les rôles et permissions
 
-{% embed url="https://youtu.be/wNrj3Ru2wz8" %}
-
 Au moment d'inviter un utilisateur, Dastra propose, par défaut, **cinq rôles** :
 
 * **Administrateur** : les administrateurs ont les droits des contributeurs et peuvent administrer les réglages d'espaces de travail. Les administrateurs sont les seuls à pouvoir passer un traitement en statut « publié », à créer des unités organisationnelles et à inviter de nouveaux utilisateurs dans l'espace de travail.
@@ -41,8 +39,6 @@ Seuls les propriétaires de l'organisation peuvent utiliser cette méthode.
 Il est aussi possible de créer des rôles sur mesure, potentiellement mieux adaptés à votre organisation.
 
 ## Créer un rôle personnalisé
-
-{% embed url="https://youtu.be/zdUm7SQ3mLY" %}
 
 Pour créer un rôle personnalisé, vous devez être propriétaire de l'organisation.
 
