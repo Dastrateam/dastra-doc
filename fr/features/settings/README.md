@@ -7,104 +7,18 @@ description: >-
 
 Cette section réunit les réglages que le propriétaire de l'organisation et les administrateurs de l'espace de travail utilisent pour adapter Dastra à leur contexte. Pour gérer les référentiels, voir [Référentiels](../mapping/repositories/README.md).
 
-Mettez en place l'authentification unique (SSO) :
+## Accès et sécurité
 
-{% content-ref url="sso/README.md" %}
-[Single Sign On (SSO)](sso/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Single Sign On (SSO)</strong></td><td>Mettre en place l'authentification unique (SSO) de votre organisation dans Dastra : protocoles, options des connexions, création automatique des utilisateurs et gestion des logins.</td><td><a href="sso/README.md">sso/README.md</a></td></tr><tr><td><strong>SCIM</strong></td><td>Cette page vous explique comment mettre en place la configuration SCIM de Dastra avec Microsoft Entra ID (anciennement Azure Active Directory).</td><td><a href="scim.md">scim.md</a></td></tr><tr><td><strong>Sécurité de l'organisation et journaux de sécurité</strong></td><td>Définissez les règles de sécurité de votre organisation (mots de passe, déconnexion automatique, authentification forte, filtres d'IP et de domaines e-mail) et consultez les journaux de sécurité.</td><td><a href="security-center.md">security-center.md</a></td></tr><tr><td><strong>Filtrage IP</strong></td><td>Restreignez la connexion à Dastra à des plages d'adresses IP autorisées : périmètre, fonctionnement, blocage et points d'attention.</td><td><a href="ip-filtering.md">ip-filtering.md</a></td></tr><tr><td><strong>Rôles et permissions</strong></td><td>Chaque organisation est différente : créez des rôles personnalisés et ajustez leurs permissions module par module.</td><td><a href="roles.md">roles.md</a></td></tr><tr><td><strong>Streaming SIEM</strong></td><td>Diffusez les événements d'audit de sécurité de votre compte vers votre SIEM en temps réel.</td><td><a href="siem.md">siem.md</a></td></tr></tbody></table>
 
-Provisionnez les utilisateurs depuis votre annuaire avec SCIM :
+## Processus et notifications
 
-{% content-ref url="scim.md" %}
-[SCIM](scim.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Etapes de processus</strong></td><td>Personnalisez les étapes de processus de chaque type d'objet dans Dastra : ajout, ordre, statut interne et suppression.</td><td><a href="workflow-stages.md">workflow-stages.md</a></td></tr><tr><td><strong>Règles de workflows</strong></td><td>Automatisez vos processus avec les règles de workflow : déclencheur, conditions et actions (notifications, tâches, mises à jour de champs, requêtes HTTP, agents IA).</td><td><a href="workflow-rules.md">workflow-rules.md</a></td></tr><tr><td><strong>Notifications</strong></td><td>Gérez les notifications dans Dastra : centre de notifications dans l'application, notifications par e-mail et permission « Notification » des rôles.</td><td><a href="notifications.md">notifications.md</a></td></tr></tbody></table>
 
-Définissez les règles de sécurité de votre organisation et consultez les journaux de sécurité :
+## API et intégrations
 
-{% content-ref url="security-center.md" %}
-[Sécurité de l'organisation et journaux de sécurité](security-center.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Gestion des clés d'API</strong></td><td>Créez et gérez les clés d'API de votre organisation : espace de travail, expiration, permissions, accès au serveur MCP.</td><td><a href="api-keys.md">api-keys.md</a></td></tr><tr><td><strong>Authentification</strong></td><td>Apprenez à vous authentifier sur l'API Dastra.</td><td><a href="../../api/authentication.md">../../api/authentication.md</a></td></tr><tr><td><strong>Webhooks</strong></td><td>Notifiez vos applications en temps réel lorsqu'un évènement se produit dans Dastra : configuration, réception, sécurisation et API des webhooks.</td><td><a href="webhooks.md">webhooks.md</a></td></tr><tr><td><strong>Intégrations OneDrive &#x26; SharePoint / Google Drive</strong></td><td>Cette page explique comment connecter Dastra à Microsoft OneDrive &#x26; SharePoint ou à Google Drive pour utiliser votre stockage cloud comme GED principale de l'espace de travail.</td><td><a href="cloud-storage.md">cloud-storage.md</a></td></tr></tbody></table>
 
-Envoyez les journaux d'audit vers votre SIEM :
+## E-mails
 
-{% content-ref url="siem.md" %}
-[Streaming SIEM](siem.md)
-{% endcontent-ref %}
-
-Limitez l'accès à Dastra à certaines adresses IP :
-
-{% content-ref url="ip-filtering.md" %}
-[Filtrage IP](ip-filtering.md)
-{% endcontent-ref %}
-
-Gérez les rôles et permissions :
-
-{% content-ref url="roles.md" %}
-[Rôles et permissions](roles.md)
-{% endcontent-ref %}
-
-Créez des clés d'API et connectez le serveur MCP :
-
-{% content-ref url="api-keys.md" %}
-[Gestion des clés d'API](api-keys.md)
-{% endcontent-ref %}
-
-Consultez la section API :
-
-{% content-ref url="../../api/authentication.md" %}
-[Authentification](../../api/authentication.md)
-{% endcontent-ref %}
-
-Gérez les notifications :
-
-{% content-ref url="notifications.md" %}
-[Notifications](notifications.md)
-{% endcontent-ref %}
-
-Personnalisez les étapes de processus :
-
-{% content-ref url="workflow-stages.md" %}
-[Etapes de processus](workflow-stages.md)
-{% endcontent-ref %}
-
-Automatisez vos processus avec des règles de workflow :
-
-{% content-ref url="workflow-rules.md" %}
-[Règles de workflows](workflow-rules.md)
-{% endcontent-ref %}
-
-Collectez des informations par e-mail :
-
-{% content-ref url="mailboxes.md" %}
-[Adresses emails de collecte](mailboxes.md)
-{% endcontent-ref %}
-
-Connectez un stockage cloud :
-
-{% content-ref url="cloud-storage.md" %}
-[Intégrations OneDrive & SharePoint / Google Drive](cloud-storage.md)
-{% endcontent-ref %}
-
-Synchronisez vos données avec des webhooks :
-
-{% content-ref url="webhooks.md" %}
-[Webhooks](webhooks.md)
-{% endcontent-ref %}
-
-Configurez le SMTP :
-
-{% content-ref url="smtp/README.md" %}
-[Configuration du SMTP](smtp/README.md)
-{% endcontent-ref %}
-
-Personnalisez les modèles de messages :
-
-{% content-ref url="message-templates.md" %}
-[Modèles de messages](message-templates.md)
-{% endcontent-ref %}
-
-Autorisez les domaines e-mail de votre organisation :
-
-{% content-ref url="email-domains.md" %}
-[Domaines emails](email-domains.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Adresses emails de collecte</strong></td><td>Créez automatiquement des objets dans Dastra à partir d'e-mails reçus sur des adresses de collecte dédiées.</td><td><a href="mailboxes.md">mailboxes.md</a></td></tr><tr><td><strong>Configuration du SMTP</strong></td><td>Faites passer les e-mails de notification de Dastra par votre propre serveur d'envoi d'e-mails.</td><td><a href="smtp/README.md">smtp/README.md</a></td></tr><tr><td><strong>Modèles de messages</strong></td><td>Créez des modèles de messages réutilisables dans les demandes d'exercice des droits, les tâches, les questionnaires, les traitements et les violations de données.</td><td><a href="message-templates.md">message-templates.md</a></td></tr><tr><td><strong>Domaines emails</strong></td><td>Permettez aux utilisateurs de votre organisation de rejoindre directement votre espace avec un rôle adapté.</td><td><a href="email-domains.md">email-domains.md</a></td></tr></tbody></table>
