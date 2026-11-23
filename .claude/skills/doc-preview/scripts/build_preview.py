@@ -2,6 +2,10 @@
 
 Usage:
     python -I build_preview.py <pull request number> <output folder> [--repo <dastra-doc clone>]
+    python -I build_preview.py --worktree <worktree folder> <output folder>
+
+The second form previews the working files of a worktree against origin/main, committed or not, before any
+pull request exists.
 
 The clone is found in this order: --repo, the DASTRA_DOC_REPO environment variable, the repository holding
 this script, the current directory.
@@ -12,7 +16,8 @@ Writes in the output folder:
     img/         the images those pages show, taken from the pull request head
 
 A page is included when the pull request changes it, or when it shows an image the pull request changes.
-Needs `gh` (authenticated) and `git`. Read only: it fetches, but never checks out, commits or pushes.
+Needs `gh` (authenticated) and `git`. It fetches, but never checks out, pushes or changes a branch, an index
+or a working file. With --worktree it stores one unreferenced snapshot commit of the working files.
 """
 
 import hashlib
@@ -23,6 +28,7 @@ import posixpath
 import re
 import subprocess
 import sys
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -57,6 +63,22 @@ def find_repo(explicit):
         if REPO.split("/")[1] in url.stdout:
             return Path(top.stdout.strip())
     sys.exit("No clone of dastra-doc found: pass --repo <path> or set DASTRA_DOC_REPO.")
+
+
+def snapshot(worktree):
+    """(commit, branch) of the working files of a worktree, made through a temporary index."""
+    env = dict(os.environ, GIT_INDEX_FILE=os.path.join(tempfile.mkdtemp(), "index"))
+
+    def git(*args):
+        out = subprocess.run(["git", *args], cwd=worktree, capture_output=True, text=True, env=env)
+        if out.returncode != 0:
+            sys.exit(f"git {args[0]} failed in {worktree}: {out.stderr.strip()[:300]}")
+        return out.stdout.strip()
+
+    git("read-tree", "HEAD")
+    git("add", "-A")
+    commit = git("commit-tree", git("write-tree"), "-p", "HEAD", "-m", "doc-preview snapshot")
+    return commit, git("rev-parse", "--abbrev-ref", "HEAD")
 
 
 def show(rev, path):
@@ -137,24 +159,39 @@ def export_image(data, out):
 def main():
     global ROOT
     args = sys.argv[1:]
-    explicit = None
-    if "--repo" in args:
-        at = args.index("--repo")
-        explicit = args[at + 1] if at + 1 < len(args) else None
-        del args[at:at + 2]
-    if len(args) != 2 or not args[0].lstrip("#").isdigit():
-        sys.exit(__doc__)
-    ROOT = find_repo(explicit)
-    number = args[0].lstrip("#")
-    out = Path(args[1]).resolve()
-    (out / "img").mkdir(parents=True, exist_ok=True)
 
-    pr = json.loads(run(["gh", "pr", "view", number, "--repo", REPO, "--json",
-                         "number,title,url,author,headRefName,headRefOid,state,mergeCommit,isDraft"]))
-    run(["git", "fetch", "-q", "origin", "main"])
-    run(["git", "fetch", "-q", "origin", f"pull/{number}/head"])
-    head = pr["headRefOid"]
-    base_ref = f"{pr['mergeCommit']['oid']}^1" if pr["state"] == "MERGED" and pr.get("mergeCommit") else "origin/main"
+    def option(name):
+        if name not in args:
+            return None
+        at = args.index(name)
+        value = args[at + 1] if at + 1 < len(args) else None
+        del args[at:at + 2]
+        return value
+
+    explicit, worktree = option("--repo"), option("--worktree")
+    if worktree:
+        if len(args) != 1:
+            sys.exit(__doc__)
+        ROOT = find_repo(worktree)
+        out = Path(args[0]).resolve()
+        head, branch = snapshot(worktree)
+        run(["git", "fetch", "-q", "origin", "main"])
+        pr = {"number": 0, "title": f"Working copy of {branch}", "url": "", "author": {"login": "not committed"},
+              "headRefName": branch, "state": "LOCAL", "isDraft": False}
+        base_ref = "origin/main"
+    else:
+        if len(args) != 2 or not args[0].lstrip("#").isdigit():
+            sys.exit(__doc__)
+        ROOT = find_repo(explicit)
+        number = args[0].lstrip("#")
+        out = Path(args[1]).resolve()
+        pr = json.loads(run(["gh", "pr", "view", number, "--repo", REPO, "--json",
+                             "number,title,url,author,headRefName,headRefOid,state,mergeCommit,isDraft"]))
+        run(["git", "fetch", "-q", "origin", "main"])
+        run(["git", "fetch", "-q", "origin", f"pull/{number}/head"])
+        head = pr["headRefOid"]
+        base_ref = f"{pr['mergeCommit']['oid']}^1" if pr["state"] == "MERGED" and pr.get("mergeCommit") else "origin/main"
+    (out / "img").mkdir(parents=True, exist_ok=True)
     base = run(["git", "merge-base", base_ref, head]).strip()
 
     changes = {}
@@ -235,17 +272,18 @@ def main():
         "repo": REPO,
         "pr": {"number": pr["number"], "title": pr["title"], "url": pr["url"], "author": pr["author"]["login"],
                "branch": pr["headRefName"], "state": pr["state"].lower(), "draft": pr["isDraft"]},
-        "head": head, "base": base, "pages": pages, "images": images, "titles": titles,
+        "head": head, "base": base, "linkRef": "main" if worktree else head, "pages": pages, "images": images, "titles": titles,
     }
     (out / "data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8", newline="\n")
+    title = f"Doc PR {pr['number']}" if pr["number"] else f"Doc draft {pr['headRefName'].split('/')[-1]}"
     viewer = (SKILL / "assets" / "viewer.html").read_text(encoding="utf-8")
-    (out / "index.html").write_text(viewer.replace("__TITLE__", f"Doc PR {pr['number']}"), encoding="utf-8", newline="\n")
+    (out / "index.html").write_text(viewer.replace("__TITLE__", title), encoding="utf-8", newline="\n")
 
     size = sum(f.stat().st_size for f in out.rglob("*") if f.is_file())
     by_status = {}
     for page in pages:
         by_status[page["status"]] = by_status.get(page["status"], 0) + 1
-    print(f"PR #{pr['number']} ({pr['state'].lower()}): {len(pages)} pages "
+    print(f"{title} ({pr['state'].lower()}): {len(pages)} pages "
           f"({', '.join(f'{n} {s}' for s, n in sorted(by_status.items()))}), {len(images)} images, "
           f"{size / 1_000_000:.1f} MB in {out}")
     if skipped:

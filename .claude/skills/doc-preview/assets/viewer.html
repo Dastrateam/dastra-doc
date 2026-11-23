@@ -285,7 +285,7 @@
       if (a.dataset.ref && path) a.textContent = data.titles[path] || path;
       var target = path ? data.pages.findIndex(function (p) { return p.path === path; }) : -1;
       if (target >= 0) { a.setAttribute('href', '#p-' + target); if (anchor) a.dataset.anchorAfter = anchor; }
-      else if (path) { a.setAttribute('href', 'https://github.com/' + data.repo + '/blob/' + data.head + '/' + path.split('/').map(encodeURIComponent).join('/')); a.target = '_blank'; a.rel = 'noopener'; a.title = 'Page hors de cette PR : ouverte sur GitHub'; }
+      else if (path) { a.setAttribute('href', 'https://github.com/' + data.repo + '/blob/' + (data.linkRef || data.head) + '/' + path.split('/').map(encodeURIComponent).join('/')); a.target = '_blank'; a.rel = 'noopener'; a.title = 'Page hors de cette PR : ouverte sur GitHub'; }
     });
     root.querySelectorAll('table[data-view="cards"]').forEach(function (table) {
       var heads = Array.prototype.slice.call(table.querySelectorAll('thead th'));
@@ -422,11 +422,12 @@
     data = json;
     var pr = data.pr, order = Object.keys(LANG_NAMES);
     data.pages.sort(function (x, y) { return order.indexOf(x.lang) - order.indexOf(y.lang) || (x.status === 'summary') - (y.status === 'summary') || x.path.localeCompare(y.path); });
-    $('pr-title').textContent = '#' + pr.number + ' ' + pr.title;
+    $('pr-title').textContent = (pr.number ? '#' + pr.number + ' ' : '') + pr.title;
     var meta = $('pr-meta'), link = document.createElement('a');
     link.href = pr.url; link.target = '_blank'; link.rel = 'noopener'; link.textContent = 'Ouvrir sur GitHub';
-    var stateLabel = { open: 'ouverte', merged: 'fusionnée', closed: 'fermée' }[pr.state] || pr.state;
-    meta.append(stateLabel + (pr.draft ? ' (brouillon)' : '') + ' · ' + pr.author + ' · ' + data.pages.length + ' page(s) · aperçu du ' + new Date(data.generated).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }) + ' · ', link);
+    var stateLabel = { open: 'ouverte', merged: 'fusionnée', closed: 'fermée', local: 'travail en cours, non relu' }[pr.state] || pr.state;
+    meta.append(stateLabel + (pr.draft ? ' (brouillon)' : '') + ' · ' + pr.author + ' · ' + data.pages.length + ' page(s) · aperçu du ' + new Date(data.generated).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }) + (pr.url ? ' · ' : ''));
+    if (pr.url) meta.append(link);
     buildSide(); $('bar').hidden = false; route();
   }).catch(function () { $('status').textContent = 'L’aperçu n’a pas pu être chargé (data.json introuvable).'; });
 })();
