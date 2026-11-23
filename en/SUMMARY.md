@@ -52,6 +52,7 @@
 ## Dastra AI <a href="#dastra-ai" id="dastra-ai"></a>
 
 * [Dastra AI](features/general/ai-assistant/README.md)
+  * [Write effective requests](features/general/ai-assistant/prompting.md)
   * [Dastra AI agents](features/general/ai-assistant/agents/README.md)
     * [Creating a conversational agent](features/general/ai-assistant/agents/conversational.md)
     * [Creating an autonomous agent](features/general/ai-assistant/agents/autonomous.md)

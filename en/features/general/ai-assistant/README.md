@@ -41,7 +41,7 @@ To answer, Dastra AI can also rely on the regulatory base indexed by Dastra, on 
 {% column %}
 1. Click **Open Dastra AI**, at the bottom right of the screen, or press **Ctrl+J** (**Cmd+J** on Mac). On the dashboard, you can also type your question in the message box under **How can I help you today?**: the panel opens and answers.
 2. Type your question, or pick one of the **Suggested prompts**. They change with the page you are on: the record you are viewing, the register, requests, AI systems.
-3. Read the answer. When the assistant relies on your records, it shows its steps and cites them. Use the **Suggested follow-up questions** to continue.
+3. Read the answer. When the assistant relies on your records, it shows its steps and cites them. Use the **Suggested follow-up questions** to continue. To get complete, sourced answers, see [Write effective requests](prompting.md).
 {% endcolumn %}
 
 {% column %}
@@ -158,4 +158,4 @@ Beta features should never be the sole basis for a compliance decision. They are
 
 ***
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Use cases</strong></td><td>Each AI assistant of the modules, step by step.</td><td><a href="use-cases.md">use-cases.md</a></td></tr><tr><td><strong>How it works</strong></td><td>Models and hosting, data sent to the model, AI credits and quotas.</td><td><a href="how-it-works.md">how-it-works.md</a></td></tr><tr><td><strong>FAQ</strong></td><td>Privacy and data, quality and reliability, configuration and access, AI Act.</td><td><a href="faq.md">faq.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Write effective requests</strong></td><td>Five habits, tested example requests and how to check an answer.</td><td><a href="prompting.md">prompting.md</a></td></tr><tr><td><strong>Use cases</strong></td><td>Each AI assistant of the modules, step by step.</td><td><a href="use-cases.md">use-cases.md</a></td></tr><tr><td><strong>How it works</strong></td><td>Models and hosting, data sent to the model, AI credits and quotas.</td><td><a href="how-it-works.md">how-it-works.md</a></td></tr><tr><td><strong>FAQ</strong></td><td>Privacy and data, quality and reliability, configuration and access, AI Act.</td><td><a href="faq.md">faq.md</a></td></tr></tbody></table>

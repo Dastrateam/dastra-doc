@@ -41,7 +41,7 @@ Pour répondre, Dastra AI peut aussi s'appuyer sur la base réglementaire index�
 {% column %}
 1. Cliquez sur **Ouvrir Dastra AI**, en bas à droite de l'écran, ou appuyez sur **Ctrl+J** (**Cmd+J** sur Mac). Sur le tableau de bord, vous pouvez aussi saisir votre question dans la zone de message sous **Comment puis-je vous aider aujourd'hui ?** : le panneau s'ouvre et répond.
 2. Saisissez votre question, ou choisissez l'une des **Suggestions**. Elles changent selon la page où vous êtes : la fiche consultée, le registre, les demandes, les systèmes d'IA.
-3. Lisez la réponse. Lorsque l'assistant s'appuie sur vos fiches, il affiche ses étapes et les cite. Utilisez les **Suggestions de questions** pour poursuivre.
+3. Lisez la réponse. Lorsque l'assistant s'appuie sur vos fiches, il affiche ses étapes et les cite. Utilisez les **Suggestions de questions** pour poursuivre. Pour obtenir des réponses complètes et sourcées, voyez [Bien formuler vos demandes](prompting.md).
 {% endcolumn %}
 
 {% column %}
@@ -158,4 +158,4 @@ Les fonctionnalités bêta ne doivent jamais constituer l'unique fondement d'une
 
 ***
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Cas d'usage</strong></td><td>Chaque assistant IA des modules, pas à pas.</td><td><a href="use-cases.md">use-cases.md</a></td></tr><tr><td><strong>Comment ça marche ?</strong></td><td>Modèles et hébergement, données transmises au modèle, crédits et quotas IA.</td><td><a href="how-it-works.md">how-it-works.md</a></td></tr><tr><td><strong>FAQ</strong></td><td>Confidentialité et données, qualité et fiabilité, configuration et accès, AI Act.</td><td><a href="faq.md">faq.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Bien formuler vos demandes</strong></td><td>Cinq réflexes, des exemples de demandes testés et la vérification d'une réponse.</td><td><a href="prompting.md">prompting.md</a></td></tr><tr><td><strong>Cas d'usage</strong></td><td>Chaque assistant IA des modules, pas à pas.</td><td><a href="use-cases.md">use-cases.md</a></td></tr><tr><td><strong>Comment ça marche ?</strong></td><td>Modèles et hébergement, données transmises au modèle, crédits et quotas IA.</td><td><a href="how-it-works.md">how-it-works.md</a></td></tr><tr><td><strong>FAQ</strong></td><td>Confidentialité et données, qualité et fiabilité, configuration et accès, AI Act.</td><td><a href="faq.md">faq.md</a></td></tr></tbody></table>
