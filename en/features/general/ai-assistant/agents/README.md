@@ -38,7 +38,7 @@ Click **Create agent**. Five starting points are offered:
 
 * **Generate with Dastra AI**: describe the mission in a few words and click **Generate the agent**. The assistant asks a few questions, then creates the agent for you to review and adjust. This is the built-in `/design_agent` skill.
 * **Conversational Agent**: start from a blank page for a chat assistant. See [Creating a conversational agent](conversational.md).
-* **Auto Agent**: start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md).
+* **Auto Agent**: start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md), and [Build an autonomous agent](../../../../examples/autonomous-agent.md) for a worked example.
 * **Dastra library**: start from a ready-made template. The library offers the templates built by the Dastra team, those of your partner library when you have one, and the agents of another workspace you can access. Click **Install**: the template is imported **as a draft**, deactivated and without notified users. Review its instructions and its tools before you activate it. The **Dastra library** button of the agent list opens the same gallery.
 * **Import an agent**: drop in a definition file previously exported from Dastra.
 
