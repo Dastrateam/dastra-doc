@@ -69,6 +69,7 @@
   * [Projet ISO 27001](examples/iso-27001-project.md)
   * [Calcul des risques](examples/risk-scoring.md)
   * [Exemples de configuration de workflow](examples/workflow-recipes.md)
+  * [Construire un agent autonome](examples/autonomous-agent.md)
   * [Importer des actifs depuis un tableur](examples/excel-import.md)
   * [Cartographier un flux de données](examples/data-mapping.md)
   * [Des réponses de questionnaire dans une fiche](examples/questionnaire-to-record.md)

@@ -38,7 +38,7 @@ Cliquez sur **Créer un agent**. Cinq points de départ vous sont proposés :
 
 * **Générer avec Dastra AI** : décrivez la mission en quelques mots et cliquez sur **Générer l'agent**. L'assistant pose quelques questions, puis crée l'agent que vous relisez et ajustez. C'est la compétence intégrée `/design_agent`.
 * **Agent conversationnel** : repartez d'une page blanche pour un assistant de chat. Voir [Créer un agent conversationnel](conversational.md).
-* **Agent autonome** : repartez d'une page blanche pour une exécution outillée. Voir [Créer un agent autonome](autonomous.md).
+* **Agent autonome** : repartez d'une page blanche pour une exécution outillée. Voir [Créer un agent autonome](autonomous.md), et [Construire un agent autonome](../../../../examples/autonomous-agent.md) pour un exemple complet.
 * **Bibliothèque Dastra** : partez d'un modèle prêt à l'emploi. La bibliothèque propose les modèles conçus par l'équipe Dastra, ceux de votre bibliothèque partenaire si vous en avez une, et les agents d'un autre espace de travail auquel vous avez accès. Cliquez sur **Installer** : le modèle est importé **en brouillon**, désactivé et sans utilisateurs notifiés. Relisez ses instructions et ses outils avant de l'activer. Le bouton **Bibliothèque Dastra** de la liste des agents ouvre la même galerie.
 * **Importer un agent** : déposez un fichier de définition précédemment exporté depuis Dastra.
 

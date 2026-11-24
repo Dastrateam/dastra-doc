@@ -8,7 +8,7 @@ description: >-
 
 An autonomous agent carries out a task from end to end, with nobody watching: reviewing a slice of the record of processing activities, preparing an action plan, producing a monthly summary.
 
-Go to **Automation** > **Dastra AI** > **Agents**, click **Create agent**, then **Auto Agent**.
+Go to **Automation** > **Dastra AI** > **Agents**, click **Create agent**, then **Auto Agent**. For a complete case, from the instruction to the first run, see [Build an autonomous agent](../../../../examples/autonomous-agent.md).
 
 {% hint style="warning" %}
 **An autonomous agent cannot ask you anything.** The tools that require interaction (asking a question, navigating the interface) are removed from it, and its editing tools run without a confirmation request. Its instruction must therefore cover every case, including what to do when information is missing.

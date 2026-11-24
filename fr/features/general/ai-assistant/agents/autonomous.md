@@ -8,7 +8,7 @@ description: >-
 
 Un agent autonome exécute une tâche de bout en bout, sans personne devant l'écran : passer en revue un périmètre du registre, préparer un plan d'action, produire une synthèse mensuelle.
 
-Rendez-vous dans **Automatisation** > **Dastra AI** > **Agents**, cliquez sur **Créer un agent**, puis sur **Agent autonome**.
+Rendez-vous dans **Automatisation** > **Dastra AI** > **Agents**, cliquez sur **Créer un agent**, puis sur **Agent autonome**. Pour un cas complet, de l'instruction au premier lancement, voyez [Construire un agent autonome](../../../../examples/autonomous-agent.md).
 
 {% hint style="warning" %}
 **Un agent autonome ne peut pas vous poser de question.** Les outils qui demandent une interaction (poser une question, naviguer dans l'interface) lui sont retirés, et ses outils de modification s'exécutent sans demande de confirmation. Son instruction doit donc couvrir tous les cas, y compris ce qu'il doit faire quand une information manque.
