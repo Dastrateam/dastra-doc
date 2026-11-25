@@ -8,7 +8,7 @@ description: >-
 
 Ein Chat-Agent ist ein Chat-Assistent, den Sie auf ein Thema spezialisieren: ein DSB-Assistent, der nur aus dem Verarbeitungsverzeichnis antwortet, ein Einkaufsassistent, der Verträge von Dienstleistern prüft, oder ein Sicherheitsassistent, der bei der Einstufung eines Vorfalls hilft.
 
-Öffnen Sie **Mandanteneinstellungen** > **KI-Agenten**, klicken Sie auf **Einen Agenten anlegen** und dann auf **Chat**.
+Öffnen Sie **Automatisierung** > **Dastra AI** > **Agenten**, klicken Sie auf **Einen Agenten anlegen** und dann auf **Konversationsagent**.
 
 ***
 
@@ -16,7 +16,7 @@ Ein Chat-Agent ist ein Chat-Assistent, den Sie auf ein Thema spezialisieren: ein
 
 Name und Beschreibung identifizieren den Agenten in der Liste und in der Agentenauswahl. Sie können ihm außerdem ein **Logo** geben, das in der Unterhaltung als sein Avatar erscheint.
 
-Der Name ist auf 120 Zeichen begrenzt, die Beschreibung auf 1000.
+Der Name ist auf 120 Zeichen begrenzt. Die Beschreibung, auf 3000 Zeichen begrenzt, akzeptiert einfache Markdown-Formatierung.
 
 ## Einrichtung des Chats
 
@@ -31,7 +31,7 @@ Die erste Nachricht, die dem Nutzer beim Öffnen der Unterhaltung angezeigt wird
 Sie ist das Herzstück des Agenten: seine Persönlichkeit und seine Verhaltensregeln, auf **10.000 Zeichen** begrenzt.
 
 {% hint style="info" %}
-Ihre Anweisung ersetzt nicht den gesamten Prompt. Sie legt die Persona des Agenten fest. Dastra ergänzt automatisch eigene Regeln: das Produktvokabular, die Beschreibung der verfügbaren Tools und die Regeln des Modus **Frage** oder **Ausgabe**. Sie müssen also nicht erklären, was eine Verarbeitungstätigkeit ist oder wie ein Tool funktioniert.
+Ihre Anweisung ersetzt nicht den gesamten Prompt. Sie legt die Persona des Agenten fest. Dastra ergänzt automatisch eigene Regeln: das Produktvokabular, die Beschreibung der verfügbaren Tools und die Regeln des Modus **Frage** oder des Bearbeitungsmodus. Sie müssen also nicht erklären, was eine Verarbeitungstätigkeit ist oder wie ein Tool funktioniert.
 {% endhint %}
 
 Eine wirksame Anweisung nennt:
@@ -49,35 +49,39 @@ Die vorgeschlagenen Fragen unter der Begrüßungsnachricht. Sie wirken wie eine 
 
 ## Tools
 
-Standardmäßig hat ein Agent Zugriff auf **alle** Tools. Antworten Sie auf die Frage **Möchten Sie die Liste der von diesem Agenten nutzbaren Tools anpassen?** mit **Ja**, um diese Liste einzuschränken.
-
-<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Tool-Auswahl, aufgeteilt in Lesetools und Bearbeitungstools"><figcaption><p>Die Tools sind in Lesetools und Bearbeitungstools gruppiert</p></figcaption></figure>
+{% columns %}
+{% column %}
+Standardmäßig hat ein Agent Zugriff auf **alle** Tools. Jede Gruppe unten hat drei Optionen: **Alle**, **Keine** und **Personalisiert**. Wählen Sie **Personalisiert**, um nur die gewünschten Tools einzuschalten. Ein Agent braucht mindestens ein Tool.
 
 Es gibt zwei Gruppen von Tools:
 
-* **Lesetools**: den Mandanten durchsuchen, einen Eintrag lesen, Kommentare und Dateien lesen, die Dastra-Dokumentation und das Regelwerk durchsuchen, im Web suchen.
-* **Bearbeitungstools**: Einträge erstellen und ändern, Kommentare hinzufügen, den Workflow-Status ändern, Aufgaben und Tags erstellen, Fragebögen planen und ausfüllen.
+* **Lesetools**: den Mandanten, die Dastra-Dokumentation, das Regelwerk und das Web durchsuchen, Einträge, Kommentare, Dateien und Fragebögen durchsuchen und lesen, [Artefakte](../artifacts.md) erstellen, Einträge exportieren.
+* **Bearbeitungstools**: Einträge erstellen und ändern, Eintragsaktionen wie den Wechsel der Workflow-Phase ausführen, Kommentare hinzufügen, Aktionspläne und Tags erstellen, Fragebögen planen und ausfüllen, Dokumente schreiben, Dateien verknüpfen.
+
+Eine Frage an Sie stellen und Sie zu einer Seite von Dastra führen sind in einer Unterhaltung immer verfügbar: Sie stehen nicht in der Liste.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../../.gitbook/assets/ai-agents-outils.png" alt="Tool-Auswahl, aufgeteilt in Lesetools und Bearbeitungstools" width="500"><figcaption><p>Die Tools sind in Lesetools und Bearbeitungstools gruppiert</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 {% hint style="warning" %}
 Die Einschränkung der Tools ist der sicherste Weg, einen Agenten in seinen Grenzen zu halten. Ein Assistent, der nur Fragen beantworten soll, braucht kein Bearbeitungstool: Geben Sie ihm keines.
 {% endhint %}
 
-## Nutzer wurden benachrichtigt
-
-Die Personen, die eine Dastra-Benachrichtigung erhalten, wenn eine Ausführung des Agenten endet.
-
 ***
 
-## Die Modi Frage und Ausgabe
+## Der Modus Frage und der Bearbeitungsmodus
 
 In der Unterhaltung wechselt eine Auswahl zwischen zwei Modi:
 
-* **Frage**: Der Agent hat nur Lesezugriff. Er kann suchen, lesen und analysieren, aber nichts wird geändert.
-* **Ausgabe**: Der Agent kann Einträge erstellen und ändern. Bearbeitungstools sind nur in diesem Modus verfügbar.
+* **Frage**: Der Agent hat nur Lesezugriff. Er kann suchen und lesen, aber nichts wird geändert.
+* **Bearbeiten**: Der Agent kann Einträge erstellen und ändern. Bearbeitungstools sind nur in diesem Modus verfügbar.
 
-Der Bearbeitungsmodus hängt von Ihrem Tarif und von der entsprechenden Berechtigung ab. Enthält Ihr Tarif ihn nicht, ist die Option **Ausgabe** gesperrt. Ohne die Schreibberechtigung für den Assistenten erscheint die Auswahl nicht. In beiden Fällen bleiben die Bearbeitungstools inaktiv, selbst wenn sie in der Agentendefinition angehakt sind.
+Der Bearbeitungsmodus hängt von Ihrem Tarif und von der entsprechenden Berechtigung ab. Enthält Ihr Tarif ihn nicht, ist die Option **Bearbeiten** gesperrt. Ohne die Schreibberechtigung für den Assistenten erscheint die Auswahl nicht. In beiden Fällen bleiben die Bearbeitungstools inaktiv, selbst wenn sie in der Agentendefinition angehakt sind.
 
-In der Unterhaltung verlangt jedes Bearbeitungstool vor der Ausführung Ihre Bestätigung. Der Agent kann einen Eintrag weder löschen noch anonymisieren: Diese Aktionen werden ihm nicht angeboten.
+In der Unterhaltung zeigt jedes Bearbeitungstool vor der Ausführung eine Karte **Genehmigung erforderlich** an: Wählen Sie **Genehmigen**, **Für diese Sitzung immer zustimmen** oder **Ablehnen**. Der Agent kann einen Eintrag weder löschen noch anonymisieren: Diese Aktionen werden ihm nicht angeboten.
 
 ***
 
@@ -87,17 +91,18 @@ Die **Chat-Übersicht** rechts im Editor ist eine echte Unterhaltung mit dem Age
 
 ## Den Agenten im Alltag nutzen
 
-Sobald der Agent aktiviert ist, erreichen ihn die Nutzer des Mandanten:
+Sobald der Agent aktiviert ist, erreichen ihn die Nutzer des Mandanten, die eigene Agenten ausführen dürfen:
 
 * über den Bereich **Dastra AI** unten rechts auf dem Bildschirm,
 * mit der Tastenkombination **Strg+J** (auf dem Mac **Cmd+J**),
-* über die Dastra-AI-Seite im Vollbildmodus.
+* über die Dastra-AI-Seite unter **Automatisierung** > **Dastra AI** > **Conversations**, wo die Agenten unter **Agenten** aufgelistet sind,
+* mit **Open in chat** im Detailfenster des Agenten in der Liste.
 
-Die Auswahl **Einen Mitarbeiter auswählen** oben in der Unterhaltung wechselt zwischen den Agenten.
+Die Auswahl **Einen Agenten auswählen** oben in der Unterhaltung wechselt zwischen den Agenten.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-chat.png" alt="Unterhaltung mit einem benutzerdefinierten Agenten mit Begrüßungsnachricht und Beispielanfragen"><figcaption><p>Der Agent zeigt seine Begrüßungsnachricht und seine Beispielanfragen</p></figcaption></figure>
 
-Jede Antwort können Sie mit „Daumen hoch“ oder „Daumen runter“ und einem Kommentar bewerten. Dieses Feedback hilft Ihnen, die Anweisung des Agenten abzustimmen.
+Jede Antwort können Sie mit **Richtige Antwort** oder **Falsche Antwort** bewerten. Bei **Falsche Antwort** öffnet sich ein Fenster, in dem Sie einen Kommentar hinzufügen können.
 
 ***
 

@@ -8,10 +8,10 @@ description: >-
 
 Ein autonomer Agent erledigt eine Aufgabe von Anfang bis Ende, ohne dass jemand zusieht: einen Teil des Verarbeitungsverzeichnisses prüfen, einen Maßnahmenplan vorbereiten, eine monatliche Zusammenfassung erstellen.
 
-Öffnen Sie **Mandanteneinstellungen** > **KI-Agenten**, klicken Sie auf **Einen Agenten anlegen** und dann auf **Agent**.
+Öffnen Sie **Automatisierung** > **Dastra AI** > **Agenten**, klicken Sie auf **Einen Agenten anlegen** und dann auf **Autonomer Agent**. Ein vollständiges Beispiel, von der Anweisung bis zur ersten Ausführung, finden Sie unter [Einen autonomen Agenten bauen](../../../../examples/autonomous-agent.md).
 
 {% hint style="warning" %}
-Ein autonomer Agent kann Ihnen keine Fragen stellen. Tools, die eine Interaktion erfordern, wie eine Frage stellen, in der Oberfläche navigieren oder um Bestätigung bitten, werden ihm entzogen. Seine Anweisung muss daher jeden Fall abdecken, auch den, dass Informationen fehlen.
+Ein autonomer Agent kann Ihnen keine Fragen stellen. Tools, die eine Interaktion erfordern (eine Frage stellen, in der Oberfläche navigieren), werden ihm entzogen, und seine Bearbeitungstools laufen ohne Bestätigungsanfrage. Seine Anweisung muss daher jeden Fall abdecken, auch den, dass Informationen fehlen.
 {% endhint %}
 
 ***
@@ -73,21 +73,21 @@ Die **Formularvorschau** rechts im Editor zeigt genau, was Ihre Nutzer sehen wer
 
 ## Tools
 
-Das funktioniert genau wie bei einem [Chat-Agenten](conversational.md#tools): Standardmäßig sind alle Tools verfügbar, und Sie können die Liste einschränken.
+Das funktioniert wie bei einem [Chat-Agenten](conversational.md#tools): Standardmäßig sind alle Tools verfügbar, und Sie können jede Gruppe mit **Alle**, **Keine** oder **Personalisiert** einschränken.
 
 Hier steht allerdings mehr auf dem Spiel, denn niemand kontrolliert den Agenten bei der Arbeit. Geben Sie ihm die Lese-Tools, die er braucht, und **nur die Bearbeitungstools, die seine Aufgabe erfordert**.
 
 ## Benachrichtigungen
 
-Die benachrichtigten Nutzer erhalten eine Dastra-Benachrichtigung, wenn der Agent eine Ausführung **abschließt**, und eine weitere, wenn eine Ausführung **fehlschlägt**. Eine Ausführung, die mit der Anforderung einer menschlichen Prüfung endet, gilt als abgeschlossen.
+Legen Sie im Feld **Nutzer wurden benachrichtigt** fest, wer informiert wird. Diese Nutzer erhalten eine Dastra-Benachrichtigung, wenn eine Ausführung abgeschlossen wird, und eine weitere, wenn eine Ausführung nicht abgeschlossen wird. Eine Ausführung, die mit **Menschliche Überprüfung erforderlich** endet, gilt als abgeschlossen. Eine Ausführung, die mit einem anderen Status endet, zum Beispiel **Gescheitert** oder **Fehlende Informationen**, gilt als nicht abgeschlossen.
 
 ***
 
 ## Planung
 
-<figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Planungsbereich eines autonomen Agenten mit monatlicher Häufigkeit"><figcaption><p>Einen autonomen Agenten planen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ai-agents-planification.png" alt="Planungsbereich eines autonomen Agenten mit wöchentlicher Häufigkeit"><figcaption><p>Einen autonomen Agenten planen</p></figcaption></figure>
 
-Wählen Sie eine **Häufigkeit**: Keine Planung, Täglich, Wöchentlich oder Monatlich. Legen Sie dann die Uhrzeit fest und je nach Fall den Wochentag oder den Tag des Monats.
+Wählen Sie eine **Häufigkeit** (**Keine Planung**, **Täglich**, **Wöchentlich** oder **Monatlich**). Legen Sie dann die **Uhrzeit** fest und je nach Fall den **Wochentag** oder den **Tag des Monats**.
 
 {% hint style="info" %}
 Die Uhrzeiten werden in Ihrer eigenen Zeitzone angezeigt, wie unter dem Formular angegeben. Dastra speichert sie in UTC. Deshalb kann die Karte des Agenten in der Liste eine andere Uhrzeit anzeigen als die, die Sie eingegeben haben.
@@ -103,17 +103,17 @@ Nur **aktivierte**, nicht in den Papierkorb verschobene autonome Agenten werden 
 
 ### 1. Manuell
 
-Füllen Sie das Formular in der Vorschau aus und klicken Sie auf **Ausführen**. Die Ausführung wird in die Warteschlange gestellt: Sie werden zum Posteingang weitergeleitet, wo Sie verfolgen, wie sie von **In Arbeit** zu ihrem Endstatus wechselt.
+Füllen Sie das Formular in der Vorschau aus und klicken Sie auf **Ausführen**. Die Ausführung wird in die Warteschlange gestellt: Sie werden zum Posteingang weitergeleitet, wo Sie verfolgen, wie sie von **In Arbeit** zu ihrem Endstatus wechselt. Ein deaktivierter Agent lässt sich auf diese Weise ausführen, sodass Sie ihn testen können, bevor Sie ihn aktivieren.
 
 ### 2. Nach Zeitplan
 
-Der Agent startet von selbst mit der konfigurierten Häufigkeit. Dabei werden die Standardwerte seiner Eingabefelder verwendet.
+Der Agent startet von selbst mit der konfigurierten Häufigkeit. Eine geplante Ausführung erhält keinen Wert für ihre Eingabefelder: Der Wert **Standard** füllt nur das Formular einer manuellen Ausführung vor. Schreiben Sie die Systemanweisung so, dass der Agent bei einer geplanten Ausführung nicht von einem Eingabefeld abhängt.
 
 ### 3. Durch eine Workflow-Regel
 
-Unter **Mandanteneinstellungen** > **Workflow-Regeln** startet die Aktion **Einen KI-Agenten ausführen** einen Agenten aufgrund eines Ereignisses an einem Eintrag: einem Statuswechsel, einer Erstellung, einer Frist.
+Unter **Automatisierung** > **Workflow-Regeln** startet die Aktion **Einen KI-Agenten ausführen** einen Agenten aufgrund eines Ereignisses an einem Eintrag: einem Statuswechsel, einer Erstellung, einer Frist. Siehe [Workflow-Regeln](../../../settings/workflow-rules.md).
 
-Dort wählen Sie den Agenten, eine Nachricht und die Werte seiner Eingabefelder. Diese Werte akzeptieren **benutzerdefinierte Variablen**, die aus dem Eintrag aufgelöst werden, der die Regel ausgelöst hat. Der Agent erhält so bei jeder Ausführung einen anderen Kontext.
+Dort wählen Sie den **Auszuführenden KI-Agenten**, eine optionale **Anleitung** (höchstens 2000 Zeichen) und die Werte der **Eingabefelder des Agenten**. Die Nachricht und die Werte akzeptieren **benutzerdefinierte Variablen**, die aus dem Eintrag aufgelöst werden, der die Regel ausgelöst hat. Der Agent erhält so bei jeder Ausführung einen anderen Kontext. Ein deaktivierter Agent oder einer im Papierkorb wird nicht gestartet.
 
 ***
 
@@ -121,8 +121,8 @@ Dort wählen Sie den Agenten, eine Nachricht und die Werte seiner Eingabefelder.
 
 | Grenze | Verhalten |
 | --- | --- |
-| **30 Tool-Iterationen** pro Durchgang | Danach muss der Agent zum Abschluss kommen: Die Ausführung endet mit dem Status **Incomplete execution** |
-| **Kontextgröße** | Die ältesten Tool-Aufrufe werden zusammengefasst. Bei Überlauf endet die Ausführung mit dem Status **Context limit reached** |
+| **30 Tool-Iterationen** pro Durchgang | Danach muss der Agent zum Abschluss kommen: Die Ausführung endet mit dem Status **Unvollständige Ausführung** |
+| **Kontextgröße** | Die ältesten Tool-Aufrufe werden zusammengefasst. Bei Überlauf endet die Ausführung mit dem Status **Kontextlimit erreicht** |
 | **10.000 Zeichen** Eingabe | Eine längere Nachricht wird abgelehnt |
 | **Credit-Kontingent** | Eine Ausführung wird abgelehnt, wenn das monatliche Kontingent erreicht ist |
 

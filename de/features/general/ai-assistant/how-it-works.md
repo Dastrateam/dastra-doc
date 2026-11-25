@@ -9,8 +9,6 @@ description: >-
 
 ## Modelle und Hosting
 
-<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Seite KI-Assistent der Organisationseinstellungen mit der Modellfamilie und der Verfolgung der Credits"><figcaption><p>Organisationseinstellungen > KI-Assistent: Modellfamilie auswählen und Credits verfolgen</p></figcaption></figure>
-
 Dastra verwendet vortrainierte generative KI-Modelle, die in vier Familien zur Auswahl stehen:
 
 | Familie | Konfigurierte Modelle | Hosting |
@@ -26,6 +24,8 @@ Für die ersten drei Familien werden die Modelle auf der Infrastruktur von Micro
 **Bleu-Angebot.** Auf [Bleu](../../../security/bleu.md) laufen die KI-Funktionen nicht über Azure: Sie werden von Mistral AI ausgeführt, einem französischen Unternehmen außerhalb des Bleu-Perimeters. Die obige Tabelle gilt nicht. Es wird nur die Mistral-Familie verwendet, und jede Präferenz für OpenAI oder Open Source wird durch Mistral ersetzt: Mistral Small für die Stufe Fast, Mistral Large für die Stufen Smart und Large context. Dastra AI und die Agenten nutzen Mistral Medium, die Sprachdiktat-Funktion Mistral Voxtral.
 {% endhint %}
 
+{% columns %}
+{% column %}
 Für jede Familie werden je nach Komplexität der Aufgabe drei Modellstufen verwendet:
 
 * **Fast** (einfache Aktionen): Beschreibungen erstellen, Tags vorschlagen
@@ -33,12 +33,18 @@ Für jede Familie werden je nach Komplexität der Aufgabe drei Modellstufen verw
 * **Large context** (Aktionen, die große Datenmengen verarbeiten): einen Fragebogen beantworten, Compliance-Analyse
 
 Der Inhaber der Organisation wählt die Modellfamilie unter **Organisationseinstellungen** > **KI-Assistent**, in der Karte **Einstellungen des KI-Assistenten**, im Feld **Familie von KI-Modellen**. Die Änderung wird gespeichert, sobald Sie eine Familie auswählen.
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../.gitbook/assets/general-ai-how-it-works-1.png" alt="Seite KI-Assistent der Organisationseinstellungen mit der Modellfamilie und der Verfolgung der Credits" width="420"><figcaption><p>Organisationseinstellungen > KI-Assistent: Modellfamilie auswählen und Credits verfolgen</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 ***
 
 ## Benutzerdefinierter KI-Anbieter
 
-<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Modellfamilien des KI-Assistenten, einschließlich des benutzerdefinierten KI-Anbieters"><figcaption><p>Der benutzerdefinierte KI-Anbieter unter den Modellfamilien</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-assistant-model-families.png" alt="Modellfamilien des KI-Assistenten, einschließlich des benutzerdefinierten KI-Anbieters" width="490"><figcaption><p>Der benutzerdefinierte KI-Anbieter unter den Modellfamilien</p></figcaption></figure>
 
 Sie können Ihren eigenen KI-Anbieter über einen API-Schlüssel anbinden, sofern er mit dem OpenAI-API-Standard kompatibel ist. Angeboten werden OpenAI, Google, Anthropic, Mistral und Azure AI Foundry. Die Option **Other** akzeptiert jeden anderen kompatiblen Endpunkt, auch ein selbst gehostetes LLM. Der benutzerdefinierte Anbieter gilt für die Erstellungsfunktionen des KI-Assistenten (die Schaltflächen in den Modulen). Dastra AI (Chat), die Agenten und der MCP-Server nutzen weiterhin die Modelle von Dastra.
 
@@ -50,7 +56,7 @@ Bei erkannten Anbietern ist die **Basis-URL** vorausgefüllt: Für Anthropic lau
 * Sie wählen für jede Stufe das zu verwendende Modell, wobei standardmäßig ein empfohlenes Modell vorgeschlagen wird.
 * Der API-Schlüssel wird nie wieder im Klartext angezeigt, und die Verwaltung der Zugangsdaten ist den Inhabern der Organisation vorbehalten.
 
-<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenster für die Zugangsdaten eines benutzerdefinierten Anbieters mit Anthropic und der Schaltfläche Verbindung testen"><figcaption><p>Konfiguration von Anthropic: vorausgefüllte Basis-URL, API-Schlüssel und Schaltfläche „Verbindung testen“</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom-ai-provider-anthropic-credentials.png" alt="Fenster für die Zugangsdaten eines benutzerdefinierten Anbieters mit Anthropic und der Schaltfläche Verbindung testen" width="400"><figcaption><p>Konfiguration von Anthropic: vorausgefüllte Basis-URL, API-Schlüssel und Schaltfläche „Verbindung testen“</p></figcaption></figure>
 
 {% hint style="warning" %}
 Bei einem benutzerdefinierten KI-Anbieter unterliegen die an das Modell gesendeten Daten der Datenschutzrichtlinie **Ihres Anbieters**, nicht den auf dieser Seite beschriebenen Azure-Garantien. Prüfen Sie die Bedingungen Ihres Anbieters, bevor Sie diese Option aktivieren, insbesondere wenn Ihre Prompts personenbezogene Daten enthalten können.
@@ -107,11 +113,11 @@ Dastra führt einen Verlauf der Aufrufe des KI-Assistenten. Die Karte **AI usage
 | **Dauer** | Verarbeitungszeit der Anfrage |
 | **Nutzer** | Mitglied des Mandanten, das die Erstellung ausgelöst hat |
 
-Die Tabs **Credits by user** und **Credits by operation** summieren den Verbrauch des aktuellen Monats.
+Die Tabs **Credits by user** und **Credits by operation** summieren den Verbrauch über einen Zeitraum, den Sie mit der Zeitraumauswahl festlegen. Er beginnt am ersten Tag des aktuellen Monats.
 
 ## KI-Credits und Kontingente
 
-Dastra misst den Verbrauch des KI-Assistenten in **KI-Credits** (nicht in Tokens). Das Kontingent gilt pro Monat und wird von allen Mandanten der Organisation gemeinsam genutzt: Es hängt vom Tarif und vom Abonnement ab und erneuert sich automatisch am ersten Tag jedes Monats. Gespräche mit Dastra AI und Agentenläufe nutzen dasselbe Kontingent.
+Dastra misst den Verbrauch des KI-Assistenten in **KI-Credits**. Das Kontingent gilt pro Monat und wird von allen Mandanten der Organisation gemeinsam genutzt: Es hängt vom Tarif und vom Abonnement ab und erneuert sich automatisch am ersten Tag jedes Monats. Gespräche mit Dastra AI und Agentenläufe nutzen dasselbe Kontingent.
 
 Eine erfolgreiche Erstellung verbraucht je nach Art des Vorgangs Credits. Eine fehlgeschlagene oder laufende Erstellung wird nie gezählt.
 
@@ -121,7 +127,6 @@ Eine erfolgreiche Erstellung verbraucht je nach Art des Vorgangs Credits. Eine f
 | Risikoanalyse, Analyse des geschäftlichen Nutzens, Bewertung der DSFA-Kriterien, Überprüfung von Testnachweisen, Nachbetrachtung eines Datenschutzvorfalls, eigener Bericht | 2 |
 | Beantwortung eines Fragebogens und Übersetzung eines Fragebogens | 1 pro 25 Fragen |
 | Automatische Schwärzung eines Dokuments | 1 pro gesendetem Dokumentsegment |
-| Nachricht an Dastra AI oder an einen Agenten | 1 pro Nachricht, unabhängig von der Anzahl der verwendeten Tools |
 
 Die Karte **Anwendung** unter **Organisationseinstellungen** > **KI-Assistent** zeigt den Verbrauch des aktuellen Monats, das Kontingent des Tarifs und das Erneuerungsdatum. Der Fortschrittsbalken ändert seine Farbe je nach verbrauchtem Anteil des Kontingents:
 
@@ -131,13 +136,11 @@ Die Karte **Anwendung** unter **Organisationseinstellungen** > **KI-Assistent** 
 
 Ist das monatliche Kontingent erreicht, informiert Sie eine Meldung und bietet an, das Dastra-Team zu kontaktieren.
 
-Im Dastra-AI-Fenster sehen alle Nutzer den Stand des Kontingents: einen dezenten Zähler ab 50 %, ein orangefarbenes Banner ab 80 % und ein rotes Banner bei 100 %, das das Senden neuer Nachrichten blockiert (der Verlauf bleibt einsehbar).
+Im Dastra-AI-Fenster sehen alle Nutzer den Stand des Kontingents: einen dezenten Zähler der verbleibenden Credits ab 50 % des Kontingents, ein orangefarbenes Banner ab 80 % und ein rotes Banner bei 100 %, das das Senden neuer Nachrichten blockiert (der Verlauf bleibt einsehbar). Eine Nachricht, die gesendet wird, solange noch Credits verbleiben, wird vollständig verarbeitet, auch wenn sie den Verbrauch über das Kontingent hinaus führt.
 
 <figure><img src="../../../.gitbook/assets/general-ai-how-it-works-2.png" alt="Karte Anwendung des KI-Assistenten mit dem Fortschrittsbalken des Credit-Kontingents und der Erläuterung der Berechnung"><figcaption><p>Verfolgung des KI-Credit-Verbrauchs im aktuellen Monat</p></figcaption></figure>
 
-{% hint style="info" %}
 Ist das Kontingent erreicht, sind die KI-Funktionen bis zur nächsten Erneuerung deaktiviert. Der Rest der Plattform (Daten, Workflows, Exporte) funktioniert normal weiter.
-{% endhint %}
 
 {% hint style="info" %}
 **Benutzerdefinierter KI-Anbieter: keine Credit-Zählung für den KI-Assistenten.** Wenn Ihre Organisation einen benutzerdefinierten KI-Anbieter verwendet, gilt das Credit-System von Dastra nicht für die Erstellungsfunktionen des KI-Assistenten. Der Verbrauch wird direkt von Ihrem eigenen Anbieter nach dessen eigenen Abrechnungsbedingungen verwaltet. Dastra AI und die Agenten nutzen die Modelle von Dastra: Ihre Nachrichten verbrauchen weiterhin das Credit-Kontingent und werden gesperrt, sobald es erreicht ist.
@@ -147,9 +150,7 @@ Ist das Kontingent erreicht, sind die KI-Funktionen bis zur nächsten Erneuerung
 
 ## An das Modell übermittelte Daten
 
-{% hint style="info" %}
 Dastra übermittelt **keine Daten Ihres Mandanten** an das KI-Modell, es sei denn, Sie veranlassen es. Nur die unten aufgeführten Informationen, je nach genutzter Funktion, sind in der Anfrage an das Modell enthalten.
-{% endhint %}
 
 | Funktion | An das Modell übermittelte Daten | Mögliche personenbezogene Daten |
 | --- | --- | --- |
@@ -184,15 +185,13 @@ Dastra übermittelt **keine Daten Ihres Mandanten** an das KI-Modell, es sei den
 | **Beschreibung einer Workflow-Regel** | Objekttyp, Auslöser, Aktion und Bedingungen der Regel sowie der bereits eingegebene Text | Nein, es sei denn, eine Bedingung enthält einen namentlichen Wert |
 | **HTTP-Aktion einer Workflow-Regel** | Objekttyp, Anweisung, eingefügter Auszug der API-Dokumentation, Spalten des Objekts (Name, Bezeichnung, Typ, mögliche Werte) und die aktuelle Konfiguration (URL mit maskierten Parameterwerten, Methode, Namen der Header ohne Werte, Anfragetext). Nie Datensatzdaten oder Zugangsdaten | Unwahrscheinlich, es sei denn, die eingefügte Dokumentation oder der Anfragetext enthält welche |
 | **Feldzuordnung einer Integration** | Konnektor, Quellfelder und Zielspalten von Dastra (Schlüssel, Bezeichnung, Typ, mögliche Werte), bestehende Zuordnungsregeln. Nur Metadaten, keine Beispieldaten | Nein |
-| **Mit Dastra AI oder einem Agenten chatten** | Ihre Nachricht und der Gesprächsverlauf, die Anweisungen des Agenten, die Werte seiner Eingabefelder, das Ergebnis der Werkzeuge (Inhalt der Einträge, auf die Sie Zugriff haben) und Anhänge. Bilder und PDFs werden an das Modell gesendet; andere Formate werden nicht gelesen. Der Maskierungsfilter wird nicht angewendet. Gespräche werden in Dastra gespeichert, und Sie können sie löschen; Anhänge werden 180 Tage aufbewahrt | **Ja**, je nach eingesehenen Einträgen und Anhängen |
+| **Mit Dastra AI oder einem Agenten chatten** | Ihre Nachricht und der Gesprächsverlauf, die Anweisungen des Agenten, die Werte seiner Eingabefelder, das Ergebnis der Werkzeuge (Inhalt der Einträge, auf die Sie Zugriff haben) und Anhänge. Bilder und PDFs werden an das Modell gesendet; andere Formate werden nur von der Codeausführung geöffnet, wo sie verfügbar ist. Der Maskierungsfilter wird nicht angewendet. Gespräche werden in Dastra gespeichert, und Sie können sie löschen; Anhänge werden 180 Tage aufbewahrt | **Ja**, je nach eingesehenen Einträgen und Anhängen |
 
 Beim [MCP-Server](mcp.md) werden die gelesenen Daten an das von Ihnen verbundene KI-Werkzeug übermittelt, nach dessen eigenen Bedingungen, und nicht an ein Modell von Dastra.
 
 {% hint style="warning" %}
 **Bleu-Angebot.** Die Daten der Tabelle werden an Mistral AI übermittelt, nicht an Azure. Bei Dastra AI und den Agenten werden angehängte Bilder an das Modell gesendet, andere Dateien als extrahierter Text. Die automatische Schwärzung nutzt die optische Zeichenerkennung (OCR) von Mistral. Die Codeausführung in Dastra AI ist nicht verfügbar.
-{% endhint %}
 
-{% hint style="warning" %}
 **Bewährte Vorgehensweise**: Vermeiden Sie es, personenbezogene Daten direkt in Freitextfelder (Beschreibungen, individuelle Anweisungen) aufzunehmen. Verwenden Sie nach Möglichkeit Kennungen oder allgemeine Begriffe.
 {% endhint %}
 
@@ -209,8 +208,6 @@ Die folgenden Daten sind **nie** Teil der Anfragen an das KI-Modell:
 
 Die von Dastra verwendeten Azure-Modelle sind **zustandslos (stateless)**: Prompts und Ergebnisse werden nicht im Modell gespeichert und nicht zum erneuten Training oder zur Verbesserung der Basismodelle verwendet.
 
-{% hint style="info" %}
 **Ausnahme: Missbrauchserkennung**: Microsoft Azure unterhält einen automatisierten Mechanismus zur Überwachung potenziell missbräuchlicher Inhalte. Wird ein Prompt gemeldet, kann eine Stichprobe zu Prüfzwecken vorübergehend in einer kundenspezifisch isolierten Speicherumgebung aufbewahrt werden. Für Ressourcen, die im EWR bereitgestellt werden (was bei Dastra der Fall ist), befinden sich auch die beteiligten menschlichen Prüfer im EWR. Diese Aufbewahrung bleibt die Ausnahme und gilt nicht für die normale Nutzung der Plattform.
-{% endhint %}
 
 Weitere Informationen finden Sie in der [Microsoft-Dokumentation zum Datenschutz bei direkten Azure-Modellen](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/data-privacy).

@@ -12,6 +12,7 @@ Diese Seiten zeigen Dastra im Einsatz, jeweils an einem konkreten Fall. Sie folg
 * [ISO-27001-Projekt](iso-27001-project.md): ein Zertifizierungsprojekt vom Framework bis zum abschließenden Audit durchführen.
 * [Risiko-Scoring](risk-scoring.md): ein Risiko auf der Standardskala 5×5 und auf der CNIL-Skala 4×4 berechnen und dann eine Datenschutzverletzung bewerten.
 * [Beispiele für Workflow-Konfigurationen](workflow-recipes.md): Anfragen zuweisen, Aufgaben in einem Team verteilen, einen Microsoft-Teams-Kanal benachrichtigen und eine externe API aufrufen.
+* [Einen autonomen Agenten bauen](autonomous-agent.md): einen Agenten erstellen, der die Betroffenenanfragen der Woche zusammenfasst, von seiner Anweisung bis zu seiner ersten Ausführung.
 * [Assets aus einer Tabelle importieren](excel-import.md): die Spalten einer CSV-Datei zuordnen, sie mit bestehenden Assets zusammenführen und ein benutzerdefiniertes Feld befüllen.
 * [Einen Datenfluss kartieren](data-mapping.md): ein Asset, eine Datenkategorie, eine Verarbeitungstätigkeit und einen Anbieter verbinden.
 * [Fragebogenantworten in einem Verzeichnis](questionnaire-to-record.md): einen Fragebogen zur KI-Verordnung erstellen, der ein KI-System befüllt.

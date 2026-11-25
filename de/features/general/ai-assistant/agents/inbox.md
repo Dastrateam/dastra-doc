@@ -8,7 +8,7 @@ description: >-
 
 Der **Posteingang** sammelt den Ausführungsverlauf Ihrer Agenten: was gestartet wurde, wodurch, wann und mit welchem Ergebnis.
 
-Sie finden ihn unter **Mandanteneinstellungen** > **KI-Agenten** > **Posteingang**.
+Sie finden ihn unter **Automatisierung** > **Dastra AI** > **Posteingang**.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-inbox.png" alt="Posteingang mit der Liste der Ausführungen von Agenten"><figcaption><p>Der Posteingang mit Status und Quelle jeder Ausführung</p></figcaption></figure>
 
@@ -33,30 +33,30 @@ Die Schaltfläche **Im Chat fortfahren** überträgt das Ergebnis der Ausführun
 
 ## Status
 
-Manche Status sind technisch, andere werden **vom Agenten selbst gemeldet**, wenn er seine Arbeit beendet. Das sind Schlussfolgerungen, keine Fehler.
+Manche Status sind technisch. Die anderen stammen aus einer abschließenden Prüfung: Sobald der Agent seinen Abschlussbericht geschrieben hat, liest Dastra diesen Bericht für sich allein und wählt den Status, der beschreibt, was laut Bericht geschehen ist. Das sind Schlussfolgerungen, keine Fehler.
 
 | Status | Bedeutung |
 | --- | --- |
 | **In Arbeit** | Die Ausführung läuft |
 | **Abgeschlossen** | Der Agent hat seine Aufgabe vollständig erledigt |
 | **Gescheitert** | Ein technischer Fehler hat die Ausführung unterbrochen. Die Fehlermeldung steht in den Details |
-| **Human review required** | Der Agent hat seine Arbeit getan, hält aber eine Freigabe für nötig, bevor es weitergeht |
-| **Insufficient permission** | Dem Agenten fehlten die Rechte, um auf bestimmte Daten zuzugreifen oder eine Aktion auszuführen |
-| **Feature required** | Eine Funktion, die er brauchte, ist im Tarif der Organisation nicht enthalten |
-| **Missing information** | Die verfügbaren Daten reichten nicht aus, um die Aufgabe abzuschließen |
-| **Incomplete execution** | Der Agent hat die Grenze der Tool-Iterationen erreicht, bevor er zum Abschluss kam |
-| **Context limit reached** | Die Unterhaltung wurde für das Modell zu lang |
+| **Menschliche Überprüfung erforderlich** | Der Agent hat seine Arbeit getan, hält aber eine Freigabe für nötig, bevor es weitergeht |
+| **Unzureichende Berechtigungen** | Dem Agenten fehlten die Rechte, um auf bestimmte Daten zuzugreifen oder eine Aktion auszuführen |
+| **Erforderliche Funktion** | Eine Funktion, die er brauchte, ist im Tarif der Organisation nicht enthalten |
+| **Fehlende Informationen** | Die verfügbaren Daten reichten nicht aus, um die Aufgabe abzuschließen |
+| **Unvollständige Ausführung** | Der Agent hat die Grenze der Tool-Iterationen erreicht, bevor er zum Abschluss kam |
+| **Kontextlimit erreicht** | Die Unterhaltung wurde für das Modell zu lang |
 
 {% hint style="info" %}
-Der Status **Missing information** oder **Human review required** weist meist auf die Anweisung des Agenten oder seine Liste von Tools hin: Er hat mit dem, was er bekam, sein Möglichstes getan. Die Details der Ausführung erklären in der Regel, was ihm fehlte.
+Der Status **Fehlende Informationen** oder **Menschliche Überprüfung erforderlich** weist meist auf die Anweisung des Agenten oder seine Liste von Tools hin: Er hat mit dem, was er bekam, sein Möglichstes getan. Die Details der Ausführung erklären in der Regel, was ihm fehlte.
 {% endhint %}
 
 ***
 
 ## Benachrichtigungen
 
-Wenn Sie zu den **benachrichtigten Nutzern** eines Agenten gehören, erhalten Sie am Ende jeder Ausführung eine Dastra-Benachrichtigung, ob erfolgreich oder fehlgeschlagen. So behalten Sie einen geplanten Agenten am besten im Blick, ohne den Posteingang zu öffnen.
+Wenn Sie zu den benachrichtigten Nutzern eines Agenten gehören, erhalten Sie am Ende jeder Ausführung eine Dastra-Benachrichtigung. Sie sagt, ob die Ausführung abgeschlossen wurde (**Abgeschlossen** oder **Menschliche Überprüfung erforderlich**) oder nicht. So behalten Sie einen geplanten Agenten am besten im Blick, ohne den Posteingang zu öffnen. Wenn Sie selbst eine Ausführung starten, meldet Ihnen auch die Schaltfläche **Dastra AI öffnen**, wann sie beendet ist.
 
 ## Technisches Protokoll
 
-Für die Überwachung auf Organisationsebene (verwendetes Modell, Dauer, Nutzer hinter dem Aufruf) finden Sie die **AI assistant invocation logs** unter **Organisationseinstellungen** > **KI-Assistent**. Sie werden 90 Tage lang aufbewahrt.
+Für die Überwachung auf Organisationsebene (verwendetes Modell, Dauer, Nutzer hinter dem Aufruf) finden Sie den Tab **Logs (90 days)** der Karte **AI usage** unter **Organisationseinstellungen** > **KI-Assistent**. Er zeigt die letzten 90 Tage.
