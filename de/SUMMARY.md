@@ -22,6 +22,7 @@
 ## 👨‍💻 Erste Schritte <a href="#getting-started" id="getting-started"></a>
 
 * [Schnellstart in 5 Minuten](getting-started/quickstart.md)
+* [In Dastra navigieren](getting-started/navigation.md)
 * [Einrichtung](getting-started/setup/README.md)
   * [Wichtige Begriffe](getting-started/setup/key-concepts.md)
   * [Anmelden und Authentifizierung verwalten](getting-started/setup/login.md)

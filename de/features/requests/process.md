@@ -86,6 +86,8 @@ Sie können die über das ursprüngliche Formular erfassten Informationen vervol
 
 Stammt die Anfrage aus einem Erfassungsformular, sind die vom Antragsteller ausgefüllten Felder (die Nachricht und die E-Mail-Adresse) gesperrt und können nicht bearbeitet werden.
 
+Ist die [Verifizierung des Antragstellers per SMS](advanced/requester-space.md#den-antragsteller-per-sms-verifizieren) aktiv, zeigt das Feld **Telefon** außerdem an, ob die Nummer verifiziert ist. Eine hier eingegebene oder geänderte Nummer gilt nie als verifiziert.
+
 Haben andere Anfragen dieselbe E-Mail-Adresse, zeigt das Seitenfenster den Link **n Anfragen mit identischer E-Mail-Adresse** an. Damit erkennen Sie Duplikate.
 
 ***
@@ -266,5 +268,6 @@ Jede Anfrage bewahrt die vollständige Historie:
 * Ausgetauschte Nachrichten.
 * Hinzugefügte Anhänge.
 * Status und Fortschritt der Bearbeitung.
+* Bei SMS-Verifizierung: Code gesendet, Nummer verifiziert, Download bestätigt, Verifizierung gesperrt und Nummer geändert.
 
 Dies ermöglicht es, die Nachverfolgbarkeit und Konformität im Falle einer Kontrolle zu gewährleisten.

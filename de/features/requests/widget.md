@@ -40,6 +40,7 @@ Der Ablauf ist folgender:
 * Den **Namen** des Widgets und seine **Organisationseinheit**.
 * Die verfügbaren Anfragetypen mit der Frage **Für welches Betroffenenrecht?**: **Standardmäßige Rechtsarten**, **Bestimmte Arten von Rechten** (Sie wählen die Typen dann unter **Auswahl der zulässigen Anfragetypen** aus) oder **Keine Rechtsform (einfaches Formular)**. Letzteres bittet die Person nicht, einen Anfragetyp zu wählen.
 * Die Links **Weiterleitungslink im Falle eines Erfolgs (nach der Identifizierungsphase)**, **Weiterleitungslink im Falle eines Fehlers (z. B. Ablauf des Bestätigungslinks)** und **Link zur Datenschutzinformation**. Alle drei Links sind optional.
+* **Enable phone validation**, nur angezeigt, wenn die [Verifizierung des Antragstellers per SMS](advanced/requester-space.md#den-antragsteller-per-sms-verifizieren) im Mandanten aktiv ist: Das Telefonfeld wird zum Pflichtfeld, und die Nummer wird per SMS verifiziert, nachdem die E-Mail-Adresse bestätigt wurde.
 
 <figure><img src="../../.gitbook/assets/requests-widget-2.png" alt="Abschnitt Konfiguration eines Formulars: Name, Organisationseinheit, Anfragetypen und Weiterleitungslinks"><figcaption><p>Konfiguration des Widgets</p></figcaption></figure>
 

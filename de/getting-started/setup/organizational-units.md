@@ -100,7 +100,37 @@ Beispiel:
 
 Der Tab **Organigramm** zeigt Ihre Entitäten und Abteilungen grafisch. Die meisten Vorgänge der Liste können Sie auch dort ausführen.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigramm-Ansicht der Organisationseinheiten"><figcaption><p>Die Ansicht Organigramm</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Organigramm-Ansicht der Organisationseinheiten"><figcaption><p>Die Ansicht Organigramm</p></figcaption></figure>
+
+### Das Organigramm filtern
+
+Die Leiste über dem Diagramm ist zugleich Legende der Farben und Filter. Nutzen Sie sie, um nur anzuzeigen, was Sie brauchen:
+
+* **Mandant** und **Departments**: Deaktivieren Sie das Kästchen, um den Mandanten oder die Abteilungen auszublenden. Das Kästchen **Entities** ist immer angehakt, weil Entitäten immer angezeigt werden.
+* **Search for an entity or a department**: Geben Sie einen Teil eines Namens ein. Das Organigramm behält die passenden Einheiten und die Einheiten darüber.
+* **Entität**: Wählen Sie eine Entität, um nur ihren Zweig anzuzeigen, also die Entität und die Einheiten darunter. Der Mandant wird dann ausgeblendet.
+* **Zurücksetzen**: stellt das vollständige Organigramm wieder her.
+
+Eine Kennzeichnung **Filtered view** erinnert Sie daran, dass einige Einheiten ausgeblendet sind.
+
+### Rechtliche Angaben einbeziehen
+
+Schalten Sie **Include legal information** ein, um unter jeder Entität einen Block hinzuzufügen: **Head office**, **Land**, **Registration**, **Legal representative**, **DPO**, **EU representative** und **Supervisory authority**. Eine Angabe, die in der Entität nicht ausgefüllt ist, zeigt **Not provided**. Die Zeile **EU representative** erscheint nur für eine Entität außerhalb der Europäischen Union oder ohne Land.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-1.png" alt="Organigramm mit der Filterleiste und den rechtlichen Angaben der Entitäten"><figcaption><p>Das nach Entitäten gefilterte Organigramm mit den rechtlichen Angaben</p></figcaption></figure>
+
+Abteilungen zeigen diesen Block nicht. Um die Angaben auszufüllen, bearbeiten Sie die Entität (siehe den Abschnitt Eine Entität erstellen oder bearbeiten oben).
+
+### Das Organigramm exportieren
+
+Klicken Sie auf **Exportieren**, wählen Sie im Fenster **Export the organigram** **PDF-Datei (.pdf)** oder **HTML-Datei (.html)** und klicken Sie dann auf **Datei herunterladen**. Die Datei enthält das Organigramm so, wie es gerade gefiltert ist, mit den rechtlichen Angaben, wenn Sie sie eingeschaltet haben, vollständig aufgeklappt. Oben stehen der Name des Mandanten, das Datum und die aktiven Filter. Das PDF ist eine einzelne Seite im Querformat, auf die Seite skaliert.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-2.png" alt="Fenster Export the organigram mit den Formaten PDF und HTML"><figcaption><p>Das Exportfenster des Organigramms</p></figcaption></figure>
+
+{% hint style="info" %}
+Die Schaltfläche **Exportieren** steht Ihnen zur Verfügung, wenn Sie das Recht haben, Nutzer zu verwalten.
+{% endhint %}
+
 
 ## Zugriff auf den Inhalt einer Organisationseinheit einschränken
 

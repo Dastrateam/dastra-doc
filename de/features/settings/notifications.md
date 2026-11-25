@@ -78,7 +78,6 @@ E-Mail-Benachrichtigungen sind nach **Kategorien** gegliedert, eine pro Objektar
 | Allgemeine Beziehungen             | Erstellung, Löschung einer Beziehung                                                                                                            |
 | Risikobewertung                    | Erstellung, Änderung, Statusänderung                                                                                                            |
 | Kontrollpunkt                      | Erstellung, Änderung, Überprüfung                                                                                                               |
-| Beitrag                            | Genehmigung, Ablehnung                                                                                                                          |
 | Stakeholder                        | Import, Erstellung, Änderung, Statusänderung, Löschung, Überprüfung                                                                             |
 | Datenkategorie                     | Import                                                                                                                                          |
 | Asset                              | Import, Erstellung, Änderung, Statusänderung, Löschung, Überprüfung                                                                             |

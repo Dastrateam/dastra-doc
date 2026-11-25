@@ -189,7 +189,7 @@ Wenn Sie eine Vorlage aus der Dastra-Bibliothek installiert haben und die Biblio
 Die Anzahl der verfügbaren Vorlagen hängt von Ihrem Abonnement ab. Dieses Kontingent gilt gemeinsam für alle Mandanten Ihrer Organisation. Auch der Papierkorb der Vorlagen zählt zum Kontingent: Denken Sie daran, ihn regelmäßig zu leeren, um Plätze freizugeben.
 {% endhint %}
 
-## Verlauf, Export und Beitrag
+## Verlauf und Export
 
 Im Editor gibt das Menü neben der Schaltfläche **Speichern** Zugriff auf mehrere Aktionen:
 
@@ -197,8 +197,7 @@ Im Editor gibt das Menü neben der Schaltfläche **Speichern** Zugriff auf mehre
 * **Fragebogen planen**;
 * **Konfigurieren**;
 * **Aktivitätsverlauf**: frühere Änderungen an der Vorlage ansehen und wiederherstellen;
-* **Exportieren**: die Vorlage herunterladen (JSON, Excel, CSV, PDF, Word, HTML oder Markdown);
-* **Beitrag leisten**: die Vorlage für alle Dastra-Nutzer veröffentlichen, für Nutzer, die beitragen dürfen.
+* **Exportieren**: die Vorlage herunterladen (JSON, Excel, CSV, PDF, Word, HTML oder Markdown).
 
 Informationen zum Löschen einer Vorlage finden Sie unter [Einen Fragebogen oder eine Vorlage löschen](../delete.md).
 

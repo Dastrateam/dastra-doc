@@ -230,7 +230,7 @@ Die Kurzinfo der Spaltenüberschrift **KI-Bewertung** erinnert an diese Methode.
 
 ### Aktivierung und Einstellungen
 
-Die Funktion ist optional und standardmäßig deaktiviert. Um sie zu aktivieren, gehen Sie zu **Einstellungen** > **Compliance** und schalten Sie die Option **Automatische KI-Analyse von Beweismitteln** ein.
+Die Funktion ist optional und standardmäßig deaktiviert. Um sie zu aktivieren, gehen Sie zu **Mandanteneinstellungen** > **Compliance** und schalten Sie die Option **Automatische KI-Analyse von Beweismitteln** ein.
 
 {% hint style="info" %}
 Solange die Funktion nicht aktiviert ist, werden **keine Nachweisdaten an das KI-Modell gesendet**.

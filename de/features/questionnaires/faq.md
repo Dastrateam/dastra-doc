@@ -25,12 +25,6 @@ Nein, das ist nicht möglich. Diese Option steht nur internen Befragten (Dastra-
 
 Ja, das ist beim Fragetyp „Ausführlicher Text“ möglich, indem Sie das Kästchen „Automatisches Vorschlagen einer Aufgabe(n) basierend auf der Antwort“ aktivieren.
 
-## Kann eine Fragebogenvorlage für alle Dastra-Nutzer veröffentlicht werden?
-
-Ja, das können Sie im Vorlageneditor tun, indem Sie auf **Beitrag leisten** klicken:
-
-<div align="left"><figure><img src="../../.gitbook/assets/screenshot-2024-07-26-120534.png" alt="Schaltfläche „Beitrag leisten“ im Vorlageneditor"><figcaption></figcaption></figure></div>
-
 ## Was bedeuten die Farben in den Antworten eines Fragebogens?
 
 In den Abschnitten des Fragebogens sind den Symbolen der Fragen Farben zugeordnet.

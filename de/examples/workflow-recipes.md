@@ -7,7 +7,7 @@ description: >-
 
 # Beispiele für Workflow-Konfigurationen
 
-Jedes Rezept ist eine [Workflow-Regel](../features/settings/workflow-rules.md) der Brightmoor Retail Group: ein Auslöser, Bedingungen und Aktionen für eine Objektart. Um eine davon zu erstellen, öffnen Sie **Automatisierungen** > **Workflow-Regeln**, klicken Sie auf **Erstellen Sie eine Workflow-Regel**, wählen Sie **Von Grund auf** und geben Sie dann den **Namen der Regel** und den **Elementtyp** ein. Schalten Sie die Regel nach dem Speichern mit dem Schalter **Status** ein.
+Jedes Rezept ist eine [Workflow-Regel](../features/settings/workflow-rules.md) der Brightmoor Retail Group: ein Auslöser, Bedingungen und Aktionen für eine Objektart. Um eine davon zu erstellen, öffnen Sie **Automatisierung** > **Workflow-Regeln**, klicken Sie auf **Erstellen Sie eine Workflow-Regel**, wählen Sie **Von Grund auf** und geben Sie dann den **Namen der Regel** und den **Elementtyp** ein. Schalten Sie die Regel nach dem Speichern mit dem Schalter **Status** ein.
 
 Lassen Sie **Führen Sie den Workflow einmal pro Element aus (empfohlen).** bei den Rezepten eingeschaltet, die auf eine Erstellung oder eine Änderung reagieren, damit ein Element nie zweimal verarbeitet wird.
 

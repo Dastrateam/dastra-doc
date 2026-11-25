@@ -6,7 +6,7 @@ description: >-
 
 # Schnellstart in 5 Minuten
 
-Diese Anleitung führt Sie von Ihrer ersten Anmeldung bis zu Ihrer ersten dokumentierten Verarbeitungstätigkeit im Dastra-Verzeichnis.
+Diese Anleitung führt Sie von Ihrer ersten Anmeldung bis zu Ihrer ersten dokumentierten Verarbeitungstätigkeit im Dastra-Verzeichnis. Um sich in der Oberfläche zurechtzufinden, siehe [In Dastra navigieren](navigation.md).
 
 ***
 
@@ -45,7 +45,7 @@ Dastra öffnet dann die Nutzerseite des neuen Mandanten, auf der Sie seine Mitgl
 
 Das **Verarbeitungsverzeichnis** ist das Herzstück von Dastra. Beginnen Sie mit einer einfachen Tätigkeit, etwa der Gehaltsabrechnung oder dem geschäftlichen E-Mail-Verkehr.
 
-1. Klicken Sie im linken Menü auf **Verarbeitungstätigkeiten**.
+1. Klicken Sie im linken Menü auf **Verarbeitungsverzeichnis** und dann auf **Verarbeitungstätigkeiten**.
 2. Klicken Sie auf **Erstellen Sie eine Datenverarbeitung**.
 3. Wählen Sie aus, wie Sie sie erstellen möchten:
 
@@ -101,6 +101,10 @@ Die eingeladene Person erhält per E-Mail einen Zugangslink.
 ## Nächste Schritte
 
 Um tiefer einzusteigen:
+
+{% content-ref url="navigation.md" %}
+[In Dastra navigieren](navigation.md)
+{% endcontent-ref %}
 
 {% content-ref url="tutorial/README.md" %}
 [Tutorial](tutorial/README.md)

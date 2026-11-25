@@ -13,7 +13,7 @@ Das Dashboard ist die erste Seite, die Sie beim Betreten eines Mandanten sehen. 
 
 Der Bildschirm hat drei Bereiche:
 
-* **Das linke Menü**: die Auswahl des Mandanten, die auch Ihre Rollen im Mandanten anzeigt, dann die Module, gruppiert unter **Dateninventar**, **Betrieb**, **Governance**, **Automatisierungen** und **Ressourcen**. Die Schaltfläche **Ein Mitglied einladen** und der Eintrag **Mandanteneinstellungen** stehen unten im Menü. Ein Modul erscheint nur, wenn Ihr Abonnement es enthält und Ihre Berechtigungen Ihnen Zugriff darauf geben.
+* **Das linke Menü**: die Auswahl des Mandanten, die auch Ihre Rollen im Mandanten anzeigt, dann die Module, gruppiert unter **Dateninventar**, **Betrieb**, **Governance**, **Automatisierung** und **Ressourcen**. Die Schaltfläche **Ein Mitglied einladen** und der Eintrag **Mandanteneinstellungen** stehen unten im Menü. Ein Modul erscheint nur, wenn Ihr Abonnement es enthält und Ihre Berechtigungen Ihnen Zugriff darauf geben.
 * **Der zentrale Bereich**: Über den Kacheln finden Sie, je nach Ihren Berechtigungen und Ihrem Abonnement, die Eingabe für den KI-Agenten (**Wie kann ich Ihnen heute helfen?**), die Karte der neuesten Versionshinweise, die Karte **Fortschritt** (der Leitfaden für den Einstieg) und die **Vorstellung des Mandanten**, ein freier Text, der den Mandanten seinen Nutzern vorstellt.
 * **Der Community-Tab** rechts auf dem Bildschirm: Er öffnet den Bereich **Kommende Webinare**. Sie können den Bereich einklappen; der Tab bleibt dann rechts auf dem Bildschirm, um ihn wieder zu öffnen, und Ihre Wahl wird in Ihrem Browser gespeichert.
 

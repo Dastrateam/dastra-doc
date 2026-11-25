@@ -62,9 +62,35 @@ Sobald Ihr Mandant geöffnet ist, erfassen Sie möglichst bald die übrigen juri
 2. Klicken Sie auf **Eine Entität erstellen**, um eine juristische Entität hinzuzufügen, oder öffnen Sie das Menü der Schaltfläche und wählen Sie **Eine Abteilung erstellen**.
 3. Wiederholen Sie dies, bis das Organigramm Ihrer Struktur in Dastra abgebildet ist.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigramm-Ansicht der Organisationseinheiten in Dastra"><figcaption><p>Die Ansicht Organigramm</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Organigramm-Ansicht der Organisationseinheiten in Dastra"><figcaption><p>Die Ansicht Organigramm</p></figcaption></figure>
 
 Informationen zu untergeordneten Abteilungen, untergeordneten Entitäten, Import und Löschung finden Sie unter [Organisationseinheiten erstellen und konfigurieren](organizational-units.md).
+
+## Die Standardzeitzone festlegen
+
+Die Standardzeitzone ist die Referenzzeitzone des Mandanten. Dastra nutzt sie für Daten, die den Mandanten als Ganzes betreffen und nicht eine einzelne Person.
+
+1. Klicken Sie im linken Menü auf **Mandanteneinstellungen** und dann auf **Allgemeines**.
+2. Wählen Sie unter **Default timezone** die Zeitzone.
+3. Klicken Sie auf **Speichern**.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-workspace-1.png" alt="Mandanteneinstellungen mit dem Feld Default timezone"><figcaption><p>Das Feld Default timezone der Mandanteneinstellungen</p></figcaption></figure>
+
+Nur die Inhaber des Mandanten können sie ändern. Ein Mandant beginnt mit der Zeitzone des Nutzers, der ihn erstellt hat.
+
+Die Standardzeitzone gilt für:
+
+* den Tag, an dem die Erinnerungen an Fälligkeiten und Ablaufdaten versendet werden (Aufgaben, Verträge, Verarbeitungstätigkeiten usw.), und die Daten in diesen E-Mails;
+* die Daten in den Einladungs- und Erinnerungs-E-Mails von Compliance-Audits;
+* den Kalendertag, den die Datumsbedingungen von Workflow-Regeln verwenden;
+* die Daten, die auf dem Export einer per Link geteilten Verarbeitungstätigkeit stehen, wenn kein Nutzer angemeldet ist;
+* die Zeitzone der Nutzer, die Sie in den Mandanten einladen: Ihr Profil beginnt mit ihr, und sie können sie danach ändern.
+
+Jeder Nutzer behält seine eigene Zeitzone für das, was ihm angezeigt und persönlich an ihn gerichtet wird.
+
+{% hint style="info" %}
+Die Standardzeitzone verschiebt nicht den Zeitpunkt, zu dem eine Workflow-Regel, ein KI-Agent oder ein geplanter Versand läuft. Diese Zeiten wählen Sie in Ihrer eigenen Zeitzone, die im Editor angezeigt wird.
+{% endhint %}
 
 ## Auf einen Mandanten zugreifen
 

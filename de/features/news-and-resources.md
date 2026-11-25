@@ -48,4 +48,14 @@ Wie Sie die Dokumentvorlagen in Ihren eigenen Dokumenten verwenden, lesen Sie un
 
 ## Webinare
 
-**Webinare** listet die Live-Sitzungen auf, die Dastra-Experten halten. Wählen Sie links eine Kategorie oder **Alle**. Klicken Sie auf ein Webinar, um seine Anmeldeseite in einem neuen Tab zu öffnen. Ist keine Sitzung geplant, zeigt die Seite **Derzeit sind keine Webinare geplant.**
+Die Seite **Webinare** hat ein Suchfeld, **Search a session...**, und zwei Tabs: **Upcoming sessions** und **Replays**. Die Suche gilt für beide Tabs und bleibt beim Wechsel von einem zum anderen erhalten. Klicken Sie auf **Filter löschen**, um sie zu leeren.
+
+### Kommende Sitzungen
+
+**Upcoming sessions** listet die Live-Sitzungen auf, die Dastra-Experten halten. Wählen Sie links eine Kategorie: **Alle**, **Webinars** oder **Training sessions**. Klicken Sie auf eine Sitzung, um ihre Anmeldeseite in einem neuen Tab zu öffnen. Ist keine Sitzung geplant, zeigt die Seite **No session scheduled soon.**
+
+Die Kategorie **Partners** erscheint nur für den Inhaber einer Partnerorganisation.
+
+### Aufzeichnungen
+
+**Replays** listet die Aufzeichnungen vergangener Sitzungen auf, mit dem Veröffentlichungsdatum auf jeder Karte. Ein Badge unterscheidet **Schulung** und **Partner** von einfachen Webinaren. Klicken Sie auf eine Aufzeichnung, um das Video in Dastra anzusehen. Klicken Sie auf **Download the content**, um die dazugehörigen Dateien herunterzuladen. Die Seite der Aufzeichnung lässt Sie in der Reihenfolge der Liste von einer Aufzeichnung zur nächsten wechseln. Ist keine Aufzeichnung verfügbar, zeigt die Seite **No replay available yet.**
