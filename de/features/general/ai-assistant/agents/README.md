@@ -50,7 +50,7 @@ Der Editor **speichert automatisch**: Der Zeitpunkt der letzten Speicherung steh
 
 ## Aktivieren, deaktivieren, in den Papierkorb verschieben, löschen
 
-* **Deaktivieren** und **Aktivieren**, im Editor oder im Menü der Zeile, schalten einen Agenten zwischen deaktiviert und aktiviert um. Ein deaktivierter Agent erscheint nicht mehr in der Agentenauswahl, und ein Zeitplan oder eine Workflow-Regel kann ihn nicht starten. Sie können ihn weiterhin manuell mit **Ausführen** starten, so testen Sie ihn. Nutzen Sie diesen Zustand, solange Sie die Anweisungen noch abstimmen.
+* **Deaktivieren** und **Aktivieren**, im Editor oder im Menü der Zeile, schalten einen Agenten zwischen **Deaktiviert** und **Aktiv** um. Ein deaktivierter Agent erscheint nicht mehr in der Agentenauswahl, und ein Zeitplan oder eine Workflow-Regel kann ihn nicht starten. Sie können ihn weiterhin manuell mit **Ausführen** starten, so testen Sie ihn. Nutzen Sie diesen Zustand, solange Sie die Anweisungen noch abstimmen.
 * **In den Papierkorb verschieben**: Der Agent landet im Papierkorb und läuft nie, auch wenn eine Workflow-Regel ihn weiterhin nennt. Aktivieren Sie in der Liste **Papierkorb anzeigen**, um ihn zu finden, und klicken Sie auf **Wiederherstellen**. Seine bisherigen Ausführungen bleiben erhalten.
 * **Löschen**: möglich für einen Agenten im Papierkorb. Das Löschen ist endgültig und entfernt **auch alle Sitzungen und Nachrichten** des Agenten. Nutzen Sie es, wenn Sie diese Daten löschen müssen.
 

@@ -95,7 +95,7 @@ Die Uhrzeiten werden in Ihrer eigenen Zeitzone angezeigt, wie unter dem Formular
 Der Auslöser läuft **einmal pro Stunde, zur vollen Stunde**. Ein Zeitplan kann daher keine bestimmte Minute treffen.
 {% endhint %}
 
-Nur **aktivierte**, nicht in den Papierkorb verschobene autonome Agenten werden vom Planer berücksichtigt.
+Nur **aktive**, nicht in den Papierkorb verschobene autonome Agenten werden vom Planer berücksichtigt.
 
 ***
 
