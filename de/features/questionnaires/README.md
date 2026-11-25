@@ -22,6 +22,18 @@ Wenn Sie Befragter oder Genehmiger sind, öffnen Sie **Fragebögen** > **Meine F
 
 Das Menü einer Zeile bietet je nach Ihren Berechtigungen außerdem **Teilen**, **Exportieren** und **Den Fragebogen abbrechen**. Fragebögen, die Sie in den Papierkorb verschieben, erscheinen, wenn Sie **Papierkorb anzeigen** aktivieren, wie unter [Einen Fragebogen oder eine Vorlage löschen](delete.md) beschrieben.
 
+### Mit mehreren Befragten antworten
+
+Ist ein Fragebogen an mehrere Befragte gerichtet, Dastra-Nutzer oder externe Befragte, sieht jeder von ihnen, wer gleichzeitig daran arbeitet.
+
+* **Wer da ist**: Die Zeile **Also answering** über dem Fortschrittsbalken zeigt die Avatare der anderen Personen, die gerade im Fragebogen sind. Fahren Sie über einen Avatar, um den Namen und den Abschnitt der Person zu sehen. Dieselben Avatare erscheinen neben dem Abschnitt in der linken Navigation. Ein Befragter ohne Namen, der nur per E-Mail eingeladen wurde, erscheint als **External respondent**.
+* **Antworten der anderen**: Die Antworten, die sie speichern, erscheinen auf Ihrem Bildschirm, ohne dass die Seite neu geladen wird. Haben Sie an derselben Frage eine noch nicht gespeicherte Änderung, bleibt Ihre Änderung erhalten und wird nach der üblichen Verzögerung gespeichert.
+* **Abschluss**: Schließt ein anderer Befragter den Fragebogen ab, teilt Ihnen eine Meldung mit, wer es war und dass der Fragebogen keine Antworten mehr annimmt. Klicken Sie auf **Aktualisieren**, um die Seite des abgeschlossenen Fragebogens zu öffnen.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-questionnaires-1.png" alt="Von zwei Befragten beantworteter Fragebogen mit der Zeile Also answering und dem Avatar neben dem Abschnitt"><figcaption><p>Zwei Befragte bei der Arbeit: die Zeile Also answering und die Avatare der Abschnitte</p></figcaption></figure>
+
+Nur der Name und der Avatar der Befragten werden mit den anderen geteilt. Es wird keine E-Mail-Adresse angezeigt.
+
 ## Eine Vorlage erstellen
 
 {% content-ref url="templates/README.md" %}

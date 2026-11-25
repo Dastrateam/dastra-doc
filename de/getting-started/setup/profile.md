@@ -10,11 +10,11 @@ Jeder Dastra-Nutzer hat ein persönliches Profil: Identifikationsdaten, Sprache 
 
 Sie können ein Logo oder ein Profilfoto hinzufügen, das in Dastra neben Ihrem Namen angezeigt wird. Klicken Sie auf **Bitte senden Sie uns Ihr Logo** und wählen Sie ein quadratisches Bild von mindestens 200 x 200 px. Dastra schneidet es automatisch zu.
 
-<figure><img src="../../.gitbook/assets/getting-started-profile-1.png" alt="Seite Nutzerprofil mit dem Logo-Feld und den persönlichen Angaben"><figcaption><p>Die Seite Nutzerprofil</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-profile-1.png" alt="Seite Nutzerprofil mit dem Logo-Feld und den persönlichen Angaben"><figcaption><p>Die Seite Nutzerprofil</p></figcaption></figure>
 
 ## Persönliche Angaben
 
-Sie können die folgenden Felder jederzeit ausfüllen oder aktualisieren. Die Felder für Adresse, Website und Biografie sind standardmäßig ausgeblendet: Klicken Sie auf **Mehr anzeigen**, um sie anzuzeigen. Klicken Sie auf **Speichern**, um zu bestätigen.
+Sie können die folgenden Felder jederzeit ausfüllen oder aktualisieren. Klicken Sie auf **Speichern**, um zu bestätigen. Dastra fragt im Sinne der Datenminimierung weder nach einer Postanschrift noch nach einer Website.
 
 | Feld | Beschreibung | Pflichtfeld |
 | --- | --- | --- |
@@ -22,9 +22,7 @@ Sie können die folgenden Felder jederzeit ausfüllen oder aktualisieren. Die Fe
 | **Name** | Ihr Familienname | Ja |
 | **Öffentliches Pseudonym** | Pseudonym, das im Forum der Nutzer (der Community) und in Nachrichten zu Betroffenenanfragen verwendet wird, die außerhalb Ihrer Organisation versendet werden. Mindestens 4 Zeichen: Buchstaben, Ziffern und Unterstriche | Nein |
 | **Telefonnummer** | Ihre berufliche Telefonnummer | Nein |
-| **Postanschrift**, **Postleitzahl**, **Stadt**, **Region**, **Land** | Ihre Kontaktdaten | Nein |
-| **URL des Blogs/der Website** | Link zu Ihrer Website oder Ihrem beruflichen Profil | Nein |
-| **Biografie** | Kurze Beschreibung Ihrer Rolle oder Position | Nein |
+| **Description** | Kurze Beschreibung Ihrer Rolle oder Position | Nein |
 
 ## Ihre E-Mail-Adresse ändern
 
@@ -44,6 +42,8 @@ Im Bereich **Sprache und Zeitzone** passen Sie die Darstellung von Dastra an.
 | **Zeitzone** | Zeitzone, in der Datum und Uhrzeit angezeigt werden |
 
 Diese Einstellungen ändern nur Ihre persönliche Darstellung. Die Sprache der übrigen Mitglieder des Mandanten bleibt unverändert.
+
+Wird ein Nutzer in einen Mandanten eingeladen, beginnt seine Zeitzone mit der Standardzeitzone dieses Mandanten. Er kann sie hier ändern. Siehe [Die Standardzeitzone festlegen](workspace.md#die-standardzeitzone-festlegen).
 
 <figure><img src="../../.gitbook/assets/getting-started-profile-2.png" alt="Bereiche E-Mail-Adresse des Profils, Sprache und Zeitzone sowie Präferenzdaten zurücksetzen"><figcaption><p>Die Bereiche für E-Mail-Adresse, Sprache und Einstellungen</p></figcaption></figure>
 

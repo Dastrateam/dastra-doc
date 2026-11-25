@@ -16,17 +16,7 @@ description: Erfahren Sie, was Dastra ist.
 
 ## Erste Schritte
 
-{% content-ref url="getting-started/setup/README.md" %}
-[Einrichtung](getting-started/setup/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="getting-started/tutorial/README.md" %}
-[Tutorial](getting-started/tutorial/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="getting-started/support/README.md" %}
-[Support](getting-started/support/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Einrichtung</strong></td><td>Erfahren Sie, wie Sie mit Dastra richtig starten.</td><td><a href="getting-started/setup/README.md">getting-started/setup/README.md</a></td></tr><tr><td><strong>Tutorial</strong></td><td>Lernen Sie Schritt für Schritt anhand eines konkreten Beispiels, wie Sie Dastra nutzen.</td><td><a href="getting-started/tutorial/README.md">getting-started/tutorial/README.md</a></td></tr><tr><td><strong>Support</strong></td><td>Erfahren Sie, wie Sie den von Dastra angebotenen Support nutzen.</td><td><a href="getting-started/support/README.md">getting-started/support/README.md</a></td></tr></tbody></table>
 
 ***
 
@@ -40,65 +30,25 @@ description: Erfahren Sie, was Dastra ist.
 
 ## Funktionen
 
-{% content-ref url="features/ropa/README.md" %}
-[Verarbeitungsverzeichnis](features/ropa/README.md)
-{% endcontent-ref %}
+### Dateninventar
 
-{% content-ref url="features/ai-systems/README.md" %}
-[KI-Systeme](features/ai-systems/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Verarbeitungsverzeichnis</strong></td><td>Erfahren Sie, wie Sie Ihr Verarbeitungsverzeichnis bearbeiten.</td><td><a href="features/ropa/README.md">features/ropa/README.md</a></td></tr><tr><td><strong>KI-Systeme</strong></td><td>Entdecken Sie das Modul KI-Systeme von Dastra: das Verzeichnis, die Risikostufen der KI-Verordnung, KI-Modelle und die Compliance-Dokumentation.</td><td><a href="features/ai-systems/README.md">features/ai-systems/README.md</a></td></tr><tr><td><strong>Datenkartierung</strong></td><td>Erfahren Sie, wie Sie die personenbezogenen Daten Ihrer Organisation in Dastra kartieren</td><td><a href="features/mapping/README.md">features/mapping/README.md</a></td></tr></tbody></table>
 
-{% content-ref url="features/risks/README.md" %}
-[Risikomanagement](features/risks/README.md)
-{% endcontent-ref %}
+### Betrieb
 
-{% content-ref url="features/requests/README.md" %}
-[Betroffenenanfragen](features/requests/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Planung</strong></td><td>Lernen Sie das Planungsmodul von Dastra kennen: den Maßnahmenplan Ihrer Organisation mit Aufgaben, Projekten und Sprints.</td><td><a href="features/tasks/README.md">features/tasks/README.md</a></td></tr><tr><td><strong>Betroffenenanfragen</strong></td><td>Erfahren Sie, wie Sie auf Betroffenenanfragen antworten.</td><td><a href="features/requests/README.md">features/requests/README.md</a></td></tr><tr><td><strong>Datenschutzvorfälle</strong></td><td>Führen Sie das Verzeichnis der Vorfälle und Datenschutzverletzungen Ihrer Organisation, verfolgen Sie die Meldefristen und sehen Sie die Statistiken ein.</td><td><a href="features/incidents/README.md">features/incidents/README.md</a></td></tr><tr><td><strong>Verträge und Richtlinien</strong></td><td>Erfassen, unterzeichnen und verfolgen Sie Ihre Verträge, Richtlinien und anderen rechtlichen Dokumente direkt in Dastra.</td><td><a href="features/contracts/README.md">features/contracts/README.md</a></td></tr><tr><td><strong>Cookie-Einwilligung verwalten</strong></td><td>Erfahren Sie, wie Sie die Einwilligung in Cookies sauber verwalten.</td><td><a href="features/cookies/README.md">features/cookies/README.md</a></td></tr></tbody></table>
 
-{% content-ref url="features/incidents/README.md" %}
-[Datenschutzvorfälle](features/incidents/README.md)
-{% endcontent-ref %}
+### Governance
 
-{% content-ref url="features/cookies/README.md" %}
-[Cookie-Einwilligung verwalten](features/cookies/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Compliance</strong></td><td>Verwalten Sie Ihre Compliance mit den verschiedenen Frameworks in Dastra.</td><td><a href="features/compliance/README.md">features/compliance/README.md</a></td></tr><tr><td><strong>Fragebögen</strong></td><td>Erfahren Sie, wie Sie Fragebögen und DSFA mit Dastra durchführen.</td><td><a href="features/questionnaires/README.md">features/questionnaires/README.md</a></td></tr><tr><td><strong>Risikomanagement</strong></td><td>Identifizieren, bewerten, behandeln und überwachen Sie Ihre Risiken in Dastra, nach Organisationseinheit, Verarbeitungstätigkeit, Asset, Stakeholder oder KI-System.</td><td><a href="features/risks/README.md">features/risks/README.md</a></td></tr><tr><td><strong>Trust Center</strong></td><td>Erfahren Sie, wie Sie ein Trust Center erstellen und konfigurieren, das öffentliche Transparenzportal Ihrer Organisation.</td><td><a href="features/trust-center/README.md">features/trust-center/README.md</a></td></tr></tbody></table>
 
-{% content-ref url="features/tasks/README.md" %}
-[Planung](features/tasks/README.md)
-{% endcontent-ref %}
+### Ressourcen
 
-{% content-ref url="features/settings/README.md" %}
-[Erweiterte Konfiguration](features/settings/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Dokumentenmanagement (DMS)</strong></td><td>Bündeln Sie im Dateimanager von Dastra die Dokumente, die Ihre Compliance belegen: Dokumente erstellen, Ordner, Zugriffsrechte und Cloud-Speicher.</td><td><a href="features/files/README.md">features/files/README.md</a></td></tr><tr><td><strong>Personalisierte Berichte</strong></td><td>Erstellen Sie personalisierte Berichte aus Dastra-Daten: Tabellen, Metriken, Dimensionen, Filter, Grafiken, Exporte und Freigabe.</td><td><a href="features/reports/README.md">features/reports/README.md</a></td></tr></tbody></table>
 
-{% content-ref url="features/mapping/README.md" %}
-[Datenkartierung](features/mapping/README.md)
-{% endcontent-ref %}
+### Erweiterte Konfiguration
 
-{% content-ref url="features/questionnaires/README.md" %}
-[Fragebögen](features/questionnaires/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="features/contracts/README.md" %}
-[Verträge und Richtlinien](features/contracts/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="features/files/README.md" %}
-[Dokumentenmanagement (DMS)](features/files/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="features/trust-center/README.md" %}
-[Trust Center](features/trust-center/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="features/compliance/README.md" %}
-[Compliance](features/compliance/README.md)
-{% endcontent-ref %}
-
-{% content-ref url="features/reports/README.md" %}
-[Personalisierte Berichte](features/reports/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Erweiterte Konfiguration</strong></td><td>Konfigurieren Sie Dastra mit den erweiterten Funktionen: Single Sign-on, Rollen, API-Schlüssel, Workflows, SMTP, Webhooks und Integrationen.</td><td><a href="features/settings/README.md">features/settings/README.md</a></td></tr></tbody></table>
 
 ***
 

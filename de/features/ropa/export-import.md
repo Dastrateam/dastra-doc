@@ -38,7 +38,7 @@ Das Format DSGVO (Artikel 30) entspricht dem, was die DSGVO verlangt: Der Export
 
 ### Format Vollständig
 
-Das vollständige Format ist das native Dastra-Format: Sie exportieren alle Felder, aus denen die Verarbeitungstätigkeit besteht.
+Das vollständige Format ist das native Dastra-Format: Sie exportieren alle Felder, aus denen die Verarbeitungstätigkeit besteht. In den Exporten als PDF, Word und HTML führt der Abschnitt zu den Rechten der betroffenen Personen nur die Rechte auf, die in der Verarbeitungstätigkeit ausgefüllt sind. Ist keines ausgefüllt, entfällt der Abschnitt.
 
 {% hint style="info" %}
 Sie können auch nur eine oder mehrere Verarbeitungstätigkeiten des Verzeichnisses exportieren statt des gesamten Verzeichnisses. Aktivieren Sie dazu die Kontrollkästchen links neben den betreffenden Verarbeitungstätigkeiten und klicken Sie dann auf **Bitte wählen Sie eine Sammelaktion aus** und **Exportieren**. Um eine einzelne Verarbeitungstätigkeit zu exportieren, können Sie auch **Exportieren** im Menü am Ende ihrer Zeile verwenden.
@@ -66,6 +66,10 @@ Ein bestehendes Verzeichnis zu importieren kann mühsam sein, wenn Sie viele Ver
 {% hint style="info" %}
 Beim Import wird keine Organisationseinheit angelegt. Daten aus Feldern, die nicht zur Vorlage gehören, werden in die HTML-Beschreibungsfelder übernommen.
 {% endhint %}
+
+Ist die Empfängerkategorie einer Zeile leer, importiert Dastra den Empfänger mit der Kategorie **Sonstiges**.
+
+Das Blatt der Datenfelder der Arbeitsmappe hat eine Spalte **Anmerkungen**: Sie enthält die Anmerkungen, die für jedes Datenfeld einer Datenkategorie erfasst wurden, wie im Feld **Anmerkungen** der Datenkategorie. Der Export füllt sie, und der Import liest sie, bis zu 1.000 Zeichen pro Anmerkung. Eine Arbeitsmappe, die vor dieser Spalte exportiert wurde, lässt sich weiterhin importieren.
 
 ### Eine JSON-Datei importieren
 

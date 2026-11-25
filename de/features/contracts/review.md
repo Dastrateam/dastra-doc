@@ -15,3 +15,17 @@ Sobald die Überprüfung aktiviert ist, zeigt die Akte jedes Dokuments den Aktua
 Klicken Sie auf den Indikator, um das Fenster zur Überprüfung zu öffnen. Wählen Sie im Tab **Neue Überprüfung** den **Verantwortlichen für die Überprüfung**, das Datum der Überprüfung (Feld **Überprüfung**) und bei Bedarf eine Beschreibung. Dastra berechnet das **Datum vor der nächsten Überprüfung** anhand der Häufigkeit des Mandanten. Mit **Ändern Sie das Datum der nächsten Überprüfung** können Sie es durch ein bestimmtes Datum ersetzen. Der Tab **Frühere Überprüfungen** enthält den Verlauf.
 
 Wenn ein Dokument veraltet, erhält sein Inhaber eine E-Mail.
+
+## Eine Überprüfung erfassen, wenn ein Dokument aktiv wird
+
+Ist die regelmäßige Überprüfung aktiviert und verschieben Sie ein Dokument in einen Prozessschritt, dessen interner Status **Active** ist, öffnet sich das Fenster **Prozessschritt umschalten** mit einem Schalter **Überprüfung**, der standardmäßig eingeschaltet ist. Lassen Sie ihn eingeschaltet und klicken Sie auf **Bestätigen**: Dastra ändert den Schritt und erfasst gleichzeitig eine Überprüfung.
+
+* Der Prüfer sind Sie, und als Datum der Überprüfung gilt der heutige Tag.
+* Das **Datum vor der nächsten Überprüfung** wird anhand der Häufigkeit des Mandanten berechnet.
+* Der Text, den Sie in die Versionsbeschreibung schreiben, wird als Beschreibung der Überprüfung übernommen.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-contracts-1.png" alt="Fenster Prozessschritt umschalten mit dem Schalter Überprüfung"><figcaption><p>Das Fenster für den Prozessschritt mit dem Schalter Überprüfung</p></figcaption></figure>
+
+Das Fenster erscheint, wenn Sie den Schritt von der Seite des Dokuments aus und über die Spalte **Schritt** der Liste ändern. Die Überprüfung aktualisiert die Daten der letzten und der nächsten Überprüfung des Dokuments und erscheint im Tab **Frühere Überprüfungen**. Schalten Sie den Schalter aus, wenn der Schrittwechsel nicht als Überprüfung zählen soll.
+
+Wird der Schritt geändert, die Überprüfung aber nicht gespeichert, bittet eine Meldung Sie, sie im Fenster zur Überprüfung erneut zu erfassen.

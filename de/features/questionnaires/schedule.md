@@ -56,7 +56,7 @@ Dastra erstellt den Fragebogen, mit Ihnen als Befragtem und als Genehmiger, trä
 Eine Anzeige **Anwendung** erscheint, sobald Ihr Kontingent an KI-Credits 80 % erreicht. Die Erzeugung wird blockiert, wenn das Kontingent überschritten ist.
 
 {% hint style="info" %}
-Die Nutzung der KI-gestützten Antwort verbraucht KI-Credits. Details zu Ihrem Kontingent und Ihrer Nutzung finden Sie auf der Seite [KI-Assistent](../general/ai-assistant/README.md).
+Die Nutzung der KI-gestützten Antwort verbraucht KI-Credits. Details zu Ihrem Kontingent und Ihrer Nutzung finden Sie auf der Seite [Dastra AI](../general/ai-assistant/README.md).
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/questionnaires-schedule-6.png" alt="Fenster „KI-gestützte Antwort“ mit den Anweisungen, der Antwortsprache und den Anhängen"><figcaption><p>Die Antwort auf einen Fragebogen mit KI erzeugen</p></figcaption></figure>

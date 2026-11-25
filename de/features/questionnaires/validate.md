@@ -50,6 +50,16 @@ Jeder Frage kann ein Bewertungsstatus zugewiesen werden:
 
 Eine Auswahl am Anfang jedes Abschnitts weist allen angezeigten Fragen auf einmal denselben Status zu.
 
+In der Abschnittsnavigation links ist jede Frage ein farbiger Balken. Haben Sie einen Status vergeben, zeigt der Balken ihn an, ob die Frage erforderlich ist oder nicht:
+
+* dunkelgrün: **Validiert**;
+* gelb: **Korrekturen erforderlich**;
+* rot: **Nicht validiert**.
+
+Eine Frage ohne Status behält die Farbe ihrer Antwort: grau, wenn sie nicht beantwortet ist, grün, wenn sie beantwortet ist, und orange, wenn sie erforderlich und nicht beantwortet ist.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-questionnaires-2.png" alt="Abschnittsnavigation des Prüfbildschirms mit den farbigen Fragebalken"><figcaption><p>Die Fragebalken der Prüfnavigation</p></figcaption></figure>
+
 Für jede Frage können Sie außerdem:
 
 * eine Anmerkung hinzufügen: eine interne Diskussion mit den Befragten und den anderen Genehmigern

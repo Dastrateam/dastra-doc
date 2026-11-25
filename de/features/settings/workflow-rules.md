@@ -1,5 +1,8 @@
 ---
-description: Integrieren Sie komplexe Prozesse mit benutzerdefinierten Workflow-Regeln
+description: >-
+  Automatisieren Sie Ihre Prozesse mit Workflow-Regeln: Auslöser, Bedingungen und
+  Aktionen (Benachrichtigungen, Aufgaben, Feldänderungen, HTTP-Anfragen,
+  KI-Agenten).
 ---
 
 # Workflow-Regeln
@@ -41,7 +44,7 @@ Die Anzahl der verfügbaren Workflow-Regeln hängt von Ihrem Plan ab, **von 25 b
 
 ## Eine Workflow-Regel erstellen
 
-1. Öffnen Sie im Seitenmenü den Eintrag **Workflow-Regeln** oder gehen Sie auf [die Konfigurationsseite der Workflow-Regeln Ihres Mandanten](https://app.dastra.eu/workspace/0/settings/workflow-rules).
+1. Klicken Sie im Seitenmenü unter **Automatisierung** auf **Workflow-Regeln** oder gehen Sie auf [die Konfigurationsseite der Workflow-Regeln Ihres Mandanten](https://app.dastra.eu/workspace/0/settings/workflow-rules).
 2. Klicken Sie auf **Erstellen Sie eine Workflow-Regel**.
 3. Wählen Sie **Von Grund auf**, um mit einer leeren Vorlage zu beginnen, oder **Basierend auf einem Modell** (siehe [Bibliothek der Regelvorlagen](#bibliothek-der-regelvorlagen)).
 4. Geben Sie den **Namen der Regel** und den **Elementtyp** (Verarbeitung, Verletzungen...) ein und bestätigen Sie.
@@ -202,7 +205,7 @@ Die Aktion **Einen KI-Agenten ausführen** führt beim Auslösen der Regel einen
 
 Füllen Sie die folgenden Felder aus:
 
-* **Auszuführender KI-Agent**: Es werden nur Agenten angeboten, die im Agentenmodus veröffentlicht sind. Ist die Liste leer, erstellen Sie zuerst einen Agenten im Modul KI-Agenten.
+* **Auszuführender KI-Agent**: Es werden nur Agenten angeboten, die im Agentenmodus veröffentlicht sind. Ist die Liste leer, erstellen Sie zuerst einen Agenten unter **Automatisierung** > **Dastra AI** > **Agenten**.
 * **Anleitung**: eine optionale Nachricht, die bei jeder Ausführung an den Agenten gesendet wird. Sie akzeptiert benutzerdefinierte Variablen des auslösenden Objekts (geben Sie `{{` ein).
 * **Eingabefelder des Agenten**: Die vom Agenten definierten Felder erscheinen, nachdem Sie ihn ausgewählt haben. Füllen Sie mindestens die Pflichtfelder aus.
 

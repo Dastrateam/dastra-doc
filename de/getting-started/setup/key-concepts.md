@@ -36,7 +36,7 @@ Eine Organisation kann mehrere Mandanten enthalten, die jeweils einem anderen Pr
 
 Ein **Mandant** ist die Umgebung, in der Sie mit Ihrem Team zusammenarbeiten. Er bündelt die Module und Daten Ihrer Entitäten: Verarbeitungstätigkeiten, Audits, Risiken, Datenschutzvorfälle, Betroffenenanfragen usw. Die Daten eines Mandanten sind aus einem anderen Mandanten nie zugänglich.
 
-Sie wählen Ihren Mandanten bei der Anmeldung, indem Sie in der Liste Ihrer Mandanten auf seine Kachel klicken.
+Sie wählen Ihren Mandanten bei der Anmeldung, indem Sie in der Liste Ihrer Mandanten auf seine Kachel klicken. Um später den Mandanten zu wechseln, nutzen Sie die Mandantenauswahl oben im Seitenmenü: siehe [In Dastra navigieren](../navigation.md).
 
 Geben Sie Ihren Mandanten aussagekräftige Namen (zum Beispiel "Compliance Konzern" oder "Entitäten Deutschland"). Das erleichtert die Navigation, wenn die Organisation mehrere Mandanten hat.
 

@@ -20,6 +20,14 @@ Interne Diskussionen funktionieren wie ein Chat, der einem Element von Dastra zu
 
 Ein nicht gesendeter Entwurf wird in Ihrem Browser gespeichert und wiederhergestellt, wenn Sie den Bereich erneut öffnen. Sie können Ihre eigenen Nachrichten über deren Menü bearbeiten oder löschen. Eine bearbeitete Nachricht zeigt **Geändert am** gefolgt vom Datum.
 
+## Nachrichtenlayout
+
+Die Nachrichten sind wie in einem Chat angeordnet, in den internen Diskussionen ebenso wie im Austausch einer Betroffenenanfrage, auf Ihrer Seite und im Antragstellerbereich. Ihre eigenen Nachrichten stehen rechts in einer hellblauen Sprechblase, mit **Ich** darüber. Der Name eines anderen Autors steht über seiner Sprechblase, in der Farbe seines Avatars. Datum und Uhrzeit jeder Nachricht stehen unter der Sprechblase.
+
+<figure><img src="../../.gitbook/assets/v3-interface-discussions-1.png" alt="Eine interne Diskussion mit Nachrichten in Sprechblasen: eigene Nachrichten rechts in Hellblau, andere Autoren links"><figcaption><p>Das Nachrichtenlayout in einer internen Diskussion</p></figcaption></figure>
+
+Im Austausch mit dem Antragsteller einer Betroffenenanfrage tragen die Nachrichten des Antragstellers die Überschrift **Data subject**. Siehe [Antragstellerbereich](../requests/advanced/requester-space.md).
+
 ## Erwähnungen
 
 Erwähnen Sie die betroffenen Nutzer mit dem Zeichen **@**. Es erscheint eine Liste der Nutzer Ihres Mandanten, die sich beim Tippen eingrenzt.

@@ -13,7 +13,7 @@ Mit anderen Worten umfasst der Begriff Empfänger alle Stellen, die auf die Date
 ## Einen Empfänger hinzufügen
 
 1. Klicken Sie im Abschnitt **Empfänger** auf **Empfänger erstellen**.
-2. Wählen Sie unter **Kategorie** die Art des Empfängers: **Interne Empfänger**, **Auftragsverarbeiter**, **Dritte: Externe Organisation**, **Autorisierte Dritte**, **Gemeinsam verantwortlich** oder **Betroffene Person**.
+2. Wählen Sie unter **Kategorie** die Art des Empfängers: **Interne Empfänger**, **Auftragsverarbeiter**, **Dritte: Externe Organisation**, **Autorisierte Dritte**, **Gemeinsam verantwortlich**, **Betroffene Person** oder **Sonstiges**. Wählen Sie **Sonstiges** für einen Empfänger, der in keine der anderen Kategorien passt. Das Menü **...** eines Empfängers dieser Kategorie bietet **Versenden Sie einen Fragebogen an Ihren Auftragsverarbeiter** nicht an.
 3. Identifizieren Sie den Empfänger:
    * **Verzeichnis der Stakeholder (empfohlen)**: Wählen Sie einen Stakeholder aus Ihrem Stakeholder-Verzeichnis aus oder legen Sie einen neuen an. Ist der Empfänger im Verzeichnis erfasst, können Sie die Verarbeitungstätigkeiten kartieren, die mit diesem Stakeholder zusammenhängen.
    * **Bitte wählen Sie eine Organisationseinheit aus**: Wählen Sie eine Ihrer Organisationseinheiten aus, zum Beispiel eine interne Abteilung.
