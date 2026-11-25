@@ -77,7 +77,11 @@ def snapshot(worktree):
 
     git("read-tree", "HEAD")
     git("add", "-A")
-    commit = git("commit-tree", git("write-tree"), "-p", "HEAD", "-m", "doc-preview snapshot")
+    parents = ["-p", "HEAD"]
+    merging = subprocess.run(["git", "rev-parse", "-q", "--verify", "MERGE_HEAD"], cwd=worktree, capture_output=True, text=True)
+    if merging.returncode == 0:
+        parents += ["-p", merging.stdout.strip()]
+    commit = git("commit-tree", git("write-tree"), *parents, "-m", "doc-preview snapshot")
     return commit, git("rev-parse", "--abbrev-ref", "HEAD")
 
 
