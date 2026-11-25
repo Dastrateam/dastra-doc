@@ -5,7 +5,7 @@ description: >-
   hoog risico en een HTTP-verzoek versturen.
 ---
 
-# Werkstroomrecepten
+# Voorbeelden van werkstroomconfiguraties
 
 Elk recept is een [werkstroomregel](../features/settings/workflow-rules.md) van Brightmoor Retail Group: een trigger, voorwaarden en acties op één objecttype. Om er een aan te maken, opent u **Automations** > **Regels voor de workflow**, klikt u op **Een werkstroomregel maken**, kiest u **Vanaf nul** en voert u daarna de **Naam van de regel** en het **Soort element** in. Schakel de regel in met de schakelaar **Status** zodra ze is opgeslagen.
 

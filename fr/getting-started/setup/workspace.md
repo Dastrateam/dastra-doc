@@ -6,8 +6,6 @@ description: Apprenez à créer votre premier espace de travail dans Dastra.
 
 Cette page explique comment créer un espace de travail, y inviter les premiers utilisateurs, déclarer votre première entité et naviguer entre vos espaces.
 
-{% embed url="https://www.youtube.com/watch?v=IJE5rzou-EM&list=PL-EvtNdEiDxEUikz6mrcMlKZ54r3RpBLZ&index=1" %}
-
 ## Connectez-vous à Dastra
 
 Commencez par vous connecter sur [app.dastra.eu](https://app.dastra.eu). Si vous n'avez pas encore de compte, demandez à un administrateur de votre organisation de vous inviter. Si votre organisation n'utilise pas encore Dastra, [demandez une démo](https://www.dastra.eu/fr/contacts/demo).
@@ -38,10 +36,6 @@ Pour reprendre la configuration d'un espace existant, cochez **Cloner les param�
 Une fois l'espace créé, vous pouvez configurer ses unités organisationnelles et inviter des utilisateurs.
 {% endhint %}
 
-{% embed url="https://youtu.be/a7sW-B_TeZ0" %}
-
-{% embed url="https://youtu.be/94K9ERenlo8" %}
-
 ### Invitez les premiers utilisateurs
 
 Après la création, Dastra ouvre la page des utilisateurs du nouvel espace. Vous pouvez ajouter des utilisateurs existants de l'organisation ou inviter de nouveaux utilisateurs avec **Inviter un utilisateur**.
@@ -68,11 +62,35 @@ Une fois votre espace ouvert, renseignez dès que possible les autres entités j
 2. Cliquez sur **Créer une entité** pour ajouter une entité juridique, ou ouvrez le menu du bouton pour choisir **Créer un département**.
 3. Répétez l'opération jusqu'à ce que l'organigramme de votre structure soit représenté dans Dastra.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Vue Organigramme des unités organisationnelles dans Dastra"><figcaption><p>La vue Organigramme</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Vue Organigramme des unités organisationnelles dans Dastra"><figcaption><p>La vue Organigramme</p></figcaption></figure>
 
 Pour les départements enfants, les entités enfants, l'import et la suppression, voir [Créer et paramétrer les unités organisationnelles](organizational-units.md).
 
-{% embed url="https://youtu.be/QbH80Xp5c90" %}
+## Définissez le fuseau horaire par défaut
+
+Le fuseau horaire par défaut est le fuseau de référence de l'espace de travail. Dastra l'utilise pour les dates qui concernent l'espace de travail dans son ensemble plutôt qu'une personne en particulier.
+
+1. Dans le menu de gauche, cliquez sur **Réglages espace de travail**, puis sur **Général**.
+2. Dans **Fuseau horaire par défaut**, choisissez le fuseau horaire.
+3. Cliquez sur **Enregistrer**.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-workspace-1.png" alt="Réglages de l'espace de travail avec le champ Fuseau horaire par défaut"><figcaption><p>Le champ Fuseau horaire par défaut des réglages de l'espace de travail</p></figcaption></figure>
+
+Seuls les propriétaires de l'espace de travail peuvent le modifier. Un espace de travail démarre avec le fuseau horaire de l'utilisateur qui l'a créé.
+
+Le fuseau horaire par défaut s'applique :
+
+* au jour d'envoi des rappels d'échéance et d'expiration (tâches, contrats, traitements, etc.) et aux dates écrites dans ces e-mails ;
+* aux dates écrites dans les e-mails d'invitation et de rappel des audits de conformité ;
+* au jour calendaire utilisé par les conditions de date des règles de workflow ;
+* aux dates imprimées sur l'export d'un traitement partagé par lien, où aucun utilisateur n'est connecté ;
+* au fuseau horaire des utilisateurs que vous invitez dans l'espace de travail : leur profil démarre avec ce fuseau, et ils peuvent le modifier ensuite.
+
+Chaque utilisateur conserve son propre fuseau horaire pour ce qui lui est affiché et pour ce qui lui est adressé personnellement.
+
+{% hint style="info" %}
+Le fuseau horaire par défaut ne décale pas l'heure d'exécution d'une règle de workflow, d'un agent IA ou d'un envoi programmé. Ces heures se choisissent dans votre propre fuseau horaire, affiché dans l'éditeur.
+{% endhint %}
 
 ## Accédez à un espace de travail
 

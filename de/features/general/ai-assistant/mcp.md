@@ -61,10 +61,10 @@ Reserviert für Automatisierungen und Umgebungen ohne Browser. Sie fügen der Ko
 | `X-API-Key` | Der private Schlüssel Ihres API-Schlüssels |
 
 {% hint style="danger" %}
-**Der API-Schlüssel muss an einen Mandanten gebunden sein**, sonst wird die MCP-Verbindung abgelehnt. Füllen Sie beim Erstellen des Schlüssels im Tab **API keys** das Feld **Auswahl eines bestimmten Mandanten** aus. Geeignete Schlüssel tragen in der Liste das Badge `MCP`.
+**Der API-Schlüssel muss MCP-Zugriff erlauben und an einen Mandanten gebunden sein**, sonst wird die MCP-Verbindung abgelehnt. Schalten Sie beim Erstellen des Schlüssels im Tab **API keys** die Option **Allow this key to access the MCP server (requires a specific workspace)** ein und füllen Sie das Feld **Auswahl eines bestimmten Mandanten** aus. Schlüssel, die MCP erlauben, tragen in der Liste das Badge `MCP`.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Erstellung eines API-Schlüssels mit der Auswahl des Mandanten"><figcaption><p>Das Feld „Auswahl eines bestimmten Mandanten“ macht einen Schlüssel für MCP nutzbar</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Erstellung eines API-Schlüssels mit dem MCP-Schalter und der Auswahl des Mandanten" width="600"><figcaption><p>Der MCP-Schalter und das Feld „Auswahl eines bestimmten Mandanten“ machen einen Schlüssel für MCP nutzbar</p></figcaption></figure>
 
 Das allgemeine Vorgehen zum Erstellen eines Schlüssels ist unter [API-Schlüssel verwalten](../../settings/api-keys.md) beschrieben.
 
@@ -156,6 +156,7 @@ Nach der Verbindung stehen Ihrem Tool etwa dreißig Dastra-Tools zur Verfügung.
 | Einen Eintrag lesen | Ruft einen Eintrag nach Typ und Kennung ab |
 | Die Struktur eines Eintrags prüfen | Beschreibt die Felder und Spalten eines Eintragstyps |
 | Bearbeitbare Felder prüfen | Gibt an, welche Felder aktualisiert werden können und in welchem Format |
+| Verfügbare Aktionen prüfen | Listet die Aktionen auf, die ein Eintragstyp anbietet (archivieren, wiederherstellen, klonen, die Workflow-Phase ändern usw.), und was jede erwartet |
 | Kommentare lesen | Listet die Kommentare eines Eintrags auf |
 | Dateien lesen | Listet die Dateien des Mandanten oder eines Eintrags auf |
 | Eine Datei lesen | Extrahiert den Text einer PDF-, DOCX-, XLSX-, HTML-, TXT-, CSV-, JSON- oder Markdown-Datei |
@@ -167,23 +168,22 @@ Nach der Verbindung stehen Ihrem Tool etwa dreißig Dastra-Tools zur Verfügung.
 | Rechtsvorschriften prüfen | Fragt das von Dastra indexierte Regelwerk ab (DSGVO, NIS2, DORA, ISO 27001 und weitere), mit zitierten Quellen |
 | Kategorien von Rechtsvorschriften auflisten | Liefert die Kategorien, die für die Suche in Rechtsvorschriften genutzt werden können |
 | Die Dokumentation durchsuchen | Durchsucht die Dastra-Dokumentation |
-| Im Web suchen | Öffentliche Websuche, als letzter Ausweg |
-| Den Eintrag analysieren | Erstellt eine Compliance-Analyse mit Bewertung von A bis F und Verbesserungsvorschlägen |
+| Das Mandantenprofil lesen | Liefert Name, Branding, Sprache, Tarif, aktivierte Funktionen und Kontingentverbrauch des Mandanten |
 | Links zu Einträgen | Erzeugt anklickbare URLs der Dastra-Webanwendung für Einträge |
 
 ### Bearbeitungstools
 
 | Tool | Was es tut |
 | --- | --- |
-| Einen Eintrag erstellen | Erstellt einen leeren Eintrag |
-| Einen Eintrag entwerfen | Erzeugt aus einer Beschreibung einen vollständigen Eintrag und importiert ihn |
+| Einen Eintrag erstellen | Erstellt einen Eintrag mit den Feldern, die sein Typ verlangt |
 | Einträge aktualisieren | Aktualisiert bis zu 50 Einträge auf einmal |
-| Den Workflow-Status ändern | Verschiebt einen Eintrag in eine andere Phase |
+| Eine Aktion ausführen | Führt eine der Aktionen eines Eintragstyps für einen oder mehrere Einträge aus, zum Beispiel den Wechsel der Workflow-Phase |
 | Einen Kommentar hinzufügen | Kommentiert einen Eintrag, einschließlich Erwähnungen |
 | Einen Maßnahmenplan erstellen | Erstellt bis zu 10 Aufgaben, die mit einem Eintrag verknüpft sind |
 | Einen Tag erstellen | Erstellt einen Tag für einen Eintragstyp |
 | Ein Dokument schreiben | Erstellt oder aktualisiert ein Markdown-Dokument im Dateimanager |
 | Eine Datei verknüpfen | Hängt eine vorhandene Datei an einen Eintrag an |
+| Eine Datei hochladen | Speichert eine kleine Datei (unter 2 MB) in den Dokumenten des Mandanten oder ersetzt den Inhalt einer vorhandenen |
 | Einen Fragebogen planen | Erstellt aus einer Vorlage einen Fragebogen und weist ihn zu |
 | Einen Fragebogen aktualisieren | Füllt die Antworten eines geplanten Fragebogens aus |
 
@@ -204,7 +204,7 @@ Einige Punkte, die Sie kennen sollten:
 * **Widerruf**: Eine im Browser freigegebene Verbindung wird zu einem gewöhnlichen API-Schlüssel, der im Tab **API keys** sichtbar ist und widerrufen werden kann. Löschen Sie den Schlüssel, ist der Zugriff sofort gesperrt.
 * **Ratenbegrenzung**: Aufrufe sind auf 60 Anfragen pro Minute am MCP-Server und auf 120 Anfragen pro Minute über alle Nutzungen hinweg begrenzt. Darüber hinaus antwortet der Server mit einem Fehler `429` und nennt die Wartezeit.
 
-Die Tools des MCP-Servers sind die von Dastra AI, mit wenigen Ausnahmen: Code-Ausführung, das Erstellen von Agenten und die Navigation in der Oberfläche gibt es auf der MCP-Seite nicht. Dafür stehen die Bearbeitungstools ohne den Modus Frage oder Ausgabe des Chats zur Verfügung, und Dastra zeigt keine Bestätigungsabfrage an. Aktivieren Sie in Ihrem MCP-Client die Bestätigung vor der Ausführung, wenn Sie jede Änderung freigeben möchten.
+Die Tools des MCP-Servers sind die von Dastra AI, mit Ausnahmen. Websuche, Eintragsanalyse, das Entwerfen eines Eintrags aus einer Beschreibung, [Artefakte](artifacts.md), Exporte, Code-Ausführung, Teilaufgaben, das Erstellen von Agenten, Fragen an den Nutzer und die Navigation gibt es auf der MCP-Seite nicht. Links zu Einträgen und das Hochladen von Dateien gibt es nur auf der MCP-Seite. Die Bearbeitungstools stehen ohne den Modus Frage oder den Bearbeitungsmodus des Chats zur Verfügung, und Dastra zeigt keine Bestätigungsabfrage an. Aktivieren Sie in Ihrem MCP-Client die Bestätigung vor der Ausführung, wenn Sie jede Änderung freigeben möchten.
 
 {% hint style="warning" %}
 Ein für MCP verwendeter API-Schlüssel gewährt Lese- **und Schreibzugriff** auf einen ganzen Mandanten. Behandeln Sie ihn wie ein Passwort: Veröffentlichen Sie ihn nie und widerrufen Sie ihn bei der geringsten Unsicherheit.
@@ -218,6 +218,7 @@ Ein für MCP verwendeter API-Schlüssel gewährt Lese- **und Schreibzugriff** au
 | --- | --- |
 | Tool-Aufrufe werden mit einer Meldung zum Abonnement abgelehnt | Der MCP-Server ist in Ihrem Tarif nicht enthalten. Er erfordert Dastra AI Pro |
 | „API key must be bound to a specific workspace“ | Der Schlüssel wurde ohne Mandant erstellt: Erstellen Sie einen neuen und füllen Sie dieses Feld aus |
+| „MCP access is not enabled for this API key“ | Der Schlüssel wurde ohne den MCP-Schalter erstellt: Erstellen Sie einen neuen, bei dem **Allow this key to access the MCP server** eingeschaltet ist |
 | In Ihrem Client erscheint kein Dastra-Tool | Die Verbindung wurde nicht abgeschlossen. Öffnen Sie in Claude den Konnektor und klicken Sie auf **Connect**, geben Sie in Claude Code `/mcp` ein |
 | Le Chat lehnt den API-Schlüssel ab | Das ist erwartet: Le Chat unterstützt nur die Anmeldung im Browser |
 | Sie müssen sich ständig neu anmelden | Der langlebige Zugriff wurde nicht gewährt: Entfernen Sie den Konnektor und verbinden Sie ihn erneut |
@@ -226,5 +227,5 @@ Ein für MCP verwendeter API-Schlüssel gewährt Lese- **und Schreibzugriff** au
 ***
 
 {% content-ref url="agents/README.md" %}
-[Dastra-KI-Agenten](agents/README.md)
+[Dastra AI Agenten](agents/README.md)
 {% endcontent-ref %}

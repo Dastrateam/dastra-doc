@@ -25,12 +25,6 @@ Non, ce n'est pas possible. Cette possibilité est offerte si vous êtes un rép
 
 Oui, c'est possible depuis le type de question "texte long" en cochant la case "Suggérer automatiquement une tâche(s) à partir de la réponse".
 
-## Est-il possible de publier un modèle de questionnaire pour tous les utilisateurs Dastra ?
-
-Oui, c'est possible depuis le modèle de questionnaire en cliquant sur "Contribuer" :<br>
-
-<div align="left"><figure><img src="../../.gitbook/assets/audit-questionnaire-menu-actions.png" alt=""><figcaption></figcaption></figure></div>
-
 ## A quoi correspondent les couleurs dans les réponses aux questionnaires ?
 
 Dans les sections du questionnaire, des couleurs sont associées aux icones des questions.

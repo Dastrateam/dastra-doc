@@ -14,6 +14,8 @@ Alle Erstellungsfunktionen verwenden dasselbe Fenster: Beschreiben Sie das zu er
 
 In Listen ist die Erstellungsschaltfläche ein KI-Symbol links neben der Schaltfläche zum Erstellen. Es ist ausgegraut, wenn Ihr Tarif die Funktion nicht enthält. Einige Funktionen, die in den jeweiligen Abschnitten genannt sind, erscheinen in diesem Fall gar nicht. Jede Erstellung verbraucht [KI-Credits](how-it-works.md#ki-credits-und-kontingente).
 
+Module: [Verarbeitungstätigkeiten](#verarbeitungstatigkeiten) · [Referenzdaten](#referenzdaten) · [Fragebögen](#fragebogen-dsfa-risikoanalyse) · [Betroffenenanfragen](#betroffenenanfragen) · [Datenschutzvorfälle](#datenschutzvorfalle) · [Verträge](#vertrage) · [Eigene Dokumente und Berichte](#eigene-dokumente-und-berichte) · [KI-Systeme](#ki-systeme) · [Workflow-Regeln und Integrationen](#workflow-regeln-und-integrationen) · [Frameworks und Kontrollen](#frameworks-und-kontrollen)
+
 ***
 
 ## Verarbeitungstätigkeiten
@@ -30,19 +32,25 @@ Erstellen Sie aus einer kurzen Beschreibung schnell eine Verarbeitungstätigkeit
 4. Klicken Sie auf **Generieren** und warten Sie einen Moment
 5. Prüfen Sie den Vorschlag auf der Zusammenfassungsseite und klicken Sie auf **Bestätigen**
 
-<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="Fenster zur KI-Erstellung einer Verarbeitungstätigkeit: Eingabefeld, Sprachauswahl, Beispiele und Option Vorhandene Komponenten nutzen"><figcaption><p>Eine Verarbeitungstätigkeit mit dem KI-Assistenten erstellen: Beispiele, Ausgabesprache und Wiederverwendung vorhandener Komponenten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="Fenster zur KI-Erstellung einer Verarbeitungstätigkeit: Eingabefeld, Sprachauswahl, Beispiele und Option Vorhandene Komponenten nutzen" width="315"><figcaption><p>Eine Verarbeitungstätigkeit mit dem KI-Assistenten erstellen: Beispiele, Ausgabesprache und Wiederverwendung vorhandener Komponenten</p></figcaption></figure>
 
 ### Eine Datenschutzerklärung erstellen
 
+{% columns %}
+{% column %}
 1. Öffnen Sie die Bearbeitungsseite einer Verarbeitungstätigkeit
 2. Klicken Sie im Abschnitt **11. Dokumentation** auf **Informationsblatt erstellen**
 3. Wählen Sie das gewünschte Format (Sie können die Anweisungen anpassen, indem Sie **Personalisiert** auswählen) und die **Sprache der Anleitung**; standardmäßig wird die Sprache der Oberfläche angeboten
 4. Klicken Sie auf **Generieren**: In der Vorschau können Sie den Text jedes Tabs kopieren oder auf **Exportieren** klicken, um eine PDF-, Word-, HTML- oder Markdown-Datei zu erhalten
 5. Im Fenster **Die Informationsnotiz exportieren** fügt die standardmäßig aktivierte Option **Add this file to the attachments of this data processing** die exportierte Datei den Anhängen der Verarbeitungstätigkeit hinzu; jeder Export erzeugt einen neuen Anhang
+{% endcolumn %}
 
-<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Vorschau der Datenschutzerklärung mit der Aktion Exportieren"><figcaption><p>Die KI-generierte Datenschutzerklärung exportieren</p></figcaption></figure>
+{% column %}
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Vorschau der Datenschutzerklärung mit der Aktion Exportieren" width="350"><figcaption><p>Die KI-generierte Datenschutzerklärung exportieren</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
-<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Fenster zum Exportieren der Informationsnotiz mit der Option, die Datei den Anhängen hinzuzufügen"><figcaption><p>Die exportierte Erklärung den Anhängen der Verarbeitungstätigkeit hinzufügen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Fenster zum Exportieren der Informationsnotiz mit der Option, die Datei den Anhängen hinzuzufügen" width="350"><figcaption><p>Die exportierte Erklärung den Anhängen der Verarbeitungstätigkeit hinzufügen</p></figcaption></figure>
 
 ### Die Bewertung der DSFA-Kriterien erstellen
 
@@ -139,8 +147,8 @@ Klicken Sie im Editor einer gespeicherten Fragebogenvorlage auf **Den Fragebogen
 Erstellen Sie Antworten in mehreren Sprachen mit Anpassungsoptionen (Länge, förmlicher oder informeller Ton usw.).
 
 1. Öffnen Sie eine Anfrage, die gerade bearbeitet wird
-2. Füllen Sie die Informationen bis zum Schritt **Communication / Transmission** aus
-3. Klicken Sie auf **Mit KI generieren**: Der Assistent erstellt eine Antwort auf Grundlage der folgenden Informationen:
+2. Gehen Sie zum Abschnitt **Antwort auf die Anfrage**
+3. Klicken Sie auf **Mit KI generieren**: Das Fenster **KI-Chatbot** öffnet sich, und der Assistent erstellt eine Antwort auf Grundlage der folgenden Informationen:
    * Vor- und Nachname des Antragstellers
    * Nachricht der Anfrage
    * Zu verwendende Sprache
@@ -150,7 +158,7 @@ Erstellen Sie Antworten in mehreren Sprachen mit Anpassungsoptionen (Länge, fö
    * Datum der Anfrage und verbleibende Tage
    * Status und ID der Anfrage
 4. Bearbeiten Sie den vorgeschlagenen Text oder nutzen Sie die Umformulierungsoptionen (kürzen, verlängern, Ton ändern)
-5. Klicken Sie auf **Diese Nachricht verwenden**, fügen Sie gegebenenfalls Anhänge hinzu und klicken Sie dann auf **Senden**
+5. Klicken Sie auf **Diese Nachricht verwenden** und senden Sie die Nachricht dann aus Dastra
 
 {% hint style="info" %}
 Für diese Funktion gilt eine Begrenzung der Anzahl der Aufrufe pro Minute.
@@ -214,7 +222,7 @@ Dasselbe Vorgehen gibt es für KI-Modelle: Beschreiben Sie das Modell (Name, Her
 
 ### Einen Informationshinweis für ein KI-System erstellen
 
-Klicken Sie im Eintrag eines KI-Systems auf **Informationsblatt erstellen**, um automatisch das Informationsdokument für Nutzer oder betroffene Personen zu erstellen.
+Klicken Sie im Tab **Dokumentation** des Eintrags eines KI-Systems auf **Erstellen Sie Ihre Datenschutzerklärung**, um automatisch das Informationsdokument für Nutzer oder betroffene Personen zu erstellen.
 
 ### Die Begründung der Rolle erstellen
 
@@ -230,7 +238,7 @@ Der Assistent analysiert die im Eintrag des KI-Systems ausgefüllten Felder und 
 
 Sobald die Analyse erstellt ist, klicken Sie auf **Analyse ausdrucken**, um das Ergebnis als PDF zu exportieren. Dieses Dokument kann Ihrer Compliance-Akte zur KI-Verordnung beigefügt werden.
 
-<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="KI-Analysebereich mit den Schaltflächen Analyse ausdrucken und Analyse erneut starten"><figcaption><p>Die Schaltfläche „Analyse ausdrucken“ exportiert das Analyseergebnis als PDF</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/generalites-ai-assistant-cas-dusage-analysis-print.png" alt="KI-Analysebereich mit den Schaltflächen Analyse ausdrucken und Analyse erneut starten" width="490"><figcaption><p>Die Schaltfläche „Analyse ausdrucken“ exportiert das Analyseergebnis als PDF</p></figcaption></figure>
 
 ### Die Bewertung des geschäftlichen Nutzens erstellen
 

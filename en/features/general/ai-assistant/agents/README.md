@@ -38,15 +38,13 @@ Click **Create agent**. Five starting points are offered:
 
 * **Generate with Dastra AI**: describe the mission in a few words and click **Generate the agent**. The assistant asks a few questions, then creates the agent for you to review and adjust. This is the built-in `/design_agent` skill.
 * **Conversational Agent**: start from a blank page for a chat assistant. See [Creating a conversational agent](conversational.md).
-* **Auto Agent**: start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md).
+* **Auto Agent**: start from a blank page for a tool-driven run. See [Creating an autonomous agent](autonomous.md), and [Build an autonomous agent](../../../../examples/autonomous-agent.md) for a worked example.
 * **Dastra library**: start from a ready-made template. The library offers the templates built by the Dastra team, those of your partner library when you have one, and the agents of another workspace you can access. Click **Install**: the template is imported **as a draft**, deactivated and without notified users. Review its instructions and its tools before you activate it. The **Dastra library** button of the agent list opens the same gallery.
 * **Import an agent**: drop in a definition file previously exported from Dastra.
 
 In every case creation happens in two steps: you pick the type, you enter a **name** (120 characters maximum) and an optional **description**, then the full editor opens. The editor accepts descriptions of up to 3000 characters, with basic Markdown formatting.
 
-{% hint style="info" %}
 The editor **saves automatically**: the last save time is shown in the top-right corner. There is no Save button.
-{% endhint %}
 
 ***
 
@@ -77,11 +75,9 @@ Access to agents depends both on your **plan** and on your **permissions**. Two 
 
 Permissions are set in the role editor, see [Roles](../../../settings/roles.md). The [MCP server](../mcp.md) is covered by a separate plan.
 
-{% hint style="info" %}
-**A conversational agent never has more rights than the person who talks to it.** Its tools run with your own permissions: if you cannot access a record, neither can the agent. Deletion and anonymization are not offered to agents.
-{% endhint %}
-
 {% hint style="warning" %}
+**A conversational agent never has more rights than the person who talks to it.** Its tools run with your own permissions: if you cannot access a record, neither can the agent. Deletion and anonymization are not offered to agents.
+
 **An autonomous agent is not tied to a user's permissions.** A run started by a schedule, by a workflow rule or by **Run now** works with the rights of the workspace, whoever launched it. Give it only the tools its mission requires.
 {% endhint %}
 
@@ -97,18 +93,4 @@ Model families, hosting and the data sent to the models are documented in [How i
 
 ***
 
-{% content-ref url="conversational.md" %}
-[agent-conversationnel.md](conversational.md)
-{% endcontent-ref %}
-
-{% content-ref url="autonomous.md" %}
-[agent-autonome.md](autonomous.md)
-{% endcontent-ref %}
-
-{% content-ref url="skills.md" %}
-[competences.md](skills.md)
-{% endcontent-ref %}
-
-{% content-ref url="inbox.md" %}
-[boite-de-reception.md](inbox.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Creating a conversational agent</strong></td><td>Build a specialised chat assistant with its own personality, rules and tools.</td><td><a href="conversational.md">conversational.md</a></td></tr><tr><td><strong>Creating an autonomous agent</strong></td><td>Configure an agent that runs on its own: manually, on a schedule, or from a workflow rule.</td><td><a href="autonomous.md">autonomous.md</a></td></tr><tr><td><strong>Skills</strong></td><td>Save your recurring instructions as reusable commands in the Dastra AI chat.</td><td><a href="skills.md">skills.md</a></td></tr><tr><td><strong>Tracking runs</strong></td><td>Find the history of your agent runs, their status and the detail of what they did.</td><td><a href="inbox.md">inbox.md</a></td></tr></tbody></table>

@@ -37,7 +37,7 @@ An organization can contain several workspaces, each dedicated to a different pr
 
 A **workspace** is the environment in which you collaborate with your team. It groups the modules and data linked to your entities: processing activities, audits, risks, incidents, data subject requests, and so on. The data of a workspace is never accessible from another workspace.
 
-You choose your workspace when you sign in, by clicking its tile in the list of your workspaces.
+You choose your workspace when you sign in, by clicking its tile in the list of your workspaces. To switch workspace later, use the workspace selector at the top of the side menu: see [Navigate in Dastra](../navigation.md).
 
 Give your workspaces explicit names (for example "Group compliance" or "French entities"). It makes navigation easier when the organization has several.
 

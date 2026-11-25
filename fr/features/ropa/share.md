@@ -4,8 +4,6 @@ description: Apprenez à partager votre registre.
 
 # Partager le registre
 
-{% embed url="https://www.youtube-nocookie.com/embed/FZrIB6q76Mw?si=w5J27ax2OmT5refp" %}
-
 Un lien de partage donne à des utilisateurs externes un accès en lecture à votre registre des traitements, ou à certains de ses traitements, sans compte Dastra. Le partage nécessite la permission **Configuration avancée**.
 
 {% hint style="info" %}

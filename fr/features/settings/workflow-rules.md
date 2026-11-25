@@ -44,7 +44,7 @@ Le nombre de règles de workflow disponibles dépend de votre plan, de **25 à 1
 
 ## Créer une règle de workflow
 
-1. Dans le menu latéral, ouvrez **Automatisations** puis **Règles de workflow**.
+1. Dans le menu latéral, sous **Automatisation**, cliquez sur **Règles de workflow**.
 2. Cliquez sur **Créer une règle de workflow**.
 3. Choisissez **De zéro** pour partir d'un canevas vierge, ou **A partir d'un modèle** (voir [Bibliothèque de modèles de règles](#bibliotheque-de-modeles-de-regles)).
 4. Saisissez le **Nom de la règle** et le **Type d'élément** concerné (traitement, violation…), puis validez.
@@ -203,7 +203,7 @@ L'action **Exécuter un agent IA** lance un [agent IA](../general/ai-assistant/a
 
 Renseignez les champs suivants :
 
-* **Agent IA à exécuter** : seuls les agents publiés en mode Agent sont proposés. Si la liste est vide, créez d'abord un agent dans le module Agents IA.
+* **Agent IA à exécuter** : seuls les agents publiés en mode Agent sont proposés. Si la liste est vide, créez d'abord un agent dans **Automatisation** > **Dastra AI** > **Agents**.
 * **Message d'instruction** : message facultatif transmis à l'agent à chaque exécution. Il accepte les variables personnalisées de l'objet déclencheur (tapez `{{`).
 * **Champs d'entrée de l'agent** : les champs définis par l'agent apparaissent après sa sélection. Renseignez au moins ceux qui sont obligatoires.
 
@@ -251,7 +251,7 @@ Cet exemple nettoie automatiquement les demandes d'exercice de droits dont l'ide
 
 <figure><img src="../../.gitbook/assets/workflow-anon01-fr.png" alt="Règle quotidienne qui clôture et anonymise les demandes dont l'identité n'est pas validée un mois après la création"><figcaption><p>Tous les jours, fermer et anonymiser les demandes de droit dont l'identité du demandeur n'a pas été validée un mois après la création</p></figcaption></figure>
 
-Quatre règles complètes, avec leur déclencheur, leurs conditions et leurs actions, sont décrites dans [Recettes de workflow](../../examples/workflow-recipes.md).
+Quatre règles complètes, avec leur déclencheur, leurs conditions et leurs actions, sont décrites dans [Exemples de configuration de workflow](../../examples/workflow-recipes.md).
 
 ## Historique d'exécution
 
@@ -299,8 +299,3 @@ Ouvrez une règle de workflow existante, puis ouvrez le menu du bouton **Enregis
 
 Cette fonctionnalité permet d'harmoniser les règles d'automatisation à l'échelle de l'organisation et d'éviter de reconstruire des workflows identiques sur chaque objet ou entité.
 
-***
-
-## Tutoriel vidéo : les règles de workflow
-
-{% embed url="https://www.youtube-nocookie.com/embed/FqPmGdk2nTI" %}

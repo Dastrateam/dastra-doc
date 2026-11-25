@@ -144,6 +144,31 @@ Si un groupe est supprimé dans Entra ID :
 * Les **utilisateurs ne sont pas supprimés**
 * Aucun impact sur leurs comptes individuels
 
+**Nom des équipes synchronisées**
+
+Une équipe créée par SCIM reçoit deux valeurs du fournisseur d'identité :
+
+| Attribut SCIM | Champ de l'équipe dans Dastra | Longueur maximale |
+| --- | --- | --- |
+| `displayName` | Nom de l'équipe, affiché dans Dastra | 160 caractères |
+| `externalId` | Identifiant du groupe dans le fournisseur d'identité | 100 caractères |
+
+Dastra reprend le `displayName` tel qu'il est envoyé, sans le modifier ni le tronquer. Un renommage du groupe dans le fournisseur d'identité renomme l'équipe. Le nom affiché est toujours le `displayName` : Dastra ne peut pas afficher l'identifiant du groupe à la place.
+
+Pour afficher un nom plus court que celui du groupe (par exemple seulement la fin d'un nom de groupe très long), transformez le `displayName` dans le fournisseur d'identité. Dans Microsoft Entra ID, ouvrez l'application de provisioning, puis **Provisioning** > **Attribute mappings** > **Provision Microsoft Entra ID Groups**. Remplacez la source de `displayName` par une expression. Par exemple, pour ne garder que ce qui suit le dernier tiret :
+
+```
+Replace([displayName], , "^.*-", , "", , )
+```
+
+Adaptez le séparateur à vos noms de groupes. Les fonctions `Mid` ou `Split` d'Entra conviennent aussi. Entra permet de tester l'expression sur un groupe avant d'enregistrer.
+
+{% hint style="warning" %}
+* **Noms uniques** : Dastra refuse de créer une équipe si une équipe du même nom existe déjà dans l'espace de travail. Si deux groupes donnent le même nom après transformation, le second n'est pas créé. Vérifiez que les noms obtenus sont uniques.
+* **160 caractères au maximum** : un `displayName` plus long fait échouer la création de l'équipe. Raccourcissez les noms de groupes trop longs dans le fournisseur d'identité.
+* **Identifiant du groupe** : laissez `externalId` sur l'identifiant d'objet (Object ID) du groupe, ce que fait Entra par défaut. Cet identifiant est stable et unique. Le [binding des équipes](sso/README.md#binding-des-equipes) du SSO s'en sert pour rattacher les utilisateurs à leurs équipes : SCIM et SSO restent cohérents même avec un nom d'équipe raccourci.
+{% endhint %}
+
 ***
 
 ### Mapping et périmètre de synchronisation
@@ -327,8 +352,8 @@ Lors de la synchronisation, Dastra lit les attributs SCIM 2.0 suivants. `/v2/Sch
 
 | Attribut SCIM | Champ dans Dastra | Obligatoire |
 | --- | --- | --- |
-| `displayName` | Nom de l'équipe (30 caractères maximum) | Oui |
-| `externalId` | Identifiant du groupe dans le fournisseur d'identité | Facultatif |
+| `displayName` | Nom de l'équipe (160 caractères maximum) | Oui |
+| `externalId` | Identifiant du groupe dans le fournisseur d'identité (100 caractères maximum) | Facultatif |
 | `members` | Membres de l'équipe (identifiants des utilisateurs Dastra) | Facultatif |
 
 {% hint style="info" %}

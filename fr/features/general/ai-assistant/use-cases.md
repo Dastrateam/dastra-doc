@@ -14,6 +14,8 @@ Toutes les fonctionnalités de génération utilisent la même fenêtre : décri
 
 Dans les listes, le bouton de génération est une icône IA placée à gauche du bouton de création. Il est grisé si votre offre n'inclut pas la fonctionnalité. Quelques fonctions, signalées dans les sections concernées, n'apparaissent pas du tout dans ce cas. Chaque génération consomme des [crédits IA](how-it-works.md#credits-et-quotas-ia).
 
+Modules : [Traitements de données](#traitements-de-donnees) · [Référentiels](#referentiels) · [Questionnaires](#questionnaires-pia-analyse-de-risque) · [Demandes d'exercice de droits](#demandes-dexercice-de-droits) · [Violations de données](#violations-de-donnees) · [Contrats](#contrats) · [Documents et rapports personnalisés](#documents-et-rapports-personnalises) · [Systèmes d'IA](#systemes-dia) · [Règles de workflow et intégrations](#regles-de-workflow-et-integrations) · [Référentiels et contrôles](#referentiels-et-controles)
+
 ***
 
 ## Traitements de données
@@ -30,19 +32,25 @@ Générez rapidement un traitement de données au format attendu par Dastra à p
 4. Cliquez sur **Générer** et patientez quelques instants
 5. Sur l'écran de synthèse, vérifiez la proposition et cliquez sur **Valider**
 
-<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="Fenêtre de génération d'un traitement avec l'IA : champ de saisie, sélecteur de langue, exemples et option Utiliser des éléments existants"><figcaption><p>Génération d'un traitement avec l'assistant IA : exemples, langue de génération et réutilisation des éléments existants</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/register-processing-create-ai-form.png" alt="Fenêtre de génération d'un traitement avec l'IA : champ de saisie, sélecteur de langue, exemples et option Utiliser des éléments existants" width="315"><figcaption><p>Génération d'un traitement avec l'assistant IA : exemples, langue de génération et réutilisation des éléments existants</p></figcaption></figure>
 
 ### Générer une notice d'information
 
+{% columns %}
+{% column %}
 1. Rendez-vous dans la page de modification d'un traitement
 2. Dans la section **11. Documentation**, cliquez sur **Générer notice d'information**
 3. Choisissez le format souhaité (vous pouvez personnaliser les instructions en sélectionnant **Personnalisée**) et la **Langue de la notice** ; la langue de l'interface est proposée par défaut
 4. Cliquez sur **Générer** : l'aperçu permet de copier le texte de chaque onglet, ou de cliquer sur **Exporter** pour obtenir un fichier PDF, Word, HTML ou Markdown
 5. Dans la fenêtre **Exporter la notice d'information**, l'option **Ajouter ce fichier aux pièces jointes du traitement**, activée par défaut, ajoute le fichier exporté aux pièces jointes du traitement ; chaque export crée une nouvelle pièce jointe
+{% endcolumn %}
 
-<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Aperçu de la notice d'information avec l'action Exporter"><figcaption><p>Exporter la notice d'information générée par l'IA</p></figcaption></figure>
+{% column %}
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-modal.png" alt="Aperçu de la notice d'information avec l'action Exporter" width="350"><figcaption><p>Exporter la notice d'information générée par l'IA</p></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
-<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Fenêtre Exporter la notice d'information avec l'option d'ajout aux pièces jointes"><figcaption><p>Ajouter la notice exportée aux pièces jointes du traitement</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/register-processing-notice-export-attachments-option.png" alt="Fenêtre Exporter la notice d'information avec l'option d'ajout aux pièces jointes" width="350"><figcaption><p>Ajouter la notice exportée aux pièces jointes du traitement</p></figcaption></figure>
 
 ### Générer l'évaluation des critères d'AIPD
 
@@ -230,7 +238,7 @@ L'assistant analyse les champs renseignés dans la fiche du système d'IA et pro
 
 Une fois l'analyse générée, cliquez sur **Imprimer l'analyse** pour exporter le résultat au format PDF. Ce document peut être joint à votre dossier de conformité AI Act.
 
-<figure><img src="../../../.gitbook/assets/impression-analyse-ia.png" alt="Panneau d'analyse IA avec les boutons Imprimer l'analyse et Relancer l'analyse"><figcaption><p>Le bouton « Imprimer l'analyse » permet d'exporter le résultat de l'analyse au format PDF</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/impression-analyse-ia.png" alt="Panneau d'analyse IA avec les boutons Imprimer l'analyse et Relancer l'analyse" width="490"><figcaption><p>Le bouton « Imprimer l'analyse » permet d'exporter le résultat de l'analyse au format PDF</p></figcaption></figure>
 
 ### Générer l'évaluation de la valeur métier
 

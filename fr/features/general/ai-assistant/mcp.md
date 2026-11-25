@@ -64,7 +64,7 @@ Réservée à l'automatisation et aux environnements sans navigateur. Vous ajout
 **La clé d'API doit autoriser l'accès MCP et être liée à un espace de travail**, sinon la connexion MCP est refusée. Au moment de créer la clé dans l'onglet **API keys**, activez **Autoriser cette clé à accéder au serveur MCP (nécessite un espace de travail spécifique)** et renseignez le champ **Sélection d'un espace de travail spécifique**. Les clés qui autorisent MCP portent un badge `MCP` dans la liste.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Création d&#x27;une clé d&#x27;API avec l&#x27;interrupteur MCP et le sélecteur d&#x27;espace de travail"><figcaption><p>L'interrupteur MCP et le champ **Sélection d'un espace de travail spécifique** rendent une clé utilisable pour MCP</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="Création d&#x27;une clé d&#x27;API avec l&#x27;interrupteur MCP et le sélecteur d&#x27;espace de travail" width="600"><figcaption><p>L'interrupteur MCP et le champ **Sélection d'un espace de travail spécifique** rendent une clé utilisable pour MCP</p></figcaption></figure>
 
 La procédure générale de création d'une clé est décrite dans [Gestion des clés d'API](../../settings/api-keys.md).
 

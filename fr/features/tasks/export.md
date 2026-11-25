@@ -86,8 +86,6 @@ Ce graphique, intitulé **Evolution de la vélocité** dans l'application, montr
 
 <figure><img src="../../.gitbook/assets/tasks-export-9.png" alt="La fenêtre d'export avec le choix du format et le bouton Télécharger le fichier"><figcaption><p>La fenêtre d'export des tâches</p></figcaption></figure>
 
-{% embed url="https://youtu.be/MVWJev04V8Y" %}
-
 ## Vues personnalisées
 
 Une vue personnalisée enregistre sous un nom la combinaison de filtres et de colonnes d'une vue. Vous passez ensuite d'une vue enregistrée à l'autre depuis le sélecteur de la barre d'outils, à côté de la zone de recherche.

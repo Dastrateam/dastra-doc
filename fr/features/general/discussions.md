@@ -20,6 +20,14 @@ Les discussions internes fonctionnent comme un chat attaché à un élément de 
 
 Un brouillon non envoyé est conservé dans votre navigateur et retrouvé à la réouverture du panneau. Vous pouvez modifier ou supprimer vos propres messages depuis leur menu. Un message modifié affiche **Modifié le** suivi de la date.
 
+## Présentation des messages
+
+Les messages sont présentés comme dans une messagerie, dans les discussions internes comme dans les échanges d'une demande d'exercice de droits, côté organisation et dans l'espace demandeur. Vos propres messages sont à droite, dans une bulle bleu clair, avec **Moi** au-dessus. Le nom d'un autre auteur est au-dessus de sa bulle, de la couleur de son avatar. La date et l'heure de chaque message sont sous la bulle.
+
+<figure><img src="../../.gitbook/assets/v3-interface-discussions-1.png" alt="Une discussion interne avec des messages en bulles : les messages de l'utilisateur à droite en bleu clair, ceux des autres auteurs à gauche"><figcaption><p>La présentation des messages dans une discussion interne</p></figcaption></figure>
+
+Dans l'échange avec le demandeur d'une demande d'exercice de droits, les messages du demandeur portent l'en-tête **Demandeur**. Voir [Espace demandeur](../requests/advanced/requester-space.md).
+
 ## Mentions
 
 Mentionnez les utilisateurs concernés avec le caractère **@**. Une liste d'utilisateurs de votre espace de travail s'affiche et se filtre à mesure que vous tapez.

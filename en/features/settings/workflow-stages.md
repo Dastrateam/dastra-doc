@@ -34,8 +34,6 @@ Each stage is linked to an **Internal status** that depends on the object type. 
 
 ## Customize workflow stages
 
-{% embed url="https://youtu.be/rIPJUY3vylc" %}
-
 In the side menu, click **Workspace settings**, then, in the **Process** section, click **Workflow stages**. This page is reserved for users who are allowed to manage advanced settings.
 
 <figure><img src="../../.gitbook/assets/settings-workflow-stages-1.png" alt="The Workspace settings menu with the Workflow stages entry"><figcaption><p>The Workflow stages entry in the workspace settings</p></figcaption></figure>

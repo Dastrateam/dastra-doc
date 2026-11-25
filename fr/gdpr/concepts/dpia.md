@@ -170,10 +170,6 @@ Dastra vous guide pas à pas dans la réalisation du PIA grâce à un modèle de
 
 ## Pour aller plus loin
 
-{% embed url="https://www.youtube.com/watch?v=yfaJC-YESPk" %}
-Webinar « Comment aborder l’étape PIA avec un outil ? »
-{% endembed %}
-
 {% content-ref url="../../features/ropa/activity/impact-analysis.md" %}
 [Analyse d'impact](../../features/ropa/activity/impact-analysis.md)
 {% endcontent-ref %}

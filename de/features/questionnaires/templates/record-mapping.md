@@ -1,8 +1,8 @@
 ---
 description: >-
-  Nutzen Sie die Antworten eines Fragebogens, um einen Eintrag anzulegen oder
-  einen bestehenden zu aktualisieren: unterstützte Objekte, Variablen,
-  Fragetypen, die Schaltfläche zum Zusammenführen und die Fehlermeldungen.
+  Nutzen Sie die Antworten eines Fragebogens, um einen Eintrag anzulegen oder zu
+  aktualisieren: unterstützte Objekte, Variablen, Fragetypen, Zusammenführen und
+  Fehlermeldungen.
 ---
 
 # Ein Verzeichnis aus den Antworten befüllen

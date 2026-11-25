@@ -51,6 +51,16 @@ Chaque question peut recevoir un statut d’évaluation :
 
 Un sélecteur situé en haut de chaque section permet d’appliquer le même statut à toutes les questions affichées d’un seul geste.
 
+Dans la navigation par sections à gauche, chaque question est une barre colorée. Dès que vous posez un statut, la barre l'affiche, que la question soit obligatoire ou non :
+
+* vert foncé : **Validé** ;
+* jaune : **Besoin de révision** ;
+* rouge : **Non validé**.
+
+Une question sans statut garde la couleur de sa réponse : gris si elle n'a pas de réponse, vert si elle a une réponse, orange si elle est obligatoire et sans réponse.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-questionnaires-2.png" alt="Navigation par section de l'écran de revue avec les barres de couleur des questions"><figcaption><p>Les barres des questions dans la navigation de revue</p></figcaption></figure>
+
 Pour chaque question, vous pouvez également :
 
 * **Ajouter une annotation** : échange interne avec les répondants et les autres validateurs

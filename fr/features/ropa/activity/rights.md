@@ -4,8 +4,6 @@ description: Indiquez les droits applicables à ce traitement.
 
 # Droits des personnes
 
-{% embed url="https://youtu.be/ZKFHXxDcouw" %}
-
 Chaque personne concernée dispose de droits sur les données qui la concernent. Ces droits, définis aux [**articles 15 et suivants du RGPD**](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3), s'appliquent selon la base légale choisie pour le traitement ou selon le régime juridique applicable. Par exemple, le droit à la portabilité ne s'applique qu'aux traitements fondés sur le consentement ou nécessaires à l'exécution d'un contrat.
 
 Pour chaque droit, vous devez préciser comment il s'exerce. Il peut être automatisé, par exemple lorsque les personnes exercent leur droit directement dans un environnement en ligne. Sinon, il s'exerce manuellement ou à la demande.

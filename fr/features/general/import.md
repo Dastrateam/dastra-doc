@@ -7,8 +7,6 @@ description: >-
 
 # Importer vos données (Excel, Csv)
 
-{% embed url="https://www.youtube-nocookie.com/embed/XNcy3eudgZk?si=LadsT5mhFv-hubDT" %}
-
 ## L'import de données dans Dastra
 
 Dastra importe vos propres données depuis un fichier au format tableur. Dans chaque liste concernée, l'import se lance depuis la flèche du bouton de création, puis **Importer**.

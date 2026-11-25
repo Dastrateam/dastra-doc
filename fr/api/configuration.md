@@ -2,8 +2,6 @@
 
 Cette page présente l'API REST de Dastra : son adresse, ses limites d'utilisation, et la manière d'y manipuler les champs personnalisés et les tags. Pour obtenir une clé et appeler l'API, voir [Authentification](authentication.md).
 
-{% embed url="https://youtu.be/Bl-T-slTyiQ" %}
-
 ## Configurer des API dans Dastra
 
 API signifie _**application programming interface**_ ou « interface de programmation d'application » en français.

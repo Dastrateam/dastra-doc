@@ -22,6 +22,7 @@
 ## 👨‍💻 Bien commencer <a href="#getting-started" id="getting-started"></a>
 
 * [🚀 Démarrer en 5 minutes](getting-started/quickstart.md)
+* [Naviguer dans Dastra](getting-started/navigation.md)
 * [Mise en place](getting-started/setup/README.md)
   * [Les notions importantes](getting-started/setup/key-concepts.md)
   * [Se connecter et gérer l’authentification](getting-started/setup/login.md)
@@ -48,12 +49,28 @@
   * [Demande de support](getting-started/support/request.md)
   * [Le processus de support client](getting-started/support/process.md)
 
+## Dastra AI <a href="#dastra-ai" id="dastra-ai"></a>
+
+* [Dastra AI](features/general/ai-assistant/README.md)
+  * [Bien formuler vos demandes](features/general/ai-assistant/prompting.md)
+  * [Les agents Dastra AI](features/general/ai-assistant/agents/README.md)
+    * [Créer un agent conversationnel](features/general/ai-assistant/agents/conversational.md)
+    * [Créer un agent autonome](features/general/ai-assistant/agents/autonomous.md)
+    * [Suivre les exécutions](features/general/ai-assistant/agents/inbox.md)
+  * [Les compétences](features/general/ai-assistant/agents/skills.md)
+  * [Artefacts](features/general/ai-assistant/artifacts.md)
+  * [Le serveur MCP](features/general/ai-assistant/mcp.md)
+  * [Cas d'usage](features/general/ai-assistant/use-cases.md)
+  * [Comment ça marche ?](features/general/ai-assistant/how-it-works.md)
+  * [FAQ](features/general/ai-assistant/faq.md)
+
 ## Exemples concrets <a href="#examples" id="examples"></a>
 
 * [Exemples concrets](examples/README.md)
   * [Projet ISO 27001](examples/iso-27001-project.md)
   * [Calcul des risques](examples/risk-scoring.md)
-  * [Recettes de workflow](examples/workflow-recipes.md)
+  * [Exemples de configuration de workflow](examples/workflow-recipes.md)
+  * [Construire un agent autonome](examples/autonomous-agent.md)
   * [Importer des actifs depuis un tableur](examples/excel-import.md)
   * [Cartographier un flux de données](examples/data-mapping.md)
   * [Des réponses de questionnaire dans une fiche](examples/questionnaire-to-record.md)
@@ -69,17 +86,6 @@
   * [Gestion des tags](features/general/tags.md)
   * [Fusion d'éléments](features/general/merge.md)
   * [Champs personnalisés](features/general/custom-fields.md)
-  * [Assistant IA](features/general/ai-assistant/README.md)
-    * [Comment ça marche ?](features/general/ai-assistant/how-it-works.md)
-    * [Cas d'usage](features/general/ai-assistant/use-cases.md)
-    * [FAQ](features/general/ai-assistant/faq.md)
-    * [Les agents Dastra AI](features/general/ai-assistant/agents/README.md)
-      * [Créer un agent conversationnel](features/general/ai-assistant/agents/conversational.md)
-      * [Créer un agent autonome](features/general/ai-assistant/agents/autonomous.md)
-      * [Les compétences](features/general/ai-assistant/agents/skills.md)
-      * [Suivre les exécutions](features/general/ai-assistant/agents/inbox.md)
-    * [Le serveur MCP](features/general/ai-assistant/mcp.md)
-    * [Artefacts](features/general/ai-assistant/artifacts.md)
   * [Modèles e-mail](features/general/email-templates.md)
   * [Discussions internes](features/general/discussions.md)
   * [FAQ](features/general/faq.md)

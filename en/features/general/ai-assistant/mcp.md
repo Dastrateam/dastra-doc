@@ -64,7 +64,7 @@ Reserved for automation and environments without a browser. You add an HTTP head
 **The API key must allow MCP access and be bound to a workspace**, otherwise the MCP connection is refused. When creating the key in the **API keys** tab, turn on **Allow this key to access the MCP server (requires a specific workspace)** and fill in the **Select a specific workspace** field. The keys that allow MCP carry an `MCP` badge in the list.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="API key creation with the MCP switch and the workspace selector"><figcaption><p>The MCP switch and the **Select a specific workspace** field make a key usable for MCP</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mcp-cle-api-workspace.png" alt="API key creation with the MCP switch and the workspace selector" width="600"><figcaption><p>The MCP switch and the **Select a specific workspace** field make a key usable for MCP</p></figcaption></figure>
 
 The general procedure for creating a key is described in [API key management](../../settings/api-keys.md).
 

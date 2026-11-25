@@ -4,8 +4,6 @@ description: Learn how to create and set up entities and departments in Dastra.
 
 # Create and set up organizational units
 
-{% embed url="https://www.youtube.com/watch?v=QyEliXjoMJ0" %}
-
 ## Introduction
 
 Organizational units structure your workspace. Two types of organizational units can be created:
@@ -102,7 +100,36 @@ Example:
 
 The **Organigram** tab shows your entities and departments graphically. You can perform most of the operations available in the list from there.
 
-<figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigram view of the organizational units"><figcaption><p>The Organigram view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-3.png" alt="Organigram view of the organizational units"><figcaption><p>The Organigram view</p></figcaption></figure>
+
+### Filter the organigram
+
+The bar above the chart is both a legend of the colors and a filter. Use it to display only what you need:
+
+* **Workspace** and **Departments**: clear the box to hide the workspace or the departments. The **Entities** box is always checked, because entities are always displayed.
+* **Search for an entity or a department**: type part of a name. The organigram keeps the matching units and the units above them.
+* **Entity**: select an entity to display only its branch, meaning the entity and the units below it. The workspace is then hidden.
+* **Reset**: restores the full organigram.
+
+A **Filtered view** label reminds you that some units are hidden.
+
+### Include legal information
+
+Turn on **Include legal information** to add a block under each entity: **Head office**, **Country**, **Registration**, **Legal representative**, **DPO**, **EU representative** and **Supervisory authority**. A piece of information that is not filled in the entity shows **Not provided**. The **EU representative** line appears only for an entity located outside the European Union, or without a country.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-1.png" alt="Organigram with the filter bar and the legal information of the entities"><figcaption><p>The organigram, filtered on the entities, with the legal information</p></figcaption></figure>
+
+Departments do not show this block. To fill in the information, edit the entity (see the section Create or edit an entity above).
+
+### Export the organigram
+
+Click **Export**, choose **PDF file (.pdf)** or **HTML file (.html)** in the **Export the organigram** window, then click **Download file**. The file contains the organigram as currently filtered, with the legal information if you turned it on, fully unfolded. It shows the workspace name, the date and the active filters at the top. The PDF is a single landscape page, scaled to fit.
+
+<figure><img src="../../.gitbook/assets/v3-improvements-org-units-2.png" alt="Export the organigram window with the PDF and HTML formats"><figcaption><p>The export window of the organigram</p></figcaption></figure>
+
+{% hint style="info" %}
+The **Export** button is available if you have the right to manage users.
+{% endhint %}
 
 ## Restrict access to the content of an organizational unit
 

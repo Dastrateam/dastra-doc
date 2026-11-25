@@ -10,8 +10,6 @@ Planifier un questionnaire consiste à envoyer un modèle à ses répondants, ou
 
 ## Lancer une planification
 
-{% embed url="https://youtu.be/YGU3yPRtQok" %}
-
 Une fois le modèle de questionnaire créé et personnalisé, cliquez sur **Planifier questionnaire**. Le bouton est disponible dans la liste **Modèles de questionnaires**, en haut de la page d'un modèle et, pour les questionnaires de type PIA, TIA ou LIA, depuis le traitement concerné (voir [AIPD / PIA](types/dpia.md)).
 
 La fenêtre **Planifier un questionnaire** propose quatre modes de création.
@@ -57,7 +55,7 @@ Dastra crée le questionnaire, dont vous êtes le répondant et l'approbateur, y
 Un indicateur **Utilisation** s'affiche dès que votre quota de crédits IA atteint 80 %. La génération est bloquée lorsque le quota est dépassé.
 
 {% hint style="info" %}
-L'utilisation de la réponse assistée par IA consomme des crédits IA. Consultez la page [Assistant IA](../general/ai-assistant/README.md) pour connaître votre quota et les modalités de consommation.
+L'utilisation de la réponse assistée par IA consomme des crédits IA. Consultez la page [Dastra AI](../general/ai-assistant/README.md) pour connaître votre quota et les modalités de consommation.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/questionnaires-schedule-6.png" alt="Fenêtre Réponse assistée par IA avec les instructions, la langue des réponses et les pièces jointes"><figcaption><p>Générer la réponse à un questionnaire avec l'IA</p></figcaption></figure>
@@ -138,8 +136,5 @@ Pour les questionnaires de type PIA, vous pouvez lancer l'analyse d'impact depui
 
 ## Générer un plan d'actions à partir d'un questionnaire
 
-{% embed url="https://youtu.be/hPeM4mHOzww" %}
-
 ## Valider un questionnaire
 
-{% embed url="https://youtu.be/caEBTQTV2Yo" %}

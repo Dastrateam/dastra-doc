@@ -14,6 +14,6 @@ Die Schaltfläche mit dem Sprechblasen-Symbol (**Bitte kontaktieren Sie uns übe
 
 ## Der KI-Agent
 
-Die Schaltfläche **Dastra AI** (**Dastra AI öffnen**) öffnet den KI-Assistenten Dastra AI. Sie erscheint nur, wenn Ihre Organisation Zugriff auf die KI-Funktion hat. Was der Assistent leistet, wie Sie ihn nutzen und wie Sie eigene Agenten erstellen, lesen Sie unter [KI-Assistent](../../features/general/ai-assistant/README.md).
+Die Schaltfläche **Dastra AI** (**Dastra AI öffnen**) öffnet den KI-Assistenten Dastra AI. Sie erscheint nur, wenn Ihre Organisation Zugriff auf die KI-Funktion hat und Ihre Rolle Ihnen Zugriff darauf gibt. Was der Assistent leistet, wie Sie ihn nutzen und wie Sie eigene Agenten erstellen, lesen Sie unter [KI-Assistent](../../features/general/ai-assistant/README.md).
 
-Die Schaltflächen werden während einer Chat-Unterhaltung oder bei geöffnetem Panel des KI-Agenten ausgeblendet, damit sie sich nicht überlagern.
+Die Schaltflächen werden während einer Chat-Unterhaltung oder bei geöffnetem Panel des KI-Agenten ausgeblendet, damit sie sich nicht überlagern. Die Schaltfläche **Dastra AI öffnen** wird auf der Seite Dastra AI (**Automatisierung** > **Dastra AI**) nicht angezeigt, wo die Unterhaltung den Platz des Fensters einnimmt.

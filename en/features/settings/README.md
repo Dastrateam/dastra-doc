@@ -7,104 +7,18 @@ description: >-
 
 This section covers the settings that the organization owner and the workspace administrators use to adapt Dastra to their context.
 
-Set up single sign-on (SSO):
+## Access and security
 
-{% content-ref url="sso/README.md" %}
-[Single Sign On (SSO)](sso/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Single Sign On (SSO)</strong></td><td>Set up single sign-on (SSO) for your organization in Dastra: protocols, connection options, automatic user creation and login management.</td><td><a href="sso/README.md">sso/README.md</a></td></tr><tr><td><strong>SCIM</strong></td><td>On this page you will learn how to configure SCIM within Dastra using Microsoft Entra ID (formerly Azure Active Directory).</td><td><a href="scim.md">scim.md</a></td></tr><tr><td><strong>Organization security and security logs</strong></td><td>Set the security rules of your organization (password renewal, automatic sign-out, strong authentication, IP and email domain filters) and review the security logs and the activity history.</td><td><a href="security-center.md">security-center.md</a></td></tr><tr><td><strong>IP filtering</strong></td><td>Restrict sign-in to Dastra to allowed IP address ranges: scope, behaviour, blocking and points of attention.</td><td><a href="ip-filtering.md">ip-filtering.md</a></td></tr><tr><td><strong>Roles and permissions</strong></td><td>Every organization is different: create custom roles and adjust their permissions module by module.</td><td><a href="roles.md">roles.md</a></td></tr><tr><td><strong>SIEM streaming</strong></td><td>Stream your account's security audit events to your SIEM in real time.</td><td><a href="siem.md">siem.md</a></td></tr></tbody></table>
 
-Provision users from your directory with SCIM:
+## Processes and notifications
 
-{% content-ref url="scim.md" %}
-[SCIM](scim.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Workflow stages</strong></td><td>Customize the workflow stages of each object type in Dastra: add, reorder, set the internal status and delete.</td><td><a href="workflow-stages.md">workflow-stages.md</a></td></tr><tr><td><strong>Workflow rules</strong></td><td>Automate your processes with workflow rules: trigger, conditions and actions (notifications, tasks, field updates, HTTP requests, AI agents).</td><td><a href="workflow-rules.md">workflow-rules.md</a></td></tr><tr><td><strong>Notifications</strong></td><td>Manage notifications in Dastra: the in-app notification center, email notifications and the Notification permission of roles.</td><td><a href="notifications.md">notifications.md</a></td></tr></tbody></table>
 
-Set the security rules of your organization and review the security logs:
+## API and integrations
 
-{% content-ref url="security-center.md" %}
-[Organization security and security logs](security-center.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>API key management</strong></td><td>Create and manage your organization's API keys: workspace, expiration, permissions, MCP server access.</td><td><a href="api-keys.md">api-keys.md</a></td></tr><tr><td><strong>Authentication</strong></td><td>Learn how to authenticate with Dastra API.</td><td><a href="../../api/authentication.md">../../api/authentication.md</a></td></tr><tr><td><strong>Webhooks</strong></td><td>Notify your applications in real time when an event happens in Dastra: configuring, receiving, securing and managing webhooks with the API.</td><td><a href="webhooks.md">webhooks.md</a></td></tr><tr><td><strong>OneDrive &#x26; SharePoint / Google Drive integrations</strong></td><td>This page explains how to connect Dastra to Microsoft OneDrive &#x26; SharePoint or Google Drive to use your cloud storage as the main document management system for the workspace.</td><td><a href="cloud-storage.md">cloud-storage.md</a></td></tr></tbody></table>
 
-Stream audit logs to your SIEM:
+## Email
 
-{% content-ref url="siem.md" %}
-[SIEM streaming](siem.md)
-{% endcontent-ref %}
-
-Restrict access to Dastra to some IP addresses:
-
-{% content-ref url="ip-filtering.md" %}
-[IP filtering](ip-filtering.md)
-{% endcontent-ref %}
-
-Manage roles and permissions:
-
-{% content-ref url="roles.md" %}
-[Roles and permissions](roles.md)
-{% endcontent-ref %}
-
-Create API keys and connect the MCP server:
-
-{% content-ref url="api-keys.md" %}
-[API key management](api-keys.md)
-{% endcontent-ref %}
-
-See the API section:
-
-{% content-ref url="../../api/authentication.md" %}
-[Authentication](../../api/authentication.md)
-{% endcontent-ref %}
-
-Manage notifications:
-
-{% content-ref url="notifications.md" %}
-[Notifications](notifications.md)
-{% endcontent-ref %}
-
-Customize process stages:
-
-{% content-ref url="workflow-stages.md" %}
-[Workflow stages](workflow-stages.md)
-{% endcontent-ref %}
-
-Automate your processes with workflow rules:
-
-{% content-ref url="workflow-rules.md" %}
-[Workflow rules](workflow-rules.md)
-{% endcontent-ref %}
-
-Collect information by email:
-
-{% content-ref url="mailboxes.md" %}
-[Incoming mail data collection](mailboxes.md)
-{% endcontent-ref %}
-
-Connect a cloud storage:
-
-{% content-ref url="cloud-storage.md" %}
-[OneDrive & SharePoint / Google Drive integrations](cloud-storage.md)
-{% endcontent-ref %}
-
-Synchronize your data with webhooks:
-
-{% content-ref url="webhooks.md" %}
-[Webhooks](webhooks.md)
-{% endcontent-ref %}
-
-Configure SMTP:
-
-{% content-ref url="smtp/README.md" %}
-[SMTP configuration](smtp/README.md)
-{% endcontent-ref %}
-
-Customize message templates:
-
-{% content-ref url="message-templates.md" %}
-[Message templates](message-templates.md)
-{% endcontent-ref %}
-
-Allow the email domains of your organization:
-
-{% content-ref url="email-domains.md" %}
-[Email domains](email-domains.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Incoming mail data collection</strong></td><td>Automatically create objects in Dastra from emails received at dedicated collection addresses.</td><td><a href="mailboxes.md">mailboxes.md</a></td></tr><tr><td><strong>SMTP configuration</strong></td><td>Send Dastra's notification emails through your own email sending server.</td><td><a href="smtp/README.md">smtp/README.md</a></td></tr><tr><td><strong>Message templates</strong></td><td>Create reusable message templates for data subject requests, tasks, questionnaires, processing activities and data breaches.</td><td><a href="message-templates.md">message-templates.md</a></td></tr><tr><td><strong>Email domains</strong></td><td>Allow users in your organization to directly join your space with a suitable role.</td><td><a href="email-domains.md">email-domains.md</a></td></tr></tbody></table>

@@ -1,0 +1,433 @@
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>__TITLE__</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: a pull request header, a sidebar of the changed pages by language, and a reading column
+     that renders each page the way GitBook does, with the changed blocks marked in the margin. */
+  :root {
+    --bg: #ffffff; --panel: #f6f7f9; --fg: #1c1f26; --muted: #5f6673; --line: #e3e6ea;
+    --accent: #c9510c; --accent-soft: #fdf1e8;
+    --add: #1a7f37; --add-bg: #eaf6ec; --del: #b42318; --del-bg: #fdecea;
+    --info-bg: #f3f5f8; --warn-bg: #fff4e5; --warn: #b25e09; --danger-bg: #fdecea; --ok-bg: #eaf6ec;
+    --code-bg: #f1f2f4; --shadow: 0 1px 3px rgba(20, 24, 31, .08);
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161a; --panel: #1c1f25; --fg: #e8eaee; --muted: #9aa2af; --line: #2c3038;
+      --accent: #ff9552; --accent-soft: #2e2118;
+      --add: #56c271; --add-bg: #17291c; --del: #ff7b6e; --del-bg: #331a17;
+      --info-bg: #1e2229; --warn-bg: #2e2415; --warn: #f0b062; --danger-bg: #331a17; --ok-bg: #17291c;
+      --code-bg: #23272e; --shadow: 0 1px 3px rgba(0, 0, 0, .4); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161a; --panel: #1c1f25; --fg: #e8eaee; --muted: #9aa2af; --line: #2c3038;
+    --accent: #ff9552; --accent-soft: #2e2118;
+    --add: #56c271; --add-bg: #17291c; --del: #ff7b6e; --del-bg: #331a17;
+    --info-bg: #1e2229; --warn-bg: #2e2415; --warn: #f0b062; --danger-bg: #331a17; --ok-bg: #17291c;
+    --code-bg: #23272e; --shadow: 0 1px 3px rgba(0, 0, 0, .4); color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.6; }
+  .top { border-bottom: 1px solid var(--line); padding-block: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+  .top h1 { font-size: 17px; font-weight: 600; margin: 0; text-wrap: balance; min-width: 0; }
+  .top .meta { color: var(--muted); font-size: 13px; }
+  .top a { color: var(--accent); }
+  .app { display: grid; grid-template-columns: 290px minmax(0, 1fr); align-items: start; }
+  .side { border-right: 1px solid var(--line); padding: 16px 12px 24px max(16px, env(safe-area-inset-left, 0px)); position: sticky; top: env(safe-area-inset-top, 0px); max-height: 100vh; overflow-y: auto; }
+  .side h2 { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 14px 8px 6px; font-weight: 600; }
+  .side h2:first-child { margin-top: 0; }
+  .side button { display: flex; gap: 8px; align-items: flex-start; width: 100%; text-align: left; background: none; border: 0; border-radius: 6px; padding: 6px 8px; color: var(--fg); font: inherit; font-size: 13.5px; line-height: 1.35; cursor: pointer; }
+  .side button:hover { background: var(--panel); }
+  .side button[aria-current="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+  .side button:focus-visible, .bar button:focus-visible, .bar select:focus-visible, .gb-tabs [role="tab"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .side .name { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+  .side small { display: block; color: var(--muted); font-size: 11.5px; font-weight: 400; }
+  .badge { flex: none; font-size: 10.5px; font-weight: 600; border-radius: 999px; padding: 1px 7px; margin-top: 2px; border: 1px solid currentColor; }
+  .b-added { color: var(--add); } .b-deleted { color: var(--del); } .b-modified, .b-renamed { color: var(--warn); } .b-images, .b-summary { color: var(--muted); }
+  .main { min-width: 0; padding-block: 16px 64px; padding-left: 28px; padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 18px; font-size: 13px; color: var(--muted); }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button { background: var(--bg); border: 0; padding: 5px 12px; font: inherit; font-size: 13px; color: var(--fg); cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+  .seg button:disabled { color: var(--muted); cursor: default; opacity: .6; }
+  .bar select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); }
+  .legend { display: inline-flex; gap: 12px; margin-left: auto; }
+  .legend i { display: inline-block; width: 4px; height: 12px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+  .cols { display: grid; gap: 40px; grid-template-columns: minmax(0, 760px); }
+  .cols.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .doc { min-width: 0; }
+  .doc .lang { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .doc .path { font-family: var(--mono); font-size: 12px; color: var(--muted); overflow-wrap: anywhere; margin-bottom: 4px; }
+  .banner { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 13px; color: var(--muted); margin: 8px 0 16px; }
+  .doc h1 { font-size: 32px; line-height: 1.2; font-weight: 700; margin: 6px 0 8px; text-wrap: balance; }
+  .doc .desc { font-size: 17px; color: var(--muted); margin: 0 0 24px; }
+  .doc h2 { font-size: 24px; line-height: 1.25; font-weight: 700; margin: 36px 0 12px; text-wrap: balance; }
+  .doc h3 { font-size: 19px; font-weight: 600; margin: 28px 0 10px; }
+  .doc h4 { font-size: 16px; font-weight: 600; margin: 22px 0 8px; }
+  .doc p { margin: 0 0 14px; }
+  .doc ul, .doc ol { margin: 0 0 14px; padding-left: 24px; }
+  .doc li { margin-bottom: 6px; }
+  .doc li > p { margin-bottom: 6px; }
+  .doc a { color: var(--accent); text-underline-offset: 2px; }
+  .doc code { font-family: var(--mono); font-size: .88em; background: var(--code-bg); border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
+  .doc pre { background: var(--code-bg); border-radius: 8px; padding: 12px 14px; overflow-x: auto; margin: 0 0 14px; }
+  .doc pre code { background: none; padding: 0; overflow-wrap: normal; }
+  .doc hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
+  .doc blockquote { margin: 0 0 14px; padding-left: 14px; border-left: 3px solid var(--line); color: var(--muted); }
+  .doc figure { margin: 18px 0; text-align: center; }
+  .doc img { max-width: 100%; height: auto; border-radius: 6px; }
+  .doc figure img { box-shadow: var(--shadow); }
+  .doc figcaption { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+  .doc figcaption p { margin: 0; }
+  .img-changed { outline: 2px solid var(--add); outline-offset: 3px; }
+  .img-note { display: block; font-size: 11.5px; color: var(--add); margin-top: 6px; font-weight: 500; }
+  .img-missing { display: inline-block; border: 1px dashed var(--del); color: var(--del); border-radius: 6px; padding: 10px 14px; font-size: 12.5px; font-family: var(--mono); overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 0 0 16px; }
+  .doc table:not([data-view="cards"]) { border-collapse: collapse; width: 100%; font-size: 14px; }
+  .doc table:not([data-view="cards"]) th, .doc table:not([data-view="cards"]) td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .doc table:not([data-view="cards"]) th { background: var(--panel); font-weight: 600; }
+  .doc table[data-view="cards"], .doc table[data-view="cards"] tbody { display: block; }
+  .doc table[data-view="cards"] thead { display: none; }
+  .doc table[data-view="cards"] tbody { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin: 0 0 16px; }
+  .doc table[data-view="cards"] tr { display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--line); border-radius: 8px; padding: 14px; box-shadow: var(--shadow); font-size: 14px; position: relative; }
+  .doc table[data-view="cards"] td { display: block; padding: 0; }
+  .doc table[data-view="cards"] tr.card-link:hover { border-color: var(--accent); }
+  .card-cover { position: absolute; inset: 0; border-radius: 8px; }
+  .gb-hint { border-radius: 8px; padding: 12px 14px 1px; margin: 0 0 16px; background: var(--info-bg); font-size: 14px; border-left: 3px solid var(--muted); }
+  .gb-hint-warning { background: var(--warn-bg); border-left-color: var(--warn); }
+  .gb-hint-danger { background: var(--danger-bg); border-left-color: var(--del); }
+  .gb-hint-success { background: var(--ok-bg); border-left-color: var(--add); }
+  .gb-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; align-items: start; margin-bottom: 4px; }
+  .gb-col { min-width: 0; }
+  .gb-col figure { margin-top: 0; }
+  .gb-tabs { border: 1px solid var(--line); border-radius: 8px; margin: 0 0 16px; overflow: hidden; }
+  .gb-tablist { display: flex; flex-wrap: wrap; background: var(--panel); border-bottom: 1px solid var(--line); }
+  .gb-tabs [role="tab"] { background: none; border: 0; border-right: 1px solid var(--line); padding: 8px 14px; font: inherit; font-size: 13.5px; color: var(--muted); cursor: pointer; }
+  .gb-tabs [role="tab"][aria-selected="true"] { background: var(--bg); color: var(--fg); font-weight: 500; }
+  .gb-tabpanel { padding: 16px 16px 2px; }
+  .gb-steps { list-style: none; padding: 0; counter-reset: step; }
+  .gb-steps > li { counter-increment: step; position: relative; padding: 0 0 8px 44px; border-left: 1px solid var(--line); margin-left: 14px; }
+  .gb-steps > li::before { content: counter(step); position: absolute; left: -14px; top: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--bg); font-size: 13px; font-weight: 600; display: grid; place-items: center; }
+  .gb-ref { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 0 0 12px; text-decoration: none; font-weight: 500; box-shadow: var(--shadow); }
+  .gb-ref:hover { border-color: var(--accent); }
+  .gb-ref::after { content: "\203A"; font-size: 18px; color: var(--muted); }
+  .doc details { border: 1px solid var(--line); border-radius: 8px; padding: 0 14px; margin: 0 0 10px; }
+  .doc details > summary { cursor: pointer; padding: 11px 0; font-weight: 500; }
+  .doc details[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+  .chg { position: relative; margin-left: -18px; padding-left: 14px; border-left: 4px solid var(--add); background: linear-gradient(to right, var(--add-bg), transparent 60%); border-radius: 2px; }
+  .doc details.removed { border: 0; border-left: 4px solid var(--del); border-radius: 2px; margin-left: -18px; padding: 0 0 0 14px; background: linear-gradient(to right, var(--del-bg), transparent 60%); }
+  .doc details.removed > summary { color: var(--del); font-size: 12.5px; padding: 3px 0; border: 0; margin: 0 0 8px; font-weight: 500; }
+  .doc details.removed > .old { opacity: .75; }
+  .sumdiff { font-family: var(--mono); font-size: 12.5px; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; padding: 12px; background: var(--panel); border-radius: 8px; }
+  .sumdiff .a { color: var(--add); } .sumdiff .d { color: var(--del); } .sumdiff .h { color: var(--muted); }
+  .empty { color: var(--muted); padding: 40px 0; }
+  @media (max-width: 860px) {
+    .app { grid-template-columns: minmax(0, 1fr); }
+    .side { position: static; max-height: 240px; border-right: 0; border-bottom: 1px solid var(--line); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+    .main { padding-left: max(24px, env(safe-area-inset-left, 0px)); }
+    .cols.two { grid-template-columns: minmax(0, 1fr); }
+    .legend { margin-left: 0; }
+    .doc h1 { font-size: 26px; }
+  }
+</style>
+
+<header class="top">
+  <h1 id="pr-title">Aperçu de la pull request</h1>
+  <span class="meta" id="pr-meta"></span>
+</header>
+<div class="app">
+  <nav class="side" id="side" aria-label="Pages de la pull request"></nav>
+  <main class="main">
+    <div class="bar" id="bar" hidden>
+      <div class="seg" role="group" aria-label="Version affichée">
+        <button type="button" id="view-after" aria-pressed="true">Après</button>
+        <button type="button" id="view-before" aria-pressed="false">Avant</button>
+      </div>
+      <label for="compare">Comparer avec</label>
+      <select id="compare"><option value="">aucune langue</option></select>
+      <span class="legend"><span><i style="background: var(--add)"></i>ajouté ou modifié</span><span><i style="background: var(--del)"></i>supprimé</span></span>
+    </div>
+    <div class="cols" id="cols"><p class="empty" id="status">Chargement de l'aperçu…</p></div>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  var LANG_NAMES = { fr: 'Français', en: 'English', de: 'Deutsch', nl: 'Nederlands' };
+  var STATUS = { added: 'nouvelle', modified: 'modifiée', renamed: 'renommée', deleted: 'supprimée', images: 'images', summary: 'sommaire' };
+  var BLOCKS = ['hint', 'tabs', 'tab', 'columns', 'column', 'stepper', 'step', 'content-ref', 'code'];
+  var data = null;
+  var state = { index: 0, view: 'after', compare: '' };
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var attr = function (args, name) { var m = new RegExp(name + '="([^"]*)"').exec(args || ''); return m ? m[1] : ''; };
+  var slug = function (s) {
+    return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/['’]/g, '')
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  };
+
+  // ---- GitBook blocks -> HTML -------------------------------------------------------------
+  function findEnd(src, from, name) {
+    var re = new RegExp('\\{%\\s*(end)?' + name + '\\b[^%]*%\\}', 'g');
+    re.lastIndex = from;
+    var depth = 1, m;
+    while ((m = re.exec(src))) {
+      depth += m[1] ? -1 : 1;
+      if (depth === 0) return { start: m.index, end: m.index + m[0].length };
+    }
+    return { start: src.length, end: src.length };
+  }
+  function children(src, name) {
+    var re = new RegExp('\\{%\\s*' + name + '\\b([^%]*)%\\}', 'g'), out = [], m;
+    while ((m = re.exec(src))) {
+      var end = findEnd(src, m.index + m[0].length, name);
+      out.push({ args: m[1], inner: src.slice(m.index + m[0].length, end.start) });
+      re.lastIndex = end.end;
+    }
+    return out;
+  }
+  function renderTag(name, args, inner) {
+    if (name === 'hint') return '<div class="gb-hint gb-hint-' + esc(attr(args, 'style') || 'info') + '">' + renderMd(inner) + '</div>';
+    if (name === 'columns') return '<div class="gb-cols">' + children(inner, 'column').map(function (c) { return '<div class="gb-col">' + renderMd(c.inner) + '</div>'; }).join('') + '</div>';
+    if (name === 'stepper') return '<ol class="gb-steps">' + children(inner, 'step').map(function (c) { return '<li>' + renderMd(c.inner) + '</li>'; }).join('') + '</ol>';
+    if (name === 'tabs') {
+      var tabs = children(inner, 'tab');
+      return '<div class="gb-tabs"><div class="gb-tablist" role="tablist">' + tabs.map(function (t, i) {
+        return '<button type="button" role="tab" aria-selected="' + (i === 0) + '" data-tab="' + i + '">' + esc(attr(t.args, 'title')) + '</button>';
+      }).join('') + '</div>' + tabs.map(function (t, i) {
+        return '<div class="gb-tabpanel" role="tabpanel" data-panel="' + i + '"' + (i ? ' hidden' : '') + '>' + renderMd(t.inner) + '</div>';
+      }).join('') + '</div>';
+    }
+    if (name === 'content-ref') return '<a class="gb-ref" data-ref="1" href="' + esc(attr(args, 'url')) + '">' + esc(attr(args, 'url')) + '</a>';
+    if (name === 'code') return (attr(args, 'title') ? '<p><code>' + esc(attr(args, 'title')) + '</code></p>' : '') + renderMd(inner);
+    return renderMd(inner);
+  }
+  function renderMd(src) {
+    src = src.replace(/\{%\s*embed\s+url="([^"]*)"[^%]*%\}/g, function (_, url) { return '\n\n<p><a href="' + esc(url) + '">' + esc(url) + '</a></p>\n\n'; });
+    var re = /\{%\s*(hint|tabs|columns|stepper|content-ref|code)\b([^%]*)%\}/, out = '', m;
+    while ((m = re.exec(src))) {
+      out += marked.parse(src.slice(0, m.index));
+      var end = findEnd(src, m.index + m[0].length, m[1]);
+      out += renderTag(m[1], m[2], src.slice(m.index + m[0].length, end.start));
+      src = src.slice(end.end);
+    }
+    return out + marked.parse(src);
+  }
+
+  // ---- Block diff ----------------------------------------------------------------------------
+  function splitBlocks(md) {
+    var blocks = [], cur = [], depth = 0, fence = false;
+    var open = new RegExp('\\{%\\s*(' + BLOCKS.join('|') + ')\\b', 'g'), close = new RegExp('\\{%\\s*end(' + BLOCKS.join('|') + ')\\b', 'g');
+    (md || '').split('\n').forEach(function (line) {
+      if (/^\s*(```|~~~)/.test(line)) fence = !fence;
+      if (!fence) {
+        depth += (line.match(open) || []).length - (line.match(close) || []).length;
+        depth += (line.match(/<(details|table)\b/g) || []).length - (line.match(/<\/(details|table)>/g) || []).length;
+      }
+      if (line.trim() === '' && depth <= 0 && !fence) { if (cur.length) blocks.push(cur.join('\n')); cur = []; depth = 0; }
+      else cur.push(line);
+    });
+    if (cur.length) blocks.push(cur.join('\n'));
+    return blocks;
+  }
+  function diffBlocks(before, after) {
+    var a = splitBlocks(before), b = splitBlocks(after), n = a.length, m = b.length, i, j;
+    var key = function (s) { return s.replace(/\s+/g, ' ').trim(); };
+    var ka = a.map(key), kb = b.map(key), t = [];
+    for (i = 0; i <= n; i++) { t.push(new Uint16Array(m + 1)); }
+    for (i = n - 1; i >= 0; i--) for (j = m - 1; j >= 0; j--) t[i][j] = ka[i] === kb[j] ? t[i + 1][j + 1] + 1 : Math.max(t[i + 1][j], t[i][j + 1]);
+    var ops = []; i = 0; j = 0;
+    var push = function (type, text) { var last = ops[ops.length - 1]; if (last && last.type === type) last.blocks.push(text); else ops.push({ type: type, blocks: [text] }); };
+    while (i < n && j < m) {
+      if (ka[i] === kb[j]) { push('same', b[j]); i++; j++; }
+      else if (t[i + 1][j] >= t[i][j + 1]) { push('del', a[i]); i++; }
+      else { push('add', b[j]); j++; }
+    }
+    while (i < n) push('del', a[i++]);
+    while (j < m) push('add', b[j++]);
+    return ops;
+  }
+
+  // ---- Page rendering ------------------------------------------------------------------------
+  function resolvePath(page, target) {
+    var clean = decodeURIComponent(target.split('#')[0].split('?')[0]).replace(/\\ /g, ' ');
+    if (!clean || /^[a-z]+:|^\//i.test(clean)) return null;
+    var parts = page.path.split('/').slice(0, -1).concat(clean.split('/')), out = [];
+    parts.forEach(function (p) { if (p === '..') out.pop(); else if (p && p !== '.') out.push(p); });
+    return out.join('/');
+  }
+  function finish(root, page) {
+    root.querySelectorAll('img').forEach(function (img) {
+      var raw = img.getAttribute('src') || '', path = resolvePath(page, raw), entry = path && data.images[path];
+      if (/^https?:/i.test(raw)) return;
+      if (!entry) {
+        var miss = document.createElement('span'); miss.className = 'img-missing'; miss.textContent = 'Image introuvable : ' + raw; img.replaceWith(miss); return;
+      }
+      img.setAttribute('src', entry.file); img.setAttribute('loading', 'lazy');
+      if (entry.changed) {
+        img.classList.add('img-changed');
+        var note = document.createElement('span'); note.className = 'img-note'; note.textContent = 'Image ajoutée ou modifiée par cette PR';
+        (img.closest('figure') || img.parentNode).appendChild(note);
+      }
+    });
+    root.querySelectorAll('a[href]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (/^https?:/i.test(href)) { a.target = '_blank'; a.rel = 'noopener'; return; }
+      if (/^[a-z]+:/i.test(href)) return;
+      if (href.charAt(0) === '#') { a.dataset.anchor = href.slice(1); return; }
+      var path = resolvePath(page, href), anchor = href.split('#')[1] || '';
+      if (a.dataset.ref && path) a.textContent = data.titles[path] || path;
+      var target = path ? data.pages.findIndex(function (p) { return p.path === path; }) : -1;
+      if (target >= 0) { a.setAttribute('href', '#p-' + target); if (anchor) a.dataset.anchorAfter = anchor; }
+      else if (path) { a.setAttribute('href', 'https://github.com/' + data.repo + '/blob/' + data.head + '/' + path.split('/').map(encodeURIComponent).join('/')); a.target = '_blank'; a.rel = 'noopener'; a.title = 'Page hors de cette PR : ouverte sur GitHub'; }
+    });
+    root.querySelectorAll('table[data-view="cards"]').forEach(function (table) {
+      var heads = Array.prototype.slice.call(table.querySelectorAll('thead th'));
+      table.querySelectorAll('tbody tr').forEach(function (tr) {
+        var cells = Array.prototype.slice.call(tr.children), link = null;
+        heads.forEach(function (th, i) {
+          if (!cells[i] || !th.hasAttribute('data-hidden')) return;
+          if (th.hasAttribute('data-card-target')) link = cells[i].querySelector('a[href]');
+          cells[i].remove();
+        });
+        if (link) { link.className = 'card-cover'; link.textContent = ''; link.setAttribute('aria-label', tr.textContent.trim().slice(0, 80)); tr.classList.add('card-link'); tr.appendChild(link); }
+      });
+    });
+    root.querySelectorAll('table:not([data-view="cards"])').forEach(function (table) {
+      var wrap = document.createElement('div'); wrap.className = 'tablewrap'; table.replaceWith(wrap); wrap.appendChild(table);
+    });
+    root.querySelectorAll('h1, h2, h3, h4').forEach(function (h) { h.dataset.slug = slug(h.textContent); });
+    return root;
+  }
+  function fragment(md, page) {
+    var tpl = document.createElement('template');
+    tpl.innerHTML = DOMPurify.sanitize(renderMd(md || ''), { ADD_ATTR: ['target', 'loading'] });
+    return finish(tpl.content, page);
+  }
+  function banner(text) { var p = document.createElement('p'); p.className = 'banner'; p.textContent = text; return p; }
+  function buildDoc(page, view) {
+    var doc = document.createElement('article'); doc.className = 'doc'; doc.lang = page.lang;
+    var lang = document.createElement('div'); lang.className = 'lang'; lang.textContent = LANG_NAMES[page.lang] || page.lang;
+    var path = document.createElement('div'); path.className = 'path'; path.textContent = page.path;
+    doc.append(lang, path);
+    if (page.status === 'summary') {
+      doc.appendChild(banner('Changements du sommaire. Le sommaire fixe l’ordre des pages et leurs adresses.'));
+      var pre = document.createElement('pre'); pre.className = 'sumdiff';
+      page.diff.split('\n').forEach(function (line) {
+        var span = document.createElement('span');
+        span.className = line.charAt(0) === '+' ? 'a' : line.charAt(0) === '-' ? 'd' : line.slice(0, 2) === '@@' ? 'h' : '';
+        span.textContent = line + '\n'; pre.appendChild(span);
+      });
+      doc.appendChild(pre); return doc;
+    }
+    var before = view === 'before' || page.status === 'deleted';
+    if (page.status === 'deleted') doc.appendChild(banner('Page supprimée par cette PR. Voici son contenu avant suppression.'));
+    else if (page.status === 'added') doc.appendChild(banner(before ? 'Nouvelle page : elle n’existait pas avant cette PR.' : 'Nouvelle page.'));
+    else if (page.status === 'images') doc.appendChild(banner('Texte inchangé. Cette page montre une image que la PR ajoute ou modifie.'));
+    else if (before) doc.appendChild(banner('Version avant la PR.'));
+    var body = document.createElement('div');
+    if (before) { if (page.before != null) body.appendChild(fragment(page.before, page)); }
+    else if (page.status === 'modified' || page.status === 'renamed') {
+      diffBlocks(page.before, page.after).forEach(function (op) {
+        var md = op.blocks.join('\n\n');
+        if (op.type === 'same') body.appendChild(fragment(md, page));
+        else if (op.type === 'add') { var add = document.createElement('div'); add.className = 'chg'; add.appendChild(fragment(md, page)); body.appendChild(add); }
+        else {
+          var del = document.createElement('details'); del.className = 'removed';
+          var sum = document.createElement('summary'); sum.textContent = 'Supprimé ou remplacé (' + op.blocks.length + ' bloc' + (op.blocks.length > 1 ? 's' : '') + ')';
+          var old = document.createElement('div'); old.className = 'old'; old.appendChild(fragment(md, page));
+          del.append(sum, old); body.appendChild(del);
+        }
+      });
+    } else body.appendChild(fragment(page.after, page));
+    doc.appendChild(body);
+    var text = before ? page.descriptionBefore : page.description;
+    if (text) {
+      var desc = document.createElement('p'); desc.className = 'desc'; desc.textContent = text;
+      if (!before && page.status === 'modified' && page.description !== page.descriptionBefore) { var w = document.createElement('div'); w.className = 'chg'; w.appendChild(desc); desc = w; }
+      var h1 = body.querySelector('h1');
+      if (h1) (h1.closest('.chg') || h1).after(desc); else body.prepend(desc);
+    }
+    return doc;
+  }
+
+  // ---- Shell ---------------------------------------------------------------------------------
+  function twin(page, lang) { return data.pages.find(function (p) { return p.lang === lang && p.path.slice(p.lang.length) === page.path.slice(page.lang.length); }); }
+  function show() {
+    var page = data.pages[state.index], cols = $('cols');
+    if (!page) { cols.replaceChildren(Object.assign(document.createElement('p'), { className: 'empty', textContent: 'Cette PR ne change aucune page de documentation.' })); return; }
+    var others = Object.keys(LANG_NAMES).filter(function (l) { return l !== page.lang && twin(page, l); });
+    if (others.indexOf(state.compare) < 0) state.compare = '';
+    var select = $('compare');
+    select.replaceChildren(new Option('aucune langue', ''));
+    others.forEach(function (l) { select.add(new Option(LANG_NAMES[l], l)); });
+    select.value = state.compare; select.disabled = !others.length;
+    var canBefore = page.status === 'modified' || page.status === 'renamed';
+    if (!canBefore) state.view = 'after';
+    $('view-before').disabled = !canBefore;
+    $('view-after').setAttribute('aria-pressed', String(state.view === 'after'));
+    $('view-before').setAttribute('aria-pressed', String(state.view === 'before'));
+    var docs = [buildDoc(page, state.view)];
+    if (state.compare) docs.push(buildDoc(twin(page, state.compare), state.view));
+    cols.className = 'cols' + (docs.length > 1 ? ' two' : '');
+    cols.replaceChildren.apply(cols, docs);
+    document.querySelectorAll('#side button').forEach(function (b) { b.setAttribute('aria-current', String(+b.dataset.index === state.index)); });
+    window.scrollTo(0, 0);
+  }
+  function buildSide() {
+    var side = $('side'), last = null;
+    data.pages.forEach(function (page, i) {
+      if (page.lang !== last) { var h = document.createElement('h2'); h.textContent = LANG_NAMES[page.lang] || page.lang; side.appendChild(h); last = page.lang; }
+      var b = document.createElement('button'); b.type = 'button'; b.dataset.index = i;
+      var name = document.createElement('span'); name.className = 'name'; name.textContent = page.title;
+      var small = document.createElement('small'); small.textContent = page.path.slice(page.lang.length + 1); name.appendChild(small);
+      var badge = document.createElement('span'); badge.className = 'badge b-' + page.status; badge.textContent = STATUS[page.status] || page.status;
+      b.append(name, badge);
+      b.addEventListener('click', function () { location.hash = 'p-' + i; });
+      side.appendChild(b);
+    });
+  }
+  function route() {
+    var m = /^#p-(\d+)$/.exec(location.hash), index = m ? +m[1] : 0;
+    state.index = index < data.pages.length ? index : 0;
+    show();
+  }
+  document.addEventListener('click', function (e) {
+    var tab = e.target.closest('[role="tab"]');
+    if (tab) {
+      var box = tab.closest('.gb-tabs');
+      box.querySelectorAll(':scope > .gb-tablist > [role="tab"]').forEach(function (t) { t.setAttribute('aria-selected', String(t === tab)); });
+      box.querySelectorAll(':scope > .gb-tabpanel').forEach(function (p) { p.hidden = p.dataset.panel !== tab.dataset.tab; });
+      return;
+    }
+    var a = e.target.closest('a[data-anchor]');
+    if (a) {
+      e.preventDefault();
+      var doc = a.closest('.doc'), target = doc && Array.prototype.find.call(doc.querySelectorAll('[data-slug]'), function (h) { return h.dataset.slug === a.dataset.anchor; });
+      if (target) target.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    }
+  });
+  $('view-after').addEventListener('click', function () { state.view = 'after'; show(); });
+  $('view-before').addEventListener('click', function () { state.view = 'before'; show(); });
+  $('compare').addEventListener('change', function () { state.compare = $('compare').value; show(); });
+  window.addEventListener('hashchange', function () { if (data) route(); });
+
+  fetch('data.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (json) {
+    data = json;
+    var pr = data.pr, order = Object.keys(LANG_NAMES);
+    data.pages.sort(function (x, y) { return order.indexOf(x.lang) - order.indexOf(y.lang) || (x.status === 'summary') - (y.status === 'summary') || x.path.localeCompare(y.path); });
+    $('pr-title').textContent = '#' + pr.number + ' ' + pr.title;
+    var meta = $('pr-meta'), link = document.createElement('a');
+    link.href = pr.url; link.target = '_blank'; link.rel = 'noopener'; link.textContent = 'Ouvrir sur GitHub';
+    var stateLabel = { open: 'ouverte', merged: 'fusionnée', closed: 'fermée' }[pr.state] || pr.state;
+    meta.append(stateLabel + (pr.draft ? ' (brouillon)' : '') + ' · ' + pr.author + ' · ' + data.pages.length + ' page(s) · aperçu du ' + new Date(data.generated).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }) + ' · ', link);
+    buildSide(); $('bar').hidden = false; route();
+  }).catch(function () { $('status').textContent = 'L’aperçu n’a pas pu être chargé (data.json introuvable).'; });
+})();
+</script>

@@ -21,10 +21,6 @@ Il permet d’identifier précisément :
 * Les **durées de conservation**
 * Les **mesures de sécurité** mises en œuvre
 
-{% embed url="https://youtu.be/R_Z2m4sb-44" %}
-Comment passer en mode « Run » sur la gestion des registres de traitements
-{% endembed %}
-
 ***
 
 ## Raisons de tenir un registre

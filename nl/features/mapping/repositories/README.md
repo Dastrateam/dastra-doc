@@ -1,9 +1,8 @@
 ---
 description: >-
-  Het verwerkingsregister steunt op repositories: activa, stakeholders,
-  datasets, gegevensvelden, beveiligingsmaatregelen en categorieën van
-  betrokkenen. Met Dastra beheert u ze los van het register om invoerfouten te
-  beperken.
+  Het verwerkingsregister steunt op repositories (activa, stakeholders,
+  datasets, gegevensvelden, beveiligingsmaatregelen, categorieën van
+  betrokkenen) die u los van het register beheert.
 ---
 
 # Referenties
