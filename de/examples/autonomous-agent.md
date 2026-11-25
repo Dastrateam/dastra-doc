@@ -118,6 +118,6 @@ Eine geplante Ausführung erhält keinen Wert für ihre Eingabefelder. Der Agent
 ## Gut zu wissen
 
 * Der Editor speichert von selbst. Es gibt keine Schaltfläche zum Speichern: Jede Änderung wird einen Moment später gespeichert, und der Zeitpunkt der letzten Speicherung steht oben rechts.
-* Der Agent ist von Anfang an aktiviert. Ein Zeitplan oder eine Workflow-Regel kann ihn starten, sobald er existiert. Klicken Sie in der Kopfzeile auf **Deaktivieren**, solange Sie ihn noch abstimmen: **Ausführen** funktioniert weiterhin.
+* Der Agent ist von Anfang an **Aktiv**. Ein Zeitplan oder eine Workflow-Regel kann ihn starten, sobald er existiert. Klicken Sie in der Kopfzeile auf **Deaktivieren**, solange Sie ihn noch abstimmen: **Ausführen** funktioniert weiterhin.
 * Die Formularübersicht startet eine echte Ausführung. **Ausführen** ist dort dieselbe Schaltfläche wie für jeden Nutzer, und die Ausführung zählt in Ihren monatlichen KI-Credits.
 * Ein autonomer Agent läuft nicht mit den Rechten der Person, die ihn gestartet hat. Lesen Sie den [Warnhinweis der Referenzseite](../features/general/ai-assistant/agents/autonomous.md) und die [Rechte von Agenten](../features/general/ai-assistant/agents/README.md#wer-was-tun-darf), bevor Sie ihm Bearbeitungstools geben.

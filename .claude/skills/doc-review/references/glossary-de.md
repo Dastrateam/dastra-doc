@@ -212,8 +212,8 @@ ships the fix.
 | Compétences | Funktionen | Singular « Funktion » (« Funktion erstellen »). |
 | Accès au fichier (permission) | Dateizugriff |  |
 | Mode Édition | Bearbeitungsmodus | The mode selector itself reads « Bearbeiten ». |
-| Actif / Inactif (état d'un agent ou d'un réglage) | Aktiviert / Deaktiviert | Proposed, waiting for the team's confirmation. |
-| Heure (planification d'un agent) | Uhrzeit | Proposed, waiting for the team's confirmation: no « (UTC) », the hour is in the user's time zone. |
+| Actif (état d'un agent ou d'un réglage) | Aktiv | Confirmed by the team. The opposite state keeps the app value « Deaktiviert ». |
+| Heure (planification d'un agent) | Uhrzeit | Confirmed by the team. No « (UTC) »: the hour is in the user's time zone. |
 
 Address the reader with « Sie » everywhere, app labels included: « Erstellen Sie Ihre Datenschutzerklärung », never
 « Erstelle Eure ».

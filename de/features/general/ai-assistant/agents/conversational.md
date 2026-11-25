@@ -91,7 +91,7 @@ Die **Chat-Übersicht** rechts im Editor ist eine echte Unterhaltung mit dem Age
 
 ## Den Agenten im Alltag nutzen
 
-Sobald der Agent aktiviert ist, erreichen ihn die Nutzer des Mandanten, die eigene Agenten ausführen dürfen:
+Sobald der Agent aktiv ist, erreichen ihn die Nutzer des Mandanten, die eigene Agenten ausführen dürfen:
 
 * über den Bereich **Dastra AI** unten rechts auf dem Bildschirm,
 * mit der Tastenkombination **Strg+J** (auf dem Mac **Cmd+J**),
