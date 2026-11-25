@@ -12,7 +12,7 @@ French app label) and take its German term here.
 | --- | --- | --- |
 | Acteur | Stakeholder |  |
 | Acteurs | Stakeholder |  |
-| Actif | Asset |  |
+| Actif | Asset | The noun (an asset). The state of a switch (« Actif » = enabled) is not this term: see Dastra AI below. |
 | Actifs | Assets |  |
 | Activité de traitement | Verarbeitungstätigkeit |  |
 | Activités de traitement | Verarbeitungstätigkeiten |  |
@@ -69,7 +69,7 @@ French app label) and take its German term here.
 | Données relatives à des mineur | Daten Minderjähriger |  |
 | Données sensibles | Sensible Daten |  |
 | Données à caractère personnel | Personenbezogene Daten |  |
-| Droit d'accès | Recht auf Auskunft |  |
+| Droit d'accès | Recht auf Auskunft | The data subject's right (GDPR art. 15). A permission to open a file or an item is not this term: see Dastra AI below. |
 | Droit d'introduire une réclamation auprès d'une autorité de contrôle | Beschwerderecht bei einer Aufsichtsbehörde |  |
 | Droit d'opposition | Widerspruchsrecht |  |
 | Droit d'être informé | Recht auf Benachrichtigung |  |
@@ -195,3 +195,25 @@ French app label) and take its German term here.
 | Violation | Verletzung |  |
 | Violations | Verletzungen |  |
 | Équipe | Team |  |
+
+## Dastra AI (German team, 25/11/2026)
+
+Decisions of the German-speaking team on the Dastra AI terms. Where the German app still shows another label, the
+app is being corrected to these: write these terms, and list the label that differs in the report until the app
+ships the fix.
+
+| fr | de | Note |
+| --- | --- | --- |
+| Agents Dastra AI | Dastra AI Agenten | Product name kept as is, no hyphen. |
+| Artefacts | Artefakte |  |
+| Automatisation (section du menu) | Automatisierung |  |
+| Autorisation requise | Genehmigung erforderlich | The card shown before an Edit-mode action. |
+| Choisir un agent | Einen Agenten auswählen | Never « Mitarbeiter ». |
+| Compétences | Funktionen | Singular « Funktion » (« Funktion erstellen »). |
+| Accès au fichier (permission) | Dateizugriff |  |
+| Mode Édition | Bearbeitungsmodus | The mode selector itself reads « Bearbeiten ». |
+| Actif / Inactif (état d'un agent ou d'un réglage) | Aktiviert / Deaktiviert | Proposed, waiting for the team's confirmation. |
+| Heure (planification d'un agent) | Uhrzeit | Proposed, waiting for the team's confirmation: no « (UTC) », the hour is in the user's time zone. |
+
+Address the reader with « Sie » everywhere, app labels included: « Erstellen Sie Ihre Datenschutzerklärung », never
+« Erstelle Eure ».
