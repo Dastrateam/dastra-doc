@@ -13,8 +13,8 @@ GitBook has no preview before a merge, and a GitHub diff shows Markdown on one s
 This skill builds a page that renders the pull request as a reader will see it, and publishes it as a private
 claude.ai artifact named **Doc PR <number>**.
 
-Read only on GitHub and on the repository: the script fetches, but never checks out, commits, pushes, comments
-or approves.
+Read only on GitHub: it never comments, approves or pushes. In the repository the script fetches, and never
+checks out, commits to a branch or changes a working file.
 
 ## Arguments
 
@@ -49,6 +49,19 @@ a one-sentence `description` naming the pull request.
 
 The artifact is private. To let a reviewer open it, the owner shares it from the page's Share menu; say so when
 handing over the link.
+
+## Preview a branch before any pull request
+
+To see work that is not committed or not pushed yet, pass a worktree instead of a number:
+
+```bash
+python -I <skill folder>/scripts/build_preview.py --worktree <worktree folder> <scratchpad>/doc-preview/<branch name>
+```
+
+It compares the working files of that worktree, committed or not, with `origin/main`. It reads them through a
+temporary index and one unreferenced snapshot commit: the branch, the index and the files are left as they are.
+The page is titled **Doc draft <branch name>** and says the work is not reviewed. Publish it as in Step 2. Links
+to pages outside the changes open on GitHub at `main`.
 
 ## Step 3: report
 
