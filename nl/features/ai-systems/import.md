@@ -8,8 +8,8 @@ description: >-
 
 Als u al een register van AI-systemen hebt, importeert u het in Dastra in plaats van alles met de hand in te voeren.
 
-1. Klik op **AI-wet** in de zijbalk en daarna op **Register van AI-systemen**.
-2. Open rechtsboven het menu van de knop **Een nieuw AI-systeem creëren** en klik op **Importeren**.
+1. Klik op **AI-governance** in de zijbalk en daarna op **Register van AI-systemen**.
+2. Open rechtsboven het menu van de knop **AI-systeem aanmaken** en klik op **Importeren**.
 3. Voeg op de pagina die opent uw bestand toe onderaan de pagina.
 
 <figure><img src="../../.gitbook/assets/ai-systems-import-1.png" alt="Menu van de knop Een nieuw AI-systeem creëren met de acties Maak vanuit de bibliotheek, Importeren en Exporteren"><figcaption><p>De actie Importeren in het menu van het register van AI-systemen</p></figcaption></figure>

@@ -36,7 +36,7 @@ De beoordeling beschrijft, voor het betrokken systeem:
 
 ## Wanneer Dastra de beoordeling aanbiedt
 
-Het vak **Impactbeoordeling van een IA-systeem op de fundamentele rechten** verschijnt in de stap **Classificatie** van het dossier wanneer:
+Het vak **Beoordeling van de gevolgen voor de grondrechten (FRIA)** verschijnt in de stap **Classificatie** van het dossier wanneer:
 
 * de stap **Verantwoordelijkheid** de rol van gebruiksverantwoordelijke aangeeft;
 * het risiconiveau **Hoog risico** is;
@@ -62,11 +62,11 @@ Als het venster geen sjabloon toont, installeert u er een:
 4. Ga terug naar het dossier en klik opnieuw op **Een impactbeoordeling uitvoeren**.
 
 {% hint style="info" %}
-Het venster biedt alleen sjablonen van het type **AI system impact assessment** aan. Een sjabloon van het type **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**, zelfs een dat voor AI is ontworpen, verschijnt er niet.
+Het venster biedt alleen sjablonen van het type **AI system impact assessment** aan. Een sjabloon van het type **Gegevensbeschermingseffectbeoordeling (DPIA)**, zelfs een dat voor AI is ontworpen, verschijnt er niet.
 {% endhint %}
 
 ## De voltooide beoordelingen terugvinden
 
-Klik op **AI-wet** in de zijbalk en daarna op **Impactanalyses**. Deze pagina toont de module Vragenlijsten, beperkt tot het type **AI system impact assessment**. Ze verschijnt als uw abonnement de module Vragenlijsten bevat en u toegang hebt tot vragenlijsten.
+Klik op **AI-governance** in de zijbalk en daarna op **Impactanalyses**. Deze pagina toont de module Vragenlijsten, beperkt tot het type **AI system impact assessment**. Ze verschijnt als uw abonnement de module Vragenlijsten bevat en u toegang hebt tot vragenlijsten.
 
 <figure><img src="../../.gitbook/assets/ai-systems-fria-3.png" alt="Pagina Impactanalyses van de module AI-systemen"><figcaption><p>De pagina Impactanalyses</p></figcaption></figure>

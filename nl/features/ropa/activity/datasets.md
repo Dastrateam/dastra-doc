@@ -46,18 +46,18 @@ Afhankelijk van de verwerkingsactiviteit kunt u een andere aanpak kiezen, naarge
 
 In de sectie **Gegevens** hebt u twee mogelijkheden:
 
-* Zijn uw datasets al gedocumenteerd in uw datamapping, klik dan op **Datasets selecteren** en selecteer de datasets die u aan de verwerkingsactiviteit wilt koppelen.
-* Anders klikt u op **Een dataset toevoegen** om de **Wizard voor het maken van gegevenssets** te openen. Maak de dataset aan met de AI-assistent (**AI gegenereerd**), vanuit een bestaande dataset (**Een bestaande dataset als model gebruiken**), door de gegevensvelden te selecteren (**Stap voor stap handleiding**) of vanaf nul (**Lege gegevensset**).
+* Zijn uw datasets al gedocumenteerd in uw datamapping, klik dan op **Bestaande datasets** en selecteer de datasets die u aan de verwerkingsactiviteit wilt koppelen.
+* Anders klikt u op **Een dataset toevoegen** om de **Wizard voor het aanmaken van datasets** te openen. Maak de dataset aan met de AI-assistent (**Door AI gegenereerd**), vanuit een bestaande dataset (**Als sjabloon gebruiken**), door de gegevensvelden te selecteren (**Stapsgewijze handleiding**) of vanaf nul (**Lege dataset**).
 
-Elke dataset van de verwerkingsactiviteit toont zijn bewaarregels en de doeleinden die hij dient. Schakel **Velden weergeven** in om ook de gegevensvelden van elke dataset te tonen. Standaard is een dataset gekoppeld aan alle doeleinden van de verwerkingsactiviteit: via het menu **...** van de dataset selecteert u een of meer specifieke doeleinden. Hetzelfde menu laat u de dataset **Bewerken**, **Dupliceren**, de **Details** bekijken of de koppeling met de verwerkingsactiviteit verwijderen (**Link verwijderen**).
+Elke dataset van de verwerkingsactiviteit toont zijn bewaarregels en de doeleinden die hij dient. Schakel **Velden weergeven** in om ook de gegevensvelden van elke dataset te tonen. Standaard is een dataset gekoppeld aan alle doeleinden van de verwerkingsactiviteit: via het menu **...** van de dataset selecteert u een of meer specifieke doeleinden. Hetzelfde menu laat u de dataset **Bewerken**, er een kopie van maken (**Kopie maken**), de **Details** bekijken of de koppeling met de verwerkingsactiviteit verwijderen (**Verbinding verwijderen**).
 
 Klik op een dataset om hem te openen en de hieronder beschreven informatie aan te vullen.
 
 ### De herkomst van de gegevens aan de dataset koppelen
 
-In elke dataset geeft u de herkomst van de gegevens op in **Herkomst van de collectie**: **Direct**, **Indirect** of **Direct en indirect**.
+In elke dataset geeft u de herkomst van de gegevens op in **Herkomst van de gegevensbron**: **Direct**, **Indirect** of **Direct en indirect**.
 
-Met het veld **Beschrijving van de herkomst van de collectie** voegt u nodige details toe.
+Met het veld **Beschrijving van de verzamelbron** voegt u nodige details toe.
 
 <figure><img src="../../../.gitbook/assets/ropa-datasets-1.png" alt="Blok Herkomst van de collectie van een dataset, met de bronlijst en het veld Beschrijving van de herkomst van de collectie"><figcaption><p>Herkomst van de gegevens</p></figcaption></figure>
 
@@ -75,7 +75,7 @@ Beschouwt u bijvoorbeeld boekhoudsoftware als een activum, dan kunnen er meerder
 
 ### Categorieën van betrokkenen koppelen
 
-Voor elke dataset kunt u een of meer categorieën van betrokkenen koppelen in **Categorieën betrokken personen**.
+Voor elke dataset kunt u een of meer categorieën van betrokkenen koppelen in **Gerelateerde categorieën van betrokkenen**.
 
 Zo ziet u welke gegevens bij welke betrokkenen horen. Het vergemakkelijkt ook uw datamappingwerk.
 
@@ -89,13 +89,13 @@ Het opgeven van de betrokkenen is nuttig bij het beheer van [verzoeken van betro
 
 Elke dataset moet worden aangevuld met gegevensvelden. Deze velden zijn de gegevens zelf.
 
-Klik in het blok **Velden voor persoonlijke gegevens** op **Gegevens bijvoegen**. De velden in de kiezer zijn die uit uw gegevenswoordenlijst.
+Klik in het blok **Gegevensvelden** op **Gegevensveld toevoegen**. De velden in de kiezer zijn die uit uw gegevenswoordenlijst.
 
 <figure><img src="../../../.gitbook/assets/ropa-datasets-4.png" alt="Geopende kiezer voor gegevensvelden in het blok Velden voor persoonlijke gegevens van een dataset"><figcaption><p>Kiezer voor gegevensvelden</p></figcaption></figure>
 
-Bestaat een veld nog niet, klik dan op **Gegevens toevoegen** om het aan te maken en aan de dataset toe te voegen.
+Bestaat een veld nog niet, klik dan op **Gegevensveld aanmaken** om het aan te maken en aan de dataset toe te voegen.
 
-U kunt velden indelen in vooraf gedefinieerde categorieën van gegevens, zoals **Burgerlijke staat, identiteit, identificatiegegevens, afbeeldingen...**, **Persoonlijke leven**, **Professioneel leven** of **Economische en financiële informatie**. Deze categorieën volgen de categorieën die de Franse toezichthoudende autoriteit (CNIL) aanbeveelt.
+U kunt velden indelen in vooraf gedefinieerde categorieën van gegevens, zoals **Burgerlijke staat, identiteit, identificatiegegevens, afbeeldingen...**, **Persoonlijk leven**, **Professioneel leven** of **Economische en financiële informatie**. Deze categorieën volgen de categorieën die de Franse toezichthoudende autoriteit (CNIL) aanbeveelt.
 
 <figure><img src="../../../.gitbook/assets/ropa-datasets-5.png" alt="Geopende lijst met categorieën van gegevens in het formulier van een gegevensveld"><figcaption><p>Kiezer voor de categorie van gegevens</p></figcaption></figure>
 
@@ -111,15 +111,15 @@ Gevoelige gegevens tellen mee in de indicator **Gevoeligheid** van de verwerking
 
 ### Een bewaarbeleid aan de dataset koppelen
 
-In elke dataset kunt u standaard bewaarbeleid definiëren in het blok **Standaard bewaartijden**.
+In elke dataset kunt u standaard bewaarbeleid definiëren in het blok **Standaardbewaartermijnen**.
 
-<figure><img src="../../../.gitbook/assets/ropa-datasets-7.png" alt="Blok Standaard bewaartijden van een dataset, met de tabbladen Actieve basis, Tussentijdse archivering en Definitief verwijderen"><figcaption><p>Bewaartermijnen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ropa-datasets-7.png" alt="Blok Standaard bewaartijden van een dataset, met de tabbladen Bewaring in actieve database, Tussentijdse archivering en Definitief verwijderen"><figcaption><p>Bewaartermijnen</p></figcaption></figure>
 
 Deze bewaartermijnen zijn standaardwaarden: u kunt ze per verwerkingsactiviteit aanpassen (zie hieronder).
 
 U kunt een bewaring in de actieve database, een bewaring in de gearchiveerde database en een vernietigingsbeleid definiëren:
 
-* **Actieve basis**: de actieve database is de huidige database van de verwerking.
+* **Bewaring in actieve database**: de actieve database is de huidige database van de verwerking.
 * **Tussentijdse archivering**: tussentijdse archivering is een beperktere vorm van opslag.
 * **Definitief verwijderen**: beschrijf de voorwaarden waaronder de gegevens worden verwijderd of overgedragen voor definitieve archivering.
 
@@ -141,11 +141,11 @@ De duur kan worden uitgedrukt als een waarde of, als dat niet mogelijk is, als d
 
 De gegevensvelden van een generieke dataset kunnen niet van de ene verwerkingsactiviteit tot de andere verschillen. De bewaartermijn kan dat wel. U kunt de bewaartermijn van een dataset aanpassen voor een bepaalde verwerkingsactiviteit: de standaardbewaartermijn van de dataset geldt dan niet meer voor deze verwerkingsactiviteit.
 
-Daarvoor moet de dataset aan de verwerkingsactiviteit zijn toegevoegd. Klik in de sectie **Gegevens** op een van de bewaarknoppen van de dataset: **Actieve basis**, **Tussentijdse archivering** of **Definitief verwijderen**. Een groene knop betekent dat de regel is gedefinieerd, een rode knop **Actieve basis** betekent dat ze ontbreekt.
+Daarvoor moet de dataset aan de verwerkingsactiviteit zijn toegevoegd. Klik in de sectie **Gegevens** op een van de bewaarknoppen van de dataset: **Bewaring in actieve database**, **Tussentijdse archivering** of **Definitief verwijderen**. Een groene knop betekent dat de regel is gedefinieerd, een rode knop **Bewaring in actieve database** betekent dat ze ontbreekt.
 
 <figure><img src="../../../.gitbook/assets/ropa-datasets-8.png" alt="Bewaarknoppen van een dataset in de sectie Gegevens, waarvan één aangepast is en een potloodpictogram toont"><figcaption><p>Bewaarknoppen van een dataset, met een aangepaste regel</p></figcaption></figure>
 
-Het paneel **Houdbaarheid aanpassen** opent. Het herinnert u aan de betrokken dataset. Schakel **De regel aanpassen** in en geef daarna de **Bewaartermijn**, **Beschrijf de regel (duur, voorwaarden...)** en de **Rechtvaardiging** op die alleen voor deze verwerkingsactiviteit gelden.
+Het paneel **Aangepast bewaarbeleid** opent. Het herinnert u aan de betrokken dataset. Schakel **De regel aanpassen** in en geef daarna de **Bewaartermijn**, **Beschrijf de regel (duur, voorwaarden...)** en de **Rechtvaardiging** op die alleen voor deze verwerkingsactiviteit gelden.
 
 <figure><img src="../../../.gitbook/assets/ropa-datasets-9.png" alt="Paneel Houdbaarheid aanpassen met de schakelaar De regel aanpassen ingeschakeld"><figcaption><p>De bewaartermijn aanpassen voor een verwerkingsactiviteit</p></figcaption></figure>
 

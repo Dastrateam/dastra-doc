@@ -11,7 +11,7 @@ Dastra genereert een kalenderlink in .ics-formaat. Zodra u deze link aan uw mail
 ## De kalenderlink genereren
 
 1. Klik in het zijmenu op **Planning** en kies daarna in het submenu **Taken**.
-2. Klik op de pijl van de knop **Nieuwe taak** en daarna op **Synchroniseren met mijn agenda (Outlook...)**. Deze vermelding vereist de machtiging om taken te exporteren.
+2. Klik op de pijl van de knop **Nieuwe taak** en daarna op **Delen als agenda (Outlook...)**. Deze vermelding vereist de machtiging om taken te exporteren.
 
 <figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="Het uitklapmenu van de knop Nieuwe taak met de vermelding Synchroniseren met mijn agenda"><figcaption><p>De vermelding Synchroniseren met mijn agenda in het menu van de knop Nieuwe taak</p></figcaption></figure>
 
@@ -29,7 +29,7 @@ Voeg de link in uw agendatoepassing toe als internetkalender. De werkwijze hangt
 * [Gebeurtenissen importeren in Google Agenda](https://support.google.com/calendar/answer/37118?hl=en\&co=GENIE.Platform%3DDesktop) (in het Engels)
 
 {% hint style="info" %}
-Deel deze link niet breed. Controleer om veiligheidsredenen de bestaande links in **Instellingen voor werkruimte** > **Links delen**.
+Deel deze link niet breed. Controleer om veiligheidsredenen de bestaande links in **Instellingen van de werkruimte** > **Deellinks**.
 {% endhint %}
 
 ## Verder gaan

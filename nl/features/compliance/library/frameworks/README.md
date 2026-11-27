@@ -26,7 +26,7 @@ Het zijmenu groepeert de objecten van de bibliotheek in twee groepen, met het aa
   * **Risico's**: hulpmiddelen om risico's te beoordelen en op te volgen
   * **Bedreigingen**: gebeurtenissen of scenario's waarin een risico zich kan voordoen
 
-Onderaan het menu toont de meter **gebruikte frameworks** uw verbruik van frameworkcredits.
+Onderaan het menu toont de meter **gebruikte kaders** uw verbruik van frameworkcredits.
 
 ***
 
@@ -42,8 +42,8 @@ Het middengedeelte toont de lijst van kaders die in uw omgeving beschikbaar zijn
 
 Als er nog geen kader is, biedt Dastra rechtstreeks aan om:
 
-* [**Een framework importeren**](import.md)
-* [**Een framework aanmaken**](custom.md)
+* [**Een kader importeren**](import.md)
+* [**Een kader aanmaken**](custom.md)
 
 {% hint style="info" %}
 Het quotum geldt voor de hele organisatie, niet voor één werkruimte. Houd uw verbruik in de gaten om de limieten niet te bereiken. De versies van een kader worden niet apart geteld: een versie aanmaken of importeren kost geen frameworkcredit.

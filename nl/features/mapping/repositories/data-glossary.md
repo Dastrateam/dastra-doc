@@ -12,13 +12,13 @@ Vermeld elk veld één keer in deze woordenlijst, zodat elke dataset dezelfde ge
 
 ## Een gegevensveld toevoegen
 
-Open **Data inventory** > **Referenties** > **Verklarende woordenlijst voor gegevens**. U kunt:
+Open **Data inventory** > **Repository's** > **Verklarende woordenlijst voor gegevens**. U kunt:
 
-* op **Gegevens toevoegen** klikken om een leeg formulier te openen;
-* op de pijl naast **Gegevens toevoegen** klikken en daarna op **Maak vanuit de bibliotheek** om velden uit de bibliotheek te kopiëren;
-* velden importeren uit een bestand: pijl naast **Gegevens toevoegen** en daarna **Importeren**. Zie [Uw gegevens importeren (Excel, CSV)](../../general/import.md).
+* op **Gegevensveld aanmaken** klikken om een leeg formulier te openen;
+* op de pijl naast **Gegevensveld aanmaken** klikken en daarna op **Aanmaken vanuit de bibliotheek...** om velden uit de bibliotheek te kopiëren;
+* velden importeren uit een bestand: pijl naast **Gegevensveld aanmaken** en daarna **Importeren**. Zie [Uw gegevens importeren (Excel, CSV)](../../general/import.md).
 
-U kunt een veld ook rechtstreeks aanmaken in de sectie **Velden voor persoonlijke gegevens** van een dataset.
+U kunt een veld ook rechtstreeks aanmaken in de sectie **Gegevensvelden** van een dataset.
 
 ## Het formulier van het gegevensveld invullen
 
@@ -26,8 +26,8 @@ U kunt een veld ook rechtstreeks aanmaken in de sectie **Velden voor persoonlijk
 | --- | --- |
 | **Naam** | De naam van het veld, verplicht. |
 | **Interne referentie** | Uw referentie. |
-| **Categorie persoonlijke gegevens** | De categorie van persoonsgegevens waartoe het veld behoort. |
-| **Niveau van verwerking** | **Standaard** (naam, voornaam, telefoonnummer), **Zeer persoonlijke gegevens** (financiële gegevens, locatie, communicatie) of **Gevoelige gegevens** (raciale of etnische afkomst, politieke opvattingen, religie, gezondheid, seksuele geaardheid). |
+| **Gegevenscategorie** | De categorie van persoonsgegevens waartoe het veld behoort. |
+| **Gevoeligheidsniveau** | **Standaard** (naam, voornaam, telefoonnummer), **Zeer persoonlijke gegevens** (financiële gegevens, locatie, communicatie) of **Gevoelige gegevens** (raciale of etnische afkomst, politieke opvattingen, religie, gezondheid, seksuele geaardheid). |
 | **Wettelijke basis voor inzameling**, **Rechtvaardiging voor het verzamelen van gevoelige gegevens** | Alleen weergegeven voor het niveau **Gevoelige gegevens**: de wettelijke basis die in de lijst is gekozen, en uw rechtvaardiging. |
 | **Beschrijving van de gegevens**, **Technische beschrijving** | Een vrije beschrijving en de technische definitie van het veld. |
 | **Gegevenstype** | Het generieke type van de gegevens. |
@@ -38,9 +38,9 @@ Het actiemenu van het formulier biedt **Samenvoegen** en **Verwijderen**.
 
 ## Gegevensvelden in de lijst vinden
 
-De filters zijn **Categorie persoonlijke gegevens** en **Gegevenstype**. De kolom **Datasets**, standaard verborgen in **Kolommen aanpassen**, kunt u filteren met **Is leeg** of **Is niet leeg**: gebruik ze om de velden te vinden die tot geen enkele dataset behoren.
+De filters zijn **Gegevenscategorie** en **Gegevenstype**. De kolom **Datasets**, standaard verborgen in **Kolommen aanpassen**, kunt u filteren met **Is leeg** of **Is niet leeg**: gebruik ze om de velden te vinden die tot geen enkele dataset behoren.
 
-Bij een selectie kunt u **De werkstroomfase wijzigen**, **Velden bewerken**, **Samenvoegen**, **Exporteren** en **Verwijderen**. Het **Gegevenskwaliteitsinstrument**, in het menu van **Gegevens toevoegen**, detecteert duplicaten. Zie [Elementen samenvoegen](../../general/merge.md).
+Bij een selectie kunt u **Workflowstap wijzigen**, **Velden bewerken**, **Samenvoegen**, **Exporteren** en **Verwijderen**. De **Tool voor gegevenskwaliteit**, in het menu van **Gegevensveld aanmaken**, detecteert duplicaten. Zie [Elementen samenvoegen](../../general/merge.md).
 
 ## Waar gegevensvelden worden gebruikt
 

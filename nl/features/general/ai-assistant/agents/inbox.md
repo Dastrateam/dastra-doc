@@ -8,7 +8,7 @@ description: >-
 
 De **Inbox** verzamelt de uitvoeringsgeschiedenis van uw agents: wat is gestart, waardoor, wanneer en met welk resultaat.
 
-U vindt hem via **Instellingen voor werkruimte** > **AI agents** > **Inbox**.
+U vindt hem via **Instellingen van de werkruimte** > **AI agents** > **Inbox**.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-inbox.png" alt="Inbox met de uitvoeringen van agents"><figcaption><p>De Inbox, met de status en de bron van elke uitvoering</p></figcaption></figure>
 
@@ -59,4 +59,4 @@ Bent u een van de te notificeren gebruikers (**Notified users**) van een agent, 
 
 ## Technisch logboek
 
-Voor monitoring op organisatieniveau (gebruikt model, duur, gebruiker achter de aanroep) raadpleegt u de aanroeplogboeken van de AI-assistent bij **Organisatie-instellingen** > **Assistent IA**. Ze worden 90 dagen bewaard.
+Voor monitoring op organisatieniveau (gebruikt model, duur, gebruiker achter de aanroep) raadpleegt u de aanroeplogboeken van de AI-assistent bij **Organisatie-instellingen** > **Dastra AI**. Ze worden 90 dagen bewaard.

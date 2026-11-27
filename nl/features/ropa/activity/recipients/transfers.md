@@ -26,21 +26,21 @@ Afwijkingen zijn geregeld in [artikel 49 van de AVG](https://eur-lex.europa.eu/e
 Doorgiften worden vastgelegd bij elke ontvanger, in de sectie **Ontvangers** van de verwerkingsactiviteit.
 
 1. Open de ontvanger of maak een nieuwe aan met **Nieuwe ontvanger**.
-2. Klik onderaan het paneel van de ontvanger op **Een gegevensdoorgifte toevoegen buiten de EU/EER**.
-3. Vul het paneel **Een gegevensdoorgifte buiten de EER wijzigen** in:
-   * **Beschrijf de voorwaarden van de doorgifte** (optioneel);
+2. Klik onderaan het paneel van de ontvanger op **Doorgifte aanmaken**.
+3. Vul het paneel **Gegevensdoorgifte bewerken** in:
+   * **Beschrijving van de gegevensdoorgifte** (optioneel);
    * **Land**: het land waarnaar de gegevens worden doorgegeven;
-   * **Mechanisme voor gegevenstransfer** (verplicht): het instrument dat de doorgifte omkadert;
-   * **Beschrijving van het mechanisme voor gegevenstransfers** (optioneel), bijvoorbeeld om een afwijking toe te lichten.
+   * **Doorgiftemechanisme** (verplicht): het instrument dat de doorgifte omkadert;
+   * **Beschrijving van het doorgiftemechanisme** (optioneel), bijvoorbeeld om een afwijking toe te lichten.
 4. Klik in het paneel van de doorgifte op **Toevoegen** en klik daarna in het paneel van de ontvanger op **Toevoegen** (of op **Bewerken** bij een bestaande ontvanger).
 
-De lijst **Mechanisme voor gegevenstransfer** biedt de volgende opties:
+De lijst **Doorgiftemechanisme** biedt de volgende opties:
 
 * **Niet gespecificeerd**
 * **Doorgifte geregeld door de AVG**
 * **EU-modelcontractbepalingen**
-* **Interne bedrijfsregels**
-* **Beslissing over adequaatheid**
+* **Bindende bedrijfsvoorschriften**
+* **Adequaatheidsbesluit**
 * **Afwijking (artikel 49)**
 * **Door een toezichthoudende autoriteit vastgestelde modelcontractbepalingen**
 * **Goedgekeurde gedragscode**
@@ -50,7 +50,7 @@ De lijst **Mechanisme voor gegevenstransfer** biedt de volgende opties:
 * **Internationale overeenkomst**
 * **Andere**
 
-De doorgiften van een ontvanger staan in zijn paneel met hun **Land**, hun beschrijving en hun **Mechanisme voor gegevenstransfer**, en zijn samengevat in de kolom **Doorgiften** van de lijst van ontvangers.
+De doorgiften van een ontvanger staan in zijn paneel met hun **Land**, hun beschrijving en hun **Doorgiftemechanisme**, en zijn samengevat in de kolom **Doorgiften** van de lijst van ontvangers.
 
 {% hint style="info" %}
 Wanneer de stakeholder of de organisatorische eenheid die u als ontvanger selecteert in een ander land is gevestigd, stelt Dastra voor een doorgifte naar dat land toe te voegen: klik op **Toevoegen** in het voorstel.
@@ -58,7 +58,7 @@ Wanneer de stakeholder of de organisatorische eenheid die u als ontvanger select
 
 ## Meer weten
 
-* Als u [vragenlijsten](../../../questionnaires/README.md) gebruikt, stelt Dastra voor een transfer impact assessment (TIA) aan te maken zodra een doorgifte is vastgelegd: **Creëer een transfer impact assessment (TIA)**.
-* Als u de module Contracten gebruikt, genereert de knop **SCC transfer** van een ontvanger de standaardcontractbepalingen voor de doorgiften ervan (zie [Ontvangers](README.md#een-dpa-genereren)).
+* Als u [vragenlijsten](../../../questionnaires/README.md) gebruikt, stelt Dastra voor een transfer impact assessment (TIA) aan te maken zodra een doorgifte is vastgelegd: **Vragenlijst voor doorgifte-effectbeoordeling (TIA) aanmaken**.
+* Als u de module Contracten gebruikt, genereert de knop **SCC-doorgifte** van een ontvanger de standaardcontractbepalingen voor de doorgiften ervan (zie [Ontvangers](README.md#een-dpa-genereren)).
 * Een doorgifte naar een land zonder passend beschermingsniveau verhoogt de indicator **Gevoeligheid** van de verwerkingsactiviteit.
 * Alle doorgiften van uw verwerkingsactiviteiten kunt u bekijken op de [doorgiftenkaart](../../visualization/transfers-map.md).

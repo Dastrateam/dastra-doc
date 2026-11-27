@@ -9,16 +9,16 @@ Zodra het risico is aangepakt, moet u ervoor zorgen dat het in de tijd wordt gev
 
 ## De controlepunten opvolgen
 
-Met de optie **Reductie en beheersing** toont het onderdeel twee indicatoren: de **Veerkracht** als percentage en de **Scoren** in punten op het maximum. De controlepunten zijn gegroepeerd naar invloed: die welke de ernst verminderen en die welke de waarschijnlijkheid verminderen, elk met hun percentage.
+Met de optie **Reductie en beheersing** toont het onderdeel twee indicatoren: de **Voltooiing** als percentage en de **Score** in punten op het maximum. De controlepunten zijn gegroepeerd naar invloed: die welke de ernst verminderen en die welke de waarschijnlijkheid verminderen, elk met hun percentage.
 
 <figure><img src="../../../.gitbook/assets/risks-monitor-1.png" alt="Monitoringstap van een risico: voltooiing, score en controlepunten gegroepeerd per ernst en waarschijnlijkheid"><figcaption><p>De controlepunten van een risico en de remediëring ervan</p></figcaption></figure>
 
 1. Klik op **Controlepunten toewijzen** om de controlepunten van het risicotype te kiezen.
-2. Klik op het betrokken controlepunt op **Nieuw audit**.
-3. Kies het antwoord, vul de **Datum van implementatie** in en voeg indien nodig een beschrijving en bestanden toe in **Bewijs van implementatie bestanden**.
-4. Klik op **Verstuur het antwoord**.
+2. Klik op het betrokken controlepunt op **Nieuwe vragenlijst**.
+3. Kies het antwoord, vul de **Datum van implementatie** in en voeg indien nodig een beschrijving en bestanden toe in **Implementatiebewijzen verzenden**.
+4. Klik op **Antwoord indienen**.
 
-Elke respons wordt bewaard: de knop **Historisch** van het controlepunt toont ze allemaal, en de meest recente is de huidige respons. Als het controlepunt op terugkerende basis wordt geëvalueerd, waarschuwt Dastra u wanneer het gekozen aantal dagen is verstreken.
+Elke respons wordt bewaard: de knop **Activiteitengeschiedenis** van het controlepunt toont ze allemaal, en de meest recente is de huidige respons. Als het controlepunt op terugkerende basis wordt geëvalueerd, waarschuwt Dastra u wanneer het gekozen aantal dagen is verstreken.
 
 ## Effect op het huidige risico
 
@@ -32,4 +32,4 @@ De eerste pagina van de module, onder het menu **Rapportage**, en het dashboard 
 
 ## Een risico archiveren
 
-Wanneer een risico is verdwenen, klikt u op **Het risico wegnemen**. Het risico gaat naar de stap **Terugtrekking**: u kunt het nog lezen, maar niet meer wijzigen. Om het opnieuw onder monitoring te plaatsen, klikt u op **Annuleren** in het onderdeel Terugtrekking. Alleen de eigenaar van het risico kan een risico archiveren of de archivering annuleren.
+Wanneer een risico is verdwenen, klikt u op **Het risico archiveren**. Het risico gaat naar de stap **Archivering**: u kunt het nog lezen, maar niet meer wijzigen. Om het opnieuw onder monitoring te plaatsen, klikt u op **Annuleren** in het onderdeel Archivering. Alleen de eigenaar van het risico kan een risico archiveren of de archivering annuleren.

@@ -25,9 +25,9 @@ Het gebruik van de connector is onderworpen aan de gebruiksvoorwaarden van Filer
 
 De installatie volgt de gemeenschappelijke integratiestroom (zie [Verbindingen, gebruiksscenario's en veldmapping](connections.md)):
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en selecteer **Filerskeepers**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en selecteer **Filerskeepers**.
 2. Klik bij het gebruiksscenario voor datasets op **Integratie toevoegen**.
-3. Kies in de stap **Verbinding** de optie **Voeg een verbinding toe**. Voer het **E-mailadres van de Filerskeepers-gebruiker** en het **Uw Filerskeepers-wachtwoord** in van een Filerskeepers-beheerdersaccount en klik op **Verbinden**. Dastra gebruikt deze inloggegevens om een toegangstoken voor de Filerskeepers-API te verkrijgen.
+3. Kies in de stap **Verbinding** de optie **Voeg een verbinding toe**. Voer de **Gebruikersnaam van filerskeepers** en het **Uw Filerskeepers-wachtwoord** in van een Filerskeepers-beheerdersaccount en klik op **Verbinden**. Dastra gebruikt deze inloggegevens om een toegangstoken voor de Filerskeepers-API te verkrijgen.
 
 <figure><img src="../../.gitbook/assets/integrations-filerskeepers-1.png" alt="De stap Verbinding van de installatie van Filerskeepers, met de velden voor e-mailadres en wachtwoord"><figcaption><p>Verbinding maken met Filerskeepers</p></figcaption></figure>
 
@@ -39,9 +39,9 @@ De installatie volgt de gemeenschappelijke integratiestroom (zie [Verbindingen, 
 
 Open de configuratie opnieuw via het menu van het gebruiksscenario, met het item **Configuratie**.
 
-* **Selecteer het retentieplan (Schedule) Filerskeepers dat u wilt synchroniseren** (verplicht): de Filerskeepers-schedule die met Dastra wordt gesynchroniseerd.
+* **Selecteer het bewaarschema van filerskeepers dat u wilt synchroniseren** (verplicht): de Filerskeepers-schedule die met Dastra wordt gesynchroniseerd.
 * De schakelaar die de bewaartermijnen gesynchroniseerd houdt: als die is ingeschakeld, worden de datasets die met Filerskeepers zijn gesynchroniseerd één keer per dag bijgewerkt.
-* **Gebruikers te waarschuwen in geval van creatie/bijwerking van gegevenssets** (verplicht als synchronisatie is ingeschakeld, maximaal 10): deze gebruikers ontvangen een e-mail met de datasets die zijn aangemaakt of bijgewerkt.
+* **Gebruikers die op de hoogte worden gebracht bij het aanmaken/bijwerken van datasets** (verplicht als synchronisatie is ingeschakeld, maximaal 10): deze gebruikers ontvangen een e-mail met de datasets die zijn aangemaakt of bijgewerkt.
 * De schakelaar die ontbrekende datasets aanmaakt: als die is ingeschakeld, wordt voor elk gegevenstype dat in uw Filerskeepers-account is gedeclareerd een dataset aangemaakt.
 * De optionele keuzelijst voor het rechtsgebied, zichtbaar wanneer het aanmaken van datasets is ingeschakeld: ze bepaalt welk rechtsgebied wordt gesynchroniseerd voor de aangemaakte datasets. Komt geen rechtsgebied overeen, dan gebruikt Dastra de referentiebewaartermijn (Gouden standaard).
 
@@ -61,7 +61,7 @@ De Filerskeepers-connector biedt meerdere werkwijzen:
 
 * Weergave van de keuzelijst voor bewaartermijnen op basis van uw Filerskeepers-repository met bewaartermijnen (in de software een "Schedule" genoemd).
 
-Wanneer u vanaf nu in Dastra een dataset opent, verschijnt in de sectie **Bewaartermijnen** een knop om een bewaartermijn te selecteren: **Vul in met Filerskeepers**.
+Wanneer u vanaf nu in Dastra een dataset opent, verschijnt in de sectie **Bewaartermijnen** een knop om een bewaartermijn te selecteren: **Kiezen uit het bewaarschema van filerskeepers**.
 
 <figure><img src="../../.gitbook/assets/integration-filerskeepers-dataset-retention-pick.png" alt="De knop Vul in met Filerskeepers in de editor voor bewaartermijnen van een dataset"><figcaption><p>Kiezen uit de Filerskeepers-schedule</p></figcaption></figure>
 

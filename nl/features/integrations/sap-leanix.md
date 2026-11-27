@@ -28,8 +28,8 @@ Gebruik de hoofd-URL van uw LeanIX-instantie, zonder pad naar een werkruimte (bi
 
 ## Installatie
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en selecteer **SAP LeanIX**.
-2. Klik bij het gebruiksscenario **Importeer uw SAP LeanIX-applicaties in het Dastra-activa-register en houd ze gesynchroniseerd** op **Integratie toevoegen**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en selecteer **SAP LeanIX**.
+2. Klik bij het gebruiksscenario **Importeer uw SAP LeanIX-applicaties in het activaregister van Dastra en houd ze gesynchroniseerd** op **Integratie toevoegen**.
 3. Voeg een verbinding toe: vul een **Naam van de verbinding**, de **URL van de instantie** en het **API token** in en klik op **Verbinden**. Dastra controleert het token bij uw instantie.
 
 <figure><img src="../../.gitbook/assets/sap-leanix-connexion.png" alt="Venster om een verbinding met SAP LeanIX te maken, met de URL van de instantie en het API-token"><figcaption><p>Dastra verbinden met SAP LeanIX</p></figcaption></figure>
@@ -38,17 +38,17 @@ Gebruik de hoofd-URL van uw LeanIX-instantie, zonder pad naar een werkruimte (bi
 
 In de configuratiestap bepaalt u hoe de applicaties worden geïmporteerd:
 
-* **Gebruikers te notificeren in geval van een fout** (verplicht): deze gebruikers ontvangen een e-mail wanneer een synchronisatie mislukt.
-* **Maak het Dastra-register aan als het nog niet bestaat**: als u deze optie uitschakelt, worden alleen bestaande activa bijgewerkt.
-* **Dubbele elementen synchroniseren**: vergelijkt de binnenkomende applicaties met de bestaande activa op een **Correspondentieveld** (**Label** of **Referentie**), zodat ze worden bijgewerkt in plaats van gedupliceerd.
-* **Veldmapping**: kies welk LeanIX-veld elk Dastra-veld vult (zie [Verbindingen, gebruiksscenario's en veldmapping](connections.md)).
+* **Gebruikers die bij een fout op de hoogte worden gebracht** (verplicht): deze gebruikers ontvangen een e-mail wanneer een synchronisatie mislukt.
+* **Het Dastra-record aanmaken als het nog niet bestaat**: als u deze optie uitschakelt, worden alleen bestaande activa bijgewerkt.
+* **Gesynchroniseerde items ontdubbelen**: vergelijkt de binnenkomende applicaties met de bestaande activa op een **Vergelijkingsveld** (**Label** of **Referentie**), zodat ze worden bijgewerkt in plaats van gedupliceerd.
+* **Veldtoewijzing**: kies welk LeanIX-veld elk Dastra-veld vult (zie [Verbindingen, gebruiksscenario's en veldmapping](connections.md)).
 
 <figure><img src="../../.gitbook/assets/sap-leanix-config.png" alt="Configuratiepaneel van de SAP LeanIX-import met de synchronisatieopties en de veldmapping"><figcaption><p>De SAP LeanIX-import configureren</p></figcaption></figure>
 
 ### Bijzonderheden van de veldmapping
 
 * De lijst met bronvelden wordt live opgehaald uit uw LeanIX-datamodel. Uw aangepaste attributen zijn dus beschikbaar, samen met hun mogelijke waarden voor de transcodering.
-* De standaardmapping werkt zonder aanpassing: Display name wordt **Label**, Description wordt **Beschrijving** en Lifecycle wordt **Status van de aanvraag**, met een vooraf ingevulde transcodering (plan/phase-in wordt in ontwikkeling, active wordt in productie, phase-out/end-of-life wordt gestopt) die u in het paneel **Geavanceerd** aanpast.
+* De standaardmapping werkt zonder aanpassing: Display name wordt **Label**, Description wordt **Beschrijving** en Lifecycle wordt **Status van de applicatie**, met een vooraf ingevulde transcodering (plan/phase-in wordt in ontwikkeling, active wordt in productie, phase-out/end-of-life wordt gestopt) die u in het paneel **Geavanceerd** aanpast.
 * Koppel een willekeurig LeanIX-veld (bijvoorbeeld een interne applicatie-identificatie) aan de **Referentie** van het activum om het doorzoekbaar te maken in Dastra en het te gebruiken als correspondentieveld voor het dedupliceren.
 
 ## Synchronisatie van de gegevens

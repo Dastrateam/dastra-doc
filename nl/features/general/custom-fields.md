@@ -66,7 +66,7 @@ Eenmaal aangemaakt werken aangepaste velden zoals de standaardvelden:
 * Ze worden weergegeven en bewerkt in de formulieren van elke module.
 * Ze kunnen in alle tabellen van de toepassing worden weergegeven: klik op de knop **Kolommen aanpassen** van de tabel. Standaard zijn ze verborgen.
 * Ze zijn aanwezig in alle Excel-exports van gegevens. Zie voor meer informatie over exports [de pagina over exports](../ropa/export-import.md).
-* Ze zijn aanwezig in PDF- en Word-rapporten wanneer bij het veld **Inbegrepen in PDF- of Word-rapporten?** is aangevinkt (standaard aangevinkt).
+* Ze zijn aanwezig in PDF- en Word-rapporten wanneer bij het veld **Opgenomen in PDF- en Word-rapporten** is aangevinkt (standaard aangevinkt).
 * Ze kunnen worden gefilterd met de [geavanceerde filters](filters.md). Velden van het type **Selectievakje** en **Meervoudige selector** kunnen echter niet worden gebruikt om een lijst te sorteren.
 * Ze kunnen in gegevenstabellen in bulk worden bijgewerkt.
 * Ze kunnen met het [importsysteem](import.md) uit platte bestanden worden geïmporteerd.
@@ -74,10 +74,10 @@ Eenmaal aangemaakt werken aangepaste velden zoals de standaardvelden:
 
 ## Aangepaste velden instellen
 
-1. Klik in de zijbalk op **Instellingen voor werkruimte** en daarna op **Aangepaste velden**.
+1. Klik in de zijbalk op **Instellingen van de werkruimte** en daarna op **Aangepaste velden**.
 2. Kies in de lijst links de module waaraan u een aangepast veld wilt toevoegen.
-3. Velden worden in groepen aangemaakt. Klik op **Een veldtype maken**.
-4. Vul het label van de groep in (het veld **Tekst**) en de **Locatie in het formulier**. Bij sommige modules, zoals de verwerkingsactiviteit, kiest u de stap van het formulier waarin de groep wordt weergegeven.
+3. Velden worden in groepen aangemaakt. Klik op **Een veldgroep aanmaken**.
+4. Vul het label van de groep in (het veld **Tekst**) en de **Positie in het formulier**. Bij sommige modules, zoals de verwerkingsactiviteit, kiest u de stap van het formulier waarin de groep wordt weergegeven.
 
 <figure><img src="../../.gitbook/assets/general-custom-fields-3.png" alt="Venster voor het aanmaken van een groep velden met het label en de positie in het formulier"><figcaption><p>Een veldgroep aanmaken</p></figcaption></figure>
 
@@ -86,7 +86,7 @@ Eenmaal aangemaakt werken aangepaste velden zoals de standaardvelden:
 
 <figure><img src="../../.gitbook/assets/general-custom-fields-4.png" alt="Venster voor het aanmaken van een aangepast veld met de bijbehorende opties"><figcaption><p>De opties van een aangepast veld</p></figcaption></figure>
 
-U herschikt velden, of verplaatst ze van de ene groep naar de andere, door te slepen. Een groep kan pas worden verwijderd als ze geen velden meer bevat. Een verwijderd veld gaat naar de prullenbak: schakel **Bekijk prullenbak** in om het te herstellen.
+U herschikt velden, of verplaatst ze van de ene groep naar de andere, door te slepen. Een groep kan pas worden verwijderd als ze geen velden meer bevat. Een verwijderd veld gaat naar de prullenbak: schakel **Prullenbak bekijken** in om het te herstellen.
 
 ### Veldopties
 
@@ -96,11 +96,11 @@ U herschikt velden, of verplaatst ze van de ene groep naar de andere, door te sl
 | **Naam van de variabele (slug)** | De technische naam van het veld, gebruikt door API's en imports. Ze wordt voorgesteld op basis van het label, in kleine letters met underscores (bijvoorbeeld `business_owner` voor "Business owner"), en kan niet meer worden gewijzigd zodra het veld is aangemaakt. Ze wordt alleen in dit venster getoond: open het veld in de lijst om ze te lezen. Om het veld vanuit een vragenlijst in te vullen, schrijft u `custom_` gevolgd door deze naam (zie [Een record invullen met de antwoorden](../questionnaires/templates/record-mapping.md)). |
 | **Tooltip-tekst** | Een hulptekst naast het veld. |
 | **Verplicht veld** | Maakt de invoer verplicht. |
-| **Inbegrepen in PDF- of Word-rapporten?** | Voegt het veld toe aan de gegenereerde rapporten. Standaard aangevinkt. |
+| **Opgenomen in PDF- en Word-rapporten** | Voegt het veld toe aan de gegenereerde rapporten. Standaard aangevinkt. |
 | **Validatieregel** | Voor tekstvelden: controleert of de invoer een syntaxis volgt (e-mail, URL) of een **Aangepaste reguliere expressie (Javascript-formaat)**. |
 | **Minimale grootte** en **Maximale grootte** | Lengte van de invoer voor tekstvelden. |
 | **Minimumwaarde** en **Maximale waarde** | Grenzen voor numerieke velden. |
-| **Antwoordkeuze** | Voor types met een lijst met keuzes: één rij per keuze, met een kleur. Met **Voeg een mogelijke keuze toe** voegt u een rij toe; als u tekst plakt met één optie per regel, wordt er per regel een antwoord aangemaakt. |
+| **Mogelijke antwoorden** | Voor types met een lijst met keuzes: één rij per keuze, met een kleur. Met **Antwoord toevoegen** voegt u een rij toe; als u tekst plakt met één optie per regel, wordt er per regel een antwoord aangemaakt. |
 
 Het label en de variabelenaam van een veld moeten binnen een module uniek zijn.
 

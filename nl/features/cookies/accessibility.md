@@ -31,7 +31,7 @@ De audit raadt ook aan de banner als eerste in de tabvolgorde te plaatsen (crite
 
 ### Contrast: uw instellingen bepalen het resultaat
 
-De kleuren van de bannertekst en de links komen uit de instellingen van elke banner: **Kleur hoofdtekst** en **Primaire kleur** in de sectie **Uiterlijk van de widget**. Het contrast is dus uw keuze: Dastra kan het niet voor elke banner garanderen. Controleer of tekst en links een contrast van ten minste 4,5:1 met de achtergrond hebben. Zie [De cookietoestemmingsbanner instellen](banner/configure.md).
+De kleuren van de bannertekst en de links komen uit de instellingen van elke banner: **Kleur hoofdtekst** en **Primaire kleur** in de sectie **Opmaak van de banner**. Het contrast is dus uw keuze: Dastra kan het niet voor elke banner garanderen. Controleer of tekst en links een contrast van ten minste 4,5:1 met de achtergrond hebben. Zie [De cookietoestemmingsbanner instellen](banner/configure.md).
 
 ## Rapport van 2021
 

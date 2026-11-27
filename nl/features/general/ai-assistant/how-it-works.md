@@ -31,7 +31,7 @@ Voor elke familie worden afhankelijk van de complexiteit van de taak drie modeln
 * Smart (acties die meer redeneerwerk vragen): gestructureerde objecten genereren in Dastra
 * Large context (acties die grote hoeveelheden gegevens verwerken): een vragenlijst beantwoorden, conformiteitsanalyse
 
-De eigenaar van de organisatie kiest de modelfamilie in **Organisatie-instellingen** > **Assistent IA**, in de kaart **Instellingen van de Assistent IA**, veld **Familie van IA-modellen**. De wijziging wordt opgeslagen zodra u een familie selecteert.
+De eigenaar van de organisatie kiest de modelfamilie in **Organisatie-instellingen** > **Dastra AI**, in de kaart **Instellingen van de AI-assistent**, veld **Familie van AI-modellen**. De wijziging wordt opgeslagen zodra u een familie selecteert.
 
 ## Eigen AI-leverancier
 
@@ -39,7 +39,7 @@ De eigenaar van de organisatie kiest de modelfamilie in **Organisatie-instelling
 
 Met Dastra koppelt u uw eigen AI-leverancier met een API-sleutel, op voorwaarde dat die compatibel is met de OpenAI-API-standaard. De aangeboden leveranciers zijn OpenAI, Google, Anthropic, Mistral en Azure AI Foundry. De optie **Other** accepteert elk ander compatibel endpoint, waaronder een zelfgehoste LLM. De eigen leverancier geldt voor de generatiefuncties van de AI-assistent (de knoppen in de modules). Dastra AI (chat), agents en de MCP-server blijven de modellen van Dastra gebruiken.
 
-Om een eigen leverancier te configureren, selecteert u de familie **IA-leverancier** in **Organisatie-instellingen** > **Assistent IA**. Klik in het blok **Identificaties van IA-leverancier** op **Identificaties toevoegen**, voer de leverancier en de bijbehorende API-sleutel in en wijs daarna een model toe aan elk van de drie niveaus (Fast, Smart, Large context).
+Om een eigen leverancier te configureren, selecteert u de familie **Aangepaste AI-aanbieder** in **Organisatie-instellingen** > **Dastra AI**. Klik in het blok **Inloggegevens van aangepaste AI-aanbieder** op **Inloggegevens toevoegen**, voer de leverancier en de bijbehorende API-sleutel in en wijs daarna een model toe aan elk van de drie niveaus (Fast, Smart, Large context).
 
 Voor herkende leveranciers wordt de **Basis-URL** vooraf ingevuld: voor Anthropic is dat `https://api.anthropic.com/v1/`. Voor Azure AI Foundry en voor **Other** voert u hem zelf in.
 
@@ -84,7 +84,7 @@ Deze bewaring blijft uitzonderlijk en geldt niet voor het normale gebruik van he
 
 ## Logboeken van het AI-gebruik
 
-Dastra bewaart een geschiedenis van de aanroepen van de AI-assistent. De kaart **AI usage** van **Organisatie-instellingen** > **Assistent IA** toont de **laatste 90 dagen** in het tabblad **Logs (90 days)**, dat is voorbehouden aan eigenaren van de organisatie. Voor elke aanroep wordt de volgende informatie vastgelegd:
+Dastra bewaart een geschiedenis van de aanroepen van de AI-assistent. De kaart **AI usage** van **Organisatie-instellingen** > **Dastra AI** toont de **laatste 90 dagen** in het tabblad **Logs (90 days)**, dat is voorbehouden aan eigenaren van de organisatie. Voor elke aanroep wordt de volgende informatie vastgelegd:
 
 | Veld | Beschrijving |
 | --- | --- |
@@ -112,7 +112,7 @@ Een geslaagde generatie verbruikt credits volgens het type bewerking. Een misluk
 | Automatisch caviarderen van een document | 1 per verzonden documentsegment |
 | Bericht naar Dastra AI of een agent | 1 per bericht, ongeacht het aantal gebruikte tools |
 
-De kaart **Gebruik** van **Organisatie-instellingen** > **Assistent IA** toont het verbruik van de huidige maand, het quotum van het abonnement en de vernieuwingsdatum. De voortgangsbalk verandert van kleur naarmate een groter deel van het quotum is verbruikt:
+De kaart **Gebruik** van **Organisatie-instellingen** > **Dastra AI** toont het verbruik van de huidige maand, het quotum van het abonnement en de vernieuwingsdatum. De voortgangsbalk verandert van kleur naarmate een groter deel van het quotum is verbruikt:
 
 * Groen: minder dan 80% van het quotum
 * Oranje: van 80% tot 99%
@@ -188,7 +188,7 @@ Goede praktijk: voeg geen persoonsgegevens rechtstreeks in vrije tekstvelden (be
 De volgende gegevens maken nooit deel uit van de aanvragen die naar het AI-model gaan:
 
 * Inloggegevens en wachtwoorden van Dastra-gebruikers
-* Gegevens uit andere records in uw werkruimte (alleen het object waaraan u werkt valt binnen het bereik, behalve bij Dastra AI, agents en AI-analyse, die de nodige records raadplegen met uw rechten), behalve de labels van de bestaande beveiligingsmaatregelen, activa en gegevensvelden wanneer u de optie **Gebruik bestaande elementen** inschakelt bij het genereren van een verwerkingsactiviteit
+* Gegevens uit andere records in uw werkruimte (alleen het object waaraan u werkt valt binnen het bereik, behalve bij Dastra AI, agents en AI-analyse, die de nodige records raadplegen met uw rechten), behalve de labels van de bestaande beveiligingsmaatregelen, activa en gegevensvelden wanneer u de optie **Bestaande items gebruiken** inschakelt bij het genereren van een verwerkingsactiviteit
 * Sessiemetadata (naam van de aangemelde gebruiker, IP-adres enzovoort)
 * Bijlagen die niet uitdrukkelijk in de betrokken functie zijn opgegeven
 

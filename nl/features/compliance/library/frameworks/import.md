@@ -6,13 +6,13 @@ description: >-
 
 # Importeren en sjablonen van Dastra
 
-Klik in **Conformiteit** > **Bibliotheek** > **Kaders** op **Een framework aanmaken**. Het dialoogvenster biedt drie methoden:
+Klik in **Conformiteit** > **Bibliotheek** > **Kaders** op **Een kader aanmaken**. Het dialoogvenster biedt drie methoden:
 
 {% columns %}
 {% column %}
 * **Ingebouwde sjabloon**: begin met een sjabloon uit de bibliotheek van Dastra (zie hieronder)
 * **Gepersonaliseerd**: maak een leeg kader aan (zie [Een eigen kader aanmaken](custom.md)). Deze methode hangt af van uw abonnement
-* **Een framework importeren**: stuur een JSON- of Excel-bestand (zie hieronder)
+* **Een kader importeren**: stuur een JSON- of Excel-bestand (zie hieronder)
 
 Op dezelfde pagina kunt u ook de **details van een bestaand kader** bekijken.
 {% endcolumn %}
@@ -45,11 +45,11 @@ U past ze daarna aan uw context aan.
 
 {% columns %}
 {% column %}
-* Klik op **Een framework aanmaken**
+* Klik op **Een kader aanmaken**
 * Selecteer **Ingebouwde sjabloon**
 * Open de sjabloonbibliotheek van Dastra
 * Zoek een sjabloon op naam en stel vervolgens in:
-  * het filter **Gegevensbron van de bibliotheek** (standaard **Sjablonen gemaakt door Dastra**)
+  * het filter **Kies de bron van de bibliotheek** (standaard **Dastra-standaardbibliotheek**)
   * de taal
   * de weergavemodus van de resultaten
 * Selecteer het gewenste sjabloon
@@ -82,11 +82,11 @@ Latere versies van het kader (aangemaakt, geïmporteerd of gegenereerd door een 
 
 U kunt een kader importeren dat u zelf hebt voorbereid of uit Dastra hebt geëxporteerd. Voor deze methode hebt u het importrecht op de bibliotheek en een beschikbare frameworkcredit nodig.
 
-1. Klik op **Een framework aanmaken** en vervolgens op **Een framework importeren**. Is de bibliotheek leeg, dan wordt de knop **Een framework importeren** ook rechtstreeks aangeboden.
+1. Klik op **Een kader aanmaken** en vervolgens op **Een kader importeren**. Is de bibliotheek leeg, dan wordt de knop **Een kader importeren** ook rechtstreeks aangeboden.
 2. Kies het formaat:
    * **Json**: importeer uw kader in .json;
    * **Complexe Excel-werkmap**: importeer uw kader met een Excel-werkmap die uit meerdere bladen bestaat.
-3. Klik voor de Excel-werkmap op **Het bestandssjabloon downloaden** om de modelwerkmap te krijgen, die de import gebruikt om de gegevens te herkennen. Schakel **Native kolomnamen gebruiken (handig voor het importeren van gegevens)** in als uw bestand de native kolomnamen gebruikt.
+3. Klik voor de Excel-werkmap op **Het bestandssjabloon downloaden** om de modelwerkmap te krijgen, die de import gebruikt om de gegevens te herkennen. Schakel **Native kolomnamen of rapporten gebruiken (aanbevolen voor het importeren van gegevens)** in als uw bestand de native kolomnamen gebruikt.
 4. Stuur uw bestand (telkens één).
 5. Dastra toont eerst een simulatie: er wordt geen enkel gegeven gewijzigd. De tabel geeft per item aan of het wordt **Gemaakt**, **Bijgewerkt**, **Genegeerd** of **Gesimuleerd**, met de totalen. Controleer de tabel en klik vervolgens op **Valideren** om de definitieve import uit te voeren.
 

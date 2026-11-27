@@ -22,7 +22,7 @@ Klik in de kop van een kolom op de naam van de stap om die te wijzigen, of op **
 
 ### De weergave Tabel
 
-De weergave **Tabel** toont de lijst van alle taken. Klik op een rij om de taak te openen. Selecteer rijen om een batchactie uit te voeren: **Velden bewerken**, **Samenvoegen**, **Exporteren**, **Taken aan objecten koppelen**, **Verplaats naar de prullenbak** of **Verwijderen**.
+De weergave **Tabel** toont de lijst van alle taken. Klik op een rij om de taak te openen. Selecteer rijen om een batchactie uit te voeren: **Velden bewerken**, **Samenvoegen**, **Exporteren**, **Taken aan een object koppelen**, **Naar de prullenbak verplaatsen** of **Verwijderen**.
 
 Klik op **Kolommen aanpassen** om de weergegeven kolommen te kiezen, en op **Filters** om de lijst te filteren.
 
@@ -30,9 +30,9 @@ Klik op **Kolommen aanpassen** om de weergegeven kolommen te kiezen, en op **Fil
 
 ### De weergave Boomstructuur
 
-De weergave **Boomstructuur** groepeert de taken volgens het criterium dat u kiest in de lijst **Groep door**. De standaardgroepering is **Project**. De andere criteria zijn **Iteratie**, **Organisatie-eenheid**, **Bediener**, **Gegevensverwerking**, **Verzoek om rechten uit te oefenen**, **Belanghebbende**, **Actief**, **Datalek**, **Dataset**, **Controlepunt** en **Veiligheidsmaatregel**.
+De weergave **Boomstructuur** groepeert de taken volgens het criterium dat u kiest in de lijst **Groeperen op**. De standaardgroepering is **Project**. De andere criteria zijn **Iteratie**, **Organisatorische eenheid**, **Toegewezen aan**, **Verwerkingsactiviteit**, **Verzoek**, **Actor**, **Activum**, **Datalek**, **Dataset**, **Controlepunt** en **Veiligheidsmaatregel**.
 
-Klik op **Alles opvouwen** of **Implementeer alles** om alle groepen te sluiten of te openen.
+Klik op **Alles opvouwen** of **Alles implementeren** om alle groepen te sluiten of te openen.
 
 <figure><img src="../../.gitbook/assets/tasks-export-2.png" alt="De weergave Boomstructuur met taken gegroepeerd per project"><figcaption><p>De weergave Boomstructuur gegroepeerd per project</p></figcaption></figure>
 
@@ -54,11 +54,11 @@ In elke weergave beperken het zoekveld en de knop **Filters** de weergegeven tak
 
 Klik in het zijmenu op **Taken** en daarna op **Statistieken**. De pagina heeft twee tabbladen.
 
-Het tabblad **Basisafbeeldingen** toont de algemene indicatoren van het actieplan en de grafiek **Verdeling van taakstatus**. Die grafiek toont het aantal taken per stap. Kies het criterium in de lijst **Groep door**: de taken worden standaard per project gegroepeerd, en u kunt ze ook groeperen per organisatie-eenheid, iteratie, verantwoordelijke of gekoppeld element.
+Het tabblad **Basisgrafieken** toont de algemene indicatoren van het actieplan en de grafiek **Taakstatussen per project**. Die grafiek toont het aantal taken per stap. Kies het criterium in de lijst **Groeperen op**: de taken worden standaard per project gegroepeerd, en u kunt ze ook groeperen per organisatie-eenheid, iteratie, verantwoordelijke of gekoppeld element.
 
 <figure><img src="../../.gitbook/assets/tasks-export-5.png" alt="Het tabblad Basisafbeeldingen met de indicatoren en de grafiek van de taakstatus"><figcaption><p>Het tabblad Basisafbeeldingen</p></figcaption></figure>
 
-Het tabblad **Geavanceerde afbeeldingen** bevat drie grafieken. Standaard beslaan ze de laatste 30 dagen. U kunt ze beperken tot een iteratie, een periode of een organisatie-eenheid.
+Het tabblad **Geavanceerde grafieken** bevat drie grafieken. Standaard beslaan ze de laatste 30 dagen. U kunt ze beperken tot een iteratie, een periode of een organisatie-eenheid.
 
 ### Voortgangsgrafiek
 
@@ -95,7 +95,7 @@ Een aangepaste weergave slaat onder een naam de combinatie van filters en kolomm
 ### Een weergave aanmaken
 
 1. Pas de gewenste filters en kolomselectie toe in de weergave **Kolommen**, **Tabel** of **Boomstructuur**.
-2. Open de keuzelijst voor weergaven (die toont **Alle elementen**) en klik op **Sla de aangepaste weergave op**.
+2. Open de keuzelijst voor weergaven (die toont **Standaardweergave**) en klik op **Sla de aangepaste weergave op**.
 3. Voer de **Naam van uw aangepaste weergave** in en klik op **Opslaan**.
 
 De weergave verschijnt in de keuzelijst onder **My views**. Wanneer u de filters van een actieve weergave wijzigt, slaat de optie **Bijwerken** van die weergave de wijzigingen op.

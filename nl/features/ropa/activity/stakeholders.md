@@ -42,8 +42,8 @@ U geeft ook, indien van toepassing, de vertegenwoordiger van de verwerkingsveran
 
 De eerste rijen van de stakeholdertabel worden overgenomen van de entiteit van de organisatorische eenheid die u in de sectie **Algemeen** hebt geselecteerd en zijn gemarkeerd met een slotpictogram:
 
-* de **Verwerkingsverantwoordelijke** (of **Organisatie (verwerker)** voor een activiteit als verwerker),
-* de **Functionaris voor gegevensbescherming (DPO)**,
+* de **Verwerkingsverantwoordelijke** (of **Huidige entiteit (verwerker)** voor een activiteit als verwerker),
+* de **Functionaris voor gegevensbescherming (FG)**,
 * de **Vertegenwoordiger**.
 
 Om ze te wijzigen, bewerkt u de entiteit in het beheer van de organisatorische eenheden.
@@ -51,15 +51,15 @@ Om ze te wijzigen, bewerkt u de entiteit in het beheer van de organisatorische e
 ## Een specifieke stakeholder toevoegen
 
 1. Klik in de sectie **Stakeholders** op **Voeg specifieke stakeholder toe**.
-2. Zoek in **Een actor kiezen** in de stakeholderlijst, of klik op **Nieuwe actor** om een nieuwe toe te voegen.
-3. Selecteer in **Kies een titel** de rol van deze stakeholder: **Gezamenlijke verwerkingsverantwoordelijke**, **Vertegenwoordiger van de verwerkingsverantwoordelijke**, **Verantwoordelijk voor de uitvoering van de verwerking**, **Operationele Verantwoordelijke** of **Andere**. Kiest u **Andere**, geef dan de rol op in **Functietitel**.
+2. Zoek in **Actor selecteren** in de stakeholderlijst, of klik op **Nieuwe actor** om een nieuwe toe te voegen.
+3. Selecteer in **Kies een categorie** de rol van deze stakeholder: **Gezamenlijke verwerkingsverantwoordelijke**, **Vertegenwoordiger van de verwerkingsverantwoordelijke**, **Verantwoordelijke voor de uitvoering van de verwerking**, **Operationeel verantwoordelijke** of **Andere**. Kiest u **Andere**, geef dan de rol op in **Categorielabel**.
 4. Klik op **Toevoegen**.
 
 <figure><img src="../../../.gitbook/assets/ropa-stakeholders-1.png" alt="Geopende lijst Kies een titel in het venster voor een specifieke stakeholder"><figcaption><p>Beschikbare categorieën voor een specifieke stakeholder</p></figcaption></figure>
 
 ## Een gezamenlijke verwerkingsverantwoordelijke toevoegen
 
-Om een gezamenlijke verwerkingsverantwoordelijke toe te voegen, voegt u een nieuwe stakeholder toe en selecteert u **Gezamenlijke verwerkingsverantwoordelijke** in **Kies een titel**.
+Om een gezamenlijke verwerkingsverantwoordelijke toe te voegen, voegt u een nieuwe stakeholder toe en selecteert u **Gezamenlijke verwerkingsverantwoordelijke** in **Kies een categorie**.
 
 <figure><img src="../../../.gitbook/assets/ropa-stakeholders-2.png" alt="Venster voor een specifieke stakeholder met de categorie Gezamenlijke verwerkingsverantwoordelijke geselecteerd"><figcaption><p>Een gezamenlijke verwerkingsverantwoordelijke aan de verwerkingsactiviteit toevoegen</p></figcaption></figure>
 
@@ -69,7 +69,7 @@ De verantwoordelijke voor de uitvoering van de verwerking is de afdeling die ope
 
 Het kan een afdeling zijn of een persoon.
 
-Voeg deze in Dastra toe als stakeholder met de titel **Verantwoordelijk voor de uitvoering van de verwerking**.
+Voeg deze in Dastra toe als stakeholder met de categorie **Verantwoordelijke voor de uitvoering van de verwerking**.
 
 ## Een vertegenwoordiger van de verwerkingsverantwoordelijke toevoegen
 
@@ -81,7 +81,7 @@ Voeg deze in Dastra toe als stakeholder met de titel **Vertegenwoordiger van de 
 
 De operationele verantwoordelijke (in het Engels Operational Data Controller of ODC) is een begrip dat sommige organisaties intern gebruiken voor een persoon met specifieke verantwoordelijkheden in het operationele beheer van de verwerking van persoonsgegevens.
 
-Voeg deze in Dastra toe als stakeholder met de titel **Operationele Verantwoordelijke**.
+Voeg deze in Dastra toe als stakeholder met de categorie **Operationeel verantwoordelijke**.
 
 **Rol van de operationele verantwoordelijke in de AVG-governance**\nDe operationele verantwoordelijke is geen begrip uit de AVG, maar sommige organisaties gebruiken het intern voor een persoon met specifieke operationele verantwoordelijkheden bij het beheer van verwerkingsactiviteiten.
 

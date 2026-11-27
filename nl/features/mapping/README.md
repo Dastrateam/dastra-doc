@@ -7,7 +7,7 @@ description: >-
 
 ## Alles begint met het in kaart brengen van gegevens
 
-Breng de gegevens van uw organisatie zo nauwkeurig mogelijk in kaart voordat u uw verwerkingsactiviteiten aanmaakt. In de toepassing heet deze module **Referenties**. De mapping verbindt vier soorten elementen: de uitgever van een actief, het actief zelf, de beveiligingsmaatregelen die erop van toepassing zijn en de datasets die het bevat, die uit gegevensvelden bestaan.
+Breng de gegevens van uw organisatie zo nauwkeurig mogelijk in kaart voordat u uw verwerkingsactiviteiten aanmaakt. In de toepassing heet deze module **Repository's**. De mapping verbindt vier soorten elementen: de uitgever van een actief, het actief zelf, de beveiligingsmaatregelen die erop van toepassing zijn en de datasets die het bevat, die uit gegevensvelden bestaan.
 
 <figure><img src="../../.gitbook/assets/mapping-schema-1.png" alt="Diagram van de gegevensmapping: de uitgever levert activa, die zijn gekoppeld aan beveiligingsmaatregelen en aan datasets die uit velden bestaan"><figcaption><p>Structuur van de gegevensmapping</p></figcaption></figure>
 
@@ -27,7 +27,7 @@ Om één stroom van de leverancier tot de verwerkingsactiviteit te volgen, zie [
 ## De gegevensmapping openen
 
 1. [Ga naar uw werkruimte](../../getting-started/setup/workspace.md#naar-een-werkruimte-gaan).
-2. Klik in het zijmenu onder **Data inventory** op **Referenties**.
+2. Klik in het zijmenu onder **Data inventory** op **Repository's**.
 3. De pagina **Rapportage** opent: één kaart per repository, met het aantal elementen dat ze bevat.
 
 Klik daarna op de repository die u wilt openen. Voor het pad om ze te openen, de lijstfuncties die alle repositories delen en de grafieken, zie [Referenties](repositories/README.md).

@@ -82,7 +82,7 @@ Wilt u weten hoe u het verwerkingsregister deelt, lees dan:
 
 Vink in de weergave **Tabel** de vakjes links van de verwerkingsactiviteiten aan waarmee u wilt werken. Boven de lijst verschijnt dan de knop **Kies een bulkactie**. Afhankelijk van uw rechten en van de functies die in uw werkruimte zijn ingeschakeld, biedt die de volgende acties:
 
-* **De werkstroomfase wijzigen**
+* **Workflowstap wijzigen**
 * **Exporteren**
 * **Actoren koppelen**: stakeholders of ontvangers toevoegen aan of verwijderen van alle geselecteerde verwerkingsactiviteiten
 * **Velden bewerken**: de waarde van een of meer velden op alle geselecteerde verwerkingsactiviteiten wijzigen
@@ -90,27 +90,27 @@ Vink in de weergave **Tabel** de vakjes links van de verwerkingsactiviteiten aan
 * **Vragenlijsten versturen**
 * **Beoordeling**
 * **Delen**
-* **Verplaats naar de prullenbak**
+* **Naar de prullenbak verplaatsen**
 
 ## Het register opvolgen met rapportages
 
-Klik in het linkermenu op **Gegevensverwerking** en daarna op **Rapportage** om de statistieken van uw register weer te geven.
+Klik in het linkermenu op **Verwerkingsregister** en daarna op **Rapportage** om de statistieken van uw register weer te geven.
 
 <figure><img src="../../.gitbook/assets/ropa-readme-2.png" alt="Rapportagepagina van het verwerkingsregister met de indicatortegels en widgets"><figcaption><p>De rapportagepagina van het register</p></figcaption></figure>
 
 De pagina toont:
 
 * indicatortegels voor het aantal verwerkingsactiviteiten en voor de indicatoren **Algemene progressie**, **Kwaliteit** en **Gevoeligheid**;
-* de **Gemiddelde indicatoren** en de **Indicatoren verdeling**;
-* het aantal verwerkingsactiviteiten per stap van de **Werkstroom**, per **Legale basis**, per categorie **Betrokkene**, per verwerker en per organisatie-eenheid;
-* het aandeel verwerkingsactiviteiten met gegevensdoorgiften, de landen die de widget **Data doorgiften** weergeeft en de **DPIA**-status;
+* de **Gemiddelden van indicatoren** en de **Verdeling van indicatoren**;
+* het aantal verwerkingsactiviteiten per stap van de **Werkstroom**, per **Wettelijke basis**, per categorie **Betrokkene**, per verwerker en per organisatie-eenheid;
+* het aandeel verwerkingsactiviteiten met gegevensdoorgiften, de landen die de widget **Gegevensdoorgifte** weergeeft en de **DPIA**-status;
 * de evolutie van het aantal verwerkingsactiviteiten (**Aanmaakdatum**) en de **Activiteitenlogboeken**.
 
 Gebruik de selector voor de organisatie-eenheid, de filters en de knoppen **Alles**, **Verwerkingsverantwoordelijke** en **Verwerker** om de statistieken te beperken. Klik op **Afdrukken** om de pagina af te drukken.
 
 ## Impactanalyses en privacy by design-aanvragen
 
-Twee andere items van het menu **Gegevensverwerking** geven toegang tot de vragenlijsten die aan uw verwerkingsactiviteiten zijn gekoppeld. Ze worden weergegeven wanneer u toegang hebt tot vragenlijsten.
+Twee andere items van het menu **Verwerkingsregister** geven toegang tot de vragenlijsten die aan uw verwerkingsactiviteiten zijn gekoppeld. Ze worden weergegeven wanneer u toegang hebt tot vragenlijsten.
 
 * **Impactanalyses** toont de vragenlijsten [DPIA](../questionnaires/types/dpia.md), [LIA](../questionnaires/types/lia.md) en [TIA](../questionnaires/types/tia.md) van de werkruimte. Klik op **Plan een audit** om er een aan te maken.
 * **Privacy by design** toont de vragenlijsten voor aanvragen tot het aanmaken van een verwerking. Ze [verzamelen projecten voor verwerkingsactiviteiten](../trust-center/creation-questionnaires.md) via een Trust Center: zodra een antwoord is gevalideerd, kunnen de gegevens ervan een verwerkingsactiviteit worden.

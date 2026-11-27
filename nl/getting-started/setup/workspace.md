@@ -26,12 +26,12 @@ Alleen eigenaars van de organisatie kunnen een werkruimte aanmaken.
 1. Klik op de pagina met uw werkruimten op **Creëer werkruimte**.
 2. Vul **Naam van de werkruimte** in. Dat veld is verplicht.
 3. Voeg eventueel het **Logo** van de werkruimte toe: een vierkante afbeelding van minstens 200 x 200 px, die automatisch wordt bijgesneden.
-4. Kies de taal in de lijst **Selecteer de taal die in deze werkruimte wordt gebruikt**.
+4. Kies de taal in de lijst **Selecteer de taal waarin de items van de werkruimte worden aangemaakt**.
 5. Klik op **Ga verder**.
 
 <figure><img src="../../.gitbook/assets/getting-started-workspace-3.png" alt="Formulier voor het aanmaken van een werkruimte"><figcaption><p>Het formulier voor het aanmaken van een werkruimte</p></figcaption></figure>
 
-Om te vertrekken van de configuratie van een bestaande werkruimte, vinkt u **Kloon instellingen vanuit een andere werkruimte** aan, kiest u de **Bronwerkruimte** en vinkt u zo nodig **Voeg toegewezen gebruikers en teams toe** aan. De taalkeuze verdwijnt: de nieuwe werkruimte gebruikt de taal van de bronwerkruimte.
+Om te vertrekken van de configuratie van een bestaande werkruimte, vinkt u **Kloon instellingen vanuit een andere werkruimte** aan, kiest u de **Bronwerkruimte** en vinkt u zo nodig **Toegewezen gebruikers en teams opnemen** aan. De taalkeuze verdwijnt: de nieuwe werkruimte gebruikt de taal van de bronwerkruimte.
 
 {% hint style="info" %}
 Zodra de werkruimte is aangemaakt, kunt u de organisatorische eenheden instellen en gebruikers uitnodigen.
@@ -59,8 +59,8 @@ Klik op **Ga verder** om uw werkruimte te openen. U kunt ook op **Sla deze stap 
 
 Zodra uw werkruimte is geopend, vult u de andere juridische entiteiten en de afdelingen zo snel mogelijk in. Dat vergemakkelijkt later het beheer van verwerkingsactiviteiten en de toewijzing van gebruikersrechten.
 
-1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Organisatorische eenheden**.
-2. Klik op **Maak een entiteit (verwerkingsverantwoordelijke)** om een juridische entiteit toe te voegen, of open het menu van de knop om **Maak een afdeling** te kiezen.
+1. Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Organisatorische eenheden**.
+2. Klik op **Entiteit aanmaken** om een juridische entiteit toe te voegen, of open het menu van de knop om **Afdeling aanmaken** te kiezen.
 3. Herhaal dit tot het organigram van uw structuur in Dastra is weergegeven.
 
 <figure><img src="../../.gitbook/assets/getting-started-org-units-6.png" alt="Organigramweergave van de organisatorische eenheden in Dastra"><figcaption><p>De weergave Organigram</p></figcaption></figure>

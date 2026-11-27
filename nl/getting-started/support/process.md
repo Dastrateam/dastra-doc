@@ -27,7 +27,7 @@ Het supportteam is bereikbaar van maandag tot en met vrijdag, van 9.00 tot 18.00
 
 ## Tickets volgen voor klanten
 
-U volgt de voortgang van uw tickets op het tabblad **Kaartjes** van de instellingen van de organisatie in Dastra. U ziet de updates van elk ticket en of het in behandeling is, is opgelost of op andere acties wacht.
+U volgt de voortgang van uw tickets op het tabblad **Tickets** van de instellingen van de organisatie in Dastra. U ziet de updates van elk ticket en of het in behandeling is, is opgelost of op andere acties wacht.
 
 ## Tevredenheidsenquête
 

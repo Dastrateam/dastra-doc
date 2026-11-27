@@ -12,9 +12,9 @@ Met aangepaste rapporten haalt u de informatie die u nodig hebt uit de Dastra-ge
 
 1. Klik in het linkermenu onder **Resources** op **Rapportages**.
 2. Rapporten zijn in categorieën ingedeeld. Voordat u uw eerste rapport aanmaakt, moet u **een eerste categorie aanmaken** met **Create Category**.
-3. Klik op **Create Report** om een leeg rapport op te bouwen, of open de pijl van de knop en kies **Maak vanuit de bibliotheek**.
+3. Klik op **Create Report** om een leeg rapport op te bouwen, of open de pijl van de knop en kies **Aanmaken vanuit de bibliotheek...**.
 
-Is AI-analyse inbegrepen in uw abonnement, dan genereert de AI-knop naast **Create Report** (**Genereer een op maat gemaakt rapport met de IA**) een rapport op basis van een korte beschrijving, bijvoorbeeld "Aantal verwerkingen per werkstroomstap met een grafiek".
+Is AI-analyse inbegrepen in uw abonnement, dan genereert de AI-knop naast **Create Report** (**Genereer een rapport op maat met AI**) een rapport op basis van een korte beschrijving, bijvoorbeeld "Aantal verwerkingen per werkstroomstap met een grafiek".
 
 ## Woordenlijst
 
@@ -94,15 +94,15 @@ Het voorbeeld wordt bijgewerkt terwijl u uw keuzes maakt. Om de grafiek later te
 Vanaf de pagina van een rapport:
 
 * **Exporteren** downloadt het rapport als CSV, Excel, JSON, PDF, Word, HTML of Markdown.
-* Het menu van de knop **Bewerken** biedt **Afdrukken**, **Exporteren**, **Delen** (voorbehouden aan gebruikers met de machtiging **Geavanceerde configuratie**) en **Verplaats naar de prullenbak**.
+* Het menu van de knop **Bewerken** biedt **Afdrukken**, **Exporteren**, **Delen** (voorbehouden aan gebruikers met de machtiging **Geavanceerde configuratie**) en **Naar de prullenbak verplaatsen**.
 * **Connect BI Tools** koppelt het rapport aan een hulpmiddel voor gegevensanalyse: zie [Integratie met hulpmiddelen voor gegevensanalyse (BI)](bi-tools.md).
 
 ## Prullenbak
 
 Een verwijderd rapport of een verwijderde categorie komt eerst in de prullenbak terecht: u kunt het terugzetten zolang het niet definitief is verwijderd.
 
-* **Een item naar de prullenbak verplaatsen**: klik in het actiemenu van een rapport op **Verplaats naar de prullenbak** en bevestig. Het actiemenu van een categorie, in het linkerpaneel, biedt dezelfde actie: de categorie en al haar rapporten gaan naar de prullenbak.
-* **De prullenbak bekijken**: schakel de optie **Bekijk prullenbak** in boven de lijst met rapporten, of in het menu van het paneel met categorieën.
+* **Een item naar de prullenbak verplaatsen**: klik in het actiemenu van een rapport op **Naar de prullenbak verplaatsen** en bevestig. Het actiemenu van een categorie, in het linkerpaneel, biedt dezelfde actie: de categorie en al haar rapporten gaan naar de prullenbak.
+* **De prullenbak bekijken**: schakel de optie **Prullenbak bekijken** in boven de lijst met rapporten, of in het menu van het paneel met categorieën.
 * **Terugzetten**: in de prullenbak zet **Herstellen** het item terug in de actieve lijst. Het terugzetten van een categorie zet ook de rapporten terug die samen met de categorie naar de prullenbak zijn verplaatst. Zet u een rapport terug waarvan de categorie in de prullenbak staat, dan wordt ook die categorie teruggezet.
 * **Definitief verwijderen**: in de prullenbak wist **Verwijderen** het item na bevestiging. Het verwijderen van een categorie verwijdert ook al haar rapporten. Deze actie kan niet ongedaan worden gemaakt.
 

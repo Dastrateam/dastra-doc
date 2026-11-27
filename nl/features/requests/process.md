@@ -24,12 +24,12 @@ Wanneer een verzoek wordt geregistreerd, verschijnt het in het register van verz
 In de sectie **Kwalificatie van het verzoek** kunt u:
 
 1. De betrokken typen verzoek bepalen.
-2. Het verzoek toewijzen aan een operator en aan een **Organisatie-eenheid**.
+2. Het verzoek toewijzen aan een operator en aan een **Organisatorische eenheid**.
 3. De behandeltermijnen beheren.
 
 <figure><img src="../../.gitbook/assets/requests-process-1.png" alt="De sectie Kwalificatie van het verzoek, met de typen verzoek, de organisatie-eenheid en de vervaldatum"><figcaption><p>De sectie Kwalificatie van het verzoek</p></figcaption></figure>
 
-De sectie bevat ook de **Taal van de browser** (de voorkeurstaal van de aanvrager), de **Labels**, het **Bericht van de aanvraag** (afkomstig van de aanvrager), **Aanvullende informatie over de aanvraag** en de **Persoonsreferentie**.
+De sectie bevat ook de **Voorkeurstaal van de aanvrager**, de **Labels**, het **Bericht van het verzoek (van de aanvrager)**, **Aanvullende informatie** en de **Referentie van de aanvrager**.
 
 ### Typen verzoek
 
@@ -64,8 +64,8 @@ Een verzoek kan meerdere typen omvatten.
 De wettelijke termijn wordt berekend vanaf de datum van het verzoek:
 
 * Standaard 30 dagen.
-* 20 dagen wanneer het type **Toegang tot administratieve documenten** (vrijheid van informatie) is geselecteerd.
-* 90 dagen wanneer u **Complexe aanvraag (90 dagen)** selecteert. Deze optie heeft voorrang op de twee andere termijnen en de verlenging moet worden gemotiveerd.
+* 20 dagen wanneer het type **Openbaarheid van bestuur** (vrijheid van informatie) is geselecteerd.
+* 90 dagen wanneer u **Complex (90 dagen)** selecteert. Deze optie heeft voorrang op de twee andere termijnen en de verlenging moet worden gemotiveerd.
 
 U kunt de **Vervaldatum** ook met één klik instellen: de knoppen **+8d**, **+30d** en **+90d** tellen 8, 30 of 90 dagen op bij de datum van het verzoek.
 
@@ -92,12 +92,12 @@ Hebben andere verzoeken hetzelfde e-mailadres, dan toont het zijpaneel de link *
 
 ## Uitvoering van het verzoek
 
-De sectie **Uitvoering van het verzoek** bundelt alle acties rond de behandeling. Ze heeft drie tabbladen: **Bijlagen**, **Gegevensverwerking van bijbehorende gegevens** en **Bijbehorende doelen**.
+De sectie **Uitvoering van het verzoek** bundelt alle acties rond de behandeling. Ze heeft drie tabbladen: **Bijlagen**, **Gerelateerde verwerkingen** en **Gerelateerde doeleinden**.
 
 ### Bijlagen
 
 U kunt bewijsbestanden of exports met gegevens van de aanvrager uploaden.\
-Deze bestanden kunt u daarna bij het antwoord voegen. Bij elk bestand staan knoppen om het te bekijken, af te schermen (afhankelijk van uw abonnement), te downloaden of te verwijderen. Met **Download alles (.zip)** downloadt u alle bestanden tegelijk. Bestanden mogen maximaal 100 MB groot zijn.
+Deze bestanden kunt u daarna bij het antwoord voegen. Bij elk bestand staan knoppen om het te bekijken, af te schermen (afhankelijk van uw abonnement), te downloaden of te verwijderen. Met **Alles downloaden (.zip)** downloadt u alle bestanden tegelijk. Bestanden mogen maximaal 100 MB groot zijn.
 
 <figure><img src="../../.gitbook/assets/requests-process-3.png" alt="Het tabblad Bijlagen van een verzoek, met het gebied om bestanden te slepen"><figcaption><p>Bestanden aan het verzoek toevoegen</p></figcaption></figure>
 
@@ -115,7 +115,7 @@ Elke dataset moet afzonderlijk worden behandeld.
 * Beschikbare statussen: **In behandeling** / **Voltooid**. Een dataset kan ook als niet van toepassing worden ingesteld.
 * Weergave van de algemene voortgang (in procenten).
 
-Het tabblad **Gegevensverwerking van bijbehorende gegevens** toont alle relevante datasets volgens een cumulatief model: die van de organisatie-eenheid die aan het verzoek is toegewezen, die van al haar bovenliggende eenheden (tot aan de top van de hiërarchie) en die van al haar onderliggende eenheden. Zo wordt geen geërfde dataset over het hoofd gezien tijdens de behandeling.
+Het tabblad **Gerelateerde verwerkingen** toont alle relevante datasets volgens een cumulatief model: die van de organisatie-eenheid die aan het verzoek is toegewezen, die van al haar bovenliggende eenheden (tot aan de top van de hiërarchie) en die van al haar onderliggende eenheden. Zo wordt geen geërfde dataset over het hoofd gezien tijdens de behandeling.
 
 <figure><img src="../../.gitbook/assets/exercice-droits-datasets-herites.png" alt="Het tabblad met de bijbehorende gegevens, met de datasets die van de bovenliggende en onderliggende eenheden zijn geërfd"><figcaption><p>De datasets die van de bovenliggende en onderliggende eenheden zijn geërfd, worden volgens een cumulatief model weergegeven</p></figcaption></figure>
 
@@ -144,9 +144,9 @@ Met **Controleren** opent u de gedetailleerde informatie:
 Voor elke dataset:
 
 1. Controleer de informatie.
-2. Motiveer de uitgevoerde behandeling (bijvoorbeeld wissing, rectificatie) bij **Justificatie**. Dit veld is verplicht en met **Genereer** stelt AI de tekst op.
+2. Motiveer de uitgevoerde behandeling (bijvoorbeeld wissing, rectificatie) bij **Justificatie**. Dit veld is verplicht en met **Genereren** stelt AI de tekst op.
 3. Voeg zo nodig bewijsbestanden toe.
-4. Klik op **Valider**.
+4. Klik op **Markeren als voltooid**.
 
 Betreft het verzoek de dataset niet, klik dan op **Niet van toepassing**. De status wordt bijgewerkt en de opmerking blijft bewaard.
 
@@ -155,13 +155,13 @@ Betreft het verzoek de dataset niet, klik dan op **Niet van toepassing**. De sta
 #### Samenwerking en meldingen
 
 U kunt de eigenaren van de betrokken activa automatisch verwittigen.\
-Klik op **Verantwoordelijken op de hoogte brengen**: in een venster selecteert u de personen die u per e-mail wilt verwittigen en klikt u op **Verzenden**.
+Klik op **Eigenaren informeren**: in een venster selecteert u de personen die u per e-mail wilt verwittigen en klikt u op **Verzenden**.
 
 <figure><img src="../../.gitbook/assets/requests-process-7.png" alt="Het venster om de eigenaren van activa te verwittigen"><figcaption><p>De eigenaren van de activa snel verwittigen</p></figcaption></figure>
 
 ### Bijbehorende doelen
 
-Het tabblad **Bijbehorende doelen** toont in een tabel de verwerkingsdoeleinden die aan de categorie van de betrokkene zijn gekoppeld (**Doel**), met hun **Juridische basis** en de **Gegevensverwerking van bijbehorende gegevens**. Doeleinden verschijnen alleen als ze tot dezelfde organisatie-eenheid behoren als het verzoek.
+Het tabblad **Gerelateerde doeleinden** toont in een tabel de verwerkingsdoeleinden die aan de categorie van de betrokkene zijn gekoppeld (**Doel**), met hun **Wettelijke basis** en de **Gerelateerde verwerkingen**. Doeleinden verschijnen alleen als ze tot dezelfde organisatie-eenheid behoren als het verzoek.
 
 <figure><img src="../../.gitbook/assets/requests-process-13.png" alt="Het tabblad Bijbehorende doelen van een verzoek"><figcaption><p>De doeleinden die aan de categorie van de betrokkene zijn gekoppeld</p></figcaption></figure>
 
@@ -181,11 +181,11 @@ Is de behandeling afgerond, dan antwoordt u rechtstreeks aan de aanvrager in de 
 
 ## Een verzoek afsluiten
 
-Om een verzoek af te sluiten klikt u op **Sluit de aanvraag** in het menu **Acties** of onderaan de pagina. Doe in het venster dat opent het volgende:
+Om een verzoek af te sluiten klikt u op **Dit verzoek sluiten** in het menu **Acties** of onderaan de pagina. Doe in het venster dat opent het volgende:
 
-1. Kies in de lijst **Sluitingsmotief voor de aanvrager** de reden van afsluiting. Dit veld is verplicht.
-2. Voeg bij **Geef de reden voor sluiting op (zichtbaar voor de aanvrager)** een toelichting toe die de aanvrager in zijn ruimte ziet. Dit veld is optioneel.
-3. Voeg bij **Interne sluitingsmotief (onzichtbaar voor de aanvrager)** zo nodig een notitie voor uw team toe.
+1. Kies in de lijst **Reden** de reden van afsluiting. Dit veld is verplicht.
+2. Voeg bij **Geef de reden voor de sluiting op.** een toelichting toe die de aanvrager in zijn ruimte ziet. Dit veld is optioneel.
+3. Voeg bij **Interne sluitingsreden (niet zichtbaar voor de aanvrager)** zo nodig een notitie voor uw team toe.
 4. Controleer de **Sluitingsdatum**.
 5. Om de aanvrager per e-mail te verwittigen, selecteert u **Send a notification to** gevolgd door zijn adres. Het vakje verschijnt alleen als het verzoek een e-mailadres heeft en is standaard niet aangevinkt.
 6. Klik op **Opslaan**.
@@ -205,16 +205,16 @@ Naast de hoofdstappen (kwalificatie, controle, behandeling en antwoord) biedt Da
 Beschikbare acties zijn onder meer:
 
 * **Aangepaste velden**: specifieke velden toevoegen of wijzigen om het verzoek aan te vullen.
-* **Kopieer de link naar de portaltoegang van de betrokkene**: een directe link delen met de betrokkene.
+* **Toegangslink naar de verzoekruimte kopiëren**: een directe link delen met de betrokkene.
 * **Stuur een e-mail**: rechtstreeks vanuit het platform een bericht over het verzoek versturen.
 * **Exporteren**: de informatie van het verzoek exporteren.
 * **Regels voor de workflow**: een automatiseringsregel toepassen of activeren.
-* **Vraag opschorten**: de wettelijke behandeltermijn onderbreken (zie hieronder).
-* **Sluit de aanvraag**: het verzoek handmatig als afgerond markeren.
+* **Verzoek opschorten**: de wettelijke behandeltermijn onderbreken (zie hieronder).
+* **Dit verzoek sluiten**: het verzoek handmatig als afgerond markeren.
 * **Toegangstoken resetten**: een nieuwe beveiligde link voor de aanvrager aanmaken.
 * **anonimiseren**: de identificerende gegevens van het verzoek wissen. Deze actie is beschikbaar zodra het verzoek is afgesloten.
 * **Bestanden opschonen**: de verstuurde bijlagen verwijderen. Het menu toont het aantal, bijvoorbeeld **Bestanden opschonen (1)**. Hun namen en datums blijven bewaard. Deze actie verschijnt pas zodra het verzoek is afgesloten.
-* **Verplaats naar de prullenbak**: het verzoek in de prullenbak plaatsen. Daarna gelden de opschoningsregels (zie [Opschoningsregels voor verzoeken](advanced/purge.md)).
+* **Naar de prullenbak verplaatsen**: het verzoek in de prullenbak plaatsen. Daarna gelden de opschoningsregels (zie [Opschoningsregels voor verzoeken](advanced/purge.md)).
 
 ### Een verzoek opschorten
 
@@ -228,7 +228,7 @@ De opschorting onderbreekt de wettelijke termijn, die pas weer loopt zodra de op
 
 Klik daarna op **Opslaan**.
 
-Zodra het verzoek is opgeschort, toont de interface duidelijk de status en biedt ze de knop **Hervat de wettelijke deadline**.
+Zodra het verzoek is opgeschort, toont de interface duidelijk de status en biedt ze de knop **Wettelijke termijn hervatten**.
 
 <figure><img src="../../.gitbook/assets/requests-process-11.png" alt="Een opgeschort verzoek, met de knop Hervat de wettelijke deadline"><figcaption></figcaption></figure>
 
@@ -238,7 +238,7 @@ De teller van de resterende dagen wordt automatisch herberekend, rekening houden
 
 ## Berichten van aanvragers
 
-De pagina **Berichten** van het menu **Verzoeken** bundelt, verzoek per verzoek, de berichten die met aanvragers zijn uitgewisseld. Elke groep toont de titel van het verzoek en de naam van de aanvrager. U kunt de lijst filteren op operator (**Toegewezen aan**), op afzender (**Afzender van bericht**), op type bericht (**Berichten van onderwerpen**, **Berichten van de operator** of **Alle berichten**) en op periode.
+De pagina **Berichten** van het menu **Verzoeken** bundelt, verzoek per verzoek, de berichten die met aanvragers zijn uitgewisseld. Elke groep toont de titel van het verzoek en de naam van de aanvrager. U kunt de lijst filteren op operator (**Toegewezen aan**), op afzender (**Afzender van bericht**), op type bericht (**Berichten van aanvragers**, **Berichten van de operator** of **Alle berichten**) en op periode.
 
 <figure><img src="../../.gitbook/assets/requests-process-14.png" alt="De pagina Berichten met de berichten van aanvragers"><figcaption><p>De inbox met berichten van aanvragers</p></figcaption></figure>
 

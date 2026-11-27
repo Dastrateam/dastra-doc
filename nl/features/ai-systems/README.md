@@ -6,7 +6,7 @@ description: >-
 
 # AI-systemen
 
-De module **AI-wet** van Dastra houdt een lijst bij van de AI-systemen die uw organisatie gebruikt of ontwikkelt, beoordeelt hun risiconiveau volgens de AI-verordening en bewaart de documentatie die uw naleving aantoont. Deze pagina is bedoeld voor functionarissen voor gegevensbescherming, juridische teams en projectteams die AI beheren.
+De module **AI-governance** van Dastra houdt een lijst bij van de AI-systemen die uw organisatie gebruikt of ontwikkelt, beoordeelt hun risiconiveau volgens de AI-verordening en bewaart de documentatie die uw naleving aantoont. Deze pagina is bedoeld voor functionarissen voor gegevensbescherming, juridische teams en projectteams die AI beheren.
 
 <figure><img src="../../.gitbook/assets/ai-systems-overview-1.png" alt="Register van AI-systemen met de lijst van systemen, hun risiconiveau en hun status"><figcaption><p>Het register van AI-systemen</p></figcaption></figure>
 
@@ -85,10 +85,10 @@ De module helpt u uw wettelijke risico's te verminderen, uw AI-projecten te stru
 
 ## In de module navigeren
 
-Klik op **AI-wet** in de zijbalk. Het menu bevat de volgende onderdelen:
+Klik op **AI-governance** in de zijbalk. Het menu bevat de volgende onderdelen:
 
 * **Register van AI-systemen**: de lijst van uw systemen, waarin u dossiers aanmaakt, importeert, exporteert en opent. Zie [Een register van AI-systemen opzetten](record.md) en [Uw AI-systemen importeren](import.md).
-* **In kaart brengen**: de grafiek van de AI-systemen en de items waaraan ze zijn gekoppeld.
+* **Grafieken**: de grafiek van de AI-systemen en de items waaraan ze zijn gekoppeld.
 * **Rapportage**: de indicatoren van het register, namelijk systemen per risiconiveau, per bedrijfswaarde, per workflowstap, per organisatorische eenheid en per label, en nieuwe systemen.
 * **AI-modellen**: de repository van de modellen die uw systemen gebruiken. Zie [Repository van AI-modellen](models.md).
 * **Impactanalyses**: de vragenlijsten voor de impactbeoordeling die aan uw AI-systemen zijn gekoppeld. Dit onderdeel verschijnt als uw abonnement de module **Vragenlijsten** bevat en u toegang hebt tot vragenlijsten. Zie [Beoordeling van de gevolgen voor de grondrechten (FRIA)](fria.md).

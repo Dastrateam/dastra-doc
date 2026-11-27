@@ -24,12 +24,12 @@ De verwerking van persoonsgegevens kan al dan niet geautomatiseerd zijn.
 
 De sectie **Algemeen** is de eerste sectie van een verwerkingsactiviteit. Ze identificeert de verwerkingsactiviteit die u in het register wilt vastleggen.
 
-* **Naam gegevensverwerking** (verplicht, maximaal 120 tekens): de naam van de activiteit, die meestal overeenkomt met de activiteit waarbij een of meer verwerkingen plaatsvinden, zoals klantenbeheer of evenementenbeheer.
+* **Naam van de verwerkingsactiviteit** (verplicht, maximaal 120 tekens): de naam van de activiteit, die meestal overeenkomt met de activiteit waarbij een of meer verwerkingen plaatsvinden, zoals klantenbeheer of evenementenbeheer.
 * **Interne referentie** (optioneel, maximaal 50 tekens): uw eigen identificatiecode voor deze verwerkingsactiviteit, als u er een gebruikt.
-* **Organisatie-eenheid** (verplicht): de entiteit of afdeling waartoe de verwerkingsactiviteit behoort. De verwerkingsverantwoordelijke, de functionaris voor gegevensbescherming en de vertegenwoordiger die in de sectie **Stakeholders** staan, worden overgenomen van de entiteit van deze organisatorische eenheid.
+* **Organisatorische eenheid** (verplicht): de entiteit of afdeling waartoe de verwerkingsactiviteit behoort. De verwerkingsverantwoordelijke, de functionaris voor gegevensbescherming en de vertegenwoordiger die in de sectie **Stakeholders** staan, worden overgenomen van de entiteit van deze organisatorische eenheid.
 * **Labels**: classificeer de verwerkingsactiviteit om ze terug te vinden en te filteren. Zolang er geen label is geselecteerd, kan de AI-assistent labels voorstellen op basis van de naam en de beschrijving van de verwerkingsactiviteit.
-* **Beschrijving van gegevensverwerking** (optioneel, maximaal 3.000 tekens): beschrijf de verwerkingsactiviteit. Klik onder het veld op **Genereer** zodat de AI-assistent de beschrijving opstelt op basis van de naam van de verwerkingsactiviteit. Controleer het resultaat en klik op **Toepassen**. Bevat het veld al tekst, dan wordt de knop **Ga verder met het schrijven van de tekst met de AI-assistent**.
-* **Status gegevensverwerking** (optioneel): selecteer de huidige status van de verwerking in uw organisatie: **Om te bestuderen**, **Wordt geïmplementeerd**, **In productie** of **Gestopt**.
+* **Korte beschrijving van de verwerkingsactiviteit** (optioneel, maximaal 3.000 tekens): beschrijf de verwerkingsactiviteit. Klik onder het veld op **Genereren** zodat de AI-assistent de beschrijving opstelt op basis van de naam van de verwerkingsactiviteit. Controleer het resultaat en klik op **Toepassen**. Bevat het veld al tekst, dan wordt de knop **Ga verder met het schrijven van de tekst met de AI-assistent**.
+* **Status van de verwerkingsactiviteit** (optioneel): selecteer de huidige status van de verwerking in uw organisatie: **Te bestuderen**, **Wordt geïmplementeerd**, **In productie** of **Gestopt**.
 * **Implementatiedatum** (optioneel): beschikbaar zodra een status is geselecteerd.
 
 {% hint style="info" %}

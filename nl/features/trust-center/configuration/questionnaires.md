@@ -25,7 +25,7 @@ U kunt op elk moment vragenlijsten verwijderen of andere toevoegen. De toegevoeg
 
 ## Instructies voor de vragenlijsten
 
-Het veld **Vragenlijsten instructies** is een tekstveld met opmaak. Hiermee kunt u de tekst opmaken en er afbeeldingen of video's in opnemen. Het bericht wordt weergegeven op de openbare pagina **Vragenlijsten**, boven de lijst met vragenlijsten.
+Het veld **Instructies voor vragenlijsten** is een tekstveld met opmaak. Hiermee kunt u de tekst opmaken en er afbeeldingen of video's in opnemen. Het bericht wordt weergegeven op de openbare pagina **Vragenlijsten**, boven de lijst met vragenlijsten.
 
 ## Vragenlijsten hernoemen
 

@@ -5,20 +5,20 @@ description: >-
 
 # Een vragenlijstsjabloon aanmaken
 
-Een vragenlijstsjabloon beschrijft de secties, de vragen en de scoreregels van een vragenlijst. U maakt het één keer aan en plant het daarna zo vaak als nodig. Open **Vragenlijsten** > **Vraagmodellen** om de sjablonen te bereiken.
+Een vragenlijstsjabloon beschrijft de secties, de vragen en de scoreregels van een vragenlijst. U maakt het één keer aan en plant het daarna zo vaak als nodig. Open **Vragenlijsten** > **Vragenlijstsjablonen** om de sjablonen te bereiken.
 
 ## Een vragenlijstsjabloon aanmaken of wijzigen
 
-Klik bovenaan de lijst **Vraagmodellen** op **Maak een sjabloon** om een sjabloon aan te maken. De knop is grijs wanneer u het aantal sjablonen van uw abonnement hebt bereikt.
+Klik bovenaan de lijst **Vragenlijstsjablonen** op **Maak een sjabloon** om een sjabloon aan te maken. De knop is grijs wanneer u het aantal sjablonen van uw abonnement hebt bereikt.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-1.png" alt="Lijst met vragenlijstsjablonen met de knoppen Plan een audit en Maak een sjabloon"><figcaption><p>De lijst met vragenlijstsjablonen</p></figcaption></figure>
 
 Het venster **Kies het type audit** biedt vier opties:
 
 * **Geautomatiseerde audit**: kies een vooraf gedefinieerd sjabloon uit de Dastra-bibliotheek. Zie [Geautomatiseerde vragenlijstsjablonen](#geautomatiseerde-vragenlijstsjablonen).
-* **Gepersonaliseerde audit**: bouw uw eigen sjabloon. Zie [Aangepaste vragenlijstsjablonen](#aangepaste-vragenlijstsjablonen).
-* **Creëren met AI**: de AI-assistent genereert het sjabloon op basis van uw beschrijving. U kunt met de knop **+** documenten toevoegen (een interne auditlijst in Word, een beveiligingsvragenlijst in PDF enzovoort): de assistent zet de aangeleverde vragenlijst om in secties, vragen, vraagtypen en antwoordopties. Geef het type vragenlijst op (**Standaard**, **Cyber compliance** of **Training**) en daarna, onder **Meer opties**, de gewenste secties, het aantal vragen (van 1 tot 50) en, voor een trainingsvragenlijst, het moeilijkheidsniveau. U bekijkt het resultaat vooraf voordat u het sjabloon aanmaakt. De optie is grijs wanneer de AI-functie voor vragenlijsten niet is ingeschakeld voor uw organisatie.
-* **Upload een sjabloon**: importeer een bestaand sjabloon met **JSON-bestand** (een uit Dastra geëxporteerd sjabloon) of **Excel-bestand** (een vragenlijst in Excel- of CSV-indeling).
+* **Gepersonaliseerde vragenlijst**: bouw uw eigen sjabloon. Zie [Aangepaste vragenlijstsjablonen](#aangepaste-vragenlijstsjablonen).
+* **Aanmaken met AI**: de AI-assistent genereert het sjabloon op basis van uw beschrijving. U kunt met de knop **+** documenten toevoegen (een interne auditlijst in Word, een beveiligingsvragenlijst in PDF enzovoort): de assistent zet de aangeleverde vragenlijst om in secties, vragen, vraagtypen en antwoordopties. Geef het type vragenlijst op (**Standaard**, **Cyber compliance** of **Training**) en daarna, onder **Meer opties**, de gewenste secties, het aantal vragen (van 1 tot 50) en, voor een trainingsvragenlijst, het moeilijkheidsniveau. U bekijkt het resultaat vooraf voordat u het sjabloon aanmaakt. De optie is grijs wanneer de AI-functie voor vragenlijsten niet is ingeschakeld voor uw organisatie.
+* **Bestand uploaden**: importeer een bestaand sjabloon met **JSON-bestand** (een uit Dastra geëxporteerd sjabloon) of **Excel-bestand** (een vragenlijst in Excel- of CSV-indeling).
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-2.png" alt="Venster voor het kiezen van het type vragenlijstsjabloon met de vier opties"><figcaption><p>De vier opties om een sjabloon aan te maken</p></figcaption></figure>
 
@@ -32,13 +32,13 @@ In tegenstelling tot geautomatiseerde vragenlijsten zijn gepersonaliseerde vrage
 
 Dastra biedt veel geautomatiseerde vragenlijstsjablonen die de naleving documenteren en processen aansturen. Ze omvatten DPIA's, TIA's, LIA's en vragenlijsten voor verwerkers.
 
-Filter de bibliotheek in het selectievenster met **Gegevensbron van de bibliotheek**, **Lokaal**, **Labels** en **Soorten**, of zoek een sjabloon op naam. Klik op het oogpictogram van een sjabloon om de details te zien. Klik op het sjabloon om het te installeren: Dastra maakt een kopie in uw werkruimte en opent de pagina ervan.
+Filter de bibliotheek in het selectievenster met **Kies de bron van de bibliotheek**, **Landinstelling**, **Labels** en **Soorten**, of zoek een sjabloon op naam. Klik op het oogpictogram van een sjabloon om de details te zien. Klik op het sjabloon om het te installeren: Dastra maakt een kopie in uw werkruimte en opent de pagina ervan.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-3.png" alt="Bibliotheek met vragenlijstsjablonen en de filters voor bron, taalgebied, labels en soorten"><figcaption><p>De bibliotheek met vragenlijstsjablonen</p></figcaption></figure>
 
 Vanaf de pagina van het sjabloon kunt u:
 
-* het sjabloon wijzigen met **Het sjabloon wijzigen**;
+* het sjabloon bewerken met **Sjabloon bewerken**;
 * een vragenlijst plannen met **Plan een audit**.
 
 {% hint style="info" %}
@@ -47,30 +47,30 @@ Sommige vragenlijsttypen (DPIA, TIA, LIA) kunt u ook rechtstreeks vanuit een ver
 
 ## Aangepaste vragenlijstsjablonen
 
-Klik op **Gepersonaliseerde audit** om uw eigen sjabloon aan te maken. Het paneel **Maak een audittemplate** opent: vul het in (zie de volgende paragraaf) en bouw daarna de secties en vragen in de sjablooneditor. Klik op **Opslaan** om uw wijzigingen te bewaren of op **Opslaan en stoppen** om de editor te sluiten.
+Klik op **Gepersonaliseerde vragenlijst** om uw eigen sjabloon aan te maken. Het paneel **Een vragenlijstsjabloon aanmaken** opent: vul het in (zie de volgende paragraaf) en bouw daarna de secties en vragen in de sjablooneditor. Klik op **Opslaan** om uw wijzigingen te bewaren of op **Opslaan en afsluiten** om de editor te sluiten.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-5.png" alt="Sjablooneditor met secties, vragen en het acties-paneel"><figcaption><p>De sjablooneditor</p></figcaption></figure>
 
 ### Het sjabloon configureren
 
-Het configuratiepaneel opent wanneer u een sjabloon aanmaakt. Om er later naar terug te keren, opent u het menu van het sjabloon in de lijst en klikt u op **Instellingen**, of klikt u in de editor op **Configureren**. Het heet **Het sjabloon configureren** wanneer u het opnieuw opent.
+Het configuratiepaneel opent wanneer u een sjabloon aanmaakt. Om er later naar terug te keren, opent u het menu van het sjabloon in de lijst en klikt u op **Instellingen**, of klikt u in de editor op **Configureren**. Het heet **Configuratie van het sjabloon** wanneer u het opnieuw opent.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-4.png" alt="Configuratiepaneel van een vragenlijstsjabloon"><figcaption><p>Het configuratiepaneel van een sjabloon</p></figcaption></figure>
 
 | Veld | Doel |
 | --- | --- |
 | **Naam**, **Samenvatting**, logo | De identiteit van het sjabloon in de lijsten en de bibliotheek. |
-| **Geauditeerd element** | Het type object waaraan elke respons is gekoppeld (zie [Beoordeelde items](#beoordeelde-items)). |
-| **Personen verantwoordelijk voor de vragenlijst** | De goedkeurders die standaard worden geselecteerd bij het plannen. U kunt ze nog wijzigen. |
+| **Gekoppeld aan** | Het type object waaraan elke respons is gekoppeld (zie [Beoordeelde items](#beoordeelde-items)). |
+| **Standaardgoedkeurders van de vragenlijst** | De goedkeurders die standaard worden geselecteerd bij het plannen. U kunt ze nog wijzigen. |
 | **Type audit** | Het gedrag van de vragenlijst in de toepassing (zie [Soorten sjablonen](#soorten-sjablonen)). |
 | **Labels** | Labels om de sjablonen te filteren. |
-| **Standaard reactietermijn** | Het aantal dagen dat bij het plannen als deadline wordt voorgesteld. Standaard is dat 30 dagen. |
+| **Aantal dagen vóór de deadline** | Het aantal dagen dat bij het plannen als deadline wordt voorgesteld. Standaard is dat 30 dagen. |
 | **Analyseblokken voor respondenten tonen** | Respondenten zien de analyseblokken en de scores en kunnen hun antwoorden exporteren. |
-| **Moet deze audit op terugkerende basis worden uitgevoerd?** | Als u **Ja** antwoordt, stelt u de **Dagen tussen elke audit** in. Zie [Een audit of PIA plannen](../schedule.md). |
+| **Moet deze vragenlijst regelmatig worden uitgevoerd?** | Als u **Ja** antwoordt, stelt u de **Dagen tussen antwoorden** in. Zie [Een audit of PIA plannen](../schedule.md). |
 
 ### Beoordeelde items
 
-U kunt vragenlijsten aan items in Dastra koppelen. Door in **Geauditeerd element** het type beoordeeld item te kiezen, dwingt u af dat alle responsen op basis van dat sjabloon aan een object van het gekozen type worden gekoppeld. Dit vragenlijstsjabloon is bijvoorbeeld altijd gekoppeld aan een verwerkingsactiviteit.
+U kunt vragenlijsten aan items in Dastra koppelen. Door in **Gekoppeld aan** het type beoordeeld item te kiezen, dwingt u af dat alle responsen op basis van dat sjabloon aan een object van het gekozen type worden gekoppeld. Dit vragenlijstsjabloon is bijvoorbeeld altijd gekoppeld aan een verwerkingsactiviteit.
 
 De mogelijke objecttypen zijn stakeholders, activa, verwerkingsactiviteiten, datalekken, verzoeken, beveiligingsmaatregelen, datasets, risicobeoordelingen, AI-systemen en contracten.
 
@@ -117,7 +117,7 @@ De **Maximale score** van de vraag staat onder de keuzelijst. De regel geldt voo
 
 ## Een sjabloon laden dat u zelf bezit
 
-U kunt een van uw vragenlijstsjablonen in JSON-indeling importeren. Klik bij het aanmaken van het sjabloon op **Upload een sjabloon**, daarna op **JSON-bestand** en sleep het bestand erin. Om dit bestand te krijgen, exporteert u een sjabloon via het menu ervan met **Exporteren**.
+U kunt een van uw vragenlijstsjablonen in JSON-indeling importeren. Klik bij het aanmaken van het sjabloon op **Bestand uploaden**, daarna op **JSON-bestand** en sleep het bestand erin. Om dit bestand te krijgen, exporteert u een sjabloon via het menu ervan met **Exporteren**.
 
 ## Vragen met dynamische selectie
 
@@ -158,7 +158,7 @@ Voor de andere velden van het record, de vraagtypen en het samenvoegen, zie [Een
 De naam van de variabele moet het formaat `custom_variable_name` hebben. Gebruik de technische naam van het veld precies zoals die is geschreven na het voorvoegsel.
 
 {% hint style="info" %}
-Het aangepaste veld hoeft niet te verschijnen onder **Selecteer een variabele om in kaart te brengen**. Vul de volledige naam van de variabele rechtstreeks in.
+Het aangepaste veld hoeft niet te verschijnen onder **Selecteer een variabele om te koppelen**. Vul de volledige naam van de variabele rechtstreeks in.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -178,11 +178,11 @@ De actie **Vergelijk de versies** toont twee versies naast elkaar. Elke sectie e
 
 <figure><img src="../../../.gitbook/assets/audit-template-version-compare-modal.png" alt="Vergelijking van twee versies van een vragenlijstsjabloon"><figcaption><p>Twee versies van een vragenlijstsjabloon vergelijken</p></figcaption></figure>
 
-Om een andere versie de hoofdversie te maken, klikt u in de lijst met versies op **Definieer in de hoofdversie**. Het venster **Make this version the main one?** vergelijkt de nieuwe hoofdversie met de huidige voordat u bevestigt. Antwoorden die al zijn verzameld, blijven gekoppeld aan de versie waarop ze zijn gegeven.
+Om een andere versie de hoofdversie te maken, klikt u in de lijst met versies op **Instellen als hoofdversie**. Het venster **Make this version the main one?** vergelijkt de nieuwe hoofdversie met de huidige voordat u bevestigt. Antwoorden die al zijn verzameld, blijven gekoppeld aan de versie waarop ze zijn gegeven.
 
 ### Bijwerken vanuit het bibliotheeksjabloon
 
-Wanneer u een sjabloon uit de Dastra-bibliotheek installeert en het bibliotheeksjabloon daarna wordt bijgewerkt, meldt een bericht bovenaan de pagina van het sjabloon dat het sjabloon waarvan het is aangemaakt, is bijgewerkt. Het bericht toont de huidige en de nieuwe versie, met het aantal toegevoegde, gewijzigde en verwijderde items. Klik op **Vergelijk de versies** om de details te zien. In dat venster kunt u de wijzigingen toepassen of op **Maak een versie** klikken om het huidige sjabloon te behouden en een aftakking te maken. Klik op **Ontkoppelen van de bibliotheek** om het bibliotheeksjabloon niet meer te volgen.
+Wanneer u een sjabloon uit de Dastra-bibliotheek installeert en het bibliotheeksjabloon daarna wordt bijgewerkt, meldt een bericht bovenaan de pagina van het sjabloon dat het sjabloon waarvan het is aangemaakt, is bijgewerkt. Het bericht toont de huidige en de nieuwe versie, met het aantal toegevoegde, gewijzigde en verwijderde items. Klik op **Vergelijk de versies** om de details te zien. In dat venster kunt u de wijzigingen toepassen of op **Maak een versie** klikken om het huidige sjabloon te behouden en een aftakking te maken. Klik op **Sjabloon ontkoppelen** om het bibliotheeksjabloon niet meer te volgen.
 
 {% hint style="info" %}
 Het aantal beschikbare sjablonen hangt af van uw abonnement. Dit quotum wordt gedeeld door alle werkruimten van uw organisatie. De prullenbak van sjablonen telt mee voor het quotum: denk eraan hem regelmatig te legen om plaatsen vrij te maken.
@@ -195,7 +195,7 @@ In de editor geeft het menu naast de knop **Opslaan** toegang tot meerdere actie
 * **Maak een versie**;
 * **Plan een audit**;
 * **Configureren**;
-* **Historisch**: eerdere wijzigingen aan het sjabloon bekijken en herstellen;
+* **Activiteitengeschiedenis**: eerdere wijzigingen aan het sjabloon bekijken en herstellen;
 * **Exporteren**: het sjabloon downloaden (JSON, Excel, CSV, PDF, Word, HTML of Markdown);
 * **Draag bij**: het sjabloon publiceren voor alle Dastra-gebruikers, voor gebruikers die mogen bijdragen.
 

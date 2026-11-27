@@ -35,7 +35,7 @@ In het gedeelte **Controles en tests** van het tabblad **Statistieken** van het 
   * geslaagde tests,
   * tests met ontbrekend bewijs,
   * mislukte tests.
-* **Frisheid van de tests**:
+* **Actualiteit van de tests**:
   * actuele tests,
   * verlopen tests waarvoor nieuw bewijs nodig is.
 
@@ -90,7 +90,7 @@ Met een campagne kunt u:
 * een algemene deadline bepalen,
 * de voortgang centraal opvolgen.
 
-Om een campagne aan te maken, klikt u op **Een testcampagne aanmaken** en vult u het **Campagne label** in. U kunt **Selecteer vooraf alle tests van uw project die wachten op bewijs** aanvinken om de start te vergemakkelijken. De campagne opent dan in configuratie: **Stel de inhoud van de testcampagne in**, controleer of elke test een eigenaar heeft en start de campagne vervolgens.
+Om een campagne aan te maken, klikt u op **Een testcampagne aanmaken** en vult u het **Campagnelabel** in. U kunt **Selecteer vooraf alle tests van uw project die wachten op bewijs** aanvinken om de start te vergemakkelijken. De campagne opent dan in configuratie: **Stel de inhoud van de testcampagne in**, controleer of elke test een eigenaar heeft en start de campagne vervolgens.
 
 {% hint style="warning" %}
 Als een of meer tests van de campagne geen eigenaar hebben, toont Dastra een waarschuwing en vraagt het u ze na te lopen voordat de uitnodigingen worden verstuurd. Met **Bekijk tests zonder eigenaren** vindt u ze terug.
@@ -127,9 +127,9 @@ In de lijst van de campagnes biedt het menu **⋯** van elke rij:
 * **Stuur een herinnering**: selecteer de eigenaren die nog tests moeten voltooien. Er wordt een standaardherinnering verstuurd, waaraan u een **Aangepast herinneringsbericht** kunt toevoegen;
 * **Sluit de campagne**: beëindigt de campagne; met **Heropen de campagne** zet u ze weer in uitvoering;
 * **Link kopiëren**: kopieert de link naar de campagne;
-* **Verplaats naar de prullenbak**: verwijdert de campagne uit de lijst. Met **Herstellen** brengt u ze terug, met **Verwijderen** verwijdert u ze definitief.
+* **Naar de prullenbak verplaatsen**: verwijdert de campagne uit de lijst. Met **Herstellen** brengt u ze terug, met **Verwijderen** verwijdert u ze definitief.
 
-**Details** opent het dashboard van de campagne: aantal tests, deelnemers en kaders, gevalideerde tests, **Voltooiingspercentage per gebruiker** (voltooide tests, tests in afwachting van validatie en nog te doen tests) en **Verdeling van tests per framework**.
+**Details** opent het dashboard van de campagne: aantal tests, deelnemers en kaders, gevalideerde tests, **Voltooiingspercentage per gebruiker** (voltooide tests, tests in afwachting van validatie en nog te doen tests) en **Verdeling van tests per kader**.
 
 ***
 

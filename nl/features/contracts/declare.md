@@ -12,7 +12,7 @@ Om een contract, een beleid of een ander document aan te maken, klikt u op **Een
 
 | Optie | Wat het doet |
 | --- | --- |
-| **Genereer een document** | Schrijft het document met AI op basis van uw instructie. |
+| **Maak uw document met AI** | Schrijft het document met AI op basis van uw instructie. |
 | **Importeer uw document** | Analyseert een bestaand bestand met AI en vult het dossier voor u in. |
 | **Gepersonaliseerd** | Maakt een leeg dossier aan dat u zelf invult. |
 | **Generate document** | Genereert het document op basis van een [dynamisch contractsjabloon](templates.md). |
@@ -22,7 +22,7 @@ De eerste twee opties vereisen de bijbehorende AI-functies. Als die niet in uw a
 ## Van nul beginnen
 
 1. Kies **Gepersonaliseerd**.
-2. Selecteer het **Type document**: contract, beleid, kennisgeving, procedure of anders.
+2. Selecteer het **Documenttype**: contract, beleid, kennisgeving, procedure of anders.
 3. Voer de **Documentnaam** in.
 4. Optioneel: voeg bestanden toe met **Add related files**. U kunt ze ook later toevoegen, zodra het document is aangemaakt.
 5. Kies het **Gebied**.
@@ -30,7 +30,7 @@ De eerste twee opties vereisen de bijbehorende AI-functies. Als die niet in uw a
 
 Dastra opent vervolgens het dossier van het document (zie [Structuur van een document](structure.md)).
 
-<figure><img src="../../.gitbook/assets/contracts-declare-2.png" alt="Het aanmaakformulier met de velden Type document, Documentnaam, Add related files en Gebied"><figcaption><p>Het formulier om een document aan te maken</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/contracts-declare-2.png" alt="Het aanmaakformulier met de velden Documenttype, Documentnaam, Add related files en Gebied"><figcaption><p>Het formulier om een document aan te maken</p></figcaption></figure>
 
 ## Een beleid schrijven in Dastra
 
@@ -40,17 +40,17 @@ Een document zonder bijlage toont een plaats om bestanden neer te zetten. U kunt
 
 ## Een document genereren met AI
 
-1. Kies **Genereer een document**.
+1. Kies **Maak uw document met AI**.
 2. Typ een korte beschrijving van het document dat u wilt genereren. U kunt **Bijlagen** of een **Website url** toevoegen als aanvullende documentatie.
-3. Klik op **Genereer** en controleer vervolgens het voorbeeld.
-4. Controleer de **Documentnaam** en de **Organisatie-eenheid** en klik vervolgens op **Valideren**.
+3. Klik op **Genereren** en controleer vervolgens het voorbeeld.
+4. Controleer de **Documentnaam** en de **Organisatorische eenheid** en klik vervolgens op **Valideren**.
 
 Het document wordt aangemaakt met het type **Beleid**. U kunt het type daarna wijzigen via het label naast de titel.
 
 ## Een bestaand document importeren
 
 1. Kies **Importeer uw document**.
-2. Kies de **Organisatie-eenheid**.
+2. Kies de **Organisatorische eenheid**.
 3. Zet een bestand neer (PDF, DOCX, TXT, Markdown, JPG of PNG).
 
 De analyse start zodra u het bestand neerzet. De AI-assistent van Dastra haalt de metagegevens uit het bestand (naam, beschrijving, labels, einddatum, aangepaste velden enzovoort), leidt het documenttype af en maakt het dossier aan met het bestand als bijlage. Controleer het dossier: de AI-analyse kan onjuist zijn.

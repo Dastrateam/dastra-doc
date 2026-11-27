@@ -13,7 +13,7 @@ Voor een goede weergaveprestatie wordt de Dastra-widget rechtstreeks in de pagin
 U kunt het uiterlijk van de banner met CSS-regels aanpassen.
 
 {% hint style="info" %}
-U kunt deze regels rechtstreeks invoeren in het veld **Aangepaste CSS** van de sectie **Uiterlijk van de widget** van de banner, zonder de stylesheet van uw site te wijzigen. Zie [De cookiebanner voor toestemming instellen](../banner/configure.md).
+U kunt deze regels rechtstreeks invoeren in het veld **Aangepaste CSS** van de sectie **Opmaak van de banner** van de banner, zonder de stylesheet van uw site te wijzigen. Zie [De cookiebanner voor toestemming instellen](../banner/configure.md).
 {% endhint %}
 
 Voorbeeld:

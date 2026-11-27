@@ -21,12 +21,12 @@ U moet de banner op uw website hebben geïnstalleerd.
 Zodra de banner is geïnstalleerd, verzamelt Dastra automatisch bewijs van toestemming van de bezoekers van uw website. U bekijkt het zo:
 
 1. Klik in het menu op **Toestemming voor cookies** > **Toestemmingen**.
-2. Gebruik de filters boven de lijst: de periode (standaard de laatste 7 dagen), de banner (**Alle widgets**) en, zodra u een banner hebt gekozen, de diensten waarvoor toestemming is gegeven.
+2. Gebruik de filters boven de lijst: de periode (standaard de laatste 7 dagen), de banner (**Alle banners**) en, zodra u een banner hebt gekozen, de diensten waarvoor toestemming is gegeven.
 3. Klik op een rij om het bewijs te openen.
 
 <figure><img src="../../../.gitbook/assets/cookies-consent-proof-1.png" alt="De lijst met toestemmingen met de filters voor periode en banner"><figcaption><p>De lijst met toestemmingen</p></figcaption></figure>
 
-Het bewijs van cookietoestemming toont de datum, het land, de afdruk van de toestemming en de lijst met diensten, elk gemarkeerd als **Ingestemd** of **Weigeren**. U kunt het afdrukken of verwijderen.
+Het bewijs van cookietoestemming toont de datum, het land, de afdruk van de toestemming en de lijst met diensten, elk gemarkeerd als **Toestemming gegeven** of **Weigeren**. U kunt het afdrukken of verwijderen.
 
 <figure><img src="../../../.gitbook/assets/cookies-consent-proof-2.png" alt="Het detail van een bewijs van toestemming"><figcaption><p>Het detail van een bewijs van toestemming</p></figcaption></figure>
 
@@ -43,11 +43,11 @@ Het verzamelen van bewijs hangt af van de optie **Bewijs van toestemming opslaan
 De pagina **Rapportage** volgt de activiteit van uw banners.
 
 1. Klik in het menu op **Toestemming voor cookies** > **Rapportage**. U kunt ook het menu van een banner in de lijst met banners openen en **Statistieken** kiezen.
-2. Kies de periode (standaard de laatste 7 dagen) en, indien nodig, een banner bij **Alle widgets**.
+2. Kies de periode (standaard de laatste 7 dagen) en, indien nodig, een banner bij **Alle banners**.
 
 Er worden drie grafieken getoond, elk vergeleken met de vorige periode:
 
-* **Verzamelde toestemmingen**: het aantal geregistreerde keuzes, met de indicatoren **Totaal**, **Volledige acceptatie**, **Gedeeltelijke aanvaarding** en **Volledige weigering**;
+* **Verzamelde toestemmingen**: het aantal geregistreerde keuzes, met de indicatoren **Totaal**, **Volledige acceptatie**, **Gedeeltelijke acceptatie** en **Volledige weigering**;
 * **Aantal weergaven van de widget**: het aantal sessies waarin de banner is getoond. De teller loopt één keer per sessie van een bezoeker op en een sessie duurt minstens een uur;
 * een derde grafiek (**Widget sluitingen**) telt hoe vaak een bezoeker de banner met het sluitkruis heeft gesloten.
 

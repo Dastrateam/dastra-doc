@@ -12,7 +12,7 @@ Zodra de antwoorden zijn verzameld en de vragenlijst is gevalideerd, exporteert 
 U kunt een export op meerdere plaatsen starten:
 
 * één reactie: open de reactie, klik op de pijl naast de hoofdknop en daarna op **Vragenlijst exporteren**;
-* meerdere reacties: selecteer in een lijst met reacties (**Alle audits**, **Mijn vragenlijsten** of het dashboard van een sjabloon) de rijen en gebruik de actie **Exporteren**;
+* meerdere reacties: selecteer in een lijst met reacties (**Alle audits**, **Mijn antwoorden** of het dashboard van een sjabloon) de rijen en gebruik de actie **Exporteren**;
 * alle reacties van een sjabloon: klik in het dashboard van het sjabloon op de pijl naast **Plan een audit** en daarna op **Exporteer reacties**.
 
 In het exportvenster kiest u een indeling en opties.
@@ -36,8 +36,8 @@ Boven de limiet van de indeling exporteert Dastra alleen de eerste items: beperk
 ### Opties
 
 * **Annotaties opnemen**: beschikbaar voor de indelingen PDF, Word en HTML;
-* **Een samenvatting opnemen**;
-* **Voeg bijlagen toe**.
+* **Inhoudsopgave opnemen**;
+* **Bijlagen opnemen**.
 
 Klik op **Bestand downloaden** om de export te starten. De beoordelingsopmerkingen van de goedkeurders staan in het rapport (zie [Een vragenlijst valideren](validate.md)).
 

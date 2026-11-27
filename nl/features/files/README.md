@@ -64,7 +64,7 @@ Deze functie is handig om een eerste versie op te stellen van een gegevensbesche
 
 ## Een map aanmaken
 
-Organiseer uw documenten in mappen zodat u ze kunt terugvinden. Klik op **Maak een map**, geef ze een naam en kies de locatie ervan: submappen worden ondersteund.
+Organiseer uw documenten in mappen zodat u ze kunt terugvinden. Klik op **Map aanmaken**, geef ze een naam en kies de locatie ervan: submappen worden ondersteund.
 
 <figure><img src="../../.gitbook/assets/files-3.png" alt="Het venster voor het aanmaken van een map"><figcaption><p>Het venster voor het aanmaken van een map</p></figcaption></figure>
 
@@ -76,7 +76,7 @@ U kunt de toegang tot mappen en bestanden beperken. Rechten gelden voor mappen e
 Standaard worden er geen beperkingen toegepast op de mappenstructuur. De machtigingen die aan de rollen van de gebruiker zijn gekoppeld, blijven wel van toepassing.
 {% endhint %}
 
-Klik op de rij van een map of een bestand op de knop **Element toegangsrechten** en voeg daarna de teams en gebruikers toe met het gewenste machtigingsniveau.
+Klik op de rij van een map of een bestand op de knop **Bestandstoegang** en voeg daarna de teams en gebruikers toe met het gewenste machtigingsniveau.
 
 <figure><img src="../../.gitbook/assets/files-4.png" alt="Het venster om de toegangsrechten van een map te beheren"><figcaption><p>Het venster voor de toegangsrechten</p></figcaption></figure>
 
@@ -92,15 +92,15 @@ Zijn er machtigingen gedefinieerd of geërfd op een element, dan is het verborge
 
 De bestanden die aan verwerkingsactiviteiten, activa, stakeholders en contracten zijn gekoppeld, kunnen in het bestandsbeheer worden opgeslagen, in een speciale map. Ze zijn dan zichtbaar voor alle gebruikers die bestanden mogen bekijken: u moet de toegang tot de mappen beheren.
 
-Om dit standaardgedrag te kiezen, klikt u op **Instellingen voor werkruimte** > **Algemeen** en schakelt u daarna in de kaart **Bestandsbeheer** de optie **Upload standaard bestanden in GED** in. Schakelt u de optie uit, dan blijven bestanden aan hun item gekoppeld en verschijnen ze niet in het bestandsbeheer, wat het beheer van de toegang eenvoudiger kan maken.
+Om dit standaardgedrag te kiezen, klikt u op **Instellingen van de werkruimte** > **Algemeen** en schakelt u daarna in de kaart **Bestandsbeheer** de optie **Bestanden standaard uploaden naar bestandsbeheer** in. Schakelt u de optie uit, dan blijven bestanden aan hun item gekoppeld en verschijnen ze niet in het bestandsbeheer, wat het beheer van de toegang eenvoudiger kan maken.
 
 <figure><img src="../../.gitbook/assets/files-5.png" alt="De kaart Bestandsbeheer in de algemene instellingen van de werkruimte"><figcaption><p>De optie om bestanden standaard te uploaden</p></figcaption></figure>
 
 Gebruikers die bestanden mogen beheren, hebben drie extra opdrachten:
 
 * **Bekijk bestanden die niet in bestandsbeheer staan**, in het menu **Filters** van het bestandsbeheer, toont de bestanden die er niet in zijn opgeslagen.
-* **Ga naar gemeenschappelijk bestandsbeheer** verplaatst een bestand naar het bestandsbeheer, in de map van uw keuze.
-* **Verwijderen uit algemeen bestandsbeheer** haalt het bestand uit het bestandsbeheer: het bestand blijft bewaard, maar andere gebruikers kunnen het niet meer vinden.
+* **Verplaatsen naar gemeenschappelijk bestandsbeheer** verplaatst een bestand naar het bestandsbeheer, in de map van uw keuze.
+* **Verwijderen uit gemeenschappelijk bestandsbeheer** haalt het bestand uit het bestandsbeheer: het bestand blijft bewaard, maar andere gebruikers kunnen het niet meer vinden.
 
 ## Cloudopslag
 

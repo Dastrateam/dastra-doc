@@ -26,7 +26,7 @@ Dastra bereidt het werk voor en volgt het. Het certificaat zelf wordt buiten Das
 Een kader bevat de vereisten, controles, tests, risico's en bedreigingen van een norm. Brightmoor begint met het Dastra-sjabloon.
 
 1. Open in het menu **Conformiteit** > **Bibliotheek** > **Kaders**.
-2. Klik op **Een framework aanmaken** en kies daarna **Ingebouwde sjabloon**.
+2. Klik op **Een kader aanmaken** en kies daarna **Ingebouwde sjabloon**.
 3. Zoek naar ISO 27001 en selecteer het sjabloon. Controleer in de details het aantal vereisten, controles, risico's en bedreigingen.
 4. Bevestig de import.
 
@@ -66,20 +66,20 @@ Voegt Brightmoor later een ander kader toe, zoals de AVG, dan detecteert Dastra 
 3. Configureer de tests. Stel voor elke test de procedure, de frequentie en de eigenaar in. Een test is handmatig, of geautomatiseerd via een connector (zie [Tests](../features/compliance/library/tests.md)).
 4. Beoordeel de risico's. Stel op het tabblad **Risico's** de initiële en de resterende beoordeling van elk risico in en kies de behandeling ervan. De weergave **Cartography** toont de initiële, huidige en resterende matrices naast elkaar.
 
-De checklist van de fase luidt **Configureer ten minste één controle**, **Configureer de geautomatiseerde tests**, **Evalueer alle risico's** en **Eigenaren toewijzen aan de tests**.
+De checklist van de fase luidt **Configureer ten minste één controle**, **Configureer de geautomatiseerde tests**, **Beoordeel uw risico's** en **Eigenaren toewijzen aan de tests**.
 
 ## 6. Fase Monitoring: het bewijs verzamelen
 
 Verplaats het project naar **Monitoring**. Bewijs dat in een andere fase wordt toegevoegd, geeft een waarschuwing.
 
 1. Open het tabblad **Testcampagnes** en klik op **Een testcampagne aanmaken**.
-2. Voer het **Campagne label** "First evidence collection" in en selecteer alle tests die op bewijs wachten.
+2. Voer het **Campagnelabel** "First evidence collection" in en selecteer alle tests die op bewijs wachten.
 3. Controleer of elke test een eigenaar heeft. Is dat niet zo, dan waarschuwt Dastra u: gebruik **Bekijk tests zonder eigenaren**.
 4. Start de campagne en klik op **Stuur de uitnodigingen** om de eigenaars te verwittigen, zo nodig met een bericht.
 
 Elke eigenaar opent **Mijn tests**, leest de **Testprocedure**, voegt het bewijs toe met **Bewijs toevoegen** en klikt op **Test valideren**. Hetzelfde bestand kan als bewijs voor meerdere tests dienen.
 
-Brightmoor volgt de indicatoren **Teststatus** en **Frisheid van de tests** op het overzicht. De checklist vraagt minstens 80% geslaagde tests vóór de volgende fase.
+Brightmoor volgt de indicatoren **Teststatus** en **Actualiteit van de tests** op het overzicht. De checklist vraagt minstens 80% geslaagde tests vóór de volgende fase.
 
 ISO/IEC 27001 vereist een verklaring van toepasselijkheid. Open op de kaderkaart het menu **⋯** en klik op **Exporteer de verklaring van toepasselijkheid**. Het XLSX-bestand toont elke controle met de toepasselijkheid, de motivering en de implementatiestatus ervan.
 
@@ -90,9 +90,9 @@ Verplaats het project naar **Interne audit**. ISO/IEC 27001 vereist interne audi
 1. Klik op het tabblad **Audits** op **Maak een nieuwe audit aan** en selecteer het kader ISO 27001.
 2. Voer de **Naam** "ISO 27001 internal audit" in, kies Sophie Becker bij **Auditeurs**, stel **Fase van de audit** in op **Pre-audit** en vul **Startdatum** en **Deadline** in.
 3. Laat **Definieer als actieve audit** ingeschakeld en klik daarna op **Valideren**.
-4. Klik op **Audit aanvullen** en beoordeel elke vereiste als **Conform**, **Deels conform**, **Niet conform** of **Niet van toepassing**, met een **Opmerking**.
-5. Is het bewijs van een test zwak, klik dan op **Fout melden**, kies de **Ernst** en beschrijf het probleem. Vink op het tabblad **Fouten in tests** de gemelde tests aan en klik op **De tests ongeldig maken** en daarna op **Re launch a test campaign**, zodat de eigenaars hun bewijs bijwerken.
-6. Is elke vereiste beoordeeld, klik dan op **Finaliseer de audit** en schrijf de **Eindbeoordeling van de audit**.
+4. Klik op **Audit invullen** en beoordeel elke vereiste als **Conform**, **Deels conform**, **Niet conform** of **Niet van toepassing**, met een **Opmerking**.
+5. Is het bewijs van een test zwak, klik dan op **Probleem melden**, kies de **Ernst** en beschrijf het probleem. Vink op het tabblad **Testbevindingen** de gemelde tests aan en klik op **Tests ongeldig maken** en daarna op **Re launch a test campaign**, zodat de eigenaars hun bewijs bijwerken.
+6. Is elke vereiste beoordeeld, klik dan op **Audit afronden** en schrijf de **Eindbeoordeling van de audit**.
 
 <figure><img src="../.gitbook/assets/examples-iso-2.png" alt="Dashboard van de interne ISO 27001-audit met de voortgang en het tabblad Fouten in tests"><figcaption><p>Het dashboard van de interne audit</p></figcaption></figure>
 

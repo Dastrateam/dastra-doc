@@ -9,7 +9,7 @@ description: >-
 
 Dastra koppelt aan de hulpmiddelen die uw teams al gebruiken: u importeert uw applicatie-inventaris uit uw ITAM of CMDB, synchroniseert verzoeken van betrokkenen met uw ticketingtool, plaatst meldingen in uw samenwerkingskanalen, stuurt uw beveiligingsauditlogs door naar uw SIEM of voegt bestanden toe vanuit uw clouddrives. Native connectoren dekken de meest gebruikte tools, Zapier dekt de rest.
 
-De integratiestore vindt u onder **Instellingen voor werkruimte** > **Integraties** in uw werkruimte. Ze toont alle beschikbare integraties, te filteren op categorie en op het Dastra-object waarop ze betrekking hebben, met de tabbladen **Alles** en **Geïnstalleerd**.
+De integratiestore vindt u onder **Instellingen van de werkruimte** > **Integraties** in uw werkruimte. Ze toont alle beschikbare integraties, te filteren op categorie en op het Dastra-object waarop ze betrekking hebben, met de tabbladen **Alles** en **Geïnstalleerd**.
 
 ### Hoe native integraties werken
 
@@ -61,9 +61,9 @@ Vooraf geconfigureerde sjablonen (Salesforce, Zoho, Trello, Google Sheets, Excel
 
 De Slack-integratie doet één ding: wanneer een gebruiker in een opmerking wordt genoemd met de syntaxis @gebruikersnaam, stuurt de Dastra-bot hem of haar een direct bericht op Slack. Het bericht toont wie de gebruiker heeft genoemd, de tekst van de opmerking en het type van het gekoppelde object, met een knop **Bekijk in Dastra**.
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en selecteer **Slack**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en selecteer **Slack**.
 2. Klik bij het gebruiksscenario voor vermeldingen op **Integratie toevoegen**.
-3. Kies in de stap **Verbinding** de optie **Voeg een verbinding toe** en klik daarna op **Opslaan en inloggen**. Dastra stuurt u door naar Slack om de applicatie in uw Slack-werkruimte te autoriseren.
+3. Kies in de stap **Verbinding** de optie **Voeg een verbinding toe** en klik daarna op **Opslaan en verbinden**. Dastra stuurt u door naar Slack om de applicatie in uw Slack-werkruimte te autoriseren.
 
 De verbinding volstaat: dit gebruiksscenario heeft geen configuratiestap. Dastra vraagt Slack om de machtigingen om berichten te sturen en om gebruikers en hun e-mailadres te lezen.
 
@@ -75,7 +75,7 @@ Dastra zoekt de Slack-gebruiker op via zijn of haar e-mailadres. Een gebruiker v
 
 De SIRENE (INSEE)-integratie bevraagt het Franse bedrijvenregister om de gegevens van een stakeholder aan te vullen. Ze wordt door Dastra beheerd: u hoeft geen inloggegevens in te voeren en ze geldt alleen voor bedrijven die in Frankrijk zijn geregistreerd.
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en selecteer **Sirene / Insee**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en selecteer **Sirene / Insee**.
 2. Klik op **Integratie toevoegen**. De integratie wordt meteen geactiveerd.
 
 In het formulier van een stakeholder van het type **Bedrijf** verschijnt daarna een zoekknop naast het veld **Naam van de organisatie** (**Zoeken in de SIRET-database**). Voer de bedrijfsnaam in, start de zoekopdracht en klik daarna op **Selecteer** naast het juiste bedrijf. Dastra vult de naam, het registratienummer (SIREN) en het postadres in.

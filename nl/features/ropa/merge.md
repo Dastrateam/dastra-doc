@@ -22,13 +22,13 @@ U kunt een samenvoeging op drie plaatsen starten:
 
 <figure><img src="../../.gitbook/assets/ropa-merge-1.png" alt="Optie Samenvoegen in het actiemenu van een verwerkingsactiviteit"><figcaption><p>De optie Samenvoegen in het actiemenu van een verwerkingsactiviteit</p></figcaption></figure>
 
-Start u vanuit één verwerkingsactiviteit, dan vraagt het venster **Samenvoeggereedschap** eerst met welke verwerkingsactiviteiten u ze wilt samenvoegen: selecteer ze bij **Selecteer de objecten waarmee je gegevens wilt samenvoegen** en klik op **Volgende**.
+Start u vanuit één verwerkingsactiviteit, dan vraagt het venster **Samenvoegtool** eerst met welke verwerkingsactiviteiten u ze wilt samenvoegen: selecteer ze bij **Selecteer de objecten waarmee u uw gegevens wilt samenvoegen** en klik op **Volgende**.
 
 <figure><img src="../../.gitbook/assets/ropa-merge-2.png" alt="Selectie van de verwerkingsactiviteiten om mee samen te voegen"><figcaption><p>De verwerkingsactiviteiten selecteren waarmee u samenvoegt</p></figcaption></figure>
 
 ## De te behouden waarden kiezen
 
-Het venster **Samenvoeggereedschap** vergelijkt de verwerkingsactiviteiten naast elkaar, met één kolom per verwerkingsactiviteit.
+Het venster **Samenvoegtool** vergelijkt de verwerkingsactiviteiten naast elkaar, met één kolom per verwerkingsactiviteit.
 
 1. Vink in de kop van haar kolom de te behouden verwerkingsactiviteit aan: ze wordt de **Reference version**. Ze behoudt haar identificatie en haar geschiedenis. De andere kolommen tonen het label **Keep selected fields**: deze verwerkingsactiviteiten worden verwijderd zodra de samenvoeging is bevestigd, en alleen de velden die u erin selecteert, worden overgenomen in de referentieversie.
 2. Selecteer voor elk veld met één waarde de kolom waarvan u de waarde wilt behouden.
@@ -45,7 +45,7 @@ Om de vergelijking te vergemakkelijken:
 
 Het deel **Linked objects kept** toont hoeveel risicobeoordelingen, taken en vragenlijstantwoorden aan de samengevoegde verwerkingsactiviteiten zijn gekoppeld. Ze worden automatisch aan de referentieversie gekoppeld, zodat niets wat aan de verwijderde verwerkingsactiviteiten was gekoppeld, verloren gaat.
 
-Zodra de samenvoeging is uitgevoerd, bevestigt een melding dit met een link **Object weergeven** om de referentieversie te openen.
+Zodra de samenvoeging is uitgevoerd, bevestigt een melding dit met een link **Item weergeven** om de referentieversie te openen.
 
 {% hint style="warning" %}
 De andere verwerkingsactiviteiten dan de referentieversie worden verwijderd zodra de samenvoeging is bevestigd, en dat kan niet ongedaan worden gemaakt. Controleer uw keuzes voordat u op **Samenvoegen** klikt en exporteer de verwerkingsactiviteiten vooraf als u een kopie van hun inhoud wilt bewaren.
@@ -53,7 +53,7 @@ De andere verwerkingsactiviteiten dan de referentieversie worden verwijderd zodr
 
 ## Duplicaten automatisch vinden
 
-Om verwerkingsactiviteiten te identificeren die waarschijnlijk duplicaten zijn, klikt u op de pijl naast de knop **Maak een gegevensverwerking** en daarna op **Gegevenskwaliteitsinstrument**. De gedetecteerde duplicaten staan in een lijst met een betrouwbaarheidsscore en u kunt ze vanaf daar samenvoegen.
+Om verwerkingsactiviteiten te identificeren die waarschijnlijk duplicaten zijn, klikt u op de pijl naast de knop **Verwerkingsactiviteit aanmaken** en daarna op **Tool voor gegevenskwaliteit**. De gedetecteerde duplicaten staan in een lijst met een betrouwbaarheidsscore en u kunt ze vanaf daar samenvoegen.
 
 {% content-ref url="../general/merge.md" %}
 [Elementen samenvoegen](../general/merge.md)

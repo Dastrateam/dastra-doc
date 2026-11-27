@@ -12,7 +12,7 @@ Deze weergave toont onder meer aan welke entiteiten en afdelingen uw verwerkings
 
 ## De boomstructuur van de verwerkingsactiviteiten weergeven
 
-Ga naar de module **Register voor gegevensverwerking**, klik op de pijl rechts van de knop **Tabel** en selecteer **Boomstructuur** om de boomstructuur van de verwerkingsactiviteiten te bekijken.
+Ga naar de module **Verwerkingsregister**, klik op de pijl rechts van de knop **Tabel** en selecteer **Boomstructuur** om de boomstructuur van de verwerkingsactiviteiten te bekijken.
 
 <figure><img src="../../../.gitbook/assets/ropa-tree-1.png" alt="Knop Tabel met het bijbehorende keuzemenu"><figcaption><p>Pijl rechts van de knop Tabel en keuzemenu</p></figcaption></figure>
 
@@ -25,7 +25,7 @@ Elke entiteit en afdeling wordt getoond met het aantal verwerkingsactiviteiten d
 Klik op een verwerkingsactiviteit om de details ervan te tonen. Via het actiemenu, dat verschijnt wanneer u over de rij beweegt, bewerkt, kopieert, exporteert of deelt u de activiteit, of verplaatst u die naar de prullenbak.
 
 {% hint style="info" %}
-Met de filters boven de boomstructuur past u de weergave aan uw behoeften aan. Gebruikers die de organisatie-eenheden beheren, kunnen via het actiemenu ook een eenheid bewerken of een onderliggende eenheid toevoegen, en **Maak een afdeling** gebruiken in het menu naast de knop **Maak een gegevensverwerking**.
+Met de filters boven de boomstructuur past u de weergave aan uw behoeften aan. Gebruikers die de organisatie-eenheden beheren, kunnen via het actiemenu ook een eenheid bewerken of een onderliggende eenheid toevoegen, en **Afdeling aanmaken** gebruiken in het menu naast de knop **Verwerkingsactiviteit aanmaken**.
 {% endhint %}
 
 ## Verder lezen

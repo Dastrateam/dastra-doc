@@ -8,7 +8,7 @@ description: >-
 
 Een autonome agent voert een taak van begin tot eind uit, zonder toezicht: een deel van het verwerkingsregister nalopen, een actieplan opstellen, een maandelijkse samenvatting maken.
 
-Ga naar **Instellingen voor werkruimte** > **AI agents**, klik op **Create agent** en daarna op **Auto Agent**.
+Ga naar **Instellingen van de werkruimte** > **AI agents**, klik op **Create agent** en daarna op **Auto Agent**.
 
 {% hint style="warning" %}
 Een autonome agent kan u niets vragen. De hulpmiddelen die interactie vereisen, zoals een vraag stellen, door de interface navigeren of om bevestiging vragen, zijn eruit verwijderd. De instructie moet dus elk geval dekken, ook wat te doen als informatie ontbreekt.
@@ -110,7 +110,7 @@ De agent start zelfstandig met de ingestelde frequentie. De standaardwaarden van
 
 ### 3. Vanuit een workflowregel
 
-In **Instellingen voor werkruimte** > **Regels voor de workflow** start de actie **Execute an AI agent** een agent vanuit een gebeurtenis op een record, zoals een fasewijziging, een aanmaak of een deadline.
+In **Instellingen van de werkruimte** > **Regels voor de workflow** start de actie **Execute an AI agent** een agent vanuit een gebeurtenis op een record, zoals een fasewijziging, een aanmaak of een deadline.
 
 Daar kiest u de agent, een bericht en de waarden van zijn invoervelden. Die waarden accepteren aangepaste variabelen die worden opgelost vanuit het record dat de regel heeft geactiveerd, zodat de agent bij elke uitvoering een andere context krijgt.
 

@@ -24,7 +24,7 @@ Wanneer het veld leeg is, kan een knop van de AI-assistent tags voorstellen op b
 
 ## De tags van de werkruimte beheren
 
-1. Klik in de zijbalk op **Instellingen voor werkruimte**.
+1. Klik in de zijbalk op **Instellingen van de werkruimte**.
 2. Klik in de sectie **Proces** op **Labels**.
 3. Kies het objecttype waarvan u de tags wilt beheren.
 
@@ -32,9 +32,9 @@ Wanneer het veld leeg is, kan een knop van de AI-assistent tags voorstellen op b
 
 Op deze pagina kunt u:
 
-* op **Maak een tag** klikken, het **Label-label** invullen en de **Kleur** kiezen;
-* op de pijl van de knop klikken om **Maak vanuit de bibliotheek** te kiezen, tags te **Importeren** uit een bestand (zie [Gegevens importeren](import.md)) of de lijst als CSV, XLSX, JSON of Markdown te **Exporteren**;
-* het menu van een tag openen om **Tag bewerken**, de tag te **Verwijderen** of op **Gelinkte objecten** te klikken, wat de lijst opent van de elementen die deze tag dragen;
+* op **Tag aanmaken** klikken, de **Tagnaam** invullen en de **Kleur** kiezen;
+* op de pijl van de knop klikken om **Aanmaken vanuit de bibliotheek...** te kiezen, tags te **Importeren** uit een bestand (zie [Gegevens importeren](import.md)) of de lijst als CSV, XLSX, JSON of Markdown te **Exporteren**;
+* het menu van een tag openen om **Tag bewerken**, de tag te **Verwijderen** of op **Gekoppelde objecten** te klikken, wat de lijst opent van de elementen die deze tag dragen;
 * meerdere tags selecteren en daarna **Kies een bulkactie** > **Verwijderen** kiezen.
 
 Vanuit een veld **Labels** opent de link **Tagbeheer** onderaan de lijst dezelfde lijst, beperkt tot het objecttype van het formulier.

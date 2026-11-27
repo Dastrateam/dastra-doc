@@ -30,11 +30,11 @@ Elk objecttype heeft zijn eigen set configureerbare stappen:
 * AI-systemen
 * Contracten
 
-Elke stap is gekoppeld aan een **Interne werkstroomfase** die afhangt van het objecttype. Voor een verwerkingsactiviteit zijn de statussen bijvoorbeeld "concept" en "gepubliceerd".
+Elke stap is gekoppeld aan een **Interne status** die afhangt van het objecttype. Voor een verwerkingsactiviteit zijn de statussen bijvoorbeeld "concept" en "gepubliceerd".
 
 ## Workflowstappen aanpassen
 
-Klik in het zijmenu op **Instellingen voor werkruimte** en klik daarna in het gedeelte **Proces** op **Processtroom**. Deze pagina is voorbehouden aan gebruikers die geavanceerde instellingen mogen beheren.
+Klik in het zijmenu op **Instellingen van de werkruimte** en klik daarna in het gedeelte **Proces** op **Processtroom**. Deze pagina is voorbehouden aan gebruikers die geavanceerde instellingen mogen beheren.
 
 <figure><img src="../../.gitbook/assets/settings-workflow-stages-1.png" alt="Het menu Instellingen voor werkruimte met de vermelding Processtroom"><figcaption><p>De vermelding Processtroom in de instellingen voor de werkruimte</p></figcaption></figure>
 

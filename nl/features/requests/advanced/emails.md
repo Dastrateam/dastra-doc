@@ -10,11 +10,11 @@ U kunt:
 
 ## Een taal toevoegen en de teksten aanpassen
 
-1. Open in de instellingen voor de werkruimte, onder **Proces**, het onderdeel **Verzoeken tot uitoefening van rechten**.
+1. Open in de instellingen voor de werkruimte, onder **Proces**, het onderdeel **Verzoeken van betrokkenen**.
 2. Open de sectie **Teksten en vertalingen van de notificatie-e-mails**.
 3. Kies een taal in de lijst **Voeg een taal toe**.
 4. Klik naast de taal op **Bewerken** en pas daarna de onderwerpen en teksten aan.
-5. Open de e-mail die u wilt aanpassen (**Koptekst en voettekst**, **E-mail ter bevestiging van de identiteit om de aanvraag te registreren**, **Bevestigingse-mail**, **E-mail met de toegangscode voor de aanvragersruimte**, **E-mailnotificatie van een nieuw bericht** of **Aanvraag e-mail sluiten**), vervang de standaardwaarden die onder elk veldlabel staan en klik op **Opslaan**.
+5. Open de e-mail die u wilt aanpassen (**Koptekst en voettekst**, **E-mail ter bevestiging van de identiteit om de aanvraag te registreren**, **Bevestigingse-mail**, **E-mail met de toegangscode voor de aanvragersruimte**, **E-mailnotificatie van een nieuw bericht** of **E-mail bij afgesloten verzoek**), vervang de standaardwaarden die onder elk veldlabel staan en klik op **Opslaan**.
 
 <figure><img src="../../../.gitbook/assets/requests-emails-1.png" alt="De sectie Teksten en vertalingen van de notificatie-e-mails met de lijst met talen"><figcaption><p>Aangepaste talen</p></figcaption></figure>
 

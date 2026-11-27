@@ -13,12 +13,12 @@ De vragenlijst vult vier velden in: de naam, het risiconiveau, de rollen van Bri
 
 ## 1. Het aangepaste veld aanmaken
 
-Kies in **Instellingen voor werkruimte** > **Aangepaste velden** de module van de AI-systemen en maak een tekstveld aan met het label "Business owner". Open het veld en lees de **Naam van de variabele (slug)**: `business_owner`. Die is na het aanmaken alleen-lezen. Zie [Aangepaste velden](../features/general/custom-fields.md).
+Kies in **Instellingen van de werkruimte** > **Aangepaste velden** de module van de AI-systemen en maak een tekstveld aan met het label "Business owner". Open het veld en lees de **Naam van de variabele (slug)**: `business_owner`. Die is na het aanmaken alleen-lezen. Zie [Aangepaste velden](../features/general/custom-fields.md).
 
 ## 2. Het sjabloon aanmaken
 
 1. Maak in **Vragenlijsten** een aangepast sjabloon met de naam "AI Act intake" aan.
-2. Stel **Type audit** in op **Creatie van een AI-systeem**. Het type draagt het gegevensmodel van een AI-systeem.
+2. Stel **Type audit** in op **Aanmaken van een AI-systeem**. Het type draagt het gegevensmodel van een AI-systeem.
 3. Stel **Gerelateerd aan** in op AI-systemen, zodat elk antwoord aan een AI-systeem kan worden gekoppeld.
 
 ## 3. De vragen toevoegen
@@ -27,9 +27,9 @@ Open voor elke onderstaande vraag de eigenschappen van de vraag, vink **Wilt u d
 
 | Vraag | Type vraag | Naam van de variabele | Hoe ze wordt ingesteld |
 | --- | --- | --- | --- |
-| Name of the AI system | Korte tekst | `label` | **Selecteer een variabele om in kaart te brengen** en daarna de rij `label` |
-| What is the risk level of this AI system? | Selectievakjeslijst (slechts één antwoord) | `riskLevel` | **Selecteer een variabele om in kaart te brengen** en daarna de rij `riskLevel` |
-| What is the role of Brightmoor? | Lijst op maat | `responsibilities` | **Selecteer een variabele om in kaart te brengen** en daarna de rij `responsibilities` |
+| Name of the AI system | Korte tekst | `label` | **Selecteer een variabele om te koppelen** en daarna de rij `label` |
+| What is the risk level of this AI system? | Selectievakjeslijst (slechts één antwoord) | `riskLevel` | **Selecteer een variabele om te koppelen** en daarna de rij `riskLevel` |
+| What is the role of Brightmoor? | Lijst op maat | `responsibilities` | **Selecteer een variabele om te koppelen** en daarna de rij `responsibilities` |
 | Role (subvraag van de lijst) | Selectievakjeslijst (slechts één antwoord) | `responsibilityType` | Met de hand getypt |
 | Who owns this AI system in the business? | Korte tekst | `custom_business_owner` | Met de hand getypt: `custom_` en de technische naam |
 
@@ -51,9 +51,9 @@ Sla het sjabloon op.
 
 ## 5. De antwoorden samenvoegen in het AI-systeem
 
-Omdat het antwoord aan een bestaand AI-systeem is gekoppeld, ziet de eigenaar ervan de knop **Gegevens samenvoegen**.
+Omdat het antwoord aan een bestaand AI-systeem is gekoppeld, ziet de eigenaar ervan de knop **Samenvoegverzoek**.
 
-1. Klik op **Gegevens samenvoegen**. Het voorbeeld toont het AI-systeem dat uit de antwoorden is opgebouwd. Kies de **Organisatie-eenheid** en klik op **Bestaande maken en samenvoegen**.
+1. Klik op **Samenvoegverzoek**. Het voorbeeld toont het AI-systeem dat uit de antwoorden is opgebouwd. Kies de **Organisatorische eenheid** en klik op **Aanmaken en samenvoegen**.
 2. Vergelijk in het samenvoegvenster het bestaande AI-systeem met het tijdelijke, met het label "CV screening assistant (From Questionnaire)". Behoud de waarden van de vragenlijst voor `riskLevel`, de rollen en het aangepaste veld en behoud de bestaande waarden voor de rest.
 3. Bevestig het samenvoegen.
 
@@ -65,6 +65,6 @@ Omdat het antwoord aan een bestaand AI-systeem is gekoppeld, ziet de eigenaar er
 
 Het AI-systeem bevat nu de antwoorden. Vóór stap 3 is niets gewijzigd: de antwoorden werken nooit zelf een record bij.
 
-Bestond het AI-systeem niet, dan zou het antwoord geen gekoppeld record hebben. De knop zou **Aanmaak verzoek** heten en **Creëren** zou het AI-systeem aan het register toevoegen.
+Bestond het AI-systeem niet, dan zou het antwoord geen gekoppeld record hebben. De knop zou **Aanmaakverzoek** heten en **Aanmaken** zou het AI-systeem aan het register toevoegen.
 
 <figure><img src="../.gitbook/assets/examples-questionnaire-2.png" alt="Pagina van de samenvoegaanvraag met het voorbeeld van het AI-systeem en de knop Bestaande maken en samenvoegen"><figcaption><p>De samenvoegaanvraag van een antwoord</p></figcaption></figure>

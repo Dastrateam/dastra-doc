@@ -14,7 +14,7 @@ In Dastra voert u het bericht in bij de stap **Bijlagen** van het dossier van he
 
 Ga als volgt te werk bij de stap **Bijlagen**:
 
-1. Antwoord **Ja** of **Neen** op de vraag **Heeft u een informatiebrief geschreven?**
+1. Antwoord **Ja** of **Nee** op de vraag **Heeft u een informatiebericht opgesteld?**
 2. Schrijf het bericht in de editor, onder de knop **Genereer uw informatiebericht**. U kunt het rechtstreeks typen of plakken uit een ander document.
 3. Voeg in het bijlagengebied de documenten toe die aan het systeem zijn gekoppeld: het bericht als PDF- of Wordbestand, technische handleidingen, nalevingsbeoordelingen.
 4. Sla het dossier op.
@@ -27,8 +27,8 @@ De AI-assistent stelt een bericht op vanuit de informatie in het dossier. De fun
 
 1. Klik op **Genereer uw informatiebericht** bij de stap **Bijlagen**. U kunt ook het menu van de knop **Opslaan** openen en op **Informatiebericht genereren** klikken.
 2. Kies in de lijst **Selecteer een snelle instructie** de vorm van het bericht: **Standaard**, **Lange versie**, **Compact**, **Eenvoudig** of **Aangepast**. Voer bij **Aangepast** uw instructies in het veld **Geef aangepaste instructies aan het model** in (maximaal 300 tekens).
-3. Kies de **Taal van de kennisgeving**.
-4. Klik op **Genereer** en controleer daarna het voorgestelde bericht.
+3. Kies de **Taal van de privacyverklaring**.
+4. Klik op **Genereren** en controleer daarna het voorgestelde bericht.
 
 <figure><img src="../../.gitbook/assets/ai-systems-notice-2.png" alt="Venster Informatiebericht genereren met de snelle instructies en de taal van het bericht"><figcaption><p>Het venster om het bericht te genereren</p></figcaption></figure>
 
@@ -40,4 +40,4 @@ Klik in het generatievenster op **Exporteren** en kies het formaat: PDF, HTML, W
 
 <figure><img src="../../.gitbook/assets/systemes-dia-notice-export-attachments-option.png" alt="Exportvenster van het transparantiebericht met de optie om het bestand aan de bijlagen toe te voegen"><figcaption><p>Het geëxporteerde bericht toevoegen aan de bijlagen van het AI-systeem</p></figcaption></figure>
 
-Om het bericht te exporteren dat u in de editor van de stap **Bijlagen** hebt getypt, opent u het menu van de knop **Opslaan** en klikt u op **Kennisgeving exportinformatie**. Deze actie verschijnt wanneer het dossier een opgeslagen bericht bevat. Het bestand wordt gedownload zonder aan de bijlagen te worden toegevoegd.
+Om het bericht te exporteren dat u in de editor van de stap **Bijlagen** hebt getypt, opent u het menu van de knop **Opslaan** en klikt u op **Informatie over de export**. Deze actie verschijnt wanneer het dossier een opgeslagen bericht bevat. Het bestand wordt gedownload zonder aan de bijlagen te worden toegevoegd.

@@ -11,7 +11,7 @@ U kunt het hele incidentenregister, een selectie incidenten of één incident ex
 ## Het register exporteren
 
 1. Open **Operations** > **Incidenten** > **Incidentenregister**. Pas filters toe als u maar een deel van het register wilt exporteren: de export gebruikt de actieve filters.
-2. Klik op de pijl rechts van de knop **Een datalek toevoegen** en daarna op **Exporteren**.
+2. Klik op de pijl rechts van de knop **Een incident aanmaken** en daarna op **Exporteren**.
 
    <figure><img src="../../.gitbook/assets/incidents-export-1.png" alt="Menu van de knop Een datalek toevoegen met de items Importeren, Exporteren, Delen en Lees de documentatie"><figcaption><p>Het menu van de knop Een datalek toevoegen, met het item Exporteren</p></figcaption></figure>
 3. Selecteer in het venster dat opent onder **Kies het gewenste exportformaat** PDF, Word, HTML, Excel, CSV, JSON of Markdown.
@@ -23,8 +23,8 @@ Het item **Exporteren** is grijs wanneer het register leeg is of wanneer uw rol 
 
 ## Opties per formaat
 
-* **Een samenvatting opnemen** voor de formaten PDF, Word, HTML en Markdown.
-* **Native kolomnamen gebruiken (handig voor het importeren van gegevens)** en **Specifieke kolommen exporteren** voor de formaten CSV en Excel. Met native kolomnamen kunt u het bestand opnieuw importeren: zie [Uw gegevens importeren (Excel, CSV)](../general/import.md).
+* **Inhoudsopgave opnemen** voor de formaten PDF, Word, HTML en Markdown.
+* **Native kolomnamen of rapporten gebruiken (aanbevolen voor het importeren van gegevens)** en **Aangepaste velden exporteren** voor de formaten CSV en Excel. Met native kolomnamen kunt u het bestand opnieuw importeren: zie [Uw gegevens importeren (Excel, CSV)](../general/import.md).
 
 PDF-, Word- en HTML-exports bevatten maximaal 500 incidenten en CSV-, Excel-, JSON- en Markdown-exports maximaal 10.000. Is uw selectie groter, dan waarschuwt het venster u dat alleen de eerste items worden geëxporteerd.
 

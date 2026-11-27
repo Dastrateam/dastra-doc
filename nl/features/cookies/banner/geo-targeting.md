@@ -41,8 +41,8 @@ Kies bij **Landen of geografische regio's waarop de banner zich richt** de lande
 
 Dastra biedt twee snelkeuzes onder **Voorselecteren**:
 
-* **EU/EEE**: selecteert alle landen van de Europese Economische Ruimte.
-* **Allemaal adequaat land**: selecteert de landen die de Europese Commissie krachtens artikel 45 van de AVG als adequaat erkent.
+* **EU/EER**: selecteert alle landen van de Europese Economische Ruimte.
+* **Alle landen met een passend beschermingsniveau**: selecteert de landen die de Europese Commissie krachtens artikel 45 van de AVG als adequaat erkent.
 
 De lijst is per land georganiseerd en u kunt ook regio's binnen een land als doel kiezen (bijvoorbeeld Franse regio's of Amerikaanse staten). Zo maakt u bijvoorbeeld een variant die alleen voor Californië geldt, binnen een algemenere banner voor de Verenigde Staten.
 
@@ -56,7 +56,7 @@ Kunnen meerdere varianten op dezelfde gebruiker van toepassing zijn (bijvoorbeel
 
 Zodra de variant is aangemaakt, opent ze in de editor. U kunt het volgende aanpassen:
 
-* **Uiterlijk van de widget**: kleuren, indeling, knoppen;
+* **Opmaak van de banner**: kleuren, indeling, knoppen;
 * **Teksten en vertalingen**: teksten die aan de lokale juridische context zijn aangepast;
 * **Diensten**: u beperkt of breidt de lijst van getoonde trackers uit;
 * **Triggers**: weergavevoorwaarden die specifiek zijn voor de variant.

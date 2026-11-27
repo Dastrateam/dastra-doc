@@ -21,7 +21,7 @@ Ontbreekt een van beide, dan verschijnt het item niet of wordt een toegangsfout 
 * Een rol waarbij geen enkele machtiging is aangevinkt, geeft nergens toegang toe.
 * Een gebruiker kan meerdere rollen hebben.
 
-Controleer bij **Instellingen voor werkruimte** > **Gebruikers** (van de betreffende werkruimte) welke rollen zijn toegewezen en controleer daarna bij **Instelling van de organisatie** > **Rollen en machtigingen** of de module minstens de machtiging **Lezing** heeft. Zie [Rollen en machtigingen](../../features/settings/roles.md).
+Controleer bij **Instellingen van de werkruimte** > **Gebruikers** (van de betreffende werkruimte) welke rollen zijn toegewezen en controleer daarna bij **Configuratie van de organisatie** > **Rollen en machtigingen** of de module minstens de machtiging **Lezen** heeft. Zie [Rollen en machtigingen](../../features/settings/roles.md).
 
 {% hint style="info" %}
 De machtiging **Read/Edit your own items** geeft alleen toegang tot items die aan de gebruiker zijn toegewezen, niet tot alle items van de module.
@@ -37,7 +37,7 @@ De regels zijn:
 * Zodra u machtigingen instelt op een eenheid (toegestane gebruikers of teams), hebben alleen de vermelde gebruikers en de leden van vermelde teams er toegang toe.
 * Onderliggende eenheden erven de machtigingen van hun bovenliggende eenheid (weergegeven als "Geërfd") zolang ze er zelf geen hebben. Stelt een onderliggende eenheid eigen machtigingen in, dan vervangen die die van de bovenliggende eenheid.
 
-Om deze regels te bekijken of te wijzigen, opent u **Instellingen voor werkruimte** > **Organisatorische eenheden** en kiest u in het menu van de betreffende eenheid **Machtigingen instellen voor**. Deze actie is beperkt tot gebruikers met het recht voor geavanceerd beheer.
+Om deze regels te bekijken of te wijzigen, opent u **Instellingen van de werkruimte** > **Organisatorische eenheden** en kiest u in het menu van de betreffende eenheid **Machtigingen instellen voor**. Deze actie is beperkt tot gebruikers met het recht voor geavanceerd beheer.
 
 {% hint style="warning" %}
 Een vaak voorkomende oorzaak: er is een team toegevoegd aan een bovenliggende eenheid en de gebruiker behoort niet tot dat team. Die verliest dan de toegang tot alle onderliggende eenheden die geen eigen machtigingen hebben. Controleer tot welke [teams](teams.md) de gebruiker behoort.
@@ -47,7 +47,7 @@ Een vaak voorkomende oorzaak: er is een team toegevoegd aan een bovenliggende ee
 
 | Symptoom | Wat u controleert |
 |---|---|
-| Geen verwerkingsactiviteit zichtbaar, of een tabblad ontbreekt | Is in deze werkruimte een rol met de machtiging **Lezing** van de module toegewezen? |
+| Geen verwerkingsactiviteit zichtbaar, of een tabblad ontbreekt | Is in deze werkruimte een rol met de machtiging **Lezen** van de module toegewezen? |
 | Slechts enkele verwerkingsactiviteiten zijn zichtbaar | Toegang tot de organisatorische eenheid, overerving van de bovenliggende eenheid, lidmaatschap van teams |
 | Een collega met dezelfde rol ziet meer items | Die behoort waarschijnlijk tot een team dat op de eenheid is toegestaan, en u niet |
 | De knop Opslaan is grijs | Ontbrekende machtiging **Schrijven** (of **Create** voor een nieuw item) |

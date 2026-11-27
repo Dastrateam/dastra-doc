@@ -16,7 +16,7 @@ Dastra biedt een LIA-sjabloon in de bibliotheek van vragenlijsten:
 
 * **Legitimate interests assessment (LIA)**: 26 vragen, opgebouwd rond de driedelige toets
 
-Ga ernaartoe via het tabblad **Vraagmodellen**, klik op **Maak een sjabloon**, kies **Geautomatiseerde audit** en zoek op "LIA".
+Ga ernaartoe via het tabblad **Vragenlijstsjablonen**, klik op **Maak een sjabloon**, kies **Geautomatiseerde audit** en zoek op "LIA".
 
 ## Structuur van een LIA-vragenlijst
 
@@ -32,7 +32,7 @@ Bij het bewerken van een verwerkingsactiviteit in Dastra kunt u een LIA rechtstr
 
 1. Ga naar de sectie **Doeleinden** van de verwerkingsactiviteit
 2. Open een doeleinde met het gerechtvaardigd belang als wettelijke basis
-3. Klik op **Evalueer de legitieme belangen (LIA)**
+3. Klik op **Beoordeling van gerechtvaardigde belangen (LIA) aanmaken**
 
 Daarmee wordt het LIA-antwoord automatisch gekoppeld aan het betreffende doeleinde.
 

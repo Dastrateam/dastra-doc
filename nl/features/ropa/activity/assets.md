@@ -20,8 +20,8 @@ NB: activa zijn niet noodzakelijk gekoppeld aan verwerkers. Het kan bijvoorbeeld
 
 ## Activa aan de verwerkingsactiviteit koppelen
 
-1. Klik in de sectie **Activa** op **Activa selecteren**.
-2. Zoek de te koppelen activa en selecteer ze. Bestaat een activum nog niet, klik dan op **Een app toevoegen** om het aan te maken.
+1. Klik in de sectie **Activa** op **Activum koppelen**.
+2. Zoek de te koppelen activa en selecteer ze. Bestaat een activum nog niet, klik dan op **Activum toevoegen** om het aan te maken.
 
 De gekoppelde activa staan in een tabel. Voor elk activum kunt u:
 
@@ -33,14 +33,14 @@ De gekoppelde activa staan in een tabel. Voor elk activum kunt u:
 
 Een activum kan al zijn gedocumenteerd in uw datamapping, met zijn uitgever, zijn datasets en zijn beveiligingsmaatregelen. In plaats van die informatie opnieuw in te voeren, kopieert u ze naar de verwerkingsactiviteit.
 
-1. Klik op de rij van het activum op **Gegevens synchroniseren**. Het venster **Informatie over bedrijfsmiddelen synchroniseren** toont de elementen die aan de verwerkingsactiviteit zouden worden toegevoegd:
-   * **Redacteur van de aanvraag om een verwerker toe te voegen**, met zijn doorgifteland of -landen;
-   * **Datasets die aan het item zijn gekoppeld**;
+1. Klik op de rij van het activum op **Gegevens synchroniseren**. Het venster **Gegevens van het activum synchroniseren met de verwerking** toont de elementen die aan de verwerkingsactiviteit zouden worden toegevoegd:
+   * **Uitgever van het activum om als verwerker toe te voegen**, met zijn doorgifteland of -landen;
+   * **Dataset gekoppeld aan dit activum**;
    * **Categorieën van betrokkenen (gekoppeld aan datasets)** van de geselecteerde datasets;
    * de beveiligingsmaatregelen van het activum.
 2. Selecteer de toe te voegen elementen, of vink **Alles selecteren** aan.
 3. Klik op **Toevoegen**.
 
-De geselecteerde elementen worden toegevoegd aan de overeenkomstige secties van de verwerkingsactiviteit: de uitgever wordt een ontvanger van de categorie **Verwerkers** in de sectie **Ontvangers**, de datasets komen in de sectie **Gegevens**, de categorieën van betrokkenen in de sectie **Betrokken personen** en de beveiligingsmaatregelen in de sectie **Maatregelen**. Is er een land ingesteld voor het activum of voor zijn uitgever, dan wordt ook een doorgifte naar dat land aan de ontvanger toegevoegd: controleer die in de sectie **Ontvangers**.
+De geselecteerde elementen worden toegevoegd aan de overeenkomstige secties van de verwerkingsactiviteit: de uitgever wordt een ontvanger van de categorie **Verwerkers** in de sectie **Ontvangers**, de datasets komen in de sectie **Gegevens**, de categorieën van betrokkenen in de sectie **Betrokkenen** en de beveiligingsmaatregelen in de sectie **Maatregelen**. Is er een land ingesteld voor het activum of voor zijn uitgever, dan wordt ook een doorgifte naar dat land aan de ontvanger toegevoegd: controleer die in de sectie **Ontvangers**.
 
 De rij van het activum toont of de gegevens **Gesynchroniseerd** of **Niet gesynchroniseerd** zijn, of wanneer ze voor het laatst zijn gesynchroniseerd als het activum sindsdien is gewijzigd.

@@ -11,7 +11,7 @@ In uw werkruimte blijven twee zwevende knoppen rechtsonder in beeld staan.
 
 ## De ondersteuningschat
 
-De knop met een spraakbelpictogram (**Praat met ons in de chat**) opent de ondersteuningschat. U praat met uw Privacy Success Manager over het gebruik van het platform en de werking van de functies. Dezelfde chat is beschikbaar via het item **Hulpmiddelen** van het profielmenu (rechtsboven). Zie [Ondersteuning aanvragen](request.md).
+De knop met een spraakbelpictogram (**Chat met ons**) opent de ondersteuningschat. U praat met uw Privacy Success Manager over het gebruik van het platform en de werking van de functies. Dezelfde chat is beschikbaar via het item **Help** van het profielmenu (rechtsboven). Zie [Ondersteuning aanvragen](request.md).
 
 ## De AI-agent
 

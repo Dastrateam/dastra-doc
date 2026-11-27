@@ -47,7 +47,7 @@ In sommige gevallen moet u bepaalde tags uitschakelen als er geen toestemming is
 In dat geval moet u bepaalde instellingen configureren om **de toestemmingswaarde die in de toestemmingscookie is opgeslagen** rechtstreeks uit te lezen.
 
 {% hint style="info" %}
-Deze methode werkt alleen met cookieopslag: ze is niet geschikt als de optie **LocalStorage inschakelen voor cookies op basis van toestemming** is ingeschakeld. Hebt u in **Naam van de cookie voor de opslag van toestemming (standaard 'consent-eu')** een eigen cookienaam ingesteld, gebruik die dan in de variabele.
+Deze methode werkt alleen met cookieopslag: ze is niet geschikt als de optie **localStorage inschakelen voor het opslaan van toestemmingscookies** is ingeschakeld. Hebt u in **Naam van de cookie voor de opslag van toestemming (standaard 'consent-eu')** een eigen cookienaam ingesteld, gebruik die dan in de variabele.
 {% endhint %}
 
 ### 1. Een variabele DastraConsents aanmaken

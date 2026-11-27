@@ -13,7 +13,7 @@ In deze ruimte kan de aanvrager:
 
 Deze ruimte zorgt voor traceerbaarheid, opvolging en transparantie van de uitwisselingen en voorkomt onbeveiligde gewone e-mail. Nadat het verzoek is gesloten, houdt de aanvrager nog beperkte tijd toegang tot de ruimte: zie de [veelgestelde vragen](../faq.md).
 
-Open om de toegangslink naar de ruimte van een verzoek op te halen het menu **Acties** van het verzoek en klik op **Kopieer de link naar de portaltoegang van de betrokkene**.
+Open om de toegangslink naar de ruimte van een verzoek op te halen het menu **Acties** van het verzoek en klik op **Toegangslink naar de verzoekruimte kopiëren**.
 
 {% hint style="warning" %}
 Gezondheidsgegevens: Dastra is niet HDS-gecertificeerd (de Franse certificering voor het hosten van gezondheidsgegevens), maar onze hostingpartij, Microsoft Azure, wel. Bevatten documenten die via de interface worden verstuurd (door de aanvrager of door uw organisatie) gezondheidsgegevens, controleer dan of dit gebruik verenigbaar is met uw eigen verplichtingen.

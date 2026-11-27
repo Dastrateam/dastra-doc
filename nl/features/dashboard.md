@@ -12,8 +12,8 @@ Het dashboard is de eerste pagina die u ziet wanneer u een werkruimte binnengaat
 
 Het scherm heeft drie gebieden:
 
-* **Het linkermenu**: de keuzelijst voor de werkruimte, die ook uw rollen in de werkruimte toont, en daaronder de modules gegroepeerd onder **Data inventory**, **Operations**, **Governance**, **Automations** en **Resources**. De knop **Invite a member** en het item **Instellingen voor werkruimte** staan onderaan het menu. Een module verschijnt alleen als uw abonnement ze omvat en uw rechten u er toegang toe geven.
-* **Het middelste gedeelte**: boven de tegels vindt u, afhankelijk van uw rechten en abonnement, de prompt van de AI-agent (**How can I help you today?**), de kaart met de laatste release note, de kaart **Handleiding om aan de slag te gaan** (de handleiding om aan de slag te gaan) en de **Project presentatie**, een vrije tekst die de werkruimte aan de gebruikers voorstelt.
+* **Het linkermenu**: de keuzelijst voor de werkruimte, die ook uw rollen in de werkruimte toont, en daaronder de modules gegroepeerd onder **Data inventory**, **Operations**, **Governance**, **Automations** en **Resources**. De knop **Invite a member** en het item **Instellingen van de werkruimte** staan onderaan het menu. Een module verschijnt alleen als uw abonnement ze omvat en uw rechten u er toegang toe geven.
+* **Het middelste gedeelte**: boven de tegels vindt u, afhankelijk van uw rechten en abonnement, de prompt van de AI-agent (**How can I help you today?**), de kaart met de laatste release note, de kaart **Handleiding om aan de slag te gaan** (de handleiding om aan de slag te gaan) en de **Projectpresentatie**, een vrije tekst die de werkruimte aan de gebruikers voorstelt.
 * **Het gemeenschapstabblad**, rechts van het scherm: het opent het paneel **Aankomende webinars**. U kunt het paneel inklappen; het tabblad blijft dan rechts van het scherm staan om het opnieuw te openen, en uw keuze wordt onthouden in uw browser.
 
 <figure><img src="../.gitbook/assets/dashboard-1.png" alt="Het dashboard met het linkermenu, de kaart met de release note, de handleiding om aan de slag te gaan en de tegels"><figcaption><p>Het dashboard van een werkruimte</p></figcaption></figure>
@@ -22,11 +22,11 @@ Het scherm heeft drie gebieden:
 
 De tegels vatten de activiteit van elke module samen. Standaard verschijnen ze in deze volgorde, voor de modules waartoe u toegang hebt:
 
-* **Gegevensverwerking**
+* **Verwerkingsregister**
 * **Conformiteit**
 * **Nieuws**
 * **Taken**
-* **Oefeningen over rechten van betrokkenen**
+* **Verzoeken van de afgelopen 90 dagen**
 * **Laatste incidenten**
 * **Contracten en beleidslijnen**
 * **AI-systemen**
@@ -38,9 +38,9 @@ De meeste tegels (verwerkingsactiviteiten, taken, verzoeken, incidenten, contrac
 
 ### De tegels herordenen
 
-Om de volgorde van de tegels te wijzigen, sleept u de greep naast een tegel, of klikt u op de knoppen **Monteren** en **Naar beneden** die erbij horen. De volgorde wordt opgeslagen in uw browser: ze verandert niet voor andere gebruikers.
+Om de volgorde van de tegels te wijzigen, sleept u de greep naast een tegel, of klikt u op de knoppen **Omhoog verplaatsen** en **Omlaag verplaatsen** die erbij horen. De volgorde wordt opgeslagen in uw browser: ze verandert niet voor andere gebruikers.
 
-<figure><img src="../.gitbook/assets/dashboard-2.png" alt="Een tegel van het dashboard met de greep, de knoppen Monteren en Naar beneden en het filter op organisatorische eenheid"><figcaption><p>Een tegel en de knoppen om ze te verplaatsen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dashboard-2.png" alt="Een tegel van het dashboard met de greep, de knoppen Omhoog verplaatsen en Omlaag verplaatsen en het filter op organisatorische eenheid"><figcaption><p>Een tegel en de knoppen om ze te verplaatsen</p></figcaption></figure>
 
 ## Een lid uitnodigen
 

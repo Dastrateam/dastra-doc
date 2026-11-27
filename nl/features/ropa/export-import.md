@@ -6,19 +6,19 @@ description: Leer hoe u een volledig bestaand register exporteert en importeert 
 
 ## Het register exporteren
 
-Om het volledige register te exporteren, opent u het verwerkingsregister, klikt u op de pijl rechts van de knop **Maak een gegevensverwerking** en selecteert u **Exporteren**.
+Om het volledige register te exporteren, opent u het verwerkingsregister, klikt u op de pijl rechts van de knop **Verwerkingsactiviteit aanmaken** en selecteert u **Exporteren**.
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-1.png" alt="Menu van Maak een gegevensverwerking met de optie Exporteren"><figcaption><p>Uitklapmenu van het register met de exportfunctie</p></figcaption></figure>
 
-In het venster dat opent, kiest u bij **Kies het gewenste exportformaat** PDF, Word, HTML, CSV, Excel, JSON of Markdown. Voor PDF, Word en HTML kiest u ook een exporttype bij **Selecteer een exporttype**: **Compleet**, **GDPR (artikel 30)**, **Standaard mededeling** of **Beleid voor het bewaren van gegevens**. Klik daarna op **Bestand downloaden**.
+In het venster dat opent, kiest u bij **Kies het gewenste exportformaat** PDF, Word, HTML, CSV, Excel, JSON of Markdown. Voor PDF, Word en HTML kiest u ook een exporttype bij **Selecteer een exporttype**: **Compleet**, **Artikel 30 AVG**, **Standaardprivacyverklaring** of **Beleid voor het bewaren van gegevens**. Klik daarna op **Bestand downloaden**.
 
 Afhankelijk van het formaat zijn extra opties beschikbaar, bijvoorbeeld:
 
-* **Groepeer per organisatie-eenheid** (PDF, Word, HTML) om de verwerkingsactiviteiten per organisatorische eenheid te groeperen
-* **Indicatoren voor voortgang, kwaliteit en exportgevoeligheid toevoegen** en **Gerelateerde taken exporteren** (PDF en HTML, type Compleet)
-* **Complex spreadsheet (meerdere bladen)** (Excel)
-* **Native kolomnamen gebruiken (handig voor het importeren van gegevens)** en **Specifieke kolommen exporteren**, waarmee u de te exporteren kolommen kiest (CSV en Excel)
-* **Exporteren voor klant/gegevensbeheerder** om een export te maken voor één van uw klanten, zonder de gegevens van de andere klanten
+* **Groeperen per organisatorische eenheid** (PDF, Word, HTML) om de verwerkingsactiviteiten per organisatorische eenheid te groeperen
+* **Indicatoren voor voortgang, kwaliteit en gevoeligheid exporteren** en **Gerelateerde taken exporteren** (PDF en HTML, type Compleet)
+* **Complexe tabel (meerdere bladen)** (Excel)
+* **Native kolomnamen of rapporten gebruiken (aanbevolen voor het importeren van gegevens)** en **Aangepaste velden exporteren**, waarmee u de te exporteren kolommen kiest (CSV en Excel)
+* **Exporteren voor klant/verwerkingsverantwoordelijke** om een export te maken voor één van uw klanten, zonder de gegevens van de andere klanten
 
 PDF-, Word- en HTML-exports bevatten maximaal 500 verwerkingsactiviteiten, CSV-, Excel-, JSON- en Markdown-exports maximaal 10.000. Is uw selectie groter, dan verschijnt een waarschuwing in het venster.
 
@@ -44,10 +44,10 @@ U kunt ook slechts één of enkele verwerkingsactiviteiten van het register expo
 
 ## Het register importeren
 
-Klik op de pijl rechts van de knop **Maak een gegevensverwerking** en selecteer **Importeren**. Het venster **Importeer verwerkingen** biedt drie formaten:
+Klik op de pijl rechts van de knop **Verwerkingsactiviteit aanmaken** en selecteer **Importeren**. Het venster **Importeer verwerkingen** biedt drie formaten:
 
 * **Complexe Excel-werkmap**: importeer uw verwerkingsactiviteiten uit een Excel-werkmap met meerdere bladen (bèta)
-* **Excel**: importeer uw verwerkingsactiviteiten uit een CSV-bestand
+* **CSV**: importeer uw verwerkingsactiviteiten uit een CSV-bestand
 * **JSON**: importeer verwerkingsactiviteiten die u eerder in JSON-indeling uit Dastra hebt geëxporteerd, bijvoorbeeld uit een andere werkruimte
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-2.png" alt="Venster Importeer verwerkingen met de opties Complexe Excel-werkmap, CSV en JSON"><figcaption><p>Het importformaat kiezen</p></figcaption></figure>
@@ -58,7 +58,7 @@ Een bestaand register importeren is omslachtig als u veel verwerkingsactiviteite
 
 1. Kies **Complexe Excel-werkmap**.
 2. Klik op **Het bestandssjabloon downloaden** en vul het in met uw gegevens.
-3. Selecteer de **Organisatie-eenheid** waarin de verwerkingsactiviteiten worden aangemaakt.
+3. Selecteer de **Organisatorische eenheid** waarin de verwerkingsactiviteiten worden aangemaakt.
 4. Sleep uw ingevulde bestand naar het venster om de import te starten.
 
 {% hint style="info" %}
@@ -67,7 +67,7 @@ Tijdens de import wordt geen organisatorische eenheid aangemaakt. Gegevens uit v
 
 ### Een JSON-bestand importeren
 
-Het JSON-formaat is dat van de **JSON**-export van het register. Het bevat volledige verwerkingsactiviteiten, waardoor het het formaat is om activiteiten van de ene werkruimte naar de andere te kopiëren. Kies **JSON**, selecteer de **Organisatie-eenheid** waarin de verwerkingsactiviteiten worden aangemaakt en sleep daarna het bestand. Het venster toont daarna de verwerkingsactiviteiten die zijn aangemaakt en de items die al bestonden.
+Het JSON-formaat is dat van de **JSON**-export van het register. Het bevat volledige verwerkingsactiviteiten, waardoor het het formaat is om activiteiten van de ene werkruimte naar de andere te kopiëren. Kies **JSON**, selecteer de **Organisatorische eenheid** waarin de verwerkingsactiviteiten worden aangemaakt en sleep daarna het bestand. Het venster toont daarna de verwerkingsactiviteiten die zijn aangemaakt en de items die al bestonden.
 
 Het bestand heeft de structuur van de export: `$schema`, `version`, `date`, `label`, `source` en een array `records`, met één verwerkingsactiviteit per item.
 
@@ -106,9 +106,9 @@ De importpagina werkt bij elke stap op dezelfde manier. Ze wordt in detail besch
 
 ### Stap 1: labels van verwerkingsactiviteiten importeren
 
-Om uw bestaande labels van verwerkingsactiviteiten te importeren, klikt u op de pijl rechts van **Maak een gegevensverwerking**, selecteert u **Importeren** en kiest u daarna de optie voor CSV-bestanden (in de app **Excel** genoemd). De pagina **Gegevens importeren** opent.
+Om uw bestaande labels van verwerkingsactiviteiten te importeren, klikt u op de pijl rechts van **Verwerkingsactiviteit aanmaken**, selecteert u **Importeren** en kiest u daarna de optie **CSV**. De pagina **Gegevens importeren** opent.
 
-Klik op **Het bestandssjabloon downloaden** om een voorbeeldbestand te krijgen, en op **Zie kolomindeling** om de lijst van verwachte kolommen, hun regels en hun mogelijke waarden te zien.
+Klik op **Het bestandssjabloon downloaden** om een voorbeeldbestand te krijgen, en op **Kolomindeling bekijken** om de lijst van verwachte kolommen, hun regels en hun mogelijke waarden te zien.
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-3.png" alt="Pagina Gegevens importeren met de knoppen Het bestandssjabloon downloaden en Zie kolomindeling"><figcaption><p>Het bestandssjabloon downloaden</p></figcaption></figure>
 
@@ -121,23 +121,23 @@ Vul het bestand in met uw verwerkingsactiviteiten. De belangrijkste kolommen zij
 | Processing state | Status van de verwerkingsactiviteit                  | "Study", "BeingDeployed", "InProduction", "Stopped" |
 | Description      | Korte beschrijving van de verwerkingsactiviteit      |                                                     |
 
-Selecteer de **Organisatie-eenheid** en sleep daarna uw bestand naar het venster:
+Selecteer de **Organisatorische eenheid** en sleep daarna uw bestand naar het venster:
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-4.png" alt="Keuze van de organisatie-eenheid en uploadzone op de pagina Gegevens importeren"><figcaption><p>De organisatie-eenheid kiezen voordat u het bestand uploadt</p></figcaption></figure>
 
-Koppel in de stap **Correspondentie** de kolommen van uw bestand aan de Dastra-velden en klik op **Ga verder** om de import uit te voeren.
+Koppel in de stap **Kolomtoewijzing** de kolommen van uw bestand aan de Dastra-velden en klik op **Ga verder** om de import uit te voeren.
 
 ### Stap 2: de repository van activa importeren
 
-Om uw bestaande toepassingen en activa te importeren, gaat u naar de module **Referenties**, tabblad **Activa**, klikt u op de pijl rechts van **Een app toevoegen** en selecteert u **Importeren**:
+Om uw bestaande toepassingen en activa te importeren, gaat u naar de module **Repository's**, tabblad **Activa**, klikt u op de pijl rechts van **Activum toevoegen** en selecteert u **Importeren**:
 
 <figure><img src="../../.gitbook/assets/ropa-export-import-5.png" alt="Menu Een app toevoegen met de optie Importeren in de repository van activa"><figcaption><p>Activa importeren</p></figcaption></figure>
 
-Download vervolgens het bestandssjabloon, vul het in met uw activa (gebruik **Zie kolomindeling** voor de lijst van kolommen) en importeer het zoals in stap 1.
+Download vervolgens het bestandssjabloon, vul het in met uw activa (gebruik **Kolomindeling bekijken** voor de lijst van kolommen) en importeer het zoals in stap 1.
 
 ### Stap 3: de repository van stakeholders importeren
 
-Herhaal dezelfde procedure vanuit de module **Referenties**, tabblad **Actoren**.
+Herhaal dezelfde procedure vanuit de module **Repository's**, tabblad **Actoren**.
 
 Uw repository van stakeholders bevat alle partijen die bij een verwerkingsactiviteit betrokken zijn: rechtspersonen zoals verwerkers, klanten of gezamenlijke verwerkingsverantwoordelijken, of natuurlijke personen zoals de contactpersonen voor een verwerkingsactiviteit.
 
@@ -145,15 +145,15 @@ Deze repository dient als intern adresboek van de werkruimte. Voor elke stakehol
 
 ### Stap 4: de repository van beveiligingsmaatregelen importeren
 
-Herhaal dezelfde procedure vanuit de module **Referenties**, tabblad **Maatregelen**.
+Herhaal dezelfde procedure vanuit de module **Repository's**, tabblad **Maatregelen**.
 
 ### Stap 5: de verklarende woordenlijst voor gegevens importeren
 
-Herhaal dezelfde procedure vanuit de module **Referenties**, tabblad **Verklarende woordenlijst voor gegevens**.
+Herhaal dezelfde procedure vanuit de module **Repository's**, tabblad **Verklarende woordenlijst voor gegevens**.
 
 ### Stap 6: de repository van datasets importeren
 
-Herhaal dezelfde procedure vanuit de module **Referenties**, tabblad **Gegevenssets**.
+Herhaal dezelfde procedure vanuit de module **Repository's**, tabblad **Gegevenssets**.
 
 #### Datasets met hun gegevensvelden exporteren en importeren
 
@@ -161,13 +161,13 @@ U kunt uw datasets exporteren en importeren, inclusief de bijbehorende gegevensv
 
 **Datasets met hun velden exporteren**
 
-Vanuit de module **Referenties**, tabblad **Gegevenssets**:
+Vanuit de module **Repository's**, tabblad **Gegevenssets**:
 
 1. Selecteer de te exporteren datasets, of exporteer de volledige lijst
 2. Klik op **Exporteren**
 3. Kies het formaat CSV of Excel en klik op **Bestand downloaden**
 
-Het geëxporteerde bestand bevat voor elke dataset de naam, de beschrijving, de bewaarregel en de lijst van de gegevensvelden. In deze kolom wordt elk gegevensveld geschreven als `naam#gevoeligheid#categorie`, en de gegevensvelden worden gescheiden door `|`. Schakel **Native kolomnamen gebruiken (handig voor het importeren van gegevens)** in als u van plan bent het bestand opnieuw te importeren.
+Het geëxporteerde bestand bevat voor elke dataset de naam, de beschrijving, de bewaarregel en de lijst van de gegevensvelden. In deze kolom wordt elk gegevensveld geschreven als `naam#gevoeligheid#categorie`, en de gegevensvelden worden gescheiden door `|`. Schakel **Native kolomnamen of rapporten gebruiken (aanbevolen voor het importeren van gegevens)** in als u van plan bent het bestand opnieuw te importeren.
 
 **Datasets met hun velden importeren**
 

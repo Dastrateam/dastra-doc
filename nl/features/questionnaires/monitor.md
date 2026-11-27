@@ -8,7 +8,7 @@ description: >-
 
 ## Dashboard met antwoorden
 
-Klik in **Vraagmodellen** op een sjabloon om het dashboard met antwoorden te openen. Dat dashboard biedt vijf weergaven:
+Klik in **Vragenlijstsjablonen** op een sjabloon om het dashboard met antwoorden te openen. Dat dashboard biedt vijf weergaven:
 
 * **Reacties**: lijst van alle antwoorden met hun status (wachten op antwoorden, begonnen, wachten op validatie, geldig, geannuleerd, deadline overschreden), hun score en het gekoppelde object;
 * **Gedetailleerd bord**: vergelijking naast elkaar van alle antwoorden per categorie en score, nuttig voor benchmarking tussen entiteiten of verwerkingsactiviteiten;
@@ -46,22 +46,22 @@ Antwoorden op meerkeuzevragen worden beknopt weergegeven:
 
 Het menu naast de hoofdknop van het antwoord groepeert de volgende acties, afhankelijk van de status van het antwoord en uw rechten:
 
-* **Deze audit verlengen**: zie [Een audit of PIA plannen](schedule.md);
+* **Vragenlijst vernieuwen**: zie [Een audit of PIA plannen](schedule.md);
 * **Vragenlijst exporteren**: zie [Een rapport exporteren](export.md);
 * **Uitnodigingen versturen**: nodigt de respondenten opnieuw uit zolang het antwoord wacht op antwoorden of begonnen is;
-* **Annuleer de vragenlijst**;
+* **Vragenlijst annuleren**;
 * **Deel de audit**: deelt het rapport via een link, alleen wanneer het antwoord geldig is;
-* **Het sjabloon wijzigen**;
-* **Regel voor werkstromen**;
-* **Verplaats naar de prullenbak**: zie [Een vragenlijst of een sjabloon verwijderen](delete.md).
+* **Sjabloon bewerken**;
+* **Workflowregel**;
+* **Naar de prullenbak verplaatsen**: zie [Een vragenlijst of een sjabloon verwijderen](delete.md).
 
 ### Werkstroomregels
 
-Antwoorden op vragenlijsten kunnen werkstroomregels activeren. De actie **Regel voor werkstromen** in het menu van het antwoord toont de regels die op antwoorden van toepassing zijn, met hun status en geschiedenis, en laat u er een aanmaken met **Een werkstroomregel maken**. Kies in de regelontwerper de entiteit **Indiening van questionnaire**. Zie [Werkstroomregels](../settings/workflow-rules.md) voor de werking van regels.
+Antwoorden op vragenlijsten kunnen werkstroomregels activeren. De actie **Workflowregel** in het menu van het antwoord toont de regels die op antwoorden van toepassing zijn, met hun status en geschiedenis, en laat u er een aanmaken met **Een workflowregel aanmaken**. Kies in de regelontwerper de entiteit **Een vragenlijst beantwoorden**. Zie [Werkstroomregels](../settings/workflow-rules.md) voor de werking van regels.
 
 ## AI-analyse (bèta)
 
-Start vanuit de rapportageweergave van een antwoord de **Analyse IA** om te krijgen:
+Start vanuit de rapportageweergave van een antwoord de **AI-analyse (bèta)** om te krijgen:
 
 * een algemene nalevings- of risicoscore;
 * een schriftelijke samenvatting van de belangrijkste bevindingen;
@@ -74,11 +74,11 @@ De AI-analyse is een bètafunctie. Interpreteer de resultaten voorzichtig en laa
 
 ## Een antwoord valideren
 
-Klik na het nalezen van het antwoord op **Controleer en valideer de audit** om het de status **Geldig** te geven. Deze actie is voorbehouden aan de goedkeurders van het antwoord. Goedkeuring, verzoeken om revisie en definitieve validatie staan beschreven in [Een vragenlijst valideren](validate.md).
+Klik na het nalezen van het antwoord op **Controleer en valideer de vragenlijst** om het de status **Geldig** te geven. Deze actie is voorbehouden aan de goedkeurders van het antwoord. Goedkeuring, verzoeken om revisie en definitieve validatie staan beschreven in [Een vragenlijst valideren](validate.md).
 
 ## Een vragenlijst annuleren
 
-Een goedkeurder kan een vragenlijst annuleren zonder terug te gaan naar de lijst met vragenlijsten. De actie **Annuleer de vragenlijst** staat:
+Een goedkeurder kan een vragenlijst annuleren zonder terug te gaan naar de lijst met vragenlijsten. De actie **Vragenlijst annuleren** staat:
 
 * in de validatiestap van een antwoord dat wacht op validatie, naast **Valideer de vragenlijst** en **Vraag revisie aan**;
 * in het menu van het antwoord, in elke status zolang het antwoord nog niet is geannuleerd of naar de prullenbak is verplaatst.
@@ -89,13 +89,13 @@ Annuleren vraagt om een bevestiging en accepteert een optionele opmerking. De op
 
 Een geannuleerd antwoord krijgt de status **Geannuleerd**, getoond als rode badge in de lijst, de filters, de rapportageweergave en de exports. De respondent kan het niet meer bewerken en het wordt niet opgenomen in de resultaten.
 
-Om een geannuleerde vragenlijst te hervatten, opent u die en klikt u op **Vragenlijst opnieuw invullen**. Dastra brengt u naar het uitnodigingsscherm om de respondenten opnieuw uit te nodigen.
+Om een geannuleerde vragenlijst te hervatten, opent u die en klikt u op **Vragenlijst heropenen**. Dastra brengt u naar het uitnodigingsscherm om de respondenten opnieuw uit te nodigen.
 
 ## Antwoorden samenvoegen in het gekoppelde object
 
 Bij vragenlijsten waarvan het sjabloon een aanmaaktype is (verzamelen van een verwerkingsproject, datalek, activum, contract, AI-systeem of stakeholder), kunt u de verzamelde antwoorden samenvoegen in een Dastra-object. Met deze actie maakt u het object aan, of werkt u het gekoppelde object bij, op basis van de gegevens die in het formulier zijn ingevoerd, zonder extra handmatige invoer.
 
-De knop verschijnt pas zodra het antwoord geldig is en is actief voor de goedkeurders van het antwoord. Ze heet **Gegevens samenvoegen**, gevolgd door het type object, wanneer het antwoord al aan een object is gekoppeld. Anders heet ze **Aanmaak verzoek**, gevolgd door het type object.
+De knop verschijnt pas zodra het antwoord geldig is en is actief voor de goedkeurders van het antwoord. Ze heet **Samenvoegverzoek**, gevolgd door het type object, wanneer het antwoord al aan een object is gekoppeld. Anders heet ze **Aanmaakverzoek**, gevolgd door het type object.
 
 Open het geldige antwoord en klik op deze knop: een bevestigingsvenster toont de velden die in het doelobject worden bijgewerkt.
 

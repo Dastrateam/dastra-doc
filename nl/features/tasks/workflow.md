@@ -15,15 +15,15 @@ Een nieuwe werkruimte bevat vier stappen. Elke stap is gekoppeld aan een interne
 | Stap | Interne status |
 | --- | --- |
 | **NIEUW** | **Nieuw** |
-| **Informatie behoeften** | **Actief** |
-| **Aan de gang** | **Actief** |
+| **Informatie nodig** | **Actief** |
+| **In uitvoering** | **Actief** |
 | **Klaar** | **Gesloten** |
 
 De laatste stap, **Klaar**, is de eindstap: een taak die deze stap bereikt, wordt als afgerond beschouwd.
 
 ## De stappen aanpassen
 
-1. Klik in het zijmenu op **Instellingen voor werkruimte** en daarna, in het gedeelte **Proces**, op **Processtroom**. U kunt ook op de pagina **Taken** op de pijl van de knop **Nieuwe taak** klikken en daarna op **Kolommen instellen**.
+1. Klik in het zijmenu op **Instellingen van de werkruimte** en daarna, in het gedeelte **Proces**, op **Processtroom**. U kunt ook op de pagina **Taken** op de pijl van de knop **Nieuwe taak** klikken en daarna op **Kolommen instellen**.
 2. Kies in de lijst boven aan de pagina **Procesbeheer** het objecttype **Taken**.
 3. Voeg stappen toe, wijzig hun naam of volgorde, kies hun interne status en klik daarna op **Opslaan**.
 
@@ -33,7 +33,7 @@ Deze pagina is voorbehouden aan gebruikers die geavanceerde instellingen mogen b
 
 ## Taken classificeren met tags
 
-Met het veld **Labels** van het taakpaneel classificeert u taken om ze sneller terug te vinden: het filter **Filteren op tags** gebruikt ze in elke weergave. Tags beheert u in **Instellingen voor werkruimte**, gedeelte **Proces**, vermelding **Labels**.
+Met het veld **Labels** van het taakpaneel classificeert u taken om ze sneller terug te vinden: het filter **Filteren op tags** gebruikt ze in elke weergave. Tags beheert u in **Instellingen van de werkruimte**, gedeelte **Proces**, vermelding **Labels**.
 
 ## Verder gaan
 

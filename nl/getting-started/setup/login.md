@@ -15,26 +15,26 @@ Aanmelden gaat in twee stappen: u vult eerst uw e-mailadres in en kiest daarna h
 
 1. Ga naar [app.dastra.eu](https://app.dastra.eu).
 2. Vul bij **E-mail** uw zakelijke e-mailadres in en klik op **Ga verder**.
-3. Vul **Je wachtwoord** in en klik op **Verbinding**.
+3. Vul **Uw wachtwoord** in en klik op **Verbinding**.
 
 <figure><img src="../../.gitbook/assets/getting-started-login-1.png" alt="Eerste aanmeldstap: zakelijk e-mailadres en de knop Ga verder"><figcaption><p>Eerste stap: het e-mailadres</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/getting-started-login-2.png" alt="Tweede aanmeldstap: wachtwoord en andere aanmeldopties"><figcaption><p>Tweede stap: het wachtwoord en de andere aanmeldopties</p></figcaption></figure>
 
 {% hint style="info" %}
-Vink **Onthoud mijn wachtwoord** alleen aan op een persoonlijk apparaat.
+Vink **Onthoud mij** alleen aan op een persoonlijk apparaat.
 {% endhint %}
 
 ### Met een Google- of Microsoft-account
 
-Klik op de eerste stap onder **Of** op **Maak contact met** gevolgd door Google of Microsoft en volg daarna de procedure van de provider. U koppelt een extern account aan uw Dastra-account via **beveiliging** > **Externe aanmeldingen**.
+Klik op de eerste stap onder **Of** op **Inloggen met** gevolgd door Google of Microsoft en volg daarna de procedure van de provider. U koppelt een extern account aan uw Dastra-account via **beveiliging** > **Externe aanmeldingen**.
 
 ### Met SSO
 
 Als uw organisatie [single sign-on (SSO)](../../features/settings/sso/README.md) heeft ingesteld, meldt u zich aan met uw identiteitsprovider.
 
-1. Klik op de eerste stap op **Maak verbinding met SSO**.
-2. Vul **E-mailadres in je organisatie** in en klik op **Ga verder**.
+1. Klik op de eerste stap op **Inloggen met SSO**.
+2. Vul **E-mailadres of gebruikersnaam van uw organisatie** in en klik op **Ga verder**.
 3. Volg de authenticatieprocedure van uw organisatie. Dastra stuurt u daarna door naar uw werkruimte.
 
 <figure><img src="../../.gitbook/assets/getting-started-login-3.png" alt="Aanmeldpagina voor SSO: veld voor de SSO-gebruikersnaam en de knop Ga verder"><figcaption><p>Aanmelden met SSO</p></figcaption></figure>
@@ -49,7 +49,7 @@ U registreert uw passkeys via **beveiliging** > **Beheer mijn passkeys**. Zie [P
 
 ### Met een aanmeldlink per e-mail
 
-Klik op de tweede stap op **Stuur de toegang link per e-mail**. Dastra stuurt een link naar uw e-mailadres waarmee u zich zonder wachtwoord aanmeldt.
+Klik op de tweede stap op **Stuur mij een inloglink per e-mail**. Dastra stuurt een link naar uw e-mailadres waarmee u zich zonder wachtwoord aanmeldt.
 
 ### Het hostingregio kiezen
 
@@ -59,7 +59,7 @@ Klik op de knop **?** naast het veld (**Learn more about hosting regions**) om d
 
 ## Uw wachtwoord opnieuw instellen
 
-1. Klik op de tweede aanmeldstap op **Wachtwoord vergeten ?**.
+1. Klik op de tweede aanmeldstap op **Wachtwoord vergeten?**.
 2. Vul het e-mailadres in dat aan uw account is gekoppeld.
 3. Open de e-mail die u ontvangt en volg de link om het wachtwoord opnieuw in te stellen.
 4. Kies een nieuw wachtwoord.
@@ -77,7 +77,7 @@ Open het profielmenu rechtsboven, klik op **Gebruikersprofiel** en klik daarna i
 * de passkeys;
 * **Externe aanmeldingen**;
 * **Actieve sessies**;
-* uw **Historisch** (activiteitsgeschiedenis).
+* uw **Activiteitengeschiedenis**.
 
 <figure><img src="../../.gitbook/assets/getting-started-login-5.png" alt="Pagina beveiliging met de secties wachtwoord, sterke authenticatie en passkeys"><figcaption><p>De pagina beveiliging</p></figcaption></figure>
 
@@ -85,7 +85,7 @@ Open het profielmenu rechtsboven, klik op **Gebruikersprofiel** en klik daarna i
 
 Sterke authenticatie voegt een stap toe aan het aanmelden: een code van 6 cijfers die een authenticator-app op uw telefoon genereert.
 
-1. Klik in **beveiliging** op **Sterke authenticatie inschakelen**.
+1. Klik in **beveiliging** op **Tweestapsverificatie inschakelen**.
 2. Scan de QR-code met een authenticator-app (Microsoft Authenticator, Google Authenticator, 1Password enzovoort).
 3. Vul de gegenereerde code in om de activering te bevestigen.
 4. Bewaar de herstelcode die tijdens de activering wordt getoond.
@@ -99,7 +99,7 @@ Zodra de sterke authenticatie is ingeschakeld, vult u uw wachtwoord in en daarna
 ### Actieve sessies beheren
 
 1. Zoek in **beveiliging** de sectie **Actieve sessies**: ze toont de apparaten en browsers die met uw account zijn verbonden.
-2. Klik naast de te sluiten sessie op **Verbreken**.
+2. Klik naast de te sluiten sessie op **Intrekken**.
 
 Sluit een sessie die u niet herkent onmiddellijk.
 

@@ -17,7 +17,7 @@ Nee, om dezelfde redenen als bij teams. U kunt organisatorische eenheden wel als
 
 ## Kan ik organisatorische eenheden exporteren?
 
-Ja, u exporteert ze als spreadsheet via **Instellingen voor werkruimte** > **Organisatorische eenheden**, met de optie **Exporteren** in het menu van de knop **Maak een entiteit (verwerkingsverantwoordelijke)**.
+Ja, u exporteert ze als spreadsheet via **Instellingen van de werkruimte** > **Organisatorische eenheden**, met de optie **Exporteren** in het menu van de knop **Entiteit aanmaken**.
 
 ## Kan ik organisatorische eenheden importeren?
 

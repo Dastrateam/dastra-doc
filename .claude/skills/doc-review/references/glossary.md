@@ -52,7 +52,7 @@ this table does not cover.
 | Workspace | espace de travail ≠ workspace | workspace | Mandant ≠ Workspace, Arbeitsbereich | werkruimte ≠ workspace | German follows the app label. |
 | Organization (the customer account) | organisation ≠ tenant | organization ≠ tenant | Organisation ≠ Tenant | organisatie ≠ tenant | "Tenant" is internal vocabulary: write organization, or workspace when that is what is meant. |
 | Organizational unit | unité organisationnelle | organizational unit ≠ organisational unit | Organisationseinheit | organisatorische eenheid | An entity (entité, Entität, entiteit) is one type of organizational unit, not a synonym. |
-| Stakeholder | acteur | stakeholder ≠ actor | Stakeholder | actor ≠ acteur | Menu label in each language. A project stakeholder (partie prenante) is an Interessengruppe in German. |
+| Stakeholder | acteur | stakeholder ≠ actor | Stakeholder | actor ≠ acteur | Menu label in each language. A project stakeholder (partie prenante) is an Interessengruppe in German. In Dutch, a person involved in a processing activity or an AI system (partie prenante) is a stakeholder, and the people who sign a contract are ondertekenaars. |
 | Asset | actif | asset | Asset | activum | Dutch menu label: Activa. |
 | Dataset | jeu de données | dataset | Datensatz | dataset | Menu labels: Datenkategorien (de), Gegevenssets (nl): quote them as labels. Datenkategorie in running text is a data category (catégorie de données), not a dataset. |
 | Data catalog | catalogue de données | data catalog | Datenkatalog | gegevenscatalogus | |
@@ -85,6 +85,20 @@ this table does not cover.
 | Single sign-on | authentification unique (SSO) | single sign-on (SSO) | Single Sign-On (SSO) | single sign-on (SSO) | Spell out on first mention. |
 | Webhook | webhook | webhook | Webhook | webhook | |
 
+## Dutch app vocabulary
+
+Dutch terms the app uses since its Dutch review (November 2026). The documentation uses the same words.
+
+| Concept | nl | Note |
+| --- | --- | --- |
+| Compliance framework | kader | Menu: Conformiteit > Bibliotheek > Kaders. Keep a framework's own name as published (NIST Cybersecurity Framework). |
+| Scope of a compliance project | perimeter | App label "Perimeter". |
+| Template | sjabloon | |
+| Redaction of a document | weglakken | |
+| Contract signer | ondertekenaar | |
+| AI governance menu | AI-governance | Menu label; the law itself is the AI-verordening. |
+| History tab | Activiteit | "Activiteitengeschiedenis" where the app shows the full label. |
+
 ## App labels that look wrong
 
 Quote these as they are when they are on screen, and list them in the "app side" part of the report so they get
@@ -95,6 +109,4 @@ fixed in the app. Do not use them in running text.
 | en | "Subcontractors" (AI analysis criteria) | French calque: the GDPR term is "processors". |
 | en | "Webhooks" for the vendors settings entry | The French label of the same key is « Sous-traitants ». |
 | de | "Datensätze" for the data glossary | The same word is used for datasets. |
-| nl | "Webhaken" | Translation of a technical term that Dutch users know as "webhook". |
-| nl | "Subcontractant" for processor | The AVG term is "verwerker". |
 | fr | « email » and « e-mail » both used | The documentation uses « e-mail ». |

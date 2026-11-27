@@ -9,7 +9,7 @@ In Dastra worden gebruikers in teams gegroepeerd. Teams worden daarna toegewezen
 
 ## Een team aanmaken of een gebruiker aan een team toevoegen
 
-Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Teams**.
+Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Teams**.
 
 <figure><img src="../../.gitbook/assets/getting-started-teams-1.png" alt="Lijst van de teams in de werkruimte-instellingen"><figcaption><p>De lijst van teams</p></figcaption></figure>
 
@@ -24,7 +24,7 @@ Om een team te verwijderen, klikt u in het menu van het team op **Verwijderen**.
 Een team geeft toegang tot de inhoud van de organisatorische eenheden waaraan het is toegewezen. U wijst het op twee manieren toe.
 
 * Vanuit het team: klik op **Bewerken** en vink de eenheden aan in de lijst **Organisatorische eenheden**.
-* Vanuit de organisatorische eenheid: klik bij **Instellingen voor werkruimte** > **Organisatorische eenheden** op de drie puntjes van de eenheid en daarna op **Machtigingen instellen voor**.
+* Vanuit de organisatorische eenheid: klik bij **Instellingen van de werkruimte** > **Organisatorische eenheden** op de drie puntjes van de eenheid en daarna op **Machtigingen instellen voor**.
 
 <figure><img src="../../.gitbook/assets/getting-started-teams-2.png" alt="Venster voor het bewerken van een team met de lijst van organisatorische eenheden"><figcaption><p>Een team toewijzen aan organisatorische eenheden</p></figcaption></figure>
 

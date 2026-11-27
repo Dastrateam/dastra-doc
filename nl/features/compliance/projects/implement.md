@@ -80,7 +80,7 @@ Elke controle van het project heeft een **Status van de controle**, die u wijzig
 | **Geïmplementeerd** | De controle is ingevoerd. Dit is de status van controles die met een kader zijn geïmporteerd. Ze wordt gevalideerd wanneer al haar tests slagen. |
 | **Excluded** | De controle is niet van toepassing op het project. |
 
-Om een controle uit te sluiten, kiest u **Excluded**: het venster **Rechtvaardigen van de uitsluiting van de controle** opent. Geef de reden op in **Leg uit waarom deze controle moet worden uitgesloten** (maximaal 2.000 tekens). De rechtvaardiging is in dit venster optioneel, maar u vult haar best in: ze wordt getoond op de controle en tijdens audits en ze wordt overgenomen in de verklaring van toepasselijkheid, waar een uitgesloten controle als niet van toepassing wordt aangemerkt (zie [Conformiteitsmonitoring](monitoring.md)).
+Om een controle uit te sluiten, kiest u **Excluded**: het venster **Uitsluiting van de controle rechtvaardigen** opent. Geef de reden op in **Leg uit waarom deze controle moet worden uitgesloten** (maximaal 2.000 tekens). De rechtvaardiging is in dit venster optioneel, maar u vult haar best in: ze wordt getoond op de controle en tijdens audits en ze wordt overgenomen in de verklaring van toepasselijkheid, waar een uitgesloten controle als niet van toepassing wordt aangemerkt (zie [Conformiteitsmonitoring](monitoring.md)).
 
 Een uitgesloten controle wordt niet langer beoordeeld: tijdens een audit wordt de rechtvaardiging getoond in plaats van de tests. Wanneer u een uitgesloten controle in bulk opnieuw aan het project toevoegt, wordt ze opnieuw geactiveerd.
 
@@ -123,7 +123,7 @@ In het tabblad **Risico's** van het project schakelt de keuzeknop boven de lijst
 
 De weergave **Cartography** toont drie matrices naast elkaar:
 
-* **Initiële risico**: het niveau dat is beoordeeld toen het risico werd geïdentificeerd, vóór elke herstelmaatregel;
+* **Initieel risico**: het niveau dat is beoordeeld toen het risico werd geïdentificeerd, vóór elke herstelmaatregel;
 * **Huidig risico**: het niveau op een bepaald moment, op basis van de werkelijke voortgang van de herstelacties en controles;
 * **Restrisico**: het niveau dat wordt verwacht zodra alle geplande maatregelen zijn uitgevoerd, dat wil zeggen het risico dat de organisatie aanvaardt of tolereert.
 

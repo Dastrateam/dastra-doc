@@ -44,33 +44,33 @@ Dastra opent daarna de gebruikerspagina van de nieuwe werkruimte, waar u de lede
 
 Het verwerkingsregister vormt het hart van Dastra. Begin met een eenvoudige activiteit, zoals de salarisadministratie of de zakelijke e-mail.
 
-1. Klik in het linkermenu op **Register voor gegevensverwerking**.
-2. Klik op **Maak een gegevensverwerking**.
+1. Klik in het linkermenu op **Verwerkingsregister**.
+2. Klik op **Verwerkingsactiviteit aanmaken**.
 3. Kies hoe u de activiteit aanmaakt:
 
 <figure><img src="../.gitbook/assets/register-processing-create-mode-picker.png" alt="Keuze van de aanmaakmodus van een verwerkingsactiviteit: Genereren met A.I., Voorgedefinieerd sjabloon, Vanuit een actief, Blanco model"><figcaption><p>Kies hoe u uw eerste verwerkingsactiviteit aanmaakt</p></figcaption></figure>
 
 | Modus | Beschrijving |
 | --- | --- |
-| **Genereren met A.I.** | U beschrijft de activiteit in een paar woorden en de AI-assistent schrijft een eerste versie (als die in uw werkruimte is ingeschakeld) |
+| **Gegenereerd met AI** | U beschrijft de activiteit in een paar woorden en de AI-assistent schrijft een eerste versie (als die in uw werkruimte is ingeschakeld) |
 | **Voorgedefinieerd sjabloon** | U vertrekt van een Dastra-sjabloon (salarisadministratie, werving, camerabewaking enzovoort) |
-| **Vanuit een actief** | U maakt de verwerkingsactiviteit aan op basis van een activum en de bijbehorende gegevens |
-| **Blanco model** | U begint met een lege verwerkingsactiviteit |
+| **Vanuit een activum** | U maakt de verwerkingsactiviteit aan op basis van een activum en de bijbehorende gegevens |
+| **Aangepast** | U begint met een lege verwerkingsactiviteit |
 
-Kies voor een eerste activiteit **Blanco model** of **Voorgedefinieerd sjabloon**.
+Kies voor een eerste activiteit **Aangepast** of **Voorgedefinieerd sjabloon**.
 
-4. Vul bij **Blanco model** de twee verplichte velden in:
+4. Vul bij **Aangepast** de twee verplichte velden in:
 
 <figure><img src="../.gitbook/assets/register-processing-create-name-form.png" alt="Formulier voor het aanmaken van een verwerkingsactiviteit met het veld naam en de organisatorische eenheid"><figcaption><p>De naam en de organisatorische eenheid zijn de enige verplichte velden bij het aanmaken</p></figcaption></figure>
 
-* **Naam gegevensverwerking** (bijvoorbeeld _Salarisadministratie_)
-* **Organisatie-eenheid**: de entiteit of afdeling waartoe de activiteit behoort
+* **Naam van deze verwerkingsactiviteit** (bijvoorbeeld _Salarisadministratie_)
+* **Organisatorische eenheid**: de entiteit of afdeling waartoe de activiteit behoort
 
 {% hint style="info" %}
 De verwerkingsverantwoordelijke, zijn functionaris voor gegevensbescherming en zijn vertegenwoordiger worden overgenomen van de entiteit van de geselecteerde organisatorische eenheid.
 {% endhint %}
 
-5. Klik op **Maak een gegevensverwerking**.
+5. Klik op **Verwerkingsactiviteit aanmaken**.
 
 De verwerkingsactiviteit wordt aan het register toegevoegd. U vult daarna de vragenlijst ervan in: doeleinden, datasets, ontvangers, beveiligingsmaatregelen enzovoort.
 
@@ -84,10 +84,10 @@ De verwerkingsactiviteit wordt aan het register toegevoegd. U vult daarna de vra
 
 Nodig de mensen uit die met u in de werkruimte werken.
 
-1. Ga naar **Instellingen voor werkruimte** > **Gebruikers**.
+1. Ga naar **Instellingen van de werkruimte** > **Gebruikers**.
 2. Klik op **Een gebruiker uitnodigen**.
 3. Vul hun e-mailadres in en selecteer hun rollen.
-4. Klik op **Verstuur een uitnodiging**.
+4. Klik op **Uitnodiging verzenden**.
 
 De uitgenodigde persoon ontvangt per e-mail een toegangslink.
 

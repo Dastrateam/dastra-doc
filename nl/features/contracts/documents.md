@@ -14,7 +14,7 @@ Voeg aan uw document de bestanden toe waaruit het bestaat: het contract zelf, ad
 
 Zet de bestanden neer in de zone voor het neerzetten van bestanden of klik op **Bestandsverkenner** om ze te kiezen. Als u de [integratie met OneDrive & SharePoint / Google Drive](../settings/cloud-storage.md) hebt geïnstalleerd, kunt u met een bronkiezer bestanden uit uw eigen opslag koppelen.
 
-De opslag van bijlagen is gekoppeld aan de module [Documentbeheer](../files/README.md) van Dastra. Gebruikers die bijlagen beheren, kunnen een bestand met **Ga naar gemeenschappelijk bestandsbeheer** naar het gemeenschappelijke bestandsbeheer verplaatsen en het vervolgens vanuit het document openen met **Bekijken in bestandsbeheer**.
+De opslag van bijlagen is gekoppeld aan de module [Documentbeheer](../files/README.md) van Dastra. Gebruikers die bijlagen beheren, kunnen een bestand met **Verplaatsen naar gemeenschappelijk bestandsbeheer** naar het gemeenschappelijke bestandsbeheer verplaatsen en het vervolgens vanuit het document openen met **Bekijken in bestandsbeheer**.
 
 <figure><img src="../../.gitbook/assets/contracts-documents-1.png" alt="Het tabblad Details van een document met de zone voor het neerzetten van bestanden, de bronkiezer en de knop Bestandsverkenner"><figcaption><p>Bijlagen aan een document toevoegen</p></figcaption></figure>
 

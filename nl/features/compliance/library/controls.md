@@ -70,7 +70,7 @@ In het bewerkingsvenster definieert u nauwkeurig de rol van de controle en haar 
 
 ### Label en referentie van de controle
 
-* **Controlelabel**\
+* **Naam van de controle**\
   Beschrijft duidelijk de actie of maatregel die wordt uitgevoerd.
 * **Referentie**\
   Unieke identificatiecode van de controle in de bibliotheek.
@@ -100,7 +100,7 @@ Elke controle moet aan een type remedie zijn gekoppeld, dat haar aard aangeeft:
 * **Preventief**\
   De controle beoogt te voorkomen dat een risico zich voordoet\
   (bijvoorbeeld opleidingen, toegangsregels, validatie vóór de productiestart)
-* **Verzachting**\
+* **Mitigatie**\
   De controle beoogt de impact of de waarschijnlijkheid van een bestaand risico te verminderen\
   (bijvoorbeeld monitoring, detectie, mitigatieplan)
 

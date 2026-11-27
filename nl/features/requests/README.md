@@ -36,8 +36,8 @@ Het menu **Verzoeken** geeft toegang tot vijf pagina's:
 * **Register van verzoeken**: de lijst van alle verzoeken, met filters en kolommen.
 * **Rapportage**: de opvolgingsindicatoren (zie [Statistieken van verzoeken](process.md#statistieken-van-verzoeken)).
 * **Berichten**: de uitwisselingen met aanvragers (zie [Berichten van aanvragers](process.md#berichten-van-aanvragers)).
-* **Collectie-widgets**: de widgets die verzoeken op uw website verzamelen. Deze pagina is alleen beschikbaar voor gebruikers die verzamelformulieren mogen beheren.
-* **Uitvoering van verzoeken**: de interface voor de eigenaren van activa (zie [Interface voor de behandeling van verzoeken](advanced/asset-owners.md)).
+* **Formulieren**: de widgets die verzoeken op uw website verzamelen. Deze pagina is alleen beschikbaar voor gebruikers die verzamelformulieren mogen beheren.
+* **Afhandeling van verzoeken**: de interface voor de eigenaren van activa (zie [Interface voor de behandeling van verzoeken](advanced/asset-owners.md)).
 
 ## Een nieuw verzoek toevoegen
 
@@ -51,17 +51,17 @@ U voegt op 5 manieren een nieuw verzoek toe in Dastra:
 
 ### Een verzoek handmatig aanmaken
 
-Klik op **Maak een aanvraag**. Vul in het venster dat opent de titel, het type of de typen verzoek, de datum, de taal van de aanvrager, het e-mailadres (optioneel) en de organisatie-eenheid in en klik op **Creëren**. Dastra opent het verzoek zodat u het kunt uitwerken en behandelen.
+Klik op **Verzoek aanmaken**. Vul in het venster dat opent de titel, het type of de typen verzoek, de datum, de taal van de aanvrager, het e-mailadres (optioneel) en de organisatie-eenheid in en klik op **Aanmaken**. Dastra opent het verzoek zodat u het kunt uitwerken en behandelen.
 
 <figure><img src="../../.gitbook/assets/requests-readme-2.png" alt="Het venster voor het aanmaken van een verzoek"><figcaption><p>Het venster voor het aanmaken van een verzoek</p></figcaption></figure>
 
 ### Het register van verzoeken importeren en exporteren
 
-U importeert en exporteert het hele register. Om verzoeken te importeren klikt u op de pijl naast de knop **Maak een aanvraag** en daarna op **Importeren**.
+U importeert en exporteert het hele register. Om verzoeken te importeren klikt u op de pijl naast de knop **Verzoek aanmaken** en daarna op **Importeren**.
 
 <figure><img src="../../.gitbook/assets/requests-readme-3.png" alt="Het keuzemenu van de knop Maak een aanvraag, met de opties Importeren, Exporteren, Transformeer e-mails naar verzoeken van betrokkenen en Read the documentation"><figcaption></figcaption></figure>
 
-Klik in het importscherm op **Het bestandssjabloon downloaden** om het verwachte formaat te zien (**Zie kolomindeling** toont de kolommen) en sleep daarna uw bestand (csv, txt of xlsx) naar het uploadgebied. Volg de stappen van de wizard (gegevens importeren, kolommen koppelen, importeren en resultaat) om de verzoeken in Dastra te importeren. Na de import staan de verzoeken in het register.
+Klik in het importscherm op **Het bestandssjabloon downloaden** om het verwachte formaat te zien (**Kolomindeling bekijken** toont de kolommen) en sleep daarna uw bestand (csv, txt of xlsx) naar het uploadgebied. Volg de stappen van de wizard (gegevens importeren, kolommen koppelen, importeren en resultaat) om de verzoeken in Dastra te importeren. Na de import staan de verzoeken in het register.
 
 <figure><img src="../../.gitbook/assets/requests-readme-4.png" alt="De eerste stap van het importeren van verzoeken: het sjabloon downloaden en het bestand uploaden"><figcaption></figcaption></figure>
 

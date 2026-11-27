@@ -7,11 +7,11 @@ description: >-
 
 Beoordeel het risico op basis van de elementen die in het risicotype zijn geïdentificeerd en van de context van het object. De beoordeling steunt op waarschijnlijkheid en impact. De app noemt ze **Waarschijnlijkheid** en **Ernst**.
 
-Open op de risicopagina het onderdeel **Risicobeoordeling**. Kies de waarschijnlijkheid en de ernst van het initiële risico en daarna die van het restrisico. Bevat het risicotype een voorbeoordeling, dan zijn deze waarden al ingevuld. Het veld **Reden voor evaluatie** bewaart een spoor van uw redenering.
+Open op de risicopagina het onderdeel **Risicobeoordeling**. Kies de waarschijnlijkheid en de ernst van het initiële risico en daarna die van het restrisico. Bevat het risicotype een voorbeoordeling, dan zijn deze waarden al ingevuld. Het veld **Motivering van de beoordeling** bewaart een spoor van uw redenering.
 
 <figure><img src="../../../.gitbook/assets/risks-assess-1.png" alt="Onderdeel Risicobeoordeling: initiële en resterende niveaus, motivering en risicomatrix"><figcaption><p>Het onderdeel Risicobeoordeling en de matrix ervan</p></figcaption></figure>
 
-Klik op **De beoordeling valideren** om het risico naar de stap **Verwerkingen** te brengen. Alleen de eigenaar van het risico kan dit doen. De knop **Ga terug naar deze stap** brengt het risico één stap terug.
+Klik op **Risico beoordelen** om het risico naar de stap **Verwerkingen** te brengen. Alleen de eigenaar van het risico kan dit doen. De knop **Terugzetten** brengt het risico één stap terug.
 
 ## De risicoschaal bepalen
 
@@ -23,14 +23,14 @@ Bepaal voor elk niveau een toepassingsvoorwaarde. De schaal kan overeenkomen met
 
 ### De risicoschaal configureren
 
-De schaal is aanpasbaar. Ze wordt per werkruimte gedefinieerd, in **Instellingen voor werkruimte** > **Risicobeheer**, onder **Proces**. Dit menu-item is zichtbaar met schrijftoegang tot risico's; het aanmaken, opslaan of activeren van een schaal vereist ook schrijftoegang tot de geavanceerde instellingen.
+De schaal is aanpasbaar. Ze wordt per werkruimte gedefinieerd, in **Instellingen van de werkruimte** > **Risicobeheer**, onder **Proces**. Dit menu-item is zichtbaar met schrijftoegang tot risico's; het aanmaken, opslaan of activeren van een schaal vereist ook schrijftoegang tot de geavanceerde instellingen.
 
 <figure><img src="../../../.gitbook/assets/risks-assess-2.png" alt="Instellingenpagina van risicobeheer: standaardschaal en knop Maak een aangepaste schaal"><figcaption><p>De risicoschalen van de werkruimte</p></figcaption></figure>
 
-De standaardschaal, **Standaard risico-schaal** (5 niveaus), is alleen-lezen. Om een andere te gebruiken:
+De standaardschaal, **Standaard risicomatrix** (5 niveaus), is alleen-lezen. Om een andere te gebruiken:
 
 1. Klik op **Maak een aangepaste schaal**.
-2. Geef de schaal een naam en kies een **Risico-schaalmodel**: **5 niveaus - standaard**, **4 niveaus - CNIL PIA** of **3 niveaus - licht**.
+2. Geef de schaal een naam en kies een **Sjabloon voor risicoprofiel**: **5 niveaus - standaard**, **4 niveaus - klassieke DPIA** of **3 niveaus - licht**.
 3. Open de nieuwe schaal. Klik op een graduatie van waarschijnlijkheid of ernst om het label, de beschrijving en de waarde ervan te bewerken: standaard een bedrag in euro voor de ernst en een percentage voor de waarschijnlijkheid. Met de plus- en de prullenbakknop voegt u een niveau toe of verwijdert u het, van 1 tot 9 niveaus.
 4. Wijzig indien nodig de eenheden (**Maateenheid impact**, **Waarschijnlijkheidseenheid**) en de kleur van elke cel van de matrix.
 5. Klik op **Opslaan** en daarna op **Activeer dit raster** om de schaal te gebruiken.
@@ -55,7 +55,7 @@ Naargelang het beoordeelde risico varieert de impact. U kunt hem empirisch insch
 
 ### Het logboek van gebeurtenissen gebruiken
 
-Het **Logboek** bewaart het geheugen van eerdere gebeurtenissen. Om een gebeurtenis toe te voegen, opent u **Risicobeheer** > **Tijdschrift** en klikt u op **Creëer een evenement**. Vul de naam in, de **Datum van het evenement**, de **Financiële gevolgen van het incident** en, indien mogelijk, het betrokken risicotype.
+Het **Logboek** bewaart het geheugen van eerdere gebeurtenissen. Om een gebeurtenis toe te voegen, opent u **Risicobeheer** > **Gebeurtenissen** en klikt u op **Een gebeurtenis aanmaken**. Vul de naam in, de **Datum van de gebeurtenis**, de **Financiële gevolgen van het incident** en, indien mogelijk, het betrokken risicotype.
 
 <figure><img src="../../../.gitbook/assets/risks-assess-3.png" alt="Logboek met drie gebeurtenissen, hun datum en hun financiële gevolgen"><figcaption><p>Het logboek van gebeurtenissen</p></figcaption></figure>
 

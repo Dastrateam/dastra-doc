@@ -21,14 +21,14 @@ Voor een volledige doorloop van een certificeringsproject, zie het [voorbeeld va
 
 Klik in het menu op **Conformiteit** en vervolgens op **Projecten**. Het zijmenu heeft twee groepen:
 
-* **Complianceprojecten**: **Alle projecten** toont de projecten van de werkruimte;
+* **Conformiteitsprojecten**: **Alle projecten** toont de projecten van de werkruimte;
 * **Mijn taken**: de items die aan u zijn toegewezen, in alle projecten (zie hieronder).
 
 ## Een project aanmaken
 
 1. Klik in **Alle projecten** op **Een project aanmaken**.
 2. Voer de **Titel** van het project in (maximaal 200 tekens).
-3. Kies de **Perimeter** (verplicht). Bestaat die nog niet, klik dan in de lijst op **Een perimeter creëren** om hem te bepalen zonder het venster te verlaten. Zie [Perimeters](../scopes.md).
+3. Kies de **Perimeter** (verplicht). Bestaat die nog niet, klik dan in de lijst op **Een perimeter aanmaken** om hem te bepalen zonder het venster te verlaten. Zie [Perimeters](../scopes.md).
 4. Klik op **Volgende**.
 5. Voeg bij **Wijs gebruikers aan het project toe** de personen toe die het project mogen beheren en geef elk de rol **Goedkeurder** of **Op de hoogte**. U wordt standaard toegevoegd met de rol **Goedkeurder**.
 6. Klik op **Toevoegen**.
@@ -61,7 +61,7 @@ Een project doorloopt zes fasen. De huidige fase is gemarkeerd op het overzicht 
 De fasen zijn niet vergrendeld: u kunt naar elke fase gaan, vooruit of achteruit.
 
 1. Klik op het overzicht op de gewenste fase.
-2. Bevestig in het venster **Wilt u het project naar deze stap verplaatsen?**.
+2. Bevestig in het venster **Wilt u het project naar deze status verplaatsen?**.
 
 Sommige functies worden in- of uitgeschakeld naargelang de fase en al uw werk blijft behouden. Handelt u buiten de aanbevolen fase, dan toont Dastra een waarschuwing zonder u te blokkeren:
 
@@ -84,7 +84,7 @@ Bovenaan het overzicht herinnert de assistent aan het **Fase doel** en toont hij
 
 Zijn alle stappen uitgevoerd, dan verschijnt de knop **Overgaan naar fase: …** om naar de volgende fase te gaan, na dezelfde bevestiging.
 
-Klik op het kruisje om de assistent te verbergen (**De assistent verbergen**). Met de knop **Weergave-assistent** haalt u hem terug.
+Klik op het kruisje om de assistent te verbergen (**De assistent verbergen**). Met de knop **Assistent weergeven** haalt u hem terug.
 
 ## Door een project navigeren
 
@@ -101,7 +101,7 @@ Met de knoppen voor taken en opmerkingen in het menu volgt u het project samen m
 * **Instellingen**: de titel, de beschrijving en de perimeter wijzigen;
 * **Historiek**: de wijzigingen in het project nalezen;
 * **Exporteren**: het project exporteren als pdf, DOCX, JSON, HTML of Markdown;
-* **Verplaats naar de prullenbak**: het project archiveren. Een gearchiveerd project is alleen-lezen: met **Herstellen** kunt u het weer wijzigen en met **Verwijderen** wordt het definitief gewist.
+* **Naar de prullenbak verplaatsen**: het project archiveren. Een gearchiveerd project is alleen-lezen: met **Herstellen** kunt u het weer wijzigen en met **Verwijderen** wordt het definitief gewist.
 
 ## Uw taken opvolgen
 

@@ -18,7 +18,7 @@ Met de integratie HTTP / Custom API kunnen uw workflowregels elk platform aanroe
 
 ## Installatie
 
-1. Open in Dastra **Instellingen voor werkruimte** > **Integraties** en selecteer **HTTP / Custom API**.
+1. Open in Dastra **Instellingen van de werkruimte** > **Integraties** en selecteer **HTTP / Custom API**.
 2. Activeer het gebruiksscenario: in deze stap voert u geen referenties in, de schakelaar activeert alleen de actie voor de werkruimte.
 3. Klik op **Beheer de verbindingen** en voeg één verbinding per doelplatform toe. Een verbinding bevat één manier van authenticeren:
    * **API key / token**: de sleutel, de header die ze draagt (standaard `Authorization`) en een optioneel voorvoegsel voor de waarde (standaard `Bearer ` wanneer de header `Authorization` is). Laat het voorvoegsel leeg voor een header zoals `X-API-Key`.

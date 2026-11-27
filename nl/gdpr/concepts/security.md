@@ -84,7 +84,7 @@ In Dastra kunt u beveiligingsmaatregelen documenteren, beoordelen en opvolgen al
 * Beoordeel risico's met de module voor risicobeheer.
 * Plan corrigerende acties met taken en volg hun voortgang.
 * Bewaar het bewijs van naleving (beleid, audits, bewijs van uitvoering).
-* Volg het conformiteitsniveau van uw organisatie ten opzichte van frameworks zoals ISO 27001 in de module **Conformiteit**.
+* Volg het conformiteitsniveau van uw organisatie ten opzichte van kaders zoals ISO 27001 in de module **Conformiteit**.
 
 *
 

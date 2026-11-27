@@ -17,7 +17,7 @@ Dastra biedt TIA-sjablonen in de bibliotheek van vragenlijsten, waaronder:
 * **Transfer Impact Assessment - TIA (outside EU/EEA)**: het standaard TIA-sjabloon van Dastra (45 vragen)
 * **Data Transfer Impact Assessment (DTIA)**: een uitgebreider sjabloon (96 vragen)
 
-Ga voor deze sjablonen naar het tabblad **Vraagmodellen**, klik op **Maak een sjabloon**, kies **Geautomatiseerde audit** en zoek op "TIA".
+Ga voor deze sjablonen naar het tabblad **Vragenlijstsjablonen**, klik op **Maak een sjabloon**, kies **Geautomatiseerde audit** en zoek op "TIA".
 
 ## Structuur van een TIA-vragenlijst
 
@@ -34,7 +34,7 @@ Bij het bewerken van een verwerkingsactiviteit in Dastra kunt u een TIA rechtstr
 
 1. Ga naar de sectie **Ontvangers** van de verwerkingsactiviteit
 2. Open een ontvanger en scrol naar het onderdeel over de doorgifte
-3. Klik op **Creëer een transfer impact assessment (TIA)**
+3. Klik op **Vragenlijst voor doorgifte-effectbeoordeling (TIA) aanmaken**
 
 Daarmee wordt het TIA-antwoord automatisch gekoppeld aan de betreffende doorgifte en ontvanger.
 

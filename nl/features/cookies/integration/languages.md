@@ -12,14 +12,14 @@ description: Deze pagina legt uit hoe u de talen van de toestemmingsbanner behee
 
 <figure><img src="../../../.gitbook/assets/cookies-languages-1.png" alt="De sectie Teksten en vertalingen met de lijst van bannertalen en hun badges"><figcaption><p>De sectie "Teksten en vertalingen"</p></figcaption></figure>
 
-De eerste taal in de lijst is de standaardtaal. Klik naast een taal op **Standaard instellen** om een andere taal te kiezen. Klik op **Bewerken** om de teksten van een taal aan te passen.
+De eerste taal in de lijst is de standaardtaal. Klik naast een taal op **Als standaard instellen** om een andere taal te kiezen. Klik op **Bewerken** om de teksten van een taal aan te passen.
 
 In de keuzelijst zijn de talen in de groep **Talen met vertalingen** al door Dastra vertaald: Engels (VS), Engels (VK), Frans, Duits, Spaans, Italiaans, Nederlands, Grieks, Pools en Portugees. De andere talen staan in de groep **Talen die niet zijn vertaald**: u voert de teksten zelf in.
 
 Elke taal die u toevoegt, draagt een badge:
 
 * **Vooraf vertaald**: de taal is een van de talen die Dastra vertaalt;
-* **Behoefte aan vertaling**: sommige teksten van de taal zijn nog leeg;
+* **Vertaling nodig**: sommige teksten van de taal zijn nog leeg;
 * **Volledig vertaald**: alle teksten zijn ingevuld.
 
 Een teller toont het aantal aangepaste teksten ten opzichte van het totale aantal teksten.

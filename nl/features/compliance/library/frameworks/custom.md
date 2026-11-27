@@ -23,8 +23,8 @@ Een eigen kader kan:
 {% column %}
 Bij het aanmaken van een eigen kader geeft de gebruiker op:
 
-* de **Naam van het framework** (bijvoorbeeld _Custom AI_, _AI ISSP, Demo_)
-* de **Taal van het framework**, die de standaardtaal van de vereisten en controles bepaalt
+* de **Naam van het kader** (bijvoorbeeld _Custom AI_, _AI ISSP, Demo_)
+* de **Taal van het kader**, die de standaardtaal van de vereisten en controles bepaalt
 
 Na het aanmaken wordt het kader met de status concept toegevoegd aan de bibliotheek.
 {% endcolumn %}
@@ -46,8 +46,8 @@ Een nieuw aangemaakt kader is standaard:
 ### Acties die beschikbaar zijn zolang het kader niet is gewijzigd
 
 * **Exporteren**: het kader ophalen in JSON- of Excel-formaat
-* **Dupliceren**: een kopie van het kader maken
-* **Verplaats naar de prullenbak**: het kader uit de bibliotheek verwijderen (met **Herstellen** haalt u het terug, met **Verwijderen** wist u het definitief)
+* **Kopie maken**: een kopie van het kader maken
+* **Naar de prullenbak verplaatsen**: het kader uit de bibliotheek verwijderen (met **Herstellen** haalt u het terug, met **Verwijderen** wist u het definitief)
 
 U kunt niets toevoegen of wijzigen zolang het kader zich niet in de bewerkingsmodus bevindt.
 

@@ -26,7 +26,7 @@ Om een relatie aan te maken klikt u op **Voeg een relatie toe** en doet u daarna
 
 1. Selecteer het **Type relatie**. Onder het veld verschijnt een beschrijving van het geselecteerde type.
 2. Kies **Bestaande verwerking** om reeds bestaande verwerkingsactiviteiten te koppelen, of **Nieuwe verwerking** om de gekoppelde verwerkingsactiviteit meteen aan te maken.
-3. Selecteer voor een bestaande verwerkingsactiviteit eerst de **Organisatie-eenheid** en daarna de verwerkingsactiviteit bij **Bijgevoegde object (en) selecteren**.
+3. Selecteer voor een bestaande verwerkingsactiviteit eerst de **Organisatorische eenheid** en daarna de verwerkingsactiviteit bij **Gekoppelde objecten selecteren**.
 4. Vul voor een nieuwe verwerkingsactiviteit de **Naam van de nieuwe verwerking** in, schakel zo nodig **Activiteit als verwerker** in en selecteer de organisatie-eenheid.
 5. Klik op **Toevoegen**.
 
@@ -72,13 +72,13 @@ Logische koppeling tussen twee verwerkingsactiviteiten, zonder enige afhankelijk
 
 #### Wordt gekopieerd door
 
-Deze relatie houdt de kopieën bij die van deze verwerkingsactiviteit zijn gemaakt. Ze wordt automatisch aangemaakt wanneer u **Dupliceren** gebruikt op een verwerkingsactiviteit.
+Deze relatie houdt de kopieën bij die van deze verwerkingsactiviteit zijn gemaakt. Ze wordt automatisch aangemaakt wanneer u **Kopie maken** gebruikt op een verwerkingsactiviteit.
 
 > Verwerkingsactiviteit A is de bron (van de kopie) van verwerkingsactiviteit B.
 
 #### Is een kopie van
 
-Deze relatie houdt bij van welke verwerkingsactiviteit een kopie is gemaakt. Ze wordt automatisch aangemaakt wanneer u **Dupliceren** gebruikt op een verwerkingsactiviteit.
+Deze relatie houdt bij van welke verwerkingsactiviteit een kopie is gemaakt. Ze wordt automatisch aangemaakt wanneer u **Kopie maken** gebruikt op een verwerkingsactiviteit.
 
 > Verwerkingsactiviteit A is een kopie van verwerkingsactiviteit B.
 
@@ -122,7 +122,7 @@ Dit maakt een strikte relatie tussen B (bron) en A (afhankelijk):
 
 Als u de relatie verwijdert, kunt u de geërfde velden weer bewerken en worden de oorspronkelijke velden van A hersteld (de items van uw repositories blijven bewaard).
 
-Een verwerkingsactiviteit die in strikte erfenis van een andere afhangt, toont een banner **Overerven van gegevensverwerking** met een link naar haar bron, en de geërfde tabbladen zijn vergrendeld.
+Een verwerkingsactiviteit die in strikte erfenis van een andere afhangt, toont een banner **Overerving van de verwerking** met een link naar haar bron, en de geërfde tabbladen zijn vergrendeld.
 
 {% hint style="danger" %}
 Een verwerkingsactiviteit kan maar van één bronverwerkingsactiviteit tegelijk afhangen.

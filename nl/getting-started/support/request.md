@@ -32,12 +32,12 @@ Met dit formulier meldt u bugs, stelt u ideeën voor nieuwe functies voor of ste
    | --- | --- |
    | **Oplossen van problemen** | U hebt een probleem of een vraag over het gebruik van een functie. Eerst wordt een zoekopdracht in de documentatie aangeboden: beantwoordt die uw vraag niet, klik dan op **Een ticket aanmaken**. |
    | **Bug-rapport** | U wilt een storing in de toepassing melden. |
-   | **Update van het abonnement** | U wilt uw abonnement wijzigen of informatie krijgen over uw facturering. |
-   | **Functioneel idee** | U wilt een nieuwe functie voorstellen. |
+   | **Wijziging van het abonnement** | U wilt uw abonnement wijzigen of informatie krijgen over uw facturering. |
+   | **Nieuwe functie** | U wilt een nieuwe functie voorstellen. |
    | **Kennisgeving** | U wilt uw mening over de toepassing geven. |
    | **Ander verzoek** | Voor alle andere verzoeken. |
 
-3. Beschrijf uw verzoek in detail en klik op **Vraag verzenden**.
+3. Beschrijf uw verzoek in detail en klik op **Feedback geven**.
 
 <figure><img src="../../.gitbook/assets/getting-started-support-3.png" alt="Venster voor ondersteuningsverzoeken met de lijst van soorten verzoeken"><figcaption><p>Het soort verzoek kiezen</p></figcaption></figure>
 

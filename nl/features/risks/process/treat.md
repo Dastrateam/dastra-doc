@@ -17,7 +17,7 @@ Kies een optie in het veld **Opties voor risicobehandeling**:
 
 <figure><img src="../../../.gitbook/assets/risks-treat-1.png" alt="Onderdeel Risicobehandeling met de vijf opties en de motivering van de respons"><figcaption><p>Het onderdeel Risicobehandeling</p></figcaption></figure>
 
-Licht uw keuze toe in **Reden voor respons** en klik vervolgens op **Valideer het antwoord** om naar de stap **Monitoring** te gaan. Deze beslissing komt toe aan de eigenaar van het risico: alleen de eigenaar kan de respons valideren.
+Licht uw keuze toe in **Motivering van de respons** en klik vervolgens op **Valideer het antwoord** om naar de stap **Monitoring** te gaan. Deze beslissing komt toe aan de eigenaar van het risico: alleen de eigenaar kan de respons valideren.
 
 {% hint style="info" %}
 Alleen de optie **Reductie en beheersing** steunt op controlepunten en op het remediëringspercentage, die het huidige risico doen bewegen. Voor de andere opties berekent Dastra geen remediëringspercentage.

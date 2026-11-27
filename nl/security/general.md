@@ -56,7 +56,7 @@ Onze testmethodologie volgt de aanbevelingen van **OWASP** en bestaat uit versch
 
 Organisatiebeheerders kunnen alle wijzigingen in gebruikersbeheer, werkruimten en toegangsmachtigingen bijhouden.
 
-Organisatie-eigenaren bepalen hoelang beveiligingslogs worden bewaard onder **Organisatie-instellingen** > **Beveiliging**, in het blok **Veiligheidslogboeken bijhouden**: van 30 dagen tot 3 jaar (180 dagen aanbevolen). Logs die ouder zijn dan deze periode worden elke nacht verwijderd.
+Organisatie-eigenaren bepalen hoelang beveiligingslogs worden bewaard onder **Organisatie-instellingen** > **Beveiliging**, in het blok **Bewaring van beveiligingslogboeken**: van 30 dagen tot 3 jaar (180 dagen aanbevolen). Logs die ouder zijn dan deze periode worden elke nacht verwijderd.
 
 Om deze gebeurtenissen continu naar uw monitoringtool te streamen, zie [SIEM-streaming](../features/settings/siem.md).
 
@@ -84,7 +84,7 @@ Organisatie-eigenaren kunnen een levensduur voor wachtwoorden instellen onder [O
 
 ## Automatisch afmelden
 
-Organisatie-eigenaren kunnen het blok **Automatisch verbinding verbreken** inschakelen: alle interne gebruikers die door de organisatie worden beheerd, worden dan na 1 uur inactiviteit afgemeld.
+Organisatie-eigenaren kunnen het blok **Automatisch uitloggen bij inactiviteit** inschakelen: alle interne gebruikers die door de organisatie worden beheerd, worden dan na 1 uur inactiviteit afgemeld.
 
 ## Controle van API-tokens
 
@@ -108,7 +108,7 @@ Dastra controleert of uw eigen IP-adres tot de toegestane bereiken behoort. Cont
 
 ## Machtigingslijst e-maildomein
 
-Organisatie-eigenaren kunnen de lijst van toegestane e-maildomeinen bepalen (bijvoorbeeld `example.com`): alleen gebruikers van wie het e-mailadres tot een van deze domeinen behoort, kunnen zich aanmelden. Ga naar **Organisatie-instellingen** > **Beveiliging**, blok **Filter de e-maildomeinen van je gebruikers**. Het kan enkele minuten duren voordat de configuratie van kracht wordt.
+Organisatie-eigenaren kunnen de lijst van toegestane e-maildomeinen bepalen (bijvoorbeeld `example.com`): alleen gebruikers van wie het e-mailadres tot een van deze domeinen behoort, kunnen zich aanmelden. Ga naar **Organisatie-instellingen** > **Beveiliging**, blok **Filter de e-maildomeinen van uw gebruikers**. Het kan enkele minuten duren voordat de configuratie van kracht wordt.
 
 ## Strikte isolatie tussen productie- en ontwikkelomgevingen
 

@@ -22,6 +22,6 @@ Vink **Verzoeken van betrokkenen** aan in de sectie **Configuratie**, zoals uitg
 
 ## Het verzamelformulier kiezen
 
-In de sectie **Verzoeken van betrokkenen** kiest u in het veld **Formulier voor het aanvragen van betrokkenen** het verzamelformulier dat u wilt weergeven. Een Trust Center toont slechts één formulier.
+In de sectie **Verzoeken van betrokkenen** kiest u in het veld **Formulier voor verzoeken van betrokkenen** het verzamelformulier dat u wilt weergeven. Een Trust Center toont slechts één formulier.
 
 Zolang er geen formulier is geselecteerd, vermeldt de openbare pagina dat de beheerder geen verzamelformulier heeft geconfigureerd.

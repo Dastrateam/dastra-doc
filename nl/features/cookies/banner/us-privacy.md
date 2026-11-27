@@ -59,7 +59,7 @@ Dastra ondersteunt deze signalen nu native via een schakelaar in de configuratie
 
 Is deze optie ingeschakeld en heeft de bezoeker nog geen keuze gemaakt, dan weigert de widget automatisch elke cookiecategorie behalve de noodzakelijke cookies (voorkeuren, analytisch, marketing, overige en niet-geclassificeerde) zodra de browser een GPC- of DoNotTrack-signaal verstuurt, zonder extra code. De banner wordt voor deze bezoeker niet getoond.
 
-Dezelfde schakelaar bestaat in elke **Variatie van geografische doelen**: schakel hem in op de variatie die Californië dekt.
+Dezelfde schakelaar bestaat in elke **Geogerichte variatie**: schakel hem in op de variatie die Californië dekt.
 
 {% hint style="info" %}
 Native activering is beschikbaar vanaf de huidige versie van de Dastra-widget. Ze dekt zowel het signaal `globalPrivacyControl` als `doNotTrack`.
@@ -124,7 +124,7 @@ Categorielabels voor `setPurposeConsent`:
 
 Wordt een GPC- of DNT-signaal gedetecteerd, dan raadt regelgeving zoals de CPRA aan de gebruiker te informeren dat zijn opt-outverzoek is gehonoreerd.
 
-Bij native activering toont de widget dit bericht gedurende 6 seconden in plaats van de banner. De standaardtekst is: "Globale privacycontrole gedetecteerd: analytische en marketingcookies zijn uitgeschakeld." Om die te wijzigen opent u op de banner **Teksten en vertalingen**, onderdeel **Startpagina**, en past u het veld **Bericht weergegeven wanneer de browser een signaal voor globale privacycontrole of niet volgen verzendt** aan.
+Bij native activering toont de widget dit bericht gedurende 6 seconden in plaats van de banner. De standaardtekst is: "Globale privacycontrole gedetecteerd: analytische en marketingcookies zijn uitgeschakeld." Om die te wijzigen opent u op de banner **Teksten en vertalingen**, onderdeel **Startpagina**, en past u het veld **Bericht dat wordt weergegeven wanneer de browser een Global Privacy Control- of Do Not Track-signaal verzendt** aan.
 
 De widget stuurt ook de gebeurtenis `dastra:gpc:applied` naar `window`, waarnaar u kunt luisteren voor uw eigen verwerking.
 

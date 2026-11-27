@@ -31,20 +31,20 @@ In de praktijk betekent dit:
 
 ## De integratie instellen
 
-Open **Instellingen voor werkruimte** > **Integraties** en klik op **Microsoft OneDrive & SharePoint** of **Google Drive**.
+Open **Instellingen van de werkruimte** > **Integraties** en klik op **Microsoft OneDrive & SharePoint** of **Google Drive**.
 
 Klik op **Integratie toevoegen**. U wordt doorgestuurd naar de aanmeldpagina van de provider, waar u toegang tot uw opslag moet autoriseren.
 
 ### De drive kiezen (alleen OneDrive & SharePoint)
 
-Na de authenticatie toont Dastra de drives die het verbonden account kan bereiken. Kies in **Kies de rootsdrive** de drive die Dastra gebruikt:
+Na de authenticatie toont Dastra de drives die het verbonden account kan bereiken. Kies in **Hoofdschijf kiezen** de drive die Dastra gebruikt:
 
 | Optie | Beschrijving | Aanbeveling |
 | --- | --- | --- |
 | `<Site> / <Library>` (bijvoorbeeld `Root site / Documents`) | Een documentbibliotheek van een SharePoint-site van uw organisatie | Aanbevolen voor zakelijk gebruik: gedeelde ruimte, niet gekoppeld aan een persoonlijk account |
 | Uw persoonlijke drive | De persoonlijke OneDrive van het verbonden account | Vermijd dit in productie: het geeft toegang tot alle bestanden van de persoonlijke drive |
 
-Klik op **Verversen** als een site of bibliotheek die u net hebt aangemaakt nog niet verschijnt.
+Klik op **Vernieuwen** als een site of bibliotheek die u net hebt aangemaakt nog niet verschijnt.
 
 {% hint style="info" %}
 Gebruikt u een persoonlijke drive, gebruik dan bij voorkeur een speciaal serviceaccount zonder persoonlijke bestanden. U kunt ook een [speciale SharePoint-site](https://learn.microsoft.com/nl-nl/sharepoint/create-site-collection) aanmaken om de bestanden van Dastra af te scheiden.

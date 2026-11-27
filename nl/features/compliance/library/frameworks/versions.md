@@ -31,12 +31,12 @@ Het tabblad **Versies** van een kader toont al zijn versies, van de meest recent
 * de versieopmerking,
 * de aanmaakdatum en de auteur van de versie.
 
-Klik op een versie (of op **Zie** in het actiemenu) om ze te openen. Een gepubliceerde versie opent in de modus alleen-lezen.
+Klik op een versie (of op **Bekijken** in het actiemenu) om ze te openen. Een gepubliceerde versie opent in de modus alleen-lezen.
 
 Afhankelijk van de status biedt het actiemenu van elke versie:
 
-* **Zie**: de versie openen,
-* **Wijzig de release-opmerking**,
+* **Bekijken**: de versie openen,
+* **Versienotitie bewerken**,
 * **Instellen als huidige versie** (gepubliceerde versie die niet de huidige versie is),
 * **Publiceren** (conceptversie),
 * **Publicatie annuleren** (gepubliceerde versie),
@@ -55,7 +55,7 @@ De versie kopieert de structuur van het kader (hoofdstukken, vereisten en gekopp
 
 Met de knop **Een nieuwe versie importeren** op het tabblad **Versies** maakt u ook een versie aan op basis van een JSON- of Excel-bestand.
 
-U kunt de versieopmerking op elk moment wijzigen via het actiemenu van de versie (**Wijzig de release-opmerking**).
+U kunt de versieopmerking op elk moment wijzigen via het actiemenu van de versie (**Versienotitie bewerken**).
 
 {% hint style="info" %}
 De versies van een kader worden niet apart geteld in het frameworkquotum: een versie aanmaken of importeren kost geen frameworkcredit.
@@ -90,7 +90,7 @@ Als een kader is aangemaakt op basis van een sjabloon en er een nieuwere versie 
 * toont de kaderkaart in de lijst het label **Beschikbare update**,
 * toont de kaderpagina de banner _Een nieuwere versie van de bronnent repository is beschikbaar_, gevolgd door de link **bijwerken**.
 
-Klik op **bijwerken** om het venster **Bijwerken vanuit de bronnent repository** te openen. Het toont een voorbeeld van de wijzigingen in controles, tests, risicoscenario's en bedreigingen. Items die uit het bronreferentiekader zijn verwijderd, zijn gemarkeerd met het label **Afwezig van de bron**.
+Klik op **bijwerken** om het venster **Bijwerken vanuit het bronreferentiekader** te openen. Het toont een voorbeeld van de wijzigingen in controles, tests, risicoscenario's en bedreigingen. Items die uit het bronreferentiekader zijn verwijderd, zijn gemarkeerd met het label **Verwijderd uit de bron**.
 
 Klik op **Valideren**: op basis van de bron wordt een gepubliceerde versie van het kader aangemaakt, die de huidige versie wordt. Eerdere versies en de projecten die ze gebruiken, worden niet beïnvloed.
 
@@ -100,7 +100,7 @@ Klik op **Valideren**: op basis van de bron wordt een gepubliceerde versie van h
 
 ### De te installeren versie kiezen
 
-Wanneer een kader aan een project wordt toegevoegd (**Een framework aan het project toevoegen**), worden alleen gepubliceerde versies aangeboden. Bestaan er meerdere gepubliceerde versies, dan verschijnt naast de naam van het kader een keuzelijst (**Te installeren versie**), met de huidige versie vooraf geselecteerd. Het project wordt vervolgens gekoppeld aan de geïnstalleerde versie.
+Wanneer een kader aan een project wordt toegevoegd (**Een kader aan het project toevoegen**), worden alleen gepubliceerde versies aangeboden. Bestaan er meerdere gepubliceerde versies, dan verschijnt naast de naam van het kader een keuzelijst (**Te installeren versie**), met de huidige versie vooraf geselecteerd. Het project wordt vervolgens gekoppeld aan de geïnstalleerde versie.
 
 ### Een project herkennen dat moet worden bijgewerkt
 
@@ -110,7 +110,7 @@ In het projectoverzicht toont de kaart van elk kader het nummer van de gebruikte
 
 ### Een project naar een andere versie verplaatsen
 
-1. Open in het projectoverzicht het actiemenu van de kaderkaart en klik op **Werk de versie van het framework bij**.
+1. Open in het projectoverzicht het actiemenu van de kaderkaart en klik op **De versie van het kader bijwerken**.
 2. Kies de **Doelversie** uit de andere gepubliceerde versies. De versieopmerking en een voorbeeld van de items die aan het project worden toegevoegd, worden getoond.
 3. Klik op **Valideren**.
 

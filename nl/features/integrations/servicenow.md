@@ -30,7 +30,7 @@ De installatie volgt de gemeenschappelijke integratiestroom (zie [Verbindingen, 
    Voorbeeld:\
    [https://app.dastra.eu/workspace/0/settings/integrations/servicenow](https://app.dastra.eu/workspace/0/settings/integrations/servicenow)
 2. Klik bij het gebruiksscenario voor het importeren van activa op **Integratie toevoegen**.
-3. Voeg een verbinding toe en kies de **Authentificatiemethode** (zie hieronder).
+3. Voeg een verbinding toe en kies de **Authenticatiemethode** (zie hieronder).
 4. Rond de stap **Configuratie** af. Ze is verplicht om de installatie te voltooien.
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt="Het venster voor het aanmaken van de ServiceNow-verbinding"><figcaption><p>De ServiceNow-verbinding aanmaken</p></figcaption></figure>
@@ -42,7 +42,7 @@ De installatie volgt de gemeenschappelijke integratiestroom (zie [Verbindingen, 
 1. Maak in ServiceNow een OAuth-app voor Dastra aan: All > Application Registry (in recente versies: Inbound integrations > Authorization code grant), type OAuth API endpoint for external clients.
 2. Stel de redirect-URL in op `https://api.dastra.eu/v1/integrationaccounts/callback/servicenow`.
 3. Zorg dat de scopebeperking van de app op Broadly scoped staat (of declareer de scope `useraccount`): een securely scoped app zonder scopes weigert de tokenuitwisseling.
-4. Maak in Dastra de verbinding aan met de methode **OAuth**, vul de **URL van de instantie**, de OAuth client ID en de OAuth client secret in, klik op **Opslaan en inloggen** en autoriseer Dastra in ServiceNow.
+4. Maak in Dastra de verbinding aan met de methode **OAuth**, vul de **URL van de instantie**, de OAuth client ID en de OAuth client secret in, klik op **Opslaan en verbinden** en autoriseer Dastra in ServiceNow.
 
 **Basisauthenticatie**: gebruikersnaam en wachtwoord van een ServiceNow-account, door Dastra versleuteld opgeslagen.
 
@@ -52,10 +52,10 @@ Recente ServiceNow-instanties beperken basisauthenticatie op de REST API op acco
 
 ## Configuratie
 
-* Selecteer de **Gebruikers te notificeren in geval van een fout** (verplicht). Zij ontvangen een e-mail wanneer een synchronisatie mislukt, met informatie over de bijgewerkte activa.
-* **Maak het Dastra-register aan als het nog niet bestaat**: als deze optie is ingeschakeld, wordt een activum aangemaakt als het niet in Dastra bestaat, op basis van de externe referentie.
-* **Dubbele elementen synchroniseren**: vergelijk binnenkomende applicaties met bestaande activa op een **Correspondentieveld** (**Label** of **Referentie**) om ze bij te werken in plaats van duplicaten aan te maken.
-* **Veldmapping**: kies welk ServiceNow-veld (uit `cmdb_ci_business_app`) elk Dastra-veld vult. De keuzelijsten worden live uit het gegevenswoordenboek van uw instantie gelezen, zodat u keuzewaarden naar Dastra-waarden kunt transcoderen. Zie [Verbindingen, gebruiksscenario's en veldmapping](connections.md).
+* Selecteer de **Gebruikers die bij een fout op de hoogte worden gebracht** (verplicht). Zij ontvangen een e-mail wanneer een synchronisatie mislukt, met informatie over de bijgewerkte activa.
+* **Het Dastra-record aanmaken als het nog niet bestaat**: als deze optie is ingeschakeld, wordt een activum aangemaakt als het niet in Dastra bestaat, op basis van de externe referentie.
+* **Gesynchroniseerde items ontdubbelen**: vergelijk binnenkomende applicaties met bestaande activa op een **Vergelijkingsveld** (**Label** of **Referentie**) om ze bij te werken in plaats van duplicaten aan te maken.
+* **Veldtoewijzing**: kies welk ServiceNow-veld (uit `cmdb_ci_business_app`) elk Dastra-veld vult. De keuzelijsten worden live uit het gegevenswoordenboek van uw instantie gelezen, zodat u keuzewaarden naar Dastra-waarden kunt transcoderen. Zie [Verbindingen, gebruiksscenario's en veldmapping](connections.md).
 
 {% hint style="info" %}
 Let op: als u de aanmaakoptie inschakelt, kunnen er automatisch veel activa in uw werkruimte worden aangemaakt. Configureer de externe referenties daarom zorgvuldig.
@@ -79,7 +79,7 @@ De synchronisatie loopt automatisch één keer per dag en u kunt ze op elk momen
 * de datum van de laatste synchronisatie
 * de eigenaar van het activum
 
-U kunt elk van deze standaardgedragingen per veld overschrijven in de editor voor de **Veldmapping**. Al deze gegevens zorgen voor een betrouwbare en actuele koppeling tussen uw ServiceNow-CMDB en uw Dastra-repository.
+U kunt elk van deze standaardgedragingen per veld overschrijven in de editor voor de **Veldtoewijzing**. Al deze gegevens zorgen voor een betrouwbare en actuele koppeling tussen uw ServiceNow-CMDB en uw Dastra-repository.
 
 ### Beheer van activa die in ServiceNow zijn verwijderd
 

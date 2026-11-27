@@ -12,7 +12,7 @@ U bepaalt:
 * de purgeermodus (verwijderen of anonimiseren),
 * de maximale bewaartermijn waarna het opschonen automatisch plaatsvindt.
 
-Open om dit in te stellen de instellingen voor de werkruimte, ga naar het onderdeel **Proces**, daarna naar **Verzoeken tot uitoefening van rechten** en naar de sectie **Regels voor opschonen**.
+Open om dit in te stellen de instellingen voor de werkruimte, ga naar het onderdeel **Proces**, daarna naar **Verzoeken van betrokkenen** en naar de sectie **Regels voor opschonen**.
 
 ***
 
@@ -30,7 +30,7 @@ Dastra controleert elke nacht de verzoeken aan de hand van hun datum van verplaa
 
 ## Purgeermodi
 
-Kies bij **Selecteer een purgeermodus** een van de twee modi.
+Kies bij **Selecteer een opschoningsmodus** een van de twee modi.
 
 ### Verzoeken verwijderen
 
@@ -55,7 +55,7 @@ De verzoeken blijven zichtbaar in Dastra, maar hun persoonsgegevens worden verva
 
 ## Bewaartermijn voor het opschonen
 
-Vul bij **Maximale bewaartijd in de prullenbak (in dagen)** de maximale leeftijd in van een verzoek in de prullenbak voordat het wordt opgeschoond, bijvoorbeeld 180 dagen. De termijn wordt geteld vanaf de datum waarop het verzoek naar de prullenbak is verplaatst.
+Vul bij **Maximale bewaartermijn voor verzoeken in de prullenbak (in dagen)** de maximale leeftijd in van een verzoek in de prullenbak voordat het wordt opgeschoond, bijvoorbeeld 180 dagen. De termijn wordt geteld vanaf de datum waarop het verzoek naar de prullenbak is verplaatst.
 
 Dastra haalt elke nacht rond 02:30 UTC de betrokken verzoeken op en voert het opschonen uit in de geselecteerde modus.
 
@@ -75,4 +75,4 @@ Elke nacht worden alle verzoeken die langer dan 180 dagen in de prullenbak staan
 * Stel een termijn in die past bij uw interne bewaarbeleid voor verzoeken (bijvoorbeeld 5 jaar, oftewel 1.825 dagen).
 * Kies verwijderen voor een volledige wissing.
 * Kies anonimiseren als u activiteitsstatistieken wilt bewaren.
-* Controleer of **Automatische verwijdering van in de prullenbak geplaatste verzoeken inschakelen** aanstaat: anders vindt er geen opschoning plaats.
+* Controleer of **Automatische opschoning van verzoeken in de prullenbak inschakelen** aanstaat: anders vindt er geen opschoning plaats.

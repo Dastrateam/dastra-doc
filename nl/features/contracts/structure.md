@@ -22,7 +22,7 @@ Onder de titel, links, geeft het snelkoppelingenmenu toegang tot de elementen di
 
 * de interne discussies;
 * de gekoppelde taken, als taakbeheer actief is;
-* het auditlogboek, als audit actief is, en de activiteitengeschiedenis van het document (**Historisch**);
+* het auditlogboek, als audit actief is, en de **Activiteitengeschiedenis** van het document;
 * de gekoppelde conformiteitstests, als de module Conformiteit actief is (zie [Details en bijlagen](documents.md));
 * de regelmatige beoordeling van het document (zie [Regelmatige beoordeling van documenten](review.md)).
 
@@ -42,7 +42,7 @@ De pijl rechts van **Opslaan** opent drie acties:
 
 * **Delen**: een deellink voor het document aanmaken.
 * **Exporteren**: het document exporteren (zie [Contracten en beleidslijnen](README.md#importeren-en-exporteren)).
-* **Verplaats naar de prullenbak**: het document in de prullenbak plaatsen.
+* **Naar de prullenbak verplaatsen**: het document in de prullenbak plaatsen.
 
 Een document in de prullenbak draagt het label **In de prullenbak**. Hetzelfde menu biedt dan **Herstellen** om het document terug te zetten in het dossier en **Verwijderen** om het te verwijderen.
 
@@ -54,7 +54,7 @@ Rechts op het scherm staan vier tabbladen. Hun inhoud verandert wanneer u van he
 
 * **Details**: de algemene informatie, de bijlagen en de aangepaste velden (zie [Details en bijlagen](documents.md)).
 * **Signers - Signatories**: de partijen die het document ondertekenen (zie [Ondertekenaars](signers.md)).
-* **Actief**: de activa waarop het document betrekking heeft (zie [Activa](assets.md)).
+* **Activa**: de activa waarop het document betrekking heeft (zie [Activa](assets.md)).
 * **Users**: de gebruikers van de werkruimte die aan het document werken (zie [Gekoppelde gebruikers](users.md)).
 
 Behalve bij **Details** toont elk tabblad tussen haakjes het aantal elementen dat het bevat.

@@ -15,8 +15,8 @@ In Dastra is de categorie van een cookie de categorie van de dienst waartoe het 
 
 * **Strikt noodzakelijk**: cookies die van nature van toestemming zijn vrijgesteld, bijvoorbeeld sessie- of toestemmingscookies;
 * **Voorkeuren**;
-* **Analyse van het publiek**;
-* **Marketing en gebruikerservaring**;
+* **Analytisch**;
+* **Marketing**;
 * **Sociale netwerken**;
 * **Andere**.
 
@@ -28,7 +28,7 @@ In Dastra is de categorie van een cookie de categorie van de dienst waartoe het 
 
 1. Open de banner: **Toestemming voor cookies** > **Banners** en klik daarna op de banner.
 2. Klap de sectie **Diensten** uit.
-3. Klik op de dienst die u wilt classificeren. Kies op het tabblad **Basisinformatie** een waarde in het veld **Doel van deze dienst**.
+3. Klik op de dienst die u wilt classificeren. Kies op het tabblad **Informatie over de dienst** een waarde in het veld **Doel van deze dienst**.
 4. Bevestig en klik daarna op **Opslaan**.
 
 <figure><img src="../../../.gitbook/assets/cookies-classify-1.png" alt="De sectie Diensten van de bannereditor, met het doel onder de naam van elke dienst"><figcaption><p>Het doel van elke dienst staat onder de naam ervan</p></figcaption></figure>
@@ -38,7 +38,7 @@ In Dastra is de categorie van een cookie de categorie van de dienst waartoe het 
 Een dienst kan niet worden opgeslagen met het doel **Niet geclassificeerd**: kies een van de bovenstaande categorieën.
 
 {% hint style="info" %}
-U bepaalt per dienst of toestemming moet worden gevraagd, met de optie **Toestemming vragen voor deze cookies? (knopweergave)**. Voor de categorie **Strikt noodzakelijk** is die optie uitgeschakeld.
+U bepaalt per dienst of toestemming moet worden gevraagd, met de optie **Toestemming vragen voor deze cookies? (knoppen weergeven)**. Voor de categorie **Strikt noodzakelijk** is die optie uitgeschakeld.
 {% endhint %}
 
 {% hint style="warning" %}

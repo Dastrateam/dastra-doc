@@ -15,7 +15,7 @@ In Dastra is het standaardmodel van de PIA gekoppeld aan één verwerking. U kun
 
 U kunt een e-mailsjabloon maken dat u gebruikt in de uitnodigingen voor vragenlijsten: klik in het planningsformulier naast het **Uitnodigingsbericht** op **Selecteer een sjabloon**.
 
-Voor andere automatiseringen gebruikt u een werkstroomregel. Reacties op vragenlijsten zijn een entiteit van werkstroomregels, met de naam **Indiening van questionnaire**. Om een regel te maken opent u een reactie, klikt u op de pijl naast de hoofdknop en daarna op **Regel voor werkstromen** en **Een werkstroomregel maken**. Een regel kan bijvoorbeeld een melding versturen of een taak aanmaken wanneer een reactie voldoet aan de voorwaarden die u hebt bepaald. Zie de pagina [Werkstroomregels](../settings/workflow-rules.md).
+Voor andere automatiseringen gebruikt u een werkstroomregel. Reacties op vragenlijsten zijn een entiteit van werkstroomregels, met de naam **Een vragenlijst beantwoorden**. Om een regel te maken opent u een reactie, klikt u op de pijl naast de hoofdknop en daarna op **Workflowregel** en **Een workflowregel aanmaken**. Een regel kan bijvoorbeeld een melding versturen of een taak aanmaken wanneer een reactie voldoet aan de voorwaarden die u hebt bepaald. Zie de pagina [Werkstroomregels](../settings/workflow-rules.md).
 
 ## Kan ik als externe respondent afbeeldingen in de antwoorden plaatsen?
 
@@ -23,7 +23,7 @@ Nee, dat is niet mogelijk. Deze optie is beschikbaar als u een interne responden
 
 ## Kan op basis van het antwoord op een vragenlijst automatisch een taak worden voorgesteld?
 
-Ja, dat kan bij het vraagtype **Lange tekst** door het vakje **Stel automatisch een taak(en) voor op basis van het antwoord** aan te vinken.
+Ja, dat kan bij het vraagtype **Lange tekst** door het vakje **Automatisch een of meer taken voorstellen op basis van het antwoord** aan te vinken.
 
 ## Kan ik een sjabloon voor vragenlijsten publiceren voor alle Dastra-gebruikers?
 
@@ -96,8 +96,8 @@ Nee, alleen de eigenaar van de vragenlijst kan in de Dastra-interface nieuwe res
 
 ## Is er een automatische herinnering wanneer een vragenlijst op validatie wacht?
 
-Momenteel ontvangt de eigenaar een melding (in Dastra en per e-mail) wanneer de respondent de vragenlijst afrondt, maar er is geen systeem voor periodieke automatische herinneringen. Om geen vragenlijsten in behandeling te missen zijn er twee alternatieven: controleer regelmatig **Mijn vragenlijsten**, gefilterd op de status **In afwachting van validatie**, of stel een werkstroomregel in om op regelmatige tijdstippen een vragenlijst of melding te versturen.
+Momenteel ontvangt de eigenaar een melding (in Dastra en per e-mail) wanneer de respondent de vragenlijst afrondt, maar er is geen systeem voor periodieke automatische herinneringen. Om geen vragenlijsten in behandeling te missen zijn er twee alternatieven: controleer regelmatig **Mijn antwoorden**, gefilterd op de status **In afwachting van validatie**, of stel een werkstroomregel in om op regelmatige tijdstippen een vragenlijst of melding te versturen.
 
 ## Vereisen dynamische selectievragen specifieke machtigingen voor respondenten?
 
-Ja. De vraagtypen **Dynamische selector met één keuze** en **Dynamische meerkeuzeselector** tonen lijsten met objecten uit Dastra (activa, verwerkingsactiviteiten, actoren enzovoort). Om die lijst te zien moet de respondent leestoegang hebben tot de bijbehorende objecten in Dastra. Een externe respondent zonder Dastra-account, of zonder de juiste machtigingen, kan de lijst niet zien.
+Ja. De vraagtypen **Dynamische enkelvoudige selectie (actoren, beveiligingsmaatregelen...)** en **Dynamische meervoudige selectie (actoren, beveiligingsmaatregelen...)** tonen lijsten met objecten uit Dastra (activa, verwerkingsactiviteiten, actoren enzovoort). Om die lijst te zien moet de respondent leestoegang hebben tot de bijbehorende objecten in Dastra. Een externe respondent zonder Dastra-account, of zonder de juiste machtigingen, kan de lijst niet zien.

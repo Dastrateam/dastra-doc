@@ -21,11 +21,11 @@ Zodra items zijn geselecteerd, opent u **Kies een bulkactie** boven de lijst, of
 <figure><img src="../../.gitbook/assets/general-lists-1.png" alt="De lijst van verwerkingsactiviteiten met drie geselecteerde regels en het geopende menu met bulkacties"><figcaption><p>Drie geselecteerde regels en het menu Kies een bulkactie</p></figcaption></figure>
 
 * **Velden bewerken**: wijzig de waarde van een of meer velden op alle geselecteerde items. Een venster met de titel **Batch edit** gevolgd door het aantal items opent. Alleen de velden die in bulk kunnen worden bewerkt, worden aangeboden.
-* **De werkstroomfase wijzigen**: verplaats alle geselecteerde items naar een andere werkstroomfase, in de modules die werkstroomfasen gebruiken.
+* **Workflowstap wijzigen**: verplaats alle geselecteerde items naar een andere werkstroomfase, in de modules die werkstroomfasen gebruiken.
 * **Exporteren**: exporteer de geselecteerde items.
-* **Verplaats naar de prullenbak**: zie [Prullenbak](#prullenbak).
+* **Naar de prullenbak verplaatsen**: zie [Prullenbak](#prullenbak).
 
-Voor de volledige lijst van acties van een module, zie de eigen pagina ervan, bijvoorbeeld [Acties uitvoeren op meerdere verwerkingsactiviteiten tegelijk](../ropa/README.md#acties-uitvoeren-op-meerdere-verwerkingsactiviteiten-tegelijk). Is de selectie groot, dan verwerkt Dastra ze op de achtergrond en toont het **De massaverwerking is gestart**: de lijsten worden bijgewerkt zodra de verwerking is voltooid.
+Voor de volledige lijst van acties van een module, zie de eigen pagina ervan, bijvoorbeeld [Acties uitvoeren op meerdere verwerkingsactiviteiten tegelijk](../ropa/README.md#acties-uitvoeren-op-meerdere-verwerkingsactiviteiten-tegelijk). Is de selectie groot, dan verwerkt Dastra ze op de achtergrond en toont het **Batchverwerking gestart**: de lijsten worden bijgewerkt zodra de verwerking is voltooid.
 
 ## De kolommen kiezen
 
@@ -35,9 +35,9 @@ Klik in de kop van de lijst op **Kolommen aanpassen** om kolommen weer te geven,
 
 In elke module verplaatst het verwijderen van een item dat eerst naar de prullenbak.
 
-1. Selecteer het item of de items en kies daarna **Verplaats naar de prullenbak**.
+1. Selecteer het item of de items en kies daarna **Naar de prullenbak verplaatsen**.
 2. Bevestig. Items in de prullenbak verschijnen niet meer in de lijsten, maar ze worden niet definitief verwijderd.
-3. Om ze te vinden, schakelt u **Bekijk prullenbak** of **Inclusief de mand** in, afhankelijk van de lijst.
+3. Om ze te vinden, schakelt u **Prullenbak bekijken** of **Inclusief prullenbak** in, afhankelijk van de lijst.
 4. Open het menu van een item in de prullenbak: **Herstellen** zet het terug in de lijsten, **Permanent verwijderen** verwijdert het.
 
 {% hint style="warning" %}
