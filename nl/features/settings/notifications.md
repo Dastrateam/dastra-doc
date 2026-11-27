@@ -22,7 +22,7 @@ Het meldingscentrum groepeert de waarschuwingen die u ziet via het meldingenpict
 * Het is beschikbaar voor alle gebruikers van de werkruimte.
 * Het kan niet worden aangepast: het wordt gedeeld door de hele werkruimte.
 * Het bevat algemene meldingen over recente activiteit: het aanmaken, wijzigen of verwijderen van items.
-* De knop **Verversen** laadt de lijst opnieuw, **Meer tonen** opent de geschiedenispagina en de schakelaar **Mijn activiteit** beperkt de lijst tot uw eigen acties.
+* De knop **Vernieuwen** laadt de lijst opnieuw, **Meer weergeven** opent de geschiedenispagina en de schakelaar **Mijn activiteit** beperkt de lijst tot uw eigen acties.
 
 <figure><img src="../../.gitbook/assets/settings-notifications-1.png" alt="Het paneel van het meldingscentrum met de tabbladen Meldingen en Toegewezen taken"><figcaption><p>Het meldingscentrum</p></figcaption></figure>
 
@@ -42,7 +42,7 @@ Elke gebruiker kiest in zijn profiel welke meldingen hij per e-mail ontvangt.
 
 <figure><img src="../../.gitbook/assets/settings-notifications-2.png" alt="Het avatarmenu met de vermelding Meldingscentrum"><figcaption><p>De vermelding "Meldingscentrum" van het avatarmenu</p></figcaption></figure>
 
-De pagina heeft drie blokken: **Pushmeldingen** (meldingen op het bureaublad, ook als uw browser gesloten is), **Marketing en reclame** (aanmelding voor de nieuwsbrief en commerciële communicatie) en **Meldingen van activiteiten**, dat de e-mailgebeurtenissen groepeert. Met de schakelaar boven aan dat laatste blok zet u alle gebeurtenissen in één keer aan of uit.
+De pagina heeft drie blokken: **Pushmeldingen** (meldingen op het bureaublad, ook als uw browser gesloten is), **Marketing en reclame** (aanmelding voor de nieuwsbrief en commerciële communicatie) en **Abonnement op meldingen van gebeurtenissen**, dat de e-mailgebeurtenissen groepeert. Met de schakelaar boven aan dat laatste blok zet u alle gebeurtenissen in één keer aan of uit.
 
 {% hint style="info" %}
 E-mailmeldingen zijn geschikt om te worden gewaarschuwd bij acties die een snelle reactie vragen (vragenlijsten, verzoeken, datalekken enzovoort).
@@ -52,7 +52,7 @@ E-mailmeldingen zijn geschikt om te worden gewaarschuwd bij acties die een snell
 
 Het aanpassen van e-mailmeldingen werkt alleen als de rol van de gebruiker dat toestaat.
 
-In de configuratie van de rollen (**Instelling van de organisatie** > **Rollen en machtigingen**) heeft elke module een selectievakje **Kennisgeving**. Is het niet aangevinkt, dan ontvangen gebruikers met die rol geen e-mailmelding voor die module, ongeacht hun persoonlijke voorkeuren. Is het wel aangevinkt, dan ontvangen ze ongeveer een uur na de laatste activiteit een gebundelde melding.
+In de configuratie van de rollen (**Configuratie van de organisatie** > **Rollen en machtigingen**) heeft elke module een selectievakje **Kennisgeving**. Is het niet aangevinkt, dan ontvangen gebruikers met die rol geen e-mailmelding voor die module, ongeacht hun persoonlijke voorkeuren. Is het wel aangevinkt, dan ontvangen ze ongeveer een uur na de laatste activiteit een gebundelde melding.
 
 {% hint style="info" %}
 De rol opent of sluit het recht om meldingen te ontvangen. De gebruiker kan zijn voorkeuren daarna verfijnen, maar alleen binnen de grenzen van wat zijn rol toestaat.

@@ -29,16 +29,16 @@ De andere functies worden met een selectievakje ingeschakeld, zonder eigen onder
 
 ## Publiceren en de publicatie annuleren
 
-Een nieuw aangemaakt Trust Center is een concept: de indicator rechtsboven op de pagina toont **Het Trust Center is in conceptmodus** en het portaal is niet online toegankelijk.
+Een nieuw aangemaakt Trust Center is een concept: de indicator rechtsboven op de pagina toont **Het vertrouwenscentrum is in conceptmodus** en het portaal is niet online toegankelijk.
 
 Om het te publiceren:
 
 1. Klik rechtsboven op de bewerkingspagina op **Publiceren**. De knop is uitgeschakeld zolang een verplicht veld leeg is.
 2. Bevestig de vraag "Wilt u het Trust Center opslaan en publiceren?". Alle wijzigingen worden opgeslagen.
 
-De indicator toont dan **Het Trust Center is gepubliceerd** en het portaal wordt toegankelijk voor iedereen die over de link beschikt, binnen de regels van het onderdeel **Veiligheid**.
+De indicator toont dan **Het vertrouwenscentrum is gepubliceerd** en het portaal wordt toegankelijk voor iedereen die over de link beschikt, binnen de regels van het onderdeel **Veiligheid**.
 
-Om het portaal ontoegankelijk te maken, klikt u op **Publicatie annuleren**. Dit geldt onmiddellijk, zonder bevestiging. Vanuit de lijst met Trust Centers biedt het menu van elke rij ook **Inschakelen** en **Uitzetten**.
+Om het portaal ontoegankelijk te maken, klikt u op **Publicatie annuleren**. Dit geldt onmiddellijk, zonder bevestiging. Vanuit de lijst met Trust Centers biedt het menu van elke rij ook **Inschakelen** en **Uitschakelen**.
 
 ## Het conformiteitsproject weergeven
 
@@ -46,7 +46,7 @@ Deze functie voegt een tabblad **Conformiteit** toe aan het portaal. Het present
 
 ### Het te tonen project kiezen
 
-1. Vink in het onderdeel **Configuratie** de optie **Weergave van het conformiteitsproject** aan.
+1. Vink in het onderdeel **Configuratie** de optie **Conformiteitsproject weergeven** aan.
 2. Open het onderdeel **Conformiteit**.
 3. Kies bij **Selecteer het conformiteitsproject dat u wilt weergeven** het project. Een Trust Center toont één project.
 4. Sla op en publiceer daarna het Trust Center als het nog niet is gepubliceerd.

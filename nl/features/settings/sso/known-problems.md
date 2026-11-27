@@ -71,7 +71,7 @@ Dastra gebruikt de eigenschap `Name` en niet `NameFormat`: de waarde staat wel i
 Oplossing:
 
 1. Open uw SSO-configuratie, sectie **Configuratie**.
-2. Vervang in het veld **De naam van de claim met het e-mailadres** de waarde door de naam die uw IdP daadwerkelijk publiceert (hier: `emailaddress`).
+2. Vervang in het veld **Toewijzing van de claimnaam voor het e-mailadres van de gebruiker (gebruikt als de gebruiker lokaal niet bestaat)** de waarde door de naam die uw IdP daadwerkelijk publiceert (hier: `emailaddress`).
 3. Sla op en voer een nieuwe test uit in een privévenster, zodat een nieuwe sessie wordt aangemaakt.
 
 ### De gebruiker heeft geen toegang tot de toepassing bij de identiteitsprovider
@@ -92,7 +92,7 @@ Controleer de status in de [gebruikerslijst van de organisatie](https://app.dast
 
 ### "SSO users autoprovisioning is not allowed for your organization"
 
-Dit bericht betekent dat de optie **Gebruiker aangemaakt als de gebruiker nog nooit is uitgenodigd voor Dastra** niet is ingeschakeld in uw SSO-configuratie. Zolang ze is uitgeschakeld, kan alleen een gebruiker die al voor Dastra is uitgenodigd via SSO inloggen.
+Dit bericht betekent dat de optie **Gebruiker automatisch aanmaken** niet is ingeschakeld in uw SSO-configuratie. Zolang ze is uitgeschakeld, kan alleen een gebruiker die al voor Dastra is uitgenodigd via SSO inloggen.
 
 Oplossing: een eigenaar van de organisatie schakelt de optie in bij de SSO-configuratie, sectie **Automatisch gebruikers aanmaken**, en kiest de rol die standaard wordt toegekend.
 
@@ -146,7 +146,7 @@ De eindpunten `/authorize` en `/token` worden dan automatisch gevonden via het w
 
 ### Het type reactie is onjuist
 
-Het veld **Type reactie (Standaard: id_token)** moet exact een van de waarden bevatten die uw IdP publiceert, meestal `id_token` of `code`.
+Het veld **Responstype (standaard: id_token)** moet exact een van de waarden bevatten die uw IdP publiceert, meestal `id_token` of `code`.
 
 Let op varianten met een koppelteken: de waarde `id-token` in plaats van `id_token` veroorzaakt een authenticatielus met een 400-fout bij het ophalen van het token. Controleer teken voor teken.
 
@@ -154,7 +154,7 @@ Mislukt de flow met `id_token`, probeer dan `code`: sommige IdP's staan de impli
 
 ### De clientauthenticatiemethode is niet de juiste
 
-Ziet de configuratie er correct uit maar kan het token niet worden opgehaald, dan accepteert uw IdP mogelijk geen clientauthenticatie met een geheime sleutel. Selecteer in de sectie **Configuratie** van de verbinding **Privésleutel JWT (private jwt assertion)** in plaats van **Geheime sleutel**, en vul daarna de privésleutel in PEM-formaat en de inhoud van het certificaat in. De velden worden beschreven bij [OpenId](openid.md).
+Ziet de configuratie er correct uit maar kan het token niet worden opgehaald, dan accepteert uw IdP mogelijk geen clientauthenticatie met een geheime sleutel. Selecteer in de sectie **Configuratie** van de verbinding **JWT-privésleutel** in plaats van **Geheime sleutel**, en vul daarna de privésleutel in PEM-formaat en de inhoud van het certificaat in. De velden worden beschreven bij [OpenId](openid.md).
 
 {% hint style="info" %}
 Met de privésleutel JWT hoeft u geen geheime sleutel meer op te geven en schakelt het type reactie over op `code`. Vergeet niet één keer op te slaan, zodat de URI van de openbare JSON-sleutel (`jwks_uri`) beschikbaar wordt, en declareer die daarna bij uw identiteitsprovider.

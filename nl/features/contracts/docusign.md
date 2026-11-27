@@ -10,12 +10,12 @@ Dastra heeft een native integratie met DocuSign, de oplossing voor elektronische
 
 ## De integratie installeren
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en klik op de kaart **Docusign**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en klik op de kaart **Docusign**.
 
    <figure><img src="../../.gitbook/assets/contracts-docusign-1.png" alt="De catalogus van integraties met de kaart Docusign"><figcaption><p>Selecteer Docusign in de integraties</p></figcaption></figure>
 2. Klik bij het gebruiksscenario voor contracten op **Integratie toevoegen**.
 3. Maak bij de stap **Verbinding** de verbinding aan: Dastra stuurt u door naar de authenticatie van Docusign om uw Docusign-account met Dastra te koppelen.
-4. Voer bij de configuratiestap **Account ID** en **Accountbasis-URI** in. U vindt ze in uw Docusign-account, op de pagina [Apps and Keys](https://apps.docusign.com/admin/apps-and-keys).
+4. Voer bij de configuratiestap **Account-ID** en **Accountbasis-URI** in. U vindt ze in uw Docusign-account, op de pagina [Apps and Keys](https://apps.docusign.com/admin/apps-and-keys).
 
    <figure><img src="../../.gitbook/assets/contracts-docusign-2.png" alt="De configuratiestap met de velden Account ID en Accountbasis-URI"><figcaption><p>De sleutels die u in Dastra invoert, afkomstig uit uw Docusign-account</p></figcaption></figure>
 5. Sla op. Dastra controleert het account bij Docusign.
@@ -36,7 +36,7 @@ Kies in het venster **Add signature** de optie **Sign with Docusign®** (zie [Ee
 
 Vul de volgende velden in:
 
-* **Select the signers whose signature you want to record.**: de ondertekenaars naar wie u het verzoek verstuurt. Een stakeholder zonder e-mailadres of die al heeft ondertekend, kan niet worden geselecteerd. De knop **Verversen** laadt de lijst opnieuw na een wijziging.
+* **Select the signers whose signature you want to record.**: de ondertekenaars naar wie u het verzoek verstuurt. Een stakeholder zonder e-mailadres of die al heeft ondertekend, kan niet worden geselecteerd. De knop **Vernieuwen** laadt de lijst opnieuw na een wijziging.
 * **Choose attachments added to the signature request**: de PDF-, DOC- of DOCX-bestanden die ter ondertekening worden verstuurd. Alle geldige bijlagen zijn standaard aangevinkt.
 * **Invitation email subject**: het onderwerp van de e-mail die naar de ondertekenaars wordt gestuurd (maximaal 80 tekens).
 * **Give detailed instructions for signing the document**: een optionele tekst, opgenomen in de uitnodigings-e-mail en zichtbaar voor de ondertekenaar in de Docusign-interface.

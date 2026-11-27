@@ -23,7 +23,7 @@ Klik in uw partnerorganisatie rechtsboven op uw naam en daarna op **Partnerporta
 Voorwaarde: u moet de eigenaar van de partnerorganisatie zijn om het portaal weer te geven.
 {% endhint %}
 
-Bovenaan het portaal staan het aantal **Klanten**, het aantal **Verzoeken** en de kaart **Partnerpagina**. De lijst van uw klanten staat eronder.
+Bovenaan het portaal staan het aantal **Klanten**, het aantal **Verzoeken** en de kaart **Profielpagina**. De lijst van uw klanten staat eronder.
 
 ## Uw klanten volgen
 
@@ -31,10 +31,10 @@ Elke klant is een kaart die zijn naam, zijn plan, het aantal gebruikers en entit
 
 Het menu ⋮ van de kaart biedt:
 
-* **Toegang tot de clientwerkruimte**: opent de organisatie van de klant in een nieuw tabblad. Het item is uitgeschakeld (**Geen toegangsrechten op client**) als u geen toegang hebt tot die organisatie.
+* **Naar de werkruimte van de klant**: opent de organisatie van de klant in een nieuw tabblad. Het item is uitgeschakeld (**Geen toegangsrechten voor de klant**) als u geen toegang hebt tot die organisatie.
 * **Abonnementsgegevens** en **Bekijk facturen**: openen de abonnements- en factuurpagina's van de klant, met dezelfde toegangscontrole.
 * **Klant bijwerken**: zie [Het abonnement van een klant wijzigen](#het-abonnement-van-een-klant-wijzigen).
-* **Een modelbibliotheek configureren**: zie [Een sjablonenbibliotheek instellen](#een-sjablonenbibliotheek-instellen).
+* **Een bronwerkruimte voor sjablonen configureren**: zie [Een sjablonenbibliotheek instellen](#een-sjablonenbibliotheek-instellen).
 
 ## Een klant toevoegen
 
@@ -42,7 +42,7 @@ Klik boven de lijst op **Klant toevoegen** en vul daarna het formulier in:
 
 * **Naam van de klantorganisatie**.
 * De contactpersoon van de klant (naam, e-mailadres, adres, plaats, postcode) en het **Land van klant**.
-* **Gewenste planning**, **Gewenste startdatum abonnement** en **Gewenste abonnementsduur**.
+* **Gewenst plan**, **Gewenste startdatum abonnement** en **Gewenste abonnementsduur**.
 * **Gewenst aantal entiteiten** en **Aantal medewerkers**.
 * **Bedrijfsregistratienummer** en het bewijs van de grootte van het bedrijf van de klant, dat u bijvoegt.
 
@@ -64,10 +64,10 @@ Klik in de kaart **Verzoeken** op **Bekijk aanvragen** om de lijst van uw verzoe
 
 ## Een sjablonenbibliotheek instellen
 
-U kunt de gebruikers van een klant een gecentraliseerde sjablonenbibliotheek geven. Klik in het menu ⋮ van de klantkaart op **Een modelbibliotheek configureren** en kies daarna de **Bronwerkruimte** die uw sjablonen bevat. Het menu-item wordt **Geconfigureerde bibliotheek**: klik erop om de bibliotheek te bewerken of te verwijderen.
+U kunt de gebruikers van een klant een gecentraliseerde sjablonenbibliotheek geven. Klik in het menu ⋮ van de klantkaart op **Een bronwerkruimte voor sjablonen configureren** en kies daarna de **Bronwerkruimte** die uw sjablonen bevat. Het menu-item wordt **Geconfigureerde bibliotheek**: klik erop om de bibliotheek te bewerken of te verwijderen.
 
 ## Uw partnerpagina publiceren
 
-Met de kaart **Partnerpagina** maakt of bewerkt u een profielpagina op de Dastra-website om uw bedrijf te presenteren. Klik op **Creëren** en vul daarna het profiel in: logo, kleur, categorieën, talen, beschrijvingen, website, telefoonnummer, adres en **Contactemail**. Dit adres ontvangt de berichten die via het contactformulier van uw pagina worden verstuurd.
+Met de kaart **Profielpagina** maakt of bewerkt u een profielpagina op de Dastra-website om uw bedrijf te presenteren. Klik op **Aanmaken** en vul daarna het profiel in: logo, kleur, categorieën, talen, beschrijvingen, website, telefoonnummer, adres en **E-mailadres voor contact**. Dit adres ontvangt de berichten die via het contactformulier van uw pagina worden verstuurd.
 
 Nadat u hebt opgeslagen, blijft de pagina **In afwachting van publicatie**: Dastra controleert en valideert ze voordat ze live gaat. Zodra ze is gepubliceerd, opent een link **Tonen** de pagina.

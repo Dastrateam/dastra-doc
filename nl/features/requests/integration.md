@@ -17,7 +17,7 @@ Om de widget voor verzoeken van betrokkenen in te stellen hebt u een openbare AP
 
 ## De widget instellen in de speciale interface
 
-U stelt de widget eerst in via de lijst met formulieren: klik in het menu **Verzoeken** op **Collectie-widgets**.
+U stelt de widget eerst in via de lijst met formulieren: klik in het menu **Verzoeken** op **Formulieren**.
 
 <figure><img src="../../.gitbook/assets/requests-widget-1.png" alt="Lijst van formulieren met de knop Nieuwe widget"><figcaption><p>De lijst van formulieren</p></figcaption></figure>
 
@@ -78,7 +78,7 @@ dastra.push(['set', 'dsr:phoneNumber', '{phone}'])
 dastra.push(['set', 'dsr:message', '{message}'])
 ```
 
-De eigenschap `refId` is de unieke identificatie van de persoon in uw systeem (klant-ID, sessie-ID enzovoort). Ze wordt alleen-lezen weergegeven, en alleen als het veld **Persoonsreferentie** tot de actieve velden van het formulier behoort.
+De eigenschap `refId` is de unieke identificatie van de persoon in uw systeem (klant-ID, sessie-ID enzovoort). Ze wordt alleen-lezen weergegeven, en alleen als het veld **Referentie van de aanvrager** tot de actieve velden van het formulier behoort.
 
 Aangepaste velden:
 

@@ -14,23 +14,23 @@ Begin niet vanaf nul: gebruik een bestaand sjabloon en pas het aan. Zo hebt u ee
 
 ## Stap 1: het sjabloon aanmaken
 
-Klik in de module **Audits** op **Maak een sjabloon** en daarna op **Gepersonaliseerde audit**.
+Klik in de module **Audits** op **Maak een sjabloon** en daarna op **Gepersonaliseerde vragenlijst**.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-templates-2.png" alt="Venster voor het kiezen van een type sjabloon met de optie Gepersonaliseerde audit"><figcaption><p>De optie Gepersonaliseerde audit in het creatievenster</p></figcaption></figure>
 
 ## Stap 2: het sjabloon configureren
 
-Kies in het paneel **Maak een audittemplate** de volgende opties om alle DPIA-functies te benutten.
+Kies in het paneel **Een vragenlijstsjabloon aanmaken** de volgende opties om alle DPIA-functies te benutten.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-pia-1.png" alt="Configuratiepaneel met het DPIA-type en het gekoppelde object Verwerkingsactiviteit"><figcaption><p>De configuratie van een DPIA-sjabloon</p></figcaption></figure>
 
-* **Type audit**: kies **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**, het DPIA-type zoals de Nederlandse toepassing het toont (in het Engels Privacy impact assessment (DPIA)).
+* **Type audit**: kies **Gegevensbeschermingseffectbeoordeling (DPIA)**, het DPIA-type zoals de Nederlandse toepassing het toont (in het Engels Privacy impact assessment (DPIA)).
 
 {% hint style="info" %}
 Het DPIA-type toont de elementen die specifiek zijn voor DPIA's, in het bijzonder de heatmap in het dashboard van de vragenlijst, en brengt de gegevens van de verwerkingsactiviteit in wanneer de DPIA wordt gegenereerd. Het maakt het ook mogelijk DPIA's in JSON-indeling te importeren uit de PIA-tool van de CNIL.
 {% endhint %}
 
-* **Geauditeerd element**: kies de verwerkingsactiviteit. Uw DPIA-vragenlijst wordt dan aan een verwerkingsactiviteit gekoppeld en u vindt de DPIA terug vanuit die verwerkingsactiviteit. Bovendien wordt de **Datum laatste DPIA** van de verwerkingsactiviteit automatisch bijgewerkt wanneer de DPIA wordt gepubliceerd: wanneer de vragenlijst wordt afgerond als de beoordelingsstap is uitgeschakeld, anders wanneer ze wordt gevalideerd.
+* **Gekoppeld aan**: kies de verwerkingsactiviteit. Uw DPIA-vragenlijst wordt dan aan een verwerkingsactiviteit gekoppeld en u vindt de DPIA terug vanuit die verwerkingsactiviteit. Bovendien wordt de **Datum laatste DPIA** van de verwerkingsactiviteit automatisch bijgewerkt wanneer de DPIA wordt gepubliceerd: wanneer de vragenlijst wordt afgerond als de beoordelingsstap is uitgeschakeld, anders wanneer ze wordt gevalideerd.
 
 ## Stap 3: de variabelenamen bepalen
 
@@ -39,7 +39,7 @@ Sjablonen van het type DPIA voeden twee soorten elementen:
 * risicoanalyses (initiële impact en waarschijnlijkheid, residuele impact en waarschijnlijkheid);
 * herstelacties.
 
-Om het resultaatrapport van de DPIA te kunnen tonen, geeft u de variabelen van de secties (veld **Link (slug)**) en van de vragen (veld **Vraag-ID (slug)**) een naam volgens onderstaand plan. Het plan volgt het sjabloon PIA (CNIL) uit de bibliotheek, dat drie beveiligingsrisico's heeft. Elk risico heeft twee secties: de sectie van het initiële risico en de sectie van het residuele risico, waarvan de naam begint met `pia_todo_`.
+Om het resultaatrapport van de DPIA te kunnen tonen, geeft u de variabelen van de secties (veld **Slug van de sectie**) en van de vragen (veld **Vraag-ID (slug)**) een naam volgens onderstaand plan. Het plan volgt het sjabloon PIA (CNIL) uit de bibliotheek, dat drie beveiligingsrisico's heeft. Elk risico heeft twee secties: de sectie van het initiële risico en de sectie van het residuele risico, waarvan de naam begint met `pia_todo_`.
 
 <figure><img src="../../../.gitbook/assets/questionnaires-pia-2.png" alt="Venster Sectie configureren met het label Verdwijnen van gegevens en de slug pia_34"><figcaption><p>De slug van de sectie Verdwijnen van gegevens</p></figcaption></figure>
 

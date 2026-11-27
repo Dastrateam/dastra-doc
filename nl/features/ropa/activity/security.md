@@ -23,9 +23,9 @@ Beveiligingsmaatregelen voert u in in de sectie **Maatregelen** van de verwerkin
 1. Klik in de sectie **Maatregelen** op **Voeg een beveiligingsmaatregel toe** en selecteer de maatregelen die op de verwerkingsactiviteit van toepassing zijn.
 2. Bestaat een maatregel nog niet, klik dan op **Maak een maatregel** om hem aan te maken.
 
-De maatregelen worden getoond met hun type (bijvoorbeeld **Techniek**, **Organisatorisch**, **Fysiek** of **Gerelateerd aan indivuduen**). Voor elke maatregel kunt u in het veld **Geef details over de implementatie in deze verwerking** beschrijven hoe hij op deze verwerkingsactiviteit wordt toegepast.
+De maatregelen worden getoond met hun type (bijvoorbeeld **Technisch**, **Organisatorisch**, **Fysiek** of **Personen**). Voor elke maatregel kunt u in het veld **Geef details over de implementatie in deze verwerking** beschrijven hoe hij op deze verwerkingsactiviteit wordt toegepast.
 
-Klik op een maatregel om hem te bekijken of te bewerken. Via het menu **...** kunt u de maatregel ook **Bewerken**, **Ontdek meer** openen wanneer er een verwijzingslink beschikbaar is, of hem uit de verwerkingsactiviteit **Verwijderen**.
+Klik op een maatregel om hem te bekijken of te bewerken. Via het menu **...** kunt u de maatregel ook **Bewerken**, **Meer info** openen wanneer er een verwijzingslink beschikbaar is, of hem uit de verwerkingsactiviteit **Verwijderen**.
 
 {% hint style="info" %}
 De beveiligingsmaatregelen van een activum kunnen ook aan de verwerkingsactiviteit worden toegevoegd wanneer u de gegevens van het activum synchroniseert vanuit de sectie [Activa](assets.md).
@@ -33,6 +33,6 @@ De beveiligingsmaatregelen van een activum kunnen ook aan de verwerkingsactivite
 
 ## Implementatiestatus van de maatregelen
 
-Elke beveiligingsmaatregel die aan de verwerkingsactiviteit is gekoppeld, heeft een implementatiestatus: **Niet van toepassing**, **In project**, **Geplande implementatie**, **In uitvoering** of **Geïmplementeerd**. Een maatregel die aan de verwerkingsactiviteit wordt toegevoegd, krijgt standaard de status **Geïmplementeerd**.
+Elke beveiligingsmaatregel die aan de verwerkingsactiviteit is gekoppeld, heeft een implementatiestatus: **Niet van toepassing**, **Te doen**, **Gepland**, **In uitvoering** of **Geïmplementeerd**. Een maatregel die aan de verwerkingsactiviteit wordt toegevoegd, krijgt standaard de status **Geïmplementeerd**.
 
 Wijzig de status van een maatregel in de rij van de maatregelenlijst, of pas dezelfde status in één keer toe op alle maatregelen van de verwerkingsactiviteit met de selectie **Status** in de kop van de lijst.

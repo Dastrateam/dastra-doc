@@ -29,8 +29,8 @@ Er zijn twee manieren.
 
 Zo kunt u nog terug zolang de taak niet is verwijderd.
 
-1. Klik op de drie puntjes van de taak en daarna op **Verplaats naar de prullenbak**.
-2. Open **Filters** en selecteer **Bekijk prullenbak**.
+1. Klik op de drie puntjes van de taak en daarna op **Naar de prullenbak verplaatsen**.
+2. Open **Filters** en selecteer **Prullenbak bekijken**.
 3. Klik op de drie puntjes van de taak, daarna op **Verwijderen**, en bevestig.
 
 <figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Het paneel Filters met het vakje Bekijk prullenbak geselecteerd"><figcaption><p>Het filter Bekijk prullenbak</p></figcaption></figure>
@@ -49,7 +49,7 @@ Verwijderen is definitief. Om een spoor van de taak te bewaren, verplaatst u ze 
 
 U kunt op elke taak de geschatte en de werkelijke werklast invoeren. Zo meet u in uw evaluatie de tijd die aan taken is besteed.
 
-Voeg hiervoor aangepaste velden toe aan taken: klik in het zijmenu op **Instellingen voor werkruimte**, daarna op **Aangepaste velden**, en kies **Taak** in de lijst links. Zie [Aangepaste velden](../general/custom-fields.md).
+Voeg hiervoor aangepaste velden toe aan taken: klik in het zijmenu op **Instellingen van de werkruimte**, daarna op **Aangepaste velden**, en kies **Taak** in de lijst links. Zie [Aangepaste velden](../general/custom-fields.md).
 
 <figure><img src="../../.gitbook/assets/tasks-faq-3.png" alt="De pagina Aangepaste velden voor taken, met een groep van twee numerieke velden voor de geschatte en de werkelijke werklast"><figcaption><p>Een groep werklastvelden</p></figcaption></figure>
 

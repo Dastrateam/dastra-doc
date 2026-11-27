@@ -11,14 +11,14 @@ Vragenlijstsjablonen zijn ontworpen om met een Trust Center te werken. Ze werken
 
 * **Data processing project**: een verwerkingsactiviteit;
 * **Data breach creation request**: een datalek;
-* **Activa maken**: een actief uit de repository;
-* **Contracten maken**: een contract;
-* **Creatie van een AI-systeem**: een AI-systeem;
-* **Acteurscreatie**: een stakeholder.
+* **Activum aanmaken**: een actief uit de repository;
+* **Contract aanmaken**: een contract;
+* **Aanmaken van een AI-systeem**: een AI-systeem;
+* **Actor aanmaken**: een stakeholder.
 
 ## Een sjabloon toevoegen
 
-1. Open in de module **Vragenlijsten** de lijst **Vraagmodellen** en klik op **Maak een sjabloon**.
+1. Open in de module **Vragenlijsten** de lijst **Vragenlijstsjablonen** en klik op **Maak een sjabloon**.
 2. Kies in het venster **Kies het type audit** de optie **Geautomatiseerde audit**.
 3. Filter in de bibliotheek op **Soorten** of zoek het gewenste sjabloon en klik erop.
 
@@ -34,8 +34,8 @@ Antwoorden die via het Trust Center worden gegeven, komen aan in de module Vrage
 
 Op de pagina van het gevalideerde antwoord heet de knop:
 
-* **Aanmaak verzoek** gevolgd door het type object, bijvoorbeeld **Aanmaak verzoek (verwerkingsactiviteit)**, zolang het antwoord niet aan een object is gekoppeld;
-* **Gegevens samenvoegen** gevolgd door het type object, wanneer het antwoord al aan een object is gekoppeld.
+* **Aanmaakverzoek** gevolgd door het type object, bijvoorbeeld **Aanmaakverzoek (verwerkingsactiviteit)**, zolang het antwoord niet aan een object is gekoppeld;
+* **Samenvoegverzoek** gevolgd door het type object, wanneer het antwoord al aan een object is gekoppeld.
 
 Elk antwoord wordt gekoppeld aan het overeenkomstige veld van het object. Voor de volledige procedure, zie [Antwoorden samenvoegen in het gekoppelde object](../questionnaires/monitor.md#antwoorden-samenvoegen-in-het-gekoppelde-object).
 

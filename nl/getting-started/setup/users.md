@@ -9,7 +9,7 @@ description: >-
 
 U kunt iemand uitnodigen om samen te werken in uw werkruimten door die persoon uit te nodigen voor de organisatie waartoe de werkruimte behoort.
 
-1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Gebruikers**.
+1. Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Gebruikers**.
 2. Klik op **Een gebruiker uitnodigen**.
 3. Voer het e-mailadres van de persoon in. Is dit adres nog niet aan de organisatie gekoppeld, klik er dan op om verder te gaan.
 4. Vul het uitnodigingsformulier in (zie de onderstaande tabel) en klik op **Verstuur een uitnodiging per e-mail**.
@@ -25,14 +25,14 @@ U kunt iemand uitnodigen om samen te werken in uw werkruimten door die persoon u
 | **Uitnodigen voor alle werkruimten** | Schakelaar: zonder deze optie kiest u de betrokken werkruimte |
 | **Selecteer gebruikersrol(len)** | Zie [Rollen en machtigingen beheren](roles.md) |
 | **Selecteer gebruikersteams** | Zie [Teams aanmaken en toewijzen](teams.md) |
-| **Standaard verbindingsmodus** | Lokaal account (aanmeldnaam en wachtwoord) of SSO, wanneer een SSO is geconfigureerd |
+| **Standaard inlogmethode** | Lokaal account (aanmeldnaam en wachtwoord) of SSO, wanneer een SSO is geconfigureerd |
 | **Welkomstbericht** | Tekst die aan de uitnodigingsmail wordt toegevoegd |
 
 U kunt ook onderaan de linkerzijbalk op **Invite a member** klikken: dat opent hetzelfde formulier.
 
 De uitgenodigde persoon ontvangt een e-mail met een link die toegang geeft tot de werkruimte. U ontvangt een melding per e-mail wanneer de persoon op de link klikt. De uitnodigingslink verloopt na 10 dagen.
 
-In plaats van de e-mail te versturen, kunt u op **Een uitnodigingslink genereren** klikken: Dastra toont een link die u zelf aan de persoon doorgeeft.
+In plaats van de e-mail te versturen, kunt u op **Een link genereren** klikken: Dastra toont een link die u zelf aan de persoon doorgeeft.
 
 ### De openstaande uitnodigingen vinden
 

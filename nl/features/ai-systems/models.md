@@ -20,21 +20,21 @@ Een model voor kunstmatige intelligentie is een computerprogramma dat is ontworp
 
 ## De repository openen
 
-Klik op **AI-wet** in de zijbalk en daarna op **AI-modellen**.
+Klik op **AI-governance** in de zijbalk en daarna op **AI-modellen**.
 
 <figure><img src="../../.gitbook/assets/ai-systems-models-1.png" alt="Lijst met AI-modellen met de knop Een nieuw AI-model creëren en het bijbehorende menu"><figcaption><p>De repository van AI-modellen</p></figcaption></figure>
 
-De knop **Een nieuw AI-model creëren** opent het aanmaakvenster. Het menu ervan biedt ook:
+De knop **Nieuw AI-model aanmaken** opent het aanmaakvenster. Het menu ervan biedt ook:
 
-* **Maak vanuit de bibliotheek**: kies een model uit de bibliotheek van Dastra;
+* **Aanmaken vanuit de bibliotheek...**: kies een model uit de bibliotheek van Dastra;
 * **Importeren**: importeer een lijst met modellen vanuit een bestand, zie hieronder;
 * **Exporteren**: exporteer de lijst als CSV, Excel, JSON of Markdown.
 
 ## Een AI-model aanmaken
 
-Klik op **Een nieuw AI-model creëren**. Het venster biedt drie opties:
+Klik op **Nieuw AI-model aanmaken**. Het venster biedt drie opties:
 
-* **Genereren met de IA**: de AI-assistent vult het dossier in vanuit een naam of een beschrijving, zie de volgende paragraaf;
+* **Genereren met AI**: de AI-assistent vult het dossier in vanuit een naam of een beschrijving, zie de volgende paragraaf;
 * **Ingebouwde sjabloon**: maak het dossier aan vanuit onze bibliotheek of vanuit een andere werkruimte;
 * **Gepersonaliseerd**: voer het dossier zelf in.
 
@@ -51,7 +51,7 @@ Voer bij **Gepersonaliseerd** de naam van het model in en vul het dossier daarna
 | **Labels** | De labels waarmee u het model indeelt. |
 | **Beschrijf het AI-model** | De beschrijving, maximaal 3.000 tekens. Beschrijf de kenmerken en de informatie waarover u beschikt. |
 | **Leertype van de AI** | De methode waarmee het model is getraind, zie hieronder. |
-| **Is dit model een AI voor algemeen gebruik?** | Ja of nee. Een AI-model voor algemeen gebruik (GPAI) is veelzijdig en kan worden geïntegreerd in veel downstreamsystemen. Een tooltip herinnert aan de definitie van de AI-verordening. |
+| **Is dit model een AI-model voor algemene doeleinden?** | Ja of nee. Een AI-model voor algemeen gebruik (GPAI) is veelzijdig en kan worden geïntegreerd in veel downstreamsystemen. Een tooltip herinnert aan de definitie van de AI-verordening. |
 | **Houdt dit model een systeemrisico in?** | Ja of nee. De vraag verschijnt alleen als het model voor algemeen gebruik is. Een tooltip herinnert aan de definitie van systeemrisico. |
 | **Documentatie** | Een teksteditor voor de documentatie van het model. |
 
@@ -66,9 +66,9 @@ Het leertype beschrijft hoe het model is getraind om zijn taken uit te voeren. H
 
 ### Het dossier genereren met de AI-assistent
 
-De optie **Genereren met de IA** van het aanmaakvenster genereert het dossier van een AI-model vanuit een eenvoudige naam of beschrijving. Ze is beschikbaar als uw abonnement de bijbehorende AI-functies bevat. De assistent zoekt op het web om de relevante informatie op te zoeken en in te vullen.
+De optie **Genereren met AI** van het aanmaakvenster genereert het dossier van een AI-model vanuit een eenvoudige naam of beschrijving. Ze is beschikbaar als uw abonnement de bijbehorende AI-functies bevat. De assistent zoekt op het web om de relevante informatie op te zoeken en in te vullen.
 
-1. Klik op **Een nieuw AI-model creëren** en daarna op **Genereren met de IA**.
+1. Klik op **Nieuw AI-model aanmaken** en daarna op **Genereren met AI**.
 2. Voer de naam van het model of een korte beschrijving in, bijvoorbeeld "GPT-4o by OpenAI".
 3. Controleer en vul het gegenereerde dossier aan voordat u het bevestigt.
 
@@ -80,7 +80,7 @@ De gegenereerde content is een suggestie. Controleer en vul de informatie aan vo
 
 ### Modellen importeren en exporteren
 
-Om meerdere modellen te importeren, opent u het menu van de knop **Een nieuw AI-model creëren** en klikt u op **Importeren**. De procedure is dezelfde als in de andere modules: zie [Uw gegevens importeren (Excel, CSV)](../general/import.md). Het bestand kan de volgende kolommen bevatten:
+Om meerdere modellen te importeren, opent u het menu van de knop **Nieuw AI-model aanmaken** en klikt u op **Importeren**. De procedure is dezelfde als in de andere modules: zie [Uw gegevens importeren (Excel, CSV)](../general/import.md). Het bestand kan de volgende kolommen bevatten:
 
 | Kolom | Beschrijving |
 | --- | --- |

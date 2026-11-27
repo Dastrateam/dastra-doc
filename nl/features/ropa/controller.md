@@ -28,7 +28,7 @@ Voor elke verwerking vermeldt het register van een verwerkingsverantwoordelijke 
 7. de termijnen waarbinnen de verschillende categorieën van gegevens moeten worden gewist, dat wil zeggen de bewaartermijn of, bij gebrek daaraan, de criteria om die vast te stellen
 8. voor zover mogelijk, een algemene beschrijving van de technische en organisatorische beveiligingsmaatregelen die u treft
 
-In Dastra wordt een verwerkingsactiviteit die als verwerkingsverantwoordelijke is aangemaakt, gedocumenteerd in 12 secties: **Algemeen**, **Stakeholders**, **Doeleinden**, **Activa**, **Gegevens**, **Betrokken personen**, **Rechten van betrokkenen**, **Ontvangers**, **Maatregelen**, **Impactanalyse**, **Documentatie** en **Samenvatting**. De onderstaande paragrafen tonen waar u elk gegeven documenteert dat artikel 30 vereist.
+In Dastra wordt een verwerkingsactiviteit die als verwerkingsverantwoordelijke is aangemaakt, gedocumenteerd in 12 secties: **Algemeen**, **Stakeholders**, **Doeleinden**, **Activa**, **Gegevens**, **Betrokkenen**, **Rechten van betrokkenen**, **Ontvangers**, **Maatregelen**, **Impactanalyse**, **Documentatie** en **Samenvatting**. De onderstaande paragrafen tonen waar u elk gegeven documenteert dat artikel 30 vereist.
 
 <figure><img src="../../.gitbook/assets/ropa-controller-1.png" alt="Sectienavigatie van een verwerkingsactiviteit als verwerkingsverantwoordelijke"><figcaption><p>De verschillende secties van een verwerkingsactiviteit als verwerkingsverantwoordelijke in Dastra</p></figcaption></figure>
 
@@ -60,7 +60,7 @@ Elk doeleinde is gekoppeld aan zijn wettelijke basis, eveneens in de sectie **Do
 
 ## Inventaris van gegevens en betrokkenen
 
-Gedocumenteerd in de secties **Betrokken personen** en **Gegevens**:
+Gedocumenteerd in de secties **Betrokkenen** en **Gegevens**:
 
 * Type betrokkenen
 * Categorieën van gegevens

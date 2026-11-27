@@ -13,16 +13,16 @@ Deze pagina legt uit hoe u een incident in Dastra aanmaakt en hoe u elke stap va
 
 Er zijn drie manieren om een incident aan te maken:
 
-* handmatig, met de knop **Een datalek toevoegen**;
-* door een Excel-, CSV- of tekstbestand te importeren: open in het register de pijl van de knop **Een datalek toevoegen**, kies **Importeren** en volg de wizard die wordt beschreven in [Uw gegevens importeren (Excel, CSV)](../general/import.md);
+* handmatig, met de knop **Een incident aanmaken**;
+* door een Excel-, CSV- of tekstbestand te importeren: open in het register de pijl van de knop **Een incident aanmaken**, kies **Importeren** en volg de wizard die wordt beschreven in [Uw gegevens importeren (Excel, CSV)](../general/import.md);
 * per e-mail: een verzameladres zet elke e-mail die het ontvangt, met de bijlagen ervan, om in een incident. Zie [Gegevens verzamelen via inkomende e-mail](../settings/mailboxes.md).
 
 ### Een incident handmatig aanmaken
 
-1. Open **Operations** > **Incidenten** > **Incidentenregister** en klik op **Een datalek toevoegen**.
-2. Typ de **Titel van het datalek** en kies de **Organisatie-eenheid**. Beide velden zijn verplicht.
-3. Beantwoord de vraag **Bent u in het kader van dit incident een subcontractant?**. Het standaardantwoord is **Neen**.
-4. Klik op **Creëren**. Het incidentformulier opent op de eerste stap.
+1. Open **Operations** > **Incidenten** > **Incidentenregister** en klik op **Een incident aanmaken**.
+2. Typ de **Titel van het incident** en kies de **Organisatorische eenheid**. Beide velden zijn verplicht.
+3. Beantwoord de vraag **Bent u bij dit datalek een verwerker?**. Het standaardantwoord is **Nee**.
+4. Klik op **Aanmaken**. Het incidentformulier opent op de eerste stap.
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-1.png" alt="Venster voor het aanmaken van een incident met de titel, de organisatorische eenheid en de vraag over de rol"><figcaption><p>Het venster om een incident aan te maken</p></figcaption></figure>
 
@@ -34,10 +34,10 @@ De stappen van het formulier staan links. Een teller toont hoeveel items zijn in
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-2.png" alt="Incidentformulier op de stap Algemeen, met de lijst van stappen links"><figcaption><p>Het incidentformulier, hier op de stap Algemeen</p></figcaption></figure>
 
-* Klik op **Opslaan** om uw wijzigingen te bewaren, of open de pijl van de knop en kies **Opslaan en stoppen**.
+* Klik op **Opslaan** om uw wijzigingen te bewaren, of open de pijl van de knop en kies **Opslaan en afsluiten**.
 * Bovenaan het formulier geven tabbladen toegang tot de discussies, de gerelateerde taken, de relaties met andere objecten, de geschiedenis en de audits.
 * De keuzelijst voor de werkstroomfase brengt het incident vooruit in uw werkstroom. Zie [Workflowstappen](../settings/workflow-stages.md) om ze te configureren.
-* Het menu van de knop **Opslaan** geeft ook toegang tot **Exporteren**, **Delen**, **Regel voor werkstromen**, **Aangepaste velden**, **Dupliceren** en **Verplaats naar de prullenbak**.
+* Het menu van de knop **Opslaan** geeft ook toegang tot **Exporteren**, **Delen**, **Workflowregel**, **Aangepaste velden**, **Kopie maken** en **Naar de prullenbak verplaatsen**.
 
 De stap **Kennisgeving** verschijnt niet voor een incident dat als verwerker wordt behandeld en de stap **AI-systemen** verschijnt alleen als de module AI-systemen is ingeschakeld.
 
@@ -45,13 +45,13 @@ De stap **Kennisgeving** verschijnt niet voor een incident dat als verwerker wor
 
 Beschrijf het incident en de omstandigheden ervan:
 
-* **Titel van het datalek**, **Interne referentie**, **Organisatie-eenheid** en **Labels**;
-* **Type datalek**: **Verlies van confidentialiteit**, **Verlies van integriteit** of **Verlies van beschikbaarheid**. U kunt er meerdere aanvinken;
-* **Startdatum en -tijd van inbreuk**, **Einddatum en -tijd van inbreuk** en het vakje **Inbreuk is nog aan de gang**;
-* **Datum en tijd waarop de inbreuk werd vastgesteld**;
-* **Persoon die verantwoordelijk is voor het opvolgen van de inbreuk**;
-* **Algemene beschrijving van de inbreuk** en **Plaats van de inbreuk**;
-* **Oorzaken van het datalek** (Onbekend, Opzettelijke interne handeling, Toevallige interne handeling, Opzettelijke externe handeling, Toevallige externe handeling of Andere), een optionele secundaire reden en verdere details over de oorzaak;
+* **Titel van het incident**, **Interne referentie**, **Organisatorische eenheid** en **Labels**;
+* **Type datalek**: **Verlies van vertrouwelijkheid**, **Verlies van integriteit** of **Verlies van beschikbaarheid**. U kunt er meerdere aanvinken;
+* **Startdatum**, **Einddatum** en het vakje **Nog lopend**;
+* **Datum van vaststelling**;
+* **Incidentbeheerder**;
+* **Beschrijf het incident** en **Locatie van het incident**;
+* **Belangrijkste oorzaak van het incident** (Onbekend, Opzettelijke interne handeling, Toevallige interne handeling, Opzettelijke externe handeling, Toevallige externe handeling of Andere), een optionele secundaire reden en verdere details over de oorzaak;
 * **Zijn er verwerkers bij betrokken?** Antwoordt u **Ja**, vermeld dan de betrokken verwerkers onder de stakeholders van uw werkruimte.
 
 {% hint style="info" %}
@@ -62,17 +62,17 @@ De datum van vaststelling is het vertrekpunt van de meldtermijn. Voer de datum e
 
 Geef aan welke persoonsgegevens zijn getroffen:
 
-* **Datasets die betrokken zijn bij de inbreuk**: selecteer de datasets van uw werkruimte;
+* **Datasets die betrokken zijn bij het incident**: selecteer de datasets van uw werkruimte;
 * **Datavolume**: kies een waarde in een lijst (**Selecteer**) of typ een getal (**Voer een waarde in**). Dit is het geschatte aantal getroffen records;
-* **Gegevensdragers die betrokken zijn bij de inbreuk**;
+* **Gegevensbron**;
 * **Zijn er gevoelige gegevens bij betrokken?** Het antwoord voedt de indicator **Met gevoelige gegevens** van het register.
 
 ## Stap Maatregelen
 
 Beschrijf de beveiligingsmaatregelen in twee delen:
 
-* **Maatregelen vóór het datalek**: selecteer bestaande beveiligingsmaatregelen en vul aan met een tekst;
-* **Maatregelen genomen om de inbreuk te herstellen of om de negatieve gevolgen te verzachten**, op dezelfde manier weergegeven.
+* **Beveiligingsmaatregelen die vóór het incident bestonden**: selecteer bestaande beveiligingsmaatregelen en vul aan met een tekst;
+* **Beveiligingsmaatregelen genomen na het incident**, op dezelfde manier weergegeven.
 
 Dit is de informatie die artikel 33, lid 3, van de AVG u vraagt te beschrijven in de melding aan de toezichthoudende autoriteit.
 
@@ -82,18 +82,18 @@ Klik op **Voeg een categorie betrokkenen toe** voor elke getroffen categorie. Ki
 
 ## Stap Verwerkingen
 
-Selecteer onder **Geef verwerkingen aan die verband houden met het datalek** de betrokken verwerkingsactiviteiten van het register en vul daarna zo nodig **Aanvullende waarnemingen** in. Dastra gebruikt deze koppelingen ook om de verwerkingsverantwoordelijken van een incident als verwerker te vinden.
+Selecteer onder **Betrokken verwerkingsactiviteiten** de betrokken verwerkingsactiviteiten van het register en vul daarna zo nodig **Aanvullende informatie** in. Dastra gebruikt deze koppelingen ook om de verwerkingsverantwoordelijken van een incident als verwerker te vinden.
 
 ## Stap AI-systemen
 
-Wanneer een inbreuk een AI-systeem betreft, als oorzaak, als vector of omdat het de getroffen gegevens verwerkt, selecteert u het onder **Geef de systemen van IA gerelateerd aan het incident aan**. U kunt er meerdere koppelen, onder de AI-systemen van uw werkruimte.
+Wanneer een inbreuk een AI-systeem betreft, als oorzaak, als vector of omdat het de getroffen gegevens verwerkt, selecteert u het onder **Selecteer de AI-systemen die aan dit incident zijn gekoppeld**. U kunt er meerdere koppelen, onder de AI-systemen van uw werkruimte.
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-7.png" alt="Stap AI-systemen van een incident met de lijst van gekoppelde systemen"><figcaption><p>De stap AI-systemen</p></figcaption></figure>
 
 Met deze koppeling kunt u:
 
-* de kolom **AI-systemen** in het register weergeven en incidenten filteren met **AI-systemen** of **Gerelateerd aan een Systeem d'IA**;
-* het aandeel incidenten waarbij een AI-systeem betrokken is volgen met de indicator **Inclusief een systeem van IA** van het register en van de pagina **Statistieken**;
+* de kolom **AI-systemen** in het register weergeven en incidenten filteren met **AI-systemen** of **Gekoppeld aan een AI-systeem**;
+* het aandeel incidenten waarbij een AI-systeem betrokken is volgen met de indicator **Met een AI-systeem** van het register en van de pagina **Statistieken**;
 * de door AI gegenereerde post-mortem deze systemen laten meenemen.
 
 ## Stap Risicoanalyse
@@ -104,8 +104,8 @@ De risicoanalyse bepaalt of u de toezichthoudende autoriteit moet melden en de b
 
 Beantwoord eerst **Is er al een risicoanalyse uitgevoerd?**.
 
-* Bij **Neen** beoordeelt u het incident in Dastra. Kies een score van 1 (verwaarloosbaar) tot 4 (maximaal) voor **Identificatie van de betrokkenen**, die meet hoe gemakkelijk personen uit de gegevens kunnen worden geïdentificeerd, en voor **Impact op de betrokkenen**, die meet hoe ernstig de gevolgen voor hen zijn. Dastra telt de twee scores op en toont het **Risiconiveau**.
-* Bij **Ja** hebt u al een eigen analyse uitgevoerd. Kies het niveau in **Conclusie van de risicoanalyse: geschat risiconiveau** en klik daarna op **Verstuur mijn analyse** om het document bij te voegen in de stap Documentatie.
+* Bij **Nee** beoordeelt u het incident in Dastra. Kies een score van 1 (verwaarloosbaar) tot 4 (maximaal) voor **Waarschijnlijkheid van identificatie van de betrokkene**, die meet hoe gemakkelijk personen uit de gegevens kunnen worden geïdentificeerd, en voor **Impact op de betrokkenen**, die meet hoe ernstig de gevolgen voor hen zijn. Dastra telt de twee scores op en toont het **Risiconiveau**.
+* Bij **Ja** hebt u al een eigen analyse uitgevoerd. Kies het niveau in **Conclusie van de risicoanalyse** en klik daarna op **Analyse verzenden** om het document bij te voegen in de stap Documentatie.
 
 | Som van de twee scores | Risiconiveau | Gevolg dat Dastra toont |
 | --- | --- | --- |
@@ -129,7 +129,7 @@ Om een melding te registreren:
 
 1. Klik op **Voeg een melding toe**.
 2. Klik op de link "Go to the website of the competent authority" om de inbreuk op de website van de autoriteit te melden. Dastra verstuurt de melding niet: het houdt er een register van bij.
-3. Vul de datum van de melding in (in de app **Datum communicatie** genoemd), het **Meldingsnummer (verstrekt door de toezichthoudende autoriteit)** en de **Aanvullende waarnemingen**.
+3. Vul de datum van de melding in (in de app **Datum communicatie** genoemd), het **Meldingsnummer (verstrekt door de toezichthoudende autoriteit)** en de **Opmerkingen**.
 4. Bevestig het venster en sla daarna het formulier op.
 
 De aangeboden autoriteit is die van de organisatorische eenheid van het incident. Is er geen gedefinieerd, dan toont het venster "Er is geen toezichthoudende autoriteit gedefinieerd voor uw entiteit" en een link naar de instellingen van de organisatorische eenheid. Zie [Een leidende autoriteit toevoegen](../../getting-started/setup/lead-authority.md).
@@ -138,10 +138,10 @@ De aangeboden autoriteit is die van de organisatorische eenheid van het incident
 
 Deze stap volgt de informatieverstrekking aan de betrokkenen. Artikel 34 van de AVG vereist die wanneer de inbreuk waarschijnlijk een hoog risico inhoudt voor hun rechten en vrijheden.
 
-Een bericht herinnert u aan wat de risicoanalyse impliceert. Beantwoord daarna **Heb je een bericht gestuurd naar de betrokkenen?** met **Niet van toepassing**, **Ja** of **Neen**.
+Een bericht herinnert u aan wat de risicoanalyse impliceert. Beantwoord daarna **Hebt u de betrokkenen op de hoogte gebracht?** met **Niet van toepassing**, **Ja** of **Nee**.
 
-* Klik bij **Ja** op **Voeg een communicatie toe** en vul de **Ondersteuning voor kennisgeving** (e-mail, brief, telefoongesprek, banner op de website, communicatiecampagne of een andere manier), de **Datum communicatie**, het **Aantal op de hoogte gebrachte personen** en de verzonden inhoud in.
-* Beantwoord bij **Neen** de vraag **Waarom heeft u niet gecommuniceerd met de getroffenen**: "Het hoog risico zal zich wellicht niet langer voordoen" of "De gegevens zijn onleesbaar gemaakt". Licht uw keuze toe bij **Justificatie**.
+* Klik bij **Ja** op **Voeg een communicatie toe** en vul de **Communicatiemiddel** (e-mail, brief, telefoongesprek, banner op de website, communicatiecampagne of een andere manier), de **Datum communicatie**, het **Aantal op de hoogte gebrachte personen** en de verzonden inhoud in.
+* Beantwoord bij **Nee** de vraag **Waarom hebt u de betrokkenen niet geïnformeerd?**: "Het hoog risico zal zich wellicht niet langer voordoen" of "De gegevens zijn onleesbaar gemaakt". Licht uw keuze toe bij **Justificatie**.
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-5.png" alt="Venster Voeg een communicatie toe met de methode, de datum, het aantal personen en de inhoud"><figcaption><p>Het venster Voeg een communicatie toe</p></figcaption></figure>
 
@@ -151,11 +151,11 @@ Een post-mortem is een gedetailleerde evaluatie van het incident zodra het is op
 
 * typ de **Documentreferentie, locatie of url** als het document al elders bestaat;
 * klik op **Voeg een post-mortem als bijlage toe**;
-* schrijf de tekst in de editor, met **Gebruik de template** om te beginnen met een standaardopzet, of **Genereren met de IA**.
+* schrijf de tekst in de editor, met **Gebruik het sjabloon** om te beginnen met een standaardopzet, of **Genereren met AI**.
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-6.png" alt="Stap Post-mortem met de knoppen Gebruik de template, Genereren met de IA en Opslaan als pdf"><figcaption><p>De stap Post-mortem</p></figcaption></figure>
 
-**Genereren met de IA** schrijft een concept op basis van de informatie van het incident: context (met de gekoppelde verwerkingsactiviteiten en AI-systemen), tijdlijn, impact, maatregelen en risicoanalyse, communicatie, geleerde lessen en verbeterideeën. Controleer en corrigeer de tekst voordat u ze opslaat. **Opslaan als pdf** exporteert de geschreven post-mortem.
+**Genereren met AI** schrijft een concept op basis van de informatie van het incident: context (met de gekoppelde verwerkingsactiviteiten en AI-systemen), tijdlijn, impact, maatregelen en risicoanalyse, communicatie, geleerde lessen en verbeterideeën. Controleer en corrigeer de tekst voordat u ze opslaat. **Opslaan als pdf** exporteert de geschreven post-mortem.
 
 ## Stap Documentatie
 
@@ -163,14 +163,14 @@ Verzamel hier alles wat het incident documenteert: vrije tekst met links en afbe
 
 ## Stap Samenvatting
 
-De stap **Samenvatting** brengt alle informatie van het incident samen in een alleen-lezenvorm. Gebruik **Alles opvouwen** en **Implementeer alles** om door de secties te bladeren en **Afdrukken** voor een papieren kopie.
+De stap **Samenvatting** brengt alle informatie van het incident samen in een alleen-lezenvorm. Gebruik **Alles opvouwen** en **Alles implementeren** om door de secties te bladeren en **Afdrukken** voor een papieren kopie.
 
 ## Collega's uitnodigen om het incident aan te vullen
 
-Vaak werken meerdere personen aan een incident. Klik rechtsboven in het formulier op de gebruikersknop, naast de keuzelijst voor de werkstroomfase. Kies in het venster de **Sectie** die moet worden aangevuld, **Selecteer de uit te nodigen gebruikers**, typ uw bericht (u kunt beginnen met een sjabloon via **Selecteer een sjabloon**) en klik daarna op **Verstuur een uitnodiging**.
+Vaak werken meerdere personen aan een incident. Klik rechtsboven in het formulier op de gebruikersknop, naast de keuzelijst voor de werkstroomfase. Kies in het venster de **Sectie** die moet worden aangevuld, **Selecteer de uit te nodigen gebruikers**, typ uw bericht (u kunt beginnen met een sjabloon via **Selecteer een sjabloon**) en klik daarna op **Uitnodiging verzenden**.
 
 <figure><img src="../../.gitbook/assets/incidents-document-breach-8.png" alt="Uitnodigingsvenster met de sectie, de gebruikers en het bericht"><figcaption><p>Het venster om collega's uit te nodigen een incident aan te vullen</p></figcaption></figure>
 
 ## Een incident delen
 
-**Delen**, in het menu van de knop **Opslaan** of in het menu van de knop **Een datalek toevoegen** van het register, opent het venster om een deellink aan te maken. Voor de werking van deellinks in het algemeen, zie [Het verwerkingsregister delen](../ropa/share.md).
+**Delen**, in het menu van de knop **Opslaan** of in het menu van de knop **Een incident aanmaken** van het register, opent het venster om een deellink aan te maken. Voor de werking van deellinks in het algemeen, zie [Het verwerkingsregister delen](../ropa/share.md).

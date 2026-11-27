@@ -99,7 +99,7 @@ In een project opent een test in een venster met tabbladen:
 
 * **Testdetails**: label, **Eigenaar van de test**, status, **Testprocedure**, **Frequentie van de test** en bewijs;
 * **Geassocieerde controles**: de controles die de test verifieert;
-* **Fouten in tests**: de problemen die auditors bij deze test hebben gemeld (zie [Audits](../projects/audits.md));
+* **Testbevindingen**: de problemen die auditors bij deze test hebben gemeld (zie [Audits](../projects/audits.md));
 * **Context**: het project, de kaders en de perimeter waartoe de test behoort.
 
 ***
@@ -120,7 +120,7 @@ Een geautomatiseerde test gebruikt een Dastra-connector om:
 
 ### Een connector op een test installeren
 
-1. Open een handmatige test en klik op **Installeer connector**.
+1. Open een handmatige test en klik op **Koppeling toevoegen**.
 2. Selecteer de connector in **Kies een automatische bewijsverzamelaar om te installeren**.
 3. Stel de **Frequentie van de test** in (in dagen, maanden of jaren) en configureer de standaardwaarden van de connector.
 4. Klik op **Valideren**. Het verzamelen van bewijs start onmiddellijk met deze configuratie.
@@ -131,13 +131,13 @@ Klik vervolgens op **Uitvoeren** om het verzamelen op aanvraag opnieuw uit te vo
 
 | Connector | Verzamelt |
 | --- | --- |
-| **Verzamel questionnaires** | De vragenlijsten van de werkruimte, volgens criteria. |
+| **Verzamel audits** | De vragenlijsten van de werkruimte, volgens criteria. |
 | **Verzamel een contract of beleid** | Een contract of beleidsdocument, bijvoorbeeld om te controleren of het aanwezig en bijgewerkt is. |
 | **Verzamel het register van actoren** | De stakeholders (derden) van de werkruimte. |
-| **Verzamel het register van IA-systemen** | Het register van AI-systemen, bijvoorbeeld om hun documentatie te controleren. |
+| **Verzamel het register van AI-systemen** | Het register van AI-systemen, bijvoorbeeld om hun documentatie te controleren. |
 | **Verzamel het register van activa** | De activa van de werkruimte. |
-| **Verzamel het incidentenregister** | De incidenten van de werkruimte. |
-| **Verzamelt het register van gegevensverwerking** | De verwerkingsactiviteiten van het register. |
+| **Verzamel datalekken** | De incidenten van de werkruimte. |
+| **Verzamelt verwerkingsactiviteiten** | De verwerkingsactiviteiten van het register. |
 | **HTTP-verzoek** | Het resultaat van een verzoek aan een willekeurige API of een willekeurig eindpunt (zie hieronder). |
 
 Voorbeeld: een geautomatiseerde test kan nagaan of elk AI-systeem conforme en actuele documentatie heeft, zonder handmatige tussenkomst.
@@ -178,9 +178,9 @@ Met de configuratie-interface van de HTTP-connector bouwt u een verzoek op zonde
 | Tabblad **Auth** | Kies de **Authenticatie**: **Geen**, **API-sleutel**, **Autorisatietoken (Bearer)** of **Basisauthenticatie (Basic)**. De bijbehorende header wordt automatisch aan elk verzoek toegevoegd, zonder dat u JSON hoeft in te voeren. |
 | Tabblad **Headers** | Eigen headers als sleutel/waarde-paren, verzonden naast de authenticatie. |
 | Tabblad **URL-parameters** | Queryparameters als sleutel/waarde-paren, aan de URL toegevoegd. |
-| Tabblad **Body** | **Aanvraagtekst** in JSON-indeling. |
+| Tabblad **Body** | **Hoofdtekst van het verzoek** in JSON-indeling. |
 
-Gevoelige velden (API-sleutel, token, wachtwoord) zijn standaard afgeschermd. Met een oogpictogram maakt u ze tijdelijk zichtbaar. Alleen-lezen voorbeelden tonen wat er werkelijk wordt verzonden: **Headers die worden verzonden**, **URL die wordt aangeroepen** en **Aanvraagtekst die wordt verzonden**, waarbij gevoelige waarden afgeschermd blijven.
+Gevoelige velden (API-sleutel, token, wachtwoord) zijn standaard afgeschermd. Met een oogpictogram maakt u ze tijdelijk zichtbaar. Alleen-lezen voorbeelden tonen wat er werkelijk wordt verzonden: **Headers die worden verzonden**, **URL die wordt aangeroepen** en **Hoofdtekst van het verzoek die wordt verzonden**, waarbij gevoelige waarden afgeschermd blijven.
 
 ### Resultaat van het verzoek
 
@@ -213,7 +213,7 @@ Dastra kan het bewijs dat aan een test is gekoppeld automatisch analyseren en aa
 
 ### Werking
 
-Wanneer u bewijs aan een test toevoegt, vergelijkt de AI de inhoud van het bewijs met het label en de beschrijving van de testprocedure. Het resultaat verschijnt in de kolom **Waardering IA** van de bewijstabel, als een gekleurde badge:
+Wanneer u bewijs aan een test toevoegt, vergelijkt de AI de inhoud van het bewijs met het label en de beschrijving van de testprocedure. Het resultaat verschijnt in de kolom **AI-beoordeling** van de bewijstabel, als een gekleurde badge:
 
 | Waardering | Betekenis |
 | --- | --- |
@@ -233,17 +233,17 @@ De analyse past zich aan het type aangeleverd bewijs aan:
 | Afbeelding (schermafdruk, JPEG, PNG enzovoort) | Visuele analyse van de inhoud door een visueel model |
 | Document (PDF, Word) | Extractie van de tekst, daarna analyse van de tekst |
 
-De tooltip van de kolomkop **Waardering IA** herinnert aan deze methode.
+De tooltip van de kolomkop **AI-beoordeling** herinnert aan deze methode.
 
 ### Activering en instellingen
 
-De functie is optioneel en standaard uitgeschakeld. Om ze te activeren gaat u naar **Instellingen voor werkruimte** > **Conformiteit** en schakelt u de optie **Automatische IA-analyse van bewijsstukken** in.
+De functie is optioneel en standaard uitgeschakeld. Om ze te activeren gaat u naar **Instellingen van de werkruimte** > **Conformiteit** en schakelt u de optie **Automatische AI-analyse van bewijzen** in.
 
 {% hint style="info" %}
 Zolang de functie niet is geactiveerd, worden er geen bewijsgegevens naar het AI-model verzonden.
 {% endhint %}
 
-Om de analyse uit te schakelen klikt u op **Ik wil deze functie uitschakelen** in de tooltip van een resultaat: de link leidt naar de conformiteitsinstellingen. Het AI-model dat wordt gebruikt, kunt u naar keuze van uw organisatie configureren via de instellingen van de AI-assistent (modelfamilie of aangepaste AI-provider).
+Om de analyse uit te schakelen klikt u op **Ik wil deze analyse uitschakelen** in de tooltip van een resultaat: de link leidt naar de conformiteitsinstellingen. Het AI-model dat wordt gebruikt, kunt u naar keuze van uw organisatie configureren via de instellingen van de AI-assistent (modelfamilie of aangepaste AI-provider).
 
 ### Wat de analyse niet doet
 

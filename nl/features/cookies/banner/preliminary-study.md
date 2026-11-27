@@ -19,7 +19,7 @@ Deze mini-audit bereidt het integratiewerk van het technische team voor.
 
 ### De diensten en cookies van uw domeinnaam opsommen
 
-Als hulpmiddel kunt u de scantool voor cookies van Dastra gebruiken: klik in het menu op **Toestemming voor cookies** > **Banners** > **Creëer een widget** en kies daarna **Analyse van de website**. De tool herkent de diensten die op uw site zijn geïnstalleerd op basis van de cookiedatabase van Dastra.
+Als hulpmiddel kunt u de scantool voor cookies van Dastra gebruiken: klik in het menu op **Toestemming voor cookies** > **Banners** > **Een banner aanmaken** en kies daarna **Analyse van de website**. De tool herkent de diensten die op uw site zijn geïnstalleerd op basis van de cookiedatabase van Dastra.
 
 {% content-ref url="scan.md" %}
 [De op uw website geplaatste cookies scannen](scan.md)

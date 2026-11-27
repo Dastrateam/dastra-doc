@@ -17,7 +17,7 @@ U maakt op 5 manieren een verzoek van een betrokkene aan in Dastra:
 
 ### Een verzoek handmatig aanmaken
 
-Om handmatig een verzoek aan te maken vanuit het register klikt u in de zijbalk op **Verzoeken**, daarna op **Register van verzoeken** en vervolgens op de knop **Maak een aanvraag**.
+Om handmatig een verzoek aan te maken vanuit het register klikt u in de zijbalk op **Verzoeken**, daarna op **Register van verzoeken** en vervolgens op de knop **Verzoek aanmaken**.
 
 <figure><img src="../../.gitbook/assets/requests-manage-1.png" alt="Het register van verzoeken, met de knop Maak een aanvraag"><figcaption><p>Het register van verzoeken</p></figcaption></figure>
 
@@ -29,15 +29,15 @@ U kunt verzoeken ook automatisch aanmaken (zie hieronder).
 
 Om verzoeken aan te maken vanuit een verzameladres voor e-mail activeert u eerst de integratie **Incoming mail data collection** (zie [Gegevens verzamelen via inkomende e-mail](../settings/mailboxes.md)).
 
-Open daarvoor **Instellingen voor werkruimte**, daarna de sectie **Integraties** en klik op de kaart **Incoming mail data collection**.
+Open daarvoor **Instellingen van de werkruimte**, daarna de sectie **Integraties** en klik op de kaart **Incoming mail data collection**.
 
 <figure><img src="../../.gitbook/assets/requests-manage-2.png" alt="De kaart van de integratie voor het verzamelen van inkomende e-mails"><figcaption><p>De integratie "Incoming mail data collection" in Dastra</p></figcaption></figure>
 
 {% hint style="info" %}
-Is deze integratie nog niet geïnstalleerd, installeer ze dan. Vanuit het register van verzoeken leidt de optie **Transformeer e-mails naar verzoeken van betrokkenen** in het menu van de knop **Maak een aanvraag** er rechtstreeks naartoe.
+Is deze integratie nog niet geïnstalleerd, installeer ze dan. Vanuit het register van verzoeken leidt de optie **E-mails omzetten in verzoeken** in het menu van de knop **Verzoek aanmaken** er rechtstreeks naartoe.
 {% endhint %}
 
-Klik daarna in de lijst **Voorgeconfigureerde gebruikssituaties** op **Integratie toevoegen** bij de regel **Transform an incoming email into a request to exercise rights with associated attachments**. Er wordt automatisch een e-mailadres aangemaakt.
+Klik daarna in de lijst **Vooraf geconfigureerde gebruiksgevallen** op **Integratie toevoegen** bij de regel **Transform an incoming email into a request to exercise rights with associated attachments**. Er wordt automatisch een e-mailadres aangemaakt.
 
 <figure><img src="../../.gitbook/assets/requests-manage-3.png" alt="De voorgeconfigureerde gebruikssituatie die een inkomende e-mail omzet in een verzoek"><figcaption></figcaption></figure>
 
@@ -61,7 +61,7 @@ Verzoeken kunnen ook vanuit een andere tool worden aangemaakt via de REST API va
 
 ## Verzoeken importeren en exporteren
 
-Klik op de pijl naast de knop **Maak een aanvraag** en daarna op **Importeren**.
+Klik op de pijl naast de knop **Verzoek aanmaken** en daarna op **Importeren**.
 
 Volg vervolgens de handleiding voor [het importeren van gegevens in Dastra](../general/import.md).
 

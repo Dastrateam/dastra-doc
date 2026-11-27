@@ -176,9 +176,9 @@ Voorbeeld: de controle ‘Periodieke review van toegangsrechten’ voldoet aan e
 
 Het dashboard bevat:
 
-* globale indicatoren. Controles: **Totaal aantal controles**, **Geverifieerde controles**, **Niet geïmplementeerd** en **Weescontroles** (zonder gekoppelde vereiste). Tests: **Totaal aantal tests**, **Geverifieerde tests**, **Mislukte tests** en **Ontbrekende bewijzen**. Audits: **Totaal aantal audits**, **Voltooide audits** en **Gemiddelde conformiteit**, met de verdeling van de vereisten over **Conform**, **Deels conform**, **Niet conform** en **Niet van toepassing**;
-* **Vooruitgang van de frameworks**: per kader het aantal projecten en de voortgang van controles, tests, vereisten en risico's;
+* globale indicatoren. Controles: **Totaal aantal controles**, **Geslaagde controles**, **Niet geïmplementeerd** en **Weescontroles** (zonder gekoppelde vereiste). Tests: **Totaal aantal tests**, **Geslaagde tests**, **Mislukte tests** en **Ontbrekende bewijzen**. Audits: **Totaal aantal audits**, **Voltooide audits** en **Gemiddelde gereedheid**, met de verdeling van de vereisten over **Conform**, **Deels conform**, **Niet conform** en **Niet van toepassing**;
+* **Voortgang per kader**: per kader het aantal projecten en de voortgang van controles, tests, vereisten en risico's;
 * **Projecten per status**: de verdeling van de projecten per fase;
-* **Conformiteit per scope**: het conformiteitsniveau van elke perimeter.
+* **Conformiteit per perimeter**: het conformiteitsniveau van elke perimeter.
 
 <figure><img src="../../.gitbook/assets/compliance-statistics-1.png" alt="Conformiteitsdashboard met de globale indicatoren, de vooruitgang van de kaders en de conformiteit per perimeter"><figcaption></figcaption></figure>

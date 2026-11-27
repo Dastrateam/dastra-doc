@@ -79,7 +79,7 @@ Als u de volgende velden in uw werkruimte definieert:
 
 * `my_string_field`: een veld van het type **Tekst**;
 * `my_boolean_field`: een veld van het type **Booleaans**;
-* `my_numeric_field`: een veld van het type **Aantal (geheel getal)**;
+* `my_numeric_field`: een veld van het type **Getal (geheel)**;
 * `my_checkbox_field`: een veld van het type **Selectievakje**.
 
 kunt u ze als volgt wijzigen:

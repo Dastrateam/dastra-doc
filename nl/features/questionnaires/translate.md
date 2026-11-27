@@ -10,13 +10,13 @@ Vanuit de sjablooneditor vertaalt de AI-assistent alle secties en alle vragen va
 
 Een vertaling starten:
 
-1. Open in **Vraagmodellen** het menu van het te vertalen sjabloon en klik op **Bewerken** om de editor te openen.
+1. Open in **Vragenlijstsjablonen** het menu van het te vertalen sjabloon en klik op **Bewerken** om de editor te openen.
 2. Klik in de rechterkolom op **Vertaal de vragenlijst**.
-3. Kies de **Doel taal**.
+3. Kies de **Doeltaal**.
 4. Kies bij **Opslaan als** een van de twee opties:
    * **Nieuwe versie**: vervangt de huidige versie van dit sjabloon door de vertaling;
-   * **Nieuwe onafhankelijke sjabloon**: maakt een apart sjabloon aan zonder koppeling met het origineel.
-5. Klik op **Genereer**.
+   * **Nieuw onafhankelijk sjabloon**: maakt een apart sjabloon aan zonder koppeling met het origineel.
+5. Klik op **Genereren**.
 
 <figure><img src="../../.gitbook/assets/questionnaire-translate-button.png" alt="Knop Vertaal de vragenlijst in de sjablooneditor"><figcaption><p>De knop Vertaal de vragenlijst in de sjablooneditor</p></figcaption></figure>
 

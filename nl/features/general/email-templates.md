@@ -18,25 +18,25 @@ Om een sjabloon te gebruiken, klikt u naast het veld voor het opstellen van het 
 
 <figure><img src="../../.gitbook/assets/general-email-templates-1.png" alt="Berichtveld van een verzoek van een betrokkene met de knop Selecteer een sjabloon"><figcaption><p>De knop Selecteer een sjabloon bij een verzoek van een betrokkene</p></figcaption></figure>
 
-Het paneel **Selectie van het model** opent. Zoek in de lijst een sjabloon, open de sjablonen onder **Gedeeld** of **Privé** van elk type, of kies een andere werkruimte waartoe u toegang hebt. Klik naast het gewenste sjabloon op **Selecteer**.
+Het paneel **Selecteer een sjabloon** opent. Zoek in de lijst een sjabloon, open de sjablonen onder **Gedeeld** of **Privé** van elk type, of kies een andere werkruimte waartoe u toegang hebt. Klik naast het gewenste sjabloon op **Selecteer**.
 
 <figure><img src="../../.gitbook/assets/general-email-templates-2.png" alt="Paneel voor het selecteren van een sjabloon met de zoekfunctie, de tabbladen per type en de knop Maak een sjabloon"><figcaption><p>Het paneel om een sjabloon te selecteren</p></figcaption></figure>
 
 Past geen enkel sjabloon, klik dan op **Maak een sjabloon**. Het aanmaakvenster bevat:
 
 * de naam van het sjabloon, zodat u het later terugvindt;
-* de **Body van de template**, het invoerveld;
+* de **Inhoud van het sjabloon**, het invoerveld;
 * de optie om het sjabloon te delen met alle gebruikers van de werkruimte;
-* het tabblad **Overzicht**, dat de weergave van het bericht in real time toont;
+* het tabblad **Voorbeeld**, dat de weergave van het bericht in real time toont;
 * het tabblad **Input Data**, dat de gegevens toont van het object waarop het sjabloon betrekking heeft.
 
-De tabbladen **Overzicht** en **Input Data** verschijnen alleen als u het sjabloon aanmaakt vanaf de plaats waar u het bericht schrijft, niet vanuit de instellingen.
+De tabbladen **Voorbeeld** en **Input Data** verschijnen alleen als u het sjabloon aanmaakt vanaf de plaats waar u het bericht schrijft, niet vanuit de instellingen.
 
 <figure><img src="../../.gitbook/assets/general-email-templates-3.png" alt="Aanmaakvenster van een sjabloon met de naam, de body, het overzicht en het tabblad Input Data"><figcaption><p>Het aanmaakvenster van een sjabloon</p></figcaption></figure>
 
 ## Het sjabloon aanpassen
 
-In de body van het sjabloon past u stijlen toe en voegt u afbeeldingen of tabellen in. Het resultaat verschijnt in het tabblad **Overzicht**.
+In de body van het sjabloon past u stijlen toe en voegt u afbeeldingen of tabellen in. Het resultaat verschijnt in het tabblad **Voorbeeld**.
 
 Om een gegeven van het object in te voegen, klikt u op het pictogram met accolades in de werkbalk (**Dynamische velden invoegen**) en kiest u een veld in de lijst. De waarde van het veld wordt op de cursor ingevoegd.
 
@@ -52,7 +52,7 @@ Het tabblad **Input Data** toont de eigenschappen van het gekoppelde object. Om 
 
 1. Zoek het veld in het tabblad **Input Data**.
 2. Voer de naam ervan in de body van het sjabloon in met de syntaxis `{{message}}`.
-3. Controleer het resultaat in het tabblad **Overzicht**.
+3. Controleer het resultaat in het tabblad **Voorbeeld**.
 
 U kunt verder gaan met lussen, voorwaarden en datumnotaties.
 

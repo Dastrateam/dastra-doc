@@ -79,10 +79,10 @@ Met het juiste risiconiveau bepaalt u de toepasselijke verplichtingen, geeft u p
 
 ### De classificatie genereren met AI
 
-Als uw abonnement de bijbehorende AI-functies bevat, verschijnt de knop **Genereren classificatie** boven de keuze van het niveau. Hij stelt een risiconiveau voor op basis van de informatie die al in het dossier staat.
+Als uw abonnement de bijbehorende AI-functies bevat, verschijnt de knop **Classificatie genereren** boven de keuze van het niveau. Hij stelt een risiconiveau voor op basis van de informatie die al in het dossier staat.
 
-1. Klik op **Genereren classificatie**. Het venster toont de gegevens die naar het AI-model worden verzonden: naam van het systeem, beschrijving, modellen, rol onder de AI-verordening, activa, gekoppelde verwerkingsactiviteiten, datasets en categorieën van betrokkenen.
-2. Klik op **Genereer**.
+1. Klik op **Classificatie genereren**. Het venster toont de gegevens die naar het AI-model worden verzonden: naam van het systeem, beschrijving, modellen, rol onder de AI-verordening, activa, gekoppelde verwerkingsactiviteiten, datasets en categorieën van betrokkenen.
+2. Klik op **Genereren**.
 3. Lees het voorstel: het risiconiveau, een rechtvaardiging die de toepasselijke bepalingen van de AI-verordening aanhaalt, de betrouwbaarheidsscore van de analyse en de ontbrekende informatie die de classificatie kan wijzigen of versterken.
 4. Klik op **Toepassen op het formulier** om het niveau en de rechtvaardiging in de stap over te nemen, of op **Terug** om de generatie opnieuw uit te voeren.
 5. Controleer het resultaat, corrigeer het indien nodig en sla het dossier op.
@@ -95,13 +95,13 @@ Het voorstel van de AI-assistent helpt u het systeem te classificeren. Het verva
 
 ### Classificatievragenlijst
 
-Zolang er geen risiconiveau is ingesteld, biedt een vak **Hulp nodig om het niveau van risico te bepalen?** aan een vragenlijst voor AI-risicobeoordeling uit te voeren. Ze helpt u de classificatie van het systeem volgens de AI-verordening te bepalen: verboden praktijken, hoogrisicogebieden en transparantieverplichtingen.
+Zolang er geen risiconiveau is ingesteld, biedt een vak **Twijfelt u over het risiconiveau?** aan een vragenlijst voor AI-risicobeoordeling uit te voeren. Ze helpt u de classificatie van het systeem volgens de AI-verordening te bepalen: verboden praktijken, hoogrisicogebieden en transparantieverplichtingen.
 
-Klik op **Een risico-evaluatie starten** en kies een sjabloon van het type **AI system risk assessment**. De vragenlijst wordt ingepland zoals elke andere: zie [Een audit of PIA plannen](../questionnaires/schedule.md). Als het venster geen sjabloon toont, installeert u er een uit de bibliotheek, zoals voor de [beoordeling van de gevolgen](fria.md). Het vak verschijnt als uw abonnement de module **Vragenlijsten** bevat en u vragenlijsten mag aanmaken.
+Klik op **Classificatievragenlijst starten** en kies een sjabloon van het type **AI system risk assessment**. De vragenlijst wordt ingepland zoals elke andere: zie [Een audit of PIA plannen](../questionnaires/schedule.md). Als het venster geen sjabloon toont, installeert u er een uit de bibliotheek, zoals voor de [beoordeling van de gevolgen](fria.md). Het vak verschijnt als uw abonnement de module **Vragenlijsten** bevat en u vragenlijsten mag aanmaken.
 
 ## Bedrijfswaarde van een AI-systeem
 
-De stap **Bedrijfswaarde** beoordeelt de waarde van het systeem voor uw organisatie. Selecteer een van de drie niveaus, **Laag**, **medium** of **Hoog**, en leg daarna in het veld **Voordeel rechtvaardiging** uit wat het systeem concreet oplevert, bijvoorbeeld:
+De stap **Bedrijfswaarde** beoordeelt de waarde van het systeem voor uw organisatie. Selecteer een van de drie niveaus, **Laag**, **Gemiddeld** of **Hoog**, en leg daarna in het veld **Rechtvaardiging van het voordeel** uit wat het systeem concreet oplevert, bijvoorbeeld:
 
 * een winst in operationele prestaties;
 * een betere servicekwaliteit;
@@ -111,7 +111,7 @@ De stap **Bedrijfswaarde** beoordeelt de waarde van het systeem voor uw organisa
 
 ### De evaluatie genereren met AI
 
-De knop **Genereer de evaluatie** werkt zoals **Genereren classificatie**. De AI-assistent analyseert de context van het dossier (doel, modellen, activa, gekoppelde verwerkingsactiviteiten) en stelt een niveau van bedrijfswaarde voor, met een rechtvaardiging. Klik op **Genereer**, controleer het voorstel en klik daarna op **Toepassen op het formulier**. Corrigeer de tekst indien nodig en sla het dossier op.
+De knop **Beoordeling genereren** werkt zoals **Classificatie genereren**. De AI-assistent analyseert de context van het dossier (doel, modellen, activa, gekoppelde verwerkingsactiviteiten) en stelt een niveau van bedrijfswaarde voor, met een rechtvaardiging. Klik op **Genereren**, controleer het voorstel en klik daarna op **Toepassen op het formulier**. Corrigeer de tekst indien nodig en sla het dossier op.
 
 ## Waarom beide stappen invullen
 

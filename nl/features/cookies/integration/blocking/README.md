@@ -35,7 +35,7 @@ Door:
 </script>
 ```
 
-Vervang `{your-service-slug}` door de identificatie van de dienst, die u vindt in het veld **Naam van de variabele (belangrijk voor integratie van toestemming)** van het dienstformulier:
+Vervang `{your-service-slug}` door de identificatie van de dienst, die u vindt in het veld **Naam van de variabele** van het dienstformulier:
 
 <figure><img src="../../../../.gitbook/assets/cookies-blocking-2.png" alt="Het veld Naam van de variabele van een dienstformulier"><figcaption><p>De identificatie van de dienst</p></figcaption></figure>
 
@@ -53,7 +53,7 @@ Deze methode heeft neveneffecten: de syntaxiskleuring van de meeste code-editors
 
 ### De door de toepassing gegenereerde codefragmenten gebruiken
 
-Voor elke dienst genereert de sectie **Integratie van toestemming** van de banner kant-en-klare codefragmenten en een checklist. Er zijn drie tabbladen: **Html integration** (het fragment hierboven), **Custom javascript** (het blokkeren in pure JavaScript, hieronder) en **Google tag manager** (de gebeurtenissen die u in Google Tag Manager koppelt).
+Voor elke dienst genereert de sectie **Integratie van cookietoestemmingen** van de banner kant-en-klare codefragmenten en een checklist. Er zijn drie tabbladen: **Html integration** (het fragment hierboven), **Custom javascript** (het blokkeren in pure JavaScript, hieronder) en **Google tag manager** (de gebeurtenissen die u in Google Tag Manager koppelt).
 
 ## Blokkeren in pure JavaScript
 

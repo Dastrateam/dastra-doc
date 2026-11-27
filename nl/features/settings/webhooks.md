@@ -13,15 +13,15 @@ Een webhook activeert een actie als reactie op een gebeurtenis. Webhooks laten s
 
 ## Configuratie
 
-Webhooks worden op organisatieniveau geconfigureerd en zijn voorbehouden aan eigenaren. Klik op het tandwielpictogram in de bovenbalk (**Organisatie-instellingen**) en daarna in het linkermenu op **Webhaken**. Het directe adres is [https://app.dastra.eu/general-settings/webhooks](https://app.dastra.eu/general-settings/webhooks).
+Webhooks worden op organisatieniveau geconfigureerd en zijn voorbehouden aan eigenaren. Klik op het tandwielpictogram in de bovenbalk (**Organisatie-instellingen**) en daarna in het linkermenu op **Webhooks**. Het directe adres is [https://app.dastra.eu/general-settings/webhooks](https://app.dastra.eu/general-settings/webhooks).
 
 <figure><img src="../../.gitbook/assets/settings-webhooks-1.png" alt="De lijst met geconfigureerde webhooks en hun status"><figcaption><p>De lijst met webhooks</p></figcaption></figure>
 
-1. Klik op **Maak een webhook url**.
+1. Klik op **Webhook-URL aanmaken**.
 2. Vul de **Webhook url** in. Wat die ontvangt, leest u in [Hoe ontvangt u de webhook](webhooks.md#comment-receptionner-le-webhook).
-3. Kies de werkruimte bij **Een specifieke werkruimte selecteren**. Kiest u er geen, dan geldt de webhook voor **Alle werkplekken**.
+3. Kies de werkruimte bij **Een specifieke werkruimte selecteren**. Kiest u er geen, dan geldt de webhook voor **Alle werkruimten**.
 4. Optioneel: vul het **E-mailadres dat wordt gebruikt om een melding te versturen bij herhaaldelijk falen** in. Dastra stuurt een e-mail naar dit adres wanneer de webhook in fout gaat.
-5. Selecteer bij **Welk(e) event(s) wil je ontvangen?** de gebeurtenis of gebeurtenissen waarop u zich wilt abonneren. Minstens één gebeurtenis is verplicht. Het type gegevens dat wordt teruggestuurd, hangt af van de gebeurtenis: kiest u bijvoorbeeld het aanmaken van een verzoek van een betrokkene, dan bevat de inhoud van het verzoek een JSON die dat verzoek beschrijft.
+5. Selecteer bij **Op welke gebeurtenissen wilt u zich abonneren?** de gebeurtenis of gebeurtenissen waarop u zich wilt abonneren. Minstens één gebeurtenis is verplicht. Het type gegevens dat wordt teruggestuurd, hangt af van de gebeurtenis: kiest u bijvoorbeeld het aanmaken van een verzoek van een betrokkene, dan bevat de inhoud van het verzoek een JSON die dat verzoek beschrijft.
 6. Klik op **Opslaan**.
 
 <figure><img src="../../.gitbook/assets/settings-webhooks-3.png" alt="Het formulier voor het aanmaken van een webhook met url, werkruimte, e-mailadres en gebeurtenissen"><figcaption><p>Het webhookformulier</p></figcaption></figure>
@@ -32,7 +32,7 @@ De beschikbare gebeurtenissen zijn die van het meldingscentrum, gegroepeerd per 
 Een organisatie kan maximaal 30 webhooks declareren.
 {% endhint %}
 
-Daarna opent het detailscherm van de webhook. Het toont de url, de werkruimte, de status van de webhook (**Actief** of **Uitgeschakeld**), in voorkomend geval de **Laatste foutmelding**, de gekozen gebeurtenissen en de **Webhook-validatiesleutel**, die u kunt kopiëren. De knoppen **Bewerken**, **Stuur een test webhook** en **Verwijderen** staan er ook.
+Daarna opent het detailscherm van de webhook. Het toont de url, de werkruimte, de status van de webhook (**Actief** of **Uitgeschakeld**), in voorkomend geval de **Laatste foutmelding**, de gekozen gebeurtenissen en de **Webhook-validatiesleutel**, die u kunt kopiëren. De knoppen **Bewerken**, **Een testwebhook verzenden** en **Verwijderen** staan er ook.
 
 <figure><img src="../../.gitbook/assets/settings-webhooks-2.png" alt="Het detailscherm van een webhook met verborgen validatiesleutel"><figcaption><p>De details van een webhook</p></figcaption></figure>
 
@@ -64,11 +64,11 @@ Er bestaat momenteel geen systeem om mislukte webhooks opnieuw af te spelen en z
 
 ## Uw webhook url testen
 
-Om uw webhook onder realistische omstandigheden te testen, opent u het detailscherm en klikt u op **Stuur een test webhook**. Doe in het venster **Webhook testtool** het volgende:
+Om uw webhook onder realistische omstandigheden te testen, opent u het detailscherm en klikt u op **Een testwebhook verzenden**. Doe in het venster **Webhook testtool** het volgende:
 
-1. Kies bij **Kies het evenement dat je wilt testen** de gebeurtenis die u wilt testen. De lijst toont de gebeurtenissen waarop de webhook is geabonneerd.
-2. Wijzig indien nodig de verzonden gegevens bij **Verzonden gegevens bewerken (indien nodig)**. Dastra vult het veld met een voorbeeld voor de gekozen gebeurtenis.
-3. Klik op **Stuur een test webhook**.
+1. Kies bij **Kies de gebeurtenis die u wilt testen** de gebeurtenis die u wilt testen. De lijst toont de gebeurtenissen waarop de webhook is geabonneerd.
+2. Wijzig indien nodig de verzonden gegevens bij **Pas de standaardpayload aan (indien nodig)**. Dastra vult het veld met een voorbeeld voor de gekozen gebeurtenis.
+3. Klik op **Een testwebhook verzenden**.
 
 Een bevestigingsbericht toont dat uw url met een 200-code heeft geantwoord. Was de webhook na fouten geblokkeerd, dan schakelt een geslaagde test hem weer in.
 

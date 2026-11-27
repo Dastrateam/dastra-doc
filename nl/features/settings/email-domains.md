@@ -13,14 +13,14 @@ Met e-maildomeinen wijst u toekomstige collega's rechtstreeks toe aan een werkru
 
 ## E-maildomeinen configureren
 
-Het blok **Geautoriseerde e-maildomeinen** staat bovenaan de pagina **Eenmalig inloggen**: open **Organisatie-instellingen** > **Eenmalig inloggen**.
+Het blok **Geautoriseerde e-maildomeinen** staat bovenaan de pagina **Single sign-on**: open **Organisatie-instellingen** > **Single sign-on**.
 
 <figure><img src="../../.gitbook/assets/settings-email-domains-1.png" alt="Het blok Geautoriseerde e-maildomeinen, met een ingevuld domein, de ingeschakelde optie, de standaardrol en de werkruimte"><figcaption><p>Het blok Geautoriseerde e-maildomeinen, bovenaan de pagina Eenmalig inloggen</p></figcaption></figure>
 
 1. Vul bij **Typ hier uw topdomein** elk domein in (bijvoorbeeld `dastra.eu`) en druk op Enter of klik op **Toevoegen**.
-2. Schakel **Laat gebruikers met geregistreerde e-maildomeinen toe tot de organisatie** in.
-3. Kies bij **Standaard rol** de rol die aan toekomstige gebruikers wordt toegewezen. De rol **Gast (geen toegang tot gegevens)** wordt standaard aangeboden.
-4. Kies bij **Een specifieke werkruimte selecteren** de betrokken werkruimte, of laat **Alle werkplekken** staan.
+2. Schakel **Gebruikers met geregistreerde e-maildomeinen toestaan lid te worden van de organisatie** in.
+3. Kies bij **Standaardrol** de rol die aan toekomstige gebruikers wordt toegewezen. De rol **Gast (geen toegang tot gegevens)** wordt standaard aangeboden.
+4. Kies bij **Een specifieke werkruimte selecteren** de betrokken werkruimte, of laat **Alle werkruimten** staan.
 5. Klik op **Opslaan**.
 
 U kunt de rol en de werkruimte alleen wijzigen zolang de optie van stap 2 is ingeschakeld.
@@ -35,4 +35,4 @@ Persoonlijke e-maildomeinen (gmail, hotmail enzovoort) en domeinen die als wegwe
 
 Een collega die zich bij Dastra registreert, moet nog steeds zijn e-mailadres invullen en valideren. Dastra stelt hem daarna voor om zich bij uw organisatie aan te sluiten.
 
-Hij klikt op **Neem contact op met** en kan met u aan de slag.
+Hij klikt op **Aansluiten** en kan met u aan de slag.

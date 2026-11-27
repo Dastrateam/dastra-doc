@@ -65,7 +65,7 @@ Het Dastra-CMP-script kan rechtstreeks in de broncode van de pagina worden geïn
 
 ## Nieuwe diensten toevoegen en toestemming opnieuw instellen
 
-Dastra toont de toestemmingsbanner niet automatisch opnieuw aan bezoekers die al een keuze hebben gemaakt wanneer er nieuwe diensten aan de configuratie worden toegevoegd. Voegt u een nieuw hulpmiddel toe (bijvoorbeeld een nieuwe analysedienst) en moet u voor die dienst toestemming van bestaande bezoekers verzamelen, dan moet u de toestemming opnieuw instellen vanuit de Dastra-interface. De actie **Het verzamelen van bewijs van toestemming opnieuw instellen** in het menu **Acties** van de banner dwingt af dat de banner bij hun volgende bezoek opnieuw aan alle bezoekers wordt getoond, ook aan wie al een keuze had gemaakt. Zie [De cookiebanner voor toestemming instellen](../../banner/configure.md#het-verzamelen-van-bewijs-van-toestemming-opnieuw-instellen).
+Dastra toont de toestemmingsbanner niet automatisch opnieuw aan bezoekers die al een keuze hebben gemaakt wanneer er nieuwe diensten aan de configuratie worden toegevoegd. Voegt u een nieuw hulpmiddel toe (bijvoorbeeld een nieuwe analysedienst) en moet u voor die dienst toestemming van bestaande bezoekers verzamelen, dan moet u de toestemming opnieuw instellen vanuit de Dastra-interface. De actie **Het verzamelen van toestemmingen van gebruikers opnieuw starten** in het menu **Acties** van de banner dwingt af dat de banner bij hun volgende bezoek opnieuw aan alle bezoekers wordt getoond, ook aan wie al een keuze had gemaakt. Zie [De cookiebanner voor toestemming instellen](../../banner/configure.md#het-verzamelen-van-toestemmingen-van-gebruikers-opnieuw-starten).
 
 ## Verder gaan
 

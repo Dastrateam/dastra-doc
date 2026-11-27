@@ -29,15 +29,15 @@ De goedkeurders worden bepaald bij het plannen van de vragenlijst (zie [Een audi
 
 <figure><img src="../../.gitbook/assets/questionnaires-validate-1.png" alt="Onderdeel Goedkeurders van het planningsformulier met de vereiste en optionele goedkeurders"><figcaption><p>Het onderdeel Goedkeurders van het planningsformulier</p></figcaption></figure>
 
-De standaard voorgestelde goedkeurders stelt u in via de configuratie van het sjabloon, met het veld **Personen verantwoordelijk voor de vragenlijst** (zie [Een vragenlijstsjabloon aanmaken](templates/README.md)). Alleen de goedkeurders van het antwoord kunnen het goedkeuren, valideren, een revisie vragen of annuleren.
+De standaard voorgestelde goedkeurders stelt u in via de configuratie van het sjabloon, met het veld **Standaardgoedkeurders van de vragenlijst** (zie [Een vragenlijstsjabloon aanmaken](templates/README.md)). Alleen de goedkeurders van het antwoord kunnen het goedkeuren, valideren, een revisie vragen of annuleren.
 
 {% hint style="success" %}
-U kunt deze fase volledig uitschakelen bij het plannen van de vragenlijst, met de optie **Deactiveer de goedkeuringsstap**. Het antwoord wordt dan rechtstreeks gepubliceerd zodra de respondenten het hebben afgerond.
+U kunt deze fase volledig uitschakelen bij het plannen van de vragenlijst, met de optie **Beoordelingsstap uitschakelen**. Het antwoord wordt dan rechtstreeks gepubliceerd zodra de respondenten het hebben afgerond.
 {% endhint %}
 
 ## Het beoordelingsscherm
 
-Klik in het antwoord op **Controleer en valideer de audit**. Het beoordelingsscherm volgt de structuur van de vragenlijst: links de navigatie tussen secties, in het midden de vragen en antwoorden, rechts de validatieacties.
+Klik in het antwoord op **Controleer en valideer de vragenlijst**. Het beoordelingsscherm volgt de structuur van de vragenlijst: links de navigatie tussen secties, in het midden de vragen en antwoorden, rechts de validatieacties.
 
 ### Elk antwoord kwalificeren
 
@@ -45,7 +45,7 @@ Aan elke vraag kunt u een beoordelingsstatus geven:
 
 * **Geen status**: de vraag is niet gekwalificeerd (standaard, niet blokkerend)
 * **Gevalideerd**: het antwoord is aanvaard
-* **Behoefte aan herziening**: het antwoord moet worden aangevuld of gecorrigeerd
+* **Herziening nodig**: het antwoord moet worden aangevuld of gecorrigeerd
 * **Niet gevalideerd**: het antwoord is geweigerd
 
 Met een selector boven aan elke sectie past u dezelfde status in één keer toe op alle weergegeven vragen.
@@ -58,12 +58,12 @@ Bij elke vraag kunt u ook:
 * een risico kwalificeren met **Bepaal risico** wanneer de vraag aan een risico is gekoppeld
 
 {% hint style="warning" %}
-Is minstens één vraag gemarkeerd als **Behoefte aan herziening** of **Niet gevalideerd**, dan zijn goedkeuring en validatie geblokkeerd: gebruik **Vraag revisie aan** om de vragenlijst terug te sturen naar de respondenten.
+Is minstens één vraag gemarkeerd als **Herziening nodig** of **Niet gevalideerd**, dan zijn goedkeuring en validatie geblokkeerd: gebruik **Vraag revisie aan** om de vragenlijst terug te sturen naar de respondenten.
 {% endhint %}
 
 ## De vragenlijst goedkeuren
 
-Elke goedkeurder geeft afzonderlijk goedkeuring, met de knop **Het vragenformulier goedkeuren**:
+Elke goedkeurder geeft afzonderlijk goedkeuring, met de knop **Vragenlijst goedkeuren**:
 
 * U kunt opmerkingen voor de beoordeling schrijven: ze worden bewaard en opgenomen in de export van het rapport.
 * Er wordt een e-mailnotificatie gestuurd naar de goedkeurders die nog niet hebben goedgekeurd.
@@ -72,7 +72,7 @@ Het paneel **Vereiste goedkeuringen (n/totaal)** geeft de stand van elke goedkeu
 
 Twee extra acties:
 
-* **Herroep mijn goedkeuring**: trekt uw goedkeuring in zolang de vragenlijst niet is gevalideerd.
+* **Mijn goedkeuring intrekken**: trekt uw goedkeuring in zolang de vragenlijst niet is gevalideerd.
 * Bent u de laatste vereiste goedkeurder die goedkeurt, dan biedt Dastra meteen aan om door te gaan naar validatie en publicatie.
 
 ## Valideren en publiceren
@@ -92,7 +92,7 @@ Na de validatie ontvangt elke respondent, intern of extern, een e-mail met de vr
 
 De actie **Vraag revisie aan** stuurt de vragenlijst terug naar de respondenten:
 
-* het antwoord keert terug naar **Aan de gang** en er wordt een nieuwe deadline berekend op basis van de termijn van het sjabloon (standaard 30 dagen);
+* het antwoord keert terug naar **In uitvoering** en er wordt een nieuwe deadline berekend op basis van de termijn van het sjabloon (standaard 30 dagen);
 * elke reeds gegeven goedkeuring wordt gereset;
 * een correctieronde wordt vastgelegd in de geschiedenis van het antwoord;
 * elke respondent krijgt een melding, samen met uw bericht voor de beoordeling. U kunt dat bericht vrij schrijven of vooraf invullen met een e-mailsjabloon.
@@ -101,7 +101,7 @@ Wanneer de respondenten opnieuw afronden, begint de validatiecyclus opnieuw.
 
 ## De vragenlijst annuleren
 
-De actie **Annuleer de vragenlijst** beëindigt de cyclus zonder publicatie. Met een optionele opmerking kunt u de reden toelichten: ze wordt bewaard in de geschiedenis en is zichtbaar voor de respondenten. De goedkeuringen worden gereset en het antwoord krijgt de status **Geannuleerd**: het kan niet meer worden bewerkt en wordt niet opgenomen in de resultaten.
+De actie **Vragenlijst annuleren** beëindigt de cyclus zonder publicatie. Met een optionele opmerking kunt u de reden toelichten: ze wordt bewaard in de geschiedenis en is zichtbaar voor de respondenten. De goedkeuringen worden gereset en het antwoord krijgt de status **Geannuleerd**: het kan niet meer worden bewerkt en wordt niet opgenomen in de resultaten.
 
 ## Vragenlijsten opvolgen die op validatie wachten
 

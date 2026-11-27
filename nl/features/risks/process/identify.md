@@ -5,7 +5,7 @@ description: >-
 
 # 1. Identificeren
 
-Om een risico aan te maken, opent u **Risicobeheer** > **Risico's**, kiest u het tabblad van het betrokken objecttype en klikt u op **Creëer een risico**. U kunt het ook aanmaken vanaf de pagina van een verwerkingsactiviteit (zie [Een risico koppelen aan een verwerkingsactiviteit](../attach-to-processing.md)). Het onderdeel **Identificatie** wordt geopend.
+Om een risico aan te maken, opent u **Risicobeheer** > **Risico's**, kiest u het tabblad van het betrokken objecttype en klikt u op **Een risico aanmaken**. U kunt het ook aanmaken vanaf de pagina van een verwerkingsactiviteit (zie [Een risico koppelen aan een verwerkingsactiviteit](../attach-to-processing.md)). Het onderdeel **Identificatie** wordt geopend.
 
 <figure><img src="../../../.gitbook/assets/risks-identify-1.png" alt="Onderdeel Identificatie van een nieuw risico: organisatorische eenheid, gekoppeld object, risico-eigenaar, identificatiedatum en risicotype"><figcaption><p>Het onderdeel Identificatie van een risico</p></figcaption></figure>
 
@@ -22,11 +22,11 @@ Vul de identificatiegegevens in:
 Met Dastra kunt u een repository van risicotypen opbouwen. De repository bespaart tijd en laat u een risicotype hergebruiken voor andere objecten.
 {% endhint %}
 
-Staat uw risicotype niet in de repository, voeg het dan vanaf deze pagina toe met **Creëer een risicotype**.
+Staat uw risicotype niet in de repository, voeg het dan vanaf deze pagina toe met **Een risicotype aanmaken**.
 
 ## Een risicotype toevoegen <a href="#add-a-risk-type" id="add-a-risk-type"></a>
 
-U kunt risicotypen ook beheren in **Risicobeheer** > **Soorten risico**, met de knop **Creëer een risicotype**.
+U kunt risicotypen ook beheren in **Risicobeheer** > **Soorten risico**, met de knop **Een risicotype aanmaken**.
 
 U hergebruikt een risicotype om hetzelfde risico voor zoveel objecten als u wilt te genereren. U wilt bijvoorbeeld hetzelfde risico bij meerdere van uw verwerkers identificeren: voer het risicotype één keer in en hergebruik het voor elke verwerker of dienstverlener.
 
@@ -46,7 +46,7 @@ Klassiek worden voor informatiebeveiliging en privacy drie soorten gevreesde geb
 * inbreuk op de **beschikbaarheid**
 * inbreuk op de **integriteit**
 
-U kunt uw eigen categorieën gevreesde gebeurtenissen aanmaken met **Creëer een gevreesde gebeurtenis**, bijvoorbeeld een industrieel ongeval of een daad van corruptie. Het aantal gevreesde gebeurtenissen is niet beperkt. De module richt zich eerst op risico's voor informatiesystemen.
+U kunt uw eigen categorieën gevreesde gebeurtenissen aanmaken met **Een gevreesde gebeurtenis aanmaken**, bijvoorbeeld een industrieel ongeval of een daad van corruptie. Het aantal gevreesde gebeurtenissen is niet beperkt. De module richt zich eerst op risico's voor informatiesystemen.
 
 Geef voor elke gevreesde gebeurtenis in het veld **Beschrijving van de gevreesde gebeurtenis** aan welke impact ze veroorzaakt.
 
@@ -60,7 +60,7 @@ Selecteer in het onderdeel **Bedreigingen** een bestaande bedreiging met **Een b
 
 <figure><img src="../../../.gitbook/assets/risk-threats-section.png" alt="Onderdeel Bedreigingen van een risicotype, met de knop Een bedreiging toevoegen"><figcaption><p>Het onderdeel Bedreigingen van een risicotype</p></figcaption></figure>
 
-Dastra biedt sjablonen voor generieke bedreigingen. Om ze te importeren, opent u **Risicobeheer** > **Bedreigingen**, opent u het menu van de knop **Bedreiging creëren** en klikt u op **Maak vanuit de bibliotheek**.
+Dastra biedt sjablonen voor generieke bedreigingen. Om ze te importeren, opent u **Risicobeheer** > **Bedreigingen**, opent u het menu van de knop **Bedreiging aanmaken** en klikt u op **Aanmaken vanuit de bibliotheek...**.
 
 ### Bronnen
 
@@ -79,7 +79,7 @@ Bepaal voor elk risicotype de bestaande of geplande maatregelen waarmee het risi
 Selecteer in het onderdeel **Controlepunten** bestaande controlepunten met **Controlepunten selecteren** of maak nieuwe aan met **Maak een controlepunt aan**. Elk controlepunt bepaalt:
 
 * zijn invloed: de impact (beperking) of de waarschijnlijkheid (preventie) van het risico verminderen;
-* de mogelijke antwoorden en hun score, van 0 tot 100 punten. Standaard biedt een nieuw controlepunt de antwoorden **Ja** (1 punt), **Neen** (0 punten) en **Niet van toepassing**;
+* de mogelijke antwoorden en hun score, van 0 tot 100 punten. Standaard biedt een nieuw controlepunt de antwoorden **Ja** (1 punt), **Nee** (0 punten) en **Niet van toepassing**;
 * zijn eigenaar, zijn prioriteit (1 is de hoogste, 10 de laagste) en, indien nodig, een terugkerende evaluatie met het aantal dagen tussen twee controles.
 
 <figure><img src="../../../.gitbook/assets/risks-identify-4.png" alt="Onderdeel Controlepunten van een risicotype met drie geselecteerde controlepunten"><figcaption><p>Het onderdeel Controlepunten van een risicotype</p></figcaption></figure>

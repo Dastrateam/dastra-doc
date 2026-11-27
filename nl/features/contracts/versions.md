@@ -20,11 +20,11 @@ Het versiebeheer toont alle versies van het document. Elke kaart toont het versi
 
 De nieuwe versie wordt aangemaakt op basis van de versie die op dat moment wordt weergegeven: ga dus eerst naar de versie waarvan u wilt uitgaan.
 
-1. Klik in het versiebeheer op **Stel een nieuwe versie in**.
+1. Klik in het versiebeheer op **Een nieuwe versie aanmaken**.
 2. Voer de **Startdatum** in en, indien nodig, de **Einddatum**. U kunt ze later nog wijzigen.
 3. Voeg desgewenst een **Beschrijving van de versie** toe.
 4. Zet **Copy attachments in new version** aan om de bestanden over te nemen.
-5. Klik op **Stel een nieuwe versie in**.
+5. Klik op **Een nieuwe versie aanmaken**.
 
 <figure><img src="../../.gitbook/assets/contracts-versions-3.png" alt="Het venster om een versie aan te maken met de datums, de beschrijving en de optie om bijlagen te kopiëren"><figcaption><p>Het venster om een versie aan te maken</p></figcaption></figure>
 

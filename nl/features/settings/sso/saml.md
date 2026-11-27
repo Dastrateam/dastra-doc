@@ -24,24 +24,24 @@ Stel een SAML-configuratie in bij uw authenticatieprovider.
 * Voor Microsoft Entra ID (voorheen Azure AD): zie de pagina [Active Directory (Microsoft Entra ID)](entra-id.md) en de [documentatie van Microsoft](https://learn.microsoft.com/nl-nl/entra/identity/enterprise-apps/add-application-portal-setup-sso).
 * Voor Google: [https://support.google.com/a/answer/6087519?hl=nl](https://support.google.com/a/answer/6087519?hl=nl)
 
-Om de lokale accounts (die in Dastra worden gehost) te koppelen, moet u een eigenschap met het e-mailadres van de gebruiker meegeven (standaard zoekt Dastra naar de eigenschap met de naam [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)). U kunt deze naam wijzigen in het veld **De naam van de claim met het e-mailadres**.
+Om de lokale accounts (die in Dastra worden gehost) te koppelen, moet u een eigenschap met het e-mailadres van de gebruiker meegeven (standaard zoekt Dastra naar de eigenschap met de naam [http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress](http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)). U kunt deze naam wijzigen in het veld **Toewijzing van de claimnaam voor het e-mailadres van de gebruiker (gebruikt als de gebruiker lokaal niet bestaat)**.
 
 Dit zijn de gegevens die u bij de serviceprovider moet invullen:
 
 * **Entiteits-ID van de identiteitsprovider (uitgever)** (Entity id, issuer);
-* **Identity Provider SSO url** (Single sign on url);
-* het certificaat in RAW-formaat (Base64-gecodeerd), in het veld **Identity Provider Certificaat (RAW)**.
+* **Single sign-on-URL van de identiteitsprovider** (Single sign on url);
+* het certificaat in RAW-formaat (Base64-gecodeerd), in het veld **Certificaat van de identiteitsprovider (RAW)**.
 
 Om uw authenticatieprovider te configureren hebt u de volgende gegevens nodig, die bovenaan het SAML-formulier in Dastra staan:
 
 * Issuer: standaard `https://www.dastra.eu`;
 * SP-omleidings-URI (ACS): `https://account.dastra.eu/{connection identifier}/Acs`. Deze URL is specifiek voor elke verbinding: kopieer haar bovenaan het SAML-formulier wanneer u de SSO-login in Dastra toevoegt (stap 2) en sla die login daarna op;
-* **SP start URL (Aanmeld-URL)**, als uw provider een aanmeld-URL voor de toepassing vraagt;
+* **SP-start-URL (aanmeld-URL)**, als uw provider een aanmeld-URL voor de toepassing vraagt;
 * **SAML Logout-URL (optioneel)**, als uw provider het afmelden afhandelt.
 
 ## 2. De serviceprovider configureren
 
-Open in Dastra de [SSO-beheerpagina](https://app.dastra.eu/general-settings/sso) (**Instelling van de organisatie** > **Eenmalig inloggen**, alleen beschikbaar voor eigenaren van de organisatie) en klik op **Voeg een SSO-login toe**. Kies het protocol **SAML2**.
+Open in Dastra de [SSO-beheerpagina](https://app.dastra.eu/general-settings/sso) (**Configuratie van de organisatie** > **Single sign-on**, alleen beschikbaar voor eigenaren van de organisatie) en klik op **Voeg een SSO-login toe**. Kies het protocol **SAML2**.
 
 <figure><img src="../../../.gitbook/assets/settings-sso-liste-logins.png" alt="De pagina Eenmalig inloggen met de lijst met SSO-logins en de knop Voeg een SSO-login toe"><figcaption></figcaption></figure>
 

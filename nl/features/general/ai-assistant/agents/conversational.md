@@ -8,7 +8,7 @@ description: >-
 
 Een conversational agent is een chatassistent die u op een onderwerp specialiseert: een DPO-assistent die alleen antwoordt op basis van het verwerkingsregister, een inkoopassistent die leverancierscontracten controleert, een beveiligingsassistent die helpt een incident te kwalificeren.
 
-Ga naar **Instellingen voor werkruimte** > **AI agents**, klik op **Create agent** en daarna op **Conversational Agent**.
+Ga naar **Instellingen van de werkruimte** > **AI agents**, klik op **Create agent** en daarna op **Conversational Agent**.
 
 ***
 

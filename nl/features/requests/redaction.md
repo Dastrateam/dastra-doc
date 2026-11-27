@@ -8,7 +8,7 @@ description: >-
 
 Bij de behandeling van een verzoek van een betrokkene moet u vaak documenten naar de aanvrager sturen: een kopie van een identiteitsbewijs, een contract, een rekeninghistorie, een klantdossier. Deze documenten bevatten bijna altijd vertrouwelijke informatie die niet mag worden bekendgemaakt: gegevens over derden, interne contractvoorwaarden, benoemde verwijzingen.
 
-Dastra bevat een hulpmiddel om gegevens te verbergen in het verzoek zelf. De interface noemt het **Bestand verbergen**.
+Dastra bevat een hulpmiddel om gegevens te verbergen in het verzoek zelf. De interface noemt het **Bestand weglakken**.
 
 ***
 
@@ -18,9 +18,9 @@ Het hulpmiddel opent vanuit de bijlagen van het verzoek. Het accepteert PDF-, PN
 
 1. Open in het menu **Verzoeken** het **Register van verzoeken** en open daarna het te behandelen verzoek.
 2. Open in de sectie **Uitvoering van het verzoek** het tabblad **Bijlagen**. Upload het document indien nodig.
-3. Klik op de bestandsrij op het pictogram **Gegevensverduistering**. U kunt ook het voorbeeld van het bestand openen en op **Gegevensverduistering** klikken.
+3. Klik op de bestandsrij op het pictogram **Weglakken van gegevens**. U kunt ook het voorbeeld van het bestand openen en op **Weglakken van gegevens** klikken.
 
-De editor **Bestand verbergen** opent op het document.
+De editor **Bestand weglakken** opent op het document.
 
 <figure><img src="../../.gitbook/assets/dsr-request-processing-attachments.png" alt="Het tabblad Bijlagen van een verzoek, met de pictogrammen voor voorbeeld, verbergen, downloaden en verwijderen op de bestandsrij"><figcaption><p>De bijlagen van het verzoek, met het pictogram om te verbergen bij elk compatibel bestand</p></figcaption></figure>
 
@@ -30,9 +30,9 @@ De editor **Bestand verbergen** opent op het document.
 
 Teken met de muis op elke pagina de te verbergen gebieden. De editor toont het aantal verhullingen en biedt deze acties:
 
-* **Verwijder de afscherming** verwijdert één gebied.
-* **Laatste verberging ongedaan maken** gaat één gebied terug.
-* **Verhullingen van de pagina wissen** en **Alle verduisteringen wissen** beginnen opnieuw met een schone pagina.
+* **Weglakking verwijderen** verwijdert één gebied.
+* **Laatste weglakking ongedaan maken** gaat één gebied terug.
+* **Weglakkingen op de pagina wissen** en **Alle weglakkingen wissen** beginnen opnieuw met een schone pagina.
 * De knoppen voor zoomen en pagina's maken lange documenten leesbaarder.
 
 <figure><img src="../../.gitbook/assets/caviardage-manuel.gif" alt="De te verbergen gebieden van een document handmatig selecteren"><figcaption><p>Teken de te verbergen gebieden rechtstreeks op het document</p></figcaption></figure>
@@ -43,7 +43,7 @@ Teken met de muis op elke pagina de te verbergen gebieden. De editor toont het a
 
 ## Verbergen met AI
 
-Klik in de editor op **Auto-redact with AI** om het venster **Automatische verdoezeling door IA** te openen. De AI analyseert het document, vindt persoonsgegevens van derden (namen, adressen, contactgegevens, identificatienummers) en plaatst gebieden om te verbergen. Er worden geen gegevens bewaard na de sessie. De tekst van het document, uitgelezen met optische tekenherkenning (OCR), wordt in blokken naar het AI-model gestuurd: hij bevat van nature persoonsgegevens. Dastra logt noch deze tekst noch de gevonden waarden, en de voorgestelde gebieden worden pas opgeslagen nadat u ze hebt bevestigd. Zie [Gegevens die naar het model worden gestuurd](../general/ai-assistant/how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd) voor details.
+Klik in de editor op **Auto-redact with AI** om het venster **Automatisch weglakken met AI** te openen. De AI analyseert het document, vindt persoonsgegevens van derden (namen, adressen, contactgegevens, identificatienummers) en plaatst gebieden om te verbergen. Er worden geen gegevens bewaard na de sessie. De tekst van het document, uitgelezen met optische tekenherkenning (OCR), wordt in blokken naar het AI-model gestuurd: hij bevat van nature persoonsgegevens. Dastra logt noch deze tekst noch de gevonden waarden, en de voorgestelde gebieden worden pas opgeslagen nadat u ze hebt bevestigd. Zie [Gegevens die naar het model worden gestuurd](../general/ai-assistant/how-it-works.md#gegevens-die-naar-het-model-worden-gestuurd) voor details.
 
 {% hint style="warning" %}
 **Bleu-aanbod.** De optische tekenherkenning en de tekstanalyse worden uitgevoerd door Mistral AI, niet door Azure.
@@ -51,9 +51,9 @@ Klik in de editor op **Auto-redact with AI** om het venster **Automatische verdo
 
 Het venster biedt drie opties:
 
-* **Uitsluiten van de informatie van de betrokken persoon van de verdoezeling**: standaard geselecteerd, zodat de eigen gegevens van de aanvrager leesbaar blijven.
+* **De eigen gegevens van de betrokkene uitsluiten van weglakking**: standaard geselecteerd, zodat de eigen gegevens van de aanvrager leesbaar blijven.
 * **Aangepaste instructie**: een aanvullende instructie, bijvoorbeeld ook alle bedrijfsnamen verbergen.
-* **Extra uitdrukkingen om te verdoezelen**: maximaal 20 uitdrukkingen die overal waar ze voorkomen worden verborgen. Typ een uitdrukking en druk op Enter.
+* **Extra zinsdelen om weg te lakken**: maximaal 20 uitdrukkingen die overal waar ze voorkomen worden verborgen. Typ een uitdrukking en druk op Enter.
 
 Klik daarna op **Auto-redact with AI**. De voorgestelde gebieden worden aan de editor toegevoegd: verwijder de gebieden die ten onrechte zijn gevonden en voeg de gebieden toe die de AI heeft gemist. De knop **Auto-redact with AI** verschijnt alleen als verbergen met AI in uw abonnement is inbegrepen.
 
@@ -69,12 +69,12 @@ Het AI-resultaat is een eerste voorstel, geen definitieve beslissing. Een bevoeg
 
 ## Het afgeschermde bestand opslaan
 
-Klik na de controle op **Sla het afgeschermde bestand op**. De knop blijft inactief tot er ten minste één gebied is getekend. De schakelaar **Verwijder het originele bestand**, standaard ingeschakeld, bepaalt wat er met het origineel gebeurt:
+Klik na de controle op **Weggelakt bestand opslaan**. De knop blijft inactief tot er ten minste één gebied is getekend. De schakelaar **Origineel bestand verwijderen**, standaard ingeschakeld, bepaalt wat er met het origineel gebeurt:
 
 * Aan: het afgeschermde bestand vervangt het origineel definitief en het origineel wordt verwijderd.
 * Uit: het afgeschermde bestand wordt als nieuwe bijlage toegevoegd, met het achtervoegsel `-redacted`, en het origineel blijft behouden.
 
-Dastra vraagt u om bevestiging voordat het bestand wordt opgeslagen. Pagina's worden platgemaakt tot afbeeldingen: de verborgen tekst bestaat niet meer in het resulterende bestand en kan niet worden geëxtraheerd. Een afgeschermd bestand toont de indicator **Geëxtraheerde gegevens**, met het aantal verborgen gebieden.
+Dastra vraagt u om bevestiging voordat het bestand wordt opgeslagen. Pagina's worden platgemaakt tot afbeeldingen: de verborgen tekst bestaat niet meer in het resulterende bestand en kan niet worden geëxtraheerd. Een afgeschermd bestand toont de indicator **Bestandsgegevens weggelakt**, met het aantal verborgen gebieden.
 
 {% hint style="info" %}
 Een gewone ondoorzichtige rechthoek over een niet-platgemaakte PDF kan worden omzeild en is geen conforme redactie. Platmaken tot een afbeelding is de methode die gegevensbeschermingsautoriteiten aanbevelen.
@@ -85,5 +85,5 @@ Een gewone ondoorzichtige rechthoek over een niet-platgemaakte PDF kan worden om
 ## Aanbevelingen
 
 * Controleer het afgeschermde document voordat u het verstuurt, om na te gaan dat er geen vertrouwelijke informatie zichtbaar is.
-* Schakel **Verwijder het originele bestand** uit om het origineel in het verzoek te bewaren, bijvoorbeeld voor uw compliancedossier, tenzij uw intern beleid verwijdering vereist.
+* Schakel **Origineel bestand verwijderen** uit om het origineel in het verzoek te bewaren, bijvoorbeeld voor uw compliancedossier, tenzij uw intern beleid verwijdering vereist.
 * Combineer bij lange of complexe documenten (contracten met meerdere pagina's, rekeningafschriften) detectie met AI met een handmatige controle per pagina.

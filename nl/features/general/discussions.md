@@ -18,7 +18,7 @@ Interne discussies werken als een chat die aan een element van Dastra is gekoppe
 3. Klik op het veld **Een bericht opstellen** en typ uw bericht. Met de knop **Voeg een document toe** voegt u een bestand toe, met een klik of door te slepen.
 4. Klik op **Verzenden** of druk op **CTRL+Enter**.
 
-Een niet verzonden concept blijft in uw browser bewaard en wordt hersteld wanneer u het paneel opnieuw opent. U kunt uw eigen berichten bewerken of verwijderen via hun menu. Een bewerkt bericht toont **Aangepast aan** gevolgd door de datum.
+Een niet verzonden concept blijft in uw browser bewaard en wordt hersteld wanneer u het paneel opnieuw opent. U kunt uw eigen berichten bewerken of verwijderen via hun menu. Een bewerkt bericht toont **Laatst bewerkt** gevolgd door de datum.
 
 ## Vermeldingen
 
@@ -51,7 +51,7 @@ Voor elk nieuw bericht verwittigt Dastra:
 * de in het bericht vermelde gebruikers, onmiddellijk;
 * de verantwoordelijken voor het element (bijvoorbeeld de eigenaar, de uitvoerder of de persoon aan wie het is toegewezen, afhankelijk van het type element), behalve de auteur van het bericht.
 
-De regel **Gebruikers notificeerd** onder het invoerveld toont hoeveel mensen uw bericht ontvangen en somt ze op. Hoe elke gebruiker meldingen ontvangt, hangt af van zijn of haar voorkeuren: zie de pagina [Meldingen](../settings/notifications.md).
+De regel **Geïnformeerde gebruikers** onder het invoerveld toont hoeveel mensen uw bericht ontvangen en somt ze op. Hoe elke gebruiker meldingen ontvangt, hangt af van zijn of haar voorkeuren: zie de pagina [Meldingen](../settings/notifications.md).
 
 {% hint style="info" %}
 Als u Slack gebruikt, kunnen vermelde gebruikers ook door de Dastra-bot in Slack worden verwittigd, op voorwaarde dat hun e-mailadres in Dastra hetzelfde is als in Slack. Zie [Integraties](../integrations/README.md).
@@ -63,7 +63,7 @@ Zodra er een bericht wordt verzonden op een element zonder lopend gesprek, of na
 
 <figure><img src="../../.gitbook/assets/general-discussions-3.png" alt="Knop Discussies met een rode stip voor een open gesprek en een groene stip voor een gesloten gesprek"><figcaption><p>De rode stip wijst op een open gesprek, de groene stip op een gesloten gesprek</p></figcaption></figure>
 
-Klik onderaan de discussie op **Het gesprek sluiten** wanneer de uitwisseling voorbij is. Deze knop is voorbehouden aan gebruikers die in hun rol over de machtiging **Discussies** beschikken. De stip wordt groen en de discussie toont **Gesprek is gesloten door** gevolgd door de naam van de persoon. Een gebruiker met dezelfde machtiging klikt op **Annuleren** om het gesprek weer te openen.
+Klik onderaan de discussie op **Discussie sluiten** wanneer de uitwisseling voorbij is. Deze knop is voorbehouden aan gebruikers die in hun rol over de machtiging **Discussies** beschikken. De stip wordt groen en de discussie toont **Gesprek is gesloten door** gevolgd door de naam van de persoon. Een gebruiker met dezelfde machtiging klikt op **Annuleren** om het gesprek weer te openen.
 
 ## Gesprekkenoverzicht
 

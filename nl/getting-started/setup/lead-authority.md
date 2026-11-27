@@ -17,9 +17,9 @@ Een voorbeeld: de CNIL is de leidende autoriteit voor grensoverschrijdende verwe
 
 De leidende autoriteit stelt u in op het niveau van de entiteit.
 
-1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Organisatorische eenheden**.
+1. Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Organisatorische eenheden**.
 2. Klik op de drie puntjes rechts van de entiteit en daarna op **Bewerken**.
-3. Selecteer de autoriteit in het veld **Leidende toezichthoudende autoriteit**.
+3. Selecteer de autoriteit in het veld **Toezichthoudende autoriteit**.
 4. Klik op **Opslaan**.
 
 <figure><img src="../../.gitbook/assets/getting-started-dpo-1.png" alt="Venster voor het bewerken van een entiteit met het veld Leidende toezichthoudende autoriteit"><figcaption><p>Het venster voor het bewerken van een entiteit</p></figcaption></figure>

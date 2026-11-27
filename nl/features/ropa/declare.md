@@ -10,20 +10,20 @@ Een verwerkingsactiviteit is een bewerking of geheel van bewerkingen met persoon
 
 ## Een verwerkingsactiviteit aanmaken
 
-Om een verwerkingsactiviteit aan te maken, opent u het verwerkingsregister en klikt u op **Maak een gegevensverwerking**. Het venster **Een gegevensverwerking maken** biedt vier opties:
+Om een verwerkingsactiviteit aan te maken, opent u het verwerkingsregister en klikt u op **Verwerkingsactiviteit aanmaken**. Het venster **Verwerkingsactiviteit aanmaken** biedt vier opties:
 
-* **Genereren met A.I.**: beschrijf uw verwerkingsactiviteit in een paar woorden en laat onze AI-assistent (bèta) ze genereren, wanneer deze functie in uw werkruimte is ingeschakeld. De AI-knop naast **Maak een gegevensverwerking** opent deze optie rechtstreeks.
+* **Gegenereerd met AI**: beschrijf uw verwerkingsactiviteit in een paar woorden en laat onze AI-assistent (bèta) ze genereren, wanneer deze functie in uw werkruimte is ingeschakeld. De AI-knop naast **Verwerkingsactiviteit aanmaken** opent deze optie rechtstreeks.
 * **Ingebouwde sjabloon**: begin vanuit een van onze voorgedefinieerde sjablonen (zie [Een sjabloon voor verwerkingsactiviteiten gebruiken](templates.md)).
-* **Vanuit een actief**: maak een verwerkingsactiviteit aan vanuit een activum en de bijbehorende gegevens.
+* **Vanuit een activum**: maak een verwerkingsactiviteit aan vanuit een activum en de bijbehorende gegevens.
 * **Gepersonaliseerd**: maak een nieuwe verwerkingsactiviteit vanaf nul aan.
 
 <figure><img src="../../.gitbook/assets/ropa-declare-1.png" alt="Venster voor het aanmaken van een verwerkingsactiviteit met de vier opties"><figcaption><p>Kiezen hoe u de nieuwe verwerkingsactiviteit aanmaakt</p></figcaption></figure>
 
-Bij **Gepersonaliseerd** vult u de **Naam gegevensverwerking** in, selecteert u de **Organisatie-eenheid** en klikt u op **Maak een gegevensverwerking**. U gaat dan naar de vragenlijst, waar u alle vereiste informatie kunt toevoegen.
+Bij **Gepersonaliseerd** vult u de **Naam van deze verwerkingsactiviteit** in, selecteert u de **Organisatorische eenheid** en klikt u op **Verwerkingsactiviteit aanmaken**. U gaat dan naar de vragenlijst, waar u alle vereiste informatie kunt toevoegen.
 
 ## Een verwerkingsactiviteit aanmaken als verwerker
 
-Een verwerkingsactiviteit als verwerker maakt u op dezelfde manier aan: schakel bij het aanmaken met **Gepersonaliseerd** (of **Genereren met A.I.**) de schakelaar **Activiteit als verwerker** in.
+Een verwerkingsactiviteit als verwerker maakt u op dezelfde manier aan: schakel bij het aanmaken met **Gepersonaliseerd** (of **Gegenereerd met AI**) de schakelaar **Activiteit als verwerker** in.
 
 <figure><img src="../../.gitbook/assets/ropa-declare-2.png" alt="Schakelaar Activiteit als verwerker in het aanmaakvenster"><figcaption><p>Een verwerkingsactiviteit als verwerker aanmaken</p></figcaption></figure>
 

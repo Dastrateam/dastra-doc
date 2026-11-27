@@ -32,19 +32,19 @@ U maakt een relatie aan vanuit het formulier van een:
 
 Het doelobject kan van een van deze types zijn, of een risico als de module voor risicobeheer is ingeschakeld en u er toegang toe hebt. Een risico zelf heeft geen generieke relaties.
 
-Relaties verschijnen op de pagina **In kaart brengen** van de module **Referenties**, waar ze de knooppunten van de grafiek verbinden. Zie [Referenties](repositories/README.md).
+Relaties verschijnen op de pagina **Grafieken** van de module **Repository's**, waar ze de knooppunten van de grafiek verbinden. Zie [Referenties](repositories/README.md).
 
 Om verwerkingsactiviteiten aan elkaar te koppelen, zie [Relaties tussen verwerkingsactiviteiten aanmaken](../ropa/relationships.md).
 
 ## Een generieke relatie toevoegen
 
 1. Open een element, bijvoorbeeld een actief.
-2. Klik in de werkbalk op **Gekoppelde elementen**. De knop toont het aantal bestaande koppelingen.
+2. Klik in de werkbalk op **Relaties**. De knop toont het aantal bestaande koppelingen.
 3. Klik op **Voeg een relatie toe** en selecteer daarna het type object waaraan u wilt koppelen: stakeholder, beveiligingsmaatregel, datalek, actief, dataset of risico.
 4. Doe in het venster het volgende:
    * Schakel **Omgekeerde relatie** in als de richting moet worden omgekeerd.
    * Kies **Bestaand object** om te koppelen aan een element dat al in Dastra staat, of **Maak een nieuw object** om meteen een nieuw element aan te maken.
-   * Selecteer bij **Bestaand object** de doelobjecten in **Bijgevoegde object (en) selecteren**. Typ bij **Maak een nieuw object** de naam van het nieuwe object.
+   * Selecteer bij **Bestaand object** de doelobjecten in **Gekoppelde objecten selecteren**. Typ bij **Maak een nieuw object** de naam van het nieuwe object.
    * Vul desgewenst het **Relatie-label** en de **Samenvatting** in.
 5. Klik op **Toevoegen** om de relatie op te slaan.
 
@@ -52,8 +52,8 @@ Om verwerkingsactiviteiten aan elkaar te koppelen, zie [Relaties tussen verwerki
 
 Zodra relaties zijn aangemaakt, verschijnen ze:
 
-* in het paneel **Gekoppelde elementen** van elk element, met alle directe koppelingen;
-* in de grafieken **In kaart brengen van stromen tussen activa** en **In kaart brengen van stakeholders** van de pagina **In kaart brengen**, waar ze als netwerk worden weergegeven.
+* in het paneel **Relaties** van elk element, met alle directe koppelingen;
+* in de grafieken **Knooppuntendiagram** en **In kaart brengen van actoren** van de pagina **Grafieken**, waar ze als netwerk worden weergegeven.
 
 ## Verder lezen
 

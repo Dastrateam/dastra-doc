@@ -1,7 +1,7 @@
 ---
 description: >-
   Het samenvoeggereedschap voegt items samen die dubbel zijn of veel op elkaar
-  lijken, en het gegevenskwaliteitsinstrument spoort ze voor u op.
+  lijken, en de tool voor gegevenskwaliteit spoort ze voor u op.
 ---
 
 # Elementen samenvoegen
@@ -37,7 +37,7 @@ Controles, tests, risicoscenario's en bedreigingen voegt u samen vanuit de bibli
 
 <figure><img src="../../.gitbook/assets/general-merge-1.png" alt="Lijst met twee geselecteerde elementen en het menu Kies een bulkactie geopend op Samenvoegen"><figcaption><p>Twee geselecteerde elementen en de bulkactie Samenvoegen</p></figcaption></figure>
 
-3. Kies in het venster **Samenvoeggereedschap** het element dat u wilt behouden door het in de kop van de kolom te selecteren: het wordt de **Reference version**. De andere kolommen tonen het label **Keep selected fields**: deze elementen worden verwijderd zodra de samenvoeging is bevestigd, en alleen de velden die u erin selecteert, worden overgenomen in de referentieversie.
+3. Kies in het venster **Samenvoegtool** het element dat u wilt behouden door het in de kop van de kolom te selecteren: het wordt de **Reference version**. De andere kolommen tonen het label **Keep selected fields**: deze elementen worden verwijderd zodra de samenvoeging is bevestigd, en alleen de velden die u erin selecteert, worden overgenomen in de referentieversie.
 4. Selecteer voor elk veld dat verschilt de waarde die u wilt behouden.
 5. Klik op **Samenvoegen**.
 
@@ -57,29 +57,29 @@ De entiteiten (verwerkingsactiviteiten, analyses, taken enzovoort) die aan de ve
 
 Wanneer een object wordt bijgewerkt op basis van de antwoorden op een vragenlijst, opent hetzelfde venster met een kolom **Questionnaire’s responses**. Het bestaande object blijft altijd de referentieversie: het behoudt zijn identificatie, zijn geschiedenis en zijn koppelingen.
 
-## Gegevenskwaliteitsinstrument
+## Tool voor gegevenskwaliteit
 
-Het **Gegevenskwaliteitsinstrument** doorzoekt uw repository op items die waarschijnlijk duplicaten zijn, zonder dat u eerst iets hoeft te selecteren. Daarna stelt het voor ze samen te voegen met het samenvoeggereedschap.
+De **Tool voor gegevenskwaliteit** doorzoekt uw repository op items die waarschijnlijk duplicaten zijn, zonder dat u eerst iets hoeft te selecteren. Daarna stelt de tool voor ze samen te voegen met de samenvoegtool.
 
 ### Toegang tot het instrument
 
 Het instrument is beschikbaar in de lijsten met verwerkingsactiviteiten, stakeholders, activa, gegevensvelden, datasets en beveiligingsmaatregelen. Het wordt niet aangeboden voor categorieën van betrokkenen, die u wel vanuit de lijst kunt samenvoegen.
 
-Klik in de lijst rechtsboven op de pijl van de knop voor aanmaken (bijvoorbeeld **Maak een gegevensverwerking**) en daarna op **Gegevenskwaliteitsinstrument**. Voor deze actie hebt u schrijftoegang tot de module nodig.
+Klik in de lijst rechtsboven op de pijl van de knop voor aanmaken (bijvoorbeeld **Verwerkingsactiviteit aanmaken**) en daarna op **Tool voor gegevenskwaliteit**. Voor deze actie hebt u schrijftoegang tot de module nodig.
 
 ### Slimme detectie
 
-Het tabblad **Slimme detectie** voert een gelijkenisanalyse uit (Levenshtein-afstand en Jaccard-index) en bewaart de waarschijnlijke duplicaten als suggesties. De analyse start vanzelf wanneer u het tabblad voor het eerst opent; klik op **Start de analyse** om haar opnieuw uit te voeren.
+Het tabblad **Slimme detectie** voert een gelijkenisanalyse uit (Levenshtein-afstand en Jaccard-index) en bewaart de waarschijnlijke duplicaten als suggesties. De analyse start vanzelf wanneer u het tabblad voor het eerst opent; klik op **Analyse uitvoeren** om haar opnieuw uit te voeren.
 
-<figure><img src="../../.gitbook/assets/general-merge-2.png" alt="Tabblad Slimme detectie van het gegevenskwaliteitsinstrument met de lijst met suggesties, hun betrouwbaarheidsscore en hun acties"><figcaption><p>De suggesties voor duplicaten in het tabblad Slimme detectie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/general-merge-2.png" alt="Tabblad Slimme detectie van de tool voor gegevenskwaliteit met de lijst met suggesties, hun betrouwbaarheidsscore en hun acties"><figcaption><p>De suggesties voor duplicaten in het tabblad Slimme detectie</p></figcaption></figure>
 
-Elke suggestie koppelt twee registraties (**Registratie A** en **Registratie B**). Het algoritme vergelijkt vooral het label en daarna, afhankelijk van het type element, de beschrijving, het adres, het e-mailadres, het telefoonnummer of de definitie. Het leidt daaruit een score **Vertrouwen** af van 0 % tot 100 %, die u kunt lezen voordat u iets samenvoegt. Een rood pictogram **UO verschillend** wijst op twee registraties die aan verschillende organisatorische eenheden zijn gekoppeld.
+Elke suggestie koppelt twee registraties (**Registratie A** en **Registratie B**). Het algoritme vergelijkt vooral het label en daarna, afhankelijk van het type element, de beschrijving, het adres, het e-mailadres, het telefoonnummer of de definitie. Het leidt daaruit een score **Betrouwbaarheid** af van 0 % tot 100 %, die u kunt lezen voordat u iets samenvoegt. Een rood pictogram **Andere organisatorische eenheid** wijst op twee registraties die aan verschillende organisatorische eenheden zijn gekoppeld.
 
 Voor elke suggestie geldt:
 
 * **Samenvoegen** opent het samenvoeggereedschap met de twee registraties;
 * **Negeren** legt de suggestie opzij: de status wordt **Genegeerd** en de analyse stelt ze niet opnieuw voor;
-* **In afwachting zetten** zet een genegeerde suggestie terug bij de suggesties met de status **In afwachting**.
+* **Terugzetten naar in afwachting** zet een genegeerde suggestie terug bij de suggesties met de status **In afwachting**.
 
 U kunt de lijst filteren op status (**Alle statussen**, **In afwachting**, **Genegeerd**). Het instrument verwijdert nooit zelf een duplicaat: alleen de elementen die u bij een samenvoeging niet behoudt, worden verwijderd.
 

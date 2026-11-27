@@ -50,7 +50,7 @@ Dastra vereist een beveiligde verbinding via TLS, minimaal versie 1.2. Uw SMTP-s
 ## Configuratie
 
 1. Open de [SMTP-configuratiepagina](https://app.dastra.eu/general-settings/smtp).
-2. Vul in de sectie **SMTP Persoonlijk** de velden **SMTP-servernaam (TLS vereist)**, **SMTP-serverpoort**, **Gebruikersnaam van SMTP-server**, **Wachtwoord SMTP-server**, **e-mail van de afzender** en **Naam van afzender** in.
+2. Vul in de sectie **Aangepaste SMTP** de velden **SMTP-servernaam (TLS vereist)**, **SMTP-serverpoort**, **Gebruikersnaam van SMTP-server**, **Wachtwoord SMTP-server**, **E-mailadres van de afzender** en **Naam van afzender** in.
 3. Klik op **Opslaan**.
 
 <figure><img src="../../../.gitbook/assets/settings-smtp-config-form.png" alt="Configuratieformulier van de SMTP-server met de velden server, poort, gebruikersnaam, wachtwoord, e-mail van de afzender en alias van de afzender"><figcaption><p>Het configuratieformulier van de SMTP-server</p></figcaption></figure>

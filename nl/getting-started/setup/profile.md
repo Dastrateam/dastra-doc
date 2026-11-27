@@ -9,13 +9,13 @@ Elke Dastra-gebruiker heeft een persoonlijk profiel: identificatiegegevens, taal
 
 ## Profielfoto
 
-U kunt een logo of een profielfoto toevoegen, die in Dastra naast uw naam wordt getoond. Klik op **Een logo verzenden** en kies een vierkante afbeelding van minstens 200 x 200 px. Dastra snijdt ze automatisch bij.
+U kunt een logo of een profielfoto toevoegen, die in Dastra naast uw naam wordt getoond. Klik op **Een logo uploaden** en kies een vierkante afbeelding van minstens 200 x 200 px. Dastra snijdt ze automatisch bij.
 
 <figure><img src="../../.gitbook/assets/getting-started-profile-1.png" alt="Pagina Gebruikersprofiel met het veld voor het logo en de persoonlijke gegevens"><figcaption><p>De pagina Gebruikersprofiel</p></figcaption></figure>
 
 ## Persoonlijke gegevens
 
-U kunt de volgende velden op elk moment invullen of bijwerken. De velden voor adres, website en biografie zijn standaard verborgen: klik op **Meer tonen** om ze weer te geven. Klik op **Opslaan** om te bevestigen.
+U kunt de volgende velden op elk moment invullen of bijwerken. De velden voor adres, website en biografie zijn standaard verborgen: klik op **Meer weergeven** om ze weer te geven. Klik op **Opslaan** om te bevestigen.
 
 | Veld | Beschrijving | Verplicht |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ U kunt de volgende velden op elk moment invullen of bijwerken. De velden voor ad
 De sectie **Profiel e-mail** toont het adres dat aan uw account is gekoppeld.
 
 1. Klik op **E-mailadres wijzigen**.
-2. Vul bij **Voer je nieuwe e-mailadres in** uw nieuwe e-mailadres in en klik op **Stuur een bevestigingslink**.
+2. Vul bij **Voer uw nieuwe e-mailadres in** uw nieuwe e-mailadres in en klik op **Stuur een bevestigingslink**.
 3. Open de e-mail die naar het nieuwe adres is gestuurd en klik op de validatielink.
 
 ## Taal en tijdzone

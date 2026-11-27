@@ -20,7 +20,7 @@ Elke entiteit in Dastra geldt als verwerkingsverantwoordelijke.
 
 ## Naar de organisatorische eenheden gaan
 
-Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Organisatorische eenheden**.
+Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Organisatorische eenheden**.
 
 <figure><img src="../../.gitbook/assets/getting-started-org-units-1.png" alt="Menu Instellingen voor werkruimte met de optie Organisatorische eenheden"><figcaption><p>Het menu Instellingen voor werkruimte</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ Het scherm voor het aanmaken en instellen van organisatorische eenheden opent. H
 
 ## Een entiteit aanmaken of bewerken
 
-1. Klik op **Maak een entiteit (verwerkingsverantwoordelijke)**.
+1. Klik op **Entiteit aanmaken**.
 2. Vul de **Naam van de entiteit** en het **Land** in. Dat zijn verplichte velden. U kunt ook de verantwoordelijke (de wettelijke vertegenwoordiger), de functionaris voor gegevensbescherming en, indien van toepassing, de vertegenwoordiger in de Europese Unie opgeven.
 3. Klik op **Opslaan**.
 
@@ -46,7 +46,7 @@ Om een entiteit te bewerken, klikt u op de drie puntjes rechts van de entiteit e
 
 ## Een afdeling aanmaken of bewerken
 
-Om een afdeling aan te maken, opent u het menu van de knop **Maak een entiteit (verwerkingsverantwoordelijke)**, klikt u op **Maak een afdeling** en vult u de velden in.
+Om een afdeling aan te maken, opent u het menu van de knop **Entiteit aanmaken**, klikt u op **Afdeling aanmaken** en vult u de velden in.
 
 Om een afdeling te bewerken, klikt u op de drie puntjes rechts van de afdeling en daarna op **Bewerken**, brengt u uw wijzigingen aan en klikt u op **Opslaan**.
 
@@ -69,7 +69,7 @@ Het verwijderen van een organisatorische eenheid is definitief. De bijbehorende 
 
 ## Organisatorische eenheden importeren en exporteren
 
-Open het menu van de knop **Maak een entiteit (verwerkingsverantwoordelijke)**: het biedt **Importeren** en **Exporteren**.
+Open het menu van de knop **Entiteit aanmaken**: het biedt **Importeren** en **Exporteren**.
 
 Om te importeren klikt u op **Importeren** en daarna op **Het bestandssjabloon downloaden**. Vul het bestand in en sleep het naar het uploadvak. Het bestand kan de indeling CSV (UTF-8-codering, scheidingsteken `;`), TXT of XLSX hebben.
 

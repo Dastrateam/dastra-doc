@@ -145,7 +145,7 @@ De **AI Act** voert een specifieke verplichting in om **AI-systemen met een hoog
 * Geplande controles voor menselijk toezicht,
 * Transparantiemaatregelen.
 
-Voor AI-systemen biedt Dastra een specifieke impactanalyse in de module **AI-wet**, onder **Impactanalyses**, die zowel de AVG als de AI Act dekt.
+Voor AI-systemen biedt Dastra een specifieke impactanalyse in de module **AI-governance**, onder **Impactanalyses**, die zowel de AVG als de AI Act dekt.
 
 ***
 

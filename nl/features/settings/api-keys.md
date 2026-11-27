@@ -26,12 +26,12 @@ De pagina heeft drie tabbladen:
 
 ## Een API-sleutel aanmaken
 
-1. Klik in het tabblad **API keys** op **Maak een nieuwe API-sleutel**.
+1. Klik in het tabblad **API keys** op **Nieuwe API-sleutel aanmaken**.
 2. Vul de **Naam** van de sleutel in.
-3. Kies de werkruimte in **Een specifieke werkruimte selecteren** als u de sleutel tot één werkruimte wilt beperken. Kiest u er geen, dan geldt de sleutel voor **Alle werkplekken**.
+3. Kies de werkruimte in **Een specifieke werkruimte selecteren** als u de sleutel tot één werkruimte wilt beperken. Kiest u er geen, dan geldt de sleutel voor **Alle werkruimten**.
 4. Kies de **Expiration**: **Unlimited**, 30 dagen, 180 dagen, 365 dagen of **Custom date**.
-5. Antwoord bij **Deze API-sleutel volledige rechten geven?** met **Ja** voor een sleutel zonder beperkingen, of met **Neen** om alleen de machtigingen aan te vinken die de sleutel mag gebruiken.
-6. Klik op **Creëren**.
+5. Antwoord bij **Deze API-sleutel alle machtigingen geven?** met **Ja** voor een sleutel zonder beperkingen, of met **Nee** om alleen de machtigingen aan te vinken die de sleutel mag gebruiken.
+6. Klik op **Aanmaken**.
 
 <figure><img src="../../.gitbook/assets/settings-api-keys-1.png" alt="Het venster voor het aanmaken van een API-sleutel met naam, werkruimte, vervaldatum en machtigingen"><figcaption><p>Een API-sleutel aanmaken</p></figcaption></figure>
 

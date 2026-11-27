@@ -22,10 +22,10 @@ Deze pagina legt uit hoe u de SSO-aanmelding met Okta in Dastra instelt met het 
 
    * **ID van de client (clientId)**: kopieer de Client ID uit Okta.
    * **Autoriteit/domein**: vul het Okta-domein in met het protocol (`https://<uw domein>.okta.com`).
-   * **Beheerder**: laat het veld leeg.
+   * **Uitgever**: laat het veld leeg.
    * **Geheime sleutel**: kopieer de client secret uit Okta.
    * **Scope**: `openid profile email`.
-   * **Type reactie (Standaard: id_token)**: `id_token`.
+   * **Responstype (standaard: id_token)**: `id_token`.
 
    <figure><img src="../../../.gitbook/assets/settings-okta-2.png" alt="Het OpenID-formulier van Dastra ingevuld met de Okta-waarden, met de geheime waarden afgeschermd"><figcaption><p>Het OpenID-formulier van Dastra</p></figcaption></figure>
 10. Klik op **Opslaan** en klik daarna op **Testen** op de verbindingskaart. Als Okta u naar Dastra omleidt, is de configuratie voltooid.

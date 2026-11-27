@@ -6,9 +6,9 @@ description: >-
 
 # Documentsjablonen
 
-Dastra biedt documentsjablonen, bijvoorbeeld voor uw nalevingsdocumentatie. U vindt ze in de module **Toezicht en informatiebronnen**.
+Dastra biedt documentsjablonen, bijvoorbeeld voor uw nalevingsdocumentatie. U vindt ze in de module **Nieuws en bronnen**.
 
-1. Klik in het linkermenu onder **Resources** op **Toezicht en informatiebronnen**.
-2. Open het tabblad **Middelen**.
+1. Klik in het linkermenu onder **Resources** op **Nieuws en bronnen**.
+2. Open het tabblad **Bronnen**.
 
 Selecteer het sjabloon dat u nodig hebt. De sjablonen kunnen in Word-formaat worden gedownload.

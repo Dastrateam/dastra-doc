@@ -8,7 +8,7 @@ description: >-
 
 Een skill is een instructie die u eenmalig opslaat en daarna oproept met een commando, door `/` te typen in het gesprek. Zie het als een promptsjabloon die in de hele organisatie wordt gedeeld.
 
-U beheert skills via **Instellingen voor werkruimte** > **AI agents** > **Skills**.
+U beheert skills via **Instellingen van de werkruimte** > **AI agents** > **Skills**.
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-competences.png" alt="Lijst met Dastra AI-skills"><figcaption><p>Het tabblad Skills, met de ingebouwde skills van Dastra</p></figcaption></figure>
 

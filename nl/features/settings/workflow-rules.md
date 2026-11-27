@@ -44,37 +44,37 @@ Het aantal beschikbare werkstroomregels hangt af van uw abonnement, van 25 tot 1
 ## Een werkstroomregel aanmaken
 
 1. Open in het zijmenu **Automations** en daarna **Regels voor de workflow**.
-2. Klik op **Een werkstroomregel maken**.
+2. Klik op **Een workflowregel aanmaken**.
 3. Kies **Vanaf nul** om met een leeg canvas te beginnen, of **Vanaf een sjabloon** (zie [Sjabloonbibliotheek](#sjabloonbibliotheek)).
-4. Vul de **Naam van de regel** en het **Soort element** in en bevestig.
+4. Vul de **Naam van de regel** en het **Objecttype** in en bevestig.
 
-De regelontwerper opent. Boven in het scherm schakelt de schakelaar **Status** de regel in of uit. De knoppen **Historiek** en **Ren** worden hieronder beschreven. Het menu van de knop **Opslaan** biedt ook **Opslaan en stoppen** en **Sla het sjabloon op**.
+De regelontwerper opent. Boven in het scherm schakelt de schakelaar **Status** de regel in of uit. De knoppen **Historiek** en **Uitvoeren** worden hieronder beschreven. Het menu van de knop **Opslaan** biedt ook **Opslaan en afsluiten** en **Opslaan als sjabloon**.
 
 ### Trigger
 
 U kiest de trigger uit twee waarden:
 
-* **Actie**: de regel gaat af wanneer zich een gebeurtenis voordoet op het object. De gebeurtenissen zijn **Creatie**, **Aanmaken of bewerken**, **Wijziging**, **Verwijderen of archiveren** en **Verandering van stadium**. Verwijderen of archiveren wordt niet aangeboden voor activa, stakeholders, gegevensvelden, veiligheidsmaatregelen en categorieën van betrokkenen.
+* **Actie**: de regel gaat af wanneer zich een gebeurtenis voordoet op het object. De gebeurtenissen zijn **Aangemaakt**, **Aangemaakt of gewijzigd**, **Gewijzigd**, **Naar de prullenbak verplaatst** en **Stap gewijzigd**. De gebeurtenis **Naar de prullenbak verplaatst** wordt niet aangeboden voor activa, stakeholders, gegevensvelden, veiligheidsmaatregelen en categorieën van betrokkenen.
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rules-2.png" alt="Trigger van het type Actie met de lijst van gebeurtenissen"><figcaption><p>Een trigger op een actie aanmaken</p></figcaption></figure>
 
 * **Terugkerende datumcontrole**: de regel wordt elke dag op een ingesteld tijdstip beoordeeld en gaat af op basis van een datumveld van het object. Stel het volgende in:
 
   * **Elke dag om**: het tijdstip van de dagelijkse controle, weergegeven met uw tijdzone (bijvoorbeeld 00:00 Europe/Paris).
-  * **Controleer of de**: het datumveld dat wordt beoordeeld (bijvoorbeeld sluitingsdatum, aanmaakdatum, beoordelingsdatum).
+  * **Te controleren datumveld**: het datumveld dat wordt beoordeeld (bijvoorbeeld sluitingsdatum, aanmaakdatum, beoordelingsdatum).
   * Het moment waarop de regel afgaat, te kiezen uit:
     * **Is overschreden**: de regel gaat af op de dag waarop de datum wordt bereikt.
-    * **Datum modifiers**, die een verschuiving aan de datum toevoegen:
-      * **Zal worden overschreden in**: de regel gaat af N uren, dagen, maanden of jaren vóór de datum (bijvoorbeeld 30 dagen voordat een contract verloopt).
+    * **Datumwijzigers**, die een verschuiving aan de datum toevoegen:
+      * **Wordt bereikt over**: de regel gaat af N uren, dagen, maanden of jaren vóór de datum (bijvoorbeeld 30 dagen voordat een contract verloopt).
       * **Is overschreden sinds**: de regel gaat af N uren, dagen, maanden of jaren ná de datum (bijvoorbeeld 1 dag na de sluiting).
 
-  De knop **Bekijk de betreffende items vandaag** toont een voorbeeld van de objecten die nu aan de regel zouden voldoen. Dat is nuttig om te testen voordat u de regel inschakelt.
+  De knop **Items bekijken alsof het vandaag is** toont een voorbeeld van de objecten die nu aan de regel zouden voldoen. Dat is nuttig om te testen voordat u de regel inschakelt.
 
 <figure><img src="../../.gitbook/assets/settings-workflow-rules-3.png" alt="Trigger van het type Terugkerende datumcontrole"><figcaption><p>Een trigger op een terugkerende datumcontrole aanmaken</p></figcaption></figure>
 
 Per regel kan maar één trigger worden gedefinieerd.
 
-Bij de gebeurtenissen **Aanmaken of bewerken**, **Wijziging**, **Verwijderen of archiveren** en **Verandering van stadium** staat de optie **Voer de workflow slechts één keer per item uit (aanbevolen)** standaard aan. Wij raden sterk aan ze aan te laten staan: wanneer een regel meerdere keren op hetzelfde item draait, kunnen dubbele taken of herhaalde meldingen ontstaan.
+Bij de gebeurtenissen **Aangemaakt of gewijzigd**, **Gewijzigd**, **Naar de prullenbak verplaatst** en **Stap gewijzigd** staat de optie **Voer de workflow slechts één keer per item uit (aanbevolen)** standaard aan. Wij raden sterk aan ze aan te laten staan: wanneer een regel meerdere keren op hetzelfde item draait, kunnen dubbele taken of herhaalde meldingen ontstaan.
 
 ### Voorwaarden
 
@@ -82,8 +82,8 @@ Een regel heeft maximaal vijf voorwaarden. Elke voorwaarde heeft haar eigen acti
 
 Kies voor elke voorwaarde:
 
-* **Geldt voor alle elementen**: de regel draait op elk item dat aan de trigger voldoet, zonder verdere filtering.
-* **Specificeer voorwaarden**: filter op de waarde van een of meer velden van het object (bijvoorbeeld "Stap is gelijk aan Nieuw").
+* **Op alle toepassen**: de regel draait op elk item dat aan de trigger voldoet, zonder verdere filtering.
+* **Voorwaarden toepassen**: filter op de waarde van een of meer velden van het object (bijvoorbeeld "Stap is gelijk aan Nieuw").
 
 Voorwaarden kunnen elk veld van het object gebruiken en kunnen worden gegroepeerd, met de mogelijkheid om te wisselen tussen **En** en **of**. Met **Voeg een voorwaarde toe** voegt u een regel toe binnen een groep, en met **Voeg een groep voorwaarden toe** maakt u een afzonderlijk logisch blok.
 
@@ -103,19 +103,19 @@ Dit zijn de acties die u kunt activeren:
 | **Eigenaar definiëren** | Het object toewijzen aan een gebruiker, aan een lid van een team of aan een variabele van het object | Stakeholder, gegevensveld, veiligheidsmaatregel, categorie van betrokkenen, antwoord op een vragenlijst |
 | **Voeg een taak toe** | Een taak aanmaken die aan het object is gekoppeld | |
 | **Een melding verzenden** | Een melding per e-mail verzenden | |
-| **Tag (s) toevoegen** | Een of meer tags aan het object toevoegen | Gegevensveld, antwoord op een vragenlijst |
+| **Tag(s) toevoegen** | Een of meer tags aan het object toevoegen | Gegevensveld, antwoord op een vragenlijst |
 | **Een antwoord op een vragenlijst plannen** | Automatisch een antwoord op een vragenlijst plannen | Antwoord op een vragenlijst |
 | **Execute an AI agent** | Een AI-agent uitvoeren (zie [Een AI-agent uitvoeren](#een-ai-agent-uitvoeren)) | |
-| **Stuur een Teams-notificatie** | Een kaart plaatsen in een Microsoft Teams-kanaal, als de Microsoft Teams-integratie is geïnstalleerd | |
+| **Een Teams-melding verzenden** | Een kaart plaatsen in een Microsoft Teams-kanaal, als de Microsoft Teams-integratie is geïnstalleerd | |
 | **Send an HTTP request** | De API van een extern platform aanroepen, als de integratie HTTP / Custom API is ingeschakeld | |
 
 Voor verzoeken van betrokkenen zijn extra acties beschikbaar:
 
-* **Een verzoekbericht verzenden**: een bericht naar de aanvrager sturen.
+* **Een bericht naar de aanvrager verzenden**: een bericht naar de aanvrager sturen.
 * **Het verzoek sluiten**
 * **Het verzoek anonimiseren** (alleen beschikbaar als het verzoek is gesloten)
 
-De actie **Verplaats naar prullenbak** is beschikbaar voor verzoeken en voor verwerkingsactiviteiten.
+De actie **Naar de prullenbak verplaatsen** is beschikbaar voor verzoeken en voor verwerkingsactiviteiten.
 
 {% hint style="info" %}
 Voorbeeld: meerdere personen op de hoogte stellen wanneer een taak wordt aangemaakt. Kies het objecttype Taak en voeg, afhankelijk van de voorwaarden van de taak (bijvoorbeeld een tag die wordt toegevoegd), een actie **Een melding verzenden** toe.
@@ -123,7 +123,7 @@ Voorbeeld: meerdere personen op de hoogte stellen wanneer een taak wordt aangema
 
 ### Organisatie-eenheid van een aangemaakte taak
 
-De actie **Voeg een taak toe** bevat een veld **Organisatie-eenheid** dat bepaalt aan welke eenheid de aangemaakte taak wordt gekoppeld:
+De actie **Voeg een taak toe** bevat een veld **Organisatorische eenheid** dat bepaalt aan welke eenheid de aangemaakte taak wordt gekoppeld:
 
 * **Standaard (geërfd van het object)**: de taak wordt gekoppeld aan de organisatie-eenheid van het triggerobject, als dat er een heeft. Deze waarde geldt wanneer het veld leeg blijft.
 * Een specifieke eenheid: kies een eenheid in de boomstructuur. De taak wordt aan die eenheid gekoppeld, ongeacht de eenheid van het triggerobject.
@@ -142,7 +142,7 @@ Om het werk over een team te spreiden, kiest u **Selecteer een gebruiker in het 
 
 ### Een berichtsjabloon aan een actie koppelen
 
-Voor regels die aan verzoeken van betrokkenen zijn gekoppeld, kan de actie **Een verzoekbericht verzenden** steunen op een bestaand berichtsjabloon in plaats van op handmatig ingevoerde inhoud.
+Voor regels die aan verzoeken van betrokkenen zijn gekoppeld, kan de actie **Een bericht naar de aanvrager verzenden** steunen op een bestaand berichtsjabloon in plaats van op handmatig ingevoerde inhoud.
 
 <figure><img src="../../.gitbook/assets/workflow-action-select-template.png" alt="De actie Een verzoekbericht verzenden met de knop Selecteer een sjabloon"><figcaption><p>De actie Een verzoekbericht verzenden biedt Selecteer een sjabloon</p></figcaption></figure>
 
@@ -158,7 +158,7 @@ Klik in de actie op **Selecteer een sjabloon** en kies een sjabloon van het type
 
 ### Een Teams-notificatie verzenden
 
-Wanneer de [Microsoft Teams-integratie](../integrations/microsoft-teams.md) is geïnstalleerd en ingeschakeld in de werkruimte, plaatst de actie **Stuur een Teams-notificatie** een kaart in het Teams-kanaal dat aan de webhook is gekoppeld. U kiest geen ontvanger.
+Wanneer de [Microsoft Teams-integratie](../integrations/microsoft-teams.md) is geïnstalleerd en ingeschakeld in de werkruimte, plaatst de actie **Een Teams-melding verzenden** een kaart in het Teams-kanaal dat aan de webhook is gekoppeld. U kiest geen ontvanger.
 
 Vul de volgende velden in:
 
@@ -176,7 +176,7 @@ De actie verschijnt alleen in de lijst met acties wanneer de Microsoft Teams-int
 
 De actie **Send an HTTP request** roept de API van een extern platform aan wanneer de regel afgaat: een ticketingtool, een ITSM-tool, een interne dienst of een automatiseringshub. Gebruik ze wanneer er geen native connector bestaat voor uw tool.
 
-Vereiste: de integratie [HTTP / Custom API](../integrations/custom-http.md) is ingeschakeld in **Instellingen voor werkruimte** > **Integraties**, met een verbinding voor het doelplatform (API-sleutel, basisreferenties of OAuth 2.0). Voor het toevoegen of bewerken van deze actie is het recht Integrations op de werkruimte nodig.
+Vereiste: de integratie [HTTP / Custom API](../integrations/custom-http.md) is ingeschakeld in **Instellingen van de werkruimte** > **Integraties**, met een verbinding voor het doelplatform (API-sleutel, basisreferenties of OAuth 2.0). Voor het toevoegen of bewerken van deze actie is het recht Integrations op de werkruimte nodig.
 
 Vul de volgende velden in:
 
@@ -256,7 +256,7 @@ Elke regel bewaart de geschiedenis van haar uitvoeringen. Klik in de ontwerper o
 * **Laatste uitvoeringsdatum**
 * **Status**
 * **Aantal uitvoeringen**
-* Het resultaat: **Succes**, **Laatste uitvoering in fout** of **Fout**, met het aantal fouten
+* Het resultaat: **Succes**, **Laatste uitvoering mislukt** of **Fout**, met het aantal fouten
 
 Het menu van elke rij biedt:
 
@@ -266,7 +266,7 @@ Het menu van elke rij biedt:
 
 ## Handmatige uitvoering
 
-U kunt een regel op elk moment uitvoeren met de knop **Ren** van de ontwerper, of met **Workflow uitvoeren** in het menu van de knop **Opslaan**. Een venster vraagt u het object te selecteren waarop de regel moet draaien. De trigger wordt genegeerd: alleen de voorwaarden en de acties worden toegepast.
+U kunt een regel op elk moment uitvoeren met de knop **Uitvoeren** van de ontwerper, of met **Workflow uitvoeren** in het menu van de knop **Opslaan**. Een venster vraagt u het object te selecteren waarop de regel moet draaien. De trigger wordt genegeerd: alleen de voorwaarden en de acties worden toegepast.
 
 Handmatige uitvoering is nuttig om een regel te testen of om haar toe te passen op een object dat vóór de regel is aangemaakt. Ze is pas beschikbaar nadat de regel is opgeslagen.
 
@@ -289,7 +289,7 @@ Kies bij het aanmaken van een regel **Vanaf een sjabloon** om te beginnen met ee
 
 ### Een regel als sjabloon opslaan
 
-Open een bestaande werkstroomregel, open het menu van de knop **Opslaan** en klik op **Sla het sjabloon op**. Geef het een naam en een beschrijving en bevestig. Het sjabloon is meteen beschikbaar in de bibliotheek en kan door elke gebruiker van de werkruimte worden hergebruikt.
+Open een bestaande werkstroomregel, open het menu van de knop **Opslaan** en klik op **Opslaan als sjabloon**. Geef het een naam en een beschrijving en bevestig. Het sjabloon is meteen beschikbaar in de bibliotheek en kan door elke gebruiker van de werkruimte worden hergebruikt.
 
 <figure><img src="../../.gitbook/assets/workflow-rule-save-as-template.png" alt="Dialoogvenster Sla het sjabloon op met de velden naam en beschrijving"><figcaption><p>Een werkstroomregel opslaan als herbruikbaar sjabloon</p></figcaption></figure>
 

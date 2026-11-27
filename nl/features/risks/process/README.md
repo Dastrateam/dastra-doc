@@ -9,7 +9,7 @@ Het risicobeheerproces van Dastra is een **vereenvoudigde versie** van het model
 
 ## Uw risico's beheren in 4 stappen <a href="#manage-your-risks-in-4-steps" id="manage-your-risks-in-4-steps"></a>
 
-Het beheer van een risico volgt vier hoofdstappen, gevolgd door archivering. Bovenaan een risicopagina toont de voortgangsbalk ze onder de labels **Identificatie**, **Evaluatie**, **Verwerkingen**, **Monitoring** en **Terugtrekking**.
+Het beheer van een risico volgt vier hoofdstappen, gevolgd door archivering. Bovenaan een risicopagina toont de voortgangsbalk ze onder de labels **Identificatie**, **Evaluatie**, **Verwerkingen**, **Monitoring** en **Archivering**.
 
 <figure><img src="../../../.gitbook/assets/risk-workflow-stepper.png" alt="Voortgangsbalk van een risico: Identificatie, Evaluatie, Verwerkingen, Monitoring, Terugtrekking"><figcaption><p>De 4 stappen van het risicobeheer, gevolgd door archivering</p></figcaption></figure>
 

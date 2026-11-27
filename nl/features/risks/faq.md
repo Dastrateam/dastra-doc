@@ -27,4 +27,4 @@ Als u een andere schaal activeert, veranderen de statistieken van alle risico's 
 
 ## Hoe beoordeel ik hetzelfde risico op meerdere verwerkingsactiviteiten of activa?
 
-Gebruik **Creatie van risico's in bulk**: selecteer het risicotype en alle betrokken objecten, en Dastra maakt één risico per object aan. Zie [Risicobeheer](README.md).
+Gebruik **Risico's in bulk identificeren**: selecteer het risicotype en alle betrokken objecten, en Dastra maakt één risico per object aan. Zie [Risicobeheer](README.md).

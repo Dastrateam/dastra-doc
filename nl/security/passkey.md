@@ -37,7 +37,7 @@ Na een aanmelding met wachtwoord stelt Dastra voor om een passkey aan te maken a
 
 * meteen **Een passkey aanmaken**;
 * **Later** kiezen: de uitnodiging wordt 90 dagen niet meer weergegeven in deze browser;
-* **Niet meer voorstellen** kiezen: de uitnodiging wordt definitief uitgeschakeld voor uw account (u kunt nog altijd een passkey aanmaken via uw beveiligingsinstellingen).
+* **Niet meer vragen** kiezen: de uitnodiging wordt definitief uitgeschakeld voor uw account (u kunt nog altijd een passkey aanmaken via uw beveiligingsinstellingen).
 
 ## Inloggen met een passkey
 

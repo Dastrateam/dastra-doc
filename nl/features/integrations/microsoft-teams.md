@@ -36,7 +36,7 @@ Microsoft heeft de klassieke inkomende webhooks van Office 365 (kanaalconnectors
 
 ## Installatie
 
-1. Open in Dastra **Instellingen voor werkruimte** > **Integraties** en selecteer **Microsoft Teams**.
+1. Open in Dastra **Instellingen van de werkruimte** > **Integraties** en selecteer **Microsoft Teams**.
 2. Klik bij het gebruiksscenario **Publiceer de meldingen van uw workflowregels als kaarten in een Microsoft Teams-kanaal** op **Integratie toevoegen**.
 3. Voeg een verbinding toe en plak de **Workflows webhook URL**.
 4. Klik op **Verbinden**. Dastra plaatst meteen een testkaart met de titel **Testmelding Dastra** in het kanaal om de URL te controleren.
@@ -51,7 +51,7 @@ Wilt u meerdere kanalen notificeren, maak dan één verbinding per kanaal aan (e
 
 ## Meldingen versturen vanuit een workflowregel
 
-Zodra de integratie is geïnstalleerd en ingeschakeld, biedt de ontwerper van [workflowregels](../settings/workflow-rules.md) de actie **Stuur een Teams-notificatie**.
+Zodra de integratie is geïnstalleerd en ingeschakeld, biedt de ontwerper van [workflowregels](../settings/workflow-rules.md) de actie **Een Teams-melding verzenden**.
 
 U configureert ze zoals de actie voor e-mailmeldingen:
 

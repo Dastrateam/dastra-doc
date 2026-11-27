@@ -26,9 +26,9 @@ In Dastra helpt de sectie **Impactanalyse** van elke verwerkingsactiviteit te be
 * Innovatief gebruik of toepassing van nieuwe technologieën
 * Verwerking die betrokkenen belet hun rechten uit te oefenen
 
-Kies voor elk criterium **Ja**, **Neen** of **Niet van toepassing**. Twee antwoorden **Ja** volstaan doorgaans om een DPIA verplicht te maken, maar afhankelijk van de context kan één criterium volstaan.
+Kies voor elk criterium **Ja**, **Nee** of **Niet van toepassing**. Twee antwoorden **Ja** volstaan doorgaans om een DPIA verplicht te maken, maar afhankelijk van de context kan één criterium volstaan.
 
-Klik naast de titel **Evaluatie van de 9 criteria van de AIPD (CEPD)** op **Genereer de evaluatie** om tijd te winnen: de AI-assistent stelt voor elk criterium een antwoord voor, met een motivering, op basis van de informatie die al in de verwerkingsactiviteit is ingevoerd. U beoordeelt het voorstel voordat u het op het formulier toepast, en elk antwoord blijft bewerkbaar. De gedetailleerde procedure staat op de pagina [Impactanalyse](../../ropa/activity/impact-analysis.md).
+Klik naast de titel **Beoordeling van de 9 DPIA-criteria (EDPB)** op **Beoordeling genereren** om tijd te winnen: de AI-assistent stelt voor elk criterium een antwoord voor, met een motivering, op basis van de informatie die al in de verwerkingsactiviteit is ingevoerd. U beoordeelt het voorstel voordat u het op het formulier toepast, en elk antwoord blijft bewerkbaar. De gedetailleerde procedure staat op de pagina [Impactanalyse](../../ropa/activity/impact-analysis.md).
 
 {% hint style="info" %}
 De lijst van verwerkingsactiviteiten waarvoor een DPIA vereist is, hangt af van de aanbevelingen van uw nationale toezichthoudende autoriteit. Dastra biedt een DPIA-gids met aanbevelingen per land om uw verplichtingen vast te stellen.
@@ -37,7 +37,7 @@ De lijst van verwerkingsactiviteiten waarvoor een DPIA vereist is, hangt af van 
 Dastra toont een van deze twee resultaten:
 
 * **DPIA is niet verplicht**: de verwerking haalt de drempel niet;
-* **Een DPIA is vereist**: de knop **Maak een DPIA** verschijnt om de beoordeling rechtstreeks te starten.
+* **Een DPIA is vereist**: de knop **DPIA aanmaken** verschijnt om de beoordeling rechtstreeks te starten.
 
 ## PIA- en DPIA-sjablonen in Dastra
 
@@ -52,7 +52,7 @@ In de bibliotheek van Dastra staan verschillende PIA- en DPIA-sjablonen, waarond
 * **DPIA Questionnaire (ICO)** (9 vragen): het sjabloon van de Britse toezichthouder
 * **US PIA (cross-state)** (86 vragen): voor verwerkingsactiviteiten in de Verenigde Staten
 
-Open voor deze sjablonen **Vragenlijsten** > **Vraagmodellen**, klik op **Maak een sjabloon** en daarna op **Geautomatiseerde audit**, en filter met **Soorten** op **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**.
+Open voor deze sjablonen **Vragenlijsten** > **Vragenlijstsjablonen**, klik op **Maak een sjabloon** en daarna op **Geautomatiseerde audit**, en filter met **Soorten** op **Gegevensbeschermingseffectbeoordeling (DPIA)**.
 
 ## Structuur van de PIA-vragenlijst (CNIL)
 
@@ -63,23 +63,23 @@ Het PIA-sjabloon (CNIL) is opgebouwd uit drie hoofdonderdelen:
 3. Risico's voor de gegevensbeveiliging: beoordeel de risico's in vier categorieën van bedreigingen: genomen beveiligingsmaatregelen, onrechtmatige toegang tot gegevens, ongewenste wijziging van gegevens en verdwijnen van gegevens
 
 {% hint style="info" %}
-De PIA-vragenlijst (CNIL) kent twee antwoordmodi. Het verschil tussen beide betreft uitsluitend de zichtbaarheid van extra velden per vraag: in de **Uitgebreide modus** worden de velden **Reden voor respons**, **Bijlagen** en **Annotaties** bij elke vraag getoond. In de **Vereenvoudigde modus** zijn deze velden verborgen. U kunt op elk moment van modus wisselen.
+De PIA-vragenlijst (CNIL) kent twee antwoordmodi. Het verschil tussen beide betreft uitsluitend de zichtbaarheid van extra velden per vraag: in de **Uitgebreide modus** worden de velden **Rechtvaardiging van het antwoord**, **Bijlagen** en **Annotaties** bij elke vraag getoond. In de **Vereenvoudigde modus** zijn deze velden verborgen. U kunt op elk moment van modus wisselen.
 {% endhint %}
 
 ## Een PIA koppelen aan een verwerkingsactiviteit
 
 Configureer uw PIA-sjabloon als volgt om het meeste uit de PIA-functionaliteit van Dastra te halen:
 
-1. Stel het **Type audit** in op **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**: daarmee schakelt u de risicoheatmap in het dashboard van de vragenlijst in en integreert u de gegevens van de gekoppelde verwerkingsactiviteit.
-2. Selecteer bij **Geauditeerd element** de optie Verwerking: zo koppelt u elk PIA-antwoord aan een specifieke verwerkingsactiviteit en wordt het veld **Datum laatste DPIA** van de verwerkingsactiviteit automatisch bijgewerkt wanneer de DPIA wordt gepubliceerd (zie "De datum van de laatste DPIA bijwerken" hieronder).
+1. Stel het **Type audit** in op **Gegevensbeschermingseffectbeoordeling (DPIA)**: daarmee schakelt u de risicoheatmap in het dashboard van de vragenlijst in en integreert u de gegevens van de gekoppelde verwerkingsactiviteit.
+2. Selecteer bij **Gekoppeld aan** de optie Verwerking: zo koppelt u elk PIA-antwoord aan een specifieke verwerkingsactiviteit en wordt het veld **Datum laatste DPIA** van de verwerkingsactiviteit automatisch bijgewerkt wanneer de DPIA wordt gepubliceerd (zie "De datum van de laatste DPIA bijwerken" hieronder).
 
 {% hint style="info" %}
-Zodra een PIA aan een verwerkingsactiviteit is gekoppeld, opent u ze rechtstreeks via de stap **Impactanalyse** van die verwerkingsactiviteit en start u ze met de knop **Maak een DPIA** wanneer de drempel is bereikt.
+Zodra een PIA aan een verwerkingsactiviteit is gekoppeld, opent u ze rechtstreeks via de stap **Impactanalyse** van die verwerkingsactiviteit en start u ze met de knop **DPIA aanmaken** wanneer de drempel is bereikt.
 {% endhint %}
 
 ### De datum van de laatste DPIA bijwerken
 
-Wanneer een DPIA die aan een verwerkingsactiviteit is gekoppeld, wordt gepubliceerd, kopieert Dastra de publicatiedatum naar het veld **Datum laatste DPIA** in de stap **Impactanalyse** van de verwerkingsactiviteit. Deze update geldt ongeacht de herkomst van de DPIA (gestart vanuit de verwerkingsactiviteit of gepland vanuit de module Vragenlijsten), op voorwaarde dat het sjabloontype **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)** is en het gekoppelde object een verwerkingsactiviteit.
+Wanneer een DPIA die aan een verwerkingsactiviteit is gekoppeld, wordt gepubliceerd, kopieert Dastra de publicatiedatum naar het veld **Datum laatste DPIA** in de stap **Impactanalyse** van de verwerkingsactiviteit. Deze update geldt ongeacht de herkomst van de DPIA (gestart vanuit de verwerkingsactiviteit of gepland vanuit de module Vragenlijsten), op voorwaarde dat het sjabloontype **Gegevensbeschermingseffectbeoordeling (DPIA)** is en het gekoppelde object een verwerkingsactiviteit.
 
 De publicatie vindt plaats:
 
@@ -102,8 +102,8 @@ De publicatiedatum overschrijft elke waarde die al in het veld **Datum laatste D
 Hebt u al een PIA uitgevoerd met de CNIL-tool, dan importeert u die rechtstreeks in Dastra:
 
 1. Exporteer uw PIA uit de CNIL-tool in **.json**-indeling.
-2. Open in Dastra het PIA-sjabloon (CNIL) via **Vraagmodellen**, klik op de pijl naast **Plan een audit** en daarna op **Importeer PIA vanuit de PIA-tool (CNIL)**. Deze actie is alleen beschikbaar voor een sjabloon van het type **Gegegevensefffectbeoordeling (Data Protection Impact Assessement)**.
-3. Kies de **Organisatie-eenheid** en de verwerkingsactiviteit bij **Kies de behandeling die bij deze DPIA hoort** en sleep daarna het .json-bestand erin.
+2. Open in Dastra het PIA-sjabloon (CNIL) via **Vragenlijstsjablonen**, klik op de pijl naast **Plan een audit** en daarna op **Importeren uit de PIA-tool van de CNIL**. Deze actie is alleen beschikbaar voor een sjabloon van het type **Gegevensbeschermingseffectbeoordeling (DPIA)**.
+3. Kies de **Organisatorische eenheid** en de verwerkingsactiviteit bij **Kies de gekoppelde verwerkingsactiviteit** en sleep daarna het .json-bestand erin.
 4. Een groot deel van de elementen wordt automatisch in Dastra geïmporteerd.
 
 ## Een DPIA uitvoeren voor meerdere verwerkingsactiviteiten

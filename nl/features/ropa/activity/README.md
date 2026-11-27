@@ -46,7 +46,7 @@ Een verwerkingsactiviteit als **Verwerkingsverantwoordelijke** heeft 12 secties:
 [Gegevens en retentie](datasets.md)
 {% endcontent-ref %}
 
-* **Betrokken personen**: lijst de categorieën van betrokkenen op die bij de verwerking zijn betrokken.
+* **Betrokkenen**: lijst de categorieën van betrokkenen op die bij de verwerking zijn betrokken.
 
 {% content-ref url="data-subjects.md" %}
 [Betrokken personen](data-subjects.md)

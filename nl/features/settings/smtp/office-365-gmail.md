@@ -54,10 +54,10 @@ Deze stap is verplicht: zonder autorisatie van de provider kan Dastra geen e-mai
 
 Twee velden zijn verplicht:
 
-1. **e-mail van de afzender**: het adres dat als afzender van de notificaties wordt gebruikt (bijvoorbeeld `notifications@uwdomein.com`).
+1. **E-mailadres van de afzender**: het adres dat als afzender van de notificaties wordt gebruikt (bijvoorbeeld `notifications@uwdomein.com`).
 2. **Naam van afzender**: de naam die als afzender wordt weergegeven (bijvoorbeeld `Compliance-team - Uw bedrijf`).
 
-Klik daarna op **Registreren en testen**.
+Klik daarna op **Opslaan en testen**.
 
 ### Stap 3: het verzenden controleren
 
@@ -116,7 +116,7 @@ Voor Gmail vraagt Dastra de toegang `https://mail.google.com/`.
 Ja. Voor een gedeelde mailbox (bijvoorbeeld `privacy@uwbedrijf.com`) gaat u als volgt te werk:
 
 1. Meld u aan met uw persoonlijke account, dat het recht heeft om vanuit de gedeelde mailbox te verzenden.
-2. Vul in het veld **e-mail van de afzender** het adres van de gedeelde mailbox in.
+2. Vul in het veld **E-mailadres van de afzender** het adres van de gedeelde mailbox in.
 
 Voor deze instelling is geen wijziging van het Exchange-beleid (ApplicationAccessPolicy) nodig.
 

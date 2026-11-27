@@ -19,7 +19,7 @@ Controleer eerst het volgende:
 Komt de e-mail nog steeds niet aan, genereer dan een uitnodigingslink:
 
 1. Klik in de lijst met gebruikers op **Een gebruiker uitnodigen** en volg de stappen.
-2. Selecteer in de stap waarin u kiest hoe u uitnodigt **Een uitnodigingslink genereren** en klik daarna op de knop **Een uitnodigingslink genereren**.
+2. Selecteer in de stap waarin u kiest hoe u uitnodigt **Een link genereren** en klik daarna op de knop **Een link genereren**.
 
    <figure><img src="../.gitbook/assets/other-known-problems-1.png" alt="Uitnodigingsvenster met de optie Een uitnodigingslink genereren geselecteerd"><figcaption><p>De uitnodigingslink kiezen</p></figcaption></figure>
 3. Kopieer de link die onder **Uitnodigingslink om rechtstreeks naar de gebruiker te verzenden** wordt weergegeven.
@@ -49,11 +49,11 @@ Om dit uit te voeren, opent u rechtsboven uw profielmenu, klikt u op **Gebruiker
 Deze actie verwijdert uw kolominstellingen in alle tabellen van Dastra en geeft de tutorials in alle modules opnieuw weer.
 {% endhint %}
 
-Lossen deze twee acties uw probleem niet op, neem dan vanuit de toepassing contact op met support: open uw profielmenu en kies **Hulpmiddelen** > **Contact opnemen met support** of **Praat met ons in de chat**.
+Lossen deze twee acties uw probleem niet op, neem dan vanuit de toepassing contact op met support: open uw profielmenu en kies **Help** > **Contact opnemen met support** of **Chat met ons**.
 
 ## Fout 401 tijdens het aanmelden
 
-**Scenario**: u maakt verbinding met Dastra via https://app.dastra.eu, u voert uw inloggegevens in en er verschijnt een foutpagina. De titel ervan is **Toegang geweigerd (401)**.
+**Scenario**: u maakt verbinding met Dastra via https://app.dastra.eu, u voert uw inloggegevens in en er verschijnt een foutpagina. De titel ervan is **U bent niet ingelogd in de app**.
 
 <figure><img src="../.gitbook/assets/other-known-problems-4.png" alt="Foutpagina 401 van Dastra met de voorgestelde oplossingen"><figcaption><p>Foutpagina 401</p></figcaption></figure>
 
@@ -67,7 +67,7 @@ Lossen deze twee acties uw probleem niet op, neem dan vanuit de toepassing conta
 
 ## Fout 403: toegang geweigerd
 
-De melding **Onbereikbare bron (403)** betekent dat u probeert een onderdeel van Dastra te openen zonder de nodige machtiging. Een beheerder heeft de toegang tot bepaalde items of modules in uw werkruimte beperkt op basis van uw rol of de rechten van uw team.
+De melding **U heeft geen toegang tot deze functie of bron (organisatorische eenheid/entiteit)** betekent dat u probeert een onderdeel van Dastra te openen zonder de nodige machtiging. Een beheerder heeft de toegang tot bepaalde items of modules in uw werkruimte beperkt op basis van uw rol of de rechten van uw team.
 
 Om het probleem op te lossen:
 
@@ -94,4 +94,4 @@ Deze fout kan zich af en toe voordoen. Ze wordt vaak veroorzaakt door:
 
 In de meeste gevallen is het probleem tijdelijk: wacht een paar minuten voordat u het opnieuw probeert.
 
-Blijft het probleem bestaan, stuur dan een bugmelding via **Hulpmiddelen** > **Contact opnemen met support** in uw profielmenu, zodat onze teams het kunnen onderzoeken.
+Blijft het probleem bestaan, stuur dan een bugmelding via **Help** > **Contact opnemen met support** in uw profielmenu, zodat onze teams het kunnen onderzoeken.

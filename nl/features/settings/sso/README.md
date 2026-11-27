@@ -22,7 +22,7 @@ Bij Dastra is de User Agent de browser van een Dastra-gebruiker, de Service Prov
 
 ## Implementatie
 
-Een Dastra-abonnement kan een of meer SSO-logins bevatten, als de functie in uw abonnement is inbegrepen. Om ze te beheren opent u **Organisatie-instellingen** (onderaan het menu **Instellingen voor werkruimte**) en daarna **Eenmalig inloggen**. U komt dan op de [configuratiepagina voor SSO-logins](https://app.dastra.eu/general-settings/sso).
+Een Dastra-abonnement kan een of meer SSO-logins bevatten, als de functie in uw abonnement is inbegrepen. Om ze te beheren opent u **Organisatie-instellingen** (onderaan het menu **Instellingen van de werkruimte**) en daarna **Single sign-on**. U komt dan op de [configuratiepagina voor SSO-logins](https://app.dastra.eu/general-settings/sso).
 
 {% hint style="info" %}
 Alleen een eigenaar van de organisatie heeft toegang tot deze pagina.
@@ -76,12 +76,12 @@ Het formulier van een SSO-verbinding opent in een zijpaneel met drie secties.
 ### 2. Configuratie
 
 * De velden die specifiek zijn voor het protocol: zie [SAML 2](saml.md) en [OpenID](openid.md).
-* **De naam van de claim met het e-mailadres**: de naam van de claim waarin uw identiteitsprovider het e-mailadres van de gebruiker teruggeeft (in het Engels: "User's email address claim name mapping (Used if user does not exist locally)"). Als Dastra uw gebruikers niet herkent, zie dan [Bekende problemen](known-problems.md).
+* **Toewijzing van de claimnaam voor het e-mailadres van de gebruiker (gebruikt als de gebruiker lokaal niet bestaat)**: de naam van de claim waarin uw identiteitsprovider het e-mailadres van de gebruiker teruggeeft (in het Engels: "User's email address claim name mapping (Used if user does not exist locally)"). Als Dastra uw gebruikers niet herkent, zie dan [Bekende problemen](known-problems.md).
 
 ### 3. Automatisch gebruikers aanmaken
 
-* **Gebruiker aangemaakt als de gebruiker nog nooit is uitgenodigd voor Dastra**: schakelt de automatische aanmaak van accounts in. Zie [Automatische gebruikersprovisioning inschakelen](#automatische-gebruikersprovisioning-inschakelen).
-* **De standaardrol die is toegewezen aan alle werkruimten in het abonnement wanneer de gebruiker wordt gemaakt**: optioneel.
+* **Gebruiker automatisch aanmaken**: schakelt de automatische aanmaak van accounts in. Zie [Automatische gebruikersprovisioning inschakelen](#automatische-gebruikersprovisioning-inschakelen).
+* **De standaardrol die in elke werkruimte wordt toegewezen aan nieuw aangemaakte gebruikers**: optioneel.
 * **Een specifieke werkruimte selecteren**: optioneel. Als u een werkruimte kiest, verschijnt een veld voor de naam van de groepsclaim: zie [Teams koppelen](#teams-koppelen).
 
 ## SSO inschakelen voor alle gebruikers
@@ -101,7 +101,7 @@ Om ze aan te wijzen selecteert u gebruikers van uw organisatie in het veld **Spe
 
 ## Automatische gebruikersprovisioning inschakelen
 
-Wilt u dat de gebruikers van uw identiteitsprovider geen account nodig hebben voordat ze toegang krijgen tot de organisatie, schakel dan in de sectie **Automatisch gebruikers aanmaken** de optie **Gebruiker aangemaakt als de gebruiker nog nooit is uitgenodigd voor Dastra** in.
+Wilt u dat de gebruikers van uw identiteitsprovider geen account nodig hebben voordat ze toegang krijgen tot de organisatie, schakel dan in de sectie **Automatisch gebruikers aanmaken** de optie **Gebruiker automatisch aanmaken** in.
 
 Automatische provisioning werkt alleen wanneer gebruikers inloggen met de link van uw SSO-verbinding. Het werkt niet vanaf de standaard loginpagina. De link ziet er zo uit:
 
@@ -133,11 +133,11 @@ U kunt de teams van een werkruimte koppelen aan een eigenschap (claim) die uw au
 
 ## Logins van gebruikers beheren
 
-U stelt het logintype van elke gebruiker in via het [gebruikersbeheer van het abonnement](https://app.dastra.eu/general-settings/users) (**Organisatie-instellingen** > **Gebruikers**). Open het profiel van de gebruiker en kies de gewenste SSO-login bij **Standaard verbindingsmodus**. Een gebruiker die daarna met zijn e-mailadres inlogt bij Dastra, wordt doorgestuurd naar de loginpagina van de authenticatieprovider die u hebt ingesteld.
+U stelt het logintype van elke gebruiker in via het [gebruikersbeheer van het abonnement](https://app.dastra.eu/general-settings/users) (**Organisatie-instellingen** > **Gebruikers**). Open het profiel van de gebruiker en kies de gewenste SSO-login bij **Standaard inlogmethode**. Een gebruiker die daarna met zijn e-mailadres inlogt bij Dastra, wordt doorgestuurd naar de loginpagina van de authenticatieprovider die u hebt ingesteld.
 
 Wanneer SSO voor alle gebruikers wordt afgedwongen, toont het profiel in plaats daarvan een bericht met die strekking.
 
-Om de inlogmethode van meerdere gebruikers tegelijk te wijzigen, vinkt u ze aan in de lijst **Gebruikers**, opent u daarna **Kies een bulkactie** boven de lijst en kiest u **Wijzig de inlogmethode**. Selecteer de methode bij **Standaard verbindingsmodus** en sla daarna op. Externe gebruikers en gebruikers die worden gedwongen tot een globaal toegewezen SSO, blijven ongewijzigd. De actie verschijnt wanneer SSO deel uitmaakt van uw plan.
+Om de inlogmethode van meerdere gebruikers tegelijk te wijzigen, vinkt u ze aan in de lijst **Gebruikers**, opent u daarna **Kies een bulkactie** boven de lijst en kiest u **Wijzig de inlogmethode**. Selecteer de methode bij **Standaard inlogmethode** en sla daarna op. Externe gebruikers en gebruikers die worden gedwongen tot een globaal toegewezen SSO, blijven ongewijzigd. De actie verschijnt wanneer SSO deel uitmaakt van uw plan.
 
 <figure><img src="../../../.gitbook/assets/settings-sso-overview-5.png" alt="Een gebruikersprofiel met de lijst Standaard verbindingsmodus"><figcaption><p>Het veld <strong>Standaard verbindingsmodus</strong></p></figcaption></figure>
 

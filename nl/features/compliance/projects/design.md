@@ -64,7 +64,7 @@ Door een kader toe te voegen importeert u:
 
 Alleen de gepubliceerde versies van een kader worden aangeboden. Als er meerdere gepubliceerde versies bestaan, kiest u de versie in de lijst **Te installeren versie** naast de naam van het kader. De huidige versie is vooraf geselecteerd.
 
-Het project blijft gekoppeld aan de geïnstalleerde versie. Wanneer dat niet meer de huidige versie is, toont de kaderkaart in het projectoverzicht de badge **Beschikbare update**. U schakelt handmatig over naar een andere versie met de actie **Werk de versie van het framework bij**. Dat is niet mogelijk zolang er een audit loopt in het project (zie [Versies van een kader](../library/frameworks/versions.md)).
+Het project blijft gekoppeld aan de geïnstalleerde versie. Wanneer dat niet meer de huidige versie is, toont de kaderkaart in het projectoverzicht de badge **Beschikbare update**. U schakelt handmatig over naar een andere versie met de actie **De versie van het kader bijwerken**. Dat is niet mogelijk zolang er een audit loopt in het project (zie [Versies van een kader](../library/frameworks/versions.md)).
 
 U kunt achtereenvolgens meerdere kaders aan hetzelfde project toevoegen.
 

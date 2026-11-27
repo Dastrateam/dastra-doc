@@ -7,7 +7,7 @@ description: >-
 
 # Voorbeelden van werkstroomconfiguraties
 
-Elk recept is een [werkstroomregel](../features/settings/workflow-rules.md) van Brightmoor Retail Group: een trigger, voorwaarden en acties op één objecttype. Om er een aan te maken, opent u **Automations** > **Regels voor de workflow**, klikt u op **Een werkstroomregel maken**, kiest u **Vanaf nul** en voert u daarna de **Naam van de regel** en het **Soort element** in. Schakel de regel in met de schakelaar **Status** zodra ze is opgeslagen.
+Elk recept is een [werkstroomregel](../features/settings/workflow-rules.md) van Brightmoor Retail Group: een trigger, voorwaarden en acties op één objecttype. Om er een aan te maken, opent u **Automations** > **Regels voor de workflow**, klikt u op **Een workflowregel aanmaken**, kiest u **Vanaf nul** en voert u daarna de **Naam van de regel** en het **Objecttype** in. Schakel de regel in met de schakelaar **Status** zodra ze is opgeslagen.
 
 Laat **Voer de workflow slechts één keer per item uit (aanbevolen)** ingeschakeld voor de recepten die op een aanmaak of een wijziging reageren, zodat een item nooit twee keer wordt verwerkt.
 
@@ -17,17 +17,17 @@ Doel: elk nieuw verzoek van een betrokkene heeft vanaf de eerste minuut een oper
 
 ### Trigger
 
-Objecttype: **Verzoek**. Trigger: **Actie**, gebeurtenis **Creatie**.
+Objecttype: **Verzoek**. Trigger: **Actie**, gebeurtenis **Aangemaakt**.
 
 ### Voorwaarden
 
-Een regel heeft maximaal vijf voorwaarden en elke voorwaarde heeft haar eigen acties. Kies voor elk **Specificeer voorwaarden**:
+Een regel heeft maximaal vijf voorwaarden en elke voorwaarde heeft haar eigen acties. Kies voor elk **Voorwaarden toepassen**:
 
 | Voorwaarde | Veld | Waarde |
 | --- | --- | --- |
-| 1 | **Organisatie-eenheid** | Brightmoor Germany |
-| 2 | **Organisatie-eenheid** | Brightmoor UK |
-| 3 | **Organisatie-eenheid** | Brightmoor Retail Group |
+| 1 | **Organisatorische eenheid** | Brightmoor Germany |
+| 2 | **Organisatorische eenheid** | Brightmoor UK |
+| 3 | **Organisatorische eenheid** | Brightmoor Retail Group |
 
 Een verzoek heeft geen landveld. De organisatorische eenheid van het verzoek vervangt gewoonlijk het land van een dochteronderneming. Om op taal te routeren, gebruikt u in plaats daarvan het veld **Language**, en om op uitgeoefend recht te routeren, het veld **Rights of the data subject** (bijvoorbeeld Erasure).
 
@@ -37,7 +37,7 @@ Klik in elke voorwaarde op **+** en kies **Eigenaar definiëren** en selecteer d
 
 ### Resultaat
 
-Een verzoek dat de Duitse dochteronderneming ontvangt, wordt aan Sophie Becker toegewezen zodra het wordt aangemaakt. In de regel toont **Historiek** elk verwerkt verzoek met zijn status en past **Ren** de regel met de hand toe op een verzoek dat vóór de regel is aangemaakt.
+Een verzoek dat de Duitse dochteronderneming ontvangt, wordt aan Sophie Becker toegewezen zodra het wordt aangemaakt. In de regel toont **Historiek** elk verwerkt verzoek met zijn status en past **Uitvoeren** de regel met de hand toe op een verzoek dat vóór de regel is aangemaakt.
 
 ## Recept 2: taken in een team delen
 
@@ -45,11 +45,11 @@ Doel: de nieuwe taken gelijkmatig verdelen over de leden van de privacydesk.
 
 ### Trigger
 
-Objecttype: **Taak**. Trigger: **Actie**, gebeurtenis **Creatie**.
+Objecttype: **Taak**. Trigger: **Actie**, gebeurtenis **Aangemaakt**.
 
 ### Voorwaarden
 
-**Geldt voor alle elementen**: elke nieuwe taak is betrokken. Om de regel te beperken, kiest u **Specificeer voorwaarden** en filtert u op een veld zoals een label.
+**Op alle toepassen**: elke nieuwe taak is betrokken. Om de regel te beperken, kiest u **Voorwaarden toepassen** en filtert u op een veld zoals een label.
 
 ### Acties
 
@@ -69,19 +69,19 @@ Vereiste: de [Microsoft Teams-integratie](../features/integrations/microsoft-tea
 
 ### Trigger
 
-Objecttype: **Datalek**. Trigger: **Actie**, gebeurtenis **Aanmaken of bewerken**: het risiconiveau bestaat pas zodra de risicoanalyse is ingevuld, na het aanmaken.
+Objecttype: **Datalek**. Trigger: **Actie**, gebeurtenis **Aangemaakt of gewijzigd**: het risiconiveau bestaat pas zodra de risicoanalyse is ingevuld, na het aanmaken.
 
 ### Voorwaarden
 
-Kies **Specificeer voorwaarden** en stel het veld **Punten** in op een waarde groter dan of gelijk aan 6. **Punten** is de score van het datalek, de som van de twee scores van de risicoanalyse, en 6 is de drempel van het niveau Hoog risico (zie [Risicoscores](risk-scoring.md)). Het veld **Risico** zelf wordt niet aangeboden in voorwaarden.
+Kies **Voorwaarden toepassen** en stel het veld **Punten** in op een waarde groter dan of gelijk aan 6. **Punten** is de score van het datalek, de som van de twee scores van de risicoanalyse, en 6 is de drempel van het niveau Hoog risico (zie [Risicoscores](risk-scoring.md)). Het veld **Risico** zelf wordt niet aangeboden in voorwaarden.
 
 {% hint style="info" %}
-Een datalek waarvan het niveau met de hand is ingesteld bij **Conclusie van de risicoanalyse: geschat risiconiveau**, behoudt zijn score, dus de regel volgt de score en niet het niveau dat u hebt gekozen.
+Een datalek waarvan het niveau met de hand is ingesteld bij **Conclusie van de risicoanalyse**, behoudt zijn score, dus de regel volgt de score en niet het niveau dat u hebt gekozen.
 {% endhint %}
 
 ### Acties
 
-Voeg **Stuur een Teams-notificatie** toe en vul in:
+Voeg **Een Teams-melding verzenden** toe en vul in:
 
 * **Titel van de kaart**: `High risk data breach: {{label}}`;
 * **Bericht**: `Score {{score}}. Check the notification deadline to the supervisory authority.`;
@@ -97,15 +97,15 @@ Er verschijnt een kaart in het Teams-kanaal dat aan de webhook is gekoppeld, met
 
 Doel: telkens wanneer een verzoek binnenkomt, een ticket aanmaken in de servicedesk van Brightmoor.
 
-Vereiste: de integratie [HTTP / Custom API](../features/integrations/custom-http.md) is ingeschakeld in **Instellingen voor werkruimte** > **Integraties**, met een verbinding met de servicedesk (API-sleutel, basisinloggegevens of OAuth 2.0). Voor het toevoegen van deze actie is de machtiging **Integraties** nodig.
+Vereiste: de integratie [HTTP / Custom API](../features/integrations/custom-http.md) is ingeschakeld in **Instellingen van de werkruimte** > **Integraties**, met een verbinding met de servicedesk (API-sleutel, basisinloggegevens of OAuth 2.0). Voor het toevoegen van deze actie is de machtiging **Integraties** nodig.
 
 ### Trigger
 
-Objecttype: **Verzoek**. Trigger: **Actie**, gebeurtenis **Creatie**.
+Objecttype: **Verzoek**. Trigger: **Actie**, gebeurtenis **Aangemaakt**.
 
 ### Voorwaarden
 
-**Geldt voor alle elementen**.
+**Op alle toepassen**.
 
 ### Acties
 
@@ -123,7 +123,7 @@ Voeg **Send an HTTP request** toe en vul in:
 }
 ```
 
-Klik op **Test the request**. **Preview** toont de URL, de headers en de body voor een echt verzoek van de werkruimte zonder iets te versturen. **Send the request** voert de echte aanroep uit en toont het antwoord van de servicedesk. **Genereren met de IA** stelt het verzoek op op basis van een instructie en de payload die de servicedesk verwacht.
+Klik op **Test the request**. **Preview** toont de URL, de headers en de body voor een echt verzoek van de werkruimte zonder iets te versturen. **Send the request** voert de echte aanroep uit en toont het antwoord van de servicedesk. **Genereren met AI** stelt het verzoek op op basis van een instructie en de payload die de servicedesk verwacht.
 
 <figure><img src="../.gitbook/assets/examples-workflow-2.png" alt="Actie Send an HTTP request met de methode POST, de URL en de JSON-body"><figcaption><p>De actie HTTP-verzoek</p></figcaption></figure>
 

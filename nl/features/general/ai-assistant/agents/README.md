@@ -8,7 +8,7 @@ description: >-
 
 Een Dastra AI-agent is een assistent die u zelf configureert: u geeft hem een rol, instructies en de lijst met hulpmiddelen die hij in uw werkruimte mag gebruiken. De standaard [AI-assistent](../README.md) beantwoordt alles, terwijl een agent gespecialiseerd is in één opdracht en zich altijd op dezelfde manier gedraagt.
 
-U configureert agents via **Instellingen voor werkruimte** > **AI agents** ([directe toegang](https://app.dastra.eu/workspace/0/settings/ai-agents)).
+U configureert agents via **Instellingen van de werkruimte** > **AI agents** ([directe toegang](https://app.dastra.eu/workspace/0/settings/ai-agents)).
 
 <figure><img src="../../../../.gitbook/assets/ai-agents-liste.png" alt="Lijst met de Dastra AI-agents van een werkruimte"><figcaption><p>Instellingen voor werkruimte &#x3E; AI agents: de lijst met geconfigureerde agents</p></figcaption></figure>
 
@@ -53,7 +53,7 @@ De editor slaat automatisch op: de tijd van de laatste opslag staat rechtsboven.
 ## Publiceren, deactiveren, archiveren en verwijderen
 
 * **Actief** of **Uitgeschakeld**: een uitgeschakelde agent verschijnt niet meer voor gebruikers en zijn schema's worden niet meer uitgevoerd. Gebruik deze status terwijl u de instructies nog verfijnt.
-* Archiveren: de agent gaat naar de prullenbak. In het menu van de agent heet deze actie **Permanent verwijderen**, maar het is geen definitieve verwijdering. Vink in de lijst **Bekijk prullenbak** aan om de agent terug te vinden en te herstellen. De eerdere uitvoeringen blijven bewaard.
+* Archiveren: de agent gaat naar de prullenbak. In het menu van de agent heet deze actie **Permanent verwijderen**, maar het is geen definitieve verwijdering. Vink in de lijst **Prullenbak bekijken** aan om de agent terug te vinden en te herstellen. De eerdere uitvoeringen blijven bewaard.
 * **Verwijderen**: verwijderen is definitief en wist ook alle sessies en berichten van de agent. Gebruik dit wanneer u die gegevens moet wissen.
 
 ## Een agent exporteren en importeren
@@ -87,7 +87,7 @@ Een agent heeft nooit meer rechten dan de persoon die hem start. Zijn hulpmiddel
 
 Elk bericht dat u naar een agent stuurt, kost 1 Dastra AI-credit, ongeacht hoeveel hulpmiddelen de agent daarna gebruikt om u te antwoorden. Een gesprek hervatten na een bevestigingsvraag kost niets extra.
 
-Het maandelijkse quotum van uw organisatie en het verbruik ervan volgt u op bij **Organisatie-instellingen** > **Assistent IA**. Zodra het quotum is bereikt, worden gesprekken en uitvoeringen geweigerd en is de knop **Run** van een autonome agent uitgeschakeld.
+Het maandelijkse quotum van uw organisatie en het verbruik ervan volgt u op bij **Organisatie-instellingen** > **Dastra AI**. Zodra het quotum is bereikt, worden gesprekken en uitvoeringen geweigerd en is de knop **Run** van een autonome agent uitgeschakeld.
 
 Modelfamilies, hosting en de gegevens die naar de modellen worden gestuurd, staan beschreven in [Hoe het werkt](../how-it-works.md).
 

@@ -22,7 +22,7 @@ description: >-
 
 ### Stap 1: een SAML-SSO-login maken in Dastra
 
-* Ga naar de [SSO-configuratiepagina van Dastra](https://app.dastra.eu/general-settings/sso) (**Organisatie-instellingen** > **Eenmalig inloggen**).
+* Ga naar de [SSO-configuratiepagina van Dastra](https://app.dastra.eu/general-settings/sso) (**Organisatie-instellingen** > **Single sign-on**).
 * Klik op **Voeg een SSO-login toe**.
 * Selecteer bij **SSO-protocol** de optie **SAML2** en daarna **Handmatige configuratie**.
 * Voer bij **Titel van de SSO-verbinding** een naam voor de verbinding in, bijvoorbeeld "Active Directory".
@@ -47,7 +47,7 @@ description: >-
 ### Stap 3: het certificaat toevoegen aan de Dastra-client
 
 * Ga terug naar het scherm voor het maken van de SAML-verbinding in Dastra.
-* Plak de tekst van het certificaat (Ctrl + V) in het veld **Identity Provider Certificaat (RAW)**.
+* Plak de tekst van het certificaat (Ctrl + V) in het veld **Certificaat van de identiteitsprovider (RAW)**.
 
 ### Stap 4: de URL's van de identiteitsprovider configureren in Dastra
 
@@ -56,14 +56,14 @@ description: >-
 <figure><img src="../../../.gitbook/assets/ad5.png" alt="Het gedeelte Set up van de toepassing met de drie te kopiëren URL's"><figcaption></figcaption></figure>
 
 * Plak ze in Dastra volgens deze koppeling:
-  * **Login URL**: **Identity Provider SSO url**
+  * **Login URL**: **Single sign-on-URL van de identiteitsprovider**
   * **Microsoft Entra Identifier**: **Entiteits-ID van de identiteitsprovider (uitgever)**
   * **Logout URL**: **Uitlog-URL van identiteitsprovider**
 * Uw SSO-configuratieformulier in Dastra moet er zo uitzien:
 
 <figure><img src="../../../.gitbook/assets/settings-sso-entra-dastra-idp-configuration.png" alt="Het SAML-formulier van Dastra, ingevuld met de waarden van Microsoft Entra ID"><figcaption></figcaption></figure>
 
-* U kunt de optie **Gebruiker aangemaakt als de gebruiker nog nooit is uitgenodigd voor Dastra** inschakelen, in de sectie **Automatisch gebruikers aanmaken**. In dat geval worden accounts uit uw directory die nog niet in Dastra bestaan, aangemaakt bij hun eerste login:
+* U kunt de optie **Gebruiker automatisch aanmaken** inschakelen, in de sectie **Automatisch gebruikers aanmaken**. In dat geval worden accounts uit uw directory die nog niet in Dastra bestaan, aangemaakt bij hun eerste login:
 
 <figure><img src="../../../.gitbook/assets/settings-sso-entra-auto-create-user-option.png" alt="De optie voor automatische gebruikersaanmaak in het SSO-formulier"><figcaption></figcaption></figure>
 

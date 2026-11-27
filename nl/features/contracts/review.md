@@ -18,6 +18,6 @@ De frequentie die u daar instelt, geldt voor alle documenten.
 
 Zodra de beoordeling is ingeschakeld, toont het dossier van elk document de frisheidsindicator in het snelmenu (zie [Structuur van een document](structure.md)). Die is alleen actief voor gepubliceerde documenten. Zolang het document niet is gepubliceerd, blijft de indicator grijs.
 
-Klik op de indicator om het venster **Beoordeling** te openen. Kies op het tabblad **Nieuwe recensie** de **Recensent**, de **Beoordelingsdatum** en, indien nodig, een beschrijving. Dastra berekent de **Datum voor volgende beoordeling** op basis van de frequentie van de werkruimte. U kunt die vervangen door een specifieke datum met **De volgende beoordelingsdatum wijzigen**. Het tabblad **Oude recensies** bewaart de geschiedenis.
+Klik op de indicator om het venster **Beoordeling** te openen. Kies op het tabblad **Nieuwe beoordeling** de **Beoordelaar**, de **Beoordelingsdatum** en, indien nodig, een beschrijving. Dastra berekent de **Datum van de volgende beoordeling** op basis van de frequentie van de werkruimte. U kunt die vervangen door een specifieke datum met **De volgende beoordelingsdatum wijzigen**. Het tabblad **Eerdere beoordelingen** bewaart de geschiedenis.
 
 Wanneer een document verouderd raakt, ontvangt de eigenaar ervan een e-mail.

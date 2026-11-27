@@ -38,7 +38,7 @@ Als u over een kolomkop beweegt, ziet u de aanvullende uitleg bij de kolom, wann
 
 ## Aangepaste weergaven
 
-Een aangepaste weergave bewaart de huidige staat van uw filters en uw kolomselectie onder een naam. De weergaveselector staat linksboven in elke lijst: hij toont **Alle elementen**, of de naam van de actieve weergave gevolgd door een sterretje als u die hebt gewijzigd zonder op te slaan.
+Een aangepaste weergave bewaart de huidige staat van uw filters en uw kolomselectie onder een naam. De weergaveselector staat linksboven in elke lijst: hij toont **Standaardweergave**, of de naam van de actieve weergave gevolgd door een sterretje als u die hebt gewijzigd zonder op te slaan.
 
 Een weergave maakt u zo aan:
 
@@ -48,7 +48,7 @@ Een weergave maakt u zo aan:
 
 <figure><img src="../../.gitbook/assets/general-filters-2.png" alt="Geopende selector voor aangepaste weergaven met Alle elementen, Mijn weergaven, Gedeelde weergaven en Sla de aangepaste weergave op"><figcaption><p>De selector voor aangepaste weergaven</p></figcaption></figure>
 
-De selector toont **Alle elementen**, die filters en kolommen opnieuw instelt, uw eigen weergaven onder **Mijn persoonlijke mening** en de weergaven van uw collega's onder **Gedeelde weergaven**. Beweeg over een weergave om die te bewerken (potlood) of te verwijderen (prullenbak). Wanneer de actieve weergave is gewijzigd, vervangt de optie **Bijwerken** met de naam van de weergave de weergave door de huidige filters en kolommen.
+De selector toont **Standaardweergave**, die filters en kolommen opnieuw instelt, uw eigen weergaven onder **Mijn persoonlijke mening** en de weergaven van uw collega's onder **Gedeelde weergaven**. Beweeg over een weergave om die te bewerken (potlood) of te verwijderen (prullenbak). Wanneer de actieve weergave is gewijzigd, vervangt de optie **Bijwerken** met de naam van de weergave de weergave door de huidige filters en kolommen.
 
 Om een weergave te delen met de andere gebruikers van uw werkruimte, schakelt u bij het opslaan **Deel deze aangepaste weergave met andere gebruikers** in. Deze optie wordt alleen aangeboden aan gebruikers met geavanceerde toegang, die ook als enige een gedeelde weergave kunnen bewerken of verwijderen.
 
@@ -92,7 +92,7 @@ Een groep kan geen andere groep bevatten en een filter bevat maximaal 10 voorwaa
 
 ### Mijn gegevens worden niet meer weergegeven
 
-Als een filter ervoor zorgt dat uw gegevens niet meer worden weergegeven, wist u de gegevens van uw browser (cookies, LocalStorage enzovoort). Daarmee worden de filters en de actieve weergave van uw werkruimte opnieuw ingesteld. U kunt ook op **Filters wissen** klikken en daarna **Alle elementen** kiezen.
+Als een filter ervoor zorgt dat uw gegevens niet meer worden weergegeven, wist u de gegevens van uw browser (cookies, LocalStorage enzovoort). Daarmee worden de filters en de actieve weergave van uw werkruimte opnieuw ingesteld. U kunt ook op **Filters wissen** klikken en daarna **Standaardweergave** kiezen.
 
 ### Sommige kolommen ontbreken in de geavanceerde filters
 

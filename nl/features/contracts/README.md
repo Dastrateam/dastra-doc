@@ -14,7 +14,7 @@ Uw abonnement moet de functie Contracten bevatten. Als die in uw abonnement is g
 
 * **Register van contracten en beleidslijnen**: de lijst van uw documenten.
 * **Rapportage**: de indicatoren en grafieken van de module (zie [Rapportage](README.md#rapportage)).
-* **Documentmodellen**: de sjablonen waarmee u documenten genereert (zie [Contractsjablonen](templates.md)). Dit onderdeel is verborgen voor gebruikers met de rol `User`.
+* **Sjablonen voor contracten en beleidslijnen**: de sjablonen waarmee u documenten genereert (zie [Contractsjablonen](templates.md)). Dit onderdeel is verborgen voor gebruikers met de rol `User`.
 
 <figure><img src="../../.gitbook/assets/contracts-readme-1.png" alt="De zijbalk met de groep Operations geopend op Contracten en beleidslijnen en de drie onderdelen"><figcaption><p>De module Contracten en beleidslijnen in de zijbalk</p></figcaption></figure>
 
@@ -58,7 +58,7 @@ De grafieken tonen:
 * **Signers**: het aantal documenten per ondertekenaar.
 * **Workflow stages**: het aantal documenten per workflowstap.
 * **Tags**: het aantal documenten per label.
-* **Documenten per eenheden organisatie**: het aantal documenten in elke organisatorische eenheid, voor elke workflowstap.
+* **Contracten en beleidslijnen per organisatorische eenheid**: het aantal documenten in elke organisatorische eenheid, voor elke workflowstap.
 
 De knop **Filters** beperkt de indicatoren en grafieken en **Afdrukken** maakt een afdrukbare versie. De indicator **Overdue** is gebaseerd op de einddatum van uw documenten: vul die in op het tabblad **Details** (zie [Details en bijlagen](documents.md)).
 

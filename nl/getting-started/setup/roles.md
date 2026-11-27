@@ -23,7 +23,7 @@ In Dastra kan een gebruiker meerdere rollen hebben. U wijst ze toe vanaf twee pl
 
 ### In de huidige werkruimte
 
-1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Gebruikers**.
+1. Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Gebruikers**.
 2. Open het menu van de rij van de gebruiker en klik op **Rollen toewijzen**. Het getal tussen haakjes is het aantal rollen dat de gebruiker al heeft.
 3. Selecteer de rol of rollen die u wilt toewijzen.
 
@@ -31,9 +31,9 @@ In Dastra kan een gebruiker meerdere rollen hebben. U wijst ze toe vanaf twee pl
 
 Alleen de eigenaars van de organisatie kunnen deze methode gebruiken.
 
-1. Klik rechtsboven op het scherm op uw profielpictogram, daarna op **Instelling van de organisatie** en vervolgens op **Gebruikers**.
-2. Open het menu van de rij van de gebruiker en klik op **Rollen en werkplekken**.
-3. Klik op **Toewijzen**, selecteer de rol en kies het bereik: **Alle werkplekken van organisatie** of **Specifieke workspaces**.
+1. Klik rechtsboven op het scherm op uw profielpictogram, daarna op **Configuratie van de organisatie** en vervolgens op **Gebruikers**.
+2. Open het menu van de rij van de gebruiker en klik op **Werkruimten**.
+3. Klik op **Toewijzen**, selecteer de rol en kies het bereik: **Alle werkruimten van de organisatie** of **Aangepaste selectie van werkruimten**.
 
 <figure><img src="../../.gitbook/assets/getting-started-roles-1.png" alt="Venster voor het toewijzen van een rol met de lijst van rollen en de keuze van werkruimten"><figcaption><p>Een rol toewijzen aan alle werkruimten of aan een selectie</p></figcaption></figure>
 
@@ -43,7 +43,7 @@ U kunt ook aangepaste rollen aanmaken, die mogelijk beter bij uw organisatie pas
 
 Om een aangepaste rol aan te maken, moet u eigenaar van de organisatie zijn.
 
-1. Klik rechtsboven op het scherm op uw profielpictogram en daarna op **Instelling van de organisatie**.
+1. Klik rechtsboven op het scherm op uw profielpictogram en daarna op **Configuratie van de organisatie**.
 2. Klik in het configuratiepaneel op **Rollen en machtigingen**.
 
 <figure><img src="../../.gitbook/assets/getting-started-roles-2.png" alt="Profielmenu met de optie Instelling van de organisatie"><figcaption><p>Het profielmenu</p></figcaption></figure>
@@ -59,7 +59,7 @@ Alleen de eigenaars van de organisatie hebben toegang tot het scherm voor het be
 {% endhint %}
 
 3. Klik op **Nieuwe rol** en geef de rol een naam.
-4. Vink de machtigingen aan die bij elke functie horen (**Lezing**, **Schrijven**, **Create**, **Importeren**, **Exporteren** enzovoort). In de modules die het aanbieden, staat de machtiging **Create** het aanmaken van nieuwe items toe, los van de machtiging **Schrijven**, die het wijzigen ervan toestaat (zie [Rollen en machtigingen](../../features/settings/roles.md)).
+4. Vink de machtigingen aan die bij elke functie horen (**Lezen**, **Schrijven**, **Create**, **Importeren**, **Exporteren** enzovoort). In de modules die het aanbieden, staat de machtiging **Create** het aanmaken van nieuwe items toe, los van de machtiging **Schrijven**, die het wijzigen ervan toestaat (zie [Rollen en machtigingen](../../features/settings/roles.md)).
 5. Klik onderaan het scherm op **Opslaan**.
 
 Om van een bestaande rol te vertrekken, klikt u ernaast op **Klonen**. **Bekijk de machtigingen** toont de machtigingen van een rol zonder die te wijzigen.

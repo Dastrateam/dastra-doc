@@ -16,7 +16,7 @@ De score van een risico is **ernst × waarschijnlijkheid**. De maximale score va
 
 ## Op de standaardschaal 5×5
 
-De standaardschaal, **Standaard risico-schaal**, heeft vijf niveaus voor elke as.
+De standaardschaal, **Standaard risicomatrix**, heeft vijf niveaus voor elke as.
 
 | Niveau | Ernst | Waarschijnlijkheid |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Het huidige risico ligt daartussen. Na elk antwoord op een controlepunt herberek
 
 ## Op de CNIL-schaal 4×4
 
-Brightmoor besluit de schaal met vier niveaus van de CNIL-methode voor gegevensbeschermingseffectbeoordelingen te gebruiken. In **Instellingen voor werkruimte** > **Risicobeheer** wordt een schaal aangemaakt met het **Risico-schaalmodel** **4 niveaus - CNIL PIA** en ingeschakeld met **Activeer dit raster** (zie [De risicoschaal configureren](../features/risks/process/assess.md#de-risicoschaal-configureren)).
+Brightmoor besluit de schaal met vier niveaus van de CNIL-methode voor gegevensbeschermingseffectbeoordelingen te gebruiken. In **Instellingen van de werkruimte** > **Risicobeheer** wordt een schaal aangemaakt met het **Sjabloon voor risicoprofiel** **4 niveaus - klassieke DPIA** en ingeschakeld met **Activeer dit raster** (zie [De risicoschaal configureren](../features/risks/process/assess.md#de-risicoschaal-configureren)).
 
 | Niveau | Ernst | Waarde | Waarschijnlijkheid | Waarde |
 | --- | --- | --- | --- | --- |
@@ -65,9 +65,9 @@ De score is identiek, maar het maximum is lager, dus hetzelfde risico weegt zwaa
 
 ## Een datalek
 
-De module Incidenten gebruikt de risicoschalen niet. Antwoord in de stap **Risicoanalyse** van een datalek **Neen** op **Is er al een risicoanalyse uitgevoerd?** en kies daarna twee scores van 1 tot 4:
+De module Incidenten gebruikt de risicoschalen niet. Antwoord in de stap **Risicoanalyse** van een datalek **Nee** op **Is er al een risicoanalyse uitgevoerd?** en kies daarna twee scores van 1 tot 4:
 
-* **Identificatie van de betrokkenen**: hoe gemakkelijk personen uit de gegevens kunnen worden geïdentificeerd;
+* **Waarschijnlijkheid van identificatie van de betrokkene**: hoe gemakkelijk personen uit de gegevens kunnen worden geïdentificeerd;
 * **Impact op de betrokkenen**: de gevolgen voor hen.
 
 De labels van de vier waarden zijn **1 - Verwaarloosbaar**, **2 - Beperkt**, **3 - Belangrijk** en **4 - Maximaal**. De score van het datalek is hun **som**, van 2 tot 8, en bepaalt het **Risiconiveau**:
@@ -89,5 +89,5 @@ Brightmoor ontdekt dat een klantexport een paar uur leesbaar was in een verkeerd
 Voor het derde geval zou een product 4 × 2 = 8 geven, maar Dastra telt de scores op: 4 + 2 = 6. Dat is al een **Hoog risico**, dus de kennisgeving aan de toezichthoudende autoriteit en de communicatie aan de betrokkenen zijn verplicht. Zie [Een nieuwe inbreuk documenteren](../features/incidents/document-breach.md#stap-risicoanalyse) voor de stap en de teller van 72 uur.
 
 {% hint style="info" %}
-Staat **Is er al een risicoanalyse uitgevoerd?** op **Ja**, dan voert u uw eigen analyse in en kiest u zelf het niveau bij **Conclusie van de risicoanalyse: geschat risiconiveau**. Het niveau dat u kiest, vervangt het berekende.
+Staat **Is er al een risicoanalyse uitgevoerd?** op **Ja**, dan voert u uw eigen analyse in en kiest u zelf het niveau bij **Conclusie van de risicoanalyse**. Het niveau dat u kiest, vervangt het berekende.
 {% endhint %}

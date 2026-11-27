@@ -8,7 +8,7 @@ Deze pagina beschrijft de begrippen die alle native integraties gemeen hebben. V
 
 ## De integratiestore
 
-Open **Instellingen voor werkruimte** > **Integraties** in uw werkruimte. De catalogus toont alle beschikbare integraties, te filteren op categorie en op het Dastra-object waarop ze betrekking hebben, met de tabbladen **Alles** en **Geïnstalleerd**.
+Open **Instellingen van de werkruimte** > **Integraties** in uw werkruimte. De catalogus toont alle beschikbare integraties, te filteren op categorie en op het Dastra-object waarop ze betrekking hebben, met de tabbladen **Alles** en **Geïnstalleerd**.
 
 <figure><img src="../../.gitbook/assets/integrations-catalog.png" alt="De integratiestore met de filters in de zijbalk en de tabbladen Alles en Geïnstalleerd"><figcaption><p>De integratiestore</p></figcaption></figure>
 
@@ -22,20 +22,20 @@ U kunt meerdere verbindingen met dezelfde tool aanmaken, bijvoorbeeld een produc
 
 Klik op **Beheer de verbindingen** om het verbindingenpaneel te openen. Per verbinding ziet u:
 
-* de status: **Operationele verbinding**, **Wachten op toestemming** (OAuth is gestart maar niet afgerond) of **Verbinding mislukt** (met de laatste foutmelding en het aantal fouten),
+* de status: **Verbinding in orde**, **Wachten op autorisatie** (OAuth is gestart maar niet afgerond) of **Verbinding mislukt** (met de laatste foutmelding en het aantal fouten),
 * de authenticatiemethode,
 * de gebruiksscenario's die ervan afhangen.
 
-In dit paneel test u een verbinding met **Tester** (een geslaagde test wist ook de foutstatus) en verwijdert u een verbinding met het verwijderpictogram.
+In dit paneel test u een verbinding met **Testen** (een geslaagde test wist ook de foutstatus) en verwijdert u een verbinding met het verwijderpictogram.
 
 <figure><img src="../../.gitbook/assets/connexions-manager.png" alt="Het paneel Verbindingen met een operationele verbinding en de knop Voeg een verbinding toe"><figcaption><p>Het verbindingenpaneel</p></figcaption></figure>
 
 Om een verbinding aan te maken, klikt u op **Voeg een verbinding toe**:
 
 1. Geef de verbinding een **Naam van de verbinding** (bijvoorbeeld Productie-instantie). Dat is optioneel, maar handig als u er meerdere hebt.
-2. Kies de **Authentificatiemethode** wanneer de connector er meer dan één ondersteunt: **Basis (inloggegevens / API-sleutel)** of **OAuth**. De integratie [HTTP / Custom API](custom-http.md) biedt ook **API key / token** en **OAuth 2.0 (client credentials)**: bij die laatste authenticeert Dastra zich met zijn eigen client-ID en geheim, zonder aanmelding van een gebruiker, en vernieuwt het de toegangstokens automatisch.
+2. Kies de **Authenticatiemethode** wanneer de connector er meer dan één ondersteunt: **Basis (inloggegevens / API-sleutel)** of **OAuth**. De integratie [HTTP / Custom API](custom-http.md) biedt ook **API key / token** en **OAuth 2.0 (client credentials)**: bij die laatste authenticeert Dastra zich met zijn eigen client-ID en geheim, zonder aanmelding van een gebruiker, en vernieuwt het de toegangstokens automatisch.
 3. Vul de velden in die de connector vraagt (URL van de instantie, API-token enzovoort).
-4. Klik op **Verbinden**, of bij OAuth op **Opslaan en inloggen**. U wordt dan doorgestuurd naar de externe tool om Dastra te autoriseren.
+4. Klik op **Verbinden**, of bij OAuth op **Opslaan en verbinden**. U wordt dan doorgestuurd naar de externe tool om Dastra te autoriseren.
 
 <figure><img src="../../.gitbook/assets/connexion-setup.png" alt="Het venster voor het aanmaken van een verbinding met naam, methode en velden voor inloggegevens"><figcaption><p>Een verbinding aanmaken</p></figcaption></figure>
 
@@ -71,10 +71,10 @@ Als u een gebruiksscenario verwijdert, worden de bijbehorende inloggegevens gewi
 
 ## Veldmapping
 
-Importgebruiksscenario's hebben een sectie **Veldmapping**: kies voor elk Dastra-veld het veld van de externe tool dat het tijdens de synchronisatie vult. Een veld zonder bron behoudt zijn **Standaardgedrag**.
+Importgebruiksscenario's hebben een sectie **Veldtoewijzing**: kies voor elk Dastra-veld het veld van de externe tool dat het tijdens de synchronisatie vult. Een veld zonder bron behoudt zijn **Standaardgedrag**.
 
 * Verplichte Dastra-velden zijn gemarkeerd met een rode asterisk. U kunt de configuratie niet opslaan zolang een verplicht veld noch een bron noch een standaardwaarde heeft.
-* **Een veld mappen** voegt een rij toe voor elk ander Dastra-veld, ook voor uw aangepaste velden.
+* **Een veld toewijzen** voegt een rij toe voor elk ander Dastra-veld, ook voor uw aangepaste velden.
 * De lijst met bronnen wordt waar mogelijk live bij de externe tool opgehaald, zodat ook uw aangepaste attributen aan de bronzijde verschijnen.
 
 <figure><img src="../../.gitbook/assets/field-mapping-editor.png" alt="De veldmappingeditor met enkele gemapte rijen, een rij Standaardgedrag en de knop Een veld mappen"><figcaption><p>De veldmappingeditor</p></figcaption></figure>
@@ -96,7 +96,7 @@ Bij datumvelden kan de standaardwaarde dynamisch zijn en wordt ze bepaald wannee
 
 ### AI-suggesties
 
-Is de AI-assistent ingeschakeld voor uw account, dan stelt de knop **Suggereer met IA** een volledige mapping voor (en elke rij heeft een eigen suggestieknop). Suggesties overschrijven nooit velden die u al hebt gemapt en worden altijd ter controle voorgelegd voordat u opslaat.
+Is de AI-assistent ingeschakeld voor uw account, dan stelt de knop **Voorstellen met AI** een volledige mapping voor (en elke rij heeft een eigen suggestieknop). Suggesties overschrijven nooit velden die u al hebt gemapt en worden altijd ter controle voorgelegd voordat u opslaat.
 
 ## Synchronisatie en logs
 

@@ -48,12 +48,12 @@ Open **Risicobeheer** in de zijbalk. De module is zichtbaar met leestoegang tot 
 | **Bedreigingen** | De repository van bedreigingen, die u voor meerdere risicotypen hergebruikt. |
 | **Bronnen** | De repository van risicobronnen. |
 | **Controlepunten** | De maatregelen die het risico verminderen, met hun opeenvolgende responsen. |
-| **Tijdschrift** | De geschiedenis van de gebeurtenissen die zich in de organisatie hebben voorgedaan, met hun datum en financiële impact. |
+| **Gebeurtenissen** | De geschiedenis van de gebeurtenissen die zich in de organisatie hebben voorgedaan, met hun datum en financiële impact. |
 | **Rapportage** (laatste item) | De initiële, huidige en restscores per object (minimum, gemiddelde, maximum), met één tabblad per objecttype. |
 
 ### Risicostatussen
 
-Elk risico doorloopt vijf stappen, die bovenaan de pagina staan: **Identificatie**, **Evaluatie**, **Verwerkingen**, **Monitoring** en **Terugtrekking**. Elke stap wordt beschreven in [Het risicobeheerproces](process/README.md).
+Elk risico doorloopt vijf stappen, die bovenaan de pagina staan: **Identificatie**, **Evaluatie**, **Verwerkingen**, **Monitoring** en **Archivering**. Elke stap wordt beschreven in [Het risicobeheerproces](process/README.md).
 
 {% hint style="info" %}
 Alleen de eigenaar van het risico kan de status van een risico wijzigen. De eigenaar staat in de sectie **Identificatie** van het risico.
@@ -61,7 +61,7 @@ Alleen de eigenaar van het risico kan de status van een risico wijzigen. De eige
 
 ### Meerdere risico's tegelijk aanmaken
 
-Open in een tabblad van **Risico's** het menu van de knop **Creëer een risico** en klik op **Creatie van risico's in bulk**. Kies de organisatorische eenheid, het risicotype, de risico-eigenaar, de identificatiedatum en de betrokken objecten: Dastra maakt één risico per object aan, met de voorbeoordeling van het risicotype.
+Open in een tabblad van **Risico's** het menu van de knop **Een risico aanmaken** en klik op **Risico's in bulk identificeren**. Kies de organisatorische eenheid, het risicotype, de risico-eigenaar, de identificatiedatum en de betrokken objecten: Dastra maakt één risico per object aan, met de voorbeoordeling van het risicotype.
 
 ## Verder gaan
 

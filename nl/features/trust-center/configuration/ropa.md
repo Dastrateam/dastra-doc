@@ -7,7 +7,7 @@ description: >-
 
 ## De functie Register van verwerkingen activeren
 
-Om de functie **Registratie van verwerkingsactiviteiten** in uw Trust Center te activeren, raadpleegt u de sectie algemene configuratie waarmee u deze optie kunt activeren of deactiveren. Eenmaal geactiveerd, wordt er een nieuwe openbare pagina met de naam "Register van verwerkingen" aan uw Trust Center toegevoegd.
+Om de functie **Verwerkingsregister** in uw Trust Center te activeren, raadpleegt u de sectie algemene configuratie waarmee u deze optie kunt activeren of deactiveren. Eenmaal geactiveerd, wordt er een nieuwe openbare pagina met de naam "Register van verwerkingen" aan uw Trust Center toegevoegd.
 
 ***
 
@@ -17,4 +17,4 @@ Zodra de functie is geactiveerd, zijn de verwerkingen met de status **gepublicee
 
 Afgezien van de activering is er geen extra configuratie nodig om het register van verwerkingen in uw Trust Center weer te geven.
 
-Op de openbare pagina krijgen bezoekers ook een filter **Organisatie-eenheid** op het register wanneer de eenheid van het Trust Center onderliggende eenheden heeft. Het biedt alleen de eenheid van het Trust Center en de onderliggende eenheden ervan aan.
+Op de openbare pagina krijgen bezoekers ook een filter **Organisatorische eenheid** op het register wanneer de eenheid van het Trust Center onderliggende eenheden heeft. Het biedt alleen de eenheid van het Trust Center en de onderliggende eenheden ervan aan.

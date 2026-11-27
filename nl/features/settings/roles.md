@@ -10,9 +10,9 @@ description: >-
 Elke gebruiker kan aan 1 of meer rollen worden gekoppeld. De rollen zijn zelf gekoppeld aan een lijst met machtigingen (bijvoorbeeld: schrijven in het register, een vragenlijst aanmaken...). Er zijn twee manieren om de rollen van gebruikers te beheren.
 
 * Als u eigenaar bent, klikt u op het tandwielpictogram in de bovenbalk (**Organisatie-instellingen**) en daarna op **Gebruikers**. Het directe adres is [https://app.dastra.eu/general-settings/users](https://app.dastra.eu/general-settings/users).
-* Als u de rol van beheerder van de werkruimte hebt, opent u **Instellingen voor werkruimte** > **Gebruikers** om de rollen en machtigingen te beheren van de gebruikers die tot uw werkruimte behoren.
+* Als u de rol van beheerder van de werkruimte hebt, opent u **Instellingen van de werkruimte** > **Gebruikers** om de rollen en machtigingen te beheren van de gebruikers die tot uw werkruimte behoren.
 
-De standaardrollen (**Administrator**, **Bijdrager**, **Lezer**) worden beschreven in [Rollen en machtigingen beheren](../../getting-started/setup/roles.md). Deze pagina legt uit hoe u uw eigen rollen aanmaakt.
+De standaardrollen (**Beheerder**, **Bijdrager**, **Lezer**) worden beschreven in [Rollen en machtigingen beheren](../../getting-started/setup/roles.md). Deze pagina legt uit hoe u uw eigen rollen aanmaakt.
 
 {% hint style="info" %}
 Een rol volstaat niet altijd om een item te zien: ook de toegang tot **organisatorische eenheden** en de **teams** van de gebruiker tellen mee. Zie [Waarom ziet een gebruiker een verwerkingsactiviteit niet?](../../getting-started/setup/visibility.md)
@@ -31,7 +31,7 @@ Vul de naam van de rol in en vink daarna de vakjes aan die bij de machtigingen v
 <figure><img src="../../.gitbook/assets/settings-roles-2.png" alt="Het paneel voor het bewerken van een rol, met de machtigingen van de module Taken"><figcaption><p>Een rol voor taakbeheer aanmaken</p></figcaption></figure>
 
 * **Read/Write own elements**: gebruikers kunnen alleen de items bekijken en bewerken die aan hen zijn toegewezen in de module.
-* **Lezing**: gebruikers kunnen alle items van de module bekijken.
+* **Lezen**: gebruikers kunnen alle items van de module bekijken.
 * **Schrijven**: gebruikers kunnen alle bestaande items van de module wijzigen. In modules met de machtiging **Create** geeft **Schrijven** niet het recht om nieuwe items aan te maken.
 * **Create**: gebruikers kunnen nieuwe items aanmaken in de module. Deze machtiging staat los van de machtiging **Schrijven**.
 * **Exporteren**: gebruikers kunnen alle items van de module exporteren.
@@ -56,9 +56,9 @@ De volgende modules bieden een machtiging **Create** die los staat van de machti
 * Contractbeheer
 * Beheer van AI-systemen
 
-In deze modules kunt u **Create** samen met **Lezing** of met **Read/Write own elements** aanvinken. Een rol die **Read/Write own elements** en **Create** combineert, laat de gebruiker nieuwe items aanmaken en alleen de aan hem toegewezen items bewerken. Vink voor een rol die bestaande items bewerkt zonder nieuwe aan te maken **Schrijven** aan zonder **Create** aan te vinken.
+In deze modules kunt u **Create** samen met **Lezen** of met **Read/Write own elements** aanvinken. Een rol die **Read/Write own elements** en **Create** combineert, laat de gebruiker nieuwe items aanmaken en alleen de aan hem toegewezen items bewerken. Vink voor een rol die bestaande items bewerkt zonder nieuwe aan te maken **Schrijven** aan zonder **Create** aan te vinken.
 
-De standaardrollen **Administrator** en **Bijdrager** bevatten in deze modules de machtiging **Create**.
+De standaardrollen **Beheerder** en **Bijdrager** bevatten in deze modules de machtiging **Create**.
 
 <figure><img src="../../.gitbook/assets/settings-roles-create-permission.png" alt="De machtiging Create aangevinkt samen met de machtiging Read/Write own elements in de module Datalekken"><figcaption><p>De machtiging Create gecombineerd met het bewerken van eigen items</p></figcaption></figure>
 

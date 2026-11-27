@@ -14,11 +14,11 @@ Active Directory Federation Services (meestal afgekort tot ADFS) is een oplossin
 
 ### Stap 1: een SAML-login maken in Dastra
 
-* Ga naar de [SSO-configuratiepagina van Dastra](https://app.dastra.eu/general-settings/sso) (**Organisatie-instellingen** > **Eenmalig inloggen**).
+* Ga naar de [SSO-configuratiepagina van Dastra](https://app.dastra.eu/general-settings/sso) (**Organisatie-instellingen** > **Single sign-on**).
 * Klik op **Voeg een SSO-login toe**.
 * Selecteer bij **SSO-protocol** de optie **SAML2** en daarna **Handmatige configuratie**.
 * Voer in het veld **Entiteits-ID van de identiteitsprovider (uitgever)** de volgende URL in: `http://<adfs server url>/adfs/services/trust`
-* Voer in het veld **Identity Provider SSO url** het volgende in: `https://<adfs server url>/adfs/ls`
+* Voer in het veld **Single sign-on-URL van de identiteitsprovider** het volgende in: `https://<adfs server url>/adfs/ls`
 
 ### Stap 2: het ADFS-certificaat ophalen
 

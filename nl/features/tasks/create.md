@@ -19,43 +19,43 @@ U kunt op drie manieren een taak aanmaken:
 ### Vanuit de planningsmodule
 
 1. Klik in het zijmenu op **Planning** en kies vervolgens **Taken** in het submenu.
-2. Klik op **Taak maken**. Het paneel **Nieuwe taak** opent aan de rechterkant van het scherm.
+2. Klik op **Taak aanmaken**. Het paneel **Nieuwe taak** opent aan de rechterkant van het scherm.
 
 <figure><img src="../../.gitbook/assets/tasks-create-1.png" alt="De werkbalk van de pagina Taken met de knop Taak maken en het geopende vervolgkeuzemenu"><figcaption><p>De knop Taak maken en de acties van het bijbehorende menu</p></figcaption></figure>
 
-3. Vul de **Taaktitel** (maximaal 120 tekens) en de **Organisatie-eenheid** in, die verplicht zijn. Vul de overige velden naar behoefte aan.
-4. Klik op **Opslaan**. Om meerdere taken na elkaar aan te maken, klikt u op **Sla op en en maak een nieuwe**.
+3. Vul de **Taaktitel** (maximaal 120 tekens) en de **Organisatorische eenheid** in, die verplicht zijn. Vul de overige velden naar behoefte aan.
+4. Klik op **Opslaan**. Om meerdere taken na elkaar aan te maken, klikt u op **Opslaan en nog een toevoegen**.
 
 <figure><img src="../../.gitbook/assets/tasks-create-2.png" alt="Het paneel Nieuwe taak met de titel, de organisatie-eenheid, de uitvoerder, de datums en de geassocieerde elementen"><figcaption><p>Het paneel voor het aanmaken van een taak</p></figcaption></figure>
 
 Het paneel bevat:
 
-* **Organisatie-eenheid**: vooraf ingevuld met de eenheid die in de werkruimte is geselecteerd, of met de eerste beschikbare eenheid;
+* **Organisatorische eenheid**: vooraf ingevuld met de eenheid die in de werkruimte is geselecteerd, of met de eerste beschikbare eenheid;
 * **Project**, **Iteratie** en **Labels** om de taak te classificeren;
-* **Toegewezen aan**, **Begin datum** en **Vervaldatum**;
+* **Toegewezen aan**, **Startdatum** en **Vervaldatum**;
 * **Prioriteit** en **Interne referentie**, in het uitklapbare deel van het paneel;
 * de aangepaste velden die u aan taken hebt toegevoegd.
 
 ### Een taak aan elementen koppelen
 
-Een taak kan aan een of meer elementen van de toepassing worden gekoppeld. Klik in het paneel op **Een element associëren**, kies het type element en daarna een of meer elementen van dat type. De gekoppelde elementen staan onder **Geassocieerde elementen**.
+Een taak kan aan een of meer elementen van de toepassing worden gekoppeld. Klik in het paneel op **Item koppelen**, kies het type element en daarna een of meer elementen van dat type. De gekoppelde elementen staan onder **Gekoppelde items**.
 
 De beschikbare typen zijn:
 
-* **Gegevensverwerking**;
-* **Verzoek om rechten uit te oefenen**;
+* **Verwerkingsactiviteit**;
+* **Verzoek**;
 * **Datalek**;
 * **Responding to a questionnaire**;
 * **Stakeholder**;
-* **Actief**;
+* **Activum**;
 * **Dataset**;
 * **Risicobeoordeling**;
 * **Controlepunt**;
 * **Veiligheidsmaatregel**;
 * **AI-systeem**;
 * **Contract**;
-* **Veld voor persoonlijke gegevens**;
-* **Categorie van de betrokken persoon**;
+* **Gegevensveld**;
+* **Categorie betrokkenen**;
 * **Conformiteitsproject**;
 * **Conformiteitsaudit**.
 
@@ -67,11 +67,11 @@ De dossiers van verwerkingsactiviteiten, verzoeken van betrokkenen, datalekken, 
 
 1. Open het dossier van het element.
 2. Klik op de taakknop. Het paneel **Gekoppelde taken** toont de taken die aan dit element zijn gekoppeld, met filters op stap en op label.
-3. Klik op **Taak maken**. De taak wordt aan het element gekoppeld en neemt de organisatie-eenheid ervan over.
+3. Klik op **Taak aanmaken**. De taak wordt aan het element gekoppeld en neemt de organisatie-eenheid ervan over.
 
 <figure><img src="../../.gitbook/assets/tasks-create-3.png" alt="Het dossier van een verwerkingsactiviteit met het geopende paneel Gekoppelde taken"><figcaption><p>Het paneel Gekoppelde taken in het dossier van een verwerkingsactiviteit</p></figcaption></figure>
 
-De knop **Toon in planning** van het paneel opent de pagina **Taken** met de taken van het element.
+De knop **Weergeven in planning** van het paneel opent de pagina **Taken** met de taken van het element.
 
 {% hint style="info" %}
 Een actieplan kan ook worden gegenereerd op basis van een gevalideerde vragenlijst. Zie [Vragenlijsten opvolgen](../questionnaires/monitor.md).
@@ -79,11 +79,11 @@ Een actieplan kan ook worden gegenereerd op basis van een gevalideerde vragenlij
 
 ### Vanuit een e-mail
 
-Dastra kan elke e-mail die op een verzameladres is ontvangen, met de bijlagen ervan omzetten in een taak. Om het adres in te stellen, klikt u op de pijl van de knop **Taak maken** en vervolgens op **Transformeer e-mails in taken**. De instellingenpagina opent onder **Instellingen voor werkruimte** > **Integraties**. Zie [Gegevens verzamelen via inkomende e-mail](../settings/mailboxes.md). Voor dit item hebt u het recht nodig om integraties te beheren.
+Dastra kan elke e-mail die op een verzameladres is ontvangen, met de bijlagen ervan omzetten in een taak. Om het adres in te stellen, klikt u op de pijl van de knop **Taak aanmaken** en vervolgens op **E-mails omzetten in taken**. De instellingenpagina opent onder **Instellingen van de werkruimte** > **Integraties**. Zie [Gegevens verzamelen via inkomende e-mail](../settings/mailboxes.md). Voor dit item hebt u het recht nodig om integraties te beheren.
 
 ### Subtaken aanmaken
 
-Een taak kan een lijst met subtaken bevatten. Sla de taak eerst op: de knop **Voeg een subtaak toe** blijft inactief zolang de taak niet bestaat. Bewerk de taak daarna en klik op **Voeg een subtaak toe**.
+Een taak kan een lijst met subtaken bevatten. Sla de taak eerst op: de knop **Subtaken toevoegen** blijft inactief zolang de taak niet bestaat. Bewerk de taak daarna en klik op **Subtaken toevoegen**.
 
 <figure><img src="../../.gitbook/assets/tasks-create-4.png" alt="Een geopende taak met de lijst van subtaken en de knop Voeg een subtaak toe"><figcaption><p>De subtaken van een taak</p></figcaption></figure>
 
@@ -104,10 +104,10 @@ Om een taak te bewerken, klikt u erop: het paneel **Een taak bewerken** opent. I
 
 <figure><img src="../../.gitbook/assets/tasks-create-5.png" alt="De weergave Tabel met het geopende drie-puntjesmenu van een taak"><figcaption><p>Het menu van een taak in de weergave Tabel</p></figcaption></figure>
 
-Dit menu biedt ook **Link kopiëren**, **Dupliceren**, **Samenvoegen** en **Verplaats naar de prullenbak**. **Dupliceren** kopieert de taak en de subtaken ervan: de titel van de kopie eindigt op " - copy".
+Dit menu biedt ook **Link kopiëren**, **Kopie maken**, **Samenvoegen** en **Naar de prullenbak verplaatsen**. **Kopie maken** kopieert de taak en de subtaken ervan: de titel van de kopie eindigt op " - copy".
 
 {% hint style="info" %}
-Om de stap van een taak te wijzigen, sleept u de taak in de weergave **Kolommen** naar een andere kolom. De standaardstappen zijn **NIEUW**, **Informatie behoeften**, **Aan de gang** en **Klaar**. Om ze te wijzigen, klikt u op de pijl van de knop **Taak maken** en vervolgens op **Kolommen instellen**: zie [De takenworkflow aanpassen](workflow.md).
+Om de stap van een taak te wijzigen, sleept u de taak in de weergave **Kolommen** naar een andere kolom. De standaardstappen zijn **NIEUW**, **Informatie nodig**, **In uitvoering** en **Klaar**. Om ze te wijzigen, klikt u op de pijl van de knop **Taak aanmaken** en vervolgens op **Kolommen instellen**: zie [De takenworkflow aanpassen](workflow.md).
 {% endhint %}
 
 ### Een taak naar Jira sturen
@@ -118,8 +118,8 @@ Wanneer de Jira-integratie voor taken actief is, biedt het actiemenu van de taak
 
 Een taak die naar de prullenbak is verplaatst, is niet verwijderd: ze toont de vermelding **In de prullenbak** en verdwijnt uit de lijsten. U kunt ze op elk moment herstellen.
 
-1. Klik in het drie-puntjesmenu van de taak, of in het actiemenu van het paneel, op **Verplaats naar de prullenbak** en bevestig.
-2. Om de taken in de prullenbak te vinden, opent u **Filters** en selecteert u **Bekijk prullenbak**.
+1. Klik in het drie-puntjesmenu van de taak, of in het actiemenu van het paneel, op **Naar de prullenbak verplaatsen** en bevestig.
+2. Om de taken in de prullenbak te vinden, opent u **Filters** en selecteert u **Prullenbak bekijken**.
 
 <figure><img src="../../.gitbook/assets/tasks-create-6.png" alt="Het paneel Filters met het geselecteerde vak Bekijk prullenbak"><figcaption><p>Het filter Bekijk prullenbak</p></figcaption></figure>
 

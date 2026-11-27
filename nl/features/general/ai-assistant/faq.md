@@ -18,13 +18,13 @@ Nee. De modellen die Dastra gebruikt, zijn vooraf getraind en worden gehost op M
 
 ### Worden gegevens uit mijn werkruimte buiten mijn medeweten naar het model gestuurd?
 
-Nee. Dastra stuurt alleen de informatie door die strikt nodig is voor de gevraagde generatie: de tekst die u invoert en, indien van toepassing, de velden van het object waaraan u werkt (verwerkingsactiviteit, AI-systeem, verzoek van een betrokkene enzovoort). Andere records in uw werkruimte, uw inloggegevens en sessiemetadata worden nooit meegestuurd. De enige uitzondering: wanneer u bij het genereren van een verwerkingsactiviteit de optie **Gebruik bestaande elementen** inschakelt, worden de labels van de bestaande beveiligingsmaatregelen, activa en gegevensvelden meegestuurd, zodat de assistent ze kan hergebruiken. Een overzicht per functie vindt u op de pagina [Werking](how-it-works.md).
+Nee. Dastra stuurt alleen de informatie door die strikt nodig is voor de gevraagde generatie: de tekst die u invoert en, indien van toepassing, de velden van het object waaraan u werkt (verwerkingsactiviteit, AI-systeem, verzoek van een betrokkene enzovoort). Andere records in uw werkruimte, uw inloggegevens en sessiemetadata worden nooit meegestuurd. De enige uitzondering: wanneer u bij het genereren van een verwerkingsactiviteit de optie **Bestaande items gebruiken** inschakelt, worden de labels van de bestaande beveiligingsmaatregelen, activa en gegevensvelden meegestuurd, zodat de assistent ze kan hergebruiken. Een overzicht per functie vindt u op de pagina [Werking](how-it-works.md).
 
 ### Waar worden de AI-modellen van Dastra gehost?
 
 Voor de families OpenAI, Mistral en Open source worden de modellen gehost op de infrastructuur van Microsoft Azure in Frankrijk. Uw gegevens lopen niet via de eigen servers van OpenAI of Mistral. Dastra gebruikt uitsluitend beheerde Azure-diensten.
 
-Configureert u een **IA-leverancier** met uw eigen API-sleutel, dan hangt de hosting af van de leverancier die u kiest.
+Configureert u een **Aangepaste AI-aanbieder** met uw eigen API-sleutel, dan hangt de hosting af van de leverancier die u kiest.
 
 ### Worden mijn prompts na de generatie bewaard?
 
@@ -34,7 +34,7 @@ Uitzondering: Azure heeft een geautomatiseerd mechanisme voor het opsporen van m
 
 ### Wie kan de AI-aanroepen in mijn organisatie zien?
 
-Eigenaren van de organisatie hebben toegang tot de logboeken van het AI-gebruik (geschiedenis van 90 dagen) via **Organisatie-instellingen** > **Assistent IA**, kaart **AI usage**, tabblad **Logs (90 days)**. Deze logboeken tonen de datum, de status, het type bewerking, de naam van het model, de verbruikte credits, de duur en de gebruiker die de generatie heeft gestart. De inhoud van de prompts en antwoorden wordt niet getoond.
+Eigenaren van de organisatie hebben toegang tot de logboeken van het AI-gebruik (geschiedenis van 90 dagen) via **Organisatie-instellingen** > **Dastra AI**, kaart **AI usage**, tabblad **Logs (90 days)**. Deze logboeken tonen de datum, de status, het type bewerking, de naam van het model, de verbruikte credits, de duur en de gebruiker die de generatie heeft gestart. De inhoud van de prompts en antwoorden wordt niet getoond.
 
 ### Valt de AI-assistent onder de verwerkersovereenkomst van Dastra?
 
@@ -60,11 +60,11 @@ Ja. De AI-assistent is geen jurist. Gegenereerde inhoud, zoals conformiteitsanal
 
 ### Hoe kies ik het gebruikte AI-model?
 
-De eigenaar van de organisatie opent **Organisatie-instellingen** > **Assistent IA** en selecteert de **Familie van IA-modellen**: OpenAI (standaard), Mistral, Open source of een eigen leverancier (**IA-leverancier**). Voor elke familie worden automatisch drie modelniveaus gebruikt, afhankelijk van de complexiteit van de taak (Fast, Smart, Large context).
+De eigenaar van de organisatie opent **Organisatie-instellingen** > **Dastra AI** en selecteert de **Familie van AI-modellen**: OpenAI (standaard), Mistral, Open source of een eigen leverancier (**Aangepaste AI-aanbieder**). Voor elke familie worden automatisch drie modelniveaus gebruikt, afhankelijk van de complexiteit van de taak (Fast, Smart, Large context).
 
 ### Kan ik mijn eigen AI-leverancier koppelen?
 
-Ja, met de familie **IA-leverancier**. Elke leverancier die compatibel is met de OpenAI-API-standaard kan worden gekoppeld: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry of een zelfgehoste LLM. Configureer uw inloggegevens in **Organisatie-instellingen** > **Assistent IA**, blok **Identificaties van IA-leverancier**. De eigen leverancier geldt voor de generatiefuncties van de AI-assistent, niet voor Dastra AI (chat), agents of de MCP-server.
+Ja, met de familie **Aangepaste AI-aanbieder**. Elke leverancier die compatibel is met de OpenAI-API-standaard kan worden gekoppeld: OpenAI, Anthropic (Claude), Google (Gemini), Mistral, Azure AI Foundry of een zelfgehoste LLM. Configureer uw inloggegevens in **Organisatie-instellingen** > **Dastra AI**, blok **Inloggegevens van aangepaste AI-aanbieder**. De eigen leverancier geldt voor de generatiefuncties van de AI-assistent, niet voor Dastra AI (chat), agents of de MCP-server.
 
 {% hint style="warning" %}
 Bij een eigen AI-leverancier gelden de in deze documentatie beschreven Azure-garanties niet meer. De gegevens vallen onder het beleid van uw leverancier.
@@ -74,7 +74,7 @@ Bij een eigen AI-leverancier gelden de in deze documentatie beschreven Azure-gar
 
 De toepassing heeft geen schakelaar om de AI-assistent uit te schakelen: de beschikbaarheid hangt af van het abonnement van uw organisatie. De AI-functies worden module per module ingeschakeld (verwerkingsactiviteiten en referenties, conformiteit, risico's, datalekken, vragenlijsten, contracten, verzoeken van betrokkenen, analyses). In een module die niet in uw abonnement zit, zijn de AI-knoppen grijs. Neem contact op met ons team om deze reikwijdte te wijzigen.
 
-Eén instelling ligt in de handen van beheerders: **Automatische IA-analyse van bewijsstukken** (in het Engels **AI evidence auto-scan**), standaard ingeschakeld, die u per werkruimte uitschakelt in **Instellingen voor werkruimte** > **Conformiteit**.
+Eén instelling ligt in de handen van beheerders: **Automatische AI-analyse van bewijzen** (in het Engels **AI evidence auto-scan**), standaard ingeschakeld, die u per werkruimte uitschakelt in **Instellingen van de werkruimte** > **Conformiteit**.
 
 ### Is de AI-assistent beschikbaar in alle Dastra-abonnementen?
 
@@ -84,7 +84,7 @@ Nee. De AI-assistent, elk van zijn functies per module, de AI-agents en de MCP-s
 
 AI-credits zijn de meeteenheid voor het verbruik van de AI-assistent binnen uw organisatie. Elke aanroep van een AI-functie verbruikt een aantal credits, afhankelijk van het gebruikte modelniveau (Fast, Smart of Large context) en de hoeveelheid verwerkte gegevens.
 
-Eigenaren van de organisatie zien het huidige verbruik en het resterende saldo in **Organisatie-instellingen** > **Assistent IA**, kaart **Gebruik** ([directe link](https://app.dastra.eu/general-settings/ai)).
+Eigenaren van de organisatie zien het huidige verbruik en het resterende saldo in **Organisatie-instellingen** > **Dastra AI**, kaart **Gebruik** ([directe link](https://app.dastra.eu/general-settings/ai)).
 
 ### Wat gebeurt er als mijn organisatie haar creditquotum bereikt?
 
@@ -94,7 +94,7 @@ Neem contact op met ons team om uw quotum te verhogen of een vervroegde vernieuw
 
 ### Geldt het creditsysteem ook bij een eigen AI-leverancier?
 
-Nee. Wanneer uw organisatie een **IA-leverancier** configureert, is het creditsysteem van Dastra voor de generatiefuncties van de AI-assistent uitgeschakeld en worden er geen credits geteld. Het verbruik wordt rechtstreeks door uw leverancier beheerd volgens zijn eigen factureringsvoorwaarden. Dastra AI en agents gebruiken de modellen van Dastra: hun berichten verbruiken nog steeds het creditquotum en worden geblokkeerd zodra het is bereikt.
+Nee. Wanneer uw organisatie een **Aangepaste AI-aanbieder** configureert, is het creditsysteem van Dastra voor de generatiefuncties van de AI-assistent uitgeschakeld en worden er geen credits geteld. Het verbruik wordt rechtstreeks door uw leverancier beheerd volgens zijn eigen factureringsvoorwaarden. Dastra AI en agents gebruiken de modellen van Dastra: hun berichten verbruiken nog steeds het creditquotum en worden geblokkeerd zodra het is bereikt.
 
 ## AI-verordening (EU-verordening 2024/1689)
 
@@ -118,4 +118,4 @@ Dat gezegd zijnde blijft het informeren van de betrokkene dat een antwoord met A
 
 ### Is Dastra aanbieder of gebruiksverantwoordelijke in de zin van de AI-verordening?
 
-Beide, afhankelijk van het gebruik. Wanneer u de standaardmodellen gebruikt (OpenAI, Mistral, Open source via Azure), is Dastra de aanbieder van het AI-systeem en uw organisatie de gebruiksverantwoordelijke. Wanneer u uw eigen leverancier koppelt via de familie **IA-leverancier**, treedt Dastra uitsluitend op als conformiteitshulpmiddel. Uw organisatie neemt dan de rol van aanbieder en/of gebruiksverantwoordelijke op zich voor haar eigen model.
+Beide, afhankelijk van het gebruik. Wanneer u de standaardmodellen gebruikt (OpenAI, Mistral, Open source via Azure), is Dastra de aanbieder van het AI-systeem en uw organisatie de gebruiksverantwoordelijke. Wanneer u uw eigen leverancier koppelt via de familie **Aangepaste AI-aanbieder**, treedt Dastra uitsluitend op als conformiteitshulpmiddel. Uw organisatie neemt dan de rol van aanbieder en/of gebruiksverantwoordelijke op zich voor haar eigen model.

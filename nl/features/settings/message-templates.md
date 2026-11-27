@@ -6,7 +6,7 @@ description: >-
 
 # Berichtsjablonen
 
-Berichtsjablonen besparen u tijd: u schrijft ze één keer en gebruikt ze opnieuw in de modules van Dastra. Open **Instellingen voor werkruimte** > **Modellen** om ze te beheren. Deze menuvermelding is zichtbaar voor gebruikers met het schrijfrecht op berichtsjablonen, voor alle items of voor hun eigen items.
+Berichtsjablonen besparen u tijd: u schrijft ze één keer en gebruikt ze opnieuw in de modules van Dastra. Open **Instellingen van de werkruimte** > **Berichtsjablonen** om ze te beheren. Deze menuvermelding is zichtbaar voor gebruikers met het schrijfrecht op berichtsjablonen, voor alle items of voor hun eigen items.
 
 ## Soorten berichtsjablonen
 
@@ -14,10 +14,10 @@ Elk soort sjabloon heeft zijn eigen tabblad op de pagina. De tabbladen die u zie
 
 <figure><img src="../../.gitbook/assets/settings-message-templates-1.png" alt="De lijst met berichtsjablonen met de tabbladen per soort en de knop Maak een sjabloon"><figcaption><p>De lijst met berichtsjablonen, tabblad Bericht voor het uitoefenen van rechten</p></figcaption></figure>
 
-* **Bericht voor het uitoefenen van rechten**: om tijd te besparen bij uw uitwisselingen met aanvragers. Bijvoorbeeld een sjabloon om de ontvangst van een verzoek te bevestigen.
+* **Bericht van het verzoek**: om tijd te besparen bij uw uitwisselingen met aanvragers. Bijvoorbeeld een sjabloon om de ontvangst van een verzoek te bevestigen.
 * **Taak**: om de inhoud van een taakbeschrijving aan te passen, bijvoorbeeld wanneer u regelmatig iemand vraagt details over een verwerkingsactiviteit in te vullen.
-* **Uitnodiging voor audits**: om de uitnodigingen om een vragenlijst te beantwoorden aan te passen. Hetzelfde bericht gaat naar al uw respondenten. U kunt bijvoorbeeld uw verwerkers uitnodigen een vragenlijst in te vullen waarmee de toepassing van de verwerkersovereenkomst wordt gecontroleerd.
-* **Verwerking bericht uitnodiging**: om een Dastra-gebruiker vanaf een stap uit te nodigen een verwerkingsactiviteit aan te vullen. Schrijf het sjabloon één keer of bereid één sjabloon per soort ontvanger voor (jurist, IT-directeur enzovoort).
+* **Uitnodiging voor vragenlijsten**: om de uitnodigingen om een vragenlijst te beantwoorden aan te passen. Hetzelfde bericht gaat naar al uw respondenten. U kunt bijvoorbeeld uw verwerkers uitnodigen een vragenlijst in te vullen waarmee de toepassing van de verwerkersovereenkomst wordt gecontroleerd.
+* **Uitnodiging om een verwerkingsactiviteit in te vullen**: om een Dastra-gebruiker vanaf een stap uit te nodigen een verwerkingsactiviteit aan te vullen. Schrijf het sjabloon één keer of bereid één sjabloon per soort ontvanger voor (jurist, IT-directeur enzovoort).
 * **Datalek**: om op dezelfde manier een Dastra-gebruiker vanaf een stap uit te nodigen een datalek aan te vullen.
 
 ## Een sjabloon aanmaken
@@ -26,9 +26,9 @@ U maakt een sjabloon aan vanuit de instellingen voor de werkruimte of vanaf de p
 
 Vanuit de instellingen:
 
-1. Open **Instellingen voor werkruimte** > **Modellen** en klik op het tabblad van het soort sjabloon dat u nodig hebt.
+1. Open **Instellingen van de werkruimte** > **Berichtsjablonen** en klik op het tabblad van het soort sjabloon dat u nodig hebt.
 2. Klik op **Maak een sjabloon**.
-3. Vul de **Naam** van het sjabloon in (maximaal 150 tekens) en de **Body van de template** (maximaal 9.000 tekens).
+3. Vul de **Naam** van het sjabloon in (maximaal 150 tekens) en de **Inhoud van het sjabloon** (maximaal 9.000 tekens).
 4. Schakel **Wilt u dit sjabloon delen met alle gebruikers van uw werkruimte?** in als alle gebruikers van de werkruimte het sjabloon mogen gebruiken.
 5. Sla het sjabloon op.
 

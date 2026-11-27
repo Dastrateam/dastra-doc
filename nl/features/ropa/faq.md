@@ -8,11 +8,11 @@ description: Veelgestelde vragen over het verwerkingsregister.
 
 Voor alle verwerkingsactiviteiten kunt u de wijzigingsgeschiedenis en de details van de wijzigingen weergeven.
 
-Klik op het klokpictogram (**Historisch**) bovenaan de pagina van de verwerkingsactiviteit.
+Klik op het klokpictogram (**Activiteitengeschiedenis**) bovenaan de pagina van de verwerkingsactiviteit.
 
 <figure><img src="../../.gitbook/assets/ropa-faq-1.png" alt="Knop voor de activiteitsgeschiedenis bovenaan een verwerkingsactiviteit"><figcaption><p>Knop voor toegang tot de geschiedenis</p></figcaption></figure>
 
-Klik bij een vermelding op **Gegevens wijzigen** om de versies te vergelijken. Daar kunt u met de knop **Herstellen** terugkeren naar die versie, als uw rol dat toestaat.
+Klik bij een vermelding op **Details van de wijziging** om de versies te vergelijken. Daar kunt u met de knop **Herstellen** terugkeren naar die versie, als uw rol dat toestaat.
 
 Wijzigingen in organisatorische eenheden worden niet bijgehouden.
 
@@ -24,13 +24,13 @@ U kunt wel een aangepast veld aanmaken op het niveau van de stakeholder, dat via
 
 ## Hoe verwijdert u een verwerkingsactiviteit?
 
-Om een verwerkingsactiviteit te verwijderen, verplaatst u ze eerst naar de prullenbak met **Verplaats naar de prullenbak**. Daarna kunt u de verwerkingsactiviteit definitief verwijderen door de prullenbak weer te geven via de filters. Zo voorkomt u overhaaste verwijderingen.
+Om een verwerkingsactiviteit te verwijderen, verplaatst u ze eerst naar de prullenbak met **Naar de prullenbak verplaatsen**. Daarna kunt u de verwerkingsactiviteit definitief verwijderen door de prullenbak weer te geven via de filters. Zo voorkomt u overhaaste verwijderingen.
 
-Om een verwerkingsactiviteit naar de prullenbak te verplaatsen, opent u het menu aan het einde van de rij en kiest u **Verplaats naar de prullenbak**.
+Om een verwerkingsactiviteit naar de prullenbak te verplaatsen, opent u het menu aan het einde van de rij en kiest u **Naar de prullenbak verplaatsen**.
 
 <figure><img src="../../.gitbook/assets/ropa-faq-2.png" alt="Actiemenu van een rij van een verwerkingsactiviteit met de optie Verplaats naar de prullenbak"><figcaption><p>Een verwerkingsactiviteit naar de prullenbak verplaatsen</p></figcaption></figure>
 
-Geef daarna de prullenbak weer: klik op **Filters** en vink **Bekijk prullenbak** aan.
+Geef daarna de prullenbak weer: klik op **Filters** en vink **Prullenbak bekijken** aan.
 
 <figure><img src="../../.gitbook/assets/ropa-faq-3.png" alt="Filterpaneel van het register met de optie Bekijk prullenbak"><figcaption><p>De prullenbak weergeven</p></figcaption></figure>
 
@@ -46,8 +46,8 @@ Maak in dat geval een aangepaste rol aan. Ga naar de rollen: [https://app.dastra
 
 Maak daarna een aangepaste rol met de volgende rechten:
 
-* **Register- en gegevensverwerking**: Lezing, Schrijven
-* **Gegevenstoewijzing en opslagplaatsen**: Lezing
+* **Verwerkingsregister**: Lezing, Schrijven
+* **Datamapping en repositories**: Lezing
 
 Wijs deze rol vervolgens toe aan de betreffende gebruikers. Zij kunnen de datasets gebruiken in hun verwerkingsactiviteiten, maar de elementen van de datamap niet wijzigen.
 
@@ -65,7 +65,7 @@ In hetzelfde venster verwijdert u met **Verwijderen** stakeholders van de gesele
 
 U krijgt de lijst van activa per organisatorische eenheid via de koppelingen tussen activa en verwerkingsactiviteiten.
 
-Gebruik de Excel-export van de verwerkingsactiviteiten: filter het register op organisatorische eenheid, selecteer de verwerkingsactiviteiten en exporteer ze. Schakel in het exportvenster **Specifieke kolommen exporteren** in en bewaar alleen de kolom met de activa: zo krijgt u de activa van die organisatorische eenheid. U kunt ook alleen de kolommen met de organisatorische eenheid en de activa bewaren om de activa van alle organisatorische eenheden tegelijk te krijgen.
+Gebruik de Excel-export van de verwerkingsactiviteiten: filter het register op organisatorische eenheid, selecteer de verwerkingsactiviteiten en exporteer ze. Schakel in het exportvenster **Aangepaste velden exporteren** in en bewaar alleen de kolom met de activa: zo krijgt u de activa van die organisatorische eenheid. U kunt ook alleen de kolommen met de organisatorische eenheid en de activa bewaren om de activa van alle organisatorische eenheden tegelijk te krijgen.
 
 De [datamap van het register](visualization/data-map.md) toont deze informatie ook grafisch.
 
@@ -74,11 +74,11 @@ De [datamap van het register](visualization/data-map.md) toont deze informatie o
 U kunt een register en zijn verwerkingsactiviteiten op verschillende manieren dupliceren:
 
 * door de verwerkingsactiviteiten in JSON-indeling te [exporteren en opnieuw te importeren](export-import.md),
-* of door naar de doelwerkruimte te gaan en de verwerkingsactiviteiten aan te maken met **Maak vanuit de bibliotheek**: selecteer bij **Gegevensbron van de bibliotheek** de werkruimte die het oorspronkelijke register bevat.
+* of door naar de doelwerkruimte te gaan en de verwerkingsactiviteiten aan te maken met **Aanmaken vanuit de bibliotheek...**: selecteer bij **Kies de bron van de bibliotheek** de werkruimte die het oorspronkelijke register bevat.
 
 ## Hoe wijzigt u het type van een verwerkingsactiviteit (van een activiteit als verwerkingsverantwoordelijke naar een activiteit als verwerker, en omgekeerd)?
 
-Open de verwerkingsactiviteit, klik op de pijl rechts van **Opslaan** en klik daarna op **Schakel over naar processorrecord** of **Schakel over naar verantwoordelijke voor de verwerking**:
+Open de verwerkingsactiviteit, klik op de pijl rechts van **Opslaan** en klik daarna op **Overschakelen naar verwerkersregister** of **Overschakelen naar verwerkingsverantwoordelijke**:
 
 <figure><img src="../../.gitbook/assets/ropa-faq-7.png" alt="Menu van Opslaan met de optie Schakel over naar processorrecord"><figcaption><p>Het type van een verwerkingsactiviteit wijzigen</p></figcaption></figure>
 

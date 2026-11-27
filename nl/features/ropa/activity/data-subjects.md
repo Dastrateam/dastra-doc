@@ -10,17 +10,17 @@ Een betrokkene is elke persoon van wie gegevens binnen de verwerkingsactiviteit 
 
 ## Een categorie van betrokkenen toevoegen
 
-1. Klik in de sectie **Betrokken personen** op **Een categorie van betrokken persoon toevoegen**.
+1. Klik in de sectie **Betrokkenen** op **Een categorie van betrokken persoon toevoegen**.
 2. Selecteer de categorie van betrokkenen in uw lijst, of maak een nieuwe aan via de lijst.
-3. Voeg optioneel een **Aanvullende opmerking** toe.
-4. Geef optioneel het **Aantal betrokken personen** op, dat wil zeggen het geschatte maximumaantal betrokken personen. Kies **Selector** om een ordegrootte te kiezen (van 1 persoon tot minder dan 100.000.000 personen), of **Voer een waarde in** om een getal in te voeren. Geef voor werknemers bijvoorbeeld het geschatte aantal werknemers van de organisatie op.
+3. Voeg optioneel een **Aanvullende opmerkingen** toe.
+4. Geef optioneel het **Aantal betrokkenen** op, dat wil zeggen het geschatte maximumaantal betrokken personen. Kies **Selectie** om een ordegrootte te kiezen (van 1 persoon tot minder dan 100.000.000 personen), of **Voer een waarde in** om een getal in te voeren. Geef voor werknemers bijvoorbeeld het geschatte aantal werknemers van de organisatie op.
 5. Klik op **Toevoegen**.
 
 De categorieën staan in een lijst met hun maximumvolume (**Maximaal volume**). Klik op een categorie om ze te bewerken, of gebruik het menu **...** om ze te bewerken of te verwijderen.
 
 ## Kwetsbare personen
 
-De optie **Betrokken kwetsbare personen** stelt u in op de categorie van betrokkenen zelf, in uw lijst. Selecteer ze als de categorie kwetsbare personen omvat, zoals mensen in een onevenwichtige situatie: bijvoorbeeld minderjarigen, werknemers of ouderen. De sectie **Betrokken personen** toont dan **Betrokken kwetsbare personen** voor deze categorie.
+De optie **Betrokken kwetsbare personen** stelt u in op de categorie van betrokkenen zelf, in uw lijst. Selecteer ze als de categorie kwetsbare personen omvat, zoals mensen in een onevenwichtige situatie: bijvoorbeeld minderjarigen, werknemers of ouderen. De sectie **Betrokkenen** toont dan **Betrokken kwetsbare personen** voor deze categorie.
 
 {% hint style="info" %}
 De aanwezigheid van minderjarigen of kwetsbare personen en een groot aantal betrokkenen verhogen de indicator **Gevoeligheid** van de verwerkingsactiviteit.

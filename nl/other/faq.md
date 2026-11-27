@@ -32,7 +32,7 @@ Zie de volgende vraag om het logo aan te passen dat in exports wordt gebruikt.
 
 ## Hoe wijzigt u het logo van de werkruimte in Dastra?
 
-Open de instellingen van de werkruimte en daarna de sectie **Design & merk**. U kunt een vierkant logo en een rechthoekig logo uploaden en de **Merk kleur** en de **Secundaire kleur** kiezen. Met deze elementen past u de exports van Dastra aan uw merk aan.
+Open de instellingen van de werkruimte en daarna de sectie **Design & merk**. U kunt een vierkant logo en een rechthoekig logo uploaden en de **Merkkleur** en de **Secundaire kleur** kiezen. Met deze elementen past u de exports van Dastra aan uw merk aan.
 
 Deze sectie is voorbehouden aan de eigenaars van de organisatie.
 
@@ -50,7 +50,7 @@ Voor het importeren van verwerkingsactiviteiten, zie [Het register exporteren en
 
 ## Hoe verwijdert u een verwerkingsactiviteit?
 
-Verwijderen verloopt in twee stappen, om verwijderingen per ongeluk te voorkomen. Verplaats de verwerkingsactiviteit eerst naar de prullenbak met **Verplaats naar de prullenbak**. Geef daarna de prullenbak weer met **Bekijk prullenbak** in de filters en kies **Verwijderen** om ze definitief te verwijderen, of **Herstellen** om ze terug te zetten in het register.
+Verwijderen verloopt in twee stappen, om verwijderingen per ongeluk te voorkomen. Verplaats de verwerkingsactiviteit eerst naar de prullenbak met **Naar de prullenbak verplaatsen**. Geef daarna de prullenbak weer met **Prullenbak bekijken** in de filters en kies **Verwijderen** om ze definitief te verwijderen, of **Herstellen** om ze terug te zetten in het register.
 
 De volledige werkwijze staat in de [FAQ van het register](../features/ropa/faq.md#hoe-verwijdert-u-een-verwerkingsactiviteit).
 
@@ -62,7 +62,7 @@ Als u een item niet vindt waartoe u toegang zou moeten hebben, kan het om een va
 
    <figure><img src="../.gitbook/assets/other-faq-1.png" alt="Lijst van het register met een actief filter en de knop Filters wissen (1)"><figcaption><p>Een actief filter beperkt de lijst</p></figcaption></figure>
 2. Het item is gekoppeld aan een organisatorische eenheid waartoe u geen toegang hebt of waarvoor u niet over de nodige rechten beschikt. Neem contact op met uw werkruimtebeheerder.
-3. Het item staat in de prullenbak en verschijnt daarom niet meer in de standaardlijst. Klik op **Filters** en vink **Bekijk prullenbak** aan.
+3. Het item staat in de prullenbak en verschijnt daarom niet meer in de standaardlijst. Klik op **Filters** en vink **Prullenbak bekijken** aan.
 
    <figure><img src="../.gitbook/assets/ropa-faq-3.png" alt="Filterpaneel van het register met de optie Bekijk prullenbak"><figcaption><p>De prullenbak weergeven</p></figcaption></figure>
 4. In uw browser zijn onjuiste instellingen opgeslagen. Open Dastra in een privévenster om dit te controleren. Verdwijnt het probleem, wis dan de lokale opslag van uw browser met de werkwijze in de volgende vraag.

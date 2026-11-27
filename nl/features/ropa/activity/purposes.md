@@ -30,26 +30,26 @@ Voor elk doeleinde moet u de toepasselijke [wettelijke basis](https://ico.org.uk
 
 U voegt doeleinden toe in de sectie **Doeleinden**, de derde sectie van de verwerkingsactiviteit. U kunt zoveel doeleinden toevoegen als nodig is.
 
-1. Klik in de sectie **Doeleinden** op **Voeg een doel toe**. Het venster **Voeg een doel toe** opent.
+1. Klik in de sectie **Doeleinden** op **Doeleinde toevoegen**. Het venster **Doeleinde aanmaken** opent.
 2. Kies hoe u het doeleinde aanmaakt:
-   * **Creëren met AI**: genereer met AI een lijst van doeleinden. Selecteer de doeleinden die u wilt behouden en klik op **Toevoegen**.
-   * **Beginnen met een doel**: vertrek van een bestaand doeleinde. U kunt de doeleinden filteren op **Gegevensverwerking** en op **Wettelijke basis**.
-   * **Uit het niets**: maak een nieuw doeleinde vanaf nul aan.
+   * **Gegenereerd door AI**: genereer met AI een lijst van doeleinden. Selecteer de doeleinden die u wilt behouden en klik op **Toevoegen**.
+   * **Vanuit een ander doeleinde**: vertrek van een bestaand doeleinde. U kunt de doeleinden filteren op **Verwerkingsactiviteit** en op **Wettelijke basis**.
+   * **Aangepast**: maak een nieuw doeleinde vanaf nul aan.
 
-U kunt deze drie opties ook rechtstreeks openen via de pijl naast de knop **Voeg een doel toe**.
+U kunt deze drie opties ook rechtstreeks openen via de pijl naast de knop **Doeleinde toevoegen**.
 
 <figure><img src="../../../.gitbook/assets/ropa-purposes-1.png" alt="Venster Voeg een doel toe met de opties Creëren met AI, Beginnen met een doel en Uit het niets"><figcaption><p>De drie manieren om een doeleinde aan te maken</p></figcaption></figure>
 
 Wanneer u een doeleinde vanaf nul aanmaakt, vult u de volgende velden in en klikt u daarna op **Toevoegen**:
 
-* **Titel van het doel** (verplicht): de naam van het doeleinde, beperkt tot 120 tekens. Dastra stelt bestaande doeleinden voor terwijl u typt.
+* **Doeleinde** (verplicht): de naam van het doeleinde, beperkt tot 120 tekens. Dastra stelt bestaande doeleinden voor terwijl u typt.
 * **Wettelijke basis** (optioneel): de wettelijke basis van dit doeleinde (zie hieronder).
-* **Beschrijving van het doel** (optioneel): beschrijf het doeleinde. De AI-knop **Genereer** kan deze beschrijving voor u opstellen.
-* **Gelieve de keuze van deze grondslag uit te leggen**: verschijnt zodra een wettelijke basis is geselecteerd, bijvoorbeeld om de nagestreefde gerechtvaardigde belangen of de wettelijke bepaling die de verwerking oplegt te vermelden.
+* **Beschrijving van het doeleinde** (optioneel): beschrijf het doeleinde. De AI-knop **Genereren** kan deze beschrijving voor u opstellen.
+* **Geef meer uitleg over deze wettelijke basis**: verschijnt zodra een wettelijke basis is geselecteerd, bijvoorbeeld om de nagestreefde gerechtvaardigde belangen of de wettelijke bepaling die de verwerking oplegt te vermelden.
 
 <figure><img src="../../../.gitbook/assets/ropa-purposes-2.png" alt="Paneel voor het aanmaken van een doeleinde met de velden Titel van het doel, Wettelijke basis en Beschrijving van het doel"><figcaption><p>Een doeleinde vanaf nul aanmaken</p></figcaption></figure>
 
-De doeleinden staan in een tabel met hun naam, hun beschrijving en hun wettelijke basis. Klik op een doeleinde om het te bewerken, of gebruik het menu **...** om het te wijzigen (**Een doel wijzigen**) of te verwijderen (**Verwijderen**).
+De doeleinden staan in een tabel met hun naam, hun beschrijving en hun wettelijke basis. Klik op een doeleinde om het te bewerken, of gebruik het menu **...** om het te wijzigen (**Doeleinde bewerken**) of te verwijderen (**Verwijderen**).
 
 ## Wettelijke bases
 
@@ -126,8 +126,8 @@ Selecteer bij elk doeleinde een van de bovenstaande wettelijke bases in de lijst
 
 <figure><img src="../../../.gitbook/assets/ropa-purposes-3.png" alt="Geopende lijst Wettelijke basis in het doeleindenpaneel met de beschikbare wettelijke bases"><figcaption><p>De wettelijke basis van een doeleinde selecteren</p></figcaption></figure>
 
-Zodra de wettelijke basis is geselecteerd, verschijnt een herinnering aan de voorwaarden ervan en kunt u een beschrijving toevoegen in **Gelieve de keuze van deze grondslag uit te leggen**, bijvoorbeeld om de gerechtvaardigde belangen of de betrokken wettelijke bepaling te vermelden.
+Zodra de wettelijke basis is geselecteerd, verschijnt een herinnering aan de voorwaarden ervan en kunt u een beschrijving toevoegen in **Geef meer uitleg over deze wettelijke basis**, bijvoorbeeld om de gerechtvaardigde belangen of de betrokken wettelijke bepaling te vermelden.
 
 {% hint style="info" %}
-Als u [vragenlijsten](../../questionnaires/README.md) gebruikt, stelt Dastra voor een beoordeling aan te maken wanneer een doeleinde berust op een gerechtvaardigd belang (**Evalueer de legitieme belangen (LIA)**) of op toestemming (**Evalueer de juridische basis voor toestemming**).
+Als u [vragenlijsten](../../questionnaires/README.md) gebruikt, stelt Dastra voor een beoordeling aan te maken wanneer een doeleinde berust op een gerechtvaardigd belang (**Beoordeling van gerechtvaardigde belangen (LIA) aanmaken**) of op toestemming (**Vragenlijst voor toestemming als wettelijke basis aanmaken**).
 {% endhint %}

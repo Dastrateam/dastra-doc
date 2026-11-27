@@ -26,10 +26,10 @@ Een audit heeft betrekking op één kader van het project. De auditors beoordele
 
 Maak een audit aan vanuit het conformiteitsproject, niet vanuit de module Vragenlijsten. Er zijn twee ingangen:
 
-* het tabblad **Audits** van het project, met de knop **Maak een nieuwe audit aan**. Kies daarna het kader in de lijst **Selecteer een framework om te auditen**, die voor elk kader aangeeft of er al een audit loopt;
+* het tabblad **Audits** van het project, met de knop **Maak een nieuwe audit aan**. Kies daarna het kader in de lijst **Selecteer een kader om te auditen**, die voor elk kader aangeeft of er al een audit loopt;
 * het menu **⋯** van een kaderkaart op het projectoverzicht, met **Maak een nieuwe audit aan**. Het kader is dan al geselecteerd.
 
-Heeft het project geen kader, dan toont Dastra **Geen framework om te auditen**: voeg eerst een kader aan het project toe (zie [Projectontwerp](design.md)).
+Heeft het project geen kader, dan toont Dastra **Geen kader om te auditen**: voeg eerst een kader aan het project toe (zie [Projectontwerp](design.md)).
 
 {% hint style="info" %}
 Een audit aanmaken buiten een auditfase wordt niet aanbevolen: Dastra toont een waarschuwing maar blokkeert u niet. Kiest u de auditfase **Eindaudit** terwijl het project niet in de fase **Eindaudit** is, dan verschijnt dezelfde waarschuwing.
@@ -74,25 +74,25 @@ Links staan drie tabbladen:
 
 * **Geauditeerde vereisten (x/y)**: de boomstructuur van het kader met de status van elke vereiste. Filter op status met **Filteren op status**;
 * **Fouten in tests (n)**: de fouten die auditors in tests hebben gemeld (zie [Een fout in een test melden](#een-fout-in-een-test-melden));
-* **In kaart brengen**: grafieken met de verdeling van de vereisten en de controles.
+* **Grafieken**: grafieken met de verdeling van de vereisten en de controles.
 
 Rechts staan:
 
 * de geauditeerde perimeter, de titel, de beschrijving, de status en de fase van de audit, de data en het kader met zijn versie. Met **Bewerken** opent u de algemene informatie;
-* de **Vooruitgang** van de audit als percentage, met de verdeling van de vereisten (niet geauditeerd, conform, deels conform, niet conform, niet van toepassing);
+* de **Voortgang** van de audit als percentage, met de verdeling van de vereisten (niet geauditeerd, conform, deels conform, niet conform, niet van toepassing);
 * de lijst van **Auditeurs**, met het aantal beoordelingen dat elk van hen heeft afgerond. Met **Auditor toevoegen** en **Auditor verwijderen** past u het team tijdens de audit aan;
 * de **Bijlagen**: verzamel hier externe bewijsdocumenten zodat alle auditors er toegang toe hebben.
 
 Met de knoppen voor taken en opmerkingen van het dashboard volgt u de audit samen met andere gebruikers, bijvoorbeeld om corrigerende taken aan te maken.
 
-De knop **Audit aanvullen** opent de beoordelingsruimte. Het bijbehorende menu biedt ook:
+De knop **Audit invullen** opent de beoordelingsruimte. Het bijbehorende menu biedt ook:
 
 * **Heropen de audit**: maakt een afgeronde audit weer bewerkbaar;
 * **Exporteren**;
 * **Link kopiëren**;
 * **Audit archiveren**, en daarna **Herstellen** om hem terug te halen. De audit die als actief is gedefinieerd, kan niet worden gearchiveerd.
 
-Bent u niet als auditor aangewezen, dan is de knop **Audit aanvullen** vergrendeld: vraag om aan de lijst **Auditeurs** te worden toegevoegd.
+Bent u niet als auditor aangewezen, dan is de knop **Audit invullen** vergrendeld: vraag om aan de lijst **Auditeurs** te worden toegevoegd.
 
 ## De vereisten beoordelen
 
@@ -120,25 +120,25 @@ De **Historiek** van de vereiste bewaart de opeenvolgende beoordelingen. Elke in
 
 Is het bewijs van een test niet bevredigend, meld dat dan aan de eigenaar van de test zonder de beoordeling te blokkeren.
 
-1. Zoek in het centrale werkgebied de test en klik op **Fout melden**.
-2. Kies de **Ernst**: **Low**, **Medium** (standaard) of **High**.
-3. Beschrijf het probleem bij **Leg het probleem uit met de geleverde bewijzen**. De opmerking is optioneel, maar helpt de eigenaar van de test het bewijs te verbeteren.
-4. Klik op **Maak het foutrapport aan**.
+1. Zoek in het centrale werkgebied de test en klik op **Probleem melden**.
+2. Kies de **Ernst**: **Laag**, **Gemiddeld** (standaard) of **Hoog**.
+3. Beschrijf het probleem bij **Wat is er mis met de verstrekte bewijzen**. De opmerking is optioneel, maar helpt de eigenaar van de test het bewijs te verbeteren.
+4. Klik op **Probleem aanmaken**.
 
 De knop wordt daarna vervangen door een vlag in de kleur van de ernst. Ga er met de muis overheen om de opmerking te lezen of de melding te verwijderen. Een test kan per audit maar één melding hebben.
 
 <figure><img src="../../../.gitbook/assets/compliance-audit-findings-1.png" alt="Venster Fout melden met de ernst en de opmerking"><figcaption></figcaption></figure>
 
-De meldingen staan gebundeld in het tabblad **Fouten in tests** van het auditdashboard, met de referentie, de test, de status en de ernst. Filter op **Ernst van de fout**, vink daarna tests aan om:
+De meldingen staan gebundeld in het tabblad **Testbevindingen** van het auditdashboard, met de referentie, de test, de status en de ernst. Filter op **Ernst van het probleem**, vink daarna tests aan om:
 
-* **De tests ongeldig maken**: de gemelde tests krijgen weer de status **Te doen**. Dastra stelt dan voor **Een testcampagne opnieuw starten?** om hun eigenaars te verwittigen, zodat ze hun bewijs bijwerken vóór de volgende audit;
+* **Tests ongeldig maken**: de gemelde tests krijgen weer de status **Te doen**. Dastra stelt dan voor **Een testcampagne opnieuw starten?** om hun eigenaars te verwittigen, zodat ze hun bewijs bijwerken vóór de volgende audit;
 * **Start van een testcampagne**: maakt rechtstreeks een campagne aan met de aangevinkte tests (zie [Conformiteitsmonitoring](monitoring.md)).
 
 <figure><img src="../../../.gitbook/assets/compliance-audit-findings-2.png" alt="Tabblad Fouten in tests met de gemelde tests, hun ernst en de knoppen De tests ongeldig maken en Start van een testcampagne"><figcaption></figcaption></figure>
 
 ## De audit afronden
 
-Zijn alle vereisten beoordeeld, dan wordt de knop **Finaliseer de audit** beschikbaar. Die opent een venster waarin u de **Eindbeoordeling van de audit** invoert (verplicht, maximaal 1.000 tekens). Met deze samenvatting geeft u een algemeen oordeel over het maturiteitsniveau van de geauditeerde perimeter, benadrukt u aandachtspunten of successen en kunt u documenten met een samenvatting bijvoegen vanuit de bestandsverkenner.
+Zijn alle vereisten beoordeeld, dan wordt de knop **Audit afronden** beschikbaar. Die opent een venster waarin u de **Eindbeoordeling van de audit** invoert (verplicht, maximaal 1.000 tekens). Met deze samenvatting geeft u een algemeen oordeel over het maturiteitsniveau van de geauditeerde perimeter, benadrukt u aandachtspunten of successen en kunt u documenten met een samenvatting bijvoegen vanuit de bestandsverkenner.
 
 Klik op **Valideren** om de audit af te sluiten.
 

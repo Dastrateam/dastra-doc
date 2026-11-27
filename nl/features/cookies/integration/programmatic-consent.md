@@ -11,8 +11,8 @@ description: >-
 Standaard worden toestemmingen 180 dagen lang opgeslagen in een browsercookie met de naam `consent-eu`, als geserialiseerde JSON. In de configuratie van de banner kunt u:
 
 * de naam van deze cookie wijzigen (**Naam van de cookie voor de opslag van toestemming (standaard 'consent-eu')**);
-* de levensduur (**Levensduur van toestemmingscookie (standaard 180 dagen)**) en het domein (**Cookie domein (standaard het subdomein van de pagina)**) ervan wijzigen;
-* toestemmingen in plaats daarvan opslaan in localStorage (**LocalStorage inschakelen voor cookies op basis van toestemming**). De sleutel is dan `dastra-consents`, of de naam die u voor de cookie hebt gekozen.
+* de levensduur (**Levensduur van toestemmingscookie (standaard 180 dagen)**) en het domein (**Domein van de toestemmingscookie (standaard de hostnaam van de huidige pagina)**) ervan wijzigen;
+* toestemmingen in plaats daarvan opslaan in localStorage (**localStorage inschakelen voor het opslaan van toestemmingscookies**). De sleutel is dan `dastra-consents`, of de naam die u voor de cookie hebt gekozen.
 
 {% hint style="info" %}
 De verspreiding van toestemmingen hangt van deze gegevens af: wijzig ze niet rechtstreeks. Gebruik de Dastra JavaScript-SDK.

@@ -19,13 +19,13 @@ Aan een verzameladres kunnen vijf soorten objecten worden gekoppeld:
 
 Voor de installatie hebt u de machtiging nodig om integraties in de werkruimte te beheren. U kunt per werkruimte en per type object slechts één verzameladres hebben.
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en klik op de kaart **Incoming mail data collection**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en klik op de kaart **Incoming mail data collection**.
 
    <figure><img src="../../.gitbook/assets/settings-mailboxes-1.png" alt="De catalogus van integraties met de kaart Incoming mail data collection"><figcaption><p>De kaart Incoming mail data collection in de integraties</p></figcaption></figure>
-2. Zoek in de lijst **Voorgeconfigureerde gebruikssituaties** het type object dat u wilt voeden en klik op **Integratie toevoegen**.
+2. Zoek in de lijst **Vooraf geconfigureerde gebruiksgevallen** het type object dat u wilt voeden en klik op **Integratie toevoegen**.
 
    <figure><img src="../../.gitbook/assets/settings-mailboxes-2.png" alt="De lijst met de vijf gebruikssituaties voor verzameladressen, elk met de knop Integratie toevoegen"><figcaption><p>Eén gebruikssituatie per type object</p></figcaption></figure>
-3. Kies in het paneel dat opent zo nodig de **Bestemmingsorganisatie-eenheid** van de aangemaakte objecten. Laat u dit veld leeg, dan worden de objecten aangemaakt in de standaard organisatorische eenheid.
+3. Kies in het paneel dat opent zo nodig de **Organisatorische eenheid van bestemming** van de aangemaakte objecten. Laat u dit veld leeg, dan worden de objecten aangemaakt in de standaard organisatorische eenheid.
 
    <figure><img src="../../.gitbook/assets/settings-mailboxes-3.png" alt="Het configuratiepaneel met het veld Bestemmingsorganisatie-eenheid en de knop Opslaan"><figcaption><p>De organisatorische eenheid van bestemming kiezen</p></figcaption></figure>
 4. Klik op **Opslaan**. Dastra rondt de installatie af en toont het e-mailadres dat u moet gebruiken.

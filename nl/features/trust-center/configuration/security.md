@@ -12,7 +12,7 @@ De sectie **Veiligheid** van de bewerkingspagina bundelt drie instellingen: verp
 
 ## Verplichte authenticatie
 
-Schakel **Authenticatie vereist om toegang te krijgen tot het Trust Center** in om inloggen verplicht te stellen. Bezoekers moeten zich dan aanmelden bij Dastra met een account van uw organisatie voordat ze het portaal openen. Als er een SSO is toegewezen aan alle gebruikers, worden ze naar die SSO doorverwezen.
+Schakel **Authenticatie vereist voor toegang tot het vertrouwenscentrum** in om inloggen verplicht te stellen. Bezoekers moeten zich dan aanmelden bij Dastra met een account van uw organisatie voordat ze het portaal openen. Als er een SSO is toegewezen aan alle gebruikers, worden ze naar die SSO doorverwezen.
 
 Wij raden aan [SSO](../../settings/sso/README.md) in te stellen met automatische aanmaak van gebruikers: al uw medewerkers hebben dan toegang tot het Trust Center zonder specifieke rol of machtiging.
 
@@ -28,7 +28,7 @@ Wanneer ze is ingeschakeld:
 
 1. Bezoekers zien de lijst met documenten, maar kunnen ze niet rechtstreeks downloaden. Ze dienen een **toegangsverzoek** in met hun e-mailadres en een bericht.
 2. De eigenaren van het Trust Center ontvangen een e-mail met een link naar het verzoek. Als er geen eigenaar is, ontvangen de eigenaren van de organisatie die e-mail.
-3. De eigenaar opent het verzoek, vult indien nodig een **Justificatie van de beslissing** in en klikt vervolgens op **Toegang verzoek goedkeuren** of **Verzoek om toegang afwijzen**. De bezoeker ontvangt de justificatie per e-mail.
+3. De eigenaar opent het verzoek, vult indien nodig een **Motivering van de beslissing** in en klikt vervolgens op **Toegangsverzoek goedkeuren** of **Toegangsverzoek afwijzen**. De bezoeker ontvangt de motivering per e-mail.
 4. Als het verzoek wordt goedgekeurd, ontvangt de bezoeker een e-mail met een **downloadlink die 30 dagen geldig is**.
 
 De verzoeken worden behandeld in het scherm **Verzoeken om toegang tot bestanden**, dat alle verzoeken met hun status toont. De link in de meldingsmail opent het scherm rechtstreeks op het betreffende verzoek.

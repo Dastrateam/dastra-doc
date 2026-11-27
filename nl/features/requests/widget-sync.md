@@ -4,13 +4,13 @@ Hebben meerdere widgets voor verzoeken van betrokkenen een vergelijkbare configu
 
 Dit is vooral nuttig voor organisaties die meerdere varianten van dezelfde widget beheren (bijvoorbeeld een widget voor het wissen van een account die in verschillende toepassingen of geografische markten is ingezet).
 
-In de toepassing is een widget een formulier: open het via **Verzoeken** > **Collectie-widgets**. De synchronisatieknoppen staan boven aan de formulierpagina, naast **Overzicht**.
+In de toepassing is een widget een formulier: open het via **Verzoeken** > **Formulieren**. De synchronisatieknoppen staan boven aan de formulierpagina, naast **Voorbeeld**.
 
 ## Inhoud synchroniseren vanuit een andere widget
 
 U importeert als volgt de configuratie van een bestaande widget in de huidige widget:
 
-1. Klik op de keuzelijstknop voor synchronisatie naast **Overzicht**.
+1. Klik op de keuzelijstknop voor synchronisatie naast **Voorbeeld**.
 2. Klik op **Synchroniseren vanuit een ander formulier**.
 3. Selecteer bij **Bronformulier** de bronwidget.
 4. Selecteer onder **Wat wilt u synchroniseren?** de elementen die u wilt importeren: **Teksten en vertalingen**, **Formuliervelden** en **Ontwerp en uiterlijk**.

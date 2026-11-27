@@ -13,11 +13,11 @@ Deze pagina legt uit hoe u sterke authenticatie inschakelt voor uw account en ho
 ## Sterke authenticatie inschakelen voor uw account
 
 1. Open het profielmenu rechtsboven, klik op **Gebruikersprofiel** en klik vervolgens in het linkermenu op **Beveiliging**. U kunt ook rechtstreeks naar [https://app.dastra.eu/general-settings/account-security](https://app.dastra.eu/general-settings/account-security) gaan.
-2. Klik in het blok **Bescherm je account met tweestapsverificatie** op **Sterke authenticatie inschakelen**.
+2. Klik in het blok **Bescherm uw account met tweestapsverificatie** op **Tweestapsverificatie inschakelen**.
 
-<figure><img src="../.gitbook/assets/security-mfa-1.png" alt="Pagina Beveiliging van het account: blok voor tweefactorauthenticatie met de knop Sterke authenticatie inschakelen"><figcaption><p>Het blok voor tweefactorauthenticatie in de accountbeveiliging</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/security-mfa-1.png" alt="Pagina Beveiliging van het account: blok voor tweefactorauthenticatie met de knop Tweestapsverificatie inschakelen"><figcaption><p>Het blok voor tweefactorauthenticatie in de accountbeveiliging</p></figcaption></figure>
 
-3. Installeer op het scherm **Sterke authenticatie instellen** een authenticator-app op uw telefoon als u er nog geen hebt.
+3. Installeer op het scherm **Tweefactorauthenticatie instellen** een authenticator-app op uw telefoon als u er nog geen hebt.
 4. Scan de QR-code met de app. Kan de app de code niet scannen, voer dan de code in die onder de tekst staat.
 
 <figure><img src="../.gitbook/assets/security-mfa-2.png" alt="Scherm Sterke authenticatie instellen met de QR-code die u moet scannen"><figcaption><p>Het installatiescherm: de QR-code die u met uw app scant</p></figcaption></figure>
@@ -28,7 +28,7 @@ Deze pagina legt uit hoe u sterke authenticatie inschakelt voor uw account en ho
 <figure><img src="../.gitbook/assets/security-mfa-3.png" alt="Voorbeeld van een authenticator-app met codes van 6 cijfers"><figcaption><p>Voorbeeld van een authenticator-app</p></figcaption></figure>
 
 {% hint style="warning" %}
-Bewaar de herstelcode veilig. Als u uw authenticator-app kwijtraakt, kunt u er sterke authenticatie mee opnieuw instellen: klik op het scherm waar u de code invoert op **Kan je geen verbinding maken?**. Zonder deze code blijft uw account vergrendeld: neem contact op met de eigenaar van uw organisatie, zodat die de sterke authenticatie van uw account opnieuw instelt.
+Bewaar de herstelcode veilig. Als u uw authenticator-app kwijtraakt, kunt u er sterke authenticatie mee opnieuw instellen: klik op het scherm waar u de code invoert op **Kunt u niet inloggen?**. Zonder deze code blijft uw account vergrendeld: neem contact op met de eigenaar van uw organisatie, zodat die de sterke authenticatie van uw account opnieuw instelt.
 {% endhint %}
 
 ## Sterke authenticatie verplicht stellen

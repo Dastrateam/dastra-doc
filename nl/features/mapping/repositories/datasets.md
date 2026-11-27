@@ -12,11 +12,11 @@ Definieer een dataset één keer in deze repository en hergebruik hem daarna in 
 
 ## Een dataset toevoegen
 
-Open **Data inventory** > **Referenties** > **Datasets**. U kunt:
+Open **Data inventory** > **Repository's** > **Datasets**. U kunt:
 
-* op **Nieuwe dataset** klikken om de **Wizard voor het maken van gegevenssets** te openen en daarna **Lege gegevensset**, **AI gegenereerd** (deze optie hangt af van de functies die voor uw organisatie zijn ingeschakeld) of **Stap voor stap handleiding** te kiezen, die u eerst de gegevensvelden van de dataset laat selecteren. **Importeren van Filerskeepers** verschijnt wanneer de integratie [Filerskeepers](../../integrations/filerskeepers.md) is ingeschakeld;
+* op **Nieuwe dataset** klikken om de **Wizard voor het aanmaken van datasets** te openen en daarna **Lege dataset**, **Door AI gegenereerd** (deze optie hangt af van de functies die voor uw organisatie zijn ingeschakeld) of **Stapsgewijze handleiding** te kiezen, die u eerst de gegevensvelden van de dataset laat selecteren. **Importeren van Filerskeepers** verschijnt wanneer de integratie [Filerskeepers](../../integrations/filerskeepers.md) is ingeschakeld;
 * op de AI-knop links van **Nieuwe dataset** klikken om de dataset te beschrijven en de assistent een concept te laten opstellen;
-* op de pijl naast **Nieuwe dataset** klikken en daarna op **Maak vanuit de bibliotheek** om een dataset uit de bibliotheek te kopiëren;
+* op de pijl naast **Nieuwe dataset** klikken en daarna op **Aanmaken vanuit de bibliotheek...** om een dataset uit de bibliotheek te kopiëren;
 * datasets, met hun gegevensvelden, importeren uit een bestand: pijl naast **Nieuwe dataset** en daarna **Importeren**. Zie [Uw gegevens importeren (Excel, CSV)](../../general/import.md).
 
 <figure><img src="../../../.gitbook/assets/repositories-datasets-1.png" alt="Lijst van datasets met het paneel Filters geopend"><figcaption><p>De lijst van datasets</p></figcaption></figure>
@@ -25,29 +25,29 @@ Open **Data inventory** > **Referenties** > **Datasets**. U kunt:
 
 | Sectie | Veld | Inhoud |
 | --- | --- | --- |
-| **Algemene informatie** | **Naam van de gegevensset** | De naam van de dataset, verplicht. |
+| **Algemene informatie** | **Naam van de dataset** | De naam van de dataset, verplicht. |
 | | **Gerelateerde activa** | Het actief dat de dataset bevat. U kunt vanuit dit veld een actief aanmaken. Een dataset zonder actief is een wees. |
-| | **Categorieën betrokken personen** | De [categorieën van betrokkenen](subject-categories.md) waarop de gegevens betrekking hebben. U kunt vanuit dit veld een categorie aanmaken. |
+| | **Gerelateerde categorieën van betrokkenen** | De [categorieën van betrokkenen](subject-categories.md) waarop de gegevens betrekking hebben. U kunt vanuit dit veld een categorie aanmaken. |
 | | **Interne referentie**, **Samenvatting** | Uw referentie en een vrije beschrijving. |
-| **Velden voor persoonlijke gegevens** | | De gegevensvelden van de dataset. Selecteer een veld in de lijst of maak er een aan, vul daarna de **Opmerkingen** in en vink **Vereist** aan wanneer het veld verplicht is. Elk veld toont zijn gevoeligheidsniveau en zijn categorie. |
-| **Standaard bewaartijden** | **Actieve basis**, **Tussentijdse archivering** | Voor elk: de **Bewaartermijn**, de regel (**Beschrijf de regel (duur, voorwaarden...)**) en de **Justificatie** ervan. |
+| **Gegevensvelden** | | De gegevensvelden van de dataset. Selecteer een veld in de lijst of maak er een aan, vul daarna de **Opmerkingen** in en vink **Vereist** aan wanneer het veld verplicht is. Elk veld toont zijn gevoeligheidsniveau en zijn categorie. |
+| **Standaardbewaartermijnen** | **Bewaring in actieve database**, **Tussentijdse archivering** | Voor elk: de **Bewaartermijn**, de regel (**Beschrijf de regel (duur, voorwaarden...)**) en de **Justificatie** ervan. |
 | | **Definitief verwijderen** | De beschrijving van het opschoningsbeleid en de **Justificatie** ervan. |
-| **Herkomst van de collectie** | **Herkomst van de collectie**, **Beschrijving van de bron van de verzameling** | Waar de gegevens vandaan komen. |
+| **Herkomst van de gegevensbron** | **Herkomst van de gegevensbron**, **Beschrijving van de bron van de verzameling** | Waar de gegevens vandaan komen. |
 
 De [aangepaste velden](../../general/custom-fields.md) die voor datasets zijn gedefinieerd en de [labels](../../general/tags.md) worden aan het formulier toegevoegd.
 
 De werkbalk van het formulier geeft toegang tot de opmerkingen, vragenlijsten, taken en AI-systemen die aan de dataset zijn gekoppeld, afhankelijk van uw rechten en de ingeschakelde functies. Ze bevat ook:
 
-* **Gekoppelde elementen**: de [generieke relaties](../relationships.md) van de dataset;
-* **Link naar een verwerkingsactiviteit**: de verwerkingsactiviteiten die de dataset gebruiken, en de link om er meer toe te voegen.
+* **Relaties**: de [generieke relaties](../relationships.md) van de dataset;
+* **Een verwerkingsactiviteit koppelen**: de verwerkingsactiviteiten die de dataset gebruiken, en de link om er meer toe te voegen.
 
-Het actiemenu van het formulier biedt **Dupliceren**, **Samenvoegen** en **Verwijderen**.
+Het actiemenu van het formulier biedt **Kopie maken**, **Samenvoegen** en **Verwijderen**.
 
 ## Datasets in de lijst vinden
 
-De filters van de lijst omvatten **Activa**, **Soorten**, **Filteren op tags**, **Categorie van betrokken personen**, **Cat. gegevens** en **Gevoelige gegevens**. Schakel **Zie weeskind (zonder actief)** in om de datasets te tonen die aan geen enkel actief zijn gekoppeld en koppel ze daarna via het veld **Gerelateerde activa**.
+De filters van de lijst omvatten **Activa**, **Soorten**, **Filteren op tags**, **Categorieën van betrokkenen**, **Cat. gegevens** en **Gevoelige gegevens**. Schakel **Weesitems weergeven** in om de datasets te tonen die aan geen enkel actief zijn gekoppeld en koppel ze daarna via het veld **Gerelateerde activa**.
 
-Bij een selectie kunt u **Velden bewerken**, **Samenvoegen**, **Exporteren** en **Verwijderen**. Het **Gegevenskwaliteitsinstrument**, in het menu van **Nieuwe dataset**, detecteert duplicaten. Zie [Elementen samenvoegen](../../general/merge.md).
+Bij een selectie kunt u **Velden bewerken**, **Samenvoegen**, **Exporteren** en **Verwijderen**. De **Tool voor gegevenskwaliteit**, in het menu van **Nieuwe dataset**, detecteert duplicaten. Zie [Elementen samenvoegen](../../general/merge.md).
 
 ## Waar datasets worden gebruikt
 

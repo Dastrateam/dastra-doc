@@ -12,7 +12,7 @@ In de sectie **Rechten van betrokkenen** geeft u aan hoe betrokkenen hun rechten
 
 ## De uitoefening van rechten beschrijven
 
-1. Beschrijf in **Algemene informatie over rechten** het algemene proces voor de uitoefening van rechten, bijvoorbeeld door aan te geven of er een algemeen rechtenbeleid van kracht is.
+1. Beschrijf in **Beschrijving van de rechten van betrokkenen** het algemene proces voor de uitoefening van rechten, bijvoorbeeld door aan te geven of er een algemeen rechtenbeleid van kracht is.
 2. Kies voor elk recht hoe het wordt uitgeoefend: **Geen**, **Handmatig of op aanvraag**, **Automatisch** of **Niet van toepassing**.
 3. Voeg na het kiezen van een optie zo nodig details toe in **Opmerkingen**.
 
@@ -20,12 +20,12 @@ De volgende rechten staan in de lijst:
 
 * **Recht op informatie**
 * **Recht op inzage**
-* **Recht op wissen (recht om vergeten te worden)**
+* **Recht op gegevenswissing**
 * **Recht op rectificatie**
 * **Recht op beperking**
 * **Recht op overdraagbaarheid**
 * **Recht op bezwaar**
-* **Recht om het lot van gegevens na afloop van de verwerking te bepalen**: dit recht, voorzien in artikel 85 van de Franse wet op de gegevensbescherming, stelt mensen in staat de verwerkingsverantwoordelijke specifieke instructies te geven over de bewaring, het wissen en de mededeling van hun persoonsgegevens na hun overlijden.
+* **Recht om richtlijnen voor na het overlijden vast te leggen**: dit recht, voorzien in artikel 85 van de Franse wet op de gegevensbescherming, stelt mensen in staat de verwerkingsverantwoordelijke specifieke instructies te geven over de bewaring, het wissen en de mededeling van hun persoonsgegevens na hun overlijden.
 
 Beweeg de aanwijzer over het informatiepictogram naast elk recht om een korte toelichting te zien.
 

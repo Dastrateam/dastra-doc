@@ -21,7 +21,7 @@ Meer over wanneer en hoe u een FG aanwijst, leest u in de [praktische gids van d
 
 Aan een entiteit is slechts één FG gekoppeld.
 
-1. Klik in het linkermenu op **Instellingen voor werkruimte** en daarna op **Organisatorische eenheden**.
+1. Klik in het linkermenu op **Instellingen van de werkruimte** en daarna op **Organisatorische eenheden**.
 2. Klik op de drie puntjes rechts van de entiteit en daarna op **Bewerken**.
 3. Selecteer de FG in het veld **Functionaris voor gegevensbescherming**.
 4. Klik op **Opslaan**.

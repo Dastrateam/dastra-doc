@@ -32,16 +32,16 @@ U kunt één gebruiksscenario installeren of beide.
 | Taken | Taken | Schrijftoegang op taken |
 
 {% hint style="info" %}
-De methode OAuth verschijnt in de lijst **Authentificatiemethode** wanneer ze beschikbaar is in uw Dastra-omgeving. Gebruik anders een API-token.
+De methode OAuth verschijnt in de lijst **Authenticatiemethode** wanneer ze beschikbaar is in uw Dastra-omgeving. Gebruik anders een API-token.
 {% endhint %}
 
 ## Installatie
 
-1. Open **Instellingen voor werkruimte** > **Integraties** en selecteer **Jira**.
+1. Open **Instellingen van de werkruimte** > **Integraties** en selecteer **Jira**.
 2. Klik bij het gewenste gebruiksscenario op **Integratie toevoegen**.
 3. Voeg een verbinding toe, of selecteer de Jira-verbinding die u al voor het andere gebruiksscenario gebruikt:
    * Basis: vul de **URL van de instantie**, de **Email** en het **API token** in en klik op **Verbinden**.
-   * OAuth: vul de **URL van de instantie** in en klik op **Opslaan en inloggen**. U wordt doorgestuurd naar Atlassian om Dastra toestemming te geven.
+   * OAuth: vul de **URL van de instantie** in en klik op **Opslaan en verbinden**. U wordt doorgestuurd naar Atlassian om Dastra toestemming te geven.
 
 <figure><img src="../../.gitbook/assets/jira-connexion.png" alt="Verbindingsvenster van Jira met de keuze tussen de methoden Basis en OAuth"><figcaption><p>Dastra verbinden met Jira</p></figcaption></figure>
 
@@ -55,9 +55,9 @@ Richten beide gebruiksscenario's zich op dezelfde Jira-instantie, geef dan elk e
 
 * **Jira-project**: het project dat u synchroniseert.
 * **Tickettype**: het tickettype dat een verzoek van een betrokkene voorstelt.
-* **Mapping van velden**: koppel de velden van het Dastra-verzoek aan Jira-velden. Wanneer een Jira-ticket een DSR aanmaakt of bijwerkt, vult de gekozen Jira-waarde elk veld in. De bronnen zijn de standaardvelden van Jira (samenvatting, e-mailadres van de aanvrager, beschrijving, status) en uw aangepaste Jira-velden.
-* **Koppel de DSR-statussen aan Jira-overgangen**: koppel elke workflowstap van de DSR aan een Jira-status. Wanneer een verzoek die stap bereikt, laat Dastra het gekoppelde ticket overgaan. Laat een stap op **Geen overgang** staan om ze over te slaan.
-* **Standaard organisatie-eenheid (verplicht)**: de eenheid die wordt toegewezen aan verzoeken die de integratie aanmaakt.
+* **Veldtoewijzing**: koppel de velden van het Dastra-verzoek aan Jira-velden. Wanneer een Jira-ticket een DSR aanmaakt of bijwerkt, vult de gekozen Jira-waarde elk veld in. De bronnen zijn de standaardvelden van Jira (samenvatting, e-mailadres van de aanvrager, beschrijving, status) en uw aangepaste Jira-velden.
+* **Statussen van verzoeken van betrokkenen koppelen aan Jira-overgangen**: koppel elke workflowstap van de DSR aan een Jira-status. Wanneer een verzoek die stap bereikt, laat Dastra het gekoppelde ticket overgaan. Laat een stap op **Geen overgang** staan om ze over te slaan.
+* **Standaard organisatorische eenheid (verplicht)**: de eenheid die wordt toegewezen aan verzoeken die de integratie aanmaakt.
 
 <figure><img src="../../.gitbook/assets/jira-config.png" alt="Configuratiepaneel van Jira met project, tickettype en veldmapping"><figcaption><p>Het gebruiksscenario Verzoeken van betrokkenen configureren</p></figcaption></figure>
 
@@ -67,7 +67,7 @@ Het veld e-mail van het verzoek moet worden gemapt (of een standaardwaarde krijg
 
 #### Velden met een gesloten lijst van waarden
 
-Sommige Dastra-velden accepteren alleen een vaste lijst van waarden, zoals **Type recht**. Wanneer u er een aan een Jira-veld koppelt, toont de rij **Mapping vereist** tot u aan Dastra aangeeft hoe de Jira-waarden worden omgezet. Open het paneel **Geavanceerd** van de rij en doe dan het volgende:
+Sommige Dastra-velden accepteren alleen een vaste lijst van waarden, zoals **Type recht**. Wanneer u er een aan een Jira-veld koppelt, toont de rij **Toewijzing vereist** tot u aan Dastra aangeeft hoe de Jira-waarden worden omgezet. Open het paneel **Geavanceerd** van de rij en doe dan het volgende:
 
 * koppel elke Jira-waarde aan een Dastra-waarde, en/of
 * stel een **Standaardwaarde** in, die wordt gebruikt wanneer de Jira-waarde met niets overeenkomt.
@@ -90,7 +90,7 @@ Wanneer een verzoek een gekoppelde stap bereikt, zoekt Dastra een Jira-overgang 
 ### Configuratie
 
 * **Jira-project** en **Tickettype**: waar de tickets terechtkomen die uit taken worden aangemaakt. Ze mogen verschillen van die van het gebruiksscenario Verzoeken van betrokkenen.
-* **Mapping van velden**: kies voor elk taakveld het Jira-ticketveld dat het voedt. Telkens als een ticket dat aan een taak is gekoppeld in Jira wordt bijgewerkt, worden de gemapte waarden naar de taak gekopieerd. Velden zonder mapping blijven onaangeroerd.
+* **Veldtoewijzing**: kies voor elk taakveld het Jira-ticketveld dat het voedt. Telkens als een ticket dat aan een taak is gekoppeld in Jira wordt bijgewerkt, worden de gemapte waarden naar de taak gekopieerd. Velden zonder mapping blijven onaangeroerd.
   * De bronnen zijn de standaardvelden van Jira (samenvatting, beschrijving, status, e-mailadres van de verantwoordelijke, prioriteit, vervaldatum) en uw aangepaste Jira-velden.
   * De doelen zijn de taakvelden, inclusief de aangepaste velden van de taak.
   * De workflowstap en de verantwoordelijke worden niet als doel aangeboden: ze volgen de mapping van stappen naar statussen en de regel voor de verantwoordelijke hieronder.
@@ -149,7 +149,7 @@ Beperkingen van deze versie:
 
 ### Kolommen van de takenlijst
 
-De kolomkiezer van de takenlijst biedt **Integratiebron**, **Extern integratie-ID** en **Datum van laatste synchronisatie externe integratie**. Ze zijn standaard verborgen.
+De kolomkiezer van de takenlijst biedt **Integratiebron**, **Integratie-ID** en **Datum van laatste synchronisatie externe integratie**. Ze zijn standaard verborgen.
 
 ## Webhook (Jira naar Dastra)
 

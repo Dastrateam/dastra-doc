@@ -12,14 +12,14 @@ De deellink is openbaar zichtbaar: iedereen die de link heeft, kan hem openen to
 
 ## Het volledige register delen
 
-Klik in de module **Verwerkingsregister** op de pijl naast de knop **Maak een gegevensverwerking** en daarna op **Delen**.
+Klik in de module **Verwerkingsregister** op de pijl naast de knop **Verwerkingsactiviteit aanmaken** en daarna op **Delen**.
 
 <figure><img src="../../.gitbook/assets/ropa-share-1.png" alt="Optie Delen in het menu van Maak een gegevensverwerking"><figcaption><p>De optie Delen in het menu van Maak een gegevensverwerking</p></figcaption></figure>
 
 Het venster **Alle items delen** opent:
 
-1. Selecteer de **Vervaldatum link**.
-2. Kies bij **Wil je de link e-mailen naar andere gebruikers?** voor **Ja** om de link per e-mail te versturen, en vul dan de **e-mails van ontvangers** in en eventueel een **Gepersonaliseerd bericht**.
+1. Selecteer de **Geldigheidsduur van de link**.
+2. Kies bij **Wilt u gebruikers op de hoogte brengen?** voor **Ja** om de link per e-mail te versturen, en vul dan de **E-mailadressen van ontvangers** in en eventueel een **Gepersonaliseerd bericht**.
 3. Klik op **Maak een link**.
 
 Het delen omvat alleen de verwerkingsactiviteiten met de status "Gepubliceerd". Verwerkingsactiviteiten in concept worden met deze functie niet gedeeld: om een verwerkingsactiviteit in concept te delen, deelt u ze afzonderlijk (zie hieronder).
@@ -56,7 +56,7 @@ Op deze manier gedeelde verwerkingsactiviteiten kunnen worden gedeeld ongeacht h
 
 ## Deellinks beheren
 
-Alle deellinks die in uw werkruimte zijn aangemaakt, staan gebundeld in de instellingen van de werkruimte, onder **Links delen**.
+Alle deellinks die in uw werkruimte zijn aangemaakt, staan gebundeld in de instellingen van de werkruimte, onder **Deellinks**.
 
 Voor elke link toont de lijst de link zelf (die u kunt kopiëren), de gebruiker die hem heeft aangemaakt, het type gedeelde items en hun aantal (**Alles** voor een volledig register), de aanmaakdatum, de vervaldatum en de e-mailadressen van de ontvangers. U kunt de lijst filteren op **Type** en op **Verwijderen** klikken om een link te verwijderen die niet meer gebruikt mag worden.
 

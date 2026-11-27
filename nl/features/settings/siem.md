@@ -31,12 +31,12 @@ Schakel **Real-time streaming inschakelen** in: het formulier verschijnt. Vul he
   * **Geen**: geen authenticatieheader (bijvoorbeeld wanneer het token deel uitmaakt van de URL).
 * **Token / API-sleutel**: het token van de collector. Het wordt versleuteld opgeslagen en nooit meer getoond; laat het veld later leeg om het huidige te behouden.
 * **Aangepaste headers (optioneel)**: extra HTTP-headers die met elke gebeurtenis worden verstuurd, als sleutel/waarde-paren.
-* **Evenementenformaat**:
-  * **Splunk HEC (JSON)**: het eigen formaat van de Splunk HTTP Event Collector. Er verschijnen twee extra optionele velden: **Bron type (optioneel)** (standaard `dastra:audit`) en **Index (optioneel)**.
+* **Gebeurtenisformaat**:
+  * **Splunk HEC (JSON)**: het eigen formaat van de Splunk HTTP Event Collector. Er verschijnen twee extra optionele velden: **Brontype (optioneel)** (standaard `dastra:audit`) en **Index (optioneel)**.
   * **Dynatrace (Log Monitoring v2)**: het eigen formaat van de Dynatrace-logingest-API.
   * **CEF (Common Event Format)**: voor ArcSight, Sumo Logic en de meeste SIEM's die CEF verwerken.
   * **Syslog (RFC 5424)**: gestructureerde syslogregels.
-* **Minimale ernst**: het laagste niveau dat nog wordt doorgestuurd: **Alle gebeurtenissen**, **Kennisgeving en meer**, **Waarschuwing en meer (beveiligingsgebeurtenissen)** of **Fout en meer**. Het standaardniveau, dat ook het aanbevolen niveau is, is **Waarschuwing en meer**: u behoudt de voor de beveiliging relevante signalen (mislukte aanmeldingen, wijzigingen van machtigingen, SSO/MFA, API-sleutels, verwijderingen enzovoort) zonder uw SIEM te overspoelen met dagelijkse activiteit. Kies **Alle gebeurtenissen** alleen als uw SIEM het volledige auditspoor moet verwerken.
+* **Minimale ernst**: het laagste niveau dat nog wordt doorgestuurd: **Alle gebeurtenissen**, **Kennisgeving en hoger**, **Waarschuwing en hoger (beveiligingsgebeurtenissen)** of **Fout en hoger**. Het standaardniveau, dat ook het aanbevolen niveau is, is **Waarschuwing en hoger**: u behoudt de voor de beveiliging relevante signalen (mislukte aanmeldingen, wijzigingen van machtigingen, SSO/MFA, API-sleutels, verwijderingen enzovoort) zonder uw SIEM te overspoelen met dagelijkse activiteit. Kies **Alle gebeurtenissen** alleen als uw SIEM het volledige auditspoor moet verwerken.
 * **Controleer het TLS-certificaat**: laat dit ingeschakeld; schakel het alleen uit voor een zelfondertekende ontwikkelcollector.
 
 Bestaat er al een configuratie, dan schakelt dezelfde schakelaar de streaming onmiddellijk in of uit. **Verwijderen** wist de configuratie.
@@ -72,7 +72,7 @@ Elke auditgebeurtenis wordt afzonderlijk afgeleverd, op het moment dat ze plaats
 | `tenantId` / `workspaceId` / `workspaceName` / `areaId` | Waar het is gebeurd |
 | `url` | Directe link naar het record in Dastra |
 
-Voor de beveiliging gevoelige gebeurtenissen krijgen een hogere ernst, los van hun weergaveprioriteit in Dastra: herhaalde mislukte aanmeldingen worden als **Error** verstuurd (met `outcome: failure`); wijzigingen van machtigingen, het aanmaken of verwijderen van API-sleutels, MFA- en SSO-wijzigingen, intrekkingen en verwijderingen van gebruikers en verwijderingen van werkruimtes worden als **Warning** verstuurd. Op deze ernst is ook de instelling **Minimale ernst** gebaseerd: **Waarschuwing en meer** (de aanbevolen instelling) beperkt de stroom tot deze beveiligingsgebeurtenissen.
+Voor de beveiliging gevoelige gebeurtenissen krijgen een hogere ernst, los van hun weergaveprioriteit in Dastra: herhaalde mislukte aanmeldingen worden als **Error** verstuurd (met `outcome: failure`); wijzigingen van machtigingen, het aanmaken of verwijderen van API-sleutels, MFA- en SSO-wijzigingen, intrekkingen en verwijderingen van gebruikers en verwijderingen van werkruimtes worden als **Warning** verstuurd. Op deze ernst is ook de instelling **Minimale ernst** gebaseerd: **Waarschuwing en hoger** (de aanbevolen instelling) beperkt de stroom tot deze beveiligingsgebeurtenissen.
 
 {% hint style="info" %}
 De gebeurtenissen bevatten de naam en het e-mailadres van de uitvoerder van de actie, gegevens die al in het Dastra-auditlogboek worden getoond. Er wordt geen inhoud van records (persoonsgegevens van betrokkenen, documentinhoud enzovoort) doorgestuurd.
@@ -82,7 +82,7 @@ De gebeurtenissen bevatten de naam en het e-mailadres van de uitvoerder van de a
 
 U kunt het beveiligingsauditspoor op verzoek exporteren, in dezelfde formaten, zonder streaming te configureren:
 
-1. Open **Organisatie-instellingen** > **Beveiligingsaudit**.
+1. Open **Organisatie-instellingen** > **Beveiligingslogboeken**.
 2. Stel de filters (periode, werkruimte enzovoort) naar wens in.
 3. Open het menu **Exporteren (SIEM)** naast de gebruikelijke exportknop en kies **CEF (Common Event Format)**, **Syslog (RFC 5424)** of **Splunk HEC (JSON)**.
 

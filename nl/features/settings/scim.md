@@ -58,7 +58,7 @@ Klik op de pagina **Overview** van de zojuist gemaakte toepassing op **3. Provis
 
 Haal eerst uw SCIM-gegevens op in Dastra.
 
-Meld u aan bij Dastra als eigenaar van de organisatie. Ga naar **Organisatie-instellingen** > [**Eenmalig inloggen**](https://app.dastra.eu/general-settings/sso) > **SCIM**.
+Meld u aan bij Dastra als eigenaar van de organisatie. Ga naar **Organisatie-instellingen** > [**Single sign-on**](https://app.dastra.eu/general-settings/sso) > **SCIM**.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt="De SCIM-kaart op de pagina Eenmalig inloggen in Dastra, met de knop Configureren"><figcaption></figcaption></figure>
 

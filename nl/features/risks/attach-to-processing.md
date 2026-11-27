@@ -14,17 +14,17 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/risks-attach-1.png" alt="Pagina van een verwerkingsactiviteit met de knop Risico's en de teller in de rij met knoppen"><figcaption><p>De knop Risico's van een verwerkingsactiviteit</p></figcaption></figure>
 
-3. Klik in het paneel dat opent op **Creëer een risico**.
+3. Klik in het paneel dat opent op **Een risico aanmaken**.
 
 <figure><img src="../../.gitbook/assets/risks-attach-2.png" alt="Paneel Risico's van een verwerkingsactiviteit met de matrix, de gekoppelde risico's en de knop Creëer een risico"><figcaption><p>Het paneel Risico's van een verwerkingsactiviteit</p></figcaption></figure>
 
 U komt op de bewerkingspagina van het risico, met de verwerkingsactiviteit en de organisatorische eenheid ervan al ingevuld. Begin met het invoeren van de informatie over het risico dat u hebt geïdentificeerd, zoals beschreven in [1. Identificeren](process/identify.md).
 
-U kunt een risico ook vanuit de module voor risicobeheer aan een verwerkingsactiviteit koppelen: open **Risicobeheer** > **Risico's**, kies het tabblad **Gegevensverwerking** en klik op **Creëer een risico**.
+U kunt een risico ook vanuit de module voor risicobeheer aan een verwerkingsactiviteit koppelen: open **Risicobeheer** > **Risico's**, kies het tabblad **Verwerkingsactiviteit** en klik op **Een risico aanmaken**.
 
 ## De risico's van een verwerkingsactiviteit bekijken
 
-Om de risico's van al uw verwerkingsactiviteiten te zien, opent u **Risicobeheer** > **Risico's** en kiest u het tabblad **Gegevensverwerking**. Elke rij toont het risicotype, de betreffende verwerkingsactiviteit en het initiële, het huidige en het restrisiconiveau.
+Om de risico's van al uw verwerkingsactiviteiten te zien, opent u **Risicobeheer** > **Risico's** en kiest u het tabblad **Verwerkingsactiviteit**. Elke rij toont het risicotype, de betreffende verwerkingsactiviteit en het initiële, het huidige en het restrisiconiveau.
 
 <figure><img src="../../.gitbook/assets/risks-list-1.png" alt="Lijst met de risico's van het tabblad Gegevensverwerking, met initiële, huidige en restrisico's"><figcaption><p>De risico's die aan verwerkingsactiviteiten zijn gekoppeld</p></figcaption></figure>
 

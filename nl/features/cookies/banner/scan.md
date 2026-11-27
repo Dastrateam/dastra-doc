@@ -16,7 +16,7 @@ Meld u aan bij uw Dastra-werkruimte. Hoe u dat doet, leest u op deze pagina:
 {% endcontent-ref %}
 
 1. Klik in het menu op **Toestemming voor cookies**. De lijst met banners verschijnt.
-2. Klik op **Creëer een widget**.
+2. Klik op **Een banner aanmaken**.
 
 <figure><img src="../../../.gitbook/assets/cookies-scan-1.png" alt="Het menu Toestemming voor cookies met de submenu's Banners, Rapportage en Cookietoestemmingen"><figcaption><p>De module "Toestemming voor cookies" in het menu</p></figcaption></figure>
 
@@ -33,7 +33,7 @@ Kies **Analyse van de website** om verder te gaan op deze pagina.
 
 ## De op uw website geplaatste cookies scannen
 
-1. Voer het adres van uw website in bij **Voer je domeinnaam in (bijv. https://www.github.com)**, bijvoorbeeld `https://www.example.com`. Laat u `https://` weg, dan voegt Dastra het toe.
+1. Voer het adres van uw website in bij **Voer hieronder uw domeinnaam in**, bijvoorbeeld `https://www.example.com`. Laat u `https://` weg, dan voegt Dastra het toe.
 2. Klik op **Valideren**.
 
 <figure><img src="../../../.gitbook/assets/cookies-scan-4.png" alt="Het veld om de te scannen domeinnaam in te voeren"><figcaption><p>Het adres van de te scannen website invoeren</p></figcaption></figure>
@@ -46,7 +46,7 @@ De scan doorloopt maximaal 20 pagina's van uw website om een zo betrouwbaar moge
 
 <figure><img src="../../../.gitbook/assets/cookies-scan-5.png" alt="De voortgangsbalk tijdens de scan"><figcaption><p>De scan is bezig</p></figcaption></figure>
 
-Wanneer de scan klaar is, verschijnen de resultaten: de diensten die in de cookiedatabase van Dastra zijn herkend, de gevonden cookies en de verdeling ervan per categorie. Klik op **Opnieuw scannen** om de analyse opnieuw uit te voeren, of op **Maak het widget** om de banner met deze resultaten aan te maken.
+Wanneer de scan klaar is, verschijnen de resultaten: de diensten die in de cookiedatabase van Dastra zijn herkend, de gevonden cookies en de verdeling ervan per categorie. Klik op **Opnieuw scannen** om de analyse opnieuw uit te voeren, of op **Banner aanmaken** om de banner met deze resultaten aan te maken.
 
 <figure><img src="../../../.gitbook/assets/cookies-scan-6.png" alt="De scanresultaten met de tabbladen Diensten, Cookies gevonden en Uitsplitsing van cookie categorieën"><figcaption><p>De scanresultaten</p></figcaption></figure>
 
@@ -62,7 +62,7 @@ Zodra de cookies van uw website zijn gescand, kunt u ze classificeren.
 
 De scan vergelijkt de gedetecteerde cookies met de dienstenbibliotheek van Dastra. Een cookie die met geen enkele dienst overeenkomt, is een niet-geclassificeerde cookie: hij is aan geen enkele dienst gekoppeld, wordt nooit in de openbare banner getoond en bezoekers kunnen er dus geen toestemming voor geven.
 
-In de scanresultaten toont een waarschuwingsbadge het aantal niet-geclassificeerde cookies (bijvoorbeeld "3 niet-geclassificeerde cookies") naast de samenvatting van de scan. Deze cookies staan gegroepeerd in het tabblad **Niet-geclassificeerde cookies**, naast de tabbladen **Diensten**, **Cookies gevonden** en **Uitsplitsing van cookie categorieën**.
+In de scanresultaten toont een waarschuwingsbadge het aantal niet-geclassificeerde cookies (bijvoorbeeld "3 niet-geclassificeerde cookies") naast de samenvatting van de scan. Deze cookies staan gegroepeerd in het tabblad **Niet-geclassificeerde cookies**, naast de tabbladen **Diensten**, **Cookies gevonden** en **Verdeling van cookies**.
 
 <figure><img src="../../../.gitbook/assets/cookies-scan-unclassified-cookies-tab.png" alt="Het tabblad Niet-geclassificeerde cookies in de scanresultaten"><figcaption><p>Het tabblad "Niet-geclassificeerde cookies" van de scanresultaten, met de badge die hun aantal toont</p></figcaption></figure>
 
@@ -70,7 +70,7 @@ Selecteer een of meer cookies met de selectievakjes (het selectievakje in de kop
 
 ### Cookies toevoegen aan een bestaande dienst
 
-1. Selecteer de cookies en klik op **Toevoegen aan een bestaande service**.
+1. Selecteer de cookies en klik op **Toevoegen aan een bestaande dienst**.
 2. Kies in het veld **Doelservice** de dienst waaraan u de cookies wilt koppelen.
 3. Bevestig.
 
@@ -78,7 +78,7 @@ Alle geselecteerde cookies worden in één keer aan de dienst toegevoegd. Een co
 
 ### Een dienst aanmaken op basis van een selectie
 
-1. Selecteer de cookies en klik op **Een nieuwe service aanmaken**.
+1. Selecteer de cookies en klik op **Een nieuwe dienst aanmaken**.
 2. Het formulier voor de dienst opent, vooraf ingevuld op basis van het meest voorkomende domein onder de geselecteerde cookies (naam van de dienst, domein en logo) en met de geselecteerde cookies erin.
 3. Controleer de voorgestelde gegevens, vooral het doeleinde van de dienst, en sla op.
 
@@ -96,7 +96,7 @@ Na elke actie worden de tellers van de tabbladen, de badge en het verdelingsdiag
 
 ### Niet-geclassificeerde cookies behandelen vanuit de bannereditor
 
-U hoeft niet elke cookie te behandelen voordat u de banner aanmaakt: onbehandelde cookies blijven aan de banner gekoppeld en kunt u later behandelen. In de bannereditor toont de titel van de sectie **Diensten** het aantal niet-geclassificeerde cookies, en het tabblad **Niet-geclassificeerde cookies** van die sectie biedt dezelfde acties: **Verwijderen**, **Toevoegen aan een bestaande service** en **Een nieuwe service aanmaken**.
+U hoeft niet elke cookie te behandelen voordat u de banner aanmaakt: onbehandelde cookies blijven aan de banner gekoppeld en kunt u later behandelen. In de bannereditor toont de titel van de sectie **Diensten** het aantal niet-geclassificeerde cookies, en het tabblad **Niet-geclassificeerde cookies** van die sectie biedt dezelfde acties: **Verwijderen**, **Toevoegen aan een bestaande dienst** en **Een nieuwe dienst aanmaken**.
 
 Zijn alle cookies aan een dienst gekoppeld, dan toont het tabblad de melding "Alle cookies zijn geclassificeerd".
 
